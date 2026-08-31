@@ -220,6 +220,12 @@ class _CsSource:
         return self._scheme.parts()
 
 PAPER_TERMINAL = re.compile(r'[.?!]$')
+# An exam command word, for telling an instruction from a list item.
+COMMAND = re.compile(
+    r'\b(?:answer|briefly|calculate|compare|complete|define|describe'
+    r'|determine|differentiate|discuss|distinguish|draw|explain|give'
+    r'|identify|indicate|label|list|name|outline|select|sketch|state'
+    r'|suggest)\b', re.I)
 # The page's own furniture, swept into a question block by the reader. A bare
 # "Figure 3" at the end is the CAPTION of the picture printed beside the ask,
 # not part of it; "Section B Long Questions 76 marks" is the banner of the
@@ -406,6 +412,22 @@ class Author:
         # its children, and without them the card cannot be answered and files
         # under no syllabus topic either, because every topic word it has is
         # in the names.
+        # A ROMAN that is only a list ITEM needs the instruction printed above
+        # it. 2021 HL Q3(a) reads "Select any two from (i), (ii) or (iii)
+        # below and explain the difference between the terms in each:" and its
+        # (i) is "Brinell hardness test and Vickers hardness test;" -- terms,
+        # with no verb anywhere. On a card of its own that is not a question.
+        if roman is not None and question:
+            _own = ' '.join(question.split())
+            if not COMMAND.match(_own):
+                try:
+                    _up = ' '.join((self.paper.text(q, letter, None)
+                                    or '').split())
+                except Exception:                            # noqa: BLE001
+                    _up = ''
+                if _up.endswith(':') and COMMAND.search(_up):
+                    question = f'{_up} {_own}'
+
         # ... and so does one that says "of the following:" anywhere in it. The
         # colon is the signal and it is not always the last character: 2025 HL
         # Q9(b) reads "Answer any three of the following: inspection robot",

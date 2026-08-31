@@ -178,6 +178,12 @@ PAGE_FURNITURE = re.compile(
 # papers: 294 such lines occur and not one is the opening line of a part.
 FURNITURE = re.compile(r'^(\d{1,2}\.|[^.?!]{1,34}:)$')
 TERMINAL = re.compile(r'[.?!]$')
+# What CLOSES a part, for deciding whether its text looks cut short. A
+# semicolon closes an item in a list -- "Brinell hardness test and Vickers
+# hardness test;" is (i) of three, whole, and the paper's own punctuation
+# says so -- but it does not seal a part against its neighbours, which is a
+# stricter question and keeps TERMINAL above.
+CLOSES = re.compile(r'[.?!;]$')
 # Biology, Chemistry and Physics set several parts inside one block, so a marker
 # turns up mid-text: "(ii) How did the student make the temperature 0 °C?".
 # Anchored on a following capital or bracket, which keeps "(15)" and "(a)" of a
@@ -718,7 +724,7 @@ class Paper:
         looked at the page and said so.
         """
         t = self.text(qnum, letter, roman)
-        return not t or not TERMINAL.search(t)
+        return not t or not CLOSES.search(t)
 
     @staticmethod
     def ref(key):

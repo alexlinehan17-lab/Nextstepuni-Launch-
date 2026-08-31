@@ -630,8 +630,11 @@ class EngScheme:
                     # of a two-column list is also far right, and it is made
                     # of whole marking points, which is what the word count
                     # and the punctuation separate it from.
-                    if x0 > margin + 250 and len(body_text.split()) <= 3 \
-                            and not re.search(r'[.?!:]$', body_text.strip()):
+                    if x0 > margin + 250 \
+                            and not re.search(r'[.?!:]$', body_text.strip()) \
+                            and (len(body_text.split()) <= 3
+                                 or (len(body_text.split()) <= 6
+                                     and body_text[:1].islower())):
                         continue
                     out[key]['points'].append(body_text)
         self._body = out

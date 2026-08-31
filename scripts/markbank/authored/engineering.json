@@ -176,6 +176,43 @@
   "notes": "The scheme prints '3 + 2'."
  },
  {
+  "id": "eng-2021-hl-q1-f",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-difference-between-single-acting",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q1(f)",
+  "questionText": "Describe, with the aid of a diagram, the difference between single-acting and double-acting pneumatic cylinders.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A single-acting cylinder is one where the thrust or output force is developed in only one direction. The piston is returned by a fitted spring, or by some other external means such as a weight. They have a single port to allow compressed air to enter the cylinder to move the piston to the desired position.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "In a double-acting pneumatic cylinder air pressure is applied alternately to the opposite ends of the piston.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Double-acting cylinders have a port at each end and move the piston forward and back by alternating the port that receives the high-pressure air, necessary when a load must be moved in both directions such as opening and closing a gate.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'."
+ },
+ {
   "id": "eng-2021-hl-q1-g",
   "topicId": "eng-3-14",
   "conceptId": "benefits-using-automatic-hand-sanitisers-schools",
@@ -513,6 +550,132 @@
   "notes": "The scheme prints 'Any two @ 5 + 5'."
  },
  {
+  "id": "eng-2021-hl-q3-a-i",
+  "topicId": "eng-3-8",
+  "conceptId": "brinell-hardness-test-vickers-hardness-test",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q3(a)(i)",
+  "questionText": "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Brinell hardness test and Vickers hardness test;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A hardened Steel or Tungsten Carbide ball indenter is used in this hardness test.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The diameter of the ball may be Ø2.5mm, Ø 5mm or Ø 10mm.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The loading force is in the range of 300N to 30kN.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The indentation shape will be a circle and the diameter of this circle d₁ & d₂ is measured.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Hardness Brinell (HB) number is calculated as follows; HB = Load / d₁.d₂",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "The ball can deform when used on very hard materials. Vickers hardness test:",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "A Diamond Square-based pyramid indenter is used in this hardness test.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "The angle of the indenter is 136˚.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "The length of the diagonals (d₁ and d₂) of the indentation are measured.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Hardness Vickers (HV) number is calculated as follows; HV = Load / d₁.d₂",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "The Vickers test is more accurate because it will mark a harder piece easier.",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "Vickers and Brinell tests can be compared as they have similar hardness ranges.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2021-hl-q3-a-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "yield-strength-ultimate-tensile-strength",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q3(a)(ii)",
+  "questionText": "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Yield strength and ultimate tensile strength;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Yield strength is the maximum tensile load the material can withstand without being permanently stretched. In a tensile test, the ‘straight line’ part of the graph represents the elasticity of the material and where the straight line finishes is the yield point or strength.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ultimate tensile strength is the maximum tensile load the material can withstand before necking occurs and the material fails. It is represented by the highest part of the test graph.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "It can be calculated as follows: Max Load/C.S.A.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
   "id": "eng-2021-hl-q3-b-iii",
   "topicId": "eng-3-8",
   "conceptId": "calculate-young-s-modulus-elasticity-alloy",
@@ -665,7 +828,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 HL Q4(c)(iii)",
-  "questionText": "Upper critical temperature (UCT) and lower critical temperature (LCT).",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Upper critical temperature (UCT) and lower critical temperature (LCT).",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -754,6 +917,78 @@
     "marks": 4
    }
   ]
+ },
+ {
+  "id": "eng-2021-hl-q5-c-i",
+  "topicId": "eng-1-3",
+  "conceptId": "solid-solution-alloy-partial-solubility-alloy",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q5(c)(i)",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Solid solution alloy and partial solubility alloy;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "In a Partial Solubility alloy the two metals are completely soluble in the liquid phase.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Both metals are also soluble in each other (in a solid state) to a limited degree. This is denoted by the Solvus Lines.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2021-hl-q5-c-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "crystalline-amorphous-solid-structures",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q5(c)(ii)",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Crystalline and amorphous solid structures;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns i.e. BCC, FCC CPH.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Amorphous Structures - these structures have irregular and non-geometric patterns.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Crystalline Amorphous",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
  },
  {
   "id": "eng-2021-hl-q5-c",
@@ -1922,7 +2157,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 OL Q3(b)(ii)",
-  "questionText": "To temper the cutting edge of a cold chisel.",
+  "questionText": "Describe how to carry out each of the following heat treatment processes: To temper the cutting edge of a cold chisel.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1973,7 +2208,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 OL Q3(d)(i)",
-  "questionText": "Malleability, OR State two advantages of robotics in manufacturing.",
+  "questionText": "Explain any two of the following terms: Malleability, OR State two advantages of robotics in manufacturing.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -2004,7 +2239,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 OL Q3(d)(ii)",
-  "questionText": "Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment.",
+  "questionText": "Explain any two of the following terms: Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -2126,7 +2361,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 OL Q4(b)(i)",
-  "questionText": "Why is a flux required on the electrode during manual metal arc welding?",
+  "questionText": "Answer any three of the following in relation to manual metal arc welding: Why is a flux required on the electrode during manual metal arc welding?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2150,7 +2385,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 OL Q4(b)(ii)",
-  "questionText": "What is the function of the welding earth clamp shown?",
+  "questionText": "Answer any three of the following in relation to manual metal arc welding: What is the function of the welding earth clamp shown?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2553,29 +2788,6 @@
    }
   ],
   "notes": "The scheme prints '4 marks'."
- },
- {
-  "id": "eng-2021-ol-q7-b-iv",
-  "topicId": "eng-3-12",
-  "conceptId": "type-fit-will-result-assembly-largest",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q7(b)(iv)",
-  "questionText": "The type of fit which will result from the assembly of the largest shaft and the smallest hole.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Type of fit; Interference fit.",
-    "marks": 5
-   }
-  ]
  },
  {
   "id": "eng-2022-hl-q1-a",
@@ -3581,7 +3793,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q5(c)(i)",
-  "questionText": "The impact of a dislocation in crystal structures.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain: The impact of a dislocation in crystal structures.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -3618,7 +3830,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q5(c)(ii)",
-  "questionText": "The possible corrosive effects of the environment on metal objects.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain: The possible corrosive effects of the environment on metal objects.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -5092,10 +5304,8 @@
     "verbatim": "Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag.",
     "marks": 12,
     "accepts": [
-     "The charge consists of scrap iron and steel together with lime and molten pig iron. Oxygen is blown at the surface of the molten charge from a water-cooled lance which is lowered through the mouth of the furnace. Impurities in the charge are oxidized and form a slag on the surface. At the end of the blow, the steel is poured off through a tapping hole followed by emptying the slag through the mouth of the furnace.",
      "Basic oxygen furnace Labelled diagram & operation:",
      "Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.",
-     "As the coke burns, carbon monoxide is produced, and combines with the oxygen in the ore, leaving iron. The limestone combines with impurities to form slag. The molten iron falls to the bottom of the furnace where it is tapped off from time to time.",
      "Cold scrap iron or steel make up Furnace lid Carbon electrodes most of the charge together with small amounts of lime and carbon.",
      "The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back Charge door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping Tilting rollers spout.",
      "Electric Arc furnace"
@@ -5222,7 +5432,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 OL Q3(d)(i)",
-  "questionText": "Brittleness, OR medicine; (ii) gardening; (iii) manufacturing.",
+  "questionText": "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: Brittleness, OR medicine; (ii) gardening; (iii) manufacturing.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -5341,7 +5551,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 OL Q4(c)(iii)",
-  "questionText": "In relation to soldering, explain the term sweated joint and give one example where a sweated joint might be used.",
+  "questionText": "Answer any three of the following: In relation to soldering, explain the term sweated joint and give one example where a sweated joint might be used.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -5688,7 +5898,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Privacy concerns with permissions of capabilities the capture of images",
+    "verbatim": "Privacy concerns with permissions of capabilities",
     "marks": null
    },
    {
@@ -5700,7 +5910,7 @@
    {
     "id": "r-6",
     "kind": "point",
-    "verbatim": "Screen limitations on visual clarity at location, preferences or activity this early stage of development",
+    "verbatim": "Screen limitations on visual clarity at location, preferences or activity",
     "marks": null
    },
    {
@@ -6533,48 +6743,6 @@
   "questionFigureKey": "engineering-2023-HL-paper-q4bi-art"
  },
  {
-  "id": "eng-2023-hl-q4-c-ii",
-  "topicId": "eng-2-6",
-  "conceptId": "compare-induction-hardening-flame-hardening",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q4(c)(ii)",
-  "questionText": "Compare induction hardening and flame hardening.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Induction Hardening Flame Hardening A copper coil carrying a significant level of alternating current is placed near (not The surface of the steel object is heated to touching) the part.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "850˚C with an oxy-acetylene flame and The workpiece is heated by a high frequency quenched quickly. electric current passing through the copper This creates a hard outside layer as the coil to a high temperature (austenite zone) heated austenite structure changes to and then quenched with jets of water.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "martensite.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "The quenched metal undergoes a The depth of hardening depends on the martensitic transformation, increasing the rate of heating. hardness of the outer surface while keeping the inner core tough.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '8 marks'."
- },
- {
   "id": "eng-2023-hl-q4-c-iii",
   "topicId": "eng-1-4",
   "conceptId": "material-composition-18-10-stainless-steel",
@@ -6720,7 +6888,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 HL Q5(c)(i)",
-  "questionText": "Body Centred Cubic (BCC) and Face Centred Cubic (FCC) structures.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Body Centred Cubic (BCC) and Face Centred Cubic (FCC) structures.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -6756,7 +6924,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 HL Q5(c)(iii)",
-  "questionText": "Solid solution alloys and partial solubility alloys.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Solid solution alloys and partial solubility alloys.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -8387,7 +8555,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 OL Q3(d)(i)",
-  "questionText": "Toughness, Describe two areas where robotic technology is used in health care.",
+  "questionText": "Explain any two of the following metal properties: Toughness, Describe two areas where robotic technology is used in health care.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8415,7 +8583,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 OL Q3(d)(ii)",
-  "questionText": "Ductility, State two ways in which exoskeleton suits can help the recovery process.",
+  "questionText": "Explain any two of the following metal properties: Ductility, State two ways in which exoskeleton suits can help the recovery process.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8482,6 +8650,30 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "A passive flux is an inactive, non-corrosive flux and will not damage / corrode the electrical circuit. Therefore, the passive flux can remain on the electric circuit when finished soldering.",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2023-OL-paper-q4civ-art"
+ },
+ {
+  "id": "eng-2023-ol-q4-c-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "process-can-be-used-permanently-join",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q4(c)(ii)",
+  "questionText": "Name one process that can be used to permanently join sheet metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Resistance / Spot welding.",
     "marks": 5
    }
   ],
@@ -10054,7 +10246,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 HL Q5(c)(ii)",
-  "questionText": "Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment.",
+  "questionText": "Answer any two of the following: Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -13126,6 +13318,30 @@
   "questionFigureKey": "engineering-2025-HL-paper-q6bv-art"
  },
  {
+  "id": "eng-2025-hl-q6-b-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "how-acetylene-gas-safely-stored",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q6(b)(iii)",
+  "questionText": "Describe how acetylene gas is safely stored.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Acetylene is safely stored in colour coded cylinders that contain a porous material soaked with a solvent like acetone. This method keeps the gas dissolved at low pressures, reducing the risk of explosion. The cylinders are stored upright in cool, well-ventilated areas, with safety features like pressure relief devices to further ensure safe storage.",
+    "marks": 6
+   }
+  ],
+  "questionFigureKey": "engineering-2025-HL-paper-q6bv-art"
+ },
+ {
   "id": "eng-2025-hl-q6-b-iv",
   "topicId": "eng-2-10",
   "conceptId": "aid-diagram-s-process-friction-welding",
@@ -14523,6 +14739,34 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
+  "id": "eng-2025-ol-q2-b-i",
+  "topicId": "eng-1-4",
+  "conceptId": "materials-used-charge",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q2(b)(i)",
+  "questionText": "List the materials used in the charge;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Iron ore Coke Limestone",
+    "marks": 9,
+    "accepts": [
+     "Materials used: ‐ Scrap iron / steel Carbon Limestone",
+     "Materials used: ‐ Pig iron / scrap Carbon Limestone"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Three parts @ 3 marks'."
+ },
+ {
   "id": "eng-2025-ol-q2-c-i",
   "topicId": "eng-3-14",
   "conceptId": "suitable-material-each-parts-labelled-mini",
@@ -14660,6 +14904,37 @@
   "notes": "The scheme prints 'Any three parts @ 5 marks'."
  },
  {
+  "id": "eng-2025-ol-q4-c-i",
+  "topicId": "eng-2-10",
+  "conceptId": "benefit-using-r-clip-shown",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q4(c)(i)",
+  "questionText": "Outline one benefit of using the R‐clip shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "R‐clips are similar in function to split pins and linchpins.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Compared to split pins, they are easier to remove and are re‐ usable. They are particularly common in automotive and construction applications, such as securing hitch pins in trailers or locking parts in place on equipment.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
+ },
+ {
   "id": "eng-2025-ol-q4-c-ii",
   "topicId": "eng-1-5",
   "conceptId": "suggest-method-joining-sheet-aluminium",
@@ -14712,6 +14987,30 @@
    }
   ],
   "notes": "The scheme prints '8 marks'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
+ },
+ {
+  "id": "eng-2025-ol-q4-c-iv",
+  "topicId": "eng-2-10",
+  "conceptId": "tool-shown-opposite-use-tool",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q4(c)(iv)",
+  "questionText": "Name tool A shown opposite and give one use for this tool.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Allen key  Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.",
+    "marks": 8
+   }
+  ],
   "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
  },
  {

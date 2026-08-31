@@ -60,7 +60,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q3-b-ii", topicId: "eng-2-6", conceptId: "temper-cutting-edge-cold-chisel",
     section: "A", questionRef: "2021 OL Q3(b)(ii)",
-    questionText: "To temper the cutting edge of a cold chisel.",
+    questionText: "Describe how to carry out each of the following heat treatment processes: To temper the cutting edge of a cold chisel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Following the hardening process, the cutting edge is reheated to a suitable temperature, which is below the reddening temperature and then cooled in oil or water. The correct temperature is often displayed by a colour i.e. blue / purple is a suitable indicator for the cutting edge of a chisel.", marks: 8 },
@@ -88,7 +88,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-ol-q3-d-i", topicId: "eng-3-8", conceptId: "malleability-or-advantages-robotics-manufacturing",
     section: "A", questionRef: "2021 OL Q3(d)(i)",
     stem: "Engineering ‐ Ordinary level 4",
-    questionText: "Malleability, OR State two advantages of robotics in manufacturing.",
+    questionText: "Explain any two of the following terms: Malleability, OR State two advantages of robotics in manufacturing.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Robotics offer precision placement of components in manufacturing.", marks: null },
@@ -103,7 +103,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-ol-q3-d-ii", topicId: "eng-3-14", conceptId: "compressive-strength-or-ways-use-robotic",
     section: "A", questionRef: "2021 OL Q3(d)(ii)",
     stem: "Engineering ‐ Ordinary level 4",
-    questionText: "Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment.",
+    questionText: "Explain any two of the following terms: Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The ability of a material to withstand being squashed or pushed together.", marks: null },
@@ -158,7 +158,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-b-i", topicId: "eng-2-10", conceptId: "why-flux-required-electrode-during-manual",
     section: "A", questionRef: "2021 OL Q4(b)(i)",
-    questionText: "Why is a flux required on the electrode during manual metal arc welding?",
+    questionText: "Answer any three of the following in relation to manual metal arc welding: Why is a flux required on the electrode during manual metal arc welding?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flux protects the weld area and prevents oxidisation during welding.", marks: 4 },
@@ -179,7 +179,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-b-ii", topicId: "eng-2-10", conceptId: "function-welding-earth-clamp-shown",
     section: "A", questionRef: "2021 OL Q4(b)(ii)",
-    questionText: "What is the function of the welding earth clamp shown?",
+    questionText: "Answer any three of the following in relation to manual metal arc welding: What is the function of the welding earth clamp shown?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.", marks: 4 },
@@ -405,19 +405,6 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2021-ol-q7-b-iv", topicId: "eng-3-12", conceptId: "type-fit-will-result-assembly-largest",
-    section: "A", questionRef: "2021 OL Q7(b)(iv)",
-    questionText: "The type of fit which will result from the assembly of the largest shaft and the smallest hole.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Type of fit; Interference fit.", marks: 5 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
@@ -575,7 +562,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a labelled diagram, the operation of one furnace you have studied.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag.", marks: 12, accepts: ["The charge consists of scrap iron and steel together with lime and molten pig iron. Oxygen is blown at the surface of the molten charge from a water-cooled lance which is lowered through the mouth of the furnace. Impurities in the charge are oxidized and form a slag on the surface. At the end of the blow, the steel is poured off through a tapping hole followed by emptying the slag through the mouth of the furnace.","Basic oxygen furnace Labelled diagram & operation:","Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.","As the coke burns, carbon monoxide is produced, and combines with the oxygen in the ore, leaving iron. The limestone combines with impurities to form slag. The molten iron falls to the bottom of the furnace where it is tapped off from time to time.","Cold scrap iron or steel make up Furnace lid Carbon electrodes most of the charge together with small amounts of lime and carbon.","The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back Charge door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping Tilting rollers spout.","Electric Arc furnace"] },
+    { id: "r-1", kind: "alt", verbatim: "Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag.", marks: 12, accepts: ["Basic oxygen furnace Labelled diagram & operation:","Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.","Cold scrap iron or steel make up Furnace lid Carbon electrodes most of the charge together with small amounts of lime and carbon.","The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back Charge door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping Tilting rollers spout.","Electric Arc furnace"] },
     ],
   } as SecCard,
   {
@@ -640,7 +627,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-ol-q3-d-i", topicId: "eng-3-8", conceptId: "brittleness-or-medicine-ii-gardening-iii",
     section: "A", questionRef: "2022 OL Q3(d)(i)",
     stem: "Engineering - Ordinary level 4",
-    questionText: "Brittleness, OR medicine; (ii) gardening; (iii) manufacturing.",
+    questionText: "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: Brittleness, OR medicine; (ii) gardening; (iii) manufacturing.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: null },
@@ -697,7 +684,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-ol-q4-c-iii", topicId: "eng-2-10", conceptId: "relation-soldering-term-sweated-joint-example",
     section: "A", questionRef: "2022 OL Q4(c)(iii)",
     stem: "tool A thumb screw",
-    questionText: "In relation to soldering, explain the term sweated joint and give one example where a sweated joint might be used.",
+    questionText: "Answer any three of the following: In relation to soldering, explain the term sweated joint and give one example where a sweated joint might be used.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "When a soldered joint is over a large area, a method know as ‘sweating’ can be used. Both parts are first tinned with a light coat of solder.", marks: null },
@@ -1143,7 +1130,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2023-ol-q3-d-i", topicId: "eng-3-8", conceptId: "toughness-areas-where-robotic-technology-used",
     section: "A", questionRef: "2023 OL Q3(d)(i)",
     stem: "exoskeleton suit",
-    questionText: "Toughness, Describe two areas where robotic technology is used in health care.",
+    questionText: "Explain any two of the following metal properties: Toughness, Describe two areas where robotic technology is used in health care.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.", marks: 6, accepts: ["Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."] },
@@ -1157,7 +1144,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2023-ol-q3-d-ii", topicId: "eng-3-8", conceptId: "ductility-ways-exoskeleton-suits-can-help",
     section: "A", questionRef: "2023 OL Q3(d)(ii)",
     stem: "exoskeleton suit",
-    questionText: "Ductility, State two ways in which exoskeleton suits can help the recovery process.",
+    questionText: "Explain any two of the following metal properties: Ductility, State two ways in which exoskeleton suits can help the recovery process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Exoskeleton suits can help people with spinal cord injuries gain some mobility, helping to improve cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management", marks: 6, accepts: ["Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."] },
@@ -1187,6 +1174,27 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A passive flux is an inactive, non-corrosive flux and will not damage / corrode the electrical circuit. Therefore, the passive flux can remain on the electric circuit when finished soldering.", marks: 5 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-OL-paper-q4civ-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4civ-art.png",
+          "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
+          "alt": "The table or diagram printed with 2023 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q4-c-ii", topicId: "eng-2-10", conceptId: "process-can-be-used-permanently-join",
+    section: "A", questionRef: "2023 OL Q4(c)(ii)",
+    questionText: "Name one process that can be used to permanently join sheet metals.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Resistance / Spot welding.", marks: 5 },
     ],
     questionFigure: {
           "candId": "engineering-2023-OL-paper-q4civ-art",
@@ -1993,6 +2001,19 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q2-b-i", topicId: "eng-1-4", conceptId: "materials-used-charge",
+    section: "A", questionRef: "2025 OL Q2(b)(i)",
+    questionText: "List the materials used in the charge;",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Iron ore Coke Limestone", marks: 9, accepts: ["Materials used: ‐ Scrap iron / steel Carbon Limestone","Materials used: ‐ Pig iron / scrap Carbon Limestone"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q2-c-i", topicId: "eng-3-14", conceptId: "suitable-material-each-parts-labelled-mini",
     section: "A", questionRef: "2025 OL Q2(c)(i)",
     stem: "seat digging bucket tracks mini excavator",
@@ -2060,6 +2081,28 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q4-c-i", topicId: "eng-2-10", conceptId: "benefit-using-r-clip-shown",
+    section: "A", questionRef: "2025 OL Q4(c)(i)",
+    questionText: "Outline one benefit of using the R‐clip shown.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "R‐clips are similar in function to split pins and linchpins.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Compared to split pins, they are easier to remove and are re‐ usable. They are particularly common in automotive and construction applications, such as securing hitch pins in trailers or locking parts in place on equipment.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-OL-paper-q4civ-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q4civ-art.png",
+          "srcHash": "5e7bcfea2764d63b9b724ffc3cecc592",
+          "alt": "The table or diagram printed with 2025 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q4-c-ii", topicId: "eng-1-5", conceptId: "suggest-method-joining-sheet-aluminium",
     section: "A", questionRef: "2025 OL Q4(c)(ii)",
     questionText: "Suggest one method of joining sheet aluminium.",
@@ -2088,6 +2131,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flux cleans the surfaces and protects them from oxidation during the soldering process, ensuring better adhesion.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Flux enhances the wetting properties of the solder, allowing it to flow more easily and uniformly across the surfaces being joined.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-OL-paper-q4civ-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q4civ-art.png",
+          "srcHash": "5e7bcfea2764d63b9b724ffc3cecc592",
+          "alt": "The table or diagram printed with 2025 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q4-c-iv", topicId: "eng-2-10", conceptId: "tool-shown-opposite-use-tool",
+    section: "A", questionRef: "2025 OL Q4(c)(iv)",
+    questionText: "Name tool A shown opposite and give one use for this tool.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Name: Allen key  Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.", marks: 8 },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q4civ-art",

@@ -647,7 +647,25 @@ const decks = [
   // eng-2021-ol-q4-b, -q5-b, -q7-a, eng-2022-hl-q6-b, eng-2023-hl-q4-c,
   // -q5-c, -q7-c, eng-2023-ol-q4-c, eng-2024-hl-q4-c, -q5-c, eng-2024-ol-q4-c,
   // eng-2025-hl-q4-c, eng-2025-ol-q4-c. No surviving card changed its marks.
-  ['engineering:higher', ENG_HIGHER, 308, 'c6c720e7e02df9903254f875a16f675e94f67423aeceed4a277ac5dc1e2dc98f'],
+  // 2026-08-31 (fifteenth pass): 308 -> 313, Ordinary 147 -> 150. Three
+  // readings of the paper's own punctuation:
+  //
+  //   * a SEMICOLON closes a part. "Brinell hardness test and Vickers
+  //     hardness test;" is item (i) of three, whole, and the paper says so;
+  //     it was being flagged as text cut short and left unreviewed;
+  //   * a ROMAN that is only a list ITEM needs the instruction printed above
+  //     it. That same (i) has no verb anywhere — the instruction is "Select
+  //     any two from (i), (ii) or (iii) below and explain the difference
+  //     between the terms in each:" — and on a card of its own it is not a
+  //     question. 19 asks now read as one;
+  //   * "isolating switch" is a protective device, "acetylene" is fusion
+  //     welding, an "R-clip" is a mechanical fastening, and "material you
+  //     have selected" is the design function. Asks filing under no heading:
+  //     36 -> 2.
+  //
+  // REMOVED eng-2021-ol-q7-b-iv: with its instruction restored, its ask names
+  // the table it is read from, and the card cannot show it.
+  ['engineering:higher', ENG_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -692,7 +710,7 @@ const decks = [
   // any three of the following: inspection robot" — the lead-in with a
   // picture's label run onto it — and its five romans are the list. Nothing
   // removed.
-  ['engineering:ordinary', ENG_ORDINARY, 147, '0d0ef3853d79495c3c69aad458053d913577b27c1a4a3ef0768578fbfcb2a2ea'],
+  ['engineering:ordinary', ENG_ORDINARY, 150, '714eb2a036db8718724ee0ee99e5764df3288ba511ff33bb19941a1a0ab33dcb'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -707,6 +725,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8242);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8250);
   });
 });

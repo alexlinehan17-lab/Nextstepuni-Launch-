@@ -417,6 +417,17 @@ def main():
                     topic, _ = topic_for(parent)
                     if topic:
                         break
+                if not topic:
+                    # Last, the question's STIMULUS. "Name tool A shown and
+                    # give one use for this tool" names no topic at all and
+                    # neither does the part above it; what says the subject is
+                    # the prose the question opens with.
+                    try:
+                        topic, _ = topic_for(
+                            (A.paper.stem(q, letter) or '') + ' '
+                            + (A.paper.stem(q) or ''))
+                    except Exception:                        # noqa: BLE001
+                        topic = None
             if not topic:
                 note('files under no syllabus topic')
                 continue

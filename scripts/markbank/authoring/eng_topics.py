@@ -100,7 +100,7 @@ RULES = [
                      r'\bac\b and \bdc\b|riveted?|rivets?|'
                      r'permanent joint|non[- ]permanent joint|'
                      r'temporary join\w*|mechanical fasten\w*|thumb ?screw|'
-                     r'lock ?nut|\bsolder\w*|\bbraz\w+)\b'),
+                     r'lock ?nut|\bsolder\w*|\bbraz\w+|\bacetylene\b|r-?clip|join\w*\s+(?:sheet|metal|plastic)|permanently join)\b'),
     ('eng-2-11', 11, r'\b(machining|\blathe\b|shaping machine|milling machine|'
                      r'grinding (?:machine|wheel)|work holding|cutting tool|'
                      r'rake angle|chip formation|machinability|tool life|'
@@ -125,7 +125,7 @@ RULES = [
                      r'\bbearings?\b|clutch|\bbrakes?\b|prime mover|'
                      r'power transmission|\btorque\b|single[- ]acting|'
                      r'double[- ]acting|pneumatic|hydraulic|cylinder|piston|'
-                     r'lubricat\w+|\bgrease\b|\bvice\b|jig\b|fixture|universal joint|reciprocating|oscillat\w+|timing belt|timing chain|\bfulcrum\b|lifting platform|rotary motion|drive system)\b'),
+                     r'lubricat\w+|\bgrease\b|\bvice\b|jig\b|fixture|universal joint|reciprocating|oscillat\w+|timing belt|timing chain|\bfulcrum\b|lifting platform|rotary motion|drive system|force acting|foldable)\b'),
     ('eng-2-13', 10, r'\b(manufacturing process|fabrication|casting|forging|'
                      r'rolling|drawing|extruding|pressing|quality control|'
                      r'sand cast\w*|die cast\w*|3-?d print\w*|'
@@ -167,7 +167,7 @@ RULES = [
                     r'electrical hazard|earthing|chemical hazard|corrosive|'
                     r'combustible|explosive|fire protection|fire extinguisher|'
                     r'accident|statutory safety|guard\w*\b|ear protection|'
-                    r'eye protection|goggles|ventilat\w+|safety glasses)\b'),
+                    r'eye protection|goggles|ventilat\w+|safety glasses|isolating switch|protective device)\b'),
     # Appendix 1's CONTROL TECHNOLOGY, which the fourteen Materials-and-
     # Technology headings do not cover and the papers examine every year in
     # Q7(c): "understand the function of and use electrical power supplies,
@@ -206,7 +206,7 @@ RULES = [
                     r'extended reality|\bxr\b|upcycl\w+|smart\b|wireless|'
                     r'drone|bluetooth|autonomous|hydrogen|fuel cell|'
                     r'container ship|\bcad\b|computer aided|'
-                    r'remote[- ]control\w*|energy conversion|selection of each material|sanitiser|air purifier|\bhepa\b|co.\s*monitor|facial recognition|standing desk|telescopic|selfie stick|thermostatic|home heating|contribution[^.]{0,40}industry)\b'),
+                    r'remote[- ]control\w*|energy conversion|selecti\w+[^.]{0,24}material|material you have selected|sanitiser|air purifier|\bhepa\b|co.\s*monitor|facial recognition|standing desk|telescopic|selfie stick|thermostatic|home heating|contribution[^.]{0,40}industry)\b'),
 ]
 # Every rule above is written singular and hyphenated, the way the syllabus
 # prints it, and the papers write neither. Three things were silently costing

@@ -118,18 +118,26 @@ def question_spans(page):
 
 
 def part_spans(page, top, bottom):
-    """[(y, letter, roman)] for every part marker between top and bottom."""
+    """[(y, letter, roman)] for every part marker between top and bottom.
+
+    A roman printed on a line of its own belongs to the LETTER above it. Read
+    without that, "(i)" was recorded under no letter at all and (a)(i) matched
+    nothing, so every roman fell back to its letter's band and the pictures
+    printed against the romans themselves were never reached.
+    """
     out = []
+    letter = None
     for (bx0, by0, bx1, by1), t in lines(page):
         if not (top - 2 <= by0 <= bottom + 2):
             continue
         m, r = MARKER.match(t), ROMAN.match(t)
         if m:
+            letter = m.group(1)
             rest = t[m.end():].strip()
             r2 = ROMAN.match(rest)
-            out.append((by0, m.group(1), r2.group(1) if r2 else None))
+            out.append((by0, letter, r2.group(1) if r2 else None))
         elif r:
-            out.append((by0, None, r.group(1)))
+            out.append((by0, letter, r.group(1)))
     return out
 
 
@@ -170,7 +178,7 @@ def band_for(page, q, letter, roman, carried=None):
     # because the picture is printed once for the group.
     end = bottom
     for y, le, rm in parts[here + 1:]:
-        if roman is None and le is None:
+        if roman is None and rm and le == letter:
             continue                      # a roman of this same letter
         if (le, rm) == (letter, roman):
             continue
@@ -367,9 +375,19 @@ def worklist():
                                  A.paper.stem(q) or '').split())
             except Exception:                                # noqa: BLE001
                 continue
-            joined = f'{stem} {text}'
             if not text:
                 continue
+            # The author condemns a card on its stem, its own ask AND its
+            # children joined on, because that is what the card carries. The
+            # worklist has to ask the same question or it never offers the
+            # cropper the parts that are actually being refused: 71 of the 127
+            # figure refusals were not in it.
+            kids = sorted((k for k in A.paper.parts
+                           if k[0] == q and k[1] == letter
+                           and (k[1], k[2]) != (letter, roman)),
+                          key=lambda k: (k[1] or '', k[2] or ''))
+            joined = ' '.join([stem, text]
+                              + [(A.paper.text(*k) or '') for k in kids])
             if not (cardlint.FIG_REF.search(joined)
                     or cardlint.NAMES_LETTERS.search(joined)):
                 continue
