@@ -533,7 +533,12 @@ const decks = [
   // answers (c)(i) and (c)(ii) on surface grinding and then, with no OR at
   // all, (c)(i) and (c)(ii) on subtractive manufacturing. Joined, the tail of
   // one branch ran into the middle of the next. Nothing removed.
-  ['engineering:higher', ENG_HIGHER, 149, '63789f2faf56ee34cc0c2387bd5eebed64bcd3418341e4f1389474ce4e9384e0'],
+  // 2026-08-31 (fifth pass): 149 -> 150. A question runs over pages and
+  // prints its head once, so the cropper's parts on the second page sat under
+  // no head and had no band at all; and a bare number was being read as a
+  // head, so a graph's axis labels became nine questions on one page. One
+  // more crop bound after opening it. Nothing removed.
+  ['engineering:higher', ENG_HIGHER, 150, '695fcc6d1d4b811048d19d330f18b7c5c257108e10703d7f48451cf4c57a9430'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -564,6 +569,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7969);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7970);
   });
 });

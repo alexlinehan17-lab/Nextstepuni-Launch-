@@ -45,7 +45,11 @@ OUT = os.path.join(ROOT, 'components', 'MarkBank', 'figures')
 
 MARKER = re.compile(r'^\(([a-hj-z])\)')
 ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{1,3}|ix|x)\)')
-QHEAD = re.compile(r'^\s*(?:Question\s+)?(\d{1,2})\.?\s*(?:\(\s*\d{1,3}\s*marks?\s*\))?\s*$', re.I)
+# Engineering always names its questions -- "Question 4. (50 marks)" -- and
+# a bare number is not one. Allowing it read the axis labels of a graph as
+# nine question heads on one page ("10", "20", "30" ... "90"), which cut
+# every band on that page to nothing.
+QHEAD = re.compile(r'^\s*Question\s+(\d{1,2})\.?\s*(?:\(\s*\d{1,3}\s*marks?\s*\))?\s*$', re.I)
 # The page's own furniture, printed on every page and never part of an ask.
 HEADER = 120.0
 FOOTER = 60.0
@@ -129,12 +133,27 @@ def part_spans(page, top, bottom):
     return out
 
 
-def band_for(page, q, letter, roman):
-    """The vertical band this part owns, or None if it is not on this page."""
+def band_for(page, q, letter, roman, carried=None):
+    """The vertical band this part owns, or None if it is not on this page.
+
+    A question runs over pages and prints its head only once, so a part on the
+    second page sits under no head at all. `carried` is the question the page
+    opened under -- the last head seen before it -- and without it every part
+    past a page break had no band and no figure: 2021 HL Q4(a)(i) asks about
+    the surface hardening process SHOWN and the picture was never reached.
+    """
     spans = question_spans(page)
-    if q not in spans:
+    if q in spans:
+        top, bottom = spans[q]
+    elif carried == q and not spans:
+        top, bottom = 0.0, page.rect.height
+    elif carried == q:
+        # The page opens under the carried question and hands over at the
+        # first head printed on it.
+        top, bottom = 0.0, min(y for y, _ in
+                               [(v[0], k) for k, v in spans.items()])
+    else:
         return None
-    top, bottom = spans[q]
     parts = part_spans(page, top, bottom)
     if not parts:
         return None
@@ -177,9 +196,13 @@ def crop_for(path, q, letter, roman):
 
 def _crop(path, q, letter, roman):
     with pymupdf.open(path) as doc:
+        carried = None
         for n in range(doc.page_count):
             page = doc[n]
-            band = band_for(page, q, letter, roman)
+            heads = question_spans(page)
+            band = band_for(page, q, letter, roman, carried)
+            if heads:
+                carried = max(heads)
             if band is None:
                 continue
             top, bottom = band
@@ -312,6 +335,12 @@ REJECTED = {
     (2024, 'ol', 5, 'a', 'i'): 'one of the items the ask says are shown',
     (2024, 'ol', 6, 'c', 'i'): 'shows the CNC branch, not the lathe part',
     (2025, 'ol', 4, 'c', 'i'): 'shows tool A, and (i) asks about the R-clip',
+    # A recycling process drawn as a wheel, with its last stages printed
+    # below the artwork's own box and clipped away: the ask says "describe
+    # each of the stages" and the crop is missing one.
+    (2023, 'hl', 7, 'c', 'ii'): 'a stage of the process is clipped off',
+    (2025, 'hl', 5, 'c', 'i'): 'the last stages of the process are clipped off',
+    (2025, 'hl', 5, 'c', 'ii'): 'the last stages of the process are clipped off',
 }
 
 

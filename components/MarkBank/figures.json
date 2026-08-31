@@ -36901,5 +36901,16 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-paper-q3bi-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q3bi-art.png",
+  "md5": "9f8874c016cf6286a5bcf7d1c0a1ab49",
+  "alt": "The table or diagram printed with 2022 HL Q3(b)(i), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(b)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
  }
 }

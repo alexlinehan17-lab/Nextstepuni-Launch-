@@ -105,19 +105,19 @@
   "refsHash": "ffceb66a16576771"
  },
  "engineering": {
-  "cards": 182,
-  "contentHash": "99b9057e2a464a9d",
-  "coveragePct": 40.6,
-  "covered": 327,
+  "cards": 183,
+  "contentHash": "783df4ce66ea8a1c",
+  "coveragePct": 41.6,
+  "covered": 335,
   "excluded": 0,
   "leaves": 806,
-  "open": 479,
+  "open": 471,
   "orphans": 0,
   "papers": {
    "count": 10,
    "hash": "d6f8e4ccadef7bbf"
   },
-  "refsHash": "c6e867f656f44696"
+  "refsHash": "c6ff4f90a4ecb121"
  },
  "home-economics": {
   "cards": 571,

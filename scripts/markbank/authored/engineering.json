@@ -1664,6 +1664,97 @@
   ]
  },
  {
+  "id": "eng-2022-hl-q3",
+  "topicId": "eng-3-8",
+  "conceptId": "using-graph-paper-supplied-plot-stress",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q3",
+  "questionText": "(i) Explain the term metal fatigue. (ii) Outline two design considerations which will help minimise metal fatigue in the manufacture of crankshafts. (iii) Explain the importance of quality control (QC) in engineering manufacture. (a) The engine crankshaft pictured opposite has failed due to metal fatigue. (i) Using the graph paper supplied, plot the stress-strain diagram for metal A and the stress-strain diagram for metal B on the same graph axes, as shown opposite. (ii) With reference to metal B, describe with the aid of a diagram, the profile of the tensile test specimen when subjected to a load value of 158N/mm². (iii) Calculate Young’s modulus of elasticity for metal A and Young’s modulus of elasticity for metal B. (b) The results shown below were obtained from tensile tests on two metals, metal A and metal B. (i) Describe, with the aid of a suitable diagram(s), the process of magnetic particle testing. (ii) Outline two benefits of using NDT, such as magnetic particle testing, in the gas and oil industries. (c) In magnetic particle non-destructive testing (NDT) a portable magnetic device is used, as shown, for detecting imperfections in ferromagnetic materials.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "Question 3 – 50 marks"
+  },
+  "totalMarks": 50,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Metal fatigue is the initiation and propagation of cracks in a material due to cyclic loading (on/off loading). Once a fatigue crack has initiated, it grows a small amount with each loading cycle. The crack will continue to grow until it reaches a critical size and complete fracture of the structure.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Component size.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Material choice.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Avoid sharp corners – promote curved surfaces.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Specific heat treatments where necessary.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Environmental conditions.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Quality control (QC) is a procedure or set of procedures intended to ensure that a manufactured product or performed service adheres to a defined set of quality criteria or meets the requirements of the client or customer. QC in engineering manufacture is crucial for standards to be maintained and adhered to.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "2 4 6 8",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "At load value of 158N/mm², metal B will be in the “necking” phase of the tensile test. This is where the middle of the specimen is noticeably thinner than the rest of the specimen and with a little more stress the piece is going to fracture.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "load",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "Young’s Modulus of elasticity for metal B = 60 kN/mm²",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "In ferrous materials, cracks and cavities cause distortions in magnetic fields.",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art"
+ },
+ {
   "id": "eng-2022-hl-q4-a-i",
   "topicId": "eng-1-4",
   "conceptId": "difference-between-cast-iron-steel",
