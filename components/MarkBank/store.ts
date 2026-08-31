@@ -38,6 +38,7 @@ import { doc as fsDoc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { saveInBackground } from '../../utils/firestoreWrite';
 import { NEW_CARD, type CardMemory } from './scheduler';
+import { CARD_ID_ALIASES } from './cardAliases';
 import { isValidCardId } from '../../types/markBank';
 import { DEMO_STUDENT_UID } from '../../data/devStudent';
 
@@ -256,7 +257,15 @@ export function commitReview(
 }
 
 export function memoryFor(deck: DeckState, cardId: string): CardMemory {
-  return deck.cards[cardId] ?? NEW_CARD;
+  const candidates = [deck.cards[cardId]];
+  for (const [legacyId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
+    if (canonicalId === cardId) candidates.push(deck.cards[legacyId]);
+  }
+  return candidates
+    .filter((memory): memory is CardMemory => Boolean(memory))
+    .reduce<CardMemory | undefined>((latest, memory) => (
+      !latest || (memory.last || 0) > (latest.last || 0) ? memory : latest
+    ), undefined) ?? NEW_CARD;
 }
 
 /**

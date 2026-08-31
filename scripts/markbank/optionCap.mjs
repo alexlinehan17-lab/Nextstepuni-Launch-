@@ -7,7 +7,10 @@
  * test/markBankDeck.test.ts asserts the two agree.
  */
 export const MAX_OPTION_ROWS = 8;
-export const MAX_LONG_OPTION_ROWS = 14;
+// 2017 Construction Studies HL Q4(a) prints sixteen distinct acceptable
+// functional requirements. The ceiling must cover the largest verified SEC
+// menu; trimming it would make a correct answer impossible to self-mark.
+export const MAX_LONG_OPTION_ROWS = 16;
 
 /** Business Section 3 (Higher) and Section 2 (Ordinary); Sections B and C in
  *  the sciences. Keyed on the section, because a long question's individual

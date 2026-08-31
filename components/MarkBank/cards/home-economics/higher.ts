@@ -678,7 +678,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Higher Level — © State Examinations Commission.",
     id: "he-2024-hl-sa-q5", topicId: "home-economics-0-5", conceptId: "alternative-novel-protein-foods",
     section: "A", questionRef: "2024 HL Section A Q5",
-    stem: "Source | Product\nPlant\nMicro-organisms",
     questionText: "Complete the table below in relation to alternative (novel) protein foods.",
     tariffModel: {"kind":"fixed","notation":"Source @ 2 marks (graded 2:0) x 2, Product @ 1 mark (graded 1:0) x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
@@ -687,6 +686,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "bacteria; fungi; yeast; algae", marks: 2, accepts: ["bacteria","fungi","yeast","algae"], contextNote: "Micro-organisms - Source, @ 2 marks graded 2:0. Any one named micro-organism; the list ends with etc.", openList: true },
     { id: "r-4", kind: "point", verbatim: "quorn/mycoprotein; nutritional yeast", marks: 1, accepts: ["quorn/mycoprotein","nutritional yeast"], contextNote: "Micro-organisms - Product, @ 1 mark graded 1:0. The product must follow from the micro-organism given: fungi give quorn/mycoprotein, yeast gives nutritional yeast.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -835,7 +844,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Higher Level — © State Examinations Commission.",
     id: "he-2025-hl-sa-q2", topicId: "home-economics-0-5", conceptId: "protein-digestion-pancreas",
     section: "A", questionRef: "2025 HL Section A Q2",
-    stem: "Organ | Enzyme | Substrate | Product/Result\nPancreas |  |  |",
     questionText: "Complete the table below in relation to the digestion of protein.",
     tariffModel: {"kind":"fixed","notation":"3 points @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
@@ -843,6 +851,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Substrate — Peptones", marks: 2, contextNote: "2 marks graded 2:1:0. Peptones are what the stomach's pepsin has already produced; trypsin acts on them, not on whole protein." },
     { id: "r-3", kind: "point", verbatim: "Product/Result — Peptides", marks: 2, contextNote: "2 marks graded 2:1:0. Trypsin in the pancreas takes peptones only as far as peptides — amino acids come later, from peptidase in the small intestine." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1294,12 +1312,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Higher Level — © State Examinations Commission.",
     id: "he-2024-hl-sb-q1a", topicId: "home-economics-1-2", conceptId: "consumer-food-purchase-factors",
     section: "B", questionRef: "2024 HL Section B Q1(a)",
-    stem: "The Eurobarometer survey 2022 and 2019 questioned consumers on factors that affect their decisions when purchasing foods. (adapted from www.efsa.europa.eu)",
     questionText: "Using the information provided in the chart, comment and elaborate on four factors that affect consumer decisions when purchasing food.",
     tariffModel: {"kind":"bestNofParts","notation":"4 factors @ 5 marks each (graded 5:4:3:2:1:0)","answer":4,"ofParts":5,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Comment and elaborate on four factors that affect consumer decisions when purchasing food", marks: 20, contextNote: "Four of the five factors the chart plots, 5 marks each on a full 5:4:3:2:1:0 ladder — depth is paid for a mark at a time, so this rewards saying more about fewer things. Each option opens with the chart's own movement since 2019 (cost up, environment sharply up, origin down, nutrient content flat), and quoting that direction is the cheapest mark on the question. \"Comment and elaborate\" then wants the why behind the movement.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Cost increased since 2019; increase in cost of living; inflation; increase in food transport costs; increased tariffs on imported food products; current conflicts in the world; increasing raw ingredients/materials cost; increase in energy costs; food shortages; sugar tax; etc.","Food safety slight increase since 2019; food poisoning bacteria; additives; pesticide residue; antibiotic; hormone; steroid residue; genetically modified foods; foods containing animal diseases; microplastics; antibiotic resistant bacteria in foods; etc.","Origin of food decrease since 2019; food traceability; rules governing food production in different countries; food miles; geographical location; cultural background; marketing strategies used by food establishments; food safety agencies; etc.","Impact on environment huge increase since 2019; food miles; amount of water used; amount and type of energy used during production; amount of CO2 produced; methane gas produced; pollution of water; air; soil; depletion of nutrients from soil; organic foods; pesticides used; food waste; transport; seasonal foods; type of packaging used; etc.","Nutrient content no change since 2019; meeting RDA for different nutrients; age of person; health status of person; hobbies and activities; dietary advice; advertising; social media; influencers; etc."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1494,12 +1521,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q1a", topicId: "home-economics-0-8", conceptId: "iron-sources-teenage-diet",
     section: "B", questionRef: "2023 HL Section B Q1(a)",
-    stem: "Adequate micronutrient intakes during the teenage years is important for optimum growth and development. The chart gives the dietary sources of iron in a teenager's diet. (National Teen Food Survey II Report 2021, adapted from iuna.net)",
     questionText: "Using the information provided in the chart, comment and elaborate on the importance of including different sources of iron in a teenagers’ diet. Refer to four sources in your answer.",
     tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:4:3:2:1:0)","answer":4,"ofParts":7,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Comment and elaborate on the importance of including different sources of iron in a teenager’s diet", marks: 20, contextNote: "Four of the seven sources the chart plots, 5 marks each on a full 5-to-0 ladder — depth is paid a mark at a time, so four sources written well beats seven named. Two things run through the scheme's own text and are what \"elaborate\" means here: whether the iron is haem or non-haem, and what helps or blocks its absorption (Vitamin C helps, phytic acid in wholemeal hinders). The teenage angle matters too — menstruating girls and anaemia is the point the scheme returns to.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Breakfast cereals 22% fortified options; oats naturally high in non-haem iron – porridge; muesli contains dried fruit & nuts; wholemeal varieties high in fibre – impact on absorption of iron; combine with Vit C; easily accessible; eat on the go; help production of haemoglobin; etc.","Meat & meat products 20% red meat, liver and black pudding are good sources of haem iron; meat is a good source of HBV protein for growing teenagers; variety of uses- breakfast, lunch, dinner; readily available; may be lacking in diet of teenage girls; important source to prevent anaemia, especially in menstruating girls; etc.","Bread & rolls 14% fortified options; seeds, nuts & dried fruits good sources; wholemeal varieties (phytic acid) may prevent absorption; combine with Vit C; easy to incorporate into diet; versatile foods that can be eaten at any time of the day; source of iron and energy for athletic teenagers; forms myoglobin that carries oxygen to the muscles for energy; etc.","Grains, rice & pasta 10% brown varieties may prevent iron absorption; easy to incorporate into diet; lunches / dinners; quick snacks; source of iron and energy for teenagers involved in sport; forms cell enzymes systems that aid and speed up the metabolism of food; etc.","Vegetables & potatoes 9% peas, beans & lentils good sources; green vegetables good sources; soya beans useful in vegetarian diets; variety available; versatile; potatoes good source of iron and energy in the form of starch; useful for athletic teenagers; source of Vitamin C to aid absorption; variety of uses; breakfast, lunch, dinner; staple food in traditional Irish diets; etc.","Confectionary 11% biscuits & preserves – high sugar foods, top shelf of food pyramid; some are low in iron; biscuits and bars which contain oats are a good source of iron; dried fruit; useful as snacks; eat on the go; could include wholemeal flour; etc.","Other 14% nuts; seeds; curry powder; snack foods; root crisps; egg yolk; good sources of iron; etc."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1508,12 +1544,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q1b", topicId: "home-economics-0-8", conceptId: "iron-absorption-factors",
     section: "B", questionRef: "2023 HL Section B Q1(b)",
-    stem: "Adequate micronutrient intakes during the teenage years is important for optimum growth and development. The chart gives the dietary sources of iron in a teenager's diet. (National Teen Food Survey II Report 2021, adapted from iuna.net)",
     questionText: "Identify and describe the factors that affect the absorption of iron in the body.",
     tariffModel: {"kind":"bestNofParts","notation":"4 factors @ 5 marks (graded 5:4:3:0)","answer":4,"ofParts":9,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Identify and describe the factors that affect the absorption of iron in the body", marks: 20, contextNote: "Four factors at 5 marks on a 5:4:3:0 ladder — no 1 or 2, so any recognisable factor is worth at least 3 and the top two marks come from describing HOW it acts. The list runs both ways: the first three help absorption and the rest hinder it. Saying which direction a factor pulls is most of the description, and it is the half students leave out.", openList: true, group: {"claimMax":4,"perOption":5,"options":["consuming haem iron and non-haem iron together","food high in Vitamin C","acidity from hydrochloric acid in the stomach","tannins","dietary fibre","phytic acid","oxalic acid","excess protein","excess alcohol"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1522,7 +1567,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q1c", topicId: "home-economics-0-8", conceptId: "vitamin-c-hl",
     section: "B", questionRef: "2023 HL Section B Q1(c)",
-    stem: "Adequate micronutrient intakes during the teenage years is important for optimum growth and development. The chart gives the dietary sources of iron in a teenager's diet. (National Teen Food Survey II Report 2021, adapted from iuna.net)",
     questionText: "Give an account of Vitamin C with reference to: biological functions; effects of deficiency; properties.",
     tariffModel: {"kind":"fixed","notation":"biological functions 4 points @ 3 marks (graded 3:0); effects of deficiency 2 points @ 2 marks (graded 2:0); properties 2 points @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
@@ -1530,6 +1574,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Effects of deficiency", marks: 4, contextNote: "Two effects at 2 marks, all-or-nothing. Only 4 marks — scurvy plus one other and move on.", openList: true, group: {"claimMax":2,"perOption":2,"options":["collagen production affected","weakening of body tissue","slow healing of wounds","body bruises more easily","increased susceptibility to infection and illness","scurvy"]} },
     { id: "r-3", kind: "anyN", verbatim: "Properties", marks: 4, contextNote: "Two properties at 2 marks, all-or-nothing. Properties are how the vitamin behaves — water soluble, destroyed by light, air and alkalis — not what it does in the body. Reusing a function here answers the first bullet twice and scores nothing.", openList: true, group: {"claimMax":2,"perOption":2,"options":["crystalline","acidic","sweet/sour taste","water soluble","affected by exposure to light","affected by exposure to air","destroyed by alkalis","destroyed by oxidase","antioxidant"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1538,12 +1592,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
     id: "he-2023-hl-sb-q1d", topicId: "home-economics-1-1", conceptId: "shopping-restricted-budget",
     section: "B", questionRef: "2023 HL Section B Q1(d)",
-    stem: "Adequate micronutrient intakes during the teenage years is important for optimum growth and development. The chart gives the dietary sources of iron in a teenager's diet. (National Teen Food Survey II Report 2021, adapted from iuna.net)",
     questionText: "Discuss the guidelines a family should follow, when doing their weekly shopping on a restricted budget, in order to provide for their nutritional needs.",
     tariffModel: {"kind":"bestNofParts","notation":"5 points @ 4 marks each (graded 4:2:0); refer to restricted budget and nutritional needs","answer":5,"ofParts":14,"perPart":4}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Discuss the guidelines a family should follow when shopping on a restricted budget to provide for their nutritional needs", marks: 20, contextNote: "Five guidelines at 4 marks, graded 4:2:0. The scheme adds a rubric line that decides the question: refer to restricted budget AND nutritional needs. A guideline that only saves money is half an answer — the 4 comes from tying the saving to the nutrition, which is why \"seasonal fruit and vegetables are cheaper and at their most nutritious\" is the model point.", openList: true, group: {"claimMax":5,"perOption":4,"options":["fruit and vegetables in season, cheaper and at their most nutritious","buy fish in season","buy in bulk where possible","plan meals","consider meals that can be prepared in large quantities","cooking costs","make a list","look for offers","limit convenience foods, can be more expensive and less nutritious","buy generic products instead of branded","shop around – price check for expensive protein foods","purchase cheaper cuts of meat, similar nutritional value","dietary requirements of family members","choose wholegrain pasta, cereals, high in fibre"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1694,12 +1757,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level — © State Examinations Commission.",
     id: "he-2022-hl-sb-q1a", topicId: "home-economics-0-1", conceptId: "teenage-healthy-eating-barriers",
     section: "B", questionRef: "2022 HL Section B Q1(a)",
-    stem: "'Health-related habits developed during teenage years tend to persist into adulthood' (iuna.net). The chart shows the factors that make it difficult for teenagers to eat a healthy diet, from the National Teens Food Survey II. (adapted from iuna.net)",
     questionText: "Using the information provided in the chart, comment and elaborate on the factors that make it difficult for teenagers to eat a healthy diet.",
     tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:4:3:2:1:0)","answer":4,"ofParts":6,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Comment and elaborate on the factors that make it difficult for teenagers to eat a healthy diet", marks: 20, contextNote: "Four factors at 5 marks on a full 5-to-0 ladder — depth is paid a mark at a time, so four written well beats six named. Convenience and availability overlap heavily and a marker will not pay twice for the same idea; taking one of those plus likes/dislikes, cost and advertising gives four clearly separate factors. \"Elaborate\" means naming the mechanism, not the factor: adapted taste buds, product placement, eating on the go.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Likes/dislikes influence of the senses when eating; presentation of food; overconsumption of high salt/sugar foods; adapted taste buds to high fat/salt/sugar foods; introduction to unhealthy foods from an early age; etc.","Convenience availability of processed and convenience foods; eating on the go; busy lifestyle; canteen /deli foods; etc.","Availability foods in season; frozen meals/foods; location; food options available in shops/canteen; product placement; etc.","Cost money available; cheap processed foods; family income; cost-effective foods; etc.","Advertising product placement; digital advertising; social media; marketing strategies; new product advertising; influencers; celebrity endorsements; etc.","Other culture; sustainability; health status; emotional influences; family influences; lack of nutritional awareness; follow friends’ eating patterns; etc."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1708,12 +1780,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level — © State Examinations Commission.",
     id: "he-2022-hl-sb-q1b", topicId: "home-economics-0-10", conceptId: "teenage-dietary-measures",
     section: "B", questionRef: "2022 HL Section B Q1(b)",
-    stem: "'Health-related habits developed during teenage years tend to persist into adulthood' (iuna.net). The chart shows the factors that make it difficult for teenagers to eat a healthy diet, from the National Teens Food Survey II. (adapted from iuna.net)",
     questionText: "Give a detailed account of the dietary measures to follow when planning and preparing meals for teenagers.",
     tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:3:0)","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Give a detailed account of the dietary measures to follow when planning and preparing meals for teenagers", marks: 20, contextNote: "Four measures at 5 marks, graded 5:3:0 — named is 3, detailed is 5. What makes a measure teenage-specific is the growth spurt and the activity level: iron for menstruating girls, calcium and Vitamin D for bone growth, energy requirements peaking when growth and activity coincide. A generic healthy-eating answer that would suit any age stays at 3 a point.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Use of food pyramid to ensure balance","nutritional balance","physical growth spurt increases the need for intake of all nutrients","daily requirements of macro / micro nutrients including protein / carbohydrate / fat / iron / calcium requirements as appropriate to 12-18 year olds with reasons for possible variations","high fibre","Vitamin C / iron absorption","Vitamin D / calcium absorption","energy balance vis a vis activity levels","energy requirements peak in this age group when high growth rates and high activity levels coincide","current nutritional guidelines re nutrient and food intake","eat three balanced meals each day","avoid skipping meals","variety of foods","personal likes and dislikes"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1722,7 +1803,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level — © State Examinations Commission.",
     id: "he-2022-hl-sb-q1c", topicId: "home-economics-0-8", conceptId: "vitamin-d",
     section: "B", questionRef: "2022 HL Section B Q1(c)",
-    stem: "'Health-related habits developed during teenage years tend to persist into adulthood' (iuna.net). The chart shows the factors that make it difficult for teenagers to eat a healthy diet, from the National Teens Food Survey II. (adapted from iuna.net)",
     questionText: "Give an account of Vitamin D with reference to: biological functions; effects of deficiency; properties.",
     tariffModel: {"kind":"fixed","notation":"biological functions 4 points @ 2 marks (graded 2:0); effects of deficiency 3 points @ 2 marks (graded 2:0); properties 3 points @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
@@ -1730,6 +1810,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Effects of deficiency", marks: 6, contextNote: "Three effects at 2 marks, all-or-nothing. Rickets in children and osteomalacia in adults is the pair the examiner looks for, and naming who gets which is what makes them two separate points rather than one.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Rickets in children","osteomalacia in adults","osteopenia","osteoporosis","tooth decay"]} },
     { id: "r-3", kind: "anyN", verbatim: "Properties", marks: 6, contextNote: "Three properties at 2 marks, all-or-nothing. Vitamin D is the stable one — unaffected by heat, oxygen, acids and alkalis — which is the opposite of Vitamin C and is exactly why examiners set them against each other.", openList: true, group: {"claimMax":3,"perOption":2,"options":["White crystalline solid","fat soluble/insoluble in water","heat stable/unaffected by cooking or heat treatments used in food processing","unaffected by oxygen","unaffected by acids","unaffected by alkalis"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1738,12 +1828,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Higher Level — © State Examinations Commission.",
     id: "he-2022-hl-sb-q1d", topicId: "home-economics-0-1", conceptId: "health-status-food-choice",
     section: "B", questionRef: "2022 HL Section B Q1(d)",
-    stem: "'Health-related habits developed during teenage years tend to persist into adulthood' (iuna.net). The chart shows the factors that make it difficult for teenagers to eat a healthy diet, from the National Teens Food Survey II. (adapted from iuna.net)",
     questionText: "Discuss how the health status of an individual can influence their choice when purchasing foods.",
     tariffModel: {"kind":"bestNofParts","notation":"5 points @ 4 marks (graded 4:2:0)","answer":5,"ofParts":12,"perPart":4}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Discuss how the health status of an individual can influence their choice when purchasing foods", marks: 20, contextNote: "Five points at 4 marks, graded 4:2:0. The list is almost all named conditions, so the 2 is easy — the second 2 comes from saying what the person actually does differently in the shop: reads labels for gluten, checks for lactose, avoids high-salt foods. A list of five conditions with no purchasing behaviour attached scores 10 of 20.", openList: true, group: {"claimMax":5,"perOption":4,"options":["Special dietary requirements","restricted diets","lactose free","coeliac","diabetic","low cholesterol","allergies","gluten intolerance","high blood pressure","IBS","maintaining a healthy weight","metabolism"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3394,8 +3493,8 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Higher Level — © State Examinations Commission.",
-    id: "he-2024-hl-sc-q2b-wool", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-wool",
-    section: "C", questionRef: "2024 HL Section C E2 Q2(b) - Wool",
+    id: "he-2024-hl-sc-q2b-wool", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile",
+    section: "C", questionRef: "2024 HL Section C E2 Q2(b)",
     stem: "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
     questionText: "Write a profile of a fabric manufactured from natural fibres. Refer to: name; fibre production; fabric properties; identification test.",
     tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks; production 3 @ 2 marks; properties 3 @ 1 mark; identification 2 @ 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
@@ -3405,56 +3504,352 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "anyN", verbatim: "Fabric properties", marks: 3, contextNote: "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.", openList: true, group: {"claimMax":3,"perOption":1,"options":["durable","warm","soft","absorbent","resilient","weak when wet","shrinks at high temperatures","scorches easily","piles and felts","can irritate sensitive skin","damaged by careless washing","damage by moths","damage by sunshine","damage by chemicals"]} },
     { id: "r-4", kind: "anyN", verbatim: "Identification test", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.", openList: true, group: {"claimMax":2,"perOption":2,"options":["doesn’t ignite easily","curls away from flame before catching fire","burns very slowly","orange flame","dark smoke","smell of burning hair/feathers","when removed from flame immediately stops burning","hard dark ash/bead like residue","crushed to powder easily between fingers"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Higher Level — © State Examinations Commission.",
-    id: "he-2024-hl-sc-q2b-silk", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-silk",
-    section: "C", questionRef: "2024 HL Section C E2 Q2(b) - Silk",
-    stem: "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
-    questionText: "Write a profile of a fabric manufactured from natural fibres. Refer to: name; fibre production; fabric properties; identification test.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks; production 3 @ 2 marks; properties 3 @ 1 mark; identification 2 @ 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the fabric", marks: 2, contextNote: "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows silk; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.", openList: true, group: {"claimMax":1,"perOption":2,"options":["silk"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Fibre production", marks: 6, contextNote: "Three points at 2 marks, graded 2:1:0. Silk comes from the cocoon of the silkworm. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.", openList: true, group: {"claimMax":3,"perOption":2,"options":["silkworms eat leaves of mulberry tree","spin cocoon of silk","cocoons soaked in water","thread extraction","dyed","spun into yarn"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Fabric properties", marks: 3, contextNote: "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.", openList: true, group: {"claimMax":3,"perOption":1,"options":["strong","smooth","lightweight","breathable","absorbent","drapes well","dries quickly","moderate resistance to creasing","does not attract dirt","good affinity to dyes","damaged by careless washing","moth","sunshine","chemicals"]} },
-    { id: "r-4", kind: "anyN", verbatim: "Identification test", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.", openList: true, group: {"claimMax":2,"perOption":2,"options":["doesn’t burn well","curl away from flame","difficulty igniting","smoulders rather than producing visible flame","when removed from flame quickly stops burning","smell of burning hair/feathers","small dark ash beads","crushed to powder easily between fingers"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Higher Level — © State Examinations Commission.",
-    id: "he-2024-hl-sc-q2b-cotton", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-cotton",
-    section: "C", questionRef: "2024 HL Section C E2 Q2(b) - Cotton",
-    stem: "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
-    questionText: "Write a profile of a fabric manufactured from natural fibres. Refer to: name; fibre production; fabric properties; identification test.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks; production 3 @ 2 marks; properties 3 @ 1 mark; identification 2 @ 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the fabric", marks: 2, contextNote: "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows cotton; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.", openList: true, group: {"claimMax":1,"perOption":2,"options":["cotton"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Fibre production", marks: 6, contextNote: "Three points at 2 marks, graded 2:1:0. Cotton comes from the boll of the cotton plant. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.", openList: true, group: {"claimMax":3,"perOption":2,"options":["comes from the boll or seed head of the cotton plant, fibres are 2-3cm long","fibres are white and fluffy","bolls are picked","fibres are separated from the seeds","then pressed into bales","the cotton is graded according to the length of the fibres","these fibres can be combined or spun into yarn"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Fabric properties", marks: 3, contextNote: "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.", openList: true, group: {"claimMax":3,"perOption":1,"options":["strong","absorbent","cool","washes and dries easily","dyes easily","shrinks","creases","affected by mildew","weakened by sun"]} },
-    { id: "r-4", kind: "anyN", verbatim: "Identification test", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.", openList: true, group: {"claimMax":2,"perOption":2,"options":["burns quickly with yellow flame","smells like charred paper","produces a grey ash"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Higher Level — © State Examinations Commission.",
-    id: "he-2024-hl-sc-q2b-linen", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-linen",
-    section: "C", questionRef: "2024 HL Section C E2 Q2(b) - Linen",
-    stem: "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
-    questionText: "Write a profile of a fabric manufactured from natural fibres. Refer to: name; fibre production; fabric properties; identification test.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks; production 3 @ 2 marks; properties 3 @ 1 mark; identification 2 @ 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of the fabric", marks: 2, contextNote: "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows linen; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.", openList: true, group: {"claimMax":1,"perOption":2,"options":["linen"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Fibre production", marks: 6, contextNote: "Three points at 2 marks, graded 2:1:0. Linen comes from the stem of the flax plant. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.", openList: true, group: {"claimMax":3,"perOption":2,"options":["made from the stem of the flax plant","flax stems are pulled and retted, soaked until the outer stem rots","stems are crushed and combed","fibres are spun into yarn","yarn is bleached and dyed","woven into a textured fabric"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Fabric properties", marks: 3, contextNote: "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.", openList: true, group: {"claimMax":3,"perOption":1,"options":["strong","absorbent","cool","washes well","creases easily","shrinks easily","difficult to dye","damaged by mildew"]} },
-    { id: "r-4", kind: "anyN", verbatim: "Identification test", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.", openList: true, group: {"claimMax":2,"perOption":2,"options":["burns quickly with yellow flame","produces grey ash"]} },
+    answerVariants: [
+          {
+                "id": "wool",
+                "label": "Wool",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of the fabric",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows wool; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "wool"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Fibre production",
+                            "marks": 6,
+                            "openList": true,
+                            "contextNote": "Three points at 2 marks, graded 2:1:0. Wool comes from the fleece of sheep, goats and llamas. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 2,
+                                  "options": [
+                                        "fleece of sheep, goats, llamas grown",
+                                        "sheared",
+                                        "sorted/graded",
+                                        "cleaned",
+                                        "combed/carded",
+                                        "dyed",
+                                        "spun into yarn"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Fabric properties",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 1,
+                                  "options": [
+                                        "durable",
+                                        "warm",
+                                        "soft",
+                                        "absorbent",
+                                        "resilient",
+                                        "weak when wet",
+                                        "shrinks at high temperatures",
+                                        "scorches easily",
+                                        "piles and felts",
+                                        "can irritate sensitive skin",
+                                        "damaged by careless washing",
+                                        "damage by moths",
+                                        "damage by sunshine",
+                                        "damage by chemicals"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-4",
+                            "kind": "anyN",
+                            "verbatim": "Identification test",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "doesn’t ignite easily",
+                                        "curls away from flame before catching fire",
+                                        "burns very slowly",
+                                        "orange flame",
+                                        "dark smoke",
+                                        "smell of burning hair/feathers",
+                                        "when removed from flame immediately stops burning",
+                                        "hard dark ash/bead like residue",
+                                        "crushed to powder easily between fingers"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "silk",
+                "label": "Silk",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of the fabric",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows silk; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "silk"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Fibre production",
+                            "marks": 6,
+                            "openList": true,
+                            "contextNote": "Three points at 2 marks, graded 2:1:0. Silk comes from the cocoon of the silkworm. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 2,
+                                  "options": [
+                                        "silkworms eat leaves of mulberry tree",
+                                        "spin cocoon of silk",
+                                        "cocoons soaked in water",
+                                        "thread extraction",
+                                        "dyed",
+                                        "spun into yarn"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Fabric properties",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 1,
+                                  "options": [
+                                        "strong",
+                                        "smooth",
+                                        "lightweight",
+                                        "breathable",
+                                        "absorbent",
+                                        "drapes well",
+                                        "dries quickly",
+                                        "moderate resistance to creasing",
+                                        "does not attract dirt",
+                                        "good affinity to dyes",
+                                        "damaged by careless washing",
+                                        "moth",
+                                        "sunshine",
+                                        "chemicals"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-4",
+                            "kind": "anyN",
+                            "verbatim": "Identification test",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "doesn’t burn well",
+                                        "curl away from flame",
+                                        "difficulty igniting",
+                                        "smoulders rather than producing visible flame",
+                                        "when removed from flame quickly stops burning",
+                                        "smell of burning hair/feathers",
+                                        "small dark ash beads",
+                                        "crushed to powder easily between fingers"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "cotton",
+                "label": "Cotton",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of the fabric",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows cotton; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "cotton"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Fibre production",
+                            "marks": 6,
+                            "openList": true,
+                            "contextNote": "Three points at 2 marks, graded 2:1:0. Cotton comes from the boll of the cotton plant. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 2,
+                                  "options": [
+                                        "comes from the boll or seed head of the cotton plant, fibres are 2-3cm long",
+                                        "fibres are white and fluffy",
+                                        "bolls are picked",
+                                        "fibres are separated from the seeds",
+                                        "then pressed into bales",
+                                        "the cotton is graded according to the length of the fibres",
+                                        "these fibres can be combined or spun into yarn"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Fabric properties",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 1,
+                                  "options": [
+                                        "strong",
+                                        "absorbent",
+                                        "cool",
+                                        "washes and dries easily",
+                                        "dyes easily",
+                                        "shrinks",
+                                        "creases",
+                                        "affected by mildew",
+                                        "weakened by sun"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-4",
+                            "kind": "anyN",
+                            "verbatim": "Identification test",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "burns quickly with yellow flame",
+                                        "smells like charred paper",
+                                        "produces a grey ash"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "linen",
+                "label": "Linen",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of the fabric",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows linen; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "linen"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Fibre production",
+                            "marks": 6,
+                            "openList": true,
+                            "contextNote": "Three points at 2 marks, graded 2:1:0. Linen comes from the stem of the flax plant. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 2,
+                                  "options": [
+                                        "made from the stem of the flax plant",
+                                        "flax stems are pulled and retted, soaked until the outer stem rots",
+                                        "stems are crushed and combed",
+                                        "fibres are spun into yarn",
+                                        "yarn is bleached and dyed",
+                                        "woven into a textured fabric"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Fabric properties",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 1,
+                                  "options": [
+                                        "strong",
+                                        "absorbent",
+                                        "cool",
+                                        "washes well",
+                                        "creases easily",
+                                        "shrinks easily",
+                                        "difficult to dye",
+                                        "damaged by mildew"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-4",
+                            "kind": "anyN",
+                            "verbatim": "Identification test",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "burns quickly with yellow flame",
+                                        "produces grey ash"
+                                  ]
+                            }
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -3835,8 +4230,8 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q2b-wool-nylon", topicId: "home-economics-3-7", conceptId: "blended-fabric-profile-wool-nylon",
-    section: "C", questionRef: "2023 HL Section C E2 Q2(b) - Wool and Nylon",
+    id: "he-2023-hl-sc-q2b-wool-nylon", topicId: "home-economics-3-7", conceptId: "blended-fabric-profile",
+    section: "C", questionRef: "2023 HL Section C E2 Q2(b)",
     stem: "Blended fabrics have combined properties of each component fibre.",
     questionText: "Write a profile of one blended fabric. Refer to: fabric production; fabric properties; uses.",
     tariffModel: {"kind":"fixed","notation":"Production 3 points @ 3 marks (graded 3:2:0); properties 3 points @ 1 mark; uses 3 points @ 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
@@ -3845,21 +4240,154 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Properties of the blend", marks: 3, contextNote: "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. The point of a blend is that it takes the best of both, so mix them: wool's properties and nylon's.", openList: true, group: {"claimMax":3,"perOption":1,"options":["warm","absorbent","soft","resilient","durable","scorches easily","damaged by moths","damaged by careless washing (shrinks and felts)","piles","can irritate some skin","strong","warm","elastic","light"]} },
     { id: "r-3", kind: "anyN", verbatim: "Uses", marks: 3, contextNote: "Three uses at 1 mark each, graded 1:0. Four are accepted and they are one word each — three of the cheapest marks in the elective, so never leave this row blank.", openList: true, group: {"claimMax":3,"perOption":1,"options":["clothing","soft furnishings","upholstery","bed linen"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q2b-cotton-polyester", topicId: "home-economics-3-7", conceptId: "blended-fabric-profile-cotton-polyester",
-    section: "C", questionRef: "2023 HL Section C E2 Q2(b) - Cotton and Polyester",
-    stem: "Blended fabrics have combined properties of each component fibre.",
-    questionText: "Write a profile of one blended fabric. Refer to: fabric production; fabric properties; uses.",
-    tariffModel: {"kind":"fixed","notation":"Production 3 points @ 3 marks (graded 3:2:0); properties 3 points @ 1 mark; uses 3 points @ 1 mark","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Production of a cotton and polyester blend", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0 — nine of the fifteen marks. A blend has three production stories and the scheme credits all of them: how cotton is prepared, how polyester is made, and how the two are blended by weaving in the warp and weft.", openList: true, group: {"claimMax":3,"perOption":3,"options":["boll is harvested","cotton fibres are removed","spun into yarn","viscous liquid created","extruded through fine holes in a nozzle or spinneret","filaments solidify when cooled","combinations/mixing threads by weaving together in the warp and weft"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Properties of the blend", marks: 3, contextNote: "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. The point of a blend is that it takes the best of both, so mix them: cotton's properties and polyester's.", openList: true, group: {"claimMax":3,"perOption":1,"options":["strong","durable","absorbent","easy to launder","cool against the skin","easy to dye","no elasticity","shrinks","burns","strong","hardwearing","crease-resistant","stain-resistant","good drape"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Uses", marks: 3, contextNote: "Three uses at 1 mark each, graded 1:0. Four are accepted and they are one word each — three of the cheapest marks in the elective, so never leave this row blank.", openList: true, group: {"claimMax":3,"perOption":1,"options":["clothing","soft furnishings","upholstery","bed linen"]} },
+    answerVariants: [
+          {
+                "id": "wool-nylon",
+                "label": "Wool and nylon",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Production of a wool and nylon blend",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0 — nine of the fifteen marks. A blend has three production stories and the scheme credits all of them: how wool is prepared, how nylon is made, and how the two are blended by weaving in the warp and weft.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "fleece is graded",
+                                        "cleaned",
+                                        "teased",
+                                        "two chemicals are mixed together and heated",
+                                        "molecules link to produce a long filament",
+                                        "hot nylon is squirted from a slit in the base of steel vessels",
+                                        "Blend Cotton and Polyester",
+                                        "combinations/mixing threads by weaving together in the warp and weft"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Properties of the blend",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. The point of a blend is that it takes the best of both, so mix them: wool's properties and nylon's.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 1,
+                                  "options": [
+                                        "warm",
+                                        "absorbent",
+                                        "soft",
+                                        "resilient",
+                                        "durable",
+                                        "scorches easily",
+                                        "damaged by moths",
+                                        "damaged by careless washing (shrinks and felts)",
+                                        "piles",
+                                        "can irritate some skin",
+                                        "strong",
+                                        "warm",
+                                        "elastic",
+                                        "light"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Uses",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Three uses at 1 mark each, graded 1:0. Four are accepted and they are one word each — three of the cheapest marks in the elective, so never leave this row blank.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 1,
+                                  "options": [
+                                        "clothing",
+                                        "soft furnishings",
+                                        "upholstery",
+                                        "bed linen"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "cotton-polyester",
+                "label": "Cotton and polyester",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Production of a cotton and polyester blend",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0 — nine of the fifteen marks. A blend has three production stories and the scheme credits all of them: how cotton is prepared, how polyester is made, and how the two are blended by weaving in the warp and weft.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "boll is harvested",
+                                        "cotton fibres are removed",
+                                        "spun into yarn",
+                                        "viscous liquid created",
+                                        "extruded through fine holes in a nozzle or spinneret",
+                                        "filaments solidify when cooled",
+                                        "combinations/mixing threads by weaving together in the warp and weft"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Properties of the blend",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. The point of a blend is that it takes the best of both, so mix them: cotton's properties and polyester's.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 1,
+                                  "options": [
+                                        "strong",
+                                        "durable",
+                                        "absorbent",
+                                        "easy to launder",
+                                        "cool against the skin",
+                                        "easy to dye",
+                                        "no elasticity",
+                                        "shrinks",
+                                        "burns",
+                                        "strong",
+                                        "hardwearing",
+                                        "crease-resistant",
+                                        "stain-resistant",
+                                        "good drape"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Uses",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Three uses at 1 mark each, graded 1:0. Four are accepted and they are one word each — three of the cheapest marks in the elective, so never leave this row blank.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 1,
+                                  "options": [
+                                        "clothing",
+                                        "soft furnishings",
+                                        "upholstery",
+                                        "bed linen"
+                                  ]
+                            }
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -4004,8 +4532,8 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-boiling", topicId: "home-economics-0-3", conceptId: "evaluating-boiling-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Boiling",
+    id: "he-2023-hl-sc-q4aii-boiling", topicId: "home-economics-0-3", conceptId: "evaluating-one-method-of-cooking-meat",
+    section: "C", questionRef: "2023 HL Section C Q4(a)(ii)",
     stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
     questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
     tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
@@ -4014,21 +4542,601 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Underlying principle of boiling", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["conduction heat moving from molecule to molecule within the food","convection - as water is heated it becomes less dense and rises creating convection currents","occurs at 100°C"]} },
     { id: "r-3", kind: "anyN", verbatim: "How boiling affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["change in colour","change in texture","meat remains moist","B vitamins lost in cooking liquid","little flavour added"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-poaching", topicId: "home-economics-0-3", conceptId: "evaluating-poaching-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Poaching",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of cooking method", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows poaching; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Boiling","Poaching","Steaming","Stewing","Braising","Pressure cooking","Roasting","Grilling/Barbecuing","Frying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Underlying principle of poaching", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["conduction","convection","occurs at 80°C","barely bubbling"]} },
-    { id: "r-3", kind: "anyN", verbatim: "How poaching affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["little change in colour","no change in flavour","meat remains moist","water soluble vitamin B group retained"]} },
+    answerVariants: [
+          {
+                "id": "boiling",
+                "label": "Boiling",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows boiling; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of boiling",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "conduction heat moving from molecule to molecule within the food",
+                                        "convection - as water is heated it becomes less dense and rises creating convection currents",
+                                        "occurs at 100°C"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How boiling affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "change in colour",
+                                        "change in texture",
+                                        "meat remains moist",
+                                        "B vitamins lost in cooking liquid",
+                                        "little flavour added"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "poaching",
+                "label": "Poaching",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows poaching; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of poaching",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "conduction",
+                                        "convection",
+                                        "occurs at 80°C",
+                                        "barely bubbling"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How poaching affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "little change in colour",
+                                        "no change in flavour",
+                                        "meat remains moist",
+                                        "water soluble vitamin B group retained"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "steaming",
+                "label": "Steaming",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows steaming; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of steaming",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "meat is cooked in the steam of boiling water",
+                                        "convection",
+                                        "conduction",
+                                        "100+°C"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How steaming affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "little change in colour",
+                                        "no change in flavour",
+                                        "meat remains moist",
+                                        "water soluble vitamin B group retained"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "stewing",
+                "label": "Stewing",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows stewing; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of stewing",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "conduction",
+                                        "convection",
+                                        "small amount of liquid",
+                                        "at 80-90°C"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How stewing affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "tenderises meat",
+                                        "enhance flavour with well flavoured stock",
+                                        "change in colour",
+                                        "change in texture",
+                                        "meat remains moist",
+                                        "nutrients leach into cooking liquid"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "braising",
+                "label": "Braising",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows braising; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of braising",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "meat seared in hot fat",
+                                        "conduction",
+                                        "convection",
+                                        "80-90°C",
+                                        "in a small amount of liquid",
+                                        "covered saucepan on hob"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How braising affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "tenderises tough cuts of meat",
+                                        "searing seals in flavour",
+                                        "gives colour to meat",
+                                        "flavour enhanced by well-flavoured stock",
+                                        "nutrients leach into cooking liquid"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "pressure-cooking",
+                "label": "Pressure cooking",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows pressure cooking; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of pressure cooking",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "high temperatures",
+                                        "conduction",
+                                        "convection",
+                                        "pressure increased inside the pressure cooker"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How pressure cooking affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "meat cooks quickly",
+                                        "meal cooked in one pot increases flavour",
+                                        "no extra fat is added",
+                                        "retains more nutrients than other methods",
+                                        "tenderises meat"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "roasting",
+                "label": "Roasting",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows roasting; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of roasting",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "conduction",
+                                        "convection",
+                                        "175-230°C",
+                                        "in a little fat in oven",
+                                        "pot roasting in a covered saucepan on a hob"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How roasting affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "basting adds moisture",
+                                        "melting fat adds flavour",
+                                        "change in colour",
+                                        "tenderises meat",
+                                        "crisp texture can form",
+                                        "loss of B group vitamins",
+                                        "high temperatures cause meat to shrink"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "grilling-barbecuing",
+                "label": "Grilling / barbecuing",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows grilling/barbecuing; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of grilling/barbecuing",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "radiant heat",
+                                        "conduction",
+                                        "heat seals surface of food"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How grilling/barbecuing affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "sealing surface of meat retains nutrients",
+                                        "colour change",
+                                        "marinating meat develops flavour",
+                                        "adds moisture",
+                                        "loss of B group vitamins"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "frying",
+                "label": "Frying",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of cooking method",
+                            "marks": 3,
+                            "openList": true,
+                            "contextNote": "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows frying; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Boiling",
+                                        "Poaching",
+                                        "Steaming",
+                                        "Stewing",
+                                        "Braising",
+                                        "Pressure cooking",
+                                        "Roasting",
+                                        "Grilling/Barbecuing",
+                                        "Frying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Underlying principle of frying",
+                            "marks": 9,
+                            "openList": true,
+                            "contextNote": "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 3,
+                                  "options": [
+                                        "conduction",
+                                        "convection",
+                                        "hot oil/fat seals outer surface of meat"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "How frying affects the meat",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "increases fat content",
+                                        "forms crisp finish on meat",
+                                        "adds flavour",
+                                        "some loss of B group vitamins"
+                                  ]
+                            }
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -4036,120 +5144,8 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC098ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-steaming", topicId: "home-economics-0-3", conceptId: "evaluating-steaming-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Steaming",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of cooking method", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows steaming; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Boiling","Poaching","Steaming","Stewing","Braising","Pressure cooking","Roasting","Grilling/Barbecuing","Frying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Underlying principle of steaming", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["meat is cooked in the steam of boiling water","convection","conduction","100+°C"]} },
-    { id: "r-3", kind: "anyN", verbatim: "How steaming affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["little change in colour","no change in flavour","meat remains moist","water soluble vitamin B group retained"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-stewing", topicId: "home-economics-0-3", conceptId: "evaluating-stewing-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Stewing",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of cooking method", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows stewing; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Boiling","Poaching","Steaming","Stewing","Braising","Pressure cooking","Roasting","Grilling/Barbecuing","Frying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Underlying principle of stewing", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["conduction","convection","small amount of liquid","at 80-90°C"]} },
-    { id: "r-3", kind: "anyN", verbatim: "How stewing affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["tenderises meat","enhance flavour with well flavoured stock","change in colour","change in texture","meat remains moist","nutrients leach into cooking liquid"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-braising", topicId: "home-economics-0-3", conceptId: "evaluating-braising-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Braising",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of cooking method", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows braising; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Boiling","Poaching","Steaming","Stewing","Braising","Pressure cooking","Roasting","Grilling/Barbecuing","Frying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Underlying principle of braising", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["meat seared in hot fat","conduction","convection","80-90°C","in a small amount of liquid","covered saucepan on hob"]} },
-    { id: "r-3", kind: "anyN", verbatim: "How braising affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["tenderises tough cuts of meat","searing seals in flavour","gives colour to meat","flavour enhanced by well-flavoured stock","nutrients leach into cooking liquid"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-pressure-cooking", topicId: "home-economics-0-3", conceptId: "evaluating-pressure-cooking-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Pressure cooking",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of cooking method", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows pressure cooking; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Boiling","Poaching","Steaming","Stewing","Braising","Pressure cooking","Roasting","Grilling/Barbecuing","Frying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Underlying principle of pressure cooking", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["high temperatures","conduction","convection","pressure increased inside the pressure cooker"]} },
-    { id: "r-3", kind: "anyN", verbatim: "How pressure cooking affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["meat cooks quickly","meal cooked in one pot increases flavour","no extra fat is added","retains more nutrients than other methods","tenderises meat"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-roasting", topicId: "home-economics-0-3", conceptId: "evaluating-roasting-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Roasting",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of cooking method", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows roasting; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Boiling","Poaching","Steaming","Stewing","Braising","Pressure cooking","Roasting","Grilling/Barbecuing","Frying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Underlying principle of roasting", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["conduction","convection","175-230°C","in a little fat in oven","pot roasting in a covered saucepan on a hob"]} },
-    { id: "r-3", kind: "anyN", verbatim: "How roasting affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["basting adds moisture","melting fat adds flavour","change in colour","tenderises meat","crisp texture can form","loss of B group vitamins","high temperatures cause meat to shrink"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-grilling-barbecuing", topicId: "home-economics-0-3", conceptId: "evaluating-grilling-barbecuing-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Grilling/Barbecuing",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of cooking method", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows grilling/barbecuing; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Boiling","Poaching","Steaming","Stewing","Braising","Pressure cooking","Roasting","Grilling/Barbecuing","Frying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Underlying principle of grilling/barbecuing", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["radiant heat","conduction","heat seals surface of food"]} },
-    { id: "r-3", kind: "anyN", verbatim: "How grilling/barbecuing affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["sealing surface of meat retains nutrients","colour change","marinating meat develops flavour","adds moisture","loss of B group vitamins"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aii-frying", topicId: "home-economics-0-3", conceptId: "evaluating-frying-meat",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(ii) - Core - Frying",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Meat is a versatile food and can be cooked in a variety of ways. Evaluate one method of cooking meat. Refer to: name of cooking method; underlying principle; how the cooking method chosen affects the meat.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 point @ 3 marks (graded 3:0); principle 3 points @ 3 marks; effects 4 points @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of cooking method", marks: 3, contextNote: "Name one, 3 marks, graded 3:0 — all-or-nothing. This card follows frying; the scheme prints a parallel account for each of the nine methods it accepts, marked identically.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Boiling","Poaching","Steaming","Stewing","Braising","Pressure cooking","Roasting","Grilling/Barbecuing","Frying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Underlying principle of frying", marks: 9, contextNote: "Three points at 3 marks, graded 3:2:0. The principle is the physics plus the numbers: which forms of heat transfer are at work, and the temperature it happens at. The scheme prices the method of heat transfer and the temperature as separate points, so quote the figure.", openList: true, group: {"claimMax":3,"perOption":3,"options":["conduction","convection","hot oil/fat seals outer surface of meat"]} },
-    { id: "r-3", kind: "anyN", verbatim: "How frying affects the meat", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — half the whole question. Effects fall into colour, texture and tenderness, flavour, and nutrient loss. Taking one from each of those four areas gives four points that cannot be read as the same effect twice, and the B-group vitamin behaviour is a marking point in nearly every method.", openList: true, group: {"claimMax":4,"perOption":3,"options":["increases fat content","forms crisp finish on meat","adds flavour","some loss of B group vitamins"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aiii-glass", topicId: "home-economics-0-11", conceptId: "packaging-material-glass",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(iii) - Core - Glass",
+    id: "he-2023-hl-sc-q4aiii-glass", topicId: "home-economics-0-11", conceptId: "packaging-perishable-foods",
+    section: "C", questionRef: "2023 HL Section C Q4(a)(iii)",
     stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
     questionText: "Identify a type of material suitable for packaging perishable foods. Assess the suitability for purpose and environmental impact of the material identified.",
     tariffModel: {"kind":"fixed","notation":"Name @ 4 marks (graded 4:2:0); 2 points @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 14,
@@ -4158,53 +5154,260 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Suitability for purpose", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0 — no 4, so a bare property drops to 3. Suitability means what the packaging does for the food: keeps contamination out, survives heat processing, keeps moisture in.", openList: true, group: {"claimMax":1,"perOption":5,"options":["protect from contamination","easily moulded into a variety of shapes and sizes","coloured or transparent","can withstand heat processing without cracking"]} },
     { id: "r-3", kind: "anyN", verbatim: "Environmental impact", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The scheme expects both sides. Recyclability, lower emissions and conserved raw materials sit on one side; whether the material is biodegradable is the sharpest divider — only paper is, and glass, metal and plastic are not.", openList: true, group: {"claimMax":1,"perOption":5,"options":["100% recyclable","reduces pollution","reduces greenhouse gas emissions","conserves raw materials","reusable","non-biodegradable","careless disposal can be dangerous for animals"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aiii-metal", topicId: "home-economics-0-11", conceptId: "packaging-material-metal",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(iii) - Core - Metal",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Identify a type of material suitable for packaging perishable foods. Assess the suitability for purpose and environmental impact of the material identified.",
-    tariffModel: {"kind":"fixed","notation":"Name @ 4 marks (graded 4:2:0); 2 points @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 14,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Materials suitable for packaging perishable foods", marks: 4, contextNote: "Name one, 4 marks, graded 4:2:0. This card follows metal; the scheme prints a parallel account for each of the four materials. Naming the material and its form (jars, tinfoil, waxed cartons, vacuum packs) earns the full 4.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Glass","Metal","Paper","Plastic"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Suitability for purpose", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0 — no 4, so a bare property drops to 3. Suitability means what the packaging does for the food: keeps contamination out, survives heat processing, keeps moisture in.", openList: true, group: {"claimMax":1,"perOption":5,"options":["protects from contamination","convenient to store","easy to stack","can withstand heat processing"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Environmental impact", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The scheme expects both sides. Recyclability, lower emissions and conserved raw materials sit on one side; whether the material is biodegradable is the sharpest divider — only paper is, and glass, metal and plastic are not.", openList: true, group: {"claimMax":1,"perOption":5,"options":["recyclable","reduces greenhouse gas emissions","reduces pollution","conserves raw materials","reusable","non- biodegradable"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aiii-paper", topicId: "home-economics-0-11", conceptId: "packaging-material-paper",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(iii) - Core - Paper",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Identify a type of material suitable for packaging perishable foods. Assess the suitability for purpose and environmental impact of the material identified.",
-    tariffModel: {"kind":"fixed","notation":"Name @ 4 marks (graded 4:2:0); 2 points @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 14,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Materials suitable for packaging perishable foods", marks: 4, contextNote: "Name one, 4 marks, graded 4:2:0. This card follows paper; the scheme prints a parallel account for each of the four materials. Naming the material and its form (jars, tinfoil, waxed cartons, vacuum packs) earns the full 4.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Glass","Metal","Paper","Plastic"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Suitability for purpose", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0 — no 4, so a bare property drops to 3. Suitability means what the packaging does for the food: keeps contamination out, survives heat processing, keeps moisture in.", openList: true, group: {"claimMax":1,"perOption":5,"options":["protects from contamination","cheap to produce","lightweight","can be printed on","can be resealed"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Environmental impact", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The scheme expects both sides. Recyclability, lower emissions and conserved raw materials sit on one side; whether the material is biodegradable is the sharpest divider — only paper is, and glass, metal and plastic are not.", openList: true, group: {"claimMax":1,"perOption":5,"options":["recyclable","reduces greenhouse gas emissions","reduces pollution","conserves raw materials","reusable","biodegradable"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC098ALP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Higher Level — © State Examinations Commission.",
-    id: "he-2023-hl-sc-q4aiii-plastic", topicId: "home-economics-0-11", conceptId: "packaging-material-plastic",
-    section: "C", questionRef: "2023 HL Section C Q4(a)(iii) - Core - Plastic",
-    stem: "‘The meat sector in Ireland is one of the most important industries in the national economy.’ (www.ibec.ie)",
-    questionText: "Identify a type of material suitable for packaging perishable foods. Assess the suitability for purpose and environmental impact of the material identified.",
-    tariffModel: {"kind":"fixed","notation":"Name @ 4 marks (graded 4:2:0); 2 points @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 14,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Materials suitable for packaging perishable foods", marks: 4, contextNote: "Name one, 4 marks, graded 4:2:0. This card follows plastic; the scheme prints a parallel account for each of the four materials. Naming the material and its form (jars, tinfoil, waxed cartons, vacuum packs) earns the full 4.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Glass","Metal","Paper","Plastic"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Suitability for purpose", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0 — no 4, so a bare property drops to 3. Suitability means what the packaging does for the food: keeps contamination out, survives heat processing, keeps moisture in.", openList: true, group: {"claimMax":1,"perOption":5,"options":["moisture-proof","cheap to produce","lightweight","durable and strong depending on type","can be printed on"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Environmental impact", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The scheme expects both sides. Recyclability, lower emissions and conserved raw materials sit on one side; whether the material is biodegradable is the sharpest divider — only paper is, and glass, metal and plastic are not.", openList: true, group: {"claimMax":1,"perOption":5,"options":["recyclable","reduces greenhouse gas emissions","reduces pollution","conserves raw materials","reusable","non- biodegradable","careless disposal can be dangerous for animals","made from limited and non-renewable resources"]} },
+    answerVariants: [
+          {
+                "id": "glass",
+                "label": "Glass",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Materials suitable for packaging perishable foods",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Name one, 4 marks, graded 4:2:0. This card follows glass; the scheme prints a parallel account for each of the four materials. Naming the material and its form (jars, tinfoil, waxed cartons, vacuum packs) earns the full 4.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Glass",
+                                        "Metal",
+                                        "Paper",
+                                        "Plastic"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Suitability for purpose",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a bare property drops to 3. Suitability means what the packaging does for the food: keeps contamination out, survives heat processing, keeps moisture in.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "protect from contamination",
+                                        "easily moulded into a variety of shapes and sizes",
+                                        "coloured or transparent",
+                                        "can withstand heat processing without cracking"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Environmental impact",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. The scheme expects both sides. Recyclability, lower emissions and conserved raw materials sit on one side; whether the material is biodegradable is the sharpest divider — only paper is, and glass, metal and plastic are not.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "100% recyclable",
+                                        "reduces pollution",
+                                        "reduces greenhouse gas emissions",
+                                        "conserves raw materials",
+                                        "reusable",
+                                        "non-biodegradable",
+                                        "careless disposal can be dangerous for animals"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "metal",
+                "label": "Metal",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Materials suitable for packaging perishable foods",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Name one, 4 marks, graded 4:2:0. This card follows metal; the scheme prints a parallel account for each of the four materials. Naming the material and its form (jars, tinfoil, waxed cartons, vacuum packs) earns the full 4.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Glass",
+                                        "Metal",
+                                        "Paper",
+                                        "Plastic"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Suitability for purpose",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a bare property drops to 3. Suitability means what the packaging does for the food: keeps contamination out, survives heat processing, keeps moisture in.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "protects from contamination",
+                                        "convenient to store",
+                                        "easy to stack",
+                                        "can withstand heat processing"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Environmental impact",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. The scheme expects both sides. Recyclability, lower emissions and conserved raw materials sit on one side; whether the material is biodegradable is the sharpest divider — only paper is, and glass, metal and plastic are not.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "recyclable",
+                                        "reduces greenhouse gas emissions",
+                                        "reduces pollution",
+                                        "conserves raw materials",
+                                        "reusable",
+                                        "non- biodegradable"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "paper",
+                "label": "Paper",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Materials suitable for packaging perishable foods",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Name one, 4 marks, graded 4:2:0. This card follows paper; the scheme prints a parallel account for each of the four materials. Naming the material and its form (jars, tinfoil, waxed cartons, vacuum packs) earns the full 4.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Glass",
+                                        "Metal",
+                                        "Paper",
+                                        "Plastic"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Suitability for purpose",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a bare property drops to 3. Suitability means what the packaging does for the food: keeps contamination out, survives heat processing, keeps moisture in.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "protects from contamination",
+                                        "cheap to produce",
+                                        "lightweight",
+                                        "can be printed on",
+                                        "can be resealed"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Environmental impact",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. The scheme expects both sides. Recyclability, lower emissions and conserved raw materials sit on one side; whether the material is biodegradable is the sharpest divider — only paper is, and glass, metal and plastic are not.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "recyclable",
+                                        "reduces greenhouse gas emissions",
+                                        "reduces pollution",
+                                        "conserves raw materials",
+                                        "reusable",
+                                        "biodegradable"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "plastic",
+                "label": "Plastic",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Materials suitable for packaging perishable foods",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Name one, 4 marks, graded 4:2:0. This card follows plastic; the scheme prints a parallel account for each of the four materials. Naming the material and its form (jars, tinfoil, waxed cartons, vacuum packs) earns the full 4.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Glass",
+                                        "Metal",
+                                        "Paper",
+                                        "Plastic"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Suitability for purpose",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a bare property drops to 3. Suitability means what the packaging does for the food: keeps contamination out, survives heat processing, keeps moisture in.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "moisture-proof",
+                                        "cheap to produce",
+                                        "lightweight",
+                                        "durable and strong depending on type",
+                                        "can be printed on"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Environmental impact",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. The scheme expects both sides. Recyclability, lower emissions and conserved raw materials sit on one side; whether the material is biodegradable is the sharpest divider — only paper is, and glass, metal and plastic are not.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "recyclable",
+                                        "reduces greenhouse gas emissions",
+                                        "reduces pollution",
+                                        "conserves raw materials",
+                                        "reusable",
+                                        "non- biodegradable",
+                                        "careless disposal can be dangerous for animals",
+                                        "made from limited and non-renewable resources"
+                                  ]
+                            }
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {

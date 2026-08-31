@@ -610,6 +610,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "The output the firm will produce in equilibrium (use label Q1)", marks: 4, contextNote: "Four marks. Output is found by dropping from B — where MC cuts the AR line — straight down to the quantity axis.", openList: true },
     { id: "r-3", kind: "point", verbatim: "The average cost of producing this output (use point C1)", marks: 2, contextNote: "Two marks, and this is the point of the question: in LONG-RUN equilibrium average cost equals price, so C1 sits at the same height as P1. The scheme labels the axis P1 / C1 for exactly that reason.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2021-OL-scheme-p12-q12a-diagram",
           "src": "/exam-figures/economics/markbank/economics-2021-OL-scheme-p12-q12a-diagram.png",
@@ -871,6 +881,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "38 – 25 = 13 47 – 38 = 9", marks: 12, contextNote: "Six figures at two marks each. Marginal utility is the DIFFERENCE between one total and the one before it, so each blank is a subtraction down the total utility row.", openList: true },
     { id: "r-2", kind: "point", verbatim: "After 2nd is consumed or before 3rd is consumed.", marks: 3, contextNote: "Diminishing marginal utility sets in where the marginal figures start to FALL — 15 down to 13 — not where total utility falls. Total utility is still rising throughout this table.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2021-OL-scheme-p05-q4-working",
           "src": "/exam-figures/economics/markbank/economics-2021-OL-scheme-p05-q4-working.png",
@@ -893,6 +913,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Statement Positive Normative 1. In 2022 exports in Ireland will grow by 10% due to √ Brexit. 2. Increased government expenditure on drug abuse √ will reduce the number of deaths.", marks: 15, contextNote: "Two statements, the first worth 9 and the second 6. A POSITIVE statement is a factual claim that could be checked; a NORMATIVE one is a judgement about what should be done.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2021-OL-scheme-p04-q2-ticks",
           "src": "/exam-figures/economics/markbank/economics-2021-OL-scheme-p04-q2-ticks.png",
@@ -1206,6 +1236,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The trend on each side — both of these", marks: 12, contextNote: "US 6 and UK 6.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Have been consistent to the US with no major changes / with gradual increases from Feb to Mar / a fall in Apr and rising again. Exports were over €4bn in Jan and €4bn in Dec.","Exports between €1bn and approx. €2bn /","Slight increase in exports to the UK in some months. Exports were over €1bn in Feb and €2bn in Nov."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1273,6 +1313,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The meaning — either wording", marks: 6, contextNote: "The meaning of the figure, 6 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["For any €1 injected into the economy, national income will double.","For each euro spent in the economy, National Income will increase by €2."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1321,12 +1371,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "econ-2022-ol-q15-a-i-trend", topicId: "economics-3-1", conceptId: "reading-corporation-tax-trends",
     section: "B", questionRef: "2022 OL Q15(a)(i)",
-    stem: "Set on a bar chart of corporation tax receipts in € millions, 2011 to 2020.",
     questionText: "Explain the trend in corporation tax received by the Irish government during the period 2011 to 2020, using the figures in the graph.",
     tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "There has been a steady increase in the amount of money received by the Irish state from corporation tax. It has increased from approx. €4m in 2011 to approx. €12m in 2020.", marks: 10, contextNote: "10 marks: 6 for the trend and 4 for supporting figures.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1460,6 +1519,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "The price the firm will charge for its output (use label P1)", marks: 4, contextNote: "Four marks. The price is read off the AVERAGE REVENUE curve above Q1, not off G itself. This is the step most often missed: the firm sets output where MC = MR but charges what the demand curve will bear.", openList: true },
     { id: "r-3", kind: "point", verbatim: "The average cost of producing this output (use point C1)", marks: 1, contextNote: "One mark. Average cost is read off AC above the same Q1, which puts C1 below P1 — and the gap between them is the profit per unit.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2022-OL-scheme-p14-q11bii-diagram",
           "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p14-q11bii-diagram.png",
@@ -1482,6 +1551,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "5 Q1 D 0 10 20 30 40 50 60 Units (000's)", marks: 14, contextNote: "Fourteen marks for this curve — the scheme prints one cell for the whole diagram, 28 at 14 per curve. Demand falls as price rises, so the curve runs from €9 at 10,000 units down to €5 at 50,000, and it has to be LABELLED D.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2022-OL-scheme-p16-q12a-diagram",
           "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p16-q12a-diagram.png",
@@ -1504,6 +1583,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Demand and Supply Curves Reusable Coffee Cups 9 S Price (€) 7 P1", marks: 14, contextNote: "Fourteen marks, the second half of the scheme’s 28 at 14 per curve. Supply RISES with price — 10,000 units at €5 up to 50,000 at €9 — and the curve has to be labelled S.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2022-OL-scheme-p16-q12a-diagram",
           "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p16-q12a-diagram.png",
@@ -1570,6 +1659,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "2. LABOUR The human effort involved in the production of Workers yogurt. The workers who make the yogurt.", marks: 24, contextNote: "Four factors at six marks each. LAND is anything supplied by nature — which here means the milk and berries as well as the ground; CAPITAL is what people have MADE to produce with; ENTERPRISE is the risk-taker, the Cleary family.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2022-OL-scheme-p22-q14ai-table",
           "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p22-q14ai-table.png",
@@ -1709,6 +1808,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Costs which do not change as output changes / costs which have to be paid even if nothing is produced.", marks: 5, contextNote: "The definition, 5 marks.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1757,12 +1866,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "econ-2022-ol-sa-q10-a", topicId: "economics-3-1", conceptId: "comparing-debt-interest-payments",
     section: "A", questionRef: "2022 OL Section A Q10(a)",
-    stem: "Set on a bar chart of the interest paid on the general government debt in € billions, 2018 to 2024.",
     questionText: "The graph shows the interest paid and forecast to be paid on the general government debt from 2018 up to 2024. Compare the interest paid on the national debt in 2018 to the forecasted amount to be paid in 2024, using the data in the graph.",
     tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The interest to be paid on the National Debt in 2024 is significantly lower (€3.51 bn) than the interest paid on the debt in 2018 of €5.32bn.", marks: 15, contextNote: "15 marks (9+3+3): the comparison, and the two supporting figures.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1776,6 +1894,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The definition — either wording", marks: 15, contextNote: "One definition, 15 marks (9+3+3).", openList: true, group: {"claimMax":1,"perOption":15,"options":["Refers to the total amount of government borrowing which is outstanding / owed.","Refers to the total amount of money borrowed by the government which is owed."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1823,6 +1951,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Substitute Goods Complementary Goods Samsung S21 ✓ iPhone 13 case ✓ iPhone charging plug ✓ Google Pixel 4A smartphone ✓", marks: 15, contextNote: "Read the completed table below, not the line above it: the ticks survive extraction but their COLUMNS do not, so in flat text all four appear to sit together. The scheme ticks Samsung S21 and the Google Pixel as substitutes — rival handsets you would buy INSTEAD of an iPhone — and the case and the charging plug as complements, bought ALONGSIDE it. The tariff is ⟨1st x 9⟩ then ⟨3 x 2⟩: nine for the first correct categorisation and two for each of the other three, so the first one right is worth more than the rest together.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2022-OL-scheme-p06-q4-ticks",
           "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p06-q4-ticks.png",
@@ -1845,6 +1983,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Fixed Cost Variable Cost Wages €1,000 ✓ Raw Materials €1,500 ✓ Light & Heat €300 ✓ Rent of the premises €750 ✓", marks: 10, contextNote: "Read the completed table below. Only the rent is FIXED — it is owed whether the bakery bakes or not. Wages, raw materials and light & heat all move with output, so all three are variable. The tariff is uneven, ⟨4+4+1+1⟩: the first two right are worth four each and the last two one each.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2022-OL-scheme-p09-q7aii-ticks",
           "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p09-q7aii-ticks.png",
@@ -2554,6 +2702,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "The price the firm will charge for its output (use label P1)", marks: 4, contextNote: "Four marks. The price is read UP from Q1 to the average revenue curve, then across to the axis.", openList: true },
     { id: "r-3", kind: "point", verbatim: "The average cost of producing this output (using point C1)", marks: 1, contextNote: "One mark, and it lands on the same spot as P1: at long-run equilibrium AC just touches AR above Q1, so average cost equals price and the firm earns normal profit only.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2023-OL-scheme-p13-q11bii-diagram",
           "src": "/exam-figures/economics/markbank/economics-2023-OL-scheme-p13-q11bii-diagram.png",
@@ -3551,6 +3709,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1)", marks: 3, contextNote: "One cell, three marks, covering both labels. Output comes straight down from E; the price comes across from the KINK in the average revenue curve, which sits above E.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-OL-scheme-p15-q11b-diagram",
           "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p15-q11b-diagram.png",
@@ -3573,6 +3741,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "FC @ 3 VC @ 5", marks: 12, contextNote: "The scheme states its own split: the two axes carry 2 marks each, the fixed-cost line 3 and the variable-cost line 5. Filling in the axes is worth a third of the part, and the question says so.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Economics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-OL-scheme-p22-q13ai-diagram",
           "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p22-q13ai-diagram.png",
@@ -3595,6 +3773,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "S2 Price S1 E2 Pe2 E1 Pe1 D Qe2 Qe1 Quantity", marks: 15, contextNote: "Three drawn things at five marks each: the new supply curve, the new equilibrium price and the new equilibrium quantity. Dearer inputs mean LESS supplied at every price, so S shifts LEFT — to S2 above S1.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Economics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-OL-scheme-p34-q15b-diagram",
           "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p34-q15b-diagram.png",
@@ -3640,6 +3828,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Farm Machinery Capital Labour Farm Workers", marks: 15, contextNote: "Three names at five marks each. Machinery is CAPITAL — man-made and used to produce with; the workers are LABOUR; the owners are ENTERPRISE, the risk-takers.", openList: true },
     { id: "r-2", kind: "point", verbatim: "The one taking a risk in setting Farm Owners Enterprise up the farm in return for profit. Anything supplied by nature which helps in producing the Farm Land output from the farm. The ground on which the farm is located / is built.", marks: 5, contextNote: "Two explanations, three marks and two. Enterprise is defined by the RISK taken in return for profit, and land by being supplied by nature rather than made.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Economics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-OL-scheme-p33-q15a-table",
           "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p33-q15a-table.png",
@@ -3752,13 +3950,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "econ-2024-ol-sa-q9", topicId: "economics-3-0", conceptId: "gdp-and-gni",
     section: "A", questionRef: "2024 OL Section A Q9",
-    stem: "The Department of Finance gave two different estimates of Ireland’s economic growth for 2023: Real GDP 4.7% and Real GNI 0.4%.",
     questionText: "Complete the following table to show what each of the abbreviations stand for: G___ Domestic P___ and G___ N___ Income.",
     tariffModel: {"kind":"fixed","notation":"1 @ 4+1 @ 4+1 @ 2+1 @ 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
     rows: [
     { id: "r-gdp", kind: "point", verbatim: "Gross Domestic Product", marks: 8, contextNote: "The paper prints G___ Domestic P___ — the two blanks are Gross and Product, the first and second answered, paid 4 each.", openList: true },
     { id: "r-gni", kind: "point", verbatim: "Gross National Income", marks: 4, contextNote: "The paper prints G___ N___ Income — the two blanks are Gross and National, the third and fourth answered, paid 2 each.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3772,6 +3979,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Statement Positive Normative The introduction of the plastic bag levy has led to a decrease in the number of plastic bags being bought ✔ by consumers when shopping. The government should increase the amount of the ✔ old age pension to reduce poverty levels.", marks: 12, contextNote: "Read the completed table below. The levy statement is POSITIVE — it claims something happened, and sales figures could confirm or refute it. The pension statement is NORMATIVE: \"should\" is a value judgement and no data settles it. The tariff is eight for the first right and four for the second.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-OL-scheme-p11-q7-ticks",
           "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p11-q7-ticks.png",
@@ -3881,6 +4098,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Price competition Non-price competition ✔", marks: 8, contextNote: "Eight marks for the tick: NON-price competition. A coupon for app users is not a price cut for everyone — the shelf price is unchanged for anyone who has not downloaded it.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.", marks: 4, contextNote: "Four marks for the reason. The measure competes for market share by a means OTHER than changing prices for all customers, which is the definition being tested.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-OL-scheme-p06-q2a-ticks",
           "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p06-q2a-ticks.png",
@@ -4548,6 +4775,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The output the firm will produce in equilibrium (use label Q1)", marks: 4, contextNote: "The scheme prints ONE cell of 4 for both labels together — it sits between the two bullets. Output drops from E to the quantity axis; the price is the horizontal D = AR = MR line, because a firm in perfect competition takes the market price.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2025-OL-scheme-p18-q11b-diagram",
           "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p18-q11b-diagram.png",
@@ -4570,6 +4807,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "AC1 MC:5 MC:5 MR: 3 200 MR1 Cost 150 1 2 3 4 Quantity", marks: 17, contextNote: "The scheme prints its split beside the curves: 2 marks per axis, 5 for each cost curve and 3 for marginal revenue. Marginal revenue is FLAT at €200 — the firm gets the same for every unit — while AC falls then rises.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2025-OL-scheme-p25-q13bi-diagram",
           "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p25-q13bi-diagram.png",
@@ -4594,6 +4841,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "• Increase in equilibrium quantity (Q1).", marks: 4, contextNote: "Four marks for the new quantity, read where D1 crosses the unchanged supply curve.", openList: true },
     { id: "r-3", kind: "point", verbatim: "• Increase in equilibrium price (P1).", marks: 2, contextNote: "Two marks for the new price. Supply has not moved, so the new equilibrium slides UP the supply curve and both price and quantity rise together.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2025-OL-scheme-p34-q15b-diagram",
           "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p34-q15b-diagram.png",
@@ -4854,12 +5111,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "econ-2025-ol-sa-q4-b", topicId: "economics-3-1", conceptId: "opportunity-cost-of-budget-measures",
     section: "A", questionRef: "2025 OL Section A Q4(b)",
-    stem: "Budget 2025 included changes to the threshold of the higher tax bracket, along with USC cuts and cost-of-living payments.",
     questionText: "Is there an opportunity cost of these measures to the government? Place a tick (✔) in the relevant box below and explain your answer.",
     tariffModel: {"kind":"bestNofParts","notation":"1 @ 12","answer":1,"ofParts":3,"perPart":12}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A reason there is an opportunity cost — any one", marks: 12, contextNote: "The scheme ticks Yes; the 12 marks cover the tick and one explanation.", openList: true, group: {"claimMax":1,"perOption":12,"options":["Less tax revenue for the government and public services - this may mean that the government has less money to spend on other areas of the budget / this could lead to public services being underfunded.","Government now more reliant on corporation tax revenues - it may mean that the government is now even more reliant on corporation tax as a form of revenue and this may not be sustainable.","Alternative use of funds - instead of tax cuts, the government could use the funds to invest in job creation, infrastructure, or innovation. They could use the funds to provide a much-needed improvement in public services."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4921,6 +5187,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Substitute Complement Reason The apple iPhone can be used along with Apple ✔ the apple watch. iPhone Having one good allows you to use the other good. Samsung The Samsung watch would be purchased Galaxy ✔ instead of the apple watch, making it a Watch 7 substitute.", marks: 12, contextNote: "Read the completed table below. The iPhone is a COMPLEMENT — it is used alongside the watch, and owning one makes the other more useful. The Samsung watch is a SUBSTITUTE, bought instead of it. The test is whether the two are used together or chosen between, not whether they come from the same maker.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2025-OL-scheme-p15-q9-ticks",
           "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p15-q9-ticks.png",

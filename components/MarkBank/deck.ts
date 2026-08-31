@@ -799,6 +799,39 @@ export const MATHS_STRANDS: StrandRef[] = [
   },
 ];
 
+/** The Leaving Certificate Computer Science specification examined by this
+ *  2021–2025 corpus: practices and principles, core concepts, and the four
+ *  applied learning tasks. */
+export const COMPUTER_SCIENCE_STRANDS: StrandRef[] = [
+  {
+    id: 'cs1', label: 'Strand 1', title: 'Practices and principles',
+    topics: [
+      { id: 'cs-1-1', code: 'S1', title: 'Computational thinking' },
+      { id: 'cs-1-2', code: 'S1', title: 'Computers and society' },
+      { id: 'cs-1-3', code: 'S1', title: 'Designing and developing' },
+    ],
+  },
+  {
+    id: 'cs2', label: 'Strand 2', title: 'Core concepts',
+    topics: [
+      { id: 'cs-2-1', code: 'S2', title: 'Abstraction' },
+      { id: 'cs-2-2', code: 'S2', title: 'Algorithms' },
+      { id: 'cs-2-3', code: 'S2', title: 'Computer systems' },
+      { id: 'cs-2-4', code: 'S2', title: 'Data' },
+      { id: 'cs-2-5', code: 'S2', title: 'Evaluation and testing' },
+    ],
+  },
+  {
+    id: 'cs3', label: 'Strand 3', title: 'Computer science in practice',
+    topics: [
+      { id: 'cs-3-1', code: 'ALT1', title: 'Interactive information systems' },
+      { id: 'cs-3-2', code: 'ALT2', title: 'Analytics' },
+      { id: 'cs-3-3', code: 'ALT3', title: 'Modelling and simulation' },
+      { id: 'cs-3-4', code: 'ALT4', title: 'Embedded systems' },
+    ],
+  },
+];
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -809,6 +842,7 @@ export const SUBJECTS = [
   { id: 'economics', title: 'Economics', strands: ECONOMICS_STRANDS, spec: 'specification examined from 2021' },
   { id: 'construction-studies', title: 'Construction Studies', strands: CONSTRUCTION_STUDIES_STRANDS, spec: 'Ordinary and Higher Level syllabus' },
   { id: 'maths', title: 'Mathematics', strands: MATHS_STRANDS, spec: 'syllabus for examination from 2015' },
+  { id: 'computer-science', title: 'Computer Science', strands: COMPUTER_SCIENCE_STRANDS, spec: 'specification examined from 2020' },
   { id: 'english', title: 'English', strands: ENGLISH_STRANDS, spec: 'outgoing syllabus examined through 2028' },
   { id: 'irish', title: 'Irish', strands: IRISH_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
   { id: 'art', title: 'Art', strands: ART_STRANDS, spec: 'Visual Studies specification' },
@@ -1057,6 +1091,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   maths: {
     higher: () => import('./cards/maths/higher'),
     ordinary: () => import('./cards/maths/ordinary'),
+  },
+  'computer-science': {
+    higher: () => import('./cards/computer-science/higher'),
+    ordinary: () => import('./cards/computer-science/ordinary'),
   },
   english: {
     higher: () => import('./cards/english/higher'),

@@ -222,12 +222,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q7a", topicId: "agsci-1-3", conceptId: "quantitative-data-defined",
     section: "A", questionRef: "2021 OL Q7(a)",
-    stem: "Indicate whether each of the following is true or false by placing a tick in the correct box.",
     questionText: "Quantitative data cannot be measured accurately",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "Scheme answer for Q7(a): quantitative data is numerical, and therefore measurable, so the statement is false." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -236,12 +245,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q7b", topicId: "agsci-4-3-1", conceptId: "milk-quota-abolition-effect",
     section: "A", questionRef: "2021 OL Q7(b)",
-    stem: "Indicate whether each of the following is true or false by placing a tick in the correct box.",
     questionText: "The abolition of milk quotas has led to a reduction in dairy output",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "False", marks: 2, contextNote: "Scheme answer for Q7(b)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -250,12 +268,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q7c", topicId: "agsci-1-3", conceptId: "analysis-defined",
     section: "A", questionRef: "2021 OL Q7(c)",
-    stem: "Indicate whether each of the following is true or false by placing a tick in the correct box.",
     questionText: "Analysis is an identification of trends and patterns in data",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "Scheme answer for Q7(c)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -264,12 +291,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q7d", topicId: "agsci-4-3-1", conceptId: "common-agricultural-policy",
     section: "A", questionRef: "2021 OL Q7(d)",
-    stem: "Indicate whether each of the following is true or false by placing a tick in the correct box.",
     questionText: "Common Agricultural Policy (CAP) is a system of subsidies and support programmes for agriculture supported by the European Union",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "Scheme answer for Q7(d)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -278,12 +314,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q7e", topicId: "agsci-4-3-2", conceptId: "genome-editing-defined",
     section: "A", questionRef: "2021 OL Q7(e)",
-    stem: "Indicate whether each of the following is true or false by placing a tick in the correct box.",
     questionText: "Genome editing is the use of any technology that allows a change to an organisms DNA",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "True", marks: 2, contextNote: "Scheme answer for Q7(e)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -564,6 +609,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "False", marks: 2, contextNote: "(iv) Ideal Body Condition Score (BCS) for a cow at calving is 4.5" },
     { id: "r-5", kind: "point", verbatim: "False", marks: 2, contextNote: "(v) The number of compartments in the ruminant stomach is 3" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -711,6 +766,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rhizobium", marks: 3, contextNote: "Tick-box choice on the paper: Clostridium / Rhizobium / E. coli." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -932,13 +997,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q12b", topicId: "agsci-2-1", conceptId: "brown-earth-vs-podzol",
     section: "A", questionRef: "2022 OL Q12(b)",
-    stem: "Compare Brown Earth and Podzol under the headings Water content, Fertility and Humus content.",
     questionText: "Compare the named soil types under the headings which follow by placing the word higher in the correct box. The first one has been done as an example.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Fertility Higher", marks: 3, contextNote: "'Higher' goes in the Brown Earth column for fertility." },
     { id: "r-2", kind: "point", verbatim: "Humus content Higher", marks: 3, contextNote: "'Higher' goes in the Brown Earth column for humus content." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -991,12 +1065,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q3b", topicId: "agsci-4-3-2", conceptId: "dairy-beef-calf-weaning-weight",
     section: "A", questionRef: "2023 OL Q3(b)",
-    stem: "A group of transition year students purchased three week old beef heifer calves to rear as part of their agricultural science class. The boxes offered on the paper are 130kg, 90kg and 75kg.",
     questionText: "Identify the weight of an average dairy beef calf at weaning by placing a tick in the correct box.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "90kg", marks: 2, contextNote: "The scheme ticks the 90kg box. The tick is a Wingdings glyph that the text extraction drops entirely, so this was confirmed against the marking-scheme PDF itself — the tick sits on the 90kg row (p.12)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1095,12 +1178,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q8b-i", topicId: "agsci-4-3-3", conceptId: "mastitis-causing-bacteria",
     section: "A", questionRef: "2023 OL Q8(b)(i)",
-    stem: "Pauline noticed a cow with mastitis and treated her with antibiotics. The boxes offered on the paper are Rhizobium, E. coli and Pseudomonas.",
     questionText: "Identify the bacteria that do not cause mastitis in dairy cows by placing a tick in the correct box.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rhizobium", marks: 2, contextNote: "The scheme ticks Rhizobium. The tick is a Wingdings glyph the text extraction drops, so this was confirmed against the marking-scheme PDF (p.14), where the tick sits on the Rhizobium row." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1138,12 +1230,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q9a-iii", topicId: "agsci-4-1", conceptId: "rumen-ph",
     section: "A", questionRef: "2023 OL Q9(a)(iii)",
-    stem: "The boxes offered on the paper are 7.0, 4.0 and 9.0.",
     questionText: "Identify the pH of the rumen by placing a tick in the correct box.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rumen pH — 7.0", marks: 3, contextNote: "The scheme ticks the 7.0 box. The tick is a Wingdings glyph the text extraction drops, so this was confirmed against the marking-scheme PDF (p.15)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1305,7 +1406,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q2a", topicId: "agsci-3-3-2", conceptId: "farm-machinery-uses",
     section: "A", questionRef: "2024 OL Q2(a)",
-    stem: "Answer either (a) or (b).",
     questionText: "Identify the machine from the photographs below that is involved in the farming practices listed in the table. [Word list: Plough / Baler / Plate cooler / Slurry tanker]  Farming practice → Machine name: Spreading animal waste on land; Reducing the temperature of milk; Turn and break up soil; Compacts material into shape for storage.",
     tariffModel: {"kind":"orderedSplit","notation":"2(3) + 2(2)"}, totalMarks: 10,
     rows: [
@@ -1314,6 +1414,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Plough", marks: null, contextNote: "Turn and break up soil" },
     { id: "r-4", kind: "point", verbatim: "Baler", marks: null, contextNote: "Compacts material into shape for storage" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1367,6 +1477,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "False", marks: 2, contextNote: "(iv) Iron pans are found in brown earth soil profiles" },
     { id: "r-5", kind: "point", verbatim: "False", marks: 2, contextNote: "(v) Subsoil has a rich dark colour" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1429,12 +1549,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q6bi", topicId: "agsci-4-3-2", conceptId: "selective-grazers",
     section: "A", questionRef: "2024 OL Q6(b)(i)",
-    stem: "Answer either (a) or (b). Read the article and answer the questions that follow.\n\n\"Traditional cows to help bring mountainside back to life after devastating fires — Traditional Luing cattle are set to aid the recovery of a section of the Mourne Mountains in Co Down which was devastated by fire in April 2021. The National Trust has been trialling different methods to bring the land back to full health for the plants and animals that live there. The herd of six cows will trample bracken and eat through the dominant purple moor grass that has grown since the fire, providing the space for native plants and heather to return, and creating habitat for newts, lizards, ground-nesting birds and hares. These cows are not selective grazers, unlike sheep. The animals will wear special collars with GPS tracking, which allows virtual fences to be created to allow targeted conservation grazing in particular areas without the need for fencing.\" (Adapted from Irish Independent, 2023)\n\nThe underlined term is \"selective grazers\".",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cattle don't randomly consume forage", marks: 3, accepts: ["they display preferences for certain plant species or parts of plants or specific areas within the pasture"], contextNote: "One explanation only — either wording scores the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1443,12 +1572,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q6bii", topicId: "agsci-4-3-2", conceptId: "conservation-grazing",
     section: "A", questionRef: "2024 OL Q6(b)(ii)",
-    stem: "Answer either (a) or (b). Read the article and answer the questions that follow.\n\n\"Traditional cows to help bring mountainside back to life after devastating fires — Traditional Luing cattle are set to aid the recovery of a section of the Mourne Mountains in Co Down which was devastated by fire in April 2021. The National Trust has been trialling different methods to bring the land back to full health for the plants and animals that live there. The herd of six cows will trample bracken and eat through the dominant purple moor grass that has grown since the fire, providing the space for native plants and heather to return, and creating habitat for newts, lizards, ground-nesting birds and hares. These cows are not selective grazers, unlike sheep. The animals will wear special collars with GPS tracking, which allows virtual fences to be created to allow targeted conservation grazing in particular areas without the need for fencing.\" (Adapted from Irish Independent, 2023)",
     questionText: "Briefly outline the role of the herd of Luing cattle.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Allow plants to recover", marks: 3, accepts: ["reduce competition for plants or valid example","allows space for new habitats"], contextNote: "One role only — any one of these scores the full 3 marks.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1457,13 +1595,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q6biii", topicId: "agsci-4-3-2", conceptId: "virtual-fencing",
     section: "A", questionRef: "2024 OL Q6(b)(iii)",
-    stem: "Answer either (a) or (b). Read the article and answer the questions that follow.\n\n\"Traditional cows to help bring mountainside back to life after devastating fires — Traditional Luing cattle are set to aid the recovery of a section of the Mourne Mountains in Co Down which was devastated by fire in April 2021. ... The animals will wear special collars with GPS tracking, which allows virtual fences to be created to allow targeted conservation grazing in particular areas without the need for fencing.\" (Adapted from Irish Independent, 2023)",
     questionText: "Outline two advantages of the virtual fencing.",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Reduced overgrazing", marks: 2, accepts: ["promotes conservation or targeted grazing","better weed control","better nutrient management or enhanced soil health","protection of water sources","improved labour efficiencies or increased stocking rates","better animal welfare","reduced capital investment in fencing","locate livestock"], contextNote: "Advantage 1 — any one item from the scheme's pool scores 2." },
     { id: "r-2", kind: "point", verbatim: "better weed control", marks: 2, accepts: ["Reduced overgrazing","promotes conservation or targeted grazing","better nutrient management or enhanced soil health","protection of water sources","improved labour efficiencies or increased stocking rates","better animal welfare","reduced capital investment in fencing","locate livestock"], contextNote: "Advantage 2 — any different item from the same pool scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1615,7 +1762,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q9b", topicId: "agsci-2-3", conceptId: "water-quality-protection",
     section: "A", questionRef: "2024 OL Q9(b)",
-    stem: "Answer either (a) or (b). The Environmental Protection Agency (EPA) report in June 2023 has shown there is no improvement in water quality in Ireland in 2022.",
     questionText: "State two agricultural practices which contribute to water pollution and outline one way of protecting water quality from each of these practices.",
     tariffModel: {"kind":"orderedSplit","notation":"2(3) + 2(2)"}, totalMarks: 10,
     rows: [
@@ -1624,6 +1770,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "buffer or riparian zone", marks: null, accepts: ["don’t spread when heavy rain is forecast or don’t spread on slopes or near water sources","LESS (slurry only)","do not store manure near water sources","correct application rate or timing or soil test"], contextNote: "Way of protecting water quality from practice 1 — must match the practice named. The alternatives shown are the scheme's list for slurry spreading." },
     { id: "r-4", kind: "point", verbatim: "correct application rate or timing or soil test", marks: null, accepts: ["buffer or riparian zone","GPS for spreading","fence off all rivers or streams or provide water troughs or buffer or riparian zone","polyculture or crop rotation or valid example of indirect control","correct application rates","spread in correct weather conditions or timing"], contextNote: "Way of protecting water quality from practice 2 — must match the practice named. The alternatives shown cover the scheme's fertiliser, animal-access and pesticide lines." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1646,12 +1802,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q10b", topicId: "agsci-4-3-1", conceptId: "niche-market",
     section: "A", questionRef: "2024 OL Q10(b)",
-    stem: "Macroom Buffalo has Ireland’s first and only herd of milking water Buffalo. Macroom Buffalo Mozzarella is an artisan product and is made from fresh buffalo milk produced on the farm which is turned into cheese and dispatched the same day. (Adapted from bordbia.ie)",
     questionText: "Macroom Buffalo Mozzarella is an example of a product being supplied to a niche market. Identify the meaning of niche market by placing a tick (✓) in the correct box below. [Country or group of countries to which goods and services from another country are sold / Specialised market with products aimed at satisfying the specific needs of consumers / General direction in which a market is moving]",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Specialised market with products aimed at satisfying the specific", marks: 2, accepts: ["Specialised market with products aimed at satisfying the specific needs of consumers"], contextNote: "The tick goes beside the option 'Specialised market with products aimed at satisfying the specific needs of consumers'. The first option defines an export market and the third defines a market trend." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1660,12 +1825,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q10ci", topicId: "agsci-4-1", conceptId: "milk-composition-water",
     section: "A", questionRef: "2024 OL Q10(c)(i)",
-    stem: "Macroom Buffalo has Ireland's first and only herd of milking water Buffalo. The composition of cow's milk compared with buffalo's milk is: water - cow M %, buffalo 84 %; energy - cow 61 kcal, buffalo 97 kcal; protein - cow 3.2 g, buffalo 3.7 g; fat - cow 3.4 g, buffalo 6.9 g. (Adapted from researchgate.net)",
     questionText: "Using your knowledge of the composition of cow’s milk (M), place a tick (✓) in the correct box to show if the % of water in cow’s milk is higher or lower than in buffalo’s milk. [Higher / Lower]",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Higher", marks: 3, contextNote: "Cow's milk is about 87% water against buffalo's 84%, so the tick goes beside Higher." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1710,13 +1884,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q11aiii", topicId: "agsci-4-3-2", conceptId: "dairy-selection-traits",
     section: "A", questionRef: "2024 OL Q11(a)(iii)",
-    stem: "Answer either (a) or (b). Selective breeding has been done for thousands of years to improve characteristics of plants and animals.",
     questionText: "Using your knowledge of selective breeding, identify two characteristics of dairy cattle from the list below that could be chosen to improve production, by placing a tick (✓) in the correct boxes. [Marbling in meat / Milk volume / Early maturing / Milk protein]",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Milk volume", marks: 2, contextNote: "One of the two boxes to tick." },
     { id: "r-2", kind: "point", verbatim: "Milk protein", marks: 2, contextNote: "The other box to tick. 'Marbling in meat' and 'Early maturing' are beef traits and score nothing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1809,12 +1992,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q1bii", topicId: "agsci-4-2", conceptId: "polled-cattle",
     section: "A", questionRef: "2025 OL Q1(b)(ii)",
-    stem: "Jack was trying to decide which bull to cross with his dairy cows.\nThe Aberdeen Angus Bull is polled.",
     questionText: "Identify the correct meaning of the underlined term by placing a tick in the correct box: Double muscled / Produces milk / Has no horns.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Has no horns", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1837,7 +2029,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q2", topicId: "agsci-4-3-3", conceptId: "cattle-terminology-and-health-true-false",
     section: "A", questionRef: "2025 OL Q2",
-    stem: "Indicate if the following are true or false by placing a tick in the correct box. The first one has been done as an example (Cows are in calf for 157 days — False).",
     questionText: "True or false: (a) Steer is another name for a bull. (b) The oestrous cycle length of a cow is 17 days. (c) Brucellosis is a notifiable disease. (d) Pneumonia is a common disease of calves. (e) Protein is responsible for growth and repair in animals.",
     tariffModel: {"kind":"fixed","notation":"5x2"}, totalMarks: 10,
     rows: [
@@ -1847,6 +2038,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "True", marks: 2, contextNote: "(d) Pneumonia is a common disease of calves" },
     { id: "r-5", kind: "point", verbatim: "True", marks: 2, contextNote: "(e) Protein is responsible for growth and repair in animals" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1878,6 +2079,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "allOf", verbatim: "Water, heat and oxygen", marks: 3, contextNote: "All three conditions together are the single tick-box answer — the mark is for the complete set, not for naming one condition." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1976,13 +2187,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q9biii-iv", topicId: "agsci-1-3", conceptId: "agricultural-output-price-index",
     section: "A", questionRef: "2025 OL Q9(b)(iii)–(iv)",
-    stem: "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
     questionText: "(iii) Which agricultural enterprise's output price has increased? (iv) Identify what your answer in part (iii) above means for farmers by placing a tick in the correct box: Increased profit / Increased cost.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sheep", marks: 3, contextNote: "Part (iii) — sheep is the only output price up (30%); cereals and milk both fell." },
     { id: "r-2", kind: "point", verbatim: "Increased profit", marks: 2, contextNote: "Part (iv) — the tick-box consequence of the answer to (iii)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2036,12 +2256,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q11ai", topicId: "agsci-4-3-1", conceptId: "spring-calving-dairy-system",
     section: "A", questionRef: "2025 OL Q11(a)(i)",
-    stem: "Read the article and answer the questions that follow.\n\nLameness: Autumn time is peak risk period on dairy farms\nLameness can be a huge issue on Irish dairy farms in autumn, as spring calving cows are coming to the end of their lactation. They are heavier in calf, are more tired, and are often walking on uneven or damaged surfaces. Cows walk longer distances, as more paddocks are used to extend the grazing season. Recent studies show that lameness on Irish dairy farms costs in the region of €5,000 per 100-cow herd per year. (Adapted from Agriland, 2024)",
     questionText: "State which type of dairy production system is described in the article by placing a tick in the correct box: Spring calving / Autumn calving.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Spring calving", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2050,13 +2279,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q11aii", topicId: "agsci-4-3-3", conceptId: "causes-of-lameness-in-dairy-cows",
     section: "A", questionRef: "2025 OL Q11(a)(ii)",
-    stem: "Read the article and answer the questions that follow.\n\nLameness: Autumn time is peak risk period on dairy farms\nLameness can be a huge issue on Irish dairy farms in autumn, as spring calving cows are coming to the end of their lactation. They are heavier in calf, are more tired, and are often walking on uneven or damaged surfaces. Cows walk longer distances, as more paddocks are used to extend the grazing season. Recent studies show that lameness on Irish dairy farms costs in the region of €5,000 per 100-cow herd per year. (Adapted from Agriland, 2024)",
     questionText: "Outline two causes of lameness in cows.",
     tariffModel: {"kind":"fixed","notation":"2+1"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Walking on uneven or damaged surfaces", marks: 2, accepts: ["walking long distances","heavier in calf","infections","unsuitable housing"], contextNote: "'2+1': the first correct cause scores 2 and the second scores 1. Any two different causes from the scheme's list of five score." },
     { id: "r-2", kind: "alt", verbatim: "walking long distances", marks: 1, accepts: ["Walking on uneven or damaged surfaces","heavier in calf","infections","unsuitable housing"], contextNote: "Your second correct cause, whichever it was, scores 1." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2065,12 +2303,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q11aiii", topicId: "agsci-1-3", conceptId: "cost-of-lameness-per-cow",
     section: "A", questionRef: "2025 OL Q11(a)(iii)",
-    stem: "Read the article and answer the questions that follow.\n\nLameness: Autumn time is peak risk period on dairy farms\nLameness can be a huge issue on Irish dairy farms in autumn, as spring calving cows are coming to the end of their lactation. They are heavier in calf, are more tired, and are often walking on uneven or damaged surfaces. Cows walk longer distances, as more paddocks are used to extend the grazing season. Recent studies show that lameness on Irish dairy farms costs in the region of €5,000 per 100-cow herd per year. (Adapted from Agriland, 2024)",
     questionText: "Calculate the annual cost of lameness per cow on Irish dairy farms.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "5000 / 100 = €50 per cow", marks: 4, contextNote: "The scheme states: '(2m if correct method is used with incorrect answer / 4m if correct answer given)'. So a right method with a slipped arithmetic answer still banks 2 of the 4." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2149,6 +2396,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "42kg", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2185,7 +2442,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q13a-iii", topicId: "agsci-4-3-3", conceptId: "liver-fluke-control-measures",
     section: "B", questionRef: "2021 OL Q13(a)(iii)",
-    stem: "Question 13 opens with an article on liver fluke: \"Liver fluke thrive in the Irish wet climate. It is estimated to cost Irish farmers over €90 million annually. It is an issue in both cattle and sheep, but sheep are often the most badly affected. It affects all ages of sheep as it is picked up off the grass when sheep are grazing. This commonly occurs in the autumn and winter months.\" (Adapted from Teagasc, 2020)",
     questionText: "Suggest three ways in which farmers can control / prevent liver fluke on their farm.",
     tariffModel: {"kind":"orderedSplit","notation":"2+2+1"}, totalMarks: 5,
     rows: [
@@ -2193,6 +2449,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "drain land", marks: null, accepts: ["Fence off wet areas (no mud snail which is secondary host of liver fluke)","add lime to soil to increase pH (remove mud snail)","ducks or geese (biological control)","molluscicide","dose animals (anthelmintic)","carryout faecal egg counts","closed flock (build up natural resistance)","breed with breeds with high resistance to liver fluke."], contextNote: "A second, different measure from the same pool." },
     { id: "r-3", kind: "alt", verbatim: "dose animals (anthelmintic)", marks: null, accepts: ["Fence off wet areas (no mud snail which is secondary host of liver fluke)","add lime to soil to increase pH (remove mud snail)","drain land","ducks or geese (biological control)","molluscicide","carryout faecal egg counts","closed flock (build up natural resistance)","breed with breeds with high resistance to liver fluke."], contextNote: "A third, different measure from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3022,12 +3288,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q18c-iii", topicId: "agsci-4-3-2", conceptId: "lamb-growth-rate-interpretation",
     section: "B", questionRef: "2021 OL Q18(c)(iii)",
-    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg. The lambs were weighed every two weeks, and their average liveweights were: week 0, 4 kg; week 2, 10 kg; week 4, 16 kg; week 6, 22 kg; week 8, 28 kg; week 10, 34 kg; week 12, 40 kg; week 14, 45 kg; week 16, 51 kg.",
     questionText: "The graph of these liveweights against age is almost a straight line. Briefly describe what this information tells the farmer about the growth rate of the lambs.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Lambs are putting weight on in a consistent manner", marks: 4, accepts: ["growth rate and age are proportional"], contextNote: "The scheme's third wording is 'putting on similar weight every week' — quoted here only because the typeset marks cell splits the phrase." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3334,7 +3609,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q14civ", topicId: "agsci-4-3-3", conceptId: "reducing-lamb-mortality-at-lambing",
     section: "B", questionRef: "2022 OL Q14(c)(iv)",
-    stem: "Liam and Hannah were housing their 136 ewes two months prior to lambing. Hannah and Liam want to minimise mortality at lambing.",
     questionText: "Complete the table below to outline three ways to minimise mortality and give a reason for each action. The first one has been done as an example: \"Correct feeding in late pregnancy\" — \"Prevent oversized lambs\".",
     tariffModel: {"kind":"orderedSplit","notation":"2(2+2) + 1(2+1)"}, totalMarks: 11,
     rows: [
@@ -3344,6 +3618,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Ewes in good condition — Less risk of difficult lambing", marks: null },
     { id: "r-5", kind: "point", verbatim: "Adequate supervision — Assist ewes in trouble lambing", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3367,12 +3651,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q15bi", topicId: "agsci-1-3", conceptId: "reading-peak-yield-from-lactation-curve",
     section: "B", questionRef: "2022 OL Q15(b)(i)",
-    stem: "The graph \"Lactation Curve for the Dairy Cow\" shows the lactation curve for a dairy cow on Laura's farm; Laura is considering culling this cow and is looking for your advice. Milk production (litres/day) is plotted against number of months, and every point is labelled on the graph: month 0 = 0, month 1 = 20, month 2 = 26, month 3 = 25, month 4 = 23, month 5 = 20, month 6 = 17, month 7 = 13, month 8 = 9, month 9 = 7, month 10 = 0, with \"Drying off\" marked at month 10.",
     questionText: "Identify the cow's peak milk yield in litres/day.",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "gate", verbatim: "26* (litres / day)", marks: 6, contextNote: "Asterisked in the scheme (26*): only the exact figure scores, and a surplus wrong figure written alongside it cancels this row. Exact term required — synonym claiming is disabled on this row." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3381,13 +3674,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q15bii", topicId: "agsci-1-3", conceptId: "estimating-annual-milk-yield",
     section: "B", questionRef: "2022 OL Q15(b)(ii)",
-    stem: "The graph \"Lactation Curve for the Dairy Cow\" shows the lactation curve for a dairy cow on Laura's farm. Every point is labelled on the graph: month 0 = 0, month 1 = 20, month 2 = 26, month 3 = 25, month 4 = 23, month 5 = 20, month 6 = 17, month 7 = 13, month 8 = 9, month 9 = 7, month 10 = 0 litres/day, so the cow's peak yield is 26 litres/day.",
     questionText: "Laura wanted to estimate the annual total milk yield for this cow. Determine the estimated total yield for the cow using the following calculation: Peak yield (litres) X 220 (days) = Total Yield (litres).",
     tariffModel: {"kind":"fixed","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "26 X 220", marks: 4, contextNote: "The scheme adds: \"(If a candidate gives 5720 litres without showing any calculations they may be awarded 8m)\"." },
     { id: "r-2", kind: "point", verbatim: "= 5720 (litres)", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3424,12 +3726,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q15bv", topicId: "agsci-4-3-2", conceptId: "length-of-dry-period",
     section: "B", questionRef: "2022 OL Q15(b)(v)",
-    stem: "The graph in the paper shows the lactation curve for a dairy cow on Laura's farm; the curve falls to zero at month 10, where \"Drying off\" is marked.",
     questionText: "State the length of the dry period (in days).",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "60 (2 months)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3467,12 +3778,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q16aiii", topicId: "agsci-1-4", conceptId: "line-graph-suitability",
     section: "B", questionRef: "2022 OL Q16(a)(iii)",
-    stem: "The graph shows the growth of grass in kg/ha for the months February to November 2021.",
     questionText: "Explain why a line graph is the most suitable way to present this data.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Line graphs are used to track changes over short or long periods of time (trend)", marks: 2, accepts: ["when smaller changes exist, line graphs are better to use than bar graphs","line graphs can also be used to compare changes (over the same period of time for more than one group)"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3530,12 +3850,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q16biii", topicId: "agsci-3-3-3", conceptId: "hay-moisture-content",
     section: "B", questionRef: "2022 OL Q16(b)(iii)",
-    stem: "Hay production in Ireland is a common practice of preserving grass for farm animals for winter feed. The summer of 2021 saw ideal conditions for the production of hay.",
     questionText: "Identify the ideal moisture content of hay at time of storage, by placing a tick in the correct box. Moisture content (%): 43, 34, 18.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "18 (%)", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3544,7 +3873,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q17ai", topicId: "agsci-4-3-2", conceptId: "technology-in-agriculture-advantages",
     section: "B", questionRef: "2022 OL Q17(a)(i)",
-    stem: "Read the article and answer the questions which follow. Robotics and Automation in Agriculture — The future of farming will likely be in automation, using robotic and self-driving machinery to sow, fertilise and harvest crops or manage animals. Already, automated or robotic milking machines are in use in Ireland and over 50% of all new milking machines installed in the European Union (EU) are automated. Robotic milking has a number of advantages. There is more consistency, reduced labour costs, the possibility of increased milking frequency (three times a day) and better overall herd management.",
     questionText: "Outline two advantages of technology in agriculture.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -3554,6 +3882,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "increased animal yields", marks: null, accepts: ["increased crop yield","harvesting crops"], openList: true },
     { id: "r-5", kind: "point", verbatim: "better animal welfare", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3562,7 +3900,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q17aii", topicId: "agsci-4-3-2", conceptId: "robotic-milking-uptake",
     section: "B", questionRef: "2022 OL Q17(a)(ii)",
-    stem: "Read the article and answer the questions which follow. Robotics and Automation in Agriculture — The future of farming will likely be in automation, using robotic and self-driving machinery to sow, fertilise and harvest crops or manage animals. Already, automated or robotic milking machines are in use in Ireland and over 50% of all new milking machines installed in the European Union (EU) are automated. Robotic milking has a number of advantages. There is more consistency, reduced labour costs, the possibility of increased milking frequency (three times a day) and better overall herd management.",
     questionText: "Briefly describe two reasons for the increased installation of robotic milking machines.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -3572,6 +3909,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "more consistency", marks: null, openList: true },
     { id: "r-5", kind: "point", verbatim: "better overall herd management", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3580,7 +3927,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q17aiii", topicId: "agsci-4-3-2", conceptId: "technology-in-agriculture-disadvantages",
     section: "B", questionRef: "2022 OL Q17(a)(iii)",
-    stem: "Read the article and answer the questions which follow. Robotics and Automation in Agriculture — The future of farming will likely be in automation, using robotic and self-driving machinery to sow, fertilise and harvest crops or manage animals. Already, automated or robotic milking machines are in use in Ireland and over 50% of all new milking machines installed in the European Union (EU) are automated. Robotic milking has a number of advantages. There is more consistency, reduced labour costs, the possibility of increased milking frequency (three times a day) and better overall herd management.",
     questionText: "Outline two potential disadvantages of using technology on Irish farms.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -3590,6 +3936,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "expensive to install", marks: null, openList: true },
     { id: "r-5", kind: "point", verbatim: "reduced employment", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3984,12 +4340,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q16ai", topicId: "agsci-1-2", conceptId: "milk-quality-investigation-method",
     section: "B", questionRef: "2023 OL Q16(a)(i)",
-    stem: "Pat is doing a screening on his dairy herd. He wanted to check the quality of a milk sample. The paper leaves a ruled answer box followed by a box headed \"Labelled diagram:\" — the diagram is one you draw yourself, so nothing is printed for you to read.",
     questionText: "Describe with the aid of a labelled diagram, how he would carry out this investigation.",
     tariffModel: {"kind":"bestNofParts","notation":"3(4)","answer":3,"ofParts":6,"perPart":4}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Place milk sample into test tubes // add few drops (1 cm3) of Resazurin to three tubes (average) // place in water bath // Get a sample of milk and carry out a serial dilution of the milk sample by adding 1ml of milk into 9ml of distilled water & shake to mix // take 1ml from this test tube and add to 9ml of distilled water & shake // place in incubator for 72 hours at 25oC", marks: null, group: {"claimMax":3,"perOption":4,"options":["Place milk sample into test tubes","add few drops (1 cm3) of Resazurin to three tubes (average)","place in water bath","Get a sample of milk and carry out a serial dilution of the milk sample by adding 1ml of milk into 9ml of distilled water & shake to mix","take 1ml from this test tube and add to 9ml of distilled water & shake","place in incubator for 72 hours at 25oC"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4061,12 +4426,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q16ci", topicId: "agsci-4-3-1", conceptId: "climate-neutral-dairy-farm",
     section: "B", questionRef: "2023 OL Q16(c)(i)",
-    stem: "The paper prints an article, \"Irish-based ration achieves 47% reduction in emissions\": a large portion of dairy rations fed to cattle on Irish farms are made using ingredients from outside of Ireland and the European Union (EU). Because of this, the emissions associated with these rations are quite high, and these contribute towards overall farm emissions. The farm is focused on becoming the first climate-neutral dairy farm, with a wide range of measures being used to achieve this target. One of the measures used on the farm is the feeding of a concentrate ration made from Irish sources. The ration fed to cows on the Shinagh demonstration farm is made from Irish oats (33%), Irish beans (33%) and Irish barley (34%). (Adapted from Agriland, 2022.) The underlined term is \"climate-neutral dairy farm\".",
     questionText: "Explain the underlined term, climate-neutral dairy farm.",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "the carbon used = the carbon saved or a balanced carbon footprint", marks: 2, accepts: ["The amount of greenhouse gas emissions a farm produces is balanced by absorbing or removing equivalent emissions in the atmosphere","or valid explanation"], contextNote: "One 2-mark explanation, offered three ways by the scheme. The full first wording is \"The amount of greenhouse gas emissions a farm produces is balanced by absorbing or removing equivalent emissions in the atmosphere\" — the typeset 2 falls inside it in the extraction, so the contiguous alternative is quoted as the row and the long form sits in accepts.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4194,12 +4568,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q18ai", topicId: "agsci-4-2", conceptId: "dna-as-genetic-information",
     section: "B", questionRef: "2023 OL Q18(a)(i)",
-    stem: "The paper prints an article, \"DNA evidence proves Welsh farmer stole neighbour's cow\": a farmer in Wales was fined £4,000 after DNA evidence was used to prove he had stolen his neighbour's cow, police have said. The £3,000 heifer was re-tagged by his neighbour and claimed it as his own after it escaped from a neighbouring field. Police said it has become the first police force in the UK to use DNA evidence from a stolen cow in a resulting criminal court case. The cow's real owner reported one of his 300 cows had been stolen in December 2017 after spotting it in his neighbour's field, despite the farmer denying he had seen it. The farmer provided police with a cow passport, listing ear tag numbers for the cow and the animal he claimed was its mother. A warrant was issued for the cow and blood samples taken from it were successfully matched with other cows from its original farm, and his neighbour was charged. (Adapted from RTE, 2020.) The underlined term is DNA.",
     questionText: "Identify the description which best explains the underlined term by placing a tick in the correct box: Physical appearance; Alternative form of a gene; Genetic information.",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Genetic information", marks: 6, contextNote: "One box only. \"Physical appearance\" describes a phenotype and \"alternative form of a gene\" describes an allele — neither is DNA." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4481,12 +4864,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q15biii", topicId: "agsci-4-3-3", conceptId: "raddle-colour-change-interval",
     section: "B", questionRef: "2024 OL Q15(b)(iii)",
-    stem: "Answer both (a) and (b) with either (c) or (d). The breeding season is an important and busy time on sheep farms to ensure successful lamb production. At mating, farmers place a raddle on the ram to mark the ewes that have been served.",
     questionText: "State how often a raddle colour would be changed by placing a tick (✓) in the correct box below. [13 – 15 days / 22 – 24 days / 28 – 30 days]",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "13 – 15 days", marks: 2, contextNote: "The box the scheme ticks. Changing the colour on this interval lets the farmer see which ewes have repeated." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4495,12 +4887,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q15ci", topicId: "agsci-4-3-3", conceptId: "ram-to-ewe-ratio",
     section: "B", questionRef: "2024 OL Q15(c)(i)",
-    stem: "Answer both (a) and (b) with either (c) or (d). The breeding season is an important and busy time on sheep farms to ensure successful lamb production. Parts (c) and (d) are alternatives — a candidate answers one or the other.",
     questionText: "Identify the average ratio of rams to ewes in a mid-season lambing flock by placing a tick (✓) in the correct box below. [1:80 / 1:40 / 1:100]",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "1:40", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4628,12 +5029,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q16ci", topicId: "agsci-1-3", conceptId: "percent-organic-matter-calculation",
     section: "B", questionRef: "2024 OL Q16(c)(i)",
-    stem: "Question 16 is about soil organic matter. Part (b) asked how a student could carry out an investigation to determine the percentage organic matter in a 100g sample of soil. (c) The results of the investigation are shown in the box below: Mass of organic matter — 25g.",
     questionText: "Calculate the % organic matter of the soil sample tested in part (b).",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "25/100 x 100/1 = 25(% OM)", marks: 6, contextNote: "The scheme adds: if the answer alone is given, award 6m; if the calculation is shown with an incorrect answer, allow 3m." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4656,12 +5066,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q16ciii", topicId: "agsci-1-3", conceptId: "percent-soil-organic-carbon-calculation",
     section: "B", questionRef: "2024 OL Q16(c)(iii)",
-    stem: "Question 16 is about soil organic matter. A 100g soil sample was tested and the mass of organic matter recovered was 25g, giving 25% organic matter in part (i).",
     questionText: "All organic matter contains carbon. Calculate the % soil organic carbon in the soil sample using the equation shown in the box below. [% Soil Organic Carbon = % Soil Organic Matter X 0.58]",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "25 x 0.58 = 14.5(%)", marks: 6, contextNote: "The scheme adds: if a candidate gives 14, 14.5 or 15 without showing the calculation, award 6m; if the candidate uses the correct formula without the correct answer, award 3m." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4670,12 +5089,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17ai", topicId: "agsci-4-3-2", conceptId: "sexed-semen-advantage",
     section: "B", questionRef: "2024 OL Q17(a)(i)",
-    stem: "Read the article and answer the questions that follow. '40-year-old straws used to sire calves on Tipperary farm — A County Tipperary farm is currently home to some of the most unique calves in Ireland because the calves in question were sired by a Canadian bull that was born 46 years ago. The farmer chose this bull as he was classed by other farmers as \"the best sire they had ever used\", due to his superb conformation. The farmer used sexed semen and flushed five cows from the one straw to get one bull calf and one heifer calf.' (Adapted from Agriland, 2023)",
     questionText: "Sexed semen is when the X chromosome (female) and the Y chromosome (male) are separated in the sperm. Explain why this technology is an advantage on farms.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Farmer gets to choose the sex of the calf", marks: 3, accepts: ["choose heifers for replacements or allows for expansion or reduces male dairy calves or males for beef","reduces calving difficulty in maiden dairy heifers","maintains biosecurity"], contextNote: "One advantage only is asked for — any one of these scores the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4684,12 +5112,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17aii", topicId: "agsci-4-3-2", conceptId: "stored-semen-genetics-advantage",
     section: "B", questionRef: "2024 OL Q17(a)(ii)",
-    stem: "Read the article and answer the questions that follow. '40-year-old straws used to sire calves on Tipperary farm — A County Tipperary farm is currently home to some of the most unique calves in Ireland because the calves in question were sired by a Canadian bull that was born 46 years ago. The farmer chose this bull as he was classed by other farmers as \"the best sire they had ever used\", due to his superb conformation. The farmer used sexed semen and flushed five cows from the one straw to get one bull calf and one heifer calf.' (Adapted from Agriland, 2023)",
     questionText: "Outline one advantage of using straws from the Canadian bull that were 40 years old.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Incorporate genetics from years ago to get a better breed today", marks: 3, accepts: ["better conformation in calves","access to a wider choice"], contextNote: "One advantage only is asked for — any one of these scores the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5050,13 +5487,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q14b-ii", topicId: "agsci-1-2", conceptId: "independent-and-dependent-variables",
     section: "B", questionRef: "2025 OL Q14(b)(ii)",
-    stem: "Question 14, part (b). A group of fifth year Agricultural Science students investigated how temperature affects the percentage germination of seeds. They planted 100 barley seeds in a polytunnel and another 100 barley seeds outdoors on school grounds, and monitored the growth of the seeds over 4 weeks.",
     questionText: "An independent and a dependent variable from this investigation are given below. Identify each variable by placing a tick in the correct box (Independent / Dependent): Temperature; Percentage germination.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Temperature: Independent", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Percentage germination: Dependent", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5109,12 +5555,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q14c-i", topicId: "agsci-3-3-1", conceptId: "certified-seed-minimum-germination-rate",
     section: "B", questionRef: "2025 OL Q14(c)(i)",
-    stem: "Question 14, part (c). Fifth year students investigated how temperature affects the percentage germination of barley seeds. The students chose certified seed for their investigation. Certified seed has a guaranteed germination rate.",
     questionText: "Choose the correct minimum germination rate for certified seed by placing a tick in the correct box. The three boxes read: 75%, 85%, 95%.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "85%", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5138,13 +5593,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q15a-i", topicId: "agsci-4-3-1", conceptId: "value-added-and-artisan-food-products",
     section: "B", questionRef: "2025 OL Q15(a)(i)",
-    stem: "Question 15 — answer both (a) and (b) with either (c) or (d). Part (a) prints an article: MILKBOT, a milk vending machine. A north Clare dairy farm sells their value-added milk called Moo'ghna Milk to local people through a milk vending machine MILKBOT. The 70-cow herd are milked at 6am every morning. Milk is sterilised and pasteurised prior to leaving the farm and is ready to go in vending machines by 8:30am. This artisan product costs 1.70 euro per litre from their vending machine. Moo'ghna Milk is pasteurised but not homogenised, and it contains its full fat content when sold to customers. The milk generally has a fat content close to 4.7% and a protein content of around 3.7%. The use of glass bottles, or bottles brought by the customers themselves, has had positive effects for the environment with a significant local reduction of the amount of plastic packaging being used. (Adapted from Independent.ie, 2023)",
     questionText: "Explain the underlined terms in the article: value added; artisan product.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The value is increased by undergoing processing", marks: 2, contextNote: "Term: value added." },
     { id: "r-2", kind: "alt", verbatim: "A product made by hand in small batches", marks: 2, accepts: ["product made in a traditional manner or using high quality ingredients","made in a micro-enterprise","unique selling point"], contextNote: "Term: artisan product. Any one of the scheme's wordings takes the 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5167,12 +5631,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q15a-iii", topicId: "agsci-4-3-1", conceptId: "pasteurisation-of-milk",
     section: "B", questionRef: "2025 OL Q15(a)(iii)",
-    stem: "Question 15, part (a). A north Clare dairy farm sells their value-added milk called Moo'ghna Milk through a milk vending machine MILKBOT. Milk is sterilised and pasteurised prior to leaving the farm and is ready to go in vending machines by 8:30am. (Adapted from Independent.ie, 2023)",
     questionText: "Identify the meaning of pasteurisation by placing a tick in the correct box. The three boxes read: heating milk at high temperatures for short amount of time and cooling rapidly to kill bacteria; removal of water from milk to make dairy products such as butter and cheese; filtering milk to remove dirt particles before it enters the bulk tank.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Heating milk at high temperatures for short amount of time", marks: 4, contextNote: "The scheme's full wording is \"Heating milk at high temperatures for short amount of time and cooling rapidly to kill bacteria\" — the first of the three printed options." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5351,12 +5824,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q17bi", topicId: "agsci-2-2-2", conceptId: "flocculation-definition",
     section: "B", questionRef: "2025 OL Q17(b)(i)",
-    stem: "Good soil conditions are important for crop production.\n\nFlocculation occurs in soils.",
     questionText: "Identify which of the following statements best describes flocculation, placing a tick in the correct box. (1) Process during which soil particles in a solution contact and stick together, forming clusters or clumps of a larger size. (2) Reducing air spaces in soil. (3) Leaching of minerals causes formation of an iron pan in the B horizon.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Process during which soil particles in a solution contact and stick together — forming clusters or clumps of a larger size", marks: 3, contextNote: "Statement (1) — the first of the three boxes." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6838,13 +7320,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q3b", topicId: "agsci-3-1", conceptId: "what-a-low-soil-ph-means-for-a-crop",
     section: "A", questionRef: "2022 OL Q3(b)",
-    stem: "pH Soil sample 5.2",
     questionText: "The result of the investigation is shown in the table below. Suggest one implication this has for growing crops on the land and one way the student could alter the pH of the soil.",
     tariffModel: {"kind":"fixed","notation":"3 + 1"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "low nutrient availability or nutrient deficiencies in the crop", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "adding lime to the land", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

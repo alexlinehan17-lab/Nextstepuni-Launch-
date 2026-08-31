@@ -10,8 +10,10 @@ indicative answer is promoted to a required marking point.
 
 The generated JSON is committed because the local PDF corpus is deliberately
 gitignored.  Structural and textual assertions make a parser miss loud: all 660
-census ids must be emitted once, every prompt must be substantial, and every
-prompt must have a matching passage in its own year's marking scheme.
+census ids must first be emitted once, every prompt must be substantial, and
+every prompt must have a matching passage in its own year's marking scheme.
+After that proof, the shared correction ledger may consolidate genuinely
+identical source-independent prompts under one stable practice identity.
 """
 
 from __future__ import annotations
@@ -36,6 +38,7 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'english', 'schemes')
 CENSUS_PATH = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'english-census.json')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'english', 'authored.json')
 CURRICULUM_PATH = os.path.join(ROOT, 'curriculum.ts')
+CORRECTIONS_PATH = os.path.join(ROOT, 'scripts', 'markbank', 'card-corrections.json')
 
 ROMANS = ('i', 'ii', 'iii')
 LETTERS_5 = tuple('abcde')
@@ -270,7 +273,23 @@ def source_needed(question: str) -> bool:
         'image 1', 'image 2', 'image 3', 'image 4', 'text 1', 'text 2', 'text 3',
         'what does', 'what do you think the writer means',
     )
-    return any(trigger in value for trigger in triggers)
+    if any(trigger in value for trigger in triggers):
+        return True
+
+    # SEC comprehension prompts vary their deictic wording from year to year.
+    # Keep this deliberately tied to a named/positioned printed source: broad
+    # words such as "shown" or "text" on their own also occur in standalone
+    # composition and comparative-study prompts.
+    source_patterns = (
+        r'\b(?:this|the|above|following)\s+'
+        r'(?:extract|passage|article|memoir|text|speech|photographs?|photos?|images?|covers?|cartoons?)\b',
+        r'\b(?:extract|passage|article|memoir|text|speech|photographs?|photos?|images?|covers?|cartoons?)\s+above\b',
+        r'\b(?:reference|refer|referring)\s+to\b',
+        r'\b(?:based on|from)\s+your reading\b',
+        r'\bin\s+(?:this|the)\s+(?:text|passage|extract|article|memoir)\b',
+        r'\blanguage features?\s+in\s+the\s+text\b',
+    )
+    return any(re.search(pattern, value) for pattern in source_patterns)
 
 
 def requirements_for(question: str, source: dict | None, printed_parts: list[str]) -> list[str]:
@@ -777,12 +796,44 @@ def build() -> dict:
     weak = [card['id'] for card in cards.values() if card['schemeTraceScore'] < 20]
     if weak:
         raise AssertionError(f'weak marking-scheme traces: {weak[:20]}')
+
+    with open(CORRECTIONS_PATH, encoding='utf-8') as handle:
+        corrections = json.load(handle).get('english', {})
+    stale = sorted(set(corrections) - set(cards))
+    if stale:
+        raise AssertionError(f'stale English corrections: {stale}')
+    canonical_cards = []
+    withdrawn_aliases = {}
+    for ask in census['asks']:
+        card = cards[ask['id']]
+        correction = corrections.get(card['id'])
+        if correction:
+            reason = str(correction.get('reason', '')).strip()
+            if not reason:
+                raise AssertionError(f"{card['id']}: correction has no reason")
+            if correction.get('drop'):
+                replacement = correction.get('replacementId')
+                if replacement not in cards or replacement == card['id']:
+                    raise AssertionError(
+                        f"{card['id']}: invalid replacementId {replacement!r}")
+                withdrawn_aliases[card['id']] = replacement
+                continue
+            card = dict(card)
+            for key, value in correction.get('set', {}).items():
+                if value is None:
+                    card.pop(key, None)
+                else:
+                    card[key] = value
+        canonical_cards.append(card)
+
     return {
         'subject': 'english',
         'sourceRule': 'Every questionText is extracted from its official SEC question paper PDF.',
         'rubricRule': 'PCLM only; indicative material is never converted to required answer rows.',
-        'cardCount': len(cards),
-        'cards': [cards[row['id']] for row in census['asks']],
+        'parsedCardCount': len(cards),
+        'cardCount': len(canonical_cards),
+        'withdrawnAliases': withdrawn_aliases,
+        'cards': canonical_cards,
     }
 
 

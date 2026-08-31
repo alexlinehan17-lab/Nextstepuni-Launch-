@@ -2341,12 +2341,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Higher Level — © State Examinations Commission.",
     id: "bus-2022-hl-s3-q8b", topicId: "business-4-17", conceptId: "product-design-factors",
     section: "3", questionRef: "2022 HL Section 3 Q8(B)",
-    stem: "Business in Action. Read the information supplied and answer the questions which follow. Spotlight Oral Care, a Galway based company, was set up by sisters and dentists Dr Lisa & Dr Vanessa Creaven and Dr Barry Buckley in 2016. The company has developed a product portfolio for specific consumer oral care needs. Distribution channels include both online selling and the use of retailers in Europe, the UK and the US. (Adapted from rte.ie)",
     questionText: "In relation to the product element of the marketing mix explain the factors a business must consider when designing a new or a revised product.",
     tariffModel: {"kind":"bestNofParts","notation":"3 x 5m (2+3)","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any three of the following factors", marks: null, openList: true, group: {"claimMax":3,"perOption":5,"options":["It is must be feasible to produce and for the product to function correctly, with consumers not having difficulty using it. e.g. Functionality was a key factor in the design of the apple iPhone.","Cost of Production Materials, equipment and labour costs must be considered in the decision when designing a Product. The business must ensure that the cost price of producing each unit allows for adequate profit margins.","Target Market The needs of the target market are fundamental to the marketing concept. The needs of the target market must be identified and considered when designing a product. The business will consider; Will the product appeal to the target market? Does the deign satisfy the needs and wants of the target market? Is there a market. Are they willing to pay for this product?","Competitors In all marketing decision, the competition must be a consideration. Is our Product too similar? Do we have a USP? Can our idea be easily copied?","Legal Requirements Products must satisfy all consumer laws, such as The Sale of Goods & Supply Of Services Act 1980. EU directives and regulations regarding Product safety legislation and packaging must be obeyed.","Branding Does the product fit with our existing product range and business brand? Will our existing customers purchase this type of product under this brand name?"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Business 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2355,7 +2364,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Higher Level — © State Examinations Commission.",
     id: "bus-2022-hl-s3-q8c", topicId: "business-4-17", conceptId: "types-of-advertising",
     section: "3", questionRef: "2022 HL Section 3 Q8(C)",
-    stem: "Business in Action. Read the information supplied and answer the questions which follow. Spotlight Oral Care, a Galway based company, was set up by sisters and dentists Dr Lisa & Dr Vanessa Creaven and Dr Barry Buckley in 2016. The company has developed a product portfolio for specific consumer oral care needs. Distribution channels include both online selling and the use of retailers in Europe, the UK and the US. (Adapted from rte.ie)",
     questionText: "Outline your understanding of any three of the following types of advertising listed below. Provide an example in each case to support your answer. 1. Persuasive advertising 2. Informative advertising 3. Generic advertising 4. Competitive advertising.",
     tariffModel: {"kind":"orderedSplit","notation":"2 x 7m (4+3), 1 x 6m (3+3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
@@ -2364,6 +2372,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "3. Generic advertising: Generic advertising attempts to convey the importance of one particular type of good. This refers to advertising a good/industry/service rather than one particular brand. E.g. The National dairy council advertising the benefits of drinking milk.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "4. Competitive/Comparative advertising: The brand or product is advertised as superior to those of other competitors based on the price comparisons, quality of the products etc. Supermarkets will often use print advertising in newspapers to highlight the price difference between their products and those of competitors.", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Business 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2936,7 +2954,7 @@ export const CARDS: SecCard[] = [
     id: "bus-2023-hl-s3-q8c1", topicId: "business-3-19", conceptId: "break-even-margin-of-safety-and-profit-calculations",
     section: "3", questionRef: "2023 HL Section 3 Q8(C) (calculations)",
     stem: "MJ Sports produce products aimed at Hurling and Camogie players. MJ Sports have provided the following information for their new product line: Forecast Output (Sales) 8,000 units; Selling Price per unit €20; Fixed Costs €40,000; Variable Costs per unit €10.",
-    questionText: "Illustrate the following by means of a breakeven chart: (i) Breakeven point (ii) Margin of safety at the forecast output (iii) Profit at forecast output.",
+    questionText: "Calculate the breakeven point, the margin of safety at forecast output, and the profit at forecast output.",
     tariffModel: {"kind":"fixed","notation":"Calculations only: (Max. 12m) — Break Even Point 4m, Profit at Forecast output 4m, Margin of Safety 4m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Break Even Point = Fixed Costs/Contribution per unit — 40,000/10 = 4,000 units", marks: 4, contextNote: "Contribution per unit is the €20 selling price less the €10 variable cost, so the €40,000 of fixed costs divided by €10 gives 4,000 units. The examiner's circled 4 is one tick on the whole calculation, formula and answer together.", route: "calculations" },
@@ -2952,7 +2970,7 @@ export const CARDS: SecCard[] = [
     id: "bus-2023-hl-s3-q8c2", topicId: "business-3-19", conceptId: "break-even-chart-presentation",
     section: "3", questionRef: "2023 HL Section 3 Q8(C) — chart title, Y axis and fixed cost line",
     stem: "MJ Sports produce products aimed at Hurling and Camogie players. MJ Sports have provided the following information for their new product line: Forecast Output (Sales) 8,000 units; Selling Price per unit €20; Fixed Costs €40,000; Variable Costs per unit €10.",
-    questionText: "Illustrate the following by means of a breakeven chart: (i) Breakeven point (ii) Margin of safety at the forecast output (iii) Profit at forecast output.",
+    questionText: "On the breakeven chart, include an appropriate title, label the revenue/cost axis, and draw the fixed-cost line.",
     tariffModel: {"kind":"fixed","notation":"Y Axis 1m, Title of Chart 1m, FC line 2m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Y Axis: Revenue/Costs/Sales €’000s", marks: 1, contextNote: "The vertical axis, labelled and scaled in euro. The solidi are the scheme's own alternatives: its model chart labels this axis Revenue/Costs and scales it 0 to €180,000." },
@@ -2968,7 +2986,7 @@ export const CARDS: SecCard[] = [
     id: "bus-2023-hl-s3-q8c3", topicId: "business-3-19", conceptId: "break-even-chart-lines-and-readings",
     section: "3", questionRef: "2023 HL Section 3 Q8(C) (chart lines and readings)",
     stem: "MJ Sports produce products aimed at Hurling and Camogie players. MJ Sports have provided the following information for their new product line: Forecast Output (Sales) 8,000 units; Selling Price per unit €20; Fixed Costs €40,000; Variable Costs per unit €10.",
-    questionText: "Illustrate the following by means of a breakeven chart: (i) Breakeven point (ii) Margin of safety at the forecast output (iii) Profit at forecast output.",
+    questionText: "On the breakeven chart, draw and label total cost and total revenue, and show the breakeven point, margin of safety, and profit at forecast output.",
     tariffModel: {"kind":"fixed","notation":"TC line 4m, TR line 4m, BEP 4m, MOS 4m, Profit at Forecast output 4m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "point", verbatim: "TC line", marks: 4, contextNote: "The total cost line, drawn and labelled. At zero output the only cost is the €40,000 of fixed costs, so it starts level with the fixed cost line rather than at the origin, then rises by the €10 variable cost per unit to €120,000 at the forecast output of 8,000 units. The €120,000 is the scheme's own figure, the TC in \"Profit at forecast output = TR-TC = €160,000 – €120,000 = €40,000\" on scheme p.57. The structure table itemises this as a single \"TC line 4m\", so the 4 is awarded on the line as a whole." },
@@ -3316,13 +3334,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2024 Higher Level — © State Examinations Commission.",
     id: "bus-2024-hl-s3-q5bi", topicId: "business-2-13", conceptId: "chain-of-command-vs-span-of-control",
     section: "3", questionRef: "2024 HL Section 3 Q5(B)(i)",
-    stem: "Read the information supplied and answer the questions which follow. Ingvar Kamprad founded IKEA in 1943 at the age of 17, selling goods like pens and wallets. IKEA is now a market leader in affordable furniture. Read the information supplied and answer the questions which follow. IKEA has over 450 stores and operates in five continents. When expanding a business, management will often develop an organisational structure to clarify the span of control and chain of command.",
     questionText: "Distinguish between the terms span of control and chain of command.",
     tariffModel: {"kind":"fixed","notation":"2@5m(2+3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Span of control refers to the number of subordinates who report to a manager. The span of control may be narrow or wide depending on the type of work, experience of the manager etc", marks: 5, contextNote: "5m (2+3). The 2 is for identifying it as the number of subordinates reporting to one manager; the 3 is for the second sentence, that the span may be narrow or wide and what it depends on.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "Chain of command refers to the line of authority/communication in a business. The chain of command clarifies the hierarchy of a business/who reports to whom", marks: 5, contextNote: "5m (2+3). The scheme's soliduses are alternatives it accepts: line of authority OR communication, hierarchy of a business OR who reports to whom.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Business 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3331,12 +3358,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2024 Higher Level — © State Examinations Commission.",
     id: "bus-2024-hl-s3-q5bii", topicId: "business-2-13", conceptId: "matrix-team-structure-benefits",
     section: "3", questionRef: "2024 HL Section 3 Q5(B)(ii)",
-    stem: "Read the information supplied and answer the questions which follow. Ingvar Kamprad founded IKEA in 1943 at the age of 17, selling goods like pens and wallets. IKEA is now a market leader in affordable furniture. Read the information supplied and answer the questions which follow. IKEA has over 450 stores and operates in five continents. When expanding a business, management will often develop an organisational structure to clarify the span of control and chain of command.",
     questionText: "Discuss the benefits of a matrix organisation structure for a business such as IKEA.",
     tariffModel: {"kind":"bestNofParts","notation":"3@5m(2+2+1)","answer":3,"ofParts":4,"perPart":5}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any three of the following benefits", marks: null, contextNote: "Each benefit is worth 5, split 2+2+1, and the scheme prints Example Required under every one — the last mark is the example. A benefit named and explained with no IKEA example is worth 4 of the 5.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Increased Motivation: Social/Esteem needs of employees at IKEA are satisfied working within a team. This can encourage the employees to contribute their best efforts. Example Required","Better coordination: Mix of people from different departments at IKEA means people will learn more about what goes on throughout the business. Example Required","Better decision making: More expertise when people of different departments at IKEA come together to discuss issues, problem solve and make decisions. Sharing opinions and the expertise of team members from different disciplines can lead to better decisions. Example Required","Greater productivity-Synergies: Greater productivity can be achieved when employees work together and therefor the output is greater than when employees work separately. Example Required"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Business 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3345,7 +3381,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2024 Higher Level — © State Examinations Commission.",
     id: "bus-2024-hl-s3-q5c", topicId: "business-3-21", conceptId: "impact-of-technology-on-management",
     section: "3", questionRef: "2024 HL Section 3 Q5(C)",
-    stem: "Read the information supplied and answer the questions which follow. Ingvar Kamprad founded IKEA in 1943 at the age of 17, selling goods like pens and wallets. IKEA is now a market leader in affordable furniture. Read the information supplied and answer the questions which follow. IKEA has over 450 stores and operates in five continents. When expanding a business, management will often develop an organisational structure to clarify the span of control and chain of command.",
     questionText: "Outline, using an example, the impact of technology for management in a business such as IKEA in relation to; (i) Design of products (ii) Manufacturing (iii) Marketing (iv) Human Resource Management.",
     tariffModel: {"kind":"fixed","notation":"4@5m(2+2+1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
@@ -3354,6 +3389,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Impact on Marketing (Websites, social media, apps): Use of internet for market research (desk research) and online questionnaires (field research). Use of social media for advertising and public relations. Example Required", marks: 5, contextNote: "5m (2+2+1). Websites, social media or apps are the technology; research and promotion are the two impacts the scheme prints, and the example carries the last mark.", openList: true },
     { id: "r-4", kind: "alt", verbatim: "Impact on Human Resource Management (Spreadsheets, website, zoom/video conferencing): Spreadsheets for Manpower Planning. Websites – recruitment. Zoom /video conferencing software – interviews. Office 365/Microsoft Teams - Remote Working. Example Required", marks: 5, contextNote: "5m (2+2+1). The scheme lists four HR uses — manpower planning, recruitment, interviewing and remote working — and one of them, developed and exemplified, reaches the 5.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Business 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -4160,7 +4205,7 @@ export const CARDS: SecCard[] = [
     id: "bus-2025-hl-s3-q8c1", topicId: "business-3-19", conceptId: "break-even-chart-presentation",
     section: "3", questionRef: "2025 HL Section 3 Q8(C) — Break Even Chart: title and axes",
     stem: "Proctor and Gamble’s (P&G) brands include Pampers, Ariel, Gillette and Head & Shoulders. P&G have provided the following information for their new product line. Forecast Output (Sales) 200,000 units. Selling Price per unit €10. Fixed Costs €600,000. Variable Costs per unit €5.",
-    questionText: "Illustrate the following by means of a breakeven chart: (i) Breakeven point (ii) Margin of safety at the forecast output (iii) Profit at forecast output.",
+    questionText: "Set up the breakeven chart with an appropriate title and correctly labelled vertical and horizontal axes.",
     tariffModel: {"kind":"fixed","notation":"Break Even Chart: Title 2m + Axis 1m + Axis 1m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Title", marks: 2, contextNote: "These three marks are printed under the marks column's 'Break Even Chart:' heading. The route printed beneath it — 'OR', 'Calculations only:' — pays only BEP, Profit at FO and MoS, so a candidate who answered by calculation alone could earn none of the four marks on this card.", route: "Break Even Chart" },
@@ -4176,7 +4221,7 @@ export const CARDS: SecCard[] = [
     id: "bus-2025-hl-s3-q8c2", topicId: "business-3-19", conceptId: "break-even-chart-lines",
     section: "3", questionRef: "2025 HL Section 3 Q8(C) — chart lines",
     stem: "Proctor and Gamble’s (P&G) brands include Pampers, Ariel, Gillette and Head & Shoulders. P&G have provided the following information for their new product line. Forecast Output (Sales) 200,000 units. Selling Price per unit €10. Fixed Costs €600,000. Variable Costs per unit €5.",
-    questionText: "Illustrate the following by means of a breakeven chart: (i) Breakeven point (ii) Margin of safety at the forecast output (iii) Profit at forecast output.",
+    questionText: "Draw and label the fixed-cost, total-cost and total-revenue lines on the breakeven chart.",
     tariffModel: {"kind":"fixed","notation":"FC 3m + TC 3m + TR 3m"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "FC 3m", marks: 3, contextNote: "FC is the fixed cost line, drawn and labelled. On the scheme's model chart it runs horizontally right across the chart. These three line marks are on the chart route only: a candidate who answers with calculations alone can reach at most 12 of the 25 marks for (C).", route: "Break Even Chart" },

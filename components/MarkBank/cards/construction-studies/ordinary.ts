@@ -53,6 +53,16 @@ export const CARDS: SecCard[] = [
     { id: "cons-2016-ol-q3-a-r1", kind: "anyN", verbatim: "Secondary circulation", marks: 16, contextNote: "Secondary circulation", openList: true, group: {"claimMax":4,"perOption":4,"options":["15 mm rising main with stop valve","Insulated storage tank and ball valve","22 mm min overflow","22 mm cold feed with insulation from storage tank to indirect hot water cylinder","Control valve","Drain off valve","Insulated indirect hot water cylinder","22 mm expansion pipe with insulation from indirect hot water cylinder"]} },
     { id: "cons-2016-ol-q3-a-r2", kind: "anyN", verbatim: "Primary circulation – typical sizes", marks: 16, contextNote: "Primary circulation – typical sizes", openList: true, group: {"claimMax":4,"perOption":4,"options":["15 mm water supply to expansion tank","Insulated expansion tank with ball valve","22 mm overflow min","22 mm cold feed with insulation from expansion tank","28 mm primary return typical","Drain off valve","Stove","28 mm primary flow typical","22 mm expansion pipe with insulation"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Construction Studies 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -218,7 +228,7 @@ export const CARDS: SecCard[] = [
     questionText: "On your drawing, show how one baluster is fitted securely to the thread.",
     tariffModel: {"kind":"bestNofParts","notation":"1 x 2","answer":1,"ofParts":5,"perPart":2}, totalMarks: 2,
     rows: [
-    { id: "cons-2016-ol-q5-b-r1", kind: "anyN", verbatim: "– Show on the drawing how one baluster is fitted securely to the thread", marks: 2, contextNote: "– Show on the drawing how one baluster is fitted securely to the thread", openList: true, group: {"claimMax":1,"perOption":2,"options":["The end of the baluster or spindle is turned and fitted into the tread or step","Mortice and tenon joint between baluster and tread","Dowel fitted into bottom of spindle and tread","Occasionally dovetail joint between baluster and step","The joint is covered with a decorative strip of wood"]} },
+    { id: "cons-2016-ol-q5-b-r1", kind: "anyN", verbatim: "Show on the drawing how one baluster is fitted securely to the thread", marks: 2, contextNote: "Show on the drawing how one baluster is fitted securely to the thread", openList: true, group: {"claimMax":1,"perOption":2,"options":["The end of the baluster or spindle is turned and fitted into the tread or step","Mortice and tenon joint between baluster and tread","Dowel fitted into bottom of spindle and tread","Occasionally dovetail joint between baluster and step","The joint is covered with a decorative strip of wood"]} },
     ],
   } as SecCard,
   {
@@ -436,6 +446,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2017-ol-q3-a-r1", kind: "anyN", verbatim: "Given sketch showing pipework necessary to supply hot water to a kitchen sink – typical sizes", marks: 28, contextNote: "Given sketch showing pipework necessary to supply hot water to a kitchen sink – typical sizes", openList: true, group: {"claimMax":7,"perOption":4,"options":["15 mm rising main with stop valve","Insulated storage tank and ball valve","22 mm min overflow","22 mm cold feed with insulation from storage tank to indirect hot water cylinder","Control valve","Drain off valve","Insulated indirect hot water cylinder","22 mm expansion pipe with insulation from indirect hot water cylinder","22 mm hot water supply to kitchen sink","Solar panel","22 mm flow from solar panel to cylinder","22 mm return from cylinder to solar panel","Pump and isolator located on the return","Expansion tank / vessel and pressure release valve"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Construction Studies 2017 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -518,9 +538,10 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-ol-q6-b", topicId: "cons-1-8", conceptId: "items-personal-protective-equipment-ppe-must",
     section: "B", questionRef: "2017 OL Q6(b)",
     questionText: "Using notes and freehand sketches, show three items of personal protective equipment (PPE) that must be worn by workers on a construction site. Give one specific reason why each item of personal protective equipment must be worn.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 4","answer":3,"ofParts":6,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "cons-2017-ol-q6-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show three items of personal protective equipment (PPE) that must be worn by workers ", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["Hard hat","Reason","Safety boots","Reason","High visibility vest","Reason"]} },
+    { id: "cons-2017-ol-q6-b-sketches", kind: "anyN", verbatim: "PPE items — Quality of sketches", marks: 18, contextNote: "Each of the three sketches is marked excellent 6, good 4 or fair 2.", group: {"claimMax":3,"perOption":6,"options":["Hard hat","Safety boots","High visibility vest"]} },
+    { id: "cons-2017-ol-q6-b-reasons", kind: "anyN", verbatim: "PPE items — Notes and specific reasons", marks: 12, contextNote: "Give the matching safety reason for each of the three items.", group: {"claimMax":3,"perOption":4,"options":["The wearing of helmets is mandatory for workers and visitors to a site","The safety boots provide extra safety for workers on the site","High visibility vest is very important when machinery is being used on the site"]} },
     ],
   } as SecCard,
   {
@@ -755,16 +776,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-ol-q9-c", topicId: "cons-1-1", conceptId: "external-patio-has-many-advantages-occupants",
     section: "B", questionRef: "2017 OL Q9(c)",
     questionText: "An external patio has many advantages for the occupants of a dwelling house. Discuss two advantages of having an external patio, as shown.",
-    tariffModel: {"kind":"fixed","notation":"3 x 2 + 2 x 1 + 2 x 1 + 2 x 2 + 2 x 1 + 2 x 3 + 2 x 2 + 2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 34,
+    tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":8,"perPart":5}, totalMarks: 10,
     rows: [
-    { id: "cons-2017-ol-q9-c-r1", kind: "anyN", verbatim: "A 2 Design and applied shaping to edges", marks: 6, contextNote: "A 2 Design and applied shaping to edges", openList: true, group: {"claimMax":3,"perOption":2,"options":["E 1 Overall quality of assembled artefact","slope","C","sloped edge                        ","D","Experiment"]} },
-    { id: "cons-2017-ol-q9-c-r2", kind: "anyN", verbatim: "C 1 Piece A", marks: 2, contextNote: "C 1 Piece A", openList: true, group: {"claimMax":2,"perOption":1,"options":["joints ‐ dovetail (3 marks) ‐ mortices (3 × 2  marks) B","slopes (2 × 1 mark) 11 2 Piece B A","joints ‐ bottom trench (2 marks) ‐ mortice (2 marks) ‐ top trench (3 marks)","slopes (2 × 1 mark) 3 Piece C","joints  ‐ dovetail pins (3 marks)","trench (2 marks)","slope (1 mark)"]} },
-    { id: "cons-2017-ol-q9-c-r3", kind: "anyN", verbatim: "E 4 Piece D", marks: 2, contextNote: "E 4 Piece D", openList: true, group: {"claimMax":2,"perOption":1,"options":["joints ‐ tenons (2 × 2 marks)","trench (2 marks)","slopes (2 × 1 mark)"]} },
-    { id: "cons-2017-ol-q9-c-r4", kind: "anyN", verbatim: "D 5 Piece E", marks: 4, contextNote: "D 5 Piece E", openList: true, group: {"claimMax":2,"perOption":2,"options":["joints ‐ bare faced tenons (2 × 3 marks)","stopped chamfers (2 × 2 marks)"]} },
-    { id: "cons-2017-ol-q9-c-r5", kind: "anyN", verbatim: "A Planning of Project", marks: 2, contextNote: "A Planning of Project", openList: true, group: {"claimMax":2,"perOption":1,"options":["Ability to design an appropriate plan of procedure","Evidence of research","Preparation of working drawings/use of models as graphic aids"]} },
-    { id: "cons-2017-ol-q9-c-r6", kind: "anyN", verbatim: "B Report Writing", marks: 6, contextNote: "B Report Writing", openList: true, group: {"claimMax":2,"perOption":3,"options":["Design folio detailing planning, execution and evaluation of project","Critical appraisal of project for quality, function and finish","Conclusions from practical experience of project work"]} },
-    { id: "cons-2017-ol-q9-c-r7", kind: "anyN", verbatim: "C Manipulative Skills", marks: 4, contextNote: "C Manipulative Skills", openList: true, group: {"claimMax":2,"perOption":2,"options":["Skills in preparation and finishing of materials","Safe use of tools and machines - Hand/Power/CNC","Skills in assembly of materials"]} },
-    { id: "cons-2017-ol-q9-c-r8", kind: "anyN", verbatim: "D Presentation of Project", marks: 8, contextNote: "D Presentation of Project", openList: true, group: {"claimMax":2,"perOption":4,"options":["Task completed to acceptable standard","Appropriate use of materials","Satisfactory knowledge of construction technology"]} },
+    { id: "cons-2017-ol-q9-c-advantages", kind: "anyN", verbatim: "Two advantages of an external patio", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["It extends the area of the house","Provides a level surface for people with mobility issues","Patio provides an open external play area for children","Provides a place to eat, sit-out, relax and entertain in an outdoor space","Decking furniture may be used for relaxation","Ideal for summer dining","Brings the occupants close to nature - biophilia","It adds to the value of the house"]} },
     ],
     figure: {
           "candId": "construction-studies-2017-ol-paper-p004-i0",
@@ -822,9 +836,98 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-ol-q6-c", topicId: "cons-1-8", conceptId: "recommend-other-item-personal-protective-equipment",
     section: "B", questionRef: "2018 OL Q6(c)",
     questionText: "Recommend one other item of personal protective equipment (PPE) which should be worn by workers on a construction site. Give one reason for your recommendation.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 5","answer":1,"ofParts":4,"perPart":5}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "cons-2018-ol-q6-c-r1", kind: "anyN", verbatim: "Reason", marks: 5, contextNote: "Reason", openList: true, group: {"claimMax":1,"perOption":5,"options":["This is to protect the eyes from sharp objects","To protect the eyes from grit and dust","To protect the eyes when cutting concrete or steel","Protects the eyes when using an angle grinder or when welding"]} },
+    { id: "cons-2018-ol-q6-c-eye-item", kind: "point", verbatim: "Eye protection", marks: 4 },
+    { id: "cons-2018-ol-q6-c-eye-reason", kind: "anyN", verbatim: "Eye protection — Reason", marks: 5, openList: true, group: {"claimMax":1,"perOption":5,"options":["This is to protect the eyes from sharp objects","To protect the eyes from grit and dust","To protect the eyes when cutting concrete or steel","Protects the eyes when using an angle grinder or when welding"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "eye-protection",
+                "label": "Eye protection",
+                "rows": [
+                      {
+                            "id": "cons-2018-ol-q6-c-eye-item",
+                            "kind": "point",
+                            "verbatim": "Eye protection",
+                            "marks": 4
+                      },
+                      {
+                            "id": "cons-2018-ol-q6-c-eye-reason",
+                            "kind": "anyN",
+                            "verbatim": "Eye protection — Reason",
+                            "marks": 5,
+                            "openList": true,
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "This is to protect the eyes from sharp objects",
+                                        "To protect the eyes from grit and dust",
+                                        "To protect the eyes when cutting concrete or steel",
+                                        "Protects the eyes when using an angle grinder or when welding"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "ear-protection",
+                "label": "Ear protection",
+                "rows": [
+                      {
+                            "id": "cons-2018-ol-q6-c-ear-item",
+                            "kind": "point",
+                            "verbatim": "Ear protection",
+                            "marks": 4
+                      },
+                      {
+                            "id": "cons-2018-ol-q6-c-ear-reason",
+                            "kind": "anyN",
+                            "verbatim": "Ear protection — Reason",
+                            "marks": 5,
+                            "openList": true,
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "To protect the ears from constant loud noise",
+                                        "Protect the ears when using drilling equipment",
+                                        "Protect the ears when noise is continuous at level 85-90 decibels"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "safety-gloves",
+                "label": "Safety gloves",
+                "rows": [
+                      {
+                            "id": "cons-2018-ol-q6-c-gloves-item",
+                            "kind": "point",
+                            "verbatim": "Safety gloves",
+                            "marks": 4
+                      },
+                      {
+                            "id": "cons-2018-ol-q6-c-gloves-reason",
+                            "kind": "anyN",
+                            "verbatim": "Safety gloves — Reason",
+                            "marks": 5,
+                            "openList": true,
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "Working with sharp edges e.g. glass",
+                                        "Working with hot bitumen on flat roofs",
+                                        "Working with pneumatic drills or vibrating machinery",
+                                        "Working with corrosive or toxic equipment"
+                                  ]
+                            }
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -852,6 +955,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2018-ol-q3-a-r1", kind: "anyN", verbatim: "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line label", marks: 35, contextNote: "The scheme groups its answer under: Secondary circulation; Primary circulation", openList: true, group: {"claimMax":7,"perOption":5,"options":["15 mm rising main","Water storage tank and overflow 22 mm min","22 mm cold feed from water storage tank to hot water cylinder","Hot water cylinder","22 mm expansion pipe from hot water cylinder","22 mm hot water supply to shower","Wood-burning stove","28 mm primary flow and return to and from wood-burning stove and hot","22 mm cold feed from expansion tank and 22 mm expansion pipe","Expansion tank and overflow 22 mm min","Valves"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Construction Studies 2018 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -889,7 +1002,7 @@ export const CARDS: SecCard[] = [
     questionText: "On your drawing show how the roof is ventilated at the eaves.",
     tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":2,"perPart":4}, totalMarks: 4,
     rows: [
-    { id: "cons-2018-ol-q5-b-r1", kind: "anyN", verbatim: "– Show on your drawing how the flat roof is ventilated", marks: 4, contextNote: "– Show on your drawing how the flat roof is ventilated", openList: true, group: {"claimMax":1,"perOption":4,"options":["Vents are incorporated in the soffit to allow air flow into flat roof space","Cross battens allow air to circulate freely between joists"]} },
+    { id: "cons-2018-ol-q5-b-r1", kind: "anyN", verbatim: "Show on your drawing how the flat roof is ventilated", marks: 4, contextNote: "Show on your drawing how the flat roof is ventilated", openList: true, group: {"claimMax":1,"perOption":4,"options":["Vents are incorporated in the soffit to allow air flow into flat roof space","Cross battens allow air to circulate freely between joists"]} },
     ],
   } as SecCard,
   {
@@ -1008,7 +1121,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss one advantage of fitting glazed double doors between the sitting room and the dining room.",
     tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":8,"perPart":4}, totalMarks: 4,
     rows: [
-    { id: "cons-2018-ol-q9-c-advantage-r1", kind: "anyN", verbatim: "Advantage", marks: 4, contextNote: "Advantage", openList: true, group: {"claimMax":1,"perOption":4,"options":["The double doors open up the area","More space available","Make the rooms feel bigger","They create a private area when needed","They create a quiet area as required","People arriving into one section will be visible","Allows sunlight / daylight into the both rooms","Allows wheelchair accessibility between both rooms"]} },
+    { id: "cons-2018-ol-q9-c-advantage-r1", kind: "anyN", verbatim: "Advantages of fitting glazed double doors", marks: 4, contextNote: "Discuss one supported advantage.", openList: true, group: {"claimMax":1,"perOption":4,"options":["The double doors open up the area","More space available","Make the rooms feel bigger","They create a private area when needed","They create a quiet area as required","People arriving into one section will be visible","Allows sunlight / daylight into the both rooms","Allows wheelchair accessibility between both rooms"]} },
     ],
   } as SecCard,
   {
@@ -1075,6 +1188,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2019-ol-q3-a-r1", kind: "anyN", verbatim: "Typical details", marks: 28, contextNote: "Typical details", openList: true, group: {"claimMax":7,"perOption":4,"options":["Stop valve","Connection to kitchen sink","15 mm rising main","Ball-valve","Cold water storage tank 230 litres min","Insulation around storage tank","28 mm overflow","Gate valve","15 mm cold water supply","Connection to WC"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Construction Studies 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1084,10 +1207,21 @@ export const CARDS: SecCard[] = [
     id: "cons-2019-ol-q3-b", topicId: "cons-5-6", conceptId: "shows-valve-usually-used-turn-off",
     section: "B", questionRef: "2019 OL Q3(b)",
     questionText: "The sketch shows a valve usually used to turn off the water supply to a toilet. Using notes and freehand sketches show the preferred location of the valve. Give one reason for choosing this location for the valve.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 3","answer":2,"ofParts":2,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "cons-2019-ol-q3-b-r1", kind: "anyN", verbatim: "Reason", marks: 6, contextNote: "Reason", openList: true, group: {"claimMax":2,"perOption":3,"options":["The valve is fitted close to the cistern","The valve is fitted within easy reach to operate the valve"]} },
+    { id: "cons-2019-ol-q3-b-location", kind: "point", verbatim: "The valve is fitted close to the cistern", marks: 3 },
+    { id: "cons-2019-ol-q3-b-reason", kind: "point", verbatim: "The valve is fitted within easy reach to operate the valve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Construction Studies 2019 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1492,6 +1626,16 @@ export const CARDS: SecCard[] = [
     { id: "cons-2020-ol-q7-b-r1", kind: "anyN", verbatim: "Toilet area", marks: 4, contextNote: "Toilet area", openList: true, group: {"claimMax":1,"perOption":4,"options":["Grab- rail securely attached to a solid wall","Horizontal grab rail at a height 700 mm from the ground","To improve safety and mobility when using the water closet","To provide extra support when lowering or rising from the water closet seat","To allow people with reduced mobility to use the water closet safely"]} },
     { id: "cons-2020-ol-q7-b-r2", kind: "anyN", verbatim: "Shower area", marks: 4, contextNote: "Shower area", openList: true, group: {"claimMax":1,"perOption":4,"options":["Grab-rail securely attached to the tiles using fixings","Horizontal or vertical grab rails installed in the shower area","To provide extra support when using the shower area","To provide safety from slipping in the shower area","Allows person with reduced mobility to use the shower area safely and independently"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Construction Studies 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3251,7 +3395,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss one advantage of constructing a garden office separate from the home.",
     tariffModel: {"kind":"bestNofParts","notation":"1 x 6","answer":1,"ofParts":5,"perPart":6}, totalMarks: 6,
     rows: [
-    { id: "cons-2025-ol-q7-c-advantage-r1", kind: "anyN", verbatim: "Advantage", marks: 6, contextNote: "Advantage", openList: true, group: {"claimMax":1,"perOption":6,"options":["Creates a clear boundary between work and home life ","Easier to concentrate when away from household noise and interruptions. ","A garden office can increase the value of your home ","Lessens the impact on the household ","The office does not take up space within the house "]} },
+    { id: "cons-2025-ol-q7-c-advantage-r1", kind: "anyN", verbatim: "Advantages of a separate garden office", marks: 6, contextNote: "Discuss one supported advantage.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Creates a clear boundary between work and home life","Easier to concentrate when away from household noise and interruptions.","A garden office can increase the value of your home","Lessens the impact on the household","The office does not take up space within the house"]} },
     ],
   } as SecCard,
   {

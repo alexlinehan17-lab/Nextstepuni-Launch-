@@ -181,6 +181,7 @@ function claimedMarks(g: NonNullable<MarkRow['group']>, n: number): number {
 export function claimableTotal(card: SecCard): number {
   if (isRubricCard(card)) return card.totalMarks;
   if (card.tariffModel.kind === 'orderedSplit') return card.totalMarks;
+  if (card.tariffModel.kind === 'questionTotal') return card.totalMarks;
   if (card.tariffModel.kind === 'bestNofParts') {
     return card.tariffModel.answer * card.tariffModel.perPart;
   }
@@ -498,6 +499,7 @@ const MarkRowView: React.FC<{
     const g = row.group;
     const chosen = Math.min(picks.length, g.claimMax);
     const atCap = chosen >= g.claimMax;
+    const requiresAll = g.claimMax === g.options.length;
     return (
       <MotionDiv
         /* The rows arrive one after another, and the stagger IS the message:
@@ -518,7 +520,7 @@ const MarkRowView: React.FC<{
           <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: chosen ? SUCCESS_TEXT : INK_2 }}>
             {/* A descending tariff is stated as it is paid. Saying "5 marks
                 each" of a 6-then-4 split is wrong for both halves. */}
-            Any {g.claimMax} of these — {g.perOptionSteps
+            {requiresAll ? `All ${g.claimMax} of these` : `Any ${g.claimMax} of these`} — {g.perOptionSteps
               ? `${g.perOptionSteps.slice(0, g.claimMax).join(' then ')} marks`
               : `${g.perOption} marks each`}
           </span>
@@ -608,7 +610,9 @@ const MarkRowView: React.FC<{
         )}
         {atCap && (
           <p style={{ margin: '8px 0 0', font: `400 11.5px/1.4 ${SANS}`, color: MUTED }}>
-            That&rsquo;s the {g.claimMax} the examiner marks — any more score nothing.
+            {requiresAll
+              ? `All ${g.claimMax} published parts are accounted for.`
+              : <>That&rsquo;s the {g.claimMax} the examiner marks — any more score nothing.</>}
           </p>
         )}
       </MotionDiv>
@@ -2206,6 +2210,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const [picks, setPicks] = useState<Record<string, number[]>>({});
   const [rubricScores, setRubricScores] = useState<RubricScores>({});
   const [requirementChecks, setRequirementChecks] = useState<Record<number, boolean>>({});
+  const [answerVariantId, setAnswerVariantId] = useState<string | null>(null);
   const [results, setResults] = useState<SessionCardResult[]>([]);
   const [whisper, setWhisper] = useState<string | null>(null);
 
@@ -2233,12 +2238,28 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   );
   const hasCombinedListeningAssessment = listeningCards.length > 1
     && listeningAssessmentCards.length === listeningCards.length;
-  const assessmentCard = useMemo(() => {
+  const baseAssessmentCard = useMemo(() => {
     if (hasCombinedListeningAssessment) {
       return combinedListeningAssessment(listeningAssessmentCards);
     }
     return card;
   }, [card, hasCombinedListeningAssessment, listeningAssessmentCards]);
+  const answerVariants = baseAssessmentCard && isPointCard(baseAssessmentCard)
+    ? baseAssessmentCard.answerVariants ?? []
+    : [];
+  const assessmentCard = useMemo(() => {
+    if (!baseAssessmentCard || !isPointCard(baseAssessmentCard)
+        || !baseAssessmentCard.answerVariants?.length || !answerVariantId) {
+      return baseAssessmentCard;
+    }
+    const selected = baseAssessmentCard.answerVariants.find(
+      variant => variant.id === answerVariantId,
+    );
+    return selected ? { ...baseAssessmentCard, rows: selected.rows } : baseAssessmentCard;
+  }, [answerVariantId, baseAssessmentCard]);
+  useEffect(() => {
+    setAnswerVariantId(null);
+  }, [baseAssessmentCard?.id]);
   const exerciseTotal = visibleSessionExercises(cards).length;
   const distinctDone = new Set(results.map(result => {
     const resultCard = byId.get(result.cardId);
@@ -2433,6 +2454,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setPicks({});
     setRubricScores({});
     setRequirementChecks({});
+    setAnswerVariantId(null);
     setRevealed(false);
     setWaysInOpen(false);
     setWaysInFocusMode(false);
@@ -2799,6 +2821,50 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               ) : null;
             })}
 
+            {answerVariants.length > 0 && (
+              <fieldset style={{
+                margin: '18px 0 0', padding: '14px', border: `1px solid ${HAIRLINE_2}`,
+                borderRadius: 12, background: 'var(--mb-raised)',
+              }}>
+                <legend style={{
+                  padding: '0 5px', font: `700 9.5px/1.5 ${SANS}`,
+                  letterSpacing: '.11em', textTransform: 'uppercase', color: LABEL,
+                }}>
+                  Match the route you answered
+                </legend>
+                <p style={{ margin: '0 0 10px', font: `400 12.5px/1.5 ${SANS}`, color: INK_2 }}>
+                  This is one exam question. Choose your example so the reveal shows its exact SEC scheme.
+                </p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
+                  {answerVariants.map(variant => {
+                    const selected = answerVariantId === variant.id;
+                    return (
+                      <button
+                        key={variant.id}
+                        type="button"
+                        aria-pressed={selected}
+                        onClick={() => {
+                          setAnswerVariantId(variant.id);
+                          setClaims({});
+                          setPicks({});
+                          setSchemeInteracted(false);
+                        }}
+                        style={{
+                          padding: '8px 11px', borderRadius: 999, cursor: 'pointer',
+                          border: `1px solid ${selected ? INK : MUTED_BORDER}`,
+                          background: selected ? INK : 'var(--mb-paper)',
+                          color: selected ? 'var(--mb-paper)' : INK,
+                          font: `600 12px/1.2 ${SANS}`,
+                        }}
+                      >
+                        {variant.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </fieldset>
+            )}
+
           </div>
         </MotionDiv>
         </div>
@@ -2935,6 +3001,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           ({assessmentCard.tariffModel.notation}) — so what these are worth depends on how many you got.
                         </p>
                       )}
+                      {assessmentCard.tariffModel.kind === 'questionTotal' && (
+                        <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
+                          The paper prices this question at {assessmentCard.totalMarks} marks in total,
+                          but the scheme does not divide those marks between its parts — so no invented
+                          per-point values are shown.
+                        </p>
+                      )}
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           Answer any {assessmentCard.tariffModel.answer} of these {assessmentCard.tariffModel.ofParts} —
@@ -3004,7 +3077,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
               <button
                 type="button"
-                autoFocus
+                autoFocus={answerVariants.length === 0}
+                disabled={answerVariants.length > 0 && !answerVariantId}
                 // Clear any lingering whisper so the schedule note for the card
                 // just graded does not hang over the one now in front of them.
                 onClick={() => {
@@ -3018,10 +3092,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   width: '100%', padding: '15px 18px', borderRadius: 12,
                   background: ACCENT, color: '#FFFFFF', border: 'none',
                   boxShadow: '0 5px 14px rgba(181,77,20,.22)',
-                  font: `650 15px/1 ${SANS}`, cursor: 'pointer',
+                  font: `650 15px/1 ${SANS}`,
+                  cursor: answerVariants.length > 0 && !answerVariantId ? 'not-allowed' : 'pointer',
+                  opacity: answerVariants.length > 0 && !answerVariantId ? .48 : 1,
                 }}
               >
-                Reveal the marking scheme
+                {answerVariants.length > 0 && !answerVariantId
+                  ? 'Choose your answer route first'
+                  : 'Reveal the marking scheme'}
               </button>
             </div>
           </div>

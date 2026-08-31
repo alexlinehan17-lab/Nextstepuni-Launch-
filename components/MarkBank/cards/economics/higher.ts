@@ -453,12 +453,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
     id: "econ-2021-hl-q13-a-ii", topicId: "economics-1-0", conceptId: "how-excess-demand-occurs",
     section: "B", questionRef: "2021 HL Q13(a)(ii)",
-    stem: "The paper’s supply-and-demand diagram shows the PlayStation 5 market with the retail price fixed at €500, below the equilibrium price P1, so quantity demanded QX exceeds quantity supplied QE.",
     questionText: "From your diagram above, explain how excess demand occurs.",
     tariffModel: {"kind":"bestNofParts","notation":"3 @ 4","answer":3,"ofParts":3,"perPart":4}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "How excess demand occurs — all three steps", marks: 12, contextNote: "Three steps, 4 marks each: demand exceeds the fixed supply at €500, the low price presses price up towards equilibrium, and the undercharging itself created the excess demand.", openList: true, group: {"claimMax":3,"perOption":4,"options":["At the price of €500 there is more demand (QX) than the available (fixed) supply of the product (QE).","This indicates that the price charged in this too low, the excess demand puts upward pressure on price driving it to the equilibrium price P1.","By undercharging for the PS5 it created additional demand for the product which would be rationalised if the price were to be increased."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Economics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1415,6 +1424,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A trend — any two", marks: 8, contextNote: "Two trends, 4 marks each.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Rapid increase in milk production from approximately 3,200 to 5,500 million litres between 1975 and 1984.","There is a small decline in milk production from approximately 5,500 to 5,000 million litres between 1985 and 1987 approximately.","There are largely stable levels of production between 1987 and 2010, producing around 5,000 million litres of milk.","Rapid increase in milk production from approximately 5,000 to 8,500 million litres between 2010 and 2020."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Economics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1732,6 +1751,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A: Total Cost B: Average Variable Cost C: Marginal Cost 100,000 400,000 450,000 + 260,000 2 – 400,000 €360,000 €200,000 €50,000", marks: 9, contextNote: "Three different cost concepts, three different operations. Total cost ADDS fixed to variable; average variable cost DIVIDES variable cost by output; marginal cost is the DIFFERENCE between one total cost and the one before it.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Economics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2022-HL-scheme-p28-q14bi-working",
           "src": "/exam-figures/economics/markbank/economics-2022-HL-scheme-p28-q14bi-working.png",
@@ -1777,6 +1806,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cost of Production 600,000 500,000 505,000 TC:5 450,000 400,000 400,000 405,000 VC:5 360,000 350,000 300,000 300,000 260,000 200,000 100,000 100,000 100,000 100,000 100,000 FC: 2 1 2 3 4 Fixed Cost (€) Variable Cost (€) Total Cost (€) Axes 4", marks: 16, contextNote: "The scheme writes its split onto the graph: TC:5, VC:5, FC:2 and Axes 4. Total cost is the SUM of the other two, so the total-cost line runs exactly €100,000 above the variable-cost line at every output — that gap is the check.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Economics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2022-HL-scheme-p28-q14bii-graph",
           "src": "/exam-figures/economics/markbank/economics-2022-HL-scheme-p28-q14bii-graph.png",
@@ -2794,6 +2833,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "4761865 × 100 = 7.59 %", marks: 8, contextNote: "The base is the EARLIER population, so the change divides by the 2016 figure, not the 2022 one. A mark goes for the % sign.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2023-HL-scheme-p15-q11ai-working",
           "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p15-q11ai-working.png",
@@ -2816,6 +2865,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "482 + 272 + 82 + 72 + 32 + 32 + 22 + 22 = 3172", marks: 9, contextNote: "Every share is SQUARED before adding — that is what makes the index sensitive to the big firms. Adding the shares unsquared gives 100 for any market at all.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2023-HL-scheme-p21-q12bi-working",
           "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p21-q12bi-working.png",
@@ -2873,6 +2932,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "item (s) € year € 55 X 100 = 110 x 60% = 66.0 Food 60% 50 55 50 24 X 100 = 120 x 25% = 30.0 Transport 25% 20 24 20 Other 81 X 100 = 108 x 15% = 16.2 Items 15% 75 81 75 Price Index for the 100% current Year", marks: 19, contextNote: "Each category gets its own simple index first — current price over base price times 100 — and only THEN is it weighted. The composite is the sum of the weighted results, not an average of the simple indices.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2023-HL-scheme-p32-q15aiii-working",
           "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p32-q15aiii-working.png",
@@ -3199,6 +3268,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Tax Direct Tax Indirect Tax VAT ✓ PAYE ✓ Customs and Excise Duty ✓", marks: 6, contextNote: "Read the completed table below: in flat text the ticks carry no column at all. VAT and Customs and Excise Duty are INDIRECT — taxes on spending, borne by the consumer but collected and remitted by someone else — while PAYE is DIRECT, deducted from income and paid over by the person who bears it. Who hands the money to Revenue is the test, not who ends up poorer.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2023-HL-scheme-p11-q6a-ticks",
           "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p11-q6a-ticks.png",
@@ -3234,6 +3313,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "• 80 – 40 = 40 • 80 + 35 = 115 • 137 – 115 = 22", marks: 6, contextNote: "Three cells, three workings, two marks each. Marginal utility is the DIFFERENCE between consecutive totals, so it runs both ways: subtract to get a marginal from two totals, add to get the next total from a marginal.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2023-HL-scheme-p08-q3a-working",
           "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p08-q3a-working.png",
@@ -3278,6 +3367,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44", marks: 6, contextNote: "Four blanks, four workings. Average cost DIVIDES total cost by output; marginal cost SUBTRACTS one total cost from the next. The two are different operations on the same row and mixing them is the whole error.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2023-HL-scheme-p09-q4a-table",
           "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p09-q4a-table.png",
@@ -4080,6 +4179,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "+30 x 40,000 + 50,000 (90,000) = + 0.8 +10,000 150 + 180 1 (330)", marks: 9, contextNote: "The midpoint form again: the change in quantity over the change in income, times the sum of incomes over the sum of quantities. The answer is +0.8.", openList: true },
     { id: "r-2", kind: "point", verbatim: "The good is inelastic – the percentage change in quantity demanded is less than the percentage change in income. This means that the good is a necessity. It is less than 1. The good is a normal good – it has a positive income effect – as income went up more was demanded.", marks: 4, contextNote: "TWO things follow from +0.8 and the scheme wants both. It is income INELASTIC because the figure is below 1 — a necessity. And it is a NORMAL good because the figure is positive — demand rose with income. Sign and size say different things.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Economics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4093,6 +4202,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Food 65% 60 66 66 x 100 = 110 x 65% 60 1 Transport 20% 30 45 45 x 100 = 150 x 20% 30 1 Other 96 x 100 = 120 x 15% 15% 80 96 Items 80 1 Price Index 100% for the current year", marks: 19, contextNote: "Each category gets a SIMPLE index first — current price over base price times 100 — and the weight is applied to that index, not to the prices. The composite is the sum of the three weighted results.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Economics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-HL-scheme-p24-q12bii-working",
           "src": "/exam-figures/economics/markbank/economics-2024-HL-scheme-p24-q12bii-working.png",
@@ -4348,6 +4467,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "If marginal cost is less than average cost, then average cost is falling. If marginal cost is greater than average cost, then average cost is rising. If marginal cost equals average cost, then average cost is constant / at its minimum point.", marks: 3, contextNote: "The written explanation, 3 marks: what average cost does while marginal cost is below it, above it, and equal to it.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4423,6 +4552,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Capital Widening Capital Deepening ✓ Capital deepening is occurring in this scenario because in 2023 the firm is employing 2 machines per worker compared to 2022 when it was only employing 1 machine per worker. Capital deepening occurs when an increase in the capital stock leads to more capital per worker.", marks: 6, contextNote: "Read the completed answer below. It is capital DEEPENING: machines double while the workforce stays at five, so capital PER WORKER rises from 1:1 to 2:1. Widening would be more machines AND more workers with the ratio unchanged — the ratio row is the whole test.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-HL-scheme-p08-q4a-ticks",
           "src": "/exam-figures/economics/markbank/economics-2024-HL-scheme-p08-q4a-ticks.png",
@@ -4445,6 +4584,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Gross National Product (GNP) at CMP €325bn + EU subsidies + €2bn €327bn – EU taxes - €0.5bn €326.5bn", marks: 6, contextNote: "Subsidies are ADDED and taxes SUBTRACTED, because the EU flows change what the country actually receives. The step before this one — GDP to GNP — is worked for you on the paper, so the €325bn is a given, not something to recompute.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-HL-scheme-p14-q10aii-working",
           "src": "/exam-figures/economics/markbank/economics-2024-HL-scheme-p14-q10aii-working.png",
@@ -4467,6 +4616,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Price MWh S Pe P1 (€200) Excess Demand D S1 Qe D1 Quantity of electricity", marks: 6, contextNote: "A price ceiling is drawn as a HORIZONTAL line BELOW the equilibrium price — above it would bind on nothing. At that price the quantity supplied (S1) is less than the quantity demanded (D1), and the gap between them is the excess demand.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2024-HL-scheme-p07-q3a-diagram",
           "src": "/exam-figures/economics/markbank/economics-2024-HL-scheme-p07-q3a-diagram.png",
@@ -5287,6 +5446,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Workings: 10.1 – 7.4 = 2.7% August 2024 −March 2024 × 100 March 2024 1 10.1 – 7.4 x 100 7.4 1 Answer: 36.48%", marks: 8, contextNote: "The base is MARCH, the earlier month, so the difference is divided by 7.4 and not by 10.1. Both figures are read off the chart; neither is in the wording.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Economics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2025-HL-scheme-p58-q15bi-working",
           "src": "/exam-figures/economics/markbank/economics-2025-HL-scheme-p58-q15bi-working.png",
@@ -5309,6 +5478,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "€ Pe D:6 €1.50 S:6 Equil D Pe €1.00 Qe €0.50 10,000 20,000 30,000 40,000 50,000 Quantity Qe", marks: 17, contextNote: "The scheme writes its split into the margin: 2 for the axes, 6 for the demand curve, 6 for the supply curve and 3 for the equilibrium. Filling in the two axes is worth marks on its own, and the question says so.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Economics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "economics-2025-HL-scheme-p51-q14bi-graph",
           "src": "/exam-figures/economics/markbank/economics-2025-HL-scheme-p51-q14bi-graph.png",

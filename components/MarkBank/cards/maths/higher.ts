@@ -30,7 +30,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q1-a", topicId: "maths-3-1", conceptId: "value",
     section: "B", questionRef: "2021 HL Paper 1 Q1(a)",
@@ -60,7 +60,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q1-b", topicId: "maths-3-1", conceptId: "12i-both-answers-form",
     section: "B", questionRef: "2021 HL Paper 1 Q1(b)",
@@ -90,7 +90,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q1-c", topicId: "maths-4-4", conceptId: "moivre-theorem-three-roots-each-answers",
     section: "B", questionRef: "2021 HL Paper 1 Q1(c)",
@@ -120,7 +120,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q2-a", topicId: "maths-4-2", conceptId: "given-solution-two-values",
     section: "B", questionRef: "2021 HL Paper 1 Q2(a)",
@@ -150,7 +150,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q2-b", topicId: "maths-4-2", conceptId: "factor-22x-three-roots",
     section: "B", questionRef: "2021 HL Paper 1 Q2(b)",
@@ -180,7 +180,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q3-a", topicId: "maths-3-4", conceptId: "volume-cuboid-form",
     section: "B", questionRef: "2021 HL Paper 1 Q3(a)",
@@ -210,7 +210,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q3-b-i", topicId: "maths-4-2", conceptId: "given-two-roots",
     section: "B", questionRef: "2021 HL Paper 1 Q3(b)(i)",
@@ -240,7 +240,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q3-b-ii", topicId: "maths-4-2", conceptId: "otherwise-solve-equation-form-log",
     section: "B", questionRef: "2021 HL Paper 1 Q3(b)(ii)",
@@ -270,7 +270,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q4-a", topicId: "maths-3-1", conceptId: "prove-using-induction-divisible-all",
     section: "B", questionRef: "2021 HL Paper 1 Q4(a)",
@@ -300,7 +300,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q4-b-i", topicId: "maths-3-1", conceptId: "nth-term-terms",
     section: "B", questionRef: "2021 HL Paper 1 Q4(b)(i)",
@@ -330,7 +330,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q4-b-ii", topicId: "maths-4-1", conceptId: "smallest-value-which-2021-term-sequence",
     section: "B", questionRef: "2021 HL Paper 1 Q4(b)(ii)",
@@ -360,7 +360,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q5-a-i", topicId: "maths-5-2", conceptId: "value-value-value",
     section: "B", questionRef: "2021 HL Paper 1 Q5(a)(i)",
@@ -390,7 +390,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q5-a-ii", topicId: "maths-5-2", conceptId: "36x-range-values-which",
     section: "B", questionRef: "2021 HL Paper 1 Q5(a)(ii)",
@@ -420,7 +420,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q5-b", topicId: "maths-2-3", conceptId: "diagram-shows-tangent-line-sin-point",
     section: "B", questionRef: "2021 HL Paper 1 Q5(b)",
@@ -450,7 +450,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q6-a", topicId: "maths-5-2", conceptId: "part",
     section: "B", questionRef: "2021 HL Paper 1 Q6(a)",
@@ -480,7 +480,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q6-b", topicId: "maths-5-2", conceptId: "maximum-positive-value-slope-tangent",
     section: "B", questionRef: "2021 HL Paper 1 Q6(b)",
@@ -510,7 +510,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q6-c", topicId: "maths-5-1", conceptId: "graph-passes-through-point-equation",
     section: "B", questionRef: "2021 HL Paper 1 Q6(c)",
@@ -540,7 +540,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q7-a-i", topicId: "maths-3-1", conceptId: "complete-table-filling-missing-lengths",
     section: "B", questionRef: "2021 HL Paper 1 Q7(a)(i)",
@@ -570,7 +570,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q7-a-ii", topicId: "maths-3-1", conceptId: "arc-length-swing-arc-length-swing",
     section: "B", questionRef: "2021 HL Paper 1 Q7(a)(ii)",
@@ -600,7 +600,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q7-a-iii", topicId: "maths-3-1", conceptId: "iii-total-distance-travelled-tip-pendulum",
     section: "B", questionRef: "2021 HL Paper 1 Q7(a)(iii)",
@@ -630,7 +630,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q7-a-iv", topicId: "maths-3-1", conceptId: "swing-first-swing-which-has-arc",
     section: "B", questionRef: "2021 HL Paper 1 Q7(a)(iv)",
@@ -660,7 +660,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q7-b-i", topicId: "maths-3-1", conceptId: "length-pendulum-angle-swing-pendulum-correct",
     section: "B", questionRef: "2021 HL Paper 1 Q7(b)(i)",
@@ -690,7 +690,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q7-b-ii", topicId: "maths-3-1", conceptId: "total-accumulated-angle-pendulum-swings-through",
     section: "B", questionRef: "2021 HL Paper 1 Q7(b)(ii)",
@@ -720,7 +720,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q7-b-iii", topicId: "maths-3-1", conceptId: "iii-otherwise-total-distance-travelled-tip",
     section: "B", questionRef: "2021 HL Paper 1 Q7(b)(iii)",
@@ -750,7 +750,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-2", conceptId: "part",
     section: "B", questionRef: "2021 HL Paper 1 Q8(a)(i)",
@@ -780,7 +780,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-a-ii", topicId: "maths-5-1", conceptId: "complete-table-draw-graph-domain-grid",
     section: "B", questionRef: "2021 HL Paper 1 Q8(a)(ii)",
@@ -810,7 +810,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-b-i", topicId: "maths-5-2", conceptId: "derivative",
     section: "B", questionRef: "2021 HL Paper 1 Q8(b)(i)",
@@ -840,7 +840,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-b-ii", topicId: "maths-5-2", conceptId: "section-track-reaches-its-maximum-height",
     section: "B", questionRef: "2021 HL Paper 1 Q8(b)(ii)",
@@ -870,7 +870,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-b-iii", topicId: "maths-5-1", conceptId: "iii-using-calculus-height-ground-metres",
     section: "B", questionRef: "2021 HL Paper 1 Q8(b)(iii)",
@@ -900,7 +900,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q8-c", topicId: "maths-3-1", conceptId: "function-001x-12x-average-height-section",
     section: "B", questionRef: "2021 HL Paper 1 Q8(c)",
@@ -930,7 +930,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q9-a-ii", topicId: "maths-5-2", conceptId: "explain-what-value-formula-represents-context",
     section: "B", questionRef: "2021 HL Paper 1 Q9(a)(ii)",
@@ -960,7 +960,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q9-a-iii", topicId: "maths-5-2", conceptId: "iii-decrease-temperature-coffee-minutes-after",
     section: "B", questionRef: "2021 HL Paper 1 Q9(a)(iii)",
@@ -990,7 +990,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q9-b", topicId: "maths-5-2", conceptId: "75e-081t-gives-temperature-coffee-time",
     section: "B", questionRef: "2021 HL Paper 1 Q9(b)",
@@ -1020,7 +1020,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q9-c", topicId: "maths-5-2", conceptId: "nearest-temperature-coffee-has-reached-when",
     section: "B", questionRef: "2021 HL Paper 1 Q9(c)",
@@ -1050,7 +1050,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q9-d", topicId: "maths-5-2", conceptId: "sugar-cube-put-into-coffee-sugar",
     section: "B", questionRef: "2021 HL Paper 1 Q9(d)",
@@ -1080,7 +1080,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-a-i", topicId: "maths-2-3", conceptId: "value-when-tank-empties",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(i)",
@@ -1110,7 +1110,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-a-ii", topicId: "maths-3-4", conceptId: "rate-which-volume-water-tank-changing",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(ii)",
@@ -1140,7 +1140,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-a-iii", topicId: "maths-5-2", conceptId: "value-when-volume-water-tank-maximum",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(iii)",
@@ -1170,7 +1170,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-a-iv", topicId: "maths-5-2", conceptId: "maximum-volume-water-tank-correct-nearest",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(iv)",
@@ -1200,7 +1200,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-b-i", topicId: "maths-2-3", conceptId: "order-model-reasonable-must-satisfy-number",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(i)",
@@ -1230,7 +1230,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-b-ii", topicId: "maths-2-3", conceptId: "explain-what-means-context-growth-tree",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(ii)",
@@ -1260,7 +1260,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-b-iii", topicId: "maths-2-3", conceptId: "iii-two-identical-trees-growing-forest",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(iii)",
@@ -1290,7 +1290,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q10-b-iv", topicId: "maths-3-4", conceptId: "second-tree-was-also-cut-down",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(iv)",
@@ -1320,7 +1320,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q1-a", topicId: "maths-1-2", conceptId: "probability-there-exactly-one-left-footed",
     section: "B", questionRef: "2021 HL Paper 2 Q1(a)",
@@ -1350,7 +1350,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q1-b", topicId: "maths-1-2", conceptId: "probability-less-than-three-players-team",
     section: "B", questionRef: "2021 HL Paper 2 Q1(b)",
@@ -1380,7 +1380,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q1-c", topicId: "maths-1-2", conceptId: "goalkeeper-left-footed-probability-least-eight",
     section: "B", questionRef: "2021 HL Paper 2 Q1(c)",
@@ -1410,7 +1410,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q2-i", topicId: "maths-2-3", conceptId: "line-contains-point-point-line-point",
     section: "B", questionRef: "2021 HL Paper 2 Q2(c)(i)",
@@ -1440,7 +1440,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q2-a", topicId: "maths-3-1", conceptId: "line-contains-point",
     section: "B", questionRef: "2021 HL Paper 2 Q2(a)",
@@ -1470,7 +1470,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q2-b", topicId: "maths-2-2", conceptId: "point-line-point-also-distance-unit",
     section: "B", questionRef: "2021 HL Paper 2 Q2(b)",
@@ -1500,7 +1500,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q2-c-ii", topicId: "maths-2-2", conceptId: "horizontal-line-segments-units-coordinates",
     section: "B", questionRef: "2021 HL Paper 2 Q2(c)(ii)",
@@ -1530,7 +1530,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q3-a", topicId: "maths-2-2", conceptId: "circle-has-centre-chord-point-midpoint",
     section: "B", questionRef: "2021 HL Paper 2 Q3(a)",
@@ -1560,7 +1560,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q3-b-i", topicId: "maths-2-2", conceptId: "circles-touch-externally",
     section: "B", questionRef: "2021 HL Paper 2 Q3(b)(i)",
@@ -1590,7 +1590,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q3-b-ii", topicId: "maths-2-2", conceptId: "there-infinite-number-circles-which-touch",
     section: "B", questionRef: "2021 HL Paper 2 Q3(b)(ii)",
@@ -1620,7 +1620,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q4-a-i", topicId: "maths-2-3", conceptId: "prove-cos-cos-sin",
     section: "B", questionRef: "2021 HL Paper 2 Q4(a)(i)",
@@ -1650,7 +1650,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q4-a-ii", topicId: "maths-2-3", conceptId: "sin",
     section: "B", questionRef: "2021 HL Paper 2 Q4(a)(ii)",
@@ -1680,7 +1680,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q4-b", topicId: "maths-2-3", conceptId: "solve-equation-tan-150-360",
     section: "B", questionRef: "2021 HL Paper 2 Q4(b)",
@@ -1710,7 +1710,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q5-a-i", topicId: "maths-3-4", conceptId: "prove-volume-remaining-space-inside-sphere",
     section: "B", questionRef: "2021 HL Paper 2 Q5(a)(i)",
@@ -1740,7 +1740,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q5-a-ii", topicId: "maths-3-4", conceptId: "combined-volume-two-cones-686-cm3",
     section: "B", questionRef: "2021 HL Paper 2 Q5(a)(ii)",
@@ -1770,7 +1770,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q5-b", topicId: "maths-3-3", conceptId: "delivery-van-leaves-factory-travels-towards",
     section: "B", questionRef: "2021 HL Paper 2 Q5(b)",
@@ -1800,7 +1800,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q6-a", topicId: "maths-2-1", conceptId: "prove-two-triangles-abc-similar-then",
     section: "B", questionRef: "2021 HL Paper 2 Q6(a)",
@@ -1830,7 +1830,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q6-b", topicId: "maths-2-1", conceptId: "diagram-lines-parallel-prove-reason-each",
     section: "B", questionRef: "2021 HL Paper 2 Q6(b)",
@@ -1860,7 +1860,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-a", topicId: "maths-2-3", conceptId: "total-length-course",
     section: "B", questionRef: "2021 HL Paper 2 Q7(a)",
@@ -1890,7 +1890,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-b", topicId: "maths-3-3", conceptId: "average-mary-can-run-times-fast",
     section: "B", questionRef: "2021 HL Paper 2 Q7(b)",
@@ -1920,7 +1920,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-c", topicId: "maths-2-3", conceptId: "acb-116-correct-decimal-place",
     section: "B", questionRef: "2021 HL Paper 2 Q7(c)",
@@ -1950,7 +1950,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-d", topicId: "maths-3-4", conceptId: "comply-safety-regulations-region-inside-triangular",
     section: "B", questionRef: "2021 HL Paper 2 Q7(d)",
@@ -1980,7 +1980,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-e", topicId: "maths-2-3", conceptId: "shortest-distance-point-side-correct-decimal",
     section: "B", questionRef: "2021 HL Paper 2 Q7(e)",
@@ -2010,7 +2010,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q7-f", topicId: "maths-2-3", conceptId: "course-viewed-camera-tower-which-rises",
     section: "B", questionRef: "2021 HL Paper 2 Q7(f)",
@@ -2040,7 +2040,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-a-i", topicId: "maths-5-2", conceptId: "minimum-mark-needed-exam-progress-county",
     section: "B", questionRef: "2021 HL Paper 2 Q8(a)(i)",
@@ -2070,7 +2070,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-a-ii", topicId: "maths-3-3", conceptId: "school-awarded-certificate-merit-any-student",
     section: "B", questionRef: "2021 HL Paper 2 Q8(a)(ii)",
@@ -2100,7 +2100,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-b-i", topicId: "maths-1-6", conceptId: "test-statistic-score-sample-mean",
     section: "B", questionRef: "2021 HL Paper 2 Q8(b)(i)",
@@ -2130,7 +2130,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-b-ii", topicId: "maths-1-7", conceptId: "value-test-statistic-comment-what-can",
     section: "B", questionRef: "2021 HL Paper 2 Q8(b)(ii)",
@@ -2160,7 +2160,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-c-i", topicId: "maths-1-2", conceptId: "four-keys-drawn-random-box-what",
     section: "B", questionRef: "2021 HL Paper 2 Q8(c)(i)",
@@ -2190,7 +2190,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q8-c-ii", topicId: "maths-1-2", conceptId: "all-keys-returned-box-then-keys",
     section: "B", questionRef: "2021 HL Paper 2 Q8(c)(ii)",
@@ -2220,7 +2220,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-a-i", topicId: "maths-2-3", conceptId: "how-long-took-fly-correct-nearest",
     section: "B", questionRef: "2021 HL Paper 2 Q9(a)(i)",
@@ -2250,7 +2250,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-a-ii", topicId: "maths-3-3", conceptId: "average-fuel-consumption-plane-litres-per",
     section: "B", questionRef: "2021 HL Paper 2 Q9(a)(ii)",
@@ -2280,7 +2280,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-i", topicId: "maths-2-3", conceptId: "period-range-function",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(i)",
@@ -2310,7 +2310,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-ii", topicId: "maths-2-3", conceptId: "sketch-function-period-indicate-period-range",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(ii)",
@@ -2340,7 +2340,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-iii", topicId: "maths-2-3", conceptId: "iii-voltage-when-seconds-correct-two",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(iii)",
@@ -2370,7 +2370,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-iv", topicId: "maths-3-1", conceptId: "one-value-voltage-110-volts-form",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(iv)",
@@ -2400,7 +2400,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q9-b-v", topicId: "maths-5-2", conceptId: "rate-change-voltage-when-seconds-correct",
     section: "B", questionRef: "2021 HL Paper 2 Q9(b)(v)",
@@ -2430,7 +2430,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q10-a-i", topicId: "maths-1-2", conceptId: "blood-donation-clinic-ten-donors-blood",
     section: "B", questionRef: "2021 HL Paper 2 Q10(a)(i)",
@@ -2460,7 +2460,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q10-a-ii", topicId: "maths-1-2", conceptId: "blood-donation-clinic-five-donors-blood",
     section: "B", questionRef: "2021 HL Paper 2 Q10(a)(ii)",
@@ -2490,7 +2490,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q10-a-iii", topicId: "maths-5-2", conceptId: "iii-minimum-number-blood-donors-required",
     section: "B", questionRef: "2021 HL Paper 2 Q10(a)(iii)",
@@ -2520,7 +2520,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q10-b", topicId: "maths-1-2", conceptId: "homeowner-has-problem-heating-system-her",
     section: "B", questionRef: "2021 HL Paper 2 Q10(b)",
@@ -2550,7 +2550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p2-q10-c", topicId: "maths-1-2", conceptId: "life-insurance-policy-pays-out-120",
     section: "B", questionRef: "2021 HL Paper 2 Q10(c)",
@@ -2580,7 +2580,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q1-a", topicId: "maths-4-2", conceptId: "two-values-which-equation-has-exactly",
     section: "B", questionRef: "2022 HL Paper 1 Q1(a)",
@@ -2610,7 +2610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q1-b", topicId: "maths-4-2", conceptId: "explain-why-equation-has-real-solutions",
     section: "B", questionRef: "2022 HL Paper 1 Q1(b)",
@@ -2640,7 +2640,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q1-c-i", topicId: "maths-4-2", conceptId: "not-solution",
     section: "B", questionRef: "2022 HL Paper 1 Q1(c)(i), (ii)",
@@ -2670,7 +2670,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q2-a", topicId: "maths-5-2", conceptId: "part",
     section: "B", questionRef: "2022 HL Paper 1 Q2(a)",
@@ -2700,7 +2700,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q2-b-i", topicId: "maths-5-2", conceptId: "area-region-538-square-units-integration",
     section: "B", questionRef: "2022 HL Paper 1 Q2(b)(i)",
@@ -2730,7 +2730,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q2-b-ii", topicId: "maths-4-2", conceptId: "areas-three-regions-three-equations-including",
     section: "B", questionRef: "2022 HL Paper 1 Q2(b)(ii)",
@@ -2760,7 +2760,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q3-a-i", topicId: "maths-4-4", conceptId: "part",
     section: "B", questionRef: "2022 HL Paper 1 Q3(a)(i)",
@@ -2790,7 +2790,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q3-a-ii", topicId: "maths-4-4", conceptId: "part",
     section: "B", questionRef: "2022 HL Paper 1 Q3(a)(ii)",
@@ -2820,7 +2820,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q3-a-iii", topicId: "maths-2-2", conceptId: "iii-circle-passes-through-points-shown",
     section: "B", questionRef: "2022 HL Paper 1 Q3(a)(iii)",
@@ -2850,7 +2850,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q3-b", topicId: "maths-3-1", conceptId: "can-written-form",
     section: "B", questionRef: "2022 HL Paper 1 Q3(b)",
@@ -2880,7 +2880,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q4-a", topicId: "maths-3-1", conceptId: "sequence-defined-follows-write-form",
     section: "B", questionRef: "2022 HL Paper 1 Q4(a)",
@@ -2910,7 +2910,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q4-b-i", topicId: "maths-4-1", conceptId: "letting-arithmetic-sequence-26y",
     section: "B", questionRef: "2022 HL Paper 1 Q4(b)(i)",
@@ -2940,7 +2940,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q4-b-ii", topicId: "maths-3-2", conceptId: "equation-part-two-possible-values-each",
     section: "B", questionRef: "2022 HL Paper 1 Q4(b)(ii)",
@@ -2970,7 +2970,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q5-a", topicId: "maths-5-2", conceptId: "derivative",
     section: "B", questionRef: "2022 HL Paper 1 Q5(a)",
@@ -3000,7 +3000,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q5-b-i", topicId: "maths-5-1", conceptId: "factor-three-values-which",
     section: "B", questionRef: "2022 HL Paper 1 Q5(b)(i)",
@@ -3030,7 +3030,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q5-b-ii", topicId: "maths-5-2", conceptId: "range-values-which-negative-correct-decimal",
     section: "B", questionRef: "2022 HL Paper 1 Q5(b)(ii)",
@@ -3060,7 +3060,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q6-a", topicId: "maths-5-2", conceptId: "differentiate-respect-first-principles",
     section: "B", questionRef: "2022 HL Paper 1 Q6(a)",
@@ -3090,7 +3090,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q6-b", topicId: "maths-3-1", conceptId: "rectangle-expanding-area-its-width-its",
     section: "B", questionRef: "2022 HL Paper 1 Q6(b)",
@@ -3120,7 +3120,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q6-c", topicId: "maths-5-2", conceptId: "graph-cubic-function-shown-first-diagram",
     section: "B", questionRef: "2022 HL Paper 1 Q6(c)",
@@ -3150,7 +3150,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-a", topicId: "maths-5-2", conceptId: "work-out-hannah-heart-rate-minutes",
     section: "B", questionRef: "2022 HL Paper 1 Q7(a), (b)",
@@ -3180,7 +3180,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-c", topicId: "maths-5-2", conceptId: "explain-what-value-means-context-hannah",
     section: "B", questionRef: "2022 HL Paper 1 Q7(c)",
@@ -3210,7 +3210,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-d", topicId: "maths-4-2", conceptId: "least-value-greatest-value-calculus-solution",
     section: "B", questionRef: "2022 HL Paper 1 Q7(d)",
@@ -3240,7 +3240,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-e", topicId: "maths-5-2", conceptId: "how-long-after-start-session-hannah",
     section: "B", questionRef: "2022 HL Paper 1 Q7(e)",
@@ -3270,7 +3270,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-f", topicId: "maths-5-2", conceptId: "information-write-terms-first-minutes-session",
     section: "B", questionRef: "2022 HL Paper 1 Q7(f)",
@@ -3300,7 +3300,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q7-g", topicId: "maths-3-1", conceptId: "martha-does-each-exercise-longer-time",
     section: "B", questionRef: "2022 HL Paper 1 Q7(g)",
@@ -3330,7 +3330,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-a", topicId: "maths-2-3", conceptId: "complete-table-value-given",
     section: "B", questionRef: "2022 HL Paper 1 Q8(a), (b)",
@@ -3360,11 +3360,11 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-c", topicId: "maths-2-3", conceptId: "period-range-period-range",
     section: "B", questionRef: "2022 HL Paper 1 Q8(c)",
-    questionText: "Find the period and range of h(t). Period = ________________ Range = [ , ]",
+    questionText: "Find the period and range of h(t). Period = Range = [ , ]",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-hl-p1-q8-c-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions 12, 132, or 120; or period or range clearly marked on graph", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Period and range correct, but swapped; Period = 6 and Range = 120; Range = [12, 132] and Period given as 0 – 6 or 1 – 7, etc. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, mentions 12, 132, or 120; or period or range clearly marked on graph","Period or range correct"],"perOptionSteps":[2,3]} },
@@ -3390,7 +3390,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-d", topicId: "maths-2-3", conceptId: "during-minute-period-what-greatest-number",
     section: "B", questionRef: "2022 HL Paper 1 Q8(d)",
@@ -3420,7 +3420,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-e", topicId: "maths-2-3", conceptId: "solving-equation-second-time-value-point",
     section: "B", questionRef: "2022 HL Paper 1 Q8(e)",
@@ -3450,7 +3450,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q8-f", topicId: "maths-5-2", conceptId: "integration-average-height-point-over-first",
     section: "B", questionRef: "2022 HL Paper 1 Q8(f)",
@@ -3480,7 +3480,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-a", topicId: "maths-4-1", conceptId: "amount-drug-left-alex-body-days",
     section: "B", questionRef: "2022 HL Paper 1 Q9(a)",
@@ -3510,7 +3510,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-b", topicId: "maths-4-1", conceptId: "how-long-after-single-injection-will",
     section: "B", questionRef: "2022 HL Paper 1 Q9(b)",
@@ -3540,7 +3540,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-c", topicId: "maths-4-1", conceptId: "explain-why-total-amount-drug-alex",
     section: "B", questionRef: "2022 HL Paper 1 Q9(c)",
@@ -3570,7 +3570,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-d", topicId: "maths-4-1", conceptId: "total-amount-drug-alex-body-immediately",
     section: "B", questionRef: "2022 HL Paper 1 Q9(d)",
@@ -3600,7 +3600,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-e", topicId: "maths-2-3", conceptId: "formula-sum-infinity-geometric-series-estimate",
     section: "B", questionRef: "2022 HL Paper 1 Q9(e)",
@@ -3630,7 +3630,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-f-i", topicId: "maths-3-1", conceptId: "sum-geometric-series-total-amount-drug",
     section: "B", questionRef: "2022 HL Paper 1 Q9(f)(i)",
@@ -3660,7 +3660,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q9-f-ii", topicId: "maths-4-1", conceptId: "immediately-after-7th-injection-there-drug",
     section: "B", questionRef: "2022 HL Paper 1 Q9(f)(ii)",
@@ -3690,7 +3690,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-a", topicId: "maths-3-2", conceptId: "proportion-digits-recalled-correctly-after-hours",
     section: "B", questionRef: "2022 HL Paper 1 Q10(a)",
@@ -3720,7 +3720,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-b", topicId: "maths-3-2", conceptId: "after-how-many-hours-would-exactly",
     section: "B", questionRef: "2022 HL Paper 1 Q10(b)",
@@ -3750,7 +3750,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-c-i", topicId: "maths-5-2", conceptId: "value",
     section: "B", questionRef: "2022 HL Paper 1 Q10(c)(i), (ii)",
@@ -3780,7 +3780,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-d", topicId: "maths-5-1", conceptId: "calculus-graph-has-points-inflection",
     section: "B", questionRef: "2022 HL Paper 1 Q10(d)",
@@ -3810,7 +3810,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-e-i", topicId: "maths-4-1", conceptId: "write-terms-log-log-log",
     section: "B", questionRef: "2022 HL Paper 1 Q10(e)(i)",
@@ -3840,7 +3840,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p1-q10-e-ii", topicId: "maths-3-2", conceptId: "student-got-guitar-exam-after-two",
     section: "B", questionRef: "2022 HL Paper 1 Q10(e)(ii)",
@@ -3870,7 +3870,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q1-a-i", topicId: "maths-1-2", conceptId: "fill-three-missing-values-complete-table",
     section: "B", questionRef: "2022 HL Paper 2 Q1(a)(i)",
@@ -3900,7 +3900,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q1-a-ii", topicId: "maths-1-2", conceptId: "one-student-picked-random-students-university",
     section: "B", questionRef: "2022 HL Paper 2 Q1(a)(ii)",
@@ -3930,7 +3930,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q1-b", topicId: "maths-1-2", conceptId: "three-people-picked-random-class-probability",
     section: "B", questionRef: "2022 HL Paper 2 Q1(b)",
@@ -3960,7 +3960,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q1-c", topicId: "maths-3-1", conceptId: "there-boys-girls-class-students-class",
     section: "B", questionRef: "2022 HL Paper 2 Q1(c)",
@@ -3990,7 +3990,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q2-b", topicId: "maths-2-2", conceptId: "line-has-slope-contains-point-all",
     section: "B", questionRef: "2022 HL Paper 2 Q2(b)",
@@ -4020,7 +4020,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q2-c", topicId: "maths-2-2", conceptId: "line-has-slope-line-makes-angle",
     section: "B", questionRef: "2022 HL Paper 2 Q2(c)",
@@ -4050,7 +4050,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q3-a", topicId: "maths-3-1", conceptId: "circle-has-equation-radius",
     section: "B", questionRef: "2022 HL Paper 2 Q3(a)",
@@ -4080,7 +4080,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q3-b", topicId: "maths-2-2", conceptId: "circle-has-tangent-point-slope-tangent",
     section: "B", questionRef: "2022 HL Paper 2 Q3(b)",
@@ -4110,7 +4110,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q3-c", topicId: "maths-2-2", conceptId: "two-circles-each-have-both-axis",
     section: "B", questionRef: "2022 HL Paper 2 Q3(c)",
@@ -4140,7 +4140,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q4-a-i", topicId: "maths-2-3", conceptId: "prove-tan-tana-tanb-tanatanb",
     section: "B", questionRef: "2022 HL Paper 2 Q4(a)(i)",
@@ -4170,7 +4170,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q4-b", topicId: "maths-2-3", conceptId: "triangle-abc-shown-diagram",
     section: "B", questionRef: "2022 HL Paper 2 Q4(b)",
@@ -4200,7 +4200,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q5-a-i", topicId: "maths-1-5", conceptId: "work-out-proportion-sample-preferred-remote",
     section: "B", questionRef: "2022 HL Paper 2 Q5(a)(i), (ii)",
@@ -4230,7 +4230,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q5-a-iii", topicId: "maths-1-7", conceptId: "iii-using-proportion-part-create-confidence",
     section: "B", questionRef: "2022 HL Paper 2 Q5(a)(iii)",
@@ -4260,7 +4260,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q5-b", topicId: "maths-1-6", conceptId: "2019-people-pre-pay-mobile-phone",
     section: "B", questionRef: "2022 HL Paper 2 Q5(b)",
@@ -4290,7 +4290,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q6-a", topicId: "maths-2-3", conceptId: "construct-circumcentre-triangle-xyz-shown-using",
     section: "B", questionRef: "2022 HL Paper 2 Q6(a)",
@@ -4320,7 +4320,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q6-b", topicId: "maths-2-2", conceptId: "points-lie-circle-shown-diagram-right",
     section: "B", questionRef: "2022 HL Paper 2 Q6(b)",
@@ -4350,7 +4350,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q6-c", topicId: "maths-2-3", conceptId: "prove-cannot-inside-triangle-pqr",
     section: "B", questionRef: "2022 HL Paper 2 Q6(c)",
@@ -4380,7 +4380,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-a", topicId: "maths-3-4", conceptId: "candle-shape-cylinder-has-diameter-volume",
     section: "B", questionRef: "2022 HL Paper 2 Q7(a)",
@@ -4410,7 +4410,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-b", topicId: "maths-3-4", conceptId: "small-candle-shape-cone-has-volume",
     section: "B", questionRef: "2022 HL Paper 2 Q7(b)",
@@ -4440,7 +4440,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-c", topicId: "maths-3-4", conceptId: "third-conical-candle-has-its-curved",
     section: "B", questionRef: "2022 HL Paper 2 Q7(c)",
@@ -4470,7 +4470,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-d-i", topicId: "maths-3-4", conceptId: "spherical-ball-wax-used-candle-radius",
     section: "B", questionRef: "2022 HL Paper 2 Q7(d)(i)",
@@ -4500,7 +4500,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-d-ii", topicId: "maths-3-4", conceptId: "horizontal-slice-cut-off-sphere-candle",
     section: "B", questionRef: "2022 HL Paper 2 Q7(d)(ii)",
@@ -4530,7 +4530,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q7-e", topicId: "maths-3-4", conceptId: "part-logo-company-shown-abcd-square",
     section: "B", questionRef: "2022 HL Paper 2 Q7(e)",
@@ -4560,7 +4560,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q8-a-i", topicId: "maths-1-6", conceptId: "scatterplot-shows-data-cars",
     section: "B", questionRef: "2022 HL Paper 2 Q8(a)(i), (ii)",
@@ -4590,7 +4590,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q8-a-iii", topicId: "maths-1-2", conceptId: "iii-two-other-cars-have-miles",
     section: "B", questionRef: "2022 HL Paper 2 Q8(a)(iii), (iv)",
@@ -4620,7 +4620,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q8-c", topicId: "maths-1-6", conceptId: "customers-rated-their-experience-garage-giving",
     section: "B", questionRef: "2022 HL Paper 2 Q8(c)",
@@ -4650,7 +4650,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q8-d-i", topicId: "maths-1-2", conceptId: "head-gasket-blows-john-will-have",
     section: "B", questionRef: "2022 HL Paper 2 Q8(d)(i)",
@@ -4680,7 +4680,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q8-d-ii", topicId: "maths-1-2", conceptId: "work-out-probability-least-one-events",
     section: "B", questionRef: "2022 HL Paper 2 Q8(d)(ii)",
@@ -4710,7 +4710,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q9-a", topicId: "maths-3-4", conceptId: "area-field-area-field-each-correct",
     section: "B", questionRef: "2022 HL Paper 2 Q9(a)",
@@ -4740,7 +4740,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q9-b", topicId: "maths-3-4", conceptId: "length-perimeter-field-correct-nearest-metre",
     section: "B", questionRef: "2022 HL Paper 2 Q9(b)",
@@ -4770,7 +4770,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q9-c-i", topicId: "maths-3-3", conceptId: "airplane-flies-its-engine-makes-noise",
     section: "B", questionRef: "2022 HL Paper 2 Q9(c)(i)",
@@ -4800,7 +4800,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q9-c-ii", topicId: "maths-3-3", conceptId: "airplane-flying-constant-speed-255-metres",
     section: "B", questionRef: "2022 HL Paper 2 Q9(c)(ii)",
@@ -4830,7 +4830,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q9-d-i", topicId: "maths-3-3", conceptId: "explain-briefly-why-equation-holds-100",
     section: "B", questionRef: "2022 HL Paper 2 Q9(d)(i)",
@@ -4860,7 +4860,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q9-d-ii", topicId: "maths-4-2", conceptId: "solve-equation-value-correct-decimal-place",
     section: "B", questionRef: "2022 HL Paper 2 Q9(d)(ii)",
@@ -4890,7 +4890,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-a-i", topicId: "maths-3-3", conceptId: "percentage-runners-these-heats-who-took",
     section: "B", questionRef: "2022 HL Paper 2 Q10(a)(i)",
@@ -4920,7 +4920,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-a-ii", topicId: "maths-4-4", conceptId: "runners-fastest-times-qualified-final-assuming",
     section: "B", questionRef: "2022 HL Paper 2 Q10(a)(ii)",
@@ -4950,7 +4950,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-b", topicId: "maths-1-2", conceptId: "sally-takes-part-number-different-races",
     section: "B", questionRef: "2022 HL Paper 2 Q10(b)",
@@ -4980,7 +4980,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-c", topicId: "maths-1-2", conceptId: "relay-teams-took-part-competition-any",
     section: "B", questionRef: "2022 HL Paper 2 Q10(c)",
@@ -5010,7 +5010,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-d", topicId: "maths-4-4", conceptId: "300-runners-take-part-road-race",
     section: "B", questionRef: "2022 HL Paper 2 Q10(d)",
@@ -5040,7 +5040,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-e", topicId: "maths-4-4", conceptId: "sorcha-ran-two-different-marathons-windy",
     section: "B", questionRef: "2022 HL Paper 2 Q10(e)",
@@ -5070,7 +5070,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q1-a", topicId: "maths-3-1", conceptId: "two-values-which",
     section: "B", questionRef: "2023 HL Paper 1 Q1(a)",
@@ -5100,7 +5100,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q1-b", topicId: "maths-4-1", conceptId: "real-numbers-express-terms",
     section: "B", questionRef: "2023 HL Paper 1 Q1(b)",
@@ -5130,11 +5130,11 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q1-c", topicId: "maths-3-1", conceptId: "factor-value-value",
     section: "B", questionRef: "2023 HL Paper 1 Q1(c)",
-    questionText: "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0. Find the value of p and the value of r. p = ____________ and r = ____________",
+    questionText: "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0. Find the value of p and the value of r. p = and r =",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct division, or sets up long division.", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: Full credit -1 if p = √3 but otherwise correct Method 1 4 steps: 1. Sets up long division 2. First cycle in long division correct 3. Value of p found 4. Value of r found. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work of merit, for example, some correct division, or sets up long division.","2 steps correct","3 steps correct Method 2 4 steps: 1. Equation set up 2. Expansion of the product (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found","Work of merit, for example, mentions linear factor","2 steps correct","3 steps correct. Method 3 1. Grid set up 2. Grid completed (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found","Work of merit, for example, mentions linear factor.","2 steps correct.","3 steps correct."],"perOptionSteps":[2,1,1,1]} },
@@ -5160,7 +5160,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q2-a", topicId: "maths-5-2", conceptId: "has-local-minimum-point",
     section: "B", questionRef: "2023 HL Paper 1 Q2(a)",
@@ -5190,7 +5190,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q2-c", topicId: "maths-3-1", conceptId: "function-defined-its-graph-shown-each",
     section: "B", questionRef: "2023 HL Paper 1 Q2(c)",
@@ -5220,7 +5220,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q3-a", topicId: "maths-3-1", conceptId: "prove-not-rational-number",
     section: "B", questionRef: "2023 HL Paper 1 Q3(a)",
@@ -5250,7 +5250,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q3-b", topicId: "maths-3-1", conceptId: "positive-real-number-log3t-log9t-log27t",
     section: "B", questionRef: "2023 HL Paper 1 Q3(b)",
@@ -5280,7 +5280,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q3-c-i", topicId: "maths-3-1", conceptId: "explain-what-log-means-positive-real",
     section: "B", questionRef: "2023 HL Paper 1 Q3(c)(i), (ii)",
@@ -5310,7 +5310,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q4-a", topicId: "maths-4-4", conceptId: "complex-number-root-equation",
     section: "B", questionRef: "2023 HL Paper 1 Q4(a)",
@@ -5340,7 +5340,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q4-b", topicId: "maths-4-4", conceptId: "moivre-theorem-values-which",
     section: "B", questionRef: "2023 HL Paper 1 Q4(b)",
@@ -5370,7 +5370,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q4-c-i", topicId: "maths-4-4", conceptId: "write-complex-complex-numbers-conjugate-complex",
     section: "B", questionRef: "2023 HL Paper 1 Q4(c)(i)–(iii)",
@@ -5400,7 +5400,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q5-a", topicId: "maths-5-2", conceptId: "function-defined-follows-5x2-derivative-its",
     section: "B", questionRef: "2023 HL Paper 1 Q5(a)",
@@ -5430,7 +5430,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q5-b", topicId: "maths-5-2", conceptId: "function-defined-follows-tan-value-form",
     section: "B", questionRef: "2023 HL Paper 1 Q5(b)",
@@ -5460,7 +5460,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q5-c-i", topicId: "maths-5-2", conceptId: "value",
     section: "B", questionRef: "2023 HL Paper 1 Q5(c)(i), (ii)",
@@ -5473,7 +5473,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-ask-p1-q5-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q5-c-i.png",
           "srcHash": "c06e2af9355b10684fdd860840e724f1",
-          "alt": "The question as printed on the paper — The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A→B and g: B→C. #A = #C = 4 and #B = 3. x 1  w 2 ✓ y 3 z 4  Find the value of g(f(3)). Explain why g: B→C is injective but not… Full card prompt: Find the value of g(f(3))",
+          "alt": "The question as printed on the paper — The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A→B and g: B→C. #A = #C = 4 and #B = 3. x 1 ✈ w 2 ✓ y 3 z 4 ☃ Find the value of g(f(3)). Explain why g: B→C is injective but not… Full card prompt: Find the value of g(f(3))",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5490,7 +5490,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q6-a-i", topicId: "maths-5-1", conceptId: "two-values-which",
     section: "B", questionRef: "2023 HL Paper 1 Q6(a)(i)",
@@ -5520,7 +5520,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q6-a-ii", topicId: "maths-3-4", conceptId: "area-shaded-region-diagram-not-scale",
     section: "B", questionRef: "2023 HL Paper 1 Q6(a)(ii)",
@@ -5550,7 +5550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q6-b", topicId: "maths-5-2", conceptId: "positive-constant-ebx-work-out-value",
     section: "B", questionRef: "2023 HL Paper 1 Q6(b)",
@@ -5580,7 +5580,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-a", topicId: "maths-3-3", conceptId: "work-out-fiona-speed-when-she",
     section: "B", questionRef: "2023 HL Paper 1 Q7(a)",
@@ -5610,7 +5610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-b", topicId: "maths-3-3", conceptId: "work-out-fiona-acceleration-rate-which",
     section: "B", questionRef: "2023 HL Paper 1 Q7(b)",
@@ -5640,7 +5640,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-c", topicId: "maths-5-2", conceptId: "time-value-which-fiona-reaches-her",
     section: "B", questionRef: "2023 HL Paper 1 Q7(c)",
@@ -5670,7 +5670,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-d", topicId: "maths-5-2", conceptId: "integration-work-out-fiona-average-speed",
     section: "B", questionRef: "2023 HL Paper 1 Q7(d)",
@@ -5700,7 +5700,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-e", topicId: "maths-5-2", conceptId: "taking-derivative-second-derivative-four-graphs",
     section: "B", questionRef: "2023 HL Paper 1 Q7(e)",
@@ -5730,7 +5730,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-f", topicId: "maths-5-2", conceptId: "work-out-minimum-time-minutes-driver",
     section: "B", questionRef: "2023 HL Paper 1 Q7(f)",
@@ -5760,7 +5760,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-g", topicId: "maths-3-3", conceptId: "rohan-drives-passes-point-driving-constant",
     section: "B", questionRef: "2023 HL Paper 1 Q7(g)",
@@ -5790,7 +5790,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q8-a", topicId: "maths-3-3", conceptId: "olga-puts-3000-savings-account-interest",
     section: "B", questionRef: "2023 HL Paper 1 Q8(a)",
@@ -5820,7 +5820,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q8-c", topicId: "maths-3-3", conceptId: "fiona-taking-out-loan-same-annual",
     section: "B", questionRef: "2023 HL Paper 1 Q8(c)",
@@ -5850,7 +5850,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q8-e", topicId: "maths-3-3", conceptId: "park-sells-three-types-ticket-child",
     section: "B", questionRef: "2023 HL Paper 1 Q8(e)",
@@ -5880,7 +5880,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q8-f", topicId: "maths-3-3", conceptId: "when-item-being-sold-mark-profit",
     section: "B", questionRef: "2023 HL Paper 1 Q8(f)",
@@ -5910,7 +5910,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q9-a-i", topicId: "maths-3-2", conceptId: "list-different-factors-you-can-write",
     section: "B", questionRef: "2023 HL Paper 1 Q9(a)(i)–(iii)",
@@ -5940,7 +5940,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q9-b-i", topicId: "maths-5-2", conceptId: "complete-table-showing-pairs-factors",
     section: "B", questionRef: "2023 HL Paper 1 Q9(b)(i)–(iii)",
@@ -5970,7 +5970,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q9-c-i", topicId: "maths-5-2", conceptId: "tangent-curve-drawn-point",
     section: "B", questionRef: "2023 HL Paper 1 Q9(c)(i)",
@@ -6000,7 +6000,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q9-c-ii", topicId: "maths-2-3", conceptId: "area-triangle-formed-axis-axis-tangent",
     section: "B", questionRef: "2023 HL Paper 1 Q9(c)(ii)",
@@ -6030,7 +6030,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q10-a", topicId: "maths-2-3", conceptId: "draw-grid-based-triangle-given-grid",
     section: "B", questionRef: "2023 HL Paper 1 Q10(a)",
@@ -6060,7 +6060,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q10-b", topicId: "maths-3-4", conceptId: "total-area-three-rectangles-leaving-certificate",
     section: "B", questionRef: "2023 HL Paper 1 Q10(b)",
@@ -6090,7 +6090,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q10-d", topicId: "maths-2-3", conceptId: "total-area-rectangles-term-different-sequence",
     section: "B", questionRef: "2023 HL Paper 1 Q10(d)",
@@ -6120,7 +6120,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q10-e-i", topicId: "maths-5-2", conceptId: "volume-pyramid",
     section: "B", questionRef: "2023 HL Paper 1 Q10(e)(i)",
@@ -6150,7 +6150,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q10-e-ii", topicId: "maths-3-4", conceptId: "starts-increase-rate-units-per-second",
     section: "B", questionRef: "2023 HL Paper 1 Q10(e)(ii)",
@@ -6180,7 +6180,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q1-a", topicId: "maths-1-2", conceptId: "fiona-plays-game-number-times",
     section: "B", questionRef: "2023 HL Paper 2 Q1(a)",
@@ -6210,7 +6210,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q1-c", topicId: "maths-1-2", conceptId: "olga-plays-game-times-probability-olga",
     section: "B", questionRef: "2023 HL Paper 2 Q1(c)",
@@ -6240,7 +6240,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q2-a", topicId: "maths-2-3", conceptId: "prove-sin-sin-acos-cos-asin",
     section: "B", questionRef: "2023 HL Paper 2 Q2(a)",
@@ -6270,7 +6270,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q2-c", topicId: "maths-2-3", conceptId: "all-solutions-equation-360-sin-sin",
     section: "B", questionRef: "2023 HL Paper 2 Q2(c)",
@@ -6300,7 +6300,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q3-a", topicId: "maths-2-3", conceptId: "area-triangle-vertices",
     section: "B", questionRef: "2023 HL Paper 2 Q3(a)",
@@ -6330,7 +6330,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q3-b-i", topicId: "maths-2-2", conceptId: "midpoint",
     section: "B", questionRef: "2023 HL Paper 2 Q3(b)(i)",
@@ -6360,7 +6360,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q3-b-ii", topicId: "maths-2-2", conceptId: "perpendicular-bisector-value-value",
     section: "B", questionRef: "2023 HL Paper 2 Q3(b)(ii)",
@@ -6390,11 +6390,11 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q4-ii", topicId: "maths-2-2", conceptId: "circle-has-equation-write-down-centre",
-    section: "B", questionRef: "2023 HL Paper 2 Q4(ii)",
-    questionText: "The circle c has equation: (x−h)2 + (y + 3)2 = 12 where h∈ℝ. Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate. The perpendicular distance from the line x−4y + 7 = 0 to the centre of the circle c is 5 units. The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 < a < 5, a∈ℝ",
+    section: "B", questionRef: "2023 HL Paper 2 Q4(a)(ii)",
+    questionText: "The circle c has equation (x − h)² + (y + 3)² = 12, where h ∈ ℝ. The perpendicular distance from the line x − 4y + 7 = 0 to the centre of the circle c is 5 units. Work out the two possible values of h. Give each answer in surd form.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p2-q4-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some substitution into relevant formula, or draws diagram with relevant figures (5, centre marked, and line)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: 3 steps: 1. (|h−4(−3) + 7|)/(√(1)² + (−4)²) (|h−4(−3) + 7|)/(√(1)² + (−4)²) 2. (|ℎ−4(−3) + 7|)/(√(1)² + (−4)²) (|ℎ−4(−3) + 7|)/(√(1)² + (−4)²) = 5 3. Find values of h. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, some substitution into relevant formula, or draws diagram with relevant figures (5, centre marked, and line)","1 step correct","2 steps correct"],"perOptionSteps":[4,4,7]} },
@@ -6402,8 +6402,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q4-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-ii.png",
-          "srcHash": "34b1f51f033b4e95870a59232a003a07",
-          "alt": "The question as printed on the paper — The circle s passes through the points s (8, 1), (a, 3), and (a, −5), as shown in the (a, 3) diagram on the right (not to scale), where 0 < a < 5, a∈ℝ. (8, 1) The radius of the circle s is √20. x Find the equation of… Full card prompt: The circle c has equation: (x−h)2 + (y + 3)2 = 12 where h∈ℝ. Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate. The perpendicular distance from the line x−4y + 7 = 0 to the centre of the circle c is 5 units. The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 < a < 5, a∈ℝ",
+          "srcHash": "66d9247b13239c2ca3e9f30a82101c4f",
+          "alt": "The question as printed on the paper — The circle c has equation (x − h)² + (y + 3)² = 12, where h is real. The perpendicular distance from x − 4y + 7 = 0 to its centre is 5 units. Part (a)(ii) asks for both possible values of h in surd form.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6420,7 +6420,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q4-a-i", topicId: "maths-2-2", conceptId: "write-down-centre-radius-circle-terms",
     section: "B", questionRef: "2023 HL Paper 2 Q4(a)(i)",
@@ -6450,7 +6450,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q4-b", topicId: "maths-3-1", conceptId: "circle-passes-through-points-shown-diagram",
     section: "B", questionRef: "2023 HL Paper 2 Q4(b)",
@@ -6480,7 +6480,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q5-a-i", topicId: "maths-1-6", conceptId: "work-out-mean-standard-deviation-number",
     section: "B", questionRef: "2023 HL Paper 2 Q5(a)(i)–(iii)",
@@ -6510,7 +6510,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q5-b", topicId: "maths-1-6", conceptId: "rohan-makes-solid-cuboid-dimensions-using",
     section: "B", questionRef: "2023 HL Paper 2 Q5(b)",
@@ -6540,7 +6540,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q6-a", topicId: "maths-2-3", conceptId: "state-whether-statement-true-false-two",
     section: "B", questionRef: "2023 HL Paper 2 Q6(a)",
@@ -6570,7 +6570,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q6-b-i", topicId: "maths-2-1", conceptId: "prove-diagram-congruent-triangles-reason-each",
     section: "B", questionRef: "2023 HL Paper 2 Q6(b)(i)",
@@ -6600,7 +6600,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q6-b-ii", topicId: "maths-2-3", conceptId: "otherwise-size-angle-correct-nearest-degree",
     section: "B", questionRef: "2023 HL Paper 2 Q6(b)(ii)",
@@ -6630,7 +6630,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q7-a", topicId: "maths-3-4", conceptId: "diagram-shows-road-which-not-scale",
     section: "B", questionRef: "2023 HL Paper 2 Q7(a)",
@@ -6660,7 +6660,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q7-b", topicId: "maths-3-4", conceptId: "olga-wants-measure-vertical-height-hill",
     section: "B", questionRef: "2023 HL Paper 2 Q7(b)",
@@ -6690,7 +6690,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q7-c", topicId: "maths-5-2", conceptId: "values-marked-graph-minimum-maximum-values",
     section: "B", questionRef: "2023 HL Paper 2 Q7(c), (d)",
@@ -6720,7 +6720,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q7-e-i", topicId: "maths-3-4", conceptId: "volume-air-olga-lungs-half-second",
     section: "B", questionRef: "2023 HL Paper 2 Q7(e)(i)",
@@ -6750,7 +6750,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q7-e-ii", topicId: "maths-3-4", conceptId: "rate-which-volume-air-olga-lungs",
     section: "B", questionRef: "2023 HL Paper 2 Q7(e)(ii)",
@@ -6780,7 +6780,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q7-f", topicId: "maths-3-4", conceptId: "olga-breathing-also-measured-while-she",
     section: "B", questionRef: "2023 HL Paper 2 Q7(f)",
@@ -6810,11 +6810,11 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q8-ii", topicId: "maths-1-2", conceptId: "ireland-players-scores-approximately-normally-distributed",
-    section: "B", questionRef: "2023 HL Paper 2 Q8(ii)",
-    questionText: "In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36. A player is selected at random from the players in Ireland. Find the probability that this player has a score of less than 3·5. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland. Use the information about this sample to construct a 95% confidence interval for the mean score of all Galway players. Use the standard deviation of 0·36 in your calculations. 20",
+    section: "B", questionRef: "2023 HL Paper 2 Q8(b)(ii)",
+    questionText: "In Ireland, players’ word-game scores are approximately normally distributed with a mean of 3·87 and a standard deviation of 0·36. A random sample of 64 Galway players has a mean score of 3·74. A local newspaper claims that Galway players have a different mean score to players in Ireland. Carry out a hypothesis test at the 5% level of significance to test this claim. State your null hypothesis, alternative hypothesis, conclusion, and a reason for your conclusion.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q8-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct calculation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: If H₀ and H₁ are reversed, treat as one error. Note: treat solution as requiring the four parts laid out in answer grid. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct calculation","Two parts correct"],"perOptionSteps":[2,3]} },
@@ -6822,8 +6822,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q8-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q8-ii.png",
-          "srcHash": "9f03223dd055951f34cac17a3655e91a",
-          "alt": "The question as printed on the paper — An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s∈ℝ, based on how many attempts it takes them to guess the word. In… Full card prompt: In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36. A player is selected at random from the players in Ireland. Find the probability that this player has a score of less than 3·5. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland. Use the information about this sample to construct a 95% confidence interval for the mean score of all Galway players. Use the standard deviation of 0·36 in your calculations. 20",
+          "srcHash": "d52896ea2e63515e37d485b382920e75",
+          "alt": "The question as printed on the paper — Players' word-game scores in Ireland are approximately normal with mean 3.87 and standard deviation 0.36. A random sample of 64 Galway players has mean 3.74. Part (b)(ii) asks for a two-tailed hypothesis test at the 5% level, including both hypotheses, a conclusion and its reason.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6840,7 +6840,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q8-a", topicId: "maths-1-6", conceptId: "ireland-players-scores-approximately-normally-distributed",
     section: "B", questionRef: "2023 HL Paper 2 Q8(a)",
@@ -6870,7 +6870,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q8-c", topicId: "maths-1-5", conceptId: "national-newspaper-conducts-survey-random-sample",
     section: "B", questionRef: "2023 HL Paper 2 Q8(c)",
@@ -6900,7 +6900,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q9-a-i", topicId: "maths-2-3", conceptId: "work-out-length-side-square-tile",
     section: "B", questionRef: "2023 HL Paper 2 Q9(a)(i)",
@@ -6930,7 +6930,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q9-a-ii", topicId: "maths-3-1", conceptId: "hexagonal-tile-has-sides-length-work",
     section: "B", questionRef: "2023 HL Paper 2 Q9(a)(ii)",
@@ -6960,7 +6960,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q9-b-i", topicId: "maths-2-3", conceptId: "part",
     section: "B", questionRef: "2023 HL Paper 2 Q9(b)(i)",
@@ -6990,7 +6990,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q9-b-ii", topicId: "maths-2-3", conceptId: "diagram-adc-abc",
     section: "B", questionRef: "2023 HL Paper 2 Q9(b)(ii)",
@@ -7020,7 +7020,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q9-c-ii", topicId: "maths-2-3", conceptId: "point-lies-axis",
     section: "B", questionRef: "2023 HL Paper 2 Q9(c)(ii)",
@@ -7050,7 +7050,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q10-a-i", topicId: "maths-3-4", conceptId: "part",
     section: "B", questionRef: "2023 HL Paper 2 Q10(a)(i)",
@@ -7080,7 +7080,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q10-a-ii", topicId: "maths-3-4", conceptId: "total-internal-surface-area-basin-correct",
     section: "B", questionRef: "2023 HL Paper 2 Q10(a)(ii)",
@@ -7110,7 +7110,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q10-a-iii", topicId: "maths-3-4", conceptId: "iii-draw-diagram-net-curved-surface",
     section: "B", questionRef: "2023 HL Paper 2 Q10(a)(iii)",
@@ -7140,7 +7140,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q10-b-i", topicId: "maths-3-4", conceptId: "work-out-how-many-such-codes",
     section: "B", questionRef: "2023 HL Paper 2 Q10(b)(i)",
@@ -7170,7 +7170,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q10-b-ii", topicId: "maths-3-4", conceptId: "work-out-how-many-these-codes",
     section: "B", questionRef: "2023 HL Paper 2 Q10(b)(ii)",
@@ -7200,7 +7200,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q10-b-iii", topicId: "maths-3-4", conceptId: "iii-work-out-how-many-codes",
     section: "B", questionRef: "2023 HL Paper 2 Q10(b)(iii)",
@@ -7230,7 +7230,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q1-a", topicId: "maths-4-2", conceptId: "solve-equation",
     section: "B", questionRef: "2024 HL Paper 1 Q1(a)",
@@ -7260,7 +7260,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q1-b", topicId: "maths-4-1", conceptId: "write-expression-single-fraction-terms-2tt",
     section: "B", questionRef: "2024 HL Paper 1 Q1(b)",
@@ -7290,7 +7290,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q1-c", topicId: "maths-4-2", conceptId: "solve-simultaneous-equations-143",
     section: "B", questionRef: "2024 HL Paper 1 Q1(c)",
@@ -7320,7 +7320,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q2-a", topicId: "maths-4-4", conceptId: "two-solutions-equation-complex-number-each",
     section: "B", questionRef: "2024 HL Paper 1 Q2(a)",
@@ -7350,7 +7350,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q2-b", topicId: "maths-4-4", conceptId: "moivre-theorem-write-form",
     section: "B", questionRef: "2024 HL Paper 1 Q2(b)",
@@ -7371,7 +7371,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p008-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p008-i0.png",
           "srcHash": "26586c580d0dbc59be37f17c9750e08e",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 2 = 2 r = √1² + (√3) 𝜃𝜃 = 300° (oooo − 60°) or 𝜃𝜃 = 5𝜋𝜋/3 (oooo − 𝜋𝜋/3) 9 = [2(cos 300 + isin 300)]₉ (1 + √3i) = 2⁹(cos 9(300) + isin 9(300)) = 512(−1 + 0i) = −512 Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 2 = 2 r = √1² + (√3) 𝜃 = 300° (oooo − 60°) or 𝜃 = 5𝜋/3 (oooo − 𝜋/3) 9 = [2(cos 300 + isin 300)]₉ (1 + √3i) = 2⁹(cos 9(300) + isin 9(300)) = 512(−1 + 0i) = −512 Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -7380,7 +7380,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q2-c-i", topicId: "maths-4-4", conceptId: "plot-label-complex-number-cos-isin",
     section: "B", questionRef: "2024 HL Paper 1 Q2(c)(i), (ii)",
@@ -7401,7 +7401,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p009-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p009-i0.png",
           "srcHash": "5b56e1d673305388ed80a0e1d91958e4",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(c)(i), typeset as the State Examinations Commission set it. It reads: uu = 4 (^√³/2 + ii 1/2) = 2√3 + 2ii = 3∙46 + 2ii [2DP] PLOTTED and LABELLED Or can use radius of 4 and angle of 30° ww: Argument = 3𝜋𝜋/4 uu: Argument = 𝜋𝜋/6 3𝜋𝜋/4 − 𝜋𝜋/6 = 7𝜋𝜋/12 Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(c)(i), typeset as the State Examinations Commission set it. It reads: uu = 4 (^√³/2 + ii 1/2) = 2√3 + 2ii = 3∙46 + 2ii [2DP] PLOTTED and LABELLED Or can use radius of 4 and angle of 30° ww: Argument = 3𝜋/4 uu: Argument = 𝜋/6 3𝜋/4 − 𝜋/6 = 7𝜋/12 Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -7410,7 +7410,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q3-a", topicId: "maths-5-2", conceptId: "integral-cos",
     section: "B", questionRef: "2024 HL Paper 1 Q3(a)",
@@ -7440,7 +7440,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q3-b-i", topicId: "maths-4-1", conceptId: "equation-tangent-graph-point-you-not",
     section: "B", questionRef: "2024 HL Paper 1 Q3(b)(i)",
@@ -7470,7 +7470,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q3-b-ii", topicId: "maths-2-2", conceptId: "ordinate-point-inflection",
     section: "B", questionRef: "2024 HL Paper 1 Q3(b)(ii)",
@@ -7500,7 +7500,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q3-c", topicId: "maths-3-1", conceptId: "diagram-shows-curve-line",
     section: "B", questionRef: "2024 HL Paper 1 Q3(c)",
@@ -7530,7 +7530,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q4-a", topicId: "maths-5-2", conceptId: "differentiate-function-first-principles-respect",
     section: "B", questionRef: "2024 HL Paper 1 Q4(a)",
@@ -7560,7 +7560,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q4-b", topicId: "maths-5-2", conceptId: "function-defined-6xx-value-derivative-when",
     section: "B", questionRef: "2024 HL Paper 1 Q4(b)",
@@ -7590,7 +7590,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q4-c", topicId: "maths-5-2", conceptId: "continuous-function-graph-has-local-minimum",
     section: "B", questionRef: "2024 HL Paper 1 Q4(c)",
@@ -7620,7 +7620,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q5-a", topicId: "maths-3-1", conceptId: "first-three-terms-arithmetic-sequence-follows",
     section: "B", questionRef: "2024 HL Paper 1 Q5(a)",
@@ -7650,7 +7650,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q5-b", topicId: "maths-4-1", conceptId: "g11-7th-11th-terms-geometric-sequence",
     section: "B", questionRef: "2024 HL Paper 1 Q5(b)",
@@ -7680,7 +7680,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q5-c-i", topicId: "maths-4-1", conceptId: "write-terms",
     section: "B", questionRef: "2024 HL Paper 1 Q5(c)(i), (ii)",
@@ -7710,7 +7710,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q6-a", topicId: "maths-3-1", conceptId: "constant-value-which-factor",
     section: "B", questionRef: "2024 HL Paper 1 Q6(a)",
@@ -7740,7 +7740,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q6-b-i", topicId: "maths-3-1", conceptId: "value",
     section: "B", questionRef: "2024 HL Paper 1 Q6(b)(i)",
@@ -7770,7 +7770,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q6-b-ii", topicId: "maths-3-1", conceptId: "value-which-form",
     section: "B", questionRef: "2024 HL Paper 1 Q6(b)(ii)",
@@ -7800,7 +7800,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q6-b-iii", topicId: "maths-4-1", conceptId: "iii-write-function-terms-its-simplest",
     section: "B", questionRef: "2024 HL Paper 1 Q6(b)(iii)",
@@ -7830,7 +7830,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-a", topicId: "maths-3-3", conceptId: "fiadh-has-gross-annual-salary-000",
     section: "B", questionRef: "2024 HL Paper 1 Q7(a)",
@@ -7860,7 +7860,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-b-i", topicId: "maths-5-2", conceptId: "write-down-present-value-each-their",
     section: "B", questionRef: "2024 HL Paper 1 Q7(b)(i), (ii)",
@@ -7890,7 +7890,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-c-i", topicId: "maths-5-2", conceptId: "differentiation-rate-which-amount-money-account",
     section: "B", questionRef: "2024 HL Paper 1 Q7(c)(i)",
@@ -7920,7 +7920,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-c-ii", topicId: "maths-5-2", conceptId: "integration-average-amount-money-account-over",
     section: "B", questionRef: "2024 HL Paper 1 Q7(c)(ii)",
@@ -7950,7 +7950,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q7-c-iii", topicId: "maths-3-3", conceptId: "iii-work-out-annual-rate-interest",
     section: "B", questionRef: "2024 HL Paper 1 Q7(c)(iii)",
@@ -7980,7 +7980,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q8-b", topicId: "maths-5-2", conceptId: "work-out-maximum-minimum-daily-sales",
     section: "B", questionRef: "2024 HL Paper 1 Q8(b)",
@@ -8001,7 +8001,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p021-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p021-i0.png",
           "srcHash": "c55691d610b20dc3219ea14bc9c8b170",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: Max = 21 + 19(1) = 40 Min = 21 −19(1) = 2 OR S′(t) = −(19) ( 2𝜋𝜋/365) sin 2𝜋𝜋𝜋𝜋/365 S′(t) = 0 −(19) ( 2𝜋𝜋/365) sin 2𝜋𝜋𝜋𝜋/365 = 0 2𝜋𝜋𝜋𝜋/365 = 0 2𝜋𝜋𝜋𝜋/365 = 𝜋𝜋 Max ⇒ = tt SS(0) = 0 ⇒ tt = 365/2 = 40 Min = SS (365/2 = 2",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: Max = 21 + 19(1) = 40 Min = 21 −19(1) = 2 OR S′(t) = −(19) ( 2𝜋/365) sin 2𝜋/365 S′(t) = 0 −(19) ( 2𝜋/365) sin 2𝜋/365 = 0 2𝜋/365 = 0 2𝜋/365 = 𝜋 Max ⇒ = tt SS(0) = 0 ⇒ tt = 365/2 = 40 Min = SS (365/2 = 2",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8010,7 +8010,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q8-c", topicId: "maths-5-2", conceptId: "value-which-same-number-daily-sales",
     section: "B", questionRef: "2024 HL Paper 1 Q8(c)",
@@ -8040,7 +8040,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q8-d", topicId: "maths-5-2", conceptId: "graphs-three-functions-shown-not-scale",
     section: "B", questionRef: "2024 HL Paper 1 Q8(d)",
@@ -8070,14 +8070,14 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q8-e", topicId: "maths-5-2", conceptId: "derivative-given-365-sin-365",
     section: "B", questionRef: "2024 HL Paper 1 Q8(e)",
     questionText: "The derivative of C(t) is given by C′(t) = 0∙03 − 38𝜋 365 sin ( 2𝜋 365)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-hl-p1-q8-e-r1", kind: "anyN", verbatim: "Work of merit, for example, sets up equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for calculator in incorrect mode. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sets up equation","0·03(365)/38𝜋𝜋 = sin ( 2𝜋𝜋𝜋𝜋/365)"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-hl-p1-q8-e-r1", kind: "anyN", verbatim: "Work of merit, for example, sets up equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for calculator in incorrect mode. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sets up equation","0·03(365)/38𝜋 = sin ( 2𝜋/365)"],"perOptionSteps":[4,6]} },
     ],
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q8-e",
@@ -8091,7 +8091,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p022-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p022-i0.png",
           "srcHash": "3ada25be2470efe07ef5a75e4d29c691",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: (e) CC′(tt) = 0∙03 − 38𝜋𝜋/365 sin (2𝜋𝜋𝜋𝜋/365) = 0 0∙03 = 38𝜋𝜋/365 sin (2𝜋𝜋𝜋𝜋/365) (0 · 03(365))/38𝜋𝜋 = sin (2𝜋𝜋𝜋𝜋/365) sin^−¹ (0/38𝜋𝜋 · 03(365) ) = 2𝜋𝜋𝜋𝜋/365 0 · 09185 = 2𝜋𝜋𝜋𝜋/365 t = 5 · 336 = 5 [days] [∈ℕ] Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: (e) CC′(tt) = 0∙03 − 38𝜋/365 sin (2𝜋/365) = 0 0∙03 = 38𝜋/365 sin (2𝜋/365) (0 · 03(365))/38𝜋 = sin (2𝜋/365) sin^−¹ (0/38𝜋 · 03(365) ) = 2𝜋/365 0 · 09185 = 2𝜋/365 t = 5 · 336 = 5 [days] [∈ℕ] Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8100,7 +8100,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q9-a", topicId: "maths-3-4", conceptId: "value-volume-cap-when-terms",
     section: "B", questionRef: "2024 HL Paper 1 Q9(a)",
@@ -8113,7 +8113,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-ask-p1-q9-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-a.png",
           "srcHash": "e5e50045e301afec2459c68f549e1dcc",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: Find the value of C, the volume of the cap, when R = 13 and k = 4. Give your answer in terms of 𝜋",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8121,7 +8121,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p023-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p023-i0.png",
           "srcHash": "c06efce45bed66f5f4cbbe9c0c8ab769",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(a), typeset as the State Examinations Commission set it. It reads: (a) CC = 𝜋𝜋(4)²/3 (3(13) − 4) = 560𝜋𝜋/3",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(a), typeset as the State Examinations Commission set it. It reads: (a) CC = 𝜋(4)²/3 (3(13) − 4) = 560𝜋/3",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8130,7 +8130,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q9-c", topicId: "maths-3-4", conceptId: "value-when-volume-hemisphere-litres-correct",
     section: "B", questionRef: "2024 HL Paper 1 Q9(c)",
@@ -8143,7 +8143,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-ask-p1-q9-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-c.png",
           "srcHash": "67b9ee405327be953707287742bfc79e",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: Find the value of x when the volume of the hemisphere is 3 litres. Give your answer correct to 1 decimal place",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8151,7 +8151,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p023-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p023-i2.png",
           "srcHash": "8656502cc7f3bfd0e044ff40f6301a0b",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: 3 litres = 3000 cm³ 𝜋𝜋/12 xx³ = 3000 xx³ = 3000(12)/𝜋𝜋 3 𝜋𝜋/36000 xx = 3 √ 36000/𝜋𝜋 = 22 · 5 [1 DP] Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: 3 litres = 3000 cm³ 𝜋/12 xx³ = 3000 xx³ = 3000(12)/𝜋 3 𝜋/36000 xx = 3 √ 36000/𝜋 = 22 · 5 [1 DP] Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8160,14 +8160,14 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q9-d", topicId: "maths-3-4", conceptId: "volume-hemisphere-increasing-constant-rate-450",
     section: "B", questionRef: "2024 HL Paper 1 Q9(d)",
     questionText: "The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-hl-p1-q9-d-r1", kind: "anyN", verbatim: "States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation","Any two of the following: o dddd/dddd = 450 d 𝜋 o 4 x² d = o dddd/dddd = dddd/dddd × dddd/dddd or equivalent","Finds dddd/dddd = 4/𝜋𝜋xx2 × 450"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-hl-p1-q9-d-r1", kind: "anyN", verbatim: "States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation","Any two of the following: o dddd/dddd = 450 d 𝜋 o 4 x² d = o dddd/dddd = dddd/dddd × dddd/dddd or equivalent","Finds dddd/dddd = 4/𝜋xx2 × 450"],"perOptionSteps":[3,2,5]} },
     ],
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q9-d",
@@ -8181,7 +8181,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p024-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p024-i0.png",
           "srcHash": "a4ff0c9bc755d1070d1f3b15bda55968",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: (d) dddd/dddd = 450 VV = 𝜋𝜋/12 xx³ dddd/dddd = 𝜋𝜋/4 xx² dddd/dddd = 4/𝜋𝜋xx² dddd/dddd = dddd/dddd × dddd/dddd dddd/dddd = 4/𝜋𝜋xx² × 450 = 1800/𝜋𝜋xx² At xx = 20 dddd/dddd = 1800/𝜋𝜋(20)2 = 1 · 4 [cm/sec]",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: (d) dddd/dddd = 450 VV = 𝜋/12 xx³ dddd/dddd = 𝜋/4 xx² dddd/dddd = 4/𝜋xx² dddd/dddd = dddd/dddd × dddd/dddd dddd/dddd = 4/𝜋xx² × 450 = 1800/𝜋xx² At xx = 20 dddd/dddd = 1800/𝜋(20)2 = 1 · 4 [cm/sec]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8190,7 +8190,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q9-e", topicId: "maths-3-4", conceptId: "cone-has-radius-height-curved-surface",
     section: "B", questionRef: "2024 HL Paper 1 Q9(e)",
@@ -8203,7 +8203,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-ask-p1-q9-e",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-e.png",
           "srcHash": "1b2be293b45a31327f7412e58ce4fc5b",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the… Full card prompt: A cone has a radius of r cm and a height of h cm. The curved surface area of the cone, S, can be written as: S = 𝜋√r₂ + h² Rearrange this to write h in terms of S, r, and 𝜋",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8211,7 +8211,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p024-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p024-i1.png",
           "srcHash": "adcf834928a608eda01d02f817f45611",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: S = 𝜋√r² + h² SS/𝜋𝜋𝜋𝜋 = √rr² + h² SS²/𝜋𝜋²rr² = rr² + h² SS²/𝜋𝜋²rr² − rr² = h² (SS² − 𝜋𝜋²rr⁴)/𝜋𝜋²rr² = h² √S²−𝜋²r⁴ = h 𝜋𝜋²rr²/(√SS² − 𝜋𝜋²rr⁴) (√SS² − 𝜋𝜋²rr⁴)/𝜋𝜋𝜋𝜋 = h Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: S = 𝜋√r² + h² SS/𝜋 = √rr² + h² SS²/𝜋²rr² = rr² + h² SS²/𝜋²rr² − rr² = h² (SS² − 𝜋²rr⁴)/𝜋²rr² = h² √S²−𝜋²r⁴ = h 𝜋²rr²/(√SS² − 𝜋²rr⁴) (√SS² − 𝜋²rr⁴)/𝜋 = h Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8220,7 +8220,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q10-a-i", topicId: "maths-3-1", conceptId: "estimate-height-water-spinach-plant-after",
     section: "B", questionRef: "2024 HL Paper 1 Q10(a)(i)",
@@ -8250,7 +8250,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q10-a-ii", topicId: "maths-5-2", conceptId: "write-down-derivative",
     section: "B", questionRef: "2024 HL Paper 1 Q10(a)(ii)",
@@ -8280,7 +8280,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q10-b", topicId: "maths-5-1", conceptId: "height-different-plant-can-modelled-function",
     section: "B", questionRef: "2024 HL Paper 1 Q10(b)",
@@ -8310,7 +8310,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q10-c-i", topicId: "maths-5-2", conceptId: "integration-work-out-area-logo",
     section: "B", questionRef: "2024 HL Paper 1 Q10(c)(i)",
@@ -8340,7 +8340,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q10-c-ii", topicId: "maths-3-1", conceptId: "function-can-written-form-constants-value",
     section: "B", questionRef: "2024 HL Paper 1 Q10(c)(ii)",
@@ -8370,7 +8370,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q10-d", topicId: "maths-3-1", conceptId: "part-constants",
     section: "B", questionRef: "2024 HL Paper 1 Q10(d)",
@@ -8400,7 +8400,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q1-a-i", topicId: "maths-4-2", conceptId: "mode-data-metres-write-down-value",
     section: "B", questionRef: "2024 HL Paper 2 Q1(a)(i)–(iii)",
@@ -8430,7 +8430,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q1-b", topicId: "maths-4-2", conceptId: "how-would-you-best-describe-how",
     section: "B", questionRef: "2024 HL Paper 2 Q1(b)",
@@ -8460,7 +8460,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q2-a", topicId: "maths-1-2", conceptId: "table-shows-prizes-euro-player-can",
     section: "B", questionRef: "2024 HL Paper 2 Q2(a)",
@@ -8490,7 +8490,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q2-b", topicId: "maths-1-2", conceptId: "mutually-exclusive-events",
     section: "B", questionRef: "2024 HL Paper 2 Q2(b)",
@@ -8520,7 +8520,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q2-c", topicId: "maths-1-2", conceptId: "two-other-events-universal-set",
     section: "B", questionRef: "2024 HL Paper 2 Q2(c)",
@@ -8550,7 +8550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q2-d", topicId: "maths-1-2", conceptId: "event-will-raining-tomorrow-morning-event",
     section: "B", questionRef: "2024 HL Paper 2 Q2(d)",
@@ -8580,7 +8580,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q3-a", topicId: "maths-3-4", conceptId: "parallelogram-110-area-correct-nearest",
     section: "B", questionRef: "2024 HL Paper 2 Q3(a)",
@@ -8610,7 +8610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q3-b", topicId: "maths-2-3", conceptId: "angle-360-cos-all-possible-values",
     section: "B", questionRef: "2024 HL Paper 2 Q3(b)",
@@ -8640,7 +8640,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q3-c", topicId: "maths-2-3", conceptId: "triangle-angle",
     section: "B", questionRef: "2024 HL Paper 2 Q3(c)",
@@ -8661,7 +8661,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p033-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p033-i2.png",
           "srcHash": "235c817bd29b4390eb56995d824819c9",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) (sin 𝜃𝜃)/45 = (sin 25)/15√3 25/15√3 sin 𝜃𝜃 = 45(0.4226)/15√3 45(0.4226)/15√3 = 0.73196 sin 𝜃= 0.73196 … 47.05° angle in 1st and 2nd quadrants 𝜃= 47.05° or 𝜃= 132.95° 𝜃= 47° or 𝜃= 133° [nearest degree] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) (sin 𝜃)/45 = (sin 25)/15√3 25/15√3 sin 𝜃 = 45(0.4226)/15√3 45(0.4226)/15√3 = 0.73196 sin 𝜃= 0.73196 … 47.05° angle in 1st and 2nd quadrants 𝜃= 47.05° or 𝜃= 132.95° 𝜃= 47° or 𝜃= 133° [nearest degree] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8670,7 +8670,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q4-a", topicId: "maths-2-3", conceptId: "construct-centroid-triangle",
     section: "B", questionRef: "2024 HL Paper 2 Q4(a)",
@@ -8700,7 +8700,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q4-b", topicId: "maths-2-1", conceptId: "lines-diagram-parallel",
     section: "B", questionRef: "2024 HL Paper 2 Q4(b)",
@@ -8730,7 +8730,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q5-a-i", topicId: "maths-2-2", conceptId: "write-down-centre-radius-circle",
     section: "B", questionRef: "2024 HL Paper 2 Q5(a)(i)",
@@ -8760,7 +8760,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q5-a-ii", topicId: "maths-2-2", conceptId: "circle-has-equation-circles-touch-internally",
     section: "B", questionRef: "2024 HL Paper 2 Q5(a)(ii)",
@@ -8790,7 +8790,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q5-b", topicId: "maths-2-2", conceptId: "another-circle-has-its-centre-vertical",
     section: "B", questionRef: "2024 HL Paper 2 Q5(b)",
@@ -8820,7 +8820,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q6-a", topicId: "maths-2-2", conceptId: "line-segment-point-divides-line-segment",
     section: "B", questionRef: "2024 HL Paper 2 Q6(a)",
@@ -8850,7 +8850,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q6-b", topicId: "maths-2-2", conceptId: "perpendicular-distance-point-line",
     section: "B", questionRef: "2024 HL Paper 2 Q6(b)",
@@ -8880,7 +8880,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q6-c-i", topicId: "maths-2-2", conceptId: "how-many-different-pairs-points-can",
     section: "B", questionRef: "2024 HL Paper 2 Q6(c)(i), (ii)",
@@ -8910,7 +8910,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q7-a-i", topicId: "maths-1-2", conceptId: "one-person-picked-random-people-who",
     section: "B", questionRef: "2024 HL Paper 2 Q7(a)(i), (ii)",
@@ -8940,7 +8940,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q7-b-i", topicId: "maths-1-2", conceptId: "hotel-customers-picked-random-probability-exactly",
     section: "B", questionRef: "2024 HL Paper 2 Q7(b)(i)",
@@ -8970,7 +8970,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q7-b-ii", topicId: "maths-1-2", conceptId: "hotel-customers-picked-random",
     section: "B", questionRef: "2024 HL Paper 2 Q7(b)(ii)",
@@ -9000,7 +9000,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q7-c", topicId: "maths-1-2", conceptId: "hotels-testing-new-booking-system",
     section: "B", questionRef: "2024 HL Paper 2 Q7(c)",
@@ -9030,7 +9030,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q7-d", topicId: "maths-1-2", conceptId: "2020-hotels-were-rated-best-hotel",
     section: "B", questionRef: "2024 HL Paper 2 Q7(d)",
@@ -9060,7 +9060,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q8-a", topicId: "maths-3-4", conceptId: "makes-open-metal-cylinder-height-radius",
     section: "B", questionRef: "2024 HL Paper 2 Q8(a)",
@@ -9090,7 +9090,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q8-b", topicId: "maths-3-4", conceptId: "tommy-makes-another-cylinder-height-diameter",
     section: "B", questionRef: "2024 HL Paper 2 Q8(b)",
@@ -9111,7 +9111,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p042-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p042-i1.png",
           "srcHash": "7e236fc171c93b85716e65ff24c11c02",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(b), typeset as the State Examinations Commission set it. It reads: r² = 6² + 11² r = √36 + 121 = √157 Vol = 4/3 𝜋𝜋(√157) 3 = 8240∙20 … = 8240·2 [cm³] [1 DP] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(b), typeset as the State Examinations Commission set it. It reads: r² = 6² + 11² r = √36 + 121 = √157 Vol = 4/3 𝜋(√157) 3 = 8240∙20 … = 8240·2 [cm³] [1 DP] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9120,7 +9120,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q8-c-i", topicId: "maths-3-4", conceptId: "diagram-symmetrical-about-line-state-why",
     section: "B", questionRef: "2024 HL Paper 2 Q8(c)(i), (ii)",
@@ -9150,7 +9150,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q8-c-iii", topicId: "maths-3-4", conceptId: "iii-top-cone-has-radius-height",
     section: "B", questionRef: "2024 HL Paper 2 Q8(c)(iii)",
@@ -9180,7 +9180,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q8-c-iv", topicId: "maths-5-2", conceptId: "write-volume-top-cone-terms-value",
     section: "B", questionRef: "2024 HL Paper 2 Q8(c)(iv)",
@@ -9201,7 +9201,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p043-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p043-i2.png",
           "srcHash": "ea018c1d7047c5f47a738fd524df3a16",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) V = 1/3 𝜋𝜋rr²h = 1/3 𝜋𝜋(20h − h²)h = 1/3 𝜋𝜋(20h² − h³) dddd/ddh = 1/3 𝜋𝜋(40h − 3h²) 1/3 𝜋𝜋(40h − 3h²) = 0 at local max/min 40h−3h² = 0 h(40 −3h) = 0 Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) V = 1/3 𝜋rr²h = 1/3 𝜋(20h − h²)h = 1/3 𝜋(20h² − h³) dddd/ddh = 1/3 𝜋(40h − 3h²) 1/3 𝜋(40h − 3h²) = 0 at local max/min 40h−3h² = 0 h(40 −3h) = 0 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9210,7 +9210,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-a-i", topicId: "maths-2-2", conceptId: "write-down-equation-circle",
     section: "B", questionRef: "2024 HL Paper 2 Q9(a)(i)",
@@ -9240,7 +9240,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-a-ii", topicId: "maths-3-2", conceptId: "ameena-point-stream-circle-work-out",
     section: "B", questionRef: "2024 HL Paper 2 Q9(a)(ii)",
@@ -9270,7 +9270,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-a-iii", topicId: "maths-2-2", conceptId: "iii-petro-point-work-out-shortest",
     section: "B", questionRef: "2024 HL Paper 2 Q9(a)(iii)",
@@ -9300,7 +9300,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-b", topicId: "maths-2-2", conceptId: "there-straight-path-not-shown-diagram",
     section: "B", questionRef: "2024 HL Paper 2 Q9(b)",
@@ -9330,7 +9330,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-c", topicId: "maths-2-2", conceptId: "ordinates-point-road-closest-point-might",
     section: "B", questionRef: "2024 HL Paper 2 Q9(c)",
@@ -9360,7 +9360,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-d", topicId: "maths-2-2", conceptId: "fiadh-point-road",
     section: "B", questionRef: "2024 HL Paper 2 Q9(d)",
@@ -9390,7 +9390,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-a-i", topicId: "maths-2-3", conceptId: "120",
     section: "B", questionRef: "2024 HL Paper 2 Q10(a)(i)",
@@ -9420,7 +9420,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-a-ii", topicId: "maths-2-3", conceptId: "correct-decimal-place",
     section: "B", questionRef: "2024 HL Paper 2 Q10(a)(ii)",
@@ -9450,7 +9450,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-a-iii", topicId: "maths-3-4", conceptId: "iii-work-out-area",
     section: "B", questionRef: "2024 HL Paper 2 Q10(a)(iii)",
@@ -9471,7 +9471,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p048-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p048-i2.png",
           "srcHash": "8fd156a9726590aff85a896da4f0824b",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: |∠B′| = 180 −2(41·4) = 97·2° sin 41·4 = 20/|OOOO| |OOOO| = 20/(sin 41·4) = 30·24 … Area AB′A′ = Area B′ −Area A′ = 97·2/360 𝜋𝜋(120)² − 97·2/360 𝜋𝜋(30·24)² = 11438·84 … = 11 439 [cm²] [∈ℕ] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: |∠B′| = 180 −2(41·4) = 97·2° sin 41·4 = 20/|OOOO| |OOOO| = 20/(sin 41·4) = 30·24 … Area AB′A′ = Area B′ −Area A′ = 97·2/360 𝜋(120)² − 97·2/360 𝜋(30·24)² = 11438·84 … = 11 439 [cm²] [∈ℕ] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9480,7 +9480,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-b", topicId: "maths-2-3", conceptId: "moving-point-along-line-changes-size",
     section: "B", questionRef: "2024 HL Paper 2 Q10(b)",
@@ -9510,7 +9510,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-c-i", topicId: "maths-2-3", conceptId: "how-many-different-patterns-could-five",
     section: "B", questionRef: "2024 HL Paper 2 Q10(c)(i)",
@@ -9540,7 +9540,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-c-ii", topicId: "maths-2-3", conceptId: "how-many-different-patterns-could-five",
     section: "B", questionRef: "2024 HL Paper 2 Q10(c)(ii), (iii)",
@@ -9570,7 +9570,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q1-a", topicId: "maths-4-3", conceptId: "solve-inequality",
     section: "B", questionRef: "2025 HL Paper 1 Q1(a)",
@@ -9600,7 +9600,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q1-b", topicId: "maths-4-1", conceptId: "multiply-out-simplify",
     section: "B", questionRef: "2025 HL Paper 1 Q1(b)",
@@ -9630,11 +9630,11 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q1-c", topicId: "maths-4-2", conceptId: "factor-12x-information-three-solutions-equation",
     section: "B", questionRef: "2025 HL Paper 1 Q1(c)",
-    questionText: "(2x + 3) is a factor of 4x³ −12x² −7x + 30. Use this information to find the three solutions to the following equation in x: 4x³ −12x² −7x + 30 = 0 x = _____________ , x = _____________ , and x = _____________",
+    questionText: "(2x + 3) is a factor of 4x³ −12x² −7x + 30. Use this information to find the three solutions to the following equation in x: 4x³ −12x² −7x + 30 = 0 x = , x = , and x =",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Sets up long division / array/product", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Note: Consider solution as consisting of 5 steps: Step 1. Sets up long division / array/product Step 2. Finds first term in quotient (2x² or 10) Step 3. Finds 2x² −9x + 10 Step 4. Factorises 2x² −9x + 10 / fully substituted quadratic formula Step 5. Finds 3 values of x. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 5.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Sets up long division / array/product","Finds first term in quotient (2x² or 10)","Finds 2x² −9x + 10","Factorises 2x² −9x + 10 / fully","Finds 3 values of x"],"perOptionSteps":[2,2,2,4]} },
@@ -9660,7 +9660,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q2-a-i", topicId: "maths-5-2", conceptId: "derivative-respect",
     section: "B", questionRef: "2025 HL Paper 1 Q2(a)(i)",
@@ -9690,7 +9690,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q2-a-ii", topicId: "maths-5-2", conceptId: "equation-tangent-curve-point-form",
     section: "B", questionRef: "2025 HL Paper 1 Q2(a)(ii)",
@@ -9720,7 +9720,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q2-b-i", topicId: "maths-5-2", conceptId: "state-range-values-which",
     section: "B", questionRef: "2025 HL Paper 1 Q2(b)(i)–(iii)",
@@ -9750,7 +9750,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q3-a", topicId: "maths-5-2", conceptId: "function-defined-expression-you-not-need",
     section: "B", questionRef: "2025 HL Paper 1 Q3(a)",
@@ -9780,7 +9780,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q3-b", topicId: "maths-5-2", conceptId: "function-defined-finding-function-has-local",
     section: "B", questionRef: "2025 HL Paper 1 Q3(b)",
@@ -9810,7 +9810,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q3-c", topicId: "maths-5-2", conceptId: "constant-e5xd-value",
     section: "B", questionRef: "2025 HL Paper 1 Q3(c)",
@@ -9840,7 +9840,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q4-a", topicId: "maths-4-4", conceptId: "write-complex-number-form",
     section: "B", questionRef: "2025 HL Paper 1 Q4(a)",
@@ -9861,7 +9861,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p013-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p013-i0.png",
           "srcHash": "d276327dd5f80ba38cca14d9d27c30f0",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1: 4 + 5i) = 8 + 10i + 12i + 15i² (2 + 3i 4 −5i)(4 + 5i 16 + 20i−20i−25i² = (−7 + 22ii)/41 = − 7/41 + 22/41 ii Method 2: (2 + 3ii)/(4 − 5ii) = aa + bbbb (4 −5i)(a + b) = 2 + 3i 4a + 4b−5a−5bi² = 2 + 3i Re: 4a + 5b = 2 Im: −5a + 4b = 3 20a + 25b = 10 Re × 5: Im × 4: (−20aa + 16bb = 12)/22 41bb = 22 ∴ bb = 22/41 4aa + 5 ( 22/41) = 2 ∴ aa = − 7/41 (2 + 3ii)/(4 − 5ii) = − 7/41 + 22/41 ii Method 3 Let 𝜃𝜃₁ = tan^−¹ ",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1: 4 + 5i) = 8 + 10i + 12i + 15i² (2 + 3i 4 −5i)(4 + 5i 16 + 20i−20i−25i² = (−7 + 22ii)/41 = − 7/41 + 22/41 ii Method 2: (2 + 3ii)/(4 − 5ii) = aa + bbbb (4 −5i)(a + b) = 2 + 3i 4a + 4b−5a−5bi² = 2 + 3i Re: 4a + 5b = 2 Im: −5a + 4b = 3 20a + 25b = 10 Re × 5: Im × 4: (−20aa + 16bb = 12)/22 41bb = 22 ∴ bb = 22/41 4aa + 5 ( 22/41) = 2 ∴ aa = − 7/41 (2 + 3ii)/(4 − 5ii) = − 7/41 + 22/41 ii Method 3 Let 𝜃₁ = tan^−¹ ",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9870,7 +9870,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q4-b", topicId: "maths-4-4", conceptId: "moivre-theorem-expression-cos-isin-prove",
     section: "B", questionRef: "2025 HL Paper 1 Q4(b)",
@@ -9900,7 +9900,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q4-c", topicId: "maths-4-4", conceptId: "moivre-theorem-two-values-which-each",
     section: "B", questionRef: "2025 HL Paper 1 Q4(c)",
@@ -9921,7 +9921,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p014-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p014-i1.png",
           "srcHash": "e67a8853a53391e2852156202e215ae9",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(c), typeset as the State Examinations Commission set it. It reads: z⁶ = −64i so z = (−64i) Reference angle: 𝜃𝜃 = −90° or 270° or 3𝜋𝜋/2 or − 𝜋𝜋/2 Modulus: r = 64 General polar form: zz = [64 (cos ( 3𝜋𝜋/2 + 2nnnn) + ii sin ( 3𝜋𝜋/2 + 2nnnn))] De Moivre’s Theorem: zz = 64 1/6 [cos ( 𝜋𝜋/4 + nnnn/3 ) + ii sin ( 𝜋𝜋/4 + nnnn/3 ) ] (ANY TWO OF:)/(nn = 00: 2 (cos) ( 𝜋𝜋 4) + ii sin ( 𝜋𝜋 4)) = √2 + √2ii nn = 00: 2 (cos ( 𝜋𝜋/4) + ii sin ( 𝜋𝜋/4)) = √2 + √2ii nn = 11: 2 (cos ( 𝜋𝜋/4 + 𝜋𝜋/3) + ii si",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(c), typeset as the State Examinations Commission set it. It reads: z⁶ = −64i so z = (−64i) Reference angle: 𝜃 = −90° or 270° or 3𝜋/2 or − 𝜋/2 Modulus: r = 64 General polar form: zz = [64 (cos ( 3𝜋/2 + 2nnnn) + ii sin ( 3𝜋/2 + 2nnnn))] De Moivre’s Theorem: zz = 64 1/6 [cos ( 𝜋/4 + nnnn/3 ) + ii sin ( 𝜋/4 + nnnn/3 ) ] (ANY TWO OF:)/(nn = 00: 2 (cos) ( 𝜋 4) + ii sin ( 𝜋 4)) = √2 + √2ii nn = 00: 2 (cos ( 𝜋/4) + ii sin ( 𝜋/4)) = √2 + √2ii nn = 11: 2 (cos ( 𝜋/4 + 𝜋/3) + ii si",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9930,11 +9930,11 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q5-a", topicId: "maths-3-1", conceptId: "function-defined-20x-write-form-constants",
     section: "B", questionRef: "2025 HL Paper 1 Q5(a)",
-    questionText: "The function g(x) is defined for x∈ℝ by: g(x) = 5x² + 20x−12 Write g(x) in the following form, where a, h, k∈ℤ are constants: g(x) = a(x + h)² + k g(x) = ____________________________________",
+    questionText: "The function g(x) is defined for x∈ℝ by: g(x) = 5x² + 20x−12 Write g(x) in the following form, where a, h, k∈ℤ are constants: g(x) = a(x + h)² + k g(x) =",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p1-q5-a-r1", kind: "anyN", verbatim: "Work of merit, for example, factors out 5 from two terms, or squares out (x + h)²\nSome correct differentiation\nFinds a", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, factors out 5 from two terms, or squares out (x + h)²\nSome correct differentiation\nFinds a","Find h or k\nFinds the turning point","Finds or identifies any two of a, h or k\nFinds the turning point and identifies a"],"perOptionSteps":[2,2,6]} },
@@ -9960,7 +9960,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q5-b", topicId: "maths-3-2", conceptId: "positive-constant-laws-logs-write-expression",
     section: "B", questionRef: "2025 HL Paper 1 Q5(b)",
@@ -9990,7 +9990,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q5-c", topicId: "maths-4-2", conceptId: "pair-simultaneous-equations-constant",
     section: "B", questionRef: "2025 HL Paper 1 Q5(c)",
@@ -10020,7 +10020,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q6-a", topicId: "maths-4-1", conceptId: "write-down-descending-powers-first-terms",
     section: "B", questionRef: "2025 HL Paper 1 Q6(a)",
@@ -10050,7 +10050,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q6-b-i", topicId: "maths-4-2", conceptId: "equation-has-exactly-one-solution",
     section: "B", questionRef: "2025 HL Paper 1 Q6(b)(i)",
@@ -10080,7 +10080,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q6-b-ii", topicId: "maths-4-2", conceptId: "fact-value-solution",
     section: "B", questionRef: "2025 HL Paper 1 Q6(b)(ii)",
@@ -10101,7 +10101,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p019-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p019-i0.png",
           "srcHash": "58ccfadf0992ff473719e137d1ffcbea",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 xx = (−bb ± √0)/2aa = 4(9mm)/2(6mm) = 3 Method 2 6mx² −36m + 54m = 0 x² −6x + 9 = 0 (x−3)² = 0 x = 3 Method 3 One solution, 𝛼⇒h′(𝛼) = 0 h′(𝛼) = 12m−4r 12m−4r = 0 12m−36m = 0 𝛼−3 = 0 𝛼= 3 Method 4 Sum of roots: Product of roots: 𝛼𝛼² = 54mm/6mm 2𝛼𝛼 = 4rr/6mm = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 xx = (−bb ± √0)/2aa = 4(9mm)/2(6mm) = 3 Method 2 6mx² −36m + 54m = 0 x² −6x + 9 = 0 (x−3)² = 0 x = 3 Method 3 One solution, 𝛼⇒h′(𝛼) = 0 h′(𝛼) = 12m−4r 12m−4r = 0 12m−36m = 0 𝛼−3 = 0 𝛼= 3 Method 4 Sum of roots: Product of roots: 𝛼² = 54mm/6mm 2𝛼 = 4rr/6mm = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -10110,7 +10110,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q7-a-i", topicId: "maths-4-1", conceptId: "values-table-value-write-values-into",
     section: "B", questionRef: "2025 HL Paper 1 Q7(a)(i)",
@@ -10140,7 +10140,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q7-a-ii", topicId: "maths-3-1", conceptId: "expression",
     section: "B", questionRef: "2025 HL Paper 1 Q7(a)(ii), (iii)",
@@ -10170,7 +10170,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q7-a-iv", topicId: "maths-3-1", conceptId: "total-length-silk-needed-make-stage",
     section: "B", questionRef: "2025 HL Paper 1 Q7(a)(iv)",
@@ -10200,7 +10200,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q7-a-v", topicId: "maths-4-2", conceptId: "stage-first-stage-which-total-length",
     section: "B", questionRef: "2025 HL Paper 1 Q7(a)(v)",
@@ -10230,7 +10230,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q7-b-i", topicId: "maths-3-1", conceptId: "length",
     section: "B", questionRef: "2025 HL Paper 1 Q7(b)(i), (ii)",
@@ -10243,7 +10243,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p1-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q7-b-ii.png",
           "srcHash": "9d9b8e4721b9dddd6511529d41316bdb",
-          "alt": "The question as printed on the paper — Spiders build webs out of silk. This question involves two different models of how a spider might build its web. The functions in each model give lengths in centimetres. (b) In the second model, the web is made 𝑂𝑂3 in la",
+          "alt": "The question as printed on the paper — Spiders build webs out of silk. This question involves two different models of how a spider might build its web. The functions in each model give lengths in centimetres. (b) In the second model, the web is made 𝑂3 in… Full card prompt: Find the length of O₃",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10260,7 +10260,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q7-b-iii", topicId: "maths-3-1", conceptId: "iii-there-exactly-orbitals-each-lap",
     section: "B", questionRef: "2025 HL Paper 1 Q7(b)(iii)",
@@ -10290,7 +10290,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q8-a", topicId: "maths-3-3", conceptId: "jacob-buys-new-kayak-shop-kayak",
     section: "B", questionRef: "2025 HL Paper 1 Q8(a)",
@@ -10320,7 +10320,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q8-b", topicId: "maths-3-3", conceptId: "jacob-buys-paddle-online-paddle-costs",
     section: "B", questionRef: "2025 HL Paper 1 Q8(b)",
@@ -10350,7 +10350,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q8-c", topicId: "maths-3-3", conceptId: "how-long-would-take-jacob-total",
     section: "B", questionRef: "2025 HL Paper 1 Q8(c), (d)",
@@ -10380,7 +10380,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q8-e-i", topicId: "maths-4-1", conceptId: "expression-total-time-hours-will-take",
     section: "B", questionRef: "2025 HL Paper 1 Q8(e)(i)",
@@ -10410,7 +10410,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q8-e-ii", topicId: "maths-5-2", conceptId: "jacob-knows-there-one-value-which",
     section: "B", questionRef: "2025 HL Paper 1 Q8(e)(ii)",
@@ -10440,7 +10440,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q8-e-iii", topicId: "maths-5-2", conceptId: "iii-there-other-values-which-apart",
     section: "B", questionRef: "2025 HL Paper 1 Q8(e)(iii)",
@@ -10470,7 +10470,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q9-a-i", topicId: "maths-5-2", conceptId: "there-difference-between-fuel-consumption-when",
     section: "B", questionRef: "2025 HL Paper 1 Q9(a)(i)",
@@ -10500,7 +10500,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q9-a-ii", topicId: "maths-5-2", conceptId: "expression-rate-change-fuel-consumption-respect",
     section: "B", questionRef: "2025 HL Paper 1 Q9(a)(ii), (iii)",
@@ -10530,7 +10530,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q9-a-iv", topicId: "maths-5-2", conceptId: "rate-change-car-speed-respect-time",
     section: "B", questionRef: "2025 HL Paper 1 Q9(a)(iv)",
@@ -10560,7 +10560,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q9-a-v", topicId: "maths-5-2", conceptId: "answers-parts-iii-rate-change-car",
     section: "B", questionRef: "2025 HL Paper 1 Q9(a)(v)",
@@ -10590,7 +10590,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q9-b-i", topicId: "maths-5-2", conceptId: "fill-table-values-given-values-each",
     section: "B", questionRef: "2025 HL Paper 1 Q9(b)(i), (ii)",
@@ -10603,7 +10603,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p1-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-b-i.png",
           "srcHash": "baebe6a125a21e15ef8c9c5bd5127cc4",
-          "alt": "The question as printed on the paper — Dani drives a car. Over the first 8 seconds that Dani is driving her car, the car’s speed, in km/hour, can be approximated using the following function v(t): 8e^(0∙4t)−8 , 0 ≤ t ≤ 4 v(t) = ൝ −t² + 24t−48∙4 , 4 < t ≤ 8… Full card prompt: Fill in the table below to show the values of v(t) for the given values of t, up to t = 8. Give each value correct to 1 decimal place, where appropriate",
+          "alt": "The question as printed on the paper — Dani drives a car. Over the first 8 seconds that Dani is driving her car, the car’s speed, in km/hour, can be approximated using the following function v(t): 8e^(0∙4t)−8 , 0 ≤ t ≤ 4 v(t) = { −t² + 24t−48∙4 , 4 < t ≤ 8… Full card prompt: Fill in the table below to show the values of v(t) for the given values of t, up to t = 8. Give each value correct to 1 decimal place, where appropriate",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10620,7 +10620,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q9-b-iii", topicId: "maths-5-2", conceptId: "iii-integration-24t-average-speed-dani",
     section: "B", questionRef: "2025 HL Paper 1 Q9(b)(iii)",
@@ -10633,7 +10633,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p1-q9-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-b-iii.png",
           "srcHash": "74a5fbb566d81ddebf2a2c88638f323b",
-          "alt": "The question as printed on the paper — Dani drives a car. Over the first 8 seconds that Dani is driving her car, the car’s speed, in km/hour, can be approximated using the following function v(t): 8e^(0∙4t)−8 , 0 ≤ t ≤ 4 v(t) = ൝ −t² + 24t−48∙4 , 4 < t ≤ 8… Full card prompt: (iii) Use integration, and v(t) = −t² + 24t−48∙4, to find the average speed of Dani’s car for 4 < t ≤ 8",
+          "alt": "The question as printed on the paper — Dani drives a car. Over the first 8 seconds that Dani is driving her car, the car’s speed, in km/hour, can be approximated using the following function v(t): 8e^(0∙4t)−8 , 0 ≤ t ≤ 4 v(t) = { −t² + 24t−48∙4 , 4 < t ≤ 8… Full card prompt: (iii) Use integration, and v(t) = −t² + 24t−48∙4, to find the average speed of Dani’s car for 4 < t ≤ 8",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10650,7 +10650,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q10-a", topicId: "maths-2-2", conceptId: "dots-pattern-shown-ordinate-diagram-draw",
     section: "B", questionRef: "2025 HL Paper 1 Q10(a)",
@@ -10680,7 +10680,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q10-b", topicId: "maths-2-2", conceptId: "pattern-2000-there-points-distance-2000",
     section: "B", questionRef: "2025 HL Paper 1 Q10(b), (c)",
@@ -10710,7 +10710,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q10-d-i", topicId: "maths-4-1", conceptId: "rearrange-formula-write-terms",
     section: "B", questionRef: "2025 HL Paper 1 Q10(d)(i)",
@@ -10740,7 +10740,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q10-d-ii", topicId: "maths-4-1", conceptId: "substituting-into-expression-2tt-4tt",
     section: "B", questionRef: "2025 HL Paper 1 Q10(d)(ii)",
@@ -10770,7 +10770,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q10-d-iii", topicId: "maths-4-1", conceptId: "value-which-given-lim-4t2",
     section: "B", questionRef: "2025 HL Paper 1 Q10(d)(iii)",
@@ -10800,7 +10800,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p1-q10-e-i", topicId: "maths-4-1", conceptId: "write-down-value",
     section: "B", questionRef: "2025 HL Paper 1 Q10(e)(i), (ii)",
@@ -10830,11 +10830,11 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q1-a", topicId: "maths-2-2", conceptId: "constant-point-lies-line-value",
     section: "B", questionRef: "2025 HL Paper 2 Q1(a)",
-    questionText: "p∈ℝ is a constant. The point (p, 5) lies on the line 3x−2y + 28 = 0. Find the value of p. p = ____________",
+    questionText: "p∈ℝ is a constant. The point (p, 5) lies on the line 3x−2y + 28 = 0. Find the value of p. p =",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example, 5 subbed in for y, or p subbed in for x\nRelevant work to isolate p\nFinds the slope of the line or another point on the line", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: If equation is not solved algebraically, “supporting work” would be, for example, (−6, 5) subbed into the equation and fully verified. Note: Accept x used in place of p If 5 is substituted for x and p for y, award High Partial Credit at most. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 5 subbed in for y, or p subbed in for x\nRelevant work to isolate p\nFinds the slope of the line or another point on the line","One error, otherwise correct"],"perOptionSteps":[2,3]} },
@@ -10860,14 +10860,14 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q1-b", topicId: "maths-2-2", conceptId: "line-has-equation-line-has-equation",
     section: "B", questionRef: "2025 HL Paper 2 Q1(b)",
     questionText: "The line l has equation y= − 1 3 x+ 11. The line h has equation 2x−5y + 10 = 0. Work out the size of the acute angle between the lines l and h. Give your answer correct to the nearest degree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Finds m_l", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit –1: Finds both acute and obtuse angles, doesn’t specify which is the answer; Apply a * for incorrect rounding. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Method 1. Note: For Step 3, accept substitution without ± Step 1. Finds m_l Step 2. Finds m_h Step 3. Subs in formula Step 4. Finds 𝜃 Method 2 Step 1. Finds m_l Step 2. Finds m_h Step 3. Finds 161 ∙56 …⁰ and 21 ∙8 …⁰ Step 4. Finds 𝜃 Method 3 Step 1. Finds m_l Step 2. Finds m_h Step 3. 𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5 Step 4. Finds 𝜃. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds m_l","Finds m_h","Subs in formula","Finds m_l","Finds m_h","Finds 161 ∙56 …⁰ and 21 ∙8 …⁰","Finds m_l","Finds m_h","𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5"],"perOptionSteps":[3,2,2,3]} },
+    { id: "maths-2025-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Finds m_l", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit –1: Finds both acute and obtuse angles, doesn’t specify which is the answer; Apply a * for incorrect rounding. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Method 1. Note: For Step 3, accept substitution without ± Step 1. Finds m_l Step 2. Finds m_h Step 3. Subs in formula Step 4. Finds 𝜃 Method 2 Step 1. Finds m_l Step 2. Finds m_h Step 3. Finds 161 ∙56 …⁰ and 21 ∙8 …⁰ Step 4. Finds 𝜃 Method 3 Step 1. Finds m_l Step 2. Finds m_h Step 3. 𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5 Step 4. Finds 𝜃. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds m_l","Finds m_h","Subs in formula","Finds m_l","Finds m_h","Finds 161 ∙56 …⁰ and 21 ∙8 …⁰","Finds m_l","Finds m_h","𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5"],"perOptionSteps":[3,2,2,3]} },
     ],
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q1-b",
@@ -10881,7 +10881,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p042-i0.png",
           "srcHash": "20637a75985c45145c508a8c1fc8e66f",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 mm_l_l = − 1/3 mm_h = 2/5 tan 𝜃𝜃 = ± − 1/3 − 2/5 tan 𝜃𝜃 = ± (3 5)/(1 (2) 1 + (− 3) 5) 1 + (− 1/3) (2/5) tan 𝜃𝜃 = ± (−11)/13 𝜃= 40∙2 … ° = 40[°][∈ℕ] Method 2 mm_l_l = − 1/3 mm_h = 2/5 tan^(−1) (−1 3) = 161 ∙56 …⁰ tan^−¹ (2/5) = 21 ∙ 80 …⁰ 𝛼= 161 ∙56 …⁰ −21 ∙80 …⁰ = 139 ∙76 … ° 𝜃= 180⁰ −139 ∙76 …⁰ = 40∙24 … ° = 40[°][∈ℕ] Method 3 𝜃𝜃 = tan^−¹ 1/3 + tan^−¹ 2/5 = 40 ∙2 … = 40[°][∈ℕ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 mm_l_l = − 1/3 mm_h = 2/5 tan 𝜃 = ± − 1/3 − 2/5 tan 𝜃 = ± (3 5)/(1 (2) 1 + (− 3) 5) 1 + (− 1/3) (2/5) tan 𝜃 = ± (−11)/13 𝜃= 40∙2 … ° = 40[°][∈ℕ] Method 2 mm_l_l = − 1/3 mm_h = 2/5 tan^(−1) (−1 3) = 161 ∙56 …⁰ tan^−¹ (2/5) = 21 ∙ 80 …⁰ 𝛼= 161 ∙56 …⁰ −21 ∙80 …⁰ = 139 ∙76 … ° 𝜃= 180⁰ −139 ∙76 …⁰ = 40∙24 … ° = 40[°][∈ℕ] Method 3 𝜃 = tan^−¹ 1/3 + tan^−¹ 2/5 = 40 ∙2 … = 40[°][∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -10890,7 +10890,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q1-c", topicId: "maths-3-1", conceptId: "line-cuts-axis-point-axis",
     section: "B", questionRef: "2025 HL Paper 2 Q1(c)",
@@ -10920,7 +10920,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q2-a-i", topicId: "maths-2-2", conceptId: "write-down-centre-radius-circle",
     section: "B", questionRef: "2025 HL Paper 2 Q2(a)(i)",
@@ -10950,7 +10950,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q2-b", topicId: "maths-3-1", conceptId: "circle-has-equation-constant-28x-46y",
     section: "B", questionRef: "2025 HL Paper 2 Q2(b)",
@@ -10980,7 +10980,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q3-a-i", topicId: "maths-1-2", conceptId: "part",
     section: "B", questionRef: "2025 HL Paper 2 Q3(a)(i)",
@@ -11010,7 +11010,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q3-a-ii", topicId: "maths-1-2", conceptId: "verify-values-diagram",
     section: "B", questionRef: "2025 HL Paper 2 Q3(a)(ii)",
@@ -11040,7 +11040,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q3-a-iii", topicId: "maths-1-2", conceptId: "iii-independent-events-calculations-justify",
     section: "B", questionRef: "2025 HL Paper 2 Q3(a)(iii)",
@@ -11070,7 +11070,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q4-a-i", topicId: "maths-1-6", conceptId: "median-age-value",
     section: "B", questionRef: "2025 HL Paper 2 Q4(a)(i), (ii)",
@@ -11100,7 +11100,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q4-b", topicId: "maths-1-6", conceptId: "michael-finds-mean-median-list-numbers",
     section: "B", questionRef: "2025 HL Paper 2 Q4(b)",
@@ -11130,7 +11130,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q4-c", topicId: "maths-3-1", conceptId: "frequency-table-shows-ages-people-another",
     section: "B", questionRef: "2025 HL Paper 2 Q4(c)",
@@ -11160,7 +11160,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q5-a", topicId: "maths-2-2", conceptId: "diagram-shows-two-triangles-midpoint-parallel",
     section: "B", questionRef: "2025 HL Paper 2 Q5(a)",
@@ -11190,7 +11190,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q5-b-i", topicId: "maths-2-2", conceptId: "part",
     section: "B", questionRef: "2025 HL Paper 2 Q5(b)(i)",
@@ -11220,7 +11220,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q5-b-ii", topicId: "maths-2-2", conceptId: "shown-again-diagram-right",
     section: "B", questionRef: "2025 HL Paper 2 Q5(b)(ii)",
@@ -11250,7 +11250,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q6-a", topicId: "maths-2-3", conceptId: "all-six-solutions-equation-360-720",
     section: "B", questionRef: "2025 HL Paper 2 Q6(a)",
@@ -11280,7 +11280,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q6-b", topicId: "maths-2-3", conceptId: "function-radians-sin-part-graph-shown",
     section: "B", questionRef: "2025 HL Paper 2 Q6(b)",
@@ -11301,7 +11301,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p054-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p054-i1.png",
           "srcHash": "847c2b0b6796c98e39d2275daff7fe45",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it. It reads: (b) Period = 1/2 (2𝜋𝜋) = 𝜋𝜋 [radians] Range: |sin x| has a range of [0, 1] |4 sinx| has a range of [0, 4] |4 sinx| −1 has a range of [−1, 3]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it. It reads: (b) Period = 1/2 (2𝜋) = 𝜋 [radians] Range: |sin x| has a range of [0, 1] |4 sinx| has a range of [0, 4] |4 sinx| −1 has a range of [−1, 3]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -11310,11 +11310,11 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q6-c", topicId: "maths-2-3", conceptId: "triangle-cosine-rule-value-tan-without",
     section: "B", questionRef: "2025 HL Paper 2 Q6(c)",
-    questionText: "In the triangle A, |A| = 2, |B| = 3, and |A| = 4. C 2 3 A B 4 Use the Cosine Rule to find the value of tan ∠C, without using a calculator. Give your answer in the form √n m , where n, m∈ℤ. Show all your working out. tan ∠C= __________ Section B Contexts and Applications 150 marks",
+    questionText: "In the triangle A, |A| = 2, |B| = 3, and |A| = 4. C 2 3 A B 4 Use the Cosine Rule to find the value of tan ∠C, without using a calculator. Give your answer in the form √n m , where n, m∈ℤ. Show all your working out. tan ∠C=",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p2-q6-c-r1", kind: "anyN", verbatim: "Fills in cosine rule", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Consider the solution as consisting of 3 steps: Step 1. Fills in cosine rule Step 2. Finds c∠C Step 3. Finds t∠C The theorem of Pythagoras must be used in Step 3, for Step 3 to be considered correct. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Fills in cosine rule","Finds c∠C","Finds t∠C"],"perOptionSteps":[3,2,5]} },
@@ -11323,7 +11323,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p2-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q6-c.png",
           "srcHash": "5fa49b976bd32a93eb2c6fe540a35334",
-          "alt": "The question as printed on the paper — In the triangle A, |A| = 2, |B| = 3, and |A| = 4. 3 2 4 Use the Cosine Rule to find the value/^√ⁿⁿ of tan ∠CCCCCC, without using a calculator. Give your answer in the form ^(√n) Give your answer in the form ^√ⁿⁿ/mm ,… Full card prompt: In the triangle A, |A| = 2, |B| = 3, and |A| = 4. C 2 3 A B 4 Use the Cosine Rule to find the value of tan ∠C, without using a calculator. Give your answer in the form √n m , where n, m∈ℤ. Show all your working out. tan ∠C= __________ Section B Contexts and Applications 150 marks",
+          "alt": "The question as printed on the paper — In the triangle A, |A| = 2, |B| = 3, and |A| = 4. 3 2 4 Use the Cosine Rule to find the value/^√ⁿⁿ of tan ∠CCCCCC, without using a calculator. Give your answer in the form ^(√n) Give your answer in the form ^√ⁿⁿ/mm ,… Full card prompt: In the triangle A, |A| = 2, |B| = 3, and |A| = 4. C 2 3 A B 4 Use the Cosine Rule to find the value of tan ∠C, without using a calculator. Give your answer in the form √n m , where n, m∈ℤ. Show all your working out. tan ∠C=",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -11340,7 +11340,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q7-a-i", topicId: "maths-2-3", conceptId: "measure-lengths-labelled-diagram-write-length",
     section: "B", questionRef: "2025 HL Paper 2 Q7(a)(i), (ii)",
@@ -11370,7 +11370,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q7-b", topicId: "maths-3-4", conceptId: "diagram-shows-body-different-submarine-similar",
     section: "B", questionRef: "2025 HL Paper 2 Q7(b)",
@@ -11400,7 +11400,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q7-c-i", topicId: "maths-2-2", conceptId: "write-down-equation-circle",
     section: "B", questionRef: "2025 HL Paper 2 Q7(c)(i), (ii)",
@@ -11430,7 +11430,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q7-c-iii", topicId: "maths-2-3", conceptId: "iii-using-area-triangle",
     section: "B", questionRef: "2025 HL Paper 2 Q7(c)(iii)",
@@ -11460,7 +11460,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q7-c-iv", topicId: "maths-2-3", conceptId: "size-acute-angle-correct-nearest-degree",
     section: "B", questionRef: "2025 HL Paper 2 Q7(c)(iv)",
@@ -11490,7 +11490,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q7-c-v", topicId: "maths-2-3", conceptId: "area-sector-circle-4837-correct-decimal",
     section: "B", questionRef: "2025 HL Paper 2 Q7(c)(v)",
@@ -11511,7 +11511,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p059-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p059-i0.png",
           "srcHash": "468e1d6261bacc053553a50c39ed7a43",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(v), typeset as the State Examinations Commission set it. It reads: (c)(v) Method 1 Area sector CCCCCC = 26/360 𝜋𝜋(√178) 2 = 40 ∙3869 … Sector −∆C = 40·3869 … −39 = 1·3869 … Sector −∆A = 23·4837 −21 = 2·4837 Total shaded area = 1·3869 … + 2·4837 … = 3 ∙87[km²][2 D. P. ] Method 2 Area sector CCCCCC = 26/360 𝜋𝜋(√178) 2 = 40 ∙3869 … Total shaded area: 40·3869 … + 23·4837 −39 −21 = 3∙87 [km₂] [2 D.P.] Method 3 |∠CCCCCC| = 13𝜋𝜋/90 Area of sector CCCCCC = 1/2 (√178) 2 13𝜋𝜋/90 = 40∙3869 … T",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(v), typeset as the State Examinations Commission set it. It reads: (c)(v) Method 1 Area sector CCCCCC = 26/360 𝜋(√178) 2 = 40 ∙3869 … Sector −∆C = 40·3869 … −39 = 1·3869 … Sector −∆A = 23·4837 −21 = 2·4837 Total shaded area = 1·3869 … + 2·4837 … = 3 ∙87[km²][2 D. P. ] Method 2 Area sector CCCCCC = 26/360 𝜋(√178) 2 = 40 ∙3869 … Total shaded area: 40·3869 … + 23·4837 −39 −21 = 3∙87 [km₂] [2 D.P.] Method 3 |∠CCCCCC| = 13𝜋/90 Area of sector CCCCCC = 1/2 (√178) 2 13𝜋/90 = 40∙3869 … T",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -11520,7 +11520,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q8-a-i", topicId: "maths-2-1", conceptId: "oooo-theorem-pythagoras-value-theorem-pythagoras",
     section: "B", questionRef: "2025 HL Paper 2 Q8(a)(i)",
@@ -11550,7 +11550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q8-a-ii", topicId: "maths-2-3", conceptId: "triangular-face-size-correct-decimal-place",
     section: "B", questionRef: "2025 HL Paper 2 Q8(a)(ii)",
@@ -11580,7 +11580,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q8-a-iii", topicId: "maths-2-3", conceptId: "iii-diagram-shows-part-scaled-diagram",
     section: "B", questionRef: "2025 HL Paper 2 Q8(a)(iii)",
@@ -11610,7 +11610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q8-b", topicId: "maths-2-3", conceptId: "diagram-right-represents-flagpole",
     section: "B", questionRef: "2025 HL Paper 2 Q8(b)",
@@ -11640,7 +11640,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q8-c-i", topicId: "maths-2-3", conceptId: "sine-rule-correct-decimal-place",
     section: "B", questionRef: "2025 HL Paper 2 Q8(c)(i)",
@@ -11670,7 +11670,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q8-c-ii", topicId: "maths-2-3", conceptId: "total-height-tower-marked-diagram-previous",
     section: "B", questionRef: "2025 HL Paper 2 Q8(c)(ii)",
@@ -11700,7 +11700,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q9-a-iii", topicId: "maths-1-2", conceptId: "iii-probability-person-picked-random-tests",
     section: "B", questionRef: "2025 HL Paper 2 Q9(a)(iii), (iv)",
@@ -11730,7 +11730,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q9-c-i", topicId: "maths-1-2", conceptId: "how-many-different-combinations-people-can",
     section: "B", questionRef: "2025 HL Paper 2 Q9(c)(i)",
@@ -11760,7 +11760,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q9-c-ii", topicId: "maths-1-2", conceptId: "each-person-group-now-paired-person",
     section: "B", questionRef: "2025 HL Paper 2 Q9(c)(ii)",
@@ -11790,7 +11790,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q10-a-i", topicId: "maths-1-2", conceptId: "scaled-diagram-shows-distribution-scores-test",
     section: "B", questionRef: "2025 HL Paper 2 Q10(a)(i)",
@@ -11820,7 +11820,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q10-a-ii", topicId: "maths-1-2", conceptId: "normal-distribution-work-out-proportion-students",
     section: "B", questionRef: "2025 HL Paper 2 Q10(a)(ii)",
@@ -11841,7 +11841,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p068-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p068-i1.png",
           "srcHash": "3caa84a845930095ae659e9670e29d0e",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) zz = (xx − 𝜇𝜇)/𝜎𝜎 zz = (420 − 400)/60 = 1/3 = 0∙33 1 −P(z < 0∙33) = 1 −0∙6293 = 0.3707 = 0.37 [2 D. P. ] or accept: 1 −P(z < 0∙34) = 1 −0∙6331 = 0.3669 = 0.37 [2 D. P. ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) zz = (xx − 𝜇)/𝜎 zz = (420 − 400)/60 = 1/3 = 0∙33 1 −P(z < 0∙33) = 1 −0∙6293 = 0.3707 = 0.37 [2 D. P. ] or accept: 1 −P(z < 0∙34) = 1 −0∙6331 = 0.3669 = 0.37 [2 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -11850,7 +11850,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q10-b", topicId: "maths-1-6", conceptId: "using-values-table-construct-confidence-interval",
     section: "B", questionRef: "2025 HL Paper 2 Q10(b)",
@@ -11880,7 +11880,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q10-c-i", topicId: "maths-1-6", conceptId: "using-values-table-work-out-test",
     section: "B", questionRef: "2025 HL Paper 2 Q10(c)(i), (ii)",
@@ -11910,7 +11910,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q10-d", topicId: "maths-1-2", conceptId: "country-all-students-have-pet-their",
     section: "B", questionRef: "2025 HL Paper 2 Q10(d)",
@@ -11940,7 +11940,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
-    paperFileid: null,
+    paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q10-e", topicId: "maths-1-2", conceptId: "one-questions-test-students-given-mark",
     section: "B", questionRef: "2025 HL Paper 2 Q10(e)",

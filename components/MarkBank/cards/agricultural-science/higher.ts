@@ -190,12 +190,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q6ai", topicId: "agsci-3-1", conceptId: "site-of-respiration",
     section: "A", questionRef: "2021 HL Q6(a)(i)",
-    stem: "The paper prints three tick boxes: Ribosome, Mitochondria, Chloroplast.",
     questionText: "Identify the part of the plant where respiration takes place by placing a tick (✓) in the correct box.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "gate", verbatim: "Mitochondria*", marks: 2, contextNote: "The asterisk means only this exact term scores; a second box ticked alongside it is a surplus wrong answer and cancels this row." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -666,13 +675,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q1biii-iv", topicId: "agsci-2-3", conceptId: "slurry-spreading-timing-and-weather",
     section: "A", questionRef: "2022 HL Q1(b)(iii)–(iv)",
-    stem: "Answer either (a) or (b). This card is part (b).",
     questionText: "(iii) Identify the ideal timing and weather conditions for spreading slurry for optimum nutrient usage and protection of the environment by placing a tick in the correct box: In spring on an overcast and windy day / In spring on an overcast and misty day / In summer on a warm and windy day. (iv) Justify your answer in part (iii).",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "gate", verbatim: "In spring on an overcast and misty day*", marks: 1, contextNote: "SEC asterisk: only this exact option scores — no synonym or near-miss — and a surplus wrong tick cancels this row's mark." },
     { id: "r-2", kind: "point", verbatim: "Reduces emissions or decreased volatilisation due to decreased conversion to ammonia gas", marks: 1, accepts: ["soil is damp to retain ammonia quicker","sward demand for N is high","more of the organic nitrogen will be mineralised (converted) to nitrate with rising temperatures throughout the growing season"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -739,12 +757,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q4a", topicId: "agsci-4-3-3", conceptId: "pathogenic",
     section: "A", questionRef: "2022 HL Q4(a)",
-    stem: "Read the article and answer the questions which follow. 'Avian flu detected in turkey flock in Co. Monaghan — Avian influenza (H5N1) has been detected in a turkey flock in County Monaghan, the Department of Agriculture, Food and the Marine has confirmed. Restriction zones are being set up around the area. This highly pathogenic bird flu has already been confirmed in wild birds across the country.' (Adapted from RTE.ie, 2021) [The term underlined on the paper is: pathogenic]",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Disease causing (organism)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1012,13 +1039,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q9bi", topicId: "agsci-4-1", conceptId: "rumen-microorganism-roles",
     section: "A", questionRef: "2022 HL Q9(b)(i)",
-    stem: "Answer either (a) or (b). (b) Read the article on the SEASOLUTIONS Project and answer the questions which follow. 'Reducing methane emissions from ruminants is one of the biggest challenges to face the agricultural sector in the last decade. The SEASOLUTIONS Project is committed to making a positive impact on methane emissions in agriculture. By using seaweeds and seaweed derived ingredients to positively affect the rumen and rumen microbiota to reduce methane emissions and improve ruminant health. By adding seaweed components to the feed of sheep and cattle indoors on high grain based diets, Irish researchers have reduced methane production by 20%. A critical aspect of this project is to test such seaweed supplements within the context of a pasture‐based production system.' (Adapted from SEASOLUTIONS.ie and Teagasc, 2021)",
     questionText: "Outline two roles of micro‐organisms in the ruminant stomach.",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Fibre (cellulose) degradation or breakdown cellulose", marks: 2, accepts: ["produce vitamin B or K","production of fatty acids","breakdown of nutrients","methane production","convert non‐protein nitrogen (or named) to ammonia","microbes are a protein source at the end of their life cycles"], contextNote: "Any two roles score, 2 marks each." },
     { id: "r-2", kind: "point", verbatim: "protein or amino acid production", marks: 2, accepts: ["produce vitamin B or K","production of fatty acids","breakdown of nutrients","methane production","convert non‐protein nitrogen (or named) to ammonia","microbes are a protein source at the end of their life cycles"], contextNote: "Any two roles score, 2 marks each." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1055,12 +1091,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q10a", topicId: "agsci-3-2", conceptId: "catch-and-energy-crop-lifecycles",
     section: "A", questionRef: "2022 HL Q10(a)",
-    stem: "In relation to a named catch or energy crop you have studied answer the questions which follow. (The paper asks you to write your named crop first.)",
     questionText: "Identify the type of lifecycle which best describes your chosen crop by placing a tick in the correct box: Annual / Biennial / Perennial.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Kale – biennial", marks: 2, accepts: ["Miscanthus – perennial","OSR – annual"], contextNote: "The lifecycle must match the crop you named. The scheme allows any other valid named catch or energy crop.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1099,13 +1144,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q11ai", topicId: "agsci-3-1", conceptId: "root-hairs-and-active-transport",
     section: "A", questionRef: "2022 HL Q11(a)(i)",
-    stem: "Answer either (a) or (b). (a) A plant has specialised structures which absorb nutrients through a specific process from the soil solution.",
     questionText: "Complete the table by stating the name of each of the following involved in nutrient absorption from the soil: Plant structure; Process involved.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Plant structure: Root hairs", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Process: Active transport", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1323,12 +1377,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q1aii", topicId: "agsci-4-2", conceptId: "dual-purpose-breed",
     section: "A", questionRef: "2023 HL Q1(a)(ii)",
-    stem: "Answer either (a) or (b). Part (i) shows photographs of three cattle breeds labelled A, B and C; breed C is the Simmental, named in part (i). The term underlined in the paper is 'dual-purpose breed'.",
     questionText: "Breed C is a dual-purpose breed. Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Dual-purpose breed is an animal breed that provides at least 2", marks: 2, contextNote: "The scheme's sentence runs on: '…at least 2 kinds of resources (e.g. meat, eggs, milk)'. The 2-mark award is printed between the two lines in the extracted scheme, which is why the row text stops where it does." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1351,13 +1414,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q1bii", topicId: "agsci-4-3-1", conceptId: "breed-suitability-to-enterprise",
     section: "A", questionRef: "2023 HL Q1(b)(ii)",
-    stem: "Answer either (a) or (b). Read the article and answer the questions which follow. Fleckvieh Cattle — This Austrian breed is renowned for exceptional fertility, longevity, calving ease, a low somatic cell count, strong feet, and overall good health traits. This breed reportedly milks roughly 6,000kg in their first lactation and over 7,000kg in their later lactations. They have an estimated milk fat of 4.2% and protein of 3.7%. (Adapted from thatsfarming.com, 2020)",
     questionText: "Using evidence from the article, suggest which Irish cattle industry this breed is most suited.",
     tariffModel: {"kind":"fixed","notation":"2 + 2"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Industry: Dairy", marks: 2 },
     { id: "r-2", kind: "alt", verbatim: "Evidence: Exceptional fertility", marks: 2, accepts: ["longevity","calving ease","a low somatic cell count","strong feet","overall good health traits","high milk yield (6,000kgs in their first lactation and over 7,000kgs in their later lactations)","good milk quality (estimated milk fat of 4.2% and protein of 3.7%)"], contextNote: "One piece of evidence quoted from the article earns the 2 marks; the solidus list is alternatives, not extra points." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1596,12 +1668,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q9ai", topicId: "agsci-3-3-2", conceptId: "pre-emergence-hoeing",
     section: "A", questionRef: "2023 HL Q9(a)(i)",
-    stem: "Answer either (a) or (b). Read the article and answer the questions which follow. The Farmdroid has landed in Ireland — The Farmdroid, which won the National Ploughing Championship 2022 machine of the year is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding. The core principle of the machine is that it relies on GPS location data to go about its daily tasks. The tasks of sowing and mechanical weed control in crops are guided by precision GPS. Using this GPS, the Farmdroid can sow the seeds far enough apart to note and record where each individual seed has been planted in a field. The company claims that accuracy is to within 8mm, allowing even pre-emergence hoeing of the soil both between the rows and in between the plants themselves in most crops. (Adapted from Agriland, 2022) The term underlined in the article is 'pre-emergence hoeing'.",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Controlling of weeds prior to the germination of the crop", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1844,12 +1925,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q2bi", topicId: "agsci-4-1", conceptId: "negative-energy-balance",
     section: "A", questionRef: "2024 HL Q2(b)(i)",
-    stem: "Answer either (a) or (b). Read the article and answer the questions that follow.\n\nThe Irish Moiled is one of the rarest Irish cattle breeds. It is a hornless medium sized breed with a mature cow weighing up to 650kg. Traditionally a dairy cow with yields of up to 5000 litres, it has earned the reputation as a truly dual purpose breed. In the suckler herd the cow will go into a negative energy balance to ensure the calf gets the best start in life.\nThey are generally easy to handle with a placid docile temperament. Surplus males sell well as steers finishing between 20-24 months on good quality forage diet to carcass weights from 220-260kg. The beef is of superb quality with a distinctive flavour.\nThe cow can be relied upon to produce a calf every 12 months if kept in good health and body condition. They will calve to a continental bull without difficulty and will continue to breed satisfactorily until at least ten years of age.\nTradition has it that they are 'big bellied' to consume and digest large quantities of poorer quality forage which was their traditional diet. They can be termed 'ready browsers' because they will graze willow, ash and ivy, which makes them ideal in extensive or conservation grazing situations.\nThey are sound in hoof and leg and at home on most types of terrain. They grow a thick winter coat and out-winter happily although being a heavy animal they will poach soft ground.\n(Adapted from thecattlesite.com)\n\nThe underlined term in the article is negative energy balance.",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Occurs when a cow cannot get sufficient energy from her diet", marks: 3, accepts: ["balance the amount of energy required for milk production"], contextNote: "The scheme's full sentence is \"Occurs when a cow cannot get sufficient energy from her diet to balance the amount of energy required for milk production.\" The mark column is typeset between the two lines, so the traceable run stops at \"her diet\"; the second half must still be present in the answer." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1872,13 +1962,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q2biii", topicId: "agsci-4-3-1", conceptId: "sustainable-breed-choice",
     section: "A", questionRef: "2024 HL Q2(b)(iii)",
-    stem: "Answer either (a) or (b).\n(b) Read the article and answer the questions that follow.\nThe Irish Moiled is one of the rarest Irish cattle breeds. It is a hornless medium sized breed with a mature cow weighing up to 650kg. Traditionally a dairy cow with yields of up to 5000 litres, it has earned the reputation as a truly dual purpose breed. In the suckler herd the cow will go into a negative energy balance to ensure the calf gets the best start in life.\nThey are generally easy to handle with a placid docile temperament. Surplus males sell well as steers finishing between 20-24 months on good quality forage diet to carcass weights from 220-260kg. The beef is of superb quality with a distinctive flavour.\nThe cow can be relied upon to produce a calf every 12 months if kept in good health and body condition. They will calve to a continental bull without difficulty and will continue to breed satisfactorily until at least ten years of age.\nTradition has it that they are 'big bellied' to consume and digest large quantities of poorer quality forage which was their traditional diet. They can be termed 'ready browsers' because they will graze willow, ash and ivy, which makes them ideal in extensive or conservation grazing situations.\nThey are sound in hoof and leg and at home on most types of terrain. They grow a thick winter coat and out-winter happily although being a heavy animal they will poach soft ground. (Adapted from thecattlesite.com)\nGive your answer as a characteristic and a description. The first one has been done as an example - Characteristic: 'Medium size cow'; Description: 'High producing cow without requiring large amounts of feed'.",
     questionText: "Describe one characteristic of the Irish Moiled which makes them a sustainable breed choice on Irish farms.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Early maturing", marks: 2, accepts: ["very fertile","easy calving","hardy or ready","polled (hornless)","dual purpose","docile"], contextNote: "2 marks for naming a characteristic. The scheme's list: early maturing / very fertile / longevity / easy calving / hardy or ready browsers / polled (hornless) / dual purpose / docile. (\"longevity\" and \"hardy or ready browsers\" are broken by the mark column in the extraction, so only the traceable fragments are listed.)" },
     { id: "r-2", kind: "alt", verbatim: "steers finish between 20-24 months", marks: 2, accepts: ["produce a calf every 12 months","graze all pastures – extensive or conservation grazing","no need to dehorn","meat or milk production","reduces labour (risk)"], contextNote: "2 marks for the description that matches the characteristic named. Scheme pairs: early maturing – steers finish between 20-24 months; very fertile – produce a calf every 12 months; longevity – breed until they are 10 years old; easy calving – allows cross with continental bull or reduced veterinary costs; hardy or ready browsers – graze all pastures; polled – no need to dehorn; dual purpose – used for meat or milk production; docile – reduces labour (risk)." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2084,12 +2183,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q8a", topicId: "agsci-3-3-2", conceptId: "natural-predators",
     section: "A", questionRef: "2024 HL Q8(a)",
-    stem: "Read the article and answer the questions that follow.\n\nIrish Beetles Tackle Docks in New Trial\nIrish-bred beetles are set to become an environmentally friendly, cost-effective weapon to kill docks. Once released on a farm, the dock beetle breeds to colonise the whole field. Dock beetles are native and natural predators of docks. They skeletonise dock leaves and keep them at an acceptable level in grassland. The population of dock beetle will initially rise to decimate the dock weed naturally. The population will reduce as its success diminishes its natural food supply in a sustainable way on an annual basis. They hibernate for the winter and reappear each spring.\n(Adapted from Irish Farmers Journal, 2022)\n\nThe underlined term in the article is natural predators.",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "A living organism that kills and eats another organism", marks: 2, accepts: ["organism that feeds on another living organism causing harm"], contextNote: "One 2-mark definition; the solidus offers a second accepted wording (\"an organism that feeds on another living organism causing harm\")." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2280,12 +2388,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q2bi", topicId: "agsci-4-3-1", conceptId: "marbling",
     section: "A", questionRef: "2025 HL Q2(b)(i)",
-    stem: "New Wagyu beef cross programme aiming to process 150 head of cattle weekly. Japanese Wagyu beef is some of the most expensive beef in the world and is renowned for its superior marbling. A new Wagyu beef cross programme aims to process 150 head of cattle weekly in Ireland. It will be of strong interest to dairy farmers looking for a guaranteed market outlet for their calves. Bull sires are selected on meat quality, good growth rates, ease of calving, docility and fertility. Farmers who produce Wagyu under this heifer and steer programme will benefit from a guaranteed €200 payment for their four-week-old calf, as well as an additional €50 premium to the breeder after the animal has been processed. (Adapted from Independent.ie, 2024)",
     questionText: "Identify the correct explanation for marbling by placing a tick in the correct box: Distribution of muscle on an animal / High levels of beta carotene in meat / Intramuscular fat found in meat.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Intramuscular fat found in meat", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2411,12 +2528,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q4bi", topicId: "agsci-4-3-3", conceptId: "blackleg-causal-organism",
     section: "A", questionRef: "2025 HL Q4(b)(i)",
-    stem: "Irish farms saw a sharp increase in the incidence of blackleg disease in 2024.",
     questionText: "Identify the bacteria that causes blackleg disease by placing a tick in the correct box: Lactobacillus / Streptococcus aureus / Clostridium chauvoei.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Clostridium chauvoei", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2697,12 +2823,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q13ai", topicId: "agsci-3-2", conceptId: "nitrogen-fixing-plants-in-a-sward",
     section: "B", questionRef: "2021 HL Q13(a)(i)",
-    stem: "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. The different species bring a range of benefits to the sward. The main challenges with multi‐species swards include ensuring persistency of the herbs and to a lesser extent, the legumes in the sward. Blanket herbicide application is not possible post‐emergence as any herbicide that will kill broadleaf weeds will also kill the herbs, and finally establishment can be challenging particularly in the autumn. (Adapted from Irish Independent, 2020)",
     questionText: "Identify one plant named in the article that can fix atmospheric nitrogen.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "(Red or white) clover or legumes", marks: 4, contextNote: "One answer, 4 marks. The scheme's 'or' separates equally acceptable wordings of the same point, so clover, red clover, white clover or legumes all score the full 4." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2711,13 +2846,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q13aii", topicId: "agsci-3-3-2", conceptId: "multi-species-sward-management-practices",
     section: "B", questionRef: "2021 HL Q13(a)(ii)",
-    stem: "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. The different species bring a range of benefits to the sward. The main challenges with multi‐species swards include ensuring persistency of the herbs and to a lesser extent, the legumes in the sward. Blanket herbicide application is not possible post‐emergence as any herbicide that will kill broadleaf weeds will also kill the herbs, and finally establishment can be challenging particularly in the autumn. (Adapted from Irish Independent, 2020)",
     questionText: "Outline two management practices farmers could employ to overcome the challenges of growing multi‐species swards.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Rotation grazing or named rotational grazing system (21‐28 day rotation), encourage growth of grass, clover and herbs", marks: null, accepts: ["correct nutrient application to encourage growth of sward","spray weeds with herbicide, till and spray again when re‐seeding","sow multi‐species swards in spring time or optimum soil temperature (to allow for correct soil temp for establishment)","topping or mixed grazing or targeted weed control to control weeds without killing sward"], contextNote: "Any one practice from the scheme's pool scores here. The scheme awards 4 for the first creditable practice and 2 for the second, so the value follows the order the examiner meets them in, not which practice it is." },
     { id: "r-2", kind: "alt", verbatim: "correct nutrient application to encourage growth of sward", marks: null, accepts: ["Rotation grazing or named rotational grazing system (21‐28 day rotation), encourage growth of grass, clover and herbs","spray weeds with herbicide, till and spray again when re‐seeding","sow multi‐species swards in spring time or optimum soil temperature (to allow for correct soil temp for establishment)","topping or mixed grazing or targeted weed control to control weeds without killing sward"], contextNote: "A second, different practice from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2726,12 +2870,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q13aiii-name", topicId: "agsci-3-3-2", conceptId: "naming-a-grazing-system",
     section: "B", questionRef: "2021 HL Q13(a)(iii) Name",
-    stem: "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. The main challenges with multi‐species swards include ensuring persistency of the herbs and to a lesser extent, the legumes in the sward. Blanket herbicide application is not possible post‐emergence as any herbicide that will kill broadleaf weeds will also kill the herbs. (Adapted from Irish Independent, 2020)",
     questionText: "Name one grazing system that could be applied to a multi‐species sward.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Rotational or paddock grazing system", marks: 4, accepts: ["block grazing system","strip grazing","zero grazing","mixed grazing"], contextNote: "One named system, 4 marks. The solidi separate equally acceptable names, not separate marking points — naming any one of them scores the full 4. The scheme writes the block-grazing option as 'block grazing system (3 ‐ 4 days)'." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2740,13 +2893,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q13aiii-adv", topicId: "agsci-3-3-2", conceptId: "rotational-grazing-advantages",
     section: "B", questionRef: "2021 HL Q13(a)(iii) Advantages",
-    stem: "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. (Adapted from Irish Independent, 2020) Earlier in part (iii) you named a grazing system.",
     questionText: "Outline two advantages of the named grazing system in managing the sward.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Gives the sward time to recover from grazing (21 ‐ 28 days ‐ ideal 25 days) (without affecting forage quality)", marks: null, accepts: ["doesn’t allow for over grazing of sward or selective grazing of more palatable herbs","prevents dominance of one species","minimal damage to soil structure (reduced poaching)","sward is most digestible or leafier grass (high intake and high production milk yield and milk quality)"], contextNote: "Any one advantage from the scheme's pool scores here. The scheme awards 4 for the first creditable advantage and 2 for the second, so the value follows the order given, not which advantage it is." },
     { id: "r-2", kind: "alt", verbatim: "doesn’t allow for over grazing of sward or selective grazing of more palatable herbs", marks: null, accepts: ["Gives the sward time to recover from grazing (21 ‐ 28 days ‐ ideal 25 days) (without affecting forage quality)","prevents dominance of one species","minimal damage to soil structure (reduced poaching)","sward is most digestible or leafier grass (high intake and high production milk yield and milk quality)"], contextNote: "A second, different advantage from the same pool. The scheme continues this same option '...or prevents dominance of one species'." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2755,7 +2917,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q13aiv", topicId: "agsci-3-3-2", conceptId: "multi-species-sward-benefits",
     section: "B", questionRef: "2021 HL Q13(a)(iv)",
-    stem: "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. The different species bring a range of benefits to the sward. The main challenges with multi‐species swards include ensuring persistency of the herbs and to a lesser extent, the legumes in the sward. Blanket herbicide application is not possible post‐emergence as any herbicide that will kill broadleaf weeds will also kill the herbs, and finally establishment can be challenging particularly in the autumn. (Adapted from Irish Independent, 2020)",
     questionText: "You are asked to address a group of farmers who are thinking about sowing a multi‐species sward on their farm. Providing evidence from the article and with your own knowledge, construct an argument convincing them why it would be good to sow a multi‐species sward on their farm. Your plan should include at least four specific benefits.",
     tariffModel: {"kind":"fixed","notation":"4(2)"}, totalMarks: 8,
     rows: [
@@ -2764,6 +2925,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "clover will fix nitrogen which will reduce the artificial nitrogen requirement", marks: 2, accepts: ["which will reduce fertiliser costs (or increase profit or less tractor use)","clover is better for the environment as less ammonia will be released into the atmosphere or lost as nitrates into the water sources","increased palatability of the sward leads to increased intake and increased yields","some of the herbs (chicory and plantain) are deep rooting plants which provide drought resistance","chicory and plantain can reduce the effect of intestinal worms","multispecies sward has increased mineral content vs PRG only","uniform growth of sward throughout the season (vs peak growth in production )","increased ewe milk production or lamb weight gain in flocks"] },
     { id: "r-4", kind: "point", verbatim: "multi‐species sward will increase biodiversity on the farm (improve the sustainability)", marks: 2, accepts: ["which will reduce fertiliser costs (or increase profit or less tractor use)","clover is better for the environment as less ammonia will be released into the atmosphere or lost as nitrates into the water sources","increased palatability of the sward leads to increased intake and increased yields","some of the herbs (chicory and plantain) are deep rooting plants which provide drought resistance","chicory and plantain can reduce the effect of intestinal worms","multispecies sward has increased mineral content vs PRG only","uniform growth of sward throughout the season (vs peak growth in production )","increased ewe milk production or lamb weight gain in flocks"], contextNote: "A fourth, different benefit. Deliberately not a profit or cost point, so that all four rows on this card can be credited together." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2772,7 +2943,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q13av", topicId: "agsci-1-2", conceptId: "quadrat-botanical-composition-investigation",
     section: "B", questionRef: "2021 HL Q13(a)(v)",
-    stem: "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. (Adapted from Irish Independent, 2020)",
     questionText: "Describe an investigation a student could carryout to determine the botanical composition of the multi‐species sward described in the article.",
     tariffModel: {"kind":"fixed","notation":"4(4)"}, totalMarks: 16,
     rows: [
@@ -2781,6 +2951,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "plants identified using a plant key", marks: 4, accepts: ["min 10 times or repeat","record each of the plants in each quadrat"] },
     { id: "r-4", kind: "point", verbatim: "estimate the % of each plant in the sward", marks: 4, accepts: ["min 10 times or repeat","record each of the plants in each quadrat"] },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3051,12 +3231,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q16ci", topicId: "agsci-4-3-1", conceptId: "eu-climate-priorities-on-farm-measures",
     section: "B", questionRef: "2021 HL Q16(c)(i)",
-    stem: "Question 16 — answer both (a) and (b) with either (c) or (d). (c) Read the article on 'Sustainable Dairy Production in Europe' and answer the questions which follow. \"The European Union's top priorities include at least a 40% reduction of the emission of greenhouse gases (GHGs) from 1990 levels, 27% improvement in energy efficiency and 27% share of renewable energy by 2030. In Ireland, the Irish dairy sector acknowledges that sustainable development and climate change are pressing challenges that must be acted on and is committed to continuing to contribute to solving these issues while exporting our produce to over 155 countries worldwide.\" (Adapted from Sustainable Dairy in Europe, 2019)",
     questionText: "Outline how the European Union would achieve their top priorities.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Low emission slurry spreading (LESS)", marks: 3, accepts: ["protected urea","extended grazing","increased forestry planting","rewetting bogs (carbon sinks)","(grants for) renewable energy sources","growing catch (cover) crop or clover min‐till","high EBI cows or more efficient cows"], contextNote: "The scheme prints a single tariff of 3 against this part and lists eight measures as alternatives — one outlined measure takes the 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3219,13 +3408,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q17biv", topicId: "agsci-3-1", conceptId: "macronutrient-roles-in-plant-growth",
     section: "B", questionRef: "2021 HL Q17(b)(iv)",
-    stem: "Question 17 (b) prints two soil sample reports. Each tests only pH, lime requirement, phosphorus (P) and potassium (K) — so P and K are the only macronutrients on the table.",
     questionText: "Some macronutrients do not appear on the table. Identify any two other macronutrients and state their role in plant growth.",
     tariffModel: {"kind":"fixed","notation":"3+3+1+1"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sulfur ‐ forms enzymes or assists in formation of plant proteins", marks: 4, accepts: ["closely associated with N uptake or efficiency","Calcium ‐ formation of cell walls or cell membranes","Magnesium ‐ helps capture sun’s energy for photosynthesis","part of chlorophyll (molecule)","helps to activate specific enzyme systems","Nitrogen ‐ main component of chlorophyll which traps light in photosynthesis","main component of amino acids or protein","leafy growth"], contextNote: "The scheme prints 3+3+1+1 — 3 marks for each role and 1 mark for each macronutrient named, so a nutrient named WITH its role is worth 4. Naming two nutrients and giving no role scores 2 of 8." },
     { id: "r-2", kind: "point", verbatim: "Calcium ‐ formation of cell walls or cell membranes", marks: 4, accepts: ["Sulfur ‐ forms enzymes or assists in formation of plant proteins","closely associated with N uptake or efficiency","Magnesium ‐ helps capture sun’s energy for photosynthesis","part of chlorophyll (molecule)","helps to activate specific enzyme systems","Nitrogen ‐ main component of chlorophyll which traps light in photosynthesis","main component of amino acids or protein","leafy growth"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                42
+          ],
+          "attribution": "SEC Agricultural Science 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4122,13 +4320,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q17di", topicId: "agsci-3-1", conceptId: "principles-of-gene-editing",
     section: "B", questionRef: "2022 HL Q17(d)(i)",
-    stem: "Question 17 offers a choice of (c) or (d); this is (d). The paper prints an article: 'UK decides to push towards gene editing technologies — The British government outlined new plans to unlock the power of gene editing (GE) as a suite of tools to help farmers grow more resistant, nutritious and productive crops. GE makes plant breeding faster, more precise and more efficient, with the aim to produce new varieties that are more nutritious, more resistant to pests, diseases and viruses, more productive and carry traits that are more beneficial to the environment.' (Adapted from Irish Farmers Journal, 2021)",
     questionText: "Briefly explain the principles of gene editing.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Gene responsible for a specific trait is identified", marks: 3, accepts: ["introduce cuts into the DNA strands","allows removal of existing DNA","insertion of replacement DNA"], contextNote: "2(3): any TWO of the five printed principles score, 3 marks each." },
     { id: "r-2", kind: "point", verbatim: "using enzymes or named gene editing technique (e.g. CRISPR)", marks: 3, accepts: ["introduce cuts into the DNA strands","allows removal of existing DNA","insertion of replacement DNA"] },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4137,13 +4344,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q17dii", topicId: "agsci-3-1", conceptId: "benefits-of-resistant-and-nutritious-varieties",
     section: "B", questionRef: "2022 HL Q17(d)(ii)",
-    stem: "Question 17 offers a choice of (c) or (d); this is (d). The paper prints an article on the UK's move towards gene editing, noting that GE aims to produce new varieties that are more nutritious, more resistant to pests, diseases and viruses, more productive and carry traits that are more beneficial to the environment. (Adapted from Irish Farmers Journal, 2021)",
     questionText: "Outline reasons why producing more disease resistant, pest resistant and nutritious varieties are potentially beneficial in feeding the increasing world population.",
     tariffModel: {"kind":"fixed","notation":"2(4)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Disease and pest resistant varieties would lead to increased yields", marks: 4, accepts: ["with increased yields less demand on resources (land and water)","more pest and disease resistant varieties require less chemicals – less chance of getting into food chain","greater viability of crop leads to greater availability to populations","reduced risk of crop failure"], contextNote: "2(4): any TWO of the six printed reasons score, 4 marks each." },
     { id: "r-2", kind: "point", verbatim: "nutritious varieties would lead to healthier diets", marks: 4, accepts: ["with increased yields less demand on resources (land and water)","more pest and disease resistant varieties require less chemicals – less chance of getting into food chain","greater viability of crop leads to greater availability to populations","reduced risk of crop failure"] },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4316,12 +4532,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13di", topicId: "agsci-2-3", conceptId: "soil-moisture-data-for-management-decisions",
     section: "B", questionRef: "2023 HL Q13(d)(i)",
-    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (d) follows an article, 'VistaMilk using satellites to collect real-time data on farm soils': satellites are being used to collect real-time information about soil moisture on Irish farms by VistaMilk, the research centre at Teagasc, Moorepark, using imagery from the European Space Agency's Sentinel satellites to map soil moisture in Ireland, with the capability of focusing in on areas as small as 10m2. The data gathered could be used to help farmers make decisions about which fields to allow their livestock feed in while maintaining optimal grazing and grass growth, which requires drainage or even wetting, and potentially when to add or reduce use of fertilisers and slurry. (Adapted from Farmers Journal, 2022)",
     questionText: "Explain how the data gathered could help management decisions on the farm in relation to the drainage or wetting of land.",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Assists farmers in deciding when to drain the land or when the water is reaching saturation point to ensure maximum crop growth", marks: 6, accepts: ["informs farmers on when land needs to be irrigated to prevent soil reaching permanent wilting point"], contextNote: "One answer, worth the whole 6. The scheme's two versions are alternatives, the drainage version or the irrigation version, not two separate points." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4603,13 +4828,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q16bii", topicId: "agsci-4-3-1", conceptId: "other-farm-carbon-emission-sources",
     section: "B", questionRef: "2023 HL Q16(b)(ii)",
-    stem: "Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph in part (a) covers four sources — animal digestion, manure usage, fertiliser used and forage / feed. (Adapted from Teagasc, 2022)",
     questionText: "List two other potential sources of carbon emissions on the farm.",
     tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Soil cultivation or land reclamation", marks: null, accepts: ["fossil fuels","animal and plant respiration","biodigester"], contextNote: "Any one source from the scheme's pool scores here. The scheme awards 5 for the first correct source and 1 for the second, so the value depends on order, not on which source is given." },
     { id: "r-2", kind: "alt", verbatim: "fossil fuels", marks: null, accepts: ["Soil cultivation or land reclamation","animal and plant respiration","biodigester"], contextNote: "A second, different source from the same pool." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4943,12 +5177,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q14ai", topicId: "agsci-3-3-3", conceptId: "silage-fermentation-bacteria",
     section: "B", questionRef: "2024 HL Q14(a)(i)",
-    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
     questionText: "Identify the bacteria that is required for good quality silage by placing a tick in the correct box: Lactobacillus / Clostridia / Staphylococcus aureus.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Lactobacillus", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4971,12 +5214,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q14aiii", topicId: "agsci-3-3-3", conceptId: "ideal-silage-dry-matter",
     section: "B", questionRef: "2024 HL Q14(a)(iii)",
-    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions. The dry matter (DM)% content of silage is a good indicator of quality.",
     questionText: "Identify the ideal DM% of good quality silage by placing a tick in the correct box: 45% / 25% / 15%.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "25%", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5037,12 +5289,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15ai", topicId: "agsci-4-1", conceptId: "phenotype",
     section: "B", questionRef: "2024 HL Q15(a)(i)",
-    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. The animal's phenotype is the result of an interaction between its genetics and the environment. Nutrition often makes up a large portion of the environmental component and therefore can potentially affect the animal's phenotype. (Adapted from mcdvetmanual.com) The underlined term is 'phenotype'.",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "All observable or physical characteristics of the animal", marks: 3, accepts: ["All observable characteristics of the animal","All physical characteristics of the animal"] },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5067,12 +5328,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15aiii", topicId: "agsci-4-1", conceptId: "factors-influencing-cattle-nutrient-requirements",
     section: "B", questionRef: "2024 HL Q15(a)(iii)",
-    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com) The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions.",
     questionText: "State two animal-related factors or two environmental conditions.",
     tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":14,"perPart":2}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Weight // age // sex // extent of production // composition // genetics // of physical activity // health // Temperature // humidity // chill or draught free // radiation or UV light // precipitation // soil nutrient deficiencies", marks: null, group: {"claimMax":2,"perOption":2,"options":["Weight","age","sex","extent of production","composition","genetics","of physical activity","health","Temperature","humidity","chill or draught free","radiation or UV light","precipitation","soil nutrient deficiencies"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5341,12 +5611,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q17biii", topicId: "agsci-2-2-3", conceptId: "mycorrhizal-fungi-identification",
     section: "B", questionRef: "2024 HL Q17(b)(iii)",
-    stem: "Plant biostimulants and biotic factors in soil help improve plant growth by increasing nutrient uptake, nutrient use efficiency (NUE) and tolerance to stress from abiotic factors. Biostimulants are very active in the rhizosphere surrounding plant roots.",
     questionText: "Identify the fungi that plays a key role in the rhizosphere by placing a tick in the correct box. Rhizobium / Mycorrhizal / Rhizopus",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Mycorrhizal", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5475,12 +5754,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q13aii", topicId: "agsci-4-3-2", conceptId: "which-cows-breed-replacements",
     section: "B", questionRef: "2025 HL Q13(a)(ii)",
-    stem: "Question 13, part (a). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd: Purebred Friesian — 25 heifer calves, 25 bull calves; Aubrac x Friesian — 28 heifer calves, 35 bull calves. A mixture of AI and an Aubrac beef stock bull was used for breeding, including their own replacements. The paper prints two tick boxes: 'Early calving cows' and 'Late calving cows'.",
     questionText: "Identify which of the dairy cows in the herd were crossed with a Friesian bull, by placing a tick in the correct box.",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Early calving cows", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7065,13 +7353,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q15cii", topicId: "agsci-3-1", conceptId: "soil-ph-and-nitrous-oxide-emissions",
     section: "B", questionRef: "2023 HL Q15(c)(ii)",
-    stem: "Effect of soil pH on nitrous oxide (N20) emissions 7000 Cumulaitve N20 Emissions (g N20/ha/year) 6000 5000 4000 3000 2000 1000 0 5.1 5.4 6.2 6.9 Soil pH",
     questionText: "Discuss the relationship between pH and N20 emissions on the graph and its implications for ongoing farming practice.",
     tariffModel: {"kind":"fixed","notation":"5 + 3"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "its implications for ongoing farming practice. The higher the soil pH the lower the N20 emissions", marks: 5 },
     { id: "r-2", kind: "point", verbatim: "(Farmers should test their soil pH and) add lime to increase the pH levels to as close to neutral as possible to reduce the N20 emissions", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7452,12 +7749,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q14aii", topicId: "agsci-3-1", conceptId: "available-water-in-a-soil",
     section: "B", questionRef: "2025 HL Q14(a)(ii)",
-    stem: "The graph shows water availability in different soil types. Analyse the graph and answer the questions that follow. (ii) Calculate the % available water in a silt loam soil. Sand Sandy loam Loam Silt loam Clay loam Clay Smaller pore size More porosity Greater pore size Less porosity",
     questionText: "Calculate the % available water in a silt loam soil.",
     tariffModel: {"kind":"fixed","notation":"3 for the method and 3 for the answer, or 6 for a correct answer alone"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "30 – 10 = 20%", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

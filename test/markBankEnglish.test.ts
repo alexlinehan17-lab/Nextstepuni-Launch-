@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/english/ordinary';
+import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import authoredJson from '../components/MarkBank/cards/english/authored.json';
 import {
   effectivePclmScores,
@@ -142,15 +143,18 @@ describe('English all-question census', () => {
     }
   });
 
-  it('maps all 660 live cards one-to-one to the authored census and manifest', () => {
+  it('maps all 660 authored tasks to 650 canonical practice identities', () => {
     const authored = census.asks.filter(ask => ask.status === 'authored');
+    const canonicalAuthoredIds = [...new Set(authored.map(ask =>
+      CARD_ID_ALIASES[ask.id] ?? ask.id))].sort();
     expect(HIGHER).toHaveLength(210);
-    expect(ORDINARY).toHaveLength(450);
-    expect(ALL).toHaveLength(660);
-    expect(manifest.cardCount).toBe(660);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(660);
-    expect(ALL.map(card => card.id).sort()).toEqual(authored.map(ask => ask.id).sort());
-    expect(manifest.cards.map(card => card.id).sort()).toEqual(authored.map(ask => ask.id).sort());
+    expect(ORDINARY).toHaveLength(440);
+    expect(ALL).toHaveLength(650);
+    expect(manifest.cardCount).toBe(650);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(650);
+    expect(canonicalAuthoredIds).toHaveLength(650);
+    expect(ALL.map(card => card.id).sort()).toEqual(canonicalAuthoredIds);
+    expect(manifest.cards.map(card => card.id).sort()).toEqual(canonicalAuthoredIds);
   });
 
   it('keeps compulsory linked parts together while recording each separate tariff', () => {
@@ -192,7 +196,7 @@ describe('English prompt and source integrity', () => {
 
   it('attaches every required passage or poem to the official paper page', () => {
     const withSource = manifest.cards.filter(card => card.sourceMaterial);
-    expect(withSource).toHaveLength(215);
+    expect(withSource).toHaveLength(217);
 
     for (const authored of withSource) {
       const runtime = byId.get(authored.id)!;

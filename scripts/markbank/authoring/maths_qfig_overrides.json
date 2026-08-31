@@ -1,4 +1,19 @@
 {
+  "maths-2023-hl-p2-q4-ii": {
+    "regions": [
+      { "page": 10, "top": 55, "bottom": 134 },
+      { "page": 10, "top": 296, "bottom": 356 }
+    ],
+    "description": "The circle c has equation (x − h)² + (y + 3)² = 12, where h is real. The perpendicular distance from x − 4y + 7 = 0 to its centre is 5 units. Part (a)(ii) asks for both possible values of h in surd form."
+  },
+  "maths-2023-hl-p2-q8-ii": {
+    "regions": [
+      { "page": 20, "top": 55, "bottom": 158 },
+      { "page": 20, "top": 392, "bottom": 427 },
+      { "page": 21, "top": 52, "bottom": 126 }
+    ],
+    "description": "Players' word-game scores in Ireland are approximately normal with mean 3.87 and standard deviation 0.36. A random sample of 64 Galway players has mean 3.74. Part (b)(ii) asks for a two-tailed hypothesis test at the 5% level, including both hypotheses, a conclusion and its reason."
+  },
   "maths-2025-hl-p1-q10-e-i": {
     "regions": [
       { "page": 26, "top": 55, "bottom": 376 },

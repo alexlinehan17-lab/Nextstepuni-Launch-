@@ -1006,12 +1006,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q1d", topicId: "home-economics-1-2", conceptId: "convenience-food-selection",
     section: "B", questionRef: "2025 OL Section B Q1(d)",
-    stem: "When purchasing convenience foods, consumers should consider nutritional value. The table gives nutritional information per 100 g and cost of two types of convenience vegetable soup: Soup A (cook-chill, EUR 2.89) and Soup B (canned, EUR 2.00).",
     questionText: "Describe four factors consumers should consider when selecting convenience food products.",
     tariffModel: {"kind":"bestNofParts","notation":"4 factors @ 5 marks (graded 5:3:0)","answer":4,"ofParts":13,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Describe four factors consumers should consider when selecting convenience food products", marks: 20, contextNote: "Four factors at 5 marks, graded 5:3:0 — named is 3, described is 5, and nothing in between. \"Describe\" is the whole gap: \"cost\" is a 3, and what a consumer actually compares when weighing cost is the 5. The list runs well beyond nutrition, and allergens, storage instructions and food miles are the ones most often missed.", openList: true, group: {"claimMax":4,"perOption":5,"options":["nutritional content","calorie content","allergens","use by date, best before date","storage instructions","cost","packaging","resealable","sustainability","quantity","origin","food miles","organic"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1396,7 +1405,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q1b", topicId: "home-economics-0-5", conceptId: "protein-account-ol",
     section: "B", questionRef: "2023 OL Section B Q1(b)",
-    stem: "'Protein bars are a sector of the nutrition market that is rapidly expanding.' (www.tastetech.com) The table gives nutritional information per 100 g for three protein bars: Peanut & chocolate, Peanut & caramel, and Crunchy peanut butter.",
     questionText: "Give an account of protein under each of the following headings: classification; dietary sources; functions in the body.",
     tariffModel: {"kind":"fixed","notation":"classification 2 classes @ 3 marks (graded 3:2:0); sources 3 @ 4 marks (graded 4:2:0); functions 2 @ 4 marks (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 26,
     rows: [
@@ -1404,6 +1412,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Dietary sources", marks: 12, contextNote: "Three sources at 4 marks — the biggest strand at 12 marks. Naming the food is 2; saying whether it gives HBV or LBV protein is the other 2, and that link is what most answers leave out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["meat","fish","dairy products, milk, cheese, yogurt","eggs","soya beans","cereals","nuts","lentils","seeds","beans, peas"]} },
     { id: "r-3", kind: "anyN", verbatim: "Functions in the body", marks: 8, contextNote: "Two functions at 4 marks. Growth and repair is one function, not two — pair it with something structural (muscle, skin, cell membranes) or with the manufacturing functions (hormones, antibodies, enzymes) for a clearly separate second point.", openList: true, group: {"claimMax":2,"perOption":4,"options":["growth","repair of body cells","manufacture of new cells","formation of muscle","skin","cell membranes","production of hormones","antibodies","enzymes","manufacture of blood plasma"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1412,12 +1430,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q1c", topicId: "home-economics-0-8", conceptId: "water-in-sport-diet",
     section: "B", questionRef: "2023 OL Section B Q1(c)",
-    stem: "'Protein bars are a sector of the nutrition market that is rapidly expanding.' (www.tastetech.com) The table gives nutritional information per 100 g for three protein bars: Peanut & chocolate, Peanut & caramel, and Crunchy peanut butter.",
     questionText: "Explain the importance of including water in the diet of a person who plays sport.",
     tariffModel: {"kind":"bestNofParts","notation":"2 points @ 5 marks (graded 5:3:0)","answer":2,"ofParts":7,"perPart":5}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Explain the importance of including water in the diet of a person who plays sport", marks: 10, contextNote: "Two points at 5 marks, so both need explaining. The question says \"who plays sport\", and the two functions that answer it directly are regulating body temperature and transporting nutrients and oxygen — a general list of what water does earns the 3 but not the 5.", openList: true, group: {"claimMax":2,"perOption":5,"options":["regulates body temperature","component of all body cells","removal of waste","quenches thirst","necessary for breakdown of food during digestion","transports nutrients, oxygen, carbon dioxide, hormones and enzymes around the body","provides minerals e.g. calcium, fluorine"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1426,12 +1453,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q1d", topicId: "home-economics-1-1", conceptId: "reducing-household-food-costs",
     section: "B", questionRef: "2023 OL Section B Q1(d)",
-    stem: "'Protein bars are a sector of the nutrition market that is rapidly expanding.' (www.tastetech.com) The table gives nutritional information per 100 g for three protein bars: Peanut & chocolate, Peanut & caramel, and Crunchy peanut butter.",
     questionText: "Discuss four guidelines consumers should follow to reduce household costs when planning and purchasing food.",
     tariffModel: {"kind":"bestNofParts","notation":"4 guidelines @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Discuss four guidelines consumers should follow to reduce household costs when planning and purchasing food", marks: 20, contextNote: "Four guidelines at 5 marks, graded 5:3:0 — named is 3, discussed is 5. The list splits into planning ahead, buying cheaper alternatives and shopping smarter; four points spread across those reads as four guidelines, whereas own brands, special offers and discount supermarkets are three versions of one idea.", openList: true, group: {"claimMax":4,"perOption":5,"options":["plan meals on a weekly basis","make out a shopping list","use meal planning apps","use cheaper cuts of meat","buy fresh fruit and vegetables","buy cheaper fish e.g. mackerel","use leftovers wherever possible","shop around for special offers","buy own brand goods","shop in larger discount supermarkets rather than small convenience stores","avoid expensive ready prepared convenience food","buy unpackaged food","buy in bulk","avail of loyalty schemes"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1583,12 +1619,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q1b", topicId: "home-economics-0-9", conceptId: "dairy-in-teenage-diet",
     section: "B", questionRef: "2022 OL Section B Q1(b)",
-    stem: "'Milk is a staple food in the diets of Irish children.' (www.nationaldairycouncil.ie) The table gives the nutritional content per 100 ml of Whole Milk and Super Milk Fat-free. (www.avonmore.ie)",
     questionText: "Outline three interesting ways of including dairy products into a teenager’s diet.",
     tariffModel: {"kind":"bestNofParts","notation":"3 ways @ 4 marks (graded 4:2:0)","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Outline three interesting ways of including dairy products into a teenager’s diet", marks: 12, contextNote: "Three ways at 4 marks, graded 4:2:0. The scheme's list runs through milk, then yoghurt, then cheese — taking one from each makes three obviously different ways, where three milk-based drinks read as one. \"Interesting\" is not marked, but \"outline\" is: naming the dish is 2 and saying how it gets dairy into the day is the other 2.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Milk in cereal","milkshakes, smoothies","coffees made on milk","milk served with meals","as a snack","dishes containing white sauces","added to soup","batters","milk based desserts","added to baked goods","Yoghurt as a snack","in milkshakes, smoothies","as topping for desserts","dips for curries"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1597,7 +1642,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q1c", topicId: "home-economics-0-8", conceptId: "calcium-account-ol",
     section: "B", questionRef: "2022 OL Section B Q1(c)",
-    stem: "'Milk is a staple food in the diets of Irish children.' (www.nationaldairycouncil.ie) The table gives the nutritional content per 100 ml of Whole Milk and Super Milk Fat-free. (www.avonmore.ie)",
     questionText: "Give an account of calcium under each of the following headings: functions in the body; dietary sources; effect of deficiency.",
     tariffModel: {"kind":"fixed","notation":"functions 3 @ 4 marks (graded 4:2:0); sources 3 @ 4 marks (graded 4:2:0); deficiency 1 effect @ 4 marks (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 28,
     rows: [
@@ -1605,6 +1649,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Dietary sources", marks: 12, contextNote: "Three sources at 4 marks. Hard water is the first thing the scheme lists and the one almost nobody writes. Naming the food is 2; saying it is a good source or how it is fortified is the other 2.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Hard water","dairy products","canned fish","green leafy vegetables","fortified bread","white flour","eggs","oily fish","bottled water","fortified juices","soya milk","fortified breakfast cereals"]} },
     { id: "r-3", kind: "anyN", verbatim: "Effect of deficiency", marks: 4, contextNote: "One effect, 4 marks — only 4 of the 28 marks, so name it, say who gets it, and stop. Rickets in children or osteoporosis in later life are the two that explain themselves.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Rickets","osteomalacia","osteoporosis","dental decay","muscle spasm","poor blood clotting","disturbances in functioning of nerve cells"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1613,12 +1667,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q1d", topicId: "home-economics-1-5", conceptId: "buying-storing-dairy",
     section: "B", questionRef: "2022 OL Section B Q1(d)",
-    stem: "'Milk is a staple food in the diets of Irish children.' (www.nationaldairycouncil.ie) The table gives the nutritional content per 100 ml of Whole Milk and Super Milk Fat-free. (www.avonmore.ie)",
     questionText: "Discuss four factors to be considered when buying and storing dairy products in order to reduce food waste.",
     tariffModel: {"kind":"bestNofParts","notation":"4 factors @ 5 marks (graded 5:3:0); 1 reference to buying, 1 reference to storing, plus 2 others","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Discuss four factors to be considered when buying and storing dairy products in order to reduce food waste", marks: 20, contextNote: "Four factors at 5 marks, with a mark reserved on each of buying and storing — four storage points cannot reach 20. The temperature is marking content (4C for dairy in the fridge), and so is the cheese detail: wrapped loosely in parchment rather than sealed, so it does not dry out. Naming the factor is 3; tying it to food not being thrown away is the 5.", openList: true, group: {"claimMax":4,"perOption":5,"options":["shop using list","buy from clean, hygienic shop","check use by dates","check packaging/lid to ensure its intact","ensure dairy products are stored at correct temperature","buy near the end of shopping trip","buy in useable/small quantities","store dairy products in fridge 4°C","use in rotation","follow ‘use by’ dates as indicated on packaging","keep milk in original carton/container","keep dairy products covered or store in sealed containers and away from strong smelling foods","do not over-fill refrigerator","wrap cheese loosely in parchment/wax paper to prevent it drying out"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2181,12 +2244,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q1b", topicId: "home-economics-0-1", conceptId: "causes-of-obesity",
     section: "B", questionRef: "2021 OL Section B Q1(b)",
-    stem: "'More than a quarter of young people growing up in Ireland are obese or overweight according to the latest Growing Up in Ireland survey.' (www.irishexaminer.com) The table gives nutritional information per 100 g for full fat, low fat and fat free natural yoghurt.",
     questionText: "State three causes of obesity.",
     tariffModel: {"kind":"bestNofParts","notation":"3 causes @ 4 marks each (graded 4:2:0)","answer":3,"ofParts":8,"perPart":4}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "State three causes of obesity", marks: 12, contextNote: "Three causes at 4 marks, graded 4:2:0 — even though the question says \"state\", naming a cause is only 2 and the other 2 comes from saying how it leads to weight gain. The scheme's first cause is the underlying one all the others sit inside: an imbalance between energy taken in and energy used. Sedentary lifestyle and lack of exercise are the same cause twice.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Imbalance in energy intake and energy expenditure","sedentary lifestyle","lack of exercise","psychological factors e.g. depression, boredom","hormonal imbalance (thyroid gland)","unhealthy eating patterns e.g. snacking/late night eating","poor food choices e.g. fried/sugary foods","excessive use of processed foods"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2195,7 +2267,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q1c", topicId: "home-economics-0-7", conceptId: "lipids-account-ol",
     section: "B", questionRef: "2021 OL Section B Q1(c)",
-    stem: "'More than a quarter of young people growing up in Ireland are obese or overweight according to the latest Growing Up in Ireland survey.' (www.irishexaminer.com) The table gives nutritional information per 100 g for full fat, low fat and fat free natural yoghurt.",
     questionText: "Give an account of lipids (fats) under each of the following headings: classification; functions in the body; dietary sources.",
     tariffModel: {"kind":"fixed","notation":"classification 2 classes @ 4 marks (graded 4:0); functions 2 @ 4 marks (graded 4:2:0); sources 4 @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 28,
     rows: [
@@ -2203,6 +2274,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Functions in the body", marks: 8, contextNote: "Two functions at 4 marks, graded 4:2:0 — so unlike classification, a half-made point scores here. Heat and energy is one function, not two; pair it with insulation, protecting organs, or carrying the fat-soluble vitamins A, D, E and K.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Heat","energy","excess lipids are stored as adipose tissue, insulating the body and acting as an energy reserve","lipids protect delicate organs","supply fat soluble vitamins A, D, E & K","source of essential fatty acids","delays the feeling of hunger","needed to build cell walls","omega fatty acids improve concentration and brain activity","some unsaturated lipids help lower cholesterol","speeds up the transmission of nerve impulses"]} },
     { id: "r-3", kind: "anyN", verbatim: "Dietary sources", marks: 12, contextNote: "Four sources at 3 marks — the largest strand at 12 marks. Naming the food is 2 and saying which kind of fat it provides is the third mark, so pairing oily fish or olives with unsaturated fat earns more than a bare list.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Meat","eggs","oily fish","dairy products","soya beans","avocados","olives","nuts and nut oils","vegetable oils","fish liver oils","margarine","seeds"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2211,12 +2292,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q1d", topicId: "home-economics-0-7", conceptId: "reducing-fat-intake",
     section: "B", questionRef: "2021 OL Section B Q1(d)",
-    stem: "'More than a quarter of young people growing up in Ireland are obese or overweight according to the latest Growing Up in Ireland survey.' (www.irishexaminer.com) The table gives nutritional information per 100 g for full fat, low fat and fat free natural yoghurt.",
     questionText: "Discuss four factors to be considered when selecting and buying foods to reduce fat intake in the diet.",
     tariffModel: {"kind":"bestNofParts","notation":"4 factors @ 5 marks each (graded 5:3:0)","answer":4,"ofParts":11,"perPart":5}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Discuss four factors to be considered when selecting and buying foods to reduce fat intake in the diet", marks: 20, contextNote: "Four factors at 5 marks, graded 5:3:0 — named is 3, discussed is 5. The traffic-light label system is the most specific point in the scheme and the easiest to develop: colour coding shows at a glance whether a food is high, medium or low in fat. Several other entries are versions of \"read the label\", and a marker will pay for that once.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Choose food naturally low in fat e.g. fruit and vegetables","avoid high fat convenience foods","ask for visible fat to be cut off meat","choose leaner cuts of meat","avoid hydrogenated fats","compare labels and choose foods that are lower in saturated fats","follow traffic light system e.g. labels that include colour coding indicate if the food is high, medium or low in fat","read labels","choose fat free products","plan meals and snacks to include low fat foods","use low fat alternatives"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3240,8 +3330,8 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q2b-linen", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-linen-ol",
-    section: "C", questionRef: "2024 OL Section C E2 Q2(b) - Linen",
+    id: "he-2024-ol-sc-q2b-linen", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-ol",
+    section: "C", questionRef: "2024 OL Section C E2 Q2(b)",
     stem: "‘Textiles have such an important bearing on our daily lives.’ (www.coats.com)",
     questionText: "Write a profile of a natural fibre under each of the following headings: fibre production; properties; test to identify a natural fibre.",
     tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
@@ -3250,53 +3340,281 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Properties", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Single-word properties, so give several and say what each means for wearing or washing the fabric — a list of adjectives alone reads as one thin point.", openList: true, group: {"claimMax":1,"perOption":5,"options":["absorbent","strong","conducts heat well","resists mildew","good lustre","shrinks","poor resistance to fire","little elasticity","soils easily","dyes well","creases easily"]} },
     { id: "r-3", kind: "anyN", verbatim: "Test to identify a natural fibre", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. This is the burn test and the first two options are the method itself — hold the fabric over a flameproof dish and ignite it. The marks then come from what you observe for this fibre: how it takes the flame, the residue, and the smell.", openList: true, group: {"claimMax":1,"perOption":5,"options":["hold fabric over a flame proof dish","ignite","takes longer to ignite","easily extinguished by blowing on it"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC098GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q2b-cotton", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-cotton-ol",
-    section: "C", questionRef: "2024 OL Section C E2 Q2(b) - Cotton",
-    stem: "‘Textiles have such an important bearing on our daily lives.’ (www.coats.com)",
-    questionText: "Write a profile of a natural fibre under each of the following headings: fibre production; properties; test to identify a natural fibre.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Fibre production", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0 — no 4, so a bare statement drops to 3. Cotton comes from the boll of the cotton plant. The scheme lists the stages in order, so write the process as a sequence and the 5 is safe.", openList: true, group: {"claimMax":1,"perOption":5,"options":["comes from the boll or seed head of the cotton plant, fibres are 2-3cm long","fibres are white and fluffy","the bolls are picked","the fibres are separated from the seeds","then pressed into bales","the cotton is graded according to the length of the fibres","these fibres are spun into yarn"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Properties", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Single-word properties, so give several and say what each means for wearing or washing the fabric — a list of adjectives alone reads as one thin point.", openList: true, group: {"claimMax":1,"perOption":5,"options":["absorbent","cool","strong","easy to wash and dry","dyes well","creases easily","shrinks"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Test to identify a natural fibre", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. This is the burn test and the first two options are the method itself — hold the fabric over a flameproof dish and ignite it. The marks then come from what you observe for this fibre: how it takes the flame, the residue, and the smell.", openList: true, group: {"claimMax":1,"perOption":5,"options":["hold fabric over a flame proof dish","ignite","flares up when lit","no melting beads are left and after burning it continues to glow","smoke is grey to white and ash is fine and soft"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC098GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q2b-wool", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-wool-ol",
-    section: "C", questionRef: "2024 OL Section C E2 Q2(b) - Wool",
-    stem: "‘Textiles have such an important bearing on our daily lives.’ (www.coats.com)",
-    questionText: "Write a profile of a natural fibre under each of the following headings: fibre production; properties; test to identify a natural fibre.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Fibre production", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0 — no 4, so a bare statement drops to 3. Wool comes from the fleece of sheep, goats and llamas. The scheme lists the stages in order, so write the process as a sequence and the 5 is safe.", openList: true, group: {"claimMax":1,"perOption":5,"options":["fleece of sheep, goats, llamas grown","sheared","sorted/graded","cleaned","combed/carded","dyed","spun into yarn"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Properties", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Single-word properties, so give several and say what each means for wearing or washing the fabric — a list of adjectives alone reads as one thin point.", openList: true, group: {"claimMax":1,"perOption":5,"options":["warm","soft","absorbent","resilient","irritates sensitive skin","pills","shrinks"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Test to identify a natural fibre", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. This is the burn test and the first two options are the method itself — hold the fabric over a flameproof dish and ignite it. The marks then come from what you observe for this fibre: how it takes the flame, the residue, and the smell.", openList: true, group: {"claimMax":1,"perOption":5,"options":["hold fabric over a flame proof dish","ignite","burns slowly","sizzles and curls away from the flame","leaves beads that are brittle, dark and easily crushed","is self-extinguishing","leaves harsh ash from the crushed bead","strong odour of burning feathers/hair"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC098GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q2b-silk", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-silk-ol",
-    section: "C", questionRef: "2024 OL Section C E2 Q2(b) - Silk",
-    stem: "‘Textiles have such an important bearing on our daily lives.’ (www.coats.com)",
-    questionText: "Write a profile of a natural fibre under each of the following headings: fibre production; properties; test to identify a natural fibre.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Fibre production", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0 — no 4, so a bare statement drops to 3. Silk comes from the cocoon of the silkworm. The scheme lists the stages in order, so write the process as a sequence and the 5 is safe.", openList: true, group: {"claimMax":1,"perOption":5,"options":["silkworms eat leaves of mulberry tree","spin cocoon of silk","cocoons soaked in water","thread extraction","dyed","spun into yarn"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Properties", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Single-word properties, so give several and say what each means for wearing or washing the fabric — a list of adjectives alone reads as one thin point.", openList: true, group: {"claimMax":1,"perOption":5,"options":["absorbent","crease resistant","drapes well","flammable","easily damaged"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Test to identify a natural fibre", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. This is the burn test and the first two options are the method itself — hold the fabric over a flameproof dish and ignite it. The marks then come from what you observe for this fibre: how it takes the flame, the residue, and the smell.", openList: true, group: {"claimMax":1,"perOption":5,"options":["hold fabric over a flame proof dish","ignite","burns slowly","sizzles and curls away from the flame","leaves a dark bead which can be crushed","is self-extinguishing","leaves ash that is a dark, gritty, fine powder","smells like burned hair/charred meat","gives out little or no smoke"]} },
+    answerVariants: [
+          {
+                "id": "linen",
+                "label": "Linen",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Fibre production",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a bare statement drops to 3. Linen comes from the stem of the flax plant. The scheme lists the stages in order, so write the process as a sequence and the 5 is safe.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "made from the stem of the flax plant",
+                                        "flax stems are pulled and retted, soaked until the outer stem rots",
+                                        "stems are crushed and combed",
+                                        "fibres are spun into yarn",
+                                        "yarn is bleached and dyed",
+                                        "woven into a textured fabric"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Properties",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. Single-word properties, so give several and say what each means for wearing or washing the fabric — a list of adjectives alone reads as one thin point.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "absorbent",
+                                        "strong",
+                                        "conducts heat well",
+                                        "resists mildew",
+                                        "good lustre",
+                                        "shrinks",
+                                        "poor resistance to fire",
+                                        "little elasticity",
+                                        "soils easily",
+                                        "dyes well",
+                                        "creases easily"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Test to identify a natural fibre",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. This is the burn test and the first two options are the method itself — hold the fabric over a flameproof dish and ignite it. The marks then come from what you observe for this fibre: how it takes the flame, the residue, and the smell.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "hold fabric over a flame proof dish",
+                                        "ignite",
+                                        "takes longer to ignite",
+                                        "easily extinguished by blowing on it"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "cotton",
+                "label": "Cotton",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Fibre production",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a bare statement drops to 3. Cotton comes from the boll of the cotton plant. The scheme lists the stages in order, so write the process as a sequence and the 5 is safe.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "comes from the boll or seed head of the cotton plant, fibres are 2-3cm long",
+                                        "fibres are white and fluffy",
+                                        "the bolls are picked",
+                                        "the fibres are separated from the seeds",
+                                        "then pressed into bales",
+                                        "the cotton is graded according to the length of the fibres",
+                                        "these fibres are spun into yarn"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Properties",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. Single-word properties, so give several and say what each means for wearing or washing the fabric — a list of adjectives alone reads as one thin point.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "absorbent",
+                                        "cool",
+                                        "strong",
+                                        "easy to wash and dry",
+                                        "dyes well",
+                                        "creases easily",
+                                        "shrinks"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Test to identify a natural fibre",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. This is the burn test and the first two options are the method itself — hold the fabric over a flameproof dish and ignite it. The marks then come from what you observe for this fibre: how it takes the flame, the residue, and the smell.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "hold fabric over a flame proof dish",
+                                        "ignite",
+                                        "flares up when lit",
+                                        "no melting beads are left and after burning it continues to glow",
+                                        "smoke is grey to white and ash is fine and soft"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "wool",
+                "label": "Wool",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Fibre production",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a bare statement drops to 3. Wool comes from the fleece of sheep, goats and llamas. The scheme lists the stages in order, so write the process as a sequence and the 5 is safe.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "fleece of sheep, goats, llamas grown",
+                                        "sheared",
+                                        "sorted/graded",
+                                        "cleaned",
+                                        "combed/carded",
+                                        "dyed",
+                                        "spun into yarn"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Properties",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. Single-word properties, so give several and say what each means for wearing or washing the fabric — a list of adjectives alone reads as one thin point.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "warm",
+                                        "soft",
+                                        "absorbent",
+                                        "resilient",
+                                        "irritates sensitive skin",
+                                        "pills",
+                                        "shrinks"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Test to identify a natural fibre",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. This is the burn test and the first two options are the method itself — hold the fabric over a flameproof dish and ignite it. The marks then come from what you observe for this fibre: how it takes the flame, the residue, and the smell.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "hold fabric over a flame proof dish",
+                                        "ignite",
+                                        "burns slowly",
+                                        "sizzles and curls away from the flame",
+                                        "leaves beads that are brittle, dark and easily crushed",
+                                        "is self-extinguishing",
+                                        "leaves harsh ash from the crushed bead",
+                                        "strong odour of burning feathers/hair"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "silk",
+                "label": "Silk",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Fibre production",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a bare statement drops to 3. Silk comes from the cocoon of the silkworm. The scheme lists the stages in order, so write the process as a sequence and the 5 is safe.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "silkworms eat leaves of mulberry tree",
+                                        "spin cocoon of silk",
+                                        "cocoons soaked in water",
+                                        "thread extraction",
+                                        "dyed",
+                                        "spun into yarn"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "Properties",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. Single-word properties, so give several and say what each means for wearing or washing the fabric — a list of adjectives alone reads as one thin point.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "absorbent",
+                                        "crease resistant",
+                                        "drapes well",
+                                        "flammable",
+                                        "easily damaged"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Test to identify a natural fibre",
+                            "marks": 5,
+                            "openList": true,
+                            "contextNote": "One point, 5 marks, graded 5:3:0. This is the burn test and the first two options are the method itself — hold the fabric over a flameproof dish and ignite it. The marks then come from what you observe for this fibre: how it takes the flame, the residue, and the smell.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 5,
+                                  "options": [
+                                        "hold fabric over a flame proof dish",
+                                        "ignite",
+                                        "burns slowly",
+                                        "sizzles and curls away from the flame",
+                                        "leaves a dark bead which can be crushed",
+                                        "is self-extinguishing",
+                                        "leaves ash that is a dark, gritty, fine powder",
+                                        "smells like burned hair/charred meat",
+                                        "gives out little or no smoke"
+                                  ]
+                            }
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -3452,8 +3770,8 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q4aii-pasteurisation", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-pasteurisation",
-    section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Pasteurisation",
+    id: "he-2024-ol-sc-q4aii-pasteurisation", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment",
+    section: "C", questionRef: "2024 OL Section C Q4(a)(ii)",
     stem: "‘Your body needs lots of different nutrients to stay healthy.’ (www.safefood.net)",
     questionText: "Describe one heat treatment used by manufacturers to extend the shelf life of milk. Refer to: name of process; how the process is carried out; labelling.",
     tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks (graded 2:1:0); process 4 points @ 3 marks (graded 3:2:0); labelling 2 points @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
@@ -3462,69 +3780,329 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "How pasteurisation is carried out", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.", openList: true, group: {"claimMax":4,"perOption":3,"options":["milk heated to 72oC","for 15-25 seconds","cooled quickly to 10oC","packaged into glass bottles, plastic cartons, waxed cardboard"]} },
     { id: "r-3", kind: "anyN", verbatim: "Labelling", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.", openList: true, group: {"claimMax":2,"perOption":2,"options":["type of milk","brand","quantity of milk","nutritional information","date-stamp","storage instructions"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC098GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q4aii-sterilisation", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-sterilisation",
-    section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Sterilisation",
-    stem: "‘Your body needs lots of different nutrients to stay healthy.’ (www.safefood.net)",
-    questionText: "Describe one heat treatment used by manufacturers to extend the shelf life of milk. Refer to: name of process; how the process is carried out; labelling.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks (graded 2:1:0); process 4 points @ 3 marks (graded 3:2:0); labelling 2 points @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of process", marks: 2, contextNote: "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows sterilisation; the scheme prints a parallel process for each of the others, marked the same way.", openList: true, group: {"claimMax":1,"perOption":2,"options":["pasteurisation","sterilisation","ultra-heat treatment (UHT)","condensed milk","evaporated milk","Spray Drying and Roller Drying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "How sterilisation is carried out", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.", openList: true, group: {"claimMax":4,"perOption":3,"options":["milk homogenised","sealed in glass bottles","heated to 110oC","for 30 minutes","cooled"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Labelling", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.", openList: true, group: {"claimMax":2,"perOption":2,"options":["type of milk","brand","quantity of milk","nutritional information","date-stamp","storage instructions"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC098GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q4aii-uht", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-uht",
-    section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Ultra-heat treatment (UHT)",
-    stem: "‘Your body needs lots of different nutrients to stay healthy.’ (www.safefood.net)",
-    questionText: "Describe one heat treatment used by manufacturers to extend the shelf life of milk. Refer to: name of process; how the process is carried out; labelling.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks (graded 2:1:0); process 4 points @ 3 marks (graded 3:2:0); labelling 2 points @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of process", marks: 2, contextNote: "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows ultra-heat treatment (uht); the scheme prints a parallel process for each of the others, marked the same way.", openList: true, group: {"claimMax":1,"perOption":2,"options":["pasteurisation","sterilisation","ultra-heat treatment (UHT)","condensed milk","evaporated milk","Spray Drying and Roller Drying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "How ultra-heat treatment (uht) is carried out", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.", openList: true, group: {"claimMax":4,"perOption":3,"options":["milk heated to 132oC","for 1-3 seconds","cooled quickly","packaged into sterile containers"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Labelling", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.", openList: true, group: {"claimMax":2,"perOption":2,"options":["type of milk","brand","quantity of milk","nutritional information","date-stamp","storage instructions"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC098GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q4aii-condensed", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-condensed",
-    section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Condensed milk",
-    stem: "‘Your body needs lots of different nutrients to stay healthy.’ (www.safefood.net)",
-    questionText: "Describe one heat treatment used by manufacturers to extend the shelf life of milk. Refer to: name of process; how the process is carried out; labelling.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks (graded 2:1:0); process 4 points @ 3 marks (graded 3:2:0); labelling 2 points @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of process", marks: 2, contextNote: "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows condensed milk; the scheme prints a parallel process for each of the others, marked the same way.", openList: true, group: {"claimMax":1,"perOption":2,"options":["pasteurisation","sterilisation","ultra-heat treatment (UHT)","condensed milk","evaporated milk","Spray Drying and Roller Drying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "How condensed milk is carried out", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.", openList: true, group: {"claimMax":4,"perOption":3,"options":["milk homogenised","heated to 80oC","for 15 minutes","15% sugar added","sealed in sterile cans"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Labelling", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.", openList: true, group: {"claimMax":2,"perOption":2,"options":["type of milk","brand","quantity of milk","nutritional information","date-stamp","storage instructions"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC098GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "he-2024-ol-sc-q4aii-evaporated", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-evaporated",
-    section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Evaporated milk",
-    stem: "‘Your body needs lots of different nutrients to stay healthy.’ (www.safefood.net)",
-    questionText: "Describe one heat treatment used by manufacturers to extend the shelf life of milk. Refer to: name of process; how the process is carried out; labelling.",
-    tariffModel: {"kind":"fixed","notation":"Name 1 @ 2 marks (graded 2:1:0); process 4 points @ 3 marks (graded 3:2:0); labelling 2 points @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name of process", marks: 2, contextNote: "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows evaporated milk; the scheme prints a parallel process for each of the others, marked the same way.", openList: true, group: {"claimMax":1,"perOption":2,"options":["pasteurisation","sterilisation","ultra-heat treatment (UHT)","condensed milk","evaporated milk","Spray Drying and Roller Drying"]} },
-    { id: "r-2", kind: "anyN", verbatim: "How evaporated milk is carried out", marks: 12, contextNote: "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.", openList: true, group: {"claimMax":4,"perOption":3,"options":["milk homogenised","heated to 115oC","for 20 minutes","sealed in sterile cans"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Labelling", marks: 4, contextNote: "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.", openList: true, group: {"claimMax":2,"perOption":2,"options":["type of milk","brand","quantity of milk","nutritional information","date-stamp","storage instructions"]} },
+    answerVariants: [
+          {
+                "id": "pasteurisation",
+                "label": "Pasteurisation",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of process",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows pasteurisation; the scheme prints a parallel process for each of the others, marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "pasteurisation",
+                                        "sterilisation",
+                                        "ultra-heat treatment (UHT)",
+                                        "condensed milk",
+                                        "evaporated milk",
+                                        "Spray Drying and Roller Drying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "How pasteurisation is carried out",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "milk heated to 72oC",
+                                        "for 15-25 seconds",
+                                        "cooled quickly to 10oC",
+                                        "packaged into glass bottles, plastic cartons, waxed cardboard"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Labelling",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "type of milk",
+                                        "brand",
+                                        "quantity of milk",
+                                        "nutritional information",
+                                        "date-stamp",
+                                        "storage instructions"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "sterilisation",
+                "label": "Sterilisation",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of process",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows sterilisation; the scheme prints a parallel process for each of the others, marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "pasteurisation",
+                                        "sterilisation",
+                                        "ultra-heat treatment (UHT)",
+                                        "condensed milk",
+                                        "evaporated milk",
+                                        "Spray Drying and Roller Drying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "How sterilisation is carried out",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "milk homogenised",
+                                        "sealed in glass bottles",
+                                        "heated to 110oC",
+                                        "for 30 minutes",
+                                        "cooled"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Labelling",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "type of milk",
+                                        "brand",
+                                        "quantity of milk",
+                                        "nutritional information",
+                                        "date-stamp",
+                                        "storage instructions"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "uht",
+                "label": "Ultra-heat treatment (UHT)",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of process",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows ultra-heat treatment (uht); the scheme prints a parallel process for each of the others, marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "pasteurisation",
+                                        "sterilisation",
+                                        "ultra-heat treatment (UHT)",
+                                        "condensed milk",
+                                        "evaporated milk",
+                                        "Spray Drying and Roller Drying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "How ultra-heat treatment (uht) is carried out",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "milk heated to 132oC",
+                                        "for 1-3 seconds",
+                                        "cooled quickly",
+                                        "packaged into sterile containers"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Labelling",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "type of milk",
+                                        "brand",
+                                        "quantity of milk",
+                                        "nutritional information",
+                                        "date-stamp",
+                                        "storage instructions"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "condensed",
+                "label": "Condensed milk",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of process",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows condensed milk; the scheme prints a parallel process for each of the others, marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "pasteurisation",
+                                        "sterilisation",
+                                        "ultra-heat treatment (UHT)",
+                                        "condensed milk",
+                                        "evaporated milk",
+                                        "Spray Drying and Roller Drying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "How condensed milk is carried out",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "milk homogenised",
+                                        "heated to 80oC",
+                                        "for 15 minutes",
+                                        "15% sugar added",
+                                        "sealed in sterile cans"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Labelling",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "type of milk",
+                                        "brand",
+                                        "quantity of milk",
+                                        "nutritional information",
+                                        "date-stamp",
+                                        "storage instructions"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "evaporated",
+                "label": "Evaporated milk",
+                "rows": [
+                      {
+                            "id": "r-1",
+                            "kind": "anyN",
+                            "verbatim": "Name of process",
+                            "marks": 2,
+                            "openList": true,
+                            "contextNote": "Name one, 2 marks, graded 2:1:0 — only 2 of the 18 marks. This card follows evaporated milk; the scheme prints a parallel process for each of the others, marked the same way.",
+                            "group": {
+                                  "claimMax": 1,
+                                  "perOption": 2,
+                                  "options": [
+                                        "pasteurisation",
+                                        "sterilisation",
+                                        "ultra-heat treatment (UHT)",
+                                        "condensed milk",
+                                        "evaporated milk",
+                                        "Spray Drying and Roller Drying"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-2",
+                            "kind": "anyN",
+                            "verbatim": "How evaporated milk is carried out",
+                            "marks": 12,
+                            "openList": true,
+                            "contextNote": "Four points at 3 marks, graded 3:2:0 — twelve of the eighteen marks. The temperature and the time are separate marking points, so quote both figures exactly; then the cooling and the packaging give you the other two.",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 3,
+                                  "options": [
+                                        "milk homogenised",
+                                        "heated to 115oC",
+                                        "for 20 minutes",
+                                        "sealed in sterile cans"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "r-3",
+                            "kind": "anyN",
+                            "verbatim": "Labelling",
+                            "marks": 4,
+                            "openList": true,
+                            "contextNote": "Two points at 2 marks, graded 2:1:0. Short items straight off the carton — type of milk, brand, quantity, nutritional information, date stamp, storage instructions.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "type of milk",
+                                        "brand",
+                                        "quantity of milk",
+                                        "nutritional information",
+                                        "date-stamp",
+                                        "storage instructions"
+                                  ]
+                            }
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {

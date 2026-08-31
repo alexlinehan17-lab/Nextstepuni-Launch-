@@ -87,3 +87,37 @@ npm run lint && npm run typecheck && npm test && npm run build
 - Where a strand has no marking points at all, ship the strand that does and
   **hold** the other, recording the marks it accounts for.
 - Figure-dependent parts are **held**, not shipped blind.
+
+## Cross-subject card-boundary and presentation rules
+
+These rules apply to every subject, including decks produced by older or
+subject-specific generators.
+
+- A card may cover only **one independently practicable printed task**. Do not
+  merge a neighbouring roman, lettered part, practical-project rubric,
+  companion booklet, or later question merely because PDF extraction placed
+  their text in one block.
+- Preserve the complete parent path in `questionRef` (`Q4(a)(ii)`, not
+  `Q4(ii)`). A roman-only citation is ambiguous and can make the source audit
+  match the wrong task.
+- When the official extract, photograph, map, graph, table, tick-box layout,
+  code listing, or diagram is needed to answer, attach an inspected source page
+  or crop. Keep `questionText` to the actual ask; do not also flatten the
+  attached source into a long, visually broken paragraph.
+- A crop is not accepted because it exists or hashes successfully. Open the
+  generated image and verify that it includes all required shared context,
+  excludes adjacent asks and answer furniture, and remains legible at phone
+  width.
+- One printed ask has one stable card identity. Exact repeated asks are
+  withdrawn through the correction/alias ledger so saved progress migrates;
+  finite legitimate answer routes belong in `answerVariants`, not duplicate
+  cards.
+- Theory-paper, practical-project and companion-booklet boundaries are hard
+  boundaries. Confirm the paper component before importing marks or criteria;
+  never infer a shared question number means shared content.
+- Compact long rubrics by grouping parallel, compulsory checks into bounded
+  rows. Do not change their total, optionality or route tariff to meet a visual
+  row cap.
+- Every newly supported subject must be added to the global deck sample,
+  integrity, accessibility, size and preservation guards. A subject-specific
+  test alone cannot catch cross-deck duplicates or UI assumptions.

@@ -115,9 +115,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2016-hl-q4-a", topicId: "cons-1-1", conceptId: "reasons-why-site-may-considered-new",
     section: "B", questionRef: "2016 HL Q4(a)",
     questionText: "Discuss in detail three reasons why site A may be considered suitable for a new house.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":8,"perPart":6}, totalMarks: 18,
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":7,"perPart":6}, totalMarks: 18,
     rows: [
-    { id: "cons-2016-hl-q4-a-r1", kind: "anyN", verbatim: "Discuss in detail three reasons why site A may be considered suitable for a new house.", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["Why site A may be considered suitable for a new house","the site is sufficiently large to accommodate a house in the countryside","the proportions of the site are suitable","there is sufficient space to accommodate waste-water treatment and a percolation area","the site has public access from the adjoining roads","there is the possibility of having a southerly aspect to allow for sustainable house design","the site is close to existing houses and settlements so that services such as water, electricity, phone and broadband are likely to be readily available and cost effective","roadways are mainly straight and allow sufficient sightlines from entrance to ensure safe access to roadways from site – vehicle driver can see oncoming traffic"]} },
+    { id: "cons-2016-hl-q4-a-r1", kind: "anyN", verbatim: "Discuss in detail three reasons why site A may be considered suitable for a new house.", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["the site is sufficiently large to accommodate a house in the countryside","the proportions of the site are suitable","there is sufficient space to accommodate waste-water treatment and a percolation area","the site has public access from the adjoining roads","there is the possibility of having a southerly aspect to allow for sustainable house design","the site is close to existing houses and settlements so that services such as water, electricity, phone and broadband are likely to be readily available and cost effective","roadways are mainly straight and allow sufficient sightlines from entrance to ensure safe access to roadways from site – vehicle driver can see oncoming traffic"]} },
     ],
   } as SecCard,
   {
@@ -143,7 +143,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the cost of heat lost annually through this wall, using the following data: Area of external wall 150 m2 Average internal temperature 18 °C Average external temperature 6 °C U-value of wall as calculated above Heating period 8 hours per day, every day for 38 weeks per annum Cost of oil 96 cent per litre Calorific value of oil 37350 kJ per litre 1000 Watts 1 kJ per second.",
     tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":5,"perPart":3}, totalMarks: 15,
     rows: [
-    { id: "cons-2016-hl-q5-b-r1", kind: "anyN", verbatim: "Calculate the cost of heat lost annually through this wall, using the following data: Area of external wall 150 m2 Avera", marks: 15, openList: true, group: {"claimMax":5,"perOption":3,"options":["Heat loss formula and calculation","Heating duration for one year","k/Joules calculation for one year","Litres of oil for one year","Annual cost of heat loss"]} },
+    { id: "cons-2016-hl-q5-b-r1", kind: "anyN", verbatim: "Calculate the cost of heat lost annually through this wall, using the following data: Area of external wall 150 m2 Avera", marks: 15, contextNote: "The scheme groups its answer under: Wall A; 60 × 60 × 8 × 7 × 38 = 7,660, 800, seconds (2,128 hours); 1000", openList: true, group: {"claimMax":5,"perOption":3,"options":["Heat loss formula and calculation","Heating duration for one year","k/Joules calculation for one year","Litres of oil for one year","Annual cost of heat loss"]} },
     ],
   } as SecCard,
   {
@@ -154,9 +154,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2016-hl-q5-c", topicId: "cons-6-1", conceptId: "proposed-upgrade-thermal-properties-above-wall",
     section: "B", questionRef: "2016 HL Q5(c)",
     questionText: "It is proposed to upgrade the thermal properties of the above wall to meet the Passive House standard by fixing expanded polystyrene to the external surface. Given the thermal conductivity (k) of expanded polystyrene as 0.037 W/m °C, calculate the thickness of expanded polystyrene required to achieve a U-value of 0.15 W/m2 °C.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":7,"perPart":3}, totalMarks: 15,
+    tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":5,"perPart":3}, totalMarks: 15,
     rows: [
-    { id: "cons-2016-hl-q5-c-r1", kind: "anyN", verbatim: "It is proposed to upgrade the thermal properties of the above wall to meet the Passive House standard by fixing expanded", marks: 15, openList: true, group: {"claimMax":5,"perOption":3,"options":["Resistance for U-value of 0.15 W/m2 °C","Existing resistance from part (a)","Difference in resistances (required resistance)","Application of formula R = T/k","Required thickness of insulation","Scrúdú Ardteistiméireachta, 2016 Staidéar Foirgníochta, Ardleibhéal","___________________________________________________________________________________________________________"]} },
+    { id: "cons-2016-hl-q5-c-r1", kind: "anyN", verbatim: "It is proposed to upgrade the thermal properties of the above wall to meet the Passive House standard by fixing expanded", marks: 15, openList: true, group: {"claimMax":5,"perOption":3,"options":["Resistance for U-value of 0.15 W/m2 °C","Existing resistance from part (a)","Difference in resistances (required resistance)","Application of formula R = T/k","Required thickness of insulation"]} },
     ],
   } as SecCard,
   {
@@ -223,11 +223,21 @@ export const CARDS: SecCard[] = [
     id: "cons-2016-hl-q6-a", topicId: "cons-6-3", conceptId: "features-design-contribute-house-having-low",
     section: "B", questionRef: "2016 HL Q6(a)",
     questionText: "Discuss in detail, using notes and freehand sketches, three features of the design that contribute to the house having low environmental impact.",
-    tariffModel: {"kind":"fixed","notation":"3 x 5 + 3 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "cons-2016-hl-q6-a-r1", kind: "anyN", verbatim: "Three features of the design that contribute to the house having low environmental impact – such as", marks: 15, contextNote: "Three features of the design that contribute to the house having low environmental impact – such as", openList: true, group: {"claimMax":3,"perOption":5,"options":["the cedar cladding finish on the exterior is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction","the tree planting indicated reduces the visual impact of the building and help with carbon sequestration","the planting of trees indicated in the drawing softens the contrast between the natural setting and the geometric nature of the architecture","trees to provide shade, food and shelter for birds and humans and aid biodiversity","the cedar cladding needs no preservatives, naturally durable","the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere","the large areas of glazing and the double height glazing, which are presumed to be south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating","the smaller windows to the north-facing elevations reduce heat loss and help conserve energy"]} },
-    { id: "cons-2016-hl-q6-a-r2", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 15, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":3,"perOption":5,"options":["the stove and associated flue are placed against an inner wall of high thermal mass, increasing the storage of heat within the fabric of the house","wood burning stoves are carbon neutral and stoves are up to 70% efficient","open-plan, naturally lighted layout","short circulation areas and corridors","hot press adjacent to bathroom and kitchen, short pipe runs and reduced hot water run off needed","the entrance lobby/storm porch greatly reduces the loss of heated air when the door is used","the compactness of the design reduces the volume of the air to be heated","the area and orientation of the fenestration support the use of passive solar gain to complement space heating","the compact footprint of the building reduces the area of the exterior envelope of the building, helping to conserve materials and heat"]} },
+    { id: "cons-2016-hl-q6-a-notes", kind: "anyN", verbatim: "Three low-environmental-impact design features — Notes", marks: 15, contextNote: "Choose three distinct features shown in the supplied design. Each selected feature needs a detailed note and is worth 5 marks.", openList: true, group: {"claimMax":3,"perOption":5,"options":["the cedar cladding finish on the exterior is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction","the tree planting indicated reduces the visual impact of the building and help with carbon sequestration","the planting of trees indicated in the drawing softens the contrast between the natural setting and the geometric nature of the architecture","trees to provide shade, food and shelter for birds and humans and aid biodiversity","the cedar cladding needs no preservatives, naturally durable","the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere","the large areas of glazing and the double height glazing, which are presumed to be south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating","the smaller windows to the north-facing elevations reduce heat loss and help conserve energy","the stove and associated flue are placed against an inner wall of high thermal mass, increasing the storage of heat within the fabric of the house","wood burning stoves are carbon neutral and stoves are up to 70% efficient","open-plan, naturally lighted layout","short circulation areas and corridors","hot press adjacent to bathroom and kitchen, short pipe runs and reduced hot water run off needed","the entrance lobby/storm porch greatly reduces the loss of heated air when the door is used"]} },
+    { id: "cons-2016-hl-q6-a-sketches", kind: "criterion", verbatim: "Three selected design features — Sketches", marks: 15, contextNote: "The scheme awards 5 marks for the freehand sketch accompanying each of the three selected features. Claim this only when all three sketches communicate their design details." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Construction Studies 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -237,13 +247,21 @@ export const CARDS: SecCard[] = [
     id: "cons-2016-hl-q10-b", topicId: "cons-6-3", conceptId: "passive-house-shown-overheats-summer-reasons",
     section: "B", questionRef: "2016 HL Q10(b)",
     questionText: "The Passive House shown overheats in summer. Discuss two reasons why overheating occurs and, using notes and freehand sketches, show two design details for the house that would reduce the possibility of overheating.",
-    tariffModel: {"kind":"fixed","notation":"2 x 6 + 2 x 6 + 3 x 6 + 3 x 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 60,
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2016-hl-q10-b-r1", kind: "anyN", verbatim: "Extended roof overhang", marks: 12, contextNote: "Extended roof overhang", openList: true, group: {"claimMax":2,"perOption":6,"options":["an overhang / extended eaves / to reduce the amount of solar heat gain in summertime","the angle of the sun is higher during the summer than it is during the winter. By using a correctly designed overhang, the amount of solar heat gained from the summer sun is reduced. due to the lower angle of the winter sun, winter solar heat gain will not be affected","ensure MHRV unit has summer bypass setting","the maximum angle of the summer sun can be calculated by using the following formula 90° - latitude + 23.5° = maximum sun angle","the minimum angle of the winter sun can be calculated by using the following formula 90° - latitude - 23.5° = minimum sun angle","designed to allow purging of overheated air – through and through ventilation with openable windows at both ends of building to allow through draught and cooling","using the above information an appropriate overhang can be designed"]} },
-    { id: "cons-2016-hl-q10-b-r2", kind: "anyN", verbatim: "Brise Soleil", marks: 12, contextNote: "Brise Soleil", openList: true, group: {"claimMax":2,"perOption":6,"options":["this works on the same principle as the overhang and is used to reduce the amount of summer sun entering a building","adjustable brise soleil can be adjusted to suit the weather conditions at a particular time","external roller blinds, awnings and sliding screens are the most common types"]} },
-    { id: "cons-2016-hl-q10-b-r3", kind: "anyN", verbatim: "Dynamic Glass", marks: 18, contextNote: "Dynamic Glass", openList: true, group: {"claimMax":3,"perOption":6,"options":["standard float glass with an electrochromic coating applied on one of the surfaces","automatically adjusts its tint in response to environmental conditions","eliminates the need for blinds or shades","allows visible light to enter the building while filtering out infra-red and ultraviolet light"]} },
-    { id: "cons-2016-hl-q10-b-r4", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 18, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":3,"perOption":6,"options":["can be used in any situation where excessive solar heat gain is likely to be an issue, for example south facing glazing","dynamic glass allows control over the amount of infra-red as well as solar gain that enters the building","occupants can manually control tint of glass by apps on smart phones / tablets or by wall switches","achieves a reduction of up to 20% in energy consumption","provides an important advancement in sustainable design"]} },
+    { id: "cons-2016-hl-q10-b-reasons", kind: "anyN", verbatim: "Reasons why the Passive House may overheat", marks: 12, contextNote: "Select two distinct, discussed reasons; each is worth 6 marks.", openList: true, group: {"claimMax":2,"perOption":6,"options":["passive standard – overheating occurs if internal temperature greater than 25° for 36 days (10%) days annually","inadequate or no over-shading of windows – no roof overhang, balcony or brise-soleil","insufficient ventilation – natural or mechanical","insufficient thermal mass - not appropriate to house size","poor design detailing, long unvented corridors, small isolated rooms, poor placement of windows","large amounts of south facing glazing resulting in too much solar heat gain","inadequate natural shading","in addition to solar heat gain, heat produced inside the house, lighting, appliances, hot water production and cooking all add to overheating"]} },
+    { id: "cons-2016-hl-q10-b-details", kind: "anyN", verbatim: "Design details that reduce overheating", marks: 12, contextNote: "Select two distinct note-and-sketch design details; each complete detail is worth 6 marks.", openList: true, group: {"claimMax":2,"perOption":6,"options":["an overhang / extended eaves / to reduce the amount of solar heat gain in summertime","this works on the same principle as the overhang and is used to reduce the amount of summer sun entering a building","Include thermal mass in design, external insulation with concrete walls and floors to absorb heat and release slowly","automatically adjusts its tint in response to environmental conditions"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Construction Studies 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -322,6 +340,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2016-hl-q7-b-r1", kind: "anyN", verbatim: "On your drawing, show two considerations to be taken into account in the design of the chimney stack shown which will he", marks: 4, openList: true, group: {"claimMax":2,"perOption":2,"options":["Design detail 1 -","Design detail 2 -"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Construction Studies 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -378,10 +406,22 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q2-c", topicId: "cons-5-6", conceptId: "proposed-design-layout-bathroom-design-location",
     section: "B", questionRef: "2017 HL Q2(c)",
     questionText: "Using notes and freehand sketches, show a proposed design layout for the bathroom at A. On your design sketches, show the location of the shower area, W.C., wash basin and grab rails. Include appropriate dimensions. On a separate sketch, show one design detail that will prevent the penetration of sewer gases into the bathroom at the W.C.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 4","answer":6,"ofParts":9,"perPart":4}, totalMarks: 24,
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2017-hl-q2-c-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show a proposed design layout for the bathroom at A. On your design sketches, show th", marks: 24, openList: true, group: {"claimMax":6,"perOption":4,"options":["Location of shower area","Location of W.C","Location of wash basin","Grab rails","Dimensions of turning circle/door/any 2 dimensions","Design detail to prevent the penetration of sewer gases","Separate Sketch","Scrúdú Ardteistiméireachta, 2017 Staidéar Foirgníochta, Ardleibhéal","___________________________________________________________________________________________________________"]} },
+    { id: "cons-2017-hl-q2-c-locations", kind: "anyN", verbatim: "Bathroom fixture locations", marks: 16, group: {"claimMax":4,"perOption":4,"options":["Location of shower area","Location of W.C.","Location of wash basin","Grab rails"]} },
+    { id: "cons-2017-hl-q2-c-dimensions", kind: "point", verbatim: "Dimensions of turning circle/door/any 2 dimensions", marks: 4 },
+    { id: "cons-2017-hl-q2-c-sewer-gases", kind: "point", verbatim: "Design detail to prevent the penetration of sewer gases", marks: 4, contextNote: "Show this design detail on the separate sketch required by the printed task." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Construction Studies 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -417,10 +457,127 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q4-c", topicId: "cons-1-1", conceptId: "construction-wall-type-selected-under-headings",
     section: "B", questionRef: "2017 HL Q4(c)",
     questionText: "Discuss the construction of each wall type selected under the following headings: • environmental considerations • ease of construction.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 3","answer":4,"ofParts":5,"perPart":3}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2017-hl-q4-c-r1", kind: "anyN", verbatim: "Discuss the construction of each wall type selected under the following headings: • environmental considerations • ease ", marks: 12, openList: true, group: {"claimMax":4,"perOption":3,"options":["Wall type 1","Environmental consideration","Ease of construction","Wall type","Scrúdú Ardteistiméireachta, 2017 Staidéar Foirgníochta, Ardleibhéal"]} },
+    { id: "cons-2017-hl-q4-c-concrete-environment", kind: "point", verbatim: "Concrete block construction — Environmental consideration", marks: 3, contextNote: "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time." },
+    { id: "cons-2017-hl-q4-c-concrete-ease", kind: "point", verbatim: "Concrete block construction — Ease of construction", marks: 3, contextNote: "Relevant points include readily available skilled trades, standard components and largely on-site construction." },
+    { id: "cons-2017-hl-q4-c-timber-environment", kind: "point", verbatim: "Timber frame construction — Environmental consideration", marks: 3, contextNote: "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts." },
+    { id: "cons-2017-hl-q4-c-timber-ease", kind: "point", verbatim: "Timber frame construction — Ease of construction", marks: 3, contextNote: "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands." },
     ],
+    answerVariants: [
+          {
+                "id": "concrete-and-timber",
+                "label": "Concrete block + timber frame",
+                "rows": [
+                      {
+                            "id": "cons-2017-hl-q4-c-concrete-environment",
+                            "kind": "point",
+                            "verbatim": "Concrete block construction — Environmental consideration",
+                            "marks": 3,
+                            "contextNote": "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-concrete-ease",
+                            "kind": "point",
+                            "verbatim": "Concrete block construction — Ease of construction",
+                            "marks": 3,
+                            "contextNote": "Relevant points include readily available skilled trades, standard components and largely on-site construction."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-timber-environment",
+                            "kind": "point",
+                            "verbatim": "Timber frame construction — Environmental consideration",
+                            "marks": 3,
+                            "contextNote": "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-timber-ease",
+                            "kind": "point",
+                            "verbatim": "Timber frame construction — Ease of construction",
+                            "marks": 3,
+                            "contextNote": "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands."
+                      }
+                ]
+          },
+          {
+                "id": "concrete-and-hemp-lime",
+                "label": "Concrete block + hemp-lime",
+                "rows": [
+                      {
+                            "id": "cons-2017-hl-q4-c-concrete-environment",
+                            "kind": "point",
+                            "verbatim": "Concrete block construction — Environmental consideration",
+                            "marks": 3,
+                            "contextNote": "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-concrete-ease",
+                            "kind": "point",
+                            "verbatim": "Concrete block construction — Ease of construction",
+                            "marks": 3,
+                            "contextNote": "Relevant points include readily available skilled trades, standard components and largely on-site construction."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-hemp-environment",
+                            "kind": "point",
+                            "verbatim": "Timber frame and hemp-lime construction — Environmental consideration",
+                            "marks": 3,
+                            "contextNote": "Relevant points include sustainable fast-growing hemp, low manufacturing energy, carbon storage and breathability, balanced against sourcing, licensing and airtightness."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-hemp-ease",
+                            "kind": "point",
+                            "verbatim": "Timber frame and hemp-lime construction — Ease of construction",
+                            "marks": 3,
+                            "contextNote": "Relevant points include familiar timber skills, simple on-site mixing and quick enclosure, balanced against scarce skills and materials."
+                      }
+                ]
+          },
+          {
+                "id": "timber-and-hemp-lime",
+                "label": "Timber frame + hemp-lime",
+                "rows": [
+                      {
+                            "id": "cons-2017-hl-q4-c-timber-environment",
+                            "kind": "point",
+                            "verbatim": "Timber frame construction — Environmental consideration",
+                            "marks": 3,
+                            "contextNote": "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-timber-ease",
+                            "kind": "point",
+                            "verbatim": "Timber frame construction — Ease of construction",
+                            "marks": 3,
+                            "contextNote": "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-hemp-environment",
+                            "kind": "point",
+                            "verbatim": "Timber frame and hemp-lime construction — Environmental consideration",
+                            "marks": 3,
+                            "contextNote": "Relevant points include sustainable fast-growing hemp, low manufacturing energy, carbon storage and breathability, balanced against sourcing, licensing and airtightness."
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-c-hemp-ease",
+                            "kind": "point",
+                            "verbatim": "Timber frame and hemp-lime construction — Ease of construction",
+                            "marks": 3,
+                            "contextNote": "Relevant points include familiar timber skills, simple on-site mixing and quick enclosure, balanced against scarce skills and materials."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Construction Studies 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -451,9 +608,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q5-c", topicId: "cons-6-1", conceptId: "calculate-cost-heat-lost-annually-through",
     section: "B", questionRef: "2017 HL Q5(c)",
     questionText: "Calculate the cost of heat lost annually through the upgraded wall at 5(b) above, using the following data: Area of external wall 140 m2 Average internal temperature 18 °C Average external temperature 6 °C U-value of wall 0.15 W/m2 °C Heating period 8 hours per day, every day, for 36 weeks per annum Cost of oil 98 cent per litre Calorific value of oil 37350 kJ per litre 1000 Watts 1 kJ per second.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":7,"perPart":3}, totalMarks: 15,
+    tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":5,"perPart":3}, totalMarks: 15,
     rows: [
-    { id: "cons-2017-hl-q5-c-r1", kind: "anyN", verbatim: "Calculate the cost of heat lost annually through the upgraded wall at 5(b) above, using the following data: Area of exte", marks: 15, openList: true, group: {"claimMax":5,"perOption":3,"options":["Heat loss formula and calculation","Heating duration for one year","k/Joules calculation for one year","Litres of oil for one year","Annual cost of heat loss","Scrúdú Ardteistiméireachta, 2017 Staidéar Foirgníochta, Ardleibhéal","___________________________________________________________________________________________________________"]} },
+    { id: "cons-2017-hl-q5-c-r1", kind: "anyN", verbatim: "Calculate the cost of heat lost annually through the upgraded wall at 5(b) above, using the following data: Area of exte", marks: 15, contextNote: "The scheme groups its answer under: Area = 140 m2 Temp difference = 12; 1000", openList: true, group: {"claimMax":5,"perOption":3,"options":["Heat loss formula and calculation","Heating duration for one year","k/Joules calculation for one year","Litres of oil for one year","Annual cost of heat loss"]} },
     ],
   } as SecCard,
   {
@@ -477,10 +634,21 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q6-b", topicId: "cons-1-1", conceptId: "features-given-design-contribute-making-house",
     section: "B", questionRef: "2017 HL Q6(b)",
     questionText: "Using notes and freehand sketches, discuss in detail three features of the given design that contribute to making the house eco-friendly.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 5","answer":6,"ofParts":8,"perPart":5}, totalMarks: 30,
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "cons-2017-hl-q6-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, discuss in detail three features of the given design that contribute to making the ho", marks: 30, openList: true, group: {"claimMax":6,"perOption":5,"options":["Three features of the design that make the house an eco-friendly house - such as","___________________________________________________________________________________________________________","Adding to the building fabric","Install evacuated tubes","Install photovoltaic (PV) panels to generate on-site renewable energy","Wind generator to generate electricity from the wind","___________________________________________________________________________________________________________","Rainwater harvesting"]} },
+    { id: "cons-2017-hl-q6-b-notes", kind: "anyN", verbatim: "Three eco-friendly design features — Notes", marks: 15, contextNote: "Choose three distinct features shown in the supplied design. Each selected feature needs a detailed note and is worth 5 marks.", openList: true, group: {"claimMax":3,"perOption":5,"options":["the house - except for foundations, ground floor, chimney stack and internal plasterboard for fire-proofing - is entirely constructed from wood","wood is renewable, carbon neutral and has low embodied energy","simple building form appropriate to eco-friendly design","the native larch finish on the exterior, is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction","larch cladding is naturally durable and needs no preservatives – can be flame charred as a finish","reduced transport costs as larch is available in Ireland and does not have to be imported or transported long distances","lightweight timber-frame building needs smaller foundations – eco-friendly","the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere","the large areas of glazing, which are south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating","there are no windows to the north, thus reducing heat loss and helping conserve energy","external storage space to the north, at rear, builds a buffer zone to outside, reducing heat loss through the cold north facing external walls","the stove and flue are placed against an inner chimney stack of high thermal mass, increasing the storage of heat and keeping the heat within the fabric of the house","wood burning stoves are carbon neutral and are about 70% efficient","purposely designed open-plan, naturally lighted layout with no corridors, all space is useable, no wasted floor area – 1.5 storeys for maximum use of upper floor area"]} },
+    { id: "cons-2017-hl-q6-b-sketches", kind: "criterion", verbatim: "Three eco-friendly features — Sketches", marks: 15, contextNote: "The scheme awards 5 marks for the freehand sketch accompanying each of the three selected features. Claim this only when all three sketches communicate their design details." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Construction Studies 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -490,10 +658,21 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q6-c", topicId: "cons-1-1", conceptId: "low-operating-costs-are-important-consideration",
     section: "B", questionRef: "2017 HL Q6(c)",
     questionText: "Low operating costs are an important consideration in eco-friendly design. Using notes and freehand sketches, discuss two features that could be added to the design that would further reduce the operating costs of the house.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 5","answer":4,"ofParts":4,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "cons-2017-hl-q6-c-r1", kind: "anyN", verbatim: "Low operating costs are an important consideration in eco-friendly design. Using notes and freehand sketches, discuss tw", marks: 20, openList: true, group: {"claimMax":4,"perOption":5,"options":["Feature 1 (Note and Sketch)","Feature 2 (Note and Sketch)","Scrúdú Ardteistiméireachta, 2017 Staidéar Foirgníochta, Ardleibhéal","___________________________________________________________________________________________________________"]} },
+    { id: "cons-2017-hl-q6-c-notes", kind: "anyN", verbatim: "Two additional low-operating-cost features — Notes", marks: 10, contextNote: "Choose two distinct additions and discuss each in a detailed note; each note is worth 5 marks.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Adding to the building fabric","Install evacuated tubes","Install photovoltaic (PV) panels to generate on-site renewable energy","Wind generator to generate electricity from the wind","Rainwater harvesting"]} },
+    { id: "cons-2017-hl-q6-c-sketches", kind: "criterion", verbatim: "Two additional features — Sketches", marks: 10, contextNote: "The scheme awards 5 marks for the freehand sketch accompanying each selected addition. Claim this only when both sketches communicate their design details." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Construction Studies 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -559,14 +738,24 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q9-a", topicId: "cons-2-4", conceptId: "reinforced-concrete-strip-foundation-supports-400",
     section: "B", questionRef: "2017 HL Q9(a)",
     questionText: "A reinforced concrete strip foundation supports a 400 mm concrete block external wall with an insulated cavity, as shown. Using notes and freehand sketches, show the typical design detailing of the foundation. Indicate the position of the reinforcement in the foundation. Specify three typical dimensions and discuss the reasons for the dimensions you have specified.",
-    tariffModel: {"kind":"fixed","notation":"1 x 4 + 1 x 4 + 1 x 4 + 1 x 4 + 1 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "cons-2017-hl-q9-a-r1", kind: "anyN", verbatim: "Reasons for dimensions specified depth of trench below ground", marks: 4, contextNote: "Reasons for dimensions specified depth of trench below ground", openList: true, group: {"claimMax":1,"perOption":4,"options":["typically 1000 - 1200 mm below ground level and below frost line, so there is no movement of soil owing to freezing and thawing","usually solid, compacted soil at this level","further depth if required until solid base is achieved. width of trench","typically wall thickness × 3, 1200 mm","to spread the load over wide area","to provide for sufficient reinforcement","to allow workers lay the blockwork to ground level","to provide level base for wall reinforcement","typically 12 mm mild steel bars longitudinally and traverse","tied at junctions","50 mm cover to bars to prevent ingress of water, water causes the bars to rust and expand, resulting in spalling of the concrete and reduction in strength"]} },
-    { id: "cons-2017-hl-q9-a-r2", kind: "anyN", verbatim: "9(b) Mixing: - For maximum strength of concrete", marks: 4, contextNote: "9(b) Mixing: - For maximum strength of concrete", openList: true, group: {"claimMax":1,"perOption":4,"options":["ensure aggregates and water are free from impurities and contaminants","batching of aggregates must be accurate and comply with required strength","if batching by volume, consideration must be given to the bulking of fine aggregates","mechanical mixing best – readymix","in extreme weather protect aggregates from frost and direct sunlight","proportion and size of aggregate impacts strength of concrete","smaller aggregate gives increased workability but reduces strength"]} },
-    { id: "cons-2017-hl-q9-a-r3", kind: "anyN", verbatim: "Placing", marks: 4, contextNote: "Placing", openList: true, group: {"claimMax":1,"perOption":4,"options":["the batch of concrete should be workable enough to allow placing without voids being formed","extra water to increase workability leads to weaker concrete","the wet concrete should be carefully placed, avoid dropping from height as this will lead to separation of the mix with coarse aggregate sinking to the bottom and fine aggregate floating on top","preparation of formwork is essential to ensure that it will not be deflected by the weight of the concrete","the surfaces of the formwork should be treated with oil to stop adhesion of the concrete","the formwork should be watertight to avoid the water-cement paste being washed out"]} },
-    { id: "cons-2017-hl-q9-a-r4", kind: "anyN", verbatim: "Compacting", marks: 4, contextNote: "Compacting", openList: true, group: {"claimMax":1,"perOption":4,"options":["it is important that the aggregates and the water-cement paste are firmly in close contact to ensur e that the chemical reaction occurs evenly throughout","a tamping beam is used to compact the concrete as it is placed in layers","ideally mechanical vibration to be used to aid compaction","the mechanical vibration causes air bubbles to rise to the top and collapses any voids","care should be taken to avoid contact between the vibrator and the formwork which can cause separation of the coarse and fine aggregate close to the formwork"]} },
-    { id: "cons-2017-hl-q9-a-r5", kind: "anyN", verbatim: "Curing", marks: 4, contextNote: "Curing", openList: true, group: {"claimMax":1,"perOption":4,"options":["the initial setting begins immediately on mixing and the concrete should be placed within approximately thirty minutes","curing is the process by which concrete continues to gain strength following the initial set curing is continuous for hours, days, weeks and even years","newly placed concrete should be kept damp through the early stages of curing","sketch","in hot weather this may involve the protection of the top surface of the concrete with a moisture-retaining fabric (hessian material) and apply misting water over the hessian at reqular intervals","the longer concrete is kept moist the stronger and more durable it becomes","in cold weather concrete protected from frost using straw/jute/polythene/ insulation - see sketch"]} },
+    { id: "cons-2017-hl-q9-a-sketch", kind: "criterion", verbatim: "Sketch of foundation", marks: 4, contextNote: "Show the typical reinforced-concrete strip-foundation detail for the 400 mm cavity wall." },
+    { id: "cons-2017-hl-q9-a-note", kind: "point", verbatim: "Foundation design detailing — Note", marks: 4, contextNote: "Annotate the foundation construction shown in the sketch." },
+    { id: "cons-2017-hl-q9-a-reinforcement", kind: "point", verbatim: "Position of reinforcement", marks: 4, contextNote: "Typical details include 12 mm longitudinal and transverse mild-steel bars, tied at junctions, with 50 mm concrete cover." },
+    { id: "cons-2017-hl-q9-a-dimensions", kind: "point", verbatim: "Three typical dimensions", marks: 4, contextNote: "Examples include a trench 1000–1200 mm below ground, width about three times the wall thickness (1200 mm), 12 mm bars and 50 mm cover." },
+    { id: "cons-2017-hl-q9-a-reasons", kind: "point", verbatim: "Reasons for dimensions specified", marks: 4, contextNote: "Relate the depth to the frost line and solid ground, the width to spreading load and working space, and cover to protecting reinforcement from water and corrosion." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Construction Studies 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -576,9 +765,10 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q9-c", topicId: "cons-1-1", conceptId: "test-may-carried-out-measure-consistency",
     section: "B", questionRef: "2017 HL Q9(c)",
     questionText: "Using notes and freehand sketches, describe one test that may be carried out to measure consistency in the quality of all concrete delivered to a site.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 8","answer":2,"ofParts":3,"perPart":8}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"1 x 8 + 1 x 8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
     rows: [
-    { id: "cons-2017-hl-q9-c-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe one test that may be carried out to measure consistency in the quality of al", marks: 16, openList: true, group: {"claimMax":2,"perOption":8,"options":["Procedure","___________________________________________________________________________________________________________","Cube Test"]} },
+    { id: "cons-2017-hl-q9-c-r1", kind: "anyN", verbatim: "Procedure", marks: 8, contextNote: "Procedure", openList: true, group: {"claimMax":1,"perOption":8,"options":["clean the internal surface of the mould and apply oil","place the mould on a smooth horizontal non-porous base plate","fill the mould with the prepared concrete mix in 3 approximately equal layers","tamp each layer with 25 strokes of the rounded end of the tamping rod in a uniform manner over the cross section of the mould","for the subsequent layers, the tamping should penetrate into the underlying layer","remove the excess concrete and level the surface with a trowel","clean away the mortar or water leaked out between the mould and the base plate","raise the mould from the concrete immediately and slowly in vertical direction","measure the slump as the difference between the height of the mould and that of high point of the specimen being tested","the greater the slump, the weaker the concrete","batches for the same job, i.e. foundations - should have the same slump"]} },
+    { id: "cons-2017-hl-q9-c-r2", kind: "anyN", verbatim: "Cube Test", marks: 8, contextNote: "Cube Test", openList: true, group: {"claimMax":1,"perOption":8,"options":["the cube test assesses the strength of concrete used in a structure, by selecting a sample cube of the concrete and by testing that sample","clean and lightly oil all surfaces of the steel cube mould","select a representative sample of concrete","place the concrete in the mould in three equal layers","tamp each layer 6 times with the tamping rod","clean off surplus concrete and rub exposed top surface smooth using a steel trowel","store the concrete cube overnight internally and ensure an ambient room temperature is maintained","strike the steel mould after 12 hours","record essential information-(date/ strength/ location) on the top surface of the cube using a waterproof marker","store the concrete cube in a designated heated water storage tank until collected and brought to the testing facility","cubes may be tested at 7 day intervals starting from the date of pouring (7, 14, 21, 28 days)","cubes are tested using Uniformly Distributed Loading, UDL applied at constant increasing pressure - to destruction","the crushing strength is recorded as N/mm2"]} },
     ],
   } as SecCard,
   {
@@ -589,9 +779,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q10-a", topicId: "cons-6-2", conceptId: "importance-passive-house-design-airtightness-indoor",
     section: "B", questionRef: "2017 HL Q10(a)",
     questionText: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • airtightness • indoor air quality • solar shading.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 12","answer":2,"ofParts":5,"perPart":12}, totalMarks: 24,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 12","answer":2,"ofParts":3,"perPart":12}, totalMarks: 24,
     rows: [
-    { id: "cons-2017-hl-q10-a-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • airtigh", marks: 24, openList: true, group: {"claimMax":2,"perOption":12,"options":["Airtightness","Indoor Air Quality","Solar Shading","10(b) How a mechanical heat recovery ventilation system works","10(c) Locating the MHRV unit in the hallway as shown has advantages - such as"]} },
+    { id: "cons-2017-hl-q10-a-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • airtigh", marks: 24, openList: true, group: {"claimMax":2,"perOption":12,"options":["Airtightness","Indoor Air Quality","Solar Shading"]} },
     ],
   } as SecCard,
   {
@@ -604,7 +794,7 @@ export const CARDS: SecCard[] = [
     questionText: "The diagram shows the ground floor plan of a semi-detached house. Also shown is the location M in the hallway, of the Mechanical Heat Recovery with Ventilation (MHRV) unit. Draw a line diagram of the given room layout and show a typical design for the ducting to the MHRV unit. Indicate clearly the direction of the airflow in the ducts and describe how the MHRV system works.",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 6","answer":4,"ofParts":4,"perPart":6}, totalMarks: 24,
     rows: [
-    { id: "cons-2017-hl-q10-b-r1", kind: "anyN", verbatim: "The diagram shows the ground floor plan of a semi-detached house. Also shown is the location M in the hallway, of the Me", marks: 24, openList: true, group: {"claimMax":4,"perOption":6,"options":["Line diagram of room layout","Design for ducting to MHRV unit","Direction of airflow in ducts","Description of how system works"]} },
+    { id: "cons-2017-hl-q10-b-r1", kind: "anyN", verbatim: "How a mechanical heat recovery ventilation system works", marks: 24, contextNote: "How a mechanical heat recovery ventilation system works", openList: true, group: {"claimMax":4,"perOption":6,"options":["a MHRV system provides a constant supply of clean fresh pre-heated air to a building while also removing moisture laden air from “wet rooms” such as bathrooms and kitchens","the unit is generally located within the insulation layer of the building on an external wall, from this a carefully designed arrangement of ductwork extracts warm moist air from rooms such as bathrooms and kitchens","the warm air is passed through a heat exchanger that pre-heats cool fresh incoming air, the incoming air also passes through a particle filter that removes dust and pollen ensuring that the air supplied to the house is clean","fresh, clean pre-heated air is now pumped through another separate arrangement of ductwork to strategic locations in the living spaces of the building, thus ensuring an adequate supply of preheated, fresh, clean air throughout the building"]} },
     ],
     figure: {
           "candId": "construction-studies-2017-hl-paper-p005-i0",
@@ -623,9 +813,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q10-c", topicId: "cons-1-2", conceptId: "advantages-siting-mhrv-unit-hallway-shown",
     section: "B", questionRef: "2017 HL Q10(c)",
     questionText: "Discuss two advantages of siting the MHRV unit in the hallway, as shown.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":3,"perPart":6}, totalMarks: 12,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":5,"perPart":6}, totalMarks: 12,
     rows: [
-    { id: "cons-2017-hl-q10-c-r1", kind: "anyN", verbatim: "Discuss two advantages of siting the MHRV unit in the hallway, as shown.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["Advantage 1","Advantage 2","Scrúdú Ardteistiméireachta, 2017 Staidéar Foirgníochta, Ardleibhéal"]} },
+    { id: "cons-2017-hl-q10-c-r1", kind: "anyN", verbatim: "Locating the MHRV unit in the hallway as shown has advantages - such as", marks: 12, contextNote: "Locating the MHRV unit in the hallway as shown has advantages - such as", openList: true, group: {"claimMax":2,"perOption":6,"options":["it is located on an external wall so extract and intake ducts can be taken directly out through the external wall","it is positioned away from the living spaces and bedrooms therefore minimising the impact of noise from the unit","the unit is contained in a press, minimising any visual impact it may have","the location of the unit in the hallway allows easy access for regular maintenance and filter change","its location in the internal environment, inside the insulation layer minimises any heat loss that may occur in ducting"]} },
     ],
     figure: {
           "candId": "construction-studies-2017-hl-paper-p005-i0",
@@ -658,10 +848,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q3-c", topicId: "cons-1-1", conceptId: "advantages-building-extension-farmhouse-shown",
     section: "B", questionRef: "2017 HL Q3(c)",
     questionText: "Discuss two advantages of building an extension to the farmhouse shown.",
-    tariffModel: {"kind":"fixed","notation":"1 x 5 + 1 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":14,"perPart":5}, totalMarks: 10,
     rows: [
-    { id: "cons-2017-hl-q3-c-r1", kind: "anyN", verbatim: "Two advantages of building an extension to the farmhouse shown – such as", marks: 5, contextNote: "Two advantages of building an extension to the farmhouse shown – such as", openList: true, group: {"claimMax":1,"perOption":5,"options":["there is an existing high quality vernacular house on site – extending it maintains the character of the house but enhances its possibilities","benefit from existing rear garden, trees, shrubs, plants – enhances wellbeing and creates a pleasant indoor atmosphere, close to nature – sounds, sights, smells, changing seasons","low environment impact – the extension is small in size but increases the flexibility of kitchen/dining/ living space","low environmental demands – services such as water, electricity, sewage treatment, roads etc. are already on site, minimum disruption needed to greatly enhance the living space","modest scale, modest costs, low borrowing requirements","highest thermal standards – orientation, insulation, airtightness – low operating cost to heat and light","single storey facilitates roof lights for penetration of natural light and sunlight","minimum energy required to extend – opening with lintels formed in rear wall – no specialised components or steel lintels needed, so minimum environmental impact and low embodied energy","modest scale is environmentally sustainable - small spans, restricted material requirements, compact form, easy to manage, clean and maintain","occupants can live in house while extension is being built, extension built first, last task is to form opening between extension and existing house – cost effective","increases living space and allows for individual requirements and preferences of owners to be incorporated into the farmhouse design and layout","provides a more light-filled comfortable interior space taking advantage of natural sunlight if extension is appropriately designed","increased levels of solar gain due to the extra glazing on the southern façade results in a more comfortable living space","reduction in energy consumption in lighting and heating will decrease the carbon footprint of the farmhouse"]} },
-    { id: "cons-2017-hl-q3-c-r2", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 5, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":1,"perOption":5,"options":["appropriate, well designed extensions to traditional vernacular buildings will serve as exemplars of good practice to those in the locality who may own, or might be considering purchasing such a building","demonstrates a respect for maintaining vernacular building and tradition and will encourage others in the locality to consider a similar approach"]} },
+    { id: "cons-2017-hl-q3-c-r1", kind: "anyN", verbatim: "Two advantages of building an extension to the farmhouse shown – such as", marks: 10, contextNote: "Two advantages of building an extension to the farmhouse shown – such as", openList: true, group: {"claimMax":2,"perOption":5,"options":["there is an existing high quality vernacular house on site – extending it maintains the character of the house but enhances its possibilities","benefit from existing rear garden, trees, shrubs, plants – enhances wellbeing and creates a pleasant indoor atmosphere, close to nature – sounds, sights, smells, changing seasons","low environment impact – the extension is small in size but increases the flexibility of kitchen/dining/ living space","low environmental demands – services such as water, electricity, sewage treatment, roads etc. are already on site, minimum disruption needed to greatly enhance the living space","modest scale, modest costs, low borrowing requirements","highest thermal standards – orientation, insulation, airtightness – low operating cost to heat and light","single storey facilitates roof lights for penetration of natural light and sunlight","minimum energy required to extend – opening with lintels formed in rear wall – no specialised components or steel lintels needed, so minimum environmental impact and low embodied energy","modest scale is environmentally sustainable - small spans, restricted material requirements, compact form, easy to manage, clean and maintain","occupants can live in house while extension is being built, extension built first, last task is to form opening between extension and existing house – cost effective","increases living space and allows for individual requirements and preferences of owners to be incorporated into the farmhouse design and layout","provides a more light-filled comfortable interior space taking advantage of natural sunlight if extension is appropriately designed","increased levels of solar gain due to the extra glazing on the southern façade results in a more comfortable living space","reduction in energy consumption in lighting and heating will decrease the carbon footprint of the farmhouse"]} },
     ],
     figure: {
           "candId": "construction-studies-2017-hl-paper-p002-i1",
@@ -680,9 +869,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q4-a", topicId: "cons-3-3", conceptId: "functional-requirements-external-wall-new-dwelling",
     section: "B", questionRef: "2017 HL Q4(a)",
     questionText: "Discuss, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwelling house.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 4","answer":6,"ofParts":14,"perPart":4}, totalMarks: 24,
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2017-hl-q4-a-r1", kind: "anyN", verbatim: "Discuss, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwellin", marks: 24, openList: true, group: {"claimMax":6,"perOption":4,"options":["Concrete block wall","Timber frame with rainscreen","Rendered wall of timber frame and hemp-lime construction","___________________________________________________________________________________________________________","Positives","Negatives","Ease of construction","Positives: environmental considerations","Negatives","Ease of construction - Positives","Negatives","Positives","Negatives","Ease of construction - Positives"]} },
+    { id: "cons-2017-hl-q4-a-requirements", kind: "anyN", verbatim: "Three functional requirements — discussed note and freehand sketch", marks: 24, contextNote: "Choose three distinct functional requirements. For each one, the scheme awards 4 marks for the discussed note and 4 marks for the communicating freehand sketch.", openList: true, group: {"claimMax":3,"perOption":8,"options":["keep the occupants safe, dry and warm and sheltered from the elements","prevent the transfer of heat to the outside or to the inside of the dwelling","provide for the reduction of noise from outside and inside","anchor roof to walls and support the floors/upper floor(s) and roof","spread the superimposed loads evenly over the foundations","provide robust openings for doors and windows","have sufficient structural integrity to avoid cracks or other failure under load","provide low-maintenance, climate-proof exterior surfaces and finishes","have no cold bridges and be designed to have low embodied energy","prevent the formation of condensation and dampness","prevent interstitial dampness","prevent the uncontrolled passage of air through the structure","prevent the ingress of water","prevent access of vermin to the building and the roof space","be aesthetically pleasing and be in keeping with the surroundings of the dwelling","provide a means of carbon sequestration"]} },
     ],
   } as SecCard,
   {
@@ -706,10 +895,177 @@ export const CARDS: SecCard[] = [
     id: "cons-2017-hl-q4-b", topicId: "cons-3-3", conceptId: "when-specifying-high-performance-external-wall",
     section: "B", questionRef: "2017 HL Q4(b)",
     questionText: "When specifying a high performance external wall for a new house, a choice is to be made between: • a rendered cavity wall of concrete block construction or • a wall of timber frame construction with a rainscreen of cedar cladding, as shown or • a rendered wall of timber frame and hemp-lime construction. Select any two of the above wall types, and using notes and freehand sketches, show the typical design detailing for each wall type selected. Name the typical components of each wall and include typical dimensions.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 5","answer":4,"ofParts":4,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2017-hl-q4-b-r1", kind: "anyN", verbatim: "When specifying a high performance external wall for a new house, a choice is to be made between: • a rendered cavity wa", marks: 20, openList: true, group: {"claimMax":4,"perOption":5,"options":["Sketch","Timber frame construction","Dimensions","Note"]} },
+    { id: "cons-2017-hl-q4-b-concrete-timber-notes", kind: "anyN", verbatim: "Selected wall systems — Notes", marks: 10, contextNote: "Name and annotate the typical components of both selected walls.", group: {"claimMax":2,"perOption":5,"options":["Concrete block construction","Timber frame construction"]} },
+    { id: "cons-2017-hl-q4-b-concrete-timber-sketches", kind: "anyN", verbatim: "Selected wall systems — Sketches", marks: 10, contextNote: "Each selected wall needs a freehand sketch communicating its typical design detailing.", group: {"claimMax":2,"perOption":5,"options":["Concrete block construction","Timber frame construction"]} },
+    { id: "cons-2017-hl-q4-b-concrete-timber-dimensions", kind: "anyN", verbatim: "Selected wall systems — Dimensions", marks: 4, contextNote: "Include typical dimensions for both selected walls.", group: {"claimMax":2,"perOption":2,"options":["Concrete block construction","Timber frame construction"]} },
     ],
+    answerVariants: [
+          {
+                "id": "concrete-and-timber",
+                "label": "Concrete block + timber frame",
+                "rows": [
+                      {
+                            "id": "cons-2017-hl-q4-b-concrete-timber-notes",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Notes",
+                            "marks": 10,
+                            "contextNote": "Name and annotate typical components such as cavities, insulation, airtight layers, rainscreen battens and racking.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 5,
+                                  "options": [
+                                        "Concrete block construction",
+                                        "Timber frame construction"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-b-concrete-timber-sketches",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Sketches",
+                            "marks": 10,
+                            "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 5,
+                                  "options": [
+                                        "Concrete block construction",
+                                        "Timber frame construction"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-b-concrete-timber-dimensions",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Dimensions",
+                            "marks": 4,
+                            "contextNote": "Include typical dimensions for both selected walls.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Concrete block construction",
+                                        "Timber frame construction"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "concrete-and-hemp-lime",
+                "label": "Concrete block + hemp-lime",
+                "rows": [
+                      {
+                            "id": "cons-2017-hl-q4-b-concrete-hemp-notes",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Notes",
+                            "marks": 10,
+                            "contextNote": "Name and annotate typical components including the 300–500 mm hemp-lime layer and breathable finishes where relevant.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 5,
+                                  "options": [
+                                        "Concrete block construction",
+                                        "Timber frame and hemp-lime construction"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-b-concrete-hemp-sketches",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Sketches",
+                            "marks": 10,
+                            "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 5,
+                                  "options": [
+                                        "Concrete block construction",
+                                        "Timber frame and hemp-lime construction"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-b-concrete-hemp-dimensions",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Dimensions",
+                            "marks": 4,
+                            "contextNote": "Include typical dimensions for both selected walls.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Concrete block construction",
+                                        "Timber frame and hemp-lime construction"
+                                  ]
+                            }
+                      }
+                ]
+          },
+          {
+                "id": "timber-and-hemp-lime",
+                "label": "Timber frame + hemp-lime",
+                "rows": [
+                      {
+                            "id": "cons-2017-hl-q4-b-timber-hemp-notes",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Notes",
+                            "marks": 10,
+                            "contextNote": "Name and annotate the rainscreen/timber-frame layers and the hemp-lime wall's breathable construction.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 5,
+                                  "options": [
+                                        "Timber frame construction",
+                                        "Timber frame and hemp-lime construction"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-b-timber-hemp-sketches",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Sketches",
+                            "marks": 10,
+                            "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 5,
+                                  "options": [
+                                        "Timber frame construction",
+                                        "Timber frame and hemp-lime construction"
+                                  ]
+                            }
+                      },
+                      {
+                            "id": "cons-2017-hl-q4-b-timber-hemp-dimensions",
+                            "kind": "anyN",
+                            "verbatim": "Selected wall systems — Dimensions",
+                            "marks": 4,
+                            "contextNote": "Include typical dimensions for both selected walls.",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Timber frame construction",
+                                        "Timber frame and hemp-lime construction"
+                                  ]
+                            }
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Construction Studies 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -732,9 +1088,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-hl-q2-c", topicId: "cons-1-8", conceptId: "strategies-would-promote-positive-safety-culture",
     section: "B", questionRef: "2018 HL Q2(c)",
     questionText: "Discuss in detail three strategies that would promote a positive safety culture among workers on a construction site.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 4","answer":3,"ofParts":3,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 4","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
     rows: [
-    { id: "cons-2018-hl-q2-c-r1", kind: "anyN", verbatim: "Discuss in detail three strategies that would promote a positive safety culture among workers on a construction site.", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["Strategy 1","Strategy 2","Strategy 3"]} },
+    { id: "cons-2018-hl-q2-c-r1", kind: "anyN", verbatim: "Discuss in detail three strategies that would promote a positive safety culture among workers on a construction site.", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["buddy system, a new employee be paired with a more experienced worker","ensure all workers are fully trained to carry out required tasks","regular appraisal by management to ensure safe practice by all workers","safe pass course mandatory for all workers","all workers look out for one another and alert to possible risks","manual handling course mandatory for all workers","operators’ licences for machinery e.g. forklift, telly porter etc","hazardous goods training course","frequent site safety meetings","a safety statement must have an emergency plan outlined in the case of an accident. In the event of an emergency immediate action can be taken to ensure the treatment of the injured party","ensure that all workers and visitors to the site are familiar with the safety statement","provide visitors to the site with appropriate PPE","ensure all signage and directional signs are clearly visible","provide a safer working environment"]} },
     ],
   } as SecCard,
   {
@@ -745,9 +1101,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-hl-q3-a", topicId: "cons-6-5", conceptId: "considerations-should-taken-into-account-design",
     section: "B", questionRef: "2018 HL Q3(a)",
     questionText: "Discuss three considerations that should be taken into account in the design of the extension to ensure that the health and wellbeing of the occupants is enhanced by building the extension.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":11,"perPart":6}, totalMarks: 18,
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":10,"perPart":6}, totalMarks: 18,
     rows: [
-    { id: "cons-2018-hl-q3-a-r1", kind: "anyN", verbatim: "Discuss three considerations that should be taken into account in the design of the extension to ensure that the health ", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["Terraced Cottage – addition of extension not greater than 18 m2:","putting the health and well-being of the occupants at the centre of the design process - biophilic design","people have phototropic tendencies, move to the light, sit in light-filled spaces, enjoy sitting and working in a naturally lighted space – enhances health and well-being, so consideration of daylight central to design","purposeful design – to connect with nature - being able to see plants, hear birds, observe change of seasons etc. reduces stress, improves mental health - a positive impact on health and well-being","increased glazing to the south increases natural solar gains, reduces heating costs and improves health and well-being","natural light and shade evoke feelings of drama and intrigue as well as a sense of calm","using materials that have a strong connection with the local ecology creates a distinct sense of place - genius loci - and peace and gives a feeling of connectedness and well-being","decking to extend the inside to outside with seating to enjoy nature and the surroundings, enhances health and wellbeing","a space with good thermal and airflow variabilities is both invigorating and comforting – provide openable windows, skylight windows to provide airflow and purge overheating in hot weather","providing a sense of safety reduces stress and anxiety levels, solid walls give security","providing a multi-sensory experience of nature is both stimulating and calming, flowers, trees and plants"]} },
+    { id: "cons-2018-hl-q3-a-r1", kind: "anyN", verbatim: "Discuss three considerations that should be taken into account in the design of the extension to ensure that the health ", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["putting the health and well-being of the occupants at the centre of the design process - biophilic design","people have phototropic tendencies, move to the light, sit in light-filled spaces, enjoy sitting and working in a naturally lighted space – enhances health and well-being, so consideration of daylight central to design","purposeful design – to connect with nature - being able to see plants, hear birds, observe change of seasons etc. reduces stress, improves mental health - a positive impact on health and well-being","increased glazing to the south increases natural solar gains, reduces heating costs and improves health and well-being","natural light and shade evoke feelings of drama and intrigue as well as a sense of calm","using materials that have a strong connection with the local ecology creates a distinct sense of place - genius loci - and peace and gives a feeling of connectedness and well-being","decking to extend the inside to outside with seating to enjoy nature and the surroundings, enhances health and wellbeing","a space with good thermal and airflow variabilities is both invigorating and comforting – provide openable windows, skylight windows to provide airflow and purge overheating in hot weather","providing a sense of safety reduces stress and anxiety levels, solid walls give security","providing a multi-sensory experience of nature is both stimulating and calming, flowers, trees and plants"]} },
     ],
   } as SecCard,
   {
@@ -773,7 +1129,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using notes and freehand sketches, discuss the importance of each of the following when identifying a suitable site for a new house in a rural landscape: • characteristics of existing dwellings • characteristics of the proposed site.",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 6","answer":4,"ofParts":8,"perPart":6}, totalMarks: 24,
     rows: [
-    { id: "cons-2018-hl-q4-a-r1", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 24, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":4,"perOption":6,"options":["the topography of the site should be used as inspiration for the form of a new house","existing mounds, slopes, contours on a site should not be removed to facilitate a new proposal but should be used to their potential as a natural shelter or privacy barrier","sites on top of hills may not get planning permission as a new proposal may break the skyline","the name of an area – often in Irish, may hint towards the previous use of the land and its soil conditions e.g. bog road and may inspire the new house design","the orientation and shape of the site will indicate if the new build will maximise solar gain by having a glazed elevation facing south","the presence of plants which only grow in wet land may be an indication of poor soil percolation","proximity to services such as water, broadband and electricity to the site - the further the distance the greater the costs","the presence of rivers, lakes or streams nearby may cause flooding and will inform the siting of the wastewater treatment plant and percolation area"]} },
+    { id: "cons-2018-hl-q4-a-r1", kind: "anyN", verbatim: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", marks: 24, contextNote: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":4,"perOption":6,"options":["the topography of the site should be used as inspiration for the form of a new house","existing mounds, slopes, contours on a site should not be removed to facilitate a new proposal but should be used to their potential as a natural shelter or privacy barrier","sites on top of hills may not get planning permission as a new proposal may break the skyline","the name of an area – often in Irish, may hint towards the previous use of the land and its soil conditions e.g. bog road and may inspire the new house design","the orientation and shape of the site will indicate if the new build will maximise solar gain by having a glazed elevation facing south","the presence of plants which only grow in wet land may be an indication of poor soil percolation","proximity to services such as water, broadband and electricity to the site - the further the distance the greater the costs","the presence of rivers, lakes or streams nearby may cause flooding and will inform the siting of the wastewater treatment plant and percolation area"]} },
     ],
   } as SecCard,
   {
@@ -799,7 +1155,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickness 50 mm Concrete floor slab thickness 100 mm Radon barrier thickness 0.25 mm Sand blinding thickness 40 mm Hardcore thickness 200 mm Subsoil thickness 300 mm Thermal data of the concrete ground floor: Resistance of internal top surface of floor (R) 0.104 m2 °C/W Resistivity of fine screed (r) 0.710 m °C/W Conductivity of concrete floor slab (k) 1.280 W/m °C Conductivity of radon barrier (k) 0.250 W/m °C Conductivity of sand blinding (k) 0.160 W/m °C Conductivity of hardcore (k) 1.350 W/m °C Conductivity of subsoil (k) 1.600 W/m °C",
     tariffModel: {"kind":"bestNofParts","notation":"9 x 3","answer":9,"ofParts":9,"perPart":3}, totalMarks: 27,
     rows: [
-    { id: "cons-2018-hl-q5-a-r1", kind: "anyN", verbatim: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickn", marks: 27, contextNote: "The scheme groups its answer under: Heat lost through uninsulated floor; 37350", openList: true, group: {"claimMax":9,"perOption":3,"options":["Tabulation","Internal top surface resistance","Fine screed","Concrete floor slab","Radon barrier","Sand blinding","Hardcore","Subsoil","Calculation of U-value of ground floor"]} },
+    { id: "cons-2018-hl-q5-a-r1", kind: "anyN", verbatim: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickn", marks: 27, openList: true, group: {"claimMax":9,"perOption":3,"options":["Tabulation","Internal top surface resistance","Fine screed","Concrete floor slab","Radon barrier","Sand blinding","Hardcore","Subsoil","Calculation of U-value of ground floor"]} },
     ],
   } as SecCard,
   {
@@ -812,7 +1168,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using the U-value of the concrete floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through the uninsulated concrete floor slab: • dimensions of floor slab 6.0 metres × 12.0 metres • average internal temperature 21 °C • average temperature of subsoil 5 °C • heating period 10 hours daily for 38 weeks per annum • cost of oil 96 cent per litre • calorific value of oil 37350 kJ per litre • 1000 Watts 1 kJ per second.",
     tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":5,"perPart":3}, totalMarks: 15,
     rows: [
-    { id: "cons-2018-hl-q5-b-r1", kind: "anyN", verbatim: "Using the U-value of the concrete floor obtained at 5(a) above and the following data, calculate the cost of heat lost a", marks: 15, openList: true, group: {"claimMax":5,"perOption":3,"options":["Heat loss formula and calculations","Heating duration for one year","k/Joules calculation for one year","Litres of oil for one year","Annual cost of heat loss"]} },
+    { id: "cons-2018-hl-q5-b-r1", kind: "anyN", verbatim: "Using the U-value of the concrete floor obtained at 5(a) above and the following data, calculate the cost of heat lost a", marks: 15, contextNote: "The scheme groups its answer under: Heat lost through uninsulated floor; 37350", openList: true, group: {"claimMax":5,"perOption":3,"options":["Heat loss formula and calculations","Heating duration for one year","k/Joules calculation for one year","Litres of oil for one year","Annual cost of heat loss"]} },
     ],
   } as SecCard,
   {
@@ -851,7 +1207,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss in detail, using notes and freehand sketches, three features of the design shown that make the house suitable as a self-build project.",
     tariffModel: {"kind":"bestNofParts","notation":"6 x 5","answer":6,"ofParts":11,"perPart":5}, totalMarks: 30,
     rows: [
-    { id: "cons-2018-hl-q6-b-r1", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 30, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":6,"perOption":5,"options":["the house is small and compact, facilitating ease of construction by self-builders","no need for specially designed beams or supports","one and-a-half storey build maximises living space with minimum of materials","narrow width – can be spanned with standard wooden joists without need for structural steel","lighter building simplifies foundation design and earthworks – environmentally friendly","straightforward roof design for ease of marking-out and erection","light timber frame and external rainscreen cladding obviates need for mechanical lifting equipment","framework can be constructed on site, can be easily cut by hand or with chop saw","early closing-in of frame provides a dry workspace at an early stage of construction","indoor trades can commence early in build process – electrical and plumbing","low moisture, short drying out time, house can be lived in more quickly due to design of construction"]} },
+    { id: "cons-2018-hl-q6-b-r1", kind: "anyN", verbatim: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", marks: 30, contextNote: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":6,"perOption":5,"options":["the house is small and compact, facilitating ease of construction by self-builders","no need for specially designed beams or supports","one and-a-half storey build maximises living space with minimum of materials","narrow width – can be spanned with standard wooden joists without need for structural steel","lighter building simplifies foundation design and earthworks – environmentally friendly","straightforward roof design for ease of marking-out and erection","light timber frame and external rainscreen cladding obviates need for mechanical lifting equipment","framework can be constructed on site, can be easily cut by hand or with chop saw","early closing-in of frame provides a dry workspace at an early stage of construction","indoor trades can commence early in build process – electrical and plumbing","low moisture, short drying out time, house can be lived in more quickly due to design of construction"]} },
     ],
     figure: {
           "candId": "construction-studies-2018-hl-paper-p005-i0",
@@ -924,7 +1280,7 @@ export const CARDS: SecCard[] = [
     questionText: "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and discuss three considerations you took into account when selecting your site.",
     tariffModel: {"kind":"bestNofParts","notation":"3 x 5","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
     rows: [
-    { id: "cons-2018-hl-q4-b-r1", kind: "anyN", verbatim: "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and", marks: 15, contextNote: "The scheme groups its answer under: South", openList: true, group: {"claimMax":3,"perOption":5,"options":["house is positioned close to the perimeter fence, so maximum garden space is available to supply house with garden produce – fruit and vegetables grown on site Why site B may be considered suitable for a new house - such as","access can be gained from the main or minor road, so little roadworks are required – environmentally sustainable","greater proximity to dwellings with existing connections to services such as waste management facilities, water, electricity and broadband, bin collection - resulting in cost-effective provision of public services","long sightlines can be achieved on the straight road, which increase safety when entering or exiting the site – usually for a 60 km/hour speed limit, 90 metre sightlines are required for safe access","houses adjacent to site B are in clusters, thus cluster developments are a favourable development and reflect the existing development patterns","reduced distance from leisure facilities, schools and employment","sufficient space exists to facilitate waste-water treatment and percolation area on the site","the long southerly aspect of the site increases design possibilities to optimise solar gain"]} },
+    { id: "cons-2018-hl-q4-b-r1", kind: "anyN", verbatim: "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and", marks: 15, contextNote: "The scheme groups its answer under: South; Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":3,"perOption":5,"options":["house is positioned close to the perimeter fence, so maximum garden space is available to supply house with garden produce – fruit and vegetables grown on site Why site B may be considered suitable for a new house - such as","access can be gained from the main or minor road, so little roadworks are required – environmentally sustainable","greater proximity to dwellings with existing connections to services such as waste management facilities, water, electricity and broadband, bin collection - resulting in cost-effective provision of public services","long sightlines can be achieved on the straight road, which increase safety when entering or exiting the site – usually for a 60 km/hour speed limit, 90 metre sightlines are required for safe access","houses adjacent to site B are in clusters, thus cluster developments are a favourable development and reflect the existing development patterns","reduced distance from leisure facilities, schools and employment","sufficient space exists to facilitate waste-water treatment and percolation area on the site","the long southerly aspect of the site increases design possibilities to optimise solar gain"]} },
     ],
     figure: {
           "candId": "construction-studies-2018-hl-paper-p003-i0",
@@ -971,7 +1327,7 @@ export const CARDS: SecCard[] = [
     questionText: "For each risk discussed at 2(a) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task.",
     tariffModel: {"kind":"bestNofParts","notation":"6 x 6","answer":6,"ofParts":14,"perPart":6}, totalMarks: 36,
     rows: [
-    { id: "cons-2018-hl-q2-b-r1", kind: "anyN", verbatim: "2(c) – promoting a culture of safety among workers - three strategies", marks: 36, contextNote: "2(c) – promoting a culture of safety among workers - three strategies", openList: true, group: {"claimMax":6,"perOption":6,"options":["buddy system, a new employee be paired with a more experienced worker","ensure all workers are fully trained to carry out required tasks","regular appraisal by management to ensure safe practice by all workers","safe pass course mandatory for all workers","all workers look out for one another and alert to possible risks","manual handling course mandatory for all workers","operators’ licences for machinery e.g. forklift, telly porter etc","hazardous goods training course","frequent site safety meetings","a safety statement must have an emergency plan outlined in the case of an accident. In the event of an emergency immediate action can be taken to ensure the treatment of the injured party","ensure that all workers and visitors to the site are familiar with the safety statement","provide visitors to the site with appropriate PPE","ensure all signage and directional signs are clearly visible","provide a safer working environment"]} },
+    { id: "cons-2018-hl-q2-b-r1", kind: "anyN", verbatim: "For each risk discussed at 2(a) above, show, using notes and freehand sketches, two best practice guidelines that should", marks: 36, openList: true, group: {"claimMax":6,"perOption":6,"options":["dial before you dig – contact supplier for information regarding cable location","access plans of cable layout from supplier of electrical services, use correctly to help locate power cables","plans may not show cable depths, never assume you know how deep the cables are, always be cautious as cables may be found at shallow depths","always check the area for signs that might suggest the presence of service cables","locate buried cables using cable location devices, such as hum detectors, radio frequency detectors","mark position of all cables on the ground using waterproof paint","treat all cables found anywhere as ‘live’ cables","hand dig carefully near cables, cable position marked with sand, timber and colour tape over a cable as an indicator of depth and position","always use insulated hand tools - with wooden or fibreglass handles","take special care when digging by hand or machine","do not use hand held power tools within 0.5 m of marked position of electrical cables","do not use handheld power tools directly over a marked line of a cable unless:","you have already found the cable by careful hand digging beneath the surface and","it is a safe depth (at least 300mm) below the bottom of the surface to be broken or"]} },
     ],
   } as SecCard,
   {
@@ -1036,7 +1392,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using notes and freehand sketches, describe two features that ensure that the system operates safely at all times. Discuss the importance of each safety feature outlined.",
     tariffModel: {"kind":"bestNofParts","notation":"5 x 4","answer":5,"ofParts":14,"perPart":4}, totalMarks: 20,
     rows: [
-    { id: "cons-2018-hl-q8-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe two features that ensure that the system operates safely at all times. Discu", marks: 20, openList: true, group: {"claimMax":5,"perOption":4,"options":["Safety features of system thermostatic control of the burning rate","thermostatic control of the burning rate based on temperature of water in the boiler where the appliance uses a boiler","thermostatic radiator valves (TRVs) should be wired electronically to provide boiler interlock hot water cylinder - thermostatic control","fitted about one third of the way up the cylinder","should have clean contact with the metal on the cylinder","avoids overheating thus ensuring safe temperature of water in taps","thermostat should be as accessible as possible","the cylinder thermostat should be wired to provide a boiler interlock vent valve to boiler","a safety feature that stops too much pressure from damaging the plumbing system and causing injury to a person","helps to prevent the risk of an explosion due to build-up of pressure ease of cleaning/maintenance","the opening for this purpose should have a rigid, non-combustible and gastight cover, or a removable section in condensing type appliances carbon monoxide","the heating appliance must be correctly installed and serviced at regular intervals to ensure efficient combustion and removal of products of combustion","a carbon monoxide alarm be fitted in vicinity of burning appliance","detector should have both a visible and audible alarm to alert occupants of the presence of carbon monoxide"]} },
+    { id: "cons-2018-hl-q8-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe two features that ensure that the system operates safely at all times. Discu", marks: 20, openList: true, group: {"claimMax":5,"perOption":4,"options":["thermostatic control of the burning rate based on temperature of water in the boiler where the appliance uses a boiler","thermostatic radiator valves (TRVs) should be wired electronically to provide boiler interlock hot water cylinder - thermostatic control","fitted about one third of the way up the cylinder","should have clean contact with the metal on the cylinder","avoids overheating thus ensuring safe temperature of water in taps","thermostat should be as accessible as possible","the cylinder thermostat should be wired to provide a boiler interlock vent valve to boiler","a safety feature that stops too much pressure from damaging the plumbing system and causing injury to a person","helps to prevent the risk of an explosion due to build-up of pressure ease of cleaning/maintenance","the opening for this purpose should have a rigid, non-combustible and gastight cover, or a removable section in condensing type appliances carbon monoxide","the heating appliance must be correctly installed and serviced at regular intervals to ensure efficient combustion and removal of products of combustion","a carbon monoxide alarm be fitted in vicinity of burning appliance","detector should have both a visible and audible alarm to alert occupants of the presence of carbon monoxide","expansion pipe provided to allow safe expansion of water (vented system)"]} },
     ],
   } as SecCard,
   {
@@ -1063,8 +1419,18 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"3 x 6 + 3 x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
     rows: [
     { id: "cons-2018-hl-q9-b-r1", kind: "anyN", verbatim: "Structural Stability – typical detailing", marks: 18, contextNote: "Structural Stability – typical detailing", openList: true, group: {"claimMax":3,"perOption":6,"options":["floor joists of sufficient size for the full span","purlins need to be strutted from a suitably mounted wall plates","ceiling joists/collar ties to be fitted at a height of 2400 mm above the finished floor level – triangulation of roof structure","backing to rafters to accommodate thickness of thermal insulation and ventilation","doubling of rafters to provide sufficient support for roof lights","slates on battens typically 50 × 35 mm","counter battens 50 × 35 mm to provide ventilation space","breather membrane sealed and taped","hygroscopic layer – wood fibre board, OSB or Smartply or similar for wind tightness","rafters 200 × 40 mm at 400 - 600 mm centres","collar ties 200 × 40 mm to each rafter","ceiling joists 200 × 40 mm to each rafter","vertical struts 200 × 40 mm","runner at foot of strut - 150 × 70 mm"]} },
-    { id: "cons-2018-hl-q9-b-r2", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 6, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":3,"perOption":2,"options":["insulation 200 mm min at slope of roof","insulation 600 mm – two layers to ceiling","2 × 12.5 mm gypsum plasterboard to ceiling with vapour barrier on warm side of insulation","airtightness tape","fascia, soffit and gutter with continuous vent at soffit"]} },
+    { id: "cons-2018-hl-q9-b-r2", kind: "anyN", verbatim: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", marks: 6, contextNote: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":3,"perOption":2,"options":["insulation 200 mm min at slope of roof","insulation 600 mm – two layers to ceiling","2 × 12.5 mm gypsum plasterboard to ceiling with vapour barrier on warm side of insulation","airtightness tape","fascia, soffit and gutter with continuous vent at soffit"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Construction Studies 2018 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1076,7 +1442,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • space heating energy demand • building form • thermal bridging.",
     tariffModel: {"kind":"fixed","notation":"2 x 4 + 2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
     rows: [
-    { id: "cons-2018-hl-q10-a-r1", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 8, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":2,"perOption":4,"options":["a building with the same U-values, air change rates and orientation as another may have a different heating demand depending on their respective A/V ratios","should take full advantage of site aspect, potential solar energy gain, potential for energy conservation","main windows/elevation South-facing","windows minimised on North facade","providing lobby and porch at entrance to conserve energy","heating appliances kept on inside walls to reduce heat energy loss","steeper 45° roof pitch to accommodate increased living space and roof-mounted photovoltaic and/or passive solar panels, evacuated tubes thermal bridging","a thermal /cold bridge is an area of a building that has a higher conductivity than surrounding materials","and significantly detrimental rate of heat transfer than the surrounding materials, resulting in a significant reduction in the thermal insulation/performance of a building thermal energy flows from a higher to a lower temperature","flow increases with greater temperature difference","materials that are more efficient conductors of heat and penetrate the outer envelope lead to greater thermal energy transfer – increase heat loss overall","local areas of greater energy flow provide cold spots on the inner surfaces and troublesome condensation, including interstitial condensation","more of a risk where Passive House standard is achieved","greater risk surrounding openings and where floors and ceilings abut outer walls"]} },
+    { id: "cons-2018-hl-q10-a-r1", kind: "anyN", verbatim: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", marks: 8, contextNote: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":2,"perOption":4,"options":["a building with the same U-values, air change rates and orientation as another may have a different heating demand depending on their respective A/V ratios","should take full advantage of site aspect, potential solar energy gain, potential for energy conservation","main windows/elevation South-facing","windows minimised on North facade","providing lobby and porch at entrance to conserve energy","heating appliances kept on inside walls to reduce heat energy loss","steeper 45° roof pitch to accommodate increased living space and roof-mounted photovoltaic and/or passive solar panels, evacuated tubes thermal bridging","a thermal /cold bridge is an area of a building that has a higher conductivity than surrounding materials","and significantly detrimental rate of heat transfer than the surrounding materials, resulting in a significant reduction in the thermal insulation/performance of a building thermal energy flows from a higher to a lower temperature","flow increases with greater temperature difference","materials that are more efficient conductors of heat and penetrate the outer envelope lead to greater thermal energy transfer – increase heat loss overall","local areas of greater energy flow provide cold spots on the inner surfaces and troublesome condensation, including interstitial condensation","more of a risk where Passive House standard is achieved","greater risk surrounding openings and where floors and ceilings abut outer walls"]} },
     { id: "cons-2018-hl-q10-a-r2", kind: "anyN", verbatim: "Cork, 90° - 55° = 35° in Letterkenny)", marks: 8, contextNote: "Cork, 90° - 55° = 35° in Letterkenny)", openList: true, group: {"claimMax":2,"perOption":4,"options":["increase the window sizes on the front elevation","taller, larger South-facing windows maximises solar gain to living areas","fewer and smaller North-facing windows reduces heat loss","passive heating reduces costs and fossil fuel demand","large eaves overhang or brise-soleil over South-facing windows increase the window area in kitchen and dining room","East-facing windows enable morning solar gain to the sitting room","increases daylighting","reduces artificial lighting requirement","reduces heating requirement provide roof lights","increase daylight","give longer daylighting period","reduce need for artificial light","reduce lighting costs and fossil fuel use provide wood-burning stove","carbon neutral"]} },
     ],
   } as SecCard,
@@ -1283,9 +1649,72 @@ export const CARDS: SecCard[] = [
     id: "cons-2019-hl-q8-c", topicId: "cons-5-5", conceptId: "alternative-method-other-than-typical-percolation",
     section: "B", questionRef: "2019 HL Q8(c)",
     questionText: "Using notes and freehand sketches, discuss an alternative method, other than a typical percolation area to ensure the safe treatment of wastewater from a dwelling house.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 8","answer":2,"ofParts":2,"perPart":8}, totalMarks: 16,
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "cons-2019-hl-q8-c-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, discuss an alternative method, other than a typical percolation area to ensure the sa", marks: 16, openList: true, group: {"claimMax":2,"perOption":8,"options":["Notes","Sketch"]} },
+    { id: "cons-2019-hl-q8-c-raised-notes", kind: "point", verbatim: "Raised percolation areas — Notes", marks: 8, contextNote: "Where site conditions suit, mound additional topsoil above existing ground and lay the percolation pipes within the raised element." },
+    { id: "cons-2019-hl-q8-c-raised-sketch", kind: "criterion", verbatim: "Raised percolation areas — Sketch", marks: 8, contextNote: "Show the dwelling wastewater route and the raised/mounded percolation arrangement clearly." },
+    ],
+    answerVariants: [
+          {
+                "id": "raised-percolation",
+                "label": "Raised percolation area",
+                "rows": [
+                      {
+                            "id": "cons-2019-hl-q8-c-raised-notes",
+                            "kind": "point",
+                            "verbatim": "Raised percolation areas — Notes",
+                            "marks": 8,
+                            "contextNote": "Where site conditions suit, mound additional topsoil above existing ground and lay the percolation pipes within the raised element."
+                      },
+                      {
+                            "id": "cons-2019-hl-q8-c-raised-sketch",
+                            "kind": "criterion",
+                            "verbatim": "Raised percolation areas — Sketch",
+                            "marks": 8,
+                            "contextNote": "Show the dwelling wastewater route and the raised/mounded percolation arrangement clearly."
+                      }
+                ]
+          },
+          {
+                "id": "constructed-wetland",
+                "label": "Constructed wetland",
+                "rows": [
+                      {
+                            "id": "cons-2019-hl-q8-c-wetland-notes",
+                            "kind": "point",
+                            "verbatim": "Constructed Wetlands — Notes",
+                            "marks": 8,
+                            "contextNote": "Describe a gravel-, sand- or soil-based horizontal/vertical-flow reed-bed filter system treating wastewater from a septic tank."
+                      },
+                      {
+                            "id": "cons-2019-hl-q8-c-wetland-sketch",
+                            "kind": "criterion",
+                            "verbatim": "Constructed Wetlands — Sketch",
+                            "marks": 8,
+                            "contextNote": "Show the septic-tank outflow entering and passing through the constructed wetland/filter bed."
+                      }
+                ]
+          },
+          {
+                "id": "peat-filter",
+                "label": "Peat filter system",
+                "rows": [
+                      {
+                            "id": "cons-2019-hl-q8-c-peat-notes",
+                            "kind": "point",
+                            "verbatim": "Peat filter system — Notes",
+                            "marks": 8,
+                            "contextNote": "Describe module units filled with peat, including distribution, treatment medium and drain; effluent is dosed on top and treated as it percolates through."
+                      },
+                      {
+                            "id": "cons-2019-hl-q8-c-peat-sketch",
+                            "kind": "criterion",
+                            "verbatim": "Peat filter system — Sketch",
+                            "marks": 8,
+                            "contextNote": "Show the distribution system, peat treatment medium, drainage and direction of wastewater flow."
+                      }
+                ]
+          }
     ],
   } as SecCard,
   {
@@ -1322,14 +1751,10 @@ export const CARDS: SecCard[] = [
     id: "cons-2019-hl-q10-b", topicId: "cons-6-3", conceptId: "how-you-would-retrofit-given-house",
     section: "B", questionRef: "2019 HL Q10(b)",
     questionText: "Discuss in detail, using notes and freehand sketches, how you would retrofit the given house to include each consideration you specified at 10(a) above.",
-    tariffModel: {"kind":"fixed","notation":"1 x 4 + 1 x 4 + 1 x 4 + 1 x 4 + 1 x 4 + 1 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2019-hl-q10-b-r1", kind: "anyN", verbatim: "Thermal efficiency of the external envelope of the building", marks: 4, contextNote: "Thermal efficiency of the external envelope of the building", openList: true, group: {"claimMax":1,"perOption":4,"options":["Increase the levels of insulation in the walls, roof and floor","EnerPHit Requirements for roof/top floor Ceiling U ≤ 0.120 W/m2K","Insulation can be increased in the walls using cavity wall insulation methods, external wall insulation or internally by dry lining - space permitting","Replace windows with Passive House triple glazed windows","EnerPHit Requirements for the window as a whole, UW installed ≤ 0.85 W/m2K","Replace external door with energy efficient doors","EnerPHit Requirements: UD, installed ≤ 0.80 W/m2K","The quality of the materials and the workmanship is vital in the above areas so that thermal bridging does not occur"]} },
-    { id: "cons-2019-hl-q10-b-r2", kind: "anyN", verbatim: "Appropriate ventilation using a heat recovery system", marks: 4, contextNote: "Appropriate ventilation using a heat recovery system", openList: true, group: {"claimMax":1,"perOption":4,"options":["Install a highly efficient heat recovery and ventilation system with an outlet to supply or extract air from all rooms. This will reduce heat loss, moisture content and the energy consumption of the building","EnerPHit Requirements: Ventilation η HR,eff ≥ 75%,"]} },
-    { id: "cons-2019-hl-q10-b-r3", kind: "anyN", verbatim: "Airtightness of the building", marks: 4, contextNote: "Airtightness of the building", openList: true, group: {"claimMax":1,"perOption":4,"options":["Seal any holes in the fabric such as pipes penetrating the external walls, joints between wall/ceiling/floor surfaces, openings around electrical services etc","Adjust the frames of doors and windows so they close tightly","Install a wood burning stove to reduce heat loss through the open fireplace","Install a storm porch to the west entrance to prevent direct access and reduce heat loss"]} },
-    { id: "cons-2019-hl-q10-b-r4", kind: "anyN", verbatim: "Optimum levels of thermal comfort for occupants", marks: 4, contextNote: "Optimum levels of thermal comfort for occupants", openList: true, group: {"claimMax":1,"perOption":4,"options":["The heating demand requirement should be ≤ 25 kWh/(m2a)","Upgrade boilers and heating controls with more efficient systems"]} },
-    { id: "cons-2019-hl-q10-b-r5", kind: "anyN", verbatim: "Install renewable energy systems such as", marks: 4, contextNote: "Install renewable energy systems such as", openList: true, group: {"claimMax":1,"perOption":4,"options":["solar photovoltaic cells to generate electricity for domestic consumption","wind turbine to generate electricity","solar water heating systems such as evacuated tubes to produce hot water for domestic consumption or for space heating"]} },
-    { id: "cons-2019-hl-q10-b-r6", kind: "anyN", verbatim: "Maximise solar gains", marks: 4, contextNote: "Maximise solar gains", openList: true, group: {"claimMax":1,"perOption":4,"options":["Install new windows on the south facing wall of the house","Remove the wall between the dining room and kitchen so both light and heat from the sun can enter further into the house"]} },
+    { id: "cons-2019-hl-q10-b-notes", kind: "anyN", verbatim: "Three selected retrofit upgrades — Notes", marks: 12, contextNote: "Choose the same three considerations you specified in part (a); each developed retrofit note is worth 4 marks.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Increase the levels of insulation in the walls, roof and floor","Install a highly efficient heat recovery and ventilation system with an outlet to supply or extract air from all rooms. This will reduce heat loss, moisture content and the energy consumption of the building","Seal any holes in the fabric such as pipes penetrating the external walls, joints between wall/ceiling/floor surfaces, openings around electrical services etc","The heating demand requirement should be ≤ 25 kWh/(m2a)","solar photovoltaic cells to generate electricity for domestic consumption","Install new windows on the south facing wall of the house"]} },
+    { id: "cons-2019-hl-q10-b-sketches", kind: "anyN", verbatim: "Three selected retrofit upgrades — Sketches", marks: 12, contextNote: "Provide a communicating freehand sketch for each of the same three selected retrofit considerations.", group: {"claimMax":3,"perOption":4,"options":["Thermal efficiency of the external envelope of the building","Appropriate ventilation using a heat recovery system","Airtightness of the building","Optimum levels of thermal comfort for occupants","Install renewable energy systems","Maximise solar gains"]} },
     ],
   } as SecCard,
   {
@@ -1370,6 +1795,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2019-hl-q2-c-r1", kind: "anyN", verbatim: "Possible roofing materials for the roof profiles presented", marks: 12, contextNote: "Possible roofing materials for the roof profiles presented", openList: true, group: {"claimMax":3,"perOption":4,"options":["Natural Slates","Thatch","Fibre cement slates","Corrugated steel","Concrete tiles","Roofing felt","Clay tiles","Asphalt","Zinc sheeting","Single-Ply Membrane (EPDM Rubber)","Wood shingle","Any other appropriate material Appropriate advantage and disadvantage for each material chosen"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Construction Studies 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1383,6 +1818,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2019-hl-q8-b-r1", kind: "anyN", verbatim: "The drawing shows a site layout map. The outline of a new house and driveway is shown on site A. Using notes and freehan", marks: 20, openList: true, group: {"claimMax":2,"perOption":10,"options":["Diameter of pipes 100 – 110mm","Minimum distance of percolation to house 10m","Maximum length of percolation pipe 18m","Minimum separation distance between percolation trenches 2m","Minimum distance of systems to site boundary 3m","Minimum distance of system to a road 4m"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Construction Studies 2019 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2395,6 +2840,16 @@ export const CARDS: SecCard[] = [
     { id: "cons-2022-hl-q4-b-r1", kind: "anyN", verbatim: "Strip Foundation", marks: 12, contextNote: "Strip Foundation", openList: true, group: {"claimMax":3,"perOption":4,"options":["External wall thickness (T) of 450 mm: o Depth of foundation = T (450 mm) o Length of foundation = T × 3 = 1350 mm o Projection beyond wall = T (450 mm)","Minimum distance below ground level to top of foundation = 600 mm","Distance below existing ground level to firm subsoil at bottom of foundation trench c.1000 mm","Depth of cover to steel = 80 mm","Steel welded mesh = 10 mm","Longitudinal bars and transverse bars of steel","Steel stirrups used to provide rigidity to steel cage","Neutral axis passes through centre of strip foundation","Strength of concrete to structural engineer specifications (25N20)","Width, depth of concrete and steel may be different as specified by structural engineer"]} },
     { id: "cons-2022-hl-q4-b-r2", kind: "anyN", verbatim: "Passive Raft Insulated foundation", marks: 12, contextNote: "Passive Raft Insulated foundation", openList: true, group: {"claimMax":3,"perOption":4,"options":["Subsoil excavated to depth of 1000 mm below existing ground level and at least 1000 mm beyond the footprint of the building","Hardcore - clean, and crushed stone 100 mm, laid in layers of 225mm and compacted","Drainage pipes laid deep to facilitate rapid removal of ground rainwater","Blinding sand 50 mm laid on hardcore and compacted","Damp proof / Radon gas membrane laid on blinding sand 25mm in depth","Sand of round river pebble 5-8 mm only laid on DPM/RGM 25mm in depth","Edging Formwork consisting of high density - rigid insulation EPS 300N/mm","Rigid EPS Insulation, formwork shaped to engineers’ specification to allow concrete be poured inside to carry the load bearing concrete cavity wall (450 mm)","Steel reinforcement to engineers’ specification placed inside rigid EPS insulation edgings with steel bars connecting the outer load bearing concrete edge beam to the steel mesh reinforcement laid in the concrete floor slab","Steel mesh reinforcement (10 mm @ 200mm cc) to be raised above rigid floor insulation using patented plastic risers","Concrete poured with a high workability slump and to strength as specified by engineer (40N20)","Passive raft foundation having rigid EPS 100/N mm to a depth of 300 mm below concrete floor slab","Reinforced concrete floor slab to a depth of 100 or 150 mm as per engineer specification (load bearing or non-load bearing)","Patented trim PVC or allow fitted to the external edge of Rigid EPS Formwork Edgings to prevent damage to insulation by vermin"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Construction Studies 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2411,6 +2866,16 @@ export const CARDS: SecCard[] = [
     { id: "cons-2022-hl-q4-c-r3", kind: "anyN", verbatim: "Advantages", marks: 3, contextNote: "Advantages", openList: true, group: {"claimMax":1,"perOption":3,"options":["Minimal excavation required for the foundation therefore less impact on the environment","Lower embodied energy than traditional strip foundations as much less concrete is required – lower CO2 emissions – less cement","Very quick to construct","Prevents all thermal bridging at the wall/floor junction","Super insulated foundation which saves / reduces cost of heating"]} },
     { id: "cons-2022-hl-q4-c-r4", kind: "anyN", verbatim: "Disadvantages", marks: 3, contextNote: "Disadvantages", openList: true, group: {"claimMax":1,"perOption":3,"options":["A high level of workmanship is required to detail the installation of the foundation","Specialist training for workers required for installation","Specific design detailing required for each house which must be completed by a structural engineer – increase cost associated","Increased capital costs associated with specialised components required in construction"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Construction Studies 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3224,6 +3689,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2024-hl-q8-a-r1", kind: "anyN", verbatim: "Typical sizes of pipework", marks: 28, contextNote: "Typical sizes of pipework", openList: true, group: {"claimMax":7,"perOption":4,"options":["Wood-burning stove","Zone control panel","Cylinder and coil","Rising main","Overflow pipe","Expansion pipe or vessel","Pump","Typical sizes of pipework - any two"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Construction Studies 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3594,6 +4069,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2025-hl-q10-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch", marks: 28, openList: true, group: {"claimMax":2,"perOption":14,"options":["Orientation","Lowers energy bills","Reduces carbon dioxide emission","Enhances wellbeing"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Construction Studies 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

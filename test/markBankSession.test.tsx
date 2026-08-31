@@ -219,6 +219,26 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText('Oesophagus')).toBeInTheDocument();
   });
 
+  test('requires an open-choice route and reveals only that route\'s scheme', () => {
+    renderSession([card({
+      questionText: 'Describe one method of cooking meat.',
+      rows: [],
+      totalMarks: 4,
+      answerVariants: [
+        { id: 'roasting', label: 'Roasting', rows: [row({ id: 'roast', verbatim: 'Roasting scheme', marks: 4 })] },
+        { id: 'stewing', label: 'Stewing', rows: [row({ id: 'stew', verbatim: 'Stewing scheme', marks: 4 })] },
+      ],
+    })]);
+
+    const reveal = screen.getByRole('button', { name: /Choose your answer route first/i });
+    expect(reveal).toBeDisabled();
+    fireEvent.click(screen.getByRole('button', { name: 'Stewing' }));
+    expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).not.toBeDisabled();
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Stewing scheme')).toBeInTheDocument();
+    expect(screen.queryByText('Roasting scheme')).not.toBeInTheDocument();
+  });
+
   test('offers Ways In inside the still-closed question flow', () => {
     renderSession([card()]);
     expect(screen.getByRole('button', { name: /Open Ways In/i })).toBeInTheDocument();

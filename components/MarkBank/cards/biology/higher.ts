@@ -3345,12 +3345,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
     id: "bio-2023-hl-q11-b-v", topicId: "bio-3-1", conceptId: "keystone-loss-effects",
     section: "C", questionRef: "2023 HL Q11(b)(v)",
-    stem: "The passage described a food chain in which a moth feeds on ash and a robin feeds on the moth.",
     questionText: "Suggest two possible effects on the ecosystem if all ash trees in Ireland died.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-a", kind: "anyN", verbatim: "Moth (or other consumers of ash) population falls / robin (or other consumer of moths) population falls / other plant populations increase / soil erosion / any correct environmental effect. Any two", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["Moth (or other consumers of ash) population falls","robin (or other consumer of moths) population falls","other plant populations increase","soil erosion","any correct environmental effect"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Biology 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3359,13 +3368,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
     id: "bio-2023-hl-q11-b-vi", topicId: "bio-3-1", conceptId: "predation-population-control",
     section: "C", questionRef: "2023 HL Q11(b)(vi)",
-    stem: "The passage described a robin that feeds on a moth.",
     questionText: "1. Name the type of ecological relationship that exists between the robin and the moth. 2. Explain the importance of this type of ecological relationship in nature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-name", kind: "alt", verbatim: "Predation or predator-prey", marks: 3 },
     { id: "r-imp", kind: "point", verbatim: "Population control or described", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Biology 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5411,7 +5429,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q17-a-ii", topicId: "bio-1-5", conceptId: "evolution-species-inherited",
     section: "C", questionRef: "2022 HL Q17(a)(ii)",
-    stem: "The passage printed with this question underlines three terms: evolution, species and inherited.",
     questionText: "Explain the three underlined terms.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -5419,6 +5436,16 @@ export const CARDS: SecCard[] = [
     { id: "r-species", kind: "point", verbatim: "Species: (Group of) organisms capable of reproducing (or breeding) to produce fertile offspring.", marks: 3 },
     { id: "r-inherited", kind: "point", verbatim: "Inherited: (Passed from parents) to offspring using genes.", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Biology 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5440,13 +5467,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q17-a-iv-v", topicId: "bio-1-5", conceptId: "points-of-natural-selection",
     section: "C", questionRef: "2022 HL Q17(a)(iv)–(v)",
-    stem: "The passage printed with this question gives one point of the theory: “There is variation among members of a species and these variations are inherited.”",
     questionText: "Describe three points put forward in the theory of natural selection, other than the one described in the passage above. Give one piece of evidence that supports the theory of natural selection.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-points", kind: "anyN", verbatim: "High reproductive rates / competition (or a struggle for survival) / those with the more adaptive characteristics survive (or survival of the fittest) / the others are eliminated (or die out) / the survivors reproduce (or breed) / the genes of the most successful are passed on to the next generation / populations becomes better adapted to their environment with each generation.", marks: null, contextNote: "The point quoted in the stem (variation within a species, and that variation being inherited) cannot be re-used; these seven are the points the scheme credits, any three at 3 marks each.", group: {"claimMax":3,"perOption":3,"options":["High reproductive rates","competition (or a struggle for survival)","those with the more adaptive characteristics survive (or survival of the fittest)","the others are eliminated (or die out)","the survivors reproduce (or breed)","the genes of the most successful are passed on to the next generation","populations becomes better adapted to their environment with each generation"]} },
     { id: "r-evidence", kind: "point", verbatim: "Fossils or comparative embryology or comparative anatomy or other correct answer", marks: 3, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Biology 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9046,12 +9082,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
     id: "bio-2021-hl-q10-b-iii", topicId: "bio-u1", conceptId: "the-purpose-of-a-control-plate",
     section: "A", questionRef: "2021 HL Q10(b)(iii)",
-    stem: "Plate Investigation setup Results after 7 days A Unopened 0 colonies B 5 leaf discs from an ash tree from a quiet rural setting 10 colonies C 5 leaf discs from an ash tree from a busy urban setting 4 colonies Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left‐hand column to label each part, as shown below. There are four pages of graph paper on the next four pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs and diagrams. Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Part Start each question on a new page Question 36 Part Start each question on a new page Question 37 Part Start each question on a new page Question 38 Part Start each question on a new page Question 39 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Biology Sections A and B and Answerbook Tuesday 15 June Afternoon 2:00 – 5:00 2021.M44 2021L025A2EL Coimisiún na Scrúduithe Stáit State Examinations Commission Biology Section C Higher Level Tuesday 15 June Afternoon 2:00 – 5:00 180 marks Do not hand this question paper up Scrúdú na hArdteistiméireachta 2020 1 Bitheolaíocht, Roinn C – Ardleibhéal Section C Answer any three questions. Write your answer in the answerbook containing Sections A and B.",
     questionText: "What is the purpose of plate A in this investigation?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A control (or described) or to compare to the results", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Biology 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9060,12 +9105,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
     id: "bio-2021-hl-q10-b-v", topicId: "bio-3-3", conceptId: "why-urban-and-rural-plates-differ",
     section: "A", questionRef: "2021 HL Q10(b)(v)",
-    stem: "Plate Investigation setup Results after 7 days A Unopened 0 colonies B 5 leaf discs from an ash tree from a quiet rural setting 10 colonies C 5 leaf discs from an ash tree from a busy urban setting 4 colonies Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left‐hand column to label each part, as shown below. There are four pages of graph paper on the next four pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs and diagrams. Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Part Start each question on a new page Question 36 Part Start each question on a new page Question 37 Part Start each question on a new page Question 38 Part Start each question on a new page Question 39 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Biology Sections A and B and Answerbook Tuesday 15 June Afternoon 2:00 – 5:00 2021.M44 2021L025A2EL Coimisiún na Scrúduithe Stáit State Examinations Commission Biology Section C Higher Level Tuesday 15 June Afternoon 2:00 – 5:00 180 marks Do not hand this question paper up Scrúdú na hArdteistiméireachta 2020 1 Bitheolaíocht, Roinn C – Ardleibhéal Section C Answer any three questions. Write your answer in the answerbook containing Sections A and B.",
     questionText: "Suggest one reason for the difference in results between plates B and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "(More) pollution in the urban air or less pollution in rural air or described (smoke", marks: 3, accepts: ["sulphur dioxide","harmful chemicals)"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Biology 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9607,6 +9661,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.005 (cm) or 2/400 (cm) or 1/200 (cm) or 5 x 10-3 (cm) (accept other units if correct)", marks: 3, contextNote: "The paper's part (b) stem reads \"Image A was observed at x400 and image B at x100.\", which is where the 400 in the scheme's answer comes from." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Biology 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9874,6 +9938,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Curve showing both lag and log phases", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Biology 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10142,6 +10216,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Number: Lower number due to loss of energy or reference to size (predators", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "Time: Delay in increase (in predator numbers) due to time taken to breed.", marks: 2 },
     ],
+    questionFigure: {
+          "candId": "biology-2024-hl-paper-p003-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-paper-p003-i0.png",
+          "srcHash": "20e437e3838a65a6956f9f17422cf7fa",
+          "alt": "Unscaled line graph with heavy black axes: the vertical axis is labelled 'Numbers of organisms' in bold rotated text and the horizontal axis 'Time'; neither carries tick marks or numbers. A single thick smooth wave runs left to right starting high, dipping and rising through roughly three peaks and ending part-way down a fall. An arrow from the word 'Prey' points into the descending limb after the second peak. Near the right-hand end a bold letter X sits above a short downward arrow that meets the time axis.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10156,6 +10238,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Prey (population) increases", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Less predators or greater chance of survival", marks: 3 },
     ],
+    questionFigure: {
+          "candId": "biology-2024-hl-paper-p003-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-paper-p003-i0.png",
+          "srcHash": "20e437e3838a65a6956f9f17422cf7fa",
+          "alt": "Unscaled line graph with heavy black axes: the vertical axis is labelled 'Numbers of organisms' in bold rotated text and the horizontal axis 'Time'; neither carries tick marks or numbers. A single thick smooth wave runs left to right starting high, dipping and rising through roughly three peaks and ending part-way down a fall. An arrow from the word 'Prey' points into the descending limb after the second peak. Near the right-hand end a bold letter X sits above a short downward arrow that meets the time axis.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10170,6 +10260,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Dashed line lower peaks than prey", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Dashed line out of sync compared to prey.", marks: 2 },
     ],
+    questionFigure: {
+          "candId": "biology-2024-hl-paper-p003-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-paper-p003-i0.png",
+          "srcHash": "20e437e3838a65a6956f9f17422cf7fa",
+          "alt": "Unscaled line graph with heavy black axes: the vertical axis is labelled 'Numbers of organisms' in bold rotated text and the horizontal axis 'Time'; neither carries tick marks or numbers. A single thick smooth wave runs left to right starting high, dipping and rising through roughly three peaks and ending part-way down a fall. An arrow from the word 'Prey' points into the descending limb after the second peak. Near the right-hand end a bold letter X sits above a short downward arrow that meets the time axis.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
