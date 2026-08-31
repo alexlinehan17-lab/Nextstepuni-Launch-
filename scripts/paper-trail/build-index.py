@@ -368,6 +368,19 @@ QA_PASSED_ANSWER_PROFILES = {
     # (2019 OL P2's crescent chip opened Paper 1's Q5 before this).
     ('mathematics', 'higher', 'iv'),
     ('mathematics', 'ordinary', 'iv'),
+    # JC/LCA Irish-medium wave (same sweep, JC+LB exams): every family render-
+    # verified — JC Irish T2 blag task ↔ its marking bands, JC Maths C8 worked
+    # solution, JC Science indicator table, JC French Lascaux reading (numbering
+    # is continuous so whole-paper maps are safe), JC Applied Technology's
+    # written paper is an answered copy of itself (the old "practical" ⛔ was
+    # wrong for the written exam). LCA Gaeilge regenerations verified richer.
+    ('jc-irish', 'higher', 'iv'),
+    ('jc-irish', 'ordinary', 'iv'),
+    ('jc-mathematics', 'higher', 'iv'),
+    ('jc-mathematics', 'ordinary', 'iv'),
+    ('jc-science', 'common', 'iv'),
+    ('jc-french', 'common', 'iv'),
+    ('jc-applied-technology', 'common', 'iv'),
     ('agricultural-science', 'higher', 'iv'),
     ('agricultural-science', 'ordinary', 'iv'),
     ('art', 'higher', 'iv'),
