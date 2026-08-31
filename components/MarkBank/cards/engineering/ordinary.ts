@@ -116,20 +116,6 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2022-ol-q2-d-i", topicId: "eng-2-15", conceptId: "advantage-using-belt-pulley-mechanism-drive",
-    section: "A", questionRef: "2022 OL Q2(d)(i)",
-    stem: "roll cage seat wheel rim belt and pulley mechanism Engineering - Ordinary level 3",
-    questionText: "State one advantage of using a belt and pulley mechanism in a drive system.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "lubrication. Easier to assemble compared to gear drive systems.", marks: 4 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q4-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-gas",
     section: "A", questionRef: "2022 OL Q4(d)",
     stem: "Engineering - Ordinary level 5",
@@ -225,20 +211,6 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2023-ol-q7-c-i", topicId: "eng-2-16", conceptId: "use-solenoid",
-    section: "A", questionRef: "2023 OL Q7(c)(i)",
-    stem: "short leg long leg colour bands Leaving Certificate 2023 Engineering – Ordinary level 8",
-    questionText: "State one use of a solenoid.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "diameter of round bars or the internal diameter of holes. The measurement can be read directly from a digital display.", marks: 6, accepts: ["to convert electrical energy into mechanical work. It can be used to open and close pneumatic valves / turn on or off an electrical switch / operate as a locking mechanism….","Plunger moves in and out."] },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
@@ -249,20 +221,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Component parts can be easily dismantled if there is repair work required or new parts to be replaced.", marks: 4 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2025-ol-q6-c-ii", topicId: "eng-2-13", conceptId: "any-processes-named-you-q6-c",
-    section: "A", questionRef: "2025 OL Q6(c)(ii)",
-    stem: "stunt bike pegs",
-    questionText: "Describe any one of the processes named by you, at Q6(c)(i) above. OR Name one CNC machine commonly used in the engineering workshop.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "used in the engineering workshop.", marks: 6 },
     ],
   } as SecCard,
   {

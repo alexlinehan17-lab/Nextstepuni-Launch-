@@ -49,6 +49,49 @@
   "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
+  "id": "eng-2021-hl-q1-d",
+  "topicId": "eng-1-9",
+  "conceptId": "water-drinkers-cattle-typically-manufactured-polyethylene",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q1(d)",
+  "questionText": "Water drinkers for cattle are typically manufactured from polyethylene which is UV light and frost resistant. Describe a polymer manufacturing process suitable for a water drinker.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pellets of thermoplastic polymer are fed into the barrel from the hopper.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The screw moves the polymer forward.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Heaters melt the polymer to liquid.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "When there is enough liquid polymer, the ram will inject the polymer into the mould.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'."
+ },
+ {
   "id": "eng-2021-hl-q1-l",
   "topicId": "eng-3-7",
   "conceptId": "identify-metals-commmonly-used-protect-steel",
@@ -96,6 +139,43 @@
    }
   ],
   "stem": "(m) Outline two reasons for the use of composite materials, such as carbon fibre and fibreglass, in the production of modern kayaks."
+ },
+ {
+  "id": "eng-2021-hl-q2-a-i",
+  "topicId": "eng-3-14",
+  "conceptId": "term-hybrid-vehicle-technology",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q2(a)(i)",
+  "questionText": "Describe the term hybrid vehicle technology.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hybrid electric vehicles are powered by an internal combustion engine (ICE) and an electric motor, which uses energy stored in batteries. The battery can be charged through regenerative braking, plugged in to a charging point and by the internal combustion engine.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The extra power provided by the electric motor can potentially allow for a smaller engine.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Together, these features result in better fuel economy without sacrificing performance.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Answer all of the following:",
+  "notes": "The scheme prints '5'."
  },
  {
   "id": "eng-2021-hl-q2-a-ii",
@@ -164,7 +244,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "strain 3.0",
+    "verbatim": "Young’s modulus = stress = 260 = 87 N/mm² strain 3.0",
     "marks": 4
    }
   ],
@@ -195,6 +275,37 @@
   "stem": ". (50 marks)"
  },
  {
+  "id": "eng-2021-hl-q4-b-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "identify-microstructure-present-0-83-carbon",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q4(b)(ii)",
+  "questionText": "Identify and explain the microstructure which is present at 0.83% carbon steel, up to 723°C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pearlite is a layered structure with alternate layers of ferrite and cementite.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It has a “mother of pearl” sheen when fractured.",
+    "marks": null
+   }
+  ],
+  "stem": "1400 1000 600 200 C X Temperature °C 723°C 0.83% % Carbon 1 2 3 4 5 6",
+  "notes": "The scheme prints '4'."
+ },
+ {
   "id": "eng-2021-hl-q4-b-iii",
   "topicId": "eng-1-3",
   "conceptId": "transformation-occurs-point-x-reference-temperature",
@@ -212,7 +323,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "going through a pasty stage. It occurs at approx. 1140°C and 4.3% carbon content.",
+    "verbatim": "Point “X” is the eutectic point. This is where the liquid steel turns into solid steel without going through a pasty stage. It occurs at approx. 1140°C and 4.3% carbon content.",
     "marks": 6
    }
   ],
@@ -236,7 +347,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "atom in the centre of each of the cubes faces giving a total of 14 atoms while the body- centered cubic unit cell has atoms at each of the eight corners of a cube, plus one atom in the centre of the cube giving a total of 9 atoms. The more atoms in the structure the more ductile the material is as the atoms slip across each other easier.",
+    "verbatim": "The face-centered cubic unit cell has atoms at each of the eight corners of a cube, plus one atom in the centre of each of the cubes faces giving a total of 14 atoms while the body- centered cubic unit cell has atoms at each of the eight corners of a cube, plus one atom in the centre of the cube giving a total of 9 atoms. The more atoms in the structure the more ductile the material is as the atoms slip across each other easier.",
     "marks": 6
    }
   ],
@@ -260,7 +371,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Graph 7 Labels 1 + 1 + 1 Page 15",
+    "verbatim": "Graph 7 Labels 1 + 1 + 1",
     "marks": 10
    }
   ]
@@ -316,7 +427,7 @@
      "Acetylene is stored in acetone to prevent explosion",
      "Regulators are fitted with different threads to prevent interchange",
      "Flashback arrestors are used",
-     "between the welding power source and the piece to be welded.",
+     "The earth clamp is a tool that, via the earth cable, ensures the electrical circuit is closed between the welding power source and the piece to be welded.",
      "Provides a protective layer on the newly formed weld",
      "Prevents oxidation of weld",
      "Helps form the weld pool"
@@ -325,6 +436,49 @@
   ],
   "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2021-hl-q6-b-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "safety-precautions-be-observed-when-operating",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q6(b)(ii)",
+  "questionText": "Outline three safety precautions to be observed when operating a welding unit.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 + 2 + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wear a welding mask to prevent “arc-eye” and facial burning.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wear heavy gloves to prevent hands from being burned.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Have a ventilation system in place to deal with the toxic fumes.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Have all electrical units earthed and connections properly insulated.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2021-hl-q6-c-i",
@@ -357,6 +511,129 @@
   "stem": ". (50 marks)"
  },
  {
+  "id": "eng-2021-hl-q6-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "important-role-played-stepper-motors-control",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q6(c)(ii)",
+  "questionText": "Describe the important role played by stepper motors in the control of robotic arms.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Incremental movement and allow for precision control of movement",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reliability of operation",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Good power output to give torque required for operation",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Stepper motors are driven by control circuits",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2021-hl-q7-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "term-bioplastic",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q7(a)(i)",
+  "questionText": "Explain the term bioplastic.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bioplastics are plastic materials produced from renewable biomass sources, such as vegetable fats and oils, corn starch, straw, woodchips, sawdust, recycled food waste, etc.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Bioplastic can be made from agricultural by-products and also from used plastic bottles and other containers using micro-organisms. Bioplastics are biodegradable materials that come from renewable sources and can be used to reduce the problem of plastic waste that is contaminating the environment.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '2'."
+ },
+ {
+  "id": "eng-2021-hl-q7-c-i",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-diagram-suitable-polymer-manufacturing-process",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q7(c)(i)",
+  "questionText": "Describe, with the aid of a diagram, a suitable polymer manufacturing process to make the water bottle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. An extruded plastic parison is clamped in the blow moulder.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Air is blown into the heated chamber.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. The pliable plastic takes the shape of the mould.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. The finished product is removed.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "1. Parison 2. Clamping 3. Moulding 4. Finished bottle",
+    "marks": null
+   }
+  ],
+  "stem": "polylactic acid (PLA) filament guide plate forming and curing die preformer cut-off resin bath pulling mechanism fibre creel",
+  "notes": "The scheme prints '8'."
+ },
+ {
   "id": "eng-2021-hl-q7-c-ii",
   "topicId": "eng-1-9",
   "conceptId": "identify-polymer-additives-may-be-used",
@@ -375,7 +652,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "from thermal and light-assisted oxidation.",
+    "verbatim": "Stabilisers are added to prolong the useful life of a polymer formulation by protecting it from thermal and light-assisted oxidation.",
     "marks": null
    },
    {
@@ -460,7 +737,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "screw or bolt to pass through but not the head of the screw or bolt.",
+    "verbatim": "Clearance hole is a hole through an object which is large enough to enable threads of a screw or bolt to pass through but not the head of the screw or bolt.",
     "marks": 18,
     "accepts": [
      "A tapping size hole is drilled to allow threads to be cut on the inside of the hole.",
@@ -469,16 +746,47 @@
      "Feed rate can be regulated",
      "Has a cutting fluid reservoir integrated into the machine",
      "Cut-off switch prevents machine from cutting into bed",
-     "improves cutting action.",
+     "Cutting fluids will keep the material and cutting tools cool, this prevents heat build up and improves cutting action.",
      "Tool life is extended.",
      "Most cutting fluids have some lubricating action to make cutting more efficient.",
-     "an accumulation of material against the rake face which adheres to the tool tip. The cutting tool is separated from the chip by the built-up edge.",
+     "Built-up edge: In single point cutting of metals, a built-up edge is an accumulation of material against the rake face which adheres to the tool tip. The cutting tool is separated from the chip by the built-up edge.",
      "As the built-up edge enlarges, the cutting edge will not cut effectively as the tool cutting angles are compromised. The surface finish will deteriorate and machining will not be smooth."
     ]
    }
   ],
   "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any three@ 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2021-hl-q9-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "how-design-multi-directional-forklift-helps",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q9(c)(ii)",
+  "questionText": "Describe how the design of the multi-directional forklift helps to improve workplace safety. OR Outline one advantage and one disadvantage of offshore wind energy generation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The forklift shown can lift long loads safely. Loads can be manoeuvred with minimal need to change direction. The design of the forklift gives a wide range of user visibility.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Disadvantages of offshore wind energy: can be expensive to build and maintain; hard to reach locations; susceptible to damage from very high-speed winds during storms, which is expensive to repair.",
+    "marks": null
+   }
+  ],
+  "stem": "Leaving Certificate – Higher Level Engineering – Materials and Technology Thursday 10 June Morning 9:30 – 12:30",
+  "notes": "The scheme prints '8'."
  },
  {
   "id": "eng-2021-ol-q3-c",
@@ -649,6 +957,37 @@
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
+  "id": "eng-2022-hl-q1-b",
+  "topicId": "eng-1-3",
+  "conceptId": "examples-difference-between-amorphous-structures-crystalline",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(b)",
+  "questionText": "Describe, with examples, the difference between amorphous structures and crystalline structures.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Amorphous Structures - these structures have irregular and non-geometric patterns. e.g. Acrylic.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns e.g. BCC, FCC CPH. Crystalline Structures Amorphous Structures",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '10'."
+ },
+ {
   "id": "eng-2022-hl-q1-c",
   "topicId": "eng-3-12",
   "conceptId": "difference-between-clearance-fit-interference-fit",
@@ -666,7 +1005,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "the assembly. In the clearance fit, the largest permitted shaft diameter is smaller than the diameter of the smallest hole. The difference between the size of the hole and the size of the shaft is defined as clearance.",
+    "verbatim": "Clearance fit is one in which two assembled parts are always free to move relative to each other in the assembly. In the clearance fit, the largest permitted shaft diameter is smaller than the diameter of the smallest hole. The difference between the size of the hole and the size of the shaft is defined as clearance.",
     "marks": 10,
     "accepts": [
      "Interference fit also known as a press fit, is a form of fastening between two tight fitting mating parts that produces a joint which is held together by friction after the parts are pushed together. In an interference fit, the smallest permitted shaft diameter is bigger than the largest diameter of the hole."
@@ -701,6 +1040,37 @@
   "stem": ". (50 marks) Answer all of the following:"
  },
  {
+  "id": "eng-2022-hl-q2-a-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "basic-difference-between-machine-learning-deep",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q2(a)(ii)",
+  "questionText": "Explain the basic difference between machine learning and deep learning.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Machine learning is the general term for when computers learn from data. It describes the intersect of computer science and statistics where algorithms are used to perform a specific task without being explicitly programmed; instead, they recognise patterns in the data and make predictions once new data arrives.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Deep learning algorithms can be regarded both as a sophisticated and mathematically complex evolution of machine learning algorithms. Deep learning describes algorithms that analyses data with a logic structure similar to how a human would draw conclusions.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Answer all of the following:",
+  "notes": "The scheme prints '5'."
+ },
+ {
   "id": "eng-2022-hl-q2",
   "topicId": "eng-3-14",
   "conceptId": "artificial-intelligence-can-be-broadly-categorised",
@@ -725,7 +1095,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "intersect of computer science and statistics where algorithms are used to perform a specific task without being explicitly programmed; instead, they recognise patterns in the data and make predictions once new data arrives.",
+    "verbatim": "Machine learning is the general term for when computers learn from data. It describes the intersect of computer science and statistics where algorithms are used to perform a specific task without being explicitly programmed; instead, they recognise patterns in the data and make predictions once new data arrives.",
     "marks": null
    },
    {
@@ -737,7 +1107,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "learning algorithm is designed to perform a single task, and any knowledge gained from performing that task will not automatically be applied to other tasks.",
+    "verbatim": "Narrow artificial intelligence (weak AI) is a specific type of artificial intelligence in which a learning algorithm is designed to perform a single task, and any knowledge gained from performing that task will not automatically be applied to other tasks.",
     "marks": null
    },
    {
@@ -809,7 +1179,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "cast iron has more carbon in it. Whereas steel requires a carbon content of no more than 2%, cast iron usually contains 2% to 3.5% carbon. The carbon content that gives cast iron a rough, slightly bumpy feel. Its higher carbon content makes cast iron more brittle than steel.",
+    "verbatim": "Cast iron is an alloy of iron and carbon, just like steel, with the main difference being that cast iron has more carbon in it. Whereas steel requires a carbon content of no more than 2%, cast iron usually contains 2% to 3.5% carbon. The carbon content that gives cast iron a rough, slightly bumpy feel. Its higher carbon content makes cast iron more brittle than steel.",
     "marks": 8
    }
   ],
@@ -840,6 +1210,43 @@
   "stem": "1000 900 Temperature °C 800 700 600 500 400 300 200 100 0.2 0.4 0.6 0.8 1.0 1.2 1.4 % Carbon"
  },
  {
+  "id": "eng-2022-hl-q4-b-iii",
+  "topicId": "eng-2-6",
+  "conceptId": "method-accurately-measuring-furnace-temperature-when",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q4(b)(iii)",
+  "questionText": "Describe one method of accurately measuring furnace temperature when heat treating steel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The optical pyrometer method compares the intensity of light from the filament of a lamp with the colour from the furnace. Current flow from the lamp can be adjusted, using a variable resistor, to match the light colour from the furnace.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "There are three possible results with the optical pyrometer: filament too bright, filament not bright enough and filament matching the furnace colour. When the filament seems to ‘disappear’, the temperature of the filament matches that of the furnace and can thus be taken.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Temperature too low Correct Temperature too high",
+    "marks": null
+   }
+  ],
+  "stem": "1000 900 Temperature °C 800 700 600 500 400 300 200 100 0.2 0.4 0.6 0.8 1.0 1.2 1.4 % Carbon",
+  "notes": "The scheme prints '6'."
+ },
+ {
   "id": "eng-2022-hl-q4-c",
   "topicId": "eng-2-6",
   "conceptId": "aid-diagram-heating-cooling-process-used",
@@ -863,12 +1270,93 @@
      "Examples of where this process is used include the slide-ways on the center lathe and gears.",
      "High temperatures associated with the heating process – wear PPE.",
      "Electrical Alternating current supplying the coil can cause an electrical hazard.",
-     "Spitting of the water on impacting the heated surface could lead to burning."
+     "Spitting of the water on impacting the heated surface could lead to burning.",
+     "Fumes could lead to dangerous gas levels in the work area."
     ]
    }
   ],
   "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any two @ 8 + 8'."
+ },
+ {
+  "id": "eng-2022-hl-q4-c-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "safety-hazards-associated-induction-hardening-process",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q4(c)(ii)",
+  "questionText": "Outline two safety hazards associated with the induction hardening process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "High temperatures associated with the heating process – wear PPE.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Electrical Alternating current supplying the coil can cause an electrical hazard.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Spitting of the water on impacting the heated surface could lead to burning.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Fumes could lead to dangerous gas levels in the work area.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)"
+ },
+ {
+  "id": "eng-2022-hl-q5-a-i",
+  "topicId": "eng-1-3",
+  "conceptId": "aid-diagrams-process-dendritic-growth",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q5(a)(i)",
+  "questionText": "Describe, with the aid of diagrams, the process of dendritic growth.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "As a metal reaches its cooling point small particles cool first. Solidification takes place in a pattern. This pattern is called Dendritic Growth and looks like the branches of a tree.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Each small particle grows to form a crystal or grain. Crystals grow together to form a solid.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "This process is known as dendritic growth from Greek word “dendron” for treelike.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '10'."
  },
  {
   "id": "eng-2022-hl-q5-c-i",
@@ -906,97 +1394,6 @@
    }
   ],
   "stem": "dislocation"
- },
- {
-  "id": "eng-2022-hl-q6",
-  "topicId": "eng-2-10",
-  "conceptId": "aid-diagram-process-tig-welding",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q6",
-  "questionText": "(i) Describe, with the aid of a diagram, the process of TIG welding. (ii) Explain two reasons for using TIG welding in fabricating industrial grade aluminum. (a) The chassis of electric scooters is often constructed from lightweight industrial grade aluminium. Tungsten inert gas (TIG) welding may be used to fabricate the chassis. (i) Outline three functions of the electrode coating in manual metal arc welding. (ii) Explain two safety hazards associated with resistance spot welding. (iii) Describe the principles of operation of a step-down transformer in welding. (iv) Outline the function of a consumable bare wire electrode. (b) Answer any three of the following: (i) Outline how weld cracks and slag inclusions may form on a weld. Explain the following terms in relation to the autonomous mobile robots (AMR): • Automatic charging zones; • 24-hour remote monitoring. (ii) Describe the effects of either cracks or spatter on weld strength and finish. OR Outline two benefits of autonomous mobile robots (AMR) in warehouse operations. (c) Welding defects include cracking, slag inclusions and spatter. An autonomous mobile robot (AMR) is a vehicle that uses on-board sensors and processors to autonomously move materials without the need for physical guides or markers.",
-  "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "Question 6 – 50 marks"
-  },
-  "totalMarks": 50,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "An arc is formed between the non-consumable tungsten electrode and the metal being welded. The inert gas shielded arc is used to flux the joint, argon or helium are typically used to prevent oxygen getting to the joint area. A filler metal (welding rod) is added manually to the weld pool when necessary. A high frequency generator provides a path for the welding current. Both AC and DC power can be used in TIG welding techniques. TIG welding is a highly skilled welding process and is generally a manual operation.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "electrode",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "TIG welding offers more precision.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Uses a cleaner process, fewer fumes and less smoke when TIG welding.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Low deposition rates.",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Greater control of heat produced by the welder.",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "TIG welding allows you to choose the precise amperage for your work.",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "The cost of a TIG welder is comparable to the other methods.",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "The gas produced by burning prevents oxidation.",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "The flux helps the weld to form.",
-    "marks": null
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "There are slag forming elements in the flux and these will facilitate the formation of the slag.",
-    "marks": null
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Alloying elements if needed can be added as part of the flux coating. Page 19",
-    "marks": null
-   }
-  ],
-  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2022-hl-q7",
@@ -1065,7 +1462,7 @@
    {
     "id": "r-9",
     "kind": "point",
-    "verbatim": "flexible straps.",
+    "verbatim": "Suggested plastic is nylon. Nylon is strong, wear resistant and can be made into woven and flexible straps.",
     "marks": null
    },
    {
@@ -1145,29 +1542,35 @@
   "stem": "shell liner chin strap Chin strap"
  },
  {
-  "id": "eng-2022-ol-q2-d-i",
-  "topicId": "eng-2-15",
-  "conceptId": "advantage-using-belt-pulley-mechanism-drive",
-  "level": "ordinary",
+  "id": "eng-2022-hl-q7-c-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "process-polymer-lamination",
+  "level": "higher",
   "year": 2022,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2022 OL Q2(d)(i)",
-  "questionText": "State one advantage of using a belt and pulley mechanism in a drive system.",
+  "questionRef": "2022 HL Q7(c)(ii)",
+  "questionText": "Describe the process of polymer lamination.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 4,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "lubrication. Easier to assemble compared to gear drive systems.",
-    "marks": 4
+    "kind": "point",
+    "verbatim": "Thin layers of materials bonded together. High strength plastics can be produced by layers of other polymer, fibres, paper or cloth coated with resin being bonded together.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Heat and pressure are applied.",
+    "marks": null
    }
   ],
-  "stem": "roll cage seat wheel rim belt and pulley mechanism Engineering - Ordinary level 3",
-  "notes": "The scheme prints 'One part @ 4 marks'."
+  "stem": "laminated and tempered screen",
+  "notes": "The scheme prints '6'."
  },
  {
   "id": "eng-2022-ol-q4-d",
@@ -1285,6 +1688,37 @@
    }
   ],
   "stem": ". (50 marks) Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2023-hl-q1-b",
+  "topicId": "eng-2-10",
+  "conceptId": "briefly-principle-operation-bridge-rectifier-electric",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(b)",
+  "questionText": "Briefly describe the principle of operation of a bridge rectifier in electric arc welding circuits.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bridge rectifier: Used to convert mains supply alternating current (AC) to the direct current (DC) needed for welding. The rectifier basically consists of Silicon diodes, which ensure the flow of current in one direction giving DC output. This is most commonly used with arc welding equipment.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The input AC signal is applied at terminals a and b with the output across the load resistor R1.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'."
  },
  {
   "id": "eng-2023-hl-q1-c",
@@ -1437,7 +1871,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "occurs as a result of long-term exposure to high levels of stress that are below the yield strength of the material, the constant operation of a jet engine will create an environment for creep to be a potential source of failure.",
+    "verbatim": "Creep is the slow deformation over time resulting from a constant force acting on the material. It occurs as a result of long-term exposure to high levels of stress that are below the yield strength of the material, the constant operation of a jet engine will create an environment for creep to be a potential source of failure.",
     "marks": 5
    }
   ],
@@ -1511,6 +1945,61 @@
   "stem": ". (50 marks) Answer all of the following:"
  },
  {
+  "id": "eng-2023-hl-q2-c",
+  "topicId": "eng-3-14",
+  "conceptId": "discuss-how-extended-reality-xr-immersive",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(c)",
+  "questionText": "Discuss how Extended Reality (XR) immersive technology might provide a more engaging educational environment for learners of the future.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "XR allows students to visualise abstract or complex concepts in a more tangible and immersive manner, this can facilitate deeper comprehension and retention of knowledge.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This enables interactive and hands-on learning experiences. Students can actively engage with virtual objects, conduct experiments, manipulate simulations and solve problems in a virtual environment. This experiential learning approach fosters critical thinking, problem- solving skills and collaboration among students.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "XR technology can transport students to different locations and eras without leaving the classroom.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "It allows for personalised learning experiences tailored to individual student needs. Virtual environments can adapt to the student's pace, level of understanding and learning style.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Simulation training can develop skills.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "XR can enhance speed of learning and focus on learning styles that suit the learner.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Answer all of the following:",
+  "notes": "The scheme prints '10'."
+ },
+ {
   "id": "eng-2023-hl-q3-a-i",
   "topicId": "eng-3-8",
   "conceptId": "define-term-material-hardness",
@@ -1535,6 +2024,55 @@
   "stem": "Stainless steel kitchen"
  },
  {
+  "id": "eng-2023-hl-q3-a-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-diagram-s-vickers-hardness-test",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(a)(ii)",
+  "questionText": "Describe, with the aid of a diagram(s), the Vickers Hardness test, with reference to: • indenter shape • test procedure • hardness calculation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A diamond square-based pyramid indenter is used in this hardness test.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The angle of the indenter is 136˚.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The length of the diagonals (d₁ and d₂) of the indentation are measured.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Hardness Vickers (HV) number is calculated as follows; HV = Load / d₁.d₂",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The Vickers test provides accurate results on a full range of test pieces.",
+    "marks": null
+   }
+  ],
+  "stem": "Stainless steel kitchen",
+  "notes": "The scheme prints '8'."
+ },
+ {
   "id": "eng-2023-hl-q3-a-iii",
   "topicId": "eng-1-4",
   "conceptId": "advantage-disadvantage-use-stainless-steel-kitchen",
@@ -1552,7 +2090,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "is hard wearing, etc.",
+    "verbatim": "Advantages: Stainless steel gives an attractive shiny finish, it will maintain a hygienic surface, is hard wearing, etc.",
     "marks": 2
    },
    {
@@ -1637,6 +2175,37 @@
   "stem": ". (50 marks)"
  },
  {
+  "id": "eng-2023-hl-q3-c-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "distinguish-examples-between-microscopic-macroscopic-non",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(c)(ii)",
+  "questionText": "Distinguish, with examples, between microscopic and macroscopic non-destructive testing methods.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Macroscopic is a visual inspection process. Physical manufacturing defects can be detected by eye or low powered magnifying glass.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Microscopic examination of metals allows for more detailed examination of grain size and some impurities. An optical microscope is used for this type of inspection.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '8'."
+ },
+ {
   "id": "eng-2023-hl-q4-a-ii",
   "topicId": "eng-2-6",
   "conceptId": "reasons-case-hardening-arbour-keyless-chuck",
@@ -1703,7 +2272,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "due to the softer inner core, it is less likely to break on impact compared to a fully hardened product, etc.",
+    "verbatim": "Case hardening gives a hard, abrasion resistant outer surface yet has reduced brittleness due to the softer inner core, it is less likely to break on impact compared to a fully hardened product, etc.",
     "marks": 4
    }
   ],
@@ -1727,7 +2296,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "transforms into a mixture of two distinct phases: ferrite (α) and cementite (Fe₃C). This transformation is known as the eutectoid transformation. It is a crucial process that affects the microstructure and properties of the steel.",
+    "verbatim": "D = At the eutectoid point, during the cooling process, the single-phase austenite (γ) transforms into a mixture of two distinct phases: ferrite (α) and cementite (Fe₃C). This transformation is known as the eutectoid transformation. It is a crucial process that affects the microstructure and properties of the steel.",
     "marks": 3
    },
    {
@@ -1738,6 +2307,37 @@
    }
   ],
   "stem": "arbour Line A 1400 1000 600 200 Temperature °C Line B Line C % Carbon 1 2 3 4 5 6"
+ },
+ {
+  "id": "eng-2023-hl-q4-b-iii",
+  "topicId": "eng-1-4",
+  "conceptId": "compare-austenite-pearlite-reference-carbon-content",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(b)(iii)",
+  "questionText": "Compare austenite and pearlite with reference to carbon content, temperature and structure.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Austenite is a high-temperature phase with an FCC crystal structure, forming above the critical temperature and dissolving higher carbon contents (in excess of 0.76% carbon).",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pearlite is a BCC microstructure that forms during the eutectoid transformation of austenite and consists of alternating layers of ferrite and cementite. It forms at temperatures below the eutectoid temperature of 723 oC with a carbon content around the eutectoid composition.",
+    "marks": null
+   }
+  ],
+  "stem": "arbour Line A 1400 1000 600 200 Temperature °C Line B Line C % Carbon 1 2 3 4 5 6",
+  "notes": "The scheme prints '6'."
  },
  {
   "id": "eng-2023-hl-q5-a-ii",
@@ -1757,11 +2357,42 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "more difficult to move. Ductility is reduced and brittleness can be increased. Interstitial defects may reduce electrical and thermal conductivity with disruption of the regular patterns of atoms.",
+    "verbatim": "Interstitial defects can increase the hardness and strength of a metal as dislocations can be more difficult to move. Ductility is reduced and brittleness can be increased. Interstitial defects may reduce electrical and thermal conductivity with disruption of the regular patterns of atoms.",
     "marks": 4
    }
   ],
   "stem": "defect A defect B"
+ },
+ {
+  "id": "eng-2023-hl-q6-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-principles-mig-welding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(a)(i)",
+  "questionText": "Describe, with the aid of a diagram, the principles of MIG welding.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "MIG Welding is a semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield around the weld pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wire reel Arc",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '10'."
  },
  {
   "id": "eng-2023-hl-q6-a-ii",
@@ -1829,9 +2460,9 @@
     "accepts": [
      "Maximum combustion as all carbon from the acetylene is used.",
      "Has a working temperature of up to 3300°C.",
-     "The most extensively used flame for oxy-acetylene welding. Page 19",
-     "for automated welding.",
-     "reduced, arc is not visible, reduced fire and heat hazards, etc.",
+     "The most extensively used flame for oxy-acetylene welding.",
+     "MIG, TIG, resistance welding, Submerged Arc welding, Electro-slag welding, etc. are suitable for automated welding.",
+     "The weld can be protected from oxidation and potential weaknesses in SAW, fumes are reduced, arc is not visible, reduced fire and heat hazards, etc.",
      "Multi-run welds have a post heating effect on the previous weld which will improve its quality."
     ]
    }
@@ -1894,8 +2525,63 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "minimal cross-linking. This irregular internal structure and bonding arrangement allows these materials to be very elastic at room temperature.",
+    "verbatim": "A group of polymers consisting of linear chains that are coiled, entangled and are subject to minimal cross-linking. This irregular internal structure and bonding arrangement allows these materials to be very elastic at room temperature.",
     "marks": 8
+   }
+  ],
+  "stem": "polyurethane sole"
+ },
+ {
+  "id": "eng-2023-hl-q7-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "essential-properties-polyurethane-elastomer-makes-suitable",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(a)(ii)",
+  "questionText": "Outline two essential properties of a polyurethane elastomer which makes it suitable for use in the manufacture of the soles for running shoes.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Soft, deformable and flexible.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Elastic at room temperature.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Resilience to return to shape when forces of tension, torsion or compression are removed.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Low permeability to air, gases, water and steam.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Recyclability.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Good electrical and thermal insulation.",
+    "marks": null
    }
   ],
   "stem": "polyurethane sole"
@@ -1918,7 +2604,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "copolymer and the process is called copolymerisation. It is similar to the process of metal alloying. Examples of copolymers include Acrylonitrile butadiene styrene (ABS), Nitrile rubber and Ethylene-vinyl acetate.",
+    "verbatim": "When two or more different monomers are added together, their result is called a copolymer and the process is called copolymerisation. It is similar to the process of metal alloying. Examples of copolymers include Acrylonitrile butadiene styrene (ABS), Nitrile rubber and Ethylene-vinyl acetate.",
     "marks": 4
    }
   ],
@@ -1948,9 +2634,9 @@
      "Thermoset plastics are configured to be permanently moulded as they will not breakdown nor recycle effectively. Epoxy resins and polyurethanes are examples.",
      "Sort: Different plastic materials are sorted by different polymer types.",
      "Shred: The plastic materials are cut into small pieces, making them uniform and easier to process.",
-     "Page 22 Wash: the plastic pieces are cleaned.",
+     "Wash: the plastic pieces are cleaned.",
      "Fabricate: plastic pieces can be formed into beads and then used for remoulding.",
-     "membrane sheets, etc."
+     "Used to produce fencing panels as plastic wood, containers, insulation, waterproof membrane sheets, etc."
     ]
    }
   ],
@@ -1999,6 +2685,104 @@
    }
   ],
   "stem": ". (50 marks)"
+ },
+ {
+  "id": "eng-2023-hl-q8-c-ii",
+  "topicId": "eng-2-13",
+  "conceptId": "benefits-any-precision-grinding-process-or",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(c)(ii)",
+  "questionText": "Outline two benefits of any precision grinding process. OR Describe two integrated safety features in CNC laser cutting machines.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Full cover screen to protect operators from the hazards of laser cutting.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Sensors will detect if there is potential for materials to be destroyed by heat.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Emergency stop buttons and fume extraction systems are integrated.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Laser beams are protected from the operator and can be shut off.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Interlocking guards will ensure safe operation of the machine.",
+    "marks": null
+   }
+  ],
+  "stem": "hydraulic ram piston"
+ },
+ {
+  "id": "eng-2023-hl-q9-c-i",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-suitable-mechanism-folding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(c)(i)",
+  "questionText": "Describe, with the aid of a diagram(s), a suitable mechanism for folding the scooter handle. Outline two advantages of using solar powered LED lights in an urban setting.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The use of a universal joint inserted in the stem of the handle will allow the handle to fold.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A locking mechanism is required to keep the handle in the desired position.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "LED lights use less electricity than traditional bulbs.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "LED lights do not require as much maintenance or replacement.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "It allows new attractive designs to be introduced.",
+    "marks": null
+   }
+  ],
+  "stem": "folding handle Leaving Certificate – Higher Level Engineering – Materials and Technology Thursday 8 June Morning 9:30 – 12:30",
+  "notes": "The scheme prints '8'."
  },
  {
   "id": "eng-2023-ol-q3-b-i",
@@ -2126,35 +2910,6 @@
   "notes": "The scheme prints 'Two precautions @ 4 marks (8) (c) Any three parts @ 6 marks (18)'."
  },
  {
-  "id": "eng-2023-ol-q7-c-i",
-  "topicId": "eng-2-16",
-  "conceptId": "use-solenoid",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 OL Q7(c)(i)",
-  "questionText": "State one use of a solenoid.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "diameter of round bars or the internal diameter of holes. The measurement can be read directly from a digital display.",
-    "marks": 6,
-    "accepts": [
-     "to convert electrical energy into mechanical work. It can be used to open and close pneumatic valves / turn on or off an electrical switch / operate as a locking mechanism….",
-     "Plunger moves in and out."
-    ]
-   }
-  ],
-  "stem": "short leg long leg colour bands Leaving Certificate 2023 Engineering – Ordinary level 8",
-  "notes": "The scheme prints '@ 6 marks'."
- },
- {
   "id": "eng-2024-hl-q2-a-i",
   "topicId": "eng-3-14",
   "conceptId": "reasons-extensive-use-container-ships-movement",
@@ -2216,6 +2971,104 @@
   "stem": ". (50 marks)"
  },
  {
+  "id": "eng-2024-hl-q2-a-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "hazards-container-ships-must-overcome-they",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q2(a)(ii)",
+  "questionText": "Describe two hazards that container ships must overcome as they move across the oceans.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Weather Conditions: storms, hurricanes, typhoons, rough seas and high winds.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Piracy and security threats.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Mechanical failures: engine breakdowns, power outages or other mechanical issues can leave a ship stranded at sea.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Ships must navigate through narrow straits, congested shipping lanes, icebergs and shorelines where there is a risk of grounding or collision with other vessels.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Improperly secured or hazardous materials.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Political instability or conflicts can disrupt shipping routes or lead to blockades.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Ships can face delays due to port congestion or labour strikes.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '5'."
+ },
+ {
+  "id": "eng-2024-hl-q2-b-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "distinguish-between-following-container-ships-feeder",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q2(b)(ii)",
+  "questionText": "Distinguish between the following container ships: Feeder, Panamax and Ultra Large Container Vessel (ULCV).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Feeder Ships: relatively small ships, up to 2,500 TEUs, used for short sea and inland port routes where they can feed on to the larger vessels.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Panamax Ships: Medium-sized, up to 5,000 TEUs, designed for the original Panama Canal dimensions, medium to long-haul routes.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ultra Large Container Vessel (ULCV): Largest ships, over 14,000 TEUs, used for major intercontinental routes and require advanced port facilities.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '5'."
+ },
+ {
   "id": "eng-2024-hl-q2-c-i",
   "topicId": "eng-1-5",
   "conceptId": "container-ships-often-driven-cast-bronze",
@@ -2234,7 +3087,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "environment. Bronze is a strong and wear-resistant material.",
+    "verbatim": "Bronze has excellent resistance to corrosion, especially in a seawater environment. Bronze is a strong and wear-resistant material.",
     "marks": null
    },
    {
@@ -2283,6 +3136,43 @@
   "stem": "."
  },
  {
+  "id": "eng-2024-hl-q5-a-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "impact-line-defect-crystal-structure-material",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q5(a)(ii)",
+  "questionText": "Outline the impact of a line defect in the crystal structure of a material.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dislocations can move as far as grain boundaries under a shear stress.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Fine grained metals are stronger, stiffer and harder than coarse grained metals.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Dislocations promote material malleability. The motion of dislocations allows slip deformation to occur. Heat treatments can impact on dislocation density caused by cold working.",
+    "marks": null
+   }
+  ],
+  "stem": ".",
+  "notes": "The scheme prints '8'."
+ },
+ {
   "id": "eng-2024-hl-q5-b",
   "topicId": "eng-1-3",
   "conceptId": "draw-equilibrium-diagram-according-given-data",
@@ -2303,11 +3193,123 @@
     "verbatim": "% Metal B",
     "marks": 18,
     "accepts": [
-     "Time"
+     "Time",
+     "B - 630°C"
     ]
    }
   ],
   "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2024-hl-q5-c",
+  "topicId": "eng-3-7",
+  "conceptId": "other-than-sacrificial-protection-suggest-suitable",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q5(c)",
+  "questionText": "Answer any two of the following: (i) Describe the principle of sacrificial protection in relation to offshore wind farms. (ii) Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment. (iii) Explain why FCC crystalline structures are most associated with ductility in metals.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sacrificial protection is a corrosion protection method in which a more electrochemically active metal is electrically attached to a less active metal. The protection against rust caused by seawater for offshore wind turbine foundations is done by cathodic protection using sacrificial anodes in combination with corrosion protective coatings. A sacrificial anode is a piece of metal made of zinc or aluminium alloy that is attached to a steel structure to protect the steel structure from corrosion.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Barrier coatings like paint, plastic powder/dip coating.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Galvanising by dipping the steel into molten zinc.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Alloying with other metals such as corrosion-resistant nickel and oxidation-resistant chromium, etc.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "In the FCC structure atoms are at the corners of a cube and a single atom in the centre of each face of the cube. These atoms are more tightly packed than BCC structures, which allows slip to happen more easily and results in a more ductile metal.",
+    "marks": null
+   }
+  ],
+  "stem": ".",
+  "notes": "The scheme prints '16'."
+ },
+ {
+  "id": "eng-2024-hl-q7-a-ii",
+  "topicId": "eng-2-13",
+  "conceptId": "aid-diagram-s-principle-operation-manufacturing",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q7(a)(ii)",
+  "questionText": "Describe, with the aid of a diagram(s), the principle of operation for the manufacturing process used to manufacture the hose pipe.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Extrusion: Plastic granules are fed from a hopper through a die by a rotating screw. The plastic is heated in the chamber before it enters the die and cooled by air jets or water as it leaves the die. The extruded products can be cut into lengths or coiled.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thermoplastics such as polythene, PVC and nylon are commonly extruded. This process is used to produce items of uniform profile such as curtain rails and plumbing pipes.",
+    "marks": null
+   }
+  ],
+  "stem": "Hose pipe",
+  "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2024-hl-q7-c-i",
+  "topicId": "eng-1-9",
+  "conceptId": "term-bioplastic",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q7(c)(i)",
+  "questionText": "Explain the term bioplastic.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bioplastics are plastic materials produced from renewable biomass sources, such as vegetable fats and oils, corn starch, straw, woodchips, sawdust, recycled food waste, etc.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Bioplastic can be made from agricultural by-products and also from used plastic bottles and other containers using micro-organisms. Bioplastics can be used to reduce the problem of plastic waste that is contaminating the environment.",
+    "marks": null
+   }
+  ],
+  "stem": "3-D printed prototype",
+  "notes": "The scheme prints '8'."
  },
  {
   "id": "eng-2024-hl-q8-c-ii",
@@ -2421,6 +3423,37 @@
   "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
+  "id": "eng-2025-hl-q1-b",
+  "topicId": "eng-2-16",
+  "conceptId": "function-heatsink-electronic-devices",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q1(b)",
+  "questionText": "Explain the function of a heatsink in electronic devices.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A heatsink provides a reservoir or pathway to remove heat from temperature sensitive components. They are usually made from metal (copper or aluminium) and will allow for improved performance and extended component life.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Heat sink",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'."
+ },
+ {
   "id": "eng-2025-hl-q1-c",
   "topicId": "eng-2-11",
   "conceptId": "safety-precautions-be-observed-when-using",
@@ -2468,6 +3501,44 @@
    }
   ],
   "stem": ". (50 marks) Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2025-hl-q1-d",
+  "topicId": "eng-1-4",
+  "conceptId": "reasons-why-cast-iron-often-used",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q1(d)",
+  "questionText": "Outline two reasons why cast iron is often used to manufacture a kettlebell, as shown opposite.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cast iron is easy to cast into intricate shapes, giving the kettlebell good ergonomics.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cast iron provides good stiffness and durability.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cast iron is a dense material, so when comparing two kettlebells of the same weight, the cast iron option will always be smaller and more compact.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
+  "figureKey": "engineering-2025-HL-paper-q1d-art"
  },
  {
   "id": "eng-2025-hl-q1-f",
@@ -2519,6 +3590,80 @@
   "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
+  "id": "eng-2025-hl-q1-g",
+  "topicId": "eng-3-12",
+  "conceptId": "distinguish-between-incremental-absolute-dimensioning",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q1(g)",
+  "questionText": "Distinguish between incremental and absolute dimensioning.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The tool coordinates are always referenced to a fixed point, usually the machine origin or a work offset.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The tool coordinates are based on the previous position, and each move is a distance from the last point.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'."
+ },
+ {
+  "id": "eng-2025-hl-q2-a-i",
+  "topicId": "eng-3-14",
+  "conceptId": "main-properties-hydrogen",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q2(a)(i)",
+  "questionText": "State the main properties of hydrogen.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hydrogen is a chemical element represented by the symbol H on the periodic table and with an atomic number of 1 is the lightest of all the elements.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Hydrogen is the most abundant chemical substance making up around 75% of matter.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "It is a colourless, odourless, tasteless, non-toxic and highly flammable gas.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Hydrogen normally exists as a molecule of two atoms (H2) at room temperature and pressure. Hydrogen is found in compounds such as water (H2O), ammonia (NH3) and hydrocarbon fuels such as natural gas, coal, and oil.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '5'."
+ },
+ {
   "id": "eng-2025-hl-q2-a-ii",
   "topicId": "eng-3-14",
   "conceptId": "advantages-using-hydrogen-fuel-source",
@@ -2568,6 +3713,160 @@
   "stem": ". (50 marks)"
  },
  {
+  "id": "eng-2025-hl-q2-b-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "environmental-impact-smr-reference-use-fossil",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(ii)",
+  "questionText": "Outline the environmental impact of SMR with reference to the use of fossil fuels, energy input and emissions.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Data fossil fuel: coal, natural gas, biomass, domestic waste, etc. may be converted into hydrogen gas. Methane leaks in extraction and transportation are potent greenhouse gases.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Energy input: requires up to 1000°C temperature and high pressure.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Emissions: SMR will emit greenhouse gasses, CO2 and NOx emissions.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '5'."
+ },
+ {
+  "id": "eng-2025-hl-q2-c-i",
+  "topicId": "eng-3-14",
+  "conceptId": "reasons-why-research-development-r-d",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q2(c)(i)",
+  "questionText": "Outline two reasons why Research and Development (R&D) is important in hydrogen energy technology.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Improving efficiency and performance.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reduction in costs as green technology is currently an expensive process.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Could create a sustainable methodology for the future company development.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Better storage, pipelines and transportation methods can be employed.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Safety and reliability integrated into system design.",
+    "marks": null
+   }
+  ],
+  "stem": "energy"
+ },
+ {
+  "id": "eng-2025-hl-q2-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "distinguish-between-use-hydrogen-power-data",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q2(c)(ii)",
+  "questionText": "Distinguish between the use of hydrogen power for data centres and agricultural industries.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Data centres may use hydrogen to provide a sustainable and environmentally friendly power source. These centres require stable and uninterrupted energy making hydrogen a feasible alternative to other renewable sources. Can use high-cost hydrogen fuel cells and storage systems for efficient energy use.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Agriculture energy use is more variable and seasonal with energy demands higher at busy times. It tends to use hydrogen-powered machinery and systems (such as cleaning and irrigation) with the added benefit of ammonia use in fertilizers. On-site hydrogen production or refuelling station may be needed.",
+    "marks": null
+   }
+  ],
+  "stem": "energy",
+  "notes": "The scheme prints '5'."
+ },
+ {
+  "id": "eng-2025-hl-q2-d",
+  "topicId": "eng-3-14",
+  "conceptId": "principle-operation-hydrogen-fuel-cell-reference",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q2(d)",
+  "questionText": "Outline the principle of operation of a hydrogen fuel cell with reference to the anode, cathode, electrolyte membrane and by-products.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A fuel cell is a device that generates electricity from the chemical energy of a fuel (hydrogen) and an oxidising agent (air) through an electrochemical reaction, not combustion. It consists of two electrodes, a negative electrode (anode) and a positive electrode (cathode) sandwiched around an electrolyte. A fuel, such as hydrogen, is fed to the anode, and air is fed to the cathode.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A catalyst at the anode separates the hydrogen fuel molecules into electrons and protons, which take different paths to the cathode.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "As the fuel is consumed, the electrons create a flow of electricity which can be used to power electrical devices, while the protons migrate through the electrolyte to the cathode, where they unite with oxygen and the electrons to produce water and heat. Fuel cells operate similarly to batteries, but do not run down or need recharging, producing electricity and heat as long as fuel is supplied. As there are no moving parts, fuel cells operate silently and with extremely high reliability.",
+    "marks": null
+   }
+  ],
+  "stem": "oxygen membrane hydrogen water anode cathode",
+  "notes": "The scheme prints '10'."
+ },
+ {
   "id": "eng-2025-hl-q3-a-i",
   "topicId": "eng-3-8",
   "conceptId": "term-metal-fatigue",
@@ -2592,6 +3891,99 @@
   "stem": "compressor blade"
  },
  {
+  "id": "eng-2025-hl-q3-a-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "how-temperature-may-affect-creep-metals",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q3(a)(ii)",
+  "questionText": "Describe how temperature may affect creep in metals.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermal creep is the slow, time-dependent deformation of metals under constant stress. It can be a significant issue for materials operating in high-performance systems, such as jet engines, that oŌen reach extreme temperatures. Higher temperatures increase atomic movement, accelerating the creep deformation rate.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This can cause the blades to elongate, which can ultimately lead to the blade beginning to damage or pierce the turbine casing.",
+    "marks": null
+   }
+  ],
+  "stem": "compressor blade",
+  "notes": "The scheme prints '4'."
+ },
+ {
+  "id": "eng-2025-hl-q3-c-i",
+  "topicId": "eng-3-8",
+  "conceptId": "distinguish-between-microscopic-macroscopic-non-destructive",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q3(c)(i)",
+  "questionText": "Distinguish between microscopic and macroscopic non-destructive testing.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Metal macroscopic examination is a visual inspection process. Physical manufacturing defects can be detected by eye or low powered magnifying glass.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Microscopic examination of metals allows for more detailed examination of grain size and some impurities. An optical microscope is used for this type of inspection.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2025-hl-q3-c-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-diagram-s-suitable-non-destructive",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q3(c)(ii)",
+  "questionText": "Describe, with the aid of a diagram(s), one suitable non-destructive test used to examine jet engine turbine blades for internal flaws.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X-ray radiation penetrates materials and produces an internal photographic image of the test piece. Electrons are released by heating the cathode to high temperature. A high DC voltage speeds up the electrons which are aimed at the anode. The electrons penetrate the anode and the energy is given off as X-rays. The anode reflects the X-rays to the test piece and an image plate is used to capture the internal image. Any flaw or cavity in the test piece will appear dark on the image plate as the radiation will not be absorbed by the flaw.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Proper shielding is necessary when using x-ray equipment as a safety precaution. Internal cavities in jet engine turbine blades can be determined by this NDT method.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '8'."
+ },
+ {
   "id": "eng-2025-hl-q4-b-ii",
   "topicId": "eng-1-3",
   "conceptId": "point-c-transformation-occurs-point",
@@ -2609,7 +4001,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "approximately 723°C at 0.83% carbon.",
+    "verbatim": "Point C is called the eutectoid point. At this point solid austenite changes to solid pearlite at approximately 723°C at 0.83% carbon.",
     "marks": 6
    }
   ],
@@ -2661,7 +4053,7 @@
     "marks": 16,
     "accepts": [
      "There are three possible results with the optical pyrometer: filament too bright, filament not bright enough and filament matching the furnace colour. When the filament seems to disappear the temperature of the filament matches that of the furnace and a reading can then be established.",
-     "Temperature too low Correct Temperature too high Page 15",
+     "Temperature too low Correct Temperature too high",
      "Oil, water, brine, air cooling, furnace cooling, lime, etc.",
      "Superior mechanical properties due to continuous grain flow.",
      "Toughness; forged components have higher toughness values.",
@@ -2671,6 +4063,30 @@
   ],
   "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any two @ 8 + 8'."
+ },
+ {
+  "id": "eng-2025-hl-q5-a-i",
+  "topicId": "eng-1-3",
+  "conceptId": "term-allotrope",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q5(a)(i)",
+  "questionText": "Explain the term allotrope.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The ability of some chemical elements to exist in two or more forms is known as allotropy, e.g. steel can exist in a BBC structure at low temperatures and FCC at 910°C and BCC at 1400°C.",
+    "marks": 4
+   }
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2025-hl-q5-b-iii",
@@ -2690,10 +4106,41 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "the pasty phase.",
+    "verbatim": "Eutectic point. Here the alloy changes straight from a liquid to a solid without going through the pasty phase.",
     "marks": 4
    }
   ]
+ },
+ {
+  "id": "eng-2025-hl-q6-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-s-process-submerged-arc",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q6(a)(i)",
+  "questionText": "Describe, with the aid of a diagram(s), the process of submerged arc welding (SAW).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In submerged arc welding, a bare wire electrode is used. It is fed automatically from a spool and generates an electric arc to heat the metal. The flux, in powder form, is fed from a hopper to completely cover the joint and the tip of the electrode. The arc creates the heat to melt the joint, flux and electrode.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A slag is formed to provide a protective coating for the weld. The excess flux powder can be collected and used again. Submerged arc welding is a fully automated process.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '10'."
  },
  {
   "id": "eng-2025-hl-q6-b",
@@ -2756,7 +4203,7 @@
    {
     "id": "r-8",
     "kind": "point",
-    "verbatim": "Facilitates the striking action of the arc between the work and electrode. Page 19",
+    "verbatim": "Facilitates the striking action of the arc between the work and electrode.",
     "marks": null
    },
    {
@@ -2768,7 +4215,7 @@
    {
     "id": "r-10",
     "kind": "point",
-    "verbatim": "contact, high quality joints. By rotating one work piece at high- speed relative to another, a compressive axial force is applied.",
+    "verbatim": "Friction welding is a solid-state fusion process that produces full contact, high quality joints. By rotating one work piece at high- speed relative to another, a compressive axial force is applied.",
     "marks": null
    },
    {
@@ -2874,6 +4321,104 @@
   "stem": ". (50 marks)"
  },
  {
+  "id": "eng-2025-hl-q7-c-i",
+  "topicId": "eng-1-9",
+  "conceptId": "effects-plastic-waste-marine-life",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q7(c)(i)",
+  "questionText": "Outline the effects of plastic waste on marine life.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Marine animals mistake plastic for food, leading to blocked digestive systems and death.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Animals can become entangled in plastic debris.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Plastic waste damages coral reefs, smothers marine habitats and disrupts nesting sites, leading to ecosystem imbalances.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Microplastics from degraded plastics are ingested by marine life and then enter the food chain.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Declines in marine life affect fishing industries and tourism, leading to financial losses for coastal communities.",
+    "marks": null
+   }
+  ],
+  "stem": "Seabin™",
+  "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2025-hl-q7-c-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "differentiate-between-methods-recycling-thermoplastics-thermosetting",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q7(c)(ii)",
+  "questionText": "Differentiate between the methods of recycling thermoplastics and thermosetting plastics.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermoplastics can be recycled relatively easily. They can be melted and reshaped multiple times without significantly altering their chemical structure or properties.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The recycling process for thermoplastics typically involves collecting, sorting, cleaning, shredding, and then melting the plastic before remoulding it into new products. Examples include polyethylene (PE), polypropylene (PP) and polyvinyl chloride (PVC).",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Thermoseƫng plastics are much harder to recycle. Once they have been cured and set into a rigid form, they cannot be remelted or reshaped due to their cross-linked chemical structure.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "This makes traditional recycling methods like melting and remoulding ineffective.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Recycling thermoseƫng plastics usually involves grinding them into small particles that can be used as fillers or in composite materials, rather than being reformed into new plastic products.",
+    "marks": null
+   }
+  ],
+  "stem": "Seabin™",
+  "notes": "The scheme prints '8'."
+ },
+ {
   "id": "eng-2025-hl-q8-a-ii",
   "topicId": "eng-2-11",
   "conceptId": "safety-hazards-associated-using-precision-grinding",
@@ -2909,31 +4454,6 @@
    }
   ],
   "stem": ". (50 marks)"
- },
- {
-  "id": "eng-2025-ol-q6-c-ii",
-  "topicId": "eng-2-13",
-  "conceptId": "any-processes-named-you-q6-c",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q6(c)(ii)",
-  "questionText": "Describe any one of the processes named by you, at Q6(c)(i) above. OR Name one CNC machine commonly used in the engineering workshop.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "used in the engineering workshop.",
-    "marks": 6
-   }
-  ],
-  "stem": "stunt bike pegs",
-  "notes": "The scheme prints 'One part @ 6 marks'."
  },
  {
   "id": "eng-2025-ol-q6-c-iii",

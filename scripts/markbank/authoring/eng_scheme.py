@@ -91,6 +91,9 @@ OR_ROW = re.compile(r'^(?:Or|OR)$')
 # Total (8) Marks metals." It is the marking grid, never the answer, so it
 # comes out before a point is assembled rather than off the end of one.
 MARK_CELL = re.compile(r'\s*\bTotal\s*\(?\d{1,3}\)?\s*Marks?\b\s*', re.I)
+# The running footer arrives the same way and welds onto the end of a point:
+# "Stepper motors are driven by control circuits Page 18".
+PAGE_FOOT = re.compile(r'\s*\bPage\s+\d{1,3}\b\s*', re.I)
 
 
 def _lines(page, join='block'):
@@ -476,7 +479,19 @@ class EngScheme:
         b = self.body().get((q, letter, roman))
         if not b:
             return []
-        lines = [MARK_CELL.sub(' ', x) for x in b['points']]
+        lines = [PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', x)) for x in b['points']]
+        # The bold heading is the scheme's restatement of the ask and not a
+        # marking point -- but only when it is a whole one. 2021 HL Q4(b)(iii)
+        # sets "Point X is the eutectic point. This is where the liquid steel
+        # turns into solid steel without" in bold and "going through a pasty
+        # stage." underneath, and the boldness changes MID-SENTENCE. Cutting
+        # there left the answer starting "going through a pasty stage", which
+        # is what a student would screenshot. A lead that does not close, above
+        # a point that does not open, is one sentence and is rejoined.
+        lead = ' '.join((b.get('lead') or '').split())
+        if lines and lead and not re.search(r'[.?!:]\s*$', lead) \
+                and re.match(r'[a-z]', lines[0].strip()):
+            lines = [f'{lead} {lines[0]}'.strip()] + list(lines[1:])
         if not any(BULLET.match(x) for x in lines):
             # One point per SENTENCE, not one per key. Joining every line a
             # key holds made points of 1,588 characters -- a whole column of
@@ -484,9 +499,17 @@ class EngScheme:
             # appears in the scheme, so the provenance gate refused all of
             # them. A line that ends on a full stop ends its point.
             out, cur = [], []
-            for line in lines:
+            for n, line in enumerate(lines):
                 cur.append(line)
-                if re.search(r'[.?!:]$', line.strip()):
+                # A full stop ends a point only when what follows STARTS one.
+                # "It occurs at approx." ends a line on a period and the
+                # sentence runs on, so splitting there left the next point
+                # opening "1140°C and 4.3% carbon content" -- and a card whose
+                # answer begins mid-sentence is a card a student screenshots.
+                # 42 rows across the subject began that way.
+                nxt = next((x.strip() for x in lines[n + 1:] if x.strip()), '')
+                if re.search(r'[.?!:]$', line.strip()) and not re.match(
+                        r'[a-z]', nxt):
                     out.append(' '.join(cur).strip())
                     cur = []
             if cur:

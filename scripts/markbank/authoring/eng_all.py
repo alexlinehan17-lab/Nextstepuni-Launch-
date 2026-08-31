@@ -167,7 +167,13 @@ def rows_for(notation, total, rule, points):
         return None
     if len(points) == 1:
         return ('point', [total], {'kind': 'fixed'}, None)
-    return ('alt', [total], {'kind': 'fixed'}, None)
+    # One total, several points, and no split stated anywhere. Treating them
+    # as alternatives paid the whole tariff for each — "4" against two points
+    # became 4 marks apiece — and lib.card rightly refused it. The scheme has
+    # not said how the four are divided, so the card does not say either: it
+    # shows the points the scheme states and the total the table prints, and
+    # claims nothing in between. Never guess a tariff.
+    return ('point', None, {'kind': 'questionTotal'}, None)
 
 
 def main():
@@ -384,6 +390,14 @@ def main():
                            notation=model['notation'],
                            ladder=S.tariff(*key),
                            stem=not cardlint.label_junk(stem))
+                elif model['kind'] == 'questionTotal':
+                    A.card(*key, topic=topic, concept=concept_for(ask),
+                           source='table', card_id=cid,
+                           use=[i for i, _ in keep[:MAX_ROWS]],
+                           tariff='questionTotal', figure=figure,
+                           total=S.tariff(*key),
+                           stem=not cardlint.label_junk(stem),
+                           notes=f'The scheme prints {S.notation(*key)!r}.')
                 else:
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
