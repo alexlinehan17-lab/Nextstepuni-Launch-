@@ -200,6 +200,12 @@ def build_map(paper_path, scheme_path, subject):
         marks = {n: lead[n] for n in range(1, 11)
                  if n in lead and (lead[n][0], lead[n][1]) < (a_end[0], a_end[1])}
         if sorted(marks) != list(range(1, 11)):
+            # 2026 restyle: Section A blocks are headed 'Question N.  20 marks'
+            # (no bare lead-ints). Same semantics, different marker — reuse the
+            # 'Question N' block positions already collected in sq.
+            marks = {n: sq[n] for n in range(1, 11)
+                     if n in sq and (sq[n][0], sq[n][1]) < (a_end[0], a_end[1])}
+        if sorted(marks) != list(range(1, 11)):
             return None, f"section A markers incomplete: {sorted(marks)}"
         for n in range(1, 11):
             nxt = marks.get(n + 1) or a_end

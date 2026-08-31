@@ -42,8 +42,8 @@ CYCLE_OF_EXAM = {"lc": "lc", "jc": "jc", "lb": "lca"}
 CYCLE_RANK = {"lc": 0, "jc": 1, "lca": 2}
 CYCLE_PREFIX = {"lc": "", "jc": "jc-", "lca": "lca-"}
 
-LC_YEAR_MIN, LC_YEAR_MAX = 2010, 2025  # also LCA
-JC_YEAR_MAX = 2025
+LC_YEAR_MIN, LC_YEAR_MAX = 2010, 2026  # also LCA
+JC_YEAR_MAX = 2026
 JC_CANCELLED_YEARS = (2020, 2021)
 JC_CANCELLED_REASON = "Junior Cycle exams were cancelled in 2020 and 2021"
 LCA_CANCELLED_REASON = ("No 2020 LCA written examinations — COVID-19 calculated grades "
@@ -341,6 +341,23 @@ QA_PASSED_ANSWER_PROFILES = {
     ('religious-education', 'ordinary', 'ev'),
     ('romanian', 'higher', 'ev'),
     ('slovenian', 'higher', 'ev'),
+    # 2026 refresh wave (2026-08-31): profiles whose first sidecars arrived with
+    # the 2026 papers, each render-verified per question (first/middle/last pane
+    # against the real PDFs) in the 2026 audit session. Music here is the
+    # LISTENING paper (component 008) only — the 2026 scheme leads with the
+    # restated listening answers, so the generic band mapped the COMPOSING
+    # paper (006) onto the listening block; those four sidecars were deleted
+    # (2018/2022 006 maps re-verified correct — the trap is 2026-specific).
+    ('latin', 'higher', 'ev'),
+    ('latin', 'higher', 'iv'),
+    ('lca-engineering', 'common', 'ev'),
+    ('lca-gaeilge-chumarsaideach', 'common', 'iv'),
+    ('link-modules', 'common', 'ev'),
+    ('music', 'higher', 'iv'),
+    ('music', 'ordinary', 'ev'),
+    ('music', 'ordinary', 'iv'),
+    ('physics', 'ordinary', 'iv'),
+    ('physics-and-chemistry', 'ordinary', 'iv'),
 }
 
 # ─── Hand-written subject knowledge ──────────────────────────────────────────

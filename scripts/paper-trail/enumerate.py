@@ -44,9 +44,9 @@ DELAY = 1.6
 
 VIEWS = ["exampapers", "markingschemes"]
 YEARS = {
-    "lc": [str(y) for y in range(2010, 2026)],
-    "lb": [str(y) for y in range(2010, 2026)],
-    "jc": ["2017", "2018", "2019", "2022", "2023", "2024", "2025"],
+    "lc": [str(y) for y in range(2010, 2027)],
+    "lb": [str(y) for y in range(2010, 2027)],
+    "jc": ["2017", "2018", "2019", "2022", "2023", "2024", "2025", "2026"],
 }
 
 F = "MaterialArchive__noTable__"

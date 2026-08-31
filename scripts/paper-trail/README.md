@@ -64,6 +64,19 @@ merged dark and lit per-profile later.
    merely shifted, so the contact-sheet spot-check for at least one new year per
    profile stays part of the refresh.
 
+6. **Never ship `--fallback` output.** The universal navigation fallback in
+   `anchor-map.py` places chips by PROPORTIONAL page position (`idx*apages//N`),
+   not by matching scheme markers. The 2026 audit rendered all 64 fallback
+   sidecars it produced and deleted every one: combined P1+P2 schemes (Maths IV),
+   topic-organised schemes (History OL), descriptor-band schemes (Art, Applied
+   Maths project), restructured new-spec schemes (Biology HL Q6 jumped to the
+   scheme's Q12; Economics), section-restart papers (LCA Italian, Mandarin) and
+   passage-paragraph-numbered languages all mis-navigate, and a 3-chip sample
+   can never validate the unsampled chips of a proportional guess. The flag
+   pipeline ships fallback sidecars UNGATED (`answers:1` without a QA profile),
+   so a fallback run silently publishes wrong navigation. Use `--fallback` only
+   for local experiments; delete its output before `build-index.py`.
+
 Note: current-year files upload with `max-age=86400` (SEC occasionally
 re-issues schemes); when a year stops being current, the next refresh re-uploads
 it under the immutable policy.

@@ -80,7 +80,7 @@ FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.pd
 
 # Scope. SCOPE_CODES None = all subjects; a set = only those SEC codes (used to
 # extend already-verified subjects to more years without re-mapping the rest).
-SCOPE_EXAM = "LC"
+SCOPE_EXAMS = {"LC"}
 SCOPE_LEVELS = {"A", "G", "C"}      # higher, ordinary, common
 SCOPE_LANGS = {"EV"}
 SCOPE_YEARS = set(range(2010, 2026))
@@ -443,7 +443,14 @@ def fallback_chips(headers, yband, scheme, band_start, band_end,
     question, page-jumping PROPORTIONALLY into the scheme's answer region. Never a
     crop and never an exact-answer claim (conf 0.3) — the viewer frames it as "opens
     the scheme near Q N". Used only where the precise path drops but the paper has
-    real per-question headers + a scheme."""
+    real per-question headers + a scheme.
+
+    DO NOT SHIP THIS OUTPUT (2026-08 audit). Proportional placement mis-navigates
+    wherever per-question page counts vary or the scheme's structure differs from
+    the paper's numbering — which is exactly where the precise path drops. All 64
+    fallback sidecars produced for 2026 were render-audited and deleted; see
+    README.md §Annual refresh item 6. build-index.py flags fallback sidecars
+    UNGATED, so anything left in answers/ goes live."""
     if not UNIVERSAL_FALLBACK:
         return None
     # SEC schemes always open with a cover + a "Note to teachers" page before any
@@ -665,7 +672,7 @@ def build_pairs(rows, include_done=False, langs=None, levels=None):
     schemes = defaultdict(list)
     for r in rows:
         d = decode_fileid(r["fileid"])
-        if not d or d["exam"] != SCOPE_EXAM:
+        if not d or d["exam"] not in SCOPE_EXAMS:
             continue
         if d["code"] in DONE_CODES and not include_done:
             continue  # frozen — lit in an earlier wave, never re-mapped
@@ -719,7 +726,51 @@ def build_pairs(rows, include_done=False, langs=None, levels=None):
 
 
 def main():
+    # Annual-refresh knobs (README "Annual refresh"): --years 2026 scopes the
+    # run to the new year; --include-done also ATTEMPTS the frozen DONE_CODES
+    # subjects for those years (their committed sidecars for other years are
+    # protected by the SCOPE_YEARS guard on the clearing loop above). Codes
+    # owned by the bespoke generators are still excluded via --skip-codes.
+    global SCOPE_YEARS, DONE_CODES, SCOPE_CODES
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--years", help="comma-separated years to (re)map, e.g. 2026")
+    ap.add_argument("--include-done", action="store_true",
+                    help="attempt frozen DONE_CODES subjects too (new-year refresh)")
+    ap.add_argument("--skip-codes", default="",
+                    help="comma-separated SEC codes to leave alone (bespoke-owned)")
+    ap.add_argument("--langs", default="",
+                    help="comma-separated language codes to attempt (default EV; "
+                         "the IV-audit profiles need EV,IV)")
+    ap.add_argument("--levels", default="",
+                    help="comma-separated level codes to attempt (default A,G,C; "
+                         "Foundation maths needs A,G,C,B)")
+    ap.add_argument("--exams", default="",
+                    help="comma-separated exam prefixes to attempt "
+                         "(default LC; the JC/LCA profiles need LC,JC,LB)")
+    ap.add_argument("--fallback", action="store_true",
+                    help="also run the universal navigation-fallback pass "
+                         "(conf-0.3 page-jump chips for papers the precise "
+                         "engine drops; ships ungated by design)")
+    args = ap.parse_args()
+    global SCOPE_LANGS, SCOPE_LEVELS, UNIVERSAL_FALLBACK, SCOPE_EXAMS
+    if args.years:
+        SCOPE_YEARS = {int(y) for y in args.years.split(",")}
+    if args.langs:
+        SCOPE_LANGS = {x.strip().upper() for x in args.langs.split(",") if x.strip()}
+    if args.levels:
+        SCOPE_LEVELS = {x.strip().upper() for x in args.levels.split(",") if x.strip()}
+    if args.exams:
+        SCOPE_EXAMS = {x.strip().upper() for x in args.exams.split(",") if x.strip()}
+    if args.fallback:
+        UNIVERSAL_FALLBACK = True
+    skip = {c.strip().upper() for c in args.skip_codes.split(",") if c.strip()}
+    if args.include_done:
+        DONE_CODES = set(skip)
+    elif skip:
+        DONE_CODES = DONE_CODES | skip
     log("Paper Trail — Stage 2.5: anchor maps (auto-grammar)")
+    log(f"  scope: years {sorted(SCOPE_YEARS)} | frozen codes: {len(DONE_CODES)}")
     if not os.path.exists(MANIFEST):
         log(f"FATAL: {MANIFEST} missing — run enumerate.py first")
         return 1
@@ -739,13 +790,23 @@ def main():
     pairs = build_pairs(rows)
     log(f"  in-scope papers: {len(pairs)}")
 
-    # Clear only the sidecars this run will regenerate (in-scope, not frozen) so
-    # earlier waves' committed sidecars survive — each wave is additive.
+    # Clear only the sidecars this run will regenerate (in-scope, not frozen,
+    # AND within SCOPE_YEARS) so earlier waves' committed sidecars survive —
+    # each wave is additive. The year guard matters on an annual refresh: a run
+    # scoped to the new year can only regenerate that year's files, so it must
+    # only clear that year's files — without it, extending a frozen subject to
+    # the new year (DONE_CODES emptied, SCOPE_YEARS={new}) would delete every
+    # committed sidecar of every attempted code whose corpus PDF is not on the
+    # machine, silently de-flagging shipped papers.
     def in_scope_code(code):
-        return code not in DONE_CODES and (SCOPE_CODES is None or code in SCOPE_CODES)
+        return (code[:2].upper() in SCOPE_EXAMS
+                and code not in DONE_CODES
+                and (SCOPE_CODES is None or code in SCOPE_CODES))
     if os.path.isdir(ANSWERS_DIR):
         for yd in os.listdir(ANSWERS_DIR):
             ydp = os.path.join(ANSWERS_DIR, yd)
+            if not (yd.isdigit() and int(yd) in SCOPE_YEARS):
+                continue
             if os.path.isdir(ydp):
                 for fn in os.listdir(ydp):
                     if in_scope_code(fn[:5]):
@@ -835,7 +896,7 @@ def main():
 
     # report
     rep = ["# Paper Trail — Stage 2.5 anchor-map report (auto-grammar)", ""]
-    rep.append(f"Scope: {SCOPE_EXAM} levels {sorted(SCOPE_LEVELS)} langs {sorted(SCOPE_LANGS)} "
+    rep.append(f"Scope: {'/'.join(sorted(SCOPE_EXAMS))} levels {sorted(SCOPE_LEVELS)} langs {sorted(SCOPE_LANGS)} "
                f"years {min(SCOPE_YEARS)}–{max(SCOPE_YEARS)}.")
     rep.append(f"\n**{fully} full · {degraded} partial · {dropped} dropped** "
                f"({fully + degraded}/{fully + degraded + dropped} papers mapped)\n")

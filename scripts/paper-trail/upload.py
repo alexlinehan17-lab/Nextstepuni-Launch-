@@ -32,12 +32,20 @@ ANSWERS_MANIFEST = os.path.join(HERE, "out", "answers-upload-manifest.jsonl")
 STAGE = os.path.join(HERE, "out", "stage")
 BUCKET = "gs://nextstepuni-app.firebasestorage.app"
 GCLOUD = os.path.expanduser("~/google-cloud-sdk/bin/gcloud")
-CURRENT_YEAR = 2025  # most recent published exam year
+CURRENT_YEAR = 2026  # most recent published exam year
 
 
 def main():
+    # Annual refresh: `--year 2026` uploads only that year's objects, so the
+    # (gitignored, absent) corpus for other years can't abort the run. The
+    # remote-count verification is scoped the same way.
+    only_year = None
+    if len(sys.argv) == 3 and sys.argv[1] == "--year":
+        only_year = int(sys.argv[2])
     rows = [json.loads(l) for l in open(MANIFEST)]
-    print(f"manifest: {len(rows)} objects")
+    if only_year is not None:
+        rows = [r for r in rows if r["year"] == only_year]
+    print(f"manifest: {len(rows)} objects" + (f" (year {only_year})" if only_year else ""))
 
     missing = [r for r in rows if not os.path.exists(os.path.join(REPO, r["local"]))]
     if missing:
@@ -92,6 +100,8 @@ def main():
     # Coordinates-only JSON; tiny; may be re-generated, so a 1-day cache. Empty
     # manifest (no QA-passed profiles yet) is a clean no-op.
     answer_rows = [json.loads(l) for l in open(ANSWERS_MANIFEST)] if os.path.exists(ANSWERS_MANIFEST) else []
+    if only_year is not None:
+        answer_rows = [r for r in answer_rows if f"/{only_year}/" in r["remote"]]
     if answer_rows:
         a_missing = [r for r in answer_rows if not os.path.exists(os.path.join(REPO, r["local"]))]
         if a_missing:
@@ -117,7 +127,10 @@ def main():
         [GCLOUD, "storage", "ls", "-r", f"{BUCKET}/papers/**"],
         capture_output=True, text=True,
     )
-    remote = len([l for l in out.stdout.splitlines() if l.endswith(".pdf")])
+    listed = [l for l in out.stdout.splitlines() if l.endswith(".pdf")]
+    if only_year is not None:
+        listed = [l for l in listed if f"/{only_year}/" in l]
+    remote = len(listed)
     print(f"remote PDFs: {remote} / expected {len(rows)}")
     if remote < len(rows):
         print("WARNING: counts differ — re-run to fill gaps (cp is resumable).")

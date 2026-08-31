@@ -66,7 +66,7 @@ ANSWERS_DIR = os.path.join(HERE, "answers")
 
 SIDECAR_V = 1
 COPYRIGHT = "© State Examinations Commission"
-YEARS = range(2021, 2026)              # 2020 shipped in wave 8 — untouched
+YEARS = range(2021, 2027)              # 2020 shipped in wave 8 — untouched
 PAPER_FID = "LC033ALP041EV.pdf"
 SCHEME_FID = "LC033ALP000EV.pdf"
 MAX_TAIL_SPAN = 6                      # last question: max continuation pages

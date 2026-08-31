@@ -65,7 +65,7 @@ FILEID = "LC462CLP000EV.pdf"
 # 2016/2017 papers were archived under a letter-O component fileid
 # (LC462CLPO00EV.pdf) while their schemes use the usual zero form.
 PAPER_FILEID_BY_YEAR = {2016: "LC462CLPO00EV.pdf", 2017: "LC462CLPO00EV.pdf"}
-YEARS = range(2010, 2026)
+YEARS = range(2010, 2027)
 MARK_X = 200          # section headers / Q tokens start left of this (points)
 MAX_REGION_PAGES = 6
 
