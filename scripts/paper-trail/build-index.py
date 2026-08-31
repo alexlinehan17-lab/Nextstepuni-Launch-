@@ -89,7 +89,10 @@ JC_DEFAULT_START = 2022
 
 # fileid grammar: {LC|JC|LB}{SSS}{LVL}LP{CCC}{LANG}.pdf
 # ("L?P" — at least one archive file, LC038AP000EV.pdf, drops the L)
-FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.pdf$", re.I)
+# .jpg: image supplements (Geography-family map/photo sheets) index as docs
+# too — the decode loop normalises every image extension to lowercase .jpg
+# first, and the corpus stores TIFF sources converted to JPEG under that name.
+FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.(?:pdf|jpg)$", re.I)
 LEVEL_BY_CODE = {"A": "higher", "G": "ordinary", "B": "foundation", "C": "common"}
 # Z = aural/other (no level) — only ever seen on non-PDF assets so far.
 
@@ -644,13 +647,33 @@ def main():
     log(f"  downloads.jsonl: {'%d records' % len(dl) if downloads_present else 'MISSING (Stage 2 not run yet)'}")
 
     # ── Decode ───────────────────────────────────────────────────────────────
+    # Image supplements (Geography-family aerial photos / map sheets) index as
+    # ordinary docs: the SEC flips their format year to year (.pdf/.jpg/.JPG/
+    # .tif), so every image row is normalised to a lowercase-.jpg fileid — the
+    # corpus and Storage hold TIFF sources converted to JPEG under that name
+    # (the annual refresh's image fetch step does the conversion). Audio/video
+    # rows stay out of scope.
+    image_re = re.compile(r"\.(jpe?g|tiff?)$", re.I)
+    # When the SEC published the same component as BOTH a PDF and an image in
+    # one year (2018 Geography Picture/Illustration), the PDF wins — it is the
+    # already-live richer format; the image row is a duplicate, not a doc.
+    pdf_bases = {(r["view"], r["year"], r["fileid"].rsplit(".", 1)[0].upper())
+                 for r in rows if r["fileid"].lower().endswith(".pdf")}
     decoded = []
     for r in rows:
         if not r["fileid"].lower().endswith(".pdf"):
-            ext = r["fileid"].rsplit(".", 1)[-1].lower()
-            issues.non_pdf[ext] += 1
-            issues.non_pdf_rows[(r["exam"], html.unescape(r["subjectName"]).strip(), int(r["year"]))] += 1
-            continue
+            if image_re.search(r["fileid"]):
+                base = (r["view"], r["year"], image_re.sub("", r["fileid"]).upper())
+                if base in pdf_bases:
+                    issues.artifacts.append(
+                        f"{r['exam']} {r['year']} {r['subjectName']} {r['fileid']} (image duplicate of indexed PDF)")
+                    continue
+                r = dict(r, fileid=image_re.sub(".jpg", r["fileid"]))
+            else:
+                ext = r["fileid"].rsplit(".", 1)[-1].lower()
+                issues.non_pdf[ext] += 1
+                issues.non_pdf_rows[(r["exam"], html.unescape(r["subjectName"]).strip(), int(r["year"]))] += 1
+                continue
         d = decode_row(r, issues)
         if d:
             decoded.append(d)
@@ -841,9 +864,15 @@ def main():
             _cy = registry[(exam, eff_name)]["cycle"]
             upload_rows[f"papers/{_cy}/{sid}/{year}/paper/{p['fileid']}"] = \
                 f"paper-trail-corpus/{p['view']}/{p['year']}/{p['fileid']}"
-            prim = scheme_for_paper(p, cands)
+            # Image supplements never carry a marking scheme — the scheme
+            # belongs to the Source Paper item of the same entry, and pairing
+            # one here would put a scheme button on a photograph.
+            is_image = p["fileid"].lower().endswith(".jpg")
+            prim = None if is_image else scheme_for_paper(p, cands)
             scheme_doc = doc_for(prim) if prim else None
-            if prim and scheme_doc:
+            if is_image:
+                pass
+            elif prim and scheme_doc:
                 used_scheme_ids.add(id(prim))
                 upload_rows[f"papers/{_cy}/{sid}/{year}/scheme/{prim['fileid']}"] = \
                     f"paper-trail-corpus/{prim['view']}/{prim['year']}/{prim['fileid']}"

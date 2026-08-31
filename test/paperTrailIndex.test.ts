@@ -72,9 +72,16 @@ describe('Paper Trail index entries', () => {
         expect(['ev', 'iv'].includes(e.lang), `${id} ${e.year} lang`).toBe(true);
         expect(e.papers.length, `${id} ${e.year} ${e.level} ${e.lang} has papers`).toBeGreaterThan(0);
         for (const p of e.papers) {
-          expect(p.doc.f, `${id} ${e.year} fileid`).toMatch(/\.pdf$/i);
+          // Docs are PDFs, or the image supplements (Geography-family aerial
+          // photo / map sheets) that build-index normalises to lowercase .jpg.
+          expect(p.doc.f, `${id} ${e.year} fileid`).toMatch(/\.(pdf|jpg)$/i);
           expect(p.label.length, `${id} ${e.year} label`).toBeGreaterThan(0);
+          // Schemes are always PDFs — an image never carries a marking scheme.
           if (p.scheme) expect(p.scheme.f).toMatch(/\.pdf$/i);
+          if (/\.jpg$/i.test(p.doc.f)) {
+            expect(p.doc.f, `${id} ${e.year}: image fileids are normalised lowercase .jpg`).toMatch(/\.jpg$/);
+            expect(p.scheme, `${id} ${e.year}: image supplement with a scheme`).toBeUndefined();
+          }
         }
       }
     }
