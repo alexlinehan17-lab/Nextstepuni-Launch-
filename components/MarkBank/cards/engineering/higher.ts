@@ -2681,10 +2681,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "When two or more different monomers are added together, their result is called a copolymer and the process is called copolymerisation. It is similar to the process of metal alloying. Examples of copolymers include Acrylonitrile butadiene styrene (ABS), Nitrile rubber and Ethylene-vinyl acetate.", marks: 4 },
     ],
     questionFigure: {
-          "candId": "engineering-2023-HL-paper-q7bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7bii-art.png",
+          "candId": "engineering-2023-HL-paper-q7bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7bi-art.png",
           "srcHash": "bd55b86b2a330396878d031fe087d6fb",
-          "alt": "The table or diagram printed with 2023 HL Q7(b)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 HL Q7(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
     },
@@ -3264,6 +3264,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Carbon fibre has an excellent strength-to-weight ratio and impact resistance.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Superior impact protection over traditional polymer materials, etc.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q3ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q3ai-art.png",
+          "srcHash": "205366d91ae4da49623036f0b8a67dbb",
+          "alt": "The table or diagram printed with 2024 HL Q3(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3277,6 +3285,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Material toughness is the ability of a material to absorb energy and plastically deform without fracturing. Materials that can absorb a lot of energy before fracturing have high toughness.", marks: 4 },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q3ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q3ai-art.png",
+          "srcHash": "205366d91ae4da49623036f0b8a67dbb",
+          "alt": "The table or diagram printed with 2024 HL Q3(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3299,6 +3315,14 @@ export const CARDS: SecCard[] = [
     { id: "r-9", kind: "point", verbatim: "Test piece notch is facing away from the pendulum.", marks: null },
     { id: "r-10", kind: "point", verbatim: "The distance the pendulum travels after breaking the piece will give the toughness value.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q3ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q3ai-art.png",
+          "srcHash": "205366d91ae4da49623036f0b8a67dbb",
+          "alt": "The table or diagram printed with 2024 HL Q3(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3636,13 +3660,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q7-a-ii", topicId: "eng-2-13", conceptId: "aid-diagram-s-principle-operation-manufacturing",
     section: "A", questionRef: "2024 HL Q7(a)(ii)",
-    stem: "Hose pipe",
     questionText: "Describe, with the aid of a diagram(s), the principle of operation for the manufacturing process used to manufacture the hose pipe.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Extrusion: Plastic granules are fed from a hopper through a die by a rotating screw. The plastic is heated in the chamber before it enters the die and cooled by air jets or water as it leaves the die. The extruded products can be cut into lengths or coiled.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Thermoplastics such as polythene, PVC and nylon are commonly extruded. This process is used to produce items of uniform profile such as curtain rails and plumbing pipes.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q7ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q7ai-art.png",
+          "srcHash": "d2f936c87e6d1cff48036bc2110bd783",
+          "alt": "The table or diagram printed with 2024 HL Q7(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3759,6 +3790,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Parallel turning: reduces Facing: smooth finish Drilling holes. diameter of workpiece. on front face.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Boring / internal threading: Knurling: adding Grooving / parting-off: widening the hole and finger grips. creating the grooves and creating the thread. cutting to length.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q8ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q8ai-art.png",
+          "srcHash": "c8b2624427f3b72471f5289d03543052",
+          "alt": "The table or diagram printed with 2024 HL Q8(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3772,6 +3811,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Use of cutting fluids have a lubricating impact and will reduce heat build-up and improve surface finish; the quality of the cutting tool; maintenance of correct cutting angles and a sharp cutting edge; the machine parameters, speed and feed rate, etc.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q8ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q8ai-art.png",
+          "srcHash": "c8b2624427f3b72471f5289d03543052",
+          "alt": "The table or diagram printed with 2024 HL Q8(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3865,6 +3912,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Programming is designed to avoid collision between materials and tooling.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Lasers are protected.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q8cii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q8cii-art.png",
+          "srcHash": "7432315fb6028d9ba99229bea8f274f8",
+          "alt": "The table or diagram printed with 2024 HL Q8(c)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3907,10 +3962,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "An LDR or light dependent resistor is a type of resistor whose resistance varies depending on the amount of light falling on its surface. These resistors are often used in circuits where it is required to sense the presence of light/darkness such as garden lights.", marks: 6 },
     ],
     questionFigure: {
-          "candId": "engineering-2024-HL-paper-q9bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bii-art.png",
+          "candId": "engineering-2024-HL-paper-q9bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bi-art.png",
           "srcHash": "eda3928788c576ad0829fc193917260c",
-          "alt": "The table or diagram printed with 2024 HL Q9(b)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2024 HL Q9(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
     },
@@ -4375,12 +4430,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q4-b-ii", topicId: "eng-1-3", conceptId: "point-c-transformation-occurs-point",
     section: "A", questionRef: "2025 HL Q4(b)(ii)",
-    stem: "plough point 1000 900 800 Temperature ⁰C 700 C B 600 500 400 300 200 100 0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 % Carbon",
     questionText: "Name point C and describe the transformation which occurs at this point.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Point C is called the eutectoid point. At this point solid austenite changes to solid pearlite at approximately 723°C at 0.83% carbon.", marks: 6 },
     ],
+    questionFigure: {
+          "candId": "engineering-2025-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q4bi-art.png",
+          "srcHash": "dcdad25df1b0feb60cd13b5ce6d25665",
+          "alt": "The table or diagram printed with 2025 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4389,12 +4451,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q4-b-iii", topicId: "eng-2-6", conceptId: "annealing-1-2-carbon-steel-under",
     section: "A", questionRef: "2025 HL Q4(b)(iii)",
-    stem: "plough point 1000 900 800 Temperature ⁰C 700 C B 600 500 400 300 200 100 0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 % Carbon",
     questionText: "Describe the annealing of 1.2% carbon steel under the following headings: • Temperature • Cooling process • Effect on the steel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(approx. 800°C). It is then soaked at this temperature allowing the whole of the piece to be at the same temperature. It is then allowed to cool gradually in the furnace by reducing the temperature. During full annealing new grains are formed and this is called recrystallisation and this makes the metal soft, improves ductility, refines the grain size and removes internal stresses.", marks: 8 },
     ],
+    questionFigure: {
+          "candId": "engineering-2025-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q4bi-art.png",
+          "srcHash": "dcdad25df1b0feb60cd13b5ce6d25665",
+          "alt": "The table or diagram printed with 2025 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

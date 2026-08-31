@@ -196,9 +196,13 @@ def crop_for(path, q, letter, roman):
     and inside neither roman's band. It is the same shared stimulus the deck
     already allows a question figure to be.
     """
-    got = _crop(path, q, letter, roman)
-    if got is None and roman is not None:
-        got = _crop(path, q, letter, None)
+    # The LETTER first when there is one. A picture is printed once for the
+    # group, and a roman's own band cuts a piece out of it: 2021 HL Q2(d)(ii)
+    # came back as the word "transmission" and one arrow, sliced off the
+    # hybrid vehicle diagram that belongs to (d).
+    got = _crop(path, q, letter, None) if (roman and letter) else None
+    if got is None:
+        got = _crop(path, q, letter, roman)
     return got
 
 
@@ -349,6 +353,34 @@ REJECTED = {
     (2023, 'hl', 7, 'c', 'ii'): 'a stage of the process is clipped off',
     (2025, 'hl', 5, 'c', 'i'): 'the last stages of the process are clipped off',
     (2025, 'hl', 5, 'c', 'ii'): 'the last stages of the process are clipped off',
+    # A second pass over a much wider worklist. Every crop below was opened
+    # and is the wrong picture, in one of four ways.
+    #
+    # It CARRIES THE ASK, printed inside the same ruled box as the drawing it
+    # belongs to, so the card would show the question twice:
+    (2021, 'hl', 7, 'a', 'i'): 'the ruled box holds the ask as well',
+    (2022, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
+    (2024, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
+    (2025, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
+    # It is a LABEL and an arrow sliced off a bigger picture, not a picture:
+    (2025, 'hl', 3, 'a', 'ii'): 'a fragment of the jet engine photograph',
+    (2025, 'hl', 3, 'a', 'iii'): 'the words "compressor blade" and an arc',
+    (2025, 'hl', 4, 'a', 'i'): 'the words "plough point" and a line',
+    # It answers a SIBLING and would mislead on this part: a ratchet against
+    # "describe the operation of bevel gears", an Allen key against "suggest
+    # one method of joining sheet aluminium", a laser cutter against
+    # "identify one use for this centre lathe part":
+    (2025, 'hl', 9, 'b', 'i'): 'a ratchet, and (b)(i) asks about bevel gears',
+    (2025, 'ol', 4, 'c', 'ii'): 'tool A, and (c)(ii) asks about joining sheet',
+    (2024, 'ol', 6, 'c', 'ii'): 'the CNC branch, not the centre lathe part',
+    # And the ones already rejected once, reappearing under a sibling roman
+    # now that the worklist is wider:
+    (2022, 'ol', 6, 'c', 'iii'): 'two pictures: knurling and a casting',
+    (2023, 'hl', 7, 'c', 'i'): 'a stage of the process is clipped off',
+    (2023, 'hl', 8, 'b', 'ii'): 'clips the word "machine" beneath it',
+    (2023, 'ol', 6, 'c', 'i'): 'the 3D printer branch, not the thumbscrew',
+    (2024, 'ol', 5, 'a', 'ii'): 'one of the items the ask says are shown',
+    (2025, 'hl', 5, 'c', 'iii'): 'the last stages of the process are clipped off',
 }
 
 

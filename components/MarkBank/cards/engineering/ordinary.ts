@@ -164,10 +164,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Flux protects the weld area and prevents oxidisation during welding.", marks: 4 },
     ],
     questionFigure: {
-          "candId": "engineering-2021-OL-paper-q4bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bii-art.png",
+          "candId": "engineering-2021-OL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bi-art.png",
           "srcHash": "7dfcc4ecadb58fc60dd4d4c40a6b6adb",
-          "alt": "The table or diagram printed with 2021 OL Q4(b)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2021 OL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -345,6 +345,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 6 },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q5-c", topicId: "eng-1-9", conceptId: "select-any-household-items-shown-below",
+    section: "A", questionRef: "2021 OL Q5(c)",
+    questionText: "Select any two of the household items shown below and name a plastic material which is suitable to produce each: (i) Basin (ii) Toothbrush (iii) Shampoo bottle.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Basin: Polypropylene (PP)", marks: 10, accepts: ["Toothbrush: Nylon","Shampoo bottle: Polyvinylchloride (PVC)"] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2021-OL-paper-q5ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q5ci-art.png",
+          "srcHash": "127d3999d6f1876ebd286bde3f4e7cf5",
+          "alt": "The table or diagram printed with 2021 OL Q5(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1176,10 +1197,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A passive flux is an inactive, non-corrosive flux and will not damage / corrode the electrical circuit. Therefore, the passive flux can remain on the electric circuit when finished soldering.", marks: 5 },
     ],
     questionFigure: {
-          "candId": "engineering-2023-OL-paper-q4civ-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4civ-art.png",
+          "candId": "engineering-2023-OL-paper-q4ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4ci-art.png",
           "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
-          "alt": "The table or diagram printed with 2023 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 OL Q4(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -1294,6 +1315,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.", marks: 12, accepts: ["Thermosetting plastic is a plastic which remains hard when heated.","Pre-heated items for coating are dipped into a tank of plastic powder which fuses and sticks to the product. The item is removed and allowed to cool causing the plastic to form a protective coating around the product.","Thermoplastic is a plastic which softens when heated. Thermoplastics can be recycled and used again."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q5-c", topicId: "eng-1-9", conceptId: "select-any-products-shown-below-plastic",
+    section: "A", questionRef: "2023 OL Q5(c)",
+    questionText: "Select any two of the products shown below and name a plastic material which is suitable for the manufacture of each product: (i) Toy car, (ii) Bevel gears, (iii) Electrical socket, (iv) Food container.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Toy racing car: Polystyrene (HIPS) / PVC / ABS", marks: 10, accepts: ["Bevel gears: Nylon","Urea-Formaldehyde (UF)","Food container: Polystyrene"] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-OL-paper-q5ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q5ci-art.png",
+          "srcHash": "ba173f85d44adffac95e6d4fdf8ca21a",
+          "alt": "The table or diagram printed with 2023 OL Q5(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1575,6 +1617,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Frame", marks: 6, accepts: ["Reason: Light, but strong Weighted plates"] },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-OL-paper-q2ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q2ci-art.png",
+          "srcHash": "c2cf01e808bbe72d44db15f4d4eeee19",
+          "alt": "The table or diagram printed with 2024 OL Q2(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1589,10 +1639,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "anyN", verbatim: "Component parts can be easily dismantled if there is repair work required or new parts to be replaced.", marks: 4 },
     ],
     questionFigure: {
-          "candId": "engineering-2024-OL-paper-q2dii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q2dii-art.png",
+          "candId": "engineering-2024-OL-paper-q2di-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q2di-art.png",
           "srcHash": "230f56b15957641678ada07d55875859",
-          "alt": "The table or diagram printed with 2024 OL Q2(d)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2024 OL Q2(d)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -2016,12 +2066,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q2-c-i", topicId: "eng-3-14", conceptId: "suitable-material-each-parts-labelled-mini",
     section: "A", questionRef: "2025 OL Q2(c)(i)",
-    stem: "seat digging bucket tracks mini excavator",
     questionText: "Name a suitable material for each of the parts labelled on the mini excavator.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Material: Vinyl", marks: 4 },
     ],
+    questionFigure: {
+          "candId": "engineering-2025-OL-paper-q2ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q2ci-art.png",
+          "srcHash": "eca76676c9eba7ed94cabb28fa290dfe",
+          "alt": "The table or diagram printed with 2025 OL Q2(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2030,12 +2087,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q2-c-ii", topicId: "eng-3-14", conceptId: "reason-selection-each-material-named",
     section: "A", questionRef: "2025 OL Q2(c)(ii)",
-    stem: "seat digging bucket tracks mini excavator",
     questionText: "State one reason for the selection of each material named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Tracks: ‐", marks: 6, accepts: ["Reason: Light, flexible and shock absorption Digging bucket: ‐","Reason: Strong, durable and wear resistant."] },
     ],
+    questionFigure: {
+          "candId": "engineering-2025-OL-paper-q2ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q2ci-art.png",
+          "srcHash": "eca76676c9eba7ed94cabb28fa290dfe",
+          "alt": "The table or diagram printed with 2025 OL Q2(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2195,6 +2259,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 10, accepts: ["Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"","Thermoplastic is a plastic which softens when heated.","This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q5-d", topicId: "eng-1-9", conceptId: "select-any-items-shown-below-suitable",
+    section: "A", questionRef: "2025 OL Q5(d)",
+    questionText: "Select any two of the items shown below and name a suitable plastic material for each of the parts identified.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Vehicle chassis – Acrylic", marks: 10, accepts: ["Battery holder – Polypropylene or Nylon","3D printed part – PLA","Gears ‐ Nylon"] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-OL-paper-q5di-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q5di-art.png",
+          "srcHash": "320f2983f5039204ebfde502bd03ef1a",
+          "alt": "The table or diagram printed with 2025 OL Q5(d)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

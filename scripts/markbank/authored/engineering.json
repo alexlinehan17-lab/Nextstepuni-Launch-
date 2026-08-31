@@ -2374,7 +2374,7 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2021-OL-paper-q4bii-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q4bi-art"
  },
  {
   "id": "eng-2021-ol-q4-b-ii",
@@ -2665,6 +2665,35 @@
     "marks": 6
    }
   ]
+ },
+ {
+  "id": "eng-2021-ol-q5-c",
+  "topicId": "eng-1-9",
+  "conceptId": "select-any-household-items-shown-below",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q5(c)",
+  "questionText": "Select any two of the household items shown below and name a plastic material which is suitable to produce each: (i) Basin (ii) Toothbrush (iii) Shampoo bottle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Basin: Polypropylene (PP)",
+    "marks": 10,
+    "accepts": [
+     "Toothbrush: Nylon",
+     "Shampoo bottle: Polyvinylchloride (PVC)"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Two parts @ 5 marks (10)'.",
+  "questionFigureKey": "engineering-2021-OL-paper-q5ci-art"
  },
  {
   "id": "eng-2021-ol-q5-d",
@@ -7378,7 +7407,7 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2023-HL-paper-q7bii-art"
+  "questionFigureKey": "engineering-2023-HL-paper-q7bi-art"
  },
  {
   "id": "eng-2023-hl-q7-b-ii",
@@ -8653,7 +8682,7 @@
     "marks": 5
    }
   ],
-  "questionFigureKey": "engineering-2023-OL-paper-q4civ-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q4ci-art"
  },
  {
   "id": "eng-2023-ol-q4-c-ii",
@@ -8818,6 +8847,36 @@
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
+ },
+ {
+  "id": "eng-2023-ol-q5-c",
+  "topicId": "eng-1-9",
+  "conceptId": "select-any-products-shown-below-plastic",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q5(c)",
+  "questionText": "Select any two of the products shown below and name a plastic material which is suitable for the manufacture of each product: (i) Toy car, (ii) Bevel gears, (iii) Electrical socket, (iv) Food container.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Toy racing car: Polystyrene (HIPS) / PVC / ABS",
+    "marks": 10,
+    "accepts": [
+     "Bevel gears: Nylon",
+     "Urea-Formaldehyde (UF)",
+     "Food container: Polystyrene"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 5 marks (10)'.",
+  "questionFigureKey": "engineering-2023-OL-paper-q5ci-art"
  },
  {
   "id": "eng-2023-ol-q5-d",
@@ -9753,7 +9812,8 @@
     "verbatim": "Superior impact protection over traditional polymer materials, etc.",
     "marks": null
    }
-  ]
+  ],
+  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art"
  },
  {
   "id": "eng-2024-hl-q3-a-ii",
@@ -9776,7 +9836,8 @@
     "verbatim": "Material toughness is the ability of a material to absorb energy and plastically deform without fracturing. Materials that can absorb a lot of energy before fracturing have high toughness.",
     "marks": 4
    }
-  ]
+  ],
+  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art"
  },
  {
   "id": "eng-2024-hl-q3-a-iii",
@@ -9854,7 +9915,8 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints '8'."
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q3ai-art"
  },
  {
   "id": "eng-2024-hl-q3-c-i",
@@ -10588,8 +10650,8 @@
     "marks": null
    }
   ],
-  "stem": "Hose pipe",
-  "notes": "The scheme prints '8'."
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art"
  },
  {
   "id": "eng-2024-hl-q7-b-i",
@@ -10847,7 +10909,8 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints '3 + 3 + 3'."
+  "notes": "The scheme prints '3 + 3 + 3'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q8ai-art"
  },
  {
   "id": "eng-2024-hl-q8-a-ii",
@@ -10871,7 +10934,8 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints '4 + 3'."
+  "notes": "The scheme prints '4 + 3'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q8ai-art"
  },
  {
   "id": "eng-2024-hl-q8-b-i",
@@ -11092,7 +11156,8 @@
     "verbatim": "Lasers are protected.",
     "marks": null
    }
-  ]
+  ],
+  "questionFigureKey": "engineering-2024-HL-paper-q8cii-art"
  },
  {
   "id": "eng-2024-hl-q9-a-i",
@@ -11176,7 +11241,7 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q9bi-art"
  },
  {
   "id": "eng-2024-hl-q9-b-ii",
@@ -11669,7 +11734,8 @@
     ]
    }
   ],
-  "notes": "The scheme prints 'Three parts @ 2 marks (15)'."
+  "notes": "The scheme prints 'Three parts @ 2 marks (15)'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q2ci-art"
  },
  {
   "id": "eng-2024-ol-q2-d-i",
@@ -11694,7 +11760,7 @@
    }
   ],
   "notes": "The scheme prints 'One part @ 4 marks'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q2dii-art"
+  "questionFigureKey": "engineering-2024-OL-paper-q2di-art"
  },
  {
   "id": "eng-2024-ol-q2-d-ii",
@@ -12943,7 +13009,7 @@
     "marks": 6
    }
   ],
-  "stem": "plough point 1000 900 800 Temperature ⁰C 700 C B 600 500 400 300 200 100 0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 % Carbon"
+  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art"
  },
  {
   "id": "eng-2025-hl-q4-b-iii",
@@ -12967,7 +13033,7 @@
     "marks": 8
    }
   ],
-  "stem": "plough point 1000 900 800 Temperature ⁰C 700 C B 600 500 400 300 200 100 0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 % Carbon"
+  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art"
  },
  {
   "id": "eng-2025-hl-q4-c-i",
@@ -14788,8 +14854,8 @@
     "marks": 4
    }
   ],
-  "stem": "seat digging bucket tracks mini excavator",
-  "notes": "The scheme prints 'One part @ 4 marks'."
+  "notes": "The scheme prints 'One part @ 4 marks'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q2ci-art"
  },
  {
   "id": "eng-2025-ol-q2-c-ii",
@@ -14817,8 +14883,8 @@
     ]
    }
   ],
-  "stem": "seat digging bucket tracks mini excavator",
-  "notes": "The scheme prints 'Three parts @ 2 marks (6)'."
+  "notes": "The scheme prints 'Three parts @ 2 marks (6)'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q2ci-art"
  },
  {
   "id": "eng-2025-ol-q3-a",
@@ -15071,6 +15137,36 @@
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
+ },
+ {
+  "id": "eng-2025-ol-q5-d",
+  "topicId": "eng-1-9",
+  "conceptId": "select-any-items-shown-below-suitable",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q5(d)",
+  "questionText": "Select any two of the items shown below and name a suitable plastic material for each of the parts identified.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Vehicle chassis – Acrylic",
+    "marks": 10,
+    "accepts": [
+     "Battery holder – Polypropylene or Nylon",
+     "3D printed part – PLA",
+     "Gears ‐ Nylon"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Two parts @ 5 marks'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q5di-art"
  },
  {
   "id": "eng-2025-ol-q6-b",

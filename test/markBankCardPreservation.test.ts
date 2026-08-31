@@ -710,7 +710,23 @@ const decks = [
   // any three of the following: inspection robot" — the lead-in with a
   // picture's label run onto it — and its five romans are the list. Nothing
   // removed.
-  ['engineering:ordinary', ENG_ORDINARY, 150, '714eb2a036db8718724ee0ee99e5764df3288ba511ff33bb19941a1a0ab33dcb'],
+  // 2026-08-31 (sixteenth pass): 150 -> 153, and 83 cards now carry a
+  // figure. 35 more crops bound, every one opened: the hybrid vehicle
+  // diagram, five equilibrium diagrams with their regions lettered, the
+  // pultrusion line, the dune buggy and the mini excavator and the leg press
+  // with their parts labelled, the oxy-acetylene torch with valve A and valve
+  // B, a jet ski, a pressure tank, a hose reel, a torch casing, a carabiner
+  // screw lock, three chip formations, and the four Ordinary Level short-
+  // question picture rows.
+  //
+  // 16 were REJECTED by eye and recorded by name, in four kinds: the ruled
+  // box holds the ASK as well as the drawing, so the card would show the
+  // question twice; the crop is a LABEL and an arrow sliced off a bigger
+  // picture ("compressor blade" and an arc); it answers a SIBLING and would
+  // mislead here (a ratchet against "describe the operation of bevel gears");
+  // and the ones already rejected once, reappearing under a sibling roman now
+  // that the worklist is wider. Nothing removed.
+  ['engineering:ordinary', ENG_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -725,6 +741,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8250);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8253);
   });
 });
