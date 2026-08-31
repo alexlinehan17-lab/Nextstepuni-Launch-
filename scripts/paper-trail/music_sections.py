@@ -111,7 +111,7 @@ def scheme_markers(scheme, lo, hi):
         # page's question number.
         H = scheme[pi].rect.height
         words = sorted(scheme[pi].get_text("words"), key=lambda w: w[1])
-        hdr_has_q = any(w[4] == "Q" and w[0] < 80 for w in words[:24])
+        hdr_has_q = any(w[4] in ("Q", "C") and w[0] < 80 for w in words[:24])
         if hdr_has_q:
             for w in words:
                 if (re.fullmatch(r"\d{1,2}", w[4]) and w[0] < 75
