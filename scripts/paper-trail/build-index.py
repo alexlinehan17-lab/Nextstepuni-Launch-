@@ -246,6 +246,10 @@ QA_PASSED_ANSWER_PROFILES = {
     # scheme restates each section's questions with marking criteria — the
     # Section F render shows the greening-of-religion questions verbatim).
     ('religious-education', 'higher', 'ev'),
+    # English OL Paper 2 via english_p2_ol.py: lettered text blocks mirrored
+    # scheme-side ("H KING LEAR" opens its exact questions + indicative
+    # material).
+    ('english', 'ordinary', 'ev'),
     ('jc-history', 'common', 'ev'),
     ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
@@ -412,6 +416,10 @@ QA_PASSED_ANSWER_PROFILES = {
     # scheme restates each section's questions with marking criteria — the
     # Section F render shows the greening-of-religion questions verbatim).
     ('religious-education', 'higher', 'ev'),
+    # English OL Paper 2 via english_p2_ol.py: lettered text blocks mirrored
+    # scheme-side ("H KING LEAR" opens its exact questions + indicative
+    # material).
+    ('english', 'ordinary', 'ev'),
     ('jc-history', 'common', 'ev'),
     ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
