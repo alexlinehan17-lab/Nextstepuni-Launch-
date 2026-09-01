@@ -215,7 +215,11 @@ def _det_question_word(doc):
                 # numbered SUMMARY table sits earlier; spread-max then prefers the
                 # real, page-spread solutions over the clustered summary.
                 standalone = len(lw) <= 3
-                if w[0] < LEFT_MARGIN_X or (word in ("QUESTION", "CEIST") and standalone):
+                # table-scheme variant: "Question N Possible Responses Marks"
+                # headers (2026 Economics Section B), any x
+                table_hdr = (i + 2 < len(lw)
+                             and lw[i + 2][4] in ("Possible", "Freagraí"))
+                if w[0] < LEFT_MARGIN_X or table_hdr or (word in ("QUESTION", "CEIST", "Question", "Ceist") and standalone):
                     hits.append((int(m.group(1)), pi, w[0], w[1] / H))
     return hits
 
@@ -302,8 +306,39 @@ def _det_topic_word(doc):
     return hits
 
 
+def _det_q_column(doc):
+    """Schemes laid out as a marks TABLE with a 'Q' column: the question number
+    is a lone digit in that left column (2026 Economics, the Music listening
+    tables). Detected per page: a 'Q' header word left of x=80, then digit
+    words in the same column."""
+    hits = []
+    has_qcol = any(
+        any(w[4] == "Q" and w[0] < 80 and w[1] < pg.rect.height * 0.25
+            for w in pg.get_text("words")[:40])
+        for pg in doc)
+    if not has_qcol:
+        return hits
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        words = sorted(page.get_text("words"), key=lambda w: (w[1], w[0]))
+        for i, w in enumerate(words):
+            if not (re.fullmatch(r"\d{1,2}", w[4]) and w[0] < 80):
+                continue
+            n = int(w[4])
+            nxt = next((v for v in words[i + 1:] if abs(v[1] - w[1]) < 14), None)
+            # exclude "N | Page" page numbers; the run-selection in _marker_map
+            # prunes annotation-table clusters (they fail the page-spread
+            # preference) and the reconcile gates do the rest
+            if n > 20 or (nxt is not None and nxt[4] == "|"):
+                continue
+            hits.append((n, pi, w[0], w[1] / H))
+    return hits
+
+
 DETECTORS = [("question", _det_question_word), ("lead_int", _det_lead_int), ("qtoken", _det_q_token),
-             ("ctoken", _det_c_token), ("topic", _det_topic_word)]
+             ("ctoken", _det_c_token), ("topic", _det_topic_word), ("qcol", _det_q_column)]
 
 
 def best_sequence(hits, allow_k_start=False):
@@ -384,7 +419,14 @@ def _marker_map(hits, band_start, band_end):
             lower = max((m for m in best if m < n), default=None)
             upper = min((m for m in best if m > n), default=None)
             if lower is None or upper is None:
-                continue  # only interior gaps — edges have no bracketing proof
+                # tail/head extension: a run continuing past the modal-column
+                # run (Technology IV prints Q12-15 at a second indent) — accept
+                # only strictly beyond the run's edge, keeping monotonic order
+                if lower is not None and (pi, y) > best[lower]:
+                    best[n] = (pi, y)
+                elif upper is not None and (pi, y) < best[upper]:
+                    best[n] = (pi, y)
+                continue
             if best[lower] < (pi, y) < best[upper]:
                 best[n] = (pi, y)
     return best
@@ -407,14 +449,33 @@ def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None,
     guard to protect. 2012-era Maths numbers the paper '1.' but heads scheme
     solutions 'CEIST 1'; the guard blocked that legitimate pairing."""
     best, best_score = {}, -1
+    maps = {}
     for name, fn in DETECTORS:
         if (paper_det is not None and paper_det != "question" and name == "question"
                 and not divider_band):
             continue
         m = _marker_map(fn(doc), band_start, band_end)
+        maps[name] = m
         score = len(set(m) & want_ns)
         if score > best_score:
             best, best_score = m, score
+    if best_score < len(want_ns):
+        # hybrid schemes split marker styles by section (2026 Economics:
+        # Section A is a Q-column table, Section B uses 'Question N' headers).
+        # Union two detectors when the merged positions stay monotonic in n.
+        for na, ma in maps.items():
+            for nb, mb in maps.items():
+                if na == nb:
+                    continue
+                merged = dict(ma)
+                for k, v in mb.items():
+                    merged.setdefault(k, v)
+                got = sorted(set(merged) & want_ns)
+                if len(got) <= best_score:
+                    continue
+                pts = [merged[n] for n in got]
+                if all(b > a for a, b in zip(pts, pts[1:])):
+                    best, best_score = merged, len(got)
     return best
 
 
