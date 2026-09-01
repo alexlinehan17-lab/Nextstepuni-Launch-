@@ -894,7 +894,7 @@ NEVER_MAP = (
     # arithmetic item 9 of another solution). EV heads real 'Question N' blocks.
     ("LC032", "000", "A", "IV", None),
     # Geography OL IV 2025 Part Two: anchors the Part One short-answer key.
-    ("LC005", "043", "G", "IV", 2025),
+    ("LC005", "043", "G", "IV", None),
     # History OL: the scheme's numbered RSR criteria list ("3. Criticism
     # (20 marks)") reconciles against the paper's document questions — the
     # documented mainstream-History-OL blocker, confirmed again by render.
