@@ -366,3 +366,26 @@ resolve deliberately, don't assume.
     import.
 13. **ToolHeader usage.** ToolHeader's docblock says it's "every Innovation Zone tool entry point", but the live content
     tools render no ToolHeader band at all (§2). The comment means the InnovationZone tile list, not the tool bodies.
+
+## 10. Adding a Mark Bank subject — the deliberate-registration list
+
+Shipping a new subject deck (done for Computer Science + Engineering, PR #56) touches every one of these,
+and the test net fails loudly on the ones you forget:
+
+1. `scripts/markbank/build-deck.mjs` — a `SUBJECTS` row (title, specVersion, specNote, figureDir).
+2. `examiner-reports/<subject>/schemes/<year>-<hl|ol>.md` — the provenance gate reads these; a card whose
+   marking points aren't found in its own scheme is dropped at build.
+3. `components/MarkBank/figures.json` — every `figureKey` needs a manifest entry (bind-figures.mjs), and
+   the build md5-checks each file on disk against it.
+4. `components/MarkBank/deck.ts` — strands + `SUBJECTS` entry + `DECKS` dynamic-import pair. A subject in
+   `sizes.json` but not `DECKS` shows as ready and opens empty (the Construction Studies failure).
+5. `test/markBankDeck.test.ts` — deck imports into `SAMPLE_CARDS` + the topic-id `PREFIX` map (both are
+   deliberate-registration guards; AgSci once shipped 733 cards outside the net).
+6. `scripts/markbank/authoring/reconcile.py <subject> --baseline write` — the coverage ratchet; the paired
+   test pins deck counts + content hashes to `scripts/markbank/coverage-baseline.json`.
+
+Tariff modelling rules learned the hard way: mark values come from the scheme's printed notation, never
+arithmetic ("Any three of the above or similar 2 marks each" is an `anyN` group, not six invented 1-mark
+rows); a banded whole-answer tariff ("Fully correct 6 / Almost correct 4") is `questionTotal` with
+`marks: null` rows; `orderedSplit`/`questionTotal` rows are menu-class (the scheme's printed candidates,
+capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall `fixed` cards only.
