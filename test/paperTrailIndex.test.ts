@@ -71,9 +71,9 @@ describe('Paper Trail index entries', () => {
     expect(byLevel.get('common')?.papers.map(paper => [
       paper.label, paper.doc.f,
     ])).toEqual([
-      ['Ordnance Survey Map', 'LC005CLPC00EV.pdf'],
-      ['Map Legend', 'LC005CLP003EV.pdf'],
-      ['Aerial Photograph', 'LC005CLP004EV.pdf'],
+      ['Source Paper', 'LC005CLPC00EV.pdf'],
+      ['Map', 'LC005CLP003EV.pdf'],
+      ['Picture/Illustration', 'LC005CLP004EV.jpg'],
     ]);
   });
 

@@ -10481,14 +10481,6 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "DNA", marks: 3 },
     { id: "r-4", kind: "point", verbatim: "Cytosol", marks: 3 },
     ],
-    questionFigure: {
-          "candId": "biology-2024-ol-040-p005-i0",
-          "src": "/exam-figures/biology/markbank/biology-2024-ol-040-p005-i0.png",
-          "srcHash": "2ac7d38fada71ec4e58f0f5743513c71",
-          "alt": "Grey diagram of Amoeba, a single-celled organism with several blunt lobed projections around its edge and small food vacuoles scattered through the cytoplasm. A arrows down to the dark round body near the centre, B to the tip of the lobed projection at the top right, C up to the large pale circle at the lower left. A, B and C all visible and intact; the stem line above was excluded from the crop.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "diagram",

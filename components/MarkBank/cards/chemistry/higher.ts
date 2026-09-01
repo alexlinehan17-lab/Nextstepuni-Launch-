@@ -7434,14 +7434,6 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "points plotted", marks: 6 },
     { id: "r-3", kind: "point", verbatim: "line of best fit", marks: 2 },
     ],
-    questionFigure: {
-          "candId": "chemistry-2024-hl-paper-p004-i0",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2024-hl-paper-p004-i0.png",
-          "srcHash": "beeae4ebd0d81387bed10f198cef8f7a",
-          "alt": "A three-row ruled results table. Row one, 'Concentration of Na2S2O3 (M)', holds eight values falling from 0.10 to 0.03 in steps of 0.01. Row two, 'Time (s)', holds 50, 56, 63, 72, 84, 100, 125 and 168. Row three, 'Rate = 1/Time (s to the minus one)', shows only 0.020 and 0.018 in the first two cells; the remaining six cells are blank for the candidate to fill in.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",

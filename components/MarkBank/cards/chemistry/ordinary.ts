@@ -5279,14 +5279,6 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "neutral", marks: null },
     { id: "r-4", kind: "point", verbatim: "Rutherford", marks: null },
     ],
-    questionFigure: {
-          "candId": "chemistry-2021-OL-paper-p11-i0",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p11-i0.png",
-          "srcHash": "2445e3f0a19ae36a5773080d3347f0b1",
-          "alt": "Printed text of question 10(b) on the left and, on the right, a drawing of an electrolysis cell: a large open beaker of liquid with two inverted test-tubes/collecting tubes standing in it, one on each side. Each inverted tube sits over an electrode rod that rises from the base of the beaker, and stippling inside the tubes shows gas bubbles collecting. The left tube is labelled \"O2\" at the top with a leader line, and \"X (anode)\" printed sideways beside it; the right tube is labelled \"H2\" with a leader line and \"Y (cathode)\" printed sideways beside it. Below the beaker the two electrodes connect by wires to terminals marked + (left) and - (right) and on to a battery symbol.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",

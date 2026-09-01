@@ -1210,8 +1210,7 @@
     "openList": false
    }
   ],
-  "notes": "The scheme ticks one box and puts the whole 15 marks on it, so this is a single all-or-nothing row. Two options only, so openList is false.",
-  "questionFigureKey": "business-2021-OL-paper-q10-art"
+  "notes": "The scheme ticks one box and puts the whole 15 marks on it, so this is a single all-or-nothing row. Two options only, so openList is false."
  },
  {
   "id": "bus-2021-ol-s1-q11",
@@ -2377,8 +2376,7 @@
     "marks": 3
    }
   ],
-  "notes": "The scheme reproduces the grid and prints the examiner's tick in one column per statement, with 4, 4, 4 and 3 against the four rows in order, so the tariff is fixed and the fourth statement is the three-mark one. Tick positions read off the scheme PDF: the ticks sit under Capital, Land, Labour and Enterprise respectively. The paper's grid is blank apart from the statements (the company is a logo image rather than typed text, so 'Cadbury' is written out here), so nothing pictorial is lost by leaving the figure unbound. Closed list — four named factors.",
-  "questionFigureKey": "business-2022-OL-paper-q4-art"
+  "notes": "The scheme reproduces the grid and prints the examiner's tick in one column per statement, with 4, 4, 4 and 3 against the four rows in order, so the tariff is fixed and the fourth statement is the three-mark one. Tick positions read off the scheme PDF: the ticks sit under Capital, Land, Labour and Enterprise respectively. The paper's grid is blank apart from the statements (the company is a logo image rather than typed text, so 'Cadbury' is written out here), so nothing pictorial is lost by leaving the figure unbound. Closed list — four named factors."
  },
  {
   "id": "bus-2022-ol-s1-q5",

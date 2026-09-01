@@ -42,8 +42,6 @@ const SUBJECT_TITLE = {
   'agricultural-science': 'Agricultural Science', business: 'Business',
   'home-economics': 'Home Economics', economics: 'Economics',
   'construction-studies': 'Construction Studies',
-  'computer-science': 'Computer Science',
-  engineering: 'Engineering',
 };
 
 const argv = process.argv.slice(2);

@@ -1106,14 +1106,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Plant structure: Root hairs", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Process: Active transport", marks: 2 },
     ],
-    questionFigure: {
-          "candId": "agricultural-science-2022-HL-paper-q11ai-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-q11ai-art.png",
-          "srcHash": "d9924e8966708e9306247b9edfe12fc8",
-          "alt": "The table or diagram printed with 2022 HL Question 11(a)(i), as the State Examinations Commission set it. It reads: Plant structure, Process involved.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4985,14 +4977,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "25%", marks: 6 },
     ],
-    questionFigure: {
-          "candId": "agricultural-science-2024-HL-paper-q14aiii-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-q14aiii-art.png",
-          "srcHash": "ff63471c7b635a8ab132672efcc47a8a",
-          "alt": "The table or diagram printed with 2024 HL Question 14(a)(iii), as the State Examinations Commission set it. It reads: 45%, 25%, 15%.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5363,14 +5347,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Mycorrhizal", marks: 6 },
     ],
-    questionFigure: {
-          "candId": "agricultural-science-2024-HL-paper-p36-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
-          "srcHash": "e2adf0f6cbdc572de192c0a1af1dd0c8",
-          "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6250,14 +6226,6 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Correct scale both axes", marks: 2 },
     { id: "r-5", kind: "point", verbatim: "6 points plotted for Caledonia", marks: 2, contextNote: "Caledonia only - the question does not ask for Regal." },
     ],
-    questionFigure: {
-          "candId": "agricultural-science-2025-HL-paper-q17ci-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-q17ci-art.png",
-          "srcHash": "90ec45211fd17bed43e81d5c9d186404",
-          "alt": "The table or diagram printed with 2025 HL Question 17(c)(i), as the State Examinations Commission set it. It reads: Kale variety, Regal, 14.7, 14.3, 13.9, 14.2, 14.8, Caledonia, 16.0, 15.5, 15.0, 16.5, 17.5.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",

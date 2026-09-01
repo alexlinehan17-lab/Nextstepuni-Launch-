@@ -37,19 +37,8 @@ def mangled(u):
 # character -- so they cannot come out of a glyph-id table keyed by character.
 LIGATURE = {
     'Ɵ': 'ti', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬀ': 'ff', 'ﬃ': 'ffi', 'ﬄ': 'ffl',
-    # 'tti', not 'tt'. The comment beside this entry read "pu[tt]ing", which
-    # expands to "puttng" -- the ligature swallows the i as well. Every one of
-    # the seven sightings across the corpus is the same: setting, putting,
-    # cutting, emitting. "tt" was right in none of them.
-    'ƫ': 'tti', 'ƞ': 'tf', '\u02da': '\u00b0',   # "pu[tti]ng", "ou[tf]lows", 25[deg]C
+    'ƫ': 'tt', 'ƞ': 'tf', '\u02da': '\u00b0',   # "pu[tt]ing", "ou[tf]lows", 25[deg]C
     '\uf0ae': '\u2192',   # Symbol font: code point 0xAE is its rightwards arrow
-    '\uf0df': '\u2190',   # SymbolMT 0xDF -- the LEFTWARDS arrow, which is the
-                          # assignment operator in Computer Science pseudocode.
-                          # Settled the same way as the rest of this table:
-                          # cs_question_figures cropped 2024 HL Question 11 out
-                          # of the page and it reads "problem_solved <- FALSE".
-                          # It appears in no scheme, so the derivation cannot
-                          # reach it however wide the corpus.
     # Symbol and Wingdings characters, which a PDF stores at 0xF000 + the code
     # point. Each was settled by cropping the glyph out of the page and looking
     # at it rather than by trusting an encoding chart:
@@ -59,17 +48,6 @@ LIGATURE = {
                           # page 1 and looked at: "l^-2 at 25 [deg]C"
     '\uf06c': '\u2022',   # Wingdings 0x6c -- the bullet on "using a scalpel"
     '\uf050': '\u2713',   # Wingdings 2 0x50 -- a tick
-    '\uf0fe': '\u2611',   # Wingdings 0xFE -- a ballot box WITH a check in it,
-                          # cropped from 2024 OL page 16 and looked at: it marks
-                          # which of three sorted lists is the correct answer.
-    '\uf0f1': '\u2708',   # Webdings 0xF1 -- cropped from 2023 HL Maths Paper 1
-                          # page 13 and looked at: an AEROPLANE, used as the
-                          # bullet on a flight. An encoding chart would have
-                          # called it the plus-minus sign, which is why these
-                          # are settled by looking rather than by charting.
-    '\uf0da': '\u2603',   # Webdings 0xDA -- the same page, the same list: a
-                          # cloud with snow falling from it, cropped and looked
-                          # at, standing for the weather beside the flight.
     '\uf067': '\u2192',   # Wingdings 3 0x67 -- "6O2 -> 6CO2 + 6H2O"
     '\uf081': '\u2460',   # Wingdings 0x81 -- a circled 1
     '\u0424': '\u03a6',   # renders as Phi: "[Phi] = 4.33 x 10^-19 (J)"
@@ -84,8 +62,6 @@ LIGATURE = {
 # original font's glyph order, so a glyph's neighbours place it. The evidence
 # for each is the neighbour list, recorded here so the call can be re-checked.
 NEIGHBOUR = {
-    '\u0d5d': '{',   # cropped from 2025 HL Maths Paper 1 page 24 and looked at:
-                     # the tall brace of a piecewise definition, "v(t) = {".
     '\u0d6c': '(',   # gid 3436, between 3435='(' and 3439=')': a size variant
     '\u0d70': ')',   # gid 3440, and it closes 3436 in "cos(t + 2npi) + isin(2pi
     '\u0bec': '\U0001d466',  # gid 3052, follows 3051='x': the y of dy/dx
@@ -170,15 +146,7 @@ def interpolate(seen):
 
 
 def main():
-    # PAPERS as well as schemes. A glyph id means the same character in the
-    # same font wherever it is drawn, so every PDF in the corpus is evidence,
-    # and some characters appear only on the paper side: the Symbol-font
-    # leftwards arrow U+F0DF is the assignment operator in Computer Science
-    # pseudocode ("problem_solved <- FALSE") and occurs in no scheme at all,
-    # so a schemes-only corpus could never learn it and four cards were
-    # dropped for carrying it unrepaired.
-    files = sorted(glob.glob('examiner-reports/*/schemes/*.pdf')
-                   + glob.glob('examiner-reports/*/papers/*.pdf'))
+    files = sorted(glob.glob('examiner-reports/*/schemes/*.pdf'))
     if not files:
         sys.exit('no scheme PDFs found -- run from the repo root')
     seen, bad = scan(files)
@@ -235,7 +203,7 @@ def main():
     total = sum(bad.values())
     fixed = sum(n for (f, g, u), n in bad.items()
                 if chr(u) in table)
-    print(f"{len(files)} PDFs")
+    print(f'{len(files)} scheme PDFs')
     print(f'interpolated {added} glyph ids inside known runs')
     print(f'{len(table)} map entries; dropped {len(dropped)} ambiguous {dropped}')
     print(f'mangled instances {total}, repaired {fixed} ({100 * fixed // max(total, 1)}%)')

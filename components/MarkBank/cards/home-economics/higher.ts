@@ -687,14 +687,6 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "bacteria; fungi; yeast; algae", marks: 2, accepts: ["bacteria","fungi","yeast","algae"], contextNote: "Micro-organisms - Source, @ 2 marks graded 2:0. Any one named micro-organism; the list ends with etc.", openList: true },
     { id: "r-4", kind: "point", verbatim: "quorn/mycoprotein; nutritional yeast", marks: 1, accepts: ["quorn/mycoprotein","nutritional yeast"], contextNote: "Micro-organisms - Product, @ 1 mark graded 1:0. The product must follow from the micro-organism given: fungi give quorn/mycoprotein, yeast gives nutritional yeast.", openList: true },
     ],
-    questionFigure: {
-          "candId": "home-economics-2024-HL-paper-q5-art",
-          "src": "/exam-figures/home-economics/markbank/home-economics-2024-HL-paper-q5-art.png",
-          "srcHash": "bc9214f4469820b8b695eaa2671ecd6a",
-          "alt": "The table or diagram printed with 2024 HL Question 5, as the State Examinations Commission set it. It reads: Source, Product, Plant, Micro‐organisms.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Home Economics 2024 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -851,14 +843,6 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Substrate — Peptones", marks: 2, contextNote: "2 marks graded 2:1:0. Peptones are what the stomach's pepsin has already produced; trypsin acts on them, not on whole protein." },
     { id: "r-3", kind: "point", verbatim: "Product/Result — Peptides", marks: 2, contextNote: "2 marks graded 2:1:0. Trypsin in the pancreas takes peptones only as far as peptides — amino acids come later, from peptidase in the small intestine." },
     ],
-    questionFigure: {
-          "candId": "home-economics-2025-HL-paper-q2-art",
-          "src": "/exam-figures/home-economics/markbank/home-economics-2025-HL-paper-q2-art.png",
-          "srcHash": "750be0a577d22d7b46d0b3cb1642cc14",
-          "alt": "The table or diagram printed with 2025 HL Question 2, as the State Examinations Commission set it. It reads: Organ, Enzyme, Substrate, Product/Result, Pancreas.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Home Economics 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",

@@ -6632,14 +6632,6 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "second reflected ray", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "intersection of rays", marks: 2 },
     ],
-    questionFigure: {
-          "candId": "physics-2022-OL-paper-q9ii-art",
-          "src": "/exam-figures/physics/markbank/physics-2022-OL-paper-q9ii-art.png",
-          "srcHash": "1406a865408d4f8bc7785dbaa0fb7b98",
-          "alt": "The table or diagram printed with 2022 OL Question 9(ii), as the State Examinations Commission set it. It reads: ●, object.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6982,14 +6974,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "He2 3", marks: 3 },
     ],
-    questionFigure: {
-          "candId": "physics-2023-OL-paper-q13v-passage",
-          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-q13v-passage.png",
-          "srcHash": "cc1d7af6033aa9658a647aeec38bdc1e",
-          "alt": "The table or diagram printed with 2023 OL Question 13(v), as the State Examinations Commission set it. It reads: 13. Read the following passage and answer the questions below..",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7334,14 +7318,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "converging lens", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "object, incident ray(s), image formed", marks: 9 },
     ],
-    questionFigure: {
-          "candId": "physics-2023-ol-paper-p007-i0",
-          "src": "/exam-figures/physics/markbank/physics-2023-ol-paper-p007-i0.png",
-          "srcHash": "85751cd2429eddcb45c7685f132f1f71",
-          "alt": "Ray diagram of light passing through a rectangular glass block drawn in plain outline. An incident ray with an arrowhead comes down from the upper left and meets the top face; a vertical dashed normal is drawn at that point; inside the block the ray bends towards the normal and travels down to the bottom face, where it bends again and leaves as an arrowed ray to the lower right. Leader lines label the incident ray A, the ray inside the block B, and the dashed normal C.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7487,14 +7463,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "322 km", marks: 7 },
     ],
-    questionFigure: {
-          "candId": "physics-2024-OL-paper-q13a-passage",
-          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-q13a-passage.png",
-          "srcHash": "2570df25543b43a71cc70ff8c791810b",
-          "alt": "The table or diagram printed with 2024 OL Question 13(a), as the State Examinations Commission set it. It reads: 13. Read the following passage and answer the questions below..",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7723,14 +7691,6 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "second reflected ray", marks: 3 },
     { id: "r-4", kind: "point", verbatim: "image formed", marks: 2 },
     ],
-    questionFigure: {
-          "candId": "physics-2024-OL-paper-p07-i2",
-          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p07-i2.png",
-          "srcHash": "fa5fb32a29b318f1bf9323c49b72b722",
-          "alt": "Left side is question prose for Q8(vi) to (vii). Right side is a black-and-white photograph of a large circular concave mirror mounted flush in a dark wall panel, in what looks like a museum or science centre. Standing close in front of the mirror, seen from behind, is a girl in a horizontally striped long-sleeved top and light shorts; a bold white capital 'A' is printed on the photograph just above her shoulder. Filling the right-hand side of the mirror is a large upright reflected head and shoulders of a dark-haired child looking back out. In the upper part of the mirror the reflected ceiling, hanging drapes and a lit display case appear inverted. To the left of the mirror, outside it, a person in a checked shirt stands side-on facing right with one arm stretched out towards the wall; a bold white capital 'B' is printed beside that person's head. The photograph is fully inside the crop.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",

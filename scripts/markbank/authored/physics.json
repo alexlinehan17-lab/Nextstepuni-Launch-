@@ -29739,8 +29739,7 @@
     "marks": 2
    }
   ],
-  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors.",
-  "questionFigureKey": "physics-2022-OL-paper-q9ii-art"
+  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors."
  },
  {
   "id": "phys-2022-ol-q9-vii",
@@ -31591,8 +31590,7 @@
    }
   ],
   "stem": "Read the following passage and answer the questions below. It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7)",
-  "notes": "The scheme prints \"[3 + 2 + 2]\" against this line, covering this part and the two that follow it.",
-  "questionFigureKey": "physics-2023-OL-paper-q13v-passage"
+  "notes": "The scheme prints \"[3 + 2 + 2]\" against this line, covering this part and the two that follow it."
  },
  {
   "id": "phys-2023-ol-q10-vi",
@@ -32268,8 +32266,7 @@
    }
   ],
   "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
-  "notes": "Object, incident ray(s) and image formed earn three marks each.",
-  "questionFigureKey": "physics-2023-ol-paper-p007-i0"
+  "notes": "Object, incident ray(s) and image formed earn three marks each."
  },
  {
   "id": "phys-2023-ol-q10-ix",
@@ -33594,8 +33591,7 @@
     "marks": 7
    }
   ],
-  "stem": "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org",
-  "questionFigureKey": "physics-2024-OL-paper-q13a-passage"
+  "stem": "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org"
  },
  {
   "id": "phys-2024-ol-q14a-iii",
@@ -34001,8 +33997,7 @@
     "marks": 2
    }
   ],
-  "stem": "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed. One of the laws of reflection of light states that the angle of incidence equals the angle of reflection. f ● object The picture on the right shows images in a concave mirror. An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror.",
-  "questionFigureKey": "physics-2024-OL-paper-p07-i2"
+  "stem": "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed. One of the laws of reflection of light states that the angle of incidence equals the angle of reflection. f ● object The picture on the right shows images in a concave mirror. An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror."
  },
  {
   "id": "phys-2024-ol-q12-vii",

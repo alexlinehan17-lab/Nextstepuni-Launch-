@@ -1,147 +1,99 @@
 #!/usr/bin/env python3
-"""File a Computer Science part under a syllabus topic from its wording.
+"""File a Construction Studies part under a syllabus topic from its wording.
 
-    python3 scripts/markbank/authoring/cs_topics.py        # unmatched report
+Filing is a librarian's decision, not exam content -- the question and the
+answer are lifted, and where a card is SHELVED is ours to choose. Doing it by
+hand was fine for ten papers and is not for twenty, and a hand-filed corpus
+drifts: the same question wording ends up under two topics in different years.
 
-Every term below is lifted from the specification's own "Students learn about"
-column, which is the list of things the document says students must learn under
-each heading. Nothing here is invented vocabulary: "Sorting: Simple sort, Insert
-sort, Bubble sort, Quicksort" sits against S2 Algorithms in the specification,
-"CPU: ALU, Registers, Program counter, Memory" and "Basic electronics: voltage,
-current, resistors, capacitors, transistors" against S2 Computer systems, and
-"8-bit ASCII / Non-Roman character sets / Unicode: UTF-8, Emojis" against S2
-Data.
-
-Most specific match wins. Anything unmatched is REPORTED, never filed under a
-default — a wrong shelf sends a student to revise the wrong thing, and a gap
-only asks a person to look. There are no existing Computer Science cards to
-score this against, so unlike chem_topics it carries no measured accuracy: it
-is a first pass over a fresh subject and every card it suggests for is read.
+The vocabulary is the syllabus's own, taken from the strand and topic titles in
+components/MarkBank/deck.ts. Most specific match wins, so "window cill" beats
+"wall". Anything unmatched is reported rather than filed under a default -- a
+wrong shelf is worse than an obvious gap.
 """
-import collections
-import os
 import re
-import sys
 
-DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
-
+# (topic id, weight, pattern). Weight breaks ties: a longer, more specific
+# phrase should win over a general one that also appears in the sentence.
 RULES = [
-    # ── Strand 2: the five core concepts, most specific ────────────────────
-    # 2.13 puts the BINARY NUMBER SYSTEM and conversion between binary,
-    # hexadecimal and decimal under Computer systems, not under Data; 2.15 puts
-    # the web protocols there too ("Web infrastructure - Computer Network
-    # Protocols: HTTP, TCP, IP, VOIP"). Data is 2.16-2.18: data types, ASCII
-    # and Unicode, information systems.
-    ('cs-2-3', 11, r'\b(logic gate|and gate|or gate|nand|nor|xor\b|truth table|'
-                   r'\bcpu\b|\balu\b|register|program counter|main memory|\bram\b|'
-                   r'\brom\b|cache|fetch[- ]decode|von neumann|transistor|'
-                   r'resistor|capacitor|voltage|current|circuit|binary adder|'
-                   r'operating system|hardware component|'
-                   # "Operating system layers: Hardware, OS, Application, User"
-                   # is the spec's own list against 2.11-2.13.
-                   # 2.11 is "describe the different components within a
-                   # computer and the function of those components". A solid
-                   # state drive is such a component; the paper names it and
-                   # the specification names the category.
-                   r'hardware|software\b|firmware|peripheral|storage device|'
-                   r'solid state drive|hard disk drive|\bssds?\b|\bhdds?\b|'
-                   r'input device|output device|motherboard|clock speed|'
-                   r'binary(?: number| format| digit)?|hexadecimal|denary|'
-                   r'\bbits?\b|\bbytes?\b|base 2|base 16|'
-                   r'\bhttps?\b|\btcp\b|\bip\b|\bvoip\b|protocol|'
-                   r'world wide web|\bwww\b|client[- ]server|the internet|'
-                   r'network|packet|router|bandwidth|latency|'
-                   r'digital and analogue|analogue input)\b'),
-    ('cs-2-2', 11, r'\b(bubble sort|insert(?:ion)? sort|simple sort|quicksort|'
-                   r'linear search|binary search|pseudo ?code|algorithm|'
-                   r'recursi\w+|iteration|\bloop\b|selection|conditional|'
-                   r'complexity|big[- ]o\b|efficiency of|flowchart|procedure|'
-                   r'function call|'
-                   # 2.7 "implement algorithms using a programming language":
-                   # a question about a printed program is a question about the
-                   # algorithm it implements.
-                   r'python|program(?:me)?\b|\bcode\b|variable|'
-                   r'output of the following|what is the output|'
-                   r'pseudocode|subroutine|parameter|\bwhile\b|\bfor loop\b)\b'),
-    ('cs-2-4', 11, r'\b(data type|boolean|integer|\breal\b|\bchar\b|\bstring\b|'
-                   # 2.16 lists "array" among the data types. Indexing one and
-                   # slicing one are how a program uses it, and the papers ask
-                   # about both without ever using the word "array".
-                   r'\barray\b|\bindex(?:es|ing)?\b|slice expression|'
-                   r'\bascii\b|unicode|utf-8|character set|emoji|'
-                   r'encode|decode|two.s complement|database|\bsql\b|'
-                   # 2.18 is "collect, store and sort both continuous and
-                   # discrete data" -- the paper asks about the two words one
-                   # at a time ("either discrete data or continuous data"),
-                   # which the joined phrase could never match.
-                   r'record|field|discrete data|continuous data|'
-                   r'continuous and discrete|information system)\b'),
-    ('cs-2-5', 11, r'\b(unit test|function test|system test|debug\w*|'
-                   r'syntax error|semantic error|logic error|runtime error|'
-                   r'test case|test plan|validat\w+|verif\w+|'
-                   r'stages? in software testing)\b'),
-    ('cs-2-1', 10, r'\b(abstraction|modular design|module\b|abstract model|'
-                   r'decompos\w+|pattern recognition|generalis\w+|'
-                   r'wholes and parts)\b'),
-    # ── Strand 1 ───────────────────────────────────────────────────────────
-    ('cs-1-2', 10, r'\b(ethic\w*|society|social (?:media|impact)|privacy|'
-                   r'turing machine|the internet|machine learning|'
-                   r'artificial intelligence|\bai\b|user interface|usability|'
-                   r'universal design|adaptive technology|accessib\w+|'
-                   r'careers?|digital divide|cyber ?security|data protection|'
-                   r'\bgdpr\b|quantum comput\w+|cloud comput\w+|edge comput\w+)\b'),
-    ('cs-1-3', 9, r'\b(design process|iterative design|staged design|'
-                  r'assign\w* roles|work(?:ing)? in a team|collaborat\w+|'
-                  r'stakeholder|end users?|requirements?|version control|'
-                  # 1.20 is "collaborate and assign roles and responsibilities
-                  # within a team to tackle a computing task" -- the paper puts
-                  # a name on the role and asks about it.
-                  r'project manage(?:ment|r)|team leader|'
-                  r'prototyp\w+|reflect\w* on the design)\b'),
-    # 1.4 "solve problems using skills of logic" and 1.5 "evaluate
-    # alternative solutions to computational problems": a game-strategy
-    # question is a logic problem, which is where the spec puts it.
-    ('cs-1-1', 8, r'\b(computational thinking|problem solving|logical thinking|'
-                  r'algorithmic thinking|heuristic|simulation|modelling|'
-                  r'automat\w+|systematic (?:process|approach)|'
-                  r'winning (?:position|move|strategy)|losing position|'
-                  r'best move|strategy would you|deconstruct\w*|'
-                  # 1.8: "evaluate the costs and benefits of the use of
-                  # computing technology in automating processes".
-                  r'automating processes|costs and benefits|'
-                  r'alternative solution|trade[- ]?off)\b'),
-    # ── Strand 3: the four applied learning tasks ──────────────────────────
-    # The specification's own heading is "Embedded systems", plural, and 3.11
-    # to 3.14 read "within an embedded system", "digital inputs and outputs",
-    # "measure and store data returned from an analogue input", "design
-    # automated applications using embedded systems". The singular-only
-    # pattern could not match its own heading: "Describe two advantages of
-    # embedded systems" filed under no topic at all.
-    ('cs-3-4', 10, r'\b(embedded systems?|microprocessor|micro:?bit|arduino|'
-                   r'sensors?|actuators?|analogue inputs?|'
-                   r'digital (?:inputs?|outputs?)|automated applications?|'
-                   r'\bgpio\b)\b'),
-    # 3.2 is "create a basic relational database to store and retrieve a
-    # variety of forms of data types", and the specification's own list for
-    # this task is "File systems and relational databases". A foreign key is
-    # the relation; a primary key is what it points at.
-    ('cs-3-1', 9, r'\b(website|web page|\bhtml\b|\bcss\b|javascript|'
-                  r'relational database|web design|hyperlink|browser|'
-                  r'foreign key|primary key)\b'),
-    ('cs-3-2', 9, r'\b(analytics|data set|visualis\w+|chart|graph of the data|'
-                  r'trend|correlat\w+|statistic\w*)\b'),
-    # 3.8 "develop a model that will allow different scenarios to be tested"
-    # and 3.9 "analyse and interpret the outcome of simulations".
-    ('cs-3-3', 9, r'\b(agent[- ]based|emergent behaviour|scenario|'
-                  r'simulat\w+ (?:model|the)|model that|in the model|'
-                  r'test in the model|outcome of the simulation)\b'),
+    ('cons-1-8', 9, r'\b(safety|hazard|risk|ppe|personal protective|accident|'
+                    r'injur|safe pass|trench|scaffold|working at height|dumper|'
+                    r'safety statement|safety sign|first aid)\b'),
+    ('cons-1-3', 9, r'\b(planning permission|site notice|site location|'
+                    r'select(?:ing)? (?:a |your |the )?site|choice of site|'
+                    r'preferred site|site a or b|building.{0,12}countryside)\b'),
+    ('cons-1-2', 8, r'\b(planning authorit|conservation|refurbish|reuse of|'
+                    r'protected structure|built environment|heritage)\b'),
+    ('cons-1-9', 8, r'\b(building regulation|renewable energy ratio|\brer\b|'
+                    r'fire test|part [a-l] of the building)\b'),
+    ('cons-1-4', 8, r'\b(construction industry|skilled labour|qualified (?:trades|'
+                    r'skilled)|occupation)\b'),
+    ('cons-1-5', 7, r'\b(construction term|scale of 1:|standard symbol|notation|'
+                    r'freehand sketch of a )\b'),
+    ('cons-6-1', 9, r'\b(u-?value|thermal transmittance|thermal resistance|'
+                    r'resistivity|heat loss calculation)\b'),
+    ('cons-6-6', 9, r'\b(condensation|vapour (?:control|barrier)|interstitial|'
+                    r'moisture control layer|breather membrane)\b'),
+    ('cons-6-2', 8, r'\b(insulat|thermal bridge|cold bridge|airtight|air leakage|'
+                    r'air.?tightness)\b'),
+    ('cons-6-4', 8, r'\b(solar (?:gain|overheating|shading)|orientation|sun path|'
+                    r'thermal mass|overheat)\b'),
+    ('cons-6-5', 8, r'\b(ventilat|indoor air quality|human comfort|wellbeing|'
+                    r'healthy indoor|humidity)\b'),
+    ('cons-6-3', 6, r'\b(energy (?:use|demand|efficien|rating|upgrade)|\bber\b|'
+                    r'passive house|retrofit|environmental impact|carbon|'
+                    r'sustainab|running cost)\b'),
+    ('cons-7-4', 8, r'\b(daylight|natural light|illuminat|glare|rooflight)\b'),
+    ('cons-8-3', 8, r'\b(sound|acoustic|noise|reverberation|impact transmission)\b'),
+    ('cons-2-4', 9, r'\b(strip foundation|raft|pad foundation|pile|foundation for)\b'),
+    ('cons-2-2', 8, r'\b(foundation|excavat|subsoil|hardcore|bearing capacity)\b'),
+    ('cons-2-6', 8, r'\b(concrete mix|batching|water.?cement|ready.?mix)\b'),
+    ('cons-3-6', 9, r'\b(window (?:cill|sill|head|jamb|frame)|glazing|glass|'
+                    r'window detail)\b'),
+    ('cons-3-7', 9, r'\b(door (?:set|frame|threshold|schedule)|front door|'
+                    r'ironmongery)\b'),
+    ('cons-3-8', 9, r'\b(truss|rafter|wallplate|ridge|roof structure|roof form|'
+                    r'purlin)\b'),
+    ('cons-3-9', 8, r'\b(roof (?:finish|covering|insulation)|slate|tile|sarking|'
+                    r'sloped ceiling|attic)\b'),
+    ('cons-3-10', 8, r'\b(eaves|verge|abutment|flat roof|chimney|flashing|'
+                    r'parapet|gutter at the eaves)\b'),
+    ('cons-3-4', 8, r'\b(\bdpc\b|damp proof|lintel|arch|cavity (?:closer|tray)|'
+                    r'rainwater at|ingress of (?:rain|water|moisture))\b'),
+    ('cons-3-3', 6, r'\b(external wall|cavity wall|render|cladding|blockwork|'
+                    r'wall tie|masonry|timber frame wall)\b'),
+    ('cons-4-4', 9, r'\b(stair|riser|going|handrail|baluster|landing|headroom)\b'),
+    ('cons-4-2', 8, r'\b(ground floor|solid floor|floor screed|screed|subfloor|'
+                    r'floor finish|floor covering)\b'),
+    ('cons-4-3', 8, r'\b(suspended (?:timber )?floor|joist|first floor|'
+                    r'upper floor|strutting)\b'),
+    ('cons-4-5', 8, r'\b(stud partition|internal wall|partition|dry lin)\b'),
+    ('cons-4-6', 7, r'\b(plaster|paint|skim|decorat|surface finish|varnish|'
+                    r'preserv)\b'),
+    ('cons-5-2', 9, r'\b(hot water|cold water|cistern|cylinder|water meter|'
+                    r'solar (?:collector|panel)|pipework)\b'),
+    ('cons-5-3', 9, r'\b(heating system|radiator|heat pump|stove|boiler|'
+                    r'underfloor heating|zoned heating|thermostat)\b'),
+    ('cons-5-5', 9, r'\b(drainage|septic|wastewater|waste water|percolation|'
+                    r'soakaway|surface water)\b'),
+    ('cons-5-6', 8, r'\b(sanitary|toilet|\bwc\b|shower|bathroom|single stack)\b'),
+    ('cons-5-7', 8, r'\b(fireplace|flue|hearth|chimney capping)\b'),
+    ('cons-5-8', 9, r'\b(electric|wiring|socket|light point|circuit|'
+                    r'distribution board|cabling|consumer unit)\b'),
+    ('cons-5-4', 7, r'\b(rainwater (?:goods|pipe|harvest)|downpipe|eaves gutter)\b'),
+    ('cons-9-4', 8, r'\b(workshop|power tool|edged tool|sharpen|grinding|'
+                    r'machine guard)\b'),
+    ('cons-10-1', 9, r'\b(mortice|tenon|dovetail|halving joint|housing joint|'
+                     r'bridle joint|joint used|notched)\b'),
+    ('cons-10-6', 8, r'\b(adhesive|glue|jig|cramp|holding work)\b'),
+    ('cons-1-1', 3, r'\b(design|layout|appearance|aesthetic|proportion|'
+                    r'vernacular|extension|room|kitchen|garden|porch|garage)\b'),
 ]
 COMPILED = [(t, w, re.compile(p, re.I)) for t, w, p in RULES]
 
 
 def topic_for(text):
-    """(topic id, the phrase that decided it) — or (None, None)."""
+    """(topic id, matched phrase) or (None, None) if nothing in the syllabus fits."""
     best = (0, None, None)
     for tid, weight, rx in COMPILED:
         m = rx.search(text or '')
@@ -151,44 +103,12 @@ def topic_for(text):
 
 
 def concept_for(text, fallback='part'):
-    """A slug for the card's concept, from the ask's own first words."""
-    words = re.findall(r"[a-z0-9']+", (text or '').lower())
-    stop = {'the', 'a', 'an', 'of', 'in', 'to', 'and', 'for', 'is', 'are', 'was',
-            'were', 'this', 'that', 'with', 'from', 'by', 'on', 'at', 'as', 'it',
-            'what', 'which', 'state', 'give', 'name', 'write', 'explain'}
-    keep = [w for w in words if w not in stop][:6]
+    """A slug from the question's own opening, for the card's concept id."""
+    words = re.sub(r'[^a-z0-9 ]', ' ', (text or '').lower()).split()
+    skip = {'using', 'notes', 'and', 'freehand', 'sketches', 'sketch', 'show',
+            'discuss', 'in', 'detail', 'the', 'a', 'an', 'of', 'to', 'on',
+            'your', 'drawing', 'describe', 'outline', 'state', 'give', 'each',
+            'following', 'that', 'with', 'aid', 'draw', 'scale', 'for', 'two',
+            'three', 'one', 'any', 'specify', 'suitable'}
+    keep = [w for w in words if w not in skip and len(w) > 2][:6]
     return '-'.join(keep) or fallback
-
-
-def main():
-    """What the rules cannot file, so the gaps are visible rather than guessed."""
-    sys.path.insert(0, DIR)
-    import paper as PP                                       # noqa: E402
-    import reconcile as R                                    # noqa: E402
-    from paper_census import census_subject                  # noqa: E402
-    idx = R.leaf_index(census_subject('computer-science'))
-    papers, hit, miss = {}, collections.Counter(), []
-    for (yr, lv, _), leaves in sorted(idx.items()):
-        P = papers.setdefault((yr, lv), PP.Paper('computer-science', yr, lv))
-        for leaf in leaves:
-            q, letter, roman = leaf[1], leaf[2], leaf[3]
-            try:
-                ask = P.text(q, letter, roman) or ''
-            except Exception:                                # noqa: BLE001
-                ask = ''
-            tid, _ = topic_for(ask)
-            if tid:
-                hit[tid] += 1
-            else:
-                miss.append(f'{yr} {lv} Q{q}: {" ".join(ask.split())[:70]}')
-    total = sum(hit.values()) + len(miss)
-    print(f'{total} asks: {sum(hit.values())} filed, {len(miss)} unmatched')
-    for tid, n in sorted(hit.items()):
-        print(f'   {tid}  {n}')
-    print('\nunmatched (first 20):')
-    for m in miss[:20]:
-        print(f'   {m}')
-
-
-if __name__ == '__main__':
-    main()

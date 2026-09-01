@@ -105,34 +105,6 @@ RUBRIC_HEAD = re.compile(
 # The '\d.' head may be followed by an opening quote: Construction Studies'
 # 2019-2025 alternative Q10 opens with a quotation.
 QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]))')
-# What a question head may carry after its number and before its first part:
-# a full stop and the marks the question is worth.
-QHEAD_TARIFF = re.compile(r'^\.?\s*\(\s*\d{1,3}\s*marks?\s*\)', re.I)
-# An instruction ABOUT THE PAPER, numbered like a question. Engineering prints
-# its rubric as a numbered list — "1. Answer any SIX questions. 2. All
-# questions carry equal marks. 3. All answers must be written in ink..." — and
-# where the extractor splits those into separate blocks the reader read them as
-# Questions 1 to 6, which shifted every real question down by six: the true
-# Question 1 vanished and Question 6 absorbed five questions' parts. It is one
-# block in 2021 and 2022 and six blocks in 2023 to 2025, so the fault appears
-# and disappears by year.
-#
-# Matched on the instruction's own words rather than on its position, because
-# position cannot tell it apart from a real question: Biology and Business
-# number every question this way with no "Question" in front of it, and their
-# first bare head is Question 1. Across 170 papers this matches these six lines
-# and nothing else.
-EXAM_INSTRUCTION = re.compile(
-    r'^\d{1,2}\.\s+(?:'
-    r'Answer\s+(?:any\s+|all\s+|either\s+)?[\w\-]+\s+questions?\b'
-    r'|All\s+questions\s+carry\s+equal\s+marks'
-    r'|All\s+answers?\s+must\s+be\s+written'
-    r'|Diagrams?\s+should\s+be\s+drawn'
-    r'|Squared\s+paper\s+is\s+supplied'
-    r'|Please\s+label\s+and\s+number'
-    r'|Write\s+your\s+(?:examination|candidate)\s+number'
-    r'|Marks?\s+(?:may|will)\s+be\s+(?:lost|deducted)'
-    r')', re.I)
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Letters run past (h): Chemistry's Q4 runs to (l) and Physics' lettered-choice
 # questions to (l) as well — every part after (h) was invisible and 61 shipped
@@ -178,12 +150,6 @@ PAGE_FURNITURE = re.compile(
 # papers: 294 such lines occur and not one is the opening line of a part.
 FURNITURE = re.compile(r'^(\d{1,2}\.|[^.?!]{1,34}:)$')
 TERMINAL = re.compile(r'[.?!]$')
-# What CLOSES a part, for deciding whether its text looks cut short. A
-# semicolon closes an item in a list -- "Brinell hardness test and Vickers
-# hardness test;" is (i) of three, whole, and the paper's own punctuation
-# says so -- but it does not seal a part against its neighbours, which is a
-# stricter question and keeps TERMINAL above.
-CLOSES = re.compile(r'[.?!;]$')
 # Biology, Chemistry and Physics set several parts inside one block, so a marker
 # turns up mid-text: "(ii) How did the student make the temperature 0 °C?".
 # Anchored on a following capital or bracket, which keeps "(15)" and "(a)" of a
@@ -382,7 +348,6 @@ class Paper:
         q = letter = roman = None
         open_key = None          # the part a continuation block may extend
         or_pending = False       # a standalone OR announces a choice variant
-        or_part = False          # ... of a PART, and of everything under it
         dot_heads = 0            # how many 'N.'-style heads were accepted
         qkind = {}               # q -> 'letter'|'roman': which marker opened it
         blocks = list(self._all_blocks())
@@ -413,12 +378,7 @@ class Paper:
             # twice this way every year. The variant files under -q so its
             # parts never collide with the first printing's.
             if re.fullmatch(r'OR', text):
-                # The alternative runs from here to the end of the question:
-                # 2024 HL Q8 sets a second (c) with its own (i) and (ii), and
-                # each of them lands on the key its twin already holds. The
-                # flag has to outlast the (c) that opens the branch or only
-                # the (c) itself is separated and its children still weld.
-                or_pending = or_part = True
+                or_pending = True
                 continue
             if text.startswith('OR ') and QHEAD.match(text[3:]):
                 or_pending, text = True, text[3:]
@@ -433,8 +393,6 @@ class Paper:
                 if q < joined_q <= q + 3 and not q < int(sp.group(1)) <= q + 3:
                     text = f'Question {joined_q}' + text[sp.end():]
             m = QHEAD.match(text)
-            if m and EXAM_INSTRUCTION.match(text):
-                m = None
             if not m and q is not None:
                 # Not every head is printed as "N." followed by a word. 2025 OL
                 # Physics sets "12." in a block of its own with part (a) in the
@@ -490,17 +448,10 @@ class Paper:
                     if m.group(2):
                         dot_heads += 1
                     q = -found if variant else found
-                    or_pending = or_part = False
+                    or_pending = False
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
-                    # The head may carry its own tariff: Engineering sets
-                    # "Question 4. (50 marks)". Consuming only the number left
-                    # ". (50 marks)" as the question's stimulus prose, and it
-                    # was the whole stem on 80 of its cards -- the first thing
-                    # a student would read on the card, and not a stimulus at
-                    # all.
-                    rest = QHEAD_TARIFF.sub('', rest, count=1).strip()
                     if rest and _leading(rest)[:2] != (None, None):
                         # "7. (a) Define an acid ..." — the head is welded to its
                         # own first part, and filing that as stimulus prose loses
@@ -582,18 +533,6 @@ class Paper:
                 else:
                     roman = found_roman
                 key = (q, letter, roman)
-                # A part may be printed TWICE, the second time as an
-                # alternative the student may take instead: 2024 HL Q8 sets
-                # (c) about a sealed lubrication system and then, after a
-                # standalone OR, a second (c) about CNC milling. Both (c)(ii)s
-                # land on one key, and joined without the OR the card read as
-                # one ask welded to another — "Identify any two lubricants
-                # commonly used when machining. Outline two safety features
-                # integrated into computer numerical control." The paper's own
-                # word goes back between them, which is how the alternatives
-                # printed inline already read.
-                if or_part and self.parts.get(key):
-                    self.parts[key].append('OR')
                 self.parts.setdefault(key, [])
                 if rest:
                     self.parts[key].append(rest)
@@ -621,14 +560,6 @@ class Paper:
                 self.stems.setdefault((q, letter), []).append(text)
             open_key = None
 
-        # An alternative may repeat a marker and put nothing after it -- 2021
-        # OL Q3 sets "(d) Explain any two of the following terms:" and then,
-        # after the OR, a bare "(d)" whose own romans carry the text. The OR
-        # placed on the letter then has nothing to join, and a part ending in
-        # "OR" reads as an ask cut off mid-choice.
-        for blocks in self.parts.values():
-            while blocks and blocks[-1].strip() == 'OR':
-                blocks.pop()
         self._adopt_unlettered()
 
     def _all_blocks(self):
@@ -724,7 +655,7 @@ class Paper:
         looked at the page and said so.
         """
         t = self.text(qnum, letter, roman)
-        return not t or not CLOSES.search(t)
+        return not t or not TERMINAL.search(t)
 
     @staticmethod
     def ref(key):
