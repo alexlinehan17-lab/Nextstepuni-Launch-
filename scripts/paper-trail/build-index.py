@@ -252,6 +252,16 @@ QA_PASSED_ANSWER_PROFILES = {
     # Religious Education via re_sections.py (lettered SECTION blocks; the
     # scheme restates each section's questions with marking criteria — the
     # Section F render shows the greening-of-religion questions verbatim).
+    ('irish', 'foundation', 'iv'),
+    ('accounting', 'higher', 'iv'),
+    ('portuguese', 'higher', 'iv'),
+    ('portuguese', 'ordinary', 'iv'),
+    ('mandarin-chinese', 'higher', 'iv'),
+    ('mandarin-chinese', 'ordinary', 'iv'),
+    ('history-early-modern', 'higher', 'iv'),
+    ('link-modules', 'common', 'iv'),
+    ('jc-history', 'common', 'iv'),
+    ('jc-italian', 'common', 'iv'),
     ('religious-education', 'higher', 'ev'),
     ('religious-education', 'higher', 'iv'),
     ('religious-education', 'ordinary', 'iv'),
@@ -431,6 +441,16 @@ QA_PASSED_ANSWER_PROFILES = {
     # Religious Education via re_sections.py (lettered SECTION blocks; the
     # scheme restates each section's questions with marking criteria — the
     # Section F render shows the greening-of-religion questions verbatim).
+    ('irish', 'foundation', 'iv'),
+    ('accounting', 'higher', 'iv'),
+    ('portuguese', 'higher', 'iv'),
+    ('portuguese', 'ordinary', 'iv'),
+    ('mandarin-chinese', 'higher', 'iv'),
+    ('mandarin-chinese', 'ordinary', 'iv'),
+    ('history-early-modern', 'higher', 'iv'),
+    ('link-modules', 'common', 'iv'),
+    ('jc-history', 'common', 'iv'),
+    ('jc-italian', 'common', 'iv'),
     ('religious-education', 'higher', 'ev'),
     ('religious-education', 'higher', 'iv'),
     ('religious-education', 'ordinary', 'iv'),
