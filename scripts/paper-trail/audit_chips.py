@@ -132,6 +132,22 @@ def audit_paper(year, fname, sc):
                       and len(qs) >= 0.5 * max(1, len(detected)))
     if question_style and detected:
         missing = sorted(set(detected) - chip_ns)
+        # unnumbered band chips (section/part additions) still cover
+        # positions: drop a "missing" question if any numberless chip's span
+        # (anchor -> next chip anchor / end) contains it
+        anchors = sorted([(q["pP"], q["pY"][0], not re.search(
+            r"[QC](?:eist|uestion)?\.?\s*\d", q.get("label") or str(q.get("n"))))
+            for q in qs])
+        def covered_by_band(pg, y):
+            for i, (ap, ay, is_band) in enumerate(anchors):
+                if not is_band:
+                    continue
+                nxt = anchors[i + 1][:2] if i + 1 < len(anchors) else (10**6, 0)
+                if (ap, ay - 0.03) <= (pg, y) < nxt:
+                    return True
+            return False
+        missing = [n for n in missing
+                   if not covered_by_band(*detected[n])]
     else:
         # band-style: chips partition the paper from the first anchor on —
         # only questions printed BEFORE the first chip's anchor are uncovered
