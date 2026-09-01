@@ -442,6 +442,17 @@ class Paper:
                 # question this parser missed and for a paper that resumes at 11
                 # after a Section A ending at 8.
                 variant = or_pending and q is not None and found == abs(q)
+                # An instructions page numbers its own rules '1.' to '6.' in
+                # exactly the dot-head form, and with q still unset those were
+                # accepted — walking the counter to 6 before the paper's first
+                # real head, which the backwards guard then rejected wholesale
+                # (Engineering 2021 HL lost Questions 1–6 this way). A WORDED
+                # 'Question 1' arriving while not a single part has been filed
+                # proves everything accepted so far was page furniture, not a
+                # question: restart the numbering from the real head.
+                if m.group(1) and found == 1 and q is not None and not self.parts:
+                    q, dot_heads = None, 0
+                    self.stems = {}
                 if q is not None and not (q < found <= q + 3) and not variant:
                     pass
                 else:

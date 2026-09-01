@@ -50,6 +50,10 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-science/higher';
+import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
+import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
+import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -67,6 +71,7 @@ const SAMPLE_CARDS = [
   ...IRISH_HIGHER, ...IRISH_ORDINARY,
   ...ART_HIGHER, ...ART_ORDINARY,
   ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
+  ...CS_HIGHER, ...CS_ORDINARY, ...ENG_HIGHER, ...ENG_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -86,9 +91,7 @@ import {
  * Shrink this list. Do not add to it.
  */
 const KNOWN_OVER_ROW_CAP = new Set([
-  'agsci-2024-hl-q13bi', 'agsci-2024-hl-q13c', 'agsci-2024-hl-q13d',
-  'agsci-2024-hl-q14bii', 'agsci-2024-hl-q15av', 'agsci-2024-hl-q15bii',
-  'agsci-2024-ol-q16b', 'agsci-2024-ol-q17aiii', 'agsci-2024-ol-q18aii',
+  'agsci-2024-hl-q15av', 'agsci-2024-ol-q16b', 'agsci-2024-ol-q17aiii',
 ]);
 
 const ROOT = resolve(__dirname, '..');
@@ -386,6 +389,10 @@ describe('the size manifest matches the decks it describes', () => {
     ['art', 'ordinary', ART_ORDINARY],
     ['geography', 'higher', GEOGRAPHY_HIGHER],
     ['geography', 'ordinary', GEOGRAPHY_ORDINARY],
+    ['computer-science', 'higher', CS_HIGHER],
+    ['computer-science', 'ordinary', CS_ORDINARY],
+    ['engineering', 'higher', ENG_HIGHER],
+    ['engineering', 'ordinary', ENG_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -447,6 +454,8 @@ describe('the taxonomy is the redeveloped specification', () => {
       irish: 'irish-',
       art: 'art-',
       geography: 'geography-',
+      'computer-science': 'cs-',
+      engineering: 'eng-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

@@ -45,13 +45,23 @@
  *    correct answers 5 marks each and the rest 2. A point's value depends on how
  *    many the student got right, not which point it is, so per-row values do not
  *    exist and must not be invented.
+ *  - `questionTotal` — the scheme prices the QUESTION and states its points
+ *    without printing how those marks divide across its parts. Computer Science
+ *    Section A does this throughout: a five-mark question prints (a) and (b),
+ *    and the scheme answers each without ever saying what either is worth.
+ *    A card citing the question can state the total and the points; it cannot
+ *    state a split, and it must not present the parts' separate answers as
+ *    ALTERNATIVES to one another — "five marks for any one of these" is a claim
+ *    the scheme never made and, for a question whose parts ask different
+ *    things, is false.
  *
  * PARSED from the notation printed in the scheme. Never inferred, never defaulted.
  */
 export type TariffModel =
   | { kind: 'fixed' }
   | { kind: 'bestNofParts'; answer: number; ofParts: number; perPart: number }
-  | { kind: 'orderedSplit'; notation: string };
+  | { kind: 'orderedSplit'; notation: string }
+  | { kind: 'questionTotal' };
 
 /**
  * What kind of thing one marking row is.
@@ -332,11 +342,14 @@ export interface SecPointCardBase extends SecCardBase {
   /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
    *  dependency splitting, and is what makes the card fit a 360px phone.
    *
-   *  A best-N-of-M card is the one exception, capped at MAX_OPTION_ROWS instead.
-   *  Its extra rows are a menu the student chooses from, not a list they must
-   *  recall — "identify any four of these six breeds" shows six photographs
-   *  because that is what the paper prints, and trimming to five would
-   *  misrepresent the question rather than lighten it. */
+   *  Menu-class tariffs are the exception — see rowCapFor. A best-N-of-M card
+   *  is capped at MAX_OPTION_ROWS: its extra rows are a menu the student
+   *  chooses from, not a list they must recall — "identify any four of these
+   *  six breeds" shows six photographs because that is what the paper prints,
+   *  and trimming to five would misrepresent the question rather than lighten
+   *  it. orderedSplit and questionTotal rows are likewise the scheme's own
+   *  printed candidates, bounded by the notation or the question total, and
+   *  share the long-question ceiling. */
   rows: MarkRow[];
 }
 
@@ -624,9 +637,20 @@ export const MAX_OPTION_ROWS = 8;
  */
 export const MAX_LONG_OPTION_ROWS = 14;
 
-/** The row cap that actually applies to a card, given its tariff. */
+/** The row cap that actually applies to a card, given its tariff.
+ *
+ * The five-row cap is for REQUIRED recall — a list the student must produce in
+ * full. An orderedSplit or questionTotal card's rows are a different thing:
+ * the scheme's own printed candidate points, where what a student claims is
+ * bounded by the notation or the question's total rather than by the row
+ * count. Computer Science Section A answers a whole multi-part question in one
+ * scheme block ("state two differences" then lists nine), and trimming that
+ * list to five would misrepresent the scheme, not lighten the card. Those two
+ * kinds share the menu ceiling: the most any SEC long question prints. */
 export const rowCapFor = (kind: TariffModel['kind']): number =>
-  kind === 'bestNofParts' ? MAX_OPTION_ROWS : MAX_ROWS;
+  kind === 'bestNofParts' ? MAX_OPTION_ROWS
+    : kind === 'orderedSplit' || kind === 'questionTotal' ? MAX_LONG_OPTION_ROWS
+      : MAX_ROWS;
 
 /**
  * How many options one best-of menu may show.
@@ -797,6 +821,9 @@ export function tariffReconciles(card: SecCard): boolean {
   }
   const { tariffModel: t, rows, totalMarks } = card;
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
+  // The scheme never printed a split, so a row carrying its own marks is a
+  // value the card invented — the tariff lives on the question alone.
+  if (t.kind === 'questionTotal') return rows.every(r => r.marks === null);
   if (t.kind === 'bestNofParts') return t.answer * t.perPart === totalMarks;
   // Asterisked rows count: the asterisk constrains the wording, not the value.
   const worth = (r: MarkRow) =>

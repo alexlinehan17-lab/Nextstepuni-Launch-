@@ -74,6 +74,21 @@
   },
   "refsHash": "b362d158b7cb0b00"
  },
+ "computer-science": {
+  "cards": 336,
+  "contentHash": "04aace9787f02c21",
+  "coveragePct": 82.2,
+  "covered": 398,
+  "excluded": 0,
+  "leaves": 484,
+  "open": 86,
+  "orphans": 0,
+  "papers": {
+   "count": 20,
+   "hash": "4eb8d8bb7c8ce50b"
+  },
+  "refsHash": "ba197c3dcfdb616b"
+ },
  "construction-studies": {
   "cards": 505,
   "contentHash": "a1172f1477219ad9",
@@ -103,6 +118,21 @@
    "hash": "d356131d0d2d0e2e"
   },
   "refsHash": "ffceb66a16576771"
+ },
+ "engineering": {
+  "cards": 466,
+  "contentHash": "2e63624d137d2218",
+  "coveragePct": 72.6,
+  "covered": 585,
+  "excluded": 0,
+  "leaves": 806,
+  "open": 221,
+  "orphans": 0,
+  "papers": {
+   "count": 10,
+   "hash": "d6f8e4ccadef7bbf"
+  },
+  "refsHash": "99445e531f46b857"
  },
  "english": {
   "cards": 660,
