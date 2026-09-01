@@ -204,7 +204,8 @@ def _det_question_word(doc):
             for i, w in enumerate(lw):
                 word = _deligature(w[4])
                 # 'Ceist'/'CEIST' = Irish for 'Question' (Irish-medium IV papers).
-                if word not in ("Question", "QUESTION", "Ceist", "CEIST") or i + 1 >= len(lw):
+                # "Cesit" = the SEC's own transposition typo (2021 LC034 IV scheme)
+                if word not in ("Question", "QUESTION", "Ceist", "CEIST", "Cesit", "CESIT") or i + 1 >= len(lw):
                     continue
                 m = re.fullmatch(r"(\d+)[.:]?", lw[i + 1][4])  # 'Question 1' / '1.' / '1:'
                 if not m:
@@ -219,7 +220,7 @@ def _det_question_word(doc):
                 # headers (2026 Economics Section B), any x
                 table_hdr = (i + 2 < len(lw)
                              and lw[i + 2][4] in ("Possible", "Freagraí"))
-                if w[0] < LEFT_MARGIN_X or table_hdr or (word in ("QUESTION", "CEIST", "Question", "Ceist") and standalone):
+                if w[0] < LEFT_MARGIN_X or table_hdr or (word in ("QUESTION", "CEIST", "Question", "Ceist", "Cesit", "CESIT") and standalone):
                     hits.append((int(m.group(1)), pi, w[0], w[1] / H))
     return hits
 
