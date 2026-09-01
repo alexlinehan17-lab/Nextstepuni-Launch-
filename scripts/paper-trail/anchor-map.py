@@ -134,7 +134,8 @@ SKIP_COMPONENTS = {"A00", "U00"}
 # = Q11-17 continuation) — their booklets may start numbering past 1, and their
 # lead-int papers legitimately reconcile against 'Question N' scheme blocks
 # (the scheme restates each question; there is no competing short-answer key).
-CONTINUATION_CODES = {"LC025", "LC034", "LC022", "LC032", "LC020", "LC029"}
+CONTINUATION_CODES = {"LC025", "LC034", "LC022", "LC032", "LC020", "LC029",
+                      "LC021", "LC023", "LC225"}
 
 
 def log(msg):
