@@ -284,8 +284,26 @@ def _det_c_token(doc):
     return hits
 
 
+def _det_topic_word(doc):
+    """'Topic N.' headers (old-spec Classical Studies papers and schemes mirror
+    each other topic-for-topic; 'Topaic' on the Irish side)."""
+    hits = []
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        for lw in line_groups(page):
+            for i, w in enumerate(lw):
+                if w[4] not in ("Topic", "TOPIC", "Topaic", "TOPAIC") or i + 1 >= len(lw):
+                    continue
+                m = re.fullmatch(r"(\d{1,2})[.:]?", lw[i + 1][4])
+                if m and w[0] < 200:
+                    hits.append((int(m.group(1)), pi, w[0], w[1] / H))
+    return hits
+
+
 DETECTORS = [("question", _det_question_word), ("lead_int", _det_lead_int), ("qtoken", _det_q_token),
-             ("ctoken", _det_c_token)]
+             ("ctoken", _det_c_token), ("topic", _det_topic_word)]
 
 
 def best_sequence(hits, allow_k_start=False):
@@ -759,8 +777,14 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
                     break
 
         if ok:
-            qout.append({"n": str(n), "pP": p_pi + 1, "pY": p_yband,
-                         "region": region, "mode": "crop", "conf": 1.0})
+            q_out = {"n": str(n), "pP": p_pi + 1, "pY": p_yband,
+                     "region": region, "mode": "crop", "conf": 1.0}
+            if detector == "topic":
+                # topic-organised papers (old-spec Classical Studies): the chip
+                # heads 'Topic N', so name it that way in the reveal panel
+                q_out["label"] = ("Topaic" if "IV.pdf" in os.path.basename(paper_path)
+                                  else "Topic") + f" {n}"
+            qout.append(q_out)
             stats["crop"] += 1
         else:
             qout.append({"n": str(n), "pP": p_pi + 1, "pY": p_yband,
