@@ -89,7 +89,10 @@ JC_DEFAULT_START = 2022
 
 # fileid grammar: {LC|JC|LB}{SSS}{LVL}LP{CCC}{LANG}.pdf
 # ("L?P" — at least one archive file, LC038AP000EV.pdf, drops the L)
-FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.pdf$", re.I)
+# .jpg: image supplements (Geography-family map/photo sheets) index as docs
+# too — the decode loop normalises every image extension to lowercase .jpg
+# first, and the corpus stores TIFF sources converted to JPEG under that name.
+FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.(?:pdf|jpg)$", re.I)
 LEVEL_BY_CODE = {"A": "higher", "G": "ordinary", "B": "foundation", "C": "common"}
 # Z = aural/other (no level) — only ever seen on non-PDF assets so far.
 
@@ -197,6 +200,13 @@ QA_PASSED_ANSWER_PROFILES = {
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),
+    # Bilingual-era languages (the SEC merged EV/IV into BV papers ~2019+):
+    # dormant reading maps render-verified — German BV Text II Q4 opens its
+    # matching answer key, French BV Text II Q6 its indicative points.
+    ('french', 'higher', 'bv'),
+    ('french', 'ordinary', 'bv'),
+    ('german', 'higher', 'bv'),
+    ('german', 'ordinary', 'bv'),
     ('french', 'ordinary', 'ev'),
     ('french', 'ordinary', 'iv'),
     ('italian', 'higher', 'ev'),
@@ -235,6 +245,40 @@ QA_PASSED_ANSWER_PROFILES = {
     ('biology', 'higher', 'iv'),
     ('business', 'higher', 'iv'),
     ('business', 'ordinary', 'iv'),
+    # Dormant bespoke waves lit at last (render-verified now): JC History
+    # (jc_history.py, 2022-25 — Q5's Home Rule sources open their leader
+    # answers) and History Early Modern (hem_history.py, 2021-22 HL — the
+    # Magrath DBQ opens its Criticism indicative points).
+    # Religious Education via re_sections.py (lettered SECTION blocks; the
+    # scheme restates each section's questions with marking criteria — the
+    # Section F render shows the greening-of-religion questions verbatim).
+    ('irish', 'foundation', 'iv'),
+    ('accounting', 'higher', 'iv'),
+    ('portuguese', 'higher', 'iv'),
+    ('portuguese', 'ordinary', 'iv'),
+    ('mandarin-chinese', 'higher', 'iv'),
+    ('mandarin-chinese', 'ordinary', 'iv'),
+    ('history-early-modern', 'higher', 'iv'),
+    ('link-modules', 'common', 'iv'),
+    ('jc-history', 'common', 'iv'),
+    ('jc-italian', 'common', 'iv'),
+    ('polish', 'higher', 'iv'),
+    ('religious-education', 'higher', 'ev'),
+    ('religious-education', 'higher', 'iv'),
+    ('religious-education', 'ordinary', 'iv'),
+    # English OL Paper 2 via english_p2_ol.py: lettered text blocks mirrored
+    # scheme-side ("H KING LEAR" opens its exact questions + indicative
+    # material).
+    ('english', 'ordinary', 'ev'),
+    # Bilingual-era languages (the SEC merged EV/IV into BV papers ~2019+):
+    # dormant reading maps render-verified — German BV Text II Q4 opens its
+    # matching answer key, French BV Text II Q6 its indicative points.
+    ('french', 'higher', 'bv'),
+    ('french', 'ordinary', 'bv'),
+    ('german', 'higher', 'bv'),
+    ('german', 'ordinary', 'bv'),
+    ('jc-history', 'common', 'ev'),
+    ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
     ('chemistry', 'ordinary', 'iv'),
     ('computer-science', 'higher', 'iv'),
@@ -341,6 +385,118 @@ QA_PASSED_ANSWER_PROFILES = {
     ('religious-education', 'ordinary', 'ev'),
     ('romanian', 'higher', 'ev'),
     ('slovenian', 'higher', 'ev'),
+    # 2026 refresh wave (2026-08-31): profiles whose first sidecars arrived with
+    # the 2026 papers, each render-verified per question (first/middle/last pane
+    # against the real PDFs) in the 2026 audit session. Music here is the
+    # LISTENING paper (component 008) only — the 2026 scheme leads with the
+    # restated listening answers, so the generic band mapped the COMPOSING
+    # paper (006) onto the listening block; those four sidecars were deleted
+    # (2018/2022 006 maps re-verified correct — the trap is 2026-specific).
+    ('latin', 'higher', 'ev'),
+    ('latin', 'higher', 'iv'),
+    # IV sweep wave 1 (2026-08-31, CAMPAIGN-FULL-COVERAGE Phase A): the C-token
+    # detector ("C1" = Ceist 1) unlocked the Irish-medium twins of proven EV
+    # layouts. Each profile render-verified (paper band vs scheme crop panes)
+    # plus overlap-vs-EV-twin QA; decoy families found the same way were
+    # DELETED, not lit: Art practical components 010/011/027 (criteria grids —
+    # including ~25 EV maps wrongly live since the H&A wave; purged),
+    # Accounting HL IV (scheme numbers its working lines), Geography OL IV
+    # Part Two 2025 (anchored on the Part One short-answer key).
+    # IV sweep wave 2: Maths IV after the contents-aware Páipéar band split,
+    # Irish front-matter skip, and the divider-band exception to the
+    # short-answer guard ('1.'-numbered papers vs 'CEIST N' scheme heads) —
+    # the same fixes corrected cross-paper bands in a dozen committed EV years
+    # (2019 OL P2's crescent chip opened Paper 1's Q5 before this).
+    ('mathematics', 'higher', 'iv'),
+    ('mathematics', 'ordinary', 'iv'),
+    # JC/LCA Irish-medium wave (same sweep, JC+LB exams): every family render-
+    # verified — JC Irish T2 blag task ↔ its marking bands, JC Maths C8 worked
+    # solution, JC Science indicator table, JC French Lascaux reading (numbering
+    # is continuous so whole-paper maps are safe), JC Applied Technology's
+    # written paper is an answered copy of itself (the old "practical" ⛔ was
+    # wrong for the written exam). LCA Gaeilge regenerations verified richer.
+    # Wave-10 IV (same session): wave10_sections.py gained the Irish grammar
+    # (Ceist headers, 'Ceist 11(b) – Ceist 16' / '12-16' range variants,
+    # spaced-dot markers, Irish chip labels). Renders: Classical HL IV Q9 opens
+    # the Aeinéid block; P&S HL IV Q1 its restated marking notes; essay chips
+    # open the common criteria with Irish labels.
+    ('classical-studies', 'higher', 'iv'),
+    ('classical-studies', 'ordinary', 'iv'),
+    ('politics-and-society', 'higher', 'iv'),
+    ('politics-and-society', 'ordinary', 'iv'),
+    # IRISH (LC001) lights for the first time: 25 committed per-question
+    # léamhthuiscint maps from the IV reading wave (render-verified now — HL
+    # 2024's ChatGPT questions open their exact marked answers) plus 4
+    # section-level gap years via irish_sections.py ("Ceist 3 · Filíocht"
+    # labelled chips onto each section's full marking block).
+    # New-spec 2026 wave: CONTINUATION_CODES + the divider-exception let the
+    # continuously-numbered 2026 schemes map precisely — Biology's nitrogen-
+    # cycle chip (the fallback disaster's original exhibit) now opens Question
+    # 6's denitrification answers; Construction Q10 its EnerPHit model answer;
+    # Chemistry HL Q11 its propanone redox block; Accounting HL Q6 the Olivette
+    # P&L; Applied Maths HL Q10 the completed scheduling network.
+    # Dormant bespoke waves lit at last (render-verified now): JC History
+    # (jc_history.py, 2022-25 — Q5's Home Rule sources open their leader
+    # answers) and History Early Modern (hem_history.py, 2021-22 HL — the
+    # Magrath DBQ opens its Criticism indicative points).
+    # Religious Education via re_sections.py (lettered SECTION blocks; the
+    # scheme restates each section's questions with marking criteria — the
+    # Section F render shows the greening-of-religion questions verbatim).
+    ('irish', 'foundation', 'iv'),
+    ('accounting', 'higher', 'iv'),
+    ('portuguese', 'higher', 'iv'),
+    ('portuguese', 'ordinary', 'iv'),
+    ('mandarin-chinese', 'higher', 'iv'),
+    ('mandarin-chinese', 'ordinary', 'iv'),
+    ('history-early-modern', 'higher', 'iv'),
+    ('link-modules', 'common', 'iv'),
+    ('jc-history', 'common', 'iv'),
+    ('jc-italian', 'common', 'iv'),
+    ('polish', 'higher', 'iv'),
+    ('religious-education', 'higher', 'ev'),
+    ('religious-education', 'higher', 'iv'),
+    ('religious-education', 'ordinary', 'iv'),
+    # English OL Paper 2 via english_p2_ol.py: lettered text blocks mirrored
+    # scheme-side ("H KING LEAR" opens its exact questions + indicative
+    # material).
+    ('english', 'ordinary', 'ev'),
+    # Bilingual-era languages (the SEC merged EV/IV into BV papers ~2019+):
+    # dormant reading maps render-verified — German BV Text II Q4 opens its
+    # matching answer key, French BV Text II Q6 its indicative points.
+    ('french', 'higher', 'bv'),
+    ('french', 'ordinary', 'bv'),
+    ('german', 'higher', 'bv'),
+    ('german', 'ordinary', 'bv'),
+    ('jc-history', 'common', 'ev'),
+    ('history-early-modern', 'higher', 'ev'),
+    ('chemistry', 'higher', 'iv'),
+    ('construction-studies', 'higher', 'iv'),
+    ('construction-studies', 'ordinary', 'iv'),
+    ('applied-mathematics', 'higher', 'iv'),
+    ('irish', 'higher', 'iv'),
+    ('irish', 'ordinary', 'iv'),
+    ('jc-irish', 'higher', 'iv'),
+    ('jc-irish', 'ordinary', 'iv'),
+    ('jc-mathematics', 'higher', 'iv'),
+    ('jc-mathematics', 'ordinary', 'iv'),
+    ('jc-science', 'common', 'iv'),
+    ('jc-french', 'common', 'iv'),
+    ('jc-applied-technology', 'common', 'iv'),
+    ('agricultural-science', 'higher', 'iv'),
+    ('agricultural-science', 'ordinary', 'iv'),
+    ('art', 'higher', 'iv'),
+    ('art', 'ordinary', 'iv'),
+    ('accounting', 'ordinary', 'iv'),
+    ('biology', 'higher', 'iv'),
+    ('biology', 'ordinary', 'iv'),
+    ('lca-engineering', 'common', 'ev'),
+    ('lca-gaeilge-chumarsaideach', 'common', 'iv'),
+    ('link-modules', 'common', 'ev'),
+    ('music', 'higher', 'iv'),
+    ('music', 'ordinary', 'ev'),
+    ('music', 'ordinary', 'iv'),
+    ('physics', 'ordinary', 'iv'),
+    ('physics-and-chemistry', 'ordinary', 'iv'),
 }
 
 # ─── Hand-written subject knowledge ──────────────────────────────────────────
@@ -627,13 +783,33 @@ def main():
     log(f"  downloads.jsonl: {'%d records' % len(dl) if downloads_present else 'MISSING (Stage 2 not run yet)'}")
 
     # ── Decode ───────────────────────────────────────────────────────────────
+    # Image supplements (Geography-family aerial photos / map sheets) index as
+    # ordinary docs: the SEC flips their format year to year (.pdf/.jpg/.JPG/
+    # .tif), so every image row is normalised to a lowercase-.jpg fileid — the
+    # corpus and Storage hold TIFF sources converted to JPEG under that name
+    # (the annual refresh's image fetch step does the conversion). Audio/video
+    # rows stay out of scope.
+    image_re = re.compile(r"\.(jpe?g|tiff?)$", re.I)
+    # When the SEC published the same component as BOTH a PDF and an image in
+    # one year (2018 Geography Picture/Illustration), the PDF wins — it is the
+    # already-live richer format; the image row is a duplicate, not a doc.
+    pdf_bases = {(r["view"], r["year"], r["fileid"].rsplit(".", 1)[0].upper())
+                 for r in rows if r["fileid"].lower().endswith(".pdf")}
     decoded = []
     for r in rows:
         if not r["fileid"].lower().endswith(".pdf"):
-            ext = r["fileid"].rsplit(".", 1)[-1].lower()
-            issues.non_pdf[ext] += 1
-            issues.non_pdf_rows[(r["exam"], html.unescape(r["subjectName"]).strip(), int(r["year"]))] += 1
-            continue
+            if image_re.search(r["fileid"]):
+                base = (r["view"], r["year"], image_re.sub("", r["fileid"]).upper())
+                if base in pdf_bases:
+                    issues.artifacts.append(
+                        f"{r['exam']} {r['year']} {r['subjectName']} {r['fileid']} (image duplicate of indexed PDF)")
+                    continue
+                r = dict(r, fileid=image_re.sub(".jpg", r["fileid"]))
+            else:
+                ext = r["fileid"].rsplit(".", 1)[-1].lower()
+                issues.non_pdf[ext] += 1
+                issues.non_pdf_rows[(r["exam"], html.unescape(r["subjectName"]).strip(), int(r["year"]))] += 1
+                continue
         d = decode_row(r, issues)
         if d:
             decoded.append(d)
@@ -824,9 +1000,15 @@ def main():
             _cy = registry[(exam, eff_name)]["cycle"]
             upload_rows[f"papers/{_cy}/{sid}/{year}/paper/{p['fileid']}"] = \
                 f"paper-trail-corpus/{p['view']}/{p['year']}/{p['fileid']}"
-            prim = scheme_for_paper(p, cands)
+            # Image supplements never carry a marking scheme — the scheme
+            # belongs to the Source Paper item of the same entry, and pairing
+            # one here would put a scheme button on a photograph.
+            is_image = p["fileid"].lower().endswith(".jpg")
+            prim = None if is_image else scheme_for_paper(p, cands)
             scheme_doc = doc_for(prim) if prim else None
-            if prim and scheme_doc:
+            if is_image:
+                pass
+            elif prim and scheme_doc:
                 used_scheme_ids.add(id(prim))
                 upload_rows[f"papers/{_cy}/{sid}/{year}/scheme/{prim['fileid']}"] = \
                     f"paper-trail-corpus/{prim['view']}/{prim['year']}/{prim['fileid']}"

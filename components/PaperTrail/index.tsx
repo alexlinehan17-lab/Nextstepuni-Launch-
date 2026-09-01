@@ -22,6 +22,7 @@ import { ArrowLeft, Clock3, Layers, ListChecks, Search, Star } from 'lucide-reac
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
+import ImageViewer from './ImageViewer';
 import { grammarFor, timingFor } from './subjectMeta';
 import { taggedSubjects, topicsForPaper, type TopicSibling } from './topics';
 import { attemptNs } from './attemptStore';
@@ -464,6 +465,18 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const key = recentKey(view.subjectId, view.year, view.level, view.lang, view.item.doc.f);
     const url = (kind: 'paper' | 'scheme', f: string) =>
       paperUrl(paperStoragePath(subj.cycle, subj.id, view.year, kind, f));
+    // Image supplements (Geography aerial photo / map sheets and cousins) get
+    // the lightbox — pdf.js has nothing to say about a JPEG.
+    if (/\.jpg$/i.test(view.item.doc.f)) {
+      return (
+        <ImageViewer
+          title={`${paperTrailSubjectLabel(subj)} · ${view.year}`}
+          subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}`}
+          url={url('paper', view.item.doc.f)}
+          onClose={() => setView(view.returnTo ?? { v: 'subject', subjectId: view.subjectId })}
+        />
+      );
+    }
     // The `answers` flag lives on the index, not on the recents snapshot — look
     // the live item up so the toggle appears even when re-opened from Recents.
     const liveItem = (PAPER_TRAIL_INDEX[subj.id] ?? [])
@@ -829,7 +842,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
                           className="flex-1 py-2.5 rounded-full text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
                           style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
                         >
-                          Paper{item.doc.b > 0 && <span className="opacity-75 font-medium"> · {prettyBytes(item.doc.b)}</span>}
+                          {/\.jpg$/i.test(item.doc.f) ? 'Image' : 'Paper'}
+                          {item.doc.b > 0 && <span className="opacity-75 font-medium"> · {prettyBytes(item.doc.b)}</span>}
                         </button>
                         {item.scheme ? (
                           <button
@@ -839,7 +853,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
                           >
                             Marking scheme{item.scheme.b > 0 && <span className="opacity-70 font-medium"> · {prettyBytes(item.scheme.b)}</span>}
                           </button>
-                        ) : (
+                        ) : /\.jpg$/i.test(item.doc.f) ? null : (
                           <span className="flex-1 py-2.5 text-center text-[12px] rounded-full border-2 border-dashed border-zinc-200 dark:border-zinc-700" style={{ color: '#9e9186' }}>
                             Scheme not published
                           </span>

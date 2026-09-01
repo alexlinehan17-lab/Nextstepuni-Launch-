@@ -75,7 +75,7 @@ SCHEME_FILEID = "LC002ALP000EV.pdf"
 LEAD_X = 95              # a 'N.' marker starts left of this (points)
 MAX_REGION_PAGES = 6     # engine parity: longer crop spans degrade to pagejump
 GOLDEN_YEARS = [2010, 2012, 2013, 2014, 2015, 2016]   # committed by wave 8 — compare only
-TARGET_YEARS = [2011] + list(range(2017, 2026))        # this re-probe's scope
+TARGET_YEARS = [2011] + list(range(2017, 2027))        # this re-probe's scope
 QA_MIN_OVERLAP = 0.6     # paper-question tokens that must reappear in the crop
 
 # NOTE: 2023's scheme prints prescribed-poetry Q5 as '5        “A powerful …'
@@ -328,6 +328,12 @@ def main():
     for year in GOLDEN_YEARS:
         committed_path = os.path.join(ANSWERS_DIR, str(year), f"{PAPER_FILEID}.json")
         if not os.path.exists(committed_path):
+            continue
+        # Parity needs the golden year's corpus PDFs; on a machine holding only
+        # the refresh year's corpus (annual refresh), absence is not a drop.
+        if not (os.path.exists(os.path.join(CORPUS, "exampapers", str(year), PAPER_FILEID))
+                and os.path.exists(os.path.join(CORPUS, "markingschemes", str(year), SCHEME_FILEID))):
+            print(f"PARITY SKIP {year}: corpus not on this machine")
             continue
         committed = open(committed_path, encoding="utf-8").read().strip()
         sidecar = run_year(year, write=False)

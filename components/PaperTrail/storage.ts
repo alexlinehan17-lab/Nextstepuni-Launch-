@@ -37,9 +37,20 @@ export const paperAnswersPath = (
   paperFileid: string,
 ) => `papers/${cycle}/${subjectId}/${year}/answers/${paperFileid}.json`;
 
+/** Dev-only override: when VITE_PAPER_TRAIL_LOCAL is set (e.g. in .env.local),
+ *  documents resolve against a local mirror server instead of Firebase Storage,
+ *  so a new year can be previewed on localhost before its upload. The mirror
+ *  serves the same `papers/...` layout and redirects misses to live Storage.
+ *  Unset in production builds, leaving the plain Storage REST endpoint. */
+const LOCAL_BASE = (import.meta as unknown as {
+  env?: { VITE_PAPER_TRAIL_LOCAL?: string };
+}).env?.VITE_PAPER_TRAIL_LOCAL;
+
 /** Public REST URL for a corpus document (range-request capable, CORS-open). */
 export const paperUrl = (path: string) =>
-  `https://firebasestorage.googleapis.com/v0/b/${BUCKET}/o/${encodeURIComponent(path)}?alt=media`;
+  LOCAL_BASE
+    ? `${LOCAL_BASE}/${path}`
+    : `https://firebasestorage.googleapis.com/v0/b/${BUCKET}/o/${encodeURIComponent(path)}?alt=media`;
 
 export const prettyBytes = (b: number) => {
   if (!b) return '';

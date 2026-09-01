@@ -45,7 +45,7 @@ ANSWERS_DIR = os.path.join(HERE, "answers")
 SIDECAR_V = 1
 COPYRIGHT = "© State Examinations Commission"
 FILEID = "JC004CLP000EV.pdf"
-YEARS = range(2022, 2026)
+YEARS = range(2022, 2027)
 MARK_X = 170
 
 PQ_RE = re.compile(r"^Question\s+(\d{1,2})\b")

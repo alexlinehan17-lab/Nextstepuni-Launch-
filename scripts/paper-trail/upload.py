@@ -36,8 +36,16 @@ CURRENT_YEAR = 2026  # most recent published exam year
 
 
 def main():
+    # Annual refresh: `--year 2026` uploads only that year's objects, so the
+    # (gitignored, absent) corpus for other years can't abort the run. The
+    # remote-count verification is scoped the same way.
+    only_year = None
+    if len(sys.argv) == 3 and sys.argv[1] == "--year":
+        only_year = int(sys.argv[2])
     rows = [json.loads(l) for l in open(MANIFEST)]
-    print(f"manifest: {len(rows)} objects")
+    if only_year is not None:
+        rows = [r for r in rows if r["year"] == only_year]
+    print(f"manifest: {len(rows)} objects" + (f" (year {only_year})" if only_year else ""))
 
     missing = [r for r in rows if not os.path.exists(os.path.join(REPO, r["local"]))]
     if missing:
@@ -48,32 +56,41 @@ def main():
 
     if os.path.exists(STAGE):
         shutil.rmtree(STAGE)
-    staged = {"immutable": 0, "current": 0}
+    staged = {"immutable": 0, "current": 0, "immutable-img": 0, "current-img": 0}
     corrupt = []
     for r in rows:
         src = os.path.join(REPO, r["local"])
+        is_img = r["remote"].lower().endswith(".jpg")
         with open(src, "rb") as fh:
             head = fh.read(5)
             fh.seek(-64, os.SEEK_END if os.path.getsize(src) > 64 else os.SEEK_SET)
             tail = fh.read()
-        if head != b"%PDF-" or b"%%EOF" not in tail:
+        # Integrity by format: PDFs carry %PDF-…%%EOF; JPEGs SOI…EOI markers.
+        ok = (head[:2] == b"\xff\xd8" and b"\xff\xd9" in tail) if is_img \
+            else (head == b"%PDF-" and b"%%EOF" in tail)
+        if not ok:
             corrupt.append(r["local"])
             continue
         bucket_kind = "current" if r["year"] >= CURRENT_YEAR else "immutable"
+        if is_img:
+            bucket_kind += "-img"
         dest = os.path.join(STAGE, bucket_kind, r["remote"])
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         os.link(src, dest)
         staged[bucket_kind] += 1
     if corrupt:
-        print(f"ABORT: {len(corrupt)} corrupt/truncated PDFs — re-download before uploading:")
+        print(f"ABORT: {len(corrupt)} corrupt/truncated files — re-download before uploading:")
         for c in corrupt[:10]:
             print("  ", c)
         return 1
-    print(f"staged: {staged['immutable']} immutable, {staged['current']} current-year")
+    print(f"staged: {staged['immutable']} immutable, {staged['current']} current-year, "
+          f"{staged['immutable-img']}+{staged['current-img']} images")
 
-    for bucket_kind, cache in [
-        ("immutable", "public, max-age=31536000, immutable"),
-        ("current", "public, max-age=86400"),
+    for bucket_kind, cache, ctype in [
+        ("immutable", "public, max-age=31536000, immutable", "application/pdf"),
+        ("current", "public, max-age=86400", "application/pdf"),
+        ("immutable-img", "public, max-age=31536000, immutable", "image/jpeg"),
+        ("current-img", "public, max-age=86400", "image/jpeg"),
     ]:
         src = os.path.join(STAGE, bucket_kind, "papers")
         if not os.path.isdir(src):
@@ -81,7 +98,7 @@ def main():
         print(f"uploading {bucket_kind} batch…")
         rc = subprocess.run(
             [GCLOUD, "storage", "cp", "-r", "--cache-control", cache,
-             "--content-type", "application/pdf", src, f"{BUCKET}/"],
+             "--content-type", ctype, src, f"{BUCKET}/"],
             cwd=REPO,
         ).returncode
         if rc != 0:
@@ -92,6 +109,8 @@ def main():
     # Coordinates-only JSON; tiny; may be re-generated, so a 1-day cache. Empty
     # manifest (no QA-passed profiles yet) is a clean no-op.
     answer_rows = [json.loads(l) for l in open(ANSWERS_MANIFEST)] if os.path.exists(ANSWERS_MANIFEST) else []
+    if only_year is not None:
+        answer_rows = [r for r in answer_rows if f"/{only_year}/" in r["remote"]]
     if answer_rows:
         a_missing = [r for r in answer_rows if not os.path.exists(os.path.join(REPO, r["local"]))]
         if a_missing:
@@ -117,8 +136,11 @@ def main():
         [GCLOUD, "storage", "ls", "-r", f"{BUCKET}/papers/**"],
         capture_output=True, text=True,
     )
-    remote = len([l for l in out.stdout.splitlines() if l.endswith(".pdf")])
-    print(f"remote PDFs: {remote} / expected {len(rows)}")
+    listed = [l for l in out.stdout.splitlines() if l.endswith((".pdf", ".jpg"))]
+    if only_year is not None:
+        listed = [l for l in listed if f"/{only_year}/" in l]
+    remote = len(listed)
+    print(f"remote docs: {remote} / expected {len(rows)}")
     if remote < len(rows):
         print("WARNING: counts differ — re-run to fill gaps (cp is resumable).")
         return 2

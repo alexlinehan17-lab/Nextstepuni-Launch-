@@ -80,7 +80,7 @@ FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.pd
 
 # Scope. SCOPE_CODES None = all subjects; a set = only those SEC codes (used to
 # extend already-verified subjects to more years without re-mapping the rest).
-SCOPE_EXAM = "LC"
+SCOPE_EXAMS = {"LC"}
 SCOPE_LEVELS = {"A", "G", "C"}      # higher, ordinary, common
 SCOPE_LANGS = {"EV"}
 SCOPE_YEARS = set(range(2010, 2026))
@@ -129,6 +129,13 @@ DONE_CODES = {
 }
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
+
+# New-spec multi-booklet subjects (Biology 2026: Sections A&B = Q1-15, Section C
+# = Q11-17 continuation) — their booklets may start numbering past 1, and their
+# lead-int papers legitimately reconcile against 'Question N' scheme blocks
+# (the scheme restates each question; there is no competing short-answer key).
+CONTINUATION_CODES = {"LC025", "LC034", "LC022", "LC032", "LC020", "LC029",
+                      "LC021", "LC023", "LC225"}
 
 
 def log(msg):
@@ -197,7 +204,8 @@ def _det_question_word(doc):
             for i, w in enumerate(lw):
                 word = _deligature(w[4])
                 # 'Ceist'/'CEIST' = Irish for 'Question' (Irish-medium IV papers).
-                if word not in ("Question", "QUESTION", "Ceist", "CEIST") or i + 1 >= len(lw):
+                # "Cesit" = the SEC's own transposition typo (2021 LC034 IV scheme)
+                if word not in ("Question", "QUESTION", "Ceist", "CEIST", "Cesit", "CESIT") or i + 1 >= len(lw):
                     continue
                 m = re.fullmatch(r"(\d+)[.:]?", lw[i + 1][4])  # 'Question 1' / '1.' / '1:'
                 if not m:
@@ -208,7 +216,11 @@ def _det_question_word(doc):
                 # numbered SUMMARY table sits earlier; spread-max then prefers the
                 # real, page-spread solutions over the clustered summary.
                 standalone = len(lw) <= 3
-                if w[0] < LEFT_MARGIN_X or (word in ("QUESTION", "CEIST") and standalone):
+                # table-scheme variant: "Question N Possible Responses Marks"
+                # headers (2026 Economics Section B), any x
+                table_hdr = (i + 2 < len(lw)
+                             and lw[i + 2][4] in ("Possible", "Freagraí"))
+                if w[0] < LEFT_MARGIN_X or table_hdr or (word in ("QUESTION", "CEIST", "Question", "Ceist", "Cesit", "CESIT") and standalone):
                     hits.append((int(m.group(1)), pi, w[0], w[1] / H))
     return hits
 
@@ -219,11 +231,25 @@ def _det_lead_int(doc):
         if page.rotation:
             continue
         H = page.rect.height
-        for lw in line_groups(page):
+        groups = line_groups(page)
+        blocks_with = Counter(lw[0][5] for lw in groups if lw)
+        for lw in groups:
             if not lw:
                 continue
             w = lw[0]
             m = re.fullmatch(r"(\d{1,2})\.", w[4])
+            # Dotless variant: the SEC sometimes drops the dot on a lone
+            # question marker (2022 Physics OL IV prints a bare '4' on its own
+            # line beside the text block). Accepted only when the line is a
+            # margin-left number whose BLOCK carries more lines (page numbers
+            # sit in single-line blocks or outside LEAD_INT_X) and it is not
+            # in the footer zone.
+            if m is None:
+                bare = re.fullmatch(r"(\d{1,2})", w[4])
+                if bare and (len(lw) >= 3
+                             or (len(lw) == 1 and blocks_with[w[5]] > 1)) \
+                        and w[1] / H < 0.9:
+                    m = bare
             if m and w[0] < LEAD_INT_X:
                 hits.append((int(m.group(1)), pi, w[0], w[1] / H))
     return hits
@@ -244,10 +270,79 @@ def _det_q_token(doc):
     return hits
 
 
-DETECTORS = [("question", _det_question_word), ("lead_int", _det_lead_int), ("qtoken", _det_q_token)]
+def _det_c_token(doc):
+    """Irish-medium schemes abbreviate 'Ceist N' to a left-margin 'C1'/'C2'
+    marker (e.g. Ag Science IV: 'C1 (6 chuid ar bith) 6 × 10 marc'). Same shape
+    as the Q-token detector. False C-hits (part labels, chemistry formulae)
+    don't form clean monotonic 1..N runs and lose at sequence/count-reconcile."""
+    hits = []
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        for lw in line_groups(page):
+            for w in lw:
+                m = re.fullmatch(r"C\.?(\d{1,2})", w[4])
+                if m and w[0] < LEFT_MARGIN_X:
+                    hits.append((int(m.group(1)), pi, w[0], w[1] / H))
+                    break
+    return hits
 
 
-def best_sequence(hits):
+def _det_topic_word(doc):
+    """'Topic N.' headers (old-spec Classical Studies papers and schemes mirror
+    each other topic-for-topic; 'Topaic' on the Irish side)."""
+    hits = []
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        for lw in line_groups(page):
+            for i, w in enumerate(lw):
+                if w[4] not in ("Topic", "TOPIC", "Topaic", "TOPAIC") or i + 1 >= len(lw):
+                    continue
+                m = re.fullmatch(r"(\d{1,2})[.:]?", lw[i + 1][4])
+                if m and w[0] < 200:
+                    hits.append((int(m.group(1)), pi, w[0], w[1] / H))
+    return hits
+
+
+def _det_q_column(doc):
+    """Schemes laid out as a marks TABLE with a 'Q' column: the question number
+    is a lone digit in that left column (2026 Economics, the Music listening
+    tables). Detected per page: a 'Q' header word left of x=80, then digit
+    words in the same column."""
+    hits = []
+    has_qcol = any(
+        any(w[4] == "Q" and w[0] < 80 and w[1] < pg.rect.height * 0.25
+            for w in pg.get_text("words")[:40])
+        for pg in doc)
+    if not has_qcol:
+        return hits
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        words = sorted(page.get_text("words"), key=lambda w: (w[1], w[0]))
+        for i, w in enumerate(words):
+            if not (re.fullmatch(r"\d{1,2}", w[4]) and w[0] < 80):
+                continue
+            n = int(w[4])
+            nxt = next((v for v in words[i + 1:] if abs(v[1] - w[1]) < 14), None)
+            # exclude "N | Page" page numbers; the run-selection in _marker_map
+            # prunes annotation-table clusters (they fail the page-spread
+            # preference) and the reconcile gates do the rest
+            if n > 20 or (nxt is not None and nxt[4] == "|"):
+                continue
+            hits.append((n, pi, w[0], w[1] / H))
+    return hits
+
+
+DETECTORS = [("question", _det_question_word), ("lead_int", _det_lead_int), ("qtoken", _det_q_token),
+             ("ctoken", _det_c_token), ("topic", _det_topic_word), ("qcol", _det_q_column)]
+
+
+def best_sequence(hits, allow_k_start=False):
     """Clean a detector's hits to the longest contiguous 1..N at a consistent
     left-margin x (deduped per number). Returns sorted [(n,page0,x0,yFrac)] or None."""
     if not hits:
@@ -262,18 +357,23 @@ def best_sequence(hits):
             if n not in first:
                 first[n] = (n, pi, x, y)
         ns = sorted(first)
-        if ns == list(range(1, len(ns) + 1)) and len(ns) >= MIN_QUESTIONS:
+        ok_run = ns == list(range(1, len(ns) + 1))
+        if not ok_run and allow_k_start and ns and len(ns) >= 3:
+            # continuation booklets (Biology Section C numbers 11..17): accept a
+            # contiguous run starting past 1
+            ok_run = ns == list(range(ns[0], ns[0] + len(ns)))
+        if ok_run and len(ns) >= MIN_QUESTIONS:
             seq = [first[n] for n in ns]
             if best is None or len(seq) > len(best):
                 best = seq
     return best
 
 
-def detect_paper_headers(doc):
+def detect_paper_headers(doc, allow_k_start=False):
     """Best (detector_name, [(n,page0,x0,yFrac)]) across detectors, or None."""
     best = None
     for name, fn in DETECTORS:
-        seq = best_sequence(fn(doc))
+        seq = best_sequence(fn(doc), allow_k_start)
         if seq and (best is None or len(seq) > len(best[1])):
             best = (name, seq)
     return best
@@ -308,10 +408,33 @@ def _marker_map(hits, band_start, band_end):
             key = (len({p for p, _ in m.values()}), len(m))
             if key > best_key:
                 best, best_key = m, key
+    # Neighbour-consistent fill: some schemes indent a lone question's marker
+    # off the modal column (2018 Physics IV prints Q5 at x57 amid an x28 run),
+    # so the x-cluster filter discards a real marker. Re-admit an off-column
+    # hit ONLY where it slots strictly between its numeric neighbours' page/y
+    # positions — a front-matter or summary duplicate cannot satisfy that.
+    if best:
+        for n, pi, x, y in sorted(inb, key=lambda h: (h[1], h[3])):
+            if n in best:
+                continue
+            lower = max((m for m in best if m < n), default=None)
+            upper = min((m for m in best if m > n), default=None)
+            if lower is None or upper is None:
+                # tail/head extension: a run continuing past the modal-column
+                # run (Technology IV prints Q12-15 at a second indent) — accept
+                # only strictly beyond the run's edge, keeping monotonic order
+                if lower is not None and (pi, y) > best[lower]:
+                    best[n] = (pi, y)
+                elif upper is not None and (pi, y) < best[upper]:
+                    best[n] = (pi, y)
+                continue
+            if best[lower] < (pi, y) < best[upper]:
+                best[n] = (pi, y)
     return best
 
 
-def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None):
+def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None,
+                          divider_band=False):
     """The detector whose in-band number-set best covers the paper's questions.
 
     Grammar guard: a 'Question N' scheme marker always heads a major structured
@@ -319,29 +442,93 @@ def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None):
     reconcile against those — its answers live in a compact short-answer key, not
     the essay solutions. So when the paper is not 'question'-headed we exclude the
     'question' scheme detector (else e.g. a Geography Part One short-answer book
-    would map onto the Part Two essay scheme and ship a confidently-wrong chip)."""
+    would map onto the Part Two essay scheme and ship a confidently-wrong chip).
+
+    Divider-band exception: inside a P1/P2 divider band (shared Maths-style
+    scheme) both siblings are full papers with structured per-question solutions
+    inside their OWN bands — there is no competing short-answer key for the
+    guard to protect. 2012-era Maths numbers the paper '1.' but heads scheme
+    solutions 'CEIST 1'; the guard blocked that legitimate pairing."""
     best, best_score = {}, -1
+    maps = {}
     for name, fn in DETECTORS:
-        if paper_det is not None and paper_det != "question" and name == "question":
+        if (paper_det is not None and paper_det != "question" and name == "question"
+                and not divider_band):
             continue
         m = _marker_map(fn(doc), band_start, band_end)
+        maps[name] = m
         score = len(set(m) & want_ns)
         if score > best_score:
             best, best_score = m, score
+    if best_score < len(want_ns):
+        # hybrid schemes split marker styles by section (2026 Economics:
+        # Section A is a Q-column table, Section B uses 'Question N' headers).
+        # Union two detectors when the merged positions stay monotonic in n.
+        for na, ma in maps.items():
+            for nb, mb in maps.items():
+                if na == nb:
+                    continue
+                merged = dict(ma)
+                for k, v in mb.items():
+                    merged.setdefault(k, v)
+                got = sorted(set(merged) & want_ns)
+                if len(got) <= best_score:
+                    continue
+                pts = [merged[n] for n in got]
+                if all(b > a for a, b in zip(pts, pts[1:])):
+                    best, best_score = merged, len(got)
     return best
 
 
-def find_band(scheme, divider_title):
-    """0-based page index of the FIRST top-of-page occurrence of the band divider
-    title (e.g. 'Paper 1'). Returns None if not found."""
+def find_band_pages(scheme, divider_title):
+    """All 0-based page indices with a top-of-page occurrence of the divider
+    title (e.g. 'Paper 1' / 'Páipéar 1'), in order."""
+    out = []
     for pi, page in enumerate(scheme):
         if page.rotation:
             continue
         H = page.rect.height
         for r in page.search_for(divider_title):
             if r.y0 < H * DIVIDER_TOP_FRAC:
-                return pi
-    return None
+                out.append(pi)
+                break
+    return out
+
+
+def find_paper_band(scheme, k):
+    """[start, end) 0-based page band for 'Paper k' in a shared P1+P2 scheme,
+    or None. Contents-aware: a cover/contents page names BOTH papers at the top
+    (the Maths schemes do, EN and GA alike), so single-occurrence logic banded
+    Paper 2 at the contents page and its chips fell through to Paper 1's
+    questions — a cross-paper mis-map that count-reconcile cannot see. The
+    robust reading: discard pages naming both papers, then the Paper-2 divider
+    is the first of its pages past EVERY Paper-1 page (running per-page
+    headers make 'last occurrence' equally wrong in the other direction)."""
+    def occ(n):
+        pages = set()
+        for t in (f"Paper {n}", f"Páipéar {n}", f"PÁIPÉAR {n}"):
+            pages |= set(find_band_pages(scheme, t))
+        return pages
+    p1, p2 = occ(1), occ(2)
+    shared = p1 & p2
+    p1, p2 = sorted(p1 - shared), sorted(p2 - shared)
+    if not p2:
+        # No Paper-2 divider at all: Paper 1 runs to the end (or the scheme is
+        # genuinely single-paper); Paper 2 cannot be banded.
+        return (min(p1), len(scheme)) if k == 1 and p1 else None
+    # The boundary is the first Paper-2 page with the FEWEST Paper-1 pages
+    # after it — ideally zero, but the SEC's own 2016-era schemes repeat the
+    # "Marking Scheme – Paper 1 …" boilerplate header inside the Paper-2 half,
+    # so a single stray must not sink the whole band.
+    def strays(b):
+        return sum(1 for p in p1 if p >= b)
+    best = min(strays(b) for b in p2)
+    boundary = next(b for b in p2 if strays(b) == best)
+    if p1 and boundary <= min(p1):
+        return None  # every Paper-2 mention precedes Paper 1 — not a real split
+    if k == 1:
+        return (p1[0], boundary) if p1 else None
+    return (boundary, len(scheme))
 
 
 # SEC marking-scheme front-matter boilerplate. Schemes that prefix a numbered
@@ -362,6 +549,17 @@ FRONT_MATTER_PHRASES = (
     "candidates must attempt",
     "candidates should answer",
     "write your examination number",
+    # Irish-medium (IV) scheme boilerplate — the same general-guideline pages,
+    # numbered 1..N, that decoy the detectors when not skipped (2012-era Maths
+    # IV anchored every chip on the penalties list before these were added).
+    "treoirlínte ginearálta do scrúdaitheoirí",
+    "na treoirlínte a chur i bhfeidhm",
+    "cuirtear trí chineál pionóis",
+    "nótaí ginearálta maidir leis an marcáil",
+    "marcanna breise as ucht freagairt trí ghaeilge",
+    "scéim mharcála a úsáid",
+    "ní foláir d'iarrthóirí",
+    "ba chóir na pointí seo a leanas",
     "write all answers",
     "general directions",
 )
@@ -374,7 +572,10 @@ def front_matter_end(scheme, band_start, band_end):
     last_fm = -1
     for pi in range(band_start, min(band_start + 8, band_end)):
         t = scheme[pi].get_text("text").lower()
-        if any(p in t for p in FRONT_MATTER_PHRASES):
+        # Some IV schemes extract with every space glued away ("bachóirnapointí…"),
+        # so match phrases with spaces stripped from BOTH sides.
+        t_glued = t.replace(" ", "")
+        if any(p in t or p.replace(" ", "") in t_glued for p in FRONT_MATTER_PHRASES):
             last_fm = pi
     return last_fm + 1 if last_fm >= band_start else band_start
 
@@ -443,7 +644,14 @@ def fallback_chips(headers, yband, scheme, band_start, band_end,
     question, page-jumping PROPORTIONALLY into the scheme's answer region. Never a
     crop and never an exact-answer claim (conf 0.3) — the viewer frames it as "opens
     the scheme near Q N". Used only where the precise path drops but the paper has
-    real per-question headers + a scheme."""
+    real per-question headers + a scheme.
+
+    DO NOT SHIP THIS OUTPUT (2026-08 audit). Proportional placement mis-navigates
+    wherever per-question page counts vary or the scheme's structure differs from
+    the paper's numbering — which is exactly where the precise path drops. All 64
+    fallback sidecars produced for 2026 were render-audited and deleted; see
+    README.md §Annual refresh item 6. build-index.py flags fallback sidecars
+    UNGATED, so anything left in answers/ goes live."""
     if not UNIVERSAL_FALLBACK:
         return None
     # SEC schemes always open with a cover + a "Note to teachers" page before any
@@ -483,7 +691,9 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
     paper = fitz.open(paper_path)
     scheme = fitz.open(scheme_path)
 
-    ph = detect_paper_headers(paper)
+    _code = (decode_fileid(os.path.basename(paper_path)) or {}).get("code")
+    _continuation = _code in CONTINUATION_CODES
+    ph = detect_paper_headers(paper, allow_k_start=_continuation)
     if not ph:
         stats["reason"] = "no clean paper question sequence"
         return None, stats
@@ -526,19 +736,21 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
     if fallback_only:
         return drop("fallback-only pass")
 
-    # Band for this paper within (possibly shared) scheme.
+    # Band for this paper within (possibly shared) scheme (EN + GA titles,
+    # contents-page aware — see find_paper_band).
     if band_strategy[0] == "divider":
         k = band_strategy[1]
-        band_start = find_band(scheme, f"Paper {k}")
-        if band_start is None:
+        band = find_paper_band(scheme, k)
+        if band is None:
             return drop(f"band 'Paper {k}' not found")
-        nxt = find_band(scheme, f"Paper {k + 1}")
-        band_end = nxt if (nxt is not None and nxt > band_start) else len(scheme)
+        band_start, band_end = band
     else:
         band_start, band_end = 0, len(scheme)
 
     fm_start = front_matter_end(scheme, band_start, band_end)
-    markers = detect_scheme_markers(scheme, fm_start, band_end, want_ns, detector)
+    markers = detect_scheme_markers(scheme, fm_start, band_end, want_ns, detector,
+                                    divider_band=(band_strategy[0] == "divider"
+                                                  or _continuation))
     matched = sum(1 for n in want_ns if n in markers)
     stats["conf"] = round(matched / N, 3)
     # Strict gate: every paper question must have a scheme marker.
@@ -627,8 +839,14 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
                     break
 
         if ok:
-            qout.append({"n": str(n), "pP": p_pi + 1, "pY": p_yband,
-                         "region": region, "mode": "crop", "conf": 1.0})
+            q_out = {"n": str(n), "pP": p_pi + 1, "pY": p_yband,
+                     "region": region, "mode": "crop", "conf": 1.0}
+            if detector == "topic":
+                # topic-organised papers (old-spec Classical Studies): the chip
+                # heads 'Topic N', so name it that way in the reveal panel
+                q_out["label"] = ("Topaic" if "IV.pdf" in os.path.basename(paper_path)
+                                  else "Topic") + f" {n}"
+            qout.append(q_out)
             stats["crop"] += 1
         else:
             qout.append({"n": str(n), "pP": p_pi + 1, "pY": p_yband,
@@ -637,6 +855,15 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
 
     if not qout:
         stats["reason"] = "no questions mapped"
+        return None, stats
+
+    # Chip order must follow the paper's print order (the viewer derives crop
+    # bands from consecutive anchors). A non-monotonic n sequence means the
+    # paper-side headers captured a section restart — drop, never ship (PE 2023
+    # wrote 9..13,1..8 before this gate; vitest caught it post-hoc).
+    ns = [int(q["n"]) for q in qout]
+    if any(b <= a for a, b in zip(ns, ns[1:])):
+        stats["reason"] = "paper chip order not monotonic (section restart)"
         return None, stats
 
     sidecar = {
@@ -653,6 +880,44 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
 
 # ─── pairing + band strategy ─────────────────────────────────────────────────
 
+# Content-verified NO-GO list: (code, component, levelCode-or-None, lang-or-None,
+# year-or-None). These pairs produce maps that pass every structural gate but are
+# WRONG at the content level (render-verified) — the engine must never emit them,
+# or each sweep resurrects a deleted defect. None = wildcard.
+NEVER_MAP = (
+    # Art practical components (Design/Craftwork/Coursework): the shared scheme's
+    # criteria grids decoy-anchor 'Q.N' from the wrong component (2016 Design Q6
+    # opened the H&A 'Berry Dress' rows). All levels, both languages.
+    ("LC014", "010", None, None, None),
+    ("LC014", "011", None, None, None),
+    ("LC014", "027", None, None, None),
+    # Accounting HL IV: the scheme numbers its working LINES (Q9 chip opened
+    # arithmetic item 9 of another solution). EV heads real 'Question N' blocks.
+    ("LC032", "000", "A", "IV", None),
+    # Geography OL IV 2025 Part Two: anchors the Part One short-answer key.
+    ("LC005", "043", "G", "IV", None),
+    # History OL: the scheme's numbered RSR criteria list ("3. Criticism
+    # (20 marks)") reconciles against the paper's document questions — the
+    # documented mainstream-History-OL blocker, confirmed again by render.
+    ("LC004", "000", "G", None, None),
+    # Biology Sections A&B (038) EV transition years: the chip crops the
+    # Q-marks grid, not the answers. The IV twins map correctly.
+    ("LC025", "038", "A", "EV", 2020),
+    ("LC025", "038", "A", "EV", 2022),
+    ("LC025", "038", "A", "EV", 2023),
+)
+
+
+def never_map(d, year):
+    for code, comp, lvl, lang, yr in NEVER_MAP:
+        if (d["code"] == code and d["component"] == comp
+                and lvl in (None, d["levelCode"])
+                and lang in (None, d["lang"].upper())
+                and yr in (None, year)):
+            return True
+    return False
+
+
 def build_pairs(rows, include_done=False, langs=None, levels=None):
     """[(paperRow, schemeRow, band_strategy, levelCode)] for in-scope papers.
     band_strategy = ('whole', component) or ('divider', k, component).
@@ -665,14 +930,16 @@ def build_pairs(rows, include_done=False, langs=None, levels=None):
     schemes = defaultdict(list)
     for r in rows:
         d = decode_fileid(r["fileid"])
-        if not d or d["exam"] != SCOPE_EXAM:
+        if not d or d["exam"] not in SCOPE_EXAMS:
             continue
         if d["code"] in DONE_CODES and not include_done:
             continue  # frozen — lit in an earlier wave, never re-mapped
-        if SCOPE_CODES is not None and not include_done and d["code"] not in SCOPE_CODES:
-            continue
+        if SCOPE_CODES is not None and d["code"] not in SCOPE_CODES:
+            continue  # --codes filters unconditionally (targeted re-runs)
         if d["levelCode"] not in SCOPE_LEVELS or d["lang"] not in langs:
             continue
+        if r["view"] == "exampapers" and never_map(d, int(r["year"])):
+            continue  # content-verified wrong (NEVER_MAP) — never emit
         if int(r["year"]) not in SCOPE_YEARS or d["component"] in SKIP_COMPONENTS:
             continue
         key = (d["code"], int(r["year"]), d["levelCode"], d["lang"])
@@ -719,7 +986,56 @@ def build_pairs(rows, include_done=False, langs=None, levels=None):
 
 
 def main():
+    # Annual-refresh knobs (README "Annual refresh"): --years 2026 scopes the
+    # run to the new year; --include-done also ATTEMPTS the frozen DONE_CODES
+    # subjects for those years (their committed sidecars for other years are
+    # protected by the SCOPE_YEARS guard on the clearing loop above). Codes
+    # owned by the bespoke generators are still excluded via --skip-codes.
+    global SCOPE_YEARS, DONE_CODES, SCOPE_CODES
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--years", help="comma-separated years to (re)map, e.g. 2026")
+    ap.add_argument("--include-done", action="store_true",
+                    help="attempt frozen DONE_CODES subjects too (new-year refresh)")
+    ap.add_argument("--codes", default="",
+                    help="comma-separated SEC codes to attempt EXCLUSIVELY "
+                         "(e.g. LC024) — targeted re-runs after an engine fix")
+    ap.add_argument("--skip-codes", default="",
+                    help="comma-separated SEC codes to leave alone (bespoke-owned)")
+    ap.add_argument("--langs", default="",
+                    help="comma-separated language codes to attempt (default EV; "
+                         "the IV-audit profiles need EV,IV)")
+    ap.add_argument("--levels", default="",
+                    help="comma-separated level codes to attempt (default A,G,C; "
+                         "Foundation maths needs A,G,C,B)")
+    ap.add_argument("--exams", default="",
+                    help="comma-separated exam prefixes to attempt "
+                         "(default LC; the JC/LCA profiles need LC,JC,LB)")
+    ap.add_argument("--fallback", action="store_true",
+                    help="also run the universal navigation-fallback pass "
+                         "(conf-0.3 page-jump chips for papers the precise "
+                         "engine drops; ships ungated by design)")
+    args = ap.parse_args()
+    global SCOPE_LANGS, SCOPE_LEVELS, UNIVERSAL_FALLBACK, SCOPE_EXAMS, SCOPE_CODES
+    if args.years:
+        SCOPE_YEARS = {int(y) for y in args.years.split(",")}
+    if args.codes:
+        SCOPE_CODES = {c.strip().upper() for c in args.codes.split(",") if c.strip()}
+    if args.langs:
+        SCOPE_LANGS = {x.strip().upper() for x in args.langs.split(",") if x.strip()}
+    if args.levels:
+        SCOPE_LEVELS = {x.strip().upper() for x in args.levels.split(",") if x.strip()}
+    if args.exams:
+        SCOPE_EXAMS = {x.strip().upper() for x in args.exams.split(",") if x.strip()}
+    if args.fallback:
+        UNIVERSAL_FALLBACK = True
+    skip = {c.strip().upper() for c in args.skip_codes.split(",") if c.strip()}
+    if args.include_done:
+        DONE_CODES = set(skip)
+    elif skip:
+        DONE_CODES = DONE_CODES | skip
     log("Paper Trail — Stage 2.5: anchor maps (auto-grammar)")
+    log(f"  scope: years {sorted(SCOPE_YEARS)} | frozen codes: {len(DONE_CODES)}")
     if not os.path.exists(MANIFEST):
         log(f"FATAL: {MANIFEST} missing — run enumerate.py first")
         return 1
@@ -739,16 +1055,50 @@ def main():
     pairs = build_pairs(rows)
     log(f"  in-scope papers: {len(pairs)}")
 
-    # Clear only the sidecars this run will regenerate (in-scope, not frozen) so
-    # earlier waves' committed sidecars survive — each wave is additive.
+    # Clear only the sidecars this run will regenerate (in-scope, not frozen,
+    # AND within SCOPE_YEARS) so earlier waves' committed sidecars survive —
+    # each wave is additive. The year guard matters on an annual refresh: a run
+    # scoped to the new year can only regenerate that year's files, so it must
+    # only clear that year's files — without it, extending a frozen subject to
+    # the new year (DONE_CODES emptied, SCOPE_YEARS={new}) would delete every
+    # committed sidecar of every attempted code whose corpus PDF is not on the
+    # machine, silently de-flagging shipped papers.
     def in_scope_code(code):
-        return code not in DONE_CODES and (SCOPE_CODES is None or code in SCOPE_CODES)
+        return (code[:2].upper() in SCOPE_EXAMS
+                and code not in DONE_CODES
+                and (SCOPE_CODES is None or code in SCOPE_CODES))
+
+    # Lang/level guard: a run scoped to --langs IV must clear ONLY the IV
+    # sidecars of an in-scope code — the code prefix alone is lang-blind, and
+    # clearing by code would delete committed EV sidecars this run cannot
+    # regenerate (the bespoke-authored ones most of all). Same for levels.
+    _sidecar_re = re.compile(r"^(LC|JC|LB)\d{3}([A-Z])L?P[A-Z0-9]{3}(EV|IV|BV)\.pdf\.json$", re.I)
+
+    # Committed sidecars the generic engine cannot regenerate (special-cased
+    # years authored via FILEID_FIXES or hand-verified one-offs). Clearing one
+    # of these silently unships it on every sweep — preserve by exact name.
+    CLEARING_PRESERVE = {
+        (2011, "LC014ALP013IV.pdf.json"),  # Art H&A IV 2011 (FILEID_FIXES year)
+        (2011, "LC003ALP100IV.pdf.json"),  # Maths HL P1 IV 2011 (FILEID_FIXES year)
+    }
+
+    def in_scope_sidecar(fn, year):
+        if (year, fn) in CLEARING_PRESERVE:
+            return False
+        m = _sidecar_re.match(fn)
+        if not m:
+            return False  # unrecognised name — never delete what we can't parse
+        return (in_scope_code(fn[:5])
+                and m.group(2).upper() in SCOPE_LEVELS
+                and m.group(3).upper() in SCOPE_LANGS)
     if os.path.isdir(ANSWERS_DIR):
         for yd in os.listdir(ANSWERS_DIR):
             ydp = os.path.join(ANSWERS_DIR, yd)
+            if not (yd.isdigit() and int(yd) in SCOPE_YEARS):
+                continue
             if os.path.isdir(ydp):
                 for fn in os.listdir(ydp):
-                    if in_scope_code(fn[:5]):
+                    if in_scope_sidecar(fn, int(yd)):
                         os.remove(os.path.join(ydp, fn))
 
     manifest_lines, report_rows = [], []
@@ -835,7 +1185,7 @@ def main():
 
     # report
     rep = ["# Paper Trail — Stage 2.5 anchor-map report (auto-grammar)", ""]
-    rep.append(f"Scope: {SCOPE_EXAM} levels {sorted(SCOPE_LEVELS)} langs {sorted(SCOPE_LANGS)} "
+    rep.append(f"Scope: {'/'.join(sorted(SCOPE_EXAMS))} levels {sorted(SCOPE_LEVELS)} langs {sorted(SCOPE_LANGS)} "
                f"years {min(SCOPE_YEARS)}–{max(SCOPE_YEARS)}.")
     rep.append(f"\n**{fully} full · {degraded} partial · {dropped} dropped** "
                f"({fully + degraded}/{fully + degraded + dropped} papers mapped)\n")

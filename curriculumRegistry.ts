@@ -132,6 +132,7 @@ const OFFICIAL = {
   physicalEducation2028Specification: 'https://www.curriculumonline.ie/getmedia/e3c33f7c-a88b-4050-bed3-c892ec995ba2/SC-PE-Spec-ENG-INT.pdf',
   lifeCommunityWorkSpecification: 'https://www.curriculumonline.ie/getmedia/f6802fdb-582a-4380-905f-ee47b4edbaf2/SC-LCW-Spec-ENG-INT.pdf',
   computerScience: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/computer-science/',
+  engineeringSyllabus: 'https://www.curriculumonline.ie/getmedia/a2934262-1866-46d6-a156-bbfb629f6306/SCSEC13_Engineering_syllabus_Eng.pdf',
   computerScienceAssessment: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/computer-science/assessment/',
   economics: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/economics/',
   economicsSpecification: 'https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf',
@@ -395,6 +396,89 @@ const CONSTRUCTION_STUDIES_GROUPS = [
  * terser than the usual name for the area -- it writes "Complex", not "Complex
  * numbers".
  */
+/* The Engineering syllabus's own headings. Section 1 is Workshop Processes,
+ * examined practically; section 2, "Materials and Technology", is what the
+ * written paper covers. Its fourteen headings are the topics here, with the
+ * mechanisms heading from section 1's TECHNOLOGY ("prime movers, power
+ * transmission systems, brakes and other mechanisms") added because the
+ * written paper asks about those every year. The syllabus PDF is a SCAN with
+ * no text layer, so the headings were read by rendering its pages. */
+const ENGINEERING_GROUPS = [
+  {
+    id: 'eng1',
+    code: '1',
+    title: 'Materials',
+    topics: [
+      { id: 'eng-1-2', code: 'M', title: 'Classification and origin of metals' },
+      { id: 'eng-1-3', code: 'M', title: 'Structure of metals' },
+      { id: 'eng-1-4', code: 'M', title: 'Iron and steel' },
+      { id: 'eng-1-5', code: 'M', title: 'Non-ferrous metals' },
+      { id: 'eng-1-9', code: 'M', title: 'Plastics' },
+    ],
+  },
+  {
+    id: 'eng2',
+    code: '2',
+    title: 'Processes',
+    topics: [
+      { id: 'eng-2-6', code: 'P', title: 'Heat treatment of metals' },
+      { id: 'eng-2-10', code: 'P', title: 'Joining of materials' },
+      { id: 'eng-2-11', code: 'P', title: 'Machining' },
+      { id: 'eng-2-13', code: 'P', title: 'Manufacturing processes' },
+      { id: 'eng-2-15', code: 'P', title: 'Mechanisms and power transmission' },
+      { id: 'eng-2-16', code: 'P', title: 'Control technology and electronics' },
+    ],
+  },
+  {
+    id: 'eng3',
+    code: '3',
+    title: 'Properties and practice',
+    topics: [
+      { id: 'eng-3-1', code: 'T', title: 'Health and safety' },
+      { id: 'eng-3-7', code: 'T', title: 'Corrosion of metals' },
+      { id: 'eng-3-8', code: 'T', title: 'Materials testing' },
+      { id: 'eng-3-12', code: 'T', title: 'Metrology' },
+      { id: 'eng-3-14', code: 'T', title: 'Technology and design' },
+    ],
+  },
+];
+
+const COMPUTER_SCIENCE_GROUPS = [
+  {
+    id: 'cs1',
+    code: '1',
+    title: 'Practices and principles',
+    topics: [
+      { id: 'cs-1-1', code: 'S1', title: 'Computational thinking' },
+      { id: 'cs-1-2', code: 'S1', title: 'Computers and society' },
+      { id: 'cs-1-3', code: 'S1', title: 'Designing and developing' },
+    ],
+  },
+  {
+    id: 'cs2',
+    code: '2',
+    title: 'Core concepts',
+    topics: [
+      { id: 'cs-2-1', code: 'S2', title: 'Abstraction' },
+      { id: 'cs-2-2', code: 'S2', title: 'Algorithms' },
+      { id: 'cs-2-3', code: 'S2', title: 'Computer systems' },
+      { id: 'cs-2-4', code: 'S2', title: 'Data' },
+      { id: 'cs-2-5', code: 'S2', title: 'Evaluation and testing' },
+    ],
+  },
+  {
+    id: 'cs3',
+    code: '3',
+    title: 'Computer science in practice',
+    topics: [
+      { id: 'cs-3-1', code: 'ALT1', title: 'Interactive information systems' },
+      { id: 'cs-3-2', code: 'ALT2', title: 'Analytics' },
+      { id: 'cs-3-3', code: 'ALT3', title: 'Modelling and simulation' },
+      { id: 'cs-3-4', code: 'ALT4', title: 'Embedded systems' },
+    ],
+  },
+];
+
 const MATHS_GROUPS = [
   {
     id: 'ms1',
@@ -1412,12 +1496,56 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       ],
     };
   }
+  if (spec.subjectId === 'engineering') {
+    return {
+      ...spec,
+      id: 'engineering:materials-and-technology',
+      title: 'Leaving Certificate Engineering — Materials and Technology',
+      status: 'verified',
+      groups: ENGINEERING_GROUPS,
+      sources: [
+        { authority: 'Curriculum Online', title: 'Engineering', url: OFFICIAL.engineering, role: 'content' },
+        { authority: 'Curriculum Online', title: 'Engineering syllabus', url: OFFICIAL.engineeringSyllabus, role: 'content' },
+      ],
+      /* 600 marks in total: the written paper 300, the practical examination
+       * 150 and the project 150. The Mark Bank cards the WRITTEN paper only —
+       * the other two are made in a workshop and have no marking scheme text
+       * to lift. */
+      assessmentComponents: [
+        {
+          id: 'engineering-written-examination',
+          title: 'Written examination',
+          kind: 'written-examination',
+          weighting: 50,
+          levels: ['higher', 'ordinary'],
+          required: true,
+        },
+        {
+          id: 'engineering-practical-examination',
+          title: 'Practical examination',
+          kind: 'practical-examination',
+          weighting: 25,
+          levels: ['higher', 'ordinary'],
+          required: true,
+        },
+        {
+          id: 'engineering-project',
+          title: 'Project',
+          kind: 'project',
+          weighting: 25,
+          levels: ['higher', 'ordinary'],
+          required: true,
+        },
+      ],
+    };
+  }
   if (spec.subjectId === 'computer-science') {
     return {
       ...spec,
       id: 'computer-science:2025',
       title: 'Leaving Certificate Computer Science — updated specification for examination in 2025 and beyond',
       status: 'verified',
+      groups: COMPUTER_SCIENCE_GROUPS,
       sources: [
         { authority: 'Curriculum Online', title: 'Computer Science', url: OFFICIAL.computerScience, role: 'content' },
         { authority: 'NCCA', title: 'Computer Science assessment', url: OFFICIAL.computerScienceAssessment, role: 'assessment' },
