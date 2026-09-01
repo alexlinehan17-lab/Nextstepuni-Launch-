@@ -608,7 +608,11 @@ def main():
         # against the PREVIOUS baseline refuses, so the ratchet cannot be
         # reset by the same command that maintains it.
         prior = baseline_check(results)
-        real = [b for b in prior if 'no baseline' not in b]
+        # A subject not yet IN the baseline is a first recording, not a
+        # regression — same standing as a missing baseline file. Only drops
+        # against a previously recorded entry may refuse the write.
+        real = [b for b in prior
+                if 'no baseline' not in b and 'not in baseline' not in b]
         if real and not args.accept_regression:
             for b in real:
                 print(f'REFUSED: {b}')

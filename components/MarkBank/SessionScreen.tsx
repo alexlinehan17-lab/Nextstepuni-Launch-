@@ -181,6 +181,9 @@ function claimedMarks(g: NonNullable<MarkRow['group']>, n: number): number {
 export function claimableTotal(card: SecCard): number {
   if (isRubricCard(card)) return card.totalMarks;
   if (card.tariffModel.kind === 'orderedSplit') return card.totalMarks;
+  // The scheme prices the question, not its parts, so the rows carry no marks
+  // of their own — the question's own total is the only number that exists.
+  if (card.tariffModel.kind === 'questionTotal') return card.totalMarks;
   if (card.tariffModel.kind === 'bestNofParts') {
     return card.tariffModel.answer * card.tariffModel.perPart;
   }
@@ -2939,6 +2942,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           Answer any {assessmentCard.tariffModel.answer} of these {assessmentCard.tariffModel.ofParts} —
                           {' '}{assessmentCard.tariffModel.perPart} marks each.
+                        </p>
+                      )}
+                      {assessmentCard.tariffModel.kind === 'questionTotal' && (
+                        <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
+                          The scheme prices this question as a whole — {assessmentCard.totalMarks} marks —
+                          without saying what each part is worth.
                         </p>
                       )}
                     </>

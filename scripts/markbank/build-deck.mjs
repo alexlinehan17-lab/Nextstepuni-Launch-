@@ -35,6 +35,29 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 /** Per-subject facts the generated module needs. Adding a subject means adding
  *  a row here, and nothing else in this script changes. */
 const SUBJECTS = {
+  engineering: {
+    title: 'Engineering',
+    /* The syllabus's section 2, "Materials and Technology", is what the
+     * written examination covers -- 300 marks at Higher, 200 at Ordinary.
+     * Its fourteen headings are the topics, plus the mechanisms heading from
+     * section 1. See ENGINEERING_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-engineering-materials-and-technology',
+    specNote: 'Cards are tagged to the headings of the Engineering syllabus, section 2 Materials and Technology.\n * The written paper sets nine questions of 50 marks at Higher and seven at Ordinary; candidates answer six and four.',
+    figureDir: 'public/exam-figures/engineering',
+    blocked: new Set(),
+  },
+  'computer-science': {
+    title: 'Computer Science',
+    /* The specification first examined in 2020 -- the one these papers were
+     * sat under, and the current one. Three strands: the practices and
+     * principles, the five core concepts, and the four applied learning
+     * tasks. Read from the specification PDF; see COMPUTER_SCIENCE_STRANDS
+     * in components/MarkBank/deck.ts. */
+    specVersion: 'lc-computer-science-2020',
+    specNote: 'Cards are tagged to the strands of the Computer Science specification examined from 2020.\n * Sections A and B sit in one booklet and Section C, the programming task, in another.',
+    figureDir: 'public/exam-figures/computer-science',
+    blocked: new Set(),
+  },
   maths: {
     title: 'Mathematics',
     /* The syllabus examined from 2015. Its redevelopment is scheduled but not
@@ -349,9 +372,9 @@ const q = (s) => JSON.stringify(String(s));
  */
 function tariffFault(c) {
   const t = c.tariffModel ?? { kind: 'fixed' };
-  if (t.kind === 'orderedSplit') {
+  if (t.kind === 'orderedSplit' || t.kind === 'questionTotal') {
     return c.rows.every(r => r.marks === null || r.marks === undefined)
-      ? null : 'an ordered split cannot give rows their own marks';
+      ? null : `a ${t.kind} tariff cannot give rows their own marks`;
   }
   if (t.kind === 'bestNofParts') {
     return t.answer * t.perPart === c.totalMarks

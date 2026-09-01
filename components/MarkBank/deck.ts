@@ -799,6 +799,87 @@ export const MATHS_STRANDS: StrandRef[] = [
   },
 ];
 
+/**
+ * The Computer Science specification examined from 2020: three strands — the
+ * practices and principles, the five core concepts, and the four applied
+ * learning tasks. Topic codes follow the specification's own structure; card
+ * assignments were validated against the questions actually filed under each
+ * (the winning/losing-position puzzles under computational thinking, the
+ * foreign-key question under interactive information systems, and so on).
+ */
+export const COMPUTER_SCIENCE_STRANDS: StrandRef[] = [
+  {
+    id: 'comp1', label: 'Strand 1', title: 'Practices and Principles',
+    topics: [
+      { id: 'cs-1-1', code: '1.1', title: 'Computational thinking' },
+      { id: 'cs-1-2', code: '1.2', title: 'Computers and society' },
+      { id: 'cs-1-3', code: '1.3', title: 'Design and development' },
+    ],
+  },
+  {
+    id: 'comp2', label: 'Strand 2', title: 'Core Concepts',
+    topics: [
+      { id: 'cs-2-1', code: '2.1', title: 'Abstraction' },
+      { id: 'cs-2-2', code: '2.2', title: 'Algorithms' },
+      { id: 'cs-2-3', code: '2.3', title: 'Computer systems' },
+      { id: 'cs-2-4', code: '2.4', title: 'Data' },
+      { id: 'cs-2-5', code: '2.5', title: 'Evaluation and testing' },
+    ],
+  },
+  {
+    id: 'comp3', label: 'Strand 3', title: 'Computer Science in Practice',
+    topics: [
+      { id: 'cs-3-1', code: '3.1', title: 'Interactive information systems' },
+      { id: 'cs-3-2', code: '3.2', title: 'Analytics' },
+      { id: 'cs-3-3', code: '3.3', title: 'Modelling and simulation' },
+      { id: 'cs-3-4', code: '3.4', title: 'Embedded systems' },
+    ],
+  },
+];
+
+/**
+ * The Engineering written paper examines the syllabus's section 2, Materials
+ * and Technology, plus the mechanisms heading of section 1. The syllabus PDF
+ * on disk is a textless scan, so these topic titles are named from the cards
+ * actually filed under each heading (equilibrium-diagram questions under
+ * alloys, UCT/LCT under heat treatment, sacrificial protection under
+ * corrosion), grouped as the authoring pass grouped them: what things are
+ * made of, how they are shaped and joined, and how they behave in service.
+ */
+export const ENGINEERING_STRANDS: StrandRef[] = [
+  {
+    id: 'eng1', label: 'Materials', title: 'Engineering Materials',
+    topics: [
+      { id: 'eng-1-2', code: 'M2', title: 'Metals and their production' },
+      { id: 'eng-1-3', code: 'M3', title: 'Alloys and equilibrium diagrams' },
+      { id: 'eng-1-4', code: 'M4', title: 'Iron, steel and cast irons' },
+      { id: 'eng-1-5', code: 'M5', title: 'Non-ferrous metals' },
+      { id: 'eng-1-9', code: 'M9', title: 'Plastics and polymer processing' },
+    ],
+  },
+  {
+    id: 'eng2', label: 'Processes', title: 'Processes and Systems',
+    topics: [
+      { id: 'eng-2-6', code: 'P6', title: 'Heat treatment of steel' },
+      { id: 'eng-2-10', code: 'P10', title: 'Welding and joining' },
+      { id: 'eng-2-11', code: 'P11', title: 'Machining and the lathe' },
+      { id: 'eng-2-13', code: 'P13', title: 'Manufacturing systems' },
+      { id: 'eng-2-15', code: 'P15', title: 'Mechanisms and pneumatics' },
+      { id: 'eng-2-16', code: 'P16', title: 'Electricity and electronics' },
+    ],
+  },
+  {
+    id: 'eng3', label: 'In service', title: 'Materials in Service and Society',
+    topics: [
+      { id: 'eng-3-1', code: 'S1', title: 'Safety in the workshop' },
+      { id: 'eng-3-7', code: 'S7', title: 'Corrosion and protection' },
+      { id: 'eng-3-8', code: 'S8', title: 'Properties and testing of materials' },
+      { id: 'eng-3-12', code: 'S12', title: 'Limits, fits and precision measurement' },
+      { id: 'eng-3-14', code: 'S14', title: 'Technology and society' },
+    ],
+  },
+];
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -813,6 +894,8 @@ export const SUBJECTS = [
   { id: 'irish', title: 'Irish', strands: IRISH_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
   { id: 'art', title: 'Art', strands: ART_STRANDS, spec: 'Visual Studies specification' },
   { id: 'geography', title: 'Geography', strands: GEOGRAPHY_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
+  { id: 'computer-science', title: 'Computer Science', strands: COMPUTER_SCIENCE_STRANDS, spec: 'specification examined from 2020' },
+  { id: 'engineering', title: 'Engineering', strands: ENGINEERING_STRANDS, spec: 'Materials and Technology syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1073,6 +1156,14 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   geography: {
     higher: () => import('./cards/geography/higher'),
     ordinary: () => import('./cards/geography/ordinary'),
+  },
+  'computer-science': {
+    higher: () => import('./cards/computer-science/higher'),
+    ordinary: () => import('./cards/computer-science/ordinary'),
+  },
+  engineering: {
+    higher: () => import('./cards/engineering/higher'),
+    ordinary: () => import('./cards/engineering/ordinary'),
   },
 };
 

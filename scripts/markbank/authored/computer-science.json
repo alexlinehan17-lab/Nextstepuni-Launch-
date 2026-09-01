@@ -3811,39 +3811,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Spread content across all the webpage",
-    "marks": 1
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Be more consistent with text size.",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Use more colours that complement each other.",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Make the website more accessible.",
-    "marks": 1
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Add in a navigation bar with links",
-    "marks": 1
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Place search bar in more prominent place on the site. Any three of the above or similar 2 marks each",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "Spread content across all the webpage // Be more consistent with text size. // Use more colours that complement each other. // Make the website more accessible. // Add in a navigation bar with links // Place search bar in more prominent place on the site.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Spread content across all the webpage",
+      "Be more consistent with text size.",
+      "Use more colours that complement each other.",
+      "Make the website more accessible.",
+      "Add in a navigation bar with links",
+      "Place search bar in more prominent place on the site."
+     ]
+    },
+    "openList": true
    }
   ],
   "stem": "Figure 11",
@@ -4457,39 +4440,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Number of cores. A processing unit within a CPU is known as a core. Each core is capable of fetching, decoding and executing its own instructions. The more cores a CPU has, the greater the number of instructions it can process in a given space of time.",
-    "marks": 1
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Clock speed. Clock speed is the number of pulses the CPU’s clock generates per second. It is measured in hertz. The more pulses per second, the more fetch-decode-execute cycles that can be performed and the more instructions that are processed in a given space of time.",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Cache. A cache is a fast, relatively small capacity set of locations that is built directly within the processor. Cache is used to store the instructions and data that the processor is most likely to need and reuse. The bigger its cache, the less time a processor has to wait for instructions to be fetched.",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "RAM. This is the short-term memory of the computer that holds all of the programs and data currently being ran by the computer. Having more memory means that the data and instructions that need to be processed will not have to be fetched from secondary storage (which is a much slower process).",
-    "marks": 1
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Temperature. If CPU gets too hot performance will decrease.",
-    "marks": 1
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Any other valid response (e.g. word size, bus width etc.) For each factor:",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "Number of cores. A processing unit within a CPU is known as a core. Each core is capable of fetching, decoding and executing its own instructions. The more cores a CPU has, the greater the number of instructions it can process in a given space of time. // Clock speed. Clock speed is the number of pulses the CPU’s clock generates per second. It is measured in hertz. The more pulses per second, the more fetch-decode-execute cycles that can be performed and the more instructions that are processed in a given space of time. // Cache. A cache is a fast, relatively small capacity set of locations that is built directly within the processor. Cache is used to store the instructions and data that the processor is most likely to need and reuse. The bigger its cache, the less time a processor has to wait for instructions to be fetched. // RAM. This is the short-term memory of the computer that holds all of the programs and data currently being ran by the computer. Having more memory means that the data and instructions that need to be processed will not have to be fetched from secondary storage (which is a much slower process). // Temperature. If CPU gets too hot performance will decrease.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Number of cores. A processing unit within a CPU is known as a core. Each core is capable of fetching, decoding and executing its own instructions. The more cores a CPU has, the greater the number of instructions it can process in a given space of time.",
+      "Clock speed. Clock speed is the number of pulses the CPU’s clock generates per second. It is measured in hertz. The more pulses per second, the more fetch-decode-execute cycles that can be performed and the more instructions that are processed in a given space of time.",
+      "Cache. A cache is a fast, relatively small capacity set of locations that is built directly within the processor. Cache is used to store the instructions and data that the processor is most likely to need and reuse. The bigger its cache, the less time a processor has to wait for instructions to be fetched.",
+      "RAM. This is the short-term memory of the computer that holds all of the programs and data currently being ran by the computer. Having more memory means that the data and instructions that need to be processed will not have to be fetched from secondary storage (which is a much slower process).",
+      "Temperature. If CPU gets too hot performance will decrease."
+     ]
+    },
+    "openList": true
    }
   ],
   "stem": "Figure 9 Figure 10 This question continues on the next page."
@@ -4837,39 +4802,32 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Advantages",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "The main benefits of a recursive approach are simplicity, elegance and conciseness // Recursion can lead to more readable and efficient algorithm descriptions. // Recursion lends itself well breaking problems down into smaller similar problems Disadvantages",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "The main benefits of a recursive approach are simplicity, elegance and conciseness",
+      "Recursion can lead to more readable and efficient algorithm descriptions.",
+      "Recursion lends itself well breaking problems down into smaller similar problems Disadvantages"
+     ]
+    }
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "The main benefits of a recursive approach are simplicity, elegance and conciseness",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Recursion can lead to more readable and efficient algorithm descriptions.",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Recursion lends itself well breaking problems down into smaller similar problems Disadvantages",
-    "marks": 1
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Performance. Recursion can lead to slower execution time due to memory overheads",
-    "marks": 1
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "If recursion is too deep, then there is a danger of running out of space on the stack and ultimately program crashes. For each advantage/disadvantage:",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "Performance. Recursion can lead to slower execution time due to memory overheads // If recursion is too deep, then there is a danger of running out of space on the stack and ultimately program crashes. For each advantage/disadvantage:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Performance. Recursion can lead to slower execution time due to memory overheads",
+      "If recursion is too deep, then there is a danger of running out of space on the stack and ultimately program crashes. For each advantage/disadvantage:"
+     ]
+    }
    }
   ],
   "stem": "1 def binary_search2(v, L, lo, hi): 2 3 if lo > hi: 4 return len(L) 5 6 mid = (lo + hi)//2 7 8 if L[mid] > v: 9 return binary_search2(v, L, lo, mid-1) 10 elif L[mid] < v: 11 return binary_search2(v, L, mid+1, hi) 12 13 return mid names = [\"Amir\", \"Dean\", \"Eoin\", \"Helen\", \"Natalia\", \"Steve\", \"Terry\"] Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 5: https://www.ccnahub.com/ip-fundamentals/understanding-tcp-ip-and-osi-models/ Image on page 7: https://www.researchgate.net/figure/On-the-left-is-the-Wolf-Goat-and-Cabbage-puzzle- environment-Right-screenshot-from-a_fig2_305084487 Image on page 11: https://devoxsoftware.com/blog/software-development-lifecycle/ Image on page 12: https://www.donegaldaily.com/2021/05/12/making-remote-work-an-office-with-a-view-on- arranmore/ Image on page 14: https://skybiometry.com/the-best-face-recognition-software-for-your-business/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 24 May Morning 9:30 – 11:00 2023L219A2EL 2023. M110C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 24 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
@@ -5618,7 +5576,7 @@
   "questionRef": "2023 OL Q4",
   "questionText": "Convert the decimal number 14 to a binary number.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
@@ -5626,37 +5584,25 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "14/2 = 7 Remainder 0 14 = 8 + 4 + 2 + 0",
-    "marks": 1
+    "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "7/2 = 3 Remainder 1 1 1 1 0",
-    "marks": 1
+    "marks": null
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "3/2 = 1 Remainder 1",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "OR",
-    "marks": 1
+    "marks": null
    },
    {
     "id": "r-5",
     "kind": "point",
     "verbatim": "1/2 = 0 Remainder 1 Ans: 1110",
-    "marks": 1
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Ans: 1110",
-    "marks": 1
+    "marks": null
    }
   ],
   "stem": "Convert the decimal number 14 to a binary number."
@@ -6888,75 +6834,38 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Points for supporting the initiative:",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness. // Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities. // Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry. // Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society. // Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness.",
+      "Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities.",
+      "Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry.",
+      "Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society.",
+      "Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI."
+     ]
+    },
+    "openList": true
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness.",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities.",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry.",
-    "marks": 1
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society.",
-    "marks": 1
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI.",
-    "marks": 1
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Elaboration of any other reasonable point for pausing development of advanced AI systems Points against the initiative:",
-    "marks": 1
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society.",
-    "marks": 1
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues.",
-    "marks": 1
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres.",
-    "marks": 1
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation.",
-    "marks": 1
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Elaboration of any other reasonable point against pausing development of advanced AI systems For each separate point made for and against the initiative up to a maximum of two points each:",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society. // Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues. // Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres. // Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society.",
+      "Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues.",
+      "Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres.",
+      "Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation."
+     ]
+    },
+    "openList": true
    }
   ],
   "stem": "Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative.",
@@ -8304,75 +8213,38 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Positive impacts:",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "Personalised Learning // Access to resources // Assistance with homework // Enhanced accessibility Spell check work // Suggest improvements on student work // Feedback on pieces of work // Generate study notes for students // Create study tips / custom study timetables",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Personalised Learning",
+      "Access to resources",
+      "Assistance with homework",
+      "Enhanced accessibility Spell check work",
+      "Suggest improvements on student work",
+      "Feedback on pieces of work",
+      "Generate study notes for students",
+      "Create study tips / custom study timetables"
+     ]
+    }
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Personalised Learning",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Access to resources",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Assistance with homework",
-    "marks": 1
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Enhanced accessibility Spell check work",
-    "marks": 1
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Suggest improvements on student work",
-    "marks": 1
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Feedback on pieces of work",
-    "marks": 1
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Generate study notes for students",
-    "marks": 1
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Create study tips / custom study timetables Negative impacts:",
-    "marks": 1
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Privacy concerns",
-    "marks": 1
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Bias Issues",
-    "marks": 1
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Overreliance on technology",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "Privacy concerns // Bias Issues // Overreliance on technology",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Privacy concerns",
+      "Bias Issues",
+      "Overreliance on technology"
+     ]
+    }
    }
   ],
   "stem": "In April 2023, Snapchat began rolling out a new feature called My AI. This experimental artificial intelligence (AI) chatbot can carry out tasks including responding to queries, giving advice, and organising travel. This is an example of the increasing influence of AI in our daily lives."
@@ -9800,39 +9672,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection.",
-    "marks": 1
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures.",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others.",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Automatic Updates: Cloud storage services often come with automatic software updates and maintenance.",
-    "marks": 1
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable.",
-    "marks": 1
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices.",
-    "marks": 1
+    "kind": "anyN",
+    "verbatim": "Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection. // Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures. // File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others. // Automatic Updates: Cloud storage services often come with automatic software updates and maintenance. // Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable. // Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection.",
+      "Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures.",
+      "File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others.",
+      "Automatic Updates: Cloud storage services often come with automatic software updates and maintenance.",
+      "Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable.",
+      "Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices."
+     ]
+    },
+    "openList": true
    }
   ],
   "stem": "It is common for people to store files in the cloud. State two reasons why you might want to use cloud storage rather than local storage."
@@ -9896,7 +9751,7 @@
   "questionRef": "2025 OL Q10",
   "questionText": "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Figure 3 Calculate the output of the algorithm.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
@@ -9904,37 +9759,37 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "0",
-    "marks": 1
+    "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "2",
-    "marks": 1
+    "marks": null
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "4",
-    "marks": 1
+    "marks": null
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "6",
-    "marks": 1
+    "marks": null
    },
    {
     "id": "r-5",
     "kind": "point",
     "verbatim": "8",
-    "marks": 1
+    "marks": null
    },
    {
     "id": "r-6",
     "kind": "point",
     "verbatim": "10",
-    "marks": 1
+    "marks": null
    }
   ],
   "stem": "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Figure 3 Calculate the output of the algorithm.",

@@ -50,5 +50,13 @@
  "geography": {
   "higher": 445,
   "ordinary": 309
+ },
+ "computer-science": {
+  "higher": 209,
+  "ordinary": 127
+ },
+ "engineering": {
+  "higher": 313,
+  "ordinary": 153
  }
 }
