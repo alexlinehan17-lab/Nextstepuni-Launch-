@@ -200,6 +200,13 @@ QA_PASSED_ANSWER_PROFILES = {
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),
+    # Bilingual-era languages (the SEC merged EV/IV into BV papers ~2019+):
+    # dormant reading maps render-verified — German BV Text II Q4 opens its
+    # matching answer key, French BV Text II Q6 its indicative points.
+    ('french', 'higher', 'bv'),
+    ('french', 'ordinary', 'bv'),
+    ('german', 'higher', 'bv'),
+    ('german', 'ordinary', 'bv'),
     ('french', 'ordinary', 'ev'),
     ('french', 'ordinary', 'iv'),
     ('italian', 'higher', 'ev'),
@@ -250,6 +257,13 @@ QA_PASSED_ANSWER_PROFILES = {
     # scheme-side ("H KING LEAR" opens its exact questions + indicative
     # material).
     ('english', 'ordinary', 'ev'),
+    # Bilingual-era languages (the SEC merged EV/IV into BV papers ~2019+):
+    # dormant reading maps render-verified — German BV Text II Q4 opens its
+    # matching answer key, French BV Text II Q6 its indicative points.
+    ('french', 'higher', 'bv'),
+    ('french', 'ordinary', 'bv'),
+    ('german', 'higher', 'bv'),
+    ('german', 'ordinary', 'bv'),
     ('jc-history', 'common', 'ev'),
     ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
@@ -420,6 +434,13 @@ QA_PASSED_ANSWER_PROFILES = {
     # scheme-side ("H KING LEAR" opens its exact questions + indicative
     # material).
     ('english', 'ordinary', 'ev'),
+    # Bilingual-era languages (the SEC merged EV/IV into BV papers ~2019+):
+    # dormant reading maps render-verified — German BV Text II Q4 opens its
+    # matching answer key, French BV Text II Q6 its indicative points.
+    ('french', 'higher', 'bv'),
+    ('french', 'ordinary', 'bv'),
+    ('german', 'higher', 'bv'),
+    ('german', 'ordinary', 'bv'),
     ('jc-history', 'common', 'ev'),
     ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
