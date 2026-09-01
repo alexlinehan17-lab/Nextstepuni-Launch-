@@ -1,0 +1,41 @@
+{
+  "maths-2025-hl-p1-q10-e-i": {
+    "regions": [
+      { "page": 26, "top": 55, "bottom": 376 },
+      { "page": 29, "top": 67, "bottom": 327 }
+    ],
+    "description": "Question 10 defines a sequence of dot patterns on the coordinate plane. H(n) is the total number of dots in Pattern n. Part (i) asks for H(1). For natural n, H(n + 1) = H(n) + 2n + 3. Part (ii) asks for an induction proof that H(n) = (n + 1)² for every natural n."
+  },
+  "maths-2025-hl-p2-q8-a-i": {
+    "regions": [
+      { "page": 20, "x0": 28, "x1": 338, "top": 55, "bottom": 194 },
+      { "page": 20, "x0": 338, "x1": 548, "top": 75, "bottom": 248 },
+      { "page": 20, "x0": 76, "x1": 342, "top": 194, "bottom": 270 }
+    ],
+    "description": "A square-based pyramid has a 6 m square base ABCD. The diagonals meet at O, P is directly above O, and the four congruent triangular faces have PA = PB = 11 m. Part (i) asks the student to use Pythagoras to show that OB = 3√2 m and then find the vertical height OP in surd form."
+  },
+  "maths-2025-hl-p2-q8-a-ii": {
+    "regions": [
+      { "page": 20, "x0": 28, "x1": 338, "top": 55, "bottom": 194 },
+      { "page": 20, "x0": 338, "x1": 548, "top": 75, "bottom": 248 },
+      { "page": 20, "top": 482, "bottom": 541 }
+    ],
+    "description": "A square-based pyramid has a 6 m square base ABCD, with P directly above the centre O, and PA = PB = 11 m. On triangular face PAB, angle PAB is 74.2 degrees to one decimal place. Part (ii) asks for the total area of the four triangular roof faces, to the nearest square metre."
+  },
+  "maths-2025-hl-p2-q8-a-iii": {
+    "regions": [
+      { "page": 20, "x0": 28, "x1": 338, "top": 55, "bottom": 194 },
+      { "page": 20, "x0": 338, "x1": 548, "top": 75, "bottom": 248 },
+      { "page": 21, "top": 51, "bottom": 126 },
+      { "page": 21, "x0": 238, "x1": 425, "top": 205, "bottom": 482 }
+    ],
+    "description": "A square-based pyramid has a 6 m square base ABCD and four congruent triangular faces with PA = PB = 11 m. A scaled partial net shows the square base and two triangular sides. Part (iii) asks the student to construct the rest of the net and show all construction lines."
+  },
+  "maths-2025-hl-p2-q10-e": {
+    "regions": [
+      { "page": 27, "top": 55, "bottom": 95 },
+      { "page": 30, "top": 51, "bottom": 223 }
+    ],
+    "description": "A maths test gives a student 0, 1, 2, or 3 marks on one question with respective proportions 0.19, p, 2r, and r, where p and r are non-negative real numbers. Part (e) asks for the largest possible expected mark."
+  }
+}

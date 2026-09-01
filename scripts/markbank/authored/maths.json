@@ -32885,7 +32885,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q10(e)(i), (ii)",
-  "questionText": "Write down the value of H(1)",
+  "questionText": "H(n) is the total number of dots in Pattern n of the sequence, for n ∈ ℕ. (i) Write down the value of H(1). When n is a natural number, H(n + 1) can always be found from H(n), using the formula H(n + 1) = H(n) + 2n + 3. (ii) Using this fact, prove by induction that H(n) = (n + 1)² for all n ∈ ℕ.",
   "figureKey": "maths-2025-HL-paper-p036-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34067,7 +34067,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q8(a)(i)",
-  "questionText": "(i) Use |OOOO| the = theorem/3√2 m, and of Pythagoras hence find the to show value the theorem of Pythagoras to show that 3√2 m, and hence find the value 6 m O of |O|, the vertical height of the pyramid",
+  "questionText": "(i) Use the theorem of Pythagoras to show that |OB| = 3√2 m, and hence find |OP|, the vertical height of the pyramid. Give |OP| in surd form.",
   "figureKey": "maths-2025-HL-paper-p060-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34114,7 +34114,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q8(a)(ii)",
-  "questionText": "On the triangular face P, the size of ∠P is 74∙2°, correct to 1 decimal place",
+  "questionText": "(ii) On the triangular face PAB, the size of ∠PAB is 74·2°, correct to 1 decimal place. Using this, or otherwise, work out the total area of the four triangular faces of the roof. Give your answer correct to the nearest m².",
   "figureKey": "maths-2025-HL-paper-p060-i1",
   "labelKey": [],
   "tariffModel": {
@@ -34159,7 +34159,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q8(a)(iii)",
-  "questionText": "(iii) The diagram below shows part of a scaled diagram of the net of this pyramid. The diagram shows the square base and two of the triangular sides",
+  "questionText": "(iii) The diagram below shows part of a scaled diagram of the net of this pyramid. The diagram shows the square base and two of the triangular sides. Construct the rest of the scaled diagram of the net of the pyramid. Show all construction lines clearly.",
   "figureKey": "maths-2025-HL-paper-p061-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34792,7 +34792,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q10(e)",
-  "questionText": "For one of the questions on the test, students are given a mark of 0, 1, 2, or 3",
+  "questionText": "(e) For one of the questions on the test, students are given a mark of 0, 1, 2, or 3. The proportion receiving each mark is 0·19, p, 2r, and r, respectively, where p, r ∈ ℝ and p, r ≥ 0. A student is picked at random. The expected value of their mark will depend on p and r. Find the largest value that the expected value could be.",
   "figureKey": "maths-2025-HL-paper-p070-i1",
   "labelKey": [],
   "tariffModel": {

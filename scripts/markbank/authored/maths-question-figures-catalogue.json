@@ -4967,7 +4967,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q10(e)(i), (ii)",
-  "description": "The question as printed on the paper \u2014 The first three patterns in a sequence of patterns are shown below. Each pattern is made up of ) at points in the co-ordinate plane that have integer co-ordinates. dots ( As shown below, Pattern 1 has a dot at all such p"
+  "description": "The question as printed on the paper \u2014 Question 10 defines a sequence of dot patterns on the coordinate plane. H(n) is the total number of dots in Pattern n. Part (i) asks for H(1). For natural n, H(n + 1) = H(n) + 2n + 3. Part (ii) asks for an induction proof that H(n) = (n + 1)\u00b2 for every natural n."
  },
  {
   "file": "maths-2025-HL-ask-p2-q1-a.png",
@@ -5142,21 +5142,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 2 Q8(a)(i)",
-  "description": "The question as printed on the paper \u2014 A roof is in the shape of a square-based pyramid, P as shown. The square base, A, has sides of length 6 m. 11 m The diagonals of A meet at the point O. The top of the pyramid, P, is directly above O. The four triangular "
+  "description": "The question as printed on the paper \u2014 A square-based pyramid has a 6 m square base ABCD. The diagonals meet at O, P is directly above O, and the four congruent triangular faces have PA = PB = 11 m. Part (i) asks the student to use Pythagoras to show that OB = 3\u221a2 m and then find the vertical height OP in surd form."
  },
  {
   "file": "maths-2025-HL-ask-p2-q8-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 2 Q8(a)(ii)",
-  "description": "The question as printed on the paper \u2014 A roof is in the shape of a square-based pyramid, P as shown. The square base, A, has sides of length 6 m. 11 m The diagonals of A meet at the point O. The top of the pyramid, P, is directly above O. The four triangular "
+  "description": "The question as printed on the paper \u2014 A square-based pyramid has a 6 m square base ABCD, with P directly above the centre O, and PA = PB = 11 m. On triangular face PAB, angle PAB is 74.2 degrees to one decimal place. Part (ii) asks for the total area of the four triangular roof faces, to the nearest square metre."
  },
  {
   "file": "maths-2025-HL-ask-p2-q8-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 2 Q8(a)(iii)",
-  "description": "The question as printed on the paper \u2014 A roof is in the shape of a square-based pyramid, P as shown. The square base, A, has sides of length 6 m. 11 m The diagonals of A meet at the point O. The top of the pyramid, P, is directly above O. The four triangular "
+  "description": "The question as printed on the paper \u2014 A square-based pyramid has a 6 m square base ABCD and four congruent triangular faces with PA = PB = 11 m. A scaled partial net shows the square base and two triangular sides. Part (iii) asks the student to construct the rest of the net and show all construction lines."
  },
  {
   "file": "maths-2025-HL-ask-p2-q8-b.png",
@@ -5254,7 +5254,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 2 Q10(e)",
-  "description": "The question as printed on the paper \u2014 A particular test is used to measure how well students around the world can do maths problems. Worldwide, scores on this test are normally distributed with a mean score of 400 and a standard deviation of 60. The scaled d"
+  "description": "The question as printed on the paper \u2014 A maths test gives a student 0, 1, 2, or 3 marks on one question with respective proportions 0.19, p, 2r, and r, where p and r are non-negative real numbers. Part (e) asks for the largest possible expected mark."
  },
  {
   "file": "maths-2025-OL-ask-p1-q1-a-i.png",

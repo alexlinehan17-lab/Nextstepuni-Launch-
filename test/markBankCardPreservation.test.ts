@@ -29,12 +29,16 @@ import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/hig
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
 import { CARDS as MATHS_HIGHER } from '../components/MarkBank/cards/maths/higher';
 import { CARDS as MATHS_ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
-import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-science/higher';
-import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
-import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
-import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
+import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
+import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
+import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
+import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
@@ -125,13 +129,7 @@ const decks = [
    * repaired IN PLACE (same ids): q1-v now lifts the clockwise-moments line
    * its question asks for, q10-iv the closed-pipe harmonic instead of another
    * part's answer. Nothing removed. */
-  /* 2026-08-30: 569 -> 570. phys-2021-hl-q13a-v comes BACK. The unreadable-
-   * glyph gate read the card's `notes` — the author's record of how the card
-   * was made, which never reaches the deck and which sometimes quotes a
-   * corruption as the evidence for a decision. The card was dropped for
-   * containing the very thing its note exists to document. Nothing else on
-   * the card changed. */
-  ['physics:higher', PHYS_HIGHER, 570, '9712686995c6b73f612200773855e1054ae6a5ec13ceaf5a82427934ea590007'],
+  ['physics:higher', PHYS_HIGHER, 569, '463dd2324556ac2c286ed7c722602a9bf5e4f83a9ee43fdd03bcf8b13d97e6fd'],
   ['physics:ordinary', PHYS_ORDINARY, 563, '67dee7bc4ede4f829b03a569374b5cf94de35dd92bed3af580263667cf2a5f40'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 431, '2dbd6e7635bb73941a16773ce9d3c654741a863280c002f783fc45cd0d7e8dbd'],
@@ -369,364 +367,35 @@ const decks = [
    * refused. It cites "Q8(c), (d)" now. 939/989 -> 941/989, open 50 -> 48. */
   ['maths:higher', MATHS_HIGHER, 398, '39e8bdf9425336b1d19f5827df8fb9b811f117781b610adf6456ed9213583d25'],
   ['maths:ordinary', MATHS_ORDINARY, 435, '1739cbe00b51bbe9aed6df6e1226780777f965ec94c9492743cf2ec8df35990e'],
-  /* 2026-08-30: Computer Science opened. 259 cards, 293/484 asks covered,
-   * 0 orphans, card lint clean. A new subject is pinned from its first build;
-   * there is no earlier count to compare it against.
-   *
-   * 2026-08-30 (same day): 164/95 -> 183/102, coverage 293/484 -> 327/484.
-   * The added cards carry a CROP of the program their question prints. The
-   * text layer hands a listing back as "1 number = 27 2 while number < 39: 3
-   * print(number, end=" ")" -- line numbers run into the code and the
-   * indentation gone, which is the one thing a program cannot survive losing.
-   * Nothing was removed.
-   *
-   * 2026-08-30 (same day): 183/102 -> 191/109, coverage 327/484 -> 343/484.
-   * The figure pass was extended from programs to the TABLES and DIAGRAMS the
-   * questions print, and each question now publishes one crop rather than one
-   * per band -- a card cites a PART, and attaching the topmost band would have
-   * shown 2022 OL Q13(b) the binary digits printed for (a).
-   *
-   * ONE CARD WAS REMOVED, and this is the record of it rather than a hash
-   * quietly moved over the top of it: cs-2021-hl-q12. That question prints one
-   * database table, then the ruled box the candidate writes in, then a SECOND
-   * table, and asks about both. No single rectangle holds the two tables
-   * without the blank box between them, and its parts are not priced
-   * separately so the card can only cite the whole question. The card it
-   * replaced carried the first table only, which is the defect this pass
-   * exists to remove: a question asking about a table the student cannot see.
-   * It comes back when a card can carry a figure per part.
-   *
-   * The same span fix took a WRONG figure off three cards that kept their
-   * ids -- cs-2023-hl-q6, cs-2024-hl-q10 and cs-2025-hl-q10 were each showing
-   * the listing printed for the question above them. 2024 HL Q10 asks about
-   * ordering kiosks and was showing a leap-year function.
-   *
-   * 2026-08-30 (same day): 191/109 -> 194/111, coverage 343/484 -> 348/484.
-   * The TABLE a question prints comes out of its question text the way the
-   * program already did, but only where what is left still ends like a
-   * sentence -- a table's labels are ordinary words that also appear in the
-   * question's own prose, and cutting at the first match had left "Complete
-   * the truth table for the AND logic gate, shown in". Nothing was removed.
-   *
-   * 2026-08-30 (same day): 194/111 -> 193/116, coverage 348/484 -> 367/484.
-   * The `use` indices a card is built from select into the SCHEME's own point
-   * list, so the author's filtering never reached the card: nineteen cards
-   * carried a row it had already rejected, one of them opening with "Any
-   * response that captures the essence of any of the following:". The indices
-   * now point at the scheme's list, so the filter applies -- and the filter
-   * itself was corrected in both directions. It drops the CREDIT RULE ("Each
-   * correct item", "Half correct conversion of (a)", "Small calculation
-   * error"), which says how much of the answer earns what and never what the
-   * answer is. It no longer drops a row that is all digits, which is the
-   * answer at least as often as it is noise: 2021 HL Q1 asks what a program
-   * prints and the scheme states "7 3" and "6 8".
-   *
-   * THREE CARDS WERE REMOVED and this is the record of them:
-   *   cs-2022-hl-q14-a-i and cs-2022-hl-q14-b-i -- the scheme states one
-   *     thing under each of these parts, "Each correct pass", and that is a
-   *     credit rule. The cards were carrying it as the answer, which tells a
-   *     student nothing about what a correct pass is;
-   *   cs-2025-hl-q13-b-iv -- with the indices corrected the card selects the
-   *     scheme's real sixth point, and that point does not trace back to the
-   *     scheme text because the reader glued a credit rule onto its end. The
-   *     provenance gate refusing it is the gate working. */
-  /* 2026-08-30 (same day): 193/116 -> 194/116, coverage 367/484 -> 369/484.
-   * A card citing a whole question no longer presents its parts' separate
-   * answers as ALTERNATIVES to one another. That said "five marks for any one
-   * of these", and 2022 OL Q5 was offering "3" -- the index part (a) asks for
-   * -- as an alternative to the three limitations of linear search that (b)
-   * asks for. Those cards now use the new `questionTotal` tariff: one row per
-   * point, no per-row value, and the question's own printed total. Nothing was
-   * removed. */
-  /* 2026-08-30 (same day): 194/116 -> 202/118, coverage 369/484 -> 382/484.
-   * A question owns the paper from its own heading to the NEXT question's,
-   * and that often runs over the page: 2021 HL Q13 prints "This question
-   * continues on the next page". Matching only pages that CARRY the heading
-   * missed all of that, so nine questions had no figure and could not be
-   * carded. Its figure still comes from the page carrying its heading, which
-   * is where the paper prints the stimulus the question is built on -- taking
-   * one from a later page would put one part's listing on another's card.
-   * Nothing was removed. */
-  /* 2026-08-30 (same day): 202/118 -> 207/119, coverage 382/484 -> 388/484.
-   * Six more asks file under a syllabus topic. Each addition to the taxonomy
-   * names the learning outcome it rests on: 2.11 "the different components
-   * within a computer" reaches a solid state drive, 2.16 lists "array" among
-   * the data types and the papers index and slice one without ever using the
-   * word, 3.2 "create a basic relational database" is where a foreign key
-   * lives, 1.20 "assign roles and responsibilities within a team" is where a
-   * project manager does, and 3.8 is "develop a model that will allow
-   * different scenarios to be tested". Nothing was removed. */
-  /* 2026-08-30 (same day): 207/119 -> 209/127, coverage 388/484 -> see below.
-   * The reader sweeps the page's FURNITURE into a question block: a bare
-   * "Figure 3" at the end is the caption of the picture printed beside the
-   * ask, "Section B Long Questions 76 marks" is the banner of the section
-   * that starts underneath, and "This question continues on the next page" is
-   * an instruction about the paper. Those parts were flagged as unreviewed
-   * because the text stopped without punctuation, which is exactly what a
-   * caption swept onto the end looks like. The strip is self-checking: it is
-   * taken only where what remains still ends like a sentence. Nothing was
-   * removed. */
-  ['computer-science:higher', CS_HIGHER, 209, '1030050a22b237ea5ab74477d630b55d18620313c352fe167eb91691ae933abd'],
-  ['computer-science:ordinary', CS_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
-  /* 2026-08-30: Engineering opened at 66/4, covering 171 of its 806 asks.
-   *
-   * Same day, 66/4 -> 47/10 and 171 asks -> 101. THIRTY-TWO CARDS WERE
-   * REMOVED, and this is the record of it. Twenty-one of them pointed at a
-   * picture they did not carry — "Identify the hybrid vehicle configuration
-   * shown opposite", with nothing opposite — which is the very defect this
-   * bank was asked to sweep out of the other ten subjects. They survived
-   * because the authoring guard tested the LEAF's wording while lib builds a
-   * whole-question card from the key's ask with every child joined on, so the
-   * reference arrived from a child the guard never read. The finished card is
-   * now tested with card lint's own condition instead of an approximation of
-   * it.
-   *
-   * The count comes back when Engineering gets a figure pass: those questions
-   * print the picture, nothing has cropped it yet, and a card carrying the
-   * crop is no longer a ghost. Ordinary rose 4 -> 10 in the same pass from
-   * the provenance and sentence-splitting fixes. */
-  // 2026-08-31: 48 -> 124, over three passes. The scheme reader learned four
-  // things the tariff table and the answer body had always said: a part's
-  // rule may run over several lines and only the last carries the total; the
-  // rule may be written with the ask's own verb in front, which is how 2023
-  // Ordinary Level writes every one of them; a marker is separated from its
-  // rule by a dash, which defeated the first line of every multi-line rule;
-  // and the bold heading above an answer is the scheme restating the ask only
-  // when it is a WHOLE sentence, so 42 rows no longer begin mid-sentence.
-  //
-  // A part whose total is printed once over several points now says so
-  // (questionTotal) instead of paying that total for each point. The .md the
-  // provenance gate reads was re-extracted with --columns, which recovers
-  // prose split by anything printed beside it. And 22 figures were cut by a
-  // bespoke Engineering cropper and bound, every one opened first.
-  //
-  // Three cards REMOVED. Two shipped page furniture as a marking point:
-  // eng-2022-hl-q5-b, whose entire 18-mark answer was "Page 17", and
-  // eng-2023-hl-q1-j, which paid 2 of its 5 marks for "Page 8". The third,
-  // eng-2022-hl-q6, held "electrode" as a row of its own; rejoined into its
-  // sentence it cannot be traced in the markdown, where the mark column is
-  // welded into the answer, and the gate is right to refuse it.
-  // 2026-08-31 (later): 124 -> 138. A part that ENDS ON A COLON is
-  // introducing its children, however long it is. lib.card joined a parent's
-  // children only when the parent's own text ran under 40 characters, and
-  // "Discuss the contribution that any one of the following has made to
-  // technology:" is 77 and names nobody. Nothing removed.
-  // 2026-08-31 (later still): 138 -> 141. A callout printed on a diagram is
-  // identified by where it sits and what it is: far right of the answer
-  // column, a word or two, closing on nothing. The sentence assembly had been
-  // running them into the middle of marking points — "the indentation are
-  // impression measured", "as the heated flames austenite structure changes"
-  // — and no such sentence is in the scheme, so the gate refused each one.
-  //
-  // Four cards REMOVED. eng-2024-hl-q5-b's entire 18-mark answer was the
-  // table header "% Metal B", which is the callout rule doing its job. The
-  // other three hold a point where the scheme's own OR branches are welded
-  // together — "Both types can be turned on and off. process, this expands
-  // the tool carrying capacity" is the tail of one branch and the middle of
-  // the next — and the gate is right that no such sentence exists:
-  // eng-2021-hl-q8-c-ii, eng-2021-hl-q9-c-ii, eng-2025-hl-q8-c-ii.
-  // 2026-08-31 (fourth pass): 141 -> 149. The SCHEME sets alternatives the
-  // way the paper does, and a marker that re-opens a key which already holds
-  // answers is the boundary whether or not an OR is printed: 2021 HL Q8
-  // answers (c)(i) and (c)(ii) on surface grinding and then, with no OR at
-  // all, (c)(i) and (c)(ii) on subtractive manufacturing. Joined, the tail of
-  // one branch ran into the middle of the next. Nothing removed.
-  // 2026-08-31 (fifth pass): 149 -> 150. A question runs over pages and
-  // prints its head once, so the cropper's parts on the second page sat under
-  // no head and had no band at all; and a bare number was being read as a
-  // head, so a graph's axis labels became nine questions on one page. One
-  // more crop bound after opening it. Nothing removed.
-  // 2026-08-31 (sixth pass): 150 -> 163, and Ordinary 33 -> 71. Question 1 is
-  // answered "any ten of the following" and the tariff table prices only the
-  // QUESTION, with the rule on the line beneath the head — "Any ten @ 5 marks
-  // each", "Any eight parts @ 6 marks each". Every one of its thirteen to
-  // eighteen parts resolved up to the question, so one card carried all of
-  // them; Q1 held 148 of the subject's 806 asks and 20% of them were covered.
-  // The rule says what a PART is worth, so a part-level card claims it — but
-  // only where it says EACH and names one value. 2021 Ordinary says "Any
-  // eight." and then "Two @ 7 marks, six @ 6 marks", which prices some parts
-  // at 7 and some at 6 without saying which, and that one stays refused.
-  // Nothing removed.
-  // 2026-08-31 (seventh pass): 163 -> 190. The tariff table's COLUMNS were
-  // mis-cut. 2022 and 2024 Higher indent their question heads about eighteen
-  // points to the RIGHT of the rows beneath them — heads at x78, x252, x426
-  // over content at x60, x237, x410 — and the bands were a fixed inset from
-  // each head, so every row landed in the column to its LEFT and the first
-  // column's rows fell off the page. 2022 Higher read 29 part tariffs where
-  // 2023 read 64; 289 leaves across the subject were unpriced and climbing to
-  // their whole question. Boundaries are now halfway between heads: 367 part
-  // tariffs, and the printed totals still agree on every cell but the seven
-  // known ones.
-  //
-  // TWELVE SURVIVING CARDS HAD THE WRONG MARK TOTAL, read from a neighbouring
-  // question's column: eng-2022-hl-q4-a-i said 8 and the page says 4 (8 is
-  // Question 5's); eng-2024-hl-q4-a-ii said 15 and it is 8.
-  //
-  // Twelve whole-question and whole-part cards were REMOVED because their
-  // parts are now priced and carded individually — eng-2022-hl-q2, -q3, -q6,
-  // -q4-b-i, -q4-c, -q5-c-i, eng-2024-hl-q1-f, -q5-c, eng-2025-hl-q2-d,
-  // -q3-b-iii, -q4-a-ii, -q5-a-i. 32 asks gained, 15 lost where a newly
-  // separated part then fails its own provenance check; net +17.
-  // 2026-08-31 (eighth pass): 190 -> 207, Ordinary 69 -> 77. The COLUMNS
-  // have to be found before the rows are joined, not after. 2024 Ordinary
-  // sets the grid four columns wide — marker, rule and total for one
-  // question, then the same three for another — and the row join reached
-  // across the gutter, so one row read "(15) (a) Three parts @ 5 marks (i)
-  // Any three @ 3 marks", which is Q2(a)'s total welded to Q5(a)'s rule.
-  // Whichever column it was filed under, the other question's rule was gone.
-  // And a column's boundary is a small inset LEFT of the next head, not the
-  // midpoint: halfway between x101 and x304 falls inside Question 2's own
-  // table and handed its totals to Question 5. 402 part tariffs from 367.
-  //
-  // Two more cards had the WRONG MARK TOTAL: eng-2025-hl-q6-b said 34 where
-  // the table says "Any three @ 6 + 6 + 6" — 18 — and eng-2024-hl-q5-a-ii
-  // said 12 where the cell says 8.
-  //
-  // Five whole-question cards REMOVED, their parts now priced and carded one
-  // by one: eng-2022-hl-q6-b-ii, -q7, eng-2024-hl-q9, eng-2025-hl-q7, -q9.
-  // 2026-08-31 (ninth pass): 207 -> 217. Where the printed split names more
-  // parts than the scheme has marking points, the scheme has usually left
-  // nothing out — it has written the whole answer as one run of prose. "Give
-  // two reasons why tubular aluminium is used in scaffolding" is priced
-  // "3 + 2" and answered "Aluminium tubing has a high strength-to-weight
-  // ratio, it is lightweight, resists corrosion…", both reasons in one
-  // sentence. The card shows it and states the printed total, dividing
-  // nothing. It applies only when the prose holds as many clauses as the
-  // split names parts: "Calculate Young's modulus for metal A and for metal
-  // B" is priced "2 + 2" and the reader has only metal B's line, and a card
-  // stating four marks over it would show half an answer for full marks.
-  // A RULE — "Three parts @ 5 marks" against two points — stays refused.
-  //
-  // Also: the Symbol font's bullet reaches the text layer as a private-use
-  // codepoint, and the row join can leave it MID-LINE, where it renders as a
-  // box: "wear safety goggles to ▯ protect your eyes". 13 rows carried one.
-  // Nothing removed.
-  // 2026-08-31 (eleventh pass): 217 -> 226. A part with a bold heading and
-  // NOTHING under it: the heading is the answer, not the scheme restating the
-  // ask. "Identify the hybrid vehicle configuration shown opposite" is
-  // answered "Parallel Hybrid", in bold, on one line. What tells that apart
-  // from a restatement is the colon — "Metal fatigue:" introduces the points
-  // beneath it — plus two tests that keep labels and mark breakdowns out: two
-  // real words at least ("Frame", "Tracks: -" are labels off a diagram), and
-  // not mostly digits ("Labels 1 + 1 + 1", "2 4 6 8" is a graph's axis).
-  //
-  // And a marking point that REPEATS THE ASK is the scheme naming the part,
-  // not answering it. REMOVED for that: eng-2024-hl-q3-b-i, which answered
-  // "plot the stress-strain diagram" with "stress"; eng-2023-ol-q2-b, which
-  // answered "describe the operation of any one of the following furnaces"
-  // with "Blast furnace" for twelve marks; and eng-2024-ol-q4-d, which
-  // answered "state two safety precautions when soldering copper pipes" with
-  // the heading "Soldering copper pipes and fittings:".
-  // 2026-08-31 (twelfth pass): 226 -> 224, Ordinary 113 -> 119, and 12 more
-  // asks. A drawn rectangle is not necessarily a picture. The Ordinary
-  // schemes set their answers in a BORDERED TABLE, and each cell's border is
-  // a drawing wide and tall enough to pass any size test — so every answer
-  // inside one was dropped as a callout printed on a diagram. 2022 Ordinary
-  // Q6(b) explains cutting fluid, spindle speed and depth of cut in three
-  // such cells, and the scheme came back holding only the three headings.
-  // What tells a cell from a picture is what is written in it: a diagram is
-  // labelled in words, a table cell holds sentences.
-  //
-  // Two cards REMOVED. Both now carry a marking point recovered from inside
-  // such a cell, and that fuller point cannot be traced in the markdown the
-  // provenance gate reads: eng-2022-hl-q2-a-ii and eng-2023-hl-q5-b-i.
-  // 2026-08-31 (fourteenth pass): 225 -> 308, Ordinary 120 -> 147. A LETTER
-  // that states what each of its parts is worth prices them: "Any three @ 6 +
-  // 6 + 6" makes each roman under (a) six marks, and "Any two @ 8 + 8" makes
-  // each eight. That is the scheme's own arithmetic, and without it a roman
-  // with an answer of its own had to climb to its letter and drag every
-  // sibling with it — which matters past the tariff, because a card at (a)
-  // carries every roman's text, and one roman saying "shown opposite" refused
-  // the whole part. 54 of the figure refusals were a parent condemned by one
-  // child.
-  //
-  // Fifteen whole-LETTER cards were REMOVED and replaced by their romans,
-  // which is finer and citable part by part: eng-2021-hl-q3-a, -q6-a,
-  // eng-2021-ol-q4-b, -q5-b, -q7-a, eng-2022-hl-q6-b, eng-2023-hl-q4-c,
-  // -q5-c, -q7-c, eng-2023-ol-q4-c, eng-2024-hl-q4-c, -q5-c, eng-2024-ol-q4-c,
-  // eng-2025-hl-q4-c, eng-2025-ol-q4-c. No surviving card changed its marks.
-  // 2026-08-31 (fifteenth pass): 308 -> 313, Ordinary 147 -> 150. Three
-  // readings of the paper's own punctuation:
-  //
-  //   * a SEMICOLON closes a part. "Brinell hardness test and Vickers
-  //     hardness test;" is item (i) of three, whole, and the paper says so;
-  //     it was being flagged as text cut short and left unreviewed;
-  //   * a ROMAN that is only a list ITEM needs the instruction printed above
-  //     it. That same (i) has no verb anywhere — the instruction is "Select
-  //     any two from (i), (ii) or (iii) below and explain the difference
-  //     between the terms in each:" — and on a card of its own it is not a
-  //     question. 19 asks now read as one;
-  //   * "isolating switch" is a protective device, "acetylene" is fusion
-  //     welding, an "R-clip" is a mechanical fastening, and "material you
-  //     have selected" is the design function. Asks filing under no heading:
-  //     36 -> 2.
-  //
-  // REMOVED eng-2021-ol-q7-b-iv: with its instruction restored, its ask names
-  // the table it is read from, and the card cannot show it.
-  ['engineering:higher', ENG_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
-  // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
-  // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
-  // component named and answered "of round bars or internal diameters of
-  // holes", a fragment of the vernier answer from another part. The other
-  // three carried a fragment as their whole answer and now carry the sentence
-  // it belongs to, which the markdown cannot confirm: eng-2022-ol-q2-d-i,
-  // eng-2023-ol-q7-c-i (which answered "State one use of a solenoid" with a
-  // vernier caliper) and eng-2025-ol-q6-c-ii.
-  // 2026-08-31 (later): 24 -> 30, the same colon rule. Nothing removed.
-  // 2026-08-31 (later still): 30 -> 33, the same callout rule. Nothing removed.
-  // 2026-08-31 (fourth pass): 33 cards, same set size, one swapped. REMOVED
-  // eng-2023-ol-q6, which asked "Name any three of the lathe parts shown at
-  // A, B, C and D" with no labelled figure to show them on. The deck build
-  // was already dropping it; the author now refuses it, so the authored file
-  // and the deck agree about what the subject holds.
-  // 2026-08-31 (seventh pass): 71 -> 69, same column fix. REMOVED
-  // eng-2025-ol-q5-a-i and eng-2025-ol-q6-b, both whole-part cards whose
-  // romans are now priced separately and refused on their own provenance.
-  // 2026-08-31 (tenth pass): 77 -> 103, all in the Ordinary tariff tables.
-  // Two faults, both of them making a whole question unreadable:
-  //
-  //   * the baseline is rounded to the nearest POINT, not the tenth. 2023
-  //     Ordinary sets a part's marker at y243.1 and its rule at y242.9, so
-  //     sorting to a tenth put the marker AFTER the rule and joined it onto
-  //     the end — "Explain any three @ 5marks (15) (a)" — where it priced
-  //     nothing;
-  //   * the group total at the end of a cell is not part of the rule. "Any
-  //     two parts @ 7 marks (14)" offered 7 and 14 as candidate per-option
-  //     values, and two numbers where one was expected made the cell
-  //     unreadable. 2024 Ordinary priced Question 2 completely and Question 3
-  //     not at all.
-  //
-  // 488 part tariffs from 431, and EVERY printed total is now accounted for:
-  // 90 cells where either the cell's own arithmetic matches the total beside
-  // it, or its siblings sum to it, and none unexplained.
-  //
-  // Three whole-question cards REMOVED, their parts now priced and carded one
-  // by one: eng-2023-ol-q2, eng-2023-ol-q4, eng-2024-ol-q6.
-  // 2026-08-31 (thirteenth pass): 119 -> 120, Higher 224 -> 225. A question
-  // that says "of the following:" ANYWHERE in it is introducing a list, and
-  // the colon is not always its last character: 2025 HL Q9(b) reads "Answer
-  // any three of the following: inspection robot" — the lead-in with a
-  // picture's label run onto it — and its five romans are the list. Nothing
-  // removed.
-  // 2026-08-31 (sixteenth pass): 150 -> 153, and 83 cards now carry a
-  // figure. 35 more crops bound, every one opened: the hybrid vehicle
-  // diagram, five equilibrium diagrams with their regions lettered, the
-  // pultrusion line, the dune buggy and the mini excavator and the leg press
-  // with their parts labelled, the oxy-acetylene torch with valve A and valve
-  // B, a jet ski, a pressure tank, a hose reel, a torch casing, a carabiner
-  // screw lock, three chip formations, and the four Ordinary Level short-
-  // question picture rows.
-  //
-  // 16 were REJECTED by eye and recorded by name, in four kinds: the ruled
-  // box holds the ASK as well as the drawing, so the card would show the
-  // question twice; the crop is a LABEL and an arrow sliced off a bigger
-  // picture ("compressor blade" and an arc); it answers a SIBLING and would
-  // mislead here (a ratchet against "describe the operation of bevel gears");
-  // and the ones already rejected once, reappearing under a sibling roman now
-  // that the worklist is wider. Nothing removed.
-  ['engineering:ordinary', ENG_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
+  /* 2026-08-30: English 19/0 -> 210/450. Every independently selectable
+   * response on all twenty 2021-2025 Higher and Ordinary papers is carded.
+   * This includes all three OL prescribed-poetry Q2 alternatives per poem;
+   * compulsory linked parts remain together but retain separate PCLM grids.
+   * 205 cards open the real paper passage or poem in the source reader. */
+  ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
+  ['english:ordinary', ENGLISH_ORDINARY, 450, '002bc88c4783ace7725b9f0564d395f56d4477178df52045d4bb174941e2bb7e'],
+  /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
+   * responses across 2021–2025 Higher and Ordinary are present, including
+   * listening audio and the real PDF pages for passages and printed poems. */
+  ['irish:higher', IRISH_HIGHER, 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
+  ['irish:ordinary', IRISH_ORDINARY, 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
+  /* 2026-08-30: complete Art written-paper launch. All 462 separately marked
+   * tasks and finite printed answer routes across 2021–2025 are present. This
+   * includes all ten heading pairs for 2025 OL Q4(a), while keeping Section
+   * B/C holistic descriptor essays intact and splitting only at published
+   * task and mark boundaries. */
+  ['art:higher', ART_HIGHER, 222, '720e68e98f7d3254af15e7834a3fdbd6098ca319d00ccce82fa570d411fb15a9'],
+  ['art:ordinary', ART_ORDINARY, 240, 'fcf4b64bd5bad786856087dfc8cefdc133233a12a74516166205d1f8898e193b'],
+  /* 2026-08-31: Geography now covers 2021-2026. All 563 answerable base tasks
+   * are present, with every finite route expanded into a usable card. The 85
+   * historical tasks whose separate OS map/aerial source is not yet held stay
+   * census-held; every 2026 task ships with its complete official source set.
+   * The 2021 HL Q6C choose-two audit also adds its nine missing combinations
+   * while retaining the original card id for saved-progress continuity. */
+  ['geography:higher', GEOGRAPHY_HIGHER, 445, '7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc'],
+  ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -741,6 +410,28 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8253);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(9726);
+  });
+
+  it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
+    const addedHigherRoutes = new Set(GEOGRAPHY_HIGHER
+      .filter(card => card.id.startsWith('geography-2021-hl-p2-q6c-'))
+      .map(card => card.id));
+    expect(addedHigherRoutes.size).toBe(9);
+    expect(identityHash(GEOGRAPHY_HIGHER.filter(card =>
+      card.year <= 2025 && !addedHigherRoutes.has(card.id))))
+      .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
+    expect(identityHash(GEOGRAPHY_ORDINARY.filter(card => card.year <= 2025)))
+      .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
+  });
+
+  it('adds the Art choose-two routes without replacing any existing card id', () => {
+    const correctionIds = new Set(ART_ORDINARY
+      .filter(card => card.questionRef.startsWith('2025 OL Q4(a)')
+        && card.id !== 'art-2025-ol-q4-a')
+      .map(card => card.id));
+    expect(correctionIds.size).toBe(9);
+    expect(identityHash(ART_ORDINARY.filter(card => !correctionIds.has(card.id))))
+      .toBe('e5403f6e685e0133ad94ef321f97a77f96127c2ee3570395e00662d7719ddbd5');
   });
 });

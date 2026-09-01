@@ -42,6 +42,14 @@ import { CARDS as HE_HIGHER } from '../components/MarkBank/cards/home-economics/
 import { CARDS as HE_ORDINARY } from '../components/MarkBank/cards/home-economics/ordinary';
 import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/higher';
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
+import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
+import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
+import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
+import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
+import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -55,10 +63,13 @@ const SAMPLE_CARDS = [
   ...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY,
   ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
-  ...ECON_HIGHER, ...ECON_ORDINARY,
+  ...ECON_HIGHER, ...ECON_ORDINARY, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
+  ...IRISH_HIGHER, ...IRISH_ORDINARY,
+  ...ART_HIGHER, ...ART_ORDINARY,
+  ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
 ];
 import {
-  isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles,
+  isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
   rowCapFor, isValidCardId, optionCapFor, MAX_LONG_OPTION_ROWS,
 } from '../types/markBank';
 
@@ -117,7 +128,7 @@ describe('a best-of menu stays readable', () => {
    * build rather than enforced, because ten one-word options are lighter than
    * eight paragraphs. What must not happen is a menu nobody can work through. */
   test('no menu exceeds what any question may show', () => {
-    const over = SAMPLE_CARDS.flatMap(card =>
+    const over = SAMPLE_CARDS.filter(isPointCard).flatMap(card =>
       card.rows.filter(r => r.group && r.group.options.length > MAX_LONG_OPTION_ROWS)
         .map(r => `${card.id}/${r.id}: ${r.group!.options.length}`));
     expect(over, 'menus past the ceiling').toEqual([]);
@@ -143,7 +154,7 @@ describe('every card traces to the marking scheme on disk', () => {
 
   test('every marking point appears in its own scheme', () => {
     const bad: string[] = [];
-    for (const card of SAMPLE_CARDS) {
+    for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       const scheme = schemeText(card);
       for (const row of card.rows) {
         const claims = row.kind === 'anyN' && row.group
@@ -180,7 +191,7 @@ describe('no card can repeat the fabrication that shipped first time', () => {
 
   test('every row carries an answer, not a mark tariff', () => {
     const bad: string[] = [];
-    for (const card of SAMPLE_CARDS) {
+    for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       for (const row of card.rows) {
         if (row.kind !== 'anyN' && isContentFreeRow(row.verbatim)) {
           bad.push(`${card.questionRef}: "${row.verbatim}"`);
@@ -194,7 +205,7 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     // The cap depends on the tariff: five REQUIRED rows, but a best-N-of-M card
     // may show up to MAX_OPTION_ROWS, because its surplus rows are a menu the
     // student picks from rather than a list they must recall.
-    const bad = SAMPLE_CARDS
+    const bad = SAMPLE_CARDS.filter(isPointCard)
       .filter(c => !KNOWN_OVER_ROW_CAP.has(c.id))
       .filter(c => !isValidCardId(c.id) || c.rows.length === 0
         || c.rows.length > rowCapFor(c.tariffModel.kind))
@@ -209,7 +220,7 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const byId = new Map(SAMPLE_CARDS.map(c => [c.id, c]));
     const stale = [...KNOWN_OVER_ROW_CAP].filter(id => {
       const c = byId.get(id);
-      return !c || c.rows.length <= rowCapFor(c.tariffModel.kind);
+      return !c || !isPointCard(c) || c.rows.length <= rowCapFor(c.tariffModel.kind);
     });
     expect(stale, `stale row-cap exemptions — remove them: ${stale.join(', ')}`).toEqual([]);
   });
@@ -231,7 +242,7 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const bad = SAMPLE_CARDS.filter(c => {
       if (/you may include a labelled/i.test(c.questionText)) return false;
       const namesLetters = /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/i.test(c.questionText);
-      return namesLetters && !isDiagramCard(c);
+      return namesLetters && !isDiagramCard(c) && !c.sourceMaterial;
     }).map(c => `${c.questionRef}: "${c.questionText}"`);
     expect(bad, show(bad)).toEqual([]);
   });
@@ -305,6 +316,24 @@ describe('figures are real crops from the paper', () => {
 /* ------------------------------------------------------------ paper ids --- */
 
 describe('every card points at the question paper it came from', () => {
+  test('required source material has a real paper and ordered page numbers', () => {
+    const bad: string[] = [];
+    for (const card of SAMPLE_CARDS) {
+      const source = card.sourceMaterial;
+      if (!source) continue;
+      const pagesAreValid = source.pages.length > 0
+        && source.pages.every(page => Number.isInteger(page) && page > 0)
+        && new Set(source.pages).size === source.pages.length
+        && source.pages.every((page, index) => index === 0 || page > source.pages[index - 1]);
+      if (!card.paperFileid) bad.push(`${card.questionRef}: source pages have no question-paper file id`);
+      if (!pagesAreValid) bad.push(`${card.questionRef}: invalid source pages ${JSON.stringify(source.pages)}`);
+      if (!source.label.trim() || !source.title.trim() || !source.attribution.trim()) {
+        bad.push(`${card.questionRef}: source identity or attribution is blank`);
+      }
+    }
+    expect(bad, show(bad)).toEqual([]);
+  });
+
   test('never at the marking scheme', async () => {
     // The first Biology build defaulted paperFileid to a literal, and that
     // literal was the SCHEME's id — so a deep link would have opened the answers
@@ -349,6 +378,14 @@ describe('the size manifest matches the decks it describes', () => {
     ['chemistry', 'ordinary', CHEM_ORDINARY],
     ['physics', 'higher', PHYS_HIGHER],
     ['physics', 'ordinary', PHYS_ORDINARY],
+    ['english', 'higher', ENGLISH_HIGHER],
+    ['english', 'ordinary', ENGLISH_ORDINARY],
+    ['irish', 'higher', IRISH_HIGHER],
+    ['irish', 'ordinary', IRISH_ORDINARY],
+    ['art', 'higher', ART_HIGHER],
+    ['art', 'ordinary', ART_ORDINARY],
+    ['geography', 'higher', GEOGRAPHY_HIGHER],
+    ['geography', 'ordinary', GEOGRAPHY_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -406,8 +443,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       'home-economics': 'home-economics-', economics: 'economics-',
       'construction-studies': 'cons-',
       maths: 'maths-',
-      'computer-science': 'cs-',
-      engineering: 'eng-',
+      english: 'english-',
+      irish: 'irish-',
+      art: 'art-',
+      geography: 'geography-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

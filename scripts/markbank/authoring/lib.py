@@ -142,180 +142,6 @@ ROMAN_ORDER = {r: i for i, r in enumerate(
     ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii'])}
 
 
-
-class _EngSource:
-    """eng_scheme.EngScheme behind the interface Author expects of a scheme.
-
-    The Engineering scheme is read off the page, but the build's provenance
-    gate reads the MARKDOWN extraction, so verify() is answered by the
-    markdown as it is for every other subject: a claim lifted from the PDF has
-    to appear in the document the gate checks against.
-    """
-
-    def __init__(self, scheme, md):
-        self._scheme, self._md = scheme, md
-        self.path = md.path
-
-    def points(self, q, letter=None, roman=None):
-        # Everything at this key and beneath it, because that is what the key's
-        # tariff prices. `use` indexes into THIS list, so the author and the
-        # card must be reading the same one.
-        return self._scheme.points_under(q, letter, roman)
-
-    def marks(self, q, letter=None, roman=None):
-        t = self._scheme.tariff(q, letter, roman)
-        return [str(t)] if t else []
-
-    def verify(self, claims):
-        return self._md.verify(claims)
-
-    def paths(self):
-        return list(self._scheme.body())
-
-
-class _CsSource:
-    """cs_scheme.CsScheme behind the interface Author expects of a scheme.
-
-    points() returns the scheme's marking points with the credit BANDS already
-    removed -- "Very good explanation - clear understanding demonstrated" is
-    the rubric, and a card built from it would tell a student how they were
-    graded rather than what the answer was.
-    """
-
-    def __init__(self, scheme, md):
-        self._scheme, self._md = scheme, md
-        # The build's provenance gate reads the MARKDOWN scheme, so a claim
-        # lifted from the PDF is checked against that.
-        self.path = md.path
-
-    def points(self, q, letter=None, roman=None):
-        own = self._scheme.points(q, letter, roman)
-        if own or letter is not None or roman is not None:
-            return own
-        # A whole-question key whose answers are printed under its PARTS.
-        # Computer Science prices Section A at the question ("5 marks") and
-        # then states the answer under (a) and (b), so a card citing the
-        # question has to gather what its parts hold. Still the scheme's own
-        # text, in the scheme's own order.
-        out = []
-        for k in self._scheme.parts():
-            if k[0] == q and (k[1] is not None or k[2] is not None):
-                out.extend(self._scheme.points(*k))
-        return out
-
-    def marks(self, q, letter=None, roman=None):
-        t = self._scheme.tariff(q, letter, roman)
-        return [t] if t else []
-
-    def tariff(self, q, letter=None, roman=None):
-        return self._scheme.tariff(q, letter, roman)
-
-    def bands(self, q, letter=None, roman=None):
-        return self._scheme.bands(q, letter, roman)
-
-    def verify(self, claims):
-        return self._md.verify(claims)
-
-    def paths(self):
-        return self._scheme.parts()
-
-PAPER_TERMINAL = re.compile(r'[.?!]$')
-# An exam command word, for telling an instruction from a list item.
-COMMAND = re.compile(
-    r'\b(?:answer|briefly|calculate|compare|complete|define|describe'
-    r'|determine|differentiate|discuss|distinguish|draw|explain|give'
-    r'|identify|indicate|label|list|name|outline|select|sketch|state'
-    r'|suggest)\b', re.I)
-# The page's own furniture, swept into a question block by the reader. A bare
-# "Figure 3" at the end is the CAPTION of the picture printed beside the ask,
-# not part of it; "Section B Long Questions 76 marks" is the banner of the
-# section that starts underneath; and "This question continues on the next
-# page" is an instruction to the candidate about the paper.
-CONTINUES = re.compile(r'\s*This question continues on the next page\.?', re.I)
-TRAILING_FURNITURE = re.compile(
-    r'(?:\s*(?:Figures?|Figs?\.?)\s*\d+[a-z]?)+\s*$'
-    r'|\s*Section\s+[A-C]\b[^.]{0,60}?\d{1,3}\s*marks?\s*$', re.I)
-
-
-def _without_furniture(text):
-    """The question with the page's furniture off its end, or None.
-
-    Self-checking, the same way the table cut is: the strip is taken only
-    where what remains still ends like a sentence. That is what separates a
-    caption swept onto the end of the ask from a question that genuinely ends
-    by naming a figure.
-    """
-    q = ' '.join(CONTINUES.sub(' ', text).split())
-    for _ in range(4):
-        stripped = TRAILING_FURNITURE.sub('', q).strip()
-        if stripped == q:
-            break
-        q = stripped
-    q = ' '.join(q.split())
-    if q == ' '.join(text.split()) or len(q) < 25 or len(q.split()) < 5:
-        return None
-    return q if PAPER_TERMINAL.search(q) else None
-
-
-def _without_listing(question, lines, strict=False):
-    """The question text with the crop's own lines removed.
-
-    A PROGRAM is a contiguous run of monospaced lines and occurs once, so the
-    first place its opening line is found is where it starts. A TABLE's labels
-    are ordinary words that also appear in the question's own sentence --
-    "shown in Figure 7", "in Column A" -- so cutting at the first match left
-    "Complete the truth table for the AND logic gate, shown in". Strict mode
-    is for those: it tries every place the first label occurs, wants a run of
-    at least three labels, and accepts a cut only when what remains still ends
-    like a sentence. Where nothing satisfies that, it declines and the part
-    stays flagged for a person to look at.
-    """
-    q = ' '.join(question.split())
-    toks = [' '.join(t.split()) for t in lines]
-    toks = [t for t in toks if len(t) >= 3]
-    if not toks:
-        return None
-    starts = []
-    at = q.find(toks[0])
-    while at > 0:
-        starts.append(at)
-        if not strict:
-            break
-        at = q.find(toks[0], at + 1)
-    for lo in starts:
-        out = _cut(q, toks, lo, strict)
-        if out:
-            return out
-    return None
-
-
-def _cut(q, toks, lo, strict):
-    cur = lo + len(toks[0])
-    run = 1
-    for t in toks[1:]:
-        i = q.find(t, cur)
-        # 14 characters of slack: a blank line in the listing shows up as its
-        # bare line numbers ("3 4") between two lines of code.
-        if i < 0 or i - cur > 14:
-            continue
-        cur = i + len(t)
-        run += 1
-    if strict and run < 3:
-        return None
-    head = re.sub(r'[\s\d]+$', '', q[:lo].rstrip())
-    tail = re.sub(r'^[\s\d]+', '', q[cur:].lstrip())
-    out = ' '.join(f'{head} {tail}'.split())
-    # What is left has to still be a question. 2023 HL Q3 matched a crop line
-    # against the fourth character of its text and the "removal" reduced the
-    # whole ask to "(a)". Taking the listing out may shorten a question; it
-    # may not empty it.
-    if len(out) < 25 or len(out.split()) < 5:
-        return None
-    if strict and not PAPER_TERMINAL.search(out):
-        return None
-    return out
-
-
 class Author:
     def __init__(self, subject, year, level):
         level = {'higher': 'hl', 'ordinary': 'ol'}.get(level, level)
@@ -326,14 +152,7 @@ class Author:
         self.scheme = Scheme(subject, year, level)
         # The PDF-backed parser, for parts the flattened markdown mangles. See
         # agsci_scheme_pdf: neither parser dominates, so the choice is per part.
-        # Tolerated, not required: SchemePdf raises UnboundLocalError on the
-        # Computer Science schemes, and that subject reads its own table
-        # through cs_scheme instead. A parser that cannot open a subject must
-        # not stop the subject being authored.
-        try:
-            self.scheme_pdf = SchemePdf(subject, year, level)
-        except Exception:                                    # noqa: BLE001
-            self.scheme_pdf = None
+        self.scheme_pdf = SchemePdf(subject, year, level)
         # Chemistry's schemes are a five-column table that neither generic
         # parser reads correctly. chem_scheme keys the table the way the PAPER
         # numbers it and reads its super/subscripts from the baseline, which is
@@ -343,18 +162,12 @@ class Author:
             from chem_scheme import ChemScheme
             self.scheme_table = _TableSource(ChemScheme(year, level),
                                              self.paper, self.scheme)
-        elif subject == 'computer-science':
-            from cs_scheme import CsScheme
-            self.scheme_table = _CsSource(CsScheme(year, level), self.scheme)
-        elif subject == 'engineering':
-            from eng_scheme import EngScheme
-            self.scheme_table = _EngSource(EngScheme(year, level), self.scheme)
         self.cards = []
 
     def _source(self, source):
         if source == 'table':
             if self.scheme_table is None:
-                raise Refused(f'source="table" has no reader for {self.subject}')
+                raise Refused('source="table" is Chemistry only')
             return self.scheme_table
         if source not in ('md', 'pdf'):
             raise Refused(f'unknown scheme source {source!r} — use "md", "pdf" '
@@ -383,15 +196,15 @@ class Author:
 
     def card(self, q, letter=None, roman=None, *, topic, concept,
              use=None, marks=None, tariff='fixed', total=None, figure=None,
-             question_figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
-             tick=None, first_sentence=False, ladder=None, listing=(),
-             printed=()):
+             tick=None, first_sentence=False, ladder=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
+        if not question:
+            raise Refused(f'{ref}: the paper has no text for this part')
 
         # A part that is only a CUE hands its ask to the romans beneath it:
         # 2021 OL Chemistry Q9(c) reads "From your graph find" and (i) and (ii)
@@ -400,80 +213,15 @@ class Author:
         # paper's own words, in the paper's own order. Only where the part
         # cannot stand on its own; a part with a real question of its own keeps
         # it, and a card citing a CHILD is untouched.
-        # Tested BEFORE the empty check, not after: a question that states
-        # nothing of its own is exactly the case that needs its children.
-        # Computer Science prices Section A at the question and prints the ask
-        # only under (a) and (b), so the parent's own text is empty and a card
-        # citing the question was refused for having no question text at all.
-        joined_kids = False
-        # ... and so is a part that ENDS ON A COLON, however long it is.
-        # "Discuss the contribution that any one of the following has made to
-        # technology:" is 77 characters and names nobody; the three names are
-        # its children, and without them the card cannot be answered and files
-        # under no syllabus topic either, because every topic word it has is
-        # in the names.
-        # A ROMAN that is only a list ITEM needs the instruction printed above
-        # it. 2021 HL Q3(a) reads "Select any two from (i), (ii) or (iii)
-        # below and explain the difference between the terms in each:" and its
-        # (i) is "Brinell hardness test and Vickers hardness test;" -- terms,
-        # with no verb anywhere. On a card of its own that is not a question.
-        if roman is not None and question:
-            _own = ' '.join(question.split())
-            if not COMMAND.match(_own):
-                try:
-                    _up = ' '.join((self.paper.text(q, letter, None)
-                                    or '').split())
-                except Exception:                            # noqa: BLE001
-                    _up = ''
-                if _up.endswith(':') and COMMAND.search(_up):
-                    question = f'{_up} {_own}'
-
-        # ... and so does one that says "of the following:" anywhere in it. The
-        # colon is the signal and it is not always the last character: 2025 HL
-        # Q9(b) reads "Answer any three of the following: inspection robot",
-        # the lead-in with the first item already run onto it, and its five
-        # romans are the list it is introducing.
-        _q = ' '.join((question or '').split())
-        if roman is None and (len(_q) < 40 or _q.endswith(':')
-                              or re.search(r'\bfollowing\s*:', _q)):
+        if roman is None and len(' '.join(question.split())) < 40:
             kids = [k for k in self.paper.parts
-                    if k[0] == q
-                    and (k[1] == letter if letter else k[1] is not None or k[2])
-                    and (k[1], k[2]) != (letter, roman)]
+                    if k[0] == q and k[1] == letter and k[2]]
             if kids:
-                kids.sort(key=lambda k: (k[1] or '', ROMAN_ORDER.get(k[2], 99)))
-                tail = ' '.join(
-                    f'({k[2] or k[1]}) {(self.paper.text(*k) or "").strip()}'
-                    for k in kids)
+                kids.sort(key=lambda k: ROMAN_ORDER.get(k[2], 99))
+                tail = ' '.join(f'({k[2]}) {(self.paper.text(*k) or "").strip()}'
+                                for k in kids)
                 if tail.strip():
-                    question = f'{(question or "").rstrip()} {tail}'.strip()
-                    joined_kids = True
-
-        # A PROGRAM the crop carries, taken back out of the question text.
-        # Computer Science prints its listings inside the question block, and
-        # the text layer returns them run into the prose: "What is the output
-        # of the following piece of Python code? 1 x = 3 2 print("x is", x)".
-        # Where a figure carries that listing, the card's question is the ask
-        # without it -- the paper's own words either side, nothing rewritten,
-        # and the code shown as the paper set it rather than as a text layer
-        # mangled it. The lines are matched IN ORDER from the first one found,
-        # so a fragment that also occurs in the prose cannot start the cut.
-        listing_removed = False
-        if question:
-            without = _without_furniture(question)
-            if without:
-                question, listing_removed = without, True
-        if listing and question:
-            without = _without_listing(question, listing)
-            if without:
-                question, listing_removed = without, True
-        if printed and question:
-            without = _without_listing(question, printed, strict=True)
-            if without:
-                question, listing_removed = without, True
-
-        if not question:
-            raise Refused(f'{ref}: the paper has no text for this part')
+                    question = f'{question.rstrip()} {tail}'.strip()
 
         # Where a paper sets two questions side by side, the block segmentation
         # welds the neighbour's text onto this one: 2023 OL Q2(c) comes out as
@@ -493,22 +241,7 @@ class Author:
 
         # The flag is raised on what the paper block held; a scheme-confirmed
         # trim answers it, so the check runs on the text the card will carry.
-        # The flag is raised on what the paper BLOCK held. Where the crop has
-        # taken the listing back out, the text the card carries is a different
-        # string, and it answers the flag on its own terms if it now ends in a
-        # full stop: what made it look truncated was the program running off
-        # its end.
-        flagged = self.paper.suspect(q, letter, roman)
-        # The flag is raised on what the paper BLOCK held. Where the children
-        # have been joined on, the text the card carries is a different string
-        # and answers the flag on its own terms: a part that reads "Answer any
-        # three of the following:" is flagged for stopping on a colon, and
-        # once its three children are joined it ends in a full stop like any
-        # other question.
-        if flagged and (listing_removed or joined_kids) \
-                and PAPER_TERMINAL.search(question.strip()):
-            flagged = False
-        if not first_sentence and flagged and not checked:
+        if not first_sentence and self.paper.suspect(q, letter, roman) and not checked:
             raise Refused(
                 f'{ref}: question text is flagged and unreviewed — {question!r}. '
                 f'Open the page; if it is right, pass checked="<why>".')
@@ -622,13 +355,6 @@ class Author:
             if not notation:
                 raise Refused(f'{ref}: ladder needs a notation giving the scale')
             marks = [None] * len(chosen)
-        # The same shape for a different reason. The scheme prices the QUESTION
-        # and states its points without saying how those marks divide across
-        # its parts, so no row has a value of its own. Computer Science Section
-        # A does this throughout: a five-mark question prints (a) and (b) and
-        # the scheme answers each without ever saying what either is worth.
-        if tariff == 'questionTotal':
-            marks = [None] * len(chosen)
 
         scheme_marks = scheme.marks(q, letter, roman) or self.scheme.marks(q, letter, roman)
         if marks is None:
@@ -641,14 +367,7 @@ class Author:
         if len(marks) != len(chosen):
             raise Refused(f'{ref}: {len(marks)} marks for {len(chosen)} points')
 
-        if tariff == 'questionTotal':
-            # There is nothing to sum, so the total has to be given: it is the
-            # tariff the paper prints on the question.
-            if total is None:
-                raise Refused(f'{ref}: a questionTotal card must be given the '
-                              f'total the paper prints')
-            computed = total
-        elif ladder is not None:
+        if ladder is not None:
             computed = ladder
         else:
             computed = sum(marks)
@@ -706,28 +425,12 @@ class Author:
         }
         if stem:
             text = self.paper.stem(q, letter) or self.paper.stem(q)
-            # The crop carries the listing here too. A shared stem is where a
-            # printed table most often ends up -- 2021 OL Q15's stem came out
-            # as "Figure 7 INPUTS OUTPUTS A B A OR B 0 0 0 1 1 0 1 1", which
-            # card lint reports as label junk and a student reads as noise.
-            if listing and text:
-                text = _without_listing(text, listing) or text
-            if printed and text:
-                text = _without_listing(text, printed, strict=True) or text
             if text:
                 card['stem'] = text
         if notes:
             card['notes'] = notes
         if figure:
             card['figureKey'] = figure
-        # The SEC's own print of the ask and its setup, shown BEFORE the
-        # reveal. It is the right slot for a stimulus printed once and asked
-        # about by several parts -- one hybrid vehicle diagram over (d)(i) and
-        # (d)(ii) -- which the answer slot's one-crop-one-card rule is there
-        # to forbid, and which would otherwise appear only once the student
-        # has already answered.
-        if question_figure:
-            card['questionFigureKey'] = question_figure
         if labels == 'auto':
             labels = {}
             for point in chosen:

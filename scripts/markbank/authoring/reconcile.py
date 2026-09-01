@@ -72,6 +72,18 @@ def shipped_cards(subject):
     "g-parent1") and paired each with the next card's citation, which
     invented five hundred phantom orphans in Business alone.
     """
+    if subject in ('english', 'irish', 'art', 'geography'):
+        # Paper-specific facts live in a reviewed generated manifest and are
+        # converted to runtime cards by factory.ts; the tiny level exports do
+        # not contain literal card objects for the ledger to parse.
+        path = os.path.join(DECKS, subject, 'authored.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        cards = payload.get('cards', [])
+        declared_count = payload.get('cardCount', payload.get('meta', {}).get('cardCount'))
+        if declared_count != len(cards):
+            raise AssertionError(f'{subject} authored manifest count is stale')
+        return [(card['id'], card['questionRef']) for card in cards]
+
     out = []
     for level in ('higher', 'ordinary'):
         path = os.path.join(DECKS, subject, f'{level}.ts')
@@ -84,6 +96,117 @@ def shipped_cards(subject):
             if cid and ref:
                 out.append((cid.group(1), ref.group(1)))
     return out
+
+
+def reconcile_manifest(subject, census):
+    """Reconcile a language corpus by stable census ids, not science grammar.
+
+    Printed addresses restart under paper-specific texts, modes and choices.
+    The bespoke census has already resolved them into one stable id per
+    independently selectable response, so exact id + questionRef matching is
+    stronger than forcing them through the science Q3(b)(ii) parser.
+    """
+    expected = {}
+    paper_rows = []
+    for paper in census['papers']:
+        ids = []
+        for leaf in paper['leaves']:
+            cid = leaf['key'][0]
+            expected[cid] = leaf['label']
+            ids.append(cid)
+        paper_rows.append((paper, ids))
+
+    cards = shipped_cards(subject)
+    covered = set()
+    orphans = []
+    for cid, ref in cards:
+        wanted = expected.get(cid)
+        if wanted is None:
+            orphans.append({'id': cid, 'ref': ref,
+                            'why': f'card id is absent from the {subject} paper census'})
+        elif ref != wanted:
+            orphans.append({'id': cid, 'ref': ref,
+                            'why': f'census address is "{wanted}"'})
+        else:
+            covered.add(cid)
+
+    papers = []
+    for paper, ids in paper_rows:
+        open_ids = [cid for cid in ids if cid not in covered]
+        papers.append({
+            'year': paper['year'], 'level': paper['level'],
+            'paper': paper['paper'], 'leaves': len(ids),
+            'covered': len(ids) - len(open_ids), 'excluded': 0,
+            'open': [expected[cid] for cid in open_ids],
+        })
+    leaves = len(expected)
+    return {
+        'subject': subject, 'mode': census['mode'],
+        'cards': len(cards), 'leaves': leaves,
+        'covered': len(covered), 'excluded': 0,
+        'open': leaves - len(covered),
+        'coveragePct': round(100 * len(covered) / leaves, 1) if leaves else 0.0,
+        'orphans': orphans, 'unparsed': [], 'staleExclusions': [],
+        'papers': papers, 'censusFlags': 0,
+    }
+
+
+def reconcile_geography(census):
+    """Reconcile generated route cards to Geography's printed base tasks.
+
+    A finite printed choice can deliberately create several cards, so the
+    stable coverage unit is the questionRef before its route label, not the
+    expanded card id.
+    """
+    expected = {}
+    excluded = set()
+    paper_rows = []
+    for paper in census['papers']:
+        refs = []
+        for leaf in paper['leaves']:
+            ref = leaf['label']
+            expected[ref] = leaf['key'][0]
+            refs.append(ref)
+            if leaf.get('status') == 'excluded':
+                excluded.add(ref)
+        paper_rows.append((paper, refs))
+
+    covered = set()
+    orphans = []
+    cards = shipped_cards('geography')
+    for cid, ref in cards:
+        base_ref = ref.split(' · ', 1)[0]
+        if base_ref not in expected:
+            orphans.append({
+                'id': cid, 'ref': ref,
+                'why': 'base task is absent from the Geography paper census',
+            })
+        else:
+            covered.add(base_ref)
+
+    papers = []
+    for paper, refs in paper_rows:
+        open_refs = [ref for ref in refs
+                     if ref not in covered and ref not in excluded]
+        covered_here = sum(ref in covered for ref in refs)
+        excluded_here = sum(ref in excluded for ref in refs)
+        papers.append({
+            'year': paper['year'], 'level': paper['level'],
+            'paper': paper['paper'], 'leaves': len(refs),
+            'covered': covered_here, 'excluded': excluded_here,
+            'open': open_refs,
+        })
+    leaves = len(expected)
+    return {
+        'subject': 'geography', 'mode': census['mode'],
+        'cards': len(cards), 'leaves': leaves,
+        'covered': len(covered), 'excluded': len(excluded),
+        'open': leaves - len(covered) - len(excluded),
+        'coveragePct': round(
+            100 * (len(covered) + len(excluded)) / leaves, 1) if leaves else 0.0,
+        'orphans': orphans, 'unparsed': [], 'staleExclusions': [],
+        'papers': papers, 'censusFlags': 0,
+    }
 
 
 def _classify(tok):
@@ -250,6 +373,10 @@ def load_exclusions(subject):
 
 def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
+    if subject == 'geography':
+        return reconcile_geography(census)
+    if subject in ('english', 'irish', 'art'):
+        return reconcile_manifest(subject, census)
     sections_mode = census['mode'] == 'sections'
     idx = leaf_index(census)
     covered = collections.defaultdict(set)      # paper key -> set(leaf)
@@ -391,6 +518,11 @@ def content_hash(subject):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())
+    if subject in ('english', 'irish', 'art', 'geography'):
+        # These corpora are data-driven, so the manifest and factory can
+        # materially change a runtime card even when the tiny exports do not.
+        for name in ('factory.ts', 'authored.json'):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
 
@@ -414,18 +546,29 @@ def refs_hash(subject):
     and nothing would force a re-measure. The hash moves when any citation
     does."""
     import hashlib
-    text = '\n'.join(f'{cid}\t{ref}' for cid, ref in shipped_cards(subject))
+    cards = shipped_cards(subject)
+    # Data-driven language decks may order their runtime cards independently
+    # from the manifest. Coverage identity is the stable id/ref pair.
+    if subject in ('english', 'irish', 'art', 'geography'):
+        cards = sorted(cards)
+    text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
 
 
 def baseline_write(results):
-    data = {r['subject']: {
-        'leaves': r['leaves'], 'covered': r['covered'], 'open': r['open'],
-        'orphans': len(r['orphans']), 'cards': r['cards'],
-        'coveragePct': r['coveragePct'], 'refsHash': refs_hash(r['subject']),
-        'contentHash': content_hash(r['subject']),
-        'excluded': r['excluded'], 'papers': papers_inventory(r['subject']),
-    } for r in results}
+    # A subject-only remeasurement must not erase every other subject's
+    # ledger entry. Preserve the existing baseline and replace only targets.
+    data = {}
+    if os.path.exists(BASELINE):
+        data = json.load(open(BASELINE, encoding='utf-8'))
+    for r in results:
+        data[r['subject']] = {
+            'leaves': r['leaves'], 'covered': r['covered'], 'open': r['open'],
+            'orphans': len(r['orphans']), 'cards': r['cards'],
+            'coveragePct': r['coveragePct'], 'refsHash': refs_hash(r['subject']),
+            'contentHash': content_hash(r['subject']),
+            'excluded': r['excluded'], 'papers': papers_inventory(r['subject']),
+        }
     with open(BASELINE, 'w', encoding='utf-8') as fh:
         json.dump(data, fh, indent=1, sort_keys=True)
         fh.write('\n')

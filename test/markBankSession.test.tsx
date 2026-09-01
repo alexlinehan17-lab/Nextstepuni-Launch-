@@ -24,11 +24,19 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard } from '@/types/markBank';
+import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
+import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
+
+vi.mock('@/components/PaperTrail/vaultDocs', () => ({
+  // Source-reader interaction is independent of PDF rasterisation. Keep the
+  // document in its deliberate loading state here; Paper Trail owns canvas QA.
+  vaultPdf: vi.fn(() => new Promise(() => {})),
+}));
 
 const row = (o: Partial<MarkRow> = {}): MarkRow => ({ id: 'r0', kind: 'point', verbatim: 'Oesophagus', marks: 2, ...o });
 
-const card = (o: Partial<SecCard> = {}): SecCard => ({
+const card = (o: Partial<SecQuestionCard> = {}): SecQuestionCard => ({
   source: 'sec', kind: 'question',
   id: 'bio-2025-hl-q6-ab', subjectId: 'biology', level: 'higher',
   topicId: 'biology-2-3', conceptId: 'digestive-parts',
@@ -41,7 +49,7 @@ const card = (o: Partial<SecCard> = {}): SecCard => ({
   specVersion: 'lc-biology-2002',
   qa: { gates: [], humanReviewedBy: 'al', humanReviewedAt: '2026-07-30' },
   ...o,
-} as SecCard);
+} as SecQuestionCard);
 
 const renderSession = (cards: SecCard[], reviewPool?: { total: number; label: string }) => {
   const onGrade = vi.fn();
@@ -218,6 +226,138 @@ describe('the question comes first and stays', () => {
     expect(screen.getByRole('heading', { name: /Work with the wording/i })).toBeInTheDocument();
     expect(screen.getAllByText('Name the parts labelled A and B.').length).toBeGreaterThanOrEqual(1);
     expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
+  });
+
+  test('opens required source pages before reveal and lets the student move through them', () => {
+    renderSession([card({
+      subjectId: 'english',
+      paperFileid: 'LC002ALP100EV',
+      questionText: 'Support your answer with reference to TEXT 1.',
+      sourceMaterial: {
+        kind: 'source-text',
+        label: 'TEXT 1',
+        title: 'The Underdog Effect — Changing Perspectives',
+        pages: [2, 3],
+        attribution: 'David Robson, BBC Essential, August 2024.',
+        presentationNote: 'Official SEC examination layout.',
+      },
+    })]);
+
+    fireEvent.click(screen.getByRole('button', { name: /Read TEXT 1/i }));
+    expect(screen.getByRole('dialog', { name: /The Underdog Effect/i })).toBeInTheDocument();
+    expect(screen.getByText('Printed page 2')).toBeInTheDocument();
+    expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
+
+    const pages = screen.getByLabelText('TEXT 1 pages');
+    fireEvent.touchStart(pages, { touches: [{ clientX: 320, clientY: 360 }] });
+    fireEvent.touchEnd(pages, { changedTouches: [{ clientX: 80, clientY: 365 }] });
+    expect(screen.getByLabelText('Page 2 of 2')).toBeInTheDocument();
+    expect(screen.getByText('Printed page 3')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Previous source page/i }));
+    expect(screen.getByLabelText('Page 1 of 2')).toBeInTheDocument();
+
+    fireEvent.keyDown(screen.getByRole('dialog'), { key: 'Escape' });
+    expect(screen.queryByRole('dialog', { name: /The Underdog Effect/i })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).toBeInTheDocument();
+  });
+
+  test('opens Art imagery from the companion booklet, not the question paper', () => {
+    const art = ART_HIGHER.find(entry => entry.id === 'art-2025-hl-q1-a')!;
+    renderSession([art]);
+
+    expect(screen.getByText(/official examination imagery/i)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Read ILLUSTRATION SHEET · Q1/i }));
+    expect(screen.getByRole('dialog', { name: /Official illustrations for Question 1/i })).toBeInTheDocument();
+    const original = screen.getByRole('link', { name: /Open the original illustration sheet/i });
+    expect(original).toHaveAttribute('href', expect.stringContaining('LC014ALP004BV.pdf'));
+    expect(original).not.toHaveAttribute('href', expect.stringContaining('LC014ALP000EV.pdf'));
+  });
+
+  test('renders and scores the published Art descriptor bands', () => {
+    const art = ART_HIGHER.find(entry => entry.id === 'art-2025-hl-q8')!;
+    renderSession([art]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+
+    expect(screen.getByText('Place your response on the published Art scale.')).toBeInTheDocument();
+    expect(screen.getByText('Coherence and Focus')).toBeInTheDocument();
+    expect(screen.getByText('Subject Knowledge')).toBeInTheDocument();
+    expect(screen.getAllByText('High').length).toBeGreaterThanOrEqual(4);
+
+    fireEvent.click(screen.getByRole('button', { name: /Set Coherence and Focus to 7 marks/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Set Subject Knowledge to 14 marks/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Set Relevant Examples to 7 marks/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Set Visual Language to 7 marks/i }));
+    expect(screen.getByText('35 / 50')).toBeInTheDocument();
+  });
+
+  test('keeps the paper line breaks that separate Art tasks and bullets', () => {
+    const art = ART_HIGHER.find(entry => entry.id === 'art-2023-hl-q8')!;
+    renderSession([art]);
+
+    expect(screen.getByTestId('mark-bank-question-text')).toHaveStyle({ whiteSpace: 'pre-line' });
+  });
+
+  test('lays out nested roman and lettered parts without collapsing the prose column', () => {
+    const question = '(a) An tEarrach Thiar (i) (a) Cén séasúr atá i gceist sa dán seo? '
+      + '(b) Conas atá an aimsir? (c) Cad atá á dhéanamh ag an bhfear? '
+      + '(d) Tabhair pointe amháin eolais. (8 marc) '
+      + '(ii) Déan cur síos ar an íomhá den churrach. (8 marc) '
+      + '(iii) An bhfuil an file sásta? Tabhair dhá fháth. (9 marc)';
+    renderSession([card({ questionText: question })]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    expect(rendered).toHaveTextContent('Cén séasúr atá i gceist sa dán seo?');
+    expect(rendered).toHaveTextContent('An bhfuil an file sásta? Tabhair dhá fháth.');
+    expect(rendered.querySelectorAll('[data-question-depth="0"]')).toHaveLength(4);
+    expect(rendered.querySelectorAll('[data-question-depth="1"]')).toHaveLength(4);
+    expect(rendered.querySelector('[data-question-depth="0"]'))
+      .toHaveStyle({ display: 'grid', gridTemplateColumns: '34px minmax(0, 1fr)' });
+  });
+
+  test('shows and grades an Irish listening section once, then advances past every child card', () => {
+    const listening = IRISH_HIGHER.filter(entry =>
+      entry.year === 2025 && entry.topicId === 'irish-1-0');
+    const next = card({ id: 'after-listening', questionText: 'The next visible exercise.' });
+    const { onGrade, onFinish } = renderSession([...listening, next]);
+
+    expect(document.querySelectorAll('audio')).toHaveLength(1);
+    const questions = screen.getByTestId('mark-bank-listening-questions');
+    expect(within(questions).getByRole('heading', { name: 'Questions for this recording' }))
+      .toBeInTheDocument();
+    expect(questions.querySelectorAll('[data-listening-section]')).toHaveLength(2);
+    expect(questions.querySelectorAll('[data-listening-prompt]')).toHaveLength(8);
+    expect(within(questions).getByRole('heading', { name: 'Fógra a hAon' }))
+      .toBeInTheDocument();
+    expect(within(questions).getByRole('heading', { name: 'Fógra a Dó' }))
+      .toBeInTheDocument();
+    expect(within(questions).getAllByText('Cé a chuir amach an fógra seo?')).toHaveLength(2);
+    expect(within(questions).getByText('Cén dáta a chuirfear tús leis an gclár nua?'))
+      .toBeInTheDocument();
+    expect(within(questions).getByText(/Cén ról a bheidh ag Máire Treasa/))
+      .toBeInTheDocument();
+    expect(screen.queryByTestId('mark-bank-question-text')).not.toBeInTheDocument();
+    expect(screen.getByText('18m')).toBeInTheDocument();
+    expect(screen.getByText('1 of 2 this review')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const firstScheme = screen.getByText('Fógra a hAon · Tuiscint / Eolas').closest('section')!;
+    const secondScheme = screen.getByText('Fógra a Dó · Tuiscint / Eolas').closest('section')!;
+    fireEvent.click(within(firstScheme).getByRole('button', { name: '10' }));
+    fireEvent.click(within(secondScheme).getByRole('button', { name: '8' }));
+    expect(screen.getByText('18 / 18')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
+    expect(onGrade).toHaveBeenCalledTimes(2);
+    expect(onGrade).toHaveBeenNthCalledWith(1, expect.objectContaining({
+      cardId: 'irish-2025-hl-p1-listening-a-f1', marksClaimed: 10, marksAvailable: 10,
+    }));
+    expect(onGrade).toHaveBeenNthCalledWith(2, expect.objectContaining({
+      cardId: 'irish-2025-hl-p1-listening-a-f2', marksClaimed: 8, marksAvailable: 8,
+    }));
+    expect(onFinish).not.toHaveBeenCalled();
+    expect(document.querySelector('audio')).not.toBeInTheDocument();
+    expect(screen.getByText('The next visible exercise.')).toBeInTheDocument();
+    expect(screen.queryByTestId('mark-bank-listening-questions')).not.toBeInTheDocument();
   });
 
   test('reads numbered question parts with their wording instead of as isolated numbers', () => {

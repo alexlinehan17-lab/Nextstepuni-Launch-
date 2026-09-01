@@ -1,7 +1,7 @@
 {
  "agricultural-science": {
   "cards": 869,
-  "contentHash": "773765a7ef6395cc",
+  "contentHash": "9dc05cfc178fa7fa",
   "coveragePct": 93.6,
   "covered": 888,
   "excluded": 3,
@@ -14,9 +14,24 @@
   },
   "refsHash": "967a2d72ff0648b1"
  },
+ "art": {
+  "cards": 462,
+  "contentHash": "f84ca9f2c3b181ad",
+  "coveragePct": 100.0,
+  "covered": 462,
+  "excluded": 0,
+  "leaves": 462,
+  "open": 0,
+  "orphans": 0,
+  "papers": {
+   "count": 20,
+   "hash": "289b620d2a5e9d7e"
+  },
+  "refsHash": "7ba094263d991baa"
+ },
  "biology": {
   "cards": 1359,
-  "contentHash": "b1130d641f9c5e76",
+  "contentHash": "f24a6944766a455f",
   "coveragePct": 93.8,
   "covered": 1535,
   "excluded": 0,
@@ -31,7 +46,7 @@
  },
  "business": {
   "cards": 606,
-  "contentHash": "24c66cd3cba76a38",
+  "contentHash": "96521c958202d8fc",
   "coveragePct": 94.6,
   "covered": 677,
   "excluded": 0,
@@ -46,7 +61,7 @@
  },
  "chemistry": {
   "cards": 878,
-  "contentHash": "4e366e8f791809a2",
+  "contentHash": "10dfd5cf846afd49",
   "coveragePct": 92.5,
   "covered": 1120,
   "excluded": 0,
@@ -58,21 +73,6 @@
    "hash": "bf2ca1ce05646d41"
   },
   "refsHash": "b362d158b7cb0b00"
- },
- "computer-science": {
-  "cards": 336,
-  "contentHash": "3b5ceb12900aa3c8",
-  "coveragePct": 82.2,
-  "covered": 398,
-  "excluded": 0,
-  "leaves": 484,
-  "open": 86,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "4eb8d8bb7c8ce50b"
-  },
-  "refsHash": "ba197c3dcfdb616b"
  },
  "construction-studies": {
   "cards": 505,
@@ -91,7 +91,7 @@
  },
  "economics": {
   "cards": 697,
-  "contentHash": "8ee9ecd514b12794",
+  "contentHash": "ad1d72d08db05109",
   "coveragePct": 100.0,
   "covered": 651,
   "excluded": 7,
@@ -104,24 +104,39 @@
   },
   "refsHash": "ffceb66a16576771"
  },
- "engineering": {
-  "cards": 466,
-  "contentHash": "4a86841e47dd113a",
-  "coveragePct": 72.6,
-  "covered": 585,
+ "english": {
+  "cards": 660,
+  "contentHash": "d84d602617d4bc77",
+  "coveragePct": 100.0,
+  "covered": 660,
   "excluded": 0,
-  "leaves": 806,
-  "open": 221,
+  "leaves": 660,
+  "open": 0,
   "orphans": 0,
   "papers": {
-   "count": 10,
-   "hash": "d6f8e4ccadef7bbf"
+   "count": 20,
+   "hash": "5a9e0ab3f863aa4f"
   },
-  "refsHash": "99445e531f46b857"
+  "refsHash": "c1e31e8602659293"
+ },
+ "geography": {
+  "cards": 754,
+  "contentHash": "cd75945aa06165db",
+  "coveragePct": 100.0,
+  "covered": 563,
+  "excluded": 85,
+  "leaves": 648,
+  "open": 0,
+  "orphans": 0,
+  "papers": {
+   "count": 24,
+   "hash": "7d40addba29edb98"
+  },
+  "refsHash": "a4cecb0559e11239"
  },
  "home-economics": {
   "cards": 571,
-  "contentHash": "e2e7df0bb7c83bea",
+  "contentHash": "58dd065233e9313f",
   "coveragePct": 95.3,
   "covered": 545,
   "excluded": 0,
@@ -134,9 +149,24 @@
   },
   "refsHash": "7cddab6869c06c08"
  },
+ "irish": {
+  "cards": 400,
+  "contentHash": "0f7f4953e350117f",
+  "coveragePct": 100.0,
+  "covered": 400,
+  "excluded": 0,
+  "leaves": 400,
+  "open": 0,
+  "orphans": 0,
+  "papers": {
+   "count": 30,
+   "hash": "9d84f99397f0fb11"
+  },
+  "refsHash": "02b0f7ad91f8e59d"
+ },
  "maths": {
   "cards": 833,
-  "contentHash": "abcd0c7413fe8c3b",
+  "contentHash": "04cef27791c4d903",
   "coveragePct": 95.1,
   "covered": 941,
   "excluded": 0,
@@ -150,18 +180,18 @@
   "refsHash": "69c96154480244d8"
  },
  "physics": {
-  "cards": 1133,
-  "contentHash": "fcc33a47c1735893",
-  "coveragePct": 95.2,
-  "covered": 1119,
+  "cards": 1132,
+  "contentHash": "c199922e4c2e2a2e",
+  "coveragePct": 95.1,
+  "covered": 1118,
   "excluded": 46,
   "leaves": 1224,
-  "open": 59,
+  "open": 60,
   "orphans": 6,
   "papers": {
    "count": 10,
    "hash": "aedd9969b3ce025e"
   },
-  "refsHash": "83bd7bc978ad6302"
+  "refsHash": "adf8dd6c8e143930"
  }
 }

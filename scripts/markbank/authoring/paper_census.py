@@ -61,6 +61,22 @@ SUBJECTS = {
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
     'maths': {'mode': 'papers', 'papers': {'100': 'Paper 1', '200': 'Paper 2'}},
+    # English choices and holistic subparts cannot be represented by the
+    # generic leaf parser. `english_census.py` is its paper-only denominator;
+    # this entry keeps it inside every `--all` coverage run.
+    'english': {'mode': 'english'},
+    # Irish's selectable units cross listening halves, composition choices and
+    # holistic literature options. irish_cards.py reads all twenty papers and
+    # emits the dedicated, count-pinned census used by the generic ratchet.
+    'irish': {'mode': 'irish'},
+    # Art's real practice units are the separately marked task and fixed
+    # printed choice, not the outer question number. The dedicated census also
+    # preserves the legacy/current specification boundary and image bindings.
+    'art': {'mode': 'art'},
+    # Geography has one base task per printed short question or separately
+    # selectable Part Two A/B/C task. Its dedicated census also records the
+    # historical map/aerial tasks held until their companion sources exist.
+    'geography': {'mode': 'geography'},
     'business': {'mode': 'sections'},
     'home-economics': {'mode': 'sections'},
     # Two booklets: 038 carries Section A (short answer, attempt any nine) and
@@ -68,10 +84,6 @@ SUBJECTS = {
     # programming question answered on a computer. The sections are named on
     # the page, so the census reads them rather than the booklet code.
     'computer-science': {'mode': 'sections'},
-    # One booklet, nine questions of 50 marks, "Answer any SIX questions. All
-    # questions carry equal marks." Question 1 is itself "Give brief answers
-    # to any ten of the following", which is the bestNofParts shape.
-    'engineering': {'mode': 'merged'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -198,11 +210,6 @@ def marks_by_question(P_files, subject):
                     h = re.match(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+)',
                                  un)
                     block = un
-            # The paper's own rubric, numbered like a question — see
-            # paper.EXAM_INSTRUCTION. Engineering's "1. Answer any SIX
-            # questions." was censused as Question 1.
-            if h and PP.EXAM_INSTRUCTION.match(block.strip()):
-                h = None
             if h:
                 q = int(h.group(1) or h.group(2))
             m = MARKS.search(block)
@@ -474,6 +481,99 @@ def census_sections(subject, year, level):
 
 def census_subject(subject):
     cfg = SUBJECTS.get(subject, {'mode': 'merged'})
+    if cfg['mode'] == 'geography':
+        path = os.path.join(
+            ROOT, 'scripts', 'markbank', 'authored', 'geography-census.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        tasks = payload['baseTasks']
+        if payload.get('paperBaseTasks') != len(tasks):
+            raise AssertionError('Geography authored census total is stale')
+        papers = []
+        for sitting in payload['sittings']:
+            asks = [task for task in tasks
+                    if task['year'] == sitting['year']
+                    and task['level'] == sitting['level']]
+            if sitting.get('paperBaseTasks') != len(asks):
+                raise AssertionError(
+                    f"Geography {sitting['year']} {sitting['level']} "
+                    'census count is stale')
+            papers.append({
+                'year': sitting['year'], 'level': sitting['level'],
+                'paper': None, 'leafCount': len(asks),
+                'leaves': [{
+                    'key': [ask['id']], 'label': ask['questionRef'],
+                    'text': ask['title'], 'status': ask['status'],
+                } for ask in asks],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+    if cfg['mode'] == 'art':
+        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        papers = []
+        for source in payload['papers']:
+            cards = source['cards']
+            if source.get('expectedCards') != len(cards):
+                raise AssertionError(
+                    f"Art {source['year']} {source['level']} census count is stale")
+            papers.append({
+                'year': source['year'], 'level': source['level'],
+                'paper': None, 'leafCount': len(cards),
+                'leaves': [{
+                    'key': [card['cardId']], 'label': card['questionRef'],
+                    'text': '', 'status': 'authored',
+                } for card in cards],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        total = sum(p['leafCount'] for p in papers)
+        if payload.get('expectedCards', {}).get('total') != total:
+            raise AssertionError('Art authored census total is stale')
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+    if cfg['mode'] == 'irish':
+        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'irish-census.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        papers = []
+        for source in payload['papers']:
+            asks = [ask for ask in payload['asks']
+                    if ask['year'] == source['year']
+                    and ask['level'] == source['level']
+                    and ask['paper'] == source['paper']]
+            papers.append({
+                'year': source['year'], 'level': source['level'],
+                'paper': f"Paper {source['paper']}",
+                'leafCount': len(asks),
+                'leaves': [{
+                    'key': [ask['id']], 'label': ask['questionRef'],
+                    'text': '', 'status': ask['status'],
+                } for ask in asks],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        if payload.get('cardUnitCount') != sum(p['leafCount'] for p in papers):
+            raise AssertionError('Irish authored census count is stale')
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+    if cfg['mode'] == 'english':
+        # Import lazily so the ordinary census remains independent of PyMuPDF
+        # until English is actually requested.
+        from english_census import build as build_english  # noqa: E402
+        payload = build_english()
+        papers = []
+        for source in payload['papers']:
+            paper_number = int(source['component']) // 100
+            asks = [ask for ask in payload['asks']
+                    if ask['year'] == source['year']
+                    and ask['level'] == source['level']
+                    and ask['paper'] == paper_number]
+            papers.append({
+                'year': source['year'], 'level': source['level'],
+                'paper': f'Paper {paper_number}',
+                'leafCount': len(asks),
+                'leaves': [{
+                    'key': [ask['id']], 'label': ask['questionRef'],
+                    'text': '', 'status': ask['status'],
+                } for ask in asks],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
     papers = []
     for year, level, comps in sittings(subject):
         if cfg['mode'] == 'papers':

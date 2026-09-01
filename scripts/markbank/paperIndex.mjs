@@ -64,10 +64,11 @@ const CORPUS_KEY = {
   'home-economics': 'home-economics-s-and-s',
 };
 
-/** The English-language sitting of one subject, year and level. */
+/** The sitting of one subject, year and level in its authored paper language. */
 export const paperEntry = (subjectId, year, level) =>
   (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
-    .find(e => e.year === year && e.level === level && e.lang === 'ev');
+    .find(e => e.year === year && e.level === level
+      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev'));
 
 /**
  * The sections a paper's label covers: "Section A&B" -> {A, B}, "Section 2 & 3"
@@ -81,8 +82,25 @@ export const paperEntry = (subjectId, year, level) =>
  */
 const labelCovers = (label) => {
   const text = String(label);
-  if (!/\bsection\b/i.test(text)) return new Set();
-  return new Set(text.match(/\b[ABC1-9]\b/g) ?? []);
+  const covered = new Set();
+  if (/\bsection\b/i.test(text)) {
+    for (const token of text.match(/\b[ABC1-9]\b/g) ?? []) covered.add(token);
+  }
+  // English and several language subjects name their documents "Paper One"
+  // and "Paper Two" rather than "Section 1" and "Section 2". Mark Bank uses
+  // those same numeric section ids, so treating the labels as unknowable left
+  // every English card with a null paper link even though Paper Trail had the
+  // exact document. Keep this anchored on the word Paper so a stray number in a
+  // practical-test label cannot become a false section match.
+  const paper = text.match(/\bpaper\s+(one|two|[1-9])\b/i)?.[1]?.toLowerCase();
+  if (paper) covered.add(paper === 'one' ? '1' : paper === 'two' ? '2' : paper);
+  // Geography names its two written documents "Part 1" and "Part 2".  They
+  // are separate PDFs (042 and 043), so leaving Part unrecognised makes every
+  // Geography card resolve to null even though Paper Trail holds both exact
+  // documents.  Keep this anchored just as tightly as Paper/Section above.
+  const part = text.match(/\bpart\s+(one|two|[1-9])\b/i)?.[1]?.toLowerCase();
+  if (part) covered.add(part === 'one' ? '1' : part === 'two' ? '2' : part);
+  return covered;
 };
 
 const stripPdf = (f) => (f ? String(f).replace(/\.pdf$/, '') : null);
@@ -98,5 +116,27 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   if (!entry?.papers?.length) return null;
   // One paper for the year means there is nothing to choose between.
   if (entry.papers.length === 1) return stripPdf(entry.papers[0].doc?.f);
-  return stripPdf(entry.papers.find(p => labelCovers(p.label).has(section))?.doc?.f);
+  // Art's separate illustration booklet is indexed as a second "paper" even
+  // though every written section lives in the document explicitly labelled
+  // Exam Paper. Treating both documents as section candidates made every Art
+  // card resolve to null. This is safe only when that label is unique and all
+  // siblings identify themselves as picture/illustration companions.
+  const namedExamPapers = entry.papers.filter(p => /^Exam Paper$/i.test(p.label));
+  const companions = entry.papers.filter(p => !/^Exam Paper$/i.test(p.label));
+  if (namedExamPapers.length === 1 && companions.length > 0
+      && companions.every(p => /picture|illustration/i.test(p.label))) {
+    return stripPdf(namedExamPapers[0].doc?.f);
+  }
+  const direct = entry.papers.find(p => labelCovers(p.label).has(section));
+  if (direct) return stripPdf(direct.doc?.f);
+  // The 2022 Irish OL Paper 1 is labelled only "Exam Paper" in the SEC index,
+  // beside an explicitly labelled Paper Two.  The sole unnumbered sibling is
+  // therefore Paper 1; this evidence-based fallback stays null for ambiguous
+  // multi-document entries.
+  const unnumbered = entry.papers.filter(p => labelCovers(p.label).size === 0);
+  if (section === '1' && unnumbered.length === 1
+      && entry.papers.some(p => labelCovers(p.label).has('2'))) {
+    return stripPdf(unnumbered[0].doc?.f);
+  }
+  return null;
 }

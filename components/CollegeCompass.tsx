@@ -99,7 +99,7 @@ const RestrictedCheck: React.FC = () => {
               key={r.id}
               type="button"
               onClick={() => setSelectedId(on ? null : r.id)}
-              className="rounded-full border-2 px-3 py-1.5 text-xs font-semibold transition-colors"
+              className="min-h-11 rounded-full border-2 px-3 text-xs font-semibold transition-colors"
               style={{ borderColor: on ? COLORS.accent : COLORS.border, backgroundColor: on ? COLORS.accentTint : '#FFFFFF', color: '#1A1A1A' }}
             >
               {r.label}
@@ -152,7 +152,7 @@ const VerifyModal: React.FC<{ entryYear: number; onClose: () => void }> = ({ ent
               <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">How College Compass handles a moving target</p>
             </div>
           </div>
-          <button onClick={onClose} className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/10 transition-colors shrink-0" aria-label="Close">
+          <button onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl transition-colors hover:bg-black/5 dark:hover:bg-white/10" aria-label="Close">
             <X size={18} className="text-zinc-500" />
           </button>
         </div>
@@ -449,7 +449,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
               type="button"
               onClick={() => setShowColleges(s => !s)}
               aria-expanded={showColleges}
-              className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-[var(--border-soft)] text-xs font-semibold text-[var(--ink-primary)] transition-colors hover:border-[#1A1A1A] dark:hover:border-zinc-400"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-[var(--border-soft)] px-3 text-xs font-semibold text-[var(--ink-primary)] transition-colors hover:border-[#1A1A1A] dark:hover:border-zinc-400"
             >
               <Building2 size={14} aria-hidden="true" />
               {targetCodes.length > 0 ? `${targetCodes.length} target college${targetCodes.length === 1 ? '' : 's'}` : 'Target colleges'}
@@ -457,7 +457,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
             <button
               type="button"
               onClick={() => setShowVerify(true)}
-              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold text-[var(--ink-secondary)] hover:text-[var(--ink-primary)] transition-colors"
+              className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-3 text-xs font-semibold text-[var(--ink-secondary)] transition-colors hover:text-[var(--ink-primary)]"
             >
               <CircleHelp size={14} aria-hidden="true" /> Dates and sources
             </button>
@@ -484,7 +484,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
                     type="button"
                     onClick={() => toggleCollege(code)}
                     aria-pressed={on}
-                    className="rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors text-[var(--ink-primary)]"
+                    className="min-h-11 rounded-full border px-3 text-xs font-semibold text-[var(--ink-primary)] transition-colors"
                     style={{ borderColor: on ? COLORS.border : 'var(--border-soft)', backgroundColor: on ? 'var(--ink-primary)' : 'transparent', color: on ? 'var(--surface-paper)' : 'var(--ink-primary)' }}
                     title={INSTITUTIONS[code]}
                   >
@@ -508,8 +508,8 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
         </div>
 
         <div ref={timelineRef} className="mt-5 overflow-x-auto overscroll-x-contain scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div role="tablist" aria-label="College application stages" className="relative flex min-w-max px-1 md:grid md:min-w-0 md:grid-cols-6">
-            <div aria-hidden="true" className="absolute top-[17px] left-[76px] right-[76px] h-px bg-[var(--border-soft)]" />
+          <div role="tablist" aria-label="College application stages" className="relative flex min-w-max gap-3 px-[13vw] md:grid md:min-w-0 md:grid-cols-6 md:gap-0 md:px-1">
+            <div aria-hidden="true" className="absolute left-[76px] right-[76px] top-[17px] hidden h-px bg-[var(--border-soft)] md:block" />
             {JOURNEY_STOPS.map((stop, index) => {
               const stopState = states[index];
               const selected = selectedStopId === stop.id;
@@ -528,7 +528,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
                   tabIndex={selected ? 0 : -1}
                   onClick={() => selectStop(stop.id)}
                   onKeyDown={event => handleTimelineKeyDown(event, index)}
-                  className="relative z-10 w-[152px] md:w-auto px-2 pb-4 snap-center text-center group"
+                  className={`group relative z-10 w-[74vw] max-w-[270px] snap-center rounded-2xl border px-4 py-4 text-center md:w-auto md:max-w-none md:rounded-none md:border-0 md:bg-transparent md:px-2 md:pb-4 md:pt-0 ${selected ? 'border-[var(--ink-primary)] bg-[var(--surface-paper)]' : 'border-[var(--border-soft)] bg-[var(--surface-soft)]'}`}
                 >
                   <span
                     className="mx-auto flex h-9 w-9 items-center justify-center rounded-full border-[1.5px] bg-[var(--surface-paper)] transition-colors"
@@ -559,7 +559,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
             type="button"
             onClick={() => selectStop(JOURNEY_STOPS[Math.max(0, selectedIndex - 1)].id, true)}
             disabled={selectedIndex === 0}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--ink-secondary)] disabled:opacity-30"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[var(--ink-secondary)] disabled:opacity-30"
           >
             <ChevronLeft size={15} aria-hidden="true" /> Previous
           </button>
@@ -568,7 +568,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
             type="button"
             onClick={() => selectStop(JOURNEY_STOPS[Math.min(JOURNEY_STOPS.length - 1, selectedIndex + 1)].id, true)}
             disabled={selectedIndex === JOURNEY_STOPS.length - 1}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--ink-secondary)] disabled:opacity-30"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[var(--ink-secondary)] disabled:opacity-30"
           >
             Next <ChevronRight size={15} aria-hidden="true" />
           </button>

@@ -46,6 +46,10 @@ SUBJECTS = {
     'business': 'business',
     'chemistry': 'chemistry',
     'economics': 'economics',
+    # English uses a bespoke card model: the paper supplies the prompt while
+    # the scheme supplies a PCLM rubric and non-exhaustive indicative material.
+    # See authoring/ENGLISH.md and authoring/english_census.py.
+    'english': 'english',
     'home-economics': 'home-economics-s-and-s',
     'physics': 'physics',
     # Added 23 August 2026. Stage 0 passed on the drawing+ pattern: the scheme
@@ -63,12 +67,6 @@ SUBJECTS = {
     'politics-society': 'politics-and-society',
     # Added 30 August 2026, to MEASURE it before choosing it. See stage 0.
     'computer-science': 'computer-science',
-    # Added 30 August 2026. Stage 0 read one scheme first: it prints STATED
-    # answers against printed tariffs -- "Function of a heatsink: A heatsink
-    # provides a reservoir or pathway to remove heat from temperature
-    # sensitive components", "Any one @ 5" -- which is the pattern
-    # Agricultural Science and Construction Studies already ship.
-    'engineering': 'engineering',
 }
 
 FILEID = re.compile(r'^LC(\d{3})([AG])LP(\d{3})([EI])V\.pdf$', re.I)

@@ -8,9 +8,9 @@ scope, with the archive's own human-readable labels.
 
 Scope (per approved plan):
   - exampapers + markingschemes (no deferred materials)
-  - LC  2010-2025
-  - LCA 2010-2025
-  - JC  2017-2025 minus 2020/2021 (cancelled); new-spec filtering happens at
+  - LC  2010-2026
+  - LCA 2010-2026
+  - JC  2017-2026 minus 2020/2021 (cancelled); new-spec filtering happens at
     decode time, not here — the manifest stays complete for audit.
 
 Politeness: single-threaded, ~1.6s between requests, exponential backoff on

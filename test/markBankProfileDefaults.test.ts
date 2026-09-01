@@ -7,13 +7,13 @@ describe('Mark Bank profile defaults', () => {
     expect(profileDeckChoice([
       { subjectName: 'English', level: 'higher' },
       { subjectName: 'Chemistry', level: 'ordinary' },
-    ])).toEqual({ subjectId: 'chemistry', level: 'ordinary' });
+    ])).toEqual({ subjectId: 'english', level: 'higher' });
   });
 
-  it('understands common profile aliases without inventing an unavailable deck', () => {
+  it('understands common profile aliases and newly available decks', () => {
     expect(profileDeckChoice([{ subjectName: 'Maths', level: 'Higher' }]))
       .toEqual({ subjectId: 'maths', level: 'higher' });
-    expect(profileDeckChoice([{ subjectName: 'English', level: 'Higher' }])).toBeNull();
+    expect(profileDeckChoice([{ subjectName: 'English', level: 'Higher' }]))
+      .toEqual({ subjectId: 'english', level: 'higher' });
   });
 });
-

@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
-import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3 } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3, ChevronRight, X } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
@@ -33,6 +33,7 @@ import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 import Avatar from './Avatar';
+import { useModal } from '../hooks/useModal';
 
 // Google Sign-In uses signInWithPopup, which has no real popup to open inside
 // Capacitor's webview on EITHER platform. Web only, until a native Google plugin
@@ -211,7 +212,7 @@ const GatewayPanel = () => {
               className="font-sans"
               style={{
                 fontSize: 15,
-                color: '#4a4540',
+                color: 'var(--ink-muted)',
                 lineHeight: 1.5,
               }}
             >
@@ -224,19 +225,20 @@ const GatewayPanel = () => {
   );
 };
 
-// ── Card wrapper — split panel on desktop, full-width on mobile ──
+// ── Responsive auth shell ────────────────────────────────────────
+// Desktop keeps the established split card. Mobile is deliberately a separate,
+// edge-to-edge app composition instead of shrinking that card into the viewport.
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
-  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 theme-compat" style={{ backgroundColor: 'var(--surface-canvas)' }}>
+  <div className="theme-compat relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-hidden bg-[var(--surface-canvas)] [overflow-anchor:none] md:min-h-screen md:p-8">
     <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="w-full max-w-5xl bg-white rounded-2xl overflow-hidden flex"
-      style={{ minHeight: 540, boxShadow: '0 2px 8px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.04)', border: '1.5px solid rgba(0,0,0,0.25)' }}
+      className="flex min-h-[100dvh] w-full bg-[var(--surface-canvas)] md:min-h-[540px] md:max-w-5xl md:overflow-hidden md:rounded-2xl md:border-[1.5px] md:border-black/25 md:bg-white md:shadow-[0_12px_40px_rgba(0,0,0,0.06)] dark:md:border-zinc-700 dark:md:bg-zinc-900"
     >
       <GatewayPanel />
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-14 py-12">
-        <div className="w-full max-w-[380px] mx-auto">
+      <div className="flex w-full flex-1 flex-col justify-start px-5 pb-[calc(24px+var(--sab,0px))] pt-[calc(20px+var(--sat,0px))] sm:px-8 md:w-1/2 md:flex-none md:justify-center md:px-14 md:py-12">
+        <div className="mx-auto flex w-full max-w-[420px] flex-1 flex-col md:max-w-[380px] md:flex-none">
           {children}
         </div>
       </div>
@@ -355,6 +357,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // before an account is created; `legalDoc` controls the reachable policy modal.
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
+  const [schoolAccessOpen, setSchoolAccessOpen] = useState(false);
+  const schoolAccessRef = useRef<HTMLDivElement>(null);
+  const authViewRef = useRef<HTMLDivElement>(null);
+  useModal(schoolAccessOpen, () => setSchoolAccessOpen(false), schoolAccessRef);
 
   // Direction tracking for view transitions. Computed synchronously on
   // each render so AnimatePresence sees the correct direction the moment
@@ -373,6 +379,28 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     [registerStep],
   );
   useEffect(() => { prevStepRef.current = registerStep; }, [registerStep]);
+
+  // Auth states are separate screens on mobile. Do not carry the keyboard's
+  // previous document offset into the next screen or hide its back control.
+  useEffect(() => {
+    const resetAuthScroll = () => {
+      const scrollRoot = document.scrollingElement ?? document.documentElement;
+      scrollRoot.scrollTop = 0;
+      scrollRoot.scrollLeft = 0;
+      document.body.scrollTop = 0;
+    };
+    resetAuthScroll();
+    // AnimatePresence swaps screens over 340ms. Reset once more after that
+    // layout settles so browser scroll anchoring cannot preserve a field from
+    // the previous screen instead of the new screen's header.
+    const settledReset = window.setTimeout(() => {
+      resetAuthScroll();
+      if (typeof authViewRef.current?.scrollIntoView === 'function') {
+        authViewRef.current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'auto' });
+      }
+    }, 460);
+    return () => window.clearTimeout(settledReset);
+  }, [view, registerStep]);
 
   // Countdown tick for the resend button on the forgot-password success screen.
   useEffect(() => {
@@ -924,13 +952,20 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   };
 
   // ── Shared styles ──
-  const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 placeholder-zinc-400 outline-none transition-all bg-white border-2 border-zinc-200 focus:border-[#F26B1F]";
+  const shouldAutoFocus = typeof window !== 'undefined'
+    && typeof window.matchMedia === 'function'
+    && window.matchMedia('(min-width: 768px)').matches;
+  // 16px on phones prevents iOS from zooming the whole web view when a field
+  // receives focus; desktop keeps the denser 14px treatment.
+  const inputClass = "min-h-[52px] w-full rounded-xl border-2 border-zinc-200 bg-white px-4 py-3 font-sans text-base text-zinc-800 outline-none transition-all placeholder:text-zinc-400 focus:border-[#F26B1F] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 md:text-sm";
   // Password inputs need extra right padding so the show/hide eye toggle and
   // iOS's own AutoFill / Strong-Password key icon don't visually collide
   // inside the field.
   const passwordInputClass = `${inputClass} pr-12`;
-  const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
-  const primaryBtnStyle = { backgroundColor: 'var(--cta-invert-bg)', color: 'var(--cta-invert-ink)', borderColor: 'var(--cta-invert-border)' };
+  const primaryBtn = "min-h-[52px] w-full rounded-xl border-2 px-4 py-3 text-[15px] font-bold transition-all disabled:cursor-not-allowed disabled:opacity-50";
+  const primaryBtnStyle = { backgroundColor: 'var(--accent-hex)', color: 'var(--ink-on-accent)', borderColor: '#B94712' };
+  const backButtonClass = "-ml-2 inline-flex min-h-11 items-center gap-1.5 rounded-xl px-2 text-sm font-semibold transition-colors";
+  const passwordToggleClass = "absolute right-1 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-lg transition-colors";
 
   // Localhost Demo Account — a deterministic in-memory student story for
   // viewing dashboards and progress features. It has no Firebase auth token
@@ -964,9 +999,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // animates — was an instant render before.
   // ═══════════════════════════════════════════════════════════
   return (
-    <LoginCard devButton={demoButton}>
-      <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
+    <>
+      <LoginCard devButton={demoButton}>
+        <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
         <MotionDiv
+          ref={authViewRef}
           key={view}
           custom={viewDirection}
           variants={slideVariants}
@@ -974,104 +1011,189 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           animate="center"
           exit="exit"
           transition={slideTransition}
+          className={view === 'welcome' ? 'flex flex-1 flex-col md:block md:flex-none' : 'w-full py-2 md:py-0'}
         >
           {/* ── WELCOME ────────────────────────────────────── */}
           {view === 'welcome' && (
-            <div className="text-center">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-6" style={{ color: '#9e9186' }}>LOG-IN</p>
-              <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-                Your study,<br />your way.
-              </h1>
-              <p className="text-sm mb-10" style={{ fontFamily: "'DM Sans', sans-serif", color: '#7a7068' }}>
-                Science-backed study strategies personalised to your subjects, your goals, and your exam.
-              </p>
+            <>
+              {/* Mobile is a true app welcome screen: edge-to-edge, brand-led
+                  and focused on the two student decisions that matter. */}
+              <div className="flex flex-1 flex-col md:hidden">
+                <MotionDiv
+                  initial={{ opacity: 0, y: -5 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.35, ease: SLIDE_EASE }}
+                  className="flex items-center gap-3 border-b border-[var(--outline-soft)] pb-4"
+                >
+                  <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--ink-secondary)]">NextStepUni</span>
+                  <span aria-hidden="true" className="h-px flex-1 bg-[var(--outline-soft)]" />
+                </MotionDiv>
 
-              <div className="space-y-3">
-                <MotionButton
-                  whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-                  onClick={() => { resetForm(); setView('register'); }}
-                  className={primaryBtn}
-                  style={primaryBtnStyle}
-                >
-                  Get Started
-                </MotionButton>
-                <MotionButton
-                  whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-                  onClick={() => { resetForm(); setView('login'); }}
-                  className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2"
-                  style={{ color: '#F26B1F', borderColor: 'rgba(242,107,31,0.3)', backgroundColor: 'white' }}
-                >
-                  I already have an account
-                </MotionButton>
-                {SHOW_GOOGLE_SIGN_IN && (
-                  <MotionButton
-                    whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-                    onClick={handleGoogleSignIn}
-                    disabled={isLoading}
-                    className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+                <div className="flex min-h-0 flex-1 flex-col items-center justify-center py-4 text-center">
+                  <MotionDiv
+                    initial={{ opacity: 0, y: 12, scale: 0.97 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ duration: 0.46, delay: 0.04, ease: SLIDE_EASE }}
+                    className="mb-2 flex max-h-[22vh] min-h-[104px] items-center justify-center"
                   >
-                    <GoogleIcon />
-                    Continue with Google
-                  </MotionButton>
-                )}
-                {SHOW_APPLE_SIGN_IN && (
-                  <MotionButton
-                    whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-                    onClick={handleAppleSignIn}
-                    disabled={isLoading}
-                    className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ color: '#FFFFFF', backgroundColor: '#000000' }}
+                    <img
+                      src="/icons/gateway.png"
+                      alt=""
+                      aria-hidden
+                      className="h-auto w-[clamp(118px,34vw,154px)] select-none dark:drop-shadow-[0_0_1px_rgba(255,255,255,0.45)]"
+                    />
+                  </MotionDiv>
+                  <MotionP
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.38, delay: 0.11, ease: SLIDE_EASE }}
+                    className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent-hex)]"
                   >
-                    <AppleIcon />
-                    Continue with Apple
-                  </MotionButton>
-                )}
+                    Built around how you learn
+                  </MotionP>
+                  <MotionDiv
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.16, ease: SLIDE_EASE }}
+                  >
+                    <h1 className="font-serif text-[clamp(2.45rem,11vw,3.25rem)] font-semibold leading-[0.96] tracking-[-0.035em] text-[var(--ink-primary)]">
+                      Your study,<br />your way.
+                    </h1>
+                    <p className="mx-auto mt-4 max-w-[330px] text-[15px] leading-relaxed text-[var(--ink-muted)]">
+                      Study strategies shaped around your subjects, goals and exams.
+                    </p>
+                  </MotionDiv>
+                </div>
+
+                <MotionDiv
+                  initial={{ opacity: 0, y: 14 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.42, delay: 0.23, ease: SLIDE_EASE }}
+                  className="shrink-0"
+                >
+                  <div className="space-y-2.5">
+                    <MotionButton
+                      whileTap={btnTap}
+                      transition={SPRING_FAST}
+                      onClick={() => { resetForm(); setView('register'); }}
+                      className="flex min-h-14 w-full items-center justify-center rounded-2xl border-2 border-[#B94712] bg-[#F26B1F] px-5 text-[15px] font-bold text-[var(--ink-on-accent)] shadow-[0_3px_0_#B94712] transition-all active:translate-y-0.5 active:shadow-none"
+                    >
+                      Create your account
+                    </MotionButton>
+                    <MotionButton
+                      whileTap={btnTap}
+                      transition={SPRING_FAST}
+                      onClick={() => { resetForm(); setView('login'); }}
+                      className="flex min-h-14 w-full items-center justify-center rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] px-5 text-[15px] font-bold text-[var(--ink-primary)] transition-colors"
+                    >
+                      Log in
+                    </MotionButton>
+                    {SHOW_GOOGLE_SIGN_IN && (
+                      <MotionButton
+                        whileTap={btnTap}
+                        transition={SPRING_FAST}
+                        onClick={handleGoogleSignIn}
+                        disabled={isLoading}
+                        className="flex min-h-14 w-full items-center justify-center gap-2.5 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 text-[15px] font-semibold text-[var(--ink-primary)] disabled:cursor-not-allowed disabled:opacity-50"
+                      >
+                        <GoogleIcon />
+                        Continue with Google
+                      </MotionButton>
+                    )}
+                    {SHOW_APPLE_SIGN_IN && (
+                      <MotionButton
+                        whileTap={btnTap}
+                        transition={SPRING_FAST}
+                        onClick={handleAppleSignIn}
+                        disabled={isLoading}
+                        className="flex min-h-14 w-full items-center justify-center gap-2.5 rounded-2xl bg-black px-5 text-[15px] font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50 dark:border dark:border-zinc-700"
+                      >
+                        <AppleIcon />
+                        Continue with Apple
+                      </MotionButton>
+                    )}
+                  </div>
+
+                  <div className="mt-4 border-t border-[var(--outline-soft)] pt-2">
+                    <button
+                      type="button"
+                      onClick={() => setSchoolAccessOpen(true)}
+                      className="flex min-h-11 w-full items-center gap-3 rounded-xl px-1 text-left text-sm font-semibold text-[var(--ink-secondary)]"
+                    >
+                      <School size={17} strokeWidth={1.7} aria-hidden="true" />
+                      <span className="flex-1">School access</span>
+                      <ChevronRight size={17} strokeWidth={1.7} aria-hidden="true" />
+                    </button>
+                  </div>
+                </MotionDiv>
               </div>
 
-              <div className="flex items-center gap-4 mt-8">
-                <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-                <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
-                <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
+              {/* Desktop retains the split editorial card and its direct role
+                  choices, with clearer student action copy. */}
+              <div className="hidden text-center md:block">
+                <p className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: '#9e9186' }}>Welcome</p>
+                <h1 className="mb-3 text-4xl font-semibold tracking-tight" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
+                  Your study,<br />your way.
+                </h1>
+                <p className="mb-10 text-sm" style={{ fontFamily: "'DM Sans', sans-serif", color: '#7a7068' }}>
+                  Science-backed study strategies personalised to your subjects, your goals, and your exam.
+                </p>
+
+                <div className="space-y-3">
+                  <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={() => { resetForm(); setView('register'); }} className={primaryBtn} style={primaryBtnStyle}>
+                    Create your account
+                  </MotionButton>
+                  <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={() => { resetForm(); setView('login'); }} className="w-full rounded-xl border-2 py-3.5 text-[15px] font-semibold transition-all" style={{ color: '#F26B1F', borderColor: 'rgba(242,107,31,0.3)', backgroundColor: 'white' }}>
+                    Log in
+                  </MotionButton>
+                  {SHOW_GOOGLE_SIGN_IN && (
+                    <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleGoogleSignIn} disabled={isLoading} className="flex w-full items-center justify-center gap-2.5 rounded-xl border-2 py-3.5 text-[15px] font-semibold transition-all disabled:cursor-not-allowed disabled:opacity-50" style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}>
+                      <GoogleIcon /> Continue with Google
+                    </MotionButton>
+                  )}
+                  {SHOW_APPLE_SIGN_IN && (
+                    <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleAppleSignIn} disabled={isLoading} className="flex w-full items-center justify-center gap-2.5 rounded-xl py-3.5 text-[15px] font-semibold transition-all disabled:cursor-not-allowed disabled:opacity-50" style={{ color: '#FFFFFF', backgroundColor: '#000000' }}>
+                      <AppleIcon /> Continue with Apple
+                    </MotionButton>
+                  )}
+                </div>
+
+                <div className="mt-8 flex items-center gap-4">
+                  <div className="h-px flex-1" style={{ backgroundColor: '#d0cdc8' }} />
+                  <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
+                  <div className="h-px flex-1" style={{ backgroundColor: '#d0cdc8' }} />
+                </div>
+                <button onClick={() => { resetForm(); setView('gc'); }} className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border-2 py-3 text-sm font-medium transition-all" style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}>
+                  <GraduationCap size={16} /> Sign in as Guidance Counsellor
+                </button>
+                <button onClick={() => { resetForm(); setView('staff'); }} className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border-2 py-3 text-sm font-medium transition-all" style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}>
+                  <KeyRound size={16} /> Teacher / staff access
+                </button>
               </div>
-              <button
-                onClick={() => { resetForm(); setView('gc'); }}
-                className="w-full py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 mt-4 border-2"
-                style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}
-              >
-                <GraduationCap size={16} /> Sign in as Guidance Counsellor
-              </button>
-              <button
-                onClick={() => { resetForm(); setView('staff'); }}
-                className="w-full py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 mt-3 border-2"
-                style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}
-              >
-                <KeyRound size={16} /> Teacher / staff access
-              </button>
-            </div>
+            </>
           )}
 
           {/* ── LOGIN ──────────────────────────────────────── */}
           {view === 'login' && (
             <>
-              <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+              <button type="button" onClick={() => setView('welcome')} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
                 <ArrowLeft size={14} /> Back
               </button>
-              <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome back</h2>
-              <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Sign in with your email and password.</p>
+              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome back</h2>
+              <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Sign in with your email and password.</p>
               <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
                 <div>
                   <label htmlFor="login-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                  <input id="login-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                  <input id="login-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                 </div>
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
                     <label htmlFor="login-password" className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
-                    <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="text-xs font-semibold transition-colors hover:opacity-80" style={{ color: '#F26B1F' }}>Forgot?</button>
+                    <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="relative text-xs font-semibold transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[''] hover:opacity-80" style={{ color: '#F26B1F' }}>Forgot?</button>
                   </div>
                   <div className="relative">
                     <input id="login-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className={passwordToggleClass} style={{ color: '#9e9186' }}>
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
                   </div>
@@ -1120,7 +1242,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </>
               )}
               <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
-                Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#F26B1F' }}>Register</button>
+                Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="relative font-semibold transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[''] hover:opacity-80" style={{ color: '#F26B1F' }}>Register</button>
               </p>
             </>
           )}
@@ -1128,16 +1250,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           {/* ── GC LOGIN ───────────────────────────────────── */}
           {view === 'gc' && (
             <>
-              <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+              <button type="button" onClick={() => setView('welcome')} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
                 <ArrowLeft size={14} /> Back
               </button>
-              <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Guidance Counsellor</h2>
-              <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Select your school and enter your password.</p>
+              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Guidance Counsellor</h2>
+              <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Select your school and enter your password.</p>
               <form onSubmit={e => { e.preventDefault(); handleGCLogin(); }} className="space-y-4">
                 <div>
                   <label htmlFor="gc-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
                   <div className="relative">
-                    <select id="gc-school" value={gcSchool} onChange={e => { setGcSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400' : ''}`} autoFocus>
+                    <select id="gc-school" value={gcSchool} onChange={e => { setGcSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400' : ''}`} autoFocus={shouldAutoFocus}>
                       <option value="" disabled>Select your school</option>
                       {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
                     </select>
@@ -1148,7 +1270,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <label htmlFor="gc-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                   <div className="relative">
                     <input id="gc-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className={passwordToggleClass} style={{ color: '#9e9186' }}>
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
                   </div>
@@ -1164,15 +1286,15 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           {/* ── STAFF / TEACHER ACCESS ──────────────────────── */}
           {view === 'staff' && (
             <>
-              <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+              <button type="button" onClick={() => setView('welcome')} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
                 <ArrowLeft size={14} /> Back
               </button>
-              <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Teacher / staff access</h2>
+              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Teacher / staff access</h2>
               <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Enter your details and the staff access code from your school. New to NextStepUni? This creates your staff account. Already have an account? Use the same email and password.</p>
               <form onSubmit={e => { e.preventDefault(); handleStaffAccess(); }} className="space-y-4">
                 <div>
                   <label htmlFor="staff-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your name</label>
-                  <input id="staff-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="Jane Murphy" className={inputClass} autoFocus autoComplete="name" />
+                  <input id="staff-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="Jane Murphy" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="name" />
                 </div>
                 <div>
                   <label htmlFor="staff-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
@@ -1192,7 +1314,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <label htmlFor="staff-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                   <div className="relative">
                     <input id="staff-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder={`At least ${MIN_PASSWORD_LENGTH} characters`} minLength={MIN_PASSWORD_LENGTH} maxLength={MAX_PASSWORD_LENGTH} className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className={passwordToggleClass} style={{ color: '#9e9186' }}>
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
                   </div>
@@ -1215,11 +1337,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           {/* ── FORGOT PASSWORD ─────────────────────────────── */}
           {view === 'forgot' && (
             <>
-              <button type="button" onClick={() => { setView('login'); setError(''); setResetSent(false); }} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+              <button type="button" onClick={() => { setView('login'); setError(''); setResetSent(false); }} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
                 <ArrowLeft size={14} /> Back to sign in
               </button>
-              <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>
-              <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Enter your email and we&apos;ll send you a link to reset your password.</p>
+              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>
+              <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Enter your email and we&apos;ll send you a link to reset your password.</p>
               {resetSent ? (
                 <MotionDiv
                   initial={{ opacity: 0 }}
@@ -1274,7 +1396,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <form onSubmit={e => { e.preventDefault(); handleForgotPassword(); }} className="space-y-4">
                   <div>
                     <label htmlFor="reset-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                    <input id="reset-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                    <input id="reset-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                   </div>
                 <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                   <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
@@ -1292,7 +1414,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <button type="button" onClick={() => {
                   if (registerStep > 1) { setRegisterStep(s => s - 1); setError(''); }
                   else setView('welcome');
-                }} className="flex items-center gap-1.5 text-sm font-medium transition-colors" style={{ color: '#9e9186' }}>
+                }} className={backButtonClass} style={{ color: '#9e9186' }}>
                   <ArrowLeft size={14} /> Back
                 </button>
                 <div className="flex items-center gap-1.5">
@@ -1313,12 +1435,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <AnimatePresence mode="wait" initial={false} custom={stepDirection}>
                 {registerStep === 1 && (
                   <MotionDiv key="step1" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
-                    <p className="text-sm mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
+                    <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
+                    <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
                     <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="space-y-4">
                       <div>
                         <label htmlFor="register-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                        <input id="register-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                        <input id="register-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                       </div>
                       <div>
                         <label htmlFor="register-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
@@ -1348,21 +1470,21 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       </MotionButton>
                     </form>
                     <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
-                      Already have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('login'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#F26B1F' }}>Sign in</button>
+                      Already have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('login'); }} className="relative font-semibold transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[''] hover:opacity-80" style={{ color: '#F26B1F' }}>Sign in</button>
                     </p>
                   </MotionDiv>
                 )}
 
                 {registerStep === 2 && (
                   <MotionDiv key="step2" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>
-                    <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Use at least {MIN_PASSWORD_LENGTH} characters. A short phrase is easier to remember and harder to guess.</p>
+                    <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>
+                    <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Use at least {MIN_PASSWORD_LENGTH} characters. A short phrase is easier to remember and harder to guess.</p>
                     <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="space-y-4">
                       <div>
                         <label htmlFor="register-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                         <div className="relative">
-                          <input id="register-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" minLength={MIN_PASSWORD_LENGTH} maxLength={MAX_PASSWORD_LENGTH} className={passwordInputClass} autoFocus autoComplete="new-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                          <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                          <input id="register-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" minLength={MIN_PASSWORD_LENGTH} maxLength={MAX_PASSWORD_LENGTH} className={passwordInputClass} autoFocus={shouldAutoFocus} autoComplete="new-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                          <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className={passwordToggleClass} style={{ color: '#9e9186' }}>
                             {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                           </button>
                         </div>
@@ -1383,12 +1505,23 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
                 {registerStep === 3 && (
                   <MotionDiv key="step3" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>
+                    <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>
                     <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
-                    <div className="grid grid-cols-4 gap-3 mb-6">
+                    <div className="mb-6 grid grid-cols-4 gap-3">
                       {AVATAR_SEEDS.map(seed => (
-                        <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#FDEEDF]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { borderColor: '#F26B1F', border: '2px solid #F26B1F' } : { border: '2px solid #d0cdc8' }}>
-                          <Avatar seed={seed} alt={seed} className="w-full h-full rounded-lg" />
+                        <button
+                          key={seed}
+                          type="button"
+                          aria-pressed={selectedAvatar === seed}
+                          aria-label={`Choose ${seed} avatar`}
+                          onClick={() => setAvatar(seed)}
+                          className={`aspect-square overflow-hidden rounded-2xl border-2 bg-white transition-[border-color,box-shadow,transform] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] active:scale-[0.97] ${
+                            selectedAvatar === seed
+                              ? 'border-[#F26B1F] shadow-[0_0_0_3px_rgba(242,107,31,0.22)]'
+                              : 'border-[#D0CDC8] hover:border-[#9E9186]'
+                          }`}
+                        >
+                          <Avatar seed={seed} alt="" className="block h-full w-full object-cover" />
                         </button>
                       ))}
                     </div>
@@ -1401,10 +1534,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           aria-checked={agreedToTerms}
                           aria-label="I have read the Privacy Notice and agree to the Terms of Use"
                           onClick={() => { setAgreedToTerms(v => !v); setError(''); }}
-                          className="mt-0.5 w-5 h-5 rounded-md border-2 flex items-center justify-center shrink-0 transition-colors"
-                          style={agreedToTerms ? { backgroundColor: '#F26B1F', borderColor: '#F26B1F' } : { borderColor: '#d0cdc8' }}
+                          className="-m-3 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg"
                         >
-                          {agreedToTerms && <Check size={13} className="text-white" strokeWidth={3} />}
+                          <span
+                            className="flex h-5 w-5 items-center justify-center rounded-md border-2 transition-colors"
+                            style={agreedToTerms ? { backgroundColor: '#F26B1F', borderColor: '#F26B1F' } : { borderColor: '#d0cdc8' }}
+                          >
+                            {agreedToTerms && <Check size={13} className="text-white" strokeWidth={3} />}
+                          </span>
                         </button>
                         <span className="text-[13px] leading-snug" style={{ color: '#5a5550' }}>
                           I have read the{' '}
@@ -1427,9 +1564,89 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             </>
           )}
         </MotionDiv>
+        </AnimatePresence>
+        <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
+      </LoginCard>
+
+      <AnimatePresence>
+        {schoolAccessOpen && (
+          <>
+            <MotionDiv
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 z-[110] bg-black/45 backdrop-blur-[2px] md:hidden"
+              onClick={() => setSchoolAccessOpen(false)}
+              aria-hidden="true"
+            />
+            <MotionDiv
+              initial={{ y: '100%' }}
+              animate={{ y: 0 }}
+              exit={{ y: '100%' }}
+              transition={{ duration: 0.32, ease: SLIDE_EASE }}
+              className="theme-compat pointer-events-none fixed inset-0 z-[111] flex items-end md:hidden"
+            >
+              <div
+                ref={schoolAccessRef}
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="school-access-title"
+                className="pointer-events-auto w-full rounded-t-[28px] border-t-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] px-5 pt-5 shadow-2xl"
+                style={{ paddingBottom: 'calc(20px + var(--sab, 0px))' }}
+              >
+                <div className="mb-5 flex items-start justify-between gap-4">
+                  <div>
+                    <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--accent-hex)]">For your school</p>
+                    <h2 id="school-access-title" className="font-serif text-2xl font-semibold tracking-tight text-[var(--ink-primary)]">School access</h2>
+                    <p className="mt-1 text-sm text-[var(--ink-muted)]">Choose the dashboard you use.</p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setSchoolAccessOpen(false)}
+                    aria-label="Close school access"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[var(--outline-soft)] text-[var(--ink-muted)]"
+                  >
+                    <X size={18} aria-hidden="true" />
+                  </button>
+                </div>
+
+                <div className="overflow-hidden rounded-2xl border border-[var(--outline-soft)]">
+                  <button
+                    type="button"
+                    onClick={() => { setSchoolAccessOpen(false); resetForm(); setView('gc'); }}
+                    className="flex min-h-[68px] w-full items-center gap-3 border-b border-[var(--outline-soft)] px-4 text-left"
+                  >
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[var(--outline-soft)] text-[var(--accent-hex)]">
+                      <GraduationCap size={19} aria-hidden="true" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-sm font-bold text-[var(--ink-primary)]">Guidance counsellor</span>
+                      <span className="mt-0.5 block text-xs text-[var(--ink-muted)]">Open your school dashboard</span>
+                    </span>
+                    <ChevronRight size={18} className="text-[var(--ink-muted)]" aria-hidden="true" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => { setSchoolAccessOpen(false); resetForm(); setView('staff'); }}
+                    className="flex min-h-[68px] w-full items-center gap-3 px-4 text-left"
+                  >
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[var(--outline-soft)] text-[var(--accent-hex)]">
+                      <KeyRound size={18} aria-hidden="true" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-sm font-bold text-[var(--ink-primary)]">Teacher or staff</span>
+                      <span className="mt-0.5 block text-xs text-[var(--ink-muted)]">Sign in or redeem an access code</span>
+                    </span>
+                    <ChevronRight size={18} className="text-[var(--ink-muted)]" aria-hidden="true" />
+                  </button>
+                </div>
+              </div>
+            </MotionDiv>
+          </>
+        )}
       </AnimatePresence>
-      <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
-    </LoginCard>
+    </>
   );
 };
 

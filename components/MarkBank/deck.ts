@@ -21,6 +21,7 @@
  */
 
 import type { SecCard, SecDiagramCard } from '../../types/markBank';
+import { CURRICULUM } from '../../curriculum';
 import DECK_SIZES from './cards/sizes.json';
 
 
@@ -36,6 +37,113 @@ export interface StrandRef {
   title: string;
   topics: TopicRef[];
 }
+
+/**
+ * English still uses the outgoing syllabus taxonomy through the 2028 exam.
+ * Adapt the canonical curriculum data instead of maintaining a second English
+ * list in Mark Bank. `curriculumRegistry.ts` currently imports this catalogue
+ * to build redeveloped specifications, so importing the registry here would be
+ * a cycle; `curriculum.ts` is its canonical legacy adapter and the one safe
+ * dependency at this boundary.
+ */
+const englishCurriculum = CURRICULUM.find(subject => subject.id === 'english');
+if (!englishCurriculum) throw new Error('Canonical English curriculum is missing');
+const irishCurriculum = CURRICULUM.find(subject => subject.id === 'irish');
+if (!irishCurriculum) throw new Error('Canonical Irish curriculum is missing');
+const artCurriculum = CURRICULUM.find(subject => subject.id === 'art');
+if (!artCurriculum) throw new Error('Canonical Art curriculum is missing');
+const geographyCurriculum = CURRICULUM.find(subject => subject.id === 'geography');
+if (!geographyCurriculum) throw new Error('Canonical Geography curriculum is missing');
+
+// Put the live Paper 1 areas first. The canonical curriculum starts with the
+// much larger Paper 2 catalogue, which otherwise buries all 19 available
+// cards below nearly one hundred disabled topic rows on a phone.
+const englishDisplayPriority = new Map([
+  ['english-10', 0], // Comprehending — Section I
+  ['english-9', 1],  // Composing — Section II
+]);
+
+export const ENGLISH_STRANDS: StrandRef[] = [...englishCurriculum.strands]
+  .sort((a, b) =>
+    (englishDisplayPriority.get(a.id) ?? 2) - (englishDisplayPriority.get(b.id) ?? 2))
+  .map(strand => ({
+  id: strand.id,
+  label: strand.id === 'english-9' || strand.id === 'english-10' ? 'Paper 1' : 'Paper 2',
+  title: strand.name,
+  topics: strand.subtopics
+    .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map(topic => ({
+      id: topic.id,
+      code: topic.id.replace(/^english-(\d+)-/, '$1.'),
+      title: topic.name,
+    })),
+  }));
+
+/**
+ * The 2021–2025 Irish papers use the outgoing syllabus.  Keep the canonical
+ * Gaeilge names and taxonomy; Mark Bank hides oral and 2027+ rows because this
+ * completed written-paper corpus contains no card against them.
+ */
+export const IRISH_STRANDS: StrandRef[] = irishCurriculum.strands.map(strand => ({
+  id: strand.id,
+  label: strand.id === 'irish-1' || strand.id === 'irish-2' ? 'Páipéar 1' :
+    strand.id === 'irish-0' ? 'Béaltriail' : 'Páipéar 2',
+  title: strand.name,
+  topics: strand.subtopics
+    .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map(topic => ({
+      id: topic.id,
+      code: topic.id.replace(/^irish-(\d+)-/, '$1.'),
+      title: topic.name,
+    })),
+}));
+
+/**
+ * The written Art paper examines the three Visual Studies content areas. Keep
+ * their canonical curriculum ids while omitting Research/Create/Respond rows,
+ * which belong to coursework and the practical examination rather than this
+ * complete written-paper deck. `art-6-4` is the registry's catch-all filing
+ * bucket, not another examinable content area; every 2021–2025 question has a
+ * more specific home, so showing it as “Being built” would falsely make this
+ * complete corpus look unfinished.
+ */
+const artSection = new Map([
+  ['art-6', { order: 0, label: 'Section A', title: "Today's World" }],
+  ['art-4', { order: 1, label: 'Section B', title: 'Europe and the Wider World' }],
+  ['art-5', { order: 2, label: 'Section C', title: 'Ireland and the Wider World' }],
+]);
+
+export const ART_STRANDS: StrandRef[] = artCurriculum.strands
+  .filter(strand => artSection.has(strand.id))
+  .sort((a, b) => artSection.get(a.id)!.order - artSection.get(b.id)!.order)
+  .map(strand => ({
+    id: strand.id,
+    label: artSection.get(strand.id)!.label,
+    title: artSection.get(strand.id)!.title,
+    topics: strand.subtopics
+      .filter((topic): topic is { id: string; name: string } =>
+        Boolean(topic.id) && topic.id !== 'art-6-4')
+      .map(topic => ({
+        id: topic.id,
+        code: topic.id.replace(/^art-(\d+)-/, '$1.'),
+        title: topic.name,
+      })),
+  }));
+
+/** The 2021–2025 papers use the outgoing nine-unit Geography syllabus. */
+export const GEOGRAPHY_STRANDS: StrandRef[] = geographyCurriculum.strands.map(strand => ({
+  id: strand.id,
+  label: strand.name.startsWith('Optional') ? 'Optional unit'
+    : strand.name.startsWith('Elective') ? 'Elective unit' : 'Core unit',
+  title: strand.name.replace(/^(?:Core|Elective|Optional) Unit \d+:\s*/, ''),
+  topics: strand.subtopics
+    .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map(topic => ({
+      id: topic.id,
+      code: topic.id.replace(/^geography-(\d+)-/, '$1.'),
+      title: topic.name,
+    })),
+}));
 
 /** The redeveloped specification's own structure, verbatim from the spec. */
 export const STRANDS: StrandRef[] = [
@@ -691,87 +799,6 @@ export const MATHS_STRANDS: StrandRef[] = [
   },
 ];
 
-
-/** The Leaving Certificate Computer Science specification (NCCA, examined from
- *  2020), read from the specification PDF. Three strands: the practices and
- *  principles, the five core concepts, and the four applied learning tasks.
- *
- *  The codes are the specification's own groupings — it numbers its learning
- *  outcomes 1.1 to 3.14 and gathers them under the headings used here ("S1:
- *  Computational thinking", "S2: Abstraction", "APPLIED LEARNING TASK 2:
- *  ANALYTICS"). Strand 3's tasks are titled in capitals in the document and
- *  are given here in sentence case, which is the only change made to any of
- *  this wording. */
-/* The syllabus's own headings for section 2, "Materials and Technology",
- * which is what the written examination covers, plus the mechanisms heading
- * from section 1's TECHNOLOGY ("prime movers, power transmission systems,
- * brakes and other mechanisms"). Grouped into three for the shelf; the
- * headings themselves are the syllabus's, in its order. */
-export const ENGINEERING_STRANDS: StrandRef[] = [
-  {
-    id: 'eng1', label: 'Materials', title: 'Materials',
-    topics: [
-      { id: 'eng-1-2', code: 'M', title: 'Classification and origin of metals' },
-      { id: 'eng-1-3', code: 'M', title: 'Structure of metals' },
-      { id: 'eng-1-4', code: 'M', title: 'Iron and steel' },
-      { id: 'eng-1-5', code: 'M', title: 'Non-ferrous metals' },
-      { id: 'eng-1-9', code: 'M', title: 'Plastics' },
-    ],
-  },
-  {
-    id: 'eng2', label: 'Processes', title: 'Processes',
-    topics: [
-      { id: 'eng-2-6', code: 'P', title: 'Heat treatment of metals' },
-      { id: 'eng-2-10', code: 'P', title: 'Joining of materials' },
-      { id: 'eng-2-11', code: 'P', title: 'Machining' },
-      { id: 'eng-2-13', code: 'P', title: 'Manufacturing processes' },
-      { id: 'eng-2-15', code: 'P', title: 'Mechanisms and power transmission' },
-      { id: 'eng-2-16', code: 'P', title: 'Control technology and electronics' },
-    ],
-  },
-  {
-    id: 'eng3', label: 'Properties and practice', title: 'Properties and practice',
-    topics: [
-      { id: 'eng-3-1', code: 'T', title: 'Health and safety' },
-      { id: 'eng-3-7', code: 'T', title: 'Corrosion of metals' },
-      { id: 'eng-3-8', code: 'T', title: 'Materials testing' },
-      { id: 'eng-3-12', code: 'T', title: 'Metrology' },
-      { id: 'eng-3-14', code: 'T', title: 'Technology and design' },
-    ],
-  },
-];
-
-export const COMPUTER_SCIENCE_STRANDS: StrandRef[] = [
-  {
-    id: 'cs1', label: 'Strand 1', title: 'Practices and principles',
-    topics: [
-      { id: 'cs-1-1', code: 'S1', title: 'Computational thinking' },
-      { id: 'cs-1-2', code: 'S1', title: 'Computers and society' },
-      { id: 'cs-1-3', code: 'S1', title: 'Designing and developing' },
-    ],
-  },
-  {
-    id: 'cs2', label: 'Strand 2', title: 'Core concepts',
-    topics: [
-      { id: 'cs-2-1', code: 'S2', title: 'Abstraction' },
-      { id: 'cs-2-2', code: 'S2', title: 'Algorithms' },
-      { id: 'cs-2-3', code: 'S2', title: 'Computer systems' },
-      { id: 'cs-2-4', code: 'S2', title: 'Data' },
-      { id: 'cs-2-5', code: 'S2', title: 'Evaluation and testing' },
-    ],
-  },
-  {
-    id: 'cs3', label: 'Strand 3', title: 'Computer science in practice',
-    topics: [
-      { id: 'cs-3-1', code: 'ALT1', title: 'Interactive information systems' },
-      { id: 'cs-3-2', code: 'ALT2', title: 'Analytics' },
-      { id: 'cs-3-3', code: 'ALT3', title: 'Modelling and simulation' },
-      { id: 'cs-3-4', code: 'ALT4', title: 'Embedded systems' },
-    ],
-  },
-];
-
-
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -782,8 +809,10 @@ export const SUBJECTS = [
   { id: 'economics', title: 'Economics', strands: ECONOMICS_STRANDS, spec: 'specification examined from 2021' },
   { id: 'construction-studies', title: 'Construction Studies', strands: CONSTRUCTION_STUDIES_STRANDS, spec: 'Ordinary and Higher Level syllabus' },
   { id: 'maths', title: 'Mathematics', strands: MATHS_STRANDS, spec: 'syllabus for examination from 2015' },
-  { id: 'computer-science', title: 'Computer Science', strands: COMPUTER_SCIENCE_STRANDS, spec: 'specification examined from 2020' },
-  { id: 'engineering', title: 'Engineering', strands: ENGINEERING_STRANDS, spec: 'Materials and Technology syllabus' },
+  { id: 'english', title: 'English', strands: ENGLISH_STRANDS, spec: 'outgoing syllabus examined through 2028' },
+  { id: 'irish', title: 'Irish', strands: IRISH_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
+  { id: 'art', title: 'Art', strands: ART_STRANDS, spec: 'Visual Studies specification' },
+  { id: 'geography', title: 'Geography', strands: GEOGRAPHY_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1029,13 +1058,21 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
     higher: () => import('./cards/maths/higher'),
     ordinary: () => import('./cards/maths/ordinary'),
   },
-  engineering: {
-    higher: () => import('./cards/engineering/higher'),
-    ordinary: () => import('./cards/engineering/ordinary'),
+  english: {
+    higher: () => import('./cards/english/higher'),
+    ordinary: () => import('./cards/english/ordinary'),
   },
-  'computer-science': {
-    higher: () => import('./cards/computer-science/higher'),
-    ordinary: () => import('./cards/computer-science/ordinary'),
+  irish: {
+    higher: () => import('./cards/irish/higher'),
+    ordinary: () => import('./cards/irish/ordinary'),
+  },
+  art: {
+    higher: () => import('./cards/art/higher'),
+    ordinary: () => import('./cards/art/ordinary'),
+  },
+  geography: {
+    higher: () => import('./cards/geography/higher'),
+    ordinary: () => import('./cards/geography/ordinary'),
   },
 };
 

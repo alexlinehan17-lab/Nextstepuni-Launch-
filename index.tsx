@@ -17,13 +17,22 @@ import { AuthProvider } from './contexts/AuthContext';
 import { NavigationProvider } from './contexts/NavigationContext';
 import { ProgressProvider } from './contexts/ProgressContext';
 
-// Configure the native status bar so the web view doesn't extend underneath it.
-// `setOverlaysWebView({ overlay: false })` pushes our content below the clock /
-// dynamic island, and `Style.Dark` keeps the status bar icons readable against
-// our light cream background.
+// Keep native chrome in step with the web theme. Settings updates the `dark`
+// class directly on <html>, so observing that class also covers theme changes
+// made after React has mounted (and the persisted preference loaded).
 if (Capacitor.isNativePlatform()) {
   StatusBar.setOverlaysWebView({ overlay: false }).catch(() => {});
-  StatusBar.setStyle({ style: Style.Dark }).catch(() => {});
+
+  const syncNativeStatusBar = () => {
+    const isDark = document.documentElement.classList.contains('dark');
+    StatusBar.setStyle({ style: isDark ? Style.Light : Style.Dark }).catch(() => {});
+  };
+
+  syncNativeStatusBar();
+  new MutationObserver(syncNativeStatusBar).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class'],
+  });
 }
 
 // Register the PWA service worker for web/offline only. NEVER in the Capacitor

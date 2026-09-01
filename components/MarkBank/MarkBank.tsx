@@ -27,8 +27,10 @@ import {
 } from './scheduler';
 import {
   MARK_BANK_SESSION_SIZE,
+  listeningExerciseKey,
   nextSessionActionLabel,
   resolveSessionQueue,
+  sessionExerciseCount,
   topicSessionSummary,
 } from './sessionPlanning';
 import { SUBJECTS, builtDecks, cardsForTopic, deckSize, loadCards, strandsFor, topicMarks, type Level } from './deck';
@@ -403,11 +405,14 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     )[0];
     const worstCard = worst && cards.find(c => c.id === worst.cardId);
     const worstGap = worst ? worst.marksAvailable - worst.marksClaimed : 0;
-    const distinct = new Set(screen.results.map(r => r.cardId)).size;
+    const distinct = new Set(screen.results.map(result => {
+      const resultCard = cards.find(card => card.id === result.cardId);
+      return resultCard ? listeningExerciseKey(resultCard) ?? resultCard.id : result.cardId;
+    })).size;
     const nextPool = screen.topicId ? cardsForTopic(screen.topicId, cards) : cards;
     const nextQueue = resolveSessionQueue(nextPool, memories, now(), deck.examTs);
     const nextAction = nextSessionActionLabel(
-      nextQueue.length,
+      sessionExerciseCount(nextQueue),
       Boolean(screen.topicId),
       subject.title,
     );
@@ -493,6 +498,20 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   const strands = strandsFor(subjectId);
   const coveredTopics = strands.flatMap(strand => strand.topics).filter(topic => cardsForTopic(topic.id, cards).length > 0).length;
   const totalTopics = strands.reduce((sum, strand) => sum + strand.topics.length, 0);
+  // English is reconciled against every selectable response in all twenty
+  // 2021–2025 papers. Empty taxonomy rows there mean "not examined in this
+  // corpus", not "unfinished". Showing dozens of disabled poets and roll-up
+  // categories made a complete subject look half-built and buried the useful
+  // choices on mobile.
+  const completePaperCorpus = subjectId === 'english' || subjectId === 'irish';
+  const visibleStrands = completePaperCorpus
+    ? strands
+      .map(strand => ({
+        ...strand,
+        topics: strand.topics.filter(topic => cardsForTopic(topic.id, cards).length > 0),
+      }))
+      .filter(strand => strand.topics.length > 0)
+    : strands;
   const dueTopics = strands.flatMap(s => s.topics).filter(t => {
     const tc = cardsForTopic(t.id, cards);
     return tc.some(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; });
@@ -632,7 +651,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                 <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
                   {cards.length} questions from the {examYears} Leaving Certificate papers,
                   each marked against the real State Examinations Commission scheme.
-                  {' '}Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.
+                  {completePaperCorpus
+                    ? <> Every selectable response is included across {coveredTopics} examined syllabus topics.</>
+                    : <> Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.</>}
                 </p>
               )}
             </>
@@ -656,7 +677,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                   </div>
                 ))}
               </div>
-            ) : strands.map((strand, si) => (
+            ) : visibleStrands.map((strand, si) => (
               <section key={strand.id} id={`strand-${strand.id}`}>
                 <div style={{
                   height: 44, display: 'flex', alignItems: 'center', gap: 9,
@@ -685,7 +706,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                       .filter(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; })
                       .reduce((n, c) => n + c.totalMarks, 0);
                     const nextTopicCount = built && due === 0 && tMet === 0
-                      ? resolveSessionQueue(topicCards, memories, now(), deck.examTs).length
+                      ? sessionExerciseCount(resolveSessionQueue(topicCards, memories, now(), deck.examTs))
                       : 0;
                     const sessionSummary = topicSessionSummary(topicCards.length, nextTopicCount);
 
@@ -698,8 +719,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                           onMouseEnter={e => { if (built) e.currentTarget.style.background = 'var(--mb-raised)'; }}
                           onMouseLeave={e => { e.currentTarget.style.background = launchingTopicId === topic.id ? 'var(--mb-raised)' : 'transparent'; }}
                           style={{
-                            width: '100%', height: 56, display: 'flex', alignItems: 'center', gap: 16,
-                            padding: '0 18px', textAlign: 'left',
+                            width: '100%', height: 56, display: 'flex', alignItems: 'center', gap: wide ? 16 : 12,
+                            padding: wide ? '0 18px' : '0 14px', textAlign: 'left',
                             background: launchingTopicId === topic.id ? 'var(--mb-raised)' : 'transparent', border: 'none',
                             cursor: built ? 'pointer' : 'default',
                             transform: launchingTopicId === topic.id ? 'translateX(4px)' : 'translateX(0)',
@@ -726,12 +747,14 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                           {/* Every bar at the same x. Twenty bars scattered across
                               twenty cards cannot be compared, which is the one
                               thing a marks-based progress model exists to do. */}
-                          <span style={{ width: 120, flex: '0 0 auto' }}>
-                            {built && tMet > 0 && <MarkBar secure={tSecure} met={tMet} total={total} />}
-                          </span>
+                          {wide && (
+                            <span style={{ width: 120, flex: '0 0 auto' }}>
+                              {built && tMet > 0 && <MarkBar secure={tSecure} met={tMet} total={total} />}
+                            </span>
+                          )}
 
                           <span style={{
-                            width: 96, flex: '0 0 auto', textAlign: 'right',
+                            width: wide ? 96 : 80, flex: '0 0 auto', textAlign: 'right',
                             font: `700 11px/1.5 ${MONO}`, fontVariantNumeric: 'tabular-nums',
                             // Orange is the ONE colour here, and it means "do this
                             // now". It used to be the success green, so the same

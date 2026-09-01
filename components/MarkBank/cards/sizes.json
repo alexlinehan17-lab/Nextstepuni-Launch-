@@ -8,7 +8,7 @@
   "ordinary": 382
  },
  "physics": {
-  "higher": 570,
+  "higher": 569,
   "ordinary": 563
  },
  "agricultural-science": {
@@ -35,12 +35,20 @@
   "higher": 398,
   "ordinary": 435
  },
- "computer-science": {
-  "higher": 209,
-  "ordinary": 127
+ "english": {
+  "higher": 210,
+  "ordinary": 450
  },
- "engineering": {
-  "higher": 313,
-  "ordinary": 153
+ "irish": {
+  "higher": 215,
+  "ordinary": 185
+ },
+ "art": {
+  "higher": 222,
+  "ordinary": 240
+ },
+ "geography": {
+  "higher": 445,
+  "ordinary": 309
  }
 }

@@ -51,6 +51,32 @@ describe('Paper Trail subject registry', () => {
 });
 
 describe('Paper Trail index entries', () => {
+  it('indexes the complete 2026 Geography paper and companion set', () => {
+    const entries = PAPER_TRAIL_INDEX.geography.filter(entry =>
+      entry.year === 2026 && entry.lang === 'ev');
+    const byLevel = new Map(entries.map(entry => [entry.level, entry]));
+
+    expect(byLevel.get('higher')?.papers.map(paper => [
+      paper.label, paper.doc.f, paper.scheme?.f,
+    ])).toEqual([
+      ['Part 1', 'LC005ALP042EV.pdf', 'LC005ALP000EV.pdf'],
+      ['Part 2', 'LC005ALP043EV.pdf', 'LC005ALP000EV.pdf'],
+    ]);
+    expect(byLevel.get('ordinary')?.papers.map(paper => [
+      paper.label, paper.doc.f, paper.scheme?.f,
+    ])).toEqual([
+      ['Part 1', 'LC005GLP042EV.pdf', 'LC005GLP000EV.pdf'],
+      ['Part 2', 'LC005GLP043EV.pdf', 'LC005GLP000EV.pdf'],
+    ]);
+    expect(byLevel.get('common')?.papers.map(paper => [
+      paper.label, paper.doc.f,
+    ])).toEqual([
+      ['Ordnance Survey Map', 'LC005CLPC00EV.pdf'],
+      ['Map Legend', 'LC005CLP003EV.pdf'],
+      ['Aerial Photograph', 'LC005CLP004EV.pdf'],
+    ]);
+  });
+
   it('every index key is a registered subject, and vice versa', () => {
     for (const id of Object.keys(PAPER_TRAIL_INDEX)) {
       expect(subjectIds.has(id), `index key ${id}`).toBe(true);

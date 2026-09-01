@@ -197,6 +197,61 @@ export interface CardFigure {
   thirdPartyRights?: string;
 }
 
+/**
+ * Printed material a student must read before answering a card.
+ *
+ * This is deliberately separate from `CardFigure`. A source passage can span
+ * several pages and belongs on the QUESTION side of the reveal, whereas a
+ * figure is one bounded image and may itself be a worked solution. The pages
+ * are rendered from the real paper PDF already held by Paper Trail: no retyped
+ * passage, no fabricated facsimile, and no second copy bundled into the app.
+ */
+export interface CardSourceMaterial {
+  kind: 'source-text' | 'source-illustration';
+  /** The paper's own identity for the source, e.g. "TEXT 1". */
+  label: string;
+  /** Human title printed in the reader header. */
+  title: string;
+  /** One-based PDF pages, in reading order. */
+  pages: number[];
+  /**
+   * A separate official SEC document when the required material is not inside
+   * the question paper itself. Art publishes its illustrations as a companion
+   * booklet; defaulting to `SecCardBase.paperFileid` would silently open the
+   * wrong PDF. Omitted for passages that live in the question paper.
+   */
+  sourceFileid?: string;
+  /** The author/publication acknowledgement printed by the SEC. */
+  attribution: string;
+  /** Clarifies that the displayed layout is the official examination version. */
+  presentationNote: string;
+}
+
+/**
+ * A real recording required to answer a listening-comprehension card.
+ *
+ * Audio is deliberately modelled separately from a PDF source.  Treating the
+ * listening booklet as if it were the source would leave the question looking
+ * complete while withholding the one thing the student actually has to hear.
+ * `playbackUrl` points at a verified mirror of the SEC recording; the canonical
+ * SEC identity remains explicit so a mirror can be replaced without changing
+ * the card or its progress history.
+ */
+export interface CardAudioMaterial {
+  kind: 'source-audio';
+  /** The paper's own section identity, e.g. "Cuid B · Comhrá a hAon". */
+  label: string;
+  title: string;
+  /** Verified playback copy of the official recording. */
+  playbackUrl: string;
+  /** Stable filename published by the State Examinations Commission. */
+  secFileid: string;
+  /** Canonical SEC archive URL, retained even when its hot-link is gated. */
+  canonicalUrl: string;
+  attribution: string;
+  presentationNote: string;
+}
+
 /** Fields every card shares, whatever its provenance. */
 interface CardBase {
   /** No dots: a dot is a Firestore field-path separator, and card ids are used as
@@ -242,20 +297,24 @@ export interface SecCardBase extends CardBase {
   questionRef: string;
   /** Optional lead-in the paper prints before the question proper. */
   stem?: string;
+  /** Required reading carried by the question. It is available before reveal
+   *  and is rendered page-for-page from `paperFileid`. */
+  sourceMaterial?: CardSourceMaterial;
+  /**
+   * Further official documents needed beside `sourceMaterial`.
+   *
+   * Geography can require the printed question page, a separate OS map, and
+   * its separate legend for one task. Keeping those as distinct SEC documents
+   * avoids flattening or fabricating a composite while still putting every
+   * required source on the question side of the reveal.
+   */
+  additionalSourceMaterials?: CardSourceMaterial[];
+  /** Required listening recording, available on the question side. */
+  audioMaterial?: CardAudioMaterial;
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
-  tariffModel: TariffModel;
   /** The tariff printed on the paper. Row marks must reconcile against this. */
   totalMarks: number;
-  /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
-   *  dependency splitting, and is what makes the card fit a 360px phone.
-   *
-   *  A best-N-of-M card is the one exception, capped at MAX_OPTION_ROWS instead.
-   *  Its extra rows are a menu the student chooses from, not a list they must
-   *  recall — "identify any four of these six breeds" shows six photographs
-   *  because that is what the paper prints, and trimming to five would
-   *  misrepresent the question rather than lighten it. */
-  rows: MarkRow[];
   schemeCitation: string;
   /** Pixel escape hatch into the real scheme PDF, so any card can be checked
    *  against its source in one tap. Keeps faith with Paper Trail's charter. */
@@ -269,8 +328,229 @@ export interface SecCardBase extends CardBase {
   qa: { gates: string[]; humanReviewedBy: string; humanReviewedAt: string };
 }
 
+/**
+ * The established exact-point assessment used by sciences, Business and the
+ * other subjects whose schemes price identifiable answers.
+ *
+ * Kept out of `SecCardBase` deliberately: an English PCLM answer is not a bag
+ * of binary marking points. Making every SEC card carry rows encouraged the
+ * exact failure Mark Bank exists to prevent — turning non-exhaustive English
+ * indicative material into a fabricated answer checklist.
+ */
+export interface SecPointCardBase extends SecCardBase {
+  tariffModel: TariffModel;
+  /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
+   *  dependency splitting, and is what makes the card fit a 360px phone.
+   *
+   *  A best-N-of-M card is the one exception, capped at MAX_OPTION_ROWS instead.
+   *  Its extra rows are a menu the student chooses from, not a list they must
+   *  recall — "identify any four of these six breeds" shows six photographs
+   *  because that is what the paper prints, and trimming to five would
+   *  misrepresent the question rather than lighten it. */
+  rows: MarkRow[];
+}
+
+export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics';
+
+/** One score family exactly as the SEC grade grid prints it. */
+export interface PclmGradeBand {
+  grade:
+    | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
+    | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8';
+  /** Every mark the published grid permits in this band. */
+  marks: number[];
+}
+
+export interface PclmCriterion {
+  id: PclmCriterionId;
+  label: string;
+  maxMarks: number;
+  /** SEC task-specific guidance, not an invented generic success criterion. */
+  guidance: string[];
+  /** Marks selectable on the published grade grid for this criterion. */
+  permittedMarks: number[];
+}
+
+/** Shared identity for one separately marked part of a linked English question. */
+interface PclmComponentBase {
+  /** Stable within the card, e.g. `a`, `a-i` or `b`. */
+  id: string;
+  /** The paper's own part label. */
+  label: string;
+  totalMarks: number;
+}
+
+/** A short linked part which receives one mark on the SEC combined grid. */
+export interface PclmCombinedComponent extends PclmComponentBase {
+  mode: 'combined';
+  bands: PclmGradeBand[];
+  criteria: string[];
+}
+
+/** A substantial linked part which receives separate P, C, L and M marks. */
+export interface PclmDiscreteComponent extends PclmComponentBase {
+  mode: 'discrete';
+  bands: PclmGradeBand[];
+  criteria: PclmCriterion[];
+  /** C and L may not exceed P within this component. */
+  primacyOfPurpose: true;
+}
+
+export type PclmComponent = PclmCombinedComponent | PclmDiscreteComponent;
+
+export type PclmAssessment =
+  | {
+      /** Short Paper 1 answers are judged as one combined mark. */
+      mode: 'combined';
+      bands: PclmGradeBand[];
+      criteria: string[];
+    }
+  | {
+      /** Longer responses receive separate P, C, L and M marks. */
+      mode: 'discrete';
+      bands: PclmGradeBand[];
+      criteria: PclmCriterion[];
+      /** C and L may not exceed P. */
+      primacyOfPurpose: true;
+    }
+  | {
+      /**
+       * A selected question containing compulsory parts that the SEC marks on
+       * separate grids.  A component can itself be combined (for example OL
+       * Single Text Q1(a)) or discrete (for example the 40-mark part of an OL
+       * Comparative question).  The parts stay together because later wording
+       * often depends on an earlier choice, but their marks must never be
+       * collapsed into a fabricated holistic total.
+       */
+      mode: 'composite';
+      components: PclmComponent[];
+    };
+
+export interface PclmRubric {
+  system: 'pclm';
+  /** Things the printed task explicitly requires. They carry no marks alone. */
+  taskRequirements: string[];
+  assessment: PclmAssessment;
+  /**
+   * Examples the SEC gives examiners. Never rendered as claimable answers and
+   * always accompanied by `indicativeMaterialNote`.
+   */
+  indicativeMaterial?: string[];
+  indicativeMaterialNote: string;
+}
+
+export type IrishGuidanceKind =
+  /** A bounded answer or tariff printed by the scheme. */
+  | 'exact'
+  /** Non-exhaustive possible content which must never become a checklist. */
+  | 'indicative'
+  /** A published quality band such as Cumas/Cruinneas Gaeilge. */
+  | 'quality';
+
+/** One independently placed part of the SEC Irish marking scheme. */
+export interface IrishCriterion {
+  id: string;
+  label: string;
+  /** Awards add to the mark; deductions are subtracted from it. */
+  kind: 'award' | 'deduction';
+  maxMarks: number;
+  permittedMarks: number[];
+  guidanceKind: IrishGuidanceKind;
+  /** Verbatim or tightly bounded scheme guidance, never invented content. */
+  guidance: string[];
+}
+
+/**
+ * Irish has its own published grammar: Eolas/Ábhar, Cumas Gaeilge, task/style
+ * marks and (at Ordinary Level literature) explicit language deductions.  It
+ * is not PCLM and cannot truthfully be rendered as English's grade grid.
+ */
+export interface IrishRubric {
+  system: 'irish';
+  /** Things the printed task explicitly requires. They carry no marks alone. */
+  taskRequirements: string[];
+  criteria: IrishCriterion[];
+  /** Explains whether displayed examples are exhaustive or indicative. */
+  markingGuideNote: string;
+}
+
+export type ArtBandLevel = 'low' | 'moderate' | 'high';
+
+/** One published Art descriptor band and every mark it permits. */
+export interface ArtBand {
+  level: ArtBandLevel;
+  marks: number[];
+  /** SEC descriptor guidance, condensed only to remove repeated boilerplate. */
+  guidance: string[];
+}
+
+/**
+ * One independently awarded Art component.
+ *
+ * The 2021–2022 History and Appreciation schemes allocate marks to named
+ * components without quality bands. The 2023+ Visual Studies schemes retain
+ * components for Section A and publish low/moderate/high bands; Sections B and
+ * C use four holistic criteria. One type represents both grammars without
+ * pretending either is English PCLM.
+ */
+export interface ArtCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  /** Question-specific allocation or focus printed by the marking scheme. */
+  guidance: string[];
+  /** Absent where the SEC printed an allocation but no descriptor bands. */
+  bands?: ArtBand[];
+}
+
+export interface ArtRubric {
+  system: 'art';
+  /** Things the printed task explicitly requires. They carry no marks alone. */
+  taskRequirements: string[];
+  criteria: ArtCriterion[];
+  markingGuideNote: string;
+}
+
+export type GeographyGuidanceKind =
+  /** A bounded answer or allocation printed by the scheme. */
+  | 'exact'
+  /** Significant Relevant Points: valid alternatives remain creditable. */
+  | 'srp';
+
+/**
+ * One Geography mark placement.
+ *
+ * Geography schemes mix exact short answers, named components, graded map
+ * work and Significant Relevant Points.  An SRP is evidence emerging from a
+ * coherent response, not a model-answer bullet to tick.  Keeping that grammar
+ * explicit prevents the scheme's non-exhaustive examples becoming a fabricated
+ * checklist while still letting a student place their work on the real tariff.
+ */
+export interface GeographyCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidanceKind: GeographyGuidanceKind;
+  /** Published allocation and examiner directions for this task. */
+  guidance: string[];
+}
+
+export interface GeographyRubric {
+  system: 'geography';
+  /** Finite route or other instruction selected on this card. */
+  taskRequirements: string[];
+  criteria: GeographyCriterion[];
+  /** The mark value of one SRP on this paper, where SRPs govern the answer. */
+  srpMarks?: number;
+  markingGuideNote: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric;
+
 /** A prose/short-answer SEC card. */
-export interface SecQuestionCard extends SecCardBase {
+export interface SecQuestionCard extends SecPointCardBase {
   kind: 'question';
   figure?: CardFigure;
   /** The SEC's own print of the ask and its setup, cropped from the paper.
@@ -285,10 +565,21 @@ export interface SecQuestionCard extends SecCardBase {
  * is the type-level fix for the complaint that a diagram card never told the
  * student what its labels meant.
  */
-export interface SecDiagramCard extends SecCardBase {
+export interface SecDiagramCard extends SecPointCardBase {
   kind: 'diagram';
   figure: CardFigure;
   labelKey: LabelKey[];
+}
+
+/**
+ * A real SEC question governed by a published subject-specific rubric rather
+ * than a list of exact answer points. This variant has a renderer and scoring
+ * path of its own; it does not expose `rows`, so indicative examples cannot
+ * accidentally become binary marks in some future consumer.
+ */
+export interface SecRubricCard extends SecCardBase {
+  kind: 'rubric';
+  rubric: SecRubric;
 }
 
 /**
@@ -306,10 +597,13 @@ export interface StudentCard extends CardBase {
   addedTs: number;
 }
 
-export type MarkBankCard = SecQuestionCard | SecDiagramCard | StudentCard;
-export type SecCard = SecQuestionCard | SecDiagramCard;
+export type MarkBankCard = SecQuestionCard | SecDiagramCard | SecRubricCard | StudentCard;
+export type SecPointCard = SecQuestionCard | SecDiagramCard;
+export type SecCard = SecPointCard | SecRubricCard;
 
 export const isSecCard = (c: MarkBankCard): c is SecCard => c.source === 'sec';
+export const isPointCard = (c: SecCard): c is SecPointCard => c.kind === 'question' || c.kind === 'diagram';
+export const isRubricCard = (c: SecCard): c is SecRubricCard => c.kind === 'rubric';
 export const isDiagramCard = (c: MarkBankCard): c is SecDiagramCard =>
   c.source === 'sec' && c.kind === 'diagram';
 
@@ -428,6 +722,90 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
 }
 
 export function tariffReconciles(card: SecCard): boolean {
+  if (isRubricCard(card)) {
+    if (card.rubric.system === 'irish') {
+      const { criteria } = card.rubric;
+      const awardMaximum = criteria
+        .filter(criterion => criterion.kind === 'award')
+        .reduce((sum, criterion) => sum + criterion.maxMarks, 0);
+      return criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && awardMaximum === card.totalMarks
+        && criteria.every(criterion =>
+          criterion.permittedMarks.length > 0
+          && Math.min(...criterion.permittedMarks) === 0
+          && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
+    }
+    if (card.rubric.system === 'art') {
+      const { criteria } = card.rubric;
+      return criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.every(criterion => {
+          const permitted = criterion.permittedMarks;
+          if (permitted.length === 0
+            || Math.min(...permitted) !== 0
+            || Math.max(...permitted) !== criterion.maxMarks
+            || new Set(permitted).size !== permitted.length) return false;
+          if (!criterion.bands) return true;
+          const bandMarks = criterion.bands.flatMap(band => band.marks);
+          return criterion.bands.length === 3
+            && new Set(criterion.bands.map(band => band.level)).size === 3
+            && bandMarks.length === permitted.length
+            && new Set(bandMarks).size === bandMarks.length
+            && [...bandMarks].sort((a, b) => a - b)
+              .every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
+        });
+    }
+    if (card.rubric.system === 'geography') {
+      const { criteria } = card.rubric;
+      return criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.every(criterion =>
+          criterion.permittedMarks.length > 0
+          && Math.min(...criterion.permittedMarks) === 0
+          && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
+    }
+    const { assessment } = card.rubric;
+    const bandsReconcile = (bands: PclmGradeBand[], total: number) => {
+      const marks = bands.flatMap(band => band.marks);
+      return marks.length > 0
+        && Math.min(...marks) === 0
+        && Math.max(...marks) === total
+        && new Set(marks).size === marks.length;
+    };
+    if (assessment.mode === 'combined') {
+      return bandsReconcile(assessment.bands, card.totalMarks);
+    }
+    if (assessment.mode === 'composite') {
+      const criteriaReconcile = (criteria: PclmCriterion[], total: number) =>
+        criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === total
+        && criteria.every(criterion =>
+          criterion.permittedMarks.length > 0
+          && Math.min(...criterion.permittedMarks) === 0
+          && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
+      return assessment.components.length > 0
+        && new Set(assessment.components.map(component => component.id)).size
+          === assessment.components.length
+        && assessment.components.reduce((sum, component) => sum + component.totalMarks, 0)
+          === card.totalMarks
+        && assessment.components.every(component =>
+          bandsReconcile(component.bands, component.totalMarks)
+          && (component.mode === 'combined'
+            || criteriaReconcile(component.criteria, component.totalMarks)));
+    }
+    const max = assessment.criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0);
+    return max === card.totalMarks
+      && assessment.criteria.every(criterion =>
+        criterion.permittedMarks.length > 0
+        && Math.min(...criterion.permittedMarks) === 0
+        && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+        && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
+  }
   const { tariffModel: t, rows, totalMarks } = card;
   if (t.kind === 'orderedSplit' || t.kind === 'questionTotal') {
     return rows.every(r => r.marks === null);
