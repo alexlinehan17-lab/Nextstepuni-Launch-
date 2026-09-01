@@ -24,7 +24,7 @@ ANSWERS = os.path.join(HERE, "answers")
 SIDECAR_V = 1
 COPYRIGHT = "© State Examinations Commission"
 
-SEC_RE = re.compile(r"^\s*SECTION\s+([A-K])\b[\s\-–—:]*(.{0,60})", re.I)
+SEC_RE = re.compile(r"^\s*(?:SECTION|ROINN)\s+([A-K])\b[\s\-–—:]*(.{0,60})", re.I)
 
 
 def lines_of(page):
@@ -66,12 +66,24 @@ def build(paper_path, scheme_path):
     if letters != sorted(letters):
         return None, f"paper sections out of order: {letters}"
     sq, _ = find_sections(scheme, start_page=2)
-    missing = [L for L in letters if L not in sq]
-    if missing:
-        return None, f"scheme sections missing {missing}"
-    pts = [sq[L] for L in letters]
-    if any(b <= a for a, b in zip(pts, pts[1:])):
-        return None, "scheme sections not monotonic"
+    # chip only sections present on BOTH sides, and keep the longest
+    # monotonic run of scheme positions (stray appendix reprints fall out)
+    letters = [L for L in letters if L in sq]
+    if len(letters) >= 2:
+        pos = [sq[L] for L in letters]
+        best = []
+        for i in range(len(letters)):
+            cand = [letters[i]]
+            last = pos[i]
+            for j in range(i + 1, len(letters)):
+                if pos[j] > last:
+                    cand.append(letters[j])
+                    last = pos[j]
+            if len(cand) > len(best):
+                best = cand
+        letters = best
+    if len(letters) < 4:
+        return None, f"too few both-side sections: {letters}"
     qs = []
     for i, L in enumerate(letters):
         sp, sy = sq[L]
