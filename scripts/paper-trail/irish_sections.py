@@ -137,10 +137,15 @@ def main():
     for year in years:
         for lvl in "AG":
             f = f"LC001{lvl}LP200IV.pdf"
-            s = f"LC001{lvl}LP000IV.pdf"
             pp = os.path.join(CORPUS, "exampapers", str(year), f)
-            sp = os.path.join(CORPUS, "markingschemes", str(year), s)
-            if not (os.path.exists(pp) and os.path.exists(sp)):
+            sp = None
+            # 2026 names the combined scheme after Paper 1
+            for s in (f"LC001{lvl}LP000IV.pdf", f"LC001{lvl}LP100IV.pdf"):
+                cand = os.path.join(CORPUS, "markingschemes", str(year), s)
+                if os.path.exists(cand):
+                    sp = cand
+                    break
+            if not (os.path.exists(pp) and sp):
                 continue
             dst = os.path.join(ANSWERS, str(year), f"{f}.json")
             if os.path.exists(dst):
