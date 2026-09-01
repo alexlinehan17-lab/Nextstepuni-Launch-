@@ -242,6 +242,10 @@ QA_PASSED_ANSWER_PROFILES = {
     # (jc_history.py, 2022-25 — Q5's Home Rule sources open their leader
     # answers) and History Early Modern (hem_history.py, 2021-22 HL — the
     # Magrath DBQ opens its Criticism indicative points).
+    # Religious Education via re_sections.py (lettered SECTION blocks; the
+    # scheme restates each section's questions with marking criteria — the
+    # Section F render shows the greening-of-religion questions verbatim).
+    ('religious-education', 'higher', 'ev'),
     ('jc-history', 'common', 'ev'),
     ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
@@ -404,6 +408,10 @@ QA_PASSED_ANSWER_PROFILES = {
     # (jc_history.py, 2022-25 — Q5's Home Rule sources open their leader
     # answers) and History Early Modern (hem_history.py, 2021-22 HL — the
     # Magrath DBQ opens its Criticism indicative points).
+    # Religious Education via re_sections.py (lettered SECTION blocks; the
+    # scheme restates each section's questions with marking criteria — the
+    # Section F render shows the greening-of-religion questions verbatim).
+    ('religious-education', 'higher', 'ev'),
     ('jc-history', 'common', 'ev'),
     ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
