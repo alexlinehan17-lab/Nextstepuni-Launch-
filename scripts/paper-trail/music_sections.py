@@ -93,11 +93,12 @@ def scheme_markers(scheme, lo, hi):
     seen = {}
     for pi in range(lo, hi):
         for txt, x0, y in lines_of(scheme[pi]):
-            if x0 > 150:
-                continue
-            m = (re.match(r"^Q\.?\s*(\d{1,2})\b", txt)
-                 or re.match(r"^C\.?\s*(\d{1,2})\b", txt)
-                 or re.match(r"^(?:Question|Ceist)\s+(\d{1,2})\b", txt, re.I))
+            m = re.match(r"^(?:Question|Ceist)\s+(\d{1,2})\b", txt, re.I)
+            if m is None:
+                if x0 > 150:
+                    continue
+                m = (re.match(r"^Q\.?\s*(\d{1,2})\b", txt)
+                     or re.match(r"^C\.?\s*(\d{1,2})\b", txt))
             if m:
                 n = int(m.group(1))
                 if 1 <= n <= 20 and n not in seen:
