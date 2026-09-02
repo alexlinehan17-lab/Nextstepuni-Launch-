@@ -295,6 +295,11 @@ QA_PASSED_ANSWER_PROFILES = {
     ('geography', 'higher', 'iv'),
     ('geography', 'ordinary', 'iv'),
     ('history', 'higher', 'iv'),
+    # hist_dbq.py wave: Ordinary both languages, DBQ parts + labelled
+    # section chips, render-verified (2019 OL Q1 Whitaker comprehension,
+    # 2022 OL IV Q4 Comhthéacsúchán, Section 3 Haussmann topic answers)
+    ('history', 'ordinary', 'ev'),
+    ('history', 'ordinary', 'iv'),
     ('home-economics-s-and-s', 'higher', 'iv'),
     ('home-economics-s-and-s', 'ordinary', 'iv'),
     ('italian', 'higher', 'iv'),
