@@ -172,6 +172,26 @@ def build(paper_path, scheme_path, comp, year):
     sm = scheme_markers(scheme, lo, hi)
     missing = [n for n in ns if n not in sm]
     if missing:
+        # Rescue: 2017+ Composing sets its tables with the question number as
+        # a LONE DIGIT cell ('5'), which no head pattern matches. A lone digit
+        # counts only when it falls in the monotonic SLOT between its
+        # neighbours' markers — a page number or marks value cannot.
+        for n in list(missing):
+            lo_pt = sm.get(n - 1, (lo - 1, 1.0))
+            hi_pt = sm.get(n + 1, (hi, 0.0))
+            for pi in range(max(lo, lo_pt[0]), min(hi, hi_pt[0] + 1)):
+                hit = None
+                for txt, x0, y in lines_of(scheme[pi]):
+                    if txt.replace("\xa0", " ").strip() == str(n) and x0 < 260:
+                        cand = (pi, y)
+                        if lo_pt < cand < hi_pt:
+                            hit = cand
+                            break
+                if hit:
+                    sm[n] = hit
+                    missing.remove(n)
+                    break
+    if missing:
         return None, f"scheme markers missing {missing} in band {lo}-{hi}"
     pts = [sm[n] for n in ns]
     if any(b <= a for a, b in zip(pts, pts[1:])):
