@@ -61,16 +61,20 @@ ANSWERS_DIR = os.path.join(HERE, "answers")
 
 SIDECAR_V = 1
 COPYRIGHT = "© State Examinations Commission"
-FILEID = "LC462CLP000EV.pdf"
+# Both languages share the grammar: Section/Roinn headers, Q.n/C.n tokens.
 # 2016/2017 papers were archived under a letter-O component fileid
 # (LC462CLPO00EV.pdf) while their schemes use the usual zero form.
-PAPER_FILEID_BY_YEAR = {2016: "LC462CLPO00EV.pdf", 2017: "LC462CLPO00EV.pdf"}
+FILEID = {"EV": "LC462CLP000EV.pdf", "IV": "LC462CLP000IV.pdf"}
+PAPER_FILEID_BY_YEAR = {
+    ("EV", 2016): "LC462CLPO00EV.pdf", ("EV", 2017): "LC462CLPO00EV.pdf",
+    ("IV", 2016): "LC462CLPO00IV.pdf",
+}
 YEARS = range(2010, 2027)
 MARK_X = 200          # section headers / Q tokens start left of this (points)
 MAX_REGION_PAGES = 6
 
-SEC_RE = re.compile(r"^Section\s+([ABC])\b")
-Q_RE = re.compile(r"^Q\.?\s?(\d{1,2})\*?[.:]?(\s|$)")
+SEC_RE = re.compile(r"^(?:Section|Roinn|Cuid)\s+([ABC])\b")
+Q_RE = re.compile(r"^[QC]\.?\s?(\d{1,2})\*?[.:]?(\s|$)")
 
 
 def lines_with_pos(page):
@@ -100,11 +104,19 @@ def walk(doc, header_top_only):
     order = "ABC"
     cur = None
     for pi in range(len(doc)):
-        for t, x, y in lines_with_pos(doc[pi]):
+        rows = lines_with_pos(doc[pi])
+        # a cover/contents page names several sections at once; trust none of
+        # its headers (the real ones open their own pages)
+        page_secs = {SEC_RE.match(t).group(1) for t, x, y in rows
+                     if x < MARK_X and SEC_RE.match(t)}
+        cover = len(page_secs - set(sections)) >= 2
+        for t, x, y in rows:
             if x >= MARK_X:
                 continue
             m = SEC_RE.match(t)
-            if m and "and Section" not in t:
+            if m and cover:
+                continue
+            if m and "and Section" not in t and "agus Roinn" not in t:
                 sec = m.group(1)
                 want = order[len(sections)] if len(sections) < 3 else None
                 if sec == want and (not header_top_only or y < 0.2):
@@ -278,18 +290,20 @@ def qa_echo(paper_path, scheme_path, sidecar):
 
 
 def main():
+    langs = sys.argv[1:] or ["EV", "IV"]
     wrote = 0
     for year in YEARS:
-        paper_fid = PAPER_FILEID_BY_YEAR.get(year, FILEID)
+      for lang in langs:
+        paper_fid = PAPER_FILEID_BY_YEAR.get((lang, year), FILEID[lang])
         ppath = os.path.join(CORPUS, "exampapers", str(year), paper_fid)
-        spath = os.path.join(CORPUS, "markingschemes", str(year), FILEID)
+        spath = os.path.join(CORPUS, "markingschemes", str(year), FILEID[lang])
         if not (os.path.exists(ppath) and os.path.exists(spath)):
             continue
         sidecar, reason = build_sidecar(ppath, spath)
         if sidecar is None:
-            print(f"DROP {year}: {reason}")
+            print(f"DROP {year} {lang}: {reason}")
             continue
-        print(f"MAP  {year}: {len(sidecar['q'])} questions")
+        print(f"MAP  {year} {lang}: {len(sidecar['q'])} questions")
         qa_echo(ppath, spath, sidecar)
         ydir = os.path.join(ANSWERS_DIR, str(year))
         os.makedirs(ydir, exist_ok=True)
