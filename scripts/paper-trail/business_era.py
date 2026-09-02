@@ -175,6 +175,9 @@ def build(ppath, spath):
     p_s2 = next(((pg, y) for n, pg, y in psec if n == 2), None)
     if not (p_s1 and p_s2):
         return None, "paper does not print Sections 1 and 2"
+    # OL papers put their long questions in Section 2 (no Section 3); HL in 3.
+    has_s3 = any(n == 3 for n, pg, y in psec)
+    longs_sec = 3 if has_s3 else 2
 
     # Section 1 shorts on the paper: N. heads between the section dividers.
     shorts = [(n, pg, y, t) for n, pg, y, t in pn
@@ -182,35 +185,69 @@ def build(ppath, spath):
     s1run = longest_run(shorts, min_len=5)
     if not s1run:
         return None, "no Section 1 run on the paper"
-    # Section 3 longs on the paper: worded heads after Section 2.
+    # Long questions on the paper: worded heads after the Section 2 divider.
     longs = [(n, pg, y, t) for n, pg, y, t in pq if (pg, y) > p_s2]
     p3run = longest_run(longs, min_len=4, max_len=8)
 
+    # STRUCTURAL FENCES: every scheme prints its mark-allocation outline first
+    # and then reprints the section headings to open the detailed answers —
+    # so the LAST "SECTION 1" heading floors Section 1's answers and the LAST
+    # heading of the long-question section floors the longs. This replaces
+    # the per-chip echo hard-gate: 2011/2014/2015 HL answer without restating
+    # the questions, and echo alone refused every one of them.
+    s1_heads = [(pg, y) for n, pg, y in ssec if n == 1]
+    s1_floor = s1_heads[-1] if len(s1_heads) > 1 else (0, 0.0)
+    long_heads = [(pg, y) for n, pg, y in ssec if n == longs_sec]
+    long_floor = long_heads[-1] if long_heads else (0, 0.0)
+    if long_floor <= s1_floor:
+        # a lone trailing heading (part 2 of the section) — take the first
+        # heading of that section AFTER the Section-1 floor instead
+        after = [h for h in long_heads if h > s1_floor]
+        long_floor = after[0] if after else long_floor
+
     # Scheme side by ECHO-DP: candidates per number, the assignment that
     # restates the paper best wins; outline grids and inner lists lose.
+    def rescue(n, floor, ceil):
+        """Looser marker forms for a number the strict harvest missed: '5 ',
+        '5:', 'Q5', a lone digit — inside the (floor, ceil) slot only."""
+        out = []
+        loose = re.compile(rf"^(?:Q\.?\s*)?{n}(?:[.:)\s]|$)")
+        for pi in range(max(0, floor[0] - 1), min(len(scheme), ceil[0] + 1)):
+            for txt, x, y in lines_with_pos(scheme[pi]):
+                if x < 0.35 and loose.match(txt) and floor < (pi + 1, y) < ceil:
+                    out.append((pi + 1, y))
+        return out
+
+    long_ceil = long_floor if long_floor > s1_floor else (len(scheme) + 1, 0.0)
+    s1_cands = []
+    for n, pg, y, t in s1run:
+        cs = [(spg, sy) for m, spg, sy, st in sn
+              if m == n and (spg, sy) > s1_floor]
+        if not cs:
+            cs = rescue(n, s1_floor, long_ceil)
+        s1_cands.append(cs)
     s1_assign = echo_dp(paper, scheme,
-                        [(pg, y) for n, pg, y, t in s1run],
-                        [[(pg, y) for m, pg, y, t in sn if m == n]
-                         for n, pg, y, t in s1run])
+                        [(pg, y) for n, pg, y, t in s1run], s1_cands)
     if s1_assign is None:
         return None, "scheme Section 1 would not reconcile"
     s1detail = [(s1run[i][0], pg, y, "") for i, (pg, y) in enumerate(s1_assign)]
     s3detail = None
     if p3run:
-        # The outline grid lists Section 3's question TITLES too, so echo alone
-        # cannot reject it — but the detail sections always FOLLOW Section 1's
-        # detail block, so candidates before it are outline by construction.
-        floor = (s1detail[-1][1], s1detail[-1][2])
+        floor = max(long_floor, (s1detail[-1][1], s1detail[-1][2]))
+        s3_cands = []
+        for n, pg, y, t in p3run:
+            cs = [(spg, sy) for m, spg, sy, st in sq
+                  if m == n and (spg, sy) > floor]
+            if not cs:
+                cs = rescue(n, floor, (len(scheme) + 1, 0.0))
+            s3_cands.append(cs)
         s3_assign = echo_dp(paper, scheme,
-                            [(pg, y) for n, pg, y, t in p3run],
-                            [[(pg, y) for m, pg, y, t in sq
-                              if m == n and (pg, y) > floor]
-                             for n, pg, y, t in p3run])
+                            [(pg, y) for n, pg, y, t in p3run], s3_cands)
         if s3_assign is None:
             return None, "scheme Section 3 would not reconcile"
         s3detail = [(p3run[i][0], pg, y, "") for i, (pg, y) in enumerate(s3_assign)]
-    # ABQ block: the scheme's LAST Section-2 heading.
-    s2s = [(pg, y) for n, pg, y in ssec if n == 2]
+    # ABQ block: the scheme's LAST Section-2 heading past the Section-1 floor.
+    s2s = [(pg, y) for n, pg, y in ssec if n == 2 and (pg, y) > s1_floor]
     s2_block = s2s[-1] if s2s else None
 
     chips = []
@@ -234,41 +271,43 @@ def build(ppath, spath):
                       "label": label, "pP": p_pg,
                       "pY": [round(p_y, 4), 1.0], "region": region})
 
-    # Section 1 chips
-    fails = 0
+    # Section 1 chips. Echo is advisory once the structural floor held: the
+    # aggregate must show SOME restatement (the floor being wrong shows none),
+    # but individual answers may legitimately not restate their question.
+    hits = 0
     for i, (n, pg, y, txt) in enumerate(s1run):
         spg, sy = s1detail[i][1], s1detail[i][2]
         if i + 1 < len(s1detail):
             send = (s1detail[i + 1][1], s1detail[i + 1][2])
-        elif s2_block:
+        elif s2_block and s2_block > (spg, sy):
             send = s2_block
         else:
             send = (spg, 1.0)
-        if not echo_ok(paper, scheme, (pg, y), (spg, sy)):
-            fails += 1
+        if echo_ok(paper, scheme, (pg, y), (spg, sy), need=2):
+            hits += 1
         push(f"Section 1 · Q{n}", pg, y, spg, sy, send)
-    if fails > max(1, len(s1run) // 4):
-        return None, f"echo failed on {fails}/{len(s1run)} Section 1 chips"
+    if hits < max(2, len(s1run) // 4):
+        return None, f"only {hits}/{len(s1run)} Section 1 chips echo — floor suspect"
 
-    # ABQ chip — only when its block genuinely precedes Section 3's answers.
-    if s2_block and p3run and s2_block < (s3detail[0][1], s3detail[0][2]):
+    # ABQ chip — HL only, and only when its block precedes the longs' answers.
+    if has_s3 and s2_block and p3run and s2_block < (s3detail[0][1], s3detail[0][2]):
         end = (s3detail[0][1], s3detail[0][2])
         push("Section 2 · ABQ", p_s2[0], p_s2[1], s2_block[0], s2_block[1], end)
 
-    # Section 3 chips
+    # Long-question chips
     if p3run:
-        fails = 0
+        hits = 0
         for i, (n, pg, y, txt) in enumerate(p3run):
             spg, sy = s3detail[i][1], s3detail[i][2]
             if i + 1 < len(s3detail):
                 send = (s3detail[i + 1][1], s3detail[i + 1][2])
             else:
                 send = (len(scheme), 1.0)
-            if not echo_ok(paper, scheme, (pg, y), (spg, sy)):
-                fails += 1
-            push(f"Section 3 · Q{n}", pg, y, spg, sy, send)
-        if fails > max(1, len(p3run) // 3):
-            return None, f"echo failed on {fails}/{len(p3run)} Section 3 chips"
+            if echo_ok(paper, scheme, (pg, y), (spg, sy), need=2):
+                hits += 1
+            push(f"Section {longs_sec} · Q{n}", pg, y, spg, sy, send)
+        if hits < max(2, len(p3run) // 3):
+            return None, f"only {hits}/{len(p3run)} long-question chips echo — floor suspect"
 
     # tighten paper y-ends within pages
     by_page = {}
