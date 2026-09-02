@@ -197,6 +197,11 @@ QA_PASSED_ANSWER_PROFILES = {
     ('lithuanian', 'ordinary', 'iv'),
     ('polish', 'higher', 'ev'),
     ('polish', 'ordinary', 'iv'),
+    # Aural wave (2026-09-02, aural_papers.py): the two OL EV profiles the
+    # reading waves never needed — every other language/level/lang pairing the
+    # aural sidecars use was already QA-passed above.
+    ('polish', 'ordinary', 'ev'),
+    ('portuguese', 'ordinary', 'ev'),
     ('biology', 'ordinary', 'iv'),
     ('business', 'ordinary', 'ev'),
     ('english', 'ordinary', 'ev'),

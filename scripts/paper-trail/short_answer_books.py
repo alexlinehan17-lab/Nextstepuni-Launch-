@@ -393,7 +393,7 @@ def build_sidecar(paper_path, scheme_path, reader, level, spec):
         "paperFileid": os.path.basename(paper_path),
         "schemeFileid": os.path.basename(scheme_path),
         "component": "",
-        "band": [1, len(paper)],
+        "band": [1, len(scheme) + 1],  # bounds SCHEME pages, upper exclusive
         "copyright": COPYRIGHT,
         "q": q,
     }, None
