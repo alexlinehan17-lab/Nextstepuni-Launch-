@@ -264,6 +264,10 @@ QA_PASSED_ANSWER_PROFILES = {
     ('mandarin-chinese', 'higher', 'iv'),
     ('mandarin-chinese', 'ordinary', 'iv'),
     ('history-early-modern', 'higher', 'iv'),
+    # hist_dbq.py EM-half wave: OL both languages + the 2022 HL IV whose
+    # Criticeas chip the twin borrow got wrong (render-verified correct now)
+    ('history-early-modern', 'ordinary', 'ev'),
+    ('history-early-modern', 'ordinary', 'iv'),
     ('link-modules', 'common', 'iv'),
     ('jc-history', 'common', 'iv'),
     ('jc-italian', 'common', 'iv'),

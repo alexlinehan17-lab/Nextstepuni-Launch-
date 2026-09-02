@@ -111,15 +111,23 @@ def paper_parts(doc):
     return parts, sec, None
 
 
-def scheme_layout(doc, K):
-    """DBQ part blocks + section answer heads + early-modern boundary."""
+def scheme_layout(doc, K, em_half=False):
+    """DBQ part blocks + section answer heads + field-of-study boundary.
+    em_half: map the EARLY MODERN half (the combined file's second Section 1
+    onward) instead of the Later Modern first half."""
     any_heads = find_heads(doc, SEC_ANY)
     caps_heads = find_heads(doc, SEC_CAPS)
     sec1s = [h for h in any_heads if h[0] == 1]
     if not sec1s:
         return None, "scheme: no Section 1 head"
-    dbq = sec1s[0]
-    em = sec1s[1][1] if len(sec1s) > 1 else len(doc) + 1
+    if em_half:
+        if len(sec1s) < 2:
+            return None, "scheme: no early-modern Section 1 head"
+        dbq = sec1s[-1]
+        em = len(doc) + 1
+    else:
+        dbq = sec1s[0]
+        em = sec1s[1][1] if len(sec1s) > 1 else len(doc) + 1
     stop2 = next((h for h in any_heads if h[0] == 2 and (h[1], h[2]) > (dbq[1], dbq[2])), None)
     # collect loose candidates (a lone dotless digit heads some blocks), then
     # take the LAST complete 1..K ascending run — the compact mark-outline
@@ -152,7 +160,8 @@ def scheme_layout(doc, K):
     parts = full[-1]
     s2 = next((h for h in caps_heads if h[0] == 2 and h[1] >= dbq[1] and h[1] < em), None)
     s3 = next((h for h in caps_heads if h[0] == 3 and s2 and (h[1], h[2]) > (s2[1], s2[2]) and h[1] < em), None)
-    return {"parts": parts, "stop2": stop2, "s2": s2, "s3": s3, "em": em}, None
+    return {"parts": parts, "stop2": stop2, "s2": s2, "s3": s3, "em": em,
+            "band_lo": dbq[1] if em_half else 1}, None
 
 
 def region_span(p0, y0, p1, y1, doc_len):
@@ -175,13 +184,13 @@ def humanize(txt):
     return f"{head} · {tail}" if tail else head
 
 
-def build(ppath, spath, level):
+def build(ppath, spath, level, em_half=False):
     paper, scheme = fitz.open(ppath), fitz.open(spath)
     parts, psec, err = paper_parts(paper)
     if err:
         return None, err
     K = len(parts)
-    lay, err = scheme_layout(scheme, K)
+    lay, err = scheme_layout(scheme, K, em_half)
     if err:
         return None, err
     sp = lay["parts"]
@@ -215,7 +224,7 @@ def build(ppath, spath, level):
     return {
         "v": 1, "paperFileid": os.path.basename(ppath),
         "schemeFileid": os.path.basename(spath), "component": "",
-        "band": [1, band_hi], "copyright": COPYRIGHT, "q": q,
+        "band": [lay["band_lo"], band_hi], "copyright": COPYRIGHT, "q": q,
     }, None
 
 
@@ -223,11 +232,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
-    targets = [(y, "A", lg) for y in (2010, 2018, 2020, 2022) for lg in ("IV",)] + \
-              [(y, "G", lg) for y in range(2010, 2027) for lg in ("EV", "IV")]
+    targets = [("LC004", y, "A", lg) for y in (2010, 2018, 2020, 2022) for lg in ("IV",)] + \
+              [("LC004", y, "G", lg) for y in range(2010, 2027) for lg in ("EV", "IV")] + \
+              [("LC096", 2021, "G", "EV"), ("LC096", 2021, "G", "IV"),
+               ("LC096", 2022, "G", "EV"), ("LC096", 2022, "G", "IV"),
+               ("LC096", 2022, "A", "IV")]
     wrote = dropped = 0
-    for year, lv, lg in targets:
-        fid = f"LC004{lv}LP000{lg}.pdf"
+    for code, year, lv, lg in targets:
+        fid = f"{code}{lv}LP000{lg}.pdf"
         ppath = os.path.join(CORPUS, "exampapers", str(year), fid)
         spath = os.path.join(CORPUS, "markingschemes", str(year), fid)
         if not (os.path.exists(ppath) and os.path.exists(spath)):
@@ -235,8 +247,8 @@ def main():
         out = os.path.join(ANSWERS_DIR, str(year), f"{fid}.json")
         if os.path.exists(out):
             continue
-        sidecar, why = build(ppath, spath, lv)
-        tag = f"{year}{lv}{lg}"
+        sidecar, why = build(ppath, spath, lv, em_half=(code == "LC096"))
+        tag = f"{code[-2:]}-{year}{lv}{lg}"
         if sidecar is None:
             print(f"DROP {tag}: {why}")
             dropped += 1
