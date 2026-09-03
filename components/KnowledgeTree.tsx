@@ -256,21 +256,21 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
     <div className="product-shell dashboard-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] overflow-x-hidden relative selection:bg-[rgba(var(--accent),0.2)]">
       {/* Sidebar — desktop only */}
       <aside
-        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-[#1E1C1A] dark:bg-zinc-900 border-r-[1.5px] border-[#383838] dark:border-zinc-700 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white dark:bg-zinc-900 border-r-[1.5px] border-[#383838] dark:border-zinc-700 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
       >
         {/* Avatar row — click to toggle */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-3 px-3 py-4 w-full border-b border-white/10 hover:bg-white/5 dark:border-zinc-700 dark:hover:bg-zinc-800 transition-colors"
+          className="flex items-center gap-3 px-3 py-4 w-full border-b border-[#DED9D3] hover:bg-[#F3EEE7] dark:border-zinc-700 dark:hover:bg-zinc-800 transition-colors"
         >
-          <div className="w-9 h-9 rounded-xl border-[1.5px] border-white/25 overflow-hidden shrink-0 bg-white dark:bg-zinc-700 flex items-center justify-center">
+          <div className="w-9 h-9 rounded-xl border-[1.5px] border-[#383838] overflow-hidden shrink-0 bg-white dark:bg-zinc-700 flex items-center justify-center">
             {userAvatarSeed ? (
               <Avatar seed={userAvatarSeed} alt="Avatar" className="w-full h-full object-cover" />
             ) : (
-              <User size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-400" />
+              <User size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
             )}
           </div>
-          <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+          <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
             {userName || 'Student'}
           </span>
         </button>
@@ -281,12 +281,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             <button
               key={item.label}
               onClick={item.onClick}
-              className={`relative flex items-center gap-3 px-2.5 py-2.5 rounded-xl transition-colors ${item.active ? 'bg-[rgba(242,107,31,0.16)] dark:bg-zinc-800' : 'hover:bg-white/5 dark:hover:bg-zinc-800'}`}
+              className={`relative flex items-center gap-3 px-2.5 py-2.5 rounded-xl transition-colors ${item.active ? 'bg-[#FDEBDD] text-[#9A3B0E] dark:bg-zinc-800' : 'hover:bg-[#F3EEE7] dark:hover:bg-zinc-800'}`}
             >
               <div className="shrink-0 flex items-center justify-center w-[18px]">
-                <item.icon size={18} strokeWidth={item.active ? 2 : 1.6} className={item.active ? 'text-[#F26B1F]' : 'text-zinc-400'} />
+                <item.icon size={18} strokeWidth={item.active ? 2 : 1.6} className={item.active ? 'text-[#F26B1F]' : 'text-zinc-600 dark:text-zinc-400'} />
               </div>
-              <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
                 {item.label}
               </span>
             </button>
@@ -294,17 +294,17 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
         </nav>
 
         {/* User actions */}
-        <div className="border-t border-white/10 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
+        <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
           {/* Notifications */}
           <button
             data-notification-toggle
             onClick={toggleNotificationPanel}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px] relative">
               <Bell size={18} strokeWidth={1.5} className="text-amber-500" />
             </div>
-            <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               Notifications
             </span>
           </button>
@@ -312,12 +312,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           {/* Study Passport */}
           <button
             onClick={onOpenPassport}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
               <Award size={18} strokeWidth={1.5} className="text-purple-500" />
             </div>
-            <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               Study Passport
             </span>
             <span className={`text-xs font-bold text-zinc-400 dark:text-zinc-500 whitespace-nowrap transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
@@ -329,12 +329,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           {onChangeSubjects && (
             <button
               onClick={onChangeSubjects}
-              className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+              className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
               <div className="shrink-0 flex items-center justify-center w-[18px]">
                 <RefreshCw size={18} strokeWidth={1.5} className="text-[#F26B1F]" />
               </div>
-              <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 flex-1 text-left ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
                 Change Subjects
               </span>
             </button>
@@ -347,16 +347,16 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             aria-checked={settings.darkMode}
             aria-label={settings.darkMode ? 'Use light mode (Beta)' : 'Use dark mode (Beta)'}
             onClick={() => updateSetting('darkMode', !settings.darkMode)}
-            className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+            className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
               {settings.darkMode ? (
                 <Sun size={18} strokeWidth={1.5} className="text-amber-400" />
               ) : (
-                <Moon size={18} strokeWidth={1.5} className="text-zinc-400" />
+                <Moon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
               )}
             </div>
-            <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               {settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}
             </span>
           </button>
@@ -365,12 +365,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           <button
             data-coach="help"
             onClick={onOpenSiteGuide}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
               <HelpCircle size={18} strokeWidth={1.5} className="text-[#F26B1F]" />
             </div>
-            <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               How the app works
             </span>
           </button>
@@ -378,12 +378,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           {/* Anonymous product feedback */}
           <button
             onClick={onOpenFeedback}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
-              <MessageSquare size={18} strokeWidth={1.5} className="text-zinc-400" />
+              <MessageSquare size={18} strokeWidth={1.5} className="text-zinc-500" />
             </div>
-            <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               Help us improve
             </span>
           </button>
@@ -391,12 +391,12 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           {/* Settings */}
           <button
             onClick={onOpenSettings}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
-              <Settings size={18} strokeWidth={1.5} className="text-zinc-400" />
+              <Settings size={18} strokeWidth={1.5} className="text-zinc-500" />
             </div>
-            <span className={`text-sm font-medium text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               Settings
             </span>
           </button>
@@ -404,7 +404,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           {/* Log Out */}
           <button
             onClick={onLogout}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
               <LogOut size={18} strokeWidth={1.5} className="text-rose-500" />
@@ -418,10 +418,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
         {/* Collapse toggle */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-white/5 dark:hover:bg-zinc-800 transition-colors"
+          className="flex items-center gap-3 px-2.5 py-3 mx-2 mb-3 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
         >
           <div className={`shrink-0 flex items-center justify-center w-[18px] transition-transform duration-300 ${sidebarOpen ? '' : 'rotate-180'}`}>
-            <PanelLeft size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-400" />
+            <PanelLeft size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
           </div>
           <span className={`text-sm font-medium text-zinc-400 dark:text-zinc-500 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
             Collapse
