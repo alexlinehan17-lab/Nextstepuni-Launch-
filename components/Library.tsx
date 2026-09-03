@@ -228,7 +228,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       {/* Sidebar — desktop only, starts below fixed header */}
       {hasSidebar && headerHeight > 0 && (
         <aside
-          className={`hidden md:flex flex-col fixed left-0 bottom-0 z-[55] bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-y-auto transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+          className={`hidden md:flex flex-col fixed left-0 bottom-0 z-[55] bg-[#F7F3EC]/85 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-[#E5DFD4] dark:border-zinc-800 overflow-y-auto transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
           style={{ top: `${headerHeight}px` }}
         >
           {/* Avatar row — click to toggle */}
