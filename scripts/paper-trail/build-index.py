@@ -1037,7 +1037,11 @@ def main():
             _key = (year, p["fileid"])
             _precise = _key in answer_mapped and (sid, level, lang) in QA_PASSED_ANSWER_PROFILES
             _fallback = _key in answer_fallback
-            if ((_precise or _fallback) and os.path.exists(os.path.join(REPO, _sidecar_local))):
+            # A chip is only usable when the viewer can load the scheme the
+            # index row points at (2014 maths has sidecars but no published
+            # scheme — the flag must stay off there).
+            if ((_precise or _fallback) and item.get("scheme")
+                    and os.path.exists(os.path.join(REPO, _sidecar_local))):
                 # Precise crop maps are gated by QA_PASSED; the universal navigation
                 # fallback (sidecar "fallback":1) ships ungated — it never claims an
                 # exact answer, just a per-question jump near it. File-existence gate:
