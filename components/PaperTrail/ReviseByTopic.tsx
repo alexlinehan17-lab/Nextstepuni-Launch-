@@ -14,7 +14,7 @@
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
-import { siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
+import { categoryOf, siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
@@ -24,6 +24,16 @@ import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
 
 const INK = '#1a1a1a';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
+const CATEGORY_TINT: Record<string, { bg: string; ink: string }> = {
+  stem: { bg: '#E8F1F5', ink: '#33658A' },
+  language: { bg: '#EFEAF3', ink: '#5B4A7E' },
+  business: { bg: '#F6EEDF', ink: '#8A6B2D' },
+  'social-environmental': { bg: '#E8F2EC', ink: '#1F5F3E' },
+  'practical-applied': { bg: '#ECEFF0', ink: '#46555E' },
+  arts: { bg: '#F6EAED', ink: '#84495A' },
+  other: { bg: '#F0EEEB', ink: '#6B635A' },
+};
+const tintOf = (subjectId: string) => CATEGORY_TINT[categoryOf(subjectId)] ?? CATEGORY_TINT.other;
 
 interface Props {
   subjects: { id: string; label: string }[];
@@ -263,7 +273,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           <ArrowLeft size={15} /> All subjects
         </button>
         <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
-        <p className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
+        <p className="text-[13.5px] mb-1" style={{ color: '#5a5550' }}>
+          Pick a topic — every question ever asked on it is inside.
+        </p>
+        <p className="text-[12.5px] mb-5 tabular-nums" style={{ color: '#9e9186' }}>
           {stats.questions.toLocaleString()} questions · {baseTopics.length} topics · {stats.yearMin}–{stats.yearMax}
         </p>
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
@@ -325,11 +338,12 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                     <button
                       key={t.subtopicId}
                       onClick={() => setSubtopicId(t.subtopicId)}
-                      className="group w-full flex items-center gap-4 px-1 py-3 text-left transition-colors hover:bg-[#f5f4f2] dark:hover:bg-zinc-800/40"
+                      className="group w-full flex items-center gap-4 px-2 py-3.5 rounded-xl text-left transition-colors hover:bg-[rgba(242,107,31,0.05)] dark:hover:bg-zinc-800/40"
                       style={{ borderBottom: '1px solid #eeebe6' }}
                     >
                       <span className="flex-1 min-w-0">
-                        <span className="block text-[15px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
+                        <span className="block text-[15.5px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
+                        <span className="block sm:hidden text-[11.5px] mt-0.5 tabular-nums" style={{ color: '#9e9186' }}>{t.count} questions · {t.years} of {totalYears} years</span>
                       </span>
                       {m && masteryColor && (
                         <span className="shrink-0 text-[11px] font-semibold tabular-nums" style={{ color: masteryColor }}>{m.mastery}%</span>
@@ -340,8 +354,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                           <span
                             key={y}
                             title={String(y)}
-                            className="inline-block w-[4px] h-[12px] rounded-[1px] transition-colors"
-                            style={{ backgroundColor: asked.has(y) ? '#4a453f' : '#e7e3de' }}
+                            className="inline-block w-[4.5px] h-[13px] rounded-[2px] transition-colors"
+                            style={{ backgroundColor: asked.has(y) ? 'rgba(242,107,31,0.55)' : '#ece8e3' }}
                           />
                         ))}
                       </span>
@@ -397,16 +411,24 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             {shownSubjects.map(s => {
               const st = subjectAtlasStats(s.id);
               const peak = Math.max(1, ...st.perYear.values());
+              const tint = tintOf(s.id);
               return (
                 <button
                   key={s.id}
                   onClick={() => setSubjectId(s.id)}
-                  className="group w-full flex items-center gap-4 px-1 py-4 text-left transition-colors hover:bg-[#f5f4f2] dark:hover:bg-zinc-800/40"
+                  className="group w-full flex items-center gap-4 px-2 py-4 rounded-xl text-left transition-colors hover:bg-[rgba(242,107,31,0.05)] dark:hover:bg-zinc-800/40"
                   style={{ borderBottom: '1px solid #eeebe6' }}
                 >
+                  <span
+                    aria-hidden="true"
+                    className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center text-[19px] font-semibold"
+                    style={{ fontFamily: "'Source Serif 4', serif", backgroundColor: tint.bg, color: tint.ink }}
+                  >
+                    {s.label.charAt(0)}
+                  </span>
                   <span className="flex-1 min-w-0">
                     <span className="block text-[17px]" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>
-                    <span className="block text-[12px] mt-0.5 tabular-nums" style={{ color: '#8d857c' }}>
+                    <span className="block text-[12.5px] mt-0.5 tabular-nums" style={{ color: '#8d857c' }}>
                       {st.questions.toLocaleString()} questions · {topicsForSubject(s.id).length} topics · {st.yearMin}–{st.yearMax}
                     </span>
                   </span>
@@ -415,10 +437,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                       <span
                         key={y}
                         title={`${y}: ${st.perYear.get(y) ?? 0} questions`}
-                        className="inline-block w-[5px] rounded-[1px]"
+                        className="inline-block w-[5px] rounded-[2px] transition-colors"
                         style={{
-                          height: `${Math.max(14, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
-                          backgroundColor: '#d8d3cc',
+                          height: `${Math.max(16, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
+                          backgroundColor: 'rgba(242,107,31,0.38)',
                         }}
                       />
                     ))}

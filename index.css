@@ -10,7 +10,9 @@
   --outline-strong: #383838;
   --outline-soft: #D8D3CD;
   /* Light ink scale, retuned August 2026.
-     Measured on the #f0f0f0 editorial canvas — the darkest light surface and
+     Measured on the former #f0f0f0 canvas — the light canvas is now pure
+     white, which only raises these dark-on-light ratios, so every figure
+     below still holds as a floor. Originally the darkest light surface and
      therefore the binding one. The old scale had muted at 4.24:1, label at
      2.69:1 and faint at 2.07:1; the bottom two were not legible text.
      Above 4.5:1 the usable band is roughly 4.5-7, which fits three steps, not
@@ -63,7 +65,7 @@
   --danger-tint-ink: #8E2C2C;
   --info-tint: #E8EFF5;
   --info-tint-ink: #2B4C6B;
-  --page-canvas: #f0f0f0;
+  --page-canvas: #ffffff;
   --page-body: #5a5550;
   --page-muted: #69605A;
   --page-label: #766A5F;

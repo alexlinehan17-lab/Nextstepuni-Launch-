@@ -216,8 +216,8 @@ const CutContentPage: React.FC<CutContentPageProps> = ({ onBack }) => {
     <div className="min-h-screen print:bg-white theme-compat" style={{ backgroundColor: PAGE }}>
       {/* Masthead */}
       <header
-        className="sticky top-0 z-30 px-4 md:px-10 bg-[#f0f0f0]/90 backdrop-blur-sm border-b print:static print:bg-white print:backdrop-blur-none"
-        style={{ borderColor: HAIRLINE, paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}
+        className="sticky top-0 z-30 px-4 md:px-10 backdrop-blur-sm border-b print:static print:bg-white print:backdrop-blur-none"
+        style={{ backgroundColor: 'color-mix(in srgb, var(--page-canvas) 90%, transparent)', borderColor: HAIRLINE, paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}
       >
         <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-4 min-w-0">
