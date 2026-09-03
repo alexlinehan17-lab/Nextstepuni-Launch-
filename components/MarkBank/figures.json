@@ -26366,8 +26366,8 @@
  },
  "maths-2023-HL-ask-p2-q4-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-ii.png",
-  "md5": "34b1f51f033b4e95870a59232a003a07",
-  "alt": "The question as printed on the paper \u2014 The circle s passes through the points s (8, 1), (a, 3), and (a, \u22125), as shown in the (a, 3) diagram on the right (not to scale), where 0 < a < 5, a\u2208\u211d. (8, 1) The radius of the circle s is \u221a20. x Find the equation of the",
+  "md5": "66d9247b13239c2ca3e9f30a82101c4f",
+  "alt": "The question as printed on the paper — The circle c has equation (x − h)² + (y + 3)² = 12, where h is real. The perpendicular distance from x − 4y + 7 = 0 to its centre is 5 units. Part (a)(ii) asks for both possible values of h in surd form.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 2 Q4(ii)",
@@ -26520,8 +26520,8 @@
  },
  "maths-2023-HL-ask-p2-q8-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q8-ii.png",
-  "md5": "9f03223dd055951f34cac17a3655e91a",
-  "alt": "The question as printed on the paper \u2014 An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s\u2208\u211d, based on how many attempts it takes them to guess the word. In Ire",
+  "md5": "d52896ea2e63515e37d485b382920e75",
+  "alt": "The question as printed on the paper — Players' word-game scores in Ireland are approximately normal with mean 3.87 and standard deviation 0.36. A random sample of 64 Galway players has mean 3.74. Part (b)(ii) asks for a two-tailed hypothesis test at the 5% level, including both hypotheses, a conclusion and its reason.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 2 Q8(ii)",

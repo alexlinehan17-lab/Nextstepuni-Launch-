@@ -42,6 +42,10 @@ import { CARDS as HE_HIGHER } from '../components/MarkBank/cards/home-economics/
 import { CARDS as HE_ORDINARY } from '../components/MarkBank/cards/home-economics/ordinary';
 import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/higher';
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
+import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
+import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
+import { CARDS as MATHS_HIGHER } from '../components/MarkBank/cards/maths/higher';
+import { CARDS as MATHS_ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
 import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
@@ -67,7 +71,8 @@ const SAMPLE_CARDS = [
   ...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY,
   ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
-  ...ECON_HIGHER, ...ECON_ORDINARY, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
+  ...ECON_HIGHER, ...ECON_ORDINARY, ...CONS_HIGHER, ...CONS_ORDINARY,
+  ...MATHS_HIGHER, ...MATHS_ORDINARY, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
   ...IRISH_HIGHER, ...IRISH_ORDINARY,
   ...ART_HIGHER, ...ART_ORDINARY,
   ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
@@ -178,6 +183,34 @@ describe('every card traces to the marking scheme on disk', () => {
   });
 });
 
+describe('reviewed Construction Studies boundaries stay on their printed tasks', () => {
+  test('2017 HL Q4(a) marks three functional requirements, not Q4(b) wall comparisons', () => {
+    const card = CONS_HIGHER.find(candidate => candidate.id === 'cons-2017-hl-q4-a');
+    expect(card).toBeDefined();
+    expect(card && isPointCard(card)).toBe(true);
+    if (!card || !isPointCard(card)) return;
+
+    expect(card.totalMarks).toBe(24);
+    expect(card.rows).toHaveLength(1);
+    expect(card.rows[0].group).toMatchObject({ claimMax: 3, perOption: 8 });
+    expect(card.rows[0].group?.options).toHaveLength(16);
+    expect(card.rows[0].group?.options.join(' ')).not.toMatch(/Concrete block wall|Positives|Negatives/);
+  });
+
+  test('2017 OL Q9(c) remains the ten-mark patio question', () => {
+    const card = CONS_ORDINARY.find(candidate => candidate.id === 'cons-2017-ol-q9-c');
+    expect(card).toBeDefined();
+    expect(card && isPointCard(card)).toBe(true);
+    if (!card || !isPointCard(card)) return;
+
+    expect(card.totalMarks).toBe(10);
+    expect(card.questionText).toMatch(/external patio/i);
+    expect(card.rows[0].group).toMatchObject({ claimMax: 2, perOption: 5 });
+    expect(card.rows[0].group?.options).toHaveLength(8);
+    expect(card.rows.map(row => row.verbatim).join(' ')).not.toMatch(/practical project|craft skills|portfolio/i);
+  });
+});
+
 /* -------------------------------------------------- fabrication guards ----- */
 
 describe('no card can repeat the fabrication that shipped first time', () => {
@@ -245,7 +278,8 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const bad = SAMPLE_CARDS.filter(c => {
       if (/you may include a labelled/i.test(c.questionText)) return false;
       const namesLetters = /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/i.test(c.questionText);
-      return namesLetters && !isDiagramCard(c) && !c.sourceMaterial;
+      const hasQuestionFigure = 'questionFigure' in c && Boolean(c.questionFigure);
+      return namesLetters && !isDiagramCard(c) && !hasQuestionFigure && !c.sourceMaterial;
     }).map(c => `${c.questionRef}: "${c.questionText}"`);
     expect(bad, show(bad)).toEqual([]);
   });
@@ -362,8 +396,16 @@ describe('every card points at the question paper it came from', () => {
   test('and at the paper holding its own section', async () => {
     const { resolvePaperFileid } = await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
-      .filter(c => c.paperFileid !== null
-        && c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, c.section))
+      .filter(c => {
+        // Maths uses A/B for marking-scheme tariff sections, while the source
+        // documents are Paper 1 and Paper 2. Resolve from the explicit paper
+        // number exactly as build-deck does; never reinterpret B as Paper 2.
+        const sourceSection = c.subjectId === 'maths'
+          ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
+          : c.section;
+        return c.paperFileid !== null
+          && c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, sourceSection);
+      })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
     expect(bad, show(bad)).toEqual([]);
   });
@@ -381,6 +423,18 @@ describe('the size manifest matches the decks it describes', () => {
     ['chemistry', 'ordinary', CHEM_ORDINARY],
     ['physics', 'higher', PHYS_HIGHER],
     ['physics', 'ordinary', PHYS_ORDINARY],
+    ['agricultural-science', 'higher', AGSCI_HIGHER],
+    ['agricultural-science', 'ordinary', AGSCI_ORDINARY],
+    ['business', 'higher', BUS_HIGHER],
+    ['business', 'ordinary', BUS_ORDINARY],
+    ['home-economics', 'higher', HE_HIGHER],
+    ['home-economics', 'ordinary', HE_ORDINARY],
+    ['economics', 'higher', ECON_HIGHER],
+    ['economics', 'ordinary', ECON_ORDINARY],
+    ['construction-studies', 'higher', CONS_HIGHER],
+    ['construction-studies', 'ordinary', CONS_ORDINARY],
+    ['maths', 'higher', MATHS_HIGHER],
+    ['maths', 'ordinary', MATHS_ORDINARY],
     ['english', 'higher', ENGLISH_HIGHER],
     ['english', 'ordinary', ENGLISH_ORDINARY],
     ['irish', 'higher', IRISH_HIGHER],

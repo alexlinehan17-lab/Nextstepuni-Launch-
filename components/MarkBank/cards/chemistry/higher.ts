@@ -6891,6 +6891,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "NH3 bond angle smaller than that of CH4", marks: 6, accepts: ["107° in NH3 smaller than 109.5° in CH4"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Chemistry 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7183,6 +7193,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "600 – 700 kJ mol–1", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Chemistry 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7529,12 +7549,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Higher Level — © State Examinations Commission.",
     id: "chem-2024-hl-q5-b-vi", topicId: "chem-1-2", conceptId: "shape-of-a-p-orbital",
     section: "A", questionRef: "2024 HL Q5(b)(vi)",
-    stem: "In 1885 the Swiss mathematician Johann Balmer wrote a mathematical formula to describe the wavelengths of the visible line spectrum of atomic hydrogen, which is now named after him. However there was no explanation for the existence of these lines until 1913. green red violet blue wavelength In 1913 Bohr’s model of the hydrogen atom was shown to be consistent with the Balmer series. Bohr’s model was therefore supported by experimental evidence.",
     questionText: "Draw the shape of a p orbital. (29)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "correct dumb-bell shape", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Chemistry 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "chemistry-2024-HL-scheme-q5b-vi",
           "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-scheme-q5b-vi.png",

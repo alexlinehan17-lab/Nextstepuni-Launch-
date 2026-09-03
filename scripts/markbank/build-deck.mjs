@@ -212,10 +212,24 @@ const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 const GLYPHS = JSON.parse(readFileSync(
   resolve(ROOT, 'scripts/markbank/authoring/glyphmap.json'), 'utf8'));
 
+/* CambriaMath text layers sometimes return each mathematical LETTER twice at
+ * the same drawing origin. Collapsing letters is safe; doubled mathematical
+ * digits are not, because the same font can map a different digit onto the
+ * repeated glyph. Those are refused below instead of guessed. */
+const DOUBLED_MATHS_LETTER = /([\u{1D400}-\u{1D7CD}])\1/gu;
+const DOUBLED_MATHS_DIGIT = /([\u{1D7CE}-\u{1D7FF}])\1/u;
+
 function repairText(text) {
-  if (typeof text !== 'string' || !BROKEN.test(text)) return text;
+  if (typeof text !== 'string') return text;
+  let out = text;
+  for (let i = 0; i < 4; i++) {
+    const next = out.replace(DOUBLED_MATHS_LETTER, '$1');
+    if (next === out) break;
+    out = next;
+  }
+  if (!BROKEN.test(out)) return out;
   BROKEN.lastIndex = 0;
-  return [...text].map(ch => GLYPHS[ch] ?? ch).join('');
+  return [...out].map(ch => GLYPHS[ch] ?? ch).join('');
 }
 
 /* Every string on the card, not a list of the fields that were mangled the
@@ -241,6 +255,9 @@ function walkStrings(node, fn) {
 function repairGlyphs(card) { walkStrings(card, repairText); }
 
 function brokenGlyphs(text) {
+  if (DOUBLED_MATHS_DIGIT.test(text)) {
+    return 'a doubled maths digit whose value the text layer has lost — the font mis-maps some digits, so the pair cannot be collapsed';
+  }
   const hits = (text.match(BROKEN) ?? []).filter(ch => !REAL.test(ch));
   if (!hits.length) return null;
   const uniq = [...new Set(hits)];
@@ -250,7 +267,10 @@ function brokenGlyphs(text) {
 
 function mangledText(card) {
   const seen = [];
-  walkStrings(card, (v) => { seen.push(v); return v; });
+  // Author notes may quote a corrupt extraction specifically to document why
+  // it was rejected; notes never ship, so police only the card students see.
+  const { notes, ...shipped } = card;
+  walkStrings(shipped, (v) => { seen.push(v); return v; });
   return brokenGlyphs(seen.join(' '));
 }
 
@@ -282,11 +302,11 @@ if (!cardsPath) {
 }
 
 const input = JSON.parse(readFileSync(cardsPath, 'utf8'));
-const cards = Array.isArray(input) ? input : (input.accepted ?? input.cards ?? []);
+const rawCards = Array.isArray(input) ? input : (input.accepted ?? input.cards ?? []);
 
 /* The subject comes from the cards. Mixed input is a mistake, not a feature:
  * one run writes one subject's modules, so a stray card would vanish silently. */
-const subjectIds = [...new Set(cards.map(c => c.subjectId ?? 'biology'))];
+const subjectIds = [...new Set(rawCards.map(c => c.subjectId ?? 'biology'))];
 if (subjectIds.length !== 1) {
   console.error(`cards span ${subjectIds.length} subjects (${subjectIds.join(', ')}) — build one subject at a time`);
   process.exit(1);
@@ -299,13 +319,124 @@ if (!SUBJECT) {
 }
 
 /**
+ * Reviewed repairs that must survive regeneration of the authored JSON.
+ *
+ * Most subjects have accumulated several generations of authoring scripts. A
+ * correction made only in a generated TypeScript deck disappears the next time
+ * one of those scripts runs; changing a historical parser can, conversely,
+ * rewrite hundreds of unrelated cards. This small declarative layer records an
+ * independently checked exception at the card boundary: a duplicate can be
+ * withdrawn, malformed OCR can be replaced, and official source pages can be
+ * attached without obscuring the generator that produced the underlying card.
+ */
+const CORRECTIONS_PATH = resolve(ROOT, 'scripts/markbank/card-corrections.json');
+const CORRECTIONS = existsSync(CORRECTIONS_PATH)
+  ? JSON.parse(readFileSync(CORRECTIONS_PATH, 'utf8'))
+  : {};
+const SOURCE_BINDINGS_PATH = resolve(ROOT, 'scripts/markbank/card-source-bindings.json');
+const SOURCE_BINDINGS = existsSync(SOURCE_BINDINGS_PATH)
+  ? JSON.parse(readFileSync(SOURCE_BINDINGS_PATH, 'utf8'))
+  : {};
+const subjectCorrections = CORRECTIONS[SUBJECT_ID] ?? {};
+const subjectSourceBindings = SOURCE_BINDINGS[SUBJECT_ID] ?? {};
+const rawIds = new Set(rawCards.map(card => card.id));
+for (const id of Object.keys(subjectCorrections)) {
+  if (!rawIds.has(id)) {
+    console.error(`stale correction for missing ${SUBJECT_ID} card "${id}"`);
+    process.exit(1);
+  }
+}
+for (const id of Object.keys(subjectSourceBindings)) {
+  if (!rawIds.has(id)) {
+    console.error(`stale source binding for missing ${SUBJECT_ID} card "${id}"`);
+    process.exit(1);
+  }
+}
+
+const appliedCorrections = [];
+const cards = [];
+for (const raw of rawCards) {
+  const correction = subjectCorrections[raw.id];
+  if (correction) {
+    if (!String(correction.reason ?? '').trim()) {
+      console.error(`${raw.id}: a correction must record why it is safe`);
+      process.exit(1);
+    }
+    if (correction.drop) {
+      if (!correction.replacementId || !rawIds.has(correction.replacementId)) {
+        console.error(`${raw.id}: a withdrawn card must name an existing replacementId`);
+        process.exit(1);
+      }
+      appliedCorrections.push(`${raw.id}: withdrawn; ${correction.reason}`);
+      continue;
+    }
+  }
+  const card = structuredClone(raw);
+  for (const [key, value] of Object.entries(correction?.set ?? {})) {
+    if (value === null) delete card[key];
+    else card[key] = value;
+  }
+  if (correction?.answerVariantSources) {
+    if (!Array.isArray(correction.answerVariantSources)) {
+      console.error(`${raw.id}: answerVariantSources must be an array`);
+      process.exit(1);
+    }
+    card.answerVariants = correction.answerVariantSources.map(source => {
+      const sourceCard = rawCards.find(candidate => candidate.id === source.cardId);
+      if (!sourceCard || !String(source.id ?? '').trim() || !String(source.label ?? '').trim()) {
+        console.error(`${raw.id}: invalid answer variant source ${JSON.stringify(source)}`);
+        process.exit(1);
+      }
+      if (sourceCard.year !== raw.year || sourceCard.level !== raw.level
+          || sourceCard.questionText !== raw.questionText) {
+        console.error(`${raw.id}: answer variant ${source.cardId} is not the same printed task`);
+        process.exit(1);
+      }
+      return { id: source.id, label: source.label, rows: structuredClone(sourceCard.rows) };
+    });
+  }
+  const binding = subjectSourceBindings[raw.id];
+  if (binding) {
+    const pages = Array.isArray(binding) ? binding : binding.pages;
+    const sourceKind = !Array.isArray(binding) && binding.kind === 'text'
+      ? 'source-text'
+      : 'source-illustration';
+    const sourceTitle = sourceKind === 'source-text' ? 'Source and question' : 'Official question page';
+    card.sourceMaterial = {
+      kind: sourceKind,
+      label: sourceKind === 'source-text' ? 'OFFICIAL SOURCE' : 'OFFICIAL QUESTION PAGE',
+      title: sourceTitle,
+      pages,
+      ...(!Array.isArray(binding) && binding.sourceFileid
+        ? { sourceFileid: binding.sourceFileid }
+        : {}),
+      attribution: `SEC ${SUBJECT.title} ${card.year} ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level examination paper — © State Examinations Commission.`,
+      presentationNote: sourceKind === 'source-text'
+        ? 'Read the exact source as it appeared in the examination paper, then answer the concise prompt above.'
+        : 'Open the exact examination page to use its published chart, table, photograph or diagram.',
+    };
+    if (!Array.isArray(binding) && binding.stripStem) delete card.stem;
+    if (!Array.isArray(binding) && binding.questionText) card.questionText = binding.questionText;
+    appliedCorrections.push(`${raw.id}: attached its inspected official question-page source`);
+  }
+  cards.push(card);
+  if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
+}
+
+/**
  * Figures published by bind-figures.mjs: every one was OPENED by an inspecting
  * agent, and only those it marked complete and non-truncated are in here. Its id
  * is the extractor's own name, derived from the figure's page and index in the
  * PDF, so an authoring agent naming a figure cannot invent a path.
  */
 const MANIFEST_PATH = resolve(ROOT, 'components/MarkBank/figures.json');
-const MANIFEST = existsSync(MANIFEST_PATH) ? JSON.parse(readFileSync(MANIFEST_PATH, 'utf8')) : {};
+const SUBJECT_MANIFEST_PATH = resolve(
+  ROOT, `components/MarkBank/figures-${SUBJECT_ID}.json`);
+const MANIFEST = {
+  ...(existsSync(MANIFEST_PATH) ? JSON.parse(readFileSync(MANIFEST_PATH, 'utf8')) : {}),
+  ...(existsSync(SUBJECT_MANIFEST_PATH)
+    ? JSON.parse(readFileSync(SUBJECT_MANIFEST_PATH, 'utf8')) : {}),
+};
 
 const figureRecord = (key) => {
   if (SUBJECT.blocked.has(key)) return { error: `figure "${key}" is on the blocklist` };
@@ -453,6 +584,59 @@ function groupFault(c) {
   return null;
 }
 
+function sourceMaterialFault(source, field = 'sourceMaterial') {
+  if (!source || typeof source !== 'object') return `${field} is not an object`;
+  if (!['source-text', 'source-illustration'].includes(source.kind)) {
+    return `${field}.kind must be source-text or source-illustration`;
+  }
+  for (const key of ['label', 'title', 'attribution', 'presentationNote']) {
+    if (!String(source[key] ?? '').trim()) return `${field}.${key} is empty`;
+  }
+  if (!Array.isArray(source.pages) || !source.pages.length
+      || source.pages.some(page => !Number.isInteger(page) || page < 1)) {
+    return `${field}.pages must contain one-based positive page numbers`;
+  }
+  if (new Set(source.pages).size !== source.pages.length) {
+    return `${field}.pages repeats a page`;
+  }
+  return null;
+}
+
+function answerVariantsFault(card) {
+  if (card.answerVariants === undefined) return null;
+  if (!Array.isArray(card.answerVariants) || card.answerVariants.length < 2) {
+    return 'answerVariants must contain at least two official routes';
+  }
+  const ids = new Set();
+  for (const variant of card.answerVariants) {
+    if (!String(variant?.id ?? '').trim() || !String(variant?.label ?? '').trim()) {
+      return 'every answer variant needs a non-empty id and label';
+    }
+    if (ids.has(variant.id)) return `answer variant id "${variant.id}" appears twice`;
+    ids.add(variant.id);
+    if (!Array.isArray(variant.rows) || !variant.rows.length) {
+      return `answer variant "${variant.id}" has no marking rows`;
+    }
+    const shadow = { ...card, rows: variant.rows };
+    const tariff = tariffFault(shadow);
+    if (tariff) return `answer variant "${variant.id}": ${tariff}`;
+    const group = groupFault(shadow);
+    if (group) return `answer variant "${variant.id}": ${group}`;
+    const rowIds = new Set();
+    for (const row of variant.rows) {
+      if (rowIds.has(row.id)) return `answer variant "${variant.id}" repeats row id "${row.id}"`;
+      rowIds.add(row.id);
+      if (!ROW_KINDS.has(row.kind)) {
+        return `answer variant "${variant.id}" row "${row.id}" has invalid kind "${row.kind}"`;
+      }
+      if (row.kind !== 'anyN' && isContentFreeRow(row.verbatim)) {
+        return `answer variant "${variant.id}" contains content-free row "${row.verbatim}"`;
+      }
+    }
+  }
+  return null;
+}
+
 /**
  * On a MATCHING card, a label marked "asked" must be one of the answers.
  *
@@ -515,6 +699,23 @@ for (const c of cards) {
   }
   if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
 
+  // A question-side crop already preserves the SEC's answer lines and page
+  // layout exactly. Keep the accessible text prompt, but remove blank-rule
+  // scaffolding and page furniture so students do not see a noisy OCR copy
+  // above the official crop.
+  if (c.questionFigureKey) {
+    const originalQuestionText = c.questionText;
+    c.questionText = String(c.questionText)
+      .replace(/_{3,}/g, '')
+      .replace(/\bThis question continues(?: on the next page)?\.?/gi, '')
+      .replace(/\bSection B\s+Contexts and Applications\s+150 marks\b/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (c.questionText !== originalQuestionText) {
+      repaired.push(`${c.id}: removed duplicated answer-line/page furniture from its question-crop prompt`);
+    }
+  }
+
   const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFreeRow(r.verbatim));
   if (contentFree.length) {
     dropped.push(`${c.id}: ${contentFree.length} content-free row(s), e.g. "${contentFree[0].verbatim}"`);
@@ -530,10 +731,21 @@ for (const c of cards) {
   const badGroup = groupFault(c);
   if (badGroup) { dropped.push(`${c.id}: ${badGroup}`); continue; }
 
+  const badVariants = answerVariantsFault(c);
+  if (badVariants) { dropped.push(`${c.id}: ${badVariants}`); continue; }
+
+  const sources = [c.sourceMaterial, ...(c.additionalSourceMaterials ?? [])]
+    .filter(Boolean);
+  const badSource = sources.map((source, index) => sourceMaterialFault(
+    source,
+    index === 0 ? 'sourceMaterial' : `additionalSourceMaterials[${index - 1}]`,
+  )).find(Boolean);
+  if (badSource) { dropped.push(`${c.id}: ${badSource}`); continue; }
+
   const relabelled = relabelDistractors(c);
   if (relabelled) repaired.push(relabelled);
 
-  for (const r of c.rows) {
+  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows)].flat()) {
     const cap = optionCapFor(c.section);
     if (r.group && r.group.options.length > cap) {
       overCap.push(`${c.id}: row "${r.id}" shows ${r.group.options.length} options in section ${c.section}, over the ${cap} agreed for a short question`);
@@ -572,7 +784,7 @@ for (const c of cards) {
   const scheme = schemeFor(SUBJECT_ID, c);
   if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
   const untraceable = [];
-  for (const r of c.rows) {
+  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows)].flat()) {
     const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
     for (const claim of claims) {
       if (!claimMatches(scheme, claim)) untraceable.push(claim);
@@ -641,7 +853,16 @@ for (const c of cards) {
   const year = c.year ?? 2025;
   const level = c.level ?? 'higher';
   const levelWord = level === 'higher' ? 'Higher' : 'Ordinary';
-  const fileid = resolvePaperFileid(SUBJECT_ID, year, level, c.section);
+  // Mathematics uses A/B as marking-scheme tariff sections, while its two
+  // question documents are identified by Paper 1 / Paper 2 in questionRef.
+  // Passing A/B to Paper Trail honestly resolves nothing, which previously
+  // left every Maths card without its source-paper link despite all ten papers
+  // being indexed. Read only the explicit paper number; never guess from a
+  // question number or topic.
+  const paperSection = SUBJECT_ID === 'maths'
+    ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
+    : c.section;
+  const fileid = resolvePaperFileid(SUBJECT_ID, year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ level, code: `  {
@@ -655,7 +876,7 @@ for (const c of cards) {
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 
@@ -677,6 +898,7 @@ try {
     : 'LEDGER unavailable (python3 missing?) — run reconcile.py by hand\n');
 }
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
+for (const c of appliedCorrections) process.stderr.write(`  CORRECTED ${c}\n`);
 for (const r of repaired) process.stderr.write(`  REPAIRED ${r}\n`);
 for (const o of overCap) process.stderr.write(`  OVER CAP ${o}\n`);
 if (unresolvedPapers) {

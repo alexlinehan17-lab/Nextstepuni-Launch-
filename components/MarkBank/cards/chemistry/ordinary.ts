@@ -1571,23 +1571,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Ordinary Level — © State Examinations Commission.",
-    id: "chem-2023-ol-q6-b-i-iv", topicId: "chem-2-4", conceptId: "natural-gas-alkanes-mercaptans",
-    section: "B", questionRef: "2023 OL Q6(b)(i)-(iv)",
-    stem: "Natural gas is a mixture of methane and smaller quantities of ethane, propane and butane. Tiny quantities of sulfur-containing mercaptans are usually added to natural gas before supplying it to its users.",
-    questionText: "(i) Give a major use for natural gas. (ii) To which homologous series do methane, ethane, propane and butane belong? (iii) Describe the geometry around the carbon atoms in a molecule of butane. (iv) Why are mercaptans added to natural gas?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 18,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "fuel", marks: 8, accepts: ["cooking","heating","generating electricity","source of hydrogen"], openList: true },
-    { id: "r-2", kind: "point", verbatim: "alkanes", marks: 6, exactTermRequired: true },
-    { id: "r-3", kind: "point", verbatim: "tetrahedral", marks: 2, exactTermRequired: true },
-    { id: "r-4", kind: "alt", verbatim: "safety", marks: 2, accepts: ["in case of leaks","to detect the gas","to give the gas a smell","because the gas is odourless"] },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC022GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Ordinary Level — © State Examinations Commission.",
     id: "chem-2023-ol-q7-a", topicId: "chem-3-4", conceptId: "acid-base-definitions",
     section: "B", questionRef: "2023 OL Q7(a)",
     questionText: "Define (i) an acid, (ii) a base.",
@@ -1793,14 +1776,22 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Ordinary Level — © State Examinations Commission.",
     id: "chem-2023-ol-q10-a-iii-iv", topicId: "chem-2-1", conceptId: "nacl-lattice-coordination-and-bonding",
-    section: "B", questionRef: "2023 OL Q10(a)(iii)-(iv)",
-    stem: "The question concerns the arrangement of sodium ions and chloride ions in an NaCl crystal, with a chloride ion at its centre.",
+    section: "B", questionRef: "2023 OL Q10(a)(iii)–(iv)",
+    stem: "Refer to page 79 of the Formulae and Tables booklet when answering this question. The diagram shows the arrangement of sodium ions and chloride ions in an NaCl crystal with a chloride ion at its centre.",
     questionText: "(iii) What is the maximum number of sodium ions that can surround (as its nearest neighbours) a chloride ion in the crystal? (iv) What holds the ions together in the NaCl crystal structure?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "6", marks: 3 },
     { id: "r-2", kind: "alt", verbatim: "electrostatic attraction (force)", marks: 3, accepts: ["opposite charged ions attract","ionic bonds"] },
     ],
+    figure: {
+          "candId": "chemistry-2023-OL-paper-p11-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p11-i0.png",
+          "srcHash": "c0412fecd1504581154cdca2751ff4bd",
+          "alt": "On the right, a three-dimensional ball-and-stick drawing of a sodium chloride crystal lattice: a cube-shaped framework of straight connecting rods with spheres at every intersection, alternating between large pale-grey spheres and smaller dark-grey spheres so that each sphere is surrounded by spheres of the other kind. Beneath the lattice is a two-line key: a large pale sphere followed by \"= chloride ion\", and a small dark sphere followed by \"= sodium ion\". On the left is the question header \"10. Answer any two of the parts (a), (b) and (c). (2 x 25)\" and the text of part (a) — a note to refer to page 79 of the Formulae and Tables booklet, the statement that the diagram shows sodium and chloride ions in an NaCl crystal with a chloride ion at its centre, and sub-parts (i) to (iv), with (v) beginning at the bottom.",
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2488,7 +2479,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
     id: "chem-2025-ol-q11-a-1", topicId: "chem-1-3", conceptId: "periodic-table-passage-groups-1-2",
     section: "B", questionRef: "2025 OL Q11(a) numbers 1–3",
-    stem: "The names of the following seven elements are omitted from the passage below: beryllium (Be), fluorine (F), gallium (Ga), hydrogen (H), lithium (Li), neon (Ne), selenium (Se). Write in your answerbook the omitted element corresponding to each of the numbers 1 to 7.",
     questionText: "The first element of the periodic table of the elements is  1 . The element sodium is in the same group as  2 . The alkaline earth metals make up Group 2 and include the element  3 .",
     tariffModel: {"kind":"orderedSplit","notation":"9 + 6 + 2 + 2 + 2 + 2 + 2"}, totalMarks: 17,
     rows: [
@@ -2496,6 +2486,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "2 = lithium / Li", marks: null, accepts: ["lithium","Li"] },
     { id: "r-3", kind: "alt", verbatim: "3 = beryllium / Be", marks: null, accepts: ["beryllium","Be"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Chemistry 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2504,13 +2504,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
     id: "chem-2025-ol-q11-a-2", topicId: "chem-1-3", conceptId: "periodic-table-mendeleev-prediction",
     section: "B", questionRef: "2025 OL Q11(a) numbers 4–5",
-    stem: "The names of the following seven elements are omitted from the passage below: beryllium (Be), fluorine (F), gallium (Ga), hydrogen (H), lithium (Li), neon (Ne), selenium (Se). Write in your answerbook the omitted element corresponding to each of the numbers 1 to 7.",
     questionText: "The existence and properties of the element  4  in the same group as aluminium and the same period as  5  was predicted by Mendeleev before its actual discovery in 1875.",
     tariffModel: {"kind":"orderedSplit","notation":"9 + 6 + 2 + 2 + 2 + 2 + 2"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "4 = gallium / Ga", marks: null, accepts: ["gallium","Ga"], contextNote: "Per-blank values are not fixed: the whole of part (a) is marked as one 9 + 6 + 2 + 2 + 2 + 2 + 2 split across its seven correct blanks." },
     { id: "r-2", kind: "alt", verbatim: "5 = Se", marks: null, accepts: ["selenium"], contextNote: "The scheme prints \"5 = Selinium / Se\"; the paper's own list of omitted elements gives selenium (Se)." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Chemistry 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2519,13 +2528,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
     id: "chem-2025-ol-q11-a-3", topicId: "chem-1-3", conceptId: "periodic-table-noble-gases-and-halogens",
     section: "B", questionRef: "2025 OL Q11(a) numbers 6–7",
-    stem: "The names of the following seven elements are omitted from the passage below: beryllium (Be), fluorine (F), gallium (Ga), hydrogen (H), lithium (Li), neon (Ne), selenium (Se). Write in your answerbook the omitted element corresponding to each of the numbers 1 to 7.",
     questionText: "Group 18 of the modern table contains the noble gases, including  6 ; there were no noble gases in Mendeleev's original table. Clarice Phelps is recognised as one of the scientists whose work led to the discovery in 2009 of element 117, a halogen now called tennessine, that is in the same group as  7 .",
     tariffModel: {"kind":"orderedSplit","notation":"9 + 6 + 2 + 2 + 2 + 2 + 2"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "6 = neon / Ne", marks: null, accepts: ["neon","Ne"], contextNote: "Per-blank values are not fixed: the whole of part (a) is marked as one 9 + 6 + 2 + 2 + 2 + 2 + 2 split across its seven correct blanks." },
     { id: "r-2", kind: "alt", verbatim: "7 = fluorine / F", marks: null, accepts: ["fluorine","F"], contextNote: "Element 117, tennessine, is a halogen — Group 17 — so the blank takes the only halogen on the paper's list." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Chemistry 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3152,29 +3170,6 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"X","meaning":"The tall vertical jacketed tube fitted upright into the neck of the round-bottomed flask, between the \"water out\" side-arm above and the \"water in\" side-arm below; the leader line from the bold X points to it. The paper does not name it (naming it is the answer).","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC022GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Ordinary Level — © State Examinations Commission.",
-    id: "chem-2023-ol-q10-a-iii-iv-fig", topicId: "chem-2-1", conceptId: "nacl-lattice-coordination-and-bonding",
-    section: "B", questionRef: "2023 OL Q10(a)(iii)–(iv)",
-    stem: "Refer to page 79 of the Formulae and Tables booklet when answering this question.  The diagram shows the arrangement of sodium ions and chloride ions in an NaCl crystal with a chloride ion at its centre.",
-    questionText: "(iii) What is the maximum number of sodium ions that can surround (as its nearest neighbours) a chloride ion in the crystal?  (iv) What holds the ions together in the NaCl crystal structure?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "6", marks: 3 },
-    { id: "r-2", kind: "alt", verbatim: "electrostatic attraction (force) / opposite charged ions attract / ionic bonds", marks: 3, accepts: ["electrostatic attraction","electrostatic force","opposite charged ions attract","ionic bonds"] },
-    ],
-    figure: {
-          "candId": "chemistry-2023-OL-paper-p11-i0",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p11-i0.png",
-          "srcHash": "c0412fecd1504581154cdca2751ff4bd",
-          "alt": "On the right, a three-dimensional ball-and-stick drawing of a sodium chloride crystal lattice: a cube-shaped framework of straight connecting rods with spheres at every intersection, alternating between large pale-grey spheres and smaller dark-grey spheres so that each sphere is surrounded by spheres of the other kind. Beneath the lattice is a two-line key: a large pale sphere followed by \"= chloride ion\", and a small dark sphere followed by \"= sodium ion\". On the left is the question header \"10. Answer any two of the parts (a), (b) and (c). (2 x 25)\" and the text of part (a) — a note to refer to page 79 of the Formulae and Tables booklet, the statement that the diagram shows sodium and chloride ions in an NaCl crystal with a chloride ion at its centre, and sub-parts (i) to (iv), with (v) beginning at the bottom.",
-          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -4503,7 +4498,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
     id: "chem-2022-ol-q9-c", topicId: "chem-3-5", conceptId: "magnesium-copper-displacement",
     section: "B", questionRef: "2022 OL Q9(c)",
-    stem: "Another redox reaction took place when magnesium ribbon was added to an aqueous copper(II) sulfate solution. This reaction is described by the balanced equation:  Mg + Cu2+ → Mg2+ + Cu",
     questionText: "(i) What was observed during this displacement reaction? (ii) Which metal, copper or magnesium, is shown by this reaction to be the more easily oxidised and therefore higher up the electrochemical series? (iii) Would you expect the following displacement reaction to occur when copper metal is added to a sodium chloride solution?  Cu + 2Na+ → Cu2+ + 2Na  Explain your answer.",
     tariffModel: {"kind":"orderedSplit","notation":"FOUR POINTS: (9 + 9 + 4 + 4)"}, totalMarks: 26,
     rows: [
@@ -4512,6 +4506,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "no", marks: null, contextNote: "(iii) The reaction Cu + 2Na+ → Cu2+ + 2Na would not occur." },
     { id: "r-4", kind: "alt", verbatim: "sodium is above (higher up than) copper on electrochemical series", marks: null, accepts: ["sodium more easily oxidised (more reactive) than copper","copper not easily oxidised compared to sodium","sodium metal cannot exist in solution"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Chemistry 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4939,7 +4943,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q3-b", topicId: "chem-u2", conceptId: "anion-identification-tests",
     section: "A", questionRef: "2024 OL Q3(b)(ii)-(v)",
-    stem: "A student was given samples of three different unknown compounds on clock glasses labelled A, B and C. The compounds were sodium chloride (NaCl), sodium sulfate (Na2SO4) and sodium carbonate (Na2CO3). When a sample of compound A was mixed with dilute hydrochloric acid (HCl) fizzing was observed and the gas produced turned limewater milky. When a sample of compound B was dissolved in water and mixed with a solution of barium chloride (BaCl2) a white precipitate was produced.",
     questionText: "(ii) Identify the gas produced. (iii) Identify compound A. (iv) Identify compound B. (v) Identify a reagent which could be used to confirm that compound C contained chloride (Cl–) ions.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 4 + 2 + 2"}, totalMarks: 16,
     rows: [
@@ -4948,6 +4951,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "sodium sulfate", marks: null, accepts: ["Na2SO4"] },
     { id: "r-4", kind: "point", verbatim: "silver nitrate", marks: null, accepts: ["AgNO3"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Chemistry 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5270,7 +5283,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
     id: "chem-2021-ol-q10-a-1", topicId: "chem-1-2", conceptId: "atomic-number-mass-number-and-the-neutral-atom",
     section: "A", questionRef: "2021 OL Q10(a)",
-    stem: "neutral Rutherford atomic positive Bohr mass negative Write in your answerbook the omitted word corresponding to each of the numbers (1 to 7). The number of protons in an atom is its 1 number and the sum of the protons and neutrons in its nucleus is its 2 number. The number of electrons in the electron cloud of a 3 atom is the same as the number of protons in its nucleus. It was 4 who discovered that an atom has a small dense 5 central nucleus and it was 6 who first described the arrangement of the electrons in energy levels in the electron cloud of an atom. In a chemical reaction an atom becomes charged if it loses one or more of its electrons or gains one or more additional electrons. If the atom gains one or more electrons it becomes a 7 ion. (25)",
     questionText: "The following words are omitted from the passage below.",
     tariffModel: {"kind":"orderedSplit","notation":"2 x 6 + 4 x 3 + 1 (blanks 1-4)"}, totalMarks: 25,
     rows: [
@@ -5279,6 +5291,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "neutral", marks: null },
     { id: "r-4", kind: "point", verbatim: "Rutherford", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Chemistry 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5345,12 +5367,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
     id: "chem-2021-ol-q5-d-ii", topicId: "chem-2-1", conceptId: "dot-and-cross-diagram-for-an-oxygen-molecule",
     section: "A", questionRef: "2021 OL Q5(d)(ii)",
-    stem: "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
     questionText: "Oxygen (O2) also has covalent bonding. Use a dot and cross diagram to show the arrangement of the electrons in an O2 molecule. (Electrons in the first main energy levels need not be shown.)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "two bond pairs shown // two lone pairs in valence shell of each oxygen shown", marks: 6, contextNote: "The scheme accepts either a shell diagram or a Lewis structure; both are printed side by side in its own answer." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Chemistry 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "chemistry-2021-OL-scheme-q5d-ii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-scheme-q5d-ii.png",
@@ -5408,7 +5439,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
     id: "chem-2022-ol-q7-b-1", topicId: "chem-3-4", conceptId: "the-ph-scale-and-the-ions-that-set-it",
     section: "A", questionRef: "2022 OL Q7(b)",
-    stem: "decreases 0 H+ 1 OH– increases 10 Write in your answerbook the omitted term corresponding to each of the letters A to G. The pH scale ranges from A to 14, where a pH value of 7 means that there are equal numbers of H+ and B ions in a solution. The lower the pH value, the more C ions are present. The calculation referred to above illustrates that because the pH scale is logarithmic, a change in pH of D unit is observed when the concentration of H+ ion in solution changes by a factor of E . It can also be noted from the calculation that when the concentration of H+ ion decreases, the pH value F . During a titration, as more H+ ions are added to an alkaline solution in a conical flask, the pH value of the solution in the flask G until the end point is reached. (30)",
     questionText: "The following terms are omitted from the passage below.",
     tariffModel: {"kind":"orderedSplit","notation":"(4 x 6) + (3 x 2) (blanks A-D)"}, totalMarks: 30,
     rows: [
@@ -5417,6 +5447,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "C H+", marks: null },
     { id: "r-4", kind: "point", verbatim: "D 1", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Chemistry 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5727,13 +5767,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Ordinary Level — © State Examinations Commission.",
     id: "chem-2023-ol-q3-b-i", topicId: "chem-4-3", conceptId: "which-of-the-tested-ions-are-anions",
     section: "A", questionRef: "2023 OL Q3(b)(i)",
-    stem: "Ion Formula Test Chloride ion Cl– Add AgNO3 solution to a sample of estuary water in a test-tube Nitrate ion NO3– Add FeSO4 solution to a sample of estuary water in a test-tube and then add concentrated H2SO4 slowly down the side of the test-tube, giving two layers Sodium ion Na+ Carry out a flame test on the dissolved solids obtained from the estuary water",
     questionText: "Identify which of the ions in the first column of the table above are anions.",
     tariffModel: {"kind":"fixed","notation":"6 + [6 × 3] across Q3(b)"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "chloride (Cl–)", marks: 6 },
     { id: "r-2", kind: "point", verbatim: "nitrate (NO3–)", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Chemistry 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

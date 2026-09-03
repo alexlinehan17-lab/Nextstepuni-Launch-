@@ -117,6 +117,10 @@ def reconcile_manifest(subject, census):
         paper_rows.append((paper, ids))
 
     cards = shipped_cards(subject)
+    manifest_path = os.path.join(DECKS, subject, 'authored.json')
+    manifest = json.load(open(manifest_path, encoding='utf-8'))
+    aliases = manifest.get('withdrawnAliases', manifest.get('aliases', {}))
+    shipped_ids = {cid for cid, _ in cards}
     covered = set()
     orphans = []
     for cid, ref in cards:
@@ -129,6 +133,14 @@ def reconcile_manifest(subject, census):
                             'why': f'census address is "{wanted}"'})
         else:
             covered.add(cid)
+
+    # A reviewed duplicate still represents a printed ask. The runtime keeps
+    # one canonical practice identity so the student does not see the same task
+    # two or three times, while the alias preserves progress and proves that the
+    # other printed address was not silently lost from the paper census.
+    for old_id, replacement_id in aliases.items():
+        if old_id in expected and replacement_id in shipped_ids:
+            covered.add(old_id)
 
     papers = []
     for paper, ids in paper_rows:

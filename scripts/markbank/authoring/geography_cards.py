@@ -234,6 +234,14 @@ def question_only_text(value: str) -> str:
         r'\b(?:Amended from|Source:)\s+(?:https?://)?\S+', '', value,
         flags=re.I)
     value = re.sub(r'\b(?:https?://|www\.)\S+', '', value, flags=re.I)
+    # Location tables can be flattened after the instruction as a run of
+    # headings, feature names and the example answer ("Feature on Satellite
+    # Image Location on Aerial Photograph A Bridge ...").  The exact table is
+    # already visible on the attached official page, so stop at the paper's
+    # own final instruction instead of printing an unreadable second copy.
+    value = re.sub(
+        r'(One has been completed for you\.)\s+.*$', r'\1', value,
+        flags=re.I | re.S)
     value = re.sub(r'[ \t]{2,}', ' ', value)
     return value.strip()
 

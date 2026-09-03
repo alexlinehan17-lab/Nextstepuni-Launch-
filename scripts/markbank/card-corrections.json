@@ -1,0 +1,1290 @@
+{
+  "chemistry": {
+    "chem-2023-ol-q6-b": {
+      "reason": "Keeps the older stable identity for the one printed Q6(b)(i)-(iv) task; the later card is an exact duplicate.",
+      "set": {
+        "questionRef": "2023 OL Q6(b)(i)–(iv)"
+      }
+    },
+    "chem-2023-ol-q6-b-i-iv": {
+      "reason": "Exact duplicate of chem-2023-ol-q6-b; the stable older identity carries the complete four-part answer.",
+      "drop": true,
+      "replacementId": "chem-2023-ol-q6-b"
+    },
+    "chem-2023-ol-q10-a-iii-iv": {
+      "reason": "Preserves the older progress identity while attaching the inspected official NaCl lattice figure from its later duplicate.",
+      "set": {
+        "stem": "Refer to page 79 of the Formulae and Tables booklet when answering this question. The diagram shows the arrangement of sodium ions and chloride ions in an NaCl crystal with a chloride ion at its centre.",
+        "questionRef": "2023 OL Q10(a)(iii)–(iv)",
+        "figureKey": "chemistry-2023-OL-paper-p11-i0"
+      }
+    },
+    "chem-2023-ol-q10-a-iii-iv-fig": {
+      "reason": "Duplicate of chem-2023-ol-q10-a-iii-iv after its inspected lattice figure is transferred to the older stable identity.",
+      "drop": true,
+      "replacementId": "chem-2023-ol-q10-a-iii-iv"
+    }
+  },
+  "biology": {
+    "bio-2024-hl-q12-b-i": {
+      "reason": "The printed task asks the student to copy and extend the prey-population graph; the same inspected official graph is shared by every sibling that depends on it.",
+      "set": { "questionFigureKey": "biology-2024-hl-paper-p003-i0" }
+    },
+    "bio-2024-hl-q12-b-ii": {
+      "reason": "The explanation concerns the predator line the student draws over the supplied prey graph, so the inspected official graph must remain visible as question context.",
+      "set": { "questionFigureKey": "biology-2024-hl-paper-p003-i0" }
+    },
+    "bio-2024-hl-q12-b-iii": {
+      "reason": "Time X exists only on the supplied prey graph; attach the same inspected official graph used by the rest of Q12(b).",
+      "set": { "questionFigureKey": "biology-2024-hl-paper-p003-i0" }
+    },
+    "bio-2025-ol-q11-c-i": {
+      "reason": "Q11(c) is printed in the Section C booklet; its earlier Section A tag pointed the source reader at the wrong paper component.",
+      "set": { "section": "C" }
+    },
+    "bio-2025-ol-q11-c-ii": {
+      "reason": "Q11(c) is printed in the Section C booklet; its earlier Section A tag pointed the source reader at the wrong paper component.",
+      "set": { "section": "C" }
+    },
+    "bio-2025-ol-q11-c-iii": {
+      "reason": "Q11(c) is printed in the Section C booklet; its earlier Section A tag pointed the source reader at the wrong paper component.",
+      "set": { "section": "C" }
+    },
+    "bio-2025-ol-q11-c-iv": {
+      "reason": "Q11(c) is printed in the Section C booklet; its earlier Section A tag pointed the source reader at the wrong paper component.",
+      "set": { "section": "C" }
+    }
+  },
+  "physics": {
+    "phys-2023-hl-q8-iii-t": {
+      "reason": "The paper sets three separately marked graphs under one instruction; this card now names only the f against square-root-T graph it assesses.",
+      "set": {
+        "stem": "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance. For each pair of variables, sketch a suitable graph to show the relationship between them.",
+        "questionText": "(a) Sketch the graph of f against √T."
+      }
+    },
+    "phys-2023-hl-q8-iii-l": {
+      "reason": "The paper sets three separately marked graphs under one instruction; this card now names only the f against reciprocal-length graph it assesses.",
+      "set": {
+        "stem": "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance. For each pair of variables, sketch a suitable graph to show the relationship between them.",
+        "questionText": "(b) Sketch the graph of f against 1/l."
+      }
+    },
+    "phys-2023-hl-q8-iii-mu": {
+      "reason": "The paper sets three separately marked graphs under one instruction; this card now names only the f against reciprocal-square-root-linear-density graph it assesses.",
+      "set": {
+        "stem": "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance. For each pair of variables, sketch a suitable graph to show the relationship between them.",
+        "questionText": "(c) Sketch the graph of f against 1/√μ."
+      }
+    }
+  },
+  "business": {
+    "bus-2023-hl-s3-q8c1": {
+      "reason": "This split card assesses the calculation component only, so its visible ask must not repeat the chart-drawing task assessed by its siblings.",
+      "set": {
+        "questionText": "Calculate the breakeven point, the margin of safety at forecast output, and the profit at forecast output."
+      }
+    },
+    "bus-2023-hl-s3-q8c2": {
+      "reason": "This split card assesses the chart setup only, so its visible ask is scoped to the title, revenue/cost axis and fixed-cost line.",
+      "set": {
+        "questionText": "On the breakeven chart, include an appropriate title, label the revenue/cost axis, and draw the fixed-cost line."
+      }
+    },
+    "bus-2023-hl-s3-q8c3": {
+      "reason": "This split card assesses the substantive chart lines and readings only, instead of repeating the full task shown by both siblings.",
+      "set": {
+        "questionText": "On the breakeven chart, draw and label total cost and total revenue, and show the breakeven point, margin of safety, and profit at forecast output."
+      }
+    },
+    "bus-2025-hl-s3-q8c1": {
+      "reason": "This split card assesses only the breakeven chart title and axes.",
+      "set": {
+        "questionText": "Set up the breakeven chart with an appropriate title and correctly labelled vertical and horizontal axes."
+      }
+    },
+    "bus-2025-hl-s3-q8c2": {
+      "reason": "This split card assesses only the three breakeven chart lines.",
+      "set": {
+        "questionText": "Draw and label the fixed-cost, total-cost and total-revenue lines on the breakeven chart."
+      }
+    }
+  },
+  "construction-studies": {
+    "cons-2016-hl-q6-a": {
+      "reason": "The scheme awards 5 marks for the notes and 5 for the sketch for each of three selected design features; the parsed 6-of-14 list incorrectly treated six bullet points as six features.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "cons-2016-hl-q6-a-notes",
+            "kind": "anyN",
+            "verbatim": "Three low-environmental-impact design features — Notes",
+            "marks": 15,
+            "openList": true,
+            "contextNote": "Choose three distinct features shown in the supplied design. Each selected feature needs a detailed note and is worth 5 marks.",
+            "group": {
+              "claimMax": 3,
+              "perOption": 5,
+              "options": [
+                "the cedar cladding finish on the exterior is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction",
+                "the tree planting indicated reduces the visual impact of the building and help with carbon sequestration",
+                "the planting of trees indicated in the drawing softens the contrast between the natural setting and the geometric nature of the architecture",
+                "trees to provide shade, food and shelter for birds and humans and aid biodiversity",
+                "the cedar cladding needs no preservatives, naturally durable",
+                "the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere",
+                "the large areas of glazing and the double height glazing, which are presumed to be south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating",
+                "the smaller windows to the north-facing elevations reduce heat loss and help conserve energy",
+                "the stove and associated flue are placed against an inner wall of high thermal mass, increasing the storage of heat within the fabric of the house",
+                "wood burning stoves are carbon neutral and stoves are up to 70% efficient",
+                "open-plan, naturally lighted layout",
+                "short circulation areas and corridors",
+                "hot press adjacent to bathroom and kitchen, short pipe runs and reduced hot water run off needed",
+                "the entrance lobby/storm porch greatly reduces the loss of heated air when the door is used"
+              ]
+            }
+          },
+          {
+            "id": "cons-2016-hl-q6-a-sketches",
+            "kind": "criterion",
+            "verbatim": "Three selected design features — Sketches",
+            "marks": 15,
+            "contextNote": "The scheme awards 5 marks for the freehand sketch accompanying each of the three selected features. Claim this only when all three sketches communicate their design details."
+          }
+        ]
+      }
+    },
+    "cons-2016-hl-q10-b": {
+      "reason": "The paper awards two reasons at 6 marks and two design details at 6 marks. The parser had omitted the reasons, split three scheme headings into unequal rows, and inflated the total to 42.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 24,
+        "rows": [
+          {
+            "id": "cons-2016-hl-q10-b-reasons",
+            "kind": "anyN",
+            "verbatim": "Reasons why the Passive House may overheat",
+            "marks": 12,
+            "openList": true,
+            "contextNote": "Select two distinct, discussed reasons; each is worth 6 marks.",
+            "group": {
+              "claimMax": 2,
+              "perOption": 6,
+              "options": [
+                "passive standard – overheating occurs if internal temperature greater than 25° for 36 days (10%) days annually",
+                "inadequate or no over-shading of windows – no roof overhang, balcony or brise-soleil",
+                "insufficient ventilation – natural or mechanical",
+                "insufficient thermal mass - not appropriate to house size",
+                "poor design detailing, long unvented corridors, small isolated rooms, poor placement of windows",
+                "large amounts of south facing glazing resulting in too much solar heat gain",
+                "inadequate natural shading",
+                "in addition to solar heat gain, heat produced inside the house, lighting, appliances, hot water production and cooking all add to overheating"
+              ]
+            }
+          },
+          {
+            "id": "cons-2016-hl-q10-b-details",
+            "kind": "anyN",
+            "verbatim": "Design details that reduce overheating",
+            "marks": 12,
+            "openList": true,
+            "contextNote": "Select two distinct note-and-sketch design details; each complete detail is worth 6 marks.",
+            "group": {
+              "claimMax": 2,
+              "perOption": 6,
+              "options": [
+                "an overhang / extended eaves / to reduce the amount of solar heat gain in summertime",
+                "this works on the same principle as the overhang and is used to reduce the amount of summer sun entering a building",
+                "Include thermal mass in design, external insulation with concrete walls and floors to absorb heat and release slowly",
+                "automatically adjusts its tint in response to environmental conditions"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cons-2017-hl-q2-c": {
+      "reason": "This is six compulsory layout criteria, not an any-six menu containing seven generic labels. Four parallel fixture-location marks are grouped into one bounded checklist so the complete rubric remains readable on a phone.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 24,
+        "rows": [
+          { "id": "cons-2017-hl-q2-c-locations", "kind": "anyN", "verbatim": "Bathroom fixture locations", "marks": 16, "group": { "claimMax": 4, "perOption": 4, "options": ["Location of shower area", "Location of W.C.", "Location of wash basin", "Grab rails"] } },
+          { "id": "cons-2017-hl-q2-c-dimensions", "kind": "point", "verbatim": "Dimensions of turning circle/door/any 2 dimensions", "marks": 4 },
+          { "id": "cons-2017-hl-q2-c-sewer-gases", "kind": "point", "verbatim": "Design detail to prevent the penetration of sewer gases", "marks": 4, "contextNote": "Show this design detail on the separate sketch required by the printed task." }
+        ]
+      }
+    },
+    "cons-2017-hl-q4-a": {
+      "reason": "Q4(a) awards a note and a freehand sketch for each of three functional requirements. The flattened scheme crossed into Q4(b) and replaced those requirements with wall types and generic positive/negative headings.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 24,
+        "rows": [
+          {
+            "id": "cons-2017-hl-q4-a-requirements",
+            "kind": "anyN",
+            "verbatim": "Three functional requirements — discussed note and freehand sketch",
+            "marks": 24,
+            "openList": true,
+            "contextNote": "Choose three distinct functional requirements. For each one, the scheme awards 4 marks for the discussed note and 4 marks for the communicating freehand sketch.",
+            "group": {
+              "claimMax": 3,
+              "perOption": 8,
+              "options": [
+                "keep the occupants safe, dry and warm and sheltered from the elements",
+                "prevent the transfer of heat to the outside or to the inside of the dwelling",
+                "provide for the reduction of noise from outside and inside",
+                "anchor roof to walls and support the floors/upper floor(s) and roof",
+                "spread the superimposed loads evenly over the foundations",
+                "provide robust openings for doors and windows",
+                "have sufficient structural integrity to avoid cracks or other failure under load",
+                "provide low-maintenance, climate-proof exterior surfaces and finishes",
+                "have no cold bridges and be designed to have low embodied energy",
+                "prevent the formation of condensation and dampness",
+                "prevent interstitial dampness",
+                "prevent the uncontrolled passage of air through the structure",
+                "prevent the ingress of water",
+                "prevent access of vermin to the building and the roof space",
+                "be aesthetically pleasing and be in keeping with the surroundings of the dwelling",
+                "provide a means of carbon sequestration"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cons-2017-hl-q4-b": {
+      "reason": "The paper requires any two of three named wall systems, each marked Note 5 + Sketch 5 + Dimensions 2. Named route variants retain that split while grouping the two parallel wall entries into three compact checklist rows.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 24,
+        "rows": [
+          { "id": "cons-2017-hl-q4-b-concrete-timber-notes", "kind": "anyN", "verbatim": "Selected wall systems — Notes", "marks": 10, "contextNote": "Name and annotate the typical components of both selected walls.", "group": { "claimMax": 2, "perOption": 5, "options": ["Concrete block construction", "Timber frame construction"] } },
+          { "id": "cons-2017-hl-q4-b-concrete-timber-sketches", "kind": "anyN", "verbatim": "Selected wall systems — Sketches", "marks": 10, "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.", "group": { "claimMax": 2, "perOption": 5, "options": ["Concrete block construction", "Timber frame construction"] } },
+          { "id": "cons-2017-hl-q4-b-concrete-timber-dimensions", "kind": "anyN", "verbatim": "Selected wall systems — Dimensions", "marks": 4, "contextNote": "Include typical dimensions for both selected walls.", "group": { "claimMax": 2, "perOption": 2, "options": ["Concrete block construction", "Timber frame construction"] } }
+        ],
+        "answerVariants": [
+          {
+            "id": "concrete-and-timber",
+            "label": "Concrete block + timber frame",
+            "rows": [
+              { "id": "cons-2017-hl-q4-b-concrete-timber-notes", "kind": "anyN", "verbatim": "Selected wall systems — Notes", "marks": 10, "contextNote": "Name and annotate typical components such as cavities, insulation, airtight layers, rainscreen battens and racking.", "group": { "claimMax": 2, "perOption": 5, "options": ["Concrete block construction", "Timber frame construction"] } },
+              { "id": "cons-2017-hl-q4-b-concrete-timber-sketches", "kind": "anyN", "verbatim": "Selected wall systems — Sketches", "marks": 10, "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.", "group": { "claimMax": 2, "perOption": 5, "options": ["Concrete block construction", "Timber frame construction"] } },
+              { "id": "cons-2017-hl-q4-b-concrete-timber-dimensions", "kind": "anyN", "verbatim": "Selected wall systems — Dimensions", "marks": 4, "contextNote": "Include typical dimensions for both selected walls.", "group": { "claimMax": 2, "perOption": 2, "options": ["Concrete block construction", "Timber frame construction"] } }
+            ]
+          },
+          {
+            "id": "concrete-and-hemp-lime",
+            "label": "Concrete block + hemp-lime",
+            "rows": [
+              { "id": "cons-2017-hl-q4-b-concrete-hemp-notes", "kind": "anyN", "verbatim": "Selected wall systems — Notes", "marks": 10, "contextNote": "Name and annotate typical components including the 300–500 mm hemp-lime layer and breathable finishes where relevant.", "group": { "claimMax": 2, "perOption": 5, "options": ["Concrete block construction", "Timber frame and hemp-lime construction"] } },
+              { "id": "cons-2017-hl-q4-b-concrete-hemp-sketches", "kind": "anyN", "verbatim": "Selected wall systems — Sketches", "marks": 10, "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.", "group": { "claimMax": 2, "perOption": 5, "options": ["Concrete block construction", "Timber frame and hemp-lime construction"] } },
+              { "id": "cons-2017-hl-q4-b-concrete-hemp-dimensions", "kind": "anyN", "verbatim": "Selected wall systems — Dimensions", "marks": 4, "contextNote": "Include typical dimensions for both selected walls.", "group": { "claimMax": 2, "perOption": 2, "options": ["Concrete block construction", "Timber frame and hemp-lime construction"] } }
+            ]
+          },
+          {
+            "id": "timber-and-hemp-lime",
+            "label": "Timber frame + hemp-lime",
+            "rows": [
+              { "id": "cons-2017-hl-q4-b-timber-hemp-notes", "kind": "anyN", "verbatim": "Selected wall systems — Notes", "marks": 10, "contextNote": "Name and annotate the rainscreen/timber-frame layers and the hemp-lime wall's breathable construction.", "group": { "claimMax": 2, "perOption": 5, "options": ["Timber frame construction", "Timber frame and hemp-lime construction"] } },
+              { "id": "cons-2017-hl-q4-b-timber-hemp-sketches", "kind": "anyN", "verbatim": "Selected wall systems — Sketches", "marks": 10, "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.", "group": { "claimMax": 2, "perOption": 5, "options": ["Timber frame construction", "Timber frame and hemp-lime construction"] } },
+              { "id": "cons-2017-hl-q4-b-timber-hemp-dimensions", "kind": "anyN", "verbatim": "Selected wall systems — Dimensions", "marks": 4, "contextNote": "Include typical dimensions for both selected walls.", "group": { "claimMax": 2, "perOption": 2, "options": ["Timber frame construction", "Timber frame and hemp-lime construction"] } }
+            ]
+          }
+        ]
+      }
+    },
+    "cons-2017-hl-q4-c": {
+      "reason": "Q4(c) follows the same closed any-two wall choice as Q4(b). Named route variants replace four anonymous placeholders and preserve the correct four-by-three-mark tariff.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 12,
+        "rows": [
+          { "id": "cons-2017-hl-q4-c-concrete-environment", "kind": "point", "verbatim": "Concrete block construction — Environmental consideration", "marks": 3, "contextNote": "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time." },
+          { "id": "cons-2017-hl-q4-c-concrete-ease", "kind": "point", "verbatim": "Concrete block construction — Ease of construction", "marks": 3, "contextNote": "Relevant points include readily available skilled trades, standard components and largely on-site construction." },
+          { "id": "cons-2017-hl-q4-c-timber-environment", "kind": "point", "verbatim": "Timber frame construction — Environmental consideration", "marks": 3, "contextNote": "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts." },
+          { "id": "cons-2017-hl-q4-c-timber-ease", "kind": "point", "verbatim": "Timber frame construction — Ease of construction", "marks": 3, "contextNote": "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands." }
+        ],
+        "answerVariants": [
+          {
+            "id": "concrete-and-timber",
+            "label": "Concrete block + timber frame",
+            "rows": [
+              { "id": "cons-2017-hl-q4-c-concrete-environment", "kind": "point", "verbatim": "Concrete block construction — Environmental consideration", "marks": 3, "contextNote": "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time." },
+              { "id": "cons-2017-hl-q4-c-concrete-ease", "kind": "point", "verbatim": "Concrete block construction — Ease of construction", "marks": 3, "contextNote": "Relevant points include readily available skilled trades, standard components and largely on-site construction." },
+              { "id": "cons-2017-hl-q4-c-timber-environment", "kind": "point", "verbatim": "Timber frame construction — Environmental consideration", "marks": 3, "contextNote": "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts." },
+              { "id": "cons-2017-hl-q4-c-timber-ease", "kind": "point", "verbatim": "Timber frame construction — Ease of construction", "marks": 3, "contextNote": "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands." }
+            ]
+          },
+          {
+            "id": "concrete-and-hemp-lime",
+            "label": "Concrete block + hemp-lime",
+            "rows": [
+              { "id": "cons-2017-hl-q4-c-concrete-environment", "kind": "point", "verbatim": "Concrete block construction — Environmental consideration", "marks": 3, "contextNote": "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time." },
+              { "id": "cons-2017-hl-q4-c-concrete-ease", "kind": "point", "verbatim": "Concrete block construction — Ease of construction", "marks": 3, "contextNote": "Relevant points include readily available skilled trades, standard components and largely on-site construction." },
+              { "id": "cons-2017-hl-q4-c-hemp-environment", "kind": "point", "verbatim": "Timber frame and hemp-lime construction — Environmental consideration", "marks": 3, "contextNote": "Relevant points include sustainable fast-growing hemp, low manufacturing energy, carbon storage and breathability, balanced against sourcing, licensing and airtightness." },
+              { "id": "cons-2017-hl-q4-c-hemp-ease", "kind": "point", "verbatim": "Timber frame and hemp-lime construction — Ease of construction", "marks": 3, "contextNote": "Relevant points include familiar timber skills, simple on-site mixing and quick enclosure, balanced against scarce skills and materials." }
+            ]
+          },
+          {
+            "id": "timber-and-hemp-lime",
+            "label": "Timber frame + hemp-lime",
+            "rows": [
+              { "id": "cons-2017-hl-q4-c-timber-environment", "kind": "point", "verbatim": "Timber frame construction — Environmental consideration", "marks": 3, "contextNote": "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts." },
+              { "id": "cons-2017-hl-q4-c-timber-ease", "kind": "point", "verbatim": "Timber frame construction — Ease of construction", "marks": 3, "contextNote": "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands." },
+              { "id": "cons-2017-hl-q4-c-hemp-environment", "kind": "point", "verbatim": "Timber frame and hemp-lime construction — Environmental consideration", "marks": 3, "contextNote": "Relevant points include sustainable fast-growing hemp, low manufacturing energy, carbon storage and breathability, balanced against sourcing, licensing and airtightness." },
+              { "id": "cons-2017-hl-q4-c-hemp-ease", "kind": "point", "verbatim": "Timber frame and hemp-lime construction — Ease of construction", "marks": 3, "contextNote": "Relevant points include familiar timber skills, simple on-site mixing and quick enclosure, balanced against scarce skills and materials." }
+            ]
+          }
+        ]
+      }
+    },
+    "cons-2017-hl-q6-b": {
+      "reason": "The scheme awards three notes and three sketches at 5 marks each; the parsed six-of-fourteen list let students claim six isolated facts instead of completing three designed features.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "cons-2017-hl-q6-b-notes",
+            "kind": "anyN",
+            "verbatim": "Three eco-friendly design features — Notes",
+            "marks": 15,
+            "openList": true,
+            "contextNote": "Choose three distinct features shown in the supplied design. Each selected feature needs a detailed note and is worth 5 marks.",
+            "group": {
+              "claimMax": 3,
+              "perOption": 5,
+              "options": [
+                "the house - except for foundations, ground floor, chimney stack and internal plasterboard for fire-proofing - is entirely constructed from wood",
+                "wood is renewable, carbon neutral and has low embodied energy",
+                "simple building form appropriate to eco-friendly design",
+                "the native larch finish on the exterior, is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction",
+                "larch cladding is naturally durable and needs no preservatives – can be flame charred as a finish",
+                "reduced transport costs as larch is available in Ireland and does not have to be imported or transported long distances",
+                "lightweight timber-frame building needs smaller foundations – eco-friendly",
+                "the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere",
+                "the large areas of glazing, which are south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating",
+                "there are no windows to the north, thus reducing heat loss and helping conserve energy",
+                "external storage space to the north, at rear, builds a buffer zone to outside, reducing heat loss through the cold north facing external walls",
+                "the stove and flue are placed against an inner chimney stack of high thermal mass, increasing the storage of heat and keeping the heat within the fabric of the house",
+                "wood burning stoves are carbon neutral and are about 70% efficient",
+                "purposely designed open-plan, naturally lighted layout with no corridors, all space is useable, no wasted floor area – 1.5 storeys for maximum use of upper floor area"
+              ]
+            }
+          },
+          { "id": "cons-2017-hl-q6-b-sketches", "kind": "criterion", "verbatim": "Three eco-friendly features — Sketches", "marks": 15, "contextNote": "The scheme awards 5 marks for the freehand sketch accompanying each of the three selected features. Claim this only when all three sketches communicate their design details." }
+        ]
+      }
+    },
+    "cons-2017-hl-q6-c": {
+      "reason": "The scheme awards a note and a sketch at 5 marks each for each of two added features; the parsed four-of-five heading list did not represent that rubric.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 20,
+        "rows": [
+          {
+            "id": "cons-2017-hl-q6-c-notes",
+            "kind": "anyN",
+            "verbatim": "Two additional low-operating-cost features — Notes",
+            "marks": 10,
+            "openList": true,
+            "contextNote": "Choose two distinct additions and discuss each in a detailed note; each note is worth 5 marks.",
+            "group": {
+              "claimMax": 2,
+              "perOption": 5,
+              "options": [
+                "Adding to the building fabric",
+                "Install evacuated tubes",
+                "Install photovoltaic (PV) panels to generate on-site renewable energy",
+                "Wind generator to generate electricity from the wind",
+                "Rainwater harvesting"
+              ]
+            }
+          },
+          { "id": "cons-2017-hl-q6-c-sketches", "kind": "criterion", "verbatim": "Two additional features — Sketches", "marks": 10, "contextNote": "The scheme awards 5 marks for the freehand sketch accompanying each selected addition. Claim this only when both sketches communicate their design details." }
+        ]
+      }
+    },
+    "cons-2017-hl-q9-a": {
+      "reason": "The scheme has five compulsory 4-mark criteria. The parser turned them into an any-five list headed by only the final criterion, obscuring the sketch, note, reinforcement and dimensions requirements.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 20,
+        "rows": [
+          { "id": "cons-2017-hl-q9-a-sketch", "kind": "criterion", "verbatim": "Sketch of foundation", "marks": 4, "contextNote": "Show the typical reinforced-concrete strip-foundation detail for the 400 mm cavity wall." },
+          { "id": "cons-2017-hl-q9-a-note", "kind": "point", "verbatim": "Foundation design detailing — Note", "marks": 4, "contextNote": "Annotate the foundation construction shown in the sketch." },
+          { "id": "cons-2017-hl-q9-a-reinforcement", "kind": "point", "verbatim": "Position of reinforcement", "marks": 4, "contextNote": "Typical details include 12 mm longitudinal and transverse mild-steel bars, tied at junctions, with 50 mm concrete cover." },
+          { "id": "cons-2017-hl-q9-a-dimensions", "kind": "point", "verbatim": "Three typical dimensions", "marks": 4, "contextNote": "Examples include a trench 1000–1200 mm below ground, width about three times the wall thickness (1200 mm), 12 mm bars and 50 mm cover." },
+          { "id": "cons-2017-hl-q9-a-reasons", "kind": "point", "verbatim": "Reasons for dimensions specified", "marks": 4, "contextNote": "Relate the depth to the frost line and solid ground, the width to spreading load and working space, and cover to protecting reinforcement from water and corrosion." }
+        ]
+      }
+    },
+    "cons-2017-ol-q6-b": {
+      "reason": "All three named PPE items are compulsory and each earns 6 marks for sketch quality plus 4 for its note and reason. Parallel sketch and reason checklists retain all six allocations without presenting six separate panels.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 30,
+        "rows": [
+          { "id": "cons-2017-ol-q6-b-sketches", "kind": "anyN", "verbatim": "PPE items — Quality of sketches", "marks": 18, "contextNote": "Each of the three sketches is marked excellent 6, good 4 or fair 2.", "group": { "claimMax": 3, "perOption": 6, "options": ["Hard hat", "Safety boots", "High visibility vest"] } },
+          { "id": "cons-2017-ol-q6-b-reasons", "kind": "anyN", "verbatim": "PPE items — Notes and specific reasons", "marks": 12, "contextNote": "Give the matching safety reason for each of the three items.", "group": { "claimMax": 3, "perOption": 4, "options": ["The wearing of helmets is mandatory for workers and visitors to a site", "The safety boots provide extra safety for workers on the site", "High visibility vest is very important when machinery is being used on the site"] } }
+        ]
+      }
+    },
+    "cons-2017-ol-q9-c": {
+      "reason": "The parser crossed into the separate practical-test booklet and attached eight project-assessment rows to a ten-mark patio question. The corrected menu contains only the two-of-eight advantages printed in the theory-paper scheme.",
+      "set": {
+        "tariffModel": { "kind": "bestNofParts", "answer": 2, "ofParts": 8, "perPart": 5 },
+        "totalMarks": 10,
+        "rows": [
+          { "id": "cons-2017-ol-q9-c-advantages", "kind": "anyN", "verbatim": "Two advantages of an external patio", "marks": 10, "openList": true, "group": { "claimMax": 2, "perOption": 5, "options": ["It extends the area of the house", "Provides a level surface for people with mobility issues", "Patio provides an open external play area for children", "Provides a place to eat, sit-out, relax and entertain in an outdoor space", "Decking furniture may be used for relaxation", "Ideal for summer dining", "Brings the occupants close to nature - biophilia", "It adds to the value of the house"] } }
+        ]
+      }
+    },
+    "cons-2018-ol-q6-c": {
+      "reason": "The scheme awards 4 marks for naming one of three PPE items and 5 for its matching reason. Three explicit answer routes replace the lost item mark and eye-protection-only answer.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 9,
+        "rows": [
+          { "id": "cons-2018-ol-q6-c-eye-item", "kind": "point", "verbatim": "Eye protection", "marks": 4 },
+          { "id": "cons-2018-ol-q6-c-eye-reason", "kind": "anyN", "verbatim": "Eye protection — Reason", "marks": 5, "openList": true, "group": { "claimMax": 1, "perOption": 5, "options": ["This is to protect the eyes from sharp objects", "To protect the eyes from grit and dust", "To protect the eyes when cutting concrete or steel", "Protects the eyes when using an angle grinder or when welding"] } }
+        ],
+        "answerVariants": [
+          {
+            "id": "eye-protection",
+            "label": "Eye protection",
+            "rows": [
+              { "id": "cons-2018-ol-q6-c-eye-item", "kind": "point", "verbatim": "Eye protection", "marks": 4 },
+              { "id": "cons-2018-ol-q6-c-eye-reason", "kind": "anyN", "verbatim": "Eye protection — Reason", "marks": 5, "openList": true, "group": { "claimMax": 1, "perOption": 5, "options": ["This is to protect the eyes from sharp objects", "To protect the eyes from grit and dust", "To protect the eyes when cutting concrete or steel", "Protects the eyes when using an angle grinder or when welding"] } }
+            ]
+          },
+          {
+            "id": "ear-protection",
+            "label": "Ear protection",
+            "rows": [
+              { "id": "cons-2018-ol-q6-c-ear-item", "kind": "point", "verbatim": "Ear protection", "marks": 4 },
+              { "id": "cons-2018-ol-q6-c-ear-reason", "kind": "anyN", "verbatim": "Ear protection — Reason", "marks": 5, "openList": true, "group": { "claimMax": 1, "perOption": 5, "options": ["To protect the ears from constant loud noise", "Protect the ears when using drilling equipment", "Protect the ears when noise is continuous at level 85-90 decibels"] } }
+            ]
+          },
+          {
+            "id": "safety-gloves",
+            "label": "Safety gloves",
+            "rows": [
+              { "id": "cons-2018-ol-q6-c-gloves-item", "kind": "point", "verbatim": "Safety gloves", "marks": 4 },
+              { "id": "cons-2018-ol-q6-c-gloves-reason", "kind": "anyN", "verbatim": "Safety gloves — Reason", "marks": 5, "openList": true, "group": { "claimMax": 1, "perOption": 5, "options": ["Working with sharp edges e.g. glass", "Working with hot bitumen on flat roofs", "Working with pneumatic drills or vibrating machinery", "Working with corrosive or toxic equipment"] } }
+            ]
+          }
+        ]
+      }
+    },
+    "cons-2018-ol-q9-c-advantage": {
+      "reason": "Replace the anonymous row heading with the actual examinable point while retaining every accepted scheme answer.",
+      "set": {
+        "rows": [
+          { "id": "cons-2018-ol-q9-c-advantage-r1", "kind": "anyN", "verbatim": "Advantages of fitting glazed double doors", "marks": 4, "openList": true, "contextNote": "Discuss one supported advantage.", "group": { "claimMax": 1, "perOption": 4, "options": ["The double doors open up the area", "More space available", "Make the rooms feel bigger", "They create a private area when needed", "They create a quiet area as required", "People arriving into one section will be visible", "Allows sunlight / daylight into the both rooms", "Allows wheelchair accessibility between both rooms"] } }
+        ]
+      }
+    },
+    "cons-2019-hl-q8-c": {
+      "reason": "The scheme supplies three complete alternative wastewater systems. Named routes now pair the 8-mark notes and 8-mark sketch instead of displaying two generic labels with no system content.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 16,
+        "rows": [
+          { "id": "cons-2019-hl-q8-c-raised-notes", "kind": "point", "verbatim": "Raised percolation areas — Notes", "marks": 8, "contextNote": "Where site conditions suit, mound additional topsoil above existing ground and lay the percolation pipes within the raised element." },
+          { "id": "cons-2019-hl-q8-c-raised-sketch", "kind": "criterion", "verbatim": "Raised percolation areas — Sketch", "marks": 8, "contextNote": "Show the dwelling wastewater route and the raised/mounded percolation arrangement clearly." }
+        ],
+        "answerVariants": [
+          { "id": "raised-percolation", "label": "Raised percolation area", "rows": [
+            { "id": "cons-2019-hl-q8-c-raised-notes", "kind": "point", "verbatim": "Raised percolation areas — Notes", "marks": 8, "contextNote": "Where site conditions suit, mound additional topsoil above existing ground and lay the percolation pipes within the raised element." },
+            { "id": "cons-2019-hl-q8-c-raised-sketch", "kind": "criterion", "verbatim": "Raised percolation areas — Sketch", "marks": 8, "contextNote": "Show the dwelling wastewater route and the raised/mounded percolation arrangement clearly." }
+          ] },
+          { "id": "constructed-wetland", "label": "Constructed wetland", "rows": [
+            { "id": "cons-2019-hl-q8-c-wetland-notes", "kind": "point", "verbatim": "Constructed Wetlands — Notes", "marks": 8, "contextNote": "Describe a gravel-, sand- or soil-based horizontal/vertical-flow reed-bed filter system treating wastewater from a septic tank." },
+            { "id": "cons-2019-hl-q8-c-wetland-sketch", "kind": "criterion", "verbatim": "Constructed Wetlands — Sketch", "marks": 8, "contextNote": "Show the septic-tank outflow entering and passing through the constructed wetland/filter bed." }
+          ] },
+          { "id": "peat-filter", "label": "Peat filter system", "rows": [
+            { "id": "cons-2019-hl-q8-c-peat-notes", "kind": "point", "verbatim": "Peat filter system — Notes", "marks": 8, "contextNote": "Describe module units filled with peat, including distribution, treatment medium and drain; effluent is dosed on top and treated as it percolates through." },
+            { "id": "cons-2019-hl-q8-c-peat-sketch", "kind": "criterion", "verbatim": "Peat filter system — Sketch", "marks": 8, "contextNote": "Show the distribution system, peat treatment medium, drainage and direction of wastewater flow." }
+          ] }
+        ]
+      }
+    },
+    "cons-2019-hl-q10-b": {
+      "reason": "The candidate develops three of the six considerations selected in part (a), with 4 marks for each note and 4 for each sketch. The parser incorrectly displayed all six considerations as compulsory 4-mark rows.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 24,
+        "rows": [
+          { "id": "cons-2019-hl-q10-b-notes", "kind": "anyN", "verbatim": "Three selected retrofit upgrades — Notes", "marks": 12, "openList": true, "contextNote": "Choose the same three considerations you specified in part (a); each developed retrofit note is worth 4 marks.", "group": { "claimMax": 3, "perOption": 4, "options": ["Increase the levels of insulation in the walls, roof and floor", "Install a highly efficient heat recovery and ventilation system with an outlet to supply or extract air from all rooms. This will reduce heat loss, moisture content and the energy consumption of the building", "Seal any holes in the fabric such as pipes penetrating the external walls, joints between wall/ceiling/floor surfaces, openings around electrical services etc", "The heating demand requirement should be ≤ 25 kWh/(m2a)", "solar photovoltaic cells to generate electricity for domestic consumption", "Install new windows on the south facing wall of the house"] } },
+          { "id": "cons-2019-hl-q10-b-sketches", "kind": "anyN", "verbatim": "Three selected retrofit upgrades — Sketches", "marks": 12, "contextNote": "Provide a communicating freehand sketch for each of the same three selected retrofit considerations.", "group": { "claimMax": 3, "perOption": 4, "options": ["Thermal efficiency of the external envelope of the building", "Appropriate ventilation using a heat recovery system", "Airtightness of the building", "Optimum levels of thermal comfort for occupants", "Install renewable energy systems", "Maximise solar gains"] } }
+        ]
+      }
+    },
+    "cons-2019-ol-q3-b": {
+      "reason": "The scheme has two compulsory 3-mark entries—location and reason—not an any-two menu headed only 'Reason'.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "totalMarks": 6,
+        "rows": [
+          { "id": "cons-2019-ol-q3-b-location", "kind": "point", "verbatim": "The valve is fitted close to the cistern", "marks": 3 },
+          { "id": "cons-2019-ol-q3-b-reason", "kind": "point", "verbatim": "The valve is fitted within easy reach to operate the valve", "marks": 3 }
+        ]
+      }
+    },
+    "cons-2025-ol-q7-c-advantage": {
+      "reason": "Replace the generic 'Advantage' heading with the specific examinable idea while retaining the scheme's accepted answers.",
+      "set": {
+        "rows": [
+          { "id": "cons-2025-ol-q7-c-advantage-r1", "kind": "anyN", "verbatim": "Advantages of a separate garden office", "marks": 6, "openList": true, "contextNote": "Discuss one supported advantage.", "group": { "claimMax": 1, "perOption": 6, "options": ["Creates a clear boundary between work and home life", "Easier to concentrate when away from household noise and interruptions.", "A garden office can increase the value of your home", "Lessens the impact on the household", "The office does not take up space within the house"] } }
+        ]
+      }
+    }
+  },
+  "home-economics": {
+    "he-2024-hl-sc-q2b-wool": {
+      "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity, not four exam questions.",
+      "set": {
+        "questionRef": "2024 HL Section C E2 Q2(b)",
+        "conceptId": "natural-fibre-profile"
+      },
+      "answerVariantSources": [
+        {
+          "cardId": "he-2024-hl-sc-q2b-wool",
+          "id": "wool",
+          "label": "Wool"
+        },
+        {
+          "cardId": "he-2024-hl-sc-q2b-silk",
+          "id": "silk",
+          "label": "Silk"
+        },
+        {
+          "cardId": "he-2024-hl-sc-q2b-cotton",
+          "id": "cotton",
+          "label": "Cotton"
+        },
+        {
+          "cardId": "he-2024-hl-sc-q2b-linen",
+          "id": "linen",
+          "label": "Linen"
+        }
+      ]
+    },
+    "he-2024-hl-sc-q2b-silk": {
+      "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity, not four exam questions. Progress now belongs to he-2024-hl-sc-q2b-wool.",
+      "drop": true,
+      "replacementId": "he-2024-hl-sc-q2b-wool"
+    },
+    "he-2024-hl-sc-q2b-cotton": {
+      "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity, not four exam questions. Progress now belongs to he-2024-hl-sc-q2b-wool.",
+      "drop": true,
+      "replacementId": "he-2024-hl-sc-q2b-wool"
+    },
+    "he-2024-hl-sc-q2b-linen": {
+      "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity, not four exam questions. Progress now belongs to he-2024-hl-sc-q2b-wool.",
+      "drop": true,
+      "replacementId": "he-2024-hl-sc-q2b-wool"
+    },
+    "he-2023-hl-sc-q2b-wool-nylon": {
+      "reason": "The paper asks for one blended fabric. The two published examples are selectable scheme routes within one practice identity.",
+      "set": {
+        "questionRef": "2023 HL Section C E2 Q2(b)",
+        "conceptId": "blended-fabric-profile"
+      },
+      "answerVariantSources": [
+        {
+          "cardId": "he-2023-hl-sc-q2b-wool-nylon",
+          "id": "wool-nylon",
+          "label": "Wool and nylon"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q2b-cotton-polyester",
+          "id": "cotton-polyester",
+          "label": "Cotton and polyester"
+        }
+      ]
+    },
+    "he-2023-hl-sc-q2b-cotton-polyester": {
+      "reason": "The paper asks for one blended fabric. The two published examples are selectable scheme routes within one practice identity. Progress now belongs to he-2023-hl-sc-q2b-wool-nylon.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q2b-wool-nylon"
+    },
+    "he-2023-hl-sc-q4aii-boiling": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions.",
+      "set": {
+        "questionRef": "2023 HL Section C Q4(a)(ii)",
+        "conceptId": "evaluating-one-method-of-cooking-meat"
+      },
+      "answerVariantSources": [
+        {
+          "cardId": "he-2023-hl-sc-q4aii-boiling",
+          "id": "boiling",
+          "label": "Boiling"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aii-poaching",
+          "id": "poaching",
+          "label": "Poaching"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aii-steaming",
+          "id": "steaming",
+          "label": "Steaming"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aii-stewing",
+          "id": "stewing",
+          "label": "Stewing"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aii-braising",
+          "id": "braising",
+          "label": "Braising"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aii-pressure-cooking",
+          "id": "pressure-cooking",
+          "label": "Pressure cooking"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aii-roasting",
+          "id": "roasting",
+          "label": "Roasting"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aii-grilling-barbecuing",
+          "id": "grilling-barbecuing",
+          "label": "Grilling / barbecuing"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aii-frying",
+          "id": "frying",
+          "label": "Frying"
+        }
+      ]
+    },
+    "he-2023-hl-sc-q4aii-poaching": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aii-boiling"
+    },
+    "he-2023-hl-sc-q4aii-steaming": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aii-boiling"
+    },
+    "he-2023-hl-sc-q4aii-stewing": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aii-boiling"
+    },
+    "he-2023-hl-sc-q4aii-braising": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aii-boiling"
+    },
+    "he-2023-hl-sc-q4aii-pressure-cooking": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aii-boiling"
+    },
+    "he-2023-hl-sc-q4aii-roasting": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aii-boiling"
+    },
+    "he-2023-hl-sc-q4aii-grilling-barbecuing": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aii-boiling"
+    },
+    "he-2023-hl-sc-q4aii-frying": {
+      "reason": "The printed task asks for one cooking method. Nine scheme examples are selectable answer routes, not nine separately scheduled questions. Progress now belongs to he-2023-hl-sc-q4aii-boiling.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aii-boiling"
+    },
+    "he-2023-hl-sc-q4aiii-glass": {
+      "reason": "The printed task asks for one packaging material. The four scheme examples are answer routes within one practice identity.",
+      "set": {
+        "questionRef": "2023 HL Section C Q4(a)(iii)",
+        "conceptId": "packaging-perishable-foods"
+      },
+      "answerVariantSources": [
+        {
+          "cardId": "he-2023-hl-sc-q4aiii-glass",
+          "id": "glass",
+          "label": "Glass"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aiii-metal",
+          "id": "metal",
+          "label": "Metal"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aiii-paper",
+          "id": "paper",
+          "label": "Paper"
+        },
+        {
+          "cardId": "he-2023-hl-sc-q4aiii-plastic",
+          "id": "plastic",
+          "label": "Plastic"
+        }
+      ]
+    },
+    "he-2023-hl-sc-q4aiii-metal": {
+      "reason": "The printed task asks for one packaging material. The four scheme examples are answer routes within one practice identity. Progress now belongs to he-2023-hl-sc-q4aiii-glass.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aiii-glass"
+    },
+    "he-2023-hl-sc-q4aiii-paper": {
+      "reason": "The printed task asks for one packaging material. The four scheme examples are answer routes within one practice identity. Progress now belongs to he-2023-hl-sc-q4aiii-glass.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aiii-glass"
+    },
+    "he-2023-hl-sc-q4aiii-plastic": {
+      "reason": "The printed task asks for one packaging material. The four scheme examples are answer routes within one practice identity. Progress now belongs to he-2023-hl-sc-q4aiii-glass.",
+      "drop": true,
+      "replacementId": "he-2023-hl-sc-q4aiii-glass"
+    },
+    "he-2024-ol-sc-q2b-linen": {
+      "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity.",
+      "set": {
+        "questionRef": "2024 OL Section C E2 Q2(b)",
+        "conceptId": "natural-fibre-profile-ol"
+      },
+      "answerVariantSources": [
+        {
+          "cardId": "he-2024-ol-sc-q2b-linen",
+          "id": "linen",
+          "label": "Linen"
+        },
+        {
+          "cardId": "he-2024-ol-sc-q2b-cotton",
+          "id": "cotton",
+          "label": "Cotton"
+        },
+        {
+          "cardId": "he-2024-ol-sc-q2b-wool",
+          "id": "wool",
+          "label": "Wool"
+        },
+        {
+          "cardId": "he-2024-ol-sc-q2b-silk",
+          "id": "silk",
+          "label": "Silk"
+        }
+      ]
+    },
+    "he-2024-ol-sc-q2b-cotton": {
+      "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity. Progress now belongs to he-2024-ol-sc-q2b-linen.",
+      "drop": true,
+      "replacementId": "he-2024-ol-sc-q2b-linen"
+    },
+    "he-2024-ol-sc-q2b-wool": {
+      "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity. Progress now belongs to he-2024-ol-sc-q2b-linen.",
+      "drop": true,
+      "replacementId": "he-2024-ol-sc-q2b-linen"
+    },
+    "he-2024-ol-sc-q2b-silk": {
+      "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity. Progress now belongs to he-2024-ol-sc-q2b-linen.",
+      "drop": true,
+      "replacementId": "he-2024-ol-sc-q2b-linen"
+    },
+    "he-2024-ol-sc-q4aii-pasteurisation": {
+      "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity.",
+      "set": {
+        "questionRef": "2024 OL Section C Q4(a)(ii)",
+        "conceptId": "milk-heat-treatment"
+      },
+      "answerVariantSources": [
+        {
+          "cardId": "he-2024-ol-sc-q4aii-pasteurisation",
+          "id": "pasteurisation",
+          "label": "Pasteurisation"
+        },
+        {
+          "cardId": "he-2024-ol-sc-q4aii-sterilisation",
+          "id": "sterilisation",
+          "label": "Sterilisation"
+        },
+        {
+          "cardId": "he-2024-ol-sc-q4aii-uht",
+          "id": "uht",
+          "label": "Ultra-heat treatment (UHT)"
+        },
+        {
+          "cardId": "he-2024-ol-sc-q4aii-condensed",
+          "id": "condensed",
+          "label": "Condensed milk"
+        },
+        {
+          "cardId": "he-2024-ol-sc-q4aii-evaporated",
+          "id": "evaporated",
+          "label": "Evaporated milk"
+        }
+      ]
+    },
+    "he-2024-ol-sc-q4aii-sterilisation": {
+      "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity. Progress now belongs to he-2024-ol-sc-q4aii-pasteurisation.",
+      "drop": true,
+      "replacementId": "he-2024-ol-sc-q4aii-pasteurisation"
+    },
+    "he-2024-ol-sc-q4aii-uht": {
+      "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity. Progress now belongs to he-2024-ol-sc-q4aii-pasteurisation.",
+      "drop": true,
+      "replacementId": "he-2024-ol-sc-q4aii-pasteurisation"
+    },
+    "he-2024-ol-sc-q4aii-condensed": {
+      "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity. Progress now belongs to he-2024-ol-sc-q4aii-pasteurisation.",
+      "drop": true,
+      "replacementId": "he-2024-ol-sc-q4aii-pasteurisation"
+    },
+    "he-2024-ol-sc-q4aii-evaporated": {
+      "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity. Progress now belongs to he-2024-ol-sc-q4aii-pasteurisation.",
+      "drop": true,
+      "replacementId": "he-2024-ol-sc-q4aii-pasteurisation"
+    }
+  },
+  "english": {
+    "english-2022-ol-p1-t1-a-iii-a": {
+      "reason": "The prompt is printed identically after Texts 1, 2 and 3 but is source-independent; one practice identity prevents the same task appearing three times.",
+      "set": {
+        "questionRef": "2022 OL Paper 1 Text 1 QA(iii)(a)"
+      }
+    },
+    "english-2022-ol-p1-t2-a-iii-a": {
+      "reason": "The source-independent common prompt is already represented by english-2022-ol-p1-t1-a-iii-a.",
+      "drop": true,
+      "replacementId": "english-2022-ol-p1-t1-a-iii-a"
+    },
+    "english-2022-ol-p1-t3-a-iii-a": {
+      "reason": "The source-independent common prompt is already represented by english-2022-ol-p1-t1-a-iii-a.",
+      "drop": true,
+      "replacementId": "english-2022-ol-p1-t1-a-iii-a"
+    },
+    "english-2022-ol-p1-t1-a-iii-b": {
+      "reason": "The prompt is printed identically after Texts 1, 2 and 3 but is source-independent; one practice identity prevents the same task appearing three times.",
+      "set": {
+        "questionRef": "2022 OL Paper 1 Text 1 QA(iii)(b)"
+      }
+    },
+    "english-2022-ol-p1-t2-a-iii-b": {
+      "reason": "The source-independent common prompt is already represented by english-2022-ol-p1-t1-a-iii-b.",
+      "drop": true,
+      "replacementId": "english-2022-ol-p1-t1-a-iii-b"
+    },
+    "english-2022-ol-p1-t3-a-iii-b": {
+      "reason": "The source-independent common prompt is already represented by english-2022-ol-p1-t1-a-iii-b.",
+      "drop": true,
+      "replacementId": "english-2022-ol-p1-t1-a-iii-b"
+    },
+    "english-2023-ol-p1-t1-a-iii-a": {
+      "reason": "The prompt is printed identically after Texts 1, 2 and 3 but is source-independent; one practice identity prevents the same task appearing three times.",
+      "set": {
+        "questionRef": "2023 OL Paper 1 Text 1 QA(iii)(a)"
+      }
+    },
+    "english-2023-ol-p1-t2-a-iii-a": {
+      "reason": "The source-independent common prompt is already represented by english-2023-ol-p1-t1-a-iii-a.",
+      "drop": true,
+      "replacementId": "english-2023-ol-p1-t1-a-iii-a"
+    },
+    "english-2023-ol-p1-t3-a-iii-a": {
+      "reason": "The source-independent common prompt is already represented by english-2023-ol-p1-t1-a-iii-a.",
+      "drop": true,
+      "replacementId": "english-2023-ol-p1-t1-a-iii-a"
+    },
+    "english-2024-ol-p1-t1-a-iii-a": {
+      "reason": "The prompt is printed identically after Texts 1, 2 and 3 but is source-independent; one practice identity prevents the same task appearing three times.",
+      "set": {
+        "questionRef": "2024 OL Paper 1 Text 1 QA(iii)(a)"
+      }
+    },
+    "english-2024-ol-p1-t2-a-iii-a": {
+      "reason": "The source-independent common prompt is already represented by english-2024-ol-p1-t1-a-iii-a.",
+      "drop": true,
+      "replacementId": "english-2024-ol-p1-t1-a-iii-a"
+    },
+    "english-2024-ol-p1-t3-a-iii-a": {
+      "reason": "The source-independent common prompt is already represented by english-2024-ol-p1-t1-a-iii-a.",
+      "drop": true,
+      "replacementId": "english-2024-ol-p1-t1-a-iii-a"
+    },
+    "english-2025-ol-p1-t1-a-iii-b": {
+      "reason": "The prompt is printed identically after Texts 1, 2 and 3 but is source-independent; one practice identity prevents the same task appearing three times.",
+      "set": {
+        "questionRef": "2025 OL Paper 1 Text 1 QA(iii)(b)"
+      }
+    },
+    "english-2025-ol-p1-t2-a-iii-b": {
+      "reason": "The source-independent common prompt is already represented by english-2025-ol-p1-t1-a-iii-b.",
+      "drop": true,
+      "replacementId": "english-2025-ol-p1-t1-a-iii-b"
+    },
+    "english-2025-ol-p1-t3-a-iii-b": {
+      "reason": "The source-independent common prompt is already represented by english-2025-ol-p1-t1-a-iii-b.",
+      "drop": true,
+      "replacementId": "english-2025-ol-p1-t1-a-iii-b"
+    }
+  },
+  "maths": {
+    "maths-2023-hl-p2-q4-ii": {
+      "reason": "The paper prints this as part (a)(ii). The scheme parser dropped its parent letter and merged the neighbouring parts into the prompt; this correction restores the exact self-contained task.",
+      "set": {
+        "questionRef": "2023 HL Paper 2 Q4(a)(ii)",
+        "questionText": "The circle c has equation (x − h)² + (y + 3)² = 12, where h ∈ ℝ. The perpendicular distance from the line x − 4y + 7 = 0 to the centre of the circle c is 5 units. Work out the two possible values of h. Give each answer in surd form."
+      }
+    },
+    "maths-2023-hl-p2-q8-ii": {
+      "reason": "The paper prints this as part (b)(ii). The scheme parser dropped its parent letter and substituted the asks from parts (a) and (b)(i); this correction restores the data and exact hypothesis-test task.",
+      "set": {
+        "questionRef": "2023 HL Paper 2 Q8(b)(ii)",
+        "questionText": "In Ireland, players’ word-game scores are approximately normally distributed with a mean of 3·87 and a standard deviation of 0·36. A random sample of 64 Galway players has a mean score of 3·74. A local newspaper claims that Galway players have a different mean score to players in Ireland. Carry out a hypothesis test at the 5% level of significance to test this claim. State your null hypothesis, alternative hypothesis, conclusion, and a reason for your conclusion."
+      }
+    }
+  },
+  "computer-science": {
+    "cs-2021-ol-q4": {
+      "reason": "The printed prompt explicitly refers to Figure 1. The inspected crop now carries the official warehouse-drone image, while the duplicated parser stem is removed.",
+      "set": {
+        "stem": null,
+        "figureKey": "computer-science-2021-OL-paper-q4-figure"
+      }
+    },
+    "cs-2021-ol-q6": {
+      "reason": "The parser lost the actual ‘What is HTTP?’ line and all four tick-box choices. The prompt is restored verbatim and the inspected official choice layout is attached before reveal.",
+      "set": {
+        "stem": null,
+        "questionText": "(a) Answer the following question by putting a tick (✓) in the relevant box. Tick one box only. What is HTTP? (b) Describe one difference between the World Wide Web (WWW) and the Internet.",
+        "figureKey": "computer-science-2021-OL-paper-q6-figure"
+      }
+    },
+    "cs-2023-hl-q10": {
+      "reason": "The unsorted list was flattened into the prose stem. It is now shown through an inspected crop of Figure 5 and the stem retains only the printed explanatory context.",
+      "set": {
+        "stem": "Quicksort is widely recognised as one of the most efficient sorting algorithms. It works by recursively partitioning a list about one of the elements known as the pivot. Consider the unsorted list of integers shown in Figure 5 below and answer the questions that follow.",
+        "figureKey": "computer-science-2023-HL-paper-q10-figure"
+      }
+    },
+    "cs-2022-hl-q15-c-i": {
+      "reason": "The trace-table task depended on code and a partially completed table which the parser had flattened together with end-of-booklet furniture. The inspected official combined crop now carries both in their published layout.",
+      "set": {
+        "stem": null,
+        "figureKey": "computer-science-2022-HL-paper-q15c-trace"
+      }
+    },
+    "cs-2022-hl-q15-c-ii": {
+      "reason": "The question asks about isbn1 in the preceding program. The inspected official program crop replaces the parser's code-and-booklet text dump.",
+      "set": {
+        "stem": null,
+        "figureKey": "computer-science-2022-HL-paper-q15c-code"
+      }
+    },
+    "cs-2022-hl-q15-c-iii": {
+      "reason": "The operator question depends on the preceding program. The inspected official program crop replaces the parser's code-and-booklet text dump.",
+      "set": {
+        "stem": null,
+        "figureKey": "computer-science-2022-HL-paper-q15c-code"
+      }
+    },
+    "cs-2022-ol-q16": {
+      "reason": "The whole programming task is intentionally grouped with one shared source-code crop, but the parser also flattened that code into the prompt after the seven asks. The prompt now keeps every printed ask and description once, in paper order, while the inspected crop carries the code.",
+      "set": {
+        "questionText": "(a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. The program above is to simulate an automated shop. The aim of the program is to accept the name of the user and then to ask the user to choose what item they would like to buy. The user will select the number of the item they wish to buy and the program outputs a message confirming the item they chose. (i) Insert a comment in an appropriate place to say “user enters first name”. (ii) Amend the program to ask for and accept the user's surname. Store the user’s surname in a variable called surname. (iii) Amend the program so that the user’s first name and their surname are printed when they are asked to select their item. (iv) Amend the program so that the items 2 = Ruler and 3 = Pen appear in the shopping list under the item 1 = Book. (v) Amend the program so that a dashed line appears above and below the available items. (vi) Amend the program so that the correct message is printed if the user purchases a ruler or pen. (vii) Amend the program to deal with invalid number entries. If the user enters any number other than the numbers 1, 2 or 3 they should be presented with an error message."
+      }
+    },
+    "cs-2021-hl-q14-b-iv": {
+      "reason": "The table parser stopped the marking point at a wrapped line and left doubled mathematical-letter glyphs. The complete SEC strategy is restored; the shared glyph repair renders the variables once.",
+      "set": {
+        "rows": [
+          {
+            "id": "r-1",
+            "kind": "point",
+            "verbatim": "A winning strategy from state (𝒏𝒏, 𝒎𝒎) where 𝒏𝒏≠𝒎𝒎 would be to even the piles. Leave (n, n) or (m, m). For 𝒎𝒎> 𝒏𝒏 this means take 𝒎𝒎−𝒏𝒏 matchsticks. For 𝒎𝒎< 𝒏𝒏 take 𝒏𝒏−𝒎𝒎 matchsticks.",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    "cs-2022-ol-q15-c-ii": {
+      "reason": "The task asks for any three improvements at 2 marks each. Six scheme examples are a bounded choice pool, not six required 1-mark rows.",
+      "set": {
+        "rows": [
+          {
+            "id": "r-improvements",
+            "kind": "anyN",
+            "verbatim": "Any three website-design improvements",
+            "marks": null,
+            "openList": true,
+            "group": {
+              "claimMax": 3,
+              "perOption": 2,
+              "options": [
+                "Spread content across all the webpage",
+                "Be more consistent with text size.",
+                "Use more colours that complement each other.",
+                "Make the website more accessible.",
+                "Add in a navigation bar with links",
+                "Place search bar in more prominent place on the site."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cs-2023-hl-q14-a-v": {
+      "reason": "The task asks for two CPU-performance factors at 3 marks each. The scheme's examples are a bounded open choice pool, not six required 1-mark rows.",
+      "set": {
+        "stem": null,
+        "rows": [
+          {
+            "id": "r-factors",
+            "kind": "anyN",
+            "verbatim": "Any two CPU-performance factors",
+            "marks": null,
+            "openList": true,
+            "group": {
+              "claimMax": 2,
+              "perOption": 3,
+              "options": [
+                "Number of cores. A processing unit within a CPU is known as a core. Each core is capable of fetching, decoding and executing its own instructions. The more cores a CPU has, the greater the number of instructions it can process in a given space of time.",
+                "Clock speed. Clock speed is the number of pulses the CPU’s clock generates per second. It is measured in hertz. The more pulses per second, the more fetch-decode-execute cycles that can be performed and the more instructions that are processed in a given space of time.",
+                "Cache. A cache is a fast, relatively small capacity set of locations that is built directly within the processor. Cache is used to store the instructions and data that the processor is most likely to need and reuse. The bigger its cache, the less time a processor has to wait for instructions to be fetched.",
+                "RAM. This is the short-term memory of the computer that holds all of the programs and data currently being ran by the computer. Having more memory means that the data and instructions that need to be processed will not have to be fetched from secondary storage (which is a much slower process).",
+                "Temperature. If CPU gets too hot performance will decrease."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cs-2023-hl-q15-c-ii": {
+      "reason": "The task requires one advantage and one disadvantage of recursion, each worth 3 marks. The headings and examples are two bounded pools, not six 1-mark rows.",
+      "set": {
+        "rows": [
+          {
+            "id": "r-advantage",
+            "kind": "anyN",
+            "verbatim": "One advantage of recursion",
+            "marks": null,
+            "group": {
+              "claimMax": 1,
+              "perOption": 3,
+              "options": [
+                "The main benefits of a recursive approach are simplicity, elegance and conciseness",
+                "Recursion can lead to more readable and efficient algorithm descriptions.",
+                "Recursion lends itself well breaking problems down into smaller similar problems"
+              ]
+            }
+          },
+          {
+            "id": "r-disadvantage",
+            "kind": "anyN",
+            "verbatim": "One disadvantage of recursion",
+            "marks": null,
+            "group": {
+              "claimMax": 1,
+              "perOption": 3,
+              "options": [
+                "Performance. Recursion can lead to slower execution time due to memory overheads",
+                "If recursion is too deep, then there is a danger of running out of space on the stack and ultimately program crashes."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cs-2023-ol-q4": {
+      "reason": "The scheme awards a six-mark holistic conversion answer with partial-credit bands; the parser incorrectly turned alternative workings and the word OR into six 1-mark claims. The complete required result is one all-or-nothing answer row.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "rows": [
+          {
+            "id": "r-answer",
+            "kind": "allOf",
+            "verbatim": "Ans: 1110",
+            "marks": 6
+          }
+        ]
+      }
+    },
+    "cs-2024-hl-q13-c": {
+      "reason": "The paper asks for reasons on both sides of the AI-pause initiative, with up to two 3-mark points per side. The parser inverted the scenario and ask and turned headings, examples and tariff prose into twelve 1-mark rows.",
+      "set": {
+        "stem": "In 2023 an open letter published by the Future of Life Institute requested all AI labs to immediately pause for at least six months the training of very powerful AI systems. Interestingly, while the letter was signed by many well-known academics and industry leaders, there were many notable individuals and companies who did not publicly declare their support.",
+        "questionText": "Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative.",
+        "rows": [
+          {
+            "id": "r-supporting",
+            "kind": "anyN",
+            "verbatim": "Up to two points supporting the initiative",
+            "marks": null,
+            "openList": true,
+            "group": {
+              "claimMax": 2,
+              "perOption": 3,
+              "options": [
+                "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness.",
+                "Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities.",
+                "Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry.",
+                "Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society.",
+                "Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI."
+              ]
+            }
+          },
+          {
+            "id": "r-against",
+            "kind": "anyN",
+            "verbatim": "Up to two points against the initiative",
+            "marks": null,
+            "openList": true,
+            "group": {
+              "claimMax": 2,
+              "perOption": 3,
+              "options": [
+                "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society.",
+                "Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues.",
+                "Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres.",
+                "Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cs-2024-ol-q14-c": {
+      "reason": "The scheme awards one holistic 6-mark discussion of a positive impact and one of a negative impact. Its examples are two answer pools, not twelve compulsory 1-mark rows.",
+      "set": {
+        "rows": [
+          {
+            "id": "r-positive",
+            "kind": "anyN",
+            "verbatim": "One positive impact of AI for students",
+            "marks": null,
+            "group": {
+              "claimMax": 1,
+              "perOption": 6,
+              "options": [
+                "Personalised Learning",
+                "Access to resources",
+                "Assistance with homework",
+                "Enhanced accessibility",
+                "Spell check work",
+                "Suggest improvements on student work",
+                "Feedback on pieces of work",
+                "Generate study notes for students",
+                "Create study tips / custom study timetables"
+              ]
+            }
+          },
+          {
+            "id": "r-negative",
+            "kind": "anyN",
+            "verbatim": "One negative impact of AI for students",
+            "marks": null,
+            "group": {
+              "claimMax": 1,
+              "perOption": 6,
+              "options": [
+                "Privacy concerns",
+                "Bias Issues",
+                "Overreliance on technology",
+                "Wrong information given",
+                "Using AI to complete work",
+                "AI to assist in tasks may reduce critical thinking skills",
+                "Lack of independent research & effort levels",
+                "Reduction of problem-solving skills and logical thinking skills"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cs-2025-ol-q2": {
+      "reason": "The task asks for two cloud-storage reasons, each worth 3 marks. Six scheme examples are a bounded open pool, not six required 1-mark rows.",
+      "set": {
+        "rows": [
+          {
+            "id": "r-reasons",
+            "kind": "anyN",
+            "verbatim": "Any two reasons for using cloud storage",
+            "marks": null,
+            "openList": true,
+            "group": {
+              "claimMax": 2,
+              "perOption": 3,
+              "options": [
+                "Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection.",
+                "Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures.",
+                "File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others.",
+                "Automatic Updates: Cloud storage services often come with automatic software updates and maintenance.",
+                "Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable.",
+                "Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "cs-2025-ol-q10": {
+      "reason": "The flowchart has one six-mark output sequence with holistic partial-credit bands. The parser incorrectly made each printed output value a separate 1-mark claim.",
+      "set": {
+        "tariffModel": { "kind": "fixed" },
+        "questionText": "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Calculate the output of the algorithm.",
+        "rows": [
+          {
+            "id": "r-output",
+            "kind": "allOf",
+            "verbatim": "0 2 4 6 8 10",
+            "marks": 6
+          }
+        ]
+      }
+    },
+    "cs-2025-hl-q11": {
+      "reason": "The scheme awards 3 marks for one advantage and 3 for one potential risk. The parser captured only the heading ‘Advantage’; both complete bounded answer pools are restored from the inspected scheme page.",
+      "set": {
+        "rows": [
+          {
+            "id": "r-advantage",
+            "kind": "anyN",
+            "verbatim": "One advantage of personalised political content",
+            "marks": null,
+            "openList": true,
+            "group": {
+              "claimMax": 1,
+              "perOption": 3,
+              "options": [
+                "Voters receive content relevant to their interests.",
+                "Helps voters make informed decisions.",
+                "Encourages greater engagement potentially leading to higher turnouts.",
+                "Political parties can focus their resources on reaching the right audience, saving time and money."
+              ]
+            }
+          },
+          {
+            "id": "r-risk",
+            "kind": "anyN",
+            "verbatim": "One potential risk of personalised political content",
+            "marks": null,
+            "openList": true,
+            "group": {
+              "claimMax": 1,
+              "perOption": 3,
+              "options": [
+                "Users may only see content that agrees with their views, limiting exposure to other perspectives (echo chambers/filter bubbles).",
+                "Algorithms may spread false or misleading information tailored to a user's preferences.",
+                "Privacy concerns."
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

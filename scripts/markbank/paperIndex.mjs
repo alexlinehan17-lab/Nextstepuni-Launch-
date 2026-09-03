@@ -62,6 +62,7 @@ export const paperIndex = (() => {
  */
 const CORPUS_KEY = {
   'home-economics': 'home-economics-s-and-s',
+  'maths': 'mathematics',
 };
 
 /** The sitting of one subject, year and level in its authored paper language. */

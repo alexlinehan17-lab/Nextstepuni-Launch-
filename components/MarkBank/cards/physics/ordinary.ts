@@ -133,12 +133,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q3-iii", topicId: "phys-u2", conceptId: "measuring-object-image-distance",
     section: "A", questionRef: "2021 OL Q3(iii)",
-    stem: "A student carried out an experiment to measure f, the focal length of a converging lens.",
     questionText: "Name the instrument used to measure the object distance and the image distance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "metre stick", marks: 3, accepts: ["measuring tape","optical bench with scale","ruler"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1506,12 +1515,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-i", topicId: "phys-2-3", conceptId: "reflection-definition",
     section: "B", questionRef: "2022 OL Q9(i)",
-    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual.",
     questionText: "What is meant by reflection?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "rebounding of a wave off a surface", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1520,12 +1538,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-iii", topicId: "phys-2-3", conceptId: "real-image-definition",
     section: "B", questionRef: "2022 OL Q9(iii)",
-    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual. An object is placed in front of a concave mirror, between its focal point and its centre of curvature, so that a magnified image is formed.",
     questionText: "The image formed is real. Explain what is meant by a real image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "one formed by the intersection of rays", marks: 6, accepts: ["one formed on a screen"], contextNote: "Separated by a solidus in the scheme, so either statement alone earns the full 6 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1534,13 +1561,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-v", topicId: "phys-2-3", conceptId: "magnification-image-height",
     section: "B", questionRef: "2022 OL Q9(v)",
-    stem: "The object is 20 cm in front of the concave mirror. The mirror has a focal length of 12 cm. The real image is formed at v = 30 cm.",
     questionText: "The object has a height of 4 cm. Calculate the height of the image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "m = v/u = 1.5", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "image height = 4 × 1.5 = 6 cm", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1567,6 +1603,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "one formed by the apparent intersection of rays", marks: 6, accepts: ["one not formed on a screen"], contextNote: "Separated by a solidus in the scheme, so either statement alone earns the full 6 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2213,12 +2259,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q2-iii", topicId: "phys-u2", conceptId: "locating-image-concave-mirror",
     section: "A", questionRef: "2023 OL Q2(iii)",
-    stem: "A student carried out an experiment to measure the focal length f of a concave mirror.",
     questionText: "Describe how the student found the position of the image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "move screen", marks: 6, accepts: ["sharpest image is formed"], contextNote: "The scheme prints \"move screen/mirror/object\" — moving the mirror or moving the object are equally acceptable to moving the screen. A partial answer scores 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2241,12 +2296,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q2-v", topicId: "phys-2-3", conceptId: "focal-length-calculation",
     section: "A", questionRef: "2023 OL Q2(v)",
-    stem: "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
     questionText: "Calculate f.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "f = 15.1 cm", marks: 6, contextNote: "The scheme prints the answer with its unit: f = 15.1 cm." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3528,12 +3592,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q2-iv", topicId: "phys-u2", conceptId: "identifying-correct-image-distance",
     section: "A", questionRef: "2024 OL Q2(iv)",
-    stem: "A student carried out an experiment to measure f, the focal length of a converging lens, by measuring the object distance u and the image distance v.",
     questionText: "How did the student know that the correct image distance had been found?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "focussed image", marks: 6, contextNote: "Key words — the image on the screen being in focus (sharp) is what is being marked. Spelling as printed in the scheme." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3837,12 +3910,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-ii", topicId: "phys-2-3", conceptId: "plane-mirror-image-properties",
     section: "B", questionRef: "2024 OL Q8(ii)",
-    stem: "Light is reflected from a plane mirror and an image is formed.",
     questionText: "State one property of the image produced by a plane mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "same size", marks: 6, accepts: ["lateral inversion"], contextNote: "Scheme prints these as examples ('e.g. … etc.'), so other valid properties of a plane-mirror image are acceptable.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4376,12 +4458,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14d-i", topicId: "phys-3-1", conceptId: "charging-by-contact",
     section: "B", questionRef: "2024 OL Q14(d)(i)",
-    stem: "Objects with opposite charges attract each other and objects with the same charge repel each other.",
     questionText: "Describe how an object can become charged by contact.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(when two materials are brought into contact) electrons can transfer from one to the other", marks: 6, contextNote: "Partial answer scores 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5304,12 +5395,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-iv", topicId: "phys-2-3", conceptId: "mirror-magnification",
     section: "B", questionRef: "2025 OL Q9(iv)",
-    stem: "A concave mirror has a focal length f of 8 cm. An object is placed with an object distance u of 20 cm in front of the mirror. The image distance v was found in part (iii) to be 13.3 cm.",
     questionText: "Calculate the magnification of the image produced.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "magnification = 0.67", marks: 6, contextNote: "Magnification is a ratio, so it carries no unit. Partial answer accepted for 3." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6407,12 +6507,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q10-vi", topicId: "phys-2-3", conceptId: "image-distance-from-magnification",
     section: "A", questionRef: "2021 OL Q10(vi)",
-    stem: "A periscope is used on a submarine. The periscope uses plane mirrors to allow a person on the submarine to see above the surface of the water. f ● Object An object of height 2 cm is placed 17 cm in front of a concave mirror. An image with a height of 3 cm is formed.",
     questionText: "Calculate the image distance.",
     tariffModel: {"kind":"fixed","notation":"6, or 3 for a partial answer"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "25. 5 cm", marks: 6, contextNote: "Scheme working: (v/u = 3/2 ⟹ v = 1.5u = (1.5)(17) = ). The extracted scheme splits the decimal: \"25. 5 cm\" reads 25.5 cm." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Physics 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6479,13 +6588,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-v", topicId: "phys-u2", conceptId: "average-refractive-index-from-results",
     section: "A", questionRef: "2022 OL Q2(v)",
-    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35",
     questionText: "Use all of the results in the table to calculate an average value for n.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "one calculation of n // graph of sin i against sin r", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "average calculated // slope calculated", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6523,7 +6641,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-iv", topicId: "phys-2-3", conceptId: "image-position-from-the-lens-formula",
     section: "A", questionRef: "2022 OL Q9(iv)",
-    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors.",
     questionText: "Calculate the position of the real image formed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -6531,6 +6648,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "v = 30 cm", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6565,13 +6692,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-vi", topicId: "phys-u2", conceptId: "whether-the-results-verify-snells-law",
     section: "A", questionRef: "2022 OL Q2(vi)",
-    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35",
     questionText: "Do your calculations verify Snell’s law? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "yes [or answer consistent with calculations]", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "explanation, e.g. calculations all close to average, straight line through origin", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6610,12 +6746,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q1-ii", topicId: "phys-u2", conceptId: "what-distance-was-measured-on-the-tape",
     section: "A", questionRef: "2022 OL Q1(ii)",
-    stem: "A student carried out an experiment to measure the velocity of an object.",
     questionText: "Indicate on the diagram what distance the student measured.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "length of tape", marks: 3, accepts: ["length of rider or card","distance travelled by car/rider"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6624,7 +6769,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-ii", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-magnified-image-ol",
     section: "A", questionRef: "2022 OL Q9(ii)",
-    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors.",
     questionText: "In your answerbook, copy and complete the ray diagram below to show how a magnified image is formed in a concave mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -6632,6 +6776,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "second reflected ray", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "intersection of rays", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6640,13 +6794,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-vii", topicId: "phys-2-3", conceptId: "which-side-of-a-convex-mirror-reflects",
     section: "A", questionRef: "2022 OL Q9(vii)",
-    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors.",
     questionText: "Sketch a convex mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "shape", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "side", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6671,7 +6834,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-i", topicId: "phys-u2", conceptId: "apparatus-to-verify-snells-law",
     section: "A", questionRef: "2022 OL Q2(i)",
-    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
     tariffModel: {"kind":"fixed","notation":"6 + 3 + 3"}, totalMarks: 12,
     rows: [
@@ -6679,6 +6841,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "ray-box", marks: 3, accepts: ["laser","pins"] },
     { id: "r-3", kind: "point", verbatim: "detail e.g. paper, ruler, pencil, protractor, etc.", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6687,12 +6859,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-ii", topicId: "phys-u2", conceptId: "labelling-the-angles-measured",
     section: "A", questionRef: "2022 OL Q2(ii)",
-    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35",
     questionText: "On your diagram, label the angles measured by the student. (18)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "both angles labelled", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6772,12 +6953,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q5-iii", topicId: "phys-u2", conceptId: "completing-the-table-of-current-squared",
     section: "A", questionRef: "2022 OL Q5(iii)",
-    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks.",
     questionText: "In your answerbook, copy and complete the table above. (18)",
     tariffModel: {"kind":"fixed","notation":"6 × 1"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "1 2.25 4 6.25 9 12.25", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6968,12 +7158,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13b-v", topicId: "phys-4-4", conceptId: "daughter-nucleus-after-beta-decay",
     section: "B", questionRef: "2023 OL Q13(v)",
-    stem: "Read the following passage and answer the questions below. It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7)",
     questionText: "Tritium decays by beta emission. What is the daughter nucleus when an atom of H1 3 emits a beta particle? (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "He2 3", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6982,12 +7181,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q10-vi", topicId: "phys-2-4", conceptId: "nodes-on-a-stationary-wave",
     section: "A", questionRef: "2023 OL Q10(vi)",
-    stem: "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h",
     questionText: "What name is given to points A and B?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "nodes", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7024,12 +7232,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13b-viii", topicId: "phys-4-6", conceptId: "why-fusion-is-preferred-to-fission",
     section: "B", questionRef: "2023 OL Q13(viii)",
-    stem: "Read the following passage and answer the questions below. It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7)",
     questionText: "Large amounts of money are being invested into nuclear fusion research.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "point", verbatim: "any valid reference to fuel/products/etc.", marks: 7 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7038,12 +7255,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q11-vii", topicId: "phys-3-3", conceptId: "why-a-filament-graph-curves",
     section: "A", questionRef: "2023 OL Q11(vii)",
-    stem: "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V)",
     questionText: "Explain the shape of the graph.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "the resistance is greater at high current", marks: 6, accepts: ["due to the heating effect","as voltage increases, the current increases"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7165,12 +7391,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q2-i", topicId: "phys-u2", conceptId: "concave-mirror-focal-length-apparatus",
     section: "A", questionRef: "2023 OL Q2(i)",
-    stem: "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
     tariffModel: {"kind":"fixed","notation":"6 + 3 + 3"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "object, mirror, screen", marks: 12 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7311,13 +7546,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q8-v", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-real-image",
     section: "A", questionRef: "2023 OL Q8(v)",
-    stem: "The diagram below shows how a ray of light travels through a rectangular glass block.",
     questionText: "Draw a converging lens and draw a ray diagram to show how the lens forms a real image.",
     tariffModel: {"kind":"fixed","notation":"3 + 3 × 3"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "converging lens", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "object, incident ray(s), image formed", marks: 9 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7385,13 +7629,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13-iv", topicId: "phys-4-4", conceptId: "protons-and-neutrons-in-tritium",
     section: "B", questionRef: "2023 OL Q13(iv)",
-    stem: "Read the following passage and answer the questions below. It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7)",
     questionText: "The symbol for tritium is H1 3. (a) How many protons are in an atom of tritium? (b) How many neutrons are in an atom of tritium? (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "point", verbatim: "1", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "2", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7457,12 +7710,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q13a", topicId: "phys-1-4", conceptId: "height-of-the-iss",
     section: "B", questionRef: "2024 OL Q13(a)",
-    stem: "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org",
     questionText: "How high above the Earth is the ISS? (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "point", verbatim: "322 km", marks: 7 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7521,12 +7783,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q1-v", topicId: "phys-u2", conceptId: "clockwise-moments-on-a-metre-stick",
     section: "A", questionRef: "2024 OL Q1(v)",
-    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. Newton Spring Balances Weights Upward forces (N) 6 4 Downward forces (N) 5 2 Position (cm) 20 70 Position (cm) 26 60 The second law of equilibrium states that the sum of the clockwise moments equals the sum of the anticlockwise moments. (Remember: Moment = Force × Distance)",
     questionText: "Use the data to calculate the clockwise moments on the metre stick about the 0 cm mark.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(5 × 26) + (3 × 50) + (2 × 60) = 400 N cm", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7682,7 +7953,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-v", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-magnified-image",
     section: "A", questionRef: "2024 OL Q8(v)",
-    stem: "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed. One of the laws of reflection of light states that the angle of incidence equals the angle of reflection. f ● object The picture on the right shows images in a concave mirror. An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror.",
     questionText: "In your answerbook, copy and complete the ray diagram below to show how a magnified image is formed in a concave mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 11,
     rows: [
@@ -7691,6 +7961,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "second reflected ray", marks: 3 },
     { id: "r-4", kind: "point", verbatim: "image formed", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7713,7 +7993,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q13e", topicId: "phys-4-2", conceptId: "parts-of-an-x-ray-tube-ol",
     section: "B", questionRef: "2024 OL Q13(e)",
-    stem: "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org",
     questionText: "Draw a labelled diagram of an X-ray tube. (7)",
     tariffModel: {"kind":"fixed","notation":"3 + 2 + 2"}, totalMarks: 7,
     rows: [
@@ -7721,6 +8000,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "cathode and anode target", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "high voltage", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7743,12 +8032,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14d-v", topicId: "phys-3-1", conceptId: "charge-on-a-pear-shaped-conductor",
     section: "B", questionRef: "2024 OL Q14(d)(v)",
-    stem: "A student performed an experiment to investigate how charge is distributed on a pear-shaped conductor. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Ordinary Level Physics Wednesday, 19 June Morning, 9:30 – 12:30",
-    questionText: "Draw a diagram to show how charge is distributed on a pear-shaped conductor. (10) Acknowledgements Images Image on page 2: State Examinations Commission Image on page 4: State Examinations Commission Image on page 5: www.britannica.com/science/ Image on page 6: giants-live.com Images on page 7: maggiesscienceconnection.weebly.com/; State Examinations Commission; maggiesscienceconnection.weebly.com/ Images on page 9: www.istockphoto.com/photos/; State Examinations Commission; www.theguardian.com/music/2019/jul/09/flute-lizzo-and-the-woodwind-renaissance Images on page 10: shutterstock.com; State Examinations Commission Image on page 11: www.powermag.com/ Image on page 12: www.ScienceJournalForKids.org Images on page 13: State Examinations Commission; State Examinations Commission; www.pyrosales.com.au/ Images on page 14: State Examinations Commission; www.britannica.com/science/static-electricity; www.curiousscience.com/ This document will not be returned to the State Examinations Commission.",
+    questionText: "Draw a diagram to show how charge is distributed on a pear-shaped conductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "charges accumulated at the pointed end", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7787,12 +8085,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q1-iv", topicId: "phys-u2", conceptId: "verifying-the-first-law-of-equilibrium",
     section: "A", questionRef: "2024 OL Q1(iv)",
-    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. Newton Spring Balances Weights Upward forces (N) 6 4 Downward forces (N) 5 2 Position (cm) 20 70 Position (cm) 26 60 The second law of equilibrium states that the sum of the clockwise moments equals the sum of the anticlockwise moments. (Remember: Moment = Force × Distance)",
     questionText: "Use the data to show that the first law of equilibrium is verified in this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "upward forces = 6 + 4 = 10 N downward forces = 5 + 2 + 3 = 10 N", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7801,12 +8108,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q1-vi", topicId: "phys-u2", conceptId: "anticlockwise-moments-on-a-metre-stick",
     section: "A", questionRef: "2024 OL Q1(vi)",
-    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. Newton Spring Balances Weights Upward forces (N) 6 4 Downward forces (N) 5 2 Position (cm) 20 70 Position (cm) 26 60 The second law of equilibrium states that the sum of the clockwise moments equals the sum of the anticlockwise moments. (Remember: Moment = Force × Distance)",
     questionText: "Use the data to calculate the anticlockwise moments on the metre stick about the 0 cm mark.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(6 × 20) + (4 × 70) = 400 N cm", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7815,12 +8131,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q1-vii", topicId: "phys-u2", conceptId: "verifying-the-second-law-of-equilibrium",
     section: "A", questionRef: "2024 OL Q1(vii)",
-    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. Newton Spring Balances Weights Upward forces (N) 6 4 Downward forces (N) 5 2 Position (cm) 20 70 Position (cm) 26 60 The second law of equilibrium states that the sum of the clockwise moments equals the sum of the anticlockwise moments. (Remember: Moment = Force × Distance)",
     questionText: "Use your calculations to show that the second law of equilibrium is verified in this experiment. (22)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(the sum of) clockwise moments are equal to anticlockwise moments", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7923,12 +8248,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-vii", topicId: "phys-2-3", conceptId: "magnification-of-a-concave-mirror-image",
     section: "A", questionRef: "2024 OL Q8(vii)",
-    stem: "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed. One of the laws of reflection of light states that the angle of incidence equals the angle of reflection. f ● object The picture on the right shows images in a concave mirror. An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror.",
     questionText: "Calculate the magnification m of this image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "2 cm", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7937,12 +8271,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-viii", topicId: "phys-2-3", conceptId: "image-height-from-magnification",
     section: "A", questionRef: "2024 OL Q8(viii)",
-    stem: "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed. One of the laws of reflection of light states that the angle of incidence equals the angle of reflection. f ● object The picture on the right shows images in a concave mirror. An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror.",
     questionText: "If the object is 5 cm high, calculate the height of the image. (29)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "5 × 2 = 10 cm", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7951,7 +8294,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q9-vii", topicId: "phys-2-1", conceptId: "parts-of-a-heat-pump",
     section: "A", questionRef: "2024 OL Q9(vii)",
-    stem: "Solids, liquids and gases can change state when they are heated or cooled. A heat pump is a device used in household freezers. It consists of a closed system of circulating fluid called a refrigerant which absorbs and releases latent heat as it changes state. The graph shows the temperature of a substance as heat is added and it changes state from a liquid to a gas. 100 90 gas 80 Temperature (°C) 70 60 50 A liquid 40 30 20 10 0 0 2 4 6 8 10 12 Heat added (J)",
     questionText: "Draw a labelled diagram of a heat pump.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -7959,6 +8301,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "circulating fluid", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "compressor/expansion valve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8061,7 +8413,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q7-viii", topicId: "phys-1-2", conceptId: "forces-on-a-skydiver-at-constant-velocity",
     section: "A", questionRef: "2025 OL Q7(viii)",
-    stem: "In 1867, Isaac Newton published his ideas on motion in a book called The Principia. In it Newton developed an understanding of the idea of ‘force’. Some time after take‐off, the skydiver jumps out of the plane. The total mass of the skydiver is 70 kg, including the parachute. velocity (m s–1) time (s) A",
     questionText: "After the parachute has opened, the skydiver travels at constant velocity. Draw a labelled diagram to show the forces now acting on the skydiver. (21) The graph shows how the velocity of the skydiver changes with respect to time once she leaves the airplane.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -8069,6 +8420,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "arrow down", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "equal and opposite", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8077,7 +8438,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-ii", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-real-image",
     section: "A", questionRef: "2025 OL Q9(ii)",
-    stem: "A concave mirror can be used to form real or virtual images. f object Calculate the refractive index n of the glass.",
     questionText: "In your answer book, copy and complete the ray diagram below to show the formation of a real image in a concave mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 11,
     rows: [
@@ -8086,6 +8446,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "second reflected ray", marks: 3 },
     { id: "r-4", kind: "point", verbatim: "image formed at intersection of rays", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8175,12 +8545,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q2-iv", topicId: "phys-u2", conceptId: "completing-the-one-over-pressure-table",
     section: "A", questionRef: "2025 OL Q2(iv)",
-    stem: "In an experiment to verify Boyle’s law, a student measured the pressure p of a gas at different volumes V. The student recorded the following results. V (cm3) 5 10 15 20 25 30 p (MPa) 0.203 0.108 0.073 0.054 0.043 0.035 1 p (MPa–1) 4.93 9.26 13.70",
     questionText: "Copy and complete the table above into your answerbook by calculating the value of 1 p to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"3 × 2"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "18.52 23.26 28.57", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8189,7 +8568,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q3-iv", topicId: "phys-u2", conceptId: "completing-the-sine-table",
     section: "A", questionRef: "2025 OL Q3(iv)",
-    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i. i (degrees) r (degrees) sin i sin r n = sin i sin r 20 13 0.34 0.22 46 28 61 35",
     questionText: "Copy and complete the table above into your answerbook by calculating the missing values to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"2 × 1 + 2 × 1 + 3 × 1"}, totalMarks: 7,
     rows: [
@@ -8197,6 +8575,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "0.72 0.47 1.53", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "0.87 0.57 1.52", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8205,12 +8593,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q5-iv", topicId: "phys-u2", conceptId: "relationship-between-length-and-resistance",
     section: "A", questionRef: "2025 OL Q5(iv)",
-    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire. The student completed the following graph to show the relationship between l and R. He also measured the diameter d of the wire. 0.25 0.20 0.15 R (Ω) 0.10 0.05 0.00 0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35 0.40 0.45 0.50 0.55 0.60 0.65 l (m) radius of the wire = 0.00124 m Each question carries 56 marks.",
     questionText: "Describe the relationship between l and R shown in the graph.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(directly) proportional", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

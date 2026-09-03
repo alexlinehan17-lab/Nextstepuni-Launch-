@@ -487,7 +487,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-b-v", topicId: "bio-3-1", conceptId: "trophic-levels-food-chain",
     section: "C", questionRef: "2025 OL Q11(b)(v)",
-    stem: "From the Q11(b) passage: \"The niche of the lesser horseshoe bat is to keep the numbers of mosquitoes under control by feeding on them. The mosquitoes in turn feed on sap from grasses.\"",
     questionText: "From the information provided in the passage, write out a food chain with three feeding (trophic) levels, and state which is the producer, which is the primary consumer and which is the secondary consumer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -495,6 +494,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Primary consumer — mosquito", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "Secondary consumer — lesser horseshoe bat", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Biology 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3034,7 +3043,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-b-ii-iv", topicId: "bio-2-5", conceptId: "ovum-formation-and-meiosis",
     section: "C", questionRef: "2023 OL Q14(b)(ii)–(iv)",
-    stem: "In the human female reproductive system, the parts labelled A, B and C are: A the ovary, B the fallopian tube, C the uterus.",
     questionText: "In which labelled part is the ovum (egg) formed? What type of cell division is involved in production of the ovum (egg)? State one way in which the ovum (egg) differs from a sperm cell.",
     tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 15,
     rows: [
@@ -3042,6 +3050,16 @@ export const CARDS: SecCard[] = [
     { id: "r-meiosis", kind: "point", verbatim: "Meiosis", marks: null },
     { id: "r-differs", kind: "alt", verbatim: "Non-motile or no tail or larger", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Biology 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3050,7 +3068,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-b-v-vi", topicId: "bio-2-5", conceptId: "fertilisation-and-implantation-sites",
     section: "C", questionRef: "2023 OL Q14(b)(v)–(vi)",
-    stem: "In the human female reproductive system, the parts labelled A, B and C are: A the ovary, B the fallopian tube, C the uterus.",
     questionText: "Explain the term fertilisation. State the location in the female reproductive system where each of the following occurs: 1. Fertilisation 2. Implantation",
     tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 15,
     rows: [
@@ -3058,6 +3075,16 @@ export const CARDS: SecCard[] = [
     { id: "r-fert-site", kind: "alt", verbatim: "Fertilisation — B or fallopian tube", marks: null },
     { id: "r-impl-site", kind: "alt", verbatim: "Implantation — C or uterus or endometrium", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Biology 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3243,7 +3270,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16d-vi-viii", topicId: "bio-2-5", conceptId: "seed-fruit-and-dormancy",
     section: "C", questionRef: "2023 OL Q16(d)(vi)–(viii)",
-    stem: "In the structure of an animal-pollinated flower, the parts labelled X, Y and Z are: X the stigma, Y the ovule, Z the sepal.",
     questionText: "In which labelled part does the seed develop? Give one function of the fruit of a plant. Give one reason why dormancy is of benefit to a plant.",
     tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
     rows: [
@@ -3251,6 +3277,16 @@ export const CARDS: SecCard[] = [
     { id: "r-fruit", kind: "point", verbatim: "Seed dispersal", marks: null },
     { id: "r-dormancy", kind: "alt", verbatim: "Allows survival of adverse conditions or allows time for dispersal or allows time for embryo to develop or other correct", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Biology 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9291,6 +9327,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Pine marten", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Biology 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10246,12 +10292,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q10-b-v", topicId: "bio-u1", conceptId: "a-safety-precaution-in-the-experiment",
     section: "A", questionRef: "2024 OL Q10(b)(v)",
-    stem: "PR BR Resting 60 20 Moderate exercise 100 30 rate Intense exercise 150 60 Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). Resting Moderate exercise Intense exercise Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. 1 4 There are two pages of graph paper on the next two pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use a pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Biology Sections A and B and Answerbook Tuesday 11 June Afternoon 2:00 - 5:00 2024L025G2EL 2024.M43 Coimisiún na Scrúduithe Stáit State Examinations Commission Section C Ordinary Level Tuesday 11 June Afternoon 2:00 - 5:00 240 marks This document will not be returned to the State Examinations Commission. Section C Answer any four questions. Write your answers in the answerbook containing Sections A and B.",
     questionText: "Describe a safety precaution the student would have taken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "Correct safety precaution described", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Biology 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10622,23 +10677,34 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP038EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-c-i", topicId: "bio-3-2", conceptId: "naming-the-nitrogen-cycle",
-    section: "A", questionRef: "2025 OL Q11(c)(i)",
+    section: "C", questionRef: "2025 OL Q11(c)(i)",
     questionText: "Name the nutrient cycle represented in diagram X.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Nitrogen", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "sourceFileid": "LC025GLP040EV",
+          "attribution": "SEC Biology 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP038EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-c-ii", topicId: "bio-3-2", conceptId: "nitrogen-cycle-stages-on-the-diagram",
-    section: "A", questionRef: "2025 OL Q11(c)(ii)",
+    section: "C", questionRef: "2025 OL Q11(c)(ii)",
     questionText: "In your answer book, match the terms, nitrification, nitrogen fixation and nutrition to the letters A, B and C in diagram X.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -10646,27 +10712,49 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B: Nutrition", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "C: Nitrification", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "sourceFileid": "LC025GLP040EV",
+          "attribution": "SEC Biology 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP038EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-c-iii", topicId: "bio-3-2", conceptId: "naming-the-carbon-cycle",
-    section: "A", questionRef: "2025 OL Q11(c)(iii)",
+    section: "C", questionRef: "2025 OL Q11(c)(iii)",
     questionText: "Name the nutrient cycle represented in diagram Y.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Carbon", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "sourceFileid": "LC025GLP040EV",
+          "attribution": "SEC Biology 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP038EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-c-iv", topicId: "bio-3-2", conceptId: "carbon-cycle-stages-on-the-diagram",
-    section: "A", questionRef: "2025 OL Q11(c)(iv)",
+    section: "C", questionRef: "2025 OL Q11(c)(iv)",
     questionText: "In your answer book, match the terms, respiration, photosynthesis and combustion to the letters D, E and F in diagram Y. (24)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -10674,6 +10762,17 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "E: Combustion", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "F: Respiration", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "sourceFileid": "LC025GLP040EV",
+          "attribution": "SEC Biology 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

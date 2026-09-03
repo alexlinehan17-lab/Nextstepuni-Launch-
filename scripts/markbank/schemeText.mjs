@@ -120,7 +120,17 @@ const PAGE_FOOTER = /\d+\s*\|\s*P\s*a\s*g\s*e/g;
 export const LIGATURES = { 'Ɵ': 'ti', 'Ŧ': 'ti', 'Ʃ': 'tt', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬃ': 'ffi', 'ﬄ': 'ffl', 'ﬅ': 'st', 'ﬆ': 'st' };
 
 const SUP = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
-export const foldDigits = (t) => t
+const collapseDoubledMathsLetters = (text) => {
+  let out = text;
+  for (let pass = 0; pass < 4; pass++) {
+    const next = out.replace(/([\u{1D400}-\u{1D7CD}])\1/gu, '$1');
+    if (next === out) break;
+    out = next;
+  }
+  return out;
+};
+
+export const foldDigits = (t) => collapseDoubledMathsLetters(t)
   .replace(/[ƟŦƩﬀﬁﬂﬃﬄﬅﬆ]/g, (c) => LIGATURES[c] ?? c)
   .replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080))
   .replace(/[⁰¹²³⁴-⁹]/g, (c) => SUP[c] ?? c)
@@ -239,8 +249,24 @@ export const claimMatches = (scheme, claim) => {
 };
 
 export const comparableScheme = (raw) => {
-  const lines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
-    .split('\n').filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));
+  const sourceLines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
+    .split('\n');
+  // A consecutive run of numeric-only lines can itself be the answer: the
+  // 2025 OL flowchart outputs 0, 2, 4, 6, 8, 10, one value per scheme line.
+  // Single numeric lines remain excluded as ambiguous mark/page cells. Requiring
+  // a run of at least two preserves the exact printed sequence without making
+  // an arbitrary numeric claim match an unrelated tariff elsewhere.
+  const numericRuns = [];
+  let numericRun = [];
+  for (const line of sourceLines) {
+    if (MARKS_ONLY.test(line)) numericRun.push(line.trim());
+    else {
+      if (numericRun.length >= 2) numericRuns.push(normalise(numericRun.join(' ')));
+      numericRun = [];
+    }
+  }
+  if (numericRun.length >= 2) numericRuns.push(normalise(numericRun.join(' ')));
+  const lines = sourceLines.filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));
   const joined = lines.join(' ');
   const whole = normalise(joined);
   return [
@@ -250,5 +276,6 @@ export const comparableScheme = (raw) => {
     normalise(foldOriya(joined)),
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
     normalise(repairGlyphs(joined)),
+    ...numericRuns,
   ].join('|');
 };
