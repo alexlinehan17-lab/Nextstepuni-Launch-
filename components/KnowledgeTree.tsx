@@ -256,7 +256,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
     <div className="product-shell dashboard-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] overflow-x-hidden relative selection:bg-[rgba(var(--accent),0.2)]">
       {/* Sidebar — desktop only */}
       <aside
-        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-[#FAFBF6] dark:bg-zinc-900 border-r-[1.5px] border-[#383838] dark:border-zinc-700 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-[#F7F3EC] dark:bg-zinc-900 border-r-[1.5px] border-[#383838] dark:border-zinc-700 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
       >
         {/* Avatar row — click to toggle */}
         <button
