@@ -43,7 +43,7 @@ ANSWERS_DIR = os.path.join(HERE, "answers")
 COPYRIGHT = "© State Examinations Commission"
 
 P_HEAD = re.compile(r"^(\d{1,2})\.(?:\s|$)")
-S_CELL = re.compile(r"^[QC][.\s]?\s?(\d{1,2})\.?$")
+S_CELL = re.compile(r"^(?:[QC][.\s]?\s?|\.)(\d{1,2})\.?$")  # ".15" = corrupted "C.15", the C glyph drops
 
 
 def lines_with_pos(page):
@@ -93,6 +93,21 @@ def build(ppath, spath):
         if n in pq and n not in have:
             have[n] = (pg, y)
     missing = [n for n in pq if n not in have]
+    # a fully-degraded cell ("C.19" extracting as a bare C or dot) is
+    # recoverable when it is the only head-shaped remnant inside the slot
+    for n in list(missing):
+        lo = have.get(n - 1)
+        hi = min((have[m] for m in have if m > n), default=None)
+        if not lo or not hi:
+            continue
+        cands = [(pi + 1, y)
+                 for pi in range(lo[0] - 1, hi[0])
+                 for txt, x, y in lines_with_pos(scheme[pi])
+                 if x < 0.2 and txt.strip() in {"C", "Q", "."}
+                 and lo < (pi + 1, y) < hi]
+        if len(cands) == 1:
+            have[n] = cands[0]
+            missing.remove(n)
     if missing:
         return None, f"scheme has no Q cells for {missing}"
     order = [have[n] for n in sorted(pq)]
