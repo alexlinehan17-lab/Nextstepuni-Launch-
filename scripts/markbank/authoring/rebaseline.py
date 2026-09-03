@@ -21,7 +21,9 @@ SUBJECT = sys.argv[1] if len(sys.argv) > 1 else 'home-economics'
 # total wipe as a clean run. The empty-deck check below is the backstop.
 PREFIX = {'home-economics': 'he', 'biology': 'bio', 'business': 'bus',
           'chemistry': 'chem', 'physics': 'phys', 'agricultural-science': 'agsci',
-          'economics': 'econ'}[SUBJECT]
+          'economics': 'econ', 'maths': 'maths',
+          'construction-studies': 'cons', 'computer-science': 'cs',
+          'engineering': 'eng'}[SUBJECT]
 TEST = 'test/markBankCardPreservation.test.ts'
 KEY = {'home-economics': 'home-economics', 'agricultural-science': 'agricultural-science'}.get(SUBJECT, SUBJECT)
 
@@ -79,6 +81,12 @@ if not ok:
 total = 0
 for m in re.finditer(r"', [A-Z_]+, (\d+), '", src):
     total += int(m.group(1))
-src = re.sub(r'toBe\(\d[\d_]*\);', f'toBe({total:,}'.replace(',', '_') + ');', src)
+total_pattern = re.compile(
+    r'(expect\(decks\.reduce\(\(total, \[, cards\]\) => total \+ cards\.length, 0\)\)'
+    r'\.toBe\()\d[\d_]*(\);)')
+src, replacements = total_pattern.subn(
+    rf'\g<1>{total:_}\g<2>', src)
+if replacements != 1:
+    sys.exit(f'baseline NOT updated: expected one bank-total assertion, found {replacements}')
 open(TEST, 'w').write(src)
 print(f'baseline updated; bank total now {total}')

@@ -181,6 +181,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Workplace Relations Commission", marks: 15 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Business 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -338,7 +348,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s1-q4", topicId: "business-1-5", conceptId: "factors-of-production",
     section: "1", questionRef: "2022 OL Section 1 Q4",
-    questionText: "Indicate by placing a tick in the correct box, the factor of production to which each statement relates. The four columns are Land, Labour, Capital and Enterprise. Statements: Cadbury uses specialist equipment and machinery to produce their products. Cadbury uses cocoa beans in the production of their chocolate bars. Cadbury employs thousands of people in their plants in Ireland and the UK. Cadbury was founded by the entrepreneur John Cadbury.",
+    questionText: "Indicate, by placing a tick in the correct box on the official question page, the factor of production to which each statement relates.",
     tariffModel: {"kind":"fixed","notation":"4+4+4+3"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cadbury uses specialist equipment and machinery to produce their products. — Capital", marks: 4 },
@@ -346,6 +356,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Cadbury employs thousands of people in their plants in Ireland and the UK. — Labour", marks: 4 },
     { id: "r-4", kind: "point", verbatim: "Cadbury was founded by the entrepreneur John Cadbury. — Enterprise", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -555,7 +575,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission.",
     id: "bus-2023-ol-s1-q2", topicId: "business-2-11", conceptId: "controller-versus-facilitator-manager",
     section: "1", questionRef: "2023 OL Section 1 Q2",
-    stem: "The four actions printed in the table are: (i) The manager gives orders and expects them to be followed without question. (ii) The manager encourages employee empowerment. (iii) Employees are trusted to carry out their duties without constant supervision. (iv) The manager makes all the decisions and does not consult with employees.",
     questionText: "Indicate whether each of the following actions is an example of a Controller or Facilitator manager by writing Controller or Facilitator after each of the following statements.",
     tariffModel: {"kind":"fixed","notation":"3m + 3m + 2m + 2m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -564,6 +583,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Employees are trusted to carry out their duties without constant supervision. — Facilitator", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "The manager makes all the decisions and does not consult with employees. — Controller", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Business 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -585,7 +614,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission.",
     id: "bus-2023-ol-s1-q4", topicId: "business-5-14", conceptId: "ownership-structures-true-or-false",
     section: "1", questionRef: "2023 OL Section 1 Q4",
-    stem: "The four statements printed in the table are: (i) A sole trader has unlimited liability. (ii) A public limited company can have a maximum of 149 shareholders. (iii) A co-operative is owned and controlled by the government. (iv) A partnership business can have 2 - 20 partners.",
     questionText: "Write the word TRUE or FALSE after each of the following statements.",
     tariffModel: {"kind":"fixed","notation":"3m + 3m + 2m + 2m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -594,6 +622,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "A co-operative is owned and controlled by the government. — False", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "A partnership business can have 2 - 20 partners. — True", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Business 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -701,7 +739,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission.",
     id: "bus-2023-ol-s1-q12", topicId: "business-5-15", conceptId: "state-agencies-supporting-business",
     section: "1", questionRef: "2023 OL Section 1 Q12",
-    stem: "The agencies printed in the list are: Local Enterprise Office (LEO), Fáilte Ireland, IDA Ireland. The three explanations printed in the table are: Promotes Irish tourism industry around the world. Attracts multinational companies to set up in Ireland through various incentives. Assists entrepreneurs in setting up their business through advice, grant aid etc.",
     questionText: "Match the explanation with the correct State Agency from the list below.",
     tariffModel: {"kind":"fixed","notation":"4m + 3m + 3m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -709,6 +746,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Attracts multinational companies to set up in Ireland through various incentives. — IDA Ireland", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "Assists entrepreneurs in setting up their business through advice, grant aid etc. — Local Enterprise Office (LEO)", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Business 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2177,12 +2224,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q1a", topicId: "business-0-13", conceptId: "sale-of-goods-supply-of-services-act-named",
     section: "2", questionRef: "2022 OL Section 2 Q1(A)",
-    stem: "People in Business. Read the information supplied and answer the questions which follow. Jamie purchased a sports jersey during a sale which was reduced from €80 to €50. After taking it home Jamie noticed a rip on the arm of the jersey. Jamie took it back to the shop but the manager refused to offer Jamie any kind of redress, as it was purchased during a sale and a sign in the shop clearly stated that there were no refunds or exchange on sale items.",
     questionText: "Name the consumer law that protects Jamie in this situation.",
     tariffModel: {"kind":"fixed","notation":"10m (2+2+2+2+2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The Sale of Goods and Supply of Services Act 1980", marks: 10 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2191,13 +2247,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q1b", topicId: "business-0-13", conceptId: "sale-of-goods-supply-of-services-act-provisions",
     section: "2", questionRef: "2022 OL Section 2 Q1(B)",
-    stem: "People in Business. Read the information supplied and answer the questions which follow. Jamie purchased a sports jersey during a sale which was reduced from €80 to €50. After taking it home Jamie noticed a rip on the arm of the jersey. Jamie took it back to the shop but the manager refused to offer Jamie any kind of redress, as it was purchased during a sale and a sign in the shop clearly stated that there were no refunds or exchange on sale items.",
     questionText: "Outline two provisions of the law you have named above which are relevant to Jamie’s situation.",
     tariffModel: {"kind":"orderedSplit","notation":"8m (4 + 4) then 7m (4 + 3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The first provision given: any one of the following", marks: null, contextNote: "The scheme prices the first provision at 8m (4 + 4): four for stating the provision and four for the sentence tying it to Jamie. A provision stated and left there stops at four. The scheme prints OR between the merchantable quality provision and the fit for the purpose intended provision, so only one of that pair counts towards the two.", openList: true, group: {"claimMax":1,"perOption":8,"options":["The retailer cannot use signs which limit consumer rights. The Sale notice which Jamie read was not fulfilling consumer law.","Jamie has the right to proper redress, e.g., repair, refund or replacement.","Goods must be of merchantable quality – of a reasonable standard or quality. The jersey was ripped so was not of merchantable quality or fit for sale.","Goods must be fit for the purpose intended – the product must do the exact job it was designed for. The jersey was not suitable to wear with a rip in it."]} },
     { id: "r-2", kind: "anyN", verbatim: "The second provision given: any one of the following", marks: null, contextNote: "The scheme prices the second provision at 7m (4 + 3): four for the other provision you gave and three for applying it to Jamie. The 8 and the 7 follow the order the two answers are written rather than attaching to particular provisions on this list. The scheme prints OR between the merchantable quality provision and the fit for the purpose intended provision, so those two cannot both be counted.", openList: true, group: {"claimMax":1,"perOption":7,"options":["The retailer cannot use signs which limit consumer rights. The Sale notice which Jamie read was not fulfilling consumer law.","Jamie has the right to proper redress, e.g., repair, refund or replacement.","Goods must be of merchantable quality – of a reasonable standard or quality. The jersey was ripped so was not of merchantable quality or fit for sale.","Goods must be fit for the purpose intended – the product must do the exact job it was designed for. The jersey was not suitable to wear with a rip in it."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2206,13 +2271,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q1c", topicId: "business-0-13", conceptId: "small-claims-procedure-features",
     section: "2", questionRef: "2022 OL Section 2 Q1(C)",
-    stem: "People in Business. Read the information supplied and answer the questions which follow. Jamie purchased a sports jersey during a sale which was reduced from €80 to €50. After taking it home Jamie noticed a rip on the arm of the jersey. Jamie took it back to the shop but the manager refused to offer Jamie any kind of redress, as it was purchased during a sale and a sign in the shop clearly stated that there were no refunds or exchange on sale items.",
     questionText: "Explain two benefits to Jamie of taking his case to the Small Claims Procedure/Small Claims Court.",
     tariffModel: {"kind":"orderedSplit","notation":"10m (7 + 3) then 5m (4 + 1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The first benefit given: any one of the following", marks: null, contextNote: "The scheme prices the first benefit at 10m (7 + 3): seven for naming the benefit and three for the sentence explaining it. The first benefit carries twice the second on this part, so the one written first is the one worth explaining fully.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Inexpensive: It only costs €25 to take a case to the Small Claims Court.","No solicitor required: The consumer does not have to pay for legal representation, they can represent themselves.","Convenient: The case is heard in the local district court so no need to travel. The application can be made online.","Fast resolution: The case being heard locally can lead to the complaint being resolved quickly, usually within six weeks.","Fair: The judge listens to both sides and gives findings. The judge is impartial.","The Small Claims Court procedure is designed to deal with claims up to €2,000."]} },
     { id: "r-2", kind: "anyN", verbatim: "The second benefit given: any one of the following", marks: null, contextNote: "The scheme prices the second benefit at 5m (4 + 1): four for the other benefit you gave and one for explaining it. The 10 and the 5 follow the order the two answers are written rather than attaching to particular benefits on this list.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Inexpensive: It only costs €25 to take a case to the Small Claims Court.","No solicitor required: The consumer does not have to pay for legal representation, they can represent themselves.","Convenient: The case is heard in the local district court so no need to travel. The application can be made online.","Fast resolution: The case being heard locally can lead to the complaint being resolved quickly, usually within six weeks.","Fair: The judge listens to both sides and gives findings. The judge is impartial.","The Small Claims Court procedure is designed to deal with claims up to €2,000."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2221,12 +2295,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q1d", topicId: "business-3-20", conceptId: "employment-equality-discrimination-grounds",
     section: "2", questionRef: "2022 OL Section 2 Q1(D)",
-    stem: "People in Business. Read the information supplied and answer the questions which follow. Katie has worked in the accounts department of a large company for 6 years. She recently applied for the position of assistant manager. She was disappointed that the position was given to a male colleague who has only been employed in the company for two years and is less qualified than Katie. Katie feels she has been discriminated against based on her gender. She is considering contacting the Workplace Relations Commission.",
     questionText: "Outline three grounds (other than gender) on which discrimination is outlawed under the Employment Equality Act 1998-2015.",
     tariffModel: {"kind":"bestNofParts","notation":"3 x 5m (4+1)","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any three of the following grounds, each outlined", marks: null, contextNote: "The scheme prints 5m (4+1) three times, so four of each five is for naming the ground and one for the words that outline it. Gender is the ninth ground under the Act and this question rules it out.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Age: younger and older employees cannot be treated differently.","Religious beliefs: a person’s religion, background, outlook, or none.","Sexual Orientation: gay, lesbian, bisexual and heterosexual.","Disability: physical, intellectual, learning, or emotional disabilities.","Civil Status: single, married, separated, divorced, widowed or in a civil partnership.","Family Status: parents or employees without children should not be treated in a less favourable manner.","Race: skin colour, nationality, or ethnic origin.","Membership of Travelling Community."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2235,7 +2318,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q1ei", topicId: "business-0-14", conceptId: "causes-of-industrial-relations-disputes",
     section: "2", questionRef: "2022 OL Section 2 Q1(E)(i)",
-    stem: "People in Business. Read the information supplied and answer the questions which follow. Katie has worked in the accounts department of a large company for 6 years. She recently applied for the position of assistant manager. She was disappointed that the position was given to a male colleague who has only been employed in the company for two years and is less qualified than Katie. Katie feels she has been discriminated against based on her gender. She is considering contacting the Workplace Relations Commission.",
     questionText: "Explain three reasons other than discrimination for an industrial relations dispute in the workplace.",
     tariffModel: {"kind":"orderedSplit","notation":"6m (4+2) then 6m (4+2) then 3m (2+1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -2243,6 +2325,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "The second reason given: any one of the following", marks: null, contextNote: "The second reason is priced the same as the first, 6m (4+2) — four for the reason, two for explaining it.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Wages: workers may take industrial action over wages. They may use different pay claims, e.g., cost of living claim, comparability claim or relativity claim.","Working conditions: unsafe working conditions, unsafe equipment, poor hygiene and inadequate heating can lead to industrial disputes.","New work practices/new technology: the introduction of new technology or change in work practices may result in a dispute.","Reduction in working hours or being asked to work irregular hours.","Demarcation issues: a dispute over who does which task in the workplace.","Redundancies: if workers feel that unfair procedures for selection are being used or if redundancy payments are not adequate.","Trade Union recognition: employees may take industrial action if their employer refuses to engage with their union.","Unfair dismissal: if an employee feels they were dismissed on illegal grounds e.g., race, beliefs, age, sexuality."]} },
     { id: "r-3", kind: "anyN", verbatim: "The third reason given: any one of the following", marks: null, contextNote: "The scheme drops the third reason to 3m (2+1): two for the reason and one for explaining it. The 6, 6 and 3 follow the order the three answers are written rather than attaching to particular reasons on this list.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Wages: workers may take industrial action over wages. They may use different pay claims, e.g., cost of living claim, comparability claim or relativity claim.","Working conditions: unsafe working conditions, unsafe equipment, poor hygiene and inadequate heating can lead to industrial disputes.","New work practices/new technology: the introduction of new technology or change in work practices may result in a dispute.","Reduction in working hours or being asked to work irregular hours.","Demarcation issues: a dispute over who does which task in the workplace.","Redundancies: if workers feel that unfair procedures for selection are being used or if redundancy payments are not adequate.","Trade Union recognition: employees may take industrial action if their employer refuses to engage with their union.","Unfair dismissal: if an employee feels they were dismissed on illegal grounds e.g., race, beliefs, age, sexuality."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2251,12 +2343,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q1eii", topicId: "business-0-14", conceptId: "types-of-industrial-action",
     section: "2", questionRef: "2022 OL Section 2 Q1(E)(ii)",
-    stem: "People in Business. Read the information supplied and answer the questions which follow. Katie has worked in the accounts department of a large company for 6 years. She recently applied for the position of assistant manager. She was disappointed that the position was given to a male colleague who has only been employed in the company for two years and is less qualified than Katie. Katie feels she has been discriminated against based on her gender. She is considering contacting the Workplace Relations Commission.",
     questionText: "Outline one type of industrial action available to employees involved in an industrial dispute with an employer.",
     tariffModel: {"kind":"bestNofParts","notation":"5m (4+1)","answer":1,"ofParts":5,"perPart":5}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any one of the following types of industrial action, outlined", marks: null, contextNote: "The scheme prints 5m (4+1): four for naming the type of industrial action and one for the words that outline it, so a type named and left there stops at four.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Strike: where the employees do not enter their workplace and do not do their duties.","Work- to- rule: where employees only undertake the exact jobs written in their job description or contract of employment.","Overtime ban: where workers refuse to do overtime. This can cause major disruption, leading to lost orders and lost sales, especially at peak trading times, e.g., a toy shop at Christmas.","Token Stoppage: a brief stoppage of work by the workers to highlight their frustration. It highlights their intention to carry the threat of further, more serious action, if agreement is not reached.","Go-slow: employees work more slowly and less effectively."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2293,12 +2394,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q2b", topicId: "business-5-15", conceptId: "government-impact-on-business",
     section: "2", questionRef: "2022 OL Section 2 Q2(B)",
-    stem: "Section 2, Question 2 (Domestic Environment). Read the information supplied and answer the questions which follow. The information supplied is a boxed news panel: a photograph from a Government press conference, showing a speaker at a bank of microphones in front of a Rialtas na hÉireann / Government of Ireland backdrop, with the caption \"CABINET APPROVES CHANGE TO THE IRISH CORPORATION TAX RATE\" printed beneath it.",
     questionText: "The Government assists business in Ireland in many ways. Outline two impacts, other than taxation, the Government has on Irish businesses.",
     tariffModel: {"kind":"orderedSplit","notation":"8m(4+4) + 7m(4+3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Grant aid – Government provides grant aid to businesses for start-up, expansion, R&D etc.", marks: null, accepts: ["Infrastructure – Government provide infrastructure which allow businesses to operate efficiently e.g., transport links, communication utilities etc.","Education & Training – Government funds education and training which benefit business, who can access a skilled workforce","Regulation – Government implement legislation which regulates how business can operate e.g., Companies Act, Employment law etc."], contextNote: "The paper asks for two impacts, and these four are the examiner's sample. The 8 and the 7 go to the first and second impact you gave, not to particular impacts on this list, so any two of them score 8 then 7. The 8 splits 4 + 4 and the 7 splits 4 + 3, so the explanation after the heading carries nearly half the marks — \"Grant aid\" on its own is worth four.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2609,12 +2719,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q6ai", topicId: "business-3-16", conceptId: "medium-term-sources-of-finance",
     section: "2", questionRef: "2022 OL Section 2 Q6(A)(i)",
-    stem: "Managing. Read the information supplied and answer the questions which follow. Ryan’s Dog Groomers. Ryan Murphy runs a successful dog grooming business. In the last two years, he has noticed an increased demand for his services as pet ownership in Ireland increases. To continue to meet demand Ryan is planning to expand his business.",
     questionText: "Ryan has the option of three medium term sources of finance for the purchase of his van: Medium Term Loan, Hire Purchase, Leasing. Explain two of these sources of finance.",
     tariffModel: {"kind":"bestNofParts","notation":"2@7m(4+3)","answer":2,"ofParts":3,"perPart":7}, totalMarks: 14,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any two of the three sources supplied, each explained", marks: null, contextNote: "Each source is marked 4 + 3: four for saying what the source is and three for the detail that follows it — the repayment period, the instalments, who ends up owning the asset. A source named and left there stops at four. The question supplies these three and asks for two of them, so a fourth source of finance, however correct in itself, is not one of these and earns nothing.", group: {"claimMax":2,"perOption":7,"options":["Medium Term Loan – a loan from financial institution taken out over a 1–5-year period, which must be repaid in equal instalments with interest. Collateral may be required.","Hire Purchase – allows a business to purchase an item/asset via a finance company. A deposit is paid and equal instalments with interest are paid over a 1 to 5-year period. Ownership of the item is not transferred to the hirer until the final instalment is paid.","Leasing – this involves renting/hiring an asset over a 1 to 5-year period and making monthly payments for the item. The hirer never gains ownership of the asset."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2637,12 +2756,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q6b", topicId: "business-3-17", conceptId: "types-of-business-insurance",
     section: "2", questionRef: "2022 OL Section 2 Q6(B)",
-    stem: "Managing. Read the information supplied and answer the questions which follow. Ryan’s Dog Groomers. Ryan Murphy runs a successful dog grooming business. In the last two years, he has noticed an increased demand for his services as pet ownership in Ireland increases. To continue to meet demand Ryan is planning to expand his business. As part of this expansion, he is planning to purchase a van so he can launch a mobile dog grooming service.",
     questionText: "Outline three types of insurance you would expect Ryan’s Dog Groomers to have.",
     tariffModel: {"kind":"bestNofParts","notation":"3@5m(3+2)","answer":3,"ofParts":7,"perPart":5}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any three of the following types of insurance", marks: null, contextNote: "Each type is marked 3 + 2: three for naming the insurance and two for saying what it covers. A list of three names with nothing after them stops at 9 of the 15.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Property insurance –to cover financial loss to the buildings in the event of burglary or damage.","Public Liability Insurance – protects the business from claims made by members of the public for accidents on the premises.","Employers Liability Insurance – protects the business from claims made by employees for accidents in the workplace or in the duty of their work","Contents Insurance – protects against theft or damage to stock and equipment in the event of flooding or theft.","Cash in transit – protects the business if cash is stolen while in transit to bank.","Plate Glass Window insurance – covers replacement of front window of business in the event of damage/breakage.","Motor Insurance (Comprehensive) will be required if he purchases the van – this covers everyone, including Ryan, if he is involved in an accident."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2735,12 +2863,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q7ci", topicId: "business-3-20", conceptId: "gross-pay-with-commission-calculation",
     section: "2", questionRef: "2022 OL Section 2 Q7(C)(i)",
-    stem: "Managing. Read the information supplied and answer the questions which follow.\n\nValue Insurance Ltd: Leah Corcoran recently began a new job as an insurance sales agent at Value Insurance Ltd in Limerick city. Value Insurance Ltd is a growing company that sells a variety of insurance policies to individuals, families, and businesses. She is paid a basic wage of €400 per week plus a commission of 5% on all sales she makes.",
     questionText: "In Week 24 Leah achieved sales to the value of €20,000. Using the information supplied above calculate Leah's Gross Pay for Week 24. Show your workings.",
     tariffModel: {"kind":"fixed","notation":"10m (2 + 2 + 2 + 2 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "€20,000 × 5% = €1,000 + €400 = €1,400", marks: 10 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2763,7 +2900,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q7d", topicId: "business-3-20", conceptId: "benefits-of-internal-recruitment",
     section: "2", questionRef: "2022 OL Section 2 Q7(D)",
-    stem: "Managing. Read the information supplied and answer the questions which follow.\n\nValue Insurance Ltd: Leah Corcoran recently began a new job as an insurance sales agent at Value Insurance Ltd in Limerick city. Value Insurance Ltd is a growing company that sells a variety of insurance policies to individuals, families, and businesses. The business is currently seeking a new Claims Team Manager and the Human Resource Manager is considering internal recruitment.",
     questionText: "Outline two benefits to the business of internal recruitment.",
     tariffModel: {"kind":"orderedSplit","notation":"8m (4 + 4) then 7m (4 + 3)","answer":2,"ofParts":4,"perPart":null}, totalMarks: 15,
     rows: [
@@ -2772,6 +2908,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Staff are motivated to work harder if promotions are possible.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Cheaper – saves money on advertising the position.", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2780,7 +2926,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
     id: "bus-2022-ol-s2-q7e", topicId: "business-3-20", conceptId: "importance-of-good-employer-employee-relations",
     section: "2", questionRef: "2022 OL Section 2 Q7(E)",
-    stem: "Managing. Read the information supplied and answer the questions which follow.\n\nValue Insurance Ltd: Leah Corcoran recently began a new job as an insurance sales agent at Value Insurance Ltd in Limerick city. Value Insurance Ltd is a growing company that sells a variety of insurance policies to individuals, families, and businesses. All employees work on sales teams. The business is currently seeking a new Claims Team Manager and the Human Resource Manager is considering internal recruitment.",
     questionText: "Explain two reasons why maintaining good Employer/Employee relations is an important role of the Human Resource Manager.",
     tariffModel: {"kind":"orderedSplit","notation":"8m (4 + 4) then 7m (4 + 3)","answer":2,"ofParts":4,"perPart":null}, totalMarks: 15,
     rows: [
@@ -2789,6 +2934,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Low labour turnover – if there is a positive relationship between HR manager and staff there is less chance of employees leaving the organisation.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Less absenteeism – the good relationship between management staff ensures employees are happier in their jobs and less likely to miss workdays.", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Business 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3159,13 +3314,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission.",
     id: "bus-2023-ol-s2-q4ai", topicId: "business-0-13", conceptId: "credit-note-and-change-of-mind-returns",
     section: "2", questionRef: "2023 OL Section 2 Q4(A)(i)",
-    stem: "Question 4 — People in Business.\n\nRead the information supplied and answer the questions which follow.\n\nConsumer problems: Jack McCarthy purchased a pair of hiking boots from Outdoor Life in Gateway Shopping Centre. After he tried them on again at home, he found the boots to be slightly uncomfortable and went back to the store to return them. The sales assistant told him he would have to accept a Credit Note if he wanted to return the boots.",
     questionText: "Does Jack have to accept the Credit Note? Explain your answer.",
     tariffModel: {"kind":"fixed","notation":"Yes 4 marks + Explanation 6 marks (3m + 3m)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Yes, he does.", marks: 4, contextNote: "Four of the ten marks are for the verdict on its own, before a word of reasoning. The scheme's marks column prints 4 against this line, and the Question 4 structure grid repeats it as \"(i) Yes 4 marks\"." },
     { id: "r-2", kind: "point", verbatim: "As there is no fault with the product, the retailer is not obliged to provide a refund/replacement. The retailer must provide a refund/repair/replacement of the item if any of the provisions of the Sale of Goods & Supply of Services Act 1980 are broken. In this situation, Jack tried them on in the store and purchased the item. He changed his mind and returned the boots; there was no fault with the product.", marks: 6, contextNote: "The remaining six are printed as 3 + 3 — two awards inside one paragraph. The scheme's explanation does two things: it states the rule (no fault, so no obligation to refund or replace) and it applies that rule to Jack, though the SEC does not print which of the two earns which 3. A candidate who wrote only \"Yes\" and stopped has 4 of 10.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Business 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3188,12 +3352,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission.",
     id: "bus-2023-ol-s2-q4b", topicId: "business-0-13", conceptId: "consumer-agencies-ccpc-and-cai",
     section: "2", questionRef: "2023 OL Section 2 Q4(B)",
-    stem: "Question 4 — People in Business.\n\nRead the information supplied and answer the questions which follow.\n\nConsumer problems: Jack McCarthy purchased a pair of hiking boots from Outdoor Life in Gateway Shopping Centre. After he tried them on again at home, he found the boots to be slightly uncomfortable and went back to the store to return them. The sales assistant told him he would have to accept a Credit Note if he wanted to return the boots.",
     questionText: "Name and explain one consumer agency that helps Jack to be more aware of his consumer rights.",
     tariffModel: {"kind":"bestNofParts","notation":"Agency: 5 marks + Explanation: 10m (5m + 5m)","answer":1,"ofParts":2,"perPart":15}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "One consumer agency, named and explained.", marks: null, contextNote: "Naming the agency is worth 5 and explaining it 10, and the ten are printed as 5m + 5m — two separate awards inside the explanation rather than one. The scheme puts its marks beside the CCPC because it is the first sample answer; the Consumers Association of Ireland is printed as a full alternative and is marked the same way.", openList: true, group: {"claimMax":1,"perOption":15,"options":["Competition & Consumer Protection Commission (CCPC) The CCPC is responsible for informing consumers about their rights in relation to the purchase of goods & services. It provides information via its website, a telephone service, and media advertisements. The website provides tools which help consumers make more informed choices.","Consumers Association of Ireland (CAI) The CAI is an independent, non-profit, non-governmental organisation that works on behalf of Irish consumers. Through their website and monthly magazine Consumer Choice, they provide information to consumers on their rights, financial products, food safety, health issues, etc."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Business 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4714,12 +4887,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q4ci", topicId: "business-0-12", conceptId: "terminating-a-contract-by-breach",
     section: "2", questionRef: "2025 OL Section 2 Q4(C)(i)",
-    stem: "People in Business. Read the information supplied and answer the questions which follow. On 6 January 2025, the McGrath family signed a contract with Buildings AFD Ltd to add a conservatory to their home for an agreed cost. A deposit was paid, and the project was scheduled to be completed by 1 May 2025. This was specified in the contract. However, it is now 1 June 2025, and the project is still not started.",
     questionText: "Explain with reference to the text above one way the McGrath family can terminate the contract.",
     tariffModel: {"kind":"fixed","notation":"10 Marks (7m + 3m)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The McGrath family can terminate on grounds of Breach as Buildings AFD Ltd did not have the conservatory completed on 1 May 2025 as outlined in the contract. They did not complete their part of the contract.", marks: 10, contextNote: "Ten marks, printed 10 Marks (7m + 3m). The scheme does not label the two halves, but its answer names the ground and then points at the facts, and the question says \"with reference to the text above\", so the word Breach on its own is not the whole answer: the dates matter. Buildings AFD Ltd did not have the conservatory completed on 1 May 2025 as the contract specified, and they did not complete their part of it." },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Business 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4728,12 +4910,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q4cii", topicId: "business-0-12", conceptId: "methods-of-terminating-a-legal-contract",
     section: "2", questionRef: "2025 OL Section 2 Q4(C)(ii)",
-    stem: "People in Business. Read the information supplied and answer the questions which follow. On 6 January 2025, the McGrath family signed a contract with Buildings AFD Ltd to add a conservatory to their home for an agreed cost. A deposit was paid, and the project was scheduled to be completed by 1 May 2025. This was specified in the contract. However, it is now 1 June 2025, and the project is still not started. (i) Explain with reference to the text above one way the McGrath family can terminate the contract.",
     questionText: "Explain one other way a contract can be terminated.",
     tariffModel: {"kind":"bestNofParts","notation":"5 Marks (4m + 1m)","answer":1,"ofParts":3,"perPart":5}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any one of the following other ways a contract can be terminated", marks: null, contextNote: "Five marks for one method, printed 5 Marks (4m + 1m), and it has to be a method other than the one the text above illustrates. The scheme does not label the two halves, but it prints each method as a name followed by a sentence explaining it, so the 4 is for the method and the 1 for that explanation: a single word does not reach five.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Performance – both parties in the contract fulfil their part of the contract and it comes to its natural end.","Agreement – both parties agree to end the contract before it is completed.","Frustration – an unforeseen event makes it impossible to complete the contract."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Business 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4788,13 +4979,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q5a", topicId: "business-1-5", conceptId: "risks-and-rewards-of-enterprise",
     section: "2", questionRef: "2025 OL Section 2 Q5(A)",
-    stem: "Enterprise / Managing. Read the information supplied and answer the questions which follow. Aimee Connolly is honoured as the Emerging Entrepreneur of the Year. Aimee Connolly, a makeup artist and beauty entrepreneur, founded Sculpted by Aimee in 2016. At the age of 23, she launched her own brand, driven by her desire to create products she felt were missing, all with a focus on making them more accessible. Today, Sculpted by Aimee is one of the fastest-growing brands in its field. It reported a 50% increase in revenue, reaching €22.23 million last year. It has 55 employees, over 500 stockists, and, together with its booming online shopping website, it exports to 68 countries. Adapted from thinkbusiness.ie",
     questionText: "Outline one risk and one reward for Aimee of setting up her own business.",
     tariffModel: {"kind":"fixed","notation":"10m (7 + 3) + 5m (4 + 1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The risk you outlined: any one of the following", marks: null, contextNote: "The scheme prices the risk 10m (7 + 3): seven for naming the risk and three for the sentence developing it. Outline is the command word, so a risk named and left there stops three marks short.", openList: true, group: {"claimMax":1,"perOption":10,"options":["No guaranteed income – may not have enough money to run the business.","Hard to raise finance/acquire loans – Aimee might find it difficult to raise finance for the business as she is on her own.","Stress – must work long hours to get business going. Settng up a new business can cause a lot of stress.","Competition – may not be able to compete with existing businesses in terms of quality of service and price. Make up is a highly competitive market.","Business failure – the business model might not be successful, forcing the business to close. Aimee may lose her investment and possibly damage her reputation if the business is not a success."]} },
     { id: "r-2", kind: "anyN", verbatim: "The reward you outlined: any one of the following", marks: null, contextNote: "The reward is priced 5m (4 + 1) — four for naming it, one for developing it. The scheme puts the larger 7 + 3 beside its Risks list and the smaller 4 + 1 beside its Rewards list, so the reward is worth five however well it is written. A second risk instead of a reward scores nothing, because the question names one of each.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Profit – a successful business can generate good profit for the entrepreneur. Revenue reached €22.23 million last year.","Independence – the entrepreneur has control over their own working life and makes decisions to suit themselves.","Satisfaction – the challenge of settng up a business is rewarded if the business is successful.","Generating wealth for others – providing employment, spin-off business creation etc. Aimee employs 55 staff."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Business 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4803,13 +5003,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q5b", topicId: "business-4-14", conceptId: "sources-of-business-ideas",
     section: "2", questionRef: "2025 OL Section 2 Q5(B)",
-    stem: "Enterprise / Managing. Read the information supplied and answer the questions which follow. Aimee Connolly is honoured as the Emerging Entrepreneur of the Year. Aimee Connolly, a makeup artist and beauty entrepreneur, founded Sculpted by Aimee in 2016. At the age of 23, she launched her own brand, driven by her desire to create products she felt were missing, all with a focus on making them more accessible. Today, Sculpted by Aimee is one of the fastest-growing brands in its field. It reported a 50% increase in revenue, reaching €22.23 million last year. It has 55 employees, over 500 stockists, and, together with its booming online shopping website, it exports to 68 countries. Adapted from thinkbusiness.ie",
     questionText: "Aimee turned her passion into a business opportunity. Outline two other sources of new product/business ideas.",
     tariffModel: {"kind":"orderedSplit","notation":"10m (7 + 3) + 5m (4 + 1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The first source you outlined: any one of the following", marks: null, contextNote: "The scheme prices the first answer 10m (7 + 3): seven for naming the source and three for the sentence developing it. Outline is the command word, so a source named on its own leaves the three behind.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Research and Development – A specific R & D department is responsible for coming up with ideas.","Foreign Travel – An entrepreneur may spot a successful product/service abroad and set up similar in Ireland.","Family/Friends – family members, friends or colleagues might make a suggestion or highlight a problem with an existing product.","Hobbies/skills – The entrepreneur may be able to turn a hobby into a successful business.","Internet/Media – ideas from newspapers, TV, radio, websites.","Trends – An entrepreneur will keep an eye on market trends to identify a new product/service.","Competitors – Copy/adapt/improve a competitor’s product or service.","Brainstorming/Intrapreneurship – Employees come together, and bounce ideas off each other.","Customer feedback – Listen to what customers want and make a product to suit their needs."]} },
     { id: "r-2", kind: "anyN", verbatim: "The second source you outlined: any one of the following", marks: null, contextNote: "The second answer is priced 5m (4 + 1), and it has to be a different source from the one above. The 10 and the 5 follow the order you answered in rather than particular sources, so whichever source you wrote first takes the 10. The question asks for sources OTHER than the one it has already given you, turning a passion or hobby into a business.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Research and Development – A specific R & D department is responsible for coming up with ideas.","Foreign Travel – An entrepreneur may spot a successful product/service abroad and set up similar in Ireland.","Family/Friends – family members, friends or colleagues might make a suggestion or highlight a problem with an existing product.","Hobbies/skills – The entrepreneur may be able to turn a hobby into a successful business.","Internet/Media – ideas from newspapers, TV, radio, websites.","Trends – An entrepreneur will keep an eye on market trends to identify a new product/service.","Competitors – Copy/adapt/improve a competitor’s product or service.","Brainstorming/Intrapreneurship – Employees come together, and bounce ideas off each other.","Customer feedback – Listen to what customers want and make a product to suit their needs."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Business 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4818,12 +5027,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q5c", topicId: "business-1-5", conceptId: "entrepreneurial-characteristics",
     section: "2", questionRef: "2025 OL Section 2 Q5(C)",
-    stem: "Enterprise / Managing. Read the information supplied and answer the questions which follow. Aimee Connolly is honoured as the Emerging Entrepreneur of the Year. Aimee Connolly, a makeup artist and beauty entrepreneur, founded Sculpted by Aimee in 2016. At the age of 23, she launched her own brand, driven by her desire to create products she felt were missing, all with a focus on making them more accessible. Today, Sculpted by Aimee is one of the fastest-growing brands in its field. It reported a 50% increase in revenue, reaching €22.23 million last year. It has 55 employees, over 500 stockists, and, together with its booming online shopping website, it exports to 68 countries. Adapted from thinkbusiness.ie",
     questionText: "Outline three entrepreneurial characteristics/skills associated with entrepreneurs like Aimee.",
     tariffModel: {"kind":"bestNofParts","notation":"3@5m (4 + 1)","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any three of these characteristics/skills, each outlined and linked to Aimee", marks: null, contextNote: "Each characteristic is worth 5, split 4 + 1: naming the characteristic and explaining what it means, then linking it back to Aimee and Sculpted. Only three are marked — a fourth scores nothing however good it is.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Risk Taker: Entrepreneurs are not afraid of taking both a personal risk and a financial risk when they set up their own business. They work long hours and invest their money in the business. Aimee invested her money and time when she opened Sculpted.","Innovative: Entrepreneurs are inventive when they come up with new ideas for their business. They have to think outside the box to continue to develop these new ideas. Aimee at the age of 23 launched her own brand.","Decisive: Entrepreneurs have to be able to make good decisions quickly, so that they don’t miss out on any opportunities that may arise. Aimee wanted to make her products more accessible.","Reality Perception: Entrepreneurs need to see things as they are and not how they might like to see them. When things go wrong, they must identify this quickly and act. Aimee created products that were missing from the market.","Flexible/Adaptable: Entrepreneurs must be capable of changing their approach to business as situations change. The business environment is constantly changing, and successful entrepreneurs must adapt to these changes. Aimee realised that selling online was as important as selling her products in shops. Aimee exports to 68 countries.","Human Relations: Entrepreneurs need to be good with people and bring out the best in them. Aimee has 55 employees working for her."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Business 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4832,13 +5050,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q5d", topicId: "business-2-12", conceptId: "social-media-as-a-communication-method",
     section: "2", questionRef: "2025 OL Section 2 Q5(D)",
-    stem: "Enterprise / Managing. Read the information supplied and answer the questions which follow. Aimee Connolly is honoured as the Emerging Entrepreneur of the Year. Aimee Connolly, a makeup artist and beauty entrepreneur, founded Sculpted by Aimee in 2016. At the age of 23, she launched her own brand, driven by her desire to create products she felt were missing, all with a focus on making them more accessible. Today, Sculpted by Aimee is one of the fastest-growing brands in its field. It reported a 50% increase in revenue, reaching €22.23 million last year. It has 55 employees, over 500 stockists, and, together with its booming online shopping website, it exports to 68 countries. Adapted from thinkbusiness.ie",
     questionText: "Outline two benefits for Aimee of using social media to communicate with her customers.",
     tariffModel: {"kind":"orderedSplit","notation":"10m (7 + 3) + 5m (4 + 1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The first benefit you outlined: any one of the following", marks: null, contextNote: "The scheme prices the first answer 10m (7 + 3): seven for naming the benefit and three for the sentence developing it. Outline is the command word, so a benefit named on its own leaves the three behind.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Direct advertisement – social media allows businesses to tailor their advertising directly to their target market.","Reduced costs – social media advertising is much cheaper than traditional methods of advertising","Creates customer loyalty – customers who start to ‘follow’ certain businesses or brands are generally more loyal to the business","Instant and unlimited sales – advertising through social media allows a business to link directly to their website which can initiate immediate sales from an advertisement.","Creates a relationship with customer – regular posting on social media as well as direct messaging allows a personal relationship to be developed with customers.","Easy to monitor customer feedback – positive and negative reactions.","Customers sharing links with friends – increasing target market."]} },
     { id: "r-2", kind: "anyN", verbatim: "The second benefit you outlined: any one of the following", marks: null, contextNote: "The second answer is priced 5m (4 + 1), and it has to be a different benefit from the one above. The 10 and the 5 follow the order you answered in rather than particular benefits, so whichever benefit you wrote first takes the 10.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Direct advertisement – social media allows businesses to tailor their advertising directly to their target market.","Reduced costs – social media advertising is much cheaper than traditional methods of advertising","Creates customer loyalty – customers who start to ‘follow’ certain businesses or brands are generally more loyal to the business","Instant and unlimited sales – advertising through social media allows a business to link directly to their website which can initiate immediate sales from an advertisement.","Creates a relationship with customer – regular posting on social media as well as direct messaging allows a personal relationship to be developed with customers.","Easy to monitor customer feedback – positive and negative reactions.","Customers sharing links with friends – increasing target market."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Business 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4847,12 +5074,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q5ei", topicId: "business-2-13", conceptId: "meaning-of-stock-control",
     section: "2", questionRef: "2025 OL Section 2 Q5(E)(i)",
-    stem: "Enterprise / Managing. Read the information supplied and answer the questions which follow. Aimee Connolly is honoured as the Emerging Entrepreneur of the Year. Aimee Connolly, a makeup artist and beauty entrepreneur, founded Sculpted by Aimee in 2016. At the age of 23, she launched her own brand, driven by her desire to create products she felt were missing, all with a focus on making them more accessible. Today, Sculpted by Aimee is one of the fastest-growing brands in its field. It reported a 50% increase in revenue, reaching €22.23 million last year. It has 55 employees, over 500 stockists, and, together with its booming online shopping website, it exports to 68 countries. Adapted from thinkbusiness.ie",
     questionText: "Explain the term stock control.",
     tariffModel: {"kind":"fixed","notation":"3m","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Stock control means ensuring that the business has optimum stock. This means the right amount of stock, at the right time. A business should not have too much or too little stock.", marks: 3, contextNote: "Part (E) carries 15 between its two halves and the scheme prices this definition at 3. Optimum stock is the idea being paid for — the right amount of stock, at the right time, neither too much nor too little.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Business 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4861,12 +5097,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q5eii", topicId: "business-2-13", conceptId: "importance-of-stock-control",
     section: "2", questionRef: "2025 OL Section 2 Q5(E)(ii)",
-    stem: "Enterprise / Managing. Read the information supplied and answer the questions which follow. Aimee Connolly is honoured as the Emerging Entrepreneur of the Year. Aimee Connolly, a makeup artist and beauty entrepreneur, founded Sculpted by Aimee in 2016. At the age of 23, she launched her own brand, driven by her desire to create products she felt were missing, all with a focus on making them more accessible. Today, Sculpted by Aimee is one of the fastest-growing brands in its field. It reported a 50% increase in revenue, reaching €22.23 million last year. It has 55 employees, over 500 stockists, and, together with its booming online shopping website, it exports to 68 countries. Adapted from thinkbusiness.ie",
     questionText: "Outline two reasons why stock control is important to a business like Sculpted.",
     tariffModel: {"kind":"bestNofParts","notation":"2@6m (5 + 1)","answer":2,"ofParts":6,"perPart":6}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any two of these reasons, each outlined", marks: null, contextNote: "Each reason is worth 6, split 5 + 1: the reason itself earns the 5 and the sentence developing it earns the 1. Only two are marked. With the 3 for the definition in (E)(i) these twelve make up the 15 the whole of part (E) carries.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Use cash wisely – It ensures money is not tied up in stock that could be used to reduce debts or avail of discounts elsewhere.","Reduces costs – Storage of stock costs money, e.g., warehousing, insurance, security.","Ensures quality is maintained – Stock can become obsolete (out of date) or damaged making it difficult to sell.","Ensure optimum stock levels – Stock control involves ensuring the business always has sufficient stock to meet customer requirements.","Reduce risk of theft – If stock is left lying around in a shop or warehouse there is more risk of theft.","Maintaining customer satisfaction and loyalty – If a business does not have enough stock customers will move to a different supplier resulting in loss of sales and profit."]} },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Business 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

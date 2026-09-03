@@ -1,0 +1,57 @@
+{
+  "computer-science-2021-OL-paper-q4-figure": {
+    "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q4-figure.png",
+    "md5": "f963aa4c8effd2f4c806e3fffb7ea80c",
+    "alt": "Figure 1 from the official 2021 Ordinary Level paper: autonomous orange drones moving goods between warehouse shelving.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2021 OL Q4",
+    "year": 2021,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+  },
+  "computer-science-2021-OL-paper-q6-figure": {
+    "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q6-figure.png",
+    "md5": "bf0209fb0ed8d53769d0bfe34615a46e",
+    "alt": "The four official tick-box choices for ‘What is HTTP?’: the language used to program web pages; the method for encoding data securely; the web browser; or the protocol for transferring hypertext for webpages.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2021 OL Q6",
+    "year": 2021,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+  },
+  "computer-science-2022-HL-paper-q15c-code": {
+    "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q15c-code.png",
+    "md5": "9855a17d599c6b98081b60c16eb26dc0",
+    "alt": "The official 2022 Higher Level Question 15(c) Python program, with line numbers 1 to 11, which calculates an ISBN check digit.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2022 HL Q15(c)(ii)–(iii)",
+    "year": 2022,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+  },
+  "computer-science-2022-HL-paper-q15c-trace": {
+    "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q15c-trace.png",
+    "md5": "aa312dd3c308073996a1da679c179604",
+    "alt": "The official 2022 Higher Level Question 15(c) Python program followed by its partially completed trace table, with columns i, digit, total and isbn and rows i = 2 through 10.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2022 HL Q15(c)(i)",
+    "year": 2022,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+  },
+  "computer-science-2023-HL-paper-q10-figure": {
+    "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q10-figure.png",
+    "md5": "ef56788b2a0fbb15c20cfc069ec2702d",
+    "alt": "Figure 5 from the official 2023 Higher Level paper: an unsorted list containing 60, 30, 80, 40, 10, 50, 20, 70 and 90, in that order.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2023 HL Q10",
+    "year": 2023,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+  }
+}

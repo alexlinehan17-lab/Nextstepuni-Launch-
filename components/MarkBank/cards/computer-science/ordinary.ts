@@ -62,12 +62,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "cs-2021-ol-q4", topicId: "cs-1-1", conceptId: "image-figure-1-shows-drones-operating",
     section: "A", questionRef: "2021 OL Q4",
-    stem: "The image in Figure 1 shows drones operating inside a modern warehouse full of goods. This is one example of how computing technology can help automate processes. Give another example of how computing technology can be used to automate a process and explain one benefit provided by your example. Figure 1",
     questionText: "The image in Figure 1 shows drones operating inside a modern warehouse full of goods. This is one example of how computing technology can help automate processes. Give another example of how computing technology can be used to automate a process and explain one benefit provided by your example.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any valid example", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q4-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q4-figure.png",
+          "srcHash": "f963aa4c8effd2f4c806e3fffb7ea80c",
+          "alt": "Figure 1 from the official 2021 Ordinary Level paper: autonomous orange drones moving goods between warehouse shelving.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -431,7 +438,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "cs-2021-ol-q6", topicId: "cs-2-3", conceptId: "answer-following-question-putting-tick-relevant",
     section: "A", questionRef: "2021 OL Q6",
-    questionText: "(a) Answer the following question by putting a tick (✓) in the relevant box. Tick one box only. (b) Describe one difference between the World Wide Web (WWW) and the Internet.",
+    questionText: "(a) Answer the following question by putting a tick (✓) in the relevant box. Tick one box only. What is HTTP? (b) Describe one difference between the World Wide Web (WWW) and the Internet.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "the language used to program web pages", marks: null },
@@ -443,6 +450,14 @@ export const CARDS: SecCard[] = [
     { id: "r-7", kind: "point", verbatim: "The world wide web is online content (webpages) – formatted in HTML and uses the HTTP", marks: null },
     { id: "r-8", kind: "point", verbatim: "protocol.", marks: null },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q6-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q6-figure.png",
+          "srcHash": "bf0209fb0ed8d53769d0bfe34615a46e",
+          "alt": "The four official tick-box choices for ‘What is HTTP?’: the language used to program web pages; the method for encoding data securely; the web browser; or the protocol for transferring hypertext for webpages.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -698,7 +713,7 @@ export const CARDS: SecCard[] = [
     questionText: "Suggest three improvements to the design of this website.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Spread content across all the webpage // Be more consistent with text size. // Use more colours that complement each other. // Make the website more accessible. // Add in a navigation bar with links // Place search bar in more prominent place on the site.", marks: null, openList: true, group: {"claimMax":3,"perOption":2,"options":["Spread content across all the webpage","Be more consistent with text size.","Use more colours that complement each other.","Make the website more accessible.","Add in a navigation bar with links","Place search bar in more prominent place on the site."]} },
+    { id: "r-improvements", kind: "anyN", verbatim: "Any three website-design improvements", marks: null, openList: true, group: {"claimMax":3,"perOption":2,"options":["Spread content across all the webpage","Be more consistent with text size.","Use more colours that complement each other.","Make the website more accessible.","Add in a navigation bar with links","Place search bar in more prominent place on the site."]} },
     ],
     figure: {
           "candId": "computer-science-2022-OL-paper-q15-fig0",
@@ -828,7 +843,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "cs-2022-ol-q16", topicId: "cs-2-2", conceptId: "open-program-called-question16-py-your",
     section: "B", questionRef: "2022 OL Q16",
-    questionText: "(i) Insert a comment in an appropriate place to say “user enters first name”. (ii) Amend the program to ask for and accept the user's surname. Store the user’s surname in a variable called surname. (iii) Amend the program so that the user’s first name and their surname are printed when they are asked to select their item. (iv) Amend the program so that the items 2 = Ruler and 3 = Pen appear in the shopping list under the item 1 = Book. (v) Amend the program so that a dashed line appears above and below the available items. (vi) Amend the program so that the correct message is printed if the user purchases a ruler or pen. (vii) Amend the program to deal with invalid number entries. If the user enters any number other than the numbers 1, 2 or 3 they should be presented with an error message. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. 2 # Examination Number: 3 4 firstName = input(\"What is your first name? \") 5 6 print(\"Hello\", firstName) 7 print(\"Please select from the list of items.\\n\") 8 # \\n creates a new line 9 10 print(\"\\tItems Available\") # \\t creates a tab 11 print(\"1 = Book\") 12 13 shoppingItem = int(input(\"\\nEnter the number of the item you would like: \")) 14 15 if shoppingItem == 1: 16 print(\"You bought a book\") 17 The program above is to simulate an automated shop. The aim of the program is to accept the name of the user and then to ask the user to choose what item they would like to buy. The user will select the number of the item they wish to buy and the program outputs a message confirming the item they chose.",
+    questionText: "(a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. The program above is to simulate an automated shop. The aim of the program is to accept the name of the user and then to ask the user to choose what item they would like to buy. The user will select the number of the item they wish to buy and the program outputs a message confirming the item they chose. (i) Insert a comment in an appropriate place to say “user enters first name”. (ii) Amend the program to ask for and accept the user's surname. Store the user’s surname in a variable called surname. (iii) Amend the program so that the user’s first name and their surname are printed when they are asked to select their item. (iv) Amend the program so that the items 2 = Ruler and 3 = Pen appear in the shopping list under the item 1 = Book. (v) Amend the program so that a dashed line appears above and below the available items. (vi) Amend the program so that the correct message is printed if the user purchases a ruler or pen. (vii) Amend the program to deal with invalid number entries. If the user enters any number other than the numbers 1, 2 or 3 they should be presented with an error message.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 50,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(a) 50 (5, 10, 5, 5, 5, 10, 10) marks", marks: null },
@@ -884,12 +899,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Q4",
     stem: "Convert the decimal number 14 to a binary number.",
     questionText: "Convert the decimal number 14 to a binary number.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "14/2 = 7 Remainder 0 14 = 8 + 4 + 2 + 0", marks: null },
-    { id: "r-2", kind: "point", verbatim: "7/2 = 3 Remainder 1 1 1 1 0", marks: null },
-    { id: "r-3", kind: "point", verbatim: "3/2 = 1 Remainder 1", marks: null },
-    { id: "r-5", kind: "point", verbatim: "1/2 = 0 Remainder 1 Ans: 1110", marks: null },
+    { id: "r-answer", kind: "allOf", verbatim: "Ans: 1110", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1755,8 +1767,8 @@ export const CARDS: SecCard[] = [
     questionText: "In September 2023, it was announced that teacher-based assessment of Leaving Certificate coursework would be postponed. The reason for this was due to “accelerated evolution and growth in generative AI\". Discuss the positive and negative impact that AI could have for students in school.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Personalised Learning // Access to resources // Assistance with homework // Enhanced accessibility Spell check work // Suggest improvements on student work // Feedback on pieces of work // Generate study notes for students // Create study tips / custom study timetables", marks: null, group: {"claimMax":1,"perOption":6,"options":["Personalised Learning","Access to resources","Assistance with homework","Enhanced accessibility Spell check work","Suggest improvements on student work","Feedback on pieces of work","Generate study notes for students","Create study tips / custom study timetables"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Privacy concerns // Bias Issues // Overreliance on technology", marks: null, group: {"claimMax":1,"perOption":6,"options":["Privacy concerns","Bias Issues","Overreliance on technology"]} },
+    { id: "r-positive", kind: "anyN", verbatim: "One positive impact of AI for students", marks: null, group: {"claimMax":1,"perOption":6,"options":["Personalised Learning","Access to resources","Assistance with homework","Enhanced accessibility","Spell check work","Suggest improvements on student work","Feedback on pieces of work","Generate study notes for students","Create study tips / custom study timetables"]} },
+    { id: "r-negative", kind: "anyN", verbatim: "One negative impact of AI for students", marks: null, group: {"claimMax":1,"perOption":6,"options":["Privacy concerns","Bias Issues","Overreliance on technology","Wrong information given","Using AI to complete work","AI to assist in tasks may reduce critical thinking skills","Lack of independent research & effort levels","Reduction of problem-solving skills and logical thinking skills"]} },
     ],
   } as SecCard,
   {
@@ -2028,7 +2040,7 @@ export const CARDS: SecCard[] = [
     questionText: "It is common for people to store files in the cloud. State two reasons why you might want to use cloud storage rather than local storage.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection. // Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures. // File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others. // Automatic Updates: Cloud storage services often come with automatic software updates and maintenance. // Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable. // Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices.", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection.","Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures.","File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others.","Automatic Updates: Cloud storage services often come with automatic software updates and maintenance.","Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable.","Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices."]} },
+    { id: "r-reasons", kind: "anyN", verbatim: "Any two reasons for using cloud storage", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection.","Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures.","File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others.","Automatic Updates: Cloud storage services often come with automatic software updates and maintenance.","Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable.","Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices."]} },
     ],
   } as SecCard,
   {
@@ -2067,15 +2079,10 @@ export const CARDS: SecCard[] = [
     id: "cs-2025-ol-q10", topicId: "cs-2-2", conceptId: "flowchart-figure-3-below-representation-algorithm",
     section: "A", questionRef: "2025 OL Q10",
     stem: "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Figure 3 Calculate the output of the algorithm.",
-    questionText: "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Figure 3 Calculate the output of the algorithm.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    questionText: "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Calculate the output of the algorithm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0", marks: null },
-    { id: "r-2", kind: "point", verbatim: "2", marks: null },
-    { id: "r-3", kind: "point", verbatim: "4", marks: null },
-    { id: "r-4", kind: "point", verbatim: "6", marks: null },
-    { id: "r-5", kind: "point", verbatim: "8", marks: null },
-    { id: "r-6", kind: "point", verbatim: "10", marks: null },
+    { id: "r-output", kind: "allOf", verbatim: "0 2 4 6 8 10", marks: 6 },
     ],
     figure: {
           "candId": "computer-science-2025-OL-paper-q10-fig0",

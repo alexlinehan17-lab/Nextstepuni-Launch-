@@ -274,6 +274,14 @@ describe('the review survives, which is the whole point', () => {
     expect(store.memoryFor(store.readLocal(UID, DECK), 'never-seen')).toEqual(NEW_CARD);
   });
 
+  it('keeps review memory when duplicate question identities are consolidated', () => {
+    const legacyId = 'chem-2023-ol-q6-b-i-iv';
+    const canonicalId = 'chem-2023-ol-q6-b';
+    const memory = { s: 12, d: 4.4, last: NOW, reps: 3, lapses: 0, state: 2 as const };
+    const deck = { v: 1, updatedAt: NOW, cards: { [legacyId]: memory } };
+    expect(store.memoryFor(deck, canonicalId)).toEqual(memory);
+  });
+
   it('survives corrupt localStorage instead of taking the tool down', () => {
     localStorage.setItem(`mb:deck:${UID}:${DECK}`, '{not json');
     expect(store.readLocal(UID, DECK).cards).toEqual({});

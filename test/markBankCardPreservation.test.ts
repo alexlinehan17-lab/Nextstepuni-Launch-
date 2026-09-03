@@ -39,6 +39,11 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import { CARDS as COMPUTER_SCIENCE_HIGHER } from '../components/MarkBank/cards/computer-science/higher';
+import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
+import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
+import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
@@ -113,7 +118,7 @@ const decks = [
    * on each was written from that -- a generated description would be a guess
    * about a picture, and it is the only thing a screen reader gets. */
   ['chemistry:higher', CHEM_HIGHER, 496, 'ef4c5a891f86986b4ba3091bb89a527ac4019d01f1f2590b8c465e35f2db71cc'],
-  ['chemistry:ordinary', CHEM_ORDINARY, 382, '0064364c76c789a59057490251a454723738f9db96185b4eab192638eb776440'],
+  ['chemistry:ordinary', CHEM_ORDINARY, 380, 'f15304f5ef306c5d0002c1cacd3ce85f3d8e83ccece53772a739f7a2d9460eb8'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
    * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
    * a stacked fraction the scheme's font renders as a diagonal slash whose
@@ -129,14 +134,18 @@ const decks = [
    * repaired IN PLACE (same ids): q1-v now lifts the clockwise-moments line
    * its question asks for, q10-iv the closed-pipe harmonic instead of another
    * part's answer. Nothing removed. */
-  ['physics:higher', PHYS_HIGHER, 569, '463dd2324556ac2c286ed7c722602a9bf5e4f83a9ee43fdd03bcf8b13d97e6fd'],
+  /* 2026-09-03: restored phys-2021-hl-q13a-v. Its valid card content had been
+   * rejected only because a non-shipping author note documented corrupt OCR
+   * from the preceding part. Notes are now excluded from the shipped-text
+   * glyph gate; no prior Physics ID was removed or replaced. */
+  ['physics:higher', PHYS_HIGHER, 570, '9712686995c6b73f612200773855e1054ae6a5ec13ceaf5a82427934ea590007'],
   ['physics:ordinary', PHYS_ORDINARY, 563, '67dee7bc4ede4f829b03a569374b5cf94de35dd92bed3af580263667cf2a5f40'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 431, '2dbd6e7635bb73941a16773ce9d3c654741a863280c002f783fc45cd0d7e8dbd'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],
   ['business:ordinary', BUSINESS_ORDINARY, 334, '6d62fbc00d4b0f4c411cd23c17d76ddaa63cb066325bb2974c881c8b81073b18'],
-  ['home-economics:higher', HOME_EC_HIGHER, 298, '0993532438e360013ca6930c425db0b9c398b886673a4029ad6df0c9c467b49d'],
-  ['home-economics:ordinary', HOME_EC_ORDINARY, 273, '5b15bc2e07a475191deb82613d27459fa2e776a0b10a2249aaff4f11f7a7e787'],
+  ['home-economics:higher', HOME_EC_HIGHER, 283, 'a6b8f1f2ff2f0a3da489b38f0a6b4b8fd1476e227ae23cc6753695e4e4aa53b9'],
+  ['home-economics:ordinary', HOME_EC_ORDINARY, 266, '736a4e2f0ff0ee152398eab18b9096e2d8b00b8e8b9561d85944b469aceeffd7'],
   /* 2026-08-24: economics 234/152 -> 301/243 — the backfill campaign's
    * first subject. A ten-agent fleet authored every open paper ask; the ledger
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
@@ -375,7 +384,7 @@ const decks = [
    * compulsory linked parts remain together but retain separate PCLM grids.
    * 205 cards open the real paper passage or poem in the source reader. */
   ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
-  ['english:ordinary', ENGLISH_ORDINARY, 450, '002bc88c4783ace7725b9f0564d395f56d4477178df52045d4bb174941e2bb7e'],
+  ['english:ordinary', ENGLISH_ORDINARY, 440, '9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
    * responses across 2021–2025 Higher and Ordinary are present, including
    * listening audio and the real PDF pages for passages and printed poems. */
@@ -396,6 +405,15 @@ const decks = [
    * while retaining the original card id for saved-progress continuity. */
   ['geography:higher', GEOGRAPHY_HIGHER, 445, '7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc'],
   ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
+  /* Recovered from the completed Computer Science authoring branch and rebuilt
+   * through the same source, tariff, figure and structural guards as every
+   * other subject. */
+  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 209, '1030050a22b237ea5ab74477d630b55d18620313c352fe167eb91691ae933abd'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
+  /* Engineering landed after this test's previous update. Enrol it explicitly
+   * so a later regeneration cannot silently omit or replace any of its cards. */
+  ['engineering:higher', ENGINEERING_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
+  ['engineering:ordinary', ENGINEERING_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -410,7 +428,21 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(9726);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+  });
+
+  it('preserves every consolidated card identity through an explicit progress alias', () => {
+    const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(34);
+    for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
+      expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
+      expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
+    }
+    const preNewSubjectCards = decks
+      .filter(([name]) => !name.startsWith('computer-science:')
+        && !name.startsWith('engineering:'))
+      .reduce((total, [, cards]) => total + cards.length, 0);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

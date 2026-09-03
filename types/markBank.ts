@@ -351,6 +351,20 @@ export interface SecPointCardBase extends SecCardBase {
    *  printed candidates, bounded by the notation or the question total, and
    *  share the long-question ceiling. */
   rows: MarkRow[];
+  /**
+   * Official marking-scheme routes for an open printed choice.
+   *
+   * Some questions ask for one self-selected example (for example, one method
+   * of cooking meat) and the scheme publishes a different set of points for
+   * each accepted route. Those are not separate exam questions and must not be
+   * scheduled as duplicate cards. The student selects the route they actually
+   * answered before reveal, and only that route's rows are assessed.
+   */
+  answerVariants?: Array<{
+    id: string;
+    label: string;
+    rows: MarkRow[];
+  }>;
 }
 
 export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics';
@@ -632,10 +646,11 @@ export const MAX_OPTION_ROWS = 8;
  * menu that omits answers the scheme states is misrepresenting the marking,
  * which is the one thing this tool exists not to do.
  *
- * Still bounded. Fourteen is the ceiling because no SEC long question in the
- * corpus prints more, not because fifteen would be unreadable.
+ * Still bounded. Sixteen is the ceiling because 2017 Construction Studies HL
+ * Q4(a) prints sixteen distinct functional requirements. The bound follows the
+ * largest verified SEC menu rather than deleting correct answers for neatness.
  */
-export const MAX_LONG_OPTION_ROWS = 14;
+export const MAX_LONG_OPTION_ROWS = 16;
 
 /** The row cap that actually applies to a card, given its tariff.
  *
@@ -724,8 +739,9 @@ export function isContentFreeRow(verbatim: string): boolean {
  *
  * `fixed` must sum exactly. `bestNofParts` sums only the claimable subset, which
  * is what catches six rows × 4m displaying 24 marks on a 20-mark question.
- * `orderedSplit` cannot be checked, because the scheme does not define per-row
- * values — so we assert the rows carry none rather than pretending.
+ * `orderedSplit` and `questionTotal` cannot be checked by summing rows, because
+ * the scheme does not define per-row values — so we assert the rows carry none
+ * rather than pretending.
  */
 /** What one bounded group is worth when fully claimed. */
 export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[] }): number {

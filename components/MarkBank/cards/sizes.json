@@ -5,10 +5,10 @@
  },
  "chemistry": {
   "higher": 496,
-  "ordinary": 382
+  "ordinary": 380
  },
  "physics": {
-  "higher": 569,
+  "higher": 570,
   "ordinary": 563
  },
  "agricultural-science": {
@@ -20,8 +20,8 @@
   "ordinary": 334
  },
  "home-economics": {
-  "higher": 298,
-  "ordinary": 273
+  "higher": 283,
+  "ordinary": 266
  },
  "economics": {
   "higher": 383,
@@ -37,7 +37,7 @@
  },
  "english": {
   "higher": 210,
-  "ordinary": 450
+  "ordinary": 440
  },
  "irish": {
   "higher": 215,

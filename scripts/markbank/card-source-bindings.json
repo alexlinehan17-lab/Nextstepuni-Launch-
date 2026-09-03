@@ -1,0 +1,1930 @@
+{
+  "agricultural-science": {
+    "agsci-2021-hl-q13ai": {
+      "kind": "text",
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-hl-q13aii": {
+      "kind": "text",
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-hl-q13aiii-adv": {
+      "kind": "text",
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-hl-q13aiii-name": {
+      "kind": "text",
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-hl-q13aiv": {
+      "kind": "text",
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-hl-q13av": {
+      "kind": "text",
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-hl-q16ci": {
+      "kind": "text",
+      "pages": [
+        38
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-hl-q17biv": {
+      "pages": [
+        42
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-hl-q6ai": {
+      "pages": [
+        10
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-ol-q13a-iii": {
+      "kind": "text",
+      "pages": [
+        19
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-ol-q18c-iii": {
+      "pages": [
+        35
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-ol-q7a": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-ol-q7b": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-ol-q7c": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-ol-q7d": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2021-ol-q7e": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-hl-q10a": {
+      "pages": [
+        14
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-hl-q11ai": {
+      "pages": [
+        15
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-hl-q17di": {
+      "kind": "text",
+      "pages": [
+        36
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-hl-q17dii": {
+      "kind": "text",
+      "pages": [
+        36
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-hl-q1biii-iv": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-hl-q4a": {
+      "kind": "text",
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-hl-q9bi": {
+      "kind": "text",
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q12b": {
+      "pages": [
+        16
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q14civ": {
+      "pages": [
+        25
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q15bi": {
+      "pages": [
+        27
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q15bii": {
+      "pages": [
+        27
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q15bv": {
+      "pages": [
+        27
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q16aiii": {
+      "pages": [
+        29
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q16biii": {
+      "pages": [
+        30
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q17ai": {
+      "kind": "text",
+      "pages": [
+        32
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q17aii": {
+      "kind": "text",
+      "pages": [
+        32
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q17aiii": {
+      "kind": "text",
+      "pages": [
+        32
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q3b": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q4b": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "agsci-2022-ol-q8d": {
+      "pages": [
+        11
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-hl-q13di": {
+      "kind": "text",
+      "pages": [
+        23
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-hl-q15cii": {
+      "pages": [
+        28
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-hl-q16bii": {
+      "pages": [
+        30
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-hl-q1aii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-hl-q1bii": {
+      "kind": "text",
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-hl-q9ai": {
+      "kind": "text",
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-ol-q16ai": {
+      "pages": [
+        29
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-ol-q16ci": {
+      "kind": "text",
+      "pages": [
+        31
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-ol-q18ai": {
+      "kind": "text",
+      "pages": [
+        34
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-ol-q3b": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-ol-q8b-i": {
+      "pages": [
+        11
+      ],
+      "stripStem": true
+    },
+    "agsci-2023-ol-q9a-iii": {
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-hl-q14ai": {
+      "pages": [
+        25
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-hl-q14aiii": {
+      "pages": [
+        25
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-hl-q15ai": {
+      "kind": "text",
+      "pages": [
+        28
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-hl-q15aiii": {
+      "kind": "text",
+      "pages": [
+        28
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-hl-q17biii": {
+      "pages": [
+        34
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-hl-q2bi": {
+      "kind": "text",
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-hl-q2biii": {
+      "kind": "text",
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-hl-q8a": {
+      "kind": "text",
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q10b": {
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q10ci": {
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q11aiii": {
+      "pages": [
+        14
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q15biii": {
+      "pages": [
+        26
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q15ci": {
+      "pages": [
+        27
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q16ci": {
+      "pages": [
+        30
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q16ciii": {
+      "pages": [
+        30
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q17ai": {
+      "kind": "text",
+      "pages": [
+        31
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q17aii": {
+      "kind": "text",
+      "pages": [
+        31
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q2a": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q3": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q6bi": {
+      "kind": "text",
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q6bii": {
+      "kind": "text",
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q6biii": {
+      "kind": "text",
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2024-ol-q9b": {
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-hl-q13aii": {
+      "pages": [
+        21
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-hl-q14aii": {
+      "pages": [
+        25
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-hl-q2bi": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-hl-q4bi": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q11ai": {
+      "kind": "text",
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q11aii": {
+      "kind": "text",
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q11aiii": {
+      "kind": "text",
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q12biv": {
+      "pages": [
+        16
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q14b-ii": {
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q14c-i": {
+      "pages": [
+        23
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q15a-i": {
+      "kind": "text",
+      "pages": [
+        24
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q15a-iii": {
+      "pages": [
+        24
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q17bi": {
+      "pages": [
+        31
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q1bii": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q2": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q5c": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "agsci-2025-ol-q9biii-iv": {
+      "pages": [
+        11
+      ],
+      "stripStem": true
+    }
+  },
+  "biology": {
+    "bio-2021-hl-q10-b-iii": {
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "bio-2021-hl-q10-b-v": {
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "bio-2021-ol-q11-b-iv": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bio-2022-hl-q17-a-ii": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "bio-2022-hl-q17-a-iv-v": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "bio-2022-hl-q8-b-v": {
+      "pages": [
+        10
+      ],
+      "stripStem": true
+    },
+    "bio-2023-hl-q11-b-v": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bio-2023-hl-q11-b-vi": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bio-2023-hl-q5-f-i": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "bio-2023-ol-q14-b-ii-iv": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "bio-2023-ol-q14-b-v-vi": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "bio-2023-ol-q16d-vi-viii": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "bio-2024-ol-q10-b-v": {
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "bio-2025-ol-q11-b-v": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bio-2025-ol-q11-c-i": {
+      "pages": [
+        2
+      ],
+      "sourceFileid": "LC025GLP040EV",
+      "stripStem": true
+    },
+    "bio-2025-ol-q11-c-ii": {
+      "pages": [
+        2
+      ],
+      "sourceFileid": "LC025GLP040EV",
+      "stripStem": true
+    },
+    "bio-2025-ol-q11-c-iii": {
+      "pages": [
+        2
+      ],
+      "sourceFileid": "LC025GLP040EV",
+      "stripStem": true
+    },
+    "bio-2025-ol-q11-c-iv": {
+      "pages": [
+        2
+      ],
+      "sourceFileid": "LC025GLP040EV",
+      "stripStem": true
+    }
+  },
+  "business": {
+    "bus-2021-ol-s1-q10": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "bus-2022-hl-s3-q8b": {
+      "kind": "text",
+      "pages": [
+        10
+      ],
+      "stripStem": true
+    },
+    "bus-2022-hl-s3-q8c": {
+      "kind": "text",
+      "pages": [
+        10
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s1-q4": {
+      "pages": [
+        4
+      ],
+      "questionText": "Indicate, by placing a tick in the correct box on the official question page, the factor of production to which each statement relates.",
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q1a": {
+      "kind": "text",
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q1b": {
+      "kind": "text",
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q1c": {
+      "kind": "text",
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q1d": {
+      "kind": "text",
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q1ei": {
+      "kind": "text",
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q1eii": {
+      "kind": "text",
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q2b": {
+      "kind": "text",
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q6ai": {
+      "kind": "text",
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q6b": {
+      "kind": "text",
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q7ci": {
+      "kind": "text",
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q7d": {
+      "kind": "text",
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "bus-2022-ol-s2-q7e": {
+      "kind": "text",
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "bus-2023-ol-s1-q12": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "bus-2023-ol-s1-q2": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "bus-2023-ol-s1-q4": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "bus-2023-ol-s2-q4ai": {
+      "kind": "text",
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "bus-2023-ol-s2-q4b": {
+      "kind": "text",
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "bus-2024-hl-s3-q5bi": {
+      "kind": "text",
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "bus-2024-hl-s3-q5bii": {
+      "kind": "text",
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "bus-2024-hl-s3-q5c": {
+      "kind": "text",
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "bus-2025-ol-s2-q4ci": {
+      "kind": "text",
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "bus-2025-ol-s2-q4cii": {
+      "kind": "text",
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "bus-2025-ol-s2-q5a": {
+      "kind": "text",
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "bus-2025-ol-s2-q5b": {
+      "kind": "text",
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "bus-2025-ol-s2-q5c": {
+      "kind": "text",
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "bus-2025-ol-s2-q5d": {
+      "kind": "text",
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "bus-2025-ol-s2-q5ei": {
+      "kind": "text",
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "bus-2025-ol-s2-q5eii": {
+      "kind": "text",
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    }
+  },
+  "chemistry": {
+    "chem-2021-hl-q10-a-v": {
+      "pages": [
+        11
+      ],
+      "stripStem": true
+    },
+    "chem-2021-ol-q10-a-1": {
+      "kind": "text",
+      "pages": [
+        11
+      ],
+      "stripStem": true
+    },
+    "chem-2021-ol-q5-d-ii": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "chem-2022-ol-q7-b-1": {
+      "kind": "text",
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "chem-2022-ol-q9-c": {
+      "pages": [
+        10
+      ],
+      "stripStem": true
+    },
+    "chem-2023-hl-q6-e-ii": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "chem-2023-ol-q3-b-i": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "chem-2024-hl-q5-b-vi": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "chem-2024-ol-q3-b": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "chem-2025-ol-q11-a-1": {
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "chem-2025-ol-q11-a-2": {
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "chem-2025-ol-q11-a-3": {
+      "kind": "text",
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    }
+  },
+  "construction-studies": {
+    "cons-2016-hl-q6-a": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "cons-2016-hl-q10-b": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "cons-2016-hl-q7-b": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "cons-2016-ol-q3-a": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "cons-2017-hl-q4-b": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "cons-2017-hl-q2-c": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "cons-2017-hl-q4-c": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "cons-2017-hl-q6-b": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "cons-2017-hl-q6-c": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "cons-2017-hl-q9-a": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "cons-2017-ol-q3-a": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "cons-2018-hl-q9-b": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "cons-2018-ol-q3-a": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "cons-2019-hl-q2-c": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "cons-2019-hl-q8-b": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "cons-2019-ol-q3-a": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "cons-2019-ol-q3-b": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "cons-2020-ol-q7-b": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "cons-2022-hl-q4-b": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "cons-2022-hl-q4-c": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "cons-2024-hl-q8-a": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "cons-2025-hl-q10-b": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    }
+  },
+  "economics": {
+    "econ-2021-hl-q13-a-ii": {
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "econ-2021-ol-q12-a-ii": {
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "econ-2021-ol-sa-q2": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "econ-2021-ol-sa-q4": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "econ-2022-hl-q14-b-i": {
+      "pages": [
+        27
+      ],
+      "stripStem": true
+    },
+    "econ-2022-hl-q14-b-ii": {
+      "pages": [
+        27
+      ],
+      "stripStem": true
+    },
+    "econ-2022-hl-q15-a-i": {
+      "pages": [
+        30
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-q11-b-ii": {
+      "pages": [
+        11
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-q12-a-i": {
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-q12-a-ii": {
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-q13-b-iii": {
+      "pages": [
+        17
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-q14-a-i": {
+      "pages": [
+        19
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-q15-a-i-trend": {
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-q15-c-i": {
+      "pages": [
+        24
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-sa-q10-a": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-sa-q10-b": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-sa-q7-a-i": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-seca-q4-ticks": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "econ-2022-ol-seca-q7-a-ii-ticks": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "econ-2023-hl-q11-a-i": {
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "econ-2023-hl-q12-b-i": {
+      "pages": [
+        19
+      ],
+      "stripStem": true
+    },
+    "econ-2023-hl-q15-a-iii": {
+      "pages": [
+        30
+      ],
+      "stripStem": true
+    },
+    "econ-2023-hl-sa-q3-a": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "econ-2023-hl-sa-q4-a": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "econ-2023-hl-seca-q6-a": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "econ-2023-ol-q11-b-ii": {
+      "pages": [
+        11
+      ],
+      "stripStem": true
+    },
+    "econ-2024-hl-q12-b-ii": {
+      "pages": [
+        18
+      ],
+      "stripStem": true
+    },
+    "econ-2024-hl-q16-b-ii": {
+      "pages": [
+        34
+      ],
+      "stripStem": true
+    },
+    "econ-2024-hl-sa-q10-a-ii": {
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "econ-2024-hl-sa-q3-a": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "econ-2024-hl-sa-q6-a": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "econ-2024-hl-seca-q4-a-ticks": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "econ-2024-ol-q11-b-ii": {
+      "pages": [
+        11
+      ],
+      "stripStem": true
+    },
+    "econ-2024-ol-q13-a-i": {
+      "pages": [
+        16
+      ],
+      "stripStem": true
+    },
+    "econ-2024-ol-q15-a": {
+      "pages": [
+        22
+      ],
+      "stripStem": true
+    },
+    "econ-2024-ol-q15-b-i": {
+      "pages": [
+        23
+      ],
+      "stripStem": true
+    },
+    "econ-2024-ol-sa-q2-a": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "econ-2024-ol-sa-q9": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "econ-2024-ol-seca-q7-ticks": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "econ-2025-hl-q14-b-i": {
+      "pages": [
+        26
+      ],
+      "stripStem": true
+    },
+    "econ-2025-hl-q15-b-i": {
+      "pages": [
+        30
+      ],
+      "stripStem": true
+    },
+    "econ-2025-ol-q11-b-ii": {
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "econ-2025-ol-q13-b-i": {
+      "pages": [
+        18
+      ],
+      "stripStem": true
+    },
+    "econ-2025-ol-q15-b-i": {
+      "pages": [
+        24
+      ],
+      "stripStem": true
+    },
+    "econ-2025-ol-sa-q4-b": {
+      "pages": [
+        6
+      ],
+      "stripStem": true
+    },
+    "econ-2025-ol-seca-q9-ticks": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    }
+  },
+  "home-economics": {
+    "he-2021-ol-sb-q1b": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2021-ol-sb-q1c": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2021-ol-sb-q1d": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2022-hl-sb-q1a": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2022-hl-sb-q1b": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2022-hl-sb-q1c": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2022-hl-sb-q1d": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2022-ol-sb-q1b": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2022-ol-sb-q1c": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2022-ol-sb-q1d": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2023-hl-sb-q1a": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2023-hl-sb-q1b": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2023-hl-sb-q1c": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2023-hl-sb-q1d": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2023-ol-sb-q1b": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2023-ol-sb-q1c": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2023-ol-sb-q1d": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2024-hl-sa-q5": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "he-2024-hl-sb-q1a": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "he-2025-hl-sa-q2": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "he-2025-ol-sb-q1d": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    }
+  },
+  "physics": {
+    "phys-2021-hl-q1-ii": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2021-hl-q2-i": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2021-hl-q2-ii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2021-hl-q2-iii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2021-hl-q2-v": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2021-hl-q2-vi": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2021-hl-q2-vii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2021-ol-q10-vi": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "phys-2021-ol-q3-iii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2022-hl-q13c-iii": {
+      "kind": "text",
+      "pages": [
+        13
+      ],
+      "stripStem": true
+    },
+    "phys-2022-hl-q4-v": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q1-ii": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q2-i": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q2-ii": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q2-v": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q2-vi": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q5-iii": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q9-i": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q9-ii": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q9-iii": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q9-iv": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q9-v": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q9-vii": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "phys-2022-ol-q9-viii": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "phys-2023-hl-q1-v": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2023-hl-q2-i": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2023-hl-q2-ii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2023-hl-q2-iii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2023-hl-q2-iv": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2023-hl-q2-v": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q10-vi": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q11-vii": {
+      "pages": [
+        10
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q13-iv": {
+      "kind": "text",
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q13b-v": {
+      "kind": "text",
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q13b-viii": {
+      "kind": "text",
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q2-i": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q2-iii": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q2-v": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2023-ol-q8-v": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "phys-2024-hl-q2-i": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2024-hl-q2-ii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2024-hl-q2-v": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2024-hl-q5-v": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q1-iv": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q1-v": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q1-vi": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q1-vii": {
+      "pages": [
+        2
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q13a": {
+      "kind": "text",
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q13e": {
+      "kind": "text",
+      "pages": [
+        12
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q14d-i": {
+      "pages": [
+        14
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q14d-v": {
+      "pages": [
+        14
+      ],
+      "questionText": "Draw a diagram to show how charge is distributed on a pear-shaped conductor.",
+      "stripStem": true
+    },
+    "phys-2024-ol-q2-iv": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q8-ii": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q8-v": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q8-vii": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q8-viii": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "phys-2024-ol-q9-vii": {
+      "pages": [
+        8
+      ],
+      "stripStem": true
+    },
+    "phys-2025-hl-q2-ii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2025-hl-q2-iii": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2025-hl-q3-i": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "phys-2025-hl-q3-iv": {
+      "pages": [
+        4
+      ],
+      "stripStem": true
+    },
+    "phys-2025-ol-q2-iv": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2025-ol-q3-iv": {
+      "pages": [
+        3
+      ],
+      "stripStem": true
+    },
+    "phys-2025-ol-q5-iv": {
+      "pages": [
+        5
+      ],
+      "stripStem": true
+    },
+    "phys-2025-ol-q7-viii": {
+      "pages": [
+        7
+      ],
+      "stripStem": true
+    },
+    "phys-2025-ol-q9-ii": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    },
+    "phys-2025-ol-q9-iv": {
+      "pages": [
+        9
+      ],
+      "stripStem": true
+    }
+  }
+}

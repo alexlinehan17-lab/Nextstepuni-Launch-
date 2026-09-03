@@ -2,7 +2,20 @@
   "subject": "english",
   "sourceRule": "Every questionText is extracted from its official SEC question paper PDF.",
   "rubricRule": "PCLM only; indicative material is never converted to required answer rows.",
-  "cardCount": 660,
+  "parsedCardCount": 660,
+  "cardCount": 650,
+  "withdrawnAliases": {
+    "english-2022-ol-p1-t2-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
+    "english-2022-ol-p1-t2-a-iii-b": "english-2022-ol-p1-t1-a-iii-b",
+    "english-2022-ol-p1-t3-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
+    "english-2022-ol-p1-t3-a-iii-b": "english-2022-ol-p1-t1-a-iii-b",
+    "english-2023-ol-p1-t2-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
+    "english-2023-ol-p1-t3-a-iii-a": "english-2023-ol-p1-t1-a-iii-a",
+    "english-2024-ol-p1-t2-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
+    "english-2024-ol-p1-t3-a-iii-a": "english-2024-ol-p1-t1-a-iii-a",
+    "english-2025-ol-p1-t2-a-iii-b": "english-2025-ol-p1-t1-a-iii-b",
+    "english-2025-ol-p1-t3-a-iii-b": "english-2025-ol-p1-t1-a-iii-b"
+  },
   "cards": [
     {
       "id": "english-2021-hl-p1-t1-a-i",
@@ -4430,44 +4443,6 @@
       }
     },
     {
-      "id": "english-2022-ol-p1-t2-a-iii-a",
-      "year": 2022,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2022 OL Paper 1 Text 2 QA(iii)(a)",
-      "questionText": "What is the most important quality you look for in a friend? Explain why you think this particular quality is important.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 6,
-      "schemeTraceScore": 14118,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
-    },
-    {
-      "id": "english-2022-ol-p1-t2-a-iii-b",
-      "year": 2022,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2022 OL Paper 1 Text 2 QA(iii)(b)",
-      "questionText": "International Friendship Day is celebrated annually in many countries. Explain at least one way in which you think this day could be celebrated in your school or workplace.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 6,
-      "schemeTraceScore": 21170,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
-    },
-    {
       "id": "english-2022-ol-p1-t2-b",
       "year": 2022,
       "level": "ordinary",
@@ -4549,44 +4524,6 @@
         "attribution": "This text is based on edited extracts from an interview by journalist, Simon Hattenstone, with Greta Thunberg. In it, Greta talks about friendship and the impact of her activism on her life. The text also includes two images of Greta Thunberg.",
         "presentationNote": "Official State Examinations Commission examination layout."
       }
-    },
-    {
-      "id": "english-2022-ol-p1-t3-a-iii-a",
-      "year": 2022,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2022 OL Paper 1 Text 3 QA(iii)(a)",
-      "questionText": "What is the most important quality you look for in a friend? Explain why you think this particular quality is important.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 6,
-      "schemeTraceScore": 14118,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
-    },
-    {
-      "id": "english-2022-ol-p1-t3-a-iii-b",
-      "year": 2022,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2022 OL Paper 1 Text 3 QA(iii)(b)",
-      "questionText": "International Friendship Day is celebrated annually in many countries. Explain at least one way in which you think this day could be celebrated in your school or workplace.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 6,
-      "schemeTraceScore": 21170,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
     },
     {
       "id": "english-2022-ol-p1-t3-b",
@@ -7732,25 +7669,6 @@
       }
     },
     {
-      "id": "english-2023-ol-p1-t2-a-iii-a",
-      "year": 2023,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2023 OL Paper 1 Text 2 QA(iii)(a)",
-      "questionText": "What would you consider to be the most valuable lesson that you have learned in your life? Explain why you consider this lesson to be so valuable.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 6,
-      "schemeTraceScore": 20144,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
-    },
-    {
       "id": "english-2023-ol-p1-t2-a-iii-b",
       "year": 2023,
       "level": "ordinary",
@@ -7865,25 +7783,6 @@
       }
     },
     {
-      "id": "english-2023-ol-p1-t3-a-iii-a",
-      "year": 2023,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2023 OL Paper 1 Text 3 QA(iii)(a)",
-      "questionText": "What would you consider to be the most valuable lesson that you have learned in your life? Explain why you consider this lesson to be so valuable.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 6,
-      "schemeTraceScore": 20144,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
-    },
-    {
       "id": "english-2023-ol-p1-t3-a-iii-b",
       "year": 2023,
       "level": "ordinary",
@@ -7899,8 +7798,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 3",
+        "title": "LIFE LESSONS THROUGH ART",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "This text is based on an article in The Smithsonian by Will Ellsworth Jones. In it he discusses the mysterious graffiti artist, Banksy, whose identity is kept secret and whose art often raises questions about life lessons and life’s challenges. The text includes two images by Banksy.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2023-ol-p1-t3-b",
@@ -11050,25 +10961,6 @@
       }
     },
     {
-      "id": "english-2024-ol-p1-t2-a-iii-a",
-      "year": 2024,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2024 OL Paper 1 Text 2 QA(iii)(a)",
-      "questionText": "The theme of this examination paper is ‘Challenges’. What do you think will be the greatest challenge ahead of you in life? Describe how you intend to deal with that challenge.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 5,
-      "schemeTraceScore": 24171,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
-    },
-    {
       "id": "english-2024-ol-p1-t2-a-iii-b",
       "year": 2024,
       "level": "ordinary",
@@ -11084,8 +10976,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 2",
+        "title": "CHALLENGE 2: BEAT THE CLOCK",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "This text is based on an article by Ian O’Riordan which appeared in The Irish Times. In it he profiles Rhasidat Adeleke, an Irish sprinter who is on a sports scholarship attending the University of Texas. She is one of Ireland’s brightest Olympic hopefuls.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2024-ol-p1-t2-b",
@@ -11167,25 +11071,6 @@
         "attribution": "This text is based on a series of quotations about challenges and how we face or deal with them. It also includes a collection of photographs visually capturing various forms of challenges.",
         "presentationNote": "Official State Examinations Commission examination layout."
       }
-    },
-    {
-      "id": "english-2024-ol-p1-t3-a-iii-a",
-      "year": 2024,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2024 OL Paper 1 Text 3 QA(iii)(a)",
-      "questionText": "The theme of this examination paper is ‘Challenges’. What do you think will be the greatest challenge ahead of you in life? Describe how you intend to deal with that challenge.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 5,
-      "schemeTraceScore": 24171,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
     },
     {
       "id": "english-2024-ol-p1-t3-a-iii-b",
@@ -14408,25 +14293,6 @@
       }
     },
     {
-      "id": "english-2025-ol-p1-t2-a-iii-b",
-      "year": 2025,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2025 OL Paper 1 Text 2 QA(iii)(b)",
-      "questionText": "Love can be shown in many different ways. Describe a moment when love was shown to you or when you showed love to another.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 6,
-      "schemeTraceScore": 17120,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
-    },
-    {
       "id": "english-2025-ol-p1-t2-b",
       "year": 2025,
       "level": "ordinary",
@@ -14537,25 +14403,6 @@
         "attribution": "Text three is a series of quotations, song lyrics and visual images, dealing with different aspects of love.",
         "presentationNote": "Official State Examinations Commission examination layout."
       }
-    },
-    {
-      "id": "english-2025-ol-p1-t3-a-iii-b",
-      "year": 2025,
-      "level": "ordinary",
-      "paper": 1,
-      "section": "Comprehending A",
-      "questionRef": "2025 OL Paper 1 Text 3 QA(iii)(b)",
-      "questionText": "Love can be shown in many different ways. Describe a moment when love was shown to you or when you showed love to another.",
-      "totalMarks": 10,
-      "printedParts": [],
-      "schemePage": 6,
-      "schemeTraceScore": 17120,
-      "topicId": "english-10-0",
-      "conceptId": "english-comprehending-insights",
-      "taskRequirements": [
-        "Address every instruction in the printed task.",
-        "Sustain a clear, purposeful response in an appropriate register."
-      ]
     },
     {
       "id": "english-2025-ol-p1-t3-b",

@@ -876,12 +876,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Higher Level — © State Examinations Commission.",
     id: "phys-2022-hl-q4-v", topicId: "phys-u2", conceptId: "end-correction",
     section: "A", questionRef: "2022 HL Q4(v)",
-    stem: "In an experiment to determine the speed of sound in air a student measured the length l of a column of air when it was vibrating at its fundamental frequency f, and drew a graph to show the relationship between l and 1/f.",
     questionText: "Explain why the line of best fit on the graph does not go through the origin.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "end correction term", marks: 4, accepts: ["wave exists above the opening of the pipe"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Physics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1063,12 +1072,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
     id: "phys-2021-hl-q2-i", topicId: "phys-u2", conceptId: "concave-mirror-approximate-focal-length-first",
     section: "A", questionRef: "2021 HL Q2(i)",
-    stem: "In an experiment to determine the focal length of a concave mirror a student first made an approximate measurement of the focal length of the mirror. He then measured the image distance v for each of two different object distances u.",
     questionText: "Why did the student first make an approximate measurement of the focal length?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "to ensure that the object was placed outside the focal point", marks: 6, accepts: ["so that a real image would be formed","so that the image can be formed on a screen","to check final answer"], openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1077,12 +1095,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
     id: "phys-2021-hl-q2-ii", topicId: "phys-u2", conceptId: "locating-image-position-with-screen",
     section: "A", questionRef: "2021 HL Q2(ii)",
-    stem: "In an experiment to determine the focal length of a concave mirror a student measured the image distance v for each of two different object distances u.",
     questionText: "How did the student determine the image positions?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "moved a screen until a sharp image was seen", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1844,6 +1871,24 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "point", verbatim: "kg m2 s−1", marks: 7, contextNote: "i.e. kg m² s⁻¹." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC021ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
+    id: "phys-2021-hl-q13a-v", topicId: "phys-4-5", conceptId: "pair-production-muon-energy",
+    section: "B", questionRef: "2021 HL Q13(a)(v)",
+    stem: "Photons converted into matter-antimatter pairs which immediately annihilated returning their energy back to photons.",
+    questionText: "A photon produces a muon anti-muon pair. Calculate the minimum energy of the photon in electronvolts.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "E = mc2", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "m = 2mμ", marks: 3, contextNote: "Two muon masses, because a muon and an anti-muon are both created." },
+    { id: "r-3", kind: "point", verbatim: "m = 2 × 206.9 × 9.109 × 10–31 = 3.769 × 10–28 (kg)", marks: 3 },
+    { id: "r-4", kind: "point", verbatim: "E = 3.388 × 10–11 (J)", marks: 3 },
+    { id: "r-5", kind: "point", verbatim: "E = 2.115 × 108 eV", marks: 2, contextNote: "Final answer; the question asks for the energy in electronvolts, so the unit is part of the answer." },
     ],
   } as SecCard,
   {
@@ -3191,13 +3236,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q2-i", topicId: "phys-u2", conceptId: "approximate-focal-length-concave-mirror",
     section: "A", questionRef: "2023 HL Q2(i)",
-    stem: "In an experiment to determine the focal length f of a concave mirror, a student first found an approximate value for the focal length. She then measured the image distance v for a series of object distances u.",
     questionText: "How did the student find an approximate value for f?",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "focus the image of a distant object on a screen", marks: 6 },
     { id: "r-2", kind: "point", verbatim: "measure the distance from the screen to the mirror", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3206,12 +3260,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q2-ii", topicId: "phys-u2", conceptId: "why-approximate-focal-length",
     section: "A", questionRef: "2023 HL Q2(ii)",
-    stem: "In an experiment to determine the focal length f of a concave mirror, a student first found an approximate value for the focal length. She then measured the image distance v for a series of object distances u.",
     questionText: "Why did the student find an approximate value for f?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "object must be outside focal point", marks: 3, accepts: ["to get an image on the screen","to check answer"], contextNote: "Any one of the three alternatives earns the full 3 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3220,7 +3283,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q2-iv", topicId: "phys-u2", conceptId: "measuring-image-distance-mirror",
     section: "A", questionRef: "2023 HL Q2(iv)",
-    stem: "In an experiment to determine the focal length f of a concave mirror, the student measured the image distance v for a series of object distances u.",
     questionText: "Describe how the student determined and measured v.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -3228,6 +3290,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "until a (sharp) image is formed on the screen", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "measure v with a metre stick", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3497,13 +3569,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Higher Level — © State Examinations Commission.",
     id: "phys-2024-hl-q2-i", topicId: "phys-u2", conceptId: "approximate-focal-length-distant-object",
     section: "A", questionRef: "2024 HL Q2(i)",
-    stem: "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length. Then the student set up the apparatus and recorded the image distance v for different values of the object distance u.",
     questionText: "Describe how the student found an approximate value for the focal length.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "focus the image of a distant object on a screen", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "measure the distance from the screen to the lens", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3528,12 +3609,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Higher Level — © State Examinations Commission.",
     id: "phys-2024-hl-q2-v", topicId: "phys-u2", conceptId: "concave-mirror-apparatus-reflection",
     section: "A", questionRef: "2024 HL Q2(v)",
-    stem: "A student completed an experiment to measure the focal length f of a converging lens, recording the image distance v for different values of the object distance u.",
     questionText: "The student also completed an experiment to measure the focal length of a concave mirror. Why does the arrangement of the apparatus differ in this experiment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "reflection of light", marks: 4, contextNote: "Key words — they must appear in the correct context (a mirror reflects rather than transmits the light) to merit the marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3672,7 +3762,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Higher Level — © State Examinations Commission.",
     id: "phys-2024-hl-q5-v", topicId: "phys-3-3", conceptId: "resistivity-calculation",
     section: "A", questionRef: "2024 HL Q5(v)",
-    stem: "In an experiment on a length of copper wire the resistance R was found from the graph to be 7.03 Ω. The following additional data were recorded: length of wire = 65 cm; diameter of wire = 0.32 mm.",
     questionText: "Calculate the resistivity of the copper wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -3680,6 +3769,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "A = πr²", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "ρ = 8.7 × 10⁻⁷ Ω m", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Physics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4836,7 +4935,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Higher Level — © State Examinations Commission.",
     id: "phys-2025-hl-q2-ii", topicId: "phys-u2", conceptId: "measuring-constant-velocity-trolley",
     section: "A", questionRef: "2025 HL Q2(ii)",
-    stem: "In an experiment to verify the principle of conservation of momentum, two trolleys were held in contact with a light compressed spring between them. When the spring was released, both trolleys moved with a constant velocity in opposite directions.",
     questionText: "Describe how the constant velocity of a trolley can be determined.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -4846,6 +4944,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "(measure) time between dots", marks: 3, route: "b" },
     { id: "r-5", kind: "point", verbatim: "v = l/t", marks: 3, contextNote: "Awarded on either route - the scheme prints this line without a double solidus." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4854,13 +4962,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Higher Level — © State Examinations Commission.",
     id: "phys-2025-hl-q2-iii", topicId: "phys-1-1", conceptId: "velocity-from-distance-and-time",
     section: "A", questionRef: "2025 HL Q2(iii)",
-    stem: "Two trolleys, A and B, were held in contact and at rest with a light compressed spring between them. When the spring was released, both trolleys moved with a constant velocity in opposite directions. Trolley A travelled a distance sA in a time tA, while trolley B travelled a distance sB in a time tB. Data: mass of A = 200 g; mass of B = 250 g; sA = 10 cm; tA = 185 ms; sB = 8 cm; tB = 190 ms.",
     questionText: "Calculate the velocity of trolley A and the velocity of trolley B after the spring was released.",
     tariffModel: {"kind":"orderedSplit","notation":"[2 + 1]"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "vA = 0.54 m s–1", marks: null },
     { id: "r-2", kind: "point", verbatim: "vB = 0.42 m s–1", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6220,13 +6337,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
     id: "phys-2021-hl-q2-v", topicId: "phys-u2", conceptId: "focal-length-from-all-the-data",
     section: "A", questionRef: "2021 HL Q2(v)",
-    stem: "In an experiment to determine the focal length of a concave mirror, a student first made an approximate measurement of the focal length of the mirror. He then measured the image distance v for each of two different object distances u. The following data were recorded. u (cm) 20.0 25.0 v (cm) 31.2 23.2",
     questionText: "Use all of the data to calculate the focal length of the mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "formula", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "average value for f (≈ 12.1 cm)", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6235,13 +6361,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
     id: "phys-2021-hl-q2-vii", topicId: "phys-u2", conceptId: "focal-length-from-a-graph",
     section: "A", questionRef: "2021 HL Q2(vii)",
-    stem: "In an experiment to determine the focal length of a concave mirror, a student first made an approximate measurement of the focal length of the mirror. He then measured the image distance v for each of two different object distances u. The following data were recorded. u (cm) 20.0 25.0 v (cm) 31.2 23.2",
     questionText: "How could this graph be used to calculate the focal length? (15)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "intercept(s) // point on curve", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "= 1/f // substitute into formula", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6442,12 +6577,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
     id: "phys-2021-hl-q2-iii", topicId: "phys-u2", conceptId: "apparatus-for-the-concave-mirror-experiment",
     section: "A", questionRef: "2021 HL Q2(iii)",
-    stem: "In an experiment to determine the focal length of a concave mirror, a student first made an approximate measurement of the focal length of the mirror. He then measured the image distance v for each of two different object distances u. The following data were recorded. u (cm) 20.0 25.0 v (cm) 31.2 23.2",
     questionText: "Draw a labelled diagram of how the apparatus was arranged.",
     tariffModel: {"kind":"fixed","notation":"4 × 1"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "object, mirror, screen, correct arrangement", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6472,7 +6616,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
     id: "phys-2021-hl-q1-ii", topicId: "phys-u2", conceptId: "marking-the-suspension-point-and-length-of-the-pendulum",
     section: "A", questionRef: "2021 HL Q1(ii)",
-    stem: "In an experiment to determine the acceleration due to gravity, a student set up a simple pendulum of length 300 mm. The student suspended the pendulum from a fixed point, set it to oscillate, and measured the time t for 20 oscillations. This procedure was repeated for different lengths l of the pendulum. The following data were recorded. l (mm) 300 400 500 600 700 800 t (s) 22.0 25.4 28.4 31.1 33.6 35.9",
     questionText: "Indicate on the diagram (a) the fixed point of suspension, (b) the distance l.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
@@ -6480,6 +6623,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "from fixed point of suspension", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "to midpoint of bob", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6520,7 +6673,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Higher Level — © State Examinations Commission.",
     id: "phys-2021-hl-q2-vi", topicId: "phys-u2", conceptId: "sketching-the-focal-length-graph",
     section: "A", questionRef: "2021 HL Q2(vi)",
-    stem: "In an experiment to determine the focal length of a concave mirror, a student first made an approximate measurement of the focal length of the mirror. He then measured the image distance v for each of two different object distances u. The following data were recorded. u (cm) 20.0 25.0 v (cm) 31.2 23.2",
     questionText: "Sketch a suitable graph that might have been drawn.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -6528,6 +6680,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "correct y-axis (1/v) // correct y -axis", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "correct shape of curve (straight line with m = −1) // correct shape of curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6903,13 +7065,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Higher Level — © State Examinations Commission.",
     id: "phys-2022-hl-q13c-iii", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-virtual-image",
     section: "B", questionRef: "2022 HL Q13(iii)",
-    stem: "Read the following passage and answer the accompanying questions. Europe’s greatest scientist during the latter half of the seventeenth century, Christiaan Huygens, was a true polymath. He was a towering figure in the fields of astronomy, mechanics and mathematics, and many of his innovations in methodology, optics and timekeeping remain in use to this day. Among his many achievements, he developed the theory of light travelling as a wave, he invented the mechanism for the pendulum clock, and he discovered the rings of Saturn and its moon Titan – via a telescope that he also had invented. Huygens is remembered as a problem solver: pragmatic, eclectic and synthetic, sceptical and ready to settle for the most probable rather than hold out for the absolutely certain – in other words, what we expect a scientist to be today. Adapted from: ‘Dutch Light: Christiaan Huygens and the Making of Science in Europe’ (Hugh Aldersey-Williams) Pan Macmillan 2020",
     questionText: "The eyepiece lens of Huygens’ telescope was a converging lens arranged so as to produce a virtual image. Draw a ray diagram to show how a converging lens can produce a virtual image. (7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "converging lens", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "object inside focal point", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL SOURCE",
+          "title": "Source and question",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC Physics 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7223,7 +7394,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q1-v", topicId: "phys-u2", conceptId: "g-from-the-slope-of-a-graph",
     section: "A", questionRef: "2023 HL Q1(v)",
-    stem: "In an experiment to determine the acceleration due to gravity g, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded. s (cm) 40 50 60 70 80 90 t (cs) 29 32 35 38 40 43",
     questionText: "Use the graph to calculate a value for g. (18)",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -7231,6 +7401,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "s = ut + ½ at2", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "g ≈ 9.8 m s–2 from calculation", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7434,7 +7614,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q2-iii", topicId: "phys-u2", conceptId: "apparatus-with-u-and-v-marked",
     section: "A", questionRef: "2023 HL Q2(iii)",
-    stem: "In an experiment to determine the focal length f of a concave mirror, a student first found an approximate value for the focal length. She then measured the image distance v for a series of object distances u. The following data were recorded. u (cm) 20.0 30.0 40.0 v (cm) 66.3 31.1 25.2",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -7442,6 +7621,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "u shown", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "v shown", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7510,7 +7699,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q2-v", topicId: "phys-u2", conceptId: "focal-length-from-the-mirror-formula",
     section: "A", questionRef: "2023 HL Q2(v)",
-    stem: "In an experiment to determine the focal length f of a concave mirror, a student first found an approximate value for the focal length. She then measured the image distance v for a series of object distances u. The following data were recorded. u (cm) 20.0 30.0 40.0 v (cm) 66.3 31.1 25.2",
     questionText: "Use all of the data to calculate f. (28)",
     tariffModel: {"kind":"fixed","notation":"the two further calculations score 2 × 1"}, totalMarks: 10,
     rows: [
@@ -7520,6 +7708,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "two further calculations for f", marks: 2 },
     { id: "r-5", kind: "point", verbatim: "average of values for f = 15.4 cm", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7574,8 +7772,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q8-iii-t", topicId: "phys-2-6", conceptId: "sketch-f-against-root-tension",
     section: "A", questionRef: "2023 HL Q8(iii) — f and √T",
-    stem: "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance.",
-    questionText: "For each of the following pairs of variables, sketch a suitable graph to show the relationship between them. (a) f and T (b) f and l (c) f and µ",
+    stem: "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance. For each pair of variables, sketch a suitable graph to show the relationship between them.",
+    questionText: "(a) Sketch the graph of f against √T.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "a labelled axis f and √T", marks: 2 },
@@ -7589,8 +7787,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q8-iii-l", topicId: "phys-2-6", conceptId: "sketch-f-against-inverse-length",
     section: "A", questionRef: "2023 HL Q8(iii) — f and 1/l",
-    stem: "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance.",
-    questionText: "For each of the following pairs of variables, sketch a suitable graph to show the relationship between them. (a) f and T (b) f and l (c) f and µ",
+    stem: "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance. For each pair of variables, sketch a suitable graph to show the relationship between them.",
+    questionText: "(b) Sketch the graph of f against 1/l.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "b labelled axis f and 1/l", marks: 2 },
@@ -7604,8 +7802,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q8-iii-mu", topicId: "phys-2-6", conceptId: "sketch-f-against-inverse-root-mu",
     section: "A", questionRef: "2023 HL Q8(iii) — f and 1/√μ",
-    stem: "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance.",
-    questionText: "For each of the following pairs of variables, sketch a suitable graph to show the relationship between them. (a) f and T (b) f and l (c) f and µ",
+    stem: "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance. For each pair of variables, sketch a suitable graph to show the relationship between them.",
+    questionText: "(c) Sketch the graph of f against 1/√μ.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "c labelled axis f and 1/√μ", marks: 2 },
@@ -8055,7 +8253,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Higher Level — © State Examinations Commission.",
     id: "phys-2024-hl-q2-ii", topicId: "phys-u2", conceptId: "apparatus-for-the-focal-length-experiment",
     section: "A", questionRef: "2024 HL Q2(ii)",
-    stem: "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length. Then the student set up the apparatus and recorded the image distance v for different values of the object distance u. The following data were recorded. u (cm) 20.0 30.0 40.0 50.0 v (cm) 78.7 35.2 26.9 23.4",
     questionText: "Draw a labelled diagram of the apparatus and clearly identify the distances u and v.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -8064,6 +8261,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "screen", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "u and v shown", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8209,7 +8416,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Higher Level — © State Examinations Commission.",
     id: "phys-2025-hl-q3-iv", topicId: "phys-u2", conceptId: "speed-of-sound-from-a-graph",
     section: "A", questionRef: "2025 HL Q3(iv)",
-    stem: "In an experiment to measure the speed of sound in air, a student used a cylindrical column of air which was closed at one end, and six different tuning forks. A tuning fork of frequency f was set vibrating and held over the column of air. The length of the column of air was adjusted until the first position of resonance was found and its length l was measured. The procedure was repeated for each tuning fork. The student plotted the following graph based on his recorded data. 0.50 0.40 0.30 l (m) 0.20 0.10 0.00 0.000 0.001 0.002 0.003 0.004 0.005 0.006 -0.10 1/f (Hz-1)",
     questionText: "Use the graph to calculate the speed of sound in air.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -8218,6 +8424,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "v = 4 × slope or c = fλ", marks: 3 },
     { id: "r-4", kind: "point", verbatim: "v ≈ 343.7 m s–1", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Physics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8305,7 +8521,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Higher Level — © State Examinations Commission.",
     id: "phys-2025-hl-q3-i", topicId: "phys-u2", conceptId: "apparatus-for-the-speed-of-sound-experiment",
     section: "A", questionRef: "2025 HL Q3(i)",
-    stem: "In an experiment to measure the speed of sound in air, a student used a cylindrical column of air which was closed at one end, and six different tuning forks. A tuning fork of frequency f was set vibrating and held over the column of air. The length of the column of air was adjusted until the first position of resonance was found and its length l was measured. The procedure was repeated for each tuning fork. The student plotted the following graph based on his recorded data. 0.50 0.40 0.30 l (m) 0.20 0.10 0.00 0.000 0.001 0.002 0.003 0.004 0.005 0.006 -0.10 1/f (Hz-1)",
     questionText: "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -8313,6 +8528,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "means of varying length l", marks: 4 },
     { id: "r-3", kind: "alt", verbatim: "tuning fork", marks: 4, accepts: ["metre stick"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Physics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
