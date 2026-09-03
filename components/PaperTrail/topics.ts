@@ -254,3 +254,9 @@ export function strandsFor(subjectId: string, taggedIds: string[]): AtlasStrand[
   if (rest.length) out.push({ id: '__other', name: out.length ? 'Other topics' : 'Topics', subtopicIds: rest });
   return out;
 }
+
+/** Curriculum category for a subject — drives the atlas's soft identity
+ *  tints (small marks only; cards and rows stay white). */
+export function categoryOf(subjectId: string): string {
+  return CURRICULUM.find(c => c.id === subjectId)?.category ?? 'other';
+}
