@@ -13,7 +13,7 @@
 
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ChevronRight, Compass, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
+import { ArrowLeft, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
 import { siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
@@ -23,7 +23,6 @@ import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
 
 const INK = '#1a1a1a';
-const ACCENT = '#F26B1F';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
 
 interface Props {
@@ -51,6 +50,15 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [yearFilter, setYearFilter] = useState<'all' | number>('all');
   const [topicQuery, setTopicQuery] = useState('');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
+  // Language preference — English by default, remembered per device. The feed
+  // shows one edition per question; the other stays a click away.
+  const [langPref, setLangPref] = useState<'ev' | 'iv'>(() => {
+    try { return localStorage.getItem('atlas.lang') === 'iv' ? 'iv' : 'ev'; } catch { return 'ev'; }
+  });
+  const pickLang = (l: 'ev' | 'iv') => {
+    setLangPref(l);
+    try { localStorage.setItem('atlas.lang', l); } catch { /* private mode */ }
+  };
 
   // The vault feed keeps a small pool of open PDFs — release them on exit.
   useEffect(() => () => releaseVaultPdfs(), []);
@@ -101,9 +109,6 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
 
   const baseTopics: SubjectTopic[] = useMemo(() => (subjectId ? topicsForSubject(subjectId) : []), [subjectId]);
   const totalYears = useMemo(() => (subjectId ? taggedYearsForSubject(subjectId) : 0), [subjectId]);
-  // "High-yield" = recurs in most tagged years (honest historical frequency,
-  // never a prediction). Only meaningful once there are a few years to compare.
-  const isHighYield = (t: SubjectTopic) => totalYears >= 3 && t.years / totalYears >= 0.6;
   const sortedTopics: SubjectTopic[] = useMemo(() => {
     if (sort === 'busiest') return baseTopics; // already count-sorted
     return [...baseTopics].sort((a, b) => b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
@@ -114,105 +119,114 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     if (!q) return sortedTopics;
     return sortedTopics.filter(t => t.label.toLowerCase().includes(q));
   }, [sortedTopics, topicQuery]);
-  const questions = useMemo(
+  const allEditions = useMemo(
     () => (subjectId && subtopicId ? siblingsFor(subjectId, subtopicId) : []),
     [subjectId, subtopicId],
   );
+  const hasIrish = useMemo(() => allEditions.some(q => q.lang === 'iv'), [allEditions]);
+  // One edition per printed question: the preferred language where it exists,
+  // the other edition otherwise (an Irish-only sitting still shows under
+  // English, marked as Gaeilge on the card).
+  const questions = useMemo(() => {
+    const byQ = new Map<string, TopicSibling>();
+    for (const q of allEditions) {
+      const key = `${q.year}|${q.level}|${q.paperKey}|${q.n}`;
+      const cur = byQ.get(key);
+      if (!cur || (cur.lang !== langPref && q.lang === langPref)) byQ.set(key, q);
+    }
+    return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || Number(a.n) - Number(b.n));
+  }, [allEditions, langPref]);
 
-  // ── Level 2: the vault feed — every question on the topic, newest first,
-  //    rendered as real paper crops with the scheme behind a toggle. ──
+  // ── Level 2: the feed — one edition per question, newest first, real
+  //    paper crops with the scheme a tap below. Quiet text controls. ──
   if (subjectId && subtopicId) {
     const years = new Set(questions.map(q => q.year));
     const levels = [...new Set(questions.map(q => q.level))];
-    const yearList = [...years].sort((a, b) => b - a); // newest first
+    const yearList = [...years].sort((a, b) => b - a);
     const inYear = yearFilter === 'all' ? questions : questions.filter(q => q.year === yearFilter);
     const shown = levelFilter === 'all' ? inYear : inYear.filter(q => q.level === levelFilter);
     const levelCount = (l: string) => (l === 'all' ? inYear.length : inYear.filter(q => q.level === l).length);
+    const tab = (active: boolean) => ({
+      color: active ? INK : '#8d857c',
+      boxShadow: active ? `inset 0 -2px 0 0 ${INK}` : 'none',
+    });
     return (
       <div className="w-full max-w-2xl mx-auto pb-12">
-        <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
-          <ArrowLeft size={15} /> {subjectLabel(subjectId)} topics
+        <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
+          <ArrowLeft size={15} /> {subjectLabel(subjectId)}
         </button>
-        <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
-        <p aria-live="polite" className="text-[13px] mb-3" style={{ color: '#7a7068' }}>
-          {levelFilter === 'all' && yearFilter === 'all'
-            ? <>{questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'}, newest first — each shown as printed on the paper, marking scheme one tap below.</>
-            : <>Showing {shown.length} of {questions.length} question{questions.length === 1 ? '' : 's'}{yearFilter !== 'all' ? ` from ${yearFilter}` : ''}{levelFilter !== 'all' ? ` · ${LVL[levelFilter] ?? levelFilter}` : ''}.</>}
+        <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
+        <p aria-live="polite" className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
+          {shown.length === questions.length
+            ? <>{questions.length} question{questions.length === 1 ? '' : 's'} · {years.size} year{years.size === 1 ? '' : 's'} · marking scheme beneath each</>
+            : <>{shown.length} of {questions.length} questions{yearFilter !== 'all' ? ` · ${yearFilter}` : ''}{levelFilter !== 'all' ? ` · ${LVL[levelFilter] ?? levelFilter}` : ''}</>}
         </p>
-        <div className="flex items-center gap-2 flex-wrap mb-4">
+
+        <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-6" style={{ borderBottom: '1px solid #e7e3de' }}>
           {levels.length > 1 && (
-            <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit" role="group" aria-label="Filter by level">
+            <div className="flex items-center gap-4" role="group" aria-label="Level">
               {(['all', ...levels] as const).map(l => (
-                <button
-                  key={l}
-                  aria-pressed={levelFilter === l}
-                  onClick={() => setLevelFilter(l)}
-                  className={`px-3 py-1.5 rounded-lg text-[12px] transition-all ${levelFilter === l ? 'bg-white dark:bg-zinc-800 font-semibold shadow-sm' : ''}`}
-                  style={{ color: levelFilter === l ? INK : '#7a7068' }}
-                >
+                <button key={l} aria-pressed={levelFilter === l} onClick={() => setLevelFilter(l)}
+                  className="pb-1 text-[13px] font-medium transition-colors" style={tab(levelFilter === l)}>
                   {l === 'all' ? 'All levels' : LVL[l] ?? l}
-                  <span className="ml-1 tabular-nums" style={{ color: '#9e9186' }}>{levelCount(l)}</span>
+                  <span className="ml-1 tabular-nums" style={{ color: '#b3aca3' }}>{levelCount(l)}</span>
                 </button>
               ))}
             </div>
           )}
+          {hasIrish && (
+            <div className="flex items-center gap-4" role="group" aria-label="Language">
+              {(['ev', 'iv'] as const).map(l => (
+                <button key={l} aria-pressed={langPref === l} onClick={() => pickLang(l)}
+                  className="pb-1 text-[13px] font-medium transition-colors" style={tab(langPref === l)}>
+                  {l === 'ev' ? 'English' : 'Gaeilge'}
+                </button>
+              ))}
+            </div>
+          )}
+          {yearList.length > 3 && (
+            <label className="flex items-center gap-1.5 text-[13px]" style={{ color: '#8d857c' }}>
+              <select
+                value={yearFilter === 'all' ? 'all' : String(yearFilter)}
+                onChange={e => setYearFilter(e.target.value === 'all' ? 'all' : Number(e.target.value))}
+                aria-label="Year"
+                className="bg-transparent pb-1 text-[13px] font-medium outline-none cursor-pointer"
+                style={{ color: yearFilter === 'all' ? '#8d857c' : INK, border: 'none', borderBottom: yearFilter === 'all' ? 'none' : `2px solid ${INK}` }}
+              >
+                <option value="all">All years</option>
+                {yearList.map(y => <option key={y} value={y}>{y}</option>)}
+              </select>
+            </label>
+          )}
+          <span className="flex-1" />
           {questions.length > 0 && (
             <button
               onClick={() => downloadPack({
                 subjectLabel: subjectLabel(subjectId),
                 topicLabel: topicLabel(subtopicId),
-                questions,
+                questions: shown.length ? shown : questions,
                 dateIso: new Date(Date.now()).toISOString().slice(0, 10),
               })}
-              className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
-              style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+              className="flex items-center gap-1.5 text-[12.5px] font-medium transition-colors hover:text-[#1a1a1a]"
+              style={{ color: '#8d857c' }}
             >
-              <Download size={14} /> Export revision pack
+              <Download size={13} /> Export
             </button>
           )}
           <button
             onClick={copyTopicLink}
             aria-label="Copy a shareable link to this topic"
-            className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
-            style={copied
-              ? { borderColor: '#3A8D5F', color: '#1F5F3E', backgroundColor: '#E8F2EC' }
-              : { borderColor: '#d0cdc8', color: '#7a7068' }}
+            className="flex items-center gap-1.5 text-[12.5px] font-medium transition-colors hover:text-[#1a1a1a]"
+            style={copied ? { color: '#1F5F3E' } : { color: '#8d857c' }}
           >
-            {copied ? <><CheckIcon size={14} /> Link copied</> : <><Link2 size={14} /> Copy link</>}
+            {copied ? <><CheckIcon size={13} /> Copied</> : <><Link2 size={13} /> Share</>}
           </button>
         </div>
-        {/* Year filter — jump straight to a sitting (Studyclix-style). */}
-        {yearList.length > 3 && (
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 mb-3 -mx-1 px-1" role="group" aria-label="Filter by year">
-            <button
-              aria-pressed={yearFilter === 'all'}
-              onClick={() => setYearFilter('all')}
-              className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold border-2 transition-colors ${yearFilter === 'all' ? '' : 'bg-white'}`}
-              style={yearFilter === 'all'
-                ? { backgroundColor: ACCENT, borderColor: ACCENT, color: '#fff' }
-                : { borderColor: '#d0cdc8', color: '#7a7068' }}
-            >
-              All years
-            </button>
-            {yearList.map(y => (
-              <button
-                key={y}
-                aria-pressed={yearFilter === y}
-                onClick={() => setYearFilter(y)}
-                className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold tabular-nums border-2 transition-colors ${yearFilter === y ? '' : 'bg-white'}`}
-                style={yearFilter === y
-                  ? { backgroundColor: ACCENT, borderColor: ACCENT, color: '#fff' }
-                  : { borderColor: '#d0cdc8', color: '#7a7068' }}
-              >
-                {y}
-              </button>
-            ))}
-          </div>
-        )}
-        <div className="space-y-4">
+
+        <div className="space-y-5">
           {shown.length === 0 ? (
-            <p className="text-[13px] rounded-xl px-4 py-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}>
-              No questions for that filter. <button onClick={() => { setLevelFilter('all'); setYearFilter('all'); }} className="font-semibold underline">Show all</button>
+            <p className="text-[13px] py-3" style={{ color: '#8d857c' }}>
+              No questions match that filter. <button onClick={() => { setLevelFilter('all'); setYearFilter('all'); }} className="font-semibold underline" style={{ color: INK }}>Show all</button>
             </p>
           ) : shown.map(q => {
             void revVer; // recompute membership when the deck changes
@@ -232,64 +246,60 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     );
   }
 
-  // ── Level 1: the topic map — curriculum units, each topic with its
-  //    cross-year record as a strip of year dots. ──
+  // ── Level 1: the topic map — an editorial index: curriculum units as
+  //    ruled sections, each topic a quiet row with its cross-year record. ──
   if (subjectId) {
     const stats = subjectAtlasStats(subjectId);
     const yearSets = topicYearSets(subjectId);
     const strands = strandsFor(subjectId, topics.map(t => t.subtopicId));
     const topicById = new Map(topics.map(t => [t.subtopicId, t]));
+    const tab = (active: boolean) => ({
+      color: active ? INK : '#8d857c',
+      boxShadow: active ? `inset 0 -2px 0 0 ${INK}` : 'none',
+    });
     return (
       <div className="w-full max-w-2xl mx-auto pb-12">
-        <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
+        <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> All subjects
         </button>
-        <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
-        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
-          <span className="tabular-nums">{stats.questions.toLocaleString()}</span> past questions · <span className="tabular-nums">{baseTopics.length}</span> topics · <span className="tabular-nums">{stats.yearMin}–{stats.yearMax}</span>. Pick a topic to see every one.
+        <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
+        <p className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
+          {stats.questions.toLocaleString()} questions · {baseTopics.length} topics · {stats.yearMin}–{stats.yearMax}
         </p>
-        <div className="flex items-center gap-2 flex-wrap mb-3">
-          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit" role="group" aria-label="Sort topics">
+        <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
+          <div className="flex items-center gap-4" role="group" aria-label="Sort topics">
             {(['busiest', 'frequent'] as const).map(s => (
-              <button
-                key={s}
-                aria-pressed={sort === s}
-                onClick={() => setSort(s)}
-                className={`px-3 py-1.5 rounded-lg text-[12.5px] transition-all ${sort === s ? 'bg-white dark:bg-zinc-800 font-semibold shadow-sm' : ''}`}
-                style={{ color: sort === s ? INK : '#7a7068' }}
-              >
-                {s === 'busiest' ? 'Most questions' : 'Most examined'}
+              <button key={s} aria-pressed={sort === s} onClick={() => setSort(s)}
+                className="pb-1 text-[13px] font-medium transition-colors" style={tab(sort === s)}>
+                {s === 'busiest' ? 'Most asked' : 'Most recurrent'}
               </button>
             ))}
           </div>
+          <span className="flex-1" />
+          {sortedTopics.length > 8 && (
+            <div className="relative">
+              <Search size={14} className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#b3aca3' }} />
+              <input
+                type="text"
+                value={topicQuery}
+                onChange={e => setTopicQuery(e.target.value)}
+                placeholder="Search topics"
+                aria-label="Search topics"
+                className="w-44 bg-transparent pl-6 pr-6 pb-1 text-[13px] outline-none transition-colors"
+                style={{ color: INK, borderBottom: `1px solid ${topicQuery ? INK : '#d8d3cc'}` }}
+              />
+              {topicQuery && (
+                <button onClick={() => setTopicQuery('')} aria-label="Clear search"
+                  className="absolute right-0 top-1/2 -translate-y-1/2" style={{ color: '#b3aca3' }}>
+                  <X size={13} />
+                </button>
+              )}
+            </div>
+          )}
         </div>
-        {sortedTopics.length > 8 && (
-          <div className="relative mb-4">
-            <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
-            <input
-              type="text"
-              value={topicQuery}
-              onChange={e => setTopicQuery(e.target.value)}
-              placeholder={`Search ${sortedTopics.length} topics…`}
-              aria-label="Search topics"
-              className="w-full rounded-xl border-2 border-[#d0cdc8] bg-white pl-9 pr-9 py-2.5 text-[13.5px] outline-none focus:border-[#F26B1F] transition-colors"
-              style={{ color: INK }}
-            />
-            {topicQuery && (
-              <button
-                onClick={() => setTopicQuery('')}
-                aria-label="Clear search"
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-lg flex items-center justify-center hover:bg-zinc-100 dark:hover:bg-zinc-800"
-                style={{ color: '#9e9186' }}
-              >
-                <X size={14} />
-              </button>
-            )}
-          </div>
-        )}
         {topics.length === 0 ? (
-          <p className="text-[13px] rounded-xl px-4 py-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}>
-            No topics match “{topicQuery.trim()}”. <button onClick={() => setTopicQuery('')} className="font-semibold underline">Clear</button>
+          <p className="text-[13px] py-4" style={{ color: '#8d857c' }}>
+            No topics match “{topicQuery.trim()}”. <button onClick={() => setTopicQuery('')} className="font-semibold underline" style={{ color: INK }}>Clear</button>
           </p>
         ) : strands.map(strand => {
           const strandTopics = strand.subtopicIds
@@ -301,57 +311,40 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               ? b.count - a.count || b.years - a.years || a.label.localeCompare(b.label)
               : b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
           return (
-            <section key={strand.id} className="mb-6">
-              <h3 className="text-[11px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>
-                {strand.name}
-              </h3>
-              <div className="space-y-2">
+            <section key={strand.id} className="mt-7">
+              <div className="flex items-center gap-3 mb-1">
+                <h3 className="shrink-0 text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: '#9e9186' }}>{strand.name}</h3>
+                <span className="flex-1 h-px" style={{ backgroundColor: '#e7e3de' }} />
+              </div>
+              <div>
                 {ordered.map(t => {
                   const m = masteryMap.get(t.subtopicId);
                   const masteryColor = m ? (m.mastery >= 70 ? '#3A8D5F' : '#F26B1F') : null;
-                  const highYield = isHighYield(t);
                   const asked = yearSets.get(t.subtopicId) ?? new Set<number>();
                   return (
                     <button
                       key={t.subtopicId}
                       onClick={() => setSubtopicId(t.subtopicId)}
-                      className="w-full flex items-center gap-3 rounded-xl border-[1.5px] border-[#1a1a1a] bg-white px-4 py-3 text-left transition-all active:translate-y-0.5 hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_#1A1A1A]"
+                      className="group w-full flex items-center gap-4 px-1 py-3 text-left transition-colors hover:bg-[#f5f4f2] dark:hover:bg-zinc-800/40"
+                      style={{ borderBottom: '1px solid #eeebe6' }}
                     >
                       <span className="flex-1 min-w-0">
-                        <span className="flex items-center gap-2">
-                          <span className="text-[14.5px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
-                          {highYield && (
-                            <span className="shrink-0 text-[9.5px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.3)' }}>
-                              High-yield
-                            </span>
-                          )}
-                        </span>
-                        <span className="block text-[11.5px] mt-0.5 mb-1.5" style={{ color: '#7a7068' }}>
-                          <span className="tabular-nums">{t.count}</span> question{t.count === 1 ? '' : 's'} · <span className="tabular-nums">{t.years}</span> of <span className="tabular-nums">{totalYears}</span> years
-                        </span>
-                        <span className="flex items-center gap-[3px]" aria-hidden="true">
-                          {stats.years.map(y => (
-                            <span
-                              key={y}
-                              title={String(y)}
-                              className="inline-block w-[7px] h-[7px] rounded-full"
-                              style={asked.has(y)
-                                ? { backgroundColor: '#F26B1F' }
-                                : { backgroundColor: 'transparent', boxShadow: 'inset 0 0 0 1.5px #e0dbd4' }}
-                            />
-                          ))}
-                        </span>
+                        <span className="block text-[15px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
                       </span>
                       {m && masteryColor && (
-                        <span className="shrink-0 w-16 text-right">
-                          <span className="block text-[11px] font-bold tabular-nums" style={{ color: masteryColor }}>{m.mastery}%</span>
-                          <span className="block mt-0.5 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e0dbd4' }}>
-                            <span className="block h-full rounded-full" style={{ width: `${m.mastery}%`, backgroundColor: masteryColor }} />
-                          </span>
-                          <span className="block text-[9px] mt-0.5" style={{ color: '#9e9186' }}>mastery</span>
-                        </span>
+                        <span className="shrink-0 text-[11px] font-semibold tabular-nums" style={{ color: masteryColor }}>{m.mastery}%</span>
                       )}
-                      <ChevronRight size={16} className="shrink-0" style={{ color: ACCENT }} />
+                      <span className="shrink-0 w-10 text-right text-[13px] tabular-nums" style={{ color: '#8d857c' }}>{t.count}</span>
+                      <span className="shrink-0 hidden sm:flex items-center gap-[2px]" aria-label={`Asked in ${t.years} of ${totalYears} years`}>
+                        {stats.years.map(y => (
+                          <span
+                            key={y}
+                            title={String(y)}
+                            className="inline-block w-[4px] h-[12px] rounded-[1px] transition-colors"
+                            style={{ backgroundColor: asked.has(y) ? '#4a453f' : '#e7e3de' }}
+                          />
+                        ))}
+                      </span>
                     </button>
                   );
                 })}
@@ -363,65 +356,69 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     );
   }
 
-  // ── Level 0: the atlas shelf — one card per charted subject, each carrying
-  //    its own per-year question fingerprint. ──
+  // ── Level 0: the index — one ruled row per charted subject. ──
   const shownSubjects = (scope === 'mine' ? subjects.filter(s => mineIds.includes(s.id)) : subjects);
-  const maxPerYear = (per: Map<number, number>) => Math.max(1, ...per.values());
+  const totalQ = subjects.reduce((a, s) => a + subjectAtlasStats(s.id).questions, 0);
+  const scopeTab = (active: boolean) => ({
+    color: active ? INK : '#8d857c',
+    boxShadow: active ? `inset 0 -2px 0 0 ${INK}` : 'none',
+  });
   return (
     <div className="w-full max-w-2xl mx-auto pb-12">
-      <button onClick={onBack} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
+      <button onClick={onBack} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
         <ArrowLeft size={15} /> Paper Trail
       </button>
-      <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 flex items-center gap-2 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
-        <Compass size={22} style={{ color: ACCENT }} /> Topic Atlas
+      <h2 ref={headingRef} tabIndex={-1} className="text-[28px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
+        Topic Atlas
       </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5 max-w-[52ch]" style={{ color: '#5a5550' }}>
-        Every past-paper question, mapped by topic. Pick a subject, pick a topic, and every question the SEC has asked on it is one tap away — with its marking scheme beside it.
+      <p className="text-[14px] leading-relaxed mb-1 max-w-[52ch]" style={{ color: '#5a5550' }}>
+        Every question the SEC has asked, mapped by topic.
+      </p>
+      <p className="text-[12.5px] mb-6 tabular-nums" style={{ color: '#9e9186' }}>
+        {subjects.length} subject{subjects.length === 1 ? '' : 's'} charted · {totalQ.toLocaleString()} questions
       </p>
       {subjects.length === 0 ? (
-        <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
+        <p className="text-[13.5px] py-4" style={{ color: '#5a5550' }}>
           The atlas is being charted subject by subject — check back soon.
         </p>
       ) : (
         <>
           {mineIds.length > 0 && (
-            <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4" role="group" aria-label="Subject scope">
+            <div className="flex items-center gap-4 pb-3 mb-1" role="group" aria-label="Subject scope" style={{ borderBottom: '1px solid #e7e3de' }}>
               {(['mine', 'all'] as const).map(sc => (
-                <button
-                  key={sc}
-                  aria-pressed={scope === sc}
-                  onClick={() => setScope(sc)}
-                  className={`px-3 py-1.5 rounded-lg text-[12.5px] transition-all ${scope === sc ? 'bg-white dark:bg-zinc-800 font-semibold shadow-sm' : ''}`}
-                  style={{ color: scope === sc ? INK : '#7a7068' }}
-                >
+                <button key={sc} aria-pressed={scope === sc} onClick={() => setScope(sc)}
+                  className="pb-1 text-[13px] font-medium transition-colors" style={scopeTab(scope === sc)}>
                   {sc === 'mine' ? 'My subjects' : 'All subjects'}
                 </button>
               ))}
             </div>
           )}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
             {shownSubjects.map(s => {
               const st = subjectAtlasStats(s.id);
-              const peak = maxPerYear(st.perYear);
+              const peak = Math.max(1, ...st.perYear.values());
               return (
                 <button
                   key={s.id}
                   onClick={() => setSubjectId(s.id)}
-                  className="rounded-2xl border-2 border-[#1A1A1A] bg-white shadow-[3px_3px_0_0_#1A1A1A] px-4 pt-4 pb-3 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
+                  className="group w-full flex items-center gap-4 px-1 py-4 text-left transition-colors hover:bg-[#f5f4f2] dark:hover:bg-zinc-800/40"
+                  style={{ borderBottom: '1px solid #eeebe6' }}
                 >
-                  <span className="block text-[16.5px] font-semibold mb-0.5" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>
-                  <span className="block text-[11.5px] mb-2.5" style={{ color: '#7a7068' }}>
-                    <span className="tabular-nums">{st.questions.toLocaleString()}</span> questions · <span className="tabular-nums">{topicsForSubject(s.id).length}</span> topics · <span className="tabular-nums">{st.yearMin}–{st.yearMax}</span>
+                  <span className="flex-1 min-w-0">
+                    <span className="block text-[17px]" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>
+                    <span className="block text-[12px] mt-0.5 tabular-nums" style={{ color: '#8d857c' }}>
+                      {st.questions.toLocaleString()} questions · {topicsForSubject(s.id).length} topics · {st.yearMin}–{st.yearMax}
+                    </span>
                   </span>
-                  <span className="flex items-end gap-[2px] h-[22px]" aria-hidden="true">
+                  <span className="shrink-0 hidden sm:flex items-end gap-[2px] h-[24px]" aria-hidden="true">
                     {st.years.map(y => (
                       <span
                         key={y}
                         title={`${y}: ${st.perYear.get(y) ?? 0} questions`}
-                        className="flex-1 rounded-[1px] min-w-[3px]"
+                        className="inline-block w-[5px] rounded-[1px]"
                         style={{
-                          height: `${Math.max(12, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
-                          backgroundColor: 'rgba(242,107,31,0.45)',
+                          height: `${Math.max(14, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
+                          backgroundColor: '#d8d3cc',
                         }}
                       />
                     ))}

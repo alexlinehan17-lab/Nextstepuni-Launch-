@@ -13287,35 +13287,69 @@ export const CURRICULUM: CurriculumSubject[] = [
     ]
   },
   {
-    "id": "agricultural-economics",
-    "name": "Agricultural Economics",
-    "category": "business",
-    "levels": [
-      "higher",
-      "ordinary"
-    ],
-    "strands": [
-      {
-        "id": "agricultural-economics-0",
-        "name": "Part 1 — Short Questions",
-        "subtopics": [
+      "id": "agricultural-economics",
+      "name": "Agricultural Economics",
+      "category": "business",
+      "levels": [
+          "higher",
+          "ordinary"
+      ],
+      "strands": [
           {
-            "id": "agricultural-economics-0-0",
-            "name": "Short questions (markets, farm income, taxation & policy)"
-          }
-        ]
-      },
-      {
-        "id": "agricultural-economics-1",
-        "name": "Part 2 — Long Questions",
-        "subtopics": [
+              "id": "agricultural-economics-0",
+              "name": "Economic Principles & Markets",
+              "subtopics": [
+                  {
+                      "id": "agricultural-economics-0-0",
+                      "name": "Economic Principles, Supply & Demand"
+                  },
+                  {
+                      "id": "agricultural-economics-0-1",
+                      "name": "Market Structures & Competition"
+                  },
+                  {
+                      "id": "agricultural-economics-0-2",
+                      "name": "Factors of Production & Land"
+                  }
+              ]
+          },
           {
-            "id": "agricultural-economics-1-0",
-            "name": "Long questions (essay & applied problems)"
+              "id": "agricultural-economics-1",
+              "name": "The Farm & the Food Industry",
+              "subtopics": [
+                  {
+                      "id": "agricultural-economics-1-0",
+                      "name": "Farm Business, Accounts & Finance"
+                  },
+                  {
+                      "id": "agricultural-economics-1-1",
+                      "name": "Food Industry, Marketing & the Consumer"
+                  },
+                  {
+                      "id": "agricultural-economics-1-2",
+                      "name": "Irish Agriculture: Structure & Statistics"
+                  }
+              ]
+          },
+          {
+              "id": "agricultural-economics-2",
+              "name": "Policy, Trade & the Economy",
+              "subtopics": [
+                  {
+                      "id": "agricultural-economics-2-0",
+                      "name": "Taxation, Grants & Policy"
+                  },
+                  {
+                      "id": "agricultural-economics-2-1",
+                      "name": "Trade, the EU & CAP"
+                  },
+                  {
+                      "id": "agricultural-economics-2-2",
+                      "name": "The National Economy"
+                  }
+              ]
           }
-        ]
-      }
-    ]
+      ]
   },
   {
     "id": "history-early-modern",

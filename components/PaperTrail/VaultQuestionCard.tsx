@@ -171,15 +171,8 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
         <span className="text-[19px] font-bold tabular-nums shrink-0" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
           {sibling.year}
         </span>
-        <span className="flex items-center gap-1.5 flex-wrap min-w-0">
-          {meta.map(m => (
-            <span key={m} className="text-[10px] font-bold uppercase tracking-[0.06em] px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)' }}>
-              {m}
-            </span>
-          ))}
-          <span className="text-[12.5px] font-semibold" style={{ color: '#5a5550' }}>
-            {(state.s === 'ready' && state.q.label) || `Question ${sibling.n}`}
-          </span>
+        <span className="min-w-0 truncate text-[13px]" style={{ color: '#7a7068' }}>
+          {[...meta, (state.s === 'ready' && state.q.label) || `Question ${sibling.n}`].join(' · ')}
         </span>
         <span className="flex-1" />
         <button
@@ -187,10 +180,8 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
           aria-pressed={saved}
           aria-label={saved ? 'Remove from daily review' : 'Add to daily review'}
           title={saved ? 'In your daily review' : 'Add to daily review'}
-          className="shrink-0 w-7 h-7 rounded-lg flex items-center justify-center border-2 transition-colors"
-          style={saved
-            ? { backgroundColor: '#E8F2EC', borderColor: '#3A8D5F', color: '#1F5F3E' }
-            : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#9e9186' }}
+          className="shrink-0 w-7 h-7 rounded-lg flex items-center justify-center transition-colors hover:bg-[#f5f4f2]"
+          style={saved ? { color: '#1F5F3E' } : { color: '#9e9186' }}
         >
           {saved ? <Check size={14} /> : <Plus size={14} />}
         </button>
