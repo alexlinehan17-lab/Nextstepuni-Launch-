@@ -120,6 +120,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   // should be. The subtitle still does its job on the tool tile, read once.
   'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practice · Spaced repetition', subtitle: 'Real exam questions, marked point by point against the real scheme, brought back to you right before you\u2019d forget them.', showHeader: false },
   'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: true },
+  'topic-atlas':     { themeColor: '#B4530A', eyebrow: 'Understand · Topic map',      subtitle: 'Every question the SEC has ever asked, mapped by topic — with the marking scheme one tap away.', showHeader: true },
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
   'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
   'definition-drill': { themeColor: '#F26B1F', eyebrow: 'Understand · Key definitions', subtitle: 'Drill the exact mark-earning wording the SEC scheme awards the definition marks for.', showHeader: true },
@@ -662,6 +663,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} />,
         },
         {
+            id: 'topic-atlas', title: 'Topic Atlas', description: 'Every question ever asked, mapped by topic \u2014 drill any topic across every year.', icon: Compass, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Topic map', accentHex: '#B4530A', gridClass: 'md:col-span-2',
+            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-800 dark:text-orange-300',
+            accentBarColor: 'bg-orange-700', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-800 dark:text-orange-400',
+            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} initialView="revise" />,
+        },
+        {
             id: 'diagram-vault', title: 'Diagram Vault', description: 'Every diagram, graph, map and chart that has come up in the exams — decoded.', icon: Images, needsProfile: false,
             // 'both': the figure corpus spans Junior Cycle and Leaving Cert subjects.
             curriculum: 'both' as const,
@@ -763,6 +773,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         'college-compass': 'plan',
         'catch-up-lane': 'plan',
         'paper-trail': 'understand',
+        'topic-atlas': 'understand',
         'diagram-vault': 'understand',
         'answer-architect': 'understand',
         'definition-drill': 'understand',

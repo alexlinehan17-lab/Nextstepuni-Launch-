@@ -133,7 +133,11 @@ describe('public/paper-anchors — committed pilot sidecars', () => {
 
   it('question numbers are sequential and anchors are monotonic in print order', () => {
     for (const { year, file, map } of staged) {
-      map.q.forEach((q, i) => expect(q.n, `${year}/${file} q[${i}].n`).toBe(String(i + 1)));
+      // Sequential run in PRINTED numbering — split-spec second booklets
+      // continue the first paper's run (Biology Section C prints Q11-Q17),
+      // so the run may start above 1 but must ascend without gaps.
+      const first = Number(map.q[0]?.n ?? 1);
+      map.q.forEach((q, i) => expect(q.n, `${year}/${file} q[${i}].n`).toBe(String(first + i)));
       for (let i = 1; i < map.q.length; i++) {
         const a = map.q[i - 1];
         const b = map.q[i];

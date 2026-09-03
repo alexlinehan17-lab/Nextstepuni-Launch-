@@ -62,14 +62,19 @@ const fetchOneMap = (url: string): Promise<PaperAnswerMap | null> => {
   }
   return p;
 };
-/** First map that resolves from the ordered candidates (Storage sidecar, then
- *  the hosted paper-anchors fallback) — misses cost one extra small fetch. */
-const fetchAnswerMap = async (urls: string[]): Promise<PaperAnswerMap | null> => {
+/** First candidate map that actually CARRIES question `n` (Storage sidecar,
+ *  then the hosted paper-anchors fallback) — a valid map numbered against a
+ *  different question run (the split-spec Paper-2 class: printed Q11-17 vs a
+ *  tag's 1-7) must not shadow a later candidate that has the question. */
+const fetchAnswerMap = async (urls: string[], n: string): Promise<PaperAnswerMap | null> => {
+  let withoutN: PaperAnswerMap | null = null;
   for (const url of urls) {
     const m = await fetchOneMap(url);
-    if (m) return m;
+    if (!m) continue;
+    if (m.q.some(q => q.n === n)) return m;
+    withoutN = withoutN ?? m;
   }
-  return null;
+  return withoutN;
 };
 
 type CardState =
@@ -119,7 +124,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
     // cancel the in-flight load. The skeleton renders for 'idle' anyway.
     let cancelled = false;
     (async () => {
-      const map = await fetchAnswerMap(answerMapUrls(resolved));
+      const map = await fetchAnswerMap(answerMapUrls(resolved), sibling.n);
       if (cancelled) return;
       const q = map?.q.find(x => x.n === sibling.n);
       const region = map && q ? paperRegionFor(map.q, sibling.n) : null;

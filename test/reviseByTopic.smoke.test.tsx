@@ -37,8 +37,8 @@ describe('Topic Vault — ReviseByTopic', () => {
         onBack={noop}
       />,
     );
-    expect(screen.getByText(/Topic Vault/i)).toBeInTheDocument();
-    expect(screen.getByText(/Every past-paper question, sorted by topic/i)).toBeInTheDocument();
+    expect(screen.getByText(/Topic Atlas/i)).toBeInTheDocument();
+    expect(screen.getByText(/Every past-paper question, mapped by topic/i)).toBeInTheDocument();
   });
 
   test('drills subject → topic list → question feed without crashing', () => {
@@ -54,7 +54,7 @@ describe('Topic Vault — ReviseByTopic', () => {
     );
     // Level 0 → 1: pick the subject tile.
     fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${label(sid)}`) }));
-    expect(screen.getByText(/Pick a topic to drill/i)).toBeInTheDocument();
+    expect(screen.getByText(/Pick a topic to see every one/i)).toBeInTheDocument();
 
     // The busiest topic renders as a row; drill into it.
     const busiest = topicsForSubject(sid)[0];
