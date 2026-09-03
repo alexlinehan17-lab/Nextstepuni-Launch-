@@ -176,6 +176,9 @@ interface PaperTrailProps {
   onboardingExamDate?: string;
   /** Cross-tool routing (error autopsy) — opens another Launchpad tool by id. */
   onOpenTool?: (toolId: string) => void;
+  /** Open straight into a sub-surface (the Topic Atlas tool card mounts the
+   *  same component aimed at the topic browser). */
+  initialView?: 'revise';
 }
 
 const PaperTrail: React.FC<PaperTrailProps> = ({
@@ -186,11 +189,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   isLca = false,
   onboardingExamDate,
   onOpenTool,
+  initialView,
 }) => {
   const { state, isLoaded, recordRecent, updatePage, setFilters } = usePaperFinder(uid);
   const junior = studentCycle === 'junior-cycle';
 
-  const [view, setView] = useState<View>({ v: 'home' });
+  const [view, setView] = useState<View>(initialView === 'revise' ? { v: 'revise' } : { v: 'home' });
   const [level, setLevel] = useState<PaperLevel | null>(null);
   const [lang, setLang] = useState<PaperLang | null>(null);
   const [year, setYear] = useState<number | null>(null);
@@ -1113,8 +1117,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           <Layers size={18} style={{ color: '#F26B1F' }} />
         </span>
         <span className="flex-1 min-w-0">
-          <span className="block text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Topic Vault</span>
-          <span className="block text-[12px]" style={{ color: '#7a7068' }}>Every question by topic</span>
+          <span className="block text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Topic Atlas</span>
+          <span className="block text-[12px]" style={{ color: '#7a7068' }}>Every question ever asked, mapped by topic</span>
         </span>
       </button>
 

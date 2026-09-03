@@ -19,7 +19,7 @@
  * Keys (year/level/lang/fileid/n) match the Topic Vault tags exactly. Biology
  * is filed as two booklets per sitting:
  *  - "Sections A and B" booklet → fileid …LP038… → n 1–10 = scheme Q1–Q10.
- *  - "Section C" booklet        → fileid …LP040… → n 1–7  = scheme Q11–Q17.
+ *  - "Section C" booklet        → fileid …LP040… → printed n 11–17 (Section C numbering continues from Section B).
  * The IV (Irish) papers are the same exam under the same scheme — mirrored.
  *
  * NOT INCLUDED: 2023. The only 2023 scheme filed here is the *Deferred
@@ -181,11 +181,11 @@ const HL_SECTION_B: QuestionLens[] = [
   },
 ];
 
-// ── Section C (Q11–Q17, 60 marks each) — n 1–7 in the LP040 booklet ──────────
+// ── Section C (Q11–Q17, 60 marks each) — printed numbering, matching the tags and anchors ──────────
 
 const HL_SECTION_C: QuestionLens[] = [
   {
-    ...hlBase, fileid: HL_C, n: '1', totalMarks: 60,
+    ...hlBase, fileid: HL_C, n: '11', totalMarks: 60,
     headline: 'Section C long question worth 60 — parts (a)/(b)/(c) carry 3, 9 and 8 three-mark points.',
     parts: [
       { part: '(a)', task: 'Geotropism — define, name a part that responds, state the benefit', notation: '3(3)', decoded: 'Three correct points, 3 marks each.', marks: 9 },
@@ -195,7 +195,7 @@ const HL_SECTION_C: QuestionLens[] = [
     cite: CITE_HL('Q11'),
   },
   {
-    ...hlBase, fileid: HL_C, n: '2', totalMarks: 60,
+    ...hlBase, fileid: HL_C, n: '12', totalMarks: 60,
     headline: 'Section C long question worth 60 — three-mark points split 3 / 9 / 8 across parts (a)/(b)/(c).',
     parts: [
       { part: '(a)', task: 'Mutation — define (3) + two causes', notation: '3 + 2(3)', decoded: 'Definition 3, plus two causes at 3 each.', marks: 9 },
@@ -205,7 +205,7 @@ const HL_SECTION_C: QuestionLens[] = [
     cite: CITE_HL('Q12'),
   },
   {
-    ...hlBase, fileid: HL_C, n: '3', totalMarks: 60,
+    ...hlBase, fileid: HL_C, n: '13', totalMarks: 60,
     headline: 'Section C long question worth 60 — three-mark points split 3 / 9 / 8 across parts (a)/(b)/(c).',
     parts: [
       { part: '(a)', task: 'Photosynthesis as anabolic (3) + balanced equation', notation: '3 + 2(3)', decoded: 'Anabolic point 3, plus equation formulae 3 and balancing 3.', marks: 9 },
@@ -215,7 +215,7 @@ const HL_SECTION_C: QuestionLens[] = [
     cite: CITE_HL('Q13'),
   },
   {
-    ...hlBase, fileid: HL_C, n: '4', totalMarks: 60,
+    ...hlBase, fileid: HL_C, n: '14', totalMarks: 60,
     headline: 'Section C long question worth 60 — part (b) mixes 3-, 1- and 2-mark answers; part (c) mixes 1-, 2- and 3-mark answers.',
     parts: [
       { part: '(a)', task: 'CNS vs PNS + how the nervous system is protected', notation: '3(3)', decoded: 'Three correct points, 3 marks each.', marks: 9 },
@@ -225,7 +225,7 @@ const HL_SECTION_C: QuestionLens[] = [
     cite: CITE_HL('Q14'),
   },
   {
-    ...hlBase, fileid: HL_C, n: '5', totalMarks: 60,
+    ...hlBase, fileid: HL_C, n: '15', totalMarks: 60,
     headline: 'Section C long question worth 60 — part (b) mixes seven 3-mark points with three 2-mark graph points.',
     parts: [
       { part: '(a)', task: 'Explain biosphere, niche and competition', notation: '3(3)', decoded: 'Three correct points, 3 marks each.', marks: 9 },
@@ -235,7 +235,7 @@ const HL_SECTION_C: QuestionLens[] = [
     cite: CITE_HL('Q15'),
   },
   {
-    ...hlBase, fileid: HL_C, n: '6', totalMarks: 60,
+    ...hlBase, fileid: HL_C, n: '16', totalMarks: 60,
     headline: 'Section C choice question — answer any two of options (a)–(d), each marked out of 30.',
     parts: [
       { part: '(a)–(d)', task: 'First of your two chosen options', notation: '30', decoded: 'One of the two options you answer from (a)–(d), marked out of 30.', marks: 30 },
@@ -244,7 +244,7 @@ const HL_SECTION_C: QuestionLens[] = [
     cite: CITE_HL('Q16'),
   },
   {
-    ...hlBase, fileid: HL_C, n: '7', totalMarks: 60,
+    ...hlBase, fileid: HL_C, n: '17', totalMarks: 60,
     headline: 'Section C choice question — answer any two of options (a)–(d), each marked out of 30.',
     parts: [
       { part: '(a)–(d)', task: 'First of your two chosen options', notation: '30', decoded: 'One of the two options you answer from (a)–(d), marked out of 30.', marks: 30 },
@@ -358,11 +358,11 @@ const OL_SECTION_B: QuestionLens[] = [
   },
 ];
 
-// ── Section C (Q11–Q17, 60 marks each) — n 1–7 in the GLP040 booklet ─────────
+// ── Section C (Q11–Q17, 60 marks each) — printed numbering, matching the tags and anchors ─────────
 
 const OL_SECTION_C: QuestionLens[] = [
   {
-    ...olBase, fileid: OL_C, n: '1', totalMarks: 60,
+    ...olBase, fileid: OL_C, n: '11', totalMarks: 60,
     headline: 'Section C long question worth 60 — parts (a)/(b)/(c) carry 3, 9 and 8 three-mark points.',
     parts: [
       { part: '(a)', task: 'Energy source of ecosystems; why food chains are short; interconnected food chains', notation: '3(3)', decoded: 'Three correct points, 3 marks each.', marks: 9 },
@@ -372,7 +372,7 @@ const OL_SECTION_C: QuestionLens[] = [
     cite: CITE_OL('Q11'),
   },
   {
-    ...olBase, fileid: OL_C, n: '2', totalMarks: 60,
+    ...olBase, fileid: OL_C, n: '12', totalMarks: 60,
     headline: 'Section C long question worth 60 — three-mark points split 3 / 9 / 8 across parts (a)/(b)/(c).',
     parts: [
       { part: '(a)', task: 'Match genotype/phenotype; chromosomes are DNA and ___', notation: '3(3)', decoded: 'Three correct points, 3 marks each.', marks: 9 },
@@ -382,7 +382,7 @@ const OL_SECTION_C: QuestionLens[] = [
     cite: CITE_OL('Q12'),
   },
   {
-    ...olBase, fileid: OL_C, n: '3', totalMarks: 60,
+    ...olBase, fileid: OL_C, n: '13', totalMarks: 60,
     headline: 'Section C long question worth 60 — three-mark points split 3 / 9 / 8 across parts (a)/(b)/(c).',
     parts: [
       { part: '(a)', task: 'Metabolism; match photosynthesis/respiration to organelles', notation: '3(3)', decoded: 'Three correct points, 3 marks each.', marks: 9 },
@@ -392,7 +392,7 @@ const OL_SECTION_C: QuestionLens[] = [
     cite: CITE_OL('Q13'),
   },
   {
-    ...olBase, fileid: OL_C, n: '4', totalMarks: 60,
+    ...olBase, fileid: OL_C, n: '14', totalMarks: 60,
     headline: 'Section C long question worth 60 — three-mark points split 3 / 9 / 8 across parts (a)/(b)/(c).',
     parts: [
       { part: '(a)', task: 'Root and shoot systems and a function for each', notation: '3(3)', decoded: 'Three correct points, 3 marks each.', marks: 9 },
@@ -402,7 +402,7 @@ const OL_SECTION_C: QuestionLens[] = [
     cite: CITE_OL('Q14'),
   },
   {
-    ...olBase, fileid: OL_C, n: '5', totalMarks: 60,
+    ...olBase, fileid: OL_C, n: '15', totalMarks: 60,
     headline: 'Section C long question worth 60 — three-mark points split 3 / 9 / 8 across parts (a)/(b)/(c).',
     parts: [
       { part: '(a)', task: 'Male hormone; hormones that build and maintain the endometrium', notation: '3(3)', decoded: 'Three correct points, 3 marks each.', marks: 9 },
@@ -412,7 +412,7 @@ const OL_SECTION_C: QuestionLens[] = [
     cite: CITE_OL('Q15'),
   },
   {
-    ...olBase, fileid: OL_C, n: '6', totalMarks: 60,
+    ...olBase, fileid: OL_C, n: '16', totalMarks: 60,
     headline: 'Section C choice question — answer any two of (a)–(d); each option is ten 3-mark points.',
     parts: [
       { part: '(a)–(d)', task: 'First of your two chosen options — ten 3-mark points', notation: '10(3)', decoded: 'Each option scores as ten correct points at 3 marks (grid to 30).', marks: 30 },
@@ -422,7 +422,7 @@ const OL_SECTION_C: QuestionLens[] = [
     cite: CITE_OL('Q16'),
   },
   {
-    ...olBase, fileid: OL_C, n: '7', totalMarks: 60,
+    ...olBase, fileid: OL_C, n: '17', totalMarks: 60,
     headline: 'Section C choice question — answer any two of (a)–(d); each option is ten 3-mark points.',
     parts: [
       { part: '(a)–(d)', task: 'First of your two chosen options — ten 3-mark points', notation: '10(3)', decoded: 'Each option scores as ten correct points at 3 marks (grid to 30).', marks: 30 },

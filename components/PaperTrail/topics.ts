@@ -10,6 +10,7 @@
 import { PAPER_TOPIC_TAGS, TOPIC_LABELS } from '../../data/paperTrail/topicTags';
 import { type PaperTopicTags, type QuestionTopicTag } from '../../types/paperTrailTopics';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
+import { CURRICULUM } from '../../curriculum';
 
 /** Normalise a paper label to a stable slot so P1 and P2 topic pools stay
  *  separate in the frequency counts. */
@@ -167,3 +168,89 @@ export function questionsForTopics(subjectId: string, subtopicIds: string[] | nu
 }
 
 export type { QuestionTopicTag };
+
+// ─── atlas aggregates (subject shelf + unit-grouped topic map) ─────
+
+export interface SubjectAtlasStats {
+  questions: number;
+  topics: number;
+  yearMin: number;
+  yearMax: number;
+  /** Tagged years ascending — the denominator timeline for the year strips. */
+  years: number[];
+  /** Question count per tagged year (the shelf card's fingerprint bars). */
+  perYear: Map<number, number>;
+}
+
+const statsMemo = new Map<string, SubjectAtlasStats>();
+
+export function subjectAtlasStats(subjectId: string): SubjectAtlasStats {
+  let s = statsMemo.get(subjectId);
+  if (s) return s;
+  const perYear = new Map<number, number>();
+  const topicIds = new Set<string>();
+  let questions = 0;
+  for (const p of PAPER_TOPIC_TAGS) {
+    if (p.subjectId !== subjectId) continue;
+    perYear.set(p.year, (perYear.get(p.year) ?? 0) + p.q.length);
+    questions += p.q.length;
+    for (const q of p.q) {
+      topicIds.add(q.primary);
+      if (q.secondary) topicIds.add(q.secondary);
+    }
+  }
+  const years = [...perYear.keys()].sort((a, b) => a - b);
+  s = {
+    questions,
+    topics: topicIds.size,
+    yearMin: years[0] ?? 0,
+    yearMax: years[years.length - 1] ?? 0,
+    years,
+    perYear,
+  };
+  statsMemo.set(subjectId, s);
+  return s;
+}
+
+/** Which tagged years each subtopic appears in — drives the per-topic year
+ *  strip (one dot per tagged year, filled where the topic was asked). */
+export function topicYearSets(subjectId: string): Map<string, Set<number>> {
+  const out = new Map<string, Set<number>>();
+  for (const p of PAPER_TOPIC_TAGS) {
+    if (p.subjectId !== subjectId) continue;
+    for (const q of p.q) {
+      for (const id of [q.primary, q.secondary]) {
+        if (!id) continue;
+        let set = out.get(id);
+        if (!set) out.set(id, (set = new Set()));
+        set.add(p.year);
+      }
+    }
+  }
+  return out;
+}
+
+export interface AtlasStrand {
+  id: string;
+  name: string;
+  subtopicIds: string[];
+}
+
+/** Curriculum strand grouping for a subject's tagged topics — topics whose id
+ *  matches no strand gather under a trailing "Other topics" strand so nothing
+ *  silently disappears from the map. */
+export function strandsFor(subjectId: string, taggedIds: string[]): AtlasStrand[] {
+  const subj = CURRICULUM.find(c => c.id === subjectId);
+  const tagged = new Set(taggedIds);
+  const out: AtlasStrand[] = [];
+  const claimed = new Set<string>();
+  for (const strand of subj?.strands ?? []) {
+    const ids = strand.subtopics.map(t => t.id).filter(id => tagged.has(id));
+    if (!ids.length) continue;
+    out.push({ id: strand.id, name: strand.name, subtopicIds: ids });
+    for (const id of ids) claimed.add(id);
+  }
+  const rest = taggedIds.filter(id => !claimed.has(id));
+  if (rest.length) out.push({ id: '__other', name: out.length ? 'Other topics' : 'Topics', subtopicIds: rest });
+  return out;
+}

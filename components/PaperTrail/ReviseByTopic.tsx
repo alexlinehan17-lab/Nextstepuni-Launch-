@@ -13,9 +13,8 @@
 
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ChevronRight, Layers, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
-import SubjectTilePicker from '../shared/SubjectTilePicker';
-import { siblingsFor, taggedYearsForSubject, topicLabel, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
+import { ArrowLeft, ChevronRight, Compass, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
+import { siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
@@ -233,32 +232,39 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     );
   }
 
-  // ── Level 1: topics for a subject ──
+  // ── Level 1: the topic map — curriculum units, each topic with its
+  //    cross-year record as a strip of year dots. ──
   if (subjectId) {
+    const stats = subjectAtlasStats(subjectId);
+    const yearSets = topicYearSets(subjectId);
+    const strands = strandsFor(subjectId, topics.map(t => t.subtopicId));
+    const topicById = new Map(topics.map(t => [t.subtopicId, t]));
     return (
-      <div className="w-full max-w-xl mx-auto pb-12">
+      <div className="w-full max-w-2xl mx-auto pb-12">
         <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> All subjects
         </button>
         <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
-        <p className="text-[13px] mb-3" style={{ color: '#7a7068' }}>Pick a topic to drill every past question on it.</p>
-        {/* Sort: busiest by question count, or by how many years it recurs. */}
-        <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4" role="group" aria-label="Sort topics">
-          {(['busiest', 'frequent'] as const).map(s => (
-            <button
-              key={s}
-              aria-pressed={sort === s}
-              onClick={() => setSort(s)}
-              className={`px-3 py-1.5 rounded-lg text-[12.5px] transition-all ${sort === s ? 'bg-white dark:bg-zinc-800 font-semibold shadow-sm' : ''}`}
-              style={{ color: sort === s ? INK : '#7a7068' }}
-            >
-              {s === 'busiest' ? 'Most questions' : 'Most examined'}
-            </button>
-          ))}
+        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
+          <span className="tabular-nums">{stats.questions.toLocaleString()}</span> past questions · <span className="tabular-nums">{baseTopics.length}</span> topics · <span className="tabular-nums">{stats.yearMin}–{stats.yearMax}</span>. Pick a topic to see every one.
+        </p>
+        <div className="flex items-center gap-2 flex-wrap mb-3">
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit" role="group" aria-label="Sort topics">
+            {(['busiest', 'frequent'] as const).map(s => (
+              <button
+                key={s}
+                aria-pressed={sort === s}
+                onClick={() => setSort(s)}
+                className={`px-3 py-1.5 rounded-lg text-[12.5px] transition-all ${sort === s ? 'bg-white dark:bg-zinc-800 font-semibold shadow-sm' : ''}`}
+                style={{ color: sort === s ? INK : '#7a7068' }}
+              >
+                {s === 'busiest' ? 'Most questions' : 'Most examined'}
+              </button>
+            ))}
+          </div>
         </div>
-        {/* Type-to-filter — a fast way through a long topic list. */}
         {sortedTopics.length > 8 && (
-          <div className="relative mb-3">
+          <div className="relative mb-4">
             <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
             <input
               type="text"
@@ -285,75 +291,146 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           <p className="text-[13px] rounded-xl px-4 py-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}>
             No topics match “{topicQuery.trim()}”. <button onClick={() => setTopicQuery('')} className="font-semibold underline">Clear</button>
           </p>
-        ) : (
-        <div className="space-y-1.5">
-          {topics.map(t => {
-            const m = masteryMap.get(t.subtopicId);
-            const masteryColor = m ? (m.mastery >= 70 ? '#3A8D5F' : '#F26B1F') : null;
-            const highYield = isHighYield(t);
-            return (
-              <button
-                key={t.subtopicId}
-                onClick={() => setSubtopicId(t.subtopicId)}
-                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] bg-white px-3.5 py-3 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
-              >
-                <span className="flex-1 min-w-0">
-                  <span className="flex items-center gap-2">
-                    <span className="text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
-                    {highYield && (
-                      <span className="shrink-0 text-[9.5px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.3)' }}>
-                        High-yield
+        ) : strands.map(strand => {
+          const strandTopics = strand.subtopicIds
+            .map(id => topicById.get(id))
+            .filter((t): t is SubjectTopic => !!t);
+          if (!strandTopics.length) return null;
+          const ordered = [...strandTopics].sort((a, b) =>
+            sort === 'busiest'
+              ? b.count - a.count || b.years - a.years || a.label.localeCompare(b.label)
+              : b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
+          return (
+            <section key={strand.id} className="mb-6">
+              <h3 className="text-[11px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>
+                {strand.name}
+              </h3>
+              <div className="space-y-2">
+                {ordered.map(t => {
+                  const m = masteryMap.get(t.subtopicId);
+                  const masteryColor = m ? (m.mastery >= 70 ? '#3A8D5F' : '#F26B1F') : null;
+                  const highYield = isHighYield(t);
+                  const asked = yearSets.get(t.subtopicId) ?? new Set<number>();
+                  return (
+                    <button
+                      key={t.subtopicId}
+                      onClick={() => setSubtopicId(t.subtopicId)}
+                      className="w-full flex items-center gap-3 rounded-xl border-[1.5px] border-[#1a1a1a] bg-white px-4 py-3 text-left transition-all active:translate-y-0.5 hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_#1A1A1A]"
+                    >
+                      <span className="flex-1 min-w-0">
+                        <span className="flex items-center gap-2">
+                          <span className="text-[14.5px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
+                          {highYield && (
+                            <span className="shrink-0 text-[9.5px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.3)' }}>
+                              High-yield
+                            </span>
+                          )}
+                        </span>
+                        <span className="block text-[11.5px] mt-0.5 mb-1.5" style={{ color: '#7a7068' }}>
+                          <span className="tabular-nums">{t.count}</span> question{t.count === 1 ? '' : 's'} · <span className="tabular-nums">{t.years}</span> of <span className="tabular-nums">{totalYears}</span> years
+                        </span>
+                        <span className="flex items-center gap-[3px]" aria-hidden="true">
+                          {stats.years.map(y => (
+                            <span
+                              key={y}
+                              title={String(y)}
+                              className="inline-block w-[7px] h-[7px] rounded-full"
+                              style={asked.has(y)
+                                ? { backgroundColor: '#F26B1F' }
+                                : { backgroundColor: 'transparent', boxShadow: 'inset 0 0 0 1.5px #e0dbd4' }}
+                            />
+                          ))}
+                        </span>
                       </span>
-                    )}
-                  </span>
-                  <span className="block text-[11.5px] mt-0.5" style={{ color: '#7a7068' }}>
-                    {t.count} question{t.count === 1 ? '' : 's'} · appeared in {t.years} of {totalYears} year{totalYears === 1 ? '' : 's'}
-                  </span>
-                </span>
-                {m && masteryColor && (
-                  <span className="shrink-0 w-16 text-right">
-                    <span className="block text-[11px] font-bold tabular-nums" style={{ color: masteryColor }}>{m.mastery}%</span>
-                    <span className="block mt-0.5 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e0dbd4' }}>
-                      <span className="block h-full rounded-full" style={{ width: `${m.mastery}%`, backgroundColor: masteryColor }} />
-                    </span>
-                    <span className="block text-[9px] mt-0.5" style={{ color: '#9e9186' }}>mastery</span>
-                  </span>
-                )}
-                <ChevronRight size={16} className="shrink-0" style={{ color: ACCENT }} />
-              </button>
-            );
-          })}
-        </div>
-        )}
+                      {m && masteryColor && (
+                        <span className="shrink-0 w-16 text-right">
+                          <span className="block text-[11px] font-bold tabular-nums" style={{ color: masteryColor }}>{m.mastery}%</span>
+                          <span className="block mt-0.5 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e0dbd4' }}>
+                            <span className="block h-full rounded-full" style={{ width: `${m.mastery}%`, backgroundColor: masteryColor }} />
+                          </span>
+                          <span className="block text-[9px] mt-0.5" style={{ color: '#9e9186' }}>mastery</span>
+                        </span>
+                      )}
+                      <ChevronRight size={16} className="shrink-0" style={{ color: ACCENT }} />
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
       </div>
     );
   }
 
-  // ── Level 0: subject picker ──
+  // ── Level 0: the atlas shelf — one card per charted subject, each carrying
+  //    its own per-year question fingerprint. ──
+  const shownSubjects = (scope === 'mine' ? subjects.filter(s => mineIds.includes(s.id)) : subjects);
+  const maxPerYear = (per: Map<number, number>) => Math.max(1, ...per.values());
   return (
-    <div className="w-full max-w-xl mx-auto pb-12">
+    <div className="w-full max-w-2xl mx-auto pb-12">
       <button onClick={onBack} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
         <ArrowLeft size={15} /> Paper Trail
       </button>
-      <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 flex items-center gap-2 outline-none" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
-        <Layers size={20} style={{ color: ACCENT }} /> Topic Vault
+      <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 flex items-center gap-2 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
+        <Compass size={22} style={{ color: ACCENT }} /> Topic Atlas
       </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: '#5a5550' }}>
-        Every past-paper question, sorted by topic. Weak on one thing? Drill every question on it across every year — with the marking scheme one tap away.
+      <p className="text-[13.5px] leading-relaxed mb-5 max-w-[52ch]" style={{ color: '#5a5550' }}>
+        Every past-paper question, mapped by topic. Pick a subject, pick a topic, and every question the SEC has asked on it is one tap away — with its marking scheme beside it.
       </p>
       {subjects.length === 0 ? (
         <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
-          Topic revision is being added subject by subject — check back soon.
+          The atlas is being charted subject by subject — check back soon.
         </p>
       ) : (
-        <SubjectTilePicker
-          headingLabel="Pick a subject"
-          subjects={subjects.map(s => ({ id: s.id, label: s.label, sublabel: `${topicsForSubject(s.id).length} topics` }))}
-          mineIds={mineIds}
-          scope={scope}
-          onScopeChange={setScope}
-          onPick={setSubjectId}
-        />
+        <>
+          {mineIds.length > 0 && (
+            <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4" role="group" aria-label="Subject scope">
+              {(['mine', 'all'] as const).map(sc => (
+                <button
+                  key={sc}
+                  aria-pressed={scope === sc}
+                  onClick={() => setScope(sc)}
+                  className={`px-3 py-1.5 rounded-lg text-[12.5px] transition-all ${scope === sc ? 'bg-white dark:bg-zinc-800 font-semibold shadow-sm' : ''}`}
+                  style={{ color: scope === sc ? INK : '#7a7068' }}
+                >
+                  {sc === 'mine' ? 'My subjects' : 'All subjects'}
+                </button>
+              ))}
+            </div>
+          )}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {shownSubjects.map(s => {
+              const st = subjectAtlasStats(s.id);
+              const peak = maxPerYear(st.perYear);
+              return (
+                <button
+                  key={s.id}
+                  onClick={() => setSubjectId(s.id)}
+                  className="rounded-2xl border-2 border-[#1A1A1A] bg-white shadow-[3px_3px_0_0_#1A1A1A] px-4 pt-4 pb-3 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
+                >
+                  <span className="block text-[16.5px] font-semibold mb-0.5" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>
+                  <span className="block text-[11.5px] mb-2.5" style={{ color: '#7a7068' }}>
+                    <span className="tabular-nums">{st.questions.toLocaleString()}</span> questions · <span className="tabular-nums">{topicsForSubject(s.id).length}</span> topics · <span className="tabular-nums">{st.yearMin}–{st.yearMax}</span>
+                  </span>
+                  <span className="flex items-end gap-[2px] h-[22px]" aria-hidden="true">
+                    {st.years.map(y => (
+                      <span
+                        key={y}
+                        title={`${y}: ${st.perYear.get(y) ?? 0} questions`}
+                        className="flex-1 rounded-[1px] min-w-[3px]"
+                        style={{
+                          height: `${Math.max(12, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
+                          backgroundColor: 'rgba(242,107,31,0.45)',
+                        }}
+                      />
+                    ))}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </>
       )}
     </div>
   );

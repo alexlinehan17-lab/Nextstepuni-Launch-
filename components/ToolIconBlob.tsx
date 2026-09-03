@@ -23,6 +23,7 @@ export type ToolIconKey =
   | 'ways-in'
   | 'journey'
   | 'mark-bank'
+  | 'topic-atlas'
   | 'cao-simulator'
   | 'planner'
   | 'war-room'
@@ -85,6 +86,14 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blob: '#E4CF8F',
     iconPath: '/assets/tools/mark-bank.png',
     blobPath: 'M 7 23 Q 0 48 8 77 Q 23 97 51 95 Q 84 93 95 67 Q 101 39 87 15 Q 66 -2 37 4 Q 15 10 7 23 Z',
+    iconScale: 1.0,
+  },
+  'topic-atlas': {
+    // Soft cartographic apricot — the atlas is the archive's map layer, so it
+    // sits near Paper Trail's family while reading warmer and more inviting.
+    blob: '#F3C9A5',
+    iconPath: '/assets/tools/paper-trail.png',
+    blobPath: 'M 9 24 Q 1 50 9 76 Q 24 97 53 95 Q 86 91 95 62 Q 100 32 83 11 Q 58 -3 31 6 Q 13 13 9 24 Z',
     iconScale: 1.0,
   },
   'journey': {
