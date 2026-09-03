@@ -80,7 +80,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
   const subjectColors = subject ? getSubjectColor(subject) : null;
 
   return (
-    <div className="min-h-screen bg-[#FAF9F7] dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-10">
+    <div className="min-h-screen bg-white dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-10">
       <MotionDiv
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

@@ -100,7 +100,7 @@ class ModuleErrorBoundary extends React.Component<ModuleErrorBoundaryProps, Modu
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex items-center justify-center p-6">
+        <div className="min-h-screen bg-white dark:bg-zinc-950 flex items-center justify-center p-6">
           <div className="max-w-md w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 text-center">
             <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-rose-100 dark:bg-rose-500/10 flex items-center justify-center">
               <span className="text-2xl">!</span>
@@ -700,7 +700,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           initial={{ opacity: 0, y: 18, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950"
+          className="min-h-screen bg-white dark:bg-zinc-950"
         >
           {/* Header */}
           <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-[#FAFBF6] dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
@@ -804,7 +804,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     }
     // Module ID not found in registry — show fallback and navigate back
     return (
-      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex items-center justify-center p-6">
+      <div className="min-h-screen bg-white dark:bg-zinc-950 flex items-center justify-center p-6">
         <div className="max-w-md w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 text-center">
           <h2 className="text-lg font-bold text-zinc-800 dark:text-white mb-2">Module not found</h2>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">
@@ -853,7 +853,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
   const inputClass = "w-full py-3.5 px-4 rounded-xl text-sm font-sans text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 focus:border-[#F26B1F]";
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-5 bg-[#FAFBF6] dark:bg-zinc-950">
+    <div className="min-h-screen flex items-center justify-center p-5 bg-white dark:bg-zinc-950">
       <div className="w-full max-w-md bg-white dark:bg-zinc-900 rounded-2xl p-8 md:p-10" style={{ border: '2px solid #1a1a1a' }}>
         <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Set a new password</h2>
         <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Your password was reset by your guidance counsellor. Please choose a new password to continue.</p>

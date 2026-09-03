@@ -36,7 +36,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, Error
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex items-center justify-center p-6">
+        <div className="min-h-screen bg-white dark:bg-zinc-950 flex items-center justify-center p-6">
           <div className="max-w-sm w-full text-center space-y-6">
             <div className="w-16 h-16 rounded-2xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center mx-auto">
               <AlertTriangle className="w-8 h-8 text-red-500 dark:text-red-400" />

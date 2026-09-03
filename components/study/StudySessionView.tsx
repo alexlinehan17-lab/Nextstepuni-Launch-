@@ -460,7 +460,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   // ── SETUP PHASE ──
   if (session.phase === 'idle') {
     return (
-      <div className="min-h-screen theme-compat bg-[#FAFBF6] dark:bg-zinc-950 flex flex-col">
+      <div className="min-h-screen theme-compat bg-white dark:bg-zinc-950 flex flex-col">
         {/* ── Editorial header — replaces the old teal hero banner ── */}
         <div className="mx-auto w-full max-w-md shrink-0 px-4 pt-5 sm:px-6 sm:pt-6">
           <div className="flex items-center justify-between">
@@ -1149,7 +1149,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     const isEarlyEnd = session.elapsedSeconds < session.totalDuration;
 
     return (
-      <div className="min-h-screen bg-[#FAF9F7] dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-12">
+      <div className="min-h-screen bg-white dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-12">
         <MotionDiv
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
