@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --surface-canvas: #FAFBF6;
+  --surface-canvas: #ffffff;
   --surface-paper: #FFFFFF;
   --surface-soft: #F6F2EC;
   --surface-raised: #FFFFFF;

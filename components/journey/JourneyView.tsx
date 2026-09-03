@@ -265,7 +265,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
   // No North Star set
   if (!northStar) {
     return (
-      <div className="min-h-screen bg-[#FAFBF6] px-5 pb-28 pt-5 text-left dark:bg-zinc-950 sm:px-8 sm:pt-8">
+      <div className="min-h-screen bg-white px-5 pb-28 pt-5 text-left dark:bg-zinc-950 sm:px-8 sm:pt-8">
         <button
           type="button"
           onClick={onBack}
@@ -314,7 +314,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
 
   if (isLoading || !islandState) {
     return (
-      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex items-center justify-center">
+      <div className="min-h-screen bg-white dark:bg-zinc-950 flex items-center justify-center">
         <div className="w-8 h-8 border-2 border-[var(--accent-hex)] border-t-transparent rounded-full animate-spin" />
       </div>
     );

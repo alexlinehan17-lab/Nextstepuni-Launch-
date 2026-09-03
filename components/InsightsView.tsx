@@ -73,7 +73,7 @@ const InsightsView: React.FC<InsightsViewProps> = ({ uid, streak, strategyMaster
   const { insights, isLoaded } = useInsights(uid, streak, strategyMastery);
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 pt-16 md:pt-24 pb-40 md:pb-32 px-4 sm:px-6 transition-colors duration-500">
+    <div className="min-h-screen bg-white dark:bg-zinc-950 pt-16 md:pt-24 pb-40 md:pb-32 px-4 sm:px-6 transition-colors duration-500">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="flex items-center gap-4 mb-10">

@@ -223,7 +223,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
   const _unlockedIndex = courses.length; // For now, all modules in a category are unlocked by default
 
   return (
-    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden relative bg-[#FAFBF6] dark:bg-zinc-950">
+    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden relative bg-white dark:bg-zinc-950">
 
       {/* Sidebar — desktop only, starts below fixed header */}
       {hasSidebar && headerHeight > 0 && (

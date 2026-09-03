@@ -33,7 +33,7 @@ interface WipToolsProps {
 }
 
 const WipTools: React.FC<WipToolsProps> = ({ onBack, onOpenTool }) => (
-  <div className="min-h-screen theme-compat bg-[#FAFBF6] dark:bg-zinc-950 pt-16 md:pt-20 pb-32 px-4 sm:px-6 transition-colors duration-500">
+  <div className="min-h-screen theme-compat bg-white dark:bg-zinc-950 pt-16 md:pt-20 pb-32 px-4 sm:px-6 transition-colors duration-500">
     <div className="max-w-3xl mx-auto">
       {/* ── Header ── */}
       <div className="flex items-center gap-4 mb-4">

@@ -83,7 +83,7 @@ const MyDirection: React.FC<MyDirectionProps> = ({
   };
 
   return (
-    <main className="min-h-screen theme-compat bg-[#FAFBF6] text-[#1A1A1A] dark:bg-zinc-950 dark:text-zinc-50">
+    <main className="min-h-screen theme-compat bg-white text-[#1A1A1A] dark:bg-zinc-950 dark:text-zinc-50">
       <header className="border-b border-[#DED9D2] dark:border-zinc-800">
         <div className="mx-auto flex max-w-6xl items-center gap-5 px-5 py-6 md:px-8">
           <button onClick={onBack} aria-label="Back" className="grid h-12 w-12 place-items-center rounded-2xl border-2 border-[#292929] bg-white shadow-[3px_3px_0_#292929] transition-transform hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none dark:bg-zinc-900 dark:border-zinc-500 dark:shadow-[3px_3px_0_#52525b]">
