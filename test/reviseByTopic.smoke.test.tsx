@@ -38,7 +38,7 @@ describe('Topic Vault — ReviseByTopic', () => {
       />,
     );
     expect(screen.getByText(/Topic Atlas/i)).toBeInTheDocument();
-    expect(screen.getByText(/Every past-paper question, mapped by topic/i)).toBeInTheDocument();
+    expect(screen.getByText(/Every question the SEC has asked, mapped by topic/i)).toBeInTheDocument();
   });
 
   test('drills subject → topic list → question feed without crashing', () => {
@@ -54,7 +54,7 @@ describe('Topic Vault — ReviseByTopic', () => {
     );
     // Level 0 → 1: pick the subject tile.
     fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${label(sid)}`) }));
-    expect(screen.getByText(/Pick a topic to see every one/i)).toBeInTheDocument();
+    expect(screen.getByText(/topics · /i)).toBeInTheDocument();
 
     // The busiest topic renders as a row; drill into it.
     const busiest = topicsForSubject(sid)[0];
@@ -62,7 +62,7 @@ describe('Topic Vault — ReviseByTopic', () => {
     fireEvent.click(topicBtn);
 
     // Level 2: the feed summary (unique to the feed) renders; cards fall back (no net).
-    expect(screen.getByText(/newest first/i)).toBeInTheDocument();
+    expect(screen.getByText(/marking scheme beneath each/i)).toBeInTheDocument();
   });
 
   test('type-to-filter narrows the topic list when a subject has many topics', () => {
