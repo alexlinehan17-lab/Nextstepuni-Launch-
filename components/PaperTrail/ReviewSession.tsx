@@ -10,6 +10,7 @@
  */
 
 import { usePulse } from '../../hooks/usePulse';
+import Rua from '../ui/Rua';
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ExternalLink, RotateCcw, Settings2, Trash2 } from 'lucide-react';
 import {
@@ -255,7 +256,10 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
       <div className="w-full max-w-xl mx-auto pb-12">
         {header}
         <div className="rounded-2xl bg-white dark:bg-zinc-900 px-6 py-7" style={{ border: '1.5px solid #383838' }}>
-          <p className="text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color: '#A0968D' }}>Round complete · {done} reviewed</p>
+          <div className="flex items-start justify-between gap-4">
+            <p className="text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color: '#A0968D' }}>Round complete · {done} reviewed</p>
+            <Rua pose="cheer" size={52} className="-mt-3 shrink-0" />
+          </div>
           <div className="mt-4 flex flex-wrap items-center gap-6">
             <div className="relative h-[104px] w-[104px] shrink-0">
               <svg width="104" height="104" viewBox="0 0 104 104" className="-rotate-90" aria-hidden="true">
@@ -309,7 +313,10 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         {header}
-        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Daily review</h2>
+        <div className="flex items-start justify-between gap-4">
+          <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Daily review</h2>
+          <Rua pose={done > 0 ? 'nod' : deckSize > 0 ? 'perch' : 'think'} size={56} className="shrink-0" />
+        </div>
         {done > 0 ? (
           <div className="mb-5">
             <p className="text-[14px]" style={{ color: '#1F5F3E' }}>
