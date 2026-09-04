@@ -13,7 +13,7 @@
 
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
+import { ArrowLeft, ChevronDown as ChevronDownIcon, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
 import { categoryOf, siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
@@ -36,6 +36,16 @@ const CATEGORY_TINT: Record<string, { bg: string; ink: string }> = {
 // Curriculum sections of the index, in reading order. The tint appears only
 // as the small dot beside each section eyebrow — rows stay white and ruled.
 const CATEGORY_ORDER = ['stem', 'language', 'business', 'social-environmental', 'practical-applied', 'arts', 'other'] as const;
+// Segmented controls — copied from the iOS/Copilot register: a soft tray,
+// the selected option raised on a white pill. Sleek, clickable, obvious.
+const SEG_TRAY = 'inline-flex items-center gap-0.5 rounded-[10px] bg-[#F1EFEC] p-[3px] dark:bg-zinc-800';
+const segBtn = (active: boolean) =>
+  `rounded-[8px] px-3 py-[5px] text-[12.5px] font-semibold transition-colors ${
+    active
+      ? 'bg-white text-[#1a1a1a] shadow-[0_1px_2px_rgba(26,23,20,0.10)] dark:bg-zinc-600 dark:text-white'
+      : 'text-[#8d857c] hover:text-[#57534e] dark:text-zinc-400 dark:hover:text-zinc-200'
+  }`;
+
 const CATEGORY_LABEL: Record<string, string> = {
   stem: 'Sciences & Maths',
   language: 'Languages',
@@ -167,10 +177,6 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     const inYear = yearFilter === 'all' ? questions : questions.filter(q => q.year === yearFilter);
     const shown = levelFilter === 'all' ? inYear : inYear.filter(q => q.level === levelFilter);
     const levelCount = (l: string) => (l === 'all' ? inYear.length : inYear.filter(q => q.level === l).length);
-    const tab = (active: boolean) => ({
-      color: active ? INK : '#8d857c',
-      boxShadow: active ? `inset 0 -2px 0 0 ${INK}` : 'none',
-    });
     return (
       <div className="w-full max-w-2xl mx-auto pb-12">
         <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
@@ -188,39 +194,43 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
 
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-6" style={{ borderBottom: '1px solid #e7e3de' }}>
           {levels.length > 1 && (
-            <div className="flex items-center gap-4" role="group" aria-label="Level">
+            <div className={SEG_TRAY} role="group" aria-label="Level">
               {(['all', ...levels] as const).map(l => (
                 <button key={l} aria-pressed={levelFilter === l} onClick={() => setLevelFilter(l)}
-                  className="pb-1 text-[13px] font-medium transition-colors" style={tab(levelFilter === l)}>
+                  className={segBtn(levelFilter === l)}>
                   {l === 'all' ? 'All levels' : LVL[l] ?? l}
-                  <span className="ml-1 tabular-nums" style={{ color: '#b3aca3' }}>{levelCount(l)}</span>
+                  <span className="ml-1 tabular-nums font-medium" style={{ color: '#b3aca3' }}>{levelCount(l)}</span>
                 </button>
               ))}
             </div>
           )}
           {hasIrish && (
-            <div className="flex items-center gap-4" role="group" aria-label="Language">
+            <div className={SEG_TRAY} role="group" aria-label="Language">
               {(['ev', 'iv'] as const).map(l => (
                 <button key={l} aria-pressed={langPref === l} onClick={() => pickLang(l)}
-                  className="pb-1 text-[13px] font-medium transition-colors" style={tab(langPref === l)}>
+                  className={segBtn(langPref === l)}>
                   {l === 'ev' ? 'English' : 'Gaeilge'}
                 </button>
               ))}
             </div>
           )}
           {yearList.length > 3 && (
-            <label className="flex items-center gap-1.5 text-[13px]" style={{ color: '#8d857c' }}>
+            <div className="relative">
               <select
                 value={yearFilter === 'all' ? 'all' : String(yearFilter)}
                 onChange={e => setYearFilter(e.target.value === 'all' ? 'all' : Number(e.target.value))}
                 aria-label="Year"
-                className="bg-transparent pb-1 text-[13px] font-medium outline-none cursor-pointer"
-                style={{ color: yearFilter === 'all' ? '#8d857c' : INK, border: 'none', borderBottom: yearFilter === 'all' ? 'none' : `2px solid ${INK}` }}
+                className={`appearance-none cursor-pointer rounded-[10px] py-[8px] pl-3 pr-8 text-[12.5px] font-semibold outline-none transition-colors ${
+                  yearFilter === 'all'
+                    ? 'bg-[#F1EFEC] text-[#8d857c] hover:text-[#57534e] dark:bg-zinc-800 dark:text-zinc-400'
+                    : 'bg-white text-[#1a1a1a] shadow-[0_1px_2px_rgba(26,23,20,0.10)] ring-1 ring-[#E5E1DA] dark:bg-zinc-600 dark:text-white dark:ring-zinc-600'
+                }`}
               >
                 <option value="all">All years</option>
                 {yearList.map(y => <option key={y} value={y}>{y}</option>)}
               </select>
-            </label>
+              <ChevronDownIcon size={14} aria-hidden="true" className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2" style={{ color: '#8d857c' }} />
+            </div>
           )}
           <span className="flex-1" />
           {questions.length > 0 && (
@@ -277,10 +287,6 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     const yearSets = topicYearSets(subjectId);
     const strands = strandsFor(subjectId, topics.map(t => t.subtopicId));
     const topicById = new Map(topics.map(t => [t.subtopicId, t]));
-    const tab = (active: boolean) => ({
-      color: active ? INK : '#8d857c',
-      boxShadow: active ? `inset 0 -2px 0 0 ${INK}` : 'none',
-    });
     return (
       <div className="w-full max-w-2xl mx-auto pb-12">
         <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
@@ -324,10 +330,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           Pick a topic — every question ever asked on it is inside.
         </p>
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
-          <div className="flex items-center gap-4" role="group" aria-label="Sort topics">
+          <div className={SEG_TRAY} role="group" aria-label="Sort topics">
             {(['busiest', 'frequent'] as const).map(s => (
               <button key={s} aria-pressed={sort === s} onClick={() => setSort(s)}
-                className="pb-1 text-[13px] font-medium transition-colors" style={tab(sort === s)}>
+                className={segBtn(sort === s)}>
                 {s === 'busiest' ? 'Most asked' : 'Most recurrent'}
               </button>
             ))}
@@ -335,19 +341,19 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           <span className="flex-1" />
           {sortedTopics.length > 8 && (
             <div className="relative">
-              <Search size={14} className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#b3aca3' }} />
+              <Search size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#a8a29e' }} />
               <input
                 type="text"
                 value={topicQuery}
                 onChange={e => setTopicQuery(e.target.value)}
                 placeholder="Search topics"
                 aria-label="Search topics"
-                className="w-44 bg-transparent pl-6 pr-6 pb-1 text-[13px] outline-none transition-colors"
-                style={{ color: INK, borderBottom: `1px solid ${topicQuery ? INK : '#d8d3cc'}` }}
+                className="w-48 appearance-none rounded-[10px] bg-[#F1EFEC] py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-[rgba(242,107,31,0.28)] dark:bg-zinc-800 dark:text-zinc-100"
+                style={{ color: INK }}
               />
               {topicQuery && (
                 <button onClick={() => setTopicQuery('')} aria-label="Clear search"
-                  className="absolute right-0 top-1/2 -translate-y-1/2" style={{ color: '#b3aca3' }}>
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2" style={{ color: '#a8a29e' }}>
                   <X size={13} />
                 </button>
               )}
@@ -385,7 +391,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                   {ordered.reduce((a, t) => a + t.count, 0).toLocaleString()} q
                 </span>
               </div>
-              <div>
+              <div className="space-y-2">
                 {ordered.map(t => {
                   const m = masteryMap.get(t.subtopicId);
                   const masteryColor = m ? (m.mastery >= 70 ? '#3A8D5F' : '#F26B1F') : null;
@@ -394,8 +400,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                     <button
                       key={t.subtopicId}
                       onClick={() => setSubtopicId(t.subtopicId)}
-                      className="group w-full flex items-center gap-3.5 px-2 py-3.5 rounded-xl text-left transition-colors hover:bg-[rgba(242,107,31,0.05)] dark:hover:bg-zinc-800/40"
-                      style={{ borderBottom: '1px solid #eeebe6' }}
+                      className="group w-full flex items-center gap-3.5 rounded-xl border border-[#E5E1DA] bg-white px-4 py-3 text-left transition-all duration-150 hover:-translate-y-[1px] hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-400"
                     >
                       <span aria-hidden="true" className="w-6 shrink-0 text-right text-[13px] tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#b3aca3' }}>
                         {String(contentsNo.get(t.subtopicId) ?? 0).padStart(2, '0')}
@@ -443,10 +448,6 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const grouped = CATEGORY_ORDER
     .map(cat => ({ cat, items: shownSubjects.filter(s => (categoryOf(s.id) as string) === cat) }))
     .filter(g => g.items.length > 0);
-  const scopeTab = (active: boolean) => ({
-    color: active ? INK : '#8d857c',
-    boxShadow: active ? `inset 0 -2px 0 0 ${INK}` : 'none',
-  });
   return (
     <div className="w-full max-w-2xl mx-auto pb-12">
       <button onClick={onBack} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
@@ -479,10 +480,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             ))}
           </div>
           {mineIds.length > 0 && (
-            <div className="flex items-center gap-4 pb-3 mb-1" role="group" aria-label="Subject scope" style={{ borderBottom: '1px solid #e7e3de' }}>
+            <div className={`${SEG_TRAY} mb-2`} role="group" aria-label="Subject scope">
               {(['mine', 'all'] as const).map(sc => (
                 <button key={sc} aria-pressed={scope === sc} onClick={() => setScope(sc)}
-                  className="pb-1 text-[13px] font-medium transition-colors" style={scopeTab(scope === sc)}>
+                  className={segBtn(scope === sc)}>
                   {sc === 'mine' ? 'My subjects' : 'All subjects'}
                 </button>
               ))}

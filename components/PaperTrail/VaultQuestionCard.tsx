@@ -226,7 +226,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
             onClick={() => setLensOpen(v => !v)}
             aria-expanded={lensOpen}
             className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold transition-colors"
-            style={lensOpen ? { color: '#8C3A0E', backgroundColor: '#FDEEDF' } : { color: ACCENT }}
+            style={lensOpen ? { color: INK } : { color: ACCENT }}
           >
             <Scale size={15} />
             How the marks are given
@@ -289,25 +289,25 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
               onClick={() => setSchemeOpen(v => !v)}
               aria-expanded={schemeOpen}
               className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold transition-colors"
-              style={schemeOpen ? { color: '#1F5F3E', backgroundColor: '#E8F2EC' } : { color: ACCENT }}
+              style={schemeOpen ? { color: INK } : { color: ACCENT }}
             >
               <BookOpenCheck size={15} />
               {schemeOpen ? 'Hide the marking scheme' : 'Show the marking scheme'}
               <ChevronDown size={14} className="transition-transform" style={schemeOpen ? { transform: 'rotate(180deg)' } : undefined} />
             </button>
             {schemeOpen && (
-              <div className="px-3 pt-3 pb-2" style={{ backgroundColor: '#E8F2EC' }}>
-                <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: '#1F5F3E' }}>
+              <div className="px-3 pt-1 pb-2">
+                <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: '#9e9186' }}>
                   Marking scheme — © State Examinations Commission
                 </p>
                 {schemePdf && state.s === 'ready' ? (
                   <CropView pdf={schemePdf} region={state.q.region} />
                 ) : schemeFailed ? (
-                  <p className="text-[12px] py-3 text-center" style={{ color: '#1F5F3E' }}>
+                  <p className="text-[12px] py-3 text-center" style={{ color: '#5a5550' }}>
                     Couldn’t load the scheme — open the question in the full paper instead.
                   </p>
                 ) : (
-                  <div className="h-3 rounded-full my-4 animate-pulse mx-1" style={{ backgroundColor: 'rgba(58,141,95,0.25)', width: '70%' }} />
+                  <div className="h-3 rounded-full my-4 animate-pulse mx-1" style={{ backgroundColor: '#f0efec', width: '70%' }} />
                 )}
               </div>
             )}
