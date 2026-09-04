@@ -70,11 +70,17 @@ describe('Paper Trail answer sidecars — shape', () => {
       // legitimately-equal anchors arbitrarily. Crossing a PAGE backwards has no
       // such excuse. anchor-map.py never applied this gate; paper_anchors.py
       // always has.
+      const explicitPrintOrder = map.q.some(q => q.printOrder !== undefined);
+      if (explicitPrintOrder) {
+        expect(map.q.every(q => Number.isInteger(q.printOrder) && q.printOrder! > 0), `${file} partial printOrder`).toBe(true);
+        expect(new Set(map.q.map(q => q.printOrder)).size, `${file} duplicate printOrder`).toBe(map.q.length);
+      }
       const byPage = new Map<number, number[]>();
       for (const q of map.q) {
         const list = byPage.get(q.pP);
-        if (list) list.push(Number(q.n));
-        else byPage.set(q.pP, [Number(q.n)]);
+        const printRank = q.printOrder ?? Number(q.n);
+        if (list) list.push(printRank);
+        else byPage.set(q.pP, [printRank]);
       }
       let priorPagesMax = 0;
       for (const page of [...byPage.keys()].sort((a, b) => a - b)) {
@@ -82,7 +88,7 @@ describe('Paper Trail answer sidecars — shape', () => {
         for (const n of here) {
           expect(
             n > priorPagesMax,
-            `${file} Q${n} anchors on page ${page}, behind Q${priorPagesMax} on an earlier page — anchor matched decoy numbering`,
+            `${file} print rank ${n} anchors on page ${page}, behind rank ${priorPagesMax} on an earlier page — anchor matched decoy numbering`,
           ).toBe(true);
         }
         priorPagesMax = Math.max(priorPagesMax, ...here);

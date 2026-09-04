@@ -21,6 +21,8 @@ import { downloadPack } from './revisionPack';
 import VaultQuestionCard from './VaultQuestionCard';
 import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
+import { atlasSubjectIcon } from './subjectIcons';
+import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
 
 const INK = '#1a1a1a';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
@@ -55,7 +57,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [subjectId, setSubjectId] = useState<string | null>(restore?.subjectId ?? boot?.subjectId ?? null);
   const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subtopicId ?? boot?.subtopicId ?? null);
   const [copied, pulseCopied, clearCopied] = usePulse(2000);
-  const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
+  const [sort, setSort] = useState<'reference' | 'busiest' | 'frequent'>('busiest');
   const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
   const [yearFilter, setYearFilter] = useState<'all' | number>('all');
   const [topicQuery, setTopicQuery] = useState('');
@@ -86,6 +88,12 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   useEffect(() => { setLevelFilter('all'); setYearFilter('all'); }, [subtopicId]);
   // Reset the topic search when switching subjects.
   useEffect(() => { setTopicQuery(''); }, [subjectId]);
+  // Audited exam taxonomies have a deliberate, level-aware reference order.
+  // Canonical syllabus taxonomies retain the Atlas's existing busiest-first
+  // default until their own exam-topic audit is complete.
+  useEffect(() => {
+    setSort(subjectId && examTopicTaxonomyFor(subjectId) ? 'reference' : 'busiest');
+  }, [subjectId]);
   // The "Copied" confirmation is per-topic.
   useEffect(() => { clearCopied(); }, [subtopicId, clearCopied]);
 
@@ -121,8 +129,17 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const totalYears = useMemo(() => (subjectId ? taggedYearsForSubject(subjectId) : 0), [subjectId]);
   const sortedTopics: SubjectTopic[] = useMemo(() => {
     if (sort === 'busiest') return baseTopics; // already count-sorted
+    if (sort === 'reference' && subjectId) {
+      const taxonomy = examTopicTaxonomyFor(subjectId);
+      const order = new Map(
+        taxonomy?.groups.flatMap(group => group.topicIds).map((id, index) => [id, index]) ?? [],
+      );
+      return [...baseTopics].sort((a, b) =>
+        (order.get(a.subtopicId) ?? Number.MAX_SAFE_INTEGER) -
+        (order.get(b.subtopicId) ?? Number.MAX_SAFE_INTEGER));
+    }
     return [...baseTopics].sort((a, b) => b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
-  }, [baseTopics, sort]);
+  }, [baseTopics, sort, subjectId]);
   // Type-to-filter topics — subjects like Geography carry 40+ topics.
   const topics: SubjectTopic[] = useMemo(() => {
     const q = topicQuery.trim().toLowerCase();
@@ -259,6 +276,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   // ── Level 1: the topic map — an editorial index: curriculum units as
   //    ruled sections, each topic a quiet row with its cross-year record. ──
   if (subjectId) {
+    const examTaxonomy = examTopicTaxonomyFor(subjectId);
     const stats = subjectAtlasStats(subjectId);
     const yearSets = topicYearSets(subjectId);
     const strands = strandsFor(subjectId, topics.map(t => t.subtopicId));
@@ -281,10 +299,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         </p>
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
           <div className="flex items-center gap-4" role="group" aria-label="Sort topics">
-            {(['busiest', 'frequent'] as const).map(s => (
+            {([...(examTaxonomy ? ['reference'] as const : []), 'busiest', 'frequent'] as const).map(s => (
               <button key={s} aria-pressed={sort === s} onClick={() => setSort(s)}
                 className="pb-1 text-[13px] font-medium transition-colors" style={tab(sort === s)}>
-                {s === 'busiest' ? 'Most asked' : 'Most recurrent'}
+                {s === 'reference' ? 'A–Z' : s === 'busiest' ? 'Most asked' : 'Most recurrent'}
               </button>
             ))}
           </div>
@@ -319,8 +337,11 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             .map(id => topicById.get(id))
             .filter((t): t is SubjectTopic => !!t);
           if (!strandTopics.length) return null;
+          const referenceOrder = new Map(examTaxonomy?.groups.flatMap(group => group.topicIds).map((id, index) => [id, index]) ?? []);
           const ordered = [...strandTopics].sort((a, b) =>
-            sort === 'busiest'
+            sort === 'reference'
+              ? (referenceOrder.get(a.subtopicId) ?? Number.MAX_SAFE_INTEGER) - (referenceOrder.get(b.subtopicId) ?? Number.MAX_SAFE_INTEGER)
+              : sort === 'busiest'
               ? b.count - a.count || b.years - a.years || a.label.localeCompare(b.label)
               : b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
           return (
@@ -412,6 +433,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               const st = subjectAtlasStats(s.id);
               const peak = Math.max(1, ...st.perYear.values());
               const tint = tintOf(s.id);
+              const SubjectIcon = atlasSubjectIcon(s.id);
               return (
                 <button
                   key={s.id}
@@ -421,10 +443,14 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 >
                   <span
                     aria-hidden="true"
-                    className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center text-[19px] font-semibold"
-                    style={{ fontFamily: "'Source Serif 4', serif", backgroundColor: tint.bg, color: tint.ink }}
+                    className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center transition-transform duration-200 group-hover:scale-105"
+                    style={{
+                      backgroundColor: tint.bg,
+                      color: tint.ink,
+                      boxShadow: 'inset 0 0 0 1px rgba(26, 26, 26, 0.055)',
+                    }}
                   >
-                    {s.label.charAt(0)}
+                    <SubjectIcon size={21} strokeWidth={1.85} />
                   </span>
                   <span className="flex-1 min-w-0">
                     <span className="block text-[17px]" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>

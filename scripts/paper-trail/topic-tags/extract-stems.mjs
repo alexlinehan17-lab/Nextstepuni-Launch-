@@ -92,11 +92,19 @@ for (const r of rows) {
   }
   const map = JSON.parse(fs.readFileSync(side, 'utf8'));
   let buf;
+  const localPaper = path.join('paper-trail-corpus', 'exampapers', String(r.year), r.f);
   try {
-    const res = await fetch(url(`papers/${CYCLE}/${SUBJECT}/${r.year}/paper/${r.f}`));
-    buf = new Uint8Array(await res.arrayBuffer());
-  } catch {
-    console.error('download failed', r.year, r.f);
+    // The harvested corpus is the reproducible source when it is present.  The
+    // old network-only path made an offline taxonomy audit report zero stems
+    // even though the exact SEC PDFs were already checked into the workspace.
+    if (fs.existsSync(localPaper)) buf = new Uint8Array(fs.readFileSync(localPaper));
+    else {
+      const res = await fetch(url(`papers/${CYCLE}/${SUBJECT}/${r.year}/paper/${r.f}`));
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      buf = new Uint8Array(await res.arrayBuffer());
+    }
+  } catch (error) {
+    console.error('paper unavailable', r.year, r.f, error instanceof Error ? error.message : error);
     continue;
   }
   const doc = await pdfjs.getDocument({ data: buf }).promise;

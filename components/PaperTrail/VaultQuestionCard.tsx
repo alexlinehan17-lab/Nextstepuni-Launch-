@@ -26,6 +26,17 @@ import { lensFor } from '../../data/markingLens';
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
 const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
+// A few verified booklet formats deliberately allocate more than three pages
+// to one Paper Trail card. Applied Mathematics questions can span four pages;
+// Politics & Society groups the complete lettered short-answer and data-based
+// sections into single local cards, which can span ten. Every other subject
+// keeps the conservative default that rejects suspiciously distant anchors.
+const paperCropPageLimit = (subjectId: string) =>
+  subjectId === 'politics-and-society'
+    ? 10
+    : subjectId === 'applied-mathematics'
+      ? 4
+      : 3;
 
 // Stable identity — CropView re-renders its (expensive) canvas whenever this
 // callback's reference changes, so it must NOT be an inline closure per render
@@ -127,7 +138,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
       const map = await fetchAnswerMap(answerMapUrls(resolved), sibling.n);
       if (cancelled) return;
       const q = map?.q.find(x => x.n === sibling.n);
-      const region = map && q ? paperRegionFor(map.q, sibling.n) : null;
+      const region = map && q ? paperRegionFor(map.q, sibling.n, paperCropPageLimit(sibling.subjectId)) : null;
       if (!q || !region) { setState({ s: 'fallback' }); return; }
       try {
         const pdf = await vaultPdf(resolved.paperUrl);

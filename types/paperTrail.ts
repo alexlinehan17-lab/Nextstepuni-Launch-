@@ -54,6 +54,11 @@ export interface PaperAnswerQuestion {
   /** Optional display label shown in the reveal header instead of "Question {n}",
    *  for papers whose questions restart per section (e.g. "Text II · Q1"). */
   label?: string;
+  /** Optional physical sequence within the paper. `n` is a stable card identity,
+   *  so a later repair that recovers previously-colliding section-restart
+   *  questions must not renumber shipped cards. In that exceptional case this
+   *  records the real print order while `n` remains stable. */
+  printOrder?: number;
   /** Paper page the question header is on (1-based). */
   pP: number;
   /** Question's vertical band on that paper page, fractions [start, end]. */

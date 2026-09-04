@@ -894,8 +894,17 @@ def main():
     curriculum = parse_curriculum()
     cur_by_norm = {"lc": {}, "jc": {}}
     for cid, cname, _levels in curriculum:
+        # LCA subjects often share a display name with an established Leaving
+        # Certificate subject (Engineering, French, German, Italian, Spanish,
+        # Technology). Treating every non-JC record as LC made the later LCA
+        # record overwrite the real LC curriculum link. Parenthetical stripping
+        # caused the same collision between History and the retired History
+        # (Early Modern) record. Exact programme-aware names keep those distinct;
+        # genuine archive aliases remain explicit in CURRICULUM_OVERRIDES.
+        if cid.startswith("lca-"):
+            continue
         pool = "jc" if cid.startswith("jc-") else "lc"
-        cur_by_norm[pool][norm_name(cname, strip_parens=True)] = cid
+        cur_by_norm[pool].setdefault(norm_name(cname, strip_parens=True), cid)
 
     def curriculum_id_for(cycle, sec_name):
         key = (("jc" if cycle == "jc" else "lc"), norm_name(sec_name))

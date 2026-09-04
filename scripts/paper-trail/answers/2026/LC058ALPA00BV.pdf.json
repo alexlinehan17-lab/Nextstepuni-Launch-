@@ -1,1 +1,176 @@
-{"band":[1,25],"component":"","copyright":"© State Examinations Commission","paperFileid":"LC058ALPA00BV.pdf","q":[{"conf":1.0,"mode":"crop","n":"1","pP":2,"pY":[0.3165,0.4737],"region":[{"p":4,"r":[0.0,0.2229,1.0,0.3921]}]},{"conf":1.0,"mode":"crop","n":"2","pP":2,"pY":[0.4737,0.6309],"region":[{"p":4,"r":[0.0,0.3801,1.0,0.584]}]},{"conf":1.0,"mode":"crop","n":"3","pP":2,"pY":[0.6309,1.0],"region":[{"p":4,"r":[0.0,0.572,1.0,1.0]},{"p":5,"r":[0.0,0.0,1.0,1.0]},{"p":6,"r":[0.0,0.0,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.4109]}]},{"conf":1.0,"mode":"crop","n":"4","pP":5,"pY":[0.5257,0.6243],"region":[{"p":7,"r":[0.0,0.3989,1.0,0.5675]}]},{"conf":1.0,"mode":"crop","n":"5","pP":5,"pY":[0.6243,0.7055],"region":[{"p":7,"r":[0.0,0.5555,1.0,0.6906]}]},{"conf":1.0,"mode":"crop","n":"6","pP":5,"pY":[0.7055,0.7751],"region":[{"p":7,"r":[0.0,0.6786,1.0,0.7937]}]},{"conf":1.0,"mode":"crop","n":"7","pP":5,"pY":[0.7751,0.8563],"region":[{"p":7,"r":[0.0,0.7817,1.0,1.0]},{"p":8,"r":[0.0,0.0,1.0,0.063]}]},{"conf":1.0,"mode":"crop","n":"8","pP":5,"pY":[0.8563,1.0],"region":[{"p":8,"r":[0.0,0.051,1.0,1.0]}]}],"schemeFileid":"LC058ALP000EV.pdf","v":1}
+{
+  "band": [1, 25],
+  "component": "",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058ALPA00BV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "PART A · 1",
+      "mode": "crop",
+      "n": "1",
+      "printOrder": 1,
+      "pP": 2,
+      "pY": [0.3165, 0.4737],
+      "region": [{ "p": 4, "r": [0.0, 0.2229, 1.0, 0.3921] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART A · 2",
+      "mode": "crop",
+      "n": "2",
+      "printOrder": 2,
+      "pP": 2,
+      "pY": [0.4737, 0.6309],
+      "region": [{ "p": 4, "r": [0.0, 0.3801, 1.0, 0.584] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART A · 3",
+      "mode": "crop",
+      "n": "3",
+      "printOrder": 3,
+      "pP": 2,
+      "pY": [0.6309, 1.0],
+      "endP": 2,
+      "endY": 1.0,
+      "region": [{ "p": 4, "r": [0.0, 0.572, 1.0, 0.74] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 4 — Accommodation",
+      "mode": "crop",
+      "n": "4",
+      "printOrder": 12,
+      "pP": 5,
+      "pY": [0.5257, 0.6243],
+      "region": [{ "p": 7, "r": [0.0, 0.3989, 1.0, 0.5675] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 5 — Osaka or Kobe",
+      "mode": "crop",
+      "n": "5",
+      "printOrder": 13,
+      "pP": 5,
+      "pY": [0.6243, 0.7055],
+      "region": [{ "p": 7, "r": [0.0, 0.5555, 1.0, 0.6906] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 6 — Okinawa activities",
+      "mode": "crop",
+      "n": "6",
+      "printOrder": 14,
+      "pP": 5,
+      "pY": [0.7055, 0.7751],
+      "region": [{ "p": 7, "r": [0.0, 0.6786, 1.0, 0.7937] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 7 — Rafute",
+      "mode": "crop",
+      "n": "7",
+      "printOrder": 15,
+      "pP": 5,
+      "pY": [0.7751, 0.8563],
+      "region": [{ "p": 7, "r": [0.0, 0.7817, 1.0, 0.93] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 8 — Future plans",
+      "mode": "crop",
+      "n": "8",
+      "printOrder": 16,
+      "pP": 5,
+      "pY": [0.8563, 1.0],
+      "region": [{ "p": 8, "r": [0.0, 0.04, 1.0, 0.24] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART B · 1 — On the phone with Maki",
+      "mode": "crop",
+      "n": "9",
+      "printOrder": 4,
+      "pP": 3,
+      "pY": [0.1082, 0.3343],
+      "region": [{ "p": 5, "r": [0.0, 0.04, 1.0, 0.3025] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART B · 2 — At Tanaka Hospital",
+      "mode": "crop",
+      "n": "10",
+      "printOrder": 5,
+      "pP": 3,
+      "pY": [0.3343, 0.5953],
+      "region": [{ "p": 5, "r": [0.0, 0.29, 1.0, 0.6025] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART B · 3 — At the pharmacy",
+      "mode": "crop",
+      "n": "11",
+      "printOrder": 6,
+      "pP": 3,
+      "pY": [0.5953, 0.94],
+      "endP": 3,
+      "endY": 0.94,
+      "region": [{ "p": 5, "r": [0.0, 0.59, 1.0, 0.89] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 1 — Wheelchair tennis player Oda-san",
+      "mode": "crop",
+      "n": "12",
+      "printOrder": 7,
+      "pP": 4,
+      "pY": [0.1256, 0.6799],
+      "region": [{ "p": 6, "r": [0.0, 0.04, 1.0, 0.5509] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 2 — Aichi weather forecast",
+      "mode": "crop",
+      "n": "13",
+      "printOrder": 8,
+      "pP": 4,
+      "pY": [0.6799, 0.94],
+      "endP": 4,
+      "endY": 0.94,
+      "region": [{ "p": 6, "r": [0.0, 0.54, 1.0, 0.9] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 1 — Return from Japan",
+      "mode": "crop",
+      "n": "14",
+      "printOrder": 9,
+      "pP": 5,
+      "pY": [0.1256, 0.2126],
+      "region": [{ "p": 7, "r": [0.0, 0.04, 1.0, 0.1326] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 2 — Reason for visiting Japan",
+      "mode": "crop",
+      "n": "15",
+      "printOrder": 10,
+      "pP": 5,
+      "pY": [0.2126, 0.3343],
+      "region": [{ "p": 7, "r": [0.0, 0.12, 1.0, 0.237] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 3 — Part-time job",
+      "mode": "crop",
+      "n": "16",
+      "printOrder": 11,
+      "pP": 5,
+      "pY": [0.3343, 0.5257],
+      "region": [{ "p": 7, "r": [0.0, 0.225, 1.0, 0.4109] }]
+    }
+  ],
+  "schemeFileid": "LC058ALP000EV.pdf",
+  "v": 1
+}

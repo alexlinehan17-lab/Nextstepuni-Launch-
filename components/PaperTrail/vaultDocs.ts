@@ -15,7 +15,12 @@ import type { PDFDocumentLoadingTask, PDFDocumentProxy } from 'pdfjs-dist';
 import { loadPdfjs } from './pdfjsLoader';
 import { fetchPdfCached } from './pdfCache';
 
-const MAX_OPEN_DOCS = 6;
+// A normal Topic Atlas viewport can begin rendering eight year-cards at once
+// (Politics & Society's DBQ feed is a concrete example). Evicting below that
+// working set destroys a PDF.js transport while its canvas render is still in
+// flight (`sendWithPromise` then reads a null worker). Twelve keeps the active
+// viewport safe while remaining a bounded, deliberately small LRU.
+const MAX_OPEN_DOCS = 12;
 
 interface OpenDoc {
   task: PDFDocumentLoadingTask;

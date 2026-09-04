@@ -37,6 +37,7 @@ const inPrintOrder = (qs: PaperAnswerQuestion[]): PaperAnswerQuestion[] =>
 export function paperRegionFor(
   qs: PaperAnswerQuestion[],
   n: string,
+  maxPages = MAX_PAGES,
 ): PaperAnswerSeg[] | null {
   if (!qs.length) return null;
   const ordered = inPrintOrder(qs);
@@ -68,7 +69,7 @@ export function paperRegionFor(
     const endY = Math.min(1, Math.max(0, q.endY));
     // End must lie strictly after the start (monotonic), else no confident crop.
     if (q.endP < q.pP || (q.endP === q.pP && endY <= q.pY[0] + 0.005)) return null;
-    if (q.endP - q.pP > MAX_PAGES) return null;
+    if (q.endP - q.pP > maxPages) return null;
     if (q.endP === q.pP) return [{ p: q.pP, r: [0, y0, 1, endY] }];
     const segs: PaperAnswerSeg[] = [{ p: q.pP, r: [0, y0, 1, 1] }];
     for (let p = q.pP + 1; p < q.endP; p++) segs.push({ p, r: [0, 0, 1, 1] });
@@ -90,7 +91,7 @@ export function paperRegionFor(
   if (next.pP < q.pP || (next.pP === q.pP && next.pY[0] <= q.pY[0] + 0.005)) return null;
 
   const span = next.pP - q.pP;
-  if (span > MAX_PAGES) return null;
+  if (span > maxPages) return null;
 
   if (span === 0) {
     return [{ p: q.pP, r: [0, y0, 1, Math.min(1, next.pY[0]) ] }];
