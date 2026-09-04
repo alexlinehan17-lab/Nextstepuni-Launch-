@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Rua master — layered source for Rive import. One group per rig part. -->
+  <g id="rua">
+    <g id="tail">
+      <path d="M 140 350 Q 76 322 56 258 Q 118 272 156 316 Z"
+            fill="#7E5233" stroke="#1A1208" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+    <g id="wing-far">
+      <path d="M 398 282 Q 452 296 464 340 Q 450 382 410 388 Q 390 338 398 282 Z"
+            fill="#7E5233" stroke="#1A1208" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+    <g id="leg-left">
+      <rect x="202" y="456" width="11" height="36" rx="5" fill="#7E5233" stroke="#1A1208" stroke-width="4"/>
+      <ellipse cx="204" cy="497" rx="29" ry="13" fill="#7E5233" stroke="#1A1208" stroke-width="4"/>
+    </g>
+    <g id="leg-right">
+      <rect x="292" y="456" width="11" height="36" rx="5" fill="#7E5233" stroke="#1A1208" stroke-width="4"/>
+      <ellipse cx="300" cy="497" rx="29" ry="13" fill="#7E5233" stroke="#1A1208" stroke-width="4"/>
+    </g>
+    <g id="body">
+      <ellipse cx="256" cy="342" rx="168" ry="148" fill="#9E6B45" stroke="#1A1208" stroke-width="6"/>
+    </g>
+    <g id="wing-near">
+      <path d="M 128 316 Q 88 354 94 402 Q 124 434 164 424 Q 174 366 128 316 Z"
+            fill="#9E6B45" stroke="#1A1208" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+    <g id="head">
+      <circle cx="256" cy="196" r="150" fill="#9E6B45" stroke="#1A1208" stroke-width="6"/>
+    </g>
+    <g id="bib">
+      <path d="M 256 96 Q 330 96 360 168 Q 382 222 376 288 Q 368 352 330 390 Q 294 418 256 418
+               Q 218 418 182 390 Q 144 352 136 288 Q 130 222 152 168 Q 182 96 256 96 Z"
+            fill="#F26B1F" stroke="#1A1208" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+    <g id="belly">
+      <path d="M 256 420 Q 210 420 174 396 Q 160 440 200 468 Q 256 496 312 468 Q 352 440 338 396 Q 302 420 256 420 Z"
+            fill="#FFF1DC" stroke="#1A1208" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+    <g id="beak">
+      <path d="M 256 234 L 296 258 L 256 286 L 230 258 Z"
+            fill="#FFB020" stroke="#1A1208" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+    <g id="eye-left">
+      <ellipse id="sclera-l" cx="198" cy="196" rx="40" ry="47" fill="#ffffff" stroke="#1A1208" stroke-width="5"/>
+      <circle id="pupil-l" cx="206" cy="202" r="21" fill="#1A1208"/>
+      <circle id="spark-l" cx="214" cy="192" r="7" fill="#ffffff"/>
+      <path id="lid-l" d="M 158 160 Q 198 138 238 160" fill="none" stroke="#1A1208" stroke-width="0"/>
+    </g>
+    <g id="eye-right">
+      <ellipse id="sclera-r" cx="314" cy="196" rx="40" ry="47" fill="#ffffff" stroke="#1A1208" stroke-width="5"/>
+      <circle id="pupil-r" cx="306" cy="202" r="21" fill="#1A1208"/>
+      <circle id="spark-r" cx="314" cy="192" r="7" fill="#ffffff"/>
+      <path id="lid-r" d="M 274 160 Q 314 138 354 160" fill="none" stroke="#1A1208" stroke-width="0"/>
+    </g>
+  </g>
+</svg>
