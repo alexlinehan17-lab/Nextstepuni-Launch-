@@ -703,7 +703,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           className="min-h-screen bg-white dark:bg-zinc-950"
         >
           {/* Header */}
-          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-[#FAFBF6] dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
+          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
             <div className="flex items-center gap-4">
               <button onClick={handleBackToTree} aria-label="Back to modules" className="p-2.5 rounded-xl transition-colors hover:bg-white/60" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>

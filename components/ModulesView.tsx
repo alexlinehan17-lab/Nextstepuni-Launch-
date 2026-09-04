@@ -571,7 +571,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
     return (
       <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
         <header
-          className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-[#FAFBF6] px-4 pb-3 dark:border-zinc-800 dark:bg-zinc-950"
+          className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-3 dark:border-zinc-800 dark:bg-zinc-950"
           style={{ paddingTop: 'calc(12px + var(--sat, 0px))' }}
         >
           <div className="mx-auto max-w-7xl">
@@ -661,7 +661,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
       {/* Header — left side only. Right side intentionally empty so the
           App-level top-right cluster (TrainingPulse + bell + profile)
           owns that real estate without any leakage. */}
-      <header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-[#FAFBF6] px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
         <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact /></div>
       </header>
 

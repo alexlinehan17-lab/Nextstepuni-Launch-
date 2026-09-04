@@ -32,7 +32,7 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
   return createPortal(
     <AnimatePresence>
       {isOpen && (
-        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.35 }} className="fixed inset-0 z-[300] overflow-y-auto bg-[#FAFBF6] dark:bg-zinc-950">
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.35 }} className="fixed inset-0 z-[300] overflow-y-auto bg-white dark:bg-zinc-950">
           <div className="min-h-screen flex flex-col items-center justify-center px-6 py-16">
             <div className="max-w-md w-full text-center">
               <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: d(0), duration: 0.4 }}>

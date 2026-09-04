@@ -95,7 +95,7 @@ const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, 
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.99 }}
             transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-            className={`flex max-h-[92dvh] w-full flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] shadow-[5px_5px_0_0_#383838] sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900 ${widths[width]}`}
+            className={`flex max-h-[92dvh] w-full flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-white dark:bg-zinc-900 shadow-[5px_5px_0_0_#383838] sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900 ${widths[width]}`}
           >
             <div className="flex items-start justify-between gap-4 border-b border-[#DDD8D2] px-5 py-4 sm:px-6 sm:py-5 dark:border-zinc-700">
               <div>

@@ -99,7 +99,7 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => (
   <div
     className="rounded-xl"
     style={{
-      background: '#FAFBF6',
+      background: '#ffffff',
       border: `1px solid ${ACCENT}26`,
       padding: 18,
     }}
@@ -169,7 +169,7 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
         <div
           className="rounded-[18px]"
           style={{
-            background: '#FAFBF6',
+            background: '#ffffff',
             border: `1px solid ${ACCENT}40`,
             boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
             padding: 32,

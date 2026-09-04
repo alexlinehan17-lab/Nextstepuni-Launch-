@@ -689,7 +689,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
     <div className="theme-compat fixed inset-0 z-[60] flex touch-pan-y flex-col overflow-hidden overscroll-none" data-prevent-pull-to-refresh="true">
 
       {/* ─── Solid background — matches Library (module selection) screen ─── */}
-      <div className="fixed inset-0 pointer-events-none dark:bg-zinc-900" aria-hidden="true" style={{ backgroundColor: '#FAFBF6' }} />
+      <div className="fixed inset-0 pointer-events-none bg-white dark:bg-zinc-900" aria-hidden="true" />
 
       {/* ─── Fixed Header: Progress bar + Skip ─── */}
       <div className="shrink-0 relative z-10 px-6 pt-5 pb-3">

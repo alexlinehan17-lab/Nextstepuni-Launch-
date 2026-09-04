@@ -566,7 +566,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         </div>
 
         {/* Centered content */}
-        <div className="flex-1 bg-[#FAFBF6] px-4 pb-28 dark:bg-zinc-950 sm:px-6">
+        <div className="flex-1 bg-white px-4 pb-28 dark:bg-zinc-950 sm:px-6">
           <div className="mx-auto w-full max-w-md space-y-7 pt-5 sm:space-y-10 sm:pt-6">
             {/* Today's timetable blocks — quick-start shortcuts */}
             {computedTodayBlocks.length > 0 && (
@@ -775,7 +775,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             )}
 
             {/* Start button */}
-            <div className="sticky bottom-[calc(76px+var(--sab,0px))] z-20 -mx-4 flex flex-col items-center bg-gradient-to-t from-[#FAFBF6] via-[#FAFBF6]/95 to-transparent px-4 pb-2 pt-5 dark:from-zinc-950 dark:via-zinc-950/95 sm:static sm:mx-0 sm:bg-none sm:p-0">
+            <div className="sticky bottom-[calc(76px+var(--sab,0px))] z-20 -mx-4 flex flex-col items-center bg-gradient-to-t from-white via-white/95 to-transparent px-4 pb-2 pt-5 dark:from-zinc-950 dark:via-zinc-950/95 sm:static sm:mx-0 sm:bg-none sm:p-0">
               {startHint && <p className="mb-2 text-xs font-medium text-zinc-500 dark:text-zinc-400">{startHint}</p>}
               <PrimaryActionButton className="w-full sm:w-auto" label="Start Session" onClick={handleStart} icon={Play} disabled={!canStart} />
             </div>
@@ -1109,7 +1109,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 8, scale: 0.98 }}
                 transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-                className="w-full max-w-sm rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] p-6 shadow-[5px_5px_0_0_#383838]"
+                className="w-full max-w-sm rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838] dark:border-zinc-600 dark:bg-zinc-900"
               >
                 <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">Leave session</p>
                 <h2 id="study-exit-title" className="font-serif text-2xl font-bold text-[#1A1A1A]">End this study session?</h2>
@@ -1186,7 +1186,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-lg space-y-6 rounded-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] p-6 shadow-[5px_5px_0_0_#383838] sm:p-8"
+          className="w-full max-w-lg space-y-6 rounded-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838] sm:p-8 dark:border-zinc-600 dark:bg-zinc-900"
         >
           {/* Header — points as hero */}
           <div className="text-center">
