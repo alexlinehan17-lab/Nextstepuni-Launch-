@@ -106,6 +106,16 @@ const SESSION_TYPE_CONFIG: Record<string, { icon: LucideIcon; label: string }> =
   'revision': { icon: RotateCcw, label: 'Revision' },
 };
 
+// Painted-blob identity for the three session types (Fabulous's ritual-card
+// register in our own hand-drawn language). Tints follow the curriculum
+// palette family — identity marks, never status colours.
+const SESSION_TYPE_ART: Record<string, { tint: string; ink: string; blurb: string }> = {
+  'new-learning': { tint: '#DCE9F2', ink: '#33658A', blurb: 'Meet it for the first time' },
+  'practice': { tint: '#FBE9DC', ink: '#B5500F', blurb: 'Work problems, build speed' },
+  'revision': { tint: '#E8F2EC', ink: '#1F5F3E', blurb: 'Return to it and lock it in' },
+};
+const TYPE_BLOB_PATH = 'M 38 4 Q 12 6 6 28 Q 2 50 22 56 Q 50 62 60 36 Q 64 12 48 4 Q 42 2 38 4 Z';
+
 export interface TimetableBlockContext {
   subject: string;
   sessionType: 'new-learning' | 'practice' | 'revision';
@@ -673,17 +683,34 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 <div className="space-y-2">
                   {(['new-learning', 'practice', 'revision'] as const).map(type => {
                     const config = SESSION_TYPE_CONFIG[type];
+                    const art = SESSION_TYPE_ART[type];
                     const Icon = config.icon;
                     const isActive = selectedType === type;
                     return (
-                      <ChoiceControl
+                      <button
                         key={type}
+                        type="button"
                         onClick={() => setSelectedType(type)}
-                        className="w-full justify-start"
-                        label={config.label}
-                        selected={isActive}
-                        icon={<Icon size={17} strokeWidth={isActive ? 2 : 1.75} />}
-                      />
+                        aria-pressed={isActive}
+                        className={`flex w-full items-center gap-3 rounded-xl border px-3 py-2.5 text-left transition-all duration-150 ${
+                          isActive
+                            ? 'border-[#F26B1F] bg-[rgba(242,107,31,0.06)]'
+                            : 'border-[#E5E1DA] bg-white hover:-translate-y-[1px] hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-400'
+                        }`}
+                      >
+                        <span aria-hidden="true" className="relative h-10 w-10 shrink-0">
+                          <svg viewBox="0 0 64 64" className="absolute inset-0 h-full w-full">
+                            <path d={TYPE_BLOB_PATH} fill={art.tint} opacity={0.95} />
+                          </svg>
+                          <span className="absolute inset-0 flex items-center justify-center">
+                            <Icon size={17} strokeWidth={1.9} style={{ color: art.ink }} />
+                          </span>
+                        </span>
+                        <span className="min-w-0">
+                          <span className={`block text-[13px] font-bold ${isActive ? 'text-[#1A1A1A] dark:text-white' : 'text-[#3A3530] dark:text-zinc-200'}`}>{config.label}</span>
+                          <span className="mt-0.5 block text-[10.5px] leading-snug text-[#78716C] dark:text-zinc-400">{art.blurb}</span>
+                        </span>
+                      </button>
                     );
                   })}
                 </div>

@@ -96,7 +96,7 @@ describe('student analytics dashboard', () => {
     expect(screen.getByText('35m')).toBeInTheDocument();
     expect(screen.getByText('4.5')).toBeInTheDocument();
     expect(screen.getByTestId('five-climbs')).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: 'Study activity bar chart showing sessions' })).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: 'Study activity chart showing sessions' })).toBeInTheDocument();
     expect(screen.getByText('Active Recall')).toBeInTheDocument();
   });
 
@@ -119,7 +119,7 @@ describe('student analytics dashboard', () => {
     );
 
     fireEvent.click(screen.getByRole('button', { name: 'Minutes' }));
-    expect(screen.getByRole('img', { name: 'Study activity bar chart showing minutes' })).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: 'Study activity chart showing minutes' })).toBeInTheDocument();
 
     fireEvent.change(screen.getByRole('combobox', { name: 'Filter by subject' }), { target: { value: 'Biology' } });
     expect(screen.getByText('25m')).toBeInTheDocument();
@@ -243,7 +243,7 @@ describe('student analytics dashboard', () => {
       />,
     );
 
-    expect(screen.getByRole('img', { name: 'Study activity bar chart showing sessions' })).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: 'Study activity chart showing sessions' })).toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'Confidence over time by subject' })).toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'Mock exam total points trajectory' })).toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'uses ranked bar chart' })).toBeInTheDocument();
@@ -304,7 +304,7 @@ describe('student analytics dashboard', () => {
     );
 
     expect(screen.getByRole('heading', { name: 'Start with one focused session.' })).toBeInTheDocument();
-    expect(screen.queryByRole('img', { name: 'Study activity bar chart showing sessions' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('img', { name: 'Study activity chart showing sessions' })).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Start a study session/ }));
     expect(onStartStudy).toHaveBeenCalledTimes(1);
   });

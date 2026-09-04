@@ -186,11 +186,24 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           {subjectLabel(subjectId)} · {CATEGORY_LABEL[categoryOf(subjectId) as string] ?? 'Topic Atlas'}
         </p>
         <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
-        <p aria-live="polite" className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
-          {shown.length === questions.length
-            ? <>{questions.length} question{questions.length === 1 ? '' : 's'} · {years.size} year{years.size === 1 ? '' : 's'} · marking scheme beneath each</>
-            : <>{shown.length} of {questions.length} questions{yearFilter !== 'all' ? ` · ${yearFilter}` : ''}{levelFilter !== 'all' ? ` · ${LVL[levelFilter] ?? levelFilter}` : ''}</>}
-        </p>
+        {shown.length === questions.length ? (
+          <div className="mb-5 flex items-center" aria-label={`${questions.length} questions across ${years.size} years, marking scheme beneath each`}>
+            {[
+              { v: String(questions.length), l: questions.length === 1 ? 'Question' : 'Questions' },
+              { v: String(years.size), l: years.size === 1 ? 'Year' : 'Years' },
+              { v: levels.map(l => LVL[l] ?? l).join(' · ') || 'All levels', l: 'Levels' },
+            ].map((cell, i) => (
+              <div key={cell.l} className={i > 0 ? 'border-l pl-4 sm:pl-5' : ''} style={{ borderColor: '#eeebe6', paddingRight: 18 }}>
+                <p className="text-[16px] font-semibold tabular-nums leading-tight" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{cell.v}</p>
+                <p className="mt-0.5 text-[9px] font-bold uppercase tracking-[0.14em]" style={{ color: '#9e9186' }}>{cell.l}</p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p aria-live="polite" className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
+            {shown.length} of {questions.length} questions{yearFilter !== 'all' ? ` · ${yearFilter}` : ''}{levelFilter !== 'all' ? ` · ${LVL[levelFilter] ?? levelFilter}` : ''}
+          </p>
+        )}
 
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-6" style={{ borderBottom: '1px solid #e7e3de' }}>
           {levels.length > 1 && (
