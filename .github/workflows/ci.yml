@@ -63,7 +63,7 @@ jobs:
         run: |
           npm install -g npm@^11
           for attempt in 1 2 3 4 5; do
-            out=$(npm audit --audit-level=high 2>&1); rc=$?
+            out=$(npm audit --audit-level=high 2>&1) && rc=0 || rc=$?
             echo "$out"
             if [ $rc -eq 0 ]; then exit 0; fi
             if echo "$out" | grep -qiE "audit endpoint returned an error|network timeout|Service Unavailable|ECONNRESET|ETIMEDOUT|503"; then
@@ -109,7 +109,7 @@ jobs:
         run: |
           npm install -g npm@^11
           for attempt in 1 2 3 4 5; do
-            out=$(npm audit --audit-level=high 2>&1); rc=$?
+            out=$(npm audit --audit-level=high 2>&1) && rc=0 || rc=$?
             echo "$out"
             if [ $rc -eq 0 ]; then exit 0; fi
             if echo "$out" | grep -qiE "audit endpoint returned an error|network timeout|Service Unavailable|ECONNRESET|ETIMEDOUT|503"; then
