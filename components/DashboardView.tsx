@@ -57,6 +57,8 @@ import {
   type DashboardRange,
 } from './dashboard/dashboardAnalytics';
 import DashboardInsights, { InsightsToggle } from './dashboard/DashboardInsights';
+import StudyPassport from './dashboard/StudyPassport';
+import TermReviewCard from './dashboard/TermReviewCard';
 import {
   buildActivityInsights,
   buildConfidenceInsights,
@@ -779,6 +781,13 @@ const DashboardView: React.FC<DashboardViewProps> = ({
 
             {tab === 'milestones' && (gamificationState ? (
               <>
+                <StudyPassport
+                  streak={streak}
+                  sessions={studySessions}
+                  totalXP={gamificationState.totalPointsEarned}
+                  badgesEarned={achievementSummary.unlocked}
+                  badgesVisible={achievementSummary.visible}
+                />
                 <Panel
                   eyebrow="Rank progress"
                   title={gamificationState.currentRank.title}
@@ -980,6 +989,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                     </div>
                   )}
                 </Panel>
+                <TermReviewCard sessions={studySessions} streak={streak} />
               </>
             ) : (
               <Panel eyebrow="Milestones" title="Progress is loading" detail="Your goals and achievements will appear here." className="lg:col-span-12">
