@@ -15,6 +15,7 @@ ap.add_argument("--poses", default="perch")
 ap.add_argument("--size", type=int, default=1024)
 ap.add_argument("--samples", type=int, default=96)
 ap.add_argument("--out", default="renders")
+ap.add_argument("--anim", default="")
 A = ap.parse_args(argv)
 
 def srgb(hexs):
@@ -86,8 +87,47 @@ POSES = {
     "fly":   dict(wingR=(0, -70, 0), wingL=(0, 70, 0), root_rot=(-18, 0, 0), legs=False, tail_up=34),
 }
 
-def build(pose):
-    p = POSES[pose]
+
+# ---------- animation sequences ----------
+def _lerp(a, b, t): return a + (b - a) * t
+
+def anim_frames(name):
+    """Yield (frame_index, pose_param_dict) for a named animation."""
+    import math as m
+    if name == "blink":
+        # 4 frames: open, half, closed, half — the CSS cycle holds frame 0 ~4s
+        yield 0, dict()
+        yield 1, dict(eye_squash=0.45)
+        yield 2, dict(closed=True)
+        yield 3, dict(eye_squash=0.45)
+    elif name == "wave":
+        # 12 frames: raise, three wags, lower, settle; last frame = rest pose
+        wag = [112, 96, 118, 94, 116, 100]
+        seq = [0, 55, 95] + wag + [60, 24, 0]
+        for i, ang in enumerate(seq):
+            t = ang / 112.0
+            yield i, dict(
+                wingL=(0, ang, -35 * t),
+                root_rot=(0, 6 * t, -8 * t),
+                eye_dz=0.01 * t,
+            )
+    elif name == "flap":
+        # 8-frame flight loop: wings sine, body drifts, tail answers
+        for i in range(8):
+            ph = i / 8.0 * 2 * m.pi
+            w = 70 + 38 * m.sin(ph)
+            yield i, dict(
+                wingR=(0, -w, 0), wingL=(0, w, 0),
+                root_rot=(-18 + 2.5 * m.sin(ph), 0, 0),
+                legs=False,
+                tail_up=34 - 8 * m.sin(ph),
+                z_shift=0.05 * m.sin(ph),
+            )
+    else:
+        raise ValueError(f"unknown animation {name}")
+
+def build(pose, override=None):
+    p = POSES[pose] if override is None else override
     # wipe scene
     bpy.ops.object.select_all(action="SELECT")
     bpy.ops.object.delete()
@@ -124,7 +164,8 @@ def build(pose):
             t.parent = root
     else:
         for sx in (-1, 1):
-            sphere(f"eye{sx}", (sx*0.25 + edx, -0.90, 0.45 + edz), (0.14, 0.125, 0.14), m_eye, parent=root)
+            sq = 1.0 - p.get("eye_squash", 0.0)
+            sphere(f"eye{sx}", (sx*0.25 + edx, -0.90, 0.45 + edz), (0.14, 0.125, 0.14 * sq), m_eye, parent=root)
 
     # beak — flat-shaded diamond pyramid, baked orientation
     from mathutils import Matrix
@@ -222,16 +263,28 @@ def render(path):
 import os
 outdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), A.out)
 os.makedirs(outdir, exist_ok=True)
-for pose in [x.strip() for x in A.poses.split(",") if x.strip()]:
-    build(pose)
-    rig_camera_lights()
-    render(os.path.join(outdir, f"rua-{pose}.png"))
-    print(f"RENDERED {pose}")
+if A.anim:
+    for name in [x.strip() for x in A.anim.split(",") if x.strip()]:
+        for i, params in anim_frames(name):
+            build("perch", override=params)
+            rig_camera_lights()
+            render(os.path.join(outdir, f"anim-{name}-{i:02d}.png"))
+            print(f"RENDERED {name} frame {i}")
+else:
+    for pose in [x.strip() for x in A.poses.split(",") if x.strip()]:
+        build(pose)
+        rig_camera_lights()
+        render(os.path.join(outdir, f"rua-{pose}.png"))
+        print(f"RENDERED {pose}")
 
 # Regenerating the app assets:
 #   Blender --background --factory-startup --python rua3d.py -- \
 #     --poses perch,wave,cheer,rest,think,read,point,fly --size 1024 --samples 192
-# then convert PNGs to public/assets/rua/<pose>.webp at 768px with a
-# Standard (pass-through) view transform — save_render applies the scene
-# view transform, and the renders already carry the AgX look, so anything
-# other than Standard double-tones them.
+#   Blender --background --factory-startup --python rua3d.py -- \
+#     --anim blink,wave,flap --size 320 --samples 96 --out anim
+# Stills convert to public/assets/rua/<pose>.webp at 768px; anim frames
+# composite into horizontal strips (anim-<name>.webp) played by stepped
+# CSS in components/ui/Rua.tsx. Convert with a Standard view transform —
+# save_render applies the scene view transform, and the renders already
+# carry the AgX look, so anything else double-tones them. No shadow
+# catchers: they smear grey washes into transparent UI renders.
