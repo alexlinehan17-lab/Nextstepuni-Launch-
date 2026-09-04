@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Puifin master - layered source for Rive import, mapped from the approved toon concept. -->
+  <g id="puifin">
+    <g id="wing-left">
+      <ellipse cx="112" cy="323" rx="46" ry="118" fill="#20242B" stroke="#1A1208" stroke-width="6" transform="rotate(12 112 323)"/>
+    </g>
+    <g id="wing-right">
+      <ellipse cx="400" cy="323" rx="46" ry="118" fill="#20242B" stroke="#1A1208" stroke-width="6" transform="rotate(-12 400 323)"/>
+    </g>
+    <g id="foot-left">
+      <ellipse cx="197" cy="490" rx="45" ry="18" fill="#F26B1F" stroke="#1A1208" stroke-width="5" transform="rotate(12 197 490)"/>
+    </g>
+    <g id="foot-right">
+      <ellipse cx="319" cy="490" rx="45" ry="18" fill="#F26B1F" stroke="#1A1208" stroke-width="5" transform="rotate(-14 319 490)"/>
+    </g>
+    <g id="body">
+      <ellipse cx="256" cy="304" rx="163" ry="192" fill="#20242B" stroke="#1A1208" stroke-width="6"/>
+    </g>
+    <g id="belly">
+      <ellipse cx="256" cy="336" rx="122" ry="140" fill="#FDFDF8"/>
+    </g>
+    <g id="face-left">
+      <ellipse cx="204" cy="164" rx="69" ry="78" fill="#FDFDF8" transform="rotate(8 204 164)"/>
+    </g>
+    <g id="face-right">
+      <ellipse cx="313" cy="160" rx="69" ry="78" fill="#FDFDF8" transform="rotate(-10 313 160)"/>
+    </g>
+    <g id="blush-left"><ellipse cx="171" cy="200" rx="20" ry="14" fill="#F5A76B"/></g>
+    <g id="blush-right"><ellipse cx="347" cy="196" rx="20" ry="14" fill="#F5A76B"/></g>
+    <g id="beak">
+      <path d="M 258 176 C 288 186 300 214 296 238 C 292 268 274 296 258 306 C 242 296 224 268 220 238 C 216 214 228 186 258 176 Z"
+            fill="#F26B1F" stroke="#1A1208" stroke-width="6" stroke-linejoin="round"/>
+      <path id="beak-tip" d="M 258 254 C 270 258 278 264 276 272 C 272 288 264 300 258 304 C 252 300 244 288 240 272 C 238 264 246 258 258 254 Z"
+            fill="#D9531A"/>
+    </g>
+    <g id="eye-left">
+      <ellipse id="sclera-l" cx="203" cy="143" rx="30" ry="35" fill="#ffffff" stroke="#1A1208" stroke-width="5"/>
+      <ellipse id="pupil-l" cx="199" cy="145" rx="17" ry="20" fill="#1A1208"/>
+      <circle id="spark-l" cx="208" cy="135" r="5.5" fill="#ffffff"/>
+    </g>
+    <g id="eye-right">
+      <ellipse id="sclera-r" cx="311" cy="141" rx="29" ry="34" fill="#ffffff" stroke="#1A1208" stroke-width="5"/>
+      <ellipse id="pupil-r" cx="307" cy="143" rx="16" ry="19" fill="#1A1208"/>
+      <circle id="spark-r" cx="316" cy="133" r="5.5" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>

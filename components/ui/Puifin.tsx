@@ -2,15 +2,13 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Rua the Robin — the app's guide and companion. A soft 3D character
- * modelled and rendered in Blender (Cycles, vinyl-toy language: molded
- * color parts, soft studio light, baked ground shadow). Her breast wears
- * the brand apricot as plumage, never as paint.
+ * Puifín the Puffin — the app's guide and companion. A vibrant flat-toon
+ * character modelled and rendered in Blender (emission-flat colors, ink
+ * hull outlines, cartoon eyes). Brand orange lives in the beak and feet.
  *
- * Renders live in public/assets/rua/<pose>.webp (transparent, 768px).
- * The Blender build script that generates them is kept in the design
- * scratchpad (rua3d.py) — poses are parameterised, so new ones are a
- * dict entry away.
+ * Renders live in public/assets/puifin/<pose>.webp (transparent, 768px).
+ * The Blender build script that generates them is docs/design/puifin_poses.py
+ * — poses are parameterised, so new ones are a dict entry away.
  *
  * Poses: perch (idle), wave, fly, cheer, rest, think, read, point,
  * peek (perch cropped by an overflow-hidden container), nod (perch +
@@ -21,12 +19,12 @@
 import React from 'react';
 import { useReducedMotion } from '../Motion';
 
-export type RuaPose =
+export type PuifinPose =
   | 'perch' | 'wave' | 'fly' | 'cheer' | 'rest'
   | 'think' | 'read' | 'point' | 'peek' | 'nod';
 
 /** Poses that reuse another pose's render. */
-const RENDER_ALIAS: Partial<Record<RuaPose, string>> = { nod: 'perch', peek: 'perch' };
+const RENDER_ALIAS: Partial<Record<PuifinPose, string>> = { nod: 'perch', peek: 'perch' };
 
 /**
  * Rendered sprite-strip animations (horizontal filmstrips from the same
@@ -34,23 +32,23 @@ const RENDER_ALIAS: Partial<Record<RuaPose, string>> = { nod: 'perch', peek: 'pe
  * works everywhere a WebP does. Poses without a strip fall back to the
  * static render + gentle CSS motion.
  */
-const STRIPS: Partial<Record<RuaPose, { file: string; frames: number; anim: string }>> = {
-  perch: { file: 'anim-blink', frames: 4, anim: 'rua-strip-blink 4.6s step-end infinite' },
-  wave: { file: 'anim-wave', frames: 12, anim: 'rua-strip-wave 1.5s steps(11) 2 forwards' },
-  fly: { file: 'anim-flap', frames: 8, anim: 'rua-strip-flap 0.66s steps(8) infinite' },
+const STRIPS: Partial<Record<PuifinPose, { file: string; frames: number; anim: string }>> = {
+  perch: { file: 'anim-blink', frames: 4, anim: 'puifin-strip-blink 4.6s step-end infinite' },
+  wave: { file: 'anim-wave', frames: 12, anim: 'puifin-strip-wave 1.5s steps(11) 2 forwards' },
+  fly: { file: 'anim-flap', frames: 8, anim: 'puifin-strip-flap 0.66s steps(8) infinite' },
 };
 
 /** Gentle idle motion per pose — meaning, not decoration. */
-const MOTION: Partial<Record<RuaPose, string>> = {
-  perch: 'rua-bob 3.2s ease-in-out infinite',
-  cheer: 'rua-hop 0.9s ease-in-out infinite',
-  fly: 'rua-drift 2.6s ease-in-out infinite',
-  nod: 'rua-rock 2.2s ease-in-out infinite',
-  rest: 'rua-bob 5.2s ease-in-out infinite',
+const MOTION: Partial<Record<PuifinPose, string>> = {
+  perch: 'puifin-bob 3.2s ease-in-out infinite',
+  cheer: 'puifin-hop 0.9s ease-in-out infinite',
+  fly: 'puifin-drift 2.6s ease-in-out infinite',
+  nod: 'puifin-rock 2.2s ease-in-out infinite',
+  rest: 'puifin-bob 5.2s ease-in-out infinite',
 };
 
-interface RuaProps {
-  pose?: RuaPose;
+interface PuifinProps {
+  pose?: PuifinPose;
   size?: number;
   /** Set false to freeze all motion regardless of OS setting. */
   animate?: boolean;
@@ -59,11 +57,11 @@ interface RuaProps {
   label?: string;
 }
 
-const Rua: React.FC<RuaProps> = ({ pose = 'perch', size = 96, animate = true, className, label }) => {
+const Puifin: React.FC<PuifinProps> = ({ pose = 'perch', size = 96, animate = true, className, label }) => {
   const reduceMotion = useReducedMotion();
   const live = animate && !reduceMotion;
   const strip = live ? STRIPS[pose] : undefined;
-  const src = `/assets/rua/${strip ? strip.file : RENDER_ALIAS[pose] ?? pose}.webp`;
+  const src = `/assets/puifin/${strip ? strip.file : RENDER_ALIAS[pose] ?? pose}.webp`;
 
   if (strip) {
     return (
@@ -115,4 +113,4 @@ const Rua: React.FC<RuaProps> = ({ pose = 'perch', size = 96, animate = true, cl
   );
 };
 
-export default Rua;
+export default Puifin;
