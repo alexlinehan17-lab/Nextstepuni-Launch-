@@ -176,6 +176,9 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> {subjectLabel(subjectId)}
         </button>
+        <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.15em]" style={{ color: (CATEGORY_TINT[categoryOf(subjectId) as string] ?? CATEGORY_TINT.other).ink }}>
+          {subjectLabel(subjectId)} · {CATEGORY_LABEL[categoryOf(subjectId) as string] ?? 'Topic Atlas'}
+        </p>
         <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
         <p aria-live="polite" className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
           {shown.length === questions.length
@@ -283,22 +286,43 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> All subjects
         </button>
-        <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
+        {/* The volume's title page — the category duotone carries the
+            subject's full sixteen-year signature above its contents. */}
+        {(() => {
+          const tint = CATEGORY_TINT[categoryOf(subjectId) as string] ?? CATEGORY_TINT.other;
+          const peak = Math.max(1, ...stats.perYear.values());
+          return (
+            <div className="rounded-2xl overflow-hidden mb-5" style={{ border: '1.5px solid #383838' }}>
+              <div className="px-6 pt-5 pb-5" style={{ backgroundColor: tint.bg }}>
+                <p className="text-[10px] font-bold uppercase tracking-[0.15em]" style={{ color: tint.ink }}>
+                  {CATEGORY_LABEL[categoryOf(subjectId) as string] ?? 'Charted subject'} · Topic Atlas
+                </p>
+                <h2 ref={headingRef} tabIndex={-1} className="mt-1.5 text-[27px] font-semibold outline-none" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{subjectLabel(subjectId)}</h2>
+                <div className="mt-4 flex items-end gap-[4px] h-[44px]" aria-hidden="true">
+                  {stats.years.map(y => (
+                    <span
+                      key={y}
+                      title={`${y}: ${stats.perYear.get(y) ?? 0} questions`}
+                      className="flex-1 rounded-[2px]"
+                      style={{
+                        maxWidth: 20,
+                        height: `${Math.max(10, Math.round(((stats.perYear.get(y) ?? 0) / peak) * 100))}%`,
+                        backgroundColor: tint.ink,
+                        opacity: 0.34,
+                      }}
+                    />
+                  ))}
+                </div>
+                <p className="mt-3 text-[12.5px] font-semibold tabular-nums" style={{ color: tint.ink }}>
+                  {stats.questions.toLocaleString()} questions · {baseTopics.length} topics · {stats.yearMin}–{stats.yearMax}
+                </p>
+              </div>
+            </div>
+          );
+        })()}
         <p className="text-[13.5px] mb-4" style={{ color: '#5a5550' }}>
           Pick a topic — every question ever asked on it is inside.
         </p>
-        <div className="grid grid-cols-3 mb-5 py-3" style={{ borderTop: '1px solid #e7e3de', borderBottom: '1px solid #e7e3de' }}>
-          {[
-            { v: stats.questions.toLocaleString(), l: 'Questions' },
-            { v: String(baseTopics.length), l: 'Topics' },
-            { v: `${stats.yearMin}–${stats.yearMax}`, l: 'Years' },
-          ].map((cell, i) => (
-            <div key={cell.l} className={i > 0 ? 'pl-4 sm:pl-5' : ''} style={i > 0 ? { borderLeft: '1px solid #eeebe6' } : undefined}>
-              <p className="text-[18px] font-semibold tabular-nums leading-tight" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{cell.v}</p>
-              <p className="text-[9.5px] font-bold uppercase tracking-[0.14em] mt-0.5" style={{ color: '#9e9186' }}>{cell.l}</p>
-            </div>
-          ))}
-        </div>
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
           <div className="flex items-center gap-4" role="group" aria-label="Sort topics">
             {(['busiest', 'frequent'] as const).map(s => (
@@ -334,16 +358,25 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           <p className="text-[13px] py-4" style={{ color: '#8d857c' }}>
             No topics match “{topicQuery.trim()}”. <button onClick={() => setTopicQuery('')} className="font-semibold underline" style={{ color: INK }}>Clear</button>
           </p>
-        ) : strands.map(strand => {
-          const strandTopics = strand.subtopicIds
-            .map(id => topicById.get(id))
-            .filter((t): t is SubjectTopic => !!t);
-          if (!strandTopics.length) return null;
-          const ordered = [...strandTopics].sort((a, b) =>
-            sort === 'busiest'
-              ? b.count - a.count || b.years - a.years || a.label.localeCompare(b.label)
-              : b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
-          return (
+        ) : (() => {
+          // Contents numbering runs continuously through the whole volume,
+          // so the strand sections read like chapters of one book.
+          const orderedByStrand = strands
+            .map(strand => {
+              const strandTopics = strand.subtopicIds
+                .map(id => topicById.get(id))
+                .filter((t): t is SubjectTopic => !!t);
+              const ordered = [...strandTopics].sort((a, b) =>
+                sort === 'busiest'
+                  ? b.count - a.count || b.years - a.years || a.label.localeCompare(b.label)
+                  : b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
+              return { strand, ordered };
+            })
+            .filter(entry => entry.ordered.length > 0);
+          const contentsNo = new Map<string, number>();
+          let running = 0;
+          for (const entry of orderedByStrand) for (const t of entry.ordered) contentsNo.set(t.subtopicId, ++running);
+          return orderedByStrand.map(({ strand, ordered }) => (
             <section key={strand.id} className="mt-7">
               <div className="flex items-center gap-3 mb-1">
                 <h3 className="shrink-0 text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: '#9e9186' }}>{strand.name}</h3>
@@ -361,9 +394,12 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                     <button
                       key={t.subtopicId}
                       onClick={() => setSubtopicId(t.subtopicId)}
-                      className="group w-full flex items-center gap-4 px-2 py-3.5 rounded-xl text-left transition-colors hover:bg-[rgba(242,107,31,0.05)] dark:hover:bg-zinc-800/40"
+                      className="group w-full flex items-center gap-3.5 px-2 py-3.5 rounded-xl text-left transition-colors hover:bg-[rgba(242,107,31,0.05)] dark:hover:bg-zinc-800/40"
                       style={{ borderBottom: '1px solid #eeebe6' }}
                     >
+                      <span aria-hidden="true" className="w-6 shrink-0 text-right text-[13px] tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#b3aca3' }}>
+                        {String(contentsNo.get(t.subtopicId) ?? 0).padStart(2, '0')}
+                      </span>
                       <span className="flex-1 min-w-0">
                         <span className="block text-[15.5px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
                         <span className="block sm:hidden text-[11.5px] mt-0.5 tabular-nums" style={{ color: '#9e9186' }}>{t.count} questions · {t.years} of {totalYears} years</span>
@@ -389,8 +425,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 })}
               </div>
             </section>
-          );
-        })}
+          ));
+        })()}
       </div>
     );
   }
@@ -452,48 +488,65 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               ))}
             </div>
           )}
-          {grouped.map(group => (
-            <section key={group.cat} className="mt-6">
-              <div className="flex items-center gap-2.5 mb-1">
-                <span aria-hidden="true" className="inline-block w-[7px] h-[7px] rounded-full shrink-0" style={{ backgroundColor: (CATEGORY_TINT[group.cat] ?? CATEGORY_TINT.other).ink }} />
+          {grouped.map(group => {
+            const tint = CATEGORY_TINT[group.cat] ?? CATEGORY_TINT.other;
+            return (
+            <section key={group.cat} className="mt-7">
+              <div className="flex items-center gap-2.5 mb-3">
+                <span aria-hidden="true" className="inline-block w-[7px] h-[7px] rounded-full shrink-0" style={{ backgroundColor: tint.ink }} />
                 <h3 className="shrink-0 text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: '#9e9186' }}>{CATEGORY_LABEL[group.cat] ?? 'Other subjects'}</h3>
                 <span className="flex-1 h-px" style={{ backgroundColor: '#e7e3de' }} />
                 <span className="shrink-0 text-[12px] tabular-nums" style={{ color: '#b3aca3' }}>{group.items.length}</span>
               </div>
-              {group.items.map(s => {
-                const st = subjectAtlasStats(s.id);
-                const peak = Math.max(1, ...st.perYear.values());
-                return (
-                  <button
-                    key={s.id}
-                    onClick={() => setSubjectId(s.id)}
-                    className="group w-full flex items-center gap-4 px-1.5 py-3.5 rounded-lg text-left transition-colors hover:bg-[rgba(242,107,31,0.05)] dark:hover:bg-zinc-800/40"
-                    style={{ borderBottom: '1px solid #eeebe6' }}
-                  >
-                    <span className="flex-1 min-w-0">
-                      <span className="block text-[16.5px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>
-                      <span className="block text-[12.5px] mt-0.5 tabular-nums" style={{ color: '#8d857c' }}>
-                        {st.questions.toLocaleString()} questions · {topicsForSubject(s.id).length} topics · {st.yearMin}–{st.yearMax}
+              {/* Each subject is a volume: a duotone cover carrying its own
+                  sixteen-year signature, a white spine of type below. */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {group.items.map(s => {
+                  const st = subjectAtlasStats(s.id);
+                  const peak = Math.max(1, ...st.perYear.values());
+                  return (
+                    <button
+                      key={s.id}
+                      onClick={() => setSubjectId(s.id)}
+                      aria-label={`${s.label} — ${st.questions.toLocaleString()} questions across ${topicsForSubject(s.id).length} topics, ${st.yearMin} to ${st.yearMax}`}
+                      className="group text-left rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 transition-transform duration-200 hover:-translate-y-0.5"
+                      style={{ border: '1.5px solid #383838' }}
+                    >
+                      <span className="block px-5 pt-3.5 pb-3" style={{ backgroundColor: tint.bg }}>
+                        <span className="flex items-baseline justify-between gap-3">
+                          <span className="text-[9.5px] font-bold uppercase tracking-[0.15em]" style={{ color: tint.ink }}>
+                            {st.questions.toLocaleString()} questions
+                          </span>
+                          <span className="text-[10.5px] font-semibold tabular-nums" style={{ color: tint.ink, opacity: 0.72 }}>{st.yearMin}–{st.yearMax}</span>
+                        </span>
+                        <span className="mt-2.5 flex items-end gap-[3px] h-[34px]" aria-hidden="true">
+                          {st.years.map(y => (
+                            <span
+                              key={y}
+                              title={`${y}: ${st.perYear.get(y) ?? 0} questions`}
+                              className="flex-1 rounded-[2px] transition-opacity duration-200 group-hover:opacity-60"
+                              style={{
+                                height: `${Math.max(12, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
+                                backgroundColor: tint.ink,
+                                opacity: 0.34,
+                              }}
+                            />
+                          ))}
+                        </span>
                       </span>
-                    </span>
-                    <span className="shrink-0 hidden sm:flex items-end gap-[2px] h-[24px]" aria-hidden="true">
-                      {st.years.map(y => (
-                        <span
-                          key={y}
-                          title={`${y}: ${st.perYear.get(y) ?? 0} questions`}
-                          className="inline-block w-[5px] rounded-[2px] transition-colors"
-                          style={{
-                            height: `${Math.max(16, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
-                            backgroundColor: 'rgba(242,107,31,0.38)',
-                          }}
-                        />
-                      ))}
-                    </span>
-                  </button>
-                );
-              })}
+                      <span className="block px-5 pt-3.5 pb-4">
+                        <span className="block text-[19px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>
+                        <span className="mt-1 block text-[12.5px] tabular-nums" style={{ color: '#8d857c' }}>
+                          {topicsForSubject(s.id).length} topics mapped
+                        </span>
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
             </section>
-          ))}
+            );
+          })}
         </>
       )}
     </div>

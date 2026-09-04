@@ -69,7 +69,8 @@ import {
   type GamificationState,
 } from '../gamificationConfig';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
-import AchievementGallery from './AchievementGallery';
+import AchievementGallery, { AchievementBadge } from './AchievementGallery';
+import { getAchievementById } from '../achievementData';
 import { type CurriculumLevel } from '../utils/authUtils';
 import { getAchievementsForCurriculum } from '../achievementData';
 import { type DashboardSection } from '../contexts/NavigationContext';
@@ -941,15 +942,41 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                       showHeader={false}
                     />
                   ) : (
-                    <div className="flex items-end gap-8">
-                      <div>
-                        <p className="font-serif text-4xl font-semibold tabular-nums text-[var(--ink-primary)]">{achievementSummary.unlocked}</p>
-                        <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">Earned</p>
+                    <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+                      <div className="flex items-end gap-8">
+                        <div>
+                          <p className="font-serif text-4xl font-semibold tabular-nums text-[var(--ink-primary)]">{achievementSummary.unlocked}</p>
+                          <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">Earned</p>
+                        </div>
+                        <div>
+                          <p className="font-serif text-2xl font-semibold tabular-nums text-[var(--ink-secondary)]">{achievementSummary.visible}</p>
+                          <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">Visible milestones</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="font-serif text-2xl font-semibold tabular-nums text-[var(--ink-secondary)]">{achievementSummary.visible}</p>
-                        <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">Visible milestones</p>
-                      </div>
+                      {(() => {
+                        // Surface the newest unlock — unlocks that predate
+                        // timestamps tie at 0, so the later array index wins.
+                        const ts = gamificationState.achievementTimestamps ?? {};
+                        const ids = gamificationState.unlockedAchievements;
+                        const latest = [...ids].sort((a, b) =>
+                          (ts[b] ?? 0) - (ts[a] ?? 0) || ids.indexOf(b) - ids.indexOf(a))[0];
+                        const def = latest ? getAchievementById(latest) : undefined;
+                        if (!latest || !def) return null;
+                        return (
+                          <div className="flex items-center gap-3">
+                            <AchievementBadge achievementId={latest} size={40} />
+                            <div className="min-w-0">
+                              <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Latest badge</p>
+                              <p className="truncate font-serif text-[15px] font-semibold text-[var(--ink-primary)]">{def.title}</p>
+                              {ts[latest] ? (
+                                <p className="text-[11px] text-[var(--ink-muted)]">
+                                  Earned {new Date(ts[latest]).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })}
+                                </p>
+                              ) : null}
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </div>
                   )}
                 </Panel>
