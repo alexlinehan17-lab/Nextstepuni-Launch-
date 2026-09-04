@@ -8,7 +8,10 @@
  * `npx vite`, then open /avatar-lab.html.
  *
  * Decision log: candidates (Robin / Wren / evolved Blob) were auditioned
- * here on 2026-09-04; Alex picked the Robin.
+ * 2026-09-04; Alex picked the Robin, then rejected a hand-drawn SVG
+ * execution ("SVG is not it"). Rua v2 is a soft 3D vinyl-toy character
+ * modelled and rendered headlessly in Blender (scratchpad rua3d.py);
+ * the component now serves those renders from public/assets/rua/.
  */
 
 import React from 'react';
@@ -34,8 +37,9 @@ const Lab: React.FC = () => (
     <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#A0968D' }}>NextStepUni · Avatar Lab</p>
     <h1 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 34, margin: '6px 0 6px', color: '#1A1A1A' }}>Rua the Robin</h1>
     <p style={{ fontSize: 14, color: '#5A5550', maxWidth: 640, margin: '0 0 32px' }}>
-      The bird that lands beside you while you work. Every pose below renders from the production
-      component — what you see here is exactly what ships.
+      The bird that lands beside you while you work — modelled in Blender, rendered soft.
+      Every pose below comes through the production component: exactly what ships. Nod and
+      peek reuse the perch render (CSS rock / container crop).
     </p>
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: 18 }}>
       {POSES.map(({ pose, label, use }) => (
