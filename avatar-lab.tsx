@@ -52,6 +52,23 @@ const Lab: React.FC = () => (
         </div>
       ))}
     </div>
+    <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 22, margin: '44px 0 4px', color: '#1A1A1A' }}>Animations</h2>
+    <p style={{ fontSize: 13, color: '#5A5550', margin: '0 0 18px' }}>
+      Rendered frame sequences from the same Blender build, played as stepped sprite strips.
+      Perch blinks every few seconds; wave plays twice then settles; fly flaps continuously.
+    </p>
+    <div style={{ display: 'flex', gap: 18 }}>
+      {(['perch', 'wave', 'fly'] as RuaPose[]).map((pose) => (
+        <div key={`anim-${pose}`} style={{ textAlign: 'center' }}>
+          <div style={{ background: '#fff', border: '1.5px solid #383838', borderRadius: 16, padding: 14, height: 160, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Rua pose={pose} size={128} />
+          </div>
+          <p style={{ fontSize: 12.5, fontWeight: 700, color: '#1A1A1A', margin: '8px 0 2px' }}>
+            {pose === 'perch' ? 'Blink (idle)' : pose === 'wave' ? 'Wave ×2, then rest' : 'Flap (loop)'}
+          </p>
+        </div>
+      ))}
+    </div>
     <div style={{ marginTop: 40, display: 'flex', alignItems: 'end', gap: 22 }}>
       <div style={{ textAlign: 'center' }}>
         <Rua pose="perch" size={24} />

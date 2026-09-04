@@ -28,10 +28,21 @@ export type RuaPose =
 /** Poses that reuse another pose's render. */
 const RENDER_ALIAS: Partial<Record<RuaPose, string>> = { nod: 'perch', peek: 'perch' };
 
+/**
+ * Rendered sprite-strip animations (horizontal filmstrips from the same
+ * Blender build). Played with stepped CSS transforms — no video codecs,
+ * works everywhere a WebP does. Poses without a strip fall back to the
+ * static render + gentle CSS motion.
+ */
+const STRIPS: Partial<Record<RuaPose, { file: string; frames: number; anim: string }>> = {
+  perch: { file: 'anim-blink', frames: 4, anim: 'rua-strip-blink 4.6s step-end infinite' },
+  wave: { file: 'anim-wave', frames: 12, anim: 'rua-strip-wave 1.5s steps(11) 2 forwards' },
+  fly: { file: 'anim-flap', frames: 8, anim: 'rua-strip-flap 0.66s steps(8) infinite' },
+};
+
 /** Gentle idle motion per pose — meaning, not decoration. */
 const MOTION: Partial<Record<RuaPose, string>> = {
   perch: 'rua-bob 3.2s ease-in-out infinite',
-  wave: 'rua-rock 1.8s ease-in-out infinite',
   cheer: 'rua-hop 0.9s ease-in-out infinite',
   fly: 'rua-drift 2.6s ease-in-out infinite',
   nod: 'rua-rock 2.2s ease-in-out infinite',
@@ -51,7 +62,38 @@ interface RuaProps {
 const Rua: React.FC<RuaProps> = ({ pose = 'perch', size = 96, animate = true, className, label }) => {
   const reduceMotion = useReducedMotion();
   const live = animate && !reduceMotion;
-  const src = `/assets/rua/${RENDER_ALIAS[pose] ?? pose}.webp`;
+  const strip = live ? STRIPS[pose] : undefined;
+  const src = `/assets/rua/${strip ? strip.file : RENDER_ALIAS[pose] ?? pose}.webp`;
+
+  if (strip) {
+    return (
+      <span
+        className={className}
+        role={label ? 'img' : undefined}
+        aria-label={label}
+        aria-hidden={label ? undefined : true}
+        style={{
+          display: 'block',
+          width: size,
+          height: size,
+          overflow: 'hidden',
+          userSelect: 'none',
+          animation: MOTION[pose],
+          transformOrigin: '50% 90%',
+        }}
+      >
+        <img
+          src={src}
+          width={size * strip.frames}
+          height={size}
+          alt=""
+          aria-hidden="true"
+          draggable={false}
+          style={{ display: 'block', maxWidth: 'none', animation: strip.anim }}
+        />
+      </span>
+    );
+  }
 
   return (
     <img
