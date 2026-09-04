@@ -661,7 +661,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               )}
             </AnimatePresence>
 
-            {/* Session type + Duration — side by side */}
+            {/* Session type + Duration — revealed once the subject is chosen,
+                so the screen asks one question at a time. (With no subject
+                options at all, everything stays visible as before; the
+                startHint above the CTA already prompts for a subject.) */}
+            {(selectedSubject || subjects.length === 0) && (
             <div className="grid grid-cols-2 gap-4 sm:gap-8">
               {/* Session type */}
               <div className="space-y-3">
@@ -741,6 +745,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 </div>
               </div>
             </div>
+            )}
 
             {/* Start button */}
             <div className="sticky bottom-[calc(76px+var(--sab,0px))] z-20 -mx-4 flex flex-col items-center bg-gradient-to-t from-[#FAFBF6] via-[#FAFBF6]/95 to-transparent px-4 pb-2 pt-5 dark:from-zinc-950 dark:via-zinc-950/95 sm:static sm:mx-0 sm:bg-none sm:p-0">
@@ -1162,11 +1167,38 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className={`mx-auto mb-5 flex h-[76px] w-[76px] items-center justify-center rounded-full border-2 border-[#383838] shadow-[3px_3px_0_0_#383838] ${isEarlyEnd ? 'bg-[#FFF0E7] text-[#F26B1F]' : 'bg-[#E8F2EC] text-[#3A8D5F]'}`}
+              className="relative mx-auto mb-5 h-[88px] w-[88px]"
             >
-              <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <path d="M10 20.5l6.5 6.5L30.5 13" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+              {/* The block itself is the ring: full and green when finished,
+                  partial in apricot when ended early. */}
+              {(() => {
+                const blockPct = session.totalDuration > 0
+                  ? Math.max(0.04, Math.min(1, session.elapsedSeconds / session.totalDuration))
+                  : 1;
+                const C = 2 * Math.PI * 38;
+                return (
+                  <svg width="88" height="88" viewBox="0 0 88 88" className="-rotate-90" aria-hidden="true">
+                    <circle cx="44" cy="44" r="38" fill="none" stroke="#ECE8E3" strokeWidth="6" className="dark:stroke-zinc-700" />
+                    <circle
+                      cx="44" cy="44" r="38" fill="none" strokeWidth="6" strokeLinecap="round"
+                      stroke={isEarlyEnd ? 'rgba(242,107,31,0.62)' : '#3A8D5F'}
+                      strokeDasharray={C}
+                      strokeDashoffset={C * (1 - (isEarlyEnd ? blockPct : 1))}
+                    />
+                  </svg>
+                );
+              })()}
+              <div className={`absolute inset-0 flex flex-col items-center justify-center ${isEarlyEnd ? 'text-[#F26B1F]' : 'text-[#3A8D5F]'}`}>
+                {isEarlyEnd ? (
+                  <span className="font-serif text-[20px] font-bold tabular-nums leading-none text-[#1A1A1A] dark:text-white">
+                    {Math.floor(Math.min(1, session.totalDuration > 0 ? session.elapsedSeconds / session.totalDuration : 1) * 100)}%
+                  </span>
+                ) : (
+                  <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                    <path d="M10 20.5l6.5 6.5L30.5 13" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                )}
+              </div>
             </MotionDiv>
             <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#9E9186] mb-1.5">{isEarlyEnd ? 'Session ended early' : 'Session complete'}</p>
             <h2 className="font-serif text-[32px] leading-tight font-bold text-[#1A1A1A] dark:text-white mb-2">{isEarlyEnd ? 'The work still counts.' : 'Focused work, finished.'}</h2>

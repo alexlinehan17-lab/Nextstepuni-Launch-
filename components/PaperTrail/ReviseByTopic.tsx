@@ -33,7 +33,18 @@ const CATEGORY_TINT: Record<string, { bg: string; ink: string }> = {
   arts: { bg: '#F6EAED', ink: '#84495A' },
   other: { bg: '#F0EEEB', ink: '#6B635A' },
 };
-const tintOf = (subjectId: string) => CATEGORY_TINT[categoryOf(subjectId)] ?? CATEGORY_TINT.other;
+// Curriculum sections of the index, in reading order. The tint appears only
+// as the small dot beside each section eyebrow — rows stay white and ruled.
+const CATEGORY_ORDER = ['stem', 'language', 'business', 'social-environmental', 'practical-applied', 'arts', 'other'] as const;
+const CATEGORY_LABEL: Record<string, string> = {
+  stem: 'Sciences & Maths',
+  language: 'Languages',
+  business: 'Business',
+  'social-environmental': 'Social & Environmental',
+  'practical-applied': 'Practical & Applied',
+  arts: 'Arts',
+  other: 'Other subjects',
+};
 
 interface Props {
   subjects: { id: string; label: string }[];
@@ -273,12 +284,21 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           <ArrowLeft size={15} /> All subjects
         </button>
         <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
-        <p className="text-[13.5px] mb-1" style={{ color: '#5a5550' }}>
+        <p className="text-[13.5px] mb-4" style={{ color: '#5a5550' }}>
           Pick a topic — every question ever asked on it is inside.
         </p>
-        <p className="text-[12.5px] mb-5 tabular-nums" style={{ color: '#9e9186' }}>
-          {stats.questions.toLocaleString()} questions · {baseTopics.length} topics · {stats.yearMin}–{stats.yearMax}
-        </p>
+        <div className="grid grid-cols-3 mb-5 py-3" style={{ borderTop: '1px solid #e7e3de', borderBottom: '1px solid #e7e3de' }}>
+          {[
+            { v: stats.questions.toLocaleString(), l: 'Questions' },
+            { v: String(baseTopics.length), l: 'Topics' },
+            { v: `${stats.yearMin}–${stats.yearMax}`, l: 'Years' },
+          ].map((cell, i) => (
+            <div key={cell.l} className={i > 0 ? 'pl-4 sm:pl-5' : ''} style={i > 0 ? { borderLeft: '1px solid #eeebe6' } : undefined}>
+              <p className="text-[18px] font-semibold tabular-nums leading-tight" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{cell.v}</p>
+              <p className="text-[9.5px] font-bold uppercase tracking-[0.14em] mt-0.5" style={{ color: '#9e9186' }}>{cell.l}</p>
+            </div>
+          ))}
+        </div>
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
           <div className="flex items-center gap-4" role="group" aria-label="Sort topics">
             {(['busiest', 'frequent'] as const).map(s => (
@@ -328,6 +348,9 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               <div className="flex items-center gap-3 mb-1">
                 <h3 className="shrink-0 text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: '#9e9186' }}>{strand.name}</h3>
                 <span className="flex-1 h-px" style={{ backgroundColor: '#e7e3de' }} />
+                <span className="shrink-0 text-[12px] tabular-nums" style={{ color: '#b3aca3' }}>
+                  {ordered.reduce((a, t) => a + t.count, 0).toLocaleString()} q
+                </span>
               </div>
               <div>
                 {ordered.map(t => {
@@ -345,8 +368,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                         <span className="block text-[15.5px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
                         <span className="block sm:hidden text-[11.5px] mt-0.5 tabular-nums" style={{ color: '#9e9186' }}>{t.count} questions · {t.years} of {totalYears} years</span>
                       </span>
-                      {m && masteryColor && (
-                        <span className="shrink-0 text-[11px] font-semibold tabular-nums" style={{ color: masteryColor }}>{m.mastery}%</span>
+                      {masteryMap.size > 0 && (
+                        <span className="shrink-0 w-10 text-right text-[11px] font-semibold tabular-nums" style={{ color: masteryColor ?? '#d8d3cc' }}>
+                          {m ? `${m.mastery}%` : ''}
+                        </span>
                       )}
                       <span className="shrink-0 w-10 text-right text-[13px] tabular-nums" style={{ color: '#8d857c' }}>{t.count}</span>
                       <span className="shrink-0 hidden sm:flex items-center gap-[2px]" aria-label={`Asked in ${t.years} of ${totalYears} years`}>
@@ -370,9 +395,18 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     );
   }
 
-  // ── Level 0: the index — one ruled row per charted subject. ──
+  // ── Level 0: the index — curriculum sections, one ruled row per subject.
+  //    Structure and data carry the page; no decoration repeats per row. ──
   const shownSubjects = (scope === 'mine' ? subjects.filter(s => mineIds.includes(s.id)) : subjects);
   const totalQ = subjects.reduce((a, s) => a + subjectAtlasStats(s.id).questions, 0);
+  const totalTopics = subjects.reduce((a, s) => a + topicsForSubject(s.id).length, 0);
+  const span = subjects.reduce(
+    (acc, s) => { const st = subjectAtlasStats(s.id); return { lo: Math.min(acc.lo, st.yearMin), hi: Math.max(acc.hi, st.yearMax) }; },
+    { lo: Infinity, hi: 0 },
+  );
+  const grouped = CATEGORY_ORDER
+    .map(cat => ({ cat, items: shownSubjects.filter(s => (categoryOf(s.id) as string) === cat) }))
+    .filter(g => g.items.length > 0);
   const scopeTab = (active: boolean) => ({
     color: active ? INK : '#8d857c',
     boxShadow: active ? `inset 0 -2px 0 0 ${INK}` : 'none',
@@ -385,11 +419,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
       <h2 ref={headingRef} tabIndex={-1} className="text-[28px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
         Topic Atlas
       </h2>
-      <p className="text-[14px] leading-relaxed mb-1 max-w-[52ch]" style={{ color: '#5a5550' }}>
+      <p className="text-[14px] leading-relaxed mb-5 max-w-[52ch]" style={{ color: '#5a5550' }}>
         Every question the SEC has asked, mapped by topic.
-      </p>
-      <p className="text-[12.5px] mb-6 tabular-nums" style={{ color: '#9e9186' }}>
-        {subjects.length} subject{subjects.length === 1 ? '' : 's'} charted · {totalQ.toLocaleString()} questions
       </p>
       {subjects.length === 0 ? (
         <p className="text-[13.5px] py-4" style={{ color: '#5a5550' }}>
@@ -397,6 +428,20 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         </p>
       ) : (
         <>
+          {/* The record, stated once — cells divided by hairlines. */}
+          <div className="grid grid-cols-3 sm:grid-cols-4 mb-6 py-3.5" style={{ borderTop: '1px solid #e7e3de', borderBottom: '1px solid #e7e3de' }}>
+            {[
+              { v: subjects.length.toLocaleString(), l: subjects.length === 1 ? 'Subject' : 'Subjects' },
+              { v: totalTopics.toLocaleString(), l: 'Topics' },
+              { v: totalQ.toLocaleString(), l: 'Questions' },
+              { v: span.lo <= span.hi ? `${span.lo}–${span.hi}` : '—', l: 'Years', wide: true },
+            ].map((cell, i) => (
+              <div key={cell.l} className={`${i > 0 ? 'pl-4 sm:pl-5' : ''} ${cell.wide ? 'hidden sm:block' : ''}`} style={i > 0 ? { borderLeft: '1px solid #eeebe6' } : undefined}>
+                <p className="text-[19px] font-semibold tabular-nums leading-tight" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{cell.v}</p>
+                <p className="text-[9.5px] font-bold uppercase tracking-[0.14em] mt-0.5" style={{ color: '#9e9186' }}>{cell.l}</p>
+              </div>
+            ))}
+          </div>
           {mineIds.length > 0 && (
             <div className="flex items-center gap-4 pb-3 mb-1" role="group" aria-label="Subject scope" style={{ borderBottom: '1px solid #e7e3de' }}>
               {(['mine', 'all'] as const).map(sc => (
@@ -407,48 +452,48 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               ))}
             </div>
           )}
-          <div>
-            {shownSubjects.map(s => {
-              const st = subjectAtlasStats(s.id);
-              const peak = Math.max(1, ...st.perYear.values());
-              const tint = tintOf(s.id);
-              return (
-                <button
-                  key={s.id}
-                  onClick={() => setSubjectId(s.id)}
-                  className="group w-full flex items-center gap-4 px-2 py-4 rounded-xl text-left transition-colors hover:bg-[rgba(242,107,31,0.05)] dark:hover:bg-zinc-800/40"
-                  style={{ borderBottom: '1px solid #eeebe6' }}
-                >
-                  <span
-                    aria-hidden="true"
-                    className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center text-[19px] font-semibold"
-                    style={{ fontFamily: "'Source Serif 4', serif", backgroundColor: tint.bg, color: tint.ink }}
+          {grouped.map(group => (
+            <section key={group.cat} className="mt-6">
+              <div className="flex items-center gap-2.5 mb-1">
+                <span aria-hidden="true" className="inline-block w-[7px] h-[7px] rounded-full shrink-0" style={{ backgroundColor: (CATEGORY_TINT[group.cat] ?? CATEGORY_TINT.other).ink }} />
+                <h3 className="shrink-0 text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: '#9e9186' }}>{CATEGORY_LABEL[group.cat] ?? 'Other subjects'}</h3>
+                <span className="flex-1 h-px" style={{ backgroundColor: '#e7e3de' }} />
+                <span className="shrink-0 text-[12px] tabular-nums" style={{ color: '#b3aca3' }}>{group.items.length}</span>
+              </div>
+              {group.items.map(s => {
+                const st = subjectAtlasStats(s.id);
+                const peak = Math.max(1, ...st.perYear.values());
+                return (
+                  <button
+                    key={s.id}
+                    onClick={() => setSubjectId(s.id)}
+                    className="group w-full flex items-center gap-4 px-1.5 py-3.5 rounded-lg text-left transition-colors hover:bg-[rgba(242,107,31,0.05)] dark:hover:bg-zinc-800/40"
+                    style={{ borderBottom: '1px solid #eeebe6' }}
                   >
-                    {s.label.charAt(0)}
-                  </span>
-                  <span className="flex-1 min-w-0">
-                    <span className="block text-[17px]" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>
-                    <span className="block text-[12.5px] mt-0.5 tabular-nums" style={{ color: '#8d857c' }}>
-                      {st.questions.toLocaleString()} questions · {topicsForSubject(s.id).length} topics · {st.yearMin}–{st.yearMax}
+                    <span className="flex-1 min-w-0">
+                      <span className="block text-[16.5px] leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{s.label}</span>
+                      <span className="block text-[12.5px] mt-0.5 tabular-nums" style={{ color: '#8d857c' }}>
+                        {st.questions.toLocaleString()} questions · {topicsForSubject(s.id).length} topics · {st.yearMin}–{st.yearMax}
+                      </span>
                     </span>
-                  </span>
-                  <span className="shrink-0 hidden sm:flex items-end gap-[2px] h-[24px]" aria-hidden="true">
-                    {st.years.map(y => (
-                      <span
-                        key={y}
-                        title={`${y}: ${st.perYear.get(y) ?? 0} questions`}
-                        className="inline-block w-[5px] rounded-[2px] transition-colors"
-                        style={{
-                          height: `${Math.max(16, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
-                          backgroundColor: 'rgba(242,107,31,0.38)',
-                        }}
-                      />
-                    ))}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
+                    <span className="shrink-0 hidden sm:flex items-end gap-[2px] h-[24px]" aria-hidden="true">
+                      {st.years.map(y => (
+                        <span
+                          key={y}
+                          title={`${y}: ${st.perYear.get(y) ?? 0} questions`}
+                          className="inline-block w-[5px] rounded-[2px] transition-colors"
+                          style={{
+                            height: `${Math.max(16, Math.round(((st.perYear.get(y) ?? 0) / peak) * 100))}%`,
+                            backgroundColor: 'rgba(242,107,31,0.38)',
+                          }}
+                        />
+                      ))}
+                    </span>
+                  </button>
+                );
+              })}
+            </section>
+          ))}
         </>
       )}
     </div>

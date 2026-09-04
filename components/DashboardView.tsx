@@ -684,13 +684,21 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                             <span className="text-[var(--accent-hex)]">{questState.isCompleted ? 'Completed' : `${Math.min(questState.current, questState.quest.target)}/${questState.quest.target}`}</span>
                           </div>
                           <p className="mt-2 text-sm font-semibold text-[var(--ink-primary)]">{questState.quest.title}</p>
-                          <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-[var(--dashboard-track)]">
+                          <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-[var(--dashboard-track)]">
                             <div className="h-full rounded-full bg-[var(--accent-hex)]" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%` }} />
                           </div>
                         </div>
                       )}
                     </div>
-                    <div className="mt-7 flex flex-wrap gap-2">
+                    <div className="mt-7">
+                      {recommendation && recommendation.reason !== 'all-complete' && (
+                        <p className="mb-3 text-[11px] leading-relaxed text-[var(--ink-muted)]">
+                          {recommendation.reason === 'in-progress'
+                            ? 'Suggested because it’s already underway — finishing beats starting fresh.'
+                            : 'Suggested because it’s the next module you haven’t opened.'}
+                        </p>
+                      )}
+                      <div className="flex flex-wrap gap-2">
                       {onStartStudy && (
                         <button onClick={onStartStudy} className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[var(--ink-primary)] px-4 text-xs font-bold text-[var(--surface-paper)] transition-transform hover:-translate-y-0.5">
                           Start studying <ArrowRight size={14} />
@@ -706,6 +714,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                           Claim {questState.quest.rewardPoints} JP
                         </button>
                       )}
+                      </div>
                     </div>
                   </div>
                 </Panel>

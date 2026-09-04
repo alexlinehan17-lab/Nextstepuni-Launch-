@@ -54,7 +54,11 @@ describe('Topic Vault — ReviseByTopic', () => {
     );
     // Level 0 → 1: pick the subject tile.
     fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${label(sid)}`) }));
-    expect(screen.getByText(/topics · /i)).toBeInTheDocument();
+    expect(screen.getByText(/Pick a topic — every question ever asked on it is inside/i)).toBeInTheDocument();
+    // The stat masthead renders real values: labelled cells plus a sane year span.
+    expect(screen.getByText('Questions')).toBeInTheDocument();
+    expect(screen.getByText('Topics')).toBeInTheDocument();
+    expect(screen.getByText(/^\d{4}–\d{4}$/)).toBeInTheDocument();
 
     // The busiest topic renders as a row; drill into it.
     const busiest = topicsForSubject(sid)[0];
