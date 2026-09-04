@@ -6,6 +6,7 @@
 import React, { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
+import Rua, { type RuaPose } from './ui/Rua';
 import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
@@ -59,8 +60,7 @@ interface OnboardingDraft {
 // ─── The Guide — a painted blob that asks each step's question in a
 //     hand-drawn speech bubble. One guide, one question, per screen (the
 //     Duolingo/Brilliant conversational register, in our own language). ───
-const GUIDE_BLOB = 'M 38 4 Q 12 6 6 28 Q 2 50 22 56 Q 50 62 60 36 Q 64 12 48 4 Q 42 2 38 4 Z';
-const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.ReactNode; sub?: React.ReactNode; tilt?: number }> = ({ tint, ink, question, sub, tilt = 0 }) => (
+const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.ReactNode; sub?: React.ReactNode; tilt?: number; pose?: RuaPose }> = ({ tint, ink, question, sub, tilt = 0, pose = 'perch' }) => (
   <div className="mx-auto mb-7 flex w-full max-w-xl items-start gap-3.5 text-left">
     <motion.span
       aria-hidden="true"
@@ -69,13 +69,11 @@ const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.Rea
       transition={{ duration: 0.45, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
       className="relative mt-1 h-14 w-14 shrink-0"
     >
-      <svg viewBox="0 0 64 64" className="absolute inset-0 h-full w-full">
-        <path d={GUIDE_BLOB} fill={tint} />
-        <path d={GUIDE_BLOB} fill="none" stroke={ink} strokeOpacity="0.3" strokeWidth="1.5" />
-        <circle cx="26.5" cy="28" r="2.6" fill="#1A1A1A" />
-        <circle cx="38.5" cy="28" r="2.6" fill="#1A1A1A" />
-        <path d="M 27.5 37.5 Q 32.5 41.5 37.5 37.5" fill="none" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" />
-      </svg>
+      {/* The step's tint survives as Rua's perch-disc; she stays herself. */}
+      <span className="absolute inset-0 rounded-full" style={{ backgroundColor: tint, boxShadow: `inset 0 0 0 1.5px ${ink}26` }} />
+      <span className="absolute inset-x-0 bottom-0 flex justify-center">
+        <Rua pose={pose} size={52} />
+      </span>
     </motion.span>
     <motion.div
       initial={{ opacity: 0, scale: 0.92, x: -6 }}
@@ -736,7 +734,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       tint="#FBE9DC"
                       ink="#B5500F"
                       tilt={-3}
-                      question={`Hi ${userName.split(' ')[0] || userName} — I'm your guide here.`}
+                      pose="wave"
+                      question={`Hi ${userName.split(' ')[0] || userName} — I'm Rua, your guide here.`}
                       sub="Two minutes of setup and the whole app fits itself around you. One question at a time."
                     />
 
@@ -1394,6 +1393,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                   tint="#E8F2EC"
                   ink="#1F5F3E"
                   tilt={-2}
+                  pose="cheer"
                   question={`You're ready, ${userName.split(' ')[0] || userName}.`}
                   sub="Here's the plan we built together — review it, then start learning."
                 />

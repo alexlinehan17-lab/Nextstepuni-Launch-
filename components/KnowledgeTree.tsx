@@ -18,6 +18,7 @@ import { SectionCard } from './SectionCard';
 import { ModulesIcon, InnovationZoneIcon, MyProgressIcon, LearningPathsIcon, MyJourneyIcon } from './sectionIcons';
 import Avatar from './Avatar';
 import { COLORS } from '../design/tokens';
+import Rua from './ui/Rua';
 import { toggleNotificationPanel } from '../utils/notificationPanel';
 
 export type CategoryType =
@@ -531,9 +532,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                   /* Rest state — Gentler Streak's lesson: an empty day is a
                      feature, not a hole. Same ring language as completion. */
                   <div className="flex items-center gap-4 rounded-xl px-4 py-5">
-                    <span aria-hidden="true" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-[2.5px] border-[#3A8D5F]">
-                      <Check size={18} strokeWidth={2.6} className="text-[#3A8D5F]" />
-                    </span>
+                    <Rua pose="rest" size={54} className="shrink-0" />
                     <div>
                       <p className="font-serif text-[17px] font-bold text-[#1A1A1A] dark:text-white">Nothing scheduled — rest counts.</p>
                       <p className="mt-0.5 text-xs leading-relaxed text-[#78716C] dark:text-zinc-400">A clear day is part of the plan. Come back fresh, or open one topic that has been on your mind.</p>
@@ -541,9 +540,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                   </div>
                 ) : todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) ? (
                   <div className="flex items-center gap-4 rounded-xl px-4 py-5">
-                    <span aria-hidden="true" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#3A8D5F]">
-                      <Check size={18} strokeWidth={2.6} className="text-white" />
-                    </span>
+                    <Rua pose="cheer" size={54} className="shrink-0" />
                     <div>
                       <p className="font-serif text-[17px] font-bold text-[#1A1A1A] dark:text-white">All done. Rest counts.</p>
                       <p className="mt-0.5 text-xs leading-relaxed text-[#78716C] dark:text-zinc-400">Every block finished — proper recovery is how the work sticks.</p>
