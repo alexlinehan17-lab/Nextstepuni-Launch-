@@ -528,13 +528,26 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                   )}
                 </div>
                 {todayBlocks.length === 0 ? (
-                  <div className="rounded-xl bg-[#FAF9F7] dark:bg-zinc-800 px-4 py-5 text-sm text-[#78716C] dark:text-zinc-300">
-                    The timetable has done its job—use the time to rest or practise something that needs attention.
+                  /* Rest state — Gentler Streak's lesson: an empty day is a
+                     feature, not a hole. Same ring language as completion. */
+                  <div className="flex items-center gap-4 rounded-xl px-4 py-5">
+                    <span aria-hidden="true" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-[2.5px] border-[#3A8D5F]">
+                      <Check size={18} strokeWidth={2.6} className="text-[#3A8D5F]" />
+                    </span>
+                    <div>
+                      <p className="font-serif text-[17px] font-bold text-[#1A1A1A] dark:text-white">Nothing scheduled — rest counts.</p>
+                      <p className="mt-0.5 text-xs leading-relaxed text-[#78716C] dark:text-zinc-400">A clear day is part of the plan. Come back fresh, or open one topic that has been on your mind.</p>
+                    </div>
                   </div>
                 ) : todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) ? (
-                  <div className="rounded-xl bg-[#EDF2EE] px-4 py-5">
-                    <p className="text-sm font-bold text-[#276749]">All done for today</p>
-                    <p className="mt-1 text-xs text-[#50715D]">Your scheduled work is complete. Proper rest counts too.</p>
+                  <div className="flex items-center gap-4 rounded-xl px-4 py-5">
+                    <span aria-hidden="true" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#3A8D5F]">
+                      <Check size={18} strokeWidth={2.6} className="text-white" />
+                    </span>
+                    <div>
+                      <p className="font-serif text-[17px] font-bold text-[#1A1A1A] dark:text-white">All done. Rest counts.</p>
+                      <p className="mt-0.5 text-xs leading-relaxed text-[#78716C] dark:text-zinc-400">Every block finished — proper recovery is how the work sticks.</p>
+                    </div>
                   </div>
                 ) : (
                   /* Stepped rail — the day reads as a sequence: done, current, upcoming.
@@ -691,13 +704,15 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
 
               {/* QUEST */}
               {questState && (
-                <div className="px-5 py-4 bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-700" style={{ borderRadius: 14 }}>
-                  <div className="flex items-center justify-between mb-1">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">
+                <div className="overflow-hidden bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-700" style={{ borderRadius: 14 }}>
+                  {/* Band header — the quest wears its identity like the Atlas covers. */}
+                  <div className="flex items-center justify-between px-5 py-2" style={{ backgroundColor: 'rgba(242,107,31,0.13)' }}>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color: '#B5500F' }}>
                       {questState.isOnboarding ? `Day ${questState.dayNumber} Quest` : 'Daily Quest'}
                     </p>
-                    <span className="text-[10px] font-bold" style={{ color: COLORS.accent }}>{questState.quest.rewardPoints} JP</span>
+                    <span className="text-[10px] font-bold tabular-nums" style={{ color: '#B5500F' }}>{questState.quest.rewardPoints} JP</span>
                   </div>
+                  <div className="px-5 pb-4 pt-3">
                   <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white">{questState.quest.title}</p>
                   <p className="text-[11px] mt-0.5 text-[#A8A29E] dark:text-zinc-500">{questState.quest.description}</p>
                   <div className="mt-2.5 flex items-center gap-2">
@@ -712,8 +727,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                     </button>
                   )}
                   {questState.isClaimed && (
-                    <p className="mt-2 text-[10px] font-bold" style={{ color: COLORS.accent }}>Claimed</p>
+                    <p className="mt-2 text-[10px] font-bold" style={{ color: '#3A8D5F' }}>Claimed</p>
                   )}
+                  </div>
                 </div>
               )}
             </div>
