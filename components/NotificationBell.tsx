@@ -128,7 +128,7 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
         onClick={() => setIsOpen(!isOpen)}
         className={variant === 'menu'
           ? 'relative flex min-h-14 w-full items-center gap-3 rounded-xl p-3 text-left text-zinc-700 transition-colors hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-800/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]'
-          : 'relative flex h-11 w-11 items-center justify-center rounded-xl border-[1.5px] border-[#D0CDC8] bg-[#FAFBF6] text-zinc-600 shadow-none transition-colors hover:bg-[#F4F2EE] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]'}
+          : 'relative flex h-11 w-11 items-center justify-center rounded-xl border-[1.5px] border-[#D0CDC8] bg-white text-zinc-600 shadow-none transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]'}
       >
         {variant === 'menu' ? (
           <>

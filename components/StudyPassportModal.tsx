@@ -84,11 +84,11 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
             aria-modal="true"
             aria-labelledby="study-passport-title"
             tabIndex={-1}
-            className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-lg shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
+            className="relative bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-lg shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-6 pb-4 sticky top-0 bg-[#FAFBF6] dark:bg-zinc-900 z-10 border-b border-[#DDD8D2] dark:border-zinc-700">
+            <div className="flex items-center justify-between p-6 pb-4 sticky top-0 bg-white dark:bg-zinc-900 z-10 border-b border-[#DDD8D2] dark:border-zinc-700">
               <div>
                 <h2 id="study-passport-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                   Study Passport

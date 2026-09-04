@@ -115,7 +115,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
       <div className="px-6 pt-5">
         <button
           onClick={onBack}
-          className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-[12px] font-semibold text-[#1A1A1A] dark:text-white border-[1.5px] border-[#383838] dark:border-zinc-600 bg-[#FAFBF6] dark:bg-zinc-900 shadow-[2px_2px_0_0_#383838] hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all"
+          className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-[12px] font-semibold text-[#1A1A1A] dark:text-white border-[1.5px] border-[#383838] dark:border-zinc-600 bg-white dark:bg-zinc-900 shadow-[2px_2px_0_0_#383838] hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all"
         >
           <ArrowLeft size={14} />
           Back

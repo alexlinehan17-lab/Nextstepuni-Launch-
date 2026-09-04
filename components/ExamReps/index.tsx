@@ -158,7 +158,7 @@ function renderQuestion(card: RepCard, tappable: boolean, tipOpen: boolean, onTo
             <span
               role="tooltip"
               className="absolute z-30 left-0 top-full mt-1.5 w-64 max-w-[80vw] rounded-xl border-2 p-3 block"
-              style={{ borderColor: COLORS.border, backgroundColor: '#FAFBF6', boxShadow: `4px 4px 0 0 ${COLORS.border}` }}
+              style={{ borderColor: COLORS.border, backgroundColor: '#ffffff', boxShadow: `4px 4px 0 0 ${COLORS.border}` }}
             >
               <span className="block text-xs font-normal leading-relaxed normal-case" style={{ color: '#1A1A1A' }}>
                 {card.commandWord!.reminder}

@@ -94,7 +94,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ doc, onClose }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 18, scale: 0.99 }}
           transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-          className="flex max-h-[94dvh] w-full flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] shadow-[5px_5px_0_0_#383838] sm:max-h-[88dvh] sm:max-w-4xl sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900"
+          className="flex max-h-[94dvh] w-full flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-white dark:bg-zinc-900 shadow-[5px_5px_0_0_#383838] sm:max-h-[88dvh] sm:max-w-4xl sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900"
           onClick={(e: React.MouseEvent) => e.stopPropagation()}
         >
           {/* Header */}
@@ -107,7 +107,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ doc, onClose }) => {
               <h2 className="font-serif text-xl font-semibold text-[#1A1A1A] sm:text-2xl dark:text-white">{title}</h2>
               <p className="mt-0.5 text-[11px] text-[#8A8178] sm:text-xs">Version {PRIVACY_POLICY_VERSION} · Updated {LEGAL_LAST_UPDATED}</p>
             </div>
-            <button onClick={onClose} aria-label="Close" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-[1.5px] border-[#383838] bg-[#FAFBF6] text-[#383838] transition-transform hover:-translate-y-0.5 active:translate-y-0 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-200">
+            <button onClick={onClose} aria-label="Close" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-[1.5px] border-[#383838] bg-white text-[#383838] transition-transform hover:-translate-y-0.5 active:translate-y-0 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-200">
               <X size={19} />
             </button>
           </div>

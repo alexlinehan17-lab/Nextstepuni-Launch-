@@ -85,7 +85,7 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
   // re-anchor position: fixed to the transformed wrapper.
   return createPortal(
     <nav
-      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-[#FAFBF6] dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
+      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-white dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
       style={{ paddingBottom: 'var(--sab, 0px)' }}
     >
       <div className="mx-auto flex h-16 max-w-md items-center justify-around px-1">

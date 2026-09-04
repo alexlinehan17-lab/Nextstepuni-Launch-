@@ -770,7 +770,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.96, y: 12 }}
         transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] as number[] }}
-        className="bg-[#FAFBF6] dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden"
+        className="bg-white dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[6px_6px_0_0_#1A1A1A] dark:shadow-[6px_6px_0_0_#3f3f46] max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden"
         onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
         {/* Header (fixed) */}

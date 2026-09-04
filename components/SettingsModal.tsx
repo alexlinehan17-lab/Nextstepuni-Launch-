@@ -101,11 +101,11 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             aria-modal="true"
             aria-labelledby="settings-dialog-title"
             tabIndex={-1}
-            className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
+            className="relative bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="sticky top-0 z-20 flex items-center justify-between border-b border-[#DDD8D2] bg-[#FAFBF6]/95 p-6 pb-4 backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/95">
+            <div className="sticky top-0 z-20 flex items-center justify-between border-b border-[#DDD8D2] bg-white/95 p-6 pb-4 backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/95">
               <h2 id="settings-dialog-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                 Settings
               </h2>

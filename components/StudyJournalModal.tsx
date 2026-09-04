@@ -79,7 +79,7 @@ const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, 
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
             transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-lg shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] flex flex-col"
+            className="relative bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-lg shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] flex flex-col"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
