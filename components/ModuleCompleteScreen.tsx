@@ -8,7 +8,7 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { BookOpen, Layers, Compass, ArrowRight, Star } from 'lucide-react';
-import Rua from './ui/Rua';
+import Puifin from './ui/Puifin';
 import { COLORS } from '../design/tokens';
 
 interface ModuleCompleteScreenProps {
@@ -44,7 +44,7 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
 
               <MotionDiv initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: d(2), duration: 0.6, type: 'spring', stiffness: 200, damping: 12 }} className="my-8 flex justify-center">
                 <div className="w-28 h-28 rounded-full flex items-end justify-center overflow-hidden" style={{ backgroundColor: '#6EE7B7', border: '3px solid #059669', boxShadow: '5px 5px 0px 0px #059669' }}>
-                  <Rua pose="cheer" size={92} />
+                  <Puifin pose="cheer" size={92} />
                 </div>
               </MotionDiv>
 
