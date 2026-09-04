@@ -11,7 +11,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { type AchievementCategory } from '../gamificationConfig';
-import { getAchievementsForCurriculum } from '../achievementData';
+import { getAchievementById, getAchievementsForCurriculum } from '../achievementData';
 import { type CurriculumLevel } from '../utils/authUtils';
 
 const ICON_MAP: Record<string, LucideIcon> = {
@@ -51,6 +51,25 @@ const BlobIcon: React.FC<{ category: AchievementCategory; Icon: LucideIcon; lock
       </svg>
       <div className="absolute inset-0 flex items-center justify-center">
         <Icon size={22} style={{ color: locked ? '#A8A29E' : palette.ink }} />
+      </div>
+    </div>
+  );
+};
+
+/** Small standalone badge for one achievement — used by the Training Hub's
+    "latest badge" row so the blob/palette/icon language stays in one file. */
+export const AchievementBadge: React.FC<{ achievementId: string; size?: number }> = ({ achievementId, size = 44 }) => {
+  const def = getAchievementById(achievementId);
+  if (!def) return null;
+  const palette = CATEGORY_PALETTE[def.category];
+  const Icon = ICON_MAP[def.icon] || Trophy;
+  return (
+    <div className="relative shrink-0" style={{ width: size, height: size }}>
+      <svg viewBox="0 0 64 64" className="absolute inset-0 w-full h-full" aria-hidden="true">
+        <path d={BLOB_PATH} fill={palette.blob} opacity={0.9} />
+      </svg>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <Icon size={Math.round(size * 0.42)} style={{ color: palette.ink }} />
       </div>
     </div>
   );
@@ -106,17 +125,19 @@ const AchievementGallery: React.FC<AchievementGalleryProps> = ({
         </div>
       )}
 
-      {/* Filter tabs */}
-      <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-1 px-1 scrollbar-none">
+      {/* Filter tabs — text with an ink underline, same register as the Atlas toolbar */}
+      <div className="flex gap-4 overflow-x-auto pb-1 -mx-1 px-1 scrollbar-none">
         {CATEGORY_TABS.map(tab => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`px-3 py-1.5 rounded-full text-[11px] font-semibold whitespace-nowrap transition-colors ${
+            aria-pressed={activeTab === tab.id}
+            className={`pb-1 text-[12px] font-semibold whitespace-nowrap transition-colors ${
               activeTab === tab.id
-                ? 'bg-[var(--accent-hex)] text-white'
-                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                ? 'text-[#1A1A1A] dark:text-white'
+                : 'text-[#A8A29E] hover:text-[#57534E] dark:text-zinc-500 dark:hover:text-zinc-300'
             }`}
+            style={{ boxShadow: activeTab === tab.id ? 'inset 0 -2px 0 0 currentColor' : 'none' }}
           >
             {tab.label}
           </button>

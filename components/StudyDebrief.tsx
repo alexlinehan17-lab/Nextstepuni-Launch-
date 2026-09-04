@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
@@ -64,16 +64,25 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
   const [confidenceBefore, setConfidenceBefore] = useState(3);
   const [confidenceAfter, setConfidenceAfter] = useState(3);
   const [whatWorked, setWhatWorked] = useState('');
+  // The saved entry is held for one screen so the session ends on a debrief
+  // moment (ring + confidence shift) rather than the modal vanishing mid-tap.
+  const [saved, setSaved] = useState<Omit<DebriefEntry, 'id' | 'date'> | null>(null);
+  const [ringIn, setRingIn] = useState(false);
 
-  const handleSubmit = () => {
+  useEffect(() => {
+    if (!saved) { setRingIn(false); return; }
+    const raf = requestAnimationFrame(() => setRingIn(true));
+    return () => cancelAnimationFrame(raf);
+  }, [saved]);
+
+  const buildEntry = (): Omit<DebriefEntry, 'id' | 'date'> => {
     // Build topics covered: include hardest topic + any additionally selected
     const cleanHardest = (hardestTopic === '__other__' ? '' : hardestTopic).trim();
     const allTopics = [...new Set([
       ...(cleanHardest && cleanHardest !== 'Not specified' ? [cleanHardest] : []),
       ...topicsCovered,
     ])];
-
-    onSubmit({
+    return {
       subject,
       sessionType,
       durationMinutes,
@@ -83,8 +92,14 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
       confidenceBefore,
       confidenceAfter,
       whatWorked: whatWorked.trim(),
-    });
+    };
+  };
+
+  const handleFinish = () => {
+    if (!saved) return;
+    onSubmit(saved);
     // Reset for next use
+    setSaved(null);
     setStep(0);
     setHardestTopic('');
     setTopicsCovered([]);
@@ -95,6 +110,79 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
   };
 
   if (!isOpen) return null;
+
+  if (saved) {
+    const pct = Math.max(0, Math.min(1, saved.confidenceAfter / 5));
+    const C = 2 * Math.PI * 50;
+    const covered = (saved.topicsCovered ?? []).filter(t => t !== saved.hardestTopic);
+    const shaky = saved.hardestTopic !== 'Not specified' ? saved.hardestTopic : '';
+    return (
+      <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+        <MotionDiv
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          className="w-full max-w-md overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-2xl dark:border-zinc-800 dark:bg-zinc-900"
+        >
+          <div className="px-6 pt-6 pb-2">
+            <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A0968D] dark:text-zinc-500">
+              Session complete · {saved.subject} · {saved.durationMinutes} min
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-6 px-6 py-5">
+            <div className="relative h-[116px] w-[116px] shrink-0">
+              <svg width="116" height="116" viewBox="0 0 116 116" className="-rotate-90">
+                <circle cx="58" cy="58" r="50" fill="none" stroke="#ECE8E3" strokeWidth="7" className="dark:stroke-zinc-700" />
+                <circle
+                  cx="58" cy="58" r="50" fill="none" strokeWidth="7" strokeLinecap="round"
+                  stroke="rgba(242,107,31,0.62)"
+                  strokeDasharray={C}
+                  strokeDashoffset={ringIn ? C * (1 - pct) : C}
+                  className="motion-reduce:transition-none"
+                  style={{ transition: 'stroke-dashoffset 900ms cubic-bezier(0.16, 1, 0.3, 1)' }}
+                />
+              </svg>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="font-apercu text-[22px] font-black tabular-nums leading-none text-[#1A1A1A] dark:text-white">{saved.confidenceAfter}/5</span>
+                <span className="mt-1 text-[9px] font-bold uppercase tracking-[0.14em] text-[#A0968D] dark:text-zinc-500">Confidence</span>
+              </div>
+            </div>
+            <div className="min-w-[180px] flex-1">
+              <p className="font-serif text-[19px] font-bold text-[#1A1A1A] dark:text-white">
+                Confidence {saved.confidenceBefore} <span className="text-[#F26B1F]">→</span> {saved.confidenceAfter}
+              </p>
+              <div className="mt-3 space-y-1.5 text-[12.5px] text-[#3A3530] dark:text-zinc-300">
+                {covered.length > 0 && (
+                  <p className="flex items-baseline gap-2">
+                    <span aria-hidden="true" className="h-[9px] w-[9px] shrink-0 self-center rounded-full bg-[#3A8D5F]" />
+                    <span><b className="font-bold text-[#1A1A1A] dark:text-white">Covered</b> — {covered.join(', ')}</span>
+                  </p>
+                )}
+                {shaky && (
+                  <p className="flex items-baseline gap-2">
+                    <span aria-hidden="true" className="h-[9px] w-[9px] shrink-0 self-center rounded-full border-[1.5px] border-[#D6D3D0] dark:border-zinc-500" />
+                    <span><b className="font-bold text-[#1A1A1A] dark:text-white">Still shaky</b> — {shaky}</span>
+                  </p>
+                )}
+                <p className="pt-1 text-[11.5px] text-[#A8A29E] dark:text-zinc-500">
+                  {saved.confidenceAfter > saved.confidenceBefore
+                    ? 'Feeling surer isn’t the same as remembering — test yourself on this in a day or two.'
+                    : 'Logged. Tomorrow’s plan can pick this up where you left it.'}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="px-6 pb-6">
+            <button
+              onClick={handleFinish}
+              className="w-full rounded-xl bg-[#1A1A1A] py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 dark:bg-white dark:text-zinc-900"
+            >
+              Done
+            </button>
+          </div>
+        </MotionDiv>
+      </div>
+    );
+  }
 
   const steps = [
     // Step 0: What was hardest?
@@ -346,7 +434,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
           </button>
           <div className="flex-1" />
           <button
-            onClick={isLastStep ? handleSubmit : () => setStep(step + 1)}
+            onClick={isLastStep ? () => setSaved(buildEntry()) : () => setStep(step + 1)}
             disabled={step === 1 && !strategy}
             className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-[#F26B1F] hover:bg-[#B54D14] shadow-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
           >

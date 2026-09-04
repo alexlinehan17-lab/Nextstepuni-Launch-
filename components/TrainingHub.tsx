@@ -16,7 +16,8 @@ import { type GamificationState, generateWeeklyGoals, getWeekNumber } from '../g
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { type StreakData } from '../hooks/useStreak';
 import { type NorthStar, type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../types';
-import AchievementGallery from './AchievementGallery';
+import AchievementGallery, { AchievementBadge } from './AchievementGallery';
+import { getAchievementById } from '../achievementData';
 import { type CourseData } from './Library';
 import { STRATEGY_REGISTRY } from '../utils/strategyRegistry';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
@@ -188,24 +189,44 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
           </div>
         </MotionDiv>
 
-        {/* Stat tiles — chunky-shadow + press feel. Not buttons (no nav)
-            but the tactile language makes them feel like part of the same
-            family as the year-bump CTA and onboarding pickers. */}
-        <MotionDiv {...stagger(1)} className="grid grid-cols-3 gap-3 mt-3">
-          {[
-            { value: streak.currentStreak, label: 'Day Streak' },
-            { value: totalPointsEarned.toLocaleString(), label: 'Total XP' },
-            { value: `${modulesCompleted}/${allCourses.length}`, label: 'Modules' },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="text-center py-4 rounded-xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] dark:hover:shadow-[6px_6px_0_0_#3f3f46] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] dark:active:shadow-[0px_0px_0_0_#3f3f46] transition-all duration-150 cursor-default"
-            >
-              <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '22px', fontWeight: 600, color: 'var(--text-primary)' }}>{stat.value}</p>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: 'var(--text-label)', textTransform: 'uppercase', marginTop: '2px' }}>{stat.label}</p>
-            </div>
-          ))}
+        {/* Stat record — one card, cells divided by hairlines rather than
+            three competing boxes; serif tabular numerals carry the weight. */}
+        <MotionDiv {...stagger(1)} className="mt-3 rounded-xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
+          <div className="grid grid-cols-3 py-4">
+            {[
+              { value: streak.currentStreak, label: 'Day Streak' },
+              { value: totalPointsEarned.toLocaleString(), label: 'Total XP' },
+              { value: `${modulesCompleted}/${allCourses.length}`, label: 'Modules' },
+            ].map((stat, i) => (
+              <div key={stat.label} className={`px-4 text-center ${i > 0 ? 'border-l border-[#E5E1DA] dark:border-zinc-700' : ''}`}>
+                <p className="tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", fontSize: '26px', fontWeight: 700, lineHeight: 1.1, color: 'var(--text-primary)' }}>{stat.value}</p>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 700, letterSpacing: '0.12em', color: 'var(--text-label)', textTransform: 'uppercase', marginTop: '3px' }}>{stat.label}</p>
+              </div>
+            ))}
+          </div>
         </MotionDiv>
+
+        {/* Latest badge — the most recent unlock surfaces here for a while
+            instead of living only inside the gallery. */}
+        {(() => {
+          const ts = gamificationState.achievementTimestamps ?? {};
+          const latest = [...unlockedAchievements].sort((a, b) => (ts[b] ?? 0) - (ts[a] ?? 0))[0];
+          const latestDef = latest ? getAchievementById(latest) : undefined;
+          if (!latest || !latestDef) return null;
+          const when = ts[latest]
+            ? new Date(ts[latest]).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })
+            : null;
+          return (
+            <MotionDiv {...stagger(1.25)} className="mt-3 flex items-center gap-3 rounded-xl bg-white px-4 py-3 dark:bg-zinc-900" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+              <AchievementBadge achievementId={latest} size={40} />
+              <div className="min-w-0 flex-1">
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', color: '#9e9186', textTransform: 'uppercase' }}>Latest badge</p>
+                <p className="truncate" style={{ fontFamily: "'Source Serif 4', serif", fontSize: '15px', fontWeight: 700, color: 'var(--text-primary)' }}>{latestDef.title}</p>
+              </div>
+              {when && <span className="shrink-0 text-[11px] font-semibold text-[#A8A29E] dark:text-zinc-500">Earned {when}</span>}
+            </MotionDiv>
+          );
+        })()}
       </div>
 
       {/* ── Content area ── */}

@@ -164,10 +164,10 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
       // Card stays white in dark mode (design system: all cards white) — the
       // inline ink text depends on it.
       className="rounded-2xl bg-white overflow-hidden"
-      style={{ border: '2px solid #1a1a1a' }}
+      style={{ border: '1.5px solid #383838' }}
     >
       {/* Header row */}
-      <div className="flex items-center gap-2.5 px-4 py-2.5" style={{ borderBottom: '2px solid #f0efec' }}>
+      <div className="flex items-center gap-2.5 px-4 py-2.5" style={{ borderBottom: '1px solid #eeebe6' }}>
         <span className="text-[19px] font-bold tabular-nums shrink-0" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
           {sibling.year}
         </span>
@@ -221,7 +221,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
 
       {/* Marking Lens — how the marks are given (scheme-grounded) */}
       {lens && (
-        <div style={{ borderTop: '2px solid #f0efec' }}>
+        <div style={{ borderTop: '1px solid #eeebe6' }}>
           <button
             onClick={() => setLensOpen(v => !v)}
             aria-expanded={lensOpen}
@@ -284,7 +284,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
       {/* Answer toggle */}
       {state.s === 'ready' && (
         canReveal ? (
-          <div style={{ borderTop: '2px solid #f0efec' }}>
+          <div style={{ borderTop: '1px solid #eeebe6' }}>
             <button
               onClick={() => setSchemeOpen(v => !v)}
               aria-expanded={schemeOpen}

@@ -760,6 +760,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     const recommendationStorageKey = `nextstepuni:launchpad-recommendation:${user?.uid ?? 'guest'}`;
     const [toolRecommendation, setToolRecommendation] = useState<ToolRecommendation | null>(null);
 
+    // Category identity carried by a tinted dot on each card — the same
+    // family of muted tints as the Atlas curriculum medallions.
+    const CATEGORY_DOT: Record<'understand' | 'practice' | 'plan' | 'track', string> = {
+        understand: '#33658A',
+        practice: '#1F5F3E',
+        plan: '#8A6B2D',
+        track: '#5B4A7E',
+    };
+
     const TOOL_CATEGORIES: Record<string, 'understand' | 'practice' | 'plan' | 'track'> = {
         'mark-bank': 'practice',
         'cao-simulator': 'understand',
@@ -1022,8 +1031,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                             )}
                                         </div>
 
-                                        {/* Category label */}
-                                        <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 sm:mb-1.5">
+                                        {/* Category label — the category reads as a small tinted dot
+                                            beside quiet ink type, never as coloured text or a band. */}
+                                        <p className="mb-1 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 sm:mb-1.5">
+                                            {!profilePending && !locked && CATEGORY_DOT[TOOL_CATEGORIES[tool.id]] && (
+                                                <span aria-hidden="true" className="inline-block h-[7px] w-[7px] shrink-0 rounded-full" style={{ backgroundColor: CATEGORY_DOT[TOOL_CATEGORIES[tool.id]] }} />
+                                            )}
                                             {profilePending ? 'Checking profile' : locked ? 'Needs Profile' : tool.tag}
                                         </p>
 

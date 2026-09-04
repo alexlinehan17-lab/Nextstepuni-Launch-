@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useCallback, useRef } from 'react';
 import { AnimatePresence, MotionDiv, useReducedMotion } from './Motion';
 import {
-  ArrowRight,
+  ArrowRight, Check,
   User, Home, PanelLeft, ChartNoAxesCombined, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Bell, MessageSquare, HelpCircle
 } from 'lucide-react';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
@@ -14,7 +14,6 @@ import ResumeCard from './ResumeCard';
 import { type CourseData } from './Library';
 import { type UserSettings } from '../types';
 import { toDateKey } from './subjectData';
-import { getSubjectHex } from '../utils/subjectColors';
 import { SectionCard } from './SectionCard';
 import { ModulesIcon, InnovationZoneIcon, MyProgressIcon, LearningPathsIcon, MyJourneyIcon } from './sectionIcons';
 import Avatar from './Avatar';
@@ -538,25 +537,46 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                     <p className="mt-1 text-xs text-[#50715D]">Your scheduled work is complete. Proper rest counts too.</p>
                   </div>
                 ) : (
-                  <div className="grid gap-2">
+                  /* Stepped rail — the day reads as a sequence: done, current, upcoming.
+                     One warm glyph per screen; the rail itself stays hairline-quiet. */
+                  <div className="relative">
+                    <span aria-hidden="true" className="absolute w-px bg-[#E5E1DA] dark:bg-zinc-700" style={{ left: 10.5, top: 18, bottom: 18 }} />
                     {todayBlocks.slice(0, 4).map((block, i) => {
                       const complete = todayCompletions.includes(`block-${i}`);
                       const nextIndex = todayBlocks.findIndex((_candidate, index) => !todayCompletions.includes(`block-${index}`));
                       const isNext = i === nextIndex;
                       return (
-                        <div
-                          key={i}
-                          className={`relative flex items-center gap-3 rounded-xl px-4 py-3 ${isNext ? 'bg-[#FFF1E7] border border-[#F26B1F]' : 'bg-[#FAF9F7] border border-transparent dark:bg-zinc-800'} ${complete ? 'opacity-55' : ''}`}
-                        >
-                          <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: getSubjectHex(block.subjectName) }} />
+                        <div key={i} className="relative flex items-center gap-3.5 py-2">
+                          <span
+                            aria-hidden="true"
+                            className={`relative z-[1] flex h-[22px] w-[22px] shrink-0 items-center justify-center rounded-full ${
+                              complete
+                                ? 'bg-[#3A8D5F]'
+                                : isNext
+                                  ? 'border-[1.5px] border-[#F26B1F] bg-white dark:bg-zinc-900'
+                                  : 'border-[1.5px] border-[#D6D3D0] bg-white dark:border-zinc-600 dark:bg-zinc-900'
+                            }`}
+                          >
+                            {complete && <Check size={12} strokeWidth={2.6} className="text-white" />}
+                            {isNext && <span className="h-[9px] w-[9px] rounded-full bg-[#F26B1F]" />}
+                          </span>
                           <div className="min-w-0 flex-1">
-                            <div className="flex items-center gap-2">
-                              <span className={`text-sm font-bold truncate text-[#1A1A1A] dark:text-white ${complete ? 'line-through' : ''}`}>{block.subjectName}</span>
-                              {isNext && <span className="text-[9px] font-bold uppercase tracking-wider text-[#C34E10]">Next</span>}
-                            </div>
-                            <p className="mt-0.5 text-[11px] text-[#78716C] dark:text-zinc-400">{sessionTypeLabel(block.sessionType)} · {block.durationMinutes} min</p>
+                            <span className={`block truncate text-sm ${
+                              complete
+                                ? 'font-semibold text-[#A8A29E] dark:text-zinc-500'
+                                : isNext
+                                  ? 'font-bold text-[#1A1A1A] dark:text-white'
+                                  : 'font-semibold text-[#57534E] dark:text-zinc-300'
+                            }`}>{block.subjectName}</span>
+                            <p className={`mt-0.5 text-[11px] ${complete ? 'text-[#C2BCB4] dark:text-zinc-600' : 'text-[#78716C] dark:text-zinc-400'}`}>
+                              {sessionTypeLabel(block.sessionType)} · {block.durationMinutes} min
+                            </p>
                           </div>
-                          <span className="text-[10px] font-semibold text-[#8D857E]">{complete ? 'Done' : `${i + 1}/${todayBlocks.length}`}</span>
+                          {isNext && onGoToStudy && (
+                            <button onClick={onGoToStudy} className="shrink-0 text-xs font-bold text-[#F26B1F] hover:underline">
+                              Begin →
+                            </button>
+                          )}
                         </div>
                       );
                     })}
@@ -613,68 +633,43 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                   streakCount = Math.max(streakCount, streak.currentStreak);
                 }
 
+                // The streak number is the identity; the month grid is the evidence —
+                // the same apricot-cell vocabulary as the Atlas year strips.
+                const monthLabel = today.toLocaleString('en-IE', { month: 'long' });
+                const daysInMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
+                const firstDow = (() => { const d = new Date(today.getFullYear(), today.getMonth(), 1).getDay(); return d === 0 ? 6 : d - 1; })();
+                const dayCells = Array.from({ length: daysInMonth }, (_, i) => {
+                  const date = new Date(today.getFullYear(), today.getMonth(), i + 1);
+                  const done = timetableCompletions?.[toDateKey(date)]?.length ?? 0;
+                  return { day: i + 1, done, isToday: i + 1 === today.getDate(), isFuture: i + 1 > today.getDate() };
+                });
+
                 return (
                   <div className="h-full">
-                    <div className="h-full flex items-center bg-white dark:bg-zinc-900 rounded-xl px-5 py-4 border-[1.5px] border-[#383838] dark:border-zinc-700" style={{ borderRadius: 14 }}>
-                      {/* Left: streak count */}
-                      <div className="flex flex-col items-center justify-center pr-5" style={{ minWidth: 88 }}>
-                        <p className="font-apercu font-semibold tabular-nums" style={{ fontSize: 22, color: COLORS.accent }}>{streakCount}</p>
-                        <p className="text-xs text-zinc-400 dark:text-zinc-500">current streak</p>
+                    <div className="h-full flex items-center gap-5 bg-white dark:bg-zinc-900 px-5 py-4 border-[1.5px] border-[#383838] dark:border-zinc-700" style={{ borderRadius: 14 }}>
+                      <div className="flex flex-col justify-center shrink-0" style={{ minWidth: 72 }}>
+                        <p className="font-apercu font-black tabular-nums leading-none text-[#1A1A1A] dark:text-white" style={{ fontSize: 44 }}>{streakCount}</p>
+                        <p className="mt-1.5 text-[10px] font-bold uppercase tracking-[0.16em] text-[#A0968D] dark:text-zinc-500">Day streak</p>
                       </div>
-
-                      {/* Divider */}
-                      <div className="w-px self-stretch bg-zinc-200 dark:bg-zinc-800" />
-
-                      {/* Right: 7 mini bar charts */}
-                      <div className="flex-1 flex justify-between pl-5" style={{ gap: 4 }}>
-                        {DAY_LABELS.map((day, i) => {
-                          const pts = weekPoints[i];
-                          const isToday = i === currentDayIdx;
-                          const isFuture = i > currentDayIdx;
-                          const fillPct = pts === 0 ? 0 : pts === 1 ? 25 : pts === 2 ? 50 : pts === 3 ? 75 : 100;
-
-                          return (
-                            <div key={i} className="flex flex-col items-center flex-1">
-                              {/* Bar container */}
-                              <div
-                                className={`w-full relative overflow-hidden rounded-md ${
-                                  isToday
-                                    ? 'border-[1.5px] border-[#F26B1F]'
-                                    : ''
-                                }`}
-                                style={{
-                                  height: 32,
-                                  backgroundColor: isFuture ? 'rgba(0,0,0,0.03)' : 'rgba(0,0,0,0.04)',
-                                  ...(isToday ? { animation: 'streak-pulse 2.5s ease-in-out infinite' } : {}),
-                                }}
-                              >
-                                {/* Fill bar */}
-                                {fillPct > 0 && (
-                                  <div
-                                    className="absolute bottom-0 left-0 right-0 rounded-md"
-                                    style={{
-                                      height: `${fillPct}%`,
-                                      backgroundColor: isToday ? 'rgba(242,107,31,0.7)' : COLORS.accent,
-                                    }}
-                                  />
-                                )}
-                              </div>
-                              {/* Day label */}
-                              <span
-                                className={`text-[11px] mt-1.5 ${
-                                  isToday
-                                    ? 'font-semibold'
-                                    : isFuture
-                                      ? 'text-zinc-300 dark:text-zinc-700'
-                                      : 'text-zinc-500 dark:text-zinc-500'
-                                }`}
-                                style={isToday ? { color: COLORS.accent } : undefined}
-                              >
-                                {day}
-                              </span>
-                            </div>
-                          );
-                        })}
+                      <div className="w-px self-stretch bg-[#EDEBE8] dark:bg-zinc-800" />
+                      <div className="min-w-0">
+                        <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-[#A8A29E] dark:text-zinc-500">{monthLabel}</p>
+                        <div className="grid grid-cols-7 gap-1" role="img" aria-label={`Days studied in ${monthLabel}: ${dayCells.filter(c => c.done > 0).length}`}>
+                          {Array.from({ length: firstDow }).map((_, i) => <span key={`pad-${i}`} className="h-3.5 w-3.5" />)}
+                          {dayCells.map(c => (
+                            <span
+                              key={c.day}
+                              className={`h-3.5 w-3.5 rounded-[4px] ${
+                                c.done === 0
+                                  ? c.isFuture
+                                    ? 'bg-[#F8F6F3] dark:bg-zinc-800/50'
+                                    : 'bg-[#F1EEE9] dark:bg-zinc-800'
+                                  : ''
+                              } ${c.isToday ? 'ring-[1.5px] ring-inset ring-[#1A1A1A] dark:ring-white' : ''}`}
+                              style={c.done > 0 ? { backgroundColor: c.done >= 3 ? 'rgba(242,107,31,0.72)' : 'rgba(242,107,31,0.45)' } : undefined}
+                            />
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -705,9 +700,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                   </div>
                   <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white">{questState.quest.title}</p>
                   <p className="text-[11px] mt-0.5 text-[#A8A29E] dark:text-zinc-500">{questState.quest.description}</p>
-                  <div className="mt-2 flex items-center gap-2">
-                    <div className="flex-1 h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700">
-                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: COLORS.accent }} />
+                  <div className="mt-2.5 flex items-center gap-2">
+                    <div className="flex-1 h-2.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700">
+                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: questState.isCompleted ? COLORS.accent : 'rgba(242,107,31,0.62)' }} />
                     </div>
                     <span className="text-[10px] font-bold tabular-nums text-[#A8A29E] dark:text-zinc-500">{questState.isCompleted ? 'Completed' : `${Math.min(questState.current, questState.quest.target)}/${questState.quest.target}`}</span>
                   </div>
