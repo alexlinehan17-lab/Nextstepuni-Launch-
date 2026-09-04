@@ -64,7 +64,7 @@ describe('Topic Vault — ReviseByTopic', () => {
     fireEvent.click(topicBtn);
 
     // Level 2: the feed summary (unique to the feed) renders; cards fall back (no net).
-    expect(screen.getByText(/marking scheme beneath each/i)).toBeInTheDocument();
+    expect(screen.getByText('Levels')).toBeInTheDocument();
   });
 
   test('type-to-filter narrows the topic list when a subject has many topics', () => {

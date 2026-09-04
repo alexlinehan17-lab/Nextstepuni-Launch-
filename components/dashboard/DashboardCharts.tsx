@@ -72,12 +72,45 @@ export const ActivityChart: React.FC<{
   const plotWidth = Math.max(1, width - margin.left - margin.right);
   const plotHeight = CHART_HEIGHT - margin.top - margin.bottom;
   const step = plotWidth / Math.max(1, buckets.length);
-  const barWidth = Math.max(3, Math.min(width < 420 ? 18 : 30, step * 0.62));
   const unit = metric === 'sessions' ? 'sessions' : 'minutes';
   const labelEvery = buckets.length > 20 ? (width < 480 ? 6 : 4) : (buckets.length > 10 && width < 480 ? 2 : 1);
 
   const yFor = (value: number) => margin.top + plotHeight - ((value / maxValue) * plotHeight);
   const gridValues = Array.from(new Set([0, Math.round(maxValue / 2), maxValue])).sort((a, b) => a - b);
+
+  // The gentle path (Gentler Streak's register): one smooth line with a soft
+  // flat fill beneath it, and a quiet 'steady' zone around the period mean —
+  // consistency is the thing the chart celebrates, not spikes.
+  const points = buckets.map((bucket, index) => ({
+    x: margin.left + (index * step) + (step / 2),
+    y: yFor(bucket[metric]),
+    v: bucket[metric],
+  }));
+  const smoothPath = (() => {
+    if (points.length === 0) return '';
+    if (points.length === 1) return `M ${points[0].x} ${points[0].y}`;
+    let d = `M ${points[0].x} ${points[0].y}`;
+    for (let i = 0; i < points.length - 1; i++) {
+      const p0 = points[Math.max(0, i - 1)];
+      const p1 = points[i];
+      const p2 = points[i + 1];
+      const p3 = points[Math.min(points.length - 1, i + 2)];
+      const c1x = p1.x + (p2.x - p0.x) / 6;
+      const c1y = p1.y + (p2.y - p0.y) / 6;
+      const c2x = p2.x - (p3.x - p1.x) / 6;
+      const c2y = p2.y - (p3.y - p1.y) / 6;
+      d += ` C ${c1x} ${c1y}, ${c2x} ${c2y}, ${p2.x} ${p2.y}`;
+    }
+    return d;
+  })();
+  const baseline = margin.top + plotHeight;
+  const areaPath = points.length > 1
+    ? `${smoothPath} L ${points[points.length - 1].x} ${baseline} L ${points[0].x} ${baseline} Z`
+    : '';
+  const activeValues = values.filter(value => value > 0);
+  const steadyMean = activeValues.length >= 3
+    ? activeValues.reduce((sum, value) => sum + value, 0) / activeValues.length
+    : null;
 
   return (
     <div ref={ref} className="relative w-full">
@@ -86,7 +119,7 @@ export const ActivityChart: React.FC<{
         height={CHART_HEIGHT}
         viewBox={`0 0 ${width} ${CHART_HEIGHT}`}
         role="img"
-        aria-label={`Study activity bar chart showing ${unit}`}
+        aria-label={`Study activity chart showing ${unit}`}
       >
         <title>Study activity</title>
         <desc>{hasData ? `${countWithUnit(values.reduce((sum, value) => sum + value, 0), unit)} in this period.` : `No ${unit} recorded in this period.`}</desc>
@@ -100,11 +133,27 @@ export const ActivityChart: React.FC<{
           );
         })}
 
+        {hasData && steadyMean !== null && (
+          <g aria-hidden="true">
+            <rect
+              x={margin.left}
+              y={yFor(Math.min(maxValue, steadyMean * 1.35))}
+              width={plotWidth}
+              height={Math.max(0, yFor(Math.max(0, steadyMean * 0.65)) - yFor(Math.min(maxValue, steadyMean * 1.35)))}
+              fill="rgba(58, 141, 95, 0.07)"
+            />
+            <text x={width - margin.right - 4} y={yFor(steadyMean * 1.35) + 12} textAnchor="end" fontSize="8.5" fontWeight="700" letterSpacing="1.5" fill="rgba(58, 141, 95, 0.75)">STEADY</text>
+          </g>
+        )}
+        {hasData && points.length > 1 && (
+          <g aria-hidden="true" pointerEvents="none">
+            <path d={areaPath} fill="rgba(242, 107, 31, 0.13)" />
+            <path d={smoothPath} fill="none" stroke="rgba(242, 107, 31, 0.8)" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
+          </g>
+        )}
+
         {buckets.map((bucket, index) => {
           const value = bucket[metric];
-          const x = margin.left + (index * step) + ((step - barWidth) / 2);
-          const y = yFor(value);
-          const barHeight = Math.max(value > 0 ? 2 : 0, margin.top + plotHeight - y);
           const labelVisible = index % labelEvery === 0 || index === buckets.length - 1;
           const isActive = activeIndex === index;
           return (
@@ -121,17 +170,18 @@ export const ActivityChart: React.FC<{
               className="outline-none"
             >
               <rect x={margin.left + (index * step)} y={margin.top} width={step} height={plotHeight + 24} fill="transparent" />
-              <rect
-                x={x}
-                y={margin.top + plotHeight - barHeight}
-                width={barWidth}
-                height={barHeight}
-                rx={Math.min(4, barWidth / 3)}
-                fill={isActive ? 'var(--dashboard-series-2)' : 'var(--accent-hex)'}
-                opacity={value === 0 ? 0 : isActive ? 1 : 0.88}
-              />
+              {value > 0 && (
+                <circle
+                  cx={margin.left + (index * step) + (step / 2)}
+                  cy={yFor(value)}
+                  r={isActive ? 5 : index === buckets.length - 1 ? 4 : 3}
+                  fill={isActive ? 'var(--dashboard-series-2)' : 'var(--accent-hex)'}
+                  stroke="var(--surface-paper)"
+                  strokeWidth="1.5"
+                />
+              )}
               {labelVisible && (
-                <text x={x + (barWidth / 2)} y={CHART_HEIGHT - 13} textAnchor="middle" fontSize="11" fill="var(--ink-muted)">
+                <text x={margin.left + (index * step) + (step / 2)} y={CHART_HEIGHT - 13} textAnchor="middle" fontSize="11" fill="var(--ink-muted)">
                   {bucket.label}
                 </text>
               )}
