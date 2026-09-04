@@ -35,6 +35,19 @@ import { ADMIN_EMAIL } from "./adminIdentity";
 const GC_ADDRESS = /^gc-[a-z0-9-]{1,40}@nextstep\.app$/;
 
 /**
+ * Staff-room logins follow the counsellor pattern exactly: one shared
+ * per-school account at a derived address with no mailbox behind it,
+ * provisioned by the administrator and handed to the school. Added when the
+ * per-teacher invitation-code flow was retired (owner decision 2026-09-04) —
+ * five fields, an email-verification round trip and a one-use code per
+ * teacher was the single biggest onboarding stall in the product.
+ */
+const STAFF_ADDRESS = /^staff-[a-z0-9-]{1,40}@nextstep\.app$/;
+
+/** Which shared school login an address names. */
+export type SchoolLoginKind = "gc" | "staff";
+
+/**
  * Accounts that must never be resettable through this path.
  *
  * The live administrator, and the retired admin@nextstep.app address whose
@@ -62,6 +75,25 @@ export function isResettableGcAddress(email: unknown): boolean {
 export function gcAddressToReset(email: unknown): string | null {
   if (!isResettableGcAddress(email)) return null;
   return (email as string).trim().toLowerCase();
+}
+
+/**
+ * The school login an address names, or null for anything this path must
+ * never touch. Same fail-closed posture as isResettableGcAddress: exact
+ * pattern, case-folded but never punctuation-folded, and the administrator
+ * accounts are excluded before the pattern is even consulted.
+ */
+export function schoolLoginToReset(
+  email: unknown,
+): { address: string; kind: SchoolLoginKind; schoolId: string } | null {
+  if (typeof email !== "string") return null;
+  const address = email.trim().toLowerCase();
+  if (NEVER_RESETTABLE.includes(address)) return null;
+  const kind: SchoolLoginKind | null =
+    GC_ADDRESS.test(address) ? "gc" : STAFF_ADDRESS.test(address) ? "staff" : null;
+  if (!kind) return null;
+  const schoolId = address.slice(kind.length + 1, address.indexOf("@"));
+  return { address, kind, schoolId };
 }
 
 /**

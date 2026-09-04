@@ -9,7 +9,6 @@ import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
-import { endStaffProvisioning, isStaffProvisioning } from '../utils/staffProvisioning';
 import {
   isRegistrationProvisioning,
   registrationHoldRemainingMs,
@@ -377,8 +376,6 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   // Guidance counsellors AND teaching staff both get the Staff Dashboard
   // (full parity — owner decision 2026-07-16).
   if (isSchoolStaff(user.role) && user.school) {
-    // Provisioning resolved — release the hold set during the staff claim.
-    endStaffProvisioning();
     return <Suspense fallback={<LoadingSpinner />}><GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} gcName={user.name} gcUid={user.uid} role={user.role} /></Suspense>;
   }
 
@@ -391,14 +388,6 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   // flash because Onboarding renders on the same render pass as the
   // user/needsOnboarding being set.
   if (needsOnboarding) {
-    // A teacher redeeming a staff code is signed in BEFORE claimStaffAccess has
-    // granted them role:'staff', and until it does they look exactly like a
-    // student with no profile. Without this they were dropped into student
-    // onboarding for the 5–15s the claim takes, and could complete it —
-    // writing a subjectProfile onto a staff account. Hold the loading state
-    // instead; the flow reloads into the Staff Dashboard when it resolves, and
-    // the marker self-expires so a failed attempt cannot strand a real student.
-    if (isStaffProvisioning()) return <LoadingSpinner />;
     // A student mid-registration never reaches here — the gate above keeps
     // LoginPage mounted for the whole window in which the rollback can still
     // call deleteUser() on their live account. Left as a note rather than a
