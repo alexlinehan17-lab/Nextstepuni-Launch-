@@ -14,8 +14,7 @@ import {
   SCHOOL_NAMES,
   buildPassword,
   checkSuppliedPassword,
-  gcAddressToReset,
-  schoolIdFromGcAddress,
+  schoolLoginToReset,
 } from "./gcPasswordPolicy";
 import { syncAuthorizationClaims } from "./authClaims";
 import { CALLABLE_OPTIONS, assertSensitiveAuth, isVerifiedAdminToken } from "./security";
@@ -23,10 +22,11 @@ import { CALLABLE_OPTIONS, assertSensitiveAuth, isVerifiedAdminToken } from "./s
 /**
  * adminResetGcPassword
  *
- * Set a new password for a guidance-counsellor login and return it once to the
+ * Set a new password for a shared school login (guidance counsellor or staff
+ * room) and return it once to the
  * administrator, who passes it to the school.
  *
- * Needed because GC logins live at derived addresses (gc-{schoolId}@nextstep.app)
+ * Needed because these logins live at derived addresses ({gc|staff}-{schoolId}@nextstep.app)
  * whose mailboxes do not exist, so the console's emailed reset link goes
  * nowhere and the console has no way to set a password directly.
  *
@@ -34,8 +34,8 @@ import { CALLABLE_OPTIONS, assertSensitiveAuth, isVerifiedAdminToken } from "./s
  * limits are enforced server-side and repeated in ./gcPasswordPolicy:
  *
  *   • caller must be the administrator (functions/src/adminIdentity.ts)
- *   • target must be a gc-*@nextstep.app address — never a student, never a
- *     teacher, never the admin account itself
+ *   • target must be a gc-* or staff-*@nextstep.app address — never a
+ *     student's own account, never the admin account itself
  *
  * Every reset is written to gcPasswordResets/{id}, which no client can read
  * (default-deny), so there is a record of who reset which login and when. The
@@ -48,26 +48,29 @@ export const adminResetGcPassword = onCall(CALLABLE_OPTIONS, async (request) => 
   // The one caller allowed. Checked against the token, not a Firestore field,
   // so it cannot be granted by writing a document.
   if (!isVerifiedAdminToken(request.auth.token)) {
-    throw new HttpsError("permission-denied", "Only the administrator can reset a counsellor login.");
+    throw new HttpsError("permission-denied", "Only the administrator can reset a school login.");
   }
   await assertSensitiveAuth(request.auth);
 
   const { email, password: supplied, adoptExisting } = request.data as {
     email?: string; password?: string; adoptExisting?: boolean;
   };
-  const target = gcAddressToReset(email);
-  if (!target) {
+  const login = schoolLoginToReset(email);
+  if (!login) {
     throw new HttpsError(
       "invalid-argument",
-      "This can only reset a guidance-counsellor login (gc-…@nextstep.app).",
+      "This can only reset a school login (gc-… or staff-…@nextstep.app).",
     );
   }
+  const { address: target, kind, schoolId } = login;
 
-  // The address pattern alone is not enough. gc-{anything}@nextstep.app matches
-  // the regex, so without this a reset could provision role:'gc' for a school
-  // that does not exist — or, worse, for an address an outsider had registered.
-  const schoolId = schoolIdFromGcAddress(target);
-  if (!schoolId || !(schoolId in SCHOOL_NAMES)) {
+  // The address pattern alone is not enough. {kind}-{anything}@nextstep.app
+  // matches the regex, so without this a reset could provision a role for a
+  // school that does not exist — or, worse, for an address an outsider had
+  // registered.
+  // Object.hasOwn, not `in`: "constructor" is an all-lowercase prototype key
+  // that would otherwise pass this gate for a school that does not exist.
+  if (!Object.hasOwn(SCHOOL_NAMES, schoolId)) {
     throw new HttpsError("invalid-argument", "That is not one of this platform's schools.");
   }
 
@@ -91,7 +94,11 @@ export const adminResetGcPassword = onCall(CALLABLE_OPTIONS, async (request) => 
   // or gcAccounts/{schoolId} records that we provisioned it before. An account
   // that exists but is not on record is adopted ONLY when the administrator
   // confirms it explicitly, having been shown when it was created.
-  const registryRef = db.collection("gcAccounts").doc(schoolId);
+  // Separate registries per kind: gcAccounts predates staff logins and its
+  // existing records must keep matching the counsellor accounts they describe.
+  const registryRef = db
+    .collection(kind === "gc" ? "gcAccounts" : "staffLoginAccounts")
+    .doc(schoolId);
   const recordedUid = (await registryRef.get()).data()?.uid as string | undefined;
 
   // getUserByEmail throws when there is no such account; that is the
@@ -207,7 +214,7 @@ export const adminResetGcPassword = onCall(CALLABLE_OPTIONS, async (request) => 
     const userRef = db.collection("users").doc(uid);
     const existingDoc = (await userRef.get()).data() || {};
     const patch: Record<string, unknown> = {
-      role: "gc",
+      role: kind,
       school: schoolId,
       // Firestore does not natively check revoked refresh tokens. Its rules
       // compare auth_time with this cutoff, so already-issued ID tokens are
@@ -215,13 +222,15 @@ export const adminResetGcPassword = onCall(CALLABLE_OPTIONS, async (request) => 
       sessionValidAfterSeconds,
     };
     if (typeof existingDoc.name !== "string" || existingDoc.name.trim() === "") {
-      patch.name = `${SCHOOL_NAMES[schoolId]} Guidance`;
+      patch.name = kind === "gc"
+        ? `${SCHOOL_NAMES[schoolId]} Guidance`
+        : `${SCHOOL_NAMES[schoolId]} Staff Room`;
     }
     await userRef.set(patch, { merge: true });
     // Claims support app routing; Firestore staff access is resolved from the
     // current server-managed user document so demotion takes effect at once.
-    await syncAuthorizationClaims(uid, { role: "gc", school: schoolId });
-    logger.info(`adminResetGcPassword: provisioned ${target} as gc for "${schoolId}"`);
+    await syncAuthorizationClaims(uid, { role: kind, school: schoolId });
+    logger.info(`adminResetGcPassword: provisioned ${target} as ${kind} for "${schoolId}"`);
   }
 
   // Audit trail. Client-unreadable (default-deny covers this collection), and
@@ -229,6 +238,7 @@ export const adminResetGcPassword = onCall(CALLABLE_OPTIONS, async (request) => 
   await db.collection("gcPasswordResets").add({
     targetEmail: target,
     targetUid: uid,
+    kind,
     resetBy: request.auth.uid,
     passwordGenerated: generated,
     resetAt: FieldValue.serverTimestamp(),

@@ -8,8 +8,10 @@
  *
  * ─── THE RACE (2026-08-27) ─────────────────────────────────────────────────
  *
- * This is the student twin of utils/staffProvisioning.ts, and it is the same
- * shape of bug. handleRegisterSubmit calls createUserWithEmailAndPassword,
+ * (The staff twin of this file, utils/staffProvisioning.ts, was retired with
+ * the per-teacher claim flow on 2026-09-04 — staff accounts are provisioned
+ * server-side before first sign-in now, so no staff race exists.)
+ * handleRegisterSubmit calls createUserWithEmailAndPassword,
  * which signs the student in immediately. At that instant:
  *
  *   • users/{uid} does not exist yet, so AuthContext takes its no-user-doc

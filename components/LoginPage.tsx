@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
-import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3, ChevronRight, X } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3, ChevronRight } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
@@ -20,7 +20,6 @@ import { awaitWriteOrTimeout, saveInBackground } from '../utils/firestoreWrite';
 import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
 import { isReservedEmail, isVerifiedAdminSession } from '../utils/adminIdentity';
-import { beginStaffProvisioning, endStaffProvisioning } from '../utils/staffProvisioning';
 import {
   beginRegistrationProvisioning,
   endRegistrationProvisioning,
@@ -33,7 +32,6 @@ import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 import Avatar from './Avatar';
-import { useModal } from '../hooks/useModal';
 
 // Google Sign-In uses signInWithPopup, which has no real popup to open inside
 // Capacitor's webview on EITHER platform. Web only, until a native Google plugin
@@ -84,7 +82,6 @@ const VIEW_DEPTH: Record<string, number> = {
   login: 1,
   register: 1,
   gc: 1,
-  staff: 1,
   forgot: 2,
 };
 
@@ -303,7 +300,7 @@ async function writeUserDoc(
 
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Top-level mode ──
-  const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'staff' | 'forgot'>('welcome');
+  const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'forgot'>('welcome');
 
   // Boot the join-code function while the student is still typing.
   //
@@ -338,7 +335,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [school, setSchool] = useState('');
   const [joinCode, setJoinCode] = useState('');
   const [gcSchool, setGcSchool] = useState('');
-  const [staffCode, setStaffCode] = useState('');
+  // One school door, two shared logins: the counsellor's and the staff room's.
+  const [schoolRole, setSchoolRole] = useState<'gc' | 'staff'>('gc');
   const [avatar, setAvatar] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   // A failed registration deletes the account it just created, which signs the
@@ -357,10 +355,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // before an account is created; `legalDoc` controls the reachable policy modal.
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
-  const [schoolAccessOpen, setSchoolAccessOpen] = useState(false);
-  const schoolAccessRef = useRef<HTMLDivElement>(null);
   const authViewRef = useRef<HTMLDivElement>(null);
-  useModal(schoolAccessOpen, () => setSchoolAccessOpen(false), schoolAccessRef);
 
   // Direction tracking for view transitions. Computed synchronously on
   // each render so AnimatePresence sees the correct direction the moment
@@ -414,7 +409,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   const resetForm = () => {
     setEmail(''); setPassword(''); setName(''); setSchool(''); setJoinCode('');
-    setGcSchool(''); setStaffCode(''); setAvatar(''); setError('');
+    setGcSchool(''); setSchoolRole('gc'); setAvatar(''); setError('');
     setShowPassword(false); setRegisterStep(1); setResetSent(false);
     setResendCountdown(0); setAgreedToTerms(false);
   };
@@ -604,12 +599,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setIsLoading(false);
   };
 
-  // ── GC Login handler ──
+  // ── School login handler (guidance counsellor or staff room) ──
   const handleGCLogin = async () => {
     if (!gcSchool || !password.trim()) { setError('Please select your school and enter your password.'); return; }
     setIsLoading(true); setError('');
     try {
-      await signInWithEmailAndPassword(auth, `gc-${gcSchool}@nextstep.app`, password);
+      await signInWithEmailAndPassword(auth, `${schoolRole}-${gcSchool}@nextstep.app`, password);
     } catch (err: any) {
       // Surface a more specific message so we know whether the GC account is
       // missing entirely vs. wrong password vs. network issue.
@@ -618,7 +613,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // public, so a "no account for this school" vs "wrong password" split
       // would let anyone enumerate which schools have a provisioned GC account
       // to target. (Security review 2026-07-16, MEDIUM — account enumeration.)
-      console.error('GC login failed:', err.code, err.message);
+      console.error('School login failed:', err.code, err.message);
       if (err.code === 'auth/network-request-failed') {
         setError('Network error. Check your connection and try again.');
       } else {
@@ -626,91 +621,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       }
     }
     setIsLoading(false);
-  };
-
-  // ── Staff access handler ──
-  // A teacher redeems their school's staff code to gain dashboard access.
-  // Signs in an existing account or creates one, then calls the
-  // claimStaffAccess Cloud Function, which verifies the code SERVER-SIDE and
-  // sets role:'staff' (clients can't self-assign role). See
-  // compliance/STAFF_DASHBOARD_PLAN.md.
-  const handleStaffAccess = async () => {
-    if (!school) { setError('Please select your school.'); return; }
-    if (!name.trim()) { setError('Please enter your name.'); return; }
-    const normalisedEmail = email.trim().toLowerCase();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalisedEmail)) { setError('Please enter a valid email address.'); return; }
-    const staffPasswordError = passwordLengthError(password);
-    if (staffPasswordError) { setError(staffPasswordError); return; }
-    if (!staffCode.trim()) { setError('Please enter your staff access code.'); return; }
-    if (isReservedEmail(normalisedEmail)) { setError('This email is reserved.'); return; }
-    setIsLoading(true); setError('');
-    // Creating the account below signs the teacher in immediately, but they are
-    // not known to be staff until claimStaffAccess returns. Hold the app on its
-    // loading state for that window so AppRouter cannot mistake them for a
-    // student and drop them into student onboarding. See utils/staffProvisioning.
-    beginStaffProvisioning();
-    try {
-      // Sign in if the teacher already has an account; otherwise create one.
-      let uid: string;
-      try {
-        const cred = await signInWithEmailAndPassword(auth, normalisedEmail, password);
-        uid = cred.user.uid;
-      } catch {
-        const cred = await createUserWithEmailAndPassword(auth, normalisedEmail, password);
-        uid = cred.user.uid;
-        await updateProfile(cred.user, { displayName: name.trim() });
-      }
-      // Staff access exposes school-wide student records, so the callable
-      // requires a verified mailbox. A brand-new Firebase account cannot be
-      // verified in the same request: send the link, leave the invitation
-      // unconsumed, and end this unprivileged session so AppRouter cannot drop
-      // the teacher into student onboarding while they check their email.
-      const staffUser = auth.currentUser;
-      if (!staffUser) throw new Error('The staff sign-in did not complete.');
-      if (staffUser.emailVerified !== true) {
-        try {
-          await sendEmailVerification(staffUser);
-        } finally {
-          await signOut(auth).catch(() => {});
-        }
-        endStaffProvisioning();
-        setError('Check your email and verify this address, then return here with the same details and staff code.');
-        setIsLoading(false);
-        return;
-      }
-      // Ensure a minimal user doc exists. `role` AND `school` are set
-      // server-side by claimStaffAccess (clients can't write either), so the
-      // client write carries neither.
-      const selectedAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
-      await writeUserDoc(setDoc(doc(db, 'users', uid), { name: name.trim(), avatar: selectedAvatar }, { merge: true }), 'LoginPage.staffAccessUserDoc');
-      // Redeem the code — server verifies + grants role:'staff' and sets school.
-      const claimFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStaffAccess');
-      await claimFn({ school, code: staffCode.trim() });
-      await auth.currentUser?.getIdToken(true);
-      // Reload so AuthContext re-reads role:'staff' and routes to the Staff
-      // Dashboard. The marker is cleared by AppRouter once the staff role is
-      // visible, so it survives this reload.
-      window.location.reload();
-    } catch (err: any) {
-      // Provisioning failed, so release the hold — otherwise a teacher who
-      // mistyped their code would sit on a spinner instead of seeing why.
-      endStaffProvisioning();
-      const msg = String(err?.message || '');
-      const code = String(err?.code || '');
-      if (/staff code is not correct/i.test(msg)) {
-        setError('That staff code is not correct. Check with your school.');
-      } else if (/No staff access is set up/i.test(msg)) {
-        setError("Your school hasn't set up staff access yet. Ask your guidance counsellor to generate a code.");
-      } else if (/wrong-password|invalid-credential|invalid-login/.test(code)) {
-        setError('That email already has an account, but the password is wrong.');
-      } else if (/email-already-in-use/.test(code)) {
-        setError('That email already has an account. Enter its password to continue.');
-      } else {
-        console.error('Staff access failed:', err);
-        setError('Could not verify staff access. Try again.');
-      }
-      setIsLoading(false);
-    }
   };
 
   // ── Register step validation ──
@@ -799,9 +709,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         updateProfile(createdUser, { displayName: name.trim() }),
         joinFn({ school, code: joinCode.trim() }),
       ]);
-      // No getIdToken(true) here, deliberately. It was copied from the staff
-      // path, where claimStaffAccess DOES set role/school custom claims and the
-      // token genuinely must be refreshed to see them. claimStudentSchool sets
+      // No getIdToken(true) here, deliberately. It was copied from the old
+      // teacher-claim path, where the claim callable DID set role/school custom
+      // claims and the token genuinely had to refresh. claimStudentSchool sets
       // no claim at all — syncAuthorizationClaims mirrors role and school into a
       // token only for 'gc' and 'staff', and explicitly deletes both for a
       // student, because student tenancy is resolved from the live user document
@@ -913,7 +823,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           // reap -- a dropped connection causes both. Recovery from the router
           // hold depends on an auth-state change, and a swallowed rejection
           // produces none, which would leave the student on a spinner with no
-          // way out. Sign out instead: same escape the staff flow uses above.
+          // way out. Sign out instead: same escape the retired staff flow used.
           await signOut(auth).catch(() => {});
         }
       }
@@ -1117,7 +1027,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <div className="mt-4 border-t border-[var(--outline-soft)] pt-2">
                     <button
                       type="button"
-                      onClick={() => setSchoolAccessOpen(true)}
+                      onClick={() => { resetForm(); setView('gc'); }}
                       className="flex min-h-11 w-full items-center gap-3 rounded-xl px-1 text-left text-sm font-semibold text-[var(--ink-secondary)]"
                     >
                       <School size={17} strokeWidth={1.7} aria-hidden="true" />
@@ -1164,10 +1074,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <div className="h-px flex-1" style={{ backgroundColor: '#d0cdc8' }} />
                 </div>
                 <button onClick={() => { resetForm(); setView('gc'); }} className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border-2 py-3 text-sm font-medium transition-all" style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}>
-                  <GraduationCap size={16} /> Sign in as Guidance Counsellor
-                </button>
-                <button onClick={() => { resetForm(); setView('staff'); }} className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border-2 py-3 text-sm font-medium transition-all" style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}>
-                  <KeyRound size={16} /> Teacher / staff access
+                  <GraduationCap size={16} /> School sign-in — counsellors &amp; staff
                 </button>
               </div>
             </>
@@ -1253,9 +1160,26 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <button type="button" onClick={() => setView('welcome')} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
                 <ArrowLeft size={14} /> Back
               </button>
-              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Guidance Counsellor</h2>
-              <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Select your school and enter your password.</p>
+              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>School sign-in</h2>
+              <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Select your school, choose your dashboard, and enter the password your school was given.</p>
               <form onSubmit={e => { e.preventDefault(); handleGCLogin(); }} className="space-y-4">
+                <div role="radiogroup" aria-label="Which dashboard" className="grid grid-cols-2 gap-2">
+                  {([['gc', 'Guidance Counsellor'], ['staff', 'Staff room']] as const).map(([kind, label]) => (
+                    <button
+                      key={kind}
+                      type="button"
+                      role="radio"
+                      aria-checked={schoolRole === kind}
+                      onClick={() => { setSchoolRole(kind); setError(''); }}
+                      className="rounded-xl border-2 py-2.5 text-sm font-semibold transition-all"
+                      style={schoolRole === kind
+                        ? { borderColor: '#F26B1F', color: '#F26B1F', backgroundColor: 'rgba(242,107,31,0.06)' }
+                        : { borderColor: '#d0cdc8', color: '#7a7068', backgroundColor: 'white' }}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
                 <div>
                   <label htmlFor="gc-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
                   <div className="relative">
@@ -1278,57 +1202,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                 <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
                   {isLoading ? 'Signing in...' : 'Sign In'}
-                </MotionButton>
-              </form>
-            </>
-          )}
-
-          {/* ── STAFF / TEACHER ACCESS ──────────────────────── */}
-          {view === 'staff' && (
-            <>
-              <button type="button" onClick={() => setView('welcome')} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
-                <ArrowLeft size={14} /> Back
-              </button>
-              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Teacher / staff access</h2>
-              <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Enter your details and the staff access code from your school. New to NextStepUni? This creates your staff account. Already have an account? Use the same email and password.</p>
-              <form onSubmit={e => { e.preventDefault(); handleStaffAccess(); }} className="space-y-4">
-                <div>
-                  <label htmlFor="staff-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your name</label>
-                  <input id="staff-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="Jane Murphy" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="name" />
-                </div>
-                <div>
-                  <label htmlFor="staff-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
-                  <div className="relative">
-                    <select id="staff-school" value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
-                      <option value="" disabled>Select your school</option>
-                      {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
-                    </select>
-                    <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="staff-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                  <input id="staff-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@school.ie" className={inputClass} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
-                </div>
-                <div>
-                  <label htmlFor="staff-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
-                  <div className="relative">
-                    <input id="staff-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder={`At least ${MIN_PASSWORD_LENGTH} characters`} minLength={MIN_PASSWORD_LENGTH} maxLength={MAX_PASSWORD_LENGTH} className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className={passwordToggleClass} style={{ color: '#9e9186' }}>
-                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                    </button>
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="staff-code" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Staff access code</label>
-                  <div className="relative">
-                    <input id="staff-code" type="text" value={staffCode} onChange={e => { setStaffCode(e.target.value); setError(''); }} placeholder="Code from your school" className={`${inputClass} pr-10`} autoCapitalize="characters" autoCorrect="off" spellCheck={false} />
-                    <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
-                  </div>
-                </div>
-                <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-                  {isLoading ? 'Verifying...' : 'Get staff access'}
                 </MotionButton>
               </form>
             </>
@@ -1568,84 +1441,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
       </LoginCard>
 
-      <AnimatePresence>
-        {schoolAccessOpen && (
-          <>
-            <MotionDiv
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-0 z-[110] bg-black/45 backdrop-blur-[2px] md:hidden"
-              onClick={() => setSchoolAccessOpen(false)}
-              aria-hidden="true"
-            />
-            <MotionDiv
-              initial={{ y: '100%' }}
-              animate={{ y: 0 }}
-              exit={{ y: '100%' }}
-              transition={{ duration: 0.32, ease: SLIDE_EASE }}
-              className="theme-compat pointer-events-none fixed inset-0 z-[111] flex items-end md:hidden"
-            >
-              <div
-                ref={schoolAccessRef}
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="school-access-title"
-                className="pointer-events-auto w-full rounded-t-[28px] border-t-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] px-5 pt-5 shadow-2xl"
-                style={{ paddingBottom: 'calc(20px + var(--sab, 0px))' }}
-              >
-                <div className="mb-5 flex items-start justify-between gap-4">
-                  <div>
-                    <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--accent-hex)]">For your school</p>
-                    <h2 id="school-access-title" className="font-serif text-2xl font-semibold tracking-tight text-[var(--ink-primary)]">School access</h2>
-                    <p className="mt-1 text-sm text-[var(--ink-muted)]">Choose the dashboard you use.</p>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => setSchoolAccessOpen(false)}
-                    aria-label="Close school access"
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[var(--outline-soft)] text-[var(--ink-muted)]"
-                  >
-                    <X size={18} aria-hidden="true" />
-                  </button>
-                </div>
-
-                <div className="overflow-hidden rounded-2xl border border-[var(--outline-soft)]">
-                  <button
-                    type="button"
-                    onClick={() => { setSchoolAccessOpen(false); resetForm(); setView('gc'); }}
-                    className="flex min-h-[68px] w-full items-center gap-3 border-b border-[var(--outline-soft)] px-4 text-left"
-                  >
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[var(--outline-soft)] text-[var(--accent-hex)]">
-                      <GraduationCap size={19} aria-hidden="true" />
-                    </span>
-                    <span className="min-w-0 flex-1">
-                      <span className="block text-sm font-bold text-[var(--ink-primary)]">Guidance counsellor</span>
-                      <span className="mt-0.5 block text-xs text-[var(--ink-muted)]">Open your school dashboard</span>
-                    </span>
-                    <ChevronRight size={18} className="text-[var(--ink-muted)]" aria-hidden="true" />
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => { setSchoolAccessOpen(false); resetForm(); setView('staff'); }}
-                    className="flex min-h-[68px] w-full items-center gap-3 px-4 text-left"
-                  >
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[var(--outline-soft)] text-[var(--accent-hex)]">
-                      <KeyRound size={18} aria-hidden="true" />
-                    </span>
-                    <span className="min-w-0 flex-1">
-                      <span className="block text-sm font-bold text-[var(--ink-primary)]">Teacher or staff</span>
-                      <span className="mt-0.5 block text-xs text-[var(--ink-muted)]">Sign in or redeem an access code</span>
-                    </span>
-                    <ChevronRight size={18} className="text-[var(--ink-muted)]" aria-hidden="true" />
-                  </button>
-                </div>
-              </div>
-            </MotionDiv>
-          </>
-        )}
-      </AnimatePresence>
     </>
   );
 };

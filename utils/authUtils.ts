@@ -130,8 +130,8 @@ export type SessionUser = {
  * They have full parity on the Staff Dashboard (owner decision 2026-07-16;
  * see compliance/STAFF_DASHBOARD_PLAN.md), so every place that used to branch
  * on `role === 'gc'` for dashboard access should use this instead. `staff`
- * accounts are provisioned only via the `claimStaffAccess` Cloud Function
- * (server-side, per-school code), never self-assigned.
+ * accounts are provisioned only server-side — adminResetGcPassword seeds
+ * role and school for both shared logins — never self-assigned.
  */
 export function isSchoolStaff(role?: string | null): boolean {
   return role === 'gc' || role === 'staff';

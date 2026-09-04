@@ -44,6 +44,8 @@ export const ADMIN_EMAIL = 'nextstepuniinfo@gmail.com';
  * are provisioned, never self-registered.
  */
 const RESERVED_GC_PATTERN = /^gc-.*@nextstep\.app$/;
+/** Staff-room logins are provisioned the same way, so the same reservation applies. */
+const RESERVED_STAFF_PATTERN = /^staff-.*@nextstep\.app$/;
 const RETIRED_ADMIN_EMAIL = 'admin@nextstep.app';
 
 /** True if this is the administrator. Case-insensitive; addresses are not. */
@@ -70,5 +72,6 @@ export function isReservedEmail(email: string | null | undefined): boolean {
   const normalised = email.trim().toLowerCase();
   return normalised === ADMIN_EMAIL
     || normalised === RETIRED_ADMIN_EMAIL
-    || RESERVED_GC_PATTERN.test(normalised);
+    || RESERVED_GC_PATTERN.test(normalised)
+    || RESERVED_STAFF_PATTERN.test(normalised);
 }
