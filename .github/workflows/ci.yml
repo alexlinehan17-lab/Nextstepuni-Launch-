@@ -56,7 +56,12 @@ jobs:
         working-directory: android
 
       - name: Full dependency audit
-        run: npm audit --audit-level=high
+        # npm retired the quick-audit endpoint (400s from older clients, seen
+        # 2026-09-04); run the audit with a current npm that speaks the bulk
+        # advisory endpoint.
+        run: |
+          npm install -g npm@^11
+          npm audit --audit-level=high
 
       - name: Upload verified web build
         if: github.event_name == 'push'
@@ -87,7 +92,10 @@ jobs:
         working-directory: functions
 
       - name: Full dependency audit
-        run: npm audit --audit-level=high
+        # Same bulk-endpoint requirement as the web audit above.
+        run: |
+          npm install -g npm@^11
+          npm audit --audit-level=high
         working-directory: functions
 
   deploy-hosting:
