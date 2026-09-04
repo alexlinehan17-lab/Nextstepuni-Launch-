@@ -210,7 +210,11 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
             instead of living only inside the gallery. */}
         {(() => {
           const ts = gamificationState.achievementTimestamps ?? {};
-          const latest = [...unlockedAchievements].sort((a, b) => (ts[b] ?? 0) - (ts[a] ?? 0))[0];
+          // Unlocks that predate timestamps all tie at 0 — the array is
+          // append-ordered, so the later index is the newer unlock.
+          const latest = [...unlockedAchievements].sort((a, b) =>
+            (ts[b] ?? 0) - (ts[a] ?? 0)
+            || unlockedAchievements.indexOf(b) - unlockedAchievements.indexOf(a))[0];
           const latestDef = latest ? getAchievementById(latest) : undefined;
           if (!latest || !latestDef) return null;
           const when = ts[latest]

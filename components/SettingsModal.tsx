@@ -261,14 +261,13 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                 <div className="space-y-2">
                   {/* Appearance — two miniatures of the app itself, pick one.
                       A preview says what a "Dark Mode" label can't. */}
-                  <div role="radiogroup" aria-label="Appearance" className="grid grid-cols-2 gap-2.5">
+                  <div role="group" aria-label="Appearance" className="grid grid-cols-2 gap-2.5">
                     {[{ dark: false, label: 'Light' }, { dark: true, label: 'Dark (Beta)' }].map(opt => {
                       const active = settings.darkMode === opt.dark;
                       return (
                         <button
                           key={opt.label}
-                          role="radio"
-                          aria-checked={active}
+                          aria-pressed={active}
                           onClick={() => {
                             if (!active) { updateSetting('darkMode', opt.dark); flash(); }
                           }}

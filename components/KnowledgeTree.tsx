@@ -702,7 +702,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                   <p className="text-[11px] mt-0.5 text-[#A8A29E] dark:text-zinc-500">{questState.quest.description}</p>
                   <div className="mt-2.5 flex items-center gap-2">
                     <div className="flex-1 h-2.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700">
-                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: questState.isCompleted ? COLORS.accent : 'rgba(242,107,31,0.62)' }} />
+                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: questState.isCompleted ? '#3A8D5F' : 'rgba(242,107,31,0.62)' }} />
                     </div>
                     <span className="text-[10px] font-bold tabular-nums text-[#A8A29E] dark:text-zinc-500">{questState.isCompleted ? 'Completed' : `${Math.min(questState.current, questState.quest.target)}/${questState.quest.target}`}</span>
                   </div>

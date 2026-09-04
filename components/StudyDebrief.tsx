@@ -5,7 +5,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
+import { MotionDiv, useReducedMotion } from './Motion';
 import {
   Brain, CheckCircle, ArrowRight, BookOpen, Target, RotateCcw,
   Lightbulb, Sparkles, BarChart3,
@@ -64,10 +64,17 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
   const [confidenceBefore, setConfidenceBefore] = useState(3);
   const [confidenceAfter, setConfidenceAfter] = useState(3);
   const [whatWorked, setWhatWorked] = useState('');
-  // The saved entry is held for one screen so the session ends on a debrief
-  // moment (ring + confidence shift) rather than the modal vanishing mid-tap.
+  // The entry submits the moment Save is tapped (nothing to lose on a
+  // refresh); a copy is held for one more screen so the session ends on a
+  // debrief moment (ring + confidence shift) rather than the modal
+  // vanishing mid-tap.
   const [saved, setSaved] = useState<Omit<DebriefEntry, 'id' | 'date'> | null>(null);
   const [ringIn, setRingIn] = useState(false);
+  const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (!isOpen) setSaved(null);
+  }, [isOpen]);
 
   useEffect(() => {
     if (!saved) { setRingIn(false); return; }
@@ -95,11 +102,11 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
     };
   };
 
-  const handleFinish = () => {
-    if (!saved) return;
-    onSubmit(saved);
-    // Reset for next use
-    setSaved(null);
+  const handleSave = () => {
+    const entry = buildEntry();
+    onSubmit(entry);
+    setSaved(entry);
+    // Reset the form for next use; the summary reads from `saved`.
     setStep(0);
     setHardestTopic('');
     setTopicsCovered([]);
@@ -107,6 +114,13 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
     setConfidenceBefore(3);
     setConfidenceAfter(3);
     setWhatWorked('');
+  };
+
+  // The entry is already submitted — Done only dismisses, via the same
+  // callback the parent uses to close the modal.
+  const handleFinish = () => {
+    setSaved(null);
+    onSkip();
   };
 
   if (!isOpen) return null;
@@ -136,9 +150,8 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
                   cx="58" cy="58" r="50" fill="none" strokeWidth="7" strokeLinecap="round"
                   stroke="rgba(242,107,31,0.62)"
                   strokeDasharray={C}
-                  strokeDashoffset={ringIn ? C * (1 - pct) : C}
-                  className="motion-reduce:transition-none"
-                  style={{ transition: 'stroke-dashoffset 900ms cubic-bezier(0.16, 1, 0.3, 1)' }}
+                  strokeDashoffset={reduceMotion || ringIn ? C * (1 - pct) : C}
+                  style={reduceMotion ? undefined : { transition: 'stroke-dashoffset 900ms cubic-bezier(0.16, 1, 0.3, 1)' }}
                 />
               </svg>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -174,6 +187,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
           <div className="px-6 pb-6">
             <button
               onClick={handleFinish}
+              autoFocus
               className="w-full rounded-xl bg-[#1A1A1A] py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 dark:bg-white dark:text-zinc-900"
             >
               Done
@@ -434,7 +448,7 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
           </button>
           <div className="flex-1" />
           <button
-            onClick={isLastStep ? () => setSaved(buildEntry()) : () => setStep(step + 1)}
+            onClick={isLastStep ? handleSave : () => setStep(step + 1)}
             disabled={step === 1 && !strategy}
             className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-[#F26B1F] hover:bg-[#B54D14] shadow-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5"
           >

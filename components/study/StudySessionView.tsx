@@ -663,10 +663,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
             {/* Session type + Duration — revealed once the subject is chosen,
                 so the screen asks one question at a time. (With no subject
-                options at all, everything stays visible as before.) */}
-            {subjects.length > 0 && !selectedSubject && (
-              <p className="text-[13px] text-zinc-400 dark:text-zinc-500">Pick a subject to set up the session.</p>
-            )}
+                options at all, everything stays visible as before; the
+                startHint above the CTA already prompts for a subject.) */}
             {(selectedSubject || subjects.length === 0) && (
             <div className="grid grid-cols-2 gap-4 sm:gap-8">
               {/* Session type */}
@@ -1193,7 +1191,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               <div className={`absolute inset-0 flex flex-col items-center justify-center ${isEarlyEnd ? 'text-[#F26B1F]' : 'text-[#3A8D5F]'}`}>
                 {isEarlyEnd ? (
                   <span className="font-serif text-[20px] font-bold tabular-nums leading-none text-[#1A1A1A] dark:text-white">
-                    {Math.round(Math.min(1, session.totalDuration > 0 ? session.elapsedSeconds / session.totalDuration : 1) * 100)}%
+                    {Math.floor(Math.min(1, session.totalDuration > 0 ? session.elapsedSeconds / session.totalDuration : 1) * 100)}%
                   </span>
                 ) : (
                   <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">

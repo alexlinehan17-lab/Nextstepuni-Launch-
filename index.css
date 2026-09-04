@@ -1024,11 +1024,6 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   .product-shell :where(input, select, textarea) { font-size: 16px; }
 }
 
-@keyframes streak-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(242,107,31,0.3); }
-  50% { box-shadow: 0 0 0 4px rgba(242,107,31,0); }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     scroll-behavior: auto !important;
