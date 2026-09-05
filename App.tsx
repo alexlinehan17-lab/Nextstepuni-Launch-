@@ -60,6 +60,7 @@ import { isProgressReadyForUser } from './utils/progressHydration';
 import { DEMO_STUDENT_UID } from './data/devStudent';
 import SiteGuide, { type GuideAction } from './components/SiteGuide';
 import FeedbackModal from './components/FeedbackModal';
+import { useMobileAppDesign } from './hooks/useMobileAppDesign';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -72,6 +73,7 @@ interface MobileBottomNavProps {
 }
 
 const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToProgress, onGoToStudy, onGoToJourney, onGoToInnovationZone }) => {
+  const mobileAppDesign = useMobileAppDesign();
   const tabs = [
     { id: 'tree', label: 'Home', icon: Home, action: onGoHome },
     { id: 'dashboard', label: 'Progress', icon: ChartNoAxesCombined, action: onGoToProgress },
@@ -85,15 +87,19 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
   // re-anchor position: fixed to the transformed wrapper.
   return createPortal(
     <nav
+      aria-label={mobileAppDesign ? 'Main navigation' : undefined}
       className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-[#FAFBF6] dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
       style={{ paddingBottom: 'var(--sab, 0px)' }}
     >
       <div className="mx-auto flex h-16 max-w-md items-center justify-around px-1">
         {tabs.map((tab) => {
-          const isActive = tab.id === viewState || (tab.id === 'tree' && viewState === 'category');
+          const isActive = tab.id === viewState || (tab.id === 'tree' && (mobileAppDesign ? ['category', 'modules', 'module', 'learning-paths'].includes(viewState) : viewState === 'category'));
           return (
             <button
               key={tab.id}
+              type="button"
+              aria-current={mobileAppDesign && isActive ? 'page' : undefined}
+              data-coach={mobileAppDesign && tab.id === 'innovation-zone' ? 'launchpad' : undefined}
               onClick={tab.action}
               className={`relative flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[rgba(var(--accent),0.45)] ${isActive ? 'text-[#B94712] dark:text-[#FF9A64]' : 'text-zinc-500 dark:text-zinc-400'}`}
             >

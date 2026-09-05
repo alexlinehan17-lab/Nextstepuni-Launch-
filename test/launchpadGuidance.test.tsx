@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React from 'react';
-import { describe, expect, test, vi } from 'vitest';
+import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import LaunchpadGuidance, { type LaunchpadToolSummary } from '@/components/LaunchpadGuidance';
@@ -13,6 +13,10 @@ import {
   type ToolRecommendation,
 } from '@/components/launchpadGuidanceData';
 
+const device = vi.hoisted(() => ({ mobile: false }));
+vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => device.mobile }));
+beforeEach(() => { device.mobile = false; });
+
 const TOOLS: LaunchpadToolSummary[] = [
   { id: 'war-room', title: 'War Room', description: 'Choose a priority.', tag: 'Strategy', needsProfile: true },
   { id: 'planner', title: 'Spaced Repetition Timetable', description: 'Plan the week.', tag: 'Planner', needsProfile: true },
@@ -21,6 +25,42 @@ const TOOLS: LaunchpadToolSummary[] = [
 ];
 
 describe('Launchpad guidance', () => {
+  test('mobile guide jumps directly to a tool and resets scroll between tools', () => {
+    device.mobile = true;
+    const openTool = vi.fn();
+    render(<LaunchpadGuidance tools={TOOLS} recommendation={null} onRecommendationChange={vi.fn()} onOpenTool={openTool} />);
+    fireEvent.click(screen.getByRole('button', { name: /Meet the tools/ }));
+    const chooser = screen.getByRole('combobox', { name: 'Choose a tool' });
+    const body = chooser.closest('.overflow-y-auto') as HTMLElement;
+    body.scrollTop = 180;
+    fireEvent.change(chooser, { target: { value: 'paper-trail' } });
+    expect(body.scrollTop).toBe(0);
+    expect(screen.getByRole('heading', { name: 'Meet the tools' })).toHaveFocus();
+    expect(screen.getByRole('dialog')).toHaveClass('[&_button]:min-h-11');
+    fireEvent.click(screen.getByRole('button', { name: 'Open Paper Trail' }));
+    expect(openTool).toHaveBeenCalledWith('paper-trail', false);
+  });
+
+  test('mobile recommendation resets scrolling and allows short viewports', () => {
+    device.mobile = true;
+    render(<LaunchpadGuidance tools={TOOLS} recommendation={null} onRecommendationChange={vi.fn()} onOpenTool={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: /Recommend a tool/ }));
+    const question = screen.getByRole('button', { name: 'I want to practise for an exam' });
+    const body = question.closest('.overflow-y-auto') as HTMLElement;
+    expect(body).toHaveClass('min-h-0');
+    body.scrollTop = 240;
+    fireEvent.click(question);
+    expect(body.scrollTop).toBe(0);
+    expect(screen.getByRole('heading', { name: 'One more question' })).toHaveFocus();
+  });
+
+  test('desktop retains its original guide layout', () => {
+    render(<LaunchpadGuidance tools={TOOLS} recommendation={null} onRecommendationChange={vi.fn()} onOpenTool={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: /Meet the tools/ }));
+    expect(screen.queryByRole('combobox')).not.toBeInTheDocument();
+    expect(screen.getByRole('dialog')).not.toHaveClass('[&_button]:min-h-11');
+  });
+
   test('uses the shared tool illustration style and matching charcoal card outlines', () => {
     render(
       <LaunchpadGuidance

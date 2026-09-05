@@ -26,6 +26,7 @@ import { type CategoryType } from './KnowledgeTree';
 import { MODULE_SECTIONS } from '../moduleSections';
 import { WorldIconBlob, type WorldId } from './WorldIconBlob';
 import PageHeader from './ui/PageHeader';
+import { useCompactLayout } from '../hooks/useCompactLayout';
 import { WORLD_TONES, useWorldTones, type WorldTones } from './worldPalette';
 
 type UserProgress = {
@@ -536,6 +537,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
   userProgress,
 }) => {
   const world = useWorldTones();
+  const compactLayout = useCompactLayout();
   // Synchronous initialiser — no useEffect race. Hero is set on the first
   // render. If the auto-detected hero isn't resolvable for any reason,
   // useState's lazy init falls back to Mind via FALLBACK_HERO_ID.
@@ -562,7 +564,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
     ...visibleCategories.filter(c => c.id !== resolvedHeroId),
   ].filter(Boolean) as CategoryConfig[];
 
-  if (IS_NATIVE_IOS) {
+  if (IS_NATIVE_IOS || compactLayout) {
     const completedModules = allCourses.filter(course => {
       const progress = userProgress[course.id];
       return !!progress && progress.unlockedSection >= course.sectionsCount;
@@ -594,7 +596,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                 </p>
               </div>
               <p className="shrink-0 font-mono text-[11px] font-semibold text-zinc-500 dark:text-zinc-400">
-                {completedModules}/{allCourses.length} done
+                {completedModules} of {allCourses.length} complete
               </p>
             </div>
 
@@ -609,11 +611,11 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                     type="button"
                     onClick={() => onSelectCategory(cat.id)}
                     aria-label={`Open ${cat.name} world`}
-                    className="group flex min-h-[104px] w-full items-center gap-3 rounded-[22px] border bg-white p-3 text-left shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition-transform active:scale-[0.985] dark:bg-zinc-900"
-                    style={{ borderColor: `${cat.blob}88` }}
+                    className="group flex min-h-[116px] w-full items-center gap-3 rounded-[15px] border bg-white p-3 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                    style={{ borderColor: isCurrent ? '#F26B1F' : `${cat.blob}aa`, borderWidth: isCurrent ? 2 : 1 }}
                   >
-                    <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl" style={{ background: `${cat.blob}38` }}>
-                      <WorldIconBlob world={cat.worldKey} size={96} compact />
+                    <div className="flex h-24 w-[88px] shrink-0 items-center justify-center overflow-visible">
+                      <WorldIconBlob world={cat.worldKey} size={72} />
                     </div>
 
                     <div className="min-w-0 flex-1 py-1">
@@ -622,7 +624,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                           {cat.number}
                         </span>
                         {isCurrent && (
-                          <span className="rounded-full px-2 py-0.5 font-mono text-[8px] font-bold uppercase tracking-[0.16em] text-white" style={{ background: cat.mid }}>
+                          <span className="text-[10px] font-semibold uppercase tracking-[0.08em] text-[#a04412] dark:text-orange-300">
                             Continue
                           </span>
                         )}
@@ -630,20 +632,20 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                       <h2 className="mt-0.5 font-serif text-[25px] font-medium leading-none tracking-tight text-[#1A1A1A] dark:text-white">
                         {cat.name}
                       </h2>
-                      <p className="mt-1.5 line-clamp-1 text-[12px] text-zinc-600 dark:text-zinc-400">
+                      <p className="mt-1.5 text-[13px] leading-snug text-zinc-600 dark:text-zinc-400">
                         {cat.blurb}
                       </p>
                       <div className="mt-2.5 flex items-center gap-2">
                         <span className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: `${world.ink(cat)}1F` }}>
                           <span className="block h-full rounded-full" style={{ width: `${stats.percent}%`, background: cat.mid }} />
                         </span>
-                        <span className="font-mono text-[9px] font-bold tabular-nums" style={{ color: world.ink(cat) }}>
-                          {stats.completed}/{stats.total}
+                        <span className="text-[11px] tabular-nums" style={{ color: world.ink(cat) }}>
+                          {stats.completed}/{stats.total} complete
                         </span>
                       </div>
                     </div>
 
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full" style={{ background: `${cat.blob}45`, color: world.ink(cat) }}>
+                    <span className="flex w-4 shrink-0 items-center justify-center" style={{ color: world.ink(cat) }}>
                       <IconChevronRight size={16} />
                     </span>
                   </button>

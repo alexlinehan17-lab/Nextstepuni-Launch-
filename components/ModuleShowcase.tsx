@@ -24,6 +24,7 @@
  * Framer's tracking and produces hard cuts instead of morphs.)
  */
 import React, { useState, useCallback, useEffect, useRef } from 'react';
+import { useCompactLayout } from '../hooks/useCompactLayout';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { CheckCircle2, ChevronDown, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
@@ -105,6 +106,8 @@ export default function ModuleShowcase({
 }: ModuleShowcaseProps) {
   const rawTheme = WORLD_THEMES[categoryId] ?? FALLBACK_THEME;
   const tones = useWorldTones();
+  const compactLayout = useCompactLayout();
+  const [moduleQuery, setModuleQuery] = useState('');
   // Same object, with the ink and mid resolved for the active theme.
   // Only `deep` is swapped wholesale: it is text everywhere it appears. `mid`
   // also fills buttons and bars, so it stays raw and the eyebrow asks for
@@ -188,30 +191,32 @@ export default function ModuleShowcase({
     scrollRef.current?.scrollBy({ left: dir * (CARD_WIDTH + 12), behavior: 'smooth' });
   };
 
-  if (IS_NATIVE_IOS) {
+  if (IS_NATIVE_IOS || compactLayout) {
     return (
-      <div className="w-full max-w-xl px-1 theme-compat">
+      <div className="w-full max-w-xl px-4 theme-compat">
         <div className="mb-5">
           <div className="flex items-center gap-3">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl" style={{ background: `${theme.blob}38` }}>
-              <WorldIconBlob world={theme.worldKey} size={76} compact />
+            <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-visible">
+              <WorldIconBlob world={theme.worldKey} size={64} />
             </div>
             <div className="min-w-0">
               <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: tones.midText(rawTheme) }}>
                 {theme.number} · {theme.worldName}
               </p>
-              <h2 className="mt-1 font-serif text-[27px] font-medium leading-none tracking-tight text-[#1A1A1A] dark:text-white">
-                Choose a module
-              </h2>
+              <h1 className="mt-1 font-serif text-[32px] font-medium leading-none tracking-tight text-[#1A1A1A] dark:text-white">{theme.worldKey.charAt(0).toUpperCase() + theme.worldKey.slice(1)}</h1>
+              <p className="mt-2 text-sm text-[var(--ink-secondary)]">Choose a module</p>
             </div>
           </div>
           <p className="mt-3 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
-            Tap any module to open it. Your next section is saved automatically.
+            Your next section is saved automatically.
           </p>
         </div>
 
+        <label className="mb-5 block text-sm font-medium">Find a module<input type="search" value={moduleQuery} onChange={event => setModuleQuery(event.target.value)} placeholder="Search modules" className="mt-2 min-h-12 w-full rounded-lg border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-3 text-base" /></label>
+        {moduleQuery.trim() && !courses.some(course => `${course.title} ${course.description}`.toLowerCase().includes(moduleQuery.toLowerCase().trim())) && <p className="my-6 text-sm">No matching modules. <button type="button" className="min-h-11 underline underline-offset-4" onClick={() => setModuleQuery('')}>Clear search</button></p>}
         <div className="space-y-3">
-          {courses.map((item, index) => {
+          {courses.filter(course => `${course.title} ${course.description}`.toLowerCase().includes(moduleQuery.toLowerCase().trim())).map((item) => {
+            const index = courses.findIndex(course => course.id === item.id);
             const itemProgress = userProgress[item.id];
             const completedSections = Math.min(itemProgress?.unlockedSection ?? 0, item.sectionsCount);
             const itemCompleted = completedSections >= item.sectionsCount;
@@ -230,8 +235,8 @@ export default function ModuleShowcase({
                 key={item.id}
                 type="button"
                 onClick={() => onSelectCourse(item.id)}
-                className="group w-full rounded-[20px] border bg-white p-4 text-left shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition-transform active:scale-[0.985] dark:bg-zinc-900"
-                style={{ borderColor: itemInProgress || itemCompleted ? `${theme.mid}88` : `${theme.blob}77` }}
+                className="group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                style={{ borderColor: itemInProgress ? '#F26B1F' : '#383838' }}
               >
                 <div className="flex items-start gap-3">
                   <span
