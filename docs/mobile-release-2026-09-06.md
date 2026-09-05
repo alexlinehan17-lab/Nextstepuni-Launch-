@@ -30,6 +30,16 @@ e482dec1eea01996817f373515a70680e30646278ef293d76a95286416bb36af  components/stu
 
 ## Verification and publication
 
-Preview branch: the previous 116-test mobile regression run passed. The latest section removals passed 22 focused tests before integration. The clean production integration requires its own lint, type checks, tests, browser verification, build, signing and upload checks; those outcomes are recorded below as they complete.
+Preview branch: the previous 116-test mobile regression run passed. The latest section removals passed 22 focused tests before integration.
+
+Clean production integration checks completed:
+
+- Full repository lint: passed, zero warnings.
+- App and test TypeScript checks: both passed.
+- 87 tests across 15 files: passed, including both desktop and mobile Study exit/setup behavior, onboarding, account entry, Home handoffs, module navigation and Launchpad guides.
+- Desktop Home/onboarding/resume source comparisons against production `01d54ffa`: passed.
+- Approved mobile Study and shared session hook checksums: matched.
+
+Build, signing, upload and publishing are verified separately below as each finishes.
 
 Publication is not complete merely because an archive builds. GitHub/Firebase deployment, Apple upload/processing and App Review are separate statuses.
