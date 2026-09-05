@@ -23,6 +23,9 @@ import { Library } from './Library';
 // the entry chunk — audit 2026-06-01. Its only other consumer, SubjectModule,
 // is already lazy (moduleRegistry.ts).
 const ModuleShowcase = lazy(() => import('./ModuleShowcase'));
+import AppLaunch from './AppLaunch';
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import { toDateKey } from './subjectData';
 const LoginPage = lazy(() => import('./LoginPage'));
 const ResetPasswordPage = lazy(() => import('./ResetPasswordPage'));
 const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ default: m.AdminDashboard })));
@@ -246,6 +249,7 @@ function useRegistrationHold(): boolean {
 }
 
 const AppRouter: React.FC<AppRouterProps> = (props) => {
+  const mobileAppDesign = useMobileAppDesign();
   const nav = useNavigation();
   const registrationHeld = useRegistrationHold();
   const { updateDemoProgress, setTimetableCompletions, progressLoaded, progressDataUid } = useProgress();
@@ -323,7 +327,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // signing in. Neutral copy on purpose: at this point we do not yet know
     // whether there is a session, so promising a workspace would be wrong for
     // anyone about to be shown the login form.
-    return <LoadingSpinner overlay kicker="NextStepUni" label="Getting things ready" />;
+    return mobileAppDesign ? <AppLaunch /> : <LoadingSpinner overlay kicker="NextStepUni" label="Getting things ready" />;
   }
 
   // Registration is still provisioning: the account exists and the student is
@@ -650,6 +654,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onOpenFeedback={onOpenFeedback}
       onOpenMobileProfile={onOpenMobileProfile}
       hasUnreadNotifications={hasUnreadNotifications}
+      gamificationState={gamification.isLoaded ? gamification.state : null}
+      onPlannedStudy={(block, index) => handleStudyFromTimetable({ subject: block.subjectName, sessionType: block.sessionType, durationMinutes: block.durationMinutes, dateKey: toDateKey(new Date()), blockId: `block-${index}` })}
     />;
   }
 
@@ -686,15 +692,15 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
         // scale so the carousel arrives feeling like the hero opened up,
         // not like a hard route change. ~450ms total.
         <motion.div
-          initial={{ opacity: 0, y: 18, scale: 0.985 }}
+          initial={mobileAppDesign ? { opacity: 0, y: 8 } : { opacity: 0, y: 18, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: mobileAppDesign ? 0.2 : 0.45, ease: [0.16, 1, 0.3, 1] }}
           className="min-h-screen bg-white dark:bg-zinc-950"
         >
           {/* Header */}
-          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
+          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
             <div className="flex items-center gap-4">
-              <button onClick={handleBackToTree} aria-label="Back to modules" className="p-2.5 rounded-xl transition-colors hover:bg-white/60" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+              <button onClick={handleBackToTree} aria-label="Back to modules" className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}p-2.5 rounded-xl transition-colors hover:bg-white/60`} style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
               </button>
             </div>

@@ -11,6 +11,9 @@
  */
 
 import React, { useCallback, useEffect, useState } from 'react';
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import { useReducedMotion } from './Motion';
+import { useModal } from '../hooks/useModal';
 
 const STEPS: { target: string; title: string; body: string }[] = [
   {
@@ -56,6 +59,8 @@ interface Props {
 }
 
 const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) => {
+  const mobileAppDesign = useMobileAppDesign();
+  const reducedMotion = useReducedMotion();
   const [step, setStep] = useState(0);
   const [rect, setRect] = useState<DOMRect | null>(null);
 
@@ -63,6 +68,7 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
     markSeen(uid);
     onFinish();
   }, [uid, onFinish]);
+  useModal(mobileAppDesign, finish);
 
   // Measure the current step's target; re-measure on resize/scroll.
   // A target can mount a beat late (home cards still hydrating right after
@@ -79,14 +85,18 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
     // dashboard can restore below the fold after onboarding, so treating mere
     // DOM existence as success left the tour running without a spotlight.
     const measure = (): boolean => {
-      const el = document.querySelector<HTMLElement>(`[data-coach="${STEPS[step].target}"]`);
+      const targets = document.querySelectorAll<HTMLElement>(`[data-coach="${STEPS[step].target}"]`);
+      const el = mobileAppDesign ? [...targets].find(target => {
+        const bounds = target.getBoundingClientRect();
+        return bounds.width > 4 && bounds.height > 4;
+      }) : targets[0];
       if (!el) { setRect(null); return false; }
       const r = el.getBoundingClientRect();
       const visible = r.width > 4 && r.height > 4 && r.bottom > 0 && r.top < window.innerHeight;
       if (!visible) {
         setRect(null);
         if (r.width > 4 && r.height > 4) {
-          el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: tries === 0 ? 'smooth' : 'auto' });
+          el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: tries === 0 && !(mobileAppDesign && reducedMotion) ? 'smooth' : 'auto' });
         }
         return false;
       }
@@ -127,9 +137,9 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
       window.removeEventListener('resize', measure);
       window.removeEventListener('scroll', measure, true);
     };
-  }, [step, uid, onFinish]);
+  }, [step, uid, onFinish, mobileAppDesign, reducedMotion]);
 
-  const s = STEPS[step];
+  const s = mobileAppDesign && step === 2 ? { ...STEPS[step], title: 'Help is always here', body: 'Find help, settings and the full app guide from your profile or the sidebar.' } : STEPS[step];
   const last = step === STEPS.length - 1;
 
   // Caption placement: under the target when there's room, else above it.
@@ -156,12 +166,15 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
       )}
 
       <div
-        className="absolute w-[320px] max-w-[calc(100vw-24px)] rounded-2xl border-2 bg-white px-4 py-3.5"
-        style={
+        className={`absolute w-[320px] max-w-[calc(100vw-24px)] rounded-2xl border-2 bg-white px-4 py-3.5 ${mobileAppDesign ? 'overflow-y-auto' : ''}`}
+        style={{
+          ...(mobileAppDesign ? { maxHeight: `calc(100dvh - ${rect ? captionTop + 12 : 24}px)` } : {}),
+          ...(
           rect
             ? { top: captionTop, left: captionLeft, borderColor: INK, boxShadow: '0 4px 0 rgba(0,0,0,0.4)' }
             : { top: '50%', left: '50%', transform: 'translate(-50%, -50%)', borderColor: INK, boxShadow: '0 4px 0 rgba(0,0,0,0.4)' }
-        }
+          ),
+        }}
       >
         <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>
           Quick tour · {step + 1} of {STEPS.length}
@@ -170,15 +183,15 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
           {s.title}
         </h3>
         <p className="text-[12.5px] leading-relaxed mb-3" style={{ color: '#5a5550' }}>{s.body}</p>
-        <div className="flex items-center justify-between gap-2">
-          <button onClick={finish} className="text-[12px] font-medium" style={{ color: '#9e9186' }}>
+        <div className={`flex items-center justify-between gap-2 ${mobileAppDesign ? 'flex-wrap' : ''}`}>
+          <button onClick={finish} className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}text-[12px] font-medium`} style={{ color: '#9e9186' }}>
             Skip
           </button>
-          <div className="flex gap-2">
+          <div className={`flex gap-2 ${mobileAppDesign ? 'flex-wrap justify-end' : ''}`}>
             {last && (
               <button
                 onClick={() => { markSeen(uid); onOpenGuide(); }}
-                className="rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
+                className={`${mobileAppDesign ? 'min-h-11 ' : ''}rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5`}
                 style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
               >
                 Take the full tour
@@ -186,7 +199,7 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
             )}
             <button
               onClick={() => (last ? finish() : setStep(v => v + 1))}
-              className="rounded-full px-4 py-1.5 text-[12.5px] font-semibold text-white transition-transform active:translate-y-0.5"
+              className={`${mobileAppDesign ? 'min-h-11 ' : ''}rounded-full px-4 py-1.5 text-[12.5px] font-semibold text-white transition-transform active:translate-y-0.5`}
               style={{ backgroundColor: ACCENT, boxShadow: '0 2px 0 #B54D14' }}
             >
               {last ? 'Done' : 'Next →'}

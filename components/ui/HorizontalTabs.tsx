@@ -5,6 +5,8 @@
  * fade makes horizontal overflow feel intentional rather than clipped.
  */
 import React, { useEffect, useRef } from 'react';
+import { useReducedMotion } from '../Motion';
+import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 
 export interface HorizontalTabOption<T extends string> {
   value: T;
@@ -30,6 +32,9 @@ export default function HorizontalTabs<T extends string>({
 }: HorizontalTabsProps<T>) {
   const railRef = useRef<HTMLDivElement | null>(null);
   const activeRef = useRef<HTMLButtonElement | null>(null);
+  const mobileAppDesign = useMobileAppDesign();
+  const reducedMotion = useReducedMotion();
+  const mountedRef = useRef(false);
 
   useEffect(() => {
     const rail = railRef.current;
@@ -38,11 +43,12 @@ export default function HorizontalTabs<T extends string>({
     const left = active.offsetLeft - ((rail.clientWidth - active.offsetWidth) / 2);
     const targetLeft = Math.max(0, left);
     if (typeof rail.scrollTo === 'function') {
-      rail.scrollTo({ left: targetLeft, behavior: 'smooth' });
+      rail.scrollTo({ left: targetLeft, behavior: mobileAppDesign && (reducedMotion || !mountedRef.current) ? 'auto' : 'smooth' });
     } else {
       rail.scrollLeft = targetLeft;
     }
-  }, [value]);
+    mountedRef.current = true;
+  }, [value, mobileAppDesign, reducedMotion]);
 
   const pill = variant === 'pill';
 
@@ -64,10 +70,19 @@ export default function HorizontalTabs<T extends string>({
                 type="button"
                 role="tab"
                 aria-selected={active}
+                tabIndex={mobileAppDesign ? active ? 0 : -1 : undefined}
+                onKeyDown={mobileAppDesign ? event => {
+                  const index = options.findIndex(item => item.value === option.value);
+                  const nextIndex = event.key === 'ArrowRight' ? (index + 1) % options.length : event.key === 'ArrowLeft' ? (index - 1 + options.length) % options.length : event.key === 'Home' ? 0 : event.key === 'End' ? options.length - 1 : -1;
+                  if (nextIndex < 0) return;
+                  event.preventDefault();
+                  railRef.current?.querySelectorAll<HTMLButtonElement>('[role="tab"]')[nextIndex]?.focus({ preventScroll: true });
+                  onChange(options[nextIndex].value);
+                } : undefined}
                 onClick={() => onChange(option.value)}
                 className={pill
                   ? `min-h-11 shrink-0 whitespace-nowrap rounded-lg border px-4 text-sm font-semibold transition-colors ${active ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm' : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
-                  : `relative min-h-11 shrink-0 whitespace-nowrap pt-0.5 text-xs font-semibold transition-colors ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
+                  : `relative min-h-11 ${mobileAppDesign ? 'min-w-11' : ''} shrink-0 whitespace-nowrap pt-0.5 text-xs font-semibold transition-colors ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
                 }
               >
                 {option.label}

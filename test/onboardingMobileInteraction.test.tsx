@@ -8,8 +8,9 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import Onboarding from '@/components/Onboarding';
 
 vi.mock('@/utils/funnel', () => ({ trackFunnel: vi.fn() }));
+vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }));
 
-const draftKey = 'nextstepuni:onboarding-draft:v1:mobile-qa:fresh';
+const draftKey = 'nextstepuni:onboarding-draft:v2:mobile-qa:fresh';
 
 function renderOnboarding() {
   return render(
@@ -41,8 +42,8 @@ describe('mobile onboarding interaction', () => {
 
     expect(scrollRegion.scrollTop).toBe(0);
     expect(JSON.parse(localStorage.getItem(draftKey) ?? '{}')).toMatchObject({
-      version: 1,
-      step: 2,
+      version: 2,
+      step: 'year',
     });
   });
 

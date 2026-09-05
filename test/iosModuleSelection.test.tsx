@@ -9,6 +9,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 vi.mock('@capacitor/core', () => ({
   Capacitor: {
     getPlatform: () => 'ios',
+    isNativePlatform: () => true,
   },
 }));
 

@@ -4,8 +4,6 @@
  */
 
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
-import MobileStudySessionView from './StudySessionView.mobile';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
@@ -107,16 +105,6 @@ const SESSION_TYPE_CONFIG: Record<string, { icon: LucideIcon; label: string }> =
   'practice': { icon: Target, label: 'Practice' },
   'revision': { icon: RotateCcw, label: 'Revision' },
 };
-
-// Painted-blob identity for the three session types (Fabulous's ritual-card
-// register in our own hand-drawn language). Tints follow the curriculum
-// palette family — identity marks, never status colours.
-const SESSION_TYPE_ART: Record<string, { tint: string; ink: string; blurb: string }> = {
-  'new-learning': { tint: '#DCE9F2', ink: '#33658A', blurb: 'Meet it for the first time' },
-  'practice': { tint: '#FBE9DC', ink: '#B5500F', blurb: 'Work problems, build speed' },
-  'revision': { tint: '#E8F2EC', ink: '#1F5F3E', blurb: 'Return to it and lock it in' },
-};
-const TYPE_BLOB_PATH = 'M 38 4 Q 12 6 6 28 Q 2 50 22 56 Q 50 62 60 36 Q 64 12 48 4 Q 42 2 38 4 Z';
 
 export interface TimetableBlockContext {
   subject: string;
@@ -568,7 +556,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         </div>
 
         {/* Centered content */}
-        <div className="flex-1 bg-white px-4 pb-28 dark:bg-zinc-950 sm:px-6">
+        <div className="flex-1 bg-[#FAFBF6] px-4 pb-28 dark:bg-zinc-950 sm:px-6">
           <div className="mx-auto w-full max-w-md space-y-7 pt-5 sm:space-y-10 sm:pt-6">
             {/* Today's timetable blocks — quick-start shortcuts */}
             {computedTodayBlocks.length > 0 && (
@@ -673,11 +661,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               )}
             </AnimatePresence>
 
-            {/* Session type + Duration — revealed once the subject is chosen,
-                so the screen asks one question at a time. (With no subject
-                options at all, everything stays visible as before; the
-                startHint above the CTA already prompts for a subject.) */}
-            {(selectedSubject || subjects.length === 0) && (
+            {/* Session type + Duration — side by side */}
             <div className="grid grid-cols-2 gap-4 sm:gap-8">
               {/* Session type */}
               <div className="space-y-3">
@@ -685,34 +669,17 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 <div className="space-y-2">
                   {(['new-learning', 'practice', 'revision'] as const).map(type => {
                     const config = SESSION_TYPE_CONFIG[type];
-                    const art = SESSION_TYPE_ART[type];
                     const Icon = config.icon;
                     const isActive = selectedType === type;
                     return (
-                      <button
+                      <ChoiceControl
                         key={type}
-                        type="button"
                         onClick={() => setSelectedType(type)}
-                        aria-pressed={isActive}
-                        className={`flex w-full items-center gap-3 rounded-xl border px-3 py-2.5 text-left transition-all duration-150 ${
-                          isActive
-                            ? 'border-[#F26B1F] bg-[rgba(242,107,31,0.06)]'
-                            : 'border-[#E5E1DA] bg-white hover:-translate-y-[1px] hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-400'
-                        }`}
-                      >
-                        <span aria-hidden="true" className="relative h-10 w-10 shrink-0">
-                          <svg viewBox="0 0 64 64" className="absolute inset-0 h-full w-full">
-                            <path d={TYPE_BLOB_PATH} fill={art.tint} opacity={0.95} />
-                          </svg>
-                          <span className="absolute inset-0 flex items-center justify-center">
-                            <Icon size={17} strokeWidth={1.9} style={{ color: art.ink }} />
-                          </span>
-                        </span>
-                        <span className="min-w-0">
-                          <span className={`block text-[13px] font-bold ${isActive ? 'text-[#1A1A1A] dark:text-white' : 'text-[#3A3530] dark:text-zinc-200'}`}>{config.label}</span>
-                          <span className="mt-0.5 block text-[10.5px] leading-snug text-[#78716C] dark:text-zinc-400">{art.blurb}</span>
-                        </span>
-                      </button>
+                        className="w-full justify-start"
+                        label={config.label}
+                        selected={isActive}
+                        icon={<Icon size={17} strokeWidth={isActive ? 2 : 1.75} />}
+                      />
                     );
                   })}
                 </div>
@@ -774,10 +741,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 </div>
               </div>
             </div>
-            )}
 
             {/* Start button */}
-            <div className="sticky bottom-[calc(76px+var(--sab,0px))] z-20 -mx-4 flex flex-col items-center bg-gradient-to-t from-white via-white/95 to-transparent px-4 pb-2 pt-5 dark:from-zinc-950 dark:via-zinc-950/95 sm:static sm:mx-0 sm:bg-none sm:p-0">
+            <div className="sticky bottom-[calc(76px+var(--sab,0px))] z-20 -mx-4 flex flex-col items-center bg-gradient-to-t from-[#FAFBF6] via-[#FAFBF6]/95 to-transparent px-4 pb-2 pt-5 dark:from-zinc-950 dark:via-zinc-950/95 sm:static sm:mx-0 sm:bg-none sm:p-0">
               {startHint && <p className="mb-2 text-xs font-medium text-zinc-500 dark:text-zinc-400">{startHint}</p>}
               <PrimaryActionButton className="w-full sm:w-auto" label="Start Session" onClick={handleStart} icon={Play} disabled={!canStart} />
             </div>
@@ -1111,7 +1077,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 8, scale: 0.98 }}
                 transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-                className="w-full max-w-sm rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838] dark:border-zinc-600 dark:bg-zinc-900"
+                className="w-full max-w-sm rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] p-6 shadow-[5px_5px_0_0_#383838]"
               >
                 <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">Leave session</p>
                 <h2 id="study-exit-title" className="font-serif text-2xl font-bold text-[#1A1A1A]">End this study session?</h2>
@@ -1188,7 +1154,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-lg space-y-6 rounded-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838] sm:p-8 dark:border-zinc-600 dark:bg-zinc-900"
+          className="w-full max-w-lg space-y-6 rounded-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] p-6 shadow-[5px_5px_0_0_#383838] sm:p-8"
         >
           {/* Header — points as hero */}
           <div className="text-center">
@@ -1196,38 +1162,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="relative mx-auto mb-5 h-[88px] w-[88px]"
+              className={`mx-auto mb-5 flex h-[76px] w-[76px] items-center justify-center rounded-full border-2 border-[#383838] shadow-[3px_3px_0_0_#383838] ${isEarlyEnd ? 'bg-[#FFF0E7] text-[#F26B1F]' : 'bg-[#E8F2EC] text-[#3A8D5F]'}`}
             >
-              {/* The block itself is the ring: full and green when finished,
-                  partial in apricot when ended early. */}
-              {(() => {
-                const blockPct = session.totalDuration > 0
-                  ? Math.max(0.04, Math.min(1, session.elapsedSeconds / session.totalDuration))
-                  : 1;
-                const C = 2 * Math.PI * 38;
-                return (
-                  <svg width="88" height="88" viewBox="0 0 88 88" className="-rotate-90" aria-hidden="true">
-                    <circle cx="44" cy="44" r="38" fill="none" stroke="#ECE8E3" strokeWidth="6" className="dark:stroke-zinc-700" />
-                    <circle
-                      cx="44" cy="44" r="38" fill="none" strokeWidth="6" strokeLinecap="round"
-                      stroke={isEarlyEnd ? 'rgba(242,107,31,0.62)' : '#3A8D5F'}
-                      strokeDasharray={C}
-                      strokeDashoffset={C * (1 - (isEarlyEnd ? blockPct : 1))}
-                    />
-                  </svg>
-                );
-              })()}
-              <div className={`absolute inset-0 flex flex-col items-center justify-center ${isEarlyEnd ? 'text-[#F26B1F]' : 'text-[#3A8D5F]'}`}>
-                {isEarlyEnd ? (
-                  <span className="font-serif text-[20px] font-bold tabular-nums leading-none text-[#1A1A1A] dark:text-white">
-                    {Math.floor(Math.min(1, session.totalDuration > 0 ? session.elapsedSeconds / session.totalDuration : 1) * 100)}%
-                  </span>
-                ) : (
-                  <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                    <path d="M10 20.5l6.5 6.5L30.5 13" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                )}
-              </div>
+              <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                <path d="M10 20.5l6.5 6.5L30.5 13" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </MotionDiv>
             <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#9E9186] mb-1.5">{isEarlyEnd ? 'Session ended early' : 'Session complete'}</p>
             <h2 className="font-serif text-[32px] leading-tight font-bold text-[#1A1A1A] dark:text-white mb-2">{isEarlyEnd ? 'The work still counts.' : 'Focused work, finished.'}</h2>
@@ -1330,11 +1269,4 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   return null;
 };
 
-// Keep the approved phone/tablet setup, countdown and debrief together.
-// The current production desktop implementation above is left unchanged.
-const DeviceStudySessionView: React.FC<StudySessionViewProps> = props => {
-  const mobileAppDesign = useMobileAppDesign();
-  return mobileAppDesign ? <MobileStudySessionView {...props} /> : <StudySessionView {...props} />;
-};
-
-export default DeviceStudySessionView;
+export default StudySessionView;

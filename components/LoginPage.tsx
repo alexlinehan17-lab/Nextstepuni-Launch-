@@ -32,6 +32,9 @@ import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 import Avatar from './Avatar';
+import { useModal } from '../hooks/useModal';
+import './account-entry.css';
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 
 // Google Sign-In uses signInWithPopup, which has no real popup to open inside
 // Capacitor's webview on EITHER platform. Web only, until a native Google plugin
@@ -126,6 +129,7 @@ const CYCLING_CAPTIONS = [
 ];
 
 const GatewayPanel = () => {
+  const mobileAppDesign = useMobileAppDesign();
   const [capIdx, setCapIdx] = useState(0);
 
   useEffect(() => {
@@ -139,7 +143,7 @@ const GatewayPanel = () => {
     <div
       className="hidden md:flex md:flex-col w-1/2 relative overflow-hidden"
       style={{
-        backgroundColor: '#FFFFFF',
+        backgroundColor: mobileAppDesign ? '#F26B1F' : '#FFFFFF',
         borderRadius: '16px 0 0 16px',
         padding: '36px 44px',
       }}
@@ -173,7 +177,7 @@ const GatewayPanel = () => {
           }}
         >
           <img
-            src="/icons/gateway.png"
+            src={mobileAppDesign ? "/icons/onboarding/star-person.png" : "/icons/gateway.png"}
             alt=""
             aria-hidden
             style={{
@@ -225,24 +229,28 @@ const GatewayPanel = () => {
 // ── Responsive auth shell ────────────────────────────────────────
 // Desktop keeps the established split card. Mobile is deliberately a separate,
 // edge-to-edge app composition instead of shrinking that card into the viewport.
-const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
-  <div className="theme-compat relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-hidden bg-[var(--surface-canvas)] [overflow-anchor:none] md:min-h-screen md:p-8">
+const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode; view: string }> = ({ children, devButton, view }) => {
+  const mobileAppDesign = useMobileAppDesign();
+  return (
+  <div data-view={view} className={`${mobileAppDesign ? 'account-entry' : 'theme-compat'} relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-hidden bg-[var(--surface-canvas)] [overflow-anchor:none] md:min-h-screen md:p-8`}>
     <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="flex min-h-[100dvh] w-full bg-[var(--surface-canvas)] md:min-h-[540px] md:max-w-5xl md:overflow-hidden md:rounded-2xl md:border-[1.5px] md:border-black/25 md:bg-white md:shadow-[0_12px_40px_rgba(0,0,0,0.06)] dark:md:border-zinc-700 dark:md:bg-zinc-900"
+      className="account-card flex min-h-[100dvh] w-full bg-[var(--surface-canvas)] md:min-h-[540px] md:max-w-5xl md:overflow-hidden md:rounded-2xl md:border-[1.5px] md:border-black/25 md:bg-white md:shadow-[0_12px_40px_rgba(0,0,0,0.06)] dark:md:border-zinc-700 dark:md:bg-zinc-900"
     >
       <GatewayPanel />
-      <div className="flex w-full flex-1 flex-col justify-start px-5 pb-[calc(24px+var(--sab,0px))] pt-[calc(20px+var(--sat,0px))] sm:px-8 md:w-1/2 md:flex-none md:justify-center md:px-14 md:py-12">
+      <div className="account-form flex w-full flex-1 flex-col justify-start px-5 pb-[calc(24px+var(--sab,0px))] pt-[calc(20px+var(--sat,0px))] sm:px-8 md:w-1/2 md:flex-none md:justify-center md:px-14 md:py-12">
         <div className="mx-auto flex w-full max-w-[420px] flex-1 flex-col md:max-w-[380px] md:flex-none">
+          {mobileAppDesign && <div className="account-wordmark"><span>nextstepuni</span></div>}
           {children}
         </div>
       </div>
     </MotionDiv>
     {devButton}
   </div>
-);
+  );
+};
 
 /**
  * Copy for a registration failure, resolved at render rather than persisted.
@@ -299,8 +307,9 @@ async function writeUserDoc(
 }
 
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
+  const mobileAppDesign = useMobileAppDesign();
   // ── Top-level mode ──
-  const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'forgot'>('welcome');
+  const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'forgot'>(() => mobileAppDesign ? 'login' : 'welcome');
 
   // Boot the join-code function while the student is still typing.
   //
@@ -355,6 +364,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // before an account is created; `legalDoc` controls the reachable policy modal.
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
+  const [entryHelp, setEntryHelp] = useState<'code' | 'reset' | null>(null);
+  const entryHelpRef = useRef<HTMLDivElement>(null);
+  useModal(Boolean(entryHelp), () => setEntryHelp(null), entryHelpRef);
   const authViewRef = useRef<HTMLDivElement>(null);
 
   // Direction tracking for view transitions. Computed synchronously on
@@ -582,6 +594,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Forgot password handler ──
   const handleForgotPassword = async () => {
+    if (mobileAppDesign && (isLoading || resendCountdown > 0)) return;
     if (!email.trim()) { setError('Please enter your email address.'); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
       setError('Please enter a valid email address.');
@@ -872,7 +885,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // iOS's own AutoFill / Strong-Password key icon don't visually collide
   // inside the field.
   const passwordInputClass = `${inputClass} pr-12`;
-  const primaryBtn = "min-h-[52px] w-full rounded-xl border-2 px-4 py-3 text-[15px] font-bold transition-all disabled:cursor-not-allowed disabled:opacity-50";
+  const primaryBtn = "account-primary min-h-[52px] w-full rounded-xl border-2 px-4 py-3 text-[15px] font-bold transition-all disabled:cursor-not-allowed disabled:opacity-50";
   const primaryBtnStyle = { backgroundColor: 'var(--accent-hex)', color: 'var(--ink-on-accent)', borderColor: '#B94712' };
   const backButtonClass = "-ml-2 inline-flex min-h-11 items-center gap-1.5 rounded-xl px-2 text-sm font-semibold transition-colors";
   const passwordToggleClass = "absolute right-1 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-lg transition-colors";
@@ -910,7 +923,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ═══════════════════════════════════════════════════════════
   return (
     <>
-      <LoginCard devButton={demoButton}>
+      <LoginCard devButton={demoButton} view={view}>
         <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
         <MotionDiv
           ref={authViewRef}
@@ -921,11 +934,27 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           animate="center"
           exit="exit"
           transition={slideTransition}
-          className={view === 'welcome' ? 'flex flex-1 flex-col md:block md:flex-none' : 'w-full py-2 md:py-0'}
+          className={mobileAppDesign ? (view === 'welcome' ? 'account-view flex flex-1 flex-col' : 'account-view w-full py-2 md:py-0') : (view === 'welcome' ? 'flex flex-1 flex-col md:block md:flex-none' : 'w-full py-2 md:py-0')}
         >
           {/* ── WELCOME ────────────────────────────────────── */}
           {view === 'welcome' && (
-            <>
+            mobileAppDesign ? (
+<div className="account-welcome">
+              <p className="account-eyebrow">Built around how you learn</p>
+              <h1>Your study.<br />Your way.</h1>
+              <img src="/icons/onboarding/star-person.png" className="account-welcome-art" alt="" />
+              <p>Your subjects. Your goals.<br />A study plan that fits you.</p>
+              <div className="account-welcome-actions">
+                <button type="button" onClick={() => { resetForm(); setView('register'); }} className="account-primary">Create your account</button>
+                <button type="button" onClick={() => { resetForm(); setView('login'); }} className="account-secondary">Log in</button>
+                {SHOW_GOOGLE_SIGN_IN && <button type="button" onClick={handleGoogleSignIn} disabled={isLoading} className="account-secondary flex items-center justify-center gap-3"><GoogleIcon />Continue with Google</button>}
+                {SHOW_APPLE_SIGN_IN && <button type="button" onClick={handleAppleSignIn} disabled={isLoading} className="flex items-center justify-center gap-3 bg-black text-white"><AppleIcon />Continue with Apple</button>}
+              </div>
+              <button type="button" onClick={() => { resetForm(); setView('gc'); }} className="mt-4 flex min-h-12 items-center justify-between border-t border-black/25 text-sm font-semibold">School access<ArrowRight size={17} aria-hidden="true" /></button>
+              {error && <p role="alert" className="mt-4 text-sm font-semibold">{error}</p>}
+            </div>
+            ) : (
+<>
               {/* Mobile is a true app welcome screen: edge-to-edge, brand-led
                   and focused on the two student decisions that matter. */}
               <div className="flex flex-1 flex-col md:hidden">
@@ -1078,6 +1107,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </button>
               </div>
             </>
+            )
           )}
 
           {/* ── LOGIN ──────────────────────────────────────── */}
@@ -1086,17 +1116,17 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <button type="button" onClick={() => setView('welcome')} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
                 <ArrowLeft size={14} /> Back
               </button>
-              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome back</h2>
+              {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome<br />back.</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome back</h2>}
               <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Sign in with your email and password.</p>
               <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
                 <div>
                   <label htmlFor="login-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                  <input id="login-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                  <input id="login-email" name={mobileAppDesign ? "username" : undefined} type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete={mobileAppDesign ? "username" : "email"} autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                 </div>
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
                     <label htmlFor="login-password" className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
-                    <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="relative text-xs font-semibold transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[''] hover:opacity-80" style={{ color: '#F26B1F' }}>Forgot?</button>
+                    <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="relative text-xs font-semibold transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[''] hover:opacity-80" style={{ color: '#F26B1F' }}>{mobileAppDesign ? "Forgot password?" : "Forgot?"}</button>
                   </div>
                   <div className="relative">
                     <input id="login-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
@@ -1213,7 +1243,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <button type="button" onClick={() => { setView('login'); setError(''); setResetSent(false); }} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
                 <ArrowLeft size={14} /> Back to sign in
               </button>
-              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>
+              {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>}
               <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Enter your email and we&apos;ll send you a link to reset your password.</p>
               {resetSent ? (
                 <MotionDiv
@@ -1222,7 +1252,15 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   transition={{ ...SPRING_GENTLE, staggerChildren: 0.08, delayChildren: 0.05 }}
                   className="text-center py-2"
                 >
-                  <MotionDiv
+                  {mobileAppDesign ? <><img src="/icons/north-star/vision/results-day.png" className="account-reset-art" alt="" />
+
+                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
+                    <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
+                    <p className="text-sm mb-2" style={{ color: '#7a7068' }}>If an account uses <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span>, you’ll receive a password reset link.</p>
+                    <button type="button" className="account-help" onClick={() => { setResetSent(false); setResendCountdown(0); setError(''); }}>Change email address</button>
+                    <button type="button" className="account-help block" onClick={() => setEntryHelp('reset')}>Still need help?</button>
+                    {error && <p role="alert" className="my-3 text-sm text-red-700">{error}</p>}
+                  </MotionDiv></> : <><MotionDiv
                     initial={{ scale: 0, rotate: -8 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={SPRING_POP}
@@ -1235,7 +1273,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
                     <p className="text-sm mb-2" style={{ color: '#7a7068' }}>We&apos;ve sent a password reset link to <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span></p>
                     <p className="text-xs mb-6" style={{ color: '#9e9186' }}>Can&apos;t find it? Check your spam folder.</p>
-                  </MotionDiv>
+                  </MotionDiv></>}
 
                   <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE} className="space-y-2.5">
                     <MotionButton
@@ -1308,16 +1346,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <AnimatePresence mode="wait" initial={false} custom={stepDirection}>
                 {registerStep === 1 && (
                   <MotionDiv key="step1" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
+                    {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>}
                     <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
                     <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="space-y-4">
                       <div>
                         <label htmlFor="register-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                        <input id="register-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                        <input id="register-email" name={mobileAppDesign ? "username" : undefined} type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                       </div>
                       <div>
                         <label htmlFor="register-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
-                        <input id="register-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} autoComplete="given-name" autoCapitalize="words" autoCorrect="off" spellCheck={false} />
+                        <input id="register-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} autoComplete={mobileAppDesign ? "name" : "given-name"} autoCapitalize="words" autoCorrect="off" spellCheck={false} />
                       </div>
                       <div>
                         <label htmlFor="register-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
@@ -1335,7 +1373,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           <input id="register-join-code" type="text" value={joinCode} onChange={e => { setJoinCode(e.target.value); setError(''); }} placeholder="From your school" className={`${inputClass} pr-10`} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
                           <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
                         </div>
-                        <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>Your school gives you this code. It confirms you belong to your school.</p>
+                        {mobileAppDesign ? <button type="button" className="account-help" onClick={() => setEntryHelp('code')}>Where do I find my join code?</button> : <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>Your school gives you this code. It confirms you belong to your school.</p>}
                       </div>
                       <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                       <MotionButton type="submit" whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
@@ -1350,7 +1388,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
                 {registerStep === 2 && (
                   <MotionDiv key="step2" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>
+                    {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>}
                     <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Use at least {MIN_PASSWORD_LENGTH} characters. A short phrase is easier to remember and harder to guess.</p>
                     <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="space-y-4">
                       <div>
@@ -1378,7 +1416,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
                 {registerStep === 3 && (
                   <MotionDiv key="step3" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>
+                    {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>}
                     <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
                     <div className="mb-6 grid grid-cols-4 gap-3">
                       {AVATAR_SEEDS.map(seed => (
@@ -1423,7 +1461,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           <button type="button" onClick={() => setLegalDoc('terms')} className="font-semibold underline" style={{ color: '#F26B1F' }}>Terms of Use</button>.
                         </span>
                       </div>
-                      <p className="text-[11px] leading-snug mt-2" style={{ color: '#9e9186', paddingLeft: '30px' }}>
+                      <p className={mobileAppDesign ? "text-[13px] leading-relaxed mt-2" : "text-[11px] leading-snug mt-2"} style={{ color: '#9e9186', paddingLeft: '30px' }}>
                         Your school provides NextStepUni with your parent or guardian’s permission as part of enrolment. The Privacy Notice explains how your information is used.
                       </p>
                     </div>
@@ -1439,6 +1477,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         </MotionDiv>
         </AnimatePresence>
         <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
+        {entryHelp && <div className="fixed inset-0 z-[240] flex items-center justify-center bg-black/50 p-5"><div ref={entryHelpRef} className="account-help-dialog" role="dialog" aria-modal="true" aria-labelledby="entry-help-title"><h2 id="entry-help-title" className="text-2xl font-bold">{entryHelp === 'code' ? 'Let’s find your code.' : 'Still waiting?'}</h2>{entryHelp === 'code' ? <><p>Ask the teacher or guidance counsellor who introduced NextStepUni. They can confirm your school’s join code.</p><p>Check your school’s welcome message, too. Your entered details will stay here while you check.</p></> : <><p>Check your spam or junk folder, then confirm the email address you used for your account.</p><p>If you signed in with Apple or Google, go back and use the same sign-in option.</p><button type="button" className="account-help" onClick={() => { setEntryHelp(null); setResetSent(false); setResendCountdown(0); setError(''); }}>Check email address</button></>}<button type="button" className={primaryBtn} style={primaryBtnStyle} onClick={() => setEntryHelp(null)}>{entryHelp === 'code' ? 'Back to your details' : 'Back to password recovery'}</button></div></div>}
       </LoginCard>
 
     </>
