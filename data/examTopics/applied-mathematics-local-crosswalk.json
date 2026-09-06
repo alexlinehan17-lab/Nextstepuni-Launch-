@@ -1,0 +1,5563 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "applied-mathematics",
+  "generatedAt": "2026-09-05T22:46:27.511Z",
+  "status": "exact-current-corpus-mapped-source-completion-pending",
+  "summary": {
+    "referenceTopics": 33,
+    "referenceOfficialAssociations": 369,
+    "matchedAssociations": 277,
+    "sourceBlockedAssociations": 92,
+    "sourceBlockedByReason": {
+      "before-local-corpus": 31,
+      "deferred-sitting-not-in-local-corpus": 26,
+      "official-sample-paper-not-in-local-corpus": 35
+    },
+    "matchedLocalCardLinks": 277,
+    "localPaperVariants": 63,
+    "localPhysicalMappings": 608,
+    "distinctStudentFacingQuestions": 318
+  },
+  "policy": {
+    "matchedSource": "Entitled local State Examinations Commission corpus only.",
+    "excludedContent": "No commercial mock question, solution, note, question text, image, media or provider-hosted PDF is copied.",
+    "completion": "A reference heading is matched only when every represented printed task exists in an answer-anchored local paper."
+  },
+  "associations": [
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2026 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2025 - Question 1 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2024 - Question 4 - (i)-(iii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2024 - Question 7 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2023 - Sample Paper - Section 1 - Question 6",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2023 - Paper - Section 1 - Question 3 - (i)-(iv)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2023 - Paper - Section 1 - Question 10 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2023 - Deferred Exam Paper - Question 10",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2023 - Deferred Exam Paper - Question 1 - Part B",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2022 - Paper - Section 1 - Question 6 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2022 - Deferred Exam Paper - Question 6",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2021 - Section 1 - Question 6 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2020 - Section A - Question 6 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2019 - Section 1 - Question 6 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2018 - Section 1 - Question 6 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2017 - Section A - Question 6 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2016 - Section A - Question 6 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2015 - Section A - Question 6 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2013 - Section 1 - Question 6 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2012 - Section 1 - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2011 - Section 1 - Question 6 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2010 - Section 1 - Question 6 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-circular-motion",
+      "heading": "2008 - Section 1 - Question 6 - Part b",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2026 - Question 8 - Part A - (iii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2026 - Question 1 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2026 - Question 7 - (i)-(iii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2026 - Question 8 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2025 - Question 8 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2025 - Question 10 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2024 - Question 9 - Part A - (i)-(iii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2024 - Question 9 - Part A - (iv)-(v)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2024 - Question 6 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2023 - Sample Paper - Section 1 - Question 8",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2023 - Sample Paper - Section 1 - Question 1 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2023 - Paper - Section 1 - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2023 - Paper - Section 1 - Question 10 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2023 - Deferred Exam Paper - Question 3",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-difference-equations",
+      "heading": "2023 - Deferred Exam Paper - Question 2 - Part B - (i)-(ii)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2026 - Question 2 - (ii)-(v)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2026 - Question 6 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2026 - Question 7 - (iv)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2025 - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2025 - Question 8 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2024 - Question 3 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2024 - Question 4 - (v)-(vi)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2024 - Question 6 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Sample Paper - Section 1 - Question 8",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Sample Paper - Section 1 - Question 3 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Sample Paper - Section 1 - Question 5 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Paper - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Paper - Section 1 - Question 1 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Paper - Section 1 - Question 7 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Deferred Exam Paper - Question 4",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Deferred Exam Paper - Question 2 - Part B - (iii)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2023 - Deferred Exam Paper - Question 5 - (ii)-(iv)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2022 - Paper - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2022 - Deferred Exam Paper - Question 10 - Part A",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2022 - Deferred Exam Paper - Question 10 - Part B",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2021 - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2020 - Section A - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2019 - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2018 - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2017 - Section A - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2016 - Section A - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2015 - Section A - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2014 - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2013 - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2012 - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2011 - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2010 - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2009 - Section 1 - Question 10",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2008 - Section 1 - Question 10",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-differential-equations",
+      "heading": "2007 - Section 1 - Question 10",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2026 - Question 9 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2025 - Question 8 - Part B - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2025 - Question 2 - (iii),(iv)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2024 - Question 6 - Part B - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2024 - Question 3 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2024 - Question 4 - (v)-(vi)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2023 - Sample Paper - Section 1 - Question 8",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2023 - Paper - Section 1 - Question 1 - Part B - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2023 - Paper - Section 1 - Question 7 - Part B - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2023 - Paper - Section 1 - Question 4 - (i)-(iii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2023 - Deferred Exam Paper - Question 4 - (iv)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2023 - Deferred Exam Paper - Question 5 - (ii)-(iv)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2010 - Section 1 - Question 10 - Part B - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2009 - Section 1 - Question 10 - Part A",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+      "heading": "2007 - Section 1 - Question 10 - Part B - (i)",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-hookes-law",
+      "heading": "2025 - Question 6 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-hookes-law",
+      "heading": "2023 - Sample Paper - Section 1 - Question 7 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-hookes-law",
+      "heading": "2023 - Deferred Exam Paper - Question 7 - (iii)-(iv)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2026 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2026 - Question 3 - (iv)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2025 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2025 - Question 9 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2024 - Question 3 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2024 - Question 5 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2023 - Sample Paper - Section 1 - Question 4 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2023 - Sample Paper - Section 1 - Question 4 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2023 - Paper - Section 1 - Question 2 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2023 - Deferred Exam Paper - Question 7 - (i)-(ii)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2022 - Paper - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2022 - Deferred Exam Paper - Question 5",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2021 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2020 - Section A - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2019 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2018 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2017 - Section A - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2016 - Section A - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2015 - Section A - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2014 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2013 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2012 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2011 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2010 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2009 - Section 1 - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2008 - Section 1 - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-impacts-collisions",
+      "heading": "2007 - Section 1 - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2026 - Question 1 - Part A - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2026 - Question 1 - Part A - (iii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2025 - Question 7 - Part A - (ii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2025 - Question 1 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2025 - Question 3 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2024 - Question 1 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2023 - Sample Paper - Section 1 - Question 2",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2023 - Sample Paper - Section 1 - Question 1 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2023 - Paper - Section 1 - Question 1 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2023 - Paper - Section 1 - Question 7 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2023 - Paper - Section 1 - Question 9 - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2023 - Paper - Section 1 - Question 9 - (ii)-(v)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2023 - Deferred Exam Paper - Question 9",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-networks-and-graphs",
+      "heading": "2023 - Deferred Exam Paper - Question 2 - Part A",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2026 - Question 3 - (i)-(iii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2026 - Question 3 - (v)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2025 - Question 3 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2025 - Question 5 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2024 - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2023 - Sample Paper - Section 1 - Question 7 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2023 - Paper - Section 1 - Question 5 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2023 - Deferred Exam Paper - Question 8",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2022 - Paper - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2022 - Deferred Exam Paper - Question 4",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2022 - Deferred Exam Paper - Question 7",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2021 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2020 - Section A - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2019 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2018 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2017 - Section A - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2016 - Section A - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2015 - Section A - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2014 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2013 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2012 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2011 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2010 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2009 - Section 1 - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2008 - Section 1 - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-newtons-laws-connected-particles",
+      "heading": "2007 - Section 1 - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2026 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2026 - Question 1 - Part A - (ii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2026 - Question 2 - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2025 - Question 7 - Part A - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2025 - Question 6 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2024 - Question 8 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2024 - Question 10 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2023 - Sample Paper - Section 1 - Question 5 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2023 - Paper - Section 1 - Question 2 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2023 - Paper - Section 1 - Question 9 - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2023 - Paper - Section 1 - Question 9 - (ii)-(v)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-optimal-critical-paths",
+      "heading": "2023 - Deferred Exam Paper - Question 6 - Part B",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2026 - Question 9 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2025 - Question 7 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2025 - Question 10 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2024 - Question 7 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2023 - Sample Paper - Section 1 - Question 4 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2023 - Paper - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2022 - Paper - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2022 - Deferred Exam Paper - Question 3",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2021 - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2020 - Section A - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2019 - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2018 - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2017 - Section A - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2016 - Section A - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2015 - Section A - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2014 - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2013 - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2012 - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2011 - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2010 - Section 1 - Question 3 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2009 - Section 1 - Question 3 - Part a",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2008 - Section 1 - Question 3 - Part a",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-projectiles",
+      "heading": "2007 - Section 1 - Question 3 - Part a",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2026 - Question 8 - Part A - (i),(ii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2026 - Question 6 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2025 - Question 9 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2024 - Question 1 - Part C",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2024 - Question 4 - (iv)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2024 - Question 5 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2023 - Sample Paper - Section 1 - Question 3 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2023 - Paper - Section 1 - Question 3 - (v)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2023 - Paper - Section 1 - Question 5 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2023 - Deferred Exam Paper - Question 5 - (i)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2023 - Deferred Exam Paper - Question 5 - (ii)-(iv)",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2023 - Deferred Exam Paper - Question 6 - Part A",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2022 - Paper - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2022 - Deferred Exam Paper - Question 1",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2021 - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2020 - Section A - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2019 - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2018 - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2017 - Section A - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2016 - Section A - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2015 - Section A - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2014 - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2013 - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2012 - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2011 - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2010 - Section 1 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2009 - Section 1 - Question 1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2008 - Section 1 - Question 1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
+      "heading": "2007 - Section 1 - Question 1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-vectors",
+      "heading": "2025 - Question 5 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-vectors",
+      "heading": "2023 - Paper - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-work-power-energy-momentum",
+      "heading": "2023 - Sample Paper - Section 1 - Question 7 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-higher-work-power-energy-momentum",
+      "heading": "2008 - Section 1 - Question 10 - Part B - (i)",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2026 - Question 6 - (iii)-(vi)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2025 - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2024 - Question 3 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2023 - Sample Paper - Section 1 - Question 1 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2023 - Paper - Section 1 - Question 2 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2023 - Paper - Section 1 - Question 2 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2022 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2021 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2019 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2018 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2017 - Section A - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2016 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2015 - Section A - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2014 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2013 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2012 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2011 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2010 - Section 1 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2009 - Section 1 - Question 8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2008 - Section 1 - Question 8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-circular-motion",
+      "heading": "2007 - Section 1 - Question 8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2026 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2025 - Question 2 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2025 - Question 8 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2025 - Question 10 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2024 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2024 - Question 3 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2023 - Sample Paper - Section 1 - Question 3",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2023 - Sample Paper - Section 1 - Question 5 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2023 - Paper - Section 1 - Question 1 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2023 - Paper - Section 1 - Question 8 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-difference-equations",
+      "heading": "2023 - Paper - Section 1 - Question 8 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-dimensional-analysis",
+      "heading": "2026 - Question 10 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-dimensional-analysis",
+      "heading": "2023 - Paper - Section 1 - Question 5 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2026 - Question 1 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2025 - Question 5 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2024 - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2023 - Sample Paper - Section 1 - Question 5 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2023 - Sample Paper - Section 1 - Question 5 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2023 - Paper - Section 1 - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2022 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2021 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2019 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2018 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2017 - Section A - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2016 - Section A - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2015 - Section A - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2014 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2013 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2012 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2011 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2010 - Section 1 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2009 - Section 1 - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2008 - Section 1 - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-impacts-collisions",
+      "heading": "2007 - Section 1 - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2026 - Question 1 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2026 - Question 9 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2025 - Question 9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2025 - Question 4 - Part (v),(vi)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2024 - Question 9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2024 - Question 5 - Part A - (i)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2024 - Question 6 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2023 - Sample Paper - Section 1 - Question 2 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2023 - Sample Paper - Section 1 - Question 2 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2023 - Sample Paper - Section 1 - Question 7 - Part a,b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2023 - Sample Paper - Section 1 - Question 7 - Part c",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2023 - Paper - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2023 - Paper - Section 1 - Question 1 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2023 - Paper - Section 1 - Question 4 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-networks-graphs",
+      "heading": "2023 - Paper - Section 1 - Question 4 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2026 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2025 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2025 - Question 2 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2024 - Question 8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2023 - Sample Paper - Section 1 - Question 6",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2023 - Sample Paper - Section 1 - Question 1 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2023 - Paper - Section 1 - Question 2 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2023 - Paper - Section 1 - Question 9 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2023 - Paper - Section 1 - Question 9 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2022 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2021 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2019 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2018 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2017 - Section A - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2016 - Section A - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2015 - Section A - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2014 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2013 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2012 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2011 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2010 - Section 1 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2009 - Section 1 - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2008 - Section 1 - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-newtons-laws-connected-particles",
+      "heading": "2007 - Section 1 - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2026 - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2026 - Question 9 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2026 - Question 10 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2025 - Question 4 - Part (i),(ii),(iii),(iv)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2024 - Question 5 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2024 - Question 6 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2023 - Sample Paper - Section 1 - Question 2 - Part a",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2023 - Sample Paper - Section 1 - Question 7 - Part c",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2023 - Paper - Section 1 - Question 10",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2023 - Paper - Section 1 - Question 4 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-optimal-critical-paths",
+      "heading": "2023 - Paper - Section 1 - Question 4 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2026 - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2025 - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2024 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2023 - Sample Paper - Section 1 - Question 4",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2023 - Sample Paper - Section 1 - Question 5 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2023 - Paper - Section 1 - Question 5 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2022 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2021 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2019 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2018 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2017 - Section A - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2016 - Section A - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2015 - Section A - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2014 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2013 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2012 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2011 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2010 - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2009 - Section 1 - Question 3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2008 - Section 1 - Question 3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-projectiles",
+      "heading": "2007 - Section 1 - Question 3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-uniform-accelerated-motion",
+      "heading": "2026 - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-uniform-accelerated-motion",
+      "heading": "2025 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-uniform-accelerated-motion",
+      "heading": "2025 - Question 10 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-uniform-accelerated-motion",
+      "heading": "2024 - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-uniform-accelerated-motion",
+      "heading": "2023 - Sample Paper - Section 1 - Question 6",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-uniform-accelerated-motion",
+      "heading": "2023 - Sample Paper - Section 1 - Question 8",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-uniform-accelerated-motion",
+      "heading": "2023 - Paper - Section 1 - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-uniform-accelerated-motion",
+      "heading": "2023 - Paper - Section 1 - Question 9 - Part a",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-vectors",
+      "heading": "2026 - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-vectors",
+      "heading": "2025 - Question 8 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-vectors",
+      "heading": "2024 - Question 2 - (i)-(vi)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-vectors",
+      "heading": "2023 - Paper - Section 1 - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-vectors",
+      "heading": "2023 - Paper - Section 1 - Question 2 - Part b",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-work-energy-power-momentum",
+      "heading": "2026 - Question 6 - (i),(ii)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "iv",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC020GLP000IV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-work-energy-power-momentum",
+      "heading": "2025 - Question 5 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-work-energy-power-momentum",
+      "heading": "2023 - Sample Paper - Section 1 - Question 1 - Part b",
+      "resolution": "source-blocked",
+      "reason": "official-sample-paper-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2023,
+          "sitting": "sample",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "applied-mathematics-ordinary-work-energy-power-momentum",
+      "heading": "2023 - Paper - Section 1 - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC020GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    }
+  ]
+}

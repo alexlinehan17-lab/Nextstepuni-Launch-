@@ -1,0 +1,375 @@
+{
+  "english-higher-comparative-cultural-context": [
+    "english-7-3"
+  ],
+  "english-higher-comparative-literary-genre": [
+    "english-7-2"
+  ],
+  "english-higher-comparative-theme-or-issue": [
+    "english-7-0"
+  ],
+  "english-higher-comparative-vision-viewpoint": [
+    "english-7-4"
+  ],
+  "english-higher-composition": [
+    "english-9-1"
+  ],
+  "english-higher-hamlet": [
+    "english-6-0",
+    "english-6-1",
+    "english-12-0"
+  ],
+  "english-higher-othello": [
+    "english-6-0",
+    "english-6-1",
+    "english-12-3"
+  ],
+  "english-higher-poetry-bishop": [
+    "english-8-0",
+    "english-11-0"
+  ],
+  "english-higher-poetry-dickinson": [
+    "english-8-0",
+    "english-11-2"
+  ],
+  "english-higher-poetry-donne": [
+    "english-8-0",
+    "english-11-3"
+  ],
+  "english-higher-poetry-heaney": [
+    "english-8-0",
+    "english-11-8"
+  ],
+  "english-higher-poetry-hopkins": [
+    "english-8-0",
+    "english-11-9"
+  ],
+  "english-higher-poetry-kavanagh": [
+    "english-8-0",
+    "english-11-10"
+  ],
+  "english-higher-poetry-mahon": [
+    "english-8-0",
+    "english-11-15"
+  ],
+  "english-higher-poetry-meehan": [
+    "english-8-0",
+    "english-11-16"
+  ],
+  "english-higher-poetry-ni-chuilleanain": [
+    "english-8-0",
+    "english-11-18"
+  ],
+  "english-higher-poetry-plath": [
+    "english-8-0",
+    "english-11-19"
+  ],
+  "english-higher-poetry-rich": [
+    "english-8-0",
+    "english-11-20"
+  ],
+  "english-higher-poetry-yeats": [
+    "english-8-0",
+    "english-11-23"
+  ],
+  "english-higher-reading-comprehension": [
+    "english-10-0",
+    "english-10-1"
+  ],
+  "english-higher-text-a-dolls-house": [
+    "english-6-0",
+    "english-12-6"
+  ],
+  "english-higher-text-dracula": [
+    "english-6-0",
+    "english-12-11"
+  ],
+  "english-higher-text-girl-on-an-altar": [
+    "english-6-0",
+    "english-12-13"
+  ],
+  "english-higher-text-hamnet": [
+    "english-6-0",
+    "english-12-14"
+  ],
+  "english-higher-text-the-great-gatsby": [
+    "english-6-0",
+    "english-12-22"
+  ],
+  "english-higher-text-the-tenant-of-wildfell-hall": [
+    "english-6-0",
+    "english-12-28"
+  ],
+  "english-higher-text-wuthering-heights": [
+    "english-6-0",
+    "english-12-30"
+  ],
+  "english-higher-unseen-poetry": [
+    "english-8-2"
+  ],
+  "english-ordinary-1-composition": [
+    "english-9-1"
+  ],
+  "english-ordinary-1-reading-comprehension": [
+    "english-10-0",
+    "english-10-1"
+  ],
+  "english-ordinary-comparative-hero-heroine-villain": [
+    "english-7-5"
+  ],
+  "english-ordinary-comparative-relationships": [
+    "english-7-6"
+  ],
+  "english-ordinary-comparative-social-setting": [
+    "english-7-7"
+  ],
+  "english-ordinary-comparative-theme": [
+    "english-7-0"
+  ],
+  "english-ordinary-hamlet": [
+    "english-6-0",
+    "english-6-1",
+    "english-12-0"
+  ],
+  "english-ordinary-othello": [
+    "english-6-0",
+    "english-6-1",
+    "english-12-3"
+  ],
+  "english-ordinary-poetry-adcock": [
+    "english-8-1",
+    "english-11-24"
+  ],
+  "english-ordinary-poetry-angelou": [
+    "english-8-1"
+  ],
+  "english-ordinary-poetry-bishop": [
+    "english-8-1",
+    "english-11-0"
+  ],
+  "english-ordinary-poetry-brooks": [
+    "english-8-1",
+    "english-11-25"
+  ],
+  "english-ordinary-poetry-browning": [
+    "english-8-1",
+    "english-11-26"
+  ],
+  "english-ordinary-poetry-bryce": [
+    "english-8-1",
+    "english-11-27"
+  ],
+  "english-ordinary-poetry-carver": [
+    "english-8-1"
+  ],
+  "english-ordinary-poetry-clarke": [
+    "english-8-1"
+  ],
+  "english-ordinary-poetry-coleridge": [
+    "english-8-1"
+  ],
+  "english-ordinary-poetry-dickinson": [
+    "english-8-1",
+    "english-11-2"
+  ],
+  "english-ordinary-poetry-donne": [
+    "english-8-1",
+    "english-11-3"
+  ],
+  "english-ordinary-poetry-dove": [
+    "english-8-1",
+    "english-11-29"
+  ],
+  "english-ordinary-poetry-duffy": [
+    "english-8-1",
+    "english-11-30"
+  ],
+  "english-ordinary-poetry-france": [
+    "english-8-1",
+    "english-11-31"
+  ],
+  "english-ordinary-poetry-french": [
+    "english-8-1",
+    "english-11-51"
+  ],
+  "english-ordinary-poetry-giovanni": [
+    "english-8-1"
+  ],
+  "english-ordinary-poetry-groarke": [
+    "english-8-1"
+  ],
+  "english-ordinary-poetry-heaney": [
+    "english-8-1",
+    "english-11-8"
+  ],
+  "english-ordinary-poetry-hopkins": [
+    "english-8-1",
+    "english-11-9"
+  ],
+  "english-ordinary-poetry-hughes": [
+    "english-8-1",
+    "english-11-50"
+  ],
+  "english-ordinary-poetry-joseph": [
+    "english-8-1",
+    "english-11-32"
+  ],
+  "english-ordinary-poetry-kavanagh": [
+    "english-8-1",
+    "english-11-10"
+  ],
+  "english-ordinary-poetry-mahon": [
+    "english-8-1",
+    "english-11-15"
+  ],
+  "english-ordinary-poetry-meehan": [
+    "english-8-1",
+    "english-11-16"
+  ],
+  "english-ordinary-poetry-morrissey": [
+    "english-8-1",
+    "english-11-33"
+  ],
+  "english-ordinary-poetry-muldoon": [
+    "english-8-1",
+    "english-11-34"
+  ],
+  "english-ordinary-poetry-ni-chuilleanain": [
+    "english-8-1",
+    "english-11-18"
+  ],
+  "english-ordinary-poetry-olusanya": [
+    "english-8-1",
+    "english-11-37"
+  ],
+  "english-ordinary-poetry-rich": [
+    "english-8-1",
+    "english-11-20"
+  ],
+  "english-ordinary-poetry-robinson": [
+    "english-8-1",
+    "english-11-39"
+  ],
+  "english-ordinary-poetry-seibles": [
+    "english-8-1",
+    "english-11-40"
+  ],
+  "english-ordinary-poetry-shakespeare": [
+    "english-8-1",
+    "english-11-41"
+  ],
+  "english-ordinary-poetry-shelley": [
+    "english-8-1",
+    "english-11-42"
+  ],
+  "english-ordinary-poetry-yeats": [
+    "english-8-1",
+    "english-11-23"
+  ],
+  "english-ordinary-text-1984": [
+    "english-6-0",
+    "english-12-5"
+  ],
+  "english-ordinary-text-a-dolls-house": [
+    "english-6-0",
+    "english-12-6"
+  ],
+  "english-ordinary-text-a-raisin-in-the-sun": [
+    "english-6-0",
+    "english-12-7"
+  ],
+  "english-ordinary-text-dracula": [
+    "english-6-0",
+    "english-12-11"
+  ],
+  "english-ordinary-text-girl-on-an-altar": [
+    "english-6-0",
+    "english-12-13"
+  ],
+  "english-ordinary-text-hamnet": [
+    "english-6-0",
+    "english-12-14"
+  ],
+  "english-ordinary-text-room": [
+    "english-6-0",
+    "english-12-18"
+  ],
+  "english-ordinary-text-silas-marner": [
+    "english-6-0",
+    "english-12-31"
+  ],
+  "english-ordinary-text-sive": [
+    "english-6-0",
+    "english-12-19"
+  ],
+  "english-ordinary-text-the-cove": [
+    "english-6-0",
+    "english-12-20"
+  ],
+  "english-ordinary-text-the-great-gatsby": [
+    "english-6-0",
+    "english-12-22"
+  ],
+  "english-ordinary-text-the-spinning-heart": [
+    "english-6-0",
+    "english-12-27"
+  ],
+  "english-ordinary-text-the-tenant-of-windfell-hall": [
+    "english-6-0",
+    "english-12-28"
+  ],
+  "english-ordinary-text-the-underground-railroad": [
+    "english-6-0",
+    "english-12-29"
+  ],
+  "english-ordinary-text-wuthering-heights": [
+    "english-6-0",
+    "english-12-30"
+  ],
+  "english-ordinary-unseen-poetry": [
+    "english-8-2"
+  ],
+  "english-higher-comparative-relationships-archive": [
+    "english-7-6"
+  ],
+  "english-higher-poetry-boland-archive": [
+    "english-8-0",
+    "english-11-1"
+  ],
+  "english-higher-poetry-durcan-archive": [
+    "english-8-0",
+    "english-11-4"
+  ],
+  "english-higher-poetry-eliot-archive": [
+    "english-8-0",
+    "english-11-5"
+  ],
+  "english-higher-poetry-frost-archive": [
+    "english-8-0",
+    "english-11-6"
+  ],
+  "english-higher-poetry-hardy-archive": [
+    "english-8-0",
+    "english-11-7"
+  ],
+  "english-higher-poetry-keats-archive": [
+    "english-8-0",
+    "english-11-11"
+  ],
+  "english-higher-poetry-larkin-archive": [
+    "english-8-0",
+    "english-11-13"
+  ],
+  "english-higher-poetry-montague-archive": [
+    "english-8-0",
+    "english-11-17"
+  ],
+  "english-higher-poetry-smith-archive": [
+    "english-8-0",
+    "english-11-21"
+  ],
+  "english-higher-poetry-wordsworth-archive": [
+    "english-8-0",
+    "english-11-22"
+  ]
+}

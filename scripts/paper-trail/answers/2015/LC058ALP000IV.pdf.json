@@ -1,1 +1,419 @@
-{"band":[1,21],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058ALP000IV.pdf","q":[{"conf":1.0,"label":"Ceist 1 · A (Kellogg's) · Q1-4","mode":"crop","n":"1","pP":3,"pY":[0.0494,1.0],"region":[{"p":5,"r":[0.0,0.2461,1.0,1.0]},{"p":6,"r":[0.0,0.0,1.0,0.1633]}]},{"conf":1.0,"label":"Ceist 1 · B (Web forum) · Q1-4","mode":"crop","n":"2","pP":4,"pY":[0.671,1.0],"region":[{"p":6,"r":[0.0,0.1633,1.0,0.5121]}]},{"conf":1.0,"label":"Ceist 2 · A · Q1 (table)","mode":"crop","n":"3","pP":7,"pY":[0.0673,1.0],"region":[{"p":6,"r":[0.0,0.5121,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0478]}]},{"conf":1.0,"label":"Ceist 2 · A · Q2 (Japanese)","mode":"crop","n":"4","pP":7,"pY":[0.3229,1.0],"region":[{"p":7,"r":[0.0,0.0478,1.0,0.4159]}]},{"conf":1.0,"label":"Ceist 2 · A · Q3 (English)","mode":"crop","n":"5","pP":7,"pY":[0.5959,1.0],"region":[{"p":7,"r":[0.0,0.4159,1.0,0.6125]}]},{"conf":1.0,"label":"Ceist 2 · A · Q4 (translate)","mode":"crop","n":"6","pP":7,"pY":[0.8294,1.0],"region":[{"p":7,"r":[0.0,0.6125,1.0,0.7389]}]},{"conf":1.0,"label":"Ceist 3 · A (Brendan blog) · Q1-3","mode":"crop","n":"7","pP":11,"pY":[0.0837,1.0],"region":[{"p":9,"r":[0.0,0.1106,1.0,0.586]}]},{"conf":1.0,"label":"Ceist 3 · B (Japanese) · Q1-2","mode":"crop","n":"8","pP":11,"pY":[0.7991,1.0],"region":[{"p":9,"r":[0.0,0.586,1.0,0.7681]}]}],"schemeFileid":"LC058ALP000IV.pdf","v":1}
+{
+  "band": [
+    1,
+    21
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058ALP000IV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · A (Kellogg's) · Q1-4",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0494,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.2461,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.1633
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · B (Web forum) · Q1-4",
+      "mode": "crop",
+      "n": "2",
+      "pP": 4,
+      "pY": [
+        0.671,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.1633,
+            1.0,
+            0.5121
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · A · Q1 (table)",
+      "mode": "crop",
+      "n": "3",
+      "pP": 7,
+      "pY": [
+        0.0673,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.5121,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0478
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · A · Q2 (Japanese)",
+      "mode": "crop",
+      "n": "4",
+      "pP": 7,
+      "pY": [
+        0.3229,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0478,
+            1.0,
+            0.4159
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · A · Q3 (English)",
+      "mode": "crop",
+      "n": "5",
+      "pP": 7,
+      "pY": [
+        0.5959,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.4159,
+            1.0,
+            0.6125
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · A · Q4 (translate)",
+      "mode": "crop",
+      "n": "6",
+      "pP": 7,
+      "pY": [
+        0.8294,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.6125,
+            1.0,
+            0.7389
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · A (Brendan blog) · Q1-3",
+      "mode": "crop",
+      "n": "7",
+      "pP": 11,
+      "pY": [
+        0.0837,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.1106,
+            1.0,
+            0.586
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · B (Japanese) · Q1-2",
+      "mode": "crop",
+      "n": "8",
+      "pP": 11,
+      "pY": [
+        0.7991,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.586,
+            1.0,
+            0.7681
+          ]
+        }
+      ],
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Short written production",
+      "mode": "crop",
+      "n": "9",
+      "pP": 14,
+      "pY": [
+        0.0519,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0478,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0477,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 15,
+      "endY": 0.93,
+      "printOrder": 13
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Extended written production",
+      "mode": "crop",
+      "n": "10",
+      "pP": 16,
+      "pY": [
+        0.0517,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0806,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0477,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 19,
+      "endY": 0.93,
+      "printOrder": 14
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · B · Kanji",
+      "mode": "crop",
+      "n": "11",
+      "pP": 8,
+      "pY": [
+        0.0511,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.7389,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.2058
+          ]
+        }
+      ],
+      "endP": 8,
+      "endY": 0.93,
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · C · Gramadach",
+      "mode": "crop",
+      "n": "12",
+      "pP": 9,
+      "pY": [
+        0.0511,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.2058,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0478
+          ]
+        }
+      ],
+      "endP": 9,
+      "endY": 0.93,
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · C · Kanji",
+      "mode": "crop",
+      "n": "13",
+      "pP": 12,
+      "pY": [
+        0.0511,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.7681,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0478
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.4713,
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · D · Gramadach",
+      "mode": "crop",
+      "n": "14",
+      "pP": 12,
+      "pY": [
+        0.4713,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0478,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0478
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.93,
+      "printOrder": 12
+    }
+  ],
+  "schemeFileid": "LC058ALP000IV.pdf",
+  "v": 1
+}

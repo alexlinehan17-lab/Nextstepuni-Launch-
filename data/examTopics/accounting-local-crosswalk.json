@@ -1,0 +1,6657 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "accounting",
+  "generatedAt": "2026-09-05T22:46:27.360Z",
+  "status": "exact-current-corpus-mapped-source-completion-pending",
+  "summary": {
+    "referenceTopics": 43,
+    "referenceOfficialAssociations": 442,
+    "matchedAssociations": 326,
+    "sourceBlockedAssociations": 116,
+    "sourceBlockedByReason": {
+      "before-local-corpus": 94,
+      "deferred-sitting-not-in-local-corpus": 22
+    },
+    "matchedLocalCardLinks": 326,
+    "localPaperVariants": 66,
+    "localPhysicalMappings": 594,
+    "distinctStudentFacingQuestions": 306
+  },
+  "policy": {
+    "matchedSource": "Entitled local State Examinations Commission corpus only.",
+    "excludedContent": "No commercial mock question, solution, note, question text, image, media or provider-hosted PDF is copied.",
+    "completion": "A reference heading is matched only when every represented printed task exists in an answer-anchored local paper."
+  },
+  "associations": [
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2023|deferred|9",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2023|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2022|deferred|9",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2020|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2016|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2015|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2013|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2012|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2010|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2009|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-cash",
+      "heading": "2007|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-flexible",
+      "heading": "2024|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-flexible",
+      "heading": "2021|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-flexible",
+      "heading": "2018|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-flexible",
+      "heading": "2015|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-flexible",
+      "heading": "2012|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-flexible",
+      "heading": "2008|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-flexible",
+      "heading": "2006|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2026|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2025|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2024|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2022|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2020|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2019|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2017|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2014|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2011|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2008|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-budgeting-production",
+      "heading": "2005|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2026|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2024|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2023|deferred|7",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2022|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2021|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2019|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2017|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2015|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2014|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2012|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2010|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2008|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-cash-flow-statements",
+      "heading": "2006|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-club-accounts",
+      "heading": "2026|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-club-accounts",
+      "heading": "2022|deferred|6",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-club-accounts",
+      "heading": "2022|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-club-accounts",
+      "heading": "2019|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-club-accounts",
+      "heading": "2016|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-club-accounts",
+      "heading": "2013|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-club-accounts",
+      "heading": "2011|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-club-accounts",
+      "heading": "2008|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2026|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2025|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2023|deferred|4",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2023|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2022|deferred|3",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2021|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2019|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2016|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2014|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2011|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2010|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2008|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2007|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-control-accounts",
+      "heading": "2005|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2026|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2024|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2022|deferred|7",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2022|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2020|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2018|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2016|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2014|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2012|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2010|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2008|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-correction-of-errorssuspense",
+      "heading": "2006|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2026|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2023|deferred|8",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2022|deferred|8",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2022|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2021|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2019|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2018|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2016|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2015|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2013|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2012|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2010|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2009|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2007|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-job-product-stock-valuation-oh-apportionment",
+      "heading": "2005|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2025|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2023|deferred|8",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2023|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2022|deferred|8",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2020|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2017|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2014|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2011|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2008|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-costing-marginal",
+      "heading": "2006|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-depreciation-of-fixed-assets",
+      "heading": "2024|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-depreciation-of-fixed-assets",
+      "heading": "2022|deferred|2",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-depreciation-of-fixed-assets",
+      "heading": "2021|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-depreciation-of-fixed-assets",
+      "heading": "2018|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-depreciation-of-fixed-assets",
+      "heading": "2015|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-depreciation-of-fixed-assets",
+      "heading": "2013|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-depreciation-of-fixed-assets",
+      "heading": "2010|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-depreciation-of-fixed-assets",
+      "heading": "2005|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-farm-accounts",
+      "heading": "2024|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-farm-accounts",
+      "heading": "2020|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-farm-accounts",
+      "heading": "2015|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-farm-accounts",
+      "heading": "2012|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-farm-accounts",
+      "heading": "2009|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-farm-accounts",
+      "heading": "2006|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2026|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2025|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2024|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2023|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2022|deferred|1",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2022|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2019|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2015|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2012|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-company",
+      "heading": "2007|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2026|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2024|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2023|deferred|1",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2022|deferred|1",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2022|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2021|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2018|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2016|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2013|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2011|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2009|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-manufacturing",
+      "heading": "2005|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2025|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2023|deferred|1",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2023|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2021|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2020|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2017|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2014|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2010|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2008|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-final-accounts-sole-trader",
+      "heading": "2006|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2017|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2015|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2015|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2013|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2012|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2010|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2009|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2007|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-fixed-assets-valuation",
+      "heading": "2005|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-a",
+      "heading": "2025|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-a",
+      "heading": "2023|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-a",
+      "heading": "2018|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-a",
+      "heading": "2015|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-a",
+      "heading": "2013|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-a",
+      "heading": "2007|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-a",
+      "heading": "2005|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-b",
+      "heading": "2022|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-b",
+      "heading": "2020|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-b",
+      "heading": "2016|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-b",
+      "heading": "2011|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-incomplete-records-b",
+      "heading": "2009|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2026|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2025|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2024|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2023|deferred|5",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2023|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2022|deferred|5",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2022|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2021|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2020|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2019|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2018|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2017|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2016|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2015|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2014|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2013|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2012|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2011|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2010|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2009|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2008|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2007|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2006|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-interpretation-of-accounts",
+      "heading": "2005|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2026|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2024|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2023|deferred|6",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2023|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2022|deferred|4",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2021|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2020|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2018|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2016|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2014|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2013|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2011|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2009|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2008|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2006|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-published-accounts",
+      "heading": "2005|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-revaluation-of-fixed-assets",
+      "heading": "2025|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-revaluation-of-fixed-assets",
+      "heading": "2022|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-revaluation-of-fixed-assets",
+      "heading": "2019|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-revaluation-of-fixed-assets",
+      "heading": "2017|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-revaluation-of-fixed-assets",
+      "heading": "2012|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-revaluation-of-fixed-assets",
+      "heading": "2009|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-revaluation-of-fixed-assets",
+      "heading": "2007|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2025|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2023|deferred|2",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2023|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2020|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2018|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2017|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2014|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2012|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2010|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2007|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-service-firms",
+      "heading": "2005|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2025|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2023|deferred|3",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2023|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2021|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2019|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2017|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2015|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2013|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2011|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "higher",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032ALP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2009|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2007|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-higher-tabular-statements",
+      "heading": "2006|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "higher",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-bank-reconciliation-statement",
+      "heading": "2024|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-bank-reconciliation-statement",
+      "heading": "2022|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-bank-reconciliation-statement",
+      "heading": "2018|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-bank-reconciliation-statement",
+      "heading": "2015|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-bank-reconciliation-statement",
+      "heading": "2013|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-bank-reconciliation-statement",
+      "heading": "2010|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-bank-reconciliation-statement",
+      "heading": "2008|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-bank-reconciliation-statement",
+      "heading": "2006|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2026|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2024|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2022|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2020|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2018|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2016|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2014|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2013|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2011|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2009|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2007|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-cash",
+      "heading": "2006|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2025|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2023|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2021|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2019|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2017|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2015|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2012|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2010|main|9",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2008|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-budgeting-production",
+      "heading": "2005|main|9",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2026|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2025|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2024|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2023|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2022|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2021|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2020|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2019|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2018|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2017|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2016|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2015|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2014|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2013|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2012|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2011|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2010|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2009|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2008|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2007|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2006|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-cash-flow-statements",
+      "heading": "2005|main|7",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2026|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2025|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2022|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2019|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2017|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2014|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2012|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2011|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2009|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2007|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-club-accounts",
+      "heading": "2005|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-company-profit-loss",
+      "heading": "2024|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-company-profit-loss",
+      "heading": "2020|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-company-profit-loss",
+      "heading": "2016|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-company-profit-loss",
+      "heading": "2012|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-company-profit-loss",
+      "heading": "2008|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-company-profit-loss",
+      "heading": "2005|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-control-accounts",
+      "heading": "2025|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-control-accounts",
+      "heading": "2023|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-control-accounts",
+      "heading": "2018|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-control-accounts",
+      "heading": "2016|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-control-accounts",
+      "heading": "2014|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-control-accounts",
+      "heading": "2011|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-control-accounts",
+      "heading": "2009|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-control-accounts",
+      "heading": "2007|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-correction-of-errorssuspense",
+      "heading": "2026|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-correction-of-errorssuspense",
+      "heading": "2021|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-correction-of-errorssuspense",
+      "heading": "2017|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-correction-of-errorssuspense",
+      "heading": "2015|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-correction-of-errorssuspense",
+      "heading": "2012|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-correction-of-errorssuspense",
+      "heading": "2007|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2025|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2023|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2021|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2019|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2017|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2015|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2013|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2011|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2009|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2007|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-absorption",
+      "heading": "2005|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2026|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2024|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2022|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2020|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2018|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2016|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2014|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2012|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2010|main|8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2008|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-costing-marginal",
+      "heading": "2006|main|8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2026|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2024|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2023|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2021|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2019|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2016|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2013|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2011|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-farm-accounts",
+      "heading": "2007|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2026|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2025|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2023|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2022|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2021|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2019|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2016|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2014|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2010|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-company",
+      "heading": "2007|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-departmental",
+      "heading": "2011|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-departmental",
+      "heading": "2006|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-manufacturing",
+      "heading": "2025|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-manufacturing",
+      "heading": "2024|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-manufacturing",
+      "heading": "2022|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-manufacturing",
+      "heading": "2020|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-manufacturing",
+      "heading": "2017|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-manufacturing",
+      "heading": "2013|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-manufacturing",
+      "heading": "2008|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-manufacturing",
+      "heading": "2005|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-sole-trader",
+      "heading": "2026|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-sole-trader",
+      "heading": "2024|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-sole-trader",
+      "heading": "2023|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-sole-trader",
+      "heading": "2021|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-sole-trader",
+      "heading": "2018|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-sole-trader",
+      "heading": "2015|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-sole-trader",
+      "heading": "2012|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-final-accounts-sole-trader",
+      "heading": "2009|main|1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-fixed-assets-depreciation-revaluation",
+      "heading": "2023|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-fixed-assets-depreciation-revaluation",
+      "heading": "2021|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-fixed-assets-depreciation-revaluation",
+      "heading": "2019|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-fixed-assets-depreciation-revaluation",
+      "heading": "2017|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-fixed-assets-depreciation-revaluation",
+      "heading": "2014|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-fixed-assets-depreciation-revaluation",
+      "heading": "2011|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-fixed-assets-depreciation-revaluation",
+      "heading": "2009|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-fixed-assets-depreciation-revaluation",
+      "heading": "2006|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-control-account",
+      "heading": "2024|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-control-account",
+      "heading": "2020|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-control-account",
+      "heading": "2015|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-control-account",
+      "heading": "2012|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-control-account",
+      "heading": "2010|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-control-account",
+      "heading": "2008|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-control-account",
+      "heading": "2006|main|6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-net-worth",
+      "heading": "2026|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-net-worth",
+      "heading": "2022|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-net-worth",
+      "heading": "2019|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-net-worth",
+      "heading": "2017|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-net-worth",
+      "heading": "2013|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-net-worth",
+      "heading": "2009|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-incomplete-records-net-worth",
+      "heading": "2005|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2026|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2025|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2024|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2023|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2022|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2021|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2020|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2019|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2018|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2017|main|1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2016|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2015|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2014|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2013|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2012|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2011|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2010|main|5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2009|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2008|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2007|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2006|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-interpretation-of-accounts",
+      "heading": "2005|main|5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2025|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2023|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2021|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2020|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2018|main|7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "7"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2015|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2013|main|6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2010|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-service-firms",
+      "heading": "2006|main|3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2006,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2025|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2022|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2020|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2018|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2016|main|4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2014|main|3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2010|main|2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "ordinary",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC032GLP000EV.pdf",
+          "n": "2"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2008|main|4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        }
+      ]
+    },
+    {
+      "topicId": "accounting-ordinary-tabular-statements",
+      "heading": "2005|main|2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "ordinary",
+          "year": 2005,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        }
+      ]
+    }
+  ]
+}

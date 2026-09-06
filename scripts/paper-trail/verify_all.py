@@ -64,6 +64,7 @@ def first_marker(txt):
 
 
 LABEL_NUM = re.compile(r"(?:Q|Question|Ceist)\.?\s*(\d{1,2})", re.I)
+LETTER_QUESTION = re.compile(r"^\s*(?:QUESTION|Question)\s+([A-Z])\b")
 
 NUMWORDS = ["one", "two", "three", "four", "five", "six", "seven", "eight",
             "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen"]
@@ -105,6 +106,21 @@ def label_number(q):
     return int(m.group(1)) if m else None
 
 
+def label_letter(q):
+    """Printed section-restart letter carried by a descriptive label."""
+    label = q.get("label") or ""
+    match = re.search(r"\bQuestion\s+([A-Z])\b", label, re.I)
+    return match.group(1).upper() if match else None
+
+
+def first_letter_marker(txt):
+    for raw in txt.splitlines():
+        match = LETTER_QUESTION.match(delig(raw.strip()))
+        if match:
+            return match.group(1).upper()
+    return None
+
+
 def clip_text(pg, r):
     W, H = pg.rect.width, pg.rect.height
     x0, y0, x1, y1 = r
@@ -140,7 +156,11 @@ def main():
                 fm = first_marker(txt)
                 code = f"{yd}/{fn[:-5]}"
                 ln_expect = label_number(q)
-                if fm is None:
+                letter_expect = label_letter(q)
+                letter_found = first_letter_marker(txt)
+                if letter_expect is not None and letter_found == letter_expect:
+                    n_ok += 1
+                elif fm is None:
                     n_nomark += 1
                     line0 = " ".join(t.strip() for t in delig(txt).splitlines() if t.strip())[:60]
                     nomarks.append(f"  NOMARK  {code} Q{n} p{seg0['p']}: {line0}")

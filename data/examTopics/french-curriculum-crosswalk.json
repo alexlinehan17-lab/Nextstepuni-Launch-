@@ -1,0 +1,105 @@
+{
+  "french-higher-aural-conversation": [
+    "french-3-0"
+  ],
+  "french-higher-aural-interview": [
+    "french-3-1"
+  ],
+  "french-higher-aural-news-pieces": [
+    "french-3-2"
+  ],
+  "french-higher-literarynovel-comprehension": [
+    "french-5-1",
+    "french-2-1"
+  ],
+  "french-higher-newspapermagazine-comprehension": [
+    "french-5-0",
+    "french-1-0"
+  ],
+  "french-higher-opinion-animals-nature-and-the-environment": [
+    "french-7-0"
+  ],
+  "french-higher-opinion-education": [
+    "french-7-1"
+  ],
+  "french-higher-opinion-health": [
+    "french-7-2"
+  ],
+  "french-higher-opinion-ireland-travel-tourism-and-culture": [
+    "french-7-3"
+  ],
+  "french-higher-opinion-politics-social-issues-and-equality": [
+    "french-7-4"
+  ],
+  "french-higher-opinion-sport": [
+    "french-7-5"
+  ],
+  "french-higher-opinion-technology-and-media": [
+    "french-7-6"
+  ],
+  "french-higher-opinion-youth-teenagers-and-families": [
+    "french-7-7"
+  ],
+  "french-higher-oral-exam": [
+    "french-4-0",
+    "french-4-1"
+  ],
+  "french-higher-write-a-diary": [
+    "french-6-0"
+  ],
+  "french-higher-write-a-letter": [
+    "french-6-1"
+  ],
+  "french-higher-write-a-note": [
+    "french-6-2"
+  ],
+  "french-higher-write-an-email": [
+    "french-6-3"
+  ],
+  "french-higher-written-production-recit": [
+    "french-6-7"
+  ],
+  "french-ordinary-aural-conversation": [
+    "french-3-0"
+  ],
+  "french-ordinary-aural-interview": [
+    "french-3-1"
+  ],
+  "french-ordinary-aural-news-pieces": [
+    "french-3-2"
+  ],
+  "french-ordinary-fill-in-a-form": [
+    "french-6-5"
+  ],
+  "french-ordinary-fill-in-the-gaps": [
+    "french-6-6"
+  ],
+  "french-ordinary-oral-exam": [
+    "french-4-0",
+    "french-4-1"
+  ],
+  "french-ordinary-reading-comprehension-article": [
+    "french-5-0"
+  ],
+  "french-ordinary-reading-comprehension-book-extract": [
+    "french-5-1"
+  ],
+  "french-ordinary-reading-comprehension-interview": [
+    "french-5-2"
+  ],
+  "french-ordinary-reading-comprehension-other-website-magazine-extracts": [
+    "french-5-3"
+  ],
+  "french-ordinary-write-a-diary": [
+    "french-6-0"
+  ],
+  "french-ordinary-write-a-letter": [
+    "french-6-1"
+  ],
+  "french-ordinary-write-a-message": [
+    "french-6-2"
+  ],
+  "french-ordinary-write-a-postcard": [
+    "french-6-4"
+  ]
+}

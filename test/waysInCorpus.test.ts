@@ -53,6 +53,11 @@ const countWords: Record<string, number> = {
   one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
 };
 
+// These checks rebuild the question model across the entire Mark Bank corpus.
+// They finish comfortably in isolation, but can exceed Vitest's old 60-second
+// allowance while the full suite is transforming and exercising the same data.
+const CORPUS_TEST_TIMEOUT_MS = 120_000;
+
 describe('Ways In across the Mark Bank corpus', () => {
   test('preserves every exact question and carries no scheme payload', () => {
     expect(cards.length).toBeGreaterThan(100);
@@ -70,7 +75,7 @@ describe('Ways In across the Mark Bank corpus', () => {
       expect(payload, card.id).not.toHaveProperty('schemeRegion');
       expect(Object.keys(source.answerShape ?? {}), card.id).toEqual(['totalMarks']);
     }
-  }, 60_000);
+  }, CORPUS_TEST_TIMEOUT_MS);
 
   test('builds a bounded, paper-grounded planning frame for every card', () => {
     for (const card of cards) {
@@ -87,7 +92,7 @@ describe('Ways In across the Mark Bank corpus', () => {
         if (item.sourceText) expect(paperText, `${card.id}: ${item.sourceText}`).toContain(item.sourceText);
       }
     }
-  }, 60_000);
+  }, CORPUS_TEST_TIMEOUT_MS);
 
   test('recognises the command in at least nine out of ten real questions', () => {
     const missing = cards.filter(card => {
@@ -99,7 +104,7 @@ describe('Ways In across the Mark Bank corpus', () => {
       coverage,
       missing.slice(0, 30).map(card => `${card.id}: ${card.questionText}`).join('\n'),
     ).toBeGreaterThanOrEqual(0.9);
-  });
+  }, CORPUS_TEST_TIMEOUT_MS);
 
   test('understands Gaeilge instructions and interrogatives without translating the paper', () => {
     const expectedCommands: Record<string, string[]> = {

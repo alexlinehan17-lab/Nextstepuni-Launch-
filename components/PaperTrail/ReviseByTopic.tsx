@@ -14,7 +14,7 @@
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
-import { categoryOf, siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
+import { categoryOf, logicalQuestionIdentity, siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
@@ -157,7 +157,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const questions = useMemo(() => {
     const byQ = new Map<string, TopicSibling>();
     for (const q of allEditions) {
-      const key = `${q.year}|${q.level}|${q.paperKey}|${q.n}`;
+      const key = logicalQuestionIdentity(q);
       const cur = byQ.get(key);
       if (!cur || (cur.lang !== langPref && q.lang === langPref)) byQ.set(key, q);
     }
@@ -168,6 +168,9 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   //    paper crops with the scheme a tap below. Quiet text controls. ──
   if (subjectId && subtopicId) {
     const years = new Set(questions.map(q => q.year));
+    const referenceEntries = examTopicTaxonomyFor(subjectId)?.topics
+      .find(topic => topic.id === subtopicId)?.officialQuestionKeys.length ?? 0;
+    const referenceOnly = questions.length === 0 && referenceEntries > 0;
     const levels = [...new Set(questions.map(q => q.level))];
     const yearList = [...years].sort((a, b) => b - a);
     const inYear = yearFilter === 'all' ? questions : questions.filter(q => q.year === yearFilter);
@@ -184,7 +187,9 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         </button>
         <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
         <p aria-live="polite" className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
-          {shown.length === questions.length
+          {referenceOnly
+            ? <>{referenceEntries} reference entr{referenceEntries === 1 ? 'y' : 'ies'} · official source files pending</>
+            : shown.length === questions.length
             ? <>{questions.length} question{questions.length === 1 ? '' : 's'} · {years.size} year{years.size === 1 ? '' : 's'} · marking scheme beneath each</>
             : <>{shown.length} of {questions.length} questions{yearFilter !== 'all' ? ` · ${yearFilter}` : ''}{levelFilter !== 'all' ? ` · ${LVL[levelFilter] ?? levelFilter}` : ''}</>}
         </p>
@@ -251,7 +256,11 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         </div>
 
         <div className="space-y-5">
-          {shown.length === 0 ? (
+          {referenceOnly ? (
+            <p className="text-[13px] py-3 leading-relaxed" style={{ color: '#8d857c' }}>
+              This reference topic is retained, but its official question material is not available in the local SEC corpus yet.
+            </p>
+          ) : shown.length === 0 ? (
             <p className="text-[13px] py-3" style={{ color: '#8d857c' }}>
               No questions match that filter. <button onClick={() => { setLevelFilter('all'); setYearFilter('all'); }} className="font-semibold underline" style={{ color: INK }}>Show all</button>
             </p>

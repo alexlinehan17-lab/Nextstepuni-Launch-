@@ -6,13 +6,54 @@
  * scripts/paper-trail/topic-tags/build-tags.mjs from the verified per-subject
  * wave files. DO NOT hand-edit — edit the wave file + regenerate.
  *
- * Coverage: accounting, agricultural-economics, agricultural-science, ancient-greek, applied-mathematics, arabic, art, biology, bulgarian, business, chemistry, classical-studies, computer-science, construction-studies, croatian, czech, danish, design-and-communication-graphics, dutch, economics, engineering, english, estonian, finnish, french, geography, german, history, history-early-modern, home-economics-s-and-s, hungarian, irish, italian, japanese, jc-applied-technology, jc-business-studies, jc-classics, jc-engineering, jc-english, jc-french, jc-geography, jc-german, jc-history, jc-home-economics, jc-irish, jc-irish-t1, jc-italian, jc-jewish-studies, jc-mathematics, jc-music, jc-religious-education, jc-science, jc-spanish, jc-wood-technology, latin, latvian, lca-active-leisure-studies, lca-agriculture-horticulture, lca-childcare-community-care, lca-crafts-and-design, lca-engineering, lca-english-and-communications, lca-french, lca-gaeilge-chumarsaideach, lca-german, lca-graphics-and-construction-studies, lca-hair-and-beauty, lca-hotel-catering-and-tourism, lca-information-and-communication-tech, lca-italian, lca-mathematical-applications, lca-office-admin-and-customer, lca-sign-language, lca-social-education, lca-spanish, lca-technology, link-modules, lithuanian, maltese, mandarin-chinese, mathematics, modern-greek, music, physical-education, physics, physics-and-chemistry, polish, politics-and-society, portuguese, religious-education, romanian, russian, slovakian, slovenian, spanish, swedish, technology, ukrainian — 2260 papers, 22726 questions.
+ * Coverage: accounting, agricultural-economics, agricultural-science, ancient-greek, applied-mathematics, arabic, art, biology, bulgarian, business, chemistry, classical-studies, computer-science, construction-studies, croatian, czech, danish, design-and-communication-graphics, dutch, economics, engineering, english, estonian, finnish, french, geography, german, history, history-early-modern, home-economics-s-and-s, hungarian, irish, italian, japanese, jc-applied-technology, jc-business-studies, jc-classics, jc-engineering, jc-english, jc-french, jc-geography, jc-german, jc-history, jc-home-economics, jc-irish, jc-irish-t1, jc-italian, jc-jewish-studies, jc-mathematics, jc-music, jc-religious-education, jc-science, jc-spanish, jc-wood-technology, latin, latvian, lca-active-leisure-studies, lca-agriculture-horticulture, lca-childcare-community-care, lca-crafts-and-design, lca-engineering, lca-english-and-communications, lca-french, lca-gaeilge-chumarsaideach, lca-german, lca-graphics-and-construction-studies, lca-hair-and-beauty, lca-hotel-catering-and-tourism, lca-information-and-communication-tech, lca-italian, lca-mathematical-applications, lca-office-admin-and-customer, lca-sign-language, lca-social-education, lca-spanish, lca-technology, link-modules, lithuanian, maltese, mandarin-chinese, mathematics, modern-greek, music, physical-education, physics, physics-and-chemistry, polish, politics-and-society, portuguese, religious-education, romanian, russian, slovakian, slovenian, spanish, swedish, technology, ukrainian — 3169 papers, 32445 questions.
  */
 
 import topicLabels from './topicLabels.json';
-import paperTopicTags from './paperTopicTags.json';
+import compactTopicTags from './paperTopicTags-runtime.json';
 import { type PaperTopicTags } from '../../types/paperTrailTopics';
 
 export const TOPIC_LABELS: Record<string, string> = topicLabels;
 
-export const PAPER_TOPIC_TAGS: PaperTopicTags[] = paperTopicTags as PaperTopicTags[];
+type CompactLevel = 'h' | 'o' | 'f' | 'c';
+type CompactLang = 'e' | 'i';
+type CompactPaperKey = 's' | '1' | '2' | 'a' | 'x';
+type CompactQuestion = [string, number, number?];
+interface CompactTopicTags {
+  v: 1;
+  subjects: string[];
+  topics: string[];
+  files: string[];
+  papers: Array<[number, CompactLevel, CompactLang, number, number, CompactPaperKey, CompactQuestion[]]>;
+}
+
+const compact = compactTopicTags as CompactTopicTags;
+const LEVEL: Record<CompactLevel, PaperTopicTags['level']> = {
+  h: 'higher', o: 'ordinary', f: 'foundation', c: 'common',
+};
+const LANG: Record<CompactLang, PaperTopicTags['lang']> = { e: 'ev', i: 'iv' };
+const PAPER_KEY: Record<CompactPaperKey, string> = {
+  s: 'single', '1': 'p1', '2': 'p2', a: 'aural', x: 'section-a',
+};
+
+export const PAPER_TOPIC_TAGS: PaperTopicTags[] = compact.papers.map(([
+  subjectIndex,
+  levelCode,
+  langCode,
+  year,
+  fileIndex,
+  paperKeyCode,
+  questions,
+]) => ({
+  subjectId: compact.subjects[subjectIndex],
+  level: LEVEL[levelCode],
+  lang: LANG[langCode],
+  year,
+  fileid: compact.files[fileIndex],
+  paperKey: PAPER_KEY[paperKeyCode],
+  q: questions.map(([n, primaryIndex, secondaryIndex]) => ({
+    n,
+    primary: compact.topics[primaryIndex],
+    ...(secondaryIndex === undefined ? {} : { secondary: compact.topics[secondaryIndex] }),
+  })),
+}));

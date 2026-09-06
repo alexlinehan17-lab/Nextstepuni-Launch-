@@ -103,9 +103,28 @@ def main():
         key = (r["view"], r["year"], r["fileid"])
         dest_dir = os.path.join(CORPUS, r["view"], r["year"])
         dest = os.path.join(dest_dir, r["fileid"])
-        if key in done and os.path.exists(dest) and os.path.getsize(dest) > 0:
+        if (key in done and "error" not in done[key]
+                and os.path.exists(dest) and os.path.getsize(dest) > 0):
             continue
         os.makedirs(dest_dir, exist_ok=True)
+        # A direct official-archive recovery may have restored a file after a
+        # previous urllib attempt was recorded as an error. Accept a valid
+        # local PDF and append a successful record so Stage 3 no longer drops
+        # it; do not refetch or overwrite the recovered bytes.
+        if os.path.exists(dest) and os.path.getsize(dest) > 0:
+            with open(dest, "rb") as existing_file:
+                existing = existing_file.read()
+            if existing.startswith(b"%PDF"):
+                rec = dict(r)
+                rec["bytes"] = len(existing)
+                rec["sha256"] = hashlib.sha256(existing).hexdigest()
+                rec["recovered"] = True
+                out.write(json.dumps(rec) + "\n")
+                out.flush()
+                done[key] = rec
+                total_bytes += len(existing)
+                n_ok += 1
+                continue
         url = "https://www.examinations.ie/archive/{}/{}/{}".format(
             r["view"], r["year"], urllib.parse.quote(r["fileid"])
         )

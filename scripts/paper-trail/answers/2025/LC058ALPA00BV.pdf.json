@@ -1,1 +1,168 @@
-{"band":[1,25],"component":"","copyright":"© State Examinations Commission","paperFileid":"LC058ALPA00BV.pdf","q":[{"conf":1.0,"mode":"crop","n":"1","pP":2,"pY":[0.2952,0.4544],"region":[{"p":3,"r":[0.0,0.242,1.0,0.4256]}]},{"conf":1.0,"mode":"crop","n":"2","pP":2,"pY":[0.4544,0.6136],"region":[{"p":3,"r":[0.0,0.4136,1.0,0.6186]}]},{"conf":1.0,"mode":"crop","n":"3","pP":2,"pY":[0.6136,1.0],"region":[{"p":3,"r":[0.0,0.6066,1.0,1.0]},{"p":4,"r":[0.0,0.0,1.0,1.0]},{"p":5,"r":[0.0,0.0,1.0,0.3249]}]},{"conf":1.0,"mode":"crop","n":"4","pP":4,"pY":[0.3807,0.5112],"region":[{"p":5,"r":[0.0,0.3129,1.0,0.4104]}]},{"conf":1.0,"mode":"crop","n":"5","pP":4,"pY":[0.5112,0.6678],"region":[{"p":5,"r":[0.0,0.3984,1.0,0.577]}]},{"conf":1.0,"mode":"crop","n":"6","pP":4,"pY":[0.6678,0.7548],"region":[{"p":5,"r":[0.0,0.565,1.0,0.6625]}]},{"conf":1.0,"mode":"crop","n":"7","pP":4,"pY":[0.7548,1.0],"region":[{"p":5,"r":[0.0,0.6505,1.0,1.0]}]}],"schemeFileid":"LC058ALP000EV.pdf","v":1}
+{
+  "band": [1, 25],
+  "component": "",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058ALPA00BV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "PART A · 1",
+      "mode": "crop",
+      "n": "1",
+      "printOrder": 1,
+      "pP": 2,
+      "pY": [0.2952, 0.4544],
+      "region": [{ "p": 3, "r": [0.0, 0.242, 1.0, 0.4256] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART A · 2",
+      "mode": "crop",
+      "n": "2",
+      "printOrder": 2,
+      "pP": 2,
+      "pY": [0.4544, 0.6136],
+      "region": [{ "p": 3, "r": [0.0, 0.4136, 1.0, 0.6186] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART A · 3",
+      "mode": "crop",
+      "n": "3",
+      "printOrder": 3,
+      "pP": 2,
+      "pY": [0.6136, 1.0],
+      "endP": 2,
+      "endY": 1.0,
+      "region": [{ "p": 3, "r": [0.0, 0.6066, 1.0, 0.79] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 4",
+      "mode": "crop",
+      "n": "4",
+      "printOrder": 9,
+      "pP": 4,
+      "pY": [0.3807, 0.5112],
+      "region": [{ "p": 5, "r": [0.0, 0.3129, 1.0, 0.4104] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 5",
+      "mode": "crop",
+      "n": "5",
+      "printOrder": 10,
+      "pP": 4,
+      "pY": [0.5112, 0.6678],
+      "region": [{ "p": 5, "r": [0.0, 0.3984, 1.0, 0.577] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 6",
+      "mode": "crop",
+      "n": "6",
+      "printOrder": 11,
+      "pP": 4,
+      "pY": [0.6678, 0.7548],
+      "region": [{ "p": 5, "r": [0.0, 0.565, 1.0, 0.6625] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 7",
+      "mode": "crop",
+      "n": "7",
+      "printOrder": 12,
+      "pP": 4,
+      "pY": [0.7548, 1.0],
+      "endP": 4,
+      "endY": 0.94,
+      "region": [{ "p": 5, "r": [0.0, 0.6505, 1.0, 0.9] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART B · 1",
+      "mode": "crop",
+      "n": "8",
+      "printOrder": 4,
+      "pP": 3,
+      "pY": [0.114, 0.7095],
+      "region": [{ "p": 4, "r": [0.0, 0.047, 1.0, 0.5814] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART B · 2",
+      "mode": "crop",
+      "n": "9",
+      "printOrder": 5,
+      "pP": 3,
+      "pY": [0.7095, 0.94],
+      "endP": 3,
+      "endY": 0.94,
+      "region": [{ "p": 4, "r": [0.0, 0.5694, 1.0, 0.86] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 1",
+      "mode": "crop",
+      "n": "10",
+      "printOrder": 6,
+      "pP": 4,
+      "pY": [0.114, 0.2184],
+      "region": [{ "p": 5, "r": [0.0, 0.047, 1.0, 0.1752] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 2",
+      "mode": "crop",
+      "n": "11",
+      "printOrder": 7,
+      "pP": 4,
+      "pY": [0.2184, 0.2938],
+      "region": [{ "p": 5, "r": [0.0, 0.1632, 1.0, 0.2394] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 3",
+      "mode": "crop",
+      "n": "12",
+      "printOrder": 8,
+      "pP": 4,
+      "pY": [0.2938, 0.3807],
+      "region": [{ "p": 5, "r": [0.0, 0.2274, 1.0, 0.3249] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 1",
+      "mode": "crop",
+      "n": "13",
+      "printOrder": 13,
+      "pP": 5,
+      "pY": [0.1169, 0.2851],
+      "region": [{ "p": 6, "r": [0.0, 0.047, 1.0, 0.2544] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 2",
+      "mode": "crop",
+      "n": "14",
+      "printOrder": 14,
+      "pP": 5,
+      "pY": [0.2851, 0.6576],
+      "region": [{ "p": 6, "r": [0.0, 0.2424, 1.0, 0.5537] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 3",
+      "mode": "crop",
+      "n": "15",
+      "printOrder": 15,
+      "pP": 5,
+      "pY": [0.6576, 0.94],
+      "endP": 5,
+      "endY": 0.94,
+      "region": [{ "p": 6, "r": [0.0, 0.549, 1.0, 0.84] }]
+    }
+  ],
+  "schemeFileid": "LC058ALP000EV.pdf",
+  "v": 1
+}

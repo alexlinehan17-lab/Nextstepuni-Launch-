@@ -1,0 +1,244 @@
+{
+  "irish-higher-aural-comhra-conversation": [
+    "irish-1-1",
+    "irish-1-3"
+  ],
+  "irish-higher-aural-fogra-announcement": [
+    "irish-1-0",
+    "irish-1-3"
+  ],
+  "irish-higher-aural-piosa-nuachta-news-pieces": [
+    "irish-1-2",
+    "irish-1-3"
+  ],
+  "irish-higher-danta-breise": [
+    "irish-6-5"
+  ],
+  "irish-higher-grammar": [
+    "irish-3-3",
+    "irish-8-4"
+  ],
+  "irish-higher-oral-exam": [
+    "irish-0-0",
+    "irish-0-1",
+    "irish-0-2",
+    "irish-0-3",
+    "irish-0-4",
+    "irish-0-5",
+    "irish-0-6"
+  ],
+  "irish-higher-reading-comprehension": [
+    "irish-3-0",
+    "irish-3-1",
+    "irish-3-2"
+  ],
+  "irish-higher-studied-poetry-filiocht-roghnach": [
+    "irish-5-6",
+    "irish-7-0"
+  ],
+  "irish-higher-studied-prose-pros-roghnach": [
+    "irish-4-7",
+    "irish-7-0"
+  ],
+  "irish-higher-write-a-debate": [
+    "irish-2-4",
+    "irish-2-5"
+  ],
+  "irish-higher-write-a-newsmagazine-article": [
+    "irish-2-1"
+  ],
+  "irish-higher-write-a-story": [
+    "irish-2-3"
+  ],
+  "irish-higher-write-an-essay": [
+    "irish-2-0"
+  ],
+  "irish-higher-historic-additional-literature": [
+    "irish-6-0",
+    "irish-6-1",
+    "irish-6-2",
+    "irish-6-3",
+    "irish-6-4",
+    "irish-6-5",
+    "irish-6-6",
+    "irish-6-7",
+    "irish-6-8",
+    "irish-6-9",
+    "irish-6-10",
+    "irish-7-0"
+  ],
+  "irish-ordinary-aural-comhra-conversation": [
+    "irish-1-1",
+    "irish-1-3"
+  ],
+  "irish-ordinary-aural-piosa-nuachta-news-pieces": [
+    "irish-1-2",
+    "irish-1-3"
+  ],
+  "irish-ordinary-aurals-fogra-announcement": [
+    "irish-1-0",
+    "irish-1-3"
+  ],
+  "irish-ordinary-grammar": [
+    "irish-8-4"
+  ],
+  "irish-ordinary-oral-exam": [
+    "irish-0-0",
+    "irish-0-1",
+    "irish-0-2",
+    "irish-0-3",
+    "irish-0-4",
+    "irish-0-5",
+    "irish-0-6"
+  ],
+  "irish-ordinary-reading-comprehension": [
+    "irish-3-0",
+    "irish-3-1",
+    "irish-3-2"
+  ],
+  "irish-ordinary-write-a-blogcreative-writing-task": [
+    "irish-2-2",
+    "irish-2-6"
+  ],
+  "irish-ordinary-write-a-conversation": [
+    "irish-2-9"
+  ],
+  "irish-ordinary-write-a-debate": [
+    "irish-2-4"
+  ],
+  "irish-ordinary-write-a-letteremail": [
+    "irish-2-8"
+  ],
+  "irish-ordinary-write-a-story": [
+    "irish-2-3"
+  ],
+  "irish-ordinary-write-about-a-studied-folktale": [
+    "irish-4-7",
+    "irish-7-1"
+  ],
+  "irish-ordinary-write-about-a-studied-poem-optional": [
+    "irish-5-6",
+    "irish-7-0"
+  ],
+  "irish-ordinary-write-about-a-studied-prose-optional": [
+    "irish-4-7",
+    "irish-7-0"
+  ],
+  "irish-foundation-fill-in-a-form": [
+    "irish-9-0"
+  ],
+  "irish-foundation-match-the-pictures-with-the-text": [
+    "irish-9-1"
+  ],
+  "irish-foundation-reading-brochure": [
+    "irish-9-2",
+    "irish-3-2"
+  ],
+  "irish-foundation-reading-extract": [
+    "irish-9-2",
+    "irish-3-2"
+  ],
+  "irish-foundation-reading-letter": [
+    "irish-9-2",
+    "irish-3-2"
+  ],
+  "irish-foundation-reading-newspaper-article": [
+    "irish-9-2",
+    "irish-3-2"
+  ],
+  "irish-foundation-reading-poem": [
+    "irish-9-2",
+    "irish-3-2"
+  ],
+  "irish-foundation-write-a-letter": [
+    "irish-9-3",
+    "irish-2-8"
+  ],
+  "irish-foundation-write-a-notice": [
+    "irish-9-3",
+    "irish-8-2"
+  ],
+  "irish-foundation-write-a-story": [
+    "irish-9-3",
+    "irish-2-3"
+  ],
+  "irish-foundation-write-from-pictures": [
+    "irish-9-4",
+    "irish-8-2"
+  ],
+  "irish-foundation-aural-cluastuiscint": [
+    "irish-1-3"
+  ],
+  "irish-higher-poetry-deireadh-na-feide": [
+    "irish-5-8"
+  ],
+  "irish-higher-poetry-dinit-an-bhroin": [
+    "irish-5-7"
+  ],
+  "irish-higher-poetry-glaoch-abhaile": [
+    "irish-5-10"
+  ],
+  "irish-higher-poetry-inion": [
+    "irish-5-9"
+  ],
+  "irish-higher-poetry-uirchill-an-chreagain": [
+    "irish-5-11"
+  ],
+  "irish-higher-prose-an-glantoir": [
+    "irish-4-11"
+  ],
+  "irish-higher-prose-an-tiriseoir": [
+    "irish-4-14"
+  ],
+  "irish-higher-prose-athair": [
+    "irish-4-10"
+  ],
+  "irish-higher-prose-clann-lir": [
+    "irish-4-9"
+  ],
+  "irish-higher-prose-cuairteoir": [
+    "irish-4-13"
+  ],
+  "irish-higher-prose-dordan": [
+    "irish-6-14"
+  ],
+  "irish-higher-prose-eoinin-na-nean": [
+    "irish-4-15"
+  ],
+  "irish-ordinary-poetry-deireadh-na-feide": [
+    "irish-5-8"
+  ],
+  "irish-ordinary-poetry-dinit-an-bhroin": [
+    "irish-5-7"
+  ],
+  "irish-ordinary-poetry-glaoch-abhaile": [
+    "irish-5-10"
+  ],
+  "irish-ordinary-poetry-inion": [
+    "irish-5-9"
+  ],
+  "irish-ordinary-poetry-uirchill-an-chreagain": [
+    "irish-5-11"
+  ],
+  "irish-ordinary-prose-an-glantoir": [
+    "irish-4-11"
+  ],
+  "irish-ordinary-prose-an-tiriseoir": [
+    "irish-4-14"
+  ],
+  "irish-ordinary-prose-athair": [
+    "irish-4-10"
+  ],
+  "irish-ordinary-prose-clann-lir": [
+    "irish-4-9"
+  ],
+  "irish-ordinary-prose-cuairteoir": [
+    "irish-4-13"
+  ],
+  "irish-ordinary-prose-dordan": [
+    "irish-6-14"
+  ],
+  "irish-ordinary-prose-eoinin-na-nean": [
+    "irish-4-15"
+  ]
+}

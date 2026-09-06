@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "chemistry",
+  "year": 2026,
+  "authority": "State Examinations Commission",
+  "scope": "Top-level question-to-reference-topic mapping reviewed directly from the two official English paper booklets.",
+  "questions": {
+    "higher|1": [
+      "chemistry-higher-new-course-14-quantifying-matter",
+      "chemistry-higher-new-course-34-acid-base-systems",
+      "chemistry-higher-new-course-41-volumetric-analysis",
+      "chemistry-higher-old-course-experiment-q1-titration",
+      "chemistry-higher-old-course-acids-bases-ph-calculations",
+      "chemistry-higher-old-course-stoichiometry-formulae-equations"
+    ],
+    "higher|2": [
+      "chemistry-higher-new-course-14-quantifying-matter",
+      "chemistry-higher-new-course-24-hydrocarbons",
+      "chemistry-higher-new-course-34-acid-base-systems",
+      "chemistry-higher-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-higher-old-course-experiment-q2-organic",
+      "chemistry-higher-old-course-organic-chemistry",
+      "chemistry-higher-old-course-stoichiometry-formulae-equations"
+    ],
+    "higher|3": [
+      "chemistry-higher-new-course-14-quantifying-matter",
+      "chemistry-higher-new-course-43-our-chemical-environment",
+      "chemistry-higher-old-course-experiment-q3-other",
+      "chemistry-higher-old-course-water-water-analysis"
+    ],
+    "higher|4": [
+      "chemistry-higher-new-course-12-atomic-structure",
+      "chemistry-higher-new-course-14-quantifying-matter",
+      "chemistry-higher-new-course-21-chemical-bonding",
+      "chemistry-higher-new-course-22-intermolecular-forces-and-molecular-shapes",
+      "chemistry-higher-new-course-34-acid-base-systems",
+      "chemistry-higher-new-course-35-electrochemistry",
+      "chemistry-higher-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-higher-new-course-43-our-chemical-environment",
+      "chemistry-higher-old-course-q4"
+    ],
+    "higher|5": [
+      "chemistry-higher-new-course-12-atomic-structure",
+      "chemistry-higher-new-course-13-the-periodic-table",
+      "chemistry-higher-new-course-21-chemical-bonding",
+      "chemistry-higher-new-course-22-intermolecular-forces-and-molecular-shapes",
+      "chemistry-higher-new-course-35-electrochemistry",
+      "chemistry-higher-old-course-periodic-table",
+      "chemistry-higher-old-course-electron-arrangement",
+      "chemistry-higher-old-course-ionic-covalent-bonding",
+      "chemistry-higher-old-course-oxidation-reduction"
+    ],
+    "higher|6": [
+      "chemistry-higher-new-course-14-quantifying-matter",
+      "chemistry-higher-new-course-24-hydrocarbons",
+      "chemistry-higher-new-course-31-thermochemistry",
+      "chemistry-higher-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-higher-old-course-fuels-thermochemistry",
+      "chemistry-higher-old-course-organic-chemistry",
+      "chemistry-higher-old-course-stoichiometry-formulae-equations"
+    ],
+    "higher|7": [
+      "chemistry-higher-new-course-14-quantifying-matter",
+      "chemistry-higher-new-course-33-chemical-equilibrium",
+      "chemistry-higher-old-course-chemical-equilibrium"
+    ],
+    "higher|8": [
+      "chemistry-higher-new-course-24-hydrocarbons",
+      "chemistry-higher-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-higher-old-course-organic-chemistry",
+      "chemistry-higher-old-course-option-materials-polymers"
+    ],
+    "higher|9": [
+      "chemistry-higher-new-course-32-rates-of-reaction",
+      "chemistry-higher-new-course-43-our-chemical-environment",
+      "chemistry-higher-old-course-rates-of-reaction",
+      "chemistry-higher-old-course-option-atmospheric-chemistry"
+    ],
+    "higher|10": [
+      "chemistry-higher-new-course-12-atomic-structure",
+      "chemistry-higher-new-course-14-quantifying-matter",
+      "chemistry-higher-new-course-22-intermolecular-forces-and-molecular-shapes",
+      "chemistry-higher-new-course-23-behaviour-of-gases",
+      "chemistry-higher-old-course-atomic-structure",
+      "chemistry-higher-old-course-gas-laws-moles-gas-properties",
+      "chemistry-higher-old-course-instrumentation-chromatography",
+      "chemistry-higher-old-course-stoichiometry-formulae-equations"
+    ],
+    "higher|11": [
+      "chemistry-higher-new-course-34-acid-base-systems",
+      "chemistry-higher-new-course-35-electrochemistry",
+      "chemistry-higher-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-higher-new-course-43-our-chemical-environment",
+      "chemistry-higher-old-course-acids-bases-ph-calculations",
+      "chemistry-higher-old-course-organic-chemistry",
+      "chemistry-higher-old-course-oxidation-reduction",
+      "chemistry-higher-old-course-option-atmospheric-chemistry",
+      "chemistry-higher-old-course-option-metals"
+    ],
+    "ordinary|1": [
+      "chemistry-ordinary-new-course-u2-investigating-in-chemistry",
+      "chemistry-ordinary-new-course-24-hydrocarbons",
+      "chemistry-ordinary-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-ordinary-old-course-experiment-questions",
+      "chemistry-ordinary-old-course-organic-chemistry"
+    ],
+    "ordinary|2": [
+      "chemistry-ordinary-new-course-u2-investigating-in-chemistry",
+      "chemistry-ordinary-new-course-14-quantifying-matter",
+      "chemistry-ordinary-new-course-34-acid-base-systems",
+      "chemistry-ordinary-new-course-41-volumetric-analysis",
+      "chemistry-ordinary-old-course-experiment-questions",
+      "chemistry-ordinary-old-course-acids-bases-ph",
+      "chemistry-ordinary-old-course-stoichiometry-formulae-equations"
+    ],
+    "ordinary|3": [
+      "chemistry-ordinary-new-course-u2-investigating-in-chemistry",
+      "chemistry-ordinary-new-course-32-rates-of-reaction",
+      "chemistry-ordinary-old-course-experiment-questions",
+      "chemistry-ordinary-old-course-rates-of-reaction"
+    ],
+    "ordinary|4": [
+      "chemistry-ordinary-new-course-12-atomic-structure",
+      "chemistry-ordinary-new-course-13-the-periodic-table",
+      "chemistry-ordinary-new-course-14-quantifying-matter",
+      "chemistry-ordinary-new-course-24-hydrocarbons",
+      "chemistry-ordinary-new-course-31-thermochemistry",
+      "chemistry-ordinary-new-course-43-our-chemical-environment",
+      "chemistry-ordinary-old-course-atomic-structure",
+      "chemistry-ordinary-old-course-periodic-table",
+      "chemistry-ordinary-old-course-fuels-thermochemistry",
+      "chemistry-ordinary-old-course-spectrometry-chromatography",
+      "chemistry-ordinary-old-course-stoichiometry-formulae-equations",
+      "chemistry-ordinary-old-course-water-water-analysis",
+      "chemistry-ordinary-old-course-organic-chemistry",
+      "chemistry-ordinary-old-course-option-industrial-chemistry",
+      "chemistry-ordinary-old-course-option-metals"
+    ],
+    "ordinary|5": [
+      "chemistry-ordinary-new-course-13-the-periodic-table",
+      "chemistry-ordinary-new-course-21-chemical-bonding",
+      "chemistry-ordinary-new-course-22-intermolecular-forces-and-molecular-shapes",
+      "chemistry-ordinary-old-course-periodic-table",
+      "chemistry-ordinary-old-course-ionic-covalent-bonding"
+    ],
+    "ordinary|6": [
+      "chemistry-ordinary-new-course-24-hydrocarbons",
+      "chemistry-ordinary-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-ordinary-old-course-fuels-thermochemistry",
+      "chemistry-ordinary-old-course-organic-chemistry"
+    ],
+    "ordinary|7": [
+      "chemistry-ordinary-new-course-34-acid-base-systems",
+      "chemistry-ordinary-new-course-43-our-chemical-environment",
+      "chemistry-ordinary-old-course-acids-bases-ph",
+      "chemistry-ordinary-old-course-water-water-analysis"
+    ],
+    "ordinary|8": [
+      "chemistry-ordinary-new-course-21-chemical-bonding",
+      "chemistry-ordinary-new-course-24-hydrocarbons",
+      "chemistry-ordinary-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-ordinary-old-course-organic-chemistry"
+    ],
+    "ordinary|9": [
+      "chemistry-ordinary-new-course-23-behaviour-of-gases",
+      "chemistry-ordinary-new-course-31-thermochemistry",
+      "chemistry-ordinary-new-course-33-chemical-equilibrium",
+      "chemistry-ordinary-old-course-gas-laws-moles-gas-properties",
+      "chemistry-ordinary-old-course-chemical-equilibrium"
+    ],
+    "ordinary|10": [
+      "chemistry-ordinary-new-course-12-atomic-structure",
+      "chemistry-ordinary-new-course-14-quantifying-matter",
+      "chemistry-ordinary-new-course-35-electrochemistry",
+      "chemistry-ordinary-old-course-oxidation-reduction",
+      "chemistry-ordinary-old-course-radioactivity",
+      "chemistry-ordinary-old-course-stoichiometry-formulae-equations"
+    ],
+    "ordinary|11": [
+      "chemistry-ordinary-new-course-12-atomic-structure",
+      "chemistry-ordinary-new-course-24-hydrocarbons",
+      "chemistry-ordinary-new-course-31-thermochemistry",
+      "chemistry-ordinary-new-course-42-reactivity-of-organic-compounds",
+      "chemistry-ordinary-new-course-43-our-chemical-environment",
+      "chemistry-ordinary-old-course-atomic-structure",
+      "chemistry-ordinary-old-course-fuels-thermochemistry",
+      "chemistry-ordinary-old-course-water-water-analysis",
+      "chemistry-ordinary-old-course-option-industrial-chemistry",
+      "chemistry-ordinary-old-course-option-materials-polymers"
+    ]
+  }
+}

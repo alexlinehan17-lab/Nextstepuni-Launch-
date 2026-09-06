@@ -1,0 +1,254 @@
+{
+  "engineering-higher-abbreviations": [
+    "eng-3-14"
+  ],
+  "engineering-higher-corrosion-of-metals": [
+    "eng-3-7"
+  ],
+  "engineering-higher-energy-electronics-robotics": [
+    "eng-2-16",
+    "eng-2-15"
+  ],
+  "engineering-higher-equilibrium-diagrams": [
+    "eng-1-3"
+  ],
+  "engineering-higher-graphics-and-design": [
+    "eng-3-14"
+  ],
+  "engineering-higher-health-and-safety": [
+    "eng-3-1"
+  ],
+  "engineering-higher-heat-treatment": [
+    "eng-2-6"
+  ],
+  "engineering-higher-inventors-and-engineers-in-society": [
+    "eng-3-14"
+  ],
+  "engineering-higher-machining-metrology": [
+    "eng-2-11",
+    "eng-3-12"
+  ],
+  "engineering-higher-materials-properties-and-uses": [
+    "eng-1-2",
+    "eng-1-3",
+    "eng-1-4",
+    "eng-1-5",
+    "eng-1-9",
+    "eng-3-8"
+  ],
+  "engineering-higher-mechanisms": [
+    "eng-2-15"
+  ],
+  "engineering-higher-metallurgy": [
+    "eng-1-2",
+    "eng-1-3",
+    "eng-1-4"
+  ],
+  "engineering-higher-pneumatics": [
+    "eng-2-15",
+    "eng-2-16"
+  ],
+  "engineering-higher-polymers": [
+    "eng-1-9"
+  ],
+  "engineering-higher-practical-exam": [
+    "eng-2-10",
+    "eng-2-11",
+    "eng-2-13",
+    "eng-3-1"
+  ],
+  "engineering-higher-project": [
+    "eng-3-14",
+    "eng-2-13"
+  ],
+  "engineering-higher-q2-special-topic": [
+    "eng-3-14"
+  ],
+  "engineering-higher-testing-of-materials-and-products": [
+    "eng-3-8"
+  ],
+  "engineering-higher-the-structure-of-materials": [
+    "eng-1-3"
+  ],
+  "engineering-higher-welding": [
+    "eng-2-10"
+  ],
+  "engineering-ordinary-cnc-centre-lathe": [
+    "eng-2-11",
+    "eng-2-13",
+    "eng-3-12"
+  ],
+  "engineering-ordinary-design-project-management": [
+    "eng-3-14",
+    "eng-2-13"
+  ],
+  "engineering-ordinary-energy-electronics-robotics": [
+    "eng-2-16",
+    "eng-2-15"
+  ],
+  "engineering-ordinary-finishing-of-materials": [
+    "eng-2-13",
+    "eng-3-7"
+  ],
+  "engineering-ordinary-furnaces": [
+    "eng-1-2",
+    "eng-1-4"
+  ],
+  "engineering-ordinary-health-and-safety": [
+    "eng-3-1"
+  ],
+  "engineering-ordinary-heat-treatment": [
+    "eng-2-6"
+  ],
+  "engineering-ordinary-ict": [
+    "eng-3-14",
+    "eng-2-16"
+  ],
+  "engineering-ordinary-machining-metrology": [
+    "eng-2-11",
+    "eng-3-12"
+  ],
+  "engineering-ordinary-materials-properties-and-uses": [
+    "eng-1-2",
+    "eng-1-3",
+    "eng-1-4",
+    "eng-1-5",
+    "eng-1-9",
+    "eng-3-8"
+  ],
+  "engineering-ordinary-mechanical-joining-assembly": [
+    "eng-2-10"
+  ],
+  "engineering-ordinary-non-ferrous-metals-alloys": [
+    "eng-1-5",
+    "eng-1-3"
+  ],
+  "engineering-ordinary-pneumatics": [
+    "eng-2-15",
+    "eng-2-16"
+  ],
+  "engineering-ordinary-polymers": [
+    "eng-1-9"
+  ],
+  "engineering-ordinary-tools-mechanisms": [
+    "eng-2-11",
+    "eng-2-15"
+  ],
+  "engineering-ordinary-welding-soldering": [
+    "eng-2-10"
+  ],
+  "engineering-higher-new-course-cadcam": [
+    "engineering-2028-1-cadcam"
+  ],
+  "engineering-higher-new-course-engineering-in-society": [
+    "engineering-2028-1-engineering-in-society"
+  ],
+  "engineering-higher-new-course-manufacturing-skills": [
+    "engineering-2028-1-manufacturing-skills"
+  ],
+  "engineering-higher-new-course-materials-processing-and-selection": [
+    "engineering-2028-1-materials-processing-selection"
+  ],
+  "engineering-higher-new-course-measurement-quality-and-automation": [
+    "engineering-2028-1-measurement-quality-automation"
+  ],
+  "engineering-higher-new-course-project-planning-and-evaluation": [
+    "engineering-2028-1-project-planning-evaluation"
+  ],
+  "engineering-higher-new-course-advanced-and-autonomous-system": [
+    "engineering-2028-2-advanced-autonomous-systems"
+  ],
+  "engineering-higher-new-course-communication-programming-and-debugging": [
+    "engineering-2028-2-communication-programming-debugging"
+  ],
+  "engineering-higher-new-course-control-system-design": [
+    "engineering-2028-2-control-system-design"
+  ],
+  "engineering-higher-new-course-control-systems": [
+    "engineering-2028-2-control-systems"
+  ],
+  "engineering-higher-new-course-sensors-actuators-and-energy": [
+    "engineering-2028-2-sensors-actuators-energy"
+  ],
+  "engineering-higher-new-course-design-process-and-sustainability": [
+    "engineering-2028-3-design-process-sustainability"
+  ],
+  "engineering-higher-new-course-engineering-specification-and-prototyping": [
+    "engineering-2028-3-specification-prototyping"
+  ],
+  "engineering-higher-new-course-functionality-and-human-centred-design": [
+    "engineering-2028-3-human-centred-design"
+  ],
+  "engineering-higher-new-course-sketching-visualisation-and-communication": [
+    "engineering-2028-3-sketching-visualisation-communication"
+  ],
+  "engineering-higher-new-course-electrical-pneumatic-and-hydraulic-systems": [
+    "engineering-2028-4-electrical-pneumatic-hydraulic"
+  ],
+  "engineering-higher-new-course-energy-and-power": [
+    "engineering-2028-4-energy-power"
+  ],
+  "engineering-higher-new-course-materials": [
+    "engineering-2028-4-materials"
+  ],
+  "engineering-higher-new-course-mechanisms-motion-and-structures": [
+    "engineering-2028-4-mechanisms-motion-structures"
+  ],
+  "engineering-ordinary-new-course-cadcam": [
+    "engineering-2028-1-cadcam"
+  ],
+  "engineering-ordinary-new-course-engineering-in-society": [
+    "engineering-2028-1-engineering-in-society"
+  ],
+  "engineering-ordinary-new-course-manufacturing-skills": [
+    "engineering-2028-1-manufacturing-skills"
+  ],
+  "engineering-ordinary-new-course-materials-processing-and-selection": [
+    "engineering-2028-1-materials-processing-selection"
+  ],
+  "engineering-ordinary-new-course-measurement-quality-and-automation": [
+    "engineering-2028-1-measurement-quality-automation"
+  ],
+  "engineering-ordinary-new-course-project-planning-and-evaluation": [
+    "engineering-2028-1-project-planning-evaluation"
+  ],
+  "engineering-ordinary-new-course-advanced-and-autonomous-system": [
+    "engineering-2028-2-advanced-autonomous-systems"
+  ],
+  "engineering-ordinary-new-course-communication-programming-and-debugging": [
+    "engineering-2028-2-communication-programming-debugging"
+  ],
+  "engineering-ordinary-new-course-control-system-design": [
+    "engineering-2028-2-control-system-design"
+  ],
+  "engineering-ordinary-new-course-control-systems": [
+    "engineering-2028-2-control-systems"
+  ],
+  "engineering-ordinary-new-course-sensors-actuators-and-energy": [
+    "engineering-2028-2-sensors-actuators-energy"
+  ],
+  "engineering-ordinary-new-course-design-process-and-sustainability": [
+    "engineering-2028-3-design-process-sustainability"
+  ],
+  "engineering-ordinary-new-course-engineering-specification-and-prototyping": [
+    "engineering-2028-3-specification-prototyping"
+  ],
+  "engineering-ordinary-new-course-functionality-and-human-centred-design": [
+    "engineering-2028-3-human-centred-design"
+  ],
+  "engineering-ordinary-new-course-sketching-visualisation-and-communication": [
+    "engineering-2028-3-sketching-visualisation-communication"
+  ],
+  "engineering-ordinary-new-course-electrical-pneumatic-and-hydraulic-systems": [
+    "engineering-2028-4-electrical-pneumatic-hydraulic"
+  ],
+  "engineering-ordinary-new-course-energy-and-power": [
+    "engineering-2028-4-energy-power"
+  ],
+  "engineering-ordinary-new-course-materials": [
+    "engineering-2028-4-materials"
+  ],
+  "engineering-ordinary-new-course-mechanisms-motion-and-structures": [
+    "engineering-2028-4-mechanisms-motion-structures"
+  ]
+}

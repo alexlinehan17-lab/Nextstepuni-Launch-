@@ -1,1 +1,261 @@
-{"band":[1,17],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058ALP000EV.pdf","q":[{"conf":1.0,"label":"Reading · Question 1 (Fashion Week website)","mode":"crop","n":"1","pP":2,"pY":[0.0422,1.0],"region":[{"p":6,"r":[0.0,0.13,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0751]}]},{"conf":1.0,"label":"Reading · Question 2 (Accommodation reviews)","mode":"crop","n":"2","pP":5,"pY":[0.0422,1.0],"region":[{"p":7,"r":[0.0,0.0751,1.0,1.0]},{"p":8,"r":[0.0,0.0,1.0,1.0]},{"p":9,"r":[0.0,0.0,1.0,0.0642]}]},{"conf":1.0,"label":"Reading · Question 3 (Evan & Mika e-mail)","mode":"crop","n":"3","pP":9,"pY":[0.0563,1.0],"region":[{"p":9,"r":[0.0,0.0642,1.0,1.0]},{"p":10,"r":[0.0,0.0,1.0,0.0642]}]}],"schemeFileid":"LC058ALP000EV.pdf","v":1}
+{
+  "band": [
+    1,
+    17
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058ALP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Reading · Question 1 (Fashion Week website)",
+      "mode": "crop",
+      "n": "1",
+      "pP": 2,
+      "pY": [
+        0.0422,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.13,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0751
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Reading · Question 2 (Accommodation reviews)",
+      "mode": "crop",
+      "n": "2",
+      "pP": 5,
+      "pY": [
+        0.0422,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0751,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0642
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Reading · Question 3 (Evan & Mika e-mail)",
+      "mode": "crop",
+      "n": "3",
+      "pP": 9,
+      "pY": [
+        0.0563,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0642,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0642
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Short written production",
+      "mode": "crop",
+      "n": "4",
+      "pP": 12,
+      "pY": [
+        0.0331,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0642,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0641,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 14,
+      "endY": 0.93,
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Extended written production",
+      "mode": "crop",
+      "n": "5",
+      "pP": 15,
+      "pY": [
+        0.0332,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0751,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0641,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 18,
+      "endY": 0.93,
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 · B · Kanji",
+      "mode": "crop",
+      "n": "6",
+      "pP": 7,
+      "pY": [
+        0.049,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.1785,
+            1.0,
+            0.3383
+          ]
+        }
+      ],
+      "endP": 7,
+      "endY": 0.3953,
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 · C · Grammar",
+      "mode": "crop",
+      "n": "7",
+      "pP": 7,
+      "pY": [
+        0.3953,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.3383,
+            1.0,
+            0.93
+          ]
+        }
+      ],
+      "endP": 8,
+      "endY": 0.93,
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 · B · Kanji",
+      "mode": "crop",
+      "n": "8",
+      "pP": 11,
+      "pY": [
+        0.049,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.6576,
+            1.0,
+            0.93
+          ]
+        }
+      ],
+      "endP": 11,
+      "endY": 0.93,
+      "printOrder": 6
+    }
+  ],
+  "schemeFileid": "LC058ALP000EV.pdf",
+  "v": 1
+}

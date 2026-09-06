@@ -1,1 +1,524 @@
-{"band":[1,17],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058GLP000EV.pdf","q":[{"conf":1.0,"label":"Text I (Oricon webpage) · Q1","mode":"crop","n":"1","pP":3,"pY":[0.0,1.0],"region":[{"p":5,"r":[0.0,0.1581,1.0,0.3849]}]},{"conf":1.0,"label":"Text I (Oricon webpage) · Q2","mode":"crop","n":"2","pP":3,"pY":[0.0,1.0],"region":[{"p":5,"r":[0.0,0.3849,1.0,0.4668]}]},{"conf":1.0,"label":"Text I (Oricon webpage) · Q3","mode":"crop","n":"3","pP":3,"pY":[0.0,1.0],"region":[{"p":5,"r":[0.0,0.4668,1.0,0.5651]}]},{"conf":1.0,"label":"Text I (Oricon webpage) · Q4","mode":"crop","n":"4","pP":3,"pY":[0.5694,1.0],"region":[{"p":5,"r":[0.0,0.5651,1.0,0.6306]}]},{"conf":1.0,"label":"Text I (Oricon webpage) · Q5","mode":"crop","n":"5","pP":3,"pY":[0.6882,1.0],"region":[{"p":5,"r":[0.0,0.6306,1.0,1.0]},{"p":6,"r":[0.0,0.0,1.0,0.0763]}]},{"conf":1.0,"label":"Text II (Food crazes) · Part A Q1","mode":"crop","n":"6","pP":5,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.1253,1.0,0.1745]}]},{"conf":1.0,"label":"Text II (Food crazes) · Part A Q2","mode":"crop","n":"7","pP":5,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.1745,1.0,0.2237]}]},{"conf":1.0,"label":"Text II (Food crazes) · Part A Q3","mode":"crop","n":"8","pP":5,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.2237,1.0,0.2728]}]},{"conf":1.0,"label":"Text II (Food crazes) · Part A Q4","mode":"crop","n":"9","pP":5,"pY":[0.281,1.0],"region":[{"p":6,"r":[0.0,0.2728,1.0,0.3849]}]},{"conf":1.0,"label":"Text II (Food crazes) · Part B True/False","mode":"crop","n":"10","pP":5,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.3849,1.0,0.6842]}]},{"conf":1.0,"label":"Text II (Food crazes) · Part C Kanji","mode":"crop","n":"11","pP":6,"pY":[0.0331,1.0],"region":[{"p":6,"r":[0.0,0.6842,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0763]}]},{"conf":1.0,"label":"Text III (Jack's email) · Part A Q1","mode":"crop","n":"12","pP":9,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.2646,1.0,0.3138]}]},{"conf":1.0,"label":"Text III (Jack's email) · Part A Q2","mode":"crop","n":"13","pP":9,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.3138,1.0,0.404]}]},{"conf":1.0,"label":"Text III (Jack's email) · Part A Q3","mode":"crop","n":"14","pP":9,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.404,1.0,0.5864]}]},{"conf":1.0,"label":"Text III (Jack's email) · Part A Q4 (Japanese)","mode":"crop","n":"15","pP":9,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.5864,1.0,1.0]},{"p":8,"r":[0.0,0.0,1.0,0.0764]}]},{"conf":1.0,"label":"Text III (Jack's email) · Part B Grammar Q1 (negative)","mode":"crop","n":"16","pP":10,"pY":[0.0,1.0],"region":[{"p":8,"r":[0.0,0.1094,1.0,0.351]}]},{"conf":1.0,"label":"Text III (Jack's email) · Part B Grammar Q2 (particles)","mode":"crop","n":"17","pP":10,"pY":[0.0,1.0],"region":[{"p":8,"r":[0.0,0.351,1.0,1.0]},{"p":9,"r":[0.0,0.0,1.0,0.4756]}]}],"schemeFileid":"LC058GLP000EV.pdf","v":1}
+{
+  "band": [
+    1,
+    17
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058GLP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Text I (Oricon webpage) · Q1",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.1581,
+            1.0,
+            0.3849
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I (Oricon webpage) · Q2",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.3849,
+            1.0,
+            0.4668
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I (Oricon webpage) · Q3",
+      "mode": "crop",
+      "n": "3",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.4668,
+            1.0,
+            0.5651
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I (Oricon webpage) · Q4",
+      "mode": "crop",
+      "n": "4",
+      "pP": 3,
+      "pY": [
+        0.5694,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.5651,
+            1.0,
+            0.6306
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I (Oricon webpage) · Q5",
+      "mode": "crop",
+      "n": "5",
+      "pP": 3,
+      "pY": [
+        0.6882,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.6306,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0763
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II (Food crazes) · Part A Q1",
+      "mode": "crop",
+      "n": "6",
+      "pP": 5,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.1253,
+            1.0,
+            0.1745
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II (Food crazes) · Part A Q2",
+      "mode": "crop",
+      "n": "7",
+      "pP": 5,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.1745,
+            1.0,
+            0.2237
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II (Food crazes) · Part A Q3",
+      "mode": "crop",
+      "n": "8",
+      "pP": 5,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.2237,
+            1.0,
+            0.2728
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II (Food crazes) · Part A Q4",
+      "mode": "crop",
+      "n": "9",
+      "pP": 5,
+      "pY": [
+        0.281,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.2728,
+            1.0,
+            0.3849
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II (Food crazes) · Part B True/False",
+      "mode": "crop",
+      "n": "10",
+      "pP": 5,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.3849,
+            1.0,
+            0.6842
+          ]
+        }
+      ],
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II (Food crazes) · Part C Kanji",
+      "mode": "crop",
+      "n": "11",
+      "pP": 6,
+      "pY": [
+        0.0331,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.6842,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0763
+          ]
+        }
+      ],
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III (Jack's email) · Part A Q1",
+      "mode": "crop",
+      "n": "12",
+      "pP": 9,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.2646,
+            1.0,
+            0.3138
+          ]
+        }
+      ],
+      "printOrder": 13
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III (Jack's email) · Part A Q2",
+      "mode": "crop",
+      "n": "13",
+      "pP": 9,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.3138,
+            1.0,
+            0.404
+          ]
+        }
+      ],
+      "printOrder": 14
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III (Jack's email) · Part A Q3",
+      "mode": "crop",
+      "n": "14",
+      "pP": 9,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.404,
+            1.0,
+            0.5864
+          ]
+        }
+      ],
+      "printOrder": 15
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III (Jack's email) · Part A Q4 (Japanese)",
+      "mode": "crop",
+      "n": "15",
+      "pP": 9,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.5864,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0764
+          ]
+        }
+      ],
+      "printOrder": 16
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III (Jack's email) · Part B Grammar Q1 (negative)",
+      "mode": "crop",
+      "n": "16",
+      "pP": 10,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.1094,
+            1.0,
+            0.351
+          ]
+        }
+      ],
+      "printOrder": 17
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III (Jack's email) · Part B Grammar Q2 (particles)",
+      "mode": "crop",
+      "n": "17",
+      "pP": 10,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.351,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.4756
+          ]
+        }
+      ],
+      "printOrder": 18
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Cloze written production",
+      "mode": "crop",
+      "n": "18",
+      "pP": 11,
+      "pY": [
+        0.0851,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0802,
+            1.0,
+            0.4756
+          ]
+        }
+      ],
+      "endP": 11,
+      "endY": 0.93,
+      "printOrder": 19
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Personal written production",
+      "mode": "crop",
+      "n": "19",
+      "pP": 12,
+      "pY": [
+        0.0426,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.4756,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.1663,
+            1.0,
+            0.75
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.93,
+      "printOrder": 20
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 · D · Culture and society",
+      "mode": "crop",
+      "n": "20",
+      "pP": 7,
+      "pY": [
+        0.0331,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0763,
+            1.0,
+            0.2074
+          ]
+        }
+      ],
+      "endP": 7,
+      "endY": 0.93,
+      "printOrder": 12
+    }
+  ],
+  "schemeFileid": "LC058GLP000EV.pdf",
+  "v": 1
+}

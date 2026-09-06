@@ -1,0 +1,201 @@
+{
+  "mathematics-higher-algebra-cubics": [
+    "mathematics-3-0",
+    "mathematics-3-1"
+  ],
+  "mathematics-higher-algebra-expressions-factorising": [
+    "mathematics-3-0"
+  ],
+  "mathematics-higher-algebra-inequalities": [
+    "mathematics-3-2"
+  ],
+  "mathematics-higher-algebra-quadratics": [
+    "mathematics-3-0",
+    "mathematics-3-1"
+  ],
+  "mathematics-higher-algebra-simultaneous-equations": [
+    "mathematics-3-1"
+  ],
+  "mathematics-higher-algebra-solving-equations": [
+    "mathematics-3-1"
+  ],
+  "mathematics-higher-area-volume": [
+    "mathematics-2-3"
+  ],
+  "mathematics-higher-co-ordinate-geometry-of-the-circle": [
+    "mathematics-1-1"
+  ],
+  "mathematics-higher-co-ordinate-geometry-of-the-line": [
+    "mathematics-1-1"
+  ],
+  "mathematics-higher-complex-numbers": [
+    "mathematics-3-3"
+  ],
+  "mathematics-higher-differentiation-applications": [
+    "mathematics-4-1"
+  ],
+  "mathematics-higher-differentiation-rules": [
+    "mathematics-4-1"
+  ],
+  "mathematics-higher-financial-maths": [
+    "mathematics-2-2",
+    "mathematics-2-5"
+  ],
+  "mathematics-higher-functions": [
+    "mathematics-4-0"
+  ],
+  "mathematics-higher-geometry": [
+    "mathematics-1-0",
+    "mathematics-1-3"
+  ],
+  "mathematics-higher-geometry-constructions-proofs": [
+    "mathematics-1-0"
+  ],
+  "mathematics-higher-indices-and-logs": [
+    "mathematics-2-0",
+    "mathematics-2-1"
+  ],
+  "mathematics-higher-induction": [
+    "mathematics-3-4"
+  ],
+  "mathematics-higher-integration": [
+    "mathematics-4-1"
+  ],
+  "mathematics-higher-probability": [
+    "mathematics-0-0",
+    "mathematics-0-1",
+    "mathematics-0-2"
+  ],
+  "mathematics-higher-sequences-series": [
+    "mathematics-2-4"
+  ],
+  "mathematics-higher-statistics-descriptive-statistics": [
+    "mathematics-0-3",
+    "mathematics-0-4",
+    "mathematics-0-5",
+    "mathematics-0-6"
+  ],
+  "mathematics-higher-statistics-inferential-statistics": [
+    "mathematics-0-3",
+    "mathematics-0-6"
+  ],
+  "mathematics-higher-statistics-z-scores": [
+    "mathematics-0-3",
+    "mathematics-0-6"
+  ],
+  "mathematics-higher-trigonometry-functions-identities": [
+    "mathematics-1-2"
+  ],
+  "mathematics-higher-trigonometry-triangles": [
+    "mathematics-1-2"
+  ],
+  "mathematics-ordinary-algebra": [
+    "mathematics-2-1",
+    "mathematics-2-4",
+    "mathematics-3-0",
+    "mathematics-3-1",
+    "mathematics-3-2"
+  ],
+  "mathematics-ordinary-algebra-equations": [
+    "mathematics-3-1"
+  ],
+  "mathematics-ordinary-area-volume": [
+    "mathematics-2-3"
+  ],
+  "mathematics-ordinary-co-ordinate-geometry-of-the-line": [
+    "mathematics-1-1"
+  ],
+  "mathematics-ordinary-co-ordinate-geometry-the-circle": [
+    "mathematics-1-1"
+  ],
+  "mathematics-ordinary-complex-numbers": [
+    "mathematics-3-3"
+  ],
+  "mathematics-ordinary-counting": [
+    "mathematics-0-0"
+  ],
+  "mathematics-ordinary-differentiation": [
+    "mathematics-4-1"
+  ],
+  "mathematics-ordinary-financial-maths": [
+    "mathematics-2-2",
+    "mathematics-2-5"
+  ],
+  "mathematics-ordinary-functions": [
+    "mathematics-4-0"
+  ],
+  "mathematics-ordinary-geometry": [
+    "mathematics-1-0",
+    "mathematics-1-3"
+  ],
+  "mathematics-ordinary-geometry-proofs-and-constructions": [
+    "mathematics-1-0"
+  ],
+  "mathematics-ordinary-graphing-functions": [
+    "mathematics-4-0"
+  ],
+  "mathematics-ordinary-indices": [
+    "mathematics-2-1"
+  ],
+  "mathematics-ordinary-number-systems": [
+    "mathematics-2-0"
+  ],
+  "mathematics-ordinary-probability": [
+    "mathematics-0-0",
+    "mathematics-0-1",
+    "mathematics-0-2"
+  ],
+  "mathematics-ordinary-sequences-series": [
+    "mathematics-2-4"
+  ],
+  "mathematics-ordinary-statistics": [
+    "mathematics-0-3",
+    "mathematics-0-4",
+    "mathematics-0-5",
+    "mathematics-0-6"
+  ],
+  "mathematics-ordinary-trigonometry": [
+    "mathematics-1-2"
+  ],
+  "mathematics-foundation-algebra": [
+    "mathematics-2-1",
+    "mathematics-2-4",
+    "mathematics-3-0",
+    "mathematics-3-1",
+    "mathematics-3-2"
+  ],
+  "mathematics-foundation-area-volume": [
+    "mathematics-2-3"
+  ],
+  "mathematics-foundation-arithmetic": [
+    "mathematics-2-2",
+    "mathematics-2-5"
+  ],
+  "mathematics-foundation-co-ordinate-geometry-of-the-line": [
+    "mathematics-1-1"
+  ],
+  "mathematics-foundation-data-statistics": [
+    "mathematics-0-3",
+    "mathematics-0-4",
+    "mathematics-0-5",
+    "mathematics-0-6"
+  ],
+  "mathematics-foundation-geometry": [
+    "mathematics-1-0",
+    "mathematics-1-3"
+  ],
+  "mathematics-foundation-graphs-of-functions": [
+    "mathematics-4-0"
+  ],
+  "mathematics-foundation-number-systems": [
+    "mathematics-2-0"
+  ],
+  "mathematics-foundation-probability": [
+    "mathematics-0-0",
+    "mathematics-0-1",
+    "mathematics-0-2"
+  ],
+  "mathematics-foundation-trigonometry": [
+    "mathematics-1-2"
+  ]
+}

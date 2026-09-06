@@ -99,6 +99,8 @@ export interface CanonicalCurriculumSpecification {
   selectionRules?: CurriculumSelectionRule[];
   assessmentComponents?: CurriculumAssessmentComponent[];
   recommendedClassHours?: number;
+  /** Compatibility-only redirects from retired node IDs into this specification. */
+  legacyTopicAliases?: Record<string, string>;
   notes?: string[];
 }
 
@@ -109,6 +111,7 @@ const OFFICIAL = {
   chemistry: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/chemistry/',
   physics: 'https://curriculumonline.ie/senior-cycle/senior-cycle-subjects/physics/',
   business: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/business/',
+  businessSpecification: 'https://www.curriculumonline.ie/getmedia/e81ccca9-fdf5-42e9-a291-52e9549820c9/SC-Business-Spec-ENG.pdf',
   agriculturalScience: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/agricultural-science/',
   appliedMathematics: 'https://curriculumonline.ie/senior-cycle/senior-cycle-subjects/applied-mathematics/',
   appliedMathematicsSpecification: 'https://curriculumonline.ie/getmedia/1d61d7b6-573d-4e2a-83ea-037ef17b083b/Leaving-Certificate-Specification-Applied-Mathematics_EN.pdf',
@@ -641,7 +644,7 @@ const redevelopedSpecifications: CanonicalCurriculumSpecification[] = MARK_BANK_
    * Mapping over every subject regardless would assert a specification that
    * does not exist — and it threw on the missing entry the moment a subject
    * without one was added to the deck. */
-  .filter((subject) => transitionSubjects[subject.id])
+  .filter((subject) => transitionSubjects[subject.id] && subject.id !== 'business')
   .map((subject) => {
     const transition = transitionSubjects[subject.id];
     const legacy = CURRICULUM.find((entry) => entry.id === subject.id);
@@ -674,6 +677,155 @@ const redevelopedSpecifications: CanonicalCurriculumSpecification[] = MARK_BANK_
       coverageNodeLevel: 'topic',
     };
   });
+
+/**
+ * Leaving Certificate Business introduced in September 2025 and first
+ * examined in 2027. The official specification is not the outgoing seven-unit
+ * Mark Bank deck: it has one unifying strand and four contextual strands.
+ */
+const business2027Specification: CanonicalCurriculumSpecification = {
+  id: 'business:2027',
+  subjectId: 'business',
+  subjectName: 'Business',
+  programme: 'leaving-certificate-established',
+  category: 'business',
+  levels: ['higher', 'ordinary'],
+  title: 'Leaving Certificate Business — specification examined from 2027',
+  firstExamYear: 2027,
+  status: 'verified',
+  sources: [
+    {
+      authority: 'Curriculum Online',
+      title: 'Leaving Certificate Business',
+      url: OFFICIAL.business,
+      role: 'transition',
+    },
+    {
+      authority: 'NCCA',
+      title: 'Leaving Certificate Business Specification',
+      url: OFFICIAL.businessSpecification,
+      role: 'content',
+    },
+  ],
+  groups: [
+    {
+      id: 'business-2027-unifying',
+      title: 'Unifying Strand: Investigating Business',
+      topics: [
+        { id: 'business-2027-u1', code: 'U1', title: 'Developing questions to research' },
+        { id: 'business-2027-u2', code: 'U2', title: 'Managing information' },
+        { id: 'business-2027-u3', code: 'U3', title: 'Project planning' },
+        { id: 'business-2027-u4', code: 'U4', title: 'Analysing and evaluating information' },
+        { id: 'business-2027-u5', code: 'U5', title: 'Presenting findings and perspectives' },
+        { id: 'business-2027-u6', code: 'U6', title: 'Acknowledging sources' },
+      ],
+    },
+    {
+      id: 'business-2027-strand-1',
+      code: '1',
+      title: 'Strand 1: Exploring the Business Environment',
+      topics: [
+        { id: 'business-2027-1-1', code: '1.1', title: 'Key stakeholders in business' },
+        { id: 'business-2027-1-2', code: '1.2', title: 'Forms of business, business regulation and governance' },
+        { id: 'business-2027-1-3', code: '1.3', title: 'Business and the economy' },
+        { id: 'business-2027-1-4', code: '1.4', title: 'The influence of national and EU policy' },
+        { id: 'business-2027-1-5', code: '1.5', title: 'Irish business globally and internationally' },
+        { id: 'business-2027-1-6', code: '1.6', title: 'Applying my learning' },
+      ],
+    },
+    {
+      id: 'business-2027-strand-2',
+      code: '2',
+      title: 'Strand 2: Understanding enterprise',
+      topics: [
+        { id: 'business-2027-2-1', code: '2.1', title: 'Enterprise in its broadest sense' },
+        { id: 'business-2027-2-2', code: '2.2', title: 'Idea development' },
+        { id: 'business-2027-2-3', code: '2.3', title: 'Business planning' },
+        { id: 'business-2027-2-4', code: '2.4', title: 'The target market' },
+        { id: 'business-2027-2-5', code: '2.5', title: 'Operations and finance' },
+        { id: 'business-2027-2-6', code: '2.6', title: 'Growth, development, and expansion' },
+        { id: 'business-2027-2-7', code: '2.7', title: 'Managing risk' },
+        { id: 'business-2027-2-8', code: '2.8', title: 'Applying my learning' },
+      ],
+    },
+    {
+      id: 'business-2027-strand-3',
+      code: '3',
+      title: 'Strand 3: Leading in Business',
+      topics: [
+        { id: 'business-2027-3-1', code: '3.1', title: 'Leading and managing an organisation' },
+        { id: 'business-2027-3-2', code: '3.2', title: 'Leading and managing people' },
+        { id: 'business-2027-3-3', code: '3.3', title: 'The importance of communication' },
+        { id: 'business-2027-3-4', code: '3.4', title: 'The rationale for planning' },
+        { id: 'business-2027-3-5', code: '3.5', title: 'Applying my learning' },
+      ],
+    },
+    {
+      id: 'business-2027-strand-4',
+      code: '4',
+      title: 'Strand 4: Being Informed and Making Informed Decisions',
+      topics: [
+        { id: 'business-2027-4-1', code: '4.1', title: 'Making informed decisions as a consumer' },
+        { id: 'business-2027-4-2', code: '4.2', title: 'Making informed financial decisions' },
+        { id: 'business-2027-4-3', code: '4.3', title: 'Being an informed employee' },
+      ],
+    },
+  ],
+  coverageNodeLevel: 'topic',
+  recommendedClassHours: 180,
+  assessmentComponents: [
+    {
+      id: 'business-2027-investigative-study',
+      title: 'Business Alive Investigative Study',
+      kind: 'coursework',
+      weighting: 40,
+      levels: ['higher', 'ordinary'],
+      required: true,
+      notes: ['Completed from a common brief and submitted digitally during sixth year.'],
+    },
+    {
+      id: 'business-2027-written-examination',
+      title: 'Written examination',
+      kind: 'written-examination',
+      weighting: 60,
+      levels: ['higher', 'ordinary'],
+      required: true,
+    },
+  ],
+  legacyTopicAliases: {
+    'business-0-12': 'business-2027-1-1',
+    'business-0-13': 'business-2027-4-1',
+    'business-0-14': 'business-2027-4-3',
+    'business-1-5': 'business-2027-2-1',
+    'business-2-11': 'business-2027-3-1',
+    'business-2-12': 'business-2027-3-3',
+    'business-2-13': 'business-2027-3-4',
+    'business-3-16': 'business-2027-2-5',
+    'business-3-17': 'business-2027-2-7',
+    'business-3-18': 'business-2027-1-3',
+    'business-3-19': 'business-2027-2-5',
+    'business-3-20': 'business-2027-3-2',
+    'business-3-21': 'business-2027-3-4',
+    'business-4-14': 'business-2027-2-2',
+    'business-4-15': 'business-2027-2-3',
+    'business-4-16': 'business-2027-2-4',
+    'business-4-17': 'business-2027-2-4',
+    'business-4-18': 'business-2027-2-6',
+    'business-4-19': 'business-2027-u4',
+    'business-5-13': 'business-2027-1-2',
+    'business-5-14': 'business-2027-1-2',
+    'business-5-15': 'business-2027-1-3',
+    'business-5-16': 'business-2027-2-1',
+    'business-5-17': 'business-2027-1-2',
+    'business-6-13': 'business-2027-1-5',
+    'business-6-14': 'business-2027-1-4',
+    'business-6-15': 'business-2027-1-5',
+  },
+  notes: [
+    'The unifying strand permeates all four contextual strands.',
+    'Legacy aliases keep historic Mark Bank mastery resolvable without exposing the outgoing seven-unit map as the 2027 specification.',
+  ],
+};
 
 const constructionTechnologySpecification: CanonicalCurriculumSpecification = {
   id: 'construction-technology:2028',
@@ -952,12 +1104,35 @@ const engineering2028Specification: CanonicalCurriculumSpecification = {
   ],
   recommendedClassHours: 180,
   groups: [
-    canonicalGroup('engineering-2028-processes', 'Engineering Processes', []),
-    canonicalGroup('engineering-2028-automation-control', 'Automation and Control Systems', []),
-    canonicalGroup('engineering-2028-design-capability', 'Design Capability', []),
-    canonicalGroup('engineering-2028-principles-energy', 'Engineering Principles and Energy', []),
+    canonicalGroup('engineering-2028-processes', 'Engineering Processes', [
+      ['engineering-2028-1-cadcam', 'CAD/CAM'],
+      ['engineering-2028-1-engineering-in-society', 'Engineering in society'],
+      ['engineering-2028-1-manufacturing-skills', 'Manufacturing skills'],
+      ['engineering-2028-1-materials-processing-selection', 'Materials processing and selection'],
+      ['engineering-2028-1-measurement-quality-automation', 'Measurement, quality and automation'],
+      ['engineering-2028-1-project-planning-evaluation', 'Project planning and evaluation'],
+    ]),
+    canonicalGroup('engineering-2028-automation-control', 'Automation and Control Systems', [
+      ['engineering-2028-2-advanced-autonomous-systems', 'Advanced and autonomous systems'],
+      ['engineering-2028-2-communication-programming-debugging', 'Communication, programming and debugging'],
+      ['engineering-2028-2-control-system-design', 'Control-system design'],
+      ['engineering-2028-2-control-systems', 'Control systems'],
+      ['engineering-2028-2-sensors-actuators-energy', 'Sensors, actuators and energy'],
+    ]),
+    canonicalGroup('engineering-2028-design-capability', 'Design Capability', [
+      ['engineering-2028-3-design-process-sustainability', 'Design process and sustainability'],
+      ['engineering-2028-3-specification-prototyping', 'Engineering specification and prototyping'],
+      ['engineering-2028-3-human-centred-design', 'Functionality and human-centred design'],
+      ['engineering-2028-3-sketching-visualisation-communication', 'Sketching, visualisation and communication'],
+    ]),
+    canonicalGroup('engineering-2028-principles-energy', 'Engineering Principles and Energy', [
+      ['engineering-2028-4-electrical-pneumatic-hydraulic', 'Electrical, pneumatic and hydraulic systems'],
+      ['engineering-2028-4-energy-power', 'Energy and power'],
+      ['engineering-2028-4-materials', 'Materials'],
+      ['engineering-2028-4-mechanisms-motion-structures', 'Mechanisms, motion and structures'],
+    ]),
   ],
-  coverageNodeLevel: 'group',
+  coverageNodeLevel: 'topic',
   assessmentComponents: [
     {
       id: 'engineering-2028-design-manufacture-project',
@@ -979,7 +1154,8 @@ const engineering2028Specification: CanonicalCurriculumSpecification = {
   ],
   notes: [
     'Introduced to fifth-year students in September 2026.',
-    'Coverage uses the four official strands; no outgoing Engineering taxonomy is carried forward.',
+    'The four official strands remain canonical. The trackable study areas consolidate the specification learning outcomes into the same practical clusters used by the audited exam-topic menu.',
+    'The factual practice label “Advanced and Autonomous System” is retained in Topic Atlas, while this canonical record corrects it to the plural “systems”.',
   ],
 };
 
@@ -1909,6 +2085,7 @@ function applyScheduledOutgoingBoundary(
 export const CURRICULUM_SPECIFICATIONS: CanonicalCurriculumSpecification[] = [
   ...legacySpecifications.map(patchLegacySpecification).map(applyScheduledOutgoingBoundary),
   ...redevelopedSpecifications,
+  business2027Specification,
   constructionTechnologySpecification,
   geography2028Specification,
   engineering2028Specification,
@@ -2053,14 +2230,20 @@ export function findCanonicalTopic(
   specification: CanonicalCurriculumSpecification,
   topicId: string,
 ): CanonicalCurriculumTopic | undefined {
-  return specification.groups.flatMap((group) => group.topics).find((topic) => topic.id === topicId);
+  const topics = specification.groups.flatMap((group) => group.topics);
+  const canonicalId = specification.legacyTopicAliases?.[topicId] ?? topicId;
+  return topics.find((topic) => topic.id === canonicalId);
 }
 
 export function specificationContainsId(
   specification: CanonicalCurriculumSpecification,
   nodeId: string,
 ): boolean {
-  return specification.groups.some((group) =>
+  if (specification.groups.some((group) =>
     group.id === nodeId || group.topics.some((topic) => topic.id === nodeId),
-  );
+  )) return true;
+  const canonicalId = specification.legacyTopicAliases?.[nodeId];
+  return canonicalId
+    ? specification.groups.some((group) => group.topics.some((topic) => topic.id === canonicalId))
+    : false;
 }

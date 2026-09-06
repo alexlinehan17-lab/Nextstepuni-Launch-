@@ -34,6 +34,25 @@ export const paperKeyOf = (label: string): string =>
           ? 'p1'
           : 'single';
 
+/** One printed-question identity with translated editions collapsed. Art and
+ * Music have independently selectable components that restart at Q1; legacy
+ * Spanish uses one paper slot for both written and aural cards. Their
+ * normalised booklet id must therefore remain in the logical key to prevent
+ * false deduplication. */
+export const logicalQuestionIdentity = (question: Pick<
+  TopicSibling,
+  'subjectId' | 'level' | 'year' | 'paperKey' | 'fileid' | 'n'
+>): string => [
+  question.subjectId,
+  question.level,
+  question.year,
+  question.paperKey,
+  question.subjectId === 'art' || question.subjectId === 'music' || question.subjectId === 'spanish'
+    ? question.fileid.replace(/(?:EV|IV)(?=\.pdf$)/i, 'BV')
+    : '',
+  question.n,
+].join('|');
+
 export const topicLabel = (id: string): string => examTopicLabel(id) ?? TOPIC_LABELS[id] ?? id;
 
 const canonicalTopicIds = (q: QuestionTopicTag): string[] =>
@@ -47,7 +66,7 @@ const canonicalTopicIds = (q: QuestionTopicTag): string[] =>
  * no unclassified question can silently leak into or disappear from the UI.
  */
 export function browseTopicIdsForQuestion(
-  paper: Pick<PaperTopicTags, 'subjectId' | 'level' | 'year' | 'paperKey' | 'lang'>,
+  paper: Pick<PaperTopicTags, 'subjectId' | 'level' | 'year' | 'paperKey' | 'lang' | 'fileid'>,
   question: QuestionTopicTag,
 ): string[] {
   if (!examTopicTaxonomyFor(paper.subjectId)) return canonicalTopicIds(question);
@@ -59,6 +78,7 @@ export function browseTopicIdsForQuestion(
     question.n,
     paper.paperKey,
     paper.lang,
+    paper.fileid,
   );
 }
 
@@ -80,6 +100,15 @@ const paperId = (subjectId: string, year: number, level: string, lang: string, f
  * example, a written Q1 can never collide with an aural Q1.
  */
 const runtimePapersById = new Map<string, PaperTopicTags>();
+// These three audited taxonomies have valid local cards deliberately retained
+// outside the StudyClix reference, and one question booklet per paper slot.
+// Other subjects can have separately numbered components even when an index
+// entry appears singular, so their supplementation must remain file-scoped.
+const FILELESS_RETENTION_SUBJECTS = new Set([
+  'agricultural-science',
+  'classical-studies',
+  'politics-and-society',
+]);
 for (const source of PAPER_TOPIC_TAGS) {
   runtimePapersById.set(
     paperId(source.subjectId, source.year, source.level, source.lang, source.fileid),
@@ -94,22 +123,43 @@ for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
   for (const entry of entries) {
     for (const item of entry.papers) {
       const itemPaperKey = paperKeyOf(item.label);
-      const questions = mappings.filter(mapping =>
+      const candidateQuestions = mappings.filter(mapping =>
         mapping.year === entry.year
         && mapping.level === entry.level
         && mapping.paperKey === itemPaperKey
         && (mapping.lang === 'any' || mapping.lang === entry.lang));
+      const fileQuestions = candidateQuestions.filter(mapping => mapping.fileid === item.doc.f);
+      // Supplementation requires exact booklet-scoped evidence. Coarser
+      // year/question mappings remain useful for classifying frozen source
+      // cards, but using them to invent cards would merge independently
+      // numbered components (for example Biology A/B vs C or Technology A
+      // vs B/C).
+      // A fileless mapping is safe only when this entry has exactly one
+      // answer-mapped booklet in the slot. This retains explicitly audited
+      // reference omissions on single-paper subjects without reintroducing
+      // the Biology/Technology bug where several same-numbered component
+      // booklets were merged together.
+      const answerMappedSlotCount = entry.papers.filter(candidate =>
+        candidate.answers === 1 && paperKeyOf(candidate.label) === itemPaperKey).length;
+      const safeFilelessQuestions = FILELESS_RETENTION_SUBJECTS.has(subjectId)
+        && answerMappedSlotCount === 1
+        ? candidateQuestions.filter(mapping => !mapping.fileid)
+        : [];
+      // Exact StudyClix-derived mappings and retained local omissions are
+      // complementary. A booklet can contain both, so do not discard its
+      // safe fileless retention rows merely because at least one exact row
+      // exists for the same paper.
+      const questions = [...fileQuestions, ...safeFilelessQuestions];
       if (!questions.length) continue;
       // Atlas question jumps require a verified answer-map anchor. A full
       // paper remains available in Paper Trail even when its per-question
       // sidecar is not ready, but inventing rows would create dead jumps.
       if (item.answers !== 1) continue;
       const id = paperId(subjectId, entry.year, entry.level, entry.lang, item.doc.f);
-      // A committed source tag is tied to the exact verified sidecar. Preserve
-      // its question set verbatim; supplementation is only for audited papers
-      // that had no topic-tag record at all.
-      if (runtimePapersById.has(id)) continue;
-      const paper: PaperTopicTags = {
+      // Preserve every committed source question unchanged and append only
+      // audited cards that are present in the same verified answer sidecar.
+      // This closes genuine coverage gaps without replacing Mark Bank history.
+      const paper = runtimePapersById.get(id) ?? {
         subjectId,
         level: entry.level,
         lang: entry.lang,
@@ -118,8 +168,12 @@ for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
         paperKey: itemPaperKey,
         q: [],
       };
-      runtimePapersById.set(id, paper);
+      if (!runtimePapersById.has(id)) runtimePapersById.set(id, paper);
       for (const mapping of questions) {
+        // Comma/colon identities describe a grouped reference heading or a
+        // semantic sub-task, not a selectable sidecar card. Their individual
+        // cards are already represented by the source tags/crosswalk target.
+        if (/[:,]/.test(mapping.n)) continue;
         if (paper.q.some(question => question.n === mapping.n)) continue;
         const canonicalIds = curriculumNodeIdsForExamQuestion(
           subjectId,
@@ -129,6 +183,7 @@ for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
           mapping.n,
           itemPaperKey,
           entry.lang,
+          item.doc.f,
         );
         if (!canonicalIds[0]) continue;
         paper.q.push({
@@ -256,7 +311,7 @@ export function topicsForSubject(subjectId: string): SubjectTopic[] {
   for (const p of RUNTIME_TOPIC_TAGS) {
     if (p.subjectId !== subjectId) continue;
     for (const q of p.q) {
-      const questionKey = `${p.level}|${p.year}|${p.paperKey}|${q.n}`;
+      const questionKey = logicalQuestionIdentity({ ...p, n: q.n });
       for (const id of browseTopicIdsForQuestion(p, q)) {
         const cur = agg.get(id) ?? { questions: new Set<string>(), years: new Set<number>() };
         cur.questions.add(questionKey);
@@ -284,7 +339,7 @@ export function questionsForTopics(subjectId: string, subtopicIds: string[] | nu
         ? [...canonicalTopicIds(q), ...browseTopicIdsForQuestion(p, q)].some(id => want.has(id))
         : true;
       if (!match) continue;
-      const k = `${p.level}|${p.year}|${p.paperKey}|${q.n}`;
+      const k = logicalQuestionIdentity({ ...p, n: q.n });
       const candidate = { subjectId: p.subjectId, level: p.level, lang: p.lang, year: p.year, fileid: p.fileid, paperKey: p.paperKey, n: q.n };
       const current = byPrintedQuestion.get(k);
       if (!current || (current.lang !== 'ev' && candidate.lang === 'ev')) byPrintedQuestion.set(k, candidate);
@@ -319,7 +374,7 @@ export function subjectAtlasStats(subjectId: string): SubjectAtlasStats {
   for (const p of RUNTIME_TOPIC_TAGS) {
     if (p.subjectId !== subjectId) continue;
     for (const q of p.q) {
-      const key = `${p.level}|${p.year}|${p.paperKey}|${q.n}`;
+      const key = logicalQuestionIdentity({ ...p, n: q.n });
       questions.add(key);
       const yearQuestions = perYearQuestions.get(p.year) ?? new Set<string>();
       yearQuestions.add(key);
@@ -374,10 +429,28 @@ export function strandsFor(subjectId: string, taggedIds: string[]): AtlasStrand[
   const claimed = new Set<string>();
   const examTaxonomy = examTopicTaxonomyFor(subjectId);
   if (examTaxonomy) {
+    const labelCounts = new Map<string, number>();
+    const levelLabelCounts = new Map<string, number>();
+    for (const group of examTaxonomy.groups) {
+      labelCounts.set(group.label, (labelCounts.get(group.label) ?? 0) + 1);
+      const levelLabel = `${group.level}|${group.label}`;
+      levelLabelCounts.set(levelLabel, (levelLabelCounts.get(levelLabel) ?? 0) + 1);
+    }
     for (const group of examTaxonomy.groups) {
       const ids = group.topicIds.filter(id => tagged.has(id));
       if (!ids.length) continue;
-      out.push({ id: group.id, name: group.label, subtopicIds: ids });
+      const qualifiers: string[] = [];
+      if ((labelCounts.get(group.label) ?? 0) > 1) {
+        qualifiers.push(group.level === 'higher' ? 'Higher Level' : 'Ordinary Level');
+        if ((levelLabelCounts.get(`${group.level}|${group.label}`) ?? 0) > 1 && group.course) {
+          qualifiers.push(group.course === 'new' ? 'New Course' : 'Old Course');
+        }
+      }
+      out.push({
+        id: group.id,
+        name: qualifiers.length ? `${qualifiers.join(' · ')} · ${group.label}` : group.label,
+        subtopicIds: ids,
+      });
       for (const id of ids) claimed.add(id);
     }
   }

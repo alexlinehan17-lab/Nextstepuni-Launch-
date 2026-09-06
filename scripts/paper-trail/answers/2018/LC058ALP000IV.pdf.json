@@ -1,1 +1,727 @@
-{"band":[1,25],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058ALP000IV.pdf","q":[{"conf":1.0,"label":"Ceist 1 · Cuid A · Q1 (links)","mode":"crop","n":"1","pP":3,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.4887,1.0,0.7137]}]},{"conf":1.0,"label":"Ceist 1 · Cuid A · Q2 (seasonal flavour)","mode":"crop","n":"2","pP":3,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.7137,1.0,0.7805]}]},{"conf":1.0,"label":"Ceist 1 · Cuid A · Q3 (green tea collaboration)","mode":"crop","n":"3","pP":3,"pY":[0.4918,1.0],"region":[{"p":6,"r":[0.0,0.7805,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0621]}]},{"conf":1.0,"label":"Ceist 1 · Cuid A · Q4 (recommended flavour, colours)","mode":"crop","n":"4","pP":3,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.0621,1.0,0.1941]}]},{"conf":1.0,"label":"Ceist 1 · Cuid A · Q5 (pizza for parties)","mode":"crop","n":"5","pP":3,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.1941,1.0,0.2602]}]},{"conf":1.0,"label":"Ceist 1 · Cuid A · Q6 (birthday cake)","mode":"crop","n":"6","pP":3,"pY":[0.8746,1.0],"region":[{"p":7,"r":[0.0,0.2602,1.0,0.34]}]},{"conf":1.0,"label":"Ceist 1 · Cuid B · Q1 (founders' origin)","mode":"crop","n":"7","pP":4,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.3707,1.0,0.4363]}]},{"conf":1.0,"label":"Ceist 1 · Cuid B · Q2 (growth in Japan)","mode":"crop","n":"8","pP":4,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.4363,1.0,0.5183]}]},{"conf":1.0,"label":"Ceist 1 · Cuid B · Q3 (flavours only in Japan)","mode":"crop","n":"9","pP":4,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.5183,1.0,0.5828]}]},{"conf":1.0,"label":"Ceist 1 · Cuid B · Q4 (places without campaign)","mode":"crop","n":"10","pP":4,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.5828,1.0,1.0]},{"p":8,"r":[0.0,0.0,1.0,0.0473]}]},{"conf":1.0,"label":"Ceist 2 · A (accommodation table)","mode":"crop","n":"11","pP":7,"pY":[0.0,1.0],"region":[{"p":8,"r":[0.0,0.0801,1.0,0.4506]}]},{"conf":1.0,"label":"Ceist 2 · B (Japanese) · Q1 i-iii","mode":"crop","n":"12","pP":7,"pY":[0.0,1.0],"region":[{"p":8,"r":[0.0,0.4506,1.0,1.0]},{"p":9,"r":[0.0,0.0,1.0,0.0637]}]},{"conf":1.0,"label":"Ceist 2 · (Irish) · Q2 i-iv","mode":"crop","n":"13","pP":7,"pY":[0.0,1.0],"region":[{"p":9,"r":[0.0,0.0637,1.0,0.5139]}]},{"conf":1.0,"label":"Ceist 2 · Q3 (translation into Irish)","mode":"crop","n":"14","pP":7,"pY":[0.0,1.0],"region":[{"p":9,"r":[0.0,0.5139,1.0,0.6135]}]},{"conf":1.0,"label":"Ceist 3 · Cuid A · Q1 (sister/brother)","mode":"crop","n":"15","pP":11,"pY":[0.0,1.0],"region":[{"p":10,"r":[0.0,0.4596,1.0,0.6235]}]},{"conf":1.0,"label":"Ceist 3 · Cuid A · Q2 (level of Chinese)","mode":"crop","n":"16","pP":11,"pY":[0.0,1.0],"region":[{"p":10,"r":[0.0,0.6235,1.0,0.7219]}]},{"conf":1.0,"label":"Ceist 3 · Cuid A · Q3 (formal schools)","mode":"crop","n":"17","pP":11,"pY":[0.0,1.0],"region":[{"p":10,"r":[0.0,0.7219,1.0,0.8202]}]},{"conf":1.0,"label":"Ceist 3 · Cuid A · Q4 (why hospital)","mode":"crop","n":"18","pP":11,"pY":[0.0,1.0],"region":[{"p":10,"r":[0.0,0.8202,1.0,1.0]},{"p":11,"r":[0.0,0.0,1.0,0.0451]}]},{"conf":1.0,"label":"Ceist 3 · Cuid A · Q5 (preferred hospital system)","mode":"crop","n":"19","pP":11,"pY":[0.0,1.0],"region":[{"p":11,"r":[0.0,0.0451,1.0,0.1271]}]},{"conf":1.0,"label":"Ceist 3 · Cuid A · Q6 (difficulty in Sendai)","mode":"crop","n":"20","pP":11,"pY":[0.0,1.0],"region":[{"p":11,"r":[0.0,0.1271,1.0,0.2276]}]},{"conf":1.0,"label":"Ceist 3 · Cuid B (Japanese) · Q1-3","mode":"crop","n":"21","pP":11,"pY":[0.7156,1.0],"region":[{"p":11,"r":[0.0,0.2276,1.0,0.4287]}]}],"schemeFileid":"LC058ALP000IV.pdf","v":1}
+{
+  "band": [
+    1,
+    25
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058ALP000IV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid A · Q1 (links)",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.4887,
+            1.0,
+            0.7137
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid A · Q2 (seasonal flavour)",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.7137,
+            1.0,
+            0.7805
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid A · Q3 (green tea collaboration)",
+      "mode": "crop",
+      "n": "3",
+      "pP": 3,
+      "pY": [
+        0.4918,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.7805,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0621
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid A · Q4 (recommended flavour, colours)",
+      "mode": "crop",
+      "n": "4",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0621,
+            1.0,
+            0.1941
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid A · Q5 (pizza for parties)",
+      "mode": "crop",
+      "n": "5",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.1941,
+            1.0,
+            0.2602
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid A · Q6 (birthday cake)",
+      "mode": "crop",
+      "n": "6",
+      "pP": 3,
+      "pY": [
+        0.8746,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.2602,
+            1.0,
+            0.34
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid B · Q1 (founders' origin)",
+      "mode": "crop",
+      "n": "7",
+      "pP": 4,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.3707,
+            1.0,
+            0.4363
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid B · Q2 (growth in Japan)",
+      "mode": "crop",
+      "n": "8",
+      "pP": 4,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.4363,
+            1.0,
+            0.5183
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid B · Q3 (flavours only in Japan)",
+      "mode": "crop",
+      "n": "9",
+      "pP": 4,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.5183,
+            1.0,
+            0.5828
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid B · Q4 (places without campaign)",
+      "mode": "crop",
+      "n": "10",
+      "pP": 4,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.5828,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0473
+          ]
+        }
+      ],
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · A (accommodation table)",
+      "mode": "crop",
+      "n": "11",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0801,
+            1.0,
+            0.4506
+          ]
+        }
+      ],
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · B (Japanese) · Q1 i-iii",
+      "mode": "crop",
+      "n": "12",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.4506,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0637
+          ]
+        }
+      ],
+      "printOrder": 12
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · (Irish) · Q2 i-iv",
+      "mode": "crop",
+      "n": "13",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0637,
+            1.0,
+            0.5139
+          ]
+        }
+      ],
+      "printOrder": 13
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · Q3 (translation into Irish)",
+      "mode": "crop",
+      "n": "14",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.5139,
+            1.0,
+            0.6135
+          ]
+        }
+      ],
+      "printOrder": 14
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · Cuid A · Q1 (sister/brother)",
+      "mode": "crop",
+      "n": "15",
+      "pP": 11,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.4596,
+            1.0,
+            0.6235
+          ]
+        }
+      ],
+      "printOrder": 17
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · Cuid A · Q2 (level of Chinese)",
+      "mode": "crop",
+      "n": "16",
+      "pP": 11,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.6235,
+            1.0,
+            0.7219
+          ]
+        }
+      ],
+      "printOrder": 18
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · Cuid A · Q3 (formal schools)",
+      "mode": "crop",
+      "n": "17",
+      "pP": 11,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.7219,
+            1.0,
+            0.8202
+          ]
+        }
+      ],
+      "printOrder": 19
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · Cuid A · Q4 (why hospital)",
+      "mode": "crop",
+      "n": "18",
+      "pP": 11,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.8202,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0451
+          ]
+        }
+      ],
+      "printOrder": 20
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · Cuid A · Q5 (preferred hospital system)",
+      "mode": "crop",
+      "n": "19",
+      "pP": 11,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0451,
+            1.0,
+            0.1271
+          ]
+        }
+      ],
+      "printOrder": 21
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · Cuid A · Q6 (difficulty in Sendai)",
+      "mode": "crop",
+      "n": "20",
+      "pP": 11,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.1271,
+            1.0,
+            0.2276
+          ]
+        }
+      ],
+      "printOrder": 22
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · Cuid B (Japanese) · Q1-3",
+      "mode": "crop",
+      "n": "21",
+      "pP": 11,
+      "pY": [
+        0.7156,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.2276,
+            1.0,
+            0.4287
+          ]
+        }
+      ],
+      "printOrder": 23
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Short written production",
+      "mode": "crop",
+      "n": "22",
+      "pP": 14,
+      "pY": [
+        0.0687,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.5049,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.047,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0474,
+            1.0,
+            0.92
+          ]
+        }
+      ],
+      "endP": 15,
+      "endY": 0.93,
+      "printOrder": 26
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Extended written production",
+      "mode": "crop",
+      "n": "23",
+      "pP": 16,
+      "pY": [
+        0.0687,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 15,
+          "r": [
+            0.0,
+            0.0473,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0.0,
+            0.0474,
+            1.0,
+            0.92
+          ]
+        }
+      ],
+      "endP": 19,
+      "endY": 0.93,
+      "printOrder": 27
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · B · Kanji",
+      "mode": "crop",
+      "n": "24",
+      "pP": 8,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.6135,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0637
+          ]
+        }
+      ],
+      "endP": 8,
+      "endY": 0.3924,
+      "printOrder": 15
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · C · Gramadach",
+      "mode": "crop",
+      "n": "25",
+      "pP": 8,
+      "pY": [
+        0.3924,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0637,
+            1.0,
+            0.3962
+          ]
+        }
+      ],
+      "endP": 8,
+      "endY": 0.93,
+      "printOrder": 16
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · C · Kanji",
+      "mode": "crop",
+      "n": "26",
+      "pP": 12,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.4287,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0719
+          ]
+        }
+      ],
+      "endP": 13,
+      "endY": 0.0702,
+      "printOrder": 24
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · D · Gramadach",
+      "mode": "crop",
+      "n": "27",
+      "pP": 13,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0719,
+            1.0,
+            0.5049
+          ]
+        }
+      ],
+      "endP": 13,
+      "endY": 0.93,
+      "printOrder": 25
+    }
+  ],
+  "schemeFileid": "LC058ALP000IV.pdf",
+  "v": 1
+}

@@ -1,0 +1,5751 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "computer-science",
+  "capturedAt": "2026-09-04",
+  "reference": {
+    "provider": "StudyClix",
+    "scope": "Factual topic labels, hierarchy, reported counts, and State-versus-Mock classification only.",
+    "excludedContent": "Question text, solutions, notes, videos, images, and PDFs were not copied."
+  },
+  "policy": {
+    "curriculumAuthority": "NCCA/Curriculum Online",
+    "examAuthority": "State Examinations Commission",
+    "commercialReferenceUse": "Factual topic labels, headings, classifications, and counts only.",
+    "excludedCommercialContent": "Question text, solutions, notes, videos, images, PDFs, and mock content."
+  },
+  "summary": {
+    "referenceTopics": 45,
+    "referenceReportedAssociations": 420,
+    "referenceOfficialAssociations": 302,
+    "referenceMockAssociations": 118,
+    "matchedAssociations": 253,
+    "sourceBlockedAssociations": 49,
+    "matchedLogicalCards": 203,
+    "matchedQuestionTopicLinks": 240,
+    "retainedLocalLogicalCards": 5,
+    "localPaperVariants": 52,
+    "localPhysicalMappings": 416,
+    "distinctStudentFacingQuestions": 208,
+    "hostedAnchorMaps": 52,
+    "preservedBaselineVariants": 23,
+    "preservedBaselineCards": 317,
+    "emptyReferenceTopics": [
+      "computer-science-higher-data-analysis",
+      "computer-science-ordinary-databases",
+      "computer-science-ordinary-decomposition",
+      "computer-science-ordinary-html-css",
+      "computer-science-ordinary-number-systems"
+    ]
+  },
+  "curriculumCrosswalk": {
+    "computer-science-higher-algorithms": [
+      "computer-science-1-2",
+      "computer-science-1-3",
+      "computer-science-1-5",
+      "computer-science-1-6",
+      "computer-science-1-7",
+      "computer-science-1-8",
+      "computer-science-1-25"
+    ],
+    "computer-science-higher-communication-protocols": [
+      "computer-science-1-16",
+      "computer-science-1-26"
+    ],
+    "computer-science-higher-communication-protocols-world-wide-web-and-the-internet": [
+      "computer-science-0-9",
+      "computer-science-1-16",
+      "computer-science-1-17",
+      "computer-science-1-26"
+    ],
+    "computer-science-higher-computational-thinking": [
+      "computer-science-0-0",
+      "computer-science-0-1",
+      "computer-science-0-2",
+      "computer-science-0-3",
+      "computer-science-0-5",
+      "computer-science-1-0",
+      "computer-science-1-1"
+    ],
+    "computer-science-higher-computer-systems": [
+      "computer-science-1-9",
+      "computer-science-1-10",
+      "computer-science-1-11",
+      "computer-science-1-13",
+      "computer-science-1-21"
+    ],
+    "computer-science-higher-computers-and-society": [
+      "computer-science-0-6",
+      "computer-science-0-7",
+      "computer-science-0-8",
+      "computer-science-0-14"
+    ],
+    "computer-science-higher-data-analysis": [
+      "computer-science-2-3",
+      "computer-science-2-4"
+    ],
+    "computer-science-higher-data-representation": [
+      "computer-science-1-14",
+      "computer-science-1-18",
+      "computer-science-1-19",
+      "computer-science-1-20",
+      "computer-science-2-5"
+    ],
+    "computer-science-higher-databases": [
+      "computer-science-2-2"
+    ],
+    "computer-science-higher-digital-and-analogue-input": [
+      "computer-science-1-15",
+      "computer-science-2-9"
+    ],
+    "computer-science-higher-embedded-systems": [
+      "computer-science-2-8"
+    ],
+    "computer-science-higher-history-of-computing": [
+      "computer-science-0-6",
+      "computer-science-0-8"
+    ],
+    "computer-science-higher-html-css": [
+      "computer-science-1-29",
+      "computer-science-2-0",
+      "computer-science-2-1"
+    ],
+    "computer-science-higher-javascript": [
+      "computer-science-1-28"
+    ],
+    "computer-science-higher-logic-gates": [
+      "computer-science-1-11",
+      "computer-science-1-12"
+    ],
+    "computer-science-higher-machine-learning-and-artificial-intelligence": [
+      "computer-science-0-10",
+      "computer-science-0-11"
+    ],
+    "computer-science-higher-modelling-and-simulation": [
+      "computer-science-0-4",
+      "computer-science-2-6",
+      "computer-science-2-7"
+    ],
+    "computer-science-higher-pseudocode-and-flowcharts": [
+      "computer-science-0-3",
+      "computer-science-1-4"
+    ],
+    "computer-science-higher-python": [
+      "computer-science-1-27"
+    ],
+    "computer-science-higher-software-design-and-development": [
+      "computer-science-0-15",
+      "computer-science-0-16",
+      "computer-science-0-17",
+      "computer-science-0-18",
+      "computer-science-0-19",
+      "computer-science-1-22",
+      "computer-science-1-23",
+      "computer-science-1-24"
+    ],
+    "computer-science-higher-user-experience-and-user-interface": [
+      "computer-science-0-12",
+      "computer-science-0-13",
+      "computer-science-2-0",
+      "computer-science-2-1"
+    ],
+    "computer-science-ordinary-algorithms": [
+      "computer-science-1-2",
+      "computer-science-1-3",
+      "computer-science-1-5",
+      "computer-science-1-6",
+      "computer-science-1-7",
+      "computer-science-1-8",
+      "computer-science-1-25"
+    ],
+    "computer-science-ordinary-communication-protocols": [
+      "computer-science-1-16",
+      "computer-science-1-26"
+    ],
+    "computer-science-ordinary-communication-protocols-world-wide-web-and-the-internet": [
+      "computer-science-0-9",
+      "computer-science-1-16",
+      "computer-science-1-17",
+      "computer-science-1-26"
+    ],
+    "computer-science-ordinary-computational-thinking": [
+      "computer-science-0-0",
+      "computer-science-0-1",
+      "computer-science-0-2",
+      "computer-science-0-3",
+      "computer-science-0-5",
+      "computer-science-1-0",
+      "computer-science-1-1"
+    ],
+    "computer-science-ordinary-computer-systems": [
+      "computer-science-1-9",
+      "computer-science-1-10",
+      "computer-science-1-11",
+      "computer-science-1-13",
+      "computer-science-1-21"
+    ],
+    "computer-science-ordinary-computers-and-society": [
+      "computer-science-0-6",
+      "computer-science-0-7",
+      "computer-science-0-8",
+      "computer-science-0-14"
+    ],
+    "computer-science-ordinary-data-analysis": [
+      "computer-science-2-3",
+      "computer-science-2-4"
+    ],
+    "computer-science-ordinary-data-representation": [
+      "computer-science-1-18",
+      "computer-science-1-19",
+      "computer-science-1-20",
+      "computer-science-2-5"
+    ],
+    "computer-science-ordinary-databases": [
+      "computer-science-2-2"
+    ],
+    "computer-science-ordinary-decomposition": [
+      "computer-science-0-0",
+      "computer-science-0-1",
+      "computer-science-1-0",
+      "computer-science-1-1"
+    ],
+    "computer-science-ordinary-digital-and-analogue-input": [
+      "computer-science-1-15",
+      "computer-science-2-9"
+    ],
+    "computer-science-ordinary-embedded-systems": [
+      "computer-science-2-8"
+    ],
+    "computer-science-ordinary-history-of-computing": [
+      "computer-science-0-6",
+      "computer-science-0-8"
+    ],
+    "computer-science-ordinary-html-css": [
+      "computer-science-1-29",
+      "computer-science-2-0",
+      "computer-science-2-1"
+    ],
+    "computer-science-ordinary-javascript": [
+      "computer-science-1-28"
+    ],
+    "computer-science-ordinary-logic-gates": [
+      "computer-science-1-11",
+      "computer-science-1-12"
+    ],
+    "computer-science-ordinary-machine-learning-and-artificial-intelligence": [
+      "computer-science-0-10",
+      "computer-science-0-11"
+    ],
+    "computer-science-ordinary-modelling-and-simulation": [
+      "computer-science-0-4",
+      "computer-science-2-6",
+      "computer-science-2-7"
+    ],
+    "computer-science-ordinary-number-systems": [
+      "computer-science-1-14"
+    ],
+    "computer-science-ordinary-pseudocode-and-flowcharts": [
+      "computer-science-0-3",
+      "computer-science-1-4"
+    ],
+    "computer-science-ordinary-python": [
+      "computer-science-1-27"
+    ],
+    "computer-science-ordinary-software": [
+      "computer-science-0-19",
+      "computer-science-1-13",
+      "computer-science-1-21"
+    ],
+    "computer-science-ordinary-software-design-and-development": [
+      "computer-science-0-15",
+      "computer-science-0-16",
+      "computer-science-0-17",
+      "computer-science-0-18",
+      "computer-science-0-19",
+      "computer-science-1-22",
+      "computer-science-1-23",
+      "computer-science-1-24"
+    ],
+    "computer-science-ordinary-user-experience-and-user-interface": [
+      "computer-science-0-12",
+      "computer-science-0-13",
+      "computer-science-2-0",
+      "computer-science-2-1"
+    ]
+  },
+  "associations": [
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 7",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 7",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2025 - Section B - Question 14 - Part (c)",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2024 - Section B - Question 14 - Part C",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 10",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2023 - Section B - Question 15",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section B - Question 14",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section B - Question 15",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 8",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 12",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section B - Question 13",
+      "year": 2020,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 5",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 15 - Part a",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 15 - Part b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 15 - Part c",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-algorithms",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 15 - Part d",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-communication-protocols",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 8",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-communication-protocols",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 5",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-communication-protocols",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 6",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-communication-protocols",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 7",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-communication-protocols",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 4",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-communication-protocols",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 13 - Part b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-communication-protocols-world-wide-web-and-the-internet",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 13 - Part a",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 11",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2026 - Section B - Question 14 - Part A,B",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 3",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 4",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 11",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 8",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2023 - Section B - Question 13 - Part B",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 10",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 11",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 12",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 14",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computational-thinking",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 4",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 2",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 4",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 12",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 8",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2023 - Section B - Question 14",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 2",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 3 - Part A",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 3",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 9",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 15 - Part a(i)",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 2",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 3",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computer-systems",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 14 - Part a-b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 5",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2026 - Section B - Question 14 - Part C",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 6",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 10",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 11",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 12",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2023 - Section B - Question 13 - Part A",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2023 - Section B - Question 13 - Part C",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 7",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 8",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 3 - Part B",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section B - Question 14 - Part c",
+      "year": 2020,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 10 - Part a",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 10 - Part b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 13 - Part c",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-computers-and-society",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 15 - Part b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 4",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 2",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 5",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 3",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 2",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 8 - Part a",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 8 - Part b",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 6",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 7",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-data-representation",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 2",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-databases",
+      "level": "higher",
+      "heading": "2024 - Section B - Question 15",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-databases",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 12",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-databases",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 9",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-digital-and-analogue-input",
+      "level": "higher",
+      "heading": "2026 - Section B - Question 15 - Part A",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-digital-and-analogue-input",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 15 - Part a(ii)",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-embedded-systems",
+      "level": "higher",
+      "heading": "2026 - Section B - Question 15 - Part B,C",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-embedded-systems",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 6",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-embedded-systems",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 15 - Part a (iv-v)",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-embedded-systems",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 15 - Part b (i)",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-embedded-systems",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 15 - Part b (iii)",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-embedded-systems",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 15 - Part c",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-history-of-computing",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 12",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-history-of-computing",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 5",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-history-of-computing",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 7",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-history-of-computing",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section B - Question 14 - Part a-b",
+      "year": 2020,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-html-css",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 10",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-html-css",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 7",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-javascript",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 1",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-javascript",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 11",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-javascript",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 1",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-javascript",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 6",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-logic-gates",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 3",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-logic-gates",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 1",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-logic-gates",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 3",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-logic-gates",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 4",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-logic-gates",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section A - Question 5",
+      "year": 2020,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-logic-gates",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 3",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-logic-gates",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 14 - Part c",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-machine-learning-and-artificial-intelligence",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 8",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-machine-learning-and-artificial-intelligence",
+      "level": "higher",
+      "heading": "2024 - Section B - Question 13",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-machine-learning-and-artificial-intelligence",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 9",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-modelling-and-simulation",
+      "level": "higher",
+      "heading": "2025 - Section B - Question 15",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-modelling-and-simulation",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 11 - Part a",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-modelling-and-simulation",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 11 - Part b",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-modelling-and-simulation",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 11",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-pseudocode-and-flowcharts",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 6",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-pseudocode-and-flowcharts",
+      "level": "higher",
+      "heading": "2024 - Section B - Question 14 - Part A",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-pseudocode-and-flowcharts",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 11",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-pseudocode-and-flowcharts",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 5",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-pseudocode-and-flowcharts",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 5",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 1",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2026 - Section C - Question 16 - Part A",
+      "year": 2026,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2026 - Section C - Question 16 - Part B",
+      "year": 2026,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 1",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2025 - Section A - Question 9",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2025 - Section B - Question 14 - Part (a),(b)",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2025 - Section C - Question 16",
+      "year": 2025,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2024 - Section C - Question 16",
+      "year": 2024,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 2",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 9",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2024 - Section B - Question 14 - Part B",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 7",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2023 - Section C - Question 16",
+      "year": 2023,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2022 - Paper C - Section C - Question 16",
+      "year": 2022,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section A - Question 1",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 1",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 4",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 6",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 13",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2021 - Paper C - Section C - Question 16",
+      "year": 2021,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2020 - Paper C - Section C - Question 16",
+      "year": 2020,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2020 - Sample Paper C - Section C - Question 16 - Part a",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2020 - Sample Paper C - Section C - Question 16 - Part b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-python",
+      "level": "higher",
+      "heading": "2020 - Sample Paper C - Section C - Question 16 - Part c",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 9",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2026 - Section B - Question 13",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2025 - Section B - Question 13",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 6",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 4",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2023 - Section A - Question 12",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section B - Question 13 - Part A",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2022 - Paper A + B - Section B - Question 13 - Part B",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section A - Question 10",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section B - Question 15 - Part a-b",
+      "year": 2020,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-software-design-and-development",
+      "level": "higher",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 12",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-higher-user-experience-and-user-interface",
+      "level": "higher",
+      "heading": "2026 - Section A - Question 10",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-user-experience-and-user-interface",
+      "level": "higher",
+      "heading": "2024 - Section A - Question 10",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-user-experience-and-user-interface",
+      "level": "higher",
+      "heading": "2021 - Paper A & B - Section B - Question 15 - Part b (ii)",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-higher-user-experience-and-user-interface",
+      "level": "higher",
+      "heading": "2020 - Paper A&B - Section B - Question 15 - Part c",
+      "year": 2020,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "paperKey": "single",
+        "fileid": "LC219ALP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 7",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2026 - Section B - Question 13",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 11",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 13 - Part B",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 8",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2023 - Section B - Question 13 - Part C",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 3",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 5",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 12",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 10",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 14 - Part a-b",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 12",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-algorithms",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 15 - Part a",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-communication-protocols",
+      "level": "ordinary",
+      "heading": "2023 - Section B - Question 15 - Part A",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-communication-protocols",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 6 - Part a",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-communication-protocols-world-wide-web-and-the-internet",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 9",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-communication-protocols-world-wide-web-and-the-internet",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 4",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-communication-protocols-world-wide-web-and-the-internet",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 15 - Part B",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-communication-protocols-world-wide-web-and-the-internet",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 12",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-communication-protocols-world-wide-web-and-the-internet",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 6 - Part b",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-communication-protocols-world-wide-web-and-the-internet",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 3",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-computational-thinking",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 5",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computational-thinking",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 7",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computational-thinking",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 5",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computational-thinking",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 14 - Part A",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computational-thinking",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 15 - Part b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 9",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 2",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 8",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2025 - Section B - Question 13 - Part (b)",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 3",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 7",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 4",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 10",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 5",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 15 - Part a",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 15 - Part c",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 11",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-computer-systems",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 13",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 8",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2026 - Section B - Question 14 - Part A",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2026 - Section B - Question 14 - Part C",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 6",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2025 - Section B - Question 13 - Part (a)",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 9",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 12",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2023 - Section B - Question 15 - Part B,C",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 8",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 15 - Part D",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 4",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 11",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 13 - Part b",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 14 - Part c",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 2",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 14 - Part b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-computers-and-society",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 15 - Part c",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 10",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 10",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 15 - Part B",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 6",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 9",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 9",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 13 - Part A",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 13 - Part C",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 14 - Part B",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 1",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 4",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-data-analysis",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 7",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 2",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 12",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 3",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 4",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 2",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 4",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 13 - Part B",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 2",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-data-representation",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 3",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-digital-and-analogue-input",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 11",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-digital-and-analogue-input",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 7",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-embedded-systems",
+      "level": "ordinary",
+      "heading": "2026 - Section B - Question 15",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-embedded-systems",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 2",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-history-of-computing",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 7",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-history-of-computing",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 15 - Part A",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-history-of-computing",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 15 - Part d",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-javascript",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 6",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-javascript",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 10",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-logic-gates",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 6",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-logic-gates",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 10",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-logic-gates",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 11",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-logic-gates",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 15 - Part b",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-logic-gates",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 9",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-machine-learning-and-artificial-intelligence",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 4",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "4",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "4"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-machine-learning-and-artificial-intelligence",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 14 - Part A",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-machine-learning-and-artificial-intelligence",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 14 - Part C",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-modelling-and-simulation",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 6",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-modelling-and-simulation",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 15 - Part A",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-modelling-and-simulation",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 2",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "2",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "2"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 10",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "10",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "10"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2025 - Section B - Question 14 - Part (c)",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 5",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 13 - Part A",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 15 - Part D",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 3",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2023 - Section B - Question 13 - Part B",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 6",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "6",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "6"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 14 - Part C",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 8",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-pseudocode-and-flowcharts",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 8",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 1",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 11",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2026 - Section C - Question 16 - Part A",
+      "year": 2026,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2026 - Section C - Question 16 - Part B",
+      "year": 2026,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 1",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2025 - Section A - Question 5",
+      "year": 2025,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "5"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2025 - Section B - Question 14 - Part (a)",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2025 - Section C - Question 16",
+      "year": 2025,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2024 - Section C - Question 16",
+      "year": 2024,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 1",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 8",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "8"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 1",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2023 - Section A - Question 11",
+      "year": 2023,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "11",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "11"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2023 - Section B - Question 13 - Part A",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2023 - Section C - Question 16",
+      "year": 2023,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2022 - Paper C - Section C - Question 16",
+      "year": 2022,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section A - Question 1",
+      "year": 2022,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "1"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section A - Question 9",
+      "year": 2021,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "9",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "9"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2021 - Section C - Section C - Question 16",
+      "year": 2021,
+      "sitting": "main",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP040EV.pdf",
+        "questionNumber": "16"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper C - Section C - Question 16 - Part a",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper C - Section C - Question 16 - Part b",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper C - Section C - Question 16 - Part c",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "C",
+      "questionNumber": "16",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 5",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "5",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-python",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 8",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "8",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-software",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 13",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2026 - Section A - Question 3",
+      "year": 2026,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "3",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "3"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2025 - Section B - Question 15",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2025 - Section B - Question 13 - Part (c)",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2025 - Section B - Question 14 - Part (b)",
+      "year": 2025,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2025,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 7",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "7",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "7"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2023 - Section B - Question 14",
+      "year": 2023,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2023,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 13 - Part a",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section A - Question 1",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "A",
+      "questionNumber": "1",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 14 - Part a",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-software-design-and-development",
+      "level": "ordinary",
+      "heading": "2020 - Sample Paper A&B - Section B - Question 14 - Part c",
+      "year": 2020,
+      "sitting": "sample",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "source-blocked",
+      "reason": "The entitled Paper Trail corpus does not currently contain this official sample paper. The factual heading is retained pending acquisition and independent verification from an official source; no StudyClix-hosted question image or PDF is copied."
+    },
+    {
+      "topicId": "computer-science-ordinary-user-experience-and-user-interface",
+      "level": "ordinary",
+      "heading": "2026 - Section B - Question 14 - Part B",
+      "year": 2026,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2026,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-user-experience-and-user-interface",
+      "level": "ordinary",
+      "heading": "2024 - Section A - Question 12",
+      "year": 2024,
+      "sitting": "main",
+      "section": "A",
+      "questionNumber": "12",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "12"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-user-experience-and-user-interface",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 14 - Part B",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "14",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "14"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-user-experience-and-user-interface",
+      "level": "ordinary",
+      "heading": "2024 - Section B - Question 15 - Part C",
+      "year": 2024,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2024,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-user-experience-and-user-interface",
+      "level": "ordinary",
+      "heading": "2022 - Paper A + B - Section B - Question 15 - Part C",
+      "year": 2022,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "15",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2022,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "15"
+      }
+    },
+    {
+      "topicId": "computer-science-ordinary-user-experience-and-user-interface",
+      "level": "ordinary",
+      "heading": "2021 - Section A & B - Section B - Question 13 - Part c",
+      "year": 2021,
+      "sitting": "main",
+      "section": "B",
+      "questionNumber": "13",
+      "paperKey": "single",
+      "resolution": "matched",
+      "target": {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2021,
+        "paperKey": "single",
+        "fileid": "LC219GLP038EV.pdf",
+        "questionNumber": "13"
+      }
+    }
+  ],
+  "retainedLocalCards": [
+    {
+      "level": "ordinary",
+      "year": 2025,
+      "paperKey": "single",
+      "questionNumber": "12",
+      "canonicalNodeIds": [
+        "computer-science-1-23",
+        "computer-science-1-19"
+      ],
+      "topicIds": [
+        "computer-science-ordinary-software-design-and-development",
+        "computer-science-ordinary-data-representation"
+      ],
+      "resolution": "retained-local",
+      "reason": "Entitled SEC question preserved locally although the factual reference snapshot has no association for this independently selectable question."
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "paperKey": "single",
+      "questionNumber": "1",
+      "canonicalNodeIds": [
+        "computer-science-1-19"
+      ],
+      "topicIds": [
+        "computer-science-higher-data-representation"
+      ],
+      "resolution": "retained-local",
+      "reason": "Entitled SEC question preserved locally although the factual reference snapshot has no association for this independently selectable question."
+    },
+    {
+      "level": "higher",
+      "year": 2023,
+      "paperKey": "single",
+      "questionNumber": "9",
+      "canonicalNodeIds": [
+        "computer-science-0-1",
+        "computer-science-0-3"
+      ],
+      "topicIds": [
+        "computer-science-higher-computational-thinking",
+        "computer-science-higher-pseudocode-and-flowcharts"
+      ],
+      "resolution": "retained-local",
+      "reason": "Entitled SEC question preserved locally although the factual reference snapshot has no association for this independently selectable question."
+    },
+    {
+      "level": "higher",
+      "year": 2021,
+      "paperKey": "single",
+      "questionNumber": "2",
+      "canonicalNodeIds": [
+        "computer-science-1-14",
+        "computer-science-1-18"
+      ],
+      "topicIds": [
+        "computer-science-higher-data-representation"
+      ],
+      "resolution": "retained-local",
+      "reason": "Entitled SEC question preserved locally although the factual reference snapshot has no association for this independently selectable question."
+    },
+    {
+      "level": "higher",
+      "year": 2020,
+      "paperKey": "single",
+      "questionNumber": "9",
+      "canonicalNodeIds": [
+        "computer-science-2-4",
+        "computer-science-1-18"
+      ],
+      "topicIds": [
+        "computer-science-higher-data-analysis",
+        "computer-science-higher-data-representation"
+      ],
+      "resolution": "retained-local",
+      "reason": "Entitled SEC question preserved locally although the factual reference snapshot has no association for this independently selectable question."
+    }
+  ]
+}

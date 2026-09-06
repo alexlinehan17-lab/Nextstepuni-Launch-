@@ -3,9 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Paper Trail answer-map integrity — guards the committed per-paper answer
- * sidecars (scripts/paper-trail/answers/) and their contract with the generated
- * paperTrailData.ts. Runs in CI WITHOUT the gitignored corpus: it reads only the
- * committed sidecars + the committed index. The deep, corpus-dependent checks
+ * sidecars (scripts/paper-trail/answers/), permits reviewed hosted paper-only
+ * fallbacks (public/paper-anchors/), and checks their contract with the
+ * generated paperTrailData.ts. Runs in CI WITHOUT the gitignored corpus: it reads
+ * only committed sidecars + the committed index. The deep, corpus-dependent checks
  * (does a region actually contain that question?) live in the Python
  * test_anchor_map.py, run locally where the corpus exists.
  */
@@ -17,6 +18,7 @@ import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 import type { PaperAnswerMap } from '../types/paperTrail';
 
 const ANSWERS_DIR = path.resolve(__dirname, '../scripts/paper-trail/answers');
+const ANCHORS_DIR = path.resolve(__dirname, '../public/paper-anchors');
 
 function allSidecars(): { year: string; file: string; map: PaperAnswerMap }[] {
   if (!existsSync(ANSWERS_DIR)) return [];
@@ -120,14 +122,15 @@ describe('Paper Trail answer sidecars — shape', () => {
 });
 
 describe('Paper Trail answer flag ↔ sidecar consistency', () => {
-  it('every paper flagged answers:1 has a committed sidecar', () => {
+  it('every paper flagged answers:1 has a committed answer or paper-anchor sidecar', () => {
     const missing: string[] = [];
     for (const entries of Object.values(PAPER_TRAIL_INDEX)) {
       for (const entry of entries) {
         for (const item of entry.papers) {
           if (item.answers === 1) {
-            const p = path.join(ANSWERS_DIR, String(entry.year), `${item.doc.f}.json`);
-            if (!existsSync(p)) missing.push(`${entry.year}/${item.doc.f}`);
+            const answer = path.join(ANSWERS_DIR, String(entry.year), `${item.doc.f}.json`);
+            const anchor = path.join(ANCHORS_DIR, String(entry.year), `${item.doc.f}.json`);
+            if (!existsSync(answer) && !existsSync(anchor)) missing.push(`${entry.year}/${item.doc.f}`);
           }
         }
       }

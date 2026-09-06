@@ -145,6 +145,13 @@ def build(paper_path, scheme_path, iv):
         py1 = nxt_p[1] if nxt_p[0] == p_pi else 1.0
         q = {"n": str(n), "pP": p_pi + 1, "pY": [round(p_y, 4), round(py1, 4)],
              "region": segs, "mode": "crop", "conf": 1.0}
+        # The printed booklet inserts several blank answer pages between
+        # Sections B and C. Without an explicit boundary Q13 appears to span
+        # six pages and the runtime correctly refuses that implausible crop.
+        # Section-ending questions finish on their own printed page.
+        if (n + 1) in sections and sections[n + 1] != sec:
+            q["endP"] = p_pi + 1
+            q["endY"] = round(py1, 4)
         if label:
             q["label"] = label
         qs.append(q)
@@ -156,7 +163,8 @@ def build(paper_path, scheme_path, iv):
 
 
 def main():
-    years = [int(y) for y in sys.argv[1:]] or [2023, 2024, 2025, 2026]
+    refresh = "--refresh" in sys.argv[1:]
+    years = [int(y) for y in sys.argv[1:] if y != "--refresh"] or [2023, 2024, 2025, 2026]
     ok = drop = 0
     for year in years:
         for lvl in "AG":
@@ -169,7 +177,7 @@ def main():
                     if not (os.path.exists(pp) and os.path.exists(sp)):
                         continue
                     dst = os.path.join(ANSWERS, str(year), f"{f}.json")
-                    if os.path.exists(dst):
+                    if os.path.exists(dst) and not refresh:
                         continue
                     sidecar, err = build(pp, sp, lang == "IV")
                     if sidecar is None:

@@ -74,6 +74,15 @@ PAIR_OVERRIDES = {
     ("lc", 2011, "LC014ALP013IV.pdf"): "LC014ALP000IV.pdf",
     ("lb", 2010, "LB847CLP000EV.pdf"): "LB847CLP016EV.pdf",  # WRITTEN scheme, not TASKS
     ("lb", 2011, "LB847CLP000EV.pdf"): "LB847CLP016EV.pdf",
+    # From 2014 the SEC stopped using the 030 filename/label for the Project
+    # Maths scheme, although the corresponding papers retained 130/230 codes.
+    # Each 000 scheme contains both Paper 1 and Paper 2 for its level.
+    ("lc", 2014, "LC003ALP130EV.pdf"): "LC003ALP000EV.pdf",
+    ("lc", 2014, "LC003ALP230EV.pdf"): "LC003ALP000EV.pdf",
+    ("lc", 2014, "LC003GLP130EV.pdf"): "LC003GLP000EV.pdf",
+    ("lc", 2014, "LC003GLP230EV.pdf"): "LC003GLP000EV.pdf",
+    ("lc", 2014, "LC003BLP130EV.pdf"): "LC003BLP000EV.pdf",
+    ("lc", 2014, "LC003BLP230EV.pdf"): "LC003BLP000EV.pdf",
 }
 
 # Known archive typos, normalised before decoding (verified by adversarial audit).

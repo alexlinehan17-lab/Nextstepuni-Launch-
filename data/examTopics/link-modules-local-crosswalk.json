@@ -1,0 +1,4051 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "link-modules",
+  "generatedAt": "2026-09-05T22:46:27.572Z",
+  "status": "exact-current-corpus-mapped-source-completion-pending",
+  "summary": {
+    "referenceTopics": 10,
+    "referenceOfficialAssociations": 181,
+    "matchedAssociations": 136,
+    "sourceBlockedAssociations": 45,
+    "sourceBlockedByReason": {
+      "before-local-corpus": 27,
+      "deferred-sitting-not-in-local-corpus": 18
+    },
+    "matchedLocalCardLinks": 276,
+    "localPaperVariants": 32,
+    "localPhysicalMappings": 556,
+    "distinctStudentFacingQuestions": 295
+  },
+  "policy": {
+    "matchedSource": "Entitled local State Examinations Commission corpus only.",
+    "excludedContent": "No commercial mock question, solution, note, question text, image, media or provider-hosted PDF is copied.",
+    "completion": "A reference heading is matched only when every represented printed task exists in an answer-anchored local paper."
+  },
+  "associations": [
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2026 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2025 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2022 - Paper - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2022 - Deferred Exam Paper - Section C - Question 6",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2020 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2020 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2017 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2017 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2015 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2014 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2011 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2009 - Section C - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-career-investigation",
+      "heading": "2007 - Section C - Question 3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2026 - Section C - Question 1 - Part D",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2026 - Section C - Question 3 - Part B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2025 - Section C - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "18"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2025 - Section C - Question 3 - Part (b),(d)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2024 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2023 - Paper - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2022 - Paper - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2021 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2018 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2015 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2014 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2011 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-introduction-to-working-life",
+      "heading": "2009 - Section C - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2026 - Section C - Question 1 - Part A-C",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2025 - Section C - Question 3 - Part (a),(c)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2023 - Paper - Section C - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "18"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2023 - Deferred Exam Paper - Section C - Question 7",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "18"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2022 - Paper - Section C - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "18"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2022 - Deferred Exam Paper - Section C - Question 1",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2019 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2017 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2016 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2012 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2010 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2008 - Section C - Question 3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-job-seeking-skills",
+      "heading": "2008 - Section C - Question 6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2026 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2024 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2022 - Deferred Exam Paper - Section C - Question 4",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2021 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2020 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2018 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2016 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2015 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2013 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2011 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2010 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2009 - Section C - Question 2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2008 - Section C - Question 3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-1-work-placement",
+      "heading": "2007 - Section C - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2026 - Section C - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "18"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2024 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2024 - Section C - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "18"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2023 - Paper - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2022 - Paper - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2022 - Paper - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2022 - Deferred Exam Paper - Section C - Question 3",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2022 - Deferred Exam Paper - Section C - Question 7",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "18"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2019 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2019 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2018 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2015 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2014 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2013 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2012 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2011 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2010 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2009 - Section C - Question 3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2008 - Section C - Question 1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-an-enterprise-activity",
+      "heading": "2008 - Section C - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2026 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2026 - Section C - Question 3 - Part A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2026 - Section C - Question 3 - Part C",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2025 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2025 - Section C - Question 1 - Part (c),(d)",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2024 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2023 - Paper - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2023 - Paper - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2023 - Deferred Exam Paper - Section C - Question 5",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2023 - Deferred Exam Paper - Section C - Question 6",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2021 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2021 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2021 - Section C - Question 7",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "18"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2020 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2019 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2017 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2016 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2015 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2014 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2013 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2009 - Section C - Question 1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2009 - Section C - Question 3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2008 - Section C - Question 1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2008 - Section C - Question 2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2007 - Section C - Question 6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-enterprise-skills",
+      "heading": "2007 - Section C - Question 1-3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "12"
+        },
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "13"
+        },
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2026 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2026 - Section C - Question 3 - Part D",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2025 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2024 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2023 - Paper - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2023 - Paper - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2022 - Paper - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2022 - Deferred Exam Paper - Section C - Question 2",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2022 - Deferred Exam Paper - Section C - Question 5",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2021 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2020 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2019 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2017 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2016 - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2014 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2013 - Section C - Question 4",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2011 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2010 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2008 - Section C - Question 2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-business-enterprises",
+      "heading": "2007 - Section C - Question 2",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2025 - Section C - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2025 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2024 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2023 - Deferred Exam Paper - Section C - Question 4",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2022 - Paper - Section C - Question 6",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2021 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2019 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2018 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2017 - Section C - Question 3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "14"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2016 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2016 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2015 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2014 - Section C - Question 5",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2012 - Section C - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2009 - Section C - Question 6",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "17"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2008 - Section C - Question 5",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "16"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-2-local-voluntarycommunity-enterprises",
+      "heading": "2007 - Section C - Question 4",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2026 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2025 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2024 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2023 - Paper - Section A - Question 1,2,3,4,5,6,7,8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2023 - Deferred Exam Paper - Section A - Part 1 - Question 1,2,3",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2023 - Deferred Exam Paper - Section A - Part 2 - Question 4,5,6",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2023 - Deferred Exam Paper - Section A - Part 3 - Question 7,8",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "year": 2023,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2022 - Paper - Section A - Section A",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2022 - Deferred Exam Paper - Section A - Part 1 - Question 1-3",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2022 - Deferred Exam Paper - Section A - Part 2 - Question 4-6",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2022 - Deferred Exam Paper - Section A - Part 3 - Question 7-8",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2021 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2020 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2019 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2018 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2017 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2016 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2015 - Section A - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2014 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2013 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2012 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2011 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2011,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2010 - Section A - Question 1-8",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2009 - Section A - Question 1",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-audio-visual",
+      "heading": "2008 - Section A - Question 1-8",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "1"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "2"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "3"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "4"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "5"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "6"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "7"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "8"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2026 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2026,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2025 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2025,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2024 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2024,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2023 - Paper - Section B - Questions 1,2,3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2023,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2022 - Paper - Section B - Section B",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2022,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2022 - Deferred Exam Paper - Section B - Question 1-3",
+      "resolution": "source-blocked",
+      "reason": "deferred-sitting-not-in-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "year": 2022,
+          "sitting": "deferred",
+          "paperKey": "single",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2021 - Section B - Question 1,2,3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2021,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2020 - Section B - Question 1",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2020,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2019 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2019,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2018 - Section B - Question 2",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2018,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2017 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2017,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2016 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2016,
+          "paperKey": "single",
+          "fileid": "LC462CLPO00EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2015 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2015,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2014 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2014,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2013 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2013,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2012 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2012,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2010 - Section B - Question 1-3",
+      "resolution": "matched",
+      "targets": [
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "lang": "ev",
+          "year": 2010,
+          "paperKey": "single",
+          "fileid": "LC462CLP000EV.pdf",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2009 - Section B - Question 1-3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "year": 2009,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2008 - Section B - Question 1-3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "year": 2008,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "11"
+        }
+      ]
+    },
+    {
+      "topicId": "link-modules-common-case-study",
+      "heading": "2007 - Section B - Question 1-3",
+      "resolution": "source-blocked",
+      "reason": "before-local-corpus",
+      "missingParts": [
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "9"
+        },
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "10"
+        },
+        {
+          "level": "common",
+          "year": 2007,
+          "sitting": "main",
+          "paperKey": "single",
+          "n": "11"
+        }
+      ]
+    }
+  ]
+}

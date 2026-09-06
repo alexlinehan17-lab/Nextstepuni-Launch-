@@ -1,1 +1,317 @@
-{"band":[1,17],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058GLP000IV.pdf","q":[{"conf":1.0,"label":"Ceist 1 · Roinn A – Treoir urláir (Indoor Sports World)","mode":"crop","n":"1","pP":2,"pY":[0.08,1.0],"region":[{"p":6,"r":[0.0,0.1662,1.0,0.3932]}]},{"conf":1.0,"label":"Ceist 1 · Roinn B – Treoir urláir (Sakura store)","mode":"crop","n":"2","pP":3,"pY":[0.0437,1.0],"region":[{"p":6,"r":[0.0,0.3932,1.0,0.5979]}]},{"conf":1.0,"label":"Ceist 2 · A – Meaitseáil / Earraí (favourite characters)","mode":"crop","n":"3","pP":5,"pY":[0.0601,1.0],"region":[{"p":6,"r":[0.0,0.6307,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0842]}]},{"conf":1.0,"label":"Ceist 2 · B – Fíor nó Bréagach (True/False)","mode":"crop","n":"4","pP":5,"pY":[0.4733,1.0],"region":[{"p":7,"r":[0.0,0.0842,1.0,0.5453]}]},{"conf":1.0,"label":"Ceist 3 · A – Greille / Freagair i Seapáinis / Ilrogha (blood-type e-mail)","mode":"crop","n":"5","pP":9,"pY":[0.0437,1.0],"region":[{"p":8,"r":[0.0,0.1333,1.0,0.7226]}]},{"conf":1.0,"label":"Ceist 3 · B – Kanji (readings)","mode":"crop","n":"6","pP":10,"pY":[0.0601,1.0],"region":[{"p":8,"r":[0.0,0.7226,1.0,1.0]},{"p":9,"r":[0.0,0.0,1.0,0.3265]}]},{"conf":1.0,"label":"Ceist 3 · C – Gramadach: an aimsir láithreach (present tense)","mode":"crop","n":"7","pP":10,"pY":[0.5584,1.0],"region":[{"p":9,"r":[0.0,0.3265,1.0,0.574]}]},{"conf":1.0,"label":"Ceist 3 · D – Páirteagail (particles)","mode":"crop","n":"8","pP":11,"pY":[0.0601,1.0],"region":[{"p":9,"r":[0.0,0.574,1.0,1.0]},{"p":10,"r":[0.0,0.0,1.0,0.0842]}]}],"schemeFileid":"LC058GLP000IV.pdf","v":1}
+{
+  "band": [
+    1,
+    17
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058GLP000IV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Roinn A – Treoir urláir (Indoor Sports World)",
+      "mode": "crop",
+      "n": "1",
+      "pP": 2,
+      "pY": [
+        0.08,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.1662,
+            1.0,
+            0.3932
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Roinn B – Treoir urláir (Sakura store)",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.0437,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.3932,
+            1.0,
+            0.5979
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · A – Meaitseáil / Earraí (favourite characters)",
+      "mode": "crop",
+      "n": "3",
+      "pP": 5,
+      "pY": [
+        0.0601,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.6307,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0842
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · B – Fíor nó Bréagach (True/False)",
+      "mode": "crop",
+      "n": "4",
+      "pP": 5,
+      "pY": [
+        0.4733,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0842,
+            1.0,
+            0.5453
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · A – Greille / Freagair i Seapáinis / Ilrogha (blood-type e-mail)",
+      "mode": "crop",
+      "n": "5",
+      "pP": 9,
+      "pY": [
+        0.0437,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.1333,
+            1.0,
+            0.7226
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · B – Kanji (readings)",
+      "mode": "crop",
+      "n": "6",
+      "pP": 10,
+      "pY": [
+        0.0601,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.7226,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.3265
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · C – Gramadach: an aimsir láithreach (present tense)",
+      "mode": "crop",
+      "n": "7",
+      "pP": 10,
+      "pY": [
+        0.5584,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.3265,
+            1.0,
+            0.574
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · D – Páirteagail (particles)",
+      "mode": "crop",
+      "n": "8",
+      "pP": 11,
+      "pY": [
+        0.0601,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.574,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0842
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Cloze written production",
+      "mode": "crop",
+      "n": "9",
+      "pP": 12,
+      "pY": [
+        0.0698,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0842,
+            1.0,
+            0.4936
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.93,
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Personal written production",
+      "mode": "crop",
+      "n": "10",
+      "pP": 13,
+      "pY": [
+        0.0443,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.4936,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0843,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 13,
+      "endY": 0.93,
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · C · Cultúr agus sochaí",
+      "mode": "crop",
+      "n": "11",
+      "pP": 6,
+      "pY": [
+        0.0438,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.5453,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0842
+          ]
+        }
+      ],
+      "endP": 6,
+      "endY": 0.93,
+      "printOrder": 5
+    }
+  ],
+  "schemeFileid": "LC058GLP000IV.pdf",
+  "v": 1
+}

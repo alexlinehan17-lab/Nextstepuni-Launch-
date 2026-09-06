@@ -200,6 +200,7 @@ def _det_question_word(doc):
         if page.rotation:
             continue
         H = page.rect.height
+        page_words = page.get_text("words")
         for lw in line_groups(page):
             for i, w in enumerate(lw):
                 word = _deligature(w[4])
@@ -210,6 +211,20 @@ def _det_question_word(doc):
                 m = re.fullmatch(r"(\d+)[.:]?", lw[i + 1][4])  # 'Question 1' / '1.' / '1:'
                 if not m:
                     continue
+                # One damaged SEC text layer (2013 Foundation Maths P2 Q10)
+                # overlays both ``1`` and ``10`` at exactly the same visual
+                # coordinate but assigns them to different text blocks.  Use
+                # the longest overlaid digit token so the visible Q10 is not
+                # silently reduced to Q1.
+                number_word = lw[i + 1]
+                overlays = [
+                    other[4].rstrip('.:')
+                    for other in page_words
+                    if re.fullmatch(r"\d+[.:]?", other[4])
+                    and abs(other[0] - number_word[0]) < 1
+                    and abs(other[1] - number_word[1]) < 1
+                ]
+                number = max(overlays, key=len) if overlays else m.group(1)
                 # Left-margin header (the common case) OR a CENTERED standalone
                 # 'QUESTION N' header line — some schemes (Business 'Possible
                 # Responses') centre the real solution headers while a left-margin
@@ -221,7 +236,7 @@ def _det_question_word(doc):
                 table_hdr = (i + 2 < len(lw)
                              and lw[i + 2][4] in ("Possible", "Freagraí"))
                 if w[0] < LEFT_MARGIN_X or table_hdr or (word in ("QUESTION", "CEIST", "Question", "Ceist", "Cesit", "CESIT") and standalone):
-                    hits.append((int(m.group(1)), pi, w[0], w[1] / H))
+                    hits.append((int(number), pi, w[0], w[1] / H))
     return hits
 
 
@@ -270,6 +285,44 @@ def _det_q_token(doc):
     return hits
 
 
+def _det_model_solution(doc):
+    """Question labels beside a literal ``Model Solutions`` heading.
+
+    Foundation Maths schemes usually print ``Q1 Model Solutions`` but two
+    archive PDFs encode the final label as either a bare ``10`` or a stacked
+    ``Q`` / ``10``.  Treating the nearby heading as part of the grammar keeps
+    this detector specific while recovering the complete 1..10 sequence.
+    """
+    hits = []
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        words = page.get_text("words")
+        has_model_heading = any(
+            word[4] == "Model" and word[0] < 180 and word[1] < H * 0.2
+            for word in words
+        ) and any(
+            word[4].startswith("Solution") and word[0] < 220 and word[1] < H * 0.2
+            for word in words
+        )
+        if not has_model_heading:
+            continue
+        candidates = []
+        for word in words:
+            if word[0] >= LEFT_MARGIN_X or word[1] >= H * 0.2:
+                continue
+            match = re.fullmatch(r"Q\.?\s*(\d{1,2})", word[4], re.I)
+            if match is None:
+                match = re.fullmatch(r"(\d{1,2})", word[4])
+            if match:
+                candidates.append((int(match.group(1)), word))
+        if candidates:
+            n, word = min(candidates, key=lambda item: item[1][1])
+            hits.append((n, pi, word[0], word[1] / H))
+    return hits
+
+
 def _det_c_token(doc):
     """Irish-medium schemes abbreviate 'Ceist N' to a left-margin 'C1'/'C2'
     marker (e.g. Ag Science IV: 'C1 (6 chuid ar bith) 6 × 10 marc'). Same shape
@@ -280,11 +333,31 @@ def _det_c_token(doc):
         if page.rotation:
             continue
         H = page.rect.height
+        page_hit = False
         for lw in line_groups(page):
-            for w in lw:
+            for wi, w in enumerate(lw):
                 m = re.fullmatch(r"C\.?(\d{1,2})", w[4])
+                # Some translated Maths schemes drop the ``C`` from the final
+                # question and print a bare ``10`` immediately beside
+                # ``Réiteach Samplach``.  The adjacent solution heading makes
+                # this safe and prevents a numbered instruction from matching.
+                if (m is None and re.fullmatch(r"\d{1,2}", w[4])
+                        and any(v[4].startswith("Réiteach") for v in lw[wi + 1:])):
+                    m = re.fullmatch(r"(\d{1,2})", w[4])
                 if m and w[0] < LEFT_MARGIN_X:
                     hits.append((int(m.group(1)), pi, w[0], w[1] / H))
+                    page_hit = True
+                    break
+        if not page_hit:
+            # Column grouping can separate the left marker from the solution
+            # heading even though both sit on the same visual baseline.
+            words = page.get_text("words")
+            for w in words:
+                if not (w[0] < LEFT_MARGIN_X and re.fullmatch(r"\d{1,2}", w[4])):
+                    continue
+                if any(v[0] > w[2] and abs(v[1] - w[1]) < 3
+                       and v[4].startswith("Réiteach") for v in words):
+                    hits.append((int(w[4]), pi, w[0], w[1] / H))
                     break
     return hits
 
@@ -339,6 +412,7 @@ def _det_q_column(doc):
 
 
 DETECTORS = [("question", _det_question_word), ("lead_int", _det_lead_int), ("qtoken", _det_q_token),
+             ("model_solution", _det_model_solution),
              ("ctoken", _det_c_token), ("topic", _det_topic_word), ("qcol", _det_q_column)]
 
 
@@ -492,6 +566,22 @@ def find_band_pages(scheme, divider_title):
             if r.y0 < H * DIVIDER_TOP_FRAC:
                 out.append(pi)
                 break
+        else:
+            # Some SEC Maths PDFs visually print "Paper 2" on the divider but
+            # encode the title as separately positioned glyph runs, so
+            # PyMuPDF's phrase search cannot see it.  Fall back to the already
+            # line-grouped words while retaining the same top-half guard.
+            wanted = re.sub(r"\s+", " ", divider_title).casefold()
+            for words in line_groups(page):
+                # SEC divider covers are vertically centred (the 2018 Paper 2
+                # title sits about two-thirds down the page), so the glyph-run
+                # fallback deliberately scans farther than phrase search.
+                if not words or words[0][1] >= H * 0.8:
+                    continue
+                line = " ".join(_deligature(word[4]) for word in words)
+                if wanted in re.sub(r"\s+", " ", line).casefold():
+                    out.append(pi)
+                    break
     return out
 
 
@@ -516,6 +606,16 @@ def find_paper_band(scheme, k):
         # No Paper-2 divider at all: Paper 1 runs to the end (or the scheme is
         # genuinely single-paper); Paper 2 cannot be banded.
         return (min(p1), len(scheme)) if k == 1 and p1 else None
+    # Prefer an actual sparse divider cover over a dense page whose running
+    # header happens to say ``Paper 2``.  The 2023 Irish Higher scheme has a
+    # misleading Paper-2 label on a Paper-1 instruction page; taking the first
+    # occurrence shifted every Paper-1 answer into unrelated material.
+    sparse_p2 = [
+        p for p in p2
+        if len(re.sub(r"\s+", " ", scheme[p].get_text("text")).strip()) < 500
+    ]
+    if sparse_p2:
+        p2 = sparse_p2
     # The boundary is the first Paper-2 page with the FEWEST Paper-1 pages
     # after it — ideally zero, but the SEC's own 2016-era schemes repeat the
     # "Marking Scheme – Paper 1 …" boilerplate header inside the Paper-2 half,

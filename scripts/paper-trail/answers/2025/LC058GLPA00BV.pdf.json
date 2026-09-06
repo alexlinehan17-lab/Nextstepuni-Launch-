@@ -1,1 +1,168 @@
-{"band":[1,17],"component":"","copyright":"© State Examinations Commission","paperFileid":"LC058GLPA00BV.pdf","q":[{"conf":1.0,"mode":"crop","n":"1","pP":2,"pY":[0.1481,0.4464],"region":[{"p":3,"r":[0.0,0.1377,1.0,0.2763]}]},{"conf":1.0,"mode":"crop","n":"2","pP":2,"pY":[0.4464,0.71],"region":[{"p":3,"r":[0.0,0.2643,1.0,0.3713]}]},{"conf":1.0,"mode":"crop","n":"3","pP":2,"pY":[0.71,1.0],"region":[{"p":3,"r":[0.0,0.3593,1.0,1.0]},{"p":4,"r":[0.0,0.0,1.0,0.1722]}]},{"conf":1.0,"mode":"crop","n":"4","pP":4,"pY":[0.5257,0.694],"region":[{"p":4,"r":[0.0,0.1602,1.0,0.313]}]},{"conf":1.0,"mode":"crop","n":"5","pP":4,"pY":[0.694,0.7607],"region":[{"p":4,"r":[0.0,0.301,1.0,0.3446]}]},{"conf":1.0,"mode":"crop","n":"6","pP":4,"pY":[0.7607,0.8274],"region":[{"p":4,"r":[0.0,0.3326,1.0,0.3762]}]},{"conf":1.0,"mode":"crop","n":"7","pP":4,"pY":[0.8274,1.0],"region":[{"p":4,"r":[0.0,0.3642,1.0,1.0]}]}],"schemeFileid":"LC058GLP000EV.pdf","v":1}
+{
+  "band": [1, 17],
+  "component": "",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058GLPA00BV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "PART A · 1",
+      "mode": "crop",
+      "n": "1",
+      "printOrder": 1,
+      "pP": 2,
+      "pY": [0.1481, 0.4464],
+      "region": [{ "p": 3, "r": [0.0, 0.1377, 1.0, 0.2763] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART A · 2",
+      "mode": "crop",
+      "n": "2",
+      "printOrder": 2,
+      "pP": 2,
+      "pY": [0.4464, 0.71],
+      "region": [{ "p": 3, "r": [0.0, 0.2643, 1.0, 0.3713] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART A · 3",
+      "mode": "crop",
+      "n": "3",
+      "printOrder": 3,
+      "pP": 2,
+      "pY": [0.71, 1.0],
+      "endP": 2,
+      "endY": 1.0,
+      "region": [{ "p": 3, "r": [0.0, 0.3593, 1.0, 0.4662] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 4",
+      "mode": "crop",
+      "n": "4",
+      "printOrder": 9,
+      "pP": 4,
+      "pY": [0.5257, 0.694],
+      "region": [{ "p": 4, "r": [0.0, 0.1602, 1.0, 0.313] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 5",
+      "mode": "crop",
+      "n": "5",
+      "printOrder": 10,
+      "pP": 4,
+      "pY": [0.694, 0.7607],
+      "region": [{ "p": 4, "r": [0.0, 0.301, 1.0, 0.3446] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 6",
+      "mode": "crop",
+      "n": "6",
+      "printOrder": 11,
+      "pP": 4,
+      "pY": [0.7607, 0.8274],
+      "region": [{ "p": 4, "r": [0.0, 0.3326, 1.0, 0.3762] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 7",
+      "mode": "crop",
+      "n": "7",
+      "printOrder": 12,
+      "pP": 4,
+      "pY": [0.8274, 1.0],
+      "endP": 4,
+      "endY": 0.94,
+      "region": [{ "p": 4, "r": [0.0, 0.3642, 1.0, 0.4395] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART B · 1",
+      "mode": "crop",
+      "n": "8",
+      "printOrder": 4,
+      "pP": 3,
+      "pY": [0.1502, 0.6874],
+      "region": [{ "p": 3, "r": [0.0, 0.4542, 1.0, 0.7542] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART B · 2",
+      "mode": "crop",
+      "n": "9",
+      "printOrder": 5,
+      "pP": 3,
+      "pY": [0.6874, 0.94],
+      "endP": 3,
+      "endY": 0.94,
+      "region": [{ "p": 3, "r": [0.0, 0.7422, 1.0, 0.89] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 1",
+      "mode": "crop",
+      "n": "10",
+      "printOrder": 6,
+      "pP": 4,
+      "pY": [0.1546, 0.288],
+      "region": [{ "p": 4, "r": [0.0, 0.0456, 1.0, 0.1089] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 2",
+      "mode": "crop",
+      "n": "11",
+      "printOrder": 7,
+      "pP": 4,
+      "pY": [0.288, 0.4069],
+      "region": [{ "p": 4, "r": [0.0, 0.0969, 1.0, 0.1405] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART C · 3",
+      "mode": "crop",
+      "n": "12",
+      "printOrder": 8,
+      "pP": 4,
+      "pY": [0.4069, 0.5257],
+      "region": [{ "p": 4, "r": [0.0, 0.1285, 1.0, 0.1722] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 1",
+      "mode": "crop",
+      "n": "13",
+      "printOrder": 13,
+      "pP": 5,
+      "pY": [0.1328, 0.3967],
+      "region": [{ "p": 4, "r": [0.0, 0.4395, 1.0, 0.5662] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 2",
+      "mode": "crop",
+      "n": "14",
+      "printOrder": 14,
+      "pP": 5,
+      "pY": [0.3967, 0.678],
+      "region": [{ "p": 4, "r": [0.0, 0.5542, 1.0, 0.6611] }]
+    },
+    {
+      "conf": 1.0,
+      "label": "PART D · 3",
+      "mode": "crop",
+      "n": "15",
+      "printOrder": 15,
+      "pP": 5,
+      "pY": [0.678, 0.94],
+      "endP": 5,
+      "endY": 0.94,
+      "region": [{ "p": 4, "r": [0.0, 0.6491, 1.0, 0.78] }]
+    }
+  ],
+  "schemeFileid": "LC058GLP000EV.pdf",
+  "v": 1
+}

@@ -101,7 +101,22 @@ describe('Classical Studies exam-topic registry', () => {
         expected.fileid,
       );
       expect(live, `${expected.level}|${expected.lang}|${expected.year}|${expected.fileid}`).not.toBeNull();
-      expect(live!.q.map(question => question.n)).toEqual(expected.questions);
+      const identity = `${expected.level}|${expected.lang}|${expected.year}|${expected.fileid}`;
+      const verifiedAdditions = (
+        expected.level === 'higher'
+        && expected.lang === 'ev'
+        && expected.fileid === 'LC008ALP000EV.pdf'
+        && (expected.year === 2023 || expected.year === 2024)
+      ) ? ['12'] : [];
+      const liveQuestions = live!.q.map(question => question.n);
+      // Q12 was absent from the frozen tag baseline in these two booklets but
+      // is present in both official papers and their common Q11(b)-Q16 essay
+      // marking-scheme section. Keep every former identity exact while
+      // allowing only these visually verified additive recoveries.
+      expect(liveQuestions.filter(question => !verifiedAdditions.includes(question)), identity)
+        .toEqual(expected.questions);
+      expect(liveQuestions.filter(question => verifiedAdditions.includes(question)), identity)
+        .toEqual(verifiedAdditions);
     }
   });
 
