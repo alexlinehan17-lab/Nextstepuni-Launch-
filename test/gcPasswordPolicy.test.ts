@@ -23,6 +23,7 @@ import {
   gcAddressToReset,
   isResettableGcAddress,
   schoolIdFromGcAddress,
+  schoolLoginToReset,
 } from '@/functions/src/gcPasswordPolicy';
 import { SCHOOLS } from '@/schoolData';
 
@@ -164,5 +165,47 @@ describe('the admin panel reports what actually happened', () => {
 
   it('tells the administrator when their typed password was not used', () => {
     expect(panel).toContain('The server generated a password instead');
+  });
+});
+
+describe('school login reset targets (gc and staff)', () => {
+  it('resolves both shared logins for every school', () => {
+    for (const id of ['marino', 'joeys', 'larkin', 'oconnells', 'mountcarmel', 'rosmini', 'pwc']) {
+      expect(schoolLoginToReset(`gc-${id}@nextstep.app`)).toEqual({
+        address: `gc-${id}@nextstep.app`, kind: 'gc', schoolId: id,
+      });
+      expect(schoolLoginToReset(`staff-${id}@nextstep.app`)).toEqual({
+        address: `staff-${id}@nextstep.app`, kind: 'staff', schoolId: id,
+      });
+    }
+  });
+
+  it('normalises case and spacing like the gc-only path', () => {
+    expect(schoolLoginToReset('  STAFF-Marino@NextStep.app ')).toEqual({
+      address: 'staff-marino@nextstep.app', kind: 'staff', schoolId: 'marino',
+    });
+  });
+
+  it('refuses the administrator accounts', () => {
+    expect(schoolLoginToReset('nextstepuniinfo@gmail.com')).toBe(null);
+    expect(schoolLoginToReset('admin@nextstep.app')).toBe(null);
+  });
+
+  it("refuses students, teachers' own accounts, and near-misses", () => {
+    expect(schoolLoginToReset('teacher@school.ie')).toBe(null);
+    expect(schoolLoginToReset('student@gmail.com')).toBe(null);
+    expect(schoolLoginToReset('staff-marino@nextstep.app.evil.com')).toBe(null);
+    expect(schoolLoginToReset('xstaff-marino@nextstep.app')).toBe(null);
+    expect(schoolLoginToReset('staff-@nextstep.app')).toBe(null);
+    expect(schoolLoginToReset('staffmarino@nextstep.app')).toBe(null);
+    expect(schoolLoginToReset('')).toBe(null);
+    expect(schoolLoginToReset(undefined)).toBe(null);
+    expect(schoolLoginToReset(42)).toBe(null);
+  });
+
+  it('agrees with the gc-only validator on every gc address', () => {
+    for (const address of ['gc-marino@nextstep.app', 'gc-@nextstep.app', 'gc-marino@notnextstep.app']) {
+      expect(schoolLoginToReset(address) !== null).toBe(isResettableGcAddress(address));
+    }
   });
 });

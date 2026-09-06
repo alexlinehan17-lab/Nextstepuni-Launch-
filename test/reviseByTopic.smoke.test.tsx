@@ -54,7 +54,9 @@ describe('Topic Vault — ReviseByTopic', () => {
     );
     // Level 0 → 1: pick the subject tile.
     fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${label(sid)}`) }));
-    expect(screen.getByText(/topics · /i)).toBeInTheDocument();
+    expect(screen.getByText(/Pick a topic — every question ever asked on it is inside/i)).toBeInTheDocument();
+    // The volume header band prints real stats: questions, topics, and a sane year span.
+    expect(screen.getByText(/[\d,]+ questions · \d+ topics · \d{4}–\d{4}/)).toBeInTheDocument();
 
     // The first topic renders as a row; drill into its first course-specific
     // occurrence. Overlapping specifications may intentionally reuse a label.
@@ -64,7 +66,7 @@ describe('Topic Vault — ReviseByTopic', () => {
     fireEvent.click(topicBtn);
 
     // Level 2: the feed summary (unique to the feed) renders; cards fall back (no net).
-    expect(screen.getByText(/marking scheme beneath each/i)).toBeInTheDocument();
+    expect(screen.getByText('Levels')).toBeInTheDocument();
   });
 
   test('type-to-filter narrows the topic list when a subject has many topics', () => {

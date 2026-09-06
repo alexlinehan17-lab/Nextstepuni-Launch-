@@ -5,8 +5,9 @@
 
 import React, { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv, MotionP, MotionSpan } from './Motion';
-import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Layers } from 'lucide-react';
+import { MotionDiv } from './Motion';
+import Puifin, { type PuifinPose } from './ui/Puifin';
+import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
@@ -55,6 +56,38 @@ interface OnboardingDraft {
   northStarData: NorthStar | null;
   restDays: string[];
 }
+
+// ─── The Guide — a painted blob that asks each step's question in a
+//     hand-drawn speech bubble. One guide, one question, per screen (the
+//     Duolingo/Brilliant conversational register, in our own language). ───
+const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.ReactNode; sub?: React.ReactNode; tilt?: number; pose?: PuifinPose }> = ({ tint, ink, question, sub, tilt = 0, pose = 'perch' }) => (
+  <div className="mx-auto mb-7 flex w-full max-w-xl items-start gap-3.5 text-left">
+    <motion.span
+      aria-hidden="true"
+      initial={{ scale: 0.6, opacity: 0, rotate: tilt - 10 }}
+      animate={{ scale: 1, opacity: 1, rotate: tilt }}
+      transition={{ duration: 0.45, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
+      className="relative mt-1 h-14 w-14 shrink-0"
+    >
+      {/* The step's tint survives as Puifín's perch-disc. */}
+      <span className="absolute inset-0 rounded-full" style={{ backgroundColor: tint, boxShadow: `inset 0 0 0 1.5px ${ink}26` }} />
+      <span className="absolute inset-x-0 bottom-0 flex justify-center">
+        <Puifin pose={pose} size={52} />
+      </span>
+    </motion.span>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.92, x: -6 }}
+      animate={{ opacity: 1, scale: 1, x: 0 }}
+      transition={{ duration: 0.4, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
+      className="relative min-w-0 flex-1 rounded-2xl border-2 border-[#1A1A1A] bg-white px-5 py-4 shadow-[3px_3px_0_0_#1A1A1A] dark:border-zinc-200 dark:bg-zinc-900"
+      style={{ transformOrigin: 'left center' }}
+    >
+      <span aria-hidden="true" className="absolute -left-[8px] top-6 h-3.5 w-3.5 rotate-45 border-b-2 border-l-2 border-[#1A1A1A] bg-white dark:border-zinc-200 dark:bg-zinc-900" />
+      <p className="font-serif text-[21px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{question}</p>
+      {sub && <p className="mt-1 text-[13px] leading-relaxed text-[#78716C] dark:text-zinc-400">{sub}</p>}
+    </motion.div>
+  </div>
+);
 
 const onboardingDraftKey = (userId: string, mode: string) => `nextstepuni:onboarding-draft:v1:${userId}:${mode}`;
 
@@ -650,14 +683,11 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
 
   const daysLeft = getDaysUntil(examDate);
 
-  // Split welcome heading for word-by-word animation
-  const welcomeWords = `Welcome, ${userName}`.split(' ');
-
   return (
     <div className="theme-compat fixed inset-0 z-[60] flex touch-pan-y flex-col overflow-hidden overscroll-none" data-prevent-pull-to-refresh="true">
 
       {/* ─── Solid background — matches Library (module selection) screen ─── */}
-      <div className="fixed inset-0 pointer-events-none dark:bg-zinc-900" aria-hidden="true" style={{ backgroundColor: '#FAFBF6' }} />
+      <div className="fixed inset-0 pointer-events-none bg-white dark:bg-zinc-900" aria-hidden="true" />
 
       {/* ─── Fixed Header: Progress bar + Skip ─── */}
       <div className="shrink-0 relative z-10 px-6 pt-5 pb-3">
@@ -675,9 +705,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
           )}
         </div>
         <div className="max-w-md mx-auto">
-          <div className="w-full h-[5px] rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}>
+          <div className="w-full h-[10px] rounded-full overflow-hidden bg-[#ECE8E3] dark:bg-zinc-700">
             <motion.div
-              className="h-full rounded-full bg-[#1A1A1A] dark:bg-white"
+              className="h-full rounded-full"
+              style={{ backgroundColor: 'rgba(242,107,31,0.9)' }}
               animate={{ width: `${(currentStage / totalStages) * 100}%` }}
               transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
             />
@@ -699,37 +730,14 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    {/* Word-by-word heading */}
-                    <h1 className="font-serif text-3xl sm:text-4xl font-bold mb-5 text-[#1A1A1A] dark:text-white">
-                      {welcomeWords.map((word, i) => (
-                        <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.1em] mb-[-0.1em]">
-                          <MotionSpan
-                            className="inline-block"
-                            initial={{ y: '100%' }}
-                            animate={{ y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.15 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
-                          >{word}{i < welcomeWords.length - 1 ? '\u00A0' : ''}</MotionSpan>
-                        </span>
-                      ))}
-                    </h1>
-
-                    {/* Staggered subtitle */}
-                    <MotionP
-                      initial={{ opacity: 0, y: 16 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-base leading-relaxed max-w-md mx-auto mb-2 text-[#78716C] dark:text-zinc-400"
-                    >
-                      Let's set up your study profile so we can personalise your experience from day one.
-                    </MotionP>
-                    <MotionP
-                      initial={{ opacity: 0, y: 12 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-8 text-[#A8A29E] dark:text-zinc-500"
-                    >
-                      This takes about 2 minutes.
-                    </MotionP>
+                    <OnboardingGuide
+                      tint="#FBE9DC"
+                      ink="#B5500F"
+                      tilt={-3}
+                      pose="wave"
+                      question={`Hi ${userName.split(' ')[0] || userName} — I'm Puifín, your guide here.`}
+                      sub="Two minutes of setup and the whole app fits itself around you. One question at a time."
+                    />
 
                     {/* Feature preview chips */}
                     <motion.div
@@ -762,31 +770,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="flex flex-col items-center justify-center min-h-[60vh] py-6">
                   <div className="text-center w-full max-w-xl mx-auto">
-                    <motion.div
-                      initial={{ scale: 0.8, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                      style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
-                    >
-                      <BookOpen size={32} style={{ color: COLORS.accent }} />
-                    </motion.div>
-                    <motion.h2
-                      initial={{ opacity: 0, y: 12 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
-                    >
-                      Your Year and Learning Style
-                    </motion.h2>
-                    <motion.p
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-8 text-[#78716C] dark:text-zinc-400"
-                    >
-                      Choose your year, then the amount of explanation that suits you.
-                    </motion.p>
+                    <OnboardingGuide
+                      tint="#DCE9F2"
+                      ink="#33658A"
+                      tilt={2}
+                      question="What year are you in?"
+                      sub="Pick your year — the whole app shapes itself around it."
+                    />
 
                     {/* Junior Cycle band */}
                     <motion.div
@@ -920,31 +910,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    <motion.div
-                      initial={{ scale: 0.8, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                      style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
-                    >
-                      <Layers size={32} style={{ color: COLORS.accent }} />
-                    </motion.div>
-                    <motion.h2
-                      initial={{ opacity: 0, y: 12 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
-                    >
-                      How Do You Like to Learn?
-                    </motion.h2>
-                    <motion.p
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-8 text-[#78716C] dark:text-zinc-400"
-                    >
-                      Choose the style that suits you best. You can change this anytime in Settings.
-                    </motion.p>
+                    <OnboardingGuide
+                      tint="#EFEAF3"
+                      ink="#5B4A7E"
+                      tilt={-2}
+                      question="How do you like to learn?"
+                      sub="Choose the style that suits you best — you can change this any time in Settings."
+                    />
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -1014,15 +986,16 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Let's set up your Leaving Cert profile.</p>
                   </div>
                 )}
-                <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">
-                  {isTransition ? 'Pick your Leaving Cert subjects' : 'Select Your Subjects'}
-                </h2>
-                <p className="text-sm text-center mb-8 text-[#78716C] dark:text-zinc-400">
-                  {curriculumLevel === 'junior'
-                    ? 'Tap to select your subjects.'
-                    : 'Tap to select your Leaving Cert subjects.'}{' '}
-                  <span className="font-semibold text-[#F26B1F]">{selectedSubjects.size} selected</span>
-                </p>
+                <OnboardingGuide
+                  tint="#E8F2EC"
+                  ink="#1F5F3E"
+                  tilt={2}
+                  question={isTransition ? 'Which Leaving Cert subjects are you taking?' : 'Which subjects are you carrying?'}
+                  sub={<>
+                    Tap to select {curriculumLevel === 'junior' ? 'your subjects' : 'your Leaving Cert subjects'}.{' '}
+                    <span className="font-semibold text-[#F26B1F]">{selectedSubjects.size} selected</span>
+                  </>}
+                />
                 <div>
                   {Object.entries(groupedSubjects).map(([group, subjects]) => {
                     const dotHex = GROUP_DOT_HEX[group as LCSubject['group']];
@@ -1067,10 +1040,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {/* Step 6: Grade Configuration */}
             {step === 6 && curriculumLevel === 'junior' && (
               <MotionDiv key="step6-jc" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
-                <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Where are you now, where do you want to be?</h2>
-                <p className="text-sm text-center mb-6 text-[#78716C] dark:text-zinc-400">
-                  For each subject, set your current band and where you're aiming.
-                </p>
+                <OnboardingGuide
+                  tint="#F6EEDF"
+                  ink="#8A6B2D"
+                  tilt={-2}
+                  question="Where are you now — and where are you headed?"
+                  sub="For each subject, set your current band and where you're aiming."
+                />
 
                 <div className="space-y-4">
                   {Array.from(selectedSubjects).map(name => {
@@ -1173,10 +1149,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Pick where you are now and where you're aiming for your Leaving Cert.</p>
                   </div>
                 )}
-                <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Set Your Grades</h2>
-                <p className="text-sm text-center mb-6 text-[#78716C] dark:text-zinc-400">
-                  For each subject, set where you are now and where you want to be.
-                </p>
+                <OnboardingGuide
+                  tint="#F6EEDF"
+                  ink="#8A6B2D"
+                  tilt={2}
+                  question="Where are you now — and where are you headed?"
+                  sub="For each subject, set where you are now and where you want to be."
+                />
 
                 <div className="space-y-4">
                   {Array.from(selectedSubjects).map(name => {
@@ -1283,32 +1262,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="w-full max-w-2xl mx-auto py-4 sm:py-8">
                   <div className="text-center">
-                    <motion.div
-                      initial={{ scale: 0.8, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-14 h-14 mx-auto mb-5 rounded-2xl border-2 border-[#1A1A1A] bg-[#FDF8F0] shadow-[3px_3px_0_0_#1A1A1A] flex items-center justify-center"
-                    >
-                      <Calendar size={28} style={{ color: COLORS.accent }} />
-                    </motion.div>
-                    <motion.h2
-                      initial={{ opacity: 0, y: 12 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
-                    >
-                      Build Your Schedule
-                    </motion.h2>
-                    <motion.p
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-6 text-[#78716C] dark:text-zinc-400"
-                    >
-                      {needsExamDate
-                        ? 'Add your exam date and choose the days that need to stay free.'
+                    <OnboardingGuide
+                      tint="#ECEFF0"
+                      ink="#46555E"
+                      tilt={-2}
+                      question="When do the exams land?"
+                      sub={needsExamDate
+                        ? 'Add your exam date and choose the days that need to stay free — the year gets paced backwards from it.'
                         : 'Choose the days that need to stay free. You can add an exam date later.'}
-                    </motion.p>
+                    />
 
                     {needsExamDate && (
                       <motion.div
@@ -1374,31 +1336,13 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step8" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    <motion.div
-                      initial={{ scale: 0.8, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                      style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
-                    >
-                      <CalendarOff size={32} style={{ color: COLORS.accent }} />
-                    </motion.div>
-                    <motion.h2
-                      initial={{ opacity: 0, y: 12 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
-                    >
-                      Rest Days
-                    </motion.h2>
-                    <motion.p
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-sm mb-8 text-[#78716C] dark:text-zinc-400"
-                    >
-                      Tap any days where study isn't possible. Your sessions will be redistributed across the remaining days.
-                    </motion.p>
+                    <OnboardingGuide
+                      tint="#F6EAED"
+                      ink="#84495A"
+                      tilt={2}
+                      question="Which days are off-limits?"
+                      sub="Rest is part of the plan — tap the days study isn't possible and the sessions redistribute around them."
+                    />
 
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
@@ -1445,15 +1389,14 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {/* Step 9: Review and launch */}
             {step === 9 && (
               <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
-                <div className="mb-6 flex items-start gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-2 border-[#1A1A1A] bg-[#2F8A5B] text-white shadow-[3px_3px_0_0_#1A1A1A]">
-                    <Check size={22} strokeWidth={3} />
-                  </div>
-                  <div>
-                    <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">You're ready, {userName.split(' ')[0] || userName}.</h2>
-                    <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">Review your plan, then start learning.</p>
-                  </div>
-                </div>
+                <OnboardingGuide
+                  tint="#E8F2EC"
+                  ink="#1F5F3E"
+                  tilt={-2}
+                  pose="cheer"
+                  question={`You're ready, ${userName.split(' ')[0] || userName}.`}
+                  sub="Here's the plan we built together — review it, then start learning."
+                />
 
                 {/* Projected points banner — current → target with animated gain.
                     Senior-only: JC has no CAO points concept. The JC grade-summary

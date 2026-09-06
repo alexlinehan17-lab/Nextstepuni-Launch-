@@ -95,3 +95,13 @@ describe('admin identity', () => {
     }
   });
 });
+
+describe('staff login reservation', () => {
+  it('reserves staff-* addresses so outsiders cannot pre-register a school login', () => {
+    expect(isReservedEmail('staff-marino@nextstep.app')).toBe(true);
+    expect(isReservedEmail('STAFF-Marino@NextStep.app')).toBe(true);
+    expect(isReservedEmail('staff-anything@nextstep.app')).toBe(true);
+    expect(isReservedEmail('staff-marino@gmail.com')).toBe(false);
+    expect(isReservedEmail('mystaff-marino@nextstep.app')).toBe(false);
+  });
+});

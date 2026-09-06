@@ -1323,7 +1323,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
               transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-              className="w-full max-w-sm space-y-5 rounded-t-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] p-6 shadow-[5px_5px_0_0_#383838] sm:rounded-[24px]"
+              className="w-full max-w-sm space-y-5 rounded-t-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838] sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               {/* Block info */}

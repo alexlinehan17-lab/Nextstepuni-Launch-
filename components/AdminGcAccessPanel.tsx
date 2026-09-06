@@ -2,13 +2,16 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Reset a guidance-counsellor login.
+ * Set or reset the two shared logins each school gets.
  *
- * GC logins are shared per-school accounts at derived addresses
- * (gc-{schoolId}@nextstep.app) whose mailboxes do not exist, so the Firebase
- * console's emailed reset link goes nowhere and it offers no way to set a
- * password directly. This calls adminResetGcPassword, which does the work
- * server-side and can only ever target a gc-* address.
+ * Both are per-school accounts at derived addresses — gc-{schoolId} for the
+ * guidance counsellor, staff-{schoolId} for the staff room — whose mailboxes
+ * do not exist, so the Firebase console's emailed reset link goes nowhere and
+ * it offers no way to set a password directly. This calls
+ * adminResetGcPassword, which does the work server-side and can only ever
+ * target one of those two address shapes. Send each password to the school:
+ * one for the counsellor, one for the staff room, and that is a school's
+ * whole staff onboarding.
  *
  * The new password is shown ONCE and never stored — copy it before closing.
  */
@@ -44,7 +47,7 @@ const AdminGcAccessPanel: React.FC = () => {
   const [showChosen, setShowChosen] = useState(false);
   const [currentPassword, setCurrentPassword] = useState('');
   const [pendingAdoption, setPendingAdoption] = useState<
-    { schoolId: string; password?: string; message: string } | null
+    { loginKey: string; password?: string; message: string } | null
   >(null);
   const [result, setResult] = useState<ResetResult | null>(null);
   const [error, setError] = useState('');
@@ -65,9 +68,10 @@ const AdminGcAccessPanel: React.FC = () => {
    * recognise it. It is never sent speculatively — the whole point is that
    * adoption is a deliberate act, not a side effect of clicking Reset.
    */
-  const reset = async (schoolId: string, password?: string, adopt?: boolean) => {
-    const email = `gc-${schoolId}@nextstep.app`;
-    setBusySchool(schoolId);
+  const reset = async (loginKey: string, password?: string, adopt?: boolean) => {
+    const [kind, schoolId] = loginKey.split(':') as ['gc' | 'staff', string];
+    const email = `${kind}-${schoolId}@nextstep.app`;
+    setBusySchool(loginKey);
     setError('');
     setResult(null);
     setPendingAdoption(null);
@@ -107,18 +111,18 @@ const AdminGcAccessPanel: React.FC = () => {
       const code = typeof err === 'object' && err && 'code' in err ? String((err as { code?: unknown }).code) : '';
       const message = typeof err === 'object' && err && 'message' in err ? String((err as { message?: unknown }).message) : '';
       if (code.endsWith('not-found')) {
-        setError(`No counsellor account exists for ${email} yet. Create it in the Firebase console first.`);
+        setError(`No account exists for ${email} yet. Create it in the Firebase console first.`);
       } else if (code.endsWith('permission-denied')) {
-        setError('Only the administrator account can reset a counsellor login.');
+        setError('Only the administrator account can reset a school login.');
       } else if (code.endsWith('failed-precondition')) {
         // The login is already held by an account the platform did not create.
         // Surface it rather than adopting silently — this is the escalation the
         // 2026-08-17 review found, so the administrator has to make the call.
-        setPendingAdoption({ schoolId, password, message });
+        setPendingAdoption({ loginKey, password, message });
       } else if (code.endsWith('invalid-argument')) {
         setError(message || `Choose a password of at least ${MIN_SUPPLIED_PASSWORD_LENGTH} characters.`);
       } else {
-        console.error('GC password reset failed:', err);
+        console.error('School login reset failed:', err);
         setError(message || 'Could not reset that login. Try again.');
       }
     } finally {
@@ -137,13 +141,14 @@ const AdminGcAccessPanel: React.FC = () => {
   };
 
   return (
-    <section aria-label="Guidance counsellor logins">
+    <section aria-label="School logins">
       <div className="mb-5">
-        <h2 className="font-serif text-xl font-semibold text-[#1A1A1A]">Counsellor logins</h2>
+        <h2 className="font-serif text-xl font-semibold text-[#1A1A1A]">School logins</h2>
         <p className="mt-1 max-w-2xl text-sm leading-relaxed text-[#7A7068]">
-          These accounts sign in with the school name and a password — there is no email inbox behind
-          them, so the usual reset link cannot work. Resetting here sets a new password immediately and
-          shows it once.
+          Each school has two shared logins: the guidance counsellor&apos;s and the staff room&apos;s.
+          Both sign in with the school name and a password — there is no email inbox behind them, so
+          the usual reset link cannot work. Setting a password here takes effect immediately and shows
+          it once; send it to the school and their onboarding is done.
         </p>
       </div>
 
@@ -169,9 +174,9 @@ const AdminGcAccessPanel: React.FC = () => {
             <button
               type="button"
               onClick={() => {
-                const { schoolId, password } = pendingAdoption;
+                const { loginKey, password } = pendingAdoption;
                 setPendingAdoption(null);
-                void reset(schoolId, password, true);
+                void reset(loginKey, password, true);
               }}
               className="rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-xs font-bold text-[#1A1A1A]"
             >
@@ -217,39 +222,42 @@ const AdminGcAccessPanel: React.FC = () => {
       )}
 
       <ul className="space-y-2">
-        {SCHOOLS.map(school => (
+        {SCHOOLS.flatMap(school => (['gc', 'staff'] as const).map(kind => ({ school, kind, key: `${kind}:${school.id}` }))).map(({ school, kind, key }) => (
           <li
-            key={school.id}
+            key={key}
             className="flex flex-wrap items-center justify-between gap-3 rounded-xl border-2 border-[#1A1A1A] bg-white p-4"
           >
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-[#1A1A1A]">{school.name}</p>
-              <p className="truncate font-mono text-xs text-[#7A7068]">gc-{school.id}@nextstep.app</p>
+              <p className="text-sm font-semibold text-[#1A1A1A]">
+                {school.name}
+                <span className="ml-2 text-xs font-medium text-[#7A7068]">{kind === 'gc' ? 'Guidance counsellor' : 'Staff room'}</span>
+              </p>
+              <p className="truncate font-mono text-xs text-[#7A7068]">{kind}-{school.id}@nextstep.app</p>
             </div>
             <button
               type="button"
-              onClick={() => (openSchool === school.id ? closeRow() : (closeRow(), setOpenSchool(school.id)))}
+              onClick={() => (openSchool === key ? closeRow() : (closeRow(), setOpenSchool(key)))}
               disabled={busySchool !== null}
-              aria-expanded={openSchool === school.id}
+              aria-expanded={openSchool === key}
               className="flex shrink-0 items-center gap-1.5 rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-xs font-bold text-[#1A1A1A] disabled:opacity-40"
             >
-              {busySchool === school.id
+              {busySchool === key
                 ? <LoaderCircle size={14} className="animate-spin" />
-                : openSchool === school.id ? <X size={14} /> : <KeyRound size={14} />}
-              {busySchool === school.id
+                : openSchool === key ? <X size={14} /> : <KeyRound size={14} />}
+              {busySchool === key
                 ? 'Resetting…'
-                : openSchool === school.id ? 'Cancel' : 'Reset password'}
+                : openSchool === key ? 'Cancel' : 'Set password'}
             </button>
 
-            {openSchool === school.id && (
+            {openSchool === key && (
               <div className="w-full border-t border-[#DDD8D2] pt-4">
                 {reauthMethodFor(auth.currentUser) === 'password' && (
                   <div className="mb-4">
-                    <label htmlFor={`current-pw-${school.id}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
+                    <label htmlFor={`current-pw-${key}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
                       Your current administrator password
                     </label>
                     <input
-                      id={`current-pw-${school.id}`}
+                      id={`current-pw-${key}`}
                       type="password"
                       value={currentPassword}
                       onChange={event => setCurrentPassword(event.target.value)}
@@ -258,13 +266,13 @@ const AdminGcAccessPanel: React.FC = () => {
                     />
                   </div>
                 )}
-                <label htmlFor={`pw-${school.id}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
+                <label htmlFor={`pw-${key}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
                   Choose a password
                 </label>
                 <div className="mt-2 flex flex-wrap items-center gap-2">
                   <div className="relative min-w-0 flex-1">
                     <input
-                      id={`pw-${school.id}`}
+                      id={`pw-${key}`}
                       type={showChosen ? 'text' : 'password'}
                       value={chosen}
                       onChange={event => setChosen(event.target.value)}
@@ -283,7 +291,7 @@ const AdminGcAccessPanel: React.FC = () => {
                   </div>
                   <button
                     type="button"
-                    onClick={() => void reset(school.id, chosen)}
+                    onClick={() => void reset(key, chosen)}
                     disabled={chosen.length < MIN_SUPPLIED_PASSWORD_LENGTH || busySchool !== null || (reauthMethodFor(auth.currentUser) === 'password' && !currentPassword)}
                     className="shrink-0 rounded-full border-2 border-[#1A1A1A] bg-[#1A1A1A] px-4 py-2.5 text-xs font-bold text-white disabled:opacity-40"
                   >
@@ -291,7 +299,7 @@ const AdminGcAccessPanel: React.FC = () => {
                   </button>
                   <button
                     type="button"
-                    onClick={() => void reset(school.id)}
+                    onClick={() => void reset(key)}
                     disabled={busySchool !== null || (reauthMethodFor(auth.currentUser) === 'password' && !currentPassword)}
                     className="flex shrink-0 items-center gap-1.5 rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2.5 text-xs font-bold text-[#1A1A1A] disabled:opacity-40"
                   >

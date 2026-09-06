@@ -9,10 +9,9 @@
  */
 
 import React, { useMemo } from 'react';
-import { ArrowRight, BookOpen, RotateCcw } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { getLastVisit } from './lastVisited';
 import { type CourseData } from './Library';
-import { COLORS } from '../design/tokens';
 
 interface Props {
   uid?: string;
@@ -33,6 +32,7 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
   let sub = '';
   let go: (() => void) | null = null;
   let isResume = false;
+  let frac: number | null = null;
 
   // Older than three weeks reads as nagging, so a stale visit becomes a calm
   // first-step suggestion instead of making this useful home slot disappear.
@@ -46,6 +46,7 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
         sub = done > 0 ? `Section ${done + 1} of ${course.sectionsCount}` : `${course.sectionsCount} short sections`;
         go = () => onSelectModule(course.id);
         isResume = done > 0;
+        frac = done > 0 ? done / course.sectionsCount : null;
       }
     } else if (onOpenTool) {
       title = visit.label;
@@ -62,32 +63,25 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
   }
   if (!go) return null;
 
-  const Icon = isResume ? RotateCcw : BookOpen;
-
   return (
     <button
       onClick={go}
-      className="group mb-4 flex w-full flex-col items-stretch justify-between gap-4 rounded-2xl border-[1.5px] border-[#383838] bg-white px-5 py-4 text-left transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-zinc-900 sm:flex-row sm:items-center"
+      className="group mb-4 flex w-full items-center justify-between gap-5 rounded-2xl border-[1.5px] border-[#383838] bg-white px-5 py-4 text-left transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-zinc-900"
     >
-      <div className="flex items-center gap-3 min-w-0">
-        <div
-          className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
-          style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
-        >
-          <Icon size={16} style={{ color: COLORS.accent }} />
-        </div>
-        <div className="min-w-0">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">
-            {isResume ? 'Pick up where you left off' : 'Start here'}
-          </p>
-          <p className="line-clamp-2 text-sm font-semibold leading-snug text-[#1A1A1A] dark:text-white">{title}</p>
-          {sub && <p className="mt-0.5 text-xs text-[#78716C] dark:text-zinc-400">{sub}</p>}
-        </div>
+      <div className="min-w-0 flex-1">
+        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A8A29E] dark:text-zinc-500">
+          {isResume ? 'Jump back in' : 'Start here'}
+        </p>
+        <p className="mt-1 truncate font-serif text-[16px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{title}</p>
+        {sub && <p className="mt-0.5 text-xs text-[#78716C] dark:text-zinc-400">{sub}</p>}
+        {frac !== null && (
+          <div className="mt-2.5 h-[3px] max-w-[320px] overflow-hidden rounded-full bg-[#ECE8E3] dark:bg-zinc-700">
+            <div className="h-full rounded-full" style={{ width: `${Math.round(frac * 100)}%`, backgroundColor: 'rgba(242,107,31,0.62)' }} />
+          </div>
+        )}
       </div>
-      <span
-        className="flex items-center gap-1.5 text-xs font-bold px-4 py-2.5 rounded-lg text-white shrink-0 border-2 border-[#1A1A1A] bg-[#F26B1F] shadow-[3px_3px_0_0_#1A1A1A] transition-transform group-active:translate-x-[3px] group-active:translate-y-[3px] group-active:shadow-none"
-      >
-        {isResume ? 'Continue' : 'Start'} <ArrowRight size={12} />
+      <span className="flex shrink-0 items-center gap-1 text-[13px] font-bold text-[#F26B1F] transition-transform group-hover:translate-x-0.5">
+        {isResume ? 'Continue' : 'Start'} <ArrowRight size={13} strokeWidth={2.4} />
       </span>
     </button>
   );

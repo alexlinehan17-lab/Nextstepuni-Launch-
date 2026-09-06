@@ -1,6 +1,6 @@
 .home-next-step{max-width:760px!important}
 .mobile-home-shell aside{overflow-y:auto;overscroll-behavior:contain}
-.mobile-home-shell aside button{min-height:44px}
+.mobile-home-shell aside button{min-height:44px;min-width:44px}
 .mobile-home-shell aside>button,.mobile-home-shell aside>div{flex-shrink:0}
 .mobile-home-shell aside nav{flex:1 0 auto}
 .home-next-step .home-eyebrow{font-size:11px;line-height:1.4;letter-spacing:.13em;font-weight:600;text-transform:uppercase}

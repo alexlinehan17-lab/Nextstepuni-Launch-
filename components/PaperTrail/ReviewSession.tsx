@@ -10,6 +10,7 @@
  */
 
 import { usePulse } from '../../hooks/usePulse';
+import Puifin from '../ui/Puifin';
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ExternalLink, RotateCcw, Settings2, Trash2 } from 'lucide-react';
 import {
@@ -88,6 +89,9 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
   const [retention, setRetentionState] = useState(() => getTargetRetention(uid));
   // Restrained correct-recall micro-celebration.
   const [flash, pulseFlash] = usePulse(550);
+  // Round summaries: grades this session, and whether we're on a break screen.
+  const [gradeLog, setGradeLog] = useState<ReviewGrade[]>([]);
+  const [roundBreak, setRoundBreak] = useState(false);
   const reduceMotion = useReducedMotion();
 
   const card = queue[pos];
@@ -104,11 +108,14 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     gradeCard(uid, card, g, now);
     recordActivity(uid, now, 1); // feeds the practice streak + daily goal
     setDone(d => d + 1);
+    setGradeLog(l => [...l, g]);
     // Restrained micro-celebration on genuine recall (Good/Easy), never on a miss.
     if (g === 'good' || g === 'easy') pulseFlash();
     // A failed card comes back before the session ends.
     if (g === 'again') setQueue(q => [...q, card]);
     setPos(p => p + 1);
+    // Every ten cards, a breath: the round summary (Quizlet's Learn rhythm).
+    if ((done + 1) % 10 === 0) setRoundBreak(true);
   };
 
   // "Review ahead": when caught up, let a keen student work their whole deck
@@ -238,6 +245,55 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     );
   }
 
+  // ── Round break — every ten cards, show the round's shape before going on ──
+  if (roundBreak && card) {
+    const round = gradeLog.slice(-10);
+    const know = round.filter(g => g === 'good' || g === 'easy').length;
+    const shaky = round.length - know;
+    const pct = round.length ? know / round.length : 0;
+    const C = 2 * Math.PI * 44;
+    return (
+      <div className="w-full max-w-xl mx-auto pb-12">
+        {header}
+        <div className="rounded-2xl bg-white dark:bg-zinc-900 px-6 py-7" style={{ border: '1.5px solid #383838' }}>
+          <div className="flex items-start justify-between gap-4">
+            <p className="text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color: '#A0968D' }}>Round complete · {done} reviewed</p>
+            <Puifin pose="cheer" size={52} className="-mt-3 shrink-0" />
+          </div>
+          <div className="mt-4 flex flex-wrap items-center gap-6">
+            <div className="relative h-[104px] w-[104px] shrink-0">
+              <svg width="104" height="104" viewBox="0 0 104 104" className="-rotate-90" aria-hidden="true">
+                <circle cx="52" cy="52" r="44" fill="none" stroke="#ECE8E3" strokeWidth="7" className="dark:stroke-zinc-700" />
+                <circle cx="52" cy="52" r="44" fill="none" strokeWidth="7" strokeLinecap="round"
+                  stroke={pct >= 1 ? '#3A8D5F' : 'rgba(242,107,31,0.62)'}
+                  strokeDasharray={C} strokeDashoffset={C * (1 - pct)} />
+              </svg>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="font-serif text-[24px] font-bold tabular-nums leading-none" style={{ color: INK }}>{know}/{round.length}</span>
+                <span className="mt-1 text-[8.5px] font-bold uppercase tracking-[0.14em]" style={{ color: '#A0968D' }}>Recalled</span>
+              </div>
+            </div>
+            <div className="min-w-[180px] flex-1 space-y-1.5 text-[13px]" style={{ color: '#3a3530' }}>
+              <p className="flex items-center gap-2"><span aria-hidden="true" className="h-[9px] w-[9px] rounded-full bg-[#3A8D5F]" /><b className="font-bold" style={{ color: INK }}>{know} solid</b> — recalled without help</p>
+              <p className="flex items-center gap-2"><span aria-hidden="true" className="h-[9px] w-[9px] rounded-full border-[1.5px] border-[#D6D3D0]" /><b className="font-bold" style={{ color: INK }}>{shaky} still settling</b> — they will come back around</p>
+              <p className="pt-1 text-[11.5px]" style={{ color: '#A8A29E' }}>{queue.length - pos} card{queue.length - pos === 1 ? '' : 's'} left in this session.</p>
+            </div>
+          </div>
+          <div className="mt-6 flex items-center gap-3">
+            <button onClick={() => setRoundBreak(false)}
+              className="rounded-xl bg-[#1A1A1A] px-5 py-2.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 dark:bg-white dark:text-zinc-900">
+              Keep going
+            </button>
+            <button onClick={() => { setRoundBreak(false); setQueue(q => q.slice(0, pos)); }}
+              className="text-[13px] font-semibold" style={{ color: '#7a7068' }}>
+              Finish for now
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // ── Empty / caught-up states ──
   if (!card) {
     const weakCount = allMarks(uid).filter(m => m.max > 0 && m.score < m.max).length;
@@ -257,11 +313,23 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         {header}
-        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Daily review</h2>
+        <div className="flex items-start justify-between gap-4">
+          <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Daily review</h2>
+          <Puifin pose={done > 0 ? 'nod' : deckSize > 0 ? 'perch' : 'think'} size={56} className="shrink-0" />
+        </div>
         {done > 0 ? (
-          <p className="text-[14px] mb-5" style={{ color: '#1F5F3E' }}>
-            Reviewed {done} card{done === 1 ? '' : 's'} — nice work.{daysToNext ? ` Next batch due in ${daysToNext} day${daysToNext === 1 ? '' : 's'}.` : ''}
-          </p>
+          <div className="mb-5">
+            <p className="text-[14px]" style={{ color: '#1F5F3E' }}>
+              Reviewed {done} card{done === 1 ? '' : 's'} — nice work.{daysToNext ? ` Next batch due in ${daysToNext} day${daysToNext === 1 ? '' : 's'}.` : ''}
+            </p>
+            {gradeLog.length > 0 && (
+              <p className="mt-1.5 text-[12.5px]" style={{ color: '#7a7068' }}>
+                <b className="font-bold" style={{ color: '#3A8D5F' }}>{gradeLog.filter(g => g === 'good' || g === 'easy').length} solid</b>
+                {' · '}
+                <b className="font-bold" style={{ color: INK }}>{gradeLog.filter(g => g === 'again' || g === 'hard').length} still settling</b>
+              </p>
+            )}
+          </div>
         ) : deckSize > 0 ? (
           <p className="text-[14px] mb-5" style={{ color: '#5a5550' }}>
             You’re all caught up — {deckSize} card{deckSize === 1 ? '' : 's'} scheduled{daysToNext ? `, next due in ${daysToNext} day${daysToNext === 1 ? '' : 's'}` : ''}.

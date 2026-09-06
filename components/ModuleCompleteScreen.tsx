@@ -7,7 +7,8 @@ import React from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { CheckCircle2, BookOpen, Layers, Compass, ArrowRight, Star } from 'lucide-react';
+import { BookOpen, Layers, Compass, ArrowRight, Star } from 'lucide-react';
+import Puifin from './ui/Puifin';
 import { COLORS } from '../design/tokens';
 
 interface ModuleCompleteScreenProps {
@@ -32,7 +33,7 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
   return createPortal(
     <AnimatePresence>
       {isOpen && (
-        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.35 }} className="fixed inset-0 z-[300] overflow-y-auto bg-[#FAFBF6] dark:bg-zinc-950">
+        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.35 }} className="fixed inset-0 z-[300] overflow-y-auto bg-white dark:bg-zinc-950">
           <div className="min-h-screen flex flex-col items-center justify-center px-6 py-16">
             <div className="max-w-md w-full text-center">
               <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: d(0), duration: 0.4 }}>
@@ -42,8 +43,8 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
               </MotionDiv>
 
               <MotionDiv initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: d(2), duration: 0.6, type: 'spring', stiffness: 200, damping: 12 }} className="my-8 flex justify-center">
-                <div className="w-24 h-24 rounded-full flex items-center justify-center" style={{ backgroundColor: '#6EE7B7', border: '3px solid #059669', boxShadow: '5px 5px 0px 0px #059669' }}>
-                  <CheckCircle2 size={44} style={{ color: '#064E3B' }} />
+                <div className="w-28 h-28 rounded-full flex items-end justify-center overflow-hidden" style={{ backgroundColor: '#6EE7B7', border: '3px solid #059669', boxShadow: '5px 5px 0px 0px #059669' }}>
+                  <Puifin pose="cheer" size={92} />
                 </div>
               </MotionDiv>
 

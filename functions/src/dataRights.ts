@@ -207,10 +207,12 @@ async function cascadeDeleteUser(
   // Provisioning registries and abuse-prevention counters are also keyed by or
   // contain a UID. Remove direct records and any current access-code audit
   // references so account erasure is complete across security collections.
-  const accessRecords = await db.collection("gcAccounts").where("uid", "==", uid).get();
-  for (const record of accessRecords.docs) {
-    await record.ref.delete();
-    r.accessRecordsDeleted++;
+  for (const registry of ["gcAccounts", "staffLoginAccounts"] as const) {
+    const accessRecords = await db.collection(registry).where("uid", "==", uid).get();
+    for (const record of accessRecords.docs) {
+      await record.ref.delete();
+      r.accessRecordsDeleted++;
+    }
   }
   for (const collectionName of ["staffClaimAttempts", "schoolClaimAttempts"] as const) {
     const ref = db.collection(collectionName).doc(uid);

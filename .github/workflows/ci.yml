@@ -56,7 +56,25 @@ jobs:
         working-directory: android
 
       - name: Full dependency audit
-        run: npm audit --audit-level=high
+        # npm's advisory endpoints are shedding Actions-runner traffic (quick
+        # endpoint retired; bulk returning 503/timeouts from runner IPs while
+        # the same audit passes elsewhere, 2026-09-04). Retry transient
+        # endpoint failures with backoff; real findings still fail instantly.
+        run: |
+          npm install -g npm@^11
+          for attempt in 1 2 3 4 5; do
+            out=$(npm audit --audit-level=high 2>&1) && rc=0 || rc=$?
+            echo "$out"
+            if [ $rc -eq 0 ]; then exit 0; fi
+            if echo "$out" | grep -qiE "audit endpoint returned an error|network timeout|Service Unavailable|ECONNRESET|ETIMEDOUT|503"; then
+              echo "::warning::audit endpoint unavailable (attempt ${attempt}/5) — retrying"
+              sleep $((attempt * 30))
+              continue
+            fi
+            exit $rc
+          done
+          echo "::error::npm audit endpoint unavailable after 5 attempts"
+          exit 1
 
       - name: Upload verified web build
         if: github.event_name == 'push'
@@ -87,7 +105,22 @@ jobs:
         working-directory: functions
 
       - name: Full dependency audit
-        run: npm audit --audit-level=high
+        # Same endpoint-resilience contract as the web audit above.
+        run: |
+          npm install -g npm@^11
+          for attempt in 1 2 3 4 5; do
+            out=$(npm audit --audit-level=high 2>&1) && rc=0 || rc=$?
+            echo "$out"
+            if [ $rc -eq 0 ]; then exit 0; fi
+            if echo "$out" | grep -qiE "audit endpoint returned an error|network timeout|Service Unavailable|ECONNRESET|ETIMEDOUT|503"; then
+              echo "::warning::audit endpoint unavailable (attempt ${attempt}/5) — retrying"
+              sleep $((attempt * 30))
+              continue
+            fi
+            exit $rc
+          done
+          echo "::error::npm audit endpoint unavailable after 5 attempts"
+          exit 1
         working-directory: functions
 
   deploy-hosting:

@@ -215,10 +215,10 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
           exit={{ opacity: 0, y: 16, scale: 0.99 }}
           transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
           onClick={(event: React.MouseEvent) => event.stopPropagation()}
-          className="flex h-[92dvh] w-full max-w-5xl flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] shadow-[5px_5px_0_0_#383838] sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900"
+          className="flex h-[92dvh] w-full max-w-5xl flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-white dark:bg-zinc-900 shadow-[5px_5px_0_0_#383838] sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900"
         >
         {/* Header */}
-        <div className="shrink-0 flex items-center justify-between px-6 py-4 border-b border-[#DDD8D2] dark:border-zinc-700 bg-[#FAFBF6] dark:bg-zinc-900">
+        <div className="shrink-0 flex items-center justify-between px-6 py-4 border-b border-[#DDD8D2] dark:border-zinc-700 bg-white dark:bg-zinc-900">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
               <div className={`h-2 rounded-full transition-all ${step === 1 ? 'w-8 bg-[var(--accent-hex)]' : 'w-4 bg-[rgba(var(--accent),0.4)]'}`} />

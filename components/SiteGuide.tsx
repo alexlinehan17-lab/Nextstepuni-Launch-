@@ -251,7 +251,7 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
         onClick={() => goTo(idx - 1)}
         disabled={idx === 0}
         aria-label="Previous page"
-        className="hidden sm:flex absolute left-6 lg:left-[calc(50%-350px)] items-center justify-center w-12 h-12 rounded-xl border-2 bg-[#FAFBF6] transition-transform active:translate-y-0.5 disabled:opacity-30 z-10"
+        className="hidden sm:flex absolute left-6 lg:left-[calc(50%-350px)] items-center justify-center w-12 h-12 rounded-xl border-2 bg-white transition-transform active:translate-y-0.5 disabled:opacity-30 z-10 dark:bg-zinc-900"
         style={{ borderColor: INK, boxShadow: '0 3px 0 rgba(0,0,0,0.35)' }}
       >
         <ChevronLeft size={22} color={ACCENT} strokeWidth={2.5} />
@@ -260,7 +260,7 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
         onClick={() => goTo(idx + 1)}
         disabled={idx === CARDS.length - 1}
         aria-label="Next page"
-        className="hidden sm:flex absolute right-6 lg:right-[calc(50%-350px)] items-center justify-center w-12 h-12 rounded-xl border-2 bg-[#FAFBF6] transition-transform active:translate-y-0.5 disabled:opacity-30 z-10"
+        className="hidden sm:flex absolute right-6 lg:right-[calc(50%-350px)] items-center justify-center w-12 h-12 rounded-xl border-2 bg-white transition-transform active:translate-y-0.5 disabled:opacity-30 z-10 dark:bg-zinc-900"
         style={{ borderColor: INK, boxShadow: '0 3px 0 rgba(0,0,0,0.35)' }}
       >
         <ChevronRight size={22} color={ACCENT} strokeWidth={2.5} />
@@ -285,7 +285,7 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={reduced ? { opacity: 0 } : { opacity: 0, y: 12, scale: 0.99 }}
             transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-            className="rounded-t-[24px] sm:rounded-[24px] border-[1.5px] bg-[#FAFBF6] px-5 pt-5 pb-4 max-h-[92dvh] overflow-y-auto"
+            className="rounded-t-[24px] sm:rounded-[24px] border-[1.5px] bg-white px-5 pt-5 pb-4 dark:bg-zinc-900 max-h-[92dvh] overflow-y-auto"
             style={{ borderColor: INK, boxShadow: '5px 5px 0 #383838' }}
           >
             <div className="flex items-start justify-between gap-2 mb-3">

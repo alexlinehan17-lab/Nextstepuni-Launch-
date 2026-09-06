@@ -1024,10 +1024,16 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   .product-shell :where(input, select, textarea) { font-size: 16px; }
 }
 
-@keyframes streak-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(242,107,31,0.3); }
-  50% { box-shadow: 0 0 0 4px rgba(242,107,31,0); }
-}
+/* ─── Puifín the Puffin — the app's guide. Keyframes live globally so the
+   component stays presentation-only; every animation is gated behind the
+   reduced-motion block below. ─── */
+@keyframes puifin-strip-blink { 0% { transform: translateX(0); } 92% { transform: translateX(-25%); } 94% { transform: translateX(-50%); } 96% { transform: translateX(-75%); } 98%, 100% { transform: translateX(0); } }
+@keyframes puifin-strip-wave { from { transform: translateX(0); } to { transform: translateX(-91.667%); } }
+@keyframes puifin-strip-flap { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+@keyframes puifin-hop { 0%, 100% { transform: translateY(0); } 30% { transform: translateY(-9px) rotate(-3deg); } 60% { transform: translateY(0); } }
+@keyframes puifin-drift { 0%, 100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-7px) rotate(-7deg); } }
+@keyframes puifin-rock { 0%, 100% { transform: rotate(-2deg); } 50% { transform: rotate(3deg); } }
+@keyframes puifin-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

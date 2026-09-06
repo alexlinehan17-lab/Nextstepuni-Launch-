@@ -7,7 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
+import { X, Check, Lock, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
@@ -101,11 +101,11 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             aria-modal="true"
             aria-labelledby="settings-dialog-title"
             tabIndex={-1}
-            className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
+            className="relative bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="sticky top-0 z-20 flex items-center justify-between border-b border-[#DDD8D2] bg-[#FAFBF6]/95 p-6 pb-4 backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/95">
+            <div className="sticky top-0 z-20 flex items-center justify-between border-b border-[#DDD8D2] bg-white/95 p-6 pb-4 backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/95">
               <h2 id="settings-dialog-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                 Settings
               </h2>
@@ -259,29 +259,51 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   Preferences
                 </h3>
                 <div className="space-y-2">
-                  {/* Dark Mode */}
-                  <button
-                    role="switch"
-                    aria-checked={settings.darkMode}
-                    aria-label={settings.darkMode ? 'Use light mode' : 'Use dark mode'}
-                    onClick={() => {
-                      updateSetting('darkMode', !settings.darkMode);
-                      flash();
-                    }}
-                    className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15] transition-all"
-                  >
-                    <div className="flex items-center gap-3">
-                      {settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-500" />}
-                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</p>
-                    </div>
-                    <div className={`relative w-10 h-6 rounded-full transition-colors ${
-                      settings.darkMode ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
-                    }`}>
-                      <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
-                        settings.darkMode ? 'translate-x-[18px]' : 'translate-x-0.5'
-                      }`} />
-                    </div>
-                  </button>
+                  {/* Appearance — two miniatures of the app itself, pick one.
+                      A preview says what a "Dark Mode" label can't. */}
+                  <div role="group" aria-label="Appearance" className="grid grid-cols-2 gap-2.5">
+                    {[{ dark: false, label: 'Light' }, { dark: true, label: 'Dark (Beta)' }].map(opt => {
+                      const active = settings.darkMode === opt.dark;
+                      return (
+                        <button
+                          key={opt.label}
+                          aria-pressed={active}
+                          onClick={() => {
+                            if (!active) { updateSetting('darkMode', opt.dark); flash(); }
+                          }}
+                          className={`rounded-xl border-[1.5px] p-2 text-left transition-colors ${
+                            active
+                              ? 'border-[#1A1A1A] dark:border-white'
+                              : 'border-zinc-200 hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-500'
+                          }`}
+                        >
+                          <div
+                            className="flex h-16 overflow-hidden rounded-lg border"
+                            style={{ backgroundColor: opt.dark ? '#151515' : '#ffffff', borderColor: opt.dark ? '#3f3f46' : '#e4e4e7' }}
+                            aria-hidden="true"
+                          >
+                            <div
+                              className="w-4 shrink-0"
+                              style={{
+                                backgroundColor: opt.dark ? '#18181b' : '#ffffff',
+                                borderRight: opt.dark ? '1px solid #3f3f46' : '1.5px solid #383838',
+                              }}
+                            />
+                            <div className="flex-1 space-y-1.5 p-2">
+                              <div className="h-1.5 w-10 rounded-full" style={{ backgroundColor: opt.dark ? '#f4f4f5' : '#1A1A1A' }} />
+                              <div className="h-1 w-14 rounded-full" style={{ backgroundColor: opt.dark ? '#52525b' : '#d6d3d1' }} />
+                              <div className="h-1 w-11 rounded-full" style={{ backgroundColor: opt.dark ? '#3f3f46' : '#e7e5e4' }} />
+                              <div className="h-1 w-7 rounded-full" style={{ backgroundColor: 'rgba(242,107,31,0.55)' }} />
+                            </div>
+                          </div>
+                          <div className="mt-1.5 flex items-center justify-between px-0.5">
+                            <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">{opt.label}</span>
+                            {active && <Check size={13} strokeWidth={2.6} className="text-[#1A1A1A] dark:text-white" />}
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
 
                   {/* Essentials mode toggle. Junior Cycle is always on (locked);
                       senior students can toggle it. */}

@@ -95,10 +95,15 @@ export const resetStudentPassword = onCall(
     if (studentData.school !== callerData.school) {
       throw new HttpsError("permission-denied", "Student is not in your school.");
     }
-    // A GC may only reset *student* accounts — never another GC or an admin.
-    // Without this a GC could pass a colleague-GC/admin uid (same school) and
-    // take over that staff account. (Security review 2026-07-16, HIGH.)
-    if (studentData.role === "gc" || studentData.role === "admin" || studentData.isAdmin === true) {
+    // A GC may only reset *student* accounts — never another GC, the shared
+    // staff-room login, or an admin. Without this a GC could pass a same-school
+    // staff uid and take over that account. (Security review 2026-07-16, HIGH;
+    // staff added 2026-09-04 when shared staff logins made a role:'staff'
+    // account a permanent fixture of every school.)
+    if (
+      studentData.role === "gc" || studentData.role === "staff"
+      || studentData.role === "admin" || studentData.isAdmin === true
+    ) {
       throw new HttpsError("permission-denied", "You can only reset student accounts.");
     }
 
