@@ -53,3 +53,21 @@ Clean production integration checks completed:
 Build, signing, upload and publishing are verified separately below as each finishes.
 
 Publication is not complete merely because an archive builds. GitHub/Firebase deployment, Apple upload/processing and App Review are separate statuses.
+
+
+## Crash-fix submission — 1.0.4 (8)
+
+The App Store 1.0.3 (6) release carried the earlier app bundle and only changed the icon. This replacement includes the approved mobile login/onboarding, updated Paper Trail entry and paper selection, and the compact mobile Topics/Answers panel. The North Star step uses numbered choices with one changing illustration; Continue remains visible throughout onboarding.
+
+The startup crash was reproduced in the simulator as `null is not an object (evaluating 'W.unlockedSection')`. The daily module-start quest scanned the saved progress document and dereferenced an empty entry. It now safely ignores empty entries while retaining valid module progress. No saved records were removed or rewritten by this fix. Regression tests cover both started and unstarted accounts with a null entry.
+
+- App implementation commit: `9684283c` (PR #92).
+- Release: 1.0.4 (8), `com.nextstepuni.app`, team `LHTS3Y4JLJ`, iPhone and iPad.
+- Full tests: 220 files passed; 5,342 tests passed, 3 skipped.
+- Lint and application/test type checks passed; production web and native simulator builds passed.
+- Signed Release archive built successfully; strict/deep signature verification passed.
+- Archived web assets match the production build and the verified simulator assets. Entry JS SHA-256: `3341d450a6fcfcd1dc574f26f040cc10abe96b0b23f7837621edc1ce2282635d`.
+- Archive: `~/Documents/Nextstepuni-AppStore-Releases/1.0.4-build-8/NextStepUni.xcarchive`.
+- Upload succeeded through Xcode's command-line distribution flow at 20:28:55 Europe/Dublin on 6 September 2026 (`EXPORT SUCCEEDED`). Apple accepted the package and started processing it. App Store Connect browser sign-in is required to verify processing, select build 8 and submit for review.
+- The archive resolved GoogleUtilities 8.1.3; its lockfile is retained to match the uploaded native build.
+- Cold launches on iPhone 17 Pro and iPad Pro 13-inch (M5) simulators reached Home successfully with existing saved accounts.

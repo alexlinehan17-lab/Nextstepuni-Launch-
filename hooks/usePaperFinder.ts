@@ -48,13 +48,13 @@ export function usePaperFinder(uid?: string) {
   const { doc: progressDoc, loaded } = useFreshProgress(uid);
   const seededRef = useRef<string | null>(null);
   const stateRef = useRef(state);
-  stateRef.current = state;
   const pageTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Reset on account switch so the previous user's recents never bleed over.
   useEffect(() => {
     if (seededRef.current !== null && seededRef.current !== (uid ?? '')) {
       seededRef.current = null;
+      stateRef.current = EMPTY;
       setState(EMPTY);
     }
   }, [uid]);
@@ -66,7 +66,8 @@ export function usePaperFinder(uid?: string) {
     if (saved && Array.isArray(saved.recents)) {
       // Drop pre-composite-key entries from any earlier schema.
       const recents = saved.recents.filter(r => typeof (r as RecentPaper).key === 'string');
-      setState({ ...EMPTY, ...saved, recents });
+      stateRef.current = { ...EMPTY, ...saved, recents };
+      setState(stateRef.current);
     }
   }, [loaded, progressDoc, uid]);
 
@@ -86,6 +87,7 @@ export function usePaperFinder(uid?: string) {
 
   const persist = useCallback(
     (next: PaperTrailState) => {
+      stateRef.current = next;
       setState(next);
       write(next);
     },
@@ -154,5 +156,9 @@ export function usePaperFinder(uid?: string) {
     [persist],
   );
 
-  return { state, isLoaded: loaded, recordRecent, updatePage, setFilters };
+  // Publish the latest per-side positions only when leaving the reader. Page
+  // turns themselves remain render-free, but Continue sees the position just read.
+  const finishReading = useCallback(() => setState(stateRef.current), []);
+
+  return { state, isLoaded: loaded, recordRecent, updatePage, setFilters, finishReading };
 }

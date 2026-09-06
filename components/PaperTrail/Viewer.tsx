@@ -62,6 +62,7 @@ import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 // pdf.js lazy singleton + region renderer — shared with the Topic Vault.
 import { loadPdfjs, type PdfjsModule } from './pdfjsLoader';
 import CropView from './CropView';
+import MobileQuestionTools from './MobileQuestionTools';
 import { questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
 
@@ -1245,7 +1246,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 zoom={zoom}
                 epoch={epoch}
                 observe={observe}
-                anchors={(answersOn || topicsOn) && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
+                anchors={isWide && (answersOn || topicsOn) && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
                 showAnswerChip={answersOn}
                 onReveal={onReveal}
                 topicInfo={topicsOn && side === 'paper' ? topicInfoByN : undefined}
@@ -1300,6 +1301,18 @@ const Viewer: React.FC<ViewerProps> = ({
             </a>
           </div>
         </div>
+      )}
+
+      {!isWide && side === 'paper' && session.state === 'ready' && answerMap && (answersOn || topicsOn) && (
+        <MobileQuestionTools
+          page={session.page}
+          initialQuestion={focusQuestion}
+          questions={anchorsByPage.get(session.page) ?? []}
+          topicInfo={topicsOn ? topicInfoByN : undefined}
+          showAnswers={answersOn}
+          onAnswer={onReveal}
+          onTopic={onTopic}
+        />
       )}
 
       {/* Footer: zoom + page scrubber */}
@@ -1398,13 +1411,13 @@ const Viewer: React.FC<ViewerProps> = ({
       )}
 
       {/* Answers map fetch status (chips appear once ready). */}
-      {answersOn && side === 'paper' && answerState !== 'idle' && (
+      {(answersOn || topicsOn) && side === 'paper' && answerState !== 'idle' && (
         <div
           role="status"
           aria-live="polite"
           className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
         >
-          {answerState === 'loading' ? 'Loading answers…' : 'Couldn’t load answers — try again later.'}
+          {answerState === 'loading' ? 'Loading question tools…' : 'Couldn’t load question tools — try again later.'}
         </div>
       )}
 
