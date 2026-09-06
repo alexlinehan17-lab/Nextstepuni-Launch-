@@ -547,6 +547,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     );
   }
 
+  // The archive owns its padding; the existing study screens previously
+  // inherited theirs from Launchpad. Keep that inset when entered here.
+  const studySurface = (content: React.ReactNode) => (
+    <div className={initialView ? undefined : 'px-6 pt-6'}>{content}</div>
+  );
+
   // ═══════════════════════ REVISE BY TOPIC ═══════════════════════
   if (view.v === 'revise') {
     const inCycleTagged = taggedSubjects()
@@ -556,7 +562,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       ))
       .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
     const mineNames = new Set((studentSubjects ?? []).map(baseName));
-    return (
+    return studySurface(
       <ReviseByTopic
         subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
         mineIds={inCycleTagged.filter(s => (
@@ -581,7 +587,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       ))
       .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
     const mineNames = new Set((studentSubjects ?? []).map(baseName));
-    return (
+    return studySurface(
       <MockExamBuilder
         uid={uid}
         now={Date.now()}
@@ -599,12 +605,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
   // ═══════════════════════ FLASHCARDS ═══════════════════════
   if (view.v === 'cards') {
-    return <Flashcards uid={uid} now={Date.now()} onBack={() => setView({ v: 'home' })} />;
+    return studySurface(<Flashcards uid={uid} now={Date.now()} onBack={() => setView({ v: 'home' })} />);
   }
 
   // ═══════════════════════ DAILY REVIEW (SRS) ═══════════════════════
   if (view.v === 'review') {
-    return (
+    return studySurface(
       <ReviewSession
         uid={uid}
         now={Date.now()}
@@ -617,7 +623,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
   // ═══════════════════════ PROGRESS DASHBOARD ═══════════════════════
   if (view.v === 'progress') {
-    return (
+    return studySurface(
       <ProgressDashboard
         uid={uid}
         now={Date.now()}
