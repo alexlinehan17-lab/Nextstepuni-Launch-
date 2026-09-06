@@ -15,7 +15,10 @@ const mocks = vi.hoisted(() => ({
   startSession: vi.fn(),
   phase: 'active' as 'idle' | 'active',
   canRecordSession: true,
+  mobile: false,
 }));
+
+vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => mocks.mobile }));
 
 vi.mock('@/hooks/useStudySession', () => ({
   MIN_STUDY_SESSION_MINUTES: 5,
@@ -59,8 +62,9 @@ const renderActiveSession = () => render(
   />,
 );
 
-describe('study-session exit choices', () => {
+describe.each([false, true])('study-session exit choices (mobile: %s)', mobile => {
   beforeEach(() => {
+    mocks.mobile = mobile;
     mocks.endSession.mockReset();
     mocks.cancelSession.mockReset();
     mocks.startSession.mockReset();

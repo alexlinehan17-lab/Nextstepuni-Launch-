@@ -4,6 +4,8 @@
  */
 
 import React, { useMemo, useState } from 'react';
+import './dashboard/dashboard-refined.css';
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { ArrowRight, Check, Moon, Sun } from 'lucide-react';
 import { MotionDiv } from './Motion';
 import PageHeader from './ui/PageHeader';
@@ -188,19 +190,22 @@ const Panel: React.FC<{
   action?: React.ReactNode;
   className?: string;
   children: React.ReactNode;
-}> = ({ eyebrow, title, detail, action, className = '', children }) => (
-  <article className={`rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)] ${className}`}>
+}> = ({ eyebrow, title, detail, action, className = '', children }) => {
+  const mobileAppDesign = useMobileAppDesign();
+  return (
+  <article className={`${mobileAppDesign ? `dashboard-section ${eyebrow === 'Programme progress' ? 'dashboard-programme' : ''}` : 'rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]'} ${className}`}>
     <div className="flex flex-wrap items-start justify-between gap-3 border-b border-[var(--outline-soft)] px-5 py-4 sm:px-6">
       <div className="min-w-0">
         <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">{eyebrow}</p>
         <h2 className="mt-1 font-serif text-xl font-semibold tracking-[-0.015em] text-[var(--ink-primary)] sm:text-2xl">{title}</h2>
-        {detail && <p className="mt-1 max-w-xl text-xs leading-relaxed text-[var(--ink-muted)]">{detail}</p>}
+        {detail && <p className={`mt-1 max-w-xl ${mobileAppDesign ? "text-[13px]" : "text-xs"} leading-relaxed text-[var(--ink-muted)]`}>{detail}</p>}
       </div>
       {action && <div className="shrink-0">{action}</div>}
     </div>
     <div className="px-5 py-4 sm:px-6 sm:py-5">{children}</div>
   </article>
-);
+  );
+};
 
 const StatCell: React.FC<{ eyebrow: string; value: string; meta: string; accent?: boolean }> = ({ eyebrow, value, meta, accent }) => (
   <div className="w-[112px] shrink-0 border-r border-[var(--outline-soft)] pr-4 last:border-r-0 sm:w-auto sm:border-r-0 sm:pr-0 lg:border-l lg:pl-5 lg:first:border-l-0 lg:first:pl-0">
@@ -220,7 +225,9 @@ const SegmentedControl = <T extends string>({
   value: T;
   options: Array<{ id: T; label: string }>;
   onChange: (value: T) => void;
-}) => (
+}) => {
+  const mobileAppDesign = useMobileAppDesign();
+  return (
   <div className="inline-flex rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1" role="group" aria-label={label}>
     {options.map(option => (
       <button
@@ -228,7 +235,7 @@ const SegmentedControl = <T extends string>({
         type="button"
         aria-pressed={value === option.id}
         onClick={() => onChange(option.id)}
-        className={`min-h-8 rounded-lg px-3 text-[11px] font-semibold transition-colors ${
+        className={`${mobileAppDesign ? 'min-h-11 text-[13px]' : 'min-h-8 text-[11px]'} rounded-lg px-3 font-semibold transition-colors ${
           value === option.id
             ? 'bg-[var(--ink-primary)] text-[var(--surface-paper)]'
             : 'text-[var(--ink-secondary)] hover:text-[var(--ink-primary)]'
@@ -238,7 +245,8 @@ const SegmentedControl = <T extends string>({
       </button>
     ))}
   </div>
-);
+  );
+};
 
 const DashboardView: React.FC<DashboardViewProps> = ({
   userProgress,
@@ -269,6 +277,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   darkMode = false,
   onToggleTheme,
 }) => {
+  const mobileAppDesign = useMobileAppDesign();
   const [localTab, setLocalTab] = useState<DashboardTab>('overview');
   const tab = activeTab ?? localTab;
   const [range, setRange] = useState<DashboardRange>('week');
@@ -476,6 +485,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
         />
       )}
       <ActivityChart buckets={activityBuckets} metric={metric} />
+      {mobileAppDesign && sessionsInRange.length === 0 && onStartStudy && <div className="border-t border-[var(--outline-soft)] pt-4"><p className="text-sm text-[var(--ink-secondary)]">No sessions recorded for {subjectLabel.toLowerCase()} in this period.</p><button type="button" onClick={onStartStudy} className="mt-2 min-h-11 text-sm font-semibold underline underline-offset-4">Plan your next session</button></div>}
     </Panel>
   );
 
@@ -483,7 +493,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
     <Panel
       eyebrow="Debrief signal"
       title="Confidence over time"
-      detail="Each point is a confidence choice made after a completed study session."
+      detail={mobileAppDesign ? "Your own ratings after study sessions. A reflection signal, not a grade prediction." : "Each point is a confidence choice made after a completed study session."}
       action={
         <InsightsToggle
           controls="dashboard-confidence-insights"
@@ -610,12 +620,12 @@ const DashboardView: React.FC<DashboardViewProps> = ({
 
             {tab !== 'milestones' && (
               <div className="flex flex-wrap items-end gap-2 lg:max-w-md lg:justify-end">
-                <label className="min-w-[160px] flex-1 lg:flex-none">
+                <label className={mobileAppDesign ? "min-w-0 basis-full lg:min-w-[200px] lg:flex-1 lg:basis-auto" : "min-w-[160px] flex-1 lg:flex-none"}>
                   <span className="sr-only">Filter by subject</span>
                   <select
                     value={subject}
                     onChange={event => setSubject(event.target.value)}
-                    className="h-10 w-full rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-3 text-xs font-semibold text-[var(--ink-secondary)] outline-none focus:border-[var(--accent-hex)]"
+                    className={`${mobileAppDesign ? "min-h-12 text-base font-medium" : "h-10 text-xs font-semibold"} w-full rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-3 text-[var(--ink-secondary)] outline-none focus:border-[var(--accent-hex)]`}
                   >
                     <option value="all">All subjects</option>
                     {subjects.map(item => <option key={item} value={item}>{item}</option>)}
@@ -642,7 +652,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             <StatCell eyebrow="Sessions" value={String(sessionsInRange.length)} meta={`${activeDays} active day${activeDays === 1 ? '' : 's'}`} accent />
             <StatCell eyebrow="Focus time" value={formatMinutes(totalMinutes)} meta={rangeBounds.label} />
             <StatCell eyebrow="Confidence" value={avgConfidence === null ? '—' : avgConfidence.toFixed(1)} meta={avgConfidence === null ? 'awaiting debriefs' : 'average out of 5'} />
-            <StatCell eyebrow="Streak" value={String(streak.currentStreak)} meta="days running" />
+            <StatCell eyebrow="Streak" value={String(streak.currentStreak)} meta={mobileAppDesign ? "days · all subjects" : "days running"} />
             <StatCell eyebrow="Journey points" value={String(pointsEarned)} meta="earned to date" />
           </div>
 

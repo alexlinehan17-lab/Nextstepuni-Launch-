@@ -9,6 +9,8 @@ import { AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Check, ChevronLeft, ChevronRight, RotateCcw, X } from 'lucide-react';
 import { MotionDiv } from './Motion';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
+import { useModal } from '../hooks/useModal';
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import {
   TOOL_GUIDANCE,
   availableRecommendationGoals,
@@ -51,6 +53,8 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
   const [toolIndex, setToolIndex] = useState(0);
   const [goalId, setGoalId] = useState<RecommendationGoalId | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const guideBodyRef = useRef<HTMLDivElement>(null);
+  const guideTitleRef = useRef<HTMLHeadingElement>(null);
   const availableIds = useMemo(
     () => availableToolIds ?? tools.map(tool => tool.id),
     [availableToolIds, tools],
@@ -67,7 +71,9 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
     if (nextMode === 'recommend') setGoalId(null);
   };
 
+  const mobileAppDesign = useMobileAppDesign();
   const close = () => setMode(null);
+  useModal(mobileAppDesign && Boolean(mode), close);
 
   useEffect(() => {
     if (!mode) return;
@@ -78,6 +84,12 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [mode]);
+
+  useEffect(() => {
+    if (!mobileAppDesign || !mode) return;
+    if (guideBodyRef.current) guideBodyRef.current.scrollTop = 0;
+    guideTitleRef.current?.focus({ preventScroll: true });
+  }, [mobileAppDesign, mode, toolIndex, goalId, recommendation?.toolId]);
 
   const selectAnswer = (answerId: string) => {
     if (!goalId) return;
@@ -92,13 +104,13 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
 
   return (
     <>
-      <section aria-labelledby="launchpad-help-heading" className="mb-6 sm:mb-8">
+      <section aria-labelledby="launchpad-help-heading" className={`mb-6 sm:mb-8 ${mobileAppDesign ? '[&_button]:min-h-11' : ''}`}>
         <div className="mb-3 sm:mb-4">
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Not sure where to begin?</p>
           <h2 id="launchpad-help-heading" className="mt-1 text-lg font-semibold text-[var(--ink-primary)] sm:text-xl">Find your way around the Launchpad.</h2>
         </div>
 
-        <div className="grid auto-cols-[minmax(270px,86vw)] grid-flow-col gap-3 overflow-x-auto snap-x snap-mandatory pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:grid-flow-row sm:grid-cols-2 sm:overflow-visible sm:pb-0">
+        <div className={mobileAppDesign ? "grid grid-cols-1 gap-3 sm:grid-cols-2" : "grid auto-cols-[minmax(270px,86vw)] grid-flow-col gap-3 overflow-x-auto snap-x snap-mandatory pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:grid-flow-row sm:grid-cols-2 sm:overflow-visible sm:pb-0"}>
           <button
             type="button"
             onClick={() => open('explain')}
@@ -144,7 +156,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
 
       {createPortal(<AnimatePresence>
         {mode && (
-          <div className="fixed inset-0 z-[220] flex items-end justify-center sm:items-center sm:p-5" role="dialog" aria-modal="true" aria-labelledby="launchpad-guidance-title">
+          <div className={`fixed inset-0 z-[220] flex items-end justify-center sm:items-center sm:p-5 ${mobileAppDesign ? '[&_button]:min-h-11 [&_button]:shrink-0' : ''}`} role="dialog" aria-modal="true" aria-labelledby="launchpad-guidance-title">
             <div aria-hidden="true" onClick={close} className="absolute inset-0 bg-[#1A1A1A]/60" />
             <MotionDiv
               initial={{ opacity: 0, y: 24, scale: 0.99 }}
@@ -153,10 +165,10 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
               transition={{ duration: 0.22 }}
               className="relative flex max-h-[92dvh] w-full max-w-4xl flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-canvas)] shadow-2xl sm:rounded-[24px]"
             >
-              <header className="flex items-start justify-between gap-4 border-b border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 py-4 sm:px-7">
+              <header className={`flex items-start justify-between gap-4 border-b border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 py-4 sm:px-7 ${mobileAppDesign ? 'shrink-0' : ''}`}>
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Launchpad guide</p>
-                  <h2 id="launchpad-guidance-title" className="mt-1 text-xl font-semibold text-[var(--ink-primary)]">
+                  <h2 ref={guideTitleRef} tabIndex={mobileAppDesign ? -1 : undefined} id="launchpad-guidance-title" className="mt-1 text-xl font-semibold text-[var(--ink-primary)]">
                     {mode === 'explain'
                       ? 'Meet the tools'
                       : recommendation
@@ -172,7 +184,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
               </header>
 
               {mode === 'explain' && explainedTool && (
-                <div className="grid min-h-0 flex-1 overflow-y-auto md:grid-cols-[240px_1fr]">
+                <div ref={guideBodyRef} className="grid min-h-0 flex-1 overflow-y-auto md:grid-cols-[240px_1fr]">
                   <nav aria-label="Tools in this guide" className="hidden overflow-y-auto border-r border-[var(--outline-soft)] bg-[var(--surface-soft)] p-3 md:block">
                     {tools.map((tool, index) => (
                       <button
@@ -188,6 +200,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
                   </nav>
 
                   <div className="flex min-h-[560px] flex-col p-6 sm:p-8">
+                    {mobileAppDesign && <label className="mb-4 block text-sm font-semibold md:hidden">Choose a tool<select className="mt-2 min-h-12 w-full rounded-lg border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-3 text-base font-normal" value={explainedTool.id} onChange={event => setToolIndex(tools.findIndex(tool => tool.id === event.target.value))}>{tools.map(tool => <option key={tool.id} value={tool.id}>{tool.title}</option>)}</select></label>}
                     <div className="mb-5 flex items-center justify-between md:hidden">
                       <button type="button" onClick={() => setToolIndex(index => Math.max(0, index - 1))} disabled={toolIndex === 0} aria-label="Previous tool" className="flex h-11 w-11 items-center justify-center rounded-xl border border-[var(--outline-soft)] disabled:opacity-30"><ChevronLeft size={18} /></button>
                       <span className="text-xs tabular-nums text-[var(--ink-muted)]">{toolIndex + 1} of {tools.length}</span>
@@ -226,7 +239,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
               )}
 
               {mode === 'recommend' && (
-                <div className="min-h-[560px] flex-1 overflow-y-auto p-5 sm:p-8">
+                <div ref={guideBodyRef} className={mobileAppDesign ? "min-h-0 flex-1 overflow-y-auto p-5 sm:p-8" : "min-h-[560px] flex-1 overflow-y-auto p-5 sm:p-8"}>
                   {!goalId && !recommendation && (
                     <div className="mx-auto max-w-2xl">
                       <p className="mb-5 text-sm text-[var(--ink-secondary)]">Choose the thought closest to yours. There is no score and no wrong answer.</p>

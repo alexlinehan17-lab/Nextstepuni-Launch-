@@ -67,6 +67,8 @@ import { useOptionalProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 import { type ProgressDocument } from '../services/progressRepository';
 import HorizontalTabs from './ui/HorizontalTabs';
+import { matchesToolSearch, PRACTICE_TOOL_IDS } from './launchpadSearch';
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
 //
@@ -184,6 +186,7 @@ const NOOP_DEMO_UPDATE: (updater: (current: ProgressDocument) => ProgressDocumen
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
 const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSubjectProfile, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
+    const mobileAppDesign = useMobileAppDesign();
     const { showToast } = useToast();
     const progress = useOptionalProgress();
     const rawProgressDoc = progress?.rawProgressDoc ?? EMPTY_PROGRESS_DOC;
@@ -757,6 +760,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     ];
 
     const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'practice' | 'plan' | 'track'>('all');
+    const [toolQuery, setToolQuery] = useState('');
     const recommendationStorageKey = `nextstepuni:launchpad-recommendation:${user?.uid ?? 'guest'}`;
     const [toolRecommendation, setToolRecommendation] = useState<ToolRecommendation | null>(null);
 
@@ -810,9 +814,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
       return okCurriculum && okYear;
     });
 
-    const filteredTools = activeFilter === 'all'
-        ? curriculumVisibleTools
-        : curriculumVisibleTools.filter(t => TOOL_CATEGORIES[t.id] === activeFilter);
+    const filteredTools = curriculumVisibleTools.filter(tool =>
+        (activeFilter === 'all' || TOOL_CATEGORIES[tool.id] === activeFilter || (mobileAppDesign && activeFilter === 'practice' && PRACTICE_TOOL_IDS.has(tool.id)))
+        && (!mobileAppDesign || matchesToolSearch(tool, toolQuery)),
+    );
     const recommendationAvailableToolIds = curriculumVisibleTools
       .filter(tool => !tool.needsProfile || Boolean(subjectProfile))
       .map(tool => tool.id);
@@ -831,17 +836,24 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         if (!stillAvailable) window.localStorage.removeItem(recommendationStorageKey);
       } catch {
         setToolRecommendation(null);
-        window.localStorage.removeItem(recommendationStorageKey);
+        if (mobileAppDesign) {
+          try { window.localStorage.removeItem(recommendationStorageKey); } catch { /* Keep the in-memory recommendation available in private browsing. */ }
+        } else window.localStorage.removeItem(recommendationStorageKey);
       }
       // The visible catalogue can change with the student's curriculum/year.
       // The ids string is stable; tool records include JSX and are rebuilt.
-    }, [recommendationStorageKey, recommendationAvailableToolIdsKey]);
+    }, [recommendationStorageKey, recommendationAvailableToolIdsKey, mobileAppDesign]);
 
     const handleRecommendationChange = useCallback((next: ToolRecommendation | null) => {
       setToolRecommendation(next);
-      if (next) window.localStorage.setItem(recommendationStorageKey, JSON.stringify(next));
-      else window.localStorage.removeItem(recommendationStorageKey);
-    }, [recommendationStorageKey]);
+      const persist = () => {
+        if (next) window.localStorage.setItem(recommendationStorageKey, JSON.stringify(next));
+        else window.localStorage.removeItem(recommendationStorageKey);
+      };
+      if (mobileAppDesign) {
+        try { persist(); } catch { /* Storage is optional; the guide still works in memory. */ }
+      } else persist();
+    }, [recommendationStorageKey, mobileAppDesign]);
 
     const currentTool = tools.find(t => t.id === activeTool);
 
@@ -868,7 +880,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
       >
         <div className="container mx-auto flex min-w-0 items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3 md:gap-8">
-            <MotionButton type="button" aria-label={activeTool ? 'Back to Launchpad' : 'Back to home'} whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className="p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
+            <MotionButton type="button" aria-label={activeTool ? 'Back to Launchpad' : 'Back to home'} whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className={`p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] ${mobileAppDesign ? 'min-h-11 min-w-11 shrink-0' : ''}`}>
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </MotionButton>
             <div className="hidden md:block h-10 w-px bg-[var(--outline-soft)]" />
@@ -920,9 +932,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     />
 
                     {/* Filter pills + Points trigger — same row, opposite ends */}
-                    <div className="mb-8 flex items-center justify-between gap-3">
+                    {mobileAppDesign && <label className="mb-4 block text-sm font-semibold">Find a tool or task<input type="search" value={toolQuery} onChange={event => setToolQuery(event.target.value)} placeholder="Try “past papers”" className="mt-2 block min-h-12 w-full rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-4 text-base font-normal text-[var(--ink-primary)]" /></label>}
+                    <div className={mobileAppDesign ? "mb-3 flex flex-wrap items-center justify-between gap-3" : "mb-8 flex items-center justify-between gap-3"}>
                         <HorizontalTabs
-                          className="min-w-0 flex-1"
+                          className={mobileAppDesign ? "min-w-0 basis-full sm:flex-1 sm:basis-0" : "min-w-0 flex-1"}
                           variant="pill"
                           value={activeFilter}
                           label="Launchpad categories"
@@ -938,7 +951,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                 aria-label="How points work"
                                 aria-expanded={showPointsPanel}
                                 title="How points work"
-                                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all ${
+                                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all ${mobileAppDesign ? 'min-h-11' : ''} ${
                                     showPointsPanel
                                         ? 'bg-[var(--surface-paper)] text-[var(--ink-primary)] font-medium border border-[var(--outline-strong)]'
                                         : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
@@ -959,6 +972,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                             </button>
                         </div>
                     </div>
+                    {mobileAppDesign && <p className="mb-5 text-sm text-[var(--ink-secondary)]" role="status">{filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'}{toolQuery.trim() ? ' match your search' : ''}</p>}
 
                     {/* Empty state for JC users when no tools are curriculum-visible.
                         JC-visible tools now include the Spaced Repetition Timetable,
@@ -967,7 +981,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                         This branch is now only reachable when the user filters by a
                         category that contains zero JC-visible tools — so the message
                         reflects a filter mismatch, not a roadmap gap. */}
-                    {filteredTools.length === 0 && curriculumLevel === 'junior' && (
+                    {mobileAppDesign && filteredTools.length === 0 && <div className="border-y border-[var(--outline-soft)] py-8"><h2 className="font-serif text-2xl">No matching tools.</h2><p className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)]">Try another task, or see all the tools available for your year.</p><button type="button" className="mt-4 min-h-11 text-sm font-semibold underline underline-offset-4" onClick={() => { setToolQuery(''); setActiveFilter('all'); }}>Show all tools</button></div>}
+
+                    {!mobileAppDesign && filteredTools.length === 0 && curriculumLevel === 'junior' && (
                       <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: '#FDF8F0', border: '2px solid #1A1A1A' }}>
                         <p className="font-serif text-xl font-bold mb-2 text-[#1A1A1A]">No tools in this category for Junior Cycle yet.</p>
                         <p className="text-sm text-[#78716C] max-w-md mx-auto">
@@ -977,7 +993,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     )}
 
                     {/* Bento card grid */}
-                    <div style={{ display: filteredTools.length === 0 ? 'none' : 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
+                    <div style={{ display: filteredTools.length === 0 ? 'none' : 'grid', gridTemplateColumns: mobileAppDesign ? 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))' : 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
                         {filteredTools.map((tool, i) => {
                             const profilePending = tool.needsProfile && !profileLoaded;
                             const locked = tool.needsProfile && profileLoaded && !subjectProfile;
@@ -991,7 +1007,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                     aria-label={profilePending ? `Loading profile for ${tool.title}` : locked ? `Set up profile to unlock ${tool.title}` : `Open ${tool.title}`}
                                     initial={{ opacity: 0, y: 16 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.3, delay: i * 0.04 }}
+                                    transition={mobileAppDesign ? { duration: 0.2, delay: Math.min(i, 4) * 0.025 } : { duration: 0.3, delay: i * 0.04 }}
                                     onClick={profilePending ? undefined : () => handleToolClick(tool.id, tool.needsProfile)}
                                     className={`flex flex-col text-left rounded-2xl border-[1.5px] overflow-hidden transition-all ${
                                         profilePending
@@ -1035,7 +1051,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                         </h3>
 
                                         {/* Description */}
-                                        <p className={`line-clamp-2 flex-1 text-xs leading-relaxed sm:line-clamp-none ${
+                                        <p className={`${mobileAppDesign ? 'flex-1 text-[13px] leading-relaxed' : 'line-clamp-2 flex-1 text-xs leading-relaxed sm:line-clamp-none'} ${
                                             profilePending ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-500 dark:text-zinc-400'
                                         }`}>
                                             {profilePending ? 'Checking your subject profile…' : locked ? 'Add your subjects to unlock this tool.' : tool.description}

@@ -1,0 +1,7 @@
+.dashboard-section{border-top:1px solid var(--outline-soft);min-width:0;background:transparent}
+.dashboard-section>div:first-child{border-bottom:0;padding-left:0;padding-right:0}
+.dashboard-section>div:last-child{padding-left:0;padding-right:0}
+.dashboard-programme{border:1px solid var(--outline-soft);border-radius:17px;background:var(--surface-paper);padding-inline:20px}
+.dashboard-section button:focus-visible{outline:2px solid var(--accent-hex);outline-offset:3px}
+.dashboard-section button{min-height:44px;flex-shrink:0}
+@media(min-width:1024px){.dashboard-section{padding-inline:16px}.dashboard-programme{padding-inline:24px}}

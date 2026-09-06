@@ -9,10 +9,9 @@
  */
 
 import React, { useMemo } from 'react';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { getLastVisit } from './lastVisited';
 import { type CourseData } from './Library';
-import './home-next-step.css';
 
 interface Props {
   uid?: string;
@@ -20,10 +19,9 @@ interface Props {
   userProgress: { [moduleId: string]: { unlockedSection: number } };
   onSelectModule: (moduleId: string) => void;
   onOpenTool?: (toolId: string) => void;
-  onBrowseModules?: () => void;
 }
 
-const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectModule, onOpenTool, onBrowseModules }) => {
+const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectModule, onOpenTool }) => {
   const visit = useMemo(() => getLastVisit(uid), [uid]);
   const fallbackCourse = allCourses.find(course => {
     const progress = userProgress[course.id];
@@ -34,8 +32,7 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
   let sub = '';
   let go: (() => void) | null = null;
   let isResume = false;
-  let sections = 0;
-  let completed = 0;
+  let frac: number | null = null;
 
   // Older than three weeks reads as nagging, so a stale visit becomes a calm
   // first-step suggestion instead of making this useful home slot disappear.
@@ -46,11 +43,10 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
       const done = course && progress ? Math.min(progress.unlockedSection, course.sectionsCount) : 0;
       if (course && done < course.sectionsCount) {
         title = course.title;
-        sections = course.sectionsCount;
-        completed = done;
         sub = done > 0 ? `Section ${done + 1} of ${course.sectionsCount}` : `${course.sectionsCount} short sections`;
         go = () => onSelectModule(course.id);
         isResume = done > 0;
+        frac = done > 0 ? done / course.sectionsCount : null;
       }
     } else if (onOpenTool) {
       title = visit.label;
@@ -62,23 +58,32 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
 
   if (!go && fallbackCourse) {
     title = fallbackCourse.title;
-    sections = fallbackCourse.sectionsCount;
-    completed = Math.min(userProgress[fallbackCourse.id]?.unlockedSection ?? 0, sections);
-    isResume = completed > 0;
-    sub = completed ? `Section ${completed + 1} of ${sections}` : `${sections} short sections`;
+    sub = `${fallbackCourse.sectionsCount} short sections`;
     go = () => onSelectModule(fallbackCourse.id);
   }
-  if (!go) return onBrowseModules ? <section className="home-resume" data-coach="modules"><p className="home-eyebrow">The programme</p><h2>{allCourses.length ? 'Every module, complete.' : 'Your learning starts here.'}</h2><button type="button" onClick={onBrowseModules} className="home-browse">Browse all modules<ArrowRight size={15} aria-hidden="true" /></button></section> : null;
+  if (!go) return null;
 
   return (
-    <section className="home-resume" aria-label={isResume ? 'Continue learning' : 'Start learning'} data-coach="modules">
-      <p className="home-eyebrow">{isResume ? 'Continue learning' : 'Your first step'}</p>
-      <div className="home-resume-copy"><h2>{title}</h2><img className="home-resume-art" src="/icons/north-star/learning.png" alt="" /></div>
-      <div className="home-resume-meta"><span>{sub}</span>{sections > 0 && <span>{completed} complete</span>}</div>
-      {sections > 0 && <div className="home-resume-track" role="progressbar" aria-label="Sections completed" aria-valuemin={0} aria-valuemax={sections} aria-valuenow={completed}><span style={{ width: `${completed / sections * 100}%` }} /></div>}
-      <button type="button" onClick={go} className="home-resume-go"><span>{isResume ? 'Continue' : 'Start'}{sections ? ' module' : ''}</span><ArrowUpRight size={22} aria-hidden="true" /></button>
-      {onBrowseModules && <button type="button" onClick={onBrowseModules} className="home-browse"><span>Browse all modules</span><ArrowRight size={15} aria-hidden="true" /></button>}
-    </section>
+    <button
+      onClick={go}
+      className="group mb-4 flex w-full items-center justify-between gap-5 rounded-2xl border-[1.5px] border-[#383838] bg-white px-5 py-4 text-left transition-transform hover:-translate-y-0.5 dark:border-zinc-700 dark:bg-zinc-900"
+    >
+      <div className="min-w-0 flex-1">
+        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A8A29E] dark:text-zinc-500">
+          {isResume ? 'Jump back in' : 'Start here'}
+        </p>
+        <p className="mt-1 truncate font-serif text-[16px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{title}</p>
+        {sub && <p className="mt-0.5 text-xs text-[#78716C] dark:text-zinc-400">{sub}</p>}
+        {frac !== null && (
+          <div className="mt-2.5 h-[3px] max-w-[320px] overflow-hidden rounded-full bg-[#ECE8E3] dark:bg-zinc-700">
+            <div className="h-full rounded-full" style={{ width: `${Math.round(frac * 100)}%`, backgroundColor: 'rgba(242,107,31,0.62)' }} />
+          </div>
+        )}
+      </div>
+      <span className="flex shrink-0 items-center gap-1 text-[13px] font-bold text-[#F26B1F] transition-transform group-hover:translate-x-0.5">
+        {isResume ? 'Continue' : 'Start'} <ArrowRight size={13} strokeWidth={2.4} />
+      </span>
+    </button>
   );
 };
 
