@@ -13,13 +13,14 @@
  *  - Human labels only; file sizes shown for students on metered data.
  *  - ≤3 taps cold (subject → year → paper), 1–2 warm (recents rail).
  *
- * Visual register: Innovation-Zone tool vocabulary — shared SubjectTilePicker
- * tiles, white cards, ink borders, archive-blue identity (#33658A).
+ * Visual register: white archive surfaces, full charcoal outlines, existing
+ * orange controls and the shared Source Serif / DM Sans type system.
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Clock3, Layers, ListChecks, Search, Star } from 'lucide-react';
-import SubjectTilePicker from '../shared/SubjectTilePicker';
+import { ArrowLeft, ArrowRight, Bookmark, Search } from 'lucide-react';
+import PaperSelection, { LEVEL_LABEL, paperLabel } from './PaperSelection';
+import './archive.css';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
 import ImageViewer from './ImageViewer';
@@ -43,7 +44,7 @@ import { allMarks } from './attemptStore';
 import { composeCoach } from './coach';
 import { composeDebrief, debriefSeen, markDebriefSeen } from './debrief';
 import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
-import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
+import { paperAnswersPath, paperStoragePath, paperUrl } from './storage';
 import { hostedAnchorsUrl, preferredAnswersUrl } from './vaultResolve';
 import { isPinned, listPins, listRecentOpens, recordRecentOpen, togglePin, type PaperRef } from './recentsStore';
 import { recordVisit } from '../lastVisited';
@@ -72,16 +73,6 @@ import {
   type PaperTrailSubject,
 } from '../../types/paperTrail';
 
-const BLUE = '#33658A';
-const BLUE_TINT = '#E8EFF5';
-
-const LEVEL_LABEL: Record<PaperLevel, string> = {
-  higher: 'Higher',
-  ordinary: 'Ordinary',
-  foundation: 'Foundation',
-  common: 'Common',
-};
-
 /** Student-vernacular names the generator's SEC/profile aliases don't cover. */
 const SEARCH_ALIASES: Record<string, string[]> = {
   mathematics: ['maths', 'math'],
@@ -97,9 +88,6 @@ const SEARCH_ALIASES: Record<string, string[]> = {
   'jc-mathematics': ['maths', 'math'],
   'jc-business-studies': ['business'],
 };
-
-/** Strip the trailing language marker; level/language are shown by filters. */
-const paperLabel = (label: string) => label.replace(/\s*\([A-Z]{2}\)\s*$/, '').trim();
 
 const subjectById = new Map(PAPER_TRAIL_SUBJECTS.map(s => [s.id, s]));
 
@@ -154,6 +142,8 @@ type VaultOrigin = { subjectId: string; subtopicId: string };
 
 type View =
   | { v: 'home' }
+  | { v: 'saved' }
+  | { v: 'practice' }
   | { v: 'revise'; restore?: VaultOrigin }
   | { v: 'review' }
   | { v: 'progress' }
@@ -181,6 +171,7 @@ type View =
     };
 
 interface PaperTrailProps {
+  onBack?: () => void;
   uid?: string;
   studentSubjects?: string[];
   /** Subject name → chosen level, from the subject profile. */
@@ -207,9 +198,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   isLca = false,
   onboardingExamDate,
   onOpenTool,
+  onBack,
   initialView,
 }) => {
-  const { state, isLoaded, recordRecent, updatePage, setFilters } = usePaperFinder(uid);
+  const { state, isLoaded, recordRecent, updatePage, setFilters, finishReading } = usePaperFinder(uid);
   const junior = studentCycle === 'junior-cycle';
 
   const [view, setView] = useState<View>(initialView === 'revise' ? { v: 'revise' } : { v: 'home' });
@@ -218,7 +210,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const [year, setYear] = useState<number | null>(null);
   const [scope, setScope] = useState<'mine' | 'all'>('mine');
   const [query, setQuery] = useState('');
-  const [gapNote, setGapNote] = useState<string | null>(null);
   // Learning-milestone celebration — detected once at mount, shown one at a time.
   const [milestone, setMilestone] = useState<Milestone | null>(() => pendingMilestones(uid, Date.now())[0] ?? null);
   const dismissMilestone = useCallback(() => {
@@ -267,28 +258,11 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)),
     );
     const mineIds = [
-      ...main.filter(s => matchesStudent(s, mineNames)).map(s => s.id),
+      ...main.filter(s => !isLca && matchesStudent(s, mineNames)).map(s => s.id),
       ...lca.filter(s => matchesStudent(s, mineNames)).map(s => s.id),
     ];
     return { main, lca, mineIds };
   }, [junior, isLca, studentSubjects, matchesStudent]);
-
-  /**
-   * Distinct-paper count. Count one language only — IV duplicates would ~double
-   * it — preferring the English version. Irish-medium subjects (Irish) have NO
-   * 'ev' entries at all, so fall back to whatever language they do carry ('iv')
-   * rather than reporting 0 papers.
-   */
-  const paperCount = useCallback((id: string) => {
-    const entries = PAPER_TRAIL_INDEX[id] ?? [];
-    const countLang = entries.some(e => e.lang === 'ev')
-      ? 'ev'
-      : (entries[0]?.lang ?? 'ev');
-    const n = entries
-      .filter(e => e.lang === countLang)
-      .reduce((acc, e) => acc + e.papers.filter(p => !p.modified).length, 0);
-    return `${n} ${n === 1 ? 'paper' : 'papers'}`;
-  }, []);
 
   /** The student's chosen level for a subject, where the profile knows it. */
   const profileLevelFor = useCallback(
@@ -322,7 +296,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const name = words.join(' ');
     const pool = junior
       ? PAPER_TRAIL_SUBJECTS.filter(s => s.cycle === 'jc')
-      : PAPER_TRAIL_SUBJECTS.filter(s => s.cycle !== 'jc');
+      : PAPER_TRAIL_SUBJECTS.filter(s => s.cycle === 'lc' || (isLca && s.cycle === 'lca'));
     return pool
       .filter(s => {
         if (name.length === 0) return true;
@@ -333,7 +307,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       })
       .slice(0, 6)
       .map(s => ({ subject: s, year: yr, level: lv }));
-  }, [query, junior]);
+  }, [query, junior, isLca]);
 
   // Close the search dropdown on outside tap / Escape.
   useEffect(() => {
@@ -472,7 +446,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       );
       const item = entry?.papers.find(p => p.doc.f === r.fileid);
       if (!subj || !entry || !item) return;
-      openItem(subj, entry, item, r.kind);
+      openItem(subj, entry, item, r.kind === 'scheme' && item.scheme ? 'scheme' : 'paper');
     },
     [openItem],
   );
@@ -495,7 +469,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           title={`${paperTrailSubjectLabel(subj)} · ${view.year}`}
           subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}`}
           url={url('paper', view.item.doc.f)}
-          onClose={() => setView(view.returnTo ?? { v: 'subject', subjectId: view.subjectId })}
+          onClose={() => {
+            setLevel(view.level);
+            setLang(view.lang);
+            setYear(view.year);
+            setView(view.returnTo ?? { v: 'subject', subjectId: view.subjectId });
+          }}
         />
       );
     }
@@ -556,9 +535,13 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         initialSide={view.side}
         initialPaperPage={view.paperPage ?? 1}
         initialSchemePage={view.schemePage ?? 1}
-        onClose={() =>
-          setView(view.returnTo ?? { v: 'subject', subjectId: view.subjectId })
-        }
+        onClose={() => {
+          finishReading();
+          setLevel(view.level);
+          setLang(view.lang);
+          setYear(view.year);
+          setView(view.returnTo ?? { v: 'subject', subjectId: view.subjectId });
+        }}
         onPosition={(side, page) => updatePage(key, page, side)}
       />
     );
@@ -677,7 +660,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           : (langsAtLevel[0] ?? 'ev');
 
     const slice = levelEntries.filter(e => e.lang === activeLang);
-    const availableYears = [...new Set(slice.map(e => e.year))];
+    const availableYears = [...new Set(slice.map(e => e.year))].sort((a, b) => b - a);
     const gapsForSubject = PAPER_TRAIL_GAPS.filter(g => g.subjectId === subj.id);
     // One chronological grid: real years + explained gaps, newest first.
     const yearCells: { year: number; gap?: string }[] = [
@@ -691,318 +674,65 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const entry = slice.find(e => e.year === activeYear);
     const requestedMissing = year != null && !availableYears.includes(year) && availableYears.length > 0;
 
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        <button
-          onClick={() => {
-            setView({ v: 'home' });
-            setYear(null);
-            setGapNote(null);
-          }}
-          className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4"
-        >
-          <ArrowLeft size={15} /> All subjects
-        </button>
-
-        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-          {paperTrailSubjectLabel(subj)}
-          {subj.cycle === 'lca' && (
-            <span className="ml-2 text-[12px] font-sans font-bold uppercase tracking-wide align-middle" style={{ color: '#9e9186' }}>
-              LCA
-            </span>
-          )}
-        </h2>
-        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
-          Real SEC papers with their marking schemes — pick a year.
-        </p>
-
-        {/* Level + language controls */}
-        <div className="flex flex-wrap items-center gap-2.5 mb-4">
-          {subj.levels.length > 1 && (
-            <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Level">
-              {subj.levels.map(lv => (
-                <button
-                  key={lv}
-                  aria-pressed={activeLevel === lv}
-                  onClick={() => {
-                    setLevel(lv);
-                    setFilters({ lastLevel: lv });
-                    setYear(null);
-                    setGapNote(null);
-                  }}
-                  className={`px-3.5 py-1.5 rounded-lg text-[13px] transition-all ${activeLevel === lv ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
-                >
-                  {LEVEL_LABEL[lv]}
-                </button>
-              ))}
-            </div>
-          )}
-          {langsAtLevel.length > 1 && (
-            <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Language">
-              {(['ev', 'iv'] as const)
-                .filter(lg => langsAtLevel.includes(lg))
-                .map(lg => (
-                  <button
-                    key={lg}
-                    aria-pressed={activeLang === lg}
-                    onClick={() => {
-                      setLang(lg);
-                      setFilters({ lastLang: lg });
-                      setYear(null);
-                      setGapNote(null);
-                    }}
-                    className={`px-3.5 py-1.5 rounded-lg text-[13px] transition-all ${activeLang === lg ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
-                  >
-                    {lg === 'ev' ? 'English' : 'Gaeilge'}
-                  </button>
-                ))}
-            </div>
-          )}
-        </div>
-
-        {availableYears.length === 0 ? (
-          <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: BLUE_TINT, color: '#27506E' }}>
-            Nothing is published at {LEVEL_LABEL[activeLevel]} level for this subject
-            {subj.levels.length > 1 ? ' — try another level above.' : ' yet.'}
-          </p>
-        ) : (
-          <>
-            {/* Year grid */}
-            <h3 className="text-[11px] font-bold uppercase tracking-[0.14em] mb-2.5" style={{ color: '#9e9186' }}>
-              Choose a year
-            </h3>
-            <div className="flex flex-wrap gap-2 mb-2">
-              {yearCells.map(c =>
-                c.gap ? (
-                  <button
-                    key={`gap-${c.year}`}
-                    onClick={() => setGapNote(`${c.year}: ${c.gap}`)}
-                    aria-label={`${c.year} unavailable — ${c.gap}`}
-                    className="px-3.5 py-2 rounded-xl border-2 border-dashed border-zinc-200 dark:border-zinc-800 text-[14px] font-bold text-zinc-300 dark:text-zinc-600"
-                  >
-                    {c.year}
-                  </button>
-                ) : (
-                  <button
-                    key={c.year}
-                    onClick={() => {
-                      setYear(c.year);
-                      setGapNote(null);
-                    }}
-                    aria-pressed={activeYear === c.year}
-                    className={`px-3.5 py-2 rounded-xl border-2 text-[14px] font-bold transition-all ${
-                      activeYear === c.year
-                        ? 'text-white'
-                        : 'border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-200 hover:border-zinc-400'
-                    }`}
-                    style={activeYear === c.year ? { backgroundColor: BLUE, borderColor: '#1A1A1A' } : undefined}
-                  >
-                    {c.year}
-                  </button>
-                ),
-              )}
-            </div>
-            {gapNote && (
-              <p className="text-[12px] mb-3 rounded-xl px-3.5 py-2.5" style={{ backgroundColor: BLUE_TINT, color: '#27506E' }}>
-                {gapNote}
-              </p>
-            )}
-            {requestedMissing && (
-              <p className="text-[12px] mb-3" style={{ color: '#9e9186' }}>
-                {year} isn’t available here — showing {activeYear} instead.
-              </p>
-            )}
-
-            {/* Papers for the active year */}
-            {entry && (
-              <div className="space-y-3 mt-3">
-                {entry.note && (
-                  <p className="text-[12px] rounded-xl px-3.5 py-2.5" style={{ backgroundColor: BLUE_TINT, color: '#27506E' }}>
-                    {entry.note}
-                  </p>
-                )}
-                {(() => {
-                  const mains = entry.papers.filter(p => !p.modified);
-                  const list = mains.length > 0 ? mains : entry.papers;
-                  return list.map(item => (
-                    <div
-                      key={item.doc.f}
-                      className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-4"
-                    >
-                      <div className="flex items-center justify-between gap-3 mb-3">
-                        <p className="text-[16px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-                          {paperLabel(item.label)}
-                          {item.modified && (
-                            <span className="ml-2 text-[11px] font-sans font-medium" style={{ color: '#7a7068' }}>
-                              accessible format
-                            </span>
-                          )}
-                          {/* Verified per-question answer map shipped for this paper —
-                              tells students BEFORE opening that the Answers reveal is
-                              available here (discoverability; coverage is per-paper). */}
-                          {item.answers === 1 && item.scheme && (
-                            <span
-                              className="ml-2 inline-flex items-center gap-1 align-middle px-2 py-0.5 rounded-full text-[10.5px] font-sans font-bold"
-                              style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}
-                            >
-                              <ListChecks size={11} aria-hidden /> Answers
-                            </span>
-                          )}
-                        </p>
-                        <span className="flex items-center gap-1 shrink-0">
-                          <span className="text-[11px]" style={{ color: '#9e9186' }}>
-                            {activeYear} · {LEVEL_LABEL[activeLevel]}
-                          </span>
-                          {(() => {
-                            const pinRef: Omit<PaperRef, 'at'> = {
-                              key: recentKey(subj.id, entry.year, entry.level, entry.lang, item.doc.f),
-                              subjectId: subj.id,
-                              year: entry.year,
-                              level: entry.level,
-                              lang: entry.lang,
-                              fileid: item.doc.f,
-                              label: paperLabel(item.label),
-                              kind: 'paper',
-                            };
-                            const pinned = isPinned(uid, pinRef.key);
-                            return (
-                              <button
-                                onClick={() => handleTogglePin(pinRef)}
-                                aria-pressed={pinned}
-                                aria-label={pinned ? `Unpin ${paperLabel(item.label)}` : `Pin ${paperLabel(item.label)} to your favourites`}
-                                className="p-1 -mr-1 rounded-lg transition-transform active:translate-y-0.5"
-                              >
-                                <Star size={15} fill={pinned ? '#F26B1F' : 'none'} color={pinned ? '#F26B1F' : '#d0cdc8'} aria-hidden />
-                              </button>
-                            );
-                          })()}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2.5">
-                        <button
-                          onClick={() => openItem(subj, entry, item, 'paper')}
-                          className="flex-1 py-2.5 rounded-full text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
-                          style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
-                        >
-                          {/\.jpg$/i.test(item.doc.f) ? 'Image' : 'Paper'}
-                          {item.doc.b > 0 && <span className="opacity-75 font-medium"> · {prettyBytes(item.doc.b)}</span>}
-                        </button>
-                        {item.scheme ? (
-                          <button
-                            onClick={() => openItem(subj, entry, item, 'scheme')}
-                            className="flex-1 py-2.5 rounded-full text-[13.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
-                            style={{ borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
-                          >
-                            Marking scheme{item.scheme.b > 0 && <span className="opacity-70 font-medium"> · {prettyBytes(item.scheme.b)}</span>}
-                          </button>
-                        ) : /\.jpg$/i.test(item.doc.f) ? null : (
-                          <span className="flex-1 py-2.5 text-center text-[12px] rounded-full border-2 border-dashed border-zinc-200 dark:border-zinc-700" style={{ color: '#9e9186' }}>
-                            Scheme not published
-                          </span>
-                        )}
-                      </div>
-                      {mains.length > 0 &&
-                        !item.modified &&
-                        entry.papers.some(p => p.modified && paperLabel(p.label).startsWith(paperLabel(item.label))) && (
-                          <button
-                            onClick={() => {
-                              const mod = entry.papers.find(
-                                p => p.modified && paperLabel(p.label).startsWith(paperLabel(item.label)),
-                              )!;
-                              openItem(subj, entry, mod, 'paper');
-                            }}
-                            className="mt-2.5 text-[11.5px] underline underline-offset-2"
-                            style={{ color: '#7a7068' }}
-                          >
-                            Accessible format (vision-impaired candidates)
-                          </button>
-                        )}
-                    </div>
-                  ));
-                })()}
-                {entry.papers.length === 0 && (
-                  <p className="text-[13px]" style={{ color: '#9e9186' }}>
-                    Nothing published for this year and level.
-                  </p>
-                )}
-              </div>
-            )}
-          </>
-        )}
-      </div>
-    );
+    return <PaperSelection
+      key={subj.id}
+      uid={uid} subject={subj} label={paperTrailSubjectLabel(subj)}
+      level={activeLevel} lang={activeLang} langs={langsAtLevel}
+      year={activeYear} years={yearCells} entry={entry}
+      notice={requestedMissing ? `${year} isn’t available here — showing ${activeYear} instead.` : undefined}
+      onLevel={lv => { setLevel(lv); setFilters({ lastLevel: lv }); setYear(null); }}
+      onLang={lg => { setLang(lg); setFilters({ lastLang: lg }); setYear(null); }}
+      onYear={setYear}
+      onOpen={(selectedEntry, item, side) => openItem(subj, selectedEntry, item, side)}
+      onSave={handleTogglePin}
+      onBack={() => { setView({ v: 'home' }); setYear(null); }}
+      onTopics={() => setView({ v: 'revise' })}
+    />;
   }
 
-  // ═══════════════════════ HOME ═══════════════════════
-  const recents = state.recents.filter(r => {
+  // Saved records always resolve against the live index before being offered.
+  const isAvailable = (r: PaperRef) => {
     const s = subjectById.get(r.subjectId);
-    return s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc');
-  });
-  const inCycle = (subjectId: string) => {
-    const s = subjectById.get(subjectId);
-    return !!s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc');
+    return s && paperTrailSubjectVisibleForProfile(s, junior, isLca)
+      && (PAPER_TRAIL_INDEX[r.subjectId] ?? []).some(e => e.year === r.year
+        && e.level === r.level && e.lang === r.lang && e.papers.some(p => p.doc.f === r.fileid));
   };
-  // Pinned + recent rails from the per-account local store (recentsStore).
-  const pins = listPins(uid).filter(p => inCycle(p.subjectId));
-  const pinKeys = new Set(pins.map(p => p.key));
-  const localRecents = listRecentOpens(uid).filter(r => inCycle(r.subjectId) && !pinKeys.has(r.key));
-  // The local store is the rail's source of truth; accounts that predate it
-  // fall back to the synced recents until the local store fills.
-  const railRecents: PaperRef[] =
-    localRecents.length > 0
-      ? localRecents
-      : recents
-          .filter(r => !pinKeys.has(r.key))
-          .slice(0, 6)
-          .map(r => ({
-            key: r.key,
-            subjectId: r.subjectId,
-            year: r.year,
-            level: r.level,
-            lang: r.lang,
-            fileid: r.doc.f,
-            label: paperLabel(r.label),
-            kind: r.kind,
-            at: 0,
-          }));
-  /** One card in the pinned/recent rails — body re-opens the exact paper, the
-   *  star pins/unpins it. */
-  const railCard = (r: PaperRef, pinned: boolean) => {
-    const s = subjectById.get(r.subjectId)!;
-    const saved = state.recents.find(x => x.key === r.key);
-    const page = r.kind === 'scheme' ? saved?.schemePage : saved?.paperPage;
-    return (
-      <div
-        key={r.key}
-        className="relative shrink-0 min-w-[150px] rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] transition-transform hover:-translate-y-0.5"
-      >
-        <button onClick={() => openStoredRef(r)} className="block w-full text-left px-3.5 py-3 pr-8">
-          <p className="text-[13px] font-bold leading-tight" style={{ color: '#1a1a1a' }}>
-            {paperTrailSubjectLabel(s)} {r.year}
-          </p>
-          <p className="text-[11px] mt-0.5 flex items-center gap-1" style={{ color: '#7a7068' }}>
-            <Clock3 size={11} aria-hidden />
-            {r.label}
-            {r.kind === 'scheme' ? ' · scheme' : ''}
-            {page && page > 1 ? ` · p.${page}` : ''}
-          </p>
-          <p className="text-[10px] mt-0.5" style={{ color: '#9e9186' }}>{LEVEL_LABEL[r.level]}</p>
+  const syncedRecents: PaperRef[] = state.recents.map(r => ({
+    key: r.key, subjectId: r.subjectId, year: r.year, level: r.level, lang: r.lang,
+    fileid: r.doc.f, label: paperLabel(r.label), kind: r.kind, at: r.at,
+  }));
+  const mergedRecents = new Map<string, PaperRef>();
+  for (const r of [...listRecentOpens(uid), ...syncedRecents]) {
+    if (!mergedRecents.has(r.key) || mergedRecents.get(r.key)!.at <= r.at) mergedRecents.set(r.key, r);
+  }
+  const recents = [...mergedRecents.values()].filter(isAvailable).sort((a, b) => b.at - a.at).slice(0, 8);
+  const pins = listPins(uid).filter(isAvailable);
+  const lastOpened = recents[0];
+  const homeBack = <button className="pt-text-button" onClick={() => setView({ v: 'home' })}><ArrowLeft size={20} aria-hidden /> Paper Trail</button>;
+
+  if (view.v === 'saved') {
+    const row = (r: PaperRef) => {
+      const saved = isPinned(uid, r.key);
+      const position = state.recents.find(p => p.key === r.key);
+      const page = r.kind === 'scheme' ? position?.schemePage : position?.paperPage;
+      return <article key={r.key} className="pt-saved-row">
+        <button onClick={() => openStoredRef(r)}>
+          <span className="pt-saved-title">{subjectLabelForId(r.subjectId)} · {r.label}</span>
+          <span>{r.year} · {LEVEL_LABEL[r.level]} level · {r.lang === 'ev' ? 'English' : 'Gaeilge'}{r.kind === 'scheme' ? ' · Marking scheme' : ''}{page && page > 1 ? ` · Page ${page}` : ''}</span>
         </button>
-        <button
-          onClick={() => handleTogglePin(r)}
-          aria-pressed={pinned}
-          aria-label={pinned ? `Unpin ${paperTrailSubjectLabel(s)} ${r.year}` : `Pin ${paperTrailSubjectLabel(s)} ${r.year} to your favourites`}
-          className="absolute top-2 right-2 p-1 rounded-lg transition-transform active:translate-y-0.5"
-        >
-          <Star size={13} fill={pinned ? '#F26B1F' : 'none'} color={pinned ? '#F26B1F' : '#d0cdc8'} aria-hidden />
-        </button>
-      </div>
-    );
-  };
-  const showLcaSection =
-    !junior &&
-    groups.lca.length > 0 &&
-    (scope === 'all' || groups.mineIds.length === 0 || groups.lca.some(s => groups.mineIds.includes(s.id)));
+        <button className="pt-save" onClick={() => handleTogglePin(r)} aria-pressed={saved} aria-label={`${saved ? 'Remove saved' : 'Save'} ${subjectLabelForId(r.subjectId)} ${r.year} ${r.label}`}><Bookmark size={20} fill={saved ? 'currentColor' : 'none'} aria-hidden /></button>
+      </article>;
+    };
+    return <section className="pt-archive pt-saved">
+      <nav className="pt-toolbar" aria-label="Paper Trail">{homeBack}</nav>
+      <h1 className="pt-title">Saved papers</h1>
+      <p className="pt-page-intro">Your papers, ready when you are.</p>
+      {pins.length ? pins.map(row) : <p className="pt-notice">Tap the bookmark beside a paper to save it here.</p>}
+      <h2 className="pt-section-heading">Recently opened</h2>
+      {recents.length ? recents.map(row) : <p className="pt-notice">Papers you open will appear here so you can pick up where you left off.</p>}
+    </section>;
+  }
+
   const review = deckStats(uid, Date.now());
   // The Coach — tonight's session, composed across every tool's signals.
   const coachPlan = composeCoach(uid, Date.now());
@@ -1016,57 +746,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     { label: 'Save a question to spaced review — we resurface it on schedule.', done: review.total > 0 },
   ];
 
-  return (
-    <div className="w-full max-w-xl mx-auto pb-12">
-      {milestone && (
-        <MilestoneCelebration milestone={milestone} dateIso={new Date(Date.now()).toISOString().slice(0, 10)} onClose={dismissMilestone} />
-      )}
-      <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
-        Pick a subject — every paper opens with its marking scheme one tap away,
-        {junior ? ' for every Junior Cycle exam you can sit.' : ' for every exam year back to 2010.'}
-      </p>
-
-      {/* Search accelerator */}
-      <div className="relative mb-5" ref={searchBoxRef}>
-        <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400" aria-hidden />
-        <input
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          placeholder={junior ? 'Try “science 2023”' : 'Try “english 2022 hl”'}
-          aria-label="Search for a paper"
-          className="w-full pl-10 pr-4 py-3 rounded-2xl border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-[14px] outline-none focus:border-[#1A1A1A] dark:focus:border-zinc-400 transition-colors"
-        />
-        {suggestions && (
-          <div className="absolute z-20 left-0 right-0 mt-1.5 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] overflow-hidden">
-            {suggestions.length === 0 ? (
-              <p className="px-4 py-3 text-[13px] text-zinc-500">No matches — try the subject’s full name.</p>
-            ) : (
-              suggestions.map(sug => (
-                <button
-                  key={sug.subject.id}
-                  onClick={() => {
-                    setQuery('');
-                    if (sug.level) setLevel(sug.level);
-                    setYear(sug.year ?? null);
-                    setGapNote(null);
-                    setView({ v: 'subject', subjectId: sug.subject.id });
-                  }}
-                  className="w-full text-left px-4 py-3 text-[14px] font-medium text-zinc-800 dark:text-zinc-100 hover:bg-zinc-50 dark:hover:bg-zinc-800 border-b border-zinc-100 dark:border-zinc-800 last:border-0"
-                >
-                  {paperTrailSubjectLabel(sug.subject)}
-                  {sug.subject.cycle === 'lca' && <span className="ml-1.5 text-[11px] text-zinc-400">LCA</span>}
-                  {(sug.year || sug.level) && (
-                    <span className="ml-1.5 text-[12px] text-zinc-400">
-                      {[sug.year, sug.level && LEVEL_LABEL[sug.level]].filter(Boolean).join(' · ')}
-                    </span>
-                  )}
-                </button>
-              ))
-            )}
-          </div>
-        )}
-      </div>
-
+  if (view.v === 'practice') return <section className="pt-archive pt-practice">
+      <nav className="pt-toolbar" aria-label="Paper Trail">{homeBack}</nav>
+      <h1 className="pt-title">Practice tools</h1>
+      <p className="pt-page-intro">Build on every paper you practise.</p>
+      <button className="pt-topic-link" onClick={() => setView({ v: 'progress' })}>Your progress <ArrowRight size={18} aria-hidden /></button>
+      <button className="pt-topic-link" onClick={() => setView({ v: 'revise' })}>Topic Atlas <ArrowRight size={18} aria-hidden /></button>
       {/* Exam countdown + daily focus (A3). */}
       <CountdownCard uid={uid} now={Date.now()} onboardingExamDate={onboardingExamDate} onOpen={() => setView({ v: 'progress' })} />
 
@@ -1088,7 +773,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
               </h3>
             </div>
             <button
-              onClick={() => { markDebriefSeen(uid, Date.now()); setView({ v: 'home' }); }}
+              onClick={() => { markDebriefSeen(uid, Date.now()); setView({ v: 'practice' }); }}
               aria-label="Dismiss debrief"
               className="p-1.5 rounded-lg text-[12px] font-semibold"
               style={{ color: '#9e9186' }}
@@ -1145,45 +830,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         </section>
       )}
 
-      {/* Study launcher — Topic Vault (A1). Review / Mock set / Cards are
-          parked for now (2026-07-22); their views + stores remain intact. */}
-      <button
-        onClick={() => setView({ v: 'revise' })}
-        className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] px-4 py-3 mb-6 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
-      >
-        <span className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
-          <Layers size={18} style={{ color: '#F26B1F' }} />
-        </span>
-        <span className="flex-1 min-w-0">
-          <span className="block text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Topic Atlas</span>
-          <span className="block text-[12px]" style={{ color: '#7a7068' }}>Every question ever asked, mapped by topic</span>
-        </span>
-      </button>
-
-      {/* Pinned papers — favourites a grinding student keeps one tap away. */}
-      {pins.length > 0 && (
-        <>
-          <h3 className="text-[11px] font-bold uppercase tracking-[0.14em] mb-2.5" style={{ color: '#9e9186' }}>
-            Pinned
-          </h3>
-          <div className="flex gap-2.5 overflow-x-auto pb-2 mb-5 -mx-1 px-1">
-            {pins.map(p => railCard(p, true))}
-          </div>
-        </>
-      )}
-
-      {/* Recents rail — the last papers this account actually opened. */}
-      {railRecents.length > 0 && (
-        <>
-          <h3 className="text-[11px] font-bold uppercase tracking-[0.14em] mb-2.5" style={{ color: '#9e9186' }}>
-            Pick up where you left off
-          </h3>
-          <div className="flex gap-2.5 overflow-x-auto pb-2 mb-5 -mx-1 px-1">
-            {railRecents.map(r => railCard(r, false))}
-          </div>
-        </>
-      )}
-
       {/* Your practice — self-mark weakness map (Tier 3). Renders only if the
           student has self-marked at least one question. */}
       <WeaknessMap
@@ -1193,61 +839,63 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         onOpenDashboard={() => setView({ v: 'progress' })}
       />
 
-      {/* Subject picker */}
-      {groups.main.length === 0 ? (
-        <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: BLUE_TINT, color: '#27506E' }}>
-          {junior
-            ? 'Junior Cycle papers are being added — check back very soon.'
-            : 'Papers are being added — check back very soon.'}
-        </p>
-      ) : (
-        <SubjectTilePicker
-          headingLabel="Pick a subject"
-          subjects={groups.main.map(s => ({
-            id: s.id,
-            label: paperTrailSubjectLabel(s),
-            sublabel: paperCount(s.id),
-          }))}
-          mineIds={groups.mineIds.filter(id => groups.main.some(s => s.id === id))}
-          scope={scope}
-          onScopeChange={setScope}
-          onPick={id => {
-            setYear(null);
-            setGapNote(null);
-            setView({ v: 'subject', subjectId: id });
-          }}
-        />
-      )}
+  </section>;
 
-      {/* LCA group — always reachable, never gated behind a toggle LCA students can't see */}
-      {showLcaSection && (
-        <div className="mt-7">
-          <h3 className="text-[11px] font-bold uppercase tracking-[0.14em] mb-3" style={{ color: '#9e9186' }}>
-            Leaving Cert Applied
-          </h3>
-          <SubjectTilePicker
-            subjects={groups.lca.map(s => ({
-              id: s.id,
-              label: paperTrailSubjectLabel(s),
-              sublabel: paperCount(s.id),
-            }))}
-            scope="all"
-            onScopeChange={() => {}}
-            onPick={id => {
-              setYear(null);
-              setGapNote(null);
-              setView({ v: 'subject', subjectId: id });
-            }}
-          />
-        </div>
-      )}
+  const subjects = [...groups.main, ...groups.lca];
+  const visibleSubjects = scope === 'mine' ? subjects.filter(s => groups.mineIds.includes(s.id)) : subjects;
+  const pickSubject = (id: string, selectedYear?: number, selectedLevel?: PaperLevel) => {
+    setQuery('');
+    setYear(selectedYear ?? null);
+    setLevel(selectedLevel ?? null);
+    setLang(null);
+    setView({ v: 'subject', subjectId: id });
+  };
 
-      <p className="text-[11px] leading-relaxed mt-7" style={{ color: '#9e9186' }}>
-        Examination material © State Examinations Commission, reproduced with attribution. Papers
-        open inside the app — nothing to download unless you want to.
-      </p>
+  return <section className="pt-archive pt-home" aria-label="Paper Trail archive">
+    {milestone && <MilestoneCelebration milestone={milestone} dateIso={new Date().toISOString().slice(0, 10)} onClose={dismissMilestone} />}
+    <nav className="pt-toolbar" aria-label="Paper Trail">
+      <button className="pt-text-button" onClick={onBack}><ArrowLeft size={20} aria-hidden /> Tools</button>
+      <button className="pt-text-button" onClick={() => setView({ v: 'saved' })}><Bookmark size={18} aria-hidden /> Saved</button>
+    </nav>
+    <header className="pt-hero">
+      <div><p className="pt-eyebrow">Your exam archive</p><h1 className="pt-title">Paper Trail</h1><p className="pt-subtitle">Exam papers &amp; marking schemes</p></div>
+      <img src="/assets/tools/paper-trail.png" alt="" width={96} height={96} />
+    </header>
+    <div className="pt-search-area" ref={searchBoxRef}>
+      <label className="pt-search"><Search size={20} aria-hidden /><input type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="Find a subject or paper" aria-label="Find a subject or paper" aria-controls={suggestions ? 'pt-search-results' : undefined} /></label>
+      {suggestions && <div id="pt-search-results" className="pt-search-results" aria-label="Search results">
+        {suggestions.length === 0 ? <p>No matches — try the subject’s full name.</p> : suggestions.map(sug =>
+          <button key={sug.subject.id} onClick={() => pickSubject(sug.subject.id, sug.year, sug.level)}>
+            <span>{paperTrailSubjectLabel(sug.subject)}{sug.subject.cycle === 'lca' ? ' · LCA' : ''}</span>
+            {(sug.year || sug.level) && <span>{[sug.year, sug.level && LEVEL_LABEL[sug.level]].filter(Boolean).join(' · ')}</span>}
+            <ArrowRight size={18} aria-hidden />
+          </button>)}
+      </div>}
     </div>
-  );
+    {lastOpened && <div className="pt-resume">
+      <div><p className="pt-eyebrow">Last opened</p><p className="pt-resume-name">{subjectLabelForId(lastOpened.subjectId)} · {lastOpened.label}</p><p>{lastOpened.year} · {LEVEL_LABEL[lastOpened.level]} level{lastOpened.kind === 'scheme' ? ' · Scheme' : ''}</p></div>
+      <button className="pt-continue" onClick={() => openStoredRef(lastOpened)}>Continue <ArrowRight size={18} aria-hidden /></button>
+    </div>}
+    <div className="pt-scope" role="group" aria-label="Subject selection">
+      <button aria-pressed={scope === 'mine'} onClick={() => setScope('mine')}>My subjects</button>
+      <button aria-pressed={scope === 'all'} onClick={() => setScope('all')}>All subjects</button>
+    </div>
+    {visibleSubjects.length > 0 ? <div className="pt-subject-grid" aria-label={scope === 'mine' ? 'My subjects' : 'All subjects'}>
+      {visibleSubjects.map(subject => <button key={subject.id} className="pt-subject-card" onClick={() => pickSubject(subject.id)}>
+        <span className="pt-subject-name">{paperTrailSubjectLabel(subject)}</span>
+        <span className="pt-subject-detail"><span>{LEVEL_LABEL[profileLevelFor(subject) ?? (state.lastLevel && subject.levels.includes(state.lastLevel) ? state.lastLevel : subject.levels[0])]} level{subject.cycle === 'lca' ? ' · LCA' : ''}</span><ArrowRight size={20} aria-hidden /></span>
+      </button>)}
+    </div> : <div className="pt-empty-subjects">
+      <h2 className="pt-section-heading">Find your first paper</h2>
+      <p>{scope === 'mine' ? 'Your subjects will appear here once you add them to your profile. You can browse the full archive now.' : 'Papers are being added — check back soon.'}</p>
+      {scope === 'mine' && <button className="pt-open-paper" onClick={() => setScope('all')}>Browse all subjects</button>}
+    </div>}
+    <div className="pt-home-links">
+      <button onClick={() => setView({ v: 'revise' })}>Topic Atlas <ArrowRight size={18} aria-hidden /></button>
+      <button onClick={() => setView({ v: 'practice' })}>Practice tools <ArrowRight size={18} aria-hidden /></button>
+    </div>
+    <p className="pt-context">{junior ? 'Junior Cycle' : isLca ? 'Leaving Cert Applied' : 'Leaving Certificate'} · Your subjects, your levels</p>
+  </section>;
 };
 
 export default PaperTrail;

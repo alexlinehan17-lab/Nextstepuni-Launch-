@@ -121,7 +121,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   // of every screen INCLUDING every review card, which is where the exam question
   // should be. The subtitle still does its job on the tool tile, read once.
   'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practice · Spaced repetition', subtitle: 'Real exam questions, marked point by point against the real scheme, brought back to you right before you\u2019d forget them.', showHeader: false },
-  'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: true },
+  'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: false },
   'topic-atlas':     { themeColor: '#B4530A', eyebrow: 'Understand · Topic map',      subtitle: 'Every question the SEC has ever asked, mapped by topic — with the marking scheme one tap away.', showHeader: true },
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
   'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
@@ -663,7 +663,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-800 dark:text-sky-300',
             accentBarColor: 'bg-sky-700', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-800 dark:text-sky-400',
             hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
-            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} />,
+            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} onBack={() => setActiveTool(null)} />,
         },
         {
             id: 'topic-atlas', title: 'Topic Atlas', description: 'Every question ever asked, mapped by topic \u2014 drill any topic across every year.', icon: Compass, needsProfile: false,
@@ -672,7 +672,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-800 dark:text-orange-300',
             accentBarColor: 'bg-orange-700', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-800 dark:text-orange-400',
             hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
-            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} initialView="revise" />,
+            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} onBack={() => setActiveTool(null)} initialView="revise" />,
         },
         {
             id: 'diagram-vault', title: 'Diagram Vault', description: 'Every diagram, graph, map and chart that has come up in the exams — decoded.', icon: Images, needsProfile: false,
@@ -859,7 +859,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
 
   return (
     <div
-      className="product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24"
+      className={`${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24`}
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
@@ -870,7 +870,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     >
 
       <header
-        className="fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]"
+        className={`${activeTool === 'paper-trail' ? 'hidden md:block ' : ''}fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]`}
         style={{
           paddingTop: 'calc(16px + var(--sat, 0px))',
           paddingBottom: '16px',
@@ -905,7 +905,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
           usable width, which is a reading column, not a desk: Mark Bank puts a
           question and its marking scheme side by side and needs 1092px. Tools
           listed here also own their top spacing, so `pt-16` comes off. */}
-      <main className={`relative z-10 w-full flex-grow px-4 sm:px-6 ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
+      <main className={`relative z-10 w-full flex-grow ${activeTool === 'paper-trail' ? '' : 'px-4 sm:px-6'} ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'paper-trail' || activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv
