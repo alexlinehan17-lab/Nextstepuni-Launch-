@@ -3,6 +3,256 @@
   "subjectId": "construction-studies",
   "level": "higher",
   "lang": "ev",
+  "year": 2026,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8",
+    "secondary": "construction-studies-0-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2026,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8",
+    "secondary": "construction-studies-0-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-19"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2026,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-19"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8",
+    "secondary": "construction-studies-0-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
   "year": 2025,
   "fileid": "LC029ALP000EV.pdf",
   "paperKey": "single",

@@ -1,1 +1,623 @@
-{"band":[1,21],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058ALP000EV.pdf","q":[{"conf":1.0,"label":"Question 1 · Part A · Q1 (floor guide)","mode":"crop","n":"1","pP":3,"pY":[0.094,1.0],"region":[{"p":7,"r":[0.0,0.1166,1.0,0.3297]}]},{"conf":1.0,"label":"Question 1 · Part A · Q2 (restaurant type)","mode":"crop","n":"2","pP":3,"pY":[0.389,1.0],"region":[{"p":7,"r":[0.0,0.3297,1.0,0.3839]}]},{"conf":1.0,"label":"Question 1 · Part A · Q3 (instruments / sports items)","mode":"crop","n":"3","pP":3,"pY":[0.4873,1.0],"region":[{"p":7,"r":[0.0,0.3839,1.0,0.5091]}]},{"conf":1.0,"label":"Question 1 · Part A · Q4 (item meanings)","mode":"crop","n":"4","pP":3,"pY":[0.6686,1.0],"region":[{"p":7,"r":[0.0,0.5091,1.0,0.614]}]},{"conf":1.0,"label":"Question 1 · Part A · Q5 (batting centre times)","mode":"crop","n":"5","pP":3,"pY":[0.8249,1.0],"region":[{"p":7,"r":[0.0,0.614,1.0,0.6668]}]},{"conf":1.0,"label":"Question 1 · Part B · Q1 (Karen product)","mode":"crop","n":"6","pP":4,"pY":[0.6234,1.0],"region":[{"p":7,"r":[0.0,0.6988,1.0,0.7519]}]},{"conf":1.0,"label":"Question 1 · Part B · Q2 (Casio dictionary)","mode":"crop","n":"7","pP":4,"pY":[0.7054,1.0],"region":[{"p":7,"r":[0.0,0.7519,1.0,0.7969]}]},{"conf":1.0,"label":"Question 1 · Part B · Q3 (Yumi surprise)","mode":"crop","n":"8","pP":4,"pY":[0.7709,1.0],"region":[{"p":7,"r":[0.0,0.7969,1.0,0.8513]}]},{"conf":1.0,"label":"Question 1 · Part B · Q4 (Satoshi headphones)","mode":"crop","n":"9","pP":4,"pY":[0.8529,1.0],"region":[{"p":7,"r":[0.0,0.8513,1.0,1.0]},{"p":8,"r":[0.0,0.0,1.0,0.0511]}]},{"conf":1.0,"label":"Question 2 · Part A · Q1 (bag table)","mode":"crop","n":"10","pP":7,"pY":[0.0428,1.0],"region":[{"p":8,"r":[0.0,0.0854,1.0,0.3627]}]},{"conf":1.0,"label":"Question 2 · Part A · Q2 (Japanese answers)","mode":"crop","n":"11","pP":7,"pY":[0.2848,1.0],"region":[{"p":8,"r":[0.0,0.3627,1.0,0.5877]}]},{"conf":1.0,"label":"Question 2 · Part A · Q3 (English comprehension)","mode":"crop","n":"12","pP":7,"pY":[0.497,1.0],"region":[{"p":8,"r":[0.0,0.5877,1.0,1.0]},{"p":9,"r":[0.0,0.0,1.0,0.0521]}]},{"conf":1.0,"label":"Question 2 · Part A · Q4 (translation)","mode":"crop","n":"13","pP":7,"pY":[0.82,1.0],"region":[{"p":9,"r":[0.0,0.0521,1.0,0.1947]}]},{"conf":1.0,"label":"Question 2 · Part B · Kanji","mode":"crop","n":"14","pP":8,"pY":[0.0268,1.0],"region":[{"p":9,"r":[0.0,0.1947,1.0,0.3506]}]},{"conf":1.0,"label":"Question 2 · Part C · Grammar","mode":"crop","n":"15","pP":8,"pY":[0.3618,1.0],"region":[{"p":9,"r":[0.0,0.3506,1.0,0.5247]}]},{"conf":1.0,"label":"Question 3 · Part A · Q1 (Haruna family)","mode":"crop","n":"16","pP":11,"pY":[0.0573,1.0],"region":[{"p":9,"r":[0.0,0.5874,1.0,0.7183]}]},{"conf":1.0,"label":"Question 3 · Part A · Q2 (improve English)","mode":"crop","n":"17","pP":11,"pY":[0.2046,1.0],"region":[{"p":9,"r":[0.0,0.7183,1.0,0.8002]}]},{"conf":1.0,"label":"Question 3 · Part A · Q3 (restaurant / disadvantage)","mode":"crop","n":"18","pP":11,"pY":[0.3192,1.0],"region":[{"p":9,"r":[0.0,0.8002,1.0,1.0]},{"p":10,"r":[0.0,0.0,1.0,0.0507]}]},{"conf":1.0,"label":"Question 3 · Part A · Q4 (homesick)","mode":"crop","n":"19","pP":11,"pY":[0.5159,1.0],"region":[{"p":10,"r":[0.0,0.0507,1.0,0.1557]}]},{"conf":1.0,"label":"Question 3 · Part B · Japanese answers","mode":"crop","n":"20","pP":11,"pY":[0.68,1.0],"region":[{"p":10,"r":[0.0,0.1557,1.0,0.3018]}]},{"conf":1.0,"label":"Question 3 · Part C · Kanji","mode":"crop","n":"21","pP":12,"pY":[0.0469,1.0],"region":[{"p":10,"r":[0.0,0.3018,1.0,0.5745]}]},{"conf":1.0,"label":"Question 3 · Part D · Grammar","mode":"crop","n":"22","pP":13,"pY":[0.0442,1.0],"region":[{"p":10,"r":[0.0,0.5745,1.0,1.0]},{"p":11,"r":[0.0,0.0,1.0,0.0665]}]}],"schemeFileid":"LC058ALP000EV.pdf","v":1}
+{
+  "band": [
+    1,
+    21
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058ALP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part A · Q1 (floor guide)",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.094,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.1166,
+            1.0,
+            0.3297
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part A · Q2 (restaurant type)",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.389,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.3297,
+            1.0,
+            0.3839
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part A · Q3 (instruments / sports items)",
+      "mode": "crop",
+      "n": "3",
+      "pP": 3,
+      "pY": [
+        0.4873,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.3839,
+            1.0,
+            0.5091
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part A · Q4 (item meanings)",
+      "mode": "crop",
+      "n": "4",
+      "pP": 3,
+      "pY": [
+        0.6686,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.5091,
+            1.0,
+            0.614
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part A · Q5 (batting centre times)",
+      "mode": "crop",
+      "n": "5",
+      "pP": 3,
+      "pY": [
+        0.8249,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.614,
+            1.0,
+            0.6668
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part B · Q1 (Karen product)",
+      "mode": "crop",
+      "n": "6",
+      "pP": 4,
+      "pY": [
+        0.6234,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.6988,
+            1.0,
+            0.7519
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part B · Q2 (Casio dictionary)",
+      "mode": "crop",
+      "n": "7",
+      "pP": 4,
+      "pY": [
+        0.7054,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.7519,
+            1.0,
+            0.7969
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part B · Q3 (Yumi surprise)",
+      "mode": "crop",
+      "n": "8",
+      "pP": 4,
+      "pY": [
+        0.7709,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.7969,
+            1.0,
+            0.8513
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 1 · Part B · Q4 (Satoshi headphones)",
+      "mode": "crop",
+      "n": "9",
+      "pP": 4,
+      "pY": [
+        0.8529,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.8513,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0511
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 2 · Part A · Q1 (bag table)",
+      "mode": "crop",
+      "n": "10",
+      "pP": 7,
+      "pY": [
+        0.0428,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0854,
+            1.0,
+            0.3627
+          ]
+        }
+      ],
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 2 · Part A · Q2 (Japanese answers)",
+      "mode": "crop",
+      "n": "11",
+      "pP": 7,
+      "pY": [
+        0.2848,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.3627,
+            1.0,
+            0.5877
+          ]
+        }
+      ],
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 2 · Part A · Q3 (English comprehension)",
+      "mode": "crop",
+      "n": "12",
+      "pP": 7,
+      "pY": [
+        0.497,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.5877,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0521
+          ]
+        }
+      ],
+      "printOrder": 12
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 2 · Part A · Q4 (translation)",
+      "mode": "crop",
+      "n": "13",
+      "pP": 7,
+      "pY": [
+        0.82,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0521,
+            1.0,
+            0.1947
+          ]
+        }
+      ],
+      "printOrder": 13
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 2 · Part B · Kanji",
+      "mode": "crop",
+      "n": "14",
+      "pP": 8,
+      "pY": [
+        0.0268,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.1947,
+            1.0,
+            0.3506
+          ]
+        }
+      ],
+      "printOrder": 14
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 2 · Part C · Grammar",
+      "mode": "crop",
+      "n": "15",
+      "pP": 8,
+      "pY": [
+        0.3618,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.3506,
+            1.0,
+            0.5247
+          ]
+        }
+      ],
+      "printOrder": 15
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 3 · Part A · Q1 (Haruna family)",
+      "mode": "crop",
+      "n": "16",
+      "pP": 11,
+      "pY": [
+        0.0573,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.5874,
+            1.0,
+            0.7183
+          ]
+        }
+      ],
+      "printOrder": 16
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 3 · Part A · Q2 (improve English)",
+      "mode": "crop",
+      "n": "17",
+      "pP": 11,
+      "pY": [
+        0.2046,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.7183,
+            1.0,
+            0.8002
+          ]
+        }
+      ],
+      "printOrder": 17
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 3 · Part A · Q3 (restaurant / disadvantage)",
+      "mode": "crop",
+      "n": "18",
+      "pP": 11,
+      "pY": [
+        0.3192,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.8002,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0507
+          ]
+        }
+      ],
+      "printOrder": 18
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 3 · Part A · Q4 (homesick)",
+      "mode": "crop",
+      "n": "19",
+      "pP": 11,
+      "pY": [
+        0.5159,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0507,
+            1.0,
+            0.1557
+          ]
+        }
+      ],
+      "printOrder": 19
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 3 · Part B · Japanese answers",
+      "mode": "crop",
+      "n": "20",
+      "pP": 11,
+      "pY": [
+        0.68,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.1557,
+            1.0,
+            0.3018
+          ]
+        }
+      ],
+      "printOrder": 20
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 3 · Part C · Kanji",
+      "mode": "crop",
+      "n": "21",
+      "pP": 12,
+      "pY": [
+        0.0469,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.3018,
+            1.0,
+            0.5745
+          ]
+        }
+      ],
+      "printOrder": 21
+    },
+    {
+      "conf": 1.0,
+      "label": "Question 3 · Part D · Grammar",
+      "mode": "crop",
+      "n": "22",
+      "pP": 13,
+      "pY": [
+        0.0442,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.5745,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0665
+          ]
+        }
+      ],
+      "printOrder": 22
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Short written production",
+      "mode": "crop",
+      "n": "23",
+      "pP": 14,
+      "pY": [
+        0.0276,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0665,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0509,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 15,
+      "endY": 0.93,
+      "printOrder": 23
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Extended written production",
+      "mode": "crop",
+      "n": "24",
+      "pP": 16,
+      "pY": [
+        0.0291,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0519,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0673,
+            1.0,
+            0.87
+          ]
+        }
+      ],
+      "endP": 19,
+      "endY": 0.93,
+      "printOrder": 24
+    }
+  ],
+  "schemeFileid": "LC058ALP000EV.pdf",
+  "v": 1
+}

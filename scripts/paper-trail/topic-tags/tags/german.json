@@ -1,1082 +1,5582 @@
 [
- {
-  "subjectId": "german",
-  "level": "higher",
-  "lang": "ev",
-  "year": 2018,
-  "fileid": "LC011ALP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2018,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "higher",
-  "lang": "ev",
-  "year": 2017,
-  "fileid": "LC011ALP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2017,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "higher",
-  "lang": "ev",
-  "year": 2016,
-  "fileid": "LC011ALP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "higher",
-  "lang": "iv",
-  "year": 2016,
-  "fileid": "LC011ALP000IV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2016,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2015,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2014,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "14",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "higher",
-  "lang": "ev",
-  "year": 2013,
-  "fileid": "LC011ALP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "higher",
-  "lang": "iv",
-  "year": 2013,
-  "fileid": "LC011ALP000IV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2013,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "iv",
-  "year": 2013,
-  "fileid": "LC011GLP000IV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-3-4"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "higher",
-  "lang": "ev",
-  "year": 2012,
-  "fileid": "LC011ALP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "higher",
-  "lang": "iv",
-  "year": 2012,
-  "fileid": "LC011ALP000IV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2012,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2011,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "14",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "iv",
-  "year": 2011,
-  "fileid": "LC011GLP000IV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "13",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "14",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "ev",
-  "year": 2010,
-  "fileid": "LC011GLP000EV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   }
-  ]
- },
- {
-  "subjectId": "german",
-  "level": "ordinary",
-  "lang": "iv",
-  "year": 2010,
-  "fileid": "LC011GLP000IV.pdf",
-  "paperKey": "single",
-  "q": [
-   {
-    "n": "1",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "2",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "3",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "4",
-    "primary": "german-6-1"
-   },
-   {
-    "n": "5",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "6",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "7",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "8",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "9",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "10",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "11",
-    "primary": "german-6-0"
-   },
-   {
-    "n": "12",
-    "primary": "german-6-0"
-   }
-  ]
- }
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2026,
+    "fileid": "LC011ALP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2026,
+    "fileid": "LC011ALPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2026,
+    "fileid": "LC011GLP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2026,
+    "fileid": "LC011GLPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2025,
+    "fileid": "LC011ALP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2025,
+    "fileid": "LC011ALPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2025,
+    "fileid": "LC011GLP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2025,
+    "fileid": "LC011GLPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2024,
+    "fileid": "LC011ALP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2024,
+    "fileid": "LC011ALPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2024,
+    "fileid": "LC011GLP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2024,
+    "fileid": "LC011GLPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2023,
+    "fileid": "LC011ALP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2023,
+    "fileid": "LC011ALPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2023,
+    "fileid": "LC011GLP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2023,
+    "fileid": "LC011GLPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2022,
+    "fileid": "LC011ALP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2022,
+    "fileid": "LC011ALPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2022,
+    "fileid": "LC011GLP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2022,
+    "fileid": "LC011GLPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2021,
+    "fileid": "LC011ALP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2021,
+    "fileid": "LC011ALPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2021,
+    "fileid": "LC011GLP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2021,
+    "fileid": "LC011GLPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2020,
+    "fileid": "LC011ALP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2020,
+    "fileid": "LC011ALPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2020,
+    "fileid": "LC011GLP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2020,
+    "fileid": "LC011GLPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2019,
+    "fileid": "LC011ALP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2019,
+    "fileid": "LC011ALPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2019,
+    "fileid": "LC011GLP000BV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "III5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2019,
+    "fileid": "LC011GLPA00BV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2018,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2018,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2018,
+    "fileid": "LC011ALP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2018,
+    "fileid": "LC011ALPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2018,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2018,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2018,
+    "fileid": "LC011GLP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2018,
+    "fileid": "LC011GLPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2017,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2017,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2017,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2017,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2016,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2016,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2016,
+    "fileid": "LC011ALP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2016,
+    "fileid": "LC011ALPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2016,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2016,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2016,
+    "fileid": "LC011GLP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2016,
+    "fileid": "LC011GLPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2015,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2015,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2015,
+    "fileid": "LC011ALP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2015,
+    "fileid": "LC011ALPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2015,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2015,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2015,
+    "fileid": "LC011GLP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2015,
+    "fileid": "LC011GLPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2014,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2014,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2014,
+    "fileid": "LC011ALP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2014,
+    "fileid": "LC011ALPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2014,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "14",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2014,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2014,
+    "fileid": "LC011GLP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "14",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2014,
+    "fileid": "LC011GLPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2013,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2013,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2013,
+    "fileid": "LC011ALP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2013,
+    "fileid": "LC011ALPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2013,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2013,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2013,
+    "fileid": "LC011GLP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2013,
+    "fileid": "LC011GLPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2012,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2012,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2012,
+    "fileid": "LC011ALP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2012,
+    "fileid": "LC011ALPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2012,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2012,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2012,
+    "fileid": "LC011GLP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2012,
+    "fileid": "LC011GLPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2011,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2011,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2011,
+    "fileid": "LC011ALP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2011,
+    "fileid": "LC011ALPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2011,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "14",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2011,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2011,
+    "fileid": "LC011GLP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "13",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "14",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2011,
+    "fileid": "LC011GLPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2010,
+    "fileid": "LC011ALP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "ev",
+    "year": 2010,
+    "fileid": "LC011ALPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2010,
+    "fileid": "LC011ALP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "I1",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I2",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I3",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "I4",
+        "primary": "german-6-1",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II1",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II2",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II3",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "II4",
+        "primary": "german-6-0",
+        "secondary": "german-3-2"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-1",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "higher",
+    "lang": "iv",
+    "year": 2010,
+    "fileid": "LC011ALPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2010,
+    "fileid": "LC011GLP000EV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "ev",
+    "year": 2010,
+    "fileid": "LC011GLPA00EV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2010,
+    "fileid": "LC011GLP000IV.pdf",
+    "paperKey": "single",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-6-1"
+      },
+      {
+        "n": "5",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "6",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "7",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "8",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "9",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "10",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "11",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "12",
+        "primary": "german-6-0"
+      },
+      {
+        "n": "G",
+        "primary": "german-3-4"
+      },
+      {
+        "n": "T-A",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "T-B",
+        "primary": "german-7-0",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-A",
+        "primary": "german-7-2",
+        "secondary": "german-3-3"
+      },
+      {
+        "n": "P-B",
+        "primary": "german-7-4",
+        "secondary": "german-3-3"
+      }
+    ]
+  },
+  {
+    "subjectId": "german",
+    "level": "ordinary",
+    "lang": "iv",
+    "year": 2010,
+    "fileid": "LC011GLPA00IV.pdf",
+    "paperKey": "aural",
+    "q": [
+      {
+        "n": "1",
+        "primary": "german-4-0",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "german-4-1",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "3",
+        "primary": "german-4-2",
+        "secondary": "german-3-1"
+      },
+      {
+        "n": "4",
+        "primary": "german-4-3",
+        "secondary": "german-3-1"
+      }
+    ]
+  }
 ]

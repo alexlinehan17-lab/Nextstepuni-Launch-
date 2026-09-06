@@ -98,7 +98,455 @@
    {
     "n": "23",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "24",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "25",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "26",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "27",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "28",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "29",
+    "primary": "japanese-5-5"
    }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC058ALP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   { "n": "1", "primary": "japanese-5-0" },
+   { "n": "2", "primary": "japanese-5-0" },
+   { "n": "3", "primary": "japanese-5-0" },
+   { "n": "4", "primary": "japanese-5-0" },
+   { "n": "5", "primary": "japanese-5-0" },
+   { "n": "6", "primary": "japanese-5-0" },
+   { "n": "7", "primary": "japanese-5-0" },
+   { "n": "8", "primary": "japanese-5-0" },
+   { "n": "9", "primary": "japanese-5-0" },
+   { "n": "10", "primary": "japanese-5-0" },
+   { "n": "11", "primary": "japanese-5-0" },
+   { "n": "12", "primary": "japanese-5-2" },
+   { "n": "13", "primary": "japanese-5-2" },
+   { "n": "14", "primary": "japanese-5-2" },
+   { "n": "15", "primary": "japanese-5-2", "secondary": "japanese-5-3" },
+   { "n": "16", "primary": "japanese-5-4" },
+   { "n": "17", "primary": "japanese-5-4" },
+   { "n": "18", "primary": "japanese-5-5" },
+   { "n": "19", "primary": "japanese-5-5" },
+   { "n": "20", "primary": "japanese-5-1" },
+   { "n": "21", "primary": "japanese-5-1" },
+   { "n": "22", "primary": "japanese-5-1" },
+   { "n": "23", "primary": "japanese-5-1" },
+   { "n": "24", "primary": "japanese-5-1" },
+   { "n": "25", "primary": "japanese-5-1" },
+   { "n": "26", "primary": "japanese-5-1" },
+   { "n": "27", "primary": "japanese-5-1" },
+   { "n": "28", "primary": "japanese-5-1" },
+   { "n": "29", "primary": "japanese-5-4" },
+   { "n": "30", "primary": "japanese-5-5" },
+   { "n": "31", "primary": "japanese-5-7" },
+   { "n": "32", "primary": "japanese-5-7" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC058GLP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   { "n": "1", "primary": "japanese-5-0" },
+   { "n": "2", "primary": "japanese-5-0" },
+   { "n": "3", "primary": "japanese-5-0" },
+   { "n": "4", "primary": "japanese-5-0" },
+   { "n": "5", "primary": "japanese-5-0" },
+   { "n": "6", "primary": "japanese-5-0" },
+   { "n": "7", "primary": "japanese-5-0" },
+   { "n": "8", "primary": "japanese-5-0" },
+   { "n": "9", "primary": "japanese-5-2" },
+   { "n": "10", "primary": "japanese-5-2" },
+   { "n": "11", "primary": "japanese-5-2" },
+   { "n": "12", "primary": "japanese-5-2" },
+   { "n": "13", "primary": "japanese-5-2" },
+   { "n": "14", "primary": "japanese-5-2" },
+   { "n": "15", "primary": "japanese-5-4" },
+   { "n": "16", "primary": "japanese-5-5" },
+   { "n": "17", "primary": "japanese-5-1" },
+   { "n": "18", "primary": "japanese-5-1" },
+   { "n": "19", "primary": "japanese-5-1" },
+   { "n": "20", "primary": "japanese-5-1" },
+   { "n": "21", "primary": "japanese-5-1" },
+   { "n": "22", "primary": "japanese-5-5" },
+   { "n": "23", "primary": "japanese-5-7" },
+   { "n": "24", "primary": "japanese-5-7" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC058ALP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   { "n": "1", "primary": "japanese-5-0" },
+   { "n": "2", "primary": "japanese-5-0" },
+   { "n": "3", "primary": "japanese-5-0" },
+   { "n": "4", "primary": "japanese-5-0" },
+   { "n": "5", "primary": "japanese-5-0" },
+   { "n": "6", "primary": "japanese-5-0" },
+   { "n": "7", "primary": "japanese-5-0" },
+   { "n": "8", "primary": "japanese-5-0" },
+   { "n": "9", "primary": "japanese-5-0" },
+   { "n": "10", "primary": "japanese-5-4" },
+   { "n": "11", "primary": "japanese-5-4" },
+   { "n": "12", "primary": "japanese-5-5" },
+   { "n": "13", "primary": "japanese-5-5" },
+   { "n": "14", "primary": "japanese-5-1" },
+   { "n": "15", "primary": "japanese-5-1" },
+   { "n": "16", "primary": "japanese-5-1" },
+   { "n": "17", "primary": "japanese-5-1" },
+   { "n": "18", "primary": "japanese-5-1" },
+   { "n": "19", "primary": "japanese-5-1" },
+   { "n": "20", "primary": "japanese-5-1" },
+   { "n": "21", "primary": "japanese-5-1" },
+   { "n": "22", "primary": "japanese-5-1" },
+   { "n": "23", "primary": "japanese-5-1" },
+   { "n": "24", "primary": "japanese-5-4" },
+   { "n": "25", "primary": "japanese-5-5" },
+   { "n": "26", "primary": "japanese-5-7" },
+   { "n": "27", "primary": "japanese-5-7" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC058GLP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   { "n": "1", "primary": "japanese-5-0" },
+   { "n": "2", "primary": "japanese-5-0" },
+   { "n": "3", "primary": "japanese-5-0" },
+   { "n": "4", "primary": "japanese-5-0" },
+   { "n": "5", "primary": "japanese-5-0" },
+   { "n": "6", "primary": "japanese-5-0" },
+   { "n": "7", "primary": "japanese-5-0" },
+   { "n": "8", "primary": "japanese-5-2" },
+   { "n": "9", "primary": "japanese-5-2" },
+   { "n": "10", "primary": "japanese-5-2" },
+   { "n": "11", "primary": "japanese-5-2" },
+   { "n": "12", "primary": "japanese-5-2" },
+   { "n": "13", "primary": "japanese-5-2" },
+   { "n": "14", "primary": "japanese-5-2" },
+   { "n": "15", "primary": "japanese-5-4" },
+   { "n": "16", "primary": "japanese-5-6" },
+   { "n": "17", "primary": "japanese-5-1" },
+   { "n": "18", "primary": "japanese-5-1" },
+   { "n": "19", "primary": "japanese-5-1" },
+   { "n": "20", "primary": "japanese-5-1" },
+   { "n": "21", "primary": "japanese-5-1" },
+   { "n": "22", "primary": "japanese-5-5" },
+   { "n": "23", "primary": "japanese-5-5" },
+   { "n": "24", "primary": "japanese-5-7" },
+   { "n": "25", "primary": "japanese-5-7" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC058ALP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   { "n": "1", "primary": "japanese-5-0" },
+   { "n": "2", "primary": "japanese-5-0" },
+   { "n": "3", "primary": "japanese-5-0" },
+   { "n": "4", "primary": "japanese-5-0" },
+   { "n": "5", "primary": "japanese-5-0" },
+   { "n": "6", "primary": "japanese-5-0" },
+   { "n": "7", "primary": "japanese-5-0" },
+   { "n": "8", "primary": "japanese-5-0" },
+   { "n": "9", "primary": "japanese-5-0" },
+   { "n": "10", "primary": "japanese-5-0" },
+   { "n": "11", "primary": "japanese-5-2" },
+   { "n": "12", "primary": "japanese-5-2" },
+   { "n": "13", "primary": "japanese-5-3" },
+   { "n": "14", "primary": "japanese-5-4" },
+   { "n": "15", "primary": "japanese-5-4" },
+   { "n": "16", "primary": "japanese-5-5" },
+   { "n": "17", "primary": "japanese-5-5" },
+   { "n": "18", "primary": "japanese-5-1" },
+   { "n": "19", "primary": "japanese-5-1" },
+   { "n": "20", "primary": "japanese-5-1" },
+   { "n": "21", "primary": "japanese-5-1" },
+   { "n": "22", "primary": "japanese-5-1" },
+   { "n": "23", "primary": "japanese-5-1" },
+   { "n": "24", "primary": "japanese-5-1" },
+   { "n": "25", "primary": "japanese-5-1" },
+   { "n": "26", "primary": "japanese-5-1" },
+   { "n": "27", "primary": "japanese-5-4" },
+   { "n": "28", "primary": "japanese-5-5" },
+   { "n": "29", "primary": "japanese-5-7" },
+   { "n": "30", "primary": "japanese-5-7" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC058GLP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   { "n": "1", "primary": "japanese-5-0" },
+   { "n": "2", "primary": "japanese-5-0" },
+   { "n": "3", "primary": "japanese-5-0" },
+   { "n": "4", "primary": "japanese-5-0" },
+   { "n": "5", "primary": "japanese-5-0" },
+   { "n": "6", "primary": "japanese-5-0" },
+   { "n": "7", "primary": "japanese-5-2" },
+   { "n": "8", "primary": "japanese-5-2" },
+   { "n": "9", "primary": "japanese-5-2" },
+   { "n": "10", "primary": "japanese-5-2" },
+   { "n": "11", "primary": "japanese-5-2" },
+   { "n": "12", "primary": "japanese-5-2" },
+   { "n": "13", "primary": "japanese-5-2" },
+   { "n": "14", "primary": "japanese-5-2" },
+   { "n": "15", "primary": "japanese-5-2" },
+   { "n": "16", "primary": "japanese-5-4" },
+   { "n": "17", "primary": "japanese-5-6" },
+   { "n": "18", "primary": "japanese-5-1" },
+   { "n": "19", "primary": "japanese-5-1" },
+   { "n": "20", "primary": "japanese-5-1" },
+   { "n": "21", "primary": "japanese-5-1" },
+   { "n": "22", "primary": "japanese-5-1" },
+   { "n": "23", "primary": "japanese-5-5" },
+   { "n": "24", "primary": "japanese-5-5" },
+   { "n": "25", "primary": "japanese-5-7" },
+   { "n": "26", "primary": "japanese-5-7" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC058ALP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   { "n": "1", "primary": "japanese-5-0" },
+   { "n": "2", "primary": "japanese-5-0" },
+   { "n": "3", "primary": "japanese-5-0" },
+   { "n": "4", "primary": "japanese-5-0" },
+   { "n": "5", "primary": "japanese-5-0" },
+   { "n": "6", "primary": "japanese-5-0" },
+   { "n": "7", "primary": "japanese-5-0" },
+   { "n": "8", "primary": "japanese-5-2" },
+   { "n": "9", "primary": "japanese-5-2" },
+   { "n": "10", "primary": "japanese-5-3" },
+   { "n": "11", "primary": "japanese-5-4" },
+   { "n": "12", "primary": "japanese-5-4" },
+   { "n": "13", "primary": "japanese-5-5" },
+   { "n": "14", "primary": "japanese-5-5" },
+   { "n": "15", "primary": "japanese-5-1" },
+   { "n": "16", "primary": "japanese-5-1" },
+   { "n": "17", "primary": "japanese-5-4" },
+   { "n": "18", "primary": "japanese-5-5" },
+   { "n": "19", "primary": "japanese-5-7" },
+   { "n": "20", "primary": "japanese-5-7" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC058GLP000BV.pdf",
+  "paperKey": "single",
+  "q": [
+   { "n": "1", "primary": "japanese-5-0" },
+   { "n": "2", "primary": "japanese-5-0" },
+   { "n": "3", "primary": "japanese-5-0" },
+   { "n": "4", "primary": "japanese-5-0" },
+   { "n": "5", "primary": "japanese-5-0" },
+   { "n": "6", "primary": "japanese-5-0" },
+   { "n": "7", "primary": "japanese-5-2" },
+   { "n": "8", "primary": "japanese-5-2" },
+   { "n": "9", "primary": "japanese-5-2" },
+   { "n": "10", "primary": "japanese-5-2" },
+   { "n": "11", "primary": "japanese-5-2" },
+   { "n": "12", "primary": "japanese-5-2" },
+   { "n": "13", "primary": "japanese-5-2" },
+   { "n": "14", "primary": "japanese-5-2" },
+   { "n": "15", "primary": "japanese-5-2" },
+   { "n": "16", "primary": "japanese-5-2" },
+   { "n": "17", "primary": "japanese-5-2" },
+   { "n": "18", "primary": "japanese-5-2" },
+   { "n": "19", "primary": "japanese-5-4" },
+   { "n": "20", "primary": "japanese-5-6" },
+   { "n": "21", "primary": "japanese-5-2" },
+   { "n": "22", "primary": "japanese-5-2" },
+   { "n": "23", "primary": "japanese-5-2" },
+   { "n": "24", "primary": "japanese-5-2" },
+   { "n": "25", "primary": "japanese-5-2" },
+   { "n": "26", "primary": "japanese-5-5" },
+   { "n": "27", "primary": "japanese-5-5" },
+   { "n": "28", "primary": "japanese-5-7" },
+   { "n": "29", "primary": "japanese-5-7" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC058ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   { "n": "1", "primary": "japanese-6-2" },
+   { "n": "2", "primary": "japanese-6-0" },
+   { "n": "3", "primary": "japanese-6-2" },
+   { "n": "4", "primary": "japanese-6-1" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC058GLPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   { "n": "1", "primary": "japanese-6-2" },
+   { "n": "2", "primary": "japanese-6-0" },
+   { "n": "3", "primary": "japanese-6-2" },
+   { "n": "4", "primary": "japanese-6-1" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC058ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   { "n": "1", "primary": "japanese-6-1" },
+   { "n": "2", "primary": "japanese-6-1" },
+   { "n": "3", "primary": "japanese-6-1" },
+   { "n": "4", "primary": "japanese-6-1" },
+   { "n": "5", "primary": "japanese-6-1" },
+   { "n": "6", "primary": "japanese-6-1" },
+   { "n": "7", "primary": "japanese-6-1" },
+   { "n": "8", "primary": "japanese-6-1" },
+   { "n": "9", "primary": "japanese-6-1" },
+   { "n": "10", "primary": "japanese-6-1" },
+   { "n": "11", "primary": "japanese-6-1" },
+   { "n": "12", "primary": "japanese-6-1" },
+   { "n": "13", "primary": "japanese-6-2" },
+   { "n": "14", "primary": "japanese-6-2" },
+   { "n": "15", "primary": "japanese-6-0" },
+   { "n": "16", "primary": "japanese-6-0" },
+   { "n": "17", "primary": "japanese-6-0" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC058GLPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   { "n": "1", "primary": "japanese-6-1" },
+   { "n": "2", "primary": "japanese-6-1" },
+   { "n": "3", "primary": "japanese-6-1" },
+   { "n": "4", "primary": "japanese-6-1" },
+   { "n": "5", "primary": "japanese-6-1" },
+   { "n": "6", "primary": "japanese-6-1" },
+   { "n": "7", "primary": "japanese-6-1" },
+   { "n": "8", "primary": "japanese-6-1" },
+   { "n": "9", "primary": "japanese-6-1" },
+   { "n": "10", "primary": "japanese-6-1" },
+   { "n": "11", "primary": "japanese-6-1" },
+   { "n": "12", "primary": "japanese-6-2" },
+   { "n": "13", "primary": "japanese-6-2" },
+   { "n": "14", "primary": "japanese-6-0" },
+   { "n": "15", "primary": "japanese-6-0" },
+   { "n": "16", "primary": "japanese-6-0" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC058ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   { "n": "1", "primary": "japanese-6-1" },
+   { "n": "2", "primary": "japanese-6-1" },
+   { "n": "3", "primary": "japanese-6-1" },
+   { "n": "4", "primary": "japanese-6-1" },
+   { "n": "5", "primary": "japanese-6-1" },
+   { "n": "6", "primary": "japanese-6-1" },
+   { "n": "7", "primary": "japanese-6-1" },
+   { "n": "8", "primary": "japanese-6-2" },
+   { "n": "9", "primary": "japanese-6-2" },
+   { "n": "10", "primary": "japanese-6-1" },
+   { "n": "11", "primary": "japanese-6-1" },
+   { "n": "12", "primary": "japanese-6-1" },
+   { "n": "13", "primary": "japanese-6-0" },
+   { "n": "14", "primary": "japanese-6-0" },
+   { "n": "15", "primary": "japanese-6-0" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC058GLPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   { "n": "1", "primary": "japanese-6-1" },
+   { "n": "2", "primary": "japanese-6-1" },
+   { "n": "3", "primary": "japanese-6-1" },
+   { "n": "4", "primary": "japanese-6-1" },
+   { "n": "5", "primary": "japanese-6-1" },
+   { "n": "6", "primary": "japanese-6-1" },
+   { "n": "7", "primary": "japanese-6-1" },
+   { "n": "8", "primary": "japanese-6-2" },
+   { "n": "9", "primary": "japanese-6-2" },
+   { "n": "10", "primary": "japanese-6-1" },
+   { "n": "11", "primary": "japanese-6-1" },
+   { "n": "12", "primary": "japanese-6-1" },
+   { "n": "13", "primary": "japanese-6-0" },
+   { "n": "14", "primary": "japanese-6-0" },
+   { "n": "15", "primary": "japanese-6-0" }
   ]
  },
  {
@@ -192,6 +640,30 @@
    {
     "n": "21",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "24",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "25",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "26",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "27",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -214,6 +686,26 @@
    {
     "n": "3",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-6"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -296,6 +788,26 @@
    {
     "n": "18",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-6"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -362,6 +874,30 @@
    {
     "n": "14",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -452,6 +988,30 @@
    {
     "n": "20",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "24",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "25",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "26",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -530,6 +1090,18 @@
    {
     "n": "17",
     "primary": "japanese-5-5"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -584,6 +1156,14 @@
    {
     "n": "11",
     "primary": "japanese-5-5"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-7"
    }
   ]
  },
@@ -682,6 +1262,14 @@
    {
     "n": "22",
     "primary": "japanese-5-5"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "24",
+    "primary": "japanese-5-7"
    }
   ]
  },
@@ -768,6 +1356,30 @@
    {
     "n": "19",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "24",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "25",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -834,6 +1446,26 @@
    {
     "n": "14",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -900,6 +1532,26 @@
    {
     "n": "14",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -978,6 +1630,30 @@
    {
     "n": "17",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -1020,6 +1696,30 @@
    {
     "n": "8",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -1094,6 +1794,18 @@
    {
     "n": "16",
     "primary": "japanese-5-5"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -1152,6 +1864,30 @@
    {
     "n": "12",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-6"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -1173,7 +1909,8 @@
    },
    {
     "n": "3",
-    "primary": "japanese-5-2"
+    "primary": "japanese-5-2",
+    "secondary": "japanese-5-3"
    },
    {
     "n": "4",
@@ -1182,6 +1919,30 @@
    {
     "n": "5",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -1264,6 +2025,30 @@
    {
     "n": "18",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "24",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -1326,6 +2111,18 @@
    {
     "n": "13",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -1384,6 +2181,26 @@
    {
     "n": "12",
     "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -1406,6 +2223,26 @@
    {
     "n": "3",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-4"
    }
   ]
  },
@@ -1440,6 +2277,26 @@
    {
     "n": "6",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-4"
    }
   ]
  },
@@ -1462,6 +2319,30 @@
    {
     "n": "3",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-6"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-5"
    }
   ]
  },
@@ -1504,6 +2385,18 @@
    {
     "n": "8",
     "primary": "japanese-5-5"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -1598,6 +2491,14 @@
    {
     "n": "21",
     "primary": "japanese-5-4"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-7"
    }
   ]
  },
@@ -1688,6 +2589,14 @@
    {
     "n": "20",
     "primary": "japanese-5-4"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-7"
    }
   ]
  },
@@ -1754,6 +2663,26 @@
    {
     "n": "14",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -1816,6 +2745,26 @@
    {
     "n": "13",
     "primary": "japanese-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-7"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-6"
    }
   ]
  },
@@ -2178,5 +3127,362 @@
     "primary": "japanese-5-0"
    }
   ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC058ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   { "n": "1", "primary": "japanese-6-1" },
+   { "n": "2", "primary": "japanese-6-1" },
+   { "n": "3", "primary": "japanese-6-1" },
+   { "n": "4", "primary": "japanese-6-1" },
+   { "n": "5", "primary": "japanese-6-1" },
+   { "n": "6", "primary": "japanese-6-1" },
+   { "n": "7", "primary": "japanese-6-1" },
+   { "n": "8", "primary": "japanese-6-1" },
+   { "n": "9", "primary": "japanese-6-0" },
+   { "n": "10", "primary": "japanese-6-0" },
+   { "n": "11", "primary": "japanese-6-0" },
+   { "n": "12", "primary": "japanese-6-2" },
+   { "n": "13", "primary": "japanese-6-2" },
+   { "n": "14", "primary": "japanese-6-1" },
+   { "n": "15", "primary": "japanese-6-1" },
+   { "n": "16", "primary": "japanese-6-1" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC058GLPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [
+   { "n": "1", "primary": "japanese-6-1" },
+   { "n": "2", "primary": "japanese-6-1" },
+   { "n": "3", "primary": "japanese-6-1" },
+   { "n": "4", "primary": "japanese-6-1" },
+   { "n": "5", "primary": "japanese-6-1" },
+   { "n": "6", "primary": "japanese-6-1" },
+   { "n": "7", "primary": "japanese-6-1" },
+   { "n": "8", "primary": "japanese-6-0" },
+   { "n": "9", "primary": "japanese-6-0" },
+   { "n": "10", "primary": "japanese-6-0" },
+   { "n": "11", "primary": "japanese-6-2" },
+   { "n": "12", "primary": "japanese-6-2" },
+   { "n": "13", "primary": "japanese-6-1" },
+   { "n": "14", "primary": "japanese-6-1" },
+   { "n": "15", "primary": "japanese-6-1" }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC058ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-2"}, {"n":"4","primary":"japanese-6-1"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC058ALPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-2"}, {"n":"4","primary":"japanese-6-1"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC058GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-2"}, {"n":"4","primary":"japanese-6-1"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC058GLPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-2"}, {"n":"4","primary":"japanese-6-1"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC058ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-1"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC058ALPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-1"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC058GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-1"}, {"n":"6","primary":"japanese-6-1"}, {"n":"7","primary":"japanese-6-1"}, {"n":"8","primary":"japanese-6-1"}, {"n":"9","primary":"japanese-6-1"}, {"n":"10","primary":"japanese-6-2"}, {"n":"11","primary":"japanese-6-2"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}, {"n":"15","primary":"japanese-6-1"}, {"n":"16","primary":"japanese-6-1"}, {"n":"17","primary":"japanese-6-1"}, {"n":"18","primary":"japanese-6-1"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC058GLPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-1"}, {"n":"6","primary":"japanese-6-1"}, {"n":"7","primary":"japanese-6-1"}, {"n":"8","primary":"japanese-6-1"}, {"n":"9","primary":"japanese-6-1"}, {"n":"10","primary":"japanese-6-2"}, {"n":"11","primary":"japanese-6-2"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}, {"n":"15","primary":"japanese-6-1"}, {"n":"16","primary":"japanese-6-1"}, {"n":"17","primary":"japanese-6-1"}, {"n":"18","primary":"japanese-6-1"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC058ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC058ALPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC058GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-0"}, {"n":"6","primary":"japanese-6-0"}, {"n":"7","primary":"japanese-6-2"}, {"n":"8","primary":"japanese-6-2"}, {"n":"9","primary":"japanese-6-2"}, {"n":"10","primary":"japanese-6-0"}, {"n":"11","primary":"japanese-6-0"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC058GLPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-0"}, {"n":"6","primary":"japanese-6-0"}, {"n":"7","primary":"japanese-6-2"}, {"n":"8","primary":"japanese-6-2"}, {"n":"9","primary":"japanese-6-2"}, {"n":"10","primary":"japanese-6-0"}, {"n":"11","primary":"japanese-6-0"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC058ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-1"}, {"n":"3","primary":"japanese-6-1"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-0"}, {"n":"6","primary":"japanese-6-0"}, {"n":"7","primary":"japanese-6-0"}, {"n":"8","primary":"japanese-6-2"}, {"n":"9","primary":"japanese-6-2"}, {"n":"10","primary":"japanese-6-2"}, {"n":"11","primary":"japanese-6-0"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}, {"n":"15","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC058ALPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-1"}, {"n":"3","primary":"japanese-6-1"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-0"}, {"n":"6","primary":"japanese-6-0"}, {"n":"7","primary":"japanese-6-0"}, {"n":"8","primary":"japanese-6-2"}, {"n":"9","primary":"japanese-6-2"}, {"n":"10","primary":"japanese-6-2"}, {"n":"11","primary":"japanese-6-0"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}, {"n":"15","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC058GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-1"}, {"n":"3","primary":"japanese-6-1"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-0"}, {"n":"6","primary":"japanese-6-0"}, {"n":"7","primary":"japanese-6-2"}, {"n":"8","primary":"japanese-6-2"}, {"n":"9","primary":"japanese-6-2"}, {"n":"10","primary":"japanese-6-0"}, {"n":"11","primary":"japanese-6-0"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC058GLPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-1"}, {"n":"3","primary":"japanese-6-1"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-0"}, {"n":"6","primary":"japanese-6-0"}, {"n":"7","primary":"japanese-6-2"}, {"n":"8","primary":"japanese-6-2"}, {"n":"9","primary":"japanese-6-2"}, {"n":"10","primary":"japanese-6-0"}, {"n":"11","primary":"japanese-6-0"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC058ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-2"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC058ALPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-0"}, {"n":"3","primary":"japanese-6-2"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC058GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-1"}, {"n":"3","primary":"japanese-6-1"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-0"}, {"n":"6","primary":"japanese-6-0"}, {"n":"7","primary":"japanese-6-0"}, {"n":"8","primary":"japanese-6-0"}, {"n":"9","primary":"japanese-6-2"}, {"n":"10","primary":"japanese-6-2"}, {"n":"11","primary":"japanese-6-2"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC058GLPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-1"}, {"n":"3","primary":"japanese-6-1"}, {"n":"4","primary":"japanese-6-0"}, {"n":"5","primary":"japanese-6-0"}, {"n":"6","primary":"japanese-6-0"}, {"n":"7","primary":"japanese-6-0"}, {"n":"8","primary":"japanese-6-0"}, {"n":"9","primary":"japanese-6-2"}, {"n":"10","primary":"japanese-6-2"}, {"n":"11","primary":"japanese-6-2"}, {"n":"12","primary":"japanese-6-0"}, {"n":"13","primary":"japanese-6-0"}, {"n":"14","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC058ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC058GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC058GLPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC058ALPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC058ALPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC058GLPA00EV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC058GLPA00IV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-0"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC058ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC058GLPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC058ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-1"}, {"n":"3","primary":"japanese-6-2"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC058ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-1"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC058GLPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-1"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC058ALPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC058GLPA00BV.pdf",
+  "paperKey": "aural",
+  "q": [{"n":"1","primary":"japanese-6-1"}, {"n":"2","primary":"japanese-6-2"}, {"n":"3","primary":"japanese-6-0"}, {"n":"4","primary":"japanese-6-0"}]
  }
 ]

@@ -49,6 +49,7 @@ COPYRIGHT = "© State Examinations Commission"
 # wins, because 2022 OL's cover also prints a bare "SECTION II – COMPOSING".
 COMPOSING_LINE = re.compile(r"COMPOSING\s*\(100|SECTION\s+II\s{3,}COMPOSING")
 HEAD = re.compile(r"^(\d)\.(?:\s|$)")
+COMPOSING_HEAD = re.compile(r"^COMPOSING\s+(\d)\b", re.I)
 
 
 def lines_with_pos(page):
@@ -71,8 +72,9 @@ def composing_run(doc, start_page0, stop_page0=None, xmax=0.2):
     stop = stop_page0 if stop_page0 is not None else len(doc)
     for pi in range(start_page0, stop):
         for txt, x, y in lines_with_pos(doc[pi]):
-            m = HEAD.match(txt)
-            if m and x <= xmax and int(m.group(1)) == want:
+            numbered_composing = COMPOSING_HEAD.match(txt)
+            m = HEAD.match(txt) or numbered_composing
+            if m and (x <= xmax or numbered_composing) and int(m.group(1)) == want:
                 found[want] = (pi + 1, y)
                 want += 1
     return found
@@ -81,9 +83,13 @@ def composing_run(doc, start_page0, stop_page0=None, xmax=0.2):
 def find_composing_page(doc):
     last = None
     for pi in range(len(doc)):
-        for ln in doc[pi].get_text().split("\n"):
+        page_lines = doc[pi].get_text().split("\n")
+        for ln in page_lines:
             if COMPOSING_LINE.search(ln):
                 last = pi
+        upper_lines = {" ".join(line.upper().split()) for line in page_lines}
+        if "SECTION II" in upper_lines and "COMPOSING" in upper_lines:
+            last = pi
     return last
 
 

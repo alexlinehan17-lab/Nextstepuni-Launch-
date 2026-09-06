@@ -29,6 +29,28 @@ const inPrintOrder = (qs: PaperAnswerQuestion[]): PaperAnswerQuestion[] =>
   [...qs].sort((a, b) => a.pP - b.pP || a.pY[0] - b.pY[0]);
 
 /**
+ * Return cards in their explicit physical sequence when a repaired sidecar
+ * supplies a complete, unique `printOrder` permutation. Stable `n` values are
+ * intentionally left untouched: bookmarks, attempts and topic tags address
+ * cards by that shipped identity. Invalid/partial metadata is ignored so an
+ * older sidecar keeps its established array order.
+ */
+export function questionsInDisplayOrder(
+  qs: PaperAnswerQuestion[],
+): PaperAnswerQuestion[] {
+  if (!qs.length) return qs;
+  const ranks = qs.map(question => question.printOrder);
+  if (!ranks.every(rank => Number.isInteger(rank) && rank! > 0)) return qs;
+  if (new Set(ranks).size !== qs.length) return qs;
+  return [...qs].sort((a, b) => a.printOrder! - b.printOrder!);
+}
+
+/** Use an additive audited correction when a frozen legacy answer crop was
+ * polluted by section-restart numbering; otherwise retain the shipped crop. */
+export const schemeRegionFor = (question: PaperAnswerQuestion): PaperAnswerSeg[] =>
+  question.schemeRegion?.length ? question.schemeRegion : question.region;
+
+/**
  * Paper-side region for question `n`: from its anchor down to the next
  * question's anchor (spanning whole pages in between), or to its own band end
  * when it is the last anchored question. Returns null when no confident
@@ -37,6 +59,7 @@ const inPrintOrder = (qs: PaperAnswerQuestion[]): PaperAnswerQuestion[] =>
 export function paperRegionFor(
   qs: PaperAnswerQuestion[],
   n: string,
+  maxPages = MAX_PAGES,
 ): PaperAnswerSeg[] | null {
   if (!qs.length) return null;
   const ordered = inPrintOrder(qs);
@@ -44,6 +67,26 @@ export function paperRegionFor(
   if (i === -1) return null;
   const q = ordered[i];
   if (!q.pP || q.pP < 1 || !Array.isArray(q.pY)) return null;
+
+  // A frozen legacy anchor may omit context shared by a table/group. Prefer a
+  // separately audited additive crop, but reject malformed or implausible data
+  // with the same honesty rules used for derived regions.
+  if (q.paperRegion?.length) {
+    const pages = q.paperRegion.map(segment => segment.p);
+    const valid = q.paperRegion.every((segment, index) => {
+      const rect = segment.r;
+      return Number.isInteger(segment.p)
+        && segment.p >= 1
+        && (index === 0 || segment.p >= pages[index - 1])
+        && Array.isArray(rect)
+        && rect.length === 4
+        && rect.every(value => Number.isFinite(value) && value >= 0 && value <= 1)
+        && rect[2] > rect[0]
+        && rect[3] > rect[1];
+    });
+    if (!valid || pages.at(-1)! - pages[0] > maxPages) return null;
+    return q.paperRegion;
+  }
 
   // A COLLAPSED anchor is not an anchor. lang_reading.py resolved a question's
   // paper position by searching the page for an anchor string, and on a miss it
@@ -68,7 +111,7 @@ export function paperRegionFor(
     const endY = Math.min(1, Math.max(0, q.endY));
     // End must lie strictly after the start (monotonic), else no confident crop.
     if (q.endP < q.pP || (q.endP === q.pP && endY <= q.pY[0] + 0.005)) return null;
-    if (q.endP - q.pP > MAX_PAGES) return null;
+    if (q.endP - q.pP > maxPages) return null;
     if (q.endP === q.pP) return [{ p: q.pP, r: [0, y0, 1, endY] }];
     const segs: PaperAnswerSeg[] = [{ p: q.pP, r: [0, y0, 1, 1] }];
     for (let p = q.pP + 1; p < q.endP; p++) segs.push({ p, r: [0, 0, 1, 1] });
@@ -90,7 +133,7 @@ export function paperRegionFor(
   if (next.pP < q.pP || (next.pP === q.pP && next.pY[0] <= q.pY[0] + 0.005)) return null;
 
   const span = next.pP - q.pP;
-  if (span > MAX_PAGES) return null;
+  if (span > maxPages) return null;
 
   if (span === 0) {
     return [{ p: q.pP, r: [0, y0, 1, Math.min(1, next.pY[0]) ] }];

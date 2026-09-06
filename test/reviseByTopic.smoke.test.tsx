@@ -58,9 +58,11 @@ describe('Topic Vault — ReviseByTopic', () => {
     // The volume header band prints real stats: questions, topics, and a sane year span.
     expect(screen.getByText(/[\d,]+ questions · \d+ topics · \d{4}–\d{4}/)).toBeInTheDocument();
 
-    // The busiest topic renders as a row; drill into it.
+    // The first topic renders as a row; drill into its first course-specific
+    // occurrence. Overlapping specifications may intentionally reuse a label.
     const busiest = topicsForSubject(sid)[0];
-    const topicBtn = screen.getByRole('button', { name: new RegExp(busiest.label.slice(0, 12).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i') });
+    const topicBtn = screen.getAllByRole('button', { name: new RegExp(busiest.label.slice(0, 12).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i') })[0];
+    expect(topicBtn).toBeDefined();
     fireEvent.click(topicBtn);
 
     // Level 2: the feed summary (unique to the feed) renders; cards fall back (no net).
@@ -83,5 +85,21 @@ describe('Topic Vault — ReviseByTopic', () => {
     const search = screen.getByLabelText(/Search topics/i);
     fireEvent.change(search, { target: { value: 'zzzznotatopiczzz' } });
     expect(screen.getByText(/No topics match/i)).toBeInTheDocument();
+  });
+
+  test('explains a retained reference topic whose official source is unavailable', () => {
+    render(
+      <ReviseByTopic
+        subjects={[{ id: 'japanese', label: 'Japanese' }]}
+        mineIds={[]}
+        subjectLabel={label}
+        restore={{ subjectId: 'japanese', subtopicId: 'japanese-common-oral-exam' }}
+        onOpenQuestion={noop}
+        onBack={noop}
+      />,
+    );
+    expect(screen.getByText(/2 reference entries · official source files pending/i)).toBeInTheDocument();
+    expect(screen.getByText(/official question material is not available in the local SEC corpus yet/i)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Show all/i })).not.toBeInTheDocument();
   });
 });

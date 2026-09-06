@@ -27,7 +27,10 @@ SIDECAR_V = 1
 COPYRIGHT = "© State Examinations Commission"
 
 SEC = re.compile(r"^(?:Section|Roinn)\s+([ABC])\s*$", re.I)
-NUM = re.compile(r"^(\d{1,2})\s*[\.\)]")
+# Older schemes vary between `3.`, `(3)`, and an unpunctuated number followed
+# by the opening quotation mark of the question.  Keep the last form narrow so
+# mark-allocation lines such as `4 points` cannot advance the question run.
+NUM = re.compile(r"^\(?(\d{1,2})\)?(?:\s*[\.\)]|\s+(?=[‘'\"])|\s*$)")
 CAPS = {"A": 12, "B": 5, "C": 5}
 
 
@@ -55,6 +58,17 @@ def collect(doc, start=1):
                 sec, num = m.group(1).upper(), 0
                 found[("hdr", sec)] = (pi, y)
                 continue
+            if re.match(r"^Elective\s+1\b", t, re.I):
+                # A few scanned Ordinary papers lose the `Section C` line in
+                # extraction, but retain the unique Elective 1 divider.
+                sec, num = "C", 0
+                found[("hdr", sec)] = (pi, y)
+                continue
+            if sec == "B" and num == 5 and re.match(r"^1\s*\.\s*\(?a\)?", t, re.I):
+                # 2011 Ordinary loses both words of the Section C / Elective 1
+                # heading, but the numbered elective starts cleanly at 1(a).
+                sec, num = "C", 0
+                found[("hdr", sec)] = (pi, y)
             if sec is None:
                 continue
             nm = NUM.match(t)

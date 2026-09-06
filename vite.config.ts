@@ -314,6 +314,15 @@ export default defineConfig(() => {
             // first keeps it in vendor-react; three/jspdf then stay in their
             // own chunks, reachable only via the lazy Journey / PDF routes.
             manualChunks(id) {
+              // Paper Trail's generated corpus index and audited exam-topic
+              // registries are static data, used only by the lazy Paper Trail
+              // route. Keep both outside its interactive viewer chunk, and in
+              // separate chunks from each other: adding another fully audited
+              // subject must not push either the renderer over the 2 MiB raw-JS
+              // ceiling or the static-data chunks over the 1.2 MB warning
+              // threshold. They are still fetched only when Paper Trail opens.
+              if (id.includes('/data/examTopics/')) return 'exam-topic-data';
+              if (id.includes('/data/paperTrail/')) return 'paper-topic-data';
               // Vite's __vitePreload helper and Rollup's CJS interop helpers are
               // used by EVERY lazy import()/CJS dep in the eager entry. If they
               // land inside a heavy lazy vendor chunk (they were ending up in

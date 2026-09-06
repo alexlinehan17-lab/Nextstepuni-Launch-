@@ -54,13 +54,27 @@ export interface PaperAnswerQuestion {
   /** Optional display label shown in the reveal header instead of "Question {n}",
    *  for papers whose questions restart per section (e.g. "Text II · Q1"). */
   label?: string;
+  /** Optional physical sequence within the paper. `n` is a stable card identity,
+   *  so a later repair that recovers previously-colliding section-restart
+   *  questions must not renumber shipped cards. In that exceptional case this
+   *  records the real print order while `n` remains stable. */
+  printOrder?: number;
   /** Paper page the question header is on (1-based). */
   pP: number;
   /** Question's vertical band on that paper page, fractions [start, end]. */
   pY: [number, number];
+  /** Optional audited paper crop for a frozen legacy card whose original
+   *  anchor omits shared instructions or table headings. Like `schemeRegion`,
+   *  this improves display without changing the shipped pP/pY identity. */
+  paperRegion?: PaperAnswerSeg[];
   /** Marking-scheme region: ordered page crops (mode 'crop') or a single
    *  jump target (mode 'pagejump'). */
   region: PaperAnswerSeg[];
+  /** Optional corrected display crop for a frozen legacy card. `region` is
+   *  part of the shipped card identity and must remain byte-for-byte stable;
+   *  this additive field lets a later audit remove collision spillover or
+   *  point the UI at the card's actual answer without mutating that identity. */
+  schemeRegion?: PaperAnswerSeg[];
   mode: 'crop' | 'pagejump';
   /** Confidence 0..1 (1 = clean crop; lower = degraded to page-jump). */
   conf: number;
@@ -89,6 +103,14 @@ export interface PaperAnswerMap {
    *  falls inside this band (the Paper 1 / Paper 2 shared-scheme guard). */
   band: [number, number];
   copyright: string;
+  /** Hosted sidecars may carry paper anchors only. They deliberately make no
+   *  marking-scheme claim, but can be merged additively with a verified answer
+   *  map at runtime so long multi-page paper questions keep their full extent. */
+  paperOnly?: 1;
+  /** Audited per-map override for a booklet whose real printed questions span
+   *  more than the conservative three-page default. Kept map-level so an
+   *  unverified distant anchor cannot silently relax another paper. */
+  maxCropPages?: number;
   q: PaperAnswerQuestion[];
 }
 

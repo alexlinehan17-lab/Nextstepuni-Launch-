@@ -110,6 +110,12 @@ describe('Marking Lens integrity', () => {
     'biology|LC025GLP038IV.pdf', 'biology|LC025GLP040IV.pdf',
     'geography|LC005ALP042EV.pdf', 'geography|LC005ALP042IV.pdf',
     'geography|LC005GLP042EV.pdf',
+    // DCG: LP014 is the separately printed Section-A sheet (A1–A4), while
+    // LP039 is the Section-B/C answer booklet (B1–B3 and C1–C5). The shipped
+    // lenses below are verified against LP039; adding Section A to Atlas makes
+    // n1–4 deliberately ambiguous across the two physical documents.
+    'design-and-communication-graphics|LC562ALP039EV.pdf',
+    'design-and-communication-graphics|LC562ALP039IV.pdf',
     // Home Economics: LP014 = Section A (14 short questions, 6 marks each),
     // LP039 = Section B (long questions, Q1=80 / Q2–5=50). They share n1–5.
     'home-economics-s-and-s|LC098ALP014EV.pdf', 'home-economics-s-and-s|LC098ALP039EV.pdf',

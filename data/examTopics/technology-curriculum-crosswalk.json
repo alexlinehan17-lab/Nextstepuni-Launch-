@@ -1,0 +1,303 @@
+{
+  "technology-higher-a-process-of-design": [
+    "technology-0-0",
+    "technology-0-1",
+    "technology-0-2",
+    "technology-0-3",
+    "technology-0-4",
+    "technology-0-5",
+    "technology-0-6",
+    "technology-0-7",
+    "technology-0-8",
+    "technology-0-9",
+    "technology-0-10"
+  ],
+  "technology-higher-communications-graphics-media": [
+    "technology-3-0",
+    "technology-3-1",
+    "technology-3-2",
+    "technology-3-3",
+    "technology-3-4",
+    "technology-3-5",
+    "technology-3-6",
+    "technology-3-7"
+  ],
+  "technology-higher-electricity-electronics": [
+    "technology-6-1",
+    "technology-6-2"
+  ],
+  "technology-higher-energy": [
+    "technology-6-0"
+  ],
+  "technology-higher-health-safety": [
+    "technology-2-0",
+    "technology-7-2",
+    "technology-11-6"
+  ],
+  "technology-higher-information-and-communications-technology": [
+    "technology-4-0",
+    "technology-4-1"
+  ],
+  "technology-higher-materials-fabrics": [
+    "technology-2-0",
+    "technology-11-0",
+    "technology-11-1",
+    "technology-11-2",
+    "technology-11-3",
+    "technology-11-4",
+    "technology-11-5",
+    "technology-11-6",
+    "technology-11-7",
+    "technology-11-8",
+    "technology-11-9"
+  ],
+  "technology-higher-materials-metal": [
+    "technology-2-0",
+    "technology-11-0",
+    "technology-11-1",
+    "technology-11-2",
+    "technology-11-3",
+    "technology-11-4",
+    "technology-11-5",
+    "technology-11-6",
+    "technology-11-7",
+    "technology-11-8",
+    "technology-11-9"
+  ],
+  "technology-higher-materials-plastics": [
+    "technology-2-0",
+    "technology-11-0",
+    "technology-11-1",
+    "technology-11-2",
+    "technology-11-3",
+    "technology-11-4",
+    "technology-11-5",
+    "technology-11-6",
+    "technology-11-7",
+    "technology-11-8",
+    "technology-11-9"
+  ],
+  "technology-higher-materials-smart": [
+    "technology-2-0",
+    "technology-11-0",
+    "technology-11-1",
+    "technology-11-2",
+    "technology-11-3",
+    "technology-11-4",
+    "technology-11-5",
+    "technology-11-6",
+    "technology-11-7",
+    "technology-11-8",
+    "technology-11-9"
+  ],
+  "technology-higher-materials-wood": [
+    "technology-2-0",
+    "technology-11-0",
+    "technology-11-1",
+    "technology-11-2",
+    "technology-11-3",
+    "technology-11-4",
+    "technology-11-5",
+    "technology-11-6",
+    "technology-11-7",
+    "technology-11-8",
+    "technology-11-9"
+  ],
+  "technology-higher-materials-and-production-all-materials": [
+    "technology-2-0",
+    "technology-2-1"
+  ],
+  "technology-higher-option-applied-control-systems": [
+    "technology-8-0",
+    "technology-8-1",
+    "technology-8-2",
+    "technology-8-3",
+    "technology-8-4"
+  ],
+  "technology-higher-option-electronics-control": [
+    "technology-7-0",
+    "technology-7-1",
+    "technology-7-2",
+    "technology-7-3",
+    "technology-7-4",
+    "technology-7-5",
+    "technology-7-6",
+    "technology-7-7",
+    "technology-7-8"
+  ],
+  "technology-higher-option-information-communications-technology": [
+    "technology-9-0",
+    "technology-9-1",
+    "technology-9-2",
+    "technology-9-3"
+  ],
+  "technology-higher-option-manufacturing-systems": [
+    "technology-10-0",
+    "technology-10-1",
+    "technology-10-2",
+    "technology-10-3",
+    "technology-10-4"
+  ],
+  "technology-higher-option-materials-technology": [
+    "technology-11-0",
+    "technology-11-1",
+    "technology-11-2",
+    "technology-11-3",
+    "technology-11-4",
+    "technology-11-5",
+    "technology-11-6",
+    "technology-11-7",
+    "technology-11-8",
+    "technology-11-9"
+  ],
+  "technology-higher-project-quality-management": [
+    "technology-1-0",
+    "technology-1-1"
+  ],
+  "technology-higher-sample-project-folder": [
+    "technology-0-0",
+    "technology-0-1",
+    "technology-0-2",
+    "technology-0-3",
+    "technology-0-4",
+    "technology-0-5",
+    "technology-0-6",
+    "technology-0-7",
+    "technology-0-8",
+    "technology-0-9",
+    "technology-0-10",
+    "technology-1-0",
+    "technology-1-1"
+  ],
+  "technology-higher-structures-mechanisms": [
+    "technology-5-0",
+    "technology-5-1"
+  ],
+  "technology-higher-technology-in-society": [
+    "technology-0-1",
+    "technology-0-2",
+    "technology-0-3",
+    "technology-0-9",
+    "technology-2-1",
+    "technology-6-0",
+    "technology-11-7"
+  ],
+  "technology-ordinary-a-process-of-design": [
+    "technology-0-0",
+    "technology-0-1",
+    "technology-0-2",
+    "technology-0-3",
+    "technology-0-4",
+    "technology-0-5",
+    "technology-0-6",
+    "technology-0-7",
+    "technology-0-8",
+    "technology-0-9",
+    "technology-0-10"
+  ],
+  "technology-ordinary-communications-graphics-media": [
+    "technology-3-0",
+    "technology-3-1",
+    "technology-3-2",
+    "technology-3-3",
+    "technology-3-4",
+    "technology-3-5",
+    "technology-3-6",
+    "technology-3-7"
+  ],
+  "technology-ordinary-electricity-electronics": [
+    "technology-6-1",
+    "technology-6-2"
+  ],
+  "technology-ordinary-energy": [
+    "technology-6-0"
+  ],
+  "technology-ordinary-health-safety": [
+    "technology-2-0",
+    "technology-7-2",
+    "technology-11-6"
+  ],
+  "technology-ordinary-information-and-communications-technology": [
+    "technology-4-0",
+    "technology-4-1"
+  ],
+  "technology-ordinary-materials-production": [
+    "technology-2-0",
+    "technology-2-1"
+  ],
+  "technology-ordinary-option-1-applied-control-systems": [
+    "technology-8-0",
+    "technology-8-1",
+    "technology-8-2",
+    "technology-8-3",
+    "technology-8-4"
+  ],
+  "technology-ordinary-option-2-electronics-control": [
+    "technology-7-0",
+    "technology-7-1",
+    "technology-7-2",
+    "technology-7-3",
+    "technology-7-4",
+    "technology-7-5",
+    "technology-7-6",
+    "technology-7-7",
+    "technology-7-8"
+  ],
+  "technology-ordinary-option-3-information-communications-technology": [
+    "technology-9-0",
+    "technology-9-1",
+    "technology-9-2",
+    "technology-9-3"
+  ],
+  "technology-ordinary-option-4-manufacturing-systems": [
+    "technology-10-0",
+    "technology-10-1",
+    "technology-10-2",
+    "technology-10-3",
+    "technology-10-4"
+  ],
+  "technology-ordinary-option-5-materials-technology": [
+    "technology-11-0",
+    "technology-11-1",
+    "technology-11-2",
+    "technology-11-3",
+    "technology-11-4",
+    "technology-11-5",
+    "technology-11-6",
+    "technology-11-7",
+    "technology-11-8",
+    "technology-11-9"
+  ],
+  "technology-ordinary-project-quality-management": [
+    "technology-1-0",
+    "technology-1-1"
+  ],
+  "technology-ordinary-sample-project-folder": [
+    "technology-0-0",
+    "technology-0-1",
+    "technology-0-2",
+    "technology-0-3",
+    "technology-0-4",
+    "technology-0-5",
+    "technology-0-6",
+    "technology-0-7",
+    "technology-0-8",
+    "technology-0-9",
+    "technology-0-10",
+    "technology-1-0",
+    "technology-1-1"
+  ],
+  "technology-ordinary-structures-mechanisms": [
+    "technology-5-0",
+    "technology-5-1"
+  ],
+  "technology-ordinary-technology-in-society": [
+    "technology-0-1",
+    "technology-0-2",
+    "technology-0-3",
+    "technology-0-9",
+    "technology-2-1",
+    "technology-6-0",
+    "technology-11-7"
+  ]
+}

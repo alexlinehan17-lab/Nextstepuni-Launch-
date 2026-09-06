@@ -1,1 +1,432 @@
-{"band":[1,17],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058GLP000EV.pdf","q":[{"conf":1.0,"label":"Q1 Tokyo Zoo web page · Links","mode":"crop","n":"1","pP":3,"pY":[0.0833,1.0],"region":[{"p":5,"r":[0.0,0.1606,1.0,0.3386]}]},{"conf":1.0,"label":"Q1 Tokyo Zoo web page · Soft toy prices","mode":"crop","n":"2","pP":3,"pY":[0.3333,1.0],"region":[{"p":5,"r":[0.0,0.3386,1.0,0.5451]}]},{"conf":1.0,"label":"Q1 Tokyo Zoo web page · Panda colours & Katakana","mode":"crop","n":"3","pP":3,"pY":[0.5996,1.0],"region":[{"p":5,"r":[0.0,0.5451,1.0,0.7132]}]},{"conf":1.0,"label":"Q1 Tokyo Zoo web page · Closing day","mode":"crop","n":"4","pP":3,"pY":[0.8789,1.0],"region":[{"p":5,"r":[0.0,0.7132,1.0,1.0]},{"p":6,"r":[0.0,0.0,1.0,0.0787]}]},{"conf":1.0,"label":"Q2 Okawa profile · A Q1 Average age","mode":"crop","n":"5","pP":5,"pY":[0.0805,1.0],"region":[{"p":6,"r":[0.0,0.1359,1.0,0.2178]}]},{"conf":1.0,"label":"Q2 Okawa profile · A Q2 Oldest are women","mode":"crop","n":"6","pP":5,"pY":[0.1925,1.0],"region":[{"p":6,"r":[0.0,0.2178,1.0,0.2508]}]},{"conf":1.0,"label":"Q2 Okawa profile · A Q3-4 Oldest people & True/False","mode":"crop","n":"7","pP":5,"pY":[0.3045,1.0],"region":[{"p":6,"r":[0.0,0.2508,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0787]}]},{"conf":1.0,"label":"Q2 Okawa profile · B Kanji meanings","mode":"crop","n":"8","pP":6,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.0787,1.0,0.3453]}]},{"conf":1.0,"label":"Q2 Okawa profile · C Grammar (negatives & particles)","mode":"crop","n":"9","pP":7,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.3453,1.0,0.7128]}]},{"conf":1.0,"label":"Q3 Japan GAA · Q1 Match person to place","mode":"crop","n":"10","pP":11,"pY":[0.0339,1.0],"region":[{"p":8,"r":[0.0,0.1279,1.0,0.2754]}]},{"conf":1.0,"label":"Q3 Japan GAA · Q2 Asian Gaelic games","mode":"crop","n":"11","pP":11,"pY":[0.2173,1.0],"region":[{"p":8,"r":[0.0,0.2754,1.0,0.4068]}]},{"conf":1.0,"label":"Q3 Japan GAA · Q3 Multiple choice","mode":"crop","n":"12","pP":11,"pY":[0.3938,1.0],"region":[{"p":8,"r":[0.0,0.4068,1.0,0.6211]}]},{"conf":1.0,"label":"Q3 Japan GAA · Q4 Answer in Japanese","mode":"crop","n":"13","pP":11,"pY":[0.7352,1.0],"region":[{"p":8,"r":[0.0,0.6211,1.0,1.0]},{"p":9,"r":[0.0,0.0,1.0,0.0775]}]}],"schemeFileid":"LC058GLP000EV.pdf","v":1}
+{
+  "band": [
+    1,
+    17
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058GLP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Q1 Tokyo Zoo web page · Links",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0833,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.1606,
+            1.0,
+            0.3386
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Tokyo Zoo web page · Soft toy prices",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.3333,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.3386,
+            1.0,
+            0.5451
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Tokyo Zoo web page · Panda colours & Katakana",
+      "mode": "crop",
+      "n": "3",
+      "pP": 3,
+      "pY": [
+        0.5996,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.5451,
+            1.0,
+            0.7132
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Tokyo Zoo web page · Closing day",
+      "mode": "crop",
+      "n": "4",
+      "pP": 3,
+      "pY": [
+        0.8789,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.7132,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0787
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 Okawa profile · A Q1 Average age",
+      "mode": "crop",
+      "n": "5",
+      "pP": 5,
+      "pY": [
+        0.0805,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.1359,
+            1.0,
+            0.2178
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 Okawa profile · A Q2 Oldest are women",
+      "mode": "crop",
+      "n": "6",
+      "pP": 5,
+      "pY": [
+        0.1925,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.2178,
+            1.0,
+            0.2508
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 Okawa profile · A Q3-4 Oldest people & True/False",
+      "mode": "crop",
+      "n": "7",
+      "pP": 5,
+      "pY": [
+        0.3045,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.2508,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0787
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 Okawa profile · B Kanji meanings",
+      "mode": "crop",
+      "n": "8",
+      "pP": 6,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0787,
+            1.0,
+            0.3453
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 Okawa profile · C Grammar (negatives & particles)",
+      "mode": "crop",
+      "n": "9",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.3453,
+            1.0,
+            0.7128
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 Japan GAA · Q1 Match person to place",
+      "mode": "crop",
+      "n": "10",
+      "pP": 11,
+      "pY": [
+        0.0339,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.1279,
+            1.0,
+            0.2754
+          ]
+        }
+      ],
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 Japan GAA · Q2 Asian Gaelic games",
+      "mode": "crop",
+      "n": "11",
+      "pP": 11,
+      "pY": [
+        0.2173,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.2754,
+            1.0,
+            0.4068
+          ]
+        }
+      ],
+      "printOrder": 12
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 Japan GAA · Q3 Multiple choice",
+      "mode": "crop",
+      "n": "12",
+      "pP": 11,
+      "pY": [
+        0.3938,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.4068,
+            1.0,
+            0.6211
+          ]
+        }
+      ],
+      "printOrder": 13
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 Japan GAA · Q4 Answer in Japanese",
+      "mode": "crop",
+      "n": "13",
+      "pP": 11,
+      "pY": [
+        0.7352,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.6211,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0775
+          ]
+        }
+      ],
+      "printOrder": 14
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Cloze written production",
+      "mode": "crop",
+      "n": "14",
+      "pP": 12,
+      "pY": [
+        0.0834,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0775,
+            1.0,
+            0.4284
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.93,
+      "printOrder": 15
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Personal written production",
+      "mode": "crop",
+      "n": "15",
+      "pP": 13,
+      "pY": [
+        0.0343,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.4284,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0785,
+            1.0,
+            0.75
+          ]
+        }
+      ],
+      "endP": 13,
+      "endY": 0.93,
+      "printOrder": 16
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 · D · Culture and society",
+      "mode": "crop",
+      "n": "16",
+      "pP": 8,
+      "pY": [
+        0.0505,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.7128,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0951
+          ]
+        }
+      ],
+      "endP": 8,
+      "endY": 0.93,
+      "printOrder": 10
+    }
+  ],
+  "schemeFileid": "LC058GLP000EV.pdf",
+  "v": 1
+}

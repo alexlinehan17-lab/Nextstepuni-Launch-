@@ -1,1 +1,487 @@
-{"band":[1,21],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058GLP000IV.pdf","q":[{"conf":1.0,"label":"Text I · Q1","mode":"crop","n":"1","pP":3,"pY":[0.0339,1.0],"region":[{"p":5,"r":[0.0,0.1222,1.0,0.3799]}]},{"conf":1.0,"label":"Text I · Q2","mode":"crop","n":"2","pP":3,"pY":[0.3291,1.0],"region":[{"p":5,"r":[0.0,0.3799,1.0,0.4619]}]},{"conf":1.0,"label":"Text I · Q3","mode":"crop","n":"3","pP":3,"pY":[0.4275,1.0],"region":[{"p":5,"r":[0.0,0.4619,1.0,0.5909]}]},{"conf":1.0,"label":"Text I · Q4","mode":"crop","n":"4","pP":3,"pY":[0.575,1.0],"region":[{"p":5,"r":[0.0,0.5909,1.0,0.6728]}]},{"conf":1.0,"label":"Text I · Q5","mode":"crop","n":"5","pP":3,"pY":[0.6569,1.0],"region":[{"p":5,"r":[0.0,0.6728,1.0,0.7946]}]},{"conf":1.0,"label":"Text I · Q6","mode":"crop","n":"6","pP":3,"pY":[0.8207,1.0],"region":[{"p":5,"r":[0.0,0.7946,1.0,1.0]}]},{"conf":1.0,"label":"Text II · Q1","mode":"crop","n":"7","pP":5,"pY":[0.0668,1.0],"region":[{"p":6,"r":[0.0,0.114,1.0,0.2124]}]},{"conf":1.0,"label":"Text II · Q2","mode":"crop","n":"8","pP":5,"pY":[0.2368,1.0],"region":[{"p":6,"r":[0.0,0.2124,1.0,0.2942]}]},{"conf":1.0,"label":"Text II · Q3","mode":"crop","n":"9","pP":5,"pY":[0.3353,1.0],"region":[{"p":6,"r":[0.0,0.2942,1.0,0.3764]}]},{"conf":1.0,"label":"Text II · Q4","mode":"crop","n":"10","pP":5,"pY":[0.4664,1.0],"region":[{"p":6,"r":[0.0,0.3764,1.0,1.0]}]},{"conf":1.0,"label":"Text III · Q1","mode":"crop","n":"11","pP":9,"pY":[0.0696,1.0],"region":[{"p":8,"r":[0.0,0.0894,1.0,0.1527]}]},{"conf":1.0,"label":"Text III · Q2","mode":"crop","n":"12","pP":9,"pY":[0.1352,1.0],"region":[{"p":8,"r":[0.0,0.1527,1.0,0.2988]}]},{"conf":1.0,"label":"Text III · Q3","mode":"crop","n":"13","pP":9,"pY":[0.3318,1.0],"region":[{"p":8,"r":[0.0,0.2988,1.0,0.5274]}]},{"conf":1.0,"label":"Text III · Q4","mode":"crop","n":"14","pP":9,"pY":[0.7577,1.0],"region":[{"p":8,"r":[0.0,0.5274,1.0,0.7486]}]}],"schemeFileid":"LC058GLP000IV.pdf","v":1}
+{
+  "band": [
+    1,
+    21
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058GLP000IV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Text I · Q1",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0339,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.1222,
+            1.0,
+            0.3799
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I · Q2",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.3291,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.3799,
+            1.0,
+            0.4619
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I · Q3",
+      "mode": "crop",
+      "n": "3",
+      "pP": 3,
+      "pY": [
+        0.4275,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.4619,
+            1.0,
+            0.5909
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I · Q4",
+      "mode": "crop",
+      "n": "4",
+      "pP": 3,
+      "pY": [
+        0.575,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.5909,
+            1.0,
+            0.6728
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I · Q5",
+      "mode": "crop",
+      "n": "5",
+      "pP": 3,
+      "pY": [
+        0.6569,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.6728,
+            1.0,
+            0.7946
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Text I · Q6",
+      "mode": "crop",
+      "n": "6",
+      "pP": 3,
+      "pY": [
+        0.8207,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.7946,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II · Q1",
+      "mode": "crop",
+      "n": "7",
+      "pP": 5,
+      "pY": [
+        0.0668,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.114,
+            1.0,
+            0.2124
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II · Q2",
+      "mode": "crop",
+      "n": "8",
+      "pP": 5,
+      "pY": [
+        0.2368,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.2124,
+            1.0,
+            0.2942
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II · Q3",
+      "mode": "crop",
+      "n": "9",
+      "pP": 5,
+      "pY": [
+        0.3353,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.2942,
+            1.0,
+            0.3764
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Text II · Q4",
+      "mode": "crop",
+      "n": "10",
+      "pP": 5,
+      "pY": [
+        0.4664,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.3764,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III · Q1",
+      "mode": "crop",
+      "n": "11",
+      "pP": 9,
+      "pY": [
+        0.0696,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0894,
+            1.0,
+            0.1527
+          ]
+        }
+      ],
+      "printOrder": 13
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III · Q2",
+      "mode": "crop",
+      "n": "12",
+      "pP": 9,
+      "pY": [
+        0.1352,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.1527,
+            1.0,
+            0.2988
+          ]
+        }
+      ],
+      "printOrder": 14
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III · Q3",
+      "mode": "crop",
+      "n": "13",
+      "pP": 9,
+      "pY": [
+        0.3318,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.2988,
+            1.0,
+            0.5274
+          ]
+        }
+      ],
+      "printOrder": 15
+    },
+    {
+      "conf": 1.0,
+      "label": "Text III · Q4",
+      "mode": "crop",
+      "n": "14",
+      "pP": 9,
+      "pY": [
+        0.7577,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.5274,
+            1.0,
+            0.7486
+          ]
+        }
+      ],
+      "printOrder": 16
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Cloze written production",
+      "mode": "crop",
+      "n": "15",
+      "pP": 11,
+      "pY": [
+        0.0915,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0567,
+            1.0,
+            0.434
+          ]
+        }
+      ],
+      "endP": 11,
+      "endY": 0.93,
+      "printOrder": 18
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Personal written production",
+      "mode": "crop",
+      "n": "16",
+      "pP": 12,
+      "pY": [
+        0.0349,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.434,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.073,
+            1.0,
+            0.82
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.93,
+      "printOrder": 19
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · B · Gramadach",
+      "mode": "crop",
+      "n": "17",
+      "pP": 6,
+      "pY": [
+        0.0343,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0566,
+            1.0,
+            0.4055
+          ]
+        }
+      ],
+      "endP": 6,
+      "endY": 0.93,
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · C · Kanji",
+      "mode": "crop",
+      "n": "18",
+      "pP": 7,
+      "pY": [
+        0.0343,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.4055,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0567
+          ]
+        }
+      ],
+      "endP": 7,
+      "endY": 0.93,
+      "printOrder": 12
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · B · Cultúr agus sochaí",
+      "mode": "crop",
+      "n": "19",
+      "pP": 10,
+      "pY": [
+        0.0505,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.7486,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0567
+          ]
+        }
+      ],
+      "endP": 10,
+      "endY": 0.93,
+      "printOrder": 17
+    }
+  ],
+  "schemeFileid": "LC058GLP000IV.pdf",
+  "v": 1
+}

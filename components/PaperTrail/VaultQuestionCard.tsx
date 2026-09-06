@@ -17,15 +17,31 @@ import { BookOpenCheck, Check, ChevronDown, ExternalLink, Plus, Scale } from 'lu
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { type PaperAnswerMap, type PaperAnswerQuestion } from '../../types/paperTrail';
 import CropView from './CropView';
-import { paperRegionFor } from './paperRegion';
+import { paperRegionFor, schemeRegionFor } from './paperRegion';
 import { vaultPdf } from './vaultDocs';
-import { answerMapUrls, isAnswerMap, resolveSibling } from './vaultResolve';
+import {
+  answerMapUrls,
+  isAnswerMap,
+  mergePaperAnchorMetadata,
+  resolveSibling,
+} from './vaultResolve';
 import { type TopicSibling } from './topics';
 import { lensFor } from '../../data/markingLens';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
 const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
+// A few verified booklet formats deliberately allocate more than three pages
+// to one Paper Trail card. Applied Mathematics questions can span four pages;
+// Politics & Society groups the complete lettered short-answer and data-based
+// sections into single local cards, which can span ten. Every other subject
+// keeps the conservative default that rejects suspiciously distant anchors.
+const paperCropPageLimit = (subjectId: string) =>
+  subjectId === 'politics-and-society'
+    ? 10
+    : subjectId === 'applied-mathematics'
+      ? 4
+      : 3;
 
 // Stable identity — CropView re-renders its (expensive) canvas whenever this
 // callback's reference changes, so it must NOT be an inline closure per render
@@ -62,19 +78,29 @@ const fetchOneMap = (url: string): Promise<PaperAnswerMap | null> => {
   }
   return p;
 };
-/** First candidate map that actually CARRIES question `n` (Storage sidecar,
- *  then the hosted paper-anchors fallback) — a valid map numbered against a
- *  different question run (the split-spec Paper-2 class: printed Q11-17 vs a
- *  tag's 1-7) must not shadow a later candidate that has the question. */
+/** Resolve a map that actually CARRIES question `n`. When both the verified
+ *  Storage answer map and a hosted paper-only map carry it, retain the scheme
+ *  crop and add the audited paper endpoints from the hosted map. A map numbered
+ *  against a different question run must not shadow a later valid candidate. */
 const fetchAnswerMap = async (urls: string[], n: string): Promise<PaperAnswerMap | null> => {
   let withoutN: PaperAnswerMap | null = null;
+  let matched: PaperAnswerMap | null = null;
   for (const url of urls) {
     const m = await fetchOneMap(url);
     if (!m) continue;
-    if (m.q.some(q => q.n === n)) return m;
+    if (m.q.some(q => q.n === n)) {
+      if (!matched) {
+        matched = m;
+      } else if (m.paperOnly === 1 && matched.paperOnly !== 1) {
+        matched = mergePaperAnchorMetadata(matched, m, n);
+      } else if (matched.paperOnly === 1 && m.paperOnly !== 1) {
+        matched = mergePaperAnchorMetadata(m, matched, n);
+      }
+      continue;
+    }
     withoutN = withoutN ?? m;
   }
-  return withoutN;
+  return matched ?? withoutN;
 };
 
 type CardState =
@@ -127,7 +153,11 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
       const map = await fetchAnswerMap(answerMapUrls(resolved), sibling.n);
       if (cancelled) return;
       const q = map?.q.find(x => x.n === sibling.n);
-      const region = map && q ? paperRegionFor(map.q, sibling.n) : null;
+      const cropLimit = Math.max(
+        paperCropPageLimit(sibling.subjectId),
+        map?.maxCropPages ?? 0,
+      );
+      const region = map && q ? paperRegionFor(map.q, sibling.n, cropLimit) : null;
       if (!q || !region) { setState({ s: 'fallback' }); return; }
       try {
         const pdf = await vaultPdf(resolved.paperUrl);
@@ -301,7 +331,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
                   Marking scheme — © State Examinations Commission
                 </p>
                 {schemePdf && state.s === 'ready' ? (
-                  <CropView pdf={schemePdf} region={state.q.region} />
+                  <CropView pdf={schemePdf} region={schemeRegionFor(state.q)} />
                 ) : schemeFailed ? (
                   <p className="text-[12px] py-3 text-center" style={{ color: '#5a5550' }}>
                     Couldn’t load the scheme — open the question in the full paper instead.

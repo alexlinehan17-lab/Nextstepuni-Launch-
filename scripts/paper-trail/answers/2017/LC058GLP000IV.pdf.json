@@ -1,1 +1,361 @@
-{"band":[1,17],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058GLP000IV.pdf","q":[{"conf":1.0,"label":"Ceist 1 · Q1 (links)","mode":"crop","n":"1","pP":3,"pY":[0.0,1.0],"region":[{"p":5,"r":[0.0,0.1497,1.0,0.3613]}]},{"conf":1.0,"label":"Ceist 1 · Q2 (Singles categories)","mode":"crop","n":"2","pP":3,"pY":[0.0,1.0],"region":[{"p":5,"r":[0.0,0.3613,1.0,0.4433]}]},{"conf":1.0,"label":"Ceist 1 · Q3 (Album categories c, d)","mode":"crop","n":"3","pP":3,"pY":[0.0,1.0],"region":[{"p":5,"r":[0.0,0.4433,1.0,0.5416]}]},{"conf":1.0,"label":"Ceist 1 · Q4 (Film genres)","mode":"crop","n":"4","pP":3,"pY":[0.5694,1.0],"region":[{"p":5,"r":[0.0,0.5416,1.0,0.6236]}]},{"conf":1.0,"label":"Ceist 1 · Q5 (table + purchase)","mode":"crop","n":"5","pP":3,"pY":[0.6882,1.0],"region":[{"p":5,"r":[0.0,0.6236,1.0,1.0]},{"p":6,"r":[0.0,0.0,1.0,0.0679]}]},{"conf":1.0,"label":"Ceist 2A · Q1-4 (mango article)","mode":"crop","n":"6","pP":5,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.0841,1.0,0.3629]}]},{"conf":1.0,"label":"Ceist 2B · Fíor/Bréagach","mode":"crop","n":"7","pP":5,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.3629,1.0,0.6622]}]},{"conf":1.0,"label":"Ceist 2C · Kanji","mode":"crop","n":"8","pP":6,"pY":[0.0331,1.0],"region":[{"p":6,"r":[0.0,0.6622,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0679]}]},{"conf":1.0,"label":"Ceist 2D · Culture/food","mode":"crop","n":"9","pP":7,"pY":[0.0331,1.0],"region":[{"p":7,"r":[0.0,0.0679,1.0,0.1744]}]},{"conf":1.0,"label":"Ceist 3A · Q1-4 (Jack's email)","mode":"crop","n":"10","pP":9,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.199,1.0,1.0]},{"p":8,"r":[0.0,0.0,1.0,0.068]}]},{"conf":1.0,"label":"Ceist 3B · Gramadach","mode":"crop","n":"11","pP":10,"pY":[0.0505,1.0],"region":[{"p":8,"r":[0.0,0.068,1.0,1.0]},{"p":9,"r":[0.0,0.0,1.0,0.4672]}]}],"schemeFileid":"LC058GLP000IV.pdf","v":1}
+{
+  "band": [
+    1,
+    17
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058GLP000IV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Q1 (links)",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.1497,
+            1.0,
+            0.3613
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Q2 (Singles categories)",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.3613,
+            1.0,
+            0.4433
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Q3 (Album categories c, d)",
+      "mode": "crop",
+      "n": "3",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.4433,
+            1.0,
+            0.5416
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Q4 (Film genres)",
+      "mode": "crop",
+      "n": "4",
+      "pP": 3,
+      "pY": [
+        0.5694,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.5416,
+            1.0,
+            0.6236
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Q5 (table + purchase)",
+      "mode": "crop",
+      "n": "5",
+      "pP": 3,
+      "pY": [
+        0.6882,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.6236,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0679
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2A · Q1-4 (mango article)",
+      "mode": "crop",
+      "n": "6",
+      "pP": 5,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0841,
+            1.0,
+            0.3629
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2B · Fíor/Bréagach",
+      "mode": "crop",
+      "n": "7",
+      "pP": 5,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.3629,
+            1.0,
+            0.6622
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2C · Kanji",
+      "mode": "crop",
+      "n": "8",
+      "pP": 6,
+      "pY": [
+        0.0331,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.6622,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0679
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2D · Culture/food",
+      "mode": "crop",
+      "n": "9",
+      "pP": 7,
+      "pY": [
+        0.0331,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0679,
+            1.0,
+            0.1744
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3A · Q1-4 (Jack's email)",
+      "mode": "crop",
+      "n": "10",
+      "pP": 9,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.199,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.068
+          ]
+        }
+      ],
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3B · Gramadach",
+      "mode": "crop",
+      "n": "11",
+      "pP": 10,
+      "pY": [
+        0.0505,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.068,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.4672
+          ]
+        }
+      ],
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Cloze written production",
+      "mode": "crop",
+      "n": "12",
+      "pP": 11,
+      "pY": [
+        0.0851,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0718,
+            1.0,
+            0.4672
+          ]
+        }
+      ],
+      "endP": 11,
+      "endY": 0.93,
+      "printOrder": 12
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Personal written production",
+      "mode": "crop",
+      "n": "13",
+      "pP": 12,
+      "pY": [
+        0.0426,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.4672,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.1579,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.93,
+      "printOrder": 13
+    }
+  ],
+  "schemeFileid": "LC058GLP000IV.pdf",
+  "v": 1
+}

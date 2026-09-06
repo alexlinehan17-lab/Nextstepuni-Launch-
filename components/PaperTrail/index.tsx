@@ -44,6 +44,7 @@ import { composeCoach } from './coach';
 import { composeDebrief, debriefSeen, markDebriefSeen } from './debrief';
 import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
+import { hostedAnchorsUrl, preferredAnswersUrl } from './vaultResolve';
 import { isPinned, listPins, listRecentOpens, recordRecentOpen, togglePin, type PaperRef } from './recentsStore';
 import { recordVisit } from '../lastVisited';
 import {
@@ -117,6 +118,23 @@ export const paperTrailSubjectLabel = (subject: PaperTrailSubject) =>
   (subjectLabelCounts.get(`${subject.cycle}:${displayName(subject.name)}`) ?? 0) > 1
     ? subject.name
     : displayName(subject.name);
+
+/** Keep Topic Atlas/Mock Builder inside the student's actual programme. LC
+ * and LCA reuse several display names, so a name-only profile match must never
+ * pull both syllabuses into "My subjects". */
+export const paperTrailSubjectVisibleForProfile = (
+  subject: Pick<PaperTrailSubject, 'cycle'>,
+  junior: boolean,
+  isLca: boolean,
+) => junior
+  ? subject.cycle === 'jc'
+  : subject.cycle === 'lc' || (isLca && subject.cycle === 'lca');
+
+export const paperTrailSubjectMatchesProfileCycle = (
+  subject: Pick<PaperTrailSubject, 'cycle'>,
+  junior: boolean,
+  isLca: boolean,
+) => subject.cycle === (junior ? 'jc' : isLca ? 'lca' : 'lc');
 
 const subjectLabelForId = (id: string) => {
   const subject = subjectById.get(id);
@@ -515,7 +533,17 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
             : undefined
         }
         answersUrl={
-          hasAnswers ? paperUrl(paperAnswersPath(subj.cycle, subj.id, view.year, view.item.doc.f)) : undefined
+          hasAnswers
+            ? preferredAnswersUrl(
+                subj.id,
+                view.year,
+                view.item.doc.f,
+                paperUrl(paperAnswersPath(subj.cycle, subj.id, view.year, view.item.doc.f)),
+              )
+            : undefined
+        }
+        focusAnchorsUrl={
+          view.focusQuestion ? hostedAnchorsUrl(view.year, view.item.doc.f) : undefined
         }
         timing={timingFor(subj.id, view.item.label)}
         grammar={grammarFor(subj.id)}
@@ -540,13 +568,18 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   if (view.v === 'revise') {
     const inCycleTagged = taggedSubjects()
       .map(id => subjectById.get(id))
-      .filter((s): s is PaperTrailSubject => !!s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc'))
+      .filter((s): s is PaperTrailSubject => (
+        !!s && paperTrailSubjectVisibleForProfile(s, junior, isLca)
+      ))
       .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
     const mineNames = new Set((studentSubjects ?? []).map(baseName));
     return (
       <ReviseByTopic
         subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
-        mineIds={inCycleTagged.filter(s => matchesStudent(s, mineNames)).map(s => s.id)}
+        mineIds={inCycleTagged.filter(s => (
+          paperTrailSubjectMatchesProfileCycle(s, junior, isLca)
+          && matchesStudent(s, mineNames)
+        )).map(s => s.id)}
         uid={uid}
         subjectLabel={subjectLabelForId}
         restore={view.restore}
@@ -560,7 +593,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   if (view.v === 'mock') {
     const inCycleTagged = taggedSubjects()
       .map(id => subjectById.get(id))
-      .filter((s): s is PaperTrailSubject => !!s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc'))
+      .filter((s): s is PaperTrailSubject => (
+        !!s && paperTrailSubjectVisibleForProfile(s, junior, isLca)
+      ))
       .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
     const mineNames = new Set((studentSubjects ?? []).map(baseName));
     return (
@@ -568,7 +603,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         uid={uid}
         now={Date.now()}
         subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
-        mineIds={inCycleTagged.filter(s => matchesStudent(s, mineNames)).map(s => s.id)}
+        mineIds={inCycleTagged.filter(s => (
+          paperTrailSubjectMatchesProfileCycle(s, junior, isLca)
+          && matchesStudent(s, mineNames)
+        )).map(s => s.id)}
         subjectLabel={subjectLabelForId}
         onOpenQuestion={openCrossYear}
         onBack={() => setView({ v: 'home' })}

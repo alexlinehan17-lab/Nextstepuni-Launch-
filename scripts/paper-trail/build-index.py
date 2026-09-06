@@ -74,6 +74,15 @@ PAIR_OVERRIDES = {
     ("lc", 2011, "LC014ALP013IV.pdf"): "LC014ALP000IV.pdf",
     ("lb", 2010, "LB847CLP000EV.pdf"): "LB847CLP016EV.pdf",  # WRITTEN scheme, not TASKS
     ("lb", 2011, "LB847CLP000EV.pdf"): "LB847CLP016EV.pdf",
+    # From 2014 the SEC stopped using the 030 filename/label for the Project
+    # Maths scheme, although the corresponding papers retained 130/230 codes.
+    # Each 000 scheme contains both Paper 1 and Paper 2 for its level.
+    ("lc", 2014, "LC003ALP130EV.pdf"): "LC003ALP000EV.pdf",
+    ("lc", 2014, "LC003ALP230EV.pdf"): "LC003ALP000EV.pdf",
+    ("lc", 2014, "LC003GLP130EV.pdf"): "LC003GLP000EV.pdf",
+    ("lc", 2014, "LC003GLP230EV.pdf"): "LC003GLP000EV.pdf",
+    ("lc", 2014, "LC003BLP130EV.pdf"): "LC003BLP000EV.pdf",
+    ("lc", 2014, "LC003BLP230EV.pdf"): "LC003BLP000EV.pdf",
 }
 
 # Known archive typos, normalised before decoding (verified by adversarial audit).
@@ -894,8 +903,17 @@ def main():
     curriculum = parse_curriculum()
     cur_by_norm = {"lc": {}, "jc": {}}
     for cid, cname, _levels in curriculum:
+        # LCA subjects often share a display name with an established Leaving
+        # Certificate subject (Engineering, French, German, Italian, Spanish,
+        # Technology). Treating every non-JC record as LC made the later LCA
+        # record overwrite the real LC curriculum link. Parenthetical stripping
+        # caused the same collision between History and the retired History
+        # (Early Modern) record. Exact programme-aware names keep those distinct;
+        # genuine archive aliases remain explicit in CURRICULUM_OVERRIDES.
+        if cid.startswith("lca-"):
+            continue
         pool = "jc" if cid.startswith("jc-") else "lc"
-        cur_by_norm[pool][norm_name(cname, strip_parens=True)] = cid
+        cur_by_norm[pool].setdefault(norm_name(cname, strip_parens=True), cid)
 
     def curriculum_id_for(cycle, sec_name):
         key = (("jc" if cycle == "jc" else "lc"), norm_name(sec_name))

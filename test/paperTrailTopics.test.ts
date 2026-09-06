@@ -13,6 +13,7 @@
 import { describe, expect, it } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
+import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 
 const ROOT = path.resolve(__dirname, '..');
 const TAGS = JSON.parse(
@@ -37,6 +38,10 @@ const anchorNs = (year: number, fileid: string): Set<string> | null => {
 };
 
 describe('topic tags join their paper anchors', () => {
+  it('dictionary runtime expands exactly to the committed full audit artifact', () => {
+    expect(PAPER_TOPIC_TAGS).toEqual(TAGS);
+  });
+
   it('no tagged paper is fully unjoinable by question number', () => {
     const broken: string[] = [];
     let anchored = 0;

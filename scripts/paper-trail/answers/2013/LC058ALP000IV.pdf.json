@@ -1,1 +1,330 @@
-{"band":[1,17],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058ALP000IV.pdf","q":[{"conf":1.0,"label":"Ceist 1 · Cuid A (Fashion Week schedule)","mode":"crop","n":"1","pP":3,"pY":[0.0325,1.0],"region":[{"p":6,"r":[0.0,0.1134,1.0,0.6991]}]},{"conf":1.0,"label":"Ceist 1 · Cuid B (Designer biography)","mode":"crop","n":"2","pP":4,"pY":[0.5218,1.0],"region":[{"p":6,"r":[0.0,0.6991,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0861]}]},{"conf":1.0,"label":"Ceist 2 · A (Accommodation table)","mode":"crop","n":"3","pP":6,"pY":[0.0487,1.0],"region":[{"p":7,"r":[0.0,0.0861,1.0,0.4994]}]},{"conf":1.0,"label":"Ceist 2 · B (Comprehension in Japanese)","mode":"crop","n":"4","pP":6,"pY":[0.341,1.0],"region":[{"p":7,"r":[0.0,0.4994,1.0,0.8398]}]},{"conf":1.0,"label":"Ceist 2 · C (Advantages and disadvantages)","mode":"crop","n":"5","pP":6,"pY":[0.6423,1.0],"region":[{"p":7,"r":[0.0,0.8398,1.0,1.0]},{"p":8,"r":[0.0,0.0,1.0,0.321]}]},{"conf":1.0,"label":"Ceist 3 · A (Evan and Mika e-mail)","mode":"crop","n":"6","pP":10,"pY":[0.1122,1.0],"region":[{"p":9,"r":[0.0,0.2581,1.0,1.0]},{"p":10,"r":[0.0,0.0,1.0,0.0642]}]}],"schemeFileid":"LC058ALP000IV.pdf","v":1}
+{
+  "band": [
+    1,
+    17
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058ALP000IV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid A (Fashion Week schedule)",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0325,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.1134,
+            1.0,
+            0.6991
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 1 · Cuid B (Designer biography)",
+      "mode": "crop",
+      "n": "2",
+      "pP": 4,
+      "pY": [
+        0.5218,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.6991,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0861
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · A (Accommodation table)",
+      "mode": "crop",
+      "n": "3",
+      "pP": 6,
+      "pY": [
+        0.0487,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0861,
+            1.0,
+            0.4994
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · B (Comprehension in Japanese)",
+      "mode": "crop",
+      "n": "4",
+      "pP": 6,
+      "pY": [
+        0.341,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.4994,
+            1.0,
+            0.8398
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · C (Advantages and disadvantages)",
+      "mode": "crop",
+      "n": "5",
+      "pP": 6,
+      "pY": [
+        0.6423,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.8398,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.321
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · A (Evan and Mika e-mail)",
+      "mode": "crop",
+      "n": "6",
+      "pP": 10,
+      "pY": [
+        0.1122,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.2581,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0642
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Short written production",
+      "mode": "crop",
+      "n": "7",
+      "pP": 12,
+      "pY": [
+        0.0331,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.3478,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0641,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 14,
+      "endY": 0.93,
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Extended written production",
+      "mode": "crop",
+      "n": "8",
+      "pP": 15,
+      "pY": [
+        0.0332,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0806,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0804,
+            1.0,
+            0.85
+          ]
+        }
+      ],
+      "endP": 18,
+      "endY": 0.93,
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · B · Kanji",
+      "mode": "crop",
+      "n": "9",
+      "pP": 7,
+      "pY": [
+        0.049,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.321,
+            1.0,
+            0.4862
+          ]
+        }
+      ],
+      "endP": 7,
+      "endY": 0.3953,
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · C · Gramadach",
+      "mode": "crop",
+      "n": "10",
+      "pP": 7,
+      "pY": [
+        0.3953,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.4862,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.2581
+          ]
+        }
+      ],
+      "endP": 8,
+      "endY": 0.93,
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · B · Kanji",
+      "mode": "crop",
+      "n": "11",
+      "pP": 11,
+      "pY": [
+        0.049,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0642,
+            1.0,
+            0.3478
+          ]
+        }
+      ],
+      "endP": 11,
+      "endY": 0.93,
+      "printOrder": 9
+    }
+  ],
+  "schemeFileid": "LC058ALP000IV.pdf",
+  "v": 1
+}

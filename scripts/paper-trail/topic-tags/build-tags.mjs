@@ -10,10 +10,11 @@
  * with its curriculum subtopic id, adversarially verified). Add a subject by
  * dropping its wave file here and re-running this.
  *
- * Emits JSON data artifacts plus a small typed TypeScript adapter. Labels are
- * pulled from curriculum.ts for only the subtopic ids actually used. Keeping
- * the 22k-question corpus out of TypeScript materially reduces compiler/editor
- * work while Vite still code-splits it with the lazy Paper Trail route.
+ * Emits the full JSON audit artifact, a dictionary-encoded runtime artifact,
+ * and a small typed TypeScript adapter. Labels are pulled from curriculum.ts
+ * for only the subtopic ids actually used. The compact runtime avoids spending
+ * most of the lazy Paper Trail chunk on repeated object keys and identifiers;
+ * the full source remains committed for preservation review and diffs.
  *
  * Usage:  node scripts/paper-trail/topic-tags/build-tags.mjs
  */
@@ -62,6 +63,52 @@ const labels = {};
 for (const id of [...used].sort()) labels[id] = NAME[id] || id;
 
 const subjects = [...new Set(papers.map(p => p.subjectId))];
+const runtimeSubjects = [...subjects].sort();
+const runtimeTopics = [...used].sort();
+const runtimeFiles = [...new Set(papers.map(p => p.fileid))].sort();
+const subjectIndex = new Map(runtimeSubjects.map((id, index) => [id, index]));
+const topicIndex = new Map(runtimeTopics.map((id, index) => [id, index]));
+const fileIndex = new Map(runtimeFiles.map((id, index) => [id, index]));
+const levelCode = { higher: 'h', ordinary: 'o', foundation: 'f', common: 'c' };
+const langCode = { ev: 'e', iv: 'i' };
+const paperKeyCode = { single: 's', p1: '1', p2: '2', aural: 'a', 'section-a': 'x' };
+const runtime = {
+  v: 1,
+  subjects: runtimeSubjects,
+  topics: runtimeTopics,
+  files: runtimeFiles,
+  // [subject index, h/o/f/c, e/i, year, file index, single/p1/p2/aural/section-a, questions]
+  // question = [printed id, primary topic index, optional secondary topic index]
+  papers: papers.map(paper => {
+    const s = subjectIndex.get(paper.subjectId);
+    const f = fileIndex.get(paper.fileid);
+    const level = levelCode[paper.level];
+    const lang = langCode[paper.lang];
+    const key = paperKeyCode[paper.paperKey];
+    if (s === undefined || f === undefined || !level || !lang || !key) {
+      throw new Error(`Cannot compact paper identity: ${JSON.stringify(paper)}`);
+    }
+    return [
+      s,
+      level,
+      lang,
+      paper.year,
+      f,
+      key,
+      paper.q.map(question => {
+        const primary = topicIndex.get(question.primary);
+        const secondary = question.secondary ? topicIndex.get(question.secondary) : undefined;
+        if (primary === undefined || (question.secondary && secondary === undefined)) {
+          throw new Error(`Cannot compact question topics: ${JSON.stringify(question)}`);
+        }
+        return secondary === undefined
+          ? [question.n, primary]
+          : [question.n, primary, secondary];
+      }),
+    ];
+  }),
+};
+
 const out = `/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -74,14 +121,56 @@ const out = `/**
  */
 
 import topicLabels from './topicLabels.json';
-import paperTopicTags from './paperTopicTags.json';
+import compactTopicTags from './paperTopicTags-runtime.json';
 import { type PaperTopicTags } from '../../types/paperTrailTopics';
 
 export const TOPIC_LABELS: Record<string, string> = topicLabels;
 
-export const PAPER_TOPIC_TAGS: PaperTopicTags[] = paperTopicTags as PaperTopicTags[];
+type CompactLevel = 'h' | 'o' | 'f' | 'c';
+type CompactLang = 'e' | 'i';
+type CompactPaperKey = 's' | '1' | '2' | 'a' | 'x';
+type CompactQuestion = [string, number, number?];
+interface CompactTopicTags {
+  v: 1;
+  subjects: string[];
+  topics: string[];
+  files: string[];
+  papers: Array<[number, CompactLevel, CompactLang, number, number, CompactPaperKey, CompactQuestion[]]>;
+}
+
+const compact = compactTopicTags as CompactTopicTags;
+const LEVEL: Record<CompactLevel, PaperTopicTags['level']> = {
+  h: 'higher', o: 'ordinary', f: 'foundation', c: 'common',
+};
+const LANG: Record<CompactLang, PaperTopicTags['lang']> = { e: 'ev', i: 'iv' };
+const PAPER_KEY: Record<CompactPaperKey, string> = {
+  s: 'single', '1': 'p1', '2': 'p2', a: 'aural', x: 'section-a',
+};
+
+export const PAPER_TOPIC_TAGS: PaperTopicTags[] = compact.papers.map(([
+  subjectIndex,
+  levelCode,
+  langCode,
+  year,
+  fileIndex,
+  paperKeyCode,
+  questions,
+]) => ({
+  subjectId: compact.subjects[subjectIndex],
+  level: LEVEL[levelCode],
+  lang: LANG[langCode],
+  year,
+  fileid: compact.files[fileIndex],
+  paperKey: PAPER_KEY[paperKeyCode],
+  q: questions.map(([n, primaryIndex, secondaryIndex]) => ({
+    n,
+    primary: compact.topics[primaryIndex],
+    ...(secondaryIndex === undefined ? {} : { secondary: compact.topics[secondaryIndex] }),
+  })),
+}));
 `;
 fs.writeFileSync('data/paperTrail/topicLabels.json', JSON.stringify(labels));
 fs.writeFileSync('data/paperTrail/paperTopicTags.json', JSON.stringify(papers));
+fs.writeFileSync('data/paperTrail/paperTopicTags-runtime.json', JSON.stringify(runtime));
 fs.writeFileSync('data/paperTrail/topicTags.ts', out);
 console.log(`wrote ${papers.length} papers, ${questionCount} questions, ${Object.keys(labels).length} topics (${subjects.join(', ')})`);

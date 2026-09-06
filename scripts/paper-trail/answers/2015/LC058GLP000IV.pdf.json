@@ -1,1 +1,475 @@
-{"band":[1,21],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058GLP000IV.pdf","q":[{"conf":1.0,"label":"Téacs I · Q1 (Naisc)","mode":"crop","n":"1","pP":3,"pY":[0.0523,1.0],"region":[{"p":5,"r":[0.0,0.1479,1.0,0.3746]}]},{"conf":1.0,"label":"Téacs I · Q2 (Eolas an mhúinteora)","mode":"crop","n":"2","pP":3,"pY":[0.3473,1.0],"region":[{"p":5,"r":[0.0,0.3746,1.0,0.604]}]},{"conf":1.0,"label":"Téacs I · Q3 (Caitheamh aimsire)","mode":"crop","n":"3","pP":3,"pY":[0.5768,1.0],"region":[{"p":5,"r":[0.0,0.604,1.0,0.6861]}]},{"conf":1.0,"label":"Téacs I · Q4 (Praghas)","mode":"crop","n":"4","pP":3,"pY":[0.7079,1.0],"region":[{"p":5,"r":[0.0,0.6861,1.0,0.8007]}]},{"conf":1.0,"label":"Téacs I · Q5 (Lá saor)","mode":"crop","n":"5","pP":3,"pY":[0.8225,1.0],"region":[{"p":5,"r":[0.0,0.8007,1.0,1.0]},{"p":6,"r":[0.0,0.0,1.0,0.0661]}]},{"conf":1.0,"label":"Téacs II · A.Q1 (Cé a thaitníonn)","mode":"crop","n":"6","pP":5,"pY":[0.1001,1.0],"region":[{"p":6,"r":[0.0,0.1315,1.0,0.2605]}]},{"conf":1.0,"label":"Téacs II · A.Q2 (Tíortha AKB48)","mode":"crop","n":"7","pP":5,"pY":[0.264,1.0],"region":[{"p":6,"r":[0.0,0.2605,1.0,0.3577]}]},{"conf":1.0,"label":"Téacs II · A.Q3 (World Order)","mode":"crop","n":"8","pP":5,"pY":[0.3623,1.0],"region":[{"p":6,"r":[0.0,0.3577,1.0,0.4428]}]},{"conf":1.0,"label":"Téacs II · B (Fíor/Bréagach)","mode":"crop","n":"9","pP":5,"pY":[0.4592,1.0],"region":[{"p":6,"r":[0.0,0.4428,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.0661]}]},{"conf":1.0,"label":"Téacs III · A.Q1 (Maith le Dara)","mode":"crop","n":"10","pP":9,"pY":[0.0837,1.0],"region":[{"p":8,"r":[0.0,0.148,1.0,0.1972]}]},{"conf":1.0,"label":"Téacs III · A.Q2 (Maith le Hina)","mode":"crop","n":"11","pP":9,"pY":[0.1657,1.0],"region":[{"p":8,"r":[0.0,0.1972,1.0,0.2709]}]},{"conf":1.0,"label":"Téacs III · A.Q3 (Rogha a/b/c/d)","mode":"crop","n":"12","pP":9,"pY":[0.2476,1.0],"region":[{"p":8,"r":[0.0,0.2709,1.0,0.444]}]}],"schemeFileid":"LC058GLP000IV.pdf","v":1}
+{
+  "band": [
+    1,
+    21
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058GLP000IV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Téacs I · Q1 (Naisc)",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0523,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.1479,
+            1.0,
+            0.3746
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs I · Q2 (Eolas an mhúinteora)",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.3473,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.3746,
+            1.0,
+            0.604
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs I · Q3 (Caitheamh aimsire)",
+      "mode": "crop",
+      "n": "3",
+      "pP": 3,
+      "pY": [
+        0.5768,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.604,
+            1.0,
+            0.6861
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs I · Q4 (Praghas)",
+      "mode": "crop",
+      "n": "4",
+      "pP": 3,
+      "pY": [
+        0.7079,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.6861,
+            1.0,
+            0.8007
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs I · Q5 (Lá saor)",
+      "mode": "crop",
+      "n": "5",
+      "pP": 3,
+      "pY": [
+        0.8225,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.8007,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0661
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs II · A.Q1 (Cé a thaitníonn)",
+      "mode": "crop",
+      "n": "6",
+      "pP": 5,
+      "pY": [
+        0.1001,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.1315,
+            1.0,
+            0.2605
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs II · A.Q2 (Tíortha AKB48)",
+      "mode": "crop",
+      "n": "7",
+      "pP": 5,
+      "pY": [
+        0.264,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.2605,
+            1.0,
+            0.3577
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs II · A.Q3 (World Order)",
+      "mode": "crop",
+      "n": "8",
+      "pP": 5,
+      "pY": [
+        0.3623,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.3577,
+            1.0,
+            0.4428
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs II · B (Fíor/Bréagach)",
+      "mode": "crop",
+      "n": "9",
+      "pP": 5,
+      "pY": [
+        0.4592,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.4428,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0661
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs III · A.Q1 (Maith le Dara)",
+      "mode": "crop",
+      "n": "10",
+      "pP": 9,
+      "pY": [
+        0.0837,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.148,
+            1.0,
+            0.1972
+          ]
+        }
+      ],
+      "printOrder": 12
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs III · A.Q2 (Maith le Hina)",
+      "mode": "crop",
+      "n": "11",
+      "pP": 9,
+      "pY": [
+        0.1657,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.1972,
+            1.0,
+            0.2709
+          ]
+        }
+      ],
+      "printOrder": 13
+    },
+    {
+      "conf": 1.0,
+      "label": "Téacs III · A.Q3 (Rogha a/b/c/d)",
+      "mode": "crop",
+      "n": "12",
+      "pP": 9,
+      "pY": [
+        0.2476,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.2709,
+            1.0,
+            0.444
+          ]
+        }
+      ],
+      "printOrder": 14
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Cloze written production",
+      "mode": "crop",
+      "n": "13",
+      "pP": 11,
+      "pY": [
+        0.0853,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0648,
+            1.0,
+            0.5435
+          ]
+        }
+      ],
+      "endP": 11,
+      "endY": 0.93,
+      "printOrder": 17
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Personal written production",
+      "mode": "crop",
+      "n": "14",
+      "pP": 12,
+      "pY": [
+        0.0519,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.5435,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0661,
+            1.0,
+            0.9
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.93,
+      "printOrder": 18
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · C · Kanji",
+      "mode": "crop",
+      "n": "15",
+      "pP": 6,
+      "pY": [
+        0.0511,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0661,
+            1.0,
+            0.3774
+          ]
+        }
+      ],
+      "endP": 6,
+      "endY": 0.93,
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 2 · D · Cultúr agus sochaí",
+      "mode": "crop",
+      "n": "16",
+      "pP": 7,
+      "pY": [
+        0.051,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.3774,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.0661
+          ]
+        }
+      ],
+      "endP": 7,
+      "endY": 0.93,
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · B1 · Gramadach (foirmeacha)",
+      "mode": "crop",
+      "n": "17",
+      "pP": 10,
+      "pY": [
+        0.0837,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0661,
+            1.0,
+            0.3407
+          ]
+        }
+      ],
+      "endP": 10,
+      "endY": 0.4193,
+      "printOrder": 15
+    },
+    {
+      "conf": 1.0,
+      "label": "Ceist 3 · B2 · Gramadach (páirteagail)",
+      "mode": "crop",
+      "n": "18",
+      "pP": 10,
+      "pY": [
+        0.4193,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.3407,
+            1.0,
+            0.93
+          ]
+        }
+      ],
+      "endP": 10,
+      "endY": 0.93,
+      "printOrder": 16
+    }
+  ],
+  "schemeFileid": "LC058GLP000IV.pdf",
+  "v": 1
+}

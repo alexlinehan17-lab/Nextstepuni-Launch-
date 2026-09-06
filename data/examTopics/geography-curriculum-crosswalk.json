@@ -1,0 +1,385 @@
+{
+  "geography-higher-aerial-photos": [
+    "geography-2-8"
+  ],
+  "geography-higher-earthquakes-volcanoes": [
+    "geography-0-7"
+  ],
+  "geography-higher-economic-developing-economies": [
+    "geography-3-1"
+  ],
+  "geography-higher-economic-energy": [
+    "geography-3-5"
+  ],
+  "geography-higher-economic-environmental-impact": [
+    "geography-3-4"
+  ],
+  "geography-higher-economic-european-union": [
+    "geography-3-3"
+  ],
+  "geography-higher-economic-multinationals-globalisation": [
+    "geography-3-2"
+  ],
+  "geography-higher-elective-economic": [
+    "geography-3-0",
+    "geography-3-1",
+    "geography-3-2",
+    "geography-3-3",
+    "geography-3-4",
+    "geography-3-5"
+  ],
+  "geography-higher-elective-human": [
+    "geography-4-0",
+    "geography-4-1",
+    "geography-4-2",
+    "geography-4-3",
+    "geography-4-4",
+    "geography-4-5"
+  ],
+  "geography-higher-glaciation": [
+    "geography-0-11"
+  ],
+  "geography-higher-human-population": [
+    "geography-4-0",
+    "geography-4-1",
+    "geography-4-2"
+  ],
+  "geography-higher-human-urban-geography": [
+    "geography-4-3",
+    "geography-4-4",
+    "geography-4-5"
+  ],
+  "geography-higher-karst-regions": [
+    "geography-0-3"
+  ],
+  "geography-higher-mapwork": [
+    "geography-2-6"
+  ],
+  "geography-higher-option-atmosphere-ocean": [
+    "geography-8-0",
+    "geography-8-1",
+    "geography-8-2",
+    "geography-8-3",
+    "geography-8-4",
+    "geography-8-5"
+  ],
+  "geography-higher-option-culture-identity": [
+    "geography-7-0",
+    "geography-7-1",
+    "geography-7-2"
+  ],
+  "geography-higher-option-geoecology": [
+    "geography-6-0",
+    "geography-6-1",
+    "geography-6-2",
+    "geography-6-3"
+  ],
+  "geography-higher-option-global-interdependence": [
+    "geography-5-0",
+    "geography-5-1",
+    "geography-5-2",
+    "geography-5-3"
+  ],
+  "geography-higher-plate-tectonics": [
+    "geography-0-0"
+  ],
+  "geography-higher-project-investigation": [
+    "geography-2-1",
+    "geography-2-2",
+    "geography-2-3",
+    "geography-2-4",
+    "geography-2-5"
+  ],
+  "geography-higher-regions-continental": [
+    "geography-1-0",
+    "geography-1-1",
+    "geography-1-2",
+    "geography-1-3",
+    "geography-1-6"
+  ],
+  "geography-higher-regions-european": [
+    "geography-1-0",
+    "geography-1-1",
+    "geography-1-2",
+    "geography-1-3",
+    "geography-1-5"
+  ],
+  "geography-higher-regions-ireland": [
+    "geography-1-0",
+    "geography-1-1",
+    "geography-1-2",
+    "geography-1-3",
+    "geography-1-4"
+  ],
+  "geography-higher-rivers": [
+    "geography-0-4",
+    "geography-0-5",
+    "geography-0-6",
+    "geography-0-9"
+  ],
+  "geography-higher-rocks-weathering-mass-movement": [
+    "geography-0-1",
+    "geography-0-2",
+    "geography-0-4",
+    "geography-0-5",
+    "geography-0-6",
+    "geography-0-8"
+  ],
+  "geography-higher-tablesgraphs-questions": [
+    "geography-2-0"
+  ],
+  "geography-higher-the-sea": [
+    "geography-0-4",
+    "geography-0-5",
+    "geography-0-6",
+    "geography-0-10"
+  ],
+  "geography-higher-urban-land-uses": [
+    "geography-4-4"
+  ],
+  "geography-higher-weather-climate": [
+    "geography-2-7"
+  ],
+  "geography-ordinary-aerial-photos": [
+    "geography-2-8"
+  ],
+  "geography-ordinary-earthquakes-volcanoes": [
+    "geography-0-7"
+  ],
+  "geography-ordinary-economic-developing-economies": [
+    "geography-3-1"
+  ],
+  "geography-ordinary-economic-environmental-impact": [
+    "geography-3-4"
+  ],
+  "geography-ordinary-economic-ireland-the-eu": [
+    "geography-3-3"
+  ],
+  "geography-ordinary-economic-multinationals-globalisation": [
+    "geography-3-2"
+  ],
+  "geography-ordinary-elective-economic": [
+    "geography-3-0",
+    "geography-3-1",
+    "geography-3-2",
+    "geography-3-3",
+    "geography-3-4",
+    "geography-3-5"
+  ],
+  "geography-ordinary-elective-human": [
+    "geography-4-0",
+    "geography-4-1",
+    "geography-4-2",
+    "geography-4-3",
+    "geography-4-4",
+    "geography-4-5"
+  ],
+  "geography-ordinary-glaciation": [
+    "geography-0-11"
+  ],
+  "geography-ordinary-graph-style-questions": [
+    "geography-2-0"
+  ],
+  "geography-ordinary-human-population": [
+    "geography-4-0",
+    "geography-4-1",
+    "geography-4-2"
+  ],
+  "geography-ordinary-human-urban-geography": [
+    "geography-4-3",
+    "geography-4-4",
+    "geography-4-5"
+  ],
+  "geography-ordinary-karst-regions": [
+    "geography-0-3"
+  ],
+  "geography-ordinary-mapwork": [
+    "geography-2-6"
+  ],
+  "geography-ordinary-plate-tectonics": [
+    "geography-0-0"
+  ],
+  "geography-ordinary-project-investigation": [
+    "geography-2-1",
+    "geography-2-2",
+    "geography-2-3",
+    "geography-2-4",
+    "geography-2-5"
+  ],
+  "geography-ordinary-regions-continental": [
+    "geography-1-0",
+    "geography-1-1",
+    "geography-1-2",
+    "geography-1-3",
+    "geography-1-6"
+  ],
+  "geography-ordinary-regions-european": [
+    "geography-1-0",
+    "geography-1-1",
+    "geography-1-2",
+    "geography-1-3",
+    "geography-1-5"
+  ],
+  "geography-ordinary-regions-ireland": [
+    "geography-1-0",
+    "geography-1-1",
+    "geography-1-2",
+    "geography-1-3",
+    "geography-1-4"
+  ],
+  "geography-ordinary-rivers": [
+    "geography-0-4",
+    "geography-0-5",
+    "geography-0-6",
+    "geography-0-9"
+  ],
+  "geography-ordinary-rocks-weathering-mass-movement": [
+    "geography-0-1",
+    "geography-0-2",
+    "geography-0-4",
+    "geography-0-5",
+    "geography-0-6",
+    "geography-0-8"
+  ],
+  "geography-ordinary-the-sea": [
+    "geography-0-4",
+    "geography-0-5",
+    "geography-0-6",
+    "geography-0-10"
+  ],
+  "geography-ordinary-weather-climate": [
+    "geography-2-7"
+  ],
+  "geography-higher-new-course-11-tectonics": [
+    "geography-2028-1-tectonics"
+  ],
+  "geography-higher-new-course-12-fold-mountains": [
+    "geography-2028-1-tectonics"
+  ],
+  "geography-higher-new-course-13-volcanic-activity": [
+    "geography-2028-1-tectonics"
+  ],
+  "geography-higher-new-course-14-earthquakes": [
+    "geography-2028-1-tectonics"
+  ],
+  "geography-higher-new-course-15-rock-cycle": [
+    "geography-2028-1-rock-cycle"
+  ],
+  "geography-higher-new-course-16-surface-processes-fluvial": [
+    "geography-2028-1-surface-processes"
+  ],
+  "geography-higher-new-course-17-surface-processes-coastal": [
+    "geography-2028-1-surface-processes"
+  ],
+  "geography-higher-new-course-18-surface-processes-glacial": [
+    "geography-2028-1-surface-processes"
+  ],
+  "geography-higher-new-course-19-atmosphere-and-weather": [
+    "geography-2028-1-atmosphere-weather"
+  ],
+  "geography-higher-new-course-110-climate": [
+    "geography-2028-1-climate"
+  ],
+  "geography-higher-new-course-21-human-settlement": [
+    "geography-2028-2-human-settlement"
+  ],
+  "geography-higher-new-course-22-population": [
+    "geography-2028-2-population-migration"
+  ],
+  "geography-higher-new-course-23-migration": [
+    "geography-2028-2-population-migration"
+  ],
+  "geography-higher-new-course-31-agriculture-and-fisheries-in-ireland": [
+    "geography-2028-3-agriculture-fisheries"
+  ],
+  "geography-higher-new-course-32-tourism": [
+    "geography-2028-3-tourism"
+  ],
+  "geography-higher-new-course-33-globalisation": [
+    "geography-2028-3-globalisation"
+  ],
+  "geography-higher-new-course-34-development-assistance-and-cooperation": [
+    "geography-2028-3-development-assistance"
+  ],
+  "geography-higher-new-course-35-geopolitics": [
+    "geography-2028-3-geopolitics"
+  ],
+  "geography-higher-new-course-u1-aerial-photography": [
+    "geography-2028-u-inquiry-skills"
+  ],
+  "geography-higher-new-course-u2-ordnance-survey-mapwork": [
+    "geography-2028-u-inquiry-skills"
+  ],
+  "geography-higher-new-course-u3-graphical-interpretation-and-analysis": [
+    "geography-2028-u-inquiry-skills"
+  ],
+  "geography-higher-new-course-u4-applied-geography-projectadditional-assessment-component-aac": [
+    "geography-2028-u-inquiry-skills"
+  ],
+  "geography-ordinary-new-course-s11-tectonics": [
+    "geography-2028-1-tectonics"
+  ],
+  "geography-ordinary-new-course-s12-fold-mountains": [
+    "geography-2028-1-tectonics"
+  ],
+  "geography-ordinary-new-course-s13-volcanic-activity": [
+    "geography-2028-1-tectonics"
+  ],
+  "geography-ordinary-new-course-s14-earthquakes": [
+    "geography-2028-1-tectonics"
+  ],
+  "geography-ordinary-new-course-s15-rock-cycle": [
+    "geography-2028-1-rock-cycle"
+  ],
+  "geography-ordinary-new-course-s16-surface-processes-fluvial": [
+    "geography-2028-1-surface-processes"
+  ],
+  "geography-ordinary-new-course-s17-surface-processes-coastal": [
+    "geography-2028-1-surface-processes"
+  ],
+  "geography-ordinary-new-course-s18-surface-processes-glacial": [
+    "geography-2028-1-surface-processes"
+  ],
+  "geography-ordinary-new-course-s19-atmosphere-and-weather": [
+    "geography-2028-1-atmosphere-weather"
+  ],
+  "geography-ordinary-new-course-s110-climate": [
+    "geography-2028-1-climate"
+  ],
+  "geography-ordinary-new-course-s21-human-settlement": [
+    "geography-2028-2-human-settlement"
+  ],
+  "geography-ordinary-new-course-s22-population": [
+    "geography-2028-2-population-migration"
+  ],
+  "geography-ordinary-new-course-s23-migration": [
+    "geography-2028-2-population-migration"
+  ],
+  "geography-ordinary-new-course-s31-agriculture-and-fisheries-in-ireland": [
+    "geography-2028-3-agriculture-fisheries"
+  ],
+  "geography-ordinary-new-course-s32-tourism": [
+    "geography-2028-3-tourism"
+  ],
+  "geography-ordinary-new-course-s33-globalisation": [
+    "geography-2028-3-globalisation"
+  ],
+  "geography-ordinary-new-course-s34-development-assistance-and-cooperation": [
+    "geography-2028-3-development-assistance"
+  ],
+  "geography-ordinary-new-course-s35-geopolitics": [
+    "geography-2028-3-geopolitics"
+  ],
+  "geography-ordinary-new-course-u1-aerial-photography": [
+    "geography-2028-u-inquiry-skills"
+  ],
+  "geography-ordinary-new-course-u2-ordnance-survey-mapwork": [
+    "geography-2028-u-inquiry-skills"
+  ],
+  "geography-ordinary-new-course-u3-graphical-interpretation-and-analysis": [
+    "geography-2028-u-inquiry-skills"
+  ],
+  "geography-ordinary-new-course-u4-applied-geography-projectadditional-assessment-component-aac": [
+    "geography-2028-u-inquiry-skills"
+  ]
+}

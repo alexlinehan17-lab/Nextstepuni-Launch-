@@ -1,0 +1,377 @@
+{
+  "physical-education-higher-1-learning-and-improving-skill-technique-ability-and-skilled-performance": [
+    "physical-education-0-0",
+    "physical-education-0-1",
+    "physical-education-0-3"
+  ],
+  "physical-education-higher-1-learning-and-improving-skill-technique-biomechanics": [
+    "physical-education-0-2"
+  ],
+  "physical-education-higher-2-physical-demands-of-performance": [
+    "physical-education-0-4",
+    "physical-education-0-5",
+    "physical-education-0-6",
+    "physical-education-0-7",
+    "physical-education-0-8",
+    "physical-education-0-9"
+  ],
+  "physical-education-higher-2-physicalpsychological-demands-of-performance-diet-nutrition-hydration-and-energy-systems": [
+    "physical-education-0-12"
+  ],
+  "physical-education-higher-2-physicalpsychological-demands-of-performance-training-methods-and-fitness-planning": [
+    "physical-education-0-5",
+    "physical-education-0-6",
+    "physical-education-0-7",
+    "physical-education-0-8",
+    "physical-education-0-9",
+    "physical-education-0-10"
+  ],
+  "physical-education-higher-2-psychological-demands-of-performance": [
+    "physical-education-0-11"
+  ],
+  "physical-education-higher-3-structures-strategies-roles-conventions": [
+    "physical-education-0-13",
+    "physical-education-0-14",
+    "physical-education-0-15",
+    "physical-education-0-16",
+    "physical-education-0-17",
+    "physical-education-0-18",
+    "physical-education-0-19",
+    "physical-education-2-0",
+    "physical-education-2-1",
+    "physical-education-2-2",
+    "physical-education-2-3",
+    "physical-education-2-4",
+    "physical-education-2-5"
+  ],
+  "physical-education-higher-4-planning-for-optimum-performance": [
+    "physical-education-0-20",
+    "physical-education-0-21",
+    "physical-education-0-22",
+    "physical-education-0-23",
+    "physical-education-0-24",
+    "physical-education-2-0",
+    "physical-education-2-1",
+    "physical-education-2-2",
+    "physical-education-2-3",
+    "physical-education-2-4",
+    "physical-education-2-5"
+  ],
+  "physical-education-higher-5-promoting-physical-activity": [
+    "physical-education-1-0",
+    "physical-education-1-1",
+    "physical-education-1-2",
+    "physical-education-1-3",
+    "physical-education-1-4"
+  ],
+  "physical-education-higher-6-ethics-fair-play": [
+    "physical-education-1-5",
+    "physical-education-1-6",
+    "physical-education-1-7",
+    "physical-education-1-8",
+    "physical-education-1-9",
+    "physical-education-1-10"
+  ],
+  "physical-education-higher-7-physical-activity-inclusion": [
+    "physical-education-1-11",
+    "physical-education-1-12",
+    "physical-education-1-13",
+    "physical-education-1-14",
+    "physical-education-1-15"
+  ],
+  "physical-education-higher-8-technology-media-sport": [
+    "physical-education-1-16",
+    "physical-education-1-17",
+    "physical-education-1-18"
+  ],
+  "physical-education-higher-9-gender-physical-activity": [
+    "physical-education-1-19",
+    "physical-education-1-20",
+    "physical-education-1-21",
+    "physical-education-1-22"
+  ],
+  "physical-education-higher-business-enterprise-in-physical-activity-sport": [
+    "physical-education-1-23",
+    "physical-education-1-24",
+    "physical-education-1-25",
+    "physical-education-1-26",
+    "physical-education-1-27"
+  ],
+  "physical-education-ordinary-1-learning-and-improving-skill-technique": [
+    "physical-education-0-0",
+    "physical-education-0-1",
+    "physical-education-0-2",
+    "physical-education-0-3"
+  ],
+  "physical-education-ordinary-2-physical-psychological-demands-of-performance": [
+    "physical-education-0-4",
+    "physical-education-0-5",
+    "physical-education-0-6",
+    "physical-education-0-7",
+    "physical-education-0-8",
+    "physical-education-0-9",
+    "physical-education-0-10",
+    "physical-education-0-11",
+    "physical-education-0-12"
+  ],
+  "physical-education-ordinary-3-structures-strategies-roles-conventions": [
+    "physical-education-0-13",
+    "physical-education-0-14",
+    "physical-education-0-15",
+    "physical-education-0-16",
+    "physical-education-0-17",
+    "physical-education-0-18",
+    "physical-education-0-19",
+    "physical-education-2-0",
+    "physical-education-2-1",
+    "physical-education-2-2",
+    "physical-education-2-3",
+    "physical-education-2-4",
+    "physical-education-2-5"
+  ],
+  "physical-education-ordinary-4-planning-for-optimum-performance": [
+    "physical-education-0-20",
+    "physical-education-0-21",
+    "physical-education-0-22",
+    "physical-education-0-23",
+    "physical-education-0-24",
+    "physical-education-2-0",
+    "physical-education-2-1",
+    "physical-education-2-2",
+    "physical-education-2-3",
+    "physical-education-2-4",
+    "physical-education-2-5"
+  ],
+  "physical-education-ordinary-5-promoting-physical-activity": [
+    "physical-education-1-0",
+    "physical-education-1-1",
+    "physical-education-1-2",
+    "physical-education-1-3",
+    "physical-education-1-4"
+  ],
+  "physical-education-ordinary-6-ethics-fair-play": [
+    "physical-education-1-5",
+    "physical-education-1-6",
+    "physical-education-1-7",
+    "physical-education-1-8",
+    "physical-education-1-9",
+    "physical-education-1-10"
+  ],
+  "physical-education-ordinary-7-physical-activity-inclusion": [
+    "physical-education-1-11",
+    "physical-education-1-12",
+    "physical-education-1-13",
+    "physical-education-1-14",
+    "physical-education-1-15"
+  ],
+  "physical-education-ordinary-8-technology-media-sport": [
+    "physical-education-1-16",
+    "physical-education-1-17",
+    "physical-education-1-18"
+  ],
+  "physical-education-ordinary-9-gender-physical-activity": [
+    "physical-education-1-19",
+    "physical-education-1-20",
+    "physical-education-1-21",
+    "physical-education-1-22"
+  ],
+  "physical-education-ordinary-business-enterprise-in-physical-activity-sport": [
+    "physical-education-1-23",
+    "physical-education-1-24",
+    "physical-education-1-25",
+    "physical-education-1-26",
+    "physical-education-1-27"
+  ],
+  "physical-education-higher-new-course-11-describe-the-stages-of-skill-learning": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-12-investigate-factors-influencing-skill-learning": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-13-design-effective-schedules-and-practice-sessions": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-14-evaluate-the-principles-of-effective-practice": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-15-demonstrate-sport-skills-tactical-awarenessdecision-making-in-varied-physical-activities": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-16-identify-the-characteristics-of-a-skilled-performance": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-17-discuss-the-difference-between-skill-and-ability": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-18-analyse-the-performance-of-skills-including-a-critical-analysis-for-improvement": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-19-appraise-and-compare-aesthetic-and-artistic-criteria-in-movement": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-110-investigate-the-body-s-response-to-physical-activity-participation": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-111-assess-being-physically-active-across-the-life-stages": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-higher-new-course-21-apply-the-components-of-fitness-in-terms-of-physical-activity-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-22-apply-principles-of-training-to-achieve-optimum-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-23-discuss-recovery-strategies-and-apply-principles-of-periodisation": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-24-analyse-psychological-preparedness-practice-and-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-25-evaluate-strategies-to-enhance-psychological-factors": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-26-investigate-the-use-of-personal-action-plans": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-27-examine-the-role-of-nutrition-in-supporting-physical-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-28-analyse-the-role-and-relative-contribution-of-the-human-body-energy-systems-during-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-29-recognise-the-role-of-the-muscular-and-skeletal-systems-in-human-movement": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-210-analyse-factors-in-planning-for-an-optimum-performance-in-physical-activity": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-211-analyse-the-provision-and-support-for-high-performance-sport-in-ireland": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-higher-new-course-31-examine-safe-practice-approaches-to-performance-and-the-organisation-of-physical-activity": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-32-apply-structures-tactics-and-compositional-elements-in-a-range-of-physical-activities": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-33-describe-the-requirements-of-officiating": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-34-explore-the-role-of-coacheschoreographers": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-35-examine-the-principles-of-ethical-practice-sport-and-key-factors-impacting-on-ethical-practice-in-sport": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-36-discuss-performance-enhancing-drugs-in-sport-and-doping-regulations": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-37-discuss-the-impact-of-technological-developments-in-physical-activity": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-38-appreciate-the-role-of-the-media-and-sponsorship-on-physical-activity-and-sport": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-39-examine-factors-that-influence-access-to-inclusion-participation-and-performance-in-physical-activity": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-higher-new-course-310-evaluate-strategies-related-to-physical-activity-promotion": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-11-describe-the-stages-of-skill-learning": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-12-investigate-factors-influencing-skill-learning": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-13-design-effective-schedules-and-practice-sessions": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-14-evaluate-the-principles-of-effective-practice": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-15-demonstrate-sport-skills-tactical-awarenessdecision-making-in-varied-physical-activities": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-16-identify-the-characteristics-of-a-skilled-performance": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-17-discuss-the-difference-between-skill-and-ability": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-18-analyse-the-performance-of-skills-including-a-critical-analysis-for-improvement": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-19-appraise-and-compare-aesthetic-and-artistic-criteria-in-movement": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-110-investigate-the-body-s-response-to-physical-activity-participation": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-111-assess-being-physically-active-across-the-life-stages": [
+    "physical-education-2028-skill-performance"
+  ],
+  "physical-education-ordinary-new-course-21-apply-the-components-of-fitness-in-terms-of-physical-activity-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-22-apply-principles-of-training-to-achieve-optimum-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-23-discuss-recovery-strategies-and-apply-principles-of-periodisation": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-24-analyse-psychological-preparedness-practice-and-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-25-evaluate-strategies-to-enhance-psychological-factors": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-26-investigate-the-use-of-personal-action-plans": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-27-examine-the-role-of-nutrition-in-supporting-physical-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-28-analyse-the-role-and-relative-contribution-of-the-human-body-energy-systems-during-performance": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-29-recognise-the-role-of-the-muscular-and-skeletal-systems-in-human-movement": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-210-analyse-factors-in-planning-for-an-optimum-performance-in-physical-activity": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-211-analyse-the-provision-and-support-for-high-performance-sport-in-ireland": [
+    "physical-education-2028-demands-performance"
+  ],
+  "physical-education-ordinary-new-course-31-examine-safe-practice-approaches-to-performance-and-the-organisation-of-physical-activity": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-32-apply-structures-tactics-and-compositional-elements-in-a-range-of-physical-activities": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-33-describe-the-requirements-of-officiating": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-34-explore-the-role-of-coacheschoreographers": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-35-examine-the-principles-of-ethical-practice-sport-and-key-factors-impacting-on-ethical-practice-in-sport": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-36-discuss-performance-enhancing-drugs-in-sport-and-doping-regulations": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-37-discuss-the-impact-of-technological-developments-in-physical-activity": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-38-appreciate-the-role-of-the-media-and-sponsorship-on-physical-activity-and-sport": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-39-examine-factors-that-influence-access-to-inclusion-participation-and-performance-in-physical-activity": [
+    "physical-education-2028-participation-factors"
+  ],
+  "physical-education-ordinary-new-course-310-evaluate-strategies-related-to-physical-activity-promotion": [
+    "physical-education-2028-participation-factors"
+  ]
+}

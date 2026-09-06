@@ -17,6 +17,8 @@ import {
   taggedSubjects,
   frequencyFor,
   topicsForPaper,
+  browseTopicIdsForQuestion,
+  paperKeyOf,
 } from '../components/PaperTrail/topics';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 
@@ -26,6 +28,12 @@ const sampleSubject = subjects.find(s => topicsForSubject(s).length > 0)!;
 const sampleTopics = topicsForSubject(sampleSubject).slice(0, 3);
 
 describe('Topic Vault feed primitives', () => {
+  it('keeps written and aural paper identities separate', () => {
+    expect(paperKeyOf('Exam Paper')).toBe('single');
+    expect(paperKeyOf('Aural Paper')).toBe('aural');
+    expect(paperKeyOf('Listening Comprehension')).toBe('aural');
+  });
+
   it('there is real tag data to test against', () => {
     expect(subjects.length).toBeGreaterThan(0);
     expect(sampleTopics.length).toBeGreaterThan(0);
@@ -40,23 +48,28 @@ describe('Topic Vault feed primitives', () => {
     }
   });
 
-  it('every sibling actually carries the requested topic (primary or secondary)', () => {
-    const key = (s: { level: string; lang: string; year: number; fileid: string }) =>
-      `${s.level}|${s.lang}|${s.year}|${s.fileid}`;
-    const bySlice = new Map<string, (typeof PAPER_TOPIC_TAGS)[number]>();
-    for (const p of PAPER_TOPIC_TAGS) bySlice.set(key(p), p);
+  it('every sibling actually carries the requested canonical or exam topic', () => {
     for (const t of sampleTopics) {
       for (const s of siblingsFor(sampleSubject, t.subtopicId)) {
-        const paper = bySlice.get(key(s))!;
+        const paper = topicsForPaper(s.subjectId, s.year, s.level, s.lang, s.fileid)!;
         const q = paper.q.find(x => x.n === s.n)!;
-        expect(q.primary === t.subtopicId || q.secondary === t.subtopicId, `${t.subtopicId} mismatched`).toBe(true);
+        expect(
+          q.primary === t.subtopicId ||
+          q.secondary === t.subtopicId ||
+          browseTopicIdsForQuestion(paper, q).includes(t.subtopicId),
+          `${t.subtopicId} mismatched`,
+        ).toBe(true);
       }
     }
   });
 
-  it("topicsForSubject count == siblingsFor length (the docs promise they line up)", () => {
+  it('topicsForSubject count equals distinct printed siblings, not translated editions', () => {
     for (const t of sampleTopics) {
-      expect(siblingsFor(sampleSubject, t.subtopicId).length, `${t.subtopicId} count drift`).toBe(t.count);
+      const printed = new Set(
+        siblingsFor(sampleSubject, t.subtopicId)
+          .map(s => `${s.level}|${s.year}|${s.paperKey}|${s.n}`),
+      );
+      expect(printed.size, `${t.subtopicId} count drift`).toBe(t.count);
     }
   });
 
@@ -70,7 +83,7 @@ describe('Topic Vault feed primitives', () => {
   it('questionsForTopics dedups by paper+question across overlapping topics', () => {
     const ids = sampleTopics.map(t => t.subtopicId);
     const out = questionsForTopics(sampleSubject, ids);
-    const keys = out.map(q => `${q.level}|${q.lang}|${q.year}|${q.fileid}|${q.n}`);
+    const keys = out.map(q => `${q.level}|${q.year}|${q.paperKey}|${q.n}`);
     expect(new Set(keys).size).toBe(keys.length);
   });
 

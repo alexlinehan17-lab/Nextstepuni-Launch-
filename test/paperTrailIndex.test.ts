@@ -48,6 +48,17 @@ describe('Paper Trail subject registry', () => {
       }
     }
   });
+
+  it('curriculumId links stay inside the paper subject programme', () => {
+    for (const subject of PAPER_TRAIL_SUBJECTS) {
+      if (!subject.curriculumId) continue;
+      if (subject.cycle === 'lc') {
+        expect(subject.curriculumId, `${subject.id} must not resolve to another programme`).not.toMatch(/^(jc|lca)-/);
+      } else if (subject.cycle === 'jc') {
+        expect(subject.curriculumId, `${subject.id} must resolve to Junior Cycle`).toMatch(/^jc-/);
+      }
+    }
+  });
 });
 
 describe('Paper Trail index entries', () => {

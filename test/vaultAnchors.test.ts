@@ -19,11 +19,23 @@
 import { existsSync, readdirSync, readFileSync } from 'fs';
 import path from 'path';
 import { describe, it, expect } from 'vitest';
-import { answerMapUrls, hostedAnchorsUrl, isAnswerMap, resolveSibling, type ResolvedSibling } from '../components/PaperTrail/vaultResolve';
-import { paperRegionFor } from '../components/PaperTrail/paperRegion';
+import {
+  answerMapUrls,
+  hostedAnchorsUrl,
+  hostedAnswersUrl,
+  HOSTED_ANSWER_OVERRIDES,
+  isAnswerMap,
+  mergePaperAnchorMetadata,
+  preferredAnswersUrl,
+  resolveSibling,
+  type ResolvedSibling,
+} from '../components/PaperTrail/vaultResolve';
+import { paperRegionFor, questionsInDisplayOrder, schemeRegionFor } from '../components/PaperTrail/paperRegion';
 import type { PaperAnswerMap } from '../types/paperTrail';
 
 const ANCHORS_DIR = path.resolve(__dirname, '../public/paper-anchors');
+const HOSTED_ANSWERS_DIR = path.resolve(__dirname, '../public/paper-answers');
+const SOURCE_ANSWERS_DIR = path.resolve(__dirname, '../scripts/paper-trail/answers');
 
 // ─── pure resolution logic ──────────────────────────────────────────────────
 
@@ -35,6 +47,37 @@ describe('hostedAnchorsUrl', () => {
 
   it('URL-encodes unusual fileids', () => {
     expect(hostedAnchorsUrl(2020, 'LC 01#.pdf')).toBe('/paper-anchors/2020/LC%2001%23.pdf.json');
+  });
+});
+
+describe('audited hosted answer maps', () => {
+  it('addresses the committed answer-map path and URL-encodes fileids', () => {
+    expect(hostedAnswersUrl(2025, 'LC 21#.pdf'))
+      .toBe('/paper-answers/2025/LC%2021%23.pdf.json');
+  });
+
+  it('routes only the audited override set through Hosting', () => {
+    const storage = 'https://storage/answers/map.json';
+    expect(preferredAnswersUrl('physics', 2025, 'LC021GLP000EV.pdf', storage))
+      .toBe('/paper-answers/2025/LC021GLP000EV.pdf.json');
+    expect(preferredAnswersUrl('art', 2026, 'LC014ALP000EV.pdf', storage))
+      .toBe('/paper-answers/2026/LC014ALP000EV.pdf.json');
+    expect(preferredAnswersUrl('physics', 2023, 'LC021GLP000EV.pdf', storage))
+      .toBe(storage);
+  });
+
+  it('ships every override and keeps it byte-identical to the reviewed source map', () => {
+    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(23);
+    for (const key of HOSTED_ANSWER_OVERRIDES) {
+      const [subjectId, year, fileid] = key.split('|');
+      expect(['art', 'physics']).toContain(subjectId);
+      const hosted = path.join(HOSTED_ANSWERS_DIR, year, `${fileid}.json`);
+      const source = path.join(SOURCE_ANSWERS_DIR, year, `${fileid}.json`);
+      expect(existsSync(hosted), hosted).toBe(true);
+      expect(existsSync(source), source).toBe(true);
+      expect(readFileSync(hosted, 'utf8')).toBe(readFileSync(source, 'utf8'));
+      expect(isAnswerMap(JSON.parse(readFileSync(hosted, 'utf8')))).toBe(true);
+    }
   });
 });
 
@@ -92,8 +135,60 @@ describe('isAnswerMap', () => {
     ['q with a bad mode', { paperFileid: 'X.pdf', q: [{ ...q, mode: 'guess' }] }],
     ['q with a malformed pY', { paperFileid: 'X.pdf', q: [{ ...q, pY: [0.1] }] }],
     ['q with a non-numeric page', { paperFileid: 'X.pdf', q: [{ ...q, pP: '2' }] }],
+    ['map with an excessive crop override', { paperFileid: 'X.pdf', maxCropPages: 99, q: [q] }],
   ])('rejects %s', (_label, v) => {
     expect(isAnswerMap(v)).toBe(false);
+  });
+});
+
+describe('mergePaperAnchorMetadata', () => {
+  it('keeps the verified scheme crop and adds the hosted multi-page paper extent', () => {
+    const answerMap: PaperAnswerMap = {
+      v: 1,
+      paperFileid: 'X.pdf',
+      schemeFileid: 'S.pdf',
+      component: '040',
+      band: [1, 9],
+      copyright: '© State Examinations Commission',
+      q: [{
+        n: '16',
+        pP: 2,
+        pY: [0.14, 1],
+        region: [{ p: 21, r: [0, 0.2, 1, 0.9] }],
+        mode: 'crop',
+        conf: 1,
+      }],
+    };
+    const paperMap: PaperAnswerMap = {
+      v: 1,
+      paperFileid: 'X.pdf',
+      schemeFileid: '',
+      component: '040',
+      band: [1, 1],
+      copyright: '© State Examinations Commission',
+      paperOnly: 1,
+      maxCropPages: 6,
+      q: [{
+        n: '16',
+        pP: 4,
+        pY: [0.12, 1],
+        endP: 10,
+        endY: 0.9,
+        region: [{ p: 1 }],
+        mode: 'pagejump',
+        conf: 0.5,
+      }],
+    };
+
+    const merged = mergePaperAnchorMetadata(answerMap, paperMap, '16');
+    expect(merged.q[0].mode).toBe('crop');
+    expect(merged.q[0].pP).toBe(4);
+    expect(schemeRegionFor(merged.q[0])).toEqual(answerMap.q[0].region);
+    expect(merged.maxCropPages).toBe(6);
+    const paperRegion = paperRegionFor(merged.q, '16', merged.maxCropPages);
+    expect(paperRegion?.map(segment => segment.p)).toEqual([4, 5, 6, 7, 8, 9, 10]);
+    expect(paperRegion?.[0].r?.[1]).toBeCloseTo(0.112);
+    expect(paperRegion?.at(-1)?.r).toEqual([0, 0, 1, 0.9]);
   });
 });
 
@@ -131,30 +226,50 @@ describe('public/paper-anchors — committed pilot sidecars', () => {
     }
   });
 
-  it('question numbers are sequential and anchors are monotonic in print order', () => {
+  it('question identities are sequential and anchors are monotonic in physical order', () => {
+    const broken: string[] = [];
     for (const { year, file, map } of staged) {
       // Sequential run in PRINTED numbering — split-spec second booklets
       // continue the first paper's run (Biology Section C prints Q11-Q17),
-      // so the run may start above 1 but must ascend without gaps.
-      const first = Number(map.q[0]?.n ?? 1);
-      map.q.forEach((q, i) => expect(q.n, `${year}/${file} q[${i}].n`).toBe(String(first + i)));
-      for (let i = 1; i < map.q.length; i++) {
-        const a = map.q[i - 1];
-        const b = map.q[i];
-        expect(
-          b.pP > a.pP || (b.pP === a.pP && b.pY[0] > a.pY[0]),
-          `${year}/${file} Q${b.n} out of print order`,
-        ).toBe(true);
+      // so the run may start above 1 but must ascend without gaps. Repaired
+      // section-restart papers retain their already-shipped numeric identities
+      // and declare the physical permutation separately with printOrder.
+      const ordered = questionsInDisplayOrder(map.q);
+      const hasPrintOrder = map.q.some(q => q.printOrder !== undefined);
+      if (hasPrintOrder) {
+        expect(map.q.every(q => q.printOrder !== undefined), `${year}/${file} partial printOrder`).toBe(true);
+        expect(ordered.map(q => q.printOrder), `${year}/${file} printOrder permutation`)
+          .toEqual(Array.from({ length: map.q.length }, (_, i) => i + 1));
+      } else {
+        const first = Number(map.q[0]?.n ?? 1);
+        expect(Number.isFinite(first), `${year}/${file} non-numeric IDs require printOrder`).toBe(true);
+        map.q.forEach((q, i) => expect(q.n, `${year}/${file} q[${i}].n`).toBe(String(first + i)));
+      }
+      for (let i = 1; i < ordered.length; i++) {
+        const a = ordered[i - 1];
+        const b = ordered[i];
+        // Explicit audited paper regions do not use their start anchors to
+        // derive a crop, so page-jump siblings may safely share a coordinate.
+        if (
+          !a.paperRegion?.length
+          && !b.paperRegion?.length
+          && !(b.pP > a.pP || (b.pP === a.pP && b.pY[0] > a.pY[0]))
+        ) {
+          broken.push(`${year}/${file} Q${b.n} out of print order`);
+        }
       }
     }
+    expect(broken, broken.join('\n')).toEqual([]);
   });
 
   it('every anchored question yields a confident paper-side crop', () => {
+    const broken: string[] = [];
     for (const { year, file, map } of staged) {
       for (const q of map.q) {
-        const region = paperRegionFor(map.q, q.n);
-        expect(region, `${year}/${file} Q${q.n} has no derivable crop`).not.toBeNull();
+        const region = paperRegionFor(map.q, q.n, map.maxCropPages ?? 3);
+        if (!region) broken.push(`${year}/${file} Q${q.n} has no derivable crop`);
       }
     }
+    expect(broken, broken.join('\n')).toEqual([]);
   });
 });

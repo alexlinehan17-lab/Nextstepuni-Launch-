@@ -11,6 +11,7 @@ This is the human gate before a grammar profile's `answers` flag ships. Run
 after anchor-map.py.
 """
 
+import argparse
 import json
 import os
 import fitz
@@ -50,29 +51,52 @@ def render_strip(page, y0_frac, band_frac):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--prefix", default="", help="paper file-name prefix")
+    parser.add_argument("--files", default="", help="comma-separated exact paper file names")
+    parser.add_argument("--label", default="", help="only cards whose display label contains this text")
+    parser.add_argument("--years", default="", help="comma-separated exam years to include")
+    parser.add_argument("--out", default=OUT)
+    args = parser.parse_args()
+    selected_years = {int(value) for value in args.years.split(",") if value.strip()}
+    selected_files = {value.strip() for value in args.files.split(",") if value.strip()}
     sidecars = []
     for year in sorted(os.listdir(ANSWERS_DIR)):
         ydir = os.path.join(ANSWERS_DIR, year)
         if not os.path.isdir(ydir):
             continue
+        if selected_years and int(year) not in selected_years:
+            continue
         for f in sorted(os.listdir(ydir)):
-            if f.endswith(".json"):
+            paper_file = f[:-5] if f.endswith(".json") else ""
+            if (f.endswith(".json")
+                    and (not args.prefix or f.startswith(args.prefix))
+                    and (not selected_files or paper_file in selected_files)):
                 sidecars.append((int(year), json.load(open(os.path.join(ydir, f)))))
     sidecars.sort(key=lambda x: (x[0], x[1]["component"]))
 
     pages = []
     for year, sc in sidecars:
         comp = sc["component"]
+        component_label = comp[0] if comp else "single"
         paper = fitz.open(os.path.join(CORPUS, "exampapers", str(year), sc["paperFileid"]))
         scheme = fitz.open(os.path.join(CORPUS, "markingschemes", str(year), sc["schemeFileid"]))
         rows = []
-        for q in sc["q"]:
+        selected_questions = [q for q in sc["q"] if (
+            not args.label or args.label.lower() in q.get("label", "").lower()
+        )]
+        if not selected_questions:
+            paper.close()
+            scheme.close()
+            continue
+        for q in selected_questions:
             p_strip = render_strip(paper[q["pP"] - 1], q["pY"][0], PAPER_BAND)
-            seg0 = q["region"][0]
+            displayed_region = q.get("schemeRegion") or q["region"]
+            seg0 = displayed_region[0]
             s_y = seg0.get("r", [0, 0, 1, 1])[1]
             s_strip = render_strip(scheme[seg0["p"] - 1], s_y, SCHEME_BAND)
             label = (f"Paper Q{q['n']} (p{q['pP']})   →   Scheme p{seg0['p']}"
-                     f"   ·   {q['mode']}")
+                     f"   ·   {'corrected crop' if q.get('schemeRegion') else q['mode']}")
             rows.append((label, p_strip, s_strip))
 
         # compose one tall page image for this paper
@@ -81,7 +105,7 @@ def main():
         page_w = COL_W + 2 * PAD
         canvas = Image.new("RGB", (page_w, page_h), "white")
         d = ImageDraw.Draw(canvas)
-        d.text((PAD, 8), f"{year}  ·  {sc['paperFileid']}  ·  Paper {comp[0]}  ·  band {sc['band']}",
+        d.text((PAD, 8), f"{year}  ·  {sc['paperFileid']}  ·  Paper {component_label}  ·  band {sc['band']}",
                fill="black", font=FONT)
         y = LABEL_H + 14
         for label, ps, ss in rows:
@@ -91,10 +115,12 @@ def main():
             canvas.paste(ps, (PAD, y)); y += ps.height
             canvas.paste(ss, (PAD, y)); y += ss.height + PAD
         pages.append(canvas)
+        paper.close()
+        scheme.close()
 
     if pages:
-        pages[0].save(OUT, save_all=True, append_images=pages[1:], resolution=150)
-        print(f"wrote {os.path.relpath(OUT, REPO)} ({len(pages)} pages, {sum(len(s['q']) for _, s in sidecars)} questions)")
+        pages[0].save(args.out, save_all=True, append_images=pages[1:], resolution=150)
+        print(f"wrote {args.out} ({len(pages)} paper sheets)")
     else:
         print("no sidecars found")
 

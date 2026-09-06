@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "scope": "Direct review of the entitled SEC English examination papers for valid local written questions omitted from the factual reference snapshot.",
+  "questions": {
+    "higher|2012|2": {
+      "topics": [
+        "Planning, Sustainability & Environment"
+      ],
+      "evidence": "Lifetime-use entrance, corridor and wheelchair-accessible bathroom design."
+    },
+    "higher|2025|4": {
+      "topics": [
+        "Walls",
+        "Heat Loss & Insulation",
+        "Sustainability & the Environment"
+      ],
+      "evidence": "External-wall functional requirements and two high-performance insulated wall constructions."
+    },
+    "ordinary|2010|8": {
+      "topics": [
+        "Air Tightness & Condensation",
+        "Concrete",
+        "Foundations, Floors & Walls",
+        "Heat Loss & Insulation",
+        "Roofs",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning lintels, joinery, energy rating, doors, timber conversion, roofs, glazing and vapour control."
+    },
+    "ordinary|2011|4": {
+      "topics": [
+        "Foundations, Floors & Walls",
+        "Planning, Sustainability & Environment",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Kitchen cabinet fixing, solid timber flooring and functional kitchen layout."
+    },
+    "ordinary|2011|5": {
+      "topics": [
+        "Foundations, Floors & Walls",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Closed-string timber stairs, including treads, risers, strings and anti-creak detailing."
+    },
+    "ordinary|2011|7": {
+      "topics": [
+        "Drainage",
+        "Planning, Sustainability & Environment",
+        "Services, Water, Gas, Electrical"
+      ],
+      "evidence": "Rainwater harvesting, storage, pumping, valves and appliance supply."
+    },
+    "ordinary|2011|8": {
+      "topics": [
+        "Foundations, Floors & Walls",
+        "Hot Water & Space Heating",
+        "Planning, Sustainability & Environment",
+        "Roofs",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning foundations, heating controls, roof and window details, hinges, solar energy, wall ties and radon control."
+    },
+    "ordinary|2011|9": {
+      "topics": [
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Outdoor timber-seat design, jointing, material protection and applied finishing."
+    },
+    "ordinary|2012|8": {
+      "topics": [
+        "Drainage",
+        "Foundations, Floors & Walls",
+        "Services, Water, Gas, Electrical",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning rainwater and waste systems, wall construction, stairs and timber joints/conversion."
+    },
+    "ordinary|2013|8": {
+      "topics": [
+        "Air Tightness & Condensation",
+        "Fire Places & Fire Prevention",
+        "Foundations, Floors & Walls",
+        "Heat Loss & Insulation",
+        "Planning, Sustainability & Environment",
+        "Roofs",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning renewable energy, joinery, flues, roofs, wall weathering, glazing and vapour control."
+    },
+    "ordinary|2014|8": {
+      "topics": [
+        "Foundations, Floors & Walls",
+        "Hot Water & Space Heating",
+        "Planning, Sustainability & Environment",
+        "Roofs",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning foundations, joinery, setting out, heating controls, roofs, radon, metering, roof lights and access design."
+    },
+    "ordinary|2014|9": {
+      "topics": [
+        "Planning, Sustainability & Environment",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Kitchen layout design, painted timber cabinets and comparison of granite and solid-wood worktops."
+    },
+    "ordinary|2015|8": {
+      "topics": [
+        "Air Tightness & Condensation",
+        "Concrete",
+        "Foundations, Floors & Walls",
+        "Planning, Sustainability & Environment",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning joinery, glazing, solar energy, tools, finishes, plumbing, seasoning, concrete and radon control."
+    },
+    "ordinary|2016|8": {
+      "topics": [
+        "Foundations, Floors & Walls",
+        "Heat Loss & Insulation",
+        "Planning, Sustainability & Environment",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning valves, joinery, walling, thermal bridges, sanitary fittings, metering, solar gain, glazing and access."
+    },
+    "ordinary|2017|8": {
+      "topics": [
+        "Foundations, Floors & Walls",
+        "Heat Loss & Insulation",
+        "Planning, Sustainability & Environment",
+        "Roofs",
+        "Services, Water, Gas, Electrical",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning timber craft, roofs, damp control, water services, energy rating, renewable energy and wall/floor components."
+    },
+    "ordinary|2018|8": {
+      "topics": [
+        "Air Tightness & Condensation",
+        "Hot Water & Space Heating",
+        "Roofs",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning smart/electrical services, joinery, airtightness, solar hot water, windows, fittings, showers and lighting."
+    },
+    "ordinary|2019|8": {
+      "topics": [
+        "Drainage",
+        "Fire Places & Fire Prevention",
+        "Planning, Sustainability & Environment",
+        "Roofs",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning alarms, inclusive design, furniture, safety glass, roof drainage, stairs, timber, joinery and lighting."
+    },
+    "ordinary|2020|8": {
+      "topics": [
+        "Concrete",
+        "Foundations, Floors & Walls",
+        "Planning, Sustainability & Environment",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning partitions, joinery, concrete testing, glazing, pyrite, foundations, roof/floor framing, hinges and solar energy."
+    },
+    "ordinary|2023|8": {
+      "topics": [
+        "Concrete",
+        "Foundations, Floors & Walls",
+        "Heat Loss & Insulation",
+        "Hot Water & Space Heating",
+        "Planning, Sustainability & Environment",
+        "Roofs",
+        "Services, Water, Gas, Electrical",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning concrete, heating controls, roofs, glazing, stairs, cladding, joinery, renewable heating and floors."
+    },
+    "ordinary|2024|8": {
+      "topics": [
+        "Air Tightness & Condensation",
+        "Drainage",
+        "Foundations, Floors & Walls",
+        "Heat Loss & Insulation",
+        "Hot Water & Space Heating",
+        "Planning, Sustainability & Environment",
+        "Services, Water, Gas, Electrical",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning planning, joinery and craft, smart services, tools/materials, drainage, cavity closure and heat pumps."
+    },
+    "ordinary|2025|8": {
+      "topics": [
+        "Drainage",
+        "Foundations, Floors & Walls",
+        "Hot Water & Space Heating",
+        "Windows & Doors",
+        "Wood, Rot & Ventilation"
+      ],
+      "evidence": "Nine-term short-question set spanning foundations, joinery, rainwater, walls, setting out, damp control, doors, stairs and heating controls."
+    }
+  }
+}

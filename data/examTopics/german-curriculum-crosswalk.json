@@ -1,0 +1,100 @@
+{
+  "german-higher-aural-dialogue": [
+    "german-4-2",
+    "german-3-1"
+  ],
+  "german-higher-aural-interview": [
+    "german-4-0",
+    "german-3-1"
+  ],
+  "german-higher-aural-news-pieces": [
+    "german-4-3",
+    "german-3-1"
+  ],
+  "german-higher-aural-phone-call": [
+    "german-4-1",
+    "german-3-1"
+  ],
+  "german-higher-aeusserung-zum-thema-write-on-a-theme": [
+    "german-7-0",
+    "german-3-3"
+  ],
+  "german-higher-comprehension-magazine-or-newspaper": [
+    "german-6-0",
+    "german-3-2"
+  ],
+  "german-higher-comprehension-novel-or-short-story": [
+    "german-6-1",
+    "german-3-2"
+  ],
+  "german-higher-grammatik-grammar": [
+    "german-3-4"
+  ],
+  "german-higher-schriftliche-produktion-picture": [
+    "german-7-1",
+    "german-3-3"
+  ],
+  "german-higher-schriftliche-produktion-write-a-letter": [
+    "german-7-2",
+    "german-3-3"
+  ],
+  "german-ordinary-aural-dialogue": [
+    "german-4-2",
+    "german-3-1"
+  ],
+  "german-ordinary-aural-interview": [
+    "german-4-0",
+    "german-3-1"
+  ],
+  "german-ordinary-aural-news-pieces": [
+    "german-4-3",
+    "german-3-1"
+  ],
+  "german-ordinary-aural-phone-call": [
+    "german-4-1",
+    "german-3-1"
+  ],
+  "german-ordinary-comprehension-magazine-or-newspaper": [
+    "german-6-0",
+    "german-3-2"
+  ],
+  "german-ordinary-comprehension-novel-or-short-story": [
+    "german-6-1",
+    "german-3-2"
+  ],
+  "german-ordinary-finish-the-dialogue": [
+    "german-7-7",
+    "german-3-3"
+  ],
+  "german-ordinary-grammar-grammatik": [
+    "german-3-4"
+  ],
+  "german-ordinary-write-a-blog": [
+    "german-7-3",
+    "german-3-3"
+  ],
+  "german-ordinary-write-a-letter": [
+    "german-7-2",
+    "german-3-3"
+  ],
+  "german-ordinary-write-a-story": [
+    "german-7-4",
+    "german-3-3"
+  ],
+  "german-ordinary-write-an-application": [
+    "german-7-5",
+    "german-3-3"
+  ],
+  "german-ordinary-write-an-email": [
+    "german-7-6",
+    "german-3-3"
+  ],
+  "german-ordinary-write-on-a-theme-thema": [
+    "german-7-0",
+    "german-3-3"
+  ],
+  "german-ordinary-write-on-a-topicgive-your-opinion": [
+    "german-7-8",
+    "german-3-3"
+  ]
+}

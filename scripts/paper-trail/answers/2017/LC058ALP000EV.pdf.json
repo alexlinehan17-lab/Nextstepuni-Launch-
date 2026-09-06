@@ -1,1 +1,548 @@
-{"band":[1,21],"component":"000","copyright":"© State Examinations Commission","paperFileid":"LC058ALP000EV.pdf","q":[{"conf":1.0,"label":"Q1 Part A (Pokemon site) · Q1 links","mode":"crop","n":"1","pP":3,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.1473,1.0,0.3767]}]},{"conf":1.0,"label":"Q1 Part A · Q2 events & venues","mode":"crop","n":"2","pP":3,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.3767,1.0,0.5312]}]},{"conf":1.0,"label":"Q1 Part A · Q3 members' party","mode":"crop","n":"3","pP":3,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.5312,1.0,0.6296]}]},{"conf":1.0,"label":"Q1 Part A · Q4 Event 2 details","mode":"crop","n":"4","pP":3,"pY":[0.0,1.0],"region":[{"p":6,"r":[0.0,0.6296,1.0,1.0]},{"p":7,"r":[0.0,0.0,1.0,0.049]}]},{"conf":1.0,"label":"Q1 Part B (web forum) · Q1 Kenji","mode":"crop","n":"5","pP":4,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.0814,1.0,0.1306]}]},{"conf":1.0,"label":"Q1 Part B · Q2 Kaori","mode":"crop","n":"6","pP":4,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.1306,1.0,0.1798]}]},{"conf":1.0,"label":"Q1 Part B · Q3 Mike","mode":"crop","n":"7","pP":4,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.1798,1.0,0.229]}]},{"conf":1.0,"label":"Q1 Part B · Q4 Sarah","mode":"crop","n":"8","pP":4,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.229,1.0,0.3091]}]},{"conf":1.0,"label":"Q2 A (SMAP article) · Q1 members table","mode":"crop","n":"9","pP":7,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.3439,1.0,0.7643]}]},{"conf":1.0,"label":"Q2 A · Q2 answer in Japanese","mode":"crop","n":"10","pP":7,"pY":[0.0,1.0],"region":[{"p":7,"r":[0.0,0.7643,1.0,1.0]},{"p":8,"r":[0.0,0.0,1.0,0.0489]}]},{"conf":1.0,"label":"Q2 A · Q3 answer in English","mode":"crop","n":"11","pP":7,"pY":[0.0,1.0],"region":[{"p":8,"r":[0.0,0.0489,1.0,0.2578]}]},{"conf":1.0,"label":"Q2 A · Q4 translate into English","mode":"crop","n":"12","pP":7,"pY":[0.0,1.0],"region":[{"p":8,"r":[0.0,0.2578,1.0,0.3947]}]},{"conf":1.0,"label":"Q3 A (Satomi letter) · comprehension Q1-7","mode":"crop","n":"13","pP":11,"pY":[0.0,1.0],"region":[{"p":9,"r":[0.0,0.2481,1.0,0.674]}]},{"conf":1.0,"label":"Q3 B · answer in Japanese Q1-3","mode":"crop","n":"14","pP":11,"pY":[0.0,1.0],"region":[{"p":9,"r":[0.0,0.674,1.0,1.0]},{"p":10,"r":[0.0,0.0,1.0,0.0634]}]}],"schemeFileid":"LC058ALP000EV.pdf","v":1}
+{
+  "band": [
+    1,
+    21
+  ],
+  "component": "000",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC058ALP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "label": "Q1 Part A (Pokemon site) · Q1 links",
+      "mode": "crop",
+      "n": "1",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.1473,
+            1.0,
+            0.3767
+          ]
+        }
+      ],
+      "printOrder": 1
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Part A · Q2 events & venues",
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.3767,
+            1.0,
+            0.5312
+          ]
+        }
+      ],
+      "printOrder": 2
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Part A · Q3 members' party",
+      "mode": "crop",
+      "n": "3",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.5312,
+            1.0,
+            0.6296
+          ]
+        }
+      ],
+      "printOrder": 3
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Part A · Q4 Event 2 details",
+      "mode": "crop",
+      "n": "4",
+      "pP": 3,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.6296,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.049
+          ]
+        }
+      ],
+      "printOrder": 4
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Part B (web forum) · Q1 Kenji",
+      "mode": "crop",
+      "n": "5",
+      "pP": 4,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0814,
+            1.0,
+            0.1306
+          ]
+        }
+      ],
+      "printOrder": 5
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Part B · Q2 Kaori",
+      "mode": "crop",
+      "n": "6",
+      "pP": 4,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.1306,
+            1.0,
+            0.1798
+          ]
+        }
+      ],
+      "printOrder": 6
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Part B · Q3 Mike",
+      "mode": "crop",
+      "n": "7",
+      "pP": 4,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.1798,
+            1.0,
+            0.229
+          ]
+        }
+      ],
+      "printOrder": 7
+    },
+    {
+      "conf": 1.0,
+      "label": "Q1 Part B · Q4 Sarah",
+      "mode": "crop",
+      "n": "8",
+      "pP": 4,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.229,
+            1.0,
+            0.3091
+          ]
+        }
+      ],
+      "printOrder": 8
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 A (SMAP article) · Q1 members table",
+      "mode": "crop",
+      "n": "9",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.3439,
+            1.0,
+            0.7643
+          ]
+        }
+      ],
+      "printOrder": 9
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 A · Q2 answer in Japanese",
+      "mode": "crop",
+      "n": "10",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.7643,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0489
+          ]
+        }
+      ],
+      "printOrder": 10
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 A · Q3 answer in English",
+      "mode": "crop",
+      "n": "11",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0489,
+            1.0,
+            0.2578
+          ]
+        }
+      ],
+      "printOrder": 11
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 A · Q4 translate into English",
+      "mode": "crop",
+      "n": "12",
+      "pP": 7,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.2578,
+            1.0,
+            0.3947
+          ]
+        }
+      ],
+      "printOrder": 12
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 A (Satomi letter) · comprehension Q1-7",
+      "mode": "crop",
+      "n": "13",
+      "pP": 11,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.2481,
+            1.0,
+            0.674
+          ]
+        }
+      ],
+      "printOrder": 15
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 B · answer in Japanese Q1-3",
+      "mode": "crop",
+      "n": "14",
+      "pP": 11,
+      "pY": [
+        0.0,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.674,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0634
+          ]
+        }
+      ],
+      "printOrder": 16
+    },
+    {
+      "conf": 1.0,
+      "label": "Q4 · Short written production",
+      "mode": "crop",
+      "n": "15",
+      "pP": 14,
+      "pY": [
+        0.0351,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.049,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0653,
+            1.0,
+            0.86
+          ]
+        }
+      ],
+      "endP": 15,
+      "endY": 0.93,
+      "printOrder": 19
+    },
+    {
+      "conf": 1.0,
+      "label": "Q5 · Extended written production",
+      "mode": "crop",
+      "n": "16",
+      "pP": 16,
+      "pY": [
+        0.0351,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0655,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0489,
+            1.0,
+            0.86
+          ]
+        }
+      ],
+      "endP": 19,
+      "endY": 0.93,
+      "printOrder": 20
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 · B · Kanji",
+      "mode": "crop",
+      "n": "17",
+      "pP": 8,
+      "pY": [
+        0.0366,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.3947,
+            1.0,
+            0.7002
+          ]
+        }
+      ],
+      "endP": 8,
+      "endY": 0.93,
+      "printOrder": 13
+    },
+    {
+      "conf": 1.0,
+      "label": "Q2 · C · Grammar",
+      "mode": "crop",
+      "n": "18",
+      "pP": 9,
+      "pY": [
+        0.0365,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.7002,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.2317
+          ]
+        }
+      ],
+      "endP": 9,
+      "endY": 0.93,
+      "printOrder": 14
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 · C · Kanji",
+      "mode": "crop",
+      "n": "19",
+      "pP": 12,
+      "pY": [
+        0.0365,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0634,
+            1.0,
+            0.245
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.4619,
+      "printOrder": 17
+    },
+    {
+      "conf": 1.0,
+      "label": "Q3 · D · Grammar",
+      "mode": "crop",
+      "n": "20",
+      "pP": 12,
+      "pY": [
+        0.4619,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.245,
+            1.0,
+            0.93
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0,
+            1.0,
+            0.049
+          ]
+        }
+      ],
+      "endP": 12,
+      "endY": 0.93,
+      "printOrder": 18
+    }
+  ],
+  "schemeFileid": "LC058ALP000EV.pdf",
+  "v": 1
+}

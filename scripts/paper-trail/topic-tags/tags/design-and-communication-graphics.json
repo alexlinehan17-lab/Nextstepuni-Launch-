@@ -2674,5 +2674,1963 @@
     "primary": "design-and-communication-graphics-2-4"
    }
   ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC562ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2026,
+  "fileid": "LC562ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2026,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC562GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2026,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2026,
+  "fileid": "LC562GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2026,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-13"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-13"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5",
+    "secondary": "design-and-communication-graphics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5",
+    "secondary": "design-and-communication-graphics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8",
+    "secondary": "design-and-communication-graphics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-7",
+    "secondary": "design-and-communication-graphics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8",
+    "secondary": "design-and-communication-graphics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-7",
+    "secondary": "design-and-communication-graphics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-14"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-14"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5",
+    "secondary": "design-and-communication-graphics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5",
+    "secondary": "design-and-communication-graphics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-13"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-13"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-14"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-14"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC562ALP000EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5",
+    "secondary": "design-and-communication-graphics-0-14"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC562ALP000IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5",
+    "secondary": "design-and-communication-graphics-0-14"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC562GLP000EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC562GLP000IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "section-a",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-0",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-0-2"
+   }
+  ]
  }
 ]

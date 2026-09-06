@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { paperRegionFor } from '../components/PaperTrail/paperRegion';
+import { paperRegionFor, questionsInDisplayOrder } from '../components/PaperTrail/paperRegion';
 import { type PaperAnswerQuestion } from '../types/paperTrail';
 
 const q = (n: string, pP: number, y0: number, y1: number): PaperAnswerQuestion => ({
@@ -65,6 +65,12 @@ describe('paperRegionFor', () => {
     const bad = [q('1', 3, 0.5, 0.9), q('2', 3, 0.5, 0.9)]; // same spot
     expect(paperRegionFor(bad, '1')).toBeNull();
     expect(paperRegionFor([], '1')).toBeNull();
+  });
+
+  it('allows a verified subject-specific four-page booklet span', () => {
+    const qs = [q('1', 3, 0.07, 1), q('2', 7, 0.07, 1)];
+    expect(paperRegionFor(qs, '1')).toBeNull();
+    expect(paperRegionFor(qs, '1', 4)?.map(segment => segment.p)).toEqual([3, 4, 5, 6, 7]);
   });
 
   it('sorts anchors into printed order before deriving', () => {
@@ -133,5 +139,27 @@ describe('paperRegionFor', () => {
     const r = paperRegionFor(qs, '2')!;
     expect(r).not.toBeNull();
     expect(r[0].p).toBe(3);
+  });
+});
+
+describe('questionsInDisplayOrder', () => {
+  it('uses a complete explicit print-order permutation without changing stable IDs', () => {
+    const qs = [
+      { ...q('1', 1, .1, .2), printOrder: 1 },
+      { ...q('2', 3, .1, .2), printOrder: 3 },
+      { ...q('3', 2, .1, .2), printOrder: 2 },
+    ];
+    expect(questionsInDisplayOrder(qs).map(question => question.n)).toEqual(['1', '3', '2']);
+    expect(qs.map(question => question.n)).toEqual(['1', '2', '3']);
+  });
+
+  it('keeps established array order when metadata is partial or duplicated', () => {
+    const partial = [{ ...q('2', 2, .1, .2), printOrder: 2 }, q('1', 1, .1, .2)];
+    const duplicate = [
+      { ...q('2', 2, .1, .2), printOrder: 1 },
+      { ...q('1', 1, .1, .2), printOrder: 1 },
+    ];
+    expect(questionsInDisplayOrder(partial)).toBe(partial);
+    expect(questionsInDisplayOrder(duplicate)).toBe(duplicate);
   });
 });

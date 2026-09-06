@@ -62,6 +62,8 @@ import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 // pdf.js lazy singleton + region renderer — shared with the Topic Vault.
 import { loadPdfjs, type PdfjsModule } from './pdfjsLoader';
 import CropView from './CropView';
+import { questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
+import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
 
 // Sleek glide shared with the GC dashboard student-view tray.
 const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
@@ -101,6 +103,10 @@ interface ViewerProps {
   /** Storage URL of this paper's PaperAnswerMap sidecar — present only when a
    *  verified answer map shipped. Drives the "Answers" toggle + question chips. */
   answersUrl?: string;
+  /** Hosted paper-only sidecar used to land a Topic Atlas jump. Its audited
+   * paper coordinates override a matching Storage map's paper jump while the
+   * Storage map remains authoritative for verified marking-scheme crops. */
+  focusAnchorsUrl?: string;
   /** Official timing for this exact paper (from SUBJECT_TIMING), if the subject
    *  has one — drives minute targets + the exam-mode clock. Null → generic
    *  proportional-to-marks pace derived live from the paper's own mark tokens. */
@@ -166,6 +172,7 @@ const Viewer: React.FC<ViewerProps> = ({
   initialPaperPage = 1,
   initialSchemePage = 1,
   answersUrl,
+  focusAnchorsUrl,
   timing = null,
   grammar = null,
   formulae,
@@ -187,6 +194,9 @@ const Viewer: React.FC<ViewerProps> = ({
   const [answersOn, setAnswersOn] = useState(false);
   const [answerMap, setAnswerMap] = useState<PaperAnswerMap | null>(null);
   const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
+  const [focusAnchorMap, setFocusAnchorMap] = useState<PaperAnswerMap | null>(null);
+  const [focusAnchorSettled, setFocusAnchorSettled] = useState(false);
+  const focusAnchorStartedRef = useRef(false);
   const [reveal, setReveal] = useState<PaperAnswerQuestion | null>(null);
   const schemePrefetched = useRef(false);
 
@@ -439,7 +449,7 @@ const Viewer: React.FC<ViewerProps> = ({
       .then(r => (r.ok ? r.json() : Promise.reject(new Error('answers fetch'))))
       .then((m: PaperAnswerMap) => {
         if (mountedRef.current) {
-          setAnswerMap(m);
+          setAnswerMap({ ...m, q: questionsInDisplayOrder(m.q) });
           setAnswerState('idle');
         }
       })
@@ -951,20 +961,56 @@ const Viewer: React.FC<ViewerProps> = ({
     }
   }, [focusQuestion, ensureAnswerMap]);
 
+  // Topic Atlas navigation always checks the hosted paper-only sidecar. It may
+  // carry a card absent from the richer Storage answer map, or corrected paper
+  // coordinates for a card the Storage map already contains. In the latter
+  // case merge only the audited paper extent; the Storage scheme crop remains
+  // authoritative.
+  useEffect(() => {
+    if (!focusQuestion || !focusAnchorsUrl || focusAnchorStartedRef.current) return;
+    if (answersUrl && answerState !== 'error' && !answerMap) return;
+    let cancelled = false;
+    focusAnchorStartedRef.current = true;
+    fetch(focusAnchorsUrl)
+      .then(response => (response.ok ? response.json() : Promise.reject(new Error('anchor fetch'))))
+      .then((value: unknown) => {
+        if (cancelled) return;
+        if (isAnswerMap(value)) {
+          const ordered = { ...value, q: questionsInDisplayOrder(value.q) };
+          setFocusAnchorMap(ordered);
+          setAnswerMap(current => current?.q.some(question => question.n === focusQuestion)
+            ? mergePaperAnchorMetadata(current, ordered, focusQuestion)
+            : current);
+        }
+        setFocusAnchorSettled(true);
+      })
+      .catch(() => { if (!cancelled) setFocusAnchorSettled(true); });
+    return () => { cancelled = true; };
+  }, [
+    answerMap,
+    answerState,
+    answersUrl,
+    focusAnchorMap,
+    focusAnchorsUrl,
+    focusQuestion,
+  ]);
+
   // Once the paper + anchor map are ready, scroll to the focused question.
   const focusedRef = useRef(false);
   useEffect(() => {
-    if (!focusQuestion || focusedRef.current || !answerMap || session.state !== 'ready') return;
-    const q = answerMap.q.find(x => x.n === focusQuestion);
-    focusedRef.current = true;
+    if (!focusQuestion || focusedRef.current || session.state !== 'ready') return;
+    if (focusAnchorsUrl && !focusAnchorSettled) return;
+    const q = answerMap?.q.find(x => x.n === focusQuestion)
+      ?? focusAnchorMap?.q.find(x => x.n === focusQuestion);
     if (!q) return;
+    focusedRef.current = true;
     requestAnimationFrame(() => {
       const el = scrollerRef.current;
       if (!el) return;
       const target = el.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
       if (target) el.scrollTo({ top: target.offsetTop - 8 + target.clientHeight * Math.max(0, q.pY[0] - 0.02) });
     });
-  }, [focusQuestion, answerMap, session.state]);
+  }, [focusQuestion, answerMap, focusAnchorMap, focusAnchorSettled, focusAnchorsUrl, session.state]);
 
   const zoomBy = (dir: 1 | -1) => {
     const i = ZOOM_STEPS.indexOf(zoom);
@@ -2339,7 +2385,8 @@ const RevealContent: React.FC<{
   onClose: () => void;
   onFullScheme: (page: number) => void;
 }> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme }) => {
-  const firstPage = q.region[0]?.p;
+  const schemeRegion = schemeRegionFor(q);
+  const firstPage = schemeRegion[0]?.p;
   const closeRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
     closeRef.current?.focus();
@@ -2381,7 +2428,7 @@ const RevealContent: React.FC<{
             Couldn’t load the marking scheme. Open it in the Scheme tab instead.
           </p>
         ) : schemePdf ? (
-          <CropView pdf={schemePdf} region={q.region} />
+          <CropView pdf={schemePdf} region={schemeRegion} />
         ) : (
           <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-2 py-10 text-zinc-400">
             <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
@@ -2579,8 +2626,8 @@ const Page: React.FC<{
       aria-label={`Page ${pageNumber}`}
     >
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
-      {/* Per-question chips — fractional top rides zoom + virtualisation. The
-          "Answer" chip rides the right edge; the topic/frequency chip the left. */}
+      {/* Per-question rails — fractional top rides zoom + virtualisation. The
+          marking-scheme action rides the right edge; topic context the left. */}
       {anchors?.map(q => {
         const top = `${Math.min(0.97, Math.max(0, q.pY[0])) * 100}%`;
         const info = topicInfo?.get(q.n);
@@ -2589,34 +2636,47 @@ const Page: React.FC<{
             {info && (
               <button
                 onClick={() => onTopic?.(q.n)}
-                className="absolute left-0 z-10 flex items-center gap-1 pr-2 pl-1.5 py-1 rounded-r-full text-[11px] font-bold"
+                className="absolute left-0 z-10 grid grid-cols-[auto_auto] overflow-hidden rounded-r-[2px] text-left whitespace-nowrap"
                 style={{
                   top,
                   // Float just above the question's first line so the label
                   // doesn't sit on top of the question text (unless it's at the
                   // very top of the page, where there's no room above).
                   transform: q.pY[0] > 0.05 ? 'translateY(-100%)' : 'none',
-                  backgroundColor: '#FDEEDF',
-                  color: '#8C3A0E',
-                  border: '1px solid rgba(242,107,31,0.4)',
-                  boxShadow: '0 1px 5px rgba(0,0,0,.15)',
+                  backgroundColor: '#24211F',
+                  color: '#FFFFFF',
                 }}
                 aria-label={`${info.label} — appeared in ${info.yearsWith} of ${info.totalYears} tagged years. Drill it across years.`}
               >
-                <TrendingUp size={11} /> {info.label}
+                <span
+                  className="col-span-2 px-2.5 pt-1.5 pb-0.5 text-[7px] font-bold uppercase tracking-[0.13em]"
+                  style={{ color: '#F4A575' }}
+                >
+                  Topic
+                </span>
+                <span className="pl-2.5 pr-1.5 pb-1.5 text-[10px] font-semibold leading-none">
+                  {info.label}
+                </span>
                 {info.totalYears > 0 && (
-                  <span className="tabular-nums opacity-80">· {info.yearsWith}/{info.totalYears}</span>
+                  <span
+                    className="self-center pr-2.5 pb-1.5 text-[8.5px] font-semibold leading-none tabular-nums"
+                    style={{ color: '#F4A575' }}
+                  >
+                    {info.yearsWith} / {info.totalYears}
+                  </span>
                 )}
               </button>
             )}
             {showAnswerChip && (
               <button
                 onClick={() => onReveal?.(q)}
-                className="absolute right-0 z-10 flex items-center gap-1 pl-2 pr-2.5 py-1 rounded-l-full text-[11px] font-bold text-white"
-                style={{ top, backgroundColor: '#F26B1F', boxShadow: '0 1px 5px rgba(0,0,0,.28)' }}
-                aria-label={`See the marking scheme answer for ${q.label ?? `Question ${q.n}`}`}
+                className="absolute right-0 z-10 flex items-stretch overflow-hidden rounded-l-[2px] text-[10px] font-semibold text-white whitespace-nowrap"
+                style={{ top, backgroundColor: '#24211F' }}
+                aria-label={`Open the marking scheme for ${q.label ?? `Question ${q.n}`}`}
               >
-                <Sparkles size={11} /> Answer
+                <span className="w-1" style={{ backgroundColor: '#F26B1F' }} aria-hidden />
+                <span className="py-2 pl-2.5 pr-1.5">Mark scheme</span>
+                <span className="py-2 pr-2.5" style={{ color: '#F4A575' }} aria-hidden>→</span>
               </button>
             )}
           </React.Fragment>

@@ -591,11 +591,13 @@ export const ECONOMICS_STRANDS: StrandRef[] = [
 /**
  * `spec` is what the strands above ACTUALLY are, and the picker prints it.
  *
- * It is not the same claim for every subject. Biology, Chemistry, Physics and
- * Business are filed against their redeveloped specifications so a student
- * studying those can find a 2021-2025 question under the unit they are learning;
- * Agricultural Science's redeveloped specification has been the examined one
- * since 2021. Home Economics has no redeveloped specification to file against —
+ * It is not the same claim for every subject. Biology, Chemistry and Physics
+ * are filed against their redeveloped specifications so a student studying
+ * those can find a 2021-2025 question under the unit they are learning.
+ * Business remains on the seven-unit 1999 syllabus actually sat by every card
+ * in this bank; its replacement is first examined in 2027. Agricultural
+ * Science's redeveloped specification has been the examined one since 2021.
+ * Home Economics has no redeveloped specification to file against —
  * the NCCA schedule introduces its replacement in 2027 for first examination in
  * 2029 — so its strands are the syllabus being sat, and saying "redeveloped
  * specification" over them, as the hard-coded label did, was simply untrue.
@@ -885,10 +887,10 @@ export const SUBJECTS = [
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
   { id: 'physics', title: 'Physics', strands: PHYSICS_STRANDS, spec: 'redeveloped specification' },
   { id: 'agricultural-science', title: 'Agricultural Science', strands: AGRICULTURAL_SCIENCE_STRANDS, spec: 'redeveloped specification' },
-  { id: 'business', title: 'Business', strands: BUSINESS_STRANDS, spec: 'redeveloped specification' },
+  { id: 'business', title: 'Business', strands: BUSINESS_STRANDS, spec: 'outgoing 1999 syllabus' },
   { id: 'home-economics', title: 'Home Economics', strands: HOME_ECONOMICS_STRANDS, spec: 'Scientific and Social syllabus' },
   { id: 'economics', title: 'Economics', strands: ECONOMICS_STRANDS, spec: 'specification examined from 2021' },
-  { id: 'construction-studies', title: 'Construction Studies', strands: CONSTRUCTION_STUDIES_STRANDS, spec: 'Ordinary and Higher Level syllabus' },
+  { id: 'construction-studies', title: 'Construction Studies', strands: CONSTRUCTION_STUDIES_STRANDS, spec: 'outgoing Construction Studies syllabus' },
   { id: 'maths', title: 'Mathematics', strands: MATHS_STRANDS, spec: 'syllabus for examination from 2015' },
   { id: 'english', title: 'English', strands: ENGLISH_STRANDS, spec: 'outgoing syllabus examined through 2028' },
   { id: 'irish', title: 'Irish', strands: IRISH_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },

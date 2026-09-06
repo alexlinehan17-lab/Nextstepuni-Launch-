@@ -14,13 +14,14 @@
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ChevronDown as ChevronDownIcon, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
-import { categoryOf, siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
+import { categoryOf, logicalQuestionIdentity, siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
 import VaultQuestionCard from './VaultQuestionCard';
 import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
+import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
 
 const INK = '#1a1a1a';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
@@ -76,7 +77,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [subjectId, setSubjectId] = useState<string | null>(restore?.subjectId ?? boot?.subjectId ?? null);
   const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subtopicId ?? boot?.subtopicId ?? null);
   const [copied, pulseCopied, clearCopied] = usePulse(2000);
-  const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
+  const [sort, setSort] = useState<'reference' | 'busiest' | 'frequent'>('busiest');
   const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
   const [yearFilter, setYearFilter] = useState<'all' | number>('all');
   const [topicQuery, setTopicQuery] = useState('');
@@ -107,6 +108,11 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   useEffect(() => { setLevelFilter('all'); setYearFilter('all'); }, [subtopicId]);
   // Reset the topic search when switching subjects.
   useEffect(() => { setTopicQuery(''); }, [subjectId]);
+  // Audited exam taxonomies have a deliberate reference order. Canonical
+  // syllabus taxonomies retain the Atlas's existing busiest-first default.
+  useEffect(() => {
+    setSort(subjectId && examTopicTaxonomyFor(subjectId) ? 'reference' : 'busiest');
+  }, [subjectId]);
   // The "Copied" confirmation is per-topic.
   useEffect(() => { clearCopied(); }, [subtopicId, clearCopied]);
 
@@ -142,8 +148,17 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const totalYears = useMemo(() => (subjectId ? taggedYearsForSubject(subjectId) : 0), [subjectId]);
   const sortedTopics: SubjectTopic[] = useMemo(() => {
     if (sort === 'busiest') return baseTopics; // already count-sorted
+    if (sort === 'reference' && subjectId) {
+      const taxonomy = examTopicTaxonomyFor(subjectId);
+      const order = new Map(
+        taxonomy?.groups.flatMap(group => group.topicIds).map((id, index) => [id, index]) ?? [],
+      );
+      return [...baseTopics].sort((a, b) =>
+        (order.get(a.subtopicId) ?? Number.MAX_SAFE_INTEGER) -
+        (order.get(b.subtopicId) ?? Number.MAX_SAFE_INTEGER));
+    }
     return [...baseTopics].sort((a, b) => b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
-  }, [baseTopics, sort]);
+  }, [baseTopics, sort, subjectId]);
   // Type-to-filter topics — subjects like Geography carry 40+ topics.
   const topics: SubjectTopic[] = useMemo(() => {
     const q = topicQuery.trim().toLowerCase();
@@ -161,7 +176,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const questions = useMemo(() => {
     const byQ = new Map<string, TopicSibling>();
     for (const q of allEditions) {
-      const key = `${q.year}|${q.level}|${q.paperKey}|${q.n}`;
+      const key = logicalQuestionIdentity(q);
       const cur = byQ.get(key);
       if (!cur || (cur.lang !== langPref && q.lang === langPref)) byQ.set(key, q);
     }
@@ -172,6 +187,9 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   //    paper crops with the scheme a tap below. Quiet text controls. ──
   if (subjectId && subtopicId) {
     const years = new Set(questions.map(q => q.year));
+    const referenceEntries = examTopicTaxonomyFor(subjectId)?.topics
+      .find(topic => topic.id === subtopicId)?.officialQuestionKeys.length ?? 0;
+    const referenceOnly = questions.length === 0 && referenceEntries > 0;
     const levels = [...new Set(questions.map(q => q.level))];
     const yearList = [...years].sort((a, b) => b - a);
     const inYear = yearFilter === 'all' ? questions : questions.filter(q => q.year === yearFilter);
@@ -186,7 +204,11 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           {subjectLabel(subjectId)} · {CATEGORY_LABEL[categoryOf(subjectId) as string] ?? 'Topic Atlas'}
         </p>
         <h2 ref={headingRef} tabIndex={-1} className="text-[26px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
-        {shown.length === questions.length ? (
+        {referenceOnly ? (
+          <p aria-live="polite" className="text-[13px] mb-5 tabular-nums" style={{ color: '#8d857c' }}>
+            {referenceEntries} reference entr{referenceEntries === 1 ? 'y' : 'ies'} · official source files pending
+          </p>
+        ) : shown.length === questions.length ? (
           <div className="mb-5 flex items-center" aria-label={`${questions.length} questions across ${years.size} years, marking scheme beneath each`}>
             {[
               { v: String(questions.length), l: questions.length === 1 ? 'Question' : 'Questions' },
@@ -271,7 +293,11 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         </div>
 
         <div className="space-y-5">
-          {shown.length === 0 ? (
+          {referenceOnly ? (
+            <p className="text-[13px] py-3 leading-relaxed" style={{ color: '#8d857c' }}>
+              This reference topic is retained, but its official question material is not available in the local SEC corpus yet.
+            </p>
+          ) : shown.length === 0 ? (
             <p className="text-[13px] py-3" style={{ color: '#8d857c' }}>
               No questions match that filter. <button onClick={() => { setLevelFilter('all'); setYearFilter('all'); }} className="font-semibold underline" style={{ color: INK }}>Show all</button>
             </p>
@@ -296,6 +322,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   // ── Level 1: the topic map — an editorial index: curriculum units as
   //    ruled sections, each topic a quiet row with its cross-year record. ──
   if (subjectId) {
+    const examTaxonomy = examTopicTaxonomyFor(subjectId);
     const stats = subjectAtlasStats(subjectId);
     const yearSets = topicYearSets(subjectId);
     const strands = strandsFor(subjectId, topics.map(t => t.subtopicId));
@@ -344,10 +371,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         </p>
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
           <div className={SEG_TRAY} role="group" aria-label="Sort topics">
-            {(['busiest', 'frequent'] as const).map(s => (
+            {([...(examTaxonomy ? ['reference'] as const : []), 'busiest', 'frequent'] as const).map(s => (
               <button key={s} aria-pressed={sort === s} onClick={() => setSort(s)}
                 className={segBtn(sort === s)}>
-                {s === 'busiest' ? 'Most asked' : 'Most recurrent'}
+                {s === 'reference' ? 'A–Z' : s === 'busiest' ? 'Most asked' : 'Most recurrent'}
               </button>
             ))}
           </div>
@@ -380,13 +407,16 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         ) : (() => {
           // Contents numbering runs continuously through the whole volume,
           // so the strand sections read like chapters of one book.
+          const referenceOrder = new Map(examTaxonomy?.groups.flatMap(group => group.topicIds).map((id, index) => [id, index]) ?? []);
           const orderedByStrand = strands
             .map(strand => {
               const strandTopics = strand.subtopicIds
                 .map(id => topicById.get(id))
                 .filter((t): t is SubjectTopic => !!t);
               const ordered = [...strandTopics].sort((a, b) =>
-                sort === 'busiest'
+                sort === 'reference'
+                  ? (referenceOrder.get(a.subtopicId) ?? Number.MAX_SAFE_INTEGER) - (referenceOrder.get(b.subtopicId) ?? Number.MAX_SAFE_INTEGER)
+                  : sort === 'busiest'
                   ? b.count - a.count || b.years - a.years || a.label.localeCompare(b.label)
                   : b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
               return { strand, ordered };

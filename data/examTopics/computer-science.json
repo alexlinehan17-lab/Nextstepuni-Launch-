@@ -1,0 +1,769 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "computer-science",
+  "capturedAt": "2026-09-04",
+  "reference": {
+    "provider": "StudyClix",
+    "scope": "Factual topic labels, hierarchy, reported counts, and State-versus-Mock classification only.",
+    "excludedContent": "Question text, solutions, notes, videos, images, and PDFs were not copied."
+  },
+  "levels": {
+    "higher": {
+      "label": "Higher Level",
+      "topics": [
+        {
+          "id": "computer-science-higher-algorithms",
+          "label": "Algorithms",
+          "sourcePath": "/leaving-certificate/computer-science/higher/algorithms",
+          "reportedQuestionCount": 24,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 7",
+            "2025 - Section A - Question 7",
+            "2025 - Section B - Question 14 - Part (c)",
+            "2024 - Section B - Question 14 - Part C",
+            "2023 - Section A - Question 10",
+            "2023 - Section B - Question 15",
+            "2022 - Paper A + B - Section B - Question 14",
+            "2022 - Paper A + B - Section B - Question 15",
+            "2020 - Paper A&B - Section A - Question 8",
+            "2020 - Paper A&B - Section A - Question 12",
+            "2020 - Paper A&B - Section B - Question 13",
+            "2020 - Sample Paper A&B - Section A - Question 5",
+            "2020 - Sample Paper A&B - Section B - Question 15 - Part a",
+            "2020 - Sample Paper A&B - Section B - Question 15 - Part b",
+            "2020 - Sample Paper A&B - Section B - Question 15 - Part c",
+            "2020 - Sample Paper A&B - Section B - Question 15 - Part d"
+          ],
+          "mockQuestionCount": 8,
+          "extractedQuestionCount": 24
+        },
+        {
+          "id": "computer-science-higher-communication-protocols",
+          "label": "Communication Protocols",
+          "sourcePath": "/leaving-certificate/computer-science/higher/communication-protocols",
+          "reportedQuestionCount": 9,
+          "officialQuestionHeadings": [
+            "2025 - Section A - Question 8",
+            "2023 - Section A - Question 5",
+            "2022 - Paper A + B - Section A - Question 6",
+            "2021 - Paper A & B - Section A - Question 7",
+            "2020 - Paper A&B - Section A - Question 4",
+            "2020 - Sample Paper A&B - Section A - Question 13 - Part b"
+          ],
+          "mockQuestionCount": 3,
+          "extractedQuestionCount": 9
+        },
+        {
+          "id": "computer-science-higher-communication-protocols-world-wide-web-and-the-internet",
+          "label": "Communication Protocols, World Wide Web & the Internet",
+          "sourcePath": "/leaving-certificate/computer-science/higher/communication-protocols-world-wide-web-the-internet",
+          "reportedQuestionCount": 4,
+          "officialQuestionHeadings": [
+            "2020 - Sample Paper A&B - Section B - Question 13 - Part a"
+          ],
+          "mockQuestionCount": 3,
+          "extractedQuestionCount": 4
+        },
+        {
+          "id": "computer-science-higher-computational-thinking",
+          "label": "Computational Thinking",
+          "sourcePath": "/leaving-certificate/computer-science/higher/computational-thinking",
+          "reportedQuestionCount": 14,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 11",
+            "2026 - Section B - Question 14 - Part A,B",
+            "2025 - Section A - Question 3",
+            "2024 - Section A - Question 4",
+            "2024 - Section A - Question 11",
+            "2023 - Section A - Question 8",
+            "2023 - Section B - Question 13 - Part B",
+            "2022 - Paper A + B - Section A - Question 10",
+            "2022 - Paper A + B - Section A - Question 11",
+            "2022 - Paper A + B - Section A - Question 12",
+            "2021 - Paper A & B - Section B - Question 14",
+            "2020 - Sample Paper A&B - Section A - Question 4"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 14
+        },
+        {
+          "id": "computer-science-higher-computer-systems",
+          "label": "Computer Systems",
+          "sourcePath": "/leaving-certificate/computer-science/higher/computer-systems",
+          "reportedQuestionCount": 18,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 2",
+            "2025 - Section A - Question 4",
+            "2025 - Section A - Question 12",
+            "2024 - Section A - Question 8",
+            "2023 - Section B - Question 14",
+            "2022 - Paper A + B - Section A - Question 2",
+            "2022 - Paper A + B - Section A - Question 3 - Part A",
+            "2021 - Paper A & B - Section A - Question 3",
+            "2021 - Paper A & B - Section A - Question 9",
+            "2021 - Paper A & B - Section B - Question 15 - Part a(i)",
+            "2020 - Paper A&B - Section A - Question 2",
+            "2020 - Paper A&B - Section A - Question 3",
+            "2020 - Sample Paper A&B - Section B - Question 14 - Part a-b"
+          ],
+          "mockQuestionCount": 5,
+          "extractedQuestionCount": 18
+        },
+        {
+          "id": "computer-science-higher-computers-and-society",
+          "label": "Computers and Society",
+          "sourcePath": "/leaving-certificate/computer-science/higher/computers-and-society",
+          "reportedQuestionCount": 20,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 5",
+            "2026 - Section B - Question 14 - Part C",
+            "2025 - Section A - Question 6",
+            "2025 - Section A - Question 10",
+            "2025 - Section A - Question 11",
+            "2024 - Section A - Question 12",
+            "2023 - Section B - Question 13 - Part A",
+            "2023 - Section B - Question 13 - Part C",
+            "2022 - Paper A + B - Section A - Question 7",
+            "2022 - Paper A + B - Section A - Question 8",
+            "2022 - Paper A + B - Section A - Question 3 - Part B",
+            "2020 - Paper A&B - Section B - Question 14 - Part c",
+            "2020 - Sample Paper A&B - Section A - Question 10 - Part a",
+            "2020 - Sample Paper A&B - Section A - Question 10 - Part b",
+            "2020 - Sample Paper A&B - Section B - Question 13 - Part c",
+            "2020 - Sample Paper A&B - Section B - Question 15 - Part b"
+          ],
+          "mockQuestionCount": 4,
+          "extractedQuestionCount": 20
+        },
+        {
+          "id": "computer-science-higher-data-analysis",
+          "label": "Data Analysis",
+          "sourcePath": "/leaving-certificate/computer-science/higher/data-analysis",
+          "reportedQuestionCount": 0,
+          "officialQuestionHeadings": [],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 0
+        },
+        {
+          "id": "computer-science-higher-data-representation",
+          "label": "Data Representation",
+          "sourcePath": "/leaving-certificate/computer-science/higher/data-representation",
+          "reportedQuestionCount": 15,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 4",
+            "2025 - Section A - Question 2",
+            "2025 - Section A - Question 5",
+            "2024 - Section A - Question 3",
+            "2023 - Section A - Question 2",
+            "2021 - Paper A & B - Section A - Question 8 - Part a",
+            "2021 - Paper A & B - Section A - Question 8 - Part b",
+            "2020 - Paper A&B - Section A - Question 6",
+            "2020 - Paper A&B - Section A - Question 7",
+            "2020 - Sample Paper A&B - Section A - Question 2"
+          ],
+          "mockQuestionCount": 5,
+          "extractedQuestionCount": 15
+        },
+        {
+          "id": "computer-science-higher-databases",
+          "label": "Databases",
+          "sourcePath": "/leaving-certificate/computer-science/higher/databases",
+          "reportedQuestionCount": 7,
+          "officialQuestionHeadings": [
+            "2024 - Section B - Question 15",
+            "2021 - Paper A & B - Section A - Question 12",
+            "2020 - Sample Paper A&B - Section A - Question 9"
+          ],
+          "mockQuestionCount": 4,
+          "extractedQuestionCount": 7
+        },
+        {
+          "id": "computer-science-higher-digital-and-analogue-input",
+          "label": "Digital and Analogue Input",
+          "sourcePath": "/leaving-certificate/computer-science/higher/digital-and-analogue-input",
+          "reportedQuestionCount": 4,
+          "officialQuestionHeadings": [
+            "2026 - Section B - Question 15 - Part A",
+            "2021 - Paper A & B - Section B - Question 15 - Part a(ii)"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 4
+        },
+        {
+          "id": "computer-science-higher-embedded-systems",
+          "label": "Embedded Systems",
+          "sourcePath": "/leaving-certificate/computer-science/higher/embedded-systems",
+          "reportedQuestionCount": 6,
+          "officialQuestionHeadings": [
+            "2026 - Section B - Question 15 - Part B,C",
+            "2023 - Section A - Question 6",
+            "2021 - Paper A & B - Section B - Question 15 - Part a (iv-v)",
+            "2021 - Paper A & B - Section B - Question 15 - Part b (i)",
+            "2021 - Paper A & B - Section B - Question 15 - Part b (iii)",
+            "2021 - Paper A & B - Section B - Question 15 - Part c"
+          ],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 6
+        },
+        {
+          "id": "computer-science-higher-history-of-computing",
+          "label": "History of Computing",
+          "sourcePath": "/leaving-certificate/computer-science/higher/history-of-computing",
+          "reportedQuestionCount": 5,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 12",
+            "2024 - Section A - Question 5",
+            "2024 - Section A - Question 7",
+            "2020 - Paper A&B - Section B - Question 14 - Part a-b"
+          ],
+          "mockQuestionCount": 1,
+          "extractedQuestionCount": 5
+        },
+        {
+          "id": "computer-science-higher-html-css",
+          "label": "HTML/CSS",
+          "sourcePath": "/leaving-certificate/computer-science/higher/htmlcss",
+          "reportedQuestionCount": 3,
+          "officialQuestionHeadings": [
+            "2020 - Paper A&B - Section A - Question 10",
+            "2020 - Sample Paper A&B - Section A - Question 7"
+          ],
+          "mockQuestionCount": 1,
+          "extractedQuestionCount": 3
+        },
+        {
+          "id": "computer-science-higher-javascript",
+          "label": "JavaScript",
+          "sourcePath": "/leaving-certificate/computer-science/higher/javascript",
+          "reportedQuestionCount": 4,
+          "officialQuestionHeadings": [
+            "2020 - Paper A&B - Section A - Question 1",
+            "2020 - Paper A&B - Section A - Question 11",
+            "2020 - Sample Paper A&B - Section A - Question 1",
+            "2020 - Sample Paper A&B - Section A - Question 6"
+          ],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 4
+        },
+        {
+          "id": "computer-science-higher-logic-gates",
+          "label": "Logic Gates",
+          "sourcePath": "/leaving-certificate/computer-science/higher/logic-gates",
+          "reportedQuestionCount": 11,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 3",
+            "2024 - Section A - Question 1",
+            "2023 - Section A - Question 3",
+            "2022 - Paper A + B - Section A - Question 4",
+            "2020 - Paper A&B - Section A - Question 5",
+            "2020 - Sample Paper A&B - Section A - Question 3",
+            "2020 - Sample Paper A&B - Section B - Question 14 - Part c"
+          ],
+          "mockQuestionCount": 4,
+          "extractedQuestionCount": 11
+        },
+        {
+          "id": "computer-science-higher-machine-learning-and-artificial-intelligence",
+          "label": "Machine Learning and Artificial Intelligence",
+          "sourcePath": "/leaving-certificate/computer-science/higher/machine-learning-and-artificial-intelligence",
+          "reportedQuestionCount": 5,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 8",
+            "2024 - Section B - Question 13",
+            "2022 - Paper A + B - Section A - Question 9"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 5
+        },
+        {
+          "id": "computer-science-higher-modelling-and-simulation",
+          "label": "Modelling and Simulation",
+          "sourcePath": "/leaving-certificate/computer-science/higher/modelling-and-simulation",
+          "reportedQuestionCount": 6,
+          "officialQuestionHeadings": [
+            "2025 - Section B - Question 15",
+            "2021 - Paper A & B - Section A - Question 11 - Part a",
+            "2021 - Paper A & B - Section A - Question 11 - Part b",
+            "2020 - Sample Paper A&B - Section A - Question 11"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 6
+        },
+        {
+          "id": "computer-science-higher-pseudocode-and-flowcharts",
+          "label": "Pseudocode and Flowcharts",
+          "sourcePath": "/leaving-certificate/computer-science/higher/pseudocode-and-flowcharts",
+          "reportedQuestionCount": 6,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 6",
+            "2024 - Section B - Question 14 - Part A",
+            "2023 - Section A - Question 11",
+            "2022 - Paper A + B - Section A - Question 5",
+            "2021 - Paper A & B - Section A - Question 5"
+          ],
+          "mockQuestionCount": 1,
+          "extractedQuestionCount": 6
+        },
+        {
+          "id": "computer-science-higher-python",
+          "label": "Python",
+          "sourcePath": "/leaving-certificate/computer-science/higher/python",
+          "reportedQuestionCount": 32,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 1",
+            "2026 - Section C - Question 16 - Part A",
+            "2026 - Section C - Question 16 - Part B",
+            "2025 - Section A - Question 1",
+            "2025 - Section A - Question 9",
+            "2025 - Section B - Question 14 - Part (a),(b)",
+            "2025 - Section C - Question 16",
+            "2024 - Section C - Question 16",
+            "2024 - Section A - Question 2",
+            "2024 - Section A - Question 9",
+            "2024 - Section B - Question 14 - Part B",
+            "2023 - Section A - Question 7",
+            "2023 - Section C - Question 16",
+            "2022 - Paper C - Section C - Question 16",
+            "2022 - Paper A + B - Section A - Question 1",
+            "2021 - Paper A & B - Section A - Question 1",
+            "2021 - Paper A & B - Section A - Question 4",
+            "2021 - Paper A & B - Section A - Question 6",
+            "2021 - Paper A & B - Section B - Question 13",
+            "2021 - Paper C - Section C - Question 16",
+            "2020 - Paper C - Section C - Question 16",
+            "2020 - Sample Paper C - Section C - Question 16 - Part a",
+            "2020 - Sample Paper C - Section C - Question 16 - Part b",
+            "2020 - Sample Paper C - Section C - Question 16 - Part c"
+          ],
+          "mockQuestionCount": 8,
+          "extractedQuestionCount": 32
+        },
+        {
+          "id": "computer-science-higher-software-design-and-development",
+          "label": "Software Design and Development",
+          "sourcePath": "/leaving-certificate/computer-science/higher/software-design-and-development",
+          "reportedQuestionCount": 17,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 9",
+            "2026 - Section B - Question 13",
+            "2025 - Section B - Question 13",
+            "2024 - Section A - Question 6",
+            "2023 - Section A - Question 4",
+            "2023 - Section A - Question 12",
+            "2022 - Paper A + B - Section B - Question 13 - Part A",
+            "2022 - Paper A + B - Section B - Question 13 - Part B",
+            "2021 - Paper A & B - Section A - Question 10",
+            "2020 - Paper A&B - Section B - Question 15 - Part a-b",
+            "2020 - Sample Paper A&B - Section A - Question 12"
+          ],
+          "mockQuestionCount": 6,
+          "extractedQuestionCount": 17
+        },
+        {
+          "id": "computer-science-higher-user-experience-and-user-interface",
+          "label": "User Experience and User Interface",
+          "sourcePath": "/leaving-certificate/computer-science/higher/user-experience-and-user-interface",
+          "reportedQuestionCount": 5,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 10",
+            "2024 - Section A - Question 10",
+            "2021 - Paper A & B - Section B - Question 15 - Part b (ii)",
+            "2020 - Paper A&B - Section B - Question 15 - Part c"
+          ],
+          "mockQuestionCount": 1,
+          "extractedQuestionCount": 5
+        }
+      ]
+    },
+    "ordinary": {
+      "label": "Ordinary Level",
+      "topics": [
+        {
+          "id": "computer-science-ordinary-algorithms",
+          "label": "Algorithms",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/algorithms",
+          "reportedQuestionCount": 18,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 7",
+            "2026 - Section B - Question 13",
+            "2025 - Section A - Question 11",
+            "2024 - Section B - Question 13 - Part B",
+            "2023 - Section A - Question 8",
+            "2023 - Section B - Question 13 - Part C",
+            "2022 - Paper A + B - Section A - Question 3",
+            "2022 - Paper A + B - Section A - Question 5",
+            "2022 - Paper A + B - Section A - Question 12",
+            "2021 - Section A & B - Section A - Question 10",
+            "2021 - Section A & B - Section B - Question 14 - Part a-b",
+            "2020 - Sample Paper A&B - Section A - Question 12",
+            "2020 - Sample Paper A&B - Section B - Question 15 - Part a"
+          ],
+          "mockQuestionCount": 5,
+          "extractedQuestionCount": 18
+        },
+        {
+          "id": "computer-science-ordinary-communication-protocols",
+          "label": "Communication Protocols",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/communication-protocols",
+          "reportedQuestionCount": 2,
+          "officialQuestionHeadings": [
+            "2023 - Section B - Question 15 - Part A",
+            "2021 - Section A & B - Section A - Question 6 - Part a"
+          ],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 2
+        },
+        {
+          "id": "computer-science-ordinary-communication-protocols-world-wide-web-and-the-internet",
+          "label": "Communication Protocols, World Wide Web & the Internet",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/communication-protocols-world-wide-web-the-internet",
+          "reportedQuestionCount": 7,
+          "officialQuestionHeadings": [
+            "2025 - Section A - Question 9",
+            "2024 - Section A - Question 4",
+            "2022 - Paper A + B - Section B - Question 15 - Part B",
+            "2021 - Section A & B - Section A - Question 12",
+            "2021 - Section A & B - Section A - Question 6 - Part b",
+            "2020 - Sample Paper A&B - Section A - Question 3"
+          ],
+          "mockQuestionCount": 1,
+          "extractedQuestionCount": 7
+        },
+        {
+          "id": "computer-science-ordinary-computational-thinking",
+          "label": "Computational Thinking",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/computational-thinking",
+          "reportedQuestionCount": 7,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 5",
+            "2025 - Section A - Question 7",
+            "2023 - Section A - Question 5",
+            "2022 - Paper A + B - Section B - Question 14 - Part A",
+            "2020 - Sample Paper A&B - Section B - Question 15 - Part b"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 7
+        },
+        {
+          "id": "computer-science-ordinary-computer-systems",
+          "label": "Computer Systems",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/computer-systems",
+          "reportedQuestionCount": 17,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 9",
+            "2025 - Section A - Question 2",
+            "2025 - Section A - Question 8",
+            "2025 - Section B - Question 13 - Part (b)",
+            "2024 - Section A - Question 3",
+            "2023 - Section A - Question 7",
+            "2022 - Paper A + B - Section A - Question 4",
+            "2022 - Paper A + B - Section A - Question 10",
+            "2021 - Section A & B - Section A - Question 5",
+            "2021 - Section A & B - Section B - Question 15 - Part a",
+            "2021 - Section A & B - Section B - Question 15 - Part c",
+            "2020 - Sample Paper A&B - Section A - Question 11",
+            "2020 - Sample Paper A&B - Section B - Question 13"
+          ],
+          "mockQuestionCount": 4,
+          "extractedQuestionCount": 17
+        },
+        {
+          "id": "computer-science-ordinary-computers-and-society",
+          "label": "Computers and Society",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/computers-and-society",
+          "reportedQuestionCount": 23,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 8",
+            "2026 - Section B - Question 14 - Part A",
+            "2026 - Section B - Question 14 - Part C",
+            "2025 - Section A - Question 6",
+            "2025 - Section B - Question 13 - Part (a)",
+            "2024 - Section A - Question 9",
+            "2023 - Section A - Question 12",
+            "2023 - Section B - Question 15 - Part B,C",
+            "2022 - Paper A + B - Section A - Question 8",
+            "2022 - Paper A + B - Section B - Question 15 - Part D",
+            "2021 - Section A & B - Section A - Question 4",
+            "2021 - Section A & B - Section A - Question 11",
+            "2021 - Section A & B - Section B - Question 13 - Part b",
+            "2021 - Section A & B - Section B - Question 14 - Part c",
+            "2020 - Sample Paper A&B - Section A - Question 2",
+            "2020 - Sample Paper A&B - Section B - Question 14 - Part b",
+            "2020 - Sample Paper A&B - Section B - Question 15 - Part c"
+          ],
+          "mockQuestionCount": 6,
+          "extractedQuestionCount": 23
+        },
+        {
+          "id": "computer-science-ordinary-data-analysis",
+          "label": "Data Analysis",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/data-analysis",
+          "reportedQuestionCount": 15,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 10",
+            "2024 - Section A - Question 10",
+            "2024 - Section B - Question 15 - Part B",
+            "2023 - Section A - Question 6",
+            "2023 - Section A - Question 9",
+            "2022 - Paper A + B - Section A - Question 9",
+            "2022 - Paper A + B - Section B - Question 13 - Part A",
+            "2022 - Paper A + B - Section B - Question 13 - Part C",
+            "2022 - Paper A + B - Section B - Question 14 - Part B",
+            "2021 - Section A & B - Section A - Question 1",
+            "2020 - Sample Paper A&B - Section A - Question 4",
+            "2020 - Sample Paper A&B - Section A - Question 7"
+          ],
+          "mockQuestionCount": 3,
+          "extractedQuestionCount": 15
+        },
+        {
+          "id": "computer-science-ordinary-data-representation",
+          "label": "Data Representation",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/data-representation",
+          "reportedQuestionCount": 15,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 2",
+            "2026 - Section A - Question 12",
+            "2025 - Section A - Question 3",
+            "2025 - Section A - Question 4",
+            "2024 - Section A - Question 2",
+            "2023 - Section A - Question 4",
+            "2022 - Paper A + B - Section B - Question 13 - Part B",
+            "2021 - Section A & B - Section A - Question 2",
+            "2021 - Section A & B - Section A - Question 3"
+          ],
+          "mockQuestionCount": 6,
+          "extractedQuestionCount": 15
+        },
+        {
+          "id": "computer-science-ordinary-databases",
+          "label": "Databases",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/databases",
+          "reportedQuestionCount": 2,
+          "officialQuestionHeadings": [],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 2
+        },
+        {
+          "id": "computer-science-ordinary-decomposition",
+          "label": "Decomposition",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/decomposition",
+          "reportedQuestionCount": 0,
+          "officialQuestionHeadings": [],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 0
+        },
+        {
+          "id": "computer-science-ordinary-digital-and-analogue-input",
+          "label": "Digital and Analogue Input",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/digital-and-analogue-input",
+          "reportedQuestionCount": 3,
+          "officialQuestionHeadings": [
+            "2024 - Section A - Question 11",
+            "2021 - Section A & B - Section A - Question 7"
+          ],
+          "mockQuestionCount": 1,
+          "extractedQuestionCount": 3
+        },
+        {
+          "id": "computer-science-ordinary-embedded-systems",
+          "label": "Embedded Systems",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/embedded-systems",
+          "reportedQuestionCount": 4,
+          "officialQuestionHeadings": [
+            "2026 - Section B - Question 15",
+            "2023 - Section A - Question 2"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 4
+        },
+        {
+          "id": "computer-science-ordinary-history-of-computing",
+          "label": "History of Computing",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/history-of-computing",
+          "reportedQuestionCount": 5,
+          "officialQuestionHeadings": [
+            "2022 - Paper A + B - Section A - Question 7",
+            "2022 - Paper A + B - Section B - Question 15 - Part A",
+            "2021 - Section A & B - Section B - Question 15 - Part d"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 5
+        },
+        {
+          "id": "computer-science-ordinary-html-css",
+          "label": "HTML / CSS",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/html-css",
+          "reportedQuestionCount": 0,
+          "officialQuestionHeadings": [],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 0
+        },
+        {
+          "id": "computer-science-ordinary-javascript",
+          "label": "JavaScript",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/javascript",
+          "reportedQuestionCount": 2,
+          "officialQuestionHeadings": [
+            "2020 - Sample Paper A&B - Section A - Question 6",
+            "2020 - Sample Paper A&B - Section A - Question 10"
+          ],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 2
+        },
+        {
+          "id": "computer-science-ordinary-logic-gates",
+          "label": "Logic Gates",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/logic-gates",
+          "reportedQuestionCount": 7,
+          "officialQuestionHeadings": [
+            "2024 - Section A - Question 6",
+            "2023 - Section A - Question 10",
+            "2022 - Paper A + B - Section A - Question 11",
+            "2021 - Section A & B - Section B - Question 15 - Part b",
+            "2020 - Sample Paper A&B - Section A - Question 9"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 7
+        },
+        {
+          "id": "computer-science-ordinary-machine-learning-and-artificial-intelligence",
+          "label": "Machine Learning and Artificial Intelligence",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/machine-learning-and-artificial-intelligence",
+          "reportedQuestionCount": 3,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 4",
+            "2024 - Section B - Question 14 - Part A",
+            "2024 - Section B - Question 14 - Part C"
+          ],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 3
+        },
+        {
+          "id": "computer-science-ordinary-modelling-and-simulation",
+          "label": "Modelling and Simulation",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/modelling-and-simulation",
+          "reportedQuestionCount": 4,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 6",
+            "2024 - Section B - Question 15 - Part A",
+            "2022 - Paper A + B - Section A - Question 2"
+          ],
+          "mockQuestionCount": 1,
+          "extractedQuestionCount": 4
+        },
+        {
+          "id": "computer-science-ordinary-number-systems",
+          "label": "Number Systems",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/number-systems",
+          "reportedQuestionCount": 0,
+          "officialQuestionHeadings": [],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 0
+        },
+        {
+          "id": "computer-science-ordinary-pseudocode-and-flowcharts",
+          "label": "Pseudocode and Flowcharts",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/pseudocode-and-flowcharts",
+          "reportedQuestionCount": 13,
+          "officialQuestionHeadings": [
+            "2025 - Section A - Question 10",
+            "2025 - Section B - Question 14 - Part (c)",
+            "2024 - Section A - Question 5",
+            "2024 - Section B - Question 13 - Part A",
+            "2024 - Section B - Question 15 - Part D",
+            "2023 - Section A - Question 3",
+            "2023 - Section B - Question 13 - Part B",
+            "2022 - Paper A + B - Section A - Question 6",
+            "2022 - Paper A + B - Section B - Question 14 - Part C",
+            "2021 - Section A & B - Section A - Question 8",
+            "2020 - Sample Paper A&B - Section A - Question 8"
+          ],
+          "mockQuestionCount": 2,
+          "extractedQuestionCount": 13
+        },
+        {
+          "id": "computer-science-ordinary-python",
+          "label": "Python",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/python",
+          "reportedQuestionCount": 34,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 1",
+            "2026 - Section A - Question 11",
+            "2026 - Section C - Question 16 - Part A",
+            "2026 - Section C - Question 16 - Part B",
+            "2025 - Section A - Question 1",
+            "2025 - Section A - Question 5",
+            "2025 - Section B - Question 14 - Part (a)",
+            "2025 - Section C - Question 16",
+            "2024 - Section C - Question 16",
+            "2024 - Section A - Question 1",
+            "2024 - Section A - Question 8",
+            "2023 - Section A - Question 1",
+            "2023 - Section A - Question 11",
+            "2023 - Section B - Question 13 - Part A",
+            "2023 - Section C - Question 16",
+            "2022 - Paper C - Section C - Question 16",
+            "2022 - Paper A + B - Section A - Question 1",
+            "2021 - Section A & B - Section A - Question 9",
+            "2021 - Section C - Section C - Question 16",
+            "2020 - Sample Paper C - Section C - Question 16 - Part a",
+            "2020 - Sample Paper C - Section C - Question 16 - Part b",
+            "2020 - Sample Paper C - Section C - Question 16 - Part c",
+            "2020 - Sample Paper A&B - Section A - Question 5",
+            "2020 - Sample Paper A&B - Section A - Question 8"
+          ],
+          "mockQuestionCount": 10,
+          "extractedQuestionCount": 34
+        },
+        {
+          "id": "computer-science-ordinary-software",
+          "label": "Software",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/software",
+          "reportedQuestionCount": 1,
+          "officialQuestionHeadings": [
+            "2020 - Sample Paper A&B - Section B - Question 13"
+          ],
+          "mockQuestionCount": 0,
+          "extractedQuestionCount": 1
+        },
+        {
+          "id": "computer-science-ordinary-software-design-and-development",
+          "label": "Software Design and Development",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/software-design-and-development",
+          "reportedQuestionCount": 14,
+          "officialQuestionHeadings": [
+            "2026 - Section A - Question 3",
+            "2025 - Section B - Question 15",
+            "2025 - Section B - Question 13 - Part (c)",
+            "2025 - Section B - Question 14 - Part (b)",
+            "2024 - Section A - Question 7",
+            "2023 - Section B - Question 14",
+            "2021 - Section A & B - Section B - Question 13 - Part a",
+            "2020 - Sample Paper A&B - Section A - Question 1",
+            "2020 - Sample Paper A&B - Section B - Question 14 - Part a",
+            "2020 - Sample Paper A&B - Section B - Question 14 - Part c"
+          ],
+          "mockQuestionCount": 4,
+          "extractedQuestionCount": 14
+        },
+        {
+          "id": "computer-science-ordinary-user-experience-and-user-interface",
+          "label": "User Experience and User Interface",
+          "sourcePath": "/leaving-certificate/computer-science/ordinary/user-experience-and-user-interface",
+          "reportedQuestionCount": 9,
+          "officialQuestionHeadings": [
+            "2026 - Section B - Question 14 - Part B",
+            "2024 - Section A - Question 12",
+            "2024 - Section B - Question 14 - Part B",
+            "2024 - Section B - Question 15 - Part C",
+            "2022 - Paper A + B - Section B - Question 15 - Part C",
+            "2021 - Section A & B - Section B - Question 13 - Part c"
+          ],
+          "mockQuestionCount": 3,
+          "extractedQuestionCount": 9
+        }
+      ]
+    }
+  }
+}
