@@ -40,6 +40,16 @@ Clean production integration checks completed:
 - Desktop Home/onboarding/resume source comparisons against production `01d54ffa`: passed.
 - Approved mobile Study and shared session hook checksums: matched.
 
+6 September release continuation:
+
+- Production build passed. Native assets were synced from that build; only generated exam-figure copies were pruned (source and hosted figures remain intact).
+- Browser checks: phone Launchpad and iPad Home have no horizontal overflow or broken images. The collapsed iPad sidebar had 42.5px-wide targets; a mobile-only minimum width fixes these to at least 44px. Both checked screens now report zero undersized targets.
+- The approved mobile Study setup, running countdown, pause/resume and exit confirmation were exercised with the local demo account; the test start was discarded without saving.
+- iPad simulator build and native launch passed. Initial signed archive passed with version 1.0.4 (7) and device families `[1, 2]`; the final archive includes the touch-target correction.
+- GitHub release PR: https://github.com/alexlinehan17-lab/Nextstepuni-Launch-/pull/90. Required checks and production deployment are still pending.
+- App Store Connect confirmed 1.0.3 (6) is Ready for Distribution. The 1.0.4 draft was created and release notes saved, retaining automatic release after approval and the existing rating.
+- iPad screenshots are required for this newly supported device family. App-review sign-in in the simulator has been requested for an accurate Home capture. No build has yet been uploaded or submitted for review.
+
 Build, signing, upload and publishing are verified separately below as each finishes.
 
 Publication is not complete merely because an archive builds. GitHub/Firebase deployment, Apple upload/processing and App Review are separate statuses.
