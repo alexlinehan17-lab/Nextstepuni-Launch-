@@ -2,9 +2,9 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * What a signed-out visitor gets to touch. Three subjects are open across
- * every surface in the playground; everything else shows with a lock and
- * shakes when pressed. The sample profile feeds the tools that need a
+ * What a signed-out visitor gets to touch. Biology and Mathematics are open
+ * across every surface in the playground — under "My subjects" and "All
+ * subjects" alike; everything else shows with a lock and shakes when pressed. The sample profile feeds the tools that need a
  * student (timetable, grade planner, Future Finder) — a plausible sixth-year
  * with the seven subjects Alex named, not a real one.
  */
@@ -12,7 +12,7 @@
 import type { StudentSubjectProfile } from '../../subjectData';
 import { SUBJECTS as MARK_BANK_SUBJECTS } from '../../MarkBank/deck';
 
-export const FREE_SUBJECTS: readonly string[] = ['Biology', 'Economics', 'Mathematics'];
+export const FREE_SUBJECTS: readonly string[] = ['Biology', 'Mathematics'];
 export const isFree = (name: string): boolean => FREE_SUBJECTS.includes(name);
 
 /** The subject grid a visitor sees (Mark Bank's fifteen), in Mark Bank's order. */
@@ -47,5 +47,3 @@ export const DEMO_SUBJECT_NAMES: readonly string[] = DEMO_PROFILE.subjects.map(s
 export const DEMO_LEVELS = DEMO_PROFILE.subjects.map(s => ({ name: s.subjectName, level: s.level as string }));
 /** The same seven as the Topic Atlas keys them (its subject ids are the lowercase names). */
 export const DEMO_ATLAS_SUBJECTS = DEMO_PROFILE.subjects.map(s => ({ id: s.subjectName.toLowerCase(), label: s.subjectName }));
-/** The Atlas opens on Biology; the other six show locked. */
-export const ATLAS_OPEN_SUBJECT = 'Biology';

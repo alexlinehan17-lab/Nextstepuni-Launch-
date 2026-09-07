@@ -545,7 +545,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} initialTab="planner" onOpenSettings={() => setShowOnboarding(true)} /> : null,
         },
         {
-            id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true,
+            id: 'planner', title: 'Planner & Study', description: 'A data-driven study planner powered by your subject goals — and the study screen for each block.', icon: CalendarDays, needsProfile: true,
             curriculum: 'both' as const,
             tag: 'Planner', accentHex: '#6366f1', gridClass: 'md:col-span-2',
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
@@ -975,7 +975,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     {mobileAppDesign && <p className="mb-5 text-sm text-[var(--ink-secondary)]" role="status">{filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'}{toolQuery.trim() ? ' match your search' : ''}</p>}
 
                     {/* Empty state for JC users when no tools are curriculum-visible.
-                        JC-visible tools now include the Spaced Repetition Timetable,
+                        JC-visible tools now include Planner & Study,
                         Comeback Engine, Subject Explorer,
                         Command-Word Reflex, How They Did It and Exploring Options.
                         This branch is now only reachable when the user filters by a

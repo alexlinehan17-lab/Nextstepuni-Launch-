@@ -286,3 +286,79 @@ export const LetterBuild: React.FC<{ text: string; stagger?: number; className?:
     </span>
   );
 };
+
+
+/* ── LineRise ────────────────────────────────────────────────────────────────
+   The headline arrives one line at a time: each line is masked and rises out of
+   its own baseline over ~0.8s with an expo ease, lines 90ms apart. No markers,
+   no per-word popping. Every word is a Highlight: pass the pointer over it and
+   a pale orange highlighter sweeps under it, then fades once you have moved on. */
+
+const Highlight: React.FC<{ word: string; color?: string }> = ({ word, color }) => {
+  const [state, setState] = useState<'off' | 'on' | 'out'>('off');
+  const timer = useRef<number | null>(null);
+  const clear = () => { if (timer.current) { window.clearTimeout(timer.current); timer.current = null; } };
+  useEffect(() => clear, []);
+  return (
+    <span
+      className={`landing-hl${state === 'on' ? ' landing-hl--on' : state === 'out' ? ' landing-hl--out' : ''}`}
+      style={{ color }}
+      onPointerEnter={() => { clear(); setState('on'); }}
+      onPointerLeave={() => {
+        clear();
+        timer.current = window.setTimeout(() => {
+          setState('out');
+          timer.current = window.setTimeout(() => setState('off'), 520);
+        }, 500);
+      }}
+    >
+      {word}
+    </span>
+  );
+};
+
+export const LineRise: React.FC<{
+  text: string;
+  accentWord?: string;
+  className?: string;
+  style?: React.CSSProperties;
+  as?: 'h1' | 'h2' | 'p';
+  /** Rendered inside the LAST word's box, absolutely positioned — for a character hanging off the headline. */
+  tail?: React.ReactNode;
+  delay?: number;
+}> = ({ text, accentWord, className = '', style, as = 'h1', tail, delay = 0.1 }) => {
+  const reduce = useReducedMotion();
+  const lines = useMemo(() => text.split('\n').map(l => l.split(' ').filter(Boolean)), [text]);
+  const Tag = as;
+  const lastLine = lines.length - 1;
+  return (
+    <Tag className={className} style={style} aria-label={text.replace(/\n/g, ' ')}>
+      {lines.map((words, li) => (
+        <span key={li} aria-hidden="true" className="landing-line" style={{ display: 'block', overflow: 'hidden', paddingBottom: '0.06em', marginBottom: '-0.06em' }}>
+          <MotionSpan
+            style={{ display: 'block', willChange: 'transform' }}
+            initial={reduce ? false : { y: '110%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: delay + li * 0.09, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            {words.map((w, wi) => {
+              const isAccent = accentWord && w.replace(/[^\w']/g, '') === accentWord;
+              const last = li === lastLine && wi === words.length - 1;
+              return (
+                <React.Fragment key={wi}>
+                  {last ? (
+                    <span style={{ position: 'relative', display: 'inline-block' }}>
+                      <Highlight word={w} color={isAccent ? L.orangeText : undefined} />
+                      {tail}
+                    </span>
+                  ) : <Highlight word={w} color={isAccent ? L.orangeText : undefined} />}
+                  {wi < words.length - 1 ? ' ' : null}
+                </React.Fragment>
+              );
+            })}
+          </MotionSpan>
+        </span>
+      ))}
+    </Tag>
+  );
+};

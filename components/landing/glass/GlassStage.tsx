@@ -119,6 +119,41 @@ export const GlassStage: React.FC<{
   const [cursor, setCursor] = useState<{ x: number; y: number; press: boolean } | null>(null);
   const stop = useCallback(() => { interactedRef.current = true; setInteracted(true); }, []);
 
+  // The wheel stays in the glass: at the top or bottom of the surface a further
+  // wheel tick would otherwise hand the scroll to the page and carry the visitor
+  // out of the tool mid-paper. (Touch keeps native behaviour — a phone must be
+  // able to scroll past a full-width frame.)
+  useEffect(() => {
+    const root = innerRef.current;
+    if (!root) return;
+    const onWheel = (e: WheelEvent) => {
+      const atTop = root.scrollTop <= 0;
+      const atBottom = root.scrollTop + root.clientHeight >= root.scrollHeight - 1;
+      if ((e.deltaY < 0 && atTop) || (e.deltaY > 0 && atBottom)) e.preventDefault();
+    };
+    root.addEventListener('wheel', onWheel, { passive: false });
+    return () => root.removeEventListener('wheel', onWheel);
+  }, []);
+
+  // While a surface takes the whole screen (Paper Trail's viewer, a Mark Bank
+  // session — both portal a fixed layer onto <body>), the page underneath
+  // must not scroll, or closing the takeover lands the visitor somewhere else.
+  useEffect(() => {
+    if (!active) return;
+    const isTakeover = (n: Node) => n instanceof HTMLElement && n.classList.contains('fixed') && n.classList.contains('inset-0');
+    let locked = false;
+    const update = () => {
+      const open = Array.from(document.body.children).some(isTakeover);
+      if (open === locked) return;
+      locked = open;
+      document.documentElement.style.overflow = open ? 'hidden' : '';
+    };
+    const mo = new MutationObserver(update);
+    mo.observe(document.body, { childList: true });
+    update();
+    return () => { mo.disconnect(); if (locked) document.documentElement.style.overflow = ''; };
+  }, [active]);
+
   // Locks: decorate matching controls as the app renders them, and swallow their presses.
   useEffect(() => {
     const root = innerRef.current;
