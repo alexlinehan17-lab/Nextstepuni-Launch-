@@ -46,7 +46,42 @@
 @media (max-width: 639px) { .landing-starguy-lg { display: none !important; } }
 
 /* The looking glass: the real app inside the page. */
-.landing-glass-pad { padding: 8px 20px 40px; min-height: 100%; }
+.landing-glass-pad { padding: 28px 32px 56px; min-height: 100%; }
+/* Full app pages (results, planner, passport) get more air than the boards. */
+.landing-glass-pad--airy { padding: 44px 56px 72px; }
+@media (max-width: 639px) {
+  .landing-glass-pad { padding: 20px 14px 40px; }
+  .landing-glass-pad--airy { padding: 28px 16px 48px; }
+}
 .landing-glass button:has(.lucide-link-2) { display: none !important; }  /* the Atlas Share button falls back to window.prompt — not on a marketing page */
 .landing-live-dot { animation: landing-pulse 1.8s ease-in-out infinite; }
 @keyframes landing-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.8); } }
+
+/* ── Locks inside the looking glass ─────────────────────────────────────
+   A control the visitor cannot use yet: a small ink padlock on its corner,
+   and a shake when it is pressed. Applied by GlassStage, never by the app. */
+.landing-glass .landing-locked { position: relative; opacity: 0.62; }
+.landing-glass .landing-locked::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A1A1A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='11' width='16' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E") center / 10px 10px no-repeat;
+  border: 1px solid #1A1A1A;
+  box-shadow: 0 1px 0 rgba(26,26,26,0.12);
+  pointer-events: none;
+  z-index: 3;
+}
+.landing-glass .landing-shake { animation: landing-shake 0.42s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
+@keyframes landing-shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .landing-glass .landing-shake { animation: none; }
+}

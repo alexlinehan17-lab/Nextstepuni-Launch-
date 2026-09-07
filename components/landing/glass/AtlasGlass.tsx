@@ -12,7 +12,7 @@
 import React from 'react';
 import ReviseByTopic from '../../PaperTrail/ReviseByTopic';
 import { APP_URL } from '../theme';
-import { GlassStage } from './GlassStage';
+import { GlassStage, type GlassLocks, type GlassProps } from './GlassStage';
 
 export const ATLAS_TOPICS_LIVE: { id: string; label: string }[] = [
   { id: 'biology-higher-old-course-genetics-dna-evolution', label: 'Genetics & DNA' },
@@ -24,9 +24,11 @@ export const ATLAS_TOPICS_LIVE: { id: string; label: string }[] = [
 
 const SUBJECTS = [{ id: 'biology', label: 'Biology' }];
 const AUTO = [{ text: 'Show the marking scheme', hold: 5200, before: 2600 }];
+/** Biology is the open subject; the way out to the other subjects shows a lock. */
+const LOCKS: GlassLocks = { names: ['All subjects'] };
 
-const AtlasGlass: React.FC<{ sub: string; active: boolean }> = ({ sub, active }) => (
-  <GlassStage active={active} auto={AUTO} height={700}>
+const AtlasGlass: React.FC<GlassProps> = ({ sub, active, height = 700, logicalWidth }) => (
+  <GlassStage active={active} auto={AUTO} height={height} logicalWidth={logicalWidth} locks={LOCKS}>
     {active && (
       <div className="landing-glass-pad">
         <ReviseByTopic

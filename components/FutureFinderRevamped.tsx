@@ -59,7 +59,7 @@ function buildQuestions(length: 'full' | 'quick'): Question[] {
  * Your Possible Life screen showed no careers and their guidance counsellor had
  * nothing to see, even though the ranking was right there on screen.
  */
-function computeAnalysis(
+export function computeAnalysis(
   responses: Record<string, number>,
   valueResponses: Record<string, number>,
   studentPoints: number,

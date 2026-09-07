@@ -57,15 +57,15 @@ export const COPY = {
     eyebrow: 'Have a go. No account needed.',
     cta: 'Open the app',
     tabs: [
-      { id: 'markbank', label: 'Mark Bank', hint: 'This is the real Mark Bank. Pick a subject, start a session, grade yourself.' },
+      { id: 'markbank', label: 'Mark Bank', hint: 'The real Mark Bank. Biology, Economics and Maths are open; the rest unlock with an account.' },
+      { id: 'papertrail', label: 'Paper Trail', hint: 'Mathematics is open, with answers on most papers. The other subjects unlock with an account.' },
       { id: 'atlas', label: 'Topic Atlas', hint: 'Real questions, cropped from the printed papers. Tap one for its marking scheme.' },
-      { id: 'reflex', label: 'Command-Word Reflex', hint: 'Tap the word the examiner is marking against.' },
+      { id: 'planner', label: 'Planner', hint: 'A real week, built for a sample sixth-year with six subjects and Sundays off.' },
+      { id: 'reflex', label: 'Command-Word Reflex', hint: 'Under All Subjects, pick Biology, Economics or Maths. Then tap the word the examiner is marking against.' },
+      { id: 'passport', label: 'Points Passport', hint: 'The Grade Planner is open. The other tabs unlock with an account.' },
+      { id: 'futurefinder', label: 'Future Finder', hint: 'A sample student who finished the quiz. Three courses are queued to compare.' },
     ],
     live: 'Live · the actual app',
-    markbank: { flip: 'Reveal the marking scheme', back: 'Hide the scheme', next: 'Next card', marks: 'marks', scoreSelf: 'How did you do? You decide.', got: 'Got it', shaky: 'Shaky', missed: 'Missed it', backLater: 'Nice. This one’s back in about 6 days.', backShaky: 'Grand. Back in a couple of days.', backSoon: 'No bother. It’s back before you finish today.', hint: 'Answer it in your head first.', allOf: 'All of', anyOf: 'Any of', or: 'Or', card: 'Card', of: 'of', markShort: 'm' },
-    atlas: { yearsAsked: 'years asked', of: 'of', prompt: 'Biology, Higher Level. Tap a topic.', everyYear: 'Asked every year since 2010.', promptYear: 'Biology, Higher Level. Tap a year.', topics: 'topics', topicList: 'Topics', yearList: 'Years' },
-    planner: { today: 'Today', due: 'due', minutes: 'min', rest: 'Rest day. That counts.', done: 'Done', markDone: 'Mark done', paper: 'Paper', thing: 'thing', things: 'things', allDone: 'Done for today.' },
-    launchpad: { prompt: 'Tap the command word — the cue telling you what to actually do.', right: 'That’s the one. Read it like an examiner.', wrong: 'That’s a topic word. Look for the action word — the verb telling you what to produce.', reveal: 'Show me', demand: 'The move', trap: 'Where marks go', next: 'Next question', of: 'of', firstTime: 'first time', pointsEyebrow: 'CAO points · six subjects · out of 625', points: 'points', level: 'level', higher: 'Higher', ordinary: 'Ordinary', lower: 'Lower grade', raise: 'Raise grade', bonusApplied: 'Includes the additional 25 CAO points for Higher Level Mathematics, H1 through H6.' },
   },
 
   numbers: {
@@ -199,4 +199,4 @@ export const COPY = {
   },
 };
 
-export type PlaygroundTabId = 'markbank' | 'atlas' | 'reflex';
+export type PlaygroundTabId = 'markbank' | 'papertrail' | 'atlas' | 'planner' | 'reflex' | 'passport' | 'futurefinder';
