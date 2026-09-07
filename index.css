@@ -5,7 +5,7 @@
 :root {
   --surface-canvas: #ffffff;
   --surface-paper: #FFFFFF;
-  --surface-soft: #F6F2EC;
+  --surface-soft: #F4F4F5; /* neutral, was warm #F6F2EC — we don't do cream */
   --surface-raised: #FFFFFF;
   --outline-strong: #383838;
   --outline-soft: #D8D3CD;
@@ -1526,7 +1526,7 @@ html:not(.dark) [class*="text-[#A0978D]"] {
    warm graphite desk rather than an inverted white page: the question, scheme,
    controls and sticky chrome all belong to the same material system. */
 .mark-bank-theme {
-  --mb-canvas: #FAF9F7;
+  --mb-canvas: #FFFFFF;
   --mb-paper: #FFFFFF;
   --mb-raised: #F4F2EE;
   --mb-soft: #F7F6F3;
@@ -2117,7 +2117,7 @@ html:not(.dark) [class*="text-[#A0978D]"] {
    retain their authored colours and every label keeps readable contrast. */
 .immersive-deck-theme {
   --deck-paper: #FFFFFF;
-  --deck-soft: #F3F1ED;
+  --deck-soft: #F4F4F5;
   --deck-ink: #1A1A1A;
   --deck-body: #3A3530;
   --deck-muted: #7A7068;
