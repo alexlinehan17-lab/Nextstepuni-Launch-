@@ -118,7 +118,7 @@ describe('student analytics dashboard', () => {
       />,
     );
 
-    fireEvent.click(screen.getByRole('button', { name: 'Minutes' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Minutes' }));
     expect(screen.getByRole('img', { name: 'Study activity chart showing minutes' })).toBeInTheDocument();
 
     fireEvent.change(screen.getByRole('combobox', { name: 'Filter by subject' }), { target: { value: 'Biology' } });

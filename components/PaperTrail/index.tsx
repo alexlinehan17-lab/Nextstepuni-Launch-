@@ -36,6 +36,7 @@ import CountdownCard from './CountdownCard';
 import ProgressDashboard from './ProgressDashboard';
 import MockExamBuilder from './MockExamBuilder';
 import { LoadingState } from '../ui/SystemState';
+import HorizontalTabs from '../ui/HorizontalTabs';
 import Flashcards from './Flashcards';
 import FirstRunCoach from './FirstRunCoach';
 import MilestoneCelebration from './MilestoneCelebration';
@@ -882,10 +883,15 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       <div><p className="pt-eyebrow">Last opened</p><p className="pt-resume-name">{subjectLabelForId(lastOpened.subjectId)} · {lastOpened.label}</p><p>{lastOpened.year} · {LEVEL_LABEL[lastOpened.level]} level{lastOpened.kind === 'scheme' ? ' · Scheme' : ''}</p></div>
       <button className="pt-continue" onClick={() => openStoredRef(lastOpened)}>Continue <ArrowRight size={18} aria-hidden /></button>
     </div>}
-    <div className="pt-scope" role="group" aria-label="Subject selection">
-      <button aria-pressed={scope === 'mine'} onClick={() => setScope('mine')}>My subjects</button>
-      <button aria-pressed={scope === 'all'} onClick={() => setScope('all')}>All subjects</button>
-    </div>
+    <HorizontalTabs
+      variant="pill"
+      size="sm"
+      label="Subject selection"
+      className="w-fit mb-3"
+      value={scope}
+      onChange={next => setScope(next as 'mine' | 'all')}
+      options={[{ value: 'mine', label: 'My subjects' }, { value: 'all', label: 'All subjects' }]}
+    />
     {visibleSubjects.length > 0 ? <div className="pt-subject-grid" aria-label={scope === 'mine' ? 'My subjects' : 'All subjects'}>
       {visibleSubjects.map(subject => <button key={subject.id} className="pt-subject-card" onClick={() => pickSubject(subject.id)}>
         <span className="pt-subject-name">{paperTrailSubjectLabel(subject)}</span>

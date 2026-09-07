@@ -19,6 +19,7 @@ import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
 import VaultQuestionCard from './VaultQuestionCard';
+import HorizontalTabs from '../ui/HorizontalTabs';
 import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
 import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
@@ -37,15 +38,6 @@ const CATEGORY_TINT: Record<string, { bg: string; ink: string }> = {
 // Curriculum sections of the index, in reading order. The tint appears only
 // as the small dot beside each section eyebrow — rows stay white and ruled.
 const CATEGORY_ORDER = ['stem', 'language', 'business', 'social-environmental', 'practical-applied', 'arts', 'other'] as const;
-// Segmented controls — copied from the iOS/Copilot register: a soft tray,
-// the selected option raised on a white pill. Sleek, clickable, obvious.
-const SEG_TRAY = 'inline-flex items-center gap-0.5 rounded-[10px] bg-[#F1EFEC] p-[3px] dark:bg-zinc-800';
-const segBtn = (active: boolean) =>
-  `rounded-[8px] px-3 py-[5px] text-[12.5px] font-semibold transition-colors ${
-    active
-      ? 'bg-white text-[#1a1a1a] shadow-[0_1px_2px_rgba(26,23,20,0.10)] dark:bg-zinc-600 dark:text-white'
-      : 'text-[#8d857c] hover:text-[#57534e] dark:text-zinc-400 dark:hover:text-zinc-200'
-  }`;
 
 const CATEGORY_LABEL: Record<string, string> = {
   stem: 'Sciences & Maths',
@@ -229,25 +221,26 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
 
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-6" style={{ borderBottom: '1px solid #e7e3de' }}>
           {levels.length > 1 && (
-            <div className={SEG_TRAY} role="group" aria-label="Level">
-              {(['all', ...levels] as const).map(l => (
-                <button key={l} aria-pressed={levelFilter === l} onClick={() => setLevelFilter(l)}
-                  className={segBtn(levelFilter === l)}>
-                  {l === 'all' ? 'All levels' : LVL[l] ?? l}
-                  <span className="ml-1 tabular-nums font-medium" style={{ color: '#b3aca3' }}>{levelCount(l)}</span>
-                </button>
-              ))}
-            </div>
+            <HorizontalTabs
+              variant="pill"
+              size="sm"
+              label="Level"
+              className="shrink-0"
+              value={levelFilter}
+              onChange={l => setLevelFilter(l)}
+              options={['all', ...levels].map(l => ({ value: l, label: `${l === 'all' ? 'All levels' : LVL[l] ?? l} ${levelCount(l)}` }))}
+            />
           )}
           {hasIrish && (
-            <div className={SEG_TRAY} role="group" aria-label="Language">
-              {(['ev', 'iv'] as const).map(l => (
-                <button key={l} aria-pressed={langPref === l} onClick={() => pickLang(l)}
-                  className={segBtn(langPref === l)}>
-                  {l === 'ev' ? 'English' : 'Gaeilge'}
-                </button>
-              ))}
-            </div>
+            <HorizontalTabs
+              variant="pill"
+              size="sm"
+              label="Language"
+              className="shrink-0"
+              value={langPref}
+              onChange={pickLang}
+              options={[{ value: 'ev', label: 'English' }, { value: 'iv', label: 'Gaeilge' }]}
+            />
           )}
           {yearList.length > 3 && (
             <div className="relative">
@@ -370,14 +363,18 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           Pick a topic — every question ever asked on it is inside.
         </p>
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
-          <div className={SEG_TRAY} role="group" aria-label="Sort topics">
-            {([...(examTaxonomy ? ['reference'] as const : []), 'busiest', 'frequent'] as const).map(s => (
-              <button key={s} aria-pressed={sort === s} onClick={() => setSort(s)}
-                className={segBtn(sort === s)}>
-                {s === 'reference' ? 'A–Z' : s === 'busiest' ? 'Most asked' : 'Most recurrent'}
-              </button>
-            ))}
-          </div>
+          <HorizontalTabs
+            variant="pill"
+            size="sm"
+            label="Sort topics"
+            className="shrink-0"
+            value={sort}
+            onChange={s => setSort(s)}
+            options={([...(examTaxonomy ? ['reference'] as const : []), 'busiest', 'frequent'] as const).map(s => ({
+              value: s,
+              label: s === 'reference' ? 'A–Z' : s === 'busiest' ? 'Most asked' : 'Most recurrent',
+            }))}
+          />
           <span className="flex-1" />
           {sortedTopics.length > 8 && (
             <div className="relative">
@@ -523,14 +520,15 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             ))}
           </div>
           {mineIds.length > 0 && (
-            <div className={`${SEG_TRAY} mb-2`} role="group" aria-label="Subject scope">
-              {(['mine', 'all'] as const).map(sc => (
-                <button key={sc} aria-pressed={scope === sc} onClick={() => setScope(sc)}
-                  className={segBtn(scope === sc)}>
-                  {sc === 'mine' ? 'My subjects' : 'All subjects'}
-                </button>
-              ))}
-            </div>
+            <HorizontalTabs
+              variant="pill"
+              size="sm"
+              label="Subject scope"
+              className="w-fit mb-2"
+              value={scope}
+              onChange={sc => setScope(sc)}
+              options={[{ value: 'mine', label: 'My subjects' }, { value: 'all', label: 'All subjects' }]}
+            />
           )}
           {grouped.map(group => {
             const tint = CATEGORY_TINT[group.cat] ?? CATEGORY_TINT.other;

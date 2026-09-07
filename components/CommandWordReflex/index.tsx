@@ -19,6 +19,7 @@ import { MotionDiv } from '../Motion';
 import { ArrowLeft, ArrowRight, Check, BookOpenCheck } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
+import HorizontalTabs from '../ui/HorizontalTabs';
 import { useCommandWordReflex } from '../../hooks/useCommandWordReflex';
 import { COMMAND_WORD_QUESTIONS, commandSubjects, questionsForSubject } from '../../commandWordData';
 import { type CommandWordQuestion } from '../../types/commandWord';
@@ -140,18 +141,14 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
         {/* Higher / Ordinary level filter */}
         <div className="flex items-center gap-2.5 mb-5">
           <span className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>Your level</span>
-          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Question level">
-            {(['higher', 'ordinary'] as const).map(lv => (
-              <button
-                key={lv}
-                onClick={() => setLevelFilter(lv)}
-                aria-pressed={levelFilter === lv}
-                className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${levelFilter === lv ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
-              >
-                {lv === 'higher' ? 'Higher' : 'Ordinary'}
-              </button>
-            ))}
-          </div>
+          <HorizontalTabs
+            variant="pill"
+            size="sm"
+            label="Question level"
+            value={levelFilter}
+            onChange={next => setLevelFilter(next as typeof levelFilter)}
+            options={[{ value: 'higher', label: 'Higher' }, { value: 'ordinary', label: 'Ordinary' }]}
+          />
         </div>
 
         {state.wordsMet.length > 0 && (

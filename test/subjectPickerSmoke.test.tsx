@@ -50,8 +50,8 @@ describe('Catch-Up Lane subject picker', () => {
   test('with matching studentSubjects: toggle visible, only my subjects tiled, coming-soon note shown', () => {
     openCatchUpPicker({ uid: 'u1', studentSubjects: ['Biology', 'Latin'], studentCycle: 'leaving-cert' });
     // Scope toggle is present (student has ≥1 subject with content).
-    expect(screen.getByRole('button', { name: 'My Subjects' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'All Subjects' })).toBeInTheDocument();
+    expect(screen.getByRole('tab', { name: 'My Subjects' })).toBeInTheDocument();
+    expect(screen.getByRole('tab', { name: 'All Subjects' })).toBeInTheDocument();
     // Default scope 'mine': Biology tiled, other-cycle/other subjects not.
     expect(screen.getByRole('button', { name: /^Biology/ })).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /^Chemistry/ })).not.toBeInTheDocument();
@@ -62,7 +62,7 @@ describe('Catch-Up Lane subject picker', () => {
   test('switching scope to All shows more tiles', () => {
     openCatchUpPicker({ uid: 'u1', studentSubjects: ['Biology'], studentCycle: 'leaving-cert' });
     expect(screen.queryByRole('button', { name: /^Chemistry/ })).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'All Subjects' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'All Subjects' }));
     expect(screen.getByRole('button', { name: /^Biology/ })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /^Chemistry/ })).toBeInTheDocument();
   });
@@ -86,8 +86,8 @@ describe('Catch-Up Lane subject picker', () => {
 describe('Command-Word Reflex subject picker', () => {
   test('with matching studentSubjects: toggle visible, only my subjects tiled, coming-soon note shown', () => {
     render(<CommandWordReflex uid="u1" studentSubjects={['Biology', 'Latin']} studentCycle="leaving-cert" />);
-    expect(screen.getByRole('button', { name: 'My Subjects' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'All Subjects' })).toBeInTheDocument();
+    expect(screen.getByRole('tab', { name: 'My Subjects' })).toBeInTheDocument();
+    expect(screen.getByRole('tab', { name: 'All Subjects' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /^Biology/ })).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /^Chemistry/ })).not.toBeInTheDocument();
     expect(screen.getByText(/More of your subjects are coming/i)).toBeInTheDocument();
@@ -96,7 +96,7 @@ describe('Command-Word Reflex subject picker', () => {
   test('switching scope to All shows more tiles', () => {
     render(<CommandWordReflex uid="u1" studentSubjects={['Biology']} studentCycle="leaving-cert" />);
     expect(screen.queryByRole('button', { name: /^Chemistry/ })).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'All Subjects' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'All Subjects' }));
     expect(screen.getByRole('button', { name: /^Biology/ })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /^Chemistry/ })).toBeInTheDocument();
   });

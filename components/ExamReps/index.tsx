@@ -307,7 +307,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
         </p>
 
         <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-zinc-400 mb-2">Before you start — how sure are you?</p>
-        <div className="flex gap-2 mb-6">
+        <div className="flex w-full items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1 mb-6">
           {CONFIDENCE_OPTIONS.map(opt => {
             const on = confidence === opt.id;
             return (
@@ -315,8 +315,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
                 key={opt.id}
                 type="button"
                 onClick={() => setConfidence(opt.id)}
-                className="flex-1 rounded-xl border-2 py-2.5 text-sm font-semibold transition-colors"
-                style={{ borderColor: on ? COLORS.accent : COLORS.border, backgroundColor: on ? COLORS.accentTint : '#FFFFFF', color: '#1A1A1A' }}
+                className={`flex-1 min-h-9 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors ${on ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm' : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`}
               >
                 {opt.label}
               </button>

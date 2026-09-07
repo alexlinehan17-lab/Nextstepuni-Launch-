@@ -2837,7 +2837,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 <p style={{ margin: '0 0 10px', font: `400 12.5px/1.5 ${SANS}`, color: INK_2 }}>
                   This is one exam question. Choose your example so the reveal shows its exact SEC scheme.
                 </p>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
+                <div className="inline-flex max-w-full flex-wrap items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
                   {answerVariants.map(variant => {
                     const selected = answerVariantId === variant.id;
                     return (
@@ -2851,13 +2851,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           setPicks({});
                           setSchemeInteracted(false);
                         }}
-                        style={{
-                          padding: '8px 11px', borderRadius: 999, cursor: 'pointer',
-                          border: `1px solid ${selected ? INK : MUTED_BORDER}`,
-                          background: selected ? INK : 'var(--mb-paper)',
-                          color: selected ? 'var(--mb-paper)' : INK,
-                          font: `600 12px/1.2 ${SANS}`,
-                        }}
+                        className={`min-h-9 shrink-0 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors ${selected ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm' : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`}
                       >
                         {variant.label}
                       </button>

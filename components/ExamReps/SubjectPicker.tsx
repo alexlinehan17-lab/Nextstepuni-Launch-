@@ -12,6 +12,7 @@ import React, { useState, useMemo } from 'react';
 import { ArrowLeft, Check } from 'lucide-react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
+import HorizontalTabs from '../ui/HorizontalTabs';
 import { COLORS } from '../../design/tokens';
 import { curriculumSubjectsForYear } from '../../curriculumRegistry';
 import type { CurriculumLevel } from '../../curriculum';
@@ -82,14 +83,15 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
             <p className="text-sm text-[#7a7068] dark:text-zinc-400 mt-1">{showAll ? 'All Leaving Cert subjects. ' : 'Your subjects. '}Ones without reps yet are marked “soon”.</p>
           </div>
           {(studentSubjectIds?.length ?? 0) > 0 && (
-            <button
-              type="button"
-              onClick={() => setShowAll(v => !v)}
-              className="shrink-0 rounded-full border-2 px-3 py-1.5 text-xs font-semibold transition-colors"
-              style={{ borderColor: COLORS.border, backgroundColor: showAll ? COLORS.accentTint : '#FFFFFF', color: '#1A1A1A' }}
-            >
-              {showAll ? 'My subjects' : 'All subjects'}
-            </button>
+            <HorizontalTabs
+              variant="pill"
+              size="sm"
+              label="Subject scope"
+              className="shrink-0"
+              value={showAll ? 'all' : 'mine'}
+              onChange={next => setShowAll(next === 'all')}
+              options={[{ value: 'mine', label: 'My subjects' }, { value: 'all', label: 'All subjects' }]}
+            />
           )}
         </header>
 
@@ -139,7 +141,7 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
       <h1 className="font-serif text-2xl font-bold text-[#1A1A1A] dark:text-white mb-3">{subject.name}</h1>
 
       {/* level toggle */}
-      <div className="flex gap-2 mb-5">
+      <div className="inline-flex items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1 mb-5">
         {subject.levels.map((lvl: CurriculumLevel) => {
           const on = level === lvl;
           const hasLvl = avail.subjLevel.has(`${subject.id}|${lvl}`);
@@ -148,8 +150,7 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
               key={lvl}
               type="button"
               onClick={() => setLevel(lvl)}
-              className="rounded-xl border-2 px-4 py-2 text-sm font-semibold transition-colors"
-              style={{ borderColor: on ? COLORS.accent : COLORS.border, backgroundColor: on ? COLORS.accentTint : '#FFFFFF', color: '#1A1A1A' }}
+              className={`min-h-9 shrink-0 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors ${on ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm' : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`}
             >
               {LEVEL_LABEL[lvl] ?? lvl}{hasLvl && <span className="ml-1.5 inline-block w-1.5 h-1.5 rounded-full align-middle" style={{ backgroundColor: COLORS.success }} />}
             </button>

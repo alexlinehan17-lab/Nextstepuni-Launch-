@@ -37,6 +37,16 @@ const fmtSec = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2
 const BASE_PER_Q_MIN = 8;
 /** Rehearsal reading time — the real exam hall gives 5 minutes. */
 const READING_SECONDS = 5 * 60;
+/** Selection-bar look shared with ui/HorizontalTabs variant="pill": a soft grey
+ *  tray with one ink-outlined white pill for the active option. Full-width here
+ *  because each bar spans the form. */
+const SEG_TRAY = 'flex w-full items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1';
+const segBtn = (active: boolean) =>
+  `flex-1 min-h-9 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors ${
+    active
+      ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
+      : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
+  }`;
 
 interface Props {
   uid?: string;
@@ -271,14 +281,13 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
 
       {/* Scope */}
       <h3 className="text-[11px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>Coverage</h3>
-      <div className="flex gap-2 mb-4">
+      <div className={`${SEG_TRAY} mb-4`}>
         {(['mixed', 'topics'] as const).map(m => (
           <button
             key={m}
             onClick={() => setMode(m)}
             aria-pressed={mode === m}
-            className="flex-1 py-2.5 rounded-xl border-2 text-[13px] font-semibold transition-colors"
-            style={mode === m ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: '#8C3A0E' } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
+            className={segBtn(mode === m)}
           >
             {m === 'mixed' ? 'Mixed — any topic' : 'Choose topics'}
           </button>
@@ -301,14 +310,13 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
 
       {/* Length */}
       <h3 className="text-[11px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>Length</h3>
-      <div className="flex gap-2 mb-2">
+      <div className={`${SEG_TRAY} mb-2`}>
         {LENGTHS.map(n => (
           <button
             key={n}
             onClick={() => setCount(n)}
             aria-pressed={count === n}
-            className="flex-1 py-2.5 rounded-xl border-2 text-[14px] font-bold transition-colors"
-            style={count === n ? { backgroundColor: ACCENT, borderColor: ACCENT, color: '#fff' } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
+            className={segBtn(count === n)}
           >
             {n}
           </button>
@@ -322,14 +330,13 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
 
       {/* Format — straight in, or a full exam-day rehearsal */}
       <h3 className="text-[11px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>Format</h3>
-      <div className="flex gap-2 mb-2">
+      <div className={`${SEG_TRAY} mb-2`}>
         {([false, true] as const).map(r => (
           <button
             key={String(r)}
             onClick={() => setRehearsal(r)}
             aria-pressed={rehearsal === r}
-            className="flex-1 py-2.5 rounded-xl border-2 text-[13px] font-semibold transition-colors"
-            style={rehearsal === r ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: '#8C3A0E' } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
+            className={segBtn(rehearsal === r)}
           >
             {r ? 'Rehearsal' : 'Straight in'}
           </button>

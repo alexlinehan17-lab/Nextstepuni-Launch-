@@ -97,7 +97,9 @@ describe('app audit regressions', () => {
     expect(shop).toContain("'Close Island Shop'");
     expect(profile).toContain('aria-label="Close profile"');
     expect(catchUp).toContain('aria-pressed={levelFilter === lv}');
-    expect(commandWords).toContain('aria-pressed={levelFilter === lv}');
+    // The level filter is the shared pill tab control now (role=tab / aria-selected), not hand-rolled aria-pressed buttons.
+    expect(commandWords).toContain("import HorizontalTabs from '../ui/HorizontalTabs'");
+    expect(commandWords).toContain('value={levelFilter}');
   });
 
   test('does not duplicate Comeback Engine heading chrome or animate theme colours out of sync', () => {

@@ -405,7 +405,7 @@ const WarRoom: React.FC<WarRoomProps> = ({
         <div
           role="tablist"
           aria-label="War Room mode"
-          className="inline-grid w-full grid-cols-2 rounded-[10px] border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1 sm:w-[210px] sm:shrink-0"
+          className="inline-grid w-full grid-cols-2 gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1 sm:w-[210px] sm:shrink-0"
         >
           {MODE_TABS.map((tab, index) => {
             const selected = mode === tab.id;
@@ -421,10 +421,10 @@ const WarRoom: React.FC<WarRoomProps> = ({
                 tabIndex={selected ? 0 : -1}
                 onClick={() => selectMode(tab.id)}
                 onKeyDown={event => handleModeKeyDown(event, index)}
-                className={`min-h-9 rounded-[7px] px-4 text-xs font-semibold transition-[background-color,color,box-shadow] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)] ${
+                className={`min-h-9 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)] ${
                   selected
-                    ? 'bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-[0_1px_3px_rgba(0,0,0,.08)]'
-                    : 'text-[var(--ink-muted)] hover:text-[var(--ink-primary)]'
+                    ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
+                    : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
                 }`}
               >
                 {tab.label}
@@ -470,11 +470,11 @@ const WarRoom: React.FC<WarRoomProps> = ({
               </header>
 
               {reviewTabs.length > 1 && (
-                <div className="mt-6 border-b border-[var(--outline-soft)]">
+                <div className="mt-6">
                   <div
                     role="tablist"
                     aria-label="Review views"
-                    className="grid gap-1"
+                    className="grid gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1"
                     style={{ gridTemplateColumns: `repeat(${reviewTabs.length}, minmax(0, 1fr))` }}
                   >
                     {reviewTabs.map((tab, index) => {
@@ -491,17 +491,13 @@ const WarRoom: React.FC<WarRoomProps> = ({
                           tabIndex={selected ? 0 : -1}
                           onClick={() => selectReviewPanel(tab.id)}
                           onKeyDown={event => handleReviewKeyDown(event, index)}
-                          className={`relative min-h-11 px-3 pb-3 text-xs font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-[var(--outline-strong)] ${
-                            selected ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-primary)]'
+                          className={`min-h-11 whitespace-nowrap rounded-lg border px-4 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)] ${
+                            selected
+                              ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
+                              : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
                           }`}
                         >
                           {tab.label}
-                          {selected && (
-                            <MotionDiv
-                              layoutId="war-room-review-indicator"
-                              className="absolute inset-x-3 -bottom-px h-0.5 bg-[var(--outline-strong)]"
-                            />
-                          )}
                         </button>
                       );
                     })}
