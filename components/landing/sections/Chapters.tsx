@@ -149,7 +149,7 @@ const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
     <Frame title={chapter.frameLabel} meta={chapter.numeral}>
       {src
         ? <img src={src} alt={chapter.frameLabel} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto' }} />
-        : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} /> : (
+        : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} height={chapter.id === "launchpad" ? 460 : 640} /> : (
           <div
             role="img"
             aria-label={COPY.chapters.placeholder}
