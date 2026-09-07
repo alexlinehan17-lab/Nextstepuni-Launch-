@@ -13,6 +13,7 @@
 
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { ToolHero } from '../ToolHero';
 import { ArrowLeft, ChevronDown as ChevronDownIcon, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
 import { categoryOf, logicalQuestionIdentity, siblingsFor, strandsFor, subjectAtlasStats, taggedYearsForSubject, topicLabel, topicsForSubject, topicYearSets, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
@@ -496,12 +497,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
       <button onClick={onBack} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
         <ArrowLeft size={15} /> Paper Trail
       </button>
-      <h2 ref={headingRef} tabIndex={-1} className="text-[28px] font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
-        Topic Atlas
-      </h2>
-      <p className="text-[14px] leading-relaxed mb-5 max-w-[52ch]" style={{ color: '#5a5550' }}>
-        Every question the SEC has asked, mapped by topic.
-      </p>
+      <ToolHero toolId="topic-atlas" eyebrow="Understand · Topic map" title="Topic Atlas" subtitle="Every question the SEC has asked, mapped by topic." headingRef={headingRef} className="mb-5" />
       {subjects.length === 0 ? (
         <p className="text-[13.5px] py-4" style={{ color: '#5a5550' }}>
           The atlas is being charted subject by subject — check back soon.

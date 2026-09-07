@@ -15,7 +15,8 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, FolderCheck, ChevronDown } from 'lucide-react';
+import { ArrowLeft, ChevronDown } from 'lucide-react';
+import { ToolHero } from '../ToolHero';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import {
   courseworkSubjects,
@@ -140,12 +141,7 @@ const CourseworkCompanion: React.FC<Props> = ({ studentSubjects = [] }) => {
   // ── Level 0: subject picker ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
-        <FolderCheck size={20} style={{ color: ACCENT }} /> Coursework Companion
-      </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
-        The coursework, project and practical components — what each one is and exactly how the SEC scheme marks it, criterion by criterion, straight from the filed marking scheme.
-      </p>
+      <ToolHero toolId="coursework-companion" eyebrow="Understand · Coursework & projects" title="Coursework Companion" subtitle="The coursework, project and practical components — what each one is and exactly how the SEC scheme marks it, criterion by criterion, straight from the filed marking scheme." className="mb-5" />
       {subjects.length === 0 ? (
         <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
           Coursework components are being added subject by subject — check back soon.

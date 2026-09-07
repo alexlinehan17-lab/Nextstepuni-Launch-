@@ -15,7 +15,8 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, ListChecks, ChevronDown, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, ChevronDown, AlertTriangle } from 'lucide-react';
+import { ToolHero } from '../ToolHero';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import {
   architectSubjects,
@@ -163,15 +164,10 @@ const AnswerArchitect: React.FC<Props> = ({ studentSubjects = [] }) => {
     );
   }
 
-  // ── Level 0: subject picker (tool exit handled by the zone's ToolHeader) ──
+  // ── Level 0: subject picker (tool exit handled by Launchpad navigation) ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
-        <ListChecks size={20} style={{ color: ACCENT }} /> Answer Architect
-      </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
-        The mark-earning skeleton of a top answer. For real exam questions, see the shape of a full-marks answer and every beat it is built from — in order, with the marks the SEC scheme awards each one.
-      </p>
+      <ToolHero toolId="answer-architect" eyebrow="Understand · Top-answer skeletons" title="Answer Architect" subtitle="The mark-earning skeleton of a top answer. For real exam questions, see the shape of a full-marks answer and every beat it is built from — in order, with the marks the SEC scheme awards each one." className="mb-5" />
       {subjects.length === 0 ? (
         <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
           Answer skeletons are being added subject by subject — check back soon.

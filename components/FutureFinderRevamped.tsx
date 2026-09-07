@@ -17,6 +17,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { ArrowLeft, Compass, X, ArrowRight } from 'lucide-react';
 import { COLORS } from '../design/tokens';
+import { ToolHero } from './ToolHero';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { useFutureFinderRevamped, type FutureFinderRevampedState } from '../hooks/useFutureFinderRevamped';
 import {
@@ -224,12 +225,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   if (phase === 'intro') {
     return (
       <div className="mx-auto w-full max-w-md py-2 text-center sm:py-6">
-        <img src="/assets/tools/future-finder.png" alt="" draggable={false} className="mx-auto -mb-1 hidden h-44 w-44 select-none object-contain sm:block md:h-52 md:w-52" />
-        <div className="mb-3 inline-flex items-center gap-1.5 rounded-full px-3 py-1.5" style={{ backgroundColor: COLORS.accentTint }}>
-          <Compass size={14} style={{ color: COLORS.accent }} />
-          <span className="text-[10.5px] font-bold uppercase tracking-[0.14em]" style={{ color: COLORS.accentDarkText }}>Interests · RIASEC</span>
-        </div>
-        <h2 className="mb-2 font-serif text-[28px] font-semibold leading-[1.08] text-[#1A1A1A] dark:text-white md:text-[32px]">Find courses that fit<br />who you are</h2>
+        <ToolHero toolId="future-finder-revamped" eyebrow="Interests · RIASEC" title="Future Finder" subtitle="Find courses that fit who you are" className="mb-5" />
         <p className="mx-auto mb-5 max-w-sm text-[14px] leading-relaxed text-zinc-500 dark:text-zinc-400 sm:mb-6 sm:text-[14.5px]">Rate quick activities and we’ll rank routes using your <span className="font-semibold text-zinc-700 dark:text-zinc-200">interests, values and target-grade points</span>. Your interest match remains visible on every course.</p>
 
         {/* length choice — chunky year-selector style buttons (a touch smaller) */}

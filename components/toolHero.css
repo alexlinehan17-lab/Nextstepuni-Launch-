@@ -1,0 +1,70 @@
+/* The approved charcoal card stays charcoal in both app themes. */
+.tool-hero {
+  container-type: inline-size;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 20px;
+  border-radius: 18px;
+  background: #1A1A1A;
+  color: #FFFFFF;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.tool-hero__eyebrow {
+  margin: 0 0 8px;
+  color: #F26B1F;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.tool-hero__identity {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 96px;
+  grid-template-columns: minmax(0, 1fr) clamp(72px, 36cqi, 112px);
+  align-items: center;
+  gap: 16px;
+}
+
+.tool-hero__title {
+  min-width: 0;
+  margin: 0;
+  color: #FFFFFF;
+  font-family: 'Source Serif 4', serif;
+  font-size: 2.5rem;
+  font-size: clamp(2rem, 16cqi, 3rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.tool-hero__title--long { font-size: 2rem; font-size: clamp(1.875rem, 9.5cqi, 2.5rem); }
+@container (max-width: 270px) {
+  .tool-hero__identity { grid-template-columns: minmax(0, 1fr) 72px; gap: 12px; }
+}
+.tool-hero__art { width: 100%; aspect-ratio: 1; color: #FFFFFF; }
+.tool-hero__art img { display: block; width: 100%; height: 100%; object-fit: contain; }
+/* Transparent line drawings need white ink; paper-filled artwork stays original. */
+.tool-hero__art .tool-artwork--light-ink { filter: brightness(0) invert(1); }
+.tool-hero__art > svg { width: 72%; height: 72%; margin: 14%; }
+.tool-hero__subtitle {
+  margin: 8px 0 0;
+  max-width: 65ch;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 359px) {
+  .tool-hero { padding: 20px; }
+  .tool-hero__identity { grid-template-columns: minmax(0, 1fr) 72px; gap: 12px; }
+}

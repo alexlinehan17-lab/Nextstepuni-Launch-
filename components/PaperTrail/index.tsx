@@ -21,6 +21,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowLeft, ArrowRight, Bookmark, Search } from 'lucide-react';
 import PaperSelection, { LEVEL_LABEL, paperLabel } from './PaperSelection';
 import './archive.css';
+import { ToolHero } from '../ToolHero';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
 import ImageViewer from './ImageViewer';
@@ -863,10 +864,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       <button className="pt-text-button" onClick={onBack}><ArrowLeft size={20} aria-hidden /> Tools</button>
       <button className="pt-text-button" onClick={() => setView({ v: 'saved' })}><Bookmark size={18} aria-hidden /> Saved</button>
     </nav>
-    <header className="pt-hero">
-      <div><p className="pt-eyebrow">Your exam archive</p><h1 className="pt-title">Paper Trail</h1><p className="pt-subtitle">Exam papers &amp; marking schemes</p></div>
-      <img src="/assets/tools/paper-trail.png" alt="" width={96} height={96} />
-    </header>
+    <ToolHero toolId="paper-trail" eyebrow="Your exam archive" title="Paper Trail" subtitle="Exam papers & marking schemes" archiveTitle className="my-4" />
     <div className="pt-search-area" ref={searchBoxRef}>
       <label className="pt-search"><Search size={20} aria-hidden /><input type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="Find a subject or paper" aria-label="Find a subject or paper" aria-controls={suggestions ? 'pt-search-results' : undefined} /></label>
       {suggestions && <div id="pt-search-results" className="pt-search-results" aria-label="Search results">

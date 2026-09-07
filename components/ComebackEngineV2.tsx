@@ -6,6 +6,7 @@
  * into the app's established execution tools.
  */
 import React, { useEffect, useMemo, useState } from 'react';
+import { ToolHero } from './ToolHero';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import {
   ArrowRight, CalendarDays, Check, CheckCircle2, Clock3,
@@ -221,14 +222,13 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 pb-14 text-[#1A1A1A] dark:text-[#F6F2EC]">
-      <div className="mb-8 grid gap-5 md:grid-cols-[1fr_auto] md:items-end">
-        <div>
-          <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#A39A91]">Comeback · seven-day recovery</p>
-          <h1 className="font-serif text-4xl font-semibold tracking-[-0.025em] md:text-5xl">Comeback Engine</h1>
-          <p className="mt-3 max-w-2xl text-[15px] leading-7 text-[#6F6861] dark:text-[#C9C2BA]">
-            A smaller, evidence-led route back into study. It uses your real timetable rhythm, subject priorities and topic confidence—then sends you into the tools you already use.
-          </p>
-        </div>
+      <div className="mb-8 space-y-5">
+        <ToolHero
+          toolId="comeback"
+          eyebrow="Comeback · seven-day recovery"
+          title="Comeback Engine"
+          subtitle="A smaller, evidence-led route back into study. It uses your real timetable rhythm, subject priorities and topic confidence—then sends you into the tools you already use."
+        />
         {stage === 'plan' && (
           <button type="button" onClick={resetPlan} className="inline-flex items-center gap-2 text-sm font-semibold text-[#6F6861] dark:text-[#D6CFC7]">
             <RefreshCcw size={16} /> Rebuild plan

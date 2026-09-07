@@ -20,6 +20,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ToolHero } from '../ToolHero';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
@@ -536,6 +537,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
       aria-busy={launchingTopicId !== null}
       style={{ fontFamily: SANS, padding: '28px 0 72px', color: INK }}
     >
+      <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto 24px', padding: '0 16px' }}>
+        <ToolHero toolId="mark-bank" eyebrow="Practice · Spaced repetition" title="Mark Bank" subtitle="Real exam questions, marked point by point — brought back before you forget." />
+      </div>
       <div style={{
         maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
         display: 'flex', alignItems: 'flex-start', gap: wide ? GUTTER : 0,
@@ -548,7 +552,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
           position: wide ? 'sticky' : 'static', top: 24,
           marginBottom: wide ? 0 : 22,
         }}>
-          <div style={{ marginBottom: 5 }}><Eyebrow>Mark Bank · exam practice</Eyebrow></div>
+          <div style={{ marginBottom: 5 }}><Eyebrow>Your exam practice</Eyebrow></div>
           <h2 style={{ font: `700 24px/1.15 ${SERIF}`, color: INK, margin: '0 0 3px' }}>
             {subject.title}
           </h2>

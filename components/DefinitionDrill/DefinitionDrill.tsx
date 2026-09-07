@@ -14,7 +14,8 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, SpellCheck, RotateCcw, Check } from 'lucide-react';
+import { ArrowLeft, RotateCcw, Check } from 'lucide-react';
+import { ToolHero } from '../ToolHero';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import {
   drillSubjects,
@@ -210,12 +211,7 @@ const DefinitionDrill: React.FC<Props> = ({ studentSubjects = [] }) => {
   // ── Level 0: subject picker ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
-        <SpellCheck size={20} style={{ color: ACCENT }} /> Definition Drill
-      </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
-        Drill the exact wording the marking scheme awards the definition marks for. Read the prompt, recall the wording, then reveal the scheme’s own allocation — and rate yourself.
-      </p>
+      <ToolHero toolId="definition-drill" eyebrow="Understand · Key definitions" title="Definition Drill" subtitle="Drill the exact wording the marking scheme awards the definition marks for. Read the prompt, recall the wording, then reveal the scheme’s own allocation — and rate yourself." className="mb-5" />
       {subjects.length === 0 ? (
         <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
           Definitions are being added subject by subject — check back soon.
