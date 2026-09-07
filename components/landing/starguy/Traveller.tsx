@@ -20,7 +20,7 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useR
 import { createPortal } from 'react-dom';
 import { animate, useMotionValue, useSpring } from 'framer-motion';
 import { MotionDiv, useReducedMotion } from '../../Motion';
-import { Starguy } from '../primitives';
+import { StarguyFigure } from './StarguyFigure';
 
 export type SlotId = 'hero' | 'word-markbank' | 'word-planner' | 'rail' | 'footer';
 
@@ -56,6 +56,10 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
   const sy = useSpring(y, { stiffness: 260, damping: 26 });
   const sw = useSpring(w, { stiffness: 260, damping: 30 });
   const hop = useMotionValue(0);
+  /** Stride input for the rig: 0 at rest, 100 at a fast flick — from his own vertical speed. */
+  const speed = useMotionValue(0);
+  const [land, setLand] = useState(false);
+  const [step, setStep] = useState(0);
   const current = useRef<SlotId | null>(null);
   const primed = useRef(false);
 
@@ -93,12 +97,15 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
         if (far) { x.jump(tx); y.jump(ty); sx.jump(tx); sy.jump(ty); }
         current.current = id;
         animate(hop, [0, -10, 0], { duration: 0.45, ease: 'easeOut' });
+        setLand(id === 'footer');
+        setStep(n => n + 1);
       }
       x.set(tx); y.set(ty); w.set(tw);
+      speed.set(Math.min(100, Math.abs(sy.getVelocity()) / 18));
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [slots, x, y, w, sx, sy, sw, hop]);
+  }, [slots, x, y, w, sx, sy, sw, hop, speed]);
 
   return createPortal(
     <MotionDiv
@@ -106,7 +113,7 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
       className="landing-traveller"
       style={{ position: 'fixed', left: 0, top: 0, x: sx, y: sy, width: sw, marginTop: hop, zIndex: 45, pointerEvents: 'none', lineHeight: 0 }}
     >
-      <Starguy size={0} style={{ width: '100%', height: 'auto' }} />
+      <StarguyFigure speed={speed} land={land} step={step} />
     </MotionDiv>,
     document.body,
   );
