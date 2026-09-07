@@ -36,6 +36,7 @@ import { useOptionalProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 import { usePlanCues } from '../hooks/usePlanCues';
 import { PLAN_TRIGGERS, PLAN_WHY, defaultThen } from '../planIntentionData';
+import { getSubjectFill, SUBJECT_FILL_INK } from '../utils/subjectColors';
 
 export interface TimetableBlockInfo {
   subject: string;
@@ -60,90 +61,10 @@ interface SpacedRepetitionTimetableProps {
   schoolEvents?: SchoolEvent[];
 }
 
-// ─── Subject Color Map (literal Tailwind strings for CDN constraint) ────────
+// ─── Subject colours: the shared ten-fill palette (utils/subjectColors) ───────
 
-const SUBJECT_COLORS: Record<string, { dot: string; bg: string; border: string; text: string }> = {
-  'English': { dot: 'bg-blue-500', bg: 'bg-blue-50 dark:bg-blue-900/20', border: 'border-blue-200 dark:border-blue-800/40', text: 'text-blue-700 dark:text-blue-300' },
-  'Irish': { dot: 'bg-emerald-500', bg: 'bg-emerald-50 dark:bg-emerald-900/20', border: 'border-emerald-200 dark:border-emerald-800/40', text: 'text-emerald-700 dark:text-emerald-300' },
-  'Mathematics': { dot: 'bg-indigo-500', bg: 'bg-indigo-50 dark:bg-indigo-900/20', border: 'border-indigo-200 dark:border-indigo-800/40', text: 'text-indigo-700 dark:text-indigo-300' },
-  'French': { dot: 'bg-sky-500', bg: 'bg-sky-50 dark:bg-sky-900/20', border: 'border-sky-200 dark:border-sky-800/40', text: 'text-sky-700 dark:text-sky-300' },
-  'German': { dot: 'bg-yellow-500', bg: 'bg-yellow-50 dark:bg-yellow-900/20', border: 'border-yellow-200 dark:border-yellow-800/40', text: 'text-yellow-700 dark:text-yellow-300' },
-  'Spanish': { dot: 'bg-orange-500', bg: 'bg-orange-50 dark:bg-orange-900/20', border: 'border-orange-200 dark:border-orange-800/40', text: 'text-orange-700 dark:text-orange-300' },
-  'Italian': { dot: 'bg-red-500', bg: 'bg-red-50 dark:bg-red-900/20', border: 'border-red-200 dark:border-red-800/40', text: 'text-red-700 dark:text-red-300' },
-  'Japanese': { dot: 'bg-pink-500', bg: 'bg-pink-50 dark:bg-pink-900/20', border: 'border-pink-200 dark:border-pink-800/40', text: 'text-pink-700 dark:text-pink-300' },
-  'Physics': { dot: 'bg-cyan-500', bg: 'bg-cyan-50 dark:bg-cyan-900/20', border: 'border-cyan-200 dark:border-cyan-800/40', text: 'text-cyan-700 dark:text-cyan-300' },
-  'Chemistry': { dot: 'bg-teal-500', bg: 'bg-teal-50 dark:bg-teal-900/20', border: 'border-teal-200 dark:border-teal-800/40', text: 'text-teal-700 dark:text-teal-300' },
-  'Biology': { dot: 'bg-lime-500', bg: 'bg-lime-50 dark:bg-lime-900/20', border: 'border-lime-200 dark:border-lime-800/40', text: 'text-lime-700 dark:text-lime-300' },
-  'Applied Maths': { dot: 'bg-violet-500', bg: 'bg-violet-50 dark:bg-violet-900/20', border: 'border-violet-200 dark:border-violet-800/40', text: 'text-violet-700 dark:text-violet-300' },
-  'Computer Science': { dot: 'bg-fuchsia-500', bg: 'bg-fuchsia-50 dark:bg-fuchsia-900/20', border: 'border-fuchsia-200 dark:border-fuchsia-800/40', text: 'text-fuchsia-700 dark:text-fuchsia-300' },
-  'Ag Science': { dot: 'bg-green-500', bg: 'bg-green-50 dark:bg-green-900/20', border: 'border-green-200 dark:border-green-800/40', text: 'text-green-700 dark:text-green-300' },
-  'Accounting': { dot: 'bg-amber-500', bg: 'bg-amber-50 dark:bg-amber-900/20', border: 'border-amber-200 dark:border-amber-800/40', text: 'text-amber-700 dark:text-amber-300' },
-  'Business': { dot: 'bg-amber-600', bg: 'bg-amber-50 dark:bg-amber-900/20', border: 'border-amber-200 dark:border-amber-800/40', text: 'text-amber-700 dark:text-amber-300' },
-  'Economics': { dot: 'bg-yellow-600', bg: 'bg-yellow-50 dark:bg-yellow-900/20', border: 'border-yellow-200 dark:border-yellow-800/40', text: 'text-yellow-700 dark:text-yellow-300' },
-  'History': { dot: 'bg-purple-500', bg: 'bg-purple-50 dark:bg-purple-900/20', border: 'border-purple-200 dark:border-purple-800/40', text: 'text-purple-700 dark:text-purple-300' },
-  'Geography': { dot: 'bg-emerald-600', bg: 'bg-emerald-50 dark:bg-emerald-900/20', border: 'border-emerald-200 dark:border-emerald-800/40', text: 'text-emerald-700 dark:text-emerald-300' },
-  'Politics & Society': { dot: 'bg-rose-500', bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300' },
-  'Religious Education': { dot: 'bg-zinc-500', bg: 'bg-zinc-50 dark:bg-zinc-800/40', border: 'border-zinc-200 dark:border-zinc-700/40', text: 'text-zinc-700 dark:text-zinc-300' },
-  'Classical Studies': { dot: 'bg-stone-500', bg: 'bg-stone-50 dark:bg-stone-800/40', border: 'border-stone-200 dark:border-stone-700/40', text: 'text-stone-700 dark:text-stone-300' },
-  'Home Economics': { dot: 'bg-orange-400', bg: 'bg-orange-50 dark:bg-orange-900/20', border: 'border-orange-200 dark:border-orange-800/40', text: 'text-orange-700 dark:text-orange-300' },
-  'Construction Studies': { dot: 'bg-slate-500', bg: 'bg-slate-50 dark:bg-slate-800/40', border: 'border-slate-200 dark:border-slate-700/40', text: 'text-slate-700 dark:text-slate-300' },
-  'Engineering': { dot: 'bg-gray-500', bg: 'bg-gray-50 dark:bg-gray-800/40', border: 'border-gray-200 dark:border-gray-700/40', text: 'text-gray-700 dark:text-gray-300' },
-  'DCG': { dot: 'bg-neutral-500', bg: 'bg-neutral-50 dark:bg-neutral-800/40', border: 'border-neutral-200 dark:border-neutral-700/40', text: 'text-neutral-700 dark:text-neutral-300' },
-  'Technology': { dot: 'bg-blue-600', bg: 'bg-blue-50 dark:bg-blue-900/20', border: 'border-blue-200 dark:border-blue-800/40', text: 'text-blue-700 dark:text-blue-300' },
-  'Art': { dot: 'bg-rose-400', bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300' },
-  'Music': { dot: 'bg-pink-400', bg: 'bg-pink-50 dark:bg-pink-900/20', border: 'border-pink-200 dark:border-pink-800/40', text: 'text-pink-700 dark:text-pink-300' },
-  'Design & Communication Graphics': { dot: 'bg-indigo-400', bg: 'bg-indigo-50 dark:bg-indigo-900/20', border: 'border-indigo-200 dark:border-indigo-800/40', text: 'text-indigo-700 dark:text-indigo-300' },
-};
-
-const DEFAULT_COLOR = { dot: 'bg-zinc-500', bg: 'bg-zinc-50 dark:bg-zinc-800/40', border: 'border-zinc-200 dark:border-zinc-700/40', text: 'text-zinc-700 dark:text-zinc-300' };
-
-function getSubjectColor(name: string) {
-  return SUBJECT_COLORS[name] || DEFAULT_COLOR;
-}
-
-const SUBJECT_HEX: Record<string, string> = {
-  'English': '#3b82f6', 'Irish': '#10b981', 'Mathematics': '#6366f1',
-  'French': '#0ea5e9', 'German': '#eab308', 'Spanish': '#f97316',
-  'Italian': '#ef4444', 'Japanese': '#ec4899', 'Physics': '#06b6d4',
-  'Chemistry': '#14b8a6', 'Biology': '#84cc16', 'Applied Maths': '#8b5cf6',
-  'Computer Science': '#d946ef', 'Ag Science': '#22c55e', 'Accounting': '#f59e0b',
-  'Business': '#d97706', 'Economics': '#ca8a04', 'History': '#a855f7',
-  'Geography': '#059669', 'Politics & Society': '#f43f5e',
-  'Religious Education': '#71717a', 'Classical Studies': '#78716c',
-  'Home Economics': '#fb923c', 'Construction Studies': '#64748b',
-  'Engineering': '#6b7280', 'DCG': '#737373', 'Technology': '#2563eb',
-  'Art': '#fb7185', 'Music': '#f472b6',
-  'Design & Communication Graphics': '#818cf8',
-};
-
-/**
- * Which ink to put on a subject's colour.
- *
- * The subject palette sits at Tailwind's 500 level, which is mid-luminance:
- * white text clears AA on only 6 of the 30 subjects and lands as low as 2.2:1
- * on the yellows. Picking whichever ink has more contrast clears 27 of them.
- * The three that clear neither (Mathematics, Applied Maths, History — all
- * mid-violet) still get the better of the two.
- */
-export function subjectInk(fillHex: string): string {
-  const lin = (v: number) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
-  const lum = (hex: string) => {
-    const [r, g, b] = [1, 3, 5].map(i => lin(parseInt(hex.slice(i, i + 2), 16) / 255));
-    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-  };
-  const against = (ink: string) => {
-    const [a, b] = [lum(ink), lum(fillHex)].sort((x, y) => y - x);
-    return (a + 0.05) / (b + 0.05);
-  };
-  // The token, not the literal. The dark compat layer rewrites an inline
-  // `color: #1A1A1A` onto --ink-primary on the assumption it is legacy
-  // light-mode text, which turns the label near-white on a mid-tone chip.
-  return against('#FFFFFF') >= against('#1A1A1A') ? '#FFFFFF' : 'var(--ink-on-accent)';
-}
-
-function getSubjectHexColor(name: string): string {
-  return SUBJECT_HEX[name] || '#71717a';
-}
+/** Block fills come from the shared ten-colour palette; every fill carries white text. */
+const getSubjectHexColor = getSubjectFill;
 
 // ─── Session Type Icons ─────────────────────────────────────────────────────
 
@@ -181,7 +102,6 @@ const StudyBlockCard: React.FC<{
   isToday?: boolean;
   onStudyNow?: () => void;
 }> = ({ block, completed, skipped, onToggle, bargainPts: _bargainPts, strategyHint, isToday, onStudyNow }) => {
-  const _color = getSubjectColor(block.subjectName);
   const typeConfig = SESSION_TYPE_CONFIG[block.sessionType];
 
   if (skipped) {
@@ -220,13 +140,13 @@ const StudyBlockCard: React.FC<{
   ) : (
     <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${hex}20`, borderRadius: 12 }}>
       {/* Coloured header strip */}
-      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: hex, color: subjectInk(hex) }}>
+      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: hex, color: SUBJECT_FILL_INK }}>
         <span className="text-[13px] font-bold truncate">{block.subjectName}</span>
         {/* The badge tints the chip it sits on, so the overlay has to move the
             background AWAY from the ink -- darken under white ink, lighten under
             dark ink. Tinting toward the ink dropped 17 of the 33 subject
             colours below 4.5:1. */}
-        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2" style={{ backgroundColor: subjectInk(hex) === '#FFFFFF' ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.30)', color: subjectInk(hex) }}>
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2" style={{ backgroundColor: 'rgba(0,0,0,0.18)', color: SUBJECT_FILL_INK }}>
           <span className="flex items-center gap-1"><TypeIcon size={10} />{typeConfig.label}</span>
         </span>
       </div>
@@ -242,7 +162,7 @@ const StudyBlockCard: React.FC<{
               onClick={(e) => { e.stopPropagation(); onStudyNow(); }}
               className="relative z-20 flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg"
               aria-label={`Study ${block.subjectName} now`}
-              style={{ backgroundColor: hex, color: subjectInk(hex) }}
+              style={{ backgroundColor: hex, color: SUBJECT_FILL_INK }}
             >
               Study <ArrowRight size={10} />
             </button>
@@ -304,13 +224,12 @@ const PRIORITY_BADGE_CLASS: Record<string, string> = {
 };
 
 const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> = ({ alloc, maxSessions }) => {
-  const color = getSubjectColor(alloc.subjectName);
   const barWidth = maxSessions > 0 ? (alloc.sessions / maxSessions) * 100 : 0;
 
   return (
     <div className="flex items-center gap-3">
       <div className="flex items-center gap-2 w-28 flex-shrink-0">
-        <div className={`w-2.5 h-2.5 rounded-full ${color.dot} flex-shrink-0`} />
+        <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectFill(alloc.subjectName) }} />
         <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 truncate">{alloc.subjectName}</span>
       </div>
       <div className="flex-1 h-3 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEAE6' }}>
@@ -867,7 +786,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 <div>
                   <p className="text-xs mb-1 text-[#A8A29E] dark:text-zinc-500">Next up</p>
                   <div className="flex items-center gap-2">
-                    <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(nextUpBlock.subjectName).dot} flex-shrink-0`} />
+                    <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectFill(nextUpBlock.subjectName) }} />
                     <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{nextUpBlock.subjectName}</span>
                     <span className="text-xs text-[#A8A29E] dark:text-zinc-500">{SESSION_TYPE_CONFIG[nextUpBlock.sessionType].label} · {nextUpBlock.durationMinutes}m</span>
                   </div>
@@ -996,7 +915,6 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                       {dayBlocks.map((block, bi) => {
                         const blockId = getBlockId(block, bi);
                         const isCompleted = dayCompletions.includes(blockId);
-                        const _subjectColor = getSubjectColor(block.subjectName);
 
                         return (
                           <button
@@ -1010,7 +928,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             }}
                           >
                             <div className="px-2 py-1.5">
-                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#4F7256' : subjectInk(getSubjectHexColor(block.subjectName)) }}>
+                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#4F7256' : SUBJECT_FILL_INK }}>
                                 {block.subjectName}
                               </span>
                               <span className="text-[9px] block" style={{ color: isCompleted ? '#4F7256' : 'rgba(255,255,255,0.7)' }}>
@@ -1132,7 +1050,6 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 <h4 className="font-bold text-xs uppercase tracking-widest mb-3 text-[#A8A29E] dark:text-zinc-500">Your Subject Scores</h4>
                 <div className="space-y-2">
                   {priorities.map(p => {
-                    const color = getSubjectColor(p.subjectName);
                     const maxPriority = Math.max(...priorities.map(pr => pr.priorityScore), 1);
                     const barPct = (p.priorityScore / maxPriority) * 100;
 
@@ -1140,7 +1057,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                       <div key={p.subjectName} className="p-3 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                         <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center gap-2">
-                            <div className={`w-2.5 h-2.5 rounded-full ${color.dot} flex-shrink-0`} />
+                            <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectFill(p.subjectName) }} />
                             <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{p.subjectName}</span>
                           </div>
                           <span className="text-sm font-mono font-bold" style={{ color: COLORS.accent }}>
@@ -1230,7 +1147,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                           <div key={s.subjectName} className="flex items-center justify-between text-xs py-2 px-1" style={{ borderBottom: i < best6.length - 1 ? '0.5px solid rgba(0,0,0,0.05)' : 'none' }}>
                             <div className="flex items-center gap-2">
                               <span className="text-[10px] font-bold w-3 text-[#A8A29E] dark:text-zinc-500">{i + 1}.</span>
-                              <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
+                              <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: getSubjectFill(s.subjectName) }} />
                               <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
                               {s.isMaths && <span className="text-[9px] font-bold" style={{ color: COLORS.accent }}>+25</span>}
                             </div>
@@ -1262,7 +1179,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                           {deprioritiseCandidates.map((s, si) => (
                             <div key={s.subjectName} className="flex items-center justify-between text-xs px-3 py-2.5" style={{ borderBottom: si < deprioritiseCandidates.length - 1 ? '0.5px solid rgba(0,0,0,0.06)' : 'none' }}>
                               <div className="flex items-center gap-2">
-                                <div className={`w-2.5 h-2.5 rounded-full ${getSubjectColor(s.subjectName).dot}`} />
+                                <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: getSubjectFill(s.subjectName) }} />
                                 <span className="font-semibold text-[#1A1A1A] dark:text-white">{s.subjectName}</span>
                               </div>
                               <span className="font-mono font-bold" style={{ color: COLORS.accentDarkText }}>{s.targetGrade} — {s.targetPoints} pts</span>
@@ -1329,7 +1246,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               {/* Block info */}
               <div className="text-center space-y-2">
                 <div className="flex items-center justify-center gap-2">
-                  <div className={`w-3 h-3 rounded-full ${getSubjectColor(blockActionModal.block.subjectName).dot}`} />
+                  <div className="w-3 h-3 rounded-full" style={{ backgroundColor: getSubjectFill(blockActionModal.block.subjectName) }} />
                   <h3 className="text-lg font-bold text-zinc-800 dark:text-white">{blockActionModal.block.subjectName}</h3>
                 </div>
                 <p className="text-sm text-[#A8A29E] dark:text-zinc-500">

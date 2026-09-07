@@ -60,7 +60,7 @@ export const COPY = {
       { id: 'markbank', label: 'Mark Bank', hint: 'The real Mark Bank. Biology, Economics and Maths are open; the rest unlock with an account.' },
       { id: 'papertrail', label: 'Paper Trail', hint: 'Mathematics is open, with answers on most papers. The other subjects unlock with an account.' },
       { id: 'atlas', label: 'Topic Atlas', hint: 'Real questions, cropped from the printed papers. Tap one for its marking scheme.' },
-      { id: 'planner', label: 'Planner', hint: 'A real week, built for a sample sixth-year with six subjects and Sundays off.' },
+      { id: 'planner', label: 'Planner', hint: 'A real week, built for a sample sixth-year with seven subjects and Sundays off.' },
       { id: 'reflex', label: 'Command-Word Reflex', hint: 'Under All Subjects, pick Biology, Economics or Maths. Then tap the word the examiner is marking against.' },
       { id: 'passport', label: 'Points Passport', hint: 'The Grade Planner is open. The other tabs unlock with an account.' },
       { id: 'futurefinder', label: 'Future Finder', hint: 'A sample student who finished the quiz. Three courses are queued to compare.' },
