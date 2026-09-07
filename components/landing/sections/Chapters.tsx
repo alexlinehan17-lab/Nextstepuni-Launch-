@@ -15,7 +15,8 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { MotionDiv, useReducedMotion } from '../../Motion';
 import { COPY, type Chapter, type ChapterId, type PlaygroundTabId } from '../copy';
 import { CAPTURES } from '../demoData';
-import { CollapseWord, LetterBuild, Reveal } from '../motion';
+import { Reveal, WordRise } from '../motion';
+import { StarguySlot, useTravellerLive, type SlotId } from '../starguy/Traveller';
 import { Body, Button, Container, Display, DropLine, Eyebrow, Frame, Rule, Starguy } from '../primitives';
 import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
@@ -42,6 +43,8 @@ const RailHeading: React.FC<{ className?: string }> = ({ className = '' }) => (
 /** Starguy walks the rail: he stands beside whichever chapter is on screen and hops to the next as it arrives. */
 const StarguyWalker: React.FC<{ active: ChapterId; listRef: React.RefObject<HTMLOListElement | null> }> = ({ active, listRef }) => {
   const reduce = useReducedMotion();
+  // While the traveller is live this box is only his target: it moves at once and he springs to it.
+  const live = useTravellerLive();
   const [top, setTop] = useState(0);
   useEffect(() => {
     const list = listRef.current;
@@ -56,11 +59,11 @@ const StarguyWalker: React.FC<{ active: ChapterId; listRef: React.RefObject<HTML
       aria-hidden="true"
       className="hidden lg:block"
       initial={false}
-      animate={reduce ? { top } : { top, y: [0, -10, 0] }}
-      transition={{ top: { type: 'spring', stiffness: 260, damping: 26 }, y: { duration: 0.45, ease: 'easeOut' } }}
+      animate={reduce || live ? { top } : { top, y: [0, -10, 0] }}
+      transition={live ? { top: { duration: 0 } } : { top: { type: 'spring', stiffness: 260, damping: 26 }, y: { duration: 0.45, ease: 'easeOut' } }}
       style={{ position: 'absolute', left: -46, width: 34, pointerEvents: 'none' }}
     >
-      <Starguy size={0} style={{ width: 34, height: 'auto' }} />
+      <StarguySlot id="rail"><Starguy size={0} style={{ width: 34, height: 'auto' }} /></StarguySlot>
     </MotionDiv>
   );
 };
@@ -169,6 +172,7 @@ const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
 
 /** One chapter: eyebrow, the folding word, then the alternating text / frame row. */
 const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: React.RefObject<HTMLElement | null> }> = ({ chapter, index, articleRef }) => {
+  const frameRef = useRef<HTMLDivElement>(null);
   const flip = index % 2 === 1;
   const titleId = `chapter-${chapter.id}-title`;
   const demo = DEMO_OF[chapter.id];
@@ -180,23 +184,24 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
       className="scroll-mt-[124px] lg:scroll-mt-[96px]"
     >
       <Eyebrow numeral={chapter.numeral}>{chapter.railLabel}</Eyebrow>
-      <CollapseWord className="mt-4">
+      <WordRise className="mt-4">
         {/* The word row clips sideways so Starguy, hung past the word's end, never widens the page. */}
         <Display size="chapter" as="h3" id={titleId} style={{ overflowWrap: 'anywhere', overflowX: 'clip' }}>
           <span style={{ position: 'relative', display: 'inline-block', maxWidth: '100%' }}>
-            <LetterBuild text={chapter.word} />
+            {chapter.word}
             {HANGS.has(chapter.id) && (
+              /* Inline, so a word that wraps ("Planner & Study") still ends with him on its LAST line. */
               <span
                 aria-hidden="true"
                 className="landing-starguy-lg"
-                style={{ position: 'absolute', left: 'calc(100% + 0.06em)', bottom: '0.04em', width: '0.55em', lineHeight: 0 }}
+                style={{ display: 'inline-block', verticalAlign: 'baseline', marginLeft: '0.06em', marginBottom: '0.04em', width: '0.55em', lineHeight: 0 }}
               >
-                <Starguy size={0} style={{ width: '100%', height: 'auto' }} />
+                <StarguySlot id={`word-${chapter.id}` as SlotId}><Starguy size={0} style={{ width: '100%', height: 'auto' }} /></StarguySlot>
               </span>
             )}
           </span>
         </Display>
-      </CollapseWord>
+      </WordRise>
       <div className="mt-8 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         <div className={flip ? 'lg:col-span-5 lg:order-2' : 'lg:col-span-5'}>
           <DropLine>{chapter.line}</DropLine>
@@ -205,12 +210,12 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
           </div>
           {demo && (
             <div className="mt-6">
-              <Button variant="ghost" onClick={() => openDemo(demo)}>{COPY.chapters.tryIt}</Button>
+              <Button variant="ghost" onClick={() => openDemo(demo, undefined, frameRef.current)}>{COPY.chapters.tryIt}</Button>
             </div>
           )}
         </div>
         <Reveal className={flip ? 'lg:col-span-7 lg:order-1' : 'lg:col-span-7'}>
-          <Capture chapter={chapter} />
+          <div ref={frameRef}><Capture chapter={chapter} /></div>
         </Reveal>
       </div>
     </article>
@@ -219,7 +224,7 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
 
 const Chapters: React.FC = () => {
   const [active, setActive] = useState<ChapterId>(CHAPTERS[0].id);
-  // One ref per article, made once: the observer and each CollapseWord share it.
+  // One ref per article, made once: the observer and each chapter share it.
   const refs = useMemo(() => CHAPTERS.map(() => React.createRef<HTMLElement>()), []);
 
   // One observer over the six articles. The band is the middle 10% of the

@@ -17,10 +17,12 @@ import Subjects from './sections/Subjects';
 import Schools from './sections/Schools';
 import Footer from './sections/Footer';
 import { setupSmoothScroll } from './scroll';
+import { StarguyProvider } from './starguy/Traveller';
 
 const LandingPage: React.FC = () => {
   useEffect(() => setupSmoothScroll(), []);
   return (
+  <StarguyProvider>
   <div className="landing-page">
     <Nav />
     <main>
@@ -33,6 +35,7 @@ const LandingPage: React.FC = () => {
     </main>
     <Footer />
   </div>
+  </StarguyProvider>
   );
 };
 

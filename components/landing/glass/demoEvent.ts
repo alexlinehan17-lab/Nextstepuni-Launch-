@@ -9,8 +9,8 @@
 import type { PlaygroundTabId } from '../copy';
 
 export const DEMO_EVENT = 'landing:demo';
-export interface DemoEventDetail { demo: PlaygroundTabId; mode?: string }
+export interface DemoEventDetail { demo: PlaygroundTabId; mode?: string; /** The chapter frame the press came from — it morphs into the stage. */ from?: HTMLElement | null }
 
-export const openDemo = (demo: PlaygroundTabId, mode?: string): void => {
-  window.dispatchEvent(new CustomEvent<DemoEventDetail>(DEMO_EVENT, { detail: { demo, mode } }));
+export const openDemo = (demo: PlaygroundTabId, mode?: string, from?: HTMLElement | null): void => {
+  window.dispatchEvent(new CustomEvent<DemoEventDetail>(DEMO_EVENT, { detail: { demo, mode, from } }));
 };
