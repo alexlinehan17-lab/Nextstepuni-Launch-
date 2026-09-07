@@ -25,7 +25,7 @@ const CHAPTERS = COPY.chapters.items;
 /** Chapters whose giant word Starguy stands at the end of. */
 const HANGS: ReadonlySet<ChapterId> = new Set<ChapterId>(['markbank', 'planner']);
 /** Chapters with a matching playground demo (papertrail and lab have none). Ids map 1:1. */
-const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', atlas: 'atlas', launchpad: 'reflex' };
+const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', papertrail: 'papertrail', atlas: 'atlas', planner: 'planner', launchpad: 'reflex' };
 
 const anchor = (id: ChapterId): string => `#chapter-${id}`;
 
@@ -149,7 +149,7 @@ const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
     <Frame title={chapter.frameLabel} meta={chapter.numeral}>
       {src
         ? <img src={src} alt={chapter.frameLabel} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto' }} />
-        : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} height={chapter.id === "launchpad" ? 460 : 640} /> : (
+        : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} /> : (
           <div
             role="img"
             aria-label={COPY.chapters.placeholder}

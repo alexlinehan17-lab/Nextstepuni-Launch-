@@ -57,9 +57,13 @@ export const COPY = {
     eyebrow: 'Have a go. No account needed.',
     cta: 'Open the app',
     tabs: [
-      { id: 'markbank', label: 'Mark Bank', hint: 'This is the real Mark Bank. Pick a subject, start a session, grade yourself.' },
+      { id: 'markbank', label: 'Mark Bank', hint: 'The real Mark Bank. Biology, Economics and Maths are open; the rest unlock with an account.' },
+      { id: 'papertrail', label: 'Paper Trail', hint: 'Mathematics is open, with answers on most papers. The other subjects unlock with an account.' },
       { id: 'atlas', label: 'Topic Atlas', hint: 'Real questions, cropped from the printed papers. Tap one for its marking scheme.' },
-      { id: 'reflex', label: 'Command-Word Reflex', hint: 'Tap the word the examiner is marking against.' },
+      { id: 'planner', label: 'Planner', hint: 'A real week, built for a sample sixth-year with six subjects and Sundays off.' },
+      { id: 'reflex', label: 'Command-Word Reflex', hint: 'Under All Subjects, pick Biology, Economics or Maths. Then tap the word the examiner is marking against.' },
+      { id: 'passport', label: 'Points Passport', hint: 'The Grade Planner is open. The other tabs unlock with an account.' },
+      { id: 'futurefinder', label: 'Future Finder', hint: 'A sample student who finished the quiz. Three courses are queued to compare.' },
     ],
     live: 'Live · the actual app',
     markbank: { flip: 'Reveal the marking scheme', back: 'Hide the scheme', next: 'Next card', marks: 'marks', scoreSelf: 'How did you do? You decide.', got: 'Got it', shaky: 'Shaky', missed: 'Missed it', backLater: 'Nice. This one’s back in about 6 days.', backShaky: 'Grand. Back in a couple of days.', backSoon: 'No bother. It’s back before you finish today.', hint: 'Answer it in your head first.', allOf: 'All of', anyOf: 'Any of', or: 'Or', card: 'Card', of: 'of', markShort: 'm' },
@@ -199,4 +203,4 @@ export const COPY = {
   },
 };
 
-export type PlaygroundTabId = 'markbank' | 'atlas' | 'reflex';
+export type PlaygroundTabId = 'markbank' | 'papertrail' | 'atlas' | 'planner' | 'reflex' | 'passport' | 'futurefinder';
