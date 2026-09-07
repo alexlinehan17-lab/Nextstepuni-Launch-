@@ -187,8 +187,8 @@ const StudyBlockCard: React.FC<{
   if (skipped) {
     return (
       <div
-        className="py-3 px-4 rounded-xl opacity-50 bg-[#FAF7F4] dark:bg-zinc-900"
-        style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+        className="py-3 px-4 rounded-xl opacity-50 bg-white dark:bg-zinc-900"
+        style={{ border: '1px solid var(--outline-soft)', borderRadius: 12 }}
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2.5">
@@ -300,7 +300,7 @@ const PRIORITY_BADGE_INLINE: Record<string, React.CSSProperties> = {
 const PRIORITY_BADGE_CLASS: Record<string, string> = {
   High: '',
   Medium: '',
-  Low: 'bg-[#FAF7F4] dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500',
+  Low: 'bg-white dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500',
 };
 
 const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> = ({ alloc, maxSessions }) => {
@@ -348,7 +348,7 @@ const BlockCueEditor: React.FC<{ subject: string; saved?: { trigger: string; the
     );
   }
   return (
-    <div className="rounded-xl p-3 text-left" style={{ backgroundColor: '#F9F9F7', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+    <div className="rounded-xl p-3 text-left" style={{ backgroundColor: 'var(--surface-paper)', border: '1px solid var(--outline-soft)' }}>
       <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: COLORS.accentDarkText }}>Your if-then for this block</p>
       <div className="flex flex-wrap gap-1.5 mb-2">
         {PLAN_TRIGGERS.map(t => {
@@ -641,7 +641,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   if (!profile || profile.subjects.length === 0) {
     return (
       <div className="text-center py-16 space-y-4">
-        <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+        <div className="w-16 h-16 mx-auto flex items-center justify-center bg-white dark:bg-zinc-900" style={{ border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
           <CalendarDays size={32} style={{ color: COLORS.accent }} />
         </div>
         <h3 className="text-lg font-bold text-zinc-800 dark:text-white">Your study plan, built around your life</h3>
@@ -662,8 +662,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       <div className="flex justify-end">
         <button
           onClick={onOpenSettings}
-          className="p-2 rounded-lg transition-colors bg-[#FAF7F4] dark:bg-zinc-900"
-          style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+          className="p-2 rounded-lg transition-colors bg-white dark:bg-zinc-900"
+          style={{ border: '1px solid var(--outline-soft)', borderRadius: 12 }}
           title="Edit subjects"
         >
           <Settings size={16} className="text-[#A8A29E] dark:text-zinc-500" />
@@ -808,10 +808,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               <button
                 key={dayName}
                 onClick={() => toggleRestDay(dayName)}
-                className={`flex-1 py-1 rounded-md text-[10px] font-bold transition-all ${!isRest ? 'bg-[#FAF7F4] dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500' : ''}`}
+                className={`flex-1 py-1 rounded-md text-[10px] font-bold transition-all ${!isRest ? 'bg-white dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500' : ''}`}
                 style={isRest
                   ? { backgroundColor: 'rgba(196,135,59,0.1)', border: '0.5px solid rgba(196,135,59,0.3)', color: '#C4873B', textDecoration: 'line-through' }
-                  : { border: '0.5px solid rgba(0,0,0,0.07)' }
+                  : { border: '1px solid var(--outline-soft)' }
                 }
                 title={isRest ? `${dayName}: rest day` : `${dayName}: study day`}
               >
@@ -830,8 +830,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         <MotionDiv
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="p-4 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900"
-          style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
+          className="p-4 rounded-xl bg-white dark:bg-zinc-900"
+          style={{ border: '1px solid var(--outline-soft)', borderRadius: 12 }}
         >
           <div className="flex items-center gap-4">
             {/* Progress Ring */}
@@ -1032,7 +1032,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       {/* ── Why this week looks like this ── */}
       <div
         className="p-4 rounded-xl grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] gap-4 dark:bg-zinc-900 dark:border-zinc-700"
-        style={{ backgroundColor: '#FAF7F4', border: '1px solid #D8D2CB' }}
+        style={{ backgroundColor: 'var(--surface-paper)', border: '1px solid #D8D2CB' }}
       >
         <div>
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] mb-1" style={{ color: COLORS.accent }}>
@@ -1057,7 +1057,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       </div>
 
       {/* ── Priority Breakdown ── */}
-      <div className="p-5 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+      <div className="p-5 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-bold text-xs uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">Priority Breakdown</h3>
           {/* The deep-dive explainer is senior-only — it documents the CAO
@@ -1094,7 +1094,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="overflow-hidden"
           >
-            <div className="p-5 rounded-xl space-y-6 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+            <div className="p-5 rounded-xl space-y-6 bg-white dark:bg-zinc-900" style={{ border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
               {/* How it works */}
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -1107,20 +1107,20 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   Each subject gets a <span className="font-bold" style={{ color: COLORS.accent }}>priority score</span> that determines how many study sessions it receives each week. The score combines two factors:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
-                  <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                  <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
                     <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Best-six CAO gain</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
                       The CAO points difference between your target grade and current grade. Bigger gaps = more room to grow = higher priority.
                     </p>
                   </div>
-                  <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                  <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
                     <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#C4873B' }}>Efficiency Multiplier</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
                       The timetable values points that would change your best-six total, then favours targets requiring fewer grade steps. Every subject still receives maintenance time.
                     </p>
                   </div>
                 </div>
-                <div className="p-3 rounded-xl text-center" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                <div className="p-3 rounded-xl text-center" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
                   <p className="text-xs font-mono font-bold text-zinc-600 dark:text-zinc-300">
                     Priority = Best-six Gain <span style={{ color: COLORS.accent }}>x</span> Target Attainability <span style={{ color: COLORS.accent }}>x</span> Syllabus Need
                   </p>
@@ -1137,7 +1137,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                     const barPct = (p.priorityScore / maxPriority) * 100;
 
                     return (
-                      <div key={p.subjectName} className="p-3 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                      <div key={p.subjectName} className="p-3 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
                         <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center gap-2">
                             <div className={`w-2.5 h-2.5 rounded-full ${color.dot} flex-shrink-0`} />
@@ -1172,7 +1172,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             {p.difficultyMultiplier.toFixed(2)} attainability
                           </span>
                           <span className="font-mono text-[#A8A29E] dark:text-zinc-500">=</span>
-                          <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: COLORS.accent }}>
+                          <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold bg-white dark:bg-zinc-900" style={{ color: COLORS.accent }}>
                             {Math.round(p.priorityScore)}
                           </span>
                         </div>
@@ -1216,7 +1216,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 return (
                   <div className="space-y-3">
                     {/* Projected total */}
-                    <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                    <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
                       <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#4F7256' }}>Projected CAO Points (Best 6)</p>
                       <div className="flex items-baseline gap-2 mb-3">
                         <p className="text-4xl font-bold font-mono" style={{ color: COLORS.accent }}>{projectedTotal}</p>
@@ -1283,7 +1283,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               })()}
 
               {/* Session count & intensity note */}
-              <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+              <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '1px solid var(--outline-soft)', borderRadius: 12 }}>
                 <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Session Allocation</p>
                 <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
                   Sessions are split by priority score, with maintenance time retained for every subject. The recommended workload starts at about <span className="font-bold">6 focused hours</span> a week, rises gradually through the year and is capped at <span className="font-bold">12 hours</span> close to the exam. Your current week contains <span className="font-bold" style={{ color: COLORS.accent }}>{totalSessions} sessions · {totalHours}h{remainingMins > 0 ? ` ${remainingMins}m` : ''}</span>.

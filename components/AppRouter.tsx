@@ -459,6 +459,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           streak={streak}
           strategyMastery={strategyMastery.masteryMap}
           onBack={handleBackToTree}
+        onAction={action => {
+            if (action === 'study') nav.navigateToStudySession();
+            else if (action === 'planner') nav.navigateToInnovationZone('planner');
+            else nav.navigateToDashboard('study');
+          }}
         />
       </Suspense>
     );

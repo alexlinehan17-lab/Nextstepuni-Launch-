@@ -14,8 +14,6 @@ import { type DebriefEntry } from '../components/StudyDebrief';
 
 export interface Insight {
   id: string;
-  icon: string;
-  iconColor: string;
   title: string;
   description: string;
   category: 'momentum' | 'pattern' | 'strategy' | 'streak';
@@ -73,10 +71,10 @@ function monthlyVolumeChange(sessions: StudySessionRecord[]): Insight | null {
 
   return {
     id: 'monthly-volume',
-    icon: 'TrendingUp',
-    iconColor: pct > 0 ? 'text-emerald-500' : 'text-amber-500',
+
+
     title: `${absPct}% ${direction} study time`,
-    description: `You've studied ${Math.round(thisMinutes / 60 * 10) / 10}h this month vs ${Math.round(lastMinutes / 60 * 10) / 10}h last month.`,
+    description: `You've studied ${Math.round(thisMinutes / 60 * 10) / 10}h so far this month and ${Math.round(lastMinutes / 60 * 10) / 10}h across all of last month. These cover different lengths of time.`,
     category: 'momentum',
   };
 }
@@ -108,10 +106,10 @@ function bestStudyTime(sessions: StudySessionRecord[]): Insight | null {
   const [dayType, tod] = bestKey.split('-');
   return {
     id: 'best-time',
-    icon: 'Clock',
-    iconColor: 'text-blue-500',
-    title: `Best sessions: ${dayType} ${tod}s`,
-    description: `Your most productive sessions happen on ${dayType} ${tod}s (${bestCount} sessions).`,
+
+
+    title: `You usually study on ${dayType} ${tod}s`,
+    description: `${bestCount} of your ${sessions.length} recorded sessions started on ${dayType} ${tod}s. Would that time suit your next session?`,
     category: 'pattern',
   };
 }
@@ -139,10 +137,10 @@ function dormantStrategyNudge(
       const daysSince = Math.floor((now - lastUsed) / (24 * 60 * 60 * 1000));
       return {
         id: `dormant-${moduleId}`,
-        icon: 'RefreshCw',
-        iconColor: 'text-violet-500',
-        title: `${name} is gathering dust`,
-        description: `You haven't used ${name} in ${daysSince} days — bring it back into your sessions.`,
+
+
+        title: `Revisit ${name}`,
+        description: `Your last recorded session with ${name} was ${daysSince} days ago. Try it again with a topic you want to practise.`,
         category: 'strategy',
       };
     }
@@ -165,20 +163,20 @@ function streakMilestone(streak: StreakData): Insight | null {
   if (remaining === 1) {
     return {
       id: 'streak-milestone',
-      icon: 'Flame',
-      iconColor: 'text-orange-500',
+
+
       title: `${next}-day streak incoming`,
-      description: `One more session today and you hit a ${next}-day streak!`,
+      description: `You have a ${streak.currentStreak}-day streak. One more active day will take it to ${next}; extra sessions on the same day do not add a day.`,
       category: 'streak',
     };
   }
 
   return {
     id: 'streak-milestone',
-    icon: 'Flame',
-    iconColor: 'text-orange-500',
+
+
     title: `${remaining} days to ${next}-day streak`,
-    description: `You're on a ${streak.currentStreak}-day streak — keep it going!`,
+    description: `You’ve recorded activity on ${streak.currentStreak} consecutive days. Another ${remaining} active days will take you to ${next}.`,
     category: 'streak',
   };
 }
@@ -203,10 +201,10 @@ function subjectBalance(sessions: StudySessionRecord[]): Insight | null {
   const second = sorted[1][0];
   return {
     id: 'subject-balance',
-    icon: 'BarChart3',
-    iconColor: 'text-amber-500',
+
+
     title: `${pct}% of sessions are ${topSubject}`,
-    description: `Consider mixing in ${second} to balance your study.`,
+    description: `${topCount} of ${total} recorded sessions were ${topSubject}. Check whether your plan leaves enough time for ${second} too.`,
     category: 'pattern',
   };
 }
@@ -247,10 +245,10 @@ function consistencyTrend(sessions: StudySessionRecord[]): Insight | null {
 
   return {
     id: 'consistency',
-    icon: 'TrendingUp',
-    iconColor: 'text-emerald-500',
-    title: 'More consistent this week',
-    description: `You have ${thisWeek} sessions this week vs an average of ${Math.round(avgPast * 10) / 10} over the last 4 weeks.`,
+
+
+    title: 'More sessions this week',
+    description: `You have ${thisWeek} sessions this week vs an average of ${Math.round(avgPast * 10) / 10} across ${pastWeeks.length} active weeks in the previous four. Weeks with no sessions are excluded.`,
     category: 'momentum',
   };
 }
@@ -296,8 +294,8 @@ function strategyEffectiveness(sessions: StudySessionRecord[]): Insight | null {
 
   return {
     id: 'strategy-effectiveness',
-    icon: 'Zap',
-    iconColor: 'text-purple-500',
+
+
     title: `${pct}% longer sessions with ${name}`,
     description: `You study ${Math.round(bestAvg / 60)} min on average when using ${name} vs ${Math.round(overallAvg / 60)} min overall.`,
     category: 'strategy',
@@ -336,20 +334,20 @@ function sessionLengthTrend(sessions: StudySessionRecord[]): Insight | null {
   if (pct > 0) {
     return {
       id: 'session-length-trend',
-      icon: 'TrendingUp',
-      iconColor: 'text-emerald-500',
+
+
       title: `Sessions are ${pct}% longer`,
-      description: `Your recent sessions average ${Math.round(recentAvg / 60)} min vs ${Math.round(olderAvg / 60)} min two weeks ago. Your stamina is building.`,
+      description: `Your recent sessions average ${Math.round(recentAvg / 60)} min vs ${Math.round(olderAvg / 60)} min two weeks ago. Longer sessions are not necessarily better; check what you managed to learn.`,
       category: 'momentum',
     };
   }
 
   return {
     id: 'session-length-trend',
-    icon: 'TrendingUp',
-    iconColor: 'text-amber-500',
+
+
     title: `Sessions are ${Math.abs(pct)}% shorter`,
-    description: `Your recent sessions average ${Math.round(recentAvg / 60)} min vs ${Math.round(olderAvg / 60)} min two weeks ago. Try pushing for a few more minutes.`,
+    description: `Your recent sessions average ${Math.round(recentAvg / 60)} min vs ${Math.round(olderAvg / 60)} min two weeks ago. Shorter sessions may suit your task. Check your plan against what you managed to learn.`,
     category: 'momentum',
   };
 }
@@ -371,10 +369,10 @@ function reflectionImpact(sessions: StudySessionRecord[]): Insight | null {
 
   return {
     id: 'reflection-impact',
-    icon: 'Sparkles',
-    iconColor: 'text-teal-500',
-    title: `Reflections boost points by ${pct}%`,
-    description: `Sessions with reflections earn ${Math.round(avgWith)} pts vs ${Math.round(avgWithout)} pts without. The few extra minutes of reflection pay off.`,
+
+
+    title: `${pct}% more points in sessions with reflections`,
+    description: `Sessions with reflections earn ${Math.round(avgWith)} pts vs ${Math.round(avgWithout)} pts without. Reflection points are included in these totals; this is not a measure of learning.`,
     category: 'pattern',
   };
 }
@@ -414,10 +412,10 @@ function subjectGap(sessions: StudySessionRecord[]): Insight | null {
 
   return {
     id: `subject-gap-${longestGapSubject}`,
-    icon: 'BookOpen',
-    iconColor: 'text-rose-500',
+
+
     title: `${longestGapDays} days since ${longestGapSubject}`,
-    description: `You used to study ${longestGapSubject} regularly. A quick session this week would keep it fresh.`,
+    description: `You have ${subjectCounts[longestGapSubject]} recorded sessions for ${longestGapSubject}. Decide whether to revisit it in your next study plan.`,
     category: 'pattern',
   };
 }
@@ -449,10 +447,10 @@ function peakProductivityDay(sessions: StudySessionRecord[]): Insight | null {
 
   return {
     id: 'peak-day',
-    icon: 'Calendar',
-    iconColor: 'text-indigo-500',
-    title: `${getDayLabel(bestDay)}s are your power day`,
-    description: `You average ${Math.round(bestAvg)} min per session on ${getDayLabel(bestDay)}s — your most productive day of the week.`,
+
+
+    title: `Your longest sessions are on ${getDayLabel(bestDay)}s`,
+    description: `${dayMinutes[bestDay].length} sessions on ${getDayLabel(bestDay)}s averaged ${Math.round(bestAvg)} minutes. Duration alone does not show how much you learned.`,
     category: 'pattern',
   };
 }
@@ -476,10 +474,10 @@ function completionRate(sessions: StudySessionRecord[]): Insight | null {
   if (rate >= 90) {
     return {
       id: 'completion-rate',
-      icon: 'Target',
-      iconColor: 'text-emerald-500',
-      title: `${rate}% session completion rate`,
-      description: `You complete almost all of your planned study time. That consistency is rare — keep it up.`,
+
+
+      title: `${rate}% of planned time recorded`,
+      description: `Across ${sessions.length} sessions, you recorded ${Math.round(totalActual / 60)} of ${Math.round(totalPlanned / 60)} planned minutes.`,
       category: 'momentum',
     };
   }
@@ -487,10 +485,10 @@ function completionRate(sessions: StudySessionRecord[]): Insight | null {
   if (rate < 60) {
     return {
       id: 'completion-rate',
-      icon: 'Target',
-      iconColor: 'text-amber-500',
+
+
       title: `${rate}% of planned time completed`,
-      description: `You tend to end sessions early. Try starting with shorter planned times — finishing feels good and builds momentum.`,
+      description: `You recorded ${Math.round(totalActual / 60)} of ${Math.round(totalPlanned / 60)} planned minutes. A shorter planned session may fit your day better.`,
       category: 'momentum',
     };
   }
@@ -523,10 +521,10 @@ function debriefConfidenceGain(debriefs: DebriefEntry[]): Insight | null {
 
   return {
     id: 'debrief-confidence',
-    icon: 'TrendingUp',
-    iconColor: 'text-teal-500',
+
+
     title: `Biggest confidence gains: ${bestSubject}`,
-    description: `Your debriefs show an average +${(bestAvg).toFixed(1)} confidence gain per session in ${bestSubject}.`,
+    description: `Across ${gainsBySubject[bestSubject].length} debriefs in ${bestSubject}, your confidence rating rose by ${(bestAvg).toFixed(1)} on average. This is self-reported confidence.`,
     category: 'momentum',
   };
 }
@@ -565,10 +563,10 @@ function debriefStrategyEffectiveness(debriefs: DebriefEntry[]): Insight | null 
 
   return {
     id: 'debrief-strategy',
-    icon: 'Zap',
-    iconColor: 'text-purple-500',
-    title: `${label} gives you the biggest boost`,
-    description: `Your debriefs show +${(bestAvg).toFixed(1)} avg confidence gain when using ${label.toLowerCase()}.`,
+
+
+    title: `You report more confidence after ${label.toLowerCase()}`,
+    description: `Across ${gainsByStrategy[bestStrat].length} debriefs, your confidence rose by ${(bestAvg).toFixed(1)} on average with ${label.toLowerCase()}. This reflects your ratings, not an exam result.`,
     category: 'strategy',
   };
 }

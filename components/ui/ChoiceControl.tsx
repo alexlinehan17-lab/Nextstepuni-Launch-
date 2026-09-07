@@ -37,8 +37,8 @@ export const ChoiceControl: React.FC<ChoiceControlProps> = ({
       compact ? 'px-3 py-2 text-xs' : 'px-4 py-2.5 text-[13px]'
     } ${
       selected
-        ? 'border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] shadow-[4px_4px_0_0_#1A1A1A] hover:-translate-y-0.5 hover:shadow-[5px_5px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none'
-        : 'border-[#E5E1DB] bg-white text-[var(--text-body)] hover:border-[#1A1A1A] hover:bg-[#FDF8F0] active:translate-y-px dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800'
+        ? 'border-[#1A1A1A] bg-[#F26B1F] text-[#1A1A1A]'
+        : 'border-[#E5E1DB] bg-white text-[var(--text-body)] hover:border-[#1A1A1A] hover:bg-white active:translate-y-px dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800'
     } ${className}`}
     style={style}
     {...rest}
@@ -48,14 +48,14 @@ export const ChoiceControl: React.FC<ChoiceControlProps> = ({
         aria-hidden="true"
         className={`h-2 w-2 shrink-0 rounded-full ${markerClassName ?? ''}`}
         style={selected
-          ? { backgroundColor: 'transparent', boxShadow: 'inset 0 0 0 1.5px #FDF8F0' }
+          ? { backgroundColor: 'transparent', boxShadow: 'inset 0 0 0 1.5px #1A1A1A' }
           : markerColor ? { backgroundColor: markerColor } : undefined}
       />
     )}
     {icon && (
       <span
         aria-hidden="true"
-        className={`shrink-0 ${selected ? 'text-[#FDF8F0]' : 'text-[var(--text-muted)]'}`}
+        className={`shrink-0 ${selected ? 'text-[#1A1A1A]' : 'text-[var(--text-muted)]'}`}
       >
         {icon}
       </span>

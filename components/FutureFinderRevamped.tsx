@@ -236,7 +236,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
               <button
                 key={l}
                 onClick={() => setLength(l)}
-                className={`flex min-h-[76px] flex-col items-center justify-center rounded-2xl border-2 border-[#1A1A1A] py-3 font-sans shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] ${selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A] dark:bg-zinc-900 dark:text-white'}`}
+                className={`flex min-h-[76px] flex-col items-center justify-center rounded-2xl border-2 border-[#1A1A1A] py-3 font-sans shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] ${selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-white text-[#1A1A1A] dark:bg-zinc-900 dark:text-white'}`}
               >
                 <span className="text-xl font-bold leading-none">{l === 'full' ? 'Full' : 'Quick'}</span>
                 <span className="text-[11px] font-medium mt-1 opacity-80">{l === 'full' ? '72 taps · ~9 min' : '42 taps · ~5 min'}</span>
