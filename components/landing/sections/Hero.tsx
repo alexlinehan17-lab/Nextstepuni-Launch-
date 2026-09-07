@@ -11,6 +11,7 @@
 import React from 'react';
 import { COPY } from '../copy';
 import { LineRise } from '../motion';
+import { StarguySlot } from '../starguy/Traveller';
 import { Button, Container, Eyebrow, Lede, Starguy } from '../primitives';
 import { APP_URL, FONT, L } from '../theme';
 import Playground from './Playground';
@@ -29,7 +30,7 @@ const Hero: React.FC = () => {
             style={{ fontFamily: FONT.serif, fontWeight: 600, color: L.ink, fontSize: 'clamp(42px, 6.6vw, 86px)', lineHeight: 0.98, letterSpacing: '-0.025em' }}
             tail={
               <span aria-hidden="true" className="landing-starguy-lg" style={{ position: 'absolute', left: 'calc(100% + 0.06em)', bottom: '0.02em', width: '0.6em', lineHeight: 0 }}>
-                <Starguy size={0} style={{ width: '100%', height: 'auto' }} />
+                <StarguySlot id="hero"><Starguy size={0} style={{ width: '100%', height: 'auto' }} /></StarguySlot>
               </span>
             }
           />

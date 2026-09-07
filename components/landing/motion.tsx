@@ -375,3 +375,40 @@ export const LineRise: React.FC<{
     </Tag>
   );
 };
+
+
+/* ── WordRise ────────────────────────────────────────────────────────────────
+   The chapter word. It arrives the way the headline does — masked, rising out
+   of its own baseline once the reader reaches it — and leaves the same way in
+   reverse: as it nears the top of the window it sinks back into the paper
+   behind its mask. No letters popping, no squash, no grey. Static on phones
+   and under reduced motion. `tail` renders inside the moving word box. */
+export const WordRise: React.FC<{
+  children: React.ReactNode;
+  className?: string;
+  tail?: React.ReactNode;
+}> = ({ children, className = '', tail }) => {
+  const reduce = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+  const seen = useInView(ref, { once: true, margin: '-12% 0px' as never });
+  // Sinks only at the very top edge: a chapter anchored under the nav (its word ~14% down) must still show its word.
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start 12%', 'start -6%'] });
+  const exitY = useTransform(scrollYProgress, [0, 1], ['0%', '-118%']);
+  const exitOpacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 1, 0]);
+  const live = !reduce;
+  return (
+    <div ref={ref} className={className} style={{ overflow: 'hidden', paddingBottom: '0.26em', marginBottom: '-0.26em', paddingTop: '0.1em', marginTop: '-0.1em' }}>
+      <MotionDiv style={live ? { y: exitY, opacity: exitOpacity } : undefined}>
+        <MotionDiv
+          initial={live ? { y: '112%', opacity: 0 } : false}
+          animate={live && seen ? { y: 0, opacity: 1 } : undefined}
+          transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+          style={{ position: 'relative' }}
+        >
+          {children}
+          {tail}
+        </MotionDiv>
+      </MotionDiv>
+    </div>
+  );
+};

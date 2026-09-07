@@ -11,6 +11,7 @@ import React from 'react';
 import { COPY } from '../copy';
 import { Container, DISPLAY, Starguy, SectionRule } from '../primitives';
 import { LineRise } from '../motion';
+import { StarguySlot } from '../starguy/Traveller';
 import { FONT, L } from '../theme';
 
 const Footer: React.FC = () => (
@@ -27,7 +28,7 @@ const Footer: React.FC = () => (
         style={{ fontFamily: FONT.serif, fontWeight: 600, color: L.ink, ...DISPLAY.sub }}
         tail={
           <span aria-hidden="true" style={{ position: 'absolute', left: 'calc(100% + 0.35em)', bottom: 0, width: 56, lineHeight: 0 }}>
-            <Starguy size={0} pose="stand" style={{ width: '100%', height: 'auto' }} />
+            <StarguySlot id="footer"><Starguy size={0} pose="stand" style={{ width: '100%', height: 'auto' }} /></StarguySlot>
           </span>
         }
       />

@@ -134,3 +134,14 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
 .lenis.lenis-stopped { overflow: hidden; }
+
+/* ── The frame becomes the playground (View Transitions) ───────────────────
+   The pressed chapter frame and the stage share one name for the length of
+   the transition; the group glides and grows on the page's expo curve while
+   the rest of the page cross-fades. */
+::view-transition-group(landing-glass) { animation-duration: 0.5s; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+::view-transition-old(landing-glass), ::view-transition-new(landing-glass) { animation-duration: 0.5s; height: 100%; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.32s; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}

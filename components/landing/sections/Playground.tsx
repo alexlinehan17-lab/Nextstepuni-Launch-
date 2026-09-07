@@ -11,6 +11,7 @@
  */
 
 import React, { useEffect, useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { useInView } from 'framer-motion';
 import { AnimatePresence, MotionDiv, useReducedMotion } from '../../Motion';
 import { COPY, type PlaygroundTabId } from '../copy';
@@ -25,7 +26,7 @@ import ReflexGlass, { REFLEX_SUBJECTS_LIVE } from '../glass/ReflexGlass';
 import PassportGlass, { PASSPORT_MODES_LIVE } from '../glass/PassportGlass';
 import FutureFinderGlass, { FUTUREFINDER_MODES_LIVE } from '../glass/FutureFinderGlass';
 import { DEMO_EVENT, openDemo, type DemoEventDetail } from '../glass/demoEvent';
-import { scrollToId } from '../scroll';
+import { getLenis, scrollToId } from '../scroll';
 
 export { openDemo };
 
@@ -77,13 +78,37 @@ const Playground: React.FC = () => {
   const [settled, setSettled] = useState(reduce);
   useEffect(() => { if (reduce) return; const id = window.setTimeout(() => setSettled(true), 1300); return () => window.clearTimeout(id); }, [reduce]);
 
+  // "Try it in the playground": the chapter's frame lifts off and grows into
+  // the stage (View Transitions, same document, 0 bytes) while the page
+  // cross-fades beneath it — the tool the reader was looking at comes to them.
+  // Without the API, or under reduced motion, the page travels as before.
+  const [morphing, setMorphing] = useState(false);
   useEffect(() => {
     const onDemo = (e: Event) => {
-      const { demo, mode } = (e as CustomEvent<DemoEventDetail>).detail;
+      const { demo, mode, from } = (e as CustomEvent<DemoEventDetail>).detail;
       if (!isTab(demo)) return;
-      setTab(demo);
-      if (mode && SUBTABS[demo].some(s => s.id === mode)) setSubs(s => ({ ...s, [demo]: mode }));
-      if (reduce) document.getElementById('playground')?.scrollIntoView({ block: 'start' }); else scrollToId('playground');
+      const select = () => {
+        setTab(demo);
+        if (mode && SUBTABS[demo].some(s => s.id === mode)) setSubs(s => ({ ...s, [demo]: mode }));
+      };
+      const canMorph = !reduce && from instanceof HTMLElement && typeof document.startViewTransition === 'function';
+      if (!canMorph) {
+        select();
+        if (reduce) document.getElementById('playground')?.scrollIntoView({ block: 'start' }); else scrollToId('playground');
+        return;
+      }
+      from.style.viewTransitionName = 'landing-glass';
+      const transition = document.startViewTransition(() => {
+        flushSync(() => { select(); setMorphing(true); });
+        from.style.viewTransitionName = '';
+        const el = document.getElementById('playground');
+        if (el) {
+          const top = Math.max(0, el.getBoundingClientRect().top + window.scrollY - parseFloat(getComputedStyle(el).scrollMarginTop || '0'));
+          const lenis = getLenis();
+          if (lenis) lenis.scrollTo(top, { immediate: true }); else window.scrollTo(0, top);
+        }
+      });
+      transition.finished.finally(() => setMorphing(false));
     };
     window.addEventListener(DEMO_EVENT, onDemo);
     return () => window.removeEventListener(DEMO_EVENT, onDemo);
@@ -112,7 +137,7 @@ const Playground: React.FC = () => {
         </div>
 
         {/* The window into the app */}
-        <div ref={stageRef} style={{ position: 'relative', background: L.paper }}>
+        <div ref={stageRef} style={{ position: 'relative', background: L.paper, viewTransitionName: morphing ? 'landing-glass' : undefined }}>
           <AnimatePresence mode="wait" initial={false}>
             <MotionDiv
               key={tab}
