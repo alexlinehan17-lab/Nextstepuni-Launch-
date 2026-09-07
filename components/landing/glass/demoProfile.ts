@@ -43,3 +43,9 @@ export const DEMO_PROFILE: StudentSubjectProfile = {
 };
 
 export const DEMO_SUBJECT_NAMES: readonly string[] = DEMO_PROFILE.subjects.map(s => s.subjectName);
+/** The same seven as Paper Trail wants them: name + level. */
+export const DEMO_LEVELS = DEMO_PROFILE.subjects.map(s => ({ name: s.subjectName, level: s.level as string }));
+/** The same seven as the Topic Atlas keys them (its subject ids are the lowercase names). */
+export const DEMO_ATLAS_SUBJECTS = DEMO_PROFILE.subjects.map(s => ({ id: s.subjectName.toLowerCase(), label: s.subjectName }));
+/** The Atlas opens on Biology; the other six show locked. */
+export const ATLAS_OPEN_SUBJECT = 'Biology';

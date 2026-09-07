@@ -4,7 +4,9 @@
  *
  * The real Topic Atlas feed (components/PaperTrail/ReviseByTopic), opened
  * straight on one Biology topic: real printed-question crops from the SEC
- * papers, each with its marking scheme one tap away. No providers, no
+ * papers, each with its marking scheme one tap away. Back out and "My
+ * subjects" holds the sample student's seven, Biology open and the other
+ * six locked; the "All subjects" scope is locked too. No providers, no
  * sign-in — the papers are world-readable and the scheme crops render
  * on the fly. Mounted only while on screen: each card pulls a real PDF.
  */
@@ -13,6 +15,7 @@ import React from 'react';
 import ReviseByTopic from '../../PaperTrail/ReviseByTopic';
 import { APP_URL } from '../theme';
 import { GlassStage, type GlassLocks, type GlassProps } from './GlassStage';
+import { ATLAS_OPEN_SUBJECT, DEMO_ATLAS_SUBJECTS, DEMO_SUBJECT_NAMES } from './demoProfile';
 
 export const ATLAS_TOPICS_LIVE: { id: string; label: string }[] = [
   { id: 'biology-higher-old-course-genetics-dna-evolution', label: 'Genetics & DNA' },
@@ -22,10 +25,23 @@ export const ATLAS_TOPICS_LIVE: { id: string; label: string }[] = [
   { id: 'biology-higher-new-course-31-ecology-ecosystems-and-biodiversity', label: '3.1 Ecosystems (new spec)' },
 ];
 
-const SUBJECTS = [{ id: 'biology', label: 'Biology' }];
+const SUBJECTS = DEMO_ATLAS_SUBJECTS;
+const MINE_IDS = SUBJECTS.map(s => s.id);
+const LABEL = new Map(SUBJECTS.map(s => [s.id, s.label]));
 const AUTO = [{ text: 'Show the marking scheme', hold: 5200, before: 2600 }];
-/** Biology is the open subject; the way out to the other subjects shows a lock. */
-const LOCKS: GlassLocks = { names: ['All subjects'] };
+const LOCKED_NAMES = new Set(DEMO_SUBJECT_NAMES.filter(n => n !== ATLAS_OPEN_SUBJECT));
+/**
+ * Subject tiles carry an aria-label of "Name — 1,234 questions across …"; the
+ * name is what we match. The "All subjects" that is locked is the scope
+ * toggle, never the back arrow that leads to "My subjects".
+ */
+const LOCKS: GlassLocks = {
+  nameOf: el => el.getAttribute('aria-label')?.split(' — ')[0]?.trim() || undefined,
+  test: (name, el) => {
+    if (name === 'All subjects') return !!el.closest('[aria-label="Subject scope"]');
+    return LOCKED_NAMES.has(name) && el.matches('button[aria-label]');
+  },
+};
 
 const AtlasGlass: React.FC<GlassProps> = ({ sub, active, height = 700, logicalWidth }) => (
   <GlassStage active={active} auto={AUTO} height={height} logicalWidth={logicalWidth} locks={LOCKS}>
@@ -34,9 +50,9 @@ const AtlasGlass: React.FC<GlassProps> = ({ sub, active, height = 700, logicalWi
         <ReviseByTopic
           key={sub}
           subjects={SUBJECTS}
-          mineIds={['biology']}
+          mineIds={MINE_IDS}
           uid={undefined}
-          subjectLabel={() => 'Biology'}
+          subjectLabel={id => LABEL.get(id) ?? id}
           restore={{ subjectId: 'biology', subtopicId: sub }}
           onOpenQuestion={() => { window.location.href = APP_URL; }}
           onBack={() => undefined}
