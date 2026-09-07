@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
-import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3, ChevronRight, ExternalLink } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
@@ -914,6 +914,26 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     </MotionButton>
   ) : null;
 
+  // Localhost-only shortcut to the marketing landing page. landing-dev.html is
+  // served by Vite in dev and ignored by the single-input production build, so
+  // it shares the Demo Account gate rather than getting one of its own.
+  const landingButton = showDemoButton ? (
+    <a
+      href="/landing-dev.html"
+      aria-label="Visit the landing page dev harness"
+      className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-[#1A1A1A] bg-white px-5 text-xs font-bold tracking-[0.01em] text-[#1A1A1A] shadow-sm transition-colors hover:bg-[#FDEEDF]"
+    >
+      <ExternalLink size={15} aria-hidden="true" />
+      Visit landing page
+    </a>
+  ) : null;
+  const devButtons = showDemoButton ? (
+    <div className="flex flex-wrap items-center justify-center gap-3">
+      {landingButton}
+      {demoButton}
+    </div>
+  ) : null;
+
   const selectedAvatar = avatar || defaultAvatar;
 
   // ═══════════════════════════════════════════════════════════
@@ -923,7 +943,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ═══════════════════════════════════════════════════════════
   return (
     <>
-      <LoginCard devButton={demoButton} view={view}>
+      <LoginCard devButton={devButtons} view={view}>
         <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
         <MotionDiv
           ref={authViewRef}
