@@ -2,26 +2,24 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * The real Paper Trail (components/PaperTrail), signed out, with the same
- * fifteen subjects as Mark Bank on its grid. Mathematics is open — 200 of its
- * 222 papers carry answer maps — and the scripted cursor opens it; the rest
- * show with a lock, as do the "All subjects" switches.
+ * The real Paper Trail (components/PaperTrail), signed out, with the sample
+ * student's seven subjects under "My subjects". Mathematics is open — 200 of
+ * its 222 papers carry answer maps — and the scripted cursor opens it; the
+ * other six show with a lock, as do the "All subjects" switches.
  */
 
 import React, { Suspense } from 'react';
 import { ProgressProvider } from '../../../contexts/ProgressContext';
 import { GlassStage, type AutoStep, type GlassLocks, type GlassProps } from './GlassStage';
-import { LANDING_SUBJECTS, PAPER_TRAIL_OPEN_SUBJECT } from './demoProfile';
+import { DEMO_LEVELS, DEMO_SUBJECT_NAMES, PAPER_TRAIL_OPEN_SUBJECT } from './demoProfile';
 import { openDemo } from './demoEvent';
 
 const PaperTrail = React.lazy(() => import('../../PaperTrail'));
 
 export const PAPERTRAIL_MODES_LIVE: { id: string; label: string }[] = [];
 
-const LEVELS = LANDING_SUBJECTS.map(name => ({ name, level: 'higher' }));
-
 const LOCKS: GlassLocks = {
-  names: [...LANDING_SUBJECTS.filter(s => s !== PAPER_TRAIL_OPEN_SUBJECT), 'All subjects', 'Browse all subjects'],
+  names: [...DEMO_SUBJECT_NAMES.filter(s => s !== PAPER_TRAIL_OPEN_SUBJECT), 'All subjects', 'Browse all subjects'],
   nameOf: el => el.querySelector('.pt-subject-name')?.textContent?.trim() || undefined,
 };
 
@@ -35,8 +33,8 @@ const PaperTrailGlass: React.FC<GlassProps> = ({ active, height = 720, logicalWi
         <div className="landing-glass-pad">
           <PaperTrail
             uid={undefined}
-            studentSubjects={[...LANDING_SUBJECTS]}
-            studentLevels={LEVELS}
+            studentSubjects={[...DEMO_SUBJECT_NAMES]}
+            studentLevels={DEMO_LEVELS}
             studentCycle="leaving-cert"
             onOpenTool={() => openDemo('atlas')}
             onBack={() => undefined}
