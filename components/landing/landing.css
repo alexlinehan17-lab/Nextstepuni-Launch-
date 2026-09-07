@@ -109,3 +109,28 @@
 .landing-hl--on::after { transform: scaleX(1); }
 .landing-hl--out::after { transform: scaleX(1); opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .landing-hl::after { transition: none; } }
+
+/* ── Ruled paper ───────────────────────────────────────────────────────────
+   The page's ink rules draw themselves from the left as the reader scrolls
+   to them — a CSS scroll-driven animation, zero JavaScript, compositor only.
+   Where the browser cannot (Safari before 26, reduced motion, screenshots)
+   the rule is simply there. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    :root:not(.landing-static) .landing-rule {
+      animation: landing-rule-draw linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 32%;
+    }
+  }
+}
+@keyframes landing-rule-draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* ── Weighted paper (Lenis) ────────────────────────────────────────────── */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }

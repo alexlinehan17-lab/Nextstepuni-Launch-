@@ -7,11 +7,12 @@
 
 import React from 'react';
 import { COPY } from '../copy';
-import { Button, Container, Display, Eyebrow, Lede } from '../primitives';
-import { L, SPACE } from '../theme';
+import { Button, Container, Display, Eyebrow, Lede, SectionRule } from '../primitives';
+import { SPACE } from '../theme';
 
 const Schools: React.FC = () => (
-  <section id="schools" className={SPACE.sectionTight} style={{ borderTop: `1.5px solid ${L.ink}`, scrollMarginTop: 70 }}>
+  <section id="schools" className={SPACE.sectionTight} style={{ position: 'relative', scrollMarginTop: 70 }}>
+    <SectionRule />
     <Container className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
       <div className="lg:col-span-8">
         <Eyebrow>{COPY.schools.eyebrow}</Eyebrow>

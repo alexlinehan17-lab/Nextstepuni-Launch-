@@ -9,17 +9,28 @@
 
 import React from 'react';
 import { COPY } from '../copy';
-import { Container, Display, Starguy } from '../primitives';
+import { Container, DISPLAY, Starguy, SectionRule } from '../primitives';
+import { LineRise } from '../motion';
 import { FONT, L } from '../theme';
 
 const Footer: React.FC = () => (
-  <footer style={{ borderTop: `1.5px solid ${L.ink}`, overflow: 'hidden' }}>
+  <footer style={{ position: 'relative', overflow: 'hidden' }}>
+    <SectionRule />
     <Container className="pt-14 md:pt-20">
       {/* items-baseline: the image's bottom edge is its flex baseline, so the star lands on the word's baseline. */}
-      <div className="flex items-baseline gap-4">
-        <Display as="p" size="sub">{COPY.footer.statement}</Display>
-        <Starguy size={56} pose="stand" className="shrink-0" />
-      </div>
+      <LineRise
+        as="p"
+        inView
+        padTop="1.3em"
+        text={COPY.footer.statement}
+        className="m-0"
+        style={{ fontFamily: FONT.serif, fontWeight: 600, color: L.ink, ...DISPLAY.sub }}
+        tail={
+          <span aria-hidden="true" style={{ position: 'absolute', left: 'calc(100% + 0.35em)', bottom: 0, width: 56, lineHeight: 0 }}>
+            <Starguy size={0} pose="stand" style={{ width: '100%', height: 'auto' }} />
+          </span>
+        }
+      />
       {/*
         The wordmark as a section break. Sized against its own container
         (container query units, not the viewport): DM Sans 700 'nextstepuni' at
@@ -33,7 +44,8 @@ const Footer: React.FC = () => (
         </div>
       </div>
     </Container>
-    <div style={{ borderTop: `1.5px solid ${L.ink}` }}>
+    <div style={{ position: 'relative' }}>
+      <SectionRule />
       <Container className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-5" style={{ fontFamily: FONT.sans, fontSize: 13, color: L.faint }}>
         <nav aria-label="Legal" className="flex flex-wrap gap-x-6 gap-y-2">
           {COPY.footer.links.map(l => <a key={l.href} href={l.href} style={{ color: L.ink, textDecoration: 'none', fontWeight: 600 }}>{l.label}</a>)}

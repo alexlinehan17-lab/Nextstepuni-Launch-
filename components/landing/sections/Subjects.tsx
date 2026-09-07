@@ -15,7 +15,7 @@ import React, { useState } from 'react';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../../Motion';
 import { COPY } from '../copy';
 import { SUBJECT_GROUPS, type SubjectGroup } from '../demoData';
-import { Body, Container, Display, Eyebrow, Frame, Lede, Rule, TextTabs } from '../primitives';
+import { Body, Container, Display, Eyebrow, Frame, Lede, Rule, TextTabs, SectionRule } from '../primitives';
 import { FONT, L, SPACE } from '../theme';
 
 const EASE: [number, number, number, number] = [0.2, 0.8, 0.2, 1];
@@ -129,7 +129,8 @@ const Subjects: React.FC = () => {
   const note = cards === 0 ? COPY.subjects.stillBuilding : (COPY.subjects.groupNotes[g.id] ?? COPY.subjects.stillBuilding);
 
   return (
-    <section id="subjects" className={SPACE.section} style={{ borderTop: `1.5px solid ${L.ink}`, scrollMarginTop: 70 }}>
+    <section id="subjects" className={SPACE.section} style={{ position: 'relative', scrollMarginTop: 70 }}>
+    <SectionRule />
       <Container>
         <Eyebrow>{COPY.subjects.eyebrow}</Eyebrow>
         <Display size="section" as="h2" className="mt-4">{COPY.subjects.title}</Display>

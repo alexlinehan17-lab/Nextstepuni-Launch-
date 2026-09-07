@@ -15,6 +15,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { MotionDiv, useReducedMotion } from '../../Motion';
 import { L } from '../theme';
 import { useLogicalWidth } from './useLogicalWidth';
+import { getLenis } from '../scroll';
 
 export interface AutoStep {
   /** Button label to look for (substring match on textContent). */
@@ -147,11 +148,12 @@ export const GlassStage: React.FC<{
       if (open === locked) return;
       locked = open;
       document.documentElement.style.overflow = open ? 'hidden' : '';
+      if (open) getLenis()?.stop(); else getLenis()?.start();
     };
     const mo = new MutationObserver(update);
     mo.observe(document.body, { childList: true });
     update();
-    return () => { mo.disconnect(); if (locked) document.documentElement.style.overflow = ''; };
+    return () => { mo.disconnect(); if (locked) { document.documentElement.style.overflow = ''; getLenis()?.start(); } };
   }, [active]);
 
   // Locks: decorate matching controls as the app renders them, and swallow their presses.

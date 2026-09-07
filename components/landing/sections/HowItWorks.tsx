@@ -10,12 +10,13 @@
 import React from 'react';
 import { COPY } from '../copy';
 import { Reveal } from '../motion';
-import { Body, Button, Container, Display, Eyebrow, Lede } from '../primitives';
+import { Body, Button, Container, Display, Eyebrow, Lede, SectionRule } from '../primitives';
 import { APP_URL, FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 
 const HowItWorks: React.FC = () => (
-  <section id="how" className={SPACE.section} style={{ borderTop: `1.5px solid ${L.ink}`, scrollMarginTop: 70 }}>
+  <section id="how" className={SPACE.section} style={{ position: 'relative', scrollMarginTop: 70 }}>
+    <SectionRule />
     <Container>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
         <div className="lg:col-span-4">

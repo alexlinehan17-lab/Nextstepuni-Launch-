@@ -25,6 +25,7 @@ import ReflexGlass, { REFLEX_SUBJECTS_LIVE } from '../glass/ReflexGlass';
 import PassportGlass, { PASSPORT_MODES_LIVE } from '../glass/PassportGlass';
 import FutureFinderGlass, { FUTUREFINDER_MODES_LIVE } from '../glass/FutureFinderGlass';
 import { DEMO_EVENT, openDemo, type DemoEventDetail } from '../glass/demoEvent';
+import { scrollToId } from '../scroll';
 
 export { openDemo };
 
@@ -82,7 +83,7 @@ const Playground: React.FC = () => {
       if (!isTab(demo)) return;
       setTab(demo);
       if (mode && SUBTABS[demo].some(s => s.id === mode)) setSubs(s => ({ ...s, [demo]: mode }));
-      document.getElementById('playground')?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      if (reduce) document.getElementById('playground')?.scrollIntoView({ block: 'start' }); else scrollToId('playground');
     };
     window.addEventListener(DEMO_EVENT, onDemo);
     return () => window.removeEventListener(DEMO_EVENT, onDemo);

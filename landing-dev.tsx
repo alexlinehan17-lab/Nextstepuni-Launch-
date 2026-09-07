@@ -22,7 +22,7 @@ import './components/landing/landing.css';
 // ?demo=<markbank|atlas|planner|launchpad>&mode=<sub-tab id> preselects the
 // playground (read in sections/Playground.tsx).
 const params = new URLSearchParams(window.location.search);
-if (params.get('static')) MotionGlobalConfig.skipAnimations = true;
+if (params.get('static')) { MotionGlobalConfig.skipAnimations = true; document.documentElement.classList.add('landing-static'); }
 
 const root = document.getElementById('root');
 if (root) {

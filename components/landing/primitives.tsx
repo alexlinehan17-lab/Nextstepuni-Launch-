@@ -29,7 +29,7 @@ export const Eyebrow: React.FC<{ numeral?: string; children: React.ReactNode; cl
 };
 
 type DisplaySize = 'hero' | 'chapter' | 'section' | 'sub';
-const DISPLAY: Record<DisplaySize, React.CSSProperties> = {
+export const DISPLAY: Record<DisplaySize, React.CSSProperties> = {
   hero: { fontSize: 'clamp(42px, 7.2vw, 92px)', lineHeight: 0.98, letterSpacing: '-0.025em' },
   chapter: { fontSize: 'clamp(56px, 12vw, 172px)', lineHeight: 0.9, letterSpacing: '-0.035em' },
   section: { fontSize: 'clamp(30px, 4.4vw, 52px)', lineHeight: 1.04, letterSpacing: '-0.02em' },
@@ -143,7 +143,16 @@ export const Frame: React.FC<{
 );
 
 export const Rule: React.FC<{ className?: string; strong?: boolean }> = ({ className = '', strong = false }) => (
-  <hr className={`my-0 mx-0 ${className}`} style={{ border: 0, borderTop: strong ? `1.5px solid ${L.ink}` : `1px solid ${L.hairline}` }} />
+  <hr className={`landing-rule my-0 mx-0 ${className}`} style={{ border: 0, height: strong ? 1.5 : 1, background: strong ? L.ink : L.hairline, transformOrigin: 'left center' }} />
+);
+
+/**
+ * The 1.5px ink rule along a section's top edge, drawn from the left as the
+ * reader scrolls to it (CSS scroll-driven animation; a static line where the
+ * browser cannot). The section supplies `position: relative`.
+ */
+export const SectionRule: React.FC<{ strong?: boolean }> = ({ strong = true }) => (
+  <span aria-hidden="true" className="landing-rule" style={{ position: 'absolute', left: 0, right: 0, top: 0, height: strong ? 1.5 : 1, background: strong ? L.ink : L.hairline, transformOrigin: 'left center', display: 'block' }} />
 );
 
 /**
