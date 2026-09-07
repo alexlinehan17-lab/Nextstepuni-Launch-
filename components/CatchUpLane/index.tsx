@@ -483,7 +483,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
                         key={i}
                         onClick={() => setTicks(t => t.map((v, j) => j === i ? !v : v))}
                         className="w-full flex items-start gap-2.5 text-left rounded-xl p-2.5 transition-colors"
-                        style={{ backgroundColor: ticks[i] ? COLORS.successTint : '#F6F6F4' }}
+                        style={{ backgroundColor: ticks[i] ? COLORS.successTint : 'var(--surface-paper)' }}
                       >
                         <span className="w-5 h-5 rounded-md flex items-center justify-center shrink-0 mt-0.5" style={ticks[i] ? { backgroundColor: COLORS.success } : { border: '2px solid #d0cdc8' }}>
                           {ticks[i] && <Check size={13} strokeWidth={3} className="text-white" />}

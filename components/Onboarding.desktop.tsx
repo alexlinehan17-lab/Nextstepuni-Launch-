@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import Puifin, { type PuifinPose } from './ui/Puifin';
+import StarGuide from './ui/StarGuide';
 import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
@@ -60,7 +60,7 @@ interface OnboardingDraft {
 // ─── The Guide — a painted blob that asks each step's question in a
 //     hand-drawn speech bubble. One guide, one question, per screen (the
 //     Duolingo/Brilliant conversational register, in our own language). ───
-const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.ReactNode; sub?: React.ReactNode; tilt?: number; pose?: PuifinPose }> = ({ tint, ink, question, sub, tilt = 0, pose = 'perch' }) => (
+const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.ReactNode; sub?: React.ReactNode; tilt?: number }> = ({ tint, ink, question, sub, tilt = 0 }) => (
   <div className="mx-auto mb-7 flex w-full max-w-xl items-start gap-3.5 text-left">
     <motion.span
       aria-hidden="true"
@@ -69,10 +69,10 @@ const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.Rea
       transition={{ duration: 0.45, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
       className="relative mt-1 h-14 w-14 shrink-0"
     >
-      {/* The step's tint survives as Puifín's perch-disc. */}
+      {/* The original star is the shared app guide. */}
       <span className="absolute inset-0 rounded-full" style={{ backgroundColor: tint, boxShadow: `inset 0 0 0 1.5px ${ink}26` }} />
       <span className="absolute inset-x-0 bottom-0 flex justify-center">
-        <Puifin pose={pose} size={52} />
+        <StarGuide size={52} />
       </span>
     </motion.span>
     <motion.div
@@ -734,8 +734,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       tint="#FBE9DC"
                       ink="#B5500F"
                       tilt={-3}
-                      pose="wave"
-                      question={`Hi ${userName.split(' ')[0] || userName} — I'm Puifín, your guide here.`}
+
+                      question={`Hi ${userName.split(' ')[0] || userName} — let’s find your next step.`}
                       sub="Two minutes of setup and the whole app fits itself around you. One question at a time."
                     />
 
@@ -1393,7 +1393,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                   tint="#E8F2EC"
                   ink="#1F5F3E"
                   tilt={-2}
-                  pose="cheer"
+
                   question={`You're ready, ${userName.split(' ')[0] || userName}.`}
                   sub="Here's the plan we built together — review it, then start learning."
                 />

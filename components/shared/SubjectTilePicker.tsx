@@ -8,17 +8,12 @@
  * Purely presentational: the caller filters subjects to the student's cycle /
  * level, sorts them, and renders display-ready labels + sublabels (counts,
  * progress). This component owns only the My Subjects / All Subjects segmented
- * toggle and the cream year-selection-style tile grid. Scope state lives in
- * the calling tool (controlled via `scope` + `onScopeChange`), so each tool
- * keeps its own picker scope independently.
- *
- * The toggle and tile markup is the exact year-selection card vocabulary
- * (cream #FDF8F0, 2px ink border, hard 4px offset shadow, orange #F26B1F
- * hover/active) — copied verbatim; don't restyle here without restyling the
- * year picker too.
+ * toggle and white subject controls. Scope state remains in the caller.
+ * Shared controls keep readable names/counts and an explicit scope selection.
  */
 
 import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
 
 export interface SubjectTileItem {
   /** Stable subject id, passed back through onPick. */
@@ -56,33 +51,34 @@ const SubjectTilePicker: React.FC<SubjectTilePickerProps> = ({
   return (
     <>
       {headingLabel && (
-        <h2 className="text-[13px] font-bold uppercase tracking-[0.14em] mb-3" style={{ color: '#9e9186' }}>
+        <h2 className="text-xs font-bold uppercase tracking-widest mb-3 text-zinc-600 dark:text-zinc-400">
           {headingLabel}
         </h2>
       )}
       {hasMine && (
-        <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4">
+        <div className="grid grid-cols-2 border-b border-zinc-300 dark:border-zinc-700 mb-5">
           {(['mine', 'all'] as const).map(sc => (
             <button
               key={sc}
               onClick={() => onScopeChange(sc)}
-              className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${scope === sc ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
+              aria-pressed={scope === sc}
+              className={`min-h-12 border-b-[3px] px-3 py-3 text-sm transition-colors ${scope === sc ? 'border-[#F26B1F] text-zinc-900 dark:text-white font-bold' : 'border-transparent text-zinc-600 dark:text-zinc-400'}`}
             >
               {sc === 'mine' ? 'My Subjects' : 'All Subjects'}
             </button>
           ))}
         </div>
       )}
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 min-[360px]:grid-cols-2 gap-3">
         {list.map(s => (
           <button
             key={s.id}
             onClick={() => onPick(s.id)}
             aria-label={`${s.label}${s.sublabel ? `, ${s.sublabel}` : ''}`}
-            className="group flex flex-col items-center justify-center text-center px-3 py-5 min-h-[92px] rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] bg-[#FDF8F0] text-[#1A1A1A] hover:bg-[#F26B1F] hover:text-[#FDF8F0] active:bg-[#F26B1F] active:text-[#FDF8F0]"
+            className="group flex min-h-[112px] min-w-0 flex-col items-start justify-between gap-4 rounded-xl border border-zinc-300 bg-white p-4 text-left text-zinc-900 transition-colors hover:border-[#B54D14] active:border-[#B54D14] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B54D14] dark:border-zinc-600 dark:bg-zinc-900 dark:text-white"
           >
-            <span className="text-[17px] font-bold leading-tight">{s.label}</span>
-            {s.sublabel && <span className="text-[11px] font-medium mt-1 opacity-80">{s.sublabel}</span>}
+            <span className="text-base font-bold leading-snug [overflow-wrap:anywhere]">{s.label}</span>
+            <span className="flex w-full items-end justify-between gap-2">{s.sublabel && <span className="text-sm leading-snug text-zinc-600 dark:text-zinc-300">{s.sublabel}</span>}<ArrowUpRight size={18} aria-hidden="true" className="ml-auto shrink-0 text-[#B54D14] dark:text-orange-400" /></span>
           </button>
         ))}
       </div>

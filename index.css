@@ -2147,3 +2147,15 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   .mb-card-in { animation-duration: 1ms; }
   .mb-board-exit { animation-duration: 1ms; }
 }
+
+/* Approved mobile brand: white tool surfaces, separated by existing outlines. */
+.mobile-brand-tools {
+  --surface-canvas: #FFFFFF;
+  --surface-paper: #FFFFFF;
+  --surface-soft: #F4F4F4;
+}
+.dark .mobile-brand-tools {
+  --surface-canvas: #151515;
+  --surface-paper: #202020;
+  --surface-soft: #282828;
+}
