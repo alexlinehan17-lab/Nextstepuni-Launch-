@@ -23,7 +23,41 @@ export interface AutoStep {
   hold: number;
   /** Wait before travelling to it, ms (gives the surface time to load). */
   before?: number;
+  /** After the press, bring the glass back to the top (for presses that open a new screen). */
+  then?: 'top';
 }
+
+/** Props every looking-glass surface accepts, so the chapters can mount the same glass at a different size. */
+export interface GlassProps {
+  /** Mode chosen along the bottom of the playground (subject, topic…); '' when the surface has none. */
+  sub: string;
+  active: boolean;
+  height?: number;
+  logicalWidth?: number;
+}
+
+/**
+ * Controls the visitor may look at but not use. Matched by name — the
+ * control's aria-label up to its first comma, else its text — against
+ * `names`, or by `test`. Locked controls get a padlock and shake when
+ * pressed; the press never reaches the app.
+ */
+export interface GlassLocks {
+  names?: readonly string[];
+  test?: (name: string, el: HTMLElement) => boolean;
+  /** Custom reader for a control's name; return undefined to fall back to the default. */
+  nameOf?: (el: HTMLElement) => string | undefined;
+}
+
+const CONTROL = 'button, a, [role="button"], [role="tab"]';
+const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
+const defaultName = (el: HTMLElement) => norm((el.getAttribute('aria-label') ?? el.textContent ?? '').split(',')[0]);
+const shake = (el: HTMLElement) => {
+  el.classList.remove('landing-shake');
+  void el.offsetWidth; // restart the animation
+  el.classList.add('landing-shake');
+  window.setTimeout(() => el.classList.remove('landing-shake'), 480);
+};
 
 const findButton = (root: HTMLElement, text: string): HTMLElement | null => {
   const all = Array.from(root.querySelectorAll<HTMLElement>('button, a[role="button"]'));
@@ -41,7 +75,9 @@ export const GlassStage: React.FC<{
   className?: string;
   /** Override the width the surface is laid out at (default: the app's own breakpoint logic). */
   logicalWidth?: number;
-}> = ({ children, height = 680, auto, active, className = '', logicalWidth }) => {
+  /** Controls to show locked. */
+  locks?: GlassLocks;
+}> = ({ children, height = 680, auto, active, className = '', logicalWidth, locks }) => {
   const reduce = useReducedMotion();
   const hostRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
@@ -82,6 +118,38 @@ export const GlassStage: React.FC<{
   }, []);
   const [cursor, setCursor] = useState<{ x: number; y: number; press: boolean } | null>(null);
   const stop = useCallback(() => { interactedRef.current = true; setInteracted(true); }, []);
+
+  // Locks: decorate matching controls as the app renders them, and swallow their presses.
+  useEffect(() => {
+    const root = innerRef.current;
+    if (!root || !locks) return;
+    const names = new Set(locks.names ?? []);
+    const nameOf = (el: HTMLElement) => locks.nameOf?.(el) ?? defaultName(el);
+    const isLocked = (el: HTMLElement) => { const n = nameOf(el); return names.has(n) || !!locks.test?.(n, el); };
+    let raf = 0;
+    const apply = () => {
+      raf = 0;
+      root.querySelectorAll<HTMLElement>(CONTROL).forEach(el => {
+        const on = isLocked(el);
+        if (on !== el.classList.contains('landing-locked')) el.classList.toggle('landing-locked', on);
+        if (on) { if (!el.hasAttribute('data-landing-locked')) el.setAttribute('data-landing-locked', ''); }
+        else if (el.hasAttribute('data-landing-locked')) el.removeAttribute('data-landing-locked');
+      });
+    };
+    const schedule = () => { if (!raf) raf = requestAnimationFrame(apply); };
+    schedule();
+    const mo = new MutationObserver(schedule);
+    mo.observe(root, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['class', 'aria-pressed', 'aria-selected', 'aria-label'] });
+    const onClick = (e: MouseEvent) => {
+      const target = e.target instanceof Element ? e.target.closest<HTMLElement>(CONTROL) : null;
+      if (!target || !root.contains(target) || !target.hasAttribute('data-landing-locked')) return;
+      e.preventDefault();
+      e.stopPropagation();
+      shake(target);
+    };
+    root.addEventListener('click', onClick, true);
+    return () => { mo.disconnect(); if (raf) cancelAnimationFrame(raf); root.removeEventListener('click', onClick, true); };
+  }, [locks, active]);
   useEffect(() => {
     if (!auto || !active || interacted || reduce) { setCursor(null); return; }
     let cancelled = false;
@@ -97,14 +165,22 @@ export const GlassStage: React.FC<{
         // Positions in logical (unscaled) pixels inside the inner surface.
         const x = (br.left - rr.left) / scale + br.width / (2 * scale) + root.scrollLeft;
         const y = (br.top - rr.top) / scale + br.height / (2 * scale) + root.scrollTop;
-        btn.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        // Scroll the glass, never the page: scrollIntoView would drag every scrollable ancestor along.
+        root.scrollTo({ top: Math.max(0, y - height / 2), behavior: 'smooth' });
         setCursor({ x, y, press: false });
-        later(() => { setCursor({ x, y, press: true }); btn.click(); later(() => { setCursor(c => c && { ...c, press: false }); later(() => run(i + 1), step.hold); }, 180); }, 900);
+        later(() => {
+          setCursor({ x, y, press: true }); btn.click();
+          later(() => {
+            setCursor(c => c && { ...c, press: false });
+            if (step.then === 'top') later(() => { root.scrollTo({ top: 0, behavior: 'smooth' }); setCursor(null); }, 500);
+            later(() => run(i + 1), step.hold);
+          }, 180);
+        }, 900);
       }, step.before ?? 600);
     };
     run(0);
     return () => { cancelled = true; timers.forEach(clearTimeout); };
-  }, [auto, active, interacted, reduce, scale]);
+  }, [auto, active, interacted, reduce, scale, height]);
 
   return (
     <div

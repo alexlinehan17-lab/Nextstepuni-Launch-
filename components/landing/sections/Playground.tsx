@@ -4,9 +4,10 @@
  *
  * The product playground — the ElevenLabs move, done honestly: product tabs
  * across the top, the ACTUAL app surface in the middle (Mark Bank board,
- * Topic Atlas feed, Command-Word Reflex), mode tabs along the bottom. Nothing
- * here is a mock-up; every surface is the same component the app renders,
- * running signed out.
+ * Paper Trail, Topic Atlas feed, the timetable, Command-Word Reflex, Points
+ * Passport, Future Finder), mode tabs along the bottom. Nothing here is a
+ * mock-up; every surface is the same component the app renders, running
+ * signed out. Three subjects are open; everything else shows a lock.
  */
 
 import React, { useEffect, useRef, useState } from 'react';
@@ -15,31 +16,41 @@ import { AnimatePresence, MotionDiv, useReducedMotion } from '../../Motion';
 import { COPY, type PlaygroundTabId } from '../copy';
 import { Button, TextTabs } from '../primitives';
 import { APP_URL, FONT, L } from '../theme';
+import type { GlassProps } from '../glass/GlassStage';
 import MarkBankGlass, { MARKBANK_SUBJECTS_LIVE } from '../glass/MarkBankGlass';
+import PaperTrailGlass, { PAPERTRAIL_MODES_LIVE } from '../glass/PaperTrailGlass';
 import AtlasGlass, { ATLAS_TOPICS_LIVE } from '../glass/AtlasGlass';
+import PlannerGlass, { PLANNER_MODES_LIVE } from '../glass/PlannerGlass';
 import ReflexGlass, { REFLEX_SUBJECTS_LIVE } from '../glass/ReflexGlass';
+import PassportGlass, { PASSPORT_MODES_LIVE } from '../glass/PassportGlass';
+import FutureFinderGlass, { FUTUREFINDER_MODES_LIVE } from '../glass/FutureFinderGlass';
+import { DEMO_EVENT, openDemo, type DemoEventDetail } from '../glass/demoEvent';
+
+export { openDemo };
 
 const SUBTABS: Record<PlaygroundTabId, { id: string; label: string }[]> = {
   markbank: MARKBANK_SUBJECTS_LIVE,
+  papertrail: PAPERTRAIL_MODES_LIVE,
   atlas: ATLAS_TOPICS_LIVE,
+  planner: PLANNER_MODES_LIVE,
   reflex: REFLEX_SUBJECTS_LIVE,
+  passport: PASSPORT_MODES_LIVE,
+  futurefinder: FUTUREFINDER_MODES_LIVE,
 };
 
-const GLASS: Record<PlaygroundTabId, React.FC<{ sub: string; active: boolean }>> = {
+const GLASS: Record<PlaygroundTabId, React.FC<GlassProps>> = {
   markbank: MarkBankGlass,
+  papertrail: PaperTrailGlass,
   atlas: AtlasGlass,
+  planner: PlannerGlass,
   reflex: ReflexGlass,
+  passport: PassportGlass,
+  futurefinder: FutureFinderGlass,
 };
 
-const DEMO_EVENT = 'landing:demo';
-interface DemoEventDetail { demo: PlaygroundTabId; mode?: string }
-
-/** Ask the playground to open a product (and optionally a mode) and scroll to it. Used by chapter "Try it" links. */
-export const openDemo = (demo: PlaygroundTabId, mode?: string) => {
-  window.dispatchEvent(new CustomEvent<DemoEventDetail>(DEMO_EVENT, { detail: { demo, mode } }));
-};
-
-const isTab = (v: string | null): v is PlaygroundTabId => v === 'markbank' || v === 'atlas' || v === 'reflex';
+const TAB_IDS = COPY.playground.tabs.map(t => t.id as PlaygroundTabId);
+const isTab = (v: string | null): v is PlaygroundTabId => !!v && (TAB_IDS as string[]).includes(v);
+const firstMode = (id: PlaygroundTabId) => SUBTABS[id][0]?.id ?? '';
 
 const Playground: React.FC = () => {
   const reduce = useReducedMotion();
@@ -50,11 +61,7 @@ const Playground: React.FC = () => {
   const [subs, setSubs] = useState<Record<PlaygroundTabId, string>>(() => {
     const p = new URLSearchParams(window.location.search);
     const wanted = p.get('demo'); const mode = p.get('mode');
-    const base: Record<PlaygroundTabId, string> = {
-      markbank: MARKBANK_SUBJECTS_LIVE[0].id,
-      atlas: ATLAS_TOPICS_LIVE[0].id,
-      reflex: REFLEX_SUBJECTS_LIVE[0].id,
-    };
+    const base = Object.fromEntries(TAB_IDS.map(id => [id, firstMode(id)])) as Record<PlaygroundTabId, string>;
     if (isTab(wanted) && mode && SUBTABS[wanted].some(s => s.id === mode)) base[wanted] = mode;
     return base;
   });
@@ -115,15 +122,17 @@ const Playground: React.FC = () => {
         </div>
 
         {/* Mode tabs + hint */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-6 px-3 sm:px-5 pb-2 sm:pb-0" style={{ borderTop: `1px solid ${L.hairline}` }}>
-          <TextTabs
-            ariaLabel={`${meta.label} modes`}
-            items={SUBTABS[tab]}
-            active={subs[tab]}
-            onChange={id => setSubs(s => ({ ...s, [tab]: id }))}
-            size="sm"
-            className="landing-strip"
-          />
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-6 px-3 sm:px-5 pb-2 sm:pb-0" style={{ borderTop: `1px solid ${L.hairline}`, minHeight: 44 }}>
+          {SUBTABS[tab].length > 0 ? (
+            <TextTabs
+              ariaLabel={`${meta.label} modes`}
+              items={SUBTABS[tab]}
+              active={subs[tab]}
+              onChange={id => setSubs(s => ({ ...s, [tab]: id }))}
+              size="sm"
+              className="landing-strip"
+            />
+          ) : <span />}
           <p className="m-0 sm:text-right" style={{ fontFamily: FONT.sans, fontSize: 13, color: L.faint, lineHeight: 1.4, padding: '6px 0' }}>{meta.hint}</p>
         </div>
       </div>
