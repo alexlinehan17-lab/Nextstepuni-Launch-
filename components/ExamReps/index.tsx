@@ -277,7 +277,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
       type="button"
       onClick={() => setShowPicker(true)}
       className="w-full flex items-center gap-2 mb-4 px-3 py-1.5 rounded-lg text-left transition-colors hover:bg-[#EDEBE8]"
-      style={{ backgroundColor: '#F9F9F7' }}
+      style={{ backgroundColor: '#FFFFFF' }}
     >
       <span className="text-[11px] font-semibold text-[#7a7068] truncate flex-1">
         {selSubject?.name} · {LEVEL_LABEL[sel.level] ?? sel.level} · {selTopic?.title ?? '—'}
@@ -375,7 +375,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
         ))}
 
         {card.answerKind === 'paper' ? (
-          <div className="rounded-xl border-2 border-dashed p-5 mb-5 text-center" style={{ borderColor: '#d0cdc8', backgroundColor: '#F9F9F7' }}>
+          <div className="rounded-xl border-2 border-dashed p-5 mb-5 text-center" style={{ borderColor: '#d0cdc8', backgroundColor: '#FFFFFF' }}>
             <p className="text-sm font-semibold text-[#1A1A1A] dark:text-zinc-200">Grab a piece of paper for this one.</p>
             <p className="text-xs text-[#7a7068] dark:text-zinc-400 mt-1">
               Work it out on paper as you would in the exam, then tap <span className="font-semibold">Mark it</span> when you’re ready.
@@ -406,7 +406,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
         ) : (
           <>
             <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-zinc-400 mb-2">Your answer</p>
-            <div className="rounded-xl p-3 mb-5 text-sm leading-relaxed whitespace-pre-wrap max-h-32 overflow-y-auto" style={{ backgroundColor: '#F9F9F7', color: '#5a544e' }}>
+            <div className="rounded-xl p-3 mb-5 text-sm leading-relaxed whitespace-pre-wrap max-h-32 overflow-y-auto" style={{ backgroundColor: '#FFFFFF', color: '#5a544e' }}>
               {answer.trim() || <span className="italic text-zinc-400">(left blank)</span>}
             </div>
           </>
@@ -429,7 +429,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
                 className="rounded-xl border-2 p-3 transition-colors"
                 style={{
                   borderColor: had === true ? COLORS.success : had === false ? '#d0cdc8' : COLORS.border,
-                  backgroundColor: had === true ? COLORS.successTint : had === false ? '#F9F9F7' : '#FFFFFF',
+                  backgroundColor: had === true ? COLORS.successTint : had === false ? '#FFFFFF' : '#FFFFFF',
                 }}
               >
                 <div className="flex items-start justify-between gap-3">
@@ -519,7 +519,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
         {card.lesson.source}
       </span>
 
-      <div className="rounded-xl p-4 mb-5" style={{ backgroundColor: '#F9F9F7' }}>
+      <div className="rounded-xl p-4 mb-5" style={{ backgroundColor: '#FFFFFF' }}>
         <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">
           You said <span className="font-bold">{confidence}</span> — you captured{' '}
           <span className="font-bold" style={{ color: COLORS.success }}>{derived.captured}</span> of {derived.totalMarks} marks.

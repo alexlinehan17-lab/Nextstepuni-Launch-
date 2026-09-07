@@ -110,7 +110,7 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
                       className="rounded-xl border-2 px-3 py-2 text-sm font-semibold transition-colors text-left"
                       style={{
                         borderColor: has ? COLORS.border : '#e0ddd8',
-                        backgroundColor: has ? '#FFFFFF' : '#F9F9F7',
+                        backgroundColor: has ? '#FFFFFF' : '#FFFFFF',
                         color: has ? '#1A1A1A' : '#9e9186',
                         boxShadow: has ? `2px 2px 0 0 ${COLORS.border}` : 'none',
                       }}
@@ -164,7 +164,7 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
           .filter(x => x.subs.length > 0);
         if (visibleStrands.length === 0) {
           return (
-            <div className="rounded-xl p-4 text-center" style={{ backgroundColor: '#F9F9F7' }}>
+            <div className="rounded-xl p-4 text-center" style={{ backgroundColor: '#FFFFFF' }}>
               <p className="text-sm text-[#7a7068]">
                 {subjectHasAny
                   ? `No reps at ${LEVEL_LABEL[level] ?? level} level yet — try the other level.`

@@ -121,7 +121,7 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
             transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-            className="bg-[#FDF8F0] dark:bg-zinc-900 rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] shadow-[5px_5px_0_0_#383838] max-w-md w-full p-6"
+            className="bg-white dark:bg-zinc-900 rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] shadow-[5px_5px_0_0_#383838] max-w-md w-full p-6"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Close button */}
@@ -154,7 +154,7 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
                   <button
                     onClick={handleBumpConfirm}
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
+                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
                   >
                     {isSubmitting ? 'Saving…' : `Yes, I'm in ${yearGroupLabel(action.next)}`}
                     {!isSubmitting && <ArrowRight size={14} />}
@@ -184,7 +184,7 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
                   <button
                     onClick={() => handleSeniorPick('TY')}
                     disabled={isSubmitting}
-                    className="text-left px-4 py-4 rounded-2xl border-2 border-[#1A1A1A] bg-[#FDF8F0] text-[#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
+                    className="text-left px-4 py-4 rounded-2xl border-2 border-[#1A1A1A] bg-white text-[#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
                   >
                     <p className="font-bold mb-1">Transition Year (4th)</p>
                     <p className="text-xs text-[#78716C]">
@@ -194,7 +194,7 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
                   <button
                     onClick={() => handleSeniorPick('5th')}
                     disabled={isSubmitting}
-                    className="text-left px-4 py-4 rounded-2xl border-2 border-[#1A1A1A] bg-[#FDF8F0] text-[#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
+                    className="text-left px-4 py-4 rounded-2xl border-2 border-[#1A1A1A] bg-white text-[#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
                   >
                     <p className="font-bold mb-1">Straight to 5th Year</p>
                     <p className="text-xs text-[#78716C]">
@@ -230,7 +230,7 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
                   <button
                     onClick={close}
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
+                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150"
                   >
                     Not yet
                   </button>

@@ -320,7 +320,7 @@ export const PersonalStory = ({ children, name, role, junior }: PersonalStoryPro
     transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
     className="my-14"
   >
-    <div className="relative rounded-2xl bg-[#FAF7F4] dark:bg-zinc-800/60 px-8 py-7 md:px-10 md:py-9">
+    <div className="relative rounded-2xl bg-white dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 px-8 py-7 md:px-10 md:py-9">
       <div className="absolute top-4 right-6 pointer-events-none" style={{ fontSize: 72, lineHeight: 1, fontFamily: 'Georgia, serif', color: 'rgba(0,0,0,0.04)' }}>
         &rdquo;
       </div>

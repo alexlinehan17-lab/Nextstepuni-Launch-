@@ -50,7 +50,7 @@ const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 // ─── Design tokens ──────────────────────────────────────────────────────────
 
 const CARD_STYLE: React.CSSProperties = {
-  backgroundColor: '#FAF7F4',
+  backgroundColor: '#FFFFFF',
   border: '0.5px solid rgba(0,0,0,0.07)',
   borderRadius: 12,
   padding: 20,
@@ -2007,7 +2007,7 @@ function DailyActivityChart({
                 width: 9,
                 height: 9,
                 borderRadius: '50%',
-                backgroundColor: '#FAF7F4',
+                backgroundColor: '#FFFFFF',
                 border: `2px solid ${ACCENT}`,
                 boxShadow: '0 0 0 3px rgba(242,107,31,0.1)',
               }}

@@ -21,7 +21,7 @@ const CareerScene: React.FC<SceneProps> = ({ unlockedMilestones }) => {
   return (
     <group>
       {/* Ground plane */}
-      <Ground color={COLORS.cream} size={[12, 10]} />
+      <Ground color="#FFFFFF" size={[12, 10]} />
 
       {/* Workshop room — wide industrial space */}
       <Room

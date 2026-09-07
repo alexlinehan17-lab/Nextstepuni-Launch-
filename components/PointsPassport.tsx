@@ -351,21 +351,21 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
       {activeTab !== 'planner' && <>
       {/* One compact points story on phones; three scan-friendly cards once
           there is enough width for them to breathe. */}
-      <div className="grid grid-cols-3 rounded-xl border border-[var(--outline-soft)] bg-[#FAF7F4] p-4 dark:bg-zinc-900 sm:gap-3 sm:border-0 sm:bg-transparent sm:p-0 dark:sm:bg-transparent">
+      <div className="grid grid-cols-3 rounded-xl border border-[var(--outline-soft)] bg-white p-4 dark:bg-zinc-900 sm:gap-3 sm:border-0 sm:bg-transparent sm:p-0 dark:sm:bg-transparent">
         {/* Design system: white/cream cards only — the previous green "Target"
             and amber "Gap" coloured surfaces are banned. Accent marks the goal;
             current + gap are neutral facts. */}
-        <div className="min-w-0 px-2 first:pl-0 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-[#FAF7F4] sm:p-4 sm:dark:bg-zinc-900">
+        <div className="min-w-0 px-2 first:pl-0 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-white sm:p-4 sm:dark:bg-zinc-900">
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Current</p>
           <span className="font-apercu text-2xl font-black text-[#1a1a1a] dark:text-white sm:text-3xl">{currentPoints}</span>
           <span className="ml-0.5 text-[10px] text-[#9A9590] dark:text-zinc-500 sm:ml-1 sm:text-sm">/625</span>
         </div>
-        <div className="min-w-0 border-l border-[var(--outline-soft)] px-3 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-[#FAF7F4] sm:p-4 sm:dark:bg-zinc-900">
+        <div className="min-w-0 border-l border-[var(--outline-soft)] px-3 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-white sm:p-4 sm:dark:bg-zinc-900">
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Target</p>
           <span className="font-apercu text-2xl font-black sm:text-3xl" style={{ color: COLORS.accent }}>{targetPoints}</span>
           <span className="ml-0.5 text-[10px] text-[#9A9590] dark:text-zinc-500 sm:ml-1 sm:text-sm">/625</span>
         </div>
-        <div className="min-w-0 border-l border-[var(--outline-soft)] pl-3 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-[#FAF7F4] sm:p-4 sm:dark:bg-zinc-900">
+        <div className="min-w-0 border-l border-[var(--outline-soft)] pl-3 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-white sm:p-4 sm:dark:bg-zinc-900">
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Gap</p>
           <span className="font-apercu text-2xl font-black text-[#1a1a1a] dark:text-white sm:text-3xl">
             {targetPoints - currentPoints > 0 ? '+' : ''}{targetPoints - currentPoints}
@@ -438,7 +438,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                   const targetPts = getPointsForGrade(sub.targetGrade, isMaths);
                   const gap = targetPts - currentPts;
                   return (
-                    <div key={sub.subjectName} className="flex items-center gap-3 p-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                    <div key={sub.subjectName} className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                       <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getDot(sub.subjectName)}`} />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 truncate">{sub.subjectName}</p>
@@ -460,7 +460,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
 
             {/* CAO Simulator insights (Connection 4: CAO Simulator → Points Passport) */}
             {caoData && caoData.whatIfScenarios && caoData.whatIfScenarios.length > 0 && (
-              <div className="rounded-xl p-4 space-y-2 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+              <div className="rounded-xl p-4 space-y-2 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                 <p className="text-[10px] font-bold uppercase tracking-widest" style={{ color: COLORS.accent }}>From Your Simulator</p>
                 {caoData.whatIfScenarios.slice(0, 3).map((s: any, i: number) => (
                   <div key={i} className="flex items-center justify-between text-xs">
@@ -565,7 +565,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                   Recorded Mocks
                 </p>
                 {mockResults.map((mock) => (
-                  <div key={mock.id} className="flex items-center gap-3 p-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+                  <div key={mock.id} className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
                     <Calendar size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{mock.label}</p>
@@ -695,7 +695,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             className="space-y-5"
           >
             {/* Honesty framing: deltas compare against the student's own mocks */}
-            <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+            <div className="rounded-xl p-4 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
               <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Scenario Runway</p>
               <p className="text-xs leading-relaxed mt-1 text-zinc-600 dark:text-zinc-400">
                 Sketch a Safe, Target and Stretch grade set and compare them side by side.
@@ -706,7 +706,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             </div>
 
             {/* Baseline strip */}
-            <div className="flex items-center gap-3 p-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+            <div className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
               <TrendingUp size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
               <p className="flex-1 min-w-0 text-xs text-zinc-600 dark:text-zinc-400 truncate">
                 {scenarioBaseline.isMock

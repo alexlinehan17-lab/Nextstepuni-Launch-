@@ -30,8 +30,6 @@ export const COLORS = {
   success: '#3A8D5F',
   successTint: '#E8F2EC',
   successDarkText: '#1F5F3E',
-  cream: '#FDF8F0',
-  creamSubtle: '#F9F9F7',
   border: '#1A1A1A',
 } as const;
 
