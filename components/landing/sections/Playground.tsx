@@ -92,10 +92,14 @@ const Playground: React.FC = () => {
     <div id="playground" style={{ scrollMarginTop: 90 }}>
       <div className="flex items-end justify-between gap-4 mb-4">
         <p className="m-0" style={{ fontFamily: FONT.sans, fontSize: 15, fontWeight: 600, color: L.ink, lineHeight: 1.4 }}>{COPY.playground.eyebrow}</p>
+        <span className="inline-flex items-center gap-2 shrink-0" style={{ fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: L.faint }}>
+          <span aria-hidden="true" className="landing-live-dot" style={{ width: 7, height: 7, borderRadius: 999, background: L.orange, display: 'inline-block' }} />
+          {COPY.playground.live}
+        </span>
       </div>
       <div style={{ background: L.paper, border: `1.5px solid ${L.edge}`, borderRadius: 22, overflow: 'hidden' }}>
         {/* Product tabs + the live mark */}
-        <div className="flex items-center justify-between gap-4 px-3 sm:px-5" style={{ borderBottom: `1px solid ${L.hairline}` }}>
+        <div className="flex items-center px-3 sm:px-5" style={{ borderBottom: `1px solid ${L.hairline}` }}>
           <TextTabs
             ariaLabel="Product"
             items={COPY.playground.tabs.map(t => ({ id: t.id, label: t.label }))}
@@ -104,10 +108,6 @@ const Playground: React.FC = () => {
             className="landing-strip"
             size="md"
           />
-          <span className="hidden 2xl:inline-flex items-center gap-2 shrink-0" style={{ fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: L.faint }}>
-            <span aria-hidden="true" className="landing-live-dot" style={{ width: 7, height: 7, borderRadius: 999, background: L.orange, display: 'inline-block' }} />
-            {COPY.playground.live}
-          </span>
         </div>
 
         {/* The window into the app */}
