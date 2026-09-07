@@ -44,3 +44,9 @@
 
 /* Starguy hides when he would be too small to read. */
 @media (max-width: 639px) { .landing-starguy-lg { display: none !important; } }
+
+/* The looking glass: the real app inside the page. */
+.landing-glass-pad { padding: 8px 20px 40px; min-height: 100%; }
+.landing-glass button:has(.lucide-link-2) { display: none !important; }  /* the Atlas Share button falls back to window.prompt — not on a marketing page */
+.landing-live-dot { animation: landing-pulse 1.8s ease-in-out infinite; }
+@keyframes landing-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.8); } }

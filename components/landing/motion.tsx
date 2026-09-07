@@ -194,3 +194,95 @@ export const ScriptedCursor: React.FC<{ steps: CursorStep[]; playing: boolean; l
     </MotionDiv>
   );
 };
+
+/** Counts a formatted number up from zero once it scrolls into view. "10,495" → 0 … 10,495. */
+export const CountUp: React.FC<{ value: string; duration?: number; className?: string; style?: React.CSSProperties }> = ({ value, duration = 1400, className = '', style }) => {
+  const reduce = useReducedMotion();
+  const ref = useRef<HTMLSpanElement>(null);
+  const seen = useInView(ref, { once: true, margin: '-10% 0px' as never });
+  const target = Number(value.replace(/[^\d.]/g, ''));
+  const suffix = value.replace(/^[\d.,]+/, '');
+  const [shown, setShown] = useState(reduce ? target : 0);
+  useEffect(() => {
+    if (reduce || !seen || !Number.isFinite(target)) { setShown(target); return; }
+    let raf = 0; const t0 = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min(1, (now - t0) / duration);
+      const eased = 1 - Math.pow(1 - p, 3);
+      setShown(Math.round(target * eased));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [seen, reduce, target, duration]);
+  return <span ref={ref} className={className} style={style}>{shown.toLocaleString('en-IE')}{suffix}</span>;
+};
+
+interface Star { id: number; x: number; y: number; size: number; rot: number }
+
+/**
+ * Tiny orange stars fall away from the pointer as it crosses the hero — the
+ * Shopify Design ASCII trail, in starguy's own material. Pointer only; nothing
+ * on touch or under reduced motion.
+ */
+export const StarTrail: React.FC<{ hostRef: React.RefObject<HTMLElement | null> }> = ({ hostRef }) => {
+  const reduce = useReducedMotion();
+  const [stars, setStars] = useState<Star[]>([]);
+  const last = useRef(0); const seq = useRef(0);
+  useEffect(() => {
+    const host = hostRef.current;
+    if (!host || reduce) return;
+    const onMove = (e: PointerEvent) => {
+      if (e.pointerType !== 'mouse') return;
+      const now = performance.now();
+      if (now - last.current < 45) return;
+      last.current = now;
+      const r = host.getBoundingClientRect();
+      const star: Star = { id: seq.current++, x: e.clientX - r.left, y: e.clientY - r.top, size: 8 + Math.random() * 8, rot: Math.random() * 60 - 30 };
+      setStars(s => [...s.slice(-28), star]);
+      window.setTimeout(() => setStars(s => s.filter(k => k.id !== star.id)), 900);
+    };
+    host.addEventListener('pointermove', onMove);
+    return () => host.removeEventListener('pointermove', onMove);
+  }, [hostRef, reduce]);
+  if (reduce) return null;
+  return (
+    <div aria-hidden="true" style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden', zIndex: 2 }}>
+      {stars.map(s => (
+        <MotionSpan
+          key={s.id}
+          initial={{ opacity: 0.95, scale: 1, x: s.x, y: s.y, rotate: s.rot }}
+          animate={{ opacity: 0, scale: 0.4, y: s.y + 22, rotate: s.rot + 40 }}
+          transition={{ duration: 0.85, ease: 'easeOut' }}
+          style={{ position: 'absolute', left: 0, top: 0, width: s.size, height: s.size, display: 'block' }}
+        >
+          <svg viewBox="0 0 24 24" width={s.size} height={s.size} aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z" fill={L.orange} stroke={L.ink} strokeWidth="1.4" strokeLinejoin="round" /></svg>
+        </MotionSpan>
+      ))}
+    </div>
+  );
+};
+
+/** A word that builds letter by letter the first time it scrolls into view, then stays. */
+export const LetterBuild: React.FC<{ text: string; stagger?: number; className?: string }> = ({ text, stagger = 0.035, className = '' }) => {
+  const reduce = useReducedMotion();
+  const ref = useRef<HTMLSpanElement>(null);
+  const seen = useInView(ref, { once: true, margin: '-8% 0px' as never });
+  if (reduce) return <span className={className}>{text}</span>;
+  return (
+    <span ref={ref} className={className} aria-label={text} style={{ display: 'inline-block', whiteSpace: 'pre' }}>
+      {Array.from(text).map((ch, i) => (
+        <MotionSpan
+          key={i}
+          aria-hidden="true"
+          style={{ display: 'inline-block' }}
+          initial={{ opacity: 0, y: '0.28em', rotate: -3 }}
+          animate={seen ? { opacity: 1, y: 0, rotate: 0 } : undefined}
+          transition={{ delay: i * stagger, duration: 0.42, ease: [0.2, 0.8, 0.2, 1] }}
+        >
+          {ch === ' ' ? ' ' : ch}
+        </MotionSpan>
+      ))}
+    </span>
+  );
+};

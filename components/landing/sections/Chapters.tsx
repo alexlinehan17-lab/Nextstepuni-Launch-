@@ -12,19 +12,20 @@
  */
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { useReducedMotion } from '../../Motion';
+import { MotionDiv, useReducedMotion } from '../../Motion';
 import { COPY, type Chapter, type ChapterId, type PlaygroundTabId } from '../copy';
 import { CAPTURES } from '../demoData';
-import { CollapseWord, Reveal } from '../motion';
+import { CollapseWord, LetterBuild, Reveal } from '../motion';
 import { Body, Button, Container, Display, DropLine, Eyebrow, Frame, Rule, Starguy } from '../primitives';
 import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
+import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
 
 const CHAPTERS = COPY.chapters.items;
 /** Chapters whose giant word Starguy stands at the end of. */
 const HANGS: ReadonlySet<ChapterId> = new Set<ChapterId>(['markbank', 'planner']);
 /** Chapters with a matching playground demo (papertrail and lab have none). Ids map 1:1. */
-const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', atlas: 'atlas', planner: 'planner', launchpad: 'launchpad' };
+const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', atlas: 'atlas', launchpad: 'reflex' };
 
 const anchor = (id: ChapterId): string => `#chapter-${id}`;
 
@@ -38,10 +39,39 @@ const RailHeading: React.FC<{ className?: string }> = ({ className = '' }) => (
   </div>
 );
 
+/** Starguy walks the rail: he stands beside whichever chapter is on screen and hops to the next as it arrives. */
+const StarguyWalker: React.FC<{ active: ChapterId; listRef: React.RefObject<HTMLOListElement | null> }> = ({ active, listRef }) => {
+  const reduce = useReducedMotion();
+  const [top, setTop] = useState(0);
+  useEffect(() => {
+    const list = listRef.current;
+    if (!list) return;
+    const row = list.querySelector<HTMLElement>('[aria-current="true"]');
+    if (!row) return;
+    const lr = list.getBoundingClientRect(); const rr = row.getBoundingClientRect();
+    setTop(rr.top - lr.top + rr.height / 2 - 20);
+  }, [active, listRef]);
+  return (
+    <MotionDiv
+      aria-hidden="true"
+      className="hidden lg:block"
+      initial={false}
+      animate={reduce ? { top } : { top, y: [0, -10, 0] }}
+      transition={{ top: { type: 'spring', stiffness: 260, damping: 26 }, y: { duration: 0.45, ease: 'easeOut' } }}
+      style={{ position: 'absolute', left: -46, width: 34, pointerEvents: 'none' }}
+    >
+      <Starguy size={0} style={{ width: 34, height: 'auto' }} />
+    </MotionDiv>
+  );
+};
+
 /** Desktop rail: a vertical table of contents. */
-const Rail: React.FC<{ active: ChapterId }> = ({ active }) => (
-  <nav aria-label={COPY.chapters.eyebrow}>
-    <ol className="flex flex-col" style={{ listStyle: 'none', margin: 0, padding: 0, borderTop: `1px solid ${L.hairline}` }}>
+const Rail: React.FC<{ active: ChapterId }> = ({ active }) => {
+  const listRef = useRef<HTMLOListElement>(null);
+  return (
+  <nav aria-label={COPY.chapters.eyebrow} style={{ position: 'relative' }}>
+    <StarguyWalker active={active} listRef={listRef} />
+    <ol ref={listRef} className="flex flex-col" style={{ listStyle: 'none', margin: 0, padding: 0, borderTop: `1px solid ${L.hairline}` }}>
       {CHAPTERS.map(ch => {
         const on = ch.id === active;
         return (
@@ -60,7 +90,8 @@ const Rail: React.FC<{ active: ChapterId }> = ({ active }) => (
       })}
     </ol>
   </nav>
-);
+  );
+};
 
 /** Phone rail: a sticky, horizontally scrolling strip under the nav. */
 const Strip: React.FC<{ active: ChapterId }> = ({ active }) => {
@@ -111,14 +142,14 @@ const Strip: React.FC<{ active: ChapterId }> = ({ active }) => {
   );
 };
 
-/** The screenshot, or a labelled hairline-grid placeholder until Alex supplies one. */
+/** A supplied screenshot, else a live glimpse of the real surface, else a labelled placeholder. */
 const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
   const src = CAPTURES[chapter.id];
   return (
     <Frame title={chapter.frameLabel} meta={chapter.numeral}>
       {src
         ? <img src={src} alt={chapter.frameLabel} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto' }} />
-        : (
+        : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} height={chapter.id === "launchpad" ? 460 : 640} /> : (
           <div
             role="img"
             aria-label={COPY.chapters.placeholder}
@@ -153,7 +184,7 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
         {/* The word row clips sideways so Starguy, hung past the word's end, never widens the page. */}
         <Display size="chapter" as="h3" id={titleId} style={{ overflowWrap: 'anywhere', overflowX: 'clip' }}>
           <span style={{ position: 'relative', display: 'inline-block', maxWidth: '100%' }}>
-            {chapter.word}
+            <LetterBuild text={chapter.word} />
             {HANGS.has(chapter.id) && (
               <span
                 aria-hidden="true"
