@@ -13,7 +13,7 @@
  */
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { useInView, useScroll, useTransform } from 'framer-motion';
+import { useInView, useMotionTemplate, useScroll, useTransform } from 'framer-motion';
 import { MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import { L } from './theme';
 
@@ -104,13 +104,19 @@ export const CollapseWord: React.FC<{ children: React.ReactNode; className?: str
   }, []);
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start 92%', 'end 6%'] });
-  const scaleY = useTransform(scrollYProgress, [0, 0.7, 1], [1, 1, 0.1]);
+  // The word folds AND hardens: as it compresses, Source Serif's optical-size
+  // axis walks from the display cut (60) to small print (8) and the ink thins
+  // from 600 to 400 — the fold reads as type changing size, not a rubber sheet.
+  const scaleY = useTransform(scrollYProgress, [0, 0.7, 1], [1, 1, 0.45]);
   const opacity = useTransform(scrollYProgress, [0, 0.7, 1], [1, 1, 0]);
   const y = useTransform(scrollYProgress, [0, 0.7, 1], ['0em', '0em', '-0.2em']);
+  const opsz = useTransform(scrollYProgress, [0, 0.7, 1], [60, 60, 8]);
+  const wght = useTransform(scrollYProgress, [0, 0.7, 1], [600, 600, 400]);
+  const fontVariationSettings = useMotionTemplate`'opsz' ${opsz}, 'wght' ${wght}`;
   if (reduce || !wide) return <div ref={ref} className={className} style={style}>{children}</div>;
   return (
     <div ref={ref} className={className} style={style}>
-      <MotionDiv style={{ scaleY, opacity, y, transformOrigin: '50% 100%', willChange: 'transform, opacity' }}>{children}</MotionDiv>
+      <MotionDiv style={{ scaleY, opacity, y, fontVariationSettings, fontOpticalSizing: 'none', transformOrigin: '50% 100%' }}>{children}</MotionDiv>
     </div>
   );
 };
@@ -326,19 +332,26 @@ export const LineRise: React.FC<{
   /** Rendered inside the LAST word's box, absolutely positioned — for a character hanging off the headline. */
   tail?: React.ReactNode;
   delay?: number;
-}> = ({ text, accentWord, className = '', style, as = 'h1', tail, delay = 0.1 }) => {
+  /** Wait until the reader reaches it (the footer), rather than rising on mount (the hero). */
+  inView?: boolean;
+  /** Room above the line inside the mask — for a tail taller than the type. */
+  padTop?: string;
+}> = ({ text, accentWord, className = '', style, as = 'h1', tail, delay = 0.1, inView = false, padTop = '0.08em' }) => {
   const reduce = useReducedMotion();
+  const ref = useRef<HTMLElement>(null);
+  const seen = useInView(ref, { once: true, margin: '-15% 0px' as never });
+  const go = !inView || seen;
   const lines = useMemo(() => text.split('\n').map(l => l.split(' ').filter(Boolean)), [text]);
   const Tag = as;
   const lastLine = lines.length - 1;
   return (
-    <Tag className={className} style={style} aria-label={text.replace(/\n/g, ' ')}>
+    <Tag ref={ref as React.RefObject<never>} className={className} style={style} aria-label={text.replace(/\n/g, ' ')}>
       {lines.map((words, li) => (
-        <span key={li} aria-hidden="true" className="landing-line" style={{ display: 'block', overflow: 'hidden', paddingBottom: '0.28em', marginBottom: '-0.28em', paddingTop: '0.08em', marginTop: '-0.08em' }}>
+        <span key={li} aria-hidden="true" className="landing-line" style={{ display: 'block', overflow: 'hidden', paddingBottom: '0.28em', marginBottom: '-0.28em', paddingTop: padTop, marginTop: `-${padTop}` }}>
           <MotionSpan
             style={{ display: 'block', willChange: 'transform' }}
             initial={reduce ? false : { y: '120%', opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            animate={go ? { y: 0, opacity: 1 } : undefined}
             transition={{ delay: delay + li * 0.09, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             {words.map((w, wi) => {

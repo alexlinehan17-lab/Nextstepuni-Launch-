@@ -7,7 +7,7 @@
  * landing-dev.tsx while it is dev-only.
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Nav from './sections/Nav';
 import Hero from './sections/Hero';
 import Numbers from './sections/Numbers';
@@ -16,8 +16,11 @@ import HowItWorks from './sections/HowItWorks';
 import Subjects from './sections/Subjects';
 import Schools from './sections/Schools';
 import Footer from './sections/Footer';
+import { setupSmoothScroll } from './scroll';
 
-const LandingPage: React.FC = () => (
+const LandingPage: React.FC = () => {
+  useEffect(() => setupSmoothScroll(), []);
+  return (
   <div className="landing-page">
     <Nav />
     <main>
@@ -30,6 +33,7 @@ const LandingPage: React.FC = () => (
     </main>
     <Footer />
   </div>
-);
+  );
+};
 
 export default LandingPage;

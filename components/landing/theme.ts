@@ -40,3 +40,6 @@ export const SPACE = { section: 'py-[72px] md:py-[128px]', sectionTight: 'py-[56
 export const APP_URL = '/?from=landing';
 /** There is no dedicated sign-in route: every path renders the login page when signed out. */
 export const APP_SIGNIN_URL = '/?from=landing';
+
+/** Weighted paper (Lenis). Flip to false to ship native scrolling; ?smooth=0 compares live. */
+export const SMOOTH_SCROLL = true;
