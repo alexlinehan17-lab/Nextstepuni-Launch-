@@ -58,57 +58,97 @@ export function getSubjectColor(name: string) {
   return SUBJECT_COLORS[name] || DEFAULT_COLOR;
 }
 
-export const SUBJECT_HEX_COLORS: Record<string, string> = {
-  'English': '#0984E3',
-  'Irish': '#00B894',
-  'Mathematics': '#2D3436',
-  'French': '#E84393',
-  'German': '#FDCB6E',
-  'Spanish': '#E17055',
-  'Italian': '#00CEC9',
-  'Japanese': '#A29BFE',
-  'Physics': '#74B9FF',
-  'Chemistry': '#55EFC4',
-  'Biology': '#00B894',
-  'Applied Mathematics': '#6C5CE7',
-  'Applied Maths': '#6C5CE7',
-  'Agricultural Science': '#BADC58',
-  'Computer Science': '#74B9FF',
-  'Accounting': '#FDCB6E',
-  'Business': '#0984E3',
-  'Economics': '#E67E22',
-  'History': '#D63031',
-  'Geography': '#00B894',
-  'Politics & Society': '#E84393',
-  'Religious Education': '#A29BFE',
-  'Home Economics': '#E17055',
-  'Music': '#FD79A8',
-  'Art': '#FF7675',
-  'Construction Studies': '#636E72',
-  'Engineering': '#636E72',
-  'Technology': '#636E72',
-  'Design & Communication Graphics': '#6C5CE7',
-  'Physical Education': '#D63031',
-  // ─── Junior Cycle-only hex entries (Phase 1) ───────────────────────────
-  'Science': '#16a34a',
-  'CSPE': '#9333ea',
-  'SPHE': '#e879f9',
-  'Business Studies': '#b45309',
-  'Materials Technology (Wood)': '#57534e',
-  'Metalwork': '#52525b',
-  'Graphics': '#4338ca',
-  'Classical Studies': '#7c3aed',
-  'Latin': '#475569',
+/**
+ * The subject palette: ten fills, all deep enough to carry WHITE text at
+ * WCAG AA (every one clears 5:1), spaced around the wheel so any six or
+ * seven a student takes read as different colours, and kept warm and inky
+ * so they sit with the brand's paper, ink and orange. Rust is the brand's
+ * own orange-text tone.
+ */
+export const SUBJECT_PALETTE = {
+  cobalt: '#2F52A8',
+  forest: '#2C7A4B',
+  violet: '#5B47C2',
+  teal: '#1E7A76',
+  rust: '#B84A0C',
+  brick: '#A8332E',
+  ochre: '#8A6508',
+  olive: '#5C6E1C',
+  raspberry: '#A82A5C',
+  plum: '#8A3B7A',
+} as const;
+
+export type SubjectPaletteName = keyof typeof SUBJECT_PALETTE;
+
+/** The one text colour that goes on every palette fill. */
+export const SUBJECT_FILL_INK = '#FFFFFF';
+
+/**
+ * Which of the ten each subject wears. The three everyone takes (English,
+ * Irish, Mathematics) own cobalt, forest and violet outright; the seven
+ * remaining fills are shared out so the usual combinations — the sciences
+ * together, the business trio, a language with anything — stay distinct.
+ */
+const SUBJECT_FILL_NAME: Record<string, SubjectPaletteName> = {
+  'English': 'cobalt',
+  'Irish': 'forest',
+  'Mathematics': 'violet',
+  'Applied Mathematics': 'plum',
+  'Applied Maths': 'plum',
+  'Biology': 'teal',
+  'Chemistry': 'rust',
+  'Physics': 'brick',
+  'Agricultural Science': 'olive',
+  'Ag Science': 'olive',
+  'French': 'raspberry',
+  'German': 'ochre',
+  'Spanish': 'plum',
+  'Italian': 'olive',
+  'Japanese': 'brick',
+  'Economics': 'ochre',
+  'Business': 'plum',
+  'Accounting': 'brick',
+  'Geography': 'olive',
+  'History': 'raspberry',
+  'Politics & Society': 'teal',
+  'Religious Education': 'plum',
+  'Classical Studies': 'rust',
+  'Home Economics': 'rust',
+  'Art': 'raspberry',
+  'Music': 'ochre',
+  'Physical Education': 'brick',
+  'Computer Science': 'teal',
+  'Construction Studies': 'olive',
+  'Engineering': 'brick',
+  'Technology': 'ochre',
+  'Design & Communication Graphics': 'plum',
+  'DCG': 'plum',
+  // Junior Cycle
+  'Science': 'teal',
+  'CSPE': 'plum',
+  'SPHE': 'raspberry',
+  'Business Studies': 'ochre',
+  'Materials Technology (Wood)': 'olive',
+  'Metalwork': 'brick',
+  'Graphics': 'rust',
+  'Latin': 'plum',
 };
 
-export function getSubjectHex(name: string): string {
-  return SUBJECT_HEX_COLORS[name] || '#a855f7';
+/** A subject's fill from the ten-colour palette; unknown subjects get plum. */
+export function getSubjectFill(name: string): string {
+  return SUBJECT_PALETTE[SUBJECT_FILL_NAME[name] ?? 'plum'];
 }
 
-const DISTINCT_PALETTE = [
-  '#0984E3', '#E84393', '#E67E22', '#6C5CE7', '#00B894',
-  '#D63031', '#FDCB6E', '#A29BFE', '#00CEC9', '#2D3436',
-];
+/** Kept for existing callers: the same ten-colour palette, by subject. */
+export const SUBJECT_HEX_COLORS: Record<string, string> = Object.fromEntries(
+  Object.entries(SUBJECT_FILL_NAME).map(([subject, fill]) => [subject, SUBJECT_PALETTE[fill]]),
+);
+
+export function getSubjectHex(name: string): string {
+  return getSubjectFill(name);
+}
+
+const DISTINCT_PALETTE = Object.values(SUBJECT_PALETTE);
 
 export function getDistinctSubjectHex(name: string, index: number): string {
   return SUBJECT_HEX_COLORS[name] || DISTINCT_PALETTE[index % DISTINCT_PALETTE.length];

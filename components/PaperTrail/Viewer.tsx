@@ -35,7 +35,7 @@ import {
   Repeat2,
   RotateCcw,
   SlidersHorizontal,
-  Sparkles,
+  BookOpenCheck,
   TrendingUp,
   X,
   ZoomIn,
@@ -65,6 +65,11 @@ import CropView from './CropView';
 import MobileQuestionTools from './MobileQuestionTools';
 import { questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
+
+/** The viewer's square ink buttons (option E): hairline, offset shadow, orange when on. */
+const E_BUTTON = 'inline-flex items-center gap-1.5 h-[34px] px-3 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold transition-[transform,box-shadow,background-color,color] duration-150 shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none';
+const E_BUTTON_OFF = 'bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100';
+const E_BUTTON_ON = 'bg-[#F26B1F] text-white';
 
 // Sleek glide shared with the GC dashboard student-view tray.
 const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
@@ -1077,12 +1082,9 @@ const Viewer: React.FC<ViewerProps> = ({
               onClick={toggleAnswers}
               aria-pressed={answersOn}
               aria-label="Show the marking scheme beside each question"
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
-                answersOn ? 'text-white' : 'text-[#F26B1F] bg-[#FDEEDF]'
-              }`}
-              style={answersOn ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
+              className={`${E_BUTTON} ${answersOn ? E_BUTTON_ON : E_BUTTON_OFF}`}
             >
-              <Sparkles size={14} /> <span className="hidden min-[360px]:inline">Answers</span>
+              <BookOpenCheck size={14} className="min-[360px]:hidden" /><span className="hidden min-[360px]:inline">Answers</span>
             </button>
           )}
           {side === 'paper' && (
@@ -1091,12 +1093,9 @@ const Viewer: React.FC<ViewerProps> = ({
                 onClick={() => setToolsOpen(o => !o)}
                 aria-expanded={toolsOpen}
                 aria-label="Study tools for this paper"
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
-                  activeToolCount > 0 ? 'text-white' : 'text-[#F26B1F] bg-[#FDEEDF]'
-                }`}
-                style={activeToolCount > 0 ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
+                className={`${E_BUTTON} ${activeToolCount > 0 ? E_BUTTON_ON : E_BUTTON_OFF}`}
               >
-                <SlidersHorizontal size={14} /> <span className="hidden min-[360px]:inline">Tools</span>
+                <SlidersHorizontal size={14} className="min-[360px]:hidden" /><span className="hidden min-[360px]:inline">Tools</span>
                 {activeToolCount > 0 && (
                   <span className="ml-0.5 min-w-[16px] h-4 px-1 inline-flex items-center justify-center rounded-full bg-white/25 text-[10px] tabular-nums">
                     {activeToolCount}
@@ -1112,7 +1111,7 @@ const Viewer: React.FC<ViewerProps> = ({
                     exit={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
                     transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
                     role="menu"
-                    className="absolute right-0 mt-2 w-64 z-[70] rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden"
+                    className="absolute right-0 mt-2 w-64 z-[70] rounded-md bg-white dark:bg-zinc-900 border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 shadow-[3px_3px_0_#1A1A1A] dark:shadow-[3px_3px_0_#E4E4E7] overflow-hidden"
                     style={{ transformOrigin: 'top right' }}
                   >
                     <p className="px-3.5 pt-3 pb-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
@@ -1120,7 +1119,7 @@ const Viewer: React.FC<ViewerProps> = ({
                     </p>
                     {answersUrl && (
                       <ToolRow
-                        icon={<Sparkles size={15} />}
+                        icon={<BookOpenCheck size={15} />}
                         title="Answers"
                         sub="Marking scheme beside each question"
                         on={answersOn}
@@ -2177,8 +2176,8 @@ const ToolRow: React.FC<{
     className="w-full flex items-center gap-3 px-3.5 py-2.5 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/60 transition-colors"
   >
     <span
-      className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
-      style={{ backgroundColor: on ? '#F26B1F' : '#FDEEDF', color: on ? '#fff' : '#F26B1F' }}
+      className="shrink-0 w-8 h-8 rounded-md flex items-center justify-center border-[1.5px] border-[#1A1A1A] dark:border-zinc-100"
+      style={{ backgroundColor: on ? '#F26B1F' : '#FFFFFF', color: on ? '#fff' : '#1A1A1A' }}
     >
       {busy ? <span className="w-3.5 h-3.5 rounded-full border-2 border-current/40 border-t-current animate-spin" /> : icon}
     </span>
