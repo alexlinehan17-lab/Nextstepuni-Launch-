@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck, FolderCheck } from 'lucide-react';
+import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck, FolderCheck, Images } from 'lucide-react';
 
 export type ToolIconKey =
   | 'meet-tools'
@@ -243,6 +243,19 @@ interface ToolIconBlobProps {
   size?: number;
   className?: string;
 }
+
+/** The same tool artwork without the Launchpad tile's coloured backdrop. */
+export type ToolArtworkKey = ToolIconKey | 'diagram-vault';
+
+const LINE_ART_TOOLS = new Set<ToolArtworkKey>(['journey', 'planner', 'war-room', 'catch-up-lane', 'future-finder']);
+
+export const ToolArtwork: React.FC<{ toolId: ToolArtworkKey; onDark?: boolean }> = ({ toolId, onDark = false }) => {
+  if (toolId === 'diagram-vault') return <Images strokeWidth={1.5} aria-hidden="true" />;
+  const cfg = TOOLS[toolId];
+  if (!cfg) return null;
+  if (cfg.icon) return <cfg.icon strokeWidth={1.5} aria-hidden="true" />;
+  return <img src={cfg.iconPath} alt="" draggable={false} className={onDark && LINE_ART_TOOLS.has(toolId) ? 'tool-artwork--light-ink' : undefined} />;
+};
 
 export const ToolIconBlob: React.FC<ToolIconBlobProps> = ({
   toolId,

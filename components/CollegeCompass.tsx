@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import { MotionDiv } from './Motion';
 import { COLORS } from '../design/tokens';
+import { ToolHero } from './ToolHero';
 import { type YearGroup } from './subjectData';
 import { useModal } from '../hooks/useModal';
 import { useCollegeCompass } from '../hooks/useCollegeCompass';
@@ -434,13 +435,9 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
   return (
     <div className="w-full max-w-6xl mx-auto pb-12">
       {/* ── Hero ── */}
-      <header className="pt-5 sm:pt-8 pb-6 sm:pb-8 border-b border-[var(--border-soft)]">
-        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-2xl">
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ink-secondary)]">{hero.eyebrow}</p>
-            <h1 className="mt-2 font-serif text-4xl sm:text-5xl font-bold tracking-[-0.035em] text-[var(--ink-primary)] leading-[0.95]">{hero.title}</h1>
-            <p className="mt-3 text-sm sm:text-base text-[var(--ink-secondary)] leading-relaxed max-w-xl">{hero.tagline}</p>
-          </div>
+      <div className="pt-5 sm:pt-8 pb-6 sm:pb-8 border-b border-[var(--border-soft)]">
+        <div className="flex flex-col gap-5">
+          <ToolHero toolId="college-compass" eyebrow={hero.eyebrow} title={hero.title} subtitle={hero.tagline} />
           <div className="flex flex-wrap items-center gap-2 md:justify-end">
             <span className="inline-flex items-center rounded-full border border-[var(--border-soft)] px-3 py-2 text-xs font-semibold text-[var(--ink-primary)]">
               {entryYear} entry
@@ -495,7 +492,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
             </div>
           </section>
         )}
-      </header>
+      </div>
 
       {/* ── One year, at a glance ── */}
       <section aria-labelledby="compass-timeline-heading" className="pt-6 sm:pt-8">

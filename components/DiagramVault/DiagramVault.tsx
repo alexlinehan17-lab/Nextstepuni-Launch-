@@ -11,7 +11,8 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, Image as ImageIcon, ChevronDown } from 'lucide-react';
+import { ArrowLeft, ChevronDown } from 'lucide-react';
+import { ToolHero } from '../ToolHero';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import {
   diagramSubjects,
@@ -154,15 +155,10 @@ const DiagramVault: React.FC<Props> = ({ studentSubjects = [] }) => {
     );
   }
 
-  // ── Level 0: subject picker (tool exit is handled by the zone's ToolHeader) ──
+  // ── Level 0: subject picker (tool exit is handled by Launchpad navigation) ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
-        <ImageIcon size={20} style={{ color: ACCENT }} /> Diagram Vault
-      </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
-        Every diagram, graph, map and chart that has come up in the exams — cropped straight from the paper and decoded. The one you have to draw or read for the marks, shown to you first.
-      </p>
+      <ToolHero toolId="diagram-vault" eyebrow="Understand · Exam diagrams" title="Diagram Vault" subtitle="Every diagram, graph, map and chart that has come up in the exams — cropped straight from the paper and decoded. The one you have to draw or read for the marks, shown to you first." className="mb-5" />
       {subjects.length === 0 ? (
         <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
           Exam diagrams are being added subject by subject — check back soon.
