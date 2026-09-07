@@ -104,7 +104,7 @@ const Playground: React.FC = () => {
             className="landing-strip"
             size="md"
           />
-          <span className="hidden sm:inline-flex items-center gap-2 shrink-0" style={{ fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: L.faint }}>
+          <span className="hidden 2xl:inline-flex items-center gap-2 shrink-0" style={{ fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: L.faint }}>
             <span aria-hidden="true" className="landing-live-dot" style={{ width: 7, height: 7, borderRadius: 999, background: L.orange, display: 'inline-block' }} />
             {COPY.playground.live}
           </span>
