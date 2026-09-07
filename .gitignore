@@ -63,3 +63,7 @@ android/keystore.properties
 examiner-reports/*/papers/*.pdf
 examiner-reports/*/schemes/*.pdf
 examiner-reports/*/supplements/
+
+# Landing-page reference recordings (44–414 MB each; GitHub rejects files over 100 MB).
+# They stay on the founder's Mac; the contact sheets and notes in design-references/landing/ are what is tracked.
+design-references/landing/*.mov

@@ -1,0 +1,46 @@
+/* Landing page — the few things inline styles cannot express: hover, press, focus, scrollbars. */
+.landing-page { background: #FFFFFF; color: #1A1A1A; overflow-x: clip; }
+.landing-page *:focus-visible { outline: 2px solid #B84A0C; outline-offset: 3px; border-radius: 4px; }
+
+.landing-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 0 0 #1A1A1A; }
+.landing-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 0 #1A1A1A; }
+.landing-ghost:hover span { transform: translateX(3px); }
+.landing-ghost span { display: inline-block; transition: transform 140ms ease; }
+.landing-tab:hover { color: #1A1A1A !important; }
+
+/* Rows that flip to solid ink on hover — Hermes' "the way the boxes highlight". Children inherit the colour. */
+.landing-hover-card { transition: background-color 120ms ease, color 120ms ease; }
+.landing-hover-card:hover { background-color: #1A1A1A; color: #FFFFFF; }
+.landing-hover-card:hover * { color: inherit !important; }
+.landing-hover-card:hover .landing-faint { opacity: 0.7; }
+
+/* Hide scrollbars on horizontal strips without killing scroll. */
+.landing-strip { scrollbar-width: none; -ms-overflow-style: none; }
+.landing-strip::-webkit-scrollbar { display: none; }
+
+/* Chapter rail link states. */
+.landing-rail a { color: #766A5F; text-decoration: none; transition: color 120ms ease; }
+.landing-rail a:hover { color: #1A1A1A; }
+.landing-rail a[aria-current="true"] { color: #1A1A1A; }
+
+/* Selection colour on the page. */
+.landing-page ::selection { background: #FDEEDF; color: #1A1A1A; }
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-page * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+/* Authored line breaks in headlines only apply once the line is wide enough to deserve them. */
+.landing-br { display: none; }
+@media (min-width: 1024px) { .landing-br { display: initial; } }
+
+/* Tab strips: tighter on phones so four product tabs fit, and a right-edge fade when the strip scrolls. */
+@media (max-width: 639px) {
+  .landing-tab-md { font-size: 14px !important; padding: 12px 9px !important; }
+  .landing-tab-sm { padding: 10px 9px !important; }
+  .landing-tabs-fade { position: absolute; top: 0; right: 0; bottom: 1px; width: 28px; pointer-events: none; background: linear-gradient(90deg, rgba(255,255,255,0), #FFFFFF); }
+}
+@media (min-width: 640px) { .landing-tabs-fade { display: none; } }
+
+/* Starguy hides when he would be too small to read. */
+@media (max-width: 639px) { .landing-starguy-lg { display: none !important; } }
