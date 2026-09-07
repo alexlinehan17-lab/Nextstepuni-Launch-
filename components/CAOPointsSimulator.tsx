@@ -7,7 +7,7 @@ import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
-  Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Info, Compass,
+  Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Compass,
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade, type Level,
@@ -240,7 +240,6 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
     return () => clearTimeout(timer);
   }, [uid, currentAnalysis.total, targetAnalysis.total, simSubjects.length, persistPatch]);
 
-  const hasMathsHL = simSubjects.some(s => s.isMaths && s.level === 'higher');
 
   const handleWhatIfGradeChange = (subjectName: string, grade: Grade) => {
     setSimSubjects(prev => {
@@ -703,19 +702,6 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
               Quick win: upgrade {biggestGains[0].subjectName} from {biggestGains[0].fromGrade} to {biggestGains[0].toGrade} for +{biggestGains[0].netGain} points
             </p>
           )}
-        </div>
-      )}
-
-      {/* H. Maths Bonus Explainer */}
-      {hasMathsHL && (
-        <div className="flex items-start gap-3 p-3 rounded-r-lg" style={{ backgroundColor: '#FDEEDF', borderLeft: '3px solid #F26B1F' }}>
-          <Info size={16} className="flex-shrink-0 mt-0.5" style={{ color: '#F26B1F' }} />
-          <div>
-            <p className="text-xs font-medium italic" style={{ color: '#8C3A0E' }}>Maths HL Bonus</p>
-            <p className="text-xs leading-relaxed mt-1 italic" style={{ color: '#8C3A0E' }}>
-              Students taking Higher Level Mathematics receive an additional 25 CAO points for grades H1 through H6. This bonus is automatically included in all calculations above.
-            </p>
-          </div>
         </div>
       )}
     </div>

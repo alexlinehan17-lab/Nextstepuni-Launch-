@@ -62,7 +62,7 @@ const FutureFinderGlass: React.FC<GlassProps> = ({ active, height = 720, logical
     <GlassStage active={active} height={height} logicalWidth={logicalWidth} auto={AUTO}>
       {active && seeded && (
         <ProgressProvider>
-          <div className="landing-glass-pad">
+          <div className="landing-glass-pad landing-glass-pad--airy">
             <FutureFinderRevamped uid={DEMO_STUDENT_UID} profile={DEMO_PROFILE} />
           </div>
         </ProgressProvider>

@@ -66,10 +66,6 @@ export const COPY = {
       { id: 'futurefinder', label: 'Future Finder', hint: 'A sample student who finished the quiz. Three courses are queued to compare.' },
     ],
     live: 'Live · the actual app',
-    markbank: { flip: 'Reveal the marking scheme', back: 'Hide the scheme', next: 'Next card', marks: 'marks', scoreSelf: 'How did you do? You decide.', got: 'Got it', shaky: 'Shaky', missed: 'Missed it', backLater: 'Nice. This one’s back in about 6 days.', backShaky: 'Grand. Back in a couple of days.', backSoon: 'No bother. It’s back before you finish today.', hint: 'Answer it in your head first.', allOf: 'All of', anyOf: 'Any of', or: 'Or', card: 'Card', of: 'of', markShort: 'm' },
-    atlas: { yearsAsked: 'years asked', of: 'of', prompt: 'Biology, Higher Level. Tap a topic.', everyYear: 'Asked every year since 2010.', promptYear: 'Biology, Higher Level. Tap a year.', topics: 'topics', topicList: 'Topics', yearList: 'Years' },
-    planner: { today: 'Today', due: 'due', minutes: 'min', rest: 'Rest day. That counts.', done: 'Done', markDone: 'Mark done', paper: 'Paper', thing: 'thing', things: 'things', allDone: 'Done for today.' },
-    launchpad: { prompt: 'Tap the command word — the cue telling you what to actually do.', right: 'That’s the one. Read it like an examiner.', wrong: 'That’s a topic word. Look for the action word — the verb telling you what to produce.', reveal: 'Show me', demand: 'The move', trap: 'Where marks go', next: 'Next question', of: 'of', firstTime: 'first time', pointsEyebrow: 'CAO points · six subjects · out of 625', points: 'points', level: 'level', higher: 'Higher', ordinary: 'Ordinary', lower: 'Lower grade', raise: 'Raise grade', bonusApplied: 'Includes the additional 25 CAO points for Higher Level Mathematics, H1 through H6.' },
   },
 
   numbers: {
