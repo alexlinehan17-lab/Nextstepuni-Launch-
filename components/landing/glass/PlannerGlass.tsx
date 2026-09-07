@@ -23,7 +23,7 @@ const PlannerGlass: React.FC<GlassProps> = ({ active, height = 720, logicalWidth
       <ProgressProvider>
       <InnovationDataProvider uid={undefined} subjectProfile={DEMO_PROFILE}>
       <Suspense fallback={null}>
-        <div className="landing-glass-pad">
+        <div className="landing-glass-pad landing-glass-pad--airy">
           <SpacedRepetitionTimetable profile={DEMO_PROFILE} uid={undefined} onOpenSettings={() => undefined} />
         </div>
       </Suspense>

@@ -46,7 +46,13 @@
 @media (max-width: 639px) { .landing-starguy-lg { display: none !important; } }
 
 /* The looking glass: the real app inside the page. */
-.landing-glass-pad { padding: 8px 20px 40px; min-height: 100%; }
+.landing-glass-pad { padding: 28px 32px 56px; min-height: 100%; }
+/* Full app pages (results, planner, passport) get more air than the boards. */
+.landing-glass-pad--airy { padding: 44px 56px 72px; }
+@media (max-width: 639px) {
+  .landing-glass-pad { padding: 20px 14px 40px; }
+  .landing-glass-pad--airy { padding: 28px 16px 48px; }
+}
 .landing-glass button:has(.lucide-link-2) { display: none !important; }  /* the Atlas Share button falls back to window.prompt — not on a marketing page */
 .landing-live-dot { animation: landing-pulse 1.8s ease-in-out infinite; }
 @keyframes landing-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.8); } }

@@ -28,7 +28,7 @@ const PassportGlass: React.FC<GlassProps> = ({ active, height = 720, logicalWidt
       <ProgressProvider>
         <InnovationDataProvider uid={undefined} subjectProfile={DEMO_PROFILE}>
         <Suspense fallback={null}>
-          <div className="landing-glass-pad">
+          <div className="landing-glass-pad landing-glass-pad--airy">
             <PointsPassport uid="" profile={DEMO_PROFILE} onOpenSettings={() => undefined} initialTab="planner" />
           </div>
         </Suspense>
