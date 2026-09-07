@@ -8,15 +8,18 @@
  * can use.
  */
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { COPY } from '../copy';
-import { WordPop } from '../motion';
+import { StarTrail, WordPop } from '../motion';
 import { Button, Container, Eyebrow, Lede, Starguy } from '../primitives';
 import { APP_URL, FONT, L } from '../theme';
 import Playground from './Playground';
 
-const Hero: React.FC = () => (
-  <section id="top" aria-labelledby="hero-title" style={{ paddingTop: 'clamp(32px, 5vw, 64px)', paddingBottom: 'clamp(40px, 5vw, 64px)' }}>
+const Hero: React.FC = () => {
+  const hostRef = useRef<HTMLElement>(null);
+  return (
+  <section ref={hostRef} id="top" aria-labelledby="hero-title" style={{ position: 'relative', paddingTop: 'clamp(32px, 5vw, 64px)', paddingBottom: 'clamp(40px, 5vw, 64px)' }}>
+    <StarTrail hostRef={hostRef} />
     <Container>
       <Eyebrow>{COPY.hero.eyebrow}</Eyebrow>
       <div className="mt-6 md:mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
@@ -46,6 +49,7 @@ const Hero: React.FC = () => (
       <Playground />
     </Container>
   </section>
-);
+  );
+};
 
 export default Hero;
