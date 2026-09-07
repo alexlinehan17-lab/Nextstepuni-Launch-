@@ -23,7 +23,7 @@ const ProveMyselfScene: React.FC<SceneProps> = ({ unlockedMilestones }) => {
   return (
     <group>
       {/* Ground plane */}
-      <Ground color={COLORS.cream} size={[12, 10]} />
+      <Ground color="#FFFFFF" size={[12, 10]} />
 
       {/* Exam hall — long room */}
       <Room

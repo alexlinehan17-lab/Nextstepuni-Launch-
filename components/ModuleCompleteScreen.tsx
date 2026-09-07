@@ -69,7 +69,7 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
 
               {northStarStatement && (
                 <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: d(11), duration: 0.5 }} className="mt-8">
-                  <div className="rounded-2xl px-6 py-5 bg-[#FAF7F4] dark:bg-zinc-800/60">
+                  <div className="rounded-2xl px-6 py-5 bg-white dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700">
                     <div className="flex items-center justify-center gap-1.5 mb-2"><Compass size={12} className="text-zinc-400" /><p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400">Your North Star</p></div>
                     <p className="font-serif italic text-base leading-relaxed text-zinc-600 dark:text-zinc-400">&ldquo;{northStarStatement}&rdquo;</p>
                   </div>

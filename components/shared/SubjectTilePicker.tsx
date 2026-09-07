@@ -8,12 +8,12 @@
  * Purely presentational: the caller filters subjects to the student's cycle /
  * level, sorts them, and renders display-ready labels + sublabels (counts,
  * progress). This component owns only the My Subjects / All Subjects segmented
- * toggle and the cream year-selection-style tile grid. Scope state lives in
+ * toggle and the white year-selection-style tile grid. Scope state lives in
  * the calling tool (controlled via `scope` + `onScopeChange`), so each tool
  * keeps its own picker scope independently.
  *
  * The toggle and tile markup is the exact year-selection card vocabulary
- * (cream #FDF8F0, 2px ink border, hard 4px offset shadow, orange #F26B1F
+ * (white, 2px ink border, hard 4px offset shadow, orange #F26B1F
  * hover/active) — copied verbatim; don't restyle here without restyling the
  * year picker too.
  */
@@ -79,7 +79,7 @@ const SubjectTilePicker: React.FC<SubjectTilePickerProps> = ({
             key={s.id}
             onClick={() => onPick(s.id)}
             aria-label={`${s.label}${s.sublabel ? `, ${s.sublabel}` : ''}`}
-            className="group flex flex-col items-center justify-center text-center px-3 py-5 min-h-[92px] rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] bg-[#FDF8F0] text-[#1A1A1A] hover:bg-[#F26B1F] hover:text-[#FDF8F0] active:bg-[#F26B1F] active:text-[#FDF8F0]"
+            className="group flex flex-col items-center justify-center text-center px-3 py-5 min-h-[92px] rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] bg-white text-[#1A1A1A] hover:bg-[#F26B1F] hover:text-white active:bg-[#F26B1F] active:text-white"
           >
             <span className="text-[17px] font-bold leading-tight">{s.label}</span>
             {s.sublabel && <span className="text-[11px] font-medium mt-1 opacity-80">{s.sublabel}</span>}

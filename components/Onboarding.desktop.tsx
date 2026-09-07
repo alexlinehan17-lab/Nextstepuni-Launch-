@@ -158,14 +158,14 @@ const PILL_BASE = 'border-2 border-[#1A1A1A] font-bold font-sans transition-all 
 
 function getCurrentGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? `${PILL_BASE} bg-[#1A1A1A] text-[#FDF8F0]`
-    : `${PILL_BASE} bg-[#FDF8F0] text-[#1A1A1A]`;
+    ? `${PILL_BASE} bg-[#1A1A1A] text-white`
+    : `${PILL_BASE} bg-white text-[#1A1A1A]`;
 }
 
 function getTargetGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? `${PILL_BASE} bg-[#F26B1F] text-[#FDF8F0]`
-    : `${PILL_BASE} bg-[#FDF8F0] text-[#1A1A1A]`;
+    ? `${PILL_BASE} bg-[#F26B1F] text-white`
+    : `${PILL_BASE} bg-white text-[#1A1A1A]`;
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -796,7 +796,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{yr}</span>
@@ -831,7 +831,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{label}</span>
@@ -859,7 +859,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{yr === 'LCA1' ? 'Year 1' : 'Year 2'}</span>
@@ -891,7 +891,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={String(option.id)}
                               type="button"
                               onClick={() => setEssentialsMode(option.id)}
-                              className={`rounded-2xl border-2 border-[#1A1A1A] px-4 py-4 text-left shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${selected ? 'bg-[#F26B1F] text-white' : 'bg-[#FDF8F0] text-[#1A1A1A]'}`}
+                              className={`rounded-2xl border-2 border-[#1A1A1A] px-4 py-4 text-left shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'}`}
                             >
                               <p className="font-bold">{option.title}</p>
                               <p className={`mt-1 text-xs leading-relaxed ${selected ? 'text-white/80' : 'text-[#78716C]'}`}>{option.desc}</p>
@@ -936,11 +936,11 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                             // Same border-2 / 4-6px black drop-shadow / press
                             // translate as the rest of onboarding.
                             className={`flex-1 py-6 px-5 rounded-2xl border-2 border-[#1A1A1A] text-left font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                              selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                              selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                             }`}
                           >
                             <p className="text-base font-bold mb-1">{opt.title}</p>
-                            <p className={`text-xs ${selected ? 'text-[#FDF8F0]/85' : 'text-[#78716C]'}`}>{opt.desc}</p>
+                            <p className={`text-xs ${selected ? 'text-white/85' : 'text-[#78716C]'}`}>{opt.desc}</p>
                           </button>
                         );
                       })}
@@ -1013,15 +1013,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                 onClick={() => toggleSubject(subj.name)}
                                 className={`group flex items-center gap-2.5 px-4 py-3 rounded-2xl border-2 border-[#1A1A1A] font-sans font-medium text-[15px] transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
                                   selected
-                                    ? 'bg-[#F26B1F] text-[#FDF8F0]'
-                                    : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                    ? 'bg-[#F26B1F] text-white'
+                                    : 'bg-white text-[#1A1A1A]'
                                 }`}
                               >
                                 <span
                                   className="w-2.5 h-2.5 rounded-full shrink-0"
                                   style={{
                                     backgroundColor: selected ? 'transparent' : dotHex,
-                                    boxShadow: selected ? 'inset 0 0 0 1.5px #FDF8F0' : 'none',
+                                    boxShadow: selected ? 'inset 0 0 0 1.5px #FFFFFF' : 'none',
                                   }}
                                   aria-hidden
                                 />
@@ -1060,7 +1060,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       <div
                         key={name}
                         className="rounded-2xl overflow-hidden border-2 border-[#1A1A1A] shadow-[4px_4px_0_0_#1A1A1A]"
-                        style={{ backgroundColor: '#FDF8F0' }}
+                        style={{ backgroundColor: '#FFFFFF' }}
                       >
                         {/* Subject header row */}
                         <div className="flex items-center justify-between px-4 pt-3 pb-2 border-b-2 border-[#1A1A1A]/10">
@@ -1073,8 +1073,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                   onClick={() => updateBand(name, 'level', lvl)}
                                   className={`px-2.5 py-1 rounded-md text-[10px] font-bold border-2 border-[#1A1A1A] transition-all duration-150 shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[0px_0px_0_0_#1A1A1A] ${
                                     band.level === lvl
-                                      ? 'bg-[#1A1A1A] text-[#FDF8F0]'
-                                      : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                      ? 'bg-[#1A1A1A] text-white'
+                                      : 'bg-white text-[#1A1A1A]'
                                   }`}
                                 >
                                   {lvl === 'higher' ? 'Higher' : 'Ordinary'}
@@ -1121,7 +1121,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                     disabled={disabled}
                                     className={`flex-1 min-w-[70px] py-2 rounded-lg text-[10px] ${
                                       disabled
-                                        ? 'border-2 border-[#1A1A1A]/15 bg-[#FDF8F0]/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
+                                        ? 'border-2 border-[#1A1A1A]/15 bg-white/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
                                         : b === band.targetBand
                                           ? getTargetGradePillClass(true)
                                           : getTargetGradePillClass(false)
@@ -1170,7 +1170,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       <div
                         key={name}
                         className="rounded-2xl overflow-hidden border-2 border-[#1A1A1A] shadow-[4px_4px_0_0_#1A1A1A]"
-                        style={{ backgroundColor: '#FDF8F0' }}
+                        style={{ backgroundColor: '#FFFFFF' }}
                       >
                         {/* Subject header row */}
                         <div className="flex items-center justify-between px-4 pt-3 pb-2 border-b-2 border-[#1A1A1A]/10">
@@ -1182,8 +1182,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                 onClick={() => updateConfig(name, 'level', lvl)}
                                 className={`px-2.5 py-1 rounded-md text-[10px] font-bold border-2 border-[#1A1A1A] transition-all duration-150 shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[0px_0px_0_0_#1A1A1A] ${
                                   config.level === lvl
-                                    ? 'bg-[#1A1A1A] text-[#FDF8F0]'
-                                    : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                    ? 'bg-[#1A1A1A] text-white'
+                                    : 'bg-white text-[#1A1A1A]'
                                 }`}
                               >
                                 {lvl === 'higher' ? 'Higher' : 'Ordinary'}
@@ -1226,7 +1226,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                     disabled={disabled}
                                     className={`flex-1 py-2 rounded-lg text-[11px] ${
                                       disabled
-                                        ? 'border-2 border-[#1A1A1A]/15 bg-[#FDF8F0]/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
+                                        ? 'border-2 border-[#1A1A1A]/15 bg-white/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
                                         : g === config.targetGrade
                                           ? getTargetGradePillClass(true)
                                           : getTargetGradePillClass(false)
@@ -1289,7 +1289,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                           />
                         </label>
                         {daysLeft > 0 && (
-                          <div className="flex min-w-32 items-center justify-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#FDF8F0] px-5 py-3">
+                          <div className="flex min-w-32 items-center justify-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-white px-5 py-3">
                             <span className="font-apercu text-3xl font-black leading-none text-[#1A1A1A]">{daysLeft}</span>
                             <span className="text-left text-[10px] font-bold uppercase leading-tight tracking-[0.12em] text-[#8A8178]">days<br />to go</span>
                           </div>
@@ -1313,7 +1313,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={day}
                               type="button"
                               onClick={() => toggleRestDay(day)}
-                              className={`flex min-h-16 items-center justify-between rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans shadow-[3px_3px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${isRest ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'}`}
+                              className={`flex min-h-16 items-center justify-between rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans shadow-[3px_3px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${isRest ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'}`}
                             >
                               <span className="text-xs font-bold uppercase tracking-wider">{DAY_SHORTS[day]}</span>
                               {isRest ? <CalendarOff size={17} /> : <Check size={17} />}
@@ -1361,12 +1361,12 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                             // Study day = cream fill. Same press animation
                             // as the year + grade pickers.
                             className={`flex flex-col items-center justify-center gap-2 py-4 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                              isRest ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                              isRest ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                             }`}
                           >
                             <span className="text-[11px] font-bold uppercase tracking-wider">{DAY_SHORTS[day]}</span>
                             {isRest
-                              ? <CalendarOff size={16} className="text-[#FDF8F0]" />
+                              ? <CalendarOff size={16} className="text-white" />
                               : <Check size={16} className="text-[#1A1A1A]" />}
                           </button>
                         );
@@ -1526,7 +1526,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                   <button
                     type="button"
                     onClick={() => void completeOnboarding(northStarData ?? undefined)}
-                    className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 text-sm font-semibold text-[#FDF8F0] shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
+                    className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 text-sm font-semibold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
                   >
                     <span className="flex-1 text-center">Start Learning</span>
                     <ArrowRight size={14} />
@@ -1645,7 +1645,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                 disabled={!canProceed()}
                 // Chunky orange CTA matching the year/subject pickers'
                 // shadow language. Disabled state drops the shadow + dims.
-                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-[2px_2px_0_0_#1A1A1A] disabled:translate-x-0 disabled:translate-y-0 disabled:hover:translate-y-0"
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-[2px_2px_0_0_#1A1A1A] disabled:translate-x-0 disabled:translate-y-0 disabled:hover:translate-y-0"
                 style={{ minWidth: 160 }}
               >
                 <span className="flex-1 text-center">{step === 1 ? 'Get Started' : 'Next'}</span>
@@ -1654,7 +1654,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             ) : (
               <button
                 onClick={() => void completeOnboarding(northStarData ?? undefined)}
-                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
                 style={{ minWidth: 160 }}
               >
                 <span className="flex-1 text-center">Start learning</span>

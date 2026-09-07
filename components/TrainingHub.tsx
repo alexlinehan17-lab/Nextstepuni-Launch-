@@ -519,7 +519,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                     year-bump CTA. */}
                 <button
                   onClick={onOpenDirection ?? onOpenJourney}
-                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
                 >
                   My Direction
                   <ArrowRight size={14} />

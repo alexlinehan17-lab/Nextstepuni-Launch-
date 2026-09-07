@@ -145,8 +145,8 @@ const Segment: React.FC<{
                   style={{
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                     minWidth: 22, height: 22, padding: '0 6px', borderRadius: 7,
-                    background: on ? 'rgba(253,248,240,.18)' : 'var(--mb-raised)',
-                    color: on ? '#FDF8F0' : MUTED,
+                    background: on ? 'rgba(255,255,255,.18)' : 'var(--mb-raised)',
+                    color: on ? '#FFFFFF' : MUTED,
                     font: `700 9px/1 ${MONO}`, letterSpacing: '.04em',
                   }}
                 >
@@ -641,7 +641,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                   type="button"
                   autoFocus
                   onClick={() => startSession()}
-                  className={`min-h-12 rounded-xl border border-[#E5E1DB] bg-white px-5 py-3 text-sm font-semibold text-[var(--text-body)] transition-colors hover:border-[rgba(var(--accent),0.35)] hover:bg-[#FDF8F0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.38)] focus-visible:ring-offset-2 dark:border-zinc-700 dark:bg-zinc-900 ${wide ? 'w-full' : 'w-full max-w-80'} mt-3.5`}
+                  className={`min-h-12 rounded-xl border border-[#E5E1DB] bg-white px-5 py-3 text-sm font-semibold text-[var(--text-body)] transition-colors hover:border-[rgba(var(--accent),0.35)] hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.38)] focus-visible:ring-offset-2 dark:border-zinc-700 dark:bg-zinc-900 ${wide ? 'w-full' : 'w-full max-w-80'} mt-3.5`}
                 >
                   Start a practice session
                 </button>

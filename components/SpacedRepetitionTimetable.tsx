@@ -187,7 +187,7 @@ const StudyBlockCard: React.FC<{
   if (skipped) {
     return (
       <div
-        className="py-3 px-4 rounded-xl opacity-50 bg-[#FAF7F4] dark:bg-zinc-900"
+        className="py-3 px-4 rounded-xl opacity-50 bg-white dark:bg-zinc-900"
         style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
       >
         <div className="flex items-center justify-between">
@@ -300,7 +300,7 @@ const PRIORITY_BADGE_INLINE: Record<string, React.CSSProperties> = {
 const PRIORITY_BADGE_CLASS: Record<string, string> = {
   High: '',
   Medium: '',
-  Low: 'bg-[#FAF7F4] dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500',
+  Low: 'bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700/40 text-[#A8A29E] dark:text-zinc-500',
 };
 
 const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> = ({ alloc, maxSessions }) => {
@@ -348,7 +348,7 @@ const BlockCueEditor: React.FC<{ subject: string; saved?: { trigger: string; the
     );
   }
   return (
-    <div className="rounded-xl p-3 text-left" style={{ backgroundColor: '#F9F9F7', border: '0.5px solid rgba(0,0,0,0.07)' }}>
+    <div className="rounded-xl p-3 text-left" style={{ backgroundColor: '#FFFFFF', border: '0.5px solid rgba(0,0,0,0.07)' }}>
       <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: COLORS.accentDarkText }}>Your if-then for this block</p>
       <div className="flex flex-wrap gap-1.5 mb-2">
         {PLAN_TRIGGERS.map(t => {
@@ -641,7 +641,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   if (!profile || profile.subjects.length === 0) {
     return (
       <div className="text-center py-16 space-y-4">
-        <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+        <div className="w-16 h-16 mx-auto flex items-center justify-center bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
           <CalendarDays size={32} style={{ color: COLORS.accent }} />
         </div>
         <h3 className="text-lg font-bold text-zinc-800 dark:text-white">Your study plan, built around your life</h3>
@@ -662,7 +662,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       <div className="flex justify-end">
         <button
           onClick={onOpenSettings}
-          className="p-2 rounded-lg transition-colors bg-[#FAF7F4] dark:bg-zinc-900"
+          className="p-2 rounded-lg transition-colors bg-white dark:bg-zinc-900"
           style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
           title="Edit subjects"
         >
@@ -808,7 +808,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               <button
                 key={dayName}
                 onClick={() => toggleRestDay(dayName)}
-                className={`flex-1 py-1 rounded-md text-[10px] font-bold transition-all ${!isRest ? 'bg-[#FAF7F4] dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500' : ''}`}
+                className={`flex-1 py-1 rounded-md text-[10px] font-bold transition-all ${!isRest ? 'bg-white dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500' : ''}`}
                 style={isRest
                   ? { backgroundColor: 'rgba(196,135,59,0.1)', border: '0.5px solid rgba(196,135,59,0.3)', color: '#C4873B', textDecoration: 'line-through' }
                   : { border: '0.5px solid rgba(0,0,0,0.07)' }
@@ -830,7 +830,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         <MotionDiv
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="p-4 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900"
+          className="p-4 rounded-xl bg-white dark:bg-zinc-900"
           style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
         >
           <div className="flex items-center gap-4">
@@ -1032,7 +1032,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       {/* ── Why this week looks like this ── */}
       <div
         className="p-4 rounded-xl grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] gap-4 dark:bg-zinc-900 dark:border-zinc-700"
-        style={{ backgroundColor: '#FAF7F4', border: '1px solid #D8D2CB' }}
+        style={{ backgroundColor: '#FFFFFF', border: '1px solid #D8D2CB' }}
       >
         <div>
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] mb-1" style={{ color: COLORS.accent }}>
@@ -1057,7 +1057,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       </div>
 
       {/* ── Priority Breakdown ── */}
-      <div className="p-5 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+      <div className="p-5 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-bold text-xs uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">Priority Breakdown</h3>
           {/* The deep-dive explainer is senior-only — it documents the CAO
@@ -1094,7 +1094,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="overflow-hidden"
           >
-            <div className="p-5 rounded-xl space-y-6 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+            <div className="p-5 rounded-xl space-y-6 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
               {/* How it works */}
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -1172,7 +1172,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             {p.difficultyMultiplier.toFixed(2)} attainability
                           </span>
                           <span className="font-mono text-[#A8A29E] dark:text-zinc-500">=</span>
-                          <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: COLORS.accent }}>
+                          <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700/40" style={{ color: COLORS.accent }}>
                             {Math.round(p.priorityScore)}
                           </span>
                         </div>

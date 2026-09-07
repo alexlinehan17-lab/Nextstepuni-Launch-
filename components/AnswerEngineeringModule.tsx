@@ -117,7 +117,7 @@ const PEELBuilder = () => {
   const allPlaced = placed.every(p => p !== null);
 
   return (
-    <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-[#FAF7F4] dark:bg-zinc-800">
+    <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800">
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">PEEL Builder</h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-2">Arrange the sentences in the correct PEEL order.</p>
 
@@ -317,7 +317,7 @@ const StackBuilder = () => {
 
   if (phase === 'ready') {
     return (
-      <div className="my-10 p-8 md:p-12 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center bg-[#FAF7F4] dark:bg-zinc-800">
+      <div className="my-10 p-8 md:p-12 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center bg-white dark:bg-zinc-800">
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Stack Builder</h4>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-2 max-w-md mx-auto">Build a science answer step by step and see how marks accumulate.</p>
         <div className="p-4 bg-white dark:bg-zinc-800 rounded-lg border border-zinc-200 dark:border-zinc-600 mb-5 max-w-md mx-auto">
@@ -331,7 +331,7 @@ const StackBuilder = () => {
 
   if (phase === 'done') {
     return (
-      <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-[#FAF7F4] dark:bg-zinc-800">
+      <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800">
         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Stack Builder Results</h4>
         <div className="flex justify-center my-5">
           <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
@@ -378,7 +378,7 @@ const StackBuilder = () => {
   const isWrong = showStepFeedback && choices[stepIndex] !== step.correct;
 
   return (
-    <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-[#FAF7F4] dark:bg-zinc-800">
+    <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800">
       <div className="flex items-center justify-between mb-2">
         <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Stack Builder</h4>
         <span className="text-xs font-bold text-zinc-400">Step {stepIndex + 1} / {stackProblem.steps.length}</span>

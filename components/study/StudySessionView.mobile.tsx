@@ -619,7 +619,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   );
                 })}
                 {subjects.length === 0 && (
-                  <div className="w-full rounded-2xl border-[1.5px] border-[#1A1A1A] bg-[#FDF8F0] p-5 text-left dark:border-zinc-600 dark:bg-zinc-900">
+                  <div className="w-full rounded-2xl border-[1.5px] border-[#1A1A1A] bg-white p-5 text-left dark:border-zinc-600 dark:bg-zinc-900">
                     <div className="flex items-start gap-3">
                       <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FDEBDD] text-[#B94712] dark:bg-orange-950/40 dark:text-orange-300">
                         <BookOpen size={19} aria-hidden="true" />
@@ -653,7 +653,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   exit={{ opacity: 0, height: 0 }}
                   className="overflow-hidden"
                 >
-                  <div className="px-4 py-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
+                  <div className="px-4 py-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                     <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5 text-[#A8A29E] dark:text-zinc-500">Last time you studied {selectedSubject}</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400 italic leading-relaxed">"{lastSubjectNote.whatWorked}"</p>
                   </div>

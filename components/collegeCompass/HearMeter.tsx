@@ -143,7 +143,7 @@ const HearMeter: React.FC<HearMeterProps> = ({ selected, onChange }) => {
       <div
         className="mt-3 rounded-xl px-4 py-3 text-center"
         style={{
-          backgroundColor: outcome === 'not-eligible' ? '#F9F9F7' : COLORS.successTint,
+          backgroundColor: outcome === 'not-eligible' ? '#FFFFFF' : COLORS.successTint,
         }}
       >
         <p

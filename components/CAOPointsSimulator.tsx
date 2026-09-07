@@ -316,7 +316,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
 
       {/* B. Points Summary — Mercury style: white card, confident type, no decoration */}
       <div
-        className="rounded-2xl px-6 py-5 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
+        className="rounded-2xl px-6 py-5 bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
         style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
       >
         <div className={`grid gap-6 ${activeTab === 'what-if' ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2'}`}>

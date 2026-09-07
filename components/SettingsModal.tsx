@@ -376,7 +376,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                       ) : (
                         <button
                           onClick={() => { onClose(); onAdvanceYear(); }}
-                          className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
+                          className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
                         >
                           {action.label}
                           <ArrowRight size={14} />

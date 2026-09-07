@@ -257,8 +257,6 @@
 .dark :is(.product-shell, .theme-compat) [style*="background-color: #fff" i],
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#FAFBF6]"],
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#FAF9F7]"],
-.dark :is(.product-shell, .theme-compat) [class*="bg-[#FAF7F4]"],
-.dark :is(.product-shell, .theme-compat) [class*="bg-[#FDF8F0]"],
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#f0f0f0]"],
 /* Translucent white reads as a light surface just as much as an opaque one,
    but matched none of the rules above -- so onboarding's stage chips kept a

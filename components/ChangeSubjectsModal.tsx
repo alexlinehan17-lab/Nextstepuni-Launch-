@@ -41,14 +41,14 @@ const GRADE_BUTTON_BASE = 'border-2 border-[#1A1A1A] font-bold font-sans transit
 
 function getCurrentGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? `${GRADE_BUTTON_BASE} bg-[#1A1A1A] text-[#FDF8F0]`
-    : `${GRADE_BUTTON_BASE} bg-[#FDF8F0] text-[#1A1A1A]`;
+    ? `${GRADE_BUTTON_BASE} bg-[#1A1A1A] text-white`
+    : `${GRADE_BUTTON_BASE} bg-white text-[#1A1A1A]`;
 }
 
 function getTargetGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? `${GRADE_BUTTON_BASE} bg-[#F26B1F] text-[#FDF8F0]`
-    : `${GRADE_BUTTON_BASE} bg-[#FDF8F0] text-[#1A1A1A]`;
+    ? `${GRADE_BUTTON_BASE} bg-[#F26B1F] text-white`
+    : `${GRADE_BUTTON_BASE} bg-white text-[#1A1A1A]`;
 }
 
 // ─── Props ───────────────────────────────────────────────────────────────────
@@ -266,14 +266,14 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                               return (
                                 <button key={subj.name} onClick={() => toggleSubject(subj.name)}
                                   className={`group flex items-center gap-2.5 rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans text-[15px] font-medium transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-none ${
-                                    selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                    selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                                   }`}
                                 >
                                   <span
                                     className="h-2.5 w-2.5 shrink-0 rounded-full"
                                     style={{
                                       backgroundColor: selected ? 'transparent' : dotHex,
-                                      boxShadow: selected ? 'inset 0 0 0 1.5px #FDF8F0' : 'none',
+                                      boxShadow: selected ? 'inset 0 0 0 1.5px #FFFFFF' : 'none',
                                     }}
                                     aria-hidden
                                   />
@@ -307,7 +307,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                       const targetIdx = getGradeIndex(config.targetGrade);
 
                       return (
-                        <div key={name} className="overflow-hidden rounded-2xl border-2 border-[#1A1A1A] bg-[#FDF8F0] shadow-[4px_4px_0_0_#1A1A1A]">
+                        <div key={name} className="overflow-hidden rounded-2xl border-2 border-[#1A1A1A] bg-white shadow-[4px_4px_0_0_#1A1A1A]">
                           {/* Subject header row */}
                           <div className="flex items-center justify-between border-b-2 border-[#1A1A1A]/10 px-4 pb-2 pt-3">
                             <span className={`text-sm font-bold ${groupColor.text}`}>{name}</span>
@@ -316,8 +316,8 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                                 onClick={() => updateConfig(name, 'level', 'higher')}
                                 className={`rounded-md border-2 border-[#1A1A1A] px-2.5 py-1 text-[10px] font-bold transition-all duration-150 shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none ${
                                   config.level === 'higher'
-                                    ? 'bg-[#1A1A1A] text-[#FDF8F0]'
-                                    : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                    ? 'bg-[#1A1A1A] text-white'
+                                    : 'bg-white text-[#1A1A1A]'
                                 }`}
                               >
                                 Higher
@@ -326,8 +326,8 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                                 onClick={() => updateConfig(name, 'level', 'ordinary')}
                                 className={`rounded-md border-2 border-[#1A1A1A] px-2.5 py-1 text-[10px] font-bold transition-all duration-150 shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none ${
                                   config.level === 'ordinary'
-                                    ? 'bg-[#1A1A1A] text-[#FDF8F0]'
-                                    : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                    ? 'bg-[#1A1A1A] text-white'
+                                    : 'bg-white text-[#1A1A1A]'
                                 }`}
                               >
                                 Ordinary
@@ -356,7 +356,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                                       key={g}
                                       onClick={() => { if (!disabled) updateConfig(name, 'targetGrade', g); }}
                                       disabled={disabled}
-                                      className={`flex-1 rounded-lg py-2 text-[11px] ${disabled ? 'cursor-not-allowed border-2 border-[#1A1A1A]/15 bg-[#FDF8F0]/40 font-bold text-[#1A1A1A]/25' : getTargetGradePillClass(g === config.targetGrade)}`}
+                                      className={`flex-1 rounded-lg py-2 text-[11px] ${disabled ? 'cursor-not-allowed border-2 border-[#1A1A1A]/15 bg-white/40 font-bold text-[#1A1A1A]/25' : getTargetGradePillClass(g === config.targetGrade)}`}
                                     >
                                       {g}
                                     </button>
