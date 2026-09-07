@@ -334,10 +334,10 @@ export const LineRise: React.FC<{
   return (
     <Tag className={className} style={style} aria-label={text.replace(/\n/g, ' ')}>
       {lines.map((words, li) => (
-        <span key={li} aria-hidden="true" className="landing-line" style={{ display: 'block', overflow: 'hidden', paddingBottom: '0.06em', marginBottom: '-0.06em' }}>
+        <span key={li} aria-hidden="true" className="landing-line" style={{ display: 'block', overflow: 'hidden', paddingBottom: '0.28em', marginBottom: '-0.28em', paddingTop: '0.08em', marginTop: '-0.08em' }}>
           <MotionSpan
             style={{ display: 'block', willChange: 'transform' }}
-            initial={reduce ? false : { y: '110%', opacity: 0 }}
+            initial={reduce ? false : { y: '120%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: delay + li * 0.09, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >

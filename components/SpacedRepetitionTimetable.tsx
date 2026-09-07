@@ -14,6 +14,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
+import HorizontalTabs from './ui/HorizontalTabs';
 import { type SchoolEvent } from './gc/GCKeyEvents';
 import {
   type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade,
@@ -616,28 +617,14 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           </div>
         </div>
         {/* Day / Week toggle */}
-        <div className="flex items-center gap-1 p-1 rounded-lg" style={{ backgroundColor: 'rgba(0,0,0,0.04)' }}>
-          <button
-            onClick={() => setViewMode('day')}
-            className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${
-              viewMode === 'day'
-                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
-                : 'text-zinc-400 dark:text-zinc-500'
-            }`}
-          >
-            Day
-          </button>
-          <button
-            onClick={() => setViewMode('week')}
-            className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${
-              viewMode === 'week'
-                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-sm'
-                : 'text-zinc-400 dark:text-zinc-500'
-            }`}
-          >
-            Week
-          </button>
-        </div>
+        <HorizontalTabs
+          variant="pill"
+          size="sm"
+          label="Timetable view"
+          value={viewMode}
+          onChange={next => setViewMode(next as 'day' | 'week')}
+          options={[{ value: 'day', label: 'Day' }, { value: 'week', label: 'Week' }]}
+        />
       </div>
 
       {/* ── Key stats line ── */}
@@ -668,7 +655,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       {/* ── DAY VIEW ── */}
       {viewMode === 'day' && (<>
       {/* ── Day Tabs (horizontal pill selector) ── */}
-      <div className="flex gap-1 p-1 rounded-xl overflow-x-auto" style={{ backgroundColor: 'rgba(0,0,0,0.04)' }}>
+      <div className="flex w-full items-center gap-1 overflow-x-auto rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
         {DAY_SHORTS.map((day, i) => {
           const dayName = DAYS_OF_WEEK[i];
           const isDayRest = restDays.has(dayName);
@@ -680,23 +667,13 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             <button
               key={day}
               onClick={() => setSelectedDay(i)}
-              className={`flex-1 min-w-0 py-2 px-1 rounded-lg text-center transition-all ${
+              className={`flex-1 min-w-0 min-h-9 whitespace-nowrap rounded-lg border px-1 py-1.5 text-center text-[13px] font-semibold transition-colors ${
                 isActive
-                  ? 'shadow-sm'
-                  : ''
+                  ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
+                  : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
               }`}
-              style={isActive ? { backgroundColor: '#1C1917', borderRadius: 12 } : undefined}
             >
-              <span
-                className={`block text-xs font-bold ${
-                  isActive
-                    ? ''
-                    : isDayRest
-                      ? 'text-zinc-400 dark:text-zinc-500'
-                      : 'text-zinc-500 dark:text-zinc-400'
-                }`}
-                style={isActive ? { color: '#fff', fontWeight: 700 } : undefined}
-              >
+              <span className="block">
                 <span className="relative inline-block">
                   {day}
                   {getEventsForDay(i).length > 0 && (
@@ -704,10 +681,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   )}
                 </span>
               </span>
-              <span
-                className={`block text-[10px] mt-0.5 ${isActive ? '' : isDayRest ? 'text-zinc-400 dark:text-zinc-500 italic' : 'text-zinc-400 dark:text-zinc-500'}`}
-                style={isActive ? { color: 'rgba(255,255,255,0.7)' } : undefined}
-              >
+              <span className={`block text-[10px] font-medium mt-0.5 text-[var(--ink-muted)] ${isDayRest ? 'italic' : ''}`}>
                 {isDayRest ? 'rest' : dayBlockCount}
               </span>
             </button>

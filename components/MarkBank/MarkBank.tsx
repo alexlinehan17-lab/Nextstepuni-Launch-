@@ -40,6 +40,7 @@ import {
 } from './store';
 import type { SecCard } from '../../types/markBank';
 import ChoiceControl from '../ui/ChoiceControl';
+import HorizontalTabs from '../ui/HorizontalTabs';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
 import { getSubjectHex } from '../../utils/subjectColors';
@@ -104,7 +105,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
  * exists and is being written, not to wonder whether the tool has it at all.
  */
 const Segment: React.FC<{
-  options: { value: string; label: string; empty?: boolean; markerColor?: string; shortLabel?: string }[];
+  options: { value: string; label: string; empty?: boolean; markerColor?: string }[];
   value: string;
   onChange: (value: string) => void;
   /**
@@ -115,7 +116,7 @@ const Segment: React.FC<{
    * own, so the four-subject control could not fit one row at any sensible size:
    * the label broke mid-phrase onto two lines at line-height 1, and the row
    * overflowed the rounded border it was supposed to sit inside. Wrapping is
-   * opt-in rather than automatic so the two-option level toggle keeps its pill.
+   * opt-in rather than automatic.
    */
   wrap?: boolean;
 }> = ({ options, value, onChange, wrap = false }) => (
@@ -137,31 +138,13 @@ const Segment: React.FC<{
           compact
           className={wrap ? 'flex-auto' : ''}
           markerColor={o.markerColor}
-          trailing={(
-            <>
-              {o.shortLabel && (
-                <span
-                  aria-hidden
-                  style={{
-                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                    minWidth: 22, height: 22, padding: '0 6px', borderRadius: 7,
-                    background: on ? 'rgba(255,255,255,.18)' : 'var(--mb-raised)',
-                    color: on ? '#FFFFFF' : MUTED,
-                    font: `700 9px/1 ${MONO}`, letterSpacing: '.04em',
-                  }}
-                >
-                  {o.shortLabel}
-                </span>
-              )}
-              {o.empty && (
-                <span
-                  aria-hidden
-                  title="No cards yet"
-                  style={{ width: 5, height: 5, borderRadius: '50%', background: MUTED_BORDER }}
-                />
-              )}
-            </>
-          )}
+          trailing={o.empty ? (
+            <span
+              aria-hidden
+              title="No cards yet"
+              style={{ width: 5, height: 5, borderRadius: '50%', background: MUTED_BORDER }}
+            />
+          ) : undefined}
         />
       );
     })}
@@ -577,14 +560,14 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             </div>
             <div style={{ width: '100%' }}>
               <div style={{ marginBottom: 6 }}><Eyebrow>Paper level</Eyebrow></div>
-              <Segment
-                options={(['higher', 'ordinary'] as Level[]).map(l => ({
-                  value: l, label: l === 'higher' ? 'Higher' : 'Ordinary',
-                  shortLabel: l === 'higher' ? 'HL' : 'OL',
-                  empty: deckSize(subjectId, l) === 0,
-                }))}
+              <HorizontalTabs
+                variant="pill"
+                size="sm"
+                label="Paper level"
+                className="w-fit"
                 value={level}
-                onChange={v => chooseLevel(v as Level)}
+                onChange={chooseLevel}
+                options={[{ value: 'higher', label: 'Higher' }, { value: 'ordinary', label: 'Ordinary' }]}
               />
             </div>
           </div>

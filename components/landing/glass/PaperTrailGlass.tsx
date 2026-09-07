@@ -18,9 +18,20 @@ const PaperTrail = React.lazy(() => import('../../PaperTrail'));
 
 export const PAPERTRAIL_MODES_LIVE: { id: string; label: string }[] = [];
 
+/** Search finds every subject; only Biology and Mathematics results open. */
+const searchSubject = (el: HTMLElement): string | undefined =>
+  el.matches('.pt-search-results > button') ? el.querySelector('span')?.textContent?.replace(/ · LCA$/, '').trim() || undefined : undefined;
 const LOCKS: GlassLocks = {
   names: [...DEMO_SUBJECT_NAMES.filter(s => !isFree(s)), 'All subjects', 'Browse all subjects'],
-  nameOf: el => el.querySelector('.pt-subject-name')?.textContent?.trim() || undefined,
+  nameOf: el => el.querySelector('.pt-subject-name')?.textContent?.trim() || searchSubject(el) || undefined,
+  test: (name, el) => {
+    if (el.matches('.pt-search-results > button')) return !isFree(name);
+    if (el.matches('.pt-continue')) {
+      const last = el.closest('.pt-resume')?.querySelector('.pt-resume-name')?.textContent?.split(' · ')[0]?.trim() ?? '';
+      return !isFree(last);
+    }
+    return false;
+  },
 };
 
 const AUTO: AutoStep[] = [{ text: PAPER_TRAIL_OPEN_SUBJECT, before: 1800, hold: 60000, then: 'top' }];

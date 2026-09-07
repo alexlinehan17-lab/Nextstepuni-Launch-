@@ -612,17 +612,17 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                 {/* Label selector */}
                 <div className="space-y-2">
                   <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Exam Name</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="inline-flex flex-wrap items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1" role="group" aria-label="Exam name">
                     {MOCK_PRESETS.map(preset => (
                       <button
                         key={preset}
                         onClick={() => setMockLabel(preset)}
-                        className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                        aria-pressed={mockLabel === preset}
+                        className={`min-h-9 shrink-0 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors ${
                           mockLabel === preset
-                            ? 'text-white'
-                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                            ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
+                            : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
                         }`}
-                        style={mockLabel === preset ? { backgroundColor: COLORS.accent } : undefined}
                       >
                         {preset}
                       </button>

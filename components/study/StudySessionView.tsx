@@ -1036,17 +1036,19 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           </div>
         </div>
 
-        {/* Coaching prompts — overlay from bottom */}
+        {/* Coaching prompts — in the flow beneath the timer, never over it. A
+            viewport-pinned card used to land on the pause button and the
+            slider on any screen shorter than a tall desktop. */}
         <AnimatePresence mode="wait">
           {/* Coaching prompt */}
           {session.currentPrompt && (
             <MotionDiv
               key={session.currentPrompt.prompt}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="fixed bottom-16 left-4 right-4 z-30 max-w-md mx-auto"
+              className="relative z-30 w-full max-w-md mx-auto px-4 mt-6 mb-4"
             >
               <div
                 className="rounded-2xl p-4 overflow-hidden relative"

@@ -12,13 +12,14 @@
  * the calling tool (controlled via `scope` + `onScopeChange`), so each tool
  * keeps its own picker scope independently.
  *
- * The toggle and tile markup is the exact year-selection card vocabulary
- * (white, 2px ink border, hard 4px offset shadow, orange #F26B1F
- * hover/active) — copied verbatim; don't restyle here without restyling the
- * year picker too.
+ * The tile markup is the exact year-selection card vocabulary (white, 2px ink
+ * border, hard 4px offset shadow, orange #F26B1F hover/active) — copied
+ * verbatim; don't restyle here without restyling the year picker too. The
+ * scope toggle is the shared HorizontalTabs pill.
  */
 
 import React from 'react';
+import HorizontalTabs from '../ui/HorizontalTabs';
 
 export interface SubjectTileItem {
   /** Stable subject id, passed back through onPick. */
@@ -61,17 +62,15 @@ const SubjectTilePicker: React.FC<SubjectTilePickerProps> = ({
         </h2>
       )}
       {hasMine && (
-        <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4">
-          {(['mine', 'all'] as const).map(sc => (
-            <button
-              key={sc}
-              onClick={() => onScopeChange(sc)}
-              className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${scope === sc ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
-            >
-              {sc === 'mine' ? 'My Subjects' : 'All Subjects'}
-            </button>
-          ))}
-        </div>
+        <HorizontalTabs
+          variant="pill"
+          size="sm"
+          label="Subject scope"
+          className="w-fit mb-4"
+          value={scope}
+          onChange={onScopeChange}
+          options={[{ value: 'mine', label: 'My Subjects' }, { value: 'all', label: 'All Subjects' }]}
+        />
       )}
       <div className="grid grid-cols-2 gap-3">
         {list.map(s => (

@@ -42,6 +42,7 @@ import {
   ZoomOut,
 } from 'lucide-react';
 import { MotionDiv } from '../Motion';
+import HorizontalTabs from '../ui/HorizontalTabs';
 import { prettyBytes } from './storage';
 import { fetchPdfCached } from './pdfCache';
 import { clearLoopPlace, loadLoopPlace, saveLoopPlace } from './loopResume';
@@ -1024,13 +1025,6 @@ const Viewer: React.FC<ViewerProps> = ({
   };
 
   // ── render ──
-  const segBtn = (active: boolean) =>
-    `px-4 py-1.5 rounded-lg text-[13px] transition-all ${
-      active
-        ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm'
-        : 'text-zinc-500 dark:text-zinc-400'
-    }`;
-
   return createPortal(
     <div
       ref={rootRef}
@@ -1065,14 +1059,15 @@ const Viewer: React.FC<ViewerProps> = ({
           </div>
           <div className="order-last flex w-full min-w-0 items-center justify-end gap-1.5 sm:order-none sm:w-auto sm:gap-2">
           {scheme && (
-            <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Paper or marking scheme">
-              <button aria-pressed={side === 'paper'} onClick={() => setSide('paper')} className={segBtn(side === 'paper')}>
-                Paper
-              </button>
-              <button aria-pressed={side === 'scheme'} onClick={() => setSide('scheme')} className={segBtn(side === 'scheme')}>
-                Scheme
-              </button>
-            </div>
+            <HorizontalTabs
+              variant="pill"
+              size="sm"
+              label="Paper or marking scheme"
+              className="shrink-0"
+              value={side}
+              onChange={next => setSide(next as Side)}
+              options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]}
+            />
           )}
           {/* Answers — the flagship per-question marking-scheme reveal. A
               standalone one-tap toggle (not buried in the Tools menu), shown

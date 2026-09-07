@@ -37,6 +37,6 @@ export const FONT = {
 export const SPACE = { section: 'py-[72px] md:py-[128px]', sectionTight: 'py-[56px] md:py-[96px]' } as const;
 
 /** Where the primary CTA sends people. The app's sign-in lives at the root. */
-export const APP_URL = '/';
+export const APP_URL = '/?from=landing';
 /** There is no dedicated sign-in route: every path renders the login page when signed out. */
-export const APP_SIGNIN_URL = '/';
+export const APP_SIGNIN_URL = '/?from=landing';

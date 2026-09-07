@@ -232,7 +232,7 @@ function ResultsPhase({
 
       {/* Sort & Filter controls */}
       <div className="flex flex-wrap gap-2 mb-4">
-        <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+        <div className="inline-flex items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
           {([['match', 'Recommended'], ['points', 'Points']] as const).map(([key, label]) => {
             const active = sortMode === key;
             const isPoints = key === 'points';
@@ -241,8 +241,8 @@ function ResultsPhase({
                 key={key}
                 onClick={() => { if (isPoints && active && onPointsDirToggle) onPointsDirToggle(); else onSortChange(key); }}
                 title={isPoints ? (active ? `Points: ${pointsAsc ? 'low → high' : 'high → low'} — tap to flip` : 'Sort by points') : undefined}
-                className={`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors inline-flex items-center gap-1 ${
-                  active ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
+                className={`min-h-9 shrink-0 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors inline-flex items-center gap-1 ${
+                  active ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm' : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
                 }`}
               >
                 {isPoints && active && (pointsAsc ? <ArrowUp size={12} /> : <ArrowDown size={12} />)}

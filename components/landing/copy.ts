@@ -162,8 +162,8 @@ export const COPY = {
 
   subjects: {
     eyebrow: 'Subjects',
-    title: 'Fifteen subjects in the Mark Bank. A hundred in the Paper Trail.',
-    lede: 'The Mark Bank is built subject by subject, from the marking schemes. The Paper Trail holds the SEC’s papers from 2010 on, for the Leaving Cert, LCA and Junior Cycle.',
+    title: 'Fifteen subjects in the Mark Bank. Fifty-nine Leaving Cert subjects in the Paper Trail.',
+    lede: 'The Mark Bank is built subject by subject, from the marking schemes. The Paper Trail holds the SEC’s papers from 2010 on for fifty-nine Leaving Cert subjects, from Accounting to the non-curricular languages, plus Junior Cycle and LCA.',
     columns: { subject: 'Subject', markBank: 'Mark Bank cards', paperTrail: 'Paper Trail', papers: 'Papers' },
     yes: 'Yes',
     notYet: 'Not yet',
@@ -195,7 +195,6 @@ export const COPY = {
     ],
     contact: 'Email us',
     small: '© 2026 NextStepUni Ltd. Made in Ireland.',
-    attribution: 'Examination material © State Examinations Commission.',
   },
 };
 

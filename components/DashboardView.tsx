@@ -215,39 +215,6 @@ const StatCell: React.FC<{ eyebrow: string; value: string; meta: string; accent?
   </div>
 );
 
-const SegmentedControl = <T extends string>({
-  label,
-  value,
-  options,
-  onChange,
-}: {
-  label: string;
-  value: T;
-  options: Array<{ id: T; label: string }>;
-  onChange: (value: T) => void;
-}) => {
-  const mobileAppDesign = useMobileAppDesign();
-  return (
-  <div className="inline-flex rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1" role="group" aria-label={label}>
-    {options.map(option => (
-      <button
-        key={option.id}
-        type="button"
-        aria-pressed={value === option.id}
-        onClick={() => onChange(option.id)}
-        className={`${mobileAppDesign ? 'min-h-11 text-[13px]' : 'min-h-8 text-[11px]'} rounded-lg px-3 font-semibold transition-colors ${
-          value === option.id
-            ? 'bg-[var(--ink-primary)] text-[var(--surface-paper)]'
-            : 'text-[var(--ink-secondary)] hover:text-[var(--ink-primary)]'
-        }`}
-      >
-        {option.label}
-      </button>
-    ))}
-  </div>
-  );
-};
-
 const DashboardView: React.FC<DashboardViewProps> = ({
   userProgress,
   allCourses,
@@ -461,10 +428,12 @@ const DashboardView: React.FC<DashboardViewProps> = ({
       detail={`${rangeBounds.label}${subject === 'all' ? ' · all subjects' : ` · ${subject}`}`}
       action={
         <div className="flex flex-wrap justify-end gap-2">
-          <SegmentedControl
+          <HorizontalTabs
+            variant="pill"
+            size="sm"
             label="Study activity measure"
             value={metric}
-            options={[{ id: 'sessions', label: 'Sessions' }, { id: 'minutes', label: 'Minutes' }]}
+            options={[{ value: 'sessions', label: 'Sessions' }, { value: 'minutes', label: 'Minutes' }]}
             onChange={value => setMetric(value as ActivityMetric)}
           />
           <InsightsToggle
@@ -631,7 +600,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                     {subjects.map(item => <option key={item} value={item}>{item}</option>)}
                   </select>
                 </label>
-                <SegmentedControl label="Dashboard time range" value={range} options={RANGE_OPTIONS} onChange={value => setRange(value as DashboardRange)} />
+                <HorizontalTabs variant="pill" size="sm" label="Dashboard time range" value={range} options={RANGE_OPTIONS.map(item => ({ value: item.id, label: item.label }))} onChange={value => setRange(value as DashboardRange)} />
                 {onToggleTheme && (
                   <button
                     type="button"
@@ -658,6 +627,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
 
           <HorizontalTabs
             className="mb-5 mt-6"
+            variant="pill"
             value={tab}
             options={TABS.map(item => ({ value: item.id, label: item.label }))}
             label="Dashboard sections"

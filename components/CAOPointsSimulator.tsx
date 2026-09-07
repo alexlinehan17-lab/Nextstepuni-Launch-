@@ -18,6 +18,7 @@ import { db } from '../firebase';
 import { reportSaveError } from '../utils/logError';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { COLORS } from '../design/tokens';
+import HorizontalTabs from './ui/HorizontalTabs';
 import { computeBestSixBreakdown } from './pointsScenarioStore';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
@@ -401,28 +402,15 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
       )}
 
       {/* C. Tab Switcher */}
-      <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
-        <button
-          onClick={() => setActiveTab('overview')}
-          className={`py-2 px-4 rounded-lg text-sm transition-all ${
-            activeTab === 'overview'
-              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
-              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-          }`}
-        >
-          Overview
-        </button>
-        <button
-          onClick={() => setActiveTab('what-if')}
-          className={`py-2 px-4 rounded-lg text-sm transition-all ${
-            activeTab === 'what-if'
-              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
-              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-          }`}
-        >
-          What-If Explorer
-        </button>
-      </div>
+      <HorizontalTabs
+        variant="pill"
+        size="md"
+        label="Points simulator view"
+        value={activeTab}
+        onChange={next => setActiveTab(next as 'overview' | 'what-if')}
+        options={[{ value: 'overview', label: 'Overview' }, { value: 'what-if', label: 'What-If Explorer' }]}
+        className="w-fit"
+      />
 
       {/* D. Overview Tab */}
       <AnimatePresence mode="wait">

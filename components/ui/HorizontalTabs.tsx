@@ -19,6 +19,8 @@ interface HorizontalTabsProps<T extends string> {
   onChange: (value: T) => void;
   label: string;
   variant?: 'underline' | 'pill';
+  /** Pill only: 'md' is the section-tab size (44px), 'sm' the in-card toggle size (36px). */
+  size?: 'sm' | 'md';
   className?: string;
 }
 
@@ -28,6 +30,7 @@ export default function HorizontalTabs<T extends string>({
   onChange,
   label,
   variant = 'underline',
+  size = 'md',
   className = '',
 }: HorizontalTabsProps<T>) {
   const railRef = useRef<HTMLDivElement | null>(null);
@@ -81,7 +84,7 @@ export default function HorizontalTabs<T extends string>({
                 } : undefined}
                 onClick={() => onChange(option.value)}
                 className={pill
-                  ? `min-h-11 shrink-0 whitespace-nowrap rounded-lg border px-4 text-sm font-semibold transition-colors ${active ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm' : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
+                  ? `${size === 'sm' ? 'min-h-9 px-3 text-[13px]' : 'min-h-11 px-4 text-sm'} shrink-0 whitespace-nowrap rounded-lg border font-semibold transition-colors ${active ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm' : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
                   : `relative min-h-11 ${mobileAppDesign ? 'min-w-11' : ''} shrink-0 whitespace-nowrap pt-0.5 text-xs font-semibold transition-colors ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
                 }
               >

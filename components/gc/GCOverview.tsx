@@ -38,6 +38,7 @@ import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import { GCKeyEvents } from './GCKeyEvents';
 import { SubjectHealthPanel } from './SubjectHealthPanel';
 import GCExportModal from './GCExportModal';
+import HorizontalTabs from '../ui/HorizontalTabs';
 import { STATUS_CONFIG } from '../../utils/studentStatus';
 import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
 import { logError } from '../../utils/logError';
@@ -794,21 +795,14 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       >
         <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">Cohort filter</span>
         {/* Curriculum toggle — always visible */}
-        <div className="flex items-center gap-0.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
-          {(['all', 'junior', 'senior'] as const).map(lvl => (
-            <button
-              key={lvl}
-              onClick={() => handleCurriculumChange(lvl)}
-              className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all ${
-                curriculumFilter === lvl
-                  ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                  : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
-              }`}
-            >
-              {lvl === 'all' ? 'All' : lvl === 'junior' ? 'Junior Cycle' : 'Senior Cycle'}
-            </button>
-          ))}
-        </div>
+        <HorizontalTabs
+          variant="pill"
+          size="sm"
+          label="Curriculum"
+          value={curriculumFilter}
+          onChange={handleCurriculumChange}
+          options={[{ value: 'all', label: 'All' }, { value: 'junior', label: 'Junior Cycle' }, { value: 'senior', label: 'Senior Cycle' }]}
+        />
         {/* Year-group select — scoped by the active curriculum toggle so
             the JC view never offers 5th/6th and the senior view never
             offers 1st/2nd/3rd. TY rides senior content per Phase 1, so
@@ -933,15 +927,15 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
               <div className="mb-3 space-y-2">
                 <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">Audience</p>
                 {/* Curriculum toggle — exclusive (one of three) */}
-                <div className="flex items-center gap-0.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+                <div className="flex w-full items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
                   {(['all', 'junior', 'senior'] as const).map(lvl => (
                     <button
                       key={lvl}
                       onClick={() => { setBroadcastCurriculum(lvl); setBroadcastYearGroups(new Set()); }}
-                      className={`flex-1 px-2 py-1.5 rounded-md text-[11px] font-bold transition-all ${
+                      className={`flex-1 min-h-9 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors ${
                         broadcastCurriculum === lvl
-                          ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'
+                          ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
+                          : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
                       }`}
                     >
                       {lvl === 'all' ? 'Everyone' : lvl === 'junior' ? 'Junior Cycle' : 'Senior Cycle'}
@@ -1701,19 +1695,14 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                               </p>
                               <div className="flex items-center gap-2 mb-3">
                                 <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Priority:</span>
-                                <button
-                                  onClick={() => setFlagPriority('normal')}
-                                  className={`px-2.5 py-1 rounded-md text-[10px] font-semibold transition-colors ${flagPriority === 'normal' ? 'text-white' : 'text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800'}`}
-                                  style={flagPriority === 'normal' ? { backgroundColor: ACCENT } : undefined}
-                                >
-                                  Normal
-                                </button>
-                                <button
-                                  onClick={() => setFlagPriority('high')}
-                                  className={`px-2.5 py-1 rounded-md text-[10px] font-semibold transition-colors ${flagPriority === 'high' ? 'bg-amber-500 text-white' : 'text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800'}`}
-                                >
-                                  High
-                                </button>
+                                <HorizontalTabs
+                                  variant="pill"
+                                  size="sm"
+                                  label="Flag priority"
+                                  value={flagPriority}
+                                  onChange={next => setFlagPriority(next as FlagPriority)}
+                                  options={[{ value: 'normal', label: 'Normal' }, { value: 'high', label: 'High' }]}
+                                />
                               </div>
                               <div className="flex gap-2">
                                 {rowFlagged && (
@@ -1944,21 +1933,14 @@ function DailyActivityChart({
           <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Engagement</p>
           <p className="text-lg font-medium text-zinc-900 dark:text-white mt-0.5">Daily Activity</p>
         </div>
-        <div className="flex rounded-lg bg-zinc-100 dark:bg-zinc-800 p-0.5">
-          {(['7d', '30d'] as const).map(range => (
-            <button
-              key={range}
-              onClick={() => onRangeChange(range)}
-              className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${
-                activityRange === range
-                  ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm'
-                  : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-              }`}
-            >
-              {range}
-            </button>
-          ))}
-        </div>
+        <HorizontalTabs
+          variant="pill"
+          size="sm"
+          label="Activity range"
+          value={activityRange}
+          onChange={onRangeChange}
+          options={[{ value: '7d', label: '7d' }, { value: '30d', label: '30d' }]}
+        />
       </div>
 
       {/* Chart */}
