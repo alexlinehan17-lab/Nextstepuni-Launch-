@@ -1,121 +1,50 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React from 'react';
-import { MotionDiv } from './Motion';
-import {
-  ArrowLeft, TrendingUp, Clock, RefreshCw, Flame, BarChart3, Sparkles, Lightbulb,
-  Zap, BookOpen, Calendar, Target,
-} from 'lucide-react';
-import { type StreakData } from '../hooks/useStreak';
-import { type StrategyMasteryMap } from '../types';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import type { StreakData } from '../hooks/useStreak';
+import type { StrategyMasteryMap } from '../types';
 import { useInsights, type Insight } from '../hooks/useInsights';
+import StarGuide from './ui/StarGuide';
 
-// FIX: Cast motion components to any to bypass broken type definitions
-
-const ICON_MAP: Record<string, React.FC<{ size?: number; className?: string }>> = {
-  TrendingUp,
-  Clock,
-  RefreshCw,
-  Flame,
-  BarChart3,
-  Sparkles,
-  Lightbulb,
-  Zap,
-  BookOpen,
-  Calendar,
-  Target,
-};
-
+export type InsightAction = 'study' | 'planner' | 'progress';
 interface InsightsViewProps {
   uid: string;
   streak: StreakData;
   strategyMastery: StrategyMasteryMap;
   onBack: () => void;
+  onAction: (action: InsightAction) => void;
+}
+const CATEGORY_LABELS = { momentum: 'Your study record', pattern: 'A pattern to consider', strategy: 'Your approach', streak: 'Showing up' };
+function nextAction(insight: Insight): { action: InsightAction; label: string } {
+  if (insight.category === 'strategy' || insight.category === 'streak' || insight.id.startsWith('subject-gap-')) return { action: 'study', label: 'Plan a study session' };
+  if (insight.category === 'pattern') return { action: 'planner', label: 'Review your timetable' };
+  return { action: 'progress', label: 'See your study record' };
 }
 
-function InsightCard({ insight, index }: { insight: Insight; index: number }) {
-  const IconComponent = ICON_MAP[insight.icon] ?? Lightbulb;
-
-  return (
-    <MotionDiv
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.35, delay: 0.08 * index }}
-      className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 flex items-start gap-4"
-    >
-      <div className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 ${
-        insight.iconColor.includes('emerald') ? 'bg-emerald-50 dark:bg-emerald-500/10' :
-        insight.iconColor.includes('blue') ? 'bg-blue-50 dark:bg-blue-500/10' :
-        insight.iconColor.includes('violet') ? 'bg-violet-50 dark:bg-violet-500/10' :
-        insight.iconColor.includes('purple') ? 'bg-purple-50 dark:bg-purple-500/10' :
-        insight.iconColor.includes('orange') ? 'bg-orange-50 dark:bg-orange-500/10' :
-        insight.iconColor.includes('amber') ? 'bg-amber-50 dark:bg-amber-500/10' :
-        insight.iconColor.includes('pink') ? 'bg-pink-50 dark:bg-pink-500/10' :
-        insight.iconColor.includes('teal') ? 'bg-teal-50 dark:bg-teal-500/10' :
-        insight.iconColor.includes('rose') ? 'bg-rose-50 dark:bg-rose-500/10' :
-        insight.iconColor.includes('indigo') ? 'bg-indigo-50 dark:bg-indigo-500/10' :
-        'bg-zinc-100 dark:bg-zinc-800'
-      }`}>
-        <IconComponent size={18} className={insight.iconColor} />
-      </div>
-      <div className="min-w-0">
-        <p className="font-semibold text-zinc-800 dark:text-white text-sm leading-snug">{insight.title}</p>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 leading-relaxed">{insight.description}</p>
-      </div>
-    </MotionDiv>
-  );
-}
-
-const InsightsView: React.FC<InsightsViewProps> = ({ uid, streak, strategyMastery, onBack }) => {
+export default function InsightsView({ uid, streak, strategyMastery, onBack, onAction }: InsightsViewProps) {
   const { insights, isLoaded } = useInsights(uid, streak, strategyMastery);
-
-  return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 pt-16 md:pt-24 pb-40 md:pb-32 px-4 sm:px-6 transition-colors duration-500">
-      <div className="max-w-3xl mx-auto">
-        {/* Header */}
-        <div className="flex items-center gap-4 mb-10">
-          <button
-            onClick={onBack}
-            className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
-          >
-            <ArrowLeft size={18} className="text-zinc-600 dark:text-zinc-400" />
-          </button>
-          <div>
-            <h1 className="font-serif text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white">Your Insights</h1>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">Patterns from your study data</p>
-          </div>
-        </div>
-
-        {/* Content */}
-        {!isLoaded ? (
-          <div className="flex items-center justify-center py-20">
-            <div className="w-6 h-6 border-2 border-zinc-300 dark:border-zinc-600 border-t-transparent rounded-full animate-spin" />
-          </div>
-        ) : insights.length === 0 ? (
-          <MotionDiv
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="text-center py-20"
-          >
-            <div className="w-14 h-14 mx-auto rounded-2xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center mb-4">
-              <Lightbulb size={24} className="text-amber-500" />
-            </div>
-            <p className="text-zinc-600 dark:text-zinc-400 text-sm font-medium">Keep studying — insights will appear as you build more data.</p>
-          </MotionDiv>
-        ) : (
-          <div className="space-y-3">
-            {insights.map((insight, i) => (
-              <InsightCard key={insight.id} insight={insight} index={i} />
-            ))}
-          </div>
-        )}
-      </div>
+  return <main className="min-h-screen bg-white px-5 pb-36 pt-16 text-zinc-900 dark:bg-zinc-950 dark:text-white md:pt-24">
+    <div className="mx-auto max-w-2xl">
+      <button onClick={onBack} className="mb-7 inline-flex min-h-11 items-center gap-2 rounded-lg pr-4 text-base font-semibold"><ArrowLeft size={20} aria-hidden="true" /> Home</button>
+      <header className="mb-8 flex items-center justify-between gap-4">
+        <div><p className="text-xs font-bold uppercase tracking-[0.16em] text-[#B54D14] dark:text-orange-400">Your next step</p><h1 className="mt-2 font-serif text-4xl font-bold tracking-tight">Your Insights</h1><p className="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">What your study record is telling you.</p></div>
+        <StarGuide size={72} className="shrink-0" />
+      </header>
+      {!isLoaded ? <p role="status" className="border-t border-zinc-200 py-8 dark:border-zinc-700">Reading your study record…</p> : insights.length === 0 ? <section className="rounded-2xl border border-zinc-300 p-6 dark:border-zinc-700">
+        <h2 className="font-serif text-2xl font-semibold">Start with one session.</h2>
+        <p className="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">As you record study sessions and reflections, this page will show patterns in your timing, subjects and confidence.</p>
+        <button onClick={() => onAction('study')} className="mt-6 flex min-h-12 w-full items-center justify-between gap-3 rounded-xl bg-[#F26B1F] px-4 py-3 font-bold text-[#1A1A1A]">Plan a study session <ArrowRight size={20} aria-hidden="true" /></button>
+      </section> : <div>
+        {insights.map((insight, index) => {
+          const next = nextAction(insight);
+          return <article key={insight.id} className={index === 0 ? 'mb-7 rounded-2xl bg-[#1A1A1A] p-6 text-white' : 'border-t border-zinc-300 py-6 dark:border-zinc-700'}>
+            <p className={`mb-3 text-xs font-bold uppercase tracking-widest ${index === 0 ? 'text-[#F26B1F]' : 'text-zinc-600 dark:text-zinc-400'}`}>{CATEGORY_LABELS[insight.category]}</p>
+            <h2 className={`font-serif font-semibold leading-tight ${index === 0 ? 'text-3xl' : 'text-2xl'}`}>{insight.title}</h2>
+            <p className={`mt-3 text-base leading-relaxed ${index === 0 ? 'text-zinc-200' : 'text-zinc-600 dark:text-zinc-300'}`}>{insight.description}</p>
+            <button onClick={() => onAction(next.action)} className={`mt-4 flex min-h-11 items-center gap-3 text-left text-base font-semibold underline underline-offset-4 ${index === 0 ? 'text-white' : 'text-[#B54D14] dark:text-orange-400'}`}>{next.label}<ArrowRight size={18} aria-hidden="true" className="shrink-0" /></button>
+          </article>;
+        })}
+        <p className="border-t border-zinc-300 pt-5 text-sm leading-relaxed text-zinc-500 dark:border-zinc-700 dark:text-zinc-400">Based on what you’ve recorded in NextStepUni. Study outside the app won’t appear here.</p>
+      </div>}
     </div>
-  );
-};
-
-export default InsightsView;
+  </main>;
+}

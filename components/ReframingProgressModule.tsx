@@ -17,61 +17,11 @@ import { Cite } from './ModuleReferences';
 import { REFRAMING_PROGRESS_REFERENCE_LIST } from '../data/references/reframingProgress';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
+import KanbanBoard from './activities/KanbanBoard';
+
 const theme = accentTheme;
 
 // --- INTERACTIVE COMPONENTS ---
-
-const KanbanBoard = () => {
-    const [tasks, setTasks] = useState([
-        { id: 1, text: "Write Macbeth Quote Bank", column: 'todo' },
-        { id: 2, text: "Do 2023 Paper 1 Algebra Q", column: 'todo' },
-        { id: 3, text: "Practice Irish Oral Poem", column: 'doing' },
-    ]);
-    const [wins, setWins] = useState(0);
-
-    const onDragEnd = (info: any, item: any) => {
-        const point = info.point;
-        const columns = document.querySelectorAll('.kanban-col');
-        let targetColumn = null;
-        columns.forEach((col: any) => {
-            const rect = col.getBoundingClientRect();
-            if (point.x > rect.left && point.x < rect.right && point.y > rect.top && point.y < rect.bottom) {
-                targetColumn = col.dataset.column;
-            }
-        });
-
-        if (targetColumn) {
-            if (item.column !== 'done' && targetColumn === 'done') {
-                setWins(w => w + 1);
-            }
-            setTasks(prev => prev.map(t => t.id === item.id ? { ...t, column: targetColumn } : t));
-        }
-    };
-
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Kanban Flow</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Drag tasks to the "Done" column to secure a "Win".</p>
-             <div className="grid grid-cols-3 gap-4">
-                {['todo', 'doing', 'done'].map(col => (
-                    <div key={col} data-column={col} className="kanban-col p-4 rounded-xl min-h-[200px]" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
-                        <h5 className="font-bold text-center text-sm uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{col} {col === 'done' && `(${wins})`}</h5>
-                        <div className="mt-4 space-y-2">
-                            {tasks.filter(t => t.column === col).map(task => (
-                                <motion.div
-                                    key={task.id}
-                                    drag
-                                    onDragEnd={(e, info) => onDragEnd(info, task)}
-                                    className="p-3 rounded-lg text-sm font-semibold cursor-grab active:cursor-grabbing" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '3px 3px 0px 0px #1C1917' }}
-                                >{task.text}</motion.div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-             </div>
-        </div>
-    );
-};
 
 const RetrospectiveLog = () => {
     const [topics, setTopics] = useState([

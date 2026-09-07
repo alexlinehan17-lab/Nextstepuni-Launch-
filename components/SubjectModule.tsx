@@ -6,16 +6,16 @@
 import React from 'react';
 import { Compass, Target, TrendingUp, AlertTriangle, BrainCircuit, Rocket } from 'lucide-react';
 import { type ModuleProgress, type ModuleTheme } from '../types';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import { renderSubjectText as renderParagraph } from './SubjectText';
 import {
   amberTheme, blueTheme, roseTheme, emeraldTheme, orangeTheme,
   tealTheme, cyanTheme, slateTheme, skyTheme, redTheme,
   purpleTheme, fuchsiaTheme, indigoTheme, violetTheme,
   pinkTheme, limeTheme, yellowTheme, grayTheme
 } from '../moduleThemes';
-import { SUBJECT_MODULE_CONTENT, type SubjectHighlight } from '../subjectModuleData';
+import { SUBJECT_MODULE_CONTENT } from '../subjectModuleData';
 
 const SECTION_ICONS = [Compass, Target, TrendingUp, AlertTriangle, BrainCircuit, Rocket];
 
@@ -26,63 +26,6 @@ const THEME_MAP: Record<string, ModuleTheme> = {
   indigo: indigoTheme, violet: violetTheme, pink: pinkTheme, lime: limeTheme,
   yellow: yellowTheme, gray: grayTheme,
 };
-
-/**
- * Parse paragraph text with **bold**, [[highlight]] and {{cite:N}} markers into
- * React nodes. The {{cite:N}} marker renders an inline <Cite n={N}/> superscript
- * (1-based), matching the dedicated modules' citation UX.
- */
-function renderParagraph(text: string, highlights: SubjectHighlight[], theme: ModuleTheme): React.ReactNode {
-  const parts: React.ReactNode[] = [];
-  let remaining = text;
-  let key = 0;
-
-  while (remaining.length > 0) {
-    const hlStart = remaining.indexOf('[[');
-    const boldStart = remaining.indexOf('**');
-    const citeStart = remaining.indexOf('{{cite:');
-
-    const nextHl = hlStart >= 0 ? hlStart : Infinity;
-    const nextBold = boldStart >= 0 ? boldStart : Infinity;
-    const nextCite = citeStart >= 0 ? citeStart : Infinity;
-
-    const next = Math.min(nextHl, nextBold, nextCite);
-
-    if (next === Infinity) {
-      parts.push(remaining);
-      break;
-    }
-
-    if (next === nextCite) {
-      if (citeStart > 0) parts.push(remaining.slice(0, citeStart));
-      const citeEnd = remaining.indexOf('}}', citeStart);
-      if (citeEnd < 0) { parts.push(remaining); break; }
-      const n = parseInt(remaining.slice(citeStart + 7, citeEnd), 10);
-      if (!Number.isNaN(n)) parts.push(<Cite key={key++} n={n} />);
-      remaining = remaining.slice(citeEnd + 2);
-    } else if (next === nextHl) {
-      if (hlStart > 0) parts.push(remaining.slice(0, hlStart));
-      const hlEnd = remaining.indexOf(']]', hlStart);
-      if (hlEnd < 0) { parts.push(remaining); break; }
-      const term = remaining.slice(hlStart + 2, hlEnd);
-      const hl = highlights.find(h => h.term === term);
-      parts.push(
-        <Highlight key={key++} description={hl?.description || ''} theme={theme}>
-          {term}
-        </Highlight>
-      );
-      remaining = remaining.slice(hlEnd + 2);
-    } else {
-      if (boldStart > 0) parts.push(remaining.slice(0, boldStart));
-      const boldEnd = remaining.indexOf('**', boldStart + 2);
-      if (boldEnd < 0) { parts.push(remaining); break; }
-      parts.push(<strong key={key++}>{remaining.slice(boldStart + 2, boldEnd)}</strong>);
-      remaining = remaining.slice(boldEnd + 2);
-    }
-  }
-
-  return <>{parts}</>;
-}
 
 interface SubjectModuleProps {
   subjectId: string;
