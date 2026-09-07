@@ -68,9 +68,13 @@ const Playground: React.FC = () => {
   const meta = COPY.playground.tabs.find(t => t.id === tab)!;
   const Glass = GLASS[tab];
 
-  // Live surfaces only run (and only fetch) while the stage is on screen.
+  // Live surfaces only run (and only fetch) while the stage is on screen — and
+  // not until the headline has finished arriving, so the first real render
+  // (Mark Bank is heavy) never stutters the reveal above it.
   const stageRef = useRef<HTMLDivElement>(null);
   const stageInView = useInView(stageRef, { amount: 0.25 });
+  const [settled, setSettled] = useState(reduce);
+  useEffect(() => { if (reduce) return; const id = window.setTimeout(() => setSettled(true), 1300); return () => window.clearTimeout(id); }, [reduce]);
 
   useEffect(() => {
     const onDemo = (e: Event) => {
@@ -88,10 +92,14 @@ const Playground: React.FC = () => {
     <div id="playground" style={{ scrollMarginTop: 90 }}>
       <div className="flex items-end justify-between gap-4 mb-4">
         <p className="m-0" style={{ fontFamily: FONT.sans, fontSize: 15, fontWeight: 600, color: L.ink, lineHeight: 1.4 }}>{COPY.playground.eyebrow}</p>
+        <span className="inline-flex items-center gap-2 shrink-0" style={{ fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: L.faint }}>
+          <span aria-hidden="true" className="landing-live-dot" style={{ width: 7, height: 7, borderRadius: 999, background: L.orange, display: 'inline-block' }} />
+          {COPY.playground.live}
+        </span>
       </div>
       <div style={{ background: L.paper, border: `1.5px solid ${L.edge}`, borderRadius: 22, overflow: 'hidden' }}>
         {/* Product tabs + the live mark */}
-        <div className="flex items-center justify-between gap-4 px-3 sm:px-5" style={{ borderBottom: `1px solid ${L.hairline}` }}>
+        <div className="flex items-center px-3 sm:px-5" style={{ borderBottom: `1px solid ${L.hairline}` }}>
           <TextTabs
             ariaLabel="Product"
             items={COPY.playground.tabs.map(t => ({ id: t.id, label: t.label }))}
@@ -100,10 +108,6 @@ const Playground: React.FC = () => {
             className="landing-strip"
             size="md"
           />
-          <span className="hidden sm:inline-flex items-center gap-2 shrink-0" style={{ fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: L.faint }}>
-            <span aria-hidden="true" className="landing-live-dot" style={{ width: 7, height: 7, borderRadius: 999, background: L.orange, display: 'inline-block' }} />
-            {COPY.playground.live}
-          </span>
         </div>
 
         {/* The window into the app */}
@@ -116,7 +120,7 @@ const Playground: React.FC = () => {
               exit={reduce ? undefined : { opacity: 0 }}
               transition={{ duration: 0.2, ease: 'easeOut' }}
             >
-              <Glass sub={subs[tab]} active={stageInView} />
+              <Glass sub={subs[tab]} active={stageInView && settled} />
             </MotionDiv>
           </AnimatePresence>
         </div>
@@ -133,7 +137,7 @@ const Playground: React.FC = () => {
               className="landing-strip"
             />
           ) : <span />}
-          <p className="m-0 sm:text-right" style={{ fontFamily: FONT.sans, fontSize: 13, color: L.faint, lineHeight: 1.4, padding: '6px 0' }}>{meta.hint}</p>
+          {meta.hint && <p className="m-0 sm:text-right" style={{ fontFamily: FONT.sans, fontSize: 13, color: L.faint, lineHeight: 1.4, padding: '6px 0' }}>{meta.hint}</p>}
         </div>
       </div>
       <div className="sm:hidden mt-4">

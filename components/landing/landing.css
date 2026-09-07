@@ -84,3 +84,28 @@
 @media (prefers-reduced-motion: reduce) {
   .landing-glass .landing-shake { animation: none; }
 }
+
+/* Tabs live in a clipped rail, so their padlock sits inline after the label instead of on the corner. */
+.landing-glass [role="tab"].landing-locked::after { position: static; display: inline-block; vertical-align: middle; margin-left: 6px; }
+/* Paper Trail's home footer (Topic Atlas / Practice tools links) is a way out of the tool; the playground has its own. */
+.landing-glass .pt-home-links, .landing-glass .pt-context { display: none !important; }
+
+/* ── Highlighter under the headline words ──────────────────────────────────
+   A pale orange band sweeps in from the left under the word the pointer is on
+   and fades away once it has moved off. */
+.landing-hl { position: relative; z-index: 0; }
+.landing-hl::after {
+  content: '';
+  position: absolute;
+  left: -0.04em; right: -0.04em; bottom: 0.06em; height: 0.36em;
+  background: #FDEEDF;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.5s ease;
+  opacity: 1;
+  pointer-events: none;
+}
+.landing-hl--on::after { transform: scaleX(1); }
+.landing-hl--out::after { transform: scaleX(1); opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .landing-hl::after { transition: none; } }

@@ -317,7 +317,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
         <div className="flex items-end gap-2 h-20 mb-2">
           {RIASEC_LETTERS.map((l) => (
             <div key={l} className="flex-1 flex flex-col items-center justify-end h-full">
-              <div className="w-full rounded-t-md" style={{ height: `${Math.max(6, (a.studentProfile[l] / a.maxScale) * 100)}%`, backgroundColor: topTypes.includes(l) ? COLORS.accent : '#D8D4CE' }} />
+              <div className="w-full rounded-t-md" style={{ height: `${Math.max(6, (a.studentProfile[l] / a.maxScale) * 100)}%`, backgroundColor: topTypes.includes(l) ? COLORS.accent : '#D8D4CE', border: topTypes.includes(l) ? '1.5px solid #1A1A1A' : undefined, borderBottom: topTypes.includes(l) ? 0 : undefined, boxSizing: 'border-box' }} />
               <span className="text-[10px] font-bold text-zinc-400 mt-1">{l}</span>
             </div>
           ))}

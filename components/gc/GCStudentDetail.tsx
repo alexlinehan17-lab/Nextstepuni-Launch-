@@ -92,7 +92,7 @@ const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculu
   { id: 'journey',          title: 'Academic Journey Simulator', curriculum: 'senior' },
   { id: 'cao-simulator',    title: 'Points Passport · Grade Planner', curriculum: 'senior' },
   { id: 'flashcards',       title: 'Flashcard Studio',           curriculum: 'both' },
-  { id: 'planner',          title: 'Spaced Repetition Timetable', curriculum: 'both' },
+  { id: 'planner',          title: 'Planner & Study', curriculum: 'both' },
   { id: 'war-room',         title: 'War Room',                   curriculum: 'senior' },
   { id: 'comeback',         title: 'Comeback Engine',            curriculum: 'both' },
   { id: 'future-finder',    title: 'Future Finder', jcTitle: 'Subject Explorer', curriculum: 'both' },

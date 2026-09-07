@@ -23,7 +23,7 @@ import { type CourseData } from './Library';
 export const TOOL_TITLES: Record<string, string> = {
   'journey': 'Academic Journey Simulator',
   'cao-simulator': 'Points Passport · Grade Planner',
-  'planner': 'Spaced Repetition Timetable',
+  'planner': 'Planner & Study',
   'war-room': 'War Room · Subject Coverage',
   'comeback': 'Comeback Engine',
   'future-finder-revamped': 'Future Finder',

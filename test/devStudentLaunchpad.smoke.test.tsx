@@ -42,7 +42,7 @@ describe('dev student Launchpad profile handoff', () => {
       />,
     );
 
-    const title = screen.getByRole('heading', { name: 'Spaced Repetition Timetable' });
+    const title = screen.getByRole('heading', { name: 'Planner & Study' });
     const card = title.closest('.cursor-pointer');
     expect(card).not.toBeNull();
     expect(within(card as HTMLElement).getByText('Launch tool')).toBeInTheDocument();
