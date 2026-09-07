@@ -57,11 +57,11 @@ export const COPY = {
     eyebrow: 'Have a go. No account needed.',
     cta: 'Open the app',
     tabs: [
-      { id: 'markbank', label: 'Mark Bank', hint: 'Answer it in your head, then reveal the scheme. The marking points are the SEC’s own words.' },
-      { id: 'atlas', label: 'Topic Atlas', hint: 'Pick a topic. The years it came up light up.' },
-      { id: 'planner', label: 'Planner', hint: 'A sample week. Yours is built from your subjects, your grades and your exam date.' },
-      { id: 'launchpad', label: 'Launchpad', hint: 'Tap the word the examiner is marking against.' },
+      { id: 'markbank', label: 'Mark Bank', hint: 'This is the real Mark Bank. Pick a subject, start a session, grade yourself.' },
+      { id: 'atlas', label: 'Topic Atlas', hint: 'Real questions, cropped from the printed papers. Tap one for its marking scheme.' },
+      { id: 'reflex', label: 'Command-Word Reflex', hint: 'Tap the word the examiner is marking against.' },
     ],
+    live: 'Live · the actual app',
     markbank: { flip: 'Reveal the marking scheme', back: 'Hide the scheme', next: 'Next card', marks: 'marks', scoreSelf: 'How did you do? You decide.', got: 'Got it', shaky: 'Shaky', missed: 'Missed it', backLater: 'Nice. This one’s back in about 6 days.', backShaky: 'Grand. Back in a couple of days.', backSoon: 'No bother. It’s back before you finish today.', hint: 'Answer it in your head first.', allOf: 'All of', anyOf: 'Any of', or: 'Or', card: 'Card', of: 'of', markShort: 'm' },
     atlas: { yearsAsked: 'years asked', of: 'of', prompt: 'Biology, Higher Level. Tap a topic.', everyYear: 'Asked every year since 2010.', promptYear: 'Biology, Higher Level. Tap a year.', topics: 'topics', topicList: 'Topics', yearList: 'Years' },
     planner: { today: 'Today', due: 'due', minutes: 'min', rest: 'Rest day. That counts.', done: 'Done', markDone: 'Mark done', paper: 'Paper', thing: 'thing', things: 'things', allDone: 'Done for today.' },
@@ -199,4 +199,4 @@ export const COPY = {
   },
 };
 
-export type PlaygroundTabId = 'markbank' | 'atlas' | 'planner' | 'launchpad';
+export type PlaygroundTabId = 'markbank' | 'atlas' | 'reflex';

@@ -19,12 +19,13 @@ import { CollapseWord, LetterBuild, Reveal } from '../motion';
 import { Body, Button, Container, Display, DropLine, Eyebrow, Frame, Rule, Starguy } from '../primitives';
 import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
+import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
 
 const CHAPTERS = COPY.chapters.items;
 /** Chapters whose giant word Starguy stands at the end of. */
 const HANGS: ReadonlySet<ChapterId> = new Set<ChapterId>(['markbank', 'planner']);
 /** Chapters with a matching playground demo (papertrail and lab have none). Ids map 1:1. */
-const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', atlas: 'atlas', planner: 'planner', launchpad: 'launchpad' };
+const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', atlas: 'atlas', launchpad: 'reflex' };
 
 const anchor = (id: ChapterId): string => `#chapter-${id}`;
 
@@ -141,14 +142,14 @@ const Strip: React.FC<{ active: ChapterId }> = ({ active }) => {
   );
 };
 
-/** The screenshot, or a labelled hairline-grid placeholder until Alex supplies one. */
+/** A supplied screenshot, else a live glimpse of the real surface, else a labelled placeholder. */
 const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
   const src = CAPTURES[chapter.id];
   return (
     <Frame title={chapter.frameLabel} meta={chapter.numeral}>
       {src
         ? <img src={src} alt={chapter.frameLabel} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto' }} />
-        : (
+        : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} /> : (
           <div
             role="img"
             aria-label={COPY.chapters.placeholder}
