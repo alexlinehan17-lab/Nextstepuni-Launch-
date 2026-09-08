@@ -12,6 +12,7 @@ import Nav from './sections/Nav';
 import Hero from './sections/Hero';
 import Numbers from './sections/Numbers';
 import Chapters from './sections/Chapters';
+import Scenes from './fx-h/Scenes';
 import Examiner from './sections/Examiner';
 import TodaysQuestion from './sections/TodaysQuestion';
 import AskThePapers from './sections/AskThePapers';
@@ -31,6 +32,7 @@ const LandingPage: React.FC = () => {
     <main>
       <Hero />
       <Numbers />
+      <Scenes />
       <Chapters />
       <Examiner />
       <TodaysQuestion />
