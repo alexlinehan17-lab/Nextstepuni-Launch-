@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Chapters — the Editions "chapters of a book" anatomy. A sticky contents
- * rail on the left (a horizontal strip on phones) tracks which of the six
+ * rail on the left (a horizontal strip on phones) tracks which of the seven
  * chapters is on screen; on the right each chapter opens with one giant
  * serif word that folds away as the chapter scrolls out (Leonardo's move),
  * then a drop-cap line, the body copy, a link into the playground where a demo
  * exists, and a screenshot frame. Starguy stands on the baseline at the end of
- * the word on chapters I and IV.
+ * the word on chapters I, IV and VII.
  *
  * Effects (components/landing/fx): a flow-field ornament is hatched behind
  * each heading; the frames of I–III blot into the page as they arrive;
@@ -16,6 +16,12 @@
  * lens; the rail numerals carry an orange gauge that fills as each chapter
  * is read, with 'you are here' lettered under the list; and the one circled
  * figure on the page is 2010 in Chapter II.
+ *
+ * Chapter VII (components/landing/fx-f) carries Points Passport's course
+ * search in its frame. Choose a course and the whole chapter rewrites itself
+ * around it in place — word, line, body and frame — with a page turn; a
+ * button turns it back. Every figure on the rewritten page is the course's
+ * own field in components/futureFinderData.ts.
  */
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
@@ -24,7 +30,7 @@ import { COPY, type Chapter, type ChapterId, type PlaygroundTabId } from '../cop
 import { CAPTURES } from '../demoData';
 import { Reveal, WordRise } from '../motion';
 import { StarguySlot, useTravellerLive, type SlotId } from '../starguy/Traveller';
-import { Body, Button, Container, Display, DropLine, Eyebrow, Frame, Rule, Starguy } from '../primitives';
+import { Body, Button, Container, DISPLAY, Display, DropLine, Eyebrow, Frame, Rule, Starguy } from '../primitives';
 import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
@@ -32,16 +38,23 @@ import { Field } from '../fx/Field';
 import { Note } from '../fx/Note';
 import { Spotlight } from '../fx/Spotlight';
 import { Mark, markPhrase } from '../fx/marks';
+import { isStatic } from '../fx/env';
+import { CourseFrame } from '../fx-f/CourseFrame';
+import { announceTurn, courseBody, courseLine, type CAOCourse } from '../fx-f/courses';
+import { useFitTitle, usePageTurn } from '../fx-f/pageTurn';
+import '../fx-f/fx-f.css';
 
 const CHAPTERS = COPY.chapters.items;
 /** Chapters whose giant word Starguy stands at the end of. */
-const HANGS: ReadonlySet<ChapterId> = new Set<ChapterId>(['markbank', 'planner']);
+const HANGS: ReadonlySet<ChapterId> = new Set<ChapterId>(['markbank', 'planner', 'futurefinder']);
 /** Chapters with a matching playground demo (papertrail and lab have none). Ids map 1:1. */
-const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', papertrail: 'papertrail', atlas: 'atlas', planner: 'planner', launchpad: 'reflex' };
+const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', papertrail: 'papertrail', atlas: 'atlas', planner: 'planner', launchpad: 'reflex', futurefinder: 'futurefinder' };
 /** The frames that blot into the page (the rest simply rise). One blot each; the hero star uses the third. */
 const BLOTS: Partial<Record<ChapterId, 1 | 2 | 3>> = { markbank: 1, papertrail: 2, atlas: 3 };
 /** The page's one orange circle: a figure in a chapter's body copy. */
 const CIRCLED: { chapter: ChapterId; paragraph: number; phrase: string } = { chapter: 'papertrail', paragraph: 0, phrase: '2010' };
+/** demoData's frame table predates chapter VII; read it as the partial map it is. */
+const FRAMES: Partial<Record<ChapterId, string | null>> = CAPTURES;
 
 const anchor = (id: ChapterId): string => `#chapter-${id}`;
 
@@ -102,7 +115,7 @@ const Rail: React.FC<{ active: ChapterId }> = ({ active }) => {
             >
               <span aria-hidden="true" style={{ position: 'relative', fontFamily: FONT.serif, fontWeight: 600, fontSize: 13, width: 22, flexShrink: 0, color: on ? L.orangeText : L.faint, transition: 'color 120ms ease' }}>
                 {ch.numeral}
-                {/* The gauge: fills on this chapter's own view timeline (fx.css, .fx-tick). */}
+                {/* The gauge: fills on this chapter's own view timeline (fx.css, .fx-tick; fx-f.css adds the seventh). */}
                 <span className={`fx-tick fx-tick-${i + 1}`} />
               </span>
               <span style={{ fontFamily: FONT.sans, fontSize: 14, fontWeight: on ? 700 : 500, color: 'inherit', lineHeight: 1.3 }}>{ch.railLabel}</span>
@@ -168,7 +181,7 @@ const Strip: React.FC<{ active: ChapterId }> = ({ active }) => {
 
 /** Chapter I: the real question with the marking scheme under the lens. Otherwise a supplied screenshot, else a live glimpse of the real surface, else a labelled placeholder. */
 const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
-  const src = CAPTURES[chapter.id];
+  const src = FRAMES[chapter.id];
   return (
     <Frame title={chapter.frameLabel} meta={chapter.numeral}>
       {chapter.id === 'markbank' ? <Spotlight /> : src
@@ -194,17 +207,51 @@ const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
 /** One chapter: eyebrow, the folding word, then the alternating text / frame row. */
 const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: React.RefObject<HTMLElement | null> }> = ({ chapter, index, articleRef }) => {
   const frameRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const reduce = useReducedMotion();
   const flip = index % 2 === 1;
   const titleId = `chapter-${chapter.id}-title`;
-  const demo = DEMO_OF[chapter.id];
   const blot = BLOTS[chapter.id];
   const frameCol = flip ? 'lg:col-span-7 lg:order-1' : 'lg:col-span-7';
+  const turns = chapter.id === 'futurefinder';
+
+  // Chapter VII: the course the chapter is written around, if any (fx-f). The
+  // turn copies the page BEFORE the state changes, then wipes the copy away
+  // once the rewrite has rendered. Instant under reduced motion or ?static=1.
+  const [course, setCourse] = useState<CAOCourse | null>(null);
+  const [said, setSaid] = useState('');
+  const turn = usePageTurn(articleRef, course?.code ?? '', reduce || isStatic());
+  useFitTitle(articleRef, titleId, course?.title ?? chapter.word, course !== null, String(DISPLAY.chapter.fontSize));
+  const choose = (c: CAOCourse) => {
+    if (c.code === course?.code) return;
+    turn.snapshot(false);
+    setCourse(c);
+    setSaid(announceTurn(c));
+  };
+  const back = () => {
+    turn.snapshot(true);
+    setCourse(null);
+    setSaid(COPY.futurefinder.restored);
+    inputRef.current?.focus({ preventScroll: true });
+  };
+
+  const word = course ? course.title : chapter.word;
+  const line = course ? courseLine(course) : chapter.line;
+  const body = course ? courseBody(course) : chapter.body;
+  const frameLabel = course ? `${course.code} · ${course.institution}` : chapter.frameLabel;
+  const demo: PlaygroundTabId | undefined = course ? 'passport' : DEMO_OF[chapter.id];
+  const tryIt = course ? COPY.futurefinder.tryPassport : COPY.chapters.tryIt;
+
+  const capture = turns
+    ? <Frame title={frameLabel} meta={chapter.numeral}><CourseFrame course={course} onChoose={choose} inputRef={inputRef} /></Frame>
+    : <Capture chapter={chapter} />;
+
   return (
     <article
       ref={articleRef}
       id={`chapter-${chapter.id}`}
       aria-labelledby={titleId}
-      className={`scroll-mt-[124px] lg:scroll-mt-[96px] fx-chapter-${index + 1}`}
+      className={`scroll-mt-[124px] lg:scroll-mt-[96px] fx-chapter-${index + 1}${turns ? ' fxf-leaf' : ''}`}
     >
       <div className="fx-head">
         <Field n={index + 1} />
@@ -214,13 +261,13 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
             {/* The word row clips sideways so Starguy, hung past the word's end, never widens the page. */}
             <Display size="chapter" as="h3" id={titleId} style={{ overflowWrap: 'anywhere', overflowX: 'clip' }}>
               <span style={{ position: 'relative', display: 'inline-block', maxWidth: '100%' }}>
-                {chapter.word}
+                {word}
                 {HANGS.has(chapter.id) && (
-                  /* Inline, so a word that wraps ("Planner & Study") still ends with him on its LAST line. */
+                  /* Inline, so a word that wraps ("Planner & Study") still ends with him on its LAST line. A fitted course title keeps him at least 56px. */
                   <span
                     aria-hidden="true"
                     className="landing-starguy-lg"
-                    style={{ display: 'inline-block', verticalAlign: 'baseline', marginLeft: '0.06em', marginBottom: '0.04em', width: '0.55em', lineHeight: 0 }}
+                    style={{ display: 'inline-block', verticalAlign: 'baseline', marginLeft: '0.06em', marginBottom: '0.04em', width: course ? 'max(0.55em, 56px)' : '0.55em', lineHeight: 0 }}
                   >
                     <StarguySlot id={`word-${chapter.id}` as SlotId}><Starguy size={0} style={{ width: '100%', height: 'auto' }} /></StarguySlot>
                   </span>
@@ -232,9 +279,9 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
       </div>
       <div className="mt-8 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         <div className={flip ? 'lg:col-span-5 lg:order-2' : 'lg:col-span-5'}>
-          <DropLine>{chapter.line}</DropLine>
+          <DropLine>{line}</DropLine>
           <div className="mt-6 flex flex-col gap-4">
-            {chapter.body.map((p, pi) => (
+            {body.map((p, pi) => (
               <Body key={p} style={{ fontSize: 16 }}>
                 {chapter.id === CIRCLED.chapter && pi === CIRCLED.paragraph
                   ? markPhrase(p, CIRCLED.phrase, node => <Mark type="circle" color={L.orange} padding={[2, 5]} strokeWidth={1.5} delay={250}>{node}</Mark>)
@@ -242,20 +289,22 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
               </Body>
             ))}
           </div>
-          {demo && (
-            <div className="mt-6">
-              <Button variant="ghost" onClick={() => openDemo(demo, undefined, frameRef.current)}>{COPY.chapters.tryIt}</Button>
+          {(demo || course) && (
+            <div className="mt-6 fxf-actions">
+              {course && <Button variant="secondary" onClick={back}>{COPY.futurefinder.back}</Button>}
+              {demo && <Button variant="ghost" onClick={() => openDemo(demo, undefined, frameRef.current)}>{tryIt}</Button>}
             </div>
           )}
+          {turns && <p className="fxf-sr" role="status" aria-live="polite">{said}</p>}
         </div>
         {/* I–III soak into the page (the blot is this chapter's one motion); the rest rise. */}
         {blot ? (
           <div className={frameCol}>
-            <div ref={frameRef} className={`fx-blot fx-blot--scroll fx-blot-${blot}`}><Capture chapter={chapter} /></div>
+            <div ref={frameRef} className={`fx-blot fx-blot--scroll fx-blot-${blot}`}>{capture}</div>
           </div>
         ) : (
           <Reveal className={frameCol}>
-            <div ref={frameRef}><Capture chapter={chapter} /></div>
+            <div ref={frameRef}>{capture}</div>
           </Reveal>
         )}
       </div>
@@ -268,7 +317,7 @@ const Chapters: React.FC = () => {
   // One ref per article, made once: the observer and each chapter share it.
   const refs = useMemo(() => CHAPTERS.map(() => React.createRef<HTMLElement>()), []);
 
-  // One observer over the six articles. The band is the middle 10% of the
+  // One observer over the seven articles. The band is the middle 10% of the
   // viewport, so a chapter becomes current as its word crosses the fold.
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') return;
@@ -292,7 +341,7 @@ const Chapters: React.FC = () => {
         <RailHeading className="lg:hidden mb-6" />
         <Strip active={active} />
 
-        {/* fx-scope: the six chapters' view timelines are scoped here so the sticky rail can read them. */}
+        {/* fx-scope: the seven chapters' view timelines are scoped here so the sticky rail can read them. */}
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 fx-scope">
           <div className="hidden lg:block lg:col-span-3">
             <div className="sticky" style={{ top: 92 }}>

@@ -9,7 +9,7 @@
  * inline script), loaded in <head> before the render-blocking expect link,
  * so the handler exists before pagereveal can fire.
  */
-/* global document, location, setTimeout, addEventListener */
+/* global window, document, location, setTimeout, addEventListener */
 (function () {
   var fromLanding = /(^|[?&])from=landing(&|$)/.test(location.search) || /\/landing-dev\.html/.test(document.referrer);
   if (!fromLanding) return;
@@ -25,7 +25,9 @@
     m.style.viewTransitionName = 'starguy';
     e.viewTransition.finished.finally(function () {
       m.style.viewTransitionName = '';
-      setTimeout(function () { hide(m); }, 4000);
+      // Four seconds by the door on a desk; a phone's bottom edge is busier, so a second and a half.
+      var stay = window.matchMedia && window.matchMedia('(max-width: 767px)').matches ? 1500 : 4000;
+      setTimeout(function () { hide(m); }, stay);
     });
   });
   addEventListener('pageswap', function (e) {

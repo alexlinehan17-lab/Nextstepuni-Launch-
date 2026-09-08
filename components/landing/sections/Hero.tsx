@@ -7,7 +7,10 @@
  * directly underneath (ElevenLabs) so the first scroll lands on something you
  * can use. Two of the page's effects live here: the examiner's ink underline
  * under "marking schemes" (one of three marks on the whole page), and the
- * star that blots into the paper before the character lands.
+ * star that blots into the paper before the character lands. Two hooks for
+ * the topple (fx-char/Topple.tsx): the CTA row is `data-hero-cta` and the
+ * playground's container is `data-hero-floor` — its top edge, the hero's
+ * lower edge, is the floor the headline falls to.
  */
 
 import React from 'react';
@@ -15,7 +18,7 @@ import { COPY } from '../copy';
 import { LineRise } from '../motion';
 import { StarguySlot } from '../starguy/Traveller';
 import { Button, Container, Eyebrow, Lede, Starguy } from '../primitives';
-import { APP_URL, FONT, L } from '../theme';
+import { APP_SETUP_LABEL, APP_SETUP_URL, APP_URL, FONT, L } from '../theme';
 import { Mark } from '../fx/marks';
 import Playground from './Playground';
 
@@ -45,14 +48,15 @@ const Hero: React.FC = () => {
         </div>
         <div className="lg:col-span-4 lg:pb-2">
           <Lede>{COPY.hero.lede}</Lede>
-          <div className="mt-7 flex flex-wrap items-center gap-4">
+          <div className="mt-7 flex flex-wrap items-center gap-4" data-hero-cta="true">
             <Button href={APP_URL} size="lg">{COPY.hero.primary}</Button>
             <Button variant="ghost" href="#playground">{COPY.hero.secondary}</Button>
+            <Button variant="ghost" href={APP_SETUP_URL}>{APP_SETUP_LABEL}</Button>
           </div>
         </div>
       </div>
     </Container>
-    <Container className="mt-10 md:mt-12">
+    <Container className="mt-10 md:mt-12" data-hero-floor="true">
       <Playground />
     </Container>
   </section>

@@ -1,0 +1,92 @@
+/* Character effects (Volume II). Ink on white, no shadows; every rule here is
+   inert until the traveller is live, because the components that use them
+   only mount then. */
+
+/* His star, grabbable in the hero. Sits on the traveller layer, which is otherwise pointer-transparent. */
+.fx-char-grab {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+  border-radius: 50%;
+  pointer-events: auto;
+  cursor: grab;
+  touch-action: none;
+}
+.fx-char-grab:active { cursor: grabbing; }
+
+/* The ragdoll: the two PNG layers standing in for the rig. Same box, same size. */
+.fx-char-ragdoll { position: fixed; inset: 0; z-index: 46; pointer-events: none; }
+.fx-char-ragdoll img { position: absolute; display: block; will-change: transform; user-select: none; }
+
+/* The toppled headline: word clones laid over the hero at their measured boxes. */
+.fx-char-topple { position: absolute; inset: 0; z-index: 6; pointer-events: none; overflow: hidden; }
+.fx-char-word { position: absolute; white-space: nowrap; will-change: transform; }
+
+/* Holding the nav up. The straight hairline opens a gap over his head and a
+   short sag takes its place — drawn by Nav.tsx, placed by the traveller's --sg-x.
+   The lockup's own copy of him steps aside while the traveller is the guest. */
+.landing-nav .landing-nav-guy { transition: opacity 160ms ease; }
+.landing-nav[data-guest='true'] .landing-nav-guy { opacity: 0; }
+.landing-nav .fx-nav-line, .landing-nav .fx-nav-dip { display: none; }
+.landing-nav[data-condensed='true'][data-held='true'] { border-bottom-color: transparent; }
+.landing-nav[data-condensed='true'][data-held='true'] .fx-nav-line {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: rgba(26, 26, 26, 0.14);
+  -webkit-mask-image: linear-gradient(to right, #000 calc(var(--sg-x, 0px) - 24px), transparent calc(var(--sg-x, 0px) - 24px), transparent calc(var(--sg-x, 0px) + 24px), #000 calc(var(--sg-x, 0px) + 24px));
+  mask-image: linear-gradient(to right, #000 calc(var(--sg-x, 0px) - 24px), transparent calc(var(--sg-x, 0px) - 24px), transparent calc(var(--sg-x, 0px) + 24px), #000 calc(var(--sg-x, 0px) + 24px));
+  pointer-events: none;
+}
+.landing-nav[data-condensed='true'][data-held='true'] .fx-nav-dip {
+  display: block;
+  position: absolute;
+  left: calc(var(--sg-x, 0px) - 24px);
+  bottom: -8px;
+  width: 48px;
+  height: 8px;
+  pointer-events: none;
+}
+
+/* The paper floor under the Paper Trail chapter. */
+.fx-char-papers { position: absolute; z-index: 20; }
+.fx-char-paper { position: absolute; left: 0; top: 0; will-change: transform; border: 1px solid #1A1A1A; background: #FFFFFF; overflow: hidden; box-sizing: border-box; }
+.fx-char-paper img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; user-select: none; -webkit-user-drag: none; }
+.fx-char-tray { position: absolute; display: flex; align-items: flex-end; gap: 6px; }
+.fx-char-tray button {
+  appearance: none;
+  padding: 0;
+  border: 1px solid #1A1A1A;
+  background: #FFFFFF;
+  cursor: grab;
+  touch-action: none;
+  display: block;
+  overflow: hidden;
+  transition: translate 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.fx-char-tray button:hover { translate: 0 -3px; }
+.fx-char-tray button:active { cursor: grabbing; }
+.fx-char-tray button img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; pointer-events: none; }
+.fx-char-caption { position: absolute; font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B6B6B; line-height: 1.2; white-space: nowrap; }
+.fx-char-tidy {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0 0 1px;
+  border-bottom: 1px solid #1A1A1A;
+  color: #1A1A1A;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+.fx-char-tidy:disabled { color: #6B6B6B; border-bottom-color: rgba(26, 26, 26, 0.14); cursor: default; }
+
+/* The dev harness (?starguy=1): fire each reaction and screenshot it. */
+.fx-char-dev { position: fixed; right: 16px; bottom: 16px; z-index: 60; display: flex; gap: 6px; padding: 8px; background: #FFFFFF; border: 1px solid #1A1A1A; font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+.fx-char-dev button { appearance: none; background: #FFFFFF; border: 1px solid #1A1A1A; color: #1A1A1A; padding: 4px 8px; font: inherit; letter-spacing: inherit; text-transform: inherit; cursor: pointer; }
+.fx-char-dev button:hover { background: #1A1A1A; color: #FFFFFF; }
