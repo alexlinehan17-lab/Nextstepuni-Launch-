@@ -2,9 +2,10 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * How it works: three numbered steps on a stepped rail — the app's own
- * sequence idiom (done / current / upcoming on a hairline spine) — then the
- * page's one CTA row: open the app, or go back up and try the Mark Bank.
+ * How it works: three numbered steps set on the page's ruled paper — numeral
+ * and title on one rule, the line beneath on the next, a blank rule closing
+ * each step (fx-foundation/foundation.css) — then the page's one CTA row:
+ * open the app, or go back up and try the Mark Bank.
  */
 
 import React from 'react';
@@ -23,17 +24,21 @@ const HowItWorks: React.FC = () => (
           <Eyebrow>{COPY.how.eyebrow}</Eyebrow>
           <Display size="section" as="h2" className="mt-4">{COPY.how.title}</Display>
         </div>
-        <ol className="lg:col-span-8 m-0 p-0 list-none">
+        <ol className="landing-steps lg:col-span-8">
           {COPY.how.steps.map((s, i) => (
-            <Reveal key={s.n} delay={i * 0.08}>
-              <li className="grid gap-5" style={{ gridTemplateColumns: '48px 1fr', borderTop: `1px solid ${L.hairline}`, padding: '26px 0' }}>
-                <div style={{ fontFamily: FONT.serif, fontWeight: 600, fontSize: 40, lineHeight: 1, color: L.ink, letterSpacing: '-0.03em' }}>{s.n}</div>
-                <div>
-                  <h3 className="m-0" style={{ fontFamily: FONT.serif, fontWeight: 600, fontSize: 24, color: L.ink, lineHeight: 1.15, letterSpacing: '-0.015em' }}>{s.title}</h3>
-                  <Body className="mt-2" style={{ fontSize: 16 }}>{s.body}</Body>
+            <li key={s.n} className="landing-step">
+              <Reveal delay={i * 0.08}>
+                <div className="landing-step-row">
+                  <div className="landing-step-n" aria-hidden="true" style={{ fontFamily: FONT.serif, fontWeight: 600, color: L.ink }}>{s.n}</div>
+                  <div>
+                    <h3 className="landing-step-title" style={{ fontFamily: FONT.serif, fontWeight: 600, color: L.ink }}>
+                      <span className="sr-only">{s.n}. </span>{s.title}
+                    </h3>
+                    <Body className="landing-step-body" style={{ fontSize: 16 }}>{s.body}</Body>
+                  </div>
                 </div>
-              </li>
-            </Reveal>
+              </Reveal>
+            </li>
           ))}
         </ol>
       </div>

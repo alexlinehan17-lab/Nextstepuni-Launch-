@@ -2,8 +2,7 @@
 .landing-page { background: #FFFFFF; color: #1A1A1A; overflow-x: clip; }
 .landing-page *:focus-visible { outline: 2px solid #B84A0C; outline-offset: 3px; border-radius: 4px; }
 
-.landing-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 0 0 #1A1A1A; }
-.landing-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 0 #1A1A1A; }
+/* .landing-btn press physics live in fx-foundation/foundation.css. */
 .landing-ghost:hover span { transform: translateX(3px); }
 .landing-ghost span { display: inline-block; transition: transform 140ms ease; }
 .landing-tab:hover { color: #1A1A1A !important; }

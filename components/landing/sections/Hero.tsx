@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           <LineRise
             as="h1"
             text={COPY.hero.headline}
-            className="m-0"
+            className="m-0 landing-hero-title"
             style={{ fontFamily: FONT.serif, fontWeight: 600, color: L.ink, fontSize: 'clamp(42px, 6.6vw, 86px)', lineHeight: 0.98, letterSpacing: '-0.025em' }}
             tail={
               <span aria-hidden="true" className="landing-starguy-lg" style={{ position: 'absolute', left: 'calc(100% + 0.06em)', bottom: '0.02em', width: '0.6em', lineHeight: 0 }}>
