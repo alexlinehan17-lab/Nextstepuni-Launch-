@@ -14,8 +14,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { useInView } from 'framer-motion';
 import { AnimatePresence, MotionDiv, useReducedMotion } from '../../Motion';
+import HorizontalTabs from '../../ui/HorizontalTabs';
 import { COPY, type PlaygroundTabId } from '../copy';
-import { Button, TextTabs } from '../primitives';
+import { Button } from '../primitives';
 import { APP_URL, FONT, L } from '../theme';
 import type { GlassProps } from '../glass/GlassStage';
 import MarkBankGlass, { MARKBANK_SUBJECTS_LIVE } from '../glass/MarkBankGlass';
@@ -27,6 +28,7 @@ import PassportGlass, { PASSPORT_MODES_LIVE } from '../glass/PassportGlass';
 import FutureFinderGlass, { FUTUREFINDER_MODES_LIVE } from '../glass/FutureFinderGlass';
 import { DEMO_EVENT, openDemo, type DemoEventDetail } from '../glass/demoEvent';
 import { getLenis, scrollToId } from '../scroll';
+import '../fx-c/fx-c.css';
 
 export { openDemo };
 
@@ -124,15 +126,16 @@ const Playground: React.FC = () => {
         </span>
       </div>
       <div style={{ background: L.paper, border: `1.5px solid ${L.edge}`, borderRadius: 22, overflow: 'hidden' }}>
-        {/* Product tabs + the live mark */}
-        <div className="flex items-center px-3 sm:px-5" style={{ borderBottom: `1px solid ${L.hairline}` }}>
-          <TextTabs
-            ariaLabel="Product"
-            items={COPY.playground.tabs.map(t => ({ id: t.id, label: t.label }))}
-            active={tab}
-            onChange={id => setTab(id as PlaygroundTabId)}
-            className="landing-strip"
+        {/* Product tabs: the app's own pill bar, its pill gliding between products */}
+        <div className="fxc-bar flex items-center px-3 sm:px-5 py-2.5" style={{ borderBottom: `1px solid ${L.hairline}` }}>
+          <HorizontalTabs<PlaygroundTabId>
+            variant="pill"
             size="md"
+            label="Product"
+            options={COPY.playground.tabs.map(t => ({ value: t.id as PlaygroundTabId, label: t.label }))}
+            value={tab}
+            onChange={setTab}
+            className="w-fit max-w-full"
           />
         </div>
 
@@ -152,15 +155,16 @@ const Playground: React.FC = () => {
         </div>
 
         {/* Mode tabs + hint */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-6 px-3 sm:px-5 pb-2 sm:pb-0" style={{ borderTop: `1px solid ${L.hairline}`, minHeight: 44 }}>
+        <div className="fxc-bar flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-6 px-3 sm:px-5 py-2" style={{ borderTop: `1px solid ${L.hairline}`, minHeight: 44 }}>
           {SUBTABS[tab].length > 0 ? (
-            <TextTabs
-              ariaLabel={`${meta.label} modes`}
-              items={SUBTABS[tab]}
-              active={subs[tab]}
-              onChange={id => setSubs(s => ({ ...s, [tab]: id }))}
+            <HorizontalTabs
+              variant="pill"
               size="sm"
-              className="landing-strip"
+              label={`${meta.label} modes`}
+              options={SUBTABS[tab].map(s => ({ value: s.id, label: s.label }))}
+              value={subs[tab]}
+              onChange={id => setSubs(s => ({ ...s, [tab]: id }))}
+              className="w-fit max-w-full"
             />
           ) : <span />}
           {meta.hint && <p className="m-0 sm:text-right" style={{ fontFamily: FONT.sans, fontSize: 13, color: L.faint, lineHeight: 1.4, padding: '6px 0' }}>{meta.hint}</p>}
