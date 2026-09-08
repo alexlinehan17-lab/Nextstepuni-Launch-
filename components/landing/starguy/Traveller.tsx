@@ -82,6 +82,8 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
 
   useEffect(() => {
     let raf = 0;
+    // Scroll velocity, px/s, for the passenger lean below.
+    let lastScrollY = window.scrollY, lastAt = performance.now(), scrollV = 0;
     const pick = (): { id: SlotId; rect: DOMRect } | null => {
       const map = slots.current;
       if (!map) return null;
@@ -133,7 +135,15 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
       // Lean into sideways travel; stretch a little when moving fast; and on the
       // way down to the footer line, crouch as he arrives — reader-paced, so
       // scrolling back stands him up again.
-      leanTarget.set(clamp(vx / 250, -6, 6));
+      // A passenger's lean: into his own sideways travel, and into the reader's
+      // scroll — a fast scroll down tips him forward a few degrees, and the
+      // spring settles him again as it slows.
+      const now = performance.now();
+      const dt = Math.max(1, now - lastAt);
+      const sv = ((window.scrollY - lastScrollY) / dt) * 1000;
+      scrollV += (sv - scrollV) * Math.min(1, dt / 80);
+      lastScrollY = window.scrollY; lastAt = now;
+      leanTarget.set(clamp(vx / 250, -6, 6) + clamp(scrollV / 300, -4, 4));
       const stretch = clamp(-Math.abs(vy) / 2500, -0.5, 0);
       const d = Math.abs(ty - sy.get());
       const bump = id === 'footer' && d < 120 ? 0.6 * Math.sin(Math.PI * (1 - d / 120)) : 0;
