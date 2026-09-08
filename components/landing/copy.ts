@@ -8,7 +8,7 @@
  * reach for a slogan when a sentence will do.
  */
 
-export type ChapterId = 'markbank' | 'papertrail' | 'atlas' | 'planner' | 'launchpad' | 'lab';
+export type ChapterId = 'markbank' | 'papertrail' | 'atlas' | 'planner' | 'launchpad' | 'lab' | 'futurefinder';
 
 export interface Chapter {
   id: ChapterId;
@@ -81,7 +81,7 @@ export const COPY = {
   chapters: {
     tryIt: 'Try it in the playground',
     eyebrow: 'Inside the app',
-    intro: 'Six things, in the order you’ll probably meet them.',
+    intro: 'Seven things, in the order you’ll probably meet them.',
     /** Mono label inside a chapter frame that has no screenshot yet. */
     placeholder: 'Screenshot · coming',
     /** Chapter I's frame: the real question with the marking scheme under a lens. */
@@ -135,7 +135,7 @@ export const COPY = {
         body: [
           'Command-Word Reflex: find the word the examiner is marking against before you write a line.',
           'Catch-Up Lane: missed a class? Pick the topic you missed. Each one takes about three minutes, with a quick check at the end.',
-          'Points Passport, Future Finder and College Compass for the CAO end of things: your grades as points, a shortlist of courses matched to your interests, and the CAO, HEAR and DARE deadlines in order.',
+          'Points Passport, Future Finder and College Compass are the CAO end of things. They have a chapter of their own: VII.',
         ],
         frameLabel: 'The Launchpad',
       },
@@ -148,7 +148,54 @@ export const COPY = {
         ],
         frameLabel: 'Learning Lab · Mastering Active Recall',
       },
+      {
+        id: 'futurefinder', numeral: 'VII', word: 'Future Finder', railLabel: 'Future Finder',
+        line: 'The CAO end of things: courses, points and deadlines.',
+        body: [
+          'Future Finder asks you to rate short activity cards, works out the kind of work you lean towards, and ranks a hundred and forty-nine courses, PLCs and apprenticeships by how well they fit. Save the ones you like and compare them side by side.',
+          'Points Passport turns your grades into CAO points, keeps each set of mock results, and shows which grade moves would return the most points for the effort.',
+          'College Compass puts the CAO, HEAR, DARE and scholarship deadlines in order, stage by stage, with a checklist for sixth years.',
+        ],
+        frameLabel: 'Points Passport · Type a course',
+      },
     ] as Chapter[],
+  },
+
+  /**
+   * Chapter VII's course search (components/landing/fx-f). Type a course from
+   * Points Passport's list and the chapter rewrites itself around it. Every
+   * figure on the rewritten page comes from components/futureFinderData.ts;
+   * the words here are only the furniture around them.
+   */
+  futurefinder: {
+    label: 'Points Passport',
+    placeholder: 'Type a course',
+    /** {n} is the length of the list in the app. */
+    hint: 'A code, a title or a college · {n} courses, PLCs and apprenticeships',
+    sample: 'A few to try',
+    none: 'No course by that name in the list.',
+    matches: '{n} in the list',
+    back: 'Back to the landing page',
+    tryPassport: 'Try Points Passport in the playground',
+    level: 'Level',
+    points: 'points',
+    card: {
+      points: 'Typical points',
+      level: 'Level',
+      length: 'Length',
+      subjects: 'Subjects that count',
+      careers: 'Where it leads',
+      source: 'Points as listed in the app · 2025 CAO Round 1',
+    },
+    routes: { cao: 'CAO', plc: 'PLC', apprenticeship: 'Apprenticeship' },
+    /** The app's own words for a route that has no points. */
+    noPoints: { plc: 'Open entry', apprenticeship: 'Employer-based' },
+    /** One line on what the app does with the course — nothing more. */
+    helps: 'Points Passport tracks your grades against this course’s points.',
+    helpsNoPoints: 'Future Finder ranks this route beside the CAO courses that fit your interests.',
+    /** Read out by a screen reader when the chapter rewrites, and when it is restored. */
+    turned: 'Chapter VII is now about {title} at {institution}. {line}.',
+    restored: 'Chapter VII is back to Future Finder.',
   },
 
   cta: {
