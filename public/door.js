@@ -9,6 +9,7 @@
  * inline script), loaded in <head> before the render-blocking expect link,
  * so the handler exists before pagereveal can fire.
  */
+/* global document, location, setTimeout, addEventListener */
 (function () {
   var fromLanding = /(^|[?&])from=landing(&|$)/.test(location.search) || /\/landing-dev\.html/.test(document.referrer);
   if (!fromLanding) return;
