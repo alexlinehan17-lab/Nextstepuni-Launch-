@@ -45,6 +45,13 @@ export const SPACE = { section: 'py-[72px] md:py-[128px]', sectionTight: 'py-[56
 export const APP_URL = '/?from=landing';
 /** There is no dedicated sign-in route: every path renders the login page when signed out. */
 export const APP_SIGNIN_URL = '/?from=landing';
+/**
+ * Set up without an account: the app's own onboarding, run as a guest, ending
+ * at the "Dive in" placeholder (components/onboarding/guest.ts). Keeps
+ * `from=landing` so the starguy door in index.html still opens.
+ */
+export const APP_SETUP_URL = '/?from=landing&setup=guest';
+export const APP_SETUP_LABEL = 'Set up without an account';
 
 /** Weighted paper (Lenis). Flip to false to ship native scrolling; ?smooth=0 compares live. */
 export const SMOOTH_SCROLL = true;

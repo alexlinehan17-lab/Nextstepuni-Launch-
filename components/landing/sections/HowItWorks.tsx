@@ -12,7 +12,7 @@ import React from 'react';
 import { COPY } from '../copy';
 import { Reveal } from '../motion';
 import { Body, Button, Container, Display, Eyebrow, Lede, SectionRule } from '../primitives';
-import { APP_URL, FONT, L, SPACE } from '../theme';
+import { APP_SETUP_LABEL, APP_SETUP_URL, APP_URL, FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 
 const HowItWorks: React.FC = () => (
@@ -49,6 +49,7 @@ const HowItWorks: React.FC = () => (
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <Button href={APP_URL} size="lg">{COPY.cta.primary}</Button>
           <Button variant="ghost" onClick={() => openDemo('markbank')}>{COPY.cta.secondary}</Button>
+          <Button variant="ghost" href={APP_SETUP_URL}>{APP_SETUP_LABEL}</Button>
         </div>
       </div>
     </Container>
