@@ -21,6 +21,7 @@ import { createPortal } from 'react-dom';
 import { animate, useMotionValue, useSpring } from 'framer-motion';
 import { MotionDiv, useReducedMotion } from '../../Motion';
 import { StarguyFigure } from './StarguyFigure';
+import { installLeave } from '../leave';
 
 export type SlotId = 'hero' | 'word-markbank' | 'word-planner' | 'rail' | 'footer';
 
@@ -36,7 +37,7 @@ export const StarguySlot: React.FC<{ id: SlotId; children: React.ReactNode; clas
   const { register, live } = useContext(TravellerContext);
   const ref = useCallback((el: HTMLElement | null) => register(id, el), [id, register]);
   return (
-    <span ref={ref} className={className} style={{ display: 'block', visibility: live ? 'hidden' : 'visible', ...style }}>
+    <span ref={ref} data-starguy-slot={id} className={className} style={{ display: 'block', visibility: live ? 'hidden' : 'visible', ...style }}>
       {children}
     </span>
   );
@@ -81,6 +82,8 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
 
   useEffect(() => {
     let raf = 0;
+    // Scroll velocity, px/s, for the passenger lean below.
+    let lastScrollY = window.scrollY, lastAt = performance.now(), scrollV = 0;
     const pick = (): { id: SlotId; rect: DOMRect } | null => {
       const map = slots.current;
       if (!map) return null;
@@ -107,7 +110,16 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
       if (!next) return;
       const { id, rect } = next;
       const tx = rect.left, ty = rect.top, tw = rect.width;
-      if (!primed.current) { primed.current = true; x.jump(tx); y.jump(ty); w.jump(tw); sx.jump(tx); sy.jump(ty); sw.jump(tw); }
+      if (!primed.current) {
+        primed.current = true;
+        // Home from the app (landing-dev.html's pagereveal): he stands on the
+        // door; start him there so the springs walk him up to his first slot.
+        const door = document.querySelector<HTMLElement>('#landing-mark[data-here]');
+        const from = door ? door.getBoundingClientRect() : null;
+        if (door) door.removeAttribute('data-here');
+        const px = from ? from.left : tx, py = from ? from.top : ty, pw = from ? from.width : tw;
+        x.jump(px); y.jump(py); w.jump(pw); sx.jump(px); sy.jump(py); sw.jump(pw);
+      }
       if (id !== current.current) {
         const far = Math.abs(ty - sy.get()) > window.innerHeight * 1.2;
         if (far) { x.jump(tx); y.jump(ty); sx.jump(tx); sy.jump(ty); }
@@ -123,7 +135,15 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
       // Lean into sideways travel; stretch a little when moving fast; and on the
       // way down to the footer line, crouch as he arrives — reader-paced, so
       // scrolling back stands him up again.
-      leanTarget.set(clamp(vx / 250, -6, 6));
+      // A passenger's lean: into his own sideways travel, and into the reader's
+      // scroll — a fast scroll down tips him forward a few degrees, and the
+      // spring settles him again as it slows.
+      const now = performance.now();
+      const dt = Math.max(1, now - lastAt);
+      const sv = ((window.scrollY - lastScrollY) / dt) * 1000;
+      scrollV += (sv - scrollV) * Math.min(1, dt / 80);
+      lastScrollY = window.scrollY; lastAt = now;
+      leanTarget.set(clamp(vx / 250, -6, 6) + clamp(scrollV / 300, -4, 4));
       const stretch = clamp(-Math.abs(vy) / 2500, -0.5, 0);
       const d = Math.abs(ty - sy.get());
       const bump = id === 'footer' && d < 120 ? 0.6 * Math.sin(Math.PI * (1 - d / 120)) : 0;
@@ -159,6 +179,7 @@ export const StarguyProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const [settled, setSettled] = useState(false);
   const [staticMode] = useState(() => typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('static'));
   useEffect(() => {
+    installLeave();
     const mq = window.matchMedia('(min-width: 1024px)');
     const sync = () => setWide(mq.matches);
     sync();

@@ -29,6 +29,7 @@
     "@capacitor/core": "^8.5.0",
     "@capacitor/ios": "^8.5.0",
     "@capacitor/status-bar": "^8.0.2",
+    "@number-flow/react": "^0.6.2",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.0",
     "@rive-app/react-canvas-lite": "^4.34.1",
@@ -40,7 +41,10 @@
     "lucide-react": "^0.553.0",
     "pdfjs-dist": "^6.2.108",
     "react": "^19.2.0",
+    "react-compare-slider": "^4.0.0",
     "react-dom": "^19.2.0",
+    "react-rough-notation": "^1.0.8",
+    "rough-notation": "^0.5.1",
     "three": "^0.181.1",
     "ts-fsrs": "^5.4.1"
   },

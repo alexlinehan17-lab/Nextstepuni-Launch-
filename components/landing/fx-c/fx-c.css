@@ -1,0 +1,113 @@
+/* Landing effects, set C: the paper stack, the hover peek plate, the
+   question/scheme compare box and the pill-tab bars on the page. White
+   canvas, ink hairlines, one orange. Every motion here is off under
+   prefers-reduced-motion and under ?static=1 (html.landing-static). */
+
+/* ── Paper stack ───────────────────────────────────────────────────────────
+   Six sticky first pages in one grid. Every page is a grid item whose
+   containing block is the whole list, so each one stays pinned while the
+   next slides over it; the list is the view timeline and page i settles
+   (scale .96, up 10px) over the stretch of scroll in which page i+1 climbs
+   onto it. Geometry is all in CSS: the page width follows the column (cqw)
+   but never outgrows the viewport, and the row height is that page plus a
+   gap, so the ranges below land exactly on each page's arrival. */
+.fxc-stack {
+  --fxc-top: 96px;      /* sticky top; matches the aside */
+  --fxc-gap: 24vh;      /* how long each page sits alone before the next starts to climb over it */
+  --fxc-cap: 40px;      /* figcaption strip */
+  --fxc-step: 10px;     /* each later page rests this much lower, so the older edges peek */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-rows: auto;
+  container-type: inline-size;
+  view-timeline-name: --fxc-stack;
+}
+.fxc-stack > li {
+  --fxc-w: min(100cqw, calc((100vh - var(--fxc-top) - 120px) * 0.7071));
+  --fxc-w: min(100cqw, calc((100svh - var(--fxc-top) - 120px) * 0.7071));
+  --fxc-p: calc(var(--fxc-w) * 1.4142 + var(--fxc-cap) + 2px);
+  position: sticky;
+  top: calc(var(--fxc-top) + var(--i) * var(--fxc-step));
+  height: calc(var(--fxc-p) + var(--fxc-gap));
+  margin: 0;
+}
+/* A last, empty row: the finished stack sits for a while before it all scrolls away together.
+   (Padding would not do — a sticky item is held inside its parent's content box, not its padding.) */
+.fxc-stack::after { content: ''; display: block; height: 32vh; }
+.fxc-stack__paper {
+  width: var(--fxc-w);
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #1A1A1A;
+  box-shadow: 0 1px 0 0 #1A1A1A;
+  transform-origin: 50% 0;
+  will-change: transform;
+}
+.fxc-stack__paper img { display: block; width: 100%; height: auto; aspect-ratio: 595 / 842; }
+.fxc-stack__caption {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  height: var(--fxc-cap); padding: 0 14px;
+  border-top: 1px solid rgba(26, 26, 26, 0.14);
+  font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #766A5F;
+  white-space: nowrap; overflow: hidden;
+}
+.fxc-stack__caption span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.fxc-stack__caption b { color: #B84A0C; font-weight: 600; flex-shrink: 0; }
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    :root:not(.landing-static) .fxc-stack > li:not(:last-child) > .fxc-stack__paper {
+      animation: fxc-settle linear both;
+      animation-timeline: --fxc-stack;
+      /* Page i settles while page i+1 travels the last 60% of its own height up to its resting top. */
+      animation-range:
+        exit-crossing calc((var(--i) + 1) * (var(--fxc-p) + var(--fxc-gap)) - var(--fxc-top) - (var(--i) + 1) * var(--fxc-step) - var(--fxc-p) * 0.6)
+        exit-crossing calc((var(--i) + 1) * (var(--fxc-p) + var(--fxc-gap)) - var(--fxc-top) - (var(--i) + 1) * var(--fxc-step));
+    }
+  }
+}
+@keyframes fxc-settle {
+  to { transform: translateY(-10px) scale(0.96); }
+}
+
+/* The aside beside the stack stays put while the papers pile up — only where it fits. */
+@media (min-width: 1024px) and (min-height: 820px) {
+  .fxc-aside { position: sticky; top: 96px; }
+}
+
+/* ── Ruled subject list ─────────────────────────────────────────────────── */
+.fxc-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; column-gap: 16px; align-items: baseline; padding: 10px 8px; margin: 0 -8px; border-top: 1px solid rgba(26, 26, 26, 0.14); border-radius: 6px; }
+.fxc-row a { color: inherit; text-decoration: none; font-weight: 600; }
+.fxc-row a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+/* ── Hover peek plate ───────────────────────────────────────────────────────
+   One fixed, portalled plate for every peek link on the page. Position is a
+   spring on transform; the reveal is clip-path plus a 2° settle. */
+.fxc-peek {
+  position: fixed; left: 0; top: 0; z-index: 70;
+  pointer-events: none;
+  background: #FFFFFF;
+  border: 1px solid #1A1A1A;
+  box-shadow: 0 1px 0 0 #1A1A1A;
+  overflow: hidden;
+}
+.fxc-peek img { display: block; width: 100%; height: 100%; object-fit: cover; transition: opacity 160ms ease; }
+
+/* ── Compare box ─────────────────────────────────────────────────────────── */
+.fxc-compare { position: relative; user-select: none; -webkit-user-select: none; }
+.fxc-compare img { display: block; width: 100%; height: auto; pointer-events: none; }
+.fxc-compare [role="slider"] { cursor: ew-resize; }
+.fxc-compare [role="slider"]:focus-visible { outline: 2px solid #B84A0C; outline-offset: 0; border-radius: 6px; }
+.fxc-handle { position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 100%; margin-left: 0; pointer-events: auto; cursor: ew-resize; touch-action: none; }
+.fxc-handle::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; margin-left: -0.5px; background: #1A1A1A; }
+.fxc-handle__grip { position: relative; width: 10px; height: 10px; background: #F26B1F; box-shadow: 0 0 0 2px #FFFFFF; }
+/* The two sides are labelled on the paper itself: a small mono tag at each top corner. */
+.fxc-compare__tag { position: absolute; top: 10px; font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #766A5F; background: #FFFFFF; padding: 3px 6px; border: 1px solid rgba(26,26,26,0.14); pointer-events: none; }
+
+/* ── Pill bars on the landing page ──────────────────────────────────────────
+   The app's one selection-bar look (HorizontalTabs, pill) in the landing's
+   own hairline: an ink edge on the tray, DM Sans, and the same 44/36 heights. */
+.fxc-bar [role="tablist"] { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; border-color: rgba(26, 26, 26, 0.14); }

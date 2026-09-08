@@ -9,6 +9,7 @@
 
 import React from 'react';
 import { FONT, L } from './theme';
+import './fx-foundation/foundation.css';
 
 export const Container: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ className = '', children, ...rest }) => (
   <div className={`mx-auto w-full max-w-[1200px] px-5 sm:px-8 ${className}`} {...rest}>{children}</div>
@@ -22,7 +23,7 @@ export const Eyebrow: React.FC<{ numeral?: string; children: React.ReactNode; cl
       className={`flex items-center gap-3 uppercase ${className}`}
       style={{ fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.16em', color: L.faint, lineHeight: 1 }}
     >
-      {numeral && <span style={{ color: L.orangeText, fontFamily: FONT.serif, fontSize: 13, letterSpacing: '0.04em', fontWeight: 600 }}>{numeral}</span>}
+      {numeral && <span className="landing-numeral" style={{ color: L.orangeText, fontFamily: FONT.serif, fontSize: 13, letterSpacing: '0.04em', fontWeight: 600 }}>{numeral}</span>}
       <span>{children}</span>
     </Tag>
   );
@@ -53,23 +54,30 @@ export const Display: React.FC<{
   );
 };
 
-/** Italic serif line with a drop-cap-sized first letter — the Editions "Insights, proactively delivered" move. */
-export const DropLine: React.FC<{ children: string; className?: string }> = ({ children, className = '' }) => {
-  const [first, ...rest] = children;
-  return (
-    <p className={className} style={{ fontFamily: FONT.serif, fontStyle: 'italic', fontWeight: 400, color: L.ink, fontSize: 'clamp(22px, 2.8vw, 34px)', lineHeight: 1.15, margin: 0, letterSpacing: '-0.01em' }}>
-      <span style={{ fontSize: '1.6em', lineHeight: 0.8, verticalAlign: '-0.09em', fontStyle: 'italic', fontWeight: 500, marginRight: '-0.04em', letterSpacing: '-0.02em' }}>{first}</span>
-      {rest.join('')}
-    </p>
-  );
-};
-
-export const Lede: React.FC<{ children: React.ReactNode; className?: string; style?: React.CSSProperties }> = ({ children, className = '', style }) => (
-  <p className={className} style={{ fontFamily: FONT.sans, fontSize: 'clamp(16px, 1.35vw, 19px)', lineHeight: 1.55, color: L.muted, margin: 0, maxWidth: '52ch', ...style }}>{children}</p>
+/**
+ * Italic serif lede that opens on a two-line sunk drop cap — the Editions
+ * "Insights, proactively delivered" move, set the way a chapter opening is set.
+ * The cap is CSS (::first-letter + initial-letter, a float where the browser
+ * has none) so the text stays one string for screen readers and the drop-cap
+ * size follows the line count rather than a guessed em. Browsers skip
+ * text-wrap: balance on a paragraph with an initial letter, so the last two
+ * words are joined with a no-break space instead — a display line never ends
+ * on a single word — and the size tops out at 28px, which sets the chapters'
+ * 270–325px column in two or three lines beside the cap.
+ */
+export const DropLine: React.FC<{ children: string; className?: string }> = ({ children, className = '' }) => (
+  <p className={`landing-dropline ${className}`} style={{ fontFamily: FONT.serif, fontStyle: 'italic', fontWeight: 400, color: L.ink, fontSize: 'clamp(22px, 2.8vw, 28px)', lineHeight: 1.15, margin: 0, letterSpacing: '-0.01em' }}>
+    {children.replace(/ (\S+)$/, ' $1')}
+  </p>
 );
 
+export const Lede: React.FC<{ children: React.ReactNode; className?: string; style?: React.CSSProperties }> = ({ children, className = '', style }) => (
+  <p className={`landing-lede landing-prose ${className}`} style={{ fontFamily: FONT.sans, fontSize: 'clamp(16px, 1.35vw, 19px)', lineHeight: 1.55, color: L.muted, margin: 0, maxWidth: '52ch', ...style }}>{children}</p>
+);
+
+/** Running copy. Its line-height and margin live in the stylesheet so ruled variants can put it on the grid. */
 export const Body: React.FC<{ children: React.ReactNode; className?: string; style?: React.CSSProperties }> = ({ children, className = '', style }) => (
-  <p className={className} style={{ fontFamily: FONT.sans, fontSize: 15, lineHeight: 1.6, color: L.muted, margin: 0, ...style }}>{children}</p>
+  <p className={`landing-body landing-prose ${className}`} style={{ fontFamily: FONT.sans, fontSize: 15, color: L.muted, ...style }}>{children}</p>
 );
 
 type ButtonVariant = 'primary' | 'secondary' | 'ink' | 'ghost';
@@ -88,7 +96,9 @@ interface ButtonProps {
  * 3px offset shadow that collapses on press — reserved for the one conversion
  * action per view. Ink is the same shape filled ink, for actions INSIDE a demo
  * (next card, mark done) so orange stays rare. Secondary is paper. Ghost is an
- * ink text link with an arrow.
+ * ink text link with an arrow. The shadow and the press physics are in
+ * fx-foundation/foundation.css (.landing-btn), not inline, so :hover and
+ * :active can change them.
  */
 export const Button: React.FC<ButtonProps> = ({ variant = 'primary', href, onClick, children, className = '', size = 'md', ariaLabel }) => {
   const pad = size === 'lg' ? '15px 28px' : size === 'sm' ? '9px 14px' : '12px 22px';
@@ -108,12 +118,9 @@ export const Button: React.FC<ButtonProps> = ({ variant = 'primary', href, onCli
     border: `1.5px solid ${L.ink}`,
     borderRadius: 999,
     padding: pad,
-    boxShadow: `0 3px 0 0 ${L.ink}`,
     textDecoration: 'none',
     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
     cursor: 'pointer',
-    transition: 'transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease',
-    whiteSpace: 'nowrap',
   };
   const cls = `landing-btn ${className}`;
   return href
@@ -175,8 +182,8 @@ export const Starguy: React.FC<{ size?: number; pose?: 'stand' | 'hang' | 'lean'
   />
 );
 
-/** The wordmark: DM Sans Bold, tight, lowercase — matched against the brand sheet. */
-export const Wordmark: React.FC<{ size?: number; className?: string }> = ({ size = 22, className = '' }) => (
+/** The wordmark: DM Sans Bold, tight, lowercase — matched against the brand sheet. Leave `size` off to size it from a stylesheet. */
+export const Wordmark: React.FC<{ size?: number; className?: string }> = ({ size, className = '' }) => (
   <span className={className} style={{ fontFamily: FONT.sans, fontWeight: 700, fontSize: size, letterSpacing: '-0.03em', color: L.ink, lineHeight: 1 }}>nextstepuni</span>
 );
 

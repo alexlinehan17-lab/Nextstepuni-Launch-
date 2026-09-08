@@ -270,9 +270,25 @@
       .animate-login-blob-3 { animation: loginBlob3 25s ease-in-out infinite; }
       .animate-login-blob-4 { animation: loginBlob4 18s ease-in-out infinite; }
     </style>
+    <style>
+      /* Arriving from the landing page (see components/landing/leave.ts): this
+         document opts into cross-document view transitions, and the small
+         starguy below is where the browser lands him. He waits by the door a
+         moment, then goes about his business. */
+      @view-transition { navigation: auto; }
+      ::view-transition-group(starguy) { animation-duration: 0.65s; animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1); }
+      ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.2s; }
+      @media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }
+      #app-mark { position: fixed; left: 24px; bottom: 22px; width: 52px; z-index: 60; pointer-events: none; display: none; transition: opacity 0.6s ease; }
+      #app-mark img { display: block; width: 100%; height: auto; }
+      #app-mark[data-here] { display: block; }
+    </style>
+    <script src="/door.js"></script>
+    <link rel="expect" href="#app-mark" blocking="render" />
 </head>
   <body class="bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors duration-500">
     <div id="root"></div>
+    <div id="app-mark" aria-hidden="true"><img src="/assets/landing/starguy-door.png" alt="" width="208" height="241" /></div>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
