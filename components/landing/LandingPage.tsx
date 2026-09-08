@@ -21,6 +21,7 @@ import AskThePapers from './sections/AskThePapers';
 import HowItWorks from './sections/HowItWorks';
 import Subjects from './sections/Subjects';
 import Schools from './sections/Schools';
+import SitThePaper from './sections/SitThePaper';
 import Footer from './sections/Footer';
 import { setupSmoothScroll } from './scroll';
 import { StarguyProvider } from './starguy/Traveller';
@@ -44,6 +45,7 @@ const LandingPage: React.FC = () => {
       <HowItWorks />
       <Subjects />
       <Schools />
+      <SitThePaper />
     </main>
     <Footer />
   </div>
