@@ -9,6 +9,7 @@ import { isLcaYear } from '../../utils/authUtils';
 import { trackFunnel } from '../../utils/funnel';
 import type { NorthStar } from '../../types';
 import { buildNorthStar, buildProfile, choiceReady, choicesFor, cycleFor, daysUntil, draftKey, emptyChoice, hasGrades, legacyDraftKey, needsDate, pointsFor, readDraft, subjectsFor, type GradeChoice, type SetupDraft, type SetupStep, type SubjectChoice } from './model';
+import { guestStorage } from './guest';
 import './onboarding.css';
 
 export interface OnboardingProps {
@@ -18,6 +19,9 @@ export interface OnboardingProps {
   onSkip: () => void;
   mode?: 'fresh' | 'transition-to-senior';
   transitionTargetYear?: 'TY' | '5th';
+  /** Guest setup (no account): the draft lives in sessionStorage via ./guest.ts,
+   *  nothing is written to Firestore, and the final button reads "Dive in". */
+  guest?: boolean;
 }
 
 function PointsCount({ from, to }: { from: number; to: number }) {
@@ -39,9 +43,11 @@ function PointsCount({ from, to }: { from: number; to: number }) {
   return <><span className="setup-points-number" aria-hidden="true">{value}</span><span className="sr-only">{to} target points, from {from} current points</span></>;
 }
 
-export default function SetupFlow({ userId, userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear }: OnboardingProps) {
+export default function SetupFlow({ userId, userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear, guest = false }: OnboardingProps) {
   const transition = mode === 'transition-to-senior';
-  const [draft, setDraft] = useState(() => readDraft(userId, mode, transition ? transitionTargetYear ?? '5th' : undefined));
+  // A guest's draft is tab-scoped and survives the unauthenticated-boot clear.
+  const storage = guest ? guestStorage : localStorage;
+  const [draft, setDraft] = useState(() => readDraft(userId, mode, transition ? transitionTargetYear ?? '5th' : undefined, storage));
   const [query, setQuery] = useState('');
   const [subjectGroup, setSubjectGroup] = useState('languages');
   const [visionGroup, setVisionGroup] = useState<string>('');
@@ -82,14 +88,14 @@ export default function SetupFlow({ userId, userName, onComplete, onSkip, mode =
   // last committed review, not a half-finished edit with no Cancel route.
   useLayoutEffect(() => {
     latest.current = editSnapshot ?? draft;
-    try { localStorage.setItem(draftKey(userId, mode), JSON.stringify(latest.current)); } catch { /* Private browsing may block storage. */ }
-  }, [draft, editSnapshot, userId, mode]);
+    try { storage.setItem(draftKey(userId, mode), JSON.stringify(latest.current)); } catch { /* Private browsing may block storage. */ }
+  }, [draft, editSnapshot, userId, mode, storage]);
   useEffect(() => {
-    const persist = () => { try { localStorage.setItem(draftKey(userId, mode), JSON.stringify(latest.current)); } catch { /* Keep the in-memory draft. */ } };
+    const persist = () => { try { storage.setItem(draftKey(userId, mode), JSON.stringify(latest.current)); } catch { /* Keep the in-memory draft. */ } };
     window.addEventListener('pagehide', persist);
     document.addEventListener('visibilitychange', persist);
     return () => { window.removeEventListener('pagehide', persist); document.removeEventListener('visibilitychange', persist); };
-  }, [userId, mode]);
+  }, [userId, mode, storage]);
   useLayoutEffect(() => {
     if (scroller.current) scroller.current.scrollTop = 0;
     heading.current?.focus({ preventScroll: true });
@@ -185,12 +191,12 @@ export default function SetupFlow({ userId, userName, onComplete, onSkip, mode =
     }
     if (draft.step === 'welcome') {
       trackFunnel('onboarding_skipped');
-      try { localStorage.removeItem(draftKey(userId, mode)); localStorage.removeItem(legacyDraftKey(userId, mode)); } catch { /* Optional storage. */ }
+      try { storage.removeItem(draftKey(userId, mode)); storage.removeItem(legacyDraftKey(userId, mode)); } catch { /* Optional storage. */ }
       onSkip(); return;
     }
     patch({ step: route[Math.max(0, route.indexOf(draft.step) - 1)] });
   };
-  const title = ({ welcome: 'Make your mark.', year: 'Where are you now?', north: 'What’s driving you?', vision: 'Picture your future.', subjects: 'Make it yours.', grades: currentSubject || 'Your grades.', schedule: 'Make room for progress.', summary: `You’re ready, ${userName.trim().split(/\s+/)[0] || 'let’s go'}.` })[draft.step];
+  const title = ({ welcome: 'Make your mark.', year: 'Where are you now?', north: 'What’s driving you?', vision: 'Picture your future.', subjects: 'Make it yours.', grades: currentSubject || 'Your grades.', schedule: 'Make room for progress.', summary: guest ? 'You’re ready.' : `You’re ready, ${userName.trim().split(/\s+/)[0] || 'let’s go'}.` })[draft.step];
   const intro = ({ welcome: 'Your future. Your next step.', year: 'Your starting point', north: 'Your North Star · 1 of 2', vision: 'Your North Star · 2 of 2', subjects: 'Your subjects', grades: `Subject ${Math.max(1, draft.subjects.indexOf(currentSubject) + 1)} of ${draft.subjects.length}`, schedule: 'A rhythm that works for you', summary: 'This is your starting line' })[draft.step];
   const gradeLabel = (name: string) => {
     const value = draft.configs[name];
@@ -228,7 +234,7 @@ export default function SetupFlow({ userId, userName, onComplete, onSkip, mode =
     </div>
     <footer className="setup-footer">
       <p className="setup-validation" id="setup-validation" aria-live="polite">{saveError || problem}</p>
-      <button type="button" className="setup-continue" disabled={Boolean(problem) || saving} aria-describedby="setup-validation" onClick={() => void next()}><span>{saving ? 'Saving your plan…' : draft.step === 'welcome' ? 'Get Started' : draft.step === 'summary' ? 'Start Learning' : editSnapshot ? 'Save and review' : draft.step === 'grades' ? nextSubject ? 'Next subject' : transition ? 'Continue' : 'Continue to schedule' : 'Continue'}</span><ArrowUpRight size={24} aria-hidden="true" /></button>
+      <button type="button" className="setup-continue" disabled={Boolean(problem) || saving} aria-describedby="setup-validation" onClick={() => void next()}><span>{saving ? 'Saving your plan…' : draft.step === 'welcome' ? 'Get Started' : draft.step === 'summary' ? guest ? 'Dive in' : 'Start Learning' : editSnapshot ? 'Save and review' : draft.step === 'grades' ? nextSubject ? 'Next subject' : transition ? 'Continue' : 'Continue to schedule' : 'Continue'}</span><ArrowUpRight size={24} aria-hidden="true" /></button>
       <div className="setup-footer-links">{(!transition || draft.step !== 'subjects' || editSnapshot) && <button type="button" className="setup-back" disabled={saving} onClick={back}>{draft.step !== 'welcome' && <ArrowLeft size={15} aria-hidden="true" />}{editSnapshot ? 'Cancel edits' : draft.step === 'welcome' ? 'Skip for now' : 'Back'}</button>}<span>{draft.step === 'welcome' ? 'Grades can wait' : 'Your answers stay as you go back'}</span></div>
     </footer>
     {pendingYear && <div className="setup-dialog-backdrop"><section ref={yearDialog} role="alertdialog" aria-modal="true" aria-labelledby="setup-year-warning" className="setup-dialog"><h2 id="setup-year-warning">Change your school programme?</h2><p>Your subjects, grades and vision choices belong to a different programme. Changing will clear those choices from this draft.</p><button type="button" autoFocus className="setup-continue" onClick={() => setPendingYear(null)}>Keep my choices</button><button type="button" className="setup-text" onClick={() => changeYear(pendingYear)}>Change programme and clear choices</button></section></div>}

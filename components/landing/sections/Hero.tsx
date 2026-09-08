@@ -18,7 +18,7 @@ import { COPY } from '../copy';
 import { LineRise } from '../motion';
 import { StarguySlot } from '../starguy/Traveller';
 import { Button, Container, Eyebrow, Lede, Starguy } from '../primitives';
-import { APP_URL, FONT, L } from '../theme';
+import { APP_SETUP_LABEL, APP_SETUP_URL, APP_URL, FONT, L } from '../theme';
 import { Mark } from '../fx/marks';
 import Playground from './Playground';
 
@@ -51,6 +51,7 @@ const Hero: React.FC = () => {
           <div className="mt-7 flex flex-wrap items-center gap-4" data-hero-cta="true">
             <Button href={APP_URL} size="lg">{COPY.hero.primary}</Button>
             <Button variant="ghost" href="#playground">{COPY.hero.secondary}</Button>
+            <Button variant="ghost" href={APP_SETUP_URL}>{APP_SETUP_LABEL}</Button>
           </div>
         </div>
       </div>

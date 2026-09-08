@@ -56,8 +56,21 @@ import { saveInBackground } from '../utils/firestoreWrite';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 import { isProgressReadyForUser } from '../utils/progressHydration';
+import {
+  GUEST_USER_ID,
+  GUEST_USER_NAME,
+  LANDING_PAGE_URL,
+  type GuestPhase,
+  endGuestSetup,
+  isGuestSetupRequested,
+  readGuestPhase,
+  restoreGuestSetupState,
+  saveGuestSetupResult,
+  setGuestPhase,
+} from './onboarding/guest';
 
 const Onboarding = lazy(() => import('./Onboarding'));
+const DiveIn = lazy(() => import('./DiveIn'));
 const JCComingSoon = lazy(() => import('./JCComingSoon'));
 const JourneyView = lazy(() => import('./journey/JourneyView'));
 const MyDirection = lazy(() => import('./MyDirection'));
@@ -256,6 +269,12 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const { viewState, dashboardSection, currentCategory, currentModuleId, cameFromJourney } = nav.state;
   const { user, userResolved, needsOnboarding, handleLoginSuccess, handleLogout } = useAuth();
 
+  // Guest setup keeps its draft in sessionStorage, which the unauthenticated
+  // boot clears (AuthContext → clearLocalSessionData) before userResolved is
+  // published. Put it back once that clear has certainly run. No-op for
+  // everyone who is not mid-guest-setup.
+  useEffect(() => { if (userResolved) restoreGuestSetupState(); }, [userResolved]);
+
   const {
     studentProfile, userProgress, northStar, timetableCompletions,
     studySessions, studyDebriefs, studyReflections, topicMasteryV2, unifiedMockResults,
@@ -350,6 +369,15 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // looked like a generic app, and it was the one a new student sat and
     // watched for the whole of provisioning.
     return ACCOUNT_SETUP_LOADING;
+  }
+
+  // Guest setup: the landing page's "Set up without an account"
+  // (`?setup=guest`, read at boot) or a guest run already under way in this
+  // tab. Signed-out visitors only — the `user` check above this line is what
+  // keeps a signed-in student on their normal route, so this branch is
+  // unreachable for anyone with an account, whatever the URL says.
+  if (!user && isGuestSetupRequested()) {
+    return <GuestSetupRoute />;
   }
 
   if (!user) {
@@ -818,6 +846,50 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   // Fallback: unknown view state — redirect to tree via effect (not during render)
   return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
+};
+
+/**
+ * The guest branch: the SAME onboarding a new student gets, run with no
+ * account, then the "Dive in" placeholder. Nothing here touches Firestore or
+ * Auth: onComplete stores the built profile in sessionStorage (for a later
+ * adoption, not done here), onSkip goes back to the landing page, and the
+ * funnel records nothing for guests (utils/funnel.ts).
+ */
+const GuestSetupRoute: React.FC = () => {
+  const [phase, setPhaseState] = useState<GuestPhase>(() => readGuestPhase() ?? 'onboarding');
+  // The phase marker is what routes a reload back here after NavigationContext
+  // has tidied `setup=guest` out of the URL.
+  useEffect(() => { setGuestPhase(phase); }, [phase]);
+
+  if (phase === 'dive-in') {
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <DiveIn
+          onCreateAccount={() => endGuestSetup({ keepDraft: true })}
+          onBackToLanding={() => endGuestSetup({ keepDraft: true })}
+        />
+      </Suspense>
+    );
+  }
+
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <Onboarding
+        userId={GUEST_USER_ID}
+        userName={GUEST_USER_NAME}
+        guest
+        mode="fresh"
+        onComplete={(profile, northStar, essentialsMode) => {
+          saveGuestSetupResult({ profile, northStar: northStar ?? null, essentialsMode: Boolean(essentialsMode) });
+          setPhaseState('dive-in');
+        }}
+        onSkip={() => {
+          endGuestSetup({ keepDraft: false });
+          window.location.assign(LANDING_PAGE_URL);
+        }}
+      />
+    </Suspense>
+  );
 };
 
 /** Password change screen — shown when a GC resets a student's password */

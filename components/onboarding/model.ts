@@ -51,11 +51,11 @@ export function initialDraft(targetYear?: 'TY' | '5th'): SetupDraft {
 }
 /** Untrusted local storage is validated, including legacy drafts. Legacy auto-filled
  * grades are retained for review, never silently treated as confirmed answers. */
-export function readDraft(uid: string, mode: string, targetYear?: 'TY' | '5th'): SetupDraft {
+export function readDraft(uid: string, mode: string, targetYear?: 'TY' | '5th', storage: Pick<Storage, 'getItem'> = localStorage): SetupDraft {
   const base = initialDraft(targetYear);
   try {
-    const raw = localStorage.getItem(draftKey(uid, mode));
-    const legacy = !raw && localStorage.getItem(legacyDraftKey(uid, mode));
+    const raw = storage.getItem(draftKey(uid, mode));
+    const legacy = !raw && storage.getItem(legacyDraftKey(uid, mode));
     if (!raw && !legacy) return base;
     const saved = JSON.parse(raw || legacy || '{}');
     const years = ['1st', '2nd', '3rd', 'TY', '5th', '6th', 'LCA1', 'LCA2'];

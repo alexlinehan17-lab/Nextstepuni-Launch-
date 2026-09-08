@@ -22,6 +22,7 @@ import { getDefaultExamDate } from '../utils/examDates';
 import NorthStarOnboarding from './NorthStarOnboarding';
 import { COLORS } from '../design/tokens';
 import { trackFunnel } from '../utils/funnel';
+import { guestStorage } from './onboarding/guest';
 
 interface OnboardingProps {
   userId: string;
@@ -39,6 +40,10 @@ interface OnboardingProps {
    *  with the right curriculum already set without needing the year-picker
    *  step. */
   transitionTargetYear?: 'TY' | '5th';
+  /** Guest setup (no account): the draft lives in sessionStorage via
+   *  components/onboarding/guest.ts, nothing is written to Firestore, and the
+   *  final button reads "Dive in". See AppRouter's guest branch. */
+  guest?: boolean;
 }
 
 type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
@@ -91,13 +96,15 @@ const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.Rea
 
 const onboardingDraftKey = (userId: string, mode: string) => `nextstepuni:onboarding-draft:v1:${userId}:${mode}`;
 
-function writeOnboardingDraft(userId: string, mode: string, draft: OnboardingDraft): void {
-  try { localStorage.setItem(onboardingDraftKey(userId, mode), JSON.stringify(draft)); } catch { /* storage may be unavailable */ }
+type DraftStorage = Pick<Storage, 'getItem' | 'setItem' | 'removeItem'>;
+
+function writeOnboardingDraft(storage: DraftStorage, userId: string, mode: string, draft: OnboardingDraft): void {
+  try { storage.setItem(onboardingDraftKey(userId, mode), JSON.stringify(draft)); } catch { /* storage may be unavailable */ }
 }
 
-function readOnboardingDraft(userId: string, mode: string): OnboardingDraft | null {
+function readOnboardingDraft(storage: DraftStorage, userId: string, mode: string): OnboardingDraft | null {
   try {
-    const raw = localStorage.getItem(onboardingDraftKey(userId, mode));
+    const raw = storage.getItem(onboardingDraftKey(userId, mode));
     if (!raw) return null;
     const draft = JSON.parse(raw) as Partial<OnboardingDraft>;
     if (draft.version !== 1 || typeof draft.step !== 'number' || draft.step < 1 || draft.step > TOTAL_STEPS) return null;
@@ -288,9 +295,14 @@ const AnimatedNumber: React.FC<{ value: number; prefix?: string; className?: str
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear }) => {
+const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear, guest = false }) => {
   const isTransition = mode === 'transition-to-senior';
-  const draft = useMemo(() => readOnboardingDraft(userId, mode), [userId, mode]);
+  // A guest's draft is tab-scoped (sessionStorage) and must survive the
+  // unauthenticated-boot storage clear; an account's draft stays where it was.
+  const storage: DraftStorage = guest ? guestStorage : localStorage;
+  const draft = useMemo(() => readOnboardingDraft(storage, userId, mode), [storage, userId, mode]);
+  const finishLabel = guest ? 'Dive in' : 'Start Learning';
+  const firstName = userName.split(' ')[0] || userName;
   // In transition mode, we skip the welcome/year/mode steps and start
   // at Step 5 (Subjects). The target year is pre-set from the modal
   // pick, so the year picker never renders.
@@ -338,15 +350,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
       northStarData, restDays: Array.from(restDays),
     };
     latestDraftRef.current = next;
-    writeOnboardingDraft(userId, mode, next);
-  }, [userId, mode, step, selectedSubjects, subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode, northStarData, restDays]);
+    writeOnboardingDraft(storage, userId, mode, next);
+  }, [storage, userId, mode, step, selectedSubjects, subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode, northStarData, restDays]);
 
   // Preserve the latest synchronous snapshot when iOS backgrounds or evicts
   // the WebView. pagehide covers reload/navigation; visibilitychange covers an
   // app moving to the background before iOS has decided whether to retain it.
   useEffect(() => {
     const persistLatestDraft = () => {
-      if (latestDraftRef.current) writeOnboardingDraft(userId, mode, latestDraftRef.current);
+      if (latestDraftRef.current) writeOnboardingDraft(storage, userId, mode, latestDraftRef.current);
     };
     const persistWhenHidden = () => {
       if (document.visibilityState === 'hidden') persistLatestDraft();
@@ -357,7 +369,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
       window.removeEventListener('pagehide', persistLatestDraft);
       document.removeEventListener('visibilitychange', persistWhenHidden);
     };
-  }, [userId, mode]);
+  }, [storage, userId, mode]);
 
   // Every stage is a new screen. Carrying the previous stage's scroll offset
   // into the next one made the content appear to open halfway down the page.
@@ -414,12 +426,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
   const completeOnboarding = async (northStar?: NorthStar) => {
     trackFunnel('onboarding_completed');
     await onComplete(buildProfile(), northStar, essentialsMode);
-    try { localStorage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
+    // A guest's answers are kept: "Create your account" on the Dive-in page
+    // leaves them behind for a later adoption into the new account.
+    if (guest) return;
+    try { storage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
   };
 
   const skipOnboarding = () => {
     trackFunnel('onboarding_skipped');
-    try { localStorage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
+    try { storage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
     onSkip();
   };
 
@@ -735,7 +750,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       ink="#B5500F"
                       tilt={-3}
                       pose="wave"
-                      question={`Hi ${userName.split(' ')[0] || userName} — I'm Puifín, your guide here.`}
+                      question={`Hi ${firstName} — I'm Puifín, your guide here.`}
                       sub="Two minutes of setup and the whole app fits itself around you. One question at a time."
                     />
 
@@ -1394,7 +1409,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                   ink="#1F5F3E"
                   tilt={-2}
                   pose="cheer"
-                  question={`You're ready, ${userName.split(' ')[0] || userName}.`}
+                  question={guest ? "You're ready." : `You're ready, ${firstName}.`}
                   sub="Here's the plan we built together — review it, then start learning."
                 />
 
@@ -1528,7 +1543,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                     onClick={() => void completeOnboarding(northStarData ?? undefined)}
                     className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 text-sm font-semibold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
                   >
-                    <span className="flex-1 text-center">Start Learning</span>
+                    <span className="flex-1 text-center">{finishLabel}</span>
                     <ArrowRight size={14} />
                   </button>
                   <button type="button" onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium text-[#8A8178] transition-colors hover:text-[#1A1A1A]">
@@ -1561,7 +1576,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       transition={{ duration: 0.5, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
                       className="font-serif text-3xl sm:text-4xl font-bold mb-2 text-[#1A1A1A] dark:text-white"
                     >
-                      You're all set, {userName.split(' ')[0] || userName}.
+                      {guest ? "You're all set." : `You're all set, ${firstName}.`}
                     </motion.h2>
 
                     <motion.p
@@ -1620,7 +1635,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       className="flex justify-center"
                     >
                       <PrimaryActionButton
-                        label="Start Learning"
+                        label={finishLabel}
                         onClick={() => void completeOnboarding(northStarData ?? undefined)}
                         icon={ArrowRight}
                         variant="dark"
@@ -1657,7 +1672,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                 className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
                 style={{ minWidth: 160 }}
               >
-                <span className="flex-1 text-center">Start learning</span>
+                <span className="flex-1 text-center">{guest ? 'Dive in' : 'Start learning'}</span>
                 <ArrowRight size={14} />
               </button>
             )}

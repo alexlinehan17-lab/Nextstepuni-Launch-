@@ -48,6 +48,7 @@
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 import { logError } from './logError';
+import { isGuestSetupRequested } from '../components/onboarding/guest';
 
 /**
  * The first-run path, in order. Keep this list short and stable — it is the
@@ -127,6 +128,11 @@ function platform(): 'web' | 'ios' | 'android' {
  */
 export function trackFunnel(step: FunnelStep): void {
   try {
+    // Guest setup (no account) records nothing: the rules require auth to
+    // write here, so the only outcome would be a rejected request. One guard
+    // at the sink rather than at every call site, so no onboarding step can
+    // forget it.
+    if (isGuestSetupRequested()) return;
     const id = sessionId();
     const seenKey = `${SENT_KEY}:${id}`;
     let seen: string[] = [];
