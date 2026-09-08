@@ -18,6 +18,11 @@ describe('landing marker', () => {
     expect(markAnswer('the small intestine', points).earned).toBe(0);
     expect(markAnswer('', points).hits[0].matched).toBe(false);
   });
+  it('ignores sentence punctuation at the end of a word but keeps decimals', () => {
+    expect(markAnswer('it is the cathode.', [{ id: 'c', verbatim: 'cathode', marks: 3 }]).earned).toBe(3);
+    expect(markAnswer('The speed is 0.', [{ id: 'z', verbatim: '0', marks: 3, accept: [['0']] }]).earned).toBe(3);
+    expect(tokens('about 3.5 m this.')).toEqual(['about', '3.5', 'm', 'thi']);
+  });
   it('uses explicit accept alternatives when given', () => {
     const points = [{ id: 'f', verbatim: 'Cx(H2O)y', marks: 4, accept: [['cx', 'h2o', 'y'], ['cn', 'h2o', 'n']] }];
     expect(markAnswer('the formula is Cn(H2O)n', points).earned).toBe(4);

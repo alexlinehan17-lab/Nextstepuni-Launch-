@@ -51,6 +51,9 @@ export const tokens = (s: string): string[] =>
     .replace(/[−–—]/g, '-')
     .replace(/[^a-z0-9%°+\-=/().,\s]/g, ' ')
     .replace(/[(),]/g, ' ')
+    // Sentence punctuation at a word's end goes first, so "cathode." and "0."
+    // read as their words; decimals (3.5) and abbreviations (e.g.) survive.
+    .replace(/[.!?;:](?=\s|$)/g, ' ')
     .replace(/(?<=\D)[./](?=\D)/g, ' ')
     .split(/\s+/)
     .filter(Boolean)

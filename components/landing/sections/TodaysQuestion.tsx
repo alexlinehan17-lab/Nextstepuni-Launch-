@@ -69,10 +69,6 @@ const write = (key: string, value: unknown): void => {
   try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* private mode: the result still shows this visit */ }
 };
 
-/** The starguy reaction contract (Traveller.tsx): fire and forget, a no-op when he is not live. */
-const starguy = (kind: 'nod' | 'tilt' | 'cheer'): void => {
-  try { window.dispatchEvent(new CustomEvent('starguy', { detail: { kind } })); } catch { /* no window */ }
-};
 
 const plural = (n: number, one: string): string => `${n} ${one}${n === 1 ? '' : 's'}`;
 
@@ -124,7 +120,6 @@ const TodaysQuestion: React.FC = () => {
     const next: Streak = prev && prev.last === today ? prev : { count: prev && prev.last === dayBefore(today) ? prev.count + 1 : 1, last: today };
     write(STREAK_KEY, next);
     setStreak(next);
-    starguy(r.earned === r.total ? 'cheer' : r.earned > 0 ? 'nod' : 'tilt');
   }, [entry, answer, today]);
 
   const onShare = useCallback(async () => {
