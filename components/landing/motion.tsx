@@ -334,44 +334,69 @@ export const LineRise: React.FC<{
   delay?: number;
   /** Wait until the reader reaches it (the footer), rather than rising on mount (the hero). */
   inView?: boolean;
+  /** An explicit trigger that overrides `inView` — for a line whose box is on screen before the reader is (a sticky footer). */
+  when?: boolean;
   /** Room above the line inside the mask — for a tail taller than the type. */
   padTop?: string;
-}> = ({ text, accentWord, className = '', style, as = 'h1', tail, delay = 0.1, inView = false, padTop = '0.08em' }) => {
+  /** Wrap one phrase (consecutive words on one line) in an element of the caller's — the examiner's underline. */
+  wrapPhrase?: { phrase: string; wrap: (node: React.ReactNode) => React.ReactNode };
+}> = ({ text, accentWord, className = '', style, as = 'h1', tail, delay = 0.1, inView = false, when, padTop = '0.08em', wrapPhrase }) => {
   const reduce = useReducedMotion();
   const ref = useRef<HTMLElement>(null);
   const seen = useInView(ref, { once: true, margin: '-15% 0px' as never });
-  const go = !inView || seen;
+  const go = when ?? (!inView || seen);
   const lines = useMemo(() => text.split('\n').map(l => l.split(' ').filter(Boolean)), [text]);
   const Tag = as;
   const lastLine = lines.length - 1;
+  const strip = (w: string) => w.replace(/[^\w']/g, '');
+  const phraseWords = useMemo(() => wrapPhrase?.phrase.split(' ').map(strip) ?? [], [wrapPhrase]);
   return (
     <Tag ref={ref as React.RefObject<never>} className={className} style={style} aria-label={text.replace(/\n/g, ' ')}>
-      {lines.map((words, li) => (
-        <span key={li} aria-hidden="true" className="landing-line" style={{ display: 'block', overflow: 'hidden', paddingBottom: '0.28em', marginBottom: '-0.28em', paddingTop: padTop, marginTop: `-${padTop}` }}>
-          <MotionSpan
-            style={{ display: 'block', willChange: 'transform' }}
-            initial={reduce ? false : { y: '120%', opacity: 0 }}
-            animate={go ? { y: 0, opacity: 1 } : undefined}
-            transition={{ delay: delay + li * 0.09, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {words.map((w, wi) => {
-              const isAccent = accentWord && w.replace(/[^\w']/g, '') === accentWord;
-              const last = li === lastLine && wi === words.length - 1;
-              return (
-                <React.Fragment key={wi}>
-                  {last ? (
-                    <span style={{ position: 'relative', display: 'inline-block' }}>
-                      <Highlight word={w} color={isAccent ? L.orangeText : undefined} />
-                      {tail}
-                    </span>
-                  ) : <Highlight word={w} color={isAccent ? L.orangeText : undefined} />}
-                  {wi < words.length - 1 ? ' ' : null}
-                </React.Fragment>
-              );
-            })}
-          </MotionSpan>
-        </span>
-      ))}
+      {lines.map((words, li) => {
+        // Where the phrase starts on this line, if it does.
+        let phraseAt = -1;
+        if (phraseWords.length) {
+          for (let i = 0; i + phraseWords.length <= words.length; i++) {
+            if (phraseWords.every((pw, k) => strip(words[i + k]) === pw)) { phraseAt = i; break; }
+          }
+        }
+        const render = (w: string, wi: number) => {
+          const isAccent = accentWord && strip(w) === accentWord;
+          const last = li === lastLine && wi === words.length - 1;
+          return last ? (
+            <span style={{ position: 'relative', display: 'inline-block' }}>
+              <Highlight word={w} color={isAccent ? L.orangeText : undefined} />
+              {tail}
+            </span>
+          ) : <Highlight word={w} color={isAccent ? L.orangeText : undefined} />;
+        };
+        const nodes: React.ReactNode[] = [];
+        for (let wi = 0; wi < words.length; wi++) {
+          if (wi === phraseAt && wrapPhrase) {
+            const inner: React.ReactNode[] = [];
+            for (let k = 0; k < phraseWords.length; k++) {
+              inner.push(<React.Fragment key={wi + k}>{render(words[wi + k], wi + k)}{k < phraseWords.length - 1 ? ' ' : null}</React.Fragment>);
+            }
+            nodes.push(<React.Fragment key={`p${wi}`}>{wrapPhrase.wrap(inner)}</React.Fragment>);
+            wi += phraseWords.length - 1;
+          } else {
+            nodes.push(<React.Fragment key={wi}>{render(words[wi], wi)}</React.Fragment>);
+          }
+          if (wi < words.length - 1) nodes.push(' ');
+        }
+        return (
+          <span key={li} aria-hidden="true" className="landing-line" style={{ display: 'block', overflow: 'hidden', paddingBottom: '0.28em', marginBottom: '-0.28em', paddingTop: padTop, marginTop: `-${padTop}` }}>
+            <MotionSpan
+              style={{ display: 'block', willChange: 'transform' }}
+              initial={reduce ? false : { y: '120%', opacity: 0 }}
+              animate={go ? { y: 0, opacity: 1 } : undefined}
+              transition={{ delay: delay + li * 0.09, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            >
+              {nodes}
+            </MotionSpan>
+          </span>
+        );
+      })}
     </Tag>
   );
 };

@@ -9,6 +9,13 @@
  * then a drop-cap line, the body copy, a link into the playground where a demo
  * exists, and a screenshot frame. Starguy stands on the baseline at the end of
  * the word on chapters I and IV.
+ *
+ * Effects (components/landing/fx): a flow-field ornament is hatched behind
+ * each heading; the frames of I–III blot into the page as they arrive;
+ * Chapter I's frame is the real question with its marking scheme under a
+ * lens; the rail numerals carry an orange gauge that fills as each chapter
+ * is read, with 'you are here' lettered under the list; and the one circled
+ * figure on the page is 2010 in Chapter II.
  */
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
@@ -21,12 +28,20 @@ import { Body, Button, Container, Display, DropLine, Eyebrow, Frame, Rule, Starg
 import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
+import { Field } from '../fx/Field';
+import { Note } from '../fx/Note';
+import { Spotlight } from '../fx/Spotlight';
+import { Mark, markPhrase } from '../fx/marks';
 
 const CHAPTERS = COPY.chapters.items;
 /** Chapters whose giant word Starguy stands at the end of. */
 const HANGS: ReadonlySet<ChapterId> = new Set<ChapterId>(['markbank', 'planner']);
 /** Chapters with a matching playground demo (papertrail and lab have none). Ids map 1:1. */
 const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markbank', papertrail: 'papertrail', atlas: 'atlas', planner: 'planner', launchpad: 'reflex' };
+/** The frames that blot into the page (the rest simply rise). One blot each; the hero star uses the third. */
+const BLOTS: Partial<Record<ChapterId, 1 | 2 | 3>> = { markbank: 1, papertrail: 2, atlas: 3 };
+/** The page's one orange circle: a figure in a chapter's body copy. */
+const CIRCLED: { chapter: ChapterId; paragraph: number; phrase: string } = { chapter: 'papertrail', paragraph: 0, phrase: '2010' };
 
 const anchor = (id: ChapterId): string => `#chapter-${id}`;
 
@@ -75,7 +90,7 @@ const Rail: React.FC<{ active: ChapterId }> = ({ active }) => {
   <nav aria-label={COPY.chapters.eyebrow} style={{ position: 'relative' }}>
     <StarguyWalker active={active} listRef={listRef} />
     <ol ref={listRef} className="flex flex-col" style={{ listStyle: 'none', margin: 0, padding: 0, borderTop: `1px solid ${L.hairline}` }}>
-      {CHAPTERS.map(ch => {
+      {CHAPTERS.map((ch, i) => {
         const on = ch.id === active;
         return (
           <li key={ch.id} style={{ borderBottom: `1px solid ${L.hairline}` }}>
@@ -85,13 +100,19 @@ const Rail: React.FC<{ active: ChapterId }> = ({ active }) => {
               className="landing-tab flex items-baseline gap-3"
               style={{ padding: '10px 2px', textDecoration: 'none', color: on ? L.ink : L.muted, transition: 'color 120ms ease' }}
             >
-              <span aria-hidden="true" style={{ fontFamily: FONT.serif, fontWeight: 600, fontSize: 13, width: 22, flexShrink: 0, color: on ? L.orangeText : L.faint, transition: 'color 120ms ease' }}>{ch.numeral}</span>
+              <span aria-hidden="true" style={{ position: 'relative', fontFamily: FONT.serif, fontWeight: 600, fontSize: 13, width: 22, flexShrink: 0, color: on ? L.orangeText : L.faint, transition: 'color 120ms ease' }}>
+                {ch.numeral}
+                {/* The gauge: fills on this chapter's own view timeline (fx.css, .fx-tick). */}
+                <span className={`fx-tick fx-tick-${i + 1}`} />
+              </span>
               <span style={{ fontFamily: FONT.sans, fontSize: 14, fontWeight: on ? 700 : 500, color: 'inherit', lineHeight: 1.3 }}>{ch.railLabel}</span>
             </a>
           </li>
         );
       })}
     </ol>
+    {/* Written once the rail is on screen: the rail is sticky, so a scroll timeline would never move here. */}
+    <Note id="here" mode="timed" className="mt-4" style={{ width: 172 }} />
   </nav>
   );
 };
@@ -145,12 +166,12 @@ const Strip: React.FC<{ active: ChapterId }> = ({ active }) => {
   );
 };
 
-/** A supplied screenshot, else a live glimpse of the real surface, else a labelled placeholder. */
+/** Chapter I: the real question with the marking scheme under the lens. Otherwise a supplied screenshot, else a live glimpse of the real surface, else a labelled placeholder. */
 const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
   const src = CAPTURES[chapter.id];
   return (
     <Frame title={chapter.frameLabel} meta={chapter.numeral}>
-      {src
+      {chapter.id === 'markbank' ? <Spotlight /> : src
         ? <img src={src} alt={chapter.frameLabel} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto' }} />
         : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} /> : (
           <div
@@ -176,37 +197,50 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
   const flip = index % 2 === 1;
   const titleId = `chapter-${chapter.id}-title`;
   const demo = DEMO_OF[chapter.id];
+  const blot = BLOTS[chapter.id];
+  const frameCol = flip ? 'lg:col-span-7 lg:order-1' : 'lg:col-span-7';
   return (
     <article
       ref={articleRef}
       id={`chapter-${chapter.id}`}
       aria-labelledby={titleId}
-      className="scroll-mt-[124px] lg:scroll-mt-[96px]"
+      className={`scroll-mt-[124px] lg:scroll-mt-[96px] fx-chapter-${index + 1}`}
     >
-      <Eyebrow numeral={chapter.numeral}>{chapter.railLabel}</Eyebrow>
-      <WordRise className="mt-4">
-        {/* The word row clips sideways so Starguy, hung past the word's end, never widens the page. */}
-        <Display size="chapter" as="h3" id={titleId} style={{ overflowWrap: 'anywhere', overflowX: 'clip' }}>
-          <span style={{ position: 'relative', display: 'inline-block', maxWidth: '100%' }}>
-            {chapter.word}
-            {HANGS.has(chapter.id) && (
-              /* Inline, so a word that wraps ("Planner & Study") still ends with him on its LAST line. */
-              <span
-                aria-hidden="true"
-                className="landing-starguy-lg"
-                style={{ display: 'inline-block', verticalAlign: 'baseline', marginLeft: '0.06em', marginBottom: '0.04em', width: '0.55em', lineHeight: 0 }}
-              >
-                <StarguySlot id={`word-${chapter.id}` as SlotId}><Starguy size={0} style={{ width: '100%', height: 'auto' }} /></StarguySlot>
+      <div className="fx-head">
+        <Field n={index + 1} />
+        <div className="fx-head-text">
+          <Eyebrow numeral={chapter.numeral}>{chapter.railLabel}</Eyebrow>
+          <WordRise className="mt-4">
+            {/* The word row clips sideways so Starguy, hung past the word's end, never widens the page. */}
+            <Display size="chapter" as="h3" id={titleId} style={{ overflowWrap: 'anywhere', overflowX: 'clip' }}>
+              <span style={{ position: 'relative', display: 'inline-block', maxWidth: '100%' }}>
+                {chapter.word}
+                {HANGS.has(chapter.id) && (
+                  /* Inline, so a word that wraps ("Planner & Study") still ends with him on its LAST line. */
+                  <span
+                    aria-hidden="true"
+                    className="landing-starguy-lg"
+                    style={{ display: 'inline-block', verticalAlign: 'baseline', marginLeft: '0.06em', marginBottom: '0.04em', width: '0.55em', lineHeight: 0 }}
+                  >
+                    <StarguySlot id={`word-${chapter.id}` as SlotId}><Starguy size={0} style={{ width: '100%', height: 'auto' }} /></StarguySlot>
+                  </span>
+                )}
               </span>
-            )}
-          </span>
-        </Display>
-      </WordRise>
+            </Display>
+          </WordRise>
+        </div>
+      </div>
       <div className="mt-8 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         <div className={flip ? 'lg:col-span-5 lg:order-2' : 'lg:col-span-5'}>
           <DropLine>{chapter.line}</DropLine>
           <div className="mt-6 flex flex-col gap-4">
-            {chapter.body.map(p => <Body key={p} style={{ fontSize: 16 }}>{p}</Body>)}
+            {chapter.body.map((p, pi) => (
+              <Body key={p} style={{ fontSize: 16 }}>
+                {chapter.id === CIRCLED.chapter && pi === CIRCLED.paragraph
+                  ? markPhrase(p, CIRCLED.phrase, node => <Mark type="circle" color={L.orange} padding={[2, 5]} strokeWidth={1.5} delay={250}>{node}</Mark>)
+                  : p}
+              </Body>
+            ))}
           </div>
           {demo && (
             <div className="mt-6">
@@ -214,9 +248,16 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
             </div>
           )}
         </div>
-        <Reveal className={flip ? 'lg:col-span-7 lg:order-1' : 'lg:col-span-7'}>
-          <div ref={frameRef}><Capture chapter={chapter} /></div>
-        </Reveal>
+        {/* I–III soak into the page (the blot is this chapter's one motion); the rest rise. */}
+        {blot ? (
+          <div className={frameCol}>
+            <div ref={frameRef} className={`fx-blot fx-blot--scroll fx-blot-${blot}`}><Capture chapter={chapter} /></div>
+          </div>
+        ) : (
+          <Reveal className={frameCol}>
+            <div ref={frameRef}><Capture chapter={chapter} /></div>
+          </Reveal>
+        )}
       </div>
     </article>
   );
@@ -251,7 +292,8 @@ const Chapters: React.FC = () => {
         <RailHeading className="lg:hidden mb-6" />
         <Strip active={active} />
 
-        <div className="lg:grid lg:grid-cols-12 lg:gap-x-8">
+        {/* fx-scope: the six chapters' view timelines are scoped here so the sticky rail can read them. */}
+        <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 fx-scope">
           <div className="hidden lg:block lg:col-span-3">
             <div className="sticky" style={{ top: 92 }}>
               <Rail active={active} />

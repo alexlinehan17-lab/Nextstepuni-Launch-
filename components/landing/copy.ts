@@ -84,6 +84,13 @@ export const COPY = {
     intro: 'Six things, in the order you’ll probably meet them.',
     /** Mono label inside a chapter frame that has no screenshot yet. */
     placeholder: 'Screenshot · coming',
+    /** Chapter I's frame: the real question with the marking scheme under a lens. */
+    spotlight: {
+      show: 'Show marking',
+      hide: 'Hide marking',
+      hint: 'Hover the question to see what the examiner saw.',
+      scheme: 'Marking scheme',
+    },
     items: [
       {
         id: 'markbank', numeral: 'I', word: 'Mark Bank', railLabel: 'Mark Bank',
@@ -181,13 +188,28 @@ export const COPY = {
 
   schools: {
     eyebrow: 'For schools',
-    title: 'One join code for students. Two logins for staff.',
+    /** The title in two sentences: the first is bracketed in ink, the way an examiner marks the line that matters. */
+    titleJoin: 'One join code for students.',
+    titleStaff: 'Two logins for staff.',
     body: 'Your school gets a join code that students use to sign up, plus a shared login for the guidance counsellor and one for the staff room. That is the whole setup.',
     cta: 'Email us',
+    /** For a student who already has the code: sign-up in the app asks for it. */
+    student: 'Have a code? Sign up in the app',
+  },
+
+  /** Hand-lettered notes in the character's line (components/landing/fx/Note.tsx); these are their accessible names. */
+  fx: {
+    notes: {
+      here: 'you are here',
+      join: 'join with your school’s code',
+      end: 'the end',
+    },
   },
 
   footer: {
     statement: 'Your study. Your way.',
+    /** Rides the drawn line the character lands on. The headline, in one breath. */
+    caption: 'Past papers, marking schemes, and a plan for the week',
     links: [
       { label: 'Privacy', href: '/privacy' },
       { label: 'Terms', href: '/terms' },
