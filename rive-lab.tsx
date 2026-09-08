@@ -19,9 +19,12 @@ import './index.css';
 
 const Lab: React.FC = () => {
   const speed = useMotionValue(0);
-  const [speedUi, setSpeedUi] = useState(0);
-  const [land, setLand] = useState(false);
-  const [step, setStep] = useState(0);
+  const lookX = useMotionValue(0);
+  const lookY = useMotionValue(0);
+  const lean = useMotionValue(0);
+  const squash = useMotionValue(0);
+  const [ui, setUi] = useState({ speed: 0, lookX: 0, lookY: 0, lean: 0, squash: 0 });
+  const set = (k: keyof typeof ui, mv: ReturnType<typeof useMotionValue<number>>) => (e: React.ChangeEvent<HTMLInputElement>) => { const v = Number(e.target.value); setUi(u => ({ ...u, [k]: v })); mv.set(v); };
   return (
     <div style={{ maxWidth: 960, margin: '0 auto', padding: '48px 24px 120px', background: '#fff', fontFamily: 'DM Sans, sans-serif', color: '#1A1A1A' }}>
       <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B84A0C' }}>NextStepUni · Starguy Lab</p>
@@ -36,14 +39,16 @@ const Lab: React.FC = () => {
           <p style={{ margin: '14px 0 0', fontSize: 12.5, color: '#5F5A55', textAlign: 'center' }}>The drawing. It does not change.</p>
         </div>
         <div style={{ border: '1.5px solid #1A1A1A', borderRadius: 16, padding: 24 }}>
-          <div style={{ width: 240, margin: '0 auto' }}><StarguyFigure speed={speed} land={land} step={step} /></div>
+          <div style={{ width: 240, margin: '0 auto' }}><StarguyFigure speed={speed} lookX={lookX} lookY={lookY} lean={lean} squash={squash} /></div>
           <p style={{ margin: '14px 0 0', fontSize: 12.5, color: '#5F5A55', textAlign: 'center' }}>The rig, or the PNG until it lands.</p>
         </div>
       </div>
       <div style={{ marginTop: 28, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20, fontSize: 13 }}>
-        <label>speed · {speedUi}<br /><input type="range" min={0} max={100} value={speedUi} onChange={e => { const v = Number(e.target.value); setSpeedUi(v); speed.set(v); }} style={{ width: '100%' }} /></label>
-        <label><input type="checkbox" checked={land} onChange={e => setLand(e.target.checked)} /> land (true at the footer)</label>
-        <button type="button" onClick={() => setStep(n => n + 1)} style={{ minHeight: 36, borderRadius: 6, border: '1.5px solid #1A1A1A', background: '#fff', fontWeight: 700, boxShadow: '2px 2px 0 #1A1A1A' }}>fire step ({step})</button>
+        <label>speed · {ui.speed}<br /><input type="range" min={0} max={100} value={ui.speed} onChange={set('speed', speed)} style={{ width: '100%' }} /></label>
+        <label>look X · {ui.lookX}<br /><input type="range" min={-1} max={1} step={0.05} value={ui.lookX} onChange={set('lookX', lookX)} style={{ width: '100%' }} /></label>
+        <label>look Y · {ui.lookY}<br /><input type="range" min={-1} max={1} step={0.05} value={ui.lookY} onChange={set('lookY', lookY)} style={{ width: '100%' }} /></label>
+        <label>lean° · {ui.lean}<br /><input type="range" min={-8} max={8} step={0.5} value={ui.lean} onChange={set('lean', lean)} style={{ width: '100%' }} /></label>
+        <label>squash · {ui.squash}<br /><input type="range" min={-1} max={1} step={0.05} value={ui.squash} onChange={set('squash', squash)} style={{ width: '100%' }} /></label>
       </div>
     </div>
   );
