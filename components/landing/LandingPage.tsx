@@ -13,7 +13,9 @@ import Hero from './sections/Hero';
 import Numbers from './sections/Numbers';
 import Chapters from './sections/Chapters';
 import Scenes from './fx-h/Scenes';
+import TunnelOfYears from './sections/TunnelOfYears';
 import Examiner from './sections/Examiner';
+import Guesswork from './sections/Guesswork';
 import TodaysQuestion from './sections/TodaysQuestion';
 import AskThePapers from './sections/AskThePapers';
 import HowItWorks from './sections/HowItWorks';
@@ -34,7 +36,9 @@ const LandingPage: React.FC = () => {
       <Numbers />
       <Scenes />
       <Chapters />
+      <TunnelOfYears />
       <Examiner />
+      <Guesswork />
       <TodaysQuestion />
       <AskThePapers />
       <HowItWorks />
