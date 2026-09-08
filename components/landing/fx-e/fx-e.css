@@ -1,0 +1,186 @@
+/* Landing effects, set E: Today's Question and Ask the papers. White canvas,
+   ink hairlines, one orange. The motion here is two small entrances — the
+   scheme's points rising in after Check, and a grid cell lighting as the
+   visitor types — and both are off under prefers-reduced-motion and under
+   ?static=1 (html.landing-static). */
+
+/* ── Shared ───────────────────────────────────────────────────────────── */
+.fxe-mono {
+  font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #766A5F;
+  margin: 0;
+}
+.fxe-field {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'DM Sans', 'DM Sans Fallback', system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.45;
+  color: #1A1A1A;
+  background: #FFFFFF;
+  border: 1.5px solid #1A1A1A;
+  border-radius: 12px;
+  padding: 12px 14px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.fxe-field::placeholder { color: #766A5F; opacity: 1; }
+/* Focus rings are the page's (.landing-page *:focus-visible in landing.css). */
+.fxe-field::-webkit-search-decoration, .fxe-field::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/* ── Today's Question ─────────────────────────────────────────────────── */
+.fxe-answer { resize: vertical; min-height: 64px; display: block; }
+.fxe-question {
+  font-family: 'Source Serif 4', 'Source Serif 4 Fallback', Georgia, 'Times New Roman', serif;
+  font-size: clamp(20px, 2.1vw, 26px);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: #1A1A1A;
+  margin: 0;
+  text-wrap: pretty;
+}
+.fxe-figure { margin: 16px 0 0; }
+.fxe-figure img { display: block; max-height: 260px; width: auto; max-width: 100%; border: 1px solid rgba(26, 26, 26, 0.14); border-radius: 8px; background: #FFFFFF; }
+.fxe-score {
+  font-family: 'Source Serif 4', 'Source Serif 4 Fallback', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(24px, 2.6vw, 32px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: #1A1A1A;
+  margin: 0;
+}
+.fxe-score b { color: #B84A0C; font-weight: inherit; }
+.fxe-points { list-style: none; margin: 12px 0 0; padding: 0; border-top: 1.5px solid #1A1A1A; }
+.fxe-point {
+  display: grid;
+  grid-template-columns: 12px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: baseline;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.14);
+  font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #1A1A1A;
+}
+.fxe-point__sq { width: 12px; height: 12px; box-sizing: border-box; border: 1.5px solid #1A1A1A; background: #FFFFFF; align-self: center; }
+.fxe-point--earned .fxe-point__sq { background: #F26B1F; border-color: #F26B1F; }
+.fxe-point--earned .fxe-point__text { color: #B84A0C; font-weight: 600; }
+.fxe-point__marks { font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.1em; color: #766A5F; white-space: nowrap; }
+.fxe-point--earned .fxe-point__marks { color: #B84A0C; }
+.fxe-card {
+  font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1.5px solid #1A1A1A;
+  border-radius: 10px;
+  color: #1A1A1A;
+  background: #FFFFFF;
+}
+.fxe-card__squares { font-size: 22px; line-height: 1.4; letter-spacing: 1px; }
+.fxe-status { font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif; font-weight: 600; font-size: 14px; color: #B84A0C; min-height: 1em; }
+
+/* The points rise in one after another once the marker has spoken. */
+@media (prefers-reduced-motion: no-preference) {
+  :root:not(.landing-static) .fxe-rise {
+    animation: fxe-rise 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation-delay: calc(var(--i, 0) * 110ms);
+  }
+}
+@keyframes fxe-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ── Ask the papers ───────────────────────────────────────────────────── */
+.fxe-count {
+  font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #5F5A55;
+  margin: 12px 0 0;
+  min-height: 1.45em;
+}
+.fxe-count b { color: #1A1A1A; font-weight: 600; }
+.fxe-grid {
+  display: grid;
+  grid-template-columns: max-content repeat(var(--fxe-years, 16), minmax(0, 1fr));
+  gap: 4px;
+  align-items: center;
+  margin-top: 18px;
+  min-width: 0;
+}
+.fxe-grid__year {
+  font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  color: #766A5F;
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+.fxe-grid__century { display: none; }
+.fxe-grid__label {
+  font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  color: #5F5A55;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.fxe-grid__long { display: none; }
+@media (min-width: 640px) {
+  .fxe-grid { gap: 5px; }
+  .fxe-grid__century { display: inline; }
+  .fxe-grid__long { display: inline; }
+  .fxe-grid__short { display: none; }
+  .fxe-grid__year { font-size: 11px; }
+}
+.fxe-cell {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(26, 26, 26, 0.18);
+  border-radius: 3px;
+  background: #FFFFFF;
+  position: relative;
+  cursor: default;
+}
+.fxe-cell::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  background: #F26B1F;
+  opacity: var(--lit, 0);
+}
+.fxe-cell--lit { cursor: pointer; border-color: #1A1A1A; }
+.fxe-cell--lit:hover::after { opacity: 1; }
+.fxe-cell[aria-pressed="true"] { box-shadow: 0 0 0 1.5px #1A1A1A; }
+@media (prefers-reduced-motion: no-preference) {
+  :root:not(.landing-static) .fxe-cell::after { transition: opacity 160ms ease; }
+  :root:not(.landing-static) .fxe-cell { transition: border-color 160ms ease; }
+}
+.fxe-results { list-style: none; margin: 0; padding: 0; border-top: 1.5px solid #1A1A1A; }
+.fxe-result { padding: 14px 0; border-bottom: 1px solid rgba(26, 26, 26, 0.14); }
+.fxe-result__text {
+  font-family: 'Source Serif 4', 'Source Serif 4 Fallback', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.45;
+  color: #1A1A1A;
+  margin: 6px 0;
+  text-wrap: pretty;
+}
+.fxe-mark { background: #FDEEDF; color: #B84A0C; font-weight: 600; padding: 0 1px; border-radius: 2px; }

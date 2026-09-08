@@ -13,6 +13,8 @@ import Hero from './sections/Hero';
 import Numbers from './sections/Numbers';
 import Chapters from './sections/Chapters';
 import Examiner from './sections/Examiner';
+import TodaysQuestion from './sections/TodaysQuestion';
+import AskThePapers from './sections/AskThePapers';
 import HowItWorks from './sections/HowItWorks';
 import Subjects from './sections/Subjects';
 import Schools from './sections/Schools';
@@ -31,6 +33,8 @@ const LandingPage: React.FC = () => {
       <Numbers />
       <Chapters />
       <Examiner />
+      <TodaysQuestion />
+      <AskThePapers />
       <HowItWorks />
       <Subjects />
       <Schools />
