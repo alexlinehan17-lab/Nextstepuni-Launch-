@@ -17,10 +17,35 @@
       }
       html { background: #FFFFFF; }
       body { margin: 0; background: #FFFFFF; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      /* Cross-document view transitions with the app (components/landing/leave.ts).
+         The opt-in has to be here, in static HTML, because the browser reads it
+         before any module runs; #landing-mark is the door he comes home through. */
+      @view-transition { navigation: auto; }
+      ::view-transition-group(starguy) { animation-duration: 0.65s; animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1); }
+      ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.2s; }
+      @media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }
+      #landing-mark { position: fixed; left: 24px; bottom: 22px; width: 52px; z-index: 45; pointer-events: none; display: none; }
+      #landing-mark[data-here] { display: block; }
+      #landing-mark img { display: block; width: 100%; height: auto; }
+      /* One of him at a time: while he stands on the door, the hero's copy waits. */
+      body:has(#landing-mark[data-here]) [data-starguy-slot="hero"] { visibility: hidden !important; }
     </style>
+    <link rel="expect" href="#landing-mark" blocking="render" />
   </head>
   <body>
     <div id="root"></div>
+    <div id="landing-mark" aria-hidden="true"><img src="/assets/landing/starguy.png" alt="" /></div>
+    <script>
+      // Home from the app: the browser lands him on the door, and the traveller
+      // (Traveller.tsx) picks him up from there and walks him to the hero.
+      addEventListener('pagereveal', function (e) {
+        var m = document.getElementById('landing-mark');
+        if (!e.viewTransition || !m) return;
+        m.setAttribute('data-here', '');
+        m.style.viewTransitionName = 'starguy';
+        e.viewTransition.finished.finally(function () { m.style.viewTransitionName = ''; });
+      });
+    </script>
     <script type="module" src="/landing-dev.tsx"></script>
   </body>
 </html>
