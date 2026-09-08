@@ -283,29 +283,12 @@
       #app-mark img { display: block; width: 100%; height: auto; }
       #app-mark[data-here] { display: block; }
     </style>
+    <script src="/door.js"></script>
     <link rel="expect" href="#app-mark" blocking="render" />
 </head>
   <body class="bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors duration-500">
     <div id="root"></div>
-    <div id="app-mark" aria-hidden="true"><img src="/assets/landing/starguy.png" alt="" /></div>
-    <script>
-      (function () {
-        var mark = document.getElementById('app-mark');
-        var fromLanding = /(^|[?&])from=landing(&|$)/.test(location.search) || /\/landing-dev\.html/.test(document.referrer);
-        if (!mark || !fromLanding) return;
-        var hide = function () { mark.style.opacity = '0'; setTimeout(function () { mark.removeAttribute('data-here'); mark.style.opacity = ''; }, 700); };
-        window.addEventListener('pagereveal', function (e) {
-          if (!e.viewTransition) return;
-          mark.setAttribute('data-here', '');
-          mark.style.viewTransitionName = 'starguy';
-          e.viewTransition.finished.finally(function () { mark.style.viewTransitionName = ''; setTimeout(hide, 4000); });
-        });
-        window.addEventListener('pageswap', function (e) {
-          if (!e.viewTransition || !mark.hasAttribute('data-here')) return;
-          mark.style.viewTransitionName = 'starguy';
-        });
-      })();
-    </script>
+    <div id="app-mark" aria-hidden="true"><img src="/assets/landing/starguy-door.png" alt="" width="208" height="241" /></div>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
