@@ -12,7 +12,7 @@ import Nav from './sections/Nav';
 import Hero from './sections/Hero';
 import Numbers from './sections/Numbers';
 import Chapters from './sections/Chapters';
-import Compare from './sections/Compare';
+import Examiner from './sections/Examiner';
 import HowItWorks from './sections/HowItWorks';
 import Subjects from './sections/Subjects';
 import Schools from './sections/Schools';
@@ -30,7 +30,7 @@ const LandingPage: React.FC = () => {
       <Hero />
       <Numbers />
       <Chapters />
-      <Compare />
+      <Examiner />
       <HowItWorks />
       <Subjects />
       <Schools />
