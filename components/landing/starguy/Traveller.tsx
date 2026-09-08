@@ -45,6 +45,7 @@ export const StarguySlot: React.FC<{ id: SlotId; children: React.ReactNode; clas
 export const useTravellerLive = (): boolean => useContext(TravellerContext).live;
 
 const NAV = 68;
+const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
 /** How long the headline takes to arrive; the in-mask copy carries him until then. */
 const SETTLE_MS = 1400;
 
@@ -58,10 +59,25 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
   const hop = useMotionValue(0);
   /** Stride input for the rig: 0 at rest, 100 at a fast flick — from his own vertical speed. */
   const speed = useMotionValue(0);
-  const [land, setLand] = useState(false);
-  const [step, setStep] = useState(0);
+  /** Where he looks: the pointer, relative to his own centre, −1…1 each way. */
+  const lookXTarget = useMotionValue(0);
+  const lookYTarget = useMotionValue(0);
+  const lookX = useSpring(lookXTarget, { stiffness: 120, damping: 20 });
+  const lookY = useSpring(lookYTarget, { stiffness: 120, damping: 20 });
+  /** Lean with sideways motion, degrees; stretch with vertical speed, squash on landing. */
+  const leanTarget = useMotionValue(0);
+  const lean = useSpring(leanTarget, { stiffness: 140, damping: 18 });
+  const squash = useMotionValue(0);
+  const pulse = useMotionValue(0);
   const current = useRef<SlotId | null>(null);
   const primed = useRef(false);
+  const pointer = useRef<{ x: number; y: number; at: number } | null>(null);
+
+  useEffect(() => {
+    const onMove = (e: PointerEvent) => { pointer.current = { x: e.clientX, y: e.clientY, at: performance.now() }; };
+    window.addEventListener('pointermove', onMove, { passive: true });
+    return () => window.removeEventListener('pointermove', onMove);
+  }, []);
 
   useEffect(() => {
     let raf = 0;
@@ -97,15 +113,32 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
         if (far) { x.jump(tx); y.jump(ty); sx.jump(tx); sy.jump(ty); }
         current.current = id;
         animate(hop, [0, -10, 0], { duration: 0.45, ease: 'easeOut' });
-        setLand(id === 'footer');
-        setStep(n => n + 1);
+        // He lands as the hop ends: a squash, a small rebound, then rest.
+        animate(pulse, [0, 0.7, -0.15, 0], { duration: 0.5, times: [0, 0.3, 0.7, 1], ease: 'easeOut', delay: 0.45 });
       }
       x.set(tx); y.set(ty); w.set(tw);
-      speed.set(Math.min(100, Math.abs(sy.getVelocity()) / 18));
+      const vy = sy.getVelocity();
+      const vx = sx.getVelocity();
+      speed.set(Math.min(100, Math.abs(vy) / 18));
+      // Lean into sideways travel; stretch a little when moving fast; and on the
+      // way down to the footer line, crouch as he arrives — reader-paced, so
+      // scrolling back stands him up again.
+      leanTarget.set(clamp(vx / 250, -6, 6));
+      const stretch = clamp(-Math.abs(vy) / 2500, -0.5, 0);
+      const d = Math.abs(ty - sy.get());
+      const bump = id === 'footer' && d < 120 ? 0.6 * Math.sin(Math.PI * (1 - d / 120)) : 0;
+      squash.set(clamp(pulse.get() + stretch + bump, -1, 1));
+      // Look at the pointer, from his own centre; drift back to neutral when it rests.
+      const p = pointer.current;
+      const cx = sx.get() + sw.get() * 0.5, cy = sy.get() + sw.get() * 0.5;
+      if (p && performance.now() - p.at < 1600) {
+        lookXTarget.set(clamp((p.x - cx) / (window.innerWidth * 0.35), -1, 1));
+        lookYTarget.set(clamp((p.y - cy) / (window.innerHeight * 0.35), -1, 1));
+      } else { lookXTarget.set(0); lookYTarget.set(0); }
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [slots, x, y, w, sx, sy, sw, hop, speed]);
+  }, [slots, x, y, w, sx, sy, sw, hop, speed, lookXTarget, lookYTarget, leanTarget, squash, pulse]);
 
   return createPortal(
     <MotionDiv
@@ -113,7 +146,7 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
       className="landing-traveller"
       style={{ position: 'fixed', left: 0, top: 0, x: sx, y: sy, width: sw, marginTop: hop, zIndex: 45, pointerEvents: 'none', lineHeight: 0 }}
     >
-      <StarguyFigure speed={speed} land={land} step={step} />
+      <StarguyFigure speed={speed} lookX={lookX} lookY={lookY} lean={lean} squash={squash} />
     </MotionDiv>,
     document.body,
   );

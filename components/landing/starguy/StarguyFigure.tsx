@@ -2,39 +2,59 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Starguy, alive. The same drawing — not a redraw — placed in Rive as a
- * raster image (public/assets/landing/starguy.riv). Its state machine
- * "Traveller" is one 1D blend on the number input `speed` (0–100): at rest
- * the `idle` breath (a 1% scale swell over 2.4s), at a fast flick the `walk`
- * stride (an 8px lift and a ±1.5° lean about the star, 0.8s). Between them
- * the runtime crossfades, so his stride grows with his speed down the page.
+ * Starguy, alive. The same drawing — not a redraw — placed in Rive as two
+ * raster layers cut from the one PNG (public/assets/landing/starguy.riv):
+ * the body, and the head on its own node pivoted at the neck. A root group
+ * pivots at the star.
  *
- * The file also carries a one-shot `land` squash timeline and `land`/`step`
- * inputs, but its graph does not route to that timeline yet, so the landing
- * squash is done here, on the wrapper, when a hop arrives. Both inputs are
- * still fed to the rig; when the graph gains those transitions the wrapper
- * squash is the only thing to remove.
+ * Motion comes from two places in the file. The state machine "Traveller"
+ * is one 1D blend on the number input `speed` (0–100): at rest the `idle`
+ * breath (a 1% scale swell over 2.4s), at a fast flick the `walk` stride
+ * (an 8px lift and a ±1.5° lean about the star, 0.8s). Everything else is
+ * data-bound: the file's view model carries five numbers that drive node
+ * properties directly, with no state-machine graph in between —
+ *
+ *   numberProperty1  head rotation, degrees          (look left/right)
+ *   numberProperty2  head local Y, px, base −670.98  (nod up/down)
+ *   numberProperty3  root rotation, degrees          (lean with motion)
+ *   numberProperty4  root scale X, percent           (squash / stretch)
+ *   numberProperty5  root scale Y, percent
+ *
+ * (The editor would not rename the properties, so the mapping lives here.)
  *
  * Until the file exists, or if it fails to load, this renders the PNG exactly
  * as before, so nothing on the page changes appearance; the .riv only adds
- * motion. The lite runtime (no text, no audio) is enough for an image, and
- * its wasm is served from our own bundle rather than a CDN.
+ * motion. The lite runtime (no text, no audio) is enough, and its wasm is
+ * served from our own bundle rather than a CDN.
  */
 
-import React, { useEffect, useState } from 'react';
-import { Alignment, Fit, Layout, RuntimeLoader, useRive, useStateMachineInput } from '@rive-app/react-canvas-lite';
-import { animate, useMotionValue, useMotionValueEvent, type MotionValue } from 'framer-motion';
-import { MotionSpan } from '../../Motion';
+import React, { useEffect, useRef, useState } from 'react';
+import {
+  Alignment, Fit, Layout, RuntimeLoader, useRive, useStateMachineInput,
+  useViewModel, useViewModelInstance, useViewModelInstanceNumber,
+} from '@rive-app/react-canvas-lite';
+import { useMotionValueEvent, type MotionValue } from 'framer-motion';
 import { Starguy } from '../primitives';
 
 export const STARGUY_RIV = '/assets/landing/starguy.riv';
 export const STARGUY_STATE_MACHINE = 'Traveller';
 /** The PNG's own proportions; the Rive artboard is authored to match. */
 export const STARGUY_RATIO = '1030 / 1193';
-/** Where he stands: the star, as a fraction of the drawing (the rig's origin too). */
-const STAR_ORIGIN = '62% 86%';
-/** The traveller's hop lasts this long; the squash lands as it ends. */
-const HOP_MS = 450;
+
+/** The head node's resting local Y inside the body node, in artboard px. */
+const HEAD_BASE_Y = -670.98;
+/** How far the head turns toward the pointer at full look, degrees. */
+const LOOK_TURN = 7;
+/** How far the head lifts or drops at full look, px. */
+const LOOK_NOD = 5;
+
+const VM = {
+  headTurn: 'numberProperty1',
+  headY: 'numberProperty2',
+  lean: 'numberProperty3',
+  scaleX: 'numberProperty4',
+  scaleY: 'numberProperty5',
+} as const;
 
 RuntimeLoader.setWasmUrl(new URL('@rive-app/canvas-lite/rive.wasm', import.meta.url).href);
 
@@ -50,48 +70,84 @@ const rivExists = async (): Promise<boolean> => {
   return rivKnown;
 };
 
-const Rig: React.FC<{ speed?: MotionValue<number>; land?: boolean; step?: number; onFail: () => void }> = ({ speed, land = false, step = 0, onFail }) => {
+/**
+ * Everything that moves him, as MotionValues so scroll- and pointer-linked
+ * values drive the rig without React re-renders. All optional; a missing
+ * value leaves that part at rest.
+ */
+export interface StarguySignals {
+  /** Stride: 0 at rest, 100 at a fast flick. */
+  speed?: MotionValue<number>;
+  /** Where he looks, −1…1 across and −1 (up)…1 (down). */
+  lookX?: MotionValue<number>;
+  lookY?: MotionValue<number>;
+  /** Whole-body lean about the star, degrees; positive tips the head to the right. */
+  lean?: MotionValue<number>;
+  /** Squash (1) through rest (0) to stretch (−1), about the star. */
+  squash?: MotionValue<number>;
+}
+
+const useBoundNumber = (path: string, instance: ReturnType<typeof useViewModelInstance>) => {
+  const { setValue } = useViewModelInstanceNumber(path, instance);
+  const ref = useRef(setValue);
+  ref.current = setValue;
+  return ref;
+};
+
+const useDrive = (value: MotionValue<number> | undefined, apply: (v: number) => void) => {
+  const applyRef = useRef(apply);
+  applyRef.current = apply;
+  useMotionValueEvent(value ?? (null as never), 'change', v => applyRef.current(v));
+  // Push the current value once the rig is ready, so a value set before load lands.
+  useEffect(() => { if (value) applyRef.current(value.get()); });
+};
+
+const Rig: React.FC<StarguySignals & { onFail: () => void }> = ({ speed, lookX, lookY, lean, squash, onFail }) => {
   const { rive, RiveComponent } = useRive({
     src: STARGUY_RIV,
     stateMachine: STARGUY_STATE_MACHINE,
     autoplay: true,
+    autoBind: true,
     layout: new Layout({ fit: Fit.Contain, alignment: Alignment.BottomCenter }),
     onLoadError: onFail,
   });
   const speedInput = useStateMachineInput(rive, STARGUY_STATE_MACHINE, 'speed');
-  const landInput = useStateMachineInput(rive, STARGUY_STATE_MACHINE, 'land');
-  const stepInput = useStateMachineInput(rive, STARGUY_STATE_MACHINE, 'step');
+  const viewModel = useViewModel(rive, { useDefault: true });
+  const instance = useViewModelInstance(viewModel, { useDefault: true, rive });
+  const headTurn = useBoundNumber(VM.headTurn, instance);
+  const headY = useBoundNumber(VM.headY, instance);
+  const leanDeg = useBoundNumber(VM.lean, instance);
+  const scaleX = useBoundNumber(VM.scaleX, instance);
+  const scaleY = useBoundNumber(VM.scaleY, instance);
+
   useMotionValueEvent(speed ?? (null as never), 'change', v => { if (speedInput) speedInput.value = v; });
-  useEffect(() => { if (landInput) landInput.value = land; }, [land, landInput]);
-  useEffect(() => { if (step > 0) stepInput?.fire(); }, [step, stepInput]);
+  useDrive(lookX, v => headTurn.current(clamp(v, -1, 1) * LOOK_TURN));
+  useDrive(lookY, v => headY.current(HEAD_BASE_Y + clamp(v, -1, 1) * LOOK_NOD));
+  useDrive(lean, v => leanDeg.current(clamp(v, -12, 12)));
+  useDrive(squash, v => {
+    const s = clamp(v, -1, 1);
+    // Volume roughly conserved: squash widens, stretch narrows.
+    scaleX.current(100 + s * 5);
+    scaleY.current(100 - s * 7);
+  });
   return <RiveComponent style={{ width: '100%', aspectRatio: STARGUY_RATIO, display: 'block' }} />;
 };
 
+const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
+
 /**
- * The figure the traveller (and any slot) renders. `speed` is a MotionValue
- * so a scroll-linked value can drive the stride without re-rendering. Each
- * `step` (a hop to a new place) ends in a small squash-and-recover about the
- * star, the same 0.45s the rig's own land timeline describes.
+ * The figure the traveller (and any slot) renders. Signals are MotionValues
+ * so the traveller's springs and the pointer drive the rig directly.
  */
-export const StarguyFigure: React.FC<{ speed?: MotionValue<number>; land?: boolean; step?: number; className?: string; style?: React.CSSProperties }> = ({ speed, land, step = 0, className = '', style }) => {
+export const StarguyFigure: React.FC<StarguySignals & { className?: string; style?: React.CSSProperties }> = ({ className = '', style, ...signals }) => {
   const [mode, setMode] = useState<'checking' | 'rive' | 'png'>('checking');
-  const scaleX = useMotionValue(1);
-  const scaleY = useMotionValue(1);
   useEffect(() => { let on = true; rivExists().then(ok => { if (on) setMode(ok ? 'rive' : 'png'); }); return () => { on = false; }; }, []);
-  useEffect(() => {
-    if (step <= 0) return;
-    const id = window.setTimeout(() => {
-      animate(scaleX, [1, 1.04, 0.99, 1], { duration: 0.45, times: [0, 0.26, 0.67, 1], ease: 'easeOut' });
-      animate(scaleY, [1, 0.94, 1.02, 1], { duration: 0.45, times: [0, 0.26, 0.67, 1], ease: 'easeOut' });
-    }, HOP_MS);
-    return () => window.clearTimeout(id);
-  }, [step, scaleX, scaleY]);
   return (
-    <MotionSpan className={className} style={{ display: 'block', scaleX, scaleY, transformOrigin: STAR_ORIGIN, ...style }}>
+    <span className={className} style={{ display: 'block', ...style }}>
       {mode === 'rive'
-        ? <Rig speed={speed} land={land} step={step} onFail={() => setMode('png')} />
+        ? <Rig {...signals} onFail={() => setMode('png')} />
         : <Starguy size={0} style={{ width: '100%', height: 'auto' }} />}
-    </MotionSpan>
+    </span>
   );
 };
 
