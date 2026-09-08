@@ -1,0 +1,240 @@
+/* ── Foundation ──────────────────────────────────────────────────────────────
+   The typesetting the louder effects sit on. Six things: faces, hygiene,
+   editorial OpenType, the ruled baseline grid, the press-in button, and the
+   nav that condenses. Nothing here moves except the last two, and both keep
+   their state (the press, the hairline) under reduced motion because the
+   state is information. Imported from primitives.tsx so every section has it. */
+
+/* ── 1. Faces ─────────────────────────────────────────────────────────────────
+   Source Serif 4 is self-hosted from Adobe's OFL release (fonts/LICENSE.md).
+   The Google Fonts build strips onum, tnum, smcp and c2sc, so old-style
+   figures, steady count-ups and real small caps are only possible from our own
+   copy; ligatures were the one feature Google kept. DM Sans and Roboto Mono
+   stay on Google Fonts (DM Sans has no old-style or tabular figures in any
+   build). Both files are subset to Latin with every layout feature kept, and
+   the weight axis is instanced to 400–700 (the page sets the serif at 400,
+   500 and 600): 158 kB roman, 123 kB italic, against 427 kB and 328 kB for
+   Adobe's full files. The two fallback faces are metric-matched — size-adjust from the
+   width of a pangram, ascent/descent from the em box, measured in Chromium —
+   so a swap moves no baseline and no drop cap. */
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('./fonts/SourceSerif4Variable-Roman.otf.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('./fonts/SourceSerif4Variable-Italic.otf.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Serif 4 Fallback';
+  src: local('Georgia');
+  size-adjust: 99.24%;
+  ascent-override: 104.4%;
+  descent-override: 33.8%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Source Serif 4 Fallback';
+  src: local('Georgia Italic'), local('Georgia-Italic');
+  font-style: italic;
+  size-adjust: 99.24%;
+  ascent-override: 104.4%;
+  descent-override: 33.8%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'DM Sans Fallback';
+  src: local('Arial'), local('Liberation Sans');
+  size-adjust: 103.46%;
+  ascent-override: 95.9%;
+  descent-override: 30%;
+  line-gap-override: 0%;
+}
+
+/* ── 2. Typesetting hygiene ──────────────────────────────────────────────────
+   Headlines never strand one word; running copy loses its widows and rag, and
+   hyphenates (html lang="en-IE") rather than gapping on a phone; opening
+   punctuation hangs into the margin where the browser can (Safari). pretty is
+   measurably slower per paragraph, so it stays on prose only. The real app
+   inside the looking glass keeps its own setting. */
+.landing-page :is(h1, h2, h3):not(.landing-glass *), .landing-dropline { text-wrap: balance; }
+.landing-body { line-height: 1.6; margin: 0; }
+.landing-prose { text-wrap: pretty; }
+.landing-prose, .landing-dropline { hanging-punctuation: first last; }
+.landing-body, .landing-lede { -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 4 3; }
+/* Labels that must never reflow: tab strips, buttons, the Numbers band's figures. */
+.landing-tab, .landing-btn, .landing-nav-mark { white-space: nowrap; }
+.landing-page main > section[aria-label] .grid > div > div:first-child { white-space: nowrap; font-variant-numeric: tabular-nums lining-nums; }
+
+/* ── 3. Editorial OpenType ──────────────────────────────────────────────────
+   Old-style figures and proper ligatures in running copy (the serif carries
+   them; DM Sans has none, so the declaration only bites where the serif sets
+   a figure). Lining tabular figures wherever a number is a gauge — the Numbers
+   band above, the playground chrome here. Real small caps for the chapter
+   numerals on the rail, the strip and the eyebrows; where a face has none the
+   capitals stay capitals rather than being shrunk by the browser. */
+.landing-prose, .landing-dropline { font-variant-numeric: oldstyle-nums proportional-nums; font-variant-ligatures: common-ligatures; }
+#playground .landing-tab, #playground p { font-variant-numeric: tabular-nums lining-nums; }
+.landing-numeral,
+#chapters nav a.landing-tab > span[aria-hidden="true"] {
+  font-variant-caps: all-small-caps;
+  font-synthesis-small-caps: none;
+  letter-spacing: 0.08em;
+}
+#chapters nav a.landing-tab > span[aria-hidden="true"] { font-size: 15px !important; }
+
+/* The chapter lede opens with a two-line sunk cap in the display cut, upright
+   against the italic line, flush left. Firefox has no initial-letter, so it
+   floats a cap of the same height instead. */
+.landing-dropline::first-letter {
+  -webkit-initial-letter: 2;
+  initial-letter: 2;
+  font-style: normal;
+  font-weight: 500;
+  font-variation-settings: 'opsz' 60, 'wght' 500;
+  color: #1A1A1A;
+  margin-inline-end: 0.12em;
+}
+@supports not (initial-letter: 1) {
+  .landing-dropline::first-letter {
+    float: left;
+    font-size: 3.15em;
+    line-height: 0.74;
+    padding-top: 0.08em;
+    margin-inline-end: 0.09em;
+  }
+}
+
+/* ── 4. The ruled baseline grid ───────────────────────────────────────────────
+   One pitch, --rule, and every ruled block is a whole number of it. A ruled
+   paragraph paints its own rules from its own top edge, so rules and text share
+   one origin by construction: text-box-trim cuts the box to cap height and
+   baseline, the top padding puts the first baseline one pitch down (less the
+   rule's own pixel), and the bottom padding leaves one blank rule before the
+   next paragraph. The cap heights are the fonts' own, in the pixel sizes the
+   page sets: DM Sans 16px → 11.2px; Source Serif 4 24px → 16.08px. Browsers
+   without text-box-trim use the untrimmed line box instead: half-leading plus
+   ascent lands the baseline at (pitch / 2 + 5.44px) for 16px DM Sans and the
+   paddings absorb that, so only the numerals sit a few pixels off. */
+.landing-page { --rule: 1.75rem; --rule-ink: rgba(26, 26, 26, 0.09); }
+/* A ruled paragraph of 16px DM Sans: the generic class, and the chapters'
+   body copy by selector (Chapters.tsx is not this layer's file). */
+.landing-ruled,
+#chapters article p.landing-body {
+  line-height: var(--rule);
+  text-box: trim-both cap alphabetic;
+  padding-top: calc(var(--rule) - 1px - 11.2px);
+  padding-bottom: calc(var(--rule) + 1px);
+  background-image: linear-gradient(to bottom, transparent calc(100% - 1px), var(--rule-ink) calc(100% - 1px));
+  background-size: 100% var(--rule);
+}
+/* No gap between chapter paragraphs: each already ends on a blank rule. */
+#chapters article div:has(> p.landing-body) { gap: 0; }
+@supports not (text-box: trim-both cap alphabetic) {
+  .landing-ruled,
+  #chapters article p.landing-body {
+    padding-top: calc(var(--rule) / 2 - 6.44px);
+    padding-bottom: calc(var(--rule) / 2 + 6.44px);
+  }
+}
+
+/* How it works: three steps on the same paper. Numeral and title share a rule
+   (baseline-aligned in the grid row, so the row's top is the numeral's cap top:
+   34px Source Serif 4 → 22.78px), the body takes the next rule, and a blank
+   rule closes each step. */
+.landing-steps { list-style: none; margin: 0; padding: 0; }
+.landing-step {
+  padding-top: calc(var(--rule) - 1px - 22.78px);
+  padding-bottom: calc(var(--rule) + 1px);
+  background-image: linear-gradient(to bottom, transparent calc(100% - 1px), var(--rule-ink) calc(100% - 1px));
+  background-size: 100% var(--rule);
+}
+.landing-step-row { display: grid; grid-template-columns: 48px 1fr; gap: 20px; align-items: baseline; }
+.landing-step-n { font-size: 34px; line-height: var(--rule); letter-spacing: -0.03em; text-box: trim-both cap alphabetic; font-variant-numeric: lining-nums tabular-nums; }
+.landing-step-title { margin: 0; font-size: 24px; line-height: var(--rule); letter-spacing: -0.015em; text-box: trim-both cap alphabetic; }
+.landing-step-body { margin-top: calc(var(--rule) - 11.2px); line-height: var(--rule); text-box: trim-both cap alphabetic; }
+@supports not (text-box: trim-both cap alphabetic) {
+  /* Untrimmed: the numeral's line box puts its baseline at (pitch / 2 + 11.9px)
+     from the row top; the title's box runs (pitch / 2 - 8.4px) below its
+     baseline, so the body's margin is a constant 2.96px. */
+  .landing-step { padding-top: calc(var(--rule) / 2 - 12.9px); padding-bottom: calc(var(--rule) / 2 + 6.44px); }
+  .landing-step-body { margin-top: 2.96px; }
+}
+
+/* ── 5. The press-in button ──────────────────────────────────────────────────
+   The button sits on its hard 3px shadow. Hover lifts it a hair over 250ms;
+   the press drops it into the shadow in 34ms until nothing shows beneath;
+   release lets it back up lazily over 600ms. translate is compositor-only and
+   the outline travels with the box, so the focus ring presses too. Hover only
+   where there is a pointer that hovers; touch-action so iOS fires :active at
+   once. Reduced motion zeroes the durations (sitewide rule) and keeps the
+   press. */
+.landing-btn {
+  translate: 0 0;
+  box-shadow: 0 3px 0 0 #1A1A1A;
+  transition: translate 600ms cubic-bezier(0.3, 0.7, 0.4, 1), box-shadow 600ms cubic-bezier(0.3, 0.7, 0.4, 1), background-color 120ms ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (hover: hover) {
+  /* The hover curve overshoots a touch, so a release under the pointer springs back up rather than sliding. */
+  .landing-btn:hover { translate: 0 -1px; box-shadow: 0 4px 0 0 #1A1A1A; transition-duration: 250ms, 250ms, 120ms; transition-timing-function: cubic-bezier(0.3, 0.7, 0.4, 1.5), cubic-bezier(0.3, 0.7, 0.4, 1.5), ease; }
+}
+.landing-btn:active { translate: 0 3px; box-shadow: 0 0 0 0 #1A1A1A; transition-duration: 34ms, 34ms, 120ms; }
+
+/* ── 6. The nav that condenses ───────────────────────────────────────────────
+   Open type on the canvas at rest (84px); once the hero headline has passed
+   under it, the bar tightens to 68px — every sticky offset below assumes 68 —
+   the wordmark drops an optical size and a hairline draws in beneath. Padding
+   moves, never height; no blur, the canvas is paper. The hairline stays under
+   reduced motion: it says where you are. */
+.landing-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #FFFFFF;
+  border-bottom: 1px solid transparent;
+  transition: border-color 100ms ease;
+}
+.landing-nav[data-condensed='true'] { border-color: rgba(26, 26, 26, 0.14); }
+.landing-nav-row { min-height: 42px; padding-block: 21px; transition: padding 200ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.landing-nav[data-condensed='true'] .landing-nav-row { padding-block: 13px; }
+.landing-nav-mark { font-size: 23px; font-variation-settings: 'opsz' 40; transition: font-size 200ms cubic-bezier(0.2, 0.8, 0.2, 1), font-variation-settings 200ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.landing-nav[data-condensed='true'] .landing-nav-mark { font-size: 20px; font-variation-settings: 'opsz' 20; }
+@media (max-width: 767px) {
+  .landing-nav-mark { font-size: 20px; font-variation-settings: 'opsz' 32; }
+  .landing-nav[data-condensed='true'] .landing-nav-mark { font-size: 18px; font-variation-settings: 'opsz' 18; }
+}
+
+/* Reading progress: a 1px ink rule grows along the nav's bottom edge in exact
+   proportion to the scroll — a gauge, driven by the root scroll timeline off
+   the main thread, so Lenis (which scrolls the real document) keeps it honest.
+   Nothing where the browser cannot, under reduced motion, or in static shots. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    :root:not(.landing-static) .landing-nav::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 1px;
+      background: #1A1A1A;
+      transform-origin: left center;
+      transform: scaleX(0);
+      animation: landing-progress linear both;
+      animation-timeline: scroll(root);
+      pointer-events: none;
+    }
+  }
+}
+@keyframes landing-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}

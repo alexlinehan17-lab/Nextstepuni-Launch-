@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
           <LineRise
             as="h1"
             text={COPY.hero.headline}
-            className="m-0"
+            className="m-0 landing-hero-title"
             style={{ fontFamily: FONT.serif, fontWeight: 600, color: L.ink, fontSize: 'clamp(42px, 6.6vw, 86px)', lineHeight: 0.98, letterSpacing: '-0.025em' }}
             // The underline waits for the line to finish rising (0.1 s + 0.09 s + 0.8 s), then draws over 600 ms.
             wrapPhrase={{ phrase: UNDERLINED, wrap: node => <Mark type="underline" delay={1250} padding={[0, 1]} strokeWidth={1.5}>{node}</Mark> }}

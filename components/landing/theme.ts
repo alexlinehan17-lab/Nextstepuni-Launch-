@@ -27,9 +27,14 @@ export const L = {
   edge: '#1A1A1A',
 } as const;
 
+/**
+ * The two "Fallback" faces are metric-matched local fonts (fx-foundation/
+ * foundation.css): size-adjust plus ascent/descent overrides, so the swap to
+ * the webfont moves no baseline, no drop cap and no rule.
+ */
 export const FONT = {
-  serif: "'Source Serif 4', Georgia, 'Times New Roman', serif",
-  sans: "'DM Sans', system-ui, -apple-system, sans-serif",
+  serif: "'Source Serif 4', 'Source Serif 4 Fallback', Georgia, 'Times New Roman', serif",
+  sans: "'DM Sans', 'DM Sans Fallback', system-ui, -apple-system, sans-serif",
   mono: "'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace",
 } as const;
 
