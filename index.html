@@ -270,9 +270,42 @@
       .animate-login-blob-3 { animation: loginBlob3 25s ease-in-out infinite; }
       .animate-login-blob-4 { animation: loginBlob4 18s ease-in-out infinite; }
     </style>
+    <style>
+      /* Arriving from the landing page (see components/landing/leave.ts): this
+         document opts into cross-document view transitions, and the small
+         starguy below is where the browser lands him. He waits by the door a
+         moment, then goes about his business. */
+      @view-transition { navigation: auto; }
+      ::view-transition-group(starguy) { animation-duration: 0.65s; animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1); }
+      ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.2s; }
+      @media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }
+      #app-mark { position: fixed; left: 24px; bottom: 22px; width: 52px; z-index: 60; pointer-events: none; display: none; transition: opacity 0.6s ease; }
+      #app-mark img { display: block; width: 100%; height: auto; }
+      #app-mark[data-here] { display: block; }
+    </style>
+    <link rel="expect" href="#app-mark" blocking="render" />
 </head>
   <body class="bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors duration-500">
     <div id="root"></div>
+    <div id="app-mark" aria-hidden="true"><img src="/assets/landing/starguy.png" alt="" /></div>
+    <script>
+      (function () {
+        var mark = document.getElementById('app-mark');
+        var fromLanding = /(^|[?&])from=landing(&|$)/.test(location.search) || /\/landing-dev\.html/.test(document.referrer);
+        if (!mark || !fromLanding) return;
+        var hide = function () { mark.style.opacity = '0'; setTimeout(function () { mark.removeAttribute('data-here'); mark.style.opacity = ''; }, 700); };
+        window.addEventListener('pagereveal', function (e) {
+          if (!e.viewTransition) return;
+          mark.setAttribute('data-here', '');
+          mark.style.viewTransitionName = 'starguy';
+          e.viewTransition.finished.finally(function () { mark.style.viewTransitionName = ''; setTimeout(hide, 4000); });
+        });
+        window.addEventListener('pageswap', function (e) {
+          if (!e.viewTransition || !mark.hasAttribute('data-here')) return;
+          mark.style.viewTransitionName = 'starguy';
+        });
+      })();
+    </script>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
