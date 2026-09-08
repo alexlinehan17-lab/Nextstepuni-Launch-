@@ -282,6 +282,8 @@
       #app-mark { position: fixed; left: 24px; bottom: 22px; width: 52px; z-index: 60; pointer-events: none; display: none; transition: opacity 0.6s ease; }
       #app-mark img { display: block; width: 100%; height: auto; }
       #app-mark[data-here] { display: block; }
+      /* On phones the door sits where a page's bottom links live: smaller, and he leaves sooner (door.js). */
+      @media (max-width: 767px) { #app-mark { width: 40px; left: 12px; bottom: 12px; } }
     </style>
     <script src="/door.js"></script>
     <link rel="expect" href="#app-mark" blocking="render" />
