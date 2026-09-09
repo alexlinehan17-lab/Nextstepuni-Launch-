@@ -10,9 +10,9 @@
 import React, { useEffect } from 'react';
 import Nav from './sections/Nav';
 import Hero from './sections/Hero';
+import Certle from './sections/Certle';
 import Numbers from './sections/Numbers';
 import Chapters from './sections/Chapters';
-import TunnelOfYears from './sections/TunnelOfYears';
 import Examiner from './sections/Examiner';
 import Guesswork from './sections/Guesswork';
 import TodaysQuestion from './sections/TodaysQuestion';
@@ -33,9 +33,9 @@ const LandingPage: React.FC = () => {
     <Nav />
     <main>
       <Hero />
+      <Certle />
       <Numbers />
       <Chapters />
-      <TunnelOfYears />
       <Examiner />
       <Guesswork />
       <TodaysQuestion />

@@ -55,19 +55,14 @@ export const Display: React.FC<{
 };
 
 /**
- * Italic serif lede that opens on a two-line sunk drop cap — the Editions
- * "Insights, proactively delivered" move, set the way a chapter opening is set.
- * The cap is CSS (::first-letter + initial-letter, a float where the browser
- * has none) so the text stays one string for screen readers and the drop-cap
- * size follows the line count rather than a guessed em. Browsers skip
- * text-wrap: balance on a paragraph with an initial letter, so the last two
- * words are joined with a no-break space instead — a display line never ends
- * on a single word — and the size tops out at 28px, which sets the chapters'
- * 270–325px column in two or three lines beside the cap.
+ * The chapter lede: DM Sans, semibold, upright. (The italic serif with a sunk
+ * drop cap was replaced at Alex's request, 2026-09-09: "this font doesn't
+ * match our aesthetics".) The last two words are joined so a line never ends
+ * on a single word.
  */
 export const DropLine: React.FC<{ children: string; className?: string }> = ({ children, className = '' }) => (
-  <p className={`landing-dropline ${className}`} style={{ fontFamily: FONT.serif, fontStyle: 'italic', fontWeight: 400, color: L.ink, fontSize: 'clamp(22px, 2.8vw, 28px)', lineHeight: 1.15, margin: 0, letterSpacing: '-0.01em' }}>
-    {children.replace(/ (\S+)$/, ' $1')}
+  <p className={`landing-lede-line ${className}`} style={{ fontFamily: FONT.sans, fontWeight: 600, color: L.ink, fontSize: 'clamp(20px, 2.4vw, 26px)', lineHeight: 1.2, margin: 0, letterSpacing: '-0.015em' }}>
+    {children.replace(/ (\S+)$/, '\u00a0$1')}
   </p>
 );
 

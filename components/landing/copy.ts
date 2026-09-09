@@ -183,7 +183,7 @@ export const COPY = {
       points: 'Typical points',
       level: 'Level',
       length: 'Length',
-      subjects: 'Subjects that count',
+      subjects: 'Helpful subjects',
       careers: 'Where it leads',
       source: 'Points as listed in the app · 2025 CAO Round 1',
     },
