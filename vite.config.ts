@@ -106,6 +106,24 @@ function renderLegalPage(doc: LegalDoc): string {
 </html>`;
 }
 
+/**
+ * /landing is a Firebase hosting rewrite to /landing-dev.html (firebase.json).
+ * The dev and preview servers mirror it, so the sign-in card's "See the
+ * landing page" link works on localhost the way it does live.
+ */
+function landingRoute(): Plugin {
+  const rewrite = (req: IncomingMessage, _res: ServerResponse, next: () => void) => {
+    const [pathname, query] = (req.url || '').split('?');
+    if (pathname === '/landing') req.url = '/landing-dev.html' + (query ? `?${query}` : '');
+    next();
+  };
+  return {
+    name: 'landing-route',
+    configureServer(server) { server.middlewares.use(rewrite); },
+    configurePreviewServer(server) { server.middlewares.use(rewrite); },
+  };
+}
+
 function legalStaticPages(): Plugin {
   const routes: Record<string, LegalDoc> = {
     '/privacy.html': 'privacy',
@@ -139,6 +157,7 @@ export default defineConfig(() => {
       },
       plugins: [
         react(),
+        landingRoute(),
         legalStaticPages(),
         VitePWA({
           registerType: 'autoUpdate',
