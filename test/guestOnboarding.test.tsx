@@ -295,12 +295,12 @@ describe('the Dive-in placeholder', () => {
 });
 
 describe('the landing page entry', () => {
-  it('links "Set up without an account" from the hero and the How-it-works CTA row, keeping from=landing', () => {
+  it('links "Set up without an account" from the How-it-works CTA row, keeping from=landing', () => {
     expect(APP_SETUP_URL).toBe('/?from=landing&setup=guest');
-    for (const file of ['components/landing/sections/Hero.tsx', 'components/landing/sections/HowItWorks.tsx']) {
-      const source = readSource(file);
-      expect(source).toContain('href={APP_SETUP_URL}');
-      expect(source).toContain('{APP_SETUP_LABEL}');
-    }
+    const source = readSource('components/landing/sections/HowItWorks.tsx');
+    expect(source).toContain('href={APP_SETUP_URL}');
+    expect(source).toContain('{APP_SETUP_LABEL}');
+    // The hero carries one action only (Alex, 2026-09-09).
+    expect(readSource('components/landing/sections/Hero.tsx')).not.toContain('APP_SETUP_URL');
   });
 });
