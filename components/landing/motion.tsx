@@ -297,31 +297,13 @@ export const LetterBuild: React.FC<{ text: string; stagger?: number; className?:
 /* ── LineRise ────────────────────────────────────────────────────────────────
    The headline arrives one line at a time: each line is masked and rises out of
    its own baseline over ~0.8s with an expo ease, lines 90ms apart. No markers,
-   no per-word popping. Every word is a Highlight: pass the pointer over it and
-   a pale orange highlighter sweeps under it, then fades once you have moved on. */
+   no per-word popping. Every word is its own span (.landing-hl), which the
+   topple (fx-char/Topple.tsx) measures; the pointer highlighter that used to
+   live on those spans was removed at Alex's request, 2026-09-09. */
 
-const Highlight: React.FC<{ word: string; color?: string }> = ({ word, color }) => {
-  const [state, setState] = useState<'off' | 'on' | 'out'>('off');
-  const timer = useRef<number | null>(null);
-  const clear = () => { if (timer.current) { window.clearTimeout(timer.current); timer.current = null; } };
-  useEffect(() => clear, []);
-  return (
-    <span
-      className={`landing-hl${state === 'on' ? ' landing-hl--on' : state === 'out' ? ' landing-hl--out' : ''}`}
-      style={{ color }}
-      onPointerEnter={() => { clear(); setState('on'); }}
-      onPointerLeave={() => {
-        clear();
-        timer.current = window.setTimeout(() => {
-          setState('out');
-          timer.current = window.setTimeout(() => setState('off'), 520);
-        }, 500);
-      }}
-    >
-      {word}
-    </span>
-  );
-};
+const Word: React.FC<{ word: string; color?: string }> = ({ word, color }) => (
+  <span className="landing-hl" style={{ color }}>{word}</span>
+);
 
 export const LineRise: React.FC<{
   text: string;
@@ -365,10 +347,10 @@ export const LineRise: React.FC<{
           const last = li === lastLine && wi === words.length - 1;
           return last ? (
             <span style={{ position: 'relative', display: 'inline-block' }}>
-              <Highlight word={w} color={isAccent ? L.orangeText : undefined} />
+              <Word word={w} color={isAccent ? L.orangeText : undefined} />
               {tail}
             </span>
-          ) : <Highlight word={w} color={isAccent ? L.orangeText : undefined} />;
+          ) : <Word word={w} color={isAccent ? L.orangeText : undefined} />;
         };
         const nodes: React.ReactNode[] = [];
         for (let wi = 0; wi < words.length; wi++) {
