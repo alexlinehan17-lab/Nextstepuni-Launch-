@@ -63,10 +63,10 @@
    punctuation hangs into the margin where the browser can (Safari). pretty is
    measurably slower per paragraph, so it stays on prose only. The real app
    inside the looking glass keeps its own setting. */
-.landing-page :is(h1, h2, h3):not(.landing-glass *), .landing-dropline { text-wrap: balance; }
+.landing-page :is(h1, h2, h3):not(.landing-glass *), .landing-lede-line { text-wrap: balance; }
 .landing-body { line-height: 1.6; margin: 0; }
 .landing-prose { text-wrap: pretty; }
-.landing-prose, .landing-dropline { hanging-punctuation: first last; }
+.landing-prose, .landing-lede-line { hanging-punctuation: first last; }
 .landing-body, .landing-lede { -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 4 3; }
 /* Labels that must never reflow: tab strips, buttons, the Numbers band's figures. */
 .landing-tab, .landing-btn, .landing-nav-mark { white-space: nowrap; }
@@ -79,7 +79,7 @@
    band above, the playground chrome here. Real small caps for the chapter
    numerals on the rail, the strip and the eyebrows; where a face has none the
    capitals stay capitals rather than being shrunk by the browser. */
-.landing-prose, .landing-dropline { font-variant-numeric: oldstyle-nums proportional-nums; font-variant-ligatures: common-ligatures; }
+.landing-prose { font-variant-numeric: oldstyle-nums proportional-nums; font-variant-ligatures: common-ligatures; }
 #playground .landing-tab, #playground p { font-variant-numeric: tabular-nums lining-nums; }
 .landing-numeral,
 #chapters nav a.landing-tab > span[aria-hidden="true"] {
@@ -88,28 +88,6 @@
   letter-spacing: 0.08em;
 }
 #chapters nav a.landing-tab > span[aria-hidden="true"] { font-size: 15px !important; }
-
-/* The chapter lede opens with a two-line sunk cap in the display cut, upright
-   against the italic line, flush left. Firefox has no initial-letter, so it
-   floats a cap of the same height instead. */
-.landing-dropline::first-letter {
-  -webkit-initial-letter: 2;
-  initial-letter: 2;
-  font-style: normal;
-  font-weight: 500;
-  font-variation-settings: 'opsz' 60, 'wght' 500;
-  color: #1A1A1A;
-  margin-inline-end: 0.12em;
-}
-@supports not (initial-letter: 1) {
-  .landing-dropline::first-letter {
-    float: left;
-    font-size: 3.15em;
-    line-height: 0.74;
-    padding-top: 0.08em;
-    margin-inline-end: 0.09em;
-  }
-}
 
 /* ── 4. The ruled baseline grid ───────────────────────────────────────────────
    One pitch, --rule, and every ruled block is a whole number of it. A ruled
@@ -123,26 +101,10 @@
    ascent lands the baseline at (pitch / 2 + 5.44px) for 16px DM Sans and the
    paddings absorb that, so only the numerals sit a few pixels off. */
 .landing-page { --rule: 1.75rem; --rule-ink: rgba(26, 26, 26, 0.09); }
-/* A ruled paragraph of 16px DM Sans: the generic class, and the chapters'
-   body copy by selector (Chapters.tsx is not this layer's file). */
-.landing-ruled,
-#chapters article p.landing-body {
-  line-height: var(--rule);
-  text-box: trim-both cap alphabetic;
-  padding-top: calc(var(--rule) - 1px - 11.2px);
-  padding-bottom: calc(var(--rule) + 1px);
-  background-image: linear-gradient(to bottom, transparent calc(100% - 1px), var(--rule-ink) calc(100% - 1px));
-  background-size: 100% var(--rule);
-}
-/* No gap between chapter paragraphs: each already ends on a blank rule. */
-#chapters article div:has(> p.landing-body) { gap: 0; }
-@supports not (text-box: trim-both cap alphabetic) {
-  .landing-ruled,
-  #chapters article p.landing-body {
-    padding-top: calc(var(--rule) / 2 - 6.44px);
-    padding-bottom: calc(var(--rule) / 2 + 6.44px);
-  }
-}
+/* The chapter body copy used to sit on ruled paper (a rule under every
+   line); Alex asked for the rules to go (2026-09-09). The generic .landing-ruled
+   class keeps the pitch without the rules. */
+.landing-ruled { line-height: var(--rule); }
 
 /* How it works: three steps on the same paper. Numeral and title share a rule
    (baseline-aligned in the grid row, so the row's top is the numeral's cap top:

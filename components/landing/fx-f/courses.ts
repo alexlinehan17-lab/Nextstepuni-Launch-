@@ -57,7 +57,7 @@ const wherePhrase = (c: CAOCourse): string => {
   }
 };
 
-/** The rewritten body: what it is, how long and where, the subjects that count, where it leads, and what the app does with it. */
+/** The rewritten body: what it is, how long and where, the helpful subjects, where it leads, and what the app does with it. */
 export const courseBody = (c: CAOCourse): string[] => {
   const body = [c.description, `${durationWords(c.duration)} ${wherePhrase(c)}, in ${regionName(c)}.`];
   const subjects = subjectsOf(c);

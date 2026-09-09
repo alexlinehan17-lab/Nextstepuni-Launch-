@@ -36,7 +36,6 @@ import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
 import { Note } from '../fx/Note';
-import { Spotlight } from '../fx/Spotlight';
 import { Mark, markPhrase } from '../fx/marks';
 import { isStatic } from '../fx/env';
 import { CourseFrame } from '../fx-f/CourseFrame';
@@ -184,7 +183,7 @@ const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
   const src = FRAMES[chapter.id];
   return (
     <Frame title={chapter.frameLabel} meta={chapter.numeral}>
-      {chapter.id === 'markbank' ? <Spotlight /> : src
+      {src
         ? <img src={src} alt={chapter.frameLabel} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto' }} />
         : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} /> : (
           <div
