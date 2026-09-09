@@ -5,9 +5,9 @@
  * Hero. The headline builds word by word (Shopify Design), starguy stands on
  * the baseline at the end of its last word, and the product playground sits
  * directly underneath (ElevenLabs) so the first scroll lands on something you
- * can use. Two of the page's effects live here: the examiner's ink underline
- * under "marking schemes" (one of three marks on the whole page), and the
- * star that blots into the paper before the character lands. Two hooks for
+ * can use. One of the page's effects lives here: the star that blots into
+ * the paper before the character lands. (The examiner's underline under
+ * "marking schemes" was removed at Alex's request, 2026-09-09.) Two hooks for
  * the topple (fx-char/Topple.tsx): the CTA row is `data-hero-cta` and the
  * playground's container is `data-hero-floor` — its top edge, the hero's
  * lower edge, is the floor the headline falls to.
@@ -19,11 +19,7 @@ import { LineRise } from '../motion';
 import { StarguySlot } from '../starguy/Traveller';
 import { Button, Container, Eyebrow, Lede, Starguy } from '../primitives';
 import { APP_SETUP_LABEL, APP_SETUP_URL, APP_URL, FONT, L } from '../theme';
-import { Mark } from '../fx/marks';
 import Playground from './Playground';
-
-/** The phrase the examiner underlines. Must sit on one line of the headline. */
-const UNDERLINED = 'marking schemes';
 
 const Hero: React.FC = () => {
   return (
@@ -37,8 +33,6 @@ const Hero: React.FC = () => {
             text={COPY.hero.headline}
             className="m-0 landing-hero-title"
             style={{ fontFamily: FONT.serif, fontWeight: 600, color: L.ink, fontSize: 'clamp(42px, 6.6vw, 86px)', lineHeight: 0.98, letterSpacing: '-0.025em' }}
-            // The underline waits for the line to finish rising (0.1 s + 0.09 s + 0.8 s), then draws over 600 ms.
-            wrapPhrase={{ phrase: UNDERLINED, wrap: node => <Mark type="underline" delay={1250} padding={[0, 1]} strokeWidth={1.5}>{node}</Mark> }}
             tail={
               <span aria-hidden="true" className="landing-starguy-lg fx-blot fx-blot-3 fx-blot--timed" style={{ position: 'absolute', left: 'calc(100% + 0.06em)', bottom: '0.02em', width: '0.6em', lineHeight: 0 }}>
                 <StarguySlot id="hero"><Starguy size={0} style={{ width: '100%', height: 'auto' }} /></StarguySlot>

@@ -4,9 +4,9 @@
  *
  * Examiner's marks. A sketchy ink underline, circle or bracket draws itself
  * over ~600 ms when its phrase scrolls into view, the way a pen marks a
- * script (rough-notation). Rationed to THREE on the whole page: an underline
- * in the hero headline, an orange circle on one figure in a chapter, a
- * bracket beside the join code in Schools. Never the highlight type — the
+ * script (rough-notation). Rationed to TWO on the whole page: an orange
+ * circle on one figure in a chapter, and a bracket beside the join code in
+ * Schools. (The hero's underline was the third; removed 2026-09-09.) Never the highlight type — the
  * headline's pointer highlighter already owns that.
  *
  * Draws once, after the webfonts are in (so the geometry is final); re-shown
