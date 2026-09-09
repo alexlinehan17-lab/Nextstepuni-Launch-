@@ -51,11 +51,7 @@ export const installLeave = (): void => {
     el.style.viewTransitionName = NAME;
     e.viewTransition.finished.finally(() => { el.style.viewTransitionName = ''; });
   });
-  // Have the app ready before the click, so the morph lands on a painted page.
-  try {
-    const s = document.createElement('script');
-    s.type = 'speculationrules';
-    s.textContent = JSON.stringify({ prerender: [{ urls: ['/?from=landing'], eagerness: 'moderate' }] });
-    document.head.appendChild(s);
-  } catch { /* optional */ }
+  // Prerendering the app on hover is declared by the hosting's
+  // Speculation-Rules header (firebase.json → public/speculation.json), not
+  // an inline script, which the production CSP would block.
 };
