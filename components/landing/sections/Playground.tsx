@@ -135,7 +135,8 @@ const Playground: React.FC = () => {
             options={COPY.playground.tabs.map(t => ({ value: t.id as PlaygroundTabId, label: t.label }))}
             value={tab}
             onChange={setTab}
-            className="w-fit max-w-full"
+            // The rail runs the full width of the bar, inset equally at both ends.
+            className="w-full"
           />
         </div>
 
