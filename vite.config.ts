@@ -212,7 +212,9 @@ export default defineConfig(() => {
             // by legalStaticPages(). Keep them OUT of the SPA navigate-fallback so an
             // installed PWA serves the actual page (not the app shell) — the public
             // Privacy Policy URL Apple/users hit must resolve to the notice itself.
-            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/],
+            // The landing page is its own document: a returning visitor's service
+            // worker must not answer /landing with the cached app shell.
+            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/, /\/landing(-dev\.html)?$/],
             runtimeCaching: [
               // Paper Trail answer sidecars — small per-paper coordinate JSON on
               // Firebase Storage. SWR: serve cache instantly, refetch in the
