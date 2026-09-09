@@ -36,7 +36,6 @@ import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
 import { Note } from '../fx/Note';
-import { Mark, markPhrase } from '../fx/marks';
 import { isStatic } from '../fx/env';
 import { CourseFrame } from '../fx-f/CourseFrame';
 import { announceTurn, courseBody, courseLine, type CAOCourse } from '../fx-f/courses';
@@ -51,7 +50,6 @@ const DEMO_OF: Partial<Record<ChapterId, PlaygroundTabId>> = { markbank: 'markba
 /** The frames that blot into the page (the rest simply rise). One blot each; the hero star uses the third. */
 const BLOTS: Partial<Record<ChapterId, 1 | 2 | 3>> = { markbank: 1, papertrail: 2, atlas: 3 };
 /** The page's one orange circle: a figure in a chapter's body copy. */
-const CIRCLED: { chapter: ChapterId; paragraph: number; phrase: string } = { chapter: 'papertrail', paragraph: 0, phrase: '2010' };
 /** demoData's frame table predates chapter VII; read it as the partial map it is. */
 const FRAMES: Partial<Record<ChapterId, string | null>> = CAPTURES;
 
@@ -279,12 +277,8 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
         <div className={flip ? 'lg:col-span-5 lg:order-2' : 'lg:col-span-5'}>
           <DropLine>{line}</DropLine>
           <div className="mt-6 flex flex-col gap-4">
-            {body.map((p, pi) => (
-              <Body key={p} style={{ fontSize: 16 }}>
-                {chapter.id === CIRCLED.chapter && pi === CIRCLED.paragraph
-                  ? markPhrase(p, CIRCLED.phrase, node => <Mark type="circle" color={L.orange} padding={[2, 5]} strokeWidth={1.5} delay={250}>{node}</Mark>)
-                  : p}
-              </Body>
+            {body.map(p => (
+              <Body key={p} style={{ fontSize: 16 }}>{p}</Body>
             ))}
           </div>
           {(demo || course) && (
