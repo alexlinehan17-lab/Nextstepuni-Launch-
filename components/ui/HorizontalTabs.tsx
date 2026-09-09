@@ -34,6 +34,8 @@ interface HorizontalTabsProps<T extends string> {
   /** Pill only: 'md' is the section-tab size (44px), 'sm' the in-card toggle size (36px). */
   size?: 'sm' | 'md';
   className?: string;
+  /** Pill only: the tabs share the rail's width evenly (each grows equally) while they fit; when they don't, the rail scrolls as usual. */
+  fill?: boolean;
 }
 
 export default function HorizontalTabs<T extends string>({
@@ -44,7 +46,7 @@ export default function HorizontalTabs<T extends string>({
   variant = 'underline',
   size = 'md',
   className = '',
-}: HorizontalTabsProps<T>) {
+ fill = false }: HorizontalTabsProps<T>) {
   const railRef = useRef<HTMLDivElement | null>(null);
   const activeRef = useRef<HTMLButtonElement | null>(null);
   const mobileAppDesign = useMobileAppDesign();
@@ -82,7 +84,7 @@ export default function HorizontalTabs<T extends string>({
         className={`overflow-x-auto overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${pill ? 'rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1' : 'border-b border-[var(--outline-soft)]'}`}
       >
         <LayoutGroup id={barId}>
-        <div className={`flex min-w-max ${pill ? 'gap-1' : 'gap-5 sm:gap-7'}`}>
+        <div className={`flex min-w-max ${pill ? 'gap-1' : 'gap-5 sm:gap-7'} ${pill && fill ? 'w-full' : ''}`}>
           {options.map(option => {
             const active = option.value === value;
             return (
@@ -106,7 +108,7 @@ export default function HorizontalTabs<T extends string>({
                 onFocus={pill ? () => setGhost(option.value) : undefined}
                 onBlur={pill ? () => setGhost(current => (current === option.value ? null : current)) : undefined}
                 className={pill
-                  ? `${size === 'sm' ? 'min-h-9 px-3 text-[13px]' : 'min-h-11 px-4 text-sm'} relative shrink-0 whitespace-nowrap rounded-lg border border-transparent font-semibold transition-colors ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
+                  ? `${size === 'sm' ? 'min-h-9 px-3 text-[13px]' : 'min-h-11 px-4 text-sm'} relative shrink-0 whitespace-nowrap rounded-lg border border-transparent font-semibold transition-colors ${fill ? 'flex-1 text-center' : ''} ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
                   : `relative min-h-11 ${mobileAppDesign ? 'min-w-11' : ''} shrink-0 whitespace-nowrap pt-0.5 text-xs font-semibold transition-colors ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
                 }
               >
