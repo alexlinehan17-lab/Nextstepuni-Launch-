@@ -10,8 +10,9 @@
  * exists, and a screenshot frame. Starguy stands on the baseline at the end of
  * the word on chapters I, IV and VII.
  *
- * Effects (components/landing/fx): a flow-field ornament is hatched behind
- * each heading; the frames of I–III blot into the page as they arrive;
+ * Effects (components/landing/fx): the flow-field ornament that was hatched
+ * behind each heading is gone (Alex, 2026-09-09); the frames of I–III blot
+ * into the page as they arrive;
  * Chapter I's frame is the real question with its marking scheme under a
  * lens; the rail numerals carry an orange gauge that fills as each chapter
  * is read, with 'you are here' lettered under the list; and the one circled
@@ -34,7 +35,6 @@ import { Body, Button, Container, DISPLAY, Display, DropLine, Eyebrow, Frame, Ru
 import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
-import { Field } from '../fx/Field';
 import { Note } from '../fx/Note';
 import { Spotlight } from '../fx/Spotlight';
 import { Mark, markPhrase } from '../fx/marks';
@@ -254,7 +254,6 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
       className={`scroll-mt-[124px] lg:scroll-mt-[96px] fx-chapter-${index + 1}${turns ? ' fxf-leaf' : ''}`}
     >
       <div className="fx-head">
-        <Field n={index + 1} />
         <div className="fx-head-text">
           <Eyebrow numeral={chapter.numeral}>{chapter.railLabel}</Eyebrow>
           <WordRise className="mt-4">
