@@ -46,7 +46,7 @@
     "react-dom": "^19.2.0",
     "react-rough-notation": "^1.0.8",
     "rough-notation": "^0.5.1",
-    "three": "^0.181.2",
+    "three": "^0.185.1",
     "ts-fsrs": "^5.4.1"
   },
   "overrides": {
