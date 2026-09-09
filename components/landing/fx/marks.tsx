@@ -6,8 +6,8 @@
  * over ~600 ms when its phrase scrolls into view, the way a pen marks a
  * script (rough-notation). Rationed to TWO on the whole page: an orange
  * circle on one figure in a chapter, and a bracket beside the join code in
- * Schools. (The hero's underline was the third; removed 2026-09-09.) Never the highlight type — the
- * headline's pointer highlighter already owns that.
+ * Schools. (The hero's underline was the third; removed 2026-09-09.) Never the highlight type: the
+ * headline is ink on white and stays that way.
  *
  * Draws once, after the webfonts are in (so the geometry is final); re-shown
  * without animation on resize so a circle never drifts off its target.
