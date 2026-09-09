@@ -12,7 +12,6 @@ import Nav from './sections/Nav';
 import Hero from './sections/Hero';
 import Numbers from './sections/Numbers';
 import Chapters from './sections/Chapters';
-import Scenes from './fx-h/Scenes';
 import TunnelOfYears from './sections/TunnelOfYears';
 import Examiner from './sections/Examiner';
 import Guesswork from './sections/Guesswork';
@@ -35,7 +34,6 @@ const LandingPage: React.FC = () => {
     <main>
       <Hero />
       <Numbers />
-      <Scenes />
       <Chapters />
       <TunnelOfYears />
       <Examiner />
