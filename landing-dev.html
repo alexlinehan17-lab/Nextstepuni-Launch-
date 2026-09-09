@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing dev harness</title>
+    <title>NextStepUni</title>
+    <meta name="robots" content="noindex, nofollow" />
     <!-- Source Serif 4 is self-hosted (components/landing/fx-foundation/foundation.css): the Google build strips
          old-style and tabular figures and small caps. The roman face is above the fold, so it is preloaded. -->
     <link rel="preload" href="/components/landing/fx-foundation/fonts/SourceSerif4Variable-Roman.otf.woff2" as="font" type="font/woff2" crossorigin>
@@ -39,17 +40,7 @@
   <body>
     <div id="root"></div>
     <div id="landing-mark" aria-hidden="true"><img src="/assets/landing/starguy-door.png" alt="" /></div>
-    <script>
-      // Home from the app: the browser lands him on the door, and the traveller
-      // (Traveller.tsx) picks him up from there and walks him to the hero.
-      addEventListener('pagereveal', function (e) {
-        var m = document.getElementById('landing-mark');
-        if (!e.viewTransition || !m) return;
-        m.setAttribute('data-here', '');
-        m.style.viewTransitionName = 'starguy';
-        e.viewTransition.finished.finally(function () { m.style.viewTransitionName = ''; });
-      });
-    </script>
+    <script src="/landing-door.js"></script>
     <script type="module" src="/landing-dev.tsx"></script>
   </body>
 </html>

@@ -304,6 +304,13 @@ export default defineConfig(() => {
         // document the accepted ceiling rather than emit a warning. (item 18)
         chunkSizeWarningLimit: 1200,
         rollupOptions: {
+          // Two documents: the app, and the landing page. The other *-dev.html
+          // harnesses stay out of the build; the landing page is live at
+          // /landing-dev.html (and /landing via a hosting rewrite).
+          input: {
+            main: path.resolve(__dirname, 'index.html'),
+            landing: path.resolve(__dirname, 'landing-dev.html'),
+          },
           output: {
             // Function form (not the object/array form) so EVERY module id is
             // classified deterministically. Audit 2026-06-01: the old object
