@@ -11,7 +11,7 @@
  */
 /* global window, document, location, setTimeout, addEventListener */
 (function () {
-  var fromLanding = /(^|[?&])from=landing(&|$)/.test(location.search) || /\/landing-dev\.html/.test(document.referrer);
+  var fromLanding = /(^|[?&])from=landing(&|$)/.test(location.search) || /\/landing(-dev\.html)?([?#]|$)/.test(document.referrer);
   if (!fromLanding) return;
   var mark = function () { return document.getElementById('app-mark'); };
   var hide = function (m) {

@@ -39,13 +39,12 @@ import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 /**
  * Did this visit start at the landing page? Read once, at module load, because
  * the router tidies the query string away before this page renders; the
- * referrer covers a reload of the sign-in page. It is the one landing link
- * that is not localhost-gated — it only appears when the visitor came from the
- * landing page, so it can only point somewhere that exists.
+ * referrer covers a reload of the sign-in page. It only changes the landing
+ * link's wording: "Back to" rather than "See".
  */
 const FROM_LANDING = (() => {
   try {
-    return new URLSearchParams(window.location.search).get('from') === 'landing' || /\/landing-dev\.html/.test(document.referrer);
+    return new URLSearchParams(window.location.search).get('from') === 'landing' || /\/landing(-dev\.html)?([?#]|$)/.test(document.referrer);
   } catch {
     return false;
   }
@@ -929,33 +928,21 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     </MotionButton>
   ) : null;
 
-  // Arrived from the landing page's "Open the app": offer the way back.
+  // The landing page (/landing) ships with the app, so the sign-in card always
+  // offers it on the web; there is no landing page inside the native apps.
+  // Arrived from its "Open the app": the link reads as the way back.
   const fromLanding = FROM_LANDING;
-  // Localhost-only shortcut to the marketing landing page. landing-dev.html is
-  // served by Vite in dev and ignored by the single-input production build, so
-  // it shares the Demo Account gate rather than getting one of its own.
-  const landingButton = showDemoButton ? (
+  const landingButton = !Capacitor.isNativePlatform() ? (
     <a
-      href="/landing-dev.html"
-      aria-label="Visit the landing page dev harness"
-      className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-[#1A1A1A] bg-white px-5 text-xs font-bold tracking-[0.01em] text-[#1A1A1A] shadow-sm transition-colors hover:bg-[#FDEEDF]"
-    >
-      {fromLanding ? <ArrowLeft size={15} aria-hidden="true" /> : <ExternalLink size={15} aria-hidden="true" />}
-      {fromLanding ? 'Back to the landing page' : 'Visit landing page'}
-    </a>
-  ) : null;
-  const backToLanding = fromLanding && !showDemoButton ? (
-    <a
-      href="/landing-dev.html"
+      href="/landing"
       className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-[#1A1A1A] bg-white px-5 text-xs font-bold tracking-[0.01em] text-[#1A1A1A] shadow-sm transition-colors hover:bg-[#F4F4F5]"
     >
-      <ArrowLeft size={15} aria-hidden="true" />
-      Back to the landing page
+      {fromLanding ? <ArrowLeft size={15} aria-hidden="true" /> : <ExternalLink size={15} aria-hidden="true" />}
+      {fromLanding ? 'Back to the landing page' : 'See the landing page'}
     </a>
   ) : null;
-  const devButtons = showDemoButton || backToLanding ? (
+  const devButtons = landingButton || demoButton ? (
     <div className="flex flex-wrap items-center justify-center gap-3">
-      {backToLanding}
       {landingButton}
       {demoButton}
     </div>
