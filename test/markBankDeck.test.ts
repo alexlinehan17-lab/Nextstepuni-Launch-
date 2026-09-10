@@ -61,6 +61,8 @@ import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/
 import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
 import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
+import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
+import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
 import { CARDS as TECH_HIGHER } from '../components/MarkBank/cards/technology/higher';
 import { CARDS as TECH_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 
@@ -459,6 +461,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['lcvp', 'common', LCVP_COMMON],
     ['technology', 'higher', TECH_HIGHER],
     ['technology', 'ordinary', TECH_ORDINARY],
+    ['french', 'higher', FRENCH_HIGHER],
+    ['french', 'ordinary', FRENCH_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -525,6 +529,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       'religious-education': 're-',
       lcvp: 'lcvp-',
       technology: 'tech-',
+      // French files its cards under the published French taxonomy itself
+      // (curriculum.ts -> curriculumRegistry.ts), so its ids carry the
+      // subject's own name rather than an abbreviation.
+      french: 'french-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

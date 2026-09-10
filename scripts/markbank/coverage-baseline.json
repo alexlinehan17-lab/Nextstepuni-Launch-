@@ -149,6 +149,21 @@
     },
     "refsHash": "9d6d1eb35ccbe04d"
   },
+  "french": {
+    "cards": 260,
+    "contentHash": "a89444528300f8db",
+    "coveragePct": 100.0,
+    "covered": 275,
+    "excluded": 276,
+    "leaves": 551,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "197572582035a3af"
+    },
+    "refsHash": "eb02f6789c4f99c4"
+  },
   "geography": {
     "cards": 754,
     "contentHash": "845a31914f2d9854",
