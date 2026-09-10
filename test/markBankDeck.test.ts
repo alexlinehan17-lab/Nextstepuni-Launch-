@@ -105,6 +105,10 @@ import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordi
 import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
 import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
 import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-greek/higher';
+import { CARDS as MANDARIN_HIGHER } from '../components/MarkBank/cards/mandarin-chinese/higher';
+import { CARDS as MANDARIN_ORDINARY } from '../components/MarkBank/cards/mandarin-chinese/ordinary';
+import { CARDS as MALTESE_HIGHER } from '../components/MarkBank/cards/maltese/higher';
+import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -139,6 +143,10 @@ const SAMPLE_CARDS = [
   // Higher only: Modern Greek is examined at ONE level and there is no
   // Ordinary paper in any year of the corpus.
   ...MGREEK_HIGHER,
+  ...MANDARIN_HIGHER, ...MANDARIN_ORDINARY,
+  // Higher only: Maltese and Ukrainian are each examined at ONE level and
+  // there is no Ordinary paper in any year of the corpus.
+  ...MALTESE_HIGHER, ...UKRAINIAN_HIGHER,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -710,6 +718,16 @@ describe('the taxonomy is the redeveloped specification', () => {
       // Modern Greek files its cards under the published Modern Greek
       // taxonomy itself, whose two strands are the paper's own two halves.
       'modern-greek': 'modern-greek-',
+      // Mandarin Chinese files its cards under the published Mandarin Chinese
+      // specification itself. Cards tag against one strand of it —
+      // 'mandarin-chinese-3-*', the written paper's task types — because that
+      // is what a written card can be about; the other three strands cover
+      // the oral, the portfolio and the course's competences and ship unused.
+      'mandarin-chinese': 'mandarin-chinese-',
+      // Maltese and Ukrainian file their cards under their own published
+      // taxonomies, whose two strands are each paper's own two halves.
+      maltese: 'maltese-',
+      ukrainian: 'ukrainian-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

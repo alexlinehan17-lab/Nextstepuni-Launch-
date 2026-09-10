@@ -448,6 +448,44 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/ancient-greek',
     blocked: new Set(),
   },
+  maltese: {
+    title: 'Maltese',
+    /* The syllabus these six sittings were set on. Maltese is a
+     * NON-CURRICULAR EU LANGUAGE examined at ONE level in every year on disk,
+     * in ONE booklet, with no listening test: one printed text and three
+     * parts, of which only the first sets numbered questions. See
+     * MALTESE_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-maltese-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Maltese\n * examination. Only L-Ewwel Taqsima, the reading comprehension, takes cards:\n * the commentary and the composition are written production, which the scheme\n * answers with an indicative menu of themes and prices nowhere. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that every answer is to be\n * written in Maltese.',
+    figureDir: 'public/exam-figures/maltese',
+    blocked: new Set(),
+  },
+  ukrainian: {
+    title: 'Ukrainian',
+    /* The syllabus these two sittings were set on. Ukrainian is the newest
+     * subject in the corpus — first examined in 2025 — and prints the same
+     * classic paper Maltese, Romanian and Dutch do: ONE level, ONE booklet,
+     * no listening test, three parts of which only the first is questioned.
+     * See UKRAINIAN_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-ukrainian-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Ukrainian\n * examination. Only ЧАСТИНА I, the reading comprehension, takes cards: the\n * commentary and the essay are written production, which the scheme answers\n * with an indicative menu headed "Наприклад:" and prices nowhere. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that every answer is to be\n * written in Ukrainian.',
+    figureDir: 'public/exam-figures/ukrainian',
+    blocked: new Set(),
+  },
+  'mandarin-chinese': {
+    title: 'Mandarin Chinese',
+    /* The specification these ten sittings were set on. Mandarin Chinese was
+     * first examined in 2022 and is a CURRICULAR modern language sat in two
+     * booklets — the written paper (SEC component 000) and a Listening
+     * Comprehension Test (A00) — and printed, unlike the six curricular
+     * languages carded before it, as separate English and Irish editions
+     * rather than one bilingual booklet. Cards come from Section A, Reading,
+     * only. See MANDARIN_CHINESE_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-mandarin-chinese-specification',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Mandarin Chinese\n * written paper. Only Section A, Reading, takes cards: Section B is written\n * production, which the scheme answers with a Communication and Language band\n * grid and no marking point, and the Listening Comprehension Test is answered\n * from a recording the SEC does not publish. Every card carries the material it\n * is about, bound to the pages of the question paper it was printed on, and\n * states which LANGUAGE the answer is wanted in — which this subject sets per\n * ask, not per paper — together with the paper\'s own rule that Chinese answers\n * must use simplified characters.',
+    figureDir: 'public/exam-figures/mandarin-chinese',
+    blocked: new Set(),
+  },
   'modern-greek': {
     title: 'Modern Greek',
     /* The syllabus these sixteen sittings were set on. Modern Greek is a

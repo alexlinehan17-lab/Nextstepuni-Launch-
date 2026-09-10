@@ -360,12 +360,110 @@ LANGS = {
         'source_line': r'^(?:Vir\s*:|Prirejeno|Povzeto|Po\s*:)',
         'rubric': (r'^(?:Odgovorite\b|Preberite\b|Napi[šs]ite\b|'
                    r'Komentirajte\b|Vsi\s+odgovori\b)'),
+    # Maltese (SEC 557) is Romanian's and Dutch's twin in shape: ONE
+    # Higher-only booklet in every sitting, no Ordinary paper and no Listening
+    # Comprehension Test, so only the classic path is ever walked. Its three
+    # parts are named rather than numbered — "L-Ewwel Taqsima", "It-Tieni
+    # Taqsima", "It-Tielet Taqsima" — and the SEC also prints the shorter
+    # "Taqsima II" and "Taqsima III" for the same two, in the same corpus, so
+    # both forms are read. Unlike Romanian and Dutch, its SCHEME prices every
+    # ask as well as its paper, and the two agree.
+    'maltese': {
+        'name': 'Maltese',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        'classic_part': (r'^(?:TWE[ĠG]IBIET\s*[–—‐-]\s*)?'
+                         r'(?:(L[‐\-–—]?Ewwel|It[‐\-–—]?Tieni|'
+                         r'It[‐\-–—]?Tielet)\s+Taqsima\b'
+                         r'|Taqsima\s+(I{1,3})\b)'),
+        'classic_part_map': {'l-ewwel': 'I', 'l‐ewwel': 'I',
+                             'it-tieni': 'II', 'it‐tieni': 'II',
+                             'it-tielet': 'III', 'it‐tielet': 'III'},
+        # The two compositions the last part offers, numbered "1." and "2."
+        # under "Agħżel mistoqsija waħda" — inside a WRITING part only, where a
+        # bare number cannot be a question because the questions are all in the
+        # first part.
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Maltese\s*[–—-]|^\d{1,3}$|^MALTESE$|^HIGHER\s+LEVEL$'),
+        'letters': 'abċdefġgħhijkl',
+        'source_line': r'^(?:Miġbur|Adattat|Sors\s*:|Minn\s*:|Meħud)',
+        'rubric': (r'^(?:Wieġeb\b|Aqra\b|Ikteb\b|It[‐\-]tweġibiet\b|'
+                   r'Agħżel\b|Massimu\b|Iddiskuti\s+dan)'),
+    },
+    # Ukrainian (SEC 570) is the newest subject in the corpus — first examined
+    # in 2025, two sittings in total — and prints the same classic paper:
+    # one Higher-only booklet, no Ordinary level, no Listening Comprehension
+    # Test. Its parts are "ЧАСТИНА I", "ЧАСТИНА II", "ЧАСТИНА III", and the
+    # roman numeral is set with the LATIN I on the question paper and the
+    # CYRILLIC І (U+0406) in the marking scheme — the same glyph to the eye and
+    # two different characters to a regex, so both are read or the scheme's
+    # first part never opens.
+    'ukrainian': {
+        'name': 'Ukrainian',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        'classic_part': r'^ЧАСТИНА\s+([IІ]{1,3})\b',
+        'classic_part_map': {'і': 'I', 'іі': 'II', 'ііі': 'III'},
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Ukrainian\s*[–—-]|^\d{1,3}$|^UKRAINIAN$'
+                      r'|^HIGHER\s+LEVEL$|^УКРАЇНСЬКА\s+МОВА$'),
+        'source_line': r'^(?:За\s+матеріалами|Джерело\s*:|Адаптовано)',
+        'rubric': (r'^(?:Уважно\s+прочитайте|Дайте\s+відповід|Напишіть\b|'
+                   r'Загальна\s+оцінка|Прочитайте\b)'),
     },
 }
 
 
 def cfg(subject, key, default=None):
-    return LANGS[subject].get(key, default)
+    return LANGS[subject].get(key, default) if subject in LANGS else default
+
+
+def _letter_pattern(subject):
+    if cfg(subject, 'letter') == 'colon':
+        return LETTER_COLON
+    return LETTER_MT if cfg(subject, 'letters') else LETTER
+
+
+LATIN = 'abcdefghijkl'
+
+
+def fold_letter(subject, letter):
+    """A marker in the SUBJECT'S alphabet, whichever the document used.
+
+    The two Maltese documents disagree: the QUESTION PAPER letters the five
+    expressions of every Question 1 "a) b) ċ) d) e)", in the Maltese alphabet,
+    and the MARKING SCHEME letters the same five "a) b) c) d) e)" in the Latin
+    one. Left alone the third pair never matches and the fourth and fifth are
+    absorbed into it — twenty-eight of thirty-three Maltese asks reported the
+    scheme as pricing nothing at their address.
+
+    The paper wins on the address, so a scheme letter is folded to the paper's
+    run by POSITION, which is the only thing both documents agree on.
+    """
+    run = cfg(subject, 'letters')
+    if not run or not letter:
+        return letter
+    if letter in run:
+        return letter
+    i = LATIN.find(letter)
+    return run[i] if 0 <= i < len(run) else letter
+
+
+def is_next_letter(letter, current, subject=None):
+    """Is this marker the next in the run — in either document's alphabet?"""
+    if letter == next_letter(current, subject):
+        return True
+    run = cfg(subject, 'letters')
+    if not run:
+        return False
+    i = run.find(current) if current else -1
+    return letter == LATIN[i + 1] if -1 <= i < len(LATIN) - 1 else False
 
 
 def papers_dir(subject):
@@ -613,6 +711,9 @@ def _join_markers(lines):
 # A lettered part, in either of the two ways this family prints one: "(a)" in
 # the modern booklets and a bare "a)" in the classic ones.
 LETTER = re.compile(r'^\(?\s*([a-l])\s*\)\s*(.*)$', re.I)
+# Maltese sets its part letters in the MALTESE alphabet — a) b) ċ) d) e) — so
+# its marker class carries the four accented letters that alphabet adds.
+LETTER_MT = re.compile(r'^\(?\s*([a-lċġħż])\s*\)\s*(.*)$', re.I)
 # The Dutch booklet letters the parts of its first question with a COLON —
 # "a: 'Het' in de zin:" — where every other paper in the family uses a
 # bracket. Kept per subject rather than widened for all three, because a
@@ -675,6 +776,9 @@ PAPER_TARIFF = re.compile(
     r'[(\[]\s*(?:(?:' + CAP_WORD + r')\.?\s*)?'
     r'(?:(\d{1,2})\s*[x×*]\s*)?(\d{1,2})\s*'
     r'(?:' + MARK_WORD + r'|m)?\s*[)\]]', re.I)
+    r'\(\s*(?:(\d{1,2})\s*[x×]\s*)?(\d{1,2})\s*'
+    r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark|marki|marka|'
+    r'бал(?:и|ів|ла)?|m)?\s*\)', re.I)
 # The same, with the multiplier written second: "(5×1)" is five answers at one
 # point each and the SEC also sets "(1×5)". Both are read, and which is the
 # count is settled by the group beneath it, never by picking the larger.
@@ -685,6 +789,12 @@ TRAILING_MARK = re.compile(
 
 
 def next_letter(current, first='a'):
+    r'\s*\(\s*\d{1,2}\s*(?:[x×]\s*\d{1,2}\s*)?'
+    r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark|marki|marka|'
+    r'бал(?:и|ів|ла)?)?\s*\)\s*$', re.I)
+
+
+def next_letter(current, subject=None):
     """The SEC's own numbering, used as a second way in.
 
     A marker that is the NEXT letter after the one before it IS that letter,
@@ -700,6 +810,19 @@ def next_letter(current, first='a'):
     alphabets, so only the first has to be told.
     """
     return first if not current else chr(ord(current) + 1)
+    The run is the SUBJECT'S OWN ALPHABET, not the Latin one. Maltese letters
+    its parts a) b) ċ) d) e), because ċ is the third letter of the Maltese
+    alphabet — and read as Latin, every Maltese sitting lost its third
+    vocabulary item into the second and censused four expressions where the
+    paper prints five.
+    """
+    run = cfg(subject, 'letters') if subject else None
+    if not run:
+        return 'a' if not current else chr(ord(current) + 1)
+    if not current:
+        return run[0]
+    i = run.find(current)
+    return run[i + 1] if 0 <= i < len(run) - 1 else None
 
 
 class Ask:
@@ -950,6 +1073,7 @@ class EuPaper:
         tail = cfg(self.subject, 'classic_part_tail')
         tail_pat = re.compile(tail, re.I) if tail else None
         numeral_only = re.compile(r'^(I{1,3}|[123])\s*\.?$')
+        letter_pat = _letter_pattern(self.subject)
         furniture = re.compile(cfg(self.subject, 'furniture'), re.I)
 
         asks, part, q, letter = [], None, None, None
@@ -1003,6 +1127,8 @@ class EuPaper:
             if pm:
                 close_part()
                 token = next(g for g in pm.groups() if g).lower()
+                token = (pm.group(1) or pm.group(pm.lastindex or 1)).lower()
+                token = token.replace('\u0456', 'i').replace('\u2010', '-')
                 part = part_map.get(token) or _part_token(token)
                 first_part = first_part or part
                 q, letter = None, None
@@ -1106,9 +1232,11 @@ class EuPaper:
             if lm and q is not None \
                     and (lm.group(1).lower() == next_letter(letter,
                                                             first_letter)
+                    and (is_next_letter(lm.group(1).lower(), letter,
+                                        self.subject)
                          or line.x <= self.letter_x + LETTER_TOL):
                 close()
-                letter = lm.group(1).lower()
+                letter = fold_letter(self.subject, lm.group(1).lower())
                 current = Ask(part, q, letter, None, lm.group(2), line.page)
                 last_y = line.y
                 continue
@@ -1341,7 +1469,8 @@ class EuPaper:
             # the first "N marks" on the page instead took Section A's 50 in
             # 2022 and called the booklet a 50-mark paper.
             m = re.search(r'carries\s+(\d{2,3})\s*marks', text, re.I) \
-                or re.search(r'(?:M[áa]ximo|Maximum|Totaal|Total)'
+                or re.search(r'(?:M[áa]ximo|Maximum|Massimu|Totaal|Total|'
+                             r'Загальна\s+оцінка)'
                              r'[^\d\n]{0,30}?(\d{2,3})\b', text, re.I) \
                 or re.search(r'(\d{2,3})\s*marks\b', text, re.I)
             if m:
@@ -1421,6 +1550,9 @@ def _part_head_tariff(lines, part_pat):
                 r'[(\[]\s*(?:\w+\.?\s+){0,2}?(\d{1,3})\s*'
                 r'(?:' + MARK_WORD + r')?\s*'
                 r'(?:/\s*(\d{1,3})\s*(?:' + MARK_WORD + r')?\s*)?[)\]]$',
+                r'\(\s*(\d{1,3})\s*(?:/\s*(\d{1,3})\s*)?'
+                r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark|'
+                r'marki|marka|бал(?:и|ів|ла)?)?\s*\)$',
                 other.text.strip(), re.I)
             if m:
                 out[line.text] = (int(m.group(1)),

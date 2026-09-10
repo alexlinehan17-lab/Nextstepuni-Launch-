@@ -179,6 +179,7 @@
     },
     "refsHash": "ab5312971b0e0217"
   },
+<<<<<<< HEAD
   "croatian": {
     "cards": 100,
     "contentHash": "2a79e729a0bc71d9",
@@ -194,6 +195,8 @@
     },
     "refsHash": "949a64de37c58396"
   },
+=======
+>>>>>>> markbank/man
   "czech": {
     "cards": 15,
     "contentHash": "6c302051f1a4dede",
@@ -209,6 +212,7 @@
     },
     "refsHash": "7013eb0f4ad094fa"
   },
+<<<<<<< HEAD
   "danish": {
     "cards": 79,
     "contentHash": "bdee40da04ff574f",
@@ -224,6 +228,8 @@
     },
     "refsHash": "b8748a474c6a2507"
   },
+=======
+>>>>>>> markbank/man
   "dutch": {
     "cards": 42,
     "contentHash": "e9c0193ea33db730",
@@ -509,6 +515,36 @@
     },
     "refsHash": "15602894c57e4cf0"
   },
+  "maltese": {
+    "cards": 48,
+    "contentHash": "9a2ebe54e70a583f",
+    "coveragePct": 100.0,
+    "covered": 48,
+    "excluded": 28,
+    "leaves": 76,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 6,
+      "hash": "33e3be70d6c6fac1"
+    },
+    "refsHash": "85463f85c801491d"
+  },
+  "mandarin-chinese": {
+    "cards": 201,
+    "contentHash": "82e2ed4c09522481",
+    "coveragePct": 100.0,
+    "covered": 218,
+    "excluded": 482,
+    "leaves": 700,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "a831dae7b231e378"
+    },
+    "refsHash": "25434d529fd64aae"
+  },
   "maths": {
     "cards": 833,
     "contentHash": "b03ee0576c972395",
@@ -703,5 +739,23 @@
       "hash": "4ca9c323b2270a38"
     },
     "refsHash": "54274e7e363d8dc6"
+<<<<<<< HEAD
+=======
+  },
+  "ukrainian": {
+    "cards": 20,
+    "contentHash": "1a7cf959461a3660",
+    "coveragePct": 100.0,
+    "covered": 20,
+    "excluded": 6,
+    "leaves": 26,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 2,
+      "hash": "8cb689ef44820e29"
+    },
+    "refsHash": "ced75cb491569d9f"
+>>>>>>> markbank/man
   }
 }

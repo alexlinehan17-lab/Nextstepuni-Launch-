@@ -111,6 +111,9 @@ if (!arabicCurriculum) throw new Error('Canonical Arabic curriculum is missing')
 const ancientGreekCurriculum = CURRICULUM.find(subject => subject.id === 'ancient-greek');
 if (!ancientGreekCurriculum) throw new Error('Canonical Ancient Greek curriculum is missing');
 const modernGreekCurriculum = CURRICULUM.find(subject => subject.id === 'modern-greek');
+const malteseCurriculum = CURRICULUM.find(subject => subject.id === 'maltese');
+const ukrainianCurriculum = CURRICULUM.find(subject => subject.id === 'ukrainian');
+const mandarinChineseCurriculum = CURRICULUM.find(subject => subject.id === 'mandarin-chinese');
 if (!modernGreekCurriculum) throw new Error('Canonical Modern Greek curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
@@ -1443,6 +1446,50 @@ export const ANCIENT_GREEK_STRANDS: StrandRef[] = ancientGreekCurriculum.strands
  * a hundred-word commentary and a three-hundred-word essay — which the scheme
  * answers with one indicative composition of its own and prices nothing inside.
  */
+/* Mandarin Chinese ships ONE strand of its published specification: the fourth,
+ * "Written Paper — Task Types", whose six subtopics are the task types this
+ * examination actually sets — notices and timetables, nursery rhymes,
+ * descriptive passages, emails and messages, the Ordinary paper's
+ * word-and-picture matching, and Section B's written production. The other
+ * three strands describe the whole course, including the oral and the
+ * portfolio, which no written card can be tagged against; they ship unused so
+ * a student sees the specification they are sitting. */
+export const MANDARIN_CHINESE_STRANDS: StrandRef[] = mandarinChineseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/* Maltese and Ukrainian publish the same two strands Modern Greek does, and
+ * for the same reason: the examination is a reading comprehension and a piece
+ * of written production, and nothing else. */
+export const MALTESE_STRANDS: StrandRef[] = malteseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Part ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const UKRAINIAN_STRANDS: StrandRef[] = ukrainianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Part ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const MODERN_GREEK_STRANDS: StrandRef[] = modernGreekCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Part ${index + 1}`,
@@ -1637,6 +1684,9 @@ export const SUBJECTS = [
   { id: 'croatian', title: 'Croatian', strands: CROATIAN_STRANDS, spec: 'Leaving Certificate Croatian, a non-curricular EU language' },
   { id: 'danish', title: 'Danish', strands: DANISH_STRANDS, spec: 'Leaving Certificate Danish, a non-curricular EU language' },
   { id: 'slovenian', title: 'Slovenian', strands: SLOVENIAN_STRANDS, spec: 'Leaving Certificate Slovenian, a non-curricular EU language' },
+  { id: 'mandarin-chinese', title: 'Mandarin Chinese', strands: MANDARIN_CHINESE_STRANDS, spec: 'Leaving Certificate Mandarin Chinese specification, first examined 2022' },
+  { id: 'maltese', title: 'Maltese', strands: MALTESE_STRANDS, spec: 'Leaving Certificate Maltese, a non-curricular EU language' },
+  { id: 'ukrainian', title: 'Ukrainian', strands: UKRAINIAN_STRANDS, spec: 'Leaving Certificate Ukrainian, a non-curricular EU language, first examined 2025' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -2026,6 +2076,16 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   },
   // Higher only: the SEC's file letter for every Modern Greek paper on disk is
   // 'A' and every cover says Higher Level. There is no Ordinary paper to card.
+  'mandarin-chinese': {
+    higher: () => import('./cards/mandarin-chinese/higher'),
+    ordinary: () => import('./cards/mandarin-chinese/ordinary'),
+  },
+  maltese: {
+    higher: () => import('./cards/maltese/higher'),
+  },
+  ukrainian: {
+    higher: () => import('./cards/ukrainian/higher'),
+  },
   'modern-greek': {
     higher: () => import('./cards/modern-greek/higher'),
   },

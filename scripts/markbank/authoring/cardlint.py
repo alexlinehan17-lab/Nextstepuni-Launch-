@@ -26,16 +26,16 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHORED = os.path.join(HERE, '..', 'authored')
 
 SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
-            'arabic', 'art', 'biology', 'business', 'chemistry',
+            'arabic', 'art', 'biology', 'bulgarian', 'business', 'chemistry',
             'classical-studies', 'computer-science', 'construction-studies',
-            'bulgarian', 'croatian', 'czech', 'danish', 'dutch', 'economics',
-            'engineering', 'english', 'estonian', 'finnish', 'hungarian',
-            'slovakian', 'slovenian', 'swedish',
-            'french', 'geography', 'german', 'history', 'home-economics',
+            'croatian', 'czech', 'danish', 'dutch', 'economics',
+            'engineering', 'english', 'estonian', 'finnish', 'french',
+            'geography', 'german', 'history', 'home-economics', 'hungarian',
             'irish', 'italian', 'japanese', 'latin', 'latvian', 'lcvp',
-            'lithuanian', 'maths', 'modern-greek', 'physics', 'polish',
-            'portuguese', 'religious-education', 'romanian', 'russian',
-            'spanish', 'technology']
+            'lithuanian', 'maltese', 'mandarin-chinese', 'maths',
+            'modern-greek', 'physics', 'polish', 'portuguese',
+            'religious-education', 'romanian', 'russian', 'slovakian',
+            'slovenian', 'spanish', 'swedish', 'technology', 'ukrainian']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an
 # Agricultural Science paper about joining a suckler scheme is not a leak),

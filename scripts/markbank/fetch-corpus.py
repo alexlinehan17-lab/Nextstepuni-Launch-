@@ -191,6 +191,7 @@ SUBJECTS = {
     # Listening Comprehension booklet, only component '000'. Language letter
     # 'E'. The corpus runs 2010-2026 with 2020 absent: 16 papers, 16 schemes.
     'modern-greek': 'modern-greek',
+<<<<<<< HEAD
     # Added 10 September 2026. The nine remaining NON-CURRICULAR EU languages.
     # The corpus listing answers their shape before a PDF is opened and it is
     # the SAME shape for all nine: every file id carries the level letter 'A'
@@ -220,6 +221,42 @@ SUBJECTS = {
     'croatian': 'croatian',
     'danish': 'danish',
     'slovenian': 'slovenian',
+=======
+    # Added 10 September 2026. Mandarin Chinese is a CURRICULAR modern language
+    # (SEC subject 566) first examined in 2022, so its corpus is the window
+    # 2022-2026 and nothing earlier exists to fetch. Two structural facts the
+    # listing gives before a PDF is opened: it is sat at TWO levels in every
+    # year, with a separate Listening Comprehension booklet ('A00') beside the
+    # written paper ('000') at each; and — unlike French/German/Spanish/
+    # Italian/Russian/Japanese — it is NOT printed bilingually. The SEC
+    # publishes separate English ('E') and Irish ('I') editions, so
+    # WANTED_LANGS already takes the right one and the 'B' path never fires.
+    # Its risk is not the corpus but the WRITING SYSTEM: see MANDARIN.md.
+    'mandarin-chinese': 'mandarin-chinese',
+    # Added 10 September 2026. Maltese is a NON-CURRICULAR EU language (SEC
+    # subject 557) on the Latvian/Czech pattern: ONE Higher-only booklet
+    # ('000') in every sitting, no Ordinary paper and no Listening
+    # Comprehension Test at all, English edition only. The corpus holds 2018,
+    # 2019 and 2022-2025 — six sittings, with 2020 and 2021 absent because no
+    # written examination was held in those years. A fetch that reports one
+    # paper and one scheme a year is the corpus being complete.
+    'maltese': 'maltese',
+    # Added 10 September 2026. Ukrainian (SEC subject 570) is the newest
+    # non-curricular EU language in the corpus: first examined in 2025, so two
+    # sittings exist in total. Latvian's shape — one Higher-only booklet
+    # ('000'), no Ordinary paper, no Listening Comprehension Test.
+    'ukrainian': 'ukrainian',
+    # Added 10 September 2026. Hebrew Studies (SEC subject 009) is a
+    # DISCONTINUED subject, last examined in 2019, so its window is 2010-2019
+    # rather than the bank's default. It is sat at TWO levels, one booklet
+    # ('000') each, no Listening Comprehension Test. Papers exist for 2010,
+    # 2011, 2014, 2015, 2018 and 2019 at both levels (12); schemes for only
+    # five of those twelve sittings — 2010, 2014, 2018 and 2019 Higher and
+    # 2015 Ordinary. A sitting with no scheme has no answers to lift, which is
+    # a fact about what the SEC published, not a fetch failure. Its risk is
+    # DIRECTION: Hebrew is written right-to-left, like Arabic.
+    'hebrew-studies': 'hebrew-studies',
+>>>>>>> markbank/man
 }
 
 # A subject the SEC sets as TWO papers on the same afternoon, one of which a

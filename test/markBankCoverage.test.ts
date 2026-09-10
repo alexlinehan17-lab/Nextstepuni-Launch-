@@ -111,11 +111,21 @@ const HEAD = new RegExp(`${ADDRESS}${QTOKEN}|${ADDRESS}$`);
 // A sub-marker may be a DIGIT: the Baltic languages number the rows of a
 // true/false table "1." to "5." where every science paper numbers them "(i)"
 // to "(v)", and the citation names the address the candidate saw.
+<<<<<<< HEAD
 // A part marker may be CYRILLIC: the Bulgarian paper letters Question 1's five
 // expressions "а) б) в) г) д)", which look like Latin letters and are not.
 // Same class as reconcile.py's PART_TOKEN, which this mirrors.
 const TAIL =
   /^(?:\s*(?:\(\s*(?:[A-Za-z\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)|[AB]\b|[,–—-]|and\b))*(?:[\s\d].*)?$/;
+=======
+// A part letter is not always a LATIN letter either: Maltese letters the five
+// expressions of every Question 1 "a) b) ċ) d) e)", because ċ is the third
+// letter of the Maltese alphabet, and the citation names the marker the
+// candidate saw. The four accented letters that alphabet adds — ċ ġ ħ ż —
+// join the class here and in reconcile.py's PART_TOKEN, which is its mirror.
+const TAIL =
+  /^(?:\s*(?:\(\s*(?:[A-Za-zċĊġĠħĦżŻ]{1,4}|\d{1,2})\s*\)|[AB]\b|[,–—-]|and\b))*(?:[\s\d].*)?$/;
+>>>>>>> markbank/man
 
 describe('Mark Bank paper-coverage ratchet', () => {
   it.each(SUBJECTS)('%s deck matches its measured baseline', (subject) => {
