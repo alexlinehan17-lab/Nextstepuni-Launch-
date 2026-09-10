@@ -51,6 +51,7 @@ first roman here too — 2024 Higher runs Reading Comprehension 2's parts to
 on wording.
 """
 import argparse
+import collections
 import glob
 import os
 import re
@@ -273,11 +274,29 @@ Q_HEAD = re.compile(
 # opens on: "Dalis A   Skaitymas   100 taškų".
 SECTION_TAB = re.compile(r'^Dalis\s+([AB])\b', re.I)
 # The old examination's own parts, printed in Roman numerals.
-PART_OLD = re.compile(r'^(I{1,3})\s*DALIS\b', re.I)
+# The old examination's own parts, in each of the three languages: Lithuanian
+# "I DALIS", Latvian "I daļa" and Czech "Část 1" — see lt_scheme.PART_OLD,
+# which reads the same heads out of the answer document.
+PART_OLD = re.compile(r'^(I{1,3})\s*(?:DALIS|da[ļl]a)\b|^[ČC]ást\s*([123])\b',
+                      re.I)
+PART_NUMBER = {'I': 'I', 'II': 'II', 'III': 'III',
+               '1': 'I', '2': 'II', '3': 'III'}
+
+
+def part_token(m):
+    return PART_NUMBER[(m.group(1) or m.group(2)).upper()]
 # The listening booklet's part tab, printed in the page margin.
 AURAL_TAB = re.compile(r'^Section\s+([A-F])\s*$', re.I)
 LETTER = re.compile(r'^\(?\s*([a-l])\s*\)\s*(.*)$', re.I)
-ROMAN = re.compile(r'^\(\s*(i{1,3}|iv|vi{0,3}|ix|x)\s*\)\s*(.*)$', re.I)
+# A roman marker, bracketed — "(iii)" — or set with a full stop after it,
+# "iii.", which is how some sittings number the rows of a true/false table.
+ROMAN = re.compile(
+    r'^\(\s*([iI]{1,3}|[iI][vV]|[vV][iI]{0,3}|[iI][xX]|[xX])\s*\)\s*(.*)$|'
+    # The dotted form is LOWER CASE and nothing else. Case-folded it read the
+    # initial of a name as a roman: 2025 Ordinary prints "(g) V. Senkutė
+    # išvyko į Ameriką dirbti." and the "V." opened a fifth sub-part of an ask
+    # that has none, which the census reported as a roman-gap holding only (v).
+    r'^(i{1,3}|iv|vi{0,3}|ix|x)\.\s+(\S.*)$')
 NUMBERED = re.compile(r'^(\d{1,2})\s*\.\s*(.+)$')
 LETTERS = 'abcdefghijkl'
 # Rubric printed between asks, which belongs to no ask.
@@ -339,9 +358,30 @@ class LtPaper:
         self.leads = {}               # (section, q) -> its printed title
         self.letter_x_by_q = {}
         self.letter_x = self._letter_column()
-        self.era = 'new' if year >= 2022 else ('old2' if year == 2021 else 'old3')
+        self.era = self._era()
+        # (page, y) of the first ask the old paper prints. The reading text
+        # stops there, and it is where it stops that says whether the page
+        # holding it is a page of text at all — see pages_for.
+        self.first_ask = None
         self._asks = self._walk() if self.era == 'new' else self._walk_old()
         self._aural = self._walk_aural() if self.aural_path else []
+
+    def _era(self):
+        """Which of the three printed examinations this booklet is.
+
+        Read from the PAGE, never from the year. Lithuanian was rebuilt in 2022
+        and Latvian and Czech were not — every one of their seventeen sittings
+        is the old paper — so a year test made every Latvian and Czech sitting
+        from 2022 on look for a "Dalis A" banner that is not there and censused
+        zero asks in each of them. The banner is what says the paper is the new
+        one, and the number of DALIS heads is what separates the three-part
+        paper from the two-part 2021 one.
+        """
+        if any(SECTION_TAB.match(l.text) for l in self.lines):
+            return 'new'
+        parts = {part_token(PART_OLD.match(l.text)) for l in self.lines
+                 if PART_OLD.match(l.text)}
+        return 'old2' if len(parts) == 2 else 'old3'
 
     # ------------------------------------------------------------ layout ---
     def _letter_column(self):
@@ -442,9 +482,9 @@ class LtPaper:
                 current = Ask(section, q, letter, roman, nm.group(2), line.page)
                 last_y = line.y
                 continue
-            if rm and not (rm.group(1).lower() == 'i'
+            if rm and not (_roman_of(rm)[0] == 'i'
                            and self._is_letter(line.x, letter, q, idx)):
-                marker = ('roman', rm.group(1).lower(), rm.group(2))
+                marker = ('roman', _roman_of(rm)[0], _roman_of(rm)[1])
             elif lm and (not rm or self._is_letter(line.x, letter, q, idx)):
                 # A letter marker stands at the question's own left margin. A
                 # word that merely begins with a bracketed letter does not.
@@ -458,7 +498,7 @@ class LtPaper:
                     letter, roman = mark, None
                     inner = ROMAN.match(rest)
                     if inner:
-                        roman, rest = inner.group(1).lower(), inner.group(2)
+                        roman, rest = _roman_of(inner)[0], _roman_of(inner)[1]
                 else:
                     roman = mark
                 current = Ask(section, q, letter, roman, rest, line.page)
@@ -504,20 +544,28 @@ class LtPaper:
             pm = PART_OLD.match(line.text)
             if pm:
                 close()
-                part, q, letter = pm.group(1).upper(), None, None
+                part, q, letter = part_token(pm), None, None
                 last_y = None
                 continue
-            if part is None:
-                # Everything before I DALIS is the reading text.
-                if not SOURCE_LINE.match(line.text):
+            if part is None or q is None:
+                # The reading text, wherever the SEC set it. Ten sittings print
+                # it BEFORE the part head and 2021 prints "I DALIS (30/70)" at
+                # the top of the page the text starts on — so collecting only
+                # what comes before the head lost that sitting's text entirely
+                # and six of its cards quoted a passage the card did not carry.
+                # A page holding an ask is thrown out again in pages_for.
+                if not SOURCE_LINE.match(line.text) and not PART_OLD.match(line.text):
                     text_pages.setdefault('text', [])
                     if line.page not in text_pages['text']:
                         text_pages['text'].append(line.page)
-                continue
+                if part is None:
+                    continue
             nm = NUMBERED.match(line.text)
             lm = LETTER.match(line.text)
             if nm:
                 close()
+                if self.first_ask is None:
+                    self.first_ask = (line.page, line.y)
                 q, letter = int(nm.group(1)), None
                 rest = nm.group(2)
                 # "2. a) Kas yra Sigitas Tamkevičius? (1 taškas)" — the SEC
@@ -528,7 +576,7 @@ class LtPaper:
                 # letter-gap starting at (b).
                 inner = LETTER.match(rest)
                 if inner and part == 'I':
-                    letter, rest = inner.group(1).lower(), inner.group(2)
+                    letter, rest = _roman_of(inner)[0], _roman_of(inner)[1]
                 current = Ask(part, q, letter, None, rest, line.page)
                 last_y = line.y
                 continue
@@ -615,12 +663,20 @@ class LtPaper:
         # Higher), and an answer box is indented past it (x=65.4 under a head
         # at 56.7). The column is measured from the item heads that carry
         # their own text, which cannot be anything else.
-        item_xs = [round(l.x) for l in raw
-                   if re.match(r'^\d{1,2}\.\s+\S', l.text)]
-        item_x = max(set(item_xs), key=item_xs.count) if item_xs else None
+        # Measured PER PAGE, not per booklet. The SEC indents Section E's
+        # items where it does not indent Section A's — 2026 Ordinary sets them
+        # at x=80.2 against x=56.7 — so one column for the whole booklet put
+        # Section E's own item head outside its window, dropped it, and filed
+        # the second item's parts under the first. Two printed asks then
+        # shared one address and the exclusions ledger reported the pair twice.
+        item_xs = collections.defaultdict(list)
+        for l in raw:
+            if re.match(r'^\d{1,2}\.\s+\S', l.text):
+                item_xs[l.page].append(round(l.x))
+        item_x = {p: max(set(v), key=v.count) for p, v in item_xs.items()}
         lines = [l for l in raw
                  if not ANSWER_BOX.match(l.text)
-                 or (item_x is not None and abs(l.x - item_x) <= 4
+                 or (l.page in item_x and abs(l.x - item_x[l.page]) <= 4
                      and re.fullmatch(r'\d{1,2}\s*\.?', l.text))]
         by_page = _section_by_page(lines, AURAL_TAB)
         for line in lines:
@@ -648,7 +704,7 @@ class LtPaper:
                 letter = None
                 inner = LETTER.match(rest)
                 if inner:
-                    letter, rest = inner.group(1).lower(), inner.group(2)
+                    letter, rest = _roman_of(inner)[0], _roman_of(inner)[1]
                 current = Ask(f'L{section}', item, letter, None, rest, line.page)
                 last_y = line.y
                 continue
@@ -660,7 +716,7 @@ class LtPaper:
             if rm and item is not None and letter is not None:
                 close()
                 current = Ask(f'L{section}', item, letter,
-                              rm.group(1).lower(), rm.group(2), line.page)
+                              _roman_of(rm)[0], _roman_of(rm)[1], line.page)
                 last_y = line.y
                 continue
             if lm and item is not None:
@@ -723,11 +779,48 @@ class LtPaper:
     def lead(self, section, q):
         return self.leads.get((section, q), '')
 
+    # How long a printed line has to be for its page to be a page of READING
+    # TEXT. The old paper's front cover carries eight short lines — "LEAVING
+    # CERTIFICATE EXAMINATION, 2010", "LITHUANIAN", "HIGHER LEVEL", "3 hours"
+    # — and nothing else, and every one of them was collected as text before
+    # the first part head, so every card of those twelve sittings bound its
+    # source material to a cover page the student does not need to read.
+    PROSE_LINE = 80
+
+    def _prose_pages(self):
+        pages = set()
+        for line in self.lines:
+            if len(line.text) >= self.PROSE_LINE:
+                pages.add(line.page)
+        return pages
+
     def pages_for(self, section, q):
-        """The pages of the reading text this task is set on."""
-        return self.text_pages.get((section, q)) or []
+        """The pages of the reading text this task is set on.
+
+        A page with no line of prose on it is the front cover, not text — the
+        old paper's cover carries eight short lines and nothing else, and every
+        card of those twelve sittings bound its source material to it.
+        """
+        pages = self.text_pages.get((section, q)) or []
+        prose = self._prose_pages()
+        if self.era != 'new' and self.first_ask:
+            page, y = self.first_ask
+            # Everything after the first question is question, not text. The
+            # page the first question STARTS on may still be a page of text:
+            # 2013 sets Question 1 two thirds of the way down page 3 with the
+            # article above it, while 2010 sets it at the very top of page 4
+            # with nothing above it at all. The y of that first marker is what
+            # separates the two, and the SEC's own layout supplies it.
+            pages = [p for p in pages if p < page or (p == page and y >= 200)]
+        return [p for p in pages if p in prose]
 
     PART_TOTAL = re.compile(r'\(\s*(\d{2,3})\s*/\s*(\d{2,3})\s*\)')
+    # Latvian and Czech state each part's own share rather than a fraction of
+    # the whole — "I daļa (30 punkti)", "Část 1 [30 bodů]" — so the paper's
+    # total is those three added, and the cross-year checksum compares that.
+    PART_SHARE = re.compile(
+        r'[\(\[]\s*(\d{2,3})\s*(?:punkt\w*|bod\w*|ta[sš]k\w*)?\s*[\)\]]',
+        re.I)
 
     def cover_marks(self):
         """What the paper states its own total is.
@@ -750,6 +843,11 @@ class LtPaper:
                 if m:
                     wholes.add(int(m.group(2)))
                     parts += int(m.group(1))
+            if not wholes:
+                shares = [int(self.PART_SHARE.search(l.text).group(1))
+                          for l in self.lines if PART_OLD.match(l.text)
+                          and self.PART_SHARE.search(l.text)]
+                return sum(shares)
             if len(wholes) == 1:
                 whole = next(iter(wholes))
                 if parts != whole:
@@ -774,6 +872,13 @@ class LtPaper:
 # page, and the only marker that can be read two ways is "(i)", which has to
 # satisfy the sequence test as well.
 LETTER_TOL = 8.0
+
+
+def _roman_of(m):
+    """(roman, rest) from either printed form of a roman marker."""
+    if m.group(1):
+        return m.group(1).lower(), m.group(2)
+    return m.group(3).lower(), m.group(4)
 
 
 def next_letter(current):

@@ -220,6 +220,39 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/polish',
     blocked: new Set(),
   },
+  lithuanian: {
+    title: 'Lithuanian',
+    /* The examination these papers were sat under. Lithuanian is a
+     * NON-CURRICULAR EU LANGUAGE: there is no Irish syllabus for it, and the
+     * SEC examines it against the language itself. The corpus holds three
+     * printed shapes — I/II/III DALIS out of 100 to 2020, I/II DALIS out of 70
+     * in 2021, and from 2022 Dalis A Skaitymas and Dalis B Rašymas at two
+     * levels with a Listening Comprehension Test beside them. See
+     * LITHUANIAN_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-lithuanian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Lithuanian examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card of those sittings says which language its answer must be in.",
+    figureDir: 'public/exam-figures/lithuanian',
+    blocked: new Set(),
+  },
+  latvian: {
+    title: 'Latvian',
+    /* Latvian never made the 2022 change Lithuanian and Polish did: every
+     * sitting in the corpus, 2010 to 2026, is the old examination — one
+     * Higher-only booklet, three parts, no Listening Comprehension Test. */
+    specVersion: 'lc-latvian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Latvian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on.",
+    figureDir: 'public/exam-figures/latvian',
+    blocked: new Set(),
+  },
+  czech: {
+    title: 'Czech',
+    /* Czech, like Latvian, prints the old examination in every year of the
+     * corpus. */
+    specVersion: 'lc-czech-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Czech examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on.",
+    figureDir: 'public/exam-figures/czech',
+    blocked: new Set(),
+  },
   russian: {
     title: 'Russian',
     /* The syllabus these papers were sat under and the one still being sat.

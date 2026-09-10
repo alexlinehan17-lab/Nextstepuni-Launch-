@@ -64,6 +64,8 @@ import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
+import { CARDS as LITHUANIAN_HIGHER } from '../components/MarkBank/cards/lithuanian/higher';
+import { CARDS as LITHUANIAN_ORDINARY } from '../components/MarkBank/cards/lithuanian/ordinary';
 import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
 import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
@@ -528,6 +530,21 @@ const decks = [
    * tick stands in, which is the only place that answer is written down. */
   ['polish:higher', POLISH_HIGHER, 115, '3cf1b2909433bcb50931d0d7162ff44fa529ca44752a16cc50dcddcad6ffe6a5'],
   ['polish:ordinary', POLISH_ORDINARY, 122, '7b75f4690d22e1070ed66cb946f5eeeba80f3b83f73f4bc774cf9fd9d649083b'],
+  /* Lithuanian, added 10 September 2026 — the second NON-CURRICULAR EU
+   * LANGUAGE, and the deepest corpus in the bank: twenty-two sittings from
+   * 2010 to 2026, because that is what the SEC published for it and every one
+   * of them is the same examination. Every card is new; none replaces
+   * anything. Its 306 cards cover 306 of the 826 asks its papers print and
+   * the other 520 are excluded with the scheme's own printed line — 280
+   * listening asks the recording answers, 99 written tasks answered by a
+   * marking grid or a model paragraph, 35 matching tasks whose answer is a
+   * letter naming a box the card cannot carry, and the rest named in
+   * scripts/markbank/authoring/exclusions/lithuanian.json. It is the first
+   * deck whose text needed a repair map derived from the LANGUAGE rather than
+   * from a font: two of its schemes embed a subset nothing else in the bank
+   * shares, and lt_glyphs.py settles their glyphs by which words they make. */
+  ['lithuanian:higher', LITHUANIAN_HIGHER, 163, '8492d0ed851e7023f0daae360420bc38e6aef456cfe45b7f62efc30c8e86fba3'],
+  ['lithuanian:ordinary', LITHUANIAN_ORDINARY, 143, '60d9e670bf51d7ff41846017985015d94031954562e82edeb0e6ace4b0d9e0d8'],
   /* Classical Studies is the twenty-second subject, entered on a RE-MEASURE:
    * the bank had it recorded as rejected on a band grid that turns out to
    * belong to the Research Study Report, which is coursework, not the written
@@ -576,7 +593,8 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_087);
+    // Lithuanian adds 306 in a sixth wave: 16,087 + 306.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_393);
     // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
     // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
   });
@@ -606,6 +624,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('classical-studies:')
         && !name.startsWith('latin:')
         && !name.startsWith('polish:')
+        && !name.startsWith('lithuanian:')
         && !name.startsWith('arabic:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);

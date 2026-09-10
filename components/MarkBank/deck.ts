@@ -72,6 +72,8 @@ const japaneseCurriculum = CURRICULUM.find(subject => subject.id === 'japanese')
 if (!japaneseCurriculum) throw new Error('Canonical Japanese curriculum is missing');
 const polishCurriculum = CURRICULUM.find(subject => subject.id === 'polish');
 if (!polishCurriculum) throw new Error('Canonical Polish curriculum is missing');
+const lithuanianCurriculum = CURRICULUM.find(subject => subject.id === 'lithuanian');
+if (!lithuanianCurriculum) throw new Error('Canonical Lithuanian curriculum is missing');
 const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
 if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
 const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
@@ -1108,6 +1110,24 @@ export const POLISH_STRANDS: StrandRef[] = polishCurriculum.strands.map((strand,
   })),
 }));
 
+/* Lithuanian's whole taxonomy ships, not only the part that is carded.
+ * Its third strand names the paper's own task types and two of them take
+ * cards — the open questions of I Dalis and the new format's reading tasks.
+ * The commentary, the essay and the written production are answered by a
+ * model paragraph and a marking grid, and the listening asks can only be
+ * answered from the recording. A student browsing Lithuanian should see the
+ * shape of their examination, not only the part that is carded. */
+export const LITHUANIAN_STRANDS: StrandRef[] = lithuanianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1354,6 +1374,7 @@ export const SUBJECTS = [
   { id: 'russian', title: 'Russian', strands: RUSSIAN_STRANDS, spec: 'Leaving Certificate Russian syllabus' },
   { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
   { id: 'polish', title: 'Polish', strands: POLISH_STRANDS, spec: 'Leaving Certificate Polish, a non-curricular EU language' },
+  { id: 'lithuanian', title: 'Lithuanian', strands: LITHUANIAN_STRANDS, spec: 'Leaving Certificate Lithuanian, a non-curricular EU language' },
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
   { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
   { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
@@ -1659,6 +1680,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   polish: {
     higher: () => import('./cards/polish/higher'),
     ordinary: () => import('./cards/polish/ordinary'),
+  },
+  lithuanian: {
+    higher: () => import('./cards/lithuanian/higher'),
+    ordinary: () => import('./cards/lithuanian/ordinary'),
   },
   arabic: {
     higher: () => import('./cards/arabic/higher'),

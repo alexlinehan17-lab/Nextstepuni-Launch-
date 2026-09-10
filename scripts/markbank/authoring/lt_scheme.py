@@ -124,6 +124,13 @@ ROW_TOL = 4.0
 LETTER_TOL = 8.0
 
 
+def _roman_of(m):
+    """(roman, rest) from either printed form of a roman marker."""
+    if m.group(1):
+        return m.group(1).lower(), m.group(2)
+    return m.group(3).lower(), m.group(4)
+
+
 def next_letter(current):
     return 'a' if not current else chr(ord(current) + 1)
 
@@ -287,7 +294,19 @@ UNIT_LISTENING = re.compile(r'^Listening\s+comprehension\s+test\b', re.I)
 # document — and its speaker turns are not marking points.
 APPENDIX = re.compile(r'^APPENDIX\b', re.I)
 # The old examination's own parts.
-PART_OLD = re.compile(r'^(I{1,3})\s*DALIS\b', re.I)
+# The old examination's own parts, in each of the three languages: Lithuanian
+# "I DALIS", Latvian "I daļa" and Czech "Část 1". Czech numbers them in arabic
+# digits where the other two use Roman numerals, and PART_NUMBER folds the two
+# spellings onto one token so the census keys, the citations and every
+# continuity check read the same in all three.
+PART_OLD = re.compile(r'^(I{1,3})\s*(?:DALIS|da[ļl]a)\b|^[ČC]ást\s*([123])\b',
+                      re.I)
+PART_NUMBER = {'I': 'I', 'II': 'II', 'III': 'III',
+               '1': 'I', '2': 'II', '3': 'III'}
+
+
+def part_token(m):
+    return PART_NUMBER[(m.group(1) or m.group(2)).upper()]
 
 # The scheme heads each reading task with the DIGIT the paper writes as a word:
 # "Reading Comprehension 1 / Pirma užduotis" — and 2026 Ordinary sets it with
@@ -295,7 +314,17 @@ PART_OLD = re.compile(r'^(I{1,3})\s*DALIS\b', re.I)
 Q_HEAD = re.compile(r'^Reading\s+Comprehension\s*(\d{1,2})\b', re.I)
 LISTEN_HEAD = re.compile(r'^Section\s+([A-F])\b', re.I)
 LETTER = re.compile(r'^\(?\s*([a-l])\s*\)\s*(.*)$', re.I)
-ROMAN = re.compile(r'^\(\s*(i{1,3}|iv|vi{0,3}|ix|x)\s*\)\s*(.*)$', re.I)
+# A roman marker, bracketed — "(iii)" — or set with a full stop after it,
+# "iii.", which is how the 2022 Ordinary scheme numbers the rows of a
+# true/false table. The dotted form requires the text to follow on the same
+# row, so a sentence opening "i." can only be a marker.
+ROMAN = re.compile(
+    r'^\(\s*([iI]{1,3}|[iI][vV]|[vV][iI]{0,3}|[iI][xX]|[xX])\s*\)\s*(.*)$|'
+    # The dotted form is LOWER CASE and nothing else. Case-folded it read the
+    # initial of a name as a roman: 2025 Ordinary prints "(g) V. Senkutė
+    # išvyko į Ameriką dirbti." and the "V." opened a fifth sub-part of an ask
+    # that has none, which the census reported as a roman-gap holding only (v).
+    r'^(i{1,3}|iv|vi{0,3}|ix|x)\.\s+(\S.*)$')
 NUMBERED = re.compile(r'^(\d{1,2})\s*\.\s*(.*)$')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 
@@ -308,14 +337,30 @@ TARIFF = re.compile(
 BARE_TARIFF = re.compile(r'(?:^|\s)(\d{1,2})\s*marks?\s*\.?$', re.I)
 # The SPLIT the SEC prints beside that total: "4 Marks (2 x 2)",
 # "10 Marks (5 x 2)". The unit is on the total, not on the split.
-SPLIT = re.compile(r'\(\s*(\d{1,2})\s*[x×]\s*(\d{1,2})\s*\)')
+SPLIT = re.compile(
+    r'[\(\[]\s*(\d{1,2})\s*[x×]\s*(\d{1,2})\s*'
+    r'(?:m|marks?|ta[sš]k\w*|punkt\w*|bod\w*)?\s*[\)\]]', re.I)
+# The same split with NO brackets at all, which is how several sittings print
+# it: "(c) Radvilė rūpinasi Gabe… (2 dalis) 2 × 5 marks" and "Put a tick (✓) in
+# the appropriate boxes. 5 x 1 mark". The unit is required here — without it
+# "5 x 1" would match a paragraph reference or a date — and the lookbehind
+# keeps it out of a bracketed form the patterns above already read.
+SPLIT_BARE = re.compile(
+    r'(?<![\d(])(\d{1,2})\s*[x×]\s*(\d{1,2})\s*'
+    r'(?:m\b|marks?\b|ta[sš]k\w*|punkt\w*|bod\w*)', re.I)
 # The old examination prices in TAŠKAI and prints the unit every time:
 # "(1 taškas)", "(5 taškai)", "(30 taškų)".
 # The opening bracket is OPTIONAL because the SEC drops it: the 2018 scheme
 # prices Question 1(b) "grūmoja 1 taškas)" with a closing bracket and no
 # opening one, and a strict pattern reported that one ask of that sitting had
 # no tariff at all beside a printed taškas.
-PUNKTAI = re.compile(r'\(?\s*(\d{1,3})\s*ta[sš]k\w*\s*\)', re.I)
+# The three languages price in three units and bracket them two ways:
+# Lithuanian "(1 taškas)", Latvian "(5 punkti)" and Czech "[5 bodů]". The unit
+# is REQUIRED — a bare "(5)" in these documents is a paragraph reference as
+# often as it is a price — and the opening bracket is optional because the SEC
+# drops it (2018 Lithuanian prices "grūmoja 1 taškas)").
+PUNKTAI = re.compile(
+    r'[\(\[]?\s*(\d{1,3})\s*(?:ta[sš]k\w*|punkt\w*|bod\w*)\s*[\)\]]', re.I)
 
 COUNT_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 DIRECTIVE = re.compile(
@@ -323,7 +368,7 @@ DIRECTIVE = re.compile(
     re.I)
 ALL_OR_NOTHING = re.compile(r'^All\s+or\s+nothing\s*:?', re.I)
 # Examiner rubric, which is never an answer.
-NOTE = re.compile(r'^(?:Note\s*:|N\.?B\.?\b|PASTABA\b|Pastaba\b|Penalise\b|Accept\b|Allow\b|'
+NOTE = re.compile(r'^(?:Note\s*:|N\.?B\.?\b|PASTABA\b|Pastaba\b|Svarbu\b|Penalise\b|Accept\b|Allow\b|'
                   r'When\s+the\s+correct|When\s+more\s+than|Award\b|'
                   r'Candidates?\s+must\b|If\s+no\s+point\s+of\s+view\b|'
                   r'No\s+reference\s+to\s+the\s+text\b|Serious\s+missp|'
@@ -339,7 +384,12 @@ RUBRIC_TICK = re.compile(r'^(?:Pa[žz]ym[eė]kite\s*\(|Put\s+a\s+tick\b|'
                          r'Tick\s+(?:the|one)\b)', re.I)
 # The tick, as the SEC's Wingdings subset leaves it in the text layer.
 TICK = re.compile('^[✓✔]$')
-BULLET = re.compile('^[‐‑‒–—•●▪✓✔-]\s*')
+# The bullet, in every glyph the SEC's Wingdings and Symbol subsets leave in
+# the text layer as well as the real ones. U+F0D8 is the arrowhead that opens
+# every part-credit rung under a "Svarbu:" heading — without it those rungs
+# read as continuations of the answer above them and 2023 Higher Q2(h)
+# reported no tariff at all.
+BULLET = re.compile('^[‐‑‒–—•●▪✓✔\uf0d8\uf0b7\uf0a7-]\s*')
 PAGE_ONLY = re.compile(r'^\d{1,3}$')
 # A rank of bare numbers printed across one row — the column heads of a
 # matching task's answer boxes, never an ask.
@@ -393,7 +443,8 @@ class Ask:
 
     __slots__ = ('section', 'q', 'letter', 'roman', 'cue', 'directive', 'count',
                  'per', 'total', 'notation', 'answers', 'fault', 'page',
-                 'open_list', 'stem', 'ticks', 'steps', 'part', 'split')
+                 'open_list', 'stem', 'ticks', 'steps', 'part', 'split',
+                 'columns')
 
     def __init__(self, section, q, letter, roman, cue, page):
         self.section, self.q = section, q
@@ -412,6 +463,9 @@ class Ask:
         # Whether the tariff the SEC printed states its own SPLIT ("4 Marks
         # (2 x 2)", "(2 × 5 marks)") rather than a bare total. See _absorb.
         self.split = False
+        # Printed rows of an answer block the SEC set in two columns, banked
+        # whole because a column cannot be read one row at a time. See _price.
+        self.columns = []
 
     @property
     def key(self):
@@ -436,7 +490,15 @@ class LtScheme:
         if self.path is None:
             raise FileNotFoundError(f'no Lithuanian scheme for {year} {level}')
         self.rows = read_rows(self.path, subject)
-        self.era = 'new' if year >= 2022 else ('old2' if year == 2021 else 'old3')
+        # Read from the PAGE, never from the year — see LtPaper._era, which
+        # makes the same call on the question paper. Latvian and Czech never
+        # left the old examination.
+        if any(UNIT_READING.match(r.text) for r in self.rows):
+            self.era = 'new'
+        else:
+            parts = {part_token(PART_OLD.match(r.text)) for r in self.rows
+                     if PART_OLD.match(r.text)}
+            self.era = 'old2' if len(parts) == 2 else 'old3'
         self.letter_x_by_q = {}
         self.letter_x = self._letter_column()
         self.grid_lines = []
@@ -549,7 +611,7 @@ class LtScheme:
                 rest = nm.group(2)
                 inner = LETTER.match(rest)
                 if inner:
-                    letter, rest = inner.group(1).lower(), inner.group(2)
+                    letter, rest = _roman_of(inner)[0], _roman_of(inner)[1]
                 current = Ask(section, q, letter, roman, rest, row.page)
                 _head_tariff(current)
                 continue
@@ -568,9 +630,9 @@ class LtScheme:
                 _head_tariff(current)
                 _absorb_tick(current, row, self._tf)
                 continue
-            if rm and not (rm.group(1).lower() == 'i'
+            if rm and not (_roman_of(rm)[0] == 'i'
                            and self._is_letter(row.x, letter, q, idx)):
-                marker = ('roman', rm.group(1).lower(), rm.group(2))
+                marker = ('roman', _roman_of(rm)[0], _roman_of(rm)[1])
             elif lm and (row.x <= column + LETTER_TOL
                          or lm.group(1).lower() == next_letter(letter)):
                 marker = ('letter', lm.group(1).lower(), lm.group(2))
@@ -581,7 +643,7 @@ class LtScheme:
                     letter, roman = mark, None
                     inner = ROMAN.match(rest)
                     if inner:
-                        roman, rest = inner.group(1).lower(), inner.group(2)
+                        roman, rest = _roman_of(inner)[0], _roman_of(inner)[1]
                     self._tf = None
                 else:
                     roman = mark
@@ -591,6 +653,28 @@ class LtScheme:
                 continue
             if current is not None:
                 if _absorb_tick(current, row, self._tf):
+                    continue
+                if _two_columns(row) or (current.columns and row.cells
+                                         and not _tariff_only(text)
+                                         and not NOTE.match(text)
+                                         and not Q_HEAD.match(text)):
+                    # The SEC sets this ask's answers in TWO COLUMNS and the
+                    # row banding hands both back interleaved: 2025 Higher
+                    # prints the AGREE menu beside the DISAGREE one and the
+                    # rows read "• AGREE. He gets used to running • DISAGREE.
+                    # He doesn't get the ball. He / faster, develops strategies
+                    # to / falls down a lot still…", with every sentence cut in
+                    # half. 2024 Higher Q1(h) does the same with single words —
+                    # "• Dingdavo • Lesdavo".
+                    #
+                    # Both are recovered the same way and neither is guessed
+                    # at: the printed CELLS are kept with their x, banked until
+                    # the ask closes, and then read down each column before
+                    # across. Every character on the card is still the SEC's,
+                    # in the order the SEC set it. Once a two-column row has
+                    # opened the ask, the rows under it are its continuations
+                    # and are banked too — they carry no bullet of their own.
+                    current.columns.append(row)
                     continue
                 _absorb(current, text)
         close()
@@ -616,7 +700,7 @@ class LtScheme:
             pm = PART_OLD.match(text)
             if pm:
                 close()
-                part, q, letter = pm.group(1).upper(), None, None
+                part, q, letter = part_token(pm), None, None
                 continue
             if part is None:
                 continue
@@ -659,7 +743,7 @@ class LtScheme:
                 # one printed row — see lt_paper, which reads the same page.
                 inner = LETTER.match(rest)
                 if inner:
-                    letter, rest = inner.group(1).lower(), inner.group(2)
+                    letter, rest = _roman_of(inner)[0], _roman_of(inner)[1]
                 current = Ask(part, q, letter, None, rest, row.page)
                 _punktai_head(current)
                 continue
@@ -668,6 +752,15 @@ class LtScheme:
                 letter = lm.group(1).lower()
                 current = Ask(part, q, letter, None, lm.group(2), row.page)
                 _punktai_head(current)
+                if current.total is None:
+                    # Only where the letter's own row carries NO price. Where
+                    # it does, the dash is inside the expression the ask asks
+                    # about and the answer is on the row below: 2021 sets
+                    # "b) aš pati – ir be ribų, ir be krantų (1 taškas)", all
+                    # of which is the quotation, and splitting it there made
+                    # the card ask about "aš pati" and offer the rest of the
+                    # SEC's own question as its answer.
+                    _split_dash(current)
                 continue
             if part == 'II' and self.era == 'old3':
                 # The commentary task: one ask, keyed by its part alone, whose
@@ -864,6 +957,15 @@ def _absorb(ask, text):
     if TARIFF.search(text) or BARE_TARIFF.search(text):
         _add_answer(ask, text)
         return
+    if ask.total is not None:
+        # The question ENDS where its price is printed. Everything after it
+        # belongs to the answer, bulleted or not — and 2022 does not bullet:
+        # it sets "(d) Ką reiškia žodis „įsižeidusi“? (2 dalis) 5 marks" and
+        # then "Įskaudinta" on the row below with nothing in front of it.
+        # Judged on its punctuation that word read as more of the question,
+        # and seventeen asks reported a price with no answer under it.
+        _add_answer(ask, text)
+        return
     # Still the question: the SEC wraps a reprinted cue over two or three rows
     # and closes it with "(2 dalis)".
     ask.cue = _norm(f'{ask.cue} {text}')
@@ -880,7 +982,7 @@ def _strip_tariffs(text):
     Ordinary reporting no tariff and their card question carrying "4 Marks" in
     its own words.
     """
-    out = PUNKTAI.sub('', TARIFF.sub('', SPLIT.sub('', text)))
+    out = PUNKTAI.sub('', TARIFF.sub('', SPLIT_BARE.sub('', SPLIT.sub('', text))))
     return _norm(BARE_TARIFF.sub('', out))
 
 
@@ -889,7 +991,28 @@ def _tariff_only(text):
     rest = _strip_tariffs(text)
     return bool(text) and not re.sub(r'[\s.,:;()x×-]+', '', rest) \
         and (PUNKTAI.search(text) or SPLIT.search(text)
-             or BARE_TARIFF.search(text) or TARIFF.search(text))
+             or SPLIT_BARE.search(text) or BARE_TARIFF.search(text)
+             or TARIFF.search(text))
+
+
+DASH_SPLIT = re.compile(r'^(.{1,80}?)\s+[–—]\s+(\S.+)$')
+
+
+def _split_dash(ask):
+    """The 2010 scheme prints the answer on the ask's own row, after a dash.
+
+    "a) vamzdis – funkcionali, tuščiavidurė struktūra, kuria gali kas nors
+    tekėti." — the expression, an en dash, and its gloss. Split at that dash,
+    which is the only one on the row: the expressions are single words or
+    quoted phrases and never contain one. Left joined, five asks a sitting
+    reported a price with no answer under it and their card question would
+    have carried its own answer.
+    """
+    m = DASH_SPLIT.match(ask.cue)
+    if not m or ask.answers:
+        return
+    ask.cue = _norm(m.group(1))
+    ask.answers.append({'text': _norm(m.group(2)), 'marks': None})
 
 
 def _absorb_old(ask, text):
@@ -956,6 +1079,44 @@ def _absorb_tick(ask, row, header):
     return True
 
 
+def _read_columns(ask):
+    """Read a banked two-column answer block DOWN each column, then across.
+
+    The boundary is measured, not assumed: the bullets the SEC printed fall
+    into two clusters of x, and the midpoint between the leftmost and the
+    rightmost of them separates a cell of the left column from a cell of the
+    right. A wrapped continuation carries no bullet and sits a few points in
+    from its own column's, which the same boundary still places correctly.
+    """
+    bullets = sorted(x for row in ask.columns for x, t in row.cells
+                     if BULLET.match(t))
+    if len(bullets) < 2:
+        ask.columns = []
+        return
+    boundary = (bullets[0] + bullets[-1]) / 2
+    left, right = [], []
+    for row in sorted(ask.columns, key=lambda r: (r.page, r.y)):
+        for x, text in sorted(row.cells, key=lambda c: c[0]):
+            (left if x < boundary else right).append(text)
+    for column in (left, right):
+        joined = _norm(' '.join(column))
+        if not joined:
+            continue
+        # Cut at the SEC's own bullets, which is where one marking point ends
+        # and the next begins inside a column.
+        for piece in re.split(r'\s*(?=[•●▪‐‑‒–—])', joined):
+            piece = piece.strip()
+            if piece:
+                _add_answer(ask, piece)
+    ask.columns = []
+
+
+def _two_columns(row):
+    """Does this printed row hold two BULLETED columns rather than one?"""
+    bullets = [x for x, t in row.cells if BULLET.match(t)]
+    return len(bullets) > 1 and max(bullets) - min(bullets) > 100
+
+
 def _head_tariff(ask):
     """The price the SEC prints on the reprinted question's own row.
 
@@ -965,7 +1126,8 @@ def _head_tariff(ask):
     own marks.
     """
     if TARIFF.search(ask.cue) or BARE_TARIFF.search(ask.cue) \
-            or SPLIT.search(ask.cue) or PUNKTAI.search(ask.cue):
+            or SPLIT.search(ask.cue) or SPLIT_BARE.search(ask.cue) \
+            or PUNKTAI.search(ask.cue):
         _read_tariff(ask, ask.cue)
         ask.cue = _strip_tariffs(ask.cue)
 
@@ -978,8 +1140,24 @@ def _punktai_head(ask):
 
 
 def _add_answer(ask, text):
-    opened = bool(BULLET.match(text)) or bool(
-        TARIFF.search(text) or BARE_TARIFF.search(text))
+    # Whether the SEC opened this row with a bullet, read BEFORE the bullet is
+    # taken off — a bulleted row is a new marking point however it reads.
+    #
+    # A row carrying its OWN tariff is usually a new marking point too, but not
+    # always: the SEC wraps a long answer and the marks land at the end of its
+    # SECOND row — "• Jose pirkėjas pats produktus pasveria, įsipila ir įsideda
+    # į savo atsineštus daugkartinio / naudojimo indus. 5 marks" — so the tail
+    # opened a marking point of its own reading "naudojimo indus.", the ask's
+    # answers stopped agreeing on their prices, and 2023 Higher Q2(d) reported
+    # no tariff at all. The tail is told from a real new point by two things
+    # the page states: it opens lower case, and the point above it has not been
+    # priced yet. A part-credit rung under a priced answer satisfies neither.
+    stripped = _norm(BULLET.sub('', _strip_tariffs(text)))
+    has_tariff = bool(TARIFF.search(text) or BARE_TARIFF.search(text))
+    opened = bool(BULLET.match(text))
+    if not opened and has_tariff:
+        opened = (_looks_new(stripped) or not ask.answers
+                  or ask.answers[-1]['marks'] is not None)
     marks = None
     tm = TARIFF.search(text)
     bm = BARE_TARIFF.search(text)
@@ -1026,10 +1204,10 @@ def _read_tariff(ask, text, directive_count=None):
         ask.notation = pm.group(0)
         return
     stated_total = None
-    bm = BARE_TARIFF.search(SPLIT.sub('', TARIFF.sub('', text)))
+    bm = BARE_TARIFF.search(SPLIT_BARE.sub('', SPLIT.sub('', TARIFF.sub('', text))))
     if bm:
         stated_total = int(bm.group(1))
-    sm = SPLIT.search(text)
+    sm = SPLIT.search(text) or SPLIT_BARE.search(text)
     tm = TARIFF.search(text)
     if sm:
         count, per = int(sm.group(1)), int(sm.group(2))
@@ -1081,6 +1259,8 @@ def _take_ref_marks(ask, answer):
 
 def _price(ask):
     ask.cue = _norm(ask.cue)
+    if ask.columns:
+        _read_columns(ask)
     if ask.per is not None:
         rungs = [a for a in ask.answers
                  if a['marks'] is not None and a['marks'] < ask.per]

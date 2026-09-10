@@ -81,7 +81,15 @@ HEAD = re.compile(
 # What may follow the question number: part tokens, separated by commas,
 # "and", or a range dash. "Q3(c)(i), (ii)" covers two romans; "Q6(a)–(e)"
 # covers five letters; "Q9(vii)–(viii)" two romans with no letter above them.
-PART_TOKEN = re.compile(r'\s*(?:\(\s*([A-Za-z]{1,4})\s*\)|([\u2013\u2014-])|(,|\band\b))')
+# A sub-marker may be a DIGIT. The Baltic languages number the rows of a
+# true/false table "1." to "5." where every science paper numbers them "(i)"
+# to "(v)", and the paper wins over the scheme on the address — so
+# "2026 OL Section A Q1(h)(2)" is a citation this grammar has to read. Before
+# it did, the parser stopped at the digit and the card claimed its whole
+# LETTER, which reported three printed asks covered by three cards that each
+# said they held all three.
+PART_TOKEN = re.compile(
+    r'\s*(?:\(\s*([A-Za-z]{1,4}|\d{1,2})\s*\)|([\u2013\u2014-])|(,|\band\b))')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 LETTERS = 'abcdefghijkl'
@@ -252,6 +260,11 @@ def _classify(tok):
     if len(t) == 1 and t in LETTERS and t not in 'ivx':
         return 'letter'
     if all(c in 'ivx' for c in t):
+        return 'roman'
+    # A digit sits at the same level of the address as a roman — it is the
+    # third token, under the letter — so it is classified there and matched
+    # against the census key the paper's own numbering produced.
+    if t.isdigit():
         return 'roman'
     return 'letter' if len(t) == 1 else None
 
