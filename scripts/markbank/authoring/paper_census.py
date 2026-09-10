@@ -202,8 +202,11 @@ FILE_BREAK = '\x00FILE-BREAK\x00'
 # Where a booklet stops setting questions and starts talking about itself.
 BACK_MATTER = re.compile(
     r'^(?:Answerbook for Section|Acknowledgements\b|Copyright notice\b)')
+# Through xv, because a list can run that long: the Japanese kanji sections at
+# Ordinary print thirteen items and answer any ten, and a list that stopped at
+# xii reported a gap in a run that has none.
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
-          'xi', 'xii']
+          'xi', 'xii', 'xiii', 'xiv', 'xv']
 
 
 def sittings(subject):
@@ -290,7 +293,12 @@ def continuity_flags(parts, texts):
         text = texts.get(k, '')
         # isalnum, not ASCII: the papers set variables in the Mathematical
         # Alphanumeric block, and stripping those flagged "Find |AD|." as empty.
-        if sum(c.isalnum() for c in text) < 6 and len(text) < 16:
+        # A CJK character is worth six Latin ones here, which is the whole floor:
+        # ONE kanji is a whole ask in the Japanese kanji sections — "Write the
+        # meaning of 今" — and counting characters flagged seventy of them empty.
+        weight = sum(6 if '\u3040' <= c <= '\u9fff' else 1
+                     for c in text if c.isalnum())
+        if weight < 6 and len(text) < 16:
             flags.append({'type': 'empty-leaf', 'where': key_label(k),
                           'detail': f'extracted text: {text!r}'})
     return flags
@@ -831,15 +839,24 @@ def ja_flags(P, S):
                     'where': f'Section {pk}',
                     'detail': f'the paper prints {pn} ask(s) here and the '
                               f'scheme prices {sn}'})
+    # The tariff checksum is read off the PART HEADS, not off the leaves.
+    # Almost every part of this paper is a CHOICE — "Write the meaning of any
+    # FIVE of the following Kanji", six items printed and five answered — so
+    # the leaves under a part are worth MORE than the part is, by design, and
+    # adding them up flags thirty-four questions that are priced correctly.
+    # A part head states what the part is worth whatever the candidate picks.
     for q, printed in sorted(P.question_marks.items()):
-        priced = sum(lf.marks or 0 for lf in S.leaves
-                     if lf.component in ('R', 'W') and lf.q == q)
-        if priced and priced != printed:
+        parts = [k for k in S.by_part() if k[0] in ('R', 'W') and k[1] == q]
+        heads = [S.part_marks.get(k) for k in parts]
+        if not parts or any(h is None for h in heads):
+            continue
+        if sum(heads) != printed:
             flags.append({
                 'type': 'tariff-checksum',
                 'where': f'Q{q}',
-                'detail': f'the scheme prices this question {priced} against '
-                          f'the {printed} the paper prints on its own head'})
+                'detail': f'the scheme heads this question\'s parts '
+                          f'{sum(heads)} against the {printed} the paper '
+                          f'prints on its own head'})
     return flags
 
 
