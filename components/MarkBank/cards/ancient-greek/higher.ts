@@ -307,9 +307,7 @@ export const CARDS: SecCard[] = [
     questionText: "Examine whether Jason is justified in abandoning Medea to marry another woman.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He argues best for children’s future", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Medea, a foreigner, now settled in Greece", marks: null },
-    { id: "r-3", kind: "point", verbatim: "He dismisses sacrifices she made for him.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "He argues best for children’s future; Medea, a foreigner, now settled in Greece; He dismisses sacrifices she made for him.", marks: null },
     ],
   } as SecCard,
   {
@@ -370,9 +368,8 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Athenian naval victory; storm; survivors not picked up; generals condemned to death; 6 executed.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Thirty Tyrants: Oligarchs under Critias took control after Pel.", marks: null },
     { id: "r-4", kind: "point", verbatim: "War; assembly abolished; reign of terror; exiles under Thrasybulus defeat The Thirty.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Pelopidas: Theban commander; colleague of Epaminondas", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Leuctra; hostage of Alexander of Pherae; freed, and in revenge attack died at Cynoscephalae 364 BC.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Granicus River: 334 BC; first victory in Asia; not facing Darius; course of battle; concern for own troops", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Pelopidas: Theban commander; colleague of Epaminondas; Leuctra; hostage of Alexander of Pherae; freed, and in revenge attack died at Cynoscephalae 364 BC.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Granicus River: 334 BC; first victory in Asia; not facing Darius; course of battle; concern for own troops", marks: null },
     ],
   } as SecCard,
   {
@@ -385,10 +382,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give an account of the career of Philip II of Macedon up to and including the battle of Chaeronea.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Boyhood in Thebes; phalanx; 359 BC ruler of Macedonia; expansion; gold mines", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Sacred War", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Amphictyonic Council", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Demosthenes; battle of Chaeronea.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Boyhood in Thebes; phalanx; 359 BC ruler of Macedonia; expansion; gold mines; Sacred War; Amphictyonic Council; Demosthenes; battle of Chaeronea.", marks: null },
     ],
   } as SecCard,
   {
@@ -401,13 +395,8 @@ export const CARDS: SecCard[] = [
     questionText: "Cleisthenes is the true founder of the Athenian democracy. Comment on this statement, making reference in your answer to the reforms that Cleisthenes made in the Athenian political system.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Broke up old order", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Demes", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Ten Tribes", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Boule", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Ecclesia", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Archons still from 2 wealthiest classes.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Candidates must comment on statement.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Broke up old order; Demes; Ten Tribes; Boule; Ecclesia; Archons still from 2 wealthiest classes.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Candidates must comment on statement.", marks: null },
     ],
   } as SecCard,
   {
@@ -420,8 +409,7 @@ export const CARDS: SecCard[] = [
     questionText: "In what ways was Sophocles significant in the development of Athenian drama? Briefly tell the plot of one of his plays.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "3rd actor", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Chorus up to 15; stage scenery; discontinued tetralogies; gods play smaller part; character of protagonist significant; heroes with lofty motives. + Plot of a play.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "3rd actor; Chorus up to 15; stage scenery; discontinued tetralogies; gods play smaller part; character of protagonist significant; heroes with lofty motives. + Plot of a play.", marks: null },
     ],
   } as SecCard,
   {
@@ -434,9 +422,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give a short account of the life and work of Thucydides, and assess his importance as an historian.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Life", marks: null },
-    { id: "r-2", kind: "point", verbatim: "History of Peloponnesian War; factual; scientific; causes of events; graphic descriptions.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Must assess importance as writer.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Life; History of Peloponnesian War; factual; scientific; causes of events; graphic descriptions.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Must assess importance as writer.", marks: null },
     ],
   } as SecCard,
   {
@@ -449,12 +436,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify the main differences between Greek sculptures from the Archaic period and those from the Classical period. Choose any sculpture from either period, describe it briefly and explain why you like it.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Subjects", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Pose", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Anatomy", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Expressions", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Females", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Clothing. + Description of piece and reasons for liking it.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Subjects; Pose; Anatomy; Expressions; Females; Clothing. + Description of piece and reasons for liking it.", marks: null },
     ],
   } as SecCard,
   {
@@ -780,10 +762,9 @@ export const CARDS: SecCard[] = [
     questionText: "Write a short note on any two of the following:- the Eleusinian Mysteries; Hermokrates; Demosthenes.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Eleusinian Mysteries: Rites of Demeter, held in Eleusis for initiates only", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Alkibiades accused of profane performances in private houses.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Hermokrates: Wanted Syracusans to attack defeated Athenians immediately; then sent message to Nikias not to retreat till next day.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Demosthenes: Established general; brought reinforcements; foiled by Nikias’ tardiness; executed.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Eleusinian Mysteries: Rites of Demeter, held in Eleusis for initiates only; Alkibiades accused of profane performances in private houses.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Hermokrates: Wanted Syracusans to attack defeated Athenians immediately; then sent message to Nikias not to retreat till next day.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Demosthenes: Established general; brought reinforcements; foiled by Nikias’ tardiness; executed.", marks: null },
     ],
   } as SecCard,
   {
@@ -797,8 +778,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the case of τοῦ δήμου and the mood of ἐξελάσειαν underlined in the passage above.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "τοῦ δήμου : Genitive Case after προεστάναι", marks: null },
-    { id: "r-2", kind: "point", verbatim: "ἐξελάσειαν : Optative in Conditional sentence in Indirect Speech .", marks: null },
+    { id: "r-1", kind: "point", verbatim: "τοῦ δήμου : Genitive Case after προεστάναι; ἐξελάσειαν : Optative in Conditional sentence in Indirect Speech .", marks: null },
     ],
   } as SecCard,
   {
@@ -901,11 +881,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the period of Spartan supremacy between 404 and 371 B.C. In your view, why did the Spartans ultimately fail?",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Agesilaus to Asia", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Lysander killed by Thebans; battle of Coronea", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Peace of Antalcidas", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Spartans take & lose Thebes; battle of Leuctra.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "No Reason for Failure – Minus 5.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Agesilaus to Asia; Lysander killed by Thebans; battle of Coronea; Peace of Antalcidas; Spartans take & lose Thebes; battle of Leuctra.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "No Reason for Failure – Minus 5.", marks: null },
     ],
   } as SecCard,
   {
@@ -918,11 +895,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main features of the Spartan system of government.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2 Kings", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Gerousia", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Apella", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Ephors", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Helots; military emphasis.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "2 Kings; Gerousia; Apella; Ephors; Helots; military emphasis.", marks: null },
     ],
   } as SecCard,
   {
@@ -980,9 +953,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"5 + (5 + 5)"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Black Figure.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Position of figures", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Movement", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Roundels framing scene.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Position of figures; Movement; Roundels framing scene.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1357,13 +1328,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain briefly the nature of Homeric poetry, making reference to Book 22 to support your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Gods", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Heroes", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Single combat", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Good story", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Poem with metrical structure", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Language differs from Classical Greek", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Stock epithets, passages.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Gods; Heroes; Single combat; Good story; Poem with metrical structure; Language differs from Classical Greek; Stock epithets, passages.", marks: null },
     ],
   } as SecCard,
   {
@@ -1406,11 +1371,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give an account of the final phase of the Peloponnesian War, after the failure of the Athenians’ Sicilian Expedition. In your opinion, why did the Athenians lose the war?",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Oligarchical Revolution", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Alkibiades", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Persian intervention", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Spartan fleet; naval battles.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Candidates must put forward reason for losing the war.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Oligarchical Revolution; Alkibiades; Persian intervention; Spartan fleet; naval battles.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Candidates must put forward reason for losing the war.", marks: null },
     ],
   } as SecCard,
   {
@@ -1471,22 +1433,9 @@ export const CARDS: SecCard[] = [
     questionText: "Write about the life and work of either Aeschylus or Aristophanes. Give a short account of any one of their plays.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aeschylus (525 – 456 BC): Noble family", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Fought in Persian Wars", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Visited Syracuse several times", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Died in Sicily", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Story re eagle. 90 plays – 7 extant; 2nd actor", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Developed characterisation", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Heroic themes.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Aristophanes (448 – 380 BC)", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Grew up on Aegina", marks: null },
-    { id: "r-10", kind: "point", verbatim: "Prosecuted by Cleon", marks: null },
-    { id: "r-11", kind: "point", verbatim: "Developed Old Comedy Opposed to war", marks: null },
-    { id: "r-12", kind: "point", verbatim: "Acquaintance of Plato.", marks: null },
-    { id: "r-13", kind: "point", verbatim: "Plays: - Contemporary satire", marks: null },
-    { id: "r-14", kind: "point", verbatim: "Coarse Witty", marks: null },
-    { id: "r-15", kind: "point", verbatim: "Fanciful settings Lyrical", marks: null },
-    { id: "r-16", kind: "point", verbatim: "Agon. + Account of one play.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Aeschylus (525 – 456 BC): Noble family; Fought in Persian Wars; Visited Syracuse several times; Died in Sicily; Story re eagle. 90 plays – 7 extant; 2nd actor; Developed characterisation; Heroic themes.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Aristophanes (448 – 380 BC); Grew up on Aegina; Prosecuted by Cleon; Developed Old Comedy; Opposed to war; Acquaintance of Plato.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Plays: - Contemporary satire; Coarse; Witty; Fanciful settings; Lyrical; Agon. + Account of one play.", marks: null },
     ],
   } as SecCard,
   {
@@ -1499,17 +1448,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give a short account of the life and work of Herodotus, and assess his importance as an historian.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Herodotus (480 – 425 BC)", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Born Halicarnassus", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Travelled widely", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Visited Athens", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Knew Pericles", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Died at Thurii in Italy.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Father of History", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Persian Wars", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Curiosity", marks: null },
-    { id: "r-10", kind: "point", verbatim: "Good story", marks: null },
-    { id: "r-11", kind: "point", verbatim: "Several parallel versions. + Assess importance as historian.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Herodotus (480 – 425 BC); Born Halicarnassus; Travelled widely; Visited Athens; Knew Pericles; Died at Thurii in Italy.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Father of History; Persian Wars; Curiosity; Good story; Several parallel versions. + Assess importance as historian.", marks: null },
     ],
   } as SecCard,
   {
@@ -1522,13 +1462,9 @@ export const CARDS: SecCard[] = [
     questionText: "Explain how to identify: (a) a Geometric Greek vase, (b) a Black Figure Greek vase, and (c) a Red Figure Greek vase. Which is your favourite style? Justify your choice, making reference to at least one example of this style.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 8 + 6"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Geometric Vase: Large urns", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Geometrical shapes", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Funeral scenes", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Horses.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Black Figure Vase: Figures in black on natural reddish background of clay.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Red Figure Vase: Background painted black", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Figures in natural colour of clay or other colours added.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Geometric Vase: Large urns; Geometrical shapes; Funeral scenes; Horses.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Black Figure Vase: Figures in black on natural reddish background of clay.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Red Figure Vase: Background painted black; Figures in natural colour of clay or other colours added.", marks: null },
     ],
   } as SecCard,
   {
@@ -1842,10 +1778,8 @@ export const CARDS: SecCard[] = [
     questionText: "Identify at least one virtue and one fault of Herodotus as an historian. Give a brief assessment of him, based on your reading of his work.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 3 + 3"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Contemporary", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Vivid. / Gullible", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Rambling.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Plus own assessment.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Contemporary; Vivid. / Gullible; Rambling.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Plus own assessment.", marks: null },
     ],
   } as SecCard,
   {
@@ -1903,9 +1837,7 @@ export const CARDS: SecCard[] = [
     questionText: "Assess how Medeia differs from a stereotypical Greek woman of Euripides’ day.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Assertive", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Eloquent", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Pro feminist rights.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Assertive ; Eloquent ; Pro feminist rights.", marks: null },
     ],
   } as SecCard,
   {
@@ -1960,11 +1892,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the career of Alcibiades, and assess whether his impact on Athens was more positive than negative.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Athenian noble", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Sicilian expedition", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Sparta; return to Athens", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Exile and death.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Must assess his influence.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Athenian noble; Sicilian expedition; Sparta; return to Athens; Exile and death.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Must assess his influence.", marks: null },
     ],
   } as SecCard,
   {
@@ -1993,13 +1922,8 @@ export const CARDS: SecCard[] = [
     questionText: "Trace the main events that occurred during the period of Theban supremacy in Greece from 371 to 362 BC. Why, in your view, did the Thebans fail to maintain their dominance?",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pelopidas & Epaminondas; phalanx", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Battle of Leuctra", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Invasions of Peloponnese", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Messenia", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Arcadians", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Battle of Mantinea.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Must explain failure to dominate", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Pelopidas & Epaminondas; phalanx; Battle of Leuctra; Invasions of Peloponnese; Messenia; Arcadians; Battle of Mantinea.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Must explain failure to dominate", marks: null },
     ],
   } as SecCard,
   {
@@ -2026,16 +1950,9 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the nature of Homeric poetry and explain why it is still so highly regarded today. Support your answer by referring to at least one of the Homeric epics.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Oral composition & recitation", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Stock epithets & phrases", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Language", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Gods", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Heroes", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Stories included", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Virtues.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "For today’s reader: Gripping tale", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Window on the past.", marks: null },
-    { id: "r-10", kind: "point", verbatim: "Must refer to one of epics.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Oral composition & recitation; Stock epithets & phrases; Language; Gods; Heroes; Stories included; Virtues.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "For today’s reader: Gripping tale; Window on the past.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Must refer to one of epics.", marks: null },
     ],
   } as SecCard,
   {
@@ -2048,13 +1965,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give an account of the life and work of Thucydides. Assess his importance as a writer of history.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Thucydides (c.460-400 BC)", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Athenian general", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Amphipolis; exile; possible recall.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "History of Peloponnesian War Contemporary", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Scientific analysis", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Motives in speeches", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Impartial.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Thucydides (c.460-400 BC); Athenian general; Amphipolis; exile; possible recall.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "History of Peloponnesian War Contemporary; Scientific analysis; Motives in speeches; Impartial.", marks: null },
     ],
   } as SecCard,
   {
@@ -2349,9 +2261,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify and briefly explain any two significant factors that caused the Athenian force against Sicily to end so disastrously.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Alcibiades’ recall", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Nikias’ indecision: Gylippus’ arrival", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Failures on retreat.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Alcibiades’ recall; Nikias’ indecision: Gylippus’ arrival; Failures on retreat.", marks: null },
     ],
   } as SecCard,
   {
@@ -2379,8 +2289,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe what happened to those Athenians who were taken prisoner by the Syracusans after the defeat of the Expedition.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Prisoners in mines; died from exposure", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Nikias and Demosthenes executed", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Prisoners in mines; died from exposure; Nikias and Demosthenes executed", marks: null },
     ],
   } as SecCard,
   {
@@ -2395,8 +2304,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Busts of Hermes in Athens.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Defaced before expedition: State ship sent to Sicily to recall Alkibiades", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Spartan commander who gained Syracusan victory.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Defaced before expedition: State ship sent to Sicily to recall Alkibiades; Spartan commander who gained Syracusan victory.", marks: null },
     ],
   } as SecCard,
   {
@@ -2425,9 +2333,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify any one flaw in Oedipus’ character that contributes to his downfall. Explain your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Quick temper", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Belief in own ability", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Unwilling to heed advice.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Quick temper; Belief in own ability; Unwilling to heed advice.", marks: null },
     ],
   } as SecCard,
   {
@@ -2471,9 +2377,7 @@ export const CARDS: SecCard[] = [
     questionText: "Write a short note on any two of the following:- Teiresias; Polybos; Kreon.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Respected prophet summoned; advice unacceptable", marks: null },
-    { id: "r-2", kind: "point", verbatim: "King of Corinth adoptive father to Oedipus", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Brother of Jocasta, accused by Oedipus, gracious to blind Oedipus.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Respected prophet summoned; advice unacceptable; King of Corinth adoptive father to Oedipus; Brother of Jocasta, accused by Oedipus, gracious to blind Oedipus.", marks: null },
     ],
   } as SecCard,
   {
@@ -2515,13 +2419,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"(8 + 7) + (8 + 7)"}, totalMarks: 30,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Plague: Caused by Spartan land policy; horrific deaths including Pericles.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Rule of Thirty: Oligarchs took control (404 BC)", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Reign of terror and civil war", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Democracy restored (403 BC).", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Pelopidas: Thracian commander; defeated Spartans", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Theban hegemony", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Killed on expedition against Alexander of Pherae.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "King’s Peace: Peace terms imposed on warring Spartans and Athenians giving Persia control of Ionia.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Rule of Thirty: Oligarchs took control (404 BC) ; Reign of terror and civil war; Democracy restored (403 BC).", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pelopidas: Thracian commander; defeated Spartans; Theban hegemony; Killed on expedition against Alexander of Pherae.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "King’s Peace: Peace terms imposed on warring Spartans and Athenians giving Persia control of Ionia.", marks: null },
     ],
   } as SecCard,
   {
@@ -2534,11 +2434,7 @@ export const CARDS: SecCard[] = [
     questionText: "Pick any three achievements of King Philip II of Macedon that strike you as noteworthy. Describe them, and explain their importance.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Development of Macedon", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Sacred War", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Amphyctionic council", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Expansion to south", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Battle 0f Chaeronea.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Development of Macedon; Sacred War; Amphyctionic council; Expansion to south; Battle 0f Chaeronea.", marks: null },
     ],
   } as SecCard,
   {
@@ -2551,12 +2447,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the Spartan system of government. In your opinion, what was its greatest strength and its greatest weakness?",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Kings", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Gerousia", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Apella", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Ephors", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Militaristic culture.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Must mention Strength and Weakness.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Kings; Gerousia; Apella; Ephors; Militaristic culture.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Must mention Strength and Weakness.", marks: null },
     ],
   } as SecCard,
   {
@@ -2570,10 +2462,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Athenian; knew Socrates; expedition of 10,000; fought with Spartans; exiled.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Anabasis", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Hellenica", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Memorabilia", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Cyropaedia, etc. Comment on significance.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Anabasis; Hellenica; Memorabilia; Cyropaedia, etc. Comment on significance.", marks: null },
     ],
   } as SecCard,
   {
@@ -2586,11 +2475,9 @@ export const CARDS: SecCard[] = [
     questionText: "Write a biographical note on Aeschylus. Assess his importance as a dramatist. Briefly tell the plot of any one of his plays.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Born at Eleusis", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Fought at Marathon, ? Salamis", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Visits to Sicily; died there.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "First of great tragedians; 2nd actor; developed plot; heroic characters; lyrical language.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Tell plot.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Born at Eleusis; Fought at Marathon, ? Salamis; Visits to Sicily; died there.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "First of great tragedians; 2nd actor; developed plot; heroic characters; lyrical language.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Tell plot.", marks: null },
     ],
   } as SecCard,
   {
@@ -2603,9 +2490,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which, in your view, would have been the best three buildings to visit in ancient Athens? In each case, give a brief description and justify your choice.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name three buildings", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Describe them", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Justify choice...", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Name three buildings; Describe them; Justify choice...", marks: null },
     ],
   } as SecCard,
   {
@@ -2620,8 +2505,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"5 + (5 + 5)"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Black Figure.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Hound Cerberus central and largest; details of Heracles and Eurystheus", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Borders above, below.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Hound Cerberus central and largest; details of Heracles and Eurystheus; Borders above, below.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -2645,11 +2529,7 @@ export const CARDS: SecCard[] = [
     questionText: "Photograph B shows the Athenian treasury at Delphi. Identify and give a brief comment on any three of its architectural features.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5 + 5"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Doric temple", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Pediment", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Frieze", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Capitals", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Columns..", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Doric temple; Pediment; Frieze; Capitals; Columns..", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -2924,9 +2804,7 @@ export const CARDS: SecCard[] = [
     questionText: "In what ways could the passage above be said to be typical of Socrates?",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Irony", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Paradox", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Reasoned argument.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Irony ; Paradox ; Reasoned argument.", marks: null },
     ],
   } as SecCard,
   {
@@ -3046,13 +2924,7 @@ export const CARDS: SecCard[] = [
     questionText: "Trace the course of events leading up to the outbreak of the Peloponnesian War in 431 BC and assess whether the war was inevitable or could have been averted.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rivalry at Persian Wars", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Growth of Athenian Empire", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Pericles’ policies", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Corcyra", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Potidaea", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Plataea", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Assess inevitability of War.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Rivalry at Persian Wars; Growth of Athenian Empire; Pericles’ policies; Corcyra; Potidaea ; Plataea; Assess inevitability of War.", marks: null },
     ],
   } as SecCard,
   {
@@ -3081,12 +2953,8 @@ export const CARDS: SecCard[] = [
     questionText: "After gaining victory in the Peloponnesian War in 404 BC, Sparta enjoyed more than three decades of dominance. Outline the main events in this period and explain why it came to an end.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Expansion into Asia under Agesilaus", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Opposition from Greek states", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Battles", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Peace of Antalcidas", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Theban hegemony.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Ended because too much expansion for small state and too many opponents.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Expansion into Asia under Agesilaus; Opposition from Greek states; Battles; Peace of Antalcidas; Theban hegemony.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Ended because too much expansion for small state and too many opponents.", marks: null },
     ],
   } as SecCard,
   {
@@ -3099,11 +2967,9 @@ export const CARDS: SecCard[] = [
     questionText: "Give an overview of the career of Peisistratus. What, in your opinion, is his importance in the history of Athens?",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Peisistratus: In power 3 times", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Developed trade, literature, buildings.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Importance: Rerspected Solon’s reforms", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Athens expanded.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Tyrants led to Democracy.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Peisistratus: In power 3 times; Developed trade, literature, buildings.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Importance: Rerspected Solon’s reforms; Athens expanded.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Tyrants led to Democracy.", marks: null },
     ],
   } as SecCard,
   {
@@ -3118,11 +2984,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Euripides: Born Salamis 480 BC, died Macedonia 406 BC.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Was not involved in public life. 3rd of great tragedians.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Wrote 80 – 90 plays Characters closer to ordinary life", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Female characters", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Prologues", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Passions.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Plot of play.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Wrote 80 – 90 plays Characters closer to ordinary life; Female characters; Prologues; Passions.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Plot of play.", marks: null },
     ],
   } as SecCard,
   {
@@ -3135,16 +2998,8 @@ export const CARDS: SecCard[] = [
     questionText: "Imagine you are the historian Thucydides. Write briefly about the life and work of your great predecessor Herodotus. In the light of your own work, mention at least one aspect of his writing that you find worthy of criticism.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Herodotus (480 – 425 BC)", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Born Halicarnassus", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Travelled widely", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Visited Athens", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Knew Pericles", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Died at Thurii in Italy.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Father of History", marks: null },
-    { id: "r-8", kind: "point", verbatim: "History leading to account of Persian Wars", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Storyteller", marks: null },
-    { id: "r-10", kind: "point", verbatim: "No critical analysis; belief in role of gods; too diverse a work.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Herodotus (480 – 425 BC); Born Halicarnassus; Travelled widely; Visited Athens; Knew Pericles; Died at Thurii in Italy.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Father of History; History leading to account of Persian Wars; Storyteller; No critical analysis; belief in role of gods; too diverse a work.", marks: null },
     ],
   } as SecCard,
   {
@@ -3157,10 +3012,9 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the evolution of Greek sculpture from the Archaic to the Classical period. Support your answer with reference to at least one example from each period.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pose", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Development of anatomy – Hair, Face, Muscles, Knees, Feet.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Female figures.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Lack of emotion.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Pose; Development of anatomy – Hair, Face, Muscles, Knees, Feet.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Female figures.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Lack of emotion.", marks: null },
     ],
   } as SecCard,
   {
@@ -3224,8 +3078,7 @@ export const CARDS: SecCard[] = [
     questionText: "What building is shown in Photograph C? Comment briefly on any two of its architectural features.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + (5 + 5)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Erechtheion: Caryatids", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Ionic columns; frieze; split levels.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Erechtheion: Caryatids; Ionic columns; frieze; split levels.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -3571,8 +3424,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Paidagogos: Conventional role; disagrees with nurse; concern for children.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Kreon: King of Corinth; protective of daughter; no match in debate with Medea.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Glauke: Doesn’t speak; her death told in Messenger’s speech", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Medea’s revenge.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Glauke: Doesn’t speak; her death told in Messenger’s speech; Medea’s revenge.", marks: null },
     ],
   } as SecCard,
   {
@@ -3599,8 +3451,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the role played by Nicias in the Peloponnesian War and assess his qualities as a leader.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nicias: Conservative politician and general", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Pylos, Peace of Nicias, Sicily Leader of men; over-cautious; superstitious.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Nicias: Conservative politician and general; Pylos, Peace of Nicias, Sicily Leader of men; over-cautious; superstitious.", marks: null },
     ],
   } as SecCard,
   {
@@ -3613,14 +3464,9 @@ export const CARDS: SecCard[] = [
     questionText: "Write notes on any two of the following:- Revolution at Athens in 411 B.C.; March of the 10,000; Jason of Pherae; Epaminondas.",
     tariffModel: {"kind":"orderedSplit","notation":"(8 + 7) + (8 + 7)"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "411 BC Revolution: Oligarchic coup d’ etat after Sicily; 400; fleet vote", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Antiphon. 10,000: Cyrus; recruitment", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Cunaxa", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Xenophon; retreat.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Jason of Pherae: Ruler in Thessaly; joined Theban Hegemony; saved Spartans; later assassinated.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Epaminondas: Leader of Theban Hegemony", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Messene", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Pherae; died Mantinea battle.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "411 BC Revolution: Oligarchic coup d’ etat after Sicily; 400; fleet vote; Antiphon. 10,000: Cyrus; recruitment; Cunaxa; Xenophon; retreat.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Jason of Pherae: Ruler in Thessaly; joined Theban Hegemony; saved Spartans; later assassinated.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Epaminondas: Leader of Theban Hegemony; Messene; Pherae; died Mantinea battle.", marks: null },
     ],
   } as SecCard,
   {
@@ -3646,8 +3492,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the reforms introduced at Athens by Solon and assess their significance.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Solon: Archon 594 BC; cancelled debts; 4 classes based on wealth", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Boule of 400; encouraged trade and immigration.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Solon: Archon 594 BC; cancelled debts; 4 classes based on wealth; Boule of 400; encouraged trade and immigration.", marks: null },
     ],
   } as SecCard,
   {
@@ -3675,9 +3520,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Plato (427 – 348 BC): Noble Athenian; associate of Socrates; visited Syracuse 3 times; founded Academy.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Continued the Socratic tradition", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Theory of Forms.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Link extended through pupil Aristotle.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Continued the Socratic tradition; Theory of Forms.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Link extended through pupil Aristotle.", marks: null },
     ],
   } as SecCard,
   {
@@ -3691,8 +3535,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Name temple.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Description of features", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Reason for choice", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Description of features; Reason for choice", marks: null },
     ],
   } as SecCard,
   {
@@ -3707,9 +3550,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"5 + (5 + 5)"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Red Figure.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Apollo and Artemis central", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Niobids fleeing towards handles", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Apollo naked, Artemis clothed.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Apollo and Artemis central; Niobids fleeing towards handles; Apollo naked, Artemis clothed.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -3805,10 +3646,9 @@ export const CARDS: SecCard[] = [
     section: "Q1", questionRef: "2017 HL Section B Q1(b)",
     stem: "Read the following passage and answer, in English, all the questions which follow:- (Despite his advanced years, the great Spartan general Agesilaus accepts an invitation from the Egyptian king.)",
     questionText: "What did the Egyptian king have, and what did he promise Agesilaus when he summoned him?",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Many footsoldiers, cavalry, much money", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Chief command.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Many footsoldiers, cavalry, much money ; Chief command.", marks: 7 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3830,10 +3670,9 @@ export const CARDS: SecCard[] = [
     section: "Q1", questionRef: "2017 HL Section B Q1(c)",
     stem: "Read the following passage and answer, in English, all the questions which follow:- (Despite his advanced years, the great Spartan general Agesilaus accepts an invitation from the Egyptian king.)",
     questionText: "Explain why the Egyptian king ends up in Sidon, and what the Egyptians do then.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He flees when all Egyptian soldiers revolt", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Engage in civil strife and choose 2 kings.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "He flees when all Egyptian soldiers revolt ; Engage in civil strife and choose 2 kings.", marks: 7 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3951,10 +3790,9 @@ export const CARDS: SecCard[] = [
     section: "Q1", questionRef: "2017 HL Section B Q1(h)",
     stem: "Read the following passage and answer, in English, all the questions which follow:- (Despite his advanced years, the great Spartan general Agesilaus accepts an invitation from the Egyptian king.)",
     questionText: "When Agesilaus sails off home, what two successes has he achieved?",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He has made a friend for Sparta", marks: null },
-    { id: "r-2", kind: "point", verbatim: "He has gained much money.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "He has made a friend for Sparta ; He has gained much money.", marks: 7 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4095,11 +3933,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Merope: Queen of Corinth; to avoid marrying her Oedipus fled Corinth and unwilling to go back there.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Delphic oracle: Widely believed by Greeks", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Pythia", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Oedipus consulted it.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Sphinx: Creature brought plague to Thebes", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Oedipus answered her riddle.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Delphic oracle: Widely believed by Greeks; Pythia; Oedipus consulted it.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Sphinx: Creature brought plague to Thebes; Oedipus answered her riddle.", marks: null },
     ],
   } as SecCard,
   {
@@ -4126,11 +3961,9 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the role played by Cleon in the Peloponnesian War and assess his significance.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Popular demagogue; opposed Nicias", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Pylos & Sphacteria", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Brasidas in Thrace; death leads to peace.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Significance: led people; opposed Sparta; delayed peace efforts.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Assess significance.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Popular demagogue; opposed Nicias; Pylos & Sphacteria; Brasidas in Thrace; death leads to peace.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Significance: led people; opposed Sparta; delayed peace efforts.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Assess significance.", marks: null },
     ],
   } as SecCard,
   {
@@ -4144,11 +3977,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"(4 + 7 + 4) + (4 + 7 + 4)"}, totalMarks: 30,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Arginusae: Athens vs Sparta naval battle; course; generals put on trial.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Aegospotamoi: Final naval battle of Pel War; course", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Athens now defenceless..", marks: null },
-    { id: "r-4", kind: "point", verbatim: "River Granicus: Alexander vs Persians; course; showed Macedonian tactics superior.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Gaugamela: Alexander vs Darius; course", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Persians now defeated force", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Aegospotamoi: Final naval battle of Pel War; course; Athens now defenceless..", marks: null },
+    { id: "r-3", kind: "point", verbatim: "River Granicus: Alexander vs Persians; course; showed Macedonian tactics superior.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Gaugamela: Alexander vs Darius; course; Persians now defeated force", marks: null },
     ],
   } as SecCard,
   {
@@ -4161,13 +3992,8 @@ export const CARDS: SecCard[] = [
     questionText: "Between 371 and 362 BC the dominant military power in Greece was Thebes. Give an account of the main events of this period and explain why in the end Thebes lost its supremacy over Greece.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Supremacy of Thebes: Battle of Leuctra", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Pelopidas and Epaminondas", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Invasions of Sparta", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Messenia", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Arcadian League", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Battle of Mantinea.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Reasons for loss of power", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Supremacy of Thebes: Battle of Leuctra; Pelopidas and Epaminondas; Invasions of Sparta; Messenia; Arcadian League; Battle of Mantinea.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Reasons for loss of power", marks: null },
     ],
   } as SecCard,
   {
@@ -4180,9 +4006,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the contribution made by Cleisthenes to the development of the Athenian democracy.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cleisthenes: Broke up old system based on birth; citizens enrolled in demes; metics and freedmen included; 10 tribes based on demes; each sent 50 members to Boule", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Prutaneis", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Ecclesia.; ostracism.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Cleisthenes: Broke up old system based on birth; citizens enrolled in demes; metics and freedmen included; 10 tribes based on demes; each sent 50 members to Boule; Prutaneis; Ecclesia.; ostracism.", marks: null },
     ],
   } as SecCard,
   {
@@ -4195,9 +4019,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give an account of the life and career of Aeschylus and outline the plot of any one of his plays.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aeschylus: 525 – 456", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Athenian dramatist; fought in Persian Wars; visited Sicily; died there, tortoise story.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Outline plot of any play.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Aeschylus: 525 – 456; Athenian dramatist; fought in Persian Wars; visited Sicily; died there, tortoise story.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Outline plot of any play.", marks: null },
     ],
   } as SecCard,
   {
@@ -4224,12 +4047,8 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main features of the Parthenon at Athens and explain why it is viewed as an architectural masterpiece.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Parthenon: Size; appearance", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Doric temple", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Ionic frieze", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Pediments", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Chryselephantine statue of Athene.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Valid comment on building.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Parthenon: Size; appearance; Doric temple; Ionic frieze; Pediments; Chryselephantine statue of Athene.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Valid comment on building.", marks: null },
     ],
   } as SecCard,
   {
@@ -4243,8 +4062,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the period to which the vase in Photograph A belongs and identify the features that are typical of this period.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + (5 + 5)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Geometric: Large funereal vases", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Geometric designs; funereal scenes often with horses.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Geometric: Large funereal vases; Geometric designs; funereal scenes often with horses.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -4268,8 +4086,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify the order of architecture to which the columns in Photograph B belong and write a short note on the characteristic features of such columns.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + (5 + 5)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ionic: Slim; fluted; with base", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Volutes at top.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Ionic: Slim; fluted; with base; Volutes at top.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -4365,8 +4182,7 @@ export const CARDS: SecCard[] = [
     questionText: "At what point in the Gymnopaediae festival did news of the disaster reach Sparta? What was happening in the theatre?",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 3"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The end of the day", marks: null },
-    { id: "r-2", kind: "point", verbatim: "A male dance was taking place.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "The end of the day; A male dance was taking place.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4657,10 +4473,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the main events in the Peloponnesian War after the end of the Sicilian Expedition. In your view, why did the Athenians lose?",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Oligarchic revolution", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Alcibiades", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Persian intervention; naval battles.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Reason for Athenian loss.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Oligarchic revolution; Alcibiades; Persian intervention; naval battles.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Reason for Athenian loss.", marks: null },
     ],
   } as SecCard,
   {
@@ -4689,12 +4503,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe briefly the career of Philip II of Macedon. What was his greatest achievement? Justify your answer.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Philip II of Macedon: 382 – 336 BC", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Development of Macedon", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Sacred War", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Amphyctionic council", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Expansion to south", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Battle of Chaeronea; assassination.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Philip II of Macedon: 382 – 336 BC; Development of Macedon; Sacred War; Amphyctionic council; Expansion to south; Battle of Chaeronea; assassination.", marks: null },
     ],
   } as SecCard,
   {
@@ -4707,12 +4516,8 @@ export const CARDS: SecCard[] = [
     questionText: "What were the main features of the ancient Spartan system of government? Explain briefly your own opinion of it.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Spartan Government: Kings", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Gerousia", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Apella", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Ephors", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Militaristic culture.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Give own opinion.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Spartan Government: Kings; Gerousia; Apella; Ephors; Militaristic culture.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Give own opinion.", marks: null },
     ],
   } as SecCard,
   {
@@ -4725,10 +4530,7 @@ export const CARDS: SecCard[] = [
     questionText: "Write briefly about the life and works of the dramatist who, in your view, made the greatest contribution to the development of drama in Athens during the fifth century BC. Justify your choice.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dramastist: Life", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Works", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Contribution", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Justify", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Dramastist: Life; Works; Contribution; Justify", marks: null },
     ],
   } as SecCard,
   {
@@ -4742,10 +4544,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Xenophon: Athenian; knew Socrates; expedition of 10,000; fought with Spartans; exiled.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Anabasis", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Hellenica", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Memorabilia", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Cyropaedia, etc.; contents; assessment.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Anabasis; Hellenica; Memorabilia; Cyropaedia, etc.; contents; assessment.", marks: null },
     ],
   } as SecCard,
   {
@@ -4758,13 +4557,8 @@ export const CARDS: SecCard[] = [
     questionText: "Making reference to a specific example, outline the main features of an ancient Greek theatre. Describe briefly what the experience of attending the theatre would have been like in ancient times.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Theatre: Name", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Open-air", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Seating", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Orchestra", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Stage", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Acoustics.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Experience of attending.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Theatre: Name; Open-air; Seating; Orchestra; Stage; Acoustics.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Experience of attending.", marks: null },
     ],
   } as SecCard,
   {
@@ -5048,8 +4842,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is your opinion of Xerxesʼ ability as a leader? Justify your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cruel to Pythios’ son; quick-tempered with Artabanos; whips sea", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Self- confident about self and Persian arm; doesn’t heed advice of others.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Cruel to Pythios’ son; quick-tempered with Artabanos; whips sea; Self- confident about self and Persian arm; doesn’t heed advice of others.", marks: null },
     ],
   } as SecCard,
   {
@@ -5164,10 +4957,9 @@ export const CARDS: SecCard[] = [
     questionText: "Write a short note on any two of the following:- Pelias; the Nurse; Aigeus.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pelias: Sent Jason for Fleece", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Medea arranged his death at daughters’ hands.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Nurse: Old lady; cares for children; aware at start of marital discord..", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Aigeus: King of Athens; bolt hole for Medea in return for help in begetting.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Pelias: Sent Jason for Fleece; Medea arranged his death at daughters’ hands.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Nurse: Old lady; cares for children; aware at start of marital discord..", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Aigeus: King of Athens; bolt hole for Medea in return for help in begetting.", marks: null },
     ],
   } as SecCard,
   {
@@ -5194,11 +4986,8 @@ export const CARDS: SecCard[] = [
     questionText: "Relate and assess the role played by Alcibiades in the Peloponnesian War.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aristocrat; polemic", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Sicily", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Sparta", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Persia; exile; successful but turncoat..", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Assess his part..", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Aristocrat; polemic; Sicily; Sparta; Persia; exile; successful but turncoat..", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Assess his part..", marks: null },
     ],
   } as SecCard,
   {
@@ -5227,9 +5016,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the period of Spartan dominance after the end of the Peloponnesian War and explain why, in your view, it did not endure.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Agesilaus in Asia Minor; return to hostile alliance", marks: null },
-    { id: "r-2", kind: "point", verbatim: "King’s Peace; failure in Boeotia; battle of Leuctra.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Give explanation: break with Persia; too few true Spartans; size of opposing forces.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Agesilaus in Asia Minor; return to hostile alliance; King’s Peace; failure in Boeotia; battle of Leuctra.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Give explanation: break with Persia; too few true Spartans; size of opposing forces.", marks: null },
     ],
   } as SecCard,
   {
@@ -5242,11 +5030,9 @@ export const CARDS: SecCard[] = [
     questionText: "Write a short note on any two of the following: Draco; the Athenian Ecclesia; the Athenian Boule; the ephors at Sparta.",
     tariffModel: {"kind":"orderedSplit","notation":"(8 + 7) + (8 + 7)"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Draco: Athenian lawgiver; harsh penalties Ecclesia: Male Athenian citizens", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Pnyx; elected generals; ostracism.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Boule: Prytannies after Cleisthenes", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Prepared business for Ecclesia.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Ephors: Spartans; 5 in number; elected annually; kept watch on kings", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Draco: Athenian lawgiver; harsh penalties Ecclesia: Male Athenian citizens; Pnyx; elected generals; ostracism.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Boule: Prytannies after Cleisthenes; Prepared business for Ecclesia.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Ephors: Spartans; 5 in number; elected annually; kept watch on kings", marks: null },
     ],
   } as SecCard,
   {
@@ -5259,15 +5045,9 @@ export const CARDS: SecCard[] = [
     questionText: "Aeschylus, Sophocles and Euripides made significant contributions to Greek drama. In the case of each author, outline one development he made to Greek tragedy and assess its importance.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aeschylus: introduced 1 st/2 nd actor", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Poetical choruses", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Divine control of behaviour.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Sophocles: 2 nd /3 rd actors", marks: null },
-    { id: "r-5", kind: "point", verbatim: "More dialogue", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Noble characters", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Human flaws.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Euripides: More realistic characters and plots", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Dialogue reflects Sophists’ teaching. .", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Aeschylus: introduced 1 st/2 nd actor; Poetical choruses; Divine control of behaviour.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Sophocles: 2 nd /3 rd actors; More dialogue; Noble characters; Human flaws.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Euripides: More realistic characters and plots; Dialogue reflects Sophists’ teaching. .", marks: null },
     ],
   } as SecCard,
   {
@@ -5280,12 +5060,9 @@ export const CARDS: SecCard[] = [
     questionText: "Write a biographical note on Thucydides and assess his significance as an historian.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Thucydides: noble Athenian", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Mines in Thrace", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Strategos", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Amphipolis; exiled.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "History of Peloponnesian War; assessment – rational approach; eyewitnesses; no divine role;.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Speeches; model for successors.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Thucydides: noble Athenian; Mines in Thrace; Strategos; Amphipolis; exiled.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "History of Peloponnesian War; assessment – rational approach; eyewitnesses; no divine role;.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Speeches; model for successors.", marks: null },
     ],
   } as SecCard,
   {
@@ -5298,10 +5075,7 @@ export const CARDS: SecCard[] = [
     questionText: "Imagine you are visiting the Athenian Acropolis in the Fourth Century BC. Describe the sights that impress you most.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Theatre: Describe at least two of buildings – Parthenon", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Erechtheum", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Athene Nike", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Theatre.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Theatre: Describe at least two of buildings – Parthenon; Erechtheum; Athene Nike; Theatre.", marks: null },
     ],
   } as SecCard,
   {
@@ -5316,8 +5090,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"5 + (5 + 5)"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Black Figure.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Balanced figures with background attendants", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Detail of game..", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Balanced figures with background attendants; Detail of game..", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -5647,8 +5420,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Comment with reference to portrayal.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Portrayal includes Spartan King lineage, customs, laws, political system.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Ethos and military strength: fight for freedom and by the law, fight to death even if outnumbered, they won’t retreat.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Notable individuals: Leonidas, Demaratos", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Xerxes’ opinion vs. Demaratos’.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Notable individuals: Leonidas, Demaratos; Xerxes’ opinion vs. Demaratos’.", marks: null },
     ],
   } as SecCard,
   {
@@ -5694,8 +5466,7 @@ export const CARDS: SecCard[] = [
     questionText: "How does Euripides portray Jason in this play? Support your answer with reference to what you have read of the play.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Opinion with references; villain vs hero; abandoning wife for own ambition; how he is described by Medea", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Jason’s speeches/ use of language; patriarchal society of Greece.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Opinion with references; villain vs hero; abandoning wife for own ambition; how he is described by Medea; Jason’s speeches/ use of language; patriarchal society of Greece.", marks: null },
     ],
   } as SecCard,
   {
@@ -5752,8 +5523,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Opinion with references.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Female status and identity before during and after marriage; patriarchal society; typical silence and vulnerability of women", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Medea is outspoken, independent, challenges typical dependency of women; male fears about powerful women.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Female status and identity before during and after marriage; patriarchal society; typical silence and vulnerability of women; Medea is outspoken, independent, challenges typical dependency of women; male fears about powerful women.", marks: null },
     ],
   } as SecCard,
   {
@@ -5768,9 +5538,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Nurse: old lady; cares for the children; dialogue with Paidagogous; aware of marital discord; loyalty to Medea but fears for children/what Medea will do.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Kreon: Jason’s new father in law", marks: null },
-    { id: "r-3", kind: "point", verbatim: "King of Corinth; banishes Medea; she manipulates him to be allowed stay one more day; he dies with his daughter.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Kreon’s daughter: Jason’s new wife; named Glauke; killed by Medea with poisoned clothes given as wedding gifts by Medea’s children; no speaking part; representative of typical woman in ancient Greece, not seen and not heard from.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Kreon: Jason’s new father in law; King of Corinth; banishes Medea; she manipulates him to be allowed stay one more day; he dies with his daughter.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Kreon’s daughter: Jason’s new wife; named Glauke; killed by Medea with poisoned clothes given as wedding gifts by Medea’s children; no speaking part; representative of typical woman in ancient Greece, not seen and not heard from.", marks: null },
     ],
   } as SecCard,
   {
@@ -5798,11 +5567,8 @@ export const CARDS: SecCard[] = [
     questionText: "Describe and assess the role played by Cleon in the Peloponnesian War.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cleon: Popular demagogue; opposed Nicias", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Mytilene; victory at Pylos & Sphacteria", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Brasidas in Thrace", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Battle of Amphipolis; death leads to peace.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Assess significance: led Athens after Pericles; opposed Sparta; delayed peace efforts; pro-war.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Cleon: Popular demagogue; opposed Nicias; Mytilene; victory at Pylos & Sphacteria; Brasidas in Thrace; Battle of Amphipolis; death leads to peace.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Assess significance: led Athens after Pericles; opposed Sparta; delayed peace efforts; pro-war.", marks: null },
     ],
   } as SecCard,
   {
@@ -5833,12 +5599,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline how, under the rule of Philip II, Macedon gained control over Greece. In your opinion, what was his greatest achievement?",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Philip II of Macedon: 382-336 BC", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Development of Macedon", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Sacred War", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Amphyctionic Council; expansion to south", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Battle of Chaeronea; assassination.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Opinion of greatest achievement.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Philip II of Macedon: 382-336 BC; Development of Macedon; Sacred War; Amphyctionic Council; expansion to south; Battle of Chaeronea; assassination.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Opinion of greatest achievement.", marks: null },
     ],
   } as SecCard,
   {
@@ -5869,9 +5631,8 @@ export const CARDS: SecCard[] = [
     questionText: "Write a biographical note on Aeschylus and comment on his contribution to Greek drama. Tell briefly the plot of any one of his plays.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aeschylus: 525-456 BC", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Athenian dramatist; fought in Persian Wars; visited Sicily; death and tortoise story; ‘Father of Tragedy’; elevated genre; second actor; dialogue and plot development; language; set design.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Outline plot of any play.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Aeschylus: 525-456 BC; Athenian dramatist; fought in Persian Wars; visited Sicily; death and tortoise story; ‘Father of Tragedy’; elevated genre; second actor; dialogue and plot development; language; set design.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Outline plot of any play.", marks: null },
     ],
   } as SecCard,
   {
@@ -5885,9 +5646,8 @@ export const CARDS: SecCard[] = [
     questionText: "Write a biographical note on Xenophon and assess his significance as a writer.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Xenophon: 430-350 BC", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Athenian historian and philosopher; knew Socrates; expedition of 10,000; fought with Spartans; exiled.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Works include Anabasis, Hellenica, Memorabilia, Cyropaedia, etc. Assess significance, such as, as a primary source or legacy as a writer.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Xenophon: 430-350 BC; Athenian historian and philosopher; knew Socrates; expedition of 10,000; fought with Spartans; exiled.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Works include Anabasis, Hellenica, Memorabilia, Cyropaedia, etc. Assess significance, such as, as a primary source or legacy as a writer.", marks: null },
     ],
   } as SecCard,
   {
@@ -5940,8 +5700,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify whether the temple in Photograph B belongs to the Doric or Ionic order of architecture. Describe the characteristics of this order.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + (5 + 5)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ionic order", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Ionic columns are more decorated and slender, base, capital with volutes (shaped like scrolls/ram’s horn); entablature (gable of the roof) consists of the horizontally divided architrave, continuous frieze, cornice, pediment.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Ionic order; Ionic columns are more decorated and slender, base, capital with volutes (shaped like scrolls/ram’s horn); entablature (gable of the roof) consists of the horizontally divided architrave, continuous frieze, cornice, pediment.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -6390,7 +6149,7 @@ export const CARDS: SecCard[] = [
     { id: "r-11", kind: "point", verbatim: "Try to calm Oedipus.", marks: null },
     { id: "r-12", kind: "point", verbatim: "Convince him not to banish Creon.", marks: null },
     { id: "r-13", kind: "point", verbatim: "Speak to the audience.", marks: null },
-    { id: "r-14", kind: "point", verbatim: "Kreon Brother of Iokaste.", marks: null },
+    { id: "r-14", kind: "point", verbatim: "Kreon; Brother of Iokaste.", marks: null },
     { id: "r-15", kind: "point", verbatim: "Tries to reason with Oedipus.", marks: null },
     { id: "r-16", kind: "point", verbatim: "Says he is not interested in power but accepts it in the end.", marks: null },
     ],
@@ -6426,8 +6185,7 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Amphipolis: Brasidas marched north, besieged Amphipolis.", marks: null },
     { id: "r-5", kind: "point", verbatim: "Thucydides blamed and exiled, Amphipolis taken.", marks: null },
     { id: "r-6", kind: "point", verbatim: "Cleon arrived and both leaders killed.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Significance", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Brasidas campaigned far from home; death of Brasidas and Cleon leads to peace.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Significance; Brasidas campaigned far from home; death of Brasidas and Cleon leads to peace.", marks: null },
     ],
   } as SecCard,
   {
@@ -6480,20 +6238,19 @@ export const CARDS: SecCard[] = [
     questionText: "Compare the main features of the Athenian and Spartan governments. Explain which system you prefer and why.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Athenian government: Boule drafted new laws to be debated in assembly", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Ten Tribes sent 50 members to the Boule.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Ecclesia or Assembly: adult males over 20.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Meetings of 6000 citizens on the Pnyx.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "After speeches and debates motions were passed by show of hands and simple majority; they elected generals and used ostracism.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Nine Archons from 2 wealthiest classes.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Religious, military and judicial functions.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Spartan Government: Dual Kingship with equal power.", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Generals in war.", marks: null },
-    { id: "r-10", kind: "point", verbatim: "One remained at home.", marks: null },
-    { id: "r-11", kind: "point", verbatim: "Apella: Popular assembly in Sparta; all citizens over 30, loudest vote won; voted on peace, war, treaties, foreign policy; 5 Ephors were elected by Apella.", marks: null },
-    { id: "r-12", kind: "point", verbatim: "Handled day to day matters of state and acted as judges.", marks: null },
-    { id: "r-13", kind: "point", verbatim: "Gerousia council of elders included the 2 Kings.", marks: null },
-    { id: "r-14", kind: "point", verbatim: "Tried Spartans for crimes even the Kings.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Athenian government: Boule drafted new laws to be debated in assembly; Ten Tribes sent 50 members to the Boule.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Ecclesia or Assembly: adult males over 20.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Meetings of 6000 citizens on the Pnyx.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "After speeches and debates motions were passed by show of hands and simple majority; they elected generals and used ostracism.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Nine Archons from 2 wealthiest classes.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Religious, military and judicial functions.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Spartan Government: Dual Kingship with equal power.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Generals in war.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "One remained at home.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Apella: Popular assembly in Sparta; all citizens over 30, loudest vote won; voted on peace, war, treaties, foreign policy; 5 Ephors were elected by Apella.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Handled day to day matters of state and acted as judges.", marks: null },
+    { id: "r-12", kind: "point", verbatim: "Gerousia council of elders included the 2 Kings.", marks: null },
+    { id: "r-13", kind: "point", verbatim: "Tried Spartans for crimes even the Kings.", marks: null },
     ],
   } as SecCard,
   {
@@ -6507,14 +6264,13 @@ export const CARDS: SecCard[] = [
     questionText: "Write a biographical note on Thucydides and assess his strengths and weaknesses as an historian.",
     tariffModel: {"kind":"orderedSplit","notation":"10 + 10 + 10"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Thucydides: 460-400 BC", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Athenian noble, wealthy, mines in Thrace.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Strategos at Amphipolis, exiled as a result of failure at Amphipolis.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Leisure to write Peloponnesian War.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Strengths; scientific approach, was part of the war, experienced many of the events, eyewitness, speeches outlining motives.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Weaknesses.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Pro Pericles and very anti the demagogues that succeeded him.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Incomplete.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Thucydides: 460-400 BC; Athenian noble, wealthy, mines in Thrace.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Strategos at Amphipolis, exiled as a result of failure at Amphipolis.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Leisure to write Peloponnesian War.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Strengths; scientific approach, was part of the war, experienced many of the events, eyewitness, speeches outlining motives.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Weaknesses.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Pro Pericles and very anti the demagogues that succeeded him.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Incomplete.", marks: null },
     ],
   } as SecCard,
   {
@@ -6546,9 +6302,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give a description of the architectural features of one temple on the Acropolis and explain the temple’s significance. You may use a diagram to support your answer.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 7 + 7"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "One Temple on Acropolis", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Parthenon, Athene Nike, Erectheion.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Architectural features to include: order, base, pillars, architrave, metopes, triglyphs, frieze, description of sculptures and significance of the temple.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "One Temple on Acropolis; Parthenon, Athene Nike, Erectheion.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Architectural features to include: order, base, pillars, architrave, metopes, triglyphs, frieze, description of sculptures and significance of the temple.", marks: null },
     ],
   } as SecCard,
   {
@@ -6905,9 +6660,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The gods interfere with the mortals’ fates/ ensure that fate takes its course.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Athena disguising herself as Deiphobos", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Zeus tipping the scales in favour of Akhilleus", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Apollo distracting Akhilleus.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Athena disguising herself as Deiphobos; Zeus tipping the scales in favour of Akhilleus; Apollo distracting Akhilleus.", marks: null },
     ],
   } as SecCard,
   {
@@ -6921,8 +6674,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline some of the features of Homeric poetry that are consistent with oral composition. You may refer to the passage above to support your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Epithets; similes", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Homeric formulae; ring composition; repetition; type scenes (descriptions of frequently recurring activities); parataxis (favours short, simple sentences).", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Epithets; similes; Homeric formulae; ring composition; repetition; type scenes (descriptions of frequently recurring activities); parataxis (favours short, simple sentences).", marks: null },
     ],
   } as SecCard,
   {
@@ -7012,7 +6764,7 @@ export const CARDS: SecCard[] = [
     { id: "r-10", kind: "point", verbatim: "Led people during the war; opposed Sparta; delayed peace efforts.", marks: null },
     { id: "r-11", kind: "point", verbatim: "Nikias: Athenian politician and general. Rival of Cleon.", marks: null },
     { id: "r-12", kind: "point", verbatim: "Principle aim was to gain peace with Sparta. Peace of Nikias in 421 BC. Sicilian Expedition.", marks: null },
-    { id: "r-13", kind: "point", verbatim: "Demosthenes: Sicilian expedition Pylos & Sphacteria. Archidamus II: King of Sparta, died 427 BC.", marks: null },
+    { id: "r-13", kind: "point", verbatim: "Demosthenes: Sicilian expedition; Pylos & Sphacteria. Archidamus II: King of Sparta, died 427 BC.", marks: null },
     { id: "r-14", kind: "point", verbatim: "Invaded Attica in 431 BC. Brasidas: Distinguished Spartan officer. Battles of Pylos, Megara, Amphipolis.", marks: null },
     { id: "r-15", kind: "point", verbatim: "Lysander: Spartan military and political leader. Battle of Aegospotami.", marks: null },
     { id: "r-16", kind: "point", verbatim: "Wanted to overthrow Athenian Empire and replace it with the Spartan hegemony.", marks: null },
@@ -7080,8 +6832,7 @@ export const CARDS: SecCard[] = [
     { id: "r-8", kind: "point", verbatim: "Meetings of 6000 citizens took place on the Pnyx.", marks: null },
     { id: "r-9", kind: "point", verbatim: "After speeches and debates motions were passed by a show of hands and simple majority won.", marks: null },
     { id: "r-10", kind: "point", verbatim: "They elected generals and used ostracism.", marks: null },
-    { id: "r-11", kind: "point", verbatim: "Athenian Boule: drafted new lays to be debated in the assembly/ecclesia", marks: null },
-    { id: "r-12", kind: "point", verbatim: "Ten Tribes of Athens sent 50 members each to the boule.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Athenian Boule: drafted new lays to be debated in the assembly/ecclesia; Ten Tribes of Athens sent 50 members each to the boule.", marks: null },
     ],
   } as SecCard,
   {
@@ -7171,8 +6922,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Photo A Doric Order: simple capital on the fluted columns; frieze; triglyphs; guttae; metopes.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Photo B Red Figure vase, comments may include composition, poses, framing, proportions, details of figures and the action portrayed.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Photo C Kore/Archaic period; free standing sculpture portraying a young woman; restrained features", marks: null },
-    { id: "r-4", kind: "point", verbatim: "“archaic smile”; draping of clothing; rigid posture; use of paint; position of figure.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Photo C Kore/Archaic period; free standing sculpture portraying a young woman; restrained features; “archaic smile”; draping of clothing; rigid posture; use of paint; position of figure.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-illustration",

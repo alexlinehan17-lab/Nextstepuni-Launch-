@@ -1205,33 +1205,26 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Χαρακτηριστικά όπως:",
+    "verbatim": "Χαρακτηριστικά όπως: ο ατομικισμός για την απόκτηση χρημάτων",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "ο ατομικισμός για την απόκτηση χρημάτων",
+    "verbatim": "ενδιαφέρον μόνο για την αυτοπροβολή και για την οικονομική και κοινωνική άνοδo",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "ενδιαφέρον μόνο για την αυτοπροβολή και για την οικονομική και κοινωνική άνοδo",
-    "marks": null,
-    "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
     "verbatim": "το κέρδος είναι ο μοναδικός στόχος στη ζωή των ανθρώπων",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
-    "id": "r-5",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "οι ηθικοί κανόνες παραβλέπονται",
     "marks": null,
@@ -1270,54 +1263,40 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Οι άνθρωποι:",
+    "verbatim": "Οι άνθρωποι: είναι βαθιά εγωιστές και ενδιαφέρονται για την ικανοποίηση των ποικίλων αναγκών τους",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "είναι βαθιά εγωιστές και ενδιαφέρονται για την ικανοποίηση των ποικίλων αναγκών τους",
+    "verbatim": "αδιαφορούν για τις ανάγκες του κοινωνικού συνόλου",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "αδιαφορούν για τις ανάγκες του κοινωνικού συνόλου",
+    "verbatim": "η ελεημοσύνη που δίνουν είναι μία μάλλον αυτόματη κίνηση,",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "η ελεημοσύνη που δίνουν είναι μία μάλλον αυτόματη κίνηση,",
+    "verbatim": "οι χορηγίες έχουν έντονο το χαρακτήρα της διαφήμισης και της προβολής Τα κράτη: εγωισμός και προσωπικό συμφέρον",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "οι χορηγίες έχουν έντονο το χαρακτήρα της διαφήμισης και της προβολής Τα κράτη:",
-    "marks": null,
-    "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "εγωισμός και προσωπικό συμφέρον",
-    "marks": null,
-    "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
     "verbatim": "παροχή κάποιας άμεσης βοήθειας για τρέχουσες και επείγουσες ανάγκες,",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
-    "id": "r-8",
+    "id": "r-6",
     "kind": "point",
     "verbatim": "πρόσκαιρες παροχές που μένουν μόνο σε υποσχέσεις και εξαγγελίες ανεκπλήρωτες για το μέλλον",
     "marks": null,
@@ -1356,40 +1335,33 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Για παράδειγμα:",
+    "verbatim": "Για παράδειγμα: Το πνεύμα της προσφοράς είναι ελεύθερο και ανεξάρτητο,",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Το πνεύμα της προσφοράς είναι ελεύθερο και ανεξάρτητο,",
+    "verbatim": "κάνει την εμφάνισή του και την όποια δωρεά του όπου νομίζει ότι πρέπει και χρειάζεται η συμβολή του",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "κάνει την εμφάνισή του και την όποια δωρεά του όπου νομίζει ότι πρέπει και χρειάζεται η συμβολή του",
+    "verbatim": "Τα έργα του συνήθως δε γίνονται αντιληπτά από τους πολλούς, παρά από τους ελάχιστους, γιατί δεν υπάρχει η πρόθεση της προβολής ή έστω της γνωστοποίησης",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Τα έργα του συνήθως δε γίνονται αντιληπτά από τους πολλούς, παρά από τους ελάχιστους, γιατί δεν υπάρχει η πρόθεση της προβολής ή έστω της γνωστοποίησης",
-    "marks": null,
-    "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
     "verbatim": "To πνεύμα της προσφοράς δεν λυγίζει από τις δυσκολίες",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
-    "id": "r-6",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "και τελικά νικά τις φυσικές και τεχνητές αντιξοότητες, για να απαλύνει και να μετριάσει τον πόνο και τη δυστυχία",
     "marks": null,
@@ -3401,47 +3373,40 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Για παράδειγμα: Δύο ενδεικτικοί προβληματισμοί σχετικά με την εκπαίδευση: Οι μαθητές του σχολείου στη Σύμη εξέφρασαν τους εξής προβληματισμούς:",
+    "verbatim": "Για παράδειγμα: Δύο ενδεικτικοί προβληματισμοί σχετικά με την εκπαίδευση: Οι μαθητές του σχολείου στη Σύμη εξέφρασαν τους εξής προβληματισμούς: Το σχολείο είναι πολύ θεωρητικό και δεν προσφέρει αρκετές πρακτικές γνώσεις που θα είναι χρήσιμες στην καθημερινή ζωή",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Το σχολείο είναι πολύ θεωρητικό και δεν προσφέρει αρκετές πρακτικές γνώσεις που θα είναι χρήσιμες στην καθημερινή ζωή",
+    "verbatim": "Για παράδειγμα, ανέφεραν ότι δεν μαθαίνουν βασικά πράγματα, όπως τι είναι οι φόροι, παρόλο που σε λίγο θα ψηφίζουν",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Για παράδειγμα, ανέφεραν ότι δεν μαθαίνουν βασικά πράγματα, όπως τι είναι οι φόροι, παρόλο που σε λίγο θα ψηφίζουν",
+    "verbatim": "Οι γνώμες των μαθητών δεν λαμβάνονται υπόψη από τους ενήλικες, οι οποίοι τις θεωρούν παιδιάστικες ή ανώριμες",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Οι γνώμες των μαθητών δεν λαμβάνονται υπόψη από τους ενήλικες, οι οποίοι τις θεωρούν παιδιάστικες ή ανώριμες",
+    "verbatim": "Συμμερίζομαι αυτούς τους προβληματισμούς γιατί πολλές φορές το σχολείο επικεντρώνεται στην αποστήθιση και όχι στην ουσιαστική μάθηση",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Συμμερίζομαι αυτούς τους προβληματισμούς γιατί πολλές φορές το σχολείο επικεντρώνεται στην αποστήθιση και όχι στην ουσιαστική μάθηση",
-    "marks": null,
-    "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
     "verbatim": "Θα έπρεπε να διδάσκονται περισσότερες πρακτικές δεξιότητες που αφορούν την καθημερινή ζωή",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
-    "id": "r-7",
+    "id": "r-6",
     "kind": "point",
     "verbatim": "Επίσης, η γνώμη των μαθητών είναι σημαντική, καθώς βιώνουν από πρώτο χέρι τα προβλήματα του εκπαιδευτικού συστήματος",
     "marks": null,
@@ -3479,33 +3444,26 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Για παράδειγμα: Ένα μάθημα γίνεται πιο ελκυστικό και αποδοτικό όταν:",
+    "verbatim": "Για παράδειγμα: Ένα μάθημα γίνεται πιο ελκυστικό και αποδοτικό όταν: Ο/η καθηγητής/καθηγήτρια χρησιμοποιεί διαδραστικές μεθόδους, όπως θεατρικές δραστηριότητες ή πειράματα, όπως ανέφεραν οι μαθητές της Σύμης",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Ο/η καθηγητής/καθηγήτρια χρησιμοποιεί διαδραστικές μεθόδους, όπως θεατρικές δραστηριότητες ή πειράματα, όπως ανέφεραν οι μαθητές της Σύμης",
+    "verbatim": "Υπάρχει πρακτική εφαρμογή της θεωρίας, για να μπορεί ο μαθητής να κατανοήσει πώς συνδέεται η γνώση με την πραγματική ζωή",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Υπάρχει πρακτική εφαρμογή της θεωρίας, για να μπορεί ο μαθητής να κατανοήσει πώς συνδέεται η γνώση με την πραγματική ζωή",
-    "marks": null,
-    "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
     "verbatim": "Χρησιμοποιούνται εποπτικά μέσα (π.χ. βίντεο, προτζέκτορες, tablets), αλλά χωρίς υπερβολές που θα μπορούσαν να αποσπάσουν την προσοχή",
     "marks": null,
     "contextNote": "The paper states that answers are to be given in Modern Greek: \"Οι απαντήσεις να δοθούν στα νέα Ελληνικά.\""
    },
    {
-    "id": "r-5",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "Γίνεται διάλογος στην τάξη και οι μαθητές συμμετέχουν ενεργά στη διαδικασία της μάθησης",
     "marks": null,

@@ -16,7 +16,7 @@
   },
   "ancient-greek": {
     "cards": 383,
-    "contentHash": "aee4350bd88d7aa5",
+    "contentHash": "a367719c91764025",
     "coveragePct": 100.0,
     "covered": 387,
     "excluded": 371,
@@ -376,7 +376,7 @@
   },
   "modern-greek": {
     "cards": 79,
-    "contentHash": "bbc14cb8ab591ea6",
+    "contentHash": "3086b6b9da802dad",
     "coveragePct": 100.0,
     "covered": 79,
     "excluded": 63,

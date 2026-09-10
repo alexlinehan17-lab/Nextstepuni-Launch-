@@ -471,10 +471,14 @@ def _rows(entry, marks, question=''):
               'marks': None} for i, p in enumerate(parts)])
 
 
-# Where the SEC breaks one stated answer into the next: a semicolon, a full
-# stop that ends a sentence, or the start of a new named note ("Iokaste:").
+# Where the SEC breaks one stated answer into the NEXT: a full stop that ends a
+# sentence, or the start of a new named note ("Iokaste:"). NOT a semicolon —
+# the SEC uses one to separate the items INSIDE one indicative point ("3rd
+# actor; Chorus up to 15; stage scenery; discontinued tetralogies"), and
+# cutting there gave cards whose rows were single bare nouns: "Pose", "Gods",
+# "Sacred War".
 SEGMENT = re.compile(
-    '(?<=[;.])\\s+(?=[A-Z\u0386-\u03ab\u1f00-\u1ffe\u201c"])'
+    '(?<=[.])\\s+(?=[A-Z\u0386-\u03ab\u1f00-\u1ffe\u201c"])'
     # …and before a roman the SEC uses to cut ONE answer in two: 2010 answers
     # Question 1 Section B(c) "(i) He had been a slave. (ii) He recognized the
     # language of the people." Left joined, an 8-mark ask split "4 + 4"
@@ -500,6 +504,7 @@ def _segments(text):
         parts.append(part)
     parts = [p.strip(' ;') for p in parts]
     parts = [p for p in parts if len(p) > 2]
+    parts = _join_leads(parts)
     if not parts:
         return [text]
     while len(parts) > MAX_ROWS:
@@ -509,6 +514,22 @@ def _segments(text):
                 key=lambda n: len(parts[n]) + len(parts[n + 1]))
         parts[i:i + 2] = [f'{parts[i]} {parts[i + 1]}']
     return parts
+
+
+def _join_leads(parts):
+    """A row that only introduces the next one is not a row of its own.
+
+    The SEC heads a list with a colon — "Για παράδειγμα:", "Οι άνθρωποι:" — and
+    a card whose first row is nothing but that lead-in reads as a marking point
+    the student has to produce.
+    """
+    out = []
+    for part in parts:
+        if out and out[-1].endswith(':'):
+            out[-1] = f'{out[-1]} {part}'
+            continue
+        out.append(part)
+    return out
 
 
 def _notes(entry, ask, marks, covers):

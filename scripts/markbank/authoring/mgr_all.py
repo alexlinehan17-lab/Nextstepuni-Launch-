@@ -72,7 +72,7 @@ MAX_ROWS = 16
 
 # Where the SEC breaks one stated answer into the next: a full stop or a Greek
 # ano teleia that ends a sentence, or a bullet it sets its points under.
-SEGMENT = re.compile('(?<=[.·;])\\s+(?=[A-ZΆ-Ϋ“"])|\\s*[•●]\\s*')
+SEGMENT = re.compile('(?<=[.·])\\s+(?=[A-ZΆ-Ϋ“"])|\\s*[•●]\\s*')
 
 GRID_EVIDENCE = (
     'the scheme answers this task with ONE indicative composition of its own '
@@ -227,6 +227,16 @@ def _card(P, ask, pair, year, level, language, cards, refuse, ref):
 def _segments(text):
     parts = [p.strip(' ·;.') for p in SEGMENT.split(text or '') if p]
     parts = [p for p in parts if len(p) > 3]
+    # A row that only introduces the next one — the SEC heads its bullet lists
+    # "Για παράδειγμα:" and "Οι άνθρωποι:" — is not a marking point a student
+    # produces, so it joins the row it introduces.
+    joined = []
+    for part in parts:
+        if joined and joined[-1].endswith(':'):
+            joined[-1] = f'{joined[-1]} {part}'
+            continue
+        joined.append(part)
+    parts = joined
     if not parts:
         return []
     while len(parts) > MAX_ROWS:
