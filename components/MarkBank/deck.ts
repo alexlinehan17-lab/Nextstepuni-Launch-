@@ -56,6 +56,8 @@ const geographyCurriculum = CURRICULUM.find(subject => subject.id === 'geography
 if (!geographyCurriculum) throw new Error('Canonical Geography curriculum is missing');
 const lcvpCurriculum = CURRICULUM.find(subject => subject.id === 'lcvp-link-modules');
 if (!lcvpCurriculum) throw new Error('Canonical LCVP Link Modules curriculum is missing');
+const frenchCurriculum = CURRICULUM.find(subject => subject.id === 'french');
+if (!frenchCurriculum) throw new Error('Canonical French curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -953,6 +955,29 @@ export const LCVP_STRANDS: StrandRef[] = lcvpCurriculum.strands.map((strand, mod
  * sittings, so an option card's heading is read off the page rather than
  * inferred. See curriculumRegistry.ts, specification "technology:current".
  */
+/**
+ * The Leaving Certificate French syllabus, adapted from the canonical
+ * curriculum rather than retyped, for the reason the English, Irish, Art,
+ * Geography and LCVP strands are: a second copy of a taxonomy drifts, and a
+ * card filed against a topic id the registry does not hold resolves into a
+ * specification that contains no such topic.
+ *
+ * Mark Bank cards reach only two of these strands — Reading Comprehension and
+ * the written-production tasks — because the rest of the examination is the
+ * oral, the aural and the essay, none of which the written scheme answers with
+ * liftable content. The whole taxonomy still ships: a student browsing French
+ * should see the shape of their course, not only the part that is carded.
+ */
+export const FRENCH_STRANDS: StrandRef[] = frenchCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 export const TECHNOLOGY_STRANDS: StrandRef[] = [
   {
     id: 'tech-core', label: 'Core', title: 'Core',
@@ -1056,6 +1081,7 @@ export const SUBJECTS = [
   { id: 'lcvp', title: 'Link Modules', strands: LCVP_STRANDS, spec: 'LCVP programme statement, examined to 2027' },
   { id: 'technology', title: 'Technology', strands: TECHNOLOGY_STRANDS, spec: 'Leaving Certificate Technology syllabus' },
   { id: 'history', title: 'History', strands: HISTORY_STRANDS, spec: 'Leaving Certificate History syllabus' },
+  { id: 'french', title: 'French', strands: FRENCH_STRANDS, spec: 'Leaving Certificate French syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1334,6 +1360,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   // dead decks in the picker; the map is Partial for exactly this.
   lcvp: {
     common: () => import('./cards/lcvp/common'),
+  },
+  french: {
+    higher: () => import('./cards/french/higher'),
+    ordinary: () => import('./cards/french/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),

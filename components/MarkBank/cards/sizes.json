@@ -73,5 +73,9 @@
  "history": {
   "higher": 80,
   "ordinary": 669
+ },
+ "french": {
+  "higher": 110,
+  "ordinary": 150
  }
 }

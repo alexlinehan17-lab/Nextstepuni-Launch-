@@ -605,7 +605,10 @@ def baseline_write(results):
             'excluded': r['excluded'], 'papers': papers_inventory(r['subject']),
         }
     with open(BASELINE, 'w', encoding='utf-8') as fh:
-        json.dump(data, fh, indent=1, sort_keys=True)
+        # Two spaces, which is how the committed baseline is formatted. At
+        # indent=1 a one-subject re-measure rewrote all 272 lines of the
+        # file and buried the entry that actually moved.
+        json.dump(data, fh, indent=2, sort_keys=True)
         fh.write('\n')
     print(f'baseline written: {BASELINE}')
 

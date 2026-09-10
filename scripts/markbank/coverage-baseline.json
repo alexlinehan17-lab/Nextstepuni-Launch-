@@ -1,287 +1,317 @@
 {
- "agricultural-science": {
-  "cards": 869,
-  "contentHash": "9e8d8bd3223f17cf",
-  "coveragePct": 93.6,
-  "covered": 888,
-  "excluded": 3,
-  "leaves": 952,
-  "open": 61,
-  "orphans": 2,
-  "papers": {
-   "count": 10,
-   "hash": "4f4a401f6defdc36"
+  "agricultural-science": {
+    "cards": 869,
+    "contentHash": "9e8d8bd3223f17cf",
+    "coveragePct": 93.6,
+    "covered": 888,
+    "excluded": 3,
+    "leaves": 952,
+    "open": 61,
+    "orphans": 2,
+    "papers": {
+      "count": 10,
+      "hash": "4f4a401f6defdc36"
+    },
+    "refsHash": "967a2d72ff0648b1"
   },
-  "refsHash": "967a2d72ff0648b1"
- },
- "art": {
-  "cards": 462,
-  "contentHash": "f84ca9f2c3b181ad",
-  "coveragePct": 100.0,
-  "covered": 462,
-  "excluded": 0,
-  "leaves": 462,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "289b620d2a5e9d7e"
+  "art": {
+    "cards": 462,
+    "contentHash": "f84ca9f2c3b181ad",
+    "coveragePct": 100.0,
+    "covered": 462,
+    "excluded": 0,
+    "leaves": 462,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "289b620d2a5e9d7e"
+    },
+    "refsHash": "7ba094263d991baa"
   },
-  "refsHash": "7ba094263d991baa"
- },
- "biology": {
-  "cards": 1359,
-  "contentHash": "c2a3c05984956b25",
-  "coveragePct": 93.8,
-  "covered": 1535,
-  "excluded": 0,
-  "leaves": 1636,
-  "open": 101,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "55091726a504e556"
+  "biology": {
+    "cards": 1359,
+    "contentHash": "c2a3c05984956b25",
+    "coveragePct": 93.8,
+    "covered": 1535,
+    "excluded": 0,
+    "leaves": 1636,
+    "open": 101,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "55091726a504e556"
+    },
+    "refsHash": "2b9fe1cf969dd64a"
   },
-  "refsHash": "2b9fe1cf969dd64a"
- },
- "business": {
-  "cards": 606,
-  "contentHash": "9e450e8c7727014e",
-  "coveragePct": 94.6,
-  "covered": 677,
-  "excluded": 0,
-  "leaves": 716,
-  "open": 39,
-  "orphans": 6,
-  "papers": {
-   "count": 20,
-   "hash": "eee231038910ba2c"
+  "business": {
+    "cards": 606,
+    "contentHash": "9e450e8c7727014e",
+    "coveragePct": 94.6,
+    "covered": 677,
+    "excluded": 0,
+    "leaves": 716,
+    "open": 39,
+    "orphans": 6,
+    "papers": {
+      "count": 20,
+      "hash": "eee231038910ba2c"
+    },
+    "refsHash": "4ad16765c129d1c4"
   },
-  "refsHash": "4ad16765c129d1c4"
- },
- "chemistry": {
-  "cards": 876,
-  "contentHash": "c25588239df13956",
-  "coveragePct": 92.5,
-  "covered": 1120,
-  "excluded": 0,
-  "leaves": 1211,
-  "open": 91,
-  "orphans": 0,
-  "papers": {
-   "count": 10,
-   "hash": "bf2ca1ce05646d41"
+  "chemistry": {
+    "cards": 876,
+    "contentHash": "c25588239df13956",
+    "coveragePct": 92.5,
+    "covered": 1120,
+    "excluded": 0,
+    "leaves": 1211,
+    "open": 91,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "bf2ca1ce05646d41"
+    },
+    "refsHash": "f83cdbf7ec4449ee"
   },
-  "refsHash": "f83cdbf7ec4449ee"
- },
- "computer-science": {
-  "cards": 336,
-  "contentHash": "a98238edb379ba3a",
-  "coveragePct": 82.2,
-  "covered": 398,
-  "excluded": 0,
-  "leaves": 484,
-  "open": 86,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "4eb8d8bb7c8ce50b"
+  "computer-science": {
+    "cards": 336,
+    "contentHash": "a98238edb379ba3a",
+    "coveragePct": 82.2,
+    "covered": 398,
+    "excluded": 0,
+    "leaves": 484,
+    "open": 86,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "4eb8d8bb7c8ce50b"
+    },
+    "refsHash": "ba197c3dcfdb616b"
   },
-  "refsHash": "ba197c3dcfdb616b"
- },
- "construction-studies": {
-  "cards": 505,
-  "contentHash": "3483e3ebcdef110e",
-  "coveragePct": 81.8,
-  "covered": 419,
-  "excluded": 0,
-  "leaves": 512,
-  "open": 93,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "63522e1ef5a10ab2"
+  "construction-studies": {
+    "cards": 505,
+    "contentHash": "3483e3ebcdef110e",
+    "coveragePct": 81.8,
+    "covered": 419,
+    "excluded": 0,
+    "leaves": 512,
+    "open": 93,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "63522e1ef5a10ab2"
+    },
+    "refsHash": "ab5312971b0e0217"
   },
-  "refsHash": "ab5312971b0e0217"
- },
- "economics": {
-  "cards": 697,
-  "contentHash": "e8c99dae50bd0cba",
-  "coveragePct": 100.0,
-  "covered": 651,
-  "excluded": 7,
-  "leaves": 658,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 10,
-   "hash": "d356131d0d2d0e2e"
+  "economics": {
+    "cards": 697,
+    "contentHash": "e8c99dae50bd0cba",
+    "coveragePct": 100.0,
+    "covered": 651,
+    "excluded": 7,
+    "leaves": 658,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "d356131d0d2d0e2e"
+    },
+    "refsHash": "ffceb66a16576771"
   },
-  "refsHash": "ffceb66a16576771"
- },
- "engineering": {
-  "cards": 466,
-  "contentHash": "2e63624d137d2218",
-  "coveragePct": 72.6,
-  "covered": 585,
-  "excluded": 0,
-  "leaves": 806,
-  "open": 221,
-  "orphans": 0,
-  "papers": {
-   "count": 10,
-   "hash": "d6f8e4ccadef7bbf"
+  "engineering": {
+    "cards": 466,
+    "contentHash": "2e63624d137d2218",
+    "coveragePct": 72.6,
+    "covered": 585,
+    "excluded": 0,
+    "leaves": 806,
+    "open": 221,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "d6f8e4ccadef7bbf"
+    },
+    "refsHash": "99445e531f46b857"
   },
-  "refsHash": "99445e531f46b857"
- },
- "english": {
-  "cards": 650,
-  "contentHash": "45a6d15c88c98b41",
-  "coveragePct": 100.0,
-  "covered": 660,
-  "excluded": 0,
-  "leaves": 660,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "5a9e0ab3f863aa4f"
+  "english": {
+    "cards": 650,
+    "contentHash": "45a6d15c88c98b41",
+    "coveragePct": 100.0,
+    "covered": 660,
+    "excluded": 0,
+    "leaves": 660,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "5a9e0ab3f863aa4f"
+    },
+    "refsHash": "a4cecb0559e11239",
+    "french": {
+      "cards": 260,
+      "contentHash": "a89444528300f8db",
+      "coveragePct": 100.0,
+      "covered": 275,
+      "excluded": 276,
+      "leaves": 551,
+      "open": 0,
+      "orphans": 0,
+      "papers": {
+        "count": 20,
+        "hash": "197572582035a3af"
+      },
+      "refsHash": "eb02f6789c4f99c4"
+    },
+    "geography": {
+      "cards": 754,
+      "contentHash": "845a31914f2d9854",
+      "coveragePct": 100.0,
+      "covered": 563,
+      "excluded": 85,
+      "leaves": 648,
+      "open": 0,
+      "orphans": 0,
+      "papers": {
+        "count": 24,
+        "hash": "7d40addba29edb98"
+      },
+      "refsHash": "a4cecb0559e11239"
+    }
   },
-  "refsHash": "9d6d1eb35ccbe04d"
- },
- "geography": {
-  "cards": 754,
-  "contentHash": "845a31914f2d9854",
-  "coveragePct": 100.0,
-  "covered": 563,
-  "excluded": 85,
-  "leaves": 648,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 24,
-   "hash": "7d40addba29edb98"
+  "geography": {
+    "cards": 754,
+    "contentHash": "845a31914f2d9854",
+    "coveragePct": 100.0,
+    "covered": 563,
+    "excluded": 85,
+    "leaves": 648,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 24,
+      "hash": "7d40addba29edb98"
+    },
+    "refsHash": "a4cecb0559e11239"
   },
-  "refsHash": "a4cecb0559e11239"
- },
- "history": {
-  "cards": 749,
-  "contentHash": "909b88426ea7203d",
-  "coveragePct": 100.0,
-  "covered": 749,
-  "excluded": 681,
-  "leaves": 1430,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "cb5c8677ec1bca17"
+  "history": {
+    "cards": 749,
+    "contentHash": "909b88426ea7203d",
+    "coveragePct": 100.0,
+    "covered": 749,
+    "excluded": 681,
+    "leaves": 1430,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "cb5c8677ec1bca17"
+    },
+    "refsHash": "eab7907b0ead2f31"
   },
-  "refsHash": "eab7907b0ead2f31"
- },
- "home-economics": {
-  "cards": 549,
-  "contentHash": "dd6afae3967936b8",
-  "coveragePct": 95.3,
-  "covered": 545,
-  "excluded": 0,
-  "leaves": 572,
-  "open": 27,
-  "orphans": 1,
-  "papers": {
-   "count": 20,
-   "hash": "6b57d840bf971638"
+  "home-economics": {
+    "cards": 549,
+    "contentHash": "dd6afae3967936b8",
+    "coveragePct": 95.3,
+    "covered": 545,
+    "excluded": 0,
+    "leaves": 572,
+    "open": 27,
+    "orphans": 1,
+    "papers": {
+      "count": 20,
+      "hash": "6b57d840bf971638"
+    },
+    "refsHash": "d68011c4e1a644b2"
   },
-  "refsHash": "d68011c4e1a644b2"
- },
- "irish": {
-  "cards": 400,
-  "contentHash": "0f7f4953e350117f",
-  "coveragePct": 100.0,
-  "covered": 400,
-  "excluded": 0,
-  "leaves": 400,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 30,
-   "hash": "9d84f99397f0fb11"
+  "irish": {
+    "cards": 400,
+    "contentHash": "0f7f4953e350117f",
+    "coveragePct": 100.0,
+    "covered": 400,
+    "excluded": 0,
+    "leaves": 400,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 30,
+      "hash": "9d84f99397f0fb11"
+    },
+    "refsHash": "02b0f7ad91f8e59d"
   },
-  "refsHash": "02b0f7ad91f8e59d"
- },
- "lcvp": {
-  "cards": 314,
-  "contentHash": "fefb46868385d474",
-  "coveragePct": 91.2,
-  "covered": 320,
-  "excluded": 13,
-  "leaves": 365,
-  "open": 32,
-  "orphans": 0,
-  "papers": {
-   "count": 8,
-   "hash": "1c8389e1e899dda9"
+  "lcvp": {
+    "cards": 314,
+    "contentHash": "fefb46868385d474",
+    "coveragePct": 91.2,
+    "covered": 320,
+    "excluded": 13,
+    "leaves": 365,
+    "open": 32,
+    "orphans": 0,
+    "papers": {
+      "count": 8,
+      "hash": "1c8389e1e899dda9"
+    },
+    "refsHash": "478f16348f57b546"
   },
-  "refsHash": "478f16348f57b546"
- },
- "maths": {
-  "cards": 833,
-  "contentHash": "b03ee0576c972395",
-  "coveragePct": 95.3,
-  "covered": 943,
-  "excluded": 0,
-  "leaves": 989,
-  "open": 46,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "dd8222a2e1b8d8d6"
+  "maths": {
+    "cards": 833,
+    "contentHash": "b03ee0576c972395",
+    "coveragePct": 95.3,
+    "covered": 943,
+    "excluded": 0,
+    "leaves": 989,
+    "open": 46,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "dd8222a2e1b8d8d6"
+    },
+    "refsHash": "8374d11c7ed5963f"
   },
-  "refsHash": "8374d11c7ed5963f"
- },
- "physics": {
-  "cards": 1133,
-  "contentHash": "b8febbbaaa07244b",
-  "coveragePct": 95.2,
-  "covered": 1119,
-  "excluded": 46,
-  "leaves": 1224,
-  "open": 59,
-  "orphans": 6,
-  "papers": {
-   "count": 10,
-   "hash": "aedd9969b3ce025e"
+  "physics": {
+    "cards": 1133,
+    "contentHash": "b8febbbaaa07244b",
+    "coveragePct": 95.2,
+    "covered": 1119,
+    "excluded": 46,
+    "leaves": 1224,
+    "open": 59,
+    "orphans": 6,
+    "papers": {
+      "count": 10,
+      "hash": "aedd9969b3ce025e"
+    },
+    "refsHash": "83bd7bc978ad6302"
   },
-  "refsHash": "83bd7bc978ad6302"
- },
- "religious-education": {
-  "cards": 288,
-  "contentHash": "bfd99a50f3bc5853",
-  "coveragePct": 100.0,
-  "covered": 288,
-  "excluded": 0,
-  "leaves": 288,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 10,
-   "hash": "df029832e957a46e"
+  "religious-education": {
+    "cards": 288,
+    "contentHash": "bfd99a50f3bc5853",
+    "coveragePct": 100.0,
+    "covered": 288,
+    "excluded": 0,
+    "leaves": 288,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "df029832e957a46e"
+    },
+    "refsHash": "608205b9e7e5d4b8"
   },
-  "refsHash": "608205b9e7e5d4b8"
- },
- "technology": {
-  "cards": 716,
-  "contentHash": "4d55bc81fece955d",
-  "coveragePct": 92.1,
-  "covered": 721,
-  "excluded": 46,
-  "leaves": 833,
-  "open": 66,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "4ca9c323b2270a38"
-  },
-  "refsHash": "54274e7e363d8dc6"
- }
+  "technology": {
+    "cards": 716,
+    "contentHash": "4d55bc81fece955d",
+    "coveragePct": 92.1,
+    "covered": 721,
+    "excluded": 46,
+    "leaves": 833,
+    "open": 66,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "4ca9c323b2270a38"
+    },
+    "refsHash": "54274e7e363d8dc6"
+  }
 }

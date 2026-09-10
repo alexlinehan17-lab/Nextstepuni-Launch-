@@ -185,6 +185,17 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/lcvp',
     blocked: new Set(),
   },
+  french: {
+    title: 'French',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-french-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate French syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the passage it quotes,\n * bound to the pages of the question paper it was printed on.',
+    figureDir: 'public/exam-figures/french',
+    blocked: new Set(),
+  },
   'agricultural-science': {
     title: 'Agricultural Science',
     /* The NCCA specification published 2019 and first examined in 2021 — dated
@@ -262,7 +273,11 @@ function schemeFor(subjectId, card) {
  * smaller version of the right card, it is the wrong one, and it went out
  * looking poor because nothing was checking. Greek is genuinely Greek here,
  * and the two combining marks carry p-hat and z-bar. */
-const REAL = /[\u0370-\u03FF\u0302\u0305\u02B0-\u02FF]/;
+/* Greek is genuinely Greek, the two combining marks carry p-hat and z-bar,
+ * and U+0152/U+0153 are the French OE ligature -- a letter of the language,
+ * printed in 'sœur', 'cœur', 'nœud'. Refusing it dropped a correct French
+ * card for containing a French letter. */
+const REAL = /[\u0152\u0153\u0370-\u03FF\u0302\u0305\u02B0-\u02FF]/;
 const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 /** Undo a subset font's broken ToUnicode map, using the table derived from the
  * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied

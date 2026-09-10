@@ -118,6 +118,16 @@ SUBJECTS = {
     # reads ('2 Topic 1 A', 1, None, None) -> "Section 2 Topic 1 A Q1".
     'history': {'mode': 'sections', 'walker': 'history',
                 'components': {'lm': 'Later Modern', 'em': 'Early Modern'}},
+    # French sits TWO booklets at one sitting — the written paper and a
+    # separate Listening Comprehension Test with its own SEC file id — and
+    # numbers both from 1 inside every section, so the section carries the
+    # address. Its section token is compound where the paper's own is not
+    # enough to address an ask: Section A prints two reading comprehensions at
+    # Higher and four at Ordinary, each numbering its questions from 1, so
+    # "A1" is Section A's first comprehension and "LC" the listening test's
+    # Section C. Its own walker, because both booklets are printed
+    # bilingually in columns and the generic reader has no notion of a column.
+    'french': {'mode': 'sections', 'walker': 'lang'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -622,6 +632,128 @@ def census_sections(subject, year, level):
     return set(parts), texts, P.files
 
 
+def census_lang(subject, year, level):
+    """French: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER, and in this subject the paper needs help
+    saying which of its printed markers is a question. A reading comprehension
+    sets its passage in NUMBERED PARAGRAPHS — "1. Billie vit en banlieue
+    parisienne…" — at the same margin and in the same shape as "1. (a) Comment
+    Billie décrit-elle sa ville…". No feature of the layout separates them.
+
+    So the reading asks are the printed blocks that the scheme's own reprinted
+    question locates (fr_paper.find, which is align.py's rule), and the census
+    then checks the paper INDEPENDENTLY in two ways:
+
+      * every reading comprehension's item tariffs must add up to the total
+        that comprehension prints on its own head. If the paper printed an ask
+        the scheme did not price, that sum would be short — and it is short in
+        exactly five comprehensions, each of which fr_scheme.py pins on one
+        named ask (see its _checksum);
+      * every printed marker block the scheme did NOT claim is scanned, and one
+        that reads like a question — it ends in a question mark, or cites the
+        passage section the answer is in — is FLAGGED. A passage paragraph
+        never does either.
+
+    Section B and the listening booklet need no such help: both print their own
+    heads, and both are read from the paper alone.
+    """
+    import re as _re
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from fr_paper import FrPaper                              # noqa: E402
+    from fr_scheme import FrScheme                            # noqa: E402
+
+    P = FrPaper(year, level, subject)
+    S = FrScheme(year, level, subject)
+    texts = {}
+    claimed = set()
+    for ask in S.reading():
+        hit = P.find(ask.rc, ask.item, None if ask.letter_to else ask.letter, ask.cue)
+        if hit is None:
+            continue
+        text = hit[0]
+        section = f'A{ask.rc}'
+        if ask.letter_to:
+            # One head, four printed answer lines: "1.(a - d)" prices a
+            # matching task whose parts the paper prints as (a) to (d), each
+            # with its own answer space, so each is a leaf.
+            for letter in _letters(ask.letter, ask.letter_to):
+                part = P.candidates(ask.rc, ask.item, letter)
+                body = max((b.text for b in part), key=len, default='')
+                texts[(section, ask.item, letter, None)] = f'{text} ({letter}) {body}'.strip()
+                claimed.add((ask.rc, ask.item, letter))
+        else:
+            texts[(section, ask.item, ask.letter, None)] = text
+            claimed.add((ask.rc, ask.item, ask.letter))
+
+    for q, letter, text, _page in P.section_b_asks():
+        texts[('B', q, letter, None)] = text
+
+    aural = P.aural_asks()
+    lettered = {(sec, item) for sec, item, letter, _t in aural if letter}
+    for sec, item, letter, text in aural:
+        if letter is None and (sec, item) in lettered:
+            continue                     # a head whose lettered parts are the asks
+        texts[(f'L{sec}', item, letter, None)] = text
+
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S, claimed
+
+
+def _letters(first, last):
+    lo, hi = LETTERS.index(first), LETTERS.index(last)
+    return list(LETTERS[lo:hi + 1])
+
+
+LETTERS = 'abcdefgh'
+# A printed block that reads like a question rather than a passage paragraph:
+# it ends in a question mark, or it names the passage section the answer is in,
+# which is what every French reading ask does and no paragraph of the passage
+# ever does.
+LOOKS_LIKE_ASK = re.compile(r'\?\s*$|\((?:Section|Roinn)\s*\d\)\s*$', re.I)
+
+
+def lang_flags(P, S, claimed):
+    """What the PAPER prints that the scheme never priced. See census_lang."""
+    flags = []
+    for block in P.blocks:
+        key = (block.rc, block.item, block.letter)
+        # Short AND question-shaped. A paragraph of the passage can end in a
+        # rhetorical question — 2025 Higher's fifth runs to four hundred
+        # characters and closes with one — and flagging it as a lost ask would
+        # bury the real signal under one false alarm per paper.
+        if (key in claimed or len(block.text) > 300
+                or not LOOKS_LIKE_ASK.search(block.text)):
+            continue
+        flags.append({
+            'type': 'unpriced-ask',
+            'where': f'Q.{block.rc} {block.item}{f"({block.letter})" if block.letter else ""}',
+            'detail': f'the paper prints {block.text[:70]!r}, which no scheme ask claims'})
+    for ask in S.reading():
+        if ask.fault:
+            flags.append({'type': 'tariff-disagreement',
+                          'where': S.ref(ask), 'detail': ask.fault})
+    return flags
+
+
+def lang_cover_marks(paths):
+    """The totals the two booklets print on their own covers, added.
+
+    French has no per-question tariff on the paper at all — the marks live in
+    the scheme — so there is nothing to sum question by question. The covers
+    state what the sitting is worth, and a year that disagrees with its
+    siblings has lost a booklet.
+    """
+    import pymupdf
+    total = 0
+    for path in paths:
+        with pymupdf.open(path) as doc:
+            m = re.search(r'(\d{2,3})\s*marks\b', doc[0].get_text(), re.I)
+        if m:
+            total += int(m.group(1))
+    return total
+
+
 def census_re(subject, year, level):
     """Religious Education: its own reader, for the reasons re_paper.py gives.
 
@@ -923,6 +1055,9 @@ def census_subject(subject):
                 if cfg.get('walker') == 'history':
                     parts, texts, files, marks, cover = census_history(
                         subject, year, level, comp)
+                if cfg.get('walker') == 'lang':
+                    parts, texts, files, P_, S_, claimed_ = census_lang(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -944,6 +1079,9 @@ def census_subject(subject):
                 # tariff would count questions nobody sits, so the checksum is
                 # the total the paper states on its own cover.
                 marks = {(None, 0): cover} if cover else {}
+            if cfg.get('walker') == 'lang':
+                flags += lang_flags(P_, S_, claimed_)
+                marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}

@@ -144,10 +144,16 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   // Exam Paper. Treating both documents as section candidates made every Art
   // card resolve to null. This is safe only when that label is unique and all
   // siblings identify themselves as picture/illustration companions.
+  // The same shape covers the modern languages, whose second document is the
+  // Listening Comprehension Test: French indexes "Exam Paper" beside "Aural
+  // Paper", neither of which names a section, so every French card resolved to
+  // null and every reading card lost the passage it quotes. A listening card
+  // would need the aural document, and no listening card exists — the ask
+  // cannot be answered from print, and the deck excludes it.
   const namedExamPapers = entry.papers.filter(p => /^Exam Paper$/i.test(p.label));
   const companions = entry.papers.filter(p => !/^Exam Paper$/i.test(p.label));
   if (namedExamPapers.length === 1 && companions.length > 0
-      && companions.every(p => /picture|illustration/i.test(p.label))) {
+      && companions.every(p => /picture|illustration|aural|listening/i.test(p.label))) {
     return stripPdf(namedExamPapers[0].doc?.f);
   }
   const direct = entry.papers.find(p => labelCovers(p.label).has(section));
