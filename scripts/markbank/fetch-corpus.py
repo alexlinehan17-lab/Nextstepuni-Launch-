@@ -105,6 +105,16 @@ SUBJECTS = {
     # kana and kanji survive the PDF text layer at all. Measured at stage 0
     # before it is chosen.
     'japanese': 'japanese',
+    # Added 10 September 2026. Arabic is the modern language with the hardest
+    # TEXT problem in the corpus: it is written right-to-left, and a PDF text
+    # layer routinely hands back RTL runs reversed, visually rather than
+    # logically ordered, or with the letters in isolated instead of joined
+    # forms. Measured at stage 0 — and the direction and joining verified
+    # against rendered pages — before it is chosen. SEC subject 059, one
+    # booklet '000' at each level (there is NO separate Listening
+    # Comprehension 'A00': Arabic is sat as a single written paper), language
+    # letter 'E'.
+    'arabic': 'arabic',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
 }

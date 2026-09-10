@@ -62,6 +62,8 @@ import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/hi
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
+import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
@@ -521,6 +523,15 @@ const decks = [
    * photographs and images. */
   ['classical-studies:higher', CLAS_HIGHER, 240, 'c7ef8e6be63fdd3108213d5f94333eff67b067893036821eb3164bbedffe0c66'],
   ['classical-studies:ordinary', CLAS_ORDINARY, 276, '363ae6d0a26308e5c8b7459143bdbfa9c66c07f203c4125a03b67dc319ebd211'],
+  /* Arabic is the twenty-third subject and the first written RIGHT TO LEFT.
+   * Every card is new; none replaces anything. It cards two corners of a paper
+   * that is otherwise marked by a Communication-and-Content grid: the reading
+   * comprehension's multiple choice, whose option words are the paper's own,
+   * and the whole of Part 3, Use of Language. Nothing about it was readable
+   * until ara_text.py and ara_glyphs.py — see ARABIC.md — so a card ID here is
+   * also a claim that the Arabic on it is the Arabic the SEC printed. */
+  ['arabic:higher', ARABIC_HIGHER, 125, 'e28afb1be279b23f9180b61cd90115f0633c895049fef70c4e4cbd448366e301'],
+  ['arabic:ordinary', ARABIC_ORDINARY, 125, 'e2ae63496b37a0f46053f3b96bffb7bb9a827e223508451dff6d8f62523e0c40'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -535,13 +546,11 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // 10,495 before this session, plus twelve subjects carded in four waves:
+    // 10,495 before this session, plus thirteen subjects carded in five waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
-    // Russian 199, Japanese 600 and Classical Studies 516.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(15_373);
-    // Japanese 600.
-    // Classical Studies 516.
+    // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(15_623);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -567,6 +576,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('russian:')
         && !name.startsWith('japanese:')
         && !name.startsWith('classical-studies:')
+        && !name.startsWith('arabic:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);

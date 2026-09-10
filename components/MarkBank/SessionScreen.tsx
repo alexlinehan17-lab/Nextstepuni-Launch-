@@ -673,7 +673,9 @@ const MarkRowView: React.FC<{
         </MotionSpan>
 
         <span>
-          <span style={{ color: claimed ? SUCCESS_TEXT : INK_2 }}>
+          {/* A marking point takes its direction from its own text, so an
+              Arabic answer reads and aligns the way the scheme printed it. */}
+          <span dir="auto" style={{ color: claimed ? SUCCESS_TEXT : INK_2 }}>
             {row.verbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
@@ -1823,6 +1825,14 @@ const QuestionText: React.FC<{ text: string }> = ({ text }) => {
     return (
       <p
         data-testid="mark-bank-question-text"
+        /* The paragraph takes its direction from its own first strong
+           character. Arabic is the bank's first right-to-left subject and the
+           browser already lays its WORDS out correctly inside a left-to-right
+           block — what it cannot do is put the block's punctuation and its
+           alignment on the right, so an Arabic question rendered "ltr" ends
+           with its full stop on the wrong side. "auto" resolves to ltr for
+           every Latin card in the bank, so nothing else moves. */
+        dir="auto"
         style={{
           margin: '9px 0 0',
           font: `500 20px/1.5 ${SERIF}`,
@@ -1853,7 +1863,7 @@ const QuestionText: React.FC<{ text: string }> = ({ text }) => {
         >
           <PartLabel>{part.label}</PartLabel>
           <div style={{ minWidth: 0 }}>
-            {part.body && <div style={{ whiteSpace: 'pre-line' }}><Clause text={part.body} /></div>}
+            {part.body && <div dir="auto" style={{ whiteSpace: 'pre-line' }}><Clause text={part.body} /></div>}
             {part.children.length > 0 && (
               <div style={{ marginTop: part.body ? 8 : 0 }}>
                 {part.children.map((child, childIndex) => (
@@ -1866,7 +1876,7 @@ const QuestionText: React.FC<{ text: string }> = ({ text }) => {
                     }}
                   >
                     <PartLabel nested>{child.label}</PartLabel>
-                    <div style={{ minWidth: 0, whiteSpace: 'pre-line' }}><Clause text={child.body} /></div>
+                    <div dir="auto" style={{ minWidth: 0, whiteSpace: 'pre-line' }}><Clause text={child.body} /></div>
                   </div>
                 ))}
               </div>

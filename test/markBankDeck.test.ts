@@ -75,6 +75,8 @@ import { CARDS as TECH_HIGHER } from '../components/MarkBank/cards/technology/hi
 import { CARDS as TECH_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
+import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
@@ -104,6 +106,7 @@ const SAMPLE_CARDS = [
   ...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY,
   ...JAPANESE_HIGHER, ...JAPANESE_ORDINARY,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
+  ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -500,6 +503,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['russian', 'ordinary', RUSSIAN_ORDINARY],
     ['japanese', 'higher', JAPANESE_HIGHER],
     ['japanese', 'ordinary', JAPANESE_ORDINARY],
+    ['arabic', 'higher', ARABIC_HIGHER],
+    ['arabic', 'ordinary', ARABIC_ORDINARY],
     ['applied-maths', 'higher', AM_HIGHER],
     ['applied-maths', 'ordinary', AM_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
@@ -601,6 +606,8 @@ describe('the taxonomy is the redeveloped specification', () => {
       // 2021 and 2022 papers were sat on, which the canonical curriculum
       // (a description of the CURRENT specification) does not carry.
       'classical-studies': 'classical-studies-',
+      // Arabic files its cards under the published Arabic taxonomy itself.
+      arabic: 'arabic-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

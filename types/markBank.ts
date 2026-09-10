@@ -323,9 +323,15 @@ export interface SecCardBase extends CardBase {
    *  each setting questions "(i)" to "(iv)" with lettered parts under them, so
    *  the topic and the roman together are the address — "Topic 1(i)", cited as
    *  "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers Questions 1-16 straight
-   *  through Sections A and B, and files under 'A' and 'B'. */
+   *  through Sections A and B, and files under 'A' and 'B'.
+   *
+   *  Arabic adds '4'. Its paper prints four parts — الجزء الأول to الجزء
+   *  الرابع — and numbers its questions 1 to 15 straight through them, so the
+   *  part is not part of the address and never appears in a citation; it is
+   *  what the card says a student is looking at. Part 4 is the composition,
+   *  which is why the union needed a fourth number it had never had. */
   section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
-  | '1' | '2' | '3' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
+  | '1' | '2' | '3' | '4' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
   | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1'
   | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */

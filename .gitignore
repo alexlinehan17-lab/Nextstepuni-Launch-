@@ -63,6 +63,12 @@ android/keystore.properties
 examiner-reports/*/papers/*.pdf
 examiner-reports/*/schemes/*.pdf
 examiner-reports/*/supplements/
+# Arabic keeps a SECOND corpus, wider than the window it cards, because its
+# broken-font repair map is derived from every sitting the Paper Trail holds
+# and not only from the ten the bank counts (see authoring/ARABIC.md). Same
+# canonical home, same reason not to commit it; the derived map,
+# authoring/glyphmap-arabic.json, is what is tracked.
+examiner-reports/*/glyph-corpus/
 
 # Landing-page reference recordings (44–414 MB each; GitHub rejects files over 100 MB).
 # They stay on the founder's Mac; the contact sheets and notes in design-references/landing/ are what is tracked.

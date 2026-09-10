@@ -72,6 +72,8 @@ const japaneseCurriculum = CURRICULUM.find(subject => subject.id === 'japanese')
 if (!japaneseCurriculum) throw new Error('Canonical Japanese curriculum is missing');
 const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
 if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
+const arabicCurriculum = CURRICULUM.find(subject => subject.id === 'arabic');
+if (!arabicCurriculum) throw new Error('Canonical Arabic curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -1087,6 +1089,27 @@ export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((stran
     title: topic.name,
   })),
 }));
+/**
+ * Arabic ships its whole published taxonomy, and the deck cards two corners of
+ * it: the reading comprehension's multiple choice and the whole of Part 3,
+ * Use of Language. The rest of the paper — the two directed-writing asks, the
+ * nine literature alternatives and the composition — is marked by a
+ * Communication-and-Content grid over a list the scheme states is not
+ * exhaustive, which is the same written-production exclusion the other six
+ * modern languages carry. A student browsing Arabic should still see the shape
+ * of their course, not only the part that is carded.
+ */
+export const ARABIC_STRANDS: StrandRef[] = arabicCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const JAPANESE_STRANDS: StrandRef[] = japaneseCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1272,6 +1295,7 @@ export const SUBJECTS = [
   { id: 'russian', title: 'Russian', strands: RUSSIAN_STRANDS, spec: 'Leaving Certificate Russian syllabus' },
   { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
+  { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1570,6 +1594,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   japanese: {
     higher: () => import('./cards/japanese/higher'),
     ordinary: () => import('./cards/japanese/ordinary'),
+  },
+  arabic: {
+    higher: () => import('./cards/arabic/higher'),
+    ordinary: () => import('./cards/arabic/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),

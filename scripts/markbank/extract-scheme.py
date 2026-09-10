@@ -33,6 +33,33 @@ except ImportError:
     fitz = None
 
 
+# A right-to-left subject cannot be read by the span reader below. Arabic's
+# text layer is painted in VISUAL order and its ligature glyphs carry several
+# characters each, so the reversal that recovers logical order has to be done
+# over glyphs, not characters, or the letters inside a ligature come out
+# backwards — "البلد" for "البدل" and forty more like it on one page. That is
+# authoring/ara_text.py's whole job, and it also reports the glyphs whose
+# ToUnicode entry is not Arabic at all rather than inventing a letter for them.
+RTL_SUBJECTS = ('arabic',)
+
+
+def _is_rtl(pdf_path: Path) -> bool:
+    return any(part in RTL_SUBJECTS for part in pdf_path.parts)
+
+
+def extract_rtl(pdf_path: Path) -> str:
+    sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+    import ara_text
+    doc = fitz.open(pdf_path)
+    out = []
+    for pno, page in enumerate(doc, 1):
+        out.append(f"\n## Page {pno}\n")
+        for line in ara_text.page_lines(page):
+            out.append(line["text"])
+    doc.close()
+    return "\n".join(out)
+
+
 def extract(pdf_path: Path, marks_column: bool = False) -> str:
     """Extract, rejoining split spans and reconstructing table rows.
 
@@ -245,7 +272,8 @@ def main() -> int:
         print("PyMuPDF is required to extract", file=sys.stderr)
         return 1
 
-    text = extract(args.path, marks_column=args.marks_column)
+    text = (extract_rtl(args.path) if _is_rtl(args.path)
+            else extract(args.path, marks_column=args.marks_column))
     hits = check(text, words)
     out = args.out or args.path.with_suffix(".md")
     out.write_text(text)

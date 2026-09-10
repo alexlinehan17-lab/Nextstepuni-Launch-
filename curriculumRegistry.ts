@@ -1518,6 +1518,15 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
           ['arabic-2026-punctuation', 'Paragraphing and punctuation'],
         ]),
       ],
+      /* Mark Bank files an Arabic card under the published Arabic taxonomy in
+       * curriculum.ts, which describes the course; this record describes the
+       * ASSESSMENT. The three task types the deck cards map onto it as
+       * follows, and the mapping is stated rather than guessed at read time. */
+      legacyTopicAliases: {
+        'arabic-3-2': 'arabic-2026-reading-comprehension',
+        'arabic-5-0': 'arabic-2026-grammar-syntax',
+        'arabic-5-4': 'arabic-2026-grammar-syntax',
+      },
       coverageNodeLevel: 'topic',
       notes: [
         'This is the outgoing syllabus sat by the 2026 examination cohort.',

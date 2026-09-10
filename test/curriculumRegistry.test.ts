@@ -265,8 +265,16 @@ describe('versioned curriculum registry', () => {
       for (const card of cards) {
         const subjectId = subjectForTopic.get(card.topicId);
         expect(subjectId, `${card.id}: no subject owns ${card.topicId}`).toBe(deck.subjectId);
-        const spec = resolveCurriculumSpecification(subjectId!, Math.max(2027, card.year))!;
-        expect(findCanonicalTopic(spec, card.topicId), `${card.id}: ${card.topicId} absent from ${spec.id}`).toBeDefined();
+        /* Against the CURRENT specification wherever there is one — that is
+         * what this guard is for. A subject whose syllabus is examined to June
+         * 2026 and whose replacement is deliberately not yet encoded (Arabic)
+         * has none live in 2027, and is checked against the specification its
+         * own paper was actually set on instead. Resolving it at 2027 returned
+         * undefined and the guard threw rather than reporting. */
+        const spec = resolveCurriculumSpecification(subjectId!, Math.max(2027, card.year))
+          ?? resolveCurriculumSpecification(subjectId!, card.year);
+        expect(spec, `${card.id}: no specification covers ${subjectId} in ${card.year}`).toBeDefined();
+        expect(findCanonicalTopic(spec!, card.topicId), `${card.id}: ${card.topicId} absent from ${spec!.id}`).toBeDefined();
       }
     }
   });
