@@ -112,7 +112,14 @@ FIELDS = {
     'history': [('history', 'lm'), ('history-early-modern', 'em')],
 }
 
-FILEID = re.compile(r'^LC(\d{3})([ACG])LP(\d{3})([EI])V\.pdf$', re.I)
+# The component is not always three digits. The modern languages sit a second
+# booklet at the same sitting -- the Listening Comprehension Test -- and the
+# SEC codes it 'A00' where the written paper is '000'. A digits-only pattern
+# skipped it silently: Spanish censused its written paper alone while the
+# listening test prints eighty marks' worth of asks the scheme answers, and
+# nothing reports a booklet that was never asked for (the History FIELDS
+# failure, in a different disguise).
+FILEID = re.compile(r'^LC(\d{3})([ACG])LP([0-9A][0-9]{2})([EI])V\.pdf$', re.I)
 # 'C' is not a third grade of difficulty: it is the SEC's marker for a subject
 # examined at ONE level. Without it here every LCVP file failed the match and
 # the fetch reported "0 file(s) fetched" with no error — silence, which is the

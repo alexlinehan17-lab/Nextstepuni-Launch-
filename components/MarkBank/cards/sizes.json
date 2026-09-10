@@ -85,5 +85,9 @@
  "german": {
   "higher": 111,
   "ordinary": 153
+ },
+ "spanish": {
+  "higher": 204,
+  "ordinary": 143
  }
 }

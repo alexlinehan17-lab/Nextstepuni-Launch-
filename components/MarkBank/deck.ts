@@ -62,6 +62,8 @@ const germanCurriculum = CURRICULUM.find(subject => subject.id === 'german');
 if (!germanCurriculum) throw new Error('Canonical German curriculum is missing');
 const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applied-mathematics');
 if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
+const spanishCurriculum = CURRICULUM.find(subject => subject.id === 'spanish');
+if (!spanishCurriculum) throw new Error('Canonical Spanish curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -983,6 +985,31 @@ export const FRENCH_STRANDS: StrandRef[] = frenchCurriculum.strands.map((strand,
   })),
 }));
 /**
+ * The Leaving Certificate Spanish syllabus, adapted from the canonical
+ * curriculum rather than retyped, for the reason the English, Irish, Art,
+ * Geography, LCVP and French strands are: a second copy of a taxonomy drifts,
+ * and a card filed against a topic id the registry does not hold resolves into
+ * a specification that contains no such topic.
+ *
+ * Mark Bank cards reach three of these strands — the reading-comprehension
+ * task types, the prescribed literature and, through them, the written texts
+ * the paper sets — because the rest of the examination is the oral, the aural
+ * and the written production, none of which the scheme answers with liftable
+ * content. The whole taxonomy still ships: a student browsing Spanish should
+ * see the shape of their course, not only the part that is carded.
+ */
+export const SPANISH_STRANDS: StrandRef[] = spanishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
  * The Leaving Certificate German syllabus, adapted from the canonical
  * curriculum rather than retyped, for the reason the French strands are: a
  * second copy of a taxonomy drifts, and a card filed against a topic id the
@@ -1138,6 +1165,7 @@ export const SUBJECTS = [
   { id: 'french', title: 'French', strands: FRENCH_STRANDS, spec: 'Leaving Certificate French syllabus' },
   { id: 'german', title: 'German', strands: GERMAN_STRANDS, spec: 'Leaving Certificate German syllabus' },
   { id: 'applied-maths', title: 'Applied Maths', strands: APPLIED_MATHS_STRANDS, spec: 'specification examined from 2023' },
+  { id: 'spanish', title: 'Spanish', strands: SPANISH_STRANDS, spec: 'Leaving Certificate Spanish syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1436,6 +1464,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   'applied-maths': {
     higher: () => import('./cards/applied-maths/higher'),
     ordinary: () => import('./cards/applied-maths/ordinary'),
+  },
+  spanish: {
+    higher: () => import('./cards/spanish/higher'),
+    ordinary: () => import('./cards/spanish/ordinary'),
   },
 };
 

@@ -314,6 +314,21 @@
     },
     "refsHash": "608205b9e7e5d4b8"
   },
+  "spanish": {
+    "cards": 347,
+    "contentHash": "67db6091348bf049",
+    "coveragePct": 100.0,
+    "covered": 347,
+    "excluded": 306,
+    "leaves": 653,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 25,
+      "hash": "b66ea47a460f5d10"
+    },
+    "refsHash": "5da5beef5d9ac549"
+  },
   "technology": {
     "cards": 716,
     "contentHash": "4d55bc81fece955d",

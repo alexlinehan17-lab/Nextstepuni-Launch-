@@ -562,6 +562,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       // are 'applied-mathematics-<strand>-<topic>' — the subject id in the
       // deck is the SEC's shorter name for the same subject.
       'applied-maths': 'applied-mathematics-',
+      // Spanish files its cards under the published Spanish taxonomy itself
+      // (curriculum.ts -> curriculumRegistry.ts), as French does, so its ids
+      // carry the subject's own name rather than an abbreviation.
+      spanish: 'spanish-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

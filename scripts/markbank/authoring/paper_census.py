@@ -44,6 +44,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paper as PP  # noqa: E402
@@ -144,6 +145,17 @@ SUBJECTS = {
     # addressed three levels deep, "2.(b)(ii)", which the French walker's
     # (question, letter) key cannot hold.
     'german': {'mode': 'sections', 'walker': 'de'},
+    # Spanish sits THREE documents at one sitting: the written paper, a
+    # separate Listening Comprehension Test with its own SEC file id, and — at
+    # Higher — a two-page LOOSE SHEET carrying the Section B article, which is
+    # the text every Section B question is about and which the question paper
+    # does not contain. Its own walker, because its section tokens carry a
+    # CHOICE the paper's numbering cannot: Higher Section A prints Question 1
+    # twice over, once as prescribed literature and once as a journalistic
+    # text, and each alternative numbers its own questions from 1. "A1a" is the
+    # literature route, "A1b" the journalistic one, "A2" the section's second
+    # question, and "L" the listening test.
+    'spanish': {'mode': 'sections', 'walker': 'es'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -811,6 +823,157 @@ def de_flags(P, S, claimed):
                           f'the scheme prices {len(printed)}'})
     return flags
 
+def census_es(subject, year, level):
+    """Spanish: the written paper, the loose sheet and the listening booklet.
+
+    THE DENOMINATOR IS THE PAPER. Every leaf here is a marker the paper itself
+    prints with an ask beside it, read by es_paper.py; the scheme is consulted
+    only to CHECK the reading, never to produce it.
+
+    Two things this paper does that a generic reader cannot see:
+
+      * Higher Section A's journalistic text is printed in NUMBERED PARAGRAPHS
+        at the same margin and in the same shape as its questions, so "1." on
+        the page is as likely to open the article as the ask. The questions are
+        the last run of markers in the region (es_paper.Region.ask_blocks);
+      * a "Give three details" ask is followed by "1.", "2." and "3." printed
+        alone on the answer lines. A marker with nothing after it is an answer
+        box, and is not counted.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from es_paper import EsPaper                              # noqa: E402
+    from es_scheme import EsScheme                            # noqa: E402
+
+    P = EsPaper(year, level, subject)
+    S = EsScheme(year, level, subject)
+    texts = {k: v[0] for k, v in P.leaves().items()}
+    for q, letter, text, _page in P.aural_asks():
+        texts[('L', q, letter, None)] = text
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def es_flags(P, S):
+    """What the PAPER prints that the scheme does not agree with.
+
+    Three independent checks, because the two documents share three things and
+    a mis-read shows up in a different one of them each time:
+
+      * the SECTION total, printed on the paper's own section head and again on
+        the scheme's;
+      * the QUESTION tariff, printed beside the question on the paper and on
+        the scheme's question head;
+      * the text's own TITLE, printed above the article on the paper and above
+        its answers in the scheme.
+
+    Plus the fourth thing that is not an agreement at all: a leaf the paper
+    prints that no scheme ask claims and no band grid covers.
+    """
+    flags = []
+    for letter, printed in sorted(P.section_marks.items()):
+        want = S.unit_totals.get(letter)
+        if want is not None and want != printed:
+            flags.append({
+                'type': 'section-total', 'where': f'Section {letter}',
+                'detail': f'the paper prints {printed} marks, the scheme {want}'})
+    for token, region in sorted(P.regions.items()):
+        for item, stem in sorted(region.stems().items()):
+            key = _es_scheme_key(token, item)
+            want = S.q_totals.get(key)
+            got = stem.marks
+            if want is not None and got is not None and want != got:
+                flags.append({
+                    'type': 'tariff-disagreement', 'where': f'{token} Q{item}',
+                    'detail': f'the paper prices this question {got}, '
+                              f'the scheme {want}'})
+        # Section B's text is not in the question paper, so its title is the
+        # one printed on the loose sheet.
+        title = ((region.title or P.insert_title) if token == 'B'
+                 else region.title)
+        want_title = S.titles.get(_es_title_key(token))
+        if title and want_title and not _title_agrees(title, want_title):
+            flags.append({
+                'type': 'title-disagreement', 'where': token,
+                'detail': f'the paper heads this text {title!r}, '
+                          f'the scheme {want_title!r}'})
+    priced = {a.key for a in S.asks}
+    grid_cover = set()
+    for (sec, q, letter, _roman) in S.grids:
+        grid_cover.add((sec, q, letter))
+    for key in sorted(P.leaves(), key=lambda k: tuple(str(x) for x in k)):
+        section, q, letter, roman = key
+        if (section, q, letter, roman) in priced:
+            continue
+        # A scheme ask priced WHOLE covers every part the paper prints beneath
+        # it: Higher Section A's Q.4 journalistic ask is one 6-mark question
+        # whose two phrases the paper prints as (a) and (b).
+        if (section, q, None, None) in priced or (section, None, letter, None) in priced:
+            continue
+        if (section, q, letter) in grid_cover or (section, q, None) in grid_cover:
+            continue
+        flags.append({
+            'type': 'unpriced-ask', 'where': key_label(key),
+            'detail': 'the paper prints this ask and no scheme entry claims it'})
+    return flags
+
+
+def _es_scheme_key(token, item):
+    if token in ('A1a', 'A1b', 'B'):
+        return (token, item)
+    m = re.fullmatch(r'A(\d)', token)
+    return ('A', int(m.group(1))) if m else (token, item)
+
+
+def _es_title_key(token):
+    if token in ('A1a', 'A1b'):
+        return (token, None)
+    if token == 'B':
+        return ('B', None)
+    m = re.fullmatch(r'A(\d)', token)
+    if m:
+        return ('A', int(m.group(1)))
+    if re.fullmatch(r'A2[ab]', token):
+        return ('A2', token[2])
+    return (token, None)
+
+
+def _title_words(text):
+    """A title's content words, accent-folded, for comparison."""
+    folded = ''.join(c for c in unicodedata.normalize('NFKD', (text or '').lower())
+                     if not unicodedata.combining(c))
+    return {w for w in re.findall(r'[a-z0-9]+', folded) if len(w) > 1}
+
+
+def _title_agrees(a, b):
+    """Do the paper's and the scheme's titles name the same text?
+
+    Scored on shared words rather than on the string, because the two
+    documents render the SAME title three ways: the paper breaks a long one
+    across two printed lines ("ESPAÑA GANA EL / MUNDIAL"), it spells a number
+    the scheme sets as a numeral ("CINCO MILLONES" against "5 MILLONES"), and
+    one of them mis-keys a letter ("SAN CRISTÓBAL" against the scheme's "SAN
+    CRISTÓBOL"). Requiring the strings to contain one another reported all
+    three as disagreements and would have buried a title naming a DIFFERENT
+    text under them. Two thirds of the shorter side's words is the bar: the
+    worst real pair in the corpus shares five of six.
+    """
+    x, y = _title_words(a), _title_words(b)
+    if not x or not y:
+        return True
+    return len(x & y) / min(len(x), len(y)) >= 0.66
+
+
+def es_cover_marks(paths):
+    """The totals the booklets print on their own covers, added."""
+    import pymupdf
+    total = 0
+    for path in paths:
+        with pymupdf.open(path) as doc:
+            m = re.search(r'(\d{2,3})\s*marks\b', doc[0].get_text(), re.I)
+        if m:
+            total += int(m.group(1))
+    return total
+
 
 def _letters(first, last):
     lo, hi = LETTERS.index(first), LETTERS.index(last)
@@ -1173,6 +1336,8 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'de':
                     parts, texts, files, P_, S_, claimed_ = census_de(
                         subject, year, level)
+                elif cfg.get('walker') == 'es':
+                    parts, texts, files, P_, S_ = census_es(subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -1194,12 +1359,15 @@ def census_subject(subject):
                 # tariff would count questions nobody sits, so the checksum is
                 # the total the paper states on its own cover.
                 marks = {(None, 0): cover} if cover else {}
-            if cfg.get('walker') == 'lang':
+            elif cfg.get('walker') == 'lang':
                 flags += lang_flags(P_, S_, claimed_)
                 marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 'de':
                 flags += de_flags(P_, S_, claimed_)
                 marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'es':
+                flags += es_flags(P_, S_)
+                marks = {(None, 0): es_cover_marks(files)}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}
