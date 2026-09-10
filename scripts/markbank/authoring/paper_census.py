@@ -218,6 +218,29 @@ SUBJECTS = {
     # the old paper glues a whole topic into ONE pymupdf block, and the new one
     # prices the question while the scheme prices its parts.
     'classical-studies': {'mode': 'sections', 'walker': 'clas'},
+    # Latin is a language whose paper is nothing like the six modern ones: one
+    # booklet, no listening test, five questions numbered straight through,
+    # and no answer-language rule. What it does have is a CHOICE at the third
+    # level of its address. Questions 1, 2 and 3 each print two or four routes
+    # a candidate picks one of, and the paper calls them what the census keys
+    # them: "Answer either Section A or Section B." So the section token is
+    # the ROUTE — 'A', 'B', 'C', 'D' — and it is None for Questions 4 and 5,
+    # which print no routes at all.
+    #
+    # 'numbering' says the routes do NOT restart the numbering: Question 1
+    # Section A and Question 3 Section A are both Section A, and the questions
+    # run 1-5 across the whole paper. Without it every route reported a
+    # question-gap for the questions it does not appear in — Sections C and D
+    # exist only under Question 2 — and the routeless prefix reported that the
+    # paper's first question was Q4.
+    #
+    # 'label': 'roman-major' says the paper prints the ROMAN above the LETTER:
+    # its address reads "3. A. (ii) (a)", not "3(a)(ii)". The key keeps the
+    # letter in the letter slot and the roman in the roman slot, so every
+    # continuity check and reconcile's part matcher are untouched; only the
+    # printed citation follows the paper.
+    'latin': {'mode': 'sections', 'walker': 'lat',
+              'numbering': 'continuous', 'label': 'roman-major'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -272,46 +295,94 @@ def leaves_of(parts):
     return sorted(out, key=lambda k: tuple(str(x) for x in k))
 
 
-def continuity_flags(parts, texts):
-    """Every gap in the numbering, which is where keying bugs surface."""
+def continuity_flags(parts, texts, subject=None, continuous=False):
+    """Every gap in the numbering, which is where keying bugs surface.
+
+    `continuous` says the section token is NOT a numbering scope. Latin's is a
+    printed CHOICE ROUTE — "Answer either Section A or Section B" — and its
+    questions run 1-5 across the whole paper, so the question run is checked
+    once over the paper rather than once per route. Checked per route it
+    reported that Section C's first question was Q2 (Question 2 is the only
+    question that sets four passages) and that the routeless prefix carrying
+    Questions 4 and 5 started at Q4 — four false gaps a sitting, all saying
+    the same thing about a paper with no gap in it.
+    """
     flags = []
     keys = set(parts)
-    prefixes = sorted({k[:-3] for k in keys})     # () or (section,)
+    # A section token of None sorts against a string, which Python refuses:
+    # Latin's Questions 4 and 5 print no route at all while Questions 1-3 do,
+    # so one paper carries both kinds of prefix.
+    prefixes = sorted({k[:-3] for k in keys},
+                      key=lambda p: tuple('' if x is None else str(x)
+                                          for x in p))
+    scoped = not (continuous and len(prefixes) > 1)
+    if not scoped:
+        qs = sorted({k[-3] for k in keys
+                     if isinstance(k[-3], int) and k[-3] > 0})
+        want = list(range(min(qs), min(qs) + len(qs))) if qs else []
+        if qs != want or (qs and qs[0] > 1):
+            flags.append({'type': 'question-gap', 'where': 'all sections',
+                          'detail': f'questions found: {qs}'})
+    roman_major = subject in ROMAN_MAJOR
     for pre in prefixes:
         # Negative numbers are printed choice VARIANTS (Construction Studies
         # sets Q10 twice joined by OR; the alternative files under -10) and sit
-        # outside the run.
-        # Negative numbers are choice variants, and 'ABQ' is Business's
-        # headless compulsory question — neither sits in the numeric run.
+        # outside the run, and so does 'ABQ', Business's headless compulsory
+        # question.
         qs = sorted({k[-3] for k in keys if k[:-3] == pre
                      and isinstance(k[-3], int) and k[-3] > 0})
-        want = list(range(min(qs), min(qs) + len(qs))) if qs else []
-        if qs != want:
-            flags.append({'type': 'question-gap', 'where': str(pre or ''),
-                          'detail': f'questions found: {qs}'})
-        # A paper starts at Question 1. A census that starts later has LOST a
-        # leading question — Economics lost Q1 twice with no flag firing,
-        # because a gap detector only sees interior holes.
-        if qs and isinstance(qs[0], int) and qs[0] > 1:
-            flags.append({'type': 'question-gap', 'where': str(pre or ''),
-                          'detail': f'first question found is Q{qs[0]}'})
+        if scoped:
+            want = list(range(min(qs), min(qs) + len(qs))) if qs else []
+            if qs != want:
+                flags.append({'type': 'question-gap', 'where': str(pre or ''),
+                              'detail': f'questions found: {qs}'})
+            # A paper starts at Question 1. A census that starts later has
+            # LOST a leading question — Economics lost Q1 twice with no flag
+            # firing, because a gap detector only sees interior holes.
+            if qs and isinstance(qs[0], int) and qs[0] > 1:
+                flags.append({'type': 'question-gap', 'where': str(pre or ''),
+                              'detail': f'first question found is Q{qs[0]}'})
         # A headless question (Religious Education's Sections B-J) sits
         # outside the numeric run but still prints a lettered run that can
         # gain a hole, so it is walked here as well.
         headless = [None] if any(k[:-3] == pre and k[-3] is None
                                  for k in keys) else []
         for q in qs + headless:
-            letters = sorted({k[-2] for k in keys
-                              if k[:-3] == pre and k[-3] == q and k[-2]})
+            here = [k for k in keys if k[:-3] == pre and k[-3] == q]
+            if roman_major:
+                # The paper numbers the ROMAN above the LETTER — Latin sets
+                # "3. A. (ii) (a)" — so the roman run belongs to the question
+                # and the letter run to the roman. Checked the science way
+                # round, every one of Question 3's five parts reported a
+                # roman-gap for holding "(ii)" and no "(i)": the (i) is the
+                # translation printed beside them, not beneath them.
+                roms = sorted({k[-1] for k in here if k[-1]},
+                              key=lambda r: (ROMANS.index(r)
+                                             if r in ROMANS else 99, r))
+                if roms and roms != ROMANS[:len(roms)]:
+                    flags.append({'type': 'roman-gap',
+                                  'where': f'{pre or ""} Q{q}',
+                                  'detail': f'romans found: {roms}'})
+                for roman in {k[-1] for k in here}:
+                    letters = sorted({k[-2] for k in here
+                                      if k[-1] == roman and k[-2]})
+                    expect = [chr(ord('a') + i) for i in range(len(letters))]
+                    if letters and letters != expect:
+                        flags.append({
+                            'type': 'letter-gap',
+                            'where': f'{pre or ""} Q{q}({roman or ""})',
+                            'detail': f'letters found: {letters}'})
+                continue
+            letters = sorted({k[-2] for k in here if k[-2]})
             if letters:
                 expect = [chr(ord('a') + i) for i in range(len(letters))]
                 if letters != expect:
                     flags.append({'type': 'letter-gap',
                                   'where': f'{pre or ""} Q{q}',
                                   'detail': f'letters found: {letters}'})
-            for letter in {k[-2] for k in keys if k[:-3] == pre and k[-3] == q}:
-                roms = sorted({k[-1] for k in keys if k[:-3] == pre
-                               and k[-3] == q and k[-2] == letter and k[-1]},
+            for letter in {k[-2] for k in here}:
+                roms = sorted({k[-1] for k in here
+                               if k[-2] == letter and k[-1]},
                               key=lambda r: ROMANS.index(r) if r in ROMANS else 99)
                 if roms and roms != ROMANS[:len(roms)]:
                     flags.append({'type': 'roman-gap',
@@ -327,12 +398,22 @@ def continuity_flags(parts, texts):
         weight = sum(6 if '\u3040' <= c <= '\u9fff' else 1
                      for c in text if c.isalnum())
         if weight < 6 and len(text) < 16:
-            flags.append({'type': 'empty-leaf', 'where': key_label(k),
+            flags.append({'type': 'empty-leaf',
+                          'where': key_label(k, subject),
                           'detail': f'extracted text: {text!r}'})
     return flags
 
 
-def key_label(k):
+# Subjects whose papers number a part's ROMAN level above its LETTER level.
+# Latin sets "3. A. (ii) (a)" — question, route, roman, letter — where every
+# science paper sets "3(a)(ii)". The census key is the same shape either way
+# (the letter in the letter slot, the roman in the roman slot), so nothing
+# downstream changes; what changes is the order the two are PRINTED in, and a
+# citation has to name the address the candidate saw.
+ROMAN_MAJOR = {'latin'}
+
+
+def key_label(k, subject=None):
     """(section?, q, letter, roman) -> 'Section A Q3(b)(ii)'."""
     parts = list(k)
     q, letter, roman = parts[-3], parts[-2], parts[-1]
@@ -351,10 +432,10 @@ def key_label(k):
             # label prints none either.
             else 'Q' if q is None
             else f'Q{-q}-alt' if isinstance(q, int) and q < 0 else f'Q{q}')
-    if letter:
-        tail += f'({letter})'
-    if roman:
-        tail += f'({roman})'
+    for token in ((roman, letter) if subject in ROMAN_MAJOR
+                  else (letter, roman)):
+        if token:
+            tail += f'({token})'
     # A unit that is priced WHOLE and numbers nothing beneath it — History's
     # Ordinary parts B and C, which the scheme answers with one ceiling each —
     # is addressed by its section alone. A bare "Q" after it would name a
@@ -1454,6 +1535,108 @@ def ru_flags(P, S, claimed):
                           f'{printed} it prints on the unit head'})
     return flags
 
+def census_lat(subject, year, level):
+    """Latin: the printed ask, in the route the paper prints it under.
+
+    THE DENOMINATOR IS THE PAPER. `lat_paper.LatPaper` reads it; the scheme is
+    read beside it only so the two can be CHECKED against each other, never so
+    the scheme can supply an ask the paper does not print.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from lat_paper import LatPaper                             # noqa: E402
+    from lat_scheme import LatScheme                           # noqa: E402
+
+    P = LatPaper(year, level, subject)
+    S = LatScheme(year, level, subject)
+    texts = {}
+    for ask in P.asks():
+        texts[ask.key] = f'{ask.stem} {ask.text}'.strip()
+    return set(texts), texts, [P.path], P, S
+
+
+# What Question 1's cover prints, and what the routes beneath it must add to.
+def lat_flags(P, S):
+    """Everything that would be true if both readers read the same paper."""
+    flags = []
+    asks = P.asks()
+    paper_keys = {a.key for a in asks}
+    scheme = S.entries()
+
+    # 1. Every question the paper sets is priced on its own head, the five
+    #    heads add up to the total printed on the cover, and each of Question
+    #    1 Section B's items is priced on its own line to that same total.
+    qs = sorted({a.q for a in asks})
+    if qs != [1, 2, 3, 4, 5]:
+        flags.append({'type': 'question-gap', 'where': 'paper',
+                      'detail': f'questions found: {qs}'})
+    missing = [q for q in qs if q not in P.question_marks]
+    if missing:
+        flags.append({'type': 'unpriced-question', 'where': 'paper',
+                      'detail': f'no printed tariff on the head of Q{missing}'})
+    cover = _lat_cover_marks(P)
+    printed = sum(P.question_marks.values())
+    if cover and printed != cover:
+        flags.append({'type': 'marks-checksum', 'where': 'paper',
+                      'detail': f'the five question heads print {printed} '
+                                f'marks, the cover prints {cover}'})
+    for q in qs:
+        for route in sorted({a.section for a in asks if a.q == q and a.section}):
+            items = [a for a in asks if a.q == q and a.section == route
+                     and a.roman and not a.letter and a.marks
+                     and not a.inherited]
+            if len(items) < 3:
+                continue      # a route of one or two asks states no run to sum
+            total = sum(a.marks for a in items)
+            want = P.question_marks.get(q)
+            if want and total != want:
+                flags.append({
+                    'type': 'marks-checksum', 'where': f'Q{q} Section {route}',
+                    'detail': f'its {len(items)} printed items sum to {total}, '
+                              f'the question head prints {want}'})
+
+    # 2. Every address the scheme prices is one the paper prints, or the
+    #    parent of one. A scheme entry with no printed ask beneath it is
+    #    either a head the reader mis-keyed or an answer to a question nobody
+    #    sat, and both need saying out loud.
+    for key in sorted(scheme, key=str):
+        if key in paper_keys:
+            continue
+        if any(p[1] == key[1]
+               and (key[0] is None or p[0] == key[0])
+               and (key[2] is None or p[2] == key[2])
+               and (key[3] is None or p[3] == key[3]) for p in paper_keys):
+            # The scheme priced a level ABOVE the printed ask. A route-less
+            # (None, q, None, None) is the question's own head — "Answer
+            # Section A or Section B in this question:- [75]", followed by the
+            # positive-marking preamble — which is rubric, not an orphan.
+            continue
+        if not _lat_states_content(scheme[key]):
+            continue          # a head or a rubric, which prices nothing
+        flags.append({'type': 'scheme-orphan', 'where': str(key),
+                      'detail': 'the scheme states content at an address the '
+                                'paper does not print'})
+    return flags
+
+
+def _lat_cover_marks(P):
+    """The total the paper prints on its own front page."""
+    for _page, text in P._stream()[:12]:
+        m = re.search(r'\(?(\d{3})\s*marks\)?', text, re.I)
+        if m:
+            return int(m.group(1))
+    return None
+
+
+def _lat_states_content(entry):
+    """Does this scheme entry say anything beyond its own arithmetic?"""
+    for line in entry.lines:
+        bare = re.sub(r'[^A-Za-z ]+', ' ', line)
+        words = [w for w in bare.split() if len(w) > 3]
+        if len(words) >= 4:
+            return True
+    return False
+
+
 def census_clas(subject, year, level):
     """Classical Studies: the printed ask, in whichever of its two papers.
 
@@ -1888,6 +2071,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'clas':
                     parts, texts, files, P_, S_ = census_clas(
                         subject, year, level)
+                elif cfg.get('walker') == 'lat':
+                    parts, texts, files, P_, S_ = census_lat(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -1902,7 +2088,9 @@ def census_subject(subject):
                                'error': f'{type(e).__name__}: {e}'})
                 continue
             leaves = leaves_of(parts)
-            flags = continuity_flags(parts, texts)
+            flags = continuity_flags(
+                parts, texts, subject,
+                continuous=cfg.get('numbering') == 'continuous')
             if cfg.get('walker') == 'history':
                 # A History paper is almost entirely CHOICE: eleven topics are
                 # printed and a candidate answers two. Adding up every printed
@@ -1927,6 +2115,21 @@ def census_subject(subject):
             elif cfg.get('walker') == 'ja':
                 flags += ja_flags(P_, S_)
                 marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'lat':
+                flags += lat_flags(P_, S_)
+                # The paper's own total changed with the 2023 syllabus: 300
+                # marks over five questions before it, 400 after, with
+                # Question 2 going from one translation to two and Question 5
+                # from two essays to three. Naming the era keeps the
+                # cross-year checksum comparing each paper with its OWN kind;
+                # without it every 2021 and 2022 sitting reported a 100-mark
+                # shortfall against the later ones.
+                label = f'{_lat_cover_marks(P_)}-mark paper'
+                # Latin's paper is a CHOICE at three of its five questions —
+                # two routes at Questions 1 and 3, four passages at Question 2
+                # — so adding up every printed tariff counts asks nobody sits.
+                # The checksum is the total the paper prints on its cover.
+                marks = {(None, 0): _lat_cover_marks(P_)}
             elif cfg.get('walker') == 'clas':
                 flags += clas_flags(P_, S_)
                 # The 2023 syllabus change made this a different paper: 200
@@ -1952,7 +2155,7 @@ def census_subject(subject):
             papers.append({
                 'year': year, 'level': level, 'paper': label,
                 'leafCount': len(leaves),
-                'leaves': [{'key': list(k), 'label': key_label(k),
+                'leaves': [{'key': list(k), 'label': key_label(k, subject),
                             'text': texts.get(k, '')[:160]} for k in leaves],
                 'marksSum': sum(marks.values()) if marks else None,
                 'marksQuestions': len(marks),
