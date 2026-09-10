@@ -312,17 +312,31 @@ def census_sections(subject, year, level):
                     # "or 1.(c)" / "and 3.(b)" / "4.(a)" — split each onto its
                     # own line so the walker can read it as a head.
                     for text in re.split(r'\s(?=(?:and\s+|or\s+)?\d\.\([a-z])', text):
-                        text = text.strip()
-                        if not text:
-                            continue
-                        head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
-                        prefix = ''
-                        if head:
-                            prefix, text = head.group(1) + ' ', text[head.end():]
-                        pieces = [x.strip() for x in PP.INLINE_MARKER.split(text)
-                                  if x.strip()]
-                        for i, piece in enumerate(pieces):
-                            blocks.append((prefix + piece) if i == 0 else piece)
+                        # Technology heads Section C's options "Option 3 -
+                        # Information and Communication Technology" and every
+                        # long part "3(a)" with no dot, both glued onto the
+                        # prose that follows. Without the split the whole of
+                        # Section C — five 40-mark options per paper — is
+                        # invisible, which is what its census showed.
+                        if subject == 'technology':
+                            # "Answer 1(c) or 1(d)" is the rubric that offers
+                            # the alternatives, not a part head; splitting on
+                            # it keyed a part (c) whose whole text was "or".
+                            text = re.sub(r'Answer\s+\d{1,2}\([a-d]\)\s+(?:and|or)\s+'
+                                          r'\d{1,2}\([a-d]\)', ' ', text)
+                        for text in (re.split(r'\s(?=(?:Option\s+\d\b|\d{1,2}\([a-d]\)\s))', text)
+                                     if subject == 'technology' else [text]):
+                            text = text.strip()
+                            if not text:
+                                continue
+                            head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
+                            prefix = ''
+                            if head:
+                                prefix, text = head.group(1) + ' ', text[head.end():]
+                            pieces = [x.strip() for x in PP.INLINE_MARKER.split(text)
+                                      if x.strip()]
+                            for i, piece in enumerate(pieces):
+                                blocks.append((prefix + piece) if i == 0 else piece)
 
     # A lone number beside other lone numbers is a matching-table row or an
     # answerbook rule, not a head — the same neighbour argument paper.py makes
@@ -384,6 +398,22 @@ def census_sections(subject, year, level):
         if re.match(r'Applied\s+Business\s+Question', text):
             q, letter, roman = 'ABQ', None, None
             continue
+        # Technology: Section C's five options are headed "Option N - Name",
+        # and every long part in Sections B and C is "N(a)" with no dot.
+        if subject == 'technology':
+            op = re.match(r'Option\s+(\d)\b', text)
+            if op:
+                q, letter, roman = int(op.group(1)), None, None
+                continue
+            nl = re.match(r'(\d{1,2})\(([a-d])\)\s*', text)
+            if nl and section in ('B', 'C'):
+                q, letter, roman = int(nl.group(1)), nl.group(2), None
+                key = (section, q, letter, None)
+                parts.setdefault(key, [])
+                rest = text[nl.end():].strip()
+                if rest:
+                    parts[key].append(rest)
+                continue
         # Home Economics Section C: "Elective 1 – Home Design..." heads the
         # elective, whose sub-heads then use the elective's own number.
         el = re.match(r'Elective\s+(\d)\b', text)

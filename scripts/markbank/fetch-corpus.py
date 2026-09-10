@@ -76,6 +76,11 @@ SUBJECTS = {
     'religious-education': 'religious-education',
     'history': 'history',
     'applied-maths': 'applied-mathematics',
+    # Added 10 September 2026, to MEASURE the modern-language family at stage 0
+    # (French first, then its two closest siblings) before choosing any of them.
+    'french': 'french',
+    'german': 'german',
+    'spanish': 'spanish',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
 }
