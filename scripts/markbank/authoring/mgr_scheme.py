@@ -173,6 +173,7 @@ def answers(year, level, subject=SUBJECT):
     out, faults = {}, []
     if not S.readable():
         return out, [{'type': 'scheme-unreadable',
+                      'where': f'{year} {level}',
                       'detail': 'the scheme\'s text layer returns no Greek at '
                                 'all — every font is embedded with a broken '
                                 'ToUnicode CMap'}]

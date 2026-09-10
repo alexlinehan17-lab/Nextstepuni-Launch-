@@ -347,9 +347,16 @@ class AgrPaper:
         and a cover-page-only read reported no total for that sitting.
         """
         text = ''.join(self._doc[n].get_text()
-                       for n in range(min(2, len(self._doc))))
-        m = re.search(r'\((\d{3})\s*marks\)', text, re.I)
-        return int(m.group(1)) if m else None
+                       for n in range(min(3, len(self._doc))))
+        m = re.search(r'\(?(\d{3})\s*marks\)?', text, re.I)
+        if m:
+            return int(m.group(1))
+        # 2011 Ordinary states no total anywhere: the SEC's file opens on a
+        # page carrying the examination's name and nothing else. Its three
+        # question heads print [210] [100] [90], which is the paper's total in
+        # the paper's own figures, and it is 400 like every other sitting.
+        self.asks()
+        return sum(self.question_marks.values()) or None
 
     # ------------------------------------------------------------ asks -----
     def asks(self):

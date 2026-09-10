@@ -301,10 +301,15 @@ class MgrPaper:
             head_rows = body[:1]
         head = _clean(' '.join(t for _, t in head_rows))
         kind = self._kind(head) or 'reading'
-        self._read_total(section, head)
+        total = self._read_total(section, head)
         rate = GROUP_RATE.search(head)
         per = int(rate.group(2)) if rate else None
-        head = _clean(TOTAL.sub(' ', head))
+        if total:
+            # Only the ONE span the group's own total occupies. Substituting
+            # every TOTAL match took "(5 βαθμοί)" off 2017's head as well —
+            # and that head is where that sitting sets Question 1's price,
+            # because it prints the instruction above the number.
+            head = _clean(head[:total.start()] + ' ' + head[total.end():])
         head = _clean(re.sub(
             r'^(?:ΚΑΤΑΝΟΗΣΗ ΚΑΙ ΕΡΜΗΝΕΙΑ|ΣΧΟΛΙΑΣΜΟΣ|ΕΚΘΕΣΗ ΔΟΚΙΜΙΟ'
             r'|ΕΚΘΕΣΗ[- ]ΔΟΚΙΜΙΟ|ΔΟΚΙΜΙΟ)\s*', '', head))
@@ -381,7 +386,8 @@ class MgrPaper:
     def _read_total(self, section, text):
         m = TOTAL.search(text)
         if m:
-            self.section_marks[section] = int(m.group(1) or m.group(3))
+            self.section_marks[section] = int(m.group(1))
+        return m
 
     @staticmethod
     def _kind(head):

@@ -274,6 +274,31 @@ SUBJECTS = {
     # marker that is genuinely ambiguous, "(i)", is settled on the printed
     # column plus the letter sequence rather than on wording (see pl_paper).
     'polish': {'mode': 'sections', 'walker': 'pl'},
+    # Ancient Greek is Latin's sibling and is keyed the same way: the section
+    # token is the printed ROUTE a candidate chooses ("Answer Section A or
+    # Section B"), the questions run 1-4 across all of them, and the paper
+    # prints the ROMAN above the LETTER — "3. A. (ii) (a)". Its own walker for
+    # one reason Latin does not have: every sitting before 2023 sets its Greek
+    # in the SPIonic font with no ToUnicode map, so the pages are unreadable
+    # until agr_text decodes them.
+    #
+    # Question 4 changed shape in 2021 — eight essay topics printed as two
+    # routes of four before it and as one run of eight after — so routes are
+    # DETECTED per question and never assumed.
+    'ancient-greek': {'mode': 'sections', 'walker': 'agr',
+                      'numbering': 'continuous', 'label': 'roman-major'},
+    # Modern Greek is a NON-CURRICULAR EU language (SEC subject 019) and the
+    # simplest paper in the bank: one booklet, ONE level in every year on disk,
+    # no Listening Comprehension Test, one passage and three numbered GROUPS.
+    # The section token is the group's own number — '1' comprehension, '2'
+    # commentary, '3' essay — and 'I'/'II' for 2021, which prints "Μέρος
+    # πρώτο" and "Μέρος δεύτερο" instead and sets no commentary at all. That
+    # is the token Polish's 2021 paper uses for the same reason.
+    #
+    # Its own walker because the passage is set in NUMBERED PARAGRAPHS: 2013
+    # runs "1." to "9." down two pages of prose before a question is asked,
+    # printed exactly like the question numbers that follow.
+    'modern-greek': {'mode': 'sections', 'walker': 'mgr'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -371,6 +396,16 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
         # question.
         qs = sorted({k[-3] for k in keys if k[:-3] == pre
                      and isinstance(k[-3], int) and k[-3] > 0})
+        # The question RUN belongs to the paper, not to the prefix, wherever
+        # the prefix is a printed CHOICE rather than a scope — which is what
+        # `continuous` says and what `scoped` computes. Checked per prefix
+        # anyway (this block used to run unconditionally, with a copy of
+        # itself above it under `if scoped`), Ancient Greek's Ordinary paper
+        # reported a gap in Sections A and B for holding Questions 1 and 3:
+        # Question 1 prints four passages A-D and Question 3 prints two essay
+        # routes A and B, and Question 2 prints no route at all. Twenty false
+        # gaps across ten sittings, all saying the same thing about a paper
+        # with no gap in it.
         if scoped:
             want = list(range(min(qs), min(qs) + len(qs))) if qs else []
             if qs != want:
@@ -379,30 +414,20 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
             # A paper starts at Question 1. A census that starts later has
             # LOST a leading question — Economics lost Q1 twice with no flag
             # firing, because a gap detector only sees interior holes.
-            if qs and isinstance(qs[0], int) and qs[0] > 1:
+            #
+            # Unless the numbering RUNS ON: Polish tabs Questions 1 and 2
+            # "Część A" and Questions 3 to 5 "Część B" in one booklet, so
+            # Section B's first question is Q3 and nothing at all is missing.
+            # The exemption is evidence, not a guess — every question below
+            # this one has to be printed under some OTHER prefix of the same
+            # paper, which a genuinely lost leading question never is.
+            elsewhere = {k[-3] for k in keys if k[:-3] != pre
+                         and isinstance(k[-3], int)}
+            runs_on = qs and isinstance(qs[0], int) and qs[0] > 1 and all(
+                n in elsewhere for n in range(1, qs[0]))
+            if qs and isinstance(qs[0], int) and qs[0] > 1 and not runs_on:
                 flags.append({'type': 'question-gap', 'where': str(pre or ''),
                               'detail': f'first question found is Q{qs[0]}'})
-        want = list(range(min(qs), min(qs) + len(qs))) if qs else []
-        if qs != want:
-            flags.append({'type': 'question-gap', 'where': str(pre or ''),
-                          'detail': f'questions found: {qs}'})
-        # A paper starts at Question 1. A census that starts later has LOST a
-        # leading question — Economics lost Q1 twice with no flag firing,
-        # because a gap detector only sees interior holes.
-        #
-        # Unless the numbering RUNS ON: Polish tabs Questions 1 and 2 "Część A"
-        # and Questions 3 to 5 "Część B" in one booklet, so Section B's first
-        # question is Q3 and nothing at all is missing. The exemption is
-        # evidence, not a guess — every question below this one has to be
-        # printed under some OTHER prefix of the same paper, which a genuinely
-        # lost leading question never is.
-        elsewhere = {k[-3] for k in keys if k[:-3] != pre
-                     and isinstance(k[-3], int)}
-        runs_on = qs and isinstance(qs[0], int) and qs[0] > 1 and all(
-            n in elsewhere for n in range(1, qs[0]))
-        if qs and isinstance(qs[0], int) and qs[0] > 1 and not runs_on:
-            flags.append({'type': 'question-gap', 'where': str(pre or ''),
-                          'detail': f'first question found is Q{qs[0]}'})
         # A headless question (Religious Education's Sections B-J) sits
         # outside the numeric run but still prints a lettered run that can
         # gain a hole, so it is walked here as well.
@@ -471,7 +496,7 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
 # (the letter in the letter slot, the roman in the roman slot), so nothing
 # downstream changes; what changes is the order the two are PRINTED in, and a
 # citation has to name the address the candidate saw.
-ROMAN_MAJOR = {'latin'}
+ROMAN_MAJOR = {'latin', 'ancient-greek'}
 
 
 def key_label(k, subject=None):
@@ -1738,6 +1763,109 @@ def _lat_states_content(entry):
             return True
     return False
 
+def census_agr(subject, year, level):
+    """Ancient Greek: the printed ask, in the route the paper prints it under.
+
+    THE DENOMINATOR IS THE PAPER. `agr_paper.AgrPaper` reads it — including
+    eleven sittings for which the SEC published no marking scheme at all, which
+    are censused exactly like the rest and excluded, never dropped. The scheme
+    is read beside it only so the two can be CHECKED against each other.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from agr_paper import AgrPaper                             # noqa: E402
+    from agr_scheme import AgrScheme, has_scheme               # noqa: E402
+
+    P = AgrPaper(year, level, subject)
+    S = AgrScheme(year, level, subject) if has_scheme(year, level, subject) \
+        else None
+    texts = {a.key: f'{a.stem} {a.text}'.strip() for a in P.asks()}
+    return set(texts), texts, [P.path], P, S
+
+
+def agr_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked."""
+    flags = list(P.flags)
+    asks = P.asks()
+    qs = sorted({a.q for a in asks})
+    want = [1, 2, 3, 4] if P.level == 'hl' else [1, 2, 3]
+    if qs != want:
+        flags.append({'type': 'question-gap', 'where': 'paper',
+                      'detail': f'questions found: {qs}, expected {want}'})
+    cover = P.cover_marks()
+    printed = sum(P.question_marks.values())
+    if cover and printed and printed != cover:
+        flags.append({'type': 'marks-checksum', 'where': 'paper',
+                      'detail': f'the question heads print {printed} marks, '
+                                f'the cover prints {cover}'})
+    if S is None:
+        # Not a fault: the SEC published no scheme for this sitting. Saying so
+        # is what keeps its asks from looking like a reader failure.
+        flags.append({'type': 'no-scheme', 'where': f'{P.year} {P.level}',
+                      'detail': 'the SEC published no marking scheme for this '
+                                'sitting; every ask on it is excluded'})
+        return flags
+    entries = S.entries()
+    paper_keys = {a.key for a in asks}
+    for key in sorted(entries, key=str):
+        entry = entries[key]
+        if key in paper_keys or not (entry.answer or entry.marks):
+            continue
+        if any(p[1] == key[1] and (key[0] is None or p[0] == key[0])
+               and (key[2] is None or p[2] == key[2])
+               and (key[3] is None or p[3] == key[3]) for p in paper_keys):
+            continue          # priced or answered a level ABOVE the printed ask
+        flags.append({'type': 'scheme-orphan', 'where': key_label(key),
+                      'detail': 'the scheme states content at an address the '
+                                'paper does not print'})
+    for ask in asks:
+        if ask.kind not in ('comprehension', 'literature'):
+            continue          # the translation asks; the scheme prices the source
+        entry = entries.get(ask.key)
+        if entry is None or entry.marks is None:
+            flags.append({'type': 'unpriced-ask',
+                          'where': key_label(ask.key, P.subject),
+                          'detail': 'the paper prints this ask and the scheme '
+                                    'prices no ask at that address'})
+    return flags
+
+
+def census_mgr(subject, year, level):
+    """Modern Greek: the three printed groups and the asks under them."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from mgr_paper import MgrPaper                             # noqa: E402
+    from mgr_scheme import MgrScheme, has_scheme               # noqa: E402
+
+    P = MgrPaper(year, level, subject)
+    S = MgrScheme(year, level, subject) if has_scheme(year, level, subject) \
+        else None
+    texts = {a.key: f'{a.stem} {a.text}'.strip() for a in P.asks()}
+    return set(texts), texts, [P.path], P, S
+
+
+def mgr_flags(P, S):
+    """Everything that would be true if both readers read the same paper."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from mgr_scheme import answers                             # noqa: E402
+    flags = list(P.flags)
+    secs = [s for s in dict.fromkeys(a.section for a in P.asks())]
+    total = sum(P.section_marks.get(s, 0) for s in secs)
+    cover = P.cover_marks()
+    if cover and total and total != cover:
+        flags.append({'type': 'marks-checksum', 'where': 'paper',
+                      'detail': f'its {len(secs)} group heads print {total} '
+                                f'marks, the cover prints {cover}'})
+    for ask in P.asks():
+        if ask.marks is None:
+            flags.append({'type': 'unpriced-ask',
+                          'where': key_label(ask.key),
+                          'detail': 'neither the ask nor the group head it '
+                                    'sits under states a tariff'})
+    if S is None:
+        return flags
+    _got, faults = answers(P.year, P.level, P.subject)
+    return flags + faults
+
+
 def census_pl(subject, year, level):
     """Polish: the written booklet and, from 2022, the listening booklet.
 
@@ -2243,6 +2371,12 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'pl':
                     parts, texts, files, P_, S_ = census_pl(
                         subject, year, level)
+                elif cfg.get('walker') == 'agr':
+                    parts, texts, files, P_, S_ = census_agr(
+                        subject, year, level)
+                elif cfg.get('walker') == 'mgr':
+                    parts, texts, files, P_, S_ = census_mgr(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -2324,6 +2458,25 @@ def census_subject(subject):
                 marks = {(None, 0): 400 if P_.era == 'sections' else 200}
             elif cfg.get('walker') == 'pl':
                 flags += pl_flags(P_, S_)
+                marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 'agr':
+                flags += agr_flags(P_, S_)
+                # The paper's own total was cut for the two Covid sittings —
+                # 400 marks in every other year, 280 at Higher and 265 at
+                # Ordinary in 2021 and 2022, with more choice to make up for
+                # it. Naming the era keeps the cross-year checksum comparing
+                # each paper with its OWN kind.
+                label = f'{P_.cover_marks()}-mark paper'
+                # Ancient Greek is a CHOICE at every question — two routes at
+                # 1 and 3, four passages of which two are answered at 2, three
+                # topics of eight at 4 — so adding up every printed tariff
+                # counts asks nobody sits. The checksum is the cover total.
+                marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 'mgr':
+                flags += mgr_flags(P_, S_)
+                # 100 marks in every year but the two Covid sittings, which
+                # print 70 and set no commentary group.
+                label = f'{P_.cover_marks()}-mark paper'
                 marks = {(None, 0): P_.cover_marks()}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
