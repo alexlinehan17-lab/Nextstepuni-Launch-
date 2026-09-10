@@ -252,13 +252,36 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-1-6", topicId: "japanese-5-0", conceptId: "italian-dishes-available",
+    section: "1", questionRef: "2021 OL Section 1 Q6",
+    questionText: "Name two Italian dishes available.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["pasta","pizza","risotto","lasagna"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-1-7-i", topicId: "japanese-5-0", conceptId: "age-range-child-ticket",
     section: "1", questionRef: "2021 OL Section 1 Q7(i)",
     stem: "Scríobh uimhir an naisc mar atá sa sampla. 1. Write the number of the link as in the example. e.g. Baile 1 e.g. Home 1",
     questionText: "What is the age range for a child ticket?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "4 to 11 years", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "4 to 11 years", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -850,9 +873,9 @@ export const CARDS: SecCard[] = [
     id: "ja-2021-ol-3a-1", topicId: "japanese-5-1", conceptId: "year-school-akira",
     section: "3", questionRef: "2021 OL Section 3A Q1",
     questionText: "In what year of school is Akira?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "3rd year High School", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "3rd year High School", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1712,7 +1735,7 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from Akihabara, where can you find other Mandarake shops?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Osaka, Nagoya, Hokkaido (Any one, 2 marks)", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Osaka, Nagoya, Hokkaido (Any one", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5575,9 +5598,9 @@ export const CARDS: SecCard[] = [
     section: "2", questionRef: "2025 OL Section 2B Q3",
     stem: "Ken likes European",
     questionText: "two younger brothers like the same style.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ken’s two younger brothers like the same style False → 兄（あに）二人もおなじスタイルが好きです。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Ken’s two younger brothers like the same style False → 兄（あに）二人もおなじスタイルが好きです。", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5599,9 +5622,9 @@ export const CARDS: SecCard[] = [
     section: "2", questionRef: "2025 OL Section 2B Q4",
     stem: "Maki’s hobbies are",
     questionText: "and American designers.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ken likes European and American designers True → ヨーロッパとアメリカのデザイナーが好き。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Ken likes European and American designers True → ヨーロッパとアメリカのデザイナーが好き。", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5623,9 +5646,9 @@ export const CARDS: SecCard[] = [
     section: "2", questionRef: "2025 OL Section 2B Q5",
     stem: "Maki’s friend likes Sailor Moon",
     questionText: "anime and games.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maki’s hobbies are anime and games False →趣味（しゅみ）はアニメと読書です。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Maki’s hobbies are anime and games False →趣味（しゅみ）はアニメと読書です。", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5647,9 +5670,9 @@ export const CARDS: SecCard[] = [
     section: "2", questionRef: "2025 OL Section 2B Q6",
     stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text",
     questionText: "and Kiki.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maki’s friend likes Sailor Moon and Kiki False →友（とも）だちはナルトのコスチュームが好きです。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Maki’s friend likes Sailor Moon and Kiki False →友（とも）だちはナルトのコスチュームが好きです。", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5716,7 +5739,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-3", topicId: "japanese-5-2", conceptId: "clothes-drink-food-shopping",
     section: "2", questionRef: "2025 OL Section 2C Q3",
-    stem: "買い物 (a) éadaí (b) deoch (c) bia (d) siopadóireacht",
     questionText: "買い物 (a) clothes (b) drink (c) food (d) shopping",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5740,7 +5762,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-4", topicId: "japanese-5-2", conceptId: "buy-come-eat",
     section: "2", questionRef: "2025 OL Section 2C Q4",
-    stem: "行きます (a) ceannaigh (b) tar (c) ith (d) téigh",
     questionText: "行きます (a) buy (b) come (c) eat (d) go",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5764,7 +5785,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-5", topicId: "japanese-5-2", conceptId: "new-nice-okay-old",
     section: "2", questionRef: "2025 OL Section 2C Q5",
-    stem: "新しい (a) nua (b) deas (c) ceart go leor (d) sean",
     questionText: "新しい (a) new (b) nice (c) okay (d) old",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5860,7 +5880,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-9", topicId: "japanese-5-2", conceptId: "hear-say-think-watch",
     section: "2", questionRef: "2025 OL Section 2C Q9",
-    stem: "思います (a) clois (b) abair (c) ceap (d) féach",
     questionText: "思います (a) hear (b) say (c) think (d) watch",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5908,7 +5927,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-11", topicId: "japanese-5-2", conceptId: "cooking-kendo-reading-writing",
     section: "2", questionRef: "2025 OL Section 2C Q11",
-    stem: "読書 (a) cócaireacht (b) Ceandó (c) léamh (d) scríobh",
     questionText: "読書 (a) cooking (b) Kendo (c) reading (d) writing",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5956,7 +5974,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-13", topicId: "japanese-5-4", conceptId: "big-college-person-small",
     section: "2", questionRef: "2025 OL Section 2C Q13",
-    stem: "大きい (a) mór (b) coláiste (c) duine (d) beag Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example. Answer any ten.",
     questionText: "大きい (a) big (b) college (c) person (d) small",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -6029,7 +6046,7 @@ export const CARDS: SecCard[] = [
     questionText: "What activities did Kate do at the beach?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "volleyball, ate onigiri, drank tea (any 1, 2 marks)", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "volleyball, ate onigiri, drank tea (any 1", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",

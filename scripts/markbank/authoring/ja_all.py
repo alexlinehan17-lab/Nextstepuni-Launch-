@@ -177,8 +177,12 @@ def _bilingual_english(text):
 CELL = 25
 
 
+TAIL_MARKS = re.compile(r'[\s(]*\d{1,2}\s*marks?\s*\)?[.\s]*$', re.I)
+
+
 def _verbatim(leaf):
-    lines = [INLINE_MARKS.sub(' ', l).strip(' .,;:—-') for l in leaf.lines]
+    lines = [TAIL_MARKS.sub('', INLINE_MARKS.sub(' ', l)).strip(' .,;:—-')
+             for l in leaf.lines]
     lines = [l for l in lines if l]
     if not lines:
         return ''
@@ -624,7 +628,14 @@ def _one_card(P, ask, lf, stated, year, level, emit, refuse):
     # A stem that repeats the question is noise on the card, not a lead-in —
     # and it repeats it down to the SEC's own comma: "What did Kai buy for his
     # dog and when will he use the item?" against "…dog, and when…".
-    if stem and _key(stem) not in _key(question) and _key(question) not in _key(stem):
+    # A stem that OPENS the same way the question does is the other language's
+    # column of the same ask, not a lead-in: the Ordinary kanji sections set
+    # "思います (a) clois (b) abair (c) ceap (d) féach" beside "思います (a) hear
+    # (b) say (c) think (d) watch", and the reader takes one of them for the
+    # instruction above the other.
+    same_open = stem and question and _key(stem)[:4] == _key(question)[:4]
+    if stem and not same_open and _key(stem) not in _key(question) \
+            and _key(question) not in _key(stem):
         card['stem'] = stem
     source = source_material(P, ask.section, year, level, language)
     if source:

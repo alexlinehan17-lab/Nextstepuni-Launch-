@@ -278,7 +278,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-1a-6-ii", topicId: "japanese-5-0", conceptId: "popular-brands",
     section: "1", questionRef: "2021 HL Section 1A Q6(ii)",
-    stem: "Name two popular categories.",
     questionText: "Name two popular brands.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -563,9 +562,9 @@ export const CARDS: SecCard[] = [
     id: "ja-2021-hl-2a-4", topicId: "japanese-5-3", conceptId: "translate-into-english",
     section: "2", questionRef: "2021 HL Section 2A Q4",
     questionText: "Translate into English.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "二人は有名（ゆうめい）なユーチューバーになるまで本当（ほんとう）に大変（たいへん）で、三年間ぐらいぜんぜん 休みがなくて、仕事（しごと）をしすぎて、病気（びょうき）になりました。 Until the two became famous Youtubers , it was really tough and, for 3 years they had no break , worked too hard and got sick", marks: 5, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "二人は有名（ゆうめい）なユーチューバーになるまで本当（ほんとう）に大変（たいへん）で、三年間ぐらいぜんぜん 休みがなくて、仕事（しごと）をしすぎて、病気（びょうき）になりました。 Until the two became famous Youtubers , it was really tough and, for 3 years they had no break , worked too hard and got sick", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1944,7 +1943,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Kai buy for his dog, and when will he use the item?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A lifejacket for boat/ for kayak / (any one, 1 mark)", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "A lifejacket for boat/ for kayak / (any one", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2134,7 +2133,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are the opening hours of the Zero Waste Centre?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "7am to 9pm — (2 marks + 1 mark)", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "7am to 9pm — (2 marks +", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2178,11 +2177,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2a-4", topicId: "japanese-5-3", conceptId: "translate-into-english",
     section: "2", questionRef: "2022 HL Section 2A Q4",
-    stem: "Translate the following into English. みなさんはリデュース・リユース・リサイクルの 3R を学んだり、町（まち）の歴史（れきし）を勉強 したりします。",
     questionText: "Translate into English",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "みなさんはリデュース・リユース・リサイクルの3R を学んだり、町の（まち）歴史を（れきし）勉強 したりします。 Everyone learns the 3Rs – reduce, reuse, recycle and studies about the history of the town", marks: 4, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "みなさんはリデュース・リユース・リサイクルの3R を学んだり、町の（まち）歴史を（れきし）勉強 したりします。 Everyone learns the 3Rs – reduce, reuse, recycle and studies about the history of the town", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2850,7 +2848,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is Mika’s least favourite subject? Why?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maths. Lots of homework / has class on Saturday morning sometimes (any one, 1 mark)", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Maths. Lots of homework / has class on Saturday morning sometimes (any one", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2861,6 +2859,29 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-3b-1", topicId: "japanese-5-1", conceptId: "ja-3b-1",
+    section: "3", questionRef: "2022 HL Section 3B Q1",
+    questionText: "みかさんは、どうやって寮生活の（りょうせいかつ）マナーを習っ（なら）ていますか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "先輩（せんぱい）や後輩（こうはい）とすんでいるので、マナーを習（なら）うことができます。", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
     },
   } as SecCard,
   {
@@ -2894,7 +2915,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-3b-3", topicId: "japanese-5-1", conceptId: "ja-3b-3",
     section: "3", questionRef: "2022 HL Section 3B Q3",
-    stem: "みかさんのボランティアの仕事（しごと）は、何ですか。",
     questionText: "みかさんのボランティアの仕事は（しごと）何ですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3466,7 +3486,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
     id: "ja-2023-hl-1a-6", topicId: "japanese-5-0", conceptId: "songs-month-top-requests",
     section: "1", questionRef: "2023 HL Section 1A Q6",
-    stem: "List any two songs in this month’s requests.",
     questionText: "List any two songs in this month’s top requests",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3682,7 +3701,7 @@ export const CARDS: SecCard[] = [
     questionText: "What setback did Terunfuji have in 2015?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He broke his right leg (broke his leg 1 mark)", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "He broke his right leg (broke his leg", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4465,7 +4484,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
     id: "ja-2023-hl-3b-1", topicId: "japanese-5-1", conceptId: "ja-3b-1",
     section: "3", questionRef: "2023 HL Section 3B Q1",
-    stem: "アンナさんは、夏（なつ）の制服（せいふく）と冬（ふゆ）の制服（せいふく）と、どちらのほうが好きですか。",
     questionText: "アンナさんは、夏の（なつ）制服と（せいふく）冬の（ふゆ）制服と（せいふく）、どちらのほうが好きですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4512,7 +4530,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
     id: "ja-2023-hl-3b-4", topicId: "japanese-5-1", conceptId: "ja-3b-4",
     section: "3", questionRef: "2023 HL Section 3B Q4",
-    stem: "アンナさんは、どうして病 院（びょういん）に行きたくないですか。",
     questionText: "アンナさんは、どうして病院に（びょういん）行きたくないですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5854,7 +5871,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-3a-3", topicId: "japanese-5-1", conceptId: "has-aaron-school-become-famous",
     section: "3", questionRef: "2024 HL Section 3A Q3",
-    stem: "Why has Kawasaki High School become famous?",
     questionText: "Why has Aaron’s school become famous?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5878,7 +5894,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-3a-4", topicId: "japanese-5-1", conceptId: "kawasaki-high-school-different-had-imagined",
     section: "3", questionRef: "2024 HL Section 3A Q4",
-    stem: "How is Kawasaki High School different to what Aaron had imagined?",
     questionText: "How is Kawasaki High School different to what he had imagined?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5998,6 +6013,29 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "百パーセント日本語を話している", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
+    id: "ja-2024-hl-3b-4", topicId: "japanese-5-1", conceptId: "ja-3b-4",
+    section: "3", questionRef: "2024 HL Section 3B Q4",
+    questionText: "アーロンさんは和室（わしつ）と洋室と、どちらのほうが好きですか。どうしてですか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "わしつ たたみが好き/ ふとんでねることは気もちいい。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6189,7 +6227,7 @@ export const CARDS: SecCard[] = [
     questionText: "アーロンの家（いえ）から学校 自転（じてん）車 10 分かかります。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "まで／の で(accept まで if の is used in the previous particle) 1 mark", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "まで／の で(accept まで if の is used in the previous particle)", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6781,7 +6819,7 @@ export const CARDS: SecCard[] = [
     questionText: "誰が（だれ）オフィシャル・テーマ・ソングを歌っ（うた）ていますか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "コブクロ — (男の人二人 1 mark)", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "コブクロ — (男の人二人", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6902,6 +6940,29 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":3,"perOption":1,"options":["over 18","good at communication","can speak foreign language(s)","can do 3 days per week"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    id: "ja-2025-hl-2a-3", topicId: "japanese-5-3", conceptId: "translate-into-english",
+    section: "2", questionRef: "2025 HL Section 2A Q3",
+    questionText: "Translate the following into English.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "EXPO25 のメイン・テーマは「将来（しょう）の社会へ（しゃかい）のデザイン」です。百五十の国の新しいテクノロジーや 文化（ぶんか）、アート、音楽、（おんがく）クラフトなどを体験し（たいけん）たり、勉強したりすることができます。 The main theme of EXPO25 is “Design for future society” . You can experience and study new technology, culture, art, music, craft etc of over 150 countries", marks: 4, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7660,7 +7721,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3b-3", topicId: "japanese-5-1", conceptId: "ja-3b-3",
     section: "3", questionRef: "2025 HL Section 3B Q3",
-    stem: "ローナンさんと強（つよし）さんは、どんな時に何語で話しますか。",
     questionText: "ローナンさんと強さ（つよし）んは、どんな時に何語で話しますか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -7684,7 +7744,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3b-4", topicId: "japanese-5-1", conceptId: "ja-3b-4",
     section: "3", questionRef: "2025 HL Section 3B Q4",
-    stem: "ローナンさんは、試験（しけん）の後、何が楽（たの）しみですか。",
     questionText: "ローナンさんは、試験（しけん）の後、何が楽し（たの）みですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [

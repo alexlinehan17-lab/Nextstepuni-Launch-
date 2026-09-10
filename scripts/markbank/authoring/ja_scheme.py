@@ -465,8 +465,13 @@ BARE_MARKS = re.compile(r'(?:^|(?<=\s\s))\(?\d{1,2}\s*marks?\)?'
                         r'(?=\s\s|\s*$)', re.I)
 
 
-TRAILING_TARIFF = re.compile(r'\s{2,}\(?\s*(\d{1,3})\s*marks?\s*\)?[.\s]*$',
-                             re.I)
+# A tariff at the END of a line rather than beside it. Two forms: set out with
+# white space in front of it, and — where the answer runs the full measure —
+# closed up against it in brackets, which is unambiguous because no answer in
+# these schemes ends "(3 marks)" meaning anything else.
+TRAILING_TARIFF = re.compile(
+    r'\s{2,}\(?\s*(\d{1,3})\s*marks?\s*\)?[.\s]*$'
+    r'|\s*\(\s*(\d{1,3})\s*marks?\s*\)[.\s]*$', re.I)
 
 
 def _strip_marks(text):
@@ -506,7 +511,7 @@ def _absorb(leaf, groups, head_row):
         # printed answer and a printed tariff were refused for want of this.
         tail = TRAILING_TARIFF.search(t)
         if last and tail:
-            leaf.marks = int(tail.group(1))
+            leaf.marks = int(tail.group(1) or tail.group(2))
             t = t[:tail.start()]
         leaf.lines.append(_strip_marks(t))
     leaf.head = ' '.join(MARKS.sub(' ', leaf.head).split())

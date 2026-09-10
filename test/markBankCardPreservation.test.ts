@@ -497,8 +497,8 @@ const decks = [
    * SEC's own furigana folded into the line in brackets (ja_text.py), and the
    * answer language changes inside one question, so every card states which
    * language its answer must be in. */
-  ['japanese:higher', JAPANESE_HIGHER, 335, '61f79e95df04126255d502b5e58645a0fcb4e96e4c79aea71cbf47a570426105'],
-  ['japanese:ordinary', JAPANESE_ORDINARY, 260, 'c2103bde0750fbf7f34b21962757d52443859f134c9adf2155c0cc1124edbcc5'],
+  ['japanese:higher', JAPANESE_HIGHER, 338, '985d3ee781ce00b5bb22b550d46dd352732363164bccd8de1cc39ce5bf2a47c2'],
+  ['japanese:ordinary', JAPANESE_ORDINARY, 261, '460f3973e9d10e7a1f5a2797fb68d0c82530b3cb70bd2eadeaec015a4a807392'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -516,8 +516,8 @@ describe('Mark Bank card preservation', () => {
     // 10,495 before this session, plus ten subjects carded in four waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
-    // Japanese 595.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_653);
+    // Japanese 599.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_657);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
