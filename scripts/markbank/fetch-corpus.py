@@ -90,6 +90,10 @@ SUBJECTS = {
     'french': 'french',
     'german': 'german',
     'spanish': 'spanish',
+    # Added 10 September 2026. French shipped; Italian is the next modern
+    # language to be MEASURED at stage 0 — a full paper with the same
+    # architecture, sat by a much smaller cohort.
+    'italian': 'italian',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
 }
@@ -112,14 +116,19 @@ FIELDS = {
     'history': [('history', 'lm'), ('history-early-modern', 'em')],
 }
 
-# The component is not always three digits. The modern languages sit a second
-# booklet at the same sitting -- the Listening Comprehension Test -- and the
-# SEC codes it 'A00' where the written paper is '000'. A digits-only pattern
-# skipped it silently: Spanish censused its written paper alone while the
-# listening test prints eighty marks' worth of asks the scheme answers, and
-# nothing reports a booklet that was never asked for (the History FIELDS
-# failure, in a different disguise).
-FILEID = re.compile(r'^LC(\d{3})([ACG])LP([0-9A][0-9]{2})([EI])V\.pdf$', re.I)
+# The component token is not always three DIGITS, and the language letter is
+# not always 'E'. A modern language is sat as two booklets on the same
+# afternoon: the SEC names the written paper '000' and the Listening
+# Comprehension Test 'A00', and it publishes both as a single BILINGUAL
+# booklet whose language letter is 'B' — every rubric printed twice, Irish in
+# one column and English in the other, with no English-only edition to fetch.
+# Requiring \d{3} and 'E' matched neither: Spanish censused its written paper
+# alone while the listening test prints eighty marks' worth of asks its scheme
+# answers, and Italian fetched five papers where the corpus holds ten. Both
+# failures were silent "0 file(s) fetched" — the History FIELDS failure in a
+# different disguise, and the silence Law 1 exists to prevent.
+FILEID = re.compile(r'^LC(\d{3})([ACG])LP([0-9A-Z]{3})([EIB])V\.pdf$', re.I)
+WANTED_LANGS = {'E', 'B'}
 # 'C' is not a third grade of difficulty: it is the SEC's marker for a subject
 # examined at ONE level. Without it here every LCVP file failed the match and
 # the fetch reported "0 file(s) fetched" with no error — silence, which is the
@@ -179,7 +188,7 @@ def _fetch_one(subject, slug, field, kinds, primary):
             by_level = {}
             for name in names:
                 m = FILEID.match(name.rsplit('/', 1)[-1])
-                if not m or m.group(4).upper() != 'E':
+                if not m or m.group(4).upper() not in WANTED_LANGS:
                     continue                       # skip the Irish-language versions
                 by_level.setdefault(LEVEL[m.group(2).upper()], []).append(
                     (m.group(3), name))

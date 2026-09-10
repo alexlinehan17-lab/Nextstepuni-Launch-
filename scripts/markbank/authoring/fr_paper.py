@@ -188,13 +188,19 @@ def _column_x(rows, width, marker=None):
     return min(strong) - 1 if strong else None
 
 
-def _rows(path, page_from=0, page_to=None, marker=None):
+def _rows(path, page_from=0, page_to=None, marker=None, split_at=None):
     """[(page, [(x0, side, text), …])] — every row, cut into its columns.
 
     `marker` is what opens a printed column, and it is a parameter because the
     other bilingual language papers open one with markers French never prints:
-    a German ask is addressed "(b) (i)" and a roman is not a letter. Left at
-    None it is French's own set, so nothing about this subject changes.
+    a German ask is addressed "(b) (i)" and a roman is not a letter.
+
+    `split_at` overrides the bound this finds for itself, for a page whose
+    right-hand column opens with a marker shape _column_x does not know. It is
+    passed by it_paper.py, whose Ordinary matching task rules an answer box in
+    front of every English marker.
+
+    Both are None for French, so nothing about this subject changes.
 
     The SIDE is decided by the page's own column bound rather than by the
     middle of the sheet. 2024 Ordinary sets its English column at x=296 on a
@@ -221,7 +227,7 @@ def _rows(path, page_from=0, page_to=None, marker=None):
                     rows.append({'mid': mid, 'w': [(x0, x1, word)]})
             ordered = [sorted(row['w']) for row in sorted(rows, key=lambda r: r['mid'])]
             page = [(pno, _gap_groups(ws)) for ws in ordered]
-            split = _column_x(page, width, marker)
+            split = split_at if split_at is not None else _column_x(page, width, marker)
             if split is None:
                 out.extend((pn, [(x, 'L', t) for x, t in gs]) for pn, gs in page)
                 continue

@@ -89,5 +89,9 @@
  "spanish": {
   "higher": 204,
   "ordinary": 143
+ },
+ "italian": {
+  "higher": 172,
+  "ordinary": 178
  }
 }

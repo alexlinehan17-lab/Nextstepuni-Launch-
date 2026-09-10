@@ -60,6 +60,8 @@ const frenchCurriculum = CURRICULUM.find(subject => subject.id === 'french');
 if (!frenchCurriculum) throw new Error('Canonical French curriculum is missing');
 const germanCurriculum = CURRICULUM.find(subject => subject.id === 'german');
 if (!germanCurriculum) throw new Error('Canonical German curriculum is missing');
+const italianCurriculum = CURRICULUM.find(subject => subject.id === 'italian');
+if (!italianCurriculum) throw new Error('Canonical Italian curriculum is missing');
 const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applied-mathematics');
 if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
 const spanishCurriculum = CURRICULUM.find(subject => subject.id === 'spanish');
@@ -1034,6 +1036,25 @@ export const GERMAN_STRANDS: StrandRef[] = germanCurriculum.strands.map((strand,
     title: topic.name,
   })),
 }));
+
+/**
+ * Italian's own published taxonomy, read from the canonical curriculum rather
+ * than restated here. Its Reading Comprehension strand names the five task
+ * types this paper actually sets — a journalistic passage and an unseen
+ * literary one at Higher, a prescribed text, short passages and publicity
+ * pieces at Ordinary — which is exactly how the paper divides its sections,
+ * so a card is filed by the section it was printed in.
+ */
+export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 export const TECHNOLOGY_STRANDS: StrandRef[] = [
   {
     id: 'tech-core', label: 'Core', title: 'Core',
@@ -1166,6 +1187,7 @@ export const SUBJECTS = [
   { id: 'german', title: 'German', strands: GERMAN_STRANDS, spec: 'Leaving Certificate German syllabus' },
   { id: 'applied-maths', title: 'Applied Maths', strands: APPLIED_MATHS_STRANDS, spec: 'specification examined from 2023' },
   { id: 'spanish', title: 'Spanish', strands: SPANISH_STRANDS, spec: 'Leaving Certificate Spanish syllabus' },
+  { id: 'italian', title: 'Italian', strands: ITALIAN_STRANDS, spec: 'Leaving Certificate Italian syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1452,6 +1474,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   german: {
     higher: () => import('./cards/german/higher'),
     ordinary: () => import('./cards/german/ordinary'),
+  },
+  italian: {
+    higher: () => import('./cards/italian/higher'),
+    ordinary: () => import('./cards/italian/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),

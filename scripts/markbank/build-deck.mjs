@@ -207,6 +207,17 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/french',
     blocked: new Set(),
   },
+  italian: {
+    title: 'Italian',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-italian-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Italian syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the passage, advertisement\n * or literary extract it quotes, bound to the page of the question paper facing\n * its own questions. Higher answers Sections A and B in ITALIAN except the last\n * ask of each comprehension; Ordinary answers everything in Irish or English.',
+    figureDir: 'public/exam-figures/italian',
+    blocked: new Set(),
+  },
   'applied-maths': {
     title: 'Applied Maths',
     /* The specification first examined in 2023 — dated because it is verified

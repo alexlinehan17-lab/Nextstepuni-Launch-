@@ -56,6 +56,8 @@ import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/high
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
 import { CARDS as SPANISH_ORDINARY } from '../components/MarkBank/cards/spanish/ordinary';
+import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
+import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
@@ -467,6 +469,13 @@ const decks = [
    * baseline — nothing removed and nothing replaced. */
   ['german:higher', GERMAN_HIGHER, 111, '1e7b9a40d87f6aabc6a930548f04a6ecbc17c3655d973fa5ab4b75d59298672e'],
   ['german:ordinary', GERMAN_ORDINARY, 153, '1bec5e64b16fa1e80235f02dbe51f50151dabb358213a2e1265a55f5515e79d3'],
+  /* Italian is the second modern language and the twenty-first subject. Every
+   * card is new; none replaces anything. Like French, every reading card
+   * carries the printed matter it is answered from — a passage, an
+   * advertisement or a literary extract, bound to the page of the question
+   * paper facing its own questions. */
+  ['italian:higher', ITALIAN_HIGHER, 172, '28bebc58e0f4a6691c5d069624a0fd36fe9aced034bc8a1d03f321d54422fb64'],
+  ['italian:ordinary', ITALIAN_ORDINARY, 178, 'cb669b9c536926731311350530b448e7a3d24f940e1f46bea180d351935ba9d8'],
   /* Applied Maths is the seventeenth subject and the first to straddle a
    * syllabus break: 2021-2022 are the outgoing mechanics course and 2023-2025
    * the specification first examined in 2023. Enrolled explicitly so a later
@@ -494,12 +503,10 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // 10,495 before this session, plus seven subjects carded in three waves:
+    // 10,495 before this session, plus nine subjects carded in three waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
-    // French 260, Applied Maths 275 and German 264.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(13_361);
-    // French 260, Applied Maths 275 and Spanish 347.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(13_444);
+    // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_058);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -520,7 +527,9 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('german:')
         && !name.startsWith('applied-maths:')
         && !name.startsWith('applied-maths:')
-        && !name.startsWith('spanish:'))
+        && !name.startsWith('spanish:')
+        && !name.startsWith('italian:')
+        && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });
