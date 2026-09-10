@@ -1881,8 +1881,10 @@ def census_subject(subject):
                         subject, year, level)
                 elif cfg.get('walker') == 'ru':
                     parts, texts, files, P_, S_, claimed_ = census_ru(
+                        subject, year, level)
                 elif cfg.get('walker') == 'ja':
                     parts, texts, files, P_, S_ = census_ja(
+                        subject, year, level)
                 elif cfg.get('walker') == 'clas':
                     parts, texts, files, P_, S_ = census_clas(
                         subject, year, level)
@@ -1921,6 +1923,7 @@ def census_subject(subject):
                 marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 'ru':
                 flags += ru_flags(P_, S_, claimed_)
+                marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 'ja':
                 flags += ja_flags(P_, S_)
                 marks = {(None, 0): lang_cover_marks(files)}

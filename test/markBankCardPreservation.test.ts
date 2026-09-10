@@ -535,15 +535,13 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // 10,495 before this session, plus ten subjects carded in four waves:
+    // 10,495 before this session, plus twelve subjects carded in four waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
-    // Russian 199.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_257);
+    // Russian 199, Japanese 600 and Classical Studies 516.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(15_373);
     // Japanese 600.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_658);
     // Classical Studies 516.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_574);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

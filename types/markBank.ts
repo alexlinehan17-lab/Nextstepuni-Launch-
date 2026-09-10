@@ -316,11 +316,8 @@ export interface SecCardBase extends CardBase {
    *  Higher's two comprehensions, LA1, LA2 and CA1 its language- and
    *  cultural-awareness questions, IR1 and IR2 Ordinary's two retrieval texts
    *  and CD its comprehension. See UNIT_NAME in ru_scheme.py, which is where
-   *  the same tokens are defined for the readers. */
-  section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
-  | '1' | '2' | '3'
-  | 'T1' | 'T2' | 'T3' | 'AG'
-  | 'C1' | 'C2' | 'CD' | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1';
+   *  the same tokens are defined for the readers.
+   *
    *  Classical Studies adds a TOPIC form for the syllabus examined to 2022.
    *  That paper prints no sections and no question numbers at all: ten topics,
    *  each setting questions "(i)" to "(iv)" with lettered parts under them, so
@@ -328,8 +325,8 @@ export interface SecCardBase extends CardBase {
    *  "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers Questions 1-16 straight
    *  through Sections A and B, and files under 'A' and 'B'. */
   section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
-  | '1' | '2' | '3'
-  | 'T1' | 'T2' | 'T3' | 'AG'
+  | '1' | '2' | '3' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
+  | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1'
   | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
