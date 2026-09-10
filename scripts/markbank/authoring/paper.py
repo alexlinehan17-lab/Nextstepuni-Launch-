@@ -28,6 +28,7 @@ A part occasionally runs across two blocks, which shows up as text that stops
 without terminal punctuation. Continuation handles exactly that case and stops
 as soon as the sentence closes, so it cannot swallow a table.
 """
+import collections
 import os
 import re
 
@@ -257,7 +258,12 @@ def _split_own_line_markers(raw):
 # equation, and the reader then reads that equation's gas-state symbol "(g)"
 # as a part marker — a false ask, and a pre-existing marker bug (2023 HL Q9
 # already shows it) that is not this pipeline's to change by accident.
-MANGLED_PAPERS = {'technology'}
+# Applied Maths' 2023-2025 answer booklets are set in the same Word subset
+# fonts: "There are ten quesƟons on this paper" and "QuesƟon 1" are what the
+# text layer holds, so QHEAD matched nothing at all and the 2024 Higher paper
+# censused as ZERO asks. The 2021-2022 papers set their algebra in the same
+# way — "଺ହ u" for six fifths of u — and glyphmap.json already knows both.
+MANGLED_PAPERS = {'technology', 'applied-maths'}
 
 _GLYPHS = {}
 
@@ -466,10 +472,51 @@ class Paper:
         lone = [i for i, t in enumerate(blocks)
                 if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
         axis = {i for i in lone if i - 1 in lone or i + 1 in lone}
+        # A stacked fraction's DENOMINATOR welds itself onto the sentence set
+        # below it, and a denominator that happens to be the next question
+        # number opens that question early. 2021 Ordinary Applied Maths ends
+        # Q3(b) with "tan a = 3/4", the 4 sits on its own row, and the block
+        # reaches the walker as "4. The cliff is 98 m high and the particle
+        # lands...". Read as a head it took Q3(b)'s own (i) and (ii) with it,
+        # and the real "4. (a) Masses of 5 kg..." three blocks later was then
+        # rejected for going backwards -- so Question 4 lost both its letters
+        # and Q3(b) lost both its romans.
+        # Neither the number nor its neighbours can tell the two apart. What
+        # can is that the SEC prints a question's first part with it: the
+        # false head carries no part marker and the real one, printed later
+        # under the same number, does. A standalone OR between them means the
+        # second printing is a choice VARIANT (Construction Studies sets Q10
+        # twice that way), and then both are real.
+        def _dot(i):
+            m = re.match(r'^(\d{1,2})\.\s+', blocks[i])
+            return int(m.group(1)) if m else None
+
+        def _opens_part(i):
+            m = re.match(r'^\d{1,2}\.\s+', blocks[i])
+            return m is not None and _leading(blocks[i][m.end():])[:2] != (None, None)
+
+        dotted = collections.defaultdict(list)
+        for i in range(len(blocks)):
+            n = _dot(i)
+            if n is not None:
+                dotted[n].append(i)
+        false_heads = set()
+        for n, idx in dotted.items():
+            for a, b in zip(idx, idx[1:]):
+                if _opens_part(a) or not _opens_part(b):
+                    continue
+                if any(re.fullmatch(r'OR', blocks[k]) for k in range(a, b)):
+                    continue
+                false_heads.add(a)
 
         for index, text in enumerate(blocks):
             if index in contents:
                 continue
+            if index in false_heads:
+                # The fraction denominator above. Strip it and read what
+                # follows as the prose it is -- it is the tail of the part
+                # that is open, not a new question.
+                text = re.sub(r'^\d{1,2}\.\s+', '', text)
             # A standalone OR announces that the next head, though it repeats
             # the current question number, is a printed ALTERNATIVE the
             # student may choose instead — Construction Studies HL sets Q10
@@ -552,7 +599,21 @@ class Paper:
                     q, dot_heads = None, 0
                     self.stems = {}
                 if q is not None and not (q < found <= q + 3) and not variant:
-                    pass
+                    # A question's OWN number reprinted above one of its parts.
+                    # Two printings do this and neither is a new question: the
+                    # SEC re-heads a part carried onto a new page ("5. (b)"),
+                    # and a stacked fraction's denominator welds itself onto
+                    # the marker below it — 2021 HL Applied Maths sets
+                    # "8mu/5 <= T <= 16mu/5." with the 5 on its own row, and
+                    # the block reaches the walker as "5. (b) A smooth sphere
+                    # P has mass 2m...". Read as a head it is rejected here for
+                    # going backwards, and then the text no longer opens with a
+                    # marker, so the whole of Q5(b) was filed as a continuation
+                    # of Q5(a)(ii) and vanished from the census. Both readings
+                    # agree on what follows: it is this question's part.
+                    tail = text[m.end():].strip()
+                    if found == abs(q) and _leading(tail)[:2] != (None, None):
+                        text = tail
                 else:
                     if m.group(2):
                         dot_heads += 1

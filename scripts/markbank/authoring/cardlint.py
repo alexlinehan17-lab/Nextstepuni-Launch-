@@ -27,7 +27,7 @@ AUTHORED = os.path.join(HERE, '..', 'authored')
 
 SUBJECTS = ['maths', 'physics', 'biology', 'chemistry', 'economics', 'business',
             'home-economics', 'agricultural-science', 'construction-studies',
-            'lcvp']
+            'lcvp', 'applied-maths']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an
 # Agricultural Science paper about joining a suckler scheme is not a leak),

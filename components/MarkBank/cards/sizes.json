@@ -69,5 +69,9 @@
  "technology": {
   "higher": 357,
   "ordinary": 359
+ },
+ "applied-maths": {
+  "higher": 130,
+  "ordinary": 145
  }
 }

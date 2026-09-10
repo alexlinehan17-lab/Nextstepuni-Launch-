@@ -159,6 +159,8 @@ const SUBJECTS = {
     specVersion: 'lc-religious-education-2003',
     specNote: "Cards are tagged to the syllabus's own ten sections, A to J, which are the\n * sections the paper prints. A candidate answers Section A, two of B-D and one or\n * two of E-J; every section in the corpus is carded at both levels.",
     figureDir: 'public/exam-figures/religious-education',
+    blocked: new Set(),
+  },
   lcvp: {
     title: 'Link Modules',
     /* The LCVP programme statement, still examined: Life, Community and Work
@@ -169,6 +171,21 @@ const SUBJECTS = {
     specVersion: 'lcvp-link-modules-programme-statement',
     specNote: 'Cards are tagged to the units of the LCVP Link Modules programme statement, which is\n * the one these papers were sat under. Life, Community and Work replaces it from 2028.\n * The paper is COMMON level: one paper, sat by everyone, cited "YYYY CL".',
     figureDir: 'public/exam-figures/lcvp',
+    blocked: new Set(),
+  },
+  'applied-maths': {
+    title: 'Applied Maths',
+    /* The specification first examined in 2023 — dated because it is verified
+     * against the papers themselves: the 2023-2025 booklets head themselves
+     * "Applied Mathematics – M32 2025" and set the graph theory, critical-path
+     * analysis and difference equations the revised course added. The 2021 and
+     * 2022 papers are the OUTGOING syllabus, which the specification kept whole
+     * inside Strand 3, so both sides of the break tag against one taxonomy.
+     * See APPLIED_MATHS_STRANDS in components/MarkBank/deck.ts, which reads the
+     * four strands from the canonical curriculum. */
+    specVersion: 'lc-applied-mathematics-2021',
+    specNote: 'Cards are tagged to the four strands of the Applied Mathematics specification\n * first examined in 2023. The 2021 and 2022 papers were sat on the outgoing\n * mechanics syllabus, which Strand 3 of that specification contains whole.',
+    figureDir: 'public/exam-figures/applied-maths',
     blocked: new Set(),
   },
   'agricultural-science': {
@@ -248,7 +265,13 @@ function schemeFor(subjectId, card) {
  * smaller version of the right card, it is the wrong one, and it went out
  * looking poor because nothing was checking. Greek is genuinely Greek here,
  * and the two combining marks carry p-hat and z-bar. */
-const REAL = /[\u0370-\u03FF\u0302\u0305\u02B0-\u02FF]/;
+/* Characters inside BROKEN's range that a scheme really does print.
+ * Greek and the hat and bar were here already; the DOT and DOUBLE DOT are
+ * Newton's notation for a derivative — the 2022 Higher Applied Maths scheme
+ * sets "ẋ = A ω cos(ωt + ε)" and "ẍ = −A ω² sin(ωt + ε)" — and U+1D62-U+1D6A
+ * are the Unicode subscripts mathtext.subscripts() itself emits, so refusing
+ * them threw away a card for spelling v_r the way the reader spelled it. */
+const REAL = /[\u0370-\u03FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A]/;
 const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 /** Undo a subset font's broken ToUnicode map, using the table derived from the
  * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied

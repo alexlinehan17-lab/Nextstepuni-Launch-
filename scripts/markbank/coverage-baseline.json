@@ -14,6 +14,21 @@
     },
     "refsHash": "967a2d72ff0648b1"
   },
+  "applied-maths": {
+    "cards": 275,
+    "contentHash": "3583d52f25388afa",
+    "coveragePct": 67.9,
+    "covered": 286,
+    "excluded": 52,
+    "leaves": 498,
+    "open": 160,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "878e72543b3b249c"
+    },
+    "refsHash": "0146204025df9286"
+  },
   "art": {
     "cards": 462,
     "contentHash": "f84ca9f2c3b181ad",
