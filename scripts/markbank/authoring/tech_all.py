@@ -61,13 +61,27 @@ LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 
 # A scheme line that states no answer. Each of these shipped as a card's whole
 # answer in some other subject before it was gated.
+# A bare "Any two:" is the examiner saying how many of the lines below to
+# credit. "Any two, solar, wind, etc." is not: it NAMES them, and the count is
+# only its opening words. Dropping both cost seven parts their whole answer.
 NOT_A_POINT = re.compile(
-    r'^(?:any (?:other|valid|two|three|one|four)\b.{0,24}$'
-    r'|accept(?:able)?\b.{0,30}$'
+    r'^(?:any (?:other|valid|two|three|one|four)(?:\s+of\s+the\s+following)?'
+    r'\s*[:.\u2013-]?'
+    r'|accept(?:able)?\b.{0,30}'
     r'|award\b|allow\b|note:|marks? awarded'
-    r'|suggested\b.{0,20}$'
+    r'|suggested\b.{0,20}'
     r'|or\b|and\b|etc\.?'
     r'|[^.?!]{0,28}:)\s*$', re.I)
+
+# A worked calculation states an answer without ever using a word: "F x 0.5 M
+# = 50 N x 0.8 M", "1000 ohm". The letters-only test threw away every line of
+# the arithmetic on eleven parts, and then refused the part for stating
+# nothing.
+CALCULATION = re.compile(r'\d.*[=\u2248]|[=\u2248].*\d'
+                         # Both ohm signs: the SEC's text layer gives U+2126 OHM SIGN in one
+                         # scheme and U+03A9 GREEK CAPITAL OMEGA in another, and
+                         # "1000 ohm" is the whole answer to 2022 Ordinary Option 2(a)(i).
+                         r'|\d\s*(?:[\u03a9\u2126\u00b5]|ohms?|[VWANJ]|Hz|kHz|mA|kW|RPM)\b')
 
 # The running footer, and the page number the extractor leaves welded to a
 # marking point's last line.
@@ -175,7 +189,7 @@ def cardable(points):
         # WORD is enough to be an answer, though: "Transistor." is the whole
         # of 2024 Higher Q4(i), and demanding two threw it away.
         if len(t) < 4 or NOT_A_POINT.match(t) \
-                or not re.search(r'[A-Za-z]{3,}', t):
+                or not (re.search(r'[A-Za-z]{3,}', t) or CALCULATION.search(t)):
             continue
         out.append(t)
     return out

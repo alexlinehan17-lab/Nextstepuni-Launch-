@@ -1,0 +1,117 @@
+[
+ {
+  "ref": "2021 OL Section A Q7",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2021 OL scheme, A Q7: tariff '(Very good sketch - 8 marks, A Fair sketch - 4 marks)'; the scheme reprints the ask ('The image shows a wooden birdhouse. In the') and answers it graphically, leaving only 'B' in the text layer"
+ },
+ {
+  "ref": "2021 OL Section A Q11(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2021 OL scheme, A Q11(i): tariff '(4+4 marks)'; the scheme reprints the ask ('On the image, label the load, the effort and the') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2021 OL Section B Q2(b)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2021 OL scheme, B Q2(b)(ii): tariff '(8 Marks, 2+4+2)'; the scheme reprints the ask ('Draw a labelled diagram of a suitable circuit for the LED light source. Include ') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2022 HL Section C Q2(b)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2022 HL scheme, C Q2(b)(ii): tariff '(16 marks, 8 + 4 + 4)'; the scheme reprints the ask ('Draw a truth table for the Logic Gate shown. Input 1 Input 2 Output') and answers it graphically, leaving only '0 0 0 0 1 1 1 0 1 1 1 1' in the text layer"
+ },
+ {
+  "ref": "2022 HL Section C Q2(c)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2022 HL scheme, C Q2(c)(ii): tariff '(14 marks, 6 + 8)'; the scheme reprints the ask ('Draw the circuit configuration of the 555 timer in astable mode.') and answers it graphically, leaving only '7 8 4' in the text layer"
+ },
+ {
+  "ref": "2022 HL Section C Q2(d)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2022 HL scheme, C Q2(d)(i): tariff '(14 marks, 8 + 6)'; the scheme reprints the ask ('Draw a circuit diagram with an appropriate input, ‘Darlington pair’ transistors ') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2022 OL Section A Q7",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2022 OL scheme, A Q7: tariff '(Very good sketch- 8 marks, fair sketch 4 marks)'; the scheme reprints the ask ('The image shows a Stockholm toddler chair that can be used at two different heig') and answers it graphically, leaving only 'A' in the text layer"
+ },
+ {
+  "ref": "2022 OL Section C Q2(b)(iii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2022 OL scheme, C Q2(b)(iii): tariff '(20 Marks, 8+6+6)'; the scheme reprints the ask ('Redraw the given circuit diagram to show how the B') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2023 HL Section C Q2(b)(iii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2023 HL scheme, C Q2(b)(iii): tariff '(16 marks, 6 + 6 + 4)'; the scheme reprints the ask ('Show how the given circuit could be modified to provide an output for a 220 V fa') and answers it graphically, leaving only '9 V A 10kΩ IC B 10kΩ 0 V' in the text layer"
+ },
+ {
+  "ref": "2023 OL Section A Q7",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2023 OL scheme, A Q7: tariff '(8 marks)'; the scheme reprints the ask ('The image shows a bamboo cookbook stand.') and answers it graphically, leaving only 'A' in the text layer"
+ },
+ {
+  "ref": "2023 OL Section C Q2(b)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2023 OL scheme, C Q2(b)(ii): tariff '(20 Marks, 6+8+6)'; the scheme reprints the ask ('Using the DPDT symbol shown, draw a circuit diagram') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2023 OL Section C Q2(d)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2023 OL scheme, C Q2(d)(ii): tariff '(10 Marks, 4+6)'; the scheme reprints the ask ('Using the Formulae and Tables booklet or otherwise,') and answers it graphically, leaving only 'E' in the text layer"
+ },
+ {
+  "ref": "2024 HL Section C Q2(b)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2024 HL scheme, C Q2(b)(i): tariff '(16 marks, 6 + 6 + 4)'; the scheme reprints the ask ('Redraw the circuit diagram to include an appropriate output.') and answers it graphically, leaving only 'R1 7 4 8 R2 6 3 2 1 5 C' in the text layer"
+ },
+ {
+  "ref": "2024 OL Section A Q4(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2024 OL scheme, A Q4(ii): tariff '(4+4 marks)'; the scheme reprints the ask ('Using the Formulae and Tables booklet, or otherwise,') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2024 OL Section A Q7",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2024 OL scheme, A Q7: tariff '(Very good sketch- 8 marks, fair sketch 4 marks)'; the scheme reprints the ask ('The image shows a machine tool stand.') and answers it graphically, leaving only 'A' in the text layer"
+ },
+ {
+  "ref": "2024 OL Section B Q3(b)(iii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2024 OL scheme, B Q3(b)(iii): tariff '(8 Marks, 2+4+2)'; the scheme reprints the ask ('A student has decided to make a model of a similar') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2024 OL Section C Q2(b)(iii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2024 OL scheme, C Q2(b)(iii): tariff '(20 Marks, 6+8+6)'; the scheme reprints the ask ('Redraw the circuit to include an LED output') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2025 HL Section C Q2(c)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2025 HL scheme, C Q2(c)(ii): tariff '(14 marks, 8 + 6)'; the scheme reprints the ask ('Compile a truth table for this system.') and answers it graphically, leaving only 'A B C D E 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 1 0 0 1 0 0 0 0 1 0 1 0 0 1 1 1 0 1 0 0 0 0 ' in the text layer"
+ },
+ {
+  "ref": "2025 OL Section A Q4",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2025 OL scheme, A Q4: tariff '(Very good sketch- 8 marks, good sketch- 6 marks, fair sketch 4 marks)'; the scheme reprints the ask ('In the box provided, sketch a well-proportioned elevation of the toy when viewed') and answers it graphically, leaving only 'A' in the text layer"
+ },
+ {
+  "ref": "2025 OL Section A Q9",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2025 OL scheme, A Q9: tariff '(Very good diagram- 8 marks, good diagram- 6 marks, fair diagram- 4 marks)'; the scheme reprints the ask ('The image shows a DC motor, a push-to-make switch, and a battery box connected t') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2025 OL Section C Q2(b)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2025 OL scheme, C Q2(b)(ii): tariff '(20 Marks, 6+8+6)'; the scheme reprints the ask ('Draw a labelled diagram of a suitable electronic circuit') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2025 OL Section C Q2(c)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what survives beside it is the drawing’s own labels rather than a stated marking point.",
+  "evidence": "2025 OL scheme, C Q2(c)(ii): tariff '(10 marks, 6+4)'; the scheme reprints the ask ('In your answerbook, draw and complete the truth table 0 1 0 1') and answers it graphically, leaving only '1 1 1 0' in the text layer"
+ },
+ {
+  "ref": "2025 OL Section C Q2(d)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff is printed, so the part is priced; there is nothing to lift.",
+  "evidence": "2025 OL scheme, C Q2(d)(ii): tariff '(10 marks, 6+4)'; the scheme reprints the ask ('Using the Formulae and Tables booklet, or otherwise,') and answers it graphically, with no text at all beneath it"
+ }
+]

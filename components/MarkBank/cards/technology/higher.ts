@@ -782,8 +782,9 @@ export const CARDS: SecCard[] = [
     questionText: "A transistor has a collector current of 0.1 A and a base current of 1 mA. Select the most suitable transistor from the table given and justify your answer.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Transistor Gain = Collector current = 0.1 = 100", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Base current 0.001", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "C = BC107", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Transistor Gain = Collector current = 0.1 = 100", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Base current 0.001", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1670,9 +1671,11 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-hl-b3c-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 HL Section B Q3(c)(ii)",
     questionText: "The voltage (V) of a battery is 12 V. The voltage drop (Vf) across an LED cluster is 2 V and the maximum current that the LED cluster can draw is 20 mA. Calculate the minimum value of the resistor required to protect the LED cluster.",
-    tariffModel: {"kind":"fixed","notation":"(6 marks, 3 + 3)"}, totalMarks: 3,
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 3 + 3)"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "R = (Vs – Vled) / ILed", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "R = (Vs – Vled) / ILed", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "12 – 2 = 10V", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "10V/20mA = 10/0.02 = 500Ω", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -2775,6 +2778,19 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-a15", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2023 HL Section A Q15",
+    questionText: "Sketch two orthographic views of the ‘non-conformist chair’ designed by Irish innovator, Eileen Gray in 1926. Answerbook for Sections B and C Instructions Questions for Sections B and C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs, and diagrams only. Part Start each question on a new page Question 11 Part Start each question on a new page Question 12 Part Start each question on a new page Question 13 Part Start each question on a new page Question 14 Part Start each question on a new page Question 15 Part Start each question on a new page Question Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Acknowledgements Image 1. Page 3. Q.1. https://www.irishtimes.com/tags/centre-for-research/ Image 2. Page 3. Q.2. https://www.madeofirish.com/collections/copper-fish-studio-1 Image 1. Page 4. Q.3. https://www.pumpworld.co.uk/Specify/Supergen-Selector Image 2. Page 4. Q.4. https://grabcad.com/library/connector-rj11-rj12-rj45-1 Image 1. Page 5. Q.6. https://www.milwaukeetool.com/Products/Power-Tools/Drilling/Right- Angle-Drills/0721-20 Image 2. Page 5. Q.6. https://skycraftsurplus.com/products/hobby-motor-1-5-12-volt-dc-3-000- rpm.html Image 3. Page 5. Q.7. https://www.logitech.com/en-us/about/designawards.html Image 1. Page 6. Q.9. https://easydrawingguides.com/how-to-draw-a-wind-turbine/ Image 1. Page 7. Q.10. https://www.notesandsketches.co.uk/Gears.html Image 2. Page 7. Q.11. https://driftinnovation.com/products/drift-vented-helmet-mount-1 Image 1. Page 8. Q.12. https://www.juvidesigns.com/ Image 2. Page 8. Q.13. https://www.iqsdirectory.com/articles/gearbox/gear-reducers.html Image 1. Page 9. Q.14. https://www.hindleys.com/shop-online/vacuum-forming-sheet-hips.html Image 2. Page 9. Q.15. https://www.museum.ie/en-IE/Museums/Decorative-Arts- History/Exhibitions/Eileen-Gray Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks 3 + 3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any two orthographic views", marks: 6, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-b2a-i", topicId: "tech-core-ict", conceptId: "core-ict",
@@ -2990,6 +3006,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "of a protective resistor required when powered by a 12 V supply.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "R = Vs – Vf / I LED", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "R = V / I = 12-2 / 0.025 = 400 Ω", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3974,9 +3991,10 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Calculation: 15 Teeth 75 Teeth", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Driven/Driver x Driven/Driver", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Gear A rotates 25 times faster.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "25 x 17 = 425 RPM.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Gear speed Gear A = 425 RPM.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "75/15 x 75/15 = 5/1 x 5/1 = 25/1 = 25:1", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Gear A rotates 25 times faster.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "25 x 17 = 425 RPM.", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "Gear speed Gear A = 425 RPM.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4013,6 +4031,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "an effort force of 200 N. Assume g = 9.81 m/s2", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Mechanical advantage = Load force / effort force", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "1800 x 9.81/200 =", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "17,658/200 = 88.29", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4560,6 +4580,28 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2024 HL Section C Q2(b)(ii)",
+    questionText: "Calculate the frequency of the output if R1 = 10 kΩ, R2 = 60 kΩ and C = 10 µF. Note: f = 1.44 / (R1 + 2R2) × C",
+    tariffModel: {"kind":"questionTotal","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "f = 1.44 / (R1 + 2R2) × C = 1.44 / (10000 + (2 x 60000)) × 0.00001", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "1.44/(130,000 x .00001) = 1.44 / 1.3 f = 1.107 Hz", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q2b-art.png",
+          "srcHash": "54964d6028b891fa6da11ad06c6203b2",
+          "alt": "The pin layout of an eight-pin integrated circuit drawn as a plain rectangle with four leads on each side. The pin numbers read 7, 4 and 8 across the top, 6 and 3 in the middle, and 2, 1 and 5 across the bottom.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 HL Section C Q2(b)(iii)",
     questionText: "Describe, with annotated sketches, the process of soldering a printed circuit board (PCB) for the circuit shown. Make reference to a means of protecting the IC and best practice for safe soldering in a school workshop.",
@@ -4878,7 +4920,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "BEQ (break-even quantity) = Fixed costs", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Manual cost per unit – automated cost per unit", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Option A is most suitable for a batch of 50 products.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "= 500 = 60", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Option A is most suitable for a batch of 50 products.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -5199,7 +5242,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Work done = force x distance", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Work done = 1200 x 5 = 6000", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Power required (W/T) = 6000/6 = 1000 W", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "1200 N", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Power required (W/T) = 6000/6 = 1000 W", marks: null, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2025-HL-paper-secA-q5-art",
@@ -5444,10 +5488,11 @@ export const CARDS: SecCard[] = [
     questionText: "An RGB LED requires a voltage of 2.2 V (red), 3.3 V (green), and 3.3 V (blue). If the current for each diode is set to 20 mA, calculate the total power consumption of one RGB LED.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4 + 3 + 3)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Red LED = 2.2V × 0.02A = 0.044W", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Green LED = 3.3V × 0.02A = 0.066W", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Blue LED = 3.3V × 0.02A = 0.066W", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Total Power of one RGB LED = 0.044W + 0.066W + 0.066W = 0.176W", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "P = V × I (P = I2 x R or P=V2/R)", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Red LED = 2.2V × 0.02A = 0.044W", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Green LED = 3.3V × 0.02A = 0.066W", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Blue LED = 3.3V × 0.02A = 0.066W", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Total Power of one RGB LED = 0.044W + 0.066W + 0.066W = 0.176W", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -5458,9 +5503,11 @@ export const CARDS: SecCard[] = [
     id: "tech-2025-hl-b2b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2025 HL Section B Q2(b)(ii)",
     questionText: "Calculate the value of the protective resistor required for a 12 V car LED light which is limited to a current of 15 mA with a voltage drop of 1.95 V.",
-    tariffModel: {"kind":"fixed","notation":"(10 marks, 4 + 3 + 3)"}, totalMarks: 3,
+    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4 + 3 + 3)"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "R = V = 10.05 = 670 Ω (680 Ω is the closest standard resistor size)", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "V = 12 - 1.95 = 10.05 V", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "I = 15 mA = 0.015 A", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "R = V = 10.05 = 670 Ω (680 Ω is the closest standard resistor size)", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -5936,7 +5983,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Meter A: I = V/Rtotal", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Meter V: V = I x R1", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "I=12/(4000 + 2000) = .002A", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Meter V: V = I x R1", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "V= .002 x 4000 = 8V", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -6144,9 +6193,10 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Manual cost per unit – automated cost per unit)", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "= 200 units", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "(or read from graph, where line A and B", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "intersect)", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "= 3000", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "= 200 units", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "(or read from graph, where line A and B", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "intersect)", marks: null, openList: true },
     ],
   } as SecCard,
   {

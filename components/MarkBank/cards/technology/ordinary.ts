@@ -182,9 +182,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q8(ii)",
     stem: "The graphic shows the symbol for a component commonly used in electronics.",
     questionText: "A voltage of 9 V is applied across a resistor. A current of 0.06 A flows through the resistor. Calculate the value of the resistor.",
-    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Note: R= V/I", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Note: R= V/I", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "R= 9/0.06 = 150 Ω", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -687,9 +688,10 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Note: P = V × I", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "I = 2000/230 = 8.69 Amps (A)", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Fuse in", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "holder", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "2000 W = 230 V x I", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "I = 2000/230 = 8.69 Amps (A)", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Fuse in", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "holder", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1106,6 +1108,20 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-a2-i", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2022 OL Section A Q2(i)",
+    stem: "The Microgeneration Support Scheme has been set up to enable people to meet their own electricity needs. Under the proposed scheme, people will be able to sell their excess electricity to offset their energy bills.",
+    questionText: "Suggest two microgeneration systems that could be installed in Irish households to meet their own electricity needs.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any two, solar, wind, etc.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-a2-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2022 OL Section A Q2(ii)",
     stem: "The Microgeneration Support Scheme has been set up to enable people to meet their own electricity needs. Under the proposed scheme, people will be able to sell their excess electricity to offset their energy bills.",
@@ -1337,6 +1353,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Calculate the voltage drop across the resistor.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Note: V = I × R", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "V = 0.013 × 300 = 3.9V", marks: null, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2022-OL-paper-secA-q11-art",
@@ -1693,6 +1710,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The number of axes along or around which an object can move.", marks: 6, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c2a-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2022 OL Section C Q2(a)(i)",
+    stem: "Tolerance code 0 Black 1% Brown 1 Brown 2% Red 2 Red 5% Gold 3 Orange 10% Silver 4 Yellow R 5 Green 6 Blue 7 Violet",
+    questionText: "The colour band sequence of R is brown, black, red and gold. State the value of the resistor R.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 +4)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1000Ω R", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -4399,6 +4430,21 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a5-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2025 OL Section A Q5(ii)",
+    stem: "The image shows a resistor commonly used in electronics.",
+    questionText: "A voltage of 9 V is applied across a resistor of 100 Ω. Calculate the current flowing through the resistor.",
+    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "9 = I x 100", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "I = 9/100 = 0.09A (90mA)", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-a6-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2025 OL Section A Q6(i)",
     stem: "The image shows a structure used in the construction of a warehouse.",
@@ -4633,6 +4679,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Weight, size of battery, tyre pressure, terrain, etc.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-b2c-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "B", questionRef: "2025 OL Section B Q2(c)(ii)",
+    questionText: "Calculate the power delivered when the motor draws 10 A from the 48 V battery. Note: P = V × I",
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "P = 48 x 10 = 480 W", marks: 2, openList: true },
     ],
   } as SecCard,
   {
