@@ -560,7 +560,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-i", topicId: "japanese-5-4", conceptId: "when-where",
     section: "2", questionRef: "2021 OL Section 2C Q(i)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "何 (a) when (b) where (c) what (d) how",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -584,7 +583,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-ii", topicId: "japanese-5-4", conceptId: "japan-day-sun-book",
     section: "2", questionRef: "2021 OL Section 2C Q(ii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "日本 (a) Japan (b) day (c) the sun (d) book",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -608,7 +606,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-iii", topicId: "japanese-5-4", conceptId: "month-year-week-thousand",
     section: "2", questionRef: "2021 OL Section 2C Q(iii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "年 (a) month (b) year (c) week (d) thousand",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -632,7 +629,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-iv", topicId: "japanese-5-4", conceptId: "speak-electricity-train-phone",
     section: "2", questionRef: "2021 OL Section 2C Q(iv)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "電話 (a) speak (b) electricity (c) train (d) phone",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -656,7 +652,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-v", topicId: "japanese-5-4", conceptId: "child-like-dislike-girl",
     section: "2", questionRef: "2021 OL Section 2C Q(v)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "好き (a) child (b) like (c) dislike (d) girl",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -680,7 +675,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-vi", topicId: "japanese-5-4", conceptId: "now-today-time-minute",
     section: "2", questionRef: "2021 OL Section 2C Q(vi)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "今 (a) now (b) today (c) time (d) minute",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -704,7 +698,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-vii", topicId: "japanese-5-4", conceptId: "strong-rice-field-man-father",
     section: "2", questionRef: "2021 OL Section 2C Q(vii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "男 (a) strong (b) rice field (c) man (d) father",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -728,7 +721,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-viii", topicId: "japanese-5-4", conceptId: "woman-love-mother",
     section: "2", questionRef: "2021 OL Section 2C Q(viii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "女 (a) woman (b) love (c) I (d) mother",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -752,7 +744,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-ix", topicId: "japanese-5-4", conceptId: "seven-person-enter",
     section: "2", questionRef: "2021 OL Section 2C Q(ix)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "人 (a) seven (b) person (c) enter (d) me",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -776,7 +767,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-x", topicId: "japanese-5-4", conceptId: "abroad-china-foreigner-world",
     section: "2", questionRef: "2021 OL Section 2C Q(x)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "外国 (a) abroad (b) China (c) foreigner (d) world",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -800,7 +790,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-xi", topicId: "japanese-5-4", conceptId: "four-forty-eight-eighteen",
     section: "2", questionRef: "2021 OL Section 2C Q(xi)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "四つ (a) four (b) forty (c) eight (d) eighteen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -824,7 +813,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-xii", topicId: "japanese-5-4", conceptId: "shopping-shop-buy-speak",
     section: "2", questionRef: "2021 OL Section 2C Q(xii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "買います (a) shopping (b) a shop (c) buy (d) speak",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -848,7 +836,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "small-tree-college-big",
     section: "2", questionRef: "2021 OL Section 2C Q(xiii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
     questionText: "大きい (a) small (b)tree (c)college (d) big",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1660,7 +1647,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2a-1", topicId: "japanese-5-2", conceptId: "floor-musical-instruments-yodobashi-akiba",
     section: "2", questionRef: "2022 OL Section 2A Q1",
-    stem: "Cén t‐urlár in Yodobashi Akiba ar ar féidir 1. On which floor can you buy musical leat uirlisí ceoil a cheannach? instruments in Yodobashi Akiba?",
     questionText: "On which floor can you by musical instruments in Yodobashi AKIBA?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1731,7 +1717,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2a-4", topicId: "japanese-5-2", conceptId: "apart-akihabara-where-find-other-mandarake",
     section: "2", questionRef: "2022 OL Section 2A Q4",
-    stem: "Seachas in Akihabara, cá háit eile is féidir 4. Apart from Akihabara, where can you find teacht ar shiopaí Mandarake? Mandarake shops?",
     questionText: "Apart from Akihabara, where can you find other Mandarake shops?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1946,7 +1931,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-i", topicId: "japanese-5-4", conceptId: "weather-electrical-well-phone",
     section: "2", questionRef: "2022 OL Section 2C Q(i)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "電気 (a) weather (b) electrical (c) well (d) phone",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1970,7 +1954,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-ii", topicId: "japanese-5-4", conceptId: "year-month-noon",
     section: "2", questionRef: "2022 OL Section 2C Q(ii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "年 (a) year (b) month (c)noon (d) pm",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1994,7 +1977,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-iii", topicId: "japanese-5-4", conceptId: "expensive-cheap-big-small",
     section: "2", questionRef: "2022 OL Section 2C Q(iii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "大きい (a) expensive (b) cheap (c) big (d) small",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2018,7 +2000,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-iv", topicId: "japanese-5-4", conceptId: "day-sun-today-japan",
     section: "2", questionRef: "2022 OL Section 2C Q(iv)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "日本 (a) day (b) sun (c) today (d) Japan",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2042,7 +2023,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-v", topicId: "japanese-5-4", conceptId: "woman-child-like",
     section: "2", questionRef: "2022 OL Section 2C Q(v)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "好き (a) woman (b) I (c) child (d) like",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2066,7 +2046,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-vi", topicId: "japanese-5-4", conceptId: "thing-place-car-train",
     section: "2", questionRef: "2022 OL Section 2C Q(vi)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "車 (a) thing (b) place (c) car (d) train",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2090,7 +2069,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-vii", topicId: "japanese-5-4", conceptId: "book-ten-tree-water",
     section: "2", questionRef: "2022 OL Section 2C Q(vii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "本 (a) book (b) ten (c) tree (d) water",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2114,7 +2092,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-viii", topicId: "japanese-5-4", conceptId: "return-think-speak",
     section: "2", questionRef: "2022 OL Section 2C Q(viii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "行きます (a) return (b) go (c) think (d) speak",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2138,7 +2115,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-ix", topicId: "japanese-5-4", conceptId: "every-day-4th-every-week-morning",
     section: "2", questionRef: "2022 OL Section 2C Q(ix)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "毎日 (a) every day (b) the 4th (c) every week (d) morning",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2162,7 +2138,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-x", topicId: "japanese-5-4", conceptId: "midday-midnight",
     section: "2", questionRef: "2022 OL Section 2C Q(x)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "午前 (a) am (b) pm (c) midday (d) midnight",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2186,7 +2161,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-xi", topicId: "japanese-5-4", conceptId: "drink-food-eat-thing",
     section: "2", questionRef: "2022 OL Section 2C Q(xi)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "物 (a) a drink (b) food (c) eat (d) thing",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2210,7 +2184,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-xii", topicId: "japanese-5-4", conceptId: "house-new-cheap-woman",
     section: "2", questionRef: "2022 OL Section 2C Q(xii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "安い (a) house (b) new (c) cheap (d) woman",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2234,7 +2207,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
     id: "ja-2022-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "foreign-english-china-study",
     section: "2", questionRef: "2022 OL Section 2C Q(xiii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "英語 (a) foreign (b) English (c) China (d) study",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3066,7 +3038,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-1-8", topicId: "japanese-5-0", conceptId: "day-week-christmas-special-menu-start",
     section: "1", questionRef: "2023 OL Section 1 Q8",
-    stem: "Cén lá den tseachtain a dtosaíonn Biachlár 8. On which day of the week does the Christmas Speisialta na Nollag? Special Menu start?",
     questionText: "On which day of the week does the Christmas Special Menu start?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3114,7 +3085,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2a-3", topicId: "japanese-5-2", conceptId: "apart-singing-other-jobs-kenshi",
     section: "2", questionRef: "2023 OL Section 2A Q3",
-    stem: "Seachas an amhránaíocht, cad iad na poist 3. Apart from singing, what other jobs does eile a dhéanann Kenshi? Kenshi do?",
     questionText: "Apart from singing, what other jobs does Kenshi do?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -3184,7 +3154,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-i", topicId: "japanese-5-4", conceptId: "language-person-enter",
     section: "2", questionRef: "2023 OL Section 2C Q(i)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "人 (a) language (b) person (c) enter (d) what",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3208,7 +3177,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-ii", topicId: "japanese-5-4", conceptId: "japan-book-sun-day",
     section: "2", questionRef: "2023 OL Section 2C Q(ii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "本 (a) Japan (b) book (c) sun (d) day",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3232,7 +3200,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-iii", topicId: "japanese-5-4", conceptId: "read-say-speak-learn",
     section: "2", questionRef: "2023 OL Section 2C Q(iii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "読みます (a) read (b) say (c) speak (d) learn",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3256,7 +3223,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-iv", topicId: "japanese-5-4", conceptId: "hobby-college-dislike-love",
     section: "2", questionRef: "2023 OL Section 2C Q(iv)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "大好き (a) hobby (b) college (c) dislike (d) love",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3280,7 +3246,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-v", topicId: "japanese-5-4", conceptId: "study-class-school-student",
     section: "2", questionRef: "2023 OL Section 2C Q(v)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "学校 (a) study (b) class (c) school (d) student",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3304,7 +3269,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-vi", topicId: "japanese-5-4", conceptId: "now-time-today-minute",
     section: "2", questionRef: "2023 OL Section 2C Q(vi)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "時 (a) now (b) time (c) today (d) minute",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3328,7 +3292,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-vii", topicId: "japanese-5-4", conceptId: "japan-china-honda-sunday",
     section: "2", questionRef: "2023 OL Section 2C Q(vii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "日本 (a) Japan (b) China (c) Honda (d) Sunday",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3352,7 +3315,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-viii", topicId: "japanese-5-4", conceptId: "woman-love-father-mother",
     section: "2", questionRef: "2023 OL Section 2C Q(viii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "お母さん (a) woman (b) love (c) father (d) mother",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3376,7 +3338,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-ix", topicId: "japanese-5-4", conceptId: "big-small-expensive-new",
     section: "2", questionRef: "2023 OL Section 2C Q(ix)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "大きい (a) big (b) small (c) expensive (d) new",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3400,7 +3361,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-x", topicId: "japanese-5-4", conceptId: "primary-school-university-high-school-teacher",
     section: "2", questionRef: "2023 OL Section 2C Q(x)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "高校 (a) primary school (b) university (c) high school (d) teacher",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3424,7 +3384,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-xi", topicId: "japanese-5-4", conceptId: "morning-afternoon-after-before",
     section: "2", questionRef: "2023 OL Section 2C Q(xi)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "後 (a) morning (b) afternoon (c) after (d) before",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3448,7 +3407,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-xii", topicId: "japanese-5-4", conceptId: "bad-good-right-hand-above",
     section: "2", questionRef: "2023 OL Section 2C Q(xii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "上手 (a) bad at (b) good at (c) right hand (d) above",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3472,7 +3430,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "china-foreigner-outside-abroad",
     section: "2", questionRef: "2023 OL Section 2C Q(xiii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "外国 (a) China (b) foreigner (c) outside (d) abroad",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4142,7 +4099,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-1-2", topicId: "japanese-5-0", conceptId: "sports-available-tokyo-dome",
     section: "1", questionRef: "2024 OL Section 1 Q2",
-    stem: "Ainmnigh trí spórt atá ar fáil i gCruinneachán",
     questionText: "Name three sports available at Tokyo Dome.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4166,7 +4122,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-1-3", topicId: "japanese-5-0", conceptId: "category-big",
     section: "1", questionRef: "2024 OL Section 1 Q3",
-    stem: "In which category is the Big O?",
     questionText: "What category is the Big O in?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -4236,7 +4191,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-1-7", topicId: "japanese-5-0", conceptId: "places-use-gift-card",
     section: "1", questionRef: "2024 OL Section 1 Q7",
-    stem: "Ainmnigh dhá áit ar féidir an cárta",
     questionText: "Name two places you can use the gift card.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4545,7 +4499,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-i", topicId: "japanese-5-4", conceptId: "expensive-cheap-big-small",
     section: "2", questionRef: "2024 OL Section 2C Q(i)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "小さい (a) expensive (b) cheap (c) big (d) small",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4569,7 +4522,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-ii", topicId: "japanese-5-4", conceptId: "man-woman-child-person",
     section: "2", questionRef: "2024 OL Section 2C Q(ii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "男 (a) man (b) woman (c) child (d) person",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4593,7 +4545,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-iii", topicId: "japanese-5-4", conceptId: "eat-food-lunch-drink",
     section: "2", questionRef: "2024 OL Section 2C Q(iii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "食べ物 (a) eat (b) food (c) lunch (d) drink",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4617,7 +4568,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-iv", topicId: "japanese-5-4", conceptId: "japan-china-abroad-middle",
     section: "2", questionRef: "2024 OL Section 2C Q(iv)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "中国 (a) Japan (b) China (c) abroad (d) middle",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4641,7 +4591,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-v", topicId: "japanese-5-4", conceptId: "day-week-now-time",
     section: "2", questionRef: "2024 OL Section 2C Q(v)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "今 (a) day (b) week (c) now (d) time",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4665,7 +4614,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-vi", topicId: "japanese-5-4", conceptId: "electricity-energy-train-weather",
     section: "2", questionRef: "2024 OL Section 2C Q(vi)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "天気 (a) electricity (b) energy (c) train (d) weather",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4689,7 +4637,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-vii", topicId: "japanese-5-4", conceptId: "cheap-expensive-female-like",
     section: "2", questionRef: "2024 OL Section 2C Q(vii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "安い (a) cheap (b) expensive (c) female (d) like",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4713,7 +4660,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-viii", topicId: "japanese-5-4", conceptId: "left-right-above-under",
     section: "2", questionRef: "2024 OL Section 2C Q(viii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "上 (a) left (b) right (c) above (d) under",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4737,7 +4683,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-ix", topicId: "japanese-5-4", conceptId: "korean-chinese-foreigner-tourist",
     section: "2", questionRef: "2024 OL Section 2C Q(ix)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "外国人 (a) Korean (b) Chinese (c) foreigner (d) tourist",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4761,7 +4706,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-x", topicId: "japanese-5-4", conceptId: "study-class-school-college",
     section: "2", questionRef: "2024 OL Section 2C Q(x)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "勉強 (a) study (b) class (c) school (d) college",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4785,7 +4729,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-xi", topicId: "japanese-5-4", conceptId: "shopping-watch-buy",
     section: "2", questionRef: "2024 OL Section 2C Q(xi)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "買います (a) go (b) shopping (c) watch (d) buy",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4809,7 +4752,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-xii", topicId: "japanese-5-4", conceptId: "today-clock-holiday-time",
     section: "2", questionRef: "2024 OL Section 2C Q(xii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "時間 (a) today (b) clock (c) holiday (d) time",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4833,7 +4775,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "rest-person-body-child",
     section: "2", questionRef: "2024 OL Section 2C Q(xiii)",
-    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
     questionText: "人 (a) rest (b) person (c) body (d) child",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5572,7 +5513,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2b-1", topicId: "japanese-5-2", conceptId: "style-since-she-2nd-year-high",
     section: "2", questionRef: "2025 OL Section 2B Q1",
-    stem: "Pink Latte is located in Harajuku.",
     questionText: "this style since she was in 2nd year in High School.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5596,7 +5536,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2b-3", topicId: "japanese-5-2", conceptId: "younger-brothers-like-same-style",
     section: "2", questionRef: "2025 OL Section 2B Q3",
-    stem: "Ken likes European",
     questionText: "two younger brothers like the same style.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5620,7 +5559,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2b-4", topicId: "japanese-5-2", conceptId: "american-designers",
     section: "2", questionRef: "2025 OL Section 2B Q4",
-    stem: "Maki’s hobbies are",
     questionText: "and American designers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5644,7 +5582,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2b-5", topicId: "japanese-5-2", conceptId: "anime-games",
     section: "2", questionRef: "2025 OL Section 2B Q5",
-    stem: "Maki’s friend likes Sailor Moon",
     questionText: "anime and games.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5692,7 +5629,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-1", topicId: "japanese-5-2", conceptId: "child-girl-like-woman",
     section: "2", questionRef: "2025 OL Section 2C Q1",
-    stem: "好き (a) páiste (b) cailín (c) is maith (d) bean",
     questionText: "好き (a) child (b) girl (c) like (d) woman",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5808,7 +5744,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-6", topicId: "japanese-5-2", conceptId: "hundred-man-thousand-woman",
     section: "2", questionRef: "2025 OL Section 2C Q6",
-    stem: "百 (a) céad (b) fear (c) míle (d) bean",
     questionText: "百 (a) hundred (b) man (c) thousand (d) woman",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5832,7 +5767,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-7", topicId: "japanese-5-2", conceptId: "practice-school-study-university",
     section: "2", questionRef: "2025 OL Section 2C Q7",
-    stem: "勉強 (a) cleachtadh (b) scoil (c) staidéar (d) ollscoil",
     questionText: "勉強 (a) practice (b) school (c) study (d) university",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5856,7 +5790,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-8", topicId: "japanese-5-2", conceptId: "adult-siblings-student-people",
     section: "2", questionRef: "2025 OL Section 2C Q8",
-    stem: "二人 (a) duine fásta (b) siblíní (c) mac léinn (d) beirt",
     questionText: "二人 (a) adult (b) siblings (c) student (d) two people",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5903,7 +5836,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-10", topicId: "japanese-5-2", conceptId: "cheap-dirty-expensive-kind",
     section: "2", questionRef: "2025 OL Section 2C Q10",
-    stem: "高い (a) saor (b) salach (c) daor (d) cineálta",
     questionText: "高い (a) cheap (b) dirty (c) expensive (d) kind",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5950,7 +5882,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
     id: "ja-2025-ol-2c-12", topicId: "japanese-5-2", conceptId: "every-day-every-week-tomorrow-weekend",
     section: "2", questionRef: "2025 OL Section 2C Q12",
-    stem: "毎週 (a) gach lá (b) gach seachtain (c) amárach (d) deireadh seachtaine",
     questionText: "毎週 (a) every day (b) every week (c) tomorrow (d) weekend",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [

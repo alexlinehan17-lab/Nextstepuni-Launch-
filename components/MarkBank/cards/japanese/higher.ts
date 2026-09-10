@@ -2133,7 +2133,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are the opening hours of the Zero Waste Centre?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "7am to 9pm — (2 marks +", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "7am to 9pm — +", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2891,7 +2891,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-3b-2", topicId: "japanese-5-1", conceptId: "ja-3b-2",
     section: "3", questionRef: "2022 HL Section 3B Q2",
-    stem: "数（すう）学の先生は、どんな先生ですか。",
     questionText: "数学（すう）の先生はどんな先生ですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2965,7 +2964,7 @@ export const CARDS: SecCard[] = [
     questionText: "今月 (a) こんげつ (b) こんがつ (c) いまつき (d) こんしゅう",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "こんげつ 1 mark this month", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "こんげつ this month", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3061,7 +3060,7 @@ export const CARDS: SecCard[] = [
     questionText: "駅前 (a)えきぜん (b) えきまえ (c) まちまえ (d) ごぜん",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "えきまえ 1 mark in front of the station", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "えきまえ in front of the station", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3774,6 +3773,29 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Gold medal at the world championships / silver medal in Tokyo Olympics", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2a-4", topicId: "japanese-5-3", conceptId: "translate-into-english",
+    section: "2", questionRef: "2023 HL Section 2A Q4",
+    questionText: "Translate into English.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "日本の旅行の（りょこう）後で、照ノ（てる）（の）富（ふ）士（じ）はモンゴルの大学に行く予定で（よてい）したが、力士に（りきし）なりた かったので、2009 年に日本の高校に留学し（りゅうがく）ました。 After travelling to Japan , Terunofuji had planned to go to college in Mongolia , but he wanted to become a sumo wrestler so in 2009 he went to a high school in Japan", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7673,7 +7695,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3b-1", topicId: "japanese-5-1", conceptId: "ja-3b-1",
     section: "3", questionRef: "2025 HL Section 3B Q1",
-    stem: "空港（くうこう）から大学の寮（りょう）までどれぐらいかかりましたか。",
     questionText: "空港か（くうこう）ら大学の寮ま（りょう）でどれぐらいかかりましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -7697,7 +7718,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3b-2", topicId: "japanese-5-1", conceptId: "ja-3b-2",
     section: "3", questionRef: "2025 HL Section 3B Q2",
-    stem: "長野（ながの）の天気はどうでしたか。",
     questionText: "長野の（ながの）天気はどうでしたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [

@@ -177,18 +177,26 @@ def _bilingual_english(text):
 CELL = 25
 
 
-TAIL_MARKS = re.compile(r'[\s(]*\d{1,2}\s*marks?\s*\)?[.\s]*$', re.I)
+TAIL_MARKS = re.compile(r'[\s(]*\d{1,2}\s*marks?\s*[+)]?[.\s]*$', re.I)
+# The part-marks the scheme sets INSIDE a cell, where the column gap collapsed
+# and the two arrived as one string: "こんげつ 1 mark this month". They say how
+# the tariff divides, never what the answer is.
+CELL_MARKS = re.compile(r'(?<=\s)\(?\d{1,2}\s*marks?\)?(?=\s)', re.I)
 
 
 def _verbatim(leaf):
-    lines = [TAIL_MARKS.sub('', INLINE_MARKS.sub(' ', l)).strip(' .,;:—-')
-             for l in leaf.lines]
-    lines = [l for l in lines if l]
+    lines = [TAIL_MARKS.sub('', CELL_MARKS.sub(' ', INLINE_MARKS.sub(' ', l)))
+             .strip(' .,;:—-') for l in leaf.lines]
+    lines = [_clean(l) for l in lines if l.strip(' .,;:—-')]
     if not lines:
         return ''
-    if len(lines) > 1 and all(len(l) <= CELL for l in lines):
-        return ' — '.join(lines)
-    return _clean(' '.join(lines))
+    joined = (' — '.join(lines)
+              if len(lines) > 1 and all(len(l) <= CELL for l in lines)
+              else ' '.join(lines))
+    # Again after joining, because a tariff can survive as the tail of one cell
+    # and reach the card inside the join: "7am to 9pm — (2 marks +".
+    joined = TAIL_MARKS.sub('', CELL_MARKS.sub(' ', INLINE_MARKS.sub(' ', joined)))
+    return _clean(joined).strip(' .,;:—-')
 
 
 def _english_column(ask):
@@ -438,11 +446,29 @@ def _rubric_stem(rubric):
     t = re.sub(r'^\s*\d{1,2}\s*[.)]\s*', '', t)
     t = re.sub(r'^\s*[A-D]\s*[:.]\s*', '', t)
     t = _clean(t)
-    return None if not t or cardlint.label_junk(t) else t
+    if not t or cardlint.label_junk(t) or not ENGLISH_RUBRIC.search(t):
+        # No English half to show. The Ordinary instruction is set in two
+        # columns, and where its wrapped lines interleave the reader recovers
+        # the Irish one alone — "Cuir ciorcal thart ar an mbrí cheart (a), (b),
+        # (c) nó (d) atá leis na Kanji seo a leanas". A stem the student cannot
+        # read is not a lead-in, and the ask itself already carries the task.
+        return None
+    return t
 
 
 WORD = re.compile(r"[A-Za-z\u00c0-\u017f]{4,}")
 LATIN = re.compile(r"[A-Za-z]{3,}")
+# How the SEC opens an instruction in ENGLISH. The Irish half opens with its
+# own verbs and shares none of these.
+ENGLISH_RUBRIC = re.compile(
+    r'\b(?:Write|Circle|Insert|Answer|Complete|Choose|Indicate|Give|List'
+    r'|Name|Translate|Match|Fill|Tick|Provide|Mention|Describe|Put'
+    # The matching task states itself as a QUESTION rather than an order —
+    # "Which link (1-10) would you click on for the following?" — and leaving
+    # the interrogatives out of this list took the stem off twenty-four cards
+    # whose whole ask is "Sustainability", which the build then rightly
+    # refused for standing on nothing. The ratchet caught it.
+    r'|Which|What|Where|When|Why|How|Who)\b')
 JA_CHAR = re.compile(r'[぀-ヿ㐀-鿿]')
 
 
