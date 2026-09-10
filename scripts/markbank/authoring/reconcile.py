@@ -51,14 +51,27 @@ HEAD = re.compile(
     # everyone and the SEC prints "Common Level" on its front cover.
     r'^(?P<year>\d{4})\s+(?P<level>HL|OL|CL)'
     r'(?:\s+Paper\s+(?P<paper>\d))?'
-    r'(?:\s+Section\s+(?P<section>[A-Za-z0-9]+))?'
+    # History is examined in two FIELDS OF STUDY, printed as separate papers a
+    # candidate chooses between, and the citation names which — without it the
+    # same address exists twice in one sitting.
+    r'(?:\s+(?P<field>Later Modern|Early Modern))?'
+    # The section token may carry a TOPIC and an Ordinary part with it, because
+    # History's Sections 2 and 3 restart their numbering inside every topic:
+    # "Section 2 Topic 1 A Q1" is Part A, question 1, of Ireland Topic 1, and
+    # "Section 2 Topic 1 B" is the paragraph part, which numbers nothing under
+    # it. "Section Extra A" is the unnumbered extra Part A of 2023-2025
+    # Ordinary, which the scheme heads "Extra Section A questions".
+    r'(?:\s+Section\s+(?P<section>(?:Extra\s+)?[A-Za-z0-9]+'
+    r'(?:\s+Topic\s+\d{1,2})?(?:\s+[A-C]\b)?))?'
     # Home Economics files Section C under an elective token ("Section C E1
     # Q1(a)(i)"); the elective is not an address the paper numbers by.
     r'(?:\s+E(?P<elective>\d))?'
-    # The number is OPTIONAL. Religious Education's Sections B-J print no
-    # question number at all — the section is the address — so the card
-    # cites "Section E Q(b)(ii)" and the census keys it with q=None.
-    r'\s+(?:Q(?P<q>\d{1,2})?(?P<alt>-alt)?|(?P<abq>ABQ))')
+    # The number is OPTIONAL, and so is the whole Q token. Religious
+    # Education's Sections B-J print no question number at all — the section is
+    # the address — so the card cites "Section E Q(b)(ii)" and the census keys
+    # it with q=None. History goes one step further: a part priced whole, with
+    # nothing numbered beneath it, is cited by its section alone.
+    r'(?:\s+(?:Q(?P<q>\d{1,2})?(?P<alt>-alt)?|(?P<abq>ABQ)))?')
 # What may follow the question number: part tokens, separated by commas,
 # "and", or a range dash. "Q3(c)(i), (ii)" covers two romans; "Q6(a)–(e)"
 # covers five letters; "Q9(vii)–(viii)" two romans with no letter above them.
@@ -252,6 +265,10 @@ def parse_ref(ref):
     if not m:
         return None
     d = m.groupdict()
+    # Everything after the year and level is optional, so "2021 HL" alone
+    # matches. A citation has to name SOMETHING beneath the sitting.
+    if not d['q'] and not d['abq'] and not d['section'] and not d['paper']:
+        return None
     q = 'ABQ' if d['abq'] else (int(d['q']) if d['q'] else None)
     if d['alt'] and isinstance(q, int):
         q = -q
@@ -295,7 +312,8 @@ def parse_ref(ref):
         paths = [(None, None)]
     return {
         'year': int(d['year']), 'level': d['level'].lower(),
-        'paper': f"Paper {d['paper']}" if d['paper'] else None,
+        'paper': (f"Paper {d['paper']}" if d['paper']
+                  else d['field'] or None),
         'section': d['section'], 'q': q, 'paths': paths,
     }
 

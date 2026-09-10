@@ -94,6 +94,24 @@ SUBJECTS = {
     'classical-studies': 'classical-studies',
 }
 
+# A subject the SEC sets as TWO papers on the same afternoon, one of which a
+# candidate answers, and which the corpus therefore indexes as two subjects.
+#
+# History is the case: Later Modern 1815-1993 is subject 004 and Early Modern
+# 1492-1815 is subject 096, and ONE marking scheme answers both. Fetching only
+# the subject's own slug pulled Later Modern alone, so half of what the scheme
+# answers had no paper to be censused, keyed or reconciled against — Law 1
+# broken for that half, silently, because nothing reports a paper that was
+# never asked for. The companion's papers land beside the subject's own with a
+# field token in the name (`2021-hl-em-paper.pdf`), which is what paper_census
+# reads as a component and what a citation names.
+#
+# Schemes are fetched from the PRIMARY slug only: the SEC publishes one scheme
+# per year and level covering both fields, and hist_scheme.py splits it.
+FIELDS = {
+    'history': [('history', 'lm'), ('history-early-modern', 'em')],
+}
+
 FILEID = re.compile(r'^LC(\d{3})([ACG])LP(\d{3})([EI])V\.pdf$', re.I)
 # 'C' is not a third grade of difficulty: it is the SEC's marker for a subject
 # examined at ONE level. Without it here every LCVP file failed the match and
@@ -136,10 +154,17 @@ def download(path, dest):
 
 
 def fetch(subject, kinds):
-    slug = SUBJECTS.get(subject, subject)
+    fields = FIELDS.get(subject) or [(SUBJECTS.get(subject, subject), None)]
+    return sum(_fetch_one(subject, slug, field, kinds, primary=(i == 0))
+               for i, (slug, field) in enumerate(fields))
+
+
+def _fetch_one(subject, slug, field, kinds, primary):
     got = 0
     for year in YEARS:
         for kind in kinds:
+            if kind == 'scheme' and not primary:
+                continue        # one scheme covers both fields of study
             out_dir = 'papers' if kind == 'paper' else 'schemes'
             names = listing(f'papers/lc/{slug}/{year}/{kind}/')
             # Group by level so a subject printed across several booklets keeps
@@ -155,6 +180,10 @@ def fetch(subject, kinds):
                 entries.sort()
                 for component, name in entries:
                     suffix = f'-{component}' if len(entries) > 1 else ''
+                    # A field of study names the paper instead of a booklet
+                    # code: the two are one paper each, not two halves of one.
+                    if field and kind == 'paper':
+                        suffix = f'-{field}'
                     stem = (f'{year}-{level}{suffix}-paper.pdf' if kind == 'paper'
                             else f'{year}-{level}{suffix}.pdf')
                     dest = os.path.join(ROOT, 'examiner-reports', subject, out_dir, stem)

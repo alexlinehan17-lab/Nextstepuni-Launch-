@@ -105,6 +105,19 @@ SUBJECTS = {
     # "Section E Q(b)(ii)". Keys are still (section, q, letter, roman), so the
     # ledger reads it in `sections` mode; only the walker differs.
     'religious-education': {'mode': 'sections', 'walker': 're'},
+    # History is TWO papers per sitting, not one: a candidate sits either the
+    # Later Modern field of study or the Early Modern field, and the SEC prints
+    # them as separate papers (subjects 004 and 096) under one marking scheme.
+    # The field is therefore a component, exactly as Maths' two booklets are,
+    # and a citation names it: "2021 HL Early Modern Section 1 Q1(a)".
+    #
+    # Inside a paper the numbering restarts twice over. Sections 2 and 3 are
+    # divided into TOPICS that each set questions 1..4 (Higher) or parts A, B
+    # and C (Ordinary), so a bare question number addresses nothing: the
+    # section token carries the topic and the Ordinary part with it, and a key
+    # reads ('2 Topic 1 A', 1, None, None) -> "Section 2 Topic 1 A Q1".
+    'history': {'mode': 'sections', 'walker': 'history',
+                'components': {'lm': 'Later Modern', 'em': 'Early Modern'}},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -133,7 +146,11 @@ def sittings(subject):
     for f in sorted(os.listdir(root)):
         # 'cl' is the common-level token: LCVP is examined at one level, and
         # the SEC's own file id says so with the level letter C.
-        m = re.fullmatch(r'(\d{4})-(hl|ol|cl)(?:-(\d+))?-paper\.pdf', f)
+        # The component token is not always numeric. Maths files its two
+        # booklets as 100/200, but History's two FIELDS OF STUDY are 'lm' and
+        # 'em' — separate papers sat by different candidates on the same
+        # afternoon, and a digits-only pattern found neither of them.
+        m = re.fullmatch(r'(\d{4})-(hl|ol|cl)(?:-([a-z0-9]+))?-paper\.pdf', f)
         if m:
             found[(int(m.group(1)), m.group(2))].append(m.group(3))
     return [(y, l, comps) for (y, l), comps in sorted(found.items())]
@@ -222,6 +239,12 @@ def key_label(k):
         tail += f'({letter})'
     if roman:
         tail += f'({roman})'
+    # A unit that is priced WHOLE and numbers nothing beneath it — History's
+    # Ordinary parts B and C, which the scheme answers with one ceiling each —
+    # is addressed by its section alone. A bare "Q" after it would name a
+    # question the paper does not print.
+    if q is None and letter is None and roman is None:
+        return head.strip()
     return head + tail
 
 
@@ -613,6 +636,20 @@ def census_re(subject, year, level):
     return set(texts), texts, [P.path]
 
 
+def census_history(subject, year, level, field):
+    """History: its own reader, for the reasons hist_paper.py gives.
+
+    Two things the generic sections walker cannot do here. It reads ONE paper
+    per sitting, and History sets two — the Later Modern and Early Modern
+    fields of study. And it keys an ask by (section, question), where a History
+    ask is addressed by section, TOPIC, Ordinary part and question, because
+    every topic on the paper restarts at 1.
+    """
+    from hist_paper import HistPaper                         # noqa: E402
+    P = HistPaper(year, level, field)
+    return set(P.asks), dict(P.asks), [P.path], dict(P.marks), P.cover_marks
+
+
 def re_cover_marks(path):
     """The total the paper prints on its own cover.
 
@@ -867,12 +904,26 @@ def census_subject(subject):
     for year, level, comps in sittings(subject):
         if cfg['mode'] == 'papers':
             units = [(cfg['papers'].get(c, c), c) for c in comps if c]
+        elif cfg.get('components'):
+            # A subject whose sitting is two SEPARATE papers a candidate
+            # chooses between, rather than two booklets of one paper. Each is
+            # censused whole and named in the citation.
+            units = sorted((cfg['components'][c], c) for c in comps if c)
+            missing = sorted(set(cfg['components']) - {c for c in comps if c})
+            if missing:
+                raise AssertionError(
+                    f'{subject} {year} {level}: no paper on disk for '
+                    f'{", ".join(cfg["components"][m] for m in missing)}')
         else:
             units = [(None, None)]
         for label, comp in units:
             marks = None
+            cover = None
             try:
-                if cfg.get('walker') == 're':
+                if cfg.get('walker') == 'history':
+                    parts, texts, files, marks, cover = census_history(
+                        subject, year, level, comp)
+                elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
                     parts, texts, files, marks, _stems = census_lcvp(
@@ -887,7 +938,13 @@ def census_subject(subject):
                 continue
             leaves = leaves_of(parts)
             flags = continuity_flags(parts, texts)
-            if cfg.get('walker') == 're':
+            if cfg.get('walker') == 'history':
+                # A History paper is almost entirely CHOICE: eleven topics are
+                # printed and a candidate answers two. Adding up every printed
+                # tariff would count questions nobody sits, so the checksum is
+                # the total the paper states on its own cover.
+                marks = {(None, 0): cover} if cover else {}
+            elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}
             elif marks is None:

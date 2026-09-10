@@ -24,7 +24,7 @@ import { createHash } from 'node:crypto';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid } from './paperIndex.mjs';
+import { resolvePaperFileid, corpusSubjectFor } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
@@ -149,6 +149,18 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/economics',
     blocked: new Set(),
   },
+  history: {
+    title: 'History',
+    /* The syllabus these papers were sat under. Its redevelopment is
+     * introduced in 2027 for first examination in 2029, so there is nothing
+     * later to tag against. Named by what it is rather than by a year: the
+     * publication year is unverified here, and an unverified date in a
+     * provenance field is worse than none. */
+    specVersion: 'lc-history-syllabus',
+    specNote: "Cards are tagged to the syllabus's four fields-and-areas and the six topics in\n * each. A candidate sits ONE field of study — Later Modern or Early Modern — which\n * the SEC prints as separate papers, so every citation names its field.",
+    figureDir: 'public/exam-figures/history',
+    blocked: new Set(),
+  },
   'religious-education': {
     title: 'Religious Education',
     /* The syllabus published in 2003 and still examined — the whole
@@ -159,6 +171,8 @@ const SUBJECTS = {
     specVersion: 'lc-religious-education-2003',
     specNote: "Cards are tagged to the syllabus's own ten sections, A to J, which are the\n * sections the paper prints. A candidate answers Section A, two of B-D and one or\n * two of E-J; every section in the corpus is carded at both levels.",
     figureDir: 'public/exam-figures/religious-education',
+    blocked: new Set(),
+  },
   lcvp: {
     title: 'Link Modules',
     /* The LCVP programme statement, still examined: Life, Community and Work
@@ -907,7 +921,11 @@ for (const c of cards) {
   const paperSection = SUBJECT_ID === 'maths'
     ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
     : c.section;
-  const fileid = resolvePaperFileid(SUBJECT_ID, year, level, paperSection);
+  /* History is examined in two FIELDS OF STUDY, printed as separate papers a
+   * candidate chooses between, and Paper Trail indexes them as two subjects.
+   * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
+  const fileid = resolvePaperFileid(
+    corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ level, code: `  {

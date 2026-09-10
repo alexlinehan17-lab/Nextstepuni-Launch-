@@ -978,6 +978,64 @@ export const TECHNOLOGY_STRANDS: StrandRef[] = [
   },
 ];
 
+/**
+ * History's four fields-and-areas, and the six topics each of them holds.
+ *
+ * A candidate sits ONE field of study — Later Modern 1815-1993 or Early Modern
+ * 1492-1815 — and answers on two topics inside it. The SEC prints both fields
+ * as separate papers on the same afternoon and marks them in one scheme, so
+ * both are carded and a citation names which: "2021 HL Early Modern Section 2
+ * Topic 3 Q1". Mirrors the canonical curriculum's four History groups
+ * (curriculum.ts, history-0 .. history-3) and the topic titles the papers
+ * themselves print over every question.
+ */
+export const HISTORY_STRANDS: StrandRef[] = [
+  {
+    id: 'hist-em-irl', label: 'Early Modern', title: 'Early Modern field — Ireland, 1494-1815',
+    topics: [
+      { id: 'hist-em-irl-1', code: 'IRL 1', title: 'Reform and Reformation in Tudor Ireland, 1494-1558' },
+      { id: 'hist-em-irl-2', code: 'IRL 2', title: 'Rebellion and conquest in Elizabethan Ireland, 1558-1603' },
+      { id: 'hist-em-irl-3', code: 'IRL 3', title: 'Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660' },
+      { id: 'hist-em-irl-4', code: 'IRL 4', title: 'Establishing a colonial ascendancy, 1660-1715' },
+      { id: 'hist-em-irl-5', code: 'IRL 5', title: 'Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770' },
+      { id: 'hist-em-irl-6', code: 'IRL 6', title: 'The end of the Irish kingdom and the establishment of the Union, 1770-1815' },
+    ],
+  },
+  {
+    id: 'hist-em-eur', label: 'Early Modern', title: 'Early Modern field — Europe and the wider world, 1492-1815',
+    topics: [
+      { id: 'hist-em-eur-1', code: 'EUR 1', title: 'Europe from Renaissance to Reformation, 1492-1567' },
+      { id: 'hist-em-eur-2', code: 'EUR 2', title: 'Religion and power: politics in the later 16th century, 1567-1609' },
+      { id: 'hist-em-eur-3', code: 'EUR 3', title: 'The eclipse of Old Europe, 1609-1660' },
+      { id: 'hist-em-eur-4', code: 'EUR 4', title: 'Europe in the age of Louis XIV, 1660-1715' },
+      { id: 'hist-em-eur-5', code: 'EUR 5', title: 'Establishing empires, 1715-1775' },
+      { id: 'hist-em-eur-6', code: 'EUR 6', title: 'Empires in revolution, 1775-1815' },
+    ],
+  },
+  {
+    id: 'hist-lm-irl', label: 'Later Modern', title: 'Later Modern field — Ireland, 1815-1993',
+    topics: [
+      { id: 'hist-lm-irl-1', code: 'IRL 1', title: 'Ireland and the Union, 1815-1870' },
+      { id: 'hist-lm-irl-2', code: 'IRL 2', title: 'Movements for political and social reform, 1870-1914' },
+      { id: 'hist-lm-irl-3', code: 'IRL 3', title: 'The pursuit of sovereignty and the impact of partition, 1912-1949' },
+      { id: 'hist-lm-irl-4', code: 'IRL 4', title: 'The Irish diaspora, 1840-1966' },
+      { id: 'hist-lm-irl-5', code: 'IRL 5', title: 'Politics and society in Northern Ireland, 1949-1993' },
+      { id: 'hist-lm-irl-6', code: 'IRL 6', title: 'Government, economy and society in the Republic of Ireland, 1949-1989' },
+    ],
+  },
+  {
+    id: 'hist-lm-eur', label: 'Later Modern', title: 'Later Modern field — Europe and the wider world, 1815-1993',
+    topics: [
+      { id: 'hist-lm-eur-1', code: 'EUR 1', title: 'Nationalism and state formation in Europe, 1815-1871' },
+      { id: 'hist-lm-eur-2', code: 'EUR 2', title: 'Nation states and international tensions, 1871-1920' },
+      { id: 'hist-lm-eur-3', code: 'EUR 3', title: 'Dictatorship and democracy in Europe, 1920-1945' },
+      { id: 'hist-lm-eur-4', code: 'EUR 4', title: 'Division and realignment in Europe, 1945-1992' },
+      { id: 'hist-lm-eur-5', code: 'EUR 5', title: 'European retreat from empire and the aftermath, 1945-1990' },
+      { id: 'hist-lm-eur-6', code: 'EUR 6', title: 'The United States and the world, 1945-1989' },
+    ],
+  },
+];
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -997,6 +1055,7 @@ export const SUBJECTS = [
   { id: 'religious-education', title: 'Religious Education', strands: RELIGIOUS_EDUCATION_STRANDS, spec: 'syllabus examined since 2003' },
   { id: 'lcvp', title: 'Link Modules', strands: LCVP_STRANDS, spec: 'LCVP programme statement, examined to 2027' },
   { id: 'technology', title: 'Technology', strands: TECHNOLOGY_STRANDS, spec: 'Leaving Certificate Technology syllabus' },
+  { id: 'history', title: 'History', strands: HISTORY_STRANDS, spec: 'Leaving Certificate History syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1279,6 +1338,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   technology: {
     higher: () => import('./cards/technology/higher'),
     ordinary: () => import('./cards/technology/ordinary'),
+  },
+  history: {
+    higher: () => import('./cards/history/higher'),
+    ordinary: () => import('./cards/history/ordinary'),
   },
 };
 

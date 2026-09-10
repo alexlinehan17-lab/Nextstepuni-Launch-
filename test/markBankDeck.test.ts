@@ -58,6 +58,8 @@ import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-scienc
 import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
+import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
 import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
 import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
@@ -83,6 +85,7 @@ const SAMPLE_CARDS = [
   ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
   ...CS_HIGHER, ...CS_ORDINARY, ...ENG_HIGHER, ...ENG_ORDINARY,
   ...RE_HIGHER, ...RE_ORDINARY,
+  ...HISTORY_HIGHER, ...HISTORY_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -382,11 +385,16 @@ describe('every card points at the question paper it came from', () => {
     // literal was the SCHEME's id — so a deep link would have opened the answers
     // instead of the question, on 1,104 of 1,112 cards. Nothing read the field
     // yet, which is exactly why it went unnoticed.
-    const { paperEntry } = await import('../scripts/markbank/paperIndex.mjs');
+    const { paperEntry, corpusSubjectFor } =
+      await import('../scripts/markbank/paperIndex.mjs');
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS) {
       if (card.paperFileid === null) continue;
-      const entry = paperEntry(card.subjectId, card.year, card.level);
+      // History is sat in one of two FIELDS OF STUDY, printed as separate
+      // papers under separate SEC subject codes; the citation names which,
+      // and the corpus key follows it. Same helper the build uses.
+      const entry = paperEntry(
+        corpusSubjectFor(card.subjectId, card.questionRef), card.year, card.level);
       if (!entry) { bad.push(`${card.questionRef}: no ${card.subjectId} paper for ${card.year} ${card.level}`); continue; }
       const strip = (f?: string) => f?.replace(/\.pdf$/, '');
       const papers = entry.papers.map((p: { doc?: { f?: string } }) => strip(p.doc?.f));
@@ -400,7 +408,8 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid } = await import('../scripts/markbank/paperIndex.mjs');
+    const { resolvePaperFileid, corpusSubjectFor } =
+      await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
         // Maths uses A/B for marking-scheme tariff sections, while the source
@@ -410,7 +419,9 @@ describe('every card points at the question paper it came from', () => {
           ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
           : c.section;
         return c.paperFileid !== null
-          && c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, sourceSection);
+          && c.paperFileid !== resolvePaperFileid(
+            corpusSubjectFor(c.subjectId, c.questionRef),
+            c.year, c.level, sourceSection);
       })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
     expect(bad, show(bad)).toEqual([]);
@@ -453,6 +464,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['computer-science', 'ordinary', CS_ORDINARY],
     ['engineering', 'higher', ENG_HIGHER],
     ['engineering', 'ordinary', ENG_ORDINARY],
+    ['history', 'higher', HISTORY_HIGHER],
+    ['history', 'ordinary', HISTORY_ORDINARY],
     ['religious-education', 'higher', RE_HIGHER],
     ['religious-education', 'ordinary', RE_ORDINARY],
     // LCVP is examined at one level; there is no Higher/Ordinary pair to pin.
@@ -522,6 +535,7 @@ describe('the taxonomy is the redeveloped specification', () => {
       geography: 'geography-',
       'computer-science': 'cs-',
       engineering: 'eng-',
+      history: 'hist-',
       'religious-education': 're-',
       lcvp: 'lcvp-',
       technology: 'tech-',

@@ -23,7 +23,8 @@ PREFIX = {'home-economics': 'he', 'biology': 'bio', 'business': 'bus',
           'chemistry': 'chem', 'physics': 'phys', 'agricultural-science': 'agsci',
           'economics': 'econ', 'maths': 'maths',
           'construction-studies': 'cons', 'computer-science': 'cs',
-          'engineering': 'eng', 'technology': 'tech'}[SUBJECT]
+          'engineering': 'eng', 'technology': 'tech',
+          'history': 'hist'}[SUBJECT]
 # A withdrawal any subject can record, beside Economics' own list: one JSON
 # file per subject, {card id: why}. The reason is the point of it -- the guard
 # this walks past is the one that caught a total wipe recorded as a clean run,

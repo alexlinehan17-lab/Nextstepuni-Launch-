@@ -177,6 +177,9 @@ deploys). New traps go in the memory files and this skill.
 | provenance "not found" | 2-D layout flattened: stacked fractions, columns, sub/superscripts (≤1.5pt either way), broken glyphs → re-derive, re-fold (fold forms are append-only). |
 | over display cap | Split by the scheme's own groups; disclosed trimming. |
 | figure refusals | Manifest first; re-crop; stroke scan; alt dropped, not mangled. |
+| "half the corpus has no paper" | The subject may be sat as TWO papers, not one — History's Later Modern (SEC 004) and Early Modern (096) are set the same afternoon under ONE scheme, and the fetcher pulled one slug. Check `paperTrailData.ts` for a companion subject id before believing a half-corpus. |
+| "the scheme prints only bands" | Sometimes true, and then the exclusion is the answer — but GENERATE the ledger from the scheme reader so its evidence is the printed line (History: 681 of 1,430). Never hand-type a large exclusions file. |
+| no reprinted question to align on | Law 4 does not require align.py. Join on whatever BOTH documents print: History pairs on the topic TITLE (220/220), on the tariff (856/856 unit totals agree) and, at Ordinary, on whether the scheme's answers are found in that unit's own printed extract (116/116). |
 
 ## Debugging discipline
 
