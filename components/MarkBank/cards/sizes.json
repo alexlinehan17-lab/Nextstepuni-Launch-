@@ -117,5 +117,9 @@
  "arabic": {
   "higher": 125,
   "ordinary": 125
+ },
+ "portuguese": {
+  "higher": 94,
+  "ordinary": 79
  }
 }

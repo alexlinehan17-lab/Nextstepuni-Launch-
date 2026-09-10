@@ -30,7 +30,7 @@ SUBJECTS = ['agricultural-science', 'applied-maths', 'arabic', 'art',
             'computer-science', 'construction-studies', 'economics',
             'engineering', 'english', 'french', 'geography', 'german',
             'history', 'home-economics', 'irish', 'italian', 'japanese',
-            'latin', 'lcvp', 'maths', 'physics', 'polish',
+            'latin', 'lcvp', 'maths', 'physics', 'polish', 'portuguese',
             'religious-education', 'russian', 'spanish', 'technology']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an

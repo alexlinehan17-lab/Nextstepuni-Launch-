@@ -3684,7 +3684,8 @@ export const CURRICULUM: CurriculumSubject[] = [
     "name": "Portuguese (non-curricular EU language)",
     "category": "language",
     "levels": [
-      "higher"
+      "higher",
+      "ordinary"
     ],
     "strands": [
       {
@@ -3742,6 +3743,18 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "portuguese-2-2",
             "name": "Discursive Commentary on a Quotation (~300 Words, Parte III)"
+          },
+          {
+            "id": "portuguese-2-3",
+            "name": "Reading Comprehension — Two Texts with Open Questions (Parte A, from 2022)"
+          },
+          {
+            "id": "portuguese-2-4",
+            "name": "Written Production (Parte B, from 2022)"
+          },
+          {
+            "id": "portuguese-2-5",
+            "name": "Listening Comprehension Test (separate booklet, from 2022)"
           }
         ]
       }

@@ -389,6 +389,21 @@
     },
     "refsHash": "727a4af11e33aa55"
   },
+  "portuguese": {
+    "cards": 173,
+    "contentHash": "6cf7010f4bce4d9b",
+    "coveragePct": 100.0,
+    "covered": 173,
+    "excluded": 329,
+    "leaves": 502,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "193d6de2ff2d009f"
+    },
+    "refsHash": "c737847455bc4dc6"
+  },
   "religious-education": {
     "cards": 288,
     "contentHash": "bfd99a50f3bc5853",

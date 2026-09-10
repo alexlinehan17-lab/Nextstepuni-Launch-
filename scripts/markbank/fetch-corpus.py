@@ -125,6 +125,19 @@ SUBJECTS = {
     # Comprehension 'A00': Arabic is sat as a single written paper), language
     # letter 'E'.
     'arabic': 'arabic',
+    # Added 10 September 2026. Portuguese, Romanian and Dutch are the next
+    # NON-CURRICULAR EU languages after Polish, and the listing answers their
+    # shape before a PDF is opened. Portuguese (SEC 018) is Polish's twin: ONE
+    # level (file letter 'A') up to and including 2021, TWO from 2022, a
+    # separate Listening Comprehension booklet 'A00' from 2022 onward, and
+    # separate English ('E') and Irish ('I') editions rather than the bilingual
+    # 'B' booklet. Romanian (SEC 553) and Dutch (SEC 017) are NOT: each is sat
+    # at ONE level ('A') in every year 2010-2026 and prints ONE booklet '000'
+    # with NO Listening Comprehension Test at all — so a missing '-A00-paper'
+    # for those two is the corpus being complete, not a fetch failure.
+    'portuguese': 'portuguese',
+    'romanian': 'romanian',
+    'dutch': 'dutch',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
     # Added 10 September 2026. Latin is a language but NOT a modern one: SEC

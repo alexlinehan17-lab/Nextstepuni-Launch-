@@ -72,6 +72,8 @@ const japaneseCurriculum = CURRICULUM.find(subject => subject.id === 'japanese')
 if (!japaneseCurriculum) throw new Error('Canonical Japanese curriculum is missing');
 const polishCurriculum = CURRICULUM.find(subject => subject.id === 'polish');
 if (!polishCurriculum) throw new Error('Canonical Polish curriculum is missing');
+const portugueseCurriculum = CURRICULUM.find(subject => subject.id === 'portuguese');
+if (!portugueseCurriculum) throw new Error('Canonical Portuguese curriculum is missing');
 const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
 if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
 const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
@@ -1108,6 +1110,31 @@ export const POLISH_STRANDS: StrandRef[] = polishCurriculum.strands.map((strand,
   })),
 }));
 
+/**
+ * Portuguese — the second NON-CURRICULAR EU LANGUAGE in the bank, and the one
+ * that shows what the family looks like across a syllabus change. Its third
+ * strand, "Written Paper — Task Types", names both examinations one for one:
+ * the CLASSIC paper sat to 2021 (one text, six open questions, one commentary)
+ * and the paper it was rebuilt into in 2022 (Part A Reading, Part B Written
+ * Production, and a Listening Comprehension Test in its own booklet).
+ *
+ * Mark Bank cards reach the two reading topics only, because the rest of the
+ * examination is written production and listening: the scheme answers those
+ * with a content-and-language band grid and with a recording no card can
+ * carry. The whole taxonomy still ships — a student browsing Portuguese should
+ * see the shape of their examination, not only the part that is carded.
+ */
+export const PORTUGUESE_STRANDS: StrandRef[] = portugueseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1354,6 +1381,7 @@ export const SUBJECTS = [
   { id: 'russian', title: 'Russian', strands: RUSSIAN_STRANDS, spec: 'Leaving Certificate Russian syllabus' },
   { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
   { id: 'polish', title: 'Polish', strands: POLISH_STRANDS, spec: 'Leaving Certificate Polish, a non-curricular EU language' },
+  { id: 'portuguese', title: 'Portuguese', strands: PORTUGUESE_STRANDS, spec: 'Leaving Certificate Portuguese, a non-curricular EU language' },
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
   { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
   { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
@@ -1659,6 +1687,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   polish: {
     higher: () => import('./cards/polish/higher'),
     ordinary: () => import('./cards/polish/ordinary'),
+  },
+  portuguese: {
+    higher: () => import('./cards/portuguese/higher'),
+    ordinary: () => import('./cards/portuguese/ordinary'),
   },
   arabic: {
     higher: () => import('./cards/arabic/higher'),

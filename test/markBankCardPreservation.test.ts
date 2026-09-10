@@ -64,6 +64,8 @@ import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
+import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
+import { CARDS as PORTUGUESE_ORDINARY } from '../components/MarkBank/cards/portuguese/ordinary';
 import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
 import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
@@ -528,6 +530,15 @@ const decks = [
    * tick stands in, which is the only place that answer is written down. */
   ['polish:higher', POLISH_HIGHER, 115, '3cf1b2909433bcb50931d0d7162ff44fa529ca44752a16cc50dcddcad6ffe6a5'],
   ['polish:ordinary', POLISH_ORDINARY, 122, '7b75f4690d22e1070ed66cb946f5eeeba80f3b83f73f4bc774cf9fd9d649083b'],
+  /* Portuguese is the twenty-sixth subject and the second NON-CURRICULAR EU
+   * LANGUAGE. Every card is new; none replaces anything. It is the first deck
+   * whose two halves are priced by DIFFERENT DOCUMENTS: the 2022-2025 cards
+   * take their tariff from the marking scheme, which prices every ask, and the
+   * 2021 cards take it from the QUESTION PAPER's right-hand margin, because
+   * the scheme of that examination prints answers with no marks anywhere in
+   * it. Both are printed; neither is inferred. */
+  ['portuguese:higher', PORTUGUESE_HIGHER, 94, 'af660d48d9959b5d40dffc4ea99d293223e5c62c3f3d93d95cc131ef6c386701'],
+  ['portuguese:ordinary', PORTUGUESE_ORDINARY, 79, '116e68ce1fdda8fd35a294e16e7f0df8b6d71906963ea88fede497c925dfc016'],
   /* Classical Studies is the twenty-second subject, entered on a RE-MEASURE:
    * the bank had it recorded as rejected on a band grid that turns out to
    * belong to the Research Study Report, which is coursework, not the written
@@ -575,8 +586,9 @@ describe('Mark Bank card preservation', () => {
     // 10,495 before this session, plus thirteen subjects carded in five waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
-    // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_087);
+    // Russian 199, Japanese 600, Classical Studies 516, Latin 227 and
+    // Portuguese 173.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_260);
     // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
     // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
   });
@@ -606,6 +618,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('classical-studies:')
         && !name.startsWith('latin:')
         && !name.startsWith('polish:')
+        && !name.startsWith('portuguese:')
         && !name.startsWith('arabic:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);

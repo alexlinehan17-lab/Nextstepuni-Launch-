@@ -125,10 +125,29 @@ MARK_CELL = re.compile(r"^[\s\d@+×x*.,;:()\[\]/m-]*\d[\s\d@+×x*.,;:()\[\]/m-]*
 # so the shape of the number settles it without needing to know the column.
 MONEY = re.compile(r"\d,\d{3}(\D|$)")
 
+# The same cell written out in WORDS, which is how the non-curricular EU
+# language schemes print theirs: "8 marks:", "4 x 2 marks", "(any 4)",
+# "5 marks - any 3", "6 Marks: 2 x 3 marks". Digits, the SEC's own words for
+# what they buy, and nothing else — a cell that says anything more than that is
+# an answer and stays in the prose.
+#
+# Without it the whole marks column of those schemes ran into the marking
+# points it prices: the 2025 Ordinary scheme breaks one cell over three
+# baselines and the .md read "usava roupas de cores vivas brilhantes, boné
+# azul, camisa vermelha, 8 marks:", so no card could quote the SEC's own
+# answer and fifty-five of them were dropped by the provenance check.
+MARK_WORDS = re.compile(
+    r"^\(?\s*(?:\d{1,2}\s*[x×]\s*)?\d{0,2}\s*"
+    r"(?:marks?|any\s+\d{1,2})"
+    r"[\s\d:;,.()x×+/–—-]*(?:marks?|any\s+\d{1,2}|lines?|"
+    r"any\s+two\s+lines)?[\s\d:;,.()x×+/–—-]*\)?$", re.I)
+
 
 def is_mark(text: str) -> bool:
     """Whether a cell states marks rather than an answer that happens to be numeric."""
-    return bool(MARK_CELL.fullmatch(text)) and not MONEY.search(text)
+    if MONEY.search(text):
+        return False
+    return bool(MARK_CELL.fullmatch(text)) or bool(MARK_WORDS.fullmatch(text))
 
 
 def render_row(row, marks_x=None) -> str:

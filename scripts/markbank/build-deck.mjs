@@ -220,6 +220,20 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/polish',
     blocked: new Set(),
   },
+  portuguese: {
+    title: 'Portuguese',
+    /* The syllabus these papers were sat under. Portuguese is a
+     * NON-CURRICULAR EU LANGUAGE: there is no Irish syllabus for it, and the
+     * SEC examines it against the language itself. It was rebuilt in 2022 —
+     * before that one 70-mark booklet at ONE level, since then Part A Reading
+     * and Part B Written Production at two levels with a Listening
+     * Comprehension Test beside them. See PORTUGUESE_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-portuguese-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Portuguese examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card says which language its answer must be in.",
+    figureDir: 'public/exam-figures/portuguese',
+    blocked: new Set(),
+  },
   russian: {
     title: 'Russian',
     /* The syllabus these papers were sat under and the one still being sat.

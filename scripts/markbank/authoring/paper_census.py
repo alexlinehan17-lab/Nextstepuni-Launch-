@@ -274,6 +274,23 @@ SUBJECTS = {
     # marker that is genuinely ambiguous, "(i)", is settled on the printed
     # column plus the letter sequence rather than on wording (see pl_paper).
     'polish': {'mode': 'sections', 'walker': 'pl'},
+    # Portuguese, Romanian and Dutch are the family Polish opened, and they
+    # share ONE reader (eu_paper/eu_scheme) rather than three copies of it —
+    # what differs between them is marker vocabulary, not structure.
+    #
+    # The section token is the paper's own: 'A' and 'B' for the two parts the
+    # modern written booklet tabs in its margin, 'LA' to 'LE' for the listening
+    # booklet's five parts, and 'I', 'II' or 'III' for the parts of the
+    # CLASSIC examination — which is Portuguese up to 2021 and every Romanian
+    # and Dutch sitting in the corpus. A citation reads "2024 HL Section A
+    # Q1(b)(ii)" or "2021 HL Section I Q1(a)".
+    #
+    # The two eras price their asks in different DOCUMENTS, and that is the
+    # fact this family turns on: the modern scheme prices every ask and the
+    # classic one prints no marks at all, so the classic tariff is read from
+    # the question paper's own right-hand margin. Both are printed; neither is
+    # inferred.
+    'portuguese': {'mode': 'sections', 'walker': 'eu'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -371,6 +388,11 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
         # question.
         qs = sorted({k[-3] for k in keys if k[:-3] == pre
                      and isinstance(k[-3], int) and k[-3] > 0})
+        # The interior-gap and leading-question checks, ONCE. They were run
+        # twice — a copy inside `if scoped:` without the runs-on exemption
+        # below and a copy outside it that ignored `scoped` altogether — which
+        # a merge left behind, and which reported eight false question-gaps a
+        # census on the two subjects whose sections number straight through.
         if scoped:
             want = list(range(min(qs), min(qs) + len(qs))) if qs else []
             if qs != want:
@@ -379,30 +401,22 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
             # A paper starts at Question 1. A census that starts later has
             # LOST a leading question — Economics lost Q1 twice with no flag
             # firing, because a gap detector only sees interior holes.
-            if qs and isinstance(qs[0], int) and qs[0] > 1:
-                flags.append({'type': 'question-gap', 'where': str(pre or ''),
+            #
+            # Unless the numbering RUNS ON: Polish tabs Questions 1 and 2
+            # "Część A" and Questions 3 to 5 "Część B" in one booklet, and
+            # Portuguese does the same with "Parte A" and "Parte B", so
+            # Section B's first question is Q3 and nothing at all is missing.
+            # The exemption is evidence, not a guess — every question below
+            # this one has to be printed under some OTHER prefix of the same
+            # paper, which a genuinely lost leading question never is.
+            elsewhere = {k[-3] for k in keys if k[:-3] != pre
+                         and isinstance(k[-3], int)}
+            runs_on = qs and isinstance(qs[0], int) and qs[0] > 1 and all(
+                n in elsewhere for n in range(1, qs[0]))
+            if qs and isinstance(qs[0], int) and qs[0] > 1 and not runs_on:
+                flags.append({'type': 'question-gap',
+                              'where': str(pre or ''),
                               'detail': f'first question found is Q{qs[0]}'})
-        want = list(range(min(qs), min(qs) + len(qs))) if qs else []
-        if qs != want:
-            flags.append({'type': 'question-gap', 'where': str(pre or ''),
-                          'detail': f'questions found: {qs}'})
-        # A paper starts at Question 1. A census that starts later has LOST a
-        # leading question — Economics lost Q1 twice with no flag firing,
-        # because a gap detector only sees interior holes.
-        #
-        # Unless the numbering RUNS ON: Polish tabs Questions 1 and 2 "Część A"
-        # and Questions 3 to 5 "Część B" in one booklet, so Section B's first
-        # question is Q3 and nothing at all is missing. The exemption is
-        # evidence, not a guess — every question below this one has to be
-        # printed under some OTHER prefix of the same paper, which a genuinely
-        # lost leading question never is.
-        elsewhere = {k[-3] for k in keys if k[:-3] != pre
-                     and isinstance(k[-3], int)}
-        runs_on = qs and isinstance(qs[0], int) and qs[0] > 1 and all(
-            n in elsewhere for n in range(1, qs[0]))
-        if qs and isinstance(qs[0], int) and qs[0] > 1 and not runs_on:
-            flags.append({'type': 'question-gap', 'where': str(pre or ''),
-                          'detail': f'first question found is Q{qs[0]}'})
         # A headless question (Religious Education's Sections B-J) sits
         # outside the numeric run but still prints a lettered run that can
         # gain a hole, so it is walked here as well.
@@ -1800,6 +1814,81 @@ def pl_flags(P, S):
     return flags
 
 
+def census_eu(subject, year, level):
+    """Portuguese, Romanian and Dutch: the written booklet and, where the SEC
+    sets one, the Listening Comprehension booklet.
+
+    THE DENOMINATOR IS THE PAPER, and this paper can be read from the paper
+    alone: its reading passage is set in numbered paragraphs, exactly as
+    French's is, but it letters its questions "(a)" to "(l)", so no printed
+    marker is ambiguous between passage and ask. The scheme is read beside it
+    to price the asks and to be CHECKED against them, which is what eu_flags
+    does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from eu_paper import EuPaper                                # noqa: E402
+    from eu_scheme import EuScheme                              # noqa: E402
+
+    P = EuPaper(year, level, subject)
+    S = EuScheme(year, level, subject)
+    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def eu_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently — the paper for its asks, the
+    scheme for its prices — so every ask one holds and the other does not is a
+    reader fault, an SEC misprint or a real difference, and all three have to
+    be looked at rather than reconciled away.
+
+    Plus the check that only this family can make: a MODERN scheme prints the
+    total on each question's own head, and the asks the reader priced under
+    that question must add up to it. It is the arithmetic that decides whether
+    three answers priced "4 marks" each are three alternative wordings of one
+    four-mark ask or four items of a twelve-mark list, and a question whose
+    total does not close is flagged rather than guessed at.
+    """
+    from eu_scheme import pairs_by_question                    # noqa: E402
+
+    flags = list(P.flags)
+    reading = P.reading_asks()
+    made, _how = pairs_by_question(reading, S.reading())
+    matched = {a.key for a in made.values() if a is not None}
+    priced_parents = {(a.section, a.q, a.letter) for a in S._asks
+                      if a.roman is None and a.per is not None}
+    for ask in reading:
+        if made.get(ask.key) is not None:
+            continue
+        if (ask.section, ask.q, ask.letter) in priced_parents:
+            continue
+        flags.append({'type': 'unpriced-ask', 'where': key_label(ask.key),
+                      'detail': 'the paper prints this ask and the scheme '
+                                'prices no ask that pairs with it'})
+    paper_parents = {(a.section, a.q, a.letter) for a in reading}
+    for ask in S.reading():
+        if ask.key in matched:
+            continue
+        if (ask.section, ask.q, ask.letter) in paper_parents:
+            continue
+        flags.append({'type': 'orphan-scheme-ask', 'where': key_label(ask.key),
+                      'detail': 'the scheme prices this ask and the paper '
+                                'prints none that pairs with it'})
+    for ask in S.reading():
+        if ask.fault:
+            flags.append({'type': 'tariff-disagreement',
+                          'where': key_label(ask.key), 'detail': ask.fault})
+    for (section, q), want, got in S.unsettled:
+        flags.append({'type': 'question-total',
+                      'where': f'Section {section} Q{q}',
+                      'detail': f'the scheme heads this question {want} marks '
+                                f'and the asks it prices under it add to '
+                                f'{got}'})
+    return flags
+
+
 def census_clas(subject, year, level):
     """Classical Studies: the printed ask, in whichever of its two papers.
 
@@ -2243,6 +2332,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'pl':
                     parts, texts, files, P_, S_ = census_pl(
                         subject, year, level)
+                elif cfg.get('walker') == 'eu':
+                    parts, texts, files, P_, S_ = census_eu(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -2325,6 +2417,25 @@ def census_subject(subject):
             elif cfg.get('walker') == 'pl':
                 flags += pl_flags(P_, S_)
                 marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 'eu':
+                flags += eu_flags(P_, S_)
+                # The examination was REBUILT in 2022: one 70-mark booklet sat
+                # at a single level became a 180-mark written paper at two
+                # levels with a 100-mark Listening Comprehension Test beside
+                # it. Naming the era keeps the cross-year checksum comparing
+                # each paper with its OWN kind; without it every classic
+                # sitting reported a shortfall against the modern ones.
+                # The examination was REBUILT in 2022 and rebalanced again
+                # in 2023: one 70-mark booklet sat at a single level became a
+                # 130-mark written paper plus a 100-mark Listening
+                # Comprehension Test, and then a 180-mark written paper when
+                # Part A went from one compulsory comprehension to two.
+                # Naming the era AND the total keeps the cross-year checksum
+                # comparing each paper with its own kind, which is what the
+                # checksum is for.
+                total = P_.cover_marks()
+                label = f'{total}-mark {P_.era} paper'
+                marks = {(None, 0): total}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}
