@@ -62,5 +62,8 @@
  "religious-education": {
   "higher": 135,
   "ordinary": 153
+ },
+ "lcvp": {
+  "common": 314
  }
 }

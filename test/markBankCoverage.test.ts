@@ -53,7 +53,9 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   const out: { id: string; ref: string }[] = [];
-  for (const level of ['higher', 'ordinary']) {
+  // 'common' is the level a one-level subject ships under — LCVP's Link
+  // Modules. Leaving it out of this walk reported the whole deck as missing.
+  for (const level of ['higher', 'ordinary', 'common']) {
     const path = resolve(
       __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
     let text: string;
@@ -80,6 +82,7 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // none, so its citations read "2023 HL Section E Q(b)(ii)".
 const HEAD =
   /^(\d{4}) (HL|OL)(?: Paper (\d))?(?: Section ([A-Za-z0-9]+))?(?: E(\d))? (?:Q(\d{1,2})?(-alt)?|ABQ)/;
+  /^(\d{4}) (HL|OL|CL)(?: Paper (\d))?(?: Section ([A-Za-z0-9]+))?(?: E(\d))? (?:Q(\d{1,2})(-alt)?|ABQ)/;
 // The bare A/B between tokens is Chemistry's printed option question —
 // "Q11(d)A(i)" answers option A of part (d).
 const TAIL =
@@ -149,7 +152,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // The refs hash pins addresses; this pins everything else — questionText,
     // rows, figure bindings. A card gutted in place trips here.
     const h = createHash('sha256');
-    for (const level of ['higher', 'ordinary']) {
+    for (const level of ['higher', 'ordinary', 'common']) {
       const path = resolve(
         __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }

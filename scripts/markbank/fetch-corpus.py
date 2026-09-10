@@ -18,8 +18,17 @@ in one and Section C in another). Schemes land in .../schemes/<year>-<level>.pdf
 alongside the markdown conversions already in the repo.
 
 SEC file ids read LC<subject><level>LP<component><language>V.pdf, where the
-level letter is A for Higher and G for Ordinary, and the language letter E for
-the English version. Only the English versions are fetched.
+level letter is A for Higher, G for Ordinary and C for a COMMON-level subject
+(LCVP's Link Modules is sat at one level by everyone: LC462CLP000EV.pdf), and
+the language letter E for the English version. Only the English versions are
+fetched.
+
+A common-level subject files under the level token 'cl' — its own token, not
+'hl' with a note. The pipeline carries that token end to end: paper_census.py's
+sittings() reads <year>-cl-paper.pdf, extract-scheme.py writes schemes/<year>-cl.md,
+reconcile.py's citation grammar reads "2025 CL Q1", and the card model's level
+field is 'common'. Mapping C onto 'hl' would have made every LCVP card claim a
+Higher Level paper that does not exist.
 """
 import argparse
 import json
@@ -85,8 +94,12 @@ SUBJECTS = {
     'classical-studies': 'classical-studies',
 }
 
-FILEID = re.compile(r'^LC(\d{3})([AG])LP(\d{3})([EI])V\.pdf$', re.I)
-LEVEL = {'A': 'hl', 'G': 'ol'}
+FILEID = re.compile(r'^LC(\d{3})([ACG])LP(\d{3})([EI])V\.pdf$', re.I)
+# 'C' is not a third grade of difficulty: it is the SEC's marker for a subject
+# examined at ONE level. Without it here every LCVP file failed the match and
+# the fetch reported "0 file(s) fetched" with no error — silence, which is the
+# failure mode this repo has paid for most often.
+LEVEL = {'A': 'hl', 'G': 'ol', 'C': 'cl'}
 
 
 def _api(path, query=None):

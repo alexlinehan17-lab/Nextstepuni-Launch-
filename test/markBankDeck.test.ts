@@ -60,6 +60,7 @@ import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/hi
 import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
 import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
 import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
+import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -452,6 +453,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['engineering', 'ordinary', ENG_ORDINARY],
     ['religious-education', 'higher', RE_HIGHER],
     ['religious-education', 'ordinary', RE_ORDINARY],
+    // LCVP is examined at one level; there is no Higher/Ordinary pair to pin.
+    ['lcvp', 'common', LCVP_COMMON],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -516,6 +519,7 @@ describe('the taxonomy is the redeveloped specification', () => {
       'computer-science': 'cs-',
       engineering: 'eng-',
       'religious-education': 're-',
+      lcvp: 'lcvp-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

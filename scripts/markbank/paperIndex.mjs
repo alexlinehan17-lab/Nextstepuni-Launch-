@@ -63,6 +63,8 @@ export const paperIndex = (() => {
 const CORPUS_KEY = {
   'home-economics': 'home-economics-s-and-s',
   'maths': 'mathematics',
+  // The corpus files LCVP's written paper under the module it examines.
+  'lcvp': 'link-modules',
 };
 
 /** The sitting of one subject, year and level in its authored paper language. */

@@ -2497,7 +2497,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   if (!card || !assessmentCard) return null;
 
-  const levelLabel = assessmentCard.level === 'higher' ? 'HIGHER LEVEL' : 'ORDINARY LEVEL';
+  const levelLabel = assessmentCard.level === 'higher' ? 'HIGHER LEVEL'
+    : assessmentCard.level === 'common' ? 'COMMON LEVEL' : 'ORDINARY LEVEL';
   const figure = 'figure' in assessmentCard ? assessmentCard.figure : undefined;
   const questionFigure = 'questionFigure' in assessmentCard ? assessmentCard.questionFigure : undefined;
   const sourceMaterial = assessmentCard.sourceMaterial;
@@ -2574,7 +2575,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             flexShrink: 0,
           }}>
             <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
-            {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : 'OL'}
+            {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}
           </span>
 
           <span style={{ flex: 1 }} />

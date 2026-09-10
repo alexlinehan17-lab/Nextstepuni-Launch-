@@ -54,6 +54,8 @@ const artCurriculum = CURRICULUM.find(subject => subject.id === 'art');
 if (!artCurriculum) throw new Error('Canonical Art curriculum is missing');
 const geographyCurriculum = CURRICULUM.find(subject => subject.id === 'geography');
 if (!geographyCurriculum) throw new Error('Canonical Geography curriculum is missing');
+const lcvpCurriculum = CURRICULUM.find(subject => subject.id === 'lcvp-link-modules');
+if (!lcvpCurriculum) throw new Error('Canonical LCVP Link Modules curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -920,6 +922,28 @@ export const RELIGIOUS_EDUCATION_STRANDS: StrandRef[] = [
     ],
   },
 ];
+/**
+ * The LCVP Link Modules programme statement: two link modules of five units
+ * each. Adapted from the canonical curriculum rather than retyped here, for
+ * the reason the English, Irish, Art and Geography strands are — a second
+ * copy of a taxonomy drifts, and a card filed against a topic id the registry
+ * does not hold resolves into a specification that contains no such topic.
+ *
+ * The codes are the SEC's own way of naming a unit inside its module: "1.2"
+ * is Link Module 1, Unit 2.
+ */
+export const LCVP_STRANDS: StrandRef[] = lcvpCurriculum.strands.map((strand, moduleIndex) => ({
+  id: strand.id,
+  label: `Module ${moduleIndex + 1}`,
+  title: strand.name,
+  topics: strand.subtopics
+    .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map((topic, unitIndex) => ({
+      id: topic.id,
+      code: `${moduleIndex + 1}.${unitIndex + 1}`,
+      title: topic.name.replace(/^Unit \d+: /, ''),
+    })),
+}));
 
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
@@ -938,6 +962,7 @@ export const SUBJECTS = [
   { id: 'computer-science', title: 'Computer Science', strands: COMPUTER_SCIENCE_STRANDS, spec: 'specification examined from 2020' },
   { id: 'engineering', title: 'Engineering', strands: ENGINEERING_STRANDS, spec: 'Materials and Technology syllabus' },
   { id: 'religious-education', title: 'Religious Education', strands: RELIGIOUS_EDUCATION_STRANDS, spec: 'syllabus examined since 2003' },
+  { id: 'lcvp', title: 'Link Modules', strands: LCVP_STRANDS, spec: 'LCVP programme statement, examined to 2027' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1142,7 +1167,7 @@ const HAND_BUILT: SecCard[] = [
  * bundler has to see each one to split it; a computed specifier either fails to
  * resolve or drags every deck into one chunk, which is the thing this avoids.
  */
-const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> = {
+const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard[] }>>>> = {
   biology: {
     higher: () => import('./cards/biology/higher'),
     ordinary: () => import('./cards/biology/ordinary'),
@@ -1211,9 +1236,25 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
     higher: () => import('./cards/religious-education/higher'),
     ordinary: () => import('./cards/religious-education/ordinary'),
   },
+  // LCVP is sat at ONE level, so it has one module and no Higher/Ordinary
+  // pair. Writing it empty higher.ts and ordinary.ts files would have put two
+  // dead decks in the picker; the map is Partial for exactly this.
+  lcvp: {
+    common: () => import('./cards/lcvp/common'),
+  },
 };
 
-export type Level = 'higher' | 'ordinary';
+/**
+ * 'common' is a level the SEC actually prints, not a third difficulty: a
+ * handful of subjects — LCVP's Link Modules among them — are examined at one
+ * level by everyone. `levelsFor` below is what the picker must use, so a
+ * common-level subject never offers a Higher/Ordinary choice it does not have.
+ */
+export type Level = 'higher' | 'ordinary' | 'common';
+export const LEVELS: Level[] = ['higher', 'ordinary', 'common'];
+export const LEVEL_LABEL: Record<Level, string> = {
+  higher: 'Higher', ordinary: 'Ordinary', common: 'Common',
+};
 
 /**
  * How many cards each deck holds, written by the build script.
@@ -1226,11 +1267,22 @@ export type Level = 'higher' | 'ordinary';
 export const deckSize = (subjectId: string, level: Level): number =>
   (DECK_SIZES as Record<string, Partial<Record<Level, number>>>)[subjectId]?.[level] ?? 0;
 
+/**
+ * The levels this subject is actually examined at, read from what has been
+ * built rather than assumed. A subject with nothing built yet still offers the
+ * Higher/Ordinary pair, because that is what the picker has to show before a
+ * deck exists; a subject built at one level offers only that one.
+ */
+export const levelsFor = (subjectId: string): Level[] => {
+  const built = LEVELS.filter(l => deckSize(subjectId, l) > 0);
+  return built.length ? built : ['higher', 'ordinary'];
+};
+
 /** Decks with cards in them, as "Biology Higher"-style labels. */
 export const builtDecks = (): { subjectId: string; level: Level; label: string }[] =>
-  SUBJECTS.flatMap(s => (['higher', 'ordinary'] as Level[])
+  SUBJECTS.flatMap(s => LEVELS
     .filter(l => deckSize(s.id, l) > 0)
-    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${l === 'higher' ? 'Higher' : 'Ordinary'}` })));
+    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${LEVEL_LABEL[l]}` })));
 
 export async function loadCards(subjectId: string, level: Level): Promise<SecCard[]> {
   const load = DECKS[subjectId]?.[level];
