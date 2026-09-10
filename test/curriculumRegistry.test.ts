@@ -252,6 +252,12 @@ describe('versioned curriculum registry', () => {
     ]);
   });
 
+  /* Sixty seconds, not the thirty every other test gets. This one walks EVERY
+   * card in the bank against the canonical curriculum, so its cost grows with
+   * the bank: adding Polish — the twenty-fourth subject, 238 cards and two more decks — pushed it past thirty seconds under the full suite's
+   * parallel load, while it still finishes in fourteen on its own. Raising the
+   * ceiling for the two whole-bank tests keeps the global thirty in place for
+   * everything else, where a test that runs long really is hung. */
   it('resolves every Mark Bank card into the correct canonical specification', async () => {
     const subjectForTopic = new Map<string, string>();
     for (const subject of MARK_BANK_SUBJECTS) {
@@ -269,5 +275,5 @@ describe('versioned curriculum registry', () => {
         expect(findCanonicalTopic(spec, card.topicId), `${card.id}: ${card.topicId} absent from ${spec.id}`).toBeDefined();
       }
     }
-  });
+  }, 60_000);
 });

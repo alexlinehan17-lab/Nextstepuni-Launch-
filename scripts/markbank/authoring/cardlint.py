@@ -30,7 +30,8 @@ SUBJECTS = ['maths', 'physics', 'biology', 'chemistry', 'economics',
             'construction-studies', 'lcvp', 'technology',
             'religious-education', 'history', 'applied-maths', 'french',
             'german', 'spanish', 'italian', 'russian', 'japanese',
-            'classical-studies']
+            'classical-studies',
+            'polish']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an
 # Agricultural Science paper about joining a suckler scheme is not a leak),

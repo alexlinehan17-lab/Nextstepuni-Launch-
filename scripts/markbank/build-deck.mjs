@@ -207,6 +207,19 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/french',
     blocked: new Set(),
   },
+  polish: {
+    title: 'Polish',
+    /* The syllabus these papers were sat under. Polish is a NON-CURRICULAR EU
+     * LANGUAGE: there is no Irish syllabus for it, and the SEC examines it
+     * against the language itself. It was rebuilt in 2022 — before that one
+     * 70-mark booklet at ONE level, since then Section A Reading and Section B
+     * Written Production at two levels with a Listening Comprehension Test
+     * beside them. See POLISH_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-polish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Polish examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card says which language its answer must be in.",
+    figureDir: 'public/exam-figures/polish',
+    blocked: new Set(),
+  },
   russian: {
     title: 'Russian',
     /* The syllabus these papers were sat under and the one still being sat.
@@ -369,7 +382,15 @@ function schemeFor(subjectId, card) {
  * genuinely Greek: it is the alphabet the Russian paper and its scheme are
  * printed in. Left inside BROKEN, every Russian marking point read as a page
  * of unreadable glyphs and the whole deck was refused. */
-const REAL = /[\u0152\u0153\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A]/;
+/* Latin Extended-A (U+0100-U+017F) is genuinely Latin Extended-A, for the same
+ * reason Cyrillic is genuinely Cyrillic: ą ć ę ł ń ó ś ź ż are letters of the
+ * POLISH alphabet, printed in every Polish paper and every Polish scheme, and
+ * they reach the text layer intact. Left inside BROKEN, half the Polish deck
+ * was refused for being written in Polish -- "Księgarnia była mała" counted as
+ * four unreadable glyphs. The block also carries the French OE ligature and
+ * the ligature glyphs LIGATURES already folds, which are handled before this
+ * test is reached. */
+const REAL = /[\u0100-\u017F\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A]/;
 const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 /** Undo a subset font's broken ToUnicode map, using the table derived from the
  * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied

@@ -105,5 +105,9 @@
  "classical-studies": {
   "higher": 240,
   "ordinary": 276
+ },
+ "polish": {
+  "higher": 115,
+  "ordinary": 122
  }
 }
