@@ -187,6 +187,33 @@ def _spacing(marks):
     return _SPACING.get(tuple(marks), ''.join(marks))
 
 
+# Ligature glyphs the 2024 scheme's Calibri subset maps into the LATIN-1 range,
+# where nothing sweeps for them: the global glyph gate starts at U+0100 and the
+# shared `unligature` table cannot hold these, because '£' is a real pound sign
+# in Business and Economics. Each is settled the way derive_glyphs settles a
+# ligature — by reading the words it sits in, all of them from this corpus:
+#
+#   £  ti   descrip£on, ci£zens, £mes, depic£ng, fes£val, explana£on
+#   ®  tt   Ba®le, a®empts, ma®ers, wri®en, a®ributed
+#   »  ft   A»er, o»en, dra»ed, Shi»s
+#   À  tti  AÀca (Attica), twice
+#
+# '½' is NOT in the table: the corpus prints it as a real one-half, in "1½".
+LIGATURES = {'£': 'ti', '®': 'tt', '»': 'ft', 'À': 'tti'}
+# The same 'ti' ligature landing on a codepoint that is also a real letter. A
+# capital N BETWEEN two lower-case letters is not a letter of any English word,
+# and the corpus prints exactly one: "ManNnea" for Mantinea, in the 2024 scheme
+# and beside "Mantinea" spelled out in the paper's own question.
+INNER_N = re.compile(r'(?<=[a-z])N(?=[a-z])')
+
+
+def unligature(text):
+    """Fold the Latin-1-range ligature glyphs this subject's fonts leave."""
+    for bad, good in LIGATURES.items():
+        text = text.replace(bad, good)
+    return INNER_N.sub('ti', text)
+
+
 def runs(page):
     """Every SPIonic span on the page, decoded, keyed by its line."""
     out = []

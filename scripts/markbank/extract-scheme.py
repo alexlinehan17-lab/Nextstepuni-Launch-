@@ -42,6 +42,23 @@ except ImportError:
 # ToUnicode entry is not Arabic at all rather than inventing a letter for them.
 RTL_SUBJECTS = ('arabic',)
 
+# A subject whose pages are set in a PRE-UNICODE font. Every Ancient Greek
+# paper and scheme before 2023 sets its Greek in SPIonic, embedded with
+# WinAnsiEncoding and no ToUnicode map, so the span reader below hands back the
+# Latin-1 bytes — "h]n de/ tij" for ἦν δέ τις. authoring/agr_text.py decodes it
+# span by span; without that the .md the provenance gate reads holds beta code
+# while the cards hold Greek, and every card quoting a Greek word was dropped
+# as unprovable.
+DECODED_SUBJECTS = ('ancient-greek',)
+
+
+def _decoder(pdf_path: Path):
+    if not any(part in DECODED_SUBJECTS for part in pdf_path.parts):
+        return None
+    sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+    import agr_text
+    return agr_text
+
 
 def _is_rtl(pdf_path: Path) -> bool:
     return any(part in RTL_SUBJECTS for part in pdf_path.parts)
@@ -69,6 +86,7 @@ def extract(pdf_path: Path, marks_column: bool = False) -> str:
     back into one row, ordered left to right.
     """
     doc = fitz.open(pdf_path)
+    decoder = _decoder(pdf_path)
     out = []
     for pno, page in enumerate(doc, 1):
         out.append(f"\n## Page {pno}\n")
@@ -79,6 +97,11 @@ def extract(pdf_path: Path, marks_column: bool = False) -> str:
                 continue
             for line in block["lines"]:
                 text = join_spans(line["spans"])
+                if decoder:
+                    text = decoder.unligature(''.join(
+                        decoder.decode(sp["text"])
+                        if decoder.FONT in sp["font"] else sp["text"]
+                        for sp in line["spans"]))
                 if not text.strip():
                     continue
                 x0, y0, x1, y1 = line["bbox"]

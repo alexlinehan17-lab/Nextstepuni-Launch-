@@ -130,6 +130,7 @@ def sittings(subject=SUBJECT):
 
 
 def _clean(text):
+    text = agr_text.unligature(str(text))
     text = unligature(' '.join(str(text).replace(ROW, ' ').split()))
     return text.replace('‐', '-').replace('‑', '-').strip()
 

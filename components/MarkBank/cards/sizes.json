@@ -117,5 +117,9 @@
  "arabic": {
   "higher": 125,
   "ordinary": 125
+ },
+ "ancient-greek": {
+  "higher": 369,
+  "ordinary": 14
  }
 }

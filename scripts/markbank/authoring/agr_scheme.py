@@ -87,6 +87,9 @@ Q_HEAD = re.compile(
 ROUTE_HEAD = re.compile(r'^([A-D])\s*\.?\s*(?:$|\(|Either|Answer|Translate)')
 MARKER = re.compile(r'^\(?\s*(' + '|'.join(ROMANS) + '|[' + LETTERS
                     + r'])\s*\)\.?\s*')
+# A printed row of scansion quantities and nothing else: breves, macrons,
+# underscores, the vertical bars that divide the feet, and space.
+QUANTITIES = re.compile('[\\s_|^\u0304\u0306\u2013\u2014-]+')
 # A per-part rate the scheme states on a head: "(3 x 10 marks)", "(4 x 10)".
 RATE = re.compile(r'\(\s*(\d)\s*[x×]\s*(\d{1,3})\s*(?:marks?)?\s*\)', re.I)
 # A positive integer that is not part of a year, a century or a deduction.
@@ -147,6 +150,7 @@ def has_scheme(year, level, subject=SUBJECT):
 
 
 def _clean(text):
+    text = agr_text.unligature(str(text))
     return unligature(' '.join(str(text).split())).replace('‐', '-').strip()
 
 
@@ -379,11 +383,21 @@ class AgrScheme:
             entry.answer = text if entry.answer is None \
                 else f'{entry.answer} {text}'
 
+        quantities = None
         for _pg, text in rows:
             if NOTES.match(text):
                 continue
             if re.fullmatch(r'(?:Page\s+\d+\s+of\s+\d+|\d{1,3}|NB:.*)', text):
                 continue
+            if QUANTITIES.fullmatch(text):
+                # A row of scansion marks. The SEC sets the quantities ABOVE
+                # the line of verse they belong to, so this row belongs to the
+                # marker BELOW it — read in printed order it landed on the
+                # previous ask, and a note about Medea's nurse shipped with a
+                # metrical diagram stuck to the end of it.
+                quantities = text
+                continue
+
             m = NOTE_HEAD.match(text)
             if m and not Q_HEAD.match(text):
                 flush()
@@ -424,6 +438,12 @@ class AgrScheme:
                     if m2 and is_roman and m2.group(1) in LETTERS \
                             and m2.group(1) not in ROMANS:
                         letter, text = m2.group(1), text[m2.end():].strip()
+            if quantities:
+                # Held until the marker under it has been cut off, so the
+                # quantities join the ask they belong to rather than hiding
+                # its marker inside a row of breves.
+                buf.append(quantities)
+                quantities = None
             buf.append(text)
         flush()
         return entries
