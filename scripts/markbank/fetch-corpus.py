@@ -107,6 +107,16 @@ SUBJECTS = {
     'japanese': 'japanese',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
+    # Added 10 September 2026. Latin is a language but NOT a modern one: SEC
+    # subject 006, ONE booklet ('000'), no Listening Comprehension Test, and —
+    # unlike French/German/Spanish/Italian/Russian/Japanese — it is NOT printed
+    # bilingually. The SEC publishes an English edition (letter 'E') and a
+    # separate Irish edition (letter 'I'), so WANTED_LANGS already selects the
+    # right one and the 'B' path never fires here. Ordinary Level stops after
+    # 2023: the corpus holds a Higher paper for every year 2021-2025 but an
+    # Ordinary paper only for 2021, 2022 and 2023 — eight sittings, not ten,
+    # and that is the corpus being complete, not a fetch failure.
+    'latin': 'latin',
 }
 
 # A subject the SEC sets as TWO papers on the same afternoon, one of which a

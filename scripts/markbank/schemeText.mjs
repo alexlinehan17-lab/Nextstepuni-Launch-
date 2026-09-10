@@ -138,7 +138,7 @@ const PAGE_FOOTER = /\d+\s*\|\s*P\s*a\s*g\s*e/g;
  * output exactly as the extractor produced it, and a claim can never contain
  * one of these, so folding both sides changes nothing else.
  */
-export const LIGATURES = { 'Ɵ': 'ti', 'Ŧ': 'ti', 'Ʃ': 'tt', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬃ': 'ffi', 'ﬄ': 'ffl', 'ﬅ': 'st', 'ﬆ': 'st' };
+export const LIGATURES = { 'Ɵ': 'ti', 'Ŧ': 'ti', 'Ʃ': 'tt', 'ƫ': 'tti', 'Ō': 'ft', 'ϐ': 'f', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬃ': 'ffi', 'ﬄ': 'ffl', 'ﬅ': 'st', 'ﬆ': 'st' };
 
 const SUP = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
 const collapseDoubledMathsLetters = (text) => {
@@ -152,7 +152,7 @@ const collapseDoubledMathsLetters = (text) => {
 };
 
 export const foldDigits = (t) => collapseDoubledMathsLetters(t)
-  .replace(/[ƟŦƩﬀﬁﬂﬃﬄﬅﬆ]/g, (c) => LIGATURES[c] ?? c)
+  .replace(/[ƟŦƩƫŌϐﬀﬁﬂﬃﬄﬅﬆ]/g, (c) => LIGATURES[c] ?? c)
   .replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080))
   .replace(/[⁰¹²³⁴-⁹]/g, (c) => SUP[c] ?? c)
   // Mathematical Alphanumeric Symbols, the whole block. The SEC typesets
