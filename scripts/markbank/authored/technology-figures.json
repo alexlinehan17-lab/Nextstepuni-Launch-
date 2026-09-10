@@ -21,13 +21,6 @@
   "questionRef": "2021 HL Section A Q9"
  },
  {
-  "file": "technology-2021-HL-paper-secA-q10-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of an industrial gearbox with its blue cast housing cut away, showing a train of steel spur gears of different diameters on parallel shafts, with the output shaft projecting to the right.",
-  "questionRef": "2021 HL Section A Q10"
- },
- {
   "file": "technology-2021-HL-paper-secA-q13-art.png",
   "kind": "figure",
   "truncated": false,
@@ -63,11 +56,11 @@
   "questionRef": "2022 HL Section A Q8"
  },
  {
-  "file": "technology-2022-HL-paper-secA-q9-art.png",
+  "file": "technology-2022-HL-paper-secA-q15-art.png",
   "kind": "figure",
   "truncated": false,
-  "description": "Two colour photographs side by side: on the left a hard disk drive with its cover removed, showing the gold platter, spindle and read head arm; on the right a solid-state drive with its case partly open, showing the memory chips on the circuit board.",
-  "questionRef": "2022 HL Section A Q9"
+  "description": "Outline line drawing of a handheld cordless vacuum cleaner in pictorial view, drawn unshaded in a ruled box: the tapered nozzle and dust bowl at the front, the body with its switch and slide control, and the loop handle at the rear.",
+  "questionRef": "2022 HL Section A Q15"
  },
  {
   "file": "technology-2022-HL-paper-secC-q2a-art.png",
@@ -84,11 +77,11 @@
   "questionRef": "2022 OL Section A Q6"
  },
  {
-  "file": "technology-2022-OL-paper-secA-q11-art.png",
+  "file": "technology-2022-OL-paper-secA-q12-art.png",
   "kind": "figure",
   "truncated": false,
-  "description": "A circuit diagram: a battery, a single-pole switch, a resistor labelled R and a light emitting diode with two emission arrows, all in one series loop.",
-  "questionRef": "2022 OL Section A Q11"
+  "description": "Outline line drawing of a USB flash drive in pictorial view, drawn unshaded in a ruled box, with its cap lying separately to the right and the metal connector exposed.",
+  "questionRef": "2022 OL Section A Q12"
  },
  {
   "file": "technology-2022-OL-paper-secC-q1b-art.png",
@@ -147,18 +140,18 @@
   "questionRef": "2023 HL Section A Q10"
  },
  {
-  "file": "technology-2023-HL-paper-secA-q11-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of a white vented cycling helmet with a black rear section, an action camera strapped to the top of it by a black harness.",
-  "questionRef": "2023 HL Section A Q11"
- },
- {
   "file": "technology-2023-HL-paper-secC-q2b-art.png",
   "kind": "figure",
   "truncated": false,
   "description": "A circuit diagram between +9 V and 0 V rails. A switch feeds two potential-divider branches: component A, a variable resistor, in series with a 10 kilohm resistor, and component B, a thermistor, in series with a second 10 kilohm resistor. The two junctions feed the inverting and non-inverting inputs of an IC comparator, whose output drives a resistor, a transistor and a buzzer back to the 0 V rail.",
   "questionRef": "2023 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2023-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Outline line drawing of an electric kettle in pictorial view, drawn unshaded in a ruled box: the tapered jug with its spout, hinged lid, handle and water-level window, standing on its power base.",
+  "questionRef": "2023 OL Section A Q12"
  },
  {
   "file": "technology-2023-OL-paper-secC-q2c-art.png",
@@ -175,25 +168,11 @@
   "questionRef": "2023 OL Section C Q5(b)"
  },
  {
-  "file": "technology-2024-HL-paper-secA-q4-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of a small Fender practice guitar amplifier: a black cabinet with a silver grille cloth, a carrying handle and a row of control knobs and input sockets across the top panel.",
-  "questionRef": "2024 HL Section A Q4"
- },
- {
   "file": "technology-2024-HL-paper-secA-q5-art.png",
   "kind": "figure",
   "truncated": false,
   "description": "A carbon-film resistor photographed at an angle beside the caption \"Resistor bands:\" and the list Brown, Black, Red, Gold, which are the four bands printed on it from left to right.",
   "questionRef": "2024 HL Section A Q5"
- },
- {
-  "file": "technology-2024-HL-paper-secA-q6-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "A network-diagram node drawn as a six-cell box: the top row is labelled EST on the left and EFT on the right, the middle row is a blank cell labelled Task:, and the bottom row is labelled LST on the left and LFT on the right.",
-  "questionRef": "2024 HL Section A Q6"
  },
  {
   "file": "technology-2024-HL-paper-secA-q8-art.png",
@@ -224,18 +203,18 @@
   "questionRef": "2024 HL Section C Q5(d)"
  },
  {
+  "file": "technology-2024-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Outline line drawing of an angle-poise desk lamp in pictorial view, drawn unshaded in a ruled box: the conical shade, the two-part jointed arm and the weighted domed base.",
+  "questionRef": "2024 OL Section A Q12"
+ },
+ {
   "file": "technology-2024-OL-paper-secC-q1d-art.png",
   "kind": "figure",
   "truncated": false,
   "description": "The pneumatic symbol for a double-acting cylinder: a rectangular barrel containing a piston and a piston rod that passes out through the right-hand end, with hatching drawn inside the barrel and a port stub beneath the left-hand end.",
   "questionRef": "2024 OL Section C Q1(d)"
- },
- {
-  "file": "technology-2025-HL-paper-secA-q4-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of five capacitors standing side by side: a large black 1000 microfarad 50 V electrolytic can, two orange disc capacitors, a red boxed 104K 250 V film capacitor and a blue 10 microfarad 35 V electrolytic, each with two wire legs.",
-  "questionRef": "2025 HL Section A Q4"
  },
  {
   "file": "technology-2025-HL-paper-secA-q5-art.png",
@@ -266,10 +245,10 @@
   "questionRef": "2025 HL Section A Q13"
  },
  {
-  "file": "technology-2025-OL-paper-secA-q11-art.png",
+  "file": "technology-2025-OL-paper-secA-q12-art.png",
   "kind": "figure",
   "truncated": false,
-  "description": "Rendered pictorial view of a chain drive: a small toothed sprocket above and a much larger toothed sprocket below, both with keyed bores, joined by a roller chain running around them.",
-  "questionRef": "2025 OL Section A Q11"
+  "description": "Line drawing of a disposable takeaway coffee cup, drawn in outline on a lightly hatched square inside a ruled box: a domed lid with a drinking hole, a sleeve carrying a coffee-bean motif, and the tapered cup below it.",
+  "questionRef": "2025 OL Section A Q12"
  }
 ]

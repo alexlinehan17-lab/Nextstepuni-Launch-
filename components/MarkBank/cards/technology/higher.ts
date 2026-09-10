@@ -1414,12 +1414,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-a15", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "A", questionRef: "2022 HL Section A Q15",
-    questionText: "Use two graphic techniques to enhance the representation of the handheld vacuum cleaner shown. Answerbook for Sections B and C Instructions Questions for Sections B and C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs, and diagrams only. Part Start each question on a new page Question 10 Part Start each question on a new page Question 11 Part Start each question on a new page Question 12 Part Start each question on a new page Question 13 Part Start each question on a new page Question 14 Part Start each question on a new page Question 15 Part Start each question on a new page Question Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Acknowledgements Images Image 1 page 3: https://www.nasa.gov/sites/ Image 2 page 3: https://www.flatpanelshd.com/ Image 3 page 3: https://mcwaneinc.files.wordpress.com/ Image 1 page 4: https://colombiabus.com.co/ Image 2 page 4: https://www.twinschip.com/ Image 3 page 4: http://www.mkcadhelp.com/ Image 1 page 5: https://www.ubuy.com.bh/ Image 2 page 5: https://forums.autodesk.com/ Image 3 page 5: https://cumparasmart.com/ Image 1 page 6: https://www.zmoviles.com/ Image 1 page 7: https://prod-qna-question-images.s3.amazonaws.com/ Image 2 page 7: https://www.capuncless.tk/ Image 1 page 8: https://planet-sustie.business.site/ Image 2 page 8: https://www.fasttech.com/ Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+    questionText: "Use two graphic techniques to enhance the representation of the handheld vacuum cleaner shown. 2022L065A2EL 2022.M104BC Coimisiún na Scrúduithe Stáit State Examinations Commission Section B and Section C Higher Level Monday 27 June Afternoon 2:00 - 4:30 136 marks Instructions Section B 24 marks Core- Long-answer questions. Answer one of the two core questions presented. Each question in Section B carries 24 marks. Section C 40 marks Options- Long-answer questions. Answer one of the five optional questions presented. Each question in Section C carries 40 marks. THESE QUESTIONS ARE TO BE ANSWERED IN THE ANSWERBOOK ATTACHED TO SECTION A.",
     tariffModel: {"kind":"fixed","notation":"(3 + 3 marks)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "shown.", marks: 3, openList: true },
     { id: "r-2", kind: "point", verbatim: "Two distinct graphic techniques are required.", marks: 3, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secA-q15-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secA-q15-art.png",
+          "srcHash": "babea96352b45b67e650dc0faf95b3ce",
+          "alt": "Outline line drawing of a handheld cordless vacuum cleaner in pictorial view, drawn unshaded in a ruled box: the tapered nozzle and dust bowl at the front, the body with its switch and slide control, and the loop handle at the rear.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2148,7 +2156,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 HL Section C Q5(b)(ii)",
-    questionText: "Describe, using annotated sketches, an impact test to compare the impact properties of different materials that could be used in the manufacture of the cleaner cover. Describe, using annotated sketches, a suitable method to manufacture a large batch of the cleaner covers. OR",
+    questionText: "Describe, using annotated sketches, an impact test to compare the impact properties of different materials that could be used in the manufacture of the cleaner cover. Describe, using annotated sketches, a suitable method to manufacture a large batch of the cleaner covers.",
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The impact test is carried out in a controlled Striker at a environment as the samples are likely to predetermined break. height.", marks: null, openList: true },
@@ -2181,7 +2189,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c5d-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 HL Section C Q5(d)(i)",
-    stem: "Do not write on this page Acknowledgements Images Image 1 page 2: https://milled.com/ubtech-robotics/ Image 2 page 2: https://www.ubtechvietnam.com/ Image 3 page 2: https://www.tokopedia.com/ Image 1 page 3: https://urbanmovement.ie/ Image 2 page 3: https://urbanmovement.ie/ Image 3 page 3: https://torstromsnes.blogspot.com/ Image 1 page 4: https://lh3.googleusercontent.com/ Image 2 page 4: https://www.downloadclipart.net/ Image 3 page 4: https://aptgadget.com/ Image 4 page 4: https://www.kinequip.com/ Image 1 page 5: https://www.ebay.com/ Image 2 page 5: https://www.sk.rs/ Image 3 page 5: https://www.walmart.com/ Image 1 page 6: https://www.lawsociety.ie/ Image 2 page 6: https://symcomputadores.com/ Image 3 page 6: https://www.eteknix.com/ Image 1 page 7: https://fractory.com/ Image 2 page 7: https://www.3dprintingmedia.network/ Image 1 page 8: http://www.brunellostampi.com/ Image 2 page 8: http://www.pascalruelle.com/ Image 1 page 9: https://grabcad.com/ Image 2 page 9: https://site-static.ecovacs.com/ Image 3 page 9: https://www.sdp-si.com/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+    stem: "Do not write on this page",
     questionText: "Explain, with one example in each case, the uses of nylon in fibres, film, and extruded sections.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 6,
     rows: [
@@ -2198,7 +2206,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c5d-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 HL Section C Q5(d)(ii)",
-    stem: "Do not write on this page Acknowledgements Images Image 1 page 2: https://milled.com/ubtech-robotics/ Image 2 page 2: https://www.ubtechvietnam.com/ Image 3 page 2: https://www.tokopedia.com/ Image 1 page 3: https://urbanmovement.ie/ Image 2 page 3: https://urbanmovement.ie/ Image 3 page 3: https://torstromsnes.blogspot.com/ Image 1 page 4: https://lh3.googleusercontent.com/ Image 2 page 4: https://www.downloadclipart.net/ Image 3 page 4: https://aptgadget.com/ Image 4 page 4: https://www.kinequip.com/ Image 1 page 5: https://www.ebay.com/ Image 2 page 5: https://www.sk.rs/ Image 3 page 5: https://www.walmart.com/ Image 1 page 6: https://www.lawsociety.ie/ Image 2 page 6: https://symcomputadores.com/ Image 3 page 6: https://www.eteknix.com/ Image 1 page 7: https://fractory.com/ Image 2 page 7: https://www.3dprintingmedia.network/ Image 1 page 8: http://www.brunellostampi.com/ Image 2 page 8: http://www.pascalruelle.com/ Image 1 page 9: https://grabcad.com/ Image 2 page 9: https://site-static.ecovacs.com/ Image 3 page 9: https://www.sdp-si.com/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+    stem: "Do not write on this page",
     questionText: "Describe two properties that make nylon suitable for gear wheels.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 8,
     rows: [
@@ -2614,9 +2622,9 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
-    id: "tech-2023-hl-a15", topicId: "tech-core-energy", conceptId: "core-energy",
+    id: "tech-2023-hl-a15", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "A", questionRef: "2023 HL Section A Q15",
-    questionText: "Sketch two orthographic views of the ‘non-conformist chair’ designed by Irish innovator, Eileen Gray in 1926. Answerbook for Sections B and C Instructions Questions for Sections B and C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs, and diagrams only. Part Start each question on a new page Question 11 Part Start each question on a new page Question 12 Part Start each question on a new page Question 13 Part Start each question on a new page Question 14 Part Start each question on a new page Question 15 Part Start each question on a new page Question Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Acknowledgements Image 1. Page 3. Q.1. https://www.irishtimes.com/tags/centre-for-research/ Image 2. Page 3. Q.2. https://www.madeofirish.com/collections/copper-fish-studio-1 Image 1. Page 4. Q.3. https://www.pumpworld.co.uk/Specify/Supergen-Selector Image 2. Page 4. Q.4. https://grabcad.com/library/connector-rj11-rj12-rj45-1 Image 1. Page 5. Q.6. https://www.milwaukeetool.com/Products/Power-Tools/Drilling/Right- Angle-Drills/0721-20 Image 2. Page 5. Q.6. https://skycraftsurplus.com/products/hobby-motor-1-5-12-volt-dc-3-000- rpm.html Image 3. Page 5. Q.7. https://www.logitech.com/en-us/about/designawards.html Image 1. Page 6. Q.9. https://easydrawingguides.com/how-to-draw-a-wind-turbine/ Image 1. Page 7. Q.10. https://www.notesandsketches.co.uk/Gears.html Image 2. Page 7. Q.11. https://driftinnovation.com/products/drift-vented-helmet-mount-1 Image 1. Page 8. Q.12. https://www.juvidesigns.com/ Image 2. Page 8. Q.13. https://www.iqsdirectory.com/articles/gearbox/gear-reducers.html Image 1. Page 9. Q.14. https://www.hindleys.com/shop-online/vacuum-forming-sheet-hips.html Image 2. Page 9. Q.15. https://www.museum.ie/en-IE/Museums/Decorative-Arts- History/Exhibitions/Eileen-Gray Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+    questionText: "Sketch two orthographic views of the ‘non-conformist chair’ designed by Irish innovator, Eileen Gray in 1926. 2023L065A2EL 2023.M104BC Coimisiún na Scrúduithe Stáit State Examinations Commission Section B and Section C Higher Level Monday 26 June Afternoon 2:00 - 4:30 160 marks Instructions Section B 48 marks Core- Long-answer questions. Answer the two core questions presented. Each question in Section B carries 24 marks. Section C 40 marks Options- Long-answer questions. Answer one of the five optional questions presented. Each question in Section C carries 40 marks. THESE QUESTIONS ARE TO BE ANSWERED IN THE ANSWERBOOK ATTACHED TO SECTION A.",
     tariffModel: {"kind":"fixed","notation":"(6 marks 3 + 3)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two orthographic views", marks: 6, openList: true },
@@ -2698,7 +2706,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-b2c-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2023 HL Section B Q2(c)(ii)",
-    questionText: "Concerns were raised over a flight time of five minutes and a reduction in company support for the device, despite initial high demand. Outline the possible impact of these concerns on the product lifecycle of the Pixy drone. OR",
+    questionText: "Concerns were raised over a flight time of five minutes and a reduction in company support for the device, despite initial high demand. Outline the possible impact of these concerns on the product lifecycle of the Pixy drone.",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Outline the possible impact of these concerns on the product lifecycle of the Pixy drone.", marks: null, openList: true },
@@ -2943,7 +2951,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 HL Section C Q1(c)(ii)",
-    questionText: "Describe, with annotated sketches, a work envelope for a polar robot. OR",
+    questionText: "Describe, with annotated sketches, a work envelope for a polar robot.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The work envelope is the space around the robot, that it can reach.", marks: null, openList: true },
@@ -3076,7 +3084,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 HL Section C Q2(c)(ii)",
-    questionText: "Outline the role of induction in the operation of a wireless charging device. OR",
+    questionText: "Outline the role of induction in the operation of a wireless charging device.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "When an electric current flows through a wire, it creates a magnetic field around it.", marks: null, openList: true },
@@ -3208,7 +3216,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c3c-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 HL Section C Q3(c)(ii)",
-    questionText: "Explain how simulated phishing attacks might be helpful in improving user awareness of cybersecurity. OR",
+    questionText: "Explain how simulated phishing attacks might be helpful in improving user awareness of cybersecurity.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "of cyber security.", marks: null, openList: true },
@@ -3345,7 +3353,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 HL Section C Q4(c)(ii)",
-    questionText: "Describe the Pareto principle. OR",
+    questionText: "Describe the Pareto principle.",
     tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The Pareto principle, also known as the 80/20 rule or the law of the vital few, is a principle named after the Italian economist Vilfredo Pareto. It states that for many events or phenomena, roughly 80% of the effects come from 20% of the causes. For example, around 80% of a company's profits may come from 20% of its customers, or 80% of the company's problems may stem from 20% of its products or processes.", marks: 6, openList: true },
@@ -3458,7 +3466,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 HL Section C Q5(c)(ii)",
-    questionText: "Outline two advantages of material non-destructive testing (NDT) methods in product development. OR",
+    questionText: "Outline two advantages of material non-destructive testing (NDT) methods in product development.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "development.", marks: null, openList: true },
@@ -3474,7 +3482,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c5d-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 HL Section C Q5(d)(i)",
-    stem: "Honeycomb vents Mouse buttons Do not write on this page Acknowledgements Image 1. Page 2. Q.2a. https://www.gsmarena.com/snap_stops_development_of_its_snapchat- _pixy_selfie_drone-news-55469.php Image 2. Page 2. Q.2b. Q.2b. https://folou.co/mundo/snapchat-dron-pixy-fotos/ Image 3. Page 2. Q.2c. https://www.researchgate.net/figure/Product-service-life- cycle_fig2_316137762 Image 1. Page 3. Q.3a. https://www.greencars.com/news/volkswagens-ev-charging-robots Image 2. Page 3. Q.3b. https://www.carmagazine.co.uk/car-news/tech/volkswagen-charging- robot/ Image 3. Page 3. Q.3d. https://www.circuitspecialists.com/blog/basic-indoor-soldering-station- setup/ Image 1. Page 4. Q.1a. https://www.businessbecause.com/news/online-mba/7908/edtech-trends- 2022 Image 2. Page 4. Q.1b. http://digilifeweb.com/Aquarium-Monitor-IBowl-3-in-1 Image 3. Page 4. Q.1d. https://www.mfgnewsweb.com/archives/metalfmg_fabricating_waterjet/ apr18/pics/FANUC-R-1000iA_120F-7B-Welding-Robot-1.jpg Image 1. Page 5. Q.2a. https://ecohorizon.ie/the-news-we-have-been-waiting-for-is-finally-here/ Image 2. Page 5. Q.2d. https://www.breville.com/us/en/products/nespresso.html Image 1. Page 6. Q.3a. https://www.3blmedia.com/news/global-emissions-ict-sector-par-aviation- industry Image 2. Page 6. Q.3b. https://www.binarytides.com/best-laptops-for-animation-and-graphics/ Image 1. Page 7. Q.4a. https://www.allaboutlean.com/muda/ Image 2. Page 7. Q.4b. https://www.amazon.co.uk/GoPro-Helmet-Front-Mount- Camera/dp/B01GCKO9Z8 Image 1. Page 8. Q.4c. https://www.flipkart.com/audio-video/toshiba~brand/pr?sid=0pm Image 2. Page 8. Q.4d. https://courses.lumenlearning.com/wm-introductiontobusiness/ chapter/facility-location-and-layout/ Image 1. Page 9. Q.5a. https://www.recompute.com.au/blog/environmental-impact-of-3d- printing/ Image 2. Page 9. Q.5b. https://www.catch.com.au/product/2-4ghz-honeycomb-lightweight- wireless-gaming-mouse-rgb-gamer-mice-for-game-white-11264695/ Image 3. Page 9. Q.5d. https://www.dreamstime.com/stock-photography-computer-mouse- cardboard-box-image22828612 Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+    stem: "Honeycomb vents Mouse buttons Do not write on this page",
     questionText: "Explain the purpose of corrugation when producing cardboard.",
     tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
     rows: [
@@ -3488,7 +3496,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c5d-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 HL Section C Q5(d)(ii)",
-    stem: "Honeycomb vents Mouse buttons Do not write on this page Acknowledgements Image 1. Page 2. Q.2a. https://www.gsmarena.com/snap_stops_development_of_its_snapchat- _pixy_selfie_drone-news-55469.php Image 2. Page 2. Q.2b. Q.2b. https://folou.co/mundo/snapchat-dron-pixy-fotos/ Image 3. Page 2. Q.2c. https://www.researchgate.net/figure/Product-service-life- cycle_fig2_316137762 Image 1. Page 3. Q.3a. https://www.greencars.com/news/volkswagens-ev-charging-robots Image 2. Page 3. Q.3b. https://www.carmagazine.co.uk/car-news/tech/volkswagen-charging- robot/ Image 3. Page 3. Q.3d. https://www.circuitspecialists.com/blog/basic-indoor-soldering-station- setup/ Image 1. Page 4. Q.1a. https://www.businessbecause.com/news/online-mba/7908/edtech-trends- 2022 Image 2. Page 4. Q.1b. http://digilifeweb.com/Aquarium-Monitor-IBowl-3-in-1 Image 3. Page 4. Q.1d. https://www.mfgnewsweb.com/archives/metalfmg_fabricating_waterjet/ apr18/pics/FANUC-R-1000iA_120F-7B-Welding-Robot-1.jpg Image 1. Page 5. Q.2a. https://ecohorizon.ie/the-news-we-have-been-waiting-for-is-finally-here/ Image 2. Page 5. Q.2d. https://www.breville.com/us/en/products/nespresso.html Image 1. Page 6. Q.3a. https://www.3blmedia.com/news/global-emissions-ict-sector-par-aviation- industry Image 2. Page 6. Q.3b. https://www.binarytides.com/best-laptops-for-animation-and-graphics/ Image 1. Page 7. Q.4a. https://www.allaboutlean.com/muda/ Image 2. Page 7. Q.4b. https://www.amazon.co.uk/GoPro-Helmet-Front-Mount- Camera/dp/B01GCKO9Z8 Image 1. Page 8. Q.4c. https://www.flipkart.com/audio-video/toshiba~brand/pr?sid=0pm Image 2. Page 8. Q.4d. https://courses.lumenlearning.com/wm-introductiontobusiness/ chapter/facility-location-and-layout/ Image 1. Page 9. Q.5a. https://www.recompute.com.au/blog/environmental-impact-of-3d- printing/ Image 2. Page 9. Q.5b. https://www.catch.com.au/product/2-4ghz-honeycomb-lightweight- wireless-gaming-mouse-rgb-gamer-mice-for-game-white-11264695/ Image 3. Page 9. Q.5d. https://www.dreamstime.com/stock-photography-computer-mouse- cardboard-box-image22828612 Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+    stem: "Honeycomb vents Mouse buttons Do not write on this page",
     questionText: "Compare the environmental impact of using expanded polystyrene or corrugated cardboard as packaging materials.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
@@ -4210,7 +4218,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 HL Section C Q1(c)(ii)",
-    questionText: "Outline the operation of a closed-loop control system. OR",
+    questionText: "Outline the operation of a closed-loop control system.",
     tariffModel: {"kind":"fixed","notation":"(14 marks, 6 + 8)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Closed loop control is also known as feedback control. The response or the actual result is continuously compared with the desired result. The control output is adjusted to reduce any deviation, this ensures the response will follow the desired outcome.", marks: 8, openList: true },
@@ -4437,7 +4445,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c3c-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 HL Section C Q3(c)(ii)",
-    questionText: "Explain the term network eavesdropping and the possible consequences for a business. OR",
+    questionText: "Explain the term network eavesdropping and the possible consequences for a business.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "is the unauthorised monitoring, reading or interception of network communications usually with the intention of capturing sensitive data. It often takes the form of passive surveillance and is aided by unencrypted communication.", marks: null, openList: true },
@@ -4681,7 +4689,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 HL Section C Q5(c)(ii)",
-    questionText: "Outline a technique to incorporate the company crest on the presentation box. OR",
+    questionText: "Outline a technique to incorporate the company crest on the presentation box.",
     tariffModel: {"kind":"fixed","notation":"(14 marks, 6 + 8)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A company crest can be hand engraved, carved, use marquetry, laser cut, etc.", marks: 8, openList: true },
@@ -5122,7 +5130,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-b2c-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2025 HL Section B Q2(c)(ii)",
-    questionText: "Describe, using the RGB LED light strip as an example, each of the following dimensions of quality: • Conformance • Serviceability • Reliability. OR",
+    questionText: "Describe, using the RGB LED light strip as an example, each of the following dimensions of quality: • Conformance • Serviceability • Reliability.",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks, 3 + 3)"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Conformance: The degree to which a product’s design and operating characteristics meet established standards.", marks: null, openList: true },
@@ -5860,7 +5868,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2025 HL Section C Q5(c)(ii)",
-    questionText: "Describe, with an application in each case, non-ferrous metals and alloy metals. OR",
+    questionText: "Describe, with an application in each case, non-ferrous metals and alloy metals.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Non-ferrous metals: do not contain iron e.g. aluminium, copper, zinc, lead, tin, gold, silver etc. Applications: copper pipes, gold/silver for jewellery etc.", marks: null, openList: true },

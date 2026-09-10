@@ -88,6 +88,28 @@ ASK_LINE = re.compile(
 # the picture's own columns overlap the prose's, the rectangle cannot separate
 # them. Those are refused, not trimmed.
 REVIEWED = {
+    'technology-2022-HL-paper-secA-q15-art':
+        'Outline line drawing of a handheld cordless vacuum cleaner in '
+        'pictorial view, drawn unshaded in a ruled box: the tapered nozzle and '
+        'dust bowl at the front, the body with its switch and slide control, '
+        'and the loop handle at the rear.',
+    'technology-2022-OL-paper-secA-q12-art':
+        'Outline line drawing of a USB flash drive in pictorial view, drawn '
+        'unshaded in a ruled box, with its cap lying separately to the right '
+        'and the metal connector exposed.',
+    'technology-2023-OL-paper-secA-q12-art':
+        'Outline line drawing of an electric kettle in pictorial view, drawn '
+        'unshaded in a ruled box: the tapered jug with its spout, hinged lid, '
+        'handle and water-level window, standing on its power base.',
+    'technology-2024-OL-paper-secA-q12-art':
+        'Outline line drawing of an angle-poise desk lamp in pictorial view, '
+        'drawn unshaded in a ruled box: the conical shade, the two-part '
+        'jointed arm and the weighted domed base.',
+    'technology-2025-OL-paper-secA-q12-art':
+        'Line drawing of a disposable takeaway coffee cup, drawn in outline on '
+        'a lightly hatched square inside a ruled box: a domed lid with a '
+        'drinking hole, a sleeve carrying a coffee-bean motif, and the tapered '
+        'cup below it.',
     'technology-2022-OL-paper-secA-q6-art':
         'Colour photograph of a pair of blue plastic bevel gears in mesh: a '
         'small pinion standing at right angles above a much larger bevel wheel '
@@ -271,6 +293,7 @@ REVIEWED = {
 
 # Looked at and turned down, with what is wrong with each.
 REJECTED = {
+    'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',
     'technology-2023-HL-paper-secA-q13-art': 'the empty two-row answer box, not a picture',
     'technology-2024-HL-paper-secC-q4d-art': 'the axis titles of the lifecycle graph are clipped',

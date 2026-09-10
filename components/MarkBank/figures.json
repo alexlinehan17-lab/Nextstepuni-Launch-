@@ -36450,5 +36450,60 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2022-HL-paper-secA-q15-art": {
+  "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secA-q15-art.png",
+  "md5": "babea96352b45b67e650dc0faf95b3ce",
+  "alt": "Outline line drawing of a handheld cordless vacuum cleaner in pictorial view, drawn unshaded in a ruled box: the tapered nozzle and dust bowl at the front, the body with its switch and slide control, and the loop handle at the rear.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Section A Q15",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+ },
+ "technology-2022-OL-paper-secA-q12-art": {
+  "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secA-q12-art.png",
+  "md5": "9734785c0bad60afd48cb158efd2e91a",
+  "alt": "Outline line drawing of a USB flash drive in pictorial view, drawn unshaded in a ruled box, with its cap lying separately to the right and the metal connector exposed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q12",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2023-OL-paper-secA-q12-art": {
+  "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secA-q12-art.png",
+  "md5": "c5c00cb6dc4aea0dccbffa66d0aeb89c",
+  "alt": "Outline line drawing of an electric kettle in pictorial view, drawn unshaded in a ruled box: the tapered jug with its spout, hinged lid, handle and water-level window, standing on its power base.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section A Q12",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2024-OL-paper-secA-q12-art": {
+  "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secA-q12-art.png",
+  "md5": "304bfd8f8fae1c2cb3d87cfbf11b5dfd",
+  "alt": "Outline line drawing of an angle-poise desk lamp in pictorial view, drawn unshaded in a ruled box: the conical shade, the two-part jointed arm and the weighted domed base.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q12",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2025-OL-paper-secA-q12-art": {
+  "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q12-art.png",
+  "md5": "8f25fd0bd7aa29725697cc4567cbee66",
+  "alt": "Line drawing of a disposable takeaway coffee cup, drawn in outline on a lightly hatched square inside a ruled box: a domed lid with a drinking hole, a sleeve carrying a coffee-bean motif, and the tapered cup below it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q12",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
  }
 }

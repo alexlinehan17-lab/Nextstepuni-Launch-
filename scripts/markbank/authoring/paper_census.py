@@ -95,6 +95,9 @@ MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
 # "Section 1", "Section A" as a header — never "Sections 2 and 3", which is a
 # cover line for a whole booklet, because \b cannot fall inside "Sections".
 SECTION = re.compile(r'\bSection\s+([A-Z]|\d{1,2})\b')
+# Where a booklet stops setting questions and starts talking about itself.
+BACK_MATTER = re.compile(
+    r'^(?:Answerbook for Section|Acknowledgements\b|Copyright notice\b)')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 
@@ -308,6 +311,16 @@ def census_sections(subject, year, level):
     blocks = []
     for path in P.files:
         for block in PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None):
+            # The answerbook's own back matter -- its instructions, its ruled
+            # pages, the image acknowledgements and the copyright notice --
+            # follows the last question in the SAME booklet, and the walker
+            # ran straight on into it: the last question of Technology's
+            # Section A came out carrying two thousand characters of "Start
+            # each question on a new page" and a list of image URLs. Skipped
+            # per FILE, not for the sitting, because the next booklet's
+            # questions come after it.
+            if BACK_MATTER.match(block):
+                break
             for text in PP.INLINE_QHEAD.split(block):
                 # Capital markers mid-block: Business glues "(B) Outline..."
                 # onto the tail of (A)'s prose.

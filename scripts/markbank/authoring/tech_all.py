@@ -120,6 +120,12 @@ def clean_ask(text):
     """
     raw = text or ''
     text = clean(BLANK_RULE.sub(' ', raw))
+    # The choice rubric that follows an either/or part -- the paper prints
+    # "Answer 5(c) or 5(d)" above them and a standalone "OR" between them, and
+    # the trailing one welds onto the end of (c)'s last ask. Fifteen cards
+    # ended "... on the presentation box. OR".
+    text = re.sub(r'\s+OR\s*$', '', text)
+
     # Only where the answerbook's ruled lines were actually there. A trailing
     # colon is ALSO how a question introduces its own bullet list -- "Explain
     # each of the following in relation to DFA:" -- and stripping that left
