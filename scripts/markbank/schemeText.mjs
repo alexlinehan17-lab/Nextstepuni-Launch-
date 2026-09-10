@@ -75,6 +75,27 @@ const MARKS_CELL = /⟨[^⟩]*⟩/g;
 const ORDINAL_TARIFF = /\b\d+\s*(?:st|nd|rd|th)\s*[@x]\s*\d+\b/gi;
 
 /**
+ * The scheme's own bracketed aside, and the tariff it prints inside an answer.
+ *
+ * A Spanish scheme prices every answer in line and clarifies inside the answer
+ * itself. Its own explanatory page says so: "Square brackets [ ] show a
+ * breakdown of marks within the question or give further clarifications for
+ * marks to be awarded". Both land in the MIDDLE of a marking point:
+ *
+ *     We don't have enough courts (to satisfy the demand)/ there are only 50
+ *     courts [2m]and we have 6000 players [1m] (3m)
+ *     (There is no doubt that physical exercise) has lots of benefits for
+ *     everybody (2m) and it is something we should start at a young age (2m)
+ *
+ * so a card quoting the SEC's own sentence cannot be found in the SEC's own
+ * scheme. Stripped as an ADDED form, for the reason ORDINAL_TARIFF is: a fold
+ * applied to both sides is symmetric and a symmetric fold has cost a card
+ * before, while an added form can only ever let more of the SEC's own text
+ * through. No claim contains a marks cell or a square bracket.
+ */
+const INLINE_ASIDE = /\[[^\]]*\]|\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m|marks?)\s*\)/gi;
+
+/**
  * The extractor's own page markers.
  *
  * A marking point does not stop at a page break — the SEC prints "Less Risk /
@@ -275,6 +296,7 @@ export const comparableScheme = (raw) => {
     whole.replace(DEGREE_O, '$1c'),
     normalise(foldOriya(joined)),
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
+    normalise(joined.replace(INLINE_ASIDE, ' ')),
     normalise(repairGlyphs(joined)),
     ...numericRuns,
   ].join('|');

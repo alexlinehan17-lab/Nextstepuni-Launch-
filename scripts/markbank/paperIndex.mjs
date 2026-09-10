@@ -134,6 +134,46 @@ const labelCovers = (label) => {
 const stripPdf = (f) => (f ? String(f).replace(/\.pdf$/, '') : null);
 
 /**
+ * A companion document that carries READING MATTER only, and no questions.
+ *
+ * Spanish prints its Section B article on a two-page LOOSE SHEET with its own
+ * SEC file id (LC012ALP015EV), and Paper Trail indexes it as a paper labelled
+ * "Section B". It is not a question document: every Section B question is
+ * printed in the Exam Paper, and the sheet holds the article alone. Left
+ * unnamed here, labelCovers() reads "Section B" as a section match, so every
+ * Spanish Section B card would deep-link to the article WITHOUT its questions
+ * while Sections A and C resolved to null — a real document, the wrong one,
+ * which is the failure this whole module exists to prevent.
+ *
+ * The sheet is still bound where it belongs: those cards set
+ * sourceMaterial.sourceFileid, resolved by resolveCompanionFileid below.
+ */
+const TEXT_ONLY_COMPANION = {
+  // "Section B" is the only such label the index carries for Spanish, across
+  // all seventeen years of it. Named exactly, not as a pattern over A-C: a
+  // companion labelled "Section A" would be a different document with a
+  // different relationship to the questions, and guessing at one that does not
+  // exist is how the wrong booklet gets bound.
+  spanish: /^Section B$/i,
+};
+
+/**
+ * The file id of a NAMED companion document — an illustration booklet, a loose
+ * text sheet — or null.
+ *
+ * Null rather than a guess, and null unless the label names exactly ONE
+ * document in that sitting: a card whose source cannot be resolved is dropped
+ * by the build rather than pointed at whichever paper happened to be first.
+ */
+export function resolveCompanionFileid(subjectId, year, level, label) {
+  const entry = paperEntry(subjectId, year, level);
+  const want = String(label ?? '').trim().toLowerCase();
+  if (!want || !entry?.papers?.length) return null;
+  const hits = entry.papers.filter(p => String(p.label).trim().toLowerCase() === want);
+  return hits.length === 1 ? stripPdf(hits[0].doc?.f) : null;
+}
+
+/**
  * The file id of the QUESTION PAPER holding a card's section, or null.
  *
  * Null rather than a guess: a wrong id sends a student to the wrong document,
@@ -157,8 +197,10 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   // cannot be answered from print, and the deck excludes it.
   const namedExamPapers = entry.papers.filter(p => /^Exam Paper$/i.test(p.label));
   const companions = entry.papers.filter(p => !/^Exam Paper$/i.test(p.label));
+  const textOnly = TEXT_ONLY_COMPANION[subjectId];
   if (namedExamPapers.length === 1 && companions.length > 0
-      && companions.every(p => /picture|illustration|aural|listening/i.test(p.label))) {
+      && companions.every(p => /picture|illustration|aural|listening/i.test(p.label)
+        || (textOnly && textOnly.test(p.label)))) {
     return stripPdf(namedExamPapers[0].doc?.f);
   }
   const direct = entry.papers.find(p => labelCovers(p.label).has(section));

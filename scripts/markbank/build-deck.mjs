@@ -24,7 +24,7 @@ import { createHash } from 'node:crypto';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid, corpusSubjectFor } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
@@ -209,6 +209,17 @@ const SUBJECTS = {
     specVersion: 'lc-applied-mathematics-2021',
     specNote: 'Cards are tagged to the four strands of the Applied Mathematics specification\n * first examined in 2023. The 2021 and 2022 papers were sat on the outgoing\n * mechanics syllabus, which Strand 3 of that specification contains whole.',
     figureDir: 'public/exam-figures/applied-maths',
+    blocked: new Set(),
+  },
+  spanish: {
+    title: 'Spanish',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-spanish-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate Spanish syllabus.\n * A sitting is THREE booklets — the written paper, a separate Listening\n * Comprehension Test, and at Higher a two-page loose sheet carrying the Section B\n * article. Every reading card carries the text it quotes, bound to the pages of\n * the booklet that printed it; the Section B cards bind the loose sheet by its\n * own SEC file id, not the question paper\u2019s.',
+    figureDir: 'public/exam-figures/spanish',
     blocked: new Set(),
   },
   'agricultural-science': {
@@ -831,6 +842,25 @@ for (const c of cards) {
 
   const sources = [c.sourceMaterial, ...(c.additionalSourceMaterials ?? [])]
     .filter(Boolean);
+  /* A source printed in a SEPARATE official document names that document by
+   * its Paper Trail label, and the id is resolved here rather than typed by an
+   * author -- the same rule paperFileid has followed since a Biology build
+   * defaulted it to the marking scheme's id. Spanish needs it: its Higher
+   * Section B article is a two-page loose sheet (LC012ALP015EV) and the
+   * questions about it are in the question paper, so a card that let
+   * sourceFileid default would open the student on the questions and never
+   * show them the article. Unresolvable means the card is DROPPED. */
+  const unresolvedSource = sources.map((source) => {
+    if (!source.sourceLabel) return null;
+    const fileid = resolveCompanionFileid(
+      corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
+      c.level ?? 'higher', source.sourceLabel);
+    delete source.sourceLabel;
+    if (!fileid) return `source document "${source.label}" is not in the Paper Trail index`;
+    source.sourceFileid = fileid;
+    return null;
+  }).find(Boolean);
+  if (unresolvedSource) { dropped.push(`${c.id}: ${unresolvedSource}`); continue; }
   const badSource = sources.map((source, index) => sourceMaterialFault(
     source,
     index === 0 ? 'sourceMaterial' : `additionalSourceMaterials[${index - 1}]`,

@@ -52,6 +52,8 @@ import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technol
 import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
+import { CARDS as SPANISH_ORDINARY } from '../components/MarkBank/cards/spanish/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
@@ -462,6 +464,13 @@ const decks = [
    * regeneration cannot silently omit or replace any of its cards. */
   ['applied-maths:higher', APPLIED_MATHS_HIGHER, 130, '5c8f36ba0f4214eee4269d22bcd3d20ada53f1a33820c36c0e873fe5b5afac72'],
   ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 145, '1e39bd494a3304e1ec0b1153834dba6d7bf186d7f90ec05055024d40b869b570'],
+  /* Spanish is the second modern language carded, and the first subject whose
+   * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
+   * article is a two-page loose sheet with its own SEC file id, and those 80
+   * cards carry it rather than the question paper. New subject, first baseline
+   * — nothing removed and nothing replaced. */
+  ['spanish:higher', SPANISH_HIGHER, 204, '2dc8d8c0e05c628ecf86b1d0fe8cd99a78460d37d47009606e3005ee8dfce5bb'],
+  ['spanish:ordinary', SPANISH_ORDINARY, 143, 'f42cb5ebc5dbe2a1e959e5a71c4a72d3864eabcdc84789481716a2e98c7f6be1'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -476,10 +485,10 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // 10,495 before this session, plus six subjects carded in two waves:
+    // 10,495 before this session, plus seven subjects carded in three waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
-    // French 260 and Applied Maths 275.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(13_097);
+    // French 260, Applied Maths 275 and Spanish 347.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(13_444);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -497,7 +506,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('technology:')
         && !name.startsWith('history:')
         && !name.startsWith('french:')
-        && !name.startsWith('applied-maths:'))
+        && !name.startsWith('applied-maths:')
+        && !name.startsWith('spanish:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });
