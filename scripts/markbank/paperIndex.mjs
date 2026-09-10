@@ -67,6 +67,26 @@ const CORPUS_KEY = {
   'lcvp': 'link-modules',
 };
 
+/**
+ * The corpus key for a card, where a SUBJECT is examined as two papers a
+ * candidate chooses between.
+ *
+ * History is sat in one of two FIELDS OF STUDY, Later Modern and Early Modern.
+ * The SEC prints them as separate papers under separate subject codes — 004
+ * and 096 — and Paper Trail indexes them as two subjects, while Mark Bank
+ * ships one deck whose citations name the field. Resolving an Early Modern
+ * card against 'history' hands it the Later Modern paper: a real document, the
+ * wrong one, and the student is deep-linked to questions they never sat.
+ *
+ * Exported so the build and the deck test resolve identically; they had
+ * separate ideas of the corpus key once already (CORPUS_KEY below exists
+ * because 569 Home Economics cards shipped with no paper link at all).
+ */
+export const corpusSubjectFor = (subjectId, questionRef) =>
+  (subjectId === 'history' && /\bEarly Modern\b/.test(String(questionRef ?? ''))
+    ? 'history-early-modern'
+    : subjectId);
+
 /** The sitting of one subject, year and level in its authored paper language. */
 export const paperEntry = (subjectId, year, level) =>
   (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])

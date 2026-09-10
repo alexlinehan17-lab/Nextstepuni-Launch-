@@ -464,6 +464,49 @@ const TECHNOLOGY_DECK_TOPICS: Record<string, CanonicalCurriculumTopic> = {
   'technology-11': { id: 'tech-opt-materials', code: 'O5', title: 'Materials technology' },
 };
 
+/**
+ * The Mark Bank's twenty-four History topics, against the canonical group each
+ * belongs to. The titles are the papers' own, read off all twenty papers in the
+ * corpus rather than typed; where the SEC prints a topic two ways across years
+ * (“Colony versus kingdom” and “Colony v. Kingdom”) the commonest printing on the
+ * QUESTION PAPER is used, because the paper is what a student read. Mirrors
+ * HISTORY_STRANDS in components/MarkBank/deck.ts.
+ */
+const HISTORY_DECK_TOPICS: Record<string, CanonicalCurriculumTopic[]> = {
+  'history-0': [
+    { id: 'hist-em-irl-1', code: 'IRL 1', title: 'Reform and Reformation in Tudor Ireland, 1494-1558' },
+    { id: 'hist-em-irl-2', code: 'IRL 2', title: 'Rebellion and conquest in Elizabethan Ireland, 1558-1603' },
+    { id: 'hist-em-irl-3', code: 'IRL 3', title: 'Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660' },
+    { id: 'hist-em-irl-4', code: 'IRL 4', title: 'Establishing a colonial ascendancy, 1660-1715' },
+    { id: 'hist-em-irl-5', code: 'IRL 5', title: 'Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770' },
+    { id: 'hist-em-irl-6', code: 'IRL 6', title: 'The end of the Irish kingdom and the establishment of the Union, 1770-1815' },
+  ],
+  'history-1': [
+    { id: 'hist-em-eur-1', code: 'EUR 1', title: 'Europe from Renaissance to Reformation, 1492-1567' },
+    { id: 'hist-em-eur-2', code: 'EUR 2', title: 'Religion and power: politics in the later 16th century, 1567-1609' },
+    { id: 'hist-em-eur-3', code: 'EUR 3', title: 'The eclipse of Old Europe, 1609-1660' },
+    { id: 'hist-em-eur-4', code: 'EUR 4', title: 'Europe in the age of Louis XIV, 1660-1715' },
+    { id: 'hist-em-eur-5', code: 'EUR 5', title: 'Establishing empires, 1715-1775' },
+    { id: 'hist-em-eur-6', code: 'EUR 6', title: 'Empires in revolution, 1775-1815' },
+  ],
+  'history-2': [
+    { id: 'hist-lm-irl-1', code: 'IRL 1', title: 'Ireland and the Union, 1815-1870' },
+    { id: 'hist-lm-irl-2', code: 'IRL 2', title: 'Movements for political and social reform, 1870-1914' },
+    { id: 'hist-lm-irl-3', code: 'IRL 3', title: 'The pursuit of sovereignty and the impact of partition, 1912-1949' },
+    { id: 'hist-lm-irl-4', code: 'IRL 4', title: 'The Irish diaspora, 1840-1966' },
+    { id: 'hist-lm-irl-5', code: 'IRL 5', title: 'Politics and society in Northern Ireland, 1949-1993' },
+    { id: 'hist-lm-irl-6', code: 'IRL 6', title: 'Government, economy and society in the Republic of Ireland, 1949-1989' },
+  ],
+  'history-3': [
+    { id: 'hist-lm-eur-1', code: 'EUR 1', title: 'Nationalism and state formation in Europe, 1815-1871' },
+    { id: 'hist-lm-eur-2', code: 'EUR 2', title: 'Nation states and international tensions, 1871-1920' },
+    { id: 'hist-lm-eur-3', code: 'EUR 3', title: 'Dictatorship and democracy in Europe, 1920-1945' },
+    { id: 'hist-lm-eur-4', code: 'EUR 4', title: 'Division and realignment in Europe, 1945-1992' },
+    { id: 'hist-lm-eur-5', code: 'EUR 5', title: 'European retreat from empire and the aftermath, 1945-1990' },
+    { id: 'hist-lm-eur-6', code: 'EUR 6', title: 'The United States and the world, 1945-1989' },
+  ],
+};
+
 const ENGINEERING_GROUPS = [
   {
     id: 'eng1',
@@ -1650,6 +1693,20 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
   if (spec.subjectId === 'history') {
     return {
       ...spec,
+      /* Mark Bank files a History card under the numbered TOPIC printed over
+       * its question — "Ireland: Topic 1 / Ireland and the Union, 1815-1870" —
+       * because that is the content address both the paper and the marking
+       * scheme use, and a topic's questions range across every case study
+       * beneath it. Each of the four fields-and-areas therefore carries six
+       * extra canonical topics, one per numbered topic, holding the deck's own
+       * ids so a card resolves into this specification. The group ids and the
+       * syllabus's own case-study topics are untouched. */
+      groups: spec.groups.map((group) => {
+        const deckTopics = HISTORY_DECK_TOPICS[group.id];
+        return deckTopics
+          ? { ...group, topics: [...deckTopics, ...group.topics] }
+          : group;
+      }),
       id: 'history:current',
       title: 'Leaving Certificate History syllabus',
       status: 'verified',

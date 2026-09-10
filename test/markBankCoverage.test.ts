@@ -81,8 +81,25 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // The question number is OPTIONAL: Religious Education's Sections B-J print
 // none, so its citations read "2023 HL Section E Q(b)(ii)".
 // CL is LCVP's common level, the third the SEC prints.
-const HEAD =
-  /^(\d{4}) (HL|OL|CL)(?: Paper (\d))?(?: Section ([A-Za-z0-9]+))?(?: E(\d))? (?:Q(\d{1,2})?(-alt)?|ABQ)/;
+// History adds two things. Its two FIELDS OF STUDY are separate papers a
+// candidate chooses between, so the citation names one — "2021 HL Early
+// Modern ...". And its Sections 2 and 3 restart their numbering inside every
+// TOPIC, so the section token carries the topic and, at Ordinary, the A/B/C
+// part: "Section 2 Topic 1 A Q1". A part priced whole with nothing numbered
+// beneath it drops the Q entirely ("Section 2 Topic 1 B"), and the extra Part
+// A of 2023-2025 Ordinary is cited "Section Extra A Q1".
+const ADDRESS =
+  '^(\\d{4}) (HL|OL|CL)'
+  + '(?: (?:Later|Early) Modern)?'
+  + '(?: Paper (\\d))?'
+  + '(?: Section ((?:Extra )?[A-Za-z0-9]+(?: Topic \\d{1,2})?(?: [A-C]\\b)?))?'
+  + '(?: E(\\d))?';
+const QTOKEN = '(?: (?:Q(\\d{1,2})?(-alt)?|ABQ))';
+// Either the citation carries a question token, or it ENDS at its section —
+// which only a unit the paper numbers nothing beneath may do. Anchoring the
+// second form is what stops "2021 HL" alone from matching every citation and
+// letting the whole address through as an ignorable suffix.
+const HEAD = new RegExp(`${ADDRESS}${QTOKEN}|${ADDRESS}$`);
 // The bare A/B between tokens is Chemistry's printed option question —
 // "Q11(d)A(i)" answers option A of part (d).
 const TAIL =

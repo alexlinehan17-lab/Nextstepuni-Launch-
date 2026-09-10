@@ -46,6 +46,8 @@ import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engi
 import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
 import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
+import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
+import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
 import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technology/higher';
 import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
@@ -434,6 +436,16 @@ const decks = [
    * later regeneration cannot silently omit or replace any of its cards. */
   ['technology:higher', TECHNOLOGY_HIGHER, 357, 'ae8ad195ca373cef2d8923c83a848613215aa9413c2cd7bda7d6796c4d64370c'],
   ['technology:ordinary', TECHNOLOGY_ORDINARY, 359, '43e668303c30fef288ee0e09d8b5d3384105085e23cc10d288903ed29d1ab687'],
+  /* 2026-09-10: History, the nineteenth subject, and the first carded
+   * against TWO papers per sitting — a candidate sits either the Later
+   * Modern or the Early Modern field of study, and both are now in the
+   * corpus. Every card is new; none replaces anything. The Ordinary deck
+   * is much the larger because Ordinary is where this paper states its
+   * answers: its Part A prints five priced one-line answers per topic,
+   * while Higher answers everything outside the documents question with a
+   * marking ceiling and no content. */
+  ['history:higher', HISTORY_HIGHER, 80, '6ab586c6a2d83048d82aab13f5c7171ebcdf02fe61532a697c39556adaa0d657'],
+  ['history:ordinary', HISTORY_ORDINARY, 669, '7c781ff7d97974fe5679d021cbdf85299542783432fda549997830c5c6bcfdf9'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -448,9 +460,10 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // 10,495 before this wave, plus three new subjects carded together:
-    // Religious Education 288, LCVP 314, Technology 716.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_813);
+    // 10,495 before that wave, plus three new subjects carded together —
+    // Religious Education 288, LCVP 314, Technology 716 — and then History,
+    // 749 against the 1,430 asks its twenty papers print.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_562);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -465,7 +478,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('engineering:')
         && !name.startsWith('religious-education:')
         && !name.startsWith('lcvp:')
-        && !name.startsWith('technology:'))
+        && !name.startsWith('technology:')
+        && !name.startsWith('history:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });
