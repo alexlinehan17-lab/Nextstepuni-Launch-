@@ -123,7 +123,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-i", topicId: "latin-3-1", conceptId: "lat-aunt-believe-bring-great",
     section: "Q1", questionRef: "2021 HL Section B Q1(i)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "What did Pliny believe would bring great joy to his wife’s aunt ?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -148,7 +148,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-ii", topicId: "latin-3-1", conceptId: "lat-list-pliny-qualities-sees",
     section: "Q1", questionRef: "2021 HL Section B Q1(ii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "List two qualities that Pliny sees in his wife.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -173,7 +173,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-iii", topicId: "latin-3-1", conceptId: "lat-believe-got-literature-litterarum",
     section: "Q1", questionRef: "2021 HL Section B Q1(iii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "From what does Pliny believe that his wife got a love of literature (litterarum)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -197,7 +197,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-iv", topicId: "latin-3-1", conceptId: "lat-books-pliny’s-treat-wife",
     section: "Q1", questionRef: "2021 HL Section B Q1(iv)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "How does Pliny’s wife treat his books?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -222,7 +222,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-ix", topicId: "latin-3-1", conceptId: "lat-anything-else-expect-pliny",
     section: "Q1", questionRef: "2021 HL Section B Q1(ix)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "Why would Pliny not expect anything else from his wife?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -247,7 +247,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-v", topicId: "latin-3-1", conceptId: "lat-acturus-after-attends-before",
     section: "Q1", questionRef: "2021 HL Section B Q1(v)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "How does Pliny’s wife feel before and after he attends court (acturus)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -272,7 +272,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-vi", topicId: "latin-3-1", conceptId: "lat-giving-pliny-reading-recito",
     section: "Q1", questionRef: "2021 HL Section B Q1(vi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "Where does his wife go when Pliny is giving a reading (recito)? What does she do while she is there?",
     tariffModel: {"kind":"orderedSplit","notation":"She sits in a nearby space(4) she remains silent (2) and listens to him being praised (4) (max 8)"}, totalMarks: 8,
     rows: [
@@ -298,7 +298,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-vii", topicId: "latin-3-1", conceptId: "lat-certain-future-hope-marriage",
     section: "Q1", questionRef: "2021 HL Section B Q1(vii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "What most certain hope does Pliny have for the future of his marriage?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -323,7 +323,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-viii", topicId: "latin-3-1", conceptId: "lat-certain-feel",
     section: "Q1", questionRef: "2021 HL Section B Q1(viii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "Why does he feel so certain of this?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -348,7 +348,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-x", topicId: "latin-3-1", conceptId: "lat-came-feel-him-love",
     section: "Q1", questionRef: "2021 HL Section B Q1(x)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "Why does Pliny feel that his wife came to love him?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -372,7 +372,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-xi", topicId: "latin-3-1", conceptId: "lat-aunt-feel-grateful-pliny",
     section: "Q1", questionRef: "2021 HL Section B Q1(xi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "Why does Pliny and his wife feel grateful to her aunt?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -397,7 +397,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Higher Level — © State Examinations Commission.",
     id: "lat-2021-hl-b-q1-xii", topicId: "latin-3-1", conceptId: "lat-can-deduce-marriage-roman",
     section: "Q1", questionRef: "2021 HL Section B Q1(xii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last) Non dubito maximo tibi gaudio fore, cum cognoveris Calpurniam dignam patre, dignam te, dignam avo esse. Summum est acumen, summa frugalitas ; amat me, quod virtutis indicium est. Accedit his studium litterarum, quod ex mei amore concepit. Meos libellos habet, legit, discit etiam. Quam sollicita est cum acturus sum ! quanto cum finivi gaudio adficitur. Calpurnia, si quando recito, in proximo tacite spatio, sedet. Laudes",
+    stem: "Pliny praises his wife, Calpurnia, in a letter to her aunt; he feels the marriage will last",
     questionText: "What can you deduce about Roman marriage from this passage?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -712,7 +712,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-i", topicId: "latin-3-1", conceptId: "lat-expect-pliny-reader-surprised",
     section: "Q1", questionRef: "2022 HL Section B Q1(i)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "Why does Pliny expect the reader to be surprised?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -737,7 +737,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-ii", topicId: "latin-3-1", conceptId: "lat-cause-even-more-reader",
     section: "Q1", questionRef: "2022 HL Section B Q1(ii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "What, then, does he think will cause the reader even more surprise?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -762,7 +762,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-iii", topicId: "latin-3-1", conceptId: "lat-begin-day-pliny’s-secundus",
     section: "Q1", questionRef: "2022 HL Section B Q1(iii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "How did Pliny’s uncle, Secundus, begin his working day?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -786,7 +786,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-iv", topicId: "latin-3-1", conceptId: "lat-emperor-tell-vespasian-writer",
     section: "Q1", questionRef: "2022 HL Section B Q1(iv)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "What does the writer tell us about the Emperor Vespasian?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -810,7 +810,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-ix", topicId: "latin-3-1", conceptId: "lat-mode-rome-secundus-transport",
     section: "Q1", questionRef: "2022 HL Section B Q1(ix)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "What mode of transport did Secundus use when travelling to Rome?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -834,7 +834,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-v", topicId: "latin-3-1", conceptId: "lat-after-dinner-got-home",
     section: "Q1", questionRef: "2022 HL Section B Q1(v)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "What did Secundus do after dinner when he got home?",
     tariffModel: {"kind":"orderedSplit","notation":"(In summer, when at leisure,) he lay in the sun (4) he took notes (and excerpts) from a book (4) he used to read a book. (4) (any two)"}, totalMarks: 8,
     rows: [
@@ -860,7 +860,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-vi", topicId: "latin-3-1", conceptId: "lat-believe-every-secundus",
     section: "Q1", questionRef: "2022 HL Section B Q1(vi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "What did Secundus believe about every book?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -885,7 +885,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-vii", topicId: "latin-3-1", conceptId: "lat-accompanied-feel-him-secundus",
     section: "Q1", questionRef: "2022 HL Section B Q1(vii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "How did Secundus feel when he was travelling and who accompanied him?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -910,7 +910,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-viii", topicId: "latin-3-1", conceptId: "lat-cold-protected-secretary-secundus",
     section: "Q1", questionRef: "2022 HL Section B Q1(viii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "How was the secretary of Secundus protected from the cold in winter?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -934,7 +934,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-x", topicId: "latin-3-1", conceptId: "lat-attitude-secundus-should-time",
     section: "Q1", questionRef: "2022 HL Section B Q1(x)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "Describe the attitude of Secundus to the way time should be used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -959,7 +959,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-xi", topicId: "latin-3-1", conceptId: "lat-consider-him-people-pliny",
     section: "Q1", questionRef: "2022 HL Section B Q1(xi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "How does the writer, Pliny, react when people consider him studious (studiosus)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -983,7 +983,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Higher Level — © State Examinations Commission.",
     id: "lat-2022-hl-b-q1-xii", topicId: "latin-3-1", conceptId: "lat-comparer-compares-feel-pliny",
     section: "Q1", questionRef: "2022 HL Section B Q1(xii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling) Miraris quomodo tot libros multosque in his tam longos meus avunculus, Secundus, scripserit? Magis miraberis si scieris illum multos annos causas actitasse, perivisse anno sexto et quinquagensimo. Ante lucem ibat ad Vespasianum imperatorem (nam ille quoque noctibus utebatur) inde ad delegatum sibi officium. Reversus domum, post cenam saepe, aestate si quid otii iacebat in sole, liber legebatur, adnotabat excerpebatque.",
+    stem: "Pliny writes that his uncle Secundus works very hard while in Rome and also when travelling",
     questionText: "How does Pliny feel that he compares (comparer) to his uncle, Secundus?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -1321,7 +1321,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-i", topicId: "latin-3-1", conceptId: "lat-beginning-described-veturia",
     section: "Q1", questionRef: "2023 HL Section B Q1(i)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "How is Veturia described in beginning of this passage?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1346,7 +1346,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-ii", topicId: "latin-3-1", conceptId: "lat-bring-camp-enemy-into",
     section: "Q1", questionRef: "2023 HL Section B Q1(ii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "Who did Volumnia bring with her into the enemy camp?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1370,7 +1370,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-iii", topicId: "latin-3-1", conceptId: "lat-city-defend-defending-need",
     section: "Q1", questionRef: "2023 HL Section B Q1(iii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "Why did the women need to defend the city? How were they defending it?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1395,7 +1395,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-iv", topicId: "latin-3-1", conceptId: "lat-announced-coriolanus-first",
     section: "Q1", questionRef: "2023 HL Section B Q1(iv)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "At first, what was announced to Coriolanus?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1419,7 +1419,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-ix", topicId: "latin-3-1", conceptId: "lat-other-react-women-words",
     section: "Q1", questionRef: "2023 HL Section B Q1(ix)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "How did the other women react to her words?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1443,7 +1443,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-v", topicId: "latin-3-1", conceptId: "lat-coriolanus-react-tears",
     section: "Q1", questionRef: "2023 HL Section B Q1(v)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "How did Coriolanus react to the tears?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1467,7 +1467,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-vi", topicId: "latin-3-1", conceptId: "lat-coriolanus-coriolanus’-friend-him",
     section: "Q1", questionRef: "2023 HL Section B Q1(vi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "What did a friend of Coriolanus then tell him? What was Coriolanus’ reaction?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1492,7 +1492,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-vii", topicId: "latin-3-1", conceptId: "lat-coriolanus-him-mother-react",
     section: "Q1", questionRef: "2023 HL Section B Q1(vii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "How did the mother of Coriolanus react when she saw him?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1516,7 +1516,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-viii", topicId: "latin-3-1", conceptId: "lat-get-him-information-want",
     section: "Q1", questionRef: "2023 HL Section B Q1(viii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "What information did she want to get from him?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -1541,7 +1541,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-x", topicId: "latin-3-1", conceptId: "lat-affected-coriolanus-situation",
     section: "Q1", questionRef: "2023 HL Section B Q1(x)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "How was Coriolanus affected by this situation?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1565,7 +1565,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-xi", topicId: "latin-3-1", conceptId: "lat-actions-coriolanus-take-then",
     section: "Q1", questionRef: "2023 HL Section B Q1(xi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "What actions did Coriolanus then take?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1590,7 +1590,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Higher Level — © State Examinations Commission.",
     id: "lat-2023-hl-b-q1-xii", topicId: "latin-3-1", conceptId: "lat-according-after-author-became",
     section: "Q1", questionRef: "2023 HL Section B Q1(xii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.) Veturia, magna aetate mulier, mater Coriolani, et Volumnia uxor duos parvos filios ferens secum, in castra hostium ibant; et quod armis viri defendere urbem non poterant, mulieres precibus lacrimisque defendebant. Ubi ad castra ventum est, nuntiatumque est Coriolano adesse ingens mulierum agmen, primum multo obstinatior adversus lacrimas mulierum erat. Dein amicorum quidam ‘nisi me fallunt oculi’ inquit, ‘mater tibi con",
+    stem: "Many women visit Coriolanus, including his mother and wife, and ask him not to attack Rome.",
     questionText: "According to the author Fabius, what became of Coriolanus after this event?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -1979,7 +1979,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-i", topicId: "latin-3-1", conceptId: "lat-himself-host-pliny’s-present",
     section: "Q1", questionRef: "2024 HL Section B Q1(i)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "How has Pliny’s host tried to present himself?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2004,7 +2004,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-ii", topicId: "latin-3-1", conceptId: "lat-appearance-host’s-pliny-think",
     section: "Q1", questionRef: "2024 HL Section B Q1(ii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "What does Pliny think of his host’s appearance?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2029,7 +2029,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-iii", topicId: "latin-3-1", conceptId: "lat-best-food-host-others",
     section: "Q1", questionRef: "2024 HL Section B Q1(iii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "To whom does the host serve the best food and what does he serve to the others?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -2054,7 +2054,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-iv", topicId: "latin-3-1", conceptId: "lat-distributed-served-wine",
     section: "Q1", questionRef: "2024 HL Section B Q1(iv)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "Describe how the wine is served and distributed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
@@ -2078,7 +2078,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-ix", topicId: "latin-3-1", conceptId: "lat-cost-dinner-guest-him",
     section: "Q1", questionRef: "2024 HL Section B Q1(ix)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "Why does the other guest think that Pliny’s dinner parties must cost him a lot?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -2102,7 +2102,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-v", topicId: "latin-3-1", conceptId: "lat-host-pliny’s-serve-way",
     section: "Q1", questionRef: "2024 HL Section B Q1(v)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "Why does Pliny’s host serve the wine in this way?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2126,7 +2126,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-vi", topicId: "latin-3-1", conceptId: "lat-approve-guests-host-pliny",
     section: "Q1", questionRef: "2024 HL Section B Q1(vi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "Does Pliny approve of how the host treats the guests?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -2150,7 +2150,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-vii", topicId: "latin-3-1", conceptId: "lat-dinner-guests-hosts-pliny",
     section: "Q1", questionRef: "2024 HL Section B Q1(vii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "How does Pliny serve his own guests when he hosts dinner?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2174,7 +2174,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-viii", topicId: "latin-3-1", conceptId: "lat-behind-dinner-organises-parties",
     section: "Q1", questionRef: "2024 HL Section B Q1(viii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "What is Pliny’s reasoning behind how he organises his dinner parties?",
     tariffModel: {"kind":"orderedSplit","notation":"He invites guests to dinner not an exercise in social ranking/ he makes them equal at table and couch/ he treats them equally in all respects. (For any two 5+4)"}, totalMarks: 9,
     rows: [
@@ -2200,7 +2200,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-x", topicId: "latin-3-1", conceptId: "lat-freedmen-pliny-treats",
     section: "Q1", questionRef: "2024 HL Section B Q1(x)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "Describe how Pliny treats his freedmen.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2225,7 +2225,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-xi", topicId: "latin-3-1", conceptId: "lat-according-difficult-greed-pliny",
     section: "Q1", questionRef: "2024 HL Section B Q1(xi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "According to Pliny, if you refrain from greed, what is not difficult?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2250,7 +2250,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2024 Higher Level — © State Examinations Commission.",
     id: "lat-2024-hl-b-q1-xii", topicId: "latin-3-1", conceptId: "lat-according-all-avoided-most",
     section: "Q1", questionRef: "2024 HL Section B Q1(xii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.) Cenabam apud meum hospitem, ut sibi videbatur, lautum et diligentem, ut mihi, sordidum simul et sumptuosum. Nam sibi et paucis amicis opima quaedam, ceteris vilia et minima ponebat. Vinum etiam parvis lagunculis in tria genera diviserat – aliud sibi et nobis, aliud minoribus amicis et aliud suis nostrisque libertis – non ut potestas eligendi, sed gradatim amicos habet. Vir qui mihi proximus re",
+    stem: "Pliny attends a dinner party and is surprised by how the host treats the guests; he discusses this with another guest.",
     questionText: "According to Pliny, what must be avoided most of all?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -2657,7 +2657,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-i", topicId: "latin-3-1", conceptId: "lat-cloelia",
     section: "Q1", questionRef: "2025 HL Section B Q1(i)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "Who was Cloelia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2682,7 +2682,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-ii", topicId: "latin-3-1", conceptId: "lat-camp-etruscan-located-where",
     section: "Q1", questionRef: "2025 HL Section B Q1(ii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "Where was the Etruscan camp located?",
     tariffModel: {"kind":"orderedSplit","notation":"Not far from (3) the Tiber (2)"}, totalMarks: 6,
     rows: [
@@ -2707,7 +2707,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-iii", topicId: "latin-3-1", conceptId: "lat-after-cloelia-escaped-guards",
     section: "Q1", questionRef: "2025 HL Section B Q1(iii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "What did Cloelia do after she escaped the guards? State three things.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -2731,7 +2731,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-iv", topicId: "latin-3-1", conceptId: "lat-cloelia-done-feel-first",
     section: "Q1", questionRef: "2025 HL Section B Q1(iv)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "How did the king feel when he first heard about what Cloelia had done?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -2755,7 +2755,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-ix", topicId: "latin-3-1", conceptId: "lat-back-cloelia-handed-him",
     section: "Q1", questionRef: "2025 HL Section B Q1(ix)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "What did the king say he would do if Cloelia was handed back to him?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2780,7 +2780,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-v", topicId: "latin-3-1", conceptId: "lat-action-cloelia-done-first",
     section: "Q1", questionRef: "2025 HL Section B Q1(v)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "What action did the king take when he first heard what Cloelia had done?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2805,7 +2805,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-vi", topicId: "latin-3-1", conceptId: "lat-action-king-take",
     section: "Q1", questionRef: "2025 HL Section B Q1(vi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "Why did the king take this action?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2830,7 +2830,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-vii", topicId: "latin-3-1", conceptId: "lat-after-feel-king-some",
     section: "Q1", questionRef: "2025 HL Section B Q1(vii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "How did the king feel after some time?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2854,7 +2854,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-viii", topicId: "latin-3-1", conceptId: "lat-back-cloelia-handed-him",
     section: "Q1", questionRef: "2025 HL Section B Q1(viii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "What did the king say he would do if Cloelia was not handed back to him?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2878,7 +2878,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-x", topicId: "latin-3-1", conceptId: "lat-after-etruscan-king-peace",
     section: "Q1", questionRef: "2025 HL Section B Q1(x)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "What did the Etruscan king do and say after the pledge of peace was renewed?",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -2904,7 +2904,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2025 Higher Level — © State Examinations Commission.",
     id: "lat-2025-hl-b-q1-xi", topicId: "latin-3-1", conceptId: "lat-cloelia’s-courage-located-reward",
     section: "Q1", questionRef: "2025 HL Section B Q1(xi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.) Cloelia virgo una ex obsidibus erat. Cum castra Etruscorum haud procul ripa Tiberis locata essent, frustrata custodes, Cloelia, ducens agmen virginum inter tela hostium, Tiberim tranavit, sospitesque omnes Romam ad parentes restituit. Quod ubi regi nuntiatum est, primo incensus ira oratores Romam misit ad Clo",
+    stem: "Cloelia breaks the peace treaty between Rome and the Etruscans by leading a brave escape from the Etruscan camp. The Etruscan king reacts with mixed emotions, but finally both sides celebrate her heroism.",
     questionText: "How did the Romans reward Cloelia’s courage and where was this reward located?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [

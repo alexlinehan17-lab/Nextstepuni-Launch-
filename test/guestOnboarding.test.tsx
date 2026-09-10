@@ -17,7 +17,18 @@ import React from 'react';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { configure, fireEvent, render, screen, waitFor } from '@testing-library/react';
+
+/**
+ * Testing Library waits one second by default, which is not enough when this
+ * file is scheduled beside the Mark Bank suites: those load every built deck —
+ * 15,600 cards and growing — and starve the workers for whole seconds at a
+ * time. The failure then reads as "Onboarding never mounted" when Onboarding
+ * mounted and the assertion arrived first. Reproduced on a tree with no Mark
+ * Bank change in it at all, by running this file beside markBankDeck,
+ * markBankCoverage, markBankCardPreservation and curriculumRegistry.
+ */
+configure({ asyncUtilTimeout: 15_000 });
 
 // ─── Firebase: keep the real modules, spy on every write-shaped export ─────
 const firestoreSpies = vi.hoisted(() => ({

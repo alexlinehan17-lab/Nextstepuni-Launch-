@@ -144,7 +144,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-i", topicId: "latin-3-1", conceptId: "lat-alexander-arrive-brothers-first",
     section: "Q1", questionRef: "2021 OL Section B Q1(i)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "Where did the brothers Alexander and Philip arrive in the first line of the passage?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -168,7 +168,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-ii", topicId: "latin-3-1", conceptId: "lat-each-then-where",
     section: "Q1", questionRef: "2021 OL Section B Q1(ii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "Where did each one then go?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -193,7 +193,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-iii", topicId: "latin-3-1", conceptId: "lat-alexander-asked-dream-person",
     section: "Q1", questionRef: "2021 OL Section B Q1(iii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "Who did Alexander see in a dream? What was he asked to do by that person?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -218,7 +218,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-iv", topicId: "latin-3-1", conceptId: "lat-alexander-asked-help-phllip",
     section: "Q1", questionRef: "2021 OL Section B Q1(iv)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "Why was Alexander asked to help Phllip?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -242,7 +242,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-ix", topicId: "latin-3-1", conceptId: "lat-city-find-outside",
     section: "Q1", questionRef: "2021 OL Section B Q1(ix)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "What did he find outside the city?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -266,7 +266,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-v", topicId: "latin-3-1", conceptId: "lat-after-alexander-dream-first",
     section: "Q1", questionRef: "2021 OL Section B Q1(v)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "What happened after Alexander woke up from his first dream?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -290,7 +290,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-vi", topicId: "latin-3-1", conceptId: "lat-alexander-dream-second-see",
     section: "Q1", questionRef: "2021 OL Section B Q1(vi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "What did Alexander see in the second dream?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -314,7 +314,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-vii", topicId: "latin-3-1", conceptId: "lat-happened-him-philip-say",
     section: "Q1", questionRef: "2021 OL Section B Q1(vii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "What did Philip say had happened to him?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -339,7 +339,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-viii", topicId: "latin-3-1", conceptId: "lat-alexander-feel-news",
     section: "Q1", questionRef: "2021 OL Section B Q1(viii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "How did Alexander feel at this news? What did he do?",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -364,7 +364,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2021 Ordinary Level — © State Examinations Commission.",
     id: "lat-2021-ol-b-q1-x", topicId: "latin-3-1", conceptId: "lat-end-happened-innkeeper",
     section: "Q1", questionRef: "2021 OL Section B Q1(x)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Murder at an inn is revealed in a dream) Cum duo fratres, Philipus et Alexander, iter una facerent et Megaram venissent, Philipus ad tabernam ivit, Alexander amici domum. Cum Alexander media nocte dormiret, in somnio Philipus ei apparuit oravitque ut subveniret, quod sibi a caupone mors pararetur. Quo somnio Alexander excitatus est, sed cum se collegisset, putavit somnium pro nihilo habendum esse, atque mox in somnum relapsus est. Tum ei dormienti, imago Philipi rursus visa est rogare ut, quoniam sibi vivo non",
+    stem: "Murder at an inn is revealed in a dream",
     questionText: "What happened to the innkeeper at the end of the passage?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -691,7 +691,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-i", topicId: "latin-3-1", conceptId: "lat-caesar-plan-travel-where",
     section: "Q1", questionRef: "2022 OL Section B Q1(i)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "Where did Caesar plan to travel to?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -715,7 +715,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-ii", topicId: "latin-3-1", conceptId: "lat-place-reason-travelling",
     section: "Q1", questionRef: "2022 OL Section B Q1(ii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What was his reason for travelling to this place?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -739,7 +739,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-iii", topicId: "latin-3-1", conceptId: "lat-journey-make-time-year",
     section: "Q1", questionRef: "2022 OL Section B Q1(iii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What time of the year did he make the journey?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -763,7 +763,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-iv", topicId: "latin-3-1", conceptId: "lat-pirates",
     section: "Q1", questionRef: "2022 OL Section B Q1(iv)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What did the pirates do?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -787,7 +787,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-ix", topicId: "latin-3-1", conceptId: "lat-declare-during-often-pirates",
     section: "Q1", questionRef: "2022 OL Section B Q1(ix)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What did the pirates often declare during this time?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -811,7 +811,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-v", topicId: "latin-3-1", conceptId: "lat-action-pirates-purposes",
     section: "Q1", questionRef: "2022 OL Section B Q1(v)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What were the two purposes of the action of the pirates?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -836,7 +836,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-vi", topicId: "latin-3-1", conceptId: "lat-caesar-demand-leader-pirates",
     section: "Q1", questionRef: "2022 OL Section B Q1(vi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What did the leader of the pirates demand from Caesar?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -860,7 +860,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-vii", topicId: "latin-3-1", conceptId: "lat-caesar-promise-response-things",
     section: "Q1", questionRef: "2022 OL Section B Q1(vii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What two things did Caesar promise in response?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -885,7 +885,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-viii", topicId: "latin-3-1", conceptId: "lat-awaiting-behave-caesar-servant",
     section: "Q1", questionRef: "2022 OL Section B Q1(viii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "How did Caesar behave while awaiting his servant?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -910,7 +910,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-x", topicId: "latin-3-1", conceptId: "lat-caesar’s-only-pirates-reply",
     section: "Q1", questionRef: "2022 OL Section B Q1(x)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What was Caesar’s only reply to the pirates?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -935,7 +935,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-xi", topicId: "latin-3-1", conceptId: "lat-pirates-react",
     section: "Q1", questionRef: "2022 OL Section B Q1(xi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "How did the pirates react?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -959,7 +959,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2022 Ordinary Level — © State Examinations Commission.",
     id: "lat-2022-ol-b-q1-xii", topicId: "latin-3-1", conceptId: "lat-caesar-freed-happened-when",
     section: "Q1", questionRef: "2022 OL Section B Q1(xii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow:- (Caesar is captured by pirates; he escapes and makes them a promise) Iulius Caesar adulescens iter facere constituit Rhodum ubi habitabat philosophus a quo litteras Graecas discere voluit. Dum hieme Rhodum navigat, piratae navem oppugnaverunt ut Caesarem eriperent et ad insulam quandam adducerent. Ibi dux piratarum a Caesare postulavit ut multum pecuniae sibi daret. Caesar igitur promisit se servum ad amicos missurum esse et illum pecuniam reducturum esse. Postquam servum dimisit, Caesar nihil sollicitus plurim",
+    stem: "Caesar is captured by pirates; he escapes and makes them a promise",
     questionText: "What happened when Caesar was freed?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1340,7 +1340,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-i", topicId: "latin-3-1", conceptId: "lat-doing-first-sentence-soldiers",
     section: "Q1", questionRef: "2023 OL Section B Q1(i)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "In the first sentence, what were the soldiers doing?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1365,7 +1365,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-ii", topicId: "latin-3-1", conceptId: "lat-announce-guard-soldiers-statione",
     section: "Q1", questionRef: "2023 OL Section B Q1(ii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "What did the soldiers on guard (ex statione) announce?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1391,7 +1391,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-iii", topicId: "latin-3-1", conceptId: "lat-confirmed-news-sight",
     section: "Q1", questionRef: "2023 OL Section B Q1(iii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "What sight confirmed this news?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1416,7 +1416,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-iv", topicId: "latin-3-1", conceptId: "lat-certain-certo-curio-habuit",
     section: "Q1", questionRef: "2023 OL Section B Q1(iv)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "What did Curio know for certain (pro certo habuit)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1440,7 +1440,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-ix", topicId: "latin-3-1", conceptId: "lat-disturbed-king-reinforcements",
     section: "Q1", questionRef: "2023 OL Section B Q1(ix)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "Why were the reinforcements of the king disturbed?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1465,7 +1465,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-v", topicId: "latin-3-1", conceptId: "lat-curio-done-juba-purpose",
     section: "Q1", questionRef: "2023 OL Section B Q1(v)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "For what purpose did Curio think that Juba had done this?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1489,7 +1489,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-vi", topicId: "latin-3-1", conceptId: "lat-action-against-curio-defend",
     section: "Q1", questionRef: "2023 OL Section B Q1(vi)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "What did Curio do to defend against the action of Juba?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1513,7 +1513,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-vii", topicId: "latin-3-1", conceptId: "lat-action-himself-ipse-take",
     section: "Q1", questionRef: "2023 OL Section B Q1(vii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "What action did he himself (ipse) then take? Why did he do this?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -1539,7 +1539,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-viii", topicId: "latin-3-1", conceptId: "lat-battle-cavalry-develop-then",
     section: "Q1", questionRef: "2023 OL Section B Q1(viii)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "How did the cavalry battle then develop?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
@@ -1563,7 +1563,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Latin 2023 Ordinary Level — © State Examinations Commission.",
     id: "lat-2023-ol-b-q1-x", topicId: "latin-3-1", conceptId: "lat-actions-curio’s-final",
     section: "Q1", questionRef: "2023 OL Section B Q1(x)",
-    stem: "Read the following passage and answer, in English, all the questions which follow. (Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.) Milites Curionis laborabant diligenter ut munitiones castrorum celeriter perficerent. Sed milites ex statione nuntiaverunt magnas copias equitum peditumque Uticam venire; eodem tempore nubes magna pulveris videbatur, et subito exercitus magnus erat in conspectu. Curio, qui pro certo habuit has copias a rege Juba missas esse ut Romanos expellerent, praemisit equites qui primum impetum sustinerent. Ipse, cum legione",
+    stem: "Near the city of Utica, the Roman general Curio defeats a large military force sent by king Juba.",
     questionText: "What were Curio’s final actions in the passage above?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [

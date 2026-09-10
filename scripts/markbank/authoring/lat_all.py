@@ -733,12 +733,36 @@ def _card(P, S, year, level, ask, ref, rows, model, entry, route_text,
         'rows': rows,
         'notes': _note(entry, ask, notation),
     }
-    if ask.stem and len(ask.stem) >= 20:
-        card['stem'] = ask.stem[:600]
+    stem = _stem_for(ask)
+    if stem and len(stem) >= 20:
+        card['stem'] = stem[:600]
     source = _source_for(P, ask, year, level)
     if source:
         card['sourceMaterial'] = source
     return card
+
+
+# The English summary the SEC prints in brackets above a Latin passage:
+# "(Cloelia breaks the peace treaty between Rome and the Etruscans by leading
+# a brave escape from the Etruscan camp…)".
+SUMMARY = re.compile(r'\(([A-Z][^()]{30,600}?)\)')
+
+
+def _stem_for(ask):
+    """The lead-in a card shows above its question.
+
+    A comprehension ask's own "stem" is the whole of the route the paper
+    printed it under — the rubric, the English summary, the Latin passage and
+    the SEC's vocabulary list — and putting that on the card duplicated the
+    source material and cut the passage off mid-word at six hundred
+    characters. The passage belongs in `sourceMaterial`, complete and rendered
+    from the page it was printed on; what belongs above the question is the
+    SEC's own one-sentence summary of it.
+    """
+    if ask.route_kind != 'comprehension':
+        return ask.stem
+    m = SUMMARY.search(ask.stem or '')
+    return m.group(1).strip() if m else ''
 
 
 def _source_for(P, ask, year, level):
