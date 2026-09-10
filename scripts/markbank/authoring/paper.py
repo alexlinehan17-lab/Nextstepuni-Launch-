@@ -104,7 +104,14 @@ RUBRIC_HEAD = re.compile(
 
 # The '\d.' head may be followed by an opening quote: Construction Studies'
 # 2019-2025 alternative Q10 opens with a quotation.
-QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]))')
+# A head may be followed by a lower-case CAMEL-CASE product name: 2024 HL
+# Technology opens Question 13 "13. eBörd is a smart table...", and the
+# capital-only lookahead rejected it -- so Question 13's two parts filed
+# themselves under Question 12, whose own ask was then dropped as a stem with
+# children. Narrow on purpose: a second character in upper case is what makes
+# it a name rather than the running prose of "1. and then...".
+QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b'
+                   '|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]|[a-z][A-Z]))')
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Letters run past (h): Chemistry's Q4 runs to (l) and Physics' lettered-choice
 # questions to (l) as well — every part after (h) was invisible and 61 shipped
@@ -287,26 +294,46 @@ _MARKER_ONLY = re.compile(r'^\(?(\d{1,2}|[a-z]|[ivx]{1,4})[.)]?$')
 
 
 def _join_gutter_markers(blocks):
-    """Weld a gutter marker onto the block it heads."""
+    """Weld a gutter marker onto the block it heads.
+
+    The blocks arrive sorted by (top, left), so a marker set in the left
+    gutter normally comes FIRST and its question follows. Not always: the
+    marker's own box can start a few points lower than the paragraph beside it
+    -- "8." at y=290 against a question block at y=287 -- and the sort then
+    puts the marker after the text it heads. Looking only forward left those
+    markers standing alone, which cost 2021 Higher its Question 8 and 2021
+    Ordinary its Question 5: the question's text was filed under the question
+    before it, and the marker became an empty question the census then
+    dropped. So the partner is looked for on both sides, forward first.
+    """
     out, used = [], set()
+    partner = {}
+    for i, b in enumerate(blocks):
+        text = ' '.join(b[4].split())
+        if not _MARKER_ONLY.match(text):
+            continue
+        for j in list(range(i + 1, min(i + 4, len(blocks)))) + \
+                list(range(i - 1, max(i - 4, -1), -1)):
+            o = blocks[j]
+            if j in used or o[0] <= b[0] or _MARKER_ONLY.match(' '.join(o[4].split())):
+                continue
+            # Same line, give or take a leading-height's slack.
+            if abs(o[1] - b[1]) <= 14 or (b[1] <= o[3] and o[1] <= b[3]):
+                partner[i] = j
+                used.add(j)
+                break
     for i, b in enumerate(blocks):
         if i in used:
-            continue
-        text = ' '.join(b[4].split())
-        if _MARKER_ONLY.match(text):
-            for j in range(i + 1, min(i + 4, len(blocks))):
-                o = blocks[j]
-                if j in used or o[0] <= b[0]:
-                    continue
-                # Same line, give or take a leading-height's slack.
-                if abs(o[1] - b[1]) <= 14 or (b[1] <= o[3] and o[1] <= b[3]):
-                    out.append((b[0], b[1], o[2], o[3],
-                                f"{text} {' '.join(o[4].split())}"))
-                    used.add(j)
-                    break
-            else:
+            j = next((k for k, v in partner.items() if v == i), None)
+            if j is None:
                 out.append(b)
+                continue
+            m = blocks[j]
+            out.append((min(m[0], b[0]), min(m[1], b[1]), b[2], b[3],
+                        f"{' '.join(m[4].split())} {' '.join(b[4].split())}"))
             continue
+        if i in partner:
+            continue                 # emitted at its partner's position
         out.append(b)
     return out
 
