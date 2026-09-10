@@ -404,6 +404,121 @@ export const CARDS: SecCard[] = [
     year: 2014, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
+    id: "swe-2014-hl-i-1-a", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-som",
+    section: "I", questionRef: "2014 HL Section I Q1(a)",
+    questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: snusar",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "snusar (stycke 1) rätt svar: sover, dusar, slumrar, sussar, slaggar, knoppar, kojar", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
+    id: "swe-2014-hl-i-1-b", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-som",
+    section: "I", questionRef: "2014 HL Section I Q1(b)",
+    questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: syssla med",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "syssla med (stycke 5) rätt svar: göra, bedriva, idka, arbeta med, ägna sig åt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
+    id: "swe-2014-hl-i-1-c", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-som",
+    section: "I", questionRef: "2014 HL Section I Q1(c)",
+    questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: i skarpt läge",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "i skarpt läge (stycke 9) rätt svar: när det är allvar, när det är farligt, när det gäller", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
+    id: "swe-2014-hl-i-1-d", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-som",
+    section: "I", questionRef: "2014 HL Section I Q1(d)",
+    questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: utsätta oss för",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "utsätta oss för (stycke 10) rätt svar: underkasta sig", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
+    id: "swe-2014-hl-i-1-e", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-som",
+    section: "I", questionRef: "2014 HL Section I Q1(e)",
+    questionText: "Ersätt följande ord och uttryck, som de används i texten, med andra som betyder samma sak: skrubbsår",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "skrubbsår (stycke 13) rätt svar: skråma, litet sår, ett sår som svider", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2014 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2014 Higher Level — © State Examinations Commission.",
     id: "swe-2014-hl-i-2", topicId: "swedish-0-1", conceptId: "ersatt-foljande-uttryck-med-ett-annat",
     section: "I", questionRef: "2014 HL Section I Q2",
     questionText: "Ersätt följande uttryck med ett annat som betyder samma sak: öppna (ytterligare) fönster till",
@@ -519,6 +634,121 @@ export const CARDS: SecCard[] = [
     year: 2015, level: "higher",
     paperFileid: "LC039ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2015 Higher Level — © State Examinations Commission.",
+    id: "swe-2015-hl-i-1-a", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
+    section: "I", questionRef: "2015 HL Section I Q1(a)",
+    questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. skildra (stycke 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "skildra (stycke 1): berätta, återge, tala om, framställa", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2015 Higher Level — © State Examinations Commission.",
+    id: "swe-2015-hl-i-1-b", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
+    section: "I", questionRef: "2015 HL Section I Q1(b)",
+    questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. stundom (stycke 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "stundom (stycke 2): ibland, då och då, emellanåt", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2015 Higher Level — © State Examinations Commission.",
+    id: "swe-2015-hl-i-1-c", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
+    section: "I", questionRef: "2015 HL Section I Q1(c)",
+    questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. frånstötande (stycke 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "frånstötande (stycke 2): motbjudande, vidrig, avskyvärd, otäck", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2015 Higher Level — © State Examinations Commission.",
+    id: "swe-2015-hl-i-1-d", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
+    section: "I", questionRef: "2015 HL Section I Q1(d)",
+    questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. bli (mer) på vår vakt (stycke 9)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "bli (mer) på vår vakt (stycke 9): se upp, bli mer vaksam, förhöja sin uppmärksamhet", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2015 Higher Level — © State Examinations Commission.",
+    id: "swe-2015-hl-i-1-e", topicId: "swedish-0-0", conceptId: "ersatt-orden-eller-uttrycken-med-andra",
+    section: "I", questionRef: "2015 HL Section I Q1(e)",
+    questionText: "Ersätt orden eller uttrycken med andra som betyder samma sak. sänker garden (stycke 10)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sänker garden (stycke 10): slappnar av, släppa på självkontrollen", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2015 Higher Level — © State Examinations Commission.",
     id: "swe-2015-hl-i-2", topicId: "swedish-0-1", conceptId: "vad-menas-med-arketyper",
     section: "I", questionRef: "2015 HL Section I Q2",
     questionText: "Vad menas med arketyper?",
@@ -626,6 +856,121 @@ export const CARDS: SecCard[] = [
                 3
           ],
           "attribution": "SEC Swedish 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2017 Higher Level — © State Examinations Commission.",
+    id: "swe-2017-hl-i-1-a", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
+    section: "I", questionRef: "2017 HL Section I Q1(a)",
+    questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: befinner sig i en gryende vår",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "befinner sig i en gryende vår: vädrar morgonluft, har framtiden för sig, har lysande utsikter", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2017 Higher Level — © State Examinations Commission.",
+    id: "swe-2017-hl-i-1-b", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
+    section: "I", questionRef: "2017 HL Section I Q1(b)",
+    questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: apa efter",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "apa efter: härma, efterlikna", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2017 Higher Level — © State Examinations Commission.",
+    id: "swe-2017-hl-i-1-c", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
+    section: "I", questionRef: "2017 HL Section I Q1(c)",
+    questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: bete sig",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "bete sig: uppföra sig, uppträda, gå tillväga", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2017 Higher Level — © State Examinations Commission.",
+    id: "swe-2017-hl-i-1-d", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
+    section: "I", questionRef: "2017 HL Section I Q1(d)",
+    questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: står till buds",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "står till buds: stå till förfogande, finns, existera", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC039ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Swedish 2017 Higher Level — © State Examinations Commission.",
+    id: "swe-2017-hl-i-1-e", topicId: "swedish-0-0", conceptId: "ersatt-foljande-ord-och-uttryck-med",
+    section: "I", questionRef: "2017 HL Section I Q1(e)",
+    questionText: "Ersätt följande ord och uttryck med andra som betyder samma sak: övervägande",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "övervägande: till största delen, rådande, dominerande, störst", marks: 1, contextNote: "The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\"" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "QUESTION 1",
+          "title": "Reading text — answer in Swedish",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Swedish 2017 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SWEDISH. The paper prints the rule on its own first page: \"Alla svar måste vara skrivna på svenska.\""
     },
   } as SecCard,

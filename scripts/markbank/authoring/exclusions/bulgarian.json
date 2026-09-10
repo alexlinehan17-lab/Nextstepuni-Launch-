@@ -136,28 +136,28 @@
  },
  {
   "ref": "2015 HL Section I Q2",
-  "reason": "the scheme prices no ask at the address the paper prints",
-  "evidence": "2015 HL paper: \"„Точно това е имал предвид гражданинът, който се явил при свети Петър и казал: „Но аз живях седем живота… Имах\" — the scheme's reading section prices no ask that pairs with it"
+  "reason": "the sitting is printed in a subset font whose ToUnicode map is broken, so the SEC's own words cannot be read",
+  "evidence": "2015 HL scheme: \"„Ɍɨɱɧɨ ɬɨɜɚ ɟ ɢɦɚɥ ɩɪɟɞɜɢɞ ɝɪɚɠɞɚɧɢɧɴɬ, ɤɨɣɬɨ ɫɟ ɹɜɢɥ ɩɪɢ ɫɜɟɬɢ ɉɟɬɴɪ ɢ ɤɚɡɚɥ: “ɇɨ ɚɡ ɠɢɜɹ\" — the text layer of this sitting hands back characters from the IPA and Latin Extended-B blocks where Cyrillic letters were printed (U+0244, U+0268, U+026B and hundreds more), so neither the question nor the answer can be quoted. Keyed to the sitting, like a misprint, rather than repaired by guesswork."
  },
  {
   "ref": "2015 HL Section I Q3",
-  "reason": "the scheme prices no ask at the address the paper prints",
-  "evidence": "2015 HL paper: \"Коя е голямата магия на приятелството според автора?\" — the scheme's reading section prices no ask that pairs with it"
+  "reason": "the sitting is printed in a subset font whose ToUnicode map is broken, so the SEC's own words cannot be read",
+  "evidence": "2015 HL scheme: \"Ʉɨɹ ɟ ɝɨɥɹɦɚɬɚ ɦɚɝɢɹ ɧɚ ɩɪɢɹɬɟɥɫɬɜɨɬɨ ɫɩɨɪɟɞ ɚɜɬɨɪɚ? 5 ɬɨɱɤɢ Ɂɚ ɚɜɬɨɪɚ ɡɚɝɚɞɤɚɬɚ ɟ ɜ ɧɚɱɚɥ\" — the text layer of this sitting hands back characters from the IPA and Latin Extended-B blocks where Cyrillic letters were printed (U+0244, U+0268, U+026B and hundreds more), so neither the question nor the answer can be quoted. Keyed to the sitting, like a misprint, rather than repaired by guesswork."
  },
  {
   "ref": "2015 HL Section I Q4",
-  "reason": "the scheme prices no ask at the address the paper prints",
-  "evidence": "2015 HL paper: \"Кое според автора е „главното и единственото условие” на приятелството? Обяснете защо.\" — the scheme's reading section prices no ask that pairs with it"
+  "reason": "the sitting is printed in a subset font whose ToUnicode map is broken, so the SEC's own words cannot be read",
+  "evidence": "2015 HL scheme: \"Ʉɨɟ ɫɩɨɪɟɞ ɚɜɬɨɪɚ ɟ „ɝɥɚɜɧɨɬɨ ɢ ɟɞɢɧɫɬɜɟɧɨɬɨ ɭɫɥɨɜɢɟ” ɧɚ ɩɪɢɹɬɟɥɫɬɜɨɬɨ? Ɉɛɹɫɧɟɬɟ ɡɚɳɨ. 5 ɬ\" — the text layer of this sitting hands back characters from the IPA and Latin Extended-B blocks where Cyrillic letters were printed (U+0244, U+0268, U+026B and hundreds more), so neither the question nor the answer can be quoted. Keyed to the sitting, like a misprint, rather than repaired by guesswork."
  },
  {
   "ref": "2015 HL Section I Q5",
-  "reason": "the scheme prices no ask at the address the paper prints",
-  "evidence": "2015 HL paper: \"„С приятеля представлението свършва...” За какво „представление” говори авторът и защо с приятеля то свършва?\" — the scheme's reading section prices no ask that pairs with it"
+  "reason": "the sitting is printed in a subset font whose ToUnicode map is broken, so the SEC's own words cannot be read",
+  "evidence": "2015 HL scheme: \"„ɋ ɩɪɢɹɬɟɥɹ ɩɪɟɞɫɬɚɜɥɟɧɢɟɬɨ ɫɜɴɪɲɜɚ...” Ɂɚ ɤɚɤɜɨ „ɩɪɟɞɫɬɚɜɥɟɧɢɟ” ɝɨɜɨɪɢ ɚɜɬɨɪɴɬ ɢ ɡɚɳɨ ɫ ɩ\" — the text layer of this sitting hands back characters from the IPA and Latin Extended-B blocks where Cyrillic letters were printed (U+0244, U+0268, U+026B and hundreds more), so neither the question nor the answer can be quoted. Keyed to the sitting, like a misprint, rather than repaired by guesswork."
  },
  {
   "ref": "2015 HL Section I Q6",
-  "reason": "the scheme prices no ask at the address the paper prints",
-  "evidence": "2015 HL paper: \"„Има ужасно несъответствие между човек и фактите, които той произвежда.” За какво несъответствие става въпрос \" — the scheme's reading section prices no ask that pairs with it"
+  "reason": "neither document states a tariff for this ask",
+  "evidence": "2015 HL paper: \"„Има ужасно несъответствие между човек и фактите, които той произвежда.” За какво несъответствие става въпрос \" — the paper prints no marks in its right-hand margin and the scheme prints none at all"
  },
  {
   "ref": "2015 HL Section II Q1",

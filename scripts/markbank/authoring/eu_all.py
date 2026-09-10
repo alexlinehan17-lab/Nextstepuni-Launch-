@@ -175,6 +175,41 @@ _PROV_TARIFF = re.compile(
 _PROV_CACHE = {}
 
 
+# The characters build-deck.mjs refuses as an unrepaired subset-font glyph:
+# everything in its BROKEN range that its REAL class does not vouch for. Kept
+# in step with that file — a card carrying one of these is dropped by the
+# build, silently, so the ask is refused here with the sitting named instead.
+_MANGLED = re.compile(
+    '[\u0100-\u1fff\ue000-\uf8ff\ufb00-\ufb4f]')
+_MANGLED_REAL = re.compile(
+    '[\u0100-\u017f\u0218-\u021b\u02b0-\u02ff\u0302\u0305\u0307\u0308'
+    '\u0370-\u03ff\u0400-\u04ff\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff'
+    '\u1d62-\u1d6a\u1f00-\u1fff]')
+
+
+def _mangled(subject, rows):
+    """The row texts carrying a glyph no font map could repair, in order.
+
+    The build repairs a card's text against glyphmap.json BEFORE it makes this
+    check, and this does not, so it is asked only of the nine subjects added
+    with it — exactly as _untraceable is. Re-checking a shipped deck through a
+    test that has learned less than the gate takes cards off it for a reason
+    the gate does not hold, which is what happened to two Dutch cards the
+    first time this ran.
+    """
+    if subject in ('portuguese', 'romanian', 'dutch'):
+        return []
+    out = []
+    for row in rows:
+        for text in ([row['verbatim']] if row.get('verbatim') else
+                     [o['text'] for o in (row.get('group') or {}).get(
+                         'options', [])]):
+            if any(_MANGLED.match(c) and not _MANGLED_REAL.match(c)
+                   for c in text or ''):
+                out.append(text)
+    return out
+
+
 def _prov_norm(text):
     return _PROV_DROP.sub('', _PROV_DASH.sub('-', text or '').lower())
 
@@ -524,6 +559,18 @@ def _reading(P, S, priced, ask, subject, year, level, ref, cards, refuse,
                'one, so which of them earns the marks is not stated', ref,
                f'{stamp} scheme, {notation} over {len(answers)} stated '
                f'answer(s) for "{sch.cue[:80]}"')
+        return
+    mangled = (_mangled(subject, rows)
+               or _mangled(subject, [{'verbatim': question}]))
+    if mangled:
+        refuse('the sitting is printed in a subset font whose ToUnicode map '
+               'is broken, so the SEC\'s own words cannot be read', ref,
+               f'{stamp} scheme: "{mangled[0][:90]}" — the text layer of this '
+               f'sitting hands back characters from the IPA and Latin '
+               f'Extended-B blocks where Cyrillic letters were printed '
+               f'(U+0244, U+0268, U+026B and hundreds more), so neither the '
+               f'question nor the answer can be quoted. Keyed to the sitting, '
+               f'like a misprint, rather than repaired by guesswork.')
         return
     untraceable = _untraceable(subject, year, level, rows)
     if untraceable:

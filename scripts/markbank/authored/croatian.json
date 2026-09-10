@@ -412,7 +412,7 @@
     "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
    }
   ],
-  "notes": "The paper prints the tariff as '(1)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "notes": "The paper prints the tariff as '[5 bodova] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
   "sourceMaterial": {
    "kind": "source-text",
    "label": "QUESTION 1",
@@ -438,17 +438,17 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 5,
+  "totalMarks": 1,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "prihod od imanja",
-    "marks": 5,
+    "marks": 1,
     "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
    }
   ],
-  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "notes": "The paper prints the tariff as '[5 bodova] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
   "sourceMaterial": {
    "kind": "source-text",
    "label": "QUESTION 1",
@@ -474,17 +474,17 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 7,
+  "totalMarks": 1,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "dobrohotno, dobroćudno, dobronamjerno",
-    "marks": 7,
+    "marks": 1,
     "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
    }
   ],
-  "notes": "The paper prints the tariff as '(7)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "notes": "The paper prints the tariff as '[5 bodova] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
   "sourceMaterial": {
    "kind": "source-text",
    "label": "QUESTION 1",
@@ -510,17 +510,17 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 2,
+  "totalMarks": 1,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "donijeti odluke koje imaju smisla, koje utječu na vrijednost ili svrhu čega",
-    "marks": 2,
+    "marks": 1,
     "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
    }
   ],
-  "notes": "The paper prints the tariff as '(2)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "notes": "The paper prints the tariff as '[5 bodova] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
   "sourceMaterial": {
    "kind": "source-text",
    "label": "QUESTION 1",
@@ -546,17 +546,17 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 8,
+  "totalMarks": 1,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "žive živote čiji su kvaliteta i standard na višoj razini, ali zbog čega nije narušen globalni ekološki sustav",
-    "marks": 8,
+    "marks": 1,
     "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
    }
   ],
-  "notes": "The paper prints the tariff as '(8)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "notes": "The paper prints the tariff as '[5 bodova] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
   "sourceMaterial": {
    "kind": "source-text",
    "label": "QUESTION 1",
@@ -1231,6 +1231,356 @@
     3
    ],
    "attribution": "SEC Croatian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-1-a",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
+  "questionRef": "2019 HL Section I Q1(a)",
+  "questionText": "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja štetočinama",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "onaj koji nanosi štetu (životinja, kukac, osoba); štetnik",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-1-b",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
+  "questionRef": "2019 HL Section I Q1(b)",
+  "questionText": "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja ponižavajući",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "onaj koji zlonamjerno umanjuje čije značenj; vrijeđa čiji ugled ili dostojanstvo",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-1-c",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
+  "questionRef": "2019 HL Section I Q1(c)",
+  "questionText": "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja usredotočuje",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "onaj koji se koncentrira, fokusira, usmjerava na jednu stvar, jedan način",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-1-d",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
+  "questionRef": "2019 HL Section I Q1(d)",
+  "questionText": "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja učinkovitu tehniku",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "tehnika koja donosi plod ili rezultat; djelotvorna, efikasna, plodonosna tehnika",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-1-e",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "kognitivni-spoznajni-nastao-kao-rezultat-saznanja",
+  "questionRef": "2019 HL Section I Q1(e)",
+  "questionText": "kognitivni= spoznajni, nastao kao rezultat saznanja, odnosno misaone djelatnosti čovjekove svijesti u poimanju objektivne stvarnosti pomoću vlastitog iskustva, mišljenja i osjećaja „prožeta nizom...mogućnosti“",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "obuzeta, potpuno ispunjena brojnim mogućnostima",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-2",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "opi-ite-temelju-teksta-ali-svojim",
+  "questionRef": "2019 HL Section I Q2",
+  "questionText": "Opišite, na temelju teksta, ali svojim riječima, što tvrtka Lacuna u filmu „Vječni sjaj nepobjedivog uma“ nudi svojim klijentima?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tvrtka Lacuna u filmu „Vječni sjaj nepobjedivog uma“ svojim klijentima nudi mogućnost zaborava, mogućnost brisanja negativnih, loših i uznemirujućih sjećanja. Postupak osmišljen u tvrtki Lacuna rješava njihove klijente bolnih sjećanja.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-3",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "opi-ite-temelju-teksta-ali-svojim",
+  "questionRef": "2019 HL Section I Q3",
+  "questionText": "Opišite, na temelju teksta, ali svojim riječima, takozvani Google-efekt ili digitalnu amneziju.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Google-efektom naziva se znanstveno utvrđen fenomen prema kojem ljudi sve slabije pamte podatke za koje znaju da su im dostupni na internetu i da ih od njih dijeli tek nekoliko klikova mišem ili poteza prstom po zaslonu pametnog telefona. Zbog tog fenomena ljudi više ne pamte informacije iz svakodnevnog života – od podataka o pjesmama, knjigama, filmovima, povijesnih podataka, zemljopisnih podataka pa sve do najosnovnijih i najintimnijih podataka o bliskim osobma, poput datuma njihova rođendana ili njihova telefonskog broja.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-4",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "problem-danas-google-ostatak-interneta-koristimo",
+  "questionRef": "2019 HL Section I Q4",
+  "questionText": "„Problem je što danas Google i ostatak interneta ne koristimo kao produžetak, nego nadomjestak za vlastito pamćenje“. Objasnite što je autorica željela reći ovom tvrdnjom. Slažete li se s njom? Obrazložite svoj odgovor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Autorica je ovime željela reći kako internet, odnosno internetske tražilice, više ne koristimo samo kao pomagalo našoj prirodnoj sposobnosti pamćenja, nego kao nadomjestak za cijeli taj proces. Internetske tražilice koristimo ne kao dodatak ili pomoć, nego umjesto pamćenja. A problem takvog nadomještanja nalazi se u tome što pamćenje nije isključivo aktivnost primanja i spremanja informacija, nego i postupak uz pomoć kojeg se razdvojene informacije i pojedinosti udružuju u jedinstvenu cjelinu. S obzirom da više ne pamtimo jer za tim nemamo potrebu, s obzirom da su nam sve informacije u nekoliko sekundi dostupne na internetu, mi smo potpuno onemogućili sintetiziranje informacija, odnosno njihovo dubinsko isprepletanje i postali smo kognitivno plići.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-5",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "kiberneti-egzistencija-jedne-strane-pro-eta",
+  "questionRef": "2019 HL Section I Q5",
+  "questionText": "„Naša kibernetička egzistencija s jedne je strane prožeta nizom izvanrednih, donedavno nezamislivih mogućnosti, ali te nove mogućnosti, nove moći imaju i svoju cijenu“. Temeljeno na tekstu i vašem vlastitom kibernetičkom iskustvu, u kojim bi slučajevima cijena koju plaćamo za sve načine na koje koje danas živimo s internetom bila previsoka? Obrazložite svoje mišljenje.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Usprkos nebrojenim prednostima korištenja interneta – olakšanoj komunikaciji, dostupnosti informacija, olakšanom upoznavanju ljudi, olakšanoj kupovini, itd. – naša svakodnevna prisutnost na internetu i činjenica da smo gotovo sve segmente života u određenoj mjeri preselili na mrežu svih mreža skriva i nebrojene, često nevidljive i nepoznate opasnosti. Cijena bivanja na internetu svakako postaje previsoka kada sigurnost postane narušena, kada dođe do zlouporabe podataka i fotografija, kada zbog sveprisutne mržnje ili uvreda u komentarima na društvenim mrežama korisnik interneta počne patiti od pshičkih problema. Cijena je previsoka i kada korištenje društvenih mreža na kojima postoji mogućnost „lajkanja“ fotografije, poput Instagrama, postane ovisnost, kada korisnici takvih mreža počnu živjeti za lajk, patiti ako isti izostane ili počnu mrziti prijatelje koji su na takvim mrežama popularniji. Neke korisničke skupine, poput, primjerice, djece ili mladih, posebno su ugrožene i nezaštićene – djeca imaju pristup mnogim neprimjerenim sadržajima, a često su i žrtve roditelja koji njihovu intimu iznose bez njihova dopuštenja jer su za isto, naravno, još premaleni. Primjer koji navodi tekst, nesposobnost zaborava, također bi se moglo nazvati primjerom s previsokom cijenom – nije prirodno da svaka glupost, svaka nesmotrenost, svaka nepodopština koje su neizostavni dio svake mladosti, odrastanja i oblikovanja karaktera, budu dostupni javnosti i tako na neki način vječno dokumentirani, bez prave mogućnosti njihova uklanjanja, odnosno zaborava. Sjene prošlosti tako nas zauvijek mogu pratiti, a to jednostavno nije humano niti prirodno.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2019-hl-i-6",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2019,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "tehnologija-ito-promijenila-temeljeno-tekstu-ali",
+  "questionRef": "2019 HL Section I Q6",
+  "questionText": "„Tehnologija me očito promijenila“. Temeljeno na tekstu, ali i prema vašem mišljenju, opišite načine na koji tehnologija može promijeniti ljudsko biće.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Na primjer: U zadnjih dvadesetak godina tehnologija je uvelike promijenila način na koji živimo te su danas neke stvari za koje smo prije mislili da pripadaju dalekoj budućnosti postale dio naše svakodnevice. Protok informacija je brz, komunikacija olakšana, olakšano je poslovanje, gotovo sva svjetska baština dostupna je na internetu, samo nekoliko klikova mišem jedina su ulaznica u nepregledne hodnike svjetskih muzeja, nekoliko poteza po zaslonu pametnog telefona dijeli nas od uranjanja u knjižničnom blago najpoznatijih svjetskih knjižnica, a moguće je i virtualno prošetati najpoznatijim svjetskim destinacijama. No, osim brojnih pozitivnih stvari koje nam je donijela tehnologija i njezin nevjerojatan razvoj, postoje i negativni učinci koji su vezani uz način na koji ljudi koriste tehnologiju, odnosno vezani su uz našu preveliku ovisnost o tehnologiji, pametnim telefonima, internetu i slično. Tehnologija mi je omogućila da ostanem u kontaktu s prijateljima i rodbinom u Hrvatskoj, samo jedan klik dijeli me od mogućnosti da snjima podijelim trenutke iz svojega života, da ih čujem i vidim kad god to poželim, a sve to uvelike smanjuje čežnju za domovinom. To je do prije nekoliko godina bilo nemoguće i zahtijevalo je duga iščekivanja pisama ili razglednica. Tehnologija mi je omogućila da se lakše bavim svojim hobijima, saznam sve o stvarima koje me zanimaju, na lakši način dođem do predmeta koje skupljam i povežem se s ljudima iz cijelog svijeta koji dijele iste interese. Moji roditelji primijetili su da imam manje strpljenja nego njihova generacija. Na internetu sam pročitala kako je to možda čak i istina je nam je danas velika količina sadržaja dostupna na zahtjev, tako da pjesme, videozapise, utakmice i slično možemo pogledati kad god poželimo na YouTubeu i drugim video servisima, no zbog te navike da nam je uvijek sve dostupno, korisnici sve više gube strpljenje pa, prema jednom istraživanju, gase videozapis ako njegovo učitavanje traje više od dvije sekunde. Problem je što se ove navike prenose i u stvaran život te su ljudi sve nestrpljiviji čim moraju nešto čekati duže vremena (npr. dostavu, rezervaciju večere i slično). Prije nekoliko godina imao sam problema s utonućem u san; doktor mi je savjetovao da isključim telefon prije odlaska na spavanje budući da plavo svjetlo koje emitira mobilni telefon negativno utječe na prirodni proces spavanja. Poslušao sam liječnikov savjet i otad spavam normalno. Nevjerojatno! Čitala sam kako dopisivanje utječe na komunikaciju u stvarnom životu – tekstualno dopisivanje je za mnoge danas postalo temeljni oblik komunikacije, no ovakav način komunikacije negativno utječe na sposobnost ljudi u prepoznavanju emocija osoba s kojima razgovaraju/dopisuju se. Kako dopisivanjem ne možemo prepoznati neverbalne znakove komunikacije, neki se znanstvenici pribojavaju kako bi to moglo ostaviti negativne posljedice na društveni razvoj mladih. Sviđa mi se činjenica da zahvaljujući internetu mogu biti u toku s događajima iz cijelog svijeta i tako se osjećati kao pravi građanin svijeta.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Croatian 2019 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
   }
  },
@@ -2445,6 +2795,726 @@
     3
    ],
    "attribution": "SEC Croatian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-1-a",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojim-rije-ima-sljede-pojmove",
+  "questionRef": "2025 HL Section I Q1(a)",
+  "questionText": "Objasnite svojim riječima sljedeće pojmove: „duboko je ukorijenjen”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "„duboko je ukorijenjen” onaj koji je duboko usađen, ustaljen, koji ima tradiciju",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-1-b",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojim-rije-ima-sljede-pojmove",
+  "questionRef": "2025 HL Section I Q1(b)",
+  "questionText": "Objasnite svojim riječima sljedeće pojmove: velikodušnom",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "velikodušnom nesebičnom, onom koji rado i puno pruža",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-1-c",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojim-rije-ima-sljede-pojmove",
+  "questionRef": "2025 HL Section I Q1(c)",
+  "questionText": "Objasnite svojim riječima sljedeće pojmove: značajan",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "značajan koji ima veliku važnost",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-1-d",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojim-rije-ima-sljede-pojmove",
+  "questionRef": "2025 HL Section I Q1(d)",
+  "questionText": "Objasnite svojim riječima sljedeće pojmove: predanost",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "predanost marljivost, posvećenost, požrtvovnost",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-1-e",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojim-rije-ima-sljede-pojmove",
+  "questionRef": "2025 HL Section I Q1(e)",
+  "questionText": "Objasnite svojim riječima sljedeće pojmove: obmana",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "obmana postupak koji lažnim riječima namjerno izaziva tuđe pogrešno mišljenje o čemu",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-2",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "ukratko-opi-ite-temelju-teksta-ali",
+  "questionRef": "2025 HL Section I Q2",
+  "questionText": "Ukratko opišite, na temelju teksta, ali svojim riječima, kakve su to studije nedavno provedene u Velikoj Britaniji te tko je u njih bio uključen.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tri znanstvene studije provodile su se u Velikoj Britaniji u vrijeme zimskih blagdana 2019., 2021. i 2022. godine i za cilj su imale istražiti ponašaju li se djeca u vrijeme zimskih blagdana bolje, vjeruju li u Djeda Božićnjaka te u kakvom su odnosu njihovo poboljšano ponašanje i vjerovanje u postojanje Djeda Božićnjaka. U studije je bilo uključeno 350 obitelji s djecom u dobi od 4 do 9 godina. Roditelji su djeci kupovali darove slične vrijednosti te s njima sudjelovali u tradicionalnim božićnim aktivnostima poput kićenja drvca, pjevanja božićnih pjesama ili pripremanja tradicionalnih božićnih jela.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-3",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "opi-ite-temelju-teksta-ali-svojim",
+  "questionRef": "2025 HL Section I Q3",
+  "questionText": "Opišite, na temelju teksta, ali svojim riječima, što su te studije otkrile o ponašanju djece u blagdansko vrijeme.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Studije su pokazale kako čak 70% djece vjeruje u postojanje Djeda Božićnjaka i kako se u vrijeme zimskih blagdana doista bolje ponašaju, ali vjerovanje nema veći učinak na njihovo ponašanje, nego se kao najvažniji čimbenik u poboljšanju njihova ponašanja pokazalo aktivno sudjelovanje u božićnim aktivnostima, običajima i tradicijama. Takva su djeca pokazivala više emaptije, manje sebičnosti i bila općenito ljubaznija. Utjecaj božićnih običaja na njihovo lijepo ponašanje bio je proporcionalan zahtjevnosti tog običaja, što dovodi do zaključka da su djeca reagirala na posvećenost i trud koje su članovi obitelji pokazivali u stvaranju blagdanskog ozračja.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-4",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "tekstu-psihologinja-bona-dovodi-pitanje-koncept",
+  "questionRef": "2025 HL Section I Q4",
+  "questionText": "U tekstu psihologinja Bonačić dovodi u pitanje koncept vanjske nagrade ili kazne povezane s vjerovanjem u Djeda Božićnjaka, odnosno Svetog Nikolu i Krampusa. Objasnite svojim riječima, ali temeljeno na tekstu, zašto je taj koncept loš za odgoj djece?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dječja psihologinja smatra kako je sustav nagrade ili kazne koji dolazi izvana potpuno pogrešan i loš za odgoj djece jer kod djece ne razvija stvarni unutarnji osjećaj za ispravno i moralno ili pogrešno ponašanje, nego njihovo ponašanje ovisi samo o tome hoće li biti otkriveno te za takvo ponašanje nagrađeno ili kažnjeno.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-5",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "tekst-navodi-kako-rituali-obi-aji",
+  "questionRef": "2025 HL Section I Q5",
+  "questionText": "Tekst navodi kako rituali i običaji igraju važnu ulogu u stvaranju i pojačavanju „osjećaja pripadnosti i zajedništva”. Slažete li se s ovom tvrdnjom? Obrazložite svoj odgovor temeljeći ga na tekstu te vlastitom iskustvu.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Na primjer: U potpunosti se slažem s tom tvrdnjom, božićno vrijeme moje je najdraže doba u godini upravo zbog toga što moja obitelj i ja imamo svoje rituale i običaje u kojima svi sudjelujemo i blagdansko vrijeme gotovo u potpunosti provodimo družeći se jednim s drugima. Svatko ima svoja zaduženja i svi se trudimo obaviti ih što uspješnije kako bismo postigli što ljepšu blagdansku čaroliju. Ja i sestra zadužene smo za božićne kekse i kolače i s pripremom počinjemo već početkom prosinca. Obožavam Božić u svojoj obitelji! Nisam osoba od običaja i tradicije, pokušavam uvijek ići svojim putem i stvari raditi na svoj način, ali sa svojom najboljom prijateljicom njegujem tradiciju prespavljivanja jednom mjesečno kod jedne od nas i jako se veselim tim našim subotama. Isto tako, svako ljeto u Hrvatskoj kod bake i djeda provedem barem mjesec dana na moru i djed me tradicionalno vodi sa sobom u ribe; to su mi najdraži trenuci ljetovanja u kojima se djed i ja povezujemo na zaista poseban način, on me uči mnogim stvarima o životu i vrijeme kao da se zaustavi dok smo nas dvoje sami u čamcu. Slažem se, iako u Irskoj živimo već nekoliko godina, ja i moja obitelj svake godine u vrijeme božićnih i uskrsnih blagdana pokušavamo slijediti lijepe hrvatske božićne običaje i pripremati tradicionalana hrvatska jela. Mojim je roditeljima jako važno da kroz običuje brat i ja njegujemo osjećaj pripadnosti Hrvatskoj i hrvatskoj kulturi.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2025-hl-i-6",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2025,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "tekst-koncept-vjerovanja-djeda-njaka-baca",
+  "questionRef": "2025 HL Section I Q6",
+  "questionText": "Tekst na koncept vjerovanja u Djeda Božićnjaka baca prilično negativno svjetlo. Iznesite svoje mišljenje o tom konceptu, a ono neka se temelji na tekstu te vlastitom iskustvu.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Na primjer: Ne slažem se s ovom negativnom slikom, sjećanja na iščekivanje božićnog jutra i trčanje pod božićno drvce kako bih vidio je li mi Djed Božićnjak ispunio sve želje s popisa jedna su od mojih najljepših sjećanja iz djetinjstva. Priča o Djedu Božićnjaku samo je još jedna u nizu priča i bajki u koje smo vjerovali i kojima smo se kao djeca radovali. Sa mnom su roditelji bili otvoreni od najranijeg djetinjstva i znala sam da su oni zaslužni za sve moje trenutke beskrajne sreće kod otvaranja darova, ali mislim da djeci ionako nije važno tko ih daruje dok god su im želje ispunjene, tako da se djelomično slažem s kritičkim mišljenjima iznesenima u ovom članku. Djed Božićnjak, Krampus, Baba Roga, zmajevi i ostala bića kojima su nas plašili u djetinjstvu ako ne budemo dobri doista pripadaju nekim prošlim vremenima u kojima se djecu odgajalo na prilično tvrd način, a razne vrste prijekora i kažnjavanja bile su sastavni dio takvog odgoja. Vremena su se promijenila, otvoreni razgovor, a ne šiba nekog strašnog bića sada su temelj odgoja djece pa je možda vrijeme i da se redefiniraju neki običaji i likovi.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2025 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-1-a",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojima-rije-ima-sljede-pojmove",
+  "questionRef": "2026 HL Section I Q1(a)",
+  "questionText": "Objasnite svojima riječima sljedeće pojmove: „su zapinjale kemija, matematika, fizika ili jezici“",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "u svladavanju tih predmeta su nailazili na prepreke, sporije su ih usvajali ili im ti predmeti uopće nisu išli",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-1-b",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojima-rije-ima-sljede-pojmove",
+  "questionRef": "2026 HL Section I Q1(b)",
+  "questionText": "Objasnite svojima riječima sljedeće pojmove: iznenađuje zrelošću",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "iznenađuje visokim stupnjem intelektualne razvijenosti i razboritosti, višim od onoga što je uobičajeno za njegovu dob",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-1-c",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojima-rije-ima-sljede-pojmove",
+  "questionRef": "2026 HL Section I Q1(c)",
+  "questionText": "Objasnite svojima riječima sljedeće pojmove: besprijekorne",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "one koje nemaju mane, koje su savršene, kojima se nema što prigovoriti; u ovome primjeru to znači da učenik dobiva samo odlične ocjene, on je čisti odlikaš",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-1-d",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojima-rije-ima-sljede-pojmove",
+  "questionRef": "2026 HL Section I Q1(d)",
+  "questionText": "Objasnite svojima riječima sljedeće pojmove: nedostupne",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "do kojih se ne može doći ili koje se ne može imati, koji je nepristupačan",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-1-e",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-0",
+  "conceptId": "objasnite-svojima-rije-ima-sljede-pojmove",
+  "questionRef": "2026 HL Section I Q1(e)",
+  "questionText": "Objasnite svojima riječima sljedeće pojmove: „netko sklon stereotipima“",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "netko tko je naklonjen stereotipima, netko tko lako i često poseže za stereotipima",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 × 1 bod] on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-2",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "opi-ite-temelju-teksta-ali-svojim",
+  "questionRef": "2026 HL Section I Q2",
+  "questionText": "Opišite, na temelju teksta, ali svojim riječima, što je to „Zlatni zmaj“? Koga okuplja, čime se bave?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Zlatni zmaj je skupina od stotinjak odličnih srednjoškolskih učenika koji u slobodno vrijeme dobrovoljno pomažu učenicima osnovnih škola kojima su instrukcije preskupe ili iz nekog drugog razloga nedostupne u svladvanju teškog ili nerazumljivog gradiva. Znanje dijele iz svih predmeta iz kojih imaju odlične ocjene i to rade potpuno besplatno.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-3",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "ukratko-opi-ite-temelju-teksta-ali",
+  "questionRef": "2026 HL Section I Q3",
+  "questionText": "Ukratko opišite, na temelju teksta, ali svojim riječima, kako je došlo do ideje o pokretanju ove inicijative? Tko je došao na tu ideju? Kako se ideja razvijala? Je li bilo problema?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Na ideju je došao Lovro, odlikaš iz jedne zagrebačke gimnazije, koji je nakon prvog lockdowna za vrijeme pandemije koronavirusa osjetio potrebu za humanitarnim, volonterskim radom. Ideju o tome da stariji učenici pomažu mlađima prvo je podijelio sa svojim najbližim prijateljima iz razreda, a potom i sa školskom psihologinjom, koja ga je povezala s udrugom „Mali zmaj“ koja pomaže siromašnim obiteljima. Isprva su instrukcije davali samo Lovro i još trojica njegovih prijatelja, no ubrzo su im se pridružili i učenici ostalih škola te ih je danas stotinjak. Najveći im je problem bio pronaći odgovarajući prostor, a potom, kako je broj volontera i učenika rastao, i koordinirati njihov rad te se pobrinuti da sve funkcionira. Lovro je stoga osnovao piramidalnu mrežu koordinatora na svakoj od lokacija.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-4",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "stariji-enici-najbolje-rje-enje-pomaganje",
+  "questionRef": "2026 HL Section I Q4",
+  "questionText": "Stariji učenici najbolje su rješenje za pomaganje mlađim učenicima. Svojim riječima objasnite zašto je iz teksta vidljivo da je tome možda tako, nudeći pritom i svoje gledište.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stariji učenici jako su dobro upoznati s gradivom jer su ga i sami relativno nedavno morali svladati u školi te točno znaju što se na nastavi traži te kako prevladati određene izazovnije dijelove gradiva. Isto tako, generacijski su puno bliže mlađim učenicima i bolje se razumiju, a, s obzirom da nisu profesori i ne teže postavljanju autoriteta i discipline, već učenicima i pojašnjavanju gradiva pristupaju opušteno, atmosfera na instrukcijama je iznimno prijateljska i ugodna, što bez sumnje olakšava i ubrzava proces usvajanja teškog ili izazovnog gradiva. Također, srednjoškolci instrukcije nude potpuno besplatno, što je za mnoge učenike koji dolaze iz siromašnijih obitelji i ne mogu si priuštiti skupe instrukcije izvrsna okolnost, a često vjerojatno i jedini način da dođu do dodatne pomoći u savladavanju kompliciranog gradiva za što profesori nemaju vremena ili ih se učenici srame ili boje pitati. S druge pak strane, srednjoškolci na ovaj način također dobivaju neprocjenjivo iskustvo u dijeljenju znanja, predavanju gradiva, radu s ljudima, organizaciji vlastitog vremena te u osjećaju pomaganja drugome.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-5",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "odlomku-volonter-lovro-ako-ete-nekome",
+  "questionRef": "2026 HL Section I Q5",
+  "questionText": "U 2. odlomku volonter Lovro kaže „Ako možete nekome pomoći, onda se i vi bolje osjećate ako ste odgovorni za dio nečijeg uspjeha.“ Dijelite li njegovo mišljenje? Možete li se prisjetiti neke situacije u kojoj ste imali prilike pomoći nekome u njegovu uspjehu? Iscrpno argumentirajte svoj odgovor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "U potpunosti se slažem s Lovrinom tvrdnjom. Pomaganje drugome najbolji je osjećaj na svijetu, pogotovo ako to dovede do nečijeg uspjeha. Prilično sam dobra u jezicima i oduvijek pomažem svojim razrednim kolegama s gramatikom prije težih ispita. Njihov uspjeh na ispitu i dobre ocjene slavim kao da su moje. Slažem se s Lovrinom tvrdnjom, osjećaj nakon što smo pomogli nekome u nevolji nemjerljiv je i sa čim. S ljepotom pomaganja drugima upoznao sam se kad smo moja obitelj i ja doselili u Irsku i kad nam je bilo teško snaći se u početku, a meni je u školi zbog jezika bilo baš jako teško. Tada su mojim roditeljima puno pomogli susjedi, a u mojoj školi su se stvarno iskazali moji novi razredni prijatelji uz čiju sam se pomoć vrlo brzo integrirao i nadoknadio zaostatke i razlike u gradivu. Na tome ću im zauvijek biti zahvalan i ako uspijem upisati željeni fakultet, to će djelomično biti i njihova zasluga! Poučen tim iskustvom i sam nikad ne propuštam priliku pomoći kome god mogu. Djelomično se slažem s Lovrinim mišljenjem, naravno da je vrijedno i pohvalno pomagati drugima, ali mislim da je krivo ako to činimo samo da bismo se sami osjećali bolje i vrednije.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+  }
+ },
+ {
+  "id": "hrv-2026-hl-i-6",
+  "subjectId": "croatian",
+  "level": "higher",
+  "year": 2026,
+  "section": "I",
+  "topicId": "croatian-0-1",
+  "conceptId": "odlomku-saznajemo-kako-volonterka-dori-svjesna",
+  "questionRef": "2026 HL Section I Q6",
+  "questionText": "U 8. odlomku saznajemo kako je volonterka Dori svjesna koliko je pozitivna energija bitna pomoć pri savladavanju nepoznatog i teškog. Slažete li se s time? Imate li možda primjera iz vlastitog života u kojemu vam je pozitivan stav pomogao pri savladavanju nečega teškog, novog ili izazovnog? Iscrpno obrazložite svoj odgovor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Na primjer: U potpunosti se slažem s ovom tvrdnjom. Pozitivan stav i pozitivna energija su ključna, ako ne i najvažnija sastavnica svakog uspjeha, napretka i uspješnog života u cjelini. Imam bezbroj primjera iz vlastitog života, a najviše onih sa sportskih terena. Naime, već godinama treniram nogomet i ne znam ni broja situacijma u kojima su pozitivan stav i vjera u uspjeh mene i mojih suigrača preokrenuli negativan rezultat i odveli nas u pobjedu iako je izgledala nedostižna. Isto tako, pozitivna i opuštena atmosfera na treninzima i u klubu je nužna za napredak, ali i ustrajnost. Treninzi su teški i iscrpljujući, ali zbog pozitivne atmosfere kući se s njih uvijek vraćam radostan i ispunjen i jedva čekam novi trening. Slažem se s ovim uvidom, čovjek ne može utjecati na događaje u vlastitom životu, ali itekako može utjecati na svoj stav prema tim događajima, kao i na svoju reakciju na njih, čak i kada su ti događaji negativni. Mi smo ti koji odlučujemo hoće li nas neko iskustvo u potpunosti paralizirati ili nas natjerati da budemo još bolji, da se potrudimo još više i da u konačnici narastemo kao osobe. Sjećam se kako sam se osjaćala kad su mene i brata roditelji obavijestili o selidbi u Irsku. Danima sam bila paralizirana od tuge, straha i strepnje. Ali onda sam odlučila na cijelo iskustvo gledati kao na nevjerojatnu avanturu i na nešto što će unaprijediti i obogatiti moje životno iskustvo te mi donijeti mnogo toga lijepoga i pozitivnoga. Taj stav zadražala sam do danas i iz sadašnjem perspektive mislim da je naše preseljenje u Irsku nešto najbolje što mi se moglo dogoditi u životu. Slažem se s ovom tvrdnjom, pogotovo u kontekstu u kojemu se govori u ovome tekstu. Energija i atmosfera u školi često su negativni, gradiva je uvijek puno, a vremena malo, testovi su česti, što i učenike i profesore čini jako nervoznima i u takvoj je atmosferi ponekad jako teško usvajati novo gradivo, a pogotovo to činiti s dubokim razumijevanjem. Stoga mi se jako svidjela ova ideja iz teksta da gradivo pojašnjavaju mladi ljudi u prijateljskom i opuštenom okruženju u kojemu oni svaki naš mali napredak i uspjeh smatraju i svojim uspjehom i raduju se zajedno s nama. Ne slažem se s ovom tvrdnjom, samo pozitivan stav i pozitivna energija neće nas daleko dovesti, za uspjeh u životu ključan je samo težak i naporan rad. Nikakva količina pozitivnog stava ne može nas spasiti ako nismo dovoljno učili, trenirali, vježbali ili se pripremili za ono što je pred nas stavljeno.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '[5 bodova]'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Croatian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Croatian 2026 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in CROATIAN. The paper prints the rule on its own first page: \"Svi odgovori moraju biti na hrvatskome jeziku.\""
   }
  }

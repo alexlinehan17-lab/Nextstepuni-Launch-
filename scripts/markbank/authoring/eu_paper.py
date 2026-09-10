@@ -1464,6 +1464,15 @@ def _walk_down_paper_splits(asks):
             continue
         group = kids.get((a.section, a.q)) or []
         count, per, _total = a.tariff
+        if per is not None and count != len(group) and per == len(group):
+            # "(1 × 5 poäng)" — the SEC writes the split the other way round
+            # as often as it writes "(5 × 1)", and which number is the COUNT
+            # is settled by the group beneath it, never by picking the larger.
+            # The 2014 Swedish paper prices Question 1 that way over five
+            # expressions, and read as one answer worth five it left all five
+            # of them unpriced and uncarded.
+            count, per = per, count
+            a.tariff = (count, per, count * per)
         if per is None or not group or len(group) != count \
                 or any(k.tariff and k.margin_price for k in group):
             # A kid's own MARGIN price is its own and stops the walk-down; a

@@ -393,6 +393,16 @@ class EuScheme:
             and any(x >= PRICE_X for x, _t in r.cells)) >= 3
         self._asks = (self._walk() if self.era == 'modern'
                       else self._walk_classic())
+        if self.era == 'classic' and not self._asks:
+            # A classic scheme that heads NO part at all. Three Croatian
+            # sittings — 2019, 2025 and 2026 — open "Croatian Marking Scheme
+            # 2025" and then go straight to "1. Objasnite svojim riječima…",
+            # with no "I. dio" anywhere in the document, and read strictly
+            # each of them answered nothing. The only part a classic scheme
+            # answers is the first, so the walk is repeated with that assumed;
+            # the criteria line and the part-price cell still close it, which
+            # is what keeps Parts II and III out of the last question.
+            self._asks = self._walk_classic(assume_part='I')
         for ask in self._asks:
             _assemble_tariffs(ask)
             _price(ask)
@@ -644,7 +654,7 @@ class EuScheme:
         close()
         return asks
 
-    def _walk_classic(self):
+    def _walk_classic(self, assume_part=None):
         """A classic scheme: answers under the paper's own numbering, unpriced.
 
         Its head is "Tópicos de correcção · Parte I (30 pontos)" and then "1.
@@ -652,7 +662,7 @@ class EuScheme:
         the price for these sittings is printed on the QUESTION PAPER and
         eu_paper.py reads it there.
         """
-        asks, part, q, letter = [], None, None, None
+        asks, part, q, letter = [], assume_part, None, None
         current = None
         broke = False
         noted = False

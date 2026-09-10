@@ -180,11 +180,11 @@
     "refsHash": "ab5312971b0e0217"
   },
   "croatian": {
-    "cards": 70,
-    "contentHash": "1626bc9a24105001",
+    "cards": 100,
+    "contentHash": "2a79e729a0bc71d9",
     "coveragePct": 100.0,
-    "covered": 70,
-    "excluded": 97,
+    "covered": 100,
+    "excluded": 67,
     "leaves": 167,
     "open": 0,
     "orphans": 0,
@@ -192,7 +192,7 @@
       "count": 13,
       "hash": "1b6552f0658d264b"
     },
-    "refsHash": "94084f66e5f2aa38"
+    "refsHash": "949a64de37c58396"
   },
   "czech": {
     "cards": 15,
@@ -675,11 +675,11 @@
     "refsHash": "5da5beef5d9ac549"
   },
   "swedish": {
-    "cards": 106,
-    "contentHash": "af1c71dc074a3ee3",
+    "cards": 121,
+    "contentHash": "a0cb45f67ea58b4d",
     "coveragePct": 100.0,
-    "covered": 106,
-    "excluded": 78,
+    "covered": 121,
+    "excluded": 63,
     "leaves": 184,
     "open": 0,
     "orphans": 0,
@@ -687,7 +687,7 @@
       "count": 16,
       "hash": "3f4a29c9d6671847"
     },
-    "refsHash": "0a17b493ee50fa15"
+    "refsHash": "a952dfaa733dd380"
   },
   "technology": {
     "cards": 716,
