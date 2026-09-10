@@ -42,6 +42,30 @@ except ImportError:
 # ToUnicode entry is not Arabic at all rather than inventing a letter for them.
 RTL_SUBJECTS = ('arabic',)
 
+# Subjects whose PDFs embed a subset font with a broken ToUnicode map that the
+# GLOBAL glyphmap cannot repair, and whose repair therefore has to happen here,
+# in the .md the provenance gate reads.
+#
+# Only these three, deliberately. Two other subject maps exist
+# (glyphmap-arabic.json, glyphmap-technology.json) and their .md files were
+# extracted without one; applying a map to them now would move text the shipped
+# cards are already checked against, which is a re-measure and not this change.
+# The Baltic languages are extracted for the first time here, so their .md and
+# their cards are repaired together — and they have to be, because the global
+# map reads U+01A1 as "l" where the Lithuanian subset draws "ė", so a scheme
+# line left mangled would be repaired one way in the .md and another on the
+# card and no provenance check would ever match.
+GLYPH_SUBJECTS = ('lithuanian', 'latvian', 'czech')
+
+
+def _glyph_table(pdf_path: Path):
+    for part in pdf_path.parts:
+        if part in GLYPH_SUBJECTS:
+            sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+            import lt_glyphs
+            return lt_glyphs.load(part)
+    return {}
+
 
 def _is_rtl(pdf_path: Path) -> bool:
     return any(part in RTL_SUBJECTS for part in pdf_path.parts)
@@ -274,6 +298,9 @@ def main() -> int:
 
     text = (extract_rtl(args.path) if _is_rtl(args.path)
             else extract(args.path, marks_column=args.marks_column))
+    table = _glyph_table(args.path)
+    if table:
+        text = ''.join(table.get(ch, ch) for ch in text)
     hits = check(text, words)
     out = args.out or args.path.with_suffix(".md")
     out.write_text(text)

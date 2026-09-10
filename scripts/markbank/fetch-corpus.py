@@ -137,6 +137,29 @@ SUBJECTS = {
     # Ordinary paper only for 2021, 2022 and 2023 — eight sittings, not ten,
     # and that is the corpus being complete, not a fetch failure.
     'latin': 'latin',
+    # Added 10 September 2026. Lithuanian, Latvian and Czech are the next three
+    # NON-CURRICULAR EU languages after Polish (SEC subjects 550, 549 and 547),
+    # and the corpus holds them further back than any other language: papers
+    # AND schemes for every year 2010-2026, not the 2021-2025 window the
+    # curricular subjects run to. That is why --from/--to is passed here rather
+    # than left at the default; the older sittings are the SAME examination the
+    # 2021 one is, and dropping them would shrink the denominator by two
+    # thirds.
+    #
+    # Lithuanian follows Polish exactly: sat at ONE level (file letter 'A',
+    # cover "Higher Level") up to and including 2021 and at TWO from 2022, when
+    # a Listening Comprehension Test in its own booklet ('A00') appears; and it
+    # publishes SEPARATE English ('E') and Irish ('I') editions rather than the
+    # bilingual 'B' booklet, so WANTED_LANGS already takes the right one.
+    'lithuanian': 'lithuanian',
+    # Latvian and Czech did NOT follow Polish and Lithuanian through the 2022
+    # rebuild: every sitting in the corpus, 2010 to 2026, is the old
+    # examination — one Higher-only booklet ('000'), no Listening
+    # Comprehension Test at all, and no Ordinary paper in any year. A fetch
+    # that reports one file a year for each of them is the corpus being
+    # complete, not a fetch failure.
+    'latvian': 'latvian',
+    'czech': 'czech',
 }
 
 # A subject the SEC sets as TWO papers on the same afternoon, one of which a
