@@ -93,6 +93,8 @@ if (!arabicCurriculum) throw new Error('Canonical Arabic curriculum is missing')
 const ancientGreekCurriculum = CURRICULUM.find(subject => subject.id === 'ancient-greek');
 if (!ancientGreekCurriculum) throw new Error('Canonical Ancient Greek curriculum is missing');
 const modernGreekCurriculum = CURRICULUM.find(subject => subject.id === 'modern-greek');
+const malteseCurriculum = CURRICULUM.find(subject => subject.id === 'maltese');
+const ukrainianCurriculum = CURRICULUM.find(subject => subject.id === 'ukrainian');
 const mandarinChineseCurriculum = CURRICULUM.find(subject => subject.id === 'mandarin-chinese');
 if (!modernGreekCurriculum) throw new Error('Canonical Modern Greek curriculum is missing');
 
@@ -1355,6 +1357,31 @@ export const MANDARIN_CHINESE_STRANDS: StrandRef[] = mandarinChineseCurriculum.s
   })),
 }));
 
+/* Maltese and Ukrainian publish the same two strands Modern Greek does, and
+ * for the same reason: the examination is a reading comprehension and a piece
+ * of written production, and nothing else. */
+export const MALTESE_STRANDS: StrandRef[] = malteseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Part ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const UKRAINIAN_STRANDS: StrandRef[] = ukrainianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Part ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const MODERN_GREEK_STRANDS: StrandRef[] = modernGreekCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Part ${index + 1}`,
@@ -1541,6 +1568,8 @@ export const SUBJECTS = [
   { id: 'ancient-greek', title: 'Ancient Greek', strands: ANCIENT_GREEK_STRANDS, spec: 'Leaving Certificate Ancient Greek syllabus — the legacy written paper' },
   { id: 'modern-greek', title: 'Modern Greek', strands: MODERN_GREEK_STRANDS, spec: 'Leaving Certificate Modern Greek, a non-curricular EU language' },
   { id: 'mandarin-chinese', title: 'Mandarin Chinese', strands: MANDARIN_CHINESE_STRANDS, spec: 'Leaving Certificate Mandarin Chinese specification, first examined 2022' },
+  { id: 'maltese', title: 'Maltese', strands: MALTESE_STRANDS, spec: 'Leaving Certificate Maltese, a non-curricular EU language' },
+  { id: 'ukrainian', title: 'Ukrainian', strands: UKRAINIAN_STRANDS, spec: 'Leaving Certificate Ukrainian, a non-curricular EU language, first examined 2025' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1903,6 +1932,12 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   'mandarin-chinese': {
     higher: () => import('./cards/mandarin-chinese/higher'),
     ordinary: () => import('./cards/mandarin-chinese/ordinary'),
+  },
+  maltese: {
+    higher: () => import('./cards/maltese/higher'),
+  },
+  ukrainian: {
+    higher: () => import('./cards/ukrainian/higher'),
   },
   'modern-greek': {
     higher: () => import('./cards/modern-greek/higher'),

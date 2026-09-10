@@ -98,6 +98,8 @@ import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-g
 import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-greek/higher';
 import { CARDS as MANDARIN_HIGHER } from '../components/MarkBank/cards/mandarin-chinese/higher';
 import { CARDS as MANDARIN_ORDINARY } from '../components/MarkBank/cards/mandarin-chinese/ordinary';
+import { CARDS as MALTESE_HIGHER } from '../components/MarkBank/cards/maltese/higher';
+import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -133,6 +135,9 @@ const SAMPLE_CARDS = [
   // Ordinary paper in any year of the corpus.
   ...MGREEK_HIGHER,
   ...MANDARIN_HIGHER, ...MANDARIN_ORDINARY,
+  // Higher only: Maltese and Ukrainian are each examined at ONE level and
+  // there is no Ordinary paper in any year of the corpus.
+  ...MALTESE_HIGHER, ...UKRAINIAN_HIGHER,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -692,6 +697,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       // is what a written card can be about; the other three strands cover
       // the oral, the portfolio and the course's competences and ship unused.
       'mandarin-chinese': 'mandarin-chinese-',
+      // Maltese and Ukrainian file their cards under their own published
+      // taxonomies, whose two strands are each paper's own two halves.
+      maltese: 'maltese-',
+      ukrainian: 'ukrainian-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

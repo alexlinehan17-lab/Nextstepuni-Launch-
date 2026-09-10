@@ -299,6 +299,21 @@ SUBJECTS = {
     # and their asks are priced by the QUESTION PAPER, not by the scheme.
     'romanian': {'mode': 'sections', 'walker': 'eu'},
     'dutch': {'mode': 'sections', 'walker': 'eu'},
+    # Maltese (SEC 557) and Ukrainian (SEC 570) are the same CLASSIC
+    # examination Romanian and Dutch sit, in two more languages: one
+    # Higher-only booklet, no Ordinary paper and no Listening Comprehension
+    # Test, three parts of which only the first sets numbered questions. They
+    # join the same reader rather than getting two more copies of it — what
+    # differs between them is marker vocabulary, not structure.
+    #
+    # Two facts about their marker vocabulary that no other subject on this
+    # reader has. Maltese letters its parts in the MALTESE alphabet, a) b) ċ)
+    # d) e), and its marking scheme letters the same five in the LATIN one, so
+    # a scheme letter is folded to the paper's run by position (the paper wins
+    # on the address). And Ukrainian sets the roman of "ЧАСТИНА I" with the
+    # LATIN I on its paper and the CYRILLIC І on its scheme.
+    'maltese': {'mode': 'sections', 'walker': 'eu'},
+    'ukrainian': {'mode': 'sections', 'walker': 'eu'},
     # Lithuanian, Latvian and Czech are the NON-CURRICULAR EU languages after
     # Polish (SEC subjects 550, 549 and 547) and share one reader, lt_paper /
     # lt_scheme, because they are one examination printed in three languages.
@@ -418,6 +433,28 @@ def leaves_of(parts):
     return sorted(out, key=lambda k: tuple(str(x) for x in k))
 
 
+def _letter_run(subject):
+    """The alphabet this subject's part letters run through.
+
+    Not always the Latin one. Maltese letters its parts a) b) ċ) d) e),
+    because ċ is the third letter of the MALTESE alphabet — and checked
+    against the Latin run every Maltese sitting reported a letter-gap
+    ("letters found: ['a', 'b', 'd', 'e', 'ċ']") on a question with no gap in
+    it, because ċ also sorts after e.
+    """
+    try:
+        from eu_paper import cfg                              # noqa: E402
+        run = cfg(subject, 'letters')
+    except Exception:                                          # noqa: BLE001
+        run = None
+    return list(run) if run else [chr(ord('a') + i) for i in range(12)]
+
+
+def _letters_in_order(subject, letters):
+    run = _letter_run(subject)
+    return sorted(letters, key=lambda c: (run.index(c) if c in run else 99, c))
+
+
 def continuity_flags(parts, texts, subject=None, continuous=False):
     """Every gap in the numbering, which is where keying bugs surface.
 
@@ -522,18 +559,19 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
                                   'where': f'{pre or ""} Q{q}',
                                   'detail': f'romans found: {roms}'})
                 for roman in {k[-1] for k in here}:
-                    letters = sorted({k[-2] for k in here
-                                      if k[-1] == roman and k[-2]})
-                    expect = [chr(ord('a') + i) for i in range(len(letters))]
+                    letters = _letters_in_order(subject, {
+                        k[-2] for k in here if k[-1] == roman and k[-2]})
+                    expect = _letter_run(subject)[:len(letters)]
                     if letters and letters != expect:
                         flags.append({
                             'type': 'letter-gap',
                             'where': f'{pre or ""} Q{q}({roman or ""})',
                             'detail': f'letters found: {letters}'})
                 continue
-            letters = sorted({k[-2] for k in here if k[-2]})
+            letters = _letters_in_order(subject, {k[-2] for k in here
+                                                  if k[-2]})
             if letters:
-                expect = [chr(ord('a') + i) for i in range(len(letters))]
+                expect = _letter_run(subject)[:len(letters)]
                 if letters != expect:
                     flags.append({'type': 'letter-gap',
                                   'where': f'{pre or ""} Q{q}',

@@ -64,7 +64,8 @@ MAX_OPTIONS = 16
 # corpus, exactly as the Polish reader's was.
 MIN_AGREEMENT = 0.34
 # An id prefix per subject, so two subjects on one reader never collide.
-PREFIX = {'portuguese': 'por', 'romanian': 'ron', 'dutch': 'nld'}
+PREFIX = {'portuguese': 'por', 'romanian': 'ron', 'dutch': 'nld',
+          'maltese': 'mlt', 'ukrainian': 'ukr'}
 
 
 def card_id(subject, year, level, key):
@@ -146,6 +147,25 @@ ESSAY_CLASSIC_EVIDENCE = {
         '300 woorden) over één van de volgende onderwerpen:" and the two '
         'topics beneath it — and then the document ends. There is no answer, '
         'no indicative content and no tariff beside any line of it.'),
+    'maltese': (
+        'the scheme answers this task with an INDICATIVE MENU and prices no '
+        'line of it. Under "Taqsima II (30 marka)" it reprints the SEC\'s own '
+        'prompt and then bullets the areas an answer might cover — "• '
+        'il-kreattività tatina sens li aħna kapaċi u ttina sens ta\' '
+        'sodisfazzjon • nagħmlu użu tajjeb mit-talenti u kapaċitajiet oħra li '
+        'għandna • nistgħu ntejbu ħajjitna/insibu soluzzjonijiet" — with no '
+        'tariff beside any bullet and no total to divide between them. Under '
+        '"Taqsima III (40 marka)" it reprints the two composition titles and '
+        'prints nothing at all under either. A card would ask a student to '
+        'reproduce a menu of themes rather than to answer anything.'),
+    'ukrainian': (
+        'the scheme answers this task with an INDICATIVE MENU and prices no '
+        'line of it. Under "ЧАСТИНА ІІ (30/100)" it reprints the SEC\'s own '
+        'prompt, heads its list "Наприклад:" — "for example" — and then '
+        'bullets seven paragraphs an answer might contain, with no tariff '
+        'beside any of them and no split of the thirty. Under "ЧАСТИНА ІІІ '
+        '(40/100)" it reprints the two essay titles and the document ends. '
+        'There is no answer to lift.'),
 }
 
 AUDIO_EVIDENCE = (

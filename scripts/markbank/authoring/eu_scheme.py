@@ -55,7 +55,8 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 from markbank_text import unligature                            # noqa: E402
 from eu_paper import (LANGS, cfg, next_letter,                   # noqa: E402
-                      LETTER_COLON)
+                      LETTER_COLON, _letter_pattern, fold_letter,
+                      is_next_letter)
 
 
 def schemes_dir(subject):
@@ -250,8 +251,22 @@ NOTE = re.compile(r'^(?:Note?[ăa]?\s*:|N\.?B\.?\b|Accept\b|Allow\b|Penali[sz]e\
 REF_ONLY = re.compile(r'^\((?:par[áa]grafos?|paragraphs?|parte|part|'
                       r'alinea|alínea|sections?)\b[^)]*\)$', re.I)
 # The classic scheme's own head, which prices a PART and nothing under it.
+# The Maltese scheme heads its first part "TWEĠIBIET – L-EWWEL TAQSIMA –
+# L-ISPORTS": the word "answers", an en dash, the part's name, and the passage's
+# title. Anchored at the part name alone, 2019's whole comprehension was never
+# opened and every one of its ten asks reported the scheme as pricing nothing.
 CLASSIC_PART = re.compile(
-    r'^(?:Parte|PARTEA|Deel)\s+(I{1,3}|a\s*I{1,2}I?\s*[-‐–]\s*a|[123])\b',
+    r'^(?:TWE[ĠG]IBIET\s*[–—‐-]\s*)?'
+    r'(?:(?:Parte|PARTEA|Deel|Taqsima|ЧАСТИНА)\s+'
+    r'([IІ]{1,3}|a\s*I{1,2}I?\s*[-‐–]\s*a|[123])\b'
+    r"|(L[‐\-–—]?Ewwel|It[‐\-–—]?Tieni|It[‐\-–—]?Tielet)\s+Taqsima\b"
+    # 2023 heads its scheme "SKEMA TA' TWEĠIBIET" and then goes straight into
+    # "1. Spjega fi kliemek…" with no part name anywhere above it. Read
+    # strictly, that sitting's first part never opened and all ten of its asks
+    # reported the scheme as pricing nothing at their address. The document's
+    # own title IS the head of its first part, and only the first: Taqsima II
+    # and Taqsima III are named where they start.
+    r"|(SKEMA)\s+TA)",
     re.I)
 
 
@@ -571,7 +586,8 @@ class EuScheme:
                 marker = ('roman', rm.group(1).lower(), rm.group(2))
             elif lm and unit == 'A' \
                     and (row.x <= column + LETTER_TOL
-                         or lm.group(1).lower() == next_letter(letter)):
+                         or lm.group(1).lower() == next_letter(
+                             letter, self.subject)):
                 marker = ('letter', lm.group(1).lower(), lm.group(2))
             # A marker that REPEATS the one before it is the SEC misnumbering,
             # not a new ask: 2022 Ordinary prints Question 1(f) as "(i) (ii)
@@ -634,8 +650,7 @@ class EuScheme:
         # The Dutch scheme letters its first question's parts with a COLON,
         # exactly as its paper does — "a: 'Het' in de zin:" — so the two
         # documents are read with the same marker form or they do not pair.
-        letter_pat = (LETTER_COLON if cfg(self.subject, 'letter') == 'colon'
-                      else LETTER)
+        letter_pat = _letter_pattern(self.subject)
 
         def close():
             nonlocal current
@@ -650,7 +665,8 @@ class EuScheme:
             pm = CLASSIC_PART.match(text)
             if pm:
                 close()
-                part = _classic_part_token(pm.group(1))
+                part = _classic_part_token(
+                    pm.group(1) or pm.group(2) or pm.group(3))
                 q, letter = None, None
                 continue
             if part is None:
@@ -675,17 +691,19 @@ class EuScheme:
                 rest = nm.group(2)
                 inner = letter_pat.match(rest)
                 if inner:
-                    letter, rest = inner.group(1).lower(), inner.group(2)
+                    letter = fold_letter(self.subject, inner.group(1).lower())
+                    rest = inner.group(2)
                 current = Ask(part, q, letter, None, '', row.page)
                 broke = False
                 if rest:
                     current.answers.append({'text': rest, 'marks': None})
                 continue
             if lm and q is not None \
-                    and lm.group(1).lower() == next_letter(letter):
+                    and is_next_letter(lm.group(1).lower(), letter,
+                                       self.subject):
                 close()
                 noted = False
-                letter = lm.group(1).lower()
+                letter = fold_letter(self.subject, lm.group(1).lower())
                 current = Ask(part, q, letter, None, '', row.page)
                 broke = False
                 if lm.group(2):
@@ -794,11 +812,21 @@ def _is_price_only(text):
 
 
 def _classic_part_token(raw):
-    """"I", "a II-a", "2" — the part number, as a Roman numeral token."""
-    raw = raw.strip().lower().replace(' ', '').replace('-', '')
+    """"I", "a II-a", "2", "L-Ewwel", "І" — the part number as a Roman token.
+
+    The Cyrillic І (U+0406) is folded to the Latin I here because the Ukrainian
+    corpus prints BOTH: the question paper heads its first part "ЧАСТИНА I"
+    with the Latin letter and the marking scheme heads the same part "ЧАСТИНА
+    І" with the Cyrillic one. They are the same glyph to a reader and two
+    characters to a comparison, so the two documents would never pair.
+    """
+    raw = (raw or '').strip().lower().replace(' ', '').replace('-', '')
+    raw = raw.replace('\u0456', 'i').replace('\u2010', '')
     table = {'i': 'I', 'ii': 'II', 'iii': 'III',
              'aiia': 'II', 'aiiia': 'III',
-             '1': 'I', '2': 'II', '3': 'III'}
+             '1': 'I', '2': 'II', '3': 'III',
+             'lewwel': 'I', 'ittieni': 'II', 'ittielet': 'III',
+             'skema': 'I'}
     return table.get(raw, raw.upper())
 
 

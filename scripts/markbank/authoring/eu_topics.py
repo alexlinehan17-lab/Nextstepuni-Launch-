@@ -63,6 +63,23 @@ TOPICS = {
         'classic_essay': 'dutch-1-0',
         'classic_essay2': 'dutch-1-1',
     },
+    # Maltese and Ukrainian publish the same three subtopics Modern Greek
+    # does — a vocabulary question, the comprehension, and the written
+    # production — and their papers set exactly those three parts. There is no
+    # separate id for the third part, so the commentary and the essay share
+    # one: they are the same task type and the SEC prices them the same way.
+    'maltese': {
+        'classic_vocab': 'maltese-0-0',
+        'classic_reading': 'maltese-0-1',
+        'classic_essay': 'maltese-1-0',
+        'classic_essay2': 'maltese-1-0',
+    },
+    'ukrainian': {
+        'classic_vocab': 'ukrainian-0-0',
+        'classic_reading': 'ukrainian-0-1',
+        'classic_essay': 'ukrainian-1-0',
+        'classic_essay2': 'ukrainian-1-0',
+    },
 }
 
 
@@ -81,7 +98,8 @@ def topic_for(subject, era, section, letter=None):
 
 
 LANGUAGE_NAME = {'portuguese': 'Portuguese', 'romanian': 'Romanian',
-                 'dutch': 'Dutch'}
+                 'dutch': 'Dutch', 'maltese': 'Maltese',
+                 'ukrainian': 'Ukrainian'}
 # A subject whose paper requires EVERY answer in the target language, in
 # its own printed rubric — "Toate răspunsurile trebuie scrise în limba
 # română", "Alle antwoorden moeten in het Nederlands gegeven worden". The
@@ -91,6 +109,9 @@ LANGUAGE_NAME = {'portuguese': 'Portuguese', 'romanian': 'Romanian',
 ONE_LANGUAGE = {
     'romanian': 'Toate răspunsurile trebuie scrise în limba română.',
     'dutch': 'Alle antwoorden moeten in het Nederlands gegeven worden.',
+    'maltese': 'It-tweġibiet kollha għandhom jinkitbu bil-Malti.',
+    'ukrainian': 'Уважно прочитайте текст і дайте відповіді українською '
+                 'мовою на запитання з усіх трьох частин.',
 }
 ENGLISH_OR_IRISH = 'English or Irish'
 
@@ -101,6 +122,8 @@ ENGLISH_OR_IRISH = 'English or Irish'
 TARGET_WORDS = {
     'romanian': set(),
     'dutch': set(),
+    'maltese': set(),
+    'ukrainian': set(),
     'portuguese': {
         'que', 'qual', 'quais', 'quem', 'onde', 'quando', 'porque', 'por',
         'razão', 'razões', 'como', 'descreva', 'indique', 'explique', 'dê',

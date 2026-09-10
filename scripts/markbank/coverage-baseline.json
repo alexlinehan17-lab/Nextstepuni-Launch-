@@ -419,6 +419,21 @@
     },
     "refsHash": "15602894c57e4cf0"
   },
+  "maltese": {
+    "cards": 48,
+    "contentHash": "9a2ebe54e70a583f",
+    "coveragePct": 100.0,
+    "covered": 48,
+    "excluded": 28,
+    "leaves": 76,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 6,
+      "hash": "33e3be70d6c6fac1"
+    },
+    "refsHash": "85463f85c801491d"
+  },
   "mandarin-chinese": {
     "cards": 201,
     "contentHash": "82e2ed4c09522481",
@@ -583,5 +598,20 @@
       "hash": "4ca9c323b2270a38"
     },
     "refsHash": "54274e7e363d8dc6"
+  },
+  "ukrainian": {
+    "cards": 20,
+    "contentHash": "1a7cf959461a3660",
+    "coveragePct": 100.0,
+    "covered": 20,
+    "excluded": 6,
+    "leaves": 26,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 2,
+      "hash": "8cb689ef44820e29"
+    },
+    "refsHash": "ced75cb491569d9f"
   }
 }

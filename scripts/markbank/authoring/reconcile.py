@@ -88,8 +88,13 @@ HEAD = re.compile(
 # it did, the parser stopped at the digit and the card claimed its whole
 # LETTER, which reported three printed asks covered by three cards that each
 # said they held all three.
+# A part letter is not always a LATIN letter: Maltese letters the five
+# expressions of every Question 1 "a) b) ċ) d) e)", in the Maltese alphabet,
+# and a citation names the marker the candidate saw. The mirror of this class
+# is TAIL in test/markBankCoverage.test.ts, and the two have to agree.
 PART_TOKEN = re.compile(
-    r'\s*(?:\(\s*([A-Za-z]{1,4}|\d{1,2})\s*\)|([\u2013\u2014-])|(,|\band\b))')
+    r'\s*(?:\(\s*([A-Za-z\u010b\u010a\u0121\u0120\u0127\u0126'
+    r'\u017c\u017b]{1,4}|\d{1,2})\s*\)|([\u2013\u2014-])|(,|\band\b))')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 LETTERS = 'abcdefghijkl'
