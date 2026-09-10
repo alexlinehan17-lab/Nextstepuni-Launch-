@@ -94,6 +94,12 @@ SUBJECTS = {
     # language to be MEASURED at stage 0 — a full paper with the same
     # architecture, sat by a much smaller cohort.
     'italian': 'italian',
+    # Added 10 September 2026. Japanese is the modern language furthest from
+    # the four already carded: it is set in a NON-LATIN script across three
+    # writing systems, so before anything else the corpus has to answer whether
+    # kana and kanji survive the PDF text layer at all. Measured at stage 0
+    # before it is chosen.
+    'japanese': 'japanese',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
 }

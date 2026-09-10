@@ -168,6 +168,28 @@ SUBJECTS = {
     # inside a section, under the two checks that make order safe (see
     # census_it).
     'italian': {'mode': 'sections', 'walker': 'italian'},
+    # Japanese sits the same two booklets as French — the written paper (SEC
+    # component 000) and a Listening Comprehension Test (A00) — and heads the
+    # written one in Japanese: 問題1 … 問題5, the first three reading
+    # comprehension and the last two written production. Inside a question the
+    # SEC heads its parts "Cuid A / Part A" or with a bare letter at the
+    # margin ("B: KANJI", "C: GRAMADACH / GRAMMAR"), and each part numbers its
+    # own items from 1 — or prints bare romans with no number above them.
+    #
+    # So the section token carries the question AND the part: "2B" is 問題2's
+    # kanji section, "3D" its grammar section, "4" the composition, which heads
+    # no parts, and "LC" the listening booklet's Part C. A citation reads
+    # "2024 HL Section 2B Q1(i)".
+    #
+    # Its own walker for two reasons no other language has. The pages carry a
+    # SECOND LAYER OF TYPE — furigana, a kana reading set small above the kanji
+    # it glosses — which the generic reader interleaves into the line below it
+    # and destroys (ja_text.py folds it back in brackets). And the scheme's own
+    # part letters disagree with the paper's: 2024 Ordinary heads question 2's
+    # four parts "A.", "B.", "Part B." and "Part C." where the paper heads them
+    # "A.", "B.", "C. KANJI" and "D.", so the two are paired in printed ORDER
+    # under the checks in ja_flags — Law 4.
+    'japanese': {'mode': 'sections', 'walker': 'ja'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -738,6 +760,87 @@ def census_lang(subject, year, level):
 
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S, claimed
+
+
+def census_ja(subject, year, level):
+    """Japanese: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER, and here it can be read from the paper
+    alone: every ask the SEC sets is opened by a printed marker under a printed
+    part head, and ja_paper.py walks them. The scheme is read beside it — not
+    to say which asks exist, but to price them and to be CHECKED against them,
+    which is what ja_flags does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from ja_paper import JaPaper                                # noqa: E402
+    from ja_scheme import JaScheme                              # noqa: E402
+
+    P = JaPaper(year, level, subject)
+    S = JaScheme(year, level, subject)
+    texts = {}
+    for ask in P.all_asks():
+        texts[ask.key] = ask.text
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def ja_flags(P, S):
+    """What the paper and the scheme disagree about. See census_ja.
+
+    Three checks, and they are the only reason pairing the two documents by
+    printed ORDER is safe (Law 4):
+
+      * each component sets the same NUMBER of parts in both documents;
+      * paired part for paired part, both hold the same number of asks;
+      * every question's scheme tariffs add up to the total the PAPER prints
+        on its own 問題 head.
+
+    A part that fails any of them is flagged, never quietly re-keyed — the
+    asks under it stay open in the ledger until the disagreement is settled.
+    """
+    flags = []
+    paper = collections.OrderedDict()
+    for ask in P.asks():
+        paper.setdefault(ask.section, []).append(ask)
+    aural = collections.OrderedDict()
+    for ask in P.aural_asks():
+        aural.setdefault(ask.section, []).append(ask)
+    scheme = S.by_part()
+    groups = [
+        ('reading', [k for k in paper if k[0] in '123'],
+         [k for k in scheme if k[0] == 'R']),
+        ('written production', [k for k in paper if k[0] in '45'],
+         [k for k in scheme if k[0] == 'W']),
+        ('listening', list(aural), [k for k in scheme if k[0] == 'L']),
+    ]
+    for name, pkeys, skeys in groups:
+        if len(pkeys) != len(skeys):
+            flags.append({
+                'type': 'scheme-parts',
+                'where': name,
+                'detail': f'the paper heads {len(pkeys)} part(s) '
+                          f'({", ".join(map(str, pkeys))}) and the scheme '
+                          f'{len(skeys)}; they cannot be paired in order'})
+            continue
+        for pk, sk in zip(pkeys, skeys):
+            pn = len(paper.get(pk) or aural.get(pk) or [])
+            sn = len(scheme[sk])
+            if pn != sn:
+                flags.append({
+                    'type': 'scheme-count',
+                    'where': f'Section {pk}',
+                    'detail': f'the paper prints {pn} ask(s) here and the '
+                              f'scheme prices {sn}'})
+    for q, printed in sorted(P.question_marks.items()):
+        priced = sum(lf.marks or 0 for lf in S.leaves
+                     if lf.component in ('R', 'W') and lf.q == q)
+        if priced and priced != printed:
+            flags.append({
+                'type': 'tariff-checksum',
+                'where': f'Q{q}',
+                'detail': f'the scheme prices this question {priced} against '
+                          f'the {printed} the paper prints on its own head'})
+    return flags
 
 
 def census_de(subject, year, level):
@@ -1505,6 +1608,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'italian':
                     parts, texts, files, P_, S_ = census_it(
                         subject, year, level)
+                elif cfg.get('walker') == 'ja':
+                    parts, texts, files, P_, S_ = census_ja(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -1537,6 +1643,9 @@ def census_subject(subject):
                 marks = {(None, 0): es_cover_marks(files)}
             elif cfg.get('walker') == 'italian':
                 flags += it_flags(P_, S_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'ja':
+                flags += ja_flags(P_, S_)
                 marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
