@@ -194,6 +194,21 @@
   },
   "refsHash": "02b0f7ad91f8e59d"
  },
+ "lcvp": {
+  "cards": 314,
+  "contentHash": "fefb46868385d474",
+  "coveragePct": 91.2,
+  "covered": 320,
+  "excluded": 13,
+  "leaves": 365,
+  "open": 32,
+  "orphans": 0,
+  "papers": {
+   "count": 8,
+   "hash": "1c8389e1e899dda9"
+  },
+  "refsHash": "478f16348f57b546"
+ },
  "maths": {
   "cards": 833,
   "contentHash": "b03ee0576c972395",

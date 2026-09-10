@@ -26,7 +26,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHORED = os.path.join(HERE, '..', 'authored')
 
 SUBJECTS = ['maths', 'physics', 'biology', 'chemistry', 'economics', 'business',
-            'home-economics', 'agricultural-science', 'construction-studies']
+            'home-economics', 'agricultural-science', 'construction-studies',
+            'lcvp']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an
 # Agricultural Science paper about joining a suckler scheme is not a leak),
@@ -65,6 +66,17 @@ FIG_REF = re.compile(
     rf'|\b{PICTORIAL} {LOCATIVE}\b'
     rf'|\b(?:the|this) {DESCRIBABLE} {LOCATIVE}\b'
     r'|\bin the extract\b|\baccompanying\b|\bgiven diagram\b', re.I)
+# A stimulus the PAPER never prints, so no crop could ever satisfy the
+# reference. LCVP's Section A is answered from a DVD played in the examination
+# hall: the paper prints the theme in words — "You will be shown a DVD about
+# Voluntary Work in a Charity Shop as the theme." — and no artwork at all for
+# the section. Flagging those seventy cards as ghost figures asks for a crop
+# that cannot exist, and reviewing each one would record the same sentence
+# seventy times. Named per subject, like SCHEME_LEAK_BY_SUBJECT above, rather
+# than weakening the rule for every deck.
+UNPRINTABLE_STIMULUS = {
+    'lcvp': re.compile(r'\byou will be shown a DVD\b', re.I),
+}
 SELF_WORK = re.compile(
     r'\b(?:on|to|in) your (?:drawing|sketch|graph|diagram|answer)\b|'
     r'\byour answers? (?:to|from|in)\b|\bshown? (?:all )?(?:your|the) work'
@@ -138,7 +150,12 @@ def lint(subject):
     for c in cards:
         stem = c.get('stem') or ''
         qtext = c.get('questionText') or ''
-        has_fig = bool(c.get('figureKey') or c.get('questionFigureKey'))
+        # A bound OFFICIAL SOURCE page is the printed matter, shipped: the
+        # card opens the examination page the reference points at. Counting
+        # only crops flagged every LCVP case-study card, each of which already
+        # carries the case study's own pages.
+        has_fig = bool(c.get('figureKey') or c.get('questionFigureKey')
+                       or c.get('sourceMaterial'))
         leak = SCHEME_LEAK_BY_SUBJECT.get(subject, SCHEME_LEAK)
         for field, text in (('stem', stem), ('questionText', qtext)):
             if leak.search(text):
@@ -148,8 +165,10 @@ def lint(subject):
         m = FIG_REF.search(joined)
         table_only = bool(m) and re.search(
             r'(?:table|chart|graph)\b', m.group(0), re.I) and INLINE_TABLE.search(joined)
+        unprintable = UNPRINTABLE_STIMULUS.get(subject)
         if (not has_fig and m and not SELF_WORK.search(joined)
                 and not NO_DEPENDENCY.search(joined) and not table_only
+                and not (unprintable and unprintable.search(joined))
                 and c['id'] not in REVIEWED):
             flags.append((subject, c['id'], 'ghost-figure', joined.strip()[:90]))
         if label_junk(stem):

@@ -43,6 +43,7 @@ import { CARDS as COMPUTER_SCIENCE_HIGHER } from '../components/MarkBank/cards/c
 import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 const decks = [
@@ -414,6 +415,11 @@ const decks = [
    * so a later regeneration cannot silently omit or replace any of its cards. */
   ['engineering:higher', ENGINEERING_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
   ['engineering:ordinary', ENGINEERING_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
+  /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
+   * replaced — it is a new subject and this is its first baseline. It ships
+   * as ONE deck because the paper is common level: there is no Higher or
+   * Ordinary sibling to pair it with, which is why it appears here once. */
+  ['lcvp:common', LCVP_COMMON, 314, '2f0310a433d9736ccf8a4a7a31a816de16abeaac995c881848fc3c2f827d82d2'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -428,7 +434,8 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+    // 10,495 before LCVP's 314.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_809);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -440,7 +447,8 @@ describe('Mark Bank card preservation', () => {
     }
     const preNewSubjectCards = decks
       .filter(([name]) => !name.startsWith('computer-science:')
-        && !name.startsWith('engineering:'))
+        && !name.startsWith('engineering:')
+        && !name.startsWith('lcvp:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

@@ -78,6 +78,15 @@ SUBJECTS = {
     # historical map/aerial tasks held until their companion sources exist.
     'geography': {'mode': 'geography'},
     'business': {'mode': 'sections'},
+    # LCVP's Link Modules paper is COMMON level — one paper, sat by everyone,
+    # filed under the level token 'cl'. Three sections that each restart at
+    # Q.1, so the keys carry the section; but its own walker rather than the
+    # Business/Home-Ec one, because two things here are LCVP's alone: every
+    # head is printed "Q.1" (the shared QHEAD reads "1." and "Question 1"),
+    # and Section C reprints EVERY question as a contents listing before
+    # setting them, which the forward-only walker would have read as the
+    # section itself and then rejected the real questions as going backwards.
+    'lcvp': {'mode': 'sections', 'walker': 'lcvp'},
     'home-economics': {'mode': 'sections'},
     # Two booklets: 038 carries Section A (short answer, attempt any nine) and
     # Section B (long questions, attempt any two); 040 carries Section C, one
@@ -109,7 +118,9 @@ def sittings(subject):
     root = PP.papers_dir(subject)
     found = collections.defaultdict(list)
     for f in sorted(os.listdir(root)):
-        m = re.fullmatch(r'(\d{4})-(hl|ol)(?:-(\d+))?-paper\.pdf', f)
+        # 'cl' is the common-level token: LCVP is examined at one level, and
+        # the SEC's own file id says so with the level letter C.
+        m = re.fullmatch(r'(\d{4})-(hl|ol|cl)(?:-(\d+))?-paper\.pdf', f)
         if m:
             found[(int(m.group(1)), m.group(2))].append(m.group(3))
     return [(y, l, comps) for (y, l), comps in sorted(found.items())]
@@ -514,6 +525,150 @@ def census_sections(subject, year, level):
     return set(parts), texts, P.files
 
 
+# ---------------------------------------------------------------- LCVP ----
+# LCVP prints every question head as "Q.1", never "1." or "Question 1", and
+# glues it onto whatever precedes it: "PART 2 Q.4 ...", "Answer all three
+# questions. Q.1 ...", and two questions in one block ("... (2 marks) Q.3 ...").
+LCVP_HEAD = re.compile(r'Q\.\s*(\d{1,2})\b')
+LCVP_SPLIT = re.compile(r'\s*(?=Q\.\s*\d{1,2}\b)')
+# Section C reprints every question as a contents listing — "Q.4 Pages 27 to
+# 29 Ireland has embraced diversity ... (a) ... (b) ..." — before setting the
+# questions themselves. Read as questions those rows would walk the counter to
+# Q.7 and every real question after them would be rejected as going backwards,
+# which is exactly how Business lost four sittings' Section 1. The listing rows
+# are the ones that carry their page range, and no real head does.
+LCVP_INDEX = re.compile(r'\bPages\s+\d+\s+to\s+\d+', re.I)
+# A section header the SEC sets over the section itself always prices it
+# ("Section A Audio Visual 30 marks"). The cover page's examiner mark table
+# and the instructions page name the same sections WITHOUT their marks, and
+# the cover table also prints bare "Q.1".."Q.6" cells, which walked the
+# counter to 6 before the paper began and threw all of Section A away.
+LCVP_SECTION = re.compile(r'^Section\s+([A-C])\b(.{0,200})', re.S)
+LCVP_MARKS = re.compile(r'\(?\s*(\d{1,3})\s*marks?\b\s*\)?', re.I)
+LCVP_FURNITURE = re.compile(
+    r'^(?:Leaving Certificate Vocational Programme'
+    r'|Examiner only'
+    r'|page running'
+    r'|Do not write on this page'
+    r'|You may use this page for extra work'
+    r'|Make sure to label extra work'
+    r'|Copyright notice'
+    r'|Answer all (?:eight|three) questions'
+    r'|Answer your chosen questions'
+    r'|Answer any four questions'
+    r'|This section has (?:six|seven) questions'
+    r'|To help you decide'
+    # "PART 2" / "Part 3" head the three showings of the Section A DVD; they
+    # are not asks and, left in, they land in the previous question's text.
+    r'|(?:PART|Part)\s+\d\s*$)', re.I)
+
+
+def census_lcvp(subject, year, level):
+    """LCVP's own section walker. See LCVP_HEAD/LCVP_INDEX above for why."""
+    root = PP.papers_dir(subject)
+    files = sorted(os.path.join(root, f) for f in os.listdir(root)
+                   if re.fullmatch(rf'{year}-{level}-paper\.pdf', f))
+    if not files:
+        raise FileNotFoundError(f'no {year} {level} paper for {subject}')
+
+    chunks = [c.strip() for path in files for block in PP._blocks(path)
+              for c in LCVP_SPLIT.split(block) if c.strip()]
+
+    parts, stems, marks = {}, {}, {}
+    section = q = letter = roman = None
+    started = False          # nothing counts before the first priced section
+    index = False            # inside Section C's contents listing
+    if True:
+        if True:
+            for position, chunk in enumerate(chunks):
+                sh = LCVP_SECTION.match(chunk)
+                if sh and 'Section' not in sh.group(2) \
+                        and LCVP_MARKS.search(sh.group(2)):
+                    # 2021 and 2022 head their Section B/C pages "Section B –
+                    # Case Study and Section C – General Questions 100 marks",
+                    # a cover line for both; the second "Section" rejects it.
+                    if section is None or sh.group(1) >= section:
+                        section, q, letter, roman = sh.group(1), None, None, None
+                        started, index = True, False
+                    continue
+                if not started:
+                    continue
+                head = LCVP_HEAD.match(chunk)
+                if head:
+                    index = bool(LCVP_INDEX.search(chunk))
+                    if index:
+                        continue
+                    found = int(head.group(1))
+                    if q is not None and found <= q:
+                        continue          # a repeat, not a new question
+                    q, letter, roman = found, None, None
+                    rest = chunk[head.end():].strip()
+                    # The question's own tariff, wherever the SEC set it: after
+                    # the ask in Sections A and B ("Q.1 Name the manager of the
+                    # charity shop. (1 mark)") and before it in Section C
+                    # ("Q.1 25 marks Marketing is an essential part of
+                    # business."). Leftmost wins, so a part's own marks further
+                    # down the same block never displace the question's.
+                    m = LCVP_MARKS.search(rest)
+                    if m:
+                        marks[(section, q)] = int(m.group(1))
+                        if m.start() == 0:
+                            rest = rest[m.end():].strip()
+                    chunk = rest
+                    if not chunk:
+                        continue
+                if index or q is None:
+                    continue
+                for piece in PP.INLINE_MARKER.split(chunk):
+                    piece = piece.strip()
+                    if not piece or LCVP_FURNITURE.match(piece):
+                        continue
+                    # Sections A and B price the QUESTION and nothing under
+                    # it, so a tariff found anywhere inside one is that
+                    # question's — 2025 sets Q.6's "(6 marks)" on the line
+                    # after its (ii). Section C prices every part, so a token
+                    # found below its head would be a part's and is not taken.
+                    if section in ('A', 'B') and (section, q) not in marks:
+                        m = LCVP_MARKS.search(piece)
+                        if m:
+                            marks[(section, q)] = int(m.group(1))
+                    fl, fr, rest = PP._leading(piece)
+                    if fl or fr:
+                        if fl:
+                            letter, roman = fl, fr
+                        else:
+                            roman = fr
+                        key = (section, q, letter, roman)
+                        parts.setdefault(key, [])
+                        if rest:
+                            parts[key].append(rest)
+                        continue
+                    # 2023 sets the case study's title, "Ballyfert", ABOVE
+                    # its own "Section B Case Study" header, so top-to-bottom
+                    # order hands it to Section A's last question and it
+                    # shipped inside that leaf's text. A short, unpunctuated
+                    # line immediately before a section header belongs to the
+                    # section it names, not to the question it follows.
+                    if len(piece) < 40 and not re.search(r'[.?!:]$', piece) \
+                            and position + 1 < len(chunks) \
+                            and LCVP_SECTION.match(chunks[position + 1]):
+                        continue
+                    stems.setdefault((section, q, letter), []).append(piece)
+
+    parts = {k: v for k, v in parts.items() if any(x.strip() for x in v)}
+    for (section_, q_, letter_), lines in list(stems.items()):
+        if letter_ is not None or not lines:
+            continue
+        if any(k[0] == section_ and k[1] == q_ for k in parts):
+            continue
+        parts[(section_, q_, None, None)] = list(lines)
+    texts = {k: PP.unligature(' '.join(' '.join(v).split()))
+             for k, v in parts.items()}
+    stems = {k: PP.unligature(' '.join(' '.join(v).split()))
+             for k, v in stems.items()}
+    return set(parts), texts, files, marks, stems
+
+
 def census_subject(subject):
     cfg = SUBJECTS.get(subject, {'mode': 'merged'})
     if cfg['mode'] == 'geography':
@@ -616,8 +771,12 @@ def census_subject(subject):
         else:
             units = [(None, None)]
         for label, comp in units:
+            marks = None
             try:
-                if cfg['mode'] == 'sections':
+                if cfg.get('walker') == 'lcvp':
+                    parts, texts, files, marks, _stems = census_lcvp(
+                        subject, year, level)
+                elif cfg['mode'] == 'sections':
                     parts, texts, files = census_sections(subject, year, level)
                 else:
                     parts, texts, files = census_merged(subject, year, level, comp)
@@ -627,8 +786,9 @@ def census_subject(subject):
                 continue
             leaves = leaves_of(parts)
             flags = continuity_flags(parts, texts)
-            marks = marks_by_question(files if cfg['mode'] != 'papers' else
-                                      [f for f in files], subject)
+            if marks is None:
+                marks = marks_by_question(files if cfg['mode'] != 'papers' else
+                                          [f for f in files], subject)
             papers.append({
                 'year': year, 'level': level, 'paper': label,
                 'leafCount': len(leaves),

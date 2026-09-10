@@ -47,7 +47,9 @@ DECKS = os.path.join(ROOT, 'components', 'MarkBank', 'cards')
 EXCLUSIONS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'exclusions')
 
 HEAD = re.compile(
-    r'^(?P<year>\d{4})\s+(?P<level>HL|OL)'
+    # CL is the COMMON level: LCVP's Link Modules paper is sat at one level by
+    # everyone and the SEC prints "Common Level" on its front cover.
+    r'^(?P<year>\d{4})\s+(?P<level>HL|OL|CL)'
     r'(?:\s+Paper\s+(?P<paper>\d))?'
     r'(?:\s+Section\s+(?P<section>[A-Za-z0-9]+))?'
     # Home Economics files Section C under an elective token ("Section C E1
@@ -85,7 +87,7 @@ def shipped_cards(subject):
         return [(card['id'], card['questionRef']) for card in cards]
 
     out = []
-    for level in ('higher', 'ordinary'):
+    for level in ('higher', 'ordinary', 'common'):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if not os.path.exists(path):
             continue
@@ -526,7 +528,7 @@ def content_hash(subject):
     exactly that edit passing every mechanism."""
     import hashlib
     h = hashlib.sha256()
-    for level in ('higher', 'ordinary'):
+    for level in ('higher', 'ordinary', 'common'):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())

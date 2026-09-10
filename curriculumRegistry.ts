@@ -254,6 +254,41 @@ export interface CurriculumRedevelopmentTransition {
  * into, and a subject present in one and absent from the other fails the
  * registry check the moment its deck can be loaded.
  */
+/**
+ * The LCVP Link Modules programme statement's two modules and their five units
+ * each, mirroring LCVP_STRANDS in components/MarkBank/deck.ts. Both are
+ * needed, for the reason the Construction Studies pair gives below: deck.ts is
+ * what the tool displays, this is what a card's topicId must resolve into.
+ * The ids are the canonical curriculum's own, so the two cannot drift apart in
+ * naming — only in presence, which the registry check catches.
+ */
+const LCVP_LINK_MODULES_GROUPS = [
+  {
+    id: 'lcvp-link-modules-0',
+    code: '1',
+    title: 'Link Module 1: Preparation for the World of Work',
+    topics: [
+      { id: 'lcvp-link-modules-0-0', code: '1.1', title: 'Introduction to Working Life' },
+      { id: 'lcvp-link-modules-0-1', code: '1.2', title: 'Job Seeking Skills' },
+      { id: 'lcvp-link-modules-0-2', code: '1.3', title: 'Career Investigation (core portfolio item)' },
+      { id: 'lcvp-link-modules-0-3', code: '1.4', title: 'Work Placement' },
+      { id: 'lcvp-link-modules-0-4', code: '1.5', title: 'Curriculum Vitae & Summary Report (core portfolio items)' },
+    ],
+  },
+  {
+    id: 'lcvp-link-modules-1',
+    code: '2',
+    title: 'Link Module 2: Enterprise Education',
+    topics: [
+      { id: 'lcvp-link-modules-1-0', code: '2.1', title: 'Enterprise Skills' },
+      { id: 'lcvp-link-modules-1-1', code: '2.2', title: 'Local Business Enterprises' },
+      { id: 'lcvp-link-modules-1-2', code: '2.3', title: 'Local Voluntary Organisations' },
+      { id: 'lcvp-link-modules-1-3', code: '2.4', title: 'An Enterprise Activity (Enterprise Report / Action Plan)' },
+      { id: 'lcvp-link-modules-1-4', code: '2.5', title: 'Work Experience Diary, My Own Place & Recorded Interview (optional portfolio items)' },
+    ],
+  },
+];
+
 const CONSTRUCTION_STUDIES_GROUPS = [
   {
     id: 'cs1',
@@ -2041,6 +2076,7 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       id: 'lcvp-link-modules:outgoing', title: 'LCVP Link Modules programme statement — examination to June 2027',
       lastExamYear: 2027, source: OFFICIAL.lcvp,
       note: 'Life, Community and Work is introduced in September 2026 and needs a separate canonical record.',
+      groups: LCVP_LINK_MODULES_GROUPS,
     },
   };
   const outgoing = verifiedOutgoing[spec.subjectId];

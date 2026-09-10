@@ -258,7 +258,15 @@ interface CardBase {
    *  map keys in `updateDoc` paths. Enforced by `isValidCardId`. */
   id: string;
   subjectId: string;
-  level: 'higher' | 'ordinary';
+  /**
+   * 'common' is not a third grade of difficulty. A handful of Leaving
+   * Certificate subjects are examined at ONE level — LCVP's Link Modules is
+   * one, and the SEC says so on the paper's own cover and in its file id
+   * (LC462CLP000EV.pdf, level letter C). Filing such a deck under 'higher'
+   * would make every card cite a Higher Level paper that does not exist, and
+   * would hide it from a student whose profile says anything else.
+   */
+  level: 'higher' | 'ordinary' | 'common';
   /** PART-level curriculum id. A card may never inherit its parent question's
    *  tag — the alternative parts of one Section C question routinely span
    *  different topics, and inheriting would file bread mould under the
