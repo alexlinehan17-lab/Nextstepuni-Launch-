@@ -90,6 +90,10 @@ SUBJECTS = {
     'french': 'french',
     'german': 'german',
     'spanish': 'spanish',
+    # Added 10 September 2026. French shipped; Italian is the next modern
+    # language to be MEASURED at stage 0 — a full paper with the same
+    # architecture, sat by a much smaller cohort.
+    'italian': 'italian',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
 }
@@ -112,7 +116,22 @@ FIELDS = {
     'history': [('history', 'lm'), ('history-early-modern', 'em')],
 }
 
-FILEID = re.compile(r'^LC(\d{3})([ACG])LP(\d{3})([EI])V\.pdf$', re.I)
+# The component token is not always three DIGITS. A modern language is sat as
+# two booklets on the same afternoon and the SEC names the second one 'A00' —
+# the Aural/Listening Comprehension paper, printed and sat separately from the
+# written paper '000'. Requiring \d{3} matched only the written booklet, so
+# Italian fetched five papers where the corpus holds ten and half the exam
+# would have had no paper to census against.
+FILEID = re.compile(r'^LC(\d{3})([ACG])LP([0-9A-Z]{3})([EIB])V\.pdf$', re.I)
+# The language letter, and which versions are worth fetching. 'E' is the
+# English version and 'I' the Irish one; 'B' is a single BILINGUAL booklet
+# carrying both, which is how the SEC publishes the modern-language papers —
+# French, German and Italian print every rubric twice, Irish in one column and
+# English in the other, and there is no English-only edition to fetch. Reading
+# 'E' alone matched none of them and reported "0 file(s) fetched" with no
+# error, which is the silence Law 1 exists to prevent. Italian's four 2021
+# papers are LC013ALP000BV, LC013ALPA00BV, LC013GLP000BV and LC013GLPA00BV.
+WANTED_LANGS = {'E', 'B'}
 # 'C' is not a third grade of difficulty: it is the SEC's marker for a subject
 # examined at ONE level. Without it here every LCVP file failed the match and
 # the fetch reported "0 file(s) fetched" with no error — silence, which is the
@@ -172,7 +191,7 @@ def _fetch_one(subject, slug, field, kinds, primary):
             by_level = {}
             for name in names:
                 m = FILEID.match(name.rsplit('/', 1)[-1])
-                if not m or m.group(4).upper() != 'E':
+                if not m or m.group(4).upper() not in WANTED_LANGS:
                     continue                       # skip the Irish-language versions
                 by_level.setdefault(LEVEL[m.group(2).upper()], []).append(
                     (m.group(3), name))

@@ -187,8 +187,14 @@ def _column_x(rows, width):
     return min(strong) - 1 if strong else None
 
 
-def _rows(path, page_from=0, page_to=None):
+def _rows(path, page_from=0, page_to=None, split_at=None):
     """[(page, [(x0, side, text), …])] — every row, cut into its columns.
+
+    `split_at` overrides the bound this finds for itself, for a page whose
+    right-hand column opens with a marker shape _column_x does not know. It is
+    passed by it_paper.py, whose Ordinary matching task rules an answer box in
+    front of every English marker; nothing in French passes it, and without it
+    the page reads as one column.
 
     The SIDE is decided by the page's own column bound rather than by the
     middle of the sheet. 2024 Ordinary sets its English column at x=296 on a
@@ -215,7 +221,7 @@ def _rows(path, page_from=0, page_to=None):
                     rows.append({'mid': mid, 'w': [(x0, x1, word)]})
             ordered = [sorted(row['w']) for row in sorted(rows, key=lambda r: r['mid'])]
             page = [(pno, _gap_groups(ws)) for ws in ordered]
-            split = _column_x(page, width)
+            split = split_at if split_at is not None else _column_x(page, width)
             if split is None:
                 out.extend((pn, [(x, 'L', t) for x, t in gs]) for pn, gs in page)
                 continue

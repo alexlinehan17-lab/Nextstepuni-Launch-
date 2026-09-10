@@ -58,6 +58,8 @@ const lcvpCurriculum = CURRICULUM.find(subject => subject.id === 'lcvp-link-modu
 if (!lcvpCurriculum) throw new Error('Canonical LCVP Link Modules curriculum is missing');
 const frenchCurriculum = CURRICULUM.find(subject => subject.id === 'french');
 if (!frenchCurriculum) throw new Error('Canonical French curriculum is missing');
+const italianCurriculum = CURRICULUM.find(subject => subject.id === 'italian');
+if (!italianCurriculum) throw new Error('Canonical Italian curriculum is missing');
 const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applied-mathematics');
 if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
 
@@ -980,6 +982,24 @@ export const FRENCH_STRANDS: StrandRef[] = frenchCurriculum.strands.map((strand,
     title: topic.name,
   })),
 }));
+/**
+ * Italian's own published taxonomy, read from the canonical curriculum rather
+ * than restated here. Its Reading Comprehension strand names the five task
+ * types this paper actually sets — a journalistic passage and an unseen
+ * literary one at Higher, a prescribed text, short passages and publicity
+ * pieces at Ordinary — which is exactly how the paper divides its sections,
+ * so a card is filed by the section it was printed in.
+ */
+export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 export const TECHNOLOGY_STRANDS: StrandRef[] = [
   {
     id: 'tech-core', label: 'Core', title: 'Core',
@@ -1110,6 +1130,7 @@ export const SUBJECTS = [
   { id: 'history', title: 'History', strands: HISTORY_STRANDS, spec: 'Leaving Certificate History syllabus' },
   { id: 'french', title: 'French', strands: FRENCH_STRANDS, spec: 'Leaving Certificate French syllabus' },
   { id: 'applied-maths', title: 'Applied Maths', strands: APPLIED_MATHS_STRANDS, spec: 'specification examined from 2023' },
+  { id: 'italian', title: 'Italian', strands: ITALIAN_STRANDS, spec: 'Leaving Certificate Italian syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1392,6 +1413,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   french: {
     higher: () => import('./cards/french/higher'),
     ordinary: () => import('./cards/french/ordinary'),
+  },
+  italian: {
+    higher: () => import('./cards/italian/higher'),
+    ordinary: () => import('./cards/italian/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),

@@ -239,6 +239,21 @@
     },
     "refsHash": "02b0f7ad91f8e59d"
   },
+  "italian": {
+    "cards": 350,
+    "contentHash": "08a7a5134bfce00f",
+    "coveragePct": 100.0,
+    "covered": 380,
+    "excluded": 325,
+    "leaves": 705,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "b817ee80bd176c86"
+    },
+    "refsHash": "7bc73bbdfb897f41"
+  },
   "lcvp": {
     "cards": 314,
     "contentHash": "fefb46868385d474",

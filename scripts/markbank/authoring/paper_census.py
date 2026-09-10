@@ -134,6 +134,18 @@ SUBJECTS = {
     # Section C. Its own walker, because both booklets are printed
     # bilingually in columns and the generic reader has no notion of a column.
     'french': {'mode': 'sections', 'walker': 'lang'},
+    # Italian sits the same two booklets as French and the same three sections
+    # in the written one, but nothing else about it is French: its Higher paper
+    # is set in ITALIAN rather than bilingually, its scheme never reprints the
+    # question it is answering, and its Section B is a printed choice of three
+    # routes at Higher and five publicity pieces at Ordinary. So it has its own
+    # walker, keyed on the section token the paper itself prints — "B2A" is
+    # the first of the two prescribed novels, "LB3" the listening test's third
+    # dialogue — and its own join: with no reprinted question there is nothing
+    # to score wording against, so the scheme is paired to the paper by ORDER
+    # inside a section, under the two checks that make order safe (see
+    # census_it).
+    'italian': {'mode': 'sections', 'walker': 'italian'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -706,6 +718,95 @@ def census_lang(subject, year, level):
     return set(texts), texts, files, P, S, claimed
 
 
+def census_it(subject, year, level):
+    """Italian: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER, and this paper says which of its printed
+    markers is a question without any help from the scheme: a passage, an
+    advertisement or a literary extract is printed on a page with nothing to
+    write on, and the questions on the page after it with ruled lines under
+    them. So the reading asks are read from the paper alone (it_paper.py),
+    which is what French could not do.
+
+    What the paper cannot do alone is say whether the reader lost one, and the
+    scheme is the independent check for that — TWICE:
+
+      * every reading section prints what it is worth on its own head, and the
+        tariffs of the asks beneath it add up to that figure in all ten
+        sittings, in every section (it_scheme.audit);
+      * the number of asks the scheme prices in a section equals the number the
+        paper prints in it, in all ten sittings and all 385 asks.
+
+    Where the two disagree about an ask's NAME they are flagged and the paper
+    wins: the SEC leaves the "(a)" off the first part of an item four times in
+    the corpus — 2024 Ordinary prices "2." where the paper prints "2. (a)" —
+    and the paper is what a student is holding.
+
+    The marks checksum flags 2021 and 2022 at both levels, and that is the
+    paper changing rather than the reader losing anything. Those two sittings
+    print "Freagair Roinn A nó Roinn B / Answer either Section A or Section B"
+    at Higher and set ONE of two reading comprehensions at Ordinary, and their
+    written booklets say so on their own covers: 160 marks at Higher and 180 at
+    Ordinary, against 220 for each of 2023, 2024 and 2025. Every ask printed in
+    the section a candidate did not answer is still an ask the paper printed,
+    so all of them are censused.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from it_paper import ItPaper                              # noqa: E402
+    from it_scheme import ItScheme                            # noqa: E402
+
+    P = ItPaper(year, level, subject)
+    S = ItScheme(year, level, subject)
+    texts = {}
+    for section, item, letter, text, _page in P.asks():
+        texts[(section, item, letter, None)] = text
+    for route, item, text, _page in P.essay_asks():
+        texts[(f'B3{route}', item, None, None)] = text
+    for item, letter, text, _page in P.writing_asks():
+        texts[('C', item, letter, None)] = text
+    for section, item, text in P.aural_asks():
+        texts[(f'L{section}', item, None, None)] = text
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def it_flags(P, S):
+    """What the paper and the scheme disagree about. See census_it."""
+    flags = list(P.flags)
+    paper = P.asks()
+    for token in sorted({a[0] for a in paper} | {a.section for a in S.asks}):
+        pp = [a for a in paper if a[0] == token]
+        ss = [a for a in S.asks if a.section == token]
+        if len(pp) != len(ss):
+            flags.append({
+                'type': 'scheme-count',
+                'where': f'Section {token}',
+                'detail': f'the paper prints {len(pp)} ask(s) here and the '
+                          f'scheme prices {len(ss)}'})
+            continue
+        for a, b in zip(pp, ss):
+            if (a[1], a[2]) != (b.item, b.letter):
+                flags.append({
+                    'type': 'scheme-key',
+                    'where': f'Section {token}',
+                    'detail': f'the paper prints {a[1]}{a[2] or ""} where the '
+                              f'scheme prices {b.item or ""}{b.letter or ""}; '
+                              f'they are paired in printed order and the '
+                              f'paper\'s name is the one cited'})
+    for token, printed in sorted(S.section_totals.items()):
+        asks = [a for a in S.asks if a.section == token]
+        if not asks or any(a.total is None for a in asks):
+            continue
+        got = sum(a.total for a in asks)
+        if got != printed:
+            flags.append({
+                'type': 'tariff-checksum',
+                'where': f'Section {token}',
+                'detail': f'the scheme prices its asks {got} against the '
+                          f'{printed} it prints on the section head'})
+    return flags
+
+
 def _letters(first, last):
     lo, hi = LETTERS.index(first), LETTERS.index(last)
     return list(LETTERS[lo:hi + 1])
@@ -1064,6 +1165,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'lang':
                     parts, texts, files, P_, S_, claimed_ = census_lang(
                         subject, year, level)
+                elif cfg.get('walker') == 'italian':
+                    parts, texts, files, P_, S_ = census_it(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -1087,6 +1191,9 @@ def census_subject(subject):
                 marks = {(None, 0): cover} if cover else {}
             if cfg.get('walker') == 'lang':
                 flags += lang_flags(P_, S_, claimed_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'italian':
+                flags += it_flags(P_, S_)
                 marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])

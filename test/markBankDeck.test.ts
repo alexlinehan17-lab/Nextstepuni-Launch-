@@ -65,6 +65,8 @@ import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-edu
 import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
+import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
 import { CARDS as TECH_HIGHER } from '../components/MarkBank/cards/technology/higher';
 import { CARDS as TECH_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
@@ -90,6 +92,7 @@ const SAMPLE_CARDS = [
   ...CS_HIGHER, ...CS_ORDINARY, ...ENG_HIGHER, ...ENG_ORDINARY,
   ...RE_HIGHER, ...RE_ORDINARY,
   ...HISTORY_HIGHER, ...HISTORY_ORDINARY,
+  ...ITALIAN_HIGHER, ...ITALIAN_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -478,6 +481,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['technology', 'ordinary', TECH_ORDINARY],
     ['french', 'higher', FRENCH_HIGHER],
     ['french', 'ordinary', FRENCH_ORDINARY],
+    ['italian', 'higher', ITALIAN_HIGHER],
+    ['italian', 'ordinary', ITALIAN_ORDINARY],
     ['applied-maths', 'higher', AM_HIGHER],
     ['applied-maths', 'ordinary', AM_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
@@ -551,6 +556,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       // (curriculum.ts -> curriculumRegistry.ts), so its ids carry the
       // subject's own name rather than an abbreviation.
       french: 'french-',
+      // Italian files its cards under the published Italian taxonomy itself
+      // (curriculum.ts -> curriculumRegistry.ts), so its ids carry the
+      // subject's own name rather than an abbreviation, as French's do.
+      italian: 'italian-',
       // Applied Maths files against the CANONICAL curriculum's own ids, which
       // are 'applied-mathematics-<strand>-<topic>' — the subject id in the
       // deck is the SEC's shorter name for the same subject.
