@@ -27,10 +27,23 @@ import pymupdf
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'glyphmap.json')
 
+
+def out_path(subject):
+    return OUT if not subject else os.path.join(HERE, f'glyphmap-{subject}.json')
+
 # Greek is really Greek in these schemes; everything else in the range is a
-# subset font's private muddle.
+# subset font's private muddle. A per-subject run relaxes that: Technology's
+# papers encode their DIGITS in the Greek block — a year prints as "ϮϬϮϮ" —
+# and the map is only ever applied to that subject. It stays evidence-led
+# either way: a glyph is mapped only where its id is seen with a sane
+# ToUnicode somewhere in the corpus, so a real mu maps to itself.
+GREEK_IS_GREEK = True
+
+
 def mangled(u):
-    return 0x0100 < u < 0x2000 and not (0x0370 <= u < 0x0400)
+    if 0x0370 <= u < 0x0400 and GREEK_IS_GREEK:
+        return False
+    return 0x0100 < u < 0x2000
 
 
 # Ligatures and PUA marks, which are one glyph standing for more than one
@@ -146,7 +159,24 @@ def interpolate(seen):
 
 
 def main():
-    files = sorted(glob.glob('examiner-reports/*/schemes/*.pdf'))
+    # --subject <slug> derives a map from ONE subject's papers and schemes and
+    # writes it beside the global one. Technology's papers are mangled by a
+    # different subset font from its schemes ("Certiϔicate" against the
+    # schemes' "CerƟficate"), and folding its PDFs into the global corpus
+    # re-derived ten entries that Maths relies on (𝑀 became M, 'ƭ' x became m).
+    # A subject's map is additive and cannot move another subject's.
+    subject = None
+    if '--subject' in sys.argv:
+        subject = sys.argv[sys.argv.index('--subject') + 1]
+    if subject:
+        global GREEK_IS_GREEK
+        GREEK_IS_GREEK = False
+        files = sorted(glob.glob(f'examiner-reports/{subject}/schemes/*.pdf')
+                       + glob.glob(f'examiner-reports/{subject}/papers/*.pdf'))
+        if not files:
+            sys.exit(f'no PDFs for {subject}')
+    else:
+        files = sorted(glob.glob('examiner-reports/*/schemes/*.pdf'))
     if not files:
         sys.exit('no scheme PDFs found -- run from the repo root')
     seen, bad = scan(files)
@@ -208,9 +238,9 @@ def main():
     print(f'{len(table)} map entries; dropped {len(dropped)} ambiguous {dropped}')
     print(f'mangled instances {total}, repaired {fixed} ({100 * fixed // max(total, 1)}%)')
     if '--write' in sys.argv:
-        with open(OUT, 'w', encoding='utf-8') as fh:
+        with open(out_path(subject), 'w', encoding='utf-8') as fh:
             json.dump(table, fh, ensure_ascii=False, indent=0, sort_keys=True)
-        print(f'wrote {OUT}')
+        print(f'wrote {out_path(subject)}')
 
 
 if __name__ == '__main__':

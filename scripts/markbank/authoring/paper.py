@@ -242,14 +242,85 @@ def _split_own_line_markers(raw):
     return out
 
 
-def _blocks(path):
+# Subjects whose PAPERS (not just schemes) reach the text layer through a
+# mangled subset font. Technology's papers print "SecƟon A" and "quesƟons",
+# which no marker regex matches: 2021 Ordinary censused 4 asks against its
+# neighbours' 26. The repair is opt-in per subject rather than global because
+# applying it to Chemistry also repairs a PUA delta inside an equilibrium
+# equation, and the reader then reads that equation's gas-state symbol "(g)"
+# as a part marker — a false ask, and a pre-existing marker bug (2023 HL Q9
+# already shows it) that is not this pipeline's to change by accident.
+MANGLED_PAPERS = {'technology'}
+
+_GLYPHS = {}
+
+
+def _repair(text, subject):
+    """Undo the subset-font mangling in the paper's text layer.
+
+    Word embeds its fonts as subsets whose ToUnicode CMap is wrong, so
+    "Section A" reaches the text layer as "SecƟon A". glyphmap.json is derived
+    from the corpus by derive_glyphs.py (never hand-mapped). Every key is
+    above U+0100, so ordinary text — fadas included — is untouched.
+    """
+    if subject not in _GLYPHS:
+        import json
+        here = os.path.dirname(os.path.abspath(__file__))
+        table = {}
+        for name in ('glyphmap.json', f'glyphmap-{subject}.json'):
+            path = os.path.join(here, name)
+            if os.path.exists(path):
+                with open(path) as fh:
+                    table.update({ord(k): v for k, v in json.load(fh).items()})
+        _GLYPHS[subject] = table
+    return text.translate(_GLYPHS[subject])
+
+
+# Subjects that print a question's number in a left gutter, as its own text
+# block beside the question rather than welded to it. A lone "1." is otherwise
+# indistinguishable from the answer booklet's numbered ruled lines — which is
+# why the reader refuses it (see _all_blocks) — so the join is made here, on
+# the geometry: a marker-only block whose baseline overlaps the block to its
+# right, and which sits to the left of it, IS that block's marker.
+GUTTER_MARKERS = {'technology'}
+_MARKER_ONLY = re.compile(r'^\(?(\d{1,2}|[a-z]|[ivx]{1,4})[.)]?$')
+
+
+def _join_gutter_markers(blocks):
+    """Weld a gutter marker onto the block it heads."""
+    out, used = [], set()
+    for i, b in enumerate(blocks):
+        if i in used:
+            continue
+        text = ' '.join(b[4].split())
+        if _MARKER_ONLY.match(text):
+            for j in range(i + 1, min(i + 4, len(blocks))):
+                o = blocks[j]
+                if j in used or o[0] <= b[0]:
+                    continue
+                # Same line, give or take a leading-height's slack.
+                if abs(o[1] - b[1]) <= 14 or (b[1] <= o[3] and o[1] <= b[3]):
+                    out.append((b[0], b[1], o[2], o[3],
+                                f"{text} {' '.join(o[4].split())}"))
+                    used.add(j)
+                    break
+            else:
+                out.append(b)
+            continue
+        out.append(b)
+    return out
+
+
+def _blocks(path, subject=None):
     """Every non-empty text block, in page then top-to-bottom, left-to-right order."""
     with pymupdf.open(path) as doc:
         pages = [sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
                  for n in range(doc.page_count)]
+    if subject in GUTTER_MARKERS:
+        pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
         for b in page:
-            for text in _split_own_line_markers(b[4]):
+            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4]):
                 if text and not PAGE_FURNITURE.match(text):
                     yield text
 
@@ -586,7 +657,7 @@ class Paper:
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
-            for block in _blocks(path):
+            for block in _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None):
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.

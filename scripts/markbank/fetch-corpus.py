@@ -67,6 +67,17 @@ SUBJECTS = {
     'politics-society': 'politics-and-society',
     # Added 30 August 2026, to MEASURE it before choosing it. See stage 0.
     'computer-science': 'computer-science',
+    # Added 10 September 2026, to MEASURE before choosing. Technology has
+    # never been assessed at stage 0 and is the closest uncarded sibling to
+    # Engineering and Construction Studies, both of which ship. The rest are
+    # re-measures of subjects whose earlier verdicts were recorded without a
+    # count (see markbank-stage0-subject-verdicts).
+    'technology': 'technology',
+    'religious-education': 'religious-education',
+    'history': 'history',
+    'applied-maths': 'applied-mathematics',
+    'lcvp': 'link-modules',
+    'classical-studies': 'classical-studies',
 }
 
 FILEID = re.compile(r'^LC(\d{3})([AG])LP(\d{3})([EI])V\.pdf$', re.I)

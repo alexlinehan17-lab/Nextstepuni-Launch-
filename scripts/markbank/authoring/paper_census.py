@@ -84,6 +84,11 @@ SUBJECTS = {
     # programming question answered on a computer. The sections are named on
     # the page, so the census reads them rather than the booklet code.
     'computer-science': {'mode': 'sections'},
+    # Two booklets: 014 carries Section A (core short questions, all answered)
+    # and 039 carries Section B (two core long questions) and Section C (five
+    # options, one answered). The sections are named on the page, and each
+    # section restarts its numbering at 1, so the census reads the sections.
+    'technology': {'mode': 'sections'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -198,7 +203,7 @@ def marks_by_question(P_files, subject):
     section = None
     q = None
     for path in P_files:
-        for block in PP._blocks(path):
+        for block in PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None):
             s = SECTION.search(block[:80])
             if s and len(block) < 200:
                 section = s.group(1)
@@ -296,7 +301,7 @@ def census_sections(subject, year, level):
     # splits applied, so the neighbour guards can see the whole paper.
     blocks = []
     for path in P.files:
-        for block in PP._blocks(path):
+        for block in PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None):
             for text in PP.INLINE_QHEAD.split(block):
                 # Capital markers mid-block: Business glues "(B) Outline..."
                 # onto the tail of (A)'s prose.
