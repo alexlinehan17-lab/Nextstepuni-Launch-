@@ -299,8 +299,32 @@ def joined_ref(year, level, covered):
         f', ({r})' for r in romans[1:])
 
 
+def figure_index():
+    """The inspected crops, keyed by the part they were cut FOR.
+
+    A crop is cut once for a (section, question, letter) and every roman under
+    it shows the same picture, because the paper prints it once. Read from the
+    manifest bind-figures.mjs wrote, so a crop that was never inspected is not
+    in here to be bound.
+    """
+    figs = {}
+    path = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
+    if not os.path.exists(path):
+        return figs
+    with open(path, encoding='utf-8') as fh:
+        manifest = json.load(fh)
+    for key in manifest:
+        m = re.fullmatch(r'technology-(\d{4})-(HL|OL)-paper-sec([ABC])'
+                         r'-q(\d{1,2})([a-d])?-art', key)
+        if m:
+            figs[(int(m.group(1)), m.group(2).lower(), m.group(3),
+                  int(m.group(4)), m.group(5))] = key
+    return figs
+
+
 def author():
     census = PC.census_subject(SUBJECT)
+    figures = figure_index()
     cards, refused, examples = [], collections.Counter(), collections.defaultdict(list)
     verdicts = []
     stats = []
@@ -400,13 +424,19 @@ def author():
 
                 show_stem = clean(stem) if keeps_stem(stem, question) else ''
                 joined = f'{show_stem} {question}'
-                if (cardlint.FIG_REF.search(joined)
+                figure = figures.get((year, level, section, q, letter))
+                if not figure and (
+                        cardlint.FIG_REF.search(joined)
                         and not cardlint.SELF_WORK.search(joined)
                         and not cardlint.INLINE_TABLE.search(joined)):
                     note('points at printed matter the card cannot carry', question)
                     continue
                 if cardlint.NAMES_LETTERS.search(joined) \
                         and not cardlint.INVITES_DRAWING.search(joined):
+                    # A question naming labelled points needs those letters
+                    # DECODED as well as shown, and the build drops a card that
+                    # shows them without a label key. The crop alone is not
+                    # enough, so these stay refused even where one exists.
                     note('names a lettered part this author cannot decode', question)
                     continue
                 if cardlint.SCHEME_LEAK.search(joined):
@@ -445,6 +475,11 @@ def author():
                     'questionText': question,
                     'stem': show_stem,
                     'figureKey': '',
+                    # The SEC's own print of the picture the ask points at,
+                    # shown BEFORE the reveal. A question figure may be shared
+                    # by the siblings under one part, which is right here: the
+                    # paper prints the picture once for the whole question.
+                    'questionFigureKey': figure or '',
                     'labelKey': [],
                     'tariffModel': model,
                     'totalMarks': total,

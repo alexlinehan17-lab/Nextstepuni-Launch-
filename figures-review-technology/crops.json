@@ -1,0 +1,842 @@
+[
+ {
+  "year": 2021,
+  "level": "hl",
+  "section": "A",
+  "q": 4,
+  "letter": null,
+  "key": "technology-2021-HL-paper-secA-q4-art",
+  "rect": [
+   328.2,
+   122.3,
+   560.8,
+   270.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2021,
+  "level": "hl",
+  "section": "A",
+  "q": 5,
+  "letter": null,
+  "key": "technology-2021-HL-paper-secA-q5-art",
+  "rect": [
+   70.9,
+   368.1,
+   209.5,
+   519.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2021,
+  "level": "hl",
+  "section": "A",
+  "q": 9,
+  "letter": null,
+  "key": "technology-2021-HL-paper-secA-q9-art",
+  "rect": [
+   66.3,
+   637.0,
+   531.2,
+   759.2
+  ],
+  "shared": false
+ },
+ {
+  "year": 2021,
+  "level": "hl",
+  "section": "A",
+  "q": 10,
+  "letter": null,
+  "key": "technology-2021-HL-paper-secA-q10-art",
+  "rect": [
+   376.6,
+   100.9,
+   570.6,
+   267.0
+  ],
+  "shared": false
+ },
+ {
+  "year": 2021,
+  "level": "hl",
+  "section": "A",
+  "q": 13,
+  "letter": null,
+  "key": "technology-2021-HL-paper-secA-q13-art",
+  "rect": [
+   382.4,
+   466.1,
+   551.7,
+   693.4
+  ],
+  "shared": false
+ },
+ {
+  "year": 2021,
+  "level": "hl",
+  "section": "A",
+  "q": 15,
+  "letter": null,
+  "key": "technology-2021-HL-paper-secA-q15-art",
+  "rect": [
+   165.1,
+   513.7,
+   421.5,
+   743.0
+  ],
+  "shared": false
+ },
+ {
+  "year": 2021,
+  "level": "ol",
+  "section": "A",
+  "q": 12,
+  "letter": null,
+  "key": "technology-2021-OL-paper-secA-q12-art",
+  "rect": [
+   172.0,
+   585.9,
+   419.7,
+   686.4
+  ],
+  "shared": false
+ },
+ {
+  "year": 2021,
+  "level": "ol",
+  "section": "B",
+  "q": 2,
+  "letter": "d",
+  "key": "technology-2021-OL-paper-secB-q2d-art",
+  "rect": [
+   389.9,
+   616.6,
+   554.2,
+   728.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "hl",
+  "section": "A",
+  "q": 2,
+  "letter": null,
+  "key": "technology-2022-HL-paper-secA-q2-art",
+  "rect": [
+   435.1,
+   315.9,
+   541.0,
+   519.3
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "hl",
+  "section": "A",
+  "q": 5,
+  "letter": null,
+  "key": "technology-2022-HL-paper-secA-q5-art",
+  "rect": [
+   80.9,
+   310.9,
+   545.0,
+   515.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "hl",
+  "section": "A",
+  "q": 6,
+  "letter": null,
+  "key": "technology-2022-HL-paper-secA-q6-art",
+  "rect": [
+   52.4,
+   561.4,
+   542.6,
+   752.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "hl",
+  "section": "A",
+  "q": 8,
+  "letter": null,
+  "key": "technology-2022-HL-paper-secA-q8-art",
+  "rect": [
+   97.8,
+   351.9,
+   263.9,
+   480.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "hl",
+  "section": "A",
+  "q": 9,
+  "letter": null,
+  "key": "technology-2022-HL-paper-secA-q9-art",
+  "rect": [
+   377.4,
+   510.1,
+   541.6,
+   586.5
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "hl",
+  "section": "A",
+  "q": 10,
+  "letter": null,
+  "key": "technology-2022-HL-paper-secA-q10-art",
+  "rect": [
+   60.6,
+   105.9,
+   537.0,
+   183.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "hl",
+  "section": "C",
+  "q": 2,
+  "letter": "a",
+  "key": "technology-2022-HL-paper-secC-q2a-art",
+  "rect": [
+   424.7,
+   107.2,
+   525.8,
+   199.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "ol",
+  "section": "A",
+  "q": 6,
+  "letter": null,
+  "key": "technology-2022-OL-paper-secA-q6-art",
+  "rect": [
+   62.0,
+   584.8,
+   543.9,
+   729.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "ol",
+  "section": "A",
+  "q": 8,
+  "letter": null,
+  "key": "technology-2022-OL-paper-secA-q8-art",
+  "rect": [
+   80.1,
+   322.4,
+   542.6,
+   538.1
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "ol",
+  "section": "A",
+  "q": 11,
+  "letter": null,
+  "key": "technology-2022-OL-paper-secA-q11-art",
+  "rect": [
+   53.6,
+   287.1,
+   543.1,
+   439.5
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "ol",
+  "section": "B",
+  "q": 3,
+  "letter": "b",
+  "key": "technology-2022-OL-paper-secB-q3b-art",
+  "rect": [
+   392.9,
+   245.2,
+   542.0,
+   354.3
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "ol",
+  "section": "C",
+  "q": 2,
+  "letter": "d",
+  "key": "technology-2022-OL-paper-secC-q2d-art",
+  "rect": [
+   403.5,
+   573.4,
+   559.6,
+   617.2
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "ol",
+  "section": "C",
+  "q": 4,
+  "letter": "a",
+  "key": "technology-2022-OL-paper-secC-q4a-art",
+  "rect": [
+   450.0,
+   84.2,
+   554.4,
+   175.1
+  ],
+  "shared": false
+ },
+ {
+  "year": 2022,
+  "level": "ol",
+  "section": "C",
+  "q": 5,
+  "letter": "b",
+  "key": "technology-2022-OL-paper-secC-q5b-art",
+  "rect": [
+   408.7,
+   255.0,
+   539.2,
+   416.3
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "A",
+  "q": 2,
+  "letter": null,
+  "key": "technology-2023-HL-paper-secA-q2-art",
+  "rect": [
+   80.6,
+   484.2,
+   554.3,
+   746.0
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "A",
+  "q": 4,
+  "letter": null,
+  "key": "technology-2023-HL-paper-secA-q4-art",
+  "rect": [
+   80.6,
+   230.9,
+   544.2,
+   419.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "A",
+  "q": 8,
+  "letter": null,
+  "key": "technology-2023-HL-paper-secA-q8-art",
+  "rect": [
+   232.5,
+   141.2,
+   498.9,
+   271.1
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "A",
+  "q": 9,
+  "letter": null,
+  "key": "technology-2023-HL-paper-secA-q9-art",
+  "rect": [
+   81.5,
+   356.5,
+   529.7,
+   751.1
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "A",
+  "q": 10,
+  "letter": null,
+  "key": "technology-2023-HL-paper-secA-q10-art",
+  "rect": [
+   62.0,
+   77.3,
+   509.4,
+   222.8
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "A",
+  "q": 11,
+  "letter": null,
+  "key": "technology-2023-HL-paper-secA-q11-art",
+  "rect": [
+   405.6,
+   427.6,
+   564.5,
+   586.5
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "B",
+  "q": 2,
+  "letter": "c",
+  "key": "technology-2023-HL-paper-secB-q2c-art",
+  "rect": [
+   398.0,
+   524.4,
+   536.2,
+   594.5
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "C",
+  "q": 2,
+  "letter": "b",
+  "key": "technology-2023-HL-paper-secC-q2b-art",
+  "rect": [
+   299.4,
+   272.2,
+   571.4,
+   446.8
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "hl",
+  "section": "C",
+  "q": 4,
+  "letter": "d",
+  "key": "technology-2023-HL-paper-secC-q4d-art",
+  "rect": [
+   116.2,
+   370.9,
+   490.7,
+   526.0
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "ol",
+  "section": "A",
+  "q": 1,
+  "letter": null,
+  "key": "technology-2023-OL-paper-secA-q1-art",
+  "rect": [
+   80.6,
+   154.5,
+   543.1,
+   322.2
+  ],
+  "shared": false
+ },
+ {
+  "year": 2023,
+  "level": "ol",
+  "section": "C",
+  "q": 2,
+  "letter": "c",
+  "key": "technology-2023-OL-paper-secC-q2c-art",
+  "rect": [
+   52.6,
+   475.8,
+   198.6,
+   541.6
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "A",
+  "q": 3,
+  "letter": null,
+  "key": "technology-2024-HL-paper-secA-q3-art",
+  "rect": [
+   383.8,
+   569.8,
+   556.5,
+   671.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "A",
+  "q": 4,
+  "letter": null,
+  "key": "technology-2024-HL-paper-secA-q4-art",
+  "rect": [
+   445.6,
+   32.0,
+   550.5,
+   141.5
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "A",
+  "q": 5,
+  "letter": null,
+  "key": "technology-2024-HL-paper-secA-q5-art",
+  "rect": [
+   102.4,
+   284.5,
+   288.4,
+   367.3
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "A",
+  "q": 6,
+  "letter": null,
+  "key": "technology-2024-HL-paper-secA-q6-art",
+  "rect": [
+   396.4,
+   523.6,
+   550.0,
+   619.4
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "A",
+  "q": 8,
+  "letter": null,
+  "key": "technology-2024-HL-paper-secA-q8-art",
+  "rect": [
+   83.1,
+   368.2,
+   536.7,
+   750.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "A",
+  "q": 13,
+  "letter": null,
+  "key": "technology-2024-HL-paper-secA-q13-art",
+  "rect": [
+   196.6,
+   80.7,
+   420.2,
+   212.1
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "C",
+  "q": 2,
+  "letter": "b",
+  "key": "technology-2024-HL-paper-secC-q2b-art",
+  "rect": [
+   480.9,
+   277.8,
+   539.2,
+   347.4
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "C",
+  "q": 2,
+  "letter": "d",
+  "key": "technology-2024-HL-paper-secC-q2d-art",
+  "rect": [
+   411.9,
+   653.8,
+   543.0,
+   734.3
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "hl",
+  "section": "C",
+  "q": 5,
+  "letter": "d",
+  "key": "technology-2024-HL-paper-secC-q5d-art",
+  "rect": [
+   430.6,
+   628.9,
+   544.7,
+   743.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "ol",
+  "section": "A",
+  "q": 1,
+  "letter": null,
+  "key": "technology-2024-OL-paper-secA-q1-art",
+  "rect": [
+   80.6,
+   140.1,
+   547.9,
+   324.8
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "ol",
+  "section": "A",
+  "q": 6,
+  "letter": null,
+  "key": "technology-2024-OL-paper-secA-q6-art",
+  "rect": [
+   81.4,
+   555.7,
+   542.4,
+   680.6
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "ol",
+  "section": "A",
+  "q": 8,
+  "letter": null,
+  "key": "technology-2024-OL-paper-secA-q8-art",
+  "rect": [
+   80.6,
+   289.5,
+   543.1,
+   468.2
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "ol",
+  "section": "B",
+  "q": 3,
+  "letter": "c",
+  "key": "technology-2024-OL-paper-secB-q3c-art",
+  "rect": [
+   391.2,
+   446.3,
+   564.0,
+   579.5
+  ],
+  "shared": false
+ },
+ {
+  "year": 2024,
+  "level": "ol",
+  "section": "C",
+  "q": 1,
+  "letter": "d",
+  "key": "technology-2024-OL-paper-secC-q1d-art",
+  "rect": [
+   79.3,
+   681.1,
+   181.3,
+   723.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "hl",
+  "section": "A",
+  "q": 4,
+  "letter": null,
+  "key": "technology-2025-HL-paper-secA-q4-art",
+  "rect": [
+   390.8,
+   32.2,
+   568.8,
+   134.3
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "hl",
+  "section": "A",
+  "q": 5,
+  "letter": null,
+  "key": "technology-2025-HL-paper-secA-q5-art",
+  "rect": [
+   338.7,
+   307.5,
+   547.8,
+   442.5
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "hl",
+  "section": "A",
+  "q": 8,
+  "letter": null,
+  "key": "technology-2025-HL-paper-secA-q8-art",
+  "rect": [
+   82.9,
+   393.2,
+   521.7,
+   741.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "hl",
+  "section": "A",
+  "q": 11,
+  "letter": null,
+  "key": "technology-2025-HL-paper-secA-q11-art",
+  "rect": [
+   46.9,
+   167.8,
+   211.4,
+   287.2
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "hl",
+  "section": "A",
+  "q": 13,
+  "letter": null,
+  "key": "technology-2025-HL-paper-secA-q13-art",
+  "rect": [
+   367.8,
+   173.1,
+   542.6,
+   306.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "hl",
+  "section": "B",
+  "q": 3,
+  "letter": "b",
+  "key": "technology-2025-HL-paper-secB-q3b-art",
+  "rect": [
+   405.9,
+   256.4,
+   553.1,
+   337.6
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "ol",
+  "section": "A",
+  "q": 1,
+  "letter": null,
+  "key": "technology-2025-OL-paper-secA-q1-art",
+  "rect": [
+   80.6,
+   133.9,
+   545.7,
+   308.9
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "ol",
+  "section": "A",
+  "q": 3,
+  "letter": null,
+  "key": "technology-2025-OL-paper-secA-q3-art",
+  "rect": [
+   80.0,
+   567.3,
+   550.6,
+   727.7
+  ],
+  "shared": false
+ },
+ {
+  "year": 2025,
+  "level": "ol",
+  "section": "A",
+  "q": 11,
+  "letter": null,
+  "key": "technology-2025-OL-paper-secA-q11-art",
+  "rect": [
+   73.8,
+   272.0,
+   537.7,
+   456.4
+  ],
+  "shared": false
+ }
+]

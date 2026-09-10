@@ -1,0 +1,226 @@
+[
+ {
+  "file": "technology-2021-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a mechanic using a digital torque wrench on a V8 engine cylinder head. A red double-headed arrow runs along the length of the wrench between two white end bars and is labelled X.",
+  "questionRef": "2021 HL Section A Q4"
+ },
+ {
+  "file": "technology-2021-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendered image of a face shield worn on a grey mannequin head: a blue headband with side pivots holds a clear transparent visor that covers the face from forehead to chin.",
+  "questionRef": "2021 HL Section A Q5"
+ },
+ {
+  "file": "technology-2021-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A four-column table headed Category, Material, Electrical Property and Use. The Conductor row is filled in with Copper, \"Allows current to pass through\" and Electrical wire; the Insulator and Semiconductor rows are blank.",
+  "questionRef": "2021 HL Section A Q9"
+ },
+ {
+  "file": "technology-2021-HL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of an industrial gearbox with its blue cast housing cut away, showing a train of steel spur gears of different diameters on parallel shafts, with the output shaft projecting to the right.",
+  "questionRef": "2021 HL Section A Q10"
+ },
+ {
+  "file": "technology-2021-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded pictorial view of a handheld games console in teal green: from the top, the front casing with screen aperture and button holes, the printed circuit board, the button and joypad assembly, the rear casing, a cylindrical battery and the battery cover.",
+  "questionRef": "2021 HL Section A Q13"
+ },
+ {
+  "file": "technology-2021-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Black-and-white line drawing of a desk stapler in pictorial view, showing the hinged top arm, the magazine body and the flat base with its anvil.",
+  "questionRef": "2021 HL Section A Q15"
+ },
+ {
+  "file": "technology-2021-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of four identical flat-pack cardboard cartons standing upright on a steel bench, with a person reaching between two of them.",
+  "questionRef": "2021 OL Section B Q2(d)"
+ },
+ {
+  "file": "technology-2022-HL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The EU rescaled energy label for a Samsung television: the ENERGY heading with a QR code, the A-to-G coloured arrow scale with a black G marker, 98 kWh/1000h for standard mode, a second HDR panel reading 112 kWh/1000h, and a screen-size diagram giving 3840 x 2160 px and a 108 cm (43 inch) diagonal.",
+  "questionRef": "2022 HL Section A Q2"
+ },
+ {
+  "file": "technology-2022-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded pictorial view of a castor wheel assembly, its parts numbered 1 to 5 with leader lines: the top mounting plate (1), the axle bolt (2), two side brackets (3), two bearing washers (4) and the wheel itself (5).",
+  "questionRef": "2022 HL Section A Q8"
+ },
+ {
+  "file": "technology-2022-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two colour photographs side by side: on the left a hard disk drive with its cover removed, showing the gold platter, spindle and read head arm; on the right a solid-state drive with its case partly open, showing the memory chips on the circuit board.",
+  "questionRef": "2022 HL Section A Q9"
+ },
+ {
+  "file": "technology-2022-HL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a small push-type solenoid: a plated steel frame holding a blue-wrapped coil, with a cylindrical plunger projecting from the left face and red and black flying leads with a white connector at the top.",
+  "questionRef": "2022 HL Section C Q2(a)"
+ },
+ {
+  "file": "technology-2022-OL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A logic circuit diagram drawn with two gates. Inputs A and B enter an OR gate labelled X; its output, labelled C, feeds a NOT gate (inverter) labelled Y, whose output is labelled D.",
+  "questionRef": "2022 OL Section C Q2(d)"
+ },
+ {
+  "file": "technology-2022-OL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of corrugated cardboard packaging: a stack of flat die-cut carton blanks behind three small assembled cube-shaped boxes, one of them open.",
+  "questionRef": "2022 OL Section C Q4(a)"
+ },
+ {
+  "file": "technology-2022-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a prefabricated timber-framed facade panel with a window and cladding being craned into place on a partly built timber-frame building. The panel is labelled A and the concrete floor slab beneath it is labelled B; two workers in helmets and harnesses guide it in.",
+  "questionRef": "2022 OL Section C Q5(b)"
+ },
+ {
+  "file": "technology-2023-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing of a three-blade horizontal-axis wind turbine, drawn in a ruled box. Leader lines label the rotor blades as Rotor, the housing behind the hub as Nacelle (contains gears and generator), and the mast as Cylindrical tower.",
+  "questionRef": "2023 HL Section A Q9"
+ },
+ {
+  "file": "technology-2023-HL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram of a compound gear train of four spur gears. Gear A, the driver, has 8 teeth and turns at 450 RPM; it meshes with Gear B, 24 teeth; Gear C, 8 teeth, shares B's shaft and meshes with Gear D, 24 teeth. Each gear is named by a red leader line.",
+  "questionRef": "2023 HL Section A Q10"
+ },
+ {
+  "file": "technology-2023-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a white vented cycling helmet with a black rear section, an action camera strapped to the top of it by a black harness.",
+  "questionRef": "2023 HL Section A Q11"
+ },
+ {
+  "file": "technology-2023-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram between +9 V and 0 V rails. A switch feeds two potential-divider branches: component A, a variable resistor, in series with a 10 kilohm resistor, and component B, a thermistor, in series with a second 10 kilohm resistor. The two junctions feed the inverting and non-inverting inputs of an IC comparator, whose output drives a resistor, a transistor and a buzzer back to the 0 V rail.",
+  "questionRef": "2023 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2023-OL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a black aluminium LED pocket torch lying at an angle, with a knurled grip band, a pocket clip and a reflector lens at the left end.",
+  "questionRef": "2023 OL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2024-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a small Fender practice guitar amplifier: a black cabinet with a silver grille cloth, a carrying handle and a row of control knobs and input sockets across the top panel.",
+  "questionRef": "2024 HL Section A Q4"
+ },
+ {
+  "file": "technology-2024-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A carbon-film resistor photographed at an angle beside the caption \"Resistor bands:\" and the list Brown, Black, Red, Gold, which are the four bands printed on it from left to right.",
+  "questionRef": "2024 HL Section A Q5"
+ },
+ {
+  "file": "technology-2024-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A network-diagram node drawn as a six-cell box: the top row is labelled EST on the left and EFT on the right, the middle row is a blank cell labelled Task:, and the bottom row is labelled LST on the left and LFT on the right.",
+  "questionRef": "2024 HL Section A Q6"
+ },
+ {
+  "file": "technology-2024-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded pictorial view of a garden lantern, its parts spaced out vertically: the wire carrying handle, a small finial, the domed green top cover, the yellow cylindrical glass shade, a green collar, a grey cylindrical candle unit and the domed green base.",
+  "questionRef": "2024 HL Section A Q8"
+ },
+ {
+  "file": "technology-2024-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two images joined by an arrow: on the left a square side table with a black top and a chrome tubular frame; on the right, at the end of the arrow, a smartphone lying on that black surface showing a green charging indicator.",
+  "questionRef": "2024 HL Section A Q13"
+ },
+ {
+  "file": "technology-2024-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The pin layout of an eight-pin integrated circuit drawn as a plain rectangle with four leads on each side. The pin numbers read 7, 4 and 8 across the top, 6 and 3 in the middle, and 2, 1 and 5 across the bottom.",
+  "questionRef": "2024 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2024-HL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a transparent rigid plastic punnet of strawberries with a hinged clip-shut lid.",
+  "questionRef": "2024 HL Section C Q5(d)"
+ },
+ {
+  "file": "technology-2024-OL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The pneumatic symbol for a double-acting cylinder: a rectangular barrel containing a piston and a piston rod that passes out through the right-hand end, with hatching drawn inside the barrel and a port stub beneath the left-hand end.",
+  "questionRef": "2024 OL Section C Q1(d)"
+ },
+ {
+  "file": "technology-2025-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of five capacitors standing side by side: a large black 1000 microfarad 50 V electrolytic can, two orange disc capacitors, a red boxed 104K 250 V film capacitor and a blue 10 microfarad 35 V electrolytic, each with two wire legs.",
+  "questionRef": "2025 HL Section A Q4"
+ },
+ {
+  "file": "technology-2025-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Illustration of a yellow mobile crane with its telescopic boom raised to the left, its hook carrying a pale trapezoidal load labelled 1200 N.",
+  "questionRef": "2025 HL Section A Q5"
+ },
+ {
+  "file": "technology-2025-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Outline line drawing of a games controller, drawn in a ruled box: the symmetrical body with two shoulder buttons, a left thumbstick and a four-way directional pad on the left, minus and plus buttons and two small buttons in the centre, and four round face buttons with a right thumbstick on the right.",
+  "questionRef": "2025 HL Section A Q8"
+ },
+ {
+  "file": "technology-2025-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour rendering of a park bench with white precast concrete end legs and armrests and horizontal timber slats forming the seat and the backrest.",
+  "questionRef": "2025 HL Section A Q11"
+ },
+ {
+  "file": "technology-2025-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendered diagram of a diving springboard in a ruled box. A leader line labels the tubular handrail assembly Ladder and the blue board Springboard, and an angle drawn between the board and its fulcrum mounting is labelled Tilt Angle.",
+  "questionRef": "2025 HL Section A Q13"
+ }
+]

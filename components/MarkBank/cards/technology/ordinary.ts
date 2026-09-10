@@ -340,6 +340,36 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Focus on more using more sustainable materials, reduce the volume of packaging,", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "reduce the use of plastics, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secB-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secB-q2d-art.png",
+          "srcHash": "ed94bc84c06a964daa3764048ab1b9c4",
+          "alt": "Colour photograph of four identical flat-pack cardboard cartons standing upright on a steel bench, with a person reaching between two of them.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-b2d-ii", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "B", questionRef: "2021 OL Section B Q2(d)(ii)",
+    questionText: "The image opposite shows boxes made from corrugated cardboard. Using notes and sketches, describe what is meant by the term corrugated cardboard.",
+    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shaped into parallel ridges and grooves so", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "as to give added rigidity and strength, etc.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secB-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secB-q2d-art.png",
+          "srcHash": "ed94bc84c06a964daa3764048ab1b9c4",
+          "alt": "Colour photograph of four identical flat-pack cardboard cartons standing upright on a steel bench, with a person reaching between two of them.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1620,6 +1650,32 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c2d", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2022 OL Section C Q2(d)(i), (ii)",
+    questionText: "(i) Name the logic gates X and Y. (ii) In your answerbook, draw and complete the truth table for the combination of logic gates shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A B C D (i) Name the logic gates X and Y. B", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "0 0 0 1 X = Or gate, Y = Not gate", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "0 1 1 0 (ii) In your answerbook, draw and complete", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "1 0 1 0 the truth table for the combination of logic", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "1 1 1 0 gates shown", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "Truth Table", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q2d-art.png",
+          "srcHash": "a5adc9c0ec8e631a25dad3e5d5cd627e",
+          "alt": "A logic circuit diagram drawn with two gates. Inputs A and B enter an OR gate labelled X; its output, labelled C, feeds a NOT gate (inverter) labelled Y, whose output is labelled D.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3a-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(a)(i)",
     questionText: "Suggest two advantages of streaming movies and television shows.",
@@ -1742,6 +1798,27 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c4a-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
+    section: "C", questionRef: "2022 OL Section C Q4(a)(i)",
+    questionText: "The packaging, as shown in the image, has been mass-produced. Describe what is meant by the term mass-produced.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Manufacturing large quantities of standardized products.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q4a-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q4a-art.png",
+          "srcHash": "f105fd130205b310d95360e5ef5b3c12",
+          "alt": "Colour photograph of corrugated cardboard packaging: a stack of flat die-cut carton blanks behind three small assembled cube-shaped boxes, one of them open.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4a-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(a)(ii)",
     questionText: "Suggest two ways in which a company could be more environmentally conscious when considering the choice of packaging for their product.",
@@ -1750,6 +1827,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Using less plastic, using biodegradable materials, making packaging as small as", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "possible, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q4a-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q4a-art.png",
+          "srcHash": "f105fd130205b310d95360e5ef5b3c12",
+          "alt": "Colour photograph of corrugated cardboard packaging: a stack of flat die-cut carton blanks behind three small assembled cube-shaped boxes, one of them open.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1881,6 +1966,27 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c5b-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2022 OL Section C Q5(b)(i)",
+    questionText: "Name a suitable timber for the manufacture of the panels shown. Justify your selection.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pine, Oak, Teak, etc. Justification- Hard wearing, aesthetically pleasing. A", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q5b-art.png",
+          "srcHash": "c2a51b2de11186c6f6bcd7c8cadd8697",
+          "alt": "Colour photograph of a prefabricated timber-framed facade panel with a window and cladding being craned into place on a partly built timber-frame building. The panel is labelled A and the concrete floor slab beneath it is labelled B; two workers in helmets and harnesses guide it in.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(b)(ii)",
     questionText: "Using notes and annotated sketches, describe how the exterior panel A could be attached to the concrete floor B.",
@@ -1888,6 +1994,35 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Bolts, screws, brackets, etc.", marks: 8, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q5b-art.png",
+          "srcHash": "c2a51b2de11186c6f6bcd7c8cadd8697",
+          "alt": "Colour photograph of a prefabricated timber-framed facade panel with a window and cladding being craned into place on a partly built timber-frame building. The panel is labelled A and the concrete floor slab beneath it is labelled B; two workers in helmets and harnesses guide it in.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c5b-iii", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2022 OL Section C Q5(b)(iii)",
+    questionText: "Briefly outline two safety precautions to be observed by workers when installing the exterior panel shown.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Safety harness, safety glasses, safety shoes, etc.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q5b-art.png",
+          "srcHash": "c2a51b2de11186c6f6bcd7c8cadd8697",
+          "alt": "Colour photograph of a prefabricated timber-framed facade panel with a window and cladding being craned into place on a partly built timber-frame building. The panel is labelled A and the concrete floor slab beneath it is labelled B; two workers in helmets and harnesses guide it in.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2622,6 +2757,28 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-c2c-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2023 OL Section C Q2(c)(i)",
+    stem: "V-Vf If OR Note: R =",
+    questionText: "State two advantages of using an LED for the torch shown.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bright, low energy use, etc.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q2c-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q2c-art.png",
+          "srcHash": "7690997a731c39f03bd6f7399d311f30",
+          "alt": "Colour photograph of a black aluminium LED pocket torch lying at an angle, with a knurled grip band, a pocket clip and a reflector lens at the left end.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(c)(ii)",
     stem: "V-Vf If OR Note: R =",
@@ -2630,6 +2787,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Note: R = If 3-2/0.01 = 1/0.01 = 100 ohms", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q2c-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q2c-art.png",
+          "srcHash": "7690997a731c39f03bd6f7399d311f30",
+          "alt": "Colour photograph of a black aluminium LED pocket torch lying at an angle, with a knurled grip band, a pocket clip and a reflector lens at the left end.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3518,6 +3683,30 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-c1d-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2024 OL Section C Q1(d)(i)",
+    questionText: "Explain how a single-acting cylinder works with reference to the graphic shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A single acting cylinder has one port, which allows", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "compressed air to enter the cylinder chamber and extend the", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "rod in one direction. When the compressed air leaves the", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "cylinder, the spring returns the rod to its original position.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q1d-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q1d-art.png",
+          "srcHash": "14aef6134821763b1908a6ff42dc85aa",
+          "alt": "The pneumatic symbol for a double-acting cylinder: a rectangular barrel containing a piston and a piston rod that passes out through the right-hand end, with hatching drawn inside the barrel and a port stub beneath the left-hand end.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1d-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(d)(ii)",
     questionText: "Give one practical example of where a single-acting cylinder could be used in everyday life.",
@@ -3526,6 +3715,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Assembly operations- materials handling, clamping work,", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "packaging operations, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q1d-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q1d-art.png",
+          "srcHash": "14aef6134821763b1908a6ff42dc85aa",
+          "alt": "The pneumatic symbol for a double-acting cylinder: a rectangular barrel containing a piston and a piston rod that passes out through the right-hand end, with hatching drawn inside the barrel and a port stub beneath the left-hand end.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
