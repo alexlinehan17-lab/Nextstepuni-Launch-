@@ -291,6 +291,14 @@ SUBJECTS = {
     # the question paper's own right-hand margin. Both are printed; neither is
     # inferred.
     'portuguese': {'mode': 'sections', 'walker': 'eu'},
+    # Romanian (SEC 553) and Dutch (SEC 017) are the same examination as
+    # Portuguese was up to 2021 and still is: ONE booklet sat at ONE level in
+    # every year of the corpus, with no Listening Comprehension Test at all —
+    # so a missing '-A00-paper' for these two is the corpus being complete,
+    # not a fetch failure. Their parts are 'I', 'II' and, from 2023, 'III',
+    # and their asks are priced by the QUESTION PAPER, not by the scheme.
+    'romanian': {'mode': 'sections', 'walker': 'eu'},
+    'dutch': {'mode': 'sections', 'walker': 'eu'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -1880,6 +1888,22 @@ def eu_flags(P, S):
         if ask.fault:
             flags.append({'type': 'tariff-disagreement',
                           'where': key_label(ask.key), 'detail': ask.fault})
+    # The CLASSIC paper's own arithmetic, which is the independent check for
+    # the two subjects whose scheme prints no marks at all: the tariffs the
+    # paper prints against the first part's asks must add up to the total it
+    # prints on that part's own head.
+    if P.era == 'classic':
+        for head, (want, _denom) in P._part_totals().items():
+            asks = [a for a in P.reading_asks() if a.tariff]
+            if not asks:
+                continue
+            got = sum(a.tariff[2] for a in asks)
+            if got != want:
+                flags.append({'type': 'part-total', 'where': head,
+                              'detail': f'the paper heads this part {want} '
+                                        f'and the asks it prices under it add '
+                                        f'to {got}'})
+            break
     for (section, q), want, got in S.unsettled:
         flags.append({'type': 'question-total',
                       'where': f'Section {section} Q{q}',

@@ -79,6 +79,8 @@ import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/high
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
 import { CARDS as PORTUGUESE_ORDINARY } from '../components/MarkBank/cards/portuguese/ordinary';
+import { CARDS as ROMANIAN_HIGHER } from '../components/MarkBank/cards/romanian/higher';
+import { CARDS as DUTCH_HIGHER } from '../components/MarkBank/cards/dutch/higher';
 import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
 import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
@@ -526,6 +528,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['polish', 'ordinary', POLISH_ORDINARY],
     ['portuguese', 'higher', PORTUGUESE_HIGHER],
     ['portuguese', 'ordinary', PORTUGUESE_ORDINARY],
+    ['romanian', 'higher', ROMANIAN_HIGHER],
+    ['dutch', 'higher', DUTCH_HIGHER],
     ['arabic', 'higher', ARABIC_HIGHER],
     ['arabic', 'ordinary', ARABIC_ORDINARY],
     ['applied-maths', 'higher', AM_HIGHER],
@@ -628,6 +632,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       // itself (curriculum.ts), as Polish does, so its ids carry the
       // subject's own name rather than an abbreviation.
       portuguese: 'portuguese-',
+      // Romanian and Dutch file their cards under their own published
+      // taxonomies (curriculum.ts), as Portuguese does.
+      romanian: 'romanian-',
+      dutch: 'dutch-',
       // Classical Studies files its cards under the published Classical
       // Studies taxonomy itself, as French does — and under one further
       // strand, 'classical-studies-legacy-*', for the ten-topic syllabus the

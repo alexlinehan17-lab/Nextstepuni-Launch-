@@ -74,6 +74,10 @@ const polishCurriculum = CURRICULUM.find(subject => subject.id === 'polish');
 if (!polishCurriculum) throw new Error('Canonical Polish curriculum is missing');
 const portugueseCurriculum = CURRICULUM.find(subject => subject.id === 'portuguese');
 if (!portugueseCurriculum) throw new Error('Canonical Portuguese curriculum is missing');
+const romanianCurriculum = CURRICULUM.find(subject => subject.id === 'romanian');
+if (!romanianCurriculum) throw new Error('Canonical Romanian curriculum is missing');
+const dutchCurriculum = CURRICULUM.find(subject => subject.id === 'dutch');
+if (!dutchCurriculum) throw new Error('Canonical Dutch curriculum is missing');
 const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
 if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
 const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
@@ -1135,6 +1139,40 @@ export const PORTUGUESE_STRANDS: StrandRef[] = portugueseCurriculum.strands.map(
   })),
 }));
 
+/**
+ * Romanian and Dutch — the two NON-CURRICULAR EU LANGUAGES whose examination
+ * never changed. Both are sat as ONE booklet at ONE level in every year of the
+ * corpus, with no Listening Comprehension Test, and both published taxonomies
+ * name that paper's parts one for one: a vocabulary question and a set of
+ * comprehension questions in Part I, and the written production after it.
+ *
+ * Mark Bank cards reach the reading topics only: the scheme prices the written
+ * parts by percentages of qualities (Romanian) or prints nothing under them at
+ * all (Dutch). The whole taxonomy still ships — a student browsing either
+ * should see the shape of their examination, not only the part that is carded.
+ */
+export const ROMANIAN_STRANDS: StrandRef[] = romanianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const DUTCH_STRANDS: StrandRef[] = dutchCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1382,6 +1420,8 @@ export const SUBJECTS = [
   { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
   { id: 'polish', title: 'Polish', strands: POLISH_STRANDS, spec: 'Leaving Certificate Polish, a non-curricular EU language' },
   { id: 'portuguese', title: 'Portuguese', strands: PORTUGUESE_STRANDS, spec: 'Leaving Certificate Portuguese, a non-curricular EU language' },
+  { id: 'romanian', title: 'Romanian', strands: ROMANIAN_STRANDS, spec: 'Leaving Certificate Romanian, a non-curricular EU language' },
+  { id: 'dutch', title: 'Dutch', strands: DUTCH_STRANDS, spec: 'Leaving Certificate Dutch, a non-curricular EU language' },
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
   { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
   { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
@@ -1691,6 +1731,12 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   portuguese: {
     higher: () => import('./cards/portuguese/higher'),
     ordinary: () => import('./cards/portuguese/ordinary'),
+  },
+  romanian: {
+    higher: () => import('./cards/romanian/higher'),
+  },
+  dutch: {
+    higher: () => import('./cards/dutch/higher'),
   },
   arabic: {
     higher: () => import('./cards/arabic/higher'),

@@ -12608,6 +12608,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "dutch-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "dutch-1-1",
+            "name": "Essay on a set quotation (Part III, from 2023)"
           }
         ]
       }
@@ -12846,6 +12850,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "romanian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "romanian-1-1",
+            "name": "Essay on a set quotation (Part III, from 2023)"
           }
         ]
       }

@@ -54,7 +54,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 from markbank_text import unligature                            # noqa: E402
-from eu_paper import LANGS, cfg, next_letter                    # noqa: E402
+from eu_paper import (LANGS, cfg, next_letter,                   # noqa: E402
+                      LETTER_COLON)
 
 
 def schemes_dir(subject):
@@ -240,7 +241,7 @@ FURNITURE = re.compile(
     r'Marking\s+Scheme|Higher\s+Level\s*$|Ordinary\s+Level\s*$|'
     r'\[Escreva aqui\])', re.I)
 # Examiner rubric, which is never an answer.
-NOTE = re.compile(r'^(?:Note\s*:|N\.?B\.?\b|Accept\b|Allow\b|Penali[sz]e\b|'
+NOTE = re.compile(r'^(?:Note?[ăa]?\s*:|N\.?B\.?\b|Accept\b|Allow\b|Penali[sz]e\b|'
                   r'If\s+the\s+candidate\b|Answer\s+questions?\b|'
                   r'Responda\b|Based\s+on\b|Baseado\b|Tick\s*\(|'
                   r'Assinale\b|Complete\s+the\s+table\b)', re.I)
@@ -250,7 +251,8 @@ REF_ONLY = re.compile(r'^\((?:par[áa]grafos?|paragraphs?|parte|part|'
                       r'alinea|alínea|sections?)\b[^)]*\)$', re.I)
 # The classic scheme's own head, which prices a PART and nothing under it.
 CLASSIC_PART = re.compile(
-    r'^(?:Parte|PARTEA|Deel)\s+(I{1,3}|a\s*I{1,2}I?-?a|[123])\b', re.I)
+    r'^(?:Parte|PARTEA|Deel)\s+(I{1,3}|a\s*I{1,2}I?\s*[-‐–]\s*a|[123])\b',
+    re.I)
 
 
 class Ask:
@@ -627,6 +629,13 @@ class EuScheme:
         """
         asks, part, q, letter = [], None, None, None
         current = None
+        broke = False
+        noted = False
+        # The Dutch scheme letters its first question's parts with a COLON,
+        # exactly as its paper does — "a: 'Het' in de zin:" — so the two
+        # documents are read with the same marker form or they do not pair.
+        letter_pat = (LETTER_COLON if cfg(self.subject, 'letter') == 'colon'
+                      else LETTER)
 
         def close():
             nonlocal current
@@ -649,30 +658,61 @@ class EuScheme:
             if part != 'I':
                 self.grid_lines.append(text)
                 continue
+            # The examiner's NOTE closes the ask above it and everything after
+            # it belongs to no ask at all: the Romanian scheme heads the four
+            # criteria it prices the written parts by "Notă:", and read as
+            # more of Question 6 that whole table shipped inside the answer.
+            if NOTE.match(text):
+                close()
+                noted = True
+                continue
             nm = NUMBERED.match(text)
-            lm = LETTER.match(text)
+            lm = letter_pat.match(text)
             if nm and int(nm.group(1)) == (q or 0) + 1:
                 close()
+                noted = False
                 q, letter = int(nm.group(1)), None
                 rest = nm.group(2)
-                inner = LETTER.match(rest)
+                inner = letter_pat.match(rest)
                 if inner:
                     letter, rest = inner.group(1).lower(), inner.group(2)
                 current = Ask(part, q, letter, None, '', row.page)
+                broke = False
                 if rest:
                     current.answers.append({'text': rest, 'marks': None})
                 continue
             if lm and q is not None \
                     and lm.group(1).lower() == next_letter(letter):
                 close()
+                noted = False
                 letter = lm.group(1).lower()
                 current = Ask(part, q, letter, None, '', row.page)
+                broke = False
                 if lm.group(2):
                     current.answers.append({'text': lm.group(2),
                                             'marks': None})
                 continue
+            # A row that is only a paragraph reference or only a price is a
+            # BOUNDARY, not an answer: the classic schemes print the question,
+            # then "(alinea 1) (1 punt)", then the answer. Dropped silently the
+            # answer after it read as a wrapped continuation of the question
+            # above — "mogelijk, iets wat een probleem kan worden" was welded
+            # onto the sentence it answers and two Dutch asks shipped none.
+            if row.cells and all(REF_ONLY.match(c) or _is_price_only(c)
+                                 for _x, c in row.cells):
+                broke = True
+                continue
+            if noted:
+                continue
             if current is not None:
-                _add_answer(current, text, None)
+                # A bulleted row is a marking point of its own however it
+                # reads: the 2021 Dutch scheme answers Question 2 with six
+                # one-word bullets — "‐ rouw", "‐ ellende", "‐ verdriet" — and
+                # judged on their first letter alone every one of them was
+                # welded onto the question above.
+                _add_answer(current, text,
+                            opened=broke or bool(BULLET.match(text)))
+                broke = False
         close()
         return asks
 
@@ -741,6 +781,16 @@ def pairs_by_question(paper_leaves, scheme_leaves):
         out.update(made)
         how[key] = kind
     return out, how
+
+
+# A row that states only a price, in any of the family's words for one.
+PRICE_ONLY = re.compile(
+    r'^\(?\s*(?:\d{1,2}\s*[x×]\s*)?\d{1,3}\s*'
+    r'(?:puncte|punct|punten|punt|pontos|ponto|marks?)\s*\)?\.?$', re.I)
+
+
+def _is_price_only(text):
+    return bool(PRICE_ONLY.match(text.strip()))
 
 
 def _classic_part_token(raw):
@@ -856,14 +906,29 @@ def _continues_cue(ask, row, body, has_heads, price_cells):
     return False
 
 
-CONTINUATION = re.compile(r'^[a-z\u00e0-\u024f(]')
-
-
 def _looks_new(text):
     """A marking point starts with a capital or a digit; a wrapped line does
     not. Only the first character decides, and only for rows the SEC opened
-    with no bullet."""
-    return not CONTINUATION.match(text)
+    with no bullet.
+
+    Tested with `islower()` rather than against a character RANGE. The range
+    that was here — a-z plus U+00E0 to U+024F — is the accented block's LOWER
+    half plus half its upper half, so Romanian's "Ținând cont de ideile
+    regăsite în text" opened with what Unicode calls U+021A, inside the range,
+    and a reprinted question was welded onto the examiner's criterion above it
+    and shipped as the answer.
+    """
+    body = text.lstrip()
+    if not body or body[0] == '(':
+        return False
+    # The FIRST character, not the first letter in the line: an alternative
+    # answer opening "“…uma biblioteca de pessoas que promove eventos" begins
+    # with a quotation mark and an ellipsis, and skipping to the first letter
+    # made it a continuation of the answer above it and merged two things a
+    # candidate chooses between into one.
+    if body[0].isalpha():
+        return not body[0].islower()
+    return True
 
 
 def _add_answer(ask, text, opened=False):

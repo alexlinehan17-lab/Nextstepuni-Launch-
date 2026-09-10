@@ -75,9 +75,12 @@ LANGS = {
         # numbers: "Tópico 1", "Tópico 2". The scheme numbers them "Tema 1"
         # and "Tema 2", so the paper's own title carries the number.
         'essay_title': r'^T[óo]pico\s+(\d)\b',
+        # The `\b` used to close the whole run, so it had to hold after the
+        # DASH of the running head — and "Portuguese – Higher Level" has a
+        # space there, so the foot of every page reached the ask above it.
         'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
-                      r'State\s+Examinations|Portuguese\s*[–—-]|'
-                      r'Page\s*\d+)\b|^\d{1,3}$'),
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Portuguese\s*[–—-]|^\d{1,3}$'),
         # The attribution the SEC prints under a reading text.
         'source_line': (r'^(?:Adaptado|Adapta[çc][ãa]o|Texto\s+adaptado|'
                         r'Fonte\s*:|In\s*:|Retirado)'),
@@ -85,6 +88,61 @@ LANGS = {
         'rubric': (r'^(?:Responda\b|Answer\b|Based\s+on\b|Baseado\b|'
                    r'Leia\s+(?:o|este|atentamente)\b|Escreva\b|'
                    r'Todas\s+as\s+respostas\b|Observe\s+as\s+imagens\b)'),
+    },
+    # Romanian (SEC 553) is sat at ONE level in every year of the corpus and
+    # prints ONE booklet with no Listening Comprehension Test at all, so only
+    # the classic path is ever walked. Its parts are numbered in Romanian
+    # ordinals — "PARTEA I", "PARTEA a II-a", "PARTEA a III-a" — and the third
+    # part appears only from 2023; 2021 and 2022 set two.
+    'romanian': {
+        'name': 'Romanian',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        'classic_part': r'^PARTEA\s+(I{1,3}|a\s*I{1,2}I?\s*[-‐–]\s*a)\b',
+        'classic_part_map': {},
+        # The two quotations the third part offers. The SEC letters them
+        # "a." and "b." in 2024 and numbers them "1." and "2." in 2023 and
+        # 2025, and both forms are read — inside a WRITING part only, where a
+        # bare "1." cannot be a question because the questions are all in the
+        # first part.
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        # The `\b` used to close the whole run, so it had to hold after the
+        # DASH of the running head — and "Romanian – Higher Level" has a
+        # space there, so the foot of every page reached the ask above it.
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Romanian\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Adaptare|Text\s+adaptat|Sursa\s*:|Publicat\s+în)',
+        'rubric': (r'^(?:R[ăa]spunde[țt]i\b|Citi[țt]i\b|Scrie[țt]i\b|'
+                   r'Discuta[țt]i\b|[ÎI]NTREB[ĂA]RI\b)'),
+    },
+    # Dutch (SEC 017) is Romanian's twin in shape: ONE level, ONE booklet, no
+    # Listening Comprehension Test, and parts numbered "Deel 1", "Deel 2" and
+    # — from 2023 — "Deel 3". Its reading text numbers its paragraphs with a
+    # bare "10" and its questions with "1)", so the full stop or bracket after
+    # the digit is what tells an ask from a paragraph of the passage.
+    'dutch': {
+        'name': 'Dutch',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        'classic_part': r'^Deel\s+([123])\b',
+        'classic_part_map': {'1': 'I', '2': 'II', '3': 'III'},
+        # The two topics the last part offers. The SEC letters them "a)" and
+        # "b)" up to 2024 and numbers them "1." and "2." in 2025, and both are
+        # read — inside a WRITING part only.
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'letter': 'colon',
+        # The `\b` used to close the whole run, so it had to hold after the
+        # DASH of the running head — and "Dutch – Higher Level" has a
+        # space there, so the foot of every page reached the ask above it.
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Dutch\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Bron\s*:|Naar\s+aanleiding|Uit\s*:|Bewerkt)',
+        'rubric': (r'^(?:Vragen\b|Beantwoord\b|Lees\b|Schrijf\b|'
+                   r'Alle\s+antwoorden\b|Geef\s+je\s+eigen)'),
     },
 }
 
@@ -169,9 +227,33 @@ LETTER_TOL = 8.0
 # How far below a kept line the next one may sit and still be the same ask.
 # Below the ask comes the answer space, which is blank.
 LINE_GAP = 32.0
+# How far past the page's own left margin a question head may be set and still
+# be a question head. The 2025 Dutch booklet indents "1. Wat betekenen volgende
+# woorden of uitdrukkingen:" to x=74.6 where its passage sets at 56.7, and a
+# margin-tight window found no question in that sitting at all. Safe at this
+# width because the number still has to be the NEXT one in the run, which no
+# line of a passage ever is.
+HEAD_INDENT = 30.0
+# How far below its ask the SEC may set that ask's right-margin price.
+TARIFF_GAP = 70.0
+# How far ABOVE the line before it a line may sit and still follow it. Two
+# cells of one printed row do not share a vertical centre to the point: the
+# 2021 Romanian paper sets "principii." at y=399.96 and the "(5 puncte)" it is
+# priced by at y=399.90, six hundredths of a point higher, and a window that
+# started at zero dropped the price of that question on the floor.
+BAND_TOL = 4.0
+# Where the right-hand marks margin of a classic booklet starts.
+TARIFF_X = 380.0
 
 
-def read_lines(path):
+def _is_tariff_cell(line):
+    return line.x >= TARIFF_X and bool(
+        re.fullmatch(r'\(\s*(?:\d{1,2}\s*[x×]\s*)?\d{1,3}\s*'
+                     r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark)?'
+                     r'\s*\)', line.text.strip(), re.I))
+
+
+def read_lines(path, drop=None):
     """Every printed line, in reading order, with the marker column intact.
 
     A part marker is set in its own table cell — "(b)" at x=56.7 and its
@@ -191,6 +273,12 @@ def read_lines(path):
                     if not text:
                         continue
                     x0, y0, x1, y1 = line['bbox']
+                    # Page furniture is dropped BEFORE markers are glued, not
+                    # after: the running footer "Romanian – Higher Level" sits
+                    # within one cell-height of a marker at the foot of a page,
+                    # and glued to it, it shipped inside the ask's own words.
+                    if drop is not None and len(text) < 60 and drop.match(text):
+                        continue
                     raw.append(Line(pno, x0, (y0 + y1) / 2, x1, text))
             raw.sort(key=lambda l: (round(l.y, 0), l.x))
             out += _join_markers(raw)
@@ -233,6 +321,12 @@ def _join_markers(lines):
 # A lettered part, in either of the two ways this family prints one: "(a)" in
 # the modern booklets and a bare "a)" in the classic ones.
 LETTER = re.compile(r'^\(?\s*([a-l])\s*\)\s*(.*)$', re.I)
+# The Dutch booklet letters the parts of its first question with a COLON —
+# "a: 'Het' in de zin:" — where every other paper in the family uses a
+# bracket. Kept per subject rather than widened for all three, because a
+# bracket is unambiguous and a colon is not: "Verbeek: 'Het beïnvloedt…'" is a
+# line of the passage.
+LETTER_COLON = re.compile(r'^\(?\s*([a-l])\s*[):]\s*(.*)$', re.I)
 ROMAN = re.compile(r'^\(\s*(i{1,3}|iv|vi{0,3}|ix|x)\s*\)\s*(.*)$', re.I)
 NUMBERED = re.compile(r'^\(?(\d{1,2})\s*[.)]\s*(.*)$')
 # The first roman marker printed INSIDE an item's own line, after its stem.
@@ -244,13 +338,13 @@ LETTERS = 'abcdefghijkl'
 # print answers with no marks beside them at all.
 PAPER_TARIFF = re.compile(
     r'\(\s*(?:(\d{1,2})\s*[x×]\s*)?(\d{1,2})\s*'
-    r'(?:puncte|puncts?|punte|punt|punten|pontos?|marks?|m)?\s*\)', re.I)
+    r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark|m)?\s*\)', re.I)
 # The same, with the multiplier written second: "(5×1)" is five answers at one
 # point each and the SEC also sets "(1×5)". Both are read, and which is the
 # count is settled by the group beneath it, never by picking the larger.
 TRAILING_MARK = re.compile(
     r'\s*\(\s*\d{1,2}\s*(?:[x×]\s*\d{1,2}\s*)?'
-    r'(?:puncte|puncts?|punte|punt|punten|pontos?|marks?)?\s*\)\s*$', re.I)
+    r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark)?\s*\)\s*$', re.I)
 
 
 def next_letter(current):
@@ -307,7 +401,8 @@ class EuPaper:
         # The era, read from the booklets on disk rather than from a year.
         self.era = ('modern' if self.path.endswith('-000-paper.pdf')
                     else 'classic')
-        self.lines = read_lines(self.path)
+        self.furniture = re.compile(cfg(subject, 'furniture'), re.I)
+        self.lines = read_lines(self.path, self.furniture)
         self.flags = []
         self.text_pages = {}          # question number -> [pages of its text]
         self.leads = {}               # question number -> its printed title
@@ -327,14 +422,15 @@ class EuPaper:
         outlier four points left of the column its thirty siblings sit in put
         every real letter outside the tolerance when the minimum was used.
         """
-        head = re.compile(cfg(self.subject, 'q_head'))
+        pattern = cfg(self.subject, 'q_head')
+        head = re.compile(pattern) if pattern else None
         by_q, q = {}, None
         for line in self.lines:
-            m = head.match(line.text)
+            m = head.match(line.text) if head else None
             if m:
                 q = int(m.group(1))
                 continue
-            if re.match(r'^\(?\s*[a-hj-l]\s*\)\s', line.text):
+            if re.match(r'^\(?\s*[a-hj-l]\s*[):]\s', line.text):
                 by_q.setdefault(q, []).append(round(line.x))
         self.letter_x_by_q = {k: max(set(v), key=v.count)
                               for k, v in by_q.items()}
@@ -465,65 +561,105 @@ class EuPaper:
         The passage comes first and the questions after it, both at the same
         left margin. What separates them is not wording: it is the SEC's own
         NUMBERING. A question opens with the number after the one before it —
-        1, then 2, then 3 — printed with a full stop at the part's left margin,
-        and no line of a passage does that. Reading the boundary off an
-        attribution line instead found nothing at all in 2021, whose text is
+        1, then 2, then 3 — printed with a full stop or a bracket at the
+        part's left margin, and no line of a passage does that. (The Dutch
+        booklet proves the rule from the other side: it numbers its passage
+        PARAGRAPHS too, "10 Schilders als Rembrandt…", and prints them with no
+        stop and no bracket at all.) Reading the boundary off an attribution
+        line instead found nothing at all in Portuguese 2021, whose text is
         signed "Sophia de Mello Breyner Andresen, in Contos Exemplares".
 
         The tariff is printed HERE, in the right-hand margin — "(5)", "(5×1)",
-        "(5 puncte)" — and nowhere else in the sitting's two documents, because
-        the classic schemes print answers with no marks beside them at all.
+        "(5 puncte)", "(1 punt)" — and nowhere else in the sitting's two
+        documents, because the classic schemes print answers with no marks
+        beside them at all.
+
+        Only the FIRST part sets numbered questions. The parts after it are
+        written production: either a single prompt, or two titled options the
+        candidate chooses between, and both are read here so that the
+        denominator holds them and the exclusions ledger can answer for them.
         """
         part_pat = re.compile(cfg(self.subject, 'classic_part'), re.I)
-        part_map = cfg(self.subject, 'classic_part_map')
+        part_map = cfg(self.subject, 'classic_part_map') or {}
         essay_pat = cfg(self.subject, 'essay_title')
         essay_pat = re.compile(essay_pat, re.I) if essay_pat else None
+        letter_pat = (LETTER_COLON if cfg(self.subject, 'letter') == 'colon'
+                      else LETTER)
         furniture = re.compile(cfg(self.subject, 'furniture'), re.I)
 
         asks, part, q, letter = [], None, None, None
         current, last_y = None, None
         text_pages = {}
+        first_part = None
+        # The writing part's own prompt, gathered until an option marker
+        # appears. If none does, the whole prompt IS the part's single ask.
+        prompt, prompt_page = [], None
 
         def close():
             nonlocal current
             if current is not None:
                 _read_paper_tariff(current)
-                current.text = _norm(TRAILING_MARK.sub('', current.text))
+                # Every printed price comes OUT of the ask's own words, not
+                # just a trailing one: the Dutch paper sets "(alinea 1)(1
+                # punt)" in the middle of Question 1(c) and the card carried
+                # its own tariff inside the question.
+                current.text = _norm(PAPER_TARIFF.sub(' ', current.text))
                 asks.append(current)
                 current = None
+
+        def close_part():
+            nonlocal prompt, prompt_page
+            close()
+            if part is not None and part != first_part and prompt \
+                    and not any(a.section == part for a in asks):
+                asks.append(Ask(part, 1, None, None, _norm(' '.join(prompt)),
+                                prompt_page or 1))
+            prompt, prompt_page = [], None
 
         for line in self.lines:
             if furniture.match(line.text) and len(line.text) < 60:
                 continue
             pm = part_pat.match(line.text)
             if pm:
-                close()
+                close_part()
                 token = pm.group(1).lower()
-                part = part_map.get(token, token.upper())
+                part = part_map.get(token) or _part_token(token)
+                first_part = first_part or part
                 q, letter = None, None
                 continue
             if part is None:
                 continue
+            if part != first_part:
+                # A WRITING part. Only a titled option opens an ask here; every
+                # other line is the prompt those options are chosen under.
+                em = essay_pat.match(line.text) if essay_pat else None
+                if em:
+                    close()
+                    q = _option_number(em.group(1))
+                    current = Ask(part, q, None, None, line.text, line.page)
+                    last_y = line.y
+                    continue
+                if current is not None and last_y is not None \
+                        and 0 <= line.y - last_y <= LINE_GAP \
+                        and line.page == current.page:
+                    current.text += ' ' + line.text
+                    last_y = line.y
+                    continue
+                close()
+                prompt.append(line.text)
+                prompt_page = prompt_page or line.page
+                continue
             nm = NUMBERED.match(line.text)
-            lm = LETTER.match(line.text)
+            lm = letter_pat.match(line.text)
             # The number after the one before it, at the left margin, IS the
             # next question. Both conditions: a passage sentence can open with
             # a year and a full stop, and a wrapped line can start at the
             # margin, but neither is ever the next number in the run.
             if nm and int(nm.group(1)) == (q or 0) + 1 \
-                    and line.x <= self.left_margin + LETTER_TOL:
+                    and line.x <= self.left_margin + HEAD_INDENT:
                 close()
                 q, letter = int(nm.group(1)), None
                 current = Ask(part, q, None, None, nm.group(2), line.page)
-                last_y = line.y
-                continue
-            # The essay options of the second part, which the SEC titles
-            # rather than numbers: "Tópico 1", "Tópico 2".
-            if essay_pat is not None and essay_pat.match(line.text):
-                close()
-                q = int(essay_pat.match(line.text).group(1))
-                letter = None
-                current = Ask(part, q, None, None, line.text, line.page)
                 last_y = line.y
                 continue
             if lm and q is not None \
@@ -535,8 +671,14 @@ class EuPaper:
                 last_y = line.y
                 continue
             if current is not None and last_y is not None \
-                    and 0 <= line.y - last_y <= LINE_GAP \
-                    and line.page == current.page:
+                    and line.page == current.page \
+                    and -BAND_TOL <= line.y - last_y <= (TARIFF_GAP
+                                                         if _is_tariff_cell(line)
+                                                         else LINE_GAP):
+                # A right-margin price belongs to the ask above it however far
+                # down the SEC set it: the 2021 Romanian paper prints Question
+                # 6 over two lines and its "(5 puncte)" thirty-four points
+                # below them, and a line-gap window left that ask unpriced.
                 current.text += ' ' + line.text
                 last_y = line.y
                 continue
@@ -545,14 +687,16 @@ class EuPaper:
                 text_pages.setdefault(part, [])
                 if line.page not in text_pages[part]:
                     text_pages[part].append(line.page)
-        close()
+        close_part()
         # The classic examination sets its text or texts before the questions
         # and asks every question of the part about them, so the pages are
         # collected under the PART and handed to each of its questions.
         self.text_pages = {}
+        pages = text_pages.get(first_part) or []
         for a in asks:
-            self.text_pages.setdefault(a.q, text_pages.get(a.section) or [])
+            self.text_pages.setdefault(a.q, pages)
         self.leads = {}
+        asks = _dedupe(asks)
         _walk_down_paper_splits(asks)
         return asks
 
@@ -609,7 +753,7 @@ class EuPaper:
                 asks.append(current)
                 current = None
 
-        lines = read_lines(self.aural_path)
+        lines = read_lines(self.aural_path, self.furniture)
         by_page = self._section_by_page(lines, aural_tab)
         for line in lines:
             if furniture.match(line.text) and len(line.text) < 60:
@@ -705,6 +849,12 @@ class EuPaper:
     def aural_asks(self):
         return [a for a in self.all_asks() if (a.section or '').startswith('L')]
 
+    def _part_totals(self):
+        pattern = cfg(self.subject, 'classic_part')
+        if not pattern:
+            return {}
+        return _part_head_tariff(self.lines, re.compile(pattern, re.I))
+
     def lead(self, q):
         return self.leads.get(q, '')
 
@@ -712,7 +862,25 @@ class EuPaper:
         return self.text_pages.get(q) or []
 
     def cover_marks(self):
-        """What the booklets say on their own covers or instructions, added."""
+        """What the booklets say on their own covers or instructions, added.
+
+        A CLASSIC booklet may state no total at all — the 2021 Dutch paper
+        prints "(30 punten)" beside Deel 1 and "(40 punten)" beside Deel 2 and
+        nowhere says seventy — so where the sentence is absent the PART HEADS
+        are added instead. Both are printed on the paper; nothing is inferred.
+        """
+        if self.era == 'classic':
+            parts = self._part_totals()
+            # The Romanian paper prints each part's share AND the paper's own
+            # total in one cell — "(30/100)" — so where that denominator is
+            # printed it is the total, and a sum is not needed. The 2023 paper
+            # sets no cell at all beside "PARTEA a II-a", and summed it made a
+            # hundred-mark paper look like a seventy-mark one.
+            denom = {d for _v, d in parts.values() if d}
+            if len(denom) == 1:
+                return denom.pop()
+            if parts:
+                return sum(v for v, _d in parts.values())
         total = 0
         for path in [self.path] + ([self.aural_path] if self.aural_path else []):
             with pymupdf.open(path) as doc:
@@ -722,9 +890,14 @@ class EuPaper:
             # per-section figure: "This examination carries 180 marks in
             # total." Taking the first "N marks" on the page instead took
             # Section A's 50 in 2022 and called the booklet a 50-mark paper.
+            # The sentence the booklet states its own total in, before any
+            # per-section figure: "This examination carries 180 marks in
+            # total.", "Maximum: 100 de puncte", "Totaal: 100 punten". Taking
+            # the first "N marks" on the page instead took Section A's 50 in
+            # 2022 and called the booklet a 50-mark paper.
             m = re.search(r'carries\s+(\d{2,3})\s*marks', text, re.I) \
-                or re.search(r'(?:M[áa]ximo|Maximum)\s*(?:de)?\s*(\d{2,3})\b',
-                             text, re.I) \
+                or re.search(r'(?:M[áa]ximo|Maximum|Totaal|Total)'
+                             r'[^\d\n]{0,30}?(\d{2,3})\b', text, re.I) \
                 or re.search(r'(\d{2,3})\s*marks\b', text, re.I)
             if m:
                 total += int(m.group(1))
@@ -735,6 +908,21 @@ class EuPaper:
 # an ask's text: 2024 Ordinary's Question 5(c) is a picture with "OU" above it,
 # and read as the option's own words it censused as a leaf saying "OU".
 CHOICE_ONLY = re.compile(r'^\s*(?:OU|OR|NO)\s*$', re.I)
+
+
+def _part_token(raw):
+    """"i", "a ii-a", "2" — the part number, as a Roman numeral token."""
+    raw = re.sub(r'[\s‐–-]', '', raw.lower())
+    table = {'i': 'I', 'ii': 'II', 'iii': 'III',
+             'aiia': 'II', 'aiiia': 'III',
+             '1': 'I', '2': 'II', '3': 'III'}
+    return table.get(raw, raw.upper())
+
+
+def _option_number(raw):
+    """The option's own number, whether the SEC titled it "1" or "a"."""
+    raw = raw.strip().lower()
+    return int(raw) if raw.isdigit() else ord(raw) - ord('a') + 1
 
 
 def _dedupe(asks):
@@ -757,6 +945,36 @@ def _dedupe(asks):
     return [best[k] for k in order]
 
 
+def _part_head_tariff(lines, part_pat):
+    """{part head text: the marks printed beside it}, from the same baseline.
+
+    The SEC right-aligns a part's own total against the head that names it —
+    "PARTEA I" at x=56.7 and "(30/100)" at x=467.8 on one line — and pymupdf
+    reports the two as separate lines, so they are put back together by y.
+    """
+    out = {}
+    for i, line in enumerate(lines):
+        if not part_pat.match(line.text):
+            continue
+        for other in lines[max(0, i - 3):i + 4]:
+            if other is line or other.page != line.page:
+                continue
+            if abs(other.y - line.y) > 4.0 or other.x < line.x + 40:
+                continue
+            # At the END of the cell, not the whole of it: the 2023 Dutch
+            # paper prints "tekstbegrip (30 punten)" as one text cell, and a
+            # whole-cell match found no total for Deel 1 at all.
+            m = re.search(
+                r'\(\s*(\d{1,3})\s*(?:/\s*(\d{1,3})\s*)?'
+                r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark)?\s*\)$',
+                other.text.strip(), re.I)
+            if m:
+                out[line.text] = (int(m.group(1)),
+                                  int(m.group(2)) if m.group(2) else None)
+                break
+    return out
+
+
 def _walk_down_paper_splits(asks):
     """A split printed on the QUESTION, walked down to the parts it prices.
 
@@ -771,12 +989,29 @@ def _walk_down_paper_splits(asks):
     for a in asks:
         if a.letter:
             kids.setdefault((a.section, a.q), []).append(a)
+    parents = {(a.section, a.q): a for a in asks if a.letter is None}
+    # A "N × M" price is the GROUP's, wherever the SEC set it. The Romanian
+    # paper right-aligns "(5 × 1 punct)" against the last of Question 1's five
+    # expressions, so it lands on the baseline of "e) ființă socială" — and
+    # read as that ask's own price it made one expression worth five marks and
+    # the other four worth nothing.
+    for key, group in kids.items():
+        parent = parents.get(key)
+        if parent is None or parent.tariff is not None:
+            continue
+        split = [k for k in group
+                 if k.tariff and k.tariff[0] > 1 and k.tariff[1] is not None]
+        if len(split) == 1 and split[0].tariff[0] == len(group):
+            parent.tariff, parent.notation = split[0].tariff, split[0].notation
+            split[0].tariff, split[0].notation = None, ''
+            split[0].text = _norm(TRAILING_MARK.sub('', split[0].text))
     for a in asks:
         if a.letter or a.tariff is None:
             continue
         group = kids.get((a.section, a.q)) or []
         count, per, _total = a.tariff
-        if not group or len(group) != count or any(k.tariff for k in group):
+        if per is None or not group or len(group) != count \
+                or any(k.tariff for k in group):
             continue
         for kid in group:
             kid.tariff = (1, per, per)
@@ -791,16 +1026,29 @@ def _read_paper_tariff(ask):
     and neither is invented — a classic sitting whose ask carries no bracketed
     number keeps `tariff = None` and is refused rather than priced by guesswork.
     """
-    m = None
-    for candidate in PAPER_TARIFF.finditer(ask.text):
-        m = candidate                       # the LAST one on the ask's lines
-    if not m:
+    found = list(PAPER_TARIFF.finditer(ask.text))
+    if not found:
         return
-    if m.group(1):
+    split = [m for m in found if m.group(1)]
+    if split:
+        m = split[-1]
         count, per = int(m.group(1)), int(m.group(2))
         ask.tariff = (count, per, count * per)
-    else:
-        ask.tariff = (1, int(m.group(2)), int(m.group(2)))
+        ask.notation = m.group(0).strip()
+        return
+    if len(found) > 1:
+        # SEVERAL flat prices against one printed ask, which is the SEC
+        # pricing two requirements inside it: 2022 Dutch Question 2 reads
+        # "Geef drie voorbeelden … (3 punten) Leg ook uit waarom … (2 punten)"
+        # and is worth five. Taking the last of them made the question worth
+        # two, and Deel 1 then added to 27 against the 30 its own head prints
+        # — which is how this was found.
+        total = sum(int(m.group(2)) for m in found)
+        ask.tariff = (len(found), None, total)
+        ask.notation = ' + '.join(m.group(0).strip() for m in found)
+        return
+    m = found[0]
+    ask.tariff = (1, int(m.group(2)), int(m.group(2)))
     ask.notation = m.group(0).strip()
 
 

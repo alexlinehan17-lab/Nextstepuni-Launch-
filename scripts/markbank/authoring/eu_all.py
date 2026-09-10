@@ -120,13 +120,33 @@ GRID_EVIDENCE = (
     'student to tick "Very good range of vocabulary" as something they were '
     'supposed to have written.')
 
-ESSAY_CLASSIC_EVIDENCE = (
-    'the scheme answers this with a MODEL COMMENTARY, not a marking list, and '
-    'prices no line of it. Its head reads "PARTE II (40 pontos) (Comentário '
-    'pessoal, correcto e fluente em cerca de 300 palavras.)" and then prints '
-    'three hundred words of continuous prose an examiner is to read as an '
-    'example. There is no tariff beside any sentence of it, so there is '
-    'nothing a student could be marked right or wrong against.')
+ESSAY_CLASSIC_EVIDENCE = {
+    'portuguese': (
+        'the scheme answers this with a MODEL COMMENTARY, not a marking list, '
+        'and prices no line of it. Its head reads "PARTE II (40 pontos) '
+        '(Comentário pessoal, correcto e fluente em cerca de 300 palavras.)" '
+        'and then prints three hundred words of continuous prose an examiner '
+        'is to read as an example. There is no tariff beside any sentence of '
+        'it, so there is nothing a student could be marked right or wrong '
+        'against.'),
+    'romanian': (
+        'the scheme prices this task by PERCENTAGES of qualities, not by '
+        'marking points. Its own note reads "La Partea a II-a și la Partea '
+        'III-a, vor fi luate în considerare, pentru acordarea punctajului, '
+        'următoarele criterii: 1. Claritatea scopului — candidatul înțelege '
+        'întrebarea şi răspunde într-un mod clar — 30%; 2. Coerența '
+        'răspunsurilor — 30%; 3. Eficiența limbajului — 30%; 4. Respectarea '
+        'regulilor de gramatică, de ortografie și de punctuație — 10%." Those '
+        'are the qualities of a piece of writing, and where the scheme goes '
+        'on to print prose under the task it is a model essay an examiner '
+        'reads as an example, priced nowhere.'),
+    'dutch': (
+        'the scheme prints NOTHING under this task. It reprints the SEC\'s own '
+        'wording — "Deel 3: Opstel (40 punten) · Schrijf een opstel (minimum '
+        '300 woorden) over één van de volgende onderwerpen:" and the two '
+        'topics beneath it — and then the document ends. There is no answer, '
+        'no indicative content and no tariff beside any line of it.'),
+}
 
 AUDIO_EVIDENCE = (
     'the ask can only be answered from the recording. The Listening '
@@ -171,6 +191,9 @@ def build(subject):
         # and where it does not hold the two documents are joined in printed
         # order — with every pair scored on wording below.
         priced, how = pairs_by_question(P.reading_asks(), S.reading())
+        if P.era == 'classic':
+            priced, how = _classic_pairs(P.reading_asks(), S.reading(),
+                                         priced, how)
         stamp = f'{year} {level.upper()}'
         for ask in P.all_asks():
             key = ask.key
@@ -182,10 +205,10 @@ def build(subject):
                             f'Part {section[1:]}: {AUDIO_EVIDENCE}')
                 continue
             if section in ('II', 'III'):
-                refuse('the scheme answers this with a model commentary and '
-                       'prices no line of it', ref,
-                       f'{stamp} scheme, Segunda Parte: '
-                       f'{ESSAY_CLASSIC_EVIDENCE}')
+                refuse('the scheme prices no line of this written-production '
+                       'task', ref,
+                       f'{stamp} scheme, Part {section}: '
+                       f'{ESSAY_CLASSIC_EVIDENCE[subject]}')
                 continue
             if section == 'B':
                 refuse('the scheme prints a content-and-language band grid '
@@ -277,6 +300,9 @@ def _reading(P, S, priced, ask, subject, year, level, ref, cards, refuse,
         notation = sch.notation
 
     answers = [a for a in sch.answers if a['text']]
+    if P.era == 'classic':
+        answers = _classic_answers(answers, question)
+        sch.answers = answers
     if not answers:
         sch.answers = _recovered_answer(sch, question)
         answers = sch.answers
@@ -310,6 +336,19 @@ def _reading(P, S, priced, ask, subject, year, level, ref, cards, refuse,
                f'{stamp} paper: "{question[:110]}"')
         return
 
+    # ANY of them, not only the first: what stands above "Eigen antwoord van de
+    # kandidaat" is the quotation the ask is about, which is not a reprint of
+    # the question and so is not stripped.
+    if any(OWN_ANSWER.search(a['text']) for a in answers):
+        refuse('the scheme answers this ask with the candidate\'s OWN opinion '
+               'and an indicative list, not with a marking point', ref,
+               f'{stamp} scheme, "{question[:80]}" answered '
+               f'"{next(a["text"] for a in answers if OWN_ANSWER.search(a["text"]))[:110]}"'
+               f' — the SEC names things the '
+               f'answer MAY refer to ("kan onder andere volgende elementen '
+               f'bevatten") and prices none of them, so there is nothing a '
+               f'student could be marked right or wrong against')
+        return
     if any(PRIVATE_USE.search(a['text']) for a in answers):
         refuse('the scheme answers this ask with a font-private box glyph, '
                'not with words', ref,
@@ -353,7 +392,7 @@ def _reading(P, S, priced, ask, subject, year, level, ref, cards, refuse,
         'level': LEVEL_WORD[level],
         'year': year,
         'section': ask.section,
-        'topicId': topic_for(subject, P.era, ask.section),
+        'topicId': topic_for(subject, P.era, ask.section, ask.letter),
         'conceptId': concept_for(question),
         'questionRef': ref,
         'questionText': question,
@@ -381,6 +420,153 @@ def _reading(P, S, priced, ask, subject, year, level, ref, cards, refuse,
     if source:
         card['sourceMaterial'] = source
     cards.append(card)
+
+
+# The dash the Romanian scheme puts between the expression a question asks
+# about and the explanation that answers it: "un om bun la toate – o persoană
+# care este capabilă…". Only an EN or EM dash with spaces around it, which is
+# not how either language writes a hyphen inside a word.
+GLOSS_DASH = re.compile(r'\s[\u2010\u2011\u2012\u2013\u2014]\s')
+# How much of a line has to be the paper's own words before it stops being an
+# answer and starts being a reprint of the ask. Used only for the DASH cut,
+# where the two sides are short.
+MAX_REPRINT = 0.6
+FOLD_ALNUM = re.compile(r'[^0-9a-zà-öø-ÿăâîșțşţ]+', re.I)
+# The price the classic paper prints at the END of an ask, which the scheme
+# copies with it when it reprints the question on one row.
+ANSWER_LABEL = re.compile(
+    r'^\s*(?:Antwoord|R[ăa]spuns|Resposta|Answer)\s*:\s*', re.I)
+INLINE_PRICE = re.compile(
+    r'\(\s*(?:\d{1,2}\s*[x×]\s*)?\d{1,3}\s*'
+    r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark)\s*\)', re.I)
+
+
+def _is_reprint(text, paper_text):
+    """Is this line the paper's own words, copied?
+
+    A SUBSTRING test on the letters, not a word overlap. A reprint is
+    literally the SEC copying its own question, so it is found whole inside
+    the paper's ask — "die mensen hebben wanneer ze een selfie maken", the
+    tail of a question broken across the price cell, is. A word-overlap test
+    cannot tell that from a short ANSWER whose every word happens to be in the
+    passage the question quotes: "Naar de neus" answers 2024 Dutch 1(a), and
+    both of its words appear in the sentence the ask prints.
+    """
+    a = FOLD_ALNUM.sub('', (text or '').lower())
+    b = FOLD_ALNUM.sub('', (paper_text or '').lower())
+    return len(a) >= 12 and a in b
+
+
+# How well a scheme block has to reprint a paper ask before the two are the
+# same question. Measured over the paper ask's own words, because the scheme
+# block is the reprint PLUS the answer and so is always the longer side.
+MIN_CLASSIC_MATCH = 0.5
+
+
+def _classic_pairs(paper_leaves, scheme_leaves, fallback, how):
+    """Pair a classic paper with its scheme on WORDING, not on the address.
+
+    Law 4, and this family gives the reason for it in one document: the 2023
+    Dutch scheme prints Question 1's five parts in the order a, d, b, c, e
+    where the paper prints a, b, c, d, e. Every key is present on both sides
+    and the counts agree, so the address join looks perfect and puts three of
+    the five answers under the wrong question — a wrong pairing that passes
+    every downstream gate.
+
+    So where the scheme REPRINTS the question — which is what these schemes
+    do, above the answer — each paper ask is matched to the scheme block that
+    reprints it, and the pairing is used only when every match is confident and
+    no two paper asks want the same block. Where the scheme reprints nothing at
+    all (Portuguese 2021 prints answers and only answers) there is no wording
+    to score and the address stands.
+    """
+    by_q = collections.defaultdict(lambda: ([], []))
+    for a in paper_leaves:
+        by_q[(a.section, a.q)][0].append(a)
+    for a in scheme_leaves:
+        by_q[(a.section, a.q)][1].append(a)
+    out, kinds = dict(fallback), dict(how)
+    for key, (papers, schemes) in by_q.items():
+        if len(papers) < 2 or len(papers) != len(schemes):
+            continue
+        blocks = [' '.join(x['text'] for x in sch.answers) for sch in schemes]
+        chosen, taken = {}, set()
+        for ask in papers:
+            want = bag(ask.full_text)
+            if not want:
+                break
+            scored = sorted(
+                ((len(want & bag(block)) / len(want), i)
+                 for i, block in enumerate(blocks)), reverse=True)
+            if not scored or scored[0][0] < MIN_CLASSIC_MATCH \
+                    or scored[0][1] in taken:
+                chosen = None
+                break
+            taken.add(scored[0][1])
+            chosen[ask.key] = schemes[scored[0][1]]
+        if chosen and len(chosen) == len(papers):
+            out.update(chosen)
+            kinds[key] = ('address' if all(
+                chosen[a.key].key == a.key for a in papers) else 'wording')
+    return out, kinds
+
+
+def _classic_answers(answers, paper_text):
+    """The classic scheme's marking points, with what is not one taken off.
+
+    A classic scheme prints three kinds of line under one number and only the
+    last is an answer:
+
+      1. the examiner's CRITERION — "Înţelegerea corectă a sensului dedus din
+         text:", "die in de zin:" — which always ends in a colon;
+      2. the QUESTION, reprinted verbatim from the paper, or the sentence of
+         the passage the question quotes;
+      3. the answer.
+
+    Both of the first two are dropped, and neither is dropped by guesswork: a
+    colon ends the criterion, and a line that reproduces the paper's own words
+    is the paper's own words. Left in, every Romanian card from Question 2
+    onward offered the question it asks as the first thing to claim.
+    """
+    # The SEC prints the ask's PRICE at the end of the question it reprints —
+    # "'ze' (alinea 1: Nu zijn ze zelf aan de beurt.): (1 punt) Millenials" —
+    # and what follows it is the answer. That is a printed boundary, and it is
+    # the only one on a line the scheme sets as one row.
+    out = []
+    for a in answers:
+        m = None
+        for candidate in INLINE_PRICE.finditer(a['text']):
+            m = candidate
+        if m is None:
+            out.append(a)
+            continue
+        tail = a['text'][m.end():].strip()
+        head = a['text'][:m.start()].strip()
+        out.append(dict(a, text=tail if len(tail) >= 3 else head))
+    # The SEC's own label for what follows, which is not part of it: the 2025
+    # Dutch scheme opens every one of Question 1's answers "Antwoord: ".
+    out = [dict(a, text=ANSWER_LABEL.sub('', a['text'], count=1))
+           for a in out]
+    # Every reprint comes off, including the last: the 2021 Dutch scheme
+    # answers Question 6 by reprinting the question and nothing else, and a
+    # rule that kept one line whatever it was shipped that question as its own
+    # answer. What is left is then nothing, and the ask is refused for stating
+    # no answer — which is what the document says.
+    while out:
+        text = out[0]['text'].strip()
+        if text.endswith(':') or _is_reprint(text, paper_text):
+            out.pop(0)
+            continue
+        break
+    # "un om bun la toate – o persoană care…": the expression the paper prints
+    # and then the gloss that answers it. Cut at the dash, and only where what
+    # stands before it is the paper's own expression.
+    if out:
+        m = GLOSS_DASH.search(out[0]['text'])
+        head = bag(out[0]['text'][:m.start()]) if m else set()
+        if m and head and len(head & bag(paper_text)) / len(head) >= 0.6:
+            out[0] = dict(out[0], text=out[0]['text'][m.end():].strip())
+    return [a for a in out if a['text'].strip()]
 
 
 def _recovered_answer(sch, paper_text):
@@ -418,6 +604,13 @@ def _recovered_answer(sch, paper_text):
 # build's own provenance check reads as a marks cell, and the second is a
 # ticked box rather than a word.
 BARE_NUMBER = re.compile(r'^[\d\s.,/-]+$')
+# The SEC's own words for "the candidate's own answer", which is not an answer
+# a card can hold: what follows it is a list of things the response MAY refer
+# to, priced nowhere.
+OWN_ANSWER = re.compile(
+    r'^\s*(?:Eigen\s+antwoord|Antwoord\s+van\s+de\s+kandidaat|'
+    r'R[ăa]spuns(?:ul)?\s+personal|Opinia\s+candidatului|'
+    r'Answer\s+of\s+the\s+candidate)', re.I)
 PRIVATE_USE = re.compile(r'[\ue000-\uf8ff]')
 
 MIN_WORDS = 3

@@ -39,27 +39,59 @@ import re
 # invents an id the deck does not hold.
 TOPICS = {
     'portuguese': {
+        'classic_vocab': 'portuguese-2-0',
         'classic_reading': 'portuguese-2-0',
         'classic_essay': 'portuguese-2-2',
+        'classic_essay2': 'portuguese-2-2',
         'reading': 'portuguese-2-3',
         'writing': 'portuguese-2-4',
         'aural': 'portuguese-2-5',
     },
+    # Romanian and Dutch are classic-only, and their published taxonomies name
+    # the classic paper's parts one for one already: a vocabulary question, a
+    # set of comprehension questions, and the written production. Only the
+    # third part — an essay on a quotation, set from 2023 — had to be added.
+    'romanian': {
+        'classic_vocab': 'romanian-0-0',
+        'classic_reading': 'romanian-0-1',
+        'classic_essay': 'romanian-1-0',
+        'classic_essay2': 'romanian-1-1',
+    },
+    'dutch': {
+        'classic_vocab': 'dutch-0-0',
+        'classic_reading': 'dutch-0-1',
+        'classic_essay': 'dutch-1-0',
+        'classic_essay2': 'dutch-1-1',
+    },
 }
 
 
-def topic_for(subject, era, section):
+def topic_for(subject, era, section, letter=None):
     """The task type this ask belongs to, from the era and the section."""
     table = TOPICS[subject]
     if (section or '').startswith('L'):
         return table['aural']
     if era == 'classic':
-        return (table['classic_reading'] if section == 'I'
-                else table['classic_essay'])
+        if section == 'III':
+            return table['classic_essay2']
+        if section in ('II',):
+            return table['classic_essay']
+        return (table['classic_vocab'] if letter else table['classic_reading'])
     return table['writing'] if section == 'B' else table['reading']
 
 
-LANGUAGE_NAME = {'portuguese': 'Portuguese'}
+LANGUAGE_NAME = {'portuguese': 'Portuguese', 'romanian': 'Romanian',
+                 'dutch': 'Dutch'}
+# A subject whose paper requires EVERY answer in the target language, in
+# its own printed rubric — "Toate răspunsurile trebuie scrise în limba
+# română", "Alle antwoorden moeten in het Nederlands gegeven worden". The
+# language is then a fact about the PAPER and not about the ask, unlike
+# Portuguese, which sets one comprehension in two languages and prices the
+# difference.
+ONE_LANGUAGE = {
+    'romanian': 'Toate răspunsurile trebuie scrise în limba română.',
+    'dutch': 'Alle antwoorden moeten in het Nederlands gegeven worden.',
+}
 ENGLISH_OR_IRISH = 'English or Irish'
 
 # Function words that belong to one language and not the other. Counted rather
@@ -67,6 +99,8 @@ ENGLISH_OR_IRISH = 'English or Irish'
 # English ("TikTok", "Projeto Tamar") and an English ask quotes Portuguese
 # names constantly.
 TARGET_WORDS = {
+    'romanian': set(),
+    'dutch': set(),
     'portuguese': {
         'que', 'qual', 'quais', 'quem', 'onde', 'quando', 'porque', 'por',
         'razão', 'razões', 'como', 'descreva', 'indique', 'explique', 'dê',
@@ -89,6 +123,8 @@ WORD = re.compile(r"[^\W\d_]+", re.UNICODE)
 
 def answer_language(subject, text):
     """The subject's own language, or English/Irish — read from the ask."""
+    if subject in ONE_LANGUAGE:
+        return LANGUAGE_NAME[subject]
     words = {w.lower() for w in WORD.findall(text or '')}
     target = len(words & TARGET_WORDS[subject])
     english = len(words & EN_WORDS)
@@ -100,6 +136,10 @@ def answer_language(subject, text):
 def language_note(subject, language):
     """The instruction a card carries so a right answer is not half-marked."""
     name = LANGUAGE_NAME[subject]
+    if subject in ONE_LANGUAGE:
+        return (f'The examination requires every answer in {name.upper()}. '
+                f'The paper prints the rule on its own first page: '
+                f'"{ONE_LANGUAGE[subject]}"')
     if language == name:
         return (f'The examination prints this question in {name} and it is '
                 f'answered in {name.upper()}. The scheme awards half marks '

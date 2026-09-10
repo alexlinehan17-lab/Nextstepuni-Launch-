@@ -121,5 +121,11 @@
  "portuguese": {
   "higher": 94,
   "ordinary": 79
+ },
+ "romanian": {
+  "higher": 50
+ },
+ "dutch": {
+  "higher": 42
  }
 }

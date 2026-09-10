@@ -149,6 +149,21 @@
     },
     "refsHash": "ab5312971b0e0217"
   },
+  "dutch": {
+    "cards": 42,
+    "contentHash": "e9c0193ea33db730",
+    "coveragePct": 100.0,
+    "covered": 42,
+    "excluded": 21,
+    "leaves": 63,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 5,
+      "hash": "b3a5be1d5053e77e"
+    },
+    "refsHash": "4bab4f79d784d94c"
+  },
   "economics": {
     "cards": 697,
     "contentHash": "e8c99dae50bd0cba",
@@ -418,6 +433,21 @@
       "hash": "df029832e957a46e"
     },
     "refsHash": "608205b9e7e5d4b8"
+  },
+  "romanian": {
+    "cards": 50,
+    "contentHash": "b9e5b706d1bb83fa",
+    "coveragePct": 100.0,
+    "covered": 50,
+    "excluded": 13,
+    "leaves": 63,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 5,
+      "hash": "cb6697c0963fc51f"
+    },
+    "refsHash": "8dc6e8622a1ca48e"
   },
   "russian": {
     "cards": 199,

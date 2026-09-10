@@ -234,6 +234,30 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/portuguese',
     blocked: new Set(),
   },
+  romanian: {
+    title: 'Romanian',
+    /* The syllabus these papers were sat under. Romanian is a NON-CURRICULAR
+     * EU LANGUAGE: there is no Irish syllabus for it, and the SEC examines it
+     * against the language itself. One booklet at ONE level in every year of
+     * the corpus, and no Listening Comprehension Test. See ROMANIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-romanian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the parts of the Leaving Certificate Romanian examination.\n * Its reading comprehension is priced on the QUESTION PAPER — \"(5 puncte)\",\n * \"(5 × 1 punct)\" in the right-hand margin — because the marking scheme of this\n * examination prints answers with no marks anywhere in it. Every card carries the\n * text it quotes, bound to the pages of the question paper it was printed on, and\n * every answer is written in Romanian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/romanian',
+    blocked: new Set(),
+  },
+  dutch: {
+    title: 'Dutch',
+    /* The syllabus these papers were sat under. Dutch is a NON-CURRICULAR EU
+     * LANGUAGE, and Romanian's twin in shape: one booklet at ONE level in
+     * every year of the corpus, no Listening Comprehension Test, and a reading
+     * comprehension priced on the paper. See DUTCH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-dutch-non-curricular-eu-language',
+    specNote: "Cards are tagged to the parts of the Leaving Certificate Dutch examination.\n * Its reading comprehension is priced on the QUESTION PAPER — \"(5 punten)\",\n * \"(1 punt)\" in the right-hand margin — because the marking scheme of this\n * examination prints answers with no marks anywhere in it. Every card carries the\n * text it quotes, bound to the pages of the question paper it was printed on, and\n * every answer is written in Dutch: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/dutch',
+    blocked: new Set(),
+  },
   russian: {
     title: 'Russian',
     /* The syllabus these papers were sat under and the one still being sat.
@@ -426,7 +450,15 @@ function schemeFor(subjectId, card) {
  * four unreadable glyphs. The block also carries the French OE ligature and
  * the ligature glyphs LIGATURES already folds, which are handled before this
  * test is reached. */
-const REAL = /[\u0100-\u017F\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/;
+/* U+0218 to U+021B are the four Romanian letters with a COMMA BELOW — Ș ș Ț ț
+ * — and they are letters, not accents: "ființă socială", "Explicați pe scurt",
+ * "recunoașterea celorlalți". They sit in Latin Extended-B rather than
+ * Extended-A, so widening the class for Polish did not reach them, and every
+ * Romanian card from 2025 was refused for being written in Romanian. Only
+ * these four are added and not the block they live in, because the block is
+ * also where several BROKEN subset glyphs land — U+019E stands for "tf" and
+ * U+019F for "ti" in glyphmap.json — and those must still be refused. */
+const REAL = /[\u0100-\u017F\u0218-\u021B\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/;
 /* Script that is really script, inside the range the broken-subset test
  * sweeps. Arabic joins it because Arabic ships: 0600-06FF is the alphabet the
  * SEC sets its Arabic paper in, 0750-077F and 08A0-08FF the supplements. What

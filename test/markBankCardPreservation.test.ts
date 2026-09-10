@@ -66,6 +66,8 @@ import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/high
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
 import { CARDS as PORTUGUESE_ORDINARY } from '../components/MarkBank/cards/portuguese/ordinary';
+import { CARDS as ROMANIAN_HIGHER } from '../components/MarkBank/cards/romanian/higher';
+import { CARDS as DUTCH_HIGHER } from '../components/MarkBank/cards/dutch/higher';
 import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
 import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
@@ -539,6 +541,14 @@ const decks = [
    * it. Both are printed; neither is inferred. */
   ['portuguese:higher', PORTUGUESE_HIGHER, 94, 'af660d48d9959b5d40dffc4ea99d293223e5c62c3f3d93d95cc131ef6c386701'],
   ['portuguese:ordinary', PORTUGUESE_ORDINARY, 79, '116e68ce1fdda8fd35a294e16e7f0df8b6d71906963ea88fede497c925dfc016'],
+  /* Romanian and Dutch are the twenty-seventh and twenty-eighth subjects, and
+   * the first two whose whole deck is priced by the QUESTION PAPER: their
+   * marking schemes print answers with no marks anywhere in them, and the
+   * tariff for every card here is the "(5 puncte)" or "(1 punt)" the paper
+   * sets in its own right-hand margin. Every card is new; none replaces
+   * anything. Both are sat at ONE level, so each ships a Higher deck only. */
+  ['romanian:higher', ROMANIAN_HIGHER, 50, 'f48554eeb516fd17cc9b89520eaf76ebe3e46c564ac0b41d0225653e225216ba'],
+  ['dutch:higher', DUTCH_HIGHER, 42, '62df13c5837ef5cabcd391e637a318fc25b106bcdf90744ffdddc4d10d6a70c4'],
   /* Classical Studies is the twenty-second subject, entered on a RE-MEASURE:
    * the bank had it recorded as rejected on a band grid that turns out to
    * belong to the Research Study Report, which is coursework, not the written
@@ -586,9 +596,9 @@ describe('Mark Bank card preservation', () => {
     // 10,495 before this session, plus thirteen subjects carded in five waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
-    // Russian 199, Japanese 600, Classical Studies 516, Latin 227 and
-    // Portuguese 173.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_260);
+    // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
+    // Portuguese 173, Romanian 50 and Dutch 42.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_352);
     // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
     // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
   });
@@ -619,6 +629,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('latin:')
         && !name.startsWith('polish:')
         && !name.startsWith('portuguese:')
+        && !name.startsWith('romanian:')
+        && !name.startsWith('dutch:')
         && !name.startsWith('arabic:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);

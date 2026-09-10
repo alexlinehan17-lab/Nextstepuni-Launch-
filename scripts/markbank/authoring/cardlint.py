@@ -26,6 +26,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHORED = os.path.join(HERE, '..', 'authored')
 
 SUBJECTS = ['agricultural-science', 'applied-maths', 'arabic', 'art',
+            'dutch', 'romanian',
             'biology', 'business', 'chemistry', 'classical-studies',
             'computer-science', 'construction-studies', 'economics',
             'engineering', 'english', 'french', 'geography', 'german',
