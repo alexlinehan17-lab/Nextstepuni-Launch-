@@ -241,6 +241,26 @@ SUBJECTS = {
     # printed citation follows the paper.
     'latin': {'mode': 'sections', 'walker': 'lat',
               'numbering': 'continuous', 'label': 'roman-major'},
+    # Polish is a NON-CURRICULAR EU language (SEC subject 548) and its shape is
+    # its own. It is sat at ONE level up to 2021 — the SEC's file letter is 'A'
+    # and its cover says "Higher Level", so it is Higher-only, not LCVP's
+    # common 'C' — and at TWO from 2022, when the examination was rebuilt: a
+    # written booklet holding Section A Reading and Section B Written
+    # Production, plus a Listening Comprehension Test in its own booklet
+    # (component A00) that did not exist before.
+    #
+    # The section token is the paper's own: 'A' and 'B' for the two sections
+    # the written booklet tabs in its margin, 'LA' to 'LE' for the listening
+    # booklet's five parts, and 'I' and 'II' for the two parts of the 2021
+    # examination, which numbers questions the later papers letter. A citation
+    # reads "2024 HL Section A Q1(b)(ii)" or "2021 HL Section I Q1(a)".
+    #
+    # Its own walker, for a reason none of the six carded languages has: the
+    # SEC prints Polish in SEPARATE English and Irish editions rather than one
+    # bilingual booklet, so there are no columns to cut apart — and the one
+    # marker that is genuinely ambiguous, "(i)", is settled on the printed
+    # column plus the letter sequence rather than on wording (see pl_paper).
+    'polish': {'mode': 'sections', 'walker': 'pl'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -324,6 +344,13 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
             flags.append({'type': 'question-gap', 'where': 'all sections',
                           'detail': f'questions found: {qs}'})
     roman_major = subject in ROMAN_MAJOR
+    # Sorted by the STRING of the prefix: one paper may key some of its asks
+    # under a section token and some under none, which is what Polish does —
+    # its written booklet numbers straight through its two sections while its
+    # listening booklet restarts inside each of its five — and sorting None
+    # beside 'LA' raises before a single flag is computed.
+    prefixes = sorted({k[:-3] for k in keys},
+                      key=lambda pre: tuple(str(x) for x in pre))
     for pre in prefixes:
         # Negative numbers are printed choice VARIANTS (Construction Studies
         # sets Q10 twice joined by OR; the alternative files under -10) and sit
@@ -342,6 +369,27 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
             if qs and isinstance(qs[0], int) and qs[0] > 1:
                 flags.append({'type': 'question-gap', 'where': str(pre or ''),
                               'detail': f'first question found is Q{qs[0]}'})
+        want = list(range(min(qs), min(qs) + len(qs))) if qs else []
+        if qs != want:
+            flags.append({'type': 'question-gap', 'where': str(pre or ''),
+                          'detail': f'questions found: {qs}'})
+        # A paper starts at Question 1. A census that starts later has LOST a
+        # leading question — Economics lost Q1 twice with no flag firing,
+        # because a gap detector only sees interior holes.
+        #
+        # Unless the numbering RUNS ON: Polish tabs Questions 1 and 2 "Część A"
+        # and Questions 3 to 5 "Część B" in one booklet, so Section B's first
+        # question is Q3 and nothing at all is missing. The exemption is
+        # evidence, not a guess — every question below this one has to be
+        # printed under some OTHER prefix of the same paper, which a genuinely
+        # lost leading question never is.
+        elsewhere = {k[-3] for k in keys if k[:-3] != pre
+                     and isinstance(k[-3], int)}
+        runs_on = qs and isinstance(qs[0], int) and qs[0] > 1 and all(
+            n in elsewhere for n in range(1, qs[0]))
+        if qs and isinstance(qs[0], int) and qs[0] > 1 and not runs_on:
+            flags.append({'type': 'question-gap', 'where': str(pre or ''),
+                          'detail': f'first question found is Q{qs[0]}'})
         # A headless question (Religious Education's Sections B-J) sits
         # outside the numeric run but still prints a lettered run that can
         # gain a hole, so it is walked here as well.
@@ -1636,6 +1684,67 @@ def _lat_states_content(entry):
             return True
     return False
 
+def census_pl(subject, year, level):
+    """Polish: the written booklet and, from 2022, the listening booklet.
+
+    THE DENOMINATOR IS THE PAPER, and this paper can be read from the paper
+    alone. Its reading passage is set in numbered paragraphs, exactly as
+    French's is, but it letters its questions "(a)" to "(l)" — so no printed
+    marker is ambiguous between passage and ask, and no wording has to be
+    scored to find one. The scheme is read beside it to price the asks and to
+    be CHECKED against them, which is what pl_flags does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from pl_paper import PlPaper                                # noqa: E402
+    from pl_scheme import PlScheme                              # noqa: E402
+
+    P = PlPaper(year, level, subject)
+    S = PlScheme(year, level, subject)
+    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def pl_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently — the paper for its asks, the
+    scheme for its prices — so every ask one holds and the other does not is a
+    reader fault, an SEC misprint or a real difference, and all three have to
+    be looked at rather than reconciled away. This is Law 3's independent
+    check: the census's own continuity flags see only interior gaps, and an
+    ask keyed under its NEIGHBOUR's letter leaves no gap at all.
+    """
+    flags = list(P.flags)
+    paper = {a.key for a in P.reading_asks()}
+    scheme = {a.key for a in S.reading()}
+    # An ask the scheme prices ONE LEVEL UP is priced, not missing. 2022 Higher
+    # numbers Question 2(i)'s four true/false statements (i) to (iv) and the
+    # scheme prices the table once, "(4 x 1m)", printing its statements with no
+    # markers at all; the same shape answers every tick-one-box question in the
+    # corpus. Counting those as unpriced reported five flags on a table the SEC
+    # priced in full.
+    priced_parents = {(a.section, a.q, a.letter) for a in S._asks
+                      if a.roman is None and a.per is not None}
+    for key in sorted(paper - scheme, key=str):
+        if (key[0], key[1], key[2]) in priced_parents:
+            continue
+        flags.append({'type': 'unpriced-ask', 'where': key_label(key),
+                      'detail': 'the paper prints this ask and the scheme '
+                                'prices no ask at that address'})
+    paper_parents = {(a.section, a.q, a.letter) for a in P.reading_asks()}
+    for key in sorted(scheme - paper, key=str):
+        if (key[0], key[1], key[2]) in paper_parents:
+            continue                     # the paper numbers what the scheme
+        flags.append({'type': 'orphan-scheme-ask', 'where': key_label(key),
+                      'detail': 'the scheme prices this address and the paper '
+                                'prints no ask there'})
+    for ask in S.reading():
+        if ask.fault:
+            flags.append({'type': 'tariff-disagreement',
+                          'where': key_label(ask.key), 'detail': ask.fault})
+    return flags
+
 
 def census_clas(subject, year, level):
     """Classical Studies: the printed ask, in whichever of its two papers.
@@ -2074,6 +2183,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'lat':
                     parts, texts, files, P_, S_ = census_lat(
                         subject, year, level)
+                elif cfg.get('walker') == 'pl':
+                    parts, texts, files, P_, S_ = census_pl(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -2146,6 +2258,9 @@ def census_subject(subject):
                 # count questions nobody sits. The checksum is the total the
                 # paper states on its own cover.
                 marks = {(None, 0): 400 if P_.era == 'sections' else 200}
+            elif cfg.get('walker') == 'pl':
+                flags += pl_flags(P_, S_)
+                marks = {(None, 0): P_.cover_marks()}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}

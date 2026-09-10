@@ -62,6 +62,8 @@ import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/hi
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
+import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
@@ -513,6 +515,17 @@ const decks = [
    * language its answer must be in. */
   ['japanese:higher', JAPANESE_HIGHER, 339, 'a06378e0d982a6331919f663c9335bc1e9099560170ed6c98908d7b0108fc510'],
   ['japanese:ordinary', JAPANESE_ORDINARY, 261, '460f3973e9d10e7a1f5a2797fb68d0c82530b3cb70bd2eadeaec015a4a807392'],
+  /* Polish is the twenty-fourth subject and the first NON-CURRICULAR EU
+   * LANGUAGE in the bank — a subject with no Leaving Certificate syllabus,
+   * examined against the language itself. Every card is new; none replaces
+   * anything. Two things are true of it and of no deck before it: the
+   * examination was REBUILT in 2022, from one 70-mark booklet sat at a single
+   * level to Section A Reading and Section B Written Production at two levels
+   * with a Listening Comprehension Test beside them, so one deck holds both
+   * papers; and its true/false answers are read from the COLUMN the scheme's
+   * tick stands in, which is the only place that answer is written down. */
+  ['polish:higher', POLISH_HIGHER, 115, '3cf1b2909433bcb50931d0d7162ff44fa529ca44752a16cc50dcddcad6ffe6a5'],
+  ['polish:ordinary', POLISH_ORDINARY, 122, '7b75f4690d22e1070ed66cb946f5eeeba80f3b83f73f4bc774cf9fd9d649083b'],
   /* Classical Studies is the twenty-second subject, entered on a RE-MEASURE:
    * the bank had it recorded as rejected on a band grid that turns out to
    * belong to the Research Study Report, which is coursework, not the written
@@ -552,7 +565,8 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(15_600);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(15_837);
+    // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -579,6 +593,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('japanese:')
         && !name.startsWith('classical-studies:')
         && !name.startsWith('latin:')
+        && !name.startsWith('polish:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);

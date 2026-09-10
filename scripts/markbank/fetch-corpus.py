@@ -105,6 +105,16 @@ SUBJECTS = {
     # kana and kanji survive the PDF text layer at all. Measured at stage 0
     # before it is chosen.
     'japanese': 'japanese',
+    # Added 10 September 2026. Polish is a NON-CURRICULAR EU language (SEC
+    # subject 548) — a different animal to the six curricular languages already
+    # carded, and measured at stage 0 before it is chosen. Two structural
+    # differences the listing shows before a single PDF is opened: it is sat at
+    # ONE level (file letter 'A') up to and including 2021 and at TWO from 2022,
+    # and it publishes SEPARATE English ('E') and Irish ('I') editions rather
+    # than the bilingual 'B' booklet the curricular languages print — so the
+    # existing WANTED_LANGS already takes the right one. It does carry the
+    # Listening Comprehension booklet 'A00', from 2022 onward only.
+    'polish': 'polish',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
     # Added 10 September 2026. Latin is a language but NOT a modern one: SEC

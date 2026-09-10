@@ -225,13 +225,20 @@ const DEGREE_O = /(\d)oc/g;
  * Russian words, so the gate that exists to stop a card quoting what the
  * examiner did not say was, for that whole deck, not checking anything.
  *
+ * LATIN EXTENDED-A IS KEPT, for the same reason and at the same cost. ą ć ę ł
+ * ń ó ś ź ż are letters of the POLISH alphabet, not accents on Latin ones:
+ * they have no combining decomposition, so the class threw each of them away
+ * whole. "łódź" reduced to "d" and "Księgarnia była mała" to "ksigarniabyamaa"
+ * — a gate that cannot tell one Polish marking point from another is not
+ * checking the thing it exists to check.
+ *
  * Widening the class can only make matching STRICTER — a claim keeps more of
  * its own characters and so must find more of them in the scheme — and it is
- * identical on text that has no Cyrillic in it, which is every other subject in
- * the bank. */
+ * identical on text that has no Cyrillic or Latin Extended-A in it, which is
+ * every other subject in the bank. */
 export const normalise = (t) =>
   foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-')
-    .replace(/[^a-z0-9\u0400-\u04ff]+/g, '');
+    .replace(/[^a-z0-9\u0100-\u017f\u0400-\u04ff]+/g, '');
 
 /**
  * A whole scheme file reduced to the text a marking point is searched in.

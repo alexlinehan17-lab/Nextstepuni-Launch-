@@ -75,6 +75,8 @@ import { CARDS as TECH_HIGHER } from '../components/MarkBank/cards/technology/hi
 import { CARDS as TECH_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
+import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
@@ -105,6 +107,7 @@ const SAMPLE_CARDS = [
   ...ITALIAN_HIGHER, ...ITALIAN_ORDINARY,
   ...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY,
   ...JAPANESE_HIGHER, ...JAPANESE_ORDINARY,
+  ...POLISH_HIGHER, ...POLISH_ORDINARY,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
   ...LATIN_HIGHER, ...LATIN_ORDINARY,
 ];
@@ -190,6 +193,13 @@ describe('every card traces to the marking scheme on disk', () => {
     expect(missing, show(missing)).toEqual([]);
   });
 
+  /* Sixty seconds, not the thirty every other test gets. This one walks EVERY
+   * card in the bank against a document read off disk, so its cost grows with
+   * the bank: adding Polish — the twenty-fourth subject, 238 cards and nine
+   * more scheme files — pushed it past thirty seconds under the full suite's
+   * parallel load, while it still finishes in fourteen on its own. Raising the
+   * ceiling for the two whole-bank tests keeps the global thirty in place for
+   * everything else, where a test that runs long really is hung. */
   test('every marking point appears in its own scheme', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
@@ -210,6 +220,7 @@ describe('every card traces to the marking scheme on disk', () => {
     // At 15,600 cards it runs a little over the 30s default, and a timeout
     // here reads as a provenance failure when it is only a big bank.
   }, 180_000);
+  }, 60_000);
 
   test('marks reconcile against the printed tariff', () => {
     const bad = SAMPLE_CARDS.filter(c => !tariffReconciles(c)).map(c => c.questionRef);
@@ -507,6 +518,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['russian', 'ordinary', RUSSIAN_ORDINARY],
     ['japanese', 'higher', JAPANESE_HIGHER],
     ['japanese', 'ordinary', JAPANESE_ORDINARY],
+    ['polish', 'higher', POLISH_HIGHER],
+    ['polish', 'ordinary', POLISH_ORDINARY],
     ['applied-maths', 'higher', AM_HIGHER],
     ['applied-maths', 'ordinary', AM_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
@@ -602,6 +615,7 @@ describe('the taxonomy is the redeveloped specification', () => {
       // (curriculum.ts), as French does, so its ids carry the subject's own
       // name rather than an abbreviation.
       russian: 'russian-',
+      polish: 'polish-',
       // Classical Studies files its cards under the published Classical
       // Studies taxonomy itself, as French does — and under one further
       // strand, 'classical-studies-legacy-*', for the ten-topic syllabus the

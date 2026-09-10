@@ -359,6 +359,21 @@
     },
     "refsHash": "83bd7bc978ad6302"
   },
+  "polish": {
+    "cards": 237,
+    "contentHash": "ee0fcaa5b051e1cf",
+    "coveragePct": 100.0,
+    "covered": 243,
+    "excluded": 310,
+    "leaves": 553,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "593a0709ee51ab08"
+    },
+    "refsHash": "727a4af11e33aa55"
+  },
   "religious-education": {
     "cards": 288,
     "contentHash": "bfd99a50f3bc5853",

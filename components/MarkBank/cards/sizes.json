@@ -109,5 +109,9 @@
  "latin": {
   "higher": 145,
   "ordinary": 82
+ },
+ "polish": {
+  "higher": 115,
+  "ordinary": 122
  }
 }

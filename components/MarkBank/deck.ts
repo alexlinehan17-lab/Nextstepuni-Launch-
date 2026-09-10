@@ -70,6 +70,8 @@ const russianCurriculum = CURRICULUM.find(subject => subject.id === 'russian');
 if (!russianCurriculum) throw new Error('Canonical Russian curriculum is missing');
 const japaneseCurriculum = CURRICULUM.find(subject => subject.id === 'japanese');
 if (!japaneseCurriculum) throw new Error('Canonical Japanese curriculum is missing');
+const polishCurriculum = CURRICULUM.find(subject => subject.id === 'polish');
+if (!polishCurriculum) throw new Error('Canonical Polish curriculum is missing');
 const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
 if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
 const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
@@ -1079,6 +1081,31 @@ export const RUSSIAN_STRANDS: StrandRef[] = russianCurriculum.strands.map((stran
   })),
 }));
 
+/**
+ * Polish — a NON-CURRICULAR EU LANGUAGE, which is a different kind of subject
+ * to the six modern languages already in the bank: there is no Leaving
+ * Certificate syllabus for it, and the SEC sets it against the language
+ * itself. Its fourth strand, "Written Paper — Task Types", names the paper's
+ * own two eras one for one, and a card is filed by the task it was printed as.
+ *
+ * Mark Bank cards reach two of those four, because the rest of the examination
+ * is the written production and the aural: the scheme prices the essay and the
+ * Section B tasks with a content-and-expression GRID, and the listening asks
+ * can only be answered from the recording. The whole taxonomy still ships — a
+ * student browsing Polish should see the shape of their examination, not only
+ * the part that is carded.
+ */
+export const POLISH_STRANDS: StrandRef[] = polishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1303,6 +1330,7 @@ export const SUBJECTS = [
   { id: 'italian', title: 'Italian', strands: ITALIAN_STRANDS, spec: 'Leaving Certificate Italian syllabus' },
   { id: 'russian', title: 'Russian', strands: RUSSIAN_STRANDS, spec: 'Leaving Certificate Russian syllabus' },
   { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
+  { id: 'polish', title: 'Polish', strands: POLISH_STRANDS, spec: 'Leaving Certificate Polish, a non-curricular EU language' },
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
   { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
 ] as const;
@@ -1603,6 +1631,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   japanese: {
     higher: () => import('./cards/japanese/higher'),
     ordinary: () => import('./cards/japanese/ordinary'),
+  },
+  polish: {
+    higher: () => import('./cards/polish/higher'),
+    ordinary: () => import('./cards/polish/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),
