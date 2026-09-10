@@ -95,6 +95,9 @@ MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
 # "Section 1", "Section A" as a header — never "Sections 2 and 3", which is a
 # cover line for a whole booklet, because \b cannot fall inside "Sections".
 SECTION = re.compile(r'\bSection\s+([A-Z]|\d{1,2})\b')
+# A marker block the walker can see, standing for "a new booklet starts here".
+FILE_BREAK = '\x00FILE-BREAK\x00'
+
 # Where a booklet stops setting questions and starts talking about itself.
 BACK_MATTER = re.compile(
     r'^(?:Answerbook for Section|Acknowledgements\b|Copyright notice\b)')
@@ -310,6 +313,12 @@ def census_sections(subject, year, level):
     # splits applied, so the neighbour guards can see the whole paper.
     blocks = []
     for path in P.files:
+        # A booklet boundary closes whatever question was open. The sitting's
+        # SECTIONS run on across the two booklets, but a question does not:
+        # the last question of Technology's Section A booklet was absorbing
+        # the cover of the Section B and C booklet -- "Coimisiun na Scruduithe
+        # Stait ... 136 marks Instructions" -- through the continuation rule.
+        blocks.append(FILE_BREAK)
         for block in PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None):
             # The answerbook's own back matter -- its instructions, its ruled
             # pages, the image acknowledgements and the copyright notice --
@@ -401,6 +410,9 @@ def census_sections(subject, year, level):
     parts, stems = {}, {}
     section, q, letter, roman = None, None, None, None
     for index, text in enumerate(blocks):
+        if text is FILE_BREAK:
+            q, letter, roman = None, None, None
+            continue
         if index in scaffold:
             continue
         # A marker-only block — "(B)" alone, its content following — is a real

@@ -514,7 +514,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2021 HL Section A Q15",
-  "questionText": "Use two graphic techniques to enhance the representation of the materials used in the stapler shown. 2021L065A2EL 2021. M104 BC Coimisiún na Scrúduithe Stáit State Examinations Commission Leaving Certiϔicate Examination, 2021 Technology Higher Level Monday, 28 June Afternoon, 2:00 - 4:30",
+  "questionText": "Use two graphic techniques to enhance the representation of the materials used in the stapler shown.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q15-art",
@@ -1231,85 +1231,6 @@
     "kind": "point",
     "verbatim": "Can be programmed, programme can be altered without rebuilding circuit, circuits can be mass produced, reliable operation, fast performance characteristics.",
     "marks": 4,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(16 marks, 4 + 8 + 4)' for this part."
- },
- {
-  "id": "tech-2021-hl-c1b-ii",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2021 HL Section C Q1(b)(ii)",
-  "questionText": "Redraw and complete the flowchart to control the feeder.",
-  "stem": "Start Power on Is hopper empty ?",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(16 marks, 4 + 8 + 4)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Start",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Power on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Hopper No empty?",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Yes Is tray No less than",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Buzzer on half full?",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Fill",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Wait 6",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Any valid alternative solution accepted.",
-    "marks": null,
     "openList": true
    }
   ],
@@ -3738,113 +3659,6 @@
   "notes": "The scheme prints '(10 Marks, 6 + 4)' for this part."
  },
  {
-  "id": "tech-2021-ol-c1b",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2021 OL Section C Q1(b)(i), (ii), (iii)",
-  "questionText": "(i) Complete the given flowchart to operate the coffee machine in the following sequence: (ii) Suggest a modification to the flowchart to indicate when the water container is empty. (iii) Describe how you would indicate, on the machine, that the water container needs refilling.",
-  "stem": "Start • the coffee machine is powered on • the capsule is inserted • a large or a small coffee is selected • the coffee pours. On",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(20 Marks, 8 + 6 + 6)"
-  },
-  "totalMarks": 20,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "• the capsule is inserted N On?",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "• a large or a small coffee is selected",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "• the coffee pours. Y",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Capsule",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Inserted",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "N Small coffee?",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Large coffee?",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Suggest a modification to the flowchart to indicate when the water container Coffee Coffee pours pours is empty.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Start Stop Stop",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Y Any valid alternative solution accepted.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Water? Refill",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Capsule on the machine, that the water",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(20 Marks, 8 + 6 + 6)' for this question. The scheme lists 17 accepted answers; the first 12 are shown."
- },
- {
   "id": "tech-2021-ol-c1c-ii",
   "topicId": "tech-opt-control",
   "conceptId": "opt-control",
@@ -5540,7 +5354,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2022 HL Section A Q15",
-  "questionText": "Use two graphic techniques to enhance the representation of the handheld vacuum cleaner shown. 2022L065A2EL 2022.M104BC Coimisiún na Scrúduithe Stáit State Examinations Commission Section B and Section C Higher Level Monday 27 June Afternoon 2:00 - 4:30 136 marks Instructions Section B 24 marks Core- Long-answer questions. Answer one of the two core questions presented. Each question in Section B carries 24 marks. Section C 40 marks Options- Long-answer questions. Answer one of the five optional questions presented. Each question in Section C carries 40 marks. THESE QUESTIONS ARE TO BE ANSWERED IN THE ANSWERBOOK ATTACHED TO SECTION A.",
+  "questionText": "Use two graphic techniques to enhance the representation of the handheld vacuum cleaner shown.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q15-art",
@@ -7932,7 +7746,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2022 OL Section A Q12",
-  "questionText": "Use two graphic techniques to enhance the representation of the USB flash drive shown. 2022L065G2EL 2022.M103BC Coimisiún na Scrúduithe Stáit State Examinations Commission Section B and Section C Ordinary Level Monday 27 June Afternoon 2:00 - 4:00 136 marks Instructions Section B 24 marks Core- Long-answer questions. Answer one of the two core questions presented. Each question in Section B carries 24 marks. Section C 40 marks Options- Long-answer questions. Answer one of the five optional questions presented. Each question in Section C carries 40 marks. THESE QUESTIONS ARE TO BE ANSWERED IN THE ANSWERBOOK ATTACHED TO SECTION A.",
+  "questionText": "Use two graphic techniques to enhance the representation of the USB flash drive shown.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secA-q12-art",
@@ -8506,113 +8320,6 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6+4)' for this part."
- },
- {
-  "id": "tech-2022-ol-c1b",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2022 OL Section C Q1(b)(i), (ii), (iii)",
-  "questionText": "(i) Complete the flowchart, shown, to operate the Robo-Deck in the following sequence: (ii) Suggest a modification of the flowchart to alert the user when the stain is running low. (iii) Name a suitable sensor that could be used to detect an object in the path of the Robo-Deck.",
-  "stem": "• The system is powered on • The motor activates, moving the Robo-Deck forward for 15 seconds • At the same time, the stain sprayer comes on for 15 seconds • The motor and the sprayer stop. Start On",
-  "figureKey": "",
-  "questionFigureKey": "technology-2022-OL-paper-secC-q1b-art",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(20 Marks, 8+6+6)"
-  },
-  "totalMarks": 20,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "• The system is powered on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "• The motor activates, moving the Robo-Deck forward for 15 seconds",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "• At the same time, the stain sprayer comes on for 15 seconds",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "• The motor and the sprayer stop.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Suggest a modification to the flowchart to alert the user",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Start when the stain is running low.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "N Start",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Motor On",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Sprayer On LED On Stain Low",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Wait 15s Motor On",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Motor Off Sprayer On (iii) Name a suitable sensor that could be used to detect an object in the",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Sprayer Off Wait 15s path of the Robo-deck.",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this question."
  },
  {
   "id": "tech-2022-ol-c1c-i",
@@ -10552,7 +10259,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2023 HL Section A Q15",
-  "questionText": "Sketch two orthographic views of the ‘non-conformist chair’ designed by Irish innovator, Eileen Gray in 1926. 2023L065A2EL 2023.M104BC Coimisiún na Scrúduithe Stáit State Examinations Commission Section B and Section C Higher Level Monday 26 June Afternoon 2:00 - 4:30 160 marks Instructions Section B 48 marks Core- Long-answer questions. Answer the two core questions presented. Each question in Section B carries 24 marks. Section C 40 marks Options- Long-answer questions. Answer one of the five optional questions presented. Each question in Section C carries 40 marks. THESE QUESTIONS ARE TO BE ANSWERED IN THE ANSWERBOOK ATTACHED TO SECTION A.",
+  "questionText": "Sketch two orthographic views of the ‘non-conformist chair’ designed by Irish innovator, Eileen Gray in 1926.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "",
@@ -13224,36 +12931,6 @@
   "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
-  "id": "tech-2023-ol-a10",
-  "topicId": "tech-core-energy",
-  "conceptId": "core-energy",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2023 OL Section A Q10",
-  "questionText": "Digital technology is used by students in many ways to capture learning as it happens. Describe three ways in which digital technology could be used when producing a design portfolio for",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(3+3+2 marks)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "CAD drawings/Circuit simulation diagrams/flowcharts, graphs, photographic evidence of design journey, presentation of folio, etc.",
-    "marks": 8,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(3+3+2 marks)' for this question."
- },
- {
   "id": "tech-2023-ol-a11-i",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -13329,7 +13006,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2023 OL Section A Q12",
-  "questionText": "Use two graphic techniques to enhance the representation of the electric kettle shown. 2023L065G2EL 2023.M103BC Coimisiún na Scrúduithe Stáit State Examinations Commission Section B and Section C Ordinary Level Monday 26 June Afternoon 2:00 - 4:00 160 marks Instructions Section B 48 marks Core- Long-answer questions. Answer the two core questions presented. Each question in Section B carries 24 marks. Section C 40 marks Options- Long-answer questions. Answer one of the five optional questions presented. Each question in Section C carries 40 marks. THESE QUESTIONS ARE TO BE ANSWERED IN THE ANSWERBOOK ATTACHED TO SECTION A.",
+  "questionText": "Use two graphic techniques to enhance the representation of the electric kettle shown.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secA-q12-art",
@@ -14028,64 +13705,6 @@
    }
   ],
   "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
- },
- {
-  "id": "tech-2023-ol-c1c",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2023 OL Section C Q1(c)",
-  "questionText": "The image shows a PIC which can be used to control devices such as the novelty light in",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(10 Marks, 4+6)"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "in 1(b) above.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Give two advantages of using a PIC to control devices.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Reprogrammable, adjustments can be made easily, parallel processing,",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Using an annotated sketch, show how pin number one of a PIC is identified.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Pin 1",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(10 Marks, 4+6)' for this question."
  },
  {
   "id": "tech-2023-ol-c1d-i",
@@ -15594,43 +15213,6 @@
   "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
  },
  {
-  "id": "tech-2024-hl-a11-i",
-  "topicId": "tech-core-structures",
-  "conceptId": "core-structures",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2024 HL Section A Q11(i)",
-  "questionText": "Calculate the mechanical advantage of a forklift if it lifts a mass of 1800 kg with",
-  "stem": "an effort force of 200 N. Assume g = 9.81 m/s2",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(6 marks, 4 + 2)"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "an effort force of 200 N. Assume g = 9.81 m/s2",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Mechanical advantage = Load force / effort force 1800 x 9.81/200 = 17,658/200 = 88.29",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
- },
- {
   "id": "tech-2024-hl-a11-ii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -16566,71 +16148,6 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6 +4)' for this part."
- },
- {
-  "id": "tech-2024-hl-c1b-i",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2024 HL Section C Q1(b)(i)",
-  "questionText": "Draw a flowchart for the operating sequence of the deterrent.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(16 marks, 10 + 4 + 2)"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Power on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Check for No movement.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Red LED on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Sound on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Wait 60 seconds.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Check for No Sound Off Red LED off movement.",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(16 marks, 10 + 4 + 2)' for this part."
  },
  {
   "id": "tech-2024-hl-c1b-ii",
@@ -18554,7 +18071,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2024 OL Section A Q12",
-  "questionText": "Use two graphic techniques to enhance the representation of the desk lamp shown. 2024L065G2EL 2024.M103BC Coimisiún na Scrúduithe Stáit State Examinations Commission Section B and Section C Ordinary Level Monday 24 June Afternoon 2:00 - 4:00 160 marks Instructions Section B 48 marks Core - Long-answer questions. Answer the two core questions presented. Each question in Section B carries 24 marks. Section C 40 marks Options - Long-answer questions. Answer one of the five optional questions presented. Each question in Section C carries 40 marks. THESE QUESTIONS ARE TO BE ANSWERED IN THE ANSWERBOOK ATTACHED TO SECTION A.",
+  "questionText": "Use two graphic techniques to enhance the representation of the desk lamp shown.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secA-q12-art",
@@ -19135,113 +18652,6 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6+4)' for this part."
- },
- {
-  "id": "tech-2024-ol-c1b",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2024 OL Section C Q1(b)",
-  "questionText": "A PIC, like the one mentioned in",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(20 Marks, 6+8+6)"
-  },
-  "totalMarks": 20,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Complete a flowchart to operate the bubble blower in the Start following sequence:",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "• When a button is pressed, the motorised blower is turned on N",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "• When the button is pressed a second time, Button the motorised blower increases its speed Y",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "• When the button is pressed a third time, Motor On the motorised blower stops.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Start N",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Button",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Button N Y",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Button N",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Suggest a modification of the Y flowchart to alert the N Y user when the bubble solution Solution?",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "is running low. Y Motor Off",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Motor On",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Name a suitable sensor that could be used to detect when the N bubble solution is low. Button",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this question."
  },
  {
   "id": "tech-2024-ol-c1c-i",
@@ -23819,7 +23229,7 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2025 OL Section A Q12",
-  "questionText": "Use two graphic techniques to enhance the representation of the coffee cup shown. 2025L065G2EL 2025.M103BC Coimisiún na Scrúduithe Stáit State Examinations Commission Section B and Section C Ordinary Level Monday 23 June Afternoon 2:00 - 4:00 160 marks Instructions Section B 48 marks Core - Long-answer questions. Answer the two core questions presented. Each question in Section B carries 24 marks. Section C 40 marks Options - Long-answer questions. Answer one of the five optional questions presented. Each question in Section C carries 40 marks. THESE QUESTIONS ARE TO BE ANSWERED IN THE ANSWERBOOK ATTACHED TO SECTION A.",
+  "questionText": "Use two graphic techniques to enhance the representation of the coffee cup shown.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secA-q12-art",

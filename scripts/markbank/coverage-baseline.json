@@ -225,18 +225,18 @@
   "refsHash": "83bd7bc978ad6302"
  },
  "technology": {
-  "cards": 724,
-  "contentHash": "b5f46d8b6db2bfe3",
-  "coveragePct": 92.6,
-  "covered": 733,
-  "excluded": 38,
+  "cards": 716,
+  "contentHash": "4d55bc81fece955d",
+  "coveragePct": 92.1,
+  "covered": 721,
+  "excluded": 46,
   "leaves": 833,
-  "open": 62,
+  "open": 66,
   "orphans": 0,
   "papers": {
    "count": 20,
    "hash": "4ca9c323b2270a38"
   },
-  "refsHash": "60ee9255d99be3b7"
+  "refsHash": "54274e7e363d8dc6"
  }
 }

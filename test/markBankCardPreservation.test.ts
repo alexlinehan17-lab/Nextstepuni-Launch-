@@ -419,8 +419,8 @@ const decks = [
   /* Technology is the sixteenth subject and the first to be authored end to
    * end from a paper-anchored census in one pass. Enrolled explicitly so a
    * later regeneration cannot silently omit or replace any of its cards. */
-  ['technology:higher', TECHNOLOGY_HIGHER, 360, 'f792c8003ad8f399a907b9eb213d217268f5f787613d58b1cea86892cc261b0b'],
-  ['technology:ordinary', TECHNOLOGY_ORDINARY, 364, '2d93f138f7bd9ec81f9e4278cb87a9de3ddf6cf4ae960861f5e871a4ae752e80'],
+  ['technology:higher', TECHNOLOGY_HIGHER, 357, 'ae8ad195ca373cef2d8923c83a848613215aa9413c2cd7bda7d6796c4d64370c'],
+  ['technology:ordinary', TECHNOLOGY_ORDINARY, 359, '43e668303c30fef288ee0e09d8b5d3384105085e23cc10d288903ed29d1ab687'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -435,7 +435,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_219);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_211);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

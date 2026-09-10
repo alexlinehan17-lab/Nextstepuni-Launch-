@@ -100,6 +100,11 @@ LEANS_ON_STEM = re.compile(
     r'|structure|symbol|material|screen|table|chart|graph|drawing|sketch'
     r'|assembly|arrangement|layout)\b', re.I)
 
+# An ask that stops mid-phrase: the reader lost the rest of the sentence.
+CUT_SHORT = re.compile(
+    r'\b(?:in|of|the|and|to|on|for|with|at|a|an|as|by|from|that|which|when'
+    r'|is|are|be|its|their|this|these)\s*$', re.I)
+
 MIN_CUE_WORDS = 4
 # How much of the scheme's cue the paper's ask must hold before the pairing
 # counts as confirmed by wording rather than by address.
@@ -218,10 +223,21 @@ def graphic_fragments(points):
     # answers, however tersely each is written.
     if sum(1 for p in points if CALCULATION.search(p)) >= 2:
         return False
-    if sum(1 for p in points if p.lstrip().startswith(('\u2022', '-', '\u2013'))) >= 2:
+    bullets = [p for p in points
+               if p.lstrip().startswith(('\u2022', '-', '\u2013'))]
+    # A bulleted list is an exception only when the list is what this part
+    # holds. Three bullets among twelve fragments is the QUESTION's own
+    # sequence, reprinted above a flowchart -- "the capsule is inserted N On?"
+    # is one of the paper's bullets with a flowchart's decision box welded to
+    # it, and the exception let three such cards through.
+    if len(bullets) >= 2 and len(bullets) >= 0.6 * len(points):
         return False
     short = [p for p in points if len(p) < 46]
-    closed = [p for p in points if re.search(r'[.?!]$', p)]
+    # A question mark closes a flowchart's decision box, not a sentence --
+    # "N On?", "Large coffee?" -- and counting those as closed let three
+    # flowchart cards through. Only a full stop on a line long enough to be a
+    # sentence counts.
+    closed = [p for p in points if p.rstrip().endswith(('.', '!')) and len(p) >= 30]
     return len(short) >= 0.7 * len(points) and len(closed) <= 0.25 * len(points)
 
 
@@ -572,6 +588,14 @@ def author(bind_figures=True):
                     continue
                 if len(question) < 16 and len(show_stem) < 20:
                     note('the ask is too short to stand on its own', question)
+                    continue
+                if CUT_SHORT.search(question):
+                    # The paper text stops mid-phrase -- "A PIC, like the one
+                    # mentioned in" -- which is the reader losing the rest of
+                    # the sentence, not a question. paper.suspect() flags the
+                    # same shape and the authoring layer refuses to card a
+                    # flagged part; this is that rule, for the sections walker.
+                    note('the paper text for this part is cut short', question)
                     continue
 
                 trimmed = len(points) - min(len(points), CAP[section])
