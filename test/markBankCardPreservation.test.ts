@@ -68,6 +68,10 @@ import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portugu
 import { CARDS as PORTUGUESE_ORDINARY } from '../components/MarkBank/cards/portuguese/ordinary';
 import { CARDS as ROMANIAN_HIGHER } from '../components/MarkBank/cards/romanian/higher';
 import { CARDS as DUTCH_HIGHER } from '../components/MarkBank/cards/dutch/higher';
+import { CARDS as LITHUANIAN_HIGHER } from '../components/MarkBank/cards/lithuanian/higher';
+import { CARDS as LITHUANIAN_ORDINARY } from '../components/MarkBank/cards/lithuanian/ordinary';
+import { CARDS as LATVIAN_HIGHER } from '../components/MarkBank/cards/latvian/higher';
+import { CARDS as CZECH_HIGHER } from '../components/MarkBank/cards/czech/higher';
 import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
 import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
@@ -549,6 +553,35 @@ const decks = [
    * anything. Both are sat at ONE level, so each ships a Higher deck only. */
   ['romanian:higher', ROMANIAN_HIGHER, 50, 'f48554eeb516fd17cc9b89520eaf76ebe3e46c564ac0b41d0225653e225216ba'],
   ['dutch:higher', DUTCH_HIGHER, 42, '62df13c5837ef5cabcd391e637a318fc25b106bcdf90744ffdddc4d10d6a70c4'],
+  /* Lithuanian, added 10 September 2026 — the second NON-CURRICULAR EU
+   * LANGUAGE, and the deepest corpus in the bank: twenty-two sittings from
+   * 2010 to 2026, because that is what the SEC published for it and every one
+   * of them is the same examination. Every card is new; none replaces
+   * anything. Its 306 cards cover 306 of the 826 asks its papers print and
+   * the other 520 are excluded with the scheme's own printed line — 280
+   * listening asks the recording answers, 99 written tasks answered by a
+   * marking grid or a model paragraph, 35 matching tasks whose answer is a
+   * letter naming a box the card cannot carry, and the rest named in
+   * scripts/markbank/authoring/exclusions/lithuanian.json. It is the first
+   * deck whose text needed a repair map derived from the LANGUAGE rather than
+   * from a font: two of its schemes embed a subset nothing else in the bank
+   * shares, and lt_glyphs.py settles their glyphs by which words they make. */
+  ['lithuanian:higher', LITHUANIAN_HIGHER, 163, '8492d0ed851e7023f0daae360420bc38e6aef456cfe45b7f62efc30c8e86fba3'],
+  ['lithuanian:ordinary', LITHUANIAN_ORDINARY, 143, '60d9e670bf51d7ff41846017985015d94031954562e82edeb0e6ace4b0d9e0d8'],
+  /* Latvian and Czech, added 10 September 2026 on Lithuanian's reader — the
+   * third and fourth non-curricular EU languages. Every card is new; none
+   * replaces anything. They are the SMALLEST decks in the bank and that is
+   * the measurement, not a shortfall: their seventeen sittings each print the
+   * old examination whose scheme answers five of its six reading questions,
+   * its commentary and its essay with continuous model prose and prices
+   * nothing inside any of it. What it does price is the vocabulary task, once
+   * on the question and not on its parts — so those card as `questionTotal`,
+   * one card per sitting carrying the SEC's gloss for each of five
+   * expressions, and every other ask is excluded with the printed line that
+   * refuses it. Latvian covers 68 of its 218 paper asks and Czech 75 of 219,
+   * with nothing open in either. */
+  ['latvian:higher', LATVIAN_HIGHER, 20, '03f3c7fdefa700a5437e95efc5bc7ab01f544851a497f4c129f2027f9f24a957'],
+  ['czech:higher', CZECH_HIGHER, 15, 'cf2e36d688faf72c658c8cb191fb3580e87ec1c934fd3a3017bdd0847a71ae56'],
   /* Classical Studies is the twenty-second subject, entered on a RE-MEASURE:
    * the bank had it recorded as rejected on a band grid that turns out to
    * belong to the Research Study Report, which is coursework, not the written
@@ -599,6 +632,10 @@ describe('Mark Bank card preservation', () => {
     // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
     // Portuguese 173, Romanian 50 and Dutch 42.
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_352);
+    // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
+    // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
+    // 16,087 + 306 + 20 + 15.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_428);
     // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
     // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
   });
@@ -631,6 +668,9 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('portuguese:')
         && !name.startsWith('romanian:')
         && !name.startsWith('dutch:')
+        && !name.startsWith('lithuanian:')
+        && !name.startsWith('latvian:')
+        && !name.startsWith('czech:')
         && !name.startsWith('arabic:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);

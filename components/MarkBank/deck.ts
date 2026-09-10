@@ -78,6 +78,12 @@ const romanianCurriculum = CURRICULUM.find(subject => subject.id === 'romanian')
 if (!romanianCurriculum) throw new Error('Canonical Romanian curriculum is missing');
 const dutchCurriculum = CURRICULUM.find(subject => subject.id === 'dutch');
 if (!dutchCurriculum) throw new Error('Canonical Dutch curriculum is missing');
+const lithuanianCurriculum = CURRICULUM.find(subject => subject.id === 'lithuanian');
+if (!lithuanianCurriculum) throw new Error('Canonical Lithuanian curriculum is missing');
+const latvianCurriculum = CURRICULUM.find(subject => subject.id === 'latvian');
+if (!latvianCurriculum) throw new Error('Canonical Latvian curriculum is missing');
+const czechCurriculum = CURRICULUM.find(subject => subject.id === 'czech');
+if (!czechCurriculum) throw new Error('Canonical Czech curriculum is missing');
 const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
 if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
 const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
@@ -1129,6 +1135,14 @@ export const POLISH_STRANDS: StrandRef[] = polishCurriculum.strands.map((strand,
  * see the shape of their examination, not only the part that is carded.
  */
 export const PORTUGUESE_STRANDS: StrandRef[] = portugueseCurriculum.strands.map((strand, index) => ({
+/* Lithuanian's whole taxonomy ships, not only the part that is carded.
+ * Its third strand names the paper's own task types and two of them take
+ * cards — the open questions of I Dalis and the new format's reading tasks.
+ * The commentary, the essay and the written production are answered by a
+ * model paragraph and a marking grid, and the listening asks can only be
+ * answered from the recording. A student browsing Lithuanian should see the
+ * shape of their examination, not only the part that is carded. */
+export const LITHUANIAN_STRANDS: StrandRef[] = lithuanianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
   title: strand.name,
@@ -1152,6 +1166,13 @@ export const PORTUGUESE_STRANDS: StrandRef[] = portugueseCurriculum.strands.map(
  * should see the shape of their examination, not only the part that is carded.
  */
 export const ROMANIAN_STRANDS: StrandRef[] = romanianCurriculum.strands.map((strand, index) => ({
+/* Latvian and Czech print the OLD examination in every year of the corpus —
+ * an article, six questions on it, a commentary and an essay, at one level —
+ * so their taxonomy is two strands rather than Lithuanian's three. Only the
+ * vocabulary subtopic takes cards: the scheme answers everything else with a
+ * model paragraph or a description of a good essay. The whole taxonomy still
+ * ships, so a student sees the shape of their examination. */
+export const LATVIAN_STRANDS: StrandRef[] = latvianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
   title: strand.name,
@@ -1163,6 +1184,7 @@ export const ROMANIAN_STRANDS: StrandRef[] = romanianCurriculum.strands.map((str
 }));
 
 export const DUTCH_STRANDS: StrandRef[] = dutchCurriculum.strands.map((strand, index) => ({
+export const CZECH_STRANDS: StrandRef[] = czechCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
   title: strand.name,
@@ -1422,6 +1444,9 @@ export const SUBJECTS = [
   { id: 'portuguese', title: 'Portuguese', strands: PORTUGUESE_STRANDS, spec: 'Leaving Certificate Portuguese, a non-curricular EU language' },
   { id: 'romanian', title: 'Romanian', strands: ROMANIAN_STRANDS, spec: 'Leaving Certificate Romanian, a non-curricular EU language' },
   { id: 'dutch', title: 'Dutch', strands: DUTCH_STRANDS, spec: 'Leaving Certificate Dutch, a non-curricular EU language' },
+  { id: 'lithuanian', title: 'Lithuanian', strands: LITHUANIAN_STRANDS, spec: 'Leaving Certificate Lithuanian, a non-curricular EU language' },
+  { id: 'latvian', title: 'Latvian', strands: LATVIAN_STRANDS, spec: 'Leaving Certificate Latvian, a non-curricular EU language' },
+  { id: 'czech', title: 'Czech', strands: CZECH_STRANDS, spec: 'Leaving Certificate Czech, a non-curricular EU language' },
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
   { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
   { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
@@ -1737,6 +1762,17 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   },
   dutch: {
     higher: () => import('./cards/dutch/higher'),
+  lithuanian: {
+    higher: () => import('./cards/lithuanian/higher'),
+    ordinary: () => import('./cards/lithuanian/ordinary'),
+  },
+  // Latvian and Czech are sat at ONE level. The SEC's file letter is 'A' and
+  // the cover says "Higher Level", so there is no ordinary deck to import.
+  latvian: {
+    higher: () => import('./cards/latvian/higher'),
+  },
+  czech: {
+    higher: () => import('./cards/czech/higher'),
   },
   arabic: {
     higher: () => import('./cards/arabic/higher'),

@@ -299,6 +299,28 @@ SUBJECTS = {
     # and their asks are priced by the QUESTION PAPER, not by the scheme.
     'romanian': {'mode': 'sections', 'walker': 'eu'},
     'dutch': {'mode': 'sections', 'walker': 'eu'},
+    # Lithuanian, Latvian and Czech are the NON-CURRICULAR EU languages after
+    # Polish (SEC subjects 550, 549 and 547) and share one reader, lt_paper /
+    # lt_scheme, because they are one examination printed in three languages.
+    # The corpus holds them from 2010, not 2021, so the denominator covers
+    # THREE printed shapes rather than Polish's two:
+    #
+    #   2010-2020  I DALIS six questions on one text, II DALIS a commentary,
+    #              III DALIS an essay — 100 marks, one level, one booklet
+    #   2021       I DALIS and II DALIS only, out of 70
+    #   2022-2026  Dalis A Skaitymas and Dalis B Rašymas in one booklet, plus
+    #              a Listening Comprehension Test in its own ('A00'), at two
+    #              levels — Lithuanian only; Latvian and Czech never made
+    #              this change and print the old paper in every year
+    #
+    # The section token is the paper's own: 'A' and 'B' for the two Dalis
+    # banners, 'LA' to 'LE' for the listening booklet's five parts, and 'I',
+    # 'II' and 'III' for the old examination's parts, which restart their
+    # numbering. A citation reads "2024 HL Section A Q1(b)" or
+    # "2015 HL Section I Q1(a)".
+    'lithuanian': {'mode': 'sections', 'walker': 'lt'},
+    'latvian': {'mode': 'sections', 'walker': 'lt'},
+    'czech': {'mode': 'sections', 'walker': 'lt'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -464,13 +486,11 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
                                   'where': f'{pre or ""} Q{q}',
                                   'detail': f'letters found: {letters}'})
             for letter in {k[-2] for k in here}:
-                roms = sorted({k[-1] for k in here
-                               if k[-2] == letter and k[-1]},
-                              key=lambda r: ROMANS.index(r) if r in ROMANS else 99)
-                if roms and roms != ROMANS[:len(roms)]:
+                roms = {k[-1] for k in here if k[-2] == letter and k[-1]}
+                if roms and not _sub_run_ok(roms):
                     flags.append({'type': 'roman-gap',
                                   'where': f'{pre or ""} Q{q}({letter or ""})',
-                                  'detail': f'romans found: {roms}'})
+                                  'detail': f'sub-markers found: {sorted(roms)}'})
     for k in leaves_of(parts):
         text = texts.get(k, '')
         # isalnum, not ASCII: the papers set variables in the Mathematical
@@ -494,6 +514,26 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
 # downstream changes; what changes is the order the two are PRINTED in, and a
 # citation has to name the address the candidate saw.
 ROMAN_MAJOR = {'latin'}
+
+
+def _sub_run_ok(marks):
+    """Is this a complete run of sub-markers, in the notation the paper uses?
+
+    Almost every paper in the bank numbers the third level of an address in
+    ROMANS, and this checked that alone. The Baltic languages number it in
+    DIGITS wherever the sub-parts are the rows of a table: 2026 Ordinary
+    Lithuanian prices Q1(h) "3 Marks (3 x 1)" over three statements the paper
+    numbers "1." to "3.", and 2024 Ordinary numbers a sentence-matching task
+    the same way, while the ordering task on the SAME page is numbered "(i)"
+    to "(vi)". Both are complete runs and neither is a gap; a roman-only test
+    reported every digit run as one.
+    """
+    marks = set(marks)
+    if all(str(m).isdigit() for m in marks):
+        nums = sorted(int(m) for m in marks)
+        return nums == list(range(1, len(nums) + 1))
+    order = sorted(marks, key=lambda r: ROMANS.index(r) if r in ROMANS else 99)
+    return order == ROMANS[:len(order)]
 
 
 def key_label(k, subject=None):
@@ -1839,12 +1879,29 @@ def census_eu(subject, year, level):
 
     P = EuPaper(year, level, subject)
     S = EuScheme(year, level, subject)
+def census_lt(subject, year, level):
+    """Lithuanian, Latvian and Czech: the booklets one sitting prints.
+
+    THE DENOMINATOR IS THE PAPER, and these papers can be read from the paper
+    alone: they letter their questions "(a)" to "(k)" and number their reading
+    passages, so no printed marker is ambiguous between passage and ask, and
+    no wording has to be scored to find one. The scheme is read beside it to
+    price the asks and to be CHECKED against them, which is what lt_flags
+    does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from lt_paper import LtPaper                                # noqa: E402
+    from lt_scheme import LtScheme                              # noqa: E402
+
+    P = LtPaper(year, level, subject)
+    S = LtScheme(year, level, subject)
     texts = {ask.key: ask.full_text for ask in P.all_asks()}
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S
 
 
 def eu_flags(P, S):
+def lt_flags(P, S):
     """Where the paper and the scheme disagree about what was asked.
 
     The two documents are read independently — the paper for its asks, the
@@ -1884,6 +1941,42 @@ def eu_flags(P, S):
         flags.append({'type': 'orphan-scheme-ask', 'where': key_label(ask.key),
                       'detail': 'the scheme prices this ask and the paper '
                                 'prints none that pairs with it'})
+    reader fault, an SEC omission or a real difference, and all three have to
+    be looked at rather than reconciled away. This is Law 3's independent
+    check: the census's own continuity flags see only interior gaps, and an
+    ask keyed under its NEIGHBOUR's letter leaves no gap at all.
+    """
+    flags = list(P.flags)
+    paper = {a.key for a in P.reading_asks()}
+    scheme = {a.key for a in S.reading()}
+    # An ask the scheme prices ONE LEVEL UP is priced, not missing: the
+    # true/false tables are priced on the letter, "(3 x 1)", with their
+    # statements printed under it and no marks beside any of them.
+    priced_parents = {(a.section, a.q, a.letter) for a in S._asks
+                      if a.roman is None and a.per is not None}
+    for key in sorted(paper - scheme, key=str):
+        if (key[0], key[1], key[2]) in priced_parents:
+            continue
+        flags.append({'type': 'unpriced-ask', 'where': key_label(key),
+                      'detail': 'the paper prints this ask and the scheme '
+                                'prices no ask at that address'})
+    paper_parents = {(a.section, a.q, a.letter) for a in P.reading_asks()}
+    # A question the paper prints WHOLE, with no lettered part under it. The
+    # old examination's five-mark questions are answered by a model paragraph,
+    # and several Latvian schemes set that paragraph out as a lettered list of
+    # their own — "a) J.Mažeiks veicināja neatkarības procesu…", "b) 1991.gadā
+    # …" — which is the scheme organising ITS answer, not an ask the paper
+    # forgot to print. Reported as orphans it was twenty-one flags in one
+    # sitting saying the same thing about a paper with nothing missing.
+    whole = {(a.section, a.q) for a in P.reading_asks() if a.letter is None}
+    for key in sorted(scheme - paper, key=str):
+        if (key[0], key[1], key[2]) in paper_parents:
+            continue                     # the paper numbers what the scheme
+        if (key[0], key[1]) in whole and key[3] is None:
+            continue                     # the scheme's own model answer, lettered
+        flags.append({'type': 'orphan-scheme-ask', 'where': key_label(key),
+                      'detail': 'the scheme prices this address and the paper '
+                                'prints no ask there'})
     for ask in S.reading():
         if ask.fault:
             flags.append({'type': 'tariff-disagreement',
@@ -2359,6 +2452,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'eu':
                     parts, texts, files, P_, S_ = census_eu(
                         subject, year, level)
+                elif cfg.get('walker') == 'lt':
+                    parts, texts, files, P_, S_ = census_lt(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -2460,6 +2556,24 @@ def census_subject(subject):
                 total = P_.cover_marks()
                 label = f'{total}-mark {P_.era} paper'
                 marks = {(None, 0): total}
+            elif cfg.get('walker') == 'lt':
+                flags += lt_flags(P_, S_)
+                # The examination was rebuilt in 2022 and rebuilt again inside
+                # that: 100 marks over three parts before 2021, 70 over two in
+                # 2021, and from 2022 a written booklet plus a listening one.
+                # Naming the era keeps the cross-year marks checksum comparing
+                # each paper with its OWN kind; without it every sitting before
+                # 2022 reported a shortfall against the later ones.
+                #
+                # 2022 is its own kind again, at Higher: Section A prints
+                # "50 taškų" and the paper's own rubric is "Atlikite pirmą
+                # ARBA antrą užduotį" — answer the first OR the second reading
+                # task — where every later sitting sets both and prints 100.
+                # The census counts both routes, as it counts every printed
+                # choice, and the checksum compares that sitting with the
+                # other sittings that print the same total.
+                label = f'{P_.cover_marks()}-mark paper'
+                marks = {(None, 0): P_.cover_marks()}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}

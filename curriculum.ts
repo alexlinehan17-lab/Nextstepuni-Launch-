@@ -3509,7 +3509,8 @@ export const CURRICULUM: CurriculumSubject[] = [
     "name": "Lithuanian (non-curricular EU language)",
     "category": "language",
     "levels": [
-      "higher"
+      "higher",
+      "ordinary"
     ],
     "strands": [
       {

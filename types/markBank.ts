@@ -339,6 +339,13 @@ export interface SecCardBase extends CardBase {
   // of the paper. So the section is the printed question — the unit a student
   // navigates by, and the unit each of the syllabus's task types belongs to.
   | 'Q1' | 'Q2' | 'Q3' | 'Q4' | 'Q5'
+  // Lithuanian, Latvian and Czech print no lettered section a card could be
+  // filed under either: "Dalis A" and "Dalis B" divide reading from writing
+  // and nothing else, while the unit a student navigates by is the TASK —
+  // "Pirma užduotis", "Antra užduotis" — one printed text with up to eleven
+  // asks on it. So the section is that task, 'U1' to 'U3', and the old
+  // examination's single-text I DALIS is 'U1'.
+  | 'U1' | 'U2' | 'U3'
   | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
@@ -742,8 +749,15 @@ export const rowCapFor = (kind: TariffModel['kind']): number =>
 // Indicative Notes, and 2025 Higher prints twenty-one separate points for one
 // twenty-five-mark question on Augustus. Questions 1, 2 and 4 are short —
 // Question 1 Section B is twelve comprehension asks of four to fourteen marks.
+// The Baltic languages' reading tasks are long questions whose PARTS are
+// small: 2024 Higher Lithuanian answers a five-mark "find one past-frequentative
+// verb" with eleven verbs and 2022 Ordinary answers a five-mark "write one thing
+// Jonas does in New York" with thirteen. One task is one printed text with up to
+// eleven asks on it, which is what makes the examiner print a long menu, so the
+// task tokens 'U1' to 'U3' (užduotis — the paper's own word for it) belong here.
 const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3',
-  'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1', 'Q3', 'Q5']);
+  'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1', 'Q3', 'Q5',
+  'U1', 'U2', 'U3']);
 export const optionCapFor = (section: string): number =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 

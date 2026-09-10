@@ -108,8 +108,11 @@ const QTOKEN = '(?: (?:Q(\\d{1,2})?(-alt)?|ABQ))';
 const HEAD = new RegExp(`${ADDRESS}${QTOKEN}|${ADDRESS}$`);
 // The bare A/B between tokens is Chemistry's printed option question —
 // "Q11(d)A(i)" answers option A of part (d).
+// A sub-marker may be a DIGIT: the Baltic languages number the rows of a
+// true/false table "1." to "5." where every science paper numbers them "(i)"
+// to "(v)", and the citation names the address the candidate saw.
 const TAIL =
-  /^(?:\s*(?:\(\s*[A-Za-z]{1,4}\s*\)|[AB]\b|[,–—-]|and\b))*(?:[\s\d].*)?$/;
+  /^(?:\s*(?:\(\s*(?:[A-Za-z]{1,4}|\d{1,2})\s*\)|[AB]\b|[,–—-]|and\b))*(?:[\s\d].*)?$/;
 
 describe('Mark Bank paper-coverage ratchet', () => {
   it.each(SUBJECTS)('%s deck matches its measured baseline', (subject) => {
