@@ -60,6 +60,8 @@ import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/hi
 import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
 import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
+import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
+import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
@@ -499,6 +501,14 @@ const decks = [
    * so on their face. */
   ['russian:higher', RUSSIAN_HIGHER, 83, '28a15e33be6d11b7077181773cc7611e2681f8c34c057fa8361077b386491392'],
   ['russian:ordinary', RUSSIAN_ORDINARY, 116, '7a1246357f052dda6f3e337e5c05b1a7df6ce1ec213f8d3eb9cb648576fa8e49'],
+  /* Japanese is the twenty-second subject and the first set in a non-Latin
+   * script. Every card is new; none replaces anything. Two things are true of
+   * it and of no deck before it: a card may carry KANA AND KANJI, with the
+   * SEC's own furigana folded into the line in brackets (ja_text.py), and the
+   * answer language changes inside one question, so every card states which
+   * language its answer must be in. */
+  ['japanese:higher', JAPANESE_HIGHER, 339, 'a06378e0d982a6331919f663c9335bc1e9099560170ed6c98908d7b0108fc510'],
+  ['japanese:ordinary', JAPANESE_ORDINARY, 261, '460f3973e9d10e7a1f5a2797fb68d0c82530b3cb70bd2eadeaec015a4a807392'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -518,6 +528,8 @@ describe('Mark Bank card preservation', () => {
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199.
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_257);
+    // Japanese 600.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_658);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -541,6 +553,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('spanish:')
         && !name.startsWith('italian:')
         && !name.startsWith('russian:')
+        && !name.startsWith('japanese:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);

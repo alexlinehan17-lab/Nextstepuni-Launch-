@@ -269,6 +269,21 @@
     },
     "refsHash": "7bc73bbdfb897f41"
   },
+  "japanese": {
+    "cards": 600,
+    "contentHash": "f8ca05bcde10a040",
+    "coveragePct": 95.6,
+    "covered": 600,
+    "excluded": 456,
+    "leaves": 1105,
+    "open": 49,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "8c702243c6947eae"
+    },
+    "refsHash": "d23fe40d77f543ca"
+  },
   "lcvp": {
     "cards": 314,
     "contentHash": "fefb46868385d474",

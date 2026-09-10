@@ -99,6 +99,12 @@ SUBJECTS = {
     # stage 0. SEC subject 099, the same two booklets (written '000' and
     # Listening Comprehension 'A00') printed bilingually, language letter 'B'.
     'russian': 'russian',
+    # Added 10 September 2026. Japanese is the modern language furthest from
+    # the four already carded: it is set in a NON-LATIN script across three
+    # writing systems, so before anything else the corpus has to answer whether
+    # kana and kanji survive the PDF text layer at all. Measured at stage 0
+    # before it is chosen.
+    'japanese': 'japanese',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
 }

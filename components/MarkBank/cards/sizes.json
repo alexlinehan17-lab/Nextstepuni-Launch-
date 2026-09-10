@@ -97,5 +97,9 @@
  "russian": {
   "higher": 83,
   "ordinary": 116
+ },
+ "japanese": {
+  "higher": 339,
+  "ordinary": 261
  }
 }
