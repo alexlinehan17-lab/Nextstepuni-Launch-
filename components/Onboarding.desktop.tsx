@@ -6,7 +6,6 @@
 import React, { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import Puifin, { type PuifinPose } from './ui/Puifin';
 import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
@@ -62,36 +61,16 @@ interface OnboardingDraft {
   restDays: string[];
 }
 
-// ─── The Guide — a painted blob that asks each step's question in a
-//     hand-drawn speech bubble. One guide, one question, per screen (the
-//     Duolingo/Brilliant conversational register, in our own language). ───
-const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.ReactNode; sub?: React.ReactNode; tilt?: number; pose?: PuifinPose }> = ({ tint, ink, question, sub, tilt = 0, pose = 'perch' }) => (
-  <div className="mx-auto mb-7 flex w-full max-w-xl items-start gap-3.5 text-left">
-    <motion.span
-      aria-hidden="true"
-      initial={{ scale: 0.6, opacity: 0, rotate: tilt - 10 }}
-      animate={{ scale: 1, opacity: 1, rotate: tilt }}
-      transition={{ duration: 0.45, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
-      className="relative mt-1 h-14 w-14 shrink-0"
-    >
-      {/* The step's tint survives as Puifín's perch-disc. */}
-      <span className="absolute inset-0 rounded-full" style={{ backgroundColor: tint, boxShadow: `inset 0 0 0 1.5px ${ink}26` }} />
-      <span className="absolute inset-x-0 bottom-0 flex justify-center">
-        <Puifin pose={pose} size={52} />
-      </span>
-    </motion.span>
-    <motion.div
-      initial={{ opacity: 0, scale: 0.92, x: -6 }}
-      animate={{ opacity: 1, scale: 1, x: 0 }}
-      transition={{ duration: 0.4, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
-      className="relative min-w-0 flex-1 rounded-2xl border-2 border-[#1A1A1A] bg-white px-5 py-4 shadow-[3px_3px_0_0_#1A1A1A] dark:border-zinc-200 dark:bg-zinc-900"
-      style={{ transformOrigin: 'left center' }}
-    >
-      <span aria-hidden="true" className="absolute -left-[8px] top-6 h-3.5 w-3.5 rotate-45 border-b-2 border-l-2 border-[#1A1A1A] bg-white dark:border-zinc-200 dark:bg-zinc-900" />
-      <p className="font-serif text-[21px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{question}</p>
-      {sub && <p className="mt-1 text-[13px] leading-relaxed text-[#78716C] dark:text-zinc-400">{sub}</p>}
-    </motion.div>
-  </div>
+const OnboardingHeading: React.FC<{ question: React.ReactNode; sub?: React.ReactNode }> = ({ question, sub }) => (
+  <MotionDiv
+    initial={{ opacity: 0, y: 8 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+    className="mx-auto mb-7 w-full max-w-xl text-left"
+  >
+    <h2 className="font-serif text-[28px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{question}</h2>
+    {sub && <p className="mt-2 text-sm leading-relaxed text-[#78716C] dark:text-zinc-400">{sub}</p>}
+  </MotionDiv>
 );
 
 const onboardingDraftKey = (userId: string, mode: string) => `nextstepuni:onboarding-draft:v1:${userId}:${mode}`;
@@ -745,12 +724,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    <OnboardingGuide
-                      tint="#FBE9DC"
-                      ink="#B5500F"
-                      tilt={-3}
-                      pose="wave"
-                      question={`Hi ${firstName} — I'm Puifín, your guide here.`}
+                    <OnboardingHeading
+                      question={`Hi ${firstName} — welcome to NextStepUni.`}
                       sub="Two minutes of setup and the whole app fits itself around you. One question at a time."
                     />
 
@@ -785,10 +760,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="flex flex-col items-center justify-center min-h-[60vh] py-6">
                   <div className="text-center w-full max-w-xl mx-auto">
-                    <OnboardingGuide
-                      tint="#DCE9F2"
-                      ink="#33658A"
-                      tilt={2}
+                    <OnboardingHeading
                       question="What year are you in?"
                       sub="Pick your year — the whole app shapes itself around it."
                     />
@@ -925,10 +897,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    <OnboardingGuide
-                      tint="#EFEAF3"
-                      ink="#5B4A7E"
-                      tilt={-2}
+                    <OnboardingHeading
                       question="How do you like to learn?"
                       sub="Choose the style that suits you best — you can change this any time in Settings."
                     />
@@ -1001,10 +970,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Let's set up your Leaving Cert profile.</p>
                   </div>
                 )}
-                <OnboardingGuide
-                  tint="#E8F2EC"
-                  ink="#1F5F3E"
-                  tilt={2}
+                <OnboardingHeading
                   question={isTransition ? 'Which Leaving Cert subjects are you taking?' : 'Which subjects are you carrying?'}
                   sub={<>
                     Tap to select {curriculumLevel === 'junior' ? 'your subjects' : 'your Leaving Cert subjects'}.{' '}
@@ -1055,10 +1021,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {/* Step 6: Grade Configuration */}
             {step === 6 && curriculumLevel === 'junior' && (
               <MotionDiv key="step6-jc" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
-                <OnboardingGuide
-                  tint="#F6EEDF"
-                  ink="#8A6B2D"
-                  tilt={-2}
+                <OnboardingHeading
                   question="Where are you now — and where are you headed?"
                   sub="For each subject, set your current band and where you're aiming."
                 />
@@ -1164,10 +1127,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Pick where you are now and where you're aiming for your Leaving Cert.</p>
                   </div>
                 )}
-                <OnboardingGuide
-                  tint="#F6EEDF"
-                  ink="#8A6B2D"
-                  tilt={2}
+                <OnboardingHeading
                   question="Where are you now — and where are you headed?"
                   sub="For each subject, set where you are now and where you want to be."
                 />
@@ -1277,10 +1237,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="w-full max-w-2xl mx-auto py-4 sm:py-8">
                   <div className="text-center">
-                    <OnboardingGuide
-                      tint="#ECEFF0"
-                      ink="#46555E"
-                      tilt={-2}
+                    <OnboardingHeading
                       question="When do the exams land?"
                       sub={needsExamDate
                         ? 'Add your exam date and choose the days that need to stay free — the year gets paced backwards from it.'
@@ -1351,10 +1308,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step8" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    <OnboardingGuide
-                      tint="#F6EAED"
-                      ink="#84495A"
-                      tilt={2}
+                    <OnboardingHeading
                       question="Which days are off-limits?"
                       sub="Rest is part of the plan — tap the days study isn't possible and the sessions redistribute around them."
                     />
@@ -1404,11 +1358,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {/* Step 9: Review and launch */}
             {step === 9 && (
               <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
-                <OnboardingGuide
-                  tint="#E8F2EC"
-                  ink="#1F5F3E"
-                  tilt={-2}
-                  pose="cheer"
+                <OnboardingHeading
                   question={guest ? "You're ready." : `You're ready, ${firstName}.`}
                   sub="Here's the plan we built together — review it, then start learning."
                 />
