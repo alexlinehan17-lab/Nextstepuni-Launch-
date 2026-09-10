@@ -262,6 +262,34 @@ export const normalise = (t) =>
  */
 const collapseTT = (t) => t.replace(/tt/g, 't');
 
+/**
+ * The MARKS COLUMN, where the converter rejoined it into the middle of a
+ * marking point.
+ *
+ * An SEC scheme laid out as a table prints the marks in their own narrow
+ * right-hand column, and extract-scheme.py puts each cell back on the printed
+ * row it shared — which is right, and which lands the number in the middle of
+ * a wrapped answer:
+ *
+ *     (c) Any valid point: goddess of the hearth, goddess of the eternal flame of 3
+ *     Rome. 3 marks.
+ *     (b) 1 mark each: Athena, Poseidon, Zeus, Hephaestus, Erechtheus, Cecrops, Boutes, 3
+ *     Pandrosus
+ *
+ * A card quoting the SEC's own answer — "…the eternal flame of Rome",
+ * "…Boutes, Pandrosus" — then cannot be found in the SEC's own scheme, because
+ * a tariff is sitting inside the sentence. Twenty-two correct Classical Studies
+ * cards were dropped over it.
+ *
+ * Only the column cell is stripped — a bare integer at the END of a line. An
+ * ADDED form, for the reason foldOriya and ORDINAL_TARIFF give: an added form
+ * can only ever let more of the SEC's own text through, while folding both
+ * sides has cost a card before, and a marking point that genuinely ends in a
+ * number still matches on the printed form. An inline "3 marks." is NOT
+ * stripped here: a card must not quote across one, it must stop at it.
+ */
+const MARKS_COLUMN = /(?<=\S)[ \t]+\d{1,3}[ \t]*$/gm;
+
 /** The last form comparableScheme() emits: the whole scheme with tt collapsed. */
 const collapsedCache = new Map();
 
@@ -311,6 +339,8 @@ export const comparableScheme = (raw) => {
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
     normalise(joined.replace(INLINE_ASIDE, ' ')),
     normalise(repairGlyphs(joined)),
+    normalise(sourceLines.map((l) => l.replace(MARKS_COLUMN, ''))
+      .filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l)).join(' ')),
     ...numericRuns,
   ].join('|');
 };

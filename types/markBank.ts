@@ -321,6 +321,16 @@ export interface SecCardBase extends CardBase {
   | '1' | '2' | '3'
   | 'T1' | 'T2' | 'T3' | 'AG'
   | 'C1' | 'C2' | 'CD' | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1';
+   *  Classical Studies adds a TOPIC form for the syllabus examined to 2022.
+   *  That paper prints no sections and no question numbers at all: ten topics,
+   *  each setting questions "(i)" to "(iv)" with lettered parts under them, so
+   *  the topic and the roman together are the address — "Topic 1(i)", cited as
+   *  "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers Questions 1-16 straight
+   *  through Sections A and B, and files under 'A' and 'B'. */
+  section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
+  | '1' | '2' | '3'
+  | 'T1' | 'T2' | 'T3' | 'AG'
+  | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
   /** Optional lead-in the paper prints before the question proper. */

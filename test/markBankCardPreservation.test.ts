@@ -62,6 +62,8 @@ import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/hi
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
+import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
@@ -509,6 +511,16 @@ const decks = [
    * language its answer must be in. */
   ['japanese:higher', JAPANESE_HIGHER, 339, 'a06378e0d982a6331919f663c9335bc1e9099560170ed6c98908d7b0108fc510'],
   ['japanese:ordinary', JAPANESE_ORDINARY, 261, '460f3973e9d10e7a1f5a2797fb68d0c82530b3cb70bd2eadeaec015a4a807392'],
+  /* Classical Studies is the twenty-second subject, entered on a RE-MEASURE:
+   * the bank had it recorded as rejected on a band grid that turns out to
+   * belong to the Research Study Report, which is coursework, not the written
+   * paper. Every card is new; none replaces anything. It is the second subject
+   * to straddle a syllabus break — 2021-2022 are the ten-topic syllabus and
+   * 2023-2025 the specification first examined in 2023 — and 271 of its cards
+   * bind an official SEC source, most of them the accompanying Paper X of
+   * photographs and images. */
+  ['classical-studies:higher', CLAS_HIGHER, 240, 'c7ef8e6be63fdd3108213d5f94333eff67b067893036821eb3164bbedffe0c66'],
+  ['classical-studies:ordinary', CLAS_ORDINARY, 276, '363ae6d0a26308e5c8b7459143bdbfa9c66c07f203c4125a03b67dc319ebd211'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -530,6 +542,8 @@ describe('Mark Bank card preservation', () => {
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_257);
     // Japanese 600.
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_658);
+    // Classical Studies 516.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_574);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -554,6 +568,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('italian:')
         && !name.startsWith('russian:')
         && !name.startsWith('japanese:')
+        && !name.startsWith('classical-studies:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);

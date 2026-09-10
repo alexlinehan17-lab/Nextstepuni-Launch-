@@ -101,5 +101,9 @@
  "japanese": {
   "higher": 339,
   "ordinary": 261
+ },
+ "classical-studies": {
+  "higher": 240,
+  "ordinary": 276
  }
 }

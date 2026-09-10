@@ -77,6 +77,8 @@ import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
+import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
+import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -101,6 +103,7 @@ const SAMPLE_CARDS = [
   ...ITALIAN_HIGHER, ...ITALIAN_ORDINARY,
   ...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY,
   ...JAPANESE_HIGHER, ...JAPANESE_ORDINARY,
+  ...CLAS_HIGHER, ...CLAS_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -592,6 +595,12 @@ describe('the taxonomy is the redeveloped specification', () => {
       // (curriculum.ts), as French does, so its ids carry the subject's own
       // name rather than an abbreviation.
       russian: 'russian-',
+      // Classical Studies files its cards under the published Classical
+      // Studies taxonomy itself, as French does — and under one further
+      // strand, 'classical-studies-legacy-*', for the ten-topic syllabus the
+      // 2021 and 2022 papers were sat on, which the canonical curriculum
+      // (a description of the CURRENT specification) does not carry.
+      'classical-studies': 'classical-studies-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

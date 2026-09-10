@@ -465,6 +465,32 @@ const TECHNOLOGY_DECK_TOPICS: Record<string, CanonicalCurriculumTopic> = {
 };
 
 /**
+ * The ten TOPICS of the Classical Studies syllabus examined to 2022, printed
+ * by the 2021 and 2022 papers over their own questions and identical in all
+ * four of those sittings. The specification first examined in 2023 replaced
+ * them, so the canonical curriculum does not carry them and a card from those
+ * two years would resolve into no specification at all. Mirrors the legacy
+ * strand of CLASSICAL_STUDIES_STRANDS in components/MarkBank/deck.ts.
+ */
+const CLASSICAL_STUDIES_LEGACY_GROUP: CanonicalCurriculumGroup = {
+  id: 'classical-studies-legacy',
+  code: 'To 2022',
+  title: 'Ten-topic syllabus, examined to 2022',
+  topics: [
+    { id: 'classical-studies-legacy-1', code: 'T1', title: 'Athens at War' },
+    { id: 'classical-studies-legacy-2', code: 'T2', title: 'Alexander the Great' },
+    { id: 'classical-studies-legacy-3', code: 'T3', title: 'Life and Thought in the Late Roman Republic' },
+    { id: 'classical-studies-legacy-4', code: 'T4', title: 'Roman Historians' },
+    { id: 'classical-studies-legacy-5', code: 'T5', title: 'Greek Drama' },
+    { id: 'classical-studies-legacy-6', code: 'T6', title: 'Ancient Epic' },
+    { id: 'classical-studies-legacy-7', code: 'T7', title: 'Writers of the Augustan Age' },
+    { id: 'classical-studies-legacy-8', code: 'T8', title: 'Art and Architecture in Greek Society' },
+    { id: 'classical-studies-legacy-9', code: 'T9', title: 'The Philosopher in Society: Socrates and Plato' },
+    { id: 'classical-studies-legacy-10', code: 'T10', title: 'Roman Art and Architecture' },
+  ],
+};
+
+/**
  * The Mark Bank's twenty-four History topics, against the canonical group each
  * belongs to. The titles are the papers' own, read off all twenty papers in the
  * corpus rather than typed; where the SEC prints a topic two ways across years
@@ -1982,6 +2008,16 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
   if (spec.subjectId === 'classical-studies') {
     return {
       ...spec,
+      /* Mark Bank cards Classical Studies across a SYLLABUS BREAK. The four
+       * strand groups below are the specification first examined in 2023 and
+       * cover the 2023-2025 papers; the 2021 and 2022 papers were sat on the
+       * ten-topic syllabus, whose topics this specification does not carry and
+       * which each of those papers prints over its own questions. Those ten
+       * are added as one further group holding the deck's own topic ids, so a
+       * 2021 card resolves here rather than resolving nowhere — the same shape
+       * History uses for its numbered topics. The specification's own four
+       * groups are untouched. */
+      groups: [...spec.groups, CLASSICAL_STUDIES_LEGACY_GROUP],
       id: 'classical-studies:current',
       title: 'Leaving Certificate Classical Studies specification',
       status: 'verified',
@@ -2000,7 +2036,10 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
           weighting: 80, levels: ['higher', 'ordinary'], required: true,
         },
       ],
-      notes: ['The four strand groups reproduce the official specification structure.'],
+      notes: [
+        'The four strand groups reproduce the official specification structure.',
+        'A fifth group carries the ten topics of the syllabus examined to 2022, which the 2021 and 2022 papers were sat on.',
+      ],
     };
   }
   if (spec.subjectId === 'design-and-communication-graphics') {

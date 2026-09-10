@@ -240,6 +240,18 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/japanese',
     blocked: new Set(),
   },
+  'classical-studies': {
+    title: 'Classical Studies',
+    /* TWO syllabuses, because the corpus straddles the change: 2021 and 2022
+     * were sat on the ten-topic syllabus and 2023 onwards on the four-strand
+     * specification. A card is filed under the course its own paper was set
+     * on — the legacy strand in deck.ts holds the ten topics the old paper
+     * prints over its own questions. */
+    specVersion: 'lc-classical-studies-2020',
+    specNote: 'Cards are tagged to the four strands of the Classical Studies specification\n * first examined in 2023, and to the ten topics of the syllabus the 2021 and 2022\n * papers were sat on. A sitting is TWO booklets — the question paper and the\n * accompanying Paper X of photographs and images — and a card whose ask names\n * one of those images opens Paper X at the page that booklet heads with it.',
+    figureDir: 'public/exam-figures/classical-studies',
+    blocked: new Set(),
+  },
   'applied-maths': {
     title: 'Applied Maths',
     /* The specification first examined in 2023 — dated because it is verified

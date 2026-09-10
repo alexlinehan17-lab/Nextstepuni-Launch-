@@ -201,6 +201,23 @@ SUBJECTS = {
     # "A.", "B.", "C. KANJI" and "D.", so the two are paired in printed ORDER
     # under the checks in ja_flags — Law 4.
     'japanese': {'mode': 'sections', 'walker': 'ja'},
+    # Classical Studies is TWO papers under one slug, either side of the 2023
+    # syllabus break, and the census reads both:
+    #
+    #   * 2021-2022 print TEN TOPICS, each setting questions "(i)" to "(iv)"
+    #     with lettered parts under them. The topic and the roman TOGETHER are
+    #     the address — there is no question number at all — so the section
+    #     token carries both and an ask is cited "2021 HL Topic 1(i) Q(a)".
+    #   * 2023-2025 print Section A (Questions 1-10) and Section B (Questions
+    #     11-16) with the numbering running ON across the two, so the section
+    #     is NOT part of the address and the section token is None: an ask is
+    #     cited "2024 HL Q3(b)". Keying those under 'A' and 'B' would have
+    #     made Section B look like a paper whose first question is Q11.
+    #
+    # Its own walker, because neither shape is one the generic reader can key:
+    # the old paper glues a whole topic into ONE pymupdf block, and the new one
+    # prices the question while the scheme prices its parts.
+    'classical-studies': {'mode': 'sections', 'walker': 'clas'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -319,7 +336,15 @@ def key_label(k):
     """(section?, q, letter, roman) -> 'Section A Q3(b)(ii)'."""
     parts = list(k)
     q, letter, roman = parts[-3], parts[-2], parts[-1]
-    head = f'Section {parts[0]} ' if len(parts) == 4 else ''
+    # A section token of None means the subject is keyed in sections mode but
+    # this paper does not address an ask by section: Classical Studies numbers
+    # Questions 1-16 straight through Sections A and B, so "Section A Q3" would
+    # name an address the paper never prints. A token that already names its
+    # own unit — "Topic 1(i)" — prints itself, without a "Section" in front.
+    head = ''
+    if len(parts) == 4 and parts[0] is not None:
+        head = (f'{parts[0]} ' if str(parts[0]).startswith('Topic ')
+                else f'Section {parts[0]} ')
     tail = ('ABQ' if q == 'ABQ'
             # A headless section — Religious Education's Sections B-J — is
             # addressed by its part alone. The paper prints no number, so the
@@ -1429,6 +1454,118 @@ def ru_flags(P, S, claimed):
                           f'{printed} it prints on the unit head'})
     return flags
 
+def census_clas(subject, year, level):
+    """Classical Studies: the printed ask, in whichever of its two papers.
+
+    THE DENOMINATOR IS THE PAPER. `cl_paper.ClPaper` reads it — the ten-topic
+    paper of 2021-2022 and the Section A/B paper of 2023-2025 — and the scheme
+    is read beside it only so the two can be CHECKED against each other, never
+    so the scheme can supply an ask the paper does not print.
+
+    The check is unusually strong here, because the two documents share an
+    address. In the old paper every one of the 388 printed parts has exactly
+    one scheme entry at the same (topic, roman, letter) and no scheme entry is
+    left over; in the new one every scheme entry lands on a printed ask, at its
+    own address or at the letter or question it was priced under. `clas_flags`
+    asserts both, and asserts the tariffs agree.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from cl_paper import ClPaper                               # noqa: E402
+    from cl_scheme import ClScheme                             # noqa: E402
+
+    P = ClPaper(year, level, subject)
+    S = ClScheme(year, level, subject)
+    texts = {}
+    for ask in P.asks():
+        texts[ask.key] = f'{ask.stem} {ask.text}'.strip()
+    return set(texts), texts, [P.path], P, S
+
+
+def clas_flags(P, S):
+    """Everything that would be true if both readers read the same paper."""
+    flags = []
+    paper_keys = {a.key for a in P.asks()}
+    scheme = S.by_key()
+    for key in sorted(scheme, key=str):
+        if key in paper_keys:
+            continue
+        # The scheme may price a LETTER whole where the paper prints romans
+        # under it, or a QUESTION whole where the paper prints alternatives.
+        if any(p[:3] == key[:3] for p in paper_keys):
+            continue
+        if key[2] is None and any(p[:2] == key[:2] for p in paper_keys):
+            continue
+        flags.append({'type': 'scheme-orphan', 'where': str(key),
+                      'detail': 'the scheme prices an address the paper '
+                                'does not print'})
+    if P.era == 'topics':
+        totals = collections.defaultdict(int)
+        for ask in P.asks():
+            totals[ask.section] += ask.marks or 0
+        if len(totals) != 40:
+            flags.append({'type': 'question-count', 'where': 'topics',
+                          'detail': f'{len(totals)} questions, expected 40 '
+                                    '(ten topics x four questions)'})
+        for section, total in sorted(totals.items()):
+            if total != 50:
+                flags.append({'type': 'marks-checksum', 'where': section,
+                              'detail': f'parts sum to {total}, the paper '
+                                        'prints fifty marks per question'})
+        for key in sorted(paper_keys, key=str):
+            if key not in scheme:
+                flags.append({'type': 'unpriced-ask',
+                              'where': key_label(key),
+                              'detail': 'no scheme entry at this address'})
+    else:
+        qs = sorted({a.q for a in P.asks() if a.q})
+        if qs != list(range(1, 17)):
+            flags.append({'type': 'question-gap', 'where': 'Questions',
+                          'detail': f'questions found: {qs}'})
+        missing = [q for q in range(1, 11)
+                   if (None, q) not in P.question_marks]
+        if missing:
+            flags.append({'type': 'unpriced-question', 'where': 'Section A',
+                          'detail': f'no printed tariff on Q{missing}'})
+    for key in sorted(paper_keys & set(scheme), key=str):
+        ask = next(a for a in P.asks() if a.key == key)
+        entry = scheme[key]
+        if ask.marks and entry.marks and ask.marks != entry.marks \
+                and not ask.inherited \
+                and key not in _CLAS_TARIFF_SPLITS.get(
+                    (P.year, P.level), ()):
+            flags.append({'type': 'tariff-disagreement',
+                          'where': key_label(key),
+                          'detail': f'paper prints {ask.marks}, scheme '
+                                    f'prints {entry.marks}'})
+    return flags
+
+
+# Where the SEC's own two documents price the SAME printed part differently.
+# Every one was read off both PDFs before it was entered here, and each is one
+# of two shapes:
+#
+#   * the two documents SPLIT a fifty-mark question differently and both add
+#     up — 2021 Higher Topic 1(i) is 40+10 on the paper and 35+15 in the
+#     scheme, 2021 Higher Topic 4(ii) is 20+10+20 against 20+15+15;
+#   * the scheme's printed total contradicts the scheme's OWN split, and the
+#     split agrees with the paper — 2022 Higher Topic 8(iii)(d) reads
+#     "(8, 7.) (20 marks)" over a part the paper prices at 15, and 2022
+#     Ordinary Topic 9(iv)(b) reads "(10, 10.) (10 marks)" over a part the
+#     paper prices at 20. In both the sub-totals are right and the total is
+#     the misprint.
+#
+# The paper wins in every case, which is the bank's rule when the two
+# disagree, and a card carries the paper's tariff.
+_CLAS_TARIFF_SPLITS = {
+    (2021, 'hl'): {('Topic 1(i)', None, 'a', None),
+                   ('Topic 1(i)', None, 'b', None),
+                   ('Topic 4(ii)', None, 'b', None),
+                   ('Topic 4(ii)', None, 'c', None),
+                   ('Topic 4(iii)', None, 'b', None)},
+    (2022, 'hl'): {('Topic 8(iii)', None, 'd', None)},
+    (2022, 'ol'): {('Topic 9(iv)', None, 'b', None)},
+}
+
 
 def census_re(subject, year, level):
     """Religious Education: its own reader, for the reasons re_paper.py gives.
@@ -1746,6 +1883,8 @@ def census_subject(subject):
                     parts, texts, files, P_, S_, claimed_ = census_ru(
                 elif cfg.get('walker') == 'ja':
                     parts, texts, files, P_, S_ = census_ja(
+                elif cfg.get('walker') == 'clas':
+                    parts, texts, files, P_, S_ = census_clas(
                         subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
@@ -1785,6 +1924,22 @@ def census_subject(subject):
             elif cfg.get('walker') == 'ja':
                 flags += ja_flags(P_, S_)
                 marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'clas':
+                flags += clas_flags(P_, S_)
+                # The 2023 syllabus change made this a different paper: 200
+                # marks over ten topics before it, 400 over Sections A and B
+                # after. Naming the era keeps the cross-year marks checksum
+                # comparing each paper with its OWN kind, which is what the
+                # checksum is for; without it every old sitting reported a
+                # 200-mark "shortfall" against the new ones.
+                label = ('Ten Topics' if P_.era == 'topics'
+                         else 'Sections A and B')
+                # A Classical Studies paper is almost entirely CHOICE — four
+                # questions out of forty in the old paper, one essay out of
+                # five in the new — so adding up every printed tariff would
+                # count questions nobody sits. The checksum is the total the
+                # paper states on its own cover.
+                marks = {(None, 0): 400 if P_.era == 'sections' else 200}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}

@@ -138,7 +138,14 @@ FIELDS = {
 # answers, and Italian fetched five papers where the corpus holds ten. Both
 # failures were silent "0 file(s) fetched" — the History FIELDS failure in a
 # different disguise, and the silence Law 1 exists to prevent.
-FILEID = re.compile(r'^LC(\d{3})([ACG])LP([0-9A-Z]{3})([EIB])V\.pdf$', re.I)
+# The component token is three characters — except where the SEC's own file
+# name carries a typo. Classical Studies 2024 Ordinary publishes its Paper X as
+# LC008GLP0004BV.pdf, with FOUR digits, and a strict {3} silently fetched one
+# file for that sitting where the corpus holds two: the illustration booklet
+# every image question on that paper depends on was simply absent, with no
+# error. A four-digit component is read and its leading zero dropped, which is
+# what the SEC means by it; nothing else in the corpus matches the wider form.
+FILEID = re.compile(r'^LC(\d{3})([ACG])LP([0-9A-Z]{3,4})([EIB])V\.pdf$', re.I)
 WANTED_LANGS = {'E', 'B'}
 # 'C' is not a third grade of difficulty: it is the SEC's marker for a subject
 # examined at ONE level. Without it here every LCVP file failed the match and
@@ -201,8 +208,12 @@ def _fetch_one(subject, slug, field, kinds, primary):
                 m = FILEID.match(name.rsplit('/', 1)[-1])
                 if not m or m.group(4).upper() not in WANTED_LANGS:
                     continue                       # skip the Irish-language versions
+                component = m.group(3)
+                if len(component) == 4 and component.startswith('0') \
+                        and component.isdigit():
+                    component = component[1:]
                 by_level.setdefault(LEVEL[m.group(2).upper()], []).append(
-                    (m.group(3), name))
+                    (component, name))
             for level, entries in sorted(by_level.items()):
                 entries.sort()
                 for component, name in entries:

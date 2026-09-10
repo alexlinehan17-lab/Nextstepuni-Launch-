@@ -70,6 +70,8 @@ const russianCurriculum = CURRICULUM.find(subject => subject.id === 'russian');
 if (!russianCurriculum) throw new Error('Canonical Russian curriculum is missing');
 const japaneseCurriculum = CURRICULUM.find(subject => subject.id === 'japanese');
 if (!japaneseCurriculum) throw new Error('Canonical Japanese curriculum is missing');
+const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
+if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -1095,6 +1097,45 @@ export const JAPANESE_STRANDS: StrandRef[] = japaneseCurriculum.strands.map((str
     title: topic.name,
   })),
 }));
+/**
+ * Classical Studies is TWO courses, and the bank's window holds both.
+ *
+ * The four STRANDS come from the canonical curriculum — the specification
+ * first examined in 2023, which the 2023, 2024 and 2025 papers were sat on.
+ * The fifth strand is the ten TOPICS of the syllabus the 2021 and 2022 papers
+ * were sat on, printed by those papers over their own questions and identical
+ * in all four of those sittings. A card is filed under the course its own
+ * paper was set on: filing a 2021 question about Thucydides under a 2023
+ * strand would put it in front of a student revising something else, and
+ * dropping it would throw away 388 of the 640 asks the papers print.
+ */
+export const CLASSICAL_STUDIES_STRANDS: StrandRef[] = [
+  ...classicalStudiesCurriculum.strands.map((strand, index) => ({
+    id: strand.id,
+    label: `Strand ${index + 1}`,
+    title: strand.name,
+    topics: strand.subtopics.map((topic, topicIndex) => ({
+      id: topic.id,
+      code: `${index + 1}.${topicIndex + 1}`,
+      title: topic.name,
+    })),
+  })),
+  {
+    id: 'classical-studies-legacy', label: 'To 2022', title: 'Ten-topic syllabus, examined to 2022',
+    topics: [
+      { id: 'classical-studies-legacy-1', code: 'T1', title: 'Athens at War' },
+      { id: 'classical-studies-legacy-2', code: 'T2', title: 'Alexander the Great' },
+      { id: 'classical-studies-legacy-3', code: 'T3', title: 'Life and Thought in the Late Roman Republic' },
+      { id: 'classical-studies-legacy-4', code: 'T4', title: 'Roman Historians' },
+      { id: 'classical-studies-legacy-5', code: 'T5', title: 'Greek Drama' },
+      { id: 'classical-studies-legacy-6', code: 'T6', title: 'Ancient Epic' },
+      { id: 'classical-studies-legacy-7', code: 'T7', title: 'Writers of the Augustan Age' },
+      { id: 'classical-studies-legacy-8', code: 'T8', title: 'Art and Architecture in Greek Society' },
+      { id: 'classical-studies-legacy-9', code: 'T9', title: 'The Philosopher in Society: Socrates and Plato' },
+      { id: 'classical-studies-legacy-10', code: 'T10', title: 'Roman Art and Architecture' },
+    ],
+  },
+];
 export const TECHNOLOGY_STRANDS: StrandRef[] = [
   {
     id: 'tech-core', label: 'Core', title: 'Core',
@@ -1230,6 +1271,7 @@ export const SUBJECTS = [
   { id: 'italian', title: 'Italian', strands: ITALIAN_STRANDS, spec: 'Leaving Certificate Italian syllabus' },
   { id: 'russian', title: 'Russian', strands: RUSSIAN_STRANDS, spec: 'Leaving Certificate Russian syllabus' },
   { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
+  { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1544,6 +1586,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   spanish: {
     higher: () => import('./cards/spanish/higher'),
     ordinary: () => import('./cards/spanish/ordinary'),
+  },
+  'classical-studies': {
+    higher: () => import('./cards/classical-studies/higher'),
+    ordinary: () => import('./cards/classical-studies/ordinary'),
   },
 };
 

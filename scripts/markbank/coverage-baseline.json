@@ -89,6 +89,21 @@
     },
     "refsHash": "f83cdbf7ec4449ee"
   },
+  "classical-studies": {
+    "cards": 516,
+    "contentHash": "b250413da7390841",
+    "coveragePct": 100.0,
+    "covered": 525,
+    "excluded": 115,
+    "leaves": 640,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "c9ca46e8bf1480bc"
+    },
+    "refsHash": "d22e9502e212efb6"
+  },
   "computer-science": {
     "cards": 336,
     "contentHash": "a98238edb379ba3a",
