@@ -74,6 +74,10 @@ const polishCurriculum = CURRICULUM.find(subject => subject.id === 'polish');
 if (!polishCurriculum) throw new Error('Canonical Polish curriculum is missing');
 const lithuanianCurriculum = CURRICULUM.find(subject => subject.id === 'lithuanian');
 if (!lithuanianCurriculum) throw new Error('Canonical Lithuanian curriculum is missing');
+const latvianCurriculum = CURRICULUM.find(subject => subject.id === 'latvian');
+if (!latvianCurriculum) throw new Error('Canonical Latvian curriculum is missing');
+const czechCurriculum = CURRICULUM.find(subject => subject.id === 'czech');
+if (!czechCurriculum) throw new Error('Canonical Czech curriculum is missing');
 const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
 if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
 const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
@@ -1128,6 +1132,34 @@ export const LITHUANIAN_STRANDS: StrandRef[] = lithuanianCurriculum.strands.map(
   })),
 }));
 
+/* Latvian and Czech print the OLD examination in every year of the corpus —
+ * an article, six questions on it, a commentary and an essay, at one level —
+ * so their taxonomy is two strands rather than Lithuanian's three. Only the
+ * vocabulary subtopic takes cards: the scheme answers everything else with a
+ * model paragraph or a description of a good essay. The whole taxonomy still
+ * ships, so a student sees the shape of their examination. */
+export const LATVIAN_STRANDS: StrandRef[] = latvianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const CZECH_STRANDS: StrandRef[] = czechCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1375,6 +1407,8 @@ export const SUBJECTS = [
   { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
   { id: 'polish', title: 'Polish', strands: POLISH_STRANDS, spec: 'Leaving Certificate Polish, a non-curricular EU language' },
   { id: 'lithuanian', title: 'Lithuanian', strands: LITHUANIAN_STRANDS, spec: 'Leaving Certificate Lithuanian, a non-curricular EU language' },
+  { id: 'latvian', title: 'Latvian', strands: LATVIAN_STRANDS, spec: 'Leaving Certificate Latvian, a non-curricular EU language' },
+  { id: 'czech', title: 'Czech', strands: CZECH_STRANDS, spec: 'Leaving Certificate Czech, a non-curricular EU language' },
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
   { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
   { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
@@ -1684,6 +1718,14 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   lithuanian: {
     higher: () => import('./cards/lithuanian/higher'),
     ordinary: () => import('./cards/lithuanian/ordinary'),
+  },
+  // Latvian and Czech are sat at ONE level. The SEC's file letter is 'A' and
+  // the cover says "Higher Level", so there is no ordinary deck to import.
+  latvian: {
+    higher: () => import('./cards/latvian/higher'),
+  },
+  czech: {
+    higher: () => import('./cards/czech/higher'),
   },
   arabic: {
     higher: () => import('./cards/arabic/higher'),

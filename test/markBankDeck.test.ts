@@ -79,6 +79,8 @@ import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/high
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as LITHUANIAN_HIGHER } from '../components/MarkBank/cards/lithuanian/higher';
 import { CARDS as LITHUANIAN_ORDINARY } from '../components/MarkBank/cards/lithuanian/ordinary';
+import { CARDS as LATVIAN_HIGHER } from '../components/MarkBank/cards/latvian/higher';
+import { CARDS as CZECH_HIGHER } from '../components/MarkBank/cards/czech/higher';
 import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
 import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
@@ -113,6 +115,7 @@ const SAMPLE_CARDS = [
   ...JAPANESE_HIGHER, ...JAPANESE_ORDINARY,
   ...POLISH_HIGHER, ...POLISH_ORDINARY,
   ...LITHUANIAN_HIGHER, ...LITHUANIAN_ORDINARY,
+  ...LATVIAN_HIGHER, ...CZECH_HIGHER,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
   ...LATIN_HIGHER, ...LATIN_ORDINARY,
   ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
@@ -527,6 +530,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['polish', 'ordinary', POLISH_ORDINARY],
     ['lithuanian', 'higher', LITHUANIAN_HIGHER],
     ['lithuanian', 'ordinary', LITHUANIAN_ORDINARY],
+    ['latvian', 'higher', LATVIAN_HIGHER],
+    ['czech', 'higher', CZECH_HIGHER],
     ['arabic', 'higher', ARABIC_HIGHER],
     ['arabic', 'ordinary', ARABIC_ORDINARY],
     ['applied-maths', 'higher', AM_HIGHER],
@@ -628,6 +633,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       // Lithuanian files its cards under the published Lithuanian taxonomy
       // itself (curriculum.ts -> curriculumRegistry.ts), as Polish does.
       lithuanian: 'lithuanian-',
+      // Latvian and Czech file their cards under their own published
+      // taxonomies, as Lithuanian and Polish do.
+      latvian: 'latvian-',
+      czech: 'czech-',
       // Classical Studies files its cards under the published Classical
       // Studies taxonomy itself, as French does — and under one further
       // strand, 'classical-studies-legacy-*', for the ten-topic syllabus the

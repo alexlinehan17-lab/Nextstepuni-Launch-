@@ -782,7 +782,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2015 Higher Level — © State Examinations Commission.",
     id: "lt-2015-hl-i-1-e", topicId: "lithuanian-2-0", conceptId: "paaiskinkite-siu-zodziu-posakiu-reiksme-pasaulis",
     section: "U1", questionRef: "2015 HL Section I Q1(e)",
-    questionText: "Paaiškinkite šių žodžių ir posakių reikšmę: „pasaulis susitraukė“",
+    questionText: "Paaiškinkite šių žodžių ir posakių reikšmę: „pasaulis susitraukė“ (",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sumažėjo, pasidarė lengviau prieinamas, medijų dėka galima lengviau ir greičiau bendrauti.", marks: 1, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN." },
@@ -1142,7 +1142,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Lithuanian 2018 Higher Level — © State Examinations Commission.",
     id: "lt-2018-hl-i-1-e", topicId: "lithuanian-2-0", conceptId: "paaiskinkite-siu-zodziu-posakiu-reiksme-archajiska",
     section: "U1", questionRef: "2018 HL Section I Q1(e)",
-    questionText: "Paaiškinkite šių žodžių ir posakių reikšmę: archajiška (5×",
+    questionText: "Paaiškinkite šių žodžių ir posakių reikšmę: archajiška",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Tolimos senovės, senovinė, labai sena.", marks: 1, contextNote: "The examination prints this question in Lithuanian and it is answered in LITHUANIAN." },

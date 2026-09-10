@@ -1132,7 +1132,7 @@
   "topicId": "lithuanian-2-0",
   "conceptId": "paaiskinkite-siu-zodziu-posakiu-reiksme-pasaulis",
   "questionRef": "2015 HL Section I Q1(e)",
-  "questionText": "Paaiškinkite šių žodžių ir posakių reikšmę: „pasaulis susitraukė“",
+  "questionText": "Paaiškinkite šių žodžių ir posakių reikšmę: „pasaulis susitraukė“ (",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1672,7 +1672,7 @@
   "topicId": "lithuanian-2-0",
   "conceptId": "paaiskinkite-siu-zodziu-posakiu-reiksme-archajiska",
   "questionRef": "2018 HL Section I Q1(e)",
-  "questionText": "Paaiškinkite šių žodžių ir posakių reikšmę: archajiška (5×",
+  "questionText": "Paaiškinkite šių žodžių ir posakių reikšmę: archajiška",
   "tariffModel": {
    "kind": "fixed"
   },

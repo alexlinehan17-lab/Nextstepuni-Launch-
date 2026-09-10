@@ -27,10 +27,11 @@ AUTHORED = os.path.join(HERE, '..', 'authored')
 
 SUBJECTS = ['agricultural-science', 'applied-maths', 'arabic', 'art',
             'biology', 'business', 'chemistry', 'classical-studies',
-            'computer-science', 'construction-studies', 'economics',
+            'computer-science', 'construction-studies', 'czech', 'economics',
             'engineering', 'english', 'french', 'geography', 'german',
             'history', 'home-economics', 'irish', 'italian', 'japanese',
-            'latin', 'lcvp', 'lithuanian', 'maths', 'physics', 'polish',
+            'latin', 'latvian', 'lcvp', 'lithuanian', 'maths', 'physics',
+            'polish',
             'religious-education', 'russian', 'spanish', 'technology']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an

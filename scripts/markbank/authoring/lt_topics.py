@@ -75,12 +75,20 @@ TOPICS = {
 VOCAB_QUESTION = 1
 
 
+# The examination was rebuilt in 2022 for LITHUANIAN and for nothing else.
+# Latvian and Czech print the old paper in every year of the corpus, so the
+# year says nothing about which taxonomy an ask belongs to — filed by year,
+# ten of their thirty-four sittings were tagged to a "new format" topic their
+# examination has never had.
+REBUILT_IN_2022 = {'lithuanian'}
+
+
 def topic_for(subject, year, section, q=None):
     """The task type this ask belongs to, from the era and the printed part."""
     ids = TOPICS[subject]
     if (section or '').startswith('L'):
         return ids['aural']
-    if year >= 2022:
+    if year >= 2022 and subject in REBUILT_IN_2022:
         return ids['production'] if section == 'B' else ids['new_reading']
     if section == 'I':
         if q == VOCAB_QUESTION and 'vocab' in ids:
@@ -151,8 +159,16 @@ def language_note(subject, language, year):
     would be putting a penalty in the SEC's mouth.
     """
     own = LANGUAGE[subject]
-    penalty = (f' The scheme awards half marks for an answer given in the '
-               f'wrong language.' if year >= 2022 else '')
+    # The half-marks rule is quoted only where the SEC prints it: the ten
+    # Lithuanian schemes from 2022 on, and nowhere else. Latvian and Czech
+    # print no language rule at all — their paper is set wholly in the
+    # subject's own language and asks nothing in English — and a card that
+    # claimed one would be putting a penalty in the SEC's mouth. Checked by
+    # grep over the corpus: "wrong language" appears in ten of the fifty-six
+    # schemes these three subjects publish, all of them Lithuanian.
+    penalty = (' The scheme awards half marks for an answer given in the '
+               'wrong language.'
+               if year >= 2022 and subject in REBUILT_IN_2022 else '')
     if language == own:
         return (f'The examination prints this question in {own} and it is '
                 f'answered in {own.upper()}.{penalty}')

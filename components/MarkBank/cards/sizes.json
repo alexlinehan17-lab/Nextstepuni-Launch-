@@ -121,5 +121,11 @@
  "lithuanian": {
   "higher": 163,
   "ordinary": 143
+ },
+ "latvian": {
+  "higher": 20
+ },
+ "czech": {
+  "higher": 15
  }
 }

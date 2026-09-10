@@ -95,8 +95,29 @@ WORD = re.compile(r"[^\W\d_]+", re.UNICODE)
 # answered"), and it is not a letter of anything — nothing downstream reads
 # that table.
 VERIFIED = {
-    '\u010a': 'ę',
-    '\u0162': 'Ž',
+    'lithuanian': {
+        # Ċ U+010A — 2015 Higher scheme, "reikšmĊ". The crop shows an e with an
+        # ogonek under it, so the word is "reikšmę". Ten sightings, all of them
+        # the accusative ending -ę.
+        '\u010a': 'ę',
+        # Ţ U+0162 — 2011 Higher scheme p4, "Ţmogus turi nuolat saugotis". The
+        # crop shows Ž with its caron, and the same line prints "žalingiems"
+        # with the lowercase ţ this map already settles.
+        '\u0162': 'Ž',
+    },
+    # Latvian's four survivors are settled by the WORD each stands in, which is
+    # the same evidence the vote uses and simply has fewer than three examples
+    # of. Each was read off the printed line rather than guessed:
+    'latvian': {
+        '\u01b7': 'ķ',   # "man šƷiet" -> "man šķiet"
+        '\u01ae': 'Ī',   # "Ʈpaši" opening a sentence -> "Īpaši"
+        '\u019c': 'Ē',   # "4. Ɯtika nespƝj" -> "4. Ētika nespēj"
+        '\u01bb': 'Ņ',   # "ƻemot vƝrƗ visu" -> "Ņemot vērā visu"
+    },
+    'czech': {
+        '\u0107': 'ď',   # "Teć už víme" -> "Teď už víme"
+        '\u0122': 'ť',   # "šĢastný s málem" -> "šťastný s málem"
+    },
 }
 
 
@@ -184,7 +205,7 @@ def derive(subject, verbose=True):
                           f'({n} votes, runner-up {runner})')
         if not moved:
             break
-    table.update(VERIFIED)
+    table.update(VERIFIED.get(subject, {}))
     left = [(c, n) for c, n in bad.most_common() if c not in table]
     if verbose and left:
         print('unsettled:', ', '.join(f'{c!r} U+{ord(c):04X} x{n}'

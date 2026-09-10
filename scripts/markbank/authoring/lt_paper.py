@@ -117,7 +117,15 @@ SOURCE_LINE = re.compile(
 # A bare tariff the SEC prints at the end of an ask, in the right-hand column:
 # "(5 taškai)", "(1 taškas)", "(30 taškų)", "5 marks".
 TRAILING_MARK = re.compile(
-    r'\s*\(?\s*\d{1,3}\s*(?:ta[sš]k\w*|marks?)\s*\)?\s*$', re.I)
+    r'\s*[\(\[]\s*\d{1,3}\s*(?:[x×]\s*\d{1,2}\s*)?'
+    r'(?:ta[sš]k\w*|punkt\w*|bod\w*|marks?)?\s*[\)\]]\s*$|'
+    r'\s*\d{1,3}\s*(?:ta[sš]k\w*|punkt\w*|bod\w*|marks?)\s*$', re.I)
+# The price the old paper prints beside a question, in the three languages'
+# three units and both bracketings: "(5 taškai)", "(5 punkti)", "[5 bodů]",
+# "(5 × 1 punkts)" and Latvian's bare "(5)".
+PRICED = re.compile(
+    r'[\(\[]\s*\d{1,3}\s*(?:[x×]\s*\d{1,2}\s*)?'
+    r'(?:ta[sš]k\w*|punkt\w*|bod\w*|marks?)?\s*[\)\]]', re.I)
 
 
 # The subject's own mangled-glyph repair, derived by lt_glyphs.py from the
@@ -299,6 +307,12 @@ ROMAN = re.compile(
     r'^(i{1,3}|iv|vi{0,3}|ix|x)\.\s+(\S.*)$')
 NUMBERED = re.compile(r'^(\d{1,2})\s*\.\s*(.+)$')
 LETTERS = 'abcdefghijkl'
+# The word the SEC prints BETWEEN two essay titles a candidate chooses one of:
+# "arba" in Lithuanian, "vai" in Latvian, "nebo" in Czech. Six sittings number
+# neither title and separate them with this word alone — 2010 Latvian sets
+# '"Palīdzība, kas nāk īstajā laikā…" / vai / "Pilnīgi autonoms nevar būt
+# neviens”' — so it is the only thing on the page that says there are two.
+OR_LINE = re.compile(r'^(?:arba|vai|nebo|anebo|or)\s*$', re.I)
 # Rubric printed between asks, which belongs to no ask.
 RUBRIC = re.compile(
     r'^(?:Atsakykite\s+į\s+klausim|Answer\s+(?:the\s+)?question|'
@@ -530,6 +544,18 @@ class LtPaper:
         asks, part, q, letter = [], None, None, None
         current, last_y = None, None
         text_pages = {}
+        self._essay_parts = {'II'} if self.era == 'old2' else {'III'}
+        self._await_option = False
+        self._part_numbered = {}
+        seen = None
+        for line in self.lines:
+            pm = PART_OLD.match(line.text)
+            if pm:
+                seen = part_token(pm)
+                self._part_numbered.setdefault(seen, False)
+                continue
+            if seen and NUMBERED.match(line.text):
+                self._part_numbered[seen] = True
 
         def close():
             nonlocal current
@@ -538,7 +564,7 @@ class LtPaper:
                 asks.append(current)
                 current = None
 
-        for line in self.lines:
+        for i, line in enumerate(self.lines):
             if FURNITURE.match(line.text) and len(line.text) < 60:
                 continue
             pm = PART_OLD.match(line.text)
@@ -560,8 +586,53 @@ class LtPaper:
                         text_pages['text'].append(line.page)
                 if part is None:
                     continue
+            # An ESSAY part that numbers neither of its titles is split at the
+            # word between them, and at nothing else: its rubric line
+            # ("Uzrakstiet eseju (vismaz 300 vārdu)!") is an instruction, not a
+            # title, and opening an option at every unnumbered line would have
+            # counted it as one.
+            if part in self._essay_parts and not self._part_numbered.get(part):
+                if OR_LINE.match(line.text):
+                    close()
+                    self._await_option = True
+                    continue
+                if current is None or self._await_option:
+                    close()
+                    q = (q or 0) + 1
+                    current = Ask(part, q, None, None, line.text, line.page)
+                    self._await_option = False
+                    last_y = line.y
+                elif last_y is not None and 0 <= line.y - last_y <= LINE_GAP:
+                    current.text += ' ' + line.text
+                    last_y = line.y
+                continue
             nm = NUMBERED.match(line.text)
             lm = LETTER.match(line.text)
+            # A numbered row opens a question only where it CONTINUES the run
+            # AND a price is printed under it before the next numbered row.
+            # Czech heads "Část 1 [30 bodů]" at the top of the page its
+            # ARTICLE starts on, not at the top of its questions, so the
+            # article's own numbered paragraphs stand inside the part and were
+            # read as questions — 2010 censused twenty-one asks in a paper
+            # that prints thirteen, eight of them a paragraph of the text.
+            # The same rule reads the scheme (lt_scheme._priced_before_next_
+            # number) and for the same reason.
+            #
+            # The price test applies only to the FIRST question. Once the run
+            # has started every later number follows it: 2022 Latvian prices
+            # its Question 1 on the RUBRIC above it — "Atbildiet uz
+            # jautājumiem! (5 × 1 punkts)" — and its Questions 2 to 6 in a
+            # right-hand column, so a per-question price test found neither and
+            # censused seven asks in a paper that prints twelve.
+            # Only inside the reading part. II and III DALIS number nothing
+            # but their essay TITLES, which carry no price of their own — the
+            # part head carries it — so the same test there threw both titles
+            # away and censused eleven asks in a paper that prints thirteen.
+            if nm and part == 'I' and (
+                    int(nm.group(1)) != (q or 0) + 1
+                    or (q is None
+                        and not _priced_before_next_number(self.lines, i))):
+                nm = None
             if nm:
                 close()
                 if self.first_ask is None:
@@ -909,6 +980,34 @@ def _i_opens_a_roman_run(rows, idx):
             return False
     return False
 
+
+
+def _priced_before_next_number(lines, i):
+    """Is a price printed WITH this numbered row — under it, or on the rubric
+    above it?
+
+    Scanned over the printed lines rather than assumed, because the SEC puts
+    it in four places: on the question's own row, alone in the right-hand
+    column beneath it, on the rows of the lettered expressions below it, and —
+    2022 Latvian — on the "Atbildiet uz jautājumiem!" rubric printed above it.
+    The backward look stops at the PART head, because that head carries a
+    price of its own ("I daļa (30 punkti)") and reading it would make the
+    first paragraph of an article printed under it look like a question.
+    """
+    for j in range(i - 1, max(i - 4, -1), -1):
+        if PART_OLD.match(lines[j].text) or NUMBERED.match(lines[j].text) \
+                or LETTER.match(lines[j].text):
+            break
+        if PRICED.search(lines[j].text):
+            return True
+    for line in lines[i:]:
+        if line is not lines[i] and NUMBERED.match(line.text):
+            return False
+        if PART_OLD.match(line.text) and line is not lines[i]:
+            return False
+        if PRICED.search(line.text):
+            return True
+    return False
 
 
 def _fold_key(word):

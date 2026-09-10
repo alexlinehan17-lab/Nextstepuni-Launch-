@@ -155,6 +155,24 @@ MODEL_PARAGRAPH_EVIDENCE = (
     'this bank never does. Contrast the SAME question\'s part (a) to (e), '
     'which are priced one taškas each against a stated gloss and card in full.')
 
+# A sitting whose SCHEME cannot be read at all, keyed the way paper.py keys an
+# SEC misprint — (subject, year, level) — and never by a heuristic.
+UNREADABLE = {
+    ('czech', 2015, 'hl'): (
+        'the 2015 scheme embeds a subset font whose ToUnicode map collapses '
+        'several accented letters onto ONE code point, so the same character '
+        'stands for different letters in different words and no map can undo '
+        'it. Its text layer returns "VysvČtlete" for "Vysvětlete", "kterČ" '
+        'for "které", "každČ" for "každé" and "vČznam" for "význam" — one '
+        'glyph doing the work of ě, é and ý — and it returns "ýást 1" for '
+        '"Část 1", a letter of the alphabet standing for another letter of '
+        'the same alphabet. derive_glyphs.py\'s own rule applies: a mangled '
+        'code point that means two different characters cannot be repaired '
+        'from the character alone, so it is dropped rather than guessed. '
+        'Every other sitting of this subject reads clean; the repair map for '
+        'the ones that need one is in glyphmap-czech.json.'),
+}
+
 AUDIO_EVIDENCE = (
     'the ask can only be answered from the recording. The Listening '
     'Comprehension Test is a separate SEC booklet (component A00) whose own '
@@ -184,6 +202,8 @@ def build(subject=SUBJECT):
         priced = {a.key: a for a in S.reading()}
         priced.update(_order_pairs(P, S))
         printed = _scheme_text(subject, year, level)
+        vocab = _vocabulary_questions(P, S)
+        done_vocab = set()
         stamp = f'{year} {level.upper()}'
         for ask in P.all_asks():
             key = ask.key
@@ -211,6 +231,13 @@ def build(subject=SUBJECT):
                        'model answer and prices nothing inside it', ref,
                        f'{stamp} scheme, II DALIS: {COMMENTARY_EVIDENCE}')
                 continue
+            group = (ask.section, ask.q)
+            if ask.letter and group in vocab:
+                if group not in done_vocab:
+                    done_vocab.add(group)
+                    _vocabulary_card(P, vocab[group], year, level, cards,
+                                     refuse, subject, printed)
+                continue
             _reading(P, S, priced, ask, year, level, ref, cards, refuse, pairs,
                      subject, printed)
     return cards, refused, examples, excluded, pairs
@@ -234,8 +261,17 @@ MATCHING = re.compile(
 GAP = re.compile(r'_{3,}')
 # The five-mark prose questions of the old examination — see
 # MODEL_PARAGRAPH_EVIDENCE.
-def _is_model_paragraph(ask, sch, year):
-    return year < 2022 and ask.section == 'I' and ask.letter is None
+def _is_model_paragraph(P, ask):
+    """A five-mark question of the old examination, answered in prose.
+
+    Read from the ERA and the printed address, not from the year: Latvian and
+    Czech print the old examination in every one of their seventeen sittings,
+    and a year test would have carded none of them the same way. It is checked
+    BEFORE the scheme is consulted, because the reason these are refused has
+    nothing to do with whether the scheme reader reached them — it is what the
+    SEC printed.
+    """
+    return P.era != 'new' and ask.section == 'I' and ask.letter is None
 
 
 def _order_pairs(P, S):
@@ -281,6 +317,99 @@ def _order_pairs(P, S):
         for k, t in zip(kids, theirs):
             out[k.key] = t
     return out
+
+
+def _vocabulary_questions(P, S):
+    """{(section, q): (parent, [(paper letter, scheme letter)])} for a question
+    the scheme prices WHOLE over lettered parts it does not price separately.
+
+    The old examination opens with a vocabulary task — "Skaidrojiet vārdus un
+    frāzes!", "Vysvětlete vlastními slovy:" — that lists five expressions from
+    the text and glosses each one. Lithuanian prices them a taškas each and
+    they card one per letter. Latvian and Czech mostly do NOT: the price is
+    printed once on the question, "[5 bodů]", and the five parts carry none.
+
+    Dividing that by five would be inventing a tariff, so the card is made at
+    the level the scheme priced — one card for the question, `questionTotal`,
+    with the SEC's own gloss on a row for each expression. Nothing is guessed:
+    the total is printed, the glosses are printed, and what a student may
+    claim is bounded by the question's total, which is exactly what that
+    tariff model is for.
+    """
+    out = {}
+    scheme_kids = collections.defaultdict(list)
+    for a in S._asks:
+        if a.letter and a.roman is None:
+            scheme_kids[(a.section, a.q)].append(a)
+    for parent in S._asks:
+        if parent.letter or parent.roman or parent.total is None:
+            continue
+        kids = sorted(scheme_kids.get((parent.section, parent.q)) or [],
+                      key=lambda a: a.letter)
+        if len(kids) < 2 or any(k.per is not None for k in kids):
+            continue
+        if not all(k.answers for k in kids):
+            continue
+        paper_kids = sorted(
+            (a for a in P._asks
+             if (a.section, a.q) == (parent.section, parent.q) and a.letter
+             and a.roman is None),
+            key=lambda a: a.letter)
+        if [k.letter for k in paper_kids] != [k.letter for k in kids]:
+            continue
+        out[(parent.section, parent.q)] = (parent, list(zip(paper_kids, kids)))
+    return out
+
+
+def _vocabulary_card(P, pair, year, level, cards, refuse, subject, printed):
+    parent, rows = pair
+    key = (parent.section, parent.q, None, None)
+    ref = question_ref(year, level, key)
+    stamp = f'{year} {level.upper()}'
+    options = [k.answers[0]['text'] for _p, k in rows]
+    missing = _untraceable(printed, options)
+    if missing:
+        refuse('the scheme markdown the provenance gate reads does not hold '
+               'this answer as one run of words', ref,
+               f'{stamp} scheme, "{parent.cue[:80]}": "{missing[0][:80]}"')
+        return
+    printed_asks = ' '.join(f'({p.letter}) {p.text}' for p, _k in rows)
+    question = _norm_space(f'{parent.cue} {printed_asks}')
+    language = answer_language(subject, question)
+    note = language_note(subject, language, year)
+    cards.append({
+        'id': card_id(subject, year, level, key),
+        'subjectId': subject,
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': 'U1',
+        'topicId': topic_for(subject, year, parent.section, parent.q),
+        'conceptId': concept_for(question),
+        'questionRef': ref,
+        'questionText': question,
+        # The scheme prices the QUESTION and none of its five parts, so what a
+        # student may claim is bounded by that total rather than by a per-row
+        # value the SEC never printed.
+        'tariffModel': {'kind': 'questionTotal'},
+        'totalMarks': parent.total,
+        'rows': [{'id': f'r-{i + 1}', 'kind': 'point',
+                  'verbatim': k.answers[0]['text'], 'marks': None,
+                  'contextNote': (f'The scheme prints this as the meaning of '
+                                  f'"{k.cue or p.text}". {note}')}
+                 for i, (p, k) in enumerate(rows)],
+        'notes': (f'The scheme prices this question {parent.notation!r} and '
+                  f'prints no mark against any of its {len(rows)} parts, so '
+                  f'the card carries the question total and the SEC\'s gloss '
+                  f'for each expression. The paper prints the ask on page '
+                  f'{rows[0][0].page} of the question booklet.'),
+        **({'sourceMaterial': source_material(P, rows[0][0], language, level,
+                                              year, subject)}
+           if P.pages_for(parent.section, parent.q) else {}),
+    })
+
+
+def _norm_space(text):
+    return re.sub(r'\s+', ' ', text).strip()
 
 
 SCHEME_MD = os.path.join(ROOT, 'examiner-reports')
@@ -346,18 +475,22 @@ def _reading(P, S, priced, ask, year, level, ref, cards, refuse, pairs,
                f'half-sentence printed in a facing column the card does not '
                f'hold')
         return
+    unreadable = UNREADABLE.get((subject, year, level))
+    if unreadable and ask.section == 'I' and ask.letter:
+        refuse('the scheme\'s text layer cannot be read for this sitting', ref,
+               f'{stamp} scheme: {unreadable}')
+        return
+    if _is_model_paragraph(P, ask):
+        refuse('the scheme answers this with one continuous model paragraph '
+               'and prices nothing inside it', ref,
+               f'{stamp} scheme, "{ask.full_text[:90]}": '
+               f'{MODEL_PARAGRAPH_EVIDENCE}')
+        return
     sch = priced.get(ask.key)
     if sch is None:
         refuse('the scheme prices no ask at the address the paper prints', ref,
                f'{stamp} paper: "{ask.full_text[:110]}" — the scheme\'s reading '
                f'section prices no ask at this address')
-        return
-    if _is_model_paragraph(ask, sch, year):
-        refuse('the scheme answers this with one continuous model paragraph '
-               'and prices nothing inside it', ref,
-               f'{stamp} scheme, "{sch.cue[:90]}" priced {sch.notation!r} over '
-               f'{sum(len(a["text"]) for a in sch.answers)} characters of '
-               f'unbroken prose: {MODEL_PARAGRAPH_EVIDENCE}')
         return
     if WORKED_EXAMPLE.search(stem) and ask.roman in ('i', '1'):
         refuse('the SEC prints this row as the worked example and prices it at '
@@ -458,7 +591,7 @@ def _reading(P, S, priced, ask, year, level, ref, cards, refuse, pairs,
         # types/markBank.ts. Dalis A prints one to three tasks numbered by
         # Lithuanian ordinals, and the old examination's I DALIS is one text
         # with six questions on it, so it is the first task too.
-        'section': f'U{ask.q}' if year >= 2022 else 'U1',
+        'section': f'U{ask.q}' if P.era == 'new' else 'U1',
         'topicId': topic_for(subject, year, ask.section, ask.q),
         'conceptId': concept_for(question),
         'questionRef': ref,

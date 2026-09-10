@@ -1886,9 +1886,19 @@ def lt_flags(P, S):
                       'detail': 'the paper prints this ask and the scheme '
                                 'prices no ask at that address'})
     paper_parents = {(a.section, a.q, a.letter) for a in P.reading_asks()}
+    # A question the paper prints WHOLE, with no lettered part under it. The
+    # old examination's five-mark questions are answered by a model paragraph,
+    # and several Latvian schemes set that paragraph out as a lettered list of
+    # their own — "a) J.Mažeiks veicināja neatkarības procesu…", "b) 1991.gadā
+    # …" — which is the scheme organising ITS answer, not an ask the paper
+    # forgot to print. Reported as orphans it was twenty-one flags in one
+    # sitting saying the same thing about a paper with nothing missing.
+    whole = {(a.section, a.q) for a in P.reading_asks() if a.letter is None}
     for key in sorted(scheme - paper, key=str):
         if (key[0], key[1], key[2]) in paper_parents:
             continue                     # the paper numbers what the scheme
+        if (key[0], key[1]) in whole and key[3] is None:
+            continue                     # the scheme's own model answer, lettered
         flags.append({'type': 'orphan-scheme-ask', 'where': key_label(key),
                       'detail': 'the scheme prices this address and the paper '
                                 'prints no ask there'})

@@ -149,6 +149,21 @@
     },
     "refsHash": "ab5312971b0e0217"
   },
+  "czech": {
+    "cards": 15,
+    "contentHash": "6c302051f1a4dede",
+    "coveragePct": 100.0,
+    "covered": 75,
+    "excluded": 144,
+    "leaves": 219,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "325d56e0739fd63d"
+    },
+    "refsHash": "7013eb0f4ad094fa"
+  },
   "economics": {
     "cards": 697,
     "contentHash": "e8c99dae50bd0cba",
@@ -329,6 +344,21 @@
     },
     "refsHash": "ecd84fa7c53eb9c0"
   },
+  "latvian": {
+    "cards": 20,
+    "contentHash": "43eb8b6b9bc1be46",
+    "coveragePct": 100.0,
+    "covered": 68,
+    "excluded": 150,
+    "leaves": 218,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "f66362d289720cbb"
+    },
+    "refsHash": "cbfff690c93f65b8"
+  },
   "lcvp": {
     "cards": 314,
     "contentHash": "fefb46868385d474",
@@ -346,7 +376,7 @@
   },
   "lithuanian": {
     "cards": 306,
-    "contentHash": "b5a9623aad54e765",
+    "contentHash": "0d11f6d500d72a7a",
     "coveragePct": 100.0,
     "covered": 306,
     "excluded": 520,

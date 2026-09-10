@@ -361,6 +361,13 @@ SPLIT_BARE = re.compile(
 # drops it (2018 Lithuanian prices "grūmoja 1 taškas)").
 PUNKTAI = re.compile(
     r'[\(\[]?\s*(\d{1,3})\s*(?:ta[sš]k\w*|punkt\w*|bod\w*)\s*[\)\]]', re.I)
+# Latvian prices its Questions 2 to 6 with the NUMBER ALONE — "2. Kādu
+# problēmu Dziesmu svētku organizēšanā saskata Lilija Zobens? (5)" — and its
+# part heads carry the unit. A bare bracketed number is a paragraph reference
+# as often as it is a price, so this form is read ONLY at the end of a printed
+# row, where a reference never sits: Latvian writes those inside the sentence
+# and with a word beside them, "(3.rindkopa)".
+PUNKTAI_BARE = re.compile(r'(?:^|\s)[\(\[]\s*(\d{1,3})\s*[\)\]]\s*$')
 
 COUNT_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 DIRECTIVE = re.compile(
@@ -734,6 +741,7 @@ class LtScheme:
             # asks to one missing bracket. A question the scheme never priced
             # is reported by lt_flags as an unpriced ask, which is the truth
             # about the document, rather than swallowing the rest of the part.
+
             if nm and part == 'I' and int(nm.group(1)) > (q or 0) \
                     and _priced_before_next_number(self.rows, i):
                 close()
@@ -745,13 +753,13 @@ class LtScheme:
                 if inner:
                     letter, rest = _roman_of(inner)[0], _roman_of(inner)[1]
                 current = Ask(part, q, letter, None, rest, row.page)
-                _punktai_head(current)
+                _head_tariff(current)
                 continue
             if lm and q is not None and part == 'I':
                 close()
                 letter = lm.group(1).lower()
                 current = Ask(part, q, letter, None, lm.group(2), row.page)
-                _punktai_head(current)
+                _head_tariff(current)
                 if current.total is None:
                     # Only where the letter's own row carries NO price. Where
                     # it does, the dash is inside the expression the ask asks
@@ -773,8 +781,7 @@ class LtScheme:
             if current is not None and part == 'I':
                 _absorb_old(current, text)
         close()
-        # Question 1's five expressions are priced one taškas each on their own
-        # rows; the head above them prices nothing, so nothing is inherited.
+        _lift_question_split(asks)
         return asks
 
     # ---------------------------------------------------------------- API ---
@@ -835,6 +842,40 @@ def _walk_down_splits(asks):
                     kid.answers = [{'text': tick['verdict'], 'marks': a.per}]
 
 
+def _lift_question_split(asks):
+    """A split printed on one PART of a vocabulary task prices the question.
+
+    2024 Latvian sets "(5 × 1 punkti)" at the end of the fifth expression's
+    gloss and nowhere else — it is the price of the whole task, five parts at
+    one punkts each, and the row it lands on is simply the last row of the
+    task. Left where it fell, that sitting reported four unpriced asks and one
+    priced at five. It is lifted ONLY where the split's count equals the number
+    of parts the question prints, which is the scheme's own arithmetic saying
+    so.
+    """
+    kids = collections.defaultdict(list)
+    for a in asks:
+        if a.letter and a.roman is None:
+            kids[(a.section, a.q)].append(a)
+    for parent in asks:
+        if parent.letter or parent.roman:
+            continue
+        group = kids.get((parent.section, parent.q)) or []
+        split = [k for k in group if k.split and k.count == len(group)]
+        if len(group) < 2 or len(split) != 1:
+            continue
+        source = split[0]
+        count, per = source.count, source.per
+        if parent.total is None or parent.total < count * per:
+            parent.count, parent.per = count, per
+            parent.total, parent.notation = count * per, source.notation
+        for kid in group:
+            kid.count, kid.per, kid.total = 1, per, per
+            kid.split = False
+            kid.notation = (f'{source.notation} on {parent.ref_tail()}, '
+                            f'walked down to its {count} parts')
+
+
 def _priced_before_next_number(rows, i):
     """Is a taškai price printed under this numbered row, before the next one?
 
@@ -848,7 +889,9 @@ def _priced_before_next_number(rows, i):
             return False
         if PART_OLD.match(row.text):
             return False
-        if PUNKTAI.search(row.text):
+        if _tariff_only(row.text) or PUNKTAI.search(row.text) \
+                or PUNKTAI_BARE.search(row.text) or SPLIT.search(row.text) \
+                or SPLIT_BARE.search(row.text):
             return True
     return False
 
@@ -982,20 +1025,42 @@ def _strip_tariffs(text):
     Ordinary reporting no tariff and their card question carrying "4 Marks" in
     its own words.
     """
-    out = PUNKTAI.sub('', TARIFF.sub('', SPLIT_BARE.sub('', SPLIT.sub('', text))))
+    out = PUNKTAI_BARE.sub(
+        '', PUNKTAI.sub('', TARIFF.sub('', SPLIT_BARE.sub('', SPLIT.sub('', text)))))
     return _norm(BARE_TARIFF.sub('', out))
 
 
 def _tariff_only(text):
     """Is this printed row nothing but a tariff?"""
-    rest = _strip_tariffs(text)
+    rest = PUNKTAI_BARE.sub('', _strip_tariffs(text))
     return bool(text) and not re.sub(r'[\s.,:;()x×-]+', '', rest) \
         and (PUNKTAI.search(text) or SPLIT.search(text)
              or SPLIT_BARE.search(text) or BARE_TARIFF.search(text)
              or TARIFF.search(text))
 
 
-DASH_SPLIT = re.compile(r'^(.{1,80}?)\s+[–—]\s+(\S.+)$')
+# The dash the old scheme puts between an expression and its gloss. Latvian
+# and Czech use a HYPHEN as often as an en dash — "a) zem velēnām
+# (1.rindkopa) - miris" — and it is only ever a separator where the SEC set a
+# space on both sides of it.
+DASH_SPLIT = re.compile(r'^(.{1,80}?)\s+[\u2010\u2011\u2012\u2013\u2014-]\s+(\S.+)$')
+# The paragraph reference the old scheme closes an expression with, in the
+# three languages: "(1.rindkopa)" and "(21. rinda)" in Latvian, "(odstavec 4)"
+# in Czech, "(2 dalis)" in Lithuanian. Whatever follows it is the gloss, dash
+# or no dash — 2011 Latvian prints "a) Kaut kas briest (1.rindkopa) notiks
+# kaut kas jauns," with nothing between them at all, and 2010 sets the hyphen
+# with no space in front of it, "(10.rindkopa)-dzīves pamats". Both were read
+# as more of the question, and five asks a sitting reported no answer.
+# The COLON the 2026 Czech scheme puts between an expression and its gloss —
+# '„paradoxně“: rozporně, protismyslně, zdánlivě nemožné' — where every other
+# sitting of that subject uses a dash. Without it the whole first row read as
+# the question and the gloss's SECOND row became the answer, so five cards of
+# that sitting asked about a sentence and answered with the middle of another.
+# The left side is bounded, because a colon inside a gloss is not a separator.
+COLON_SPLIT = re.compile(r'^([^:]{1,60}):\s+(\S.+)$')
+REF_SPLIT = re.compile(
+    r'^(.{1,80}?\((?:[^)]*(?:rindkop|rinda|akapit|odstav|dal[iy])[^)]*)\))'
+    r'\s*[\u2010\u2011\u2012\u2013\u2014-]?\s*(\S.+)$', re.I)
 
 
 def _split_dash(ask):
@@ -1008,8 +1073,11 @@ def _split_dash(ask):
     reported a price with no answer under it and their card question would
     have carried its own answer.
     """
-    m = DASH_SPLIT.match(ask.cue)
-    if not m or ask.answers:
+    if ask.answers:
+        return
+    m = (REF_SPLIT.match(ask.cue) or DASH_SPLIT.match(ask.cue)
+         or COLON_SPLIT.match(ask.cue))
+    if not m:
         return
     ask.cue = _norm(m.group(1))
     ask.answers.append({'text': _norm(m.group(2)), 'marks': None})
@@ -1024,6 +1092,13 @@ def _absorb_old(ask, text):
     into the one marking point the SEC printed rather than cut at every
     capital letter.
 
+    A LETTERED ask is different: its cue is one expression from the text and
+    never wraps, so the row under it is the gloss whether or not a price has
+    been seen. Read as more of the question — which is what an unpriced letter
+    got, because the price of a vocabulary task is printed once on the question
+    above it — five asks a sitting carried their own answer inside the question
+    and reported none, in six Latvian and five Czech sittings.
+
     WHERE the price is printed moved over the decade and both places are read.
     2020 sets it on the question's own row — "a) buitinė lietuvių šneka
     (1 taškas)" — and 2012 sets it on the ANSWER's — "a) liūtis" then "Staiga
@@ -1033,17 +1108,17 @@ def _absorb_old(ask, text):
     """
     if NOTE.match(text) or PAGE_ONLY.match(text):
         return
-    if PUNKTAI.fullmatch(text):
+    if PUNKTAI.fullmatch(text) or PUNKTAI_BARE.fullmatch(text):
         _read_tariff(ask, text)
         return
-    pm = PUNKTAI.search(text)
+    pm = PUNKTAI.search(text) or PUNKTAI_BARE.search(text)
     if pm:
         _read_tariff(ask, text)
         body = _norm(PUNKTAI.sub('', text))
         if body:
             ask.answers.append({'text': body, 'marks': None})
         return
-    if ask.total is None and not ask.answers:
+    if ask.total is None and not ask.answers and ask.letter is None:
         ask.cue = _norm(f'{ask.cue} {text}')
         return
     if ask.answers:
@@ -1134,9 +1209,9 @@ def _head_tariff(ask):
 
 def _punktai_head(ask):
     """The old examination's own price: "(1 taškas)", "(5 taškai)"."""
-    if PUNKTAI.search(ask.cue):
+    if PUNKTAI.search(ask.cue) or PUNKTAI_BARE.search(ask.cue):
         _read_tariff(ask, ask.cue)
-        ask.cue = _norm(PUNKTAI.sub('', ask.cue))
+        ask.cue = _norm(PUNKTAI_BARE.sub('', PUNKTAI.sub('', ask.cue)))
 
 
 def _add_answer(ask, text):
@@ -1198,11 +1273,16 @@ def _read_tariff(ask, text, directive_count=None):
     multiply out to the total the SEC printed beside it is a fault on the ask,
     not a number to pick between.
     """
-    pm = PUNKTAI.search(text)
-    if pm and ask.per is None:
-        ask.count, ask.per, ask.total = 1, int(pm.group(1)), int(pm.group(1))
-        ask.notation = pm.group(0)
-        return
+    # The SPLIT is read BEFORE the single price, always. "[5 x 1 bod]" and
+    # "(5 × 1 punkts)" both end in a unit, so a pattern that allows the opening
+    # bracket to be missing matches their SECOND number — "1 bod]" — and
+    # priced a five-mark vocabulary task at one mark in four sittings.
+    if not SPLIT.search(text) and not SPLIT_BARE.search(text):
+        pm = PUNKTAI.search(text) or PUNKTAI_BARE.search(text)
+        if pm and ask.per is None:
+            ask.count, ask.per = 1, int(pm.group(1))
+            ask.total, ask.notation = int(pm.group(1)), pm.group(0)
+            return
     stated_total = None
     bm = BARE_TARIFF.search(SPLIT_BARE.sub('', SPLIT.sub('', TARIFF.sub('', text))))
     if bm:
