@@ -1036,7 +1036,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "Photograph C, Photograph A",
+          "label": "Photograph A, Photograph C",
           "title": "The photographs printed with this question",
           "pages": [
                 7,
@@ -1598,7 +1598,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "Photograph C, Photograph A",
+          "label": "Photograph A, Photograph C",
           "title": "The photographs printed with this question",
           "pages": [
                 7,
@@ -2573,8 +2573,7 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Anabasis", marks: null },
     { id: "r-3", kind: "point", verbatim: "Hellenica", marks: null },
     { id: "r-4", kind: "point", verbatim: "Memorabilia", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Cyropaedia, etc.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Comment on significance.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Cyropaedia, etc. Comment on significance.", marks: null },
     ],
   } as SecCard,
   {
@@ -3480,8 +3479,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Following coastal route From Asia Minor to Thessaly.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Problem could be crossing Hellespont; passing Mt.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Athos; attacks by tribes from north.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Problem could be crossing Hellespont; passing Mt. Athos; attacks by tribes from north.", marks: null },
     ],
   } as SecCard,
   {
@@ -4299,7 +4297,7 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "Photograph C, Photograph C",
+          "label": "Photograph C",
           "title": "The photographs printed with this question",
           "pages": [
                 9
@@ -5650,8 +5648,7 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Portrayal includes Spartan King lineage, customs, laws, political system.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Ethos and military strength: fight for freedom and by the law, fight to death even if outnumbered, they won’t retreat.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Notable individuals: Leonidas, Demaratos", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Xerxes’ opinion vs.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Demaratos’.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Xerxes’ opinion vs. Demaratos’.", marks: null },
     ],
   } as SecCard,
   {
@@ -5890,8 +5887,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Xenophon: 430-350 BC", marks: null },
     { id: "r-2", kind: "point", verbatim: "Athenian historian and philosopher; knew Socrates; expedition of 10,000; fought with Spartans; exiled.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Works include Anabasis, Hellenica, Memorabilia, Cyropaedia, etc.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Assess significance, such as, as a primary source or legacy as a writer.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Works include Anabasis, Hellenica, Memorabilia, Cyropaedia, etc. Assess significance, such as, as a primary source or legacy as a writer.", marks: null },
     ],
   } as SecCard,
   {
@@ -6564,7 +6560,7 @@ export const CARDS: SecCard[] = [
     section: "Q4", questionRef: "2023 HL Q4(viii)(a), (b), (c)",
     stem: "Look at Photographs A, B and C below and answer any two of the following questions:",
     questionText: "(a) What type of building is shown in Photograph A? State the main features of this type of building and give a brief description of their functions. (b) Is the vase in Photograph B Red Figure or Black Figure? Evaluate how the scene on this vase has been depicted. (c) To what period does the statue in Photograph C belong? In your opinion, is this a good example of sculpture from this period? Explain your answer.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 90,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Photo A Theatre: Theatron, Orchestra, Skene, Parodos, Exodos, Altar.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Seating set into a hill, good acoustics.", marks: null },
@@ -6574,10 +6570,12 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "Photograph A",
+          "label": "Photograph A, Photograph B, Photograph C",
           "title": "The photographs printed with this question",
           "pages": [
-                9
+                9,
+                10,
+                11
           ],
           "attribution": "SEC Ancient Greek 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "The plates exactly as the examination printed them at the back of the booklet."
@@ -7169,7 +7167,7 @@ export const CARDS: SecCard[] = [
     section: "Q4", questionRef: "2024 HL Q4(viii)(a), (b), (c)",
     stem: "Look at Photographs A, B and C on the following pages, and answer any two of the following questions:",
     questionText: "(a) What order of architecture is shown in Photograph A? Explain how you were able to identify the order. (b) Identify whether the vase in Photograph B is Black Figure or Red Figure. Comment briefly on how the artist has portrayed the scene. (c) What type of statue is shown in Photograph C, and to what period does it belong? Comment on its characteristic features.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 90,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Photo A Doric Order: simple capital on the fluted columns; frieze; triglyphs; guttae; metopes.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Photo B Red Figure vase, comments may include composition, poses, framing, proportions, details of figures and the action portrayed.", marks: null },
@@ -7178,10 +7176,11 @@ export const CARDS: SecCard[] = [
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "Photograph A",
+          "label": "Photograph A, Photograph B, Photograph C",
           "title": "The photographs printed with this question",
           "pages": [
-                10
+                10,
+                11
           ],
           "attribution": "SEC Ancient Greek 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "The plates exactly as the examination printed them at the back of the booklet."

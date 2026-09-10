@@ -1957,7 +1957,7 @@
   "stem": "Having looked at photographs A, B and C below, answer any two of the following questions:-",
   "sourceMaterial": {
    "kind": "source-illustration",
-   "label": "Photograph C, Photograph A",
+   "label": "Photograph A, Photograph C",
    "title": "The photographs printed with this question",
    "pages": [
     7,
@@ -3170,7 +3170,7 @@
   "stem": "Having looked at photographs A, B and C below, answer any two of the following questions:-",
   "sourceMaterial": {
    "kind": "source-illustration",
-   "label": "Photograph C, Photograph A",
+   "label": "Photograph A, Photograph C",
    "title": "The photographs printed with this question",
    "pages": [
     7,
@@ -5108,13 +5108,7 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Cyropaedia, etc.",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Comment on significance.",
+    "verbatim": "Cyropaedia, etc. Comment on significance.",
     "marks": null
    }
   ],
@@ -7594,13 +7588,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Problem could be crossing Hellespont; passing Mt.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Athos; attacks by tribes from north.",
+    "verbatim": "Problem could be crossing Hellespont; passing Mt. Athos; attacks by tribes from north.",
     "marks": null
    }
   ],
@@ -9283,7 +9271,7 @@
   "stem": "Having looked at Photographs A, B and C below, answer any two of the following questions:-",
   "sourceMaterial": {
    "kind": "source-illustration",
-   "label": "Photograph C, Photograph C",
+   "label": "Photograph C",
    "title": "The photographs printed with this question",
    "pages": [
     9
@@ -11887,13 +11875,7 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Xerxes’ opinion vs.",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Demaratos’.",
+    "verbatim": "Xerxes’ opinion vs. Demaratos’.",
     "marks": null
    }
   ],
@@ -12451,13 +12433,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Works include Anabasis, Hellenica, Memorabilia, Cyropaedia, etc.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Assess significance, such as, as a primary source or legacy as a writer.",
+    "verbatim": "Works include Anabasis, Hellenica, Memorabilia, Cyropaedia, etc. Assess significance, such as, as a primary source or legacy as a writer.",
     "marks": null
    }
   ],
@@ -13960,7 +13936,7 @@
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 90,
+  "totalMarks": 30,
   "rows": [
    {
     "id": "r-1",
@@ -13993,14 +13969,16 @@
     "marks": null
    }
   ],
-  "notes": "The examination prints this ask at 90 marks. The paper prints it on page 9 of the question booklet. The examination letters this ask (a), (b), (c) and answers all of them together, so one card carries all three.",
+  "notes": "The examination prints this ask at 30 marks. The paper prints it on page 9 of the question booklet. The examination letters this ask (a), (b), (c) and answers all of them together, so one card carries all three.",
   "stem": "Look at Photographs A, B and C below and answer any two of the following questions:",
   "sourceMaterial": {
    "kind": "source-illustration",
-   "label": "Photograph A",
+   "label": "Photograph A, Photograph B, Photograph C",
    "title": "The photographs printed with this question",
    "pages": [
-    9
+    9,
+    10,
+    11
    ],
    "attribution": "SEC Ancient Greek 2023 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "The plates exactly as the examination printed them at the back of the booklet."
@@ -15380,7 +15358,7 @@
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 90,
+  "totalMarks": 30,
   "rows": [
    {
     "id": "r-1",
@@ -15407,14 +15385,15 @@
     "marks": null
    }
   ],
-  "notes": "The examination prints this ask at 90 marks. The paper prints it on page 9 of the question booklet. The examination letters this ask (a), (b), (c) and answers all of them together, so one card carries all three.",
+  "notes": "The examination prints this ask at 30 marks. The paper prints it on page 9 of the question booklet. The examination letters this ask (a), (b), (c) and answers all of them together, so one card carries all three.",
   "stem": "Look at Photographs A, B and C on the following pages, and answer any two of the following questions:",
   "sourceMaterial": {
    "kind": "source-illustration",
-   "label": "Photograph A",
+   "label": "Photograph A, Photograph B, Photograph C",
    "title": "The photographs printed with this question",
    "pages": [
-    10
+    10,
+    11
    ],
    "attribution": "SEC Ancient Greek 2024 Higher Level examination paper — © State Examinations Commission.",
    "presentationNote": "The plates exactly as the examination printed them at the back of the booklet."

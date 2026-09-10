@@ -103,7 +103,10 @@ COMPOSITION_EVIDENCE = (
     '................................................ unlocked. 6", "One '
     'night ........................................... valuable. 7" — and '
     'the Greek that would be the answer appears nowhere in the document. Its '
-    'only other line on the ask is "Apply Positive Credit Marking system."')
+    'only other line on the ask is "Apply Positive Credit Marking system." '
+    'Measured across the sixteen schemes on disk: the 81 priced lines under '
+    'Question 1 Section A carry 0 Greek characters between them and 1.36 '
+    'English function words each.')
 
 UNSEEN_EVIDENCE = (
     'the scheme states no English for this ask. It prints the GREEK the '
@@ -113,7 +116,12 @@ UNSEEN_EVIDENCE = (
     'of it. The scheme says so itself under Qu. 2: "Each mark allocation '
     'represents a complete unit of meaning to be translated. Full marks are '
     'awarded per unit of meaning based on demonstrating thorough '
-    'understanding of syntax and vocabulary."')
+    'understanding of syntax and vocabulary." Measured across the sixteen '
+    'schemes on disk: 707 priced translation lines carry 12,507 Greek '
+    'characters and 26 English function words between them — 17.8 Greek '
+    'characters and 0.03 English function words per line at Higher, against '
+    '0 and 1.36 on the composition, which is the same measurement the other '
+    'way round.')
 
 NO_SCHEME_EVIDENCE = (
     'the State Examinations Commission published no marking scheme for this '
@@ -221,11 +229,13 @@ class _Parent:
         self.page = stand_in.page
         self.stem = stand_in.stem
         self.text = ' '.join(f'({k.letter}) {k.text}' for k in kids)
-        # The letters are priced individually and a candidate answers a stated
-        # number of them; the ROMAN's own tariff is what the paper prints on
-        # the question, which the scheme's own splits sum to.
-        self.marks = sum(k.marks for k in kids if k.marks) \
-            if all(k.marks for k in kids) else entry.marks
+        # The ROMAN's tariff is what the PAPER prints on the question it is one
+        # of — "Answer any three of the following questions. Each question
+        # carries thirty marks" — which is the value its letters inherit.
+        # Summed instead, a card that carries three fifteen-mark photograph
+        # parts a candidate answers TWO of claimed ninety marks.
+        self.marks = (stand_in.marks if stand_in.inherited and stand_in.marks
+                      else entry.marks)
         self.inherited = True
         self.letter_ids = [k.letter for k in kids]
 
@@ -472,8 +482,23 @@ SEGMENT = re.compile(
     '|\\s+(?=\\((?:i|ii|iii|iv|v|vi)\\)\\s)')
 
 
+# An abbreviation that never ends a sentence, so the full stop after it is not
+# a break: "passing Mt. Athos", "Xerxes' opinion vs. Demaratos'", "Anabasis,
+# Hellenica, Memorabilia, Cyropaedia, etc. Assess significance". Cut there, one
+# row ended "passing Mt." and the next opened "Athos;". "BC." is NOT in the
+# list — these schemes end a sentence with it constantly ("Arginusae: 406 BC.
+# Athenian naval victory").
+NEVER_FINAL = re.compile(r'\b(?:Mt|St|Dr|Mr|Mrs|vs|etc|cf|No|e\.g|i\.e)\.$')
+
+
 def _segments(text):
-    parts = [p.strip(' ;') for p in SEGMENT.split(text)]
+    parts = []
+    for part in SEGMENT.split(text):
+        if parts and NEVER_FINAL.search(parts[-1]):
+            parts[-1] = f'{parts[-1]} {part}'
+            continue
+        parts.append(part)
+    parts = [p.strip(' ;') for p in parts]
     parts = [p for p in parts if len(p) > 2]
     if not parts:
         return [text]
@@ -504,9 +529,13 @@ def _notes(entry, ask, marks, covers):
 
 def _source(P, ask, year, level, question):
     """The passage or the plates this ask cannot be answered without."""
-    plates = PLATE_REF.search(question)
+    plates = PLATE_REF.findall(question)
     if plates:
-        letters = [L.upper() for L in plates.groups() if L]
+        # Every plate the ask names, not the first: 2023's Question 4(viii)
+        # sets "(a) … Photograph A? (b) … Photograph B? (c) … Photograph C",
+        # three separate mentions, and a single search bound page 9 alone
+        # while B and C sit on pages 10 and 11.
+        letters = sorted({L.upper() for run in plates for L in run if L})
         pages = sorted({p for L, p in P.photo_pages().items() if L in letters})
         if not pages:
             return None
