@@ -207,6 +207,17 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/french',
     blocked: new Set(),
   },
+  russian: {
+    title: 'Russian',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-russian-syllabus',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Russian syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound\n * to the pages of the question paper it was printed on. Comprehension and\n * information retrieval are answered in English or Irish; the language-awareness\n * tasks are answered in RUSSIAN, and the scheme awards no marks for either in\n * the wrong language.",
+    figureDir: 'public/exam-figures/russian',
+    blocked: new Set(),
+  },
   italian: {
     title: 'Italian',
     /* The syllabus these papers were sat under and the one still being sat.
@@ -331,7 +342,11 @@ function schemeFor(subjectId, card) {
  * sets "ẋ = A ω cos(ωt + ε)" and "ẍ = −A ω² sin(ωt + ε)" — and U+1D62-U+1D6A
  * are the Unicode subscripts mathtext.subscripts() itself emits, so refusing
  * them threw away a card for spelling v_r the way the reader spelled it. */
-const REAL = /[\u0152\u0153\u0370-\u03FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A]/;
+/* Cyrillic (U+0400-U+04FF) is genuinely Cyrillic, for the same reason Greek is
+ * genuinely Greek: it is the alphabet the Russian paper and its scheme are
+ * printed in. Left inside BROKEN, every Russian marking point read as a page
+ * of unreadable glyphs and the whole deck was refused. */
+const REAL = /[\u0152\u0153\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A]/;
 const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 /** Undo a subset font's broken ToUnicode map, using the table derived from the
  * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied

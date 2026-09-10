@@ -216,9 +216,22 @@ export const repairGlyphs = (t) => (BROKEN_GLYPH.test(t)
 const DEGREE_O = /(\d)oc/g;
 
 /** Case, spacing and punctuation removed; every character of an answer must
- *  still appear, in order. */
+ *  still appear, in order.
+ *
+ * CYRILLIC IS KEPT. The class was Latin letters and digits alone, which meant a
+ * marking point written in Russian normalised to the EMPTY STRING and matched
+ * every scheme ever printed: "стать" and "стоять" were the same claim, and so
+ * was a word the SEC never wrote. Russian's language-awareness answers are
+ * Russian words, so the gate that exists to stop a card quoting what the
+ * examiner did not say was, for that whole deck, not checking anything.
+ *
+ * Widening the class can only make matching STRICTER — a claim keeps more of
+ * its own characters and so must find more of them in the scheme — and it is
+ * identical on text that has no Cyrillic in it, which is every other subject in
+ * the bank. */
 export const normalise = (t) =>
-  foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, '');
+  foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-')
+    .replace(/[^a-z0-9\u0400-\u04ff]+/g, '');
 
 /**
  * A whole scheme file reduced to the text a marking point is searched in.

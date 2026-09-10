@@ -139,6 +139,12 @@ HL_UNITS_I = [
     # "Q.1.2" is never read as "Q.1".
     (re.compile(rf'^{Q}1\b.*Comprehension', re.I), 'C1'),
     (re.compile(rf'^{Q}2\b.*Summary\s+writing', re.I), 'C2'),
+    # "Question 2. Comprehension (40 + 10 = 50 marks)" is the head of the
+    # SECOND comprehension and of the language-awareness question printed
+    # under it. Unmatched, it fell inside the language-awareness question
+    # above it and its own head became a sixth row of that question's
+    # five-row table: "Question 2. Comprehension — (40 + 10 =".
+    (re.compile(rf'^{Q}2\b.*Comprehension', re.I), 'C2'),
 ]
 HL_UNITS_II = [
     (re.compile(rf'^{Q}1\b', re.I), 'GR'),
@@ -167,6 +173,16 @@ OL_UNITS_II = [
 # marks)" — the last of which prices content and coherence separately and
 # whose FIRST number is the whole.
 UNIT_TOTAL = re.compile(r'\(?(\d{1,3})\s*marks?\)?', re.I)
+# The summary-writing question's own printed split. All five Higher schemes
+# state it in the same words: "Award 2 marks for each of 4 details (up to 8
+# marks) AND 2 discretionary marks to reward candidates who: Express / develop
+# their ideas clearly …". Eight of the ten marks are paid for stated content
+# and two are paid for how the paragraph is written, so a card carries the
+# eight and says on its face where the other two live.
+CONTENT_SPLIT = re.compile(
+    r'Award\s+(\d{1,2})\s+marks?\s+for\s+each\s+of\s+(\d{1,2})\s+details?\s*'
+    r'\(\s*up\s+to\s+(\d{1,2})\s+marks?\s*\)\s*AND\s+(\d{1,2})\s+'
+    r'discretionary\s+marks?', re.I)
 # The head that prices a unit's two halves separately: "Q.1 30 marks (24 + 6
 # marks)" is twenty-four marks of reading and six of language awareness.
 CONTENT_SHARE = re.compile(r'\(\s*(\d{1,3})\s*\+\s*(\d{1,3})\s*marks?\s*\)', re.I)
@@ -189,9 +205,19 @@ TARIFF = re.compile(
 
 # A rung: the same answer, shorter, worth less. "assign 2 marks:" heads the
 # full-mark answers and "assign 1 mark:" the lesser ones.
-ASSIGN = re.compile(r'^assign\s+(\d{1,2})\s+marks?\s*:?\s*$', re.I)
+# A rung heading. 2024 and 2025 set it on its own line ("assign 2 marks:");
+# 2022 sets the heading and the answers it pays for on ONE line ("assign two
+# marks: author/owner of the project + from Saint Petersburg"), and spells the
+# number in words. Left unread, the whole line shipped as a marking point
+# beginning "assign two marks:", which is a tariff standing where an answer
+# should be.
+ASSIGN = re.compile(
+    r'^assign\s+(no|\d{1,2}|one|two|three|four|five)\s+marks?\s*:?\s*(.*)$', re.I)
+ASSIGN_WORDS = {'no': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
 # The same thing printed at the END of a bullet: "• Cheap 1 mark".
 TRAILING_MARK = re.compile(r'\s+(\d{1,2})\s*marks?\.?\s*$', re.I)
+# A printed group that is nothing but a marks cell.
+MARKS_ONLY_GROUP = re.compile(r'\(?\s*(\d{1,2})\s*marks?\s*\)?\.?', re.I)
 
 BULLETS = '•●▪■○◦'
 BULLET = re.compile(rf'^[{BULLETS}]\s*')
@@ -239,7 +265,7 @@ NOTE = re.compile(
     r'No mark\b|No marks\b|Marks are awarded\b|Award\b|Allocate\b|Give \w+ marks?\b|'
     r'Take a global view\b|This list is not exhaustive\b|\*|'
     r'Where a candidate\b|Single marks\b|Discretionary\b|If a candidate\b|'
-    r'The quality of\b|Read the\b|Read through\b|Answer in\b|Answer the\b|'
+    r'Max\s+\d+\s+marks?\b|The quality of\b|Read the\b|Read through\b|Answer in\b|Answer the\b|'
     r'Write a paragraph\b|Write \d|Each answer\b|Marks:|Content of each\b|'
     r'For full marks\b|Main points\s*:\s*$|Secondary details\s*:\s*$|'
     r'General\s*:|Segment\s+\d|Answer ONE\b|In the text\b|Indicate the case\b|'
@@ -323,6 +349,105 @@ def _rate_on(line):
     return int(tok) if tok.isdigit() else WORD_RATE[tok]
 
 
+OR_LINE = re.compile(r'^(?:N[\u00d3O]\s*/\s*)?OR\s*$|^N[\u00d3O]\s*/\s*OR$', re.I)
+# The scheme's own worked example, printed above the table it explains. It is
+# not an answer a student may claim: the paper prints it filled in.
+EXAMPLE = re.compile(r'\bSampla\b|\bExample\b|\u041f\u0440\u0438\u043c\u0435\u0440', re.I)
+# A column TITLE, which names what is under it rather than answering anything.
+COLUMN_TITLE = re.compile(
+    r'^(?:Verb\b|Noun\s+phrase\b|Fr[a\u00e1]sa\b|RANNA\s+CAINTE\b|FOCAIL\b|'
+    r'R\u00e9imse\b|Infinideach\b|Tuiseal\b|WORDS\b|PARTS\s+OF)', re.I)
+# The one language-awareness task that states no answer at all: the candidate
+# writes phrases the paper already printed in cursive script, and the scheme
+# prints the phrases and a marking instruction.
+CURSIVE = re.compile(r'\b(?:cursive|handwritten|handwriting)\b', re.I)
+# A menu the scheme itself leaves open.
+OPEN_LIST = re.compile(r'not\s+exhaustive|^\s*Etc\.?\s*$', re.I)
+# A numbered option in a word list: "1. альбом".
+NUMBERED = re.compile(r'^(\d{1,2})\s*\.\s*(\S.*)$')
+LATIN = re.compile(r'[A-Za-z]')
+CYRILLIC = re.compile(r'[\u0400-\u04FF]')
+# A MENU task: the scheme answers "find five words related to X and list them
+# in Russian" with the semantic field, set in two or three printed columns of
+# single words. Read as a table those columns are prompt/answer pairs — the
+# 2022 Higher scheme yielded "Библиотека" answered by "Однокурсник", which is
+# two unrelated words the SEC printed beside each other — so the instruction
+# decides which shape the task is before any column is read.
+MENU_TASK = re.compile(
+    r'find\s+\w+\s+words?\b|list\s+them\s+in\s+Russian|'
+    r'R\u00e9imse\s+s\u00e9imeantach|Semantic\s+field', re.I)
+# Examiner instructions inside a task, which are never its instruction line.
+TASK_NOTE = re.compile(
+    r'^(?:Award\b|Allocate\b|Give\s+\w+\s+marks?\b|Do not\b|Accept\b|Note\s*:|'
+    r'N\.?B\.?\b|Take a global view\b|This list\b|\d+\s+marks?\s+per\b|'
+    r'\d+\s+mark\s+if\b|Answer ONE\b|\*)', re.I)
+
+
+class _Task:
+    """One alternative of a task question, as the scheme prints it."""
+
+    def __init__(self):
+        self.instruction = ''
+        self.tariff = None
+        self.rate = None
+        self.pairs = []
+        self.options = []
+        self.open = False
+        self.cursive = False
+        self.menu = False
+        self.after_example = False
+        self.lines = []
+
+    def feed(self, groups, line):
+        self.lines.append(line)
+        if MENU_TASK.search(line):
+            self.menu = True
+        # "Sampla / Example / Пример:" heads its own row and the worked
+        # example is the row BENEATH it, which is the paper's own filled-in
+        # first line and not an answer a candidate may claim.
+        was_example, self.after_example = self.after_example, EXAMPLE.search(line)
+        if OPEN_LIST.search(line):
+            self.open = True
+        if CURSIVE.search(line):
+            self.cursive = True
+        tariff = _split_tariff(line)
+        if tariff and self.tariff is None:
+            self.tariff = tariff
+        rate = _rate_on(line)
+        if rate and self.rate is None:
+            self.rate = rate
+        body = TARIFF.sub('', line).strip()
+        if BULLET.match(body):
+            self.options += [c.strip() for c in SPLIT_BULLET.split(body)
+                             if c.strip()]
+            return
+        m = NUMBERED.match(body)
+        if m and len(groups) == 1 and not LATIN.search(m.group(2)):
+            self.options.append(m.group(2).strip())
+            return
+        if LATIN.search(body) and not CYRILLIC.search(body) \
+                and not TASK_NOTE.match(body) and len(body.split()) >= 3 \
+                and not self.pairs and not self.options:
+            self.instruction = f'{self.instruction} {body}'.strip()
+            return
+        if self.menu:
+            for g in groups:
+                for word in g.split():
+                    if CYRILLIC.search(word):
+                        self.options.append(word.strip(',;'))
+            return
+        if len(groups) == 2 and not EXAMPLE.search(line) and not was_example \
+                and not COLUMN_TITLE.match(groups[0]) \
+                and not COLUMN_TITLE.match(groups[1]) \
+                and not TASK_NOTE.match(groups[0]):
+            left = re.sub(r'^\d{1,2}\s*\.?\s*', '', groups[0].strip())
+            right = TARIFF.sub('', groups[1]).strip()
+            if left and right:
+                self.pairs.append((left, right))
+                return
+        return
+
+
 class Part:
     """One priced component of an ask: a rung of answers at one rate."""
 
@@ -338,7 +463,7 @@ class Ask:
 
     __slots__ = ('unit', 'item', 'roman', 'cue', 'notation', 'total', 'claim',
                  'per', 'answers', 'rungs', 'fault', 'line', 'page',
-                 'full_rung')
+                 'full_rung', 'content', 'discretionary', 'bulleted', 'plus')
 
     def __init__(self, unit, item, roman, cue, line, page):
         self.unit, self.item, self.roman = unit, item, roman
@@ -349,6 +474,12 @@ class Ask:
         self.rungs = []            # [(text, marks)] worth less than full
         self.fault = None
         self.full_rung = None
+        # What a card may claim of the total, where the scheme splits it into
+        # marks for stated content and marks for how the answer is written.
+        self.content = None
+        self.discretionary = None
+        self.bulleted = False
+        self.plus = None
 
     @property
     def key(self):
@@ -378,10 +509,13 @@ class RuScheme:
         self.unit_rates = {}
         self.unit_tariffs = {}
         self.unit_content = {}
+        self.unit_split = {}
+        self.unit_split_words = {}
         self.unit_lines = {}
         self.unit_faults = {}
         self.band_units = set()
         self._read()
+        self._finish()
         self._price()
 
     # -- the walk -----------------------------------------------------------
@@ -403,6 +537,7 @@ class RuScheme:
         page = 0
         cur = None
         rung = None
+        in_note = False
         pending = None       # an ask head whose tariff is on the next line
         pending_wrapped = False
         # The number an ask inherits from the one above it. The SEC prints
@@ -434,7 +569,9 @@ class RuScheme:
                 continue
             hit = self._unit_head(section, line, unit)
             if hit:
+                self._flush_plus(cur)
                 unit, cur, rung, pending = hit, None, None, None
+                in_note = False
                 self.unit_lines.setdefault(unit, [])
                 total = self._total_on(line)
                 if total is not None:
@@ -460,13 +597,25 @@ class RuScheme:
                 continue
             if unit is None:
                 continue
-            self.unit_lines.setdefault(unit, []).append((page, line))
+            # Kept as the printed COLUMNS, not as one joined line: the
+            # language-awareness questions are two-column tables ("стали"
+            # beside "стать") and the answer is the second column. Joined,
+            # there is nothing to tell a prompt from its answer.
+            self.unit_lines.setdefault(unit, []).append((page, groups))
             rate = _rate_on(line)
             if rate and cur is None:
                 self.unit_rates.setdefault(unit, rate)
             tariff = _split_tariff(line)
             if tariff and cur is None:
                 self.unit_tariffs.setdefault(unit, tariff)
+            split = CONTENT_SPLIT.search(line)
+            if split:
+                per, claim, content, disc = (int(g) for g in split.groups())
+                assert per * claim == content, (
+                    f'{self.path}: {unit} prints {per} x {claim} against a '
+                    f'stated content total of {content}')
+                self.unit_split[unit] = (claim, per, content, disc)
+                self.unit_split_words[unit] = split.group(0)
             if self.unit_totals.get(unit) is None and cur is None \
                     and len(line) < 40 and not NOTE.match(line):
                 t = self._total_on(line)
@@ -490,9 +639,26 @@ class RuScheme:
                 if t and (TARIFF.fullmatch(line) or t.start() > 0):
                     pending.notation = t.group(0).strip()
                     tail = line[:t.start()].strip()
-                    if tail:
-                        pending.cue = f'{pending.cue} {tail}'.strip()
+                    # A tail that opens with an imperative is the rest of the
+                    # QUESTION, wherever the sentence before it ended: 2022
+                    # Higher prints "2. Explain the benefits of studying in
+                    # Moscow State University, according to Martin." and then
+                    # "Give four details 10 marks", and read as an answer
+                    # "Give four details" shipped as a marking point.
+                    closed = (CLOSED.search(pending.cue)
+                              and not INSTRUCTION_TAIL.match(tail))
                     pending = None
+                    if tail and not closed:
+                        cur.cue = f'{cur.cue} {tail}'.strip()
+                        continue
+                    if tail:
+                        # The head's own sentence had already ended, so what
+                        # stands in front of the tariff is the ANSWER printed
+                        # on the same row: 2021 Ordinary sets "(iv) Where will
+                        # the opening ceremony take place?" and, beneath it,
+                        # "Brateyevskoi Park 2 marks". Read as more of the
+                        # question it left the ask with no answer at all.
+                        cur.answers.append((tail, None))
                     continue
                 # The rest of a wrapped question, but only where the row
                 # cannot be an answer: a BULLET opens the scheme's answers and
@@ -512,29 +678,95 @@ class RuScheme:
 
             head = self._ask_head(line, unit, last_item.get(unit))
             if head is not None:
-                cur, rung = head, None
+                self._flush_plus(cur)
+                cur, rung, in_note = head, None, False
                 if head.item is not None:
                     last_item[unit] = head.item
                 cur.page = page
                 self.asks.append(cur)
-                # A head is complete the moment it carries its own tariff,
-                # whatever its punctuation. Treating an untariffed-looking
-                # sentence as unfinished swallowed the answers beneath it:
+                # A head with its own tariff is finished — UNLESS its last
+                # word is a dangling "Give four", which is what the SEC prints
+                # when the question runs past the marks column: "Part 1. What
+                # does Masha think about her work experience so far? Give four
+                # 10 marks" is followed by "details." on the next line, and
+                # read as an answer that word shipped as something a student
+                # could claim. Nothing looser than a dangling count will do:
                 # 2022 Ordinary heads "(i) What makes this school unique 1 x 2
-                # marks" with no question mark, and its four answers were read
-                # as the rest of the question.
-                pending = cur if cur.notation is None else None
+                # marks" — no question mark, and complete — and treating that
+                # as unfinished swallowed the first of its four answers.
+                pending = cur if (cur.notation is None
+                                  or DANGLING.search(cur.cue)) else None
                 pending_wrapped = full
                 continue
             if cur is None:
                 continue
             m = ASSIGN.match(line)
             if m:
-                rung = int(m.group(1))
+                tok = m.group(1).lower()
+                rung = int(tok) if tok.isdigit() else ASSIGN_WORDS[tok]
+                tail = m.group(2).strip()
+                if tail:
+                    if cur.full_rung is None:
+                        cur.full_rung = rung
+                    where = (cur.answers if rung >= cur.full_rung
+                             else cur.rungs)
+                    for part in tail.split('+'):
+                        part = ' '.join(part.split())
+                        if part:
+                            where.append((part, None if where is cur.answers
+                                          else rung))
                 continue
             if NOTE.match(line):
+                # A note wraps like anything else, and its continuation has no
+                # bullet: "Accept details about the camp (e.g. 'for 21 days')
+                # but do not award marks if the same information" / "is used to
+                # answer more than one question." Welded onto the answer above
+                # it, that sentence shipped as part of a marking point and the
+                # card was dropped for quoting what the scheme never said.
+                in_note = True
                 continue
-            for txt, marks in self._answers_on(groups):
+            if in_note and not BULLET.match(groups[0]) and len(groups) == 1:
+                continue
+            in_note = False
+            # The rest of a question that wrapped onto its own row, printed
+            # under a head that already carried its tariff: 2024 Higher sets
+            # "2. (iv) How did Lyonka manage to get the cat out from the hole
+            # under the house?" with "2x2 marks" beside it and "Give two
+            # details." on the next row. Read as an answer it offered the
+            # student the instruction as something to have written.
+            if not cur.answers and not BULLET.match(groups[0]) \
+                    and INSTRUCTION_TAIL.match(line) and len(groups) == 1:
+                cur.cue = f'{cur.cue} {line}'.strip()
+                continue
+            # The Higher summary question states its answers as ONE
+            # plus-joined run under "Main points:", and the run wraps over
+            # four or five printed lines. Split line by line it became "he
+            # was able to do big sums in his" and "head + people called him
+            # 'Calculator boy' + …" — sentences cut in half at the measure.
+            m = MAIN_POINTS.match(line)
+            if m or cur.plus is not None:
+                if m:
+                    self._flush_plus(cur)
+                    cur.plus = m.group(2).strip()
+                else:
+                    cur.plus = f'{cur.plus} {line}'.strip()
+                continue
+            answers = self._answers_on(groups)
+            # A line with no bullet, in an ask whose answers ARE bulleted, is
+            # the rest of the answer above it and not another answer. The 2024
+            # Higher summary question prints "she was paid 400 roubles / she
+            # was happy with the amount of money received (400" and, on the
+            # next line, "roubles)"; read as its own answer that closing
+            # bracket shipped as something a student could claim.
+            if (cur.bulleted and answers and not BULLET.match(groups[0])
+                    and cur.answers):
+                text, _m = cur.answers[-1]
+                cur.answers[-1] = (f'{text} {" ".join(a for a, _ in answers)}'
+                                   .strip(), _m)
+                continue
+            if BULLET.match(groups[0]):
+                cur.bulleted = True
+            for txt, marks in answers:
                 # A line under an "assign N marks:" heading, or one carrying
                 # its own smaller mark, is a RUNG — the same answer, shorter,
                 # worth less — and never an answer a card may offer in full.
@@ -551,6 +783,17 @@ class RuScheme:
                     cur.rungs.append((txt, marks))
                 else:
                     cur.answers.append((txt, marks))
+
+    @staticmethod
+    def _flush_plus(ask):
+        """The plus-joined run under "Main points:", cut into its answers."""
+        if ask is None or ask.plus is None:
+            return
+        for part in ask.plus.split('+'):
+            part = ' '.join(part.split())
+            if part:
+                ask.answers.append((part, None))
+        ask.plus = None
 
     def _unit_head(self, section, line, unit):
         if section == 'I':
@@ -628,6 +871,14 @@ class RuScheme:
         m = MAIN_POINTS.match(' '.join(groups))
         if m:
             return [(p.strip(), None) for p in m.group(2).split('+') if p.strip()]
+        # The marks column is a column: "• Cheap" and "1 mark" are two
+        # printed groups of ONE row, and read as two answers the second
+        # offered a student "1 mark" as something to have written.
+        groups = list(groups)
+        row_marks = None
+        if len(groups) > 1 and MARKS_ONLY_GROUP.fullmatch(groups[-1].strip()):
+            row_marks = int(MARKS_ONLY_GROUP.fullmatch(
+                groups.pop().strip()).group(1))
         out = []
         for chunk in [c for g in groups for c in SPLIT_BULLET.split(g)]:
             chunk = chunk.strip()
@@ -640,9 +891,15 @@ class RuScheme:
                 chunk = chunk[:t.start()].strip()
             if chunk:
                 out.append((chunk, marks))
+        if row_marks is not None and out:
+            out[-1] = (out[-1][0], out[-1][1] if out[-1][1] is not None
+                       else row_marks)
         return out
 
     # -- pricing ------------------------------------------------------------
+    def _finish(self):
+        self._flush_plus(self.asks[-1] if self.asks else None)
+
     def _price(self):
         for ask in self.asks:
             self._price_one(ask)
@@ -650,6 +907,18 @@ class RuScheme:
     def _price_one(self, ask):
         rate = self.unit_rates.get(ask.unit)
         want = self._count_wanted(ask.cue)
+        split = self.unit_split.get(ask.unit)
+        if split:
+            claim, per, content, disc = split
+            if want is not None and want != claim:
+                ask.fault = (f'the unit pays {claim} details and this ask asks '
+                             f'for {want}')
+                return
+            ask.claim, ask.per = claim, per
+            ask.content, ask.discretionary = content, disc
+            m = TARIFF.search(ask.notation or '')
+            ask.total = int(m.group(1)) if m else content + disc
+            return
         if ask.notation:
             m = TARIFF.search(ask.notation)
             n, per = int(m.group(1)), m.group(2)
@@ -679,8 +948,16 @@ class RuScheme:
 
     @staticmethod
     def _count_wanted(cue):
-        m = COUNT_WORD.search(cue or '')
-        return COUNTS[m.group(1).lower()] if m else None
+        """How many answers the ask asks for, ADDED where it asks twice.
+
+        "Name two advantages and two disadvantages of being bilingual" wants
+        four details, not two, and reading only the first number reported the
+        2025 Higher summary question as one whose own count contradicted the
+        rate its unit prints — a fault where the SEC and the reader in fact
+        agree.
+        """
+        found = [COUNTS[m.group(1).lower()] for m in COUNT_WORD.finditer(cue or '')]
+        return sum(found) if found else None
 
     # -- the checksum -------------------------------------------------------
     # Ordinary's two retrieval texts are priced 30 marks EACH, and six of
@@ -714,6 +991,31 @@ class RuScheme:
             out.append((unit, self.expected_total(unit), got, len(asks)))
         return out
 
+    # -- the task questions --------------------------------------------------
+    def tasks(self, unit):
+        """The alternatives one task question prints, with what each states.
+
+        A task question — language awareness, cultural awareness — is not a
+        list of asks: it is one instruction over a printed TABLE or a printed
+        MENU, and the paper offers a choice of two of them under one number
+        ("Answer ONE of the following: Q. 1.2(i) or 1.2(ii)"). Each
+        alternative comes back as what the scheme states for it and nothing
+        inferred: its instruction, its printed tariff, the prompt/answer pairs
+        of its table, the options of its menu, and whether the scheme closed
+        the menu ("This list is not exhaustive").
+        """
+        out = []
+        current = _Task()
+        for _page, groups in self.unit_lines.get(unit, []):
+            line = ' '.join(groups)
+            if OR_LINE.match(line):
+                out.append(current)
+                current = _Task()
+                continue
+            current.feed(groups, line)
+        out.append(current)
+        return [t for t in out if t.instruction or t.pairs or t.options]
+
     def reading(self):
         return [a for a in self.asks if a.unit in READING_UNITS]
 
@@ -728,6 +1030,13 @@ BAND_UNITS = {'SE', 'GW', 'SA', 'EW'}
 # A cue that has reached the end of its own sentence. Used to decide whether
 # the next printed line continues a wrapped question or opens its answers.
 CLOSED = re.compile(r'[.?:!\u2026]\s*$')
+# A cue whose last word is the start of a phrase the next line finishes:
+# "Give four" wants "details.", and "Name" wants its object.
+INSTRUCTION_TAIL = re.compile(
+    r'^(?:Give|Name|State|List|Describe|Explain|Answer|Write|Indicate)\b', re.I)
+DANGLING = re.compile(
+    r'\b(?:give|name|state|list|one|two|three|four|five|six|seven|eight|'
+    r'nine|ten)\s*$', re.I)
 
 
 def _split_tariff(line):

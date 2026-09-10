@@ -111,7 +111,7 @@ OL_II = {'SA', 'EW'}
 
 # Page furniture the SEC prints on every page.
 FURNITURE = re.compile(
-    r'^(?:Leaving Certificate Examination|Scr[úu]d[úu] na hArdteistim|'
+    r'^(?:Leaving Certificate\b|Scr[úu]d[úu] na hArdteistim|'
     r'Russian\s*[–-]|R[úu]isis\s*[–-]|Page \d+$|\d{1,3}$|_+$|'
     r'Do not write|N[áa] scr[íi]obh)', re.I)
 
@@ -121,6 +121,20 @@ FURNITURE = re.compile(
 # only the first of the pair carries the Q.
 CHOICE_HEAD = re.compile(
     rf'(?:Q(?:uestion)?\s*\.?\s*)?\b\d\s*\.\s*\d\s*\(\s*({ROMAN})\s*\)', re.I)
+
+IRISH_HEAD = re.compile(r'^(?:Ceist|Roinn)\s*\d', re.I)
+ENGLISH_HEAD = re.compile(r'\b(?:Question|Section)\s*\d')
+LATIN_RUN = re.compile(r'[A-Za-z]{3}')
+CYRILLIC = re.compile(r'[\u0400-\u04FF]')
+RULE_LINE = re.compile(r'^[_\s.\u2026]+$')
+# The paper's own rubric above a choice of tasks, which names both of them and
+# answers neither: "Answer ONE of the following: Q. 1.2(i) or 1.2(ii)".
+TASK_MARKER = re.compile(
+    rf'^(?:Q(?:uestion)?\s*\.?\s*)?\d\s*\.\s*\d\s*\(\s*{ROMAN}\s*\)\s*', re.I)
+RUBRIC = re.compile(r'^(?:Answer\s+ONE\b|Freagair\s+ceist\b)', re.I)
+UNIT_HEAD_LINE = re.compile(
+    r'^(?:Question|Section|Answer\s+ONE|Language\s+Awareness|'
+    r'Cultural\s+Awareness)\b', re.I)
 
 AURAL_SECTION = re.compile(r'^(?:SECTION|ROINN)\s+(IV|III|II|I)\b', re.I)
 AURAL_SEGMENT = re.compile(r'^(?:Segment|M[íi]r)\s*(\d{1,2})\b', re.I)
@@ -143,6 +157,16 @@ def _deweld(text):
     this ("2.(i) Tabhair sonra amháin faoi na cábáin ar an 2.(i) Give one
     detail about the cabins on the").
     """
+    # The Irish head and the English head of the same question, fused: 2023
+    # Higher sets "Ceist 3. Dioscúrsa Leanúnach a Struchtúrú Question 3.
+    # Structuring Extended Discourse" as one printed group, and the English
+    # head is what names the unit. Left fused, that sitting's whole
+    # structuring-discourse question was missing from the census.
+    m = IRISH_HEAD.match(text)
+    if m:
+        eng = ENGLISH_HEAD.search(text, m.end())
+        if eng:
+            return [text[:eng.start()].rstrip(), text[eng.start():]]
     m = MARKER_START.match(text)
     if not m:
         return [text]
@@ -267,13 +291,13 @@ class RuPaper:
             # pattern anchored at the start of the joined row never sees the
             # English one at all — Ordinary's Section II heads then never
             # fired and its comprehension ran to the back cover.
-            for _x, _s, t in groups:
+            for _x, _s, t in _dewelded(groups):
                 if SECTION_II.match(t):
                     section, unit = 'II', None
                     cur, cur_item = {}, {}
                 elif SECTION_I.match(t) and section != 'II':
                     section = 'I'
-            for _x, _side, text in groups:
+            for _x, _side, text in _dewelded(groups):
                 hit = self._head(section, text, unit)
                 if hit:
                     unit = hit
@@ -404,6 +428,64 @@ class RuPaper:
                 if r not in found:
                     found.append(r)
         return found
+
+    def instruction(self, unit, roman, cue=None):
+        """The printed instruction of one task question, from the PAPER.
+
+        The marking scheme reprints it, but a question is lifted from the
+        paper: this finds the English column's own words. A lettered
+        alternative starts at its own head ("Q. 1.2(i) Supply the
+        infinitive/dictionary form of the"); a task that prints no
+        alternatives starts at the first English sentence under the question's
+        head. Either way the run stops at the first line of the table or menu
+        beneath it, which is Russian.
+        """
+        rows = [t for t in self._english_rows(unit)
+                if not RUBRIC.match(t) and not RULE_LINE.match(t)]
+        start = None
+        if cue:
+            want = bag(cue)
+            ranked = sorted(((score(want, bag(t)), -i, i)
+                             for i, t in enumerate(rows)), reverse=True)
+            if ranked and ranked[0][0] >= 0.4:
+                start = ranked[0][2]
+        if start is None and roman:
+            for i, text in enumerate(rows):
+                m = CHOICE_HEAD.search(text)
+                if m and m.group(1).lower() == roman and LATIN_RUN.search(text):
+                    start = i
+                    break
+        if start is None:
+            return None
+        out = [rows[start]]
+        for text in rows[start + 1:start + 5]:
+            if CYRILLIC.search(text) or not LATIN_RUN.search(text) \
+                    or CHOICE_HEAD.search(text) or UNIT_HEAD_LINE.match(text) \
+                    or MARKER_START.match(text):
+                break
+            out.append(text)
+        # The printed marker is the paper's address for the alternative, not
+        # part of its question: the card cites it in questionRef and showing
+        # "Q. 1.2(i)" again at the head of the question text says it twice.
+        text = ' '.join(' '.join(out).split())
+        return TASK_MARKER.sub('', text, count=1).strip()
+
+    def _english_rows(self, unit):
+        """The unit's printed rows, English column first where there is one."""
+        split = self._split(self.path)
+        out = []
+        pages = self.unit_pages.get(unit, [])
+        if not pages:
+            return out
+        for pno, groups in _rows(self.path, pages[0] - 1, pages[-1],
+                                 marker=MARKER_START, fallback_split=split):
+            right = [t for _x, side, t in _dewelded(groups) if side == 'R']
+            wide = [t for x, _s, t in _dewelded(groups)
+                    if x >= (split or 0) and t.strip()]
+            for text in (right or wide):
+                if text.strip() and not FURNITURE.match(text):
+                    out.append(text.strip())
+        return out
 
     def unit_items(self, unit):
         """The question numbers a unit prints in its English column."""

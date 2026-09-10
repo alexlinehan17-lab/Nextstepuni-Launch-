@@ -58,6 +58,8 @@ import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/hi
 import { CARDS as SPANISH_ORDINARY } from '../components/MarkBank/cards/spanish/ordinary';
 import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
 import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
+import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
+import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
@@ -489,6 +491,14 @@ const decks = [
    * — nothing removed and nothing replaced. */
   ['spanish:higher', SPANISH_HIGHER, 204, '2dc8d8c0e05c628ecf86b1d0fe8cd99a78460d37d47009606e3005ee8dfce5bb'],
   ['spanish:ordinary', SPANISH_ORDINARY, 143, 'f42cb5ebc5dbe2a1e959e5a71c4a72d3864eabcdc84789481716a2e98c7f6be1'],
+  /* Russian is the fifth modern language and the twenty-second subject. Every
+   * card is new; none replaces anything. Like French and Italian, every
+   * reading card carries the printed matter it is answered from, bound to the
+   * pages of the question paper it was printed on; unlike them, fourteen of
+   * its cards are answered in RUSSIAN rather than in English or Irish and say
+   * so on their face. */
+  ['russian:higher', RUSSIAN_HIGHER, 83, '28a15e33be6d11b7077181773cc7611e2681f8c34c057fa8361077b386491392'],
+  ['russian:ordinary', RUSSIAN_ORDINARY, 116, '7a1246357f052dda6f3e337e5c05b1a7df6ce1ec213f8d3eb9cb648576fa8e49'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -503,10 +513,11 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // 10,495 before this session, plus nine subjects carded in three waves:
+    // 10,495 before this session, plus ten subjects carded in four waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
-    // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_058);
+    // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
+    // Russian 199.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(14_257);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -529,6 +540,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('applied-maths:')
         && !name.startsWith('spanish:')
         && !name.startsWith('italian:')
+        && !name.startsWith('russian:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);

@@ -66,6 +66,8 @@ const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applie
 if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
 const spanishCurriculum = CURRICULUM.find(subject => subject.id === 'spanish');
 if (!spanishCurriculum) throw new Error('Canonical Spanish curriculum is missing');
+const russianCurriculum = CURRICULUM.find(subject => subject.id === 'russian');
+if (!russianCurriculum) throw new Error('Canonical Russian curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -1045,6 +1047,32 @@ export const GERMAN_STRANDS: StrandRef[] = germanCurriculum.strands.map((strand,
  * pieces at Ordinary — which is exactly how the paper divides its sections,
  * so a card is filed by the section it was printed in.
  */
+/**
+ * Russian's own published taxonomy, read from the canonical curriculum rather
+ * than restated here. Its fourth strand, "Written Paper — Task Types", names
+ * the paper's own questions one for one — comprehension, summary in English,
+ * language awareness, structuring discourse, information retrieval, mix and
+ * match, short answers, grammar, short essay, guided writing — which is why a
+ * card is filed by the question it was printed under.
+ *
+ * Mark Bank cards reach four of those task types, because the rest of the
+ * examination is the oral, the aural and the written production: the scheme
+ * prices the essay and the guided writing with a content-and-expression GRID,
+ * and the listening asks can only be answered from the recording. The whole
+ * taxonomy still ships: a student browsing Russian should see the shape of
+ * their course, not only the part that is carded.
+ */
+export const RUSSIAN_STRANDS: StrandRef[] = russianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1188,6 +1216,7 @@ export const SUBJECTS = [
   { id: 'applied-maths', title: 'Applied Maths', strands: APPLIED_MATHS_STRANDS, spec: 'specification examined from 2023' },
   { id: 'spanish', title: 'Spanish', strands: SPANISH_STRANDS, spec: 'Leaving Certificate Spanish syllabus' },
   { id: 'italian', title: 'Italian', strands: ITALIAN_STRANDS, spec: 'Leaving Certificate Italian syllabus' },
+  { id: 'russian', title: 'Russian', strands: RUSSIAN_STRANDS, spec: 'Leaving Certificate Russian syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1478,6 +1507,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   italian: {
     higher: () => import('./cards/italian/higher'),
     ordinary: () => import('./cards/italian/ordinary'),
+  },
+  russian: {
+    higher: () => import('./cards/russian/higher'),
+    ordinary: () => import('./cards/russian/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),

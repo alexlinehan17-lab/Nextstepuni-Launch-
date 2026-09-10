@@ -329,6 +329,21 @@
     },
     "refsHash": "608205b9e7e5d4b8"
   },
+  "russian": {
+    "cards": 199,
+    "contentHash": "03c94a04a0fd121a",
+    "coveragePct": 100.0,
+    "covered": 199,
+    "excluded": 280,
+    "leaves": 479,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "7a5c7fc1aab05875"
+    },
+    "refsHash": "593a9b48a2ff7170"
+  },
   "spanish": {
     "cards": 347,
     "contentHash": "67db6091348bf049",

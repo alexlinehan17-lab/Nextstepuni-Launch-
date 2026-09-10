@@ -93,5 +93,9 @@
  "italian": {
   "higher": 172,
   "ordinary": 178
+ },
+ "russian": {
+  "higher": 83,
+  "ordinary": 116
  }
 }

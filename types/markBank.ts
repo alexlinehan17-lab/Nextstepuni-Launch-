@@ -308,10 +308,19 @@ export interface SecCardBase extends CardBase {
    *  comprehension numbering its questions from 1, and Angewandte Grammatik
    *  sets a further pair of alternatives, so a bare question number addresses
    *  nothing and the section carries the address exactly as it does in
-   *  Business. */
+   *  Business.
+   *
+   *  Russian goes one step further and names the printed QUESTION, because it
+   *  numbers "Question 1" three times in one sitting — once in Section I, once
+   *  in Section II and once in the Listening Comprehension Test. C1 and C2 are
+   *  Higher's two comprehensions, LA1, LA2 and CA1 its language- and
+   *  cultural-awareness questions, IR1 and IR2 Ordinary's two retrieval texts
+   *  and CD its comprehension. See UNIT_NAME in ru_scheme.py, which is where
+   *  the same tokens are defined for the readers. */
   section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
   | '1' | '2' | '3'
-  | 'T1' | 'T2' | 'T3' | 'AG';
+  | 'T1' | 'T2' | 'T3' | 'AG'
+  | 'C1' | 'C2' | 'CD' | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1';
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
   /** Optional lead-in the paper prints before the question proper. */
@@ -701,7 +710,16 @@ export const rowCapFor = (kind: TariffModel['kind']): number =>
 // the 2022 Higher TEXT I theme question prints twenty-six accepted points
 // for ten marks and its 1(a) prints nine for six, so the section tokens the
 // German deck cites — TEXT I, II and III — belong here too.
-const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3']);
+// Russian's reading and language-awareness questions are long questions whose
+// PARTS are small: the 2025 Higher summary question prints seventeen accepted
+// points for its eight content marks, and the semantic-field task prints
+// eighteen Russian words for ten. Its section tokens name the printed
+// question rather than a letter (see UNIT_NAME in ru_scheme.py), so they
+// belong here too: C1 and C2 are Higher's two comprehensions, IR1 and IR2
+// Ordinary's retrieval texts, CD its comprehension, and LA1/LA2/CA1 the
+// language- and cultural-awareness tasks.
+const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3',
+  'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1']);
 export const optionCapFor = (section: string): number =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 

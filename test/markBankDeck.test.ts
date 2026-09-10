@@ -69,6 +69,8 @@ import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/high
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
 import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
+import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
+import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
 import { CARDS as TECH_HIGHER } from '../components/MarkBank/cards/technology/higher';
 import { CARDS as TECH_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
@@ -95,6 +97,7 @@ const SAMPLE_CARDS = [
   ...RE_HIGHER, ...RE_ORDINARY,
   ...HISTORY_HIGHER, ...HISTORY_ORDINARY,
   ...ITALIAN_HIGHER, ...ITALIAN_ORDINARY,
+  ...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -487,6 +490,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['german', 'ordinary', GERMAN_ORDINARY],
     ['italian', 'higher', ITALIAN_HIGHER],
     ['italian', 'ordinary', ITALIAN_ORDINARY],
+    ['russian', 'higher', RUSSIAN_HIGHER],
+    ['russian', 'ordinary', RUSSIAN_ORDINARY],
     ['applied-maths', 'higher', AM_HIGHER],
     ['applied-maths', 'ordinary', AM_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
@@ -575,6 +580,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       // (curriculum.ts -> curriculumRegistry.ts), as French does, so its ids
       // carry the subject's own name rather than an abbreviation.
       spanish: 'spanish-',
+      // Russian files its cards under the published Russian taxonomy itself
+      // (curriculum.ts), as French does, so its ids carry the subject's own
+      // name rather than an abbreviation.
+      russian: 'russian-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];
