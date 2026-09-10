@@ -159,6 +159,8 @@ const SUBJECTS = {
     specVersion: 'lc-religious-education-2003',
     specNote: "Cards are tagged to the syllabus's own ten sections, A to J, which are the\n * sections the paper prints. A candidate answers Section A, two of B-D and one or\n * two of E-J; every section in the corpus is carded at both levels.",
     figureDir: 'public/exam-figures/religious-education',
+    blocked: new Set(),
+  },
   lcvp: {
     title: 'Link Modules',
     /* The LCVP programme statement, still examined: Life, Community and Work
