@@ -14,6 +14,21 @@
     },
     "refsHash": "967a2d72ff0648b1"
   },
+  "applied-maths": {
+    "cards": 275,
+    "contentHash": "3583d52f25388afa",
+    "coveragePct": 67.9,
+    "covered": 286,
+    "excluded": 52,
+    "leaves": 498,
+    "open": 160,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "878e72543b3b249c"
+    },
+    "refsHash": "0146204025df9286"
+  },
   "art": {
     "cards": 462,
     "contentHash": "f84ca9f2c3b181ad",
@@ -147,37 +162,22 @@
       "count": 20,
       "hash": "5a9e0ab3f863aa4f"
     },
-    "refsHash": "a4cecb0559e11239",
-    "french": {
-      "cards": 260,
-      "contentHash": "a89444528300f8db",
-      "coveragePct": 100.0,
-      "covered": 275,
-      "excluded": 276,
-      "leaves": 551,
-      "open": 0,
-      "orphans": 0,
-      "papers": {
-        "count": 20,
-        "hash": "197572582035a3af"
-      },
-      "refsHash": "eb02f6789c4f99c4"
+    "refsHash": "9d6d1eb35ccbe04d"
+  },
+  "french": {
+    "cards": 260,
+    "contentHash": "a89444528300f8db",
+    "coveragePct": 100.0,
+    "covered": 275,
+    "excluded": 276,
+    "leaves": 551,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "197572582035a3af"
     },
-    "geography": {
-      "cards": 754,
-      "contentHash": "845a31914f2d9854",
-      "coveragePct": 100.0,
-      "covered": 563,
-      "excluded": 85,
-      "leaves": 648,
-      "open": 0,
-      "orphans": 0,
-      "papers": {
-        "count": 24,
-        "hash": "7d40addba29edb98"
-      },
-      "refsHash": "a4cecb0559e11239"
-    }
+    "refsHash": "eb02f6789c4f99c4"
   },
   "geography": {
     "cards": 754,

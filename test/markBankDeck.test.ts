@@ -67,6 +67,8 @@ import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/high
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
 import { CARDS as TECH_HIGHER } from '../components/MarkBank/cards/technology/higher';
 import { CARDS as TECH_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
+import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
+import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -476,6 +478,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['technology', 'ordinary', TECH_ORDINARY],
     ['french', 'higher', FRENCH_HIGHER],
     ['french', 'ordinary', FRENCH_ORDINARY],
+    ['applied-maths', 'higher', AM_HIGHER],
+    ['applied-maths', 'ordinary', AM_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -547,6 +551,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       // (curriculum.ts -> curriculumRegistry.ts), so its ids carry the
       // subject's own name rather than an abbreviation.
       french: 'french-',
+      // Applied Maths files against the CANONICAL curriculum's own ids, which
+      // are 'applied-mathematics-<strand>-<topic>' — the subject id in the
+      // deck is the SEC's shorter name for the same subject.
+      'applied-maths': 'applied-mathematics-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

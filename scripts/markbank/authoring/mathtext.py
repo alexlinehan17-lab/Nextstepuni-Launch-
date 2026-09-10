@@ -189,17 +189,101 @@ BAR_MAX_HEIGHT, BAR_MIN_WIDTH, BAR_MAX_WIDTH = 3.0, 4.0, 140.0
 REACH, SAME_COLUMN, GRID_MIN_WIDTH, SAME_LINE, LINE_TOL = 16.0, 2.0, 25.0, 6.0, 3.5
 
 
+_CHARCACHE = {}
+
+
+def _chars(page):
+    """[(char, bbox)] for every printed glyph on the page."""
+    key = (id(page.parent), page.number)
+    if key not in _CHARCACHE:
+        out = []
+        for b in page.get_text('rawdict')['blocks']:
+            for ln in b.get('lines', []):
+                for sp in ln.get('spans', []):
+                    for c in sp['chars']:
+                        if c['c'].strip():
+                            out.append((c['c'], c['bbox']))
+        _CHARCACHE[key] = out
+    return _CHARCACHE[key]
+
+
+def _is_notation_rule(page, r):
+    """A thin rule that is NOT a fraction bar.
+
+    Three of them, all found by reading what the schemes actually draw:
+
+      * a STRIKETHROUGH, drawn THROUGH the words it cancels — the Applied
+        Maths scheme crosses out the edges Kruskal's algorithm rejects,
+        "|OA| = 62";
+      * an UNDERLINE, drawn along the baseline of a run of words — the same
+        scheme heads its two alternative solutions "Kruskal's algorithm" and
+        "Prim's algorithm" that way;
+      * a RADICAL's overbar, drawn over the expression under the sqrt sign,
+        with the sqrt glyph itself ending where the bar begins.
+
+    Each one was spliced as a fraction: the first two welded two rows of a
+    two-column table into one line, and the third turned "t = 5 +- sqrt(2) s"
+    and the row above it into one unreadable string.
+
+    What separates each from a fraction bar is measured, not assumed. A
+    strikethrough crosses a glyph's MIDDLE; a fraction bar sits at the very
+    edge of the glyph above or below it, which is why the test is on the
+    distance from the glyph's centre and not on its bounding box (a bounding
+    box test threw away a quarter of the fraction bars in the Maths schemes:
+    a tight "1/4" draws its bar inside the denominator's box). An underline
+    runs beneath SEVERAL glyphs of one line at once, which no fraction bar
+    does — a fraction's denominator sits below the bar, not on it.
+    """
+    centre = (r.y0 + r.y1) / 2
+    above = []
+    for ch, bb in _chars(page):
+        if bb[0] >= r.x1 or bb[2] <= r.x0:
+            if ch in '\u221a\u0da5\u0da9' and abs(bb[2] - r.x0) <= 3.5 \
+                    and bb[1] - 2 <= centre <= bb[3] + 2:
+                return True                  # a radical's own overbar
+            continue
+        height = bb[3] - bb[1]
+        if height <= 0:
+            continue
+        # Struck through. Restricted to letters and digits: a stretched
+        # bracket's glyph box spans a whole fraction, so the bar crosses its
+        # middle by construction, and counting those threw away real bars.
+        # Demangled first: a stretched bracket is stored as an Ethiopic
+        # syllable, and Python calls that alphanumeric — so the raw test let
+        # every tall bracket count as a struck letter and threw away three
+        # hundred of the Maths schemes' own fraction bars.
+        plain = demangle(ch)
+        if (plain.isascii() and plain.isalnum() and height <= 20
+                and abs(centre - (bb[1] + bb[3]) / 2) <= 0.3 * height):
+            return True
+        # An underline is drawn ON the baseline, which sits a little ABOVE the
+        # glyph box's foot -- the box carries the font's descent even for a
+        # word with no descender in it, so "Kruskal's algorithm" is underlined
+        # 1.5 points inside its own box.
+        if -4.0 <= centre - bb[3] <= 3.0:
+            above.append((bb[0], ch))        # sitting on this glyph's baseline
+    # Underlined. A numerator sits on the bar too, so what marks an underline
+    # is that what sits on it is a WORD — four letters running together, which
+    # a numerator is not ("sin 2a", "84 + g", "2f"). The Applied Maths scheme
+    # heads its alternative solutions "Kruskal's algorithm" and "Prim's
+    # algorithm" this way and the splice welded the two columns under them
+    # into one line.
+    word = ''.join(demangle(c) for _x, c in sorted(above))
+    return bool(re.search(r'[A-Za-z]{6}', word))
+
+
 def _bars(page):
     """Thin rules that are not part of a grid: a table redraws its column
     border at every row, a fraction bar is drawn once."""
     rules = [d['rect'] for d in page.get_drawings()
              if d['rect'].height <= BAR_MAX_HEIGHT
              and BAR_MIN_WIDTH <= d['rect'].width <= BAR_MAX_WIDTH]
-    return [r for r in rules
-            if not (r.width >= GRID_MIN_WIDTH and any(
-                o is not r and abs(o.y0 - r.y0) > 2
-                and abs(o.x0 - r.x0) <= SAME_COLUMN
-                and abs(o.x1 - r.x1) <= SAME_COLUMN for o in rules))]
+    rules = [r for r in rules
+             if not (r.width >= GRID_MIN_WIDTH and any(
+                 o is not r and abs(o.y0 - r.y0) > 2
+                 and abs(o.x0 - r.x0) <= SAME_COLUMN
+                 and abs(o.x1 - r.x1) <= SAME_COLUMN for o in rules))]
+    return [r for r in rules if not _is_notation_rule(page, r)]
 
 
 def _mid(w):
@@ -223,8 +307,13 @@ def _close(cur):
     return (x0, y0, x1, y1, subscripts(superscripts(''.join(t for _, t in cur))))
 
 
-def words(page):
+def words(page, fix=None):
     """The page's words, each already read the way line_text() reads a line.
+
+    `fix` is an optional {(origin x, origin y): character} table for a font
+    whose ToUnicode map names the wrong LETTER — see am_glyphs.py, which
+    derives one from the glyph ids. Optional because only Applied Maths has
+    been measured to need it; passing nothing reads exactly as before.
 
     PyMuPDF's own get_text('words') carries no font size, so an exponent inside
     a fraction was flattened -- the scheme's "(28^2 + 4^2 - 30^2)/(2(28)(4))"
@@ -234,8 +323,8 @@ def words(page):
     splice reads it unchanged.
     """
     out = []
-    for b in page.get_text('rawdict')['blocks']:
-        for ln in b.get('lines', []):
+    for bi, b in enumerate(page.get_text('rawdict')['blocks']):
+        for li, ln in enumerate(b.get('lines', [])):
             weight = {}
             for sp in ln.get('spans', []):
                 for ch in sp['chars']:
@@ -245,18 +334,25 @@ def words(page):
                 continue
             base = max(weight, key=lambda k: (weight[k], k))
             cur, prev_y, prev_x1 = [], None, None
-            for sp in ln.get('spans', []):
-                for ch in sp['chars']:
+            for si, sp in enumerate(ln.get('spans', [])):
+                for ci, ch in enumerate(sp['chars']):
                     box = ch['bbox']
-                    if not ch['c'].strip() or (prev_x1 is not None
-                                               and box[0] - prev_x1 > 1.2):
+                    here = ch['c']
+                    if fix:
+                        key = (bi, li, si, ci)
+                        if key in fix:
+                            here = fix[key]
+                            if here is None:
+                                continue   # a zero-advance echo — am_glyphs
+                    if not here.strip() or (prev_x1 is not None
+                                            and box[0] - prev_x1 > 1.2):
                         if cur:
                             out.append(_close(cur))
                             cur = []
                     prev_x1 = box[2]
-                    if not ch['c'].strip():
+                    if not here.strip():
                         continue
-                    t = demangle(ch['c'])
+                    t = demangle(here)
                     tiny = sp['size'] <= base - 1.5
                     small = tiny and prev_y is not None
                     # A real exponent or index sits a few points off its base.
@@ -282,11 +378,11 @@ def words(page):
     return out
 
 
-def fractions(page, cut=None):
+def fractions(page, cut=None, fix=None):
     """[(x0, top, bottom, text)] -- each stacked fraction read back into a line."""
     if cut is None:
         cut = reader_cut(page)
-    found = [w for w in words(page) if w[4].strip()]
+    found = [w for w in words(page, fix) if w[4].strip()]
     out, band = [], []
     for bar in sorted(_bars(page), key=lambda r: (r.y0, r.x0)) + [None]:
         if band and (bar is None or bar.y0 - band[0].y0 > SAME_LINE):

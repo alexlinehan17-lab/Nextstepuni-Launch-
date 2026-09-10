@@ -61,6 +61,12 @@ SUBJECTS = {
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
     'maths': {'mode': 'papers', 'papers': {'100': 'Paper 1', '200': 'Paper 2'}},
+    # One booklet per sitting, questions 1..10 running on, both sides of the
+    # 2023 syllabus break. The old papers set 'Question 1' as a bare '1.' in a
+    # left gutter and the new ones head it 'Question 1' in the answer booklet;
+    # both are QHEAD's own two spellings, so the generic merged walker reads
+    # them once the subset fonts are repaired (see MANGLED_PAPERS).
+    'applied-maths': {'mode': 'merged'},
     # English choices and holistic subparts cannot be represented by the
     # generic leaf parser. `english_census.py` is its paper-only denominator;
     # this entry keeps it inside every `--all` coverage run.
@@ -1055,7 +1061,7 @@ def census_subject(subject):
                 if cfg.get('walker') == 'history':
                     parts, texts, files, marks, cover = census_history(
                         subject, year, level, comp)
-                if cfg.get('walker') == 'lang':
+                elif cfg.get('walker') == 'lang':
                     parts, texts, files, P_, S_, claimed_ = census_lang(
                         subject, year, level)
                 elif cfg.get('walker') == 're':

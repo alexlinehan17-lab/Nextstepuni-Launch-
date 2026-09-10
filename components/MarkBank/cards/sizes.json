@@ -77,5 +77,9 @@
  "french": {
   "higher": 110,
   "ordinary": 150
+ },
+ "applied-maths": {
+  "higher": 130,
+  "ordinary": 145
  }
 }

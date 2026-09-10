@@ -52,6 +52,8 @@ import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technol
 import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
+import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 const decks = [
@@ -454,6 +456,12 @@ const decks = [
    * nothing removed and nothing replaced. */
   ['french:higher', FRENCH_HIGHER, 110, '086e17874bb4922e9b80d358f4a666c6b3383c04004f21371614476fb91df9fc'],
   ['french:ordinary', FRENCH_ORDINARY, 150, 'aab034b970b7b0313a2bb4f16da64542b2fce2482b0299e71c10ea22b111581e'],
+  /* Applied Maths is the seventeenth subject and the first to straddle a
+   * syllabus break: 2021-2022 are the outgoing mechanics course and 2023-2025
+   * the specification first examined in 2023. Enrolled explicitly so a later
+   * regeneration cannot silently omit or replace any of its cards. */
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 130, '5c8f36ba0f4214eee4269d22bcd3d20ada53f1a33820c36c0e873fe5b5afac72'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 145, '1e39bd494a3304e1ec0b1153834dba6d7bf186d7f90ec05055024d40b869b570'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -468,13 +476,10 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // Religious Education 288, LCVP 314, Technology 716 — and then History,
-    // 749 against the 1,430 asks its twenty papers print.
-    // 10,495 before this session, plus six new subjects carded in two waves:
-    // Religious Education 288, LCVP 314, Technology 716, History 749
-    // and French 260.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_822);
-    // and Technology 716; then French, the seventeenth subject, adds 260.
+    // 10,495 before this session, plus six subjects carded in two waves:
+    // Religious Education 288, LCVP 314, Technology 716, History 749,
+    // French 260 and Applied Maths 275.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(13_097);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -491,7 +496,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('lcvp:')
         && !name.startsWith('technology:')
         && !name.startsWith('history:')
-        && !name.startsWith('french:'))
+        && !name.startsWith('french:')
+        && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

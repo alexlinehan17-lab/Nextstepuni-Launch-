@@ -196,6 +196,21 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/french',
     blocked: new Set(),
   },
+  'applied-maths': {
+    title: 'Applied Maths',
+    /* The specification first examined in 2023 — dated because it is verified
+     * against the papers themselves: the 2023-2025 booklets head themselves
+     * "Applied Mathematics – M32 2025" and set the graph theory, critical-path
+     * analysis and difference equations the revised course added. The 2021 and
+     * 2022 papers are the OUTGOING syllabus, which the specification kept whole
+     * inside Strand 3, so both sides of the break tag against one taxonomy.
+     * See APPLIED_MATHS_STRANDS in components/MarkBank/deck.ts, which reads the
+     * four strands from the canonical curriculum. */
+    specVersion: 'lc-applied-mathematics-2021',
+    specNote: 'Cards are tagged to the four strands of the Applied Mathematics specification\n * first examined in 2023. The 2021 and 2022 papers were sat on the outgoing\n * mechanics syllabus, which Strand 3 of that specification contains whole.',
+    figureDir: 'public/exam-figures/applied-maths',
+    blocked: new Set(),
+  },
   'agricultural-science': {
     title: 'Agricultural Science',
     /* The NCCA specification published 2019 and first examined in 2021 — dated
@@ -277,7 +292,13 @@ function schemeFor(subjectId, card) {
  * and U+0152/U+0153 are the French OE ligature -- a letter of the language,
  * printed in 'sœur', 'cœur', 'nœud'. Refusing it dropped a correct French
  * card for containing a French letter. */
-const REAL = /[\u0152\u0153\u0370-\u03FF\u0302\u0305\u02B0-\u02FF]/;
+/* Characters inside BROKEN's range that a scheme really does print.
+ * Greek and the hat and bar were here already; the DOT and DOUBLE DOT are
+ * Newton's notation for a derivative — the 2022 Higher Applied Maths scheme
+ * sets "ẋ = A ω cos(ωt + ε)" and "ẍ = −A ω² sin(ωt + ε)" — and U+1D62-U+1D6A
+ * are the Unicode subscripts mathtext.subscripts() itself emits, so refusing
+ * them threw away a card for spelling v_r the way the reader spelled it. */
+const REAL = /[\u0152\u0153\u0370-\u03FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A]/;
 const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 /** Undo a subset font's broken ToUnicode map, using the table derived from the
  * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied

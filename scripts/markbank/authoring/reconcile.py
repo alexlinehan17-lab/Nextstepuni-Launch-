@@ -608,6 +608,9 @@ def baseline_write(results):
         # Two spaces, which is how the committed baseline is formatted. At
         # indent=1 a one-subject re-measure rewrote all 272 lines of the
         # file and buried the entry that actually moved.
+        # Two spaces, which is how the committed file is written: writing one
+        # reformatted all 270 lines of it and buried the subject that had
+        # actually been re-measured in a whole-file diff.
         json.dump(data, fh, indent=2, sort_keys=True)
         fh.write('\n')
     print(f'baseline written: {BASELINE}')

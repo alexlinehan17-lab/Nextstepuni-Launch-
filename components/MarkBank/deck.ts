@@ -58,6 +58,8 @@ const lcvpCurriculum = CURRICULUM.find(subject => subject.id === 'lcvp-link-modu
 if (!lcvpCurriculum) throw new Error('Canonical LCVP Link Modules curriculum is missing');
 const frenchCurriculum = CURRICULUM.find(subject => subject.id === 'french');
 if (!frenchCurriculum) throw new Error('Canonical French curriculum is missing');
+const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applied-mathematics');
+if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -1061,6 +1063,31 @@ export const HISTORY_STRANDS: StrandRef[] = [
   },
 ];
 
+/**
+ * Applied Mathematics: the four strands of the specification first examined in
+ * 2023, adapted from the canonical curriculum rather than retyped, for the
+ * reason the LCVP, English, Irish, Art and Geography strands are.
+ *
+ * The 2021 and 2022 papers were sat on the OUTGOING syllabus — pure mechanics —
+ * and their cards file here too, because Strand 3 is where the revised
+ * specification kept that course: relative velocity, projectiles, connected
+ * masses, collisions, circular motion, statics, hydrostatics, moments of
+ * inertia and simple harmonic motion are all named subtopics of it. One
+ * taxonomy across the break is what lets a student revising the current course
+ * still find the older papers' questions.
+ */
+export const APPLIED_MATHS_STRANDS: StrandRef[] = appliedMathsCurriculum.strands.map(
+  (strand, strandIndex) => ({
+    id: strand.id,
+    label: `Strand ${strandIndex + 1}`,
+    title: strand.name.replace(/^Strand \d+:\s*/, ''),
+    topics: strand.subtopics.map((topic, topicIndex) => ({
+      id: topic.id,
+      code: `${strandIndex + 1}.${topicIndex + 1}`,
+      title: topic.name,
+    })),
+  }));
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -1082,6 +1109,7 @@ export const SUBJECTS = [
   { id: 'technology', title: 'Technology', strands: TECHNOLOGY_STRANDS, spec: 'Leaving Certificate Technology syllabus' },
   { id: 'history', title: 'History', strands: HISTORY_STRANDS, spec: 'Leaving Certificate History syllabus' },
   { id: 'french', title: 'French', strands: FRENCH_STRANDS, spec: 'Leaving Certificate French syllabus' },
+  { id: 'applied-maths', title: 'Applied Maths', strands: APPLIED_MATHS_STRANDS, spec: 'specification examined from 2023' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1372,6 +1400,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   history: {
     higher: () => import('./cards/history/higher'),
     ordinary: () => import('./cards/history/ordinary'),
+  },
+  'applied-maths': {
+    higher: () => import('./cards/applied-maths/higher'),
+    ordinary: () => import('./cards/applied-maths/ordinary'),
   },
 };
 

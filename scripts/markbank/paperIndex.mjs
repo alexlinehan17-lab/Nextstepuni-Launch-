@@ -65,6 +65,11 @@ const CORPUS_KEY = {
   'maths': 'mathematics',
   // The corpus files LCVP's written paper under the module it examines.
   'lcvp': 'link-modules',
+  // The corpus spells the subject out; the deck uses the SEC's own short name,
+  // which is what students call it. Without this every Applied Maths card
+  // shipped with no link to the paper it came from — the Home Economics
+  // failure above, repeated.
+  'applied-maths': 'applied-mathematics',
 };
 
 /**

@@ -2245,7 +2245,10 @@ const normalise = (value: string) => value.trim().toLowerCase().replace(/\s+/g, 
 
 const SUBJECT_ALIASES: Record<string, string> = {
   maths: 'mathematics', math: 'mathematics',
-  'applied maths': 'applied-mathematics',
+  // Both spellings. Mark Bank's deck id is the hyphenated 'applied-maths' —
+  // normalise() only collapses whitespace, so the spaced alias never matched
+  // it and every Applied Maths card resolved into no specification at all.
+  'applied maths': 'applied-mathematics', 'applied-maths': 'applied-mathematics',
   bio: 'biology', chem: 'chemistry', phys: 'physics',
   'ag science': 'agricultural-science', 'agricultural science': 'agricultural-science',
   re: 'religious-education', religion: 'religious-education',
