@@ -93,5 +93,9 @@
  "italian": {
   "higher": 172,
   "ordinary": 178
+ },
+ "classical-studies": {
+  "higher": 240,
+  "ordinary": 276
  }
 }

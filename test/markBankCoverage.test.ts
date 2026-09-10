@@ -88,10 +88,16 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // part: "Section 2 Topic 1 A Q1". A part priced whole with nothing numbered
 // beneath it drops the Q entirely ("Section 2 Topic 1 B"), and the extra Part
 // A of 2023-2025 Ordinary is cited "Section Extra A Q1".
+// Classical Studies' syllabus to 2022 prints no sections and no question
+// numbers: ten TOPICS, each setting questions "(i)" to "(iv)" with lettered
+// parts under them, so the topic and the roman together are the address and
+// the citation reads "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers
+// Questions 1-16 straight through Sections A and B and cites "2024 HL Q3(b)".
 const ADDRESS =
   '^(\\d{4}) (HL|OL|CL)'
   + '(?: (?:Later|Early) Modern)?'
   + '(?: Paper (\\d))?'
+  + '(?: Topic \\d{1,2}\\((?:i{1,3}|iv|v)\\))?'
   + '(?: Section ((?:Extra )?[A-Za-z0-9]+(?: Topic \\d{1,2})?(?: [A-C]\\b)?))?'
   + '(?: E(\\d))?';
 const QTOKEN = '(?: (?:Q(\\d{1,2})?(-alt)?|ABQ))';

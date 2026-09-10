@@ -165,12 +165,66 @@ const TEXT_ONLY_COMPANION = {
  * document in that sitting: a card whose source cannot be resolved is dropped
  * by the build rather than pointed at whichever paper happened to be first.
  */
+/**
+ * The COMPONENT token inside an SEC file id: LC008ALP004BV.pdf is component
+ * 004. '000' is the question paper itself; anything else is a companion
+ * booklet — Paper X, an illustration sheet, a listening test.
+ *
+ * The id is the SEC's own structured name for the document. The label beside
+ * it in the index is harvested prose, and it is sometimes simply wrong:
+ * Classical Studies 2024 Ordinary indexes its Paper X as "Exam Paper", beside
+ * the real exam paper, because the SEC published that file with a four-digit
+ * typo in its name (LC008GLP0004BV.pdf). With two documents both labelled
+ * "Exam Paper" the label logic below can identify neither, so every 2024
+ * Ordinary card lost the illustration booklet its question is about — and
+ * thirteen correct cards were dropped for it.
+ *
+ * Used only where the LABELS cannot decide, and only when the components do:
+ * exactly one document with component '000' and every other with something
+ * else. That is evidence from the id, not a guess about the label.
+ */
+const componentOf = (f) => {
+  const m = /^LC\d{3}[ACG]LP(\d{3,4})[EIB]V/i.exec(String(f ?? ''));
+  if (!m) return null;
+  const token = m[1];
+  return token.length === 4 && token.startsWith('0') ? token.slice(1) : token;
+};
+
+/**
+ * The one document in this sitting whose id says it IS (or is not) the
+ * question paper — but ONLY where the labels have already failed completely.
+ *
+ * "Failed completely" means every document in the sitting carries the SAME
+ * label, so no label distinguishes anything. Anything weaker and this would
+ * answer a question the labels have already answered differently: asked for
+ * Art's "Section B", which Art does not publish, a looser rule handed back the
+ * illustration booklet — a real document, the wrong one, which is the failure
+ * resolveCompanionFileid returns null to prevent.
+ */
+const byComponent = (papers, want) => {
+  if (papers.length !== 2) return null;
+  const labels = new Set(papers.map(p => String(p.label).trim().toLowerCase()));
+  if (labels.size !== 1) return null;
+  const components = papers.map(p => componentOf(p.doc?.f));
+  if (components.some(c => c === null)) return null;
+  const hits = papers.filter((_, i) => (components[i] === '000') === want);
+  return hits.length === 1 ? hits[0] : null;
+};
+
 export function resolveCompanionFileid(subjectId, year, level, label) {
   const entry = paperEntry(subjectId, year, level);
   const want = String(label ?? '').trim().toLowerCase();
   if (!want || !entry?.papers?.length) return null;
   const hits = entry.papers.filter(p => String(p.label).trim().toLowerCase() === want);
-  return hits.length === 1 ? stripPdf(hits[0].doc?.f) : null;
+  if (hits.length === 1) return stripPdf(hits[0].doc?.f);
+  // The labels could not name one document. Where the file ids can — one
+  // question paper and one companion — the companion is the one the id says
+  // is not the question paper.
+  const companion = byComponent(entry.papers, false);
+  if (companion && byComponent(entry.papers, true)) {
+    return stripPdf(companion.doc?.f);
+  }
+  return null;
 }
 
 /**
@@ -214,5 +268,9 @@ export function resolvePaperFileid(subjectId, year, level, section) {
       && entry.papers.some(p => labelCovers(p.label).has('2'))) {
     return stripPdf(unnumbered[0].doc?.f);
   }
+  // No label named a section and none identified a companion. The file ids
+  // still can, where exactly one of the two documents is component '000'.
+  const paper = byComponent(entry.papers, true);
+  if (paper && byComponent(entry.papers, false)) return stripPdf(paper.doc?.f);
   return null;
 }

@@ -61,6 +61,12 @@ HEAD = re.compile(
     # "Section 2 Topic 1 B" is the paragraph part, which numbers nothing under
     # it. "Section Extra A" is the unnumbered extra Part A of 2023-2025
     # Ordinary, which the scheme heads "Extra Section A questions".
+    # Classical Studies' old paper has no section and no question number: it
+    # prints TEN TOPICS, each setting questions "(i)" to "(iv)" with lettered
+    # parts under them, and the topic-with-roman is the whole address —
+    # "2021 HL Topic 1(i) Q(a)". It names its own unit, so it is cited without
+    # a "Section" in front of it, exactly as key_label prints it.
+    r'(?:\s+(?P<topic>Topic\s+\d{1,2}\((?:i{1,3}|iv|v)\)))?'
     r'(?:\s+Section\s+(?P<section>(?:Extra\s+)?[A-Za-z0-9]+'
     r'(?:\s+Topic\s+\d{1,2})?(?:\s+[A-C]\b)?))?'
     # Home Economics files Section C under an elective token ("Section C E1
@@ -267,7 +273,8 @@ def parse_ref(ref):
     d = m.groupdict()
     # Everything after the year and level is optional, so "2021 HL" alone
     # matches. A citation has to name SOMETHING beneath the sitting.
-    if not d['q'] and not d['abq'] and not d['section'] and not d['paper']:
+    if not d['q'] and not d['abq'] and not d['section'] and not d['paper'] \
+            and not d.get('topic'):
         return None
     q = 'ABQ' if d['abq'] else (int(d['q']) if d['q'] else None)
     if d['alt'] and isinstance(q, int):
@@ -314,7 +321,9 @@ def parse_ref(ref):
         'year': int(d['year']), 'level': d['level'].lower(),
         'paper': (f"Paper {d['paper']}" if d['paper']
                   else d['field'] or None),
-        'section': d['section'], 'q': q, 'paths': paths,
+        'section': d['section'] or (re.sub(r'\s+', ' ', d['topic']).strip()
+                                    if d.get('topic') else None),
+        'q': q, 'paths': paths,
     }
 
 
