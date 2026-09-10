@@ -1430,6 +1430,24 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       id: 'religious-education:2003',
       title: 'Leaving Certificate Religious Education syllabus',
       status: 'verified',
+      /* Mark Bank files a Religious Education card under the SECTION printed
+       * over it, because that is the only content address the paper gives:
+       * eight of the ten sections number no question at all, and a section's
+       * asks range across every subtopic beneath it. So each section carries a
+       * whole-section node alongside the syllabus's own subtopics, which are
+       * left exactly as the taxonomy holds them. The GROUP ids are unchanged,
+       * because the selection rules above address the sections by them. */
+      groups: spec.groups.map((group, index) => {
+        const letter = 'ABCDEFGHIJ'[index];
+        return {
+          ...group,
+          code: letter,
+          topics: [
+            { id: `re-${letter.toLowerCase()}`, code: letter, title: group.title },
+            ...group.topics,
+          ],
+        };
+      }),
       sources: [
         { authority: 'Curriculum Online', title: 'Religious Education', url: OFFICIAL.religiousEducation, role: 'content' },
         { authority: 'NCCA', title: 'Leaving Certificate Religious Education syllabus', url: OFFICIAL.religiousEducationSyllabus, role: 'assessment' },

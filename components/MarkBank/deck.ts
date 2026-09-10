@@ -882,6 +882,45 @@ export const ENGINEERING_STRANDS: StrandRef[] = [
   },
 ];
 
+
+/**
+ * Religious Education's own ten sections, A to J, which are what the paper
+ * prints over every ask and what the syllabus calls its content areas.
+ *
+ * The grouping into three is the syllabus's and the paper's: Section A is
+ * compulsory, two of B-D are answered, and one or two of E-J. The strand
+ * TITLES avoid the words the retired Biology syllabus used for its units, but
+ * the structure here is the live one — Religious Education is still examined
+ * on the 2003 syllabus and there is nothing redeveloped to tag against.
+ */
+export const RELIGIOUS_EDUCATION_STRANDS: StrandRef[] = [
+  {
+    id: 're1', label: 'Part 1', title: 'The Search — compulsory section',
+    topics: [
+      { id: 're-a', code: 'A', title: 'The Search for Meaning and Values' },
+    ],
+  },
+  {
+    id: 're2', label: 'Part 2', title: 'Foundations — answer two of three',
+    topics: [
+      { id: 're-b', code: 'B', title: 'Christianity: Origins and Contemporary Expressions' },
+      { id: 're-c', code: 'C', title: 'World Religions' },
+      { id: 're-d', code: 'D', title: 'Moral Decision-Making' },
+    ],
+  },
+  {
+    id: 're3', label: 'Part 3', title: 'Religion in context — answer one or two',
+    topics: [
+      { id: 're-e', code: 'E', title: 'Religion and Gender' },
+      { id: 're-f', code: 'F', title: 'Issues of Justice and Peace' },
+      { id: 're-g', code: 'G', title: 'Worship, Prayer and Ritual' },
+      { id: 're-h', code: 'H', title: 'The Bible: Literature and Sacred Text' },
+      { id: 're-i', code: 'I', title: 'Religion: The Irish Experience' },
+      { id: 're-j', code: 'J', title: 'Religion and Science' },
+    ],
+  },
+];
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -898,6 +937,7 @@ export const SUBJECTS = [
   { id: 'geography', title: 'Geography', strands: GEOGRAPHY_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
   { id: 'computer-science', title: 'Computer Science', strands: COMPUTER_SCIENCE_STRANDS, spec: 'specification examined from 2020' },
   { id: 'engineering', title: 'Engineering', strands: ENGINEERING_STRANDS, spec: 'Materials and Technology syllabus' },
+  { id: 'religious-education', title: 'Religious Education', strands: RELIGIOUS_EDUCATION_STRANDS, spec: 'syllabus examined since 2003' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1166,6 +1206,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   engineering: {
     higher: () => import('./cards/engineering/higher'),
     ordinary: () => import('./cards/engineering/ordinary'),
+  },
+  'religious-education': {
+    higher: () => import('./cards/religious-education/higher'),
+    ordinary: () => import('./cards/religious-education/ordinary'),
   },
 };
 

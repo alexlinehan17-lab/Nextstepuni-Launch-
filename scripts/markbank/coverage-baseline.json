@@ -223,5 +223,20 @@
    "hash": "aedd9969b3ce025e"
   },
   "refsHash": "83bd7bc978ad6302"
+ },
+ "religious-education": {
+  "cards": 288,
+  "contentHash": "bfd99a50f3bc5853",
+  "coveragePct": 100.0,
+  "covered": 288,
+  "excluded": 0,
+  "leaves": 288,
+  "open": 0,
+  "orphans": 0,
+  "papers": {
+   "count": 10,
+   "hash": "df029832e957a46e"
+  },
+  "refsHash": "608205b9e7e5d4b8"
  }
 }

@@ -89,6 +89,13 @@ SUBJECTS = {
     # options, one answered). The sections are named on the page, and each
     # section restarts its numbering at 1, so the census reads the sections.
     'technology': {'mode': 'sections'},
+    # Religious Education restarts nothing and numbers almost nothing: three
+    # UNITS hold ten lettered SECTIONS, and only Section A (Unit One) prints
+    # "Question 1..3" at all. Sections B-J address their asks by part alone,
+    # so an ask's key there carries q=None and its citation reads
+    # "Section E Q(b)(ii)". Keys are still (section, q, letter, roman), so the
+    # ledger reads it in `sections` mode; only the walker differs.
+    'religious-education': {'mode': 'sections', 'walker': 're'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -151,7 +158,12 @@ def continuity_flags(parts, texts):
         if qs and isinstance(qs[0], int) and qs[0] > 1:
             flags.append({'type': 'question-gap', 'where': str(pre or ''),
                           'detail': f'first question found is Q{qs[0]}'})
-        for q in qs:
+        # A headless question (Religious Education's Sections B-J) sits
+        # outside the numeric run but still prints a lettered run that can
+        # gain a hole, so it is walked here as well.
+        headless = [None] if any(k[:-3] == pre and k[-3] is None
+                                 for k in keys) else []
+        for q in qs + headless:
             letters = sorted({k[-2] for k in keys
                               if k[:-3] == pre and k[-3] == q and k[-2]})
             if letters:
@@ -184,6 +196,10 @@ def key_label(k):
     q, letter, roman = parts[-3], parts[-2], parts[-1]
     head = f'Section {parts[0]} ' if len(parts) == 4 else ''
     tail = ('ABQ' if q == 'ABQ'
+            # A headless section — Religious Education's Sections B-J — is
+            # addressed by its part alone. The paper prints no number, so the
+            # label prints none either.
+            else 'Q' if q is None
             else f'Q{-q}-alt' if isinstance(q, int) and q < 0 else f'Q{q}')
     if letter:
         tail += f'({letter})'
@@ -514,6 +530,33 @@ def census_sections(subject, year, level):
     return set(parts), texts, P.files
 
 
+def census_re(subject, year, level):
+    """Religious Education: its own reader, for the reasons re_paper.py gives.
+
+    The generic sections walker cannot see this paper. It requires a question
+    head before it will key a part, and eight of the ten sections here print
+    none — Section B opens straight into "(a)". Reading this sitting with it
+    censuses Section A alone and calls the other 80% of the paper absent.
+    """
+    from re_paper import RePaper                             # noqa: E402
+    P = RePaper(year, level)
+    texts = {k: v for k, v in P.asks.items()}
+    return set(texts), texts, [P.path]
+
+
+def re_cover_marks(path):
+    """The total the paper prints on its own cover.
+
+    Religious Education has no per-question checksum to sum: a candidate
+    answers four of the ten sections, so adding up every printed tariff counts
+    questions nobody sits. The cover states the total outright.
+    """
+    import pymupdf
+    with pymupdf.open(path) as doc:
+        m = re.search(r'Total Marks\s+(\d+)', doc[0].get_text())
+    return int(m.group(1)) if m else None
+
+
 def census_subject(subject):
     cfg = SUBJECTS.get(subject, {'mode': 'merged'})
     if cfg['mode'] == 'geography':
@@ -617,7 +660,9 @@ def census_subject(subject):
             units = [(None, None)]
         for label, comp in units:
             try:
-                if cfg['mode'] == 'sections':
+                if cfg.get('walker') == 're':
+                    parts, texts, files = census_re(subject, year, level)
+                elif cfg['mode'] == 'sections':
                     parts, texts, files = census_sections(subject, year, level)
                 else:
                     parts, texts, files = census_merged(subject, year, level, comp)
@@ -627,8 +672,12 @@ def census_subject(subject):
                 continue
             leaves = leaves_of(parts)
             flags = continuity_flags(parts, texts)
-            marks = marks_by_question(files if cfg['mode'] != 'papers' else
-                                      [f for f in files], subject)
+            if cfg.get('walker') == 're':
+                total = re_cover_marks(files[0])
+                marks = {(None, 0): total} if total else {}
+            else:
+                marks = marks_by_question(files if cfg['mode'] != 'papers' else
+                                          [f for f in files], subject)
             papers.append({
                 'year': year, 'level': level, 'paper': label,
                 'leafCount': len(leaves),

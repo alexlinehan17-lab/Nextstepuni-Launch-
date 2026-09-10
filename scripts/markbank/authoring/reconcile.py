@@ -53,7 +53,10 @@ HEAD = re.compile(
     # Home Economics files Section C under an elective token ("Section C E1
     # Q1(a)(i)"); the elective is not an address the paper numbers by.
     r'(?:\s+E(?P<elective>\d))?'
-    r'\s+(?:Q(?P<q>\d{1,2})(?P<alt>-alt)?|(?P<abq>ABQ))')
+    # The number is OPTIONAL. Religious Education's Sections B-J print no
+    # question number at all — the section is the address — so the card
+    # cites "Section E Q(b)(ii)" and the census keys it with q=None.
+    r'\s+(?:Q(?P<q>\d{1,2})?(?P<alt>-alt)?|(?P<abq>ABQ))')
 # What may follow the question number: part tokens, separated by commas,
 # "and", or a range dash. "Q3(c)(i), (ii)" covers two romans; "Q6(a)–(e)"
 # covers five letters; "Q9(vii)–(viii)" two romans with no letter above them.
@@ -247,7 +250,7 @@ def parse_ref(ref):
     if not m:
         return None
     d = m.groupdict()
-    q = 'ABQ' if d['abq'] else int(d['q'])
+    q = 'ABQ' if d['abq'] else (int(d['q']) if d['q'] else None)
     if d['alt'] and isinstance(q, int):
         q = -q
     paths, cur_letter, cur_roman, dash = [], None, None, False

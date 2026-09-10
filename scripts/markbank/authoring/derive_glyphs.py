@@ -60,6 +60,14 @@ LIGATURE = {
     '\uf0b0': '\u00b0',   # SymbolMT 0xB0 -- cropped from 2022 HL Chemistry
                           # page 1 and looked at: "l^-2 at 25 [deg]C"
     '\uf06c': '\u2022',   # Wingdings 0x6c -- the bullet on "using a scalpel"
+    # Religious Education prints its option lists and its religion symbols in
+    # Wingdings. Each was cropped out of the page at 400dpi and looked at
+    # rather than read off an encoding chart:
+    '\uf075': '\u25c6',   # Wingdings 0x75 -- the diamond bullet on
+                          # "religions: [diamond] Buddhism [diamond] Christianity"
+    '\uf059': '\u2721',   # Wingdings 0x59 -- the Star of David, beside Judaism
+    '\uf05a': '\u262a',   # Wingdings 0x5a -- the star and crescent, beside Islam
+    '\uf05d': '\u2638',   # Wingdings 0x5d -- the wheel of dharma, beside Buddhism
     '\uf050': '\u2713',   # Wingdings 2 0x50 -- a tick
     '\uf067': '\u2192',   # Wingdings 3 0x67 -- "6O2 -> 6CO2 + 6H2O"
     '\uf081': '\u2460',   # Wingdings 0x81 -- a circled 1

@@ -3010,12 +3010,6 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           {' '}{assessmentCard.tariffModel.perPart} marks each.
                         </p>
                       )}
-                      {assessmentCard.tariffModel.kind === 'questionTotal' && (
-                        <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
-                          The scheme prices this question as a whole — {assessmentCard.totalMarks} marks —
-                          without saying what each part is worth.
-                        </p>
-                      )}
                     </>
                   ) : (
                     <RubricPanel

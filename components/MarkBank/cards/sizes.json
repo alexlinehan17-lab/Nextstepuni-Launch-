@@ -58,5 +58,9 @@
  "engineering": {
   "higher": 313,
   "ordinary": 153
+ },
+ "religious-education": {
+  "higher": 135,
+  "ordinary": 153
  }
 }

@@ -43,6 +43,8 @@ import { CARDS as COMPUTER_SCIENCE_HIGHER } from '../components/MarkBank/cards/c
 import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
+import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 const decks = [
@@ -414,6 +416,11 @@ const decks = [
    * so a later regeneration cannot silently omit or replace any of its cards. */
   ['engineering:higher', ENGINEERING_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
   ['engineering:ordinary', ENGINEERING_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
+  /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
+   * 288 cards against the 288 asks its ten papers print, every one of them
+   * added and none replacing anything. Nothing in any other deck moved. */
+  ['religious-education:higher', RE_HIGHER, 135, '9a6117ccc7be90492858b10d071528bbfee33de42ec8a368c51d6e2c76c596f3'],
+  ['religious-education:ordinary', RE_ORDINARY, 153, 'ebad0ef90313b7b75bfb75aecca5c93c5372ee0745f58ffc407481bf74ee5569'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -428,7 +435,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_783);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -440,7 +447,8 @@ describe('Mark Bank card preservation', () => {
     }
     const preNewSubjectCards = decks
       .filter(([name]) => !name.startsWith('computer-science:')
-        && !name.startsWith('engineering:'))
+        && !name.startsWith('engineering:')
+        && !name.startsWith('religious-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

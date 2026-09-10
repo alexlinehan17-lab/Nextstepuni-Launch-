@@ -58,6 +58,8 @@ import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-scienc
 import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
+import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -77,6 +79,7 @@ const SAMPLE_CARDS = [
   ...ART_HIGHER, ...ART_ORDINARY,
   ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
   ...CS_HIGHER, ...CS_ORDINARY, ...ENG_HIGHER, ...ENG_ORDINARY,
+  ...RE_HIGHER, ...RE_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -447,6 +450,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['computer-science', 'ordinary', CS_ORDINARY],
     ['engineering', 'higher', ENG_HIGHER],
     ['engineering', 'ordinary', ENG_ORDINARY],
+    ['religious-education', 'higher', RE_HIGHER],
+    ['religious-education', 'ordinary', RE_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -510,6 +515,7 @@ describe('the taxonomy is the redeveloped specification', () => {
       geography: 'geography-',
       'computer-science': 'cs-',
       engineering: 'eng-',
+      'religious-education': 're-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

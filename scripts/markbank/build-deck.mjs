@@ -138,6 +138,18 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/economics',
     blocked: new Set(),
   },
+  'religious-education': {
+    title: 'Religious Education',
+    /* The syllabus published in 2003 and still examined — the whole
+     * 2021-2025 corpus sits on it, with nothing to straddle. Named by year
+     * because it is verified: the SEC's own scheme cites "the Leaving
+     * Certificate Religious Education syllabus published by the Department of
+     * Education and Skills in 2003" in its general introduction. */
+    specVersion: 'lc-religious-education-2003',
+    specNote: "Cards are tagged to the syllabus's own ten sections, A to J, which are the\n * sections the paper prints. A candidate answers Section A, two of B-D and one or\n * two of E-J; every section in the corpus is carded at both levels.",
+    figureDir: 'public/exam-figures/religious-education',
+    blocked: new Set(),
+  },
   'agricultural-science': {
     title: 'Agricultural Science',
     /* The NCCA specification published 2019 and first examined in 2021 — dated
