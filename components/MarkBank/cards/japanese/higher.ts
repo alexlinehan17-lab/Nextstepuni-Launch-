@@ -398,7 +398,7 @@ export const CARDS: SecCard[] = [
     questionText: "レイチェルさんは、どうしてアメリカに帰りましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "エアフォースでパイロットの仕事をする予定でした。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "エアフォースでパイロットの仕事（しごと）をする予定（よてい）でした。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -443,7 +443,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2021-hl-2a-2-iii", topicId: "japanese-5-2", conceptId: "ja-2a-2iii",
     section: "2", questionRef: "2021 HL Section 2A Q2(iii)",
     stem: "Answer in Japanese.",
-    questionText: "レイチェルさんとジュンさんは、今どこに住んでいますか。",
+    questionText: "レイチェルさんとジュンさんは、今どこに住（す）んでいますか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "ふくおか", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -565,7 +565,7 @@ export const CARDS: SecCard[] = [
     questionText: "Translate into English.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "二人は有名なユーチューバーになるまで本当に大変で、三年間ぐらいぜんぜん 休みがなくて、仕事をしすぎて、病気になりました。 Until the two became famous Youtubers , it was really tough and, for 3 years they had no break , worked too hard and got sick", marks: 5, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "二人は有名（ゆうめい）なユーチューバーになるまで本当（ほんとう）に大変（たいへん）で、三年間ぐらいぜんぜん 休みがなくて、仕事（しごと）をしすぎて、病気（びょうき）になりました。 Until the two became famous Youtubers , it was really tough and, for 3 years they had no break , worked too hard and got sick", marks: 5, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -729,7 +729,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2b-2-i", topicId: "japanese-5-4", conceptId: "ja-2b-2i",
     section: "2", questionRef: "2021 HL Section 2B Q2(i)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い （く）",
     questionText: "人気",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -753,7 +753,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2b-2-ii", topicId: "japanese-5-4", conceptId: "ja-2b-2ii",
     section: "2", questionRef: "2021 HL Section 2B Q2(ii)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い （く）",
     questionText: "二人",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -777,7 +777,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2b-2-iii", topicId: "japanese-5-4", conceptId: "ja-2b-2iii",
     section: "2", questionRef: "2021 HL Section 2B Q2(iii)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い （く）",
     questionText: "勉強",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -801,7 +801,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2b-2-iv", topicId: "japanese-5-4", conceptId: "ja-2b-2iv",
     section: "2", questionRef: "2021 HL Section 2B Q2(iv)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い （く）",
     questionText: "見た",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -825,7 +825,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2b-2-v", topicId: "japanese-5-4", conceptId: "ja-2b-2v",
     section: "2", questionRef: "2021 HL Section 2B Q2(v)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い （く）",
     questionText: "日本食",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -849,7 +849,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2b-2-vi", topicId: "japanese-5-4", conceptId: "ja-2b-2vi",
     section: "2", questionRef: "2021 HL Section 2B Q2(vi)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い （く）",
     questionText: "高校",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -864,6 +864,30 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Japanese 2021 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the printed material exactly as the examination set it, then answer. Write the READING of the printed kanji, in hiragana, as the examination paper directs. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
+    id: "ja-2021-hl-2c-1-i", topicId: "japanese-5-5", conceptId: "ja-2c-1i",
+    section: "2", questionRef: "2021 HL Section 2C Q1(i)",
+    stem: "Write the following in the negative form as in the example. Answer any FIVE. e.g. 好きです。 好きじゃないです。",
+    questionText: "オープンしました。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "しませんでした", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
     },
   } as SecCard,
   {
@@ -898,7 +922,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2021-hl-2c-1-iii", topicId: "japanese-5-5", conceptId: "ja-2c-1iii",
     section: "2", questionRef: "2021 HL Section 2C Q1(iii)",
     stem: "Write the following in the negative form as in the example. Answer any FIVE. e.g. 好きです。 好きじゃないです。",
-    questionText: "大変でした。",
+    questionText: "大変（たいへん）でした。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "たいへんじゃなかったです — or たいへんじゃありませんでした — or たいへんではありませんでした", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -922,7 +946,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2021-hl-2c-1-iv", topicId: "japanese-5-5", conceptId: "ja-2c-1iv",
     section: "2", questionRef: "2021 HL Section 2C Q1(iv)",
     stem: "Write the following in the negative form as in the example. Answer any FIVE. e.g. 好きです。 好きじゃないです。",
-    questionText: "住んでいる。",
+    questionText: "住（す）んでいる。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "すんでいない", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -993,8 +1017,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2c-2-i", topicId: "japanese-5-5", conceptId: "ja-2c-2i",
     section: "2", questionRef: "2021 HL Section 2C Q2(i)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽を（聞きます） 聞く ことが好きです。",
-    questionText: "アメリカに（行きます） 前に、結婚しました。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽（おんがく）を（聞きます） 聞く ことが好きです。",
+    questionText: "アメリカに（行きます） 前に、結婚（けっこん）しました。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "行く", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1017,8 +1041,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2c-2-ii", topicId: "japanese-5-5", conceptId: "ja-2c-2ii",
     section: "2", questionRef: "2021 HL Section 2C Q2(ii)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽を（聞きます） 聞く ことが好きです。",
-    questionText: "ビデオを もいいですか。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽（おんがく）を（聞きます） 聞く ことが好きです。",
+    questionText: "ビデオを（とる） もいいですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "とって", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1041,8 +1065,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2c-2-iii", topicId: "japanese-5-5", conceptId: "ja-2c-2iii",
     section: "2", questionRef: "2021 HL Section 2C Q2(iii)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽を（聞きます） 聞く ことが好きです。",
-    questionText: "ファン・クラブは と思います。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽（おんがく）を（聞きます） 聞く ことが好きです。",
+    questionText: "ファン・クラブは（ありません） と思います。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "ない", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1065,8 +1089,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2c-2-iv", topicId: "japanese-5-5", conceptId: "ja-2c-2iv",
     section: "2", questionRef: "2021 HL Section 2C Q2(iv)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽を（聞きます） 聞く ことが好きです。",
-    questionText: "これからビデオをたくさん（作ります） つもりです。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽（おんがく）を（聞きます） 聞く ことが好きです。",
+    questionText: "これからビデオをたくさん（作（つく）ります） つもりです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "つくる", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1089,7 +1113,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2c-2-v", topicId: "japanese-5-5", conceptId: "ja-2c-2v",
     section: "2", questionRef: "2021 HL Section 2C Q2(v)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽を（聞きます） 聞く ことが好きです。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽（おんがく）を（聞きます） 聞く ことが好きです。",
     questionText: "二人はさんぽしたり、ピザを（食べます） りします。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1113,7 +1137,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-2c-2-vi", topicId: "japanese-5-5", conceptId: "ja-2c-2vi",
     section: "2", questionRef: "2021 HL Section 2C Q2(vi)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽を（聞きます） 聞く ことが好きです。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 音楽（おんがく）を（聞きます） 聞く ことが好きです。",
     questionText: "二人のビデオを（見ます） ください。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1275,7 +1299,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-3b-2", topicId: "japanese-5-1", conceptId: "ja-3b-2",
     section: "3", questionRef: "2021 HL Section 3B Q2",
-    questionText: "ピーターさんは誰とシェアハウスをしていますか。",
+    questionText: "ピーターさんは誰（だれ）とシェアハウスをしていますか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":1,"options":["男子学生一人","女子学生三人","ベトナム人","タムさん"]} },
@@ -1298,10 +1322,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-3b-3", topicId: "japanese-5-1", conceptId: "ja-3b-3",
     section: "3", questionRef: "2021 HL Section 3B Q3",
-    questionText: "ピーターさんはどんな部屋に住みたかったですか。",
+    questionText: "ピーターさんはどんな部（へ）屋（や）に住（す）みたかったですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "畳 の部屋", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "畳（たたみ） の部（へ）屋（や）", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1321,7 +1345,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Higher Level — © State Examinations Commission.",
     id: "ja-2021-hl-3b-4", topicId: "japanese-5-1", conceptId: "ja-3b-4",
     section: "3", questionRef: "2021 HL Section 3B Q4",
-    questionText: "ピーターさんが病気の時、シェアメイトはピーターさんに何をしました か。",
+    questionText: "ピーターさんが病気（びょうき）の時、シェアメイトはピーターさんに何をしました か。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "くすりをあげました/ あたたかい飲み物をあげました。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1513,7 +1537,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2021-hl-3d-ii", topicId: "japanese-5-5", conceptId: "ja-3d-0ii",
     section: "3", questionRef: "2021 HL Section 3D Q(ii)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "東 京のほう モントリオール 大きいです。",
+    questionText: "東 京（とうきょう）のほう モントリオール 大きいです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "が — より", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1585,7 +1609,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2021-hl-3d-v", topicId: "japanese-5-5", conceptId: "ja-3d-0v",
     section: "3", questionRef: "2021 HL Section 3D Q(v)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "家 下にパーキング あります。",
+    questionText: "家（いえ） 下にパーキング あります。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "の — が/ は", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1867,6 +1891,30 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-1a-5-i", topicId: "japanese-5-0", conceptId: "item",
+    section: "1", questionRef: "2022 HL Section 1A Q5(i)",
+    stem: "Answer 1 – 6 in English.",
+    questionText: "What item is 20%",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hot Mat", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-1a-5-ii", topicId: "japanese-5-0", conceptId: "colours",
     section: "1", questionRef: "2022 HL Section 1A Q5(ii)",
     stem: "Answer 1 – 6 in English.",
@@ -1974,6 +2022,174 @@ export const CARDS: SecCard[] = [
           "title": "Question 1 — printed material",
           "pages": [
                 4
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2a-2-i", topicId: "japanese-5-2", conceptId: "ja-2a-2i",
+    section: "2", questionRef: "2022 HL Section 2A Q2(i)",
+    stem: "Answer in Japanese.",
+    questionText: "ゼロ・ウェイス・センターは、いつからですか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2003", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2a-2-ii", topicId: "japanese-5-2", conceptId: "ja-2a-2ii",
+    section: "2", questionRef: "2022 HL Section 2A Q2(ii)",
+    stem: "Answer in Japanese.",
+    questionText: "ゼロ・ウェイス・センターに、どんな施設（しせつ）がありますか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":1,"options":["レクチャー・ホール","ホテル","ラボラトリー","リサイクルのお店。"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2a-2-iv", topicId: "japanese-5-2", conceptId: "ja-2a-2iv",
+    section: "2", questionRef: "2022 HL Section 2A Q2(iv)",
+    stem: "Answer in Japanese.",
+    questionText: "「くるくるショップ」の物はいくらですか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "0 円", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2a-3-i", topicId: "japanese-5-2", conceptId: "examples-items-bring-zero-waste-centre",
+    section: "2", questionRef: "2022 HL Section 2A Q3(i)",
+    stem: "Answer in English.",
+    questionText: "Give examples of items you can bring to the Zero Waste Centre.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":3,"perOption":1,"options":["Glass","plastic","clothes","newspapers","tooth brushes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2a-3-ii", topicId: "japanese-5-2", conceptId: "opening-hours-zero-waste-centre",
+    section: "2", questionRef: "2022 HL Section 2A Q3(ii)",
+    stem: "Answer in English.",
+    questionText: "What are the opening hours of the Zero Waste Centre?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7am to 9pm — (2 marks + 1 mark)", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2a-3-iii", topicId: "japanese-5-2", conceptId: "who-takes-part-workshops-seminars-hotel",
+    section: "2", questionRef: "2022 HL Section 2A Q3(iii)",
+    stem: "Answer in English.",
+    questionText: "Who takes part in workshops and seminars in HOTEL WHY?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":3,"perOption":1,"options":["Children","adults","company workers","foreigners","people who want to study about the environment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2a-4", topicId: "japanese-5-3", conceptId: "translate-into-english",
+    section: "2", questionRef: "2022 HL Section 2A Q4",
+    stem: "Translate the following into English. みなさんはリデュース・リユース・リサイクルの 3R を学んだり、町（まち）の歴史（れきし）を勉強 したりします。",
+    questionText: "Translate into English",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "みなさんはリデュース・リユース・リサイクルの3R を学んだり、町の（まち）歴史を（れきし）勉強 したりします。 Everyone learns the 3Rs – reduce, reuse, recycle and studies about the history of the town", marks: 4, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
           ],
           "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
@@ -2130,7 +2346,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2b-2-i", topicId: "japanese-5-4", conceptId: "ja-2b-2i",
     section: "2", questionRef: "2022 HL Section 2B Q2(i)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "森",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2154,7 +2370,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2b-2-ii", topicId: "japanese-5-4", conceptId: "ja-2b-2ii",
     section: "2", questionRef: "2022 HL Section 2B Q2(ii)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "人",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2178,7 +2394,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2b-2-iii", topicId: "japanese-5-4", conceptId: "ja-2b-2iii",
     section: "2", questionRef: "2022 HL Section 2B Q2(iii)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "新聞",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2202,7 +2418,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2b-2-iv", topicId: "japanese-5-4", conceptId: "ja-2b-2iv",
     section: "2", questionRef: "2022 HL Section 2B Q2(iv)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "出す",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2226,7 +2442,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2b-2-v", topicId: "japanese-5-4", conceptId: "ja-2b-2v",
     section: "2", questionRef: "2022 HL Section 2B Q2(v)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "午後",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2250,7 +2466,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2b-2-vi", topicId: "japanese-5-4", conceptId: "ja-2b-2vi",
     section: "2", questionRef: "2022 HL Section 2B Q2(vi)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "外国",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2299,10 +2515,34 @@ export const CARDS: SecCard[] = [
     id: "ja-2022-hl-2c-1-ii", topicId: "japanese-5-5", conceptId: "ja-2c-1ii",
     section: "2", questionRef: "2022 HL Section 2C Q1(ii)",
     stem: "Write the following in the plain form as in the example. Answer any FIVE. e.g. 好きじゃありません。 好きじゃない。",
-    questionText: "きれいな町です。",
+    questionText: "きれいな町（まち）です。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "町だ", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2c-1-iii", topicId: "japanese-5-5", conceptId: "ja-2c-1iii",
+    section: "2", questionRef: "2022 HL Section 2C Q1(iii)",
+    stem: "Write the following in the plain form as in the example. Answer any FIVE. e.g. 好きじゃありません。 好きじゃない。",
+    questionText: "ルールはきびしいです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "きびしい", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2392,9 +2632,33 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2c-2-i", topicId: "japanese-5-5", conceptId: "ja-2c-2i",
+    section: "2", questionRef: "2022 HL Section 2C Q2(i)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島（とくしま）に（すみます） すんで います。",
+    questionText: "まんがをリサイクル（します） もいいですか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "して", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2c-2-ii", topicId: "japanese-5-5", conceptId: "ja-2c-2ii",
     section: "2", questionRef: "2022 HL Section 2C Q2(ii)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島に すんで います。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島（とくしま）に（すみます） すんで います。",
     questionText: "これからプラスチックを（買いません） と思います。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2416,13 +2680,61 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
-    id: "ja-2022-hl-2c-2-iv", topicId: "japanese-5-5", conceptId: "ja-2c-2iv",
-    section: "2", questionRef: "2022 HL Section 2C Q2(iv)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島に すんで います。",
-    questionText: "私はリサイクルをしたり、（歩きます） りします。",
+    id: "ja-2022-hl-2c-2-iii", topicId: "japanese-5-5", conceptId: "hotel",
+    section: "2", questionRef: "2022 HL Section 2C Q2(iii)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島（とくしま）に（すみます） すんで います。",
+    questionText: "HOTEL WHY に（行きます） よていです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "あるいた", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "いく", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2c-2-iv", topicId: "japanese-5-5", conceptId: "ja-2c-2iv",
+    section: "2", questionRef: "2022 HL Section 2C Q2(iv)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島（とくしま）に（すみます） すんで います。",
+    questionText: "私はリサイクルをしたり、（歩（ある）きます） りします。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "あるいた（り）", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-2c-2-v", topicId: "japanese-5-5", conceptId: "ja-2c-2v",
+    section: "2", questionRef: "2022 HL Section 2C Q2(v)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島（とくしま）に（すみます） すんで います。",
+    questionText: "エコバッグを（使（つか）います） たいです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "つかい（たい）", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2442,7 +2754,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-2c-2-vi", topicId: "japanese-5-5", conceptId: "ja-2c-2vi",
     section: "2", questionRef: "2022 HL Section 2C Q2(vi)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島に すんで います。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は徳島（とくしま）に（すみます） すんで います。",
     questionText: "レポートを（読みます） ください。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -2558,7 +2870,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-3b-2", topicId: "japanese-5-1", conceptId: "ja-3b-2",
     section: "3", questionRef: "2022 HL Section 3B Q2",
-    questionText: "数学の先生はどんな先生ですか。",
+    stem: "数（すう）学の先生は、どんな先生ですか。",
+    questionText: "数学（すう）の先生はどんな先生ですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "やさしい", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2581,10 +2894,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-3b-3", topicId: "japanese-5-1", conceptId: "ja-3b-3",
     section: "3", questionRef: "2022 HL Section 3B Q3",
-    questionText: "みかさんのボランティアの仕事は何ですか。",
+    stem: "みかさんのボランティアの仕事（しごと）は、何ですか。",
+    questionText: "みかさんのボランティアの仕事は（しごと）何ですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ボランティアで駅前を掃除したり 、スポーツ・イベントのヘルパーを したりします", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "ボランティアで駅前を掃除（そうじ）したり 、スポーツ・イベントのヘルパーを したりします", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2607,7 +2921,7 @@ export const CARDS: SecCard[] = [
     questionText: "みかさんは、どうして英語を勉強したいですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "外国で試合をする時に 英語でコミュニケーションしたいですから", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "外国で試合（しあい）をする時に 英語でコミュニケーションしたいですから", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2618,6 +2932,30 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-3c-i", topicId: "japanese-5-4", conceptId: "ja-3c-0i",
+    section: "3", questionRef: "2022 HL Section 3C Q(i)",
+    stem: "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
+    questionText: "今月 (a) こんげつ (b) こんがつ (c) いまつき (d) こんしゅう",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "こんげつ 1 mark this month", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
     },
   } as SecCard,
   {
@@ -2697,6 +3035,30 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-3c-v", topicId: "japanese-5-4", conceptId: "ja-3c-0v",
+    section: "3", questionRef: "2022 HL Section 3C Q(v)",
+    stem: "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
+    questionText: "駅前 (a)えきぜん (b) えきまえ (c) まちまえ (d) ごぜん",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "えきまえ 1 mark in front of the station", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-3c-vi", topicId: "japanese-5-4", conceptId: "ja-3c-0vi",
     section: "3", questionRef: "2022 HL Section 3C Q(vi)",
     stem: "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
@@ -2724,7 +3086,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2022-hl-3d-i", topicId: "japanese-5-5", conceptId: "ja-3d-0i",
     section: "3", questionRef: "2022 HL Section 3D Q(i)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "みかさんは横須賀高校 勉強しています。",
+    questionText: "みかさんは横須賀（よこすか）高校 勉強しています。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "で", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2748,7 +3110,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2022-hl-3d-ii", topicId: "japanese-5-5", conceptId: "ja-3d-0ii",
     section: "3", questionRef: "2022 HL Section 3D Q(ii)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "学校の夏休み カナダ 行きます。",
+    questionText: "学校の夏（なつ）休み カナダ 行きます。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "に — に", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2793,10 +3155,58 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-3d-iv", topicId: "japanese-5-5", conceptId: "ja-3d-0iv",
+    section: "3", questionRef: "2022 HL Section 3D Q(iv)",
+    stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    questionText: "みかさんは、友（とも）だち 朝ごはん 食べます。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "を", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
+    id: "ja-2022-hl-3d-v", topicId: "japanese-5-5", conceptId: "ja-3d-0v",
+    section: "3", questionRef: "2022 HL Section 3D Q(v)",
+    stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    questionText: "学校 後ろにラグビー・グラウンド あります。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "の — は/が", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Higher Level — © State Examinations Commission.",
     id: "ja-2022-hl-3d-vi", topicId: "japanese-5-5", conceptId: "ja-3d-0vi",
     section: "3", questionRef: "2022 HL Section 3D Q(vi)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "大阪 横須賀まで電車 3 時間かかります。",
+    questionText: "大阪（おおさか） 横須賀（よこすか）まで電車 3 時間かかります。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "から — で", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3013,7 +3423,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the family discount.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1 hour-free family room , for a family birthday party/present of a birthday cake.", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "1 hour-free family room , for a family birthday party/present of a birthday cake", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3061,6 +3471,29 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":1,"options":["Dry Flower","Cinderella Boy","Lemon"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-1a-7", topicId: "japanese-5-0", conceptId: "part-safety-policy-big-echo-staff",
+    section: "1", questionRef: "2023 HL Section 1A Q7",
+    questionText: "As part of the safety policy, what do Big Echo staff do every week?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Clean", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3150,7 +3583,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-hl-2a-2-i", topicId: "japanese-5-2", conceptId: "ja-2a-2i",
     section: "2", questionRef: "2023 HL Section 2A Q2(i)",
     stem: "Answer in Japanese.",
-    questionText: "照ノ富士は、相撲を始める前に、どんなスポーツをしましたか。",
+    questionText: "照ノ（てる）（の）富（ふ）士（じ）は、相撲を（すもう）始め（はじ）る前に、どんなスポーツをしましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "じゅうどう", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3174,10 +3607,10 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-hl-2a-2-ii", topicId: "japanese-5-2", conceptId: "ja-2a-2ii",
     section: "2", questionRef: "2023 HL Section 2A Q2(ii)",
     stem: "Answer in Japanese.",
-    questionText: "照ノ富士は、いつプロの力士になりましたか。",
+    questionText: "照ノ（てる）（の）富（ふ）士（じ）は、いつプロの力士に（りきし）なりましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "高校を卒 業してから", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "高校を卒 業（そつぎょう）してから", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3198,7 +3631,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-hl-2a-2-iii", topicId: "japanese-5-2", conceptId: "ja-2a-2iii",
     section: "2", questionRef: "2023 HL Section 2A Q2(iii)",
     stem: "Answer in Japanese.",
-    questionText: "清水さんは、どうして空手をしたいと思いましたか。",
+    questionText: "清水さ（しみず）んは、どうして空手を（からて）したいと思いましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(どうじょうに)女子のせんぱいが多くて とてもかっこいと思い ました。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3321,7 +3754,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe one of Shimizu’s sporting achievements.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Gold medal at the world championships / silver medal in Tokyo Olympics.", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Gold medal at the world championships / silver medal in Tokyo Olympics", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3339,10 +3772,322 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-1-i", topicId: "japanese-5-4", conceptId: "ja-2b-1i",
+    section: "2", questionRef: "2023 HL Section 2B Q1(i)",
+    stem: "Write the meaning of any FIVE of following Kanji as they appear in the text in English. e.g. 日本 An tSeapáin / Japan",
+    questionText: "生まれる",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "born", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-1-ii", topicId: "japanese-5-4", conceptId: "ja-2b-1ii",
+    section: "2", questionRef: "2023 HL Section 2B Q1(ii)",
+    stem: "Write the meaning of any FIVE of following Kanji as they appear in the text in English. e.g. 日本 An tSeapáin / Japan",
+    questionText: "毎日",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "every day", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-1-iii", topicId: "japanese-5-4", conceptId: "ja-2b-1iii",
+    section: "2", questionRef: "2023 HL Section 2B Q1(iii)",
+    stem: "Write the meaning of any FIVE of following Kanji as they appear in the text in English. e.g. 日本 An tSeapáin / Japan",
+    questionText: "人気",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "popular", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-1-iv", topicId: "japanese-5-4", conceptId: "ja-2b-1iv",
+    section: "2", questionRef: "2023 HL Section 2B Q1(iv)",
+    stem: "Write the meaning of any FIVE of following Kanji as they appear in the text in English. e.g. 日本 An tSeapáin / Japan",
+    questionText: "入学",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "enter/start school", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-1-v", topicId: "japanese-5-4", conceptId: "ja-2b-1v",
+    section: "2", questionRef: "2023 HL Section 2B Q1(v)",
+    stem: "Write the meaning of any FIVE of following Kanji as they appear in the text in English. e.g. 日本 An tSeapáin / Japan",
+    questionText: "小学生",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "primary school student", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-1-vi", topicId: "japanese-5-4", conceptId: "ja-2b-1vi",
+    section: "2", questionRef: "2023 HL Section 2B Q1(vi)",
+    stem: "Write the meaning of any FIVE of following Kanji as they appear in the text in English. e.g. 日本 An tSeapáin / Japan",
+    questionText: "話す",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "speak/ talk", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-2-i", topicId: "japanese-5-4", conceptId: "ja-2b-2i",
+    section: "2", questionRef: "2023 HL Section 2B Q2(i)",
+    stem: "Write the reading of any FIVE of following Kanji as they appear in the text in Hiragana. e.g. 行く い（く）",
+    questionText: "お母さん",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "おかあさん", marks: 1, contextNote: "Write the READING of the printed kanji, in hiragana, as the examination paper directs." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Write the READING of the printed kanji, in hiragana, as the examination paper directs. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-2-ii", topicId: "japanese-5-4", conceptId: "ja-2b-2ii",
+    section: "2", questionRef: "2023 HL Section 2B Q2(ii)",
+    stem: "Write the reading of any FIVE of following Kanji as they appear in the text in Hiragana. e.g. 行く い（く）",
+    questionText: "高校",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "こうこう", marks: 1, contextNote: "Write the READING of the printed kanji, in hiragana, as the examination paper directs." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Write the READING of the printed kanji, in hiragana, as the examination paper directs. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-2-iii", topicId: "japanese-5-4", conceptId: "ja-2b-2iii",
+    section: "2", questionRef: "2023 HL Section 2B Q2(iii)",
+    stem: "Write the reading of any FIVE of following Kanji as they appear in the text in Hiragana. e.g. 行く い（く）",
+    questionText: "二年間",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "にねんかん", marks: 1, contextNote: "Write the READING of the printed kanji, in hiragana, as the examination paper directs." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Write the READING of the printed kanji, in hiragana, as the examination paper directs. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-2-iv", topicId: "japanese-5-4", conceptId: "ja-2b-2iv",
+    section: "2", questionRef: "2023 HL Section 2B Q2(iv)",
+    stem: "Write the reading of any FIVE of following Kanji as they appear in the text in Hiragana. e.g. 行く い（く）",
+    questionText: "女子",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "じょし", marks: 1, contextNote: "Write the READING of the printed kanji, in hiragana, as the examination paper directs." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Write the READING of the printed kanji, in hiragana, as the examination paper directs. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-2-v", topicId: "japanese-5-4", conceptId: "ja-2b-2v",
+    section: "2", questionRef: "2023 HL Section 2B Q2(v)",
+    stem: "Write the reading of any FIVE of following Kanji as they appear in the text in Hiragana. e.g. 行く い（く）",
+    questionText: "体",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "からだ", marks: 1, contextNote: "Write the READING of the printed kanji, in hiragana, as the examination paper directs." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Write the READING of the printed kanji, in hiragana, as the examination paper directs. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2b-2-vi", topicId: "japanese-5-4", conceptId: "ja-2b-2vi",
+    section: "2", questionRef: "2023 HL Section 2B Q2(vi)",
+    stem: "Write the reading of any FIVE of following Kanji as they appear in the text in Hiragana. e.g. 行く い（く）",
+    questionText: "小さい",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ちいさい", marks: 1, contextNote: "Write the READING of the printed kanji, in hiragana, as the examination paper directs." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Write the READING of the printed kanji, in hiragana, as the examination paper directs. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2c-1-i", topicId: "japanese-5-5", conceptId: "ja-2c-1i",
+    section: "2", questionRef: "2023 HL Section 2C Q1(i)",
+    stem: "Write the following in the negative form as in the example. Answer any FIVE. e.g. 好きです。 好きじゃないです。",
+    questionText: "人気がある。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ない", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
     id: "ja-2023-hl-2c-1-ii", topicId: "japanese-5-5", conceptId: "ja-2c-1ii",
     section: "2", questionRef: "2023 HL Section 2C Q1(ii)",
     stem: "Write the following in the negative form as in the example. Answer any FIVE. e.g. 好きです。 好きじゃないです。",
-    questionText: "練 習しました。",
+    questionText: "練 習（れんしゅう）しました。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "しませんでした", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3366,7 +4111,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-hl-2c-1-iii", topicId: "japanese-5-5", conceptId: "ja-2c-1iii",
     section: "2", questionRef: "2023 HL Section 2C Q1(iii)",
     stem: "Write the following in the negative form as in the example. Answer any FIVE. e.g. 好きです。 好きじゃないです。",
-    questionText: "力士になりたい。",
+    questionText: "力士（りきし）になりたい。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "なりたくない", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3442,6 +4187,150 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "入らなかった", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2c-2-i", topicId: "japanese-5-5", conceptId: "ja-2c-2i",
+    section: "2", questionRef: "2023 HL Section 2C Q2(i)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. スポーツを（します） する ことが好きです。",
+    questionText: "練 習（れんしゅう）に（行きます） 、シャワーをあびて、うちに帰（かえ）ります。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "行って", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2c-2-ii", topicId: "japanese-5-5", conceptId: "ja-2c-2ii",
+    section: "2", questionRef: "2023 HL Section 2C Q2(ii)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. スポーツを（します） する ことが好きです。",
+    questionText: "ダンスをしたり、本を（読みます） りしました。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "よんだ", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2c-2-iii", topicId: "japanese-5-5", conceptId: "ja-2c-2iii",
+    section: "2", questionRef: "2023 HL Section 2C Q2(iii)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. スポーツを（します） する ことが好きです。",
+    questionText: "日曜（よう）日に（休みます） つもりです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "休む", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2c-2-iv", topicId: "japanese-5-5", conceptId: "ja-2c-2iv",
+    section: "2", questionRef: "2023 HL Section 2C Q2(iv)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. スポーツを（します） する ことが好きです。",
+    questionText: "テレビで試合（しあい）を（見ません） と思います。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "見ない", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2c-2-v", topicId: "japanese-5-5", conceptId: "ja-2c-2v",
+    section: "2", questionRef: "2023 HL Section 2C Q2(v)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. スポーツを（します） する ことが好きです。",
+    questionText: "明日（あした）は試合（しあい）ですから、早（はや）く（ねます） ください。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ねて", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Japanese 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
+    id: "ja-2023-hl-2c-2-vi", topicId: "japanese-5-5", conceptId: "ja-2c-2vi",
+    section: "2", questionRef: "2023 HL Section 2C Q2(vi)",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. スポーツを（します） する ことが好きです。",
+    questionText: "まだゴルフを（します） ことがありません。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "した", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3576,7 +4465,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
     id: "ja-2023-hl-3b-1", topicId: "japanese-5-1", conceptId: "ja-3b-1",
     section: "3", questionRef: "2023 HL Section 3B Q1",
-    questionText: "アンナさんは、夏の制服と冬の制服と、どちらのほうが好きですか。",
+    stem: "アンナさんは、夏（なつ）の制服（せいふく）と冬（ふゆ）の制服（せいふく）と、どちらのほうが好きですか。",
+    questionText: "アンナさんは、夏の（なつ）制服と（せいふく）冬の（ふゆ）制服と（せいふく）、どちらのほうが好きですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "ふゆのせいふく", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3622,7 +4512,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Higher Level — © State Examinations Commission.",
     id: "ja-2023-hl-3b-4", topicId: "japanese-5-1", conceptId: "ja-3b-4",
     section: "3", questionRef: "2023 HL Section 3B Q4",
-    questionText: "アンナさんは、どうして病院に行きたくないですか。",
+    stem: "アンナさんは、どうして病 院（びょういん）に行きたくないですか。",
+    questionText: "アンナさんは、どうして病院に（びょういん）行きたくないですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "びょういんはこわいです。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3814,7 +4705,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-hl-3d-ii", topicId: "japanese-5-5", conceptId: "ja-3d-0ii",
     section: "3", questionRef: "2023 HL Section 3D Q(ii)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "科目の中で、日本語 一番好きです。",
+    questionText: "科目（かもく）の中で、日本語 一番（ばん）好きです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "が", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3838,7 +4729,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-hl-3d-iii", topicId: "japanese-5-5", conceptId: "ja-3d-0iii",
     section: "3", questionRef: "2023 HL Section 3D Q(iii)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "学校の近く スーパー あります。",
+    questionText: "学校の近（ちか）く スーパー あります。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "に — が／は", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3886,7 +4777,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-hl-3d-v", topicId: "japanese-5-5", conceptId: "ja-3d-0v",
     section: "3", questionRef: "2023 HL Section 3D Q(v)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "アイルランドの夏休みのほうが日本 長いです。",
+    questionText: "アイルランドの夏（なつ）休みのほうが日本 長（なが）いです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "より", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3934,7 +4825,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-hl-3d-vii", topicId: "japanese-5-5", conceptId: "ja-3d-0vii",
     section: "3", questionRef: "2023 HL Section 3D Q(vii)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "アンナさんはよく友だち バス 町に行きます。",
+    questionText: "アンナさんはよく友（とも）だち バス 町（まち）に行きます。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "と — で", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -4123,30 +5014,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-1a-2-ii", topicId: "japanese-5-0", conceptId: "many-recipes-cocktail-click",
-    section: "1", questionRef: "2024 HL Section 1A Q2(ii)",
-    stem: "Answer 1 – 4 in English.",
-    questionText: "How many recipes for this cocktail can you click to?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "6", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題1",
-          "title": "Question 1 — printed material",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-1a-2-iii", topicId: "japanese-5-0", conceptId: "where-enjoy-cocktail",
     section: "1", questionRef: "2024 HL Section 1A Q2(iii)",
     stem: "Answer 1 – 4 in English.",
@@ -4177,7 +5044,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who was asked about their favourite Pocky?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: ". — 500 , men and women", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "500 , men and women", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4201,7 +5068,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why was November 11th chosen to celebrate Pocky & Pretz Day?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Because Pocky and Pretz have the same shape as the number 1.", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Because Pocky and Pretz have the same shape as the number 1", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4363,222 +5230,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-2-i", topicId: "japanese-5-2", conceptId: "describe-happens-course-tokyo-kart-tour",
-    section: "2", questionRef: "2024 HL Section 2A Q2(i)",
-    stem: "Answer in English.",
-    questionText: "Describe what happens on the A course of the Tokyo Kart tour.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Akihabara - Tokyo Tower-Rainbow Bridge- Ginza- Akihabara (any 2 landmarks), 2-hour tour, follow tour guide, go to famous place, fun if you wear a costume (any 2 details, 2 marks + 1 mark)", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-2-ii", topicId: "japanese-5-2", conceptId: "according-tokyo-kart-rules-things-not",
-    section: "2", questionRef: "2024 HL Section 2A Q2(ii)",
-    stem: "Answer in English.",
-    questionText: "According to the Tokyo Kart rules, what two things are not allowed?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Use earphones","drink alcohol","smoke wear sandals","heels"],"perOptionSteps":[2,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-2-iii", topicId: "japanese-5-2", conceptId: "when-tokyo-kart-tour-cancelled",
-    section: "2", questionRef: "2024 HL Section 2A Q2(iii)",
-    stem: "Answer in English.",
-    questionText: "When can the Tokyo Kart tour be cancelled?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":1,"options":["Snow","rain","wind"]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-2-iv", topicId: "japanese-5-2", conceptId: "learn-kimono-rental",
-    section: "2", questionRef: "2024 HL Section 2A Q2(iv)",
-    stem: "Answer in English.",
-    questionText: "What do you learn about the kimono rental?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Lots of sizes for women","men & children; red","yellow and blue etc kimonos","can do hair style to match kimono","return by 6pm"],"perOptionSteps":[2,1]} },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-2-v", topicId: "japanese-5-2", conceptId: "happens-when-enter-tea-room",
-    section: "2", questionRef: "2024 HL Section 2A Q2(v)",
-    stem: "Answer in English.",
-    questionText: "What happens when you enter the tea room.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Teacher talks about tea ceremony/ teacher does a demonstration", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-3-i", topicId: "japanese-5-2", conceptId: "tokyo-kart",
-    section: "2", questionRef: "2024 HL Section 2A Q3(i)",
-    stem: "Answer in Japanese.",
-    questionText: "Tokyo Kart に乗る時、何をすると楽しくなりますか。",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "好きなキャラクターのコスチュームをきる", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-3-ii", topicId: "japanese-5-2", conceptId: "maikoya",
-    section: "2", questionRef: "2024 HL Section 2A Q3(ii)",
-    stem: "Answer in Japanese.",
-    questionText: "東 京 Maikoya で、どんな物をもらうことができますか。",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "オリジナルのおみやげ", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-3-iii", topicId: "japanese-5-2", conceptId: "maikoya",
-    section: "2", questionRef: "2024 HL Section 2A Q3(iii)",
-    stem: "Answer in Japanese.",
-    questionText: "東京Maikoya の休日はいつですか。",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "火曜日", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
-    id: "ja-2024-hl-2a-4", topicId: "japanese-5-3", conceptId: "maikoya",
-    section: "2", questionRef: "2024 HL Section 2A Q4",
-    stem: "Translate the following into English. 抹茶を飲んだ後、東 京 Maikoya のきれいな庭で写真を撮ったり、着物で近くのお寺 や神社を歩いたりして、古い日本を楽しむことができます。",
-    questionText: "抹茶を飲んだ後、Maikoya のきれいな庭で写真を撮ったり、着物で近くの有名のお寺や 神社を歩いたりして、古い日本を楽しむことができます。",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "After drinking macha , take photos in the beautiful garden of Maikoya walk in kimono to nearby famous temples and shrines and you can enjoy old Japan.", marks: 4, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "問題2",
-          "title": "Question 2 — printed material",
-          "pages": [
-                6
-          ],
-          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC058ALP000BV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2b-1-i", topicId: "japanese-5-4", conceptId: "ja-2b-1i",
     section: "2", questionRef: "2024 HL Section 2B Q1(i)",
     stem: "Write the meaning of any FIVE of the following Kanji in English. e.g. 日本 An tSeapáin / Japan",
@@ -4725,7 +5376,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2b-2-i", topicId: "japanese-5-4", conceptId: "ja-2b-2i",
     section: "2", questionRef: "2024 HL Section 2B Q2(i)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "人気",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4749,7 +5400,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2b-2-ii", topicId: "japanese-5-4", conceptId: "ja-2b-2ii",
     section: "2", questionRef: "2024 HL Section 2B Q2(ii)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "英語",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4773,7 +5424,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2b-2-iii", topicId: "japanese-5-4", conceptId: "ja-2b-2iii",
     section: "2", questionRef: "2024 HL Section 2B Q2(iii)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "話",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4797,7 +5448,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2b-2-iv", topicId: "japanese-5-4", conceptId: "ja-2b-2iv",
     section: "2", questionRef: "2024 HL Section 2B Q2(iv)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "来て",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4821,7 +5472,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2b-2-v", topicId: "japanese-5-4", conceptId: "ja-2b-2v",
     section: "2", questionRef: "2024 HL Section 2B Q2(v)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
     questionText: "強い",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -4845,11 +5496,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2b-2-vi", topicId: "japanese-5-4", conceptId: "ja-2b-2vi",
     section: "2", questionRef: "2024 HL Section 2B Q2(vi)",
-    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い",
-    questionText: "女性",
+    stem: "Write the reading of any FIVE of following Kanji in Hiragana. e.g. 行く い（く）",
+    questionText: "女性（せい）",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "じょ", marks: 1, contextNote: "Write the READING of the printed kanji, in hiragana, as the examination paper directs." },
+    { id: "r-1", kind: "point", verbatim: "じょ（せい）", marks: 1, contextNote: "Write the READING of the printed kanji, in hiragana, as the examination paper directs." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4870,7 +5521,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2024-hl-2c-1-i", topicId: "japanese-5-5", conceptId: "ja-2c-1i",
     section: "2", questionRef: "2024 HL Section 2C Q1(i)",
     stem: "Write the following in the plain form as in the example. Answer any FIVE. e.g. 好きじゃありません。 好きじゃない。",
-    questionText: "抹茶を飲みます。",
+    questionText: "抹茶（まっちゃ）を飲みます。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "飲む", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -4990,7 +5641,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2024-hl-2c-1-vi", topicId: "japanese-5-5", conceptId: "ja-2c-1vi",
     section: "2", questionRef: "2024 HL Section 2C Q1(vi)",
     stem: "Write the following in the plain form as in the example. Answer any FIVE. e.g. 好きじゃありません。 好きじゃない。",
-    questionText: "東京はとてもきれいです。",
+    questionText: "東京（きょう）はとてもきれいです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "きれいだ", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -5013,8 +5664,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2c-2-i", topicId: "japanese-5-5", conceptId: "ja-2c-2i",
     section: "2", questionRef: "2024 HL Section 2C Q2(i)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京 でカートに（乗ります） のる ことができます。",
-    questionText: "歴史の話を（聞きます） たいです。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京（きょう） でカートに（乗（の）ります） のる ことができます。",
+    questionText: "歴史（れきし）の話を（聞きます） たいです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "聞き", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -5037,8 +5688,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2c-2-ii", topicId: "japanese-5-5", conceptId: "ja-2c-2ii",
     section: "2", questionRef: "2024 HL Section 2C Q2(ii)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京 でカートに（乗ります） のる ことができます。",
-    questionText: "ガイドさんと写真を もいいです。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京（きょう） でカートに（乗（の）ります） のる ことができます。",
+    questionText: "ガイドさんと写真（しゃしん）を（とります） もいいです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "とって", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -5061,7 +5712,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2c-2-iii", topicId: "japanese-5-5", conceptId: "ja-2c-2iii",
     section: "2", questionRef: "2024 HL Section 2C Q2(iii)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京 でカートに（乗ります） のる ことができます。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京（きょう） でカートに（乗（の）ります） のる ことができます。",
     questionText: "いそがしいですから、ツアーに（行きません） と思います。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -5085,8 +5736,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2c-2-iv", topicId: "japanese-5-5", conceptId: "ja-2c-2iv",
     section: "2", questionRef: "2024 HL Section 2C Q2(iv)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京 でカートに（乗ります） のる ことができます。",
-    questionText: "抹茶を飲んだり、おかしを（食べます） りします。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京（きょう） でカートに（乗（の）ります） のる ことができます。",
+    questionText: "抹茶（まっちゃ）を飲んだり、おかしを（食べます） りします。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "たべた", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -5109,8 +5760,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2c-2-v", topicId: "japanese-5-5", conceptId: "ja-2c-2v",
     section: "2", questionRef: "2024 HL Section 2C Q2(v)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京 でカートに（乗ります） のる ことができます。",
-    questionText: "チケットを（買います） から、友だちにあいます。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京（きょう） でカートに（乗（の）ります） のる ことができます。",
+    questionText: "チケットを（買います） から、友（とも）だちにあいます。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "買って／買った／買う", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -5133,8 +5784,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-2c-2-vi", topicId: "japanese-5-5", conceptId: "ja-2c-2vi",
     section: "2", questionRef: "2024 HL Section 2C Q2(vi)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京 でカートに（乗ります） のる ことができます。",
-    questionText: "ガイドさんは運転を ことが上手です。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 東 京（きょう） でカートに（乗（の）ります） のる ことができます。",
+    questionText: "ガイドさんは運転（うんてん）を（します） ことが上手です。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "する", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -5412,6 +6063,54 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
+    id: "ja-2024-hl-3c-iii", topicId: "japanese-5-4", conceptId: "ja-3c-0iii",
+    section: "3", questionRef: "2024 HL Section 3C Q(iii)",
+    stem: "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
+    questionText: "下手 (a) へた (b) だめ (c) したず (d) じょうず",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "へた (a) bad at/poor at", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
+    id: "ja-2024-hl-3c-iv", topicId: "japanese-5-4", conceptId: "ja-3c-0iv",
+    section: "3", questionRef: "2024 HL Section 3C Q(iv)",
+    stem: "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
+    questionText: "休み (a)やつみ (b) なつみ (c)このみ (d)やすみ",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "やすみ (d) rest/ break", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-3c-v", topicId: "japanese-5-4", conceptId: "ja-3c-0v",
     section: "3", questionRef: "2024 HL Section 3C Q(v)",
     stem: "Circle the correct reading for ANY FIVE of the following Kanji and write the meaning in English as in the example.",
@@ -5463,10 +6162,34 @@ export const CARDS: SecCard[] = [
     id: "ja-2024-hl-3d-i", topicId: "japanese-5-5", conceptId: "ja-3d-0i",
     section: "3", questionRef: "2024 HL Section 3D Q(i)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "アーロンの家は川崎 あります。",
+    questionText: "アーロンの家（いえ）は川崎（さき） あります。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "に", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
+    id: "ja-2024-hl-3d-ii", topicId: "japanese-5-5", conceptId: "ja-3d-0ii",
+    section: "3", questionRef: "2024 HL Section 3D Q(ii)",
+    stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    questionText: "アーロンの家（いえ）から学校 自転（じてん）車 10 分かかります。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "まで／の で(accept まで if の is used in the previous particle) 1 mark", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5508,6 +6231,54 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
+    id: "ja-2024-hl-3d-iv", topicId: "japanese-5-5", conceptId: "ja-3d-0iv",
+    section: "3", questionRef: "2024 HL Section 3D Q(iv)",
+    stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    questionText: "アーロンはバドミントン 大好きです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "が／は ／も", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
+    id: "ja-2024-hl-3d-v", topicId: "japanese-5-5", conceptId: "ja-3d-0v",
+    section: "3", questionRef: "2024 HL Section 3D Q(v)",
+    stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    questionText: "アーロンはクラブの練 習（れんしゅう）は楽（たの）しい 言っています。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "と", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-3d-vi", topicId: "japanese-5-5", conceptId: "ja-3d-0vi",
     section: "3", questionRef: "2024 HL Section 3D Q(vi)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
@@ -5532,10 +6303,34 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
+    id: "ja-2024-hl-3d-vii", topicId: "japanese-5-5", conceptId: "ja-3d-0vii",
+    section: "3", questionRef: "2024 HL Section 3D Q(vii)",
+    stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
+    questionText: "アーロンは 将（しょう） 来、日本語の先生 なりたいです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "に／まで", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Higher Level — © State Examinations Commission.",
     id: "ja-2024-hl-3d-viii", topicId: "japanese-5-5", conceptId: "ja-3d-0viii",
     section: "3", questionRef: "2024 HL Section 3D Q(viii)",
     stem: "Insert the correct particle into ANY TEN blank spaces below. There may be more than one correct answer.",
-    questionText: "毎日 7 時 歩いて学校 行きます。",
+    questionText: "毎日 7 時 歩（ある）いて学校 行きます。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "に／へ", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -5962,7 +6757,7 @@ export const CARDS: SecCard[] = [
     questionText: "EXPO25 は日本のどこですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "大阪 / 夢洲", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "大阪（さか） / 夢（ゆめ）洲（しま）", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5983,7 +6778,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2025-hl-2a-1-b", topicId: "japanese-5-2", conceptId: "ja-2a-1b",
     section: "2", questionRef: "2025 HL Section 2A Q1(b)",
     stem: "Answer in Japanese.",
-    questionText: "誰がオフィシャル・テーマ・ソングを歌っていますか。",
+    questionText: "誰が（だれ）オフィシャル・テーマ・ソングを歌っ（うた）ていますか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "コブクロ — (男の人二人 1 mark)", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6007,7 +6802,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2025-hl-2a-1-c", topicId: "japanese-5-2", conceptId: "ja-2a-1c",
     section: "2", questionRef: "2025 HL Section 2A Q1(c)",
     stem: "Answer in Japanese.",
-    questionText: "和太鼓のワークショップで、何をしますか。",
+    questionText: "和太鼓（わだいこ）のワークショップで、何をしますか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "わだいこをつくって 、わだいこのにぎやかなリズムを学びます。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6247,7 +7042,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2025-hl-2b-1-f", topicId: "japanese-5-4", conceptId: "ja-2b-1f",
     section: "2", questionRef: "2025 HL Section 2B Q1(f)",
     stem: "Write the meaning of any FIVE of the following Kanji in English. e.g. 日本 An tSeapáin / Japan",
-    questionText: "毎週金曜日",
+    questionText: "毎週金曜（よう）日",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "every Friday", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6487,10 +7282,10 @@ export const CARDS: SecCard[] = [
     id: "ja-2025-hl-2c-1-d", topicId: "japanese-5-5", conceptId: "ja-2c-1d",
     section: "2", questionRef: "2025 HL Section 2C Q1(d)",
     stem: "Write the following in the past form as in the example. Answer any FIVE. e.g. 好きです。 好きでした。",
-    questionText: "テーマ・ソングを歌いません。",
+    questionText: "テーマ・ソングを歌（うた）いません。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "歌いませんでした", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "歌（うた）いませんでした", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6511,7 +7306,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2025-hl-2c-1-e", topicId: "japanese-5-5", conceptId: "ja-2c-1e",
     section: "2", questionRef: "2025 HL Section 2C Q1(e)",
     stem: "Write the following in the past form as in the example. Answer any FIVE. e.g. 好きです。 好きでした。",
-    questionText: "パビリオンは静かじゃない。",
+    questionText: "パビリオンは静（しず）かじゃない。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(しずか)じゃなかった", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6535,7 +7330,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2025-hl-2c-1-f", topicId: "japanese-5-5", conceptId: "ja-2c-1f",
     section: "2", questionRef: "2025 HL Section 2C Q1(f)",
     stem: "Write the following in the past form as in the example. Answer any FIVE. e.g. 好きです。 好きでした。",
-    questionText: "アイルランド音楽を聞く。",
+    questionText: "アイルランド音楽（おんがく）を聞く。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "聞いた", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6558,8 +7353,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-2c-2-a", topicId: "japanese-5-5", conceptId: "ja-2c-2a",
     section: "2", questionRef: "2025 HL Section 2C Q2(a)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪に すんで います。",
-    questionText: "旅行会社でチケットを（買いません） ほうがいいです。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪（さか）に（すみます） すんで います。",
+    questionText: "旅行会社（りょこうがいしゃ）でチケットを（買いません） ほうがいいです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "買わない", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6582,7 +7377,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-2c-2-b", topicId: "japanese-5-5", conceptId: "expo25",
     section: "2", questionRef: "2025 HL Section 2C Q2(b)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪に すんで います。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪（さか）に（すみます） すんで います。",
     questionText: "来月、一人で EXPO25 に（行きます） かもしれません。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -6606,8 +7401,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-2c-2-c", topicId: "japanese-5-5", conceptId: "ja-2c-2c",
     section: "2", questionRef: "2025 HL Section 2C Q2(c)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪に すんで います。",
-    questionText: "日本食を食べたり、お茶を（飲みます） りします。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪（さか）に（すみます） すんで います。",
+    questionText: "日本食を食べたり、お茶（ちゃ）を（飲みます） りします。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "飲んだ", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6630,8 +7425,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-2c-2-d", topicId: "japanese-5-5", conceptId: "expo25",
     section: "2", questionRef: "2025 HL Section 2C Q2(d)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪に すんで います。",
-    questionText: "EXPO25 でクラフトを（作ります） たいです。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪（さか）に（すみます） すんで います。",
+    questionText: "EXPO25 でクラフトを（作（つく）ります） たいです。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "つくり", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6654,8 +7449,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-2c-2-e", topicId: "japanese-5-5", conceptId: "ja-2c-2e",
     section: "2", questionRef: "2025 HL Section 2C Q2(e)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪に すんで います。",
-    questionText: "アイリッシュ・ダンスを と思います。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪（さか）に（すみます） すんで います。",
+    questionText: "アイリッシュ・ダンスを（しません） と思います。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "しない", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6678,8 +7473,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-2c-2-f", topicId: "japanese-5-5", conceptId: "ja-2c-2f",
     section: "2", questionRef: "2025 HL Section 2C Q2(f)",
-    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪に すんで います。",
-    questionText: "花火を（見ます） から、電車で帰ります。",
+    stem: "Write the correct form of each verb. Answer any FIVE. e.g. 私は大阪（さか）に（すみます） すんで います。",
+    questionText: "花（はな）火を（見ます） から、電車で帰（かえ）ります。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "見て/見るから/見たから", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6817,7 +7612,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3b-1", topicId: "japanese-5-1", conceptId: "ja-3b-1",
     section: "3", questionRef: "2025 HL Section 3B Q1",
-    questionText: "空港から大学の寮までどれぐらいかかりましたか。",
+    stem: "空港（くうこう）から大学の寮（りょう）までどれぐらいかかりましたか。",
+    questionText: "空港か（くうこう）ら大学の寮ま（りょう）でどれぐらいかかりましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "三時間", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6840,7 +7636,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3b-2", topicId: "japanese-5-1", conceptId: "ja-3b-2",
     section: "3", questionRef: "2025 HL Section 3B Q2",
-    questionText: "長野の天気はどうでしたか。",
+    stem: "長野（ながの）の天気はどうでしたか。",
+    questionText: "長野の（ながの）天気はどうでしたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "二十九ど , むしあつかった", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -6863,10 +7660,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3b-3", topicId: "japanese-5-1", conceptId: "ja-3b-3",
     section: "3", questionRef: "2025 HL Section 3B Q3",
-    questionText: "ローナンさんと強さんは、どんな時に何語で話しますか。",
+    stem: "ローナンさんと強（つよし）さんは、どんな時に何語で話しますか。",
+    questionText: "ローナンさんと強さ（つよし）んは、どんな時に何語で話しますか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "大学の時は日本語 ,あそぶ時は英語 ,", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "大学の時は日本語 ,あそぶ時は英語", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6886,7 +7684,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3b-4", topicId: "japanese-5-1", conceptId: "ja-3b-4",
     section: "3", questionRef: "2025 HL Section 3B Q4",
-    questionText: "ローナンさんは、試験の後、何が楽しみですか。",
+    stem: "ローナンさんは、試験（しけん）の後、何が楽（たの）しみですか。",
+    questionText: "ローナンさんは、試験（しけん）の後、何が楽し（たの）みですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "スキー", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -7047,7 +7846,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3d-1", topicId: "japanese-5-1", conceptId: "ja-3d-1",
     section: "3", questionRef: "2025 HL Section 3D Q1",
-    questionText: "ローナンさんは、大学の寮はきれいだ 言っています。",
+    questionText: "ローナンさんは、大学の寮（りょう）はきれいだ 言っています。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "と", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -7070,7 +7869,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3d-2", topicId: "japanese-5-1", conceptId: "ja-3d-2",
     section: "3", questionRef: "2025 HL Section 3D Q2",
-    questionText: "サッカーのトレーニングは夜7 時 8 時半 です。",
+    questionText: "サッカーのトレーニングは夜（よる）7 時 8 時半 です。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "から — まで", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -7114,12 +7913,81 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC058ALP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    id: "ja-2025-hl-3d-4", topicId: "japanese-5-1", conceptId: "ja-3d-4",
+    section: "3", questionRef: "2025 HL Section 3D Q4",
+    questionText: "ローナンさんは、寮（りょう） 友（とも）だち ばんご飯（はん） 食べません。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "の ／で — と／の — を", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    id: "ja-2025-hl-3d-5", topicId: "japanese-5-1", conceptId: "ja-3d-5",
+    section: "3", questionRef: "2025 HL Section 3D Q5",
+    questionText: "長野（ながの）のほう ダブリン 楽（たの）しいです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "が — より", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
     id: "ja-2025-hl-3d-6", topicId: "japanese-5-1", conceptId: "ja-3d-6",
     section: "3", questionRef: "2025 HL Section 3D Q6",
-    questionText: "大学まで自転車 15 分ぐらいかかります。",
+    questionText: "大学まで自転（じてん）車 15 分ぐらいかかります。",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "で", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Japanese 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC058ALP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Higher Level — © State Examinations Commission.",
+    id: "ja-2025-hl-3d-7", topicId: "japanese-5-1", conceptId: "ja-3d-7",
+    section: "3", questionRef: "2025 HL Section 3D Q7",
+    questionText: "ローナンさんは、ときどき強（つよし）さんの部（へ）屋（や） 行って、料理（りょうり）します。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "に / へ", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -72,6 +72,7 @@ from ja_scheme import JaScheme                                # noqa: E402
 from ja_topics import (topic_for, concept_for, answer_language,  # noqa: E402
                        language_note, FURIGANA_NOTE, JAPANESE, HIRAGANA)
 from paper_census import census_subject, key_label            # noqa: E402
+import cardlint                                               # noqa: E402
 
 SUBJECT = 'japanese'
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
@@ -93,6 +94,11 @@ WORDS = {'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7,
 # The part-marks the scheme sets inside an answer to show how it divides.
 INLINE_MARKS = re.compile(r'\s*\(\s*\d{1,2}\s*marks?\s*\)', re.I)
 SENTENCE_END = re.compile(r'[?？。｡.]')
+# How an ask ENDS, as against an answer: a question mark, or the か。 that
+# closes every Japanese-set question in these papers. A full stop closes both —
+# the scheme answers 2022 Ordinary's grammar item (vi) "かえりました。" — so
+# a full stop cannot be the test.
+QUESTION_END = re.compile(r'[?？]\s*$|[かカ]\s*[。｡]\s*$')
 MARKER_ONLY = re.compile(r'[\s(]*[a-hivx]{1,4}[).\s]*', re.I)
 TABLE = re.compile(r'Complete\s+the\s+(?:following\s+)?(?:table|chart)'
                    r'|Comhl[áa]naigh\s+an\s+(?:t[áa]bla|chairt)', re.I)
@@ -172,7 +178,7 @@ CELL = 25
 
 
 def _verbatim(leaf):
-    lines = [INLINE_MARKS.sub(' ', l).strip() for l in leaf.lines]
+    lines = [INLINE_MARKS.sub(' ', l).strip(' .,;:—-') for l in leaf.lines]
     lines = [l for l in lines if l]
     if not lines:
         return ''
@@ -200,7 +206,20 @@ def _english_column(ask):
         i = text.rfind(tok)
         if i > 8 and i + len(tok) < len(text) - 8:
             cut = max(cut or 0, i + len(tok))
-    return text[cut:].strip() if cut else text
+    if cut:
+        return text[cut:].strip()
+    # No repeated marker to cut on — the kanji sections number the ROW and set
+    # the item itself twice, once over the Irish options and once over the
+    # English: "何 (a)cathain (b) cá (c) cad (d) conas 何 (a) when (b) where
+    # (c) what (d) how". There the repeat of the item's own opening is the
+    # column bound, and the two halves are the same length either side of it.
+    head = text[:4].strip()
+    if len(head) >= 2:
+        i = text.rfind(head)
+        if i > 6 and 0.6 <= (len(text) - i) / i <= 1.6 \
+                and LATIN.search(text[i:]):
+            return text[i:].strip()
+    return text
 
 
 def _options(body):
@@ -299,7 +318,8 @@ def _reading(P, S, year, level, emit, refuse):
         skeys = [k for k in scheme if k[0] == 'R' and str(k[1]) == q]
         if not pkeys:
             continue
-        if len(pkeys) != len(skeys):
+        blocks = _align(pkeys, skeys, paper, scheme)
+        if blocks is None:
             for pk in pkeys:
                 for ask in paper[pk]:
                     refuse('the paper and the scheme do not head the same '
@@ -310,8 +330,54 @@ def _reading(P, S, year, level, emit, refuse):
                            f'{len(pkeys)} part(s) ({", ".join(pkeys)}) and '
                            f'the scheme prices {len(skeys)}', stated=False)
             continue
-        for pk, sk in zip(pkeys, skeys):
-            _part(P, paper[pk], scheme[sk], pk, q, year, level, emit, refuse)
+        for pks, sks in blocks:
+            pp = [a for pk in pks for a in paper[pk]]
+            ss = [lf for sk in sks for lf in scheme[sk]]
+            _part(P, pp, ss, '+'.join(pks), q, year, level, emit, refuse)
+
+
+def _align(pkeys, skeys, paper, scheme):
+    """Pair the two documents' parts, allowing one to SUBDIVIDE the other.
+
+    The two do not always head the same number of parts, and where they differ
+    it is because one of them divided a part the other kept whole: the 2022
+    Ordinary scheme sets question 3's first part in two ("A: (19 marks)" and
+    "B: (9 marks)") where the paper heads one, and the 2025 Ordinary scheme
+    divides question 1 the same way.
+
+    So the two lists are cut wherever their RUNNING TOTALS agree, and a block
+    is accepted only where one side of it is a single part. A block that is
+    several parts on BOTH sides pairs nothing, because then the totals agreeing
+    says only that the paper and the scheme hold the same number of asks
+    somewhere in that stretch — not that any one of them is the same ask.
+    """
+    pn = [len(paper[k]) for k in pkeys]
+    sn = [len(scheme[k]) for k in skeys]
+    if len(pn) == len(sn):
+        # Same number of heads: pair them off, and let each pair answer for
+        # itself. A part the scheme heads and leaves empty is refused alone,
+        # not treated as a reason to give up on the question around it.
+        return [([p], [s]) for p, s in zip(pkeys, skeys)]
+    if sum(pn) != sum(sn):
+        return None
+    blocks, i, j = [], 0, 0
+    while i < len(pn) and j < len(sn):
+        pi, sj, a, b = i, j, pn[i], sn[j]
+        i += 1
+        j += 1
+        while a != b:
+            if a < b and i < len(pn):
+                a, i = a + pn[i], i + 1
+            elif b < a and j < len(sn):
+                b, j = b + sn[j], j + 1
+            else:
+                return None
+        if i - pi > 1 and j - sj > 1:
+            return None
+        blocks.append((pkeys[pi:i], skeys[sj:j]))
+    if any(pn[i:]) or any(sn[j:]):
+        return None
+    return blocks
 
 
 NO_ANSWER_EVIDENCE = (
@@ -355,14 +421,24 @@ def _part(P, pp, ss, pk, q, year, level, emit, refuse):
 
 
 def _rubric_stem(rubric):
-    """The part's instruction, as the card's stem: English, and no marker."""
+    """The part's instruction, as the card's stem: English, and no marker.
+
+    Dropped where the two printed columns interleave past recovering. The
+    Ordinary instruction is set in two columns and its wrapped lines arrive
+    shuffled — "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá
+    leis na Kanji seo a leanas mar atá sa 3. Circle the correct meaning …" —
+    and cardlint's own label-junk rule is what says so, imported rather than
+    reimplemented so the build cannot drift from the lint.
+    """
     t = _bilingual_english(rubric)
     t = re.sub(r'^\s*\d{1,2}\s*[.)]\s*', '', t)
     t = re.sub(r'^\s*[A-D]\s*[:.]\s*', '', t)
-    return _clean(t) or None
+    t = _clean(t)
+    return None if not t or cardlint.label_junk(t) else t
 
 
 WORD = re.compile(r"[A-Za-z\u00c0-\u017f]{4,}")
+LATIN = re.compile(r"[A-Za-z]{3,}")
 JA_CHAR = re.compile(r'[぀-ヿ㐀-鿿]')
 
 
@@ -408,6 +484,15 @@ def _one_card(P, ask, lf, stated, year, level, emit, refuse):
         return
     rubric = P.item_rubric(ask.section, ask.q)
     body = _clean(lf.body)
+    # Where the scheme sets the ANSWER on the marker's own row and nothing
+    # under it — the Ordinary kanji section prints "(iii) b" and stops — the
+    # head is the answer, not a reprinted question. Read the other way round it
+    # said "the scheme states no answer for this ask" about thirteen asks the
+    # scheme answers in one character, which is an open ask laundered into an
+    # exclusion; the ratchet refused the re-measure and was right to.
+    if not body and lf.head and not QUESTION_END.search(lf.head) \
+            and len(lf.head) <= 60:
+        lf.lines, lf.head, body = [lf.head], '', lf.head
     # The scheme's reprinted question WRAPS onto the row that carries the
     # answer: 2025 Higher prints "Name two travel items recommended on" and
     # then "April 20th. ear plugs, neck pillow, slippers (any 2 …)". Left as
@@ -422,6 +507,8 @@ def _one_card(P, ask, lf, stated, year, level, emit, refuse):
             rest = _clean(first[cut:])
             lf.lines = ([rest] if rest else []) + lf.lines[1:]
             body = _clean(' '.join(lf.lines))
+    if not _verbatim(lf).strip(' .,;:—-'):
+        body = ''
     if not body:
         refuse('the scheme states no answer for this ask', ref,
                f'{where}: the scheme prints the question and a tariff and '

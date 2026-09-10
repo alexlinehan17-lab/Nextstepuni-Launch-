@@ -96,6 +96,9 @@ TAPESCRIPT = re.compile(r'^TAPESCRIPT\b', re.I)
 GRID = re.compile(r'^Marking\s+WRITTEN\s+EXPRESSION|^Expression\s*:', re.I)
 FRONT = re.compile(r'Note to teachers and students|Marking schemes published'
                    r'|Future Marking Schemes|^Marking Scheme$', re.I)
+WORD_COUNTS = {'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
+               'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11,
+               'twelve': 12, 'thirteen': 13}
 TARIFF_ONLY = re.compile(r'^[\s.]*\(?\s*\d{1,3}\s*marks?\s*\)?[\s.]*$', re.I)
 
 
@@ -137,6 +140,7 @@ class JaScheme:
         self._leaves = None
         self.part_heads = []        # every part head, in printed order
         self.part_marks = {}        # (component, q, part index) -> marks
+        self.part_text = {}         # (component, q, part index) -> its head
         self.question_marks = {}    # (component, q) -> marks
 
     @property
@@ -155,6 +159,24 @@ class JaScheme:
             if k not in out:
                 out.append(k)
         return out
+
+    def _rate(self, leaf):
+        """What one item of this part is worth, where the head says so."""
+        key = (leaf.component, leaf.q, leaf.part)
+        head = self.part_text.get(key, '')
+        m = re.search(r'(\d{1,2})\s*marks?\s*each', head, re.I)
+        if m:
+            return int(m.group(1))
+        m = re.search(r'any\s+(\w+)\s+(?:correct\s+)?answers?', head, re.I)
+        total = self.part_marks.get(key)
+        if not m or total is None:
+            return None
+        n = WORD_COUNTS.get(m.group(1).lower())
+        if n is None and m.group(1).isdigit():
+            n = int(m.group(1))
+        if n and total % n == 0:
+            return total // n
+        return None
 
     def by_part(self):
         """{(component, question, part index): [leaf]} in printed order.
@@ -184,6 +206,8 @@ class JaScheme:
         q = None
         part = None
         part_name = None
+        part_form = None
+        part_leaves = 0
         part_seq = 0
         cur_path = []
         leaves = []
@@ -191,54 +215,61 @@ class JaScheme:
         order = 0
         for pno, groups in doc_rows(self.path):
             xs = [x for x, _x1, _t in groups]
-            texts = [plain(t) for _x, _x1, t in groups]
-            joined = ' '.join(texts)
+            # The scheme's own text, AS PRINTED. Only the head tests strip the
+            # furigana, and only because a head carries it — 問題（もんだい）.
+            # An ANSWER carries it too, and there it is content: the scheme
+            # answers 2021 Higher's question 3 with 畳（たたみ）の部屋, and a
+            # card printing 畳の部屋 has dropped a reading the SEC supplied.
+            texts = [t for _x, _x1, t in groups]
+            joined = plain(' '.join(texts))
+            head0 = plain(texts[0])
             if FRONT.search(joined):
                 continue
-            if TAPESCRIPT.match(texts[0]):
+            if TAPESCRIPT.match(head0):
                 component = None
                 cur = None
                 continue
-            if GRID.match(texts[0]):
+            if GRID.match(head0):
                 muted, cur = True, None
                 continue
-            if LISTENING.match(texts[0]):
+            if LISTENING.match(head0):
                 component, q, part, part_seq = 'L', None, None, 0
-                part_name = None
+                part_name, part_form, part_leaves = None, None, 0
                 cur_path, cur, muted = [], None, False
                 continue
-            if READING.match(texts[0]):
+            if READING.match(head0):
                 component, q, part, part_seq = 'R', None, None, 0
-                part_name = None
+                part_name, part_form, part_leaves = None, None, 0
                 cur_path, cur, muted = [], None, False
                 continue
-            if WRITTEN.match(texts[0]):
+            if WRITTEN.match(head0):
                 component, q, part, part_seq = 'W', None, None, 0
-                part_name = None
+                part_name, part_form, part_leaves = None, None, 0
                 cur_path, cur, muted = [], None, False
                 continue
             if component is None:
                 continue
             # The page number, alone on a row. Absorbed into the answer above
             # it, it put a stray "6" on the end of an ask worth two marks.
-            if all(re.fullmatch(r'\d{1,3}', t.strip()) for t in texts):
+            if all(re.fullmatch(r'\d{1,3}', plain(t).strip()) for t in texts):
                 continue
-            head = Q_HEAD.match(texts[0])
+            head = Q_HEAD.match(head0)
             if head:
                 q = int(head.group(1))
                 part, part_name, part_seq = None, None, 0
+                part_form, part_leaves = None, 0
                 cur_path, cur, muted = [], None, False
                 m = MARKS.search(joined) or re.search(r'\b(\d{2,3})\s*marks\b',
                                                       joined, re.I)
                 if m:
                     self.question_marks[(component, q)] = int(m.group(1))
-                rest = texts[0][head.end():].strip()
+                rest = _after(texts[0], head.end())
                 if not rest or TARIFF_ONLY.match(rest) or MARKS.match(rest):
                     continue
                 texts = [rest] + texts[1:]
-                xs = list(xs)
-            ph = PART_HEAD.match(texts[0])
-            rest = texts[0][ph.end():].strip() if ph else ''
+                head0 = plain(rest)
+            ph = PART_HEAD.match(head0)
+            rest = _after(texts[0], ph.end()) if ph else ''
             if ph and (q is not None or component == 'L') \
                     and xs[0] <= PART_MARGIN \
                     and (not rest or PART_TAIL.match(rest)):
@@ -251,9 +282,20 @@ class JaScheme:
                 # "C: GRAMMAR", and taking the letter alone welded them into
                 # one part and lost the pairing for the whole paper.
                 name = _task_name(rest)
-                if letter != part or (name and name != part_name):
+                form = 'part' if ph.group(1) else 'bare'
+                # A head written "Part B." after a head written "B." is the SEC
+                # RESTARTING its lettering, not repeating it: the 2024 Ordinary
+                # scheme heads question 2's four parts "A.", "B.", "Part B."
+                # and "Part C.". Taking the letter alone welded the kanji
+                # section onto the true/false section above it. The change of
+                # FORM only counts once the part above has answers under it —
+                # "Part A:" followed immediately by a bare "A:" is one head
+                # printed twice, which is how Higher's question 1 opens.
+                restarted = (form != part_form and part_leaves)
+                if letter != part or (name and name != part_name) or restarted:
                     part_seq += 1
-                    part, part_name = letter, name
+                    part, part_name, part_form = letter, name, form
+                    part_leaves = 0
                     # Recorded even where the scheme lists nothing under it.
                     # The Ordinary culture section is headed "D: (4 marks)" and
                     # answered "2 marks each for any 2 points" — a part with a
@@ -261,13 +303,15 @@ class JaScheme:
                     # list shifted every part after it onto the wrong ask.
                     self.part_heads.append((component, q, part_seq))
                     cur_path, cur = [], None
-                    m = MARKS.search(' '.join([rest] + texts[1:]))
+                    head_text = ' '.join([rest] + texts[1:])
+                    self.part_text[(component, q, part_seq)] = head_text
+                    m = MARKS.search(head_text)
                     if m:
                         self.part_marks[(component, q, part_seq)] = int(m.group(1))
                 if not rest or TARIFF_ONLY.match(rest):
                     continue
                 texts = [rest] + texts[1:]
-                xs = list(xs)
+                head0 = plain(rest)
             # A marker opens a leaf; anything else is the answer to the leaf
             # already open.
             if muted:
@@ -301,6 +345,7 @@ class JaScheme:
                 cur = Leaf(component, q, part_seq or None, num, letter, roman,
                            rest, pno, order)
                 leaves.append(cur)
+                part_leaves += 1
                 _absorb(cur, list(zip(tail_xs, tail)), True)
                 continue
             if cur is not None:
@@ -322,12 +367,23 @@ class JaScheme:
         # for that whole part in five sittings.
         leaves = [lf for lf in leaves
                   if lf.lines or not EXAMINER.search(lf.head)]
-        leaves = [lf for lf in leaves if not _is_parent(lf, leaves)]
+        leaves = _drop_heads(leaves)
         # ONE PRINTED ADDRESS IS ONE ASK. The SEC repeats one: the 2025 Higher
         # scheme numbers question 2's third ask "(c)" and then numbers the ask
         # after it "(c)" again, three marks each. The paper prints that address
         # once, so the two are folded into the one ask the paper prints, at the
         # tariff the scheme prints for it — 3 + 3, which is stated, not guessed.
+        # A part that prints ONE RATE for every item under it prices the items
+        # it does not price individually: "D: GRAMMAR (10 marks) (any 10
+        # correct answers)" states one mark each, and the scheme then sets its
+        # particles out in columns with the tariff on only some of them. That
+        # is the SEC's own arithmetic on its own printed numbers, not a guess —
+        # and where the head states no rate, nothing is filled in.
+        for lf in leaves:
+            if lf.marks is None:
+                rate = self._rate(lf)
+                if rate is not None:
+                    lf.marks = rate
         out = []
         for lf in leaves:
             prev = out[-1] if out else None
@@ -356,6 +412,12 @@ def _is_question(line):
     return bool(QUESTION_LINE.search(line or ''))
 
 
+def _after(raw, consumed):
+    """`raw` with its first `consumed` NON-RUBY characters removed."""
+    from ja_paper import _after_marker
+    return _after_marker(raw, consumed)
+
+
 def _lead_markers(texts):
     """(address, the text after it, the groups still to be read) or None.
 
@@ -367,14 +429,15 @@ def _lead_markers(texts):
     """
     found, rest, i = [], '', 0
     while i < len(texts):
-        got = _read_marker(texts[i])
+        got = _read_marker(plain(texts[i]), numbered_alone=True)
         if got is None:
             break
         toks, r = got
         found += toks
         i += 1
         if r:
-            rest = r
+            rest = _after(texts[i - 1],
+                          len(plain(texts[i - 1])) - len(r))
             break
     return (found, rest, texts[i:]) if found else None
 
@@ -402,6 +465,10 @@ BARE_MARKS = re.compile(r'(?:^|(?<=\s\s))\(?\d{1,2}\s*marks?\)?'
                         r'(?=\s\s|\s*$)', re.I)
 
 
+TRAILING_TARIFF = re.compile(r'\s{2,}\(?\s*(\d{1,3})\s*marks?\s*\)?[.\s]*$',
+                             re.I)
+
+
 def _strip_marks(text):
     return ' '.join(BARE_MARKS.sub(' ', MARKS.sub(' ', text)).split())
 
@@ -426,12 +493,21 @@ def _absorb(leaf, groups, head_row):
         t = t.strip()
         if not t:
             continue
+        last = i == len(groups) - 1
         if TARIFF_ONLY.match(t):
             m = MARKS.search(t) or re.search(r'(\d{1,3})', t)
-            last = i == len(groups) - 1
             if last and (head_row or x >= RIGHT_MEASURE):
                 leaf.marks = int(m.group(1))
             continue
+        # A tariff set out at the right measure but NOT split into a group of
+        # its own: where the answer runs long the gap in front of the tariff
+        # falls under the column threshold and the two arrive together,
+        # "3 June 2011                    (2 marks)". Thirty-one asks with a
+        # printed answer and a printed tariff were refused for want of this.
+        tail = TRAILING_TARIFF.search(t)
+        if last and tail:
+            leaf.marks = int(tail.group(1))
+            t = t[:tail.start()]
         leaf.lines.append(_strip_marks(t))
     leaf.head = ' '.join(MARKS.sub(' ', leaf.head).split())
     leaf.lines = [' '.join(x.split()) for x in leaf.lines if x.strip()]
@@ -447,6 +523,32 @@ INSTRUCTION = re.compile(
 EXAMINER = re.compile(
     r'half\s*marks|1\s*/\s*2\s*marks|extraneous material'
     r'|if\s+(?:not\s+)?answered in|correct answers?\b|deduct', re.I)
+
+
+def _drop_heads(leaves):
+    """Drop the numbered HEADS, keeping the asks under them.
+
+    A head carries a tariff, or the count and rate its items are marked at,
+    and the answers live in the romans beneath it. But the SEC REUSES a number:
+    the 2024 Higher scheme sets question 2's Japanese-answer items as
+    "3. (i) … (ii) … (iii) …" and then sets the TRANSLATION as "3." again,
+    with the passage under it. So where a number is printed bare more than
+    once above the same romans, only the FIRST is the head — the later ones are
+    asks the SEC numbered the same way, and dropping them lost the translation
+    in three sittings.
+    """
+    bare = collections.OrderedDict()
+    for lf in leaves:
+        if lf.letter is None and lf.roman is None and lf.num is not None:
+            bare.setdefault((lf.component, lf.q, lf.part, lf.num), []).append(lf)
+    heads = set()
+    for key, group in bare.items():
+        if not any(o.num == key[3] and (o.letter or o.roman)
+                   and (o.component, o.q, o.part) == key[:3] for o in leaves):
+            continue
+        for lf in group[:-1] if len(group) > 1 else group:
+            heads.add(id(lf))
+    return [lf for lf in leaves if id(lf) not in heads]
 
 
 def _is_parent(leaf, leaves):

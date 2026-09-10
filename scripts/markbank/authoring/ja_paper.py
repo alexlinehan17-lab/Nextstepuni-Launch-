@@ -87,7 +87,17 @@ PART_CUID = re.compile(r'(?:Cuid|Part)\s*([A-D])\b')
 # "CUID A" beside "PART A" -- where the written booklet heads "Cuid A / Part A".
 AURAL_PART = re.compile(r'^(?:Cuid|Part)\s*([A-D])\b', re.I)
 
-NUM_MARK = re.compile(r'^(\d{1,2})\s*[.)．]\s*')
+# "11." opens an item; "11.30" is half past eleven. The scheme prints its
+# opening hours as "11.30 (1 mark) to 6 (1 mark)" and reading the eleven as a
+# marker invented an ask numbered 11 in a part that stops at 6.
+NUM_MARK = re.compile(r'^(\d{1,2})\s*[.)．](?!\d)\s*')
+# The SCHEME sometimes drops the point after an item number and prints it alone
+# in its own column — "1 | You can edit photos on LINE. | True" — and it can
+# afford to, because every one of its columns is a cell. The PAPER cannot: a
+# bare number there is a page number, a table cell, a price or a ranking, and
+# reading those as markers added 116 asks the SEC never set. So the bare form
+# is opened only by ja_scheme, through `numbered_alone`.
+NUM_ALONE = re.compile(r'^(\d{1,2})\s*$')
 LETTER_MARK = re.compile(r'^\(\s*([a-h])\s*\)\s*')
 # A roman is matched as a RUN of roman letters and then checked against the
 # list, because an alternation ordered by hand drops one: written
@@ -127,6 +137,20 @@ FURNITURE = re.compile(
 COVER = re.compile(r'SCR[ÚU]DUIMHIR|FREAGRA[ÍI]ODH|STAMPA AN IONAID'
                    r'|Coimisi[úu]n na Scr[úu]duithe|OBAIR SCR[ÍI]OFA'
                    r'|WRITTEN PRODUCTION', re.I)
+
+
+# Where the PAPER itself prints the wrong marker. Keyed by sitting, section,
+# the marker printed and the item's own printed text, so nothing is repaired
+# that is not the exact line verified against the page — never a heuristic.
+#
+# 2023 Higher page 8 sets question 2's kanji list "(i) 生まれる (ii) 毎日
+# (iii) 人気 (vi) 入学 (v) 小学生 (vi) 話す": the fourth item is printed (vi)
+# where (iv) belongs, so the paper prints (vi) twice and (iv) not at all. Read
+# as printed the two collapse into one address and the list censuses five asks
+# where the SEC set six — and the scheme prices six.
+MISPRINTS = {
+    (2023, 'hl'): [('2B', '(vi)', '入学', '(iv)')],
+}
 
 
 class Ask:
@@ -234,20 +258,37 @@ class JaPaper:
                 section = f'{q}{letter}'
                 parts.setdefault(section, [])
                 self.section_pages.setdefault(section, []).append(pno + 1)
-                rest = ft[(cuid or ph).end():].strip()
+                rest = first_t[(cuid or ph).end():].strip()
                 row = ([(first_x, rest)] if rest else []) + \
-                      [(g[0], plain(g[2])) for g in groups[1:]]
+                      [(g[0], g[2]) for g in groups[1:]]
                 if row:
                     parts[section].append((row, pno))
                 continue
             if section is None:
                 continue
             self.section_pages.setdefault(section, []).append(pno + 1)
-            row = [(x, plain(t)) for x, _x1, t in groups
+            row = [(x, t) for x, _x1, t in groups
                    if not FURNITURE.match(plain(t))]
+            row = self._misprint(section, row)
             if row:
                 parts[section].append((row, pno))
         return {k: v for k, v in parts.items() if v}
+
+    def _misprint(self, section, row):
+        """Repair a marker the PAPER prints wrongly. See MISPRINTS.
+
+        Matched on the ROW, not the group: the marker and the item it names are
+        set in different columns, so "(vi)" and "入学" never share a string.
+        """
+        joined = ' '.join(t for _x, t in row)
+        for sec, printed, cue, correct in MISPRINTS.get((self.year,
+                                                         self.level), ()):
+            if sec != section or cue not in joined:
+                continue
+            if row and row[0][1].startswith(printed):
+                row = [(row[0][0], correct + row[0][1][len(printed):])] \
+                    + row[1:]
+        return row
 
     def rubric(self, section):
         """The instruction the SEC prints above a part's asks.
@@ -361,15 +402,15 @@ class JaPaper:
             if m and not ft[m.end():].strip():
                 section = f'L{m.group(1)}'
                 parts.setdefault(section, [])
-                rest = ft[m.end():].strip()
+                rest = first_t[m.end():].strip()
                 row = ([(first_x, rest)] if rest else []) + \
-                      [(g[0], plain(g[2])) for g in groups[1:]]
+                      [(g[0], g[2]) for g in groups[1:]]
                 if row:
                     parts[section].append((row, pno))
                 continue
             if section is None:
                 continue
-            row = [(x, plain(t)) for x, _x1, t in groups
+            row = [(x, t) for x, _x1, t in groups
                    if not FURNITURE.match(plain(t))]
             if row:
                 parts[section].append((row, pno))
@@ -382,7 +423,7 @@ class JaPaper:
         return self.asks() + self.aural_asks()
 
 
-def _read_marker(text):
+def _read_marker(text, numbered_alone=False):
     """(the address a group opens, in PRINTED order, and the text after it).
 
     The order is not fixed: the written booklet prints "問題4 (a) (i)" — letter
@@ -391,7 +432,8 @@ def _read_marker(text):
     settled afterwards, in `_section_asks`.
     """
     found, rest = [], text
-    n = NUM_MARK.match(rest)
+    n = NUM_MARK.match(rest) or (NUM_ALONE.match(rest) if numbered_alone
+                                 else None)
     if n:
         found.append(('num', int(n.group(1))))
         rest = rest[n.end():]
@@ -424,16 +466,42 @@ def _markers(rows):
         for i, (_x, t) in enumerate(row):
             if EG.match(t):
                 break
-            got = _read_marker(t)
+            # Matched on the text with its FURIGANA STRIPPED — a marker never
+            # carries ruby, but the head 問（もん）題（だい）3 does — while what
+            # is CARRIED FORWARD is the text as printed. The ruby is content:
+            # 2024 Higher asks for the reading of 女性（せい）, printing せい
+            # over 性 and wanting じょ, and a card showing 女性 asks a
+            # different question with a different answer.
+            got = _read_marker(plain(t))
             if got is None:
                 break
             found, rest = got
+            # The marker was measured on the stripped text; cut the SAME number
+            # of stripped characters off the printed one.
+            raw = _after_marker(t, len(plain(t)) - len(rest))
             tail = ' '.join(t2 for _x2, t2 in row[i + 1:])
-            text = RULE.sub(' ', f'{rest} {tail}').strip()
+            text = RULE.sub(' ', f'{raw} {tail}').strip()
             out.append((found, ' '.join(text.split()), page, r))
             if rest:
                 break
     return out
+
+
+def _after_marker(raw, consumed):
+    """`raw` with its first `consumed` NON-RUBY characters removed."""
+    out, n, i = [], 0, 0
+    while i < len(raw):
+        m = RUBY.match(raw, i)
+        if m:
+            if n >= consumed:
+                out.append(m.group(0))
+            i = m.end()
+            continue
+        if n >= consumed:
+            out.append(raw[i])
+        n += 1
+        i += 1
+    return ''.join(out).strip()
 
 
 def _clean_rule(text):

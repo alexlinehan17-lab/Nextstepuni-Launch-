@@ -300,6 +300,29 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2a-1", topicId: "japanese-5-2", conceptId: "when-line-start-japan",
+    section: "2", questionRef: "2021 OL Section 2A Q1",
+    questionText: "When did LINE start in Japan?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3 June 2011", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-2a-2", topicId: "japanese-5-2", conceptId: "devices-use-line",
     section: "2", questionRef: "2021 OL Section 2A Q2",
     questionText: "Name two devices on which you can use LINE.",
@@ -323,10 +346,199 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-i", topicId: "japanese-5-4", conceptId: "cathain-when-where",
+    id: "ja-2021-ol-2a-3", topicId: "japanese-5-2", conceptId: "percentage-japanese-men-use-line",
+    section: "2", questionRef: "2021 OL Section 2A Q3",
+    questionText: "What percentage of Japanese men use LINE?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "47%", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2a-4", topicId: "japanese-5-2", conceptId: "region-where-line-not-popular",
+    section: "2", questionRef: "2021 OL Section 2A Q4",
+    questionText: "Name one region where LINE is not popular.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "India/ America/ Europe", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2a-5", topicId: "japanese-5-2", conceptId: "stickers-available-line",
+    section: "2", questionRef: "2021 OL Section 2A Q5",
+    questionText: "List two stickers available for LINE.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Message","animation","cute","cool","handsome","cat","dog"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2b-i", topicId: "japanese-5-2", conceptId: "idir-eagarth-ireacht-anamh-ghrianghraif-line",
+    section: "2", questionRef: "2021 OL Section 2B Q(i)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "Is féidir eagarthóireacht a dhéanamh ar ghrianghraif ar LINE. /",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "You can edit photos on LINE True 写真（しゃしん） をエディットして", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2b-iii", topicId: "japanese-5-2", conceptId: "idtear-line-taiwan-agus-thailand",
+    section: "2", questionRef: "2021 OL Section 2B Q(iii)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "Úsáidtear LINE in Taiwan agus in Thailand. /",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "LINE is used in Taiwan and Thailand True 台湾（たいわん） 人やタイ人やインドネシア人がラインを使（つか）っています。", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2b-iv", topicId: "japanese-5-2", conceptId: "faigheann-daoine-ideann-line-ghream-saor",
+    section: "2", questionRef: "2021 OL Section 2B Q(iv)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "Faigheann daoine a úsáideann LINE cúig ghreamán saor in aisce. /",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Line users get five free stickers False ラインのユーザーはフリー・ギフトのスタンプを四つもらいます。", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2b-v", topicId: "japanese-5-2", conceptId: "meirice-emojis",
+    section: "2", questionRef: "2021 OL Section 2B Q(v)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "Is as Meiriceá do emojis. /",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Emojis are from America — False — 絵（え）文（も）字（じ）は日本からです。", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2b-vi", topicId: "japanese-5-2", conceptId: "duine-bhuncharachtair-line-moon",
+    section: "2", questionRef: "2021 OL Section 2B Q(vi)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "Duine de bhuncharachtair LINE é Moon. /",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One of LINE’s original characters is Moon True LINE オリジナルキャラクターのムーン", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-2c-i", topicId: "japanese-5-4", conceptId: "when-where",
     section: "2", questionRef: "2021 OL Section 2C Q(i)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "何 (a)cathain (b) cá (c) cad (d) conas 何 (a) when (b) where (c) what (d) how",
+    questionText: "何 (a) when (b) where (c) what (d) how",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "what — c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -347,10 +559,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-ii", topicId: "japanese-5-4", conceptId: "tseap-ghrian-leabhar-japan-day-sun",
+    id: "ja-2021-ol-2c-ii", topicId: "japanese-5-4", conceptId: "japan-day-sun-book",
     section: "2", questionRef: "2021 OL Section 2C Q(ii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "日本 (a) an tSeapáin (b) lá (c) an ghrian (d) leabhar 日本 (a) Japan (b) day (c) the sun (d) book",
+    questionText: "日本 (a) Japan (b) day (c) the sun (d) book",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Japan — a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -371,10 +583,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-iii", topicId: "japanese-5-4", conceptId: "bliain-seachtain-month-year-week-thousand",
+    id: "ja-2021-ol-2c-iii", topicId: "japanese-5-4", conceptId: "month-year-week-thousand",
     section: "2", questionRef: "2021 OL Section 2C Q(iii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "年 (a) mí (b) bliain (c) seachtain (d) míle 年 (a) month (b) year (c) week (d) thousand",
+    questionText: "年 (a) month (b) year (c) week (d) thousand",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "year — b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -395,10 +607,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-iv", topicId: "japanese-5-4", conceptId: "labhair-leictreachas-traein-speak-electricity-train",
+    id: "ja-2021-ol-2c-iv", topicId: "japanese-5-4", conceptId: "speak-electricity-train-phone",
     section: "2", questionRef: "2021 OL Section 2C Q(iv)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "電話 (a) labhair (b) leictreachas (c) traein (d) fón 電話 (a) speak (b) electricity (c) train (d) phone",
+    questionText: "電話 (a) speak (b) electricity (c) train (d) phone",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "phone — d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -419,10 +631,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-v", topicId: "japanese-5-4", conceptId: "iste-maith-maith-cail-child-like",
+    id: "ja-2021-ol-2c-v", topicId: "japanese-5-4", conceptId: "child-like-dislike-girl",
     section: "2", questionRef: "2021 OL Section 2C Q(v)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "好き (a) páiste (b) is maith (c) ní maith (d) cailín 好き (a) child (b) like (c) dislike (d) girl",
+    questionText: "好き (a) child (b) like (c) dislike (d) girl",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "like — b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -443,10 +655,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-vi", topicId: "japanese-5-4", conceptId: "anois-inniu-now-today-time-minute",
+    id: "ja-2021-ol-2c-vi", topicId: "japanese-5-4", conceptId: "now-today-time-minute",
     section: "2", questionRef: "2021 OL Section 2C Q(vi)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "今 (a) anois (b) inniu (c) am (d) nóiméad 今 (a) now (b) today (c) time (d) minute",
+    questionText: "今 (a) now (b) today (c) time (d) minute",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "now — a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -467,10 +679,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-vii", topicId: "japanese-5-4", conceptId: "idir-gort-fear-athair-strong-rice",
+    id: "ja-2021-ol-2c-vii", topicId: "japanese-5-4", conceptId: "strong-rice-field-man-father",
     section: "2", questionRef: "2021 OL Section 2C Q(vii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "男 (a) láidir (b) gort ríse (c) fear (d) athair 男 (a) strong (b) rice field (c) man (d) father",
+    questionText: "男 (a) strong (b) rice field (c) man (d) father",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "man — c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -491,10 +703,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-viii", topicId: "japanese-5-4", conceptId: "bean-thair-woman-love-mother",
+    id: "ja-2021-ol-2c-viii", topicId: "japanese-5-4", conceptId: "woman-love-mother",
     section: "2", questionRef: "2021 OL Section 2C Q(viii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "女 (a) bean (b) grá (c) mé (d) máthair 女 (a) woman (b) love (c) I (d) mother",
+    questionText: "女 (a) woman (b) love (c) I (d) mother",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "woman — a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -515,10 +727,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-ix", topicId: "japanese-5-4", conceptId: "seacht-duine-dul-isteach-seven-person",
+    id: "ja-2021-ol-2c-ix", topicId: "japanese-5-4", conceptId: "seven-person-enter",
     section: "2", questionRef: "2021 OL Section 2C Q(ix)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "人 (a) seacht (b) duine (c) dul isteach (d) mé 人 (a) seven (b) person (c) enter (d) me",
+    questionText: "人 (a) seven (b) person (c) enter (d) me",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "person — b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -539,10 +751,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-x", topicId: "japanese-5-4", conceptId: "thar-lear-duine-iasacht-domhan-abroad",
+    id: "ja-2021-ol-2c-x", topicId: "japanese-5-4", conceptId: "abroad-china-foreigner-world",
     section: "2", questionRef: "2021 OL Section 2C Q(x)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "外国 (a) thar lear (b) an tSín (c) duine ón iasacht (d) domhan 外国 (a) abroad (b) China (c) foreigner (d) world",
+    questionText: "外国 (a) abroad (b) China (c) foreigner (d) world",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "abroad — a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -563,10 +775,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-xi", topicId: "japanese-5-4", conceptId: "ceithre-daichead-ocht-ocht-four-forty",
+    id: "ja-2021-ol-2c-xi", topicId: "japanese-5-4", conceptId: "four-forty-eight-eighteen",
     section: "2", questionRef: "2021 OL Section 2C Q(xi)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "四つ (a) ceithre (b) daichead (c) ocht (d) ocht déag 四つ (a) four (b) forty (c) eight (d) eighteen",
+    questionText: "四つ (a) four (b) forty (c) eight (d) eighteen",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "four — a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -587,10 +799,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-xii", topicId: "japanese-5-4", conceptId: "siopad-ireacht-siopa-ceannach-labhair-shopping",
+    id: "ja-2021-ol-2c-xii", topicId: "japanese-5-4", conceptId: "shopping-shop-buy-speak",
     section: "2", questionRef: "2021 OL Section 2C Q(xii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "買います (a) ag siopadóireacht (b) siopa (c) ceannach (d) labhair 買います (a) shopping (b) a shop (c) buy (d) speak",
+    questionText: "買います (a) shopping (b) a shop (c) buy (d) speak",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "buy — c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -611,10 +823,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2021-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "beag-crann-col-iste-small-tree",
+    id: "ja-2021-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "small-tree-college-big",
     section: "2", questionRef: "2021 OL Section 2C Q(xiii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo a leanas mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mise (c) ainm (d) teach",
-    questionText: "大きい (a) beag (b) crann (c) coláiste (d) mór 大きい (a) small (b)tree (c)college (d) big",
+    questionText: "大きい (a) small (b)tree (c)college (d) big",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1112,6 +1324,30 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2021-ol-3b-2-v", topicId: "japanese-5-5", conceptId: "ja-3b-2v",
+    section: "3", questionRef: "2021 OL Section 3B Q2(v)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. すし (a)で (b) を (c) が 好きです。",
+    questionText: "まんが (a) を (b) に (c) より 読みます。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a. を", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2021 Ordinary Level — © State Examinations Commission.",
     id: "ja-2021-ol-3b-2-vi", topicId: "japanese-5-5", conceptId: "ja-3b-2vi",
     section: "3", questionRef: "2021 OL Section 3B Q2(vi)",
     stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. すし (a)で (b) を (c) が 好きです。",
@@ -1129,6 +1365,269 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC Japanese 2021 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-1-i", topicId: "japanese-5-0", conceptId: "designers",
+    section: "1", questionRef: "2022 OL Section 1 Q1(i)",
+    stem: "Scríobh uimhir an naisc mar atá sa sampla. 1. Write the number of the link as in the example. e.g. Baile 1 e.g. Home 1",
+    questionText: "Designers",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Designers — 6", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-1-ii", topicId: "japanese-5-0", conceptId: "ist-kids",
+    section: "1", questionRef: "2022 OL Section 1 Q1(ii)",
+    stem: "Scríobh uimhir an naisc mar atá sa sampla. 1. Write the number of the link as in the example. e.g. Baile 1 e.g. Home 1",
+    questionText: "Do Pháistí (ii) Kids",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kids — 4", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-1-iii", topicId: "japanese-5-0", conceptId: "fhir-iii-mens",
+    section: "1", questionRef: "2022 OL Section 1 Q1(iii)",
+    stem: "Scríobh uimhir an naisc mar atá sa sampla. 1. Write the number of the link as in the example. e.g. Baile 1 e.g. Home 1",
+    questionText: "D’Fhir (iii) Mens",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mens — 3", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-1-iv", topicId: "japanese-5-0", conceptId: "new-collections",
+    section: "1", questionRef: "2022 OL Section 1 Q1(iv)",
+    stem: "Scríobh uimhir an naisc mar atá sa sampla. 1. Write the number of the link as in the example. e.g. Baile 1 e.g. Home 1",
+    questionText: "New Collections",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-1-v", topicId: "japanese-5-0", conceptId: "discount",
+    section: "1", questionRef: "2022 OL Section 1 Q1(v)",
+    stem: "Scríobh uimhir an naisc mar atá sa sampla. 1. Write the number of the link as in the example. e.g. Baile 1 e.g. Home 1",
+    questionText: "Discount",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Discounts — 9", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-1-vi", topicId: "japanese-5-0", conceptId: "shopping-cart",
+    section: "1", questionRef: "2022 OL Section 1 Q1(vi)",
+    stem: "Scríobh uimhir an naisc mar atá sa sampla. 1. Write the number of the link as in the example. e.g. Baile 1 e.g. Home 1",
+    questionText: "Shopping cart",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "10", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-2", topicId: "japanese-5-0", conceptId: "japanese-designer-ranking",
+    section: "1", questionRef: "2022 OL Section 1 Q2",
+    stem: "Ainmnigh dearthóir Seapánach amháin sa 2. Name one Japanese designer in the ranking. rangú.",
+    questionText: "Name one Japanese designer ranking.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Issei Miyake/Kenzou/ Youji Yamamoto", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-3", topicId: "japanese-5-0", conceptId: "foreign-designer-ranking",
+    section: "1", questionRef: "2022 OL Section 1 Q3",
+    questionText: "Name one foreign designer in the ranking.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Louis Vuitton/ Chanel/ Gucci", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-4", topicId: "japanese-5-0", conceptId: "items-toileteries-accessories",
+    section: "1", questionRef: "2022 OL Section 1 Q4",
+    stem: "Luaigh trí earra ar bith ó earraí níocháin 4. List any three items from toileteries and agus oiriúintí. accessories.",
+    questionText: "List any three three items from toileteries and accessories.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":3,"perOption":1,"options":["Hair Care","Skin Care","Foot care","Jewelry","Bags","Sunglasses"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-5-i", topicId: "japanese-5-0", conceptId: "baseball-goods",
+    section: "1", questionRef: "2022 OL Section 1 Q5(i)",
+    stem: "Cén nasc spóirt is ceart cliceáil air (scríobh i 5. What sports link should you click for (write in Seapáinis) le haghaidh Japanese)",
+    questionText: "baseball goods?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "やきゅう", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-1-5-ii", topicId: "japanese-5-0", conceptId: "swimwear",
+    section: "1", questionRef: "2022 OL Section 1 Q5(ii)",
+    stem: "Cén nasc spóirt is ceart cliceáil air (scríobh i 5. What sports link should you click for (write in Seapáinis) le haghaidh Japanese)",
+    questionText: "swimwear?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "スイム・ウェア", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
     },
   } as SecCard,
   {
@@ -1236,7 +1735,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why do high school students like Mandarake?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It’s cheap.", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "It’s cheap", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1308,7 +1807,7 @@ export const CARDS: SecCard[] = [
     questionText: "Is breá le Seapánaigh agus le heachtrannaigh araon Yodobashi AKIBA. /",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Japanese and foreign people both love Yodobashi AKIBA. 日本人も外国人もヨドバシ – AKIBA が大好きです。 True", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Japanese and foreign people both love Yodobashi AKIBA 日本人も外国人もヨドバシ – AKIBA が大好きです。 True", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1332,7 +1831,7 @@ export const CARDS: SecCard[] = [
     questionText: "Radio Kaikan opened in 2008.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "New Radio Kaikan opened in 2008. False 新しいラジオ・かいかんは 2014 年にオープンしました。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "New Radio Kaikan opened in 2008 False 新しいラジオ・かいかんは 2014 年にオープンしました。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1356,7 +1855,7 @@ export const CARDS: SecCard[] = [
     questionText: "Radio Kaikan is a 5‐",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Radio Kaikan is a 5-minute walk from Akihabara station. False あきはばら駅から歩いて十分です。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Radio Kaikan is a 5-minute walk from Akihabara station False あきはばら駅から歩（ある）いて十分です。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1380,7 +1879,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mandarake sells a lot of",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mandarake has lots of second-hand goods. セコンドハンドの物をうっています。 True", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Mandarake has lots of second-hand goods セコンドハンドの物をうっています。 True", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1404,7 +1903,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mandarake has an on‐line shop in",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mandarake has an on-line shop in Chinese. 英語のオンライン・ショップもあります。 False", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Mandarake has an on-line shop in Chinese 英語のオンライン・ショップもあります。 False", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1422,10 +1921,10 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2022-ol-2c-i", topicId: "japanese-5-4", conceptId: "aimsir-leictreach-maith-weather-electrical-well",
+    id: "ja-2022-ol-2c-i", topicId: "japanese-5-4", conceptId: "weather-electrical-well-phone",
     section: "2", questionRef: "2022 OL Section 2C Q(i)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "電気 (a) aimsir (b) leictreach (c) go maith (d) fón 電気 (a) weather (b) electrical (c) well (d) phone",
+    questionText: "電気 (a) weather (b) electrical (c) well (d) phone",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1446,10 +1945,10 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2022-ol-2c-ii", topicId: "japanese-5-4", conceptId: "bliain-year-month-noon",
+    id: "ja-2022-ol-2c-ii", topicId: "japanese-5-4", conceptId: "year-month-noon",
     section: "2", questionRef: "2022 OL Section 2C Q(ii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "年 (a) bliain (b) mí (c) nóin (d) pm 年 (a) year (b) month (c)noon (d) pm",
+    questionText: "年 (a) year (b) month (c)noon (d) pm",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1470,10 +1969,34 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2022-ol-2c-v", topicId: "japanese-5-4", conceptId: "bean-iste-bre-woman-child-like",
-    section: "2", questionRef: "2022 OL Section 2C Q(v)",
+    id: "ja-2022-ol-2c-iii", topicId: "japanese-5-4", conceptId: "expensive-cheap-big-small",
+    section: "2", questionRef: "2022 OL Section 2C Q(iii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "好き (a) bean (b) mé (c) páiste (d) is breá le 好き (a) woman (b) I (c) child (d) like",
+    questionText: "大きい (a) expensive (b) cheap (c) big (d) small",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-iv", topicId: "japanese-5-4", conceptId: "day-sun-today-japan",
+    section: "2", questionRef: "2022 OL Section 2C Q(iv)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "日本 (a) day (b) sun (c) today (d) Japan",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1494,10 +2017,58 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2022-ol-2c-x", topicId: "japanese-5-4", conceptId: "lae-che-midday-midnight",
-    section: "2", questionRef: "2022 OL Section 2C Q(x)",
+    id: "ja-2022-ol-2c-v", topicId: "japanese-5-4", conceptId: "woman-child-like",
+    section: "2", questionRef: "2022 OL Section 2C Q(v)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "午前 (a) am (b) pm (c) meán lae (d) meán oíche 午前 (a) am (b) pm (c) midday (d) midnight",
+    questionText: "好き (a) woman (b) I (c) child (d) like",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-vi", topicId: "japanese-5-4", conceptId: "thing-place-car-train",
+    section: "2", questionRef: "2022 OL Section 2C Q(vi)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "車 (a) thing (b) place (c) car (d) train",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-vii", topicId: "japanese-5-4", conceptId: "book-ten-tree-water",
+    section: "2", questionRef: "2022 OL Section 2C Q(vii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "本 (a) book (b) ten (c) tree (d) water",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1508,6 +2079,700 @@ export const CARDS: SecCard[] = [
           "title": "Question 2 — printed material",
           "pages": [
                 6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-viii", topicId: "japanese-5-4", conceptId: "return-think-speak",
+    section: "2", questionRef: "2022 OL Section 2C Q(viii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "行きます (a) return (b) go (c) think (d) speak",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-ix", topicId: "japanese-5-4", conceptId: "every-day-4th-every-week-morning",
+    section: "2", questionRef: "2022 OL Section 2C Q(ix)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "毎日 (a) every day (b) the 4th (c) every week (d) morning",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-x", topicId: "japanese-5-4", conceptId: "midday-midnight",
+    section: "2", questionRef: "2022 OL Section 2C Q(x)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "午前 (a) am (b) pm (c) midday (d) midnight",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-xi", topicId: "japanese-5-4", conceptId: "drink-food-eat-thing",
+    section: "2", questionRef: "2022 OL Section 2C Q(xi)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "物 (a) a drink (b) food (c) eat (d) thing",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-xii", topicId: "japanese-5-4", conceptId: "house-new-cheap-woman",
+    section: "2", questionRef: "2022 OL Section 2C Q(xii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "安い (a) house (b) new (c) cheap (d) woman",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "foreign-english-china-study",
+    section: "2", questionRef: "2022 OL Section 2C Q(xiii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "英語 (a) foreign (b) English (c) China (d) study",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-1", topicId: "japanese-5-1", conceptId: "long-cian-stay-japan",
+    section: "3", questionRef: "2022 OL Section 3A Q1",
+    questionText: "How long will Cian stay in Japan?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "6 weeks", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-2", topicId: "japanese-5-1", conceptId: "dai-ichi-high-school",
+    section: "3", questionRef: "2022 OL Section 3A Q2",
+    questionText: "Give two details about Dai Ichi High School.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["1000 pupils","100 teachers","big","mixed school","in Yokohama"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-3", topicId: "japanese-5-1", conceptId: "subject-find-difficult",
+    section: "3", questionRef: "2022 OL Section 3A Q3",
+    stem: "Cén t‐ábhar ar deacair le Cian é? 3. What subject does Cian find difficult?",
+    questionText: "What subject does he find difficult?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Maths", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-4-i", topicId: "japanese-5-1", conceptId: "cian-has-class",
+    section: "3", questionRef: "2022 OL Section 3A Q4(i)",
+    stem: "Cuir do rogha in iúl trí a, b, c, nó d a chur 4. Indicate your choice by putting a, b, c or d sa bhosca cuí. in the box provided.",
+    questionText: "Cian has PE class a.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "on Monday and Thursday", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-4-ii", topicId: "japanese-5-1", conceptId: "false",
+    section: "3", questionRef: "2022 OL Section 3A Q4(ii)",
+    stem: "Cuir do rogha in iúl trí a, b, c, nó d a chur 4. Indicate your choice by putting a, b, c or d sa bhosca cuí. in the box provided.",
+    questionText: "Which of the following is FALSE?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c. Brown shoes must be worn", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-4-iii", topicId: "japanese-5-1", conceptId: "false",
+    section: "3", questionRef: "2022 OL Section 3A Q4(iii)",
+    stem: "Cuir do rogha in iúl trí a, b, c, nó d a chur 4. Indicate your choice by putting a, b, c or d sa bhosca cuí. in the box provided.",
+    questionText: "Which of the following is FALSE?:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "b. it’s hot and humid", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-4-iv", topicId: "japanese-5-1", conceptId: "where-cian-plan-study-next-year",
+    section: "3", questionRef: "2022 OL Section 3A Q4(iv)",
+    stem: "Cuir do rogha in iúl trí a, b, c, nó d a chur 4. Indicate your choice by putting a, b, c or d sa bhosca cuí. in the box provided.",
+    questionText: "Where does Cian plan to study next year?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c. Tokyo", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-5-i", topicId: "japanese-5-1", conceptId: "ja-3a-5i",
+    section: "3", questionRef: "2022 OL Section 3A Q5(i)",
+    stem: "Answer any three in Japanese.",
+    questionText: "キーアンさんは、週末何をしますか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "カラオケをします。", marks: 3, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-5-ii", topicId: "japanese-5-1", conceptId: "ja-3a-5ii",
+    section: "3", questionRef: "2022 OL Section 3A Q5(ii)",
+    stem: "Answer any three in Japanese.",
+    questionText: "キーアンさんのクラスメートはどんな人ですか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "しんせつです。", marks: 3, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-5-iii", topicId: "japanese-5-1", conceptId: "ja-3a-5iii",
+    section: "3", questionRef: "2022 OL Section 3A Q5(iii)",
+    stem: "Answer any three in Japanese.",
+    questionText: "キーアンさんはたいいくのクラスで、けんどうをしますか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "いいえ、バスケットボールや じゅうどうをします。", marks: 3, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3a-5-iv", topicId: "japanese-5-1", conceptId: "ja-3a-5iv",
+    section: "3", questionRef: "2022 OL Section 3A Q5(iv)",
+    stem: "Answer any three in Japanese.",
+    questionText: "キーアンさんのユニフォームはどうですか。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ユニフォームは かっこいいです。", marks: 3, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-1-i", topicId: "japanese-5-1", conceptId: "ja-3b-1i",
+    section: "3", questionRef: "2022 OL Section 3B Q1(i)",
+    stem: "Write the underlined in the past tense as in the example. Answer any five. e.g. 好きです。 でした。",
+    questionText: "学校に行きません。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "行きませんでした。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-1-ii", topicId: "japanese-5-1", conceptId: "ja-3b-1ii",
+    section: "3", questionRef: "2022 OL Section 3B Q1(ii)",
+    stem: "Write the underlined in the past tense as in the example. Answer any five. e.g. 好きです。 でした。",
+    questionText: "かんたんじゃないです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "じゃありませんでした・じゃなかったです。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-1-iii", topicId: "japanese-5-1", conceptId: "ja-3b-1iii",
+    section: "3", questionRef: "2022 OL Section 3B Q1(iii)",
+    stem: "Write the underlined in the past tense as in the example. Answer any five. e.g. 好きです。 でした。",
+    questionText: "ルールはきびしいです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "きびしかったです。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-1-iv", topicId: "japanese-5-1", conceptId: "ja-3b-1iv",
+    section: "3", questionRef: "2022 OL Section 3B Q1(iv)",
+    stem: "Write the underlined in the past tense as in the example. Answer any five. e.g. 好きです。 でした。",
+    questionText: "ランチを食べます。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "食べました。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-1-v", topicId: "japanese-5-1", conceptId: "ja-3b-1v",
+    section: "3", questionRef: "2022 OL Section 3B Q1(v)",
+    stem: "Write the underlined in the past tense as in the example. Answer any five. e.g. 好きです。 でした。",
+    questionText: "ともだちは元気です。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "でした。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-1-vi", topicId: "japanese-5-1", conceptId: "ja-3b-1vi",
+    section: "3", questionRef: "2022 OL Section 3B Q1(vi)",
+    stem: "Write the underlined in the past tense as in the example. Answer any five. e.g. 好きです。 でした。",
+    questionText: "アイルランドにかえります。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "かえりました。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-2-i", topicId: "japanese-5-5", conceptId: "ja-3b-2i",
+    section: "3", questionRef: "2022 OL Section 3B Q2(i)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "学校は８時 (a) に (b) から (c) と です。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "b. から", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-2-ii", topicId: "japanese-5-5", conceptId: "ja-3b-2ii",
+    section: "3", questionRef: "2022 OL Section 3B Q2(ii)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "日本語 (a) が (b) を (c) の 好きです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a が", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-2-iii", topicId: "japanese-5-5", conceptId: "ja-3b-2iii",
+    section: "3", questionRef: "2022 OL Section 3B Q2(iii)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "ともだちの名前（なまえ） (a) と (b) で (c) は けんたです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c. は", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-2-iv", topicId: "japanese-5-5", conceptId: "ja-3b-2iv",
+    section: "3", questionRef: "2022 OL Section 3B Q2(iv)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "クラスルーム (a) で (b) も (c) に 食べます。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a. で", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-2-v", topicId: "japanese-5-5", conceptId: "ja-3b-2v",
+    section: "3", questionRef: "2022 OL Section 3B Q2(v)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "ともだちのうち (a) より (b) の (c) に 行きます。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c. に", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2022 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2022-ol-3b-2-vi", topicId: "japanese-5-5", conceptId: "ja-3b-2vi",
+    section: "3", questionRef: "2022 OL Section 3B Q2(vi)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "クラスメート (a) の (b) と (c) まで 話します。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "b. と", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
           ],
           "attribution": "SEC Japanese 2022 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
@@ -1800,10 +3065,104 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-i", topicId: "japanese-5-4", conceptId: "teanga-duine-igh-isteach-language-person",
+    id: "ja-2023-ol-2a-2", topicId: "japanese-5-2", conceptId: "kenshi-when-2nd-year-junior-high",
+    section: "2", questionRef: "2023 OL Section 2A Q2",
+    stem: "Cad a rinne Kenshi nuair a bhí sé sa dara 2. What did Kenshi do when he was in 2nd year bliain san Ardscoil Shóisearach? of Junior High School?",
+    questionText: "What did Kenshi do when he was in 2nd year junior high school?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Started a band with friends / made vocaloid music", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2023-ol-2a-3", topicId: "japanese-5-2", conceptId: "apart-singing-other-jobs-kenshi",
+    section: "2", questionRef: "2023 OL Section 2A Q3",
+    stem: "Seachas an amhránaíocht, cad iad na poist 3. Apart from singing, what other jobs does eile a dhéanann Kenshi? Kenshi do?",
+    questionText: "Apart from singing, what other jobs does Kenshi do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Songwriter/ guitar player/ illustrator", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2023-ol-2a-4", topicId: "japanese-5-2", conceptId: "aimyon-real",
+    section: "2", questionRef: "2023 OL Section 2A Q4",
+    questionText: "What is Aimyon’s real name?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Morii Aimi", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2023-ol-2a-5", topicId: "japanese-5-2", conceptId: "describe-aimyon-family",
+    section: "2", questionRef: "2023 OL Section 2A Q5",
+    questionText: "Describe Aimyon’s family.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":3,"perOption":1,"options":["8 people","father","mother","older sister","younger sister","3 younger brothers","big"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2023-ol-2c-i", topicId: "japanese-5-4", conceptId: "language-person-enter",
     section: "2", questionRef: "2023 OL Section 2C Q(i)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "人 (a) teanga (b) duine (c) téigh isteach (d) cad 人 (a) language (b) person (c) enter (d) what",
+    questionText: "人 (a) language (b) person (c) enter (d) what",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "person — b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1824,10 +3183,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-ii", topicId: "japanese-5-4", conceptId: "tseap-leabhar-grian-japan-book-sun",
+    id: "ja-2023-ol-2c-ii", topicId: "japanese-5-4", conceptId: "japan-book-sun-day",
     section: "2", questionRef: "2023 OL Section 2C Q(ii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "本 (a) an tSeapáin (b) leabhar (c) grian (d) lá 本 (a) Japan (b) book (c) sun (d) day",
+    questionText: "本 (a) Japan (b) book (c) sun (d) day",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "book — b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1848,10 +3207,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-iii", topicId: "japanese-5-4", conceptId: "igh-abair-labhair-foghlaim-read-say",
+    id: "ja-2023-ol-2c-iii", topicId: "japanese-5-4", conceptId: "read-say-speak-learn",
     section: "2", questionRef: "2023 OL Section 2C Q(iii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "読みます (a) léigh (b) abair (c) labhair (d) foghlaim 読みます (a) read (b) say (c) speak (d) learn",
+    questionText: "読みます (a) read (b) say (c) speak (d) learn",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1872,10 +3231,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-iv", topicId: "japanese-5-4", conceptId: "caitheamh-aimsire-col-iste-maith-hobby",
+    id: "ja-2023-ol-2c-iv", topicId: "japanese-5-4", conceptId: "hobby-college-dislike-love",
     section: "2", questionRef: "2023 OL Section 2C Q(iv)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "大好き (a) caitheamh aimsire (b) coláiste (c) ní maith le (d) grá 大好き (a) hobby (b) college (c) dislike (d) love",
+    questionText: "大好き (a) hobby (b) college (c) dislike (d) love",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1896,10 +3255,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-v", topicId: "japanese-5-4", conceptId: "staid-rang-scoil-scol-ire-study",
+    id: "ja-2023-ol-2c-v", topicId: "japanese-5-4", conceptId: "study-class-school-student",
     section: "2", questionRef: "2023 OL Section 2C Q(v)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "学校 (a) staidéar (b) rang (c) scoil (d) scoláire 学校 (a) study (b) class (c) school (d) student",
+    questionText: "学校 (a) study (b) class (c) school (d) student",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "school — c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1920,10 +3279,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-vi", topicId: "japanese-5-4", conceptId: "anois-inniu-now-time-today-minute",
+    id: "ja-2023-ol-2c-vi", topicId: "japanese-5-4", conceptId: "now-time-today-minute",
     section: "2", questionRef: "2023 OL Section 2C Q(vi)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "時 (a) anois (b) am (c) inniu (d) nóiméad 時 (a) now (b) time (c) today (d) minute",
+    questionText: "時 (a) now (b) time (c) today (d) minute",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1944,10 +3303,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-vii", topicId: "japanese-5-4", conceptId: "tseap-honda-domhnach-japan-china-honda",
+    id: "ja-2023-ol-2c-vii", topicId: "japanese-5-4", conceptId: "japan-china-honda-sunday",
     section: "2", questionRef: "2023 OL Section 2C Q(vii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "日本 (a) an tSeapáin (b) an tSín (c) Honda (d) an Domhnach 日本 (a) Japan (b) China (c) Honda (d) Sunday",
+    questionText: "日本 (a) Japan (b) China (c) Honda (d) Sunday",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1968,10 +3327,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-viii", topicId: "japanese-5-4", conceptId: "bean-athair-thair-woman-love-father",
+    id: "ja-2023-ol-2c-viii", topicId: "japanese-5-4", conceptId: "woman-love-father-mother",
     section: "2", questionRef: "2023 OL Section 2C Q(viii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "お母さん (a) bean (b) grá (c) athair (d) máthair お母さん (a) woman (b) love (c) father (d) mother",
+    questionText: "お母さん (a) woman (b) love (c) father (d) mother",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -1992,10 +3351,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-ix", topicId: "japanese-5-4", conceptId: "beag-costasach-nua-big-small-expensive",
+    id: "ja-2023-ol-2c-ix", topicId: "japanese-5-4", conceptId: "big-small-expensive-new",
     section: "2", questionRef: "2023 OL Section 2C Q(ix)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "大きい (a) mór (b) beag (c) costasach (d) nua 大きい (a) big (b) small (c) expensive (d) new",
+    questionText: "大きい (a) big (b) small (c) expensive (d) new",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "big — a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2016,10 +3375,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-x", topicId: "japanese-5-4", conceptId: "bunscoil-ollscoil-ardscoil-inteoir-primary-school",
+    id: "ja-2023-ol-2c-x", topicId: "japanese-5-4", conceptId: "primary-school-university-high-school-teacher",
     section: "2", questionRef: "2023 OL Section 2C Q(x)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "高校 (a) bunscoil (b) ollscoil (c) ardscoil (d) múinteoir 高校 (a) primary school (b) university (c) high school (d) teacher",
+    questionText: "高校 (a) primary school (b) university (c) high school (d) teacher",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2040,10 +3399,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-xi", topicId: "japanese-5-4", conceptId: "maidin-iarn-tar-roimh-morning-afternoon",
+    id: "ja-2023-ol-2c-xi", topicId: "japanese-5-4", conceptId: "morning-afternoon-after-before",
     section: "2", questionRef: "2023 OL Section 2C Q(xi)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "後 (a) maidin (b) iarnóin (c) tar éis (d) roimh 後 (a) morning (b) afternoon (c) after (d) before",
+    questionText: "後 (a) morning (b) afternoon (c) after (d) before",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "after — c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2064,10 +3423,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-xii", topicId: "japanese-5-4", conceptId: "dona-maith-dheas-cionn-bad-good",
+    id: "ja-2023-ol-2c-xii", topicId: "japanese-5-4", conceptId: "bad-good-right-hand-above",
     section: "2", questionRef: "2023 OL Section 2C Q(xii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "上手 (a) go dona ag (b)go maith ag (c) lámh dheas (d) os cionn 上手 (a) bad at (b) good at (c) right hand (d) above",
+    questionText: "上手 (a) bad at (b) good at (c) right hand (d) above",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2088,10 +3447,10 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2023-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "eachtrannach-taobh-amuigh-thar-lear-china",
+    id: "ja-2023-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "china-foreigner-outside-abroad",
     section: "2", questionRef: "2023 OL Section 2C Q(xiii)",
     stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g.私 (a) bliain (b) mé (c) ainm (d) teach",
-    questionText: "外国 (a) an tSín (b) eachtrannach (c) taobh amuigh (d) thar lear 外国 (a) China (b) foreigner (c) outside (d) abroad",
+    questionText: "外国 (a) China (b) foreigner (c) outside (d) abroad",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2191,6 +3550,30 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "b. で", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Japanese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2023-ol-2d-v", topicId: "japanese-5-5", conceptId: "ja-2d-0v",
+    section: "2", questionRef: "2023 OL Section 2D Q(v)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 日本 (a)で (b) を (c) が 好きです。",
+    questionText: "ひるごはん (a) を (b) の (c) で 食べます。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a. を", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2326,6 +3709,54 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2023-ol-3a-4-iii", topicId: "japanese-5-1", conceptId: "against-whom-ian-play-soccer-2nd",
+    section: "3", questionRef: "2023 OL Section 3A Q4(iii)",
+    stem: "Cuir do rogha in iúl trí a, b, c, nó d a chur sa 4. Indicate your choice by putting a, b, c or d bhosca thíos. in the box provided.",
+    questionText: "Against whom did Ian play soccer? The 2nd years Lucht an dara bliain (b) A different school Scoil eile (c) The exchange students Na scoláirí malairte (d) The teachers Na múinteoirí",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Against whom did Ian play soccer? (d) the teachers", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2023-ol-3a-4-iv", topicId: "japanese-5-1", conceptId: "ian-next-week-anfaidh-ian-tseachtain",
+    section: "3", questionRef: "2023 OL Section 3A Q4(iv)",
+    stem: "Cuir do rogha in iúl trí a, b, c, nó d a chur sa 4. Indicate your choice by putting a, b, c or d bhosca thíos. in the box provided.",
+    questionText: "What will Ian do next week? Cad a dhéanfaidh Ian an tseachtain School exams Scrúduithe scoile Soccer training Cleachtadh sacair Travel in Japan Taisteal sa tSeapáin Go back to Ireland Filleadh ar Éirinn",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "What will Ian do next week? (d) go back to Ireland", marks: 3, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2023 Ordinary Level — © State Examinations Commission.",
     id: "ja-2023-ol-3a-5-i", topicId: "japanese-5-1", conceptId: "ja-3a-5i",
     section: "3", questionRef: "2023 OL Section 3A Q5(i)",
     stem: "Answer in Japanese. Answer any three.",
@@ -2401,7 +3832,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2023-ol-3a-5-iv", topicId: "japanese-5-1", conceptId: "ja-3a-5iv",
     section: "3", questionRef: "2023 OL Section 3A Q5(iv)",
     stem: "Answer in Japanese. Answer any three.",
-    questionText: "去 年、どのチームがかちましたか。",
+    questionText: "去 年（きょねん）、どのチームがかちましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "先生のチーム", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2780,6 +4211,627 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-1-7", topicId: "japanese-5-0", conceptId: "places-use-gift-card",
+    section: "1", questionRef: "2024 OL Section 1 Q7",
+    stem: "Ainmnigh dhá áit ar féidir an cárta",
+    questionText: "Name two places you can use the gift card.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Shop","Restaurant","(Premium) Lounge","(Spa) Hotel"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題1",
+          "title": "Question 1 — printed material",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2a-1", topicId: "japanese-5-2", conceptId: "often-year-old-group-eat-ramen",
+    section: "2", questionRef: "2024 OL Section 2A Q1",
+    stem: "Cé chomh minic a itheann an aoisghrúpa 20-69 1. How often does the 20 to 69-year-old group ráimein? eat ramen?",
+    questionText: "How often does the 20-69-year-old group eat ramen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Once a week", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2a-2", topicId: "japanese-5-2", conceptId: "japanese-ramen-differ-chinese-ramen",
+    section: "2", questionRef: "2024 OL Section 2A Q2",
+    stem: "Conas atá ráimein Seapánach difriúil ó ráimein 2. How does Japanese ramen differ from Chinese Síneach? ramen?",
+    questionText: "How does Japanese ramen differ from Chinese ramen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The soup/ flavour", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2a-3", topicId: "japanese-5-2", conceptId: "reasons-japanese-people-love-ramen",
+    section: "2", questionRef: "2024 OL Section 2A Q3",
+    questionText: "Give two reasons why Japanese people love ramen.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Delicious","Price is cheap","Big size","Lots of calories","like to eat it in cold weather"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2a-4", topicId: "japanese-5-2", conceptId: "where-buy-souvenirs",
+    section: "2", questionRef: "2024 OL Section 2A Q4",
+    stem: "Cá háit sa mhúsaem ar féidir cuimhneacháin 4. Where in the museum can you buy souvenirs? a cheannach?",
+    questionText: "Where can you buy souvenirs?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shopping arcade", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2a-5", topicId: "japanese-5-2", conceptId: "weekend-opening-hours",
+    section: "2", questionRef: "2024 OL Section 2A Q5",
+    questionText: "What are the weekend opening hours?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "11.30 to 6", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2a-6", topicId: "japanese-5-2", conceptId: "day-museum-closed",
+    section: "2", questionRef: "2024 OL Section 2A Q6",
+    questionText: "On what day is the museum closed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mondays", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2b-i", topicId: "japanese-5-2", conceptId: "there-ramen-restaurants-even-small-towns",
+    section: "2", questionRef: "2024 OL Section 2B Q(i)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "There are ramen restaurants even in small towns.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True — → [ 小さい町（まち）にもあります。]", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2b-ii", topicId: "japanese-5-2", conceptId: "japanese-people-want-eat-ramen-warm",
+    section: "2", questionRef: "2024 OL Section 2B Q(ii)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "Japanese people want to eat ramen on warm days.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "→ [ さむい天気の日にラーメンを食べたいです。] — False", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2b-iii", topicId: "japanese-5-2", conceptId: "ramen-museum-shin-yokohama",
+    section: "2", questionRef: "2024 OL Section 2B Q(iii)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "The Ramen Museum is in Shin Yokohama.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "True → [ 新横浜（しんよこはま）にオープンしました。]", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2b-iv", topicId: "japanese-5-2", conceptId: "learn-history-ramen-museum",
+    section: "2", questionRef: "2024 OL Section 2B Q(iv)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "You learn about the history of ramen in the museum.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "→ [ラーメンのれきしについて勉強します。] — True", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2b-v", topicId: "japanese-5-2", conceptId: "there-ramen-restaurants-museum",
+    section: "2", questionRef: "2024 OL Section 2B Q(v)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "There are 8 ramen restaurants in the museum.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "→ [ミュージアムの九つの店で] — False", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2b-vi", topicId: "japanese-5-2", conceptId: "there-discount-groups-over",
+    section: "2", questionRef: "2024 OL Section 2B Q(vi)",
+    stem: "Write whether the following sentences are True or False. Choose a Japanese phrase from the text to",
+    questionText: "There is a discount for groups of 15 and over.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "→ [ １５人～のグループはディスカウントがあります。] True", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-i", topicId: "japanese-5-4", conceptId: "expensive-cheap-big-small",
+    section: "2", questionRef: "2024 OL Section 2C Q(i)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "小さい (a) expensive (b) cheap (c) big (d) small",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-ii", topicId: "japanese-5-4", conceptId: "man-woman-child-person",
+    section: "2", questionRef: "2024 OL Section 2C Q(ii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "男 (a) man (b) woman (c) child (d) person",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-iii", topicId: "japanese-5-4", conceptId: "eat-food-lunch-drink",
+    section: "2", questionRef: "2024 OL Section 2C Q(iii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "食べ物 (a) eat (b) food (c) lunch (d) drink",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-iv", topicId: "japanese-5-4", conceptId: "japan-china-abroad-middle",
+    section: "2", questionRef: "2024 OL Section 2C Q(iv)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "中国 (a) Japan (b) China (c) abroad (d) middle",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-v", topicId: "japanese-5-4", conceptId: "day-week-now-time",
+    section: "2", questionRef: "2024 OL Section 2C Q(v)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "今 (a) day (b) week (c) now (d) time",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-vi", topicId: "japanese-5-4", conceptId: "electricity-energy-train-weather",
+    section: "2", questionRef: "2024 OL Section 2C Q(vi)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "天気 (a) electricity (b) energy (c) train (d) weather",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-vii", topicId: "japanese-5-4", conceptId: "cheap-expensive-female-like",
+    section: "2", questionRef: "2024 OL Section 2C Q(vii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "安い (a) cheap (b) expensive (c) female (d) like",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-viii", topicId: "japanese-5-4", conceptId: "left-right-above-under",
+    section: "2", questionRef: "2024 OL Section 2C Q(viii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "上 (a) left (b) right (c) above (d) under",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-ix", topicId: "japanese-5-4", conceptId: "korean-chinese-foreigner-tourist",
+    section: "2", questionRef: "2024 OL Section 2C Q(ix)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "外国人 (a) Korean (b) Chinese (c) foreigner (d) tourist",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-x", topicId: "japanese-5-4", conceptId: "study-class-school-college",
+    section: "2", questionRef: "2024 OL Section 2C Q(x)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "勉強 (a) study (b) class (c) school (d) college",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-xi", topicId: "japanese-5-4", conceptId: "shopping-watch-buy",
+    section: "2", questionRef: "2024 OL Section 2C Q(xi)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "買います (a) go (b) shopping (c) watch (d) buy",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-xii", topicId: "japanese-5-4", conceptId: "today-clock-holiday-time",
+    section: "2", questionRef: "2024 OL Section 2C Q(xii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "時間 (a) today (b) clock (c) holiday (d) time",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-2c-xiii", topicId: "japanese-5-4", conceptId: "rest-person-body-child",
+    section: "2", questionRef: "2024 OL Section 2C Q(xiii)",
+    stem: "Cuir ciorcal thart ar an mbrí cheart (a), (b), (c) nó (d) atá leis na Kanji seo thíos mar atá sa sampla. Freagair deich gcinn ar bith. e.g. 私 (a) bliain (b) mé (c) ainm (d) teach",
+    questionText: "人 (a) rest (b) person (c) body (d) child",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題2",
+          "title": "Question 2 — printed material",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-3a-1", topicId: "japanese-5-1", conceptId: "long-has-mia-been-japan",
     section: "3", questionRef: "2024 OL Section 3A Q1",
     questionText: "How long has Mia been in Japan?",
@@ -2809,6 +4861,54 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language.", group: {"claimMax":2,"perOption":2,"options":["Give two details about the host family pet. Cat","small","name is Kurumi","selfish","cute"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3a-3-i", topicId: "japanese-5-1", conceptId: "mother-brother",
+    section: "3", questionRef: "2024 OL Section 3A Q3(i)",
+    stem: "Tabhair sonra amháin faoin (i) máthair 3. Provide one detail about her host family’s",
+    questionText: "mother: (ii) brother:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "mother: kind/beautiful", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3a-3-ii", topicId: "japanese-5-1", conceptId: "dearth-ina-teaghlach-stach",
+    section: "3", questionRef: "2024 OL Section 3A Q3(ii)",
+    stem: "Tabhair sonra amháin faoin (i) máthair 3. Provide one detail about her host family’s",
+    questionText: "deartháir ina teaghlach óstach.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "brother: quiet/shy", marks: 2, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2949,7 +5049,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2024-ol-3a-5-ii", topicId: "japanese-5-1", conceptId: "ja-3a-5ii",
     section: "3", questionRef: "2024 OL Section 3A Q5(ii)",
     stem: "Answer any three in Japanese.",
-    questionText: "ちえさんは、どんな音楽が好きですか。",
+    questionText: "ちえさんは、どんな音楽（おんがく）が好きですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "J-Pop", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2973,7 +5073,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2024-ol-3a-5-iii", topicId: "japanese-5-1", conceptId: "ja-3a-5iii",
     section: "3", questionRef: "2024 OL Section 3A Q5(iii)",
     stem: "Answer any three in Japanese.",
-    questionText: "数学のテストは、何曜日にありますか。",
+    questionText: "数（すう）学のテストは、何曜（よう）日にありますか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "火よう日", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -2997,7 +5097,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2024-ol-3a-5-iv", topicId: "japanese-5-1", conceptId: "ja-3a-5iv",
     section: "3", questionRef: "2024 OL Section 3A Q5(iv)",
     stem: "Answer any three in Japanese.",
-    questionText: "数学の先生は、どんな人ですか。",
+    questionText: "数（すう）学の先生は、どんな人ですか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "こわい", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3066,10 +5166,130 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3b-1-iii", topicId: "japanese-5-5", conceptId: "ja-3b-1iii",
+    section: "3", questionRef: "2024 OL Section 3B Q1(iii)",
+    stem: "Write the underlined in the negative as in the example. Answer any five. e.g. 好きです。 じゃないです。Nó / Or じゃありません",
+    questionText: "テストはかんたんでした。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "じゃなかったです・じゃありませんでした。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3b-1-iv", topicId: "japanese-5-5", conceptId: "ja-3b-1iv",
+    section: "3", questionRef: "2024 OL Section 3B Q1(iv)",
+    stem: "Write the underlined in the negative as in the example. Answer any five. e.g. 好きです。 じゃないです。Nó / Or じゃありません",
+    questionText: "買い物をしました。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "しませんでした。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3b-1-v", topicId: "japanese-5-5", conceptId: "ja-3b-1v",
+    section: "3", questionRef: "2024 OL Section 3B Q1(v)",
+    stem: "Write the underlined in the negative as in the example. Answer any five. e.g. 好きです。 じゃないです。Nó / Or じゃありません",
+    questionText: "おにいさんは元気です。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "じゃないです・じゃありません。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3b-1-vi", topicId: "japanese-5-5", conceptId: "ja-3b-1vi",
+    section: "3", questionRef: "2024 OL Section 3B Q1(vi)",
+    stem: "Write the underlined in the negative as in the example. Answer any five. e.g. 好きです。 じゃないです。Nó / Or じゃありません",
+    questionText: "毎日、コーヒーを飲みます。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "飲みません。", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3b-2-i", topicId: "japanese-5-5", conceptId: "ja-3b-2i",
+    section: "3", questionRef: "2024 OL Section 3B Q2(i)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "8 時に学校 (a) を (b) で (c) に 行きます。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c. に", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
     id: "ja-2024-ol-3b-2-ii", topicId: "japanese-5-5", conceptId: "ja-3b-2ii",
     section: "3", questionRef: "2024 OL Section 3B Q2(ii)",
     stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
-    questionText: "友だちとケーキ (a) と (b) を (c) が 食べます。",
+    questionText: "友（とも）だちとケーキ (a) と (b) を (c) が 食べます。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "b を", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3121,6 +5341,54 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "b. まで", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3b-2-v", topicId: "japanese-5-5", conceptId: "ja-3b-2v",
+    section: "3", questionRef: "2024 OL Section 3B Q2(v)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "田中先生は英語 (a) の (b) で (c) は 先生です。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a. の", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "問題3",
+          "title": "Question 3 — printed material",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Japanese 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC058GLP000BV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2024 Ordinary Level — © State Examinations Commission.",
+    id: "ja-2024-ol-3b-2-vi", topicId: "japanese-5-5", conceptId: "ja-3b-2vi",
+    section: "3", questionRef: "2024 OL Section 3B Q2(vi)",
+    stem: "Circle the correct particle (a), (b) or (c) below as in the example. Answer any five. e.g. 勉強 (a)で (b) より (c) を します。",
+    questionText: "日本 (a) を (b) まで (c) が 好きです。",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "c. が", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3285,7 +5553,7 @@ export const CARDS: SecCard[] = [
     questionText: "this style since she was in 2nd year in High School.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Aya has liked this style since she was in 2nd year High School. False → 中学校 2 年生の時から、このスタイルが好き。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Aya has liked this style since she was in 2nd year High School False → 中学校 2 年生の時から、このスタイルが好き。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3309,7 +5577,7 @@ export const CARDS: SecCard[] = [
     questionText: "two younger brothers like the same style.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ken’s two younger brothers like the same style. False → 兄二人もおなじスタイルが好きです。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Ken’s two younger brothers like the same style False → 兄（あに）二人もおなじスタイルが好きです。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3333,7 +5601,7 @@ export const CARDS: SecCard[] = [
     questionText: "and American designers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ken likes European and American designers. True → ヨーロッパとアメリカのデザイナーが好き。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Ken likes European and American designers True → ヨーロッパとアメリカのデザイナーが好き。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3357,7 +5625,7 @@ export const CARDS: SecCard[] = [
     questionText: "anime and games.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maki’s hobbies are anime and games. False →趣味はアニメと読書です。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Maki’s hobbies are anime and games False →趣味（しゅみ）はアニメと読書です。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3381,7 +5649,7 @@ export const CARDS: SecCard[] = [
     questionText: "and Kiki.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maki’s friend likes Sailor Moon and Kiki. False →友だちはナルトのコスチュームが好きです。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
+    { id: "r-1", kind: "point", verbatim: "Maki’s friend likes Sailor Moon and Kiki False →友（とも）だちはナルトのコスチュームが好きです。", marks: 1, contextNote: "Answer in Irish or English, not in Japanese: the examination paper sets this ask in both of those. All ten schemes print a half-marks penalty for answering in the wrong language." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3399,9 +5667,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-1", topicId: "japanese-5-2", conceptId: "iste-cail-maith-bean-child-girl",
+    id: "ja-2025-ol-2c-1", topicId: "japanese-5-2", conceptId: "child-girl-like-woman",
     section: "2", questionRef: "2025 OL Section 2C Q1",
-    questionText: "好き (a) páiste (b) cailín (c) is maith (d) bean 好き (a) child (b) girl (c) like (d) woman",
+    stem: "好き (a) páiste (b) cailín (c) is maith (d) bean",
+    questionText: "好き (a) child (b) girl (c) like (d) woman",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3422,9 +5691,9 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-2", topicId: "japanese-5-2", conceptId: "anois-day-minute-now-time",
+    id: "ja-2025-ol-2c-2", topicId: "japanese-5-2", conceptId: "day-minute-now-time",
     section: "2", questionRef: "2025 OL Section 2C Q2",
-    questionText: "時 (a) lá (b) nóiméad (c) anois (d) am 時 (a) day (b) minute (c) now (d) time",
+    questionText: "時 (a) day (b) minute (c) now (d) time",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3445,9 +5714,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-3", topicId: "japanese-5-2", conceptId: "ada-deoch-bia-siopad-ireacht-clothes",
+    id: "ja-2025-ol-2c-3", topicId: "japanese-5-2", conceptId: "clothes-drink-food-shopping",
     section: "2", questionRef: "2025 OL Section 2C Q3",
-    questionText: "買い物 (a) éadaí (b) deoch (c) bia (d) siopadóireacht 買い物 (a) clothes (b) drink (c) food (d) shopping",
+    stem: "買い物 (a) éadaí (b) deoch (c) bia (d) siopadóireacht",
+    questionText: "買い物 (a) clothes (b) drink (c) food (d) shopping",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3468,9 +5738,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-4", topicId: "japanese-5-2", conceptId: "ceannaigh-tar-ith-igh-buy-come",
+    id: "ja-2025-ol-2c-4", topicId: "japanese-5-2", conceptId: "buy-come-eat",
     section: "2", questionRef: "2025 OL Section 2C Q4",
-    questionText: "行きます (a) ceannaigh (b) tar (c) ith (d) téigh 行きます (a) buy (b) come (c) eat (d) go",
+    stem: "行きます (a) ceannaigh (b) tar (c) ith (d) téigh",
+    questionText: "行きます (a) buy (b) come (c) eat (d) go",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3491,9 +5762,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-5", topicId: "japanese-5-2", conceptId: "nua-deas-ceart-leor-sean-new",
+    id: "ja-2025-ol-2c-5", topicId: "japanese-5-2", conceptId: "new-nice-okay-old",
     section: "2", questionRef: "2025 OL Section 2C Q5",
-    questionText: "新しい (a) nua (b) deas (c) ceart go leor (d) sean 新しい (a) new (b) nice (c) okay (d) old",
+    stem: "新しい (a) nua (b) deas (c) ceart go leor (d) sean",
+    questionText: "新しい (a) new (b) nice (c) okay (d) old",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3514,9 +5786,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-6", topicId: "japanese-5-2", conceptId: "fear-bean-hundred-man-thousand-woman",
+    id: "ja-2025-ol-2c-6", topicId: "japanese-5-2", conceptId: "hundred-man-thousand-woman",
     section: "2", questionRef: "2025 OL Section 2C Q6",
-    questionText: "百 (a) céad (b) fear (c) míle (d) bean 百 (a) hundred (b) man (c) thousand (d) woman",
+    stem: "百 (a) céad (b) fear (c) míle (d) bean",
+    questionText: "百 (a) hundred (b) man (c) thousand (d) woman",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3537,9 +5810,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-7", topicId: "japanese-5-2", conceptId: "cleachtadh-scoil-staid-ollscoil-practice-school",
+    id: "ja-2025-ol-2c-7", topicId: "japanese-5-2", conceptId: "practice-school-study-university",
     section: "2", questionRef: "2025 OL Section 2C Q7",
-    questionText: "勉強 (a) cleachtadh (b) scoil (c) staidéar (d) ollscoil 勉強 (a) practice (b) school (c) study (d) university",
+    stem: "勉強 (a) cleachtadh (b) scoil (c) staidéar (d) ollscoil",
+    questionText: "勉強 (a) practice (b) school (c) study (d) university",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3560,9 +5834,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-8", topicId: "japanese-5-2", conceptId: "duine-sta-sibl-mac-inn-beirt",
+    id: "ja-2025-ol-2c-8", topicId: "japanese-5-2", conceptId: "adult-siblings-student-people",
     section: "2", questionRef: "2025 OL Section 2C Q8",
-    questionText: "二人 (a) duine fásta (b) siblíní (c) mac léinn (d) beirt 二人 (a) adult (b) siblings (c) student (d) two people",
+    stem: "二人 (a) duine fásta (b) siblíní (c) mac léinn (d) beirt",
+    questionText: "二人 (a) adult (b) siblings (c) student (d) two people",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "d", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3583,9 +5858,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-9", topicId: "japanese-5-2", conceptId: "clois-abair-ceap-ach-hear-say",
+    id: "ja-2025-ol-2c-9", topicId: "japanese-5-2", conceptId: "hear-say-think-watch",
     section: "2", questionRef: "2025 OL Section 2C Q9",
-    questionText: "思います (a) clois (b) abair (c) ceap (d) féach 思います (a) hear (b) say (c) think (d) watch",
+    stem: "思います (a) clois (b) abair (c) ceap (d) féach",
+    questionText: "思います (a) hear (b) say (c) think (d) watch",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3606,9 +5882,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-10", topicId: "japanese-5-2", conceptId: "saor-salach-daor-cine-lta-cheap",
+    id: "ja-2025-ol-2c-10", topicId: "japanese-5-2", conceptId: "cheap-dirty-expensive-kind",
     section: "2", questionRef: "2025 OL Section 2C Q10",
-    questionText: "高い (a) saor (b) salach (c) daor (d) cineálta 高い (a) cheap (b) dirty (c) expensive (d) kind",
+    stem: "高い (a) saor (b) salach (c) daor (d) cineálta",
+    questionText: "高い (a) cheap (b) dirty (c) expensive (d) kind",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3629,9 +5906,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-11", topicId: "japanese-5-2", conceptId: "caireacht-ceand-amh-scr-obh-cooking",
+    id: "ja-2025-ol-2c-11", topicId: "japanese-5-2", conceptId: "cooking-kendo-reading-writing",
     section: "2", questionRef: "2025 OL Section 2C Q11",
-    questionText: "読書 (a) cócaireacht (b) Ceandó (c) léamh (d) scríobh 読書 (a) cooking (b) Kendo (c) reading (d) writing",
+    stem: "読書 (a) cócaireacht (b) Ceandó (c) léamh (d) scríobh",
+    questionText: "読書 (a) cooking (b) Kendo (c) reading (d) writing",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "c", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3652,9 +5930,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-12", topicId: "japanese-5-2", conceptId: "gach-gach-seachtain-rach-deireadh-seachtaine",
+    id: "ja-2025-ol-2c-12", topicId: "japanese-5-2", conceptId: "every-day-every-week-tomorrow-weekend",
     section: "2", questionRef: "2025 OL Section 2C Q12",
-    questionText: "毎週 (a) gach lá (b) gach seachtain (c) amárach (d) deireadh seachtaine 毎週 (a) every day (b) every week (c) tomorrow (d) weekend",
+    stem: "毎週 (a) gach lá (b) gach seachtain (c) amárach (d) deireadh seachtaine",
+    questionText: "毎週 (a) every day (b) every week (c) tomorrow (d) weekend",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "b", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3675,10 +5954,10 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC058GLP000BV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Japanese 2025 Ordinary Level — © State Examinations Commission.",
-    id: "ja-2025-ol-2c-13", topicId: "japanese-5-4", conceptId: "col-iste-duine-beag-big-college",
+    id: "ja-2025-ol-2c-13", topicId: "japanese-5-4", conceptId: "big-college-person-small",
     section: "2", questionRef: "2025 OL Section 2C Q13",
     stem: "大きい (a) mór (b) coláiste (c) duine (d) beag Circle the correct meaning (a), (b), (c) or (d) for the following Kanji as in the example. Answer any ten.",
-    questionText: "大きい (a) mór (b) coláiste (c) duine (d) beag 大きい (a) big (b) college (c) person (d) small",
+    questionText: "大きい (a) big (b) college (c) person (d) small",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "a", marks: 1, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3915,7 +6194,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2025-ol-3a-5-c", topicId: "japanese-5-1", conceptId: "ja-3a-5c",
     section: "3", questionRef: "2025 OL Section 3A Q5(c)",
     stem: "Answer in Japanese. Answer any three.",
-    questionText: "ケイトさんは誕生日の午後７時に、どこに行きましたか。",
+    questionText: "ケイトさんは誕生日の（たんじょうび）午後７時に、どこに行きましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "カラオケ", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
@@ -3939,7 +6218,7 @@ export const CARDS: SecCard[] = [
     id: "ja-2025-ol-3a-5-d", topicId: "japanese-5-1", conceptId: "ja-3a-5d",
     section: "3", questionRef: "2025 OL Section 3A Q5(d)",
     stem: "Answer in Japanese. Answer any three.",
-    questionText: "ケートさんは、誰と病院に行きましたか。",
+    questionText: "ケートさんは、誰と（だれ）病院に（びょういん）行きましたか。",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "お父さん", marks: 2, contextNote: "Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language." },
