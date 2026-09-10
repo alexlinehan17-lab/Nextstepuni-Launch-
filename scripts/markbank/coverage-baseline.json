@@ -223,5 +223,20 @@
    "hash": "aedd9969b3ce025e"
   },
   "refsHash": "83bd7bc978ad6302"
+ },
+ "technology": {
+  "cards": 744,
+  "contentHash": "0de0dad19f5f6a49",
+  "coveragePct": 93.0,
+  "covered": 753,
+  "excluded": 22,
+  "leaves": 833,
+  "open": 58,
+  "orphans": 0,
+  "papers": {
+   "count": 20,
+   "hash": "4ca9c323b2270a38"
+  },
+  "refsHash": "f708102cd1f5dbf9"
  }
 }

@@ -23,7 +23,7 @@ PREFIX = {'home-economics': 'he', 'biology': 'bio', 'business': 'bus',
           'chemistry': 'chem', 'physics': 'phys', 'agricultural-science': 'agsci',
           'economics': 'econ', 'maths': 'maths',
           'construction-studies': 'cons', 'computer-science': 'cs',
-          'engineering': 'eng'}[SUBJECT]
+          'engineering': 'eng', 'technology': 'tech'}[SUBJECT]
 TEST = 'test/markBankCardPreservation.test.ts'
 KEY = {'home-economics': 'home-economics', 'agricultural-science': 'agricultural-science'}.get(SUBJECT, SUBJECT)
 

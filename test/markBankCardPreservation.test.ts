@@ -43,6 +43,8 @@ import { CARDS as COMPUTER_SCIENCE_HIGHER } from '../components/MarkBank/cards/c
 import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technology/higher';
+import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 const decks = [
@@ -414,6 +416,11 @@ const decks = [
    * so a later regeneration cannot silently omit or replace any of its cards. */
   ['engineering:higher', ENGINEERING_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
   ['engineering:ordinary', ENGINEERING_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
+  /* Technology is the sixteenth subject and the first to be authored end to
+   * end from a paper-anchored census in one pass. Enrolled explicitly so a
+   * later regeneration cannot silently omit or replace any of its cards. */
+  ['technology:higher', TECHNOLOGY_HIGHER, 375, '7696b0fb8c6c5b3a5d172f610869ff4ea1489b07fdedbb2762f6f7a18822cbd7'],
+  ['technology:ordinary', TECHNOLOGY_ORDINARY, 369, 'ef56163769299d0b031c99356aa7debe6e01ac0bdb1096fa964db4b8d57cbed5'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -428,7 +435,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_239);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -440,7 +447,8 @@ describe('Mark Bank card preservation', () => {
     }
     const preNewSubjectCards = decks
       .filter(([name]) => !name.startsWith('computer-science:')
-        && !name.startsWith('engineering:'))
+        && !name.startsWith('engineering:')
+        && !name.startsWith('technology:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });
