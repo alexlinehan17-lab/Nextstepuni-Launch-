@@ -349,6 +349,20 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/ancient-greek',
     blocked: new Set(),
   },
+  'mandarin-chinese': {
+    title: 'Mandarin Chinese',
+    /* The specification these ten sittings were set on. Mandarin Chinese was
+     * first examined in 2022 and is a CURRICULAR modern language sat in two
+     * booklets — the written paper (SEC component 000) and a Listening
+     * Comprehension Test (A00) — and printed, unlike the six curricular
+     * languages carded before it, as separate English and Irish editions
+     * rather than one bilingual booklet. Cards come from Section A, Reading,
+     * only. See MANDARIN_CHINESE_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-mandarin-chinese-specification',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Mandarin Chinese\n * written paper. Only Section A, Reading, takes cards: Section B is written\n * production, which the scheme answers with a Communication and Language band\n * grid and no marking point, and the Listening Comprehension Test is answered\n * from a recording the SEC does not publish. Every card carries the material it\n * is about, bound to the pages of the question paper it was printed on, and\n * states which LANGUAGE the answer is wanted in — which this subject sets per\n * ask, not per paper — together with the paper\'s own rule that Chinese answers\n * must use simplified characters.',
+    figureDir: 'public/exam-figures/mandarin-chinese',
+    blocked: new Set(),
+  },
   'modern-greek': {
     title: 'Modern Greek',
     /* The syllabus these sixteen sittings were set on. Modern Greek is a

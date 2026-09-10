@@ -31,7 +31,8 @@ SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
             'czech', 'dutch', 'economics', 'engineering', 'english',
             'french', 'geography', 'german', 'history', 'home-economics',
             'irish', 'italian', 'japanese', 'latin', 'latvian', 'lcvp',
-            'lithuanian', 'maths', 'modern-greek', 'physics', 'polish',
+            'lithuanian', 'mandarin-chinese', 'maths', 'modern-greek',
+            'physics', 'polish',
             'portuguese', 'religious-education', 'romanian', 'russian',
             'spanish', 'technology']
 

@@ -144,5 +144,9 @@
  },
  "modern-greek": {
   "higher": 79
+ },
+ "mandarin-chinese": {
+  "higher": 114,
+  "ordinary": 87
  }
 }

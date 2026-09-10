@@ -164,6 +164,21 @@
     },
     "refsHash": "ab5312971b0e0217"
   },
+  "czech": {
+    "cards": 15,
+    "contentHash": "6c302051f1a4dede",
+    "coveragePct": 100.0,
+    "covered": 75,
+    "excluded": 144,
+    "leaves": 219,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "325d56e0739fd63d"
+    },
+    "refsHash": "7013eb0f4ad094fa"
+  },
   "dutch": {
     "cards": 42,
     "contentHash": "e9c0193ea33db730",
@@ -404,6 +419,21 @@
     },
     "refsHash": "15602894c57e4cf0"
   },
+  "mandarin-chinese": {
+    "cards": 201,
+    "contentHash": "82e2ed4c09522481",
+    "coveragePct": 100.0,
+    "covered": 218,
+    "excluded": 482,
+    "leaves": 700,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "a831dae7b231e378"
+    },
+    "refsHash": "25434d529fd64aae"
+  },
   "maths": {
     "cards": 833,
     "contentHash": "b03ee0576c972395",
@@ -553,20 +583,5 @@
       "hash": "4ca9c323b2270a38"
     },
     "refsHash": "54274e7e363d8dc6"
-  },
-  "czech": {
-    "cards": 15,
-    "contentHash": "6c302051f1a4dede",
-    "coveragePct": 100.0,
-    "covered": 75,
-    "excluded": 144,
-    "leaves": 219,
-    "open": 0,
-    "orphans": 0,
-    "papers": {
-      "count": 17,
-      "hash": "325d56e0739fd63d"
-    },
-    "refsHash": "7013eb0f4ad094fa"
   }
 }

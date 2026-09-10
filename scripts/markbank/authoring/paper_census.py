@@ -346,6 +346,24 @@ SUBJECTS = {
     # runs "1." to "9." down two pages of prose before a question is asked,
     # printed exactly like the question numbers that follow.
     'modern-greek': {'mode': 'sections', 'walker': 'mgr'},
+    # Mandarin Chinese is a CURRICULAR modern language first examined in 2022
+    # (SEC subject 566) and sat in two booklets: the written paper (component
+    # 000), whose margin tabs its two sections "Section A Reading" and "Section
+    # B Writing", and a Listening Comprehension Test (A00) headed Section A to
+    # Section E. So the section token is the paper's own — 'A' and 'B' for the
+    # written booklet, 'LA' to 'LE' for the listening one — and a citation
+    # reads "2024 HL Section A Q1(c)(i)".
+    #
+    # Its own walker for two reasons. The pages are set in a NON-LATIN script
+    # and two of them are set in a subset font with a broken ToUnicode map, so
+    # man_text.py repairs those two before any marker is read (there is no
+    # pinyin anywhere in the corpus — see man_text for what was measured). And
+    # every ask on the paper is followed by a printed ANSWER BOX whose labels
+    # are ordinary text — "Dublin Standard Time:", "Animal 1:", a bare "(i)" —
+    # which the generic reader takes for asks; the SEC draws those boxes as
+    # black frames and draws nothing else that way, so the page's own furniture
+    # separates a box from the reading passage printed inside one just like it.
+    'mandarin-chinese': {'mode': 'sections', 'walker': 'man'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -1938,6 +1956,66 @@ def mgr_flags(P, S):
     return flags + faults
 
 
+def census_man(subject, year, level):
+    """Mandarin Chinese: the written booklet and the listening booklet beside it.
+
+    THE DENOMINATOR IS THE PAPER, and both booklets are read: the Listening
+    Comprehension Test is never carded — the recording is the ask — but a
+    hundred marks of asks it prints belong in the denominator, and the way to
+    be sure of that is to read them rather than to assume them.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from man_paper import ManPaper                               # noqa: E402
+    from man_scheme import ManScheme, has_scheme                 # noqa: E402
+
+    P = ManPaper(year, level, subject)
+    S = ManScheme(year, level, subject) if has_scheme(year, level, subject) \
+        else None
+    texts = {ask.key: ask.full_text for ask in P.asks()}
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def man_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently — the paper for its asks, the
+    scheme for its prices — so every ask one holds and the other does not is a
+    reader fault, an SEC misprint or a real difference, and all three get
+    looked at rather than reconciled away. This is Law 3's independent check:
+    the census's own continuity flags see only interior gaps, and an ask keyed
+    under its NEIGHBOUR's letter leaves no gap at all.
+    """
+    flags = list(P.flags)
+    if S is None:
+        return flags
+    texts = {a.key: a.full_text for a in P.asks()}
+    S.split_against(texts.get)
+    flags += S.flags
+    paper = {a.key for a in P.reading_asks()}
+    scheme = {a.key for a in S.leaves() if a.unit == 'reading'}
+    # An ask the scheme prices ONE LEVEL UP is priced, not missing: 2023 Higher
+    # sets Question 1(a) as a four-row table on the paper and the scheme
+    # prices the letter once, "(4 x 2 marks)".
+    parents = {(s, q, letter) for s, q, letter, _r in scheme}
+    order = (lambda k: tuple('' if x is None else str(x) for x in k))
+    for key in sorted(paper - scheme, key=order):
+        if (key[0], key[1], key[2]) in parents:
+            continue
+        flags.append({'type': 'ask-not-in-scheme',
+                      'where': f'{P.year} {P.level} {key_label(key)}',
+                      'detail': 'the paper prints this ask and the scheme '
+                                'prices nothing at its address'})
+    for key in sorted(scheme - paper, key=order):
+        if any(k[:3] == key[:3] for k in paper):
+            continue
+        flags.append({'type': 'ask-not-in-paper',
+                      'where': f'{P.year} {P.level} {key_label(key)}',
+                      'detail': 'the scheme prices this ask and no paper '
+                                'prints it'})
+    return flags
+
+
 def census_pl(subject, year, level):
     """Polish: the written booklet and, from 2022, the listening booklet.
 
@@ -2613,6 +2691,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'mgr':
                     parts, texts, files, P_, S_ = census_mgr(
                         subject, year, level)
+                elif cfg.get('walker') == 'man':
+                    parts, texts, files, P_, S_ = census_man(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -2745,6 +2826,12 @@ def census_subject(subject):
                 # topics of eight at 4 — so adding up every printed tariff
                 # counts asks nobody sits. The checksum is the cover total.
                 marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 'man':
+                flags += man_flags(P_, S_)
+                label = 'written + listening'
+                marks = {(None, 0): sum(
+                    v for k, v in P_.section_marks.items()
+                    if k in ('A', 'B'))}
             elif cfg.get('walker') == 'mgr':
                 flags += mgr_flags(P_, S_)
                 # 100 marks in every year but the two Covid sittings, which
