@@ -8,7 +8,6 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { BookOpen, Layers, Compass, ArrowRight, Star } from 'lucide-react';
-import Puifin from './ui/Puifin';
 import { COLORS } from '../design/tokens';
 
 interface ModuleCompleteScreenProps {
@@ -43,9 +42,7 @@ const ModuleCompleteScreen: React.FC<ModuleCompleteScreenProps> = ({
               </MotionDiv>
 
               <MotionDiv initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: d(2), duration: 0.6, type: 'spring', stiffness: 200, damping: 12 }} className="my-8 flex justify-center">
-                <div className="w-28 h-28 rounded-full flex items-end justify-center overflow-hidden" style={{ backgroundColor: '#6EE7B7', border: '3px solid #059669', boxShadow: '5px 5px 0px 0px #059669' }}>
-                  <Puifin pose="cheer" size={92} />
-                </div>
+                <img src="/icons/onboarding/star-person.png" alt="" aria-hidden="true" width={144} height={144} className="h-36 w-36 object-contain" />
               </MotionDiv>
 
               <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: d(4), duration: 0.5 }}>
