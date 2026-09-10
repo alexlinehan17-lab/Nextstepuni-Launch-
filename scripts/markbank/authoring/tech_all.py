@@ -104,12 +104,23 @@ def clean_ask(text):
     was thrown away with it. Five Ordinary questions lost every marking point
     they had that way.
     """
-    text = clean(BLANK_RULE.sub(' ', text or ''))
+    raw = text or ''
+    text = clean(BLANK_RULE.sub(' ', raw))
+    # Only where the answerbook's ruled lines were actually there. A trailing
+    # colon is ALSO how a question introduces its own bullet list -- "Explain
+    # each of the following in relation to DFA:" -- and stripping that left
+    # the word "Explain" as the whole question on two cards, which the build
+    # then dropped as too short to stand alone.
+    if not BLANK_RULE.search(raw):
+        return text
     while True:
-        trimmed = FILL_LABEL.sub('', text)
-        if trimmed == text:
-            return text.strip()
-        text = trimmed.strip()
+        m = FILL_LABEL.search(text)
+        # A label follows the sentence it belongs under, or the label before
+        # it. Anything else is the question's own words.
+        if not m or m.start() == 0 \
+                or not re.search(r'[.?!:]\s*$', text[:m.start()]):
+            return text
+        text = text[:m.start()].strip()
 
 
 def _tokens(text):
@@ -159,7 +170,12 @@ def cardable(points):
     out = []
     for p in points:
         t = clean(p)
-        if len(t) < 4 or NOT_A_POINT.match(t):
+        # A cell of a table the extractor flattened -- "12000", "(EUR)" --
+        # states no answer, and the provenance gate rightly refuses it. One
+        # WORD is enough to be an answer, though: "Transistor." is the whole
+        # of 2024 Higher Q4(i), and demanding two threw it away.
+        if len(t) < 4 or NOT_A_POINT.match(t) \
+                or not re.search(r'[A-Za-z]{3,}', t):
             continue
         out.append(t)
     return out
@@ -202,6 +218,10 @@ def rows_for(points, marks, total, cap=MAX_ROWS):
     nothing -- the rule that has cost this bank five incidents when broken.
     """
     points = points[:min(cap, MAX_ROWS)]
+    if marks is None and len(points) == 1:
+        # One stated answer for a priced part: the part's tariff IS that row's
+        # mark. Nothing is divided, so nothing is guessed.
+        marks = [total]
     if marks and len(marks) == len(points):
         rows = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': p, 'marks': m,
                  'openList': True}
@@ -323,6 +343,21 @@ def author():
                 cue, points = split_cue([clean(l) for l in lines], ask)
                 score = cue_score(cue, ask)
                 cue_words = len(re.findall(r"[a-z']{3,}", cue.lower()))
+                if cue_words < MIN_CUE_WORDS:
+                    # The part's own cue can be a single word -- 2021 Higher
+                    # Q3 marks "'patched'" and "Anti-virus" -- but the BLOCK
+                    # reprints the stimulus above them, and the paper prints
+                    # the same stimulus as this question's stem. That is a
+                    # second document agreeing on which question this is,
+                    # which is what Law 4 asks for.
+                    head = ' '.join(clean(t) for t in block.head_lines())
+                    stem_text = (stems.get((section, q, letter))
+                                 or stems.get((section, q, None)) or '')
+                    if cue_score(head, stem_text) >= CUE_FLOOR \
+                            and len(re.findall(r"[a-z']{3,}", head.lower())) \
+                            >= MIN_CUE_WORDS:
+                        cue, cue_words = head, MIN_CUE_WORDS
+                        score = cue_score(head, stem_text)
                 if cue_words >= MIN_CUE_WORDS:
                     if score >= CUE_FLOOR:
                         confirmed += 1

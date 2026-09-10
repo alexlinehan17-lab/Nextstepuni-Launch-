@@ -73,7 +73,10 @@ OPTION_HEAD = re.compile(r'^Option\s+(\d)\b')
 # "1." at Section A; "2(a)" and "2(a) (i)" in Sections B and C. The dot form
 # is Section A's alone -- Section B never prints "2." -- so the two heads
 # cannot be confused.
-A_HEAD = re.compile(r'^(\d{1,2})\.\s+(?=\S)')
+# A head may have its line to ITSELF -- 2025 Higher sets "5." alone and the
+# question below it -- so the trailing text is optional. The forward-only
+# guard at the call site is what keeps a numbered list inside an answer out.
+A_HEAD = re.compile(r'^(\d{1,2})\.(?:\s+(?=\S)|\s*$)')
 BC_HEAD = re.compile(r'^(\d{1,2})\s*\(\s*([a-d])\s*\)\s*')
 ROMAN_HEAD = re.compile(r'^\(\s*(i{1,3}|iv|v)\s*\)\s*')
 # The rubric above a section, in either of the two forms the schemes print.

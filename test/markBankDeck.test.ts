@@ -58,6 +58,8 @@ import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-scienc
 import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as TECH_HIGHER } from '../components/MarkBank/cards/technology/higher';
+import { CARDS as TECH_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -447,6 +449,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['computer-science', 'ordinary', CS_ORDINARY],
     ['engineering', 'higher', ENG_HIGHER],
     ['engineering', 'ordinary', ENG_ORDINARY],
+    ['technology', 'higher', TECH_HIGHER],
+    ['technology', 'ordinary', TECH_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -510,6 +514,7 @@ describe('the taxonomy is the redeveloped specification', () => {
       geography: 'geography-',
       'computer-science': 'cs-',
       engineering: 'eng-',
+      technology: 'tech-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];
