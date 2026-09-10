@@ -30,7 +30,23 @@ import paper_census as PC                                    # noqa: E402
 import tech_all as TA                                        # noqa: E402
 from tech_scheme import TechScheme                           # noqa: E402
 
-REASON = 'the scheme states no marking point for this part'
+# The two refusals that ARE the exclusion claim: the scheme prints no marking
+# point for this part. Both are the same fact seen from two sides -- the text
+# layer holds nothing at all, or it holds the words the extractor read off a
+# drawing, which state nothing either.
+REASONS = {
+    'the scheme states no marking point for this part':
+        'the answer the scheme prints for this part is a DRAWING - a circuit, '
+        'a symbol, a sketch or a truth table - and it states no marking point '
+        'beside it. The tariff IS printed, so the part is priced; there is '
+        'simply nothing to lift.',
+    'the scheme answers this part with a drawing the text layer reads as '
+    'fragments':
+        'the answer the scheme prints for this part is a DRAWING, and what '
+        'the text layer holds is the words written INSIDE it - a flowchart\'s '
+        'boxes, a truth table\'s rows. Not one of them states a marking '
+        'point, and each would be a row a student is asked to tick.',
+}
 OUT = os.path.join(DIR, 'exclusions', 'technology.json')
 
 REF = re.compile(r'(\d{4}) (HL|OL) Section ([ABC]) Q(\d{1,2})'
@@ -41,7 +57,7 @@ def build():
     _cards, _refused, _examples, verdicts, _stats = TA.author()
     rows = []
     for v in verdicts:
-        if v['reason'] != REASON:
+        if v['reason'] not in REASONS:
             continue
         m = REF.match(v['ref'])
         year, level = int(m.group(1)), m.group(2).lower()
@@ -59,11 +75,7 @@ def build():
         address = v['ref'].split('Section ', 1)[1]
         rows.append({
             'ref': v['ref'],
-            'reason': (
-                'the answer the scheme prints for this part is a DRAWING - a '
-                'circuit, a symbol, a sketch or a truth table - and it states '
-                'no marking point beside it. The tariff IS printed, so the '
-                'part is priced; there is simply nothing to lift.'),
+            'reason': REASONS[v['reason']],
             'evidence': (
                 f'{year} {level.upper()} scheme, {address}: tariff '
                 f'{block.notation!r}; the scheme reprints the ask '

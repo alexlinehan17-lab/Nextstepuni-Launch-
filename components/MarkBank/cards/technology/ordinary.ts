@@ -279,10 +279,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-b2b-iii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q2(b)(iii)",
     questionText: "Using notes and sketches, describe how the LED light source could be atached to the stand.",
-    tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "stand.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Annotated sketch of a clip assembly or nut and bolt assembly, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Annotated sketch of a clip assembly or nut and bolt assembly, etc.", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -389,9 +388,8 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly describe what is meant by the terms additive and subtractive in reference to manufacturing.",
     tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 4+2+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "manufacturing.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Additive manufacturing is an appropriate name to describe the technologies that build 3D objects by adding layer-upon-layer of a material, whether the material is plastic, metal, concrete, etc.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Subtractive manufacturing is a process where 3D objects are constructed by successively cutting material away from a solid block of a material. Subtractive manufacturing can be done by manually cutting the material but is most typically done with a CNC Machine.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Additive manufacturing is an appropriate name to describe the technologies that build 3D objects by adding layer-upon-layer of a material, whether the material is plastic, metal, concrete, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Subtractive manufacturing is a process where 3D objects are constructed by successively cutting material away from a solid block of a material. Subtractive manufacturing can be done by manually cutting the material but is most typically done with a CNC Machine.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -511,7 +509,7 @@ export const CARDS: SecCard[] = [
     { id: "r-9", kind: "point", verbatim: "Start Stop Stop", marks: null, openList: true },
     { id: "r-10", kind: "point", verbatim: "Y Any valid alternative solution accepted.", marks: null, openList: true },
     { id: "r-11", kind: "point", verbatim: "Water? Refill", marks: null, openList: true },
-    { id: "r-12", kind: "point", verbatim: "Y (iii) Describe how you would indicate,", marks: null, openList: true },
+    { id: "r-12", kind: "point", verbatim: "Capsule on the machine, that the water", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -553,7 +551,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Any relevant example with a description, etc.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Parallel linkage", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "Gear", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Mechanical gripper", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -873,10 +870,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(c)(i)",
     questionText: "Suggest two tests that could be carried out on a television prior to being packaged for distribution.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "distribution.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Test circuitry, resolution of the screen, test viewer experience, functionality of apps, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Test circuitry, resolution of the screen, test viewer experience, functionality of apps, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -1683,10 +1679,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 OL Section C Q2(b)(ii)",
     questionText: "Briefly describe the operation of the circuit.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Briefly describe the operation of the circuit.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "When the temperature is low, the transistor activates and the buzzer will sound.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "When the temperature is low, the transistor activates and the buzzer will sound.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -1728,8 +1723,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Name the logic gates X and Y. (ii) In your answerbook, draw and complete the truth table for the combination of logic gates shown.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A B C D (i) Name the logic gates X and Y. B 0 0 0 1 X = Or gate, Y = Not gate 0 1 1 0 (ii) In your answerbook, draw and complete 1 0 1 0 the truth table for the combination of logic 1 1 1 0 gates shown", marks: 4, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Truth Table", marks: 6, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A B C D (i) Name the logic gates X and Y. B 0 0 0 1 X = Or gate, Y = Not gate 0 1 1 0 (ii) In your answerbook, draw and complete 1 0 1 0 the truth table for the combination of logic 1 1 1 0 gates shown", marks: 10, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2022-OL-paper-secC-q2d-art",
@@ -1787,10 +1781,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c3b-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(b)(ii)",
     questionText: "Name two hardware devices that could be connected wirelessly to a computer network.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "network.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Printer, mouse, keyboard, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Printer, mouse, keyboard, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -1814,10 +1807,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c3c-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(c)(i)",
     questionText: "Describe what is meant by the term Open-Source when referring to computer software.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "software.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Software released where the copyright holder grants the users permission to use, change and distribute the software with its source code.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Software released where the copyright holder grants the users permission to use, change and distribute the software with its source code.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2496,10 +2488,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-b2c-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2023 OL Section B Q2(c)(ii)",
     questionText: "Briefly outline two precautions that should be taken when purchasing match tickets online.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "online.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Be careful of suspicious/fake sites, careful with personal data, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Be careful of suspicious/fake sites, careful with personal data, etc.", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -2658,10 +2649,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-c1a-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(a)(i)",
     questionText: "Suggest two areas of home living that could benefit from the use of automated systems.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "systems.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Heating, lighting, IOT devices, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Heating, lighting, IOT devices, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -2692,29 +2682,6 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "• After two seconds the novelty light rotates", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "N • After thirty seconds the novelty light stops", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "On? rotating and the light bulb turns off.", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC065GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2023-ol-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
-    section: "C", questionRef: "2023 OL Section C Q1(b)(ii)",
-    stem: "• The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Start Button? OR",
-    questionText: "Suggest a modification to the flowchart that allows for music to be played as the novelty light rotates. Using an annotated sketch, show how pin number one of a PIC is identified.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Wait 2s Y", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "LED On", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Motor On", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Wait 2s", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Wait 30s Any valid alternative solution accepted.", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "Motor On", marks: null, openList: true },
-    { id: "r-7", kind: "point", verbatim: "Motor Off", marks: null, openList: true },
-    { id: "r-8", kind: "point", verbatim: "Music On", marks: null, openList: true },
-    { id: "r-9", kind: "point", verbatim: "LED On", marks: null, openList: true },
-    { id: "r-10", kind: "point", verbatim: "Wait 30s", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3369,19 +3336,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2024-ol-a6-ii", topicId: "tech-core-materials", conceptId: "core-materials",
-    section: "A", questionRef: "2024 OL Section A Q6(ii)",
-    questionText: "Describe a situation where this tool might be used.",
-    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "It can be useful when a line must be marked at an angle on wood. It can also be used to check an angle, etc.", marks: 4, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC065GLP014EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-a8-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2024 OL Section A Q8(ii)",
     stem: "The image shows a mechanism that allows the driver and driven wheels to rotate in the same direction.",
@@ -3459,11 +3413,10 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "used to represent the failure rate of a product over a period of time. Failure Rate B C", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Time", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Suggest a reason for the high failure rate at A-B, and at C-D.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "High failure rate at A-B: Early stage in the life of a product- faults are more likely to occur.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "As problems are resolved, the failure rate begins to fall.", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "High failure rate at C-D: The product is approaching its end of life and faults increase due to failing parts within the product, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Suggest a reason for the high failure rate at A-B, and at C-D.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "High failure rate at A-B: Early stage in the life of a product- faults are more likely to occur.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "As problems are resolved, the failure rate begins to fall.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "High failure rate at C-D: The product is approaching its end of life and faults increase due to failing parts within the product, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4212,9 +4165,8 @@ export const CARDS: SecCard[] = [
     questionText: "Describe a suitable finish that could be applied to protect the metal tubing from degradation.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "degradation.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Galvanising- a process of applying a protective zinc coating to steel or iron to prevent rusting.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Alternative finishes- Powder coating, paint, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Galvanising- a process of applying a protective zinc coating to steel or iron to prevent rusting.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Alternative finishes- Powder coating, paint, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4283,32 +4235,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sunglasses, privacy shields, optical switches, etc.", marks: 4, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC065GLP014EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2025-ol-a1-i", topicId: "tech-core-materials", conceptId: "core-materials",
-    section: "A", questionRef: "2025 OL Section A Q1(i)",
-    questionText: "Name the machine.",
-    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Band saw.", marks: 4, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC065GLP014EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2025-ol-a1-ii", topicId: "tech-core-materials", conceptId: "core-materials",
-    section: "A", questionRef: "2025 OL Section A Q1(ii)",
-    questionText: "State two safety precautions which should be observed when using this machine.",
-    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Wear safety glasses, ear defenders, use a protective guard, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -4841,23 +4767,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Motion sensor, LDR, etc. Gate opens", marks: 8, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC065GLP039EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2025-ol-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
-    section: "C", questionRef: "2025 OL Section C Q1(b)(iii)",
-    stem: "• When a button is pressed, the motorised gate opens • After 30 seconds, the gate closes • The motorised gate must remain closed for a minimum of 10 seconds before it can open again. Start Button",
-    questionText: "Suggest a modification to the flowchart to stop the gate from closing when an object blocks its path.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Stop Y Object? Button", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Gate closes", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Wait 10", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Any valid alternative solution accepted.", marks: null, openList: true },
     ],
   } as SecCard,
   {

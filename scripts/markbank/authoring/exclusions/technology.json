@@ -1,5 +1,10 @@
 [
  {
+  "ref": "2021 HL Section C Q2(d)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2021 HL scheme, C Q2(d)(i): tariff '(14 marks, 8 + 6)'; the scheme reprints the ask ('Draw a logic circuit for the flight controller to ensure the drone remains undam') and answers it graphically, leaving only 'Propeller Heat Deploy Batteries Parachute' in the text layer"
+ },
+ {
   "ref": "2021 OL Section A Q7",
   "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
   "evidence": "2021 OL scheme, A Q7: tariff '(Very good sketch - 8 marks, A Fair sketch - 4 marks)'; the scheme reprints the ask ('The image shows a wooden birdhouse. In the') and answers it graphically, leaving only 'B' in the text layer"
@@ -13,6 +18,26 @@
   "ref": "2021 OL Section B Q2(b)(ii)",
   "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
   "evidence": "2021 OL scheme, B Q2(b)(ii): tariff '(8 Marks, 2+4+2)'; the scheme reprints the ask ('Draw a labelled diagram of a suitable circuit for the LED light source. Include ') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2021 OL Section C Q5(a)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2021 OL scheme, C Q5(a)(ii): tariff '(10 Marks, 4 + 6)'; the scheme reprints the ask ('Draw the table below into your answerbook and complete the missing information.') and answers it graphically, leaving only 'Body part Material Classification Material Seat Fabric Leather Tyre Composite Steel reinforced rubbe' in the text layer"
+ },
+ {
+  "ref": "2022 HL Section A Q7",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2022 HL scheme, A Q7: tariff '(6 marks)'; the scheme reprints the ask ('The image shows a bridge under construction.') and answers it graphically, leaving only 'Suggested chart Task/Month 1 2 3 4 5 6 Foundations Pillars Pre-cast Beam Install Beam Install Railin' in the text layer"
+ },
+ {
+  "ref": "2022 HL Section A Q8",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
+  "evidence": "2022 HL scheme, A Q8: tariff '(6 marks)'; the scheme reprints the ask ('An exploded view of a castor wheel is shown. Sketch a pictorial view of the asse') and answers it graphically, leaving only 'wheel. assembled castor wheel' in the text layer"
+ },
+ {
+  "ref": "2022 HL Section C Q1(b)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2022 HL scheme, C Q1(b)(i): tariff '(16 marks, 10 + 4 + 2)'; the scheme reprints the ask ('Draw a flowchart for the operating sequence of the printer.') and answers it graphically, leaving only 'Start Power on No No Toner empty Fuser temp. Wait correct Yes Yes Replace toner Is paper in No Red F' in the text layer"
  },
  {
   "ref": "2022 HL Section C Q2(b)(ii)",
@@ -30,6 +55,11 @@
   "evidence": "2022 HL scheme, C Q2(d)(i): tariff '(14 marks, 8 + 6)'; the scheme reprints the ask ('Draw a circuit diagram with an appropriate input, ‘Darlington pair’ transistors ') and answers it graphically, with no text at all beneath it"
  },
  {
+  "ref": "2022 HL Section C Q4(b)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2022 HL scheme, C Q4(b)(i): tariff '(16 marks, 8 + 2 + 6)'; the scheme reprints the ask ('Draw a graph to show the cost of manufacturing the headphone stands using each') and answers it graphically, leaving only 'method. Cost (€) 3D Printing 12000 Injection moulding 10000 8000 BEQ 6000 4000 2000 0 10000 20000 Qu' in the text layer"
+ },
+ {
   "ref": "2022 OL Section A Q7",
   "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
   "evidence": "2022 OL scheme, A Q7: tariff '(Very good sketch- 8 marks, fair sketch 4 marks)'; the scheme reprints the ask ('The image shows a Stockholm toddler chair that can be used at two different heig') and answers it graphically, leaving only 'A' in the text layer"
@@ -40,9 +70,29 @@
   "evidence": "2022 OL scheme, C Q2(b)(iii): tariff '(20 Marks, 8+6+6)'; the scheme reprints the ask ('Redraw the given circuit diagram to show how the B') and answers it graphically, with no text at all beneath it"
  },
  {
+  "ref": "2023 HL Section A Q8",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2023 HL scheme, A Q8: tariff '(6 marks, 2 + 2 + 2)'; the scheme reprints the ask ('Complete the cause and effect diagram below by suggesting three factors to analy') and answers it graphically, leaving only 'Three appropriate factors selected. Machine Environment Propellers Wind Drone will not lift. Experti' in the text layer"
+ },
+ {
+  "ref": "2023 HL Section C Q1(b)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2023 HL scheme, C Q1(b)(i): tariff '(16 marks, 8 + 4 + 4)'; the scheme reprints the ask ('Draw a flowchart for the operating sequence of the iBowl.') and answers it graphically, leaving only 'Start Power on Green LED on Temp. level No Heater On check Yes No Water quality Drain water Refill t' in the text layer"
+ },
+ {
+  "ref": "2023 HL Section C Q2(d)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2023 HL scheme, C Q2(d)(i): tariff '(14 marks, 8 + 6)'; the scheme reprints the ask ('Draw a logic gate circuit to represent the operation of the coffee machine.') and answers it graphically, leaving only 'Pod in place Cup in place Temp correct Coffee machine operates.' in the text layer"
+ },
+ {
   "ref": "2023 OL Section A Q7",
   "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
   "evidence": "2023 OL scheme, A Q7: tariff '(8 marks)'; the scheme reprints the ask ('The image shows a bamboo cookbook stand.') and answers it graphically, leaving only 'A' in the text layer"
+ },
+ {
+  "ref": "2023 OL Section C Q1(b)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2023 OL scheme, C Q1(b)(ii): tariff '(20 Marks, 8+6+6)'; the scheme reprints the ask ('Suggest a modification to the flowchart Start') and answers it graphically, leaving only 'On? Wait 2s Y LED On Motor On Wait 2s Wait 30s Any valid alternative solution accepted. Motor On Mot' in the text layer"
  },
  {
   "ref": "2023 OL Section C Q2(b)(ii)",
@@ -53,6 +103,16 @@
   "ref": "2023 OL Section C Q2(d)(ii)",
   "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
   "evidence": "2023 OL scheme, C Q2(d)(ii): tariff '(10 Marks, 4+6)'; the scheme reprints the ask ('Using the Formulae and Tables booklet or otherwise,') and answers it graphically, leaving only 'E' in the text layer"
+ },
+ {
+  "ref": "2024 HL Section A Q5(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2024 HL scheme, A Q5(i): tariff '(6 marks, 4 + 2)'; the scheme reprints the ask ('Use the resistor colour-code table to calculate the value of the resistor shown.') and answers it graphically, leaving only 'Resistor bands: Colour code Tolerance code Black 0 Brown Black Brown 1% Brown 1 Red Red 2% Gold Red ' in the text layer"
+ },
+ {
+  "ref": "2024 HL Section A Q8",
+  "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
+  "evidence": "2024 HL scheme, A Q8: tariff '(6 marks)'; the scheme reprints the ask ('An exploded view of a garden lantern is shown. Sketch a pictorial view of the as') and answers it graphically, leaving only 'lantern.' in the text layer"
  },
  {
   "ref": "2024 HL Section C Q2(b)(i)",
@@ -80,6 +140,21 @@
   "evidence": "2024 OL scheme, C Q2(b)(iii): tariff '(20 Marks, 6+8+6)'; the scheme reprints the ask ('Redraw the circuit to include an LED output') and answers it graphically, with no text at all beneath it"
  },
  {
+  "ref": "2025 HL Section C Q1(b)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2025 HL scheme, C Q1(b)(i): tariff '(16 marks, 10 + 4 + 2)'; the scheme reprints the ask ('Draw a flowchart:') and answers it graphically, leaving only 'Touch screen ON Place item on conveyor Modification Barcode read No Reject' in the text layer"
+ },
+ {
+  "ref": "2025 HL Section C Q2(b)(ii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2025 HL scheme, C Q2(b)(ii): tariff '(16 marks, 2 + 8 + 6)'; the scheme reprints the ask ('Complete the circuit to include an appropriate input and output.') and answers it graphically, leaving only 'R1 Input: A Potential divider LDR / Variable resistor IC B LED output R2 0 V' in the text layer"
+ },
+ {
+  "ref": "2025 HL Section C Q2(c)(i)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2025 HL scheme, C Q2(c)(i): tariff '(14 marks, 8 + 6)'; the scheme reprints the ask ('Draw a logic gate circuit to represent the operation of the 3D printer.') and answers it graphically, leaving only 'Switch on (A) Filament in nozzle 1 (B) Filament in nozzle 2 (C) E Temperature sensor for 400°C (D)' in the text layer"
+ },
+ {
   "ref": "2025 HL Section C Q2(c)(ii)",
   "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
   "evidence": "2025 HL scheme, C Q2(c)(ii): tariff '(14 marks, 8 + 6)'; the scheme reprints the ask ('Compile a truth table for this system.') and answers it graphically, leaving only 'A B C D E 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 1 0 0 1 0 0 0 0 1 0 1 0 0 1 1 1 0 1 0 0 0 0 1 0 0 1 0 ' in the text layer"
@@ -93,6 +168,11 @@
   "ref": "2025 OL Section A Q9",
   "reason": "the answer the scheme prints for this part is a DRAWING - a circuit, a symbol, a sketch or a truth table - and it states no marking point beside it. The tariff IS printed, so the part is priced; there is simply nothing to lift.",
   "evidence": "2025 OL scheme, A Q9: tariff '(Very good diagram- 8 marks, good diagram- 6 marks, fair diagram- 4 marks)'; the scheme reprints the ask ('The image shows a DC motor, a push-to-make switch, and a battery box connected t') and answers it graphically, with no text at all beneath it"
+ },
+ {
+  "ref": "2025 OL Section C Q1(b)(iii)",
+  "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
+  "evidence": "2025 OL scheme, C Q1(b)(iii): tariff '(20 Marks, 6+8+6)'; the scheme reprints the ask ('Suggest a modification to the flowchart to stop the gate from') and answers it graphically, leaving only 'Stop Y Object? Button N Gate closes Wait 10 Any valid alternative solution accepted.' in the text layer"
  },
  {
   "ref": "2025 OL Section C Q2(b)(ii)",

@@ -90,6 +90,16 @@ FOOTER = re.compile(
     r'|\s*Technology\s*[-–—]\s*(?:Higher|Ordinary)\s+Level.*$', re.I)
 
 # A cue too short to identify anything: "Modification:", "Calculation:".
+# An ask that names its subject only by pointing back at the stimulus:
+# "Name the machine.", "State two safety precautions ... using this machine."
+# Dropping the stem under one of these leaves a question nobody can answer,
+# which is a different thing from dropping context nobody needs.
+LEANS_ON_STEM = re.compile(
+    r'\b(?:this|these|the)\s+(?:machine|tool|mechanism|device|component|image'
+    r'|graphic|photograph|product|item|object|system|diagram|circuit|sign'
+    r'|structure|symbol|material|screen|table|chart|graph|drawing|sketch'
+    r'|assembly|arrangement|layout)\b', re.I)
+
 MIN_CUE_WORDS = 4
 # How much of the scheme's cue the paper's ask must hold before the pairing
 # counts as confirmed by wording rather than by address.
@@ -184,6 +194,35 @@ def split_cue(lines, ask):
         else:
             break
     return ' '.join(cue), points
+
+
+def question_label(covered):
+    """The roman labels a card cites, as the scheme prints them beside them."""
+    return ' '.join(k[3] or '' for k in covered)
+
+
+def graphic_fragments(points):
+    """Whether these "points" are a drawing the extractor read the words off.
+
+    A flowchart's boxes come through as "Start", "Power on", "Toner empty
+    Fuser temp. Wait correct", "Yes Yes" -- eleven rows a student would be
+    asked to tick, not one of which states anything. What separates them from
+    prose is that they are short AND they never close a sentence.
+    """
+    if len(points) < 4:
+        return False
+    # Two exceptions, both found by reading the twenty parts this first
+    # refused. A WORKED CALCULATION is short and unpunctuated line by line
+    # ("Series: R2 + R3 = 8k + 4k = 12k") and states its answer in every one
+    # of them. And a BULLETED list is the scheme's own enumeration of accepted
+    # answers, however tersely each is written.
+    if sum(1 for p in points if CALCULATION.search(p)) >= 2:
+        return False
+    if sum(1 for p in points if p.lstrip().startswith(('\u2022', '-', '\u2013'))) >= 2:
+        return False
+    short = [p for p in points if len(p) < 46]
+    closed = [p for p in points if re.search(r'[.?!]$', p)]
+    return len(short) >= 0.7 * len(points) and len(closed) <= 0.25 * len(points)
 
 
 def reflow(points, scheme_norm=''):
@@ -460,8 +499,23 @@ def author(bind_figures=True):
                         continue
 
                 points = cardable(points, S.normalised)
+                # A "point" that repeats the ask is the scheme naming the part
+                # rather than answering it: 2021 Higher Q3 marks the term
+                # "'patched'" and heads its answer with the term again, which
+                # shipped as a row telling the student the question.
+                bare = SCHEME_NORM(f'{ask} {question_label(covered)}')
+                points = [p for p in points
+                          if len(p) > 60 or SCHEME_NORM(p) not in bare]
                 if not points:
                     note('the scheme states no marking point for this part', ask)
+                    continue
+                if graphic_fragments(points):
+                    # The answer is a DRAWING the extractor has read the words
+                    # off: a flowchart's boxes, a truth table's rows. Each
+                    # fragment is a row a student would be asked to tick, and
+                    # not one of them states anything.
+                    note('the scheme answers this part with a drawing the text '
+                         'layer reads as fragments', ask)
                     continue
                 if not total:
                     note('the scheme prints no tariff for this part', ask)
@@ -490,10 +544,13 @@ def author(bind_figures=True):
                                 and not cardlint.SELF_WORK.search(text)
                                 and not cardlint.INLINE_TABLE.search(text))
 
-                if not figure and points_at_print(question):
+                if not figure and (points_at_print(question)
+                                   or (show_stem and points_at_print(show_stem)
+                                       and LEANS_ON_STEM.search(question))):
                     note('points at printed matter the card cannot carry', question)
                     continue
-                if not figure and show_stem and points_at_print(show_stem):
+                if not figure and show_stem and points_at_print(show_stem) \
+                        and not LEANS_ON_STEM.search(question):
                     # The STIMULUS points at a picture and the ask does not.
                     # "A 4K UHD interactive touch screen ... is shown" above
                     # "Explain the term UHD." -- the ask stands perfectly well

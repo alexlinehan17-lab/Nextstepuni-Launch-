@@ -111,7 +111,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(3 + 3 marks)"
   },
   "totalMarks": 3,
@@ -119,15 +119,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "‘patched’",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Patches are software and operating system (OS) updates that address security vulnerabilities within a program or product. Software vendors may choose to release updates to fix performance bugs, as well as to provide enhanced security features, etc.",
-    "marks": null,
+    "marks": 3,
     "openList": true
    }
   ],
@@ -148,7 +141,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(3 + 3 marks)"
   },
   "totalMarks": 3,
@@ -156,15 +149,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Anti-virus",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Antivirus software is a program or set of programs that are designed to prevent, search for, detect and remove software viruses and other malicious software like worms, trojans, adware, etc.",
-    "marks": null,
+    "marks": 3,
     "openList": true
    }
   ],
@@ -542,15 +528,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "shown.",
-    "marks": 3,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Two distinct graphic techniques required:",
-    "marks": 3,
+    "marks": 6,
     "openList": true
    }
   ],
@@ -765,7 +744,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(6 marks, 2 + 4)"
   },
   "totalMarks": 4,
@@ -773,15 +752,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "screen",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "As the motor turns the screw, the wedge will make the screen tilt. Motor with screw mechanism",
-    "marks": null,
+    "marks": 4,
     "openList": true
    }
   ],
@@ -965,19 +937,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "transistor.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "When temperature increases, the resistance of the thermistor decreases, in turn the resistance across the variable resistor increases and so does the voltage across the variable resistor. When the threshold voltage is reached, the transistor turns on and activates the relay, turning on the fan.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "The resistor R3 will protect the transistor from input overload and the diode at the relay will prevent damaging feedback into the transistor from the relay.",
     "marks": null,
@@ -1715,19 +1680,12 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Base current",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "Collector current = Transistor Gain x Base Current",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "Collector current = 20 x 0.0003 = 0.006A or 6mA",
     "marks": null,
@@ -1735,57 +1693,6 @@
    }
   ],
   "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
- },
- {
-  "id": "tech-2021-hl-c2d-i",
-  "topicId": "tech-opt-electronics",
-  "conceptId": "opt-electronics",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2021 HL Section C Q2(d)(i)",
-  "questionText": "Draw a logic circuit for the flight controller to ensure the drone remains undamaged.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(14 marks, 8 + 6)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Propeller",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Heat",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Deploy",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Batteries Parachute",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
  },
  {
   "id": "tech-2021-hl-c2d-ii",
@@ -2159,26 +2066,19 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "businesses.",
+    "verbatim": "Explain the competitive sales advantages for either Fairtrade ® or CE marked products.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Explain the competitive sales advantages for either Fairtrade ® or CE marked products.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "Fairtrade seeks to create a stable market with producers expected to maintain standards and be sure of getting a fair price for their produce. Fairtrade contributes to sustainable development by offering better trading conditions to marginalised producers and workers.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "CE products must meet European standards to ensure that products are safe and meet environmental standards. Some insurers will demand CE mark for this level of quality control.",
     "marks": null,
@@ -3381,7 +3281,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(8 Marks, 2+4+2)"
   },
   "totalMarks": 2,
@@ -3389,15 +3289,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "stand.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Annotated sketch of a clip assembly or nut and bolt assembly, etc.",
-    "marks": null,
+    "marks": 2,
     "openList": true
    }
   ],
@@ -3606,19 +3499,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "manufacturing.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Additive manufacturing is an appropriate name to describe the technologies that build 3D objects by adding layer-upon-layer of a material, whether the material is plastic, metal, concrete, etc.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Subtractive manufacturing is a process where 3D objects are constructed by successively cutting material away from a solid block of a material. Subtractive manufacturing can be done by manually cutting the material but is most typically done with a CNC Machine.",
     "marks": null,
@@ -3951,12 +3837,12 @@
    {
     "id": "r-12",
     "kind": "point",
-    "verbatim": "Y (iii) Describe how you would indicate,",
+    "verbatim": "Capsule on the machine, that the water",
     "marks": null,
     "openList": true
    }
   ],
-  "notes": "The scheme prints '(20 Marks, 8 + 6 + 6)' for this question. The scheme lists 18 accepted answers; the first 12 are shown."
+  "notes": "The scheme prints '(20 Marks, 8 + 6 + 6)' for this question. The scheme lists 17 accepted answers; the first 12 are shown."
  },
  {
   "id": "tech-2021-ol-c1c-ii",
@@ -4056,13 +3942,6 @@
     "id": "r-3",
     "kind": "point",
     "verbatim": "Gear",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Mechanical gripper",
     "marks": null,
     "openList": true
    }
@@ -4830,7 +4709,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(10 Marks, 6 + 4)"
   },
   "totalMarks": 6,
@@ -4838,15 +4717,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "distribution.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Test circuitry, resolution of the screen, test viewer experience, functionality of apps, etc.",
-    "marks": null,
+    "marks": 6,
     "openList": true
    }
   ],
@@ -5324,115 +5196,6 @@
   "notes": "The scheme prints '(2 + 4 marks)' for this part."
  },
  {
-  "id": "tech-2022-hl-a7",
-  "topicId": "tech-core-structures",
-  "conceptId": "core-structures",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2022 HL Section A Q7",
-  "questionText": "The image shows a bridge under construction. Compile a Gantt chart for the construction of a typical bridge.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(6 marks)"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Task/Month 1 2 3 4 5 6",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Foundations",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Pillars",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Pre-cast Beam",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Install Beam",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Install Railings",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Safety Inspections",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(6 marks)' for this question."
- },
- {
-  "id": "tech-2022-hl-a8",
-  "topicId": "tech-core-graphics",
-  "conceptId": "core-graphics",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2022 HL Section A Q8",
-  "questionText": "An exploded view of a castor wheel is shown. Sketch a pictorial view of the assembled castor wheel.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "technology-2022-HL-paper-secA-q8-art",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(6 marks)"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "wheel.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "assembled castor wheel",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(6 marks)' for this question."
- },
- {
   "id": "tech-2022-hl-a9-i",
   "topicId": "tech-core-ict",
   "conceptId": "core-ict",
@@ -5740,33 +5503,26 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Explain the term biodegradable.",
+    "verbatim": "Biodegradable products have the capability of being broken down and decaying into innocuous products by the action of living things (such as micro-organisms)",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Biodegradable products have the capability of being broken down and decaying into innocuous products by the action of living things (such as micro-organisms)",
+    "verbatim": "Outline one advantage and one disadvantage of using biodegradable plates and cups.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Outline one advantage and one disadvantage of using biodegradable plates and cups.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
     "verbatim": "Advantages: The manufacture of biodegradable products often takes less energy than traditional materials, meaning that it uses fewer fossil fuels and produces fewer greenhouse gas emissions that harm the planet. It also releases fewer harmful substances when breaking down. Products can be used as compost which reduces landfill, etc.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-6",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "Disadvantages: Biodegradable plates and cups still create additional products rather than using products repeatedly, there is an incentive to manufacture more products and still must consider energy used to manufacture and transport, littering, processing, and composting is required after use, flimsy, increased safety risk, etc.",
     "marks": null,
@@ -5798,15 +5554,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "shown.",
-    "marks": 3,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Two distinct graphic techniques are required.",
-    "marks": 3,
+    "marks": 6,
     "openList": true
    }
   ],
@@ -5827,7 +5576,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(8 marks, 4 + 4)"
   },
   "totalMarks": 4,
@@ -5835,15 +5584,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "diseases.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Surface cleaning and sterilisation, fogging machines, use of data analysis and communication systems, manufacture of masks/CO2 monitors, air filtration systems",
-    "marks": null,
+    "marks": 4,
     "openList": true
    }
   ],
@@ -6235,26 +5977,19 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "cycle.",
+    "verbatim": "PDSA (PDCA) Plan.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "PDSA (PDCA) Plan.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "Study (or check).",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "Act.",
     "marks": null,
@@ -6316,19 +6051,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "consumer.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Benefits: Will focus the vast amount of content to your preferences, can use past behaviour of purchases or ratings to consider content, can offer new groups or innovative ideas related to work or hobbies, etc.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Negative consequences: Recommendations may not be suitable, due to lack of data capture, increased pressure on consumer to purchase recommended items, etc",
     "marks": null,
@@ -6336,106 +6064,6 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6 + 4)' for this part."
- },
- {
-  "id": "tech-2022-hl-c1b-i",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2022 HL Section C Q1(b)(i)",
-  "questionText": "Draw a flowchart for the operating sequence of the printer.",
-  "stem": "• After the power is turned on, the fuser temperature and the toner level are checked • A flashing red LED is turned on if paper is not available • Once these initial checks have been completed, the printer roller pulls the sheet through the printer • If the paper jams as it goes through the printer, a buzzer will sound • The finished sheet is ejected. Print head module",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(16 marks, 10 + 4 + 2)"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Start",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Power on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Toner empty Fuser temp. Wait correct",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Yes Yes",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Replace toner",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Is paper in No",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Red Flashing Led machine?",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Motor on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Sheet Jam? Buzzer on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Copy complete",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Any valid alternative solution accepted.",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(16 marks, 10 + 4 + 2)' for this part."
  },
  {
   "id": "tech-2022-hl-c1b-ii",
@@ -6482,7 +6110,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(16 marks, 10 + 4 + 2)"
   },
   "totalMarks": 2,
@@ -6490,15 +6118,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "cartridge.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "The density of light can be sensed by an LDR-based circuit, this will detect the level of toner still in place, electronic scale to measure weight etc.",
-    "marks": null,
+    "marks": 2,
     "openList": true
    }
   ],
@@ -6714,13 +6335,6 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "B, C and D used in the circuit.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "As temperature decreases the resistance of thermistor “B” increases and when a voltage of .6V enters base of transistor it turns on, giving output 1 to OR gate “D” and buzzer sounds. The alarm can be tested by activating the push-to-make switch “C” which will also turn the output buzzer on.",
     "marks": null,
     "openList": true
@@ -6891,7 +6505,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(10 marks, 6 + 4)"
   },
   "totalMarks": 4,
@@ -6899,15 +6513,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "meetings.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "On-line access, clear audio and visual communication, secure access with end-to-end encryption, client interaction and presentation features, user control functions, multi-platform access by PC, tablet, phone, etc.",
-    "marks": null,
+    "marks": 4,
     "openList": true
    }
   ],
@@ -7245,64 +6852,6 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6 + 4)' for this part."
- },
- {
-  "id": "tech-2022-hl-c4b-i",
-  "topicId": "tech-opt-manufacturing",
-  "conceptId": "opt-manufacturing",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2022 HL Section C Q4(b)(i)",
-  "questionText": "Draw a graph to show the cost of manufacturing the headphone stands using each method.",
-  "stem": "Injection moulding: Cost of producing the mould is €6000. Production cost per stand is €0.20. Or 3D printing: Cost of printing each stand is €0.80. The company does not include the fixed cost of machines, labour and set-up, which are assumed to be equal for both production methods. Please turn over",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(16 marks, 8 + 2 + 6)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "method.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Cost (€) 3D Printing",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Injection moulding",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "8000 BEQ",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Quantity",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(16 marks, 8 + 2 + 6)' for this part."
  },
  {
   "id": "tech-2022-hl-c4b-ii",
@@ -7762,26 +7311,19 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "sections.",
+    "verbatim": "Fibre: Nylon is manufactured or cut into thin strands e.g., nylon rope, clothing, etc.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Fibre: Nylon is manufactured or cut into thin strands e.g., nylon rope, clothing, etc.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "Film: Nylon is rolled into very thin sheets e.g., packaging film for food or pharmaceuticals, etc.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "Extruded: machined into long sections which may be cut to the required length e.g., round bars and tubes, conveyor guides, gears, etc.",
     "marks": null,
@@ -9295,7 +8837,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(20 Marks, 8+6+6)"
   },
   "totalMarks": 6,
@@ -9303,15 +8845,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Briefly describe the operation of the circuit.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "When the temperature is low, the transistor activates and the buzzer will sound.",
-    "marks": null,
+    "marks": 6,
     "openList": true
    }
   ],
@@ -9408,14 +8943,7 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "A B C D (i) Name the logic gates X and Y. B 0 0 0 1 X = Or gate, Y = Not gate 0 1 1 0 (ii) In your answerbook, draw and complete 1 0 1 0 the truth table for the combination of logic 1 1 1 0 gates shown",
-    "marks": 4,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Truth Table",
-    "marks": 6,
+    "marks": 10,
     "openList": true
    }
   ],
@@ -9526,7 +9054,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(20 Marks, 8+6+6)"
   },
   "totalMarks": 6,
@@ -9534,15 +9062,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "network.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Printer, mouse, keyboard, etc.",
-    "marks": null,
+    "marks": 6,
     "openList": true
    }
   ],
@@ -9593,7 +9114,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(10 Marks, 4+6)"
   },
   "totalMarks": 4,
@@ -9601,15 +9122,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "software.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Software released where the copyright holder grants the users permission to use, change and distribute the software with its source code.",
-    "marks": null,
+    "marks": 4,
     "openList": true
    }
   ],
@@ -10758,33 +10272,19 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Driver",
+    "verbatim": "Driver/Driven x Driver/Driven",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Gear A (8 teeth) (450 RPM)",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Driver/Driven x Driver/Driven",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
     "verbatim": "Ratio = A/B X C/D = 8/24 X 8/24 = 1/9",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-5",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "Output speed = 450 RPM x 1/9 = 50 RPM",
     "marks": null,
@@ -10961,87 +10461,6 @@
    }
   ],
   "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
- },
- {
-  "id": "tech-2023-hl-a13-i",
-  "topicId": "tech-core-structures",
-  "conceptId": "core-structures",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2023 HL Section A Q13(i)",
-  "questionText": "Name the mechanism and describe its operation.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(6 marks, 4 + 2)"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Name: Worm and gearwheel",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Operation: One turn of worm moves wheel 1 tooth.",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
- },
- {
-  "id": "tech-2023-hl-a13-ii",
-  "topicId": "tech-core-structures",
-  "conceptId": "core-structures",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2023 HL Section A Q13(ii)",
-  "questionText": "Give two reasons for using this mechanism in the hoist.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(6 marks, 4 + 2)"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Gives a very precise movement,",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Can be used to prevent slippage,",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Compact and strong, speed reduction etc.",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
  },
  {
   "id": "tech-2023-hl-a14-i",
@@ -11274,19 +10693,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "easily.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "housing connector",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Cover to click into place keeping batteries batteries secure.",
     "marks": null,
@@ -11568,19 +10980,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "selections.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Robot casing: Polypropylene, ABS: easy to mould into shape, thermoplastic (can recycle), good impact resistance, etc.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Robot arm: aluminium tubing: light, strengthened with tube profile, machines quickly, etc.",
     "marks": null,
@@ -11831,92 +11236,6 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6 +4)' for this part."
- },
- {
-  "id": "tech-2023-hl-c1b-i",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2023 HL Section C Q1(b)(i)",
-  "questionText": "Draw a flowchart for the operating sequence of the iBowl.",
-  "stem": "The iBowl performs the following steps when operating: • a green LED illuminates when powered on • temperature is constantly monitored, with a heater enabled if the temperature falls below a set level • water quality is monitored by total dissolved solids (TDS) sensors. Poor quality water is drained and clean water is pumped in if needed • water pH is constantly displayed.",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(16 marks, 8 + 4 + 4)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Start",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Power on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Green LED on",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Temp. level No",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Heater On check",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Water quality Drain water Refill tank check",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Display Water temperature",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Any valid alternative solution accepted.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Display water pH",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(16 marks, 8 + 4 + 4)' for this part."
  },
  {
   "id": "tech-2023-hl-c1b-ii",
@@ -12265,19 +11584,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "components.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "The basic principle of this circuit is to compare the voltages at the Op-Amp IC. The potential divider at R1(10kΩ) and R2(10kΩ) provides a reference voltage of4.5V at the IC input. The thermistor and variable resistor provide a potential divider circuit with the voltage from junction AB feeding into the Op-Amp. As heat level changes, the resistance of the thermistor changes. When the voltage from junction AB into the",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Op-Amp rises above the reference voltage of 4.5V, the output of the IC turned on.",
     "marks": null,
@@ -12391,57 +11703,6 @@
     "id": "r-3",
     "kind": "point",
     "verbatim": "This allows for convenient and cordless charging of devices by utilizing the principles of electromagnetic induction.",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
- },
- {
-  "id": "tech-2023-hl-c2d-i",
-  "topicId": "tech-opt-electronics",
-  "conceptId": "opt-electronics",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2023 HL Section C Q2(d)(i)",
-  "questionText": "Draw a logic gate circuit to represent the operation of the coffee machine.",
-  "stem": "A 10kΩ + IC - 10kΩ B",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(14 marks, 8 + 6)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Pod in place",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Cup in place",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Temp correct",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Coffee machine operates.",
     "marks": null,
     "openList": true
    }
@@ -12737,26 +11998,19 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "of cyber security.",
+    "verbatim": "Realistic scenarios can be created where participants can experience phishing attempts in a controlled environment.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Realistic scenarios can be created where participants can experience phishing attempts in a controlled environment.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "Behaviours can be changed through the recognition of suspicious activities and increased awareness of appropriate actions.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "Simulations can be tailored to the work of the company.",
     "marks": null,
@@ -12993,7 +12247,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(16 marks, 6 + 8 + 2)"
   },
   "totalMarks": 8,
@@ -13001,15 +12255,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Control chart",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "UCL 8 Mean 4 LCL",
-    "marks": null,
+    "marks": 8,
     "openList": true
    }
   ],
@@ -13408,26 +12655,19 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "development.",
+    "verbatim": "Products are not damaged while testing which reduces costs.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Products are not damaged while testing which reduces costs.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "Products can be tested while in use allowing preventative maintenance.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "Internal faults can be detected by x-ray and other NDT methods, etc.",
     "marks": null,
@@ -14275,7 +13515,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(6 Marks, 4+2)"
   },
   "totalMarks": 2,
@@ -14283,15 +13523,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "online.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Be careful of suspicious/fake sites, careful with personal data, etc.",
-    "marks": null,
+    "marks": 2,
     "openList": true
    }
   ],
@@ -14663,7 +13896,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(10 marks, 6+4)"
   },
   "totalMarks": 6,
@@ -14671,15 +13904,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "systems.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Heating, lighting, IOT devices, etc.",
-    "marks": null,
+    "marks": 6,
     "openList": true
    }
   ],
@@ -14760,99 +13986,6 @@
     "id": "r-4",
     "kind": "point",
     "verbatim": "On? rotating and the light bulb turns off.",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
- },
- {
-  "id": "tech-2023-ol-c1b-ii",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2023 OL Section C Q1(b)(ii)",
-  "questionText": "Suggest a modification to the flowchart that allows for music to be played as the novelty light rotates. Using an annotated sketch, show how pin number one of a PIC is identified.",
-  "stem": "• The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Start Button? OR",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(20 Marks, 8+6+6)"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Wait 2s Y",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "LED On",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Motor On",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Wait 2s",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Wait 30s Any valid alternative solution accepted.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Motor On",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Motor Off",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Music On",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "LED On",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Wait 30s",
     "marks": null,
     "openList": true
    }
@@ -16165,36 +15298,6 @@
   "notes": "The scheme prints '(6 marks, 3 + 3)' for this part."
  },
  {
-  "id": "tech-2024-hl-a3-ii",
-  "topicId": "tech-core-energy",
-  "conceptId": "core-energy",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2024 HL Section A Q3(ii)",
-  "questionText": "State the function of the proximity sensor integrated into this screen.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(6 marks, 3 + 3)"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "The integration of proximity sensors into UHD screens enhances user experience, convenience, and energy efficiency by allowing the display to respond intelligently to the presence or absence of users in its vicinity.",
-    "marks": 3,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(6 marks, 3 + 3)' for this part."
- },
- {
   "id": "tech-2024-hl-a4-i",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -16253,85 +15356,6 @@
    }
   ],
   "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
- },
- {
-  "id": "tech-2024-hl-a5-i",
-  "topicId": "tech-core-energy",
-  "conceptId": "core-energy",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2024 HL Section A Q5(i)",
-  "questionText": "Use the resistor colour code table to calculate the value of the resistor shown.",
-  "stem": "Colour code Tolerance code Black 0 Resistor bands: Brown Black Red Gold Brown 1% Brown 1 Red 2% Red 2 Gold 5% Orange 3 Silver 10% Yellow 4 Green 5 Blue 6 Violet 7 Grey 8 White 9",
-  "figureKey": "",
-  "questionFigureKey": "technology-2024-HL-paper-secA-q5-art",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(6 marks, 4 + 2)"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Resistor bands: Colour code",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Tolerance code Black 0",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Brown",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Black Brown 1% Brown 1",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Red Red 2%",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Gold Red 2",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Gold 5% Orange 3",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Value: 1000 Ω Silver 10% Yellow 4",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
  },
  {
   "id": "tech-2024-hl-a5-ii",
@@ -16429,7 +15453,7 @@
   "questionFigureKey": "technology-2024-HL-paper-secA-q6-art",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(6 marks, 4 + 2)"
   },
   "totalMarks": 2,
@@ -16437,15 +15461,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "established.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "The critical path in a network diagram is the sequence of tasks or activities that determines the overall duration of a project.",
-    "marks": null,
+    "marks": 2,
     "openList": true
    }
   ],
@@ -16508,36 +15525,6 @@
    }
   ],
   "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
- },
- {
-  "id": "tech-2024-hl-a8",
-  "topicId": "tech-core-graphics",
-  "conceptId": "core-graphics",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2024 HL Section A Q8",
-  "questionText": "An exploded view of a garden lantern is shown. Sketch a pictorial view of the assembled lantern.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "technology-2024-HL-paper-secA-q8-art",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(6 marks)"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "lantern.",
-    "marks": 6,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(6 marks)' for this question."
  },
  {
   "id": "tech-2024-hl-a9-i",
@@ -16963,7 +15950,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(10 marks, 4 + 4 + 2)"
   },
   "totalMarks": 2,
@@ -16971,15 +15958,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "systems.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Use of strong passwords, encryption, software updates, device authentication, review privacy settings, consider methods of storage of data, etc.",
-    "marks": null,
+    "marks": 2,
     "openList": true
    }
   ],
@@ -17022,26 +16002,19 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Motor",
+    "verbatim": "DPDT c/o switch",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "DPDT c/o switch",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
     "verbatim": "Electric motor directly Power connected to blinds.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-6",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "A relay can be used for higher voltages (including mains)",
     "marks": null,
@@ -18216,33 +17189,26 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Secure communication protocols:",
+    "verbatim": "Phone secure communication protocols refer to the methods and standards employed to ensure the security, privacy and integrity of data transmitted between mobile devices and other systems. This includes the use of HTTPS (Hypertext",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Phone secure communication protocols refer to the methods and standards employed to ensure the security, privacy and integrity of data transmitted between mobile devices and other systems. This includes the use of HTTPS (Hypertext",
+    "verbatim": "Transfer Protocol Secure), VPN (Virtual Private Network), etc.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Transfer Protocol Secure), VPN (Virtual Private Network), etc.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
     "verbatim": "Remote tracking, locking and wiping capabilities through features like \"Find My",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-6",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "Phone\" to locate a lost device and protect or remove sensitive data.",
     "marks": null,
@@ -18854,7 +17820,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(10 marks, 4 + 6)"
   },
   "totalMarks": 6,
@@ -18862,15 +17828,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "industry.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Strong and light material, will absorb impact, can store and stack products effectively, product may be reused, it will recycle, it is compostable, etc.",
-    "marks": null,
+    "marks": 6,
     "openList": true
    }
   ],
@@ -19372,36 +18331,6 @@
   "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
-  "id": "tech-2024-ol-a6-ii",
-  "topicId": "tech-core-materials",
-  "conceptId": "core-materials",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2024 OL Section A Q6(ii)",
-  "questionText": "Describe a situation where this tool might be used.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(4+4 marks)"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "It can be useful when a line must be marked at an angle on wood. It can also be used to check an angle, etc.",
-    "marks": 4,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(4+4 marks)' for this part."
- },
- {
   "id": "tech-2024-ol-a8-ii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -19588,33 +18517,26 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Time",
+    "verbatim": "Suggest a reason for the high failure rate at A-B, and at C-D.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Suggest a reason for the high failure rate at A-B, and at C-D.",
+    "verbatim": "High failure rate at A-B: Early stage in the life of a product- faults are more likely to occur.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "High failure rate at A-B: Early stage in the life of a product- faults are more likely to occur.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
     "verbatim": "As problems are resolved, the failure rate begins to fall.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-6",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "High failure rate at C-D: The product is approaching its end of life and faults increase due to failing parts within the product, etc.",
     "marks": null,
@@ -21360,19 +20282,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "degradation.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Galvanising- a process of applying a protective zinc coating to steel or iron to prevent rusting.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Alternative finishes- Powder coating, paint, etc.",
     "marks": null,
@@ -21915,47 +20830,47 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Give a reason for using a frame structure for this roof.",
+    "verbatim": "It gives inherent strength to the structure to resist external forces.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "It gives inherent strength to the structure to resist external forces.",
+    "verbatim": "Cover materials can be replaced without removing the entire roof.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Cover materials can be replaced without removing the entire roof.",
+    "verbatim": "• Gives a natural material appearance and texture",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-6",
     "kind": "point",
-    "verbatim": "Suggest two advantages of using wood for the frame.",
+    "verbatim": "• Has a thermal insulation property",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-7",
     "kind": "point",
-    "verbatim": "• Gives a natural material appearance and texture",
+    "verbatim": "• Can be formed to give aesthetic appeal with unusual shapes, such as the curved roof shown",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-8",
     "kind": "point",
-    "verbatim": "• Has a thermal insulation property",
+    "verbatim": "• Wood is more environmentally friendly than alternative materials, etc.",
     "marks": null,
     "openList": true
    }
   ],
-  "notes": "The scheme prints '(6 marks, 2 +2 + 2)' for this question. The scheme lists 10 accepted answers; the first 8 are shown."
+  "notes": "The scheme prints '(6 marks, 2 +2 + 2)' for this question."
  },
  {
   "id": "tech-2025-hl-a10-i",
@@ -22715,7 +21630,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(10 marks, 4 + 4 + 2)"
   },
   "totalMarks": 2,
@@ -22723,15 +21638,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "gearbox.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "The gearbox can be filled with oil up to the split in the casing. As the gears rotate, they will carry the lubricating oil to all moving parts of the gearbox. As speed increases, the oil will be moved quicker to lubricate effectively. Bearings etc.",
-    "marks": null,
+    "marks": 2,
     "openList": true
    }
   ],
@@ -22972,64 +21880,6 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6 +4)' for this part."
- },
- {
-  "id": "tech-2025-hl-c1b-i",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2025 HL Section C Q1(b)(i)",
-  "questionText": "Draw a flowchart for the operating sequence of the reverse vending machine.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(16 marks, 10 + 4 + 2)"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Touch screen ON",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Place item on conveyor",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Modification",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Barcode read No",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Reject",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(16 marks, 10 + 4 + 2)' for this part."
  },
  {
   "id": "tech-2025-hl-c1b-ii",
@@ -23342,64 +22192,6 @@
   "notes": "The scheme prints '(10 marks, 6 + 4)' for this part."
  },
  {
-  "id": "tech-2025-hl-c2b-ii",
-  "topicId": "tech-opt-electronics",
-  "conceptId": "opt-electronics",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2025 HL Section C Q2(b)(ii)",
-  "questionText": "Complete the circuit to include an appropriate input and output.",
-  "stem": "+9 V R1 A Input output IC B R2 0 V",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(16 marks, 2 + 8 + 6)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Input: A",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Potential divider",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "LDR / Variable resistor IC",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "B LED output",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "R2 0 V",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(16 marks, 2 + 8 + 6)' for this part."
- },
- {
   "id": "tech-2025-hl-c2b-iii",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -23435,57 +22227,6 @@
    }
   ],
   "notes": "The scheme prints '(16 marks, 2 + 8 + 6)' for this part."
- },
- {
-  "id": "tech-2025-hl-c2c-i",
-  "topicId": "tech-opt-electronics",
-  "conceptId": "opt-electronics",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2025 HL Section C Q2(c)(i)",
-  "questionText": "Draw a logic gate circuit to represent the operation of the 3D printer.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(14 marks, 8 + 6)"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Switch on (A)",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Filament in nozzle 1 (B)",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Filament in nozzle 2 (C) E",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Temperature sensor for 400°C (D)",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
  },
  {
   "id": "tech-2025-hl-c2d-ii",
@@ -23621,47 +22362,40 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Wireless",
+    "verbatim": "Internet connection",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Internet connection",
+    "verbatim": "Router Wireless access point",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Router Wireless access point",
+    "verbatim": "A wireless network connects computers without using network cables.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "A wireless network connects computers without using network cables.",
+    "verbatim": "Computers use radio communications to send data between each other. Devices can communicate directly with other wireless computers or connect to an existing network through a wireless Access Point.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Computers use radio communications to send data between each other. Devices can communicate directly with other wireless computers or connect to an existing network through a wireless Access Point.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
     "verbatim": "Encoding devices convert digital information in to a suitable format for transmission across a wireless network, these include Wi-Fi routers.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-7",
+    "id": "r-6",
     "kind": "point",
     "verbatim": "Transmission devices transfer information between two or more points with antennae and device receivers.",
     "marks": null,
@@ -23818,19 +22552,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "images.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Vector images tend to be used in logos which are made up of lines and curves. They are resolution-independent which means they can be scaled using mathematical formulas to maintain the position of the different shapes. Advantages are vector images can be scaled to any size without loss of image quality, they have a lower file size and are easy to edit.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Bitmap images are made up of tiny dots called pixels. Bitmaps are ideal for complex images such as photographs, they are readily available and don’t require expertise to create as long as the user has access to a digital camera or a scanner.",
     "marks": null,
@@ -24613,66 +23340,6 @@
    }
   ],
   "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
- },
- {
-  "id": "tech-2025-ol-a1-i",
-  "topicId": "tech-core-materials",
-  "conceptId": "core-materials",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2025 OL Section A Q1(i)",
-  "questionText": "Name the machine.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(4+4 marks)"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Band saw.",
-    "marks": 4,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(4+4 marks)' for this part."
- },
- {
-  "id": "tech-2025-ol-a1-ii",
-  "topicId": "tech-core-materials",
-  "conceptId": "core-materials",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "technology",
-  "section": "A",
-  "questionRef": "2025 OL Section A Q1(ii)",
-  "questionText": "State two safety precautions which should be observed when using this machine.",
-  "stem": "",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "(4+4 marks)"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Wear safety glasses, ear defenders, use a protective guard, etc.",
-    "marks": 4,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
   "id": "tech-2025-ol-a2-i",
@@ -25849,57 +24516,6 @@
     "kind": "point",
     "verbatim": "Motion sensor, LDR, etc. Gate opens",
     "marks": 8,
-    "openList": true
-   }
-  ],
-  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
- },
- {
-  "id": "tech-2025-ol-c1b-iii",
-  "topicId": "tech-opt-control",
-  "conceptId": "opt-control",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "technology",
-  "section": "C",
-  "questionRef": "2025 OL Section C Q1(b)(iii)",
-  "questionText": "Suggest a modification to the flowchart to stop the gate from closing when an object blocks its path.",
-  "stem": "• When a button is pressed, the motorised gate opens • After 30 seconds, the gate closes • The motorised gate must remain closed for a minimum of 10 seconds before it can open again. Start Button",
-  "figureKey": "",
-  "questionFigureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal",
-   "notation": "(20 Marks, 6+8+6)"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Stop Y Object? Button",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Gate closes",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Wait 10",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Any valid alternative solution accepted.",
-    "marks": null,
     "openList": true
    }
   ],

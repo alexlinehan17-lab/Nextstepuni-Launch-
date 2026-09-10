@@ -1,0 +1,22 @@
+{
+ "tech-2021-hl-c2d-i": "the scheme answers it with a logic circuit; the rows were the drawing's own words",
+ "tech-2022-hl-a7": "the scheme answers it with a Gantt chart; the rows were the chart's cells",
+ "tech-2022-hl-a8": "the scheme answers it with a drawn sequence; the rows were its box labels",
+ "tech-2022-hl-c1b-i": "the scheme answers it with a flowchart; the rows were \"Start\", \"Power on\", \"Yes Yes\"",
+ "tech-2022-hl-c4b-i": "the scheme answers it with a cost graph; the rows were the table cells beneath it",
+ "tech-2023-hl-a13-i": "the ask names its subject only through the stimulus (\"the mechanism\"), and no crop of it could be published",
+ "tech-2023-hl-a13-ii": "the ask names its subject only through the stimulus, and no crop of it could be published",
+ "tech-2023-hl-c1b-i": "the scheme answers it with a flowchart; the rows were the drawing's own words",
+ "tech-2023-hl-c2d-i": "the scheme answers it with a circuit diagram; the rows were component labels",
+ "tech-2024-hl-a3-ii": "the ask names its subject only through the stimulus (\"this screen\"), and the crop of it carries the ask",
+ "tech-2024-hl-a5-i": "the ask reads the colour bands off a photograph the card cannot show on its own",
+ "tech-2024-hl-a8": "the scheme answers it with a pictorial sketch; the rows were the drawing's labels",
+ "tech-2025-hl-c1b-i": "the scheme answers it with a flowchart; the rows were the drawing's own words",
+ "tech-2025-hl-c2b-ii": "the scheme answers it with a circuit diagram; the rows were component labels",
+ "tech-2025-hl-c2c-i": "the scheme answers it with a logic diagram; the rows were gate labels",
+ "tech-2023-ol-c1b-ii": "the scheme answers it with a flowchart; the rows were the drawing's own words",
+ "tech-2024-ol-a6-ii": "the ask names its subject only through the stimulus (\"this tool\"), and the crop of it carries the ask",
+ "tech-2025-ol-a1-i": "\"Name the machine.\" cannot be answered without the photograph, and the crop of it carries the ask",
+ "tech-2025-ol-a1-ii": "the ask names its subject only through the stimulus (\"this machine\"), and the crop of it carries the ask",
+ "tech-2025-ol-c1b-iii": "the scheme answers it with a flowchart; the rows were the drawing's own words"
+}
