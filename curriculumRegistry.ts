@@ -441,6 +441,29 @@ const CONSTRUCTION_STUDIES_GROUPS = [
  * transmission systems, brakes and other mechanisms") added because the
  * written paper asks about those every year. The syllabus PDF is a SCAN with
  * no text layer, so the headings were read by rendering its pages. */
+/**
+ * The Mark Bank's twelve Technology headings, against the syllabus area each
+ * one IS. Ordered by the syllabus's own numbering, which is not the paper's:
+ * syllabus area 7 is "Option: Electronics and Control", which the paper sets
+ * as Option 2, and area 8 is "Option: Applied Control Systems", which the
+ * paper sets as Option 1. Mirrors TECHNOLOGY_STRANDS in
+ * components/MarkBank/deck.ts.
+ */
+const TECHNOLOGY_DECK_TOPICS: Record<string, CanonicalCurriculumTopic> = {
+  'technology-0': { id: 'tech-core-design', code: 'C1', title: 'A process of design' },
+  'technology-1': { id: 'tech-core-project', code: 'C2', title: 'Project and quality management' },
+  'technology-2': { id: 'tech-core-materials', code: 'C3', title: 'Materials and production' },
+  'technology-3': { id: 'tech-core-graphics', code: 'C4', title: 'Communications and graphic media' },
+  'technology-4': { id: 'tech-core-ict', code: 'C5', title: 'Information and communications technology' },
+  'technology-5': { id: 'tech-core-structures', code: 'C6', title: 'Structures and mechanisms' },
+  'technology-6': { id: 'tech-core-energy', code: 'C7', title: 'Energy, electricity and electronics' },
+  'technology-7': { id: 'tech-opt-electronics', code: 'O2', title: 'Electronics and control' },
+  'technology-8': { id: 'tech-opt-control', code: 'O1', title: 'Applied control systems' },
+  'technology-9': { id: 'tech-opt-ict', code: 'O3', title: 'Information and communications technology (option)' },
+  'technology-10': { id: 'tech-opt-manufacturing', code: 'O4', title: 'Manufacturing systems' },
+  'technology-11': { id: 'tech-opt-materials', code: 'O5', title: 'Materials technology' },
+};
+
 const ENGINEERING_GROUPS = [
   {
     id: 'eng1',
@@ -1948,6 +1971,20 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
   if (spec.subjectId === 'technology') {
     return {
       ...spec,
+      // The written paper examines each of the twelve syllabus AREAS as a
+      // whole -- one Section C question per option, and Sections A and B
+      // across the seven core areas -- so the Mark Bank files its cards at
+      // area level rather than against a sub-heading the paper never
+      // addresses. Each area therefore carries one extra canonical topic,
+      // named for the area and carrying the deck's own id, so a card
+      // resolves into this specification. The group ids are untouched: the
+      // selection rule below names them, and so does the registry test.
+      groups: spec.groups.map((group) => {
+        const deckTopic = TECHNOLOGY_DECK_TOPICS[group.id];
+        return deckTopic
+          ? { ...group, topics: [...group.topics, deckTopic] }
+          : group;
+      }),
       id: 'technology:current',
       title: 'Leaving Certificate Technology syllabus',
       status: 'verified',

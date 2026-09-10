@@ -111,6 +111,12 @@ MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
 # "Section 1", "Section A" as a header — never "Sections 2 and 3", which is a
 # cover line for a whole booklet, because \b cannot fall inside "Sections".
 SECTION = re.compile(r'\bSection\s+([A-Z]|\d{1,2})\b')
+# A marker block the walker can see, standing for "a new booklet starts here".
+FILE_BREAK = '\x00FILE-BREAK\x00'
+
+# Where a booklet stops setting questions and starts talking about itself.
+BACK_MATTER = re.compile(
+    r'^(?:Answerbook for Section|Acknowledgements\b|Copyright notice\b)')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 
@@ -299,6 +305,12 @@ def census_merged(subject, year, level, component=None):
     return parts, texts, P.files
 
 
+# Stimulus prose from the last census_sections() walk of each sitting, for
+# authoring passes that need it. Written as a side table rather than returned,
+# so census_subject()'s contract with every other reader is unchanged.
+SECTION_STEMS = {}
+
+
 def census_sections(subject, year, level):
     """The section-restart walker: Business and Home Economics.
 
@@ -328,7 +340,23 @@ def census_sections(subject, year, level):
     # splits applied, so the neighbour guards can see the whole paper.
     blocks = []
     for path in P.files:
+        # A booklet boundary closes whatever question was open. The sitting's
+        # SECTIONS run on across the two booklets, but a question does not:
+        # the last question of Technology's Section A booklet was absorbing
+        # the cover of the Section B and C booklet -- "Coimisiun na Scruduithe
+        # Stait ... 136 marks Instructions" -- through the continuation rule.
+        blocks.append(FILE_BREAK)
         for block in PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None):
+            # The answerbook's own back matter -- its instructions, its ruled
+            # pages, the image acknowledgements and the copyright notice --
+            # follows the last question in the SAME booklet, and the walker
+            # ran straight on into it: the last question of Technology's
+            # Section A came out carrying two thousand characters of "Start
+            # each question on a new page" and a list of image URLs. Skipped
+            # per FILE, not for the sitting, because the next booklet's
+            # questions come after it.
+            if BACK_MATTER.match(block):
+                break
             for text in PP.INLINE_QHEAD.split(block):
                 # Capital markers mid-block: Business glues "(B) Outline..."
                 # onto the tail of (A)'s prose.
@@ -351,7 +379,14 @@ def census_sections(subject, year, level):
                             # it keyed a part (c) whose whole text was "or".
                             text = re.sub(r'Answer\s+\d{1,2}\([a-d]\)\s+(?:and|or)\s+'
                                           r'\d{1,2}\([a-d]\)', ' ', text)
-                        for text in (re.split(r'\s(?=(?:Option\s+\d\b|\d{1,2}\([a-d]\)\s))', text)
+                        # "2(c)" may END a piece: the roman split above cuts
+                        # the block before " (i)", which leaves the letter
+                        # marker as the last token of the piece before it, and
+                        # a rule demanding whitespace after the marker never
+                        # saw it. Eight lettered parts across three Higher
+                        # papers were invisible -- and their romans filed
+                        # themselves under the letter above.
+                        for text in (re.split(r'\s(?=(?:Option\s+\d\b|\d{1,2}\([a-d]\)(?:\s|$)))', text)
                                      if subject == 'technology' else [text]):
                             text = text.strip()
                             if not text:
@@ -370,7 +405,20 @@ def census_sections(subject, year, level):
     # for axis labels. 2022 HL Business lost Q2-Q5 to a matching table.
     lone = [i for i, t in enumerate(blocks)
             if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
-    scaffold = {i for i in lone if i - 1 in lone or i + 1 in lone}
+
+    def _value(i):
+        return int(blocks[i].strip().rstrip('.').replace('\u2212', '-'))
+
+    # A lone number belongs to a RUN of them -- an answerbook's ruled lines, a
+    # matching table's rows, a graph axis -- and a run steps by one, or repeats
+    # (a page number printed above the head that shares its value). A lone
+    # number whose lone neighbours are neither is not part of their run: 2022
+    # Higher Technology sets the answer lines "1." and "2." for Question 4
+    # immediately above the head "5.", and treating "5." as more scaffolding
+    # lost Question 5 whole, its two parts filed under Question 4.
+    scaffold = {i for i in lone
+                if any(j in lone and abs(_value(i) - _value(j)) <= 1
+                       for j in (i - 1, i + 1))}
     # A run of short numbered lines is an option list inside a question
     # ('1. Merger  2. Strategic alliance  ...'), not a run of question heads —
     # walking it re-keyed four Business sittings' Section 1.
@@ -389,6 +437,9 @@ def census_sections(subject, year, level):
     parts, stems = {}, {}
     section, q, letter, roman = None, None, None, None
     for index, text in enumerate(blocks):
+        if text is FILE_BREAK:
+            q, letter, roman = None, None, None
+            continue
         if index in scaffold:
             continue
         # A marker-only block — "(B)" alone, its content following — is a real
@@ -538,6 +589,13 @@ def census_sections(subject, year, level):
         parts[(section_, q_, None, None)] = list(lines)
 
     texts = {k: PP.unligature(' '.join(' '.join(v).split())) for k, v in parts.items()}
+    # The stimulus prose printed above a question's parts, keyed the same way.
+    # The census itself does not need it -- a leaf is counted, not shown -- but
+    # an authoring pass does: "Explain the term UHD." is the whole of a leaf
+    # whose subject is named only in the sentence above it.
+    SECTION_STEMS[(subject, year, level)] = {
+        k: PP.unligature(' '.join(' '.join(v).split()))
+        for k, v in stems.items()}
     return set(parts), texts, P.files
 
 

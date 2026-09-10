@@ -80,9 +80,9 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // What CANNOT pass is a ref with no parseable address at all.
 // The question number is OPTIONAL: Religious Education's Sections B-J print
 // none, so its citations read "2023 HL Section E Q(b)(ii)".
+// CL is LCVP's common level, the third the SEC prints.
 const HEAD =
-  /^(\d{4}) (HL|OL)(?: Paper (\d))?(?: Section ([A-Za-z0-9]+))?(?: E(\d))? (?:Q(\d{1,2})?(-alt)?|ABQ)/;
-  /^(\d{4}) (HL|OL|CL)(?: Paper (\d))?(?: Section ([A-Za-z0-9]+))?(?: E(\d))? (?:Q(\d{1,2})(-alt)?|ABQ)/;
+  /^(\d{4}) (HL|OL|CL)(?: Paper (\d))?(?: Section ([A-Za-z0-9]+))?(?: E(\d))? (?:Q(\d{1,2})?(-alt)?|ABQ)/;
 // The bare A/B between tokens is Chemistry's printed option question —
 // "Q11(d)A(i)" answers option A of part (d).
 const TAIL =

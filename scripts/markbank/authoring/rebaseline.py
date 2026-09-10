@@ -23,7 +23,21 @@ PREFIX = {'home-economics': 'he', 'biology': 'bio', 'business': 'bus',
           'chemistry': 'chem', 'physics': 'phys', 'agricultural-science': 'agsci',
           'economics': 'econ', 'maths': 'maths',
           'construction-studies': 'cons', 'computer-science': 'cs',
-          'engineering': 'eng'}[SUBJECT]
+          'engineering': 'eng', 'technology': 'tech'}[SUBJECT]
+# A withdrawal any subject can record, beside Economics' own list: one JSON
+# file per subject, {card id: why}. The reason is the point of it -- the guard
+# this walks past is the one that caught a total wipe recorded as a clean run,
+# so a withdrawal has to say what was WRONG with the card. See
+# authoring/withdrawn/README.md.
+_here = os.path.dirname(os.path.abspath(__file__))
+_withdrawn_path = os.path.join(_here, 'withdrawn', f'{SUBJECT}.json')
+WITHDRAWN_WHY = {}
+if os.path.exists(_withdrawn_path):
+    import json as _json
+    with open(_withdrawn_path, encoding='utf-8') as _fh:
+        WITHDRAWN_WHY = _json.load(_fh)
+WITHDRAWN = set(WITHDRAWN) | set(WITHDRAWN_WHY)
+
 TEST = 'test/markBankCardPreservation.test.ts'
 KEY = {'home-economics': 'home-economics', 'agricultural-science': 'agricultural-science'}.get(SUBJECT, SUBJECT)
 
@@ -53,7 +67,8 @@ for level in ('higher', 'ordinary'):
     lost = sorted(set(old) - set(new) - WITHDRAWN)
     pulled = sorted((set(old) - set(new)) & WITHDRAWN)
     for w in pulled:
-        print(f'    withdrawn on purpose (econ_refs.WITHDRAWN): {w}')
+        why = WITHDRAWN_WHY.get(w, 'econ_refs.WITHDRAWN')
+        print(f'    withdrawn on purpose: {w} — {why}')
     added = sorted(set(new) - set(old))
     dupes = len(new) != len(set(new))
     print(f'{SUBJECT}:{level}  {len(old)} -> {len(new)}   +{len(added)}  lost={len(lost)}  dupes={dupes}')

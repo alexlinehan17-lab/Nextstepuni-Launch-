@@ -944,6 +944,39 @@ export const LCVP_STRANDS: StrandRef[] = lcvpCurriculum.strands.map((strand, mod
       title: topic.name.replace(/^Unit \d+: /, ''),
     })),
 }));
+/**
+ * The Leaving Certificate Technology syllabus, as the written paper examines
+ * it. Seven core areas carry Sections A and B; the five options are Section
+ * C, where the paper prints one 40-mark question per option and the candidate
+ * answers one. The paper names the options itself -- "Option 3 - Information
+ * and Communications Technology" -- and does so identically in all ten
+ * sittings, so an option card's heading is read off the page rather than
+ * inferred. See curriculumRegistry.ts, specification "technology:current".
+ */
+export const TECHNOLOGY_STRANDS: StrandRef[] = [
+  {
+    id: 'tech-core', label: 'Core', title: 'Core',
+    topics: [
+      { id: 'tech-core-design', code: 'C1', title: 'A process of design' },
+      { id: 'tech-core-project', code: 'C2', title: 'Project and quality management' },
+      { id: 'tech-core-materials', code: 'C3', title: 'Materials and production' },
+      { id: 'tech-core-graphics', code: 'C4', title: 'Communications and graphic media' },
+      { id: 'tech-core-ict', code: 'C5', title: 'Information and communications technology' },
+      { id: 'tech-core-structures', code: 'C6', title: 'Structures and mechanisms' },
+      { id: 'tech-core-energy', code: 'C7', title: 'Energy, electricity and electronics' },
+    ],
+  },
+  {
+    id: 'tech-options', label: 'Options', title: 'Options',
+    topics: [
+      { id: 'tech-opt-control', code: 'O1', title: 'Applied control systems' },
+      { id: 'tech-opt-electronics', code: 'O2', title: 'Electronics and control' },
+      { id: 'tech-opt-ict', code: 'O3', title: 'Information and communications technology' },
+      { id: 'tech-opt-manufacturing', code: 'O4', title: 'Manufacturing systems' },
+      { id: 'tech-opt-materials', code: 'O5', title: 'Materials technology' },
+    ],
+  },
+];
 
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
@@ -963,6 +996,7 @@ export const SUBJECTS = [
   { id: 'engineering', title: 'Engineering', strands: ENGINEERING_STRANDS, spec: 'Materials and Technology syllabus' },
   { id: 'religious-education', title: 'Religious Education', strands: RELIGIOUS_EDUCATION_STRANDS, spec: 'syllabus examined since 2003' },
   { id: 'lcvp', title: 'Link Modules', strands: LCVP_STRANDS, spec: 'LCVP programme statement, examined to 2027' },
+  { id: 'technology', title: 'Technology', strands: TECHNOLOGY_STRANDS, spec: 'Leaving Certificate Technology syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1241,6 +1275,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   // dead decks in the picker; the map is Partial for exactly this.
   lcvp: {
     common: () => import('./cards/lcvp/common'),
+  },
+  technology: {
+    higher: () => import('./cards/technology/higher'),
+    ordinary: () => import('./cards/technology/ordinary'),
   },
 };
 

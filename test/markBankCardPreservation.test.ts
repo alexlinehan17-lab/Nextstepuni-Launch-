@@ -46,6 +46,8 @@ import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engi
 import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
 import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
 import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
+import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technology/higher';
+import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 const decks = [
@@ -427,6 +429,11 @@ const decks = [
    * as ONE deck because the paper is common level: there is no Higher or
    * Ordinary sibling to pair it with, which is why it appears here once. */
   ['lcvp:common', LCVP_COMMON, 314, '2f0310a433d9736ccf8a4a7a31a816de16abeaac995c881848fc3c2f827d82d2'],
+  /* Technology is the sixteenth subject and the first to be authored end to
+   * end from a paper-anchored census in one pass. Enrolled explicitly so a
+   * later regeneration cannot silently omit or replace any of its cards. */
+  ['technology:higher', TECHNOLOGY_HIGHER, 357, 'ae8ad195ca373cef2d8923c83a848613215aa9413c2cd7bda7d6796c4d64370c'],
+  ['technology:ordinary', TECHNOLOGY_ORDINARY, 359, '43e668303c30fef288ee0e09d8b5d3384105085e23cc10d288903ed29d1ab687'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -441,9 +448,9 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_783);
-    // 10,495 before LCVP's 314.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_809);
+    // 10,495 before this wave, plus three new subjects carded together:
+    // Religious Education 288, LCVP 314, Technology 716.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_813);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -456,8 +463,9 @@ describe('Mark Bank card preservation', () => {
     const preNewSubjectCards = decks
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:')
-        && !name.startsWith('religious-education:'))
-        && !name.startsWith('lcvp:'))
+        && !name.startsWith('religious-education:')
+        && !name.startsWith('lcvp:')
+        && !name.startsWith('technology:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

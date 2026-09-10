@@ -46,6 +46,17 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/engineering',
     blocked: new Set(),
   },
+  technology: {
+    title: 'Technology',
+    /* The syllabus these papers were sat under -- seven core areas and five
+     * options, of which a candidate studies two. Named by what it is rather
+     * than by a year: no redeveloped Technology specification is examined
+     * yet. See TECHNOLOGY_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-technology-syllabus',
+    specNote: 'Cards are tagged to the areas of the Leaving Certificate Technology syllabus:\n * seven core areas, examined in Sections A and B, and the five options, of which\n * Section C sets one question each and a candidate answers one.',
+    figureDir: 'public/exam-figures/technology',
+    blocked: new Set(),
+  },
   'computer-science': {
     title: 'Computer Science',
     /* The specification first examined in 2020 -- the one these papers were

@@ -65,5 +65,9 @@
  },
  "lcvp": {
   "common": 314
+ },
+ "technology": {
+  "higher": 357,
+  "ordinary": 359
  }
 }
