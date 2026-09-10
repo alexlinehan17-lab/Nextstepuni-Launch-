@@ -115,6 +115,16 @@ SUBJECTS = {
     # existing WANTED_LANGS already takes the right one. It does carry the
     # Listening Comprehension booklet 'A00', from 2022 onward only.
     'polish': 'polish',
+    # Added 10 September 2026. Arabic is the modern language with the hardest
+    # TEXT problem in the corpus: it is written right-to-left, and a PDF text
+    # layer routinely hands back RTL runs reversed, visually rather than
+    # logically ordered, or with the letters in isolated instead of joined
+    # forms. Measured at stage 0 — and the direction and joining verified
+    # against rendered pages — before it is chosen. SEC subject 059, one
+    # booklet '000' at each level (there is NO separate Listening
+    # Comprehension 'A00': Arabic is sat as a single written paper), language
+    # letter 'E'.
+    'arabic': 'arabic',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
     # Added 10 September 2026. Latin is a language but NOT a modern one: SEC

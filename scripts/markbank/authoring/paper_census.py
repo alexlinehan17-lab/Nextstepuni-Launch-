@@ -201,6 +201,19 @@ SUBJECTS = {
     # "A.", "B.", "C. KANJI" and "D.", so the two are paired in printed ORDER
     # under the checks in ja_flags — Law 4.
     'japanese': {'mode': 'sections', 'walker': 'ja'},
+    # Arabic is the modern language that needs NO section token. It is examined
+    # by ONE booklet — there is no Listening Comprehension Test — and it
+    # numbers 1 to 15 straight through its four printed parts, so an ask is
+    # addressed by its number and its part letter alone: "2025 HL Q11(a)". The
+    # part letters the SEC prints are (أ) to (ه) and the citation letters them
+    # a to e, in that same abjad order, the way Japanese cites its romans.
+    #
+    # Its own walker, for a reason no other subject in the bank has: the pages
+    # are RIGHT TO LEFT, and every generic reader here returns them reversed,
+    # visually ordered, or with the letters inside a ligature backwards. See
+    # ara_text.py, which is what makes an Arabic page readable at all, and
+    # ARABIC.md for what that cost.
+    'arabic': {'mode': 'merged', 'walker': 'ara'},
     # Classical Studies is TWO papers under one slug, either side of the 2023
     # syllabus break, and the census reads both:
     #
@@ -933,6 +946,47 @@ def census_lang(subject, year, level):
 
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S, claimed
+
+
+def census_ara(subject, year, level):
+    """Arabic: one booklet, numbered 1 to 15 across four printed parts.
+
+    THE DENOMINATOR IS THE PAPER and it can be read from the paper alone: the
+    part heads say which numbers may open a question, and every ask is opened
+    by a printed number or a printed part letter under one. The scheme is read
+    beside it to price the asks and to be CHECKED against them, which is what
+    ara_flags does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from ara_paper import AraPaper                              # noqa: E402
+    from ara_scheme import AraScheme                            # noqa: E402
+
+    P = AraPaper(year, level)
+    S = AraScheme(year, level)
+    texts = {}
+    for ask in P.leaves:
+        texts[(ask.question, ask.letter, None)] = ask.text
+    return set(texts), texts, [P.path], P, S
+
+
+def ara_flags(P, S):
+    """What the paper and the scheme disagree about. See census_ara.
+
+    The paper's own checks — every sitting sets 37 leaves and its tariffs sum
+    to the 400 marks its cover prints — plus the two that make the number-join
+    to the scheme safe (Law 4): the scheme totals every question the same as
+    the paper prices it, and its part letters are the paper's letters in the
+    paper's order.
+    """
+    out = []
+    paper_flags, _total = P.flags()
+    for detail in paper_flags:
+        out.append({'type': 'paper', 'where': f'{P.year} {P.level.upper()}',
+                    'detail': detail})
+    for detail in S.flags(P):
+        out.append({'type': 'scheme', 'where': f'{P.year} {P.level.upper()}',
+                    'detail': detail})
+    return out
 
 
 def census_ja(subject, year, level):
@@ -2177,6 +2231,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'ja':
                     parts, texts, files, P_, S_ = census_ja(
                         subject, year, level)
+                elif cfg.get('walker') == 'ara':
+                    parts, texts, files, P_, S_ = census_ara(
+                        subject, year, level)
                 elif cfg.get('walker') == 'clas':
                     parts, texts, files, P_, S_ = census_clas(
                         subject, year, level)
@@ -2242,6 +2299,13 @@ def census_subject(subject):
                 # — so adding up every printed tariff counts asks nobody sits.
                 # The checksum is the total the paper prints on its cover.
                 marks = {(None, 0): _lat_cover_marks(P_)}
+            elif cfg.get('walker') == 'ara':
+                flags += ara_flags(P_, S_)
+                # Part 2 is a printed CHOICE — nine literature alternatives of
+                # which a candidate answers four — so adding every printed
+                # tariff would count questions nobody sits. The checksum is the
+                # 400 marks the paper's own cover states.
+                marks = {(None, 0): 400}
             elif cfg.get('walker') == 'clas':
                 flags += clas_flags(P_, S_)
                 # The 2023 syllabus change made this a different paper: 200

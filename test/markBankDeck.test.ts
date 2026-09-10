@@ -77,6 +77,8 @@ import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
+import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
+import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
@@ -110,6 +112,7 @@ const SAMPLE_CARDS = [
   ...POLISH_HIGHER, ...POLISH_ORDINARY,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
   ...LATIN_HIGHER, ...LATIN_ORDINARY,
+  ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -220,7 +223,6 @@ describe('every card traces to the marking scheme on disk', () => {
     // At 15,600 cards it runs a little over the 30s default, and a timeout
     // here reads as a provenance failure when it is only a big bank.
   }, 180_000);
-  }, 60_000);
 
   test('marks reconcile against the printed tariff', () => {
     const bad = SAMPLE_CARDS.filter(c => !tariffReconciles(c)).map(c => c.questionRef);
@@ -520,6 +522,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['japanese', 'ordinary', JAPANESE_ORDINARY],
     ['polish', 'higher', POLISH_HIGHER],
     ['polish', 'ordinary', POLISH_ORDINARY],
+    ['arabic', 'higher', ARABIC_HIGHER],
+    ['arabic', 'ordinary', ARABIC_ORDINARY],
     ['applied-maths', 'higher', AM_HIGHER],
     ['applied-maths', 'ordinary', AM_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
@@ -628,6 +632,8 @@ describe('the taxonomy is the redeveloped specification', () => {
       // every sitting in the bank was sat on; the other three strands ship
       // unused so a student sees the whole shape of the course.
       latin: 'latin-',
+      // Arabic files its cards under the published Arabic taxonomy itself.
+      arabic: 'arabic-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

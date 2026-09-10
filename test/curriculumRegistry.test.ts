@@ -287,5 +287,4 @@ describe('versioned curriculum registry', () => {
     // Its own timeout: it loads and walks EVERY built deck, so its work grows
     // with the bank. At 15,600 cards it runs a little over the 30s default.
   }, 180_000);
-  }, 60_000);
 });

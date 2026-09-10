@@ -29,6 +29,21 @@
     },
     "refsHash": "0146204025df9286"
   },
+  "arabic": {
+    "cards": 250,
+    "contentHash": "73dfdfae9085941a",
+    "coveragePct": 100.0,
+    "covered": 250,
+    "excluded": 120,
+    "leaves": 370,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "bb185f784adfa4d5"
+    },
+    "refsHash": "7a1ca0dfb9d8a129"
+  },
   "art": {
     "cards": 462,
     "contentHash": "f84ca9f2c3b181ad",

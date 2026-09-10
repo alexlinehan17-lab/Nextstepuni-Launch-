@@ -265,6 +265,16 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/latin',
     blocked: new Set(),
   },
+  arabic: {
+    title: 'Arabic',
+    /* The syllabus these ten sittings were set on, which is examined to June
+     * 2026; the redeveloped specification is examined from 2027 and no paper
+     * exists to card against it yet. */
+    specVersion: 'lc-arabic-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Arabic syllabus\n * examined to June 2026. A sitting is ONE booklet — Arabic sets no Listening\n * Comprehension Test — numbered 1 to 15 straight through four printed parts, so\n * an ask is cited by its number and part letter alone. The paper is set in\n * Arabic and answered in Arabic, and every card says so, because Arabic reads\n * RIGHT TO LEFT and a card that does not say which language is wanted marks a\n * right answer wrong. The SEC letters its parts (أ) to (ه); a citation letters\n * them a to e, in that same abjad order.',
+    figureDir: 'public/exam-figures/arabic',
+    blocked: new Set(),
+  },
   'classical-studies': {
     title: 'Classical Studies',
     /* TWO syllabuses, because the corpus straddles the change: 2021 and 2022
@@ -402,7 +412,14 @@ function schemeFor(subjectId, card) {
  * four unreadable glyphs. The block also carries the French OE ligature and
  * the ligature glyphs LIGATURES already folds, which are handled before this
  * test is reached. */
-const REAL = /[\u0100-\u017F\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A]/;
+const REAL = /[\u0100-\u017F\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/;
+/* Script that is really script, inside the range the broken-subset test
+ * sweeps. Arabic joins it because Arabic ships: 0600-06FF is the alphabet the
+ * SEC sets its Arabic paper in, 0750-077F and 08A0-08FF the supplements. What
+ * does NOT join it is the Arabic Presentation Forms — FB50-FDFF and FE70-FEFF
+ * — because those are the SHAPED glyphs the text layer hands back and
+ * ara_text.py folds them to their letters; one reaching a card means the fold
+ * failed, which is exactly what this gate is for. */
 const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 /** Undo a subset font's broken ToUnicode map, using the table derived from the
  * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied

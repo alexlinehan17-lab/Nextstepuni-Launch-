@@ -113,5 +113,9 @@
  "polish": {
   "higher": 115,
   "ordinary": 122
+ },
+ "arabic": {
+  "higher": 125,
+  "ordinary": 125
  }
 }

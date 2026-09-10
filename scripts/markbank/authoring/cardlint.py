@@ -25,13 +25,13 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHORED = os.path.join(HERE, '..', 'authored')
 
-SUBJECTS = ['agricultural-science', 'applied-maths', 'art', 'biology',
-            'business', 'chemistry', 'classical-studies', 'computer-science',
-            'construction-studies', 'economics', 'engineering', 'english',
-            'french', 'geography', 'german', 'history', 'home-economics',
-            'irish', 'italian', 'japanese', 'latin', 'lcvp', 'maths',
-            'physics', 'polish', 'religious-education', 'russian', 'spanish',
-            'technology']
+SUBJECTS = ['agricultural-science', 'applied-maths', 'arabic', 'art',
+            'biology', 'business', 'chemistry', 'classical-studies',
+            'computer-science', 'construction-studies', 'economics',
+            'engineering', 'english', 'french', 'geography', 'german',
+            'history', 'home-economics', 'irish', 'italian', 'japanese',
+            'latin', 'lcvp', 'maths', 'physics', 'polish',
+            'religious-education', 'russian', 'spanish', 'technology']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an
 # Agricultural Science paper about joining a suckler scheme is not a leak),
