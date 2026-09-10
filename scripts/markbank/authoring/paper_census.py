@@ -168,6 +168,17 @@ SUBJECTS = {
     # inside a section, under the two checks that make order safe (see
     # census_it).
     'italian': {'mode': 'sections', 'walker': 'italian'},
+    # Russian sits the same two booklets as French — a bilingual written paper
+    # and a separate Listening Comprehension Test — and its section token
+    # names the printed QUESTION rather than a letter, because the paper
+    # numbers "Question 1" three times in one sitting: once in Section I, once
+    # in Section II and once in the listening booklet. "C1" is Higher's first
+    # comprehension, "GR" the grammar, "MM" Ordinary's mix-and-match and "L2"
+    # the listening test's second section; see UNIT_NAME in ru_scheme.py. Its
+    # own walker, because the reading asks are located the way French's are —
+    # by the question the scheme reprints above its answers (Law 4) — while
+    # every other question of the paper is read from the paper alone.
+    'russian': {'mode': 'sections', 'walker': 'ru'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -1193,6 +1204,112 @@ def lang_cover_marks(paths):
     return total
 
 
+def census_ru(subject, year, level):
+    """Russian: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER, and this paper needs the same help French's
+    does to say which of its printed markers is a question: a comprehension
+    sets its passage in NUMBERED PARAGRAPHS at the same margin and in the same
+    shape as its questions. So the reading asks are the printed blocks the
+    scheme's own reprinted question locates (ru_paper.find, which is align.py's
+    rule), and the PAPER's address is the one keyed even where the scheme
+    disagrees — the 2021 Ordinary scheme numbers the retrieval text's last two
+    asks "(vii)" and "(vii)" where the paper prints "(vii)" and "(viii)".
+
+    Everything else is read from the paper alone and needs no help. Each of
+    the paper's other printed questions is ONE leaf — the grammar, the
+    matching task, the structuring-discourse gap-fill, the short essay — with
+    two exceptions the paper itself numbers: Higher's language-awareness
+    questions, which print a choice of two tasks and price both ("Answer ONE
+    of the following: Q. 1.2(i) or 1.2(ii)"), and the guided-writing and
+    extended-writing questions, which number their alternatives 1, 2 and 3.
+
+    The census then checks the paper INDEPENDENTLY, in `ru_flags`: every
+    scheme ask must have found a printed block, no two may have found the
+    same one, and every unit that prints a total must be reached exactly by
+    its own asks.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from ru_paper import RuPaper                                # noqa: E402
+    from ru_scheme import RuScheme, READING_UNITS               # noqa: E402
+
+    P = RuPaper(year, level, subject)
+    S = RuScheme(year, level, subject)
+    texts = {}
+    claimed = set()
+    for ask in S.asks:
+        if ask.unit not in READING_UNITS:
+            continue
+        hit = P.find(ask.unit, ask.item, ask.roman, ask.cue, claimed)
+        if hit is None:
+            continue
+        text, _page, block = hit
+        claimed.add(id(block))
+        texts[(block.unit, block.item, None, block.roman)] = text
+
+    for unit in RU_WHOLE_UNITS:
+        if unit not in P.unit_pages:
+            continue
+        romans = P.choice_romans(unit) if unit in RU_CHOICE_UNITS else []
+        items = P.unit_items(unit) if unit in RU_NUMBERED_UNITS else []
+        head = ' '.join(P.unit_head.get(unit, unit).split())
+        if romans:
+            for r in romans:
+                texts[(unit, None, None, r)] = f'{head} ({r})'
+        elif items:
+            for i in items:
+                texts[(unit, i, None, None)] = f'{head} {i}'
+        else:
+            texts[(unit, None, None, None)] = head
+
+    for unit, item, roman, text in P.aural_asks():
+        texts[(unit, item, None, roman)] = text
+
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S, claimed
+
+
+# The paper's other printed questions, each of which is one census leaf unless
+# the paper numbers alternatives inside it.
+RU_WHOLE_UNITS = ('LA1', 'LA2', 'CA1', 'SD', 'GR', 'SE', 'GW', 'MM', 'SA', 'EW')
+RU_CHOICE_UNITS = ('LA1', 'LA2', 'CA1')
+RU_NUMBERED_UNITS = ('GW', 'EW')
+
+
+def ru_flags(P, S, claimed):
+    """What the paper and the scheme disagree about. See census_ru."""
+    flags = []
+    seen = set()
+    for ask in S.asks:
+        if ask.unit not in {'C1', 'C2', 'IR1', 'IR2', 'CD'}:
+            continue
+        hit = P.find(ask.unit, ask.item, ask.roman, ask.cue, seen)
+        if hit is None:
+            flags.append({
+                'type': 'unmatched-scheme-ask',
+                'where': S.ref(ask),
+                'detail': f'the scheme prices {ask.cue[:70]!r} and no printed '
+                          f'question in that unit matches its wording'})
+            continue
+        block = hit[2]
+        seen.add(id(block))
+        if (block.item, block.roman) != (ask.item, ask.roman):
+            flags.append({
+                'type': 'scheme-key',
+                'where': S.ref(ask),
+                'detail': f'the paper prints this ask as '
+                          f'{block.item or ""}{f"({block.roman})" if block.roman else ""} '
+                          f'and the paper\'s name is the one cited'})
+    for unit, printed, got, _n in S.checksum():
+        if printed is not None and printed != got:
+            flags.append({
+                'type': 'tariff-checksum',
+                'where': f'{S.year} {S.level.upper()} {unit}',
+                'detail': f'the scheme prices its asks {got} against the '
+                          f'{printed} it prints on the unit head'})
+    return flags
+
+
 def census_re(subject, year, level):
     """Religious Education: its own reader, for the reasons re_paper.py gives.
 
@@ -1505,6 +1622,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'italian':
                     parts, texts, files, P_, S_ = census_it(
                         subject, year, level)
+                elif cfg.get('walker') == 'ru':
+                    parts, texts, files, P_, S_, claimed_ = census_ru(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -1537,6 +1657,9 @@ def census_subject(subject):
                 marks = {(None, 0): es_cover_marks(files)}
             elif cfg.get('walker') == 'italian':
                 flags += it_flags(P_, S_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'ru':
+                flags += ru_flags(P_, S_, claimed_)
                 marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])

@@ -94,6 +94,11 @@ SUBJECTS = {
     # language to be MEASURED at stage 0 — a full paper with the same
     # architecture, sat by a much smaller cohort.
     'italian': 'italian',
+    # Added 10 September 2026. Four modern languages ship on one reader
+    # (fr_paper/fr_scheme); Russian is the next of the family to be MEASURED at
+    # stage 0. SEC subject 099, the same two booklets (written '000' and
+    # Listening Comprehension 'A00') printed bilingually, language letter 'B'.
+    'russian': 'russian',
     'lcvp': 'link-modules',
     'classical-studies': 'classical-studies',
 }

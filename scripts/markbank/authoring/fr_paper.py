@@ -188,7 +188,8 @@ def _column_x(rows, width, marker=None):
     return min(strong) - 1 if strong else None
 
 
-def _rows(path, page_from=0, page_to=None, marker=None, split_at=None):
+def _rows(path, page_from=0, page_to=None, marker=None, split_at=None,
+          fallback_split=None):
     """[(page, [(x0, side, text), …])] — every row, cut into its columns.
 
     `marker` is what opens a printed column, and it is a parameter because the
@@ -200,7 +201,17 @@ def _rows(path, page_from=0, page_to=None, marker=None, split_at=None):
     passed by it_paper.py, whose Ordinary matching task rules an answer box in
     front of every English marker.
 
-    Both are None for French, so nothing about this subject changes.
+    `fallback_split` is the bound to use on a page that gives this function
+    NOTHING to measure — no marker of its own past the middle of the sheet.
+    ru_paper.py passes the booklet's own bound there: a Russian page whose
+    two columns have fused prints no standalone marker in the right one, so
+    the page is otherwise read as a single column with both languages welded
+    together, and the ask beside the fused one loses its first line. It is a
+    FALLBACK and not an override because the columns of these papers do move
+    a few points from page to page, and a booklet-wide bound applied to every
+    page cut three sittings' asks in the wrong place.
+
+    All three are None for French, so nothing about this subject changes.
 
     The SIDE is decided by the page's own column bound rather than by the
     middle of the sheet. 2024 Ordinary sets its English column at x=296 on a
@@ -227,7 +238,10 @@ def _rows(path, page_from=0, page_to=None, marker=None, split_at=None):
                     rows.append({'mid': mid, 'w': [(x0, x1, word)]})
             ordered = [sorted(row['w']) for row in sorted(rows, key=lambda r: r['mid'])]
             page = [(pno, _gap_groups(ws)) for ws in ordered]
-            split = split_at if split_at is not None else _column_x(page, width, marker)
+            split = split_at if split_at is not None \
+                else _column_x(page, width, marker)
+            if split is None:
+                split = fallback_split
             if split is None:
                 out.extend((pn, [(x, 'L', t) for x, t in gs]) for pn, gs in page)
                 continue
