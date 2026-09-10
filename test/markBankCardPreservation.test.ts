@@ -64,6 +64,8 @@ import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
+import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
@@ -521,6 +523,17 @@ const decks = [
    * photographs and images. */
   ['classical-studies:higher', CLAS_HIGHER, 240, 'c7ef8e6be63fdd3108213d5f94333eff67b067893036821eb3164bbedffe0c66'],
   ['classical-studies:ordinary', CLAS_ORDINARY, 276, '363ae6d0a26308e5c8b7459143bdbfa9c66c07f203c4125a03b67dc319ebd211'],
+  /* Latin, added 10 September 2026 — the twenty-second subject, and the
+   * seventh language. Every card is new; none replaces anything. Its 227
+   * cards cover 237 of the 328 asks its eight papers print, and the 91 that
+   * are not carded are excluded with the scheme's own printed line: every
+   * TRANSLATION ask (the scheme prices the source text by segment and never
+   * states a model answer) and every principal-parts and scansion ask (the
+   * scheme prices them and never states them). 101 of its cards bind an
+   * official SEC source — the Latin passage a comprehension is answered from,
+   * or the plate pages a Question 5 photograph question is about. */
+  ['latin:higher', LATIN_HIGHER, 145, '9062777f248fece7c2c345612d362a19bfd571f3461df962da78ba93b149a2c6'],
+  ['latin:ordinary', LATIN_ORDINARY, 82, 'c6d74830e3497c5862cc9e9727ecd9a57bdb4d27d8ef43b87860378e63960a94'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -535,13 +548,11 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // 10,495 before this session, plus twelve subjects carded in four waves:
+    // 10,495 before this session, plus thirteen subjects carded in five waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
-    // Russian 199, Japanese 600 and Classical Studies 516.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(15_373);
-    // Japanese 600.
-    // Classical Studies 516.
+    // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(15_600);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -567,6 +578,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('russian:')
         && !name.startsWith('japanese:')
         && !name.startsWith('classical-studies:')
+        && !name.startsWith('latin:')
         && !name.startsWith('applied-maths:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);

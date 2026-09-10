@@ -265,9 +265,20 @@ describe('versioned curriculum registry', () => {
       for (const card of cards) {
         const subjectId = subjectForTopic.get(card.topicId);
         expect(subjectId, `${card.id}: no subject owns ${card.topicId}`).toBe(deck.subjectId);
-        const spec = resolveCurriculumSpecification(subjectId!, Math.max(2027, card.year))!;
+        // A subject whose syllabus is OUTGOING may have no record for the
+        // 2027 cohort at all, by design: Latin, Ancient Greek and Arabic are
+        // last examined in June 2026 and this registry refuses to guess the
+        // replacement taxonomy until it is verified — the classical-language
+        // test above asserts that 2027 resolves to nothing for all three. A
+        // deck built from those papers resolves against the syllabus its own
+        // papers were sat on, which is the record that exists.
+        const spec = resolveCurriculumSpecification(subjectId!, Math.max(2027, card.year))
+          ?? resolveCurriculumSpecification(subjectId!, card.year)!;
+        expect(spec, `${card.id}: no specification for ${subjectId}`).toBeDefined();
         expect(findCanonicalTopic(spec, card.topicId), `${card.id}: ${card.topicId} absent from ${spec.id}`).toBeDefined();
       }
     }
-  });
+    // Its own timeout: it loads and walks EVERY built deck, so its work grows
+    // with the bank. At 15,600 cards it runs a little over the 30s default.
+  }, 180_000);
 });

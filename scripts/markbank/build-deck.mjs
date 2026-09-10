@@ -240,6 +240,18 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/japanese',
     blocked: new Set(),
   },
+  latin: {
+    title: 'Latin',
+    /* The LEGACY written paper, which is what every sitting in the corpus is.
+     * Latin's specification was redeveloped and its Strands 1 and 2 describe a
+     * course assessed by a capstone text and a research study the SEC has not
+     * examined yet; the syllabus strand these cards tag against is the legacy
+     * paper's own seven task types. See LATIN_STRANDS in deck.ts. */
+    specVersion: 'lc-latin-syllabus',
+    specNote: 'Cards are tagged to the task types of the legacy Leaving Certificate Latin\n * written paper, which is the paper every sitting in the bank was sat on. Latin\n * is examined in ONE booklet with no listening test. Three of its five questions\n * print a CHOICE of routes a candidate answers one of — "Answer either Section A\n * or Section B" — so a card names the route it was set under. Every unseen\n * comprehension card carries the Latin passage, the English summary and the\n * vocabulary the SEC glossed it with, bound to the page of the question paper\n * they were printed on; a card whose ask names a photograph opens the plate\n * page at the back of the same booklet. Translation asks are NOT carded: the\n * scheme prices them by segment, but the segments are the source text and not\n * a model answer.',
+    figureDir: 'public/exam-figures/latin',
+    blocked: new Set(),
+  },
   'classical-studies': {
     title: 'Classical Studies',
     /* TWO syllabuses, because the corpus straddles the change: 2021 and 2022

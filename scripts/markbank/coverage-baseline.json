@@ -299,6 +299,21 @@
     },
     "refsHash": "d23fe40d77f543ca"
   },
+  "latin": {
+    "cards": 227,
+    "contentHash": "83aa3745066637fd",
+    "coveragePct": 100.0,
+    "covered": 237,
+    "excluded": 91,
+    "leaves": 328,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 8,
+      "hash": "eca81927b9c1e198"
+    },
+    "refsHash": "ecd84fa7c53eb9c0"
+  },
   "lcvp": {
     "cards": 314,
     "contentHash": "fefb46868385d474",

@@ -327,6 +327,12 @@ export interface SecCardBase extends CardBase {
   section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
   | '1' | '2' | '3' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
   | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1'
+  // Latin's paper prints no lettered sections a card could be filed under:
+  // it prints five QUESTIONS, and the "Section A"/"Section B" beneath three
+  // of them is a CHOICE of routes through one question rather than a division
+  // of the paper. So the section is the printed question — the unit a student
+  // navigates by, and the unit each of the syllabus's task types belongs to.
+  | 'Q1' | 'Q2' | 'Q3' | 'Q4' | 'Q5'
   | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
@@ -725,8 +731,13 @@ export const rowCapFor = (kind: TariffModel['kind']): number =>
 // belong here too: C1 and C2 are Higher's two comprehensions, IR1 and IR2
 // Ordinary's retrieval texts, CD its comprehension, and LA1/LA2/CA1 the
 // language- and cultural-awareness tasks.
+// Latin's Questions 3 and 5 are long questions: the scheme answers a ten-mark
+// prescribed-text part and a twenty-five-mark civilisation essay with pages of
+// Indicative Notes, and 2025 Higher prints twenty-one separate points for one
+// twenty-five-mark question on Augustus. Questions 1, 2 and 4 are short —
+// Question 1 Section B is twelve comprehension asks of four to fourteen marks.
 const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3',
-  'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1']);
+  'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1', 'Q3', 'Q5']);
 export const optionCapFor = (section: string): number =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 

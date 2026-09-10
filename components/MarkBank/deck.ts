@@ -72,6 +72,8 @@ const japaneseCurriculum = CURRICULUM.find(subject => subject.id === 'japanese')
 if (!japaneseCurriculum) throw new Error('Canonical Japanese curriculum is missing');
 const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
 if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
+const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
+if (!latinCurriculum) throw new Error('Canonical Latin curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -1109,6 +1111,36 @@ export const JAPANESE_STRANDS: StrandRef[] = japaneseCurriculum.strands.map((str
  * strand would put it in front of a student revising something else, and
  * dropping it would throw away 388 of the 640 asks the papers print.
  */
+/**
+ * Latin's cards tag against the LEGACY written paper, and that is the whole
+ * taxonomy question this subject asks.
+ *
+ * The canonical curriculum carries four strands: the redeveloped
+ * specification's "Latin Language" and "Literature in Context", a "Capstone
+ * Text and Assessment" strand describing an examination whose first sitting
+ * has not happened, and "Legacy Written Paper — Task Types", whose seven task
+ * types ARE the paper every sitting in the corpus was sat on:
+ *
+ *   Composition into Latin · Unseen Comprehension · Unseen Translation ·
+ *   Prescribed Prose · Prescribed Poetry · Grammar, Accidence & Scansion ·
+ *   Roman History & Civilisation
+ *
+ * A card is filed under the task type its own question sets. The other three
+ * strands still ship, because a student browsing Latin should see the shape of
+ * their course — including the capstone and the research study — and not only
+ * the part the bank can card.
+ */
+export const LATIN_STRANDS: StrandRef[] = latinCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const CLASSICAL_STUDIES_STRANDS: StrandRef[] = [
   ...classicalStudiesCurriculum.strands.map((strand, index) => ({
     id: strand.id,
@@ -1272,6 +1304,7 @@ export const SUBJECTS = [
   { id: 'russian', title: 'Russian', strands: RUSSIAN_STRANDS, spec: 'Leaving Certificate Russian syllabus' },
   { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
+  { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1590,6 +1623,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   'classical-studies': {
     higher: () => import('./cards/classical-studies/higher'),
     ordinary: () => import('./cards/classical-studies/ordinary'),
+  },
+  latin: {
+    higher: () => import('./cards/latin/higher'),
+    ordinary: () => import('./cards/latin/ordinary'),
   },
 };
 

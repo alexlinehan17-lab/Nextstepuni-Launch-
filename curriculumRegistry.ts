@@ -472,6 +472,36 @@ const TECHNOLOGY_DECK_TOPICS: Record<string, CanonicalCurriculumTopic> = {
  * two years would resolve into no specification at all. Mirrors the legacy
  * strand of CLASSICAL_STUDIES_STRANDS in components/MarkBank/deck.ts.
  */
+/**
+ * The task types the outgoing Latin written paper is built from.
+ *
+ * Mark Bank cards Latin from the 2021-2025 papers, which are that paper, and
+ * files each card under the task type its own question sets — the ids come
+ * from the canonical taxonomy in curriculum.ts, whose fourth strand is
+ * "Legacy Written Paper — Task Types". Those ids have to exist inside the
+ * specification record too, or a card resolves into no specification at all.
+ *
+ * This group is appended to the outgoing-2026 Latin record rather than added
+ * to its four content groups: the four are the SYLLABUS, this is how the SEC
+ * examines it, and keeping them apart is why groups[0] is still "Language and
+ * texts". It carries no strand of the REDEVELOPED specification — that record
+ * is deliberately not encoded until it is verified.
+ */
+const LATIN_TASK_TYPE_GROUP: CanonicalCurriculumGroup = {
+  id: 'latin-3',
+  code: 'Paper',
+  title: 'Written paper task types',
+  topics: [
+    { id: 'latin-3-0', code: 'Q1A', title: 'Composition — Translation into Latin' },
+    { id: 'latin-3-1', code: 'Q1B', title: 'Unseen Comprehension — Prose Passage with Questions' },
+    { id: 'latin-3-2', code: 'Q2', title: 'Unseen Translation into English (Prose & Verse)' },
+    { id: 'latin-3-3', code: 'Q3', title: 'Prescribed Prose Text — Translation & Questions' },
+    { id: 'latin-3-4', code: 'Q3', title: "Prescribed Poetry — Virgil's Aeneid: Translation & Questions" },
+    { id: 'latin-3-5', code: 'Q4', title: 'Grammar, Accidence & Scansion' },
+    { id: 'latin-3-6', code: 'Q5', title: 'Roman History & Civilisation Essays' },
+  ],
+};
+
 const CLASSICAL_STUDIES_LEGACY_GROUP: CanonicalCurriculumGroup = {
   id: 'classical-studies-legacy',
   code: 'To 2022',
@@ -1482,12 +1512,14 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
           ['latin-2026-art', 'Roman art'],
           ['latin-2026-architecture', 'Roman architecture'],
         ]),
+        LATIN_TASK_TYPE_GROUP,
       ],
       coverageNodeLevel: 'topic',
       notes: [
         'This is the outgoing syllabus sat by the 2026 examination cohort.',
         'The specification introduced to fifth-year students in September 2025 is deliberately excluded from this record.',
         'Prescribed texts are set for each examination year by the State Examinations Commission.',
+        "A final group carries the written paper's own task types, which is how Mark Bank files a card from a 2021-2025 paper.",
       ],
     };
   }

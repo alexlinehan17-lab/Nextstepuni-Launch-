@@ -105,5 +105,9 @@
  "classical-studies": {
   "higher": 240,
   "ordinary": 276
+ },
+ "latin": {
+  "higher": 145,
+  "ordinary": 82
  }
 }

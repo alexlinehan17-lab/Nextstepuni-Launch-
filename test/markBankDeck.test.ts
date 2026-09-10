@@ -79,6 +79,8 @@ import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/h
 import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
+import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -104,6 +106,7 @@ const SAMPLE_CARDS = [
   ...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY,
   ...JAPANESE_HIGHER, ...JAPANESE_ORDINARY,
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
+  ...LATIN_HIGHER, ...LATIN_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -202,7 +205,11 @@ describe('every card traces to the marking scheme on disk', () => {
       }
     }
     expect(bad, show(bad)).toEqual([]);
-  });
+    // Its own timeout, because its work grows with the whole bank: every
+    // marking row of every card is searched for inside its own scheme's text.
+    // At 15,600 cards it runs a little over the 30s default, and a timeout
+    // here reads as a provenance failure when it is only a big bank.
+  }, 180_000);
 
   test('marks reconcile against the printed tariff', () => {
     const bad = SAMPLE_CARDS.filter(c => !tariffReconciles(c)).map(c => c.questionRef);
@@ -601,6 +608,12 @@ describe('the taxonomy is the redeveloped specification', () => {
       // 2021 and 2022 papers were sat on, which the canonical curriculum
       // (a description of the CURRENT specification) does not carry.
       'classical-studies': 'classical-studies-',
+      // Latin files its cards under the published Latin taxonomy itself, as
+      // French does. Its cards tag against one strand of it — 'latin-3-*',
+      // the legacy written paper's task types — because that is the paper
+      // every sitting in the bank was sat on; the other three strands ship
+      // unused so a student sees the whole shape of the course.
+      latin: 'latin-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

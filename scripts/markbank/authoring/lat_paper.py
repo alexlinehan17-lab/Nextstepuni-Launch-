@@ -98,7 +98,12 @@ DOUBLED = re.compile(r'(?:([A-Za-z])\1){4,}')
 # ask, which is exactly where this reader looks for a tariff. 2025 Higher
 # Q5(vi)(c) was priced at five marks by that sentence.
 BACK_MATTER = re.compile(
+    # Lettered plate headings only. A bare "5." is Question 5's own head in
+    # 2022 Ordinary, where the SEC sets the number on its own line, and a
+    # numeric plate heading in this pattern cut that paper off at Question 5 —
+    # six asks lost with a question-gap flag to show for it.
     r'^[A-E]\.$|^https?://|^Acknowledgements\b|^Images?\b'
+    r'|^Page\s+\d+\b'
     r'|^This examination paper may contain|^Copyright notice\b'
     r'|^There is no examination material', re.I)
 
@@ -198,12 +203,22 @@ WORD_MARKS = {'ten': 10, 'twenty-five': 25, 'twenty‐five': 25, 'fifteen': 15,
               'twenty': 20, 'five': 5}
 WORD_TARIFF = re.compile(
     r'\b(?:each|carries|carry)\b[^.]{0,40}?\b('
-    + '|'.join(re.escape(w) for w in WORD_MARKS) + r')\b\s*marks?', re.I)
+    + '|'.join(re.escape(w) for w in WORD_MARKS) + r'|\d{1,3}'
+    + r')\b\s*marks?', re.I)
 
 
 def _word_tariff(text):
+    """The per-part price a question states in its rubric.
+
+    Spelled out in most sittings — "Each question carries ten marks" — but in
+    DIGITS in 2022 Ordinary: "(Each part carries 25 marks)". A words-only
+    pattern left all six of that paper's Question 5 parts unpriced.
+    """
     m = WORD_TARIFF.search(text)
-    return WORD_MARKS[m.group(1).lower()] if m else None
+    if not m:
+        return None
+    token = m.group(1).lower()
+    return WORD_MARKS[token] if token in WORD_MARKS else int(token)
 
 
 def _split_forward(text, pattern, order, from_start=False):
@@ -305,6 +320,31 @@ class LatPaper:
         self._runs = runs
         return runs
 
+    def image_pages(self):
+        """The pages of plates at the back, read off the PDF's own images.
+
+        Question 5 does not always letter its plates: 2023 Ordinary numbers
+        them "1." to "4." inside the very line that lists the four subjects to
+        write on, so there is no heading to read. What there is, is the image
+        itself — a page that carries raster artwork and sits at or after the
+        page the last question opens on is a plate page, and that is evidence
+        rather than a guess.
+        """
+        self.asks()                       # fills last_question_end
+        first = self._page_at(self.last_question_end)
+        out = []
+        for n in range(len(self._doc)):
+            if n + 1 < first or not self._doc[n].get_images():
+                continue
+            # The last page of every booklet carries the copyright notice and
+            # the Commission's own crest, which is an image; bound as a plate
+            # it opened the copyright notice beside the question.
+            if re.search(r'^\s*Copyright notice|^\s*Acknowledgements',
+                         self._doc[n].get_text(), re.M):
+                continue
+            out.append(n + 1)
+        return out
+
     def photo_pages(self):
         """{photograph letter: page} for the plates at the back of the book.
 
@@ -370,7 +410,11 @@ class LatPaper:
             want += 1
         end = len(joined)
         for off, _page in self._rows():
-            if not cuts or off <= cuts[-1][0]:
+            # Past the END of the last question's head, not its start: the
+            # head match opens on the row separator before "5.", so the row
+            # holding "5." itself sits after cuts[-1][0] and a back-matter
+            # test would examine the head it is anchored to.
+            if not cuts or off < cuts[-1][1]:
                 continue
             nxt = joined.find(ROW, off)
             row = joined[off:nxt if nxt != -1 else len(joined)]
@@ -530,6 +574,17 @@ class LatPaper:
         return 'literature'
 
     @staticmethod
+    def _trim_plate_labels(text):
+        """Drop the plate captions the SEC prints under a question's options.
+
+        2023 Ordinary Q5(vi) lists "1. Pont du Gard 2. Pantheon 3. Roman
+        portrait sculpture 4. Roman mosaics" and then repeats "1. 2. 3. 4." as
+        the headings of the four photographs beneath it. Left on, the ask read
+        "…4. Roman mosaics 1. 2." on the card.
+        """
+        return re.sub(r'(?:\s+[1-9]\.)+\s*$', '', text).strip()
+
+    @staticmethod
     def _split_marks(text):
         """The printed tariff, and the ask with the tariff taken off.
 
@@ -542,10 +597,11 @@ class LatPaper:
         text = _clean(text)
         found = list(TARIFF.finditer(text))
         if not found:
-            return None, text
+            return None, LatPaper._trim_plate_labels(text)
         m = found[-1]
         marks = int(m.group(1))
-        return marks, _clean(text[:m.start()] + ' ' + text[m.end():])
+        return marks, LatPaper._trim_plate_labels(
+            _clean(text[:m.start()] + ' ' + text[m.end():]))
 
 
 def main():

@@ -167,8 +167,17 @@ class LatScheme:
             head = QHEAD.match(line)
             if head and int(head.group(1)) >= (q or 1) and _is_head(line, head):
                 nq = int(head.group(1))
-                if nq != q:
-                    in_notes = False
+                rest_of_head = line[head.end():].strip()
+                if nq != q or rest_of_head:
+                    # A head that carries MORE than its own address opens a
+                    # new unit, and a new unit starts with its tariff list:
+                    # "3B. (i) (60) Translate" ends the Indicative Notes of
+                    # Section A above it. A head that is only an address —
+                    # "3A.", "5A." — is the notes' own heading and does not.
+                    # Without the distinction the whole of Question 3 Section
+                    # B read as notes, its tariff line went with them, and 41
+                    # asks had no notation to card with.
+                    in_notes = bool(NOTES.search(line))
                 q = nq
                 route = head.group(2) or head.group(3)
                 roman = head.group(4)
@@ -201,8 +210,13 @@ class LatScheme:
                 route = m.group(1) or m.group(2)
                 roman, letter = None, None
                 rest = line[m.end():].strip()
-                if NOTES.search(line):
-                    in_notes = True
+                # A route head opens a new unit, and a new unit starts with
+                # its own tariff list — "B. (i) Translate into English (60)"
+                # ends Section A's Indicative Notes above it. Left running,
+                # the whole of Question 3 Section B read as notes and its
+                # tariff line went with them.
+                in_notes = bool(NOTES.search(line))
+                if in_notes:
                     rest = NOTES.sub('', rest, count=1).strip(' -—:;.')
                 rm = RMARK.match(rest)
                 if rm:
