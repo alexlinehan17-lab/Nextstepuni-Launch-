@@ -191,6 +191,36 @@ SUBJECTS = {
     # Listening Comprehension booklet, only component '000'. Language letter
     # 'E'. The corpus runs 2010-2026 with 2020 absent: 16 papers, 16 schemes.
     'modern-greek': 'modern-greek',
+    # Added 10 September 2026, all four to MEASURE at stage 0 before choosing.
+    #
+    # Physical Education (SEC 225) has NEVER been assessed by this bank. ONE
+    # written booklet '000', Higher and Ordinary, language letter 'E'; 2020 is
+    # Higher-only (there was no Ordinary sitting that year), 2021-2026 carry
+    # both — thirteen sittings. The written paper is one of three components
+    # (the others are a physical performance and a project), neither of which
+    # the corpus holds or this bank could ever card.
+    'physical-education': 'physical-education',
+    # Accounting (SEC 032) is a RE-MEASURE: rejected in memory as "worked
+    # ledgers" without a count. Papers and schemes for every year 2010-2026 at
+    # both levels — 2020 publishes an Ordinary paper but the corpus holds no
+    # Ordinary scheme for it.
+    'accounting': 'accounting',
+    # Music (SEC 067) is a RE-MEASURE, rejected as "quality bands and the
+    # listening half needs audio" without a count. It is sat as THREE written
+    # booklets on separate components, not one: '006' (Listening, both
+    # levels), '007' (Composing, Higher only) and '008' (Composing/Melody,
+    # both levels), plus a 'U00' supplement in 2013-2016. The scheme is
+    # published ONCE per year and level on component '000' and answers all of
+    # them, so the paper suffix and the scheme name do not correspond — the
+    # census reads the components, the scheme reader splits one file.
+    'music': 'music',
+    # Design and Communication Graphics (SEC 562) is a RE-MEASURE, rejected as
+    # "a drawing subject". Its papers changed component token twice — '000'
+    # and '014' in 2010-2011, '014' and '015' in 2012-2018, '014' and '039'
+    # from 2019 — because the second booklet is the drawing/answer sheet set
+    # that goes with the question paper. One scheme per year and level on
+    # '000'. 2020 is Higher-only.
+    'dcg': 'design-and-communication-graphics',
 }
 
 # A subject the SEC sets as TWO papers on the same afternoon, one of which a
