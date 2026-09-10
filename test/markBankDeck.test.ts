@@ -93,6 +93,9 @@ import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-stu
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
+import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
+import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
+import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-greek/higher';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -123,6 +126,10 @@ const SAMPLE_CARDS = [
   ...CLAS_HIGHER, ...CLAS_ORDINARY,
   ...LATIN_HIGHER, ...LATIN_ORDINARY,
   ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
+  ...AGREEK_HIGHER, ...AGREEK_ORDINARY,
+  // Higher only: Modern Greek is examined at ONE level and there is no
+  // Ordinary paper in any year of the corpus.
+  ...MGREEK_HIGHER,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -667,6 +674,15 @@ describe('the taxonomy is the redeveloped specification', () => {
       latin: 'latin-',
       // Arabic files its cards under the published Arabic taxonomy itself.
       arabic: 'arabic-',
+      // Ancient Greek files its cards under the published Ancient Greek
+      // taxonomy itself, as Latin does. Its cards tag against one strand of
+      // it — 'ancient-greek-4-*', the legacy written paper's task types —
+      // because that is the paper every sitting in the bank was sat on; the
+      // other four strands ship unused so a student sees the whole course.
+      'ancient-greek': 'ancient-greek-',
+      // Modern Greek files its cards under the published Modern Greek
+      // taxonomy itself, whose two strands are the paper's own two halves.
+      'modern-greek': 'modern-greek-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

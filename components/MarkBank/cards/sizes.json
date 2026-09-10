@@ -137,5 +137,12 @@
  },
  "czech": {
   "higher": 15
+ },
+ "ancient-greek": {
+  "higher": 369,
+  "ordinary": 14
+ },
+ "modern-greek": {
+  "higher": 79
  }
 }

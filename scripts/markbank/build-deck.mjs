@@ -334,6 +334,30 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/latin',
     blocked: new Set(),
   },
+  'ancient-greek': {
+    title: 'Ancient Greek',
+    /* The LEGACY written paper, which is what every sitting in the corpus is.
+     * Ancient Greek's specification was redeveloped and its Strands 1 to 3
+     * describe a course assessed by a capstone text and a research study the
+     * SEC has not examined yet; the syllabus strand these cards tag against is
+     * the legacy paper's own six task types. See ANCIENT_GREEK_STRANDS in
+     * deck.ts. */
+    specVersion: 'lc-ancient-greek-syllabus',
+    specNote: 'Cards are tagged to the task types of the legacy Leaving Certificate Ancient\n * Greek written paper, which is the paper every sitting in the bank was sat on.\n * Ancient Greek is examined in ONE booklet with no listening test. Its questions\n * print a CHOICE of routes a candidate answers one of — "Answer Section A or\n * Section B" — so a card names the route it was set under, and Question 3\'s two\n * routes are the syllabus\'s two prescribed courses, A World of Heroes and The\n * Intellectual Revolution. Every unseen comprehension card carries the Greek\n * passage, the English summary and the vocabulary the SEC glossed it with, bound\n * to the page of the question paper they were printed on; a card whose ask names\n * a photograph opens the plate page at the back of the same booklet. Translation\n * asks are NOT carded: the scheme prices them by segment, and the segments are\n * the source text — Greek for the unseen passages, English for the composition —\n * and never a model answer.',
+    figureDir: 'public/exam-figures/ancient-greek',
+    blocked: new Set(),
+  },
+  'modern-greek': {
+    title: 'Modern Greek',
+    /* The syllabus these sixteen sittings were set on. Modern Greek is a
+     * NON-CURRICULAR EU LANGUAGE, examined at ONE level in every year on disk,
+     * in ONE booklet, with no listening test: one passage and three numbered
+     * groups. See MODERN_GREEK_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-modern-greek-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Modern Greek\n * examination. Only ΟΜΑΔΑ 1η, the reading comprehension, takes cards: the\n * commentary and the essay are written production, which the scheme answers with\n * one indicative composition of its own and prices nothing inside. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that the answer is to be\n * given in Modern Greek.',
+    figureDir: 'public/exam-figures/modern-greek',
+    blocked: new Set(),
+  },
   arabic: {
     title: 'Arabic',
     /* The syllabus these ten sittings were set on, which is examined to June
@@ -490,6 +514,17 @@ function schemeFor(subjectId, card) {
  * also where several BROKEN subset glyphs land — U+019E stands for "tf" and
  * U+019F for "ti" in glyphmap.json — and those must still be refused. */
 const REAL = /[\u0100-\u017F\u0218-\u021B\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/;
+/* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
+ * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
+ * paper and its scheme are printed in, and every accented vowel in it lives
+ * here rather than in the basic block. "ἦν δέ τις ἐν τῇ στρατιᾷ Ξενοφῶν" is
+ * eight letters from this range in one printed line. Left inside BROKEN the
+ * whole Ancient Greek deck was refused for being written in Ancient Greek —
+ * the same failure Cyrillic and Latin Extended-A were fixed for, one block
+ * further along. Verified before widening: the 2015 Higher paper's page 3 was
+ * rendered at 190dpi and read beside agr_text's decoding of it, and the two
+ * agree character for character. */
+const REAL = /[\u0100-\u017F\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1F00-\u1FFF]/;
 /* Script that is really script, inside the range the broken-subset test
  * sweeps. Arabic joins it because Arabic ships: 0600-06FF is the alphabet the
  * SEC sets its Arabic paper in, 0750-077F and 08A0-08FF the supplements. What

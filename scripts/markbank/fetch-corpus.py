@@ -173,6 +173,24 @@ SUBJECTS = {
     # complete, not a fetch failure.
     'latvian': 'latvian',
     'czech': 'czech',
+    # Added 10 September 2026. Ancient Greek is Latin's sibling — SEC subject
+    # 007, ONE booklet ('000'), no Listening Comprehension Test, and printed as
+    # separate English ('E') and Irish ('I') editions rather than the bilingual
+    # 'B' booklet the curricular modern languages use, so WANTED_LANGS already
+    # takes the right one. The corpus runs 2010-2024 with 2020 absent (no
+    # written exam that year) and no Ordinary paper for 2024: 14 Higher papers
+    # and 13 Ordinary. Schemes are sparser still — Higher for every year on
+    # disk except 2021, Ordinary for 2015, 2019 and 2023 only. That is the
+    # corpus being what the SEC published, not a fetch failure; the subject is
+    # examined to 2026 but the bucket stops at 2024.
+    'ancient-greek': 'ancient-greek',
+    # Added 10 September 2026. Modern Greek is a NON-CURRICULAR EU language
+    # like Polish (SEC subject 019), but simpler in two ways the listing shows
+    # before a PDF is opened: it is sat at ONE level throughout (file letter
+    # 'A' — there is no Ordinary paper in any year), and there is NO separate
+    # Listening Comprehension booklet, only component '000'. Language letter
+    # 'E'. The corpus runs 2010-2026 with 2020 absent: 16 papers, 16 schemes.
+    'modern-greek': 'modern-greek',
 }
 
 # A subject the SEC sets as TWO papers on the same afternoon, one of which a

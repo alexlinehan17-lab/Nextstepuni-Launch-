@@ -14,6 +14,21 @@
     },
     "refsHash": "967a2d72ff0648b1"
   },
+  "ancient-greek": {
+    "cards": 383,
+    "contentHash": "a367719c91764025",
+    "coveragePct": 100.0,
+    "covered": 387,
+    "excluded": 371,
+    "leaves": 758,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 27,
+      "hash": "211caedff97f5a80"
+    },
+    "refsHash": "2ecf53681016b22d"
+  },
   "applied-maths": {
     "cards": 275,
     "contentHash": "3583d52f25388afa",
@@ -403,6 +418,21 @@
       "hash": "dd8222a2e1b8d8d6"
     },
     "refsHash": "8374d11c7ed5963f"
+  },
+  "modern-greek": {
+    "cards": 79,
+    "contentHash": "3086b6b9da802dad",
+    "coveragePct": 100.0,
+    "covered": 79,
+    "excluded": 63,
+    "leaves": 142,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 16,
+      "hash": "6c618224f47c0b52"
+    },
+    "refsHash": "98497719950dbd78"
   },
   "physics": {
     "cards": 1133,
