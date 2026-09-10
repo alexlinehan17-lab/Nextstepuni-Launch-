@@ -134,6 +134,16 @@ SUBJECTS = {
     # Section C. Its own walker, because both booklets are printed
     # bilingually in columns and the generic reader has no notion of a column.
     'french': {'mode': 'sections', 'walker': 'lang'},
+    # German sits the same two booklets as French and numbers both from 1
+    # inside every section, so the section carries the address — but its
+    # sections are the paper's own TEXTS rather than a lettered Section A:
+    # "T1" is TEXT I's reading comprehension, "AG" the applied grammar, "AT"
+    # the Äußerung zum Thema, "SP" the Schriftliche Produktion and "L1" the
+    # first part of the Listening Comprehension Test. Its own walker, because
+    # both booklets are printed bilingually in columns AND a German ask is
+    # addressed three levels deep, "2.(b)(ii)", which the French walker's
+    # (question, letter) key cannot hold.
+    'german': {'mode': 'sections', 'walker': 'de'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -706,6 +716,102 @@ def census_lang(subject, year, level):
     return set(texts), texts, files, P, S, claimed
 
 
+def census_de(subject, year, level):
+    """German: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER. The reading asks are the printed blocks the
+    scheme's own reprinted question locates (de_paper.find, which is align.py's
+    rule), and the twenty asks whose scheme prints an answer KEY rather than a
+    question — the Ordinary paragraph-headings, matching and true/false
+    questions — are located by their printed address, which is the only thing
+    both documents state about them.
+
+    Everything else is read from the paper alone and needs no help: the applied
+    grammar prints "1." and "2." and a candidate answers one; Äußerung zum
+    Thema and Schriftliche Produktion print "(a)" and "(b)" the same way; and
+    the listening booklet numbers its own four parts.
+
+    The census then checks the paper INDEPENDENTLY in three ways, in
+    `de_flags`: every scheme ask must have found a printed block, every printed
+    reading block must have been claimed by a scheme ask, and the item counts
+    of the listening booklet must equal the splits the scheme prints on the
+    heads of its own four parts.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from de_paper import DePaper                               # noqa: E402
+    from de_scheme import DeScheme                             # noqa: E402
+
+    P = DePaper(year, level, subject)
+    S = DeScheme(year, level, subject)
+    texts = {}
+    claimed = set()
+    for ask in S.reading():
+        hit = P.find(ask.unit, ask.q, ask.letter, ask.roman, ask.cue)
+        if hit is None:
+            hit = P.by_key(ask.unit, ask.q, ask.letter, ask.roman)
+        if hit is None:
+            continue
+        texts[ask.key] = hit[0]
+        claimed.add(ask.key)
+    for q, text, _page in P.grammar_alternatives():
+        texts[('AG', q, None, None)] = text
+    for unit in ('AT', 'SP'):
+        for letter, text, _page in P.written_alternatives(unit):
+            texts[(unit, None, letter, None)] = text
+    for part, item, roman, text in P.aural_asks():
+        texts[(f'L{part}', item, None, roman)] = text
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S, claimed
+
+
+# A printed block that reads like a question rather than a stray fragment: it
+# ends in a question mark, or it names the place in the text its answer is
+# found, which is what every German reading ask does.
+LOOKS_LIKE_ASK_DE = re.compile(
+    r'\?\s*$|\((?:Zeile[n]?|line|lines|Par\.|Absatz|Abschnitt|Alt|Introduction|'
+    r'Einleitung|R[ée]amhr[áa]|Headline|Tipp)[^)]*\)\s*$', re.I)
+
+
+def de_flags(P, S, claimed):
+    """What the two documents disagree about. See census_de."""
+    flags = []
+    for ask in S.reading():
+        if ask.key not in claimed:
+            flags.append({
+                'type': 'unpaired-ask', 'where': S.ref(ask),
+                'detail': f'the scheme prices this ask and no printed block on '
+                          f'the paper matches its wording: "{ask.cue[:70]}"'})
+    for block in P.blocks:
+        if block.key in claimed or len(block.text) > 400:
+            continue
+        if not LOOKS_LIKE_ASK_DE.search(block.text):
+            continue
+        flags.append({
+            'type': 'unpriced-ask',
+            'where': f'Section {block.key[0]} Q{block.q}'
+                     f'{f"({block.letter})" if block.letter else ""}'
+                     f'{f"({block.roman})" if block.roman else ""}',
+            'detail': f'the paper prints {block.text[:70]!r}, which no scheme '
+                      f'ask claims'})
+    items = collections.defaultdict(set)
+    for part, item, _roman, _text in P.aural_asks():
+        items[part].add(item)
+    for part in sorted(set(items) | {int(u[1]) for u in S.unit_splits
+                                     if u.startswith('L')}):
+        printed = S.unit_splits.get(f'L{part}')
+        if printed is None:
+            flags.append({
+                'type': 'listening-head', 'where': f'Listening part {part}',
+                'detail': 'the scheme prints no tariff on this part\'s own head, '
+                          'so its item count cannot be checked against the paper'})
+        elif len(printed) != len(items.get(part, ())):
+            flags.append({
+                'type': 'listening-count', 'where': f'Listening part {part}',
+                'detail': f'the paper prints {len(items.get(part, ()))} items and '
+                          f'the scheme prices {len(printed)}'})
+    return flags
+
+
 def _letters(first, last):
     lo, hi = LETTERS.index(first), LETTERS.index(last)
     return list(LETTERS[lo:hi + 1])
@@ -1064,6 +1170,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'lang':
                     parts, texts, files, P_, S_, claimed_ = census_lang(
                         subject, year, level)
+                elif cfg.get('walker') == 'de':
+                    parts, texts, files, P_, S_, claimed_ = census_de(
+                        subject, year, level)
                 elif cfg.get('walker') == 're':
                     parts, texts, files = census_re(subject, year, level)
                 elif cfg.get('walker') == 'lcvp':
@@ -1087,6 +1196,9 @@ def census_subject(subject):
                 marks = {(None, 0): cover} if cover else {}
             if cfg.get('walker') == 'lang':
                 flags += lang_flags(P_, S_, claimed_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'de':
+                flags += de_flags(P_, S_, claimed_)
                 marks = {(None, 0): lang_cover_marks(files)}
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])

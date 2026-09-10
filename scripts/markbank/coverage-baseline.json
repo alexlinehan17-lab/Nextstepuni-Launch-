@@ -194,6 +194,21 @@
     },
     "refsHash": "a4cecb0559e11239"
   },
+  "german": {
+    "cards": 264,
+    "contentHash": "4774172e3a845918",
+    "coveragePct": 100.0,
+    "covered": 264,
+    "excluded": 276,
+    "leaves": 540,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "a5deb2d915c7c90e"
+    },
+    "refsHash": "39be4a22419bc8c6"
+  },
   "history": {
     "cards": 749,
     "contentHash": "909b88426ea7203d",

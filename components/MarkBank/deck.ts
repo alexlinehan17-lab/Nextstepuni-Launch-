@@ -58,6 +58,8 @@ const lcvpCurriculum = CURRICULUM.find(subject => subject.id === 'lcvp-link-modu
 if (!lcvpCurriculum) throw new Error('Canonical LCVP Link Modules curriculum is missing');
 const frenchCurriculum = CURRICULUM.find(subject => subject.id === 'french');
 if (!frenchCurriculum) throw new Error('Canonical French curriculum is missing');
+const germanCurriculum = CURRICULUM.find(subject => subject.id === 'german');
+if (!germanCurriculum) throw new Error('Canonical German curriculum is missing');
 const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applied-mathematics');
 if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
 
@@ -980,6 +982,31 @@ export const FRENCH_STRANDS: StrandRef[] = frenchCurriculum.strands.map((strand,
     title: topic.name,
   })),
 }));
+/**
+ * The Leaving Certificate German syllabus, adapted from the canonical
+ * curriculum rather than retyped, for the reason the French strands are: a
+ * second copy of a taxonomy drifts, and a card filed against a topic id the
+ * registry does not hold resolves into a specification that contains no such
+ * topic.
+ *
+ * Mark Bank cards reach three of these topics — the two reading-comprehension
+ * task types and Angewandte Grammatik — because the rest of the examination is
+ * the oral, the aural and the two written-production tasks, none of which the
+ * written scheme answers with liftable content: it prices them with a content
+ * and expression GRID. The whole taxonomy still ships: a student browsing
+ * German should see the shape of their course, not only the part that is
+ * carded.
+ */
+export const GERMAN_STRANDS: StrandRef[] = germanCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 export const TECHNOLOGY_STRANDS: StrandRef[] = [
   {
     id: 'tech-core', label: 'Core', title: 'Core',
@@ -1109,6 +1136,7 @@ export const SUBJECTS = [
   { id: 'technology', title: 'Technology', strands: TECHNOLOGY_STRANDS, spec: 'Leaving Certificate Technology syllabus' },
   { id: 'history', title: 'History', strands: HISTORY_STRANDS, spec: 'Leaving Certificate History syllabus' },
   { id: 'french', title: 'French', strands: FRENCH_STRANDS, spec: 'Leaving Certificate French syllabus' },
+  { id: 'german', title: 'German', strands: GERMAN_STRANDS, spec: 'Leaving Certificate German syllabus' },
   { id: 'applied-maths', title: 'Applied Maths', strands: APPLIED_MATHS_STRANDS, spec: 'specification examined from 2023' },
 ] as const;
 
@@ -1392,6 +1420,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   french: {
     higher: () => import('./cards/french/higher'),
     ordinary: () => import('./cards/french/ordinary'),
+  },
+  german: {
+    higher: () => import('./cards/german/higher'),
+    ordinary: () => import('./cards/german/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),

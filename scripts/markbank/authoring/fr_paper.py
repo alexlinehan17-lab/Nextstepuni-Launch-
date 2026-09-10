@@ -160,7 +160,7 @@ def _gap_groups(words):
     return [(g[0], ' '.join(g[2])) for g in groups]
 
 
-def _column_x(rows, width):
+def _column_x(rows, width, marker=None):
     """Where the English column starts on this page, or None.
 
     The white space between the columns is usually wide enough to cut a row on
@@ -174,8 +174,9 @@ def _column_x(rows, width):
     a gap, which is the only thing that separates two columns whose gap has
     closed.
     """
+    marker = marker or MARKER_START
     xs = [x for _p, gs in rows for x, text in gs
-          if x > width * 0.4 and MARKER_START.match(text)]
+          if x > width * 0.4 and marker.match(text)]
     # One marker is enough when it sits past the middle of the sheet. A page
     # whose questions are set in French alone prints exactly ONE bilingual ask
     # — the opinion question at its end — and requiring two markers left that
@@ -187,8 +188,13 @@ def _column_x(rows, width):
     return min(strong) - 1 if strong else None
 
 
-def _rows(path, page_from=0, page_to=None):
+def _rows(path, page_from=0, page_to=None, marker=None):
     """[(page, [(x0, side, text), …])] — every row, cut into its columns.
+
+    `marker` is what opens a printed column, and it is a parameter because the
+    other bilingual language papers open one with markers French never prints:
+    a German ask is addressed "(b) (i)" and a roman is not a letter. Left at
+    None it is French's own set, so nothing about this subject changes.
 
     The SIDE is decided by the page's own column bound rather than by the
     middle of the sheet. 2024 Ordinary sets its English column at x=296 on a
@@ -215,7 +221,7 @@ def _rows(path, page_from=0, page_to=None):
                     rows.append({'mid': mid, 'w': [(x0, x1, word)]})
             ordered = [sorted(row['w']) for row in sorted(rows, key=lambda r: r['mid'])]
             page = [(pno, _gap_groups(ws)) for ws in ordered]
-            split = _column_x(page, width)
+            split = _column_x(page, width, marker)
             if split is None:
                 out.extend((pn, [(x, 'L', t) for x, t in gs]) for pn, gs in page)
                 continue

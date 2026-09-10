@@ -81,5 +81,9 @@
  "applied-maths": {
   "higher": 130,
   "ordinary": 145
+ },
+ "german": {
+  "higher": 111,
+  "ordinary": 153
  }
 }

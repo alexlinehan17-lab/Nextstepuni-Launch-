@@ -15,7 +15,11 @@ export const MAX_LONG_OPTION_ROWS = 16;
 /** Business Section 3 (Higher) and Section 2 (Ordinary); Sections B and C in
  *  the sciences. Keyed on the section, because a long question's individual
  *  parts are small while the menu the examiner prints for them is not. */
-const LONG_SECTIONS = new Set(['2', '3', 'B', 'C']);
+// German's reading comprehensions are long questions whose PARTS are small:
+// the 2022 Higher TEXT I theme question prints twenty-six accepted points
+// for ten marks and its 1(a) prints nine for six, so the section tokens the
+// German deck cites — TEXT I, II and III — belong here too.
+const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3']);
 
 export const optionCapFor = (section) =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;

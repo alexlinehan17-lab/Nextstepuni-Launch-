@@ -185,6 +185,17 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/lcvp',
     blocked: new Set(),
   },
+  german: {
+    title: 'German',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-german-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate German syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the TEXT it quotes,\n * bound to the pages of the question paper it was printed on. The answer\n * language differs WITHIN one comprehension, so each card states its own.',
+    figureDir: 'public/exam-figures/german',
+    blocked: new Set(),
+  },
   french: {
     title: 'French',
     /* The syllabus these papers were sat under and the one still being sat.

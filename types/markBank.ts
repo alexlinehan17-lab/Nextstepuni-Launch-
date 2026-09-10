@@ -301,9 +301,17 @@ export interface SecCardBase extends CardBase {
    *  whose Section 1 and Section 3 both count from Q1, which is why questionRef
    *  carries the section too. Religious Education runs A-J: its paper is ten
    *  lettered sections inside three units, and eight of the ten number no
-   *  question at all, so the section IS the address there. */
+   *  question at all, so the section IS the address there.
+   *
+   *  German's sections are the paper's own TEXTS rather than letters or
+   *  numbers: TEXT I, TEXT II and (at Ordinary) TEXT III each set a reading
+   *  comprehension numbering its questions from 1, and Angewandte Grammatik
+   *  sets a further pair of alternatives, so a bare question number addresses
+   *  nothing and the section carries the address exactly as it does in
+   *  Business. */
   section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
-  | '1' | '2' | '3';
+  | '1' | '2' | '3'
+  | 'T1' | 'T2' | 'T3' | 'AG';
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
   /** Optional lead-in the paper prints before the question proper. */
@@ -689,7 +697,11 @@ export const rowCapFor = (kind: TariffModel['kind']): number =>
  * Long-question sections: Business Section 3 at Higher and Section 2 at
  * Ordinary (there is no ABQ at Ordinary); Sections B and C in the sciences.
  */
-const LONG_SECTIONS = new Set(['2', '3', 'B', 'C']);
+// German's reading comprehensions are long questions whose PARTS are small:
+// the 2022 Higher TEXT I theme question prints twenty-six accepted points
+// for ten marks and its 1(a) prints nine for six, so the section tokens the
+// German deck cites — TEXT I, II and III — belong here too.
+const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3']);
 export const optionCapFor = (section: string): number =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 
