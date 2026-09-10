@@ -88,6 +88,35 @@ ASK_LINE = re.compile(
 # the picture's own columns overlap the prose's, the rectangle cannot separate
 # them. Those are refused, not trimmed.
 REVIEWED = {
+    'technology-2022-OL-paper-secA-q6-art':
+        'Colour photograph of a pair of blue plastic bevel gears in mesh: a '
+        'small pinion standing at right angles above a much larger bevel wheel '
+        'with a keyed centre bore.',
+    'technology-2022-OL-paper-secA-q11-art':
+        'A circuit diagram: a battery, a single-pole switch, a resistor '
+        'labelled R and a light emitting diode with two emission arrows, all '
+        'in one series loop.',
+    'technology-2022-OL-paper-secC-q1b-art':
+        'Colour photograph of a robotic deck-cleaning machine in side view: a '
+        'low black wedge-shaped body with a vented top, running on wheels over '
+        'timber decking, with a rotary brush turning underneath its front.',
+    'technology-2023-HL-paper-secA-q2-art':
+        'Colour photograph of a table lamp made from three upright copper '
+        'pipes of different heights set into a solid timber base, each pipe '
+        'topped with a brass lampholder and an exposed-filament bulb.',
+    'technology-2023-HL-paper-secA-q4-art':
+        'Pictorial drawing of a single-digit seven-segment LED display: a '
+        'black rectangular body with all seven red segments and the decimal '
+        'point lit, and five connection pins projecting from each long side.',
+    'technology-2023-OL-paper-secC-q5b-art':
+        'Colour photograph looking up at a suspension bridge from beneath. A '
+        'red leader line labels the thin hangers running down from the main '
+        'cable as Vertical cables, and a second labels the roadway box girder '
+        'as Deck; a tower stands in the water in the background.',
+    'technology-2025-OL-paper-secA-q11-art':
+        'Rendered pictorial view of a chain drive: a small toothed sprocket '
+        'above and a much larger toothed sprocket below, both with keyed '
+        'bores, joined by a roller chain running around them.',
     'technology-2021-HL-paper-secA-q4-art':
         'Colour photograph of a mechanic using a digital torque wrench on a V8 '
         'engine cylinder head. A red double-headed arrow runs along the length '
@@ -242,6 +271,9 @@ REVIEWED = {
 
 # Looked at and turned down, with what is wrong with each.
 REJECTED = {
+    'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',
+    'technology-2023-HL-paper-secA-q13-art': 'the empty two-row answer box, not a picture',
+    'technology-2024-HL-paper-secC-q4d-art': 'the axis titles of the lifecycle graph are clipped',
     'technology-2021-OL-paper-secA-q12-art': 'the juicer drawing is cut off along its bottom edge',
     'technology-2022-HL-paper-secA-q10-art': 'only the header row of the risk-assessment table; its rows are cut off',
     'technology-2022-HL-paper-secA-q5-art': 'carries both asks and their answer boxes',
@@ -318,7 +350,30 @@ def is_answer_box(page, rect):
              if d['rect'].width > (x1 - x0) * 0.6 and d['rect'].height < 3
              and x0 - 4 < d['rect'].x0 and d['rect'].x1 < x1 + 4
              and y0 - 4 < d['rect'].y0 and d['rect'].y1 < y1 + 4]
-    return len(rules) >= 3
+    if len(rules) >= 3:
+        return True
+    # A wordless box drawn ENTIRELY from horizontal and vertical strokes, with
+    # no image inside it, is ruling: the two-row box a candidate writes an
+    # answer in. Grouping the artwork by cluster made this the largest thing
+    # in a dozen bands and it published as the picture. A real drawing gives
+    # itself away -- a photograph is an image, a flowchart has arrowheads, a
+    # pneumatic symbol has diagonal hatching, a gate has curves.
+    for im in page.get_images(full=True):
+        for r in page.get_image_rects(im[0]):
+            if not (r.x1 < x0 or r.x0 > x1 or r.y1 < y0 or r.y0 > y1):
+                return False
+    for d in page.get_drawings():
+        r = d['rect']
+        if r.x1 < x0 - 2 or r.x0 > x1 + 2 or r.y1 < y0 - 2 or r.y0 > y1 + 2:
+            continue
+        for item in d.get('items', []):
+            if item[0] in ('c', 'qu'):
+                return False                     # a curve: a real drawing
+            if item[0] == 'l':
+                (ax, ay), (bx, by) = item[1], item[2]
+                if abs(ax - bx) > 2 and abs(ay - by) > 2:
+                    return False                 # a diagonal: a real drawing
+    return True
 
 
 def page_bands(page, state, seen_here):
@@ -370,6 +425,122 @@ def page_bands(page, state, seen_here):
     return out, (section, q, letter)
 
 
+def clusters(art):
+    """The artwork in a band, grouped into the separate PICTURES it holds.
+
+    The union of every drawing in a band is not one picture. Technology's
+    short questions print the answer boxes on the left and the photograph on
+    the right, both inside the same band, and a box drawn around the whole
+    question welds them together -- so the union spans the page and takes the
+    ask with it. Rects that touch or nest belong to one picture; rects with
+    clear air between them do not.
+
+    Tried largest first, because the biggest cluster in a band is the picture
+    far more often than not, and each is tested on its own merits anyway.
+    """
+    groups = []
+    for a in sorted(art, key=lambda r: (r[1], r[0])):
+        for g in groups:
+            if any(not (a[2] < b[0] - 6 or a[0] > b[2] + 6
+                        or a[3] < b[1] - 6 or a[1] > b[3] + 6) for b in g):
+                g.append(a)
+                break
+        else:
+            groups.append([a])
+    # One pass of merging, because a rect added late can join two groups.
+    merged = True
+    while merged:
+        merged = False
+        for i in range(len(groups)):
+            for j in range(i + 1, len(groups)):
+                if any(not (a[2] < b[0] - 6 or a[0] > b[2] + 6
+                            or a[3] < b[1] - 6 or a[1] > b[3] + 6)
+                       for a in groups[i] for b in groups[j]):
+                    groups[i] += groups.pop(j)
+                    merged = True
+                    break
+            if merged:
+                break
+    def area(g):
+        return ((max(a[2] for a in g) - min(a[0] for a in g))
+                * (max(a[3] for a in g) - min(a[1] for a in g)))
+    return sorted(groups, key=area, reverse=True)
+
+
+def _fit(page, art, top, bottom, grow):
+    """The publishable rectangle around `art`, or None.
+
+    `grow` says whether the box may take in the lines printed INSIDE the
+    artwork's own columns -- the labels and the caption. It is tried both
+    ways: with growth first, because a label belongs with its picture, and
+    without it second, because Technology's two-column spread means the
+    grown box sometimes reaches a line of the ask and the ungrown one does
+    not. Nineteen crops were refused outright for a label the picture could
+    have done without.
+    """
+    x0 = min(a[0] for a in art)
+    y0 = min(a[1] for a in art)
+    x1 = max(a[2] for a in art)
+    y1 = max(a[3] for a in art)
+    art_top, art_bottom = y0, y1
+    if (x1 - x0) < 46 or (y1 - y0) < 34:
+        return None
+    if grow:
+        for _ in range(6):
+            grew = False
+            for (bx0, by0, bx1, by1), t in lines(page):
+                if bx1 <= x0 or bx0 >= x1 or by1 <= y0 or by0 >= y1:
+                    continue
+                if x0 - 1 <= bx0 and bx1 <= x1 + 1 \
+                        and y0 - 1 <= by0 and by1 <= y1 + 1:
+                    continue
+                if bx0 < x0 - 2 or bx1 > x1 + 2:
+                    continue                  # reaches out of the columns
+                y0, y1 = min(y0, by0), max(y1, by1)
+                grew = True
+            if not grew:
+                break
+    # Rendering shows whatever the rectangle covers, so a line still crossing
+    # it has to be got out of the way. The prose column runs BESIDE the
+    # picture and its first or last line often reaches into the picture's top
+    # or bottom corner, so the box is clipped back off it. A line crossing the
+    # MIDDLE cannot be clipped away, and that crop is refused.
+    for _ in range(4):
+        crossing = None
+        for (bx0, by0, bx1, by1), t in lines(page):
+            if bx1 <= x0 + 1 or bx0 >= x1 - 1 \
+                    or by1 <= y0 + 1 or by0 >= y1 - 1:
+                continue
+            if x0 - 2 <= bx0 and bx1 <= x1 + 2 \
+                    and y0 - 2 <= by0 and by1 <= y1 + 2:
+                continue
+            crossing = (by0, by1)
+            break
+        if crossing is None:
+            break
+        by0, by1 = crossing
+        mid = (y0 + y1) / 2
+        if by1 <= mid:
+            y0 = by1 + 1
+        elif by0 >= mid:
+            y1 = by0 - 1
+        else:
+            return None
+    else:
+        return None
+    # What survives has to still BE the picture, not a strip of it: the clip
+    # may take the labels, never the artwork.
+    if y0 > art_top + 4 or y1 < art_bottom - 4:
+        return None
+    if (x1 - x0) < 46 or (y1 - y0) < 34:
+        return None
+    if y1 - y0 > page.rect.height * 0.66:
+        return None
+    if y0 < top - 8 or y1 > bottom + 8:
+        return None
+    return (x0 - 4, y0 - 4, x1 + 4, y1 + 4)
+
+
 def crop_for(paths, section, q, letter):
     """(pdf path, page number, rect) for the picture this part points at."""
     for path in paths:
@@ -392,78 +563,17 @@ def crop_for(paths, section, q, letter):
                            and not is_answer_box(page, a)]
                     if not art:
                         continue
-                    x0 = min(a[0] for a in art)
-                    y0 = min(a[1] for a in art)
-                    x1 = max(a[2] for a in art)
-                    y1 = max(a[3] for a in art)
-                    if (x1 - x0) < 46 or (y1 - y0) < 34:
-                        continue
-                    # The crop is X-BOUNDED to the artwork's own columns, and
-                    # grows only into lines that sit INSIDE those columns --
-                    # the labels printed on the picture. Technology sets the
-                    # picture beside the prose, so a crop that grows into
-                    # every line it touches reaches across the page and takes
-                    # the question with it: fifteen crops came back carrying
-                    # their own ask, which shows the student the question
-                    # twice.
-                    for _ in range(6):
-                        grew = False
-                        for (bx0, by0, bx1, by1), t in lines(page):
-                            if bx1 <= x0 or bx0 >= x1 or by1 <= y0 or by0 >= y1:
-                                continue
-                            if x0 - 1 <= bx0 and bx1 <= x1 + 1 \
-                                    and y0 - 1 <= by0 and by1 <= y1 + 1:
-                                continue
-                            if bx0 < x0 - 2 or bx1 > x1 + 2:
-                                continue          # reaches out of the columns
-                            y0, y1 = min(y0, by0), max(y1, by1)
-                            grew = True
-                        if not grew:
-                            break
-                    # Rendering shows whatever the rectangle covers, so a line
-                    # still crossing it has to be got out of the way. The
-                    # prose column runs BESIDE the picture and its first or
-                    # last line often reaches into the picture's top or bottom
-                    # corner -- "The torque wrench shown is set to deliver a
-                    # torque of 206 Nm." crosses the photograph's own band --
-                    # so the box is clipped back off it. A line crossing the
-                    # MIDDLE cannot be clipped away, and that crop is refused.
-                    art_top = min(a[1] for a in art)
-                    art_bottom = max(a[3] for a in art)
-                    for _ in range(4):
-                        crossing = None
-                        for (bx0, by0, bx1, by1), t in lines(page):
-                            if bx1 <= x0 + 1 or bx0 >= x1 - 1 \
-                                    or by1 <= y0 + 1 or by0 >= y1 - 1:
-                                continue
-                            if x0 - 2 <= bx0 and bx1 <= x1 + 2 \
-                                    and y0 - 2 <= by0 and by1 <= y1 + 2:
-                                continue
-                            crossing = (by0, by1)
-                            break
-                        if crossing is None:
-                            break
-                        by0, by1 = crossing
-                        mid = (y0 + y1) / 2
-                        if by1 <= mid:
-                            y0 = by1 + 1
-                        elif by0 >= mid:
-                            y1 = by0 - 1
-                        else:
-                            return None
-                    else:
-                        return None
-                    # What survives has to still BE the picture, not a strip
-                    # of it: the clip may take the labels, never the artwork.
-                    if y0 > art_top + 4 or y1 < art_bottom - 4:
-                        return None
-                    if (x1 - x0) < 46 or (y1 - y0) < 34:
-                        return None
-                    if y1 - y0 > page.rect.height * 0.66:
-                        return None
-                    if y0 < top - 8 or y1 > bottom + 8:
-                        return None
-                    return path, n, (x0 - 4, y0 - 4, x1 + 4, y1 + 4)
+                    # The WHOLE band's artwork first: where it fits, it is
+                    # the most complete picture -- 2024 Higher Q5 prints the
+                    # resistor beside its own list of colour bands, and either
+                    # half alone is a worse crop than the two together. Only
+                    # where the union cannot be published are the separate
+                    # pictures inside it tried.
+                    for group in [art] + clusters(art):
+                        for grow in (True, False):
+                            rect = _fit(page, group, top, bottom, grow)
+                            if rect:
+                                return path, n, rect
     return None
 
 
@@ -504,7 +614,7 @@ def worklist():
     is refusing helps no one, and a refusal the cropper never hears about is a
     card that stays lost.
     """
-    cards, refused, examples, verdicts, stats = TA.author()
+    cards, refused, examples, verdicts, stats = TA.author(bind_figures=False)
     want = []
     for v in verdicts:
         if v['reason'] != 'points at printed matter the card cannot carry':

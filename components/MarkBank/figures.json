@@ -36373,5 +36373,82 @@
   "year": 2025,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+ },
+ "technology-2022-OL-paper-secA-q6-art": {
+  "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secA-q6-art.png",
+  "md5": "3f78c170a3d931466602d13a187b838c",
+  "alt": "Colour photograph of a pair of blue plastic bevel gears in mesh: a small pinion standing at right angles above a much larger bevel wheel with a keyed centre bore.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q6",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2022-OL-paper-secA-q11-art": {
+  "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secA-q11-art.png",
+  "md5": "c3c785f0daa69f8435fdd9a31d3d9429",
+  "alt": "A circuit diagram: a battery, a single-pole switch, a resistor labelled R and a light emitting diode with two emission arrows, all in one series loop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q11",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2022-OL-paper-secC-q1b-art": {
+  "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q1b-art.png",
+  "md5": "3f92991fdda314fd2218fa26fd6b1fa5",
+  "alt": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section C Q1(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2023-HL-paper-secA-q2-art": {
+  "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q2-art.png",
+  "md5": "bbad6868b13bbdcb8850564f3a8fd36f",
+  "alt": "Colour photograph of a table lamp made from three upright copper pipes of different heights set into a solid timber base, each pipe topped with a brass lampholder and an exposed-filament bulb.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Section A Q2",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+ },
+ "technology-2023-HL-paper-secA-q4-art": {
+  "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q4-art.png",
+  "md5": "57124e24322b69f1f3aaf6db42a4d2b5",
+  "alt": "Pictorial drawing of a single-digit seven-segment LED display: a black rectangular body with all seven red segments and the decimal point lit, and five connection pins projecting from each long side.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Section A Q4",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+ },
+ "technology-2023-OL-paper-secC-q5b-art": {
+  "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q5b-art.png",
+  "md5": "bd9c5dbdbc7feab0285aa75e27da9a3f",
+  "alt": "Colour photograph looking up at a suspension bridge from beneath. A red leader line labels the thin hangers running down from the main cable as Vertical cables, and a second labels the roadway box girder as Deck; a tower stands in the water in the background.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section C Q5(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2025-OL-paper-secA-q11-art": {
+  "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q11-art.png",
+  "md5": "bac61d4f1b02613436d57e4d5d216a08",
+  "alt": "Rendered pictorial view of a chain drive: a small toothed sprocket above and a much larger toothed sprocket below, both with keyed bores, joined by a roller chain running around them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q11",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
  }
 }

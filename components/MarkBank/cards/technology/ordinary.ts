@@ -1206,6 +1206,28 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-a6-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2022 OL Section A Q6(i)",
+    stem: "The image shows a mechanism which is commonly used in Technology.",
+    questionText: "Name the mechanism shown.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bevel gears.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secA-q6-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secA-q6-art.png",
+          "srcHash": "3f78c170a3d931466602d13a187b838c",
+          "alt": "Colour photograph of a pair of blue plastic bevel gears in mesh: a small pinion standing at right angles above a much larger bevel wheel with a keyed centre bore.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-a6-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2022 OL Section A Q6(ii)",
     stem: "The image shows a mechanism which is commonly used in Technology.",
@@ -1214,6 +1236,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Hand drills, vehicle differential, garage doors, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secA-q6-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secA-q6-art.png",
+          "srcHash": "3f78c170a3d931466602d13a187b838c",
+          "alt": "Colour photograph of a pair of blue plastic bevel gears in mesh: a small pinion standing at right angles above a much larger bevel wheel with a keyed centre bore.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1271,6 +1301,51 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The sub-folder is a folder within the root-folder, etc.", marks: 4, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-a11-i", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2022 OL Section A Q11(i)",
+    stem: "The circuit diagram shown contains a power supply, a switch, a resistor and an LED. R Calculate the voltage drop across the resistor. Note: V = I × R",
+    questionText: "State the purpose of resistor R in the circuit.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To protect the LED by reducing the current flow, etc.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secA-q11-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secA-q11-art.png",
+          "srcHash": "c3c785f0daa69f8435fdd9a31d3d9429",
+          "alt": "A circuit diagram: a battery, a single-pole switch, a resistor labelled R and a light emitting diode with two emission arrows, all in one series loop.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-a11-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2022 OL Section A Q11(ii)",
+    stem: "The circuit diagram shown contains a power supply, a switch, a resistor and an LED. R Calculate the voltage drop across the resistor. Note: V = I × R",
+    questionText: "A current of 0.013 A passes through a resistor of 300 Ω.",
+    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Calculate the voltage drop across the resistor.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Note: V = I × R", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secA-q11-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secA-q11-art.png",
+          "srcHash": "c3c785f0daa69f8435fdd9a31d3d9429",
+          "alt": "A circuit diagram: a battery, a single-pole switch, a resistor labelled R and a light emitting diode with two emission arrows, all in one series loop.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1530,6 +1605,39 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Vacuum cleaner, lawnmower, etc.", marks: 4, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c1b", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2022 OL Section C Q1(b)(i), (ii), (iii)",
+    stem: "• The system is powered on • The motor activates, moving the Robo-Deck forward for 15 seconds • At the same time, the stain sprayer comes on for 15 seconds • The motor and the sprayer stop. Start On",
+    questionText: "(i) Complete the flowchart, shown, to operate the Robo-Deck in the following sequence: (ii) Suggest a modification of the flowchart to alert the user when the stain is running low. (iii) Name a suitable sensor that could be used to detect an object in the path of the Robo-Deck.",
+    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "• The system is powered on", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "• The motor activates, moving the Robo-Deck forward for 15 seconds", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "• At the same time, the stain sprayer comes on for 15 seconds", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "• The motor and the sprayer stop.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Suggest a modification to the flowchart to alert the user", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "Start when the stain is running low.", marks: null, openList: true },
+    { id: "r-7", kind: "point", verbatim: "N Start", marks: null, openList: true },
+    { id: "r-8", kind: "point", verbatim: "Motor On", marks: null, openList: true },
+    { id: "r-9", kind: "point", verbatim: "Sprayer On LED On Stain Low", marks: null, openList: true },
+    { id: "r-10", kind: "point", verbatim: "Wait 15s Motor On", marks: null, openList: true },
+    { id: "r-11", kind: "point", verbatim: "Motor Off Sprayer On (iii) Name a suitable sensor", marks: null, openList: true },
+    { id: "r-12", kind: "point", verbatim: "that could be used to", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q1b-art.png",
+          "srcHash": "3f92991fdda314fd2218fa26fd6b1fa5",
+          "alt": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3091,6 +3199,37 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Permanent joints cannot be dismantled without braking, e.g., a welded joint.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "A semi-permanent joint can be dismantled, e.g., nut and bolt, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q5b-art.png",
+          "srcHash": "bd9c5dbdbc7feab0285aa75e27da9a3f",
+          "alt": "Colour photograph looking up at a suspension bridge from beneath. A red leader line labels the thin hangers running down from the main cable as Vertical cables, and a second labels the roadway box girder as Deck; a tower stands in the water in the background.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2023 OL Section C Q5(b)(ii)",
+    stem: "Vertical cables Bracket Deck",
+    questionText: "Using notes and annotated sketches, describe how a vertical suspending cable could be attached to the concrete deck using a bracket like that shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A cable (wire rope) sling could be attached using a", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "heavy duty nut and bolt assembly, etc.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q5b-art.png",
+          "srcHash": "bd9c5dbdbc7feab0285aa75e27da9a3f",
+          "alt": "Colour photograph looking up at a suspension bridge from beneath. A red leader line labels the thin hangers running down from the main cable as Vertical cables, and a second labels the roadway box girder as Deck; a tower stands in the water in the background.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3105,6 +3244,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Fall from a height, struck by heavy materials/machinery during construction, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q5b-art.png",
+          "srcHash": "bd9c5dbdbc7feab0285aa75e27da9a3f",
+          "alt": "Colour photograph looking up at a suspension bridge from beneath. A red leader line labels the thin hangers running down from the main cable as Vertical cables, and a second labels the roadway box girder as Deck; a tower stands in the water in the background.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4351,6 +4498,50 @@ export const CARDS: SecCard[] = [
     { id: "r-6", kind: "point", verbatim: "ICT: Solidworks", marks: null, openList: true },
     { id: "r-7", kind: "point", verbatim: "Purpose: Produce working drawings, CAM files for 3D printing/laser cutting, etc.", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a11-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2025 OL Section A Q11(i)",
+    stem: "The mechanism shown below is widely used in industrial machines.",
+    questionText: "Name the mechanism.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Chain and Sprocket.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secA-q11-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q11-art.png",
+          "srcHash": "bac61d4f1b02613436d57e4d5d216a08",
+          "alt": "Rendered pictorial view of a chain drive: a small toothed sprocket above and a much larger toothed sprocket below, both with keyed bores, joined by a roller chain running around them.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a11-ii", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2025 OL Section A Q11(ii)",
+    stem: "The mechanism shown below is widely used in industrial machines.",
+    questionText: "Outline two advantages of using this mechanism.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Easy to install, strong, won’t slip, etc.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secA-q11-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q11-art.png",
+          "srcHash": "bac61d4f1b02613436d57e4d5d216a08",
+          "alt": "Rendered pictorial view of a chain drive: a small toothed sprocket above and a much larger toothed sprocket below, both with keyed bores, joined by a roller chain running around them.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

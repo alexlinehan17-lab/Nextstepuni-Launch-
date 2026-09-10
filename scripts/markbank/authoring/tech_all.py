@@ -322,9 +322,13 @@ def figure_index():
     return figs
 
 
-def author():
+def author(bind_figures=True):
     census = PC.census_subject(SUBJECT)
-    figures = figure_index()
+    # tech_figures.py calls this with the binding OFF, so that its worklist is
+    # every part that points at printed matter -- not just the ones still
+    # uncovered. A cropper whose candidate set shrinks as its own crops are
+    # bound cannot reproduce what it published.
+    figures = figure_index() if bind_figures else {}
     cards, refused, examples = [], collections.Counter(), collections.defaultdict(list)
     verdicts = []
     stats = []

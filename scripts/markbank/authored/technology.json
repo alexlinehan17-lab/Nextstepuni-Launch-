@@ -10108,6 +10108,36 @@
   "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
+  "id": "tech-2022-ol-a6-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q6(i)",
+  "questionText": "Name the mechanism shown.",
+  "stem": "The image shows a mechanism which is commonly used in Technology.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secA-q6-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bevel gears.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
   "id": "tech-2022-ol-a6-ii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -10119,7 +10149,7 @@
   "questionText": "Outline one application of this mechanism in everyday life.",
   "stem": "The image shows a mechanism which is commonly used in Technology.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secA-q6-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -10259,6 +10289,73 @@
     "kind": "point",
     "verbatim": "The sub-folder is a folder within the root-folder, etc.",
     "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-a11-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q11(i)",
+  "questionText": "State the purpose of resistor R in the circuit.",
+  "stem": "The circuit diagram shown contains a power supply, a switch, a resistor and an LED. R Calculate the voltage drop across the resistor. Note: V = I × R",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secA-q11-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To protect the LED by reducing the current flow, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-a11-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q11(ii)",
+  "questionText": "A current of 0.013 A passes through a resistor of 300 Ω.",
+  "stem": "The circuit diagram shown contains a power supply, a switch, a resistor and an LED. R Calculate the voltage drop across the resistor. Note: V = I × R",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secA-q11-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the voltage drop across the resistor.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Note: V = I × R",
+    "marks": null,
     "openList": true
    }
   ],
@@ -10882,6 +10979,113 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-c1b",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 OL Section C Q1(b)(i), (ii), (iii)",
+  "questionText": "(i) Complete the flowchart, shown, to operate the Robo-Deck in the following sequence: (ii) Suggest a modification of the flowchart to alert the user when the stain is running low. (iii) Name a suitable sensor that could be used to detect an object in the path of the Robo-Deck.",
+  "stem": "• The system is powered on • The motor activates, moving the Robo-Deck forward for 15 seconds • At the same time, the stain sprayer comes on for 15 seconds • The motor and the sprayer stop. Start On",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• The system is powered on",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• The motor activates, moving the Robo-Deck forward for 15 seconds",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "• At the same time, the stain sprayer comes on for 15 seconds",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "• The motor and the sprayer stop.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Suggest a modification to the flowchart to alert the user",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Start when the stain is running low.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "N Start",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Motor On",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Sprayer On LED On Stain Low",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Wait 15s Motor On",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "Motor Off Sprayer On (iii) Name a suitable sensor",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "that could be used to",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this question. The scheme lists 17 accepted answers; the first 12 are shown."
  },
  {
   "id": "tech-2022-ol-c1c-i",
@@ -12234,6 +12438,50 @@
   "notes": "The scheme prints '(6 marks, 3 + 3)' for this part."
  },
  {
+  "id": "tech-2023-hl-a2-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q2(i)",
+  "questionText": "Outline two benefits of using copper piping as a material when manufacturing the table lamp shown.",
+  "stem": "Copperfish is an award-winning business, based in Co. Wicklow, creating lighting products from salvaged and storm-fallen timber.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4 + 2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Copper has an attractive colour, is ductile and easily shaped, it can",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "polish to a shiny metallic finish, the metal will not degrade, fittings",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "are readily available to create bends, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
   "id": "tech-2023-hl-a2-ii",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -12245,7 +12493,7 @@
   "questionText": "Describe one advantage of using salvaged timber for this table lamp.",
   "stem": "Copperfish is an award-winning business, based in Co. Wicklow, creating lighting products from salvaged and storm-fallen timber.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secA-q2-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -12334,6 +12582,73 @@
    }
   ],
   "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2023-hl-a4-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q4(i)",
+  "questionText": "Name the component shown.",
+  "stem": "An electronic output component is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2 + 4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "7 segment led display.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
+ },
+ {
+  "id": "tech-2023-hl-a4-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q4(ii)",
+  "questionText": "Suggest two applications for this component.",
+  "stem": "An electronic output component is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 2 + 4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "digital calculators, electronic meters, digital clocks,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "odometers, lifts, clock radios, etc",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
  },
  {
   "id": "tech-2023-hl-a5-i",
@@ -18790,7 +19105,7 @@
   "questionText": "Briefly outline, with an example in each case, the difference between permanent and semi-permanent jointing methods.",
   "stem": "Vertical cables Bracket Deck",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2023-OL-paper-secC-q5b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -18816,6 +19131,43 @@
   "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
  },
  {
+  "id": "tech-2023-ol-c5b-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2023 OL Section C Q5(b)(ii)",
+  "questionText": "Using notes and annotated sketches, describe how a vertical suspending cable could be attached to the concrete deck using a bracket like that shown.",
+  "stem": "Vertical cables Bracket Deck",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-OL-paper-secC-q5b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A cable (wire rope) sling could be attached using a",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "heavy duty nut and bolt assembly, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
   "id": "tech-2023-ol-c5b-iii",
   "topicId": "tech-opt-materials",
   "conceptId": "opt-materials",
@@ -18827,7 +19179,7 @@
   "questionText": "Suggest two safety hazards workers could encounter during the construction of a large-scale project such as a suspension bridge.",
   "stem": "Vertical cables Bracket Deck",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2023-OL-paper-secC-q5b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -30032,6 +30384,66 @@
    }
   ],
   "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2025-ol-a11-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q11(i)",
+  "questionText": "Name the mechanism.",
+  "stem": "The mechanism shown below is widely used in industrial machines.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secA-q11-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chain and Sprocket.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2025-ol-a11-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q11(ii)",
+  "questionText": "Outline two advantages of using this mechanism.",
+  "stem": "The mechanism shown below is widely used in industrial machines.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secA-q11-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Easy to install, strong, won’t slip, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
   "id": "tech-2025-ol-a12",

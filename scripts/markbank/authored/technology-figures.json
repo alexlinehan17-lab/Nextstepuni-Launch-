@@ -77,6 +77,27 @@
   "questionRef": "2022 HL Section C Q2(a)"
  },
  {
+  "file": "technology-2022-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a pair of blue plastic bevel gears in mesh: a small pinion standing at right angles above a much larger bevel wheel with a keyed centre bore.",
+  "questionRef": "2022 OL Section A Q6"
+ },
+ {
+  "file": "technology-2022-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram: a battery, a single-pole switch, a resistor labelled R and a light emitting diode with two emission arrows, all in one series loop.",
+  "questionRef": "2022 OL Section A Q11"
+ },
+ {
+  "file": "technology-2022-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
+  "questionRef": "2022 OL Section C Q1(b)"
+ },
+ {
   "file": "technology-2022-OL-paper-secC-q2d-art.png",
   "kind": "figure",
   "truncated": false,
@@ -96,6 +117,20 @@
   "truncated": false,
   "description": "Colour photograph of a prefabricated timber-framed facade panel with a window and cladding being craned into place on a partly built timber-frame building. The panel is labelled A and the concrete floor slab beneath it is labelled B; two workers in helmets and harnesses guide it in.",
   "questionRef": "2022 OL Section C Q5(b)"
+ },
+ {
+  "file": "technology-2023-HL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a table lamp made from three upright copper pipes of different heights set into a solid timber base, each pipe topped with a brass lampholder and an exposed-filament bulb.",
+  "questionRef": "2023 HL Section A Q2"
+ },
+ {
+  "file": "technology-2023-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Pictorial drawing of a single-digit seven-segment LED display: a black rectangular body with all seven red segments and the decimal point lit, and five connection pins projecting from each long side.",
+  "questionRef": "2023 HL Section A Q4"
  },
  {
   "file": "technology-2023-HL-paper-secA-q9-art.png",
@@ -131,6 +166,13 @@
   "truncated": false,
   "description": "Colour photograph of a black aluminium LED pocket torch lying at an angle, with a knurled grip band, a pocket clip and a reflector lens at the left end.",
   "questionRef": "2023 OL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2023-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph looking up at a suspension bridge from beneath. A red leader line labels the thin hangers running down from the main cable as Vertical cables, and a second labels the roadway box girder as Deck; a tower stands in the water in the background.",
+  "questionRef": "2023 OL Section C Q5(b)"
  },
  {
   "file": "technology-2024-HL-paper-secA-q4-art.png",
@@ -222,5 +264,12 @@
   "truncated": false,
   "description": "Rendered diagram of a diving springboard in a ruled box. A leader line labels the tubular handrail assembly Ladder and the blue board Springboard, and an angle drawn between the board and its fulcrum mounting is labelled Tilt Angle.",
   "questionRef": "2025 HL Section A Q13"
+ },
+ {
+  "file": "technology-2025-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendered pictorial view of a chain drive: a small toothed sprocket above and a much larger toothed sprocket below, both with keyed bores, joined by a roller chain running around them.",
+  "questionRef": "2025 OL Section A Q11"
  }
 ]

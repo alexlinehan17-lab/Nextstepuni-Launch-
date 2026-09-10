@@ -2438,6 +2438,30 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-a2-i", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2023 HL Section A Q2(i)",
+    stem: "Copperfish is an award-winning business, based in Co. Wicklow, creating lighting products from salvaged and storm-fallen timber.",
+    questionText: "Outline two benefits of using copper piping as a material when manufacturing the table lamp shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Copper has an attractive colour, is ductile and easily shaped, it can", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "polish to a shiny metallic finish, the metal will not degrade, fittings", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "are readily available to create bends, etc.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secA-q2-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q2-art.png",
+          "srcHash": "bbad6868b13bbdcb8850564f3a8fd36f",
+          "alt": "Colour photograph of a table lamp made from three upright copper pipes of different heights set into a solid timber base, each pipe topped with a brass lampholder and an exposed-filament bulb.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-a2-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2023 HL Section A Q2(ii)",
     stem: "Copperfish is an award-winning business, based in Co. Wicklow, creating lighting products from salvaged and storm-fallen timber.",
@@ -2448,6 +2472,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "have been demolished or dismantled, by using this material, it reduces wastage of", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "natural resources, cheaper, better for environment etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secA-q2-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q2-art.png",
+          "srcHash": "bbad6868b13bbdcb8850564f3a8fd36f",
+          "alt": "Colour photograph of a table lamp made from three upright copper pipes of different heights set into a solid timber base, each pipe topped with a brass lampholder and an exposed-filament bulb.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2465,6 +2497,51 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Efficiency = (2400 / 2640) x 100%", marks: null, openList: true },
     { id: "r-5", kind: "point", verbatim: "Efficiency = 0.909 x 100%", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-a4-i", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2023 HL Section A Q4(i)",
+    stem: "An electronic output component is shown.",
+    questionText: "Name the component shown.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks, 2 + 4)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7 segment led display.", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secA-q4-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q4-art.png",
+          "srcHash": "57124e24322b69f1f3aaf6db42a4d2b5",
+          "alt": "Pictorial drawing of a single-digit seven-segment LED display: a black rectangular body with all seven red segments and the decimal point lit, and five connection pins projecting from each long side.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-a4-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2023 HL Section A Q4(ii)",
+    stem: "An electronic output component is shown.",
+    questionText: "Suggest two applications for this component.",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 2 + 4)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "digital calculators, electronic meters, digital clocks,", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "odometers, lifts, clock radios, etc", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secA-q4-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q4-art.png",
+          "srcHash": "57124e24322b69f1f3aaf6db42a4d2b5",
+          "alt": "Pictorial drawing of a single-digit seven-segment LED display: a black rectangular body with all seven red segments and the decimal point lit, and five connection pins projecting from each long side.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
