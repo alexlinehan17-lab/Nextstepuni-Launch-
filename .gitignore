@@ -67,3 +67,8 @@ examiner-reports/*/supplements/
 # Landing-page reference recordings (44–414 MB each; GitHub rejects files over 100 MB).
 # They stay on the founder's Mac; the contact sheets and notes in design-references/landing/ are what is tracked.
 design-references/landing/*.mov
+
+# Figure crops rendered for review by <subject>_figures.py --write. The
+# published crops live under exam-papers/<subject>/figures/ and are bound
+# through the manifest; these are working renders, regenerable on demand.
+figures-review*/
