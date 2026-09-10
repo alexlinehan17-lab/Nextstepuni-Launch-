@@ -12473,6 +12473,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "bulgarian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "bulgarian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12507,6 +12511,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "croatian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "croatian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12575,6 +12583,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "danish-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "danish-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12647,6 +12659,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "estonian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "estonian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12681,6 +12697,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "finnish-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "finnish-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12715,6 +12735,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "hungarian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "hungarian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12889,6 +12913,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "slovakian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "slovakian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12923,6 +12951,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "slovenian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "slovenian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12957,6 +12989,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "swedish-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "swedish-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }

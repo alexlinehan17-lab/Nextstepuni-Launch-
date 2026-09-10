@@ -78,6 +78,24 @@ const romanianCurriculum = CURRICULUM.find(subject => subject.id === 'romanian')
 if (!romanianCurriculum) throw new Error('Canonical Romanian curriculum is missing');
 const dutchCurriculum = CURRICULUM.find(subject => subject.id === 'dutch');
 if (!dutchCurriculum) throw new Error('Canonical Dutch curriculum is missing');
+const hungarianCurriculum = CURRICULUM.find(subject => subject.id === 'hungarian');
+if (!hungarianCurriculum) throw new Error('Canonical Hungarian curriculum is missing');
+const bulgarianCurriculum = CURRICULUM.find(subject => subject.id === 'bulgarian');
+if (!bulgarianCurriculum) throw new Error('Canonical Bulgarian curriculum is missing');
+const slovakianCurriculum = CURRICULUM.find(subject => subject.id === 'slovakian');
+if (!slovakianCurriculum) throw new Error('Canonical Slovakian curriculum is missing');
+const swedishCurriculum = CURRICULUM.find(subject => subject.id === 'swedish');
+if (!swedishCurriculum) throw new Error('Canonical Swedish curriculum is missing');
+const estonianCurriculum = CURRICULUM.find(subject => subject.id === 'estonian');
+if (!estonianCurriculum) throw new Error('Canonical Estonian curriculum is missing');
+const finnishCurriculum = CURRICULUM.find(subject => subject.id === 'finnish');
+if (!finnishCurriculum) throw new Error('Canonical Finnish curriculum is missing');
+const croatianCurriculum = CURRICULUM.find(subject => subject.id === 'croatian');
+if (!croatianCurriculum) throw new Error('Canonical Croatian curriculum is missing');
+const danishCurriculum = CURRICULUM.find(subject => subject.id === 'danish');
+if (!danishCurriculum) throw new Error('Canonical Danish curriculum is missing');
+const slovenianCurriculum = CURRICULUM.find(subject => subject.id === 'slovenian');
+if (!slovenianCurriculum) throw new Error('Canonical Slovenian curriculum is missing');
 const lithuanianCurriculum = CURRICULUM.find(subject => subject.id === 'lithuanian');
 if (!lithuanianCurriculum) throw new Error('Canonical Lithuanian curriculum is missing');
 const latvianCurriculum = CURRICULUM.find(subject => subject.id === 'latvian');
@@ -1216,6 +1234,96 @@ export const DUTCH_STRANDS: StrandRef[] = dutchCurriculum.strands.map((strand, i
     title: topic.name,
   })),
 }));
+export const HUNGARIAN_STRANDS: StrandRef[] = hungarianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const BULGARIAN_STRANDS: StrandRef[] = bulgarianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const SLOVAKIAN_STRANDS: StrandRef[] = slovakianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const SWEDISH_STRANDS: StrandRef[] = swedishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const ESTONIAN_STRANDS: StrandRef[] = estonianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const FINNISH_STRANDS: StrandRef[] = finnishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const CROATIAN_STRANDS: StrandRef[] = croatianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const DANISH_STRANDS: StrandRef[] = danishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const SLOVENIAN_STRANDS: StrandRef[] = slovenianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 export const CZECH_STRANDS: StrandRef[] = czechCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1520,6 +1628,15 @@ export const SUBJECTS = [
   { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
   { id: 'ancient-greek', title: 'Ancient Greek', strands: ANCIENT_GREEK_STRANDS, spec: 'Leaving Certificate Ancient Greek syllabus — the legacy written paper' },
   { id: 'modern-greek', title: 'Modern Greek', strands: MODERN_GREEK_STRANDS, spec: 'Leaving Certificate Modern Greek, a non-curricular EU language' },
+  { id: 'hungarian', title: 'Hungarian', strands: HUNGARIAN_STRANDS, spec: 'Leaving Certificate Hungarian, a non-curricular EU language' },
+  { id: 'bulgarian', title: 'Bulgarian', strands: BULGARIAN_STRANDS, spec: 'Leaving Certificate Bulgarian, a non-curricular EU language' },
+  { id: 'slovakian', title: 'Slovakian', strands: SLOVAKIAN_STRANDS, spec: 'Leaving Certificate Slovakian, a non-curricular EU language' },
+  { id: 'swedish', title: 'Swedish', strands: SWEDISH_STRANDS, spec: 'Leaving Certificate Swedish, a non-curricular EU language' },
+  { id: 'estonian', title: 'Estonian', strands: ESTONIAN_STRANDS, spec: 'Leaving Certificate Estonian, a non-curricular EU language' },
+  { id: 'finnish', title: 'Finnish', strands: FINNISH_STRANDS, spec: 'Leaving Certificate Finnish, a non-curricular EU language' },
+  { id: 'croatian', title: 'Croatian', strands: CROATIAN_STRANDS, spec: 'Leaving Certificate Croatian, a non-curricular EU language' },
+  { id: 'danish', title: 'Danish', strands: DANISH_STRANDS, spec: 'Leaving Certificate Danish, a non-curricular EU language' },
+  { id: 'slovenian', title: 'Slovenian', strands: SLOVENIAN_STRANDS, spec: 'Leaving Certificate Slovenian, a non-curricular EU language' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1844,6 +1961,36 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   },
   czech: {
     higher: () => import('./cards/czech/higher'),
+  },
+  // The nine remaining non-curricular EU languages are sat at ONE level in
+  // every year of the corpus: the SEC's file letter is 'A' and the cover says
+  // "Higher Level", so there is no ordinary deck to import for any of them.
+  hungarian: {
+    higher: () => import('./cards/hungarian/higher'),
+  },
+  bulgarian: {
+    higher: () => import('./cards/bulgarian/higher'),
+  },
+  slovakian: {
+    higher: () => import('./cards/slovakian/higher'),
+  },
+  swedish: {
+    higher: () => import('./cards/swedish/higher'),
+  },
+  estonian: {
+    higher: () => import('./cards/estonian/higher'),
+  },
+  finnish: {
+    higher: () => import('./cards/finnish/higher'),
+  },
+  croatian: {
+    higher: () => import('./cards/croatian/higher'),
+  },
+  danish: {
+    higher: () => import('./cards/danish/higher'),
+  },
+  slovenian: {
+    higher: () => import('./cards/slovenian/higher'),
   },
   arabic: {
     higher: () => import('./cards/arabic/higher'),

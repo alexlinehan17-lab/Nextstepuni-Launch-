@@ -85,6 +85,15 @@ import { CARDS as LITHUANIAN_HIGHER } from '../components/MarkBank/cards/lithuan
 import { CARDS as LITHUANIAN_ORDINARY } from '../components/MarkBank/cards/lithuanian/ordinary';
 import { CARDS as LATVIAN_HIGHER } from '../components/MarkBank/cards/latvian/higher';
 import { CARDS as CZECH_HIGHER } from '../components/MarkBank/cards/czech/higher';
+import { CARDS as HUNGARIAN_HIGHER } from '../components/MarkBank/cards/hungarian/higher';
+import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
+import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakian/higher';
+import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
+import { CARDS as ESTONIAN_HIGHER } from '../components/MarkBank/cards/estonian/higher';
+import { CARDS as FINNISH_HIGHER } from '../components/MarkBank/cards/finnish/higher';
+import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
+import { CARDS as DANISH_HIGHER } from '../components/MarkBank/cards/danish/higher';
+import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
 import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
 import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
 import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
@@ -547,6 +556,15 @@ describe('the size manifest matches the decks it describes', () => {
     ['lithuanian', 'ordinary', LITHUANIAN_ORDINARY],
     ['latvian', 'higher', LATVIAN_HIGHER],
     ['czech', 'higher', CZECH_HIGHER],
+    ['hungarian', 'higher', HUNGARIAN_HIGHER],
+    ['bulgarian', 'higher', BULGARIAN_HIGHER],
+    ['slovakian', 'higher', SLOVAKIAN_HIGHER],
+    ['swedish', 'higher', SWEDISH_HIGHER],
+    ['estonian', 'higher', ESTONIAN_HIGHER],
+    ['finnish', 'higher', FINNISH_HIGHER],
+    ['croatian', 'higher', CROATIAN_HIGHER],
+    ['danish', 'higher', DANISH_HIGHER],
+    ['slovenian', 'higher', SLOVENIAN_HIGHER],
     ['arabic', 'higher', ARABIC_HIGHER],
     ['arabic', 'ordinary', ARABIC_ORDINARY],
     ['applied-maths', 'higher', AM_HIGHER],
@@ -660,6 +678,15 @@ describe('the taxonomy is the redeveloped specification', () => {
       // taxonomies, as Lithuanian and Polish do.
       latvian: 'latvian-',
       czech: 'czech-',
+      hungarian: 'hungarian-',
+      bulgarian: 'bulgarian-',
+      slovakian: 'slovakian-',
+      swedish: 'swedish-',
+      estonian: 'estonian-',
+      finnish: 'finnish-',
+      croatian: 'croatian-',
+      danish: 'danish-',
+      slovenian: 'slovenian-',
       // Classical Studies files its cards under the published Classical
       // Studies taxonomy itself, as French does — and under one further
       // strand, 'classical-studies-legacy-*', for the ten-topic syllabus the

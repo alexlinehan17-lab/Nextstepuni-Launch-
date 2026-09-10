@@ -299,6 +299,24 @@ SUBJECTS = {
     # and their asks are priced by the QUESTION PAPER, not by the scheme.
     'romanian': {'mode': 'sections', 'walker': 'eu'},
     'dutch': {'mode': 'sections', 'walker': 'eu'},
+    # The nine remaining non-curricular EU languages are Romanian's and
+    # Dutch's twins and read on the same walker: one booklet a year, one
+    # level, no Listening Comprehension Test, three parts numbered I, II and
+    # III (and only two in the 2021 and 2022 sittings), with the tariff
+    # printed on the QUESTION PAPER. Their parts are named in their own
+    # languages — "I. RÉSZ", "Първа част", "ČASŤ I", "Del I", "I ÜLESANNE",
+    # "I TEHTÄVÄ", "I. dio", "Opgave I", "1. DEL" — which is a line in
+    # eu_paper.LANGS and not a walker of their own. A citation reads
+    # "2024 HL Section I Q1(a)".
+    'hungarian': {'mode': 'sections', 'walker': 'eu'},
+    'bulgarian': {'mode': 'sections', 'walker': 'eu'},
+    'slovakian': {'mode': 'sections', 'walker': 'eu'},
+    'swedish': {'mode': 'sections', 'walker': 'eu'},
+    'estonian': {'mode': 'sections', 'walker': 'eu'},
+    'finnish': {'mode': 'sections', 'walker': 'eu'},
+    'croatian': {'mode': 'sections', 'walker': 'eu'},
+    'danish': {'mode': 'sections', 'walker': 'eu'},
+    'slovenian': {'mode': 'sections', 'walker': 'eu'},
     # Lithuanian, Latvian and Czech are the NON-CURRICULAR EU languages after
     # Polish (SEC subjects 550, 549 and 547) and share one reader, lt_paper /
     # lt_scheme, because they are one examination printed in three languages.
@@ -361,6 +379,31 @@ BACK_MATTER = re.compile(
 # Through xv, because a list can run that long: the Japanese kanji sections at
 # Ordinary print thirteen items and answer any ten, and a list that stopped at
 # xii reported a gap in a run that has none.
+# The alphabet a part letter may be printed in. Latin everywhere in this bank
+# but Bulgarian, whose paper letters Question 1's five expressions "а) б) в)
+# г) д)" — Cyrillic а to д, five letters that look like Latin ones and are
+# not. Checked against the Latin alphabet, all five reported a letter-gap in
+# every one of the seventeen Bulgarian sittings.
+LETTER_ALPHABETS = ('abcdefghijklmnopqrstuvwxyz',
+                    'абвгдежзийклмнопрстуфхцчшщъьюя')
+
+
+def _letter_run(letters):
+    """The run these letters would be if none were missing, in THEIR alphabet.
+
+    The alphabet is chosen by the letters themselves and the run still starts
+    at that alphabet's OWN first letter, so a Latin run that begins at "b" is
+    still a gap — the check is unchanged for every subject already shipped.
+    """
+    if not letters:
+        return []
+    first = min(letters)
+    for alpha in LETTER_ALPHABETS:
+        if first in alpha:
+            return list(alpha[:len(letters)])
+    return [chr(ord('a') + i) for i in range(len(letters))]
+
+
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii', 'xiii', 'xiv', 'xv']
 
@@ -506,7 +549,7 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
                 for roman in {k[-1] for k in here}:
                     letters = sorted({k[-2] for k in here
                                       if k[-1] == roman and k[-2]})
-                    expect = [chr(ord('a') + i) for i in range(len(letters))]
+                    expect = _letter_run(letters)
                     if letters and letters != expect:
                         flags.append({
                             'type': 'letter-gap',
@@ -515,7 +558,7 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
                 continue
             letters = sorted({k[-2] for k in here if k[-2]})
             if letters:
-                expect = [chr(ord('a') + i) for i in range(len(letters))]
+                expect = _letter_run(letters)
                 if letters != expect:
                     flags.append({'type': 'letter-gap',
                                   'where': f'{pre or ""} Q{q}',
@@ -2016,7 +2059,15 @@ def census_eu(subject, year, level):
     from eu_scheme import EuScheme                              # noqa: E402
 
     P = EuPaper(year, level, subject)
-    S = EuScheme(year, level, subject)
+    try:
+        S = EuScheme(year, level, subject)
+    except FileNotFoundError:
+        # THE DENOMINATOR IS THE PAPER. Danish 2010 and Slovenian 2022 are
+        # sittings the corpus holds a question paper for and no scheme, and
+        # dropping them would take ten and thirteen printed asks out of the
+        # count this bank measures itself against. The paper is censused; the
+        # asks are refused, one by one, in eu_all.
+        S = None
     texts = {ask.key: ask.full_text for ask in P.all_asks()}
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S
@@ -2696,7 +2747,11 @@ def census_subject(subject):
                 flags += pl_flags(P_, S_)
                 marks = {(None, 0): P_.cover_marks()}
             elif cfg.get('walker') == 'eu':
-                flags += eu_flags(P_, S_)
+                if S_ is not None:
+                    flags += eu_flags(P_, S_)
+                else:
+                    flags.append('no marking scheme published for this '
+                                 'sitting; the paper is censused alone')
                 # The examination was REBUILT in 2022: one 70-mark booklet sat
                 # at a single level became a 180-mark written paper at two
                 # levels with a 100-mark Listening Comprehension Test beside

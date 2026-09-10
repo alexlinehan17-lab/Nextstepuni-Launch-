@@ -282,6 +282,105 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/latvian',
     blocked: new Set(),
   },
+  hungarian: {
+    title: 'Hungarian',
+    /* Hungarian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See HUNGARIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-hungarian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Hungarian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Hungarian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/hungarian',
+    blocked: new Set(),
+  },
+  bulgarian: {
+    title: 'Bulgarian',
+    /* Bulgarian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See BULGARIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-bulgarian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Bulgarian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Bulgarian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/bulgarian',
+    blocked: new Set(),
+  },
+  slovakian: {
+    title: 'Slovakian',
+    /* Slovakian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SLOVAKIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-slovakian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Slovakian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Slovakian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/slovakian',
+    blocked: new Set(),
+  },
+  swedish: {
+    title: 'Swedish',
+    /* Swedish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SWEDISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-swedish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Swedish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Swedish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/swedish',
+    blocked: new Set(),
+  },
+  estonian: {
+    title: 'Estonian',
+    /* Estonian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See ESTONIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-estonian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Estonian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Estonian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/estonian',
+    blocked: new Set(),
+  },
+  finnish: {
+    title: 'Finnish',
+    /* Finnish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See FINNISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-finnish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Finnish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Finnish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/finnish',
+    blocked: new Set(),
+  },
+  croatian: {
+    title: 'Croatian',
+    /* Croatian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See CROATIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-croatian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Croatian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Croatian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/croatian',
+    blocked: new Set(),
+  },
+  danish: {
+    title: 'Danish',
+    /* Danish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See DANISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-danish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Danish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Danish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/danish',
+    blocked: new Set(),
+  },
+  slovenian: {
+    title: 'Slovenian',
+    /* Slovenian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SLOVENIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-slovenian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Slovenian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Slovenian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/slovenian',
+    blocked: new Set(),
+  },
   czech: {
     title: 'Czech',
     /* Czech, like Latvian, prints the old examination in every year of the

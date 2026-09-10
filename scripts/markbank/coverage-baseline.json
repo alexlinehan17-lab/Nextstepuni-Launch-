@@ -89,6 +89,21 @@
     },
     "refsHash": "2b9fe1cf969dd64a"
   },
+  "bulgarian": {
+    "cards": 141,
+    "contentHash": "19d141129fe89fa4",
+    "coveragePct": 100.0,
+    "covered": 141,
+    "excluded": 78,
+    "leaves": 219,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "4d409f9708da65de"
+    },
+    "refsHash": "98027c9761a7d3b1"
+  },
   "business": {
     "cards": 606,
     "contentHash": "9e450e8c7727014e",
@@ -164,6 +179,51 @@
     },
     "refsHash": "ab5312971b0e0217"
   },
+  "croatian": {
+    "cards": 70,
+    "contentHash": "1626bc9a24105001",
+    "coveragePct": 100.0,
+    "covered": 70,
+    "excluded": 97,
+    "leaves": 167,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 13,
+      "hash": "1b6552f0658d264b"
+    },
+    "refsHash": "94084f66e5f2aa38"
+  },
+  "czech": {
+    "cards": 15,
+    "contentHash": "6c302051f1a4dede",
+    "coveragePct": 100.0,
+    "covered": 75,
+    "excluded": 144,
+    "leaves": 219,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "325d56e0739fd63d"
+    },
+    "refsHash": "7013eb0f4ad094fa"
+  },
+  "danish": {
+    "cards": 79,
+    "contentHash": "bdee40da04ff574f",
+    "coveragePct": 100.0,
+    "covered": 79,
+    "excluded": 46,
+    "leaves": 125,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 13,
+      "hash": "d51ea34693abb0f0"
+    },
+    "refsHash": "b8748a474c6a2507"
+  },
   "dutch": {
     "cards": 42,
     "contentHash": "e9c0193ea33db730",
@@ -223,6 +283,36 @@
       "hash": "5a9e0ab3f863aa4f"
     },
     "refsHash": "9d6d1eb35ccbe04d"
+  },
+  "estonian": {
+    "cards": 107,
+    "contentHash": "72b058dd3ac09b0d",
+    "coveragePct": 100.0,
+    "covered": 107,
+    "excluded": 64,
+    "leaves": 171,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 15,
+      "hash": "be94459f5763acb6"
+    },
+    "refsHash": "3d27c9b51da457f1"
+  },
+  "finnish": {
+    "cards": 90,
+    "contentHash": "da84d2baef185349",
+    "coveragePct": 100.0,
+    "covered": 90,
+    "excluded": 77,
+    "leaves": 167,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 13,
+      "hash": "f03b7ec1b6337cd6"
+    },
+    "refsHash": "b09aab8adfbbe234"
   },
   "french": {
     "cards": 260,
@@ -298,6 +388,21 @@
       "hash": "6b57d840bf971638"
     },
     "refsHash": "d68011c4e1a644b2"
+  },
+  "hungarian": {
+    "cards": 168,
+    "contentHash": "c52d6a0ce676b831",
+    "coveragePct": 100.0,
+    "covered": 168,
+    "excluded": 51,
+    "leaves": 219,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "e3b0a73bce59703d"
+    },
+    "refsHash": "65d66ad3a304022c"
   },
   "irish": {
     "cards": 400,
@@ -524,6 +629,36 @@
     },
     "refsHash": "593a9b48a2ff7170"
   },
+  "slovakian": {
+    "cards": 140,
+    "contentHash": "b1158a5ae2100565",
+    "coveragePct": 100.0,
+    "covered": 140,
+    "excluded": 66,
+    "leaves": 206,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 16,
+      "hash": "98ac9e228b1556db"
+    },
+    "refsHash": "c23b4287c1b66666"
+  },
+  "slovenian": {
+    "cards": 23,
+    "contentHash": "d320fe895ee424e5",
+    "coveragePct": 100.0,
+    "covered": 23,
+    "excluded": 39,
+    "leaves": 62,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 5,
+      "hash": "e70003a7f221a331"
+    },
+    "refsHash": "718ba95fb160a884"
+  },
   "spanish": {
     "cards": 347,
     "contentHash": "67db6091348bf049",
@@ -539,6 +674,21 @@
     },
     "refsHash": "5da5beef5d9ac549"
   },
+  "swedish": {
+    "cards": 106,
+    "contentHash": "af1c71dc074a3ee3",
+    "coveragePct": 100.0,
+    "covered": 106,
+    "excluded": 78,
+    "leaves": 184,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 16,
+      "hash": "3f4a29c9d6671847"
+    },
+    "refsHash": "0a17b493ee50fa15"
+  },
   "technology": {
     "cards": 716,
     "contentHash": "4d55bc81fece955d",
@@ -553,20 +703,5 @@
       "hash": "4ca9c323b2270a38"
     },
     "refsHash": "54274e7e363d8dc6"
-  },
-  "czech": {
-    "cards": 15,
-    "contentHash": "6c302051f1a4dede",
-    "coveragePct": 100.0,
-    "covered": 75,
-    "excluded": 144,
-    "leaves": 219,
-    "open": 0,
-    "orphans": 0,
-    "papers": {
-      "count": 17,
-      "hash": "325d56e0739fd63d"
-    },
-    "refsHash": "7013eb0f4ad094fa"
   }
 }

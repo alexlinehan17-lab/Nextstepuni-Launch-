@@ -144,5 +144,32 @@
  },
  "modern-greek": {
   "higher": 79
+ },
+ "hungarian": {
+  "higher": 168
+ },
+ "bulgarian": {
+  "higher": 141
+ },
+ "slovakian": {
+  "higher": 140
+ },
+ "swedish": {
+  "higher": 106
+ },
+ "estonian": {
+  "higher": 107
+ },
+ "finnish": {
+  "higher": 90
+ },
+ "croatian": {
+  "higher": 70
+ },
+ "danish": {
+  "higher": 79
+ },
+ "slovenian": {
+  "higher": 23
  }
 }

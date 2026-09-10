@@ -46,12 +46,17 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, DIR)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
-from eu_paper import EuPaper, bag, score, sittings, LANGS       # noqa: E402
+from eu_paper import (EuPaper, bag, score, sittings, LANGS,      # noqa: E402
+                      MARK_WORD as EU_MARK_WORD)
 from eu_scheme import EuScheme, pairs_by_question               # noqa: E402
 from eu_topics import (topic_for, concept_for, answer_language,  # noqa: E402
                        language_note, LANGUAGE_NAME)
 from paper_census import census_subject, key_label              # noqa: E402
 import cardlint                                                 # noqa: E402
+
+# The word a mark is printed in, in the twelve languages this reader serves.
+# Read from eu_paper so the two files cannot drift apart.
+PAPER_MARK_WORDS = EU_MARK_WORD.split('|')
 
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
@@ -64,7 +69,12 @@ MAX_OPTIONS = 16
 # corpus, exactly as the Polish reader's was.
 MIN_AGREEMENT = 0.34
 # An id prefix per subject, so two subjects on one reader never collide.
-PREFIX = {'portuguese': 'por', 'romanian': 'ron', 'dutch': 'nld'}
+PREFIX = {'portuguese': 'por', 'romanian': 'ron', 'dutch': 'nld',
+          # ISO 639-2/B, as the first three are: one three-letter code per
+          # subject, so no two of the twelve on this reader can collide.
+          'hungarian': 'hun', 'bulgarian': 'bul', 'slovakian': 'slk',
+          'swedish': 'swe', 'estonian': 'est', 'finnish': 'fin',
+          'croatian': 'hrv', 'danish': 'dan', 'slovenian': 'slv'}
 
 
 def card_id(subject, year, level, key):
@@ -148,6 +158,130 @@ ESSAY_CLASSIC_EVIDENCE = {
         'no indicative content and no tariff beside any line of it.'),
 }
 
+# ---------------------------------------------------------- provenance ----
+# A mirror of schemeText.mjs's `normalise`, character for character: lower
+# case, the dash forms folded, and everything that is not a letter or a digit
+# of the three alphabets this bank ships in thrown away.
+_PROV_DASH = re.compile('[\u2010-\u2015]')
+_PROV_DROP = re.compile('[^a-z0-9\u0100-\u017f\u0400-\u04ff]+')
+# The tariff cell the SEC sets BETWEEN a reprinted question and its answer, in
+# every language on this reader. schemeText.mjs strips the same forms as an
+# added comparison form; stripped here so the two files agree.
+_PROV_TARIFF = re.compile(
+    r'\(?\s*\d{1,3}\s*(?:[x×*]\s*\d{1,2}\s*)?'
+    r'(?:pontot|pont|точки|точка|bodova|bodov|bodu|body|bod|po[äa]ng|punkti|'
+    r'punkt|pistett[äa]|point|to[čc]ke|to[čc]ka|to[čc]k|puncte|punct|punten|'
+    r'punt|pontos|ponto|marks?|p)\.?\s*\)?', re.I)
+_PROV_CACHE = {}
+
+
+def _prov_norm(text):
+    return _PROV_DROP.sub('', _PROV_DASH.sub('-', text or '').lower())
+
+
+_PROV_MARKS_CELL = re.compile(r'⟨[^⟩]*⟩')
+_PROV_PAGE_MARKER = re.compile(r'^##\s*Page\s*\d+\s*$', re.M)
+_PROV_PAGE_FOOTER = re.compile(r'\d+\s*\|\s*P\s*a\s*g\s*e')
+_PROV_MARKS_ONLY = re.compile(r'^\s*\d+\s*(\(\s*\d+\s*\))?\s*$')
+_PROV_LABEL_ONLY = re.compile(r'^\s*\(?\s*([ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s*$',
+                              re.I)
+_PROV_LEADING_LABEL = re.compile(
+    r'^\s*\(\s*(?:[ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s+(?=\S)', re.I | re.M)
+_PROV_INLINE_ASIDE = re.compile(
+    r'\[[^\]]*\]|\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m|marks?)\s*\)', re.I)
+
+
+def _scheme_haystack(subject, year, level):
+    """The scheme markdown the PROVENANCE GATE reads, in its comparable forms.
+
+    Not this directory's own reader and not the PDF: `build-deck.mjs` compares
+    every marking point against `examiner-reports/<subject>/schemes/<year>-
+    <level>.md`, and a point it cannot find there is DROPPED — silently, from
+    the deck, after the ledger has already counted it as carded. So the check
+    is made here, against the same file and through the same comparison forms
+    schemeText.mjs builds, and an ask that cannot be traced becomes a named
+    refusal with an exclusions entry instead. That is the difference between a
+    reconciliation that closes and nineteen cards reported open forever.
+
+    The mirror is deliberately no STRICTER than the gate. It reproduces the
+    forms that matter to this family — the marks-only and label-only lines the
+    gate drops, the leading part label, the bracketed aside and the
+    language tariff cell — and it is applied only to the nine subjects added
+    with it, so a form it has not learned cannot take a card away from a deck
+    that already ships.
+    """
+    key = (subject, year, level)
+    if key not in _PROV_CACHE:
+        path = os.path.join(ROOT, 'examiner-reports', subject, 'schemes',
+                            f'{year}-{level}.md')
+        raw = ''
+        if os.path.exists(path):
+            with open(path, encoding='utf-8') as fh:
+                raw = fh.read()
+        raw = _PROV_PAGE_FOOTER.sub(' ', _PROV_PAGE_MARKER.sub(
+            ' ', _PROV_MARKS_CELL.sub(' ', raw)))
+        lines = [l for l in raw.split('\n')
+                 if not _PROV_MARKS_ONLY.match(l)
+                 and not _PROV_LABEL_ONLY.match(l)]
+        joined = ' '.join(lines)
+        forms = [joined,
+                 ' '.join(_PROV_LEADING_LABEL.sub('', l) for l in lines),
+                 _PROV_TARIFF.sub(' ', joined),
+                 _PROV_INLINE_ASIDE.sub(' ', joined),
+                 _PROV_TARIFF.sub(' ', _PROV_LEADING_LABEL.sub('', joined))]
+        _PROV_CACHE[key] = '|'.join(_prov_norm(f) for f in forms)
+    return _PROV_CACHE[key]
+
+
+def _untraceable(subject, year, level, rows):
+    """The rows whose words are not in that .md, in printed order."""
+    if subject in ('portuguese', 'romanian', 'dutch'):
+        # The three subjects this reader shipped before the mirror existed.
+        # Their decks are already checked by the gate itself and re-checking
+        # them through a mirror that has learned fewer forms would take cards
+        # off a shipped deck for a reason the gate does not hold.
+        return []
+    hay = _scheme_haystack(subject, year, level)
+    if not hay.strip('|'):
+        return []
+    out = []
+    for row in rows:
+        for text in ([row['verbatim']] if row.get('verbatim') else
+                     [o['text'] for o in (row.get('group') or {}).get(
+                         'options', [])]):
+            needle = _prov_norm(text)
+            if needle and needle not in hay:
+                out.append(text)
+    return out
+
+
+def _essay_evidence(subject, scheme):
+    """Why this written-production task cannot be carded, in the SEC's words.
+
+    Three subjects have a hand-checked sentence each (above). For the nine
+    added in September 2026 the evidence is GENERATED from the scheme reader,
+    so what the ledger quotes is the printed line and not a description of it
+    — the rule the History exclusions established. Every one of those nine
+    prices its second and third parts by the same table of four qualities
+    against percentages, and that table is what comes back here.
+    """
+    fixed = ESSAY_CLASSIC_EVIDENCE.get(subject)
+    if fixed:
+        return fixed
+    quote = scheme.grid_quote()
+    if quote:
+        return ('the scheme prices this task by PERCENTAGES of qualities, not '
+                'by marking points, and prints no answer under it. Its own '
+                f'printed criteria read: "{quote}". Those are the qualities '
+                'of a piece of writing; where the scheme goes on to print '
+                'prose under the task it is a model an examiner reads as an '
+                'example, priced nowhere.')
+    return ('the scheme prints NOTHING under this task beyond the SEC\'s own '
+            'wording and, where the paper offers two titles, the titles. '
+            'There is no answer, no indicative content and no tariff beside '
+            'any line of it.')
+
+
 AUDIO_EVIDENCE = (
     'the ask can only be answered from the recording. The Listening '
     'Comprehension Test is a separate SEC booklet (component A00) whose own '
@@ -186,7 +320,24 @@ def build(subject):
 
     for year, level in sittings(subject):
         P = EuPaper(year, level, subject)
-        S = EuScheme(year, level, subject)
+        try:
+            S = EuScheme(year, level, subject)
+        except FileNotFoundError:
+            # A sitting whose PAPER the corpus holds and whose SCHEME it does
+            # not — Danish 2010 and Slovenian 2022, and nothing else in the
+            # twelve subjects on this reader. The asks are still the paper's,
+            # so they stay in the denominator and are refused one by one with
+            # that as the evidence; dropping the sitting would shrink the
+            # count this bank measures itself against.
+            for ask in P.all_asks():
+                refuse('the SEC published no marking scheme for this sitting',
+                       question_ref(year, level, ask.key),
+                       f'{year} {level.upper()}: the corpus holds this '
+                       f'sitting\'s question paper and no marking scheme for '
+                       f'it. Nothing this bank ships is written rather than '
+                       f'lifted, so an ask whose answer the SEC never '
+                       f'published cannot be carded.')
+            continue
         # Law 4: the address is tried and then CHECKED, question by question,
         # and where it does not hold the two documents are joined in printed
         # order — with every pair scored on wording below.
@@ -208,7 +359,7 @@ def build(subject):
                 refuse('the scheme prices no line of this written-production '
                        'task', ref,
                        f'{stamp} scheme, Part {section}: '
-                       f'{ESSAY_CLASSIC_EVIDENCE[subject]}')
+                       f'{_essay_evidence(subject, S)}')
                 continue
             if section == 'B':
                 refuse('the scheme prints a content-and-language band grid '
@@ -374,6 +525,15 @@ def _reading(P, S, priced, ask, subject, year, level, ref, cards, refuse,
                f'{stamp} scheme, {notation} over {len(answers)} stated '
                f'answer(s) for "{sch.cue[:80]}"')
         return
+    untraceable = _untraceable(subject, year, level, rows)
+    if untraceable:
+        refuse('the scheme markdown the provenance gate reads does not hold '
+               'this answer as one run of words', ref,
+               f'{stamp} scheme, "{sch.cue[:80]}": "{untraceable[0][:110]}" '
+               f'is not found in examiner-reports/{subject}/schemes/'
+               f'{year}-{level}.md, which is the file the deck build checks '
+               f'every marking point against')
+        return
     claimed = sum(r['group']['claimMax'] * r['group']['perOption']
                   if r.get('group') else (r['marks'] or 0) for r in rows)
     if claimed != total:
@@ -436,9 +596,15 @@ FOLD_ALNUM = re.compile(r'[^0-9a-zà-öø-ÿăâîșțşţ]+', re.I)
 # copies with it when it reprints the question on one row.
 ANSWER_LABEL = re.compile(
     r'^\s*(?:Antwoord|R[ăa]spuns|Resposta|Answer)\s*:\s*', re.I)
+# The price the SEC prints between a reprinted question and the answer to it,
+# in every language on this reader — and the mark WORD is optional, because
+# nine of the twelve print the bare bracket: the Estonian scheme sets
+# '„Suhkru jätkuvalt hea maine taga…“. Miks see nii on? (5) Sellepärast, et…'
+# as one row, and a pattern that required the word left the question standing
+# as the first thing a student was offered to claim.
 INLINE_PRICE = re.compile(
-    r'\(\s*(?:\d{1,2}\s*[x×]\s*)?\d{1,3}\s*'
-    r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark)\s*\)', re.I)
+    r'[(\[]\s*(?:\d{1,2}\s*[x×*]\s*)?\d{1,3}\s*'
+    r'(?:' + '|'.join(PAPER_MARK_WORDS) + r')?\s*[)\]]', re.I)
 
 
 def _is_reprint(text, paper_text):

@@ -317,6 +317,34 @@ export const claimMatches = (scheme, claim) => {
   return collapsed.includes(collapseTT(c));
 };
 
+/**
+ * The tariff cell an SEC scheme prints IN THE MIDDLE of what it is pricing, in
+ * a language whose word for a mark is not "mark".
+ *
+ * The nine non-curricular EU languages carded in September 2026 set the
+ * reprinted question, then the price on a line of its own, then the answer:
+ *
+ *     2. Hány hajó közlekedik esténként a Duna belvárosi szakaszán átlagosan?
+ *     (5 pont)
+ *     Válasz a 4. bekezdésben: A Duna belvárosi szakaszán esténként átlagosan
+ *
+ * so a card quoting the answer alone cannot be found in the scheme it was
+ * lifted from — the price sits between the halves once the lines are joined.
+ * Bulgarian prints the same cell without a bracket ("5 точки") and Finnish
+ * abbreviates it ("5p."), and both land in the same place.
+ *
+ * Stripped as an ADDED form, for the reason ORDINAL_TARIFF and INLINE_ASIDE
+ * are: a fold applied to both sides is symmetric and a symmetric fold has cost
+ * a card before, while an added form can only ever let more of the SEC's own
+ * text through. No claim ever contains a tariff cell — the authoring scripts
+ * take the price off before the row is written.
+ */
+const LANGUAGE_TARIFF = new RegExp(
+  String.raw`\(?\s*\d{1,3}\s*(?:[x×*]\s*\d{1,2}\s*)?`
+  + `(?:pontot|pont|точки|точка|bodova|bodov|bodu|body|bod|po[äa]ng|punkti|`
+  + `punkt|pistett[äa]|point|to[čc]ke|to[čc]ka|to[čc]k|puncte|punct|punten|`
+  + `punt|pontos|ponto|marks?|p)\\.?\\s*\\)?`, 'gi');
+
 export const comparableScheme = (raw) => {
   const sourceLines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
     .split('\n');
@@ -345,6 +373,7 @@ export const comparableScheme = (raw) => {
     normalise(foldOriya(joined)),
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
     normalise(joined.replace(INLINE_ASIDE, ' ')),
+    normalise(joined.replace(LANGUAGE_TARIFF, ' ')),
     normalise(repairGlyphs(joined)),
     normalise(sourceLines.map((l) => l.replace(MARKS_COLUMN, ''))
       .filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l)).join(' ')),

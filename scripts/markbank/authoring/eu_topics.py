@@ -63,6 +63,65 @@ TOPICS = {
         'classic_essay': 'dutch-1-0',
         'classic_essay2': 'dutch-1-1',
     },
+    # The nine remaining non-curricular EU languages are classic-only and
+    # their published taxonomies name the classic paper's parts one for one:
+    # a vocabulary question, a set of comprehension questions, the commentary
+    # and — added with this wave, as Romanian's and Dutch's third part was —
+    # the essay of Part III.
+    'hungarian': {
+        'classic_vocab': 'hungarian-0-0',
+        'classic_reading': 'hungarian-0-1',
+        'classic_essay': 'hungarian-1-0',
+        'classic_essay2': 'hungarian-1-1',
+    },
+    'bulgarian': {
+        'classic_vocab': 'bulgarian-0-0',
+        'classic_reading': 'bulgarian-0-1',
+        'classic_essay': 'bulgarian-1-0',
+        'classic_essay2': 'bulgarian-1-1',
+    },
+    'slovakian': {
+        'classic_vocab': 'slovakian-0-0',
+        'classic_reading': 'slovakian-0-1',
+        'classic_essay': 'slovakian-1-0',
+        'classic_essay2': 'slovakian-1-1',
+    },
+    'swedish': {
+        'classic_vocab': 'swedish-0-0',
+        'classic_reading': 'swedish-0-1',
+        'classic_essay': 'swedish-1-0',
+        'classic_essay2': 'swedish-1-1',
+    },
+    'estonian': {
+        'classic_vocab': 'estonian-0-0',
+        'classic_reading': 'estonian-0-1',
+        'classic_essay': 'estonian-1-0',
+        'classic_essay2': 'estonian-1-1',
+    },
+    'finnish': {
+        'classic_vocab': 'finnish-0-0',
+        'classic_reading': 'finnish-0-1',
+        'classic_essay': 'finnish-1-0',
+        'classic_essay2': 'finnish-1-1',
+    },
+    'croatian': {
+        'classic_vocab': 'croatian-0-0',
+        'classic_reading': 'croatian-0-1',
+        'classic_essay': 'croatian-1-0',
+        'classic_essay2': 'croatian-1-1',
+    },
+    'danish': {
+        'classic_vocab': 'danish-0-0',
+        'classic_reading': 'danish-0-1',
+        'classic_essay': 'danish-1-0',
+        'classic_essay2': 'danish-1-1',
+    },
+    'slovenian': {
+        'classic_vocab': 'slovenian-0-0',
+        'classic_reading': 'slovenian-0-1',
+        'classic_essay': 'slovenian-1-0',
+        'classic_essay2': 'slovenian-1-1',
+    },
 }
 
 
@@ -81,7 +140,17 @@ def topic_for(subject, era, section, letter=None):
 
 
 LANGUAGE_NAME = {'portuguese': 'Portuguese', 'romanian': 'Romanian',
-                 'dutch': 'Dutch'}
+                 'dutch': 'Dutch',
+                 'hungarian': 'Hungarian',
+                 'bulgarian': 'Bulgarian',
+                 'slovakian': 'Slovakian',
+                 'swedish': 'Swedish',
+                 'estonian': 'Estonian',
+                 'finnish': 'Finnish',
+                 'croatian': 'Croatian',
+                 'danish': 'Danish',
+                 'slovenian': 'Slovenian',
+                 }
 # A subject whose paper requires EVERY answer in the target language, in
 # its own printed rubric — "Toate răspunsurile trebuie scrise în limba
 # română", "Alle antwoorden moeten in het Nederlands gegeven worden". The
@@ -91,6 +160,17 @@ LANGUAGE_NAME = {'portuguese': 'Portuguese', 'romanian': 'Romanian',
 ONE_LANGUAGE = {
     'romanian': 'Toate răspunsurile trebuie scrise în limba română.',
     'dutch': 'Alle antwoorden moeten in het Nederlands gegeven worden.',
+    # All nine of the remaining non-curricular EU languages print the same
+    # rule on the first page of their own booklet, in their own language.
+    'hungarian': 'Válaszoljon érthetően magyarul az I., II. és III. részben feltett kérdésekre!',
+    'bulgarian': 'Всички отговори трябва да бъдат написани на български език.',
+    'slovakian': 'Všetky odpovede musia byť napísané po slovensky.',
+    'swedish': 'Alla svar måste vara skrivna på svenska.',
+    'estonian': 'Kõikidele ülesannetele tuleb vastata eesti keeles.',
+    'finnish': 'Vastaa kaikkiin kolmeen tehtävään suomeksi.',
+    'croatian': 'Svi odgovori moraju biti na hrvatskome jeziku.',
+    'danish': 'Alle svar skal skrives på dansk.',
+    'slovenian': 'Vsi odgovori morajo biti v slovenščini.',
 }
 ENGLISH_OR_IRISH = 'English or Irish'
 
@@ -101,6 +181,16 @@ ENGLISH_OR_IRISH = 'English or Irish'
 TARGET_WORDS = {
     'romanian': set(),
     'dutch': set(),
+    'hungarian': set(),
+    'bulgarian': set(),
+    'slovakian': set(),
+    'swedish': set(),
+    'estonian': set(),
+    'finnish': set(),
+    'croatian': set(),
+    'danish': set(),
+    'slovenian': set(),
+
     'portuguese': {
         'que', 'qual', 'quais', 'quem', 'onde', 'quando', 'porque', 'por',
         'razão', 'razões', 'como', 'descreva', 'indique', 'explique', 'dê',

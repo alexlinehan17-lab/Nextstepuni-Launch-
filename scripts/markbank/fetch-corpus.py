@@ -191,6 +191,35 @@ SUBJECTS = {
     # Listening Comprehension booklet, only component '000'. Language letter
     # 'E'. The corpus runs 2010-2026 with 2020 absent: 16 papers, 16 schemes.
     'modern-greek': 'modern-greek',
+    # Added 10 September 2026. The nine remaining NON-CURRICULAR EU languages.
+    # The corpus listing answers their shape before a PDF is opened and it is
+    # the SAME shape for all nine: every file id carries the level letter 'A'
+    # and ONLY 'A' (there is no Ordinary paper in any year of any of them),
+    # component '000' and ONLY '000' (no Listening Comprehension Test booklet
+    # 'A00' in any year — unlike Polish, Portuguese and Lithuanian, none of
+    # these nine went through the 2022 rebuild), and the language letter 'E'
+    # (separate English and Irish editions, not the bilingual 'B' booklet the
+    # curricular modern languages print). So one file a year, at one level, is
+    # the corpus being COMPLETE for these subjects, not a fetch failure.
+    #
+    # The corpus runs 2010-2026 rather than the default 2021-2025 window, so
+    # --from/--to is passed; the older sittings are the same examination.
+    # Papers on disk: Hungarian 17 (2010-2026), Bulgarian 17 (2010-2026),
+    # Slovakian 16 (2020 absent), Swedish 16 (2020 absent), Estonian 15
+    # (2010-2025, 2020 absent), Finnish 13 (2017, 2020, 2021 absent),
+    # Croatian 13 (2014-2026 — the subject is not examined before 2014),
+    # Danish 13 (2013, 2017*, 2020, 2021 absent from the regular run;
+    # *2017 IS published, under a malformed file id — see FILEID), Slovenian 5
+    # (2018, 2019, 2022, 2023, 2024 only).
+    'hungarian': 'hungarian',
+    'bulgarian': 'bulgarian',
+    'slovakian': 'slovakian',
+    'swedish': 'swedish',
+    'estonian': 'estonian',
+    'finnish': 'finnish',
+    'croatian': 'croatian',
+    'danish': 'danish',
+    'slovenian': 'slovenian',
 }
 
 # A subject the SEC sets as TWO papers on the same afternoon, one of which a
@@ -229,7 +258,12 @@ FIELDS = {
 # every image question on that paper depends on was simply absent, with no
 # error. A four-digit component is read and its leading zero dropped, which is
 # what the SEC means by it; nothing else in the corpus matches the wider form.
-FILEID = re.compile(r'^LC(\d{3})([ACG])LP([0-9A-Z]{3,4})([EIB])V\.pdf$', re.I)
+# The 'LP' is not always 'LP' either. Danish 2017 publishes its only paper as
+# LC038AP000EV.pdf, with the L dropped, and a strict 'LP' skipped it in
+# silence — the corpus holds thirteen Danish sittings and the fetch reported
+# twelve, with no error. The L is optional here; nothing else in the corpus
+# depends on it being present, and every well-formed id still matches.
+FILEID = re.compile(r'^LC(\d{3})([ACG])L?P([0-9A-Z]{3,4})([EIB])V\.pdf$', re.I)
 WANTED_LANGS = {'E', 'B'}
 # 'C' is not a third grade of difficulty: it is the SEC's marker for a subject
 # examined at ONE level. Without it here every LCVP file failed the match and

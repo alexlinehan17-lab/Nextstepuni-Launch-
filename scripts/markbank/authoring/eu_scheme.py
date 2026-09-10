@@ -55,7 +55,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 from markbank_text import unligature                            # noqa: E402
 from eu_paper import (LANGS, cfg, next_letter,                   # noqa: E402
-                      LETTER_COLON)
+                      LETTER_COLON, letter_pattern, letters_for)
 
 
 def schemes_dir(subject):
@@ -249,6 +249,27 @@ NOTE = re.compile(r'^(?:Note?[ăa]?\s*:|N\.?B\.?\b|Accept\b|Allow\b|Penali[sz]e\
 # — is the tail of the reprinted question, not an answer.
 REF_ONLY = re.compile(r'^\((?:par[áa]grafos?|paragraphs?|parte|part|'
                       r'alinea|alínea|sections?)\b[^)]*\)$', re.I)
+# A row that is ONLY a part's own share of the paper — "(30 pont / 100 pont)",
+# "(40/100)". The SEC prints that cell against a part head and nowhere else,
+# so where the head itself is missing the cell is what says the part changed:
+# the 2020 Hungarian scheme heads its first part with a bare "I" and its
+# second and third with no banner at all, only this cell, and read without it
+# Part II's model commentary and Part III's essay titles shipped inside the
+# answer to Question 6.
+# The sentence that introduces the criteria table the written parts are
+# marked by. It is printed at the END of Part I in nine of the twelve subjects
+# on this reader — "A II. és III. részben elérhető pontok az alábbi szempontok
+# szerint oszlanak meg:", "II ja III ülesande hindamisel arvestatakse
+# järgmisi kriteeriume:" — and everything after it belongs to no ask, so read
+# without it the last question of the sitting shipped the whole grid inside
+# its answer. Recognised two ways, both printed: a line that NAMES the later
+# parts and ends in a colon, and a criterion line whose percentage is
+# introduced by a dash. A percentage inside an answer ("A diplomások 41%-a")
+# has neither.
+CRITERIA_PERCENT = re.compile(r'[\u2013\u2014\-:]\s*\d{1,3}\s*%')
+PART_PRICE_ONLY = re.compile(
+    r'^[(\[]\s*(\d{1,3})\s*\w*\s*/\s*(\d{1,3})\s*\w*\s*[)\]]$')
+PART_ORDER = ['I', 'II', 'III']
 # The classic scheme's own head, which prices a PART and nothing under it.
 CLASSIC_PART = re.compile(
     r'^(?:Parte|PARTEA|Deel)\s+(I{1,3}|a\s*I{1,2}I?\s*[-‐–]\s*a|[123])\b',
@@ -355,6 +376,9 @@ class EuScheme:
         self.rows = read_rows(self.path)
         self.grid_lines = []
         self.question_totals = {}       # (section, q) -> the head's own total
+        # The alphabet this subject's markers are set in — Latin everywhere
+        # but Bulgarian, whose Question 1 is lettered "а) б) в) г) д)".
+        self.first_letter = letters_for(subject)[0]
         self.era = 'modern' if self._has_units() else 'classic'
         self.letter_x = self._letter_column()
         self.answer_x = self._answer_column()
@@ -571,7 +595,8 @@ class EuScheme:
                 marker = ('roman', rm.group(1).lower(), rm.group(2))
             elif lm and unit == 'A' \
                     and (row.x <= column + LETTER_TOL
-                         or lm.group(1).lower() == next_letter(letter)):
+                         or lm.group(1).lower() == next_letter(
+                             letter, self.first_letter)):
                 marker = ('letter', lm.group(1).lower(), lm.group(2))
             # A marker that REPEATS the one before it is the SEC misnumbering,
             # not a new ask: 2022 Ordinary prints Question 1(f) as "(i) (ii)
@@ -631,11 +656,27 @@ class EuScheme:
         current = None
         broke = False
         noted = False
+        # Whether the row just read was a part head, and how many bare part
+        # price cells have opened a part so far — see PART_PRICE_ONLY.
+        headed = False
+        seen_prices = 0
         # The Dutch scheme letters its first question's parts with a COLON,
         # exactly as its paper does — "a: 'Het' in de zin:" — so the two
         # documents are read with the same marker form or they do not pair.
-        letter_pat = (LETTER_COLON if cfg(self.subject, 'letter') == 'colon'
-                      else LETTER)
+        # The same is true of Hungarian's comma, Finnish's full stop and
+        # Bulgarian's Cyrillic alphabet: one table in eu_paper.LANGS decides
+        # the form for BOTH documents, which is what makes the pair possible.
+        letter_pat = letter_pattern(self.subject)
+        # The part head, in this subject's own language. Nine of the twelve
+        # subjects on this reader head their parts in words CLASSIC_PART does
+        # not know — "I. RÉSZ", "Първа част", "ČASŤ I", "Del I", "I ÜLESANNE",
+        # "I TEHTÄVÄ", "I. dio", "Opgave I", "1. DEL" — and their schemes head
+        # them the same way their papers do, so the paper's own pattern is
+        # what is read here.
+        own = (cfg(self.subject, 'scheme_part')
+               or cfg(self.subject, 'classic_part'))
+        part_pat = (re.compile(own, re.I) if own and self.subject not in
+                    ('portuguese', 'romanian', 'dutch') else CLASSIC_PART)
 
         def close():
             nonlocal current
@@ -647,12 +688,39 @@ class EuScheme:
             text = row.text
             if PAGE_ONLY.match(text) or FURNITURE.match(text):
                 continue
-            pm = CLASSIC_PART.match(text)
+            pm = part_pat.match(text)
+            if pm is None and len(text) < 40:
+                # A head the SEC LETTERSPACED — see eu_paper._walk_classic,
+                # which reads the same heads out of the question paper.
+                pm = part_pat.match(re.sub(r'\s+', '', text))
             if pm:
                 close()
-                part = _classic_part_token(pm.group(1))
+                token = next((g for g in pm.groups() if g), None)
+                part = ((cfg(self.subject, 'classic_part_map') or {})
+                        .get((token or '').lower())
+                        or _classic_part_token(token or ''))
+                q, letter = None, None
+                headed = True
+                continue
+            if part == 'I' and len(text) > 25 \
+                    and (CRITERIA_PERCENT.search(text)
+                         or (text.rstrip().endswith(':')
+                             and part_pat.search(text))):
+                close()
+                noted = True
+                continue
+            if PART_PRICE_ONLY.match(text):
+                # The cell belongs to the head above it wherever the SEC
+                # printed one; only where it stands alone does it open a part.
+                if headed:
+                    headed = False
+                    continue
+                close()
+                seen_prices += 1
+                part = PART_ORDER[min(seen_prices - 1, len(PART_ORDER) - 1)]
                 q, letter = None, None
                 continue
+            headed = False
             if part is None:
                 continue
             if part != 'I':
@@ -682,7 +750,8 @@ class EuScheme:
                     current.answers.append({'text': rest, 'marks': None})
                 continue
             if lm and q is not None \
-                    and lm.group(1).lower() == next_letter(letter):
+                    and lm.group(1).lower() == next_letter(
+                        letter, self.first_letter):
                 close()
                 noted = False
                 letter = lm.group(1).lower()
@@ -728,12 +797,25 @@ class EuScheme:
         return _leaves(self._asks)
 
     def grid_quote(self, limit=6):
-        """The band grid, in the SEC's own words, for the exclusion evidence."""
+        """The band grid, in the SEC's own words, for the exclusion evidence.
+
+        Two shapes, and both are the scheme's own printed lines rather than
+        anything written here. Portuguese prints an English band grid; the
+        nine non-curricular languages added in September 2026 print a table
+        of four QUALITIES against percentages in their own language —
+        "1. Megértés – A válaszadó megérti a kérdéseket… – 30%", "3. Nyelvi
+        képesség… – 30%", "4. Nyelvhelyesség – Nyelvi és helyesírási
+        szabályok. – 10%" — which says the same thing and is what the
+        exclusions ledger for those subjects quotes.
+        """
         wanted = [t for t in self.grid_lines
                   if re.search(r'Very\s+good|coherence|communicative\s+task|'
                                r'range\s+of\s+vocabulary|register|'
                                r'TOP\b|MIDDLE\b|BOTTOM\b|Content\s+and',
                                t, re.I)]
+        if not wanted:
+            wanted = [t for t in self.grid_lines
+                      if re.search(r'\d{1,3}\s*%', t) and len(t) > 12]
         return ' · '.join(w[:120] for w in wanted[:limit])
 
 

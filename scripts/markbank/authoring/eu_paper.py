@@ -144,6 +144,223 @@ LANGS = {
         'rubric': (r'^(?:Vragen\b|Beantwoord\b|Lees\b|Schrijf\b|'
                    r'Alle\s+antwoorden\b|Geef\s+je\s+eigen)'),
     },
+    # ---------------------------------------------------------------------
+    # The nine remaining non-curricular EU languages, added 10 September 2026.
+    # Every one of them is the CLASSIC examination and nothing else — there is
+    # no 2022 rebuild here, no second level and no Listening Comprehension
+    # Test — so only `_walk_classic` is ever entered for them, and only the
+    # classic knobs below are read. What the corpus shows, before any of it is
+    # believed: one booklet a year, file letter 'A', component '000'.
+    #
+    # The examination itself is ONE paper printed in nine languages:
+    #
+    #     PART I    (30/100)  six questions on one printed text, the first of
+    #                         them five expressions a) to e) priced "(5 × 1)"
+    #     PART II   (30/100)  a commentary of 100-150 words
+    #     PART III  (40/100)  an essay of about 300 words, two titles offered
+    #
+    # and in the 2021 and 2022 sittings the commentary is dropped, leaving
+    # PART I (30/70) and PART II (40/70) — which is why the part token is read
+    # from the page and never from the year.
+    #
+    # Only PART I is answered with stated content. Parts II and III are
+    # answered by the same four-quality percentage grid in all nine languages
+    # ("Megértés – 30%", "Coherence – 30%", "Nyelvhelyesség – 10%"), which is
+    # the shape of a piece of writing and not an answer; they are excluded
+    # with that grid as the evidence, exactly as Romanian's and Dutch's are.
+    'hungarian': {
+        'name': 'Hungarian',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "I. RÉSZ", "II. RÉSZ", "III. RÉSZ".
+        'classic_part': r'^(I{1,3})\s*\.?\s*R[ÉE]SZ\b',
+        # The 2020 booklet sets "I." and "RÉSZ" in two cells of one printed
+        # row, and read as separate lines neither is a part head: that sitting
+        # censused zero asks until the two were joined.
+        'classic_part_tail': r'^R[ÉE]SZ\b',
+        # The 2020 SCHEME drops the word altogether and heads its first part
+        # "I (30 pont / 100 pont)". A bare Roman numeral is a head only when
+        # the part's own price is printed beside it, which is what separates
+        # it from the "I." of a numbered list.
+        'scheme_part': (r'^(I{1,3})\s*\.?\s*(?:R[ÉE]SZ\b|'
+                        r'\(\s*\d{1,3}\s*pont)'),
+        'classic_part_map': {},
+        # The essay titles Part III offers, which the SEC numbers "1." and
+        # "2." — and, in the scheme, "1. lehetőség".
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        # Hungarian letters the parts of Question 1 with a COMMA — "a," — and
+        # not a bracket. See LETTER_COMMA.
+        'letter': 'comma',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Hungarian\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Forr[áa]s\s*:|Adapt[áa]ci[óo]|[-–—]\s*\w+.*(?:HVG|adapt))',
+        'rubric': (r'^(?:V[áa]laszoljon\b|Olvassa\s+el\b|[ÍI]rjon\b|'
+                   r'Kommentálja\b|Fejtse\s+ki\b|Minden\s+v[áa]laszt\b)'),
+    },
+    'bulgarian': {
+        'name': 'Bulgarian',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "Първа част", "Втора част", "Трета част" — the ordinal is a word.
+        # The ordinal is a WORD, and the SEC prints it on either side of
+        # the noun: "Първа част" up to 2020 and "Част първа" in 2021 and 2022.
+        # Both orders are read, and the space between them is optional because
+        # four sittings letterspace the head — 2011 sets it "Пъ рва час т" —
+        # and the walker retries a short head with its spaces squeezed out.
+        'classic_part': (r'^(?:(Първа|Втора|Трета)\s*част|'
+                         r'част\s*(Първа|Втора|Трета))\b'),
+        'classic_part_map': {'първа': 'I', 'втора': 'II', 'трета': 'III'},
+        # Bulgarian letters the five expressions of Question 1 in CYRILLIC —
+        # "а)", "б)", "в)", "г)", "д)" — which look like Latin letters and are
+        # not. See LETTERS_FOR.
+        'letters': 'абвгде',
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Bulgarian\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Източник\s*:|По\s+материали|Адаптиран)',
+        'rubric': (r'^(?:Отговорете\b|Прочетете\b|Напишете\b|'
+                   r'Коментирайте\b|Всички\s+отговори\b)'),
+    },
+    'slovakian': {
+        'name': 'Slovakian',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "ČASŤ I", "ČASŤ II", "ČASŤ III" — and the 2015 sitting sets the same
+        # head in a subset font whose ToUnicode map is broken ("ýASġ I"), so
+        # the head is matched on its NUMERAL and the four letters around it
+        # rather than on the word alone.
+        # ...and the 2021 and 2022 sittings name the two parts in WORDS
+        # instead — "Prvá časť", "Druhá časť".
+        'classic_part': (r'^(?:[ČýC][AÁ]S[ŤġT]\s*(I{1,3}|[123])|'
+                         r'(Prv[áa]|Druh[áa]|Tretia)\s*[čc]as[ťt])\b'),
+        'classic_part_map': {'prvá': 'I', 'prva': 'I', 'druhá': 'II',
+                             'druha': 'II', 'tretia': 'III'},
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Slovakian\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Zdroj\s*:|Upraven|Podľa\b|Prevzat)',
+        'rubric': (r'^(?:Odpovedzte\b|Pre[čc][íi]tajte\b|Nap[íi][šs]te\b|'
+                   r'Vyjadrite\b|V[šs]etky\s+odpovede\b)'),
+    },
+    'swedish': {
+        'name': 'Swedish',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "Del I", "Del II", "Del III".
+        'classic_part': r'^Del\s*(I{1,3})\b',
+        'classic_part_map': {},
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Swedish\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:K[äa]lla\s*:|Ur\s*:|Bearbetad|Publicerad)',
+        'rubric': (r'^(?:Svara\b|L[äa]s\b|Skriv\b|Kommentera\b|'
+                   r'Alla\s+svar\b|F[öo]rklara\s+dessa\s+ord)'),
+    },
+    'estonian': {
+        'name': 'Estonian',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "I ÜLESANNE", "II ÜLESANNE", "III ÜLESANNE" — with or without the
+        # full stop after the numeral, which the SEC prints both ways.
+        'classic_part': r'^(I{1,3})\s*\.?\s*[ÜU]LESANNE\b',
+        'classic_part_tail': r'^[ÜU]LESANNE\b',
+        'classic_part_map': {},
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Estonian\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Allikas\s*:|Lühendatult|Kohandatud)',
+        'rubric': (r'^(?:Vasta\b|Loe\b|Kirjuta\b|Kommenteeri\b|'
+                   r'K[õo]ik\s+vastused\b)'),
+    },
+    'finnish': {
+        'name': 'Finnish',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "I TEHTÄVÄ", "II Tehtävä:", "III TEHTÄVÄ" — the case changes between
+        # sittings and the colon appears in some of them.
+        # Finnish letters the five expressions of Question 1 with a FULL
+        # STOP — "a. jämäkkä" — where the rest of the family brackets them.
+        'letter': 'dot',
+        'classic_part': r'^(I{1,3})\s*TEHT[ÄA]V[ÄA]\b',
+        'classic_part_tail': r'^TEHT[ÄA]V[ÄA]\b',
+        'classic_part_map': {},
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Finnish\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:L[äa]hde\s*:|Mukailtu|Lyhennetty)',
+        'rubric': (r'^(?:Vastaa\b|Lue\b|Kirjoita\b|Ohje\s*:|'
+                   r'Kommentoi\b)'),
+    },
+    'croatian': {
+        'name': 'Croatian',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "I. dio", "II. dio", "III. dio" — and the 2020 sitting numbers the
+        # same three parts "1. dio", "2. dio", "3. dio".
+        # Six sittings (2014-2019) print the head over TWO printed lines,
+        # the numeral in one cell and the word in the next, so
+        # `classic_part_tail` joins them; without it those six censused zero.
+        'classic_part': r'^(I{1,3}|[123])\s*\.?\s*dio\b',
+        'classic_part_tail': r'^dio\b',
+        'classic_part_map': {},
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Croatian\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Izvor\s*:|Prilagođeno|Prema\b|Preuzeto)',
+        'rubric': (r'^(?:Odgovorite\b|Pro[čc]itajte\b|Napi[šs]ite\b|'
+                   r'Komentirajte\b|Svi\s+odgovori\b)'),
+    },
+    'danish': {
+        'name': 'Danish',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "Opgave I", "Opgave II", "Opgave III" — and four sittings head the
+        # same three parts in ENGLISH, "Part 1", "Part II", "Part III".
+        'classic_part': r'^(?:Opgave|Part)\s+(I{1,3}|[123])\b',
+        'classic_part_map': {},
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Danish\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Kilde\s*:|Bearbejdet|Uddrag\s+af|Fra\s*:)',
+        'rubric': (r'^(?:Besvar\b|L[æae]s\b|Skriv\b|Forklar\s+din\s+mening|'
+                   r'Alle\s+svar\b)'),
+    },
+    'slovenian': {
+        'name': 'Slovenian',
+        'q_head': None,
+        'section_tab': None,
+        'aural_tab': None,
+        # "1. DEL", "2. DEL", "3. DEL" — Slovenian numbers its parts with
+        # digits where the other eight use Roman numerals.
+        # The 2018 booklet sets the first head as "1.  DE", the L in a span
+        # the text layer drops, so the L is optional; a Slovenian question
+        # never opens "DE".
+        'classic_part': r'^([123])\s*\.\s*DEL?\b',
+        'classic_part_map': {'1': 'I', '2': 'II', '3': 'III'},
+        'essay_title': r'^([12ab])\s*[.)]\s+\S',
+        'furniture': (r'^(?:Leaving\s+Certificate|Coimisi[úu]n|'
+                      r'State\s+Examinations|Page\s*\d+)\b|'
+                      r'^Slovenian\s*[–—-]|^\d{1,3}$'),
+        'source_line': r'^(?:Vir\s*:|Prirejeno|Povzeto|Po\s*:)',
+        'rubric': (r'^(?:Odgovorite\b|Preberite\b|Napi[šs]ite\b|'
+                   r'Komentirajte\b|Vsi\s+odgovori\b)'),
+    },
 }
 
 
@@ -214,7 +431,12 @@ class Line:
 # "1." and — the Listening booklet's own — the bracketed number "(1)". Without
 # the last, an item whose question wrapped onto a second line kept the wrap and
 # lost the marker's own line, and censused as an empty leaf.
-MARKER_ONLY = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\.?$|^([a-z])\s*\)$|'
+# The dotted form "a." is here as well as the bracketed one: the Finnish
+# booklet sets its five expressions "a." at x=57 and the word itself at x=85,
+# and a marker vocabulary that knew only "a)" left all five as empty leaves.
+# A whole printed line that is one letter and a stop is a marker in every
+# sitting of this corpus.
+MARKER_ONLY = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\.?$|^([a-z])\s*[).]$|'
                          r'^(\d{1,2})\s*[.)]$|^\(\s*(\d{1,2})\s*\)$', re.I)
 # How far above or below its own baseline the text beside a marker may sit.
 # A marker is set CENTRED in its table cell while the sentence beside it wraps
@@ -241,16 +463,63 @@ TARIFF_GAP = 70.0
 # 2021 Romanian paper sets "principii." at y=399.96 and the "(5 puncte)" it is
 # priced by at y=399.90, six hundredths of a point higher, and a window that
 # started at zero dropped the price of that question on the floor.
+# The word the SEC prints beside a number when it prices something, in every
+# language on this reader. Kept as ONE string rather than repeated in four
+# patterns, because the four have to agree: a word missing from any one of
+# them silently drops that language's prices in exactly one place. Hungarian
+# "pont", Bulgarian "точки/точка", Slovakian and Croatian "bodov/bodova/bod",
+# Swedish "poäng", Estonian "punkti/punkt", Finnish "pistettä", Danish
+# "point", Slovenian "točk/točke/točka", beside the Portuguese, Romanian and
+# Dutch words already here.
+# The word the SEC sometimes prints IN FRONT of a price — "(maks. 5 point)",
+# "kuni 30 punkti", "(Totalt 30 poäng)", "(Max. 100 poäng)". It is a cap, not
+# a different price, and eight Danish sittings print every one of their asks
+# that way; without it those asks read as unpriced and could not be carded.
+CAP_WORD = r'maks|maksimum|max|maximum|kuni|totalt|total|najviac|ukupno|ungef[äa]r'
+MARK_WORD = (r'puncte|punct|punten|punt|pontos|ponto|marks|mark|'
+             r'pontot|pont|точки|точка|bodova|bodov|bodu|body|bod|'
+             r'po[äa]ng|punkti|punkt|pistett[äa]|pistett|point|'
+             r'to[čc]ke|to[čc]ka|to[čc]k')
+
+# The most marks one ask of this examination can be worth. Its parts print
+# 30, 30 and 40 on their own heads, so a bracketed number larger than the
+# largest part is not a price at all — the 2022 Croatian reading text sets
+# "(61)" and "(32)" inside its own paragraphs, and read as tariffs they made
+# two paragraphs of a passage look like priced asks and blocked the restart
+# that separates the text from the questions.
+MAX_ASK_MARKS = 40
 BAND_TOL = 4.0
 # Where the right-hand marks margin of a classic booklet starts.
 TARIFF_X = 380.0
 
 
+# A price the SEC set in the right-hand margin with NO bracket around it.
+# Bulgarian prints every one of its prices that way — "1 точка", "5 точки" at
+# x=454 — and Finnish abbreviates the word to a letter, "1p.", "5p." at
+# x=482. Neither is bracketed anywhere in the corpus, so a bracket-only reader
+# left 156 Bulgarian asks and 51 Finnish ones unpriced and therefore uncarded,
+# with the price printed plainly beside each of them. Read only as a WHOLE
+# cell in the marks margin, so no number inside an ask's own words reaches it.
+# The same price where it has been glued onto the END of the ask's own words:
+# the Bulgarian booklet sets "а) привързаност" and "1 точка" on one baseline,
+# so the two arrive as one line and the card asked for "привързаност 1 точка".
+# Only at the end, and only a whole price — nothing inside the ask is touched.
+BARE_TRAILING_PRICE = re.compile(
+    r'\s+(?:\d{1,2}\s*[x×*]\s*)?\d{1,3}\s*(?:' + MARK_WORD + r'|p)\.?\s*$',
+    re.I)
+BARE_PRICE = re.compile(
+    r'^(?:(\d{1,2})\s*[x×*]\s*)?(\d{1,3})\s*(?:' + MARK_WORD + r'|p)\.?$',
+    re.I)
+
+
 def _is_tariff_cell(line):
+    if line.x >= TARIFF_X and BARE_PRICE.match(line.text.strip()):
+        return True
     return line.x >= TARIFF_X and bool(
-        re.fullmatch(r'\(\s*(?:\d{1,2}\s*[x×]\s*)?\d{1,3}\s*'
-                     r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark)?'
-                     r'\s*\)', line.text.strip(), re.I))
+        re.fullmatch(r'[(\[]\s*(?:(?:' + CAP_WORD + r')\.?\s*)?'
+                     r'(?:\d{1,2}\s*[x×*]\s*)?\d{1,3}\s*'
+                     r'(?:' + MARK_WORD + r')?'
+                     r'\s*[)\]]', line.text.strip(), re.I))
 
 
 def read_lines(path, drop=None):
@@ -282,6 +551,29 @@ def read_lines(path, drop=None):
                     raw.append(Line(pno, x0, (y0 + y1) / 2, x1, text))
             raw.sort(key=lambda l: (round(l.y, 0), l.x))
             out += _join_markers(raw)
+    return out
+
+
+def _join_part_heads(lines, numeral_only, tail_pat):
+    """A part head the SEC set in TWO printed cells, put back together.
+
+    The Croatian booklet prints "I." in one cell and "dio" in the next — six
+    of its thirteen sittings do — and a walker that only ever sees whole lines
+    finds no part in any of them and censuses the sitting as empty. Joined
+    only where the numeral is a WHOLE printed line and the very next line
+    opens with the part's own noun, so no numbered question can reach it.
+    """
+    out, skip = [], -1
+    for i, line in enumerate(lines):
+        if i == skip:
+            continue
+        if numeral_only.match(line.text) and i + 1 < len(lines) \
+                and tail_pat.match(lines[i + 1].text):
+            out.append(Line(line.page, line.x, line.y, lines[i + 1].x1,
+                            f'{line.text} {lines[i + 1].text}'.strip()))
+            skip = i + 1
+            continue
+        out.append(line)
     return out
 
 
@@ -327,8 +619,49 @@ LETTER = re.compile(r'^\(?\s*([a-l])\s*\)\s*(.*)$', re.I)
 # bracket is unambiguous and a colon is not: "Verbeek: 'Het beïnvloedt…'" is a
 # line of the passage.
 LETTER_COLON = re.compile(r'^\(?\s*([a-l])\s*[):]\s*(.*)$', re.I)
+# The Hungarian booklet letters the parts of its first question with a COMMA —
+# "a, Magyarázza meg…" — which no other paper in the family does. Kept per
+# subject for the same reason the colon is: a comma after a single letter is
+# unambiguous in Hungarian only because the passage above it never opens a
+# line that way, and widening it for all twelve subjects would read "a, b és c"
+# in a Dutch rubric as a marker.
+LETTER_COMMA = re.compile(r'^\(?\s*([a-l])\s*[,)]\s*(.*)$', re.I)
+
+
+def letters_for(subject):
+    """The alphabet this subject's paper letters its parts with.
+
+    Latin a-l everywhere except Bulgarian, which is printed in Cyrillic and
+    letters Question 1's five expressions "а) б) в) г) д)". Those five are
+    consecutive code points (U+0430..U+0434), so `next_letter` reads their
+    sequence the same way it reads a-e, and a Cyrillic "а" is never confused
+    with a Latin one because the alphabet is read from the subject, not
+    guessed from the glyph.
+    """
+    return cfg(subject, 'letters') or LETTERS
+
+
+def letter_pattern(subject):
+    """The marker form this subject prints, over its own alphabet."""
+    alpha = letters_for(subject)
+    cls = '[' + alpha + alpha.upper() + ']'
+    close = {'colon': '[):]', 'comma': '[,)]', 'dot': r'[.)]'}.get(
+        cfg(subject, 'letter'), r'\)')
+    return re.compile(r'^\(?\s*(' + cls + r')\s*' + close + r'\s*(.*)$')
 ROMAN = re.compile(r'^\(\s*(i{1,3}|iv|vi{0,3}|ix|x)\s*\)\s*(.*)$', re.I)
-NUMBERED = re.compile(r'^\(?(\d{1,2})\s*[.)]\s*(.*)$')
+# A question head, with the letter the SEC sometimes glues to it: the 2016
+# Swedish booklet numbers the two halves of its first question "1a." and
+# "1b." rather than lettering them beneath a "1.", and a pattern that stopped
+# at the digit matched neither — so the run never reached 1, every later
+# number failed the sequence test, and that whole sitting censused zero asks.
+# The stop after the number is optional, but only where the SEC set the text
+# at a TAB STOP instead: the 2026 Slovakian booklet prints "5  Uvažujte, aké
+# zásady…" with two spaces and no full stop, and a pattern that required the
+# stop lost Question 5, which then failed the run for Question 6 as well. One
+# of the two — punctuation, or the gap — has to be there, so a passage line
+# opening "5 000 ľudí" is still not a head.
+NUMBERED = re.compile(
+    r'^\(?(\d{1,2})\s*([a-l])?\s*(?:[.)]\s*|\s+(?=[^\W\d]))(.*)$')
 # The first roman marker printed INSIDE an item's own line, after its stem.
 INNER_FIRST_ROMAN = re.compile(r'\(\s*i\s*\)\s*')
 LETTERS = 'abcdefghijkl'
@@ -336,31 +669,42 @@ LETTERS = 'abcdefghijkl'
 # place that sitting's tariff is written down: "(5)", "(5×1)", "(5 puncte)",
 # "(1 punt)", "(10 puncte)". Read from the paper because the classic schemes
 # print answers with no marks beside them at all.
+# The bracket is round in eleven of the twelve languages and SQUARE in
+# Croatian, which prints "[5 bodova]" and "[5 × 1 bod]" against every ask.
 PAPER_TARIFF = re.compile(
-    r'\(\s*(?:(\d{1,2})\s*[x×]\s*)?(\d{1,2})\s*'
-    r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark|m)?\s*\)', re.I)
+    r'[(\[]\s*(?:(?:' + CAP_WORD + r')\.?\s*)?'
+    r'(?:(\d{1,2})\s*[x×*]\s*)?(\d{1,2})\s*'
+    r'(?:' + MARK_WORD + r'|m)?\s*[)\]]', re.I)
 # The same, with the multiplier written second: "(5×1)" is five answers at one
 # point each and the SEC also sets "(1×5)". Both are read, and which is the
 # count is settled by the group beneath it, never by picking the larger.
 TRAILING_MARK = re.compile(
-    r'\s*\(\s*\d{1,2}\s*(?:[x×]\s*\d{1,2}\s*)?'
-    r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark)?\s*\)\s*$', re.I)
+    r'\s*[(\[]\s*(?:(?:' + CAP_WORD + r')\.?\s*)?'
+    r'\d{1,2}\s*(?:[x×*]\s*\d{1,2}\s*)?'
+    r'(?:' + MARK_WORD + r')?\s*[)\]]\s*$', re.I)
 
 
-def next_letter(current):
+def next_letter(current, first='a'):
     """The SEC's own numbering, used as a second way in.
 
     A marker that is the NEXT letter after the one before it IS that letter,
     wherever the cell puts it. "(i)" is excluded from this path on purpose: it
     is the one marker that can also be a roman, so it still has to satisfy BOTH
     the column and the sequence.
+
+    `first` is the alphabet's own opening letter, because one subject on this
+    reader is not written in Latin: the Bulgarian scheme letters Question 1
+    "а) б) в) г) д)" in CYRILLIC, and a hard-coded 'a' meant the first item of
+    every Bulgarian sitting failed the sequence test and the whole part read
+    as one ask. The letters after it are consecutive code points in both
+    alphabets, so only the first has to be told.
     """
-    return 'a' if not current else chr(ord(current) + 1)
+    return first if not current else chr(ord(current) + 1)
 
 
 class Ask:
     __slots__ = ('section', 'q', 'letter', 'roman', 'text', 'page', 'stem',
-                 'tariff', 'notation')
+                 'tariff', 'notation', 'margin_price')
 
     def __init__(self, section, q, letter, roman, text, page):
         self.section, self.q = section, q
@@ -371,6 +715,14 @@ class Ask:
         # this ask, and None where it did not. Never inferred.
         self.tariff = None
         self.notation = ''
+        # The price cell the SEC set in the right-hand margin against this
+        # ask, where it set one. Kept apart from the ask's own words because
+        # a bracketed number INSIDE those words is usually not a price: the
+        # 2022 Croatian booklet writes its five expressions "a) dobrovoljna
+        # davateljica(2)", where the (2) is the PARAGRAPH the expression comes
+        # from, and read as a tariff it made that expression worth two marks
+        # and the next one worth thirteen.
+        self.margin_price = ''
 
     @property
     def key(self):
@@ -424,13 +776,19 @@ class EuPaper:
         """
         pattern = cfg(self.subject, 'q_head')
         head = re.compile(pattern) if pattern else None
+        # Every letter of this subject's own alphabet EXCEPT "i", which is
+        # also the first roman — see the docstring. Bulgarian's Cyrillic
+        # alphabet has no such collision, so all five of its letters count.
+        alpha = ''.join(c for c in letters_for(self.subject) if c != 'i')
+        column_pat = re.compile(r'^\(?\s*[' + alpha + alpha.upper() +
+                                r']\s*[,).:]\s')
         by_q, q = {}, None
         for line in self.lines:
             m = head.match(line.text) if head else None
             if m:
                 q = int(m.group(1))
                 continue
-            if re.match(r'^\(?\s*[a-hj-l]\s*[):]\s', line.text):
+            if column_pat.match(line.text):
                 by_q.setdefault(q, []).append(round(line.x))
         self.letter_x_by_q = {k: max(set(v), key=v.count)
                               for k, v in by_q.items()}
@@ -456,6 +814,7 @@ class EuPaper:
     # ------------------------------------------------------------- walking --
     def _walk(self):
         """The MODERN booklet: Part A Reading and Part B Written Production."""
+        first_letter = letters_for(self.subject)[0]
         q_head = re.compile(cfg(self.subject, 'q_head'))
         section_tab = re.compile(cfg(self.subject, 'section_tab'))
         furniture = re.compile(cfg(self.subject, 'furniture'), re.I)
@@ -509,7 +868,8 @@ class EuPaper:
                 # A letter marker stands at the question's own left margin. A
                 # word that merely begins with a bracketed letter does not.
                 if line.x <= self._column_for(q) + LETTER_TOL \
-                        or lm.group(1).lower() == next_letter(letter):
+                        or lm.group(1).lower() == next_letter(
+                            letter, first_letter):
                     marker = ('letter', lm.group(1).lower(), lm.group(2))
             if marker:
                 kind, mark, rest = marker
@@ -583,12 +943,20 @@ class EuPaper:
         part_map = cfg(self.subject, 'classic_part_map') or {}
         essay_pat = cfg(self.subject, 'essay_title')
         essay_pat = re.compile(essay_pat, re.I) if essay_pat else None
-        letter_pat = (LETTER_COLON if cfg(self.subject, 'letter') == 'colon'
-                      else LETTER)
+        letter_pat = letter_pattern(self.subject)
+        first_letter = letters_for(self.subject)[0]
+        # The head's second half, where the SEC sets it in a cell of its own:
+        # the Croatian booklet prints "I." and "dio" as two printed lines.
+        tail = cfg(self.subject, 'classic_part_tail')
+        tail_pat = re.compile(tail, re.I) if tail else None
+        numeral_only = re.compile(r'^(I{1,3}|[123])\s*\.?$')
         furniture = re.compile(cfg(self.subject, 'furniture'), re.I)
 
         asks, part, q, letter = [], None, None, None
         current, last_y = None, None
+        # The last line of the reading part that opened no ask. Where the SEC
+        # prints a question with no number of its own, that line IS its words.
+        pending_stem = ''
         text_pages = {}
         first_part = None
         # The writing part's own prompt, gathered until an option marker
@@ -604,6 +972,8 @@ class EuPaper:
                 # punt)" in the middle of Question 1(c) and the card carried
                 # its own tariff inside the question.
                 current.text = _norm(PAPER_TARIFF.sub(' ', current.text))
+                current.text = _norm(
+                    BARE_TRAILING_PRICE.sub(' ', current.text))
                 asks.append(current)
                 current = None
 
@@ -616,13 +986,23 @@ class EuPaper:
                                 prompt_page or 1))
             prompt, prompt_page = [], None
 
-        for line in self.lines:
+        lines = self.lines
+        if tail_pat is not None:
+            lines = _join_part_heads(lines, numeral_only, tail_pat)
+        for line in lines:
             if furniture.match(line.text) and len(line.text) < 60:
                 continue
             pm = part_pat.match(line.text)
+            if pm is None and len(line.text) < 40:
+                # A head the SEC LETTERSPACED. The 2011 Bulgarian paper sets
+                # "Пъ рва час т" — spaces inside the words, not between them —
+                # and read as printed it matched nothing, so that whole sitting
+                # censused zero asks. Retried with the spaces squeezed out;
+                # only on a short line, so no sentence can reach this path.
+                pm = part_pat.match(re.sub(r'\s+', '', line.text))
             if pm:
                 close_part()
-                token = pm.group(1).lower()
+                token = next(g for g in pm.groups() if g).lower()
                 part = part_map.get(token) or _part_token(token)
                 first_part = first_part or part
                 q, letter = None, None
@@ -651,19 +1031,81 @@ class EuPaper:
                 continue
             nm = NUMBERED.match(line.text)
             lm = letter_pat.match(line.text)
+            at_margin = line.x <= self.left_margin + HEAD_INDENT
+            # The RUN RESTARTS at 1, and where it does the questions have not
+            # begun until now. Six Croatian sittings and eight Estonian ones
+            # print the part head ABOVE the reading text rather than below it,
+            # so the text's own numbered paragraphs — "1. Za razliku od…" —
+            # run 1 to 11 inside Part I and are read as its questions, and the
+            # SEC's Question 1 then censuses as Question 12.
+            #
+            # What separates them is the PRICE. Every question of this part
+            # carries a printed tariff in the right-hand margin and no
+            # paragraph of a reading text ever does, so a restart is taken
+            # only where nothing collected so far in this part was priced;
+            # where something was, the two runs are both kept and the census
+            # flags the overlap rather than this quietly throwing a real ask
+            # away.
+            if nm and at_margin and int(nm.group(1)) == 1 and (q or 0) >= 2 \
+                    and part == first_part \
+                    and not any(a.section == part and a.margin_price
+                                for a in asks + ([current] if current else [])):
+                close()
+                for a in [a for a in asks if a.section == part]:
+                    text_pages.setdefault(part, [])
+                    if a.page not in text_pages[part]:
+                        text_pages[part].append(a.page)
+                asks = [a for a in asks if a.section != part]
+                q, letter = None, None
             # The number after the one before it, at the left margin, IS the
             # next question. Both conditions: a passage sentence can open with
             # a year and a full stop, and a wrapped line can start at the
             # margin, but neither is ever the next number in the run.
-            if nm and int(nm.group(1)) == (q or 0) + 1 \
-                    and line.x <= self.left_margin + HEAD_INDENT:
+            if nm and int(nm.group(1)) == (q or 0) + 1 and at_margin:
                 close()
                 q, letter = int(nm.group(1)), None
-                current = Ask(part, q, None, None, nm.group(2), line.page)
+                if nm.group(2):
+                    # The letter glued to its question's own number — the 2016
+                    # Swedish booklet's "1a." and "1b.". The question is that
+                    # letter's parent and carries no words of its own.
+                    if not any(a.key == (part, q, None, None) for a in asks):
+                        asks.append(Ask(part, q, None, None, '', line.page))
+                    letter = nm.group(2).lower()
+                    current = Ask(part, q, letter, None, nm.group(3), line.page)
+                    last_y = line.y
+                    continue
+                inner = letter_pat.match(nm.group(3))
+                if inner and inner.group(1).lower() == 'a':
+                    # The FIRST lettered part printed on its question's own
+                    # line: the Hungarian booklet sets "1. a, Magyarázza meg…"
+                    # and prints b to e beneath it. Read whole, the question
+                    # swallowed its own first part and Question 1 censused as
+                    # one leaf where the SEC prices five. Only "a" — a later
+                    # letter on a question head would mean the marker column
+                    # has been misread, and that is a fault to see, not to
+                    # absorb.
+                    asks.append(Ask(part, q, None, None, '', line.page))
+                    letter = inner.group(1).lower()
+                    current = Ask(part, q, letter, None, inner.group(2),
+                                  line.page)
+                else:
+                    current = Ask(part, q, None, None, nm.group(3), line.page)
                 last_y = line.y
                 continue
+            # A letter where the SEC printed NO number for its question. The
+            # 2018 Slovenian booklet heads its first part "1. DEL" and then
+            # sets the first question with no number of its own at all — its
+            # five expressions run a) to e) and the next head printed is "2."
+            # A letter can only belong to a question, and the question before
+            # the printed "2." is Question 1.
+            if lm and q is None and lm.group(1).lower() == 'a' \
+                    and part == first_part:
+                close()
+                q = 1
+                asks.append(Ask(part, q, None, None, pending_stem, line.page))
             if lm and q is not None \
-                    and (lm.group(1).lower() == next_letter(letter)
+                    and (lm.group(1).lower() == next_letter(letter,
+                                                            first_letter)
                          or line.x <= self.letter_x + LETTER_TOL):
                 close()
                 letter = lm.group(1).lower()
@@ -679,11 +1121,14 @@ class EuPaper:
                 # down the SEC set it: the 2021 Romanian paper prints Question
                 # 6 over two lines and its "(5 puncte)" thirty-four points
                 # below them, and a line-gap window left that ask unpriced.
+                if _is_tariff_cell(line):
+                    current.margin_price = line.text
                 current.text += ' ' + line.text
                 last_y = line.y
                 continue
             close()
             if q is None:
+                pending_stem = line.text
                 text_pages.setdefault(part, [])
                 if line.page not in text_pages[part]:
                     text_pages[part].append(line.page)
@@ -770,7 +1215,7 @@ class EuPaper:
             if nm:
                 close()
                 item, roman = int(nm.group(1)), None
-                rest = nm.group(2)
+                rest = ((nm.group(2) or '') + ' ' + nm.group(3)).strip()
                 inner = ROMAN.match(rest)
                 if inner:
                     roman, rest = inner.group(1).lower(), inner.group(2)
@@ -964,9 +1409,18 @@ def _part_head_tariff(lines, part_pat):
             # At the END of the cell, not the whole of it: the 2023 Dutch
             # paper prints "tekstbegrip (30 punten)" as one text cell, and a
             # whole-cell match found no total for Deel 1 at all.
+            # The bracket is round in nine languages and SQUARE in
+            # Croatian ("I. dio [30 bodova]"); the number may carry its own
+            # mark word on BOTH sides of the slash ("(30 pont / 100 pont)");
+            # and four languages print a word before it — "kuni 30 punkti",
+            # "maksimum 30 point", "Totalt 30 poäng", "Max. 100 poäng". All
+            # four forms are the same printed total, and a pattern that knew
+            # only the first read no total at all for five of the twelve
+            # subjects on this reader.
             m = re.search(
-                r'\(\s*(\d{1,3})\s*(?:/\s*(\d{1,3})\s*)?'
-                r'(?:puncte|punct|punten|punt|pontos|ponto|marks|mark)?\s*\)$',
+                r'[(\[]\s*(?:\w+\.?\s+){0,2}?(\d{1,3})\s*'
+                r'(?:' + MARK_WORD + r')?\s*'
+                r'(?:/\s*(\d{1,3})\s*(?:' + MARK_WORD + r')?\s*)?[)\]]$',
                 other.text.strip(), re.I)
             if m:
                 out[line.text] = (int(m.group(1)),
@@ -1011,9 +1465,15 @@ def _walk_down_paper_splits(asks):
         group = kids.get((a.section, a.q)) or []
         count, per, _total = a.tariff
         if per is None or not group or len(group) != count \
-                or any(k.tariff for k in group):
+                or any(k.tariff and k.margin_price for k in group):
+            # A kid's own MARGIN price is its own and stops the walk-down; a
+            # bracketed number inside its words does not, because the SEC
+            # priced the group once, on the head, and the number in the words
+            # is a paragraph reference (2022 Croatian Question 1).
             continue
         for kid in group:
+            kid.text = _norm(PAPER_TARIFF.sub(' ', kid.text)) \
+                if kid.tariff else kid.text
             kid.tariff = (1, per, per)
             kid.notation = (f'{a.notation} on the head of Q{a.q}, walked down '
                             f'to its {count} parts')
@@ -1026,7 +1486,25 @@ def _read_paper_tariff(ask):
     and neither is invented — a classic sitting whose ask carries no bracketed
     number keeps `tariff = None` and is refused rather than priced by guesswork.
     """
-    found = list(PAPER_TARIFF.finditer(ask.text))
+    # For a LETTERED part the margin cell wins where the SEC printed one — see
+    # Ask.margin_price: a lettered expression's own words are the expression,
+    # and a bracket inside them is a paragraph reference, not a price.
+    #
+    # For a whole QUESTION the words win, because the SEC prices a question
+    # inside them: the 2022 Dutch paper sets "Geef drie voorbeelden … (3
+    # punten) Leg ook uit waarom … (2 punten)" and the question is worth five.
+    # Reading only the margin there took the last of the two and made that
+    # question worth two.
+    source = (ask.margin_price if ask.letter else '') or ask.text
+    found = list(PAPER_TARIFF.finditer(source))
+    if not found and ask.margin_price:
+        bare = BARE_PRICE.match(ask.margin_price.strip())
+        if bare:
+            count = int(bare.group(1)) if bare.group(1) else 1
+            per = int(bare.group(2))
+            ask.tariff = (count, per, count * per)
+            ask.notation = ask.margin_price.strip()
+            return
     if not found:
         return
     split = [m for m in found if m.group(1)]

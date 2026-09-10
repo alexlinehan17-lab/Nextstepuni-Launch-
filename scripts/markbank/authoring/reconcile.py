@@ -88,11 +88,22 @@ HEAD = re.compile(
 # it did, the parser stopped at the digit and the card claimed its whole
 # LETTER, which reported three printed asks covered by three cards that each
 # said they held all three.
+# A part marker may be CYRILLIC. The Bulgarian paper letters Question 1's
+# five expressions "а) б) в) г) д)" — five Cyrillic letters that look like
+# Latin ones and are not — and a Latin-only token class read none of them, so
+# every Bulgarian citation naming a part failed to parse and its exclusions
+# reported stale forever. The mirror of this grammar in
+# test/markBankCoverage.test.ts reads the same class.
 PART_TOKEN = re.compile(
-    r'\s*(?:\(\s*([A-Za-z]{1,4}|\d{1,2})\s*\)|([\u2013\u2014-])|(,|\band\b))')
+    r'\s*(?:\(\s*([A-Za-z\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)'
+    r'|([\u2013\u2014-])|(,|\band\b))')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 LETTERS = 'abcdefghijkl'
+# The Cyrillic alphabet the Bulgarian paper letters its parts with, in its own
+# printed order. Held beside LETTERS rather than folded into it, so a range
+# citation ("(а)–(в)") expands over the alphabet it was printed in.
+CYRILLIC_LETTERS = 'абвгдежзийклмн'
 
 
 def shipped_cards(subject):
@@ -257,6 +268,8 @@ def _classify(tok):
     """letter or roman? A lone i/v/x is a roman FIRST; the census decides the
     rest at match time (Physics numbers parts (i)..(x) with no letters)."""
     t = tok.lower()
+    if len(t) == 1 and t in CYRILLIC_LETTERS:
+        return 'letter'
     if len(t) == 1 and t in LETTERS and t not in 'ivx':
         return 'letter'
     if all(c in 'ivx' for c in t):
@@ -308,9 +321,13 @@ def parse_ref(ref):
         cls = _classify(tok)
         tok = tok.lower()
         if cls == 'letter':
-            if dash and cur_letter and cur_roman is None:
-                lo, hi = sorted((LETTERS.index(cur_letter), LETTERS.index(tok)))
-                for x in LETTERS[lo + 1:hi + 1]:
+            alphabet = (CYRILLIC_LETTERS if tok in CYRILLIC_LETTERS
+                        else LETTERS)
+            if dash and cur_letter and cur_roman is None \
+                    and cur_letter in alphabet and tok in alphabet:
+                lo, hi = sorted((alphabet.index(cur_letter),
+                                 alphabet.index(tok)))
+                for x in alphabet[lo + 1:hi + 1]:
                     paths.append((x, None))
             else:
                 paths.append((tok, None))
