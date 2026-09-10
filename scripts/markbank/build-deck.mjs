@@ -218,6 +218,17 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/italian',
     blocked: new Set(),
   },
+  japanese: {
+    title: 'Japanese',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-japanese-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Japanese syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the web page, article,\n * blog or e-mail it is answered from, bound to the pages of the question paper\n * it was printed on. The answer language changes INSIDE a question: 問題2 heads\n * its first items "Answer in English" and its third "Answer in Japanese", and\n * the scheme pays half marks for the wrong one, so every card says which is\n * wanted. Furigana — the kana reading the SEC sets ABOVE a kanji — is folded\n * into the line in brackets, 秋葉原（あきはばら）, and every card carrying\n * Japanese discloses the convention.',
+    figureDir: 'public/exam-figures/japanese',
+    blocked: new Set(),
+  },
   'applied-maths': {
     title: 'Applied Maths',
     /* The specification first examined in 2023 — dated because it is verified

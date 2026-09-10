@@ -62,6 +62,24 @@ GAP = 12.0
 BASELINE_TOL = 2.0
 
 
+# The four PRIVATE-USE code points these twenty papers and ten schemes leave in
+# their text layer, every one of them a Wingdings or Symbol dingbat the SEC set
+# as ordinary page furniture. Settled the way the bank settles a glyph survivor
+# — cropped at 400dpi and looked at — not by reading a font table:
+#
+#   U+F0E0  Wingdings  a rightwards arrow, printed between a true/false
+#                      statement and the Japanese phrase that supports it,
+#                      "→ [ ラインは日本で大人気のアプリです。]"
+#   U+F0B7  Symbol     a filled round bullet
+#   U+F046  Wingdings  a pointing hand, used as a bullet on the cover
+#   U+F076  Wingdings  a four-diamond bullet
+#
+# Left alone they reach the card as unreadable glyphs and the build refuses it,
+# which is right: a card that shows U+F0E0 is not a smaller version of the
+# right card. Folded, five 2025 Ordinary true/false cards ship as printed.
+DINGBATS = {'\uf0e0': '→', '\uf0b7': '•', '\uf046': '☞', '\uf076': '❖'}
+
+
 def _cjk(ch):
     return '　' <= ch <= '鿿' or '＀' <= ch <= '￯'
 
@@ -83,7 +101,8 @@ def page_rows(page):
             continue
         for l in b['lines']:
             for s in l['spans']:
-                chars = list(s['chars'])
+                chars = [dict(c, c=DINGBATS.get(c['c'], c['c']))
+                         for c in s['chars']]
                 if not any(c['c'].strip() for c in chars):
                     continue
                 size = round(s['size'], 1)

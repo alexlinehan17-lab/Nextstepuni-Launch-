@@ -93,5 +93,9 @@
  "italian": {
   "higher": 172,
   "ordinary": 178
+ },
+ "japanese": {
+  "higher": 299,
+  "ordinary": 165
  }
 }

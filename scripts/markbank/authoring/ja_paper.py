@@ -98,6 +98,7 @@ ROMAN_MARK = re.compile(r'^\(\s*([ivx]{1,5})\s*\)\s*', re.I)
 # sentence they interrupt.
 INLINE_BLANK = re.compile(r'\(([ivx]{1,5}|\d{1,2})\)\s*[_＿]', re.I)
 EG = re.compile(r'^\(?\s*e\.?\s*g\.?\s*\)?[.\s]', re.I)
+_MARKER_ONLY = re.compile(r'[\s(]*[a-hivx]{1,4}[).\s]*', re.I)
 RULE = re.compile(r'[_＿]{3,}')
 
 # Where a part stops printing what the candidate READS and starts printing what
@@ -163,6 +164,10 @@ class JaPaper:
         self.aural_path = aural if os.path.exists(aural) else None
         self._written = None
         self._aural = None
+        self._asks = None
+        self._rubrics = {}
+        self._item_rubrics = {}
+        self._pre_rubric = {}
         self.question_marks = {}
         self.section_pages = {}
 
@@ -208,7 +213,7 @@ class JaPaper:
                 q = int(head.group(1))
                 section = str(q)
                 parts.setdefault(section, [])
-                self.section_pages.setdefault(section, []).append(pno)
+                self.section_pages.setdefault(section, []).append(pno + 1)
                 m = re.search(r'\((\d{1,3})\s*mar[ck]', joined)
                 if m:
                     self.question_marks.setdefault(q, int(m.group(1)))
@@ -216,7 +221,7 @@ class JaPaper:
                 if cuid:
                     section = f'{q}{cuid.group(1)}'
                     parts.setdefault(section, [])
-                    self.section_pages.setdefault(section, []).append(pno)
+                    self.section_pages.setdefault(section, []).append(pno + 1)
                 continue
             if q is None:
                 continue
@@ -228,7 +233,7 @@ class JaPaper:
                 letter = (cuid or ph).group(1)
                 section = f'{q}{letter}'
                 parts.setdefault(section, [])
-                self.section_pages.setdefault(section, []).append(pno)
+                self.section_pages.setdefault(section, []).append(pno + 1)
                 rest = ft[(cuid or ph).end():].strip()
                 row = ([(first_x, rest)] if rest else []) + \
                       [(g[0], plain(g[2])) for g in groups[1:]]
@@ -237,24 +242,96 @@ class JaPaper:
                 continue
             if section is None:
                 continue
-            self.section_pages.setdefault(section, []).append(pno)
+            self.section_pages.setdefault(section, []).append(pno + 1)
             row = [(x, plain(t)) for x, _x1, t in groups
                    if not FURNITURE.match(plain(t))]
             if row:
                 parts[section].append((row, pno))
         return {k: v for k, v in parts.items() if v}
 
+    def rubric(self, section):
+        """The instruction the SEC prints above a part's asks.
+
+        It is what the part IS — "Write the meaning of any FIVE of the
+        following Kanji in English", "Circle the correct particle", "Answer in
+        Japanese" — so it is the card's stem where the ask itself is a bare
+        printed item, and it is what ja_topics reads to file the card and to
+        say which language the answer must be in.
+        """
+        self.asks()
+        return self._rubrics.get(section, '')
+
+    def item_rubric(self, section, q):
+        """The instruction printed on a numbered item's own row.
+
+        A part sets more than one task. 問題2's kanji section prints
+        "1. Write the meaning of any FIVE of the following Kanji in English"
+        and, under the same head, "2. Write the reading of any FIVE of the
+        following Kanji in Hiragana" — same kanji, opposite answers — so the
+        stem of an ask under item 2 is item 2's instruction and not the part's.
+        """
+        self.asks()
+        return self._item_rubrics.get((section, q)) or self.rubric(section)
+
+    def source_pages(self, section):
+        """The pages of printed matter an ask in this part is answered from.
+
+        The stimulus is what a part prints BEFORE its first instruction: the
+        web page, the article, the blog. Where a part prints none of its own —
+        the kanji and grammar sections open with their instruction — the
+        question's own stimulus pages stand in, because that is what the SEC
+        set them against ("Write the reading of any FIVE of the following
+        Kanji as they appear in the text").
+        """
+        self.asks()
+        own = self._pre_rubric.get(section)
+        if own:
+            return own
+        return (self._pre_rubric.get(section[0])
+                or sorted(set(self.section_pages.get(section[0]) or []))
+                or sorted(set(self.section_pages.get(section) or [])))
+
     def asks(self):
         """Every leaf ask the written booklet prints, in printed order."""
+        if self._asks is not None:
+            return self._asks
         out = []
         lettered = {s[0] for s in self.written if len(s) > 1}
         for section, rows in self.written.items():
+            first = _first_rubric(rows)
+            # The instruction WRAPS. "Write the meaning of any FIVE of the
+            # following Kanji in English" is set over two rows and taking one
+            # of them put "Write the meaning of" on eighty-seven cards.
+            joined = []
+            for row, _p in rows[first:first + 3]:
+                text = ' '.join(t for _x, t in row)
+                if joined and _read_marker(text):
+                    break
+                joined.append(text)
+                if RULE.search(text):
+                    break
+            self._rubrics[section] = ' '.join(' '.join(joined).split())
+            pages = sorted({p + 1 for _row, p in rows[:first]})
+            self._pre_rubric[section] = pages
+            for found, text, _page, r in _markers(rows[first:]):
+                if len(found) != 1 or found[0][0] != 'num' or len(text) <= 12:
+                    continue
+                # The instruction wraps here as it wraps on a part head.
+                tail = []
+                for row, _p in rows[first + r + 1:first + r + 3]:
+                    line = ' '.join(t for _x, t in row)
+                    if _read_marker(line) or RULE.search(line):
+                        break
+                    tail.append(line)
+                self._item_rubrics.setdefault(
+                    (section, found[0][1]), _clean_rule(' '.join([text] + tail)))
             # The rows a question prints BEFORE its first part head are its
             # stimulus -- the web page, the article, the blog the parts are
             # about. A question that heads parts sets no ask of its own.
             if len(section) == 1 and section in lettered:
                 continue
             out.extend(_section_asks(section, rows))
+        self._asks = out
         return out
 
     # ------------------------------------------------------------ aural ---
@@ -359,6 +436,10 @@ def _markers(rows):
     return out
 
 
+def _clean_rule(text):
+    return ' '.join(RULE.sub(' ', text).split())
+
+
 def _first_rubric(rows):
     """The row a part prints its first instruction on. See RUBRIC."""
     for i, (row, _page) in enumerate(rows):
@@ -443,13 +524,15 @@ def _section_asks(section, rows):
             else:
                 roman = tok
         key = (num, letter, roman)
-        if not rest and (letter or roman):
+        if (not rest or _MARKER_ONLY.fullmatch(rest)) and (letter or roman):
             # An ANSWER SLOT, not an ask. The Ordinary paper rules its answer
             # spaces "(i) ____ (ii) ____ (iii) ____" under a question the
             # scheme prices whole ("Name three sports available at Tokyo Dome
             # ... any 3, 1 mark each (3 marks)"), in the same shape it prints a
             # real sub-part in. A sub-part always carries printed words; a slot
-            # never does.
+            # never does — except at Ordinary, where the slot is ruled in BOTH
+            # columns and the English column's own marker survives the rule, so
+            # a marker whose whole text is another marker is a slot too.
             continue
         prev = tree.get(key)
         if prev is None:

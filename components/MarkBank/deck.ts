@@ -66,6 +66,8 @@ const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applie
 if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
 const spanishCurriculum = CURRICULUM.find(subject => subject.id === 'spanish');
 if (!spanishCurriculum) throw new Error('Canonical Spanish curriculum is missing');
+const japaneseCurriculum = CURRICULUM.find(subject => subject.id === 'japanese');
+if (!japaneseCurriculum) throw new Error('Canonical Japanese curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -1055,6 +1057,16 @@ export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((stran
     title: topic.name,
   })),
 }));
+export const JAPANESE_STRANDS: StrandRef[] = japaneseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 export const TECHNOLOGY_STRANDS: StrandRef[] = [
   {
     id: 'tech-core', label: 'Core', title: 'Core',
@@ -1188,6 +1200,7 @@ export const SUBJECTS = [
   { id: 'applied-maths', title: 'Applied Maths', strands: APPLIED_MATHS_STRANDS, spec: 'specification examined from 2023' },
   { id: 'spanish', title: 'Spanish', strands: SPANISH_STRANDS, spec: 'Leaving Certificate Spanish syllabus' },
   { id: 'italian', title: 'Italian', strands: ITALIAN_STRANDS, spec: 'Leaving Certificate Italian syllabus' },
+  { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1478,6 +1491,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   italian: {
     higher: () => import('./cards/italian/higher'),
     ordinary: () => import('./cards/italian/ordinary'),
+  },
+  japanese: {
+    higher: () => import('./cards/japanese/higher'),
+    ordinary: () => import('./cards/japanese/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),
