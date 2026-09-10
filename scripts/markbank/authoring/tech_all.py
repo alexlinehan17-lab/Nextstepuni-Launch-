@@ -49,7 +49,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 import cardlint                                              # noqa: E402
 import paper_census as PC                                    # noqa: E402
-from tech_scheme import TechScheme, cue_score                # noqa: E402
+from tech_scheme import TechScheme, cue_score, normalise as SCHEME_NORM                # noqa: E402
 from tech_topics import topic_for, topic_for_option          # noqa: E402
 
 SUBJECT = 'technology'
@@ -180,9 +180,45 @@ def split_cue(lines, ask):
     return ' '.join(cue), points
 
 
-def cardable(points):
+def reflow(points, scheme_norm=''):
+    """Put a marking point back together where the PDF broke it across lines.
+
+    The scheme sets its answers as running prose and the extractor emits one
+    line per printed line, so "Ergonomics is the science of designing and
+    arranging objects, equipment, and / environments in a way that optimises
+    human performance" arrived as two marking points and shipped as two rows a
+    student is asked to tick separately. A line that does not close a sentence,
+    or whose successor opens in lower case, is the same point continuing.
+    """
     out = []
-    for p in points:
+    for line in points:
+        text = clean(line)
+        if not text:
+            continue
+        if out:
+            prev = out[-1]
+            opens_lower = text[:1].islower() or text[:1] in ',;)'
+            unclosed = not re.search(r'[.?!:;\u2022]$', prev)
+            # A bullet, a heading and a new sentence all start their own point.
+            if unclosed and (opens_lower or not re.match(
+                    r'[A-Z\u2022\u2013-]', text)):
+                joined = f'{prev} {text}'
+                # And only where the JOIN is what the scheme prints. The two
+                # lines are adjacent in the block, not always in the file --
+                # a footer or a rubric can sit between them -- and a join
+                # across one is a sentence the SEC never wrote. The build's
+                # provenance gate caught three; asking it here means the card
+                # keeps its rows instead of being dropped whole.
+                if not scheme_norm or SCHEME_NORM(joined) in scheme_norm:
+                    out[-1] = joined
+                    continue
+        out.append(text)
+    return out
+
+
+def cardable(points, scheme_norm=''):
+    out = []
+    for p in reflow(points, scheme_norm):
         t = clean(p)
         # A cell of a table the extractor flattened -- "12000", "(EUR)" --
         # states no answer, and the provenance gate rightly refuses it. One
@@ -417,7 +453,7 @@ def author(bind_figures=True):
                              ask)
                         continue
 
-                points = cardable(points)
+                points = cardable(points, S.normalised)
                 if not points:
                     note('the scheme states no marking point for this part', ask)
                     continue
@@ -441,14 +477,25 @@ def author(bind_figures=True):
                     continue
 
                 show_stem = clean(stem) if keeps_stem(stem, question) else ''
-                joined = f'{show_stem} {question}'
                 figure = figures.get((year, level, section, q, letter))
-                if not figure and (
-                        cardlint.FIG_REF.search(joined)
-                        and not cardlint.SELF_WORK.search(joined)
-                        and not cardlint.INLINE_TABLE.search(joined)):
+
+                def points_at_print(text):
+                    return bool(cardlint.FIG_REF.search(text)
+                                and not cardlint.SELF_WORK.search(text)
+                                and not cardlint.INLINE_TABLE.search(text))
+
+                if not figure and points_at_print(question):
                     note('points at printed matter the card cannot carry', question)
                     continue
+                if not figure and show_stem and points_at_print(show_stem):
+                    # The STIMULUS points at a picture and the ask does not.
+                    # "A 4K UHD interactive touch screen ... is shown" above
+                    # "Explain the term UHD." -- the ask stands perfectly well
+                    # on its own, and the stem is context this card cannot
+                    # show. Dropped rather than the card, which is what the
+                    # deck already does with a stem once a figure is bound.
+                    show_stem = ''
+                joined = f'{show_stem} {question}'
                 if cardlint.NAMES_LETTERS.search(joined) \
                         and not cardlint.INVITES_DRAWING.search(joined):
                     # A question naming labelled points needs those letters

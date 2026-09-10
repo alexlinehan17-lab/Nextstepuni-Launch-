@@ -37,10 +37,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q1(i)",
     stem: "Contactless payment systems are a popular method of payment for goods and services.",
     questionText: "Outline two benefits for customers who use contactless payment methods when paying for goods or services. 1 2",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two benefits– no need for cash, security, speed,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "easy-to-use, better customer experience, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Any two benefits– no need for cash, security, speed, easy-to-use, better customer experience, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -52,10 +51,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q1(ii)",
     stem: "Contactless payment systems are a popular method of payment for goods and services.",
     questionText: "Give two examples of where contactless payment systems are used in everyday life. 1 2",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two applications– grocery shopping, restaurants,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "fuel filling stations, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Any two applications– grocery shopping, restaurants, fuel filling stations, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -67,11 +65,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q2(i)",
     stem: "The images show the state of the art Connacht GAA air-dome, in Bekan, Co. Mayo. Recently built, this dome is the largest of its kind in the world and is an example of an air-supported shell structure.",
     questionText: "Explain what is meant by the term shell structure.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Typically, a shell structure is a thin, lightweight", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "construction. Its strength is derived through its", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "contour or shape, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Typically, a shell structure is a thin, lightweight construction. Its strength is derived through its contour or shape, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -83,12 +79,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q2(ii)",
     stem: "The images show the state of the art Connacht GAA air-dome, in Bekan, Co. Mayo. Recently built, this dome is the largest of its kind in the world and is an example of an air-supported shell structure.",
     questionText: "Suggest two ways its design facilitates the playing of Gaelic games all year round. 1 2",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two ways– games are not weather– dependent,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "large enclosure allows for the flight of a ball to follow", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "its natural trajectory, less maintenance with a", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "synthetic pitch, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Any two ways– games are not weather– dependent, large enclosure allows for the flight of a ball to follow its natural trajectory, less maintenance with a synthetic pitch, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -100,11 +93,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q3(i)",
     stem: "The images show an orbital sander and disposable sanding discs of various grit size. ______________________________________________________________ ______________________________________________________________",
     questionText: "Give two safety precautions that should be observed when using an orbital sander. 1 2",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two safety precautions– wear ear protection,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "dust mask/ventilation, hold the sander firmly,", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "empty dust bag when full, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Any two safety precautions– wear ear protection, dust mask/ventilation, hold the sander firmly, empty dust bag when full, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -116,11 +107,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q3(ii)",
     stem: "The images show an orbital sander and disposable sanding discs of various grit size. ______________________________________________________________ ______________________________________________________________",
     questionText: "Briefly outline what ‘grit size’ refers to in relation to sanding discs.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The grit size indicates the abrasive grade (coarse, medium, fine,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "etc.) of a sanding disc. For example, a P60 sanding disc is considered to be", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "coarse in nature where as P180 is considered to be fine in nature, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The grit size indicates the abrasive grade (coarse, medium, fine, etc.) of a sanding disc. For example, a P60 sanding disc is considered to be coarse in nature where as P180 is considered to be fine in nature, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -150,13 +139,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Time: It is important that tasks are individually completed on time.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Otherwise the completion of the project could be delayed", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "significantly. Some tasks may occur simultaneously", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "which also needs to be considered, etc.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "People: Individuals take responsibility for different elements of the", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "project. It is important that everyone works together to", marks: null, openList: true },
-    { id: "r-7", kind: "point", verbatim: "ensure the completion of the project, etc.", marks: null, openList: true },
-    { id: "r-8", kind: "point", verbatim: "Budget: The cost of a project should be estimated before it", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Otherwise the completion of the project could be delayed significantly. Some tasks may occur simultaneously which also needs to be considered, etc.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "People: Individuals take responsibility for different elements of the project. It is important that everyone works together to ensure the completion of the project, etc.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Budget: The cost of a project should be estimated before it commences. Poor budgetary planning could result in the project running over budget, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -200,8 +185,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Meeting the needs of society without comprising the needs of future generations.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "In using recycled bottles to build the pitch, there is less reliance on exploiting", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "further natural resources, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "In using recycled bottles to build the pitch, there is less reliance on exploiting further natural resources, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -322,10 +306,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-b2c-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2021 OL Section B Q2(c)(ii)",
     questionText: "Outline two precautions people should take when purchasing goods online.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Buy from a secure site, be careful disclosing", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "information, be wary of false advertising, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Buy from a secure site, be careful disclosing information, be wary of false advertising, etc.", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -336,10 +319,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-b2d-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q2(d)(i)",
     questionText: "State two ways in which manufacturers can limit their environmental impact when packaging their goods.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Focus on more using more sustainable materials, reduce the volume of packaging,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "reduce the use of plastics, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Focus on more using more sustainable materials, reduce the volume of packaging, reduce the use of plastics, etc.", marks: 4, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2021-OL-paper-secB-q2d-art",
@@ -358,10 +340,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-b2d-ii", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "B", questionRef: "2021 OL Section B Q2(d)(ii)",
     questionText: "The image opposite shows boxes made from corrugated cardboard. Using notes and sketches, describe what is meant by the term corrugated cardboard.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Shaped into parallel ridges and grooves so", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "as to give added rigidity and strength, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Shaped into parallel ridges and grooves so as to give added rigidity and strength, etc.", marks: 2, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2021-OL-paper-secB-q2d-art",
@@ -380,10 +361,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-b3a-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(a)(i)",
     questionText: "Outline two advantages of 3D printing in the manufacture of bespoke (once-off) items.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rapid prototyping, cost effective, print on demand, a wide range of materials,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "minimises waste, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Rapid prototyping, cost effective, print on demand, a wide range of materials, minimises waste, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -394,10 +374,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-b3a-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(a)(ii)",
     questionText: "Suggest two other ways in which sporting equipment has been enhanced through technological advancements.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Greater choice in materials, data tracking, high performance cameras", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "for line-calling systems, e.g., Hawkeye, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Greater choice in materials, data tracking, high performance cameras for line-calling systems, e.g., Hawkeye, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -411,13 +390,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 4+2+2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "manufacturing.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Additive manufacturing is an appropriate name to describe the technologies that build", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "3D objects by adding layer-upon-layer of a material, whether the material is plastic,", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "metal, concrete, etc.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Subtractive manufacturing is a process where 3D objects are constructed by", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "successively cutting material away from a solid block of a material. Subtractive", marks: null, openList: true },
-    { id: "r-7", kind: "point", verbatim: "manufacturing can be done by manually cutting the material but is most typically done", marks: null, openList: true },
-    { id: "r-8", kind: "point", verbatim: "with a CNC Machine.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Additive manufacturing is an appropriate name to describe the technologies that build 3D objects by adding layer-upon-layer of a material, whether the material is plastic, metal, concrete, etc.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Subtractive manufacturing is a process where 3D objects are constructed by successively cutting material away from a solid block of a material. Subtractive manufacturing can be done by manually cutting the material but is most typically done with a CNC Machine.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -441,10 +415,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-b3c-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q3(c)(i)",
     questionText: "State two advantages of using an electric bicycle in a urban settng.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Less time waiting in traffic, better for the environment, assisted battery", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "power when pedalling, lower running cost compared to cars, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Less time waiting in traffic, better for the environment, assisted battery power when pedalling, lower running cost compared to cars, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -472,10 +445,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Recycling involves the process of converting waste material into reusable material, etc.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Upcycling involves reusing discarded objects or material in such a way to produce", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "products of a higher quality or value than the original, etc.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Composting is an aerobic method of decomposing organic solid waste materials into", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "humus –like material which is a good plant fertilizer, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Upcycling involves reusing discarded objects or material in such a way to produce products of a higher quality or value than the original, etc.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Composting is an aerobic method of decomposing organic solid waste materials into humus –like material which is a good plant fertilizer, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -487,12 +458,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q3(d)(ii)",
     stem: "1. Cuttng up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic botles",
     questionText: "In the case of any two processes below, state whether it is recycling, upcycling or composting.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "(Upcycling) (Recycling)", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "(Composting) (Upcycling)", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans (Upcycling) (Recycling) 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles (Composting) (Upcycling)", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -539,11 +507,11 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Inserted", marks: null, openList: true },
     { id: "r-6", kind: "point", verbatim: "N Small coffee?", marks: null, openList: true },
     { id: "r-7", kind: "point", verbatim: "Large coffee?", marks: null, openList: true },
-    { id: "r-8", kind: "point", verbatim: "Suggest a modification to the flowchart", marks: null, openList: true },
-    { id: "r-9", kind: "point", verbatim: "to indicate when the water container Coffee Coffee", marks: null, openList: true },
-    { id: "r-10", kind: "point", verbatim: "pours pours", marks: null, openList: true },
-    { id: "r-11", kind: "point", verbatim: "is empty.", marks: null, openList: true },
-    { id: "r-12", kind: "point", verbatim: "Start Stop Stop", marks: null, openList: true },
+    { id: "r-8", kind: "point", verbatim: "Suggest a modification to the flowchart to indicate when the water container Coffee Coffee pours pours is empty.", marks: null, openList: true },
+    { id: "r-9", kind: "point", verbatim: "Start Stop Stop", marks: null, openList: true },
+    { id: "r-10", kind: "point", verbatim: "Y Any valid alternative solution accepted.", marks: null, openList: true },
+    { id: "r-11", kind: "point", verbatim: "Water? Refill", marks: null, openList: true },
+    { id: "r-12", kind: "point", verbatim: "Y (iii) Describe how you would indicate,", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -554,10 +522,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 OL Section C Q1(c)(ii)",
     questionText: "Give one practical example of where a shutle valve could be used in industry.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A shuttle valve can allow a machine to be operated using two switches for", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "safety purposes, aircraft landing gear systems, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A shuttle valve can allow a machine to be operated using two switches for safety purposes, aircraft landing gear systems, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -584,10 +551,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any relevant example with a description, etc.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Parallel", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "linkage", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Gear", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Mechanical gripper", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Parallel linkage", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Gear", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Mechanical gripper", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -640,12 +606,8 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly describe the operation of the circuit.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6 + 8 + 6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "When the circuit is turned on, the capacitor begins", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "to fill with charge. When the capacitor is full, current", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "flows to the base of the transistor B. This switches the R C", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "transistor on allowing current to flow through the LED C.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "The time it takes to fill the capacitor will depend on B", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "the value of resistor R and the capacitor A, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "When the circuit is turned on, the capacitor begins to fill with charge. When the capacitor is full, current flows to the base of the transistor B. This switches the R C transistor on allowing current to flow through the LED C.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "The time it takes to fill the capacitor will depend on B the value of resistor R and the capacitor A, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -670,10 +632,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q2(c)(i)",
     stem: "Note: P = V × I Fuse in holder OR",
     questionText: "State the purpose of a fuse.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It is a safety device to stop a circuit from being overloaded. It", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "protects an electrical appliance from a damaging surge of current, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "It is a safety device to stop a circuit from being overloaded. It protects an electrical appliance from a damaging surge of current, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -687,11 +648,9 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the current this fan heater will draw from a 230 V supply.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Note: P = V × I", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "2000 W = 230 V x I", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "I = 2000/230 = 8.69 Amps (A)", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Fuse in", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "holder", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Note: P = V × I 2000 W = 230 V x I", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "I = 2000/230 = 8.69 Amps (A)", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Fuse in holder", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -702,11 +661,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(d)(i)",
     questionText: "Briefly describe what is meant by the term circuit simulation when referring to the design of circuits.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Circuit simulation software allows for circuits to be prototyped virtually before", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "being manufactured. Circuits can be tested with out physical damage to", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "components, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Circuit simulation software allows for circuits to be prototyped virtually before being manufactured. Circuits can be tested with out physical damage to components, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -717,10 +674,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c2d-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(d)(ii)",
     questionText: "Outline two benefits of using circuit simulation software when designing circuits.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Speed, safe failure environment, use components you do not physically", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "have in stock, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Speed, safe failure environment, use components you do not physically have in stock, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -731,11 +687,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c3a-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(a)(i)",
     questionText: "Outline two social benefits of playing games online.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 +4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 +4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sense of achievement/ accomplishment in the game, socialising with and relate to", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "other players, getting absorbed in the game world, escaping/take a break from real", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "life for a short time, having a sense of control over the world, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Sense of achievement/ accomplishment in the game, socialising with and relate to other players, getting absorbed in the game world, escaping/take a break from real life for a short time, having a sense of control over the world, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -748,9 +702,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline one possible consequence for your health of spending too much time playing computer games. Suggest one action that could be taken to avoid the consequence you have outlined.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 +4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Physical (including wrist, neck and elbow pain), sleep disorders, long-term addiction", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "could lead to obesity, etc.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Set time limits/keep phones and tablets out of bedroom/get exercise during the day, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Physical (including wrist, neck and elbow pain), sleep disorders, long-term addiction could lead to obesity, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Set time limits/keep phones and tablets out of bedroom/get exercise during the day, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -774,10 +727,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c3b-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(b)(ii)",
     questionText: "Discuss why fibre-optic internet access is not available in every home in Ireland.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8 + 6+ 6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6+ 6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lack of or limited infrastructure in parts of Ireland, in parts of rural Ireland it may not", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "be cost-effective for a provider to install fibre-optic cable, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Lack of or limited infrastructure in parts of Ireland, in parts of rural Ireland it may not be cost-effective for a provider to install fibre-optic cable, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -791,9 +743,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8 + 6+ 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A modem connects a home network to the wider internet, etc.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "A router allows all the wired and wireless devices to use the internet. It also allows", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "these devices to connect to each other without having to use the internet, etc.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Modern devices combine a modem and a router in the same unit, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "A router allows all the wired and wireless devices to use the internet. It also allows these devices to connect to each other without having to use the internet, etc.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Modern devices combine a modem and a router in the same unit, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -819,9 +770,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline two differences between a .JPEG image and a .PNG image.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: ".JPEG has lossy compression whereas .PNG has lossless", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "compression– .PNG has the same image quality before and after compression.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "The quality of .JPEG files is significantly lower than that of the .PNG files, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: ".JPEG has lossy compression whereas .PNG has lossless compression– .PNG has the same image quality before and after compression.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "The quality of .JPEG files is significantly lower than that of the .PNG files, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -910,10 +860,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(b)(iii)",
     questionText: "Outline two strategies a manufacturer of televisions could adopt to be more competitive than rival manufacturers of televisions.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Offer competitive prices, offer advanced features, focus on marketing/branding,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "focus on quality after sales care, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Offer competitive prices, offer advanced features, focus on marketing/branding, focus on quality after sales care, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -938,10 +887,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(c)(ii)",
     questionText: "State two advantages for a company which flat-packs their products.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Less storage required, safer for transportation, outsource assembly", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "to the consumer, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Less storage required, safer for transportation, outsource assembly to the consumer, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -952,11 +900,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(d)(i)",
     questionText: "Give two advantages of an e-Kanban system over a traditional Kanban system.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Easier to track inventory, tracking done in real time (no lag time), greater volume of", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "materials/components can be monitored using software, ability to", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "adjust to changing demand, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Easier to track inventory, tracking done in real time (no lag time), greater volume of materials/components can be monitored using software, ability to adjust to changing demand, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -970,10 +916,8 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly outline what is meant by synthetic materials and natural materials.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4 + 6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Synthetic materials are man-made and are not found in nature. They are created", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "by mixing different chemicals, or prepared compounds and substances together,", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "e.g., nylon/polyester/acrylic.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Natural materials are those that are found in nature, e.g., wool/linen/silk/cotton/leather.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Synthetic materials are man-made and are not found in nature. They are created by mixing different chemicals, or prepared compounds and substances together, e.g., nylon/polyester/acrylic.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Natural materials are those that are found in nature, e.g., wool/linen/silk/cotton/leather.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -984,11 +928,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c5b-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(b)(i)",
     questionText: "Using notes and sketches, briefly describe the process of laminating wood.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Wood laminating is the process of forming multiple sheets of veneer, chips or solid A", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "timber using moulds and bonded together using very strong adhesives, to produce rigid,", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "lightweight structures.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Wood laminating is the process of forming multiple sheets of veneer, chips or solid A timber using moulds and bonded together using very strong adhesives, to produce rigid, lightweight structures.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -1012,11 +954,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c5b-iii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(b)(iii)",
     questionText: "Permanent and semi-permanent joining methods are used in the assembly of car parts. Briefly outline the difference between both joining methods and give one example of each.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Permanent joints don’t allow dismantling of assembled components without rupturing", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "them, e.g., welded joint, use of adhesives. Semi-permanent joints allow easy dismantling", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "of assembled components without breaking them, e.g., nut and bolt, clip fastener, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Permanent joints don’t allow dismantling of assembled components without rupturing them, e.g., welded joint, use of adhesives. Semi-permanent joints allow easy dismantling of assembled components without breaking them, e.g., nut and bolt, clip fastener, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -1053,12 +993,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c5d-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(d)(i)",
     questionText: "Explain what is meant by the term smart material.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Smart materials, also called intelligent or responsive materials, are designed materials", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "that have one or more properties that can be significantly changed in a controlled fashion", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "by external stimuli, such as stress, moisture, electric or magnetic fields, light, temperature,", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "pH, or chemical compounds.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Smart materials, also called intelligent or responsive materials, are designed materials that have one or more properties that can be significantly changed in a controlled fashion by external stimuli, such as stress, moisture, electric or magnetic fields, light, temperature, pH, or chemical compounds.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -1069,10 +1006,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-c5d-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(d)(ii)",
     questionText: "Name, and give a use for, one other smart material.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Thermochromic material - children’s forehead thermometer strip, QTC-", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "pressure sensor.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Thermochromic material - children’s forehead thermometer strip, QTC- pressure sensor.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -1182,10 +1118,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q4(ii)",
     stem: "Neoprene is a material that is commonly used in wet suits worn by surfers and divers.",
     questionText: "Briefly outline the difference between a natural fabric and a synthetic fabric.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A natural fabric is derived from a plant or an animal. A synthetic fabric is made from", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "chemical compounds.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A natural fabric is derived from a plant or an animal. A synthetic fabric is made from chemical compounds.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -1197,10 +1132,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q5(i)",
     stem: "Researchers in RMIT Australia have designed a prototype wave energy converter, capable of doubling the power harvested from ocean waves.",
     questionText: "Explain what is meant by the term prototype.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "An original model of an object used to provide valuable insight", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "into how something looks or works.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "An original model of an object used to provide valuable insight into how something looks or works.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -1298,10 +1232,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q10(i)",
     stem: "Good file management is essential when saving files on a computer.",
     questionText: "Give two reasons why it is important to set up a good file management system.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two reasons, easier to find material, less likely to lose material,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "quicker access, better practice, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Any two reasons, easier to find material, less likely to lose material, quicker access, better practice, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -1374,8 +1307,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use two graphic techniques to enhance the representation of the USB flash drive shown. Answerbook for Sections B and C Instructions Questions for Sections B and C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 8 Part Start each question on a new page Question 9 Part Start each question on a new page Question 10 Part Start each question on a new page Question 11 Part Start each question on a new page Question 12 Part Start each question on a new page Question Part Start each question on a new page Question 14 Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Acknowledgements Images Image 1 page 3: https://www.safetysigns.ie/ Image 2 page 3: https://www.rte.ie/news/ Image 3 page 3: https://interestingengineering.com/ Image 1 page 4: https://www.liveabout.com/ Image 2 page 4: http://www.gtc.com/ Image 3 page 4: https://www.directindustry.com/ Image 1 page 5: https://www.teaching.com.au/ Image 2 page 5: https://www.pinterest.co.uk/ Image 3 page 5: https://www.rubbermaidcommercial.com.au/ Image 1 page 6: https://betanews.com/ Image 2 page 6: https://lh3.googleusercontent.com/IG9Wj6S37484nO4DcueUdaUzNt_ BmKKPlGV5x_vuxHhNUgzqWQa-mhbHAp47tROcXE4KPFY=s170 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rendering, colour,", marks: 4, openList: true },
-    { id: "r-2", kind: "point", verbatim: "shadow, hatching, etc.", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Rendering, colour, shadow, hatching, etc.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -1387,10 +1319,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2022 OL Section B Q2(a)(i)",
     stem: "Suggest two ways in which the manufacturer could ensure that each Modpool produced is of a high quality.",
     questionText: "Explain what is meant by the term upcycling.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The process of transforming waste/unwanted products into", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "products perceived to be of greater quality/value.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The process of transforming waste/unwanted products into products perceived to be of greater quality/value.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -1404,10 +1335,8 @@ export const CARDS: SecCard[] = [
     questionText: "Customers who purchase a product such as a Modpool expect that the product is of high quality.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Suggest two ways in which the manufacturer could ensure", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "that each Modpool produced is of a high quality.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Using high quality materials, using good quality electronics,", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "testing properly, finishing to high quality, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Suggest two ways in which the manufacturer could ensure that each Modpool produced is of a high quality.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Using high quality materials, using good quality electronics, testing properly, finishing to high quality, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1449,9 +1378,8 @@ export const CARDS: SecCard[] = [
     questionText: "An electronic circuit is required to activate a siren (buzzer) when the water level in the swimming pool is too high.",
     tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Draw a labelled diagram of a suitable circuit to activate the", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "siren.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Suitable circuit.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Draw a labelled diagram of a suitable circuit to activate the siren.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Suitable circuit.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1644,8 +1572,8 @@ export const CARDS: SecCard[] = [
     { id: "r-8", kind: "point", verbatim: "Motor On", marks: null, openList: true },
     { id: "r-9", kind: "point", verbatim: "Sprayer On LED On Stain Low", marks: null, openList: true },
     { id: "r-10", kind: "point", verbatim: "Wait 15s Motor On", marks: null, openList: true },
-    { id: "r-11", kind: "point", verbatim: "Motor Off Sprayer On (iii) Name a suitable sensor", marks: null, openList: true },
-    { id: "r-12", kind: "point", verbatim: "that could be used to", marks: null, openList: true },
+    { id: "r-11", kind: "point", verbatim: "Motor Off Sprayer On (iii) Name a suitable sensor that could be used to detect an object in the", marks: null, openList: true },
+    { id: "r-12", kind: "point", verbatim: "Sprayer Off Wait 15s path of the Robo-deck.", marks: null, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2022-OL-paper-secC-q1b-art",
@@ -1750,8 +1678,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Briefly describe the operation of the circuit.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "When the temperature is low, the transistor activates", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "and the buzzer will sound.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "When the temperature is low, the transistor activates and the buzzer will sound.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1779,9 +1706,8 @@ export const CARDS: SecCard[] = [
     questionText: "An electrolytic capacitor is a polarised component.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "An electrolytic capacitor is a polarised component. Explain what is meant by the term", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "polarised when referring to electronic components.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "A component that has an anode/cathode, positive/negative leg.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "An electrolytic capacitor is a polarised component. Explain what is meant by the term polarised when referring to electronic components.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "A component that has an anode/cathode, positive/negative leg.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1792,14 +1718,10 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c2d", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 OL Section C Q2(d)(i), (ii)",
     questionText: "(i) Name the logic gates X and Y. (ii) In your answerbook, draw and complete the truth table for the combination of logic gates shown.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A B C D (i) Name the logic gates X and Y. B", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "0 0 0 1 X = Or gate, Y = Not gate", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "0 1 1 0 (ii) In your answerbook, draw and complete", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "1 0 1 0 the truth table for the combination of logic", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "1 1 1 0 gates shown", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "Truth Table", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A B C D (i) Name the logic gates X and Y. B 0 0 0 1 X = Or gate, Y = Not gate 0 1 1 0 (ii) In your answerbook, draw and complete 1 0 1 0 the truth table for the combination of logic 1 1 1 0 gates shown", marks: 4, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Truth Table", marks: 6, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2022-OL-paper-secC-q2d-art",
@@ -1831,10 +1753,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c3a-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(a)(ii)",
     questionText: "Describe two precautions that should be taken by the end-user when accessing streaming services.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Make sure it’s coming from a reliable source, anti-virus on devices, care taken", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "when paying for services, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Make sure it’s coming from a reliable source, anti-virus on devices, care taken when paying for services, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -1888,8 +1809,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "software.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Software released where the copyright holder grants the users permission to use,", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "change and distribute the software with its source code.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Software released where the copyright holder grants the users permission to use, change and distribute the software with its source code.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1961,10 +1881,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c4a-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(a)(ii)",
     questionText: "Suggest two ways in which a company could be more environmentally conscious when considering the choice of packaging for their product.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Using less plastic, using biodegradable materials, making packaging as small as", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "possible, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Using less plastic, using biodegradable materials, making packaging as small as possible, etc.", marks: 6, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2022-OL-paper-secC-q4a-art",
@@ -2010,10 +1929,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(b)(iii)",
     questionText: "Briefly describe three unintended costs for manufacturers as a result of the disruption to the supply chain of products in 2021.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rise in cost of materials, time spent sourcing products, shipping became more", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "expensive, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Rise in cost of materials, time spent sourcing products, shipping became more expensive, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -2024,10 +1942,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(c)(i)",
     questionText: "Briefly describe two important roles of a ‘managing director’ in an organisation.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Understanding all aspects of the business, providing direction, making important", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "decisions, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Understanding all aspects of the business, providing direction, making important decisions, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -2038,10 +1955,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(c)(ii)",
     questionText: "Outline two ways of promoting good teamwork within an organisation.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Identifying roles of each member, focus on strengths of individuals,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "setting goals and objectives, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Identifying roles of each member, focus on strengths of individuals, setting goals and objectives, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2078,11 +1994,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2022-ol-c5a-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(a)(i)",
     questionText: "Explain what is meant by the term laminated when referring to wood products.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Laminated refers to a process where multiple layers of thin wood are assembled with", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "adhesives. A laminated product possesses several advantages over solid wood. It can", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "be used to fabricate large members that are impossible to make from solid wood,", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Laminated refers to a process where multiple layers of thin wood are assembled with adhesives. A laminated product possesses several advantages over solid wood. It can be used to fabricate large members that are impossible to make from solid wood,", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2096,8 +2010,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Advantage: Strong, durable, large sheet formats, etc.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Disadvantage: Sometimes their appearance is not natural, can contain", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "dangerous chemical compounds, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Disadvantage: Sometimes their appearance is not natural, can contain dangerous chemical compounds, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -2198,10 +2111,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q5(d)(i)",
     stem: "Do not write on this page Do not write on this page Acknowledgements Images Image 1 page 2: https://modpools.com/ Image 2 page 2: https://www.containex.com/ Image 3 page 2: https://modpools.com/ Image 4 page 2: https://modpools.com/ Image 1 page 3: https://interestingengineering.com/ Image 2 page 3: https://www.swytchbike.com/ Image 3 page 3: https://www.swytchbike.com/ Image 4 page 3: https://www.bike-science.com/ Image 1 page 4: https://www.robo-deck.com/ Image 2 page 4: https://www.robo-deck.com/ Image 3 page 4: https://www.ms-99.top/ Image 4 page 4: https://www.book-bro.top/ Image 1 page 5: https://elcompcomponentes.com Image 2 page 5: http://www.gloriouselectronics.com/ Image 1 page 6: https://www.ipostjournal.com/ Image 2 page 6: https://www.tesdasfist.net/ Image 3 page 6: https://commons.wikimedia.org/ Image 4 page 6: https://www.irishtimes.com/ Image 1 page 7: https://www.alibaba.com/ Image 2 page 7: https://nationalpost.com/ Image 3 page 7: https://dianegottsman.com/ Image 4 page 7: https://lh3.googleusercontent.com/a9p6W1upPtjnqDUKpINX2EA7Ur Image 1 page 8: https://www.moelven.com/mjostarnet/ Image 2 page 8: https://www.thinkwood.com/ Image 3 page 8: https://www.myeventbits.com/ Image 4 page 8: http://data.abuledu.org/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
     questionText: "Describe what is meant by the term smart material.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The properties of a smart material can be changed in a controlled fashion by external", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "stimuli, e.g., light, temperature, electricity, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The properties of a smart material can be changed in a controlled fashion by external stimuli, e.g., light, temperature, electricity, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -2216,6 +2128,32 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Spoon for baby food, room thermometer, etc.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-a1-i", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2023 OL Section A Q1(i)",
+    questionText: "State the meaning of each safety sign.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Medical/First Aid B: No entry", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-a1-ii", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2023 OL Section A Q1(ii)",
+    questionText: "Explain what is meant by safety signs that are green in colour.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Indicates positive action, e.g., a safe escape route or the location of first aid facilities.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2311,10 +2249,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q5(i)",
     stem: "The Dyson ZoneTM is an innovative wearable technology that combines noise-cancelling headphones with a built-in air purifier.",
     questionText: "Explain what is meant by the term innovative.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Creative new design, e.g., new features or methods of", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "wearing the technology, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Creative new design, e.g., new features or methods of wearing the technology, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2382,11 +2319,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q8(ii)",
     stem: "The image shows a component which is commonly used in electronics. A",
     questionText: "Pin A is known as the wiper (or slider). State the purpose of the wiper when this component is used in a circuit.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The wiper is a moveable contact. It allows for the resistance between it and one of", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "the outside terminals to be increased/decreased, depending on which way the wiper", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "is turned, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The wiper is a moveable contact. It allows for the resistance between it and one of the outside terminals to be increased/decreased, depending on which way the wiper is turned, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2398,10 +2333,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q9(i)",
     stem: "The image shows a design for a reading chair.",
     questionText: "List three steps required to manufacture the chair.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mark out design, cut materials, sand/finish,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "install seat cushion and light, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Mark out design, cut materials, sand/finish, install seat cushion and light, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2413,11 +2347,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q9(ii)",
     stem: "The image shows a design for a reading chair.",
     questionText: "State two quality attributes that could be associated with the chair.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "E.g., 50 mm cushion thickness to ensure seat comfort,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "curved legs to allow the chair to rock,", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "ultrabright LEDs to be used to provide appropriate lighting, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "E.g., 50 mm cushion thickness to ensure seat comfort, curved legs to allow the chair to rock, ultrabright LEDs to be used to provide appropriate lighting, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2428,10 +2360,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-a10", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2023 OL Section A Q10",
     questionText: "Digital technology is used by students in many ways to capture learning as it happens. Describe three ways in which digital technology could be used when producing a design portfolio for",
-    tariffModel: {"kind":"questionTotal","notation":"(3+3+2 marks)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(3+3+2 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "CAD drawings/Circuit simulation diagrams/flowcharts, graphs,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "photographic evidence of design journey, presentation of folio, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "CAD drawings/Circuit simulation diagrams/flowcharts, graphs, photographic evidence of design journey, presentation of folio, etc.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -2474,8 +2405,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use two graphic techniques to enhance the representation of the electric kettle shown. Answerbook for Sections B and C Instructions Questions for Sections B and C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 8 Part Start each question on a new page Question 9 Part Start each question on a new page Question 10 Part Start each question on a new page Question 11 Part Start each question on a new page Question 12 Part Start each question on a new page Question Part Start each question on a new page Question 14 Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Acknowledgements Images Image 1 page 3: https://safety-label.co.uk/collections/safe-condition-signs Image 2 page 3: https://cdn.vectorstock.com/i/1000x1000/13/49/no-access-for-unauthorized-persons- prohibition-vector-24711349.webp Image 3 page 3: https://db8n10t56pnoz.cloudfront.net/Pictures/780xany/3/7/9/5379_tfw160ttskydwelleraerojg_321767_c rop.jpg Image 4 page 3: https://inteng-storage.s3.amazonaws.com/img/iea/QjOdK51Wwd/sizes/wsu- concrete_resize_md.jpeg Image 1 page 4: https://inteng- storage.s3.amazonaws.com/img/iea/EBwmJl7bO0/sizes/taka_resize_md.png Image 2 page 4: https://www.decodedmagazine.com/wp-content/uploads/2022/04/Dyson-Air-Purifying- Headphones.jpg Image 3 page 4: https://sc04.alicdn.com/kf/Ha39586f90d44486fb0ad0f2fb9c9adb7O.jpg Image 1 page 5: https://images-na.ssl-images- amazon.com/images/I/516SDle3qCL._SL500 AC_SL500_.jpg Image 2 page 5: https://cdn.shopify.com/s/files/1/0032/5448/5037/products/variable-resistor- 5k_1024x1024@2x.jpg?v=1565013559 Image 3 page 5: http://s13.favim.com/orig/160710/chairs-chair-designs-chair-ideas-modern-chairs- Favim.com-4509848.jpeg Image 1 page 6: https://uppergrandfht.org/wp-content/uploads/2018/05/Woman-wheels-a-wheelbarrow- on-grass.jpg Image 2 page 6: https://www.123rf.com/photo_63630155_electric-kettle-icon-in-outline-style-on-a-white- background-vector-illustration.html Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rendering, colour,", marks: 4, openList: true },
-    { id: "r-2", kind: "point", verbatim: "shadow, hatching, etc.", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Rendering, colour, shadow, hatching, etc.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -2486,10 +2416,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-b2a-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2023 OL Section B Q2(a)(i)",
     questionText: "Explain what is meant by the term biodegradable.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A product that is able to decay/breakdown naturally and in a way that is not harmful to the", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "environment, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A product that is able to decay/breakdown naturally and in a way that is not harmful to the environment, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2526,10 +2455,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-b2b-iii", topicId: "tech-core-design", conceptId: "core-design",
     section: "B", questionRef: "2023 OL Section B Q2(b)(iii)",
     questionText: "Outline two ways Torpey Hurleys could enhance the sales of their bamboo hurleys.",
-    tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two relevant ways- promotions/ discounted prices, use high- profile players for", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "marketing purposes, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Any two relevant ways- promotions/ discounted prices, use high- profile players for marketing purposes, etc.", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -2568,10 +2496,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q2(d)(i)",
     stem: "open-viewing platform and offers breathtaking panoramic views of the city.",
     questionText: "Describe, using annotated sketches, a method used to strengthen the frame structure of the roof.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Triangulation- the roof design involves the use of triangular", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "shapes to give stability to structure.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Triangulation- the roof design involves the use of triangular shapes to give stability to structure.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2675,10 +2602,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-b3c-ii", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "B", questionRef: "2023 OL Section B Q3(c)(ii)",
     questionText: "Describe, using notes and sketches, how the floats could be attached to the main body of the aeroplane.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 2+4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 2+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any relevant method sketched and annotated,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "e.g., Nut and bolt assembly, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Any relevant method sketched and annotated, e.g., Nut and bolt assembly, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -2706,8 +2632,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Give two reasons for the use of planning tools in large projects.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "To ensure that projects are completed on time, schedule the delivery of parts,", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "manage budgets/people, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "To ensure that projects are completed on time, schedule the delivery of parts, manage budgets/people, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -2789,8 +2714,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Low voltage - typically implies 0-50 volts,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "DC represents direct current generally supplied from", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "batteries or a low voltage DC transformer supply, etc. LED On", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "DC represents direct current generally supplied from batteries or a low voltage DC transformer supply, etc. LED On", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -2885,10 +2809,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(b)(iii)",
     questionText: "Relays are often used in electronics. Describe a situation where a relay would typically be used in everyday life.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Relays can be used to control a high voltage secondary circuit from a primary low", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "voltage circuit, e.g., motorised gates, vehicle electrical systems, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Relays can be used to control a high voltage secondary circuit from a primary low voltage circuit, e.g., motorised gates, vehicle electrical systems, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -2985,11 +2908,8 @@ export const CARDS: SecCard[] = [
     questionText: "Using notes and annotated sketches, describe the difference between a star topography and a ring topography.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Star topography- the nodes are connected", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "to a central hub or router through which", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "the data travels to all the nodes.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Ring topography- the nodes are connected to", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "each other completely via a dedicated link.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Star topography- the nodes are connected to a central hub or router through which the data travels to all the nodes.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Ring topography- the nodes are connected to each other completely via a dedicated link.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3041,12 +2961,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q3(c)(ii)",
     stem: "Cybercrimes carried out by criminals sometimes use Cryptocurrency. OR",
     questionText: "Describe what you understand by the term Cryptocurrency.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cryptocurrencies are digital assets created using computer networking software that", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "enables secure trading and ownership. Bitcoin and most other cryptocurrencies are", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "supported by a technology known as blockchain, which maintains a tamper-resistant", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "record of transactions and keeps track of who owns what.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Cryptocurrencies are digital assets created using computer networking software that enables secure trading and ownership. Bitcoin and most other cryptocurrencies are supported by a technology known as blockchain, which maintains a tamper-resistant record of transactions and keeps track of who owns what.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -3070,10 +2987,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-c3d-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(d)(ii)",
     questionText: "Describe what is meant by the term encryption when referring to data storage.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The process of converting information into code, to prevent unauthorised access to", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "the data, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The process of converting information into code, to prevent unauthorised access to the data, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -3137,10 +3053,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(c)(i)",
     questionText: "Outline two reasons why tests are carried out on bicycles before they are sold to customers.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To ensure that they are fit-for-purpose,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "determine the warranty period, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "To ensure that they are fit-for-purpose, determine the warranty period, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3153,10 +3068,9 @@ export const CARDS: SecCard[] = [
     questionText: "Cause and effect diagrams can be used to problem-solve quality related issues. Briefly outline a fault (effect) that might be identified by the testing of a bicycle and suggest a potential cause.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Briefly outline a fault (effect) that might be identified by the", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "testing of a bicycle and suggest a potential cause.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Effect- Failure of brake system, Cause- broken brake cable.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Any relevant effect and cause identified.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Briefly outline a fault (effect) that might be identified by the testing of a bicycle and suggest a potential cause.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Effect- Failure of brake system, Cause- broken brake cable.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Any relevant effect and cause identified.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3167,10 +3081,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(d)(i)",
     questionText: "Outline two ways a bicycle could be designed so that it can be easily recycled.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Semi-permanent jointing methods used to disassemble parts of the bicycle,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "use recyclable materials in its manufacture, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Semi-permanent jointing methods used to disassemble parts of the bicycle, use recyclable materials in its manufacture, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3181,10 +3094,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2023-ol-c4d-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(d)(ii)",
     questionText: "Suggest two consequences for the environment of a poorly designed product at its end of life.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "More products sent to landfill sites, waste of materials, further consumption of", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "earth’s natural resources, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "More products sent to landfill sites, waste of materials, further consumption of earth’s natural resources, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -3210,10 +3122,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q5(a)(ii)",
     stem: "the world with a main span of 2,023 metres. Steel was used to make the suspension cables of the bridge. Suspension cables",
     questionText: "Steel is an example of an alloy. Briefly describe what is meant by the term alloy when referring to materials.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "An alloy consists of two or more materials combined to produce a new material with", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "different properties to its constituent materials.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "An alloy consists of two or more materials combined to produce a new material with different properties to its constituent materials.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -3248,10 +3159,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q5(b)(ii)",
     stem: "Vertical cables Bracket Deck",
     questionText: "Using notes and annotated sketches, describe how a vertical suspending cable could be attached to the concrete deck using a bracket like that shown.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A cable (wire rope) sling could be attached using a", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "heavy duty nut and bolt assembly, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A cable (wire rope) sling could be attached using a heavy duty nut and bolt assembly, etc.", marks: 8, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2023-OL-paper-secC-q5b-art",
@@ -3363,10 +3273,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q2(i)",
     stem: "The image shows a wallet which has Radio Frequency Identification (RFID) protection built in to protect it from skimming.",
     questionText: "Explain what is meant by the term skimming.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Skimming is a method of obtaining an individual’s payment card data", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "to use their account illegally.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Skimming is a method of obtaining an individual’s payment card data to use their account illegally.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3393,11 +3302,9 @@ export const CARDS: SecCard[] = [
     questionText: "The SolarEV City Concept combines solar panels on rooftops with electric vehicles on the streets. Using this, and other concepts, the city of Paris aims to eliminate local CO2 (carbon dioxide) emissions by the year 2050. Describe two other ways urban areas can reduce carbon emissions.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "streets. Using this, and other concepts, the city of Paris aims to", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "eliminate local CO2 (carbon dioxide) emissions by the year 2050.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Describe two other ways urban areas can reduce carbon emissions.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Greater use of public transport, use renewable energy,", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "reduce energy demand through efficient urban design, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "streets. Using this, and other concepts, the city of Paris aims to eliminate local CO2 (carbon dioxide) emissions by the year 2050.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Describe two other ways urban areas can reduce carbon emissions.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Greater use of public transport, use renewable energy, reduce energy demand through efficient urban design, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3437,10 +3344,22 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q5(ii)",
     stem: "The image shows a graphic view used to represent a camera.",
     questionText: "State two advantages of using this type of representation.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The representation shows how the various parts can be assembled together, it", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "provides a better understanding of a product, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The representation shows how the various parts can be assembled together, it provides a better understanding of a product, etc.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-a6-ii", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2024 OL Section A Q6(ii)",
+    questionText: "Describe a situation where this tool might be used.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It can be useful when a line must be marked at an angle on wood. It can also be used to check an angle, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3466,10 +3385,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q9(i)",
     stem: "The image shows an innovative hairdryer that has been ergonomically designed. Calculate how much it will cost to run the hairdryer for 15 minutes, if the cost per unit of electricity is €1 per kWh.",
     questionText: "Give one example of how this hairdryer is ergonomically designed.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Shape of the handle, no sharp edges/points,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "extra attachments for different end uses, switch position, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Shape of the handle, no sharp edges/points, extra attachments for different end uses, switch position, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3483,9 +3401,8 @@ export const CARDS: SecCard[] = [
     questionText: "The hairdryer has a power rating of 2 kW.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Calculate how much it will cost to run the hairdryer for", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "15 minutes, if the cost per unit of electricity is €1 per kWh.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Calculation: 15/60 x 2 kW = €0.50", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Calculate how much it will cost to run the hairdryer for 15 minutes, if the cost per unit of electricity is €1 per kWh.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Calculation: 15/60 x 2 kW = €0.50", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3497,10 +3414,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q10(i)",
     stem: "The image shows a screenshot from a Computer Aided Design (CAD) software package.",
     questionText: "Explain what is meant by the term software.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A set of instructions, data or programs that tell a computer", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "how to perform specific tasks, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A set of instructions, data or programs that tell a computer how to perform specific tasks, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3512,10 +3428,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q10(ii)",
     stem: "The image shows a screenshot from a Computer Aided Design (CAD) software package.",
     questionText: "State two reasons why a student would use CAD in Technology.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "When designing a product, to create drawing files when using a laser cutter/3D", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "printer, the communicate working drawings, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "When designing a product, to create drawing files when using a laser cutter/3D printer, the communicate working drawings, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3528,14 +3443,12 @@ export const CARDS: SecCard[] = [
     questionText: "The graphic shows the bathtub curve which is used to represent the failure rate of a product over a period of time. D Failure Rate A B C Time Suggest a reason for the high failure rate at A-B, and at C-D.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "used to represent the failure rate of a product", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "over a period of time. Failure Rate B C", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Time", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Suggest a reason for the high failure rate at A-B, and at C-D.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "High failure rate at A-B: Early stage in the life of a product- faults are more likely to occur.", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "As problems are resolved, the failure rate begins to fall.", marks: null, openList: true },
-    { id: "r-7", kind: "point", verbatim: "High failure rate at C-D: The product is approaching its end of life and faults increase due to", marks: null, openList: true },
-    { id: "r-8", kind: "point", verbatim: "failing parts within the product, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "used to represent the failure rate of a product over a period of time. Failure Rate B C", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Time", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Suggest a reason for the high failure rate at A-B, and at C-D.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "High failure rate at A-B: Early stage in the life of a product- faults are more likely to occur.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "As problems are resolved, the failure rate begins to fall.", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "High failure rate at C-D: The product is approaching its end of life and faults increase due to failing parts within the product, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3548,8 +3461,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use two graphic techniques to enhance the representation of the desk lamp shown. Answerbook for Sections B and C Instructions Questions for Sections B and C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 8 Part Start each question on a new page Question 9 Part Start each question on a new page Question 10 Part Start each question on a new page Question 11 Part Start each question on a new page Question 12 Part Start each question on a new page Question Part Start each question on a new page Question 14 Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Acknowledgements Images Image 1 page 3: https://cdn.huntoffice.ie/images/P.cache.large/safety-sign.jpg Image 2 page 3: https://pularys.com/en/pularys/product/173713101/ Image 3 page 3: https://media.istockphoto.com/photos/shanghai-urban-landscape-landmarks-and-solar- panels-picture-id946740894?k=6&m=946740894&s=170667a&w=0&h=cs9fDvI-ELU3rZQDpMXgT- d0T4tSLYVEJ4cn2TP4QfY= Image 1 page 4: https://centraltechsupplies.ie/wp-content/uploads/2023/05/ECM310BUZ-1.jpg Image 2 page 4: https://images.squarespace- cdn.com/content/v1/58702ee844024315d26e2e1e/1534879555982- SWPNGNGH1N7G53WHNFDM/Camera.jpg?format=2500w Image 3 page 4: https://s3-eu-west- 1.amazonaws.com/webshop/data/thumbs/db/db40a8f559cef3f9d86792203a153e548dbb2dfc.jpg Image 1 page 5: https://m.media-amazon.com/images/I/61s9EAQyojL._AC_SX679_.jpg Image 2 page 5: https://www.linearmotiontips.com/wp-content/uploads/2017/10/Belt-and-Pulleys.jpg Image 3 page5: https://fashionista.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_760/MTUwNDQ2OTQ0MDIyNT A1MTMx/aria-unicorn_mini-blowdryer.webp Image 1 page 6: https://www.fiverr.com/zaj_22/do-anything-ranging-from-a-simple-part-in-solidworks-to- a-medium-assembly Image 2 page 6: https://pngtree.com/so/flexible-desk-lamp Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rendering, colour,", marks: 4, openList: true },
-    { id: "r-2", kind: "point", verbatim: "shadow, hatching, etc.", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Rendering, colour, shadow, hatching, etc.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -3602,10 +3514,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-b2b-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2024 OL Section B Q2(b)(ii)",
     questionText: "Briefly outline the purpose of a ball bearing system in the wheel assembly.",
-    tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A ball bearing system allows the wheel to roll faster and", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "smoother by reducing friction.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A ball bearing system allows the wheel to roll faster and smoother by reducing friction.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3633,8 +3544,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Adv: Enhanced security, fraud prevention, convenience, etc.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Disadv: Access to personal data, potential problems if", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "software malfunctions, e.g., delayed access, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Disadv: Access to personal data, potential problems if software malfunctions, e.g., delayed access, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3690,9 +3600,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline two advantages of using the JA1 Pulse aircraft to respond to a medical emergency.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Outline two advantages to using the JA1 Pulse aircraft", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "to respond to a medical emergency.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Access to difficult terrain, fast response time, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Outline two advantages to using the JA1 Pulse aircraft to respond to a medical emergency.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Access to difficult terrain, fast response time, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3730,10 +3639,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-b3b-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2024 OL Section B Q3(b)(ii)",
     questionText: "Suggest two safety features that could be incorporated into the design of the JA1 pulse.",
-    tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Greater stability when flying in windy conditions, propellers are higher than a person’s", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "head for operational safety, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Greater stability when flying in windy conditions, propellers are higher than a person’s head for operational safety, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3757,10 +3665,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-b3d-i", topicId: "tech-core-project", conceptId: "core-project",
     section: "B", questionRef: "2024 OL Section B Q3(d)(i)",
     questionText: "Briefly outline two benefits of using a WBS when planning for the design and manufacture of a product.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Identify tasks and sequences, identify resources required, provide greater clarity when", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "organising schedules, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Identify tasks and sequences, identify resources required, provide greater clarity when organising schedules, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3771,10 +3678,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-b3d-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2024 OL Section B Q3(d)(ii)",
     questionText: "Suggest a sequence of steps to 3D print a propeller for a model aircraft.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Create a design using CAD software, export the STL File, choose your materials,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "choose your parameters, create the Gcode, print, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Create a design using CAD software, export the STL File, choose your materials, choose your parameters, create the Gcode, print, etc.", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -3800,10 +3706,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q1(a)(ii)",
     stem: "Start • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed Button • When the button is pressed a third time, the motorised blower stops.",
     questionText: "Suggest one other child’s toy that could use a PIC and outline why it would be useful to use a PIC in this toy. Suggest a modification of the flowchart to alert the user when the bubble solution is running low.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any relevant example and justification, e.g., remote controlled all-terrain buggy-", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "multiple functions- lights, motors, different speeds, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Any relevant example and justification, e.g., remote controlled all-terrain buggy- multiple functions- lights, motors, different speeds, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3816,18 +3721,18 @@ export const CARDS: SecCard[] = [
     questionText: "A PIC, like the one mentioned in",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Complete a flowchart to operate the bubble blower in the Start", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Complete a flowchart to operate the bubble blower in the Start following sequence:", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "• When a button is pressed, the motorised blower is turned on N", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "• When the button is pressed a second time, Button", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "the motorised blower increases its speed Y", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "• When the button is pressed a third time, Motor On", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "the motorised blower stops.", marks: null, openList: true },
-    { id: "r-7", kind: "point", verbatim: "Start N", marks: null, openList: true },
-    { id: "r-8", kind: "point", verbatim: "Button", marks: null, openList: true },
-    { id: "r-9", kind: "point", verbatim: "Button N Y", marks: null, openList: true },
-    { id: "r-10", kind: "point", verbatim: "Button N", marks: null, openList: true },
-    { id: "r-11", kind: "point", verbatim: "Suggest a modification of the Y", marks: null, openList: true },
-    { id: "r-12", kind: "point", verbatim: "flowchart to alert the N Y", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "• When the button is pressed a second time, Button the motorised blower increases its speed Y", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "• When the button is pressed a third time, Motor On the motorised blower stops.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Start N", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "Button", marks: null, openList: true },
+    { id: "r-7", kind: "point", verbatim: "Button N Y", marks: null, openList: true },
+    { id: "r-8", kind: "point", verbatim: "Button N", marks: null, openList: true },
+    { id: "r-9", kind: "point", verbatim: "Suggest a modification of the Y flowchart to alert the N Y user when the bubble solution Solution?", marks: null, openList: true },
+    { id: "r-10", kind: "point", verbatim: "is running low. Y Motor Off", marks: null, openList: true },
+    { id: "r-11", kind: "point", verbatim: "Motor On", marks: null, openList: true },
+    { id: "r-12", kind: "point", verbatim: "Name a suitable sensor that could be used to detect when the N bubble solution is low. Button", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3864,12 +3769,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c1d-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(d)(i)",
     questionText: "Explain how a single-acting cylinder works with reference to the graphic shown.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A single acting cylinder has one port, which allows", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "compressed air to enter the cylinder chamber and extend the", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "rod in one direction. When the compressed air leaves the", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "cylinder, the spring returns the rod to its original position.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A single acting cylinder has one port, which allows compressed air to enter the cylinder chamber and extend the rod in one direction. When the compressed air leaves the cylinder, the spring returns the rod to its original position.", marks: 6, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2024-OL-paper-secC-q1d-art",
@@ -3888,10 +3790,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c1d-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(d)(ii)",
     questionText: "Give one practical example of where a single-acting cylinder could be used in everyday life.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Assembly operations- materials handling, clamping work,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "packaging operations, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Assembly operations- materials handling, clamping work, packaging operations, etc.", marks: 4, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2024-OL-paper-secC-q1d-art",
@@ -3924,10 +3825,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c2a-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 OL Section C Q2(a)(ii)",
     questionText: "Describe how a student would ensure that an LED is correctly polarised when inserting it into a circuit.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The anode of the LED is connected to the positive terminal of the power supply and", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "the cathode is connected to the negative terminal of the power supply.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The anode of the LED is connected to the positive terminal of the power supply and the cathode is connected to the negative terminal of the power supply.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3953,11 +3853,8 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly outline the purpose of capacitor C in the circuit.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "in the circuit. 2 1", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Capacitor C is used to control the length of", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "time the output stays activated. The larger the", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "capacitor the longer the output will stay on C", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "when configured in a monostable mode. 0 V", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "7 3 in the circuit. 2 1", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Capacitor C is used to control the length of time the output stays activated. The larger the capacitor the longer the output will stay on C when configured in a monostable mode. 0 V", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3998,8 +3895,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "This is the acceptable deviation allowed for the stated value of resistor.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "e.g., 5% deviation for a 330 Ω resistor = 16.5 Ω. Therefore, the acceptable range for", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "this resistor is 313.5 Ω to 346.5 Ω.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "e.g., 5% deviation for a 330 Ω resistor = 16.5 Ω. Therefore, the acceptable range for this resistor is 313.5 Ω to 346.5 Ω.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4036,11 +3932,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c3b-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(b)(i)",
     questionText: "Outline two reasons why data centres use large amounts of electricity.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Many devices operating simultaneously require large volumes of electricity, heat", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "generated from these devices needs to be cooled using fans, which in turn requires", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "electricity to operate, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Many devices operating simultaneously require large volumes of electricity, heat generated from these devices needs to be cooled using fans, which in turn requires electricity to operate, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -4054,11 +3948,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Router: Disperses the signal to devices on the network", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Switches: Allows two or more IT devices to connect with one another using ethernet", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "cables.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Modem: Responsible for sending and receiving signals from the ISP.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Firewall: A network security device that monitors network traffic and blocks specific", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "traffic based on a defined set of security rules, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Switches: Allows two or more IT devices to connect with one another using ethernet cables.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Modem: Responsible for sending and receiving signals from the ISP.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Firewall: A network security device that monitors network traffic and blocks specific traffic based on a defined set of security rules, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4108,10 +4000,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c3d-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(d)(i)",
     questionText: "State a reason why a user might need to purchase a licence for a particular software application.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To use software legitimately, protect the intellectual property", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "of the software developer, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "To use software legitimately, protect the intellectual property of the software developer, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -4136,10 +4027,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c4a-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(a)(i)",
     questionText: "Suggest two reasons why a company might use this technique when designing a product.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To better understand how a product is made, to gain a competitive advantage over", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "other manufacturers, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "To better understand how a product is made, to gain a competitive advantage over other manufacturers, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -4163,10 +4053,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(b)(i)",
     questionText: "Give two reasons why the sales are low in year 1.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Market introduction and development, little demand as", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "customers may not be aware of the new product, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Market introduction and development, little demand as customers may not be aware of the new product, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -4177,10 +4066,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(b)(ii)",
     questionText: "Briefly outline two challenges for the company in meeting the demand for the product in Year 2.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Manufacturing capacity, supply of materials,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "distribution of the product, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Manufacturing capacity, supply of materials, distribution of the product, etc.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -4259,12 +4147,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q5(a)(i)",
     stem: "electric vehicle with the longest range in the world. The shell of the car is made from carbon fibre composite material.",
     questionText: "Explain what is meant by the term composite, when referring to materials.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A composite material is a combination of two or more materials with different", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "physical and chemical properties. Within the finished material, the individual", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "elements remain separate and distinct. Composite materials are typically stronger,", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "lighter, more durable when compared with common materials.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A composite material is a combination of two or more materials with different physical and chemical properties. Within the finished material, the individual elements remain separate and distinct. Composite materials are typically stronger, lighter, more durable when compared with common materials.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -4305,9 +4190,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "degradation.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Galvanising- a process of applying a protective zinc coating to steel or iron to prevent", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "rusting.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Alternative finishes- Powder coating, paint, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Galvanising- a process of applying a protective zinc coating to steel or iron to prevent rusting.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Alternative finishes- Powder coating, paint, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4321,8 +4205,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A permanent joint cannot be dismantled without breaking, e.g., a welded joint.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "A semi-permanent joint can be dismantled without breaking the assembled parts, e.g.,", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "nut and bolt, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "A semi-permanent joint can be dismantled without breaking the assembled parts, e.g., nut and bolt, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4346,10 +4229,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 OL Section C Q5(c)(ii)",
     questionText: "Outline two problems for the environment caused by using plastics to manufacture products.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Disposal of plastics can be hazardous for the environment, damage wildlife", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "habitats/biodiversity, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Disposal of plastics can be hazardous for the environment, damage wildlife habitats/biodiversity, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -4361,10 +4243,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q5(d)(i)",
     stem: "Do not write on this page Do not write on this page Acknowledgements Image 1 page 2: https://www.independent.co.uk/sport/olympics/paris-2024-olympics-new-sports- b1896547.html Image 2 page 2: https://www.independent.co.uk/sport/olympics/paris-2024-olympics-new- sports-b1896547.html Image 3 page 2: https://nypost.com/2018/08/07/tokyo-to-use-facial-recognition-technology-for-2020- olympics/ Image 4 page 2: https://eandt.theiet.org/content/articles/2023/03/france-to-trial-ai-surveillance- technology-at-2024-olympic-games-despite-concerns/ Image 1 page 3: https://evtol.news/jump-aero/ Image 2 page 3: https://www.meesho.com/electronic-spices-pair-of-4-10x12x20-mm-55-mm-mini- drone-dc-motor-propeller-25000-rpm-dual-shaft-motor-mini-drone-spares-and-diy- projects-motor-control-electronic-hobby-kit/p/4bafr0 Image 3 page 3: https://evtol.news/jump-aero/ Image 1 page 4: https://www.amazon.com/ONE-Automatic-Portable-Toddlers- Batteries/dp/B072J1GX6M?th=1 Image 2 page 4: https://www.amazon.com/DIPIUS-Cleaner-Collect-Station-Navigation/dp/B0BZXQLZWG Image 1 page 5: https://www.techmaker.it/led/46-led-rosso-5mm Image 2 page 5: https://www.wellpcb.com/standard-pcb-drill-sizes.html Image 3 page 5: https://www.diyelectronics.co.za/store/resistors/1576-resistor-330-ohm-14w-5.html Image 1 page 6: https://encrypted- tbn0.gstatic.com/images?q=tbn:ANd9GcTpjX6qunNUL0rITp2PdTJQeCWufCw1pmM87Jo yVRuc1kEUFlObkw1s4stZ_B0h3QgzF6E&usqp=CAU Image 2 page 6: https://www.tomshardware.com/reviews/cpu-socket-definition,5758.html Image 3 page 6: https://www.tripwire.com/state-of-security/5-social-engineering-attacks-to-watch-out- for Image 4 page 6: https://www.microsoft.com/en-ie/d/surface-laptop- studio/8srdf62swkpf?activetab=pivot:overviewtab Image 1 page 7: https://www.coroflot.com/edmundwong/reverse-engineering-hairdryer Image 2 page 7: https://vuecolumbus.com/meeting-rooms/new-year-planning-meetings-done-right/ Image 1 page 8: https://www.windkraft-journal.de/2023/09/10/reichweitenstaerkstes-elektroauto-der- welt-kommt-aus-muenchen/192116 Image 2 page 8: https://tufast-eco.de/?page_id=623 Image 3 page 8: https://www.amazon.co.uk/YOIQI-Steering-Tuning-Leather- Competition/dp/B0C7Q8Y5LK Image 4 page 8: https://medium.com/@carnewsworld22/how-photochromic-windshields-revolutionize- driving-safety-d8cdc8533597 Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
     questionText: "Explain what is meant by the term smart material.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Smart materials have one or more properties that can be significantly changed in a", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "controlled fashion by external stimuli such as light or temperature.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Smart materials have one or more properties that can be significantly changed in a controlled fashion by external stimuli such as light or temperature.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -4379,6 +4260,32 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sunglasses, privacy shields, optical switches, etc.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a1-i", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2025 OL Section A Q1(i)",
+    questionText: "Name the machine.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Band saw.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a1-ii", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2025 OL Section A Q1(ii)",
+    questionText: "State two safety precautions which should be observed when using this machine.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wear safety glasses, ear defenders, use a protective guard, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -4414,15 +4321,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a3-ii", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2025 OL Section A Q3(ii)",
+    questionText: "Explain what is meant by safety signs that are red in colour.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prohibitive action- stop, yield or do what is shown on the sign, etc.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-a5-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2025 OL Section A Q5(i)",
     stem: "The image shows a resistor commonly used in electronics.",
     questionText: "State the function of a resistor in a circuit.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It limits or regulates the flow of electrical current in an", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "electronic circuit. Resistors can also be used to provide a", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "specific voltage for a component such as a transistor.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "It limits or regulates the flow of electrical current in an electronic circuit. Resistors can also be used to provide a specific voltage for a component such as a transistor.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -4436,7 +4354,7 @@ export const CARDS: SecCard[] = [
     questionText: "A voltage of 9 V is applied across a resistor of 100 Ω. Calculate the current flowing through the resistor.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "9 = I x 100", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "V = I x R, 9 = I x 100", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "I = 9/100 = 0.09A (90mA)", marks: null, openList: true },
     ],
   } as SecCard,
@@ -4520,10 +4438,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Section A Q8(ii)",
     stem: "The image shows a wooden cup holder that rests on the arm of a sofa.",
     questionText: "List three steps required to manufacture the cup holder.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mark out, cut parts, drill cup holder hole, drill pilot holes,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "assemble parts, apply a finish, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Mark out, cut parts, drill cup holder hole, drill pilot holes, assemble parts, apply a finish, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -4536,13 +4453,12 @@ export const CARDS: SecCard[] = [
     questionText: "ICT (Information and Communications Technology) is used daily in schools for communication, learning, and accessing information. Name two forms of ICT you have used and state the purpose of using each.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ICT (Information and Communication Technology) is used daily in schools for communication,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "learning, and accessing information.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Name two forms of ICT you have used and state the purpose of using each.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "ICT: PC/Laptop", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Purpose: to write a portfolio", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "ICT: Solidworks", marks: null, openList: true },
-    { id: "r-7", kind: "point", verbatim: "Purpose: Produce working drawings, CAM files for 3D printing/laser cutting, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "ICT (Information and Communication Technology) is used daily in schools for communication, learning, and accessing information.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Name two forms of ICT you have used and state the purpose of using each.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "ICT: PC/Laptop", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Purpose: to write a portfolio", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "ICT: Solidworks", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "Purpose: Produce working drawings, CAM files for 3D printing/laser cutting, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4599,8 +4515,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use two graphic techniques to enhance the representation of the coffee cup shown. Answerbook for Sections B and C Instructions Questions for Sections B and C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 8 Part Start each question on a new page Question 9 Part Start each question on a new page Question 10 Part Start each question on a new page Question 11 Part Start each question on a new page Question 12 Part Start each question on a new page Question Part Start each question on a new page Question 14 Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Acknowledgements Images Question 1 https://www.machineryhouse.co.nz/w4330 Question 2 https://interestingengineering.com/transportation/giant-cylinder-sails-cut-fuel-cargo-ships Question 3 https://www.safetydirect.ie/dependable-no-photography-symbol-signs.html Question 4 https://www.terenureofficesupplies.ie/2work-mini-2-step-ladder-l2--5 Question 6 https://usframing.com/2022/03/22/pros-and-cons-of-steel-frame-construction/ Question 7 https://www.indiamart.com/proddetail/clear-lacquer-top-coat-12563397462.html?mTd=1 Question 8 https://ie.pinterest.com/pin/177399672810806915/ Question 9 https://www.amazon.de/-/en/BGNERY-Skills-Battery-Switch-Motors/dp/B0BY1ZGPTB Question 10 https://best-engineering-goods-online.weebly.com/chains-and-sprockets.html Question 11 https://www.exportersindia.com/product-detail/v-belt-patta-pulley-6433425.htm Question 12 https://www.iconfinder.com/icons/10674016/.svg_coffee_cup_cardboard_takeaway_takeout_icon Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rendering, colour,", marks: 4, openList: true },
-    { id: "r-2", kind: "point", verbatim: "shadow, hatching, etc.", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Rendering, colour, shadow, hatching, etc.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -4741,10 +4656,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2025-ol-b3a-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 OL Section B Q3(a)(ii)",
     questionText: "Describe two safety concerns when constructing large infrastructure projects like an immersed tunnel.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Concern for workers when constructing the tunnel,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "structural integrity if there was a leakage in the tunnel, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Concern for workers when constructing the tunnel, structural integrity if there was a leakage in the tunnel, etc.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -4756,10 +4670,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q3(b)(i)",
     stem: "Pre-cast concrete section",
     questionText: "Describe, with the aid of a diagram, what is meant by the term compression when referring to materials.",
-    tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 4+2+2)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 4+2+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Compression- forces that act to compress or", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "squeeze a material.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Compression- forces that act to compress or squeeze a material.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -4881,9 +4794,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "• When a button is pressed, the motorised gate opens", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "• After 30 seconds, the gate closes Start", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "• The motorised gate must remain closed for a minimum", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "of 10 seconds before it can open again. N", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Button", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "• The motorised gate must remain closed for a minimum of 10 seconds before it can open again. N", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Button", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4925,10 +4837,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2025-ol-c1c-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2025 OL Section C Q1(c)(i)",
     questionText: "Using notes and annotated sketches, explain what is meant by the term degrees of freedom.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Joints of movement- the number of independent ways a robotic arm", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "or mechanism can move.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Joints of movement- the number of independent ways a robotic arm or mechanism can move.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -5024,9 +4935,8 @@ export const CARDS: SecCard[] = [
     questionText: "Controlling the speed of the motor can be useful in different situations.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name an electronic component that could be used to vary the speed of the motor. Give", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "one example of where motor speed control is useful in everyday life.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Variable resistor. Roller doors, conveyor belt systems, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Name an electronic component that could be used to vary the speed of the motor. Give one example of where motor speed control is useful in everyday life.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Variable resistor. Roller doors, conveyor belt systems, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -5039,7 +4949,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the logic gates at X and Y.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "X = And Y = Not A B C D", marks: 6, openList: true },
+    { id: "r-1", kind: "point", verbatim: "X = And Y = Not A B C D 0 0 0 1", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -5129,10 +5039,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2025-ol-c3c-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2025 OL Section C Q3(c)(i)",
     questionText: "Explain what is meant by the term buffering.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "When streaming audio or video from the internet, buffering refers to downloading a", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "certain amount of data before starting to play the music or video.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "When streaming audio or video from the internet, buffering refers to downloading a certain amount of data before starting to play the music or video.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -5328,10 +5237,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2025-ol-c5c-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2025 OL Section C Q5(c)(i)",
     questionText: "Outline two features that would indicate that a golf club was manufactured from high quality materials.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The golf club is consistently accurate in terms of distance or accuracy. The club in easy", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "of use, lightweight, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The golf club is consistently accurate in terms of distance or accuracy. The club in easy of use, lightweight, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -5356,10 +5264,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q5(d)(i)",
     stem: "Do not write on this page Do not write on this page Acknowledgements Image 1 page2: https://bolt.eu/en-ie/blog/bolt-e-bikes-hit-the-streets-of-wexford/ Image 2 page2: https://bolt.eu/en/ebikes/ Image 3 page2: https://bolt.eu/en/blog/types-of-electric-bikes/ Image 4 page2: https://bolt.eu/en-ie/blog/bolt-balance-a-faster-safer-and-more-convenient-way-to- pay/ Image 1 page3: https://www.worldhighways.com/wh10/feature/fehmarnbelt-tunnel-another-danish- connection Image 2 page3: https://www.railwaygazette.com/infrastructure/german-approval-for-fehmarn-belt- project-signed/48022.article Image 3 page3: https://cinea.ec.europa.eu/news-events/news/linking-germany-denmark-and-beyond- 2024-07-30_en Image 4 page3: https://shout-hub.eu/sfwd-lessons/the-concept-of-sustainable-development/ Image 1 page4: https://picaxe.com/what-is-picaxe/picaxe-chip-sizes/ Image 2 page4: https://accessautomation.ie/ways-to-increase-the-efficiency-of-your-automatic-gate/ Image 3 page4: https://www.cadcrowd.com/3d-models/6-dof-robot Image 4 page4: https://ronixtools.com/en/power-tools/pneumatic-tools/pneumatic-drill/ Image 1 page5: https://selfbuild.ie/advice/solar-panels/ Image 2 page5: https://www.sgeducation.ie/miniature-dc-motor-3v-6v-mm28-lfp Image 3 page5: https://store.nerokas.co.ke/SKU-1249 Image 1 page6: https://www.creativefabrica.com/product/email-open-mail-icon/ Image 2 page6: https://usa.kaspersky.com/resource-center/definitions/encryption Image 3 page6: https://miro.medium.com/max/800/1*QVBIZ6OcvPFx6l8IAwyeuw.jpeg Image 4 page6: https://www.canon.ie/get-inspired/tips-and-techniques/photo-editing-tips/ Image 1 page7: https://www.bilaterals.org/?auto-industry-skeptical-of&lang=fr Image 2 page7: https://www.ft.com/content/5364bea4-4f97-49ba-88fb-845d3b648b96 Image 3 page7: https://www.miquido.com/blog/market-research-methods/ Image 4 page7: https://www.sign96.com/product/aluminium-slider-door-sign-dor-813/ Image 1 page8: https://www.golfmonthly.com/news/bryson-dechambeau/ Image 2 page8: https://www.b3d-online.com/blog-news/back-to-basic-what-is-fdm-3d-printing Image 3 page8: https://westessexgolfclub.co.uk/types-of-golf-driver/ Image 4 page8: https://www.golfballs.com/blog/what-are-golf-balls-made-out-of/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
     questionText: "Explain what is meant by the term smart material.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A material whose physical or chemical properties can be significantly altered in a", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "controlled and reversible way in response to external stimuli, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A material whose physical or chemical properties can be significantly altered in a controlled and reversible way in response to external stimuli, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {

@@ -108,6 +108,21 @@ NOT_A_POINT = re.compile(
     r'or any other valid|any other valid|etc\.?)\s*[:.]?\s*$', re.I)
 
 
+# schemeText.mjs's own two "carries no marking content" line tests.
+MARKS_ONLY = re.compile(r'^\s*\d+\s*(\(\s*\d+\s*\))?\s*$')
+LABEL_ONLY = re.compile(r'^\s*\(?\s*([ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s*$', re.I)
+
+
+def normalise(text):
+    """Case, spacing and punctuation removed -- schemeText.mjs's own rule.
+
+    Mirrored here so the authoring pass can ask the build's question before it
+    writes a card: does this string appear in its own scheme? The build asks it
+    afterwards and drops the card, which is too late to try something else.
+    """
+    return re.sub(r'[^a-z0-9]+', '', text.lower())
+
+
 def _words(text):
     return {w for w in re.findall(r"[a-z']+", (text or '').lower()) if len(w) > 2}
 
@@ -180,6 +195,17 @@ class TechScheme:
             f'{year}-{self.level}.md')
         self.blocks = {}
         self._parse()
+        with open(self.path, encoding='utf-8') as fh:
+            raw = fh.read()
+        # The scheme AS THE BUILD'S PROVENANCE GATE SEES IT: comparableScheme
+        # drops the lines that carry no marking content -- a line that is
+        # nothing but a number, and a line that is nothing but a part label --
+        # before it searches. A claim quoted ACROSS one of those lines is not
+        # in the scheme by the gate's reckoning, however plainly it is on the
+        # page, so the same lines come out here.
+        keep = [l for l in raw.split('\n')
+                if not MARKS_ONLY.match(l) and not LABEL_ONLY.match(l)]
+        self.normalised = normalise('\n'.join(keep))
 
     def _parse(self):
         with open(self.path, encoding='utf-8') as fh:
