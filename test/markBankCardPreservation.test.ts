@@ -66,6 +66,9 @@ import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/high
 import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
 import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
 import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
+import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
+import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
+import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-greek/higher';
 import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
 import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
 import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
@@ -558,6 +561,28 @@ const decks = [
    * also a claim that the Arabic on it is the Arabic the SEC printed. */
   ['arabic:higher', ARABIC_HIGHER, 125, 'e28afb1be279b23f9180b61cd90115f0633c895049fef70c4e4cbd448366e301'],
   ['arabic:ordinary', ARABIC_ORDINARY, 125, 'e2ae63496b37a0f46053f3b96bffb7bb9a827e223508451dff6d8f62523e0c40'],
+  /* Ancient Greek is Latin's sibling and the deepest corpus in the bank: 27
+   * papers over fifteen years, 2010 to 2024. Every card is new; none replaces
+   * anything. One thing is true of it and of no deck before it: every sitting
+   * before 2023 sets its Greek in SPIonic, a pre-Unicode font embedded with no
+   * ToUnicode map, so a card ID here is also a claim that the polytonic Greek
+   * on it is the Greek the SEC printed (agr_text.py, and the audit it runs).
+   * Its 383 cards cover 387 of the 758 asks its papers print; the 371 that are
+   * not carded are excluded with the documents' own evidence — eleven sittings
+   * for which the SEC published no scheme at all, and every translation ask,
+   * whose scheme prices the SOURCE by segment and never states an answer. */
+  ['ancient-greek:higher', AGREEK_HIGHER, 369, 'e42e8aed0c67f36ef470d5d75acae61736068cf28d40b6d190cd08a6a842fdc1'],
+  ['ancient-greek:ordinary', AGREEK_ORDINARY, 14, 'd4d868a488b2671d8c104506674b32ef0aa33dc94a4e67974349a8b1b9132492'],
+  /* Modern Greek is the second NON-CURRICULAR EU LANGUAGE in the bank and the
+   * first subject in it examined at ONE level: the SEC's file letter is 'A' in
+   * all sixteen sittings and there is no Ordinary paper to card. Every card is
+   * new; none replaces anything. Its 79 cards cover 79 of the 142 asks its
+   * papers print, and the 63 that are not carded are the two written-production
+   * groups, the two sittings on which neither document states a per-question
+   * tariff, and 2015, whose scheme returns no Greek at all from its text
+   * layer. It is the first deck whose questions AND answers are both in the
+   * language examined, so every row says so on its face. */
+  ['modern-greek:higher', MGREEK_HIGHER, 79, 'd41a4a9affec25b7d9da9fac3eb514825d2d1d7da9c087c9c51bc786ee090ac3'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -572,13 +597,12 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    // 10,495 before this session, plus thirteen subjects carded in five waves:
+    // 10,495 before this session, plus sixteen subjects carded in six waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
-    // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_087);
-    // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
-    // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
+    // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
+    // Polish 237, Arabic 250, Ancient Greek 383 and Modern Greek 79.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_549);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -598,7 +622,6 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('french:')
         && !name.startsWith('german:')
         && !name.startsWith('applied-maths:')
-        && !name.startsWith('applied-maths:')
         && !name.startsWith('spanish:')
         && !name.startsWith('italian:')
         && !name.startsWith('russian:')
@@ -607,7 +630,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('latin:')
         && !name.startsWith('polish:')
         && !name.startsWith('arabic:')
-        && !name.startsWith('applied-maths:'))
+        && !name.startsWith('ancient-greek:')
+        && !name.startsWith('modern-greek:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

@@ -231,7 +231,11 @@ def answers(year, level, subject=SUBJECT):
 # scheme's copy of the same tariff and the answer would open "5 βαθμοί)".
 LEAD_TARIFF = re.compile(
     r'^\s*\(?\s*\d{1,3}\s*(?:βαθμο[ίύ]|μονάδες|[×xΧ]\s*\d)?\s*\)\s*')
-TRAIL_RATE = re.compile(r'\s*\(\s*\d\s*[×xΧ]\s*\d\s*\)\s*$')
+# A rate or a tariff the scheme repeats at the END of an answer: "(5 × 1)" on
+# the vocabulary question and a bare "(5)" hard right of the last line of a
+# comprehension answer. Neither is part of what the examiner said.
+TRAIL_RATE = re.compile(r'\s*\(\s*\d{1,3}\s*(?:[×xΧ]\s*\d|βαθμο[ίύ])?\s*\)'
+                        r'\s*$')
 
 
 def _tidy(text):

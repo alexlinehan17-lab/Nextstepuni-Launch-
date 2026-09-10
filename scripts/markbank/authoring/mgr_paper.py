@@ -235,11 +235,33 @@ class MgrPaper:
         # article and its source line. It is the stimulus every comprehension
         # ask depends on and it rides on the card.
         head = list(rows[:start])
+        # 2021 prints its head, then "Μέρος πρώτο", then the ARTICLE, then the
+        # questions — where every other sitting prints the article first and
+        # the group head over the questions. So the passage is everything
+        # before the FIRST numbered question of the first group, which is the
+        # same rows in both layouts. Cut at the group head alone, that sitting
+        # bound no article to any of its six cards.
+        for pg, text in rows[start:]:
+            if QNUM.match(text) or THEME.match(text):
+                break
+            head.append((pg, text))
         self.passage = '\n'.join(t for _, t in head)
-        self.passage_pages = sorted({pg for pg, _ in head})
-        for _pg, text in rows[:start] + rows[start:start + 4]:
+        # The pages the ARTICLE is printed on, not every page before the
+        # questions: the cover carries the examination's name and the SEC's
+        # crest and nothing a candidate reads. A page is the article's where it
+        # prints a substantial run of Greek prose.
+        by_page = {}
+        for pg, text in head:
+            by_page[pg] = by_page.get(pg, 0) + sum(
+                1 for c in text if '\u0370' <= c <= '\u03ff')
+        self.passage_pages = sorted(pg for pg, n in by_page.items() if n >= 200)
+        for _pg, text in rows:
+            # Anywhere on the paper. 2012 to 2016 set the rubric several rows
+            # into the questions rather than immediately above them, and a
+            # four-row window past the cut missed it on five sittings.
             if 'απαντήσεις' in text and 'Ελληνικά' in text:
                 self.answer_language = _clean(text)
+                break
 
         asks = []
         # A group is read in two phases: its HEAD — the title, the marks it

@@ -487,6 +487,34 @@ const TECHNOLOGY_DECK_TOPICS: Record<string, CanonicalCurriculumTopic> = {
  * texts". It carries no strand of the REDEVELOPED specification — that record
  * is deliberately not encoded until it is verified.
  */
+/**
+ * The task types the outgoing Ancient Greek written paper is built from.
+ *
+ * The same case as Latin's, one syllabus over: Mark Bank cards Ancient Greek
+ * from the 2010-2024 papers, which are the LEGACY written paper, and files each
+ * card under the task type its own question sets — the ids come from the
+ * canonical taxonomy in curriculum.ts, whose fifth strand is "Legacy Written
+ * Paper — Task Types". Those ids have to exist inside the specification record
+ * too, or a card resolves into no specification at all.
+ *
+ * Question 3's two routes are the syllabus's two prescribed COURSES rather than
+ * a prose/verse split, and the paper names each under its own passage: A World
+ * of Heroes is the Homer course and The Intellectual Revolution the Plato one.
+ */
+const ANCIENT_GREEK_TASK_TYPE_GROUP: CanonicalCurriculumGroup = {
+  id: 'ancient-greek-4',
+  code: 'Paper',
+  title: 'Written paper task types',
+  topics: [
+    { id: 'ancient-greek-4-0', code: 'Q1A', title: 'Composition — Translation into Greek' },
+    { id: 'ancient-greek-4-1', code: 'Q1B', title: 'Unseen Comprehension — Prose Passage with Questions' },
+    { id: 'ancient-greek-4-2', code: 'Q2', title: 'Unseen Translation into English (Prose & Verse)' },
+    { id: 'ancient-greek-4-3', code: 'Q3', title: 'Prescribed Prose Text — Translation & Questions (e.g. Plato)' },
+    { id: 'ancient-greek-4-4', code: 'Q3', title: 'Prescribed Homer — Translation & Questions' },
+    { id: 'ancient-greek-4-5', code: 'Q4', title: 'Greek History & Civilisation (incl. Art & Architecture)' },
+  ],
+};
+
 const LATIN_TASK_TYPE_GROUP: CanonicalCurriculumGroup = {
   id: 'latin-3',
   code: 'Paper',
@@ -1474,12 +1502,14 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
           ['ancient-greek-2026-temple-architecture', 'Greek temple architecture'],
           ['ancient-greek-2026-vase-painting', 'Attic vase painting'],
         ]),
+        ANCIENT_GREEK_TASK_TYPE_GROUP,
       ],
       coverageNodeLevel: 'topic',
       notes: [
         'This is the outgoing syllabus sat by the 2026 examination cohort.',
         'The specification introduced to fifth-year students in September 2025 is deliberately excluded from this record.',
         'Prescribed texts are set for each examination year by the State Examinations Commission.',
+        "A final group carries the written paper's own task types, which is how Mark Bank files a card from a 2010-2024 paper.",
       ],
     };
   }

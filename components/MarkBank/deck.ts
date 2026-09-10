@@ -78,6 +78,10 @@ const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
 if (!latinCurriculum) throw new Error('Canonical Latin curriculum is missing');
 const arabicCurriculum = CURRICULUM.find(subject => subject.id === 'arabic');
 if (!arabicCurriculum) throw new Error('Canonical Arabic curriculum is missing');
+const ancientGreekCurriculum = CURRICULUM.find(subject => subject.id === 'ancient-greek');
+if (!ancientGreekCurriculum) throw new Error('Canonical Ancient Greek curriculum is missing');
+const modernGreekCurriculum = CURRICULUM.find(subject => subject.id === 'modern-greek');
+if (!modernGreekCurriculum) throw new Error('Canonical Modern Greek curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -1191,6 +1195,42 @@ export const LATIN_STRANDS: StrandRef[] = latinCurriculum.strands.map((strand, i
   })),
 }));
 
+/**
+ * Ancient Greek ships its whole published taxonomy, and the deck cards the
+ * fifth strand of it: "Legacy Written Paper — Task Types", which is the paper
+ * every sitting in the bank was sat on. Its Strands 1 to 3 describe the
+ * redeveloped course — a capstone text and a research study — that the SEC has
+ * not examined yet, and a student browsing Ancient Greek should see the shape
+ * of their course and not only the part the bank can card.
+ */
+export const ANCIENT_GREEK_STRANDS: StrandRef[] = ancientGreekCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
+ * Modern Greek's taxonomy is the paper's own two halves, and the deck cards the
+ * first: Part I, the reading comprehension. Part II is written production —
+ * a hundred-word commentary and a three-hundred-word essay — which the scheme
+ * answers with one indicative composition of its own and prices nothing inside.
+ */
+export const MODERN_GREEK_STRANDS: StrandRef[] = modernGreekCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Part ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 export const CLASSICAL_STUDIES_STRANDS: StrandRef[] = [
   ...classicalStudiesCurriculum.strands.map((strand, index) => ({
     id: strand.id,
@@ -1357,6 +1397,8 @@ export const SUBJECTS = [
   { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
   { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
   { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
+  { id: 'ancient-greek', title: 'Ancient Greek', strands: ANCIENT_GREEK_STRANDS, spec: 'Leaving Certificate Ancient Greek syllabus — the legacy written paper' },
+  { id: 'modern-greek', title: 'Modern Greek', strands: MODERN_GREEK_STRANDS, spec: 'Leaving Certificate Modern Greek, a non-curricular EU language' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1687,6 +1729,15 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   latin: {
     higher: () => import('./cards/latin/higher'),
     ordinary: () => import('./cards/latin/ordinary'),
+  },
+  'ancient-greek': {
+    higher: () => import('./cards/ancient-greek/higher'),
+    ordinary: () => import('./cards/ancient-greek/ordinary'),
+  },
+  // Higher only: the SEC's file letter for every Modern Greek paper on disk is
+  // 'A' and every cover says Higher Level. There is no Ordinary paper to card.
+  'modern-greek': {
+    higher: () => import('./cards/modern-greek/higher'),
   },
 };
 

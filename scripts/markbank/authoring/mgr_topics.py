@@ -37,7 +37,10 @@ WRITTEN_PRODUCTION = 'modern-greek-1-0'
 GREEK_NAME = 'Modern Greek'
 # The rubric that states it, in the two spellings the corpus prints:
 # "στα νέα Ελληνικά" and 2011's "στα Νεοελληνικά".
-RUBRIC = re.compile(r'απαντήσεις\s+να\s+δοθο[υύ]ν\s+στα\s+'
+# …and 2021's own wording for the same thing: "Όλες οι απαντήσεις πρέπει να
+# γραφούν στα νέα Ελληνικά."
+RUBRIC = re.compile(r'απαντήσεις\s+(?:να\s+δοθο[υύ]ν|πρέπει\s+να\s+'
+                    r'γραφο[υύ]ν)\s+στα\s+'
                     r'(?:ν[έε]α\s+Ελληνικ[άα]|Νεοελληνικ[άα])', re.I)
 
 
