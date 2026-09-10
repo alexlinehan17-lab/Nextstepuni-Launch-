@@ -25,22 +25,15 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHORED = os.path.join(HERE, '..', 'authored')
 
-SUBJECTS = ['agricultural-science', 'applied-maths', 'arabic', 'art',
-            'dutch', 'romanian',
-            'biology', 'business', 'chemistry', 'classical-studies',
-            'computer-science', 'construction-studies', 'czech', 'economics',
-            'engineering', 'english', 'french', 'geography', 'german',
-            'history', 'home-economics', 'irish', 'italian', 'japanese',
-            'latin', 'lcvp', 'maths', 'physics', 'polish', 'portuguese',
-            'latin', 'latvian', 'lcvp', 'lithuanian', 'maths', 'physics',
-            'polish',
-SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths', 'arabic',
-            'art', 'biology', 'business', 'chemistry', 'classical-studies',
-            'computer-science', 'construction-studies', 'economics',
-            'engineering', 'english', 'french', 'geography', 'german',
-            'history', 'home-economics', 'irish', 'italian', 'japanese',
-            'latin', 'lcvp', 'maths', 'modern-greek', 'physics', 'polish',
-            'religious-education', 'russian', 'spanish', 'technology']
+SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
+            'arabic', 'art', 'biology', 'business', 'chemistry',
+            'classical-studies', 'computer-science', 'construction-studies',
+            'czech', 'dutch', 'economics', 'engineering', 'english',
+            'french', 'geography', 'german', 'history', 'home-economics',
+            'irish', 'italian', 'japanese', 'latin', 'latvian', 'lcvp',
+            'lithuanian', 'maths', 'modern-greek', 'physics', 'polish',
+            'portuguese', 'religious-education', 'romanian', 'russian',
+            'spanish', 'technology']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an
 # Agricultural Science paper about joining a suckler scheme is not a leak),

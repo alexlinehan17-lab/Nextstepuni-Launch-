@@ -1139,6 +1139,16 @@ export const POLISH_STRANDS: StrandRef[] = polishCurriculum.strands.map((strand,
  * see the shape of their examination, not only the part that is carded.
  */
 export const PORTUGUESE_STRANDS: StrandRef[] = portugueseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
 /* Lithuanian's whole taxonomy ships, not only the part that is carded.
  * Its third strand names the paper's own task types and two of them take
  * cards — the open questions of I Dalis and the new format's reading tasks.
@@ -1170,6 +1180,15 @@ export const LITHUANIAN_STRANDS: StrandRef[] = lithuanianCurriculum.strands.map(
  * should see the shape of their examination, not only the part that is carded.
  */
 export const ROMANIAN_STRANDS: StrandRef[] = romanianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 /* Latvian and Czech print the OLD examination in every year of the corpus —
  * an article, six questions on it, a commentary and an essay, at one level —
  * so their taxonomy is two strands rather than Lithuanian's three. Only the
@@ -1188,6 +1207,15 @@ export const LATVIAN_STRANDS: StrandRef[] = latvianCurriculum.strands.map((stran
 }));
 
 export const DUTCH_STRANDS: StrandRef[] = dutchCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 export const CZECH_STRANDS: StrandRef[] = czechCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1804,6 +1832,7 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   },
   dutch: {
     higher: () => import('./cards/dutch/higher'),
+  },
   lithuanian: {
     higher: () => import('./cards/lithuanian/higher'),
     ordinary: () => import('./cards/lithuanian/ordinary'),

@@ -256,6 +256,8 @@ const SUBJECTS = {
     specVersion: 'lc-dutch-non-curricular-eu-language',
     specNote: "Cards are tagged to the parts of the Leaving Certificate Dutch examination.\n * Its reading comprehension is priced on the QUESTION PAPER — \"(5 punten)\",\n * \"(1 punt)\" in the right-hand margin — because the marking scheme of this\n * examination prints answers with no marks anywhere in it. Every card carries the\n * text it quotes, bound to the pages of the question paper it was printed on, and\n * every answer is written in Dutch: the paper's own rubric says so.",
     figureDir: 'public/exam-figures/dutch',
+    blocked: new Set(),
+  },
   lithuanian: {
     title: 'Lithuanian',
     /* The examination these papers were sat under. Lithuanian is a
@@ -513,7 +515,7 @@ function schemeFor(subjectId, card) {
  * these four are added and not the block they live in, because the block is
  * also where several BROKEN subset glyphs land — U+019E stands for "tf" and
  * U+019F for "ti" in glyphmap.json — and those must still be refused. */
-const REAL = /[\u0100-\u017F\u0218-\u021B\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/;
+const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D62-\u1D6A\u1F00-\u1FFF]/;
 /* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
  * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
  * paper and its scheme are printed in, and every accented vowel in it lives
@@ -524,7 +526,6 @@ const REAL = /[\u0100-\u017F\u0218-\u021B\u0370-\u03FF\u0400-\u04FF\u0302\u0305\
  * further along. Verified before widening: the 2015 Higher paper's page 3 was
  * rendered at 190dpi and read beside agr_text's decoding of it, and the two
  * agree character for character. */
-const REAL = /[\u0100-\u017F\u0370-\u03FF\u0400-\u04FF\u0302\u0305\u0307\u0308\u02B0-\u02FF\u1D62-\u1D6A\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1F00-\u1FFF]/;
 /* Script that is really script, inside the range the broken-subset test
  * sweeps. Arabic joins it because Arabic ships: 0600-06FF is the alphabet the
  * SEC sets its Arabic paper in, 0750-077F and 08A0-08FF the supplements. What

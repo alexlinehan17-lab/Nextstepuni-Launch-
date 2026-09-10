@@ -480,8 +480,6 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
             runs_on = qs and isinstance(qs[0], int) and qs[0] > 1 and all(
                 n in elsewhere for n in range(1, qs[0]))
             if qs and isinstance(qs[0], int) and qs[0] > 1 and not runs_on:
-                flags.append({'type': 'question-gap',
-                              'where': str(pre or ''),
                 flags.append({'type': 'question-gap', 'where': str(pre or ''),
                               'detail': f'first question found is Q{qs[0]}'})
         # A headless question (Religious Education's Sections B-J) sits
@@ -2019,6 +2017,10 @@ def census_eu(subject, year, level):
 
     P = EuPaper(year, level, subject)
     S = EuScheme(year, level, subject)
+    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
 def census_lt(subject, year, level):
     """Lithuanian, Latvian and Czech: the booklets one sitting prints.
 
@@ -2041,7 +2043,6 @@ def census_lt(subject, year, level):
 
 
 def eu_flags(P, S):
-def lt_flags(P, S):
     """Where the paper and the scheme disagree about what was asked.
 
     The two documents are read independently — the paper for its asks, the
@@ -2081,6 +2082,40 @@ def lt_flags(P, S):
         flags.append({'type': 'orphan-scheme-ask', 'where': key_label(ask.key),
                       'detail': 'the scheme prices this ask and the paper '
                                 'prints none that pairs with it'})
+    for ask in S.reading():
+        if ask.fault:
+            flags.append({'type': 'tariff-disagreement',
+                          'where': key_label(ask.key), 'detail': ask.fault})
+    # The CLASSIC paper's own arithmetic, which is the independent check for
+    # the two subjects whose scheme prints no marks at all: the tariffs the
+    # paper prints against the first part's asks must add up to the total it
+    # prints on that part's own head.
+    if P.era == 'classic':
+        for head, (want, _denom) in P._part_totals().items():
+            asks = [a for a in P.reading_asks() if a.tariff]
+            if not asks:
+                continue
+            got = sum(a.tariff[2] for a in asks)
+            if got != want:
+                flags.append({'type': 'part-total', 'where': head,
+                              'detail': f'the paper heads this part {want} '
+                                        f'and the asks it prices under it add '
+                                        f'to {got}'})
+            break
+    for (section, q), want, got in S.unsettled:
+        flags.append({'type': 'question-total',
+                      'where': f'Section {section} Q{q}',
+                      'detail': f'the scheme heads this question {want} marks '
+                                f'and the asks it prices under it add to '
+                                f'{got}'})
+    return flags
+
+
+def lt_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently — the paper for its asks, the
+    scheme for its prices — so every ask one holds and the other does not is a
     reader fault, an SEC omission or a real difference, and all three have to
     be looked at rather than reconciled away. This is Law 3's independent
     check: the census's own continuity flags see only interior gaps, and an
@@ -2121,30 +2156,7 @@ def lt_flags(P, S):
         if ask.fault:
             flags.append({'type': 'tariff-disagreement',
                           'where': key_label(ask.key), 'detail': ask.fault})
-    # The CLASSIC paper's own arithmetic, which is the independent check for
-    # the two subjects whose scheme prints no marks at all: the tariffs the
-    # paper prints against the first part's asks must add up to the total it
-    # prints on that part's own head.
-    if P.era == 'classic':
-        for head, (want, _denom) in P._part_totals().items():
-            asks = [a for a in P.reading_asks() if a.tariff]
-            if not asks:
-                continue
-            got = sum(a.tariff[2] for a in asks)
-            if got != want:
-                flags.append({'type': 'part-total', 'where': head,
-                              'detail': f'the paper heads this part {want} '
-                                        f'and the asks it prices under it add '
-                                        f'to {got}'})
-            break
-    for (section, q), want, got in S.unsettled:
-        flags.append({'type': 'question-total',
-                      'where': f'Section {section} Q{q}',
-                      'detail': f'the scheme heads this question {want} marks '
-                                f'and the asks it prices under it add to '
-                                f'{got}'})
     return flags
-
 
 def census_clas(subject, year, level):
     """Classical Studies: the printed ask, in whichever of its two papers.
@@ -2718,6 +2730,8 @@ def census_subject(subject):
                 # The census counts both routes, as it counts every printed
                 # choice, and the checksum compares that sitting with the
                 # other sittings that print the same total.
+                label = f'{P_.cover_marks()}-mark paper'
+                marks = {(None, 0): P_.cover_marks()}
             elif cfg.get('walker') == 'agr':
                 flags += agr_flags(P_, S_)
                 # The paper's own total was cut for the two Covid sittings —

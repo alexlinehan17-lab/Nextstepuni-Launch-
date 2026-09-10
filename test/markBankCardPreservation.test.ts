@@ -656,15 +656,13 @@ describe('Mark Bank card preservation', () => {
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
     // Portuguese 173, Romanian 50 and Dutch 42.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_352);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(17_155);
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_428);
     // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
     // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
     // Polish 237, Arabic 250, Ancient Greek 383 and Modern Greek 79.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(16_549);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
