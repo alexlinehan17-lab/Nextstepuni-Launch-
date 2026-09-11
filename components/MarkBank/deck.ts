@@ -115,6 +115,8 @@ if (!ancientGreekCurriculum) throw new Error('Canonical Ancient Greek curriculum
 const modernGreekCurriculum = CURRICULUM.find(subject => subject.id === 'modern-greek');
 const ukrainianCurriculum = CURRICULUM.find(subject => subject.id === 'ukrainian');
 const mandarinChineseCurriculum = CURRICULUM.find(subject => subject.id === 'mandarin-chinese');
+const physicalEducationCurriculum = CURRICULUM.find(subject => subject.id === 'physical-education');
+if (!physicalEducationCurriculum) throw new Error('Canonical Physical Education curriculum is missing');
 if (!modernGreekCurriculum) throw new Error('Canonical Modern Greek curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
@@ -1645,6 +1647,24 @@ export const DCG_STRANDS: StrandRef[] = dcgCurriculum.strands.map(
     id: strand.id,
     label: strand.name.replace(/\s*\((Core|Optional Areas)\)\s*$/, ''),
     title: strand.name,
+ * Leaving Certificate Physical Education, as the WRITTEN paper examines it.
+ *
+ * Two strands and the physical activity areas, adapted from the canonical
+ * curriculum rather than retyped here, for the reason the LCVP, English,
+ * Irish, Art and Geography strands are: a second copy of a taxonomy drifts,
+ * and a card filed against a topic id the registry does not hold resolves
+ * into a specification that contains no such topic.
+ *
+ * The codes are the specification's own way of naming a unit inside a strand
+ * — "1.2" is Strand 1, Topic 1's second subtopic — and the strand's own
+ * "Strand 1: " prefix is stripped from the title because the label already
+ * carries it.
+ */
+export const PHYSICAL_EDUCATION_STRANDS: StrandRef[] = physicalEducationCurriculum.strands.map(
+  (strand, strandIndex) => ({
+    id: strand.id,
+    label: `Strand ${strandIndex + 1}`,
+    title: strand.name.replace(/^Strand \d+:\s*/, ''),
     topics: strand.subtopics.map((topic, topicIndex) => ({
       id: topic.id,
       code: `${strandIndex + 1}.${topicIndex + 1}`,
@@ -1671,6 +1691,7 @@ export const SUBJECTS = [
   { id: 'religious-education', title: 'Religious Education', strands: RELIGIOUS_EDUCATION_STRANDS, spec: 'syllabus examined since 2003' },
   { id: 'lcvp', title: 'Link Modules', strands: LCVP_STRANDS, spec: 'LCVP programme statement, examined to 2027' },
   { id: 'technology', title: 'Technology', strands: TECHNOLOGY_STRANDS, spec: 'Leaving Certificate Technology syllabus' },
+  { id: 'physical-education', title: 'Physical Education', strands: PHYSICAL_EDUCATION_STRANDS, spec: 'LCPE specification, written paper' },
   { id: 'history', title: 'History', strands: HISTORY_STRANDS, spec: 'Leaving Certificate History syllabus' },
   { id: 'french', title: 'French', strands: FRENCH_STRANDS, spec: 'Leaving Certificate French syllabus' },
   { id: 'german', title: 'German', strands: GERMAN_STRANDS, spec: 'Leaving Certificate German syllabus' },
@@ -2065,6 +2086,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   arabic: {
     higher: () => import('./cards/arabic/higher'),
     ordinary: () => import('./cards/arabic/ordinary'),
+  },
+  'physical-education': {
+    higher: () => import('./cards/physical-education/higher'),
+    ordinary: () => import('./cards/physical-education/ordinary'),
   },
   technology: {
     higher: () => import('./cards/technology/higher'),

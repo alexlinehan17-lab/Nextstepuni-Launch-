@@ -110,6 +110,8 @@ import { CARDS as MANDARIN_ORDINARY } from '../components/MarkBank/cards/mandari
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
 import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
+import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
+import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -149,6 +151,7 @@ const SAMPLE_CARDS = [
   // there is no Ordinary paper in any year of the corpus.
   ...UKRAINIAN_HIGHER,
   ...DCG_HIGHER, ...DCG_ORDINARY,
+  ...PE_HIGHER, ...PE_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -734,6 +737,9 @@ describe('the taxonomy is the redeveloped specification', () => {
       // Applied Maths does — the subject id in the deck is the abbreviation
       // the SEC prints on the paper and students use for the same subject.
       dcg: 'design-and-communication-graphics-',
+      // Physical Education files its cards under the LCPE specification's own
+      // two strands and its physical activity areas.
+      'physical-education': 'physical-education-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

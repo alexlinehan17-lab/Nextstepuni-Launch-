@@ -33,9 +33,9 @@ SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
             'geography', 'german', 'history', 'home-economics', 'hungarian',
             'irish', 'italian', 'japanese', 'latin', 'latvian', 'lcvp',
             'lithuanian', 'mandarin-chinese', 'maths', 'modern-greek',
-            'physics', 'polish', 'portuguese', 'religious-education',
-            'romanian', 'russian', 'slovakian', 'slovenian', 'spanish',
-            'swedish', 'technology', 'ukrainian']
+            'physical-education', 'physics', 'polish', 'portuguese',
+            'religious-education', 'romanian', 'russian', 'slovakian',
+            'slovenian', 'spanish', 'swedish', 'technology', 'ukrainian']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an
 # Agricultural Science paper about joining a suckler scheme is not a leak),
@@ -154,6 +154,18 @@ def lint(subject):
         return []
     with open(path) as fh:
         cards = json.load(fh)
+    # The bindings file is where an OFFICIAL SOURCE page is declared; the
+    # `sourceMaterial` field only appears once build-deck.mjs has resolved it
+    # against the Paper Trail index. Reading the authored JSON alone therefore
+    # reported five Physical Education cards as pointing at printed matter
+    # they do not carry, when four of them carry the SEC's own page.
+    bindings_path = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        'card-source-bindings.json')
+    bound = set()
+    if os.path.exists(bindings_path):
+        with open(bindings_path) as fh:
+            bound = set(json.load(fh).get(subject, {}))
     flags = []
     for c in cards:
         stem = c.get('stem') or ''
@@ -163,7 +175,7 @@ def lint(subject):
         # only crops flagged every LCVP case-study card, each of which already
         # carries the case study's own pages.
         has_fig = bool(c.get('figureKey') or c.get('questionFigureKey')
-                       or c.get('sourceMaterial'))
+                       or c.get('sourceMaterial') or c['id'] in bound)
         leak = SCHEME_LEAK_BY_SUBJECT.get(subject, SCHEME_LEAK)
         for field, text in (('stem', stem), ('questionText', qtext)):
             if leak.search(text):

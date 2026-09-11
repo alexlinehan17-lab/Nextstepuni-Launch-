@@ -182,5 +182,9 @@
  "dcg": {
   "higher": 307,
   "ordinary": 238
+ },
+ "physical-education": {
+  "higher": 125,
+  "ordinary": 96
  }
 }

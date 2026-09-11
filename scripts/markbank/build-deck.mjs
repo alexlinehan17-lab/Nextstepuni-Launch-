@@ -46,6 +46,18 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/engineering',
     blocked: new Set(),
   },
+  'physical-education': {
+    title: 'Physical Education',
+    /* The LCPE specification: two strands of five and six topics, plus the six
+     * physical activity areas. Only the WRITTEN paper is carded — the other
+     * two components are a coursework project and a physical performance, and
+     * neither is a question any paper prints. See PHYSICAL_EDUCATION_STRANDS
+     * in components/MarkBank/deck.ts. */
+    specVersion: 'lc-physical-education-specification',
+    specNote: 'Cards are tagged to the topics of the Leaving Certificate Physical Education specification:\n * Strand 1 Towards Optimum Performance, Strand 2 Contemporary Issues, and the physical activity areas.\n * The written paper is 50% of the subject; the project and the performance assessment are not carded.',
+    figureDir: 'public/exam-figures/physical-education',
+    blocked: new Set(),
+  },
   technology: {
     title: 'Technology',
     /* The syllabus these papers were sat under -- seven core areas and five
