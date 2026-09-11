@@ -6819,7 +6819,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2023-hl-q1-b",
@@ -6849,7 +6849,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:",
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
   "notes": "The scheme prints '5'."
  },
  {
@@ -6863,18 +6863,25 @@
   "questionRef": "2023 HL Q1(c)",
   "questionText": "In engineering, explain the importance of specifying limits on component drawings prior to manufacture.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
+    "verbatim": "In engineering drawing, the limits are the maximum and minimum dimensions of a component.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
     "verbatim": "This promotes mass production of component parts and can facilitate interchangeability and replacement of components.",
-    "marks": 5
+    "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'."
  },
  {
   "id": "eng-2023-hl-q1-e",
@@ -6898,7 +6905,7 @@
     "marks": 5
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2023-hl-q1-f",
@@ -6926,7 +6933,7 @@
     ]
    }
   ],
-  "stem": "Give brief answers to any ten of the following:",
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
   "notes": "The scheme prints 'Any one @ 5'."
  },
  {
@@ -6980,39 +6987,58 @@
     "kind": "point",
     "verbatim": "Can be easily programmed for a sequence of actions, etc.",
     "marks": null
-   },
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2023-hl-q1-i",
+  "topicId": "eng-1-5",
+  "conceptId": "advantages-using-anodised-aluminium-engineering-projects",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(i)",
+  "questionText": "Give two advantages of using anodised aluminium in engineering projects.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
    {
-    "id": "r-7",
+    "id": "r-1",
     "kind": "point",
     "verbatim": "Enhanced corrosion resistance.",
     "marks": null
    },
    {
-    "id": "r-8",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Improved hardness and wear resistance.",
     "marks": null
    },
    {
-    "id": "r-9",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "Anodising offers a wide range of colour options and finishes, making it a popular choice for decorative applications.",
     "marks": null
    },
    {
-    "id": "r-10",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "The anodised layer acts as an insulator, preventing direct electrical contact with the aluminium substrate.",
     "marks": null
    },
    {
-    "id": "r-11",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "Anodised aluminium is fully recyclable, allowing for the recovery and reuse of the material.",
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2023-hl-q1-j",
@@ -7036,7 +7062,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:",
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
   "notes": "The scheme prints '3 + 2'."
  },
  {
@@ -7084,7 +7110,8 @@
     "verbatim": "Extended Reality (XR) encompasses various immersive technologies including Virtual Reality (VR), Augmented Reality (AR) and Mixed Reality (MR). XR refers to the blending of the physical and virtual worlds, creating a spectrum of experiences that range from completely virtual environments to the augmentation of real-world environments with virtual elements.",
     "marks": 5
    }
-  ]
+  ],
+  "stem": ". (50 marks) Answer all of the following:"
  },
  {
   "id": "eng-2023-hl-q2-a-ii",
@@ -7126,7 +7153,8 @@
     "verbatim": "Remote collaboration can be facilitated easily.",
     "marks": null
    }
-  ]
+  ],
+  "stem": ". (50 marks) Answer all of the following:"
  },
  {
   "id": "eng-2023-hl-q2-b",
@@ -7161,7 +7189,8 @@
     "verbatim": "Mixed Reality combines elements of both VR and AR, allowing users to interact with virtual objects that are seamlessly integrated into the real world. Users wear headsets or glasses that combine the capabilities of VR (computer-generated simulations) and AR (overlaying virtual objects onto the real world). These devices use sensors and cameras to track the user's position and enable real-time interactions with the virtual objects.",
     "marks": 3
    }
-  ]
+  ],
+  "stem": ". (50 marks) Answer all of the following:"
  },
  {
   "id": "eng-2023-hl-q2-c",
@@ -7215,6 +7244,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks) Answer all of the following:",
   "notes": "The scheme prints '10'."
  },
  {
@@ -7245,6 +7275,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks) Answer all of the following:",
   "notes": "The scheme prints 'Any two @ 5 + 5'."
  },
  {
@@ -7273,6 +7304,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks) Answer all of the following:",
   "notes": "The scheme prints 'Any two @ 5 + 5'."
  },
  {
@@ -7471,7 +7503,8 @@
     "verbatim": "A quartz crystal is used to generate high frequency vibrations and passed over the material to be tested. If the material has internal defects, vibrations will be reflected quicker back to the receiver and displayed on a screen. It is used to test thick components such as castings and forgings for defects. It is quick and has the ability to probe deeply without damaging the piece. Ultrasonic wave generation and use is safe for humans, therefore no extra safety precautions need to be taken.",
     "marks": 8
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q3-c-ii",
@@ -7501,6 +7534,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '8'."
  },
  {
@@ -7549,7 +7583,8 @@
     "verbatim": "Cost-effective.",
     "marks": null
    }
-  ]
+  ],
+  "questionFigureKey": "engineering-2023-HL-paper-q4ai-art"
  },
  {
   "id": "eng-2023-hl-q4-a-iii",
@@ -7572,7 +7607,33 @@
     "verbatim": "Case hardening gives a hard, abrasion resistant outer surface yet has reduced brittleness due to the softer inner core, it is less likely to break on impact compared to a fully hardened product, etc.",
     "marks": 4
    }
-  ]
+  ],
+  "questionFigureKey": "engineering-2023-HL-paper-q4ai-art"
+ },
+ {
+  "id": "eng-2023-hl-q4-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "transformation-boundary-lines-b-c-shown",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(b)(i)",
+  "questionText": "Name the transformation boundary lines A, B and C shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Liquidus line B = Solidus line C = Eutectoid line / Lower Critical Temperature (LCT) line",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '2 + 2 + 2'.",
+  "questionFigureKey": "engineering-2023-HL-paper-q4bi-art"
  },
  {
   "id": "eng-2023-hl-q4-b-ii",
@@ -7669,6 +7730,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '8 marks'."
  },
  {
@@ -7689,7 +7751,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "This is where there is an atom missing from the lattice.",
+    "verbatim": "A = Vacancy Defect This is where there is an atom missing from the lattice.",
     "marks": 4
    },
    {
@@ -7781,7 +7843,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 HL Q5(c)(i)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Body Centred Cubic (BCC) and Face Centred Cubic (FCC) structures.",
+  "questionText": "Body Centred Cubic (BCC) and Face Centred Cubic (FCC) structures.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -7806,6 +7868,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '8 marks'."
  },
  {
@@ -7817,7 +7880,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 HL Q5(c)(iii)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Solid solution alloys and partial solubility alloys.",
+  "questionText": "Solid solution alloys and partial solubility alloys.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -7842,6 +7905,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '8 marks'."
  },
  {
@@ -7872,6 +7936,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '10'."
  },
  {
@@ -7914,7 +7979,8 @@
     "verbatim": "MIG gives a clean weld with minimal spatter.",
     "marks": null
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q6-b-i",
@@ -7956,6 +8022,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -7979,7 +8046,8 @@
     "verbatim": "MIG, TIG, resistance welding, Submerged Arc welding, Electro-slag welding, etc. are suitable for automated welding.",
     "marks": 6
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q6-b-iii",
@@ -8002,7 +8070,8 @@
     "verbatim": "The weld can be protected from oxidation and potential weaknesses in SAW, fumes are reduced, arc is not visible, reduced fire and heat hazards, etc.",
     "marks": 6
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q6-b-iv",
@@ -8015,6 +8084,37 @@
   "questionRef": "2023 HL Q6(b)(iv)",
   "questionText": "Describe how multi-run welding can impact the quality of a weld.",
   "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Multi-runs produce a superior quality weld which is more refined than a single run weld.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Multi-run welds have a post heating effect on the previous weld which will improve its quality.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-hl-q6-b-v",
+  "topicId": "eng-2-10",
+  "conceptId": "function-pressure-regulator-oxy-acetylene-welding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(b)(v)",
+  "questionText": "Explain the function of a pressure regulator in oxy-acetylene welding.",
+  "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
@@ -8022,42 +8122,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Multi-run welds have a post heating effect on the previous weld which will improve its quality.",
+    "verbatim": "The primary function of a pressure regulator is to control the pressure of the gases being supplied to the welding torch. Regulators prevent gas pressure from exceeding safe limits and give precise control of the gas flow rate.",
     "marks": 6
    }
-  ]
- },
- {
-  "id": "eng-2023-hl-q6-b",
-  "topicId": "eng-2-10",
-  "conceptId": "function-pressure-regulator-oxy-acetylene-welding",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q6(b)",
-  "questionText": "Answer any three of the following: (i) Describe, with the aid of a diagram, the neutral flame in oxy-acetylene welding. (ii) Name three types of welding suitable for automated control. (iii) Outline one safety benefit of using a granulated flux in submerged arc welding. (iv) Describe how multi-run welding can impact the quality of a weld. (v) Explain the function of a pressure regulator in oxy-acetylene welding.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "A balanced proportion of oxygen and acetylene.",
-    "marks": 18,
-    "accepts": [
-     "Maximum combustion as all carbon from the acetylene is used.",
-     "Has a working temperature of up to 3300°C.",
-     "The most extensively used flame for oxy-acetylene welding.",
-     "MIG, TIG, resistance welding, Submerged Arc welding, Electro-slag welding, etc. are suitable for automated welding.",
-     "The weld can be protected from oxidation and potential weaknesses in SAW, fumes are reduced, arc is not visible, reduced fire and heat hazards, etc.",
-     "Multi-run welds have a post heating effect on the previous weld which will improve its quality."
-    ]
-   }
   ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q6-c-i",
@@ -8317,6 +8386,36 @@
   "questionFigureKey": "engineering-2023-HL-paper-q7bii-art"
  },
  {
+  "id": "eng-2023-hl-q7-b-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "importance-using-pigments-plasticisers-manufacture-jet",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(b)(iii)",
+  "questionText": "Explain the importance of using pigments and plasticisers in the manufacture of a jet ski.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A selection of plasticisers makes the polymer flexible, easier to mould and non-toxic.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pigments give the plastic hull its tinted colour.",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2023-HL-paper-q7bi-art"
+ },
+ {
   "id": "eng-2023-hl-q7-c-i",
   "topicId": "eng-1-9",
   "conceptId": "distinguish-between-recyclability-thermoplastics-thermoset-plastics",
@@ -8344,8 +8443,57 @@
     "marks": null
    }
   ],
-  "stem": "yellow jet ski hull 5. fabricate 1. collect 4. wash 2. sort 3. shred Polymer recycling process",
-  "notes": "The scheme prints '8 marks'."
+  "notes": "The scheme prints '8 marks'.",
+  "questionFigureKey": "engineering-2023-HL-paper-q7ci-art"
+ },
+ {
+  "id": "eng-2023-hl-q7-c-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "each-stages-polymer-recycling-process-shown",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(c)(ii)",
+  "questionText": "Describe each of the stages in the polymer recycling process shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Collect: The plastic materials are gathered through municipal and industrial collection.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Sort: Different plastic materials are sorted by different polymer types.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Shred: The plastic materials are cut into small pieces, making them uniform and easier to process.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Wash: the plastic pieces are cleaned.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Fabricate: plastic pieces can be formed into beads and then used for remoulding.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'.",
+  "questionFigureKey": "engineering-2023-HL-paper-q7ci-art"
  },
  {
   "id": "eng-2023-hl-q7-c-iii",
@@ -8369,7 +8517,7 @@
     "marks": 8
    }
   ],
-  "stem": "yellow jet ski hull 5. fabricate 1. collect 4. wash 2. sort 3. shred Polymer recycling process"
+  "questionFigureKey": "engineering-2023-HL-paper-q7ci-art"
  },
  {
   "id": "eng-2023-hl-q8-a-i",
@@ -8399,6 +8547,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '8'."
  },
  {
@@ -8441,7 +8590,8 @@
     "verbatim": "Ensure good condition of the cutting tools in terms of geometry and sharpness.",
     "marks": null
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q8-a-iii",
@@ -8470,7 +8620,8 @@
     "verbatim": "Continuous chips are formed during metal machining in long ribbons without breakage. This chip formation is characterised by high cutting speeds and minimum friction between tool face and metal on ductile materials such as mild steel and aluminium.",
     "marks": 2
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q8-b-ii",
@@ -8524,6 +8675,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -8547,7 +8699,8 @@
     "verbatim": "The milling machine table can move in the X, Y and Z axes. This can be used to produce a variety of profiles. The drilling machine will drill holes effectively.",
     "marks": 6
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q8-b-iv",
@@ -8589,6 +8742,50 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-hl-q8-b-v",
+  "topicId": "eng-2-11",
+  "conceptId": "reasons-use-tungsten-carbide-cutting-tips",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(v)",
+  "questionText": "Outline two reasons for the use of tungsten carbide cutting tips in metal cutting.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than high speed steel (HSS).",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Experienced operators will ensure long tool life.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Inserts can have a number of cutting edges integrated into their design.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -8771,14 +8968,9 @@
     "kind": "point",
     "verbatim": "Oscillating motion refers to the repetitive back-and-forth or to-and-fro movement of an object or a system about a central point or axis. An example is the pendulum of a clock or metronome.",
     "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Reciprocating motion Oscillating motion",
-    "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -8802,7 +8994,8 @@
     "verbatim": "A stepped cone pulley mechanism allows for various speeds of a machine. If the belt is on the smallest driving pulley, then it will have to be on the largest driven pulley and this gives a slow speed. If the belt is on the largest driving pulley, then it will have to be on the smallest driven pulley and this gives a fast speed.",
     "marks": 6
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q9-b-iv",
@@ -8844,6 +9037,50 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-hl-q9-b-v",
+  "topicId": "eng-2-15",
+  "conceptId": "advantage-compound-gear-train-over-simple",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)(v)",
+  "questionText": "Outline one advantage of a compound gear train over a simple gear train.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A compound gear train can achieve a large reduction or large increase in gear ratio using gear sizes that are not excessively big.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A simple gear train needs to have small gears driving large gears to achieve a significant reduction in speed. This impacts on the torque of the system.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Compound gears commonly use only two gear wheel sizes to achieve speed reduction, a series of these can be connected together.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Compound gear reduction 9:1 Simple gear reduction 3:1 (Any three) 6 + 6 + 6",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -8898,8 +9135,49 @@
     "marks": null
    }
   ],
-  "stem": "folding handle Leaving Certificate – Higher Level Engineering – Materials and Technology Thursday 8 June Morning 9:30 – 12:30",
   "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2023-hl-q9-c-ii",
+  "topicId": "eng-2-15",
+  "conceptId": "benefits-foldable-handle-electric-scooter-or",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(c)(ii)",
+  "questionText": "Outline two benefits of a foldable handle on an electric scooter. OR Describe how solar energy is used to power street lights at night.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It will make storage and security of the scooter more practical.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It allows the scooter handle to be adjusted for each individual.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The scooter can be folded to travel on public transport making the product more environmentally friendly.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Solar energy is generated during daylight hours, stored in batteries and then lights are switched on at night.",
+    "marks": null
+   }
+  ]
  },
  {
   "id": "eng-2023-ol-q1-a",
@@ -8923,7 +9201,7 @@
     "marks": 6
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": ". (50 marks) Give brief answers to any eight of the following:"
  },
  {
   "id": "eng-2023-ol-q1-b",
@@ -8977,7 +9255,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:",
+  "stem": ". (50 marks) Give brief answers to any eight of the following:",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -9026,7 +9304,7 @@
     "marks": 6
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": ". (50 marks) Give brief answers to any eight of the following:"
  },
  {
   "id": "eng-2023-ol-q1-g",
@@ -9050,7 +9328,7 @@
     "marks": 6
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": ". (50 marks) Give brief answers to any eight of the following:"
  },
  {
   "id": "eng-2023-ol-q1-h",
@@ -9070,7 +9348,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Upcycling is the process of reusing old materials to create something more valuable or of a higher quality. An example of upcycling is using reclaimed skateboards to make quality furniture, as shown.",
+    "verbatim": "CAD (computer-aided design) modelling is the use of computer-based software to aid in design processes. CAD software can be used to create two-dimensional (2-D) drawings or three dimensional (3-D) models which allows designers to test, refine and manipulate virtual products prior to production. These high-quality 3D designs are identical in dimension and detail to the desired finished product, ensuring quality and accuracy for production.",
     "marks": null
    },
    {
@@ -9086,8 +9364,32 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:",
+  "stem": ". (50 marks) Give brief answers to any eight of the following:",
   "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q1-i",
+  "topicId": "eng-3-14",
+  "conceptId": "term-upcycling",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(i)",
+  "questionText": "Explain the term upcycling.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Upcycling is the process of reusing old materials to create something more valuable or of a higher quality. An example of upcycling is using reclaimed skateboards to make quality furniture, as shown.",
+    "marks": 6
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any eight of the following:"
  },
  {
   "id": "eng-2023-ol-q1-j",
@@ -9123,7 +9425,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:",
+  "stem": ". (50 marks) Give brief answers to any eight of the following:",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -9154,7 +9456,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:",
+  "stem": ". (50 marks) Give brief answers to any eight of the following:",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -9228,6 +9530,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'any three @ 5marks (15)'."
  },
  {
@@ -9255,6 +9558,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '@ 12 marks (12)'."
  },
  {
@@ -9362,6 +9666,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'any two @ 7 marks (14)'."
  },
  {
@@ -9386,6 +9691,7 @@
     "marks": 7
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'One part @ 7 marks'."
  },
  {
@@ -9410,6 +9716,7 @@
     "marks": 7
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '@ 7 marks'."
  },
  {
@@ -9437,6 +9744,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'any two @ 5 marks'."
  },
  {
@@ -9448,7 +9756,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 OL Q3(d)(i)",
-  "questionText": "Explain any two of the following metal properties: Toughness, Describe two areas where robotic technology is used in health care.",
+  "questionText": "Toughness, Describe two areas where robotic technology is used in health care.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9468,32 +9776,103 @@
   "notes": "The scheme prints 'two areas @ 3 marks'."
  },
  {
-  "id": "eng-2023-ol-q3-d-ii",
-  "topicId": "eng-3-8",
-  "conceptId": "ductility-ways-exoskeleton-suits-can-help",
+  "id": "eng-2023-ol-q4-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "common-gases-used-gas-welding",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2023 OL Q3(d)(ii)",
-  "questionText": "Explain any two of the following metal properties: Ductility, State two ways in which exoskeleton suits can help the recovery process.",
+  "questionRef": "2023 OL Q4(a)(i)",
+  "questionText": "Name two common gases used in gas welding.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 6,
+  "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Exoskeleton suits can help people with spinal cord injuries gain some mobility, cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management",
-    "marks": 6,
-    "accepts": [
-     "Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."
-    ]
+    "kind": "point",
+    "verbatim": "Oxygen",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Acetylene",
+    "marks": null
    }
   ],
-  "stem": "exoskeleton suit",
-  "notes": "The scheme prints 'Two ways @ 3 marks (12)'."
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Two names @ 5 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q4-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "types-flame-produced-when-gas-welding",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q4(a)(ii)",
+  "questionText": "Name two types of flame produced when gas welding.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Oxidising flame",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Neutral flame",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Carburising flame",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'two flames @ 5 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q4-a-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "safety-precautions-should-be-followed-when",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q4(a)(iii)",
+  "questionText": "State two safety precautions that should be followed when gas welding.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The gas hoses are checked for damage before starting the welding process.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Correct PPE is worn while welding.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Two precautions @ 5 marks'."
  },
  {
   "id": "eng-2023-ol-q4-b",
@@ -9522,6 +9901,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
  },
  {
@@ -9570,7 +9950,7 @@
     "marks": 5
    }
   ],
-  "questionFigureKey": "engineering-2023-OL-paper-q4civ-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q4ci-art"
  },
  {
   "id": "eng-2023-ol-q4-c-iii",
@@ -9594,7 +9974,7 @@
     "marks": 5
    }
   ],
-  "questionFigureKey": "engineering-2023-OL-paper-q4civ-art"
+  "questionFigureKey": "engineering-2023-OL-paper-q4ci-art"
  },
  {
   "id": "eng-2023-ol-q4-c-iv",
@@ -9652,7 +10032,33 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Two precautions @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2023-ol-q5-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "plastic-manufacturing-processes-shown-b-c",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q5(a)(i)",
+  "questionText": "Name the three plastic manufacturing processes shown at A, B and C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A – Blow moulding B – Vacuum forming C – Injection moulding",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'any three @ 3 marks'.",
+  "questionFigureKey": "engineering-2023-OL-paper-q5ai-art"
  },
  {
   "id": "eng-2023-ol-q5-a-ii",
@@ -9710,6 +10116,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
  },
  {
@@ -9767,7 +10174,33 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Two precautions @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2023-ol-q6-a",
+  "topicId": "eng-2-11",
+  "conceptId": "any-lathe-parts-shown-b-c",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q6(a)",
+  "questionText": "Name any three of the lathe parts shown at A, B, C and D.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A – Four jaw chuck B – Tailstock C – Emergency stop button D – Revolving dead centre",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'any three @ 5 marks (15)'.",
+  "questionFigureKey": "engineering-2023-OL-paper-q6a-art"
  },
  {
   "id": "eng-2023-ol-q6-b",
@@ -9796,6 +10229,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'any three @ 5 marks (15)'."
  },
  {
@@ -9882,6 +10316,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'any two @ 6 marks (12)'."
  },
  {

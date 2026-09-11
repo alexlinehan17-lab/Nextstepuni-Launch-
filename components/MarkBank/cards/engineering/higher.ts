@@ -2196,7 +2196,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-a", topicId: "eng-3-14", conceptId: "advantage-disadvantage-smart-glasses",
     section: "A", questionRef: "2023 HL Q1(a)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Outline one advantage and one disadvantage of ‘smart’ glasses.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -2217,7 +2217,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-b", topicId: "eng-2-10", conceptId: "briefly-principle-operation-bridge-rectifier-electric",
     section: "A", questionRef: "2023 HL Q1(b)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Briefly describe the principle of operation of a bridge rectifier in electric arc welding circuits.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -2232,11 +2232,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-c", topicId: "eng-2-13", conceptId: "engineering-importance-specifying-limits-component-drawings",
     section: "A", questionRef: "2023 HL Q1(c)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "In engineering, explain the importance of specifying limits on component drawings prior to manufacture.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This promotes mass production of component parts and can facilitate interchangeability and replacement of components.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "In engineering drawing, the limits are the maximum and minimum dimensions of a component.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "This promotes mass production of component parts and can facilitate interchangeability and replacement of components.", marks: null },
     ],
   } as SecCard,
   {
@@ -2246,7 +2247,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-e", topicId: "eng-1-3", conceptId: "how-structure-metallic-bond-facilitates-electrical",
     section: "A", questionRef: "2023 HL Q1(e)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Describe how the structure of the metallic bond facilitates electrical conductivity in metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2260,7 +2261,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-f", topicId: "eng-3-14", conceptId: "discuss-contribution-any-following-has-made",
     section: "A", questionRef: "2023 HL Q1(f)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Discuss the contribution that any one of the following has made to technology: (i) Ivan Sutherland (ii) Eileen Gray (iii) Dugald Clerk.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2274,7 +2275,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-h", topicId: "eng-2-15", conceptId: "benefits-using-pneumatic-power-over-electrical",
     section: "A", questionRef: "2023 HL Q1(h)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Outline two benefits of using pneumatic power over electrical power in engineering manufacture.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -2284,11 +2285,24 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Range of applications in a production situation.", marks: null },
     { id: "r-5", kind: "point", verbatim: "Reduced chance of electrical shock.", marks: null },
     { id: "r-6", kind: "point", verbatim: "Can be easily programmed for a sequence of actions, etc.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Enhanced corrosion resistance.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Improved hardness and wear resistance.", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Anodising offers a wide range of colour options and finishes, making it a popular choice for decorative applications.", marks: null },
-    { id: "r-10", kind: "point", verbatim: "The anodised layer acts as an insulator, preventing direct electrical contact with the aluminium substrate.", marks: null },
-    { id: "r-11", kind: "point", verbatim: "Anodised aluminium is fully recyclable, allowing for the recovery and reuse of the material.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q1-i", topicId: "eng-1-5", conceptId: "advantages-using-anodised-aluminium-engineering-projects",
+    section: "A", questionRef: "2023 HL Q1(i)",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    questionText: "Give two advantages of using anodised aluminium in engineering projects.",
+    tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enhanced corrosion resistance.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Improved hardness and wear resistance.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Anodising offers a wide range of colour options and finishes, making it a popular choice for decorative applications.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The anodised layer acts as an insulator, preventing direct electrical contact with the aluminium substrate.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Anodised aluminium is fully recyclable, allowing for the recovery and reuse of the material.", marks: null },
     ],
   } as SecCard,
   {
@@ -2298,7 +2312,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-j", topicId: "eng-2-11", conceptId: "safety-features-integrated-into-cnc-lathe",
     section: "A", questionRef: "2023 HL Q1(j)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Describe two safety features integrated into a CNC lathe.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -2326,6 +2340,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-a-i", topicId: "eng-3-14", conceptId: "term-extended-reality-xr",
     section: "A", questionRef: "2023 HL Q2(a)(i)",
+    stem: ". (50 marks) Answer all of the following:",
     questionText: "Describe the term Extended Reality (XR).",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -2339,6 +2354,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-a-ii", topicId: "eng-3-14", conceptId: "identify-benefits-extended-reality-xr",
     section: "A", questionRef: "2023 HL Q2(a)(ii)",
+    stem: ". (50 marks) Answer all of the following:",
     questionText: "Identify two benefits of Extended Reality (XR).",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -2355,6 +2371,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-b", topicId: "eng-3-14", conceptId: "extended-reality-xr-encompasses-range-other",
     section: "A", questionRef: "2023 HL Q2(b)",
+    stem: ". (50 marks) Answer all of the following:",
     questionText: "Extended Reality (XR) encompasses a range of other digital technologies. Explain each of the following types of Extended Reality: (i) Virtual Reality (VR). (ii) Augmented Reality (AR). (iii) Mixed Reality (MR).",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -2370,6 +2387,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-c", topicId: "eng-3-14", conceptId: "discuss-how-extended-reality-xr-immersive",
     section: "A", questionRef: "2023 HL Q2(c)",
+    stem: ". (50 marks) Answer all of the following:",
     questionText: "Discuss how Extended Reality (XR) immersive technology might provide a more engaging educational environment for learners of the future.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
@@ -2388,6 +2406,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-d", topicId: "eng-3-14", conceptId: "any-following-real-applications-relation-extended",
     section: "A", questionRef: "2023 HL Q2(d)",
+    stem: ". (50 marks) Answer all of the following:",
     questionText: "Describe any two of the following real applications in relation to Extended Reality (XR): (i) Gaming and entertainment. (ii) Vehicle design and development. (iii) Surgical applications and physiotherapy. (iv) Real estate property viewing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -2401,6 +2420,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-e", topicId: "eng-3-14", conceptId: "while-xr-presents-many-creative-opportunities",
     section: "A", questionRef: "2023 HL Q2(e)",
+    stem: ". (50 marks) Answer all of the following:",
     questionText: "While XR presents many creative opportunities, it has however a number of drawbacks. Discuss any two of the following drawbacks associated with Extended Reality (XR): (i) Privacy. (ii) Social engagement. (iii) Implementation costs.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -2503,6 +2523,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-c-i", topicId: "eng-3-8", conceptId: "aid-suitable-diagrams-ultrasonic-non-destructive",
     section: "A", questionRef: "2023 HL Q3(c)(i)",
+    stem: ". (50 marks)",
     questionText: "Describe, with the aid of suitable diagrams, ultrasonic non-destructive testing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -2516,6 +2537,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-c-ii", topicId: "eng-3-8", conceptId: "distinguish-examples-between-microscopic-macroscopic-non",
     section: "A", questionRef: "2023 HL Q3(c)(ii)",
+    stem: ". (50 marks)",
     questionText: "Distinguish, with examples, between microscopic and macroscopic non-destructive testing methods.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -2539,6 +2561,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Short processing time (fewer steps involved).", marks: null },
     { id: "r-5", kind: "point", verbatim: "Cost-effective.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q4ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q4ai-art.png",
+          "srcHash": "d135bc9f133eca7a72c8afb9274a9b5a",
+          "alt": "The table or diagram printed with 2023 HL Q4(a)(i), as the State Examinations Commission set it. It reads: arbour.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2552,6 +2582,35 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Case hardening gives a hard, abrasion resistant outer surface yet has reduced brittleness due to the softer inner core, it is less likely to break on impact compared to a fully hardened product, etc.", marks: 4 },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q4ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q4ai-art.png",
+          "srcHash": "d135bc9f133eca7a72c8afb9274a9b5a",
+          "alt": "The table or diagram printed with 2023 HL Q4(a)(i), as the State Examinations Commission set it. It reads: arbour.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q4-b-i", topicId: "eng-1-3", conceptId: "transformation-boundary-lines-b-c-shown",
+    section: "A", questionRef: "2023 HL Q4(b)(i)",
+    questionText: "Name the transformation boundary lines A, B and C shown.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Liquidus line B = Solidus line C = Eutectoid line / Lower Critical Temperature (LCT) line", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q4bi-art.png",
+          "srcHash": "fdc6d01d9654cc0aceca2b896b76cb3f",
+          "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it. It reads: 1 2 3 4 5 6, Temperature °C, 1400, 1000, 600, 200, Line C, Line A, Line B, E, D.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2570,7 +2629,7 @@ export const CARDS: SecCard[] = [
           "candId": "engineering-2023-HL-paper-q4bi-art",
           "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q4bi-art.png",
           "srcHash": "fdc6d01d9654cc0aceca2b896b76cb3f",
-          "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it. It reads: 1 2 3 4 5 6, Temperature °C, 1400, 1000, 600, 200, Line C, Line A, Line B, E, D.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
     },
@@ -2592,7 +2651,7 @@ export const CARDS: SecCard[] = [
           "candId": "engineering-2023-HL-paper-q4bi-art",
           "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q4bi-art.png",
           "srcHash": "fdc6d01d9654cc0aceca2b896b76cb3f",
-          "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it. It reads: 1 2 3 4 5 6, Temperature °C, 1400, 1000, 600, 200, Line C, Line A, Line B, E, D.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
     },
@@ -2604,6 +2663,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q4-c-iii", topicId: "eng-1-4", conceptId: "material-composition-18-10-stainless-steel",
     section: "A", questionRef: "2023 HL Q4(c)(iii)",
+    stem: ". (50 marks)",
     questionText: "Describe the material composition of 18/10 stainless steel.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -2622,14 +2682,14 @@ export const CARDS: SecCard[] = [
     questionText: "Name and describe crystal defect A and crystal defect B shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This is where there is an atom missing from the lattice.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "A = Vacancy Defect This is where there is an atom missing from the lattice.", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "B = Interstitial Defect This is where foreign atoms fit in between the parent atoms.", marks: 4 },
     ],
     questionFigure: {
           "candId": "engineering-2023-HL-paper-q5ai-art",
           "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q5ai-art.png",
           "srcHash": "7953cbf44557a740d95d80fd798e89e6",
-          "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it. It reads: defect A, defect B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
     },
@@ -2650,7 +2710,7 @@ export const CARDS: SecCard[] = [
           "candId": "engineering-2023-HL-paper-q5ai-art",
           "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q5ai-art.png",
           "srcHash": "7953cbf44557a740d95d80fd798e89e6",
-          "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it. It reads: defect A, defect B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
     },
@@ -2671,7 +2731,7 @@ export const CARDS: SecCard[] = [
           "candId": "engineering-2023-HL-paper-q5ai-art",
           "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q5ai-art.png",
           "srcHash": "7953cbf44557a740d95d80fd798e89e6",
-          "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it. It reads: defect A, defect B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
     },
@@ -2696,7 +2756,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q5-c-i", topicId: "eng-1-3", conceptId: "body-centred-cubic-bcc-face-centred",
     section: "A", questionRef: "2023 HL Q5(c)(i)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Body Centred Cubic (BCC) and Face Centred Cubic (FCC) structures.",
+    stem: ". (50 marks)",
+    questionText: "Body Centred Cubic (BCC) and Face Centred Cubic (FCC) structures.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The body-centred cubic unit cell has atoms at each of the eight corners of a cube, plus one atom in the centre of the cube (total of 9 atoms). BCC metals tend to be strong and brittle.", marks: null },
@@ -2711,7 +2772,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q5-c-iii", topicId: "eng-1-3", conceptId: "solid-solution-alloys-partial-solubility-alloys",
     section: "A", questionRef: "2023 HL Q5(c)(iii)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Solid solution alloys and partial solubility alloys.",
+    stem: ". (50 marks)",
+    questionText: "Solid solution alloys and partial solubility alloys.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature, copper-nickel and iron-chromium are examples.", marks: null },
@@ -2726,6 +2788,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-a-i", topicId: "eng-2-10", conceptId: "aid-diagram-principles-mig-welding",
     section: "A", questionRef: "2023 HL Q6(a)(i)",
+    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram, the principles of MIG welding.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
@@ -2740,6 +2803,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-a-ii", topicId: "eng-2-10", conceptId: "reasons-use-mig-welding-restoration-classic",
     section: "A", questionRef: "2023 HL Q6(a)(ii)",
+    stem: ". (50 marks)",
     questionText: "Explain two reasons for the use of MIG welding in the restoration of classic cars.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 3"}, totalMarks: 6,
     rows: [
@@ -2756,6 +2820,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-b-i", topicId: "eng-2-10", conceptId: "aid-diagram-neutral-flame-oxy-acetylene",
     section: "A", questionRef: "2023 HL Q6(b)(i)",
+    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram, the neutral flame in oxy-acetylene welding.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -2772,6 +2837,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-b-ii", topicId: "eng-2-10", conceptId: "types-welding-suitable-automated-control",
     section: "A", questionRef: "2023 HL Q6(b)(ii)",
+    stem: ". (50 marks)",
     questionText: "Name three types of welding suitable for automated control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2785,6 +2851,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-b-iii", topicId: "eng-2-10", conceptId: "safety-benefit-using-granulated-flux-submerged",
     section: "A", questionRef: "2023 HL Q6(b)(iii)",
+    stem: ". (50 marks)",
     questionText: "Outline one safety benefit of using a granulated flux in submerged arc welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2798,10 +2865,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-b-iv", topicId: "eng-2-10", conceptId: "how-multi-run-welding-can-impact",
     section: "A", questionRef: "2023 HL Q6(b)(iv)",
+    stem: ". (50 marks)",
     questionText: "Describe how multi-run welding can impact the quality of a weld.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Multi-run welds have a post heating effect on the previous weld which will improve its quality.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Multi-runs produce a superior quality weld which is more refined than a single run weld.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Multi-run welds have a post heating effect on the previous weld which will improve its quality.", marks: null },
     ],
   } as SecCard,
   {
@@ -2809,12 +2878,13 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
-    id: "eng-2023-hl-q6-b", topicId: "eng-2-10", conceptId: "function-pressure-regulator-oxy-acetylene-welding",
-    section: "A", questionRef: "2023 HL Q6(b)",
-    questionText: "Answer any three of the following: (i) Describe, with the aid of a diagram, the neutral flame in oxy-acetylene welding. (ii) Name three types of welding suitable for automated control. (iii) Outline one safety benefit of using a granulated flux in submerged arc welding. (iv) Describe how multi-run welding can impact the quality of a weld. (v) Explain the function of a pressure regulator in oxy-acetylene welding.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    id: "eng-2023-hl-q6-b-v", topicId: "eng-2-10", conceptId: "function-pressure-regulator-oxy-acetylene-welding",
+    section: "A", questionRef: "2023 HL Q6(b)(v)",
+    stem: ". (50 marks)",
+    questionText: "Explain the function of a pressure regulator in oxy-acetylene welding.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A balanced proportion of oxygen and acetylene.", marks: 18, accepts: ["Maximum combustion as all carbon from the acetylene is used.","Has a working temperature of up to 3300°C.","The most extensively used flame for oxy-acetylene welding.","MIG, TIG, resistance welding, Submerged Arc welding, Electro-slag welding, etc. are suitable for automated welding.","The weld can be protected from oxidation and potential weaknesses in SAW, fumes are reduced, arc is not visible, reduced fire and heat hazards, etc.","Multi-run welds have a post heating effect on the previous weld which will improve its quality."] },
+    { id: "r-1", kind: "point", verbatim: "The primary function of a pressure regulator is to control the pressure of the gases being supplied to the welding torch. Regulators prevent gas pressure from exceeding safe limits and give precise control of the gas flow rate.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -2948,15 +3018,69 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q7-b-iii", topicId: "eng-1-9", conceptId: "importance-using-pigments-plasticisers-manufacture-jet",
+    section: "A", questionRef: "2023 HL Q7(b)(iii)",
+    questionText: "Explain the importance of using pigments and plasticisers in the manufacture of a jet ski.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A selection of plasticisers makes the polymer flexible, easier to mould and non-toxic.", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Pigments give the plastic hull its tinted colour.", marks: 2 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q7bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7bi-art.png",
+          "srcHash": "bd55b86b2a330396878d031fe087d6fb",
+          "alt": "The table or diagram printed with 2023 HL Q7(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q7-c-i", topicId: "eng-1-9", conceptId: "distinguish-between-recyclability-thermoplastics-thermoset-plastics",
     section: "A", questionRef: "2023 HL Q7(c)(i)",
-    stem: "yellow jet ski hull 5. fabricate 1. collect 4. wash 2. sort 3. shred Polymer recycling process",
     questionText: "Distinguish between the recyclability of thermoplastics and thermoset plastics.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "PVC are examples of thermoplastics.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Thermoset plastics are configured to be permanently moulded as they will not breakdown nor recycle effectively. Epoxy resins and polyurethanes are examples.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q7ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7ci-art.png",
+          "srcHash": "bdb96034637cf7e252e6ae923080ecce",
+          "alt": "The table or diagram printed with 2023 HL Q7(c)(i), as the State Examinations Commission set it. It reads: 1., collect, 2., sort, 3. shred, 4., wash, 5., fabricate, Polymer recycling process.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q7-c-ii", topicId: "eng-1-9", conceptId: "each-stages-polymer-recycling-process-shown",
+    section: "A", questionRef: "2023 HL Q7(c)(ii)",
+    questionText: "Describe each of the stages in the polymer recycling process shown.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Collect: The plastic materials are gathered through municipal and industrial collection.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Sort: Different plastic materials are sorted by different polymer types.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Shred: The plastic materials are cut into small pieces, making them uniform and easier to process.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Wash: the plastic pieces are cleaned.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Fabricate: plastic pieces can be formed into beads and then used for remoulding.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q7ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7ci-art.png",
+          "srcHash": "bdb96034637cf7e252e6ae923080ecce",
+          "alt": "The table or diagram printed with 2023 HL Q7(c)(i), as the State Examinations Commission set it. It reads: 1., collect, 2., sort, 3. shred, 4., wash, 5., fabricate, Polymer recycling process.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2965,12 +3089,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q7-c-iii", topicId: "eng-1-9", conceptId: "applications-construction-industry-recycled-plastic",
     section: "A", questionRef: "2023 HL Q7(c)(iii)",
-    stem: "yellow jet ski hull 5. fabricate 1. collect 4. wash 2. sort 3. shred Polymer recycling process",
     questionText: "Outline two applications in the construction industry of recycled plastic.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Used to produce fencing panels as plastic wood, containers, insulation, waterproof membrane sheets, etc.", marks: 8 },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q7ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7ci-art.png",
+          "srcHash": "bdb96034637cf7e252e6ae923080ecce",
+          "alt": "The table or diagram printed with 2023 HL Q7(c)(i), as the State Examinations Commission set it. It reads: 1., collect, 2., sort, 3. shred, 4., wash, 5., fabricate, Polymer recycling process.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2979,6 +3110,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q8-a-i", topicId: "eng-2-11", conceptId: "aid-diagram-term-built-up-edge",
     section: "A", questionRef: "2023 HL Q8(a)(i)",
+    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram, the term built-up edge and explain how it occurs.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -2993,6 +3125,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q8-a-ii", topicId: "eng-2-11", conceptId: "methods-preventing-built-up-edge-when",
     section: "A", questionRef: "2023 HL Q8(a)(ii)",
+    stem: ". (50 marks)",
     questionText: "Outline two methods of preventing a built-up edge when machining.",
     tariffModel: {"kind":"orderedSplit","notation":"2 + 2"}, totalMarks: 4,
     rows: [
@@ -3009,6 +3142,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q8-a-iii", topicId: "eng-2-11", conceptId: "identify-other-machining-chip-types-can",
     section: "A", questionRef: "2023 HL Q8(a)(iii)",
+    stem: ". (50 marks)",
     questionText: "Identify two other machining chip types which can be produced when metal cutting.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3023,6 +3157,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q8-b-ii", topicId: "eng-2-11", conceptId: "identify-safety-precautions-be-observed-when",
     section: "A", questionRef: "2023 HL Q8(b)(ii)",
+    stem: ". (50 marks)",
     questionText: "Identify three safety precautions to be observed when using a milling machine.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -3041,6 +3176,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q8-b-iii", topicId: "eng-2-11", conceptId: "main-difference-between-milling-machine-drilling",
     section: "A", questionRef: "2023 HL Q8(b)(iii)",
+    stem: ". (50 marks)",
     questionText: "Describe the main difference between a milling machine and a drilling machine.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -3054,6 +3190,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q8-b-iv", topicId: "eng-2-13", conceptId: "benefits-additive-manufacture-over-subtractive-manufacture",
     section: "A", questionRef: "2023 HL Q8(b)(iv)",
+    stem: ". (50 marks)",
     questionText: "Describe the benefits of additive manufacture over subtractive manufacture.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -3061,6 +3198,23 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Complex design can be produced quickly using additive methods compared to slower machining of complicated shapes.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Additive methods can be redesigned quickly, this is particularly effective for prototyping.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Manufacturing can be on-demand for additive techniques, this minimises storage.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q8-b-v", topicId: "eng-2-11", conceptId: "reasons-use-tungsten-carbide-cutting-tips",
+    section: "A", questionRef: "2023 HL Q8(b)(v)",
+    stem: ". (50 marks)",
+    questionText: "Outline two reasons for the use of tungsten carbide cutting tips in metal cutting.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than high speed steel (HSS).", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Experienced operators will ensure long tool life.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Inserts can have a number of cutting edges integrated into their design.", marks: null },
     ],
   } as SecCard,
   {
@@ -3135,12 +3289,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q9-b-i", topicId: "eng-2-15", conceptId: "aid-diagram-difference-between-reciprocating-motion",
     section: "A", questionRef: "2023 HL Q9(b)(i)",
+    stem: ". (50 marks)",
     questionText: "Explain, with the aid of a diagram, the difference between reciprocating motion and oscillating motion.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Reciprocating motion is a repetitive back-and-forth linear movement. It is found in a wide range of mechanisms including internal combustion engines.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Oscillating motion refers to the repetitive back-and-forth or to-and-fro movement of an object or a system about a central point or axis. An example is the pendulum of a clock or metronome.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Reciprocating motion Oscillating motion", marks: null },
     ],
   } as SecCard,
   {
@@ -3150,6 +3304,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q9-b-iii", topicId: "eng-2-15", conceptId: "aid-diagram-operation-stepped-cone-pulley",
     section: "A", questionRef: "2023 HL Q9(b)(iii)",
+    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram, the operation of a stepped cone pulley drive.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -3163,6 +3318,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q9-b-iv", topicId: "eng-2-15", conceptId: "advantages-using-timing-belt-over-timing",
     section: "A", questionRef: "2023 HL Q9(b)(iv)",
+    stem: ". (50 marks)",
     questionText: "Outline two advantages of using a timing belt over a timing chain in modern car engines.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -3177,9 +3333,25 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q9-b-v", topicId: "eng-2-15", conceptId: "advantage-compound-gear-train-over-simple",
+    section: "A", questionRef: "2023 HL Q9(b)(v)",
+    stem: ". (50 marks)",
+    questionText: "Outline one advantage of a compound gear train over a simple gear train.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A compound gear train can achieve a large reduction or large increase in gear ratio using gear sizes that are not excessively big.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "A simple gear train needs to have small gears driving large gears to achieve a significant reduction in speed. This impacts on the torque of the system.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Compound gears commonly use only two gear wheel sizes to achieve speed reduction, a series of these can be connected together.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Compound gear reduction 9:1 Simple gear reduction 3:1 (Any three) 6 + 6 + 6", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q9-c-i", topicId: "eng-2-15", conceptId: "aid-diagram-s-suitable-mechanism-folding",
     section: "A", questionRef: "2023 HL Q9(c)(i)",
-    stem: "folding handle Leaving Certificate – Higher Level Engineering – Materials and Technology Thursday 8 June Morning 9:30 – 12:30",
     questionText: "Describe, with the aid of a diagram(s), a suitable mechanism for folding the scooter handle. Outline two advantages of using solar powered LED lights in an urban setting.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -3189,6 +3361,22 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "LED lights use less electricity than traditional bulbs.", marks: null },
     { id: "r-5", kind: "point", verbatim: "LED lights do not require as much maintenance or replacement.", marks: null },
     { id: "r-6", kind: "point", verbatim: "It allows new attractive designs to be introduced.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q9-c-ii", topicId: "eng-2-15", conceptId: "benefits-foldable-handle-electric-scooter-or",
+    section: "A", questionRef: "2023 HL Q9(c)(ii)",
+    questionText: "Outline two benefits of a foldable handle on an electric scooter. OR Describe how solar energy is used to power street lights at night.",
+    tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It will make storage and security of the scooter more practical.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "It allows the scooter handle to be adjusted for each individual.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The scooter can be folded to travel on public transport making the product more environmentally friendly.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Solar energy is generated during daylight hours, stored in batteries and then lights are switched on at night.", marks: null },
     ],
   } as SecCard,
   {

@@ -192,7 +192,17 @@ COMMAND = re.compile(
     r'|suggest)\b', re.I)
 TRAILING_FURNITURE = re.compile(
     r'(?:\s*(?:Figures?|Figs?\.?)\s*\d+[a-z]?)+\s*$'
-    r'|\s*Section\s+[A-C]\b[^.]{0,60}?\d{1,3}\s*marks?\s*$', re.I)
+    r'|\s*Section\s+[A-C]\b[^.]{0,60}?\d{1,3}\s*marks?\s*$'
+    # The LETTERS printed under the pictures the ask names, swept onto the end
+    # of it: 2023 OL Q5(a)(i) reads "Name the three plastic manufacturing
+    # processes shown at A, B and C." on the page, with A, B and C set under
+    # the three drawings beneath it, and the reader returns "... at A, B and
+    # C. A B C". Bare capitals with nothing between them are never a sentence,
+    # and the self-check below keeps the strip to the ones that leave a
+    # finished question behind. Case-sensitive inside the case-insensitive
+    # pattern, because a lower-case letter on a diagram is a quantity and a
+    # question may well end on one.
+    r'|(?-i:(?:\s+[A-H]){2,})\s*$', re.I)
 
 # Which subjects get the question-text handling below. It is deliberately an
 # ALLOWLIST rather than a default. The work it does -- taking the page's
@@ -461,9 +471,16 @@ class Author:
             if _t != cue and _t.endswith(':'):
                 question, cue, furniture_removed = _t, _t, True
         joined_kids = False
+        # A question that does not end like a SENTENCE has not finished being
+        # asked — which is the same thing paper.suspect() flags it for — so
+        # the terminal test subsumes the colon and covers the shapes that end
+        # on neither: "Explain any three of the following furnace-related
+        # terms:", and the drawbacks question that runs two sentences before
+        # its colon.
         hands_over = len(cue) < 40 or (
             clean and (cue.endswith(':')
-                       or re.search(r'\bfollowing\s*:', cue)))
+                       or re.search(r'\bfollowing\s*:', cue)
+                       or not PAPER_TERMINAL.search(cue)))
         if roman is None and hands_over:
             if clean:
                 kids = [k for k in self.paper.parts
