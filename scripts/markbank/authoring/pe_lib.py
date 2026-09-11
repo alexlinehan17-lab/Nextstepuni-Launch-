@@ -4,26 +4,38 @@
     python3 scripts/markbank/authoring/pe_lib.py            # the pairing audit
     python3 scripts/markbank/authoring/pe_lib.py 2024 hl    # one sitting
 
+THE DENOMINATOR IS THE PAPER (Law 1).  This walks the CENSUS's leaf asks —
+741 of them over thirteen papers — and finds the scheme part that prices each
+one.  An earlier version walked the scheme's parts instead and reported 644
+"paired asks" out of a denominator it never looked at; the 97 the paper prints
+and the scheme never reaches were not in any bucket at all.
+
 LAW 4 — never join paper to scheme on the part key — applies here even though
 PE's two documents happen to print the SAME address.  The key is where the
-pairing STARTS; wording is what makes it evidence.  Two independent checks have
-to agree before a pair is used:
+pairing STARTS; something else has to make it evidence.  Three routes, tried
+in order, and a pair resting on none of them is REPORTED rather than used:
 
-  1. the key printed on the scheme part exists on the paper, and
-  2. the scheme part's own words echo the paper's ask.
+  wording   the scheme reprints the ask above or inside its table (2023
+            onward), or its criterion rows are the ask rewritten as what the
+            examiner must see — "Identifies test to measure flexibility"
+            against "Identify a test that could be used to measure
+            flexibility".  Scored with align.py's bag-of-words overlap.
+  shape     the markers the two documents print under one question are
+            IDENTICAL and in the same order.  This is the Baltic rule: the
+            same number of rows under the letter, or nothing.  It covers the
+            commonest Section A shape too — a question BOTH documents keep
+            whole has exactly one unit on each side, and a stimulus-heavy ask
+            ("The Collins Dictionary defines a characteristic as...") scores
+            below the wording floor against a table that never quotes it.
+  parent    the scheme prices the LETTER where the paper numbers romans
+            under it, or prices the QUESTION where the paper letters it.  The
+            ask is then inside the part, and a card written from that part
+            covers it — which is exactly how reconcile.py reads a card cited
+            one level up.
 
-For 2023 onward (2) is easy: the scheme reprints the ask above its table, so
-the cue is scored against the paper's text directly.  For 2020-2022 the scheme
-reprints NOTHING — a part opens "Question 3 (6 Marks)", "(a)", "Description
-Marks" and goes straight to "Identifies test to measure flexibility 1 mark".
-There the evidence is the criterion ROWS, which are the ask rewritten as what
-the examiner must see: "Identifies test to measure flexibility" against
-"Identify a test that could be used to measure flexibility".  Scored the same
-way, they agree at the same rate.
-
-Where neither scores, the pair is REPORTED, not used.  A wrong pairing shows a
-real question under a real answer that does not answer it and passes every
-downstream gate; the only thing that catches it is refusing to make it.
+A wrong pairing shows a real question under a real answer that does not
+answer it and passes every downstream gate; the only thing that catches it is
+refusing to make it.
 """
 import collections
 import os
@@ -37,16 +49,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 import pe_scheme as S                                            # noqa: E402
 from align import bag, score                                     # noqa: E402
 from paper import Paper                                          # noqa: E402
+from paper_census import census_subject                           # noqa: E402
 
 SUBJECT = 'physical-education'
 # 2020 sat an altered examination: Section C offered three long questions where
-# every other year offers five, so its paper stops at Question 16.
-SITTINGS = [(2020, 'hl')] + [(y, lv) for y in range(2021, 2027)
-                             for lv in ('hl', 'ol')]
+# every other year offers five, so its paper stops at Question 16 and no
+# Ordinary paper was set at all.
+SITTINGS = S.SITTINGS
 # The wording floor.  Set from the corpus rather than picked: at 0.30 every
-# sitting pairs over 85% of its scheme parts, and the pairs that fall below it
-# are the ones whose scheme part prints nothing but a mark ladder — which have
-# no words to agree with and are refused for that reason anyway.
+# sitting pairs over 85% of its asks on wording alone, and the pairs that fall
+# below it are the ones whose scheme part prints nothing but a mark ladder —
+# which have no words to agree with.
 FLOOR = 0.30
 
 
@@ -54,17 +67,30 @@ def scheme_dir():
     return os.path.join(ROOT, 'examiner-reports', SUBJECT, 'schemes')
 
 
+def normalise(text):
+    text = (text or '').replace('’', "'").replace('‘', "'")
+    text = text.replace('“', '"').replace('”', '"')
+    text = text.replace('–', '-').replace('—', '-')
+    return re.sub(r'[^a-z0-9]+', '', text.lower())
+
+
+_MD = {}
+
+
 def load_md(year, level):
-    """The scheme markdown the provenance gate reads, normalised the way it is."""
+    """The whole scheme file, normalised the way the provenance gate reads it.
+
+    Both renderings are in it — the converted page order and the block order
+    append-scheme-blocks.py appended — and the gate searches both, so a line
+    this reader rebuilt out of two wrapped halves traces against the block
+    rendering even where the page order split it.
+    """
     path = os.path.join(scheme_dir(), f'{year}-{level}.md')
     raw = open(path, encoding='utf-8').read()
     keep = [l for l in raw.split('\n')
             if not re.match(r'^##\s*Page\s*\d+\s*$', l)
             and not re.match(r'^\s*\d+\s*$', l)]
     return normalise('\n'.join(keep))
-
-
-_MD = {}
 
 
 def traces(year, level, text):
@@ -75,11 +101,20 @@ def traces(year, level, text):
     return normalise(text) in _MD[key]
 
 
-def normalise(text):
-    text = (text or '').replace('’', "'").replace('‘', "'")
-    text = text.replace('“', '"').replace('”', '"')
-    text = text.replace('–', '-').replace('—', '-')
-    return re.sub(r'\s+', ' ', text).strip().lower()
+_CENSUS = {}
+
+
+def leaves(year, level):
+    """The census's own leaf asks for one paper, as (key, label, text).
+
+    Taken from paper_census.py itself rather than re-walked here, so the
+    denominator this reader works against is the one reconcile.py checks.
+    """
+    if not _CENSUS:
+        for paper in census_subject(SUBJECT)['papers']:
+            _CENSUS[(paper['year'], paper['level'])] = [
+                (tuple(l['key']), l['label'], l['text']) for l in paper['leaves']]
+    return _CENSUS[(year, level)]
 
 
 def evidence(part):
@@ -88,79 +123,61 @@ def evidence(part):
     return bag(' '.join(words))
 
 
-def _shape(keys, q):
-    """The part markers one document prints under question `q`, in order."""
-    return [(k[1], k[2]) for k in keys if k[0] == q]
-
-
 def pair(year, level):
-    """(paper, parts, pairs, unpaired) for one sitting.
+    """(paper, parts, pairs, unpaired, why) for one sitting.
 
-    `pairs` maps a paper key to the scheme parts that price it, in printed
-    order — a paper ask is sometimes answered by two consecutive scheme parts
-    (2020 prices Q4's two types of feedback in one table and its two
-    explanations in the next).
+    `pairs` maps a CENSUS leaf key to the scheme part that prices it, with the
+    route that made it evidence.  `unpaired` is the leaf asks no part reaches.
     """
     paper = Paper(SUBJECT, year, level)
-    keys = list(paper.paths())
-    text = {k: paper.text(*k) or '' for k in keys}
+    asks = leaves(year, level)
     parts = S.read(year, level)
+    by_key = {}
+    for p in parts:
+        by_key.setdefault(p.address, p)
+    shape_ok = {}
+    for q in {k[0] for k, _, _ in asks}:
+        mine = [(k[1], k[2]) for k, _, _ in asks if k[0] == q]
+        every = [p.address[1:] for p in parts if p.address[0] == q]
+        theirs = [t for t in every if t != (None, None)]
+        # Either the two documents print the same markers under this question
+        # in the same order, or NEITHER prints a marker at all — a question
+        # both documents keep whole has exactly one unit on each side, which
+        # is the same rule at one row.
+        shape_ok[q] = ((bool(mine) and mine == theirs)
+                       or (mine == [(None, None)] and every == [(None, None)]))
 
     pairs, unpaired = collections.OrderedDict(), []
     why = collections.Counter()
-    scheme_keys = [p.address for p in parts]
-    for part in parts:
-        q, letter, roman = part.address
-        candidates = [k for k in keys if k[0] == q]
-        if not candidates:
-            unpaired.append((part, 0.0, 'the paper prints no such question'))
-            continue
-        exact = [k for k in candidates if k[1] == letter and k[2] == roman]
-        # A scheme part addressed at the QUESTION where the paper letters its
-        # asks is the question's own head; it prices the whole question.
-        if not exact and letter is None and roman is None:
-            exact = candidates
-        if not exact:
-            # The paper wins over the scheme on the address. A letter the
-            # paper does not print is reported, never re-keyed to a neighbour.
-            unpaired.append((part, 0.0, 'the paper prints no such part'))
-            continue
-        ev = evidence(part)
-        best = max(exact, key=lambda k: score(ev, bag(text[k])))
-        agreement = score(ev, bag(text[best])) if ev else 0.0
-        if agreement >= FLOOR:
-            pairs.setdefault(best, []).append(part)
-            why['wording'] += 1
-            continue
-        # The second route, for the sittings that reprint NOTHING. 2020, 2021
-        # and 2022 open a part "(a)", "Description Marks" and go straight to
-        # "Identifies test to measure flexibility 1 mark" — there are no words
-        # to score, and refusing on that alone lost 196 parts across the
-        # corpus. What is still printed is the SHAPE: the markers the two
-        # documents set under one question. Accepted only when they are
-        # IDENTICAL and in the same order, which is the Baltic rule — the two
-        # documents must print the same number of rows under that letter — and
-        # never where the scheme prints one marker the paper does not.
-        if _shape(scheme_keys, q) == _shape(keys, q) and len(exact) == 1:
-            pairs.setdefault(exact[0], []).append(part)
-            why['shape'] += 1
-            continue
-        # The third route, and the last: printed ORDER, under the Baltic rule —
-        # the two documents must print the SAME NUMBER of parts under that
-        # question, and the pairing is then position for position. It is what
-        # recovers the case study, where the scheme addresses "Q13 (i)" and
-        # "Q13 (ii)" the paper prints as "Q13(a)(i)" and "Q13(a)(ii)": the
-        # paper wins on the address, and the order is the evidence. One
-        # mismatch in the count abandons the whole question rather than
-        # shifting the rest by one.
-        mine, theirs = _shape(scheme_keys, q), _shape(keys, q)
-        if len(mine) == len(theirs) and len(mine) > 1:
-            pairs.setdefault(keys[[k[0] for k in keys].index(q)
-                                  + mine.index((letter, roman))], []).append(part)
-            why['order'] += 1
-            continue
-        unpaired.append((part, round(agreement, 2),
-                         'neither the wording, the printed shape nor the order agrees'))
+    for key, label, text in asks:
+        q, letter, roman = key
+        exact = by_key.get(key)
+        ask_bag = bag(text or '')
+        if exact is not None:
+            agreement = score(evidence(exact), ask_bag)
+            if agreement >= FLOOR:
+                pairs[key] = (exact, 'wording', round(agreement, 2))
+                why['wording'] += 1
+                continue
+            if shape_ok[q]:
+                pairs[key] = (exact, 'shape', round(agreement, 2))
+                why['shape'] += 1
+                continue
+        # The scheme priced a level UP: the letter where the paper numbers
+        # romans, or the question where the paper letters its asks. The ask is
+        # inside that part, which is how reconcile.py reads a card cited there.
+        for up in ((q, letter, None), (q, None, None)):
+            if up == key:
+                continue
+            parent = by_key.get(up)
+            if parent is None:
+                continue
+            agreement = score(evidence(parent), ask_bag)
+            pairs[key] = (parent, 'parent', round(agreement, 2))
+            why['parent'] += 1
+            break
+        else:
+            unpaired.append((key, label, text))
     return paper, parts, pairs, unpaired, why
 
 
@@ -168,30 +185,26 @@ def audit():
     rows = []
     for year, level in SITTINGS:
         paper, parts, pairs, unpaired, why = pair(year, level)
-        rows.append((year, level, len(list(paper.paths())), len(parts),
-                     sum(len(v) for v in pairs.values()), len(unpaired)))
-        print(f'{year} {level.upper()}: {len(list(paper.paths()))} paper asks, '
-              f'{len(parts)} scheme parts, '
-              f'{sum(len(v) for v in pairs.values())} paired, '
-              f'{len(unpaired)} unpaired '
-              f'({why["wording"]} on wording, {why["shape"]} on printed shape, '
-              f'{why["order"]} on printed order)')
-        for part, sc, reason in unpaired[:6]:
-            print(f"    UNPAIRED {part!r} {sc} — {reason}")
-    tot_parts = sum(r[3] for r in rows)
-    tot_paired = sum(r[4] for r in rows)
-    print(f'\n{tot_paired}/{tot_parts} scheme parts paired on wording '
-          f'({tot_paired * 100 // max(tot_parts, 1)}%)')
+        asks = len(pairs) + len(unpaired)
+        rows.append((asks, len(pairs)))
+        print(f'{year} {level.upper()}: {asks} leaf asks, {len(parts)} scheme '
+              f'parts, {len(pairs)} paired '
+              f'({why["wording"]} wording, {why["shape"]} shape, '
+              f'{why["parent"]} parent), {len(unpaired)} unpaired')
+        for key, label, text in unpaired[:6]:
+            print(f'    UNPAIRED {label}: {(text or "")[:70]}')
+    tot, paired = sum(r[0] for r in rows), sum(r[1] for r in rows)
+    print(f'\n{paired}/{tot} leaf asks paired to a scheme part '
+          f'({paired * 100 // max(tot, 1)}%)')
 
 
 if __name__ == '__main__':
     if len(sys.argv) > 2:
         y, lv = int(sys.argv[1]), sys.argv[2]
         paper, parts, pairs, unpaired, _ = pair(y, lv)
-        for key, ps in pairs.items():
-            print(f'{key} <- {[repr(p) for p in ps]}')
-            print(f'    {(paper.text(*key) or "")[:120]}')
-        for part, sc, why in unpaired:
-            print(f'UNPAIRED {part!r} {sc} — {why}')
+        for key, (part, route, sc) in pairs.items():
+            print(f'{key} <- {part!r} [{route} {sc}]')
+        for key, label, text in unpaired:
+            print(f'UNPAIRED {label}: {(text or "")[:90]}')
     else:
         audit()

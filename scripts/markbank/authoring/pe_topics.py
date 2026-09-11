@@ -24,14 +24,14 @@ RULES = [
     # ── Strand 1, Topic 1: Learning and Improving Skill and Technique ────
     ('physical-education-0-1', 12,
      r'\b(skilled performance|characteristics? of skill|creative application'
-     r'|fluency|kinaesthetic|anticipation|consistency|define skill|what is skill)\b'),
+     r'|fluency|kinaesthetic|anticipation|consistency|define skill|what is skill)'),
     ('physical-education-0-2', 12,
      r'\b(analys\w+ (?:skill|technique|performance)|method of analysis'
-     r'|notational analysis|video analysis|movement analysis|technique analysis)\b'),
+     r'|notational analysis|video analysis|movement analysis|technique analysis)'),
     ('physical-education-0-3', 12,
      r'\b(skill acquisition|stages? of learning|practice (?:method|type|schedule)'
      r'|whole practice|part practice|massed|distributed|feedback|transfer of learning'
-     r'|information processing|motor programme|guidance)\b'),
+     r'|information processing|motor programme|guidance)'),
     # Biomechanics is examined under "Analysing Skill and Technique": the
     # specification's own topic list names no biomechanics topic, and the
     # papers set planes, axes, levers, Newton's laws and vector quantities as
@@ -41,133 +41,133 @@ RULES = [
      r'\b(plane of movement|planes? and axes|sagittal|frontal plane|transverse plane'
      r'|longitudinal axis|vertical axis|mediolateral|lever system|first class lever'
      r'|fulcrum|newton|vector|scalar|momentum|centre of (?:mass|gravity)'
-     r'|biomechanic|movement pattern|force\b|velocity)\b'),
+     r'|biomechanic|movement pattern|force\b|velocity)'),
     ('physical-education-0-0', 6,
-     r'\b(skill|technique)\b'),
+     r'\b(skill|technique)'),
     # ── Strand 1, Topic 2: Demands of Performance ────────────────────────
     ('physical-education-0-6', 12,
      r'\b(health[- ]related (?:fitness|component)|cardiovascular endurance'
-     r'|muscular endurance|body composition|flexibility)\b'),
+     r'|muscular endurance|body composition|flexibility)'),
     ('physical-education-0-7', 12,
      r'\b(performance[- ]related (?:fitness|component)|agility|power|speed'
-     r'|reaction time|co[- ]?ordination|balance)\b'),
+     r'|reaction time|co[- ]?ordination|balance)'),
     ('physical-education-0-9', 12,
      r'\b(fitness test|test to measure|assessing physical fitness|protocol'
-     r'|norm(?:ative)? data|sit and reach|bleep test|vo2)\b'),
+     r'|norm(?:ative)? data|sit and reach|bleep test|vo2)'),
     ('physical-education-0-10', 12,
      r'\b(training (?:plan|programme|principles)|principle of training'
      r'|periodisation|overload|specificity|progression|reversibility|detraining'
      r'|fitness plan|method of physical fitness training|continuous training'
-     r'|interval training|fartlek|plyometric|circuit training|weight training)\b'),
+     r'|interval training|fartlek|plyometric|circuit training|weight training)'),
     ('physical-education-0-11', 12,
      r'\b(psychological preparation|motivation|arousal|anxiety|goal setting'
      r'|self[- ]talk|visualis|imagery|mental (?:preparation|rehearsal|health)'
-     r'|thought stopping|centring|attentional focus|confidence)\b'),
+     r'|thought stopping|centring|attentional focus|confidence)'),
     ('physical-education-0-12', 12,
      r'\b(diet|nutrition|hydration|carbohydrate|protein|supplement(?!s? for)'
-     r'|energy system|atp|glycolytic|aerobic system|anaerobic)\b'),
+     r'|energy system|atp|glycolytic|aerobic system|anaerobic)'),
     ('physical-education-0-5', 8,
-     r'\b(physical fitness|fitness component|components? of fitness)\b'),
+     r'\b(physical fitness|fitness component|components? of fitness)'),
     ('physical-education-0-4', 6,
-     r'\b(demands? of performance|fitness)\b'),
+     r'\b(demands? of performance|fitness)'),
     # ── Strand 1, Topic 3: Structures, Strategies, Roles, Conventions ────
     ('physical-education-0-16', 12,
      r'\b(safe practice|safety equipment|injur|first aid|risk assessment'
-     r'|warm[- ]?up|cool[- ]?down|protective)\b'),
+     r'|warm[- ]?up|cool[- ]?down|protective)'),
     ('physical-education-0-18', 12,
-     r'\b(coach|choreographer|coaching)\b'),
+     r'\b(coach|choreographer|coaching)'),
     ('physical-education-0-19', 12,
      r'\b(official|referee|umpire|judge\b|scoring/recording|conflict between '
-     r'participants)\b'),
+     r'participants)'),
     ('physical-education-0-17', 12,
-     r'\b(ritual|convention|rules? of (?:the game|play)|etiquette)\b'),
+     r'\b(ritual|convention|rules? of (?:the game|play)|etiquette)'),
     ('physical-education-0-14', 12,
      r'\b(structures? and strategies|attacking strateg|defensive strateg'
-     r'|game strateg|formation|tactic)\b'),
+     r'|game strateg|formation|tactic)'),
     ('physical-education-0-15', 10,
-     r'\b(roles? and relationships|team role|leadership|captain)\b'),
-    ('physical-education-0-13', 6, r'\b(strateg|role\b)\b'),
+     r'\b(roles? and relationships|team role|leadership|captain)'),
+    ('physical-education-0-13', 6, r'\b(strateg|role\b)'),
     # ── Strand 1, Topic 4: Planning for Performance ──────────────────────
     ('physical-education-0-23', 12,
-     r'\b(aesthetic|artistic|choreograph\w*\s+criteria|composition of a routine)\b'),
+     r'\b(aesthetic|artistic|choreograph\w*\s+criteria|composition of a routine)'),
     ('physical-education-0-21', 12,
      r'\b(personal performance analysis|performance goal|performance profile'
-     r'|reflection on|post[- ]training analysis)\b'),
+     r'|reflection on|post[- ]training analysis)'),
     ('physical-education-0-22', 10,
-     r'\b(questionnaire|checklist|coach feedback|data collect|scat test)\b'),
+     r'\b(questionnaire|checklist|coach feedback|data collect|scat test)'),
     ('physical-education-0-24', 10,
-     r'\b(planning for (?:optimum )?performance|training/practice plan|rationale)\b'),
+     r'\b(planning for (?:optimum )?performance|training/practice plan|rationale)'),
     # ── Strand 2, Topic 5: Promoting Physical Activity ───────────────────
     ('physical-education-1-1', 12,
      r'\b(benefits? of (?:physical activity|participation)|health and wellbeing'
-     r'|social benefit|personal benefit)\b'),
+     r'|social benefit|personal benefit)'),
     ('physical-education-1-2', 12,
      r'\b(participation (?:levels?|rates?|in physical activity)|barriers? to '
-     r'physical activity|reasons for (?:non[- ])?participation|drop[- ]?out)\b'),
+     r'physical activity|reasons for (?:non[- ])?participation|drop[- ]?out)'),
     ('physical-education-1-3', 12,
      r'\b(promot\w+ physical activity|physical activity promotion|campaign'
-     r'|initiative|support(?:s)? for physical activity)\b'),
+     r'|initiative|support(?:s)? for physical activity)'),
     ('physical-education-1-4', 12,
      r'\b(pathway(?:s)? to excellence|talent (?:identification|development)'
-     r'|pathways between school and community|elite)\b'),
-    ('physical-education-1-0', 6, r'\b(physical activity)\b'),
+     r'|pathways between school and community|elite)'),
+    ('physical-education-1-0', 6, r'\b(physical activity)'),
     # ── Strand 2, Topic 6: Ethics and Fair Play ──────────────────────────
     ('physical-education-1-9', 12,
      r'\b(anti[- ]?doping rule|whereabouts|prohibited (?:substance|method)'
-     r'|sport ireland anti[- ]doping|wada)\b'),
+     r'|sport ireland anti[- ]doping|wada)'),
     ('physical-education-1-8', 12,
      r'\b(performance[- ]enhancing drug|anabolic steroid|doping|beta blocker'
-     r'|blood doping|stimulant|diuretic|erythropoietin|epo\b)\b'),
-    ('physical-education-1-10', 12, r'\b(supplement)\b'),
-    ('physical-education-1-7', 12, r'\b(code of ethics|code of conduct)\b'),
+     r'|blood doping|stimulant|diuretic|erythropoietin|epo\b)'),
+    ('physical-education-1-10', 12, r'\b(supplement)'),
+    ('physical-education-1-7', 12, r'\b(code of ethics|code of conduct)'),
     ('physical-education-1-6', 10,
      r'\b(fair play|sportsmanship|gamesmanship|ethical|equity|integrity'
-     r'|cheating)\b'),
-    ('physical-education-1-5', 6, r'\b(ethic)\b'),
+     r'|cheating)'),
+    ('physical-education-1-5', 6, r'\b(ethic)'),
     # ── Strand 2, Topic 7: Physical Activity and Inclusion ───────────────
     ('physical-education-1-15', 12,
      r'\b(adapted physical activity|disabilit|para[- ]?sport|special olympics'
-     r'|inclusive (?:sport|activity|practice))\b'),
+     r'|inclusive (?:sport|activity|practice))'),
     ('physical-education-1-14', 12,
-     r'\b(over the past 20 years|last twenty years|developments? over)\b'),
-    ('physical-education-1-13', 10, r'\b(address\w* barriers?|overcome barriers?)\b'),
+     r'\b(over the past 20 years|last twenty years|developments? over)'),
+    ('physical-education-1-13', 10, r'\b(address\w* barriers?|overcome barriers?)'),
     ('physical-education-1-12', 10,
-     r'\b(supports? and barriers?|socio[- ]?economic|older adult|life stage)\b'),
-    ('physical-education-1-11', 6, r'\b(inclusion|inclusive)\b'),
+     r'\b(supports? and barriers?|socio[- ]?economic|older adult|life stage)'),
+    ('physical-education-1-11', 6, r'\b(inclusion|inclusive)'),
     # ── Strand 2, Topic 8: Technology, Media and Sport ───────────────────
     ('physical-education-1-17', 12,
      r'\b(technolog\w+|wearable|gps|hawk[- ]?eye|var\b|goal[- ]line'
-     r'|data analytics)\b'),
+     r'|data analytics)'),
     ('physical-education-1-18', 12,
      r'\b(media (?:coverage|in sport)|spectator (?:behaviour|experience)'
-     r'|social media|broadcast|television coverage|journalis)\b'),
-    ('physical-education-1-16', 6, r'\b(media|technology)\b'),
+     r'|social media|broadcast|television coverage|journalis)'),
+    ('physical-education-1-16', 6, r'\b(media|technology)'),
     # ── Strand 2, Topic 9: Gender and Physical Activity ──────────────────
     ('physical-education-1-21', 12,
-     r'\b(body image|gender.{0,20}media|media.{0,20}gender)\b'),
-    ('physical-education-1-22', 12, r'\b(gender socialisation|stereotyp)\b'),
-    ('physical-education-1-20', 10, r'\b(gender|women in sport|female athlete)\b'),
-    ('physical-education-1-19', 6, r'\b(gender)\b'),
+     r'\b(body image|gender.{0,20}media|media.{0,20}gender)'),
+    ('physical-education-1-22', 12, r'\b(gender socialisation|stereotyp)'),
+    ('physical-education-1-20', 10, r'\b(gender|women in sport|female athlete)'),
+    ('physical-education-1-19', 6, r'\b(gender)'),
     # ── Strand 2, Topic 10: Business and Enterprise ──────────────────────
     ('physical-education-1-24', 12,
-     r'\b(sponsorship|sponsor|endorsement|advertis|merchandis|branding)\b'),
+     r'\b(sponsorship|sponsor|endorsement|advertis|merchandis|branding)'),
     ('physical-education-1-26', 12,
-     r'\b(mass[- ]participation|parkrun|marathon event|club membership)\b'),
-    ('physical-education-1-27', 12, r'\b(tourism|major event|hosting)\b'),
+     r'\b(mass[- ]participation|parkrun|marathon event|club membership)'),
+    ('physical-education-1-27', 12, r'\b(tourism|major event|hosting)'),
     ('physical-education-1-25', 10,
      r'\b(business (?:of|dimension)|national governing bod|funding|revenue'
-     r'|commercial)\b'),
-    ('physical-education-1-23', 6, r'\b(business|enterprise)\b'),
+     r'|commercial)'),
+    ('physical-education-1-23', 6, r'\b(business|enterprise)'),
     # ── Physical Activity Areas ──────────────────────────────────────────
     ('physical-education-2-0', 8,
-     r'\b(orienteering|kayak|canoe|hill ?walking|climbing|surfing)\b'),
-    ('physical-education-2-1', 8, r'\b(dance|gymnastic|floor exercise|routine)\b'),
+     r'\b(orienteering|kayak|canoe|hill ?walking|climbing|surfing)'),
+    ('physical-education-2-1', 8, r'\b(dance|gymnastic|floor exercise|routine)'),
     ('physical-education-2-2', 8,
      r'\b(athletics|sprint|hammer throw|javelin|discus|long jump|high jump'
-     r'|400m|800m|relay)\b'),
-    ('physical-education-2-3', 8, r'\b(aquatic|swim|water polo|diving)\b'),
+     r'|400m|800m|relay)'),
+    ('physical-education-2-3', 8, r'\b(aquatic|swim|water polo|diving)'),
     ('physical-education-2-5', 8,
-     r'\b(personal exercise and fitness|gym programme)\b'),
+     r'\b(personal exercise and fitness|gym programme)'),
 ]
 COMPILED = [(t, w, re.compile(p, re.I)) for t, w, p in RULES]
 

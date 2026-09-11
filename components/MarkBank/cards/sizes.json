@@ -178,5 +178,9 @@
  },
  "ukrainian": {
   "higher": 20
+ },
+ "physical-education": {
+  "higher": 121,
+  "ordinary": 84
  }
 }

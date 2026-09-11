@@ -2,46 +2,65 @@
 """Read one Physical Education marking scheme into parts, tariffs and answers.
 
     python3 scripts/markbank/authoring/pe_scheme.py 2024 hl        # print parts
-    python3 scripts/markbank/authoring/pe_scheme.py 2024 hl --raw  # print blocks
+    python3 scripts/markbank/authoring/pe_scheme.py 2024 hl --raw  # print lines
+    python3 scripts/markbank/authoring/pe_scheme.py --audit        # every sitting
 
-PE's scheme is a TWO-COLUMN TABLE, printed once per part: a "Description"
-column of examiner-facing rows and a "Marks" column beside it.  Under the table
-the examiner then prints, for many parts, the answers themselves — introduced
-by the SEC's own lead-ins ("e.g.:", "Accept:", "Barriers may include:",
-"Candidates may use words such as:") or set as bulleted or dashed lines.
+WHY THE BLOCK RENDERING AND NOT THE PDF DIRECTLY.  An earlier reader cut the
+scheme out of `pymupdf.get_text('blocks')` itself and spent most of its code
+undoing what a TABLE does to that: a welded block was taken whole, so a list
+of answers welded into the middle of a criterion was never seen at all, and
+2022 reported 15% of its parts as stating an answer when nearly half of them
+do.  append-scheme-blocks.py has already appended that same block order to the
+scheme markdown in examiner-reports/, and that file is ALSO the text the
+build's provenance gate searches — so a marking point lifted from it is
+traceable by construction, and every table cell arrives on one line instead of
+wrapped across four with the marks column glued into the middle of a sentence.
 
-That division is the whole subject.  A Description row states what the examiner
-must SEE — "Clear and detailed explanation of the term related to physical
-activities. 4" — and states no answer; the list under it states the answer:
+WHAT THE DOCUMENT LOOKS LIKE.  Each question is a run of two-column tables,
+and in block order the Description cell and the Marks cell are separate lines:
 
+    Question 2 (8 marks)
+    (a) Define the concept of physical activity, leisure and recreation.
+    Description Marks
+    Defines the concept of physical activity, leisure and recreation. 2 marks
+    Clear and accurate definition. 2
+    Some accuracy in the definition. 1
+    (b) Discuss two barriers to physical activity participation in the community.
+    Description Marks
+    Discusses barriers to physical activity participation in the community 6 (2 x 3 marks)
+    Detailed discussion of named barrier 3 marks
+    Barrier named 1 mark
     Barriers may include:
     -Facilities
     -Access
     -Finance
 
-So a PE part is cardable exactly when the scheme prints such a list, or answers
-inside a Description row itself ("Identifies axis as longitudinal (also accept
-vertical/ mediolateral axis) 1 mark", "Correct plane named- 1 mark: Transverse
-plane").  A part whose whole table is a band ladder and nothing else states
-nothing a student could have written, and is refused rather than dressed up.
+The Description column states what the examiner must SEE.  Part (a)'s rows
+state no answer — "Clear and accurate definition" is a grade, not a definition
+— while part (b) ends in the SEC's own list of barriers, which is an answer a
+student could have written.  That division is the whole subject, and it is
+what `answers` and `band_only()` report.
 
-Nothing here decides what a card says.  It reports what the scheme prints, and
+LAYOUT DRIFT.  Thirteen sittings do not print the same page, and every shape
+is read here rather than special-cased anywhere else:
+
+  * 2020-2022 do NOT reprint the ask.  A part opens "(a)" and goes straight
+    into "Description Marks"; the evidence a pairing is right has to come
+    from the criterion rows, which are the ask rewritten (see pe_lib).
+  * 2022 welds a whole question into one block and prints a SUMMARY of its
+    parts before the parts themselves — "Description Marks (a) 4 marks
+    Definition of sponsorship (b) 4 marks Definition of merchandising" — so a
+    block is cut at the markers inside it and one address opens twice, the
+    two openings being ONE part, merged in printed order.
+  * 2023 onward reprints the ask, sometimes above the table and sometimes
+    inside it under the "Description Marks" heading.
+  * 2025 Ordinary addresses Section C parts with the question number in
+    front — "14 (b) (ii) Give a reason why..." — and 2024 Ordinary refers
+    back to a part mid-sentence ("...identified by you in Question 4 (a)").
+    A question head only opens a question when its number goes FORWARD.
+
+Nothing here decides what a card says.  It reports what the scheme prints;
 pe_all.py refuses whatever it cannot read one way.
-
-LAYOUT DRIFT.  Thirteen sittings do not print the same page.
-
-  * 2020 and 2021 do NOT reprint the ask.  A part opens "Question 3 (6 Marks)"
-    and "(a)" and goes straight into the table, so there is no cue to align on
-    and the pairing evidence has to come from the answer rows themselves (see
-    pe_lib.pair).
-  * 2022 hands back whole tables welded into ONE pymupdf block — "Question 6
-    Description Marks Explanation of how two of the body's energy systems
-    contribute to performance in chosen activity" — so a block is cut at the
-    markers it holds, not taken whole.
-  * 2023 onward reprints the ask above the table, which is a real cue.
-  * 2026 glues the question head, the part marker and the ask into one block.
-
-All four are read here; none is special-cased anywhere else.
 """
 import os
 import re
@@ -51,190 +70,537 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 SCHEMES = os.path.join(ROOT, 'examiner-reports', 'physical-education', 'schemes')
 
-import pymupdf                                                  # noqa: E402
+SITTINGS = [(2020, 'hl')] + [(y, lv) for y in range(2021, 2027)
+                             for lv in ('hl', 'ol')]
 
-# "Question 12", "Question 13 (50 marks)", "Question 1 (8 marks)".
-QHEAD = re.compile(r'^Question\s+(\d{1,2})\b\s*(?:\(\s*(\d{1,3})\s*marks?\s*\))?',
-                   re.I)
-# A part marker at the head of a run: "(a)", "a)", "(i)", "(a) (i)".
-MARKER = re.compile(r'^\(?([a-h])\)|^\(?(i{1,3}|iv|vi{0,3}|ix|x)\)')
-LETTER_TOKEN = re.compile(r'^\(?([a-h])\)\s*')
-ROMAN_TOKEN = re.compile(r'^\(?(i{1,3}|iv|vi{0,3}|ix|x)\)\s*')
-# The same markers found part way along a welded block.  Required to follow
-# whitespace and to be followed by a capital, a further marker or a table
-# heading, which is what keeps "(also accept vertical)" and "(2 x 2 marks)" out.
-INLINE = re.compile(
-    r'\s(?=Question\s+\d{1,2}\b)'
-    r'|\s(?=\([a-h]\)\s*(?:\((?:i{1,3}|iv|vi{0,3})\)\s*)?(?:[A-Z(]|Description\b))'
-    r'|\s(?=\((?:i{1,3}|iv|vi{0,3})\)\s*[A-Z(])')
-# The table's own column heading, in the four spellings the corpus prints.
+ROMAN = r'i{1,3}|iv|vi{0,3}|ix|x'
+QHEAD = re.compile(r'^Question\s+(\d{1,2})\b\s*[.\-–]?\s*'
+                   r'(?:\(\s*(\d{1,3})\s*marks?\s*\))?', re.I)
+# A part marker opening a line, in every shape the corpus prints it:
+#   "(a)", "(a) (i)", "(i)", "a)", "14 (a) (i)", "14(c) (i)"
+PART = re.compile(
+    rf'^(?:(?P<q>\d{{1,2}})\s*)?\(\s*(?P<L>[a-h])\s*\)\s*(?:\(\s*(?P<R>{ROMAN})\s*\))?(?![a-z])'
+    rf'|^(?:(?P<q2>\d{{1,2}})\s*)?(?P<L2>[a-h])\)\s*(?:\(?\s*(?P<R2>{ROMAN})\s*\)?)?(?![a-z])'
+    rf'|^\(\s*(?P<R3>{ROMAN})\s*\)(?![a-z])', re.I)
+# The table's own column heading, in every spelling the corpus prints:
+# "Description Marks", "Description Mark", "Description 8 Marks".
 TABLE_HEAD = re.compile(r'^Description\s*(?:\d{1,2}\s*)?Marks?\b', re.I)
-# Running page furniture.
+# Where the written paper's scheme stops and the coursework project and the
+# physical performance assessment begin. Both are marked from work this corpus
+# does not hold, and neither is a question any paper prints. The two phrases
+# are the SEC's own titles for those components and appear nowhere inside the
+# written paper's scheme — checked over all thirteen sittings.
+END = re.compile(r'Physical Activity Project|Performance Assessment', re.I)
 FURNITURE = re.compile(
     r'^(?:Page\s*\|\s*\d+|Leaving Certificate|Coimisi|State Examinations'
-    r'|Physical Education\s*[–-]|Marking Scheme|Section\s+[ABC]\b|\d{1,3}$'
-    r'|Do not write|Answer any|Any \d+ questions|There are \d+ questions'
-    r'|Note to teachers|Blank Page)', re.I)
-
-# ------------------------------------------------------------- the tariff ---
-# Every form below is the SEC's own printed arithmetic.  None is derived by
-# dividing a total by a count the scheme did not state.
-# "2 x 2 marks", and "2 x 2 (1+1) marks" — the SEC frequently prints the split
-# of each answer INSIDE the group, and requiring "marks" to follow the second
-# number immediately lost every one of those.
-GROUP = re.compile(
-    r'\b(\d{1,2})\s*(?:x|×)\s*(\d{1,2})\s*'
-    r'(?:\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})+\s*\)\s*)?marks?\b', re.I)
-# The same arithmetic written in words and a rate: "Two principles of ethical
-# practice identified – 1 m", "Three appropriate demands ... 2 marks". The
-# count is the SEC's own and so is the rate; nothing is divided.
-COUNTS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
-COUNT_RATE = re.compile(
-    r'\b(one|two|three|four|five|six)\b[^.]{0,70}?[–-]\s*(\d{1,2})\s*m\b'
-    r'|\b(one|two|three|four|five|six)\b[^.]{0,70}?\s(\d{1,2})\s*marks?\b', re.I)
-GROUP_PAREN = re.compile(r'\b(\d{1,2})\s*marks?\s*\(\s*x\s*(\d{1,2})\s*\)', re.I)
-REPEAT = re.compile(r'\b(\d{1,2})\s*marks?(?:\s*\+\s*(\d{1,2})\s*marks?)+', re.I)
-MARKS = re.compile(r'\b(\d{1,3})\s*marks?\b', re.I)
-BAND_RANGE = re.compile(r'\b\d{1,2}\s*[-–]\s*\d{1,2}\s*(?:m\b|marks?\b)', re.I)
-
-# A Description row that grades the same answer rather than stating one.  These
-# are the bands: they price presentation, not content.
-BAND_ROW = re.compile(
-    r'^(?:very good|good|fair|poor|excellent|clear and (?:detailed|accurate)'
-    r'|detailed and accurate|some (?:accuracy|level|degree|of the)'
-    r'|somewhat accurate|mostly accurate|little detail|accurate and detailed'
-    r'|information is|discussion lacks|brief |limited )', re.I)
-
-# The SEC's own lead-ins to a list of answers.  Everything after one of these,
-# to the end of the part, is the answer the examiner published.
-LEAD_IN = re.compile(
-    r'^(?:e\.?\s?g\.?\s*[:.]?$|eg\.?\s*[:.]?$|accept\s*[:.]?$'
-    r'|accept any of the following\s*[:.]?$'
-    r'|candidates? (?:may|might|to) [^.]*?(?:include|use|answer)[^.]*[:.]?$'
-    r'|[A-Z][^.?!]{0,70}\bmay include\s*[:.]?$'
-    r'|[A-Z][^.?!]{0,70}\bmay be\s*[:.]?$'
-    r'|[A-Z][^.?!]{0,70}\binclude\s*[:.]?$'
-    r'|possible candidate response\s*[:.]?$'
-    r'|(?:strategies|barriers|factors|examples?|methods?|reasons?|benefits?'
-    r'|advantages?|disadvantages?|supports?|answers?|responses?|criteria'
-    r'|aspects?)\s+(?:may|might|could)\s+include\s*[:.]?$)', re.I)
-# The same lead-in printed at the head of its own list on one line:
-# "Accept: continuous training; weight training; plyometrics".
-# The punctuation after "e.g" is NOT reliable and must not be required: 2024
-# Ordinary prints "e.g Game day ear pieces; Concurrent feedback, Instinct lost"
-# and "e.g anabolic agents; peptide hormones ..." with no colon and no full
-# stop at all. Demanding one read that whole sitting as band-only — eight
-# stated lists thrown away, and the level's share reported at 10% when it is
-# 48%. The lead-ins themselves were taken from the corpus, not guessed: "e.g"
-# 52 times, "example" 11, "accept" 8, "Possible candidate response" 6.
-LEAD_IN_INLINE = re.compile(
-    r'^(?:e\.?\s?g\.?|eg\.?|accept|accept any of the following'
-    r'|possible candidate response|possible responses?|suggested responses?)'
-    r'\s*[:.]?\s+(?=\S)', re.I)
-# And the same lead-in printed PART WAY ALONG a row, which is how 2022 sets
-# every one of its lists: "Correctly identifies a characteristic of skilled
-# performance Eg. Kinaesthetic awareness, Anticipation, Consistency". The row
-# before it is the criterion; everything after it is the SEC's own answer.
-LEAD_IN_MID = re.compile(
-    r'\s(?:e\.?\s?g\.?|eg\.?|possible candidate response)\s*[:.]?\s+(?=[A-Za-z])',
-    re.I)
-BULLET = re.compile('^[ \t]*[-•·▪‣●→–][ \t]*')
-# An instruction to the examiner rather than an answer. It is printed inside
-# the table and reads like content — "Note: type of feedback explained must be
-# appropriate for an athlete with a visual impairment" — but it states a
-# CONDITION on the answer, not the answer itself.
-EXAMINER_NOTE = re.compile(
-    r'^(?:note\b|n\.b\.|award\b|marks? (?:awarded|available)|do not\b'
-    r'|no marks?\b|max(?:imum)?\b|accept any (?:valid|other|reasonable)\b'
-    r'|candidates? (?:must|should|may not)\b|examiners?\b|if the\b)', re.I)
+    r'|Physical Education\s*[–-]|Marking Scheme|Blank Page'
+    r'|Section\s+[ABC]\b|\d{1,3}$|There are \d+ questions|Any \d+ questions'
+    r'|Answer any|Candidates (?:must|are required to) answer'
+    r'|(?:Three|Two|Five|Ten|Any) [a-z]* ?questions to be answered)', re.I)
+PAGE_MARK = re.compile(r'^##\s*Page\s*\d+\s*$', re.I)
+# The SEC's own per-question price, printed on a section's instruction line
+# rather than on each question head: "Answer any 5 questions from 1-12. 8 marks
+# per question." 2022 and 2023 Ordinary price whole sections that way and print
+# nothing on the heads, so without this every Section A question in 2022 has no
+# printed total at all and 24 asks are refused for a tariff the SEC did print.
+PER_QUESTION = re.compile(r'\b(\d{1,3})\s*marks?\s+per\s+question\b', re.I)
 
 
 def tidy(s):
     return ' '.join((s or '').split())
 
 
-class Part:
-    """One printed part of one scheme, in document order."""
+# ------------------------------------------------------------- the tariff ---
+# Every form below is the SEC's own printed arithmetic. Nothing is derived by
+# dividing a total by a count the scheme did not state.
+#   "8 (2 x 4 marks)", "2 x 2 Marks", "2x1marks=2", "2 x 2 (1+1) marks"
+GROUP = re.compile(
+    r'\b(\d{1,2})\s*(?:x|×)\s*(\d{1,2})\s*'
+    r'(?:\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})+\s*\)\s*)?(?:marks?|m)\b', re.I)
+#   "4 marks (x2)", "2 marks (x2)"
+GROUP_PAREN = re.compile(r'\b(\d{1,2})\s*marks?\s*\(\s*x\s*(\d{1,2})\s*\)', re.I)
+#   "3 marks + 3 marks", "2 marks + 1 mark + 1 mark"
+REPEAT = re.compile(r'\b(\d{1,2})\s*marks?(?:\s*\+\s*(\d{1,2})\s*marks?)+', re.I)
+#   "2 + 2", "1 + 1 mark", "3+3+2+2"
+BARE_REPEAT = re.compile(r'(?<![\d.])(\d{1,2})(?:\s*\+\s*\d{1,2})+\s*(?:marks?|m)?\s*$', re.I)
+MARKS = re.compile(r'\b(\d{1,3})\s*marks?\b', re.I)
+# "5-6 m", "3-4 marks", "1-2" — a BAND of quality, never a tariff.
+BAND_RANGE = re.compile(r'\b\d{1,2}\s*[-–]\s*\d{1,2}\s*(?:m\b|marks?\b)?\s*$', re.I)
+# A Description row that opens a BAND of quality rather than a criterion.
+BAND_OPENER = re.compile(
+    r'^(?:very good|good\b|fair\b|poor\b|weak\b|excellent|clear\b|accurate'
+    r'|detailed|some\b|somewhat|limited|little|brief|vague|basic|full and'
+    r'|in depth|mostly|no relevant)', re.I)
+# A tariff cell that landed on a line of its own in the marks column.
+TARIFF_ONLY = re.compile(
+    r'^(?:\(?\s*\d{1,3}\s*(?:marks?|m)?\s*\)?'
+    r'|\d{1,2}\s*[x×]\s*\d{1,2}\s*(?:\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})+\s*\)\s*)?'
+    r'(?:marks?|m)?(?:\s*=\s*\d{1,3})?'
+    r'|\d{1,3}\s*\(\s*\d{1,2}\s*[x×]\s*\d{1,2}\s*marks?\s*\)'
+    r'|\+|[-–]|\d{1,2}\s*[-–]\s*\d{1,2}\s*(?:marks?|m)?'
+    r'|\d{1,2}(?:\s*\+\s*\d{1,2})+\s*(?:marks?|m)?)'
+    r'[\s.+]*$', re.I)
 
-    def __init__(self, index, q, letter, roman, total):
+
+def tariffs_in(text):
+    """Every printed group tariff in one line, as (claim, per)."""
+    out = []
+    for m in GROUP.finditer(text):
+        out.append((int(m.group(1)), int(m.group(2))))
+    for m in GROUP_PAREN.finditer(text):
+        out.append((int(m.group(2)), int(m.group(1))))
+    for m in REPEAT.finditer(text):
+        values = [int(x) for x in re.findall(r'(\d{1,2})\s*marks?', m.group(0), re.I)]
+        if len(values) > 1 and len(set(values)) == 1:
+            out.append((len(values), values[0]))
+    if not out:
+        # The SEC's repeat with the marks column wrapped off the end of it:
+        # the page prints "4 marks + 4 marks" and the converter breaks the
+        # line after the second number, leaving "4 marks + 4" on one line and
+        # "marks" glued to the head of the next. Read with the mark words
+        # taken out, the arithmetic is unchanged and still the SEC's own.
+        for candidate in (text, re.sub(r'\s*\b(?:marks?|m)\b', '', text, flags=re.I)):
+            m = BARE_REPEAT.search(candidate)
+            if not m:
+                continue
+            values = [int(x) for x in re.findall(r'\d{1,2}', m.group(0))]
+            if len(values) > 1 and len(set(values)) == 1:
+                out.append((len(values), values[0]))
+            break
+    return out
+
+
+def steps_in(text):
+    """A DESCENDING printed tariff — "3+3+2+2" — as its own list of steps.
+
+    The SEC's own note explains the form: "there may be three parts to a
+    question, and a total of 12 marks allocated... 6 + 3 + 3. This means the
+    first correct answer encountered is awarded 6 marks and each subsequent
+    correct answer is awarded 3 marks." It is not a best-of — two answers at
+    six is not the nine that 6-then-3 pays — so it rides `perOptionSteps`.
+    """
+    for candidate in (text, re.sub(r'\s*\b(?:marks?|m)\b', '', text, flags=re.I)):
+        m = BARE_REPEAT.search(candidate)
+        if not m:
+            continue
+        values = [int(x) for x in re.findall(r'\d{1,2}', m.group(0))]
+        if len(values) > 1 and len(set(values)) > 1 and values == sorted(
+                values, reverse=True):
+            return values
+    return []
+
+
+# ------------------------------------------------------------ row classes ---
+# The examiner's own vocabulary: the words a scheme uses to say how WELL a
+# thing was done rather than what the thing is. A Description row carrying any
+# of them is grading an answer; a row carrying none of them, once its tariff
+# cell is off, is stating one. Derived from the corpus, not guessed — every
+# opener of every priced row across the thirteen schemes was listed and the
+# graders separated from the content by hand once.
+EXAMINER_VOCAB = re.compile(
+    r'\b(?:accurate|accurately|accuracy|inaccurate|appropriate|appropriately'
+    r'|award|awarded|band|brief|briefly|candidate|candidates|clear|clearly'
+    r'|correct|correctly|incorrect|demonstrates?|describe[sd]?|describing'
+    r'|description|detail|details|detailed|discuss|discusses|discussed'
+    r'|discussion|evidence|examiner|examiners|excellent|explain|explains'
+    r'|explained|explanation|fair|given|good|identif(?:y|ies|ied)|knowledge'
+    r'|limited|mark|marks|must|name[sd]?|outline[sd]?|outlines|poor'
+    r'|present(?:ed|s)?|provide[sd]?|providing|relevant|some|somewhat'
+    r'|state[sd]?|statement|understanding|vague|vaguely|valid|weak'
+    r'|response|responses|answer|answers|credit|reference|referenced'
+    r'|sufficient|no marks|little|effort|level|levels of detail|quality)\b',
+    re.I)
+# An instruction to the examiner. It is printed inside the table and reads like
+# content — "Note: type of feedback explained must be appropriate for an
+# athlete with a visual impairment" — but it states a CONDITION on the answer.
+EXAMINER_NOTE = re.compile(
+    r'^(?:note\b|n\.?b\.?\b|award\b|marks? (?:awarded|available|allocated)'
+    r'|do not\b|don\'t accept|no marks?\b|max(?:imum)?\b|deduct\b'
+    r'|accept any (?:valid|other|reasonable|relevant)\b'
+    r'|candidates? (?:must|should|may not|are not|to answer)\b|examiners?\b'
+    r'|if the\b|total\b|where the candidate|must be\b|answers? must\b'
+    r'|this (?:is|must)\b|only\b|one mark\b|marks for\b|or$)', re.I)
+# The SEC's own lead-in to a list of answers, printed on a line of its own.
+LEAD_IN = re.compile(
+    r'^(?:e\.?\s?g\.?|eg\.?|for example|accept(?:able)?(?: any of the following)?'
+    r'|possible (?:candidate )?(?:response|answer)s?'
+    r'|suggested (?:response|answer)s?|sample (?:response|answer)s?'
+    r'|examples?|answers? may include|[A-Z][^.?!]{0,70}?\b(?:may|might|could)'
+    r'\s+(?:include|be)|candidates? (?:may|might|could|to)[^.?!]{0,60}?'
+    r'\b(?:include|use|answer|name|state)[^.?!]{0,20})\s*[:.]?\s*$', re.I)
+# The same lead-in printed at the head of its own list on one line:
+# "Accept: continuous training; weight training; plyometrics".
+LEAD_IN_INLINE = re.compile(
+    r'^(?:e\.?\s?g\.?|eg\.?|for example|accept(?: any of the following)?'
+    r'|possible (?:candidate )?(?:response|answer)s?'
+    r'|suggested (?:response|answer)s?|sample (?:response|answer)s?'
+    r'|answers? may include|examples? (?:include|may include))'
+    r'\s*[:.]?\s+(?=\S)', re.I)
+# And the same lead-in printed PART WAY ALONG a row, which is how 2022 sets
+# every one of its lists: "Correctly identifies a characteristic of skilled
+# performance Eg. Kinaesthetic awareness, Anticipation, Consistency".
+LEAD_IN_MID = re.compile(
+    r'\s(?:e\.?\s?g\.?|eg\.?|possible candidate response)\s*[:.]?\s+(?=[A-Za-z])',
+    re.I)
+BULLET = re.compile(r'^[ \t]*(?:[-•·▪‣●→–—*]|\d{1,2}\.\d{1,2}(?=\s))[ \t]*')
+# What ENDS a list the SEC opened. A part often prices two or three criteria in
+# one table and gives each its own examples:
+#
+#     Accurate definition of skill                          1 mark
+#     e.g. learned behaviour "A learned action/behaviour..."
+#     Accurate definition of ability                        1 mark
+#     e.g. natural/ inbuilt.
+#     Accurate discussion of statement
+#     Good discussion 4 m                                   4 marks
+#
+# so a list that runs to the end of the part swallows the next criterion and
+# the band ladder under it. The openers below are the ones the corpus prints at
+# the head of a criterion row. Deliberately NOT among them: "State", "Name" and
+# "Level", which open real answers — "State anxiety is an immediate emotional
+# state characterised by apprehension..." is the SEC's own definition, and
+# closing a list on it would throw the answer away to save a criterion.
+CLOSES_LIST = re.compile(
+    r"^(?:very good|good\b|fair\b|poor\b|weak\b|excellent|accurate|accurately"
+    r"|clear\b|clearly|correct(?:ly)?\b|appropriate(?:ly)?\b|some\s|somewhat"
+    r"|limited\b|little or no|brief\b|briefly|detailed\b|in depth|full and"
+    r"|relevant\b|vague|basic\b|identif(?:y|ies|ied)\b|explains?\b|explanation"
+    r"|describ(?:e|es|ed)\b|description\b|discuss(?:es|ed)?\b|discussion\b"
+    r"|outlines?\b|outline of|defines?\b|definition\b|award\b|note\b|do not"
+    r"|don't\b|no relevant|no marks|knowledge is|information is|analysis is"
+    r"|candidates?\b|two\s|three\s|four\s|five\s|marks?\s|max\b)", re.I)
+# A bare colon is NOT a lead-in. "Barriers may include:" opens a list and
+# "Define the following types of goals related to physical activity:" opens the
+# QUESTION, and the two are indistinguishable by punctuation — reading every
+# colon as a lead-in filed the ask's own words and the criterion rows beneath
+# it as answers, 31 of them in 2025 Higher alone. A row with a colon in it is
+# left as a row, and stated() takes what follows the colon only when what
+# follows carries no examiner vocabulary at all.
+# A line that CONTINUES the one above it. The converter wraps a table cell the
+# way the page prints it, and the marks column lands glued to the end of the
+# wrapped line: "Clear and accurate description of the plane of movement
+# provided. A 3" / "correct sporting example is used to support the
+# description." Read one line at a time, the SEC's sentence arrives in halves
+# with a tariff between them and no card can quote it. A continuation opens
+# LOWER CASE — every row of a PE scheme table opens with a capital, a bullet,
+# a part marker or a digit. A part marker is the exception that has to be
+# written down: 2022 Ordinary letters its case study "a)", "b)", "c)", "d)"
+# with no bracket in front, so the whole of Question 13 joined onto the line
+# above it and eleven of its asks lost the letter they were printed under.
+CONTINUES = re.compile(r'^(?:[‘“’]?[a-z]'
+                       rf'|\((?!\s*(?:[a-h]|{ROMAN})\s*\)))', re.U)
+# The other half of the same wrap, where the break falls before a capitalised
+# word: "Kinaesthetic awareness, Anticipation, Consistency, Accuracy in" /
+# "Technique/skill/movement pattern". Case says nothing there; what does is
+# that the line above ENDS on a function word, which no printed row of a
+# marking scheme does. Read one line at a time, the SEC's four characteristics
+# were two, and a question paying 4 x 2 marks was refused for stating only
+# two answers.
+HANGS = re.compile(
+    r'\b(?:in|of|the|a|an|and|or|to|for|with|on|at|by|from|that|this|as|is'
+    r'|are|be|their|its|his|her|your|our|it|not|into|over|under|between'
+    r'|during|about|than|when|which|who|whose|where|how|so|but|if|per|via'
+    r'|used|such)$', re.I)
+# The marks cell the converter glued to the end of a wrapped line. Taken off
+# when the next line continues the sentence, and KEPT beside the part so the
+# tariff it carries is still read. Never trusted blind: every joined answer is
+# re-checked against the scheme markdown before it is lifted, and the block
+# rendering appended to the same file holds the unwrapped cell, so a correct
+# join traces and a wrong one does not.
+GLUED_CELL = re.compile(
+    r'\s+(?:\d{1,2}\s*[x×]\s*\d{1,2}\s*marks?\s*=\s*\d{1,3}'
+    r'|\d{1,2}\s*[-–]\s*\d{1,2}\s*(?:marks?|m)?'
+    r'|\d{1,3}\s*(?:marks?|m)?)$', re.I)
+
+
+class Part:
+    """One printed part of one scheme, merged over every table that opens it."""
+
+    def __init__(self, index, address, qtotal):
         self.index = index
-        self.address = (q, letter, roman)
-        self.total = total
-        self.cue = ''
-        self.rows = []          # Description-column rows, in printed order
-        self.answers = []       # stated answers the examiner published
-        self.tariffs = []       # every printed tariff, in order
+        self.address = address
+        self.qtotal = qtotal        # marks printed on the question head
+        self.cue = ''               # the ask, where the scheme reprints it
+        self.rows = []              # Description-column rows, in printed order
+        self.answers = []           # stated answers the examiner published
+        self.cells = []             # marks-column cells, in printed order
+        self.tariffs = []
 
     @property
     def key(self):
         return self.address
 
-    def __repr__(self):
+    def label(self):
         q, l, r = self.address
-        label = f'Q{q}' + (f'({l})' if l else '') + (f'({r})' if r else '')
-        return (f'<{label} total={self.total} rows={len(self.rows)} '
+        return f'Q{q}' + (f'({l})' if l else '') + (f'({r})' if r else '')
+
+    @property
+    def total(self):
+        """The marks the SEC prints for this part, or None. Never derived.
+
+        Read in the order the document makes reliable, settled against the
+        corpus rather than picked:
+
+        1. the tariff the SEC prints at the head of the part's own line —
+           "(a) 4 marks Definition of sponsorship", "3 marks - Identifies the
+           stage of learning..." — which is the part's price and not its
+           question's.
+        2. ONE printed group: "2 x 4 marks" is eight marks and says so.
+        3. the sum of the marks column down a table of separate criteria:
+           "Example of safety equipment... 3 marks" printed twice is six. A
+           table with a BAND ladder in it is not summed — a ladder prices one
+           thing four times over, and adding those would treble the question.
+        4. the marks column's own bare cell.
+        5. the marks printed on the QUESTION head, for a part that IS the
+           whole question.
+        6. the ceiling of the SEC's own top band. "Very good discussion 5-6 m"
+           is the SEC printing six as the most this earns. Read late, because
+           where a part pays a group the ladder prices ONE answer and not the
+           part — over the corpus, 44 of the 73 parts printing both disagree
+           for exactly that reason.
+        7. the single marks value printed anywhere in the part, where every
+           value printed in it agrees.
+        """
+        for pattern in (r'^\(?\s*(\d{1,3})\s*marks?\)?\s',
+                        r'\((\d{1,3})\s*marks?\)\s*$'):
+            m = re.search(pattern, self.cue or '', re.I)
+            if m:
+                return int(m.group(1))
+        groups = sorted(set(self.tariffs))
+        if len(groups) == 1:
+            return groups[0][0] * groups[0][1]
+        prices = self.row_prices()
+        if prices:
+            return sum(prices)
+        cells = set()
+        for cell in self.cells:
+            m = re.fullmatch(r'\(?\s*(\d{1,3})\s*(?:marks?)?\s*\)?', cell.strip(), re.I)
+            if m:
+                cells.add(int(m.group(1)))
+        if len(cells) == 1:
+            return next(iter(cells))
+        if not cells and self.address[1] is None and self.address[2] is None \
+                and self.qtotal:
+            return self.qtotal
+        ceiling = None
+        for row in self.rows:
+            if not BAND_OPENER.match(row):
+                continue
+            m = re.search(r'\b(\d{1,2})\s*[-–]\s*(\d{1,2})\s*(?:marks?|m)\b', row, re.I)
+            value = int(m.group(2)) if m else None
+            if value is None:
+                m = re.search(r'\b(\d{1,2})\s*(?:marks?|m)\b', row, re.I)
+                value = int(m.group(1)) if m else None
+            if value is not None:
+                ceiling = value if ceiling is None else max(ceiling, value)
+        if ceiling is not None:
+            return ceiling
+        values = {int(m.group(1))
+                  for text in [self.cue] + self.rows + self.answers + self.cells
+                  for m in re.finditer(r'(\d{1,2})\s*(?:marks?|m)\b', text or '', re.I)}
+        return next(iter(values)) if len(values) == 1 else None
+
+    def row_prices(self):
+        """The marks printed at the end of each criterion row, in order.
+
+        Empty where the table holds a BAND ladder: a ladder prints the same
+        answer at four qualities, so its values are alternatives and summing
+        them would price the part three times over.
+        """
+        out = []
+        for row in self.rows:
+            if BAND_OPENER.match(row) or BAND_RANGE.search(row):
+                return []
+            m = re.search(r'(\d{1,2})\s*marks?\s*$', row, re.I)
+            if m:
+                out.append(int(m.group(1)))
+        return out
+
+    def __repr__(self):
+        return (f'<{self.label()} qtotal={self.qtotal} rows={len(self.rows)} '
                 f'answers={len(self.answers)}>')
 
 
-def blocks(year, level):
-    """The scheme's text blocks, in reading order, cut at inline markers."""
-    pdf = os.path.join(SCHEMES, f'{year}-{level}.pdf')
-    out = []
-    with pymupdf.open(pdf) as doc:
-        for n in range(doc.page_count):
-            for b in sorted(doc[n].get_text('blocks'),
-                            key=lambda b: (round(b[1], 1), b[0])):
-                text = tidy(b[4])
-                if not text:
-                    continue
-                for piece in INLINE.split(text):
-                    piece = tidy(piece)
-                    if piece:
-                        out.append(piece)
+def lines(year, level):
+    """The scheme's printed lines for the WRITTEN PAPER, as (text, cells).
+
+    Read from the CONVERTED markdown — the same text the build's provenance
+    gate searches — with the converter's line wrapping undone, so a table cell
+    arrives whole rather than in halves with the marks column between them.
+    `cells` holds the marks-column fragments taken out of a joined line.
+    """
+    path = os.path.join(SCHEMES, f'{year}-{level}.md')
+    raw = open(path, encoding='utf-8').read().split('<!-- pdf-block-order')[0]
+    rows = [tidy(x) for x in raw.split('\n')]
+    start = next(i for i, x in enumerate(rows)
+                 if QHEAD.match(x) and int(QHEAD.match(x).group(1)) == 1)
+    end = len(rows)
+    for i in range(start, len(rows)):
+        if END.search(rows[i]):
+            end = i
+            break
+    out, cells = [], []
+    for text in rows[start:end]:
+        if not text or PAGE_MARK.match(text):
+            continue
+        if FURNITURE.match(text) and not PER_QUESTION.search(text):
+            continue
+        joins = CONTINUES.match(text) or (out and HANGS.search(out[-1]))
+        if (out and joins and not TARIFF_ONLY.match(text)
+                and not BULLET.match(text) and not TABLE_HEAD.match(text)
+                and not QHEAD.match(text) and not LEAD_IN.match(text)
+                and not LEAD_IN_INLINE.match(text) and not PART.match(text)):
+            base = out[-1]
+            m = GLUED_CELL.search(base)
+            if m:
+                cells[-1].append(tidy(m.group(0)))
+                base = base[:m.start()]
+            out[-1] = tidy(base + ' ' + text)
+            continue
+        out.append(text)
+        cells.append([])
+    return list(zip(out, cells))
+
+
+def _marker(text, q):
+    """(letter, roman, rest) where `text` opens with a part marker, else None."""
+    m = PART.match(text)
+    if not m:
+        return None
+    qq = m.group('q') or m.group('q2')
+    if qq and int(qq) != q:
+        return None
+    letter = (m.group('L') or m.group('L2') or '').lower() or None
+    roman = (m.group('R') or m.group('R2') or m.group('R3') or '').lower() or None
+    return letter, roman, tidy(text[m.end():])
+
+
+def read(year, level):
+    """Every part the scheme prints, in document order, merged by address."""
+    parts, order = {}, []
+    q = 0
+    qtotal = None
+    letter = roman = None
+    part = None
+    in_table = False
+    listing = False
+
+    def open_part(address):
+        nonlocal part, in_table, listing
+        if address not in parts:
+            parts[address] = Part(len(order), address, qtotal)
+            order.append(address)
+        part = parts[address]
+        if part.qtotal is None:
+            part.qtotal = qtotal
+        in_table = False
+        listing = False
+        return part
+
+    per_question = None
+    for text, cells in lines(year, level):
+        rate = PER_QUESTION.search(text)
+        if rate:
+            per_question = int(rate.group(1))
+            if not QHEAD.match(text):
+                continue
+        head = QHEAD.match(text)
+        if head and int(head.group(1)) > q:
+            q = int(head.group(1))
+            qtotal = int(head.group(2)) if head.group(2) else per_question
+            letter = roman = None
+            part = open_part((q, None, None))
+            rest = tidy(text[head.end():])
+            mk = _marker(rest, q) if rest else None
+            if mk:
+                letter, roman, rest = mk
+                part = open_part((q, letter, roman))
+            part.cells.extend(cells)
+            if rest and TABLE_HEAD.match(rest):
+                in_table = True
+                rest = tidy(rest[TABLE_HEAD.match(rest).end():])
+            if rest:
+                if in_table:
+                    listing = _file(part, rest, listing)
+                else:
+                    part.cue = rest
+            continue
+        if q == 0:
+            continue
+
+        mk = _marker(text, q)
+        if mk:
+            lt, rm, rest = mk
+            # A bare roman stays under the letter it was printed beneath.
+            if lt:
+                letter, roman = lt, rm
+            else:
+                roman = rm
+            part = open_part((q, letter, roman))
+            part.cells.extend(cells)
+            if rest and TABLE_HEAD.match(rest):
+                in_table = True
+                rest = tidy(rest[TABLE_HEAD.match(rest).end():])
+                if rest:
+                    listing = _file(part, rest, listing)
+                continue
+            if rest:
+                # The ask, where the scheme reprints it; otherwise the first
+                # criterion row of a table that opened on the marker's line.
+                if in_table or part.cue or part.rows or part.answers:
+                    listing = _file(part, rest, listing)
+                else:
+                    part.cue = rest
+            continue
+
+        if part is None:
+            part = open_part((q, None, None))
+        part.cells.extend(cells)
+
+        if TABLE_HEAD.match(text):
+            in_table = True
+            listing = False
+            rest = tidy(text[TABLE_HEAD.match(text).end():])
+            if rest:
+                listing = _file(part, rest, listing)
+            continue
+
+        if not in_table and not part.cue and not part.rows and not part.answers:
+            part.cue = text
+            continue
+
+        listing = _file(part, text, listing)
+
+    out = [parts[a] for a in order]
+    for p in out:
+        seen = []
+        for text in [p.cue] + p.rows + p.answers + p.cells:
+            for t in tariffs_in(text or ''):
+                if t not in seen:
+                    seen.append(t)
+        p.tariffs = seen
     return out
 
 
-def _start_at(chunks):
-    """Skip the scheme's front matter.
+def _file(part, text, listing):
+    """File one printed line as a criterion row or as a stated answer.
 
-    Every PE scheme opens with three pages of notes to teachers, and those
-    pages carry no "Question N" head at all — so the first one is the boundary
-    and nothing has to be guessed about the preamble's numbering.
-    """
-    for i, text in enumerate(chunks):
-        if QHEAD.match(text):
-            return i
-    return len(chunks)
-
-
-def _split_markers(text):
-    """('a', 'i', rest) for a chunk opening with part markers."""
-    letter = roman = None
-    m = LETTER_TOKEN.match(text)
-    if m:
-        letter, text = m.group(1), text[m.end():]
-    m = ROMAN_TOKEN.match(text)
-    if m:
-        roman, text = m.group(1), text[m.end():]
-    return letter, roman, tidy(text)
-
-
-def _add(part, text):
-    """File one line of a part's table as a row or as a stated answer.
-
-    Every branch of the walk goes through here. It did not, once: the branch
-    that opens a table — "Description Marks Identifies 4 interpersonal skills
-    desirable for effective coaching 8marks Interpersonal skill identified Eg.
-    Communication ..." is ONE pymupdf block in 2022 — appended its remainder
-    straight to the rows, so the "Eg." list welded into that block was never
-    seen and the whole sitting reported 15% stated.
+    Returns whether the part is now inside a LIST the SEC opened with one of
+    its own lead-ins, so the lines after it are filed as answers too.
     """
     text = tidy(text)
     if not text:
-        return False
+        return listing
+    if TARIFF_ONLY.match(text):
+        part.cells.append(text)
+        return listing
     inline = LEAD_IN_INLINE.match(text)
     if inline:
-        part.answers.append(tidy(text[inline.end():]))
+        body = tidy(text[inline.end():])
+        if body:
+            part.answers.append(body)
+        return True
+    if LEAD_IN.match(text):
+        part.rows.append(text)
         return True
     if BULLET.match(text):
         part.answers.append(tidy(BULLET.sub('', text)))
@@ -246,200 +612,114 @@ def _add(part, text):
             part.rows.append(head)
         part.answers.append(tidy(text[mid.end():]))
         return True
+    if listing and not EXAMINER_NOTE.match(text) and not CLOSES_LIST.match(text):
+        part.answers.append(text)
+        return True
     part.rows.append(text)
     return False
 
 
-def _tariffs(text):
-    """Every printed tariff in one line, as (claim, per) or (1, total)."""
-    out = []
-    for m in GROUP.finditer(text):
-        out.append((int(m.group(1)), int(m.group(2))))
-    for m in GROUP_PAREN.finditer(text):
-        out.append((int(m.group(2)), int(m.group(1))))
-    for m in REPEAT.finditer(text):
-        values = [int(x) for x in re.findall(r'(\d{1,2})\s*marks?', m.group(0), re.I)]
-        if len(values) > 1 and len(set(values)) == 1:
-            out.append((len(values), values[0]))
-    return out
-
-
-def read(year, level):
-    """Every part the scheme prints, in document order."""
-    chunks = blocks(year, level)
-    parts, index = [], 0
-    q = letter = roman = None
-    total = None
-    part = None
-    in_table = False
-    pending_answers = False
-
-    def open_part(qn, lt, rm, tot):
-        nonlocal part, index, in_table, pending_answers
-        part = Part(index, qn, lt, rm, tot)
-        index += 1
-        parts.append(part)
-        in_table = False
-        pending_answers = False
-        return part
-
-    for text in chunks[_start_at(chunks):]:
-        if FURNITURE.match(text):
-            continue
-
-        head = QHEAD.match(text)
-        if head:
-            q = int(head.group(1))
-            total = int(head.group(2)) if head.group(2) else None
-            letter = roman = None
-            rest = tidy(text[head.end():])
-            lt, rm, rest = _split_markers(rest)
-            letter, roman = lt, rm
-            part = open_part(q, letter, roman, total)
-            if rest and not TABLE_HEAD.match(rest):
-                part.cue = rest
-            elif rest:
-                in_table = True
-            continue
-
-        if q is None:
-            continue
-
-        if MARKER.match(text):
-            lt, rm, rest = _split_markers(text)
-            if lt:
-                letter, roman = lt, rm
-            elif rm:
-                roman = rm
-            part = open_part(q, letter, roman, total)
-            if rest and TABLE_HEAD.match(rest):
-                in_table = True
-                rest = tidy(rest[TABLE_HEAD.match(rest).end():])
-            if rest:
-                if in_table:
-                    _add(part, rest)
-                else:
-                    part.cue = rest
-            continue
-
-        if part is None:
-            part = open_part(q, letter, roman, total)
-
-        if TABLE_HEAD.match(text):
-            in_table = True
-            rest = tidy(text[TABLE_HEAD.match(text).end():])
-            if rest:
-                _add(part, rest)
-            continue
-
-        if not in_table and not part.cue:
-            part.cue = text
-            continue
-
-        # Inside the table.  A lead-in opens the answer list; everything after
-        # it belongs to the answers, as do bullets wherever they appear.
-        if LEAD_IN.match(text):
-            pending_answers = True
-            part.rows.append(text)
-            continue
-        if LEAD_IN_INLINE.match(text) or BULLET.match(text):
-            pending_answers = True
-            _add(part, text)
-            continue
-        if pending_answers:
-            part.answers.append(text)
-            continue
-        _add(part, text)
-
-    for p in parts:
-        p.tariffs = [t for row in p.rows + p.answers for t in _tariffs(row)]
-        # The count-and-rate form is a FALLBACK, read only where the part
-        # prints no explicit group. Read alongside one it manufactured a
-        # second, different tariff out of the same sentence and made every
-        # such part ambiguous — one card lost for each one it found.
-        if not p.tariffs:
-            for row in p.rows + p.answers:
-                m = COUNT_RATE.search(row)
-                if not m:
-                    continue
-                word = (m.group(1) or m.group(3) or '').lower()
-                rate = int(m.group(2) or m.group(4))
-                if word in COUNTS and rate:
-                    p.tariffs.append((COUNTS[word], rate))
-                    break
-    # A question head that opens nothing — "Question 3 (6 Marks)" immediately
-    # followed by "(a)" — is furniture, not a part. Kept as a part it would
-    # report a phantom band-only ask per lettered question in every sitting.
-    return [p for p in parts if p.rows or p.answers or p.cue]
-
-
-def band_only(part):
-    """True where every priced row grades an answer and none states one."""
-    if part.answers:
-        return False
-    for row in part.rows:
-        if TABLE_HEAD.match(row) or LEAD_IN.match(row):
-            continue
-        if BAND_ROW.match(row) or BAND_RANGE.search(row):
-            continue
-        if stated(row):
-            return False
-    return True
-
-
 # What a Description row states, where it states anything: the SEC prints the
-# answer after a colon or a dash inside the row itself.  "Identifies axis as
-# longitudinal (also accept vertical/ mediolateral axis) 1 mark" is the answer;
-# "Identifies test to measure flexibility 1 mark" is not.
-# The separator is matched but never CONSUMED past itself: an early version
-# used "[-–]\s*[A-Z]" and ate the capital, shipping "oad – javelin" where the
-# scheme printed "Load – javelin".
-STATED = re.compile(
-    r'(?::\s*|\bas\s+|\b(?:also\s+)?accept\s+|\bsuch as\s+|\bincluding\s+)'
-    r'(?P<body>[^:]{4,})$', re.I)
-# An examiner-facing verb with nothing after it but its own tariff.
-CRITERION = re.compile(
-    r'^(?:identifies|identify|explains?|explanation|describes?|description'
-    r'|discusses?|discussion|outlines?|outline|names?|states?|statement'
-    r'|defines?|definition|correct|accurate|appropriate|two|three|four|five'
-    r'|candidate|award|marks?)\b', re.I)
+# answer after a colon or a dash inside the row itself. "Correct plane named-
+# 1 mark: Transverse plane" is an answer; "Identifies test to measure
+# flexibility 1 mark" is not.
+STATED = re.compile(r':\s*(?P<body>[^:]{4,})$')
+
+
+def strip_tariff(text):
+    """One printed row with its marks-column arithmetic taken off."""
+    out = tidy(text)
+    for pattern in (
+            r'\s*\(?\s*\d{1,3}\s*\(\s*\d{1,2}\s*[x×]\s*\d{1,2}\s*marks?\s*\)\s*\)?',
+            r'\s*\(?\s*\d{1,2}\s*[x×]\s*\d{1,2}\s*(?:\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})+\s*\)\s*)?'
+            r'(?:marks?|m)?(?:\s*=\s*\d{1,3})?\s*\)?',
+            r'\s*[-–]?\s*\d{1,2}\s*[-–]\s*\d{1,2}\s*(?:marks?|m)\b',
+            r'\s*[-–]?\s*\b\d{1,3}\s*marks?\b',
+            r'\s*[-–]\s*\d{1,2}\s*m\b',
+            r'\s+\d{1,2}\s*[-–]\s*\d{1,2}\s*$',
+            r'\s+\d{1,3}\s*$'):
+        out = tidy(re.sub(pattern, ' ', out, flags=re.I))
+    return tidy(out).strip(' .;:,-')
+
+
+def is_content(text):
+    """True where a printed line states an answer rather than grading one."""
+    body = strip_tariff(text)
+    if len(body) < 4:
+        return False
+    if TABLE_HEAD.match(body) or EXAMINER_NOTE.match(body) or LEAD_IN.match(body):
+        return False
+    return not EXAMINER_VOCAB.search(body)
 
 
 def stated(row):
-    """The answer a Description row states, or ''.
-
-    The test is whether anything survives once the row's examiner-facing lead
-    and its tariff are taken off, and whether what survives reads as content
-    rather than as a second criterion.
-    """
+    """The answer a Description row states after its own colon, or ''."""
     text = tidy(row)
-    if (TABLE_HEAD.match(text) or BAND_ROW.match(text) or BAND_RANGE.search(text)
-            or EXAMINER_NOTE.match(text)):
+    if TABLE_HEAD.match(text) or EXAMINER_NOTE.match(text) or LEAD_IN.match(text):
         return ''
-    m = STATED.search(MARKS.sub('', text).strip(' .;:,-'))
+    m = STATED.search(strip_tariff(text) if MARKS.search(text) else text)
     if not m:
         return ''
     body = tidy(m.group('body')).strip(' .;:,-')
-    if len(body) < 4 or CRITERION.match(body):
+    if len(body) < 4 or EXAMINER_VOCAB.search(body):
         return ''
     return body
 
 
+def answers_of(part):
+    """Every answer the scheme states for one part, in printed order."""
+    out = []
+    for text in part.answers:
+        body = strip_tariff(text)
+        if body and body not in out:
+            out.append(body)
+    for row in part.rows:
+        said = stated(row)
+        if said and said not in out:
+            out.append(said)
+            continue
+        if is_content(row):
+            body = strip_tariff(row)
+            if body not in out:
+                out.append(body)
+    return out
+
+
+def band_only(part):
+    """True where every priced row grades an answer and none states one."""
+    return not answers_of(part)
+
+
+def _audit():
+    tot = ans = band = 0
+    for year, level in SITTINGS:
+        parts = read(year, level)
+        a = sum(1 for p in parts if answers_of(p))
+        tot += len(parts)
+        ans += a
+        band += len(parts) - a
+        print(f'{year} {level.upper()}: {len(parts):>3} parts, {a:>3} state an '
+              f'answer, {len(parts) - a:>3} band-only')
+    print(f'\n{ans}/{tot} parts state an answer; {band} band-only')
+
+
 if __name__ == '__main__':
+    if '--audit' in sys.argv:
+        _audit()
+        raise SystemExit
     year, level = int(sys.argv[1]), sys.argv[2]
     if '--raw' in sys.argv:
-        for text in blocks(year, level):
-            print(repr(text[:160]))
+        for text, cells in lines(year, level):
+            print(repr(text), cells or '')
         raise SystemExit
     parts = read(year, level)
     print(f'{year} {level.upper()}: {len(parts)} part(s)')
     for p in parts:
-        flag = 'BAND-ONLY' if band_only(p) else ''
-        print(f'  {p!r} {flag}')
+        print(f'  {p!r} {"BAND-ONLY" if band_only(p) else ""} '
+              f'total={p.total} tariffs={p.tariffs} cells={p.cells}')
         if p.cue:
-            print(f'      cue: {p.cue[:110]}')
+            print(f'      cue: {p.cue[:140]}')
         for row in p.rows:
-            said = stated(row)
-            print(f'      row: {row[:110]}' + (f'   >>{said[:60]}' if said else ''))
-        for a in p.answers:
-            print(f'      ANS: {a[:110]}')
+            print(f'      row: {row[:140]}')
+        for a in answers_of(p):
+            print(f'      ANS: {a[:140]}')

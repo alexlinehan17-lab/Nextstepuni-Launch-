@@ -61,6 +61,12 @@ SUBJECTS = {
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
+    # One booklet per sitting numbered Q1..Q18 straight through its three
+    # sections — Section A short questions, Section B the case study,
+    # Section C the long questions — so the generic merged walker reads it.
+    # 2020 sat an altered examination that stops at Q16 and set no Ordinary
+    # paper at all.
+    'physical-education': {'mode': 'merged'},
     'maths': {'mode': 'papers', 'papers': {'100': 'Paper 1', '200': 'Paper 2'}},
     # One booklet per sitting, questions 1..10 running on, both sides of the
     # 2023 syllabus break. The old papers set 'Question 1' as a bare '1.' in a
