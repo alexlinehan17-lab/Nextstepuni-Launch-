@@ -36505,5 +36505,47 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-paper-q1j-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q1j-art.png",
+  "md5": "0d036d173cb92ca2d9db2b34d08342f6",
+  "alt": "The table or diagram printed with 2021 HL Q1(j), as the State Examinations Commission set it.",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-paper-q4ai-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q4ai-art.png",
+  "md5": "af1479dc5299bbef1cd41905875482e5",
+  "alt": "The table or diagram printed with 2021 HL Q4(a)(i), as the State Examinations Commission set it.",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-paper-q5ai-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q5ai-art.png",
+  "md5": "9050069cbdb03af8b7b6b4a298e6b480",
+  "alt": "The table or diagram printed with 2021 HL Q5(a)(i), as the State Examinations Commission set it.",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-paper-q8ai-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q8ai-art.png",
+  "md5": "ff2b4463288634e81f38834c60499a98",
+  "alt": "The table or diagram printed with 2021 HL Q8(a)(i), as the State Examinations Commission set it.",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-OL-paper-q1c-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q1c-art.png",
+  "md5": "d63017549887487699795128577aab08",
+  "alt": "The table or diagram printed with 2021 OL Q1(c), as the State Examinations Commission set it.",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2021-OL-paper-q1e-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q1e-art.png",
+  "md5": "a491d5e4830739ee7c47d2e23445954b",
+  "alt": "The table or diagram printed with 2021 OL Q1(e), as the State Examinations Commission set it.",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2021-OL-paper-q6ci-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q6ci-art.png",
+  "md5": "71495fb866fffb3c1e185371348869c7",
+  "alt": "The table or diagram printed with 2021 OL Q6(c)(i), as the State Examinations Commission set it.",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
  }
 }
