@@ -34,12 +34,44 @@ Nothing is derived by dividing a total by a count the SEC did not state.  A
 part whose tariff cannot be read one way is REFUSED, and every refusal is a
 named bucket reported with a count and a real example.
 
-WHAT THE PAPER PRINTS AND THE SCHEME DOES NOT.  Some asks are answered by the
+WHAT THE PAPER PRINTS AND THE SCHEME DOES NOT.  Many asks are answered by the
 candidate's OWN performance, project or chosen physical activity, and the
 scheme prices them by band because there is no answer to print.  Those are
-exclusions with evidence, not gaps.  What is a gap is an ask whose scheme
-prints a good answer this reader cannot reach; every one of those is reported
-OPEN by `--report` and by reconcile.py, and none is quietly dropped.
+exclusions with the scheme's own lines as evidence, not gaps.  What is a gap
+is an ask whose scheme prints a good answer this reader cannot reach; every
+one of those is reported OPEN and none is laundered into an exclusion.
+
+WHERE THIS STANDS, measured against the census's 741 leaf asks over thirteen
+papers:
+
+    220  covered by 216 cards
+    493  excluded, each carrying the scheme's own printed lines
+     28  OPEN, in the buckets `--report` prints, every one of them an ask
+         whose SCHEME states an answer this reader cannot lift:
+
+       8  the answer is in a printed table's other column and the flat text
+          layer interleaves the two (2020 HL Q16(b)(iii)'s energy-system
+          grid; 2026 OL Q15(a)(i)'s three-column concept table). pe_tables
+          reads the ruled ones; these are drawn without rules, or wrap their
+          cells differently line by line.
+       5  a marking point does not trace to its own scheme — the converter
+          dropped the marks column into the middle of the SEC's sentence and
+          no rebuilt form of it matches.
+       5  the scheme prints no tariff that reads one way, mostly a part
+          priced in two different groups at once (2024 HL Q8(a): "2 x 1 mark"
+          for the injury and "2 x 2 marks" for its causes, in one table that
+          also holds part (b)).
+       4  the ask points at a figure, table or case study and the paper page
+          this reader found for it does not carry the answer.
+       2  the scheme marks its answer with a TICK in a printed column, and
+          the text layer hands back the tick without the column.
+       2  no scheme part prices the ask at all (2022 OL Q18(b)(ii),
+          2026 OL Q15(b)).
+       1  the paper prints no ask text under the key (2022 OL Q18(a)(i), a
+          figure caption the walker kept).
+       1  the scheme's line holds its answer welded onto the criterion and
+          cut in half by the wrap (2024 OL Q13(b)(i)).
+
 """
 import argparse
 import collections
