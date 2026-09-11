@@ -1338,3 +1338,18 @@
     padding-top: 10px;
   }
 }
+@media (max-width: 360px) {
+  .certle-page .landing-nav-row {
+    padding-inline: 12px;
+    gap: 6px;
+  }
+  .certle-page .landing-nav-row > div {
+    gap: 6px;
+  }
+  .certle-page .landing-nav-mark {
+    font-size: 18px !important;
+  }
+  .certle-page .landing-nav button {
+    min-height: 44px;
+  }
+}
