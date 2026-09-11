@@ -32,6 +32,176 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-a", topicId: "eng-3-1", conceptId: "examples-where-personal-protective-equipment-ppe",
+    section: "A", questionRef: "2021 OL Q1(a)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Give two examples where Personal Protective Equipment (PPE) must be worn in the Engineering room.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Operating machinery such as the lathe / pillar drilling etc.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Using oxygen acetylene gas welding equipment i.e. leather gloves /apron / welding goggles must be worn.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-b", topicId: "eng-2-10", conceptId: "engineering-term-permanent-joint",
+    section: "A", questionRef: "2021 OL Q1(b)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Explain the engineering term permanent joint.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces i.e., a pop riveted joint.", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-c", topicId: "eng-2-15", conceptId: "application-chain-sprocket-mechanism-shown",
+    section: "A", questionRef: "2021 OL Q1(c)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "State one application of the chain and sprocket mechanism shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A chain and sprocket mechanism can be used as part of a driving mechanism in a bicycle.", marks: 6 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2021-OL-paper-q1c-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q1c-art.png",
+          "srcHash": "d63017549887487699795128577aab08",
+          "alt": "The table or diagram printed with 2021 OL Q1(c), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-d", topicId: "eng-3-14", conceptId: "forms-renewable-energy",
+    section: "A", questionRef: "2021 OL Q1(d)",
+    questionText: "Name two forms of renewable energy.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Solar energy.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Wind energy.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-f", topicId: "eng-1-4", conceptId: "example-ferrous-metal-example-non-ferrous",
+    section: "A", questionRef: "2021 OL Q1(f)",
+    questionText: "State one example of a ferrous metal and one example of a non‐ferrous metal.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Steel is a ferrous metal. (ii) Brass is a non-ferrous metal.", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-g", topicId: "eng-3-14", conceptId: "contribution-engineering-makes-transport-industry",
+    section: "A", questionRef: "2021 OL Q1(g)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "State one contribution engineering makes to the transport industry.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Engineering continues to contribute to the development of electrical and hybrid vehicles for the transport industry.", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-i", topicId: "eng-2-11", conceptId: "main-operating-features-any-following-electronic",
+    section: "A", questionRef: "2021 OL Q1(i)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Describe the main operating features of any one of the following: electronic component Air compressor Strip heater Three‐jaw chuck.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Jaw 1", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-j", topicId: "eng-3-14", conceptId: "any-following-laser-cutting-bluetooth-drone",
+    section: "A", questionRef: "2021 OL Q1(j)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Describe any one of the following: Laser cutting, Bluetooth, Drone.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Laser cutting is a technology that uses a laser to slice materials.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Laser cutting works by directing the output of a high-power laser most commonly through mirrors. Laser mirrors and CNC (computer numerical control) are used to direct the laser beam generated onto the material. The laser beam is directed at the material through a focusing lens, which then either melts, burns or vaporizes away the material. This leaves an edge with a high-quality surface finish.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Bluetooth is used as a short-range wireless interconnection of mobile phones, computers, sound systems, game controllers, printers, and other electronic devices.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often like a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-k", topicId: "eng-3-8", conceptId: "define-term-brittleness-relation-properties-materials",
+    section: "A", questionRef: "2021 OL Q1(k)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Define the term brittleness in relation to the properties of materials and name one material which is brittle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Glass / Hardened Steel / Cast iron is an example of a brittle material.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-l", topicId: "eng-2-11", conceptId: "any-following-pilot-hole-countersink-bit",
+    section: "A", questionRef: "2021 OL Q1(l)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Explain any one of the following: Pilot hole, Countersink bit, Swarf.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "A countersinking bit is used to enlarge the mouths of holes to accommodate the heads of countersunk head screws / rivets or fixings. Countersinking allows the fixing to be sunk below the surface of the hole.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Swarf is the waste material produced when the chip is cut from the workpiece.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q2-d", topicId: "eng-1-5", conceptId: "metals-used-produce-any-alloys-listed",
+    section: "A", questionRef: "2021 OL Q2(d)",
+    questionText: "Name the metals used to produce any two of the alloys listed below: (i) Solder, (ii) Bronze, (iii) Brass.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Solder: Lead & Tin", marks: 8, accepts: ["Bronze: Copper & Tin","Brass: Copper & Zinc"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q3-a", topicId: "eng-2-6", conceptId: "any-following-processes-quenching-case-hardening",
     section: "A", questionRef: "2021 OL Q3(a)",
     questionText: "Explain any two of the following processes: (i) Quenching, (ii) Case hardening, (iii) Annealing, (iv) Work hardening.",
@@ -73,11 +243,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q3-c", topicId: "eng-2-6", conceptId: "safety-precautions-be-observed-during-heat",
     section: "A", questionRef: "2021 OL Q3(c)",
-    stem: "point cutting edge",
     questionText: "State two safety precautions to be observed during the heat treatment of metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear heat resistant gloves when preforming heat treatment of  metals.", marks: 8, accepts: ["Do not leave hot metals lying around in case people accidently pick up the piece."] },
+    { id: "r-1", kind: "alt", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 8, accepts: ["Do not leave hot metals lying around in case people accidently pick up the piece."] },
     ],
   } as SecCard,
   {
@@ -87,12 +256,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q3-d-i", topicId: "eng-3-8", conceptId: "malleability-or-advantages-robotics-manufacturing",
     section: "A", questionRef: "2021 OL Q3(d)(i)",
-    stem: "Engineering ‐ Ordinary level 4",
     questionText: "Explain any two of the following terms: Malleability, OR State two advantages of robotics in manufacturing.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Robotics offer precision placement of components in manufacturing.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Robotics offer precision when performing manufacturing processes such as welding & paint spraying.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Robotics offer precision placement of components in manufacturing.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Robotics offer precision when performing manufacturing processes such as welding & paint spraying.", marks: null },
     ],
   } as SecCard,
   {
@@ -102,7 +271,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q3-d-ii", topicId: "eng-3-14", conceptId: "compressive-strength-or-ways-use-robotic",
     section: "A", questionRef: "2021 OL Q3(d)(ii)",
-    stem: "Engineering ‐ Ordinary level 4",
     questionText: "Explain any two of the following terms: Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -118,11 +286,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q3-d", topicId: "eng-3-8", conceptId: "any-following-terms-malleability-or-advantages",
     section: "A", questionRef: "2021 OL Q3(d)",
-    stem: "Engineering ‐ Ordinary level 4",
     questionText: "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, accepts: ["The ability of a material to withstand being squashed or pushed together.","Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched.","Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying."] },
+    { id: "r-1", kind: "alt", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, accepts: ["Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying.","The ability of a material to withstand being squashed or pushed together.","Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched."] },
     ],
   } as SecCard,
   {
@@ -158,7 +325,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-b-i", topicId: "eng-2-10", conceptId: "why-flux-required-electrode-during-manual",
     section: "A", questionRef: "2021 OL Q4(b)(i)",
-    questionText: "Answer any three of the following in relation to manual metal arc welding: Why is a flux required on the electrode during manual metal arc welding?",
+    questionText: "Answer any three of the following in relation to manual metal arc welding: Answer any three of the following in relation to manual metal arc welding: Why is a flux required on the electrode during manual metal arc welding?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flux protects the weld area and prevents oxidisation during welding.", marks: 4 },
@@ -179,7 +346,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-b-ii", topicId: "eng-2-10", conceptId: "function-welding-earth-clamp-shown",
     section: "A", questionRef: "2021 OL Q4(b)(ii)",
-    questionText: "Answer any three of the following in relation to manual metal arc welding: What is the function of the welding earth clamp shown?",
+    questionText: "Answer any three of the following in relation to manual metal arc welding: Answer any three of the following in relation to manual metal arc welding: What is the function of the welding earth clamp shown?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.", marks: 4 },
@@ -206,10 +373,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "When manual arc welding, slag forms on top of the weld helping to pull impurities out of the weld. The slag also forms a shield from the atmosphere reducing oxidisation of the weld. The shield also slows down the cooling rate of the weld when solidifying.", marks: 4 },
     ],
     questionFigure: {
-          "candId": "engineering-2021-OL-paper-q4bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bii-art.png",
+          "candId": "engineering-2021-OL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bi-art.png",
           "srcHash": "7dfcc4ecadb58fc60dd4d4c40a6b6adb",
-          "alt": "The table or diagram printed with 2021 OL Q4(b)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2021 OL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -228,10 +395,10 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Ensure the area is dry and all electric cables are in good condition.", marks: null },
     ],
     questionFigure: {
-          "candId": "engineering-2021-OL-paper-q4bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bii-art.png",
+          "candId": "engineering-2021-OL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bi-art.png",
           "srcHash": "7dfcc4ecadb58fc60dd4d4c40a6b6adb",
-          "alt": "The table or diagram printed with 2021 OL Q4(b)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2021 OL Q4(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -243,7 +410,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-c-ii", topicId: "eng-2-11", conceptId: "difference-between-plug-tap-tapered-tap",
     section: "A", questionRef: "2021 OL Q4(c)(ii)",
-    stem: "welding earth clamp tool B",
     questionText: "Explain the difference between a plug tap and a tapered tap.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -258,7 +424,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-c-iii", topicId: "eng-1-5", conceptId: "suitable-method-used-join-light-gauge",
     section: "A", questionRef: "2021 OL Q4(c)(iii)",
-    stem: "welding earth clamp tool B",
     questionText: "Name one suitable method used to join light gauge sheet aluminum.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -272,7 +437,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-c-iv", topicId: "eng-2-10", conceptId: "any-advantages-using-spot-welding",
     section: "A", questionRef: "2021 OL Q4(c)(iv)",
-    stem: "welding earth clamp tool B",
     questionText: "State any two advantages of using spot welding.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -287,7 +451,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-using",
     section: "A", questionRef: "2021 OL Q4(d)",
-    stem: "Engineering ‐ Ordinary level 5",
     questionText: "State two safety precautions to be observed when using an electrical soldering iron.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -374,7 +537,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q5-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-using",
     section: "A", questionRef: "2021 OL Q5(d)",
-    stem: "Engineering ‐ Ordinary level 6",
     questionText: "State two safety precautions to be observed when using an adhesive to bond acrylic.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -402,6 +564,70 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q6-c-i", topicId: "eng-2-11", conceptId: "cutting-tool-shown",
+    section: "A", questionRef: "2021 OL Q6(c)(i)",
+    questionText: "Name the cutting tool shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The protective screen covers the machining area when the CNC lathe is in operation. If the screen is lifted, the machining process stops.", marks: 6 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2021-OL-paper-q6ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q6ci-art.png",
+          "srcHash": "71495fb866fffb3c1e185371348869c7",
+          "alt": "The table or diagram printed with 2021 OL Q6(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q6-c-ii", topicId: "eng-2-11", conceptId: "function-cutting-tool-shown",
+    section: "A", questionRef: "2021 OL Q6(c)(ii)",
+    questionText: "Describe the function of the cutting tool shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "If the emergency stop button is pressed the machining process will stop.", marks: 6 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2021-OL-paper-q6ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q6ci-art.png",
+          "srcHash": "71495fb866fffb3c1e185371348869c7",
+          "alt": "The table or diagram printed with 2021 OL Q6(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q6-c-iii", topicId: "eng-2-11", conceptId: "safety-precautions-should-be-observed-when",
+    section: "A", questionRef: "2021 OL Q6(c)(iii)",
+    questionText: "State two safety precautions that should be observed when using the cutting tool shown.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The CNC software allows the user to simulate a part program before machining.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Emergency stop", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2021-OL-paper-q6ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q6ci-art.png",
+          "srcHash": "71495fb866fffb3c1e185371348869c7",
+          "alt": "The table or diagram printed with 2021 OL Q6(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q7-a-i", topicId: "eng-3-12", conceptId: "types-fit-possible-when-assembling-shaft",
     section: "A", questionRef: "2021 OL Q7(a)(i)",
     questionText: "Name two types of fit possible when assembling a shaft and a hole.",
@@ -420,8 +646,23 @@ export const CARDS: SecCard[] = [
     questionText: "Describe any one of the fits named at Q7(a)(i).",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Interference fit - The shaft is always larger than the hole.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Transition fit - The shaft can be larger or smaller than the hole.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Clearance fit - The shaft is always smaller than the hole.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Interference fit - The shaft is always larger than the hole.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Transition fit - The shaft can be larger or smaller than the hole.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q7-c-ii", topicId: "eng-2-16", conceptId: "draw-electronic-symbol-each-electronic-component",
+    section: "A", questionRef: "2021 OL Q7(c)(ii)",
+    questionText: "Draw the electronic symbol for each electronic component named.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 5 },
+    { id: "r-2", kind: "point", verbatim: "Measurement can be read directly from a digital display.", marks: 4 },
     ],
   } as SecCard,
   {
@@ -435,8 +676,8 @@ export const CARDS: SecCard[] = [
     questionText: "Give two safety precautions to be observed when using a pillar drilling machine.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Personal Protective Equipment (PPE) must be worn to protect the", marks: null },
-    { id: "r-2", kind: "point", verbatim: "eyes /face i.e., goggles / face shield.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Ensure the piece being drilled is secured in a machine vice.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Personal Protective Equipment (PPE) must be worn to protect the eyes /face i.e., goggles / face shield.", marks: null },
     ],
   } as SecCard,
   {
@@ -516,6 +757,20 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q1-h", topicId: "eng-1-5", conceptId: "reason-why-aluminium-may-be-used",
+    section: "A", questionRef: "2022 OL Q1(h)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "State one reason why aluminium may be used when manufacturing satellites for use in space.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Aluminium is a light material and will not corrode", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q1-j", topicId: "eng-2-16", conceptId: "any-following-wireless-control-micro-bit",
     section: "A", questionRef: "2022 OL Q1(j)",
     stem: "Give brief answers to any eight of the following:",
@@ -549,15 +804,29 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2022-ol-q1-l", topicId: "eng-2-10", conceptId: "any-following-conductor-engraving-prototype-m",
+    id: "eng-2022-ol-q1-l", topicId: "eng-2-13", conceptId: "any-following-conductor-engraving-prototype",
     section: "A", questionRef: "2022 OL Q1(l)",
-    stem: "Engineering - Ordinary level 2",
-    questionText: "Describe any one of the following: Conductor, Engraving, Prototype. (m) List two safety precautions to be followed when soldering electronic components.",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Describe any one of the following: Conductor, Engraving, Prototype.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A conductor is a material that allows heat or electricity flow through it. Copper is an example of a good conductor as it will allow heat / electricity to flow through it.", marks: null },
     { id: "r-2", kind: "point", verbatim: "The process of forming designs by cutting with a tool or corrosion by acids on the surface of material.", marks: null },
     { id: "r-3", kind: "point", verbatim: "A prototype is an early sample, model, or release of a product built to test how well it might operate.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q1-m", topicId: "eng-2-10", conceptId: "safety-precautions-be-followed-when-soldering",
+    section: "A", questionRef: "2022 OL Q1(m)",
+    questionText: "List two safety precautions to be followed when soldering electronic components.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Keep your hands a safe distance back from the tip of the solder iron.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Always replace the soldering iron back in its holder when not in use.", marks: null },
     ],
   } as SecCard,
   {
@@ -583,7 +852,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a labelled diagram, the operation of one furnace you have studied.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag.", marks: 12, accepts: ["Basic oxygen furnace Labelled diagram & operation:","Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.","Cold scrap iron or steel make up Furnace lid Carbon electrodes most of the charge together with small amounts of lime and carbon.","The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back Charge door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping Tilting rollers spout.","Electric Arc furnace"] },
+    { id: "r-1", kind: "alt", verbatim: "Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag.", marks: 12, accepts: ["Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.","Cold scrap iron or steel make up Furnace lid Carbon electrodes most of the charge together with small amounts of lime and carbon.","The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back Charge door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping Tilting rollers spout.","Electric Arc furnace"] },
     ],
   } as SecCard,
   {
@@ -593,7 +862,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q2-d-i", topicId: "eng-2-15", conceptId: "advantage-using-belt-pulley-mechanism-drive",
     section: "A", questionRef: "2022 OL Q2(d)(i)",
-    stem: "roll cage seat wheel rim belt and pulley mechanism Engineering - Ordinary level 3",
     questionText: "State one advantage of using a belt and pulley mechanism in a drive system.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -607,7 +875,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q2-d-ii", topicId: "eng-2-15", conceptId: "disadvantage-using-belt-pulley-mechanism-drive",
     section: "A", questionRef: "2022 OL Q2(d)(ii)",
-    stem: "roll cage seat wheel rim belt and pulley mechanism Engineering - Ordinary level 3",
     questionText: "State one disadvantage of using a belt and pulley mechanism in a drive system.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -637,7 +904,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to the heat treatment of steel, explain any two of the following: (i) Quenching, (ii) Carbon content, (iii) Hardening temperature, (iv) Case hardening.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is moved about when dipped into cold water.", marks: 14, accepts: ["Medium carbon steel contains between 0.03% and 0.06% carbon.","High carbon steel contains more than 0.06% carbon.","To ensure high carbon steel is hardened correctly the steel must be raised to the correct temperature before cooling. This critical temperature is known as it’s hardening temperature.","Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core."] },
+    { id: "r-1", kind: "alt", verbatim: "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is moved about when dipped into cold water.", marks: 14, accepts: ["If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.","Low carbon steel contains less than 0.03% of carbon.","Medium carbon steel contains between 0.03% and 0.06% carbon.","High carbon steel contains more than 0.06% carbon.","To ensure high carbon steel is hardened correctly the steel must be raised to the correct temperature before cooling. This critical temperature is known as it’s hardening temperature.","Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core."] },
     ],
   } as SecCard,
   {
@@ -647,7 +914,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q3-d-i", topicId: "eng-3-8", conceptId: "brittleness-or-medicine-ii-gardening-iii",
     section: "A", questionRef: "2022 OL Q3(d)(i)",
-    stem: "Engineering - Ordinary level 4",
     questionText: "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: Brittleness, OR medicine; (ii) gardening; (iii) manufacturing.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -662,11 +928,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q3-d", topicId: "eng-3-8", conceptId: "any-following-metal-properties-or-example",
     section: "A", questionRef: "2022 OL Q3(d)",
-    stem: "Engineering - Ordinary level 4",
     questionText: "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: (i) Brittleness, OR medicine; (ii) gardening; (iii) manufacturing. (ii) Melting point, (iii) Toughness, (iv) Elasticity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: 12, accepts: ["Performing operations from a distance Example","Melting point is the temperature at which a metal changes its state from solid to liquid.","Gardening: Robotic lawnmowers","This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","Manufacturing: Robotic welding","The property of elasticity is the ability of an object or material to return to its original shape after being stretched."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q4-a-ii", topicId: "eng-2-10", conceptId: "any-flames-produced-when-using-oxy",
+    section: "A", questionRef: "2022 OL Q4(a)(ii)",
+    questionText: "Name any two flames which are produced when using an oxy-acetylene torch.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Neutral flame Oxidising flame Carbursing flame", marks: 5 },
     ],
   } as SecCard,
   {
@@ -687,9 +965,21 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q4-b", topicId: "eng-2-10", conceptId: "purpose-any-following-manual-metal-arc",
+    section: "A", questionRef: "2022 OL Q4(b)",
+    questionText: "Describe the purpose of any three of the following in manual metal arc welding: (i) Earth clamp, (ii) Welding helmet, (iii) Electrode holder, (iv) Welding curtain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.", marks: 12, accepts: ["The welding helmet protects your eyes and skin from severe sparks, ultraviolet and infrared rays emitted by the arc.","The electrode holder has and insulated handle and is used to hold the electrode when welding.","The welding curtain is a flame-retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q4-c-ii", topicId: "eng-2-10", conceptId: "why-spot-welding-not-suitable-joining",
     section: "A", questionRef: "2022 OL Q4(c)(ii)",
-    stem: "tool A thumb screw",
     questionText: "Explain why spot welding is not suitable for joining heavy gauge steel plate.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -704,8 +994,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q4-c-iii", topicId: "eng-2-10", conceptId: "relation-soldering-term-sweated-joint-example",
     section: "A", questionRef: "2022 OL Q4(c)(iii)",
-    stem: "tool A thumb screw",
-    questionText: "Answer any three of the following: In relation to soldering, explain the term sweated joint and give one example where a sweated joint might be used.",
+    questionText: "Answer any three of the following: Answer any three of the following: In relation to soldering, explain the term sweated joint and give one example where a sweated joint might be used.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "When a soldered joint is over a large area, a method know as ‘sweating’ can be used. Both parts are first tinned with a light coat of solder.", marks: null },
@@ -720,7 +1009,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q4-c-iv", topicId: "eng-2-10", conceptId: "advantage-using-thumb-screws-when-assembling",
     section: "A", questionRef: "2022 OL Q4(c)(iv)",
-    stem: "tool A thumb screw",
     questionText: "Give one advantage of using thumb screws when assembling parts.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -734,7 +1022,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q4-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-gas",
     section: "A", questionRef: "2022 OL Q4(d)",
-    stem: "Engineering - Ordinary level 5",
     questionText: "State two safety precautions to be observed when gas welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -806,7 +1093,7 @@ export const CARDS: SecCard[] = [
     questionText: "Plastic is a common material found in cars. Select any two of the car parts labelled in the diagram and name a suitable plastic that could be used for their manufacture.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Dashboard: Polypropylene (PP), Styrene, Polycarbonate, ABS.", marks: 10, accepts: ["Seat belts: Polyvinylchloride (PVC)","Door handles: Acrylonitrile Butadiene Styrene (ABS)"] },
+    { id: "r-1", kind: "alt", verbatim: "Number plate: Acrylic", marks: 10, accepts: ["Dashboard: Polypropylene (PP), Styrene, Polycarbonate, ABS.","Seat belts: Polyvinylchloride (PVC)","Door handles: Acrylonitrile Butadiene Styrene (ABS)","Headlights: Acrylic / Polycarbonate"] },
     ],
     questionFigure: {
           "candId": "engineering-2022-OL-paper-q5c-art",
@@ -824,7 +1111,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q5-d", topicId: "eng-1-9", conceptId: "safety-precautions-be-observed-when-working",
     section: "A", questionRef: "2022 OL Q5(d)",
-    stem: "seat belts dashboard number plate door handles headlights Engineering - Ordinary level 6",
     questionText: "List two safety precautions to be observed when working with hot plastics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -851,7 +1137,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q6-c-iii", topicId: "eng-2-11", conceptId: "any-other-processes-can-be-carried",
     section: "A", questionRef: "2022 OL Q6(c)(iii)",
-    stem: "Engineering - Ordinary level 7",
     questionText: "Name any two other processes that can be carried out on a lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -863,15 +1148,42 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q7-c-ii", topicId: "eng-2-16", conceptId: "suitable-electronic-component-used-adjust-speed",
+    section: "A", questionRef: "2022 OL Q7(c)(ii)",
+    questionText: "Name a suitable electronic component used to adjust the speed of a 9V DC motor.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Outside calipers - For gauging the outside diameter of round bars.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Variable resistor", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q7-c-iii", topicId: "eng-2-16", conceptId: "suitable-electronic-component-used-start-stop",
     section: "A", questionRef: "2022 OL Q7(c)(iii)",
-    stem: "Engineering - Ordinary level 8",
     questionText: "Name a suitable electronic component used to start and stop the flow of current in a circuit.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameter of holes.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Measurement can be read directly from a digital display.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Switch", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q7-c-iv", topicId: "eng-2-16", conceptId: "suitable-electronic-component-used-provide-electrical",
+    section: "A", questionRef: "2022 OL Q7(c)(iv)",
+    questionText: "Name a suitable electronic component used to provide electrical energy to a circuit.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Engineers protractor - Used for checking or accurately marking out angles on material.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Battery / PV Solar panel", marks: null },
     ],
   } as SecCard,
   {
@@ -895,7 +1207,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-b", topicId: "eng-3-8", conceptId: "term-brittleness",
     section: "A", questionRef: "2023 OL Q1(b)",
-    stem: "remote-control technology",
     questionText: "Explain the term brittleness.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -924,7 +1235,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-d", topicId: "eng-2-10", conceptId: "advantage-using-thumbscrews-when-assembling-parts",
     section: "A", questionRef: "2023 OL Q1(d)",
-    stem: "thumbscrew",
     questionText: "List one advantage of using thumbscrews when assembling parts.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -970,9 +1280,23 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any one of the following: (i) CAD Modelling, (ii) Artificial intelligence (AI), (iii) Electric vehicle.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Upcycling is the process of reusing old materials to create something more valuable or of a higher quality. An example of upcycling is using reclaimed skateboards to make quality furniture, as shown.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "CAD (computer-aided design) modelling is the use of computer-based software to aid in design processes. CAD software can be used to create two-dimensional (2-D) drawings or three dimensional (3-D) models which allows designers to test, refine and manipulate virtual products prior to production. These high-quality 3D designs are identical in dimension and detail to the desired finished product, ensuring quality and accuracy for production.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem solving.", marks: null },
     { id: "r-3", kind: "point", verbatim: "An electric vehicle is essentially a vehicle with an electric motor powering it rather than a combustible engine. A fully electric vehicle does not run on or have a petrol or diesel engine.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q1-i", topicId: "eng-3-14", conceptId: "term-upcycling",
+    section: "A", questionRef: "2023 OL Q1(i)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Explain the term upcycling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Upcycling is the process of reusing old materials to create something more valuable or of a higher quality. An example of upcycling is using reclaimed skateboards to make quality furniture, as shown.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1013,7 +1337,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-l", topicId: "eng-2-11", conceptId: "any-following-pop-riveting-countersinking-blind",
     section: "A", questionRef: "2023 OL Q1(l)",
-    stem: "(m) List two benefits of using cutting fluids when machining.",
+    stem: "Give brief answers to any eight of the following:",
     questionText: "Explain any one of the following: (i) Pop riveting, (ii) Countersinking, (iii) Blind hole.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -1021,6 +1345,21 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Countersinking is a process that creates a V- shaped edge near the surface of a hole.", marks: null },
     { id: "r-3", kind: "point", verbatim: "It is often used to allow the head of a countersunk-head screw, sit flush or below the surface of the material.", marks: null },
     { id: "r-4", kind: "point", verbatim: "A blind hole refers to a hole that is reamed, drilled or milled to a specific depth without breaking through to the other side of the workpiece.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q1-m", topicId: "eng-2-11", conceptId: "benefits-using-cutting-fluids-when-machining",
+    section: "A", questionRef: "2023 OL Q1(m)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "List two benefits of using cutting fluids when machining.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Provides a better finish on the workpiece being cut.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Reduces the temperature of the workpiece and cutting tool being used.", marks: null },
     ],
   } as SecCard,
   {
@@ -1056,7 +1395,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q2-c-ii", topicId: "eng-3-14", conceptId: "reason-selection-each-material",
     section: "A", questionRef: "2023 OL Q2(c)(ii)",
-    stem: "steering grips back support",
     questionText: "State one reason for the selection of each material.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1070,7 +1408,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q2-d-i", topicId: "eng-1-2", conceptId: "term-alloy",
     section: "A", questionRef: "2023 OL Q2(d)(i)",
-    stem: "chassis rim",
     questionText: "Explain the term alloy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1084,7 +1421,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q2-d-ii", topicId: "eng-1-2", conceptId: "metal-alloy-metals-used-its-production",
     section: "A", questionRef: "2023 OL Q2(d)(ii)",
-    stem: "chassis rim",
     questionText: "Name one metal alloy and name the metals used in its production.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
@@ -1150,11 +1486,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q3-d-i", topicId: "eng-3-8", conceptId: "toughness-areas-where-robotic-technology-used",
     section: "A", questionRef: "2023 OL Q3(d)(i)",
-    stem: "exoskeleton suit",
     questionText: "Explain any two of the following metal properties: Toughness, Describe two areas where robotic technology is used in health care.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.", marks: 6, accepts: ["Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."] },
+    { id: "r-1", kind: "alt", verbatim: "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 6, accepts: ["Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.","Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."] },
     ],
   } as SecCard,
   {
@@ -1164,11 +1499,53 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q3-d-ii", topicId: "eng-3-8", conceptId: "ductility-ways-exoskeleton-suits-can-help",
     section: "A", questionRef: "2023 OL Q3(d)(ii)",
-    stem: "exoskeleton suit",
     questionText: "Explain any two of the following metal properties: Ductility, State two ways in which exoskeleton suits can help the recovery process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Exoskeleton suits can help people with spinal cord injuries gain some mobility, cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management", marks: 6, accepts: ["Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."] },
+    { id: "r-1", kind: "alt", verbatim: "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.", marks: 6, accepts: ["Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q4-a-i", topicId: "eng-2-10", conceptId: "common-gases-used-gas-welding",
+    section: "A", questionRef: "2023 OL Q4(a)(i)",
+    questionText: "Name two common gases used in gas welding.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oxygen", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Acetylene", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q4-a-ii", topicId: "eng-2-10", conceptId: "types-flame-produced-when-gas-welding",
+    section: "A", questionRef: "2023 OL Q4(a)(ii)",
+    questionText: "Name two types of flame produced when gas welding.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oxidising flame", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Neutral flame", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Carburising flame", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q4-a-iii", topicId: "eng-2-10", conceptId: "safety-precautions-should-be-followed-when",
+    section: "A", questionRef: "2023 OL Q4(a)(iii)",
+    questionText: "State two safety precautions that should be followed when gas welding.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The gas hoses are checked for damage before starting the welding process.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Correct PPE is worn while welding.", marks: null },
     ],
   } as SecCard,
   {
@@ -1218,10 +1595,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Resistance / Spot welding.", marks: 5 },
     ],
     questionFigure: {
-          "candId": "engineering-2023-OL-paper-q4civ-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4civ-art.png",
+          "candId": "engineering-2023-OL-paper-q4ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4ci-art.png",
           "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
-          "alt": "The table or diagram printed with 2023 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 OL Q4(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -1239,10 +1616,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The removal of grease and corrosion from joints before soldering ensures that the solder will adhere / join to the surface of the metals when the correct heat is applied. This will aid in a successful soldered joint.", marks: 5 },
     ],
     questionFigure: {
-          "candId": "engineering-2023-OL-paper-q4civ-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4civ-art.png",
+          "candId": "engineering-2023-OL-paper-q4ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4ci-art.png",
           "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
-          "alt": "The table or diagram printed with 2023 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 OL Q4(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -1287,6 +1664,27 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q5-a-i", topicId: "eng-1-9", conceptId: "plastic-manufacturing-processes-shown-b-c",
+    section: "A", questionRef: "2023 OL Q5(a)(i)",
+    questionText: "Name the three plastic manufacturing processes shown at A, B and C.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Blow moulding B – Vacuum forming C – Injection moulding", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-OL-paper-q5ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q5ai-art.png",
+          "srcHash": "9f3a2880bffe96d94b93b3b0fc047967",
+          "alt": "The table or diagram printed with 2023 OL Q5(a)(i), as the State Examinations Commission set it. It reads: A, B, C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q5-a-ii", topicId: "eng-2-13", conceptId: "aid-labelled-diagram-any-manufacturing-processes",
     section: "A", questionRef: "2023 OL Q5(a)(ii)",
     questionText: "Describe with the aid of a labelled diagram any one of the manufacturing processes named by you at 5(a)(i) above.",
@@ -1297,8 +1695,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "engineering-2023-OL-paper-q5ai-art",
           "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q5ai-art.png",
-          "srcHash": "c78868242587bbc4cf0f5d9ab47c610a",
-          "alt": "The table or diagram printed with 2023 OL Question 5(a)(i), as the State Examinations Commission set it.",
+          "srcHash": "9f3a2880bffe96d94b93b3b0fc047967",
+          "alt": "The table or diagram printed with 2023 OL Q5(a)(i), as the State Examinations Commission set it. It reads: A, B, C.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -1355,6 +1753,27 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q6-a", topicId: "eng-2-11", conceptId: "any-lathe-parts-shown-b-c",
+    section: "A", questionRef: "2023 OL Q6(a)",
+    questionText: "Name any three of the lathe parts shown at A, B, C and D.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Four jaw chuck B – Tailstock C – Emergency stop button D – Revolving dead centre", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-OL-paper-q6a-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q6a-art.png",
+          "srcHash": "368582219f288ccab00956b4b5a10c71",
+          "alt": "The table or diagram printed with 2023 OL Q6(a), as the State Examinations Commission set it. It reads: A, B, C, D.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q6-b", topicId: "eng-2-11", conceptId: "any-following-relation-machining-clearance-angle",
     section: "A", questionRef: "2023 OL Q6(b)",
     questionText: "Explain any three of the following in relation to machining: (i) Clearance angle, (ii) Spindle speed, (iii) Rake angle, (iv) Feed.",
@@ -1368,9 +1787,21 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q6-c-i", topicId: "eng-2-10", conceptId: "lathe-processes-used-manufacture-thumbscrew-does",
+    section: "A", questionRef: "2023 OL Q6(c)(i)",
+    questionText: "Name two lathe processes used in the manufacture of the thumbscrew. What does CNC stand for?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Knurling / Parting off.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q6-c-ii", topicId: "eng-2-13", conceptId: "processes-named-you-6-c-i",
     section: "A", questionRef: "2023 OL Q6(c)(ii)",
-    stem: "thumbscrew",
     questionText: "Describe one of the processes named by you, at 6(c)(i) above. Identify one other CNC process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1384,11 +1815,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q6-c-iii", topicId: "eng-2-11", conceptId: "items-personal-protective-equipment-ppe-should",
     section: "A", questionRef: "2023 OL Q6(c)(iii)",
-    stem: "thumbscrew",
     questionText: "Name two items of personal protective equipment (PPE) that should be worn when operating a lathe. OR List two advantages of using CNC machines in manufacturing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Safety glasses or shield.", marks: 8, accepts: ["CNC machines can manufacture complicated products.","CNC machines support the automation of mass production."] },
+    { id: "r-1", kind: "alt", verbatim: "Safety glasses or shield.", marks: 8, accepts: ["A lab coat / overall to ensure no lose clothing can get caught in the spinning chuck.","CNC machines can manufacture complicated products.","CNC machines support the automation of mass production."] },
     ],
   } as SecCard,
   {
@@ -1411,7 +1841,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q7-b-i", topicId: "eng-1-5", conceptId: "largest-diameter-hole-copper-fitting",
     section: "A", questionRef: "2023 OL Q7(b)(i)",
-    stem: "Shaft: Ø16.0 ± 0.05 mm Hole: Ø16.0 ± 0.03 mm copper fitting steel shaft",
     questionText: "Largest diameter of the hole in the copper fitting.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -1425,7 +1854,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q7-b-iv", topicId: "eng-1-5", conceptId: "tolerance-hole-copper-fitting",
     section: "A", questionRef: "2023 OL Q7(b)(iv)",
-    stem: "Shaft: Ø16.0 ± 0.05 mm Hole: Ø16.0 ± 0.03 mm copper fitting steel shaft",
     questionText: "Tolerance of the hole in the copper fitting.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -1441,9 +1869,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Q1(a)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Identify mechanism A and give one application for it.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mechanism A is a ratchet and pawl. • Application, used in a socket wrench / ratchet. •", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Mechanism A is a ratchet and pawl.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Application, used in a socket wrench / ratchet.", marks: null },
     ],
   } as SecCard,
   {
@@ -1453,11 +1882,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q1-b", topicId: "eng-1-2", conceptId: "term-electrical-conductor",
     section: "A", questionRef: "2024 OL Q1(b)",
-    stem: "mechanism A",
     questionText: "Explain the term electrical conductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "An electrical conductor is a material that will allow electricity to flow • through it.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "An electrical conductor is a material that will allow electricity to flow through it.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1471,7 +1899,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one benefit of making prototypes as part of the design process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Making prototypes or models helps to ensure the final design • operates as intended.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Making prototypes or models helps to ensure the final design operates as intended.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1485,7 +1913,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason for using cutting fluids when machining.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cutting fluids help to control the temperature during the machining • process by absorbing heat and preventing damage to the cutting tool and workpiece.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Cutting fluids help to control the temperature during the machining process by absorbing heat and preventing damage to the cutting tool and workpiece.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1499,8 +1927,8 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions that should be followed when using a metal shears.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "State two safety precautions that should be followed when using a metal shears:", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Make sure your hands are a safe distance from the cutting blades. • Always check, nobody is behind you when you pull down the arm as • the arm could hit them.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Make sure your hands are a safe distance from the cutting blades.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Always check, nobody is behind you when you pull down the arm as the arm could hit them.", marks: null },
     ],
   } as SecCard,
   {
@@ -1510,11 +1938,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q1-f", topicId: "eng-1-2", conceptId: "term-alloy-alloy",
     section: "A", questionRef: "2024 OL Q1(f)",
-    stem: "metal shears",
     questionText: "Explain the term alloy and name one alloy.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A metal alloy is a metal made of two or more metals mixed together. • An example of a metal alloy is bronze, a mixture of copper and tin. •", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A metal alloy is a metal made of two or more metals mixed together.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "An example of a metal alloy is bronze, a mixture of copper and tin.", marks: null },
     ],
   } as SecCard,
   {
@@ -1526,9 +1954,24 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Q1(g)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State two properties of aluminium.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lightweight • Malleable •", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Lightweight", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Malleable", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q1-i", topicId: "eng-1-4", conceptId: "term-ferrous-metal-example-ferrous-metal",
+    section: "A", questionRef: "2024 OL Q1(i)",
+    questionText: "Explain the term ferrous metal and give one example of a ferrous metal.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A ferrous metal is a metal that contains iron.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "An example of a ferrous metal is steel.", marks: null },
     ],
   } as SecCard,
   {
@@ -1570,13 +2013,30 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2024-ol-q1-l", topicId: "eng-3-8", conceptId: "define-term-brittleness-material-brittle-swarf",
+    id: "eng-2024-ol-q1-l", topicId: "eng-3-8", conceptId: "define-term-brittleness-material-brittle",
     section: "A", questionRef: "2024 OL Q1(l)",
-    stem: "(m) Explain any one of the following:",
+    stem: "Give brief answers to any eight of the following:",
     questionText: "Define the term brittleness and name one material that is brittle.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brittleness is a material’s tendency to easily break, crack or snap. • Glass is a brittle material. •", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brittleness is a material’s tendency to easily break, crack or snap.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Glass is a brittle material.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q1-m", topicId: "eng-2-11", conceptId: "any-following-swarf-taper-tap-deburring",
+    section: "A", questionRef: "2024 OL Q1(m)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Explain any one of the following: (i) Swarf, (ii) Taper tap, (iii) Deburring.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Swarf is the waste material produced when the chip is cut from the workpiece.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "A taper tap is tapered over the first 8 to 10 threads, allowing it to enter the hole and gradually cut to full thread depth. Used as a starter tap.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Deburring is the removal of excess material from the edges or surfaces of a raw unfinished product. Special deburring tools can be used to assist in achieving this.", marks: null },
     ],
   } as SecCard,
   {
@@ -1678,7 +2138,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to the heat treatment of steel, explain any two of the following: (i) Normalising, (ii) Quenching, (iii) Carbon content.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Normalising steel will reduce its hardness and improve its ductility.", marks: 14, accepts: ["Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).","Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.","If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.","Low carbon steel contains less than 0.03% of carbon. • Medium carbon steel contains between 0.03% and 0.06% • carbon.","High carbon steel contains more than 0.06% carbon. •"] },
+    { id: "r-1", kind: "alt", verbatim: "Normalising steel will reduce its hardness and improve its ductility.", marks: 14, accepts: ["Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).","Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.","If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.","Low carbon steel contains less than 0.03% of carbon.","Medium carbon steel contains between 0.03% and 0.06% carbon.","High carbon steel contains more than 0.06% carbon."] },
     ],
   } as SecCard,
   {
@@ -1691,7 +2151,33 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed during the heat treatment of metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear heat resistant gloves when preforming heat treatment of • metals.", marks: 10, accepts: ["Wear a face shield to protect from hot splashes. •"] },
+    { id: "r-1", kind: "alt", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 10, accepts: ["Wear a face shield to protect from hot splashes."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q4-a-i", topicId: "eng-2-10", conceptId: "function-valve-function-valve-b",
+    section: "A", questionRef: "2024 OL Q4(a)(i)",
+    questionText: "Explain the function of valve A and the function of valve B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Valve A (blue) is used to turn on and off the flow of oxygen.", marks: 6, accepts: ["Valve B (red) is used to turn on and off the flow of acetylene."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q4-a-ii", topicId: "eng-2-10", conceptId: "flame-types-can-be-produced-oxy",
+    section: "A", questionRef: "2024 OL Q4(a)(ii)",
+    questionText: "Name two flame types that can be produced in oxy-acetylene welding.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Oxidising flame", marks: 6, accepts: ["Neutral flame","Carburising flame"] },
     ],
   } as SecCard,
   {
@@ -1701,7 +2187,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q4-b", topicId: "eng-2-10", conceptId: "function-any-following-manual-metal-arc",
     section: "A", questionRef: "2024 OL Q4(b)",
-    stem: "valve A valve B oxy-acetylene gas welding torch",
     questionText: "State the function of any three of the following in manual metal arc welding: (i) Earth clamp, (ii) Welding mask, (iii) Leather gloves, (iv) Welding magnet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
@@ -1755,6 +2240,28 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q4-c-iii", topicId: "eng-2-10", conceptId: "reason-why-flux-required-when-soldering",
+    section: "A", questionRef: "2024 OL Q4(c)(iii)",
+    questionText: "State one reason why flux is required when soldering.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Flux helps to remove oxide layer which forms on the surface of metals being soldered. The flux increases the wetting ability of the solder, causing it to flow more uniformly over the surfaces being soldered, thus a better more successful joint is achieved.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "nylon insert", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-OL-paper-q4ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q4ci-art.png",
+          "srcHash": "0dd4f1d8ed0949d80739662640f07f18",
+          "alt": "The table or diagram printed with 2024 OL Q4(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q4-c-iv", topicId: "eng-2-10", conceptId: "advantage-using-locknut-when-assembling-project",
     section: "A", questionRef: "2024 OL Q4(c)(iv)",
     questionText: "Give one advantage of using a locknut when assembling project work.",
@@ -1776,13 +2283,25 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q4-d", topicId: "eng-1-5", conceptId: "safety-precautions-be-observed-when-soldering",
+    section: "A", questionRef: "2024 OL Q4(d)",
+    questionText: "State two safety precautions to be observed when soldering copper pipes and fittings.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Wear a suitable mask to protect from the fumes produced by the flux.", marks: 8, accepts: ["Allow all pipes and fittings to cool down before handling."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q5-a-ii", topicId: "eng-2-13", conceptId: "aid-labelled-diagram-any-manufacturing-processes",
     section: "A", questionRef: "2024 OL Q5(a)(ii)",
-    stem: "Chair Water bottle Toy car",
     questionText: "Describe with the aid of a labelled diagram any one of the manufacturing processes, named by you, at Q5 (a)(i) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 11,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection moulding is used for the rapid moulding of components.", marks: 11, accepts: ["Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.","Final shape Vacuum Mould A vacuum former is a plastic thermoforming machine that is used to produce parts which are precisely formed on one side. The former contains a heating element, a height adjustable table, which is porous, and an air pump. The heating element is used to heat up and soften a sheet of plastic which has been clamped into a frame. When the plastic sheet begins to sag, a mould, placed on the porous table, is lifted into the plastic sheet. The air pump is then turned on creating a vacuum below the mould. This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed."] },
+    { id: "r-1", kind: "alt", verbatim: "Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection moulding is used for the rapid moulding of components.", marks: 11, accepts: ["Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.","Final shape Mould Vacuum A vacuum former is a plastic thermoforming machine that is used to produce parts which are precisely formed on one side. The former contains a heating element, a height adjustable table, which is porous, and an air pump. The heating element is used to heat up and soften a sheet of plastic which has been clamped into a frame. When the plastic sheet begins to sag, a mould, placed on the porous table, is lifted into the plastic sheet. The air pump is then turned on creating a vacuum below the mould. This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed."] },
     ],
   } as SecCard,
   {
@@ -1808,7 +2327,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using a strip heater.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Safety precautions when using a strip heater:", marks: 10, accepts: ["Do not leave a piece of plastic unattended on the strip heater. • Remember to turn the strip heater off when finished using it. •"] },
+    { id: "r-1", kind: "alt", verbatim: "Do not leave a piece of plastic unattended on the strip heater.", marks: 10, accepts: ["Remember to turn the strip heater off when finished using it."] },
     ],
   } as SecCard,
   {
@@ -1823,6 +2342,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Air is forced through a tank containing powder causing the powder to act like a fluid. Pre-heated items for coating are dipped into the tank. The hot item melts the powder which sticks to its surface. It can then be heated again to provide a fully fused plastic surface.", marks: 10, accepts: ["Thermosetting plastic is a plastic once set, remains hard even when heated again.","3D printing is an additive manufacturing process that creates physical objects from a digital design. The process works by extruding thin layers of melted plastic on top of each other. The layers are allowed to fuse and solidify, creating a 3D object."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q6-a", topicId: "eng-2-11", conceptId: "engineering-component-shown-be-manufactured-centre",
+    section: "A", questionRef: "2024 OL Q6(a)",
+    questionText: "The engineering component shown is to be manufactured on a centre lathe. Identify three lathe processes used to manufacture the engineering component.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Parallel turning / Facing / Knurling / Drilling / Undercutting / Parting off / Taper turning.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-OL-paper-q6a-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q6a-art.png",
+          "srcHash": "1085c2678f43c79de24dbd4e93746d99",
+          "alt": "The table or diagram printed with 2024 OL Q6(a), as the State Examinations Commission set it. A rendered metal component, knurled at one end, with two turned grooves and a tapered nose drilled on its axis, captioned \"engineering component\".",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1847,7 +2387,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Mass production of complex parts. • High level of precision accuracy. •", marks: 6 },
+    { id: "r-1", kind: "alt", verbatim: "Mass production of complex parts.", marks: 6, accepts: ["High level of precision accuracy."] },
     ],
   } as SecCard,
   {
@@ -1860,7 +2400,20 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear safety goggles. • Do not remove swarf using hands. •", marks: 8, accepts: ["Do not leave a CNC laser machine operating unattended. •"] },
+    { id: "r-1", kind: "alt", verbatim: "Wear safety goggles.", marks: 8, accepts: ["Do not remove swarf using hands.","Do not leave a CNC laser machine operating unattended."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q7-a-i", topicId: "eng-3-12", conceptId: "any-types-fit-hole-shaft-assembly",
+    section: "A", questionRef: "2024 OL Q7(a)(i)",
+    questionText: "Name any two types of fit in a hole and shaft assembly.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Clearance / Interference / Transition fit", marks: null },
     ],
   } as SecCard,
   {
@@ -1870,7 +2423,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q7-a-ii", topicId: "eng-3-12", conceptId: "any-fits-named-q7-i-above",
     section: "A", questionRef: "2024 OL Q7(a)(ii)",
-    stem: "[[",
     questionText: "Describe any one of the fits named at Q7 (a)(i) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1882,13 +2434,57 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q7-b", topicId: "eng-3-12", conceptId: "waste-pipe-plug-machined-dimensions-shown",
+    section: "A", questionRef: "2024 OL Q7(b)",
+    questionText: "A waste pipe and plug are machined to the dimensions shown below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nominal diameter of the hole; 24.00 mm", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Smallest diameter of the shaft; 24.97 mm", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Largest diameter of the hole; 24.05 mm", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Type of fit; Interference fit", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-OL-paper-q7bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q7bi-art.png",
+          "srcHash": "ae07d7225d84130951ebfd02a2088864",
+          "alt": "The table or diagram printed with 2024 OL Q7(b), as the State Examinations Commission set it. Two rendered components side by side: a green tube captioned \"hole: Ø24.00 ± 0.05 mm\" and a blue plug captioned \"shaft: Ø25.00 ± 0.03 mm\", each label on a leader line to the surface it dimensions.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q7-b-iv", topicId: "eng-3-12", conceptId: "type-fit-will-result-assembly-smallest",
+    section: "A", questionRef: "2024 OL Q7(b)(iv)",
+    questionText: "The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Type of fit; Interference fit", marks: 5 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-OL-paper-q7bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q7bi-art.png",
+          "srcHash": "ae07d7225d84130951ebfd02a2088864",
+          "alt": "The table or diagram printed with 2024 OL Q7(b), as the State Examinations Commission set it. Two rendered components side by side: a green tube captioned \"hole: Ø24.00 ± 0.05 mm\" and a blue plug captioned \"shaft: Ø25.00 ± 0.03 mm\", each label on a leader line to the surface it dimensions.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q7-c-iii", topicId: "eng-2-16", conceptId: "advantage-using-crocodile-clips-when-assembling",
     section: "A", questionRef: "2024 OL Q7(c)(iii)",
-    stem: "crocodile clips test circuit",
     questionText: "State one advantage of using crocodile clips when assembling test circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.", marks: 6 },
+    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.", marks: 6, accepts: ["Advantage of using crocodile clips Using crocodile clips helps to design the layout of circuits as components can be interchanged easily without the need for soldering."] },
     ],
   } as SecCard,
   {
@@ -1902,7 +2498,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using a bandsaw.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Wear personal protective equipment (PPE) such as safety goggles to  protect your eyes from flying debris.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Wear personal protective equipment (PPE) such as safety goggles to protect your eyes from flying debris.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Always maintain a safe distance between your hands and the blade.", marks: null },
     ],
   } as SecCard,
@@ -1917,9 +2513,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the term permanent joint and give one example of a permanent joint in engineering.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Explain the term permanent joint and give one example of a permanent joint in engineering.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "An example of a permanent joint in engineering is a welded joint.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "An example of a permanent joint in engineering is a welded joint.", marks: null },
     ],
   } as SecCard,
   {
@@ -1933,7 +2528,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one reason for testing electronic circuits before assembly.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To ensure they operate as required and to identify any errors  in design or assembly.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "To ensure they operate as required and to identify any errors in design or assembly.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1945,10 +2540,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q1(d)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Give one reason why it is important to work in a ventilated area when using adhesives.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Give one reason why it is important to work in a ventilated area when using adhesives.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Adhesives produce dangerous fumes, which can be harmful if inhaled,  ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Adhesives produce dangerous fumes, which can be harmful if inhaled, ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1962,7 +2556,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two advantages of using a 3D printer for manufacture in engineering.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Less material waste is produced as 3D printing is an additive  manufacturing process.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Less material waste is produced as 3D printing is an additive manufacturing process.", marks: null },
     { id: "r-2", kind: "point", verbatim: "More complex products can be designed and produced.", marks: null },
     ],
   } as SecCard,
@@ -1992,7 +2586,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason for producing a prototype when designing new products.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To give engineers and designers the ability to explore new design  alternatives and to test if the product functions as required.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "To give engineers and designers the ability to explore new design alternatives and to test if the product functions as required.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -2006,10 +2600,22 @@ export const CARDS: SecCard[] = [
     questionText: "Define malleability in relation to the properties of materials and name one material which is malleable.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Define malleability in relation to the properties of materials and name one material which is malleable.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Malleability is the ability of a material to be hammered / flattened out in  all directions without breaking.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Lead is a malleable metal.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Deburring removes sharp edges and  burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Lead is a malleable metal.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q1-i", topicId: "eng-2-11", conceptId: "reason-why-metal-edges-deburred",
+    section: "A", questionRef: "2025 OL Q1(i)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Give one reason why metal edges are deburred.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Deburring removes sharp edges and burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -2020,7 +2626,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q1-j", topicId: "eng-2-11", conceptId: "any-following-bandsaw-3d-printer-deburring",
     section: "A", questionRef: "2025 OL Q1(j)",
     stem: "Give brief answers to any eight of the following:",
-    questionText: "Explain any one of the following: bandsaw 3D printer deburring (i) Artificial intelligence (AI), (ii) Renewable energy, (iii) Virtual reality (VR).",
+    questionText: "Explain any one of the following: (i) Artificial intelligence (AI), (ii) Renewable energy, (iii) Virtual reality (VR).",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. AI systems can analyse data, recognise patterns, make decisions, and even improve their performance over time without human intervention.", marks: null },
@@ -2051,12 +2657,17 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2025-ol-q2-b-i", topicId: "eng-1-4", conceptId: "materials-used-charge",
-    section: "A", questionRef: "2025 OL Q2(b)(i)",
-    questionText: "List the materials used in the charge;",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    id: "eng-2025-ol-q1-l", topicId: "eng-2-11", conceptId: "any-following-internal-thread-blind-hole",
+    section: "A", questionRef: "2025 OL Q1(l)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Describe any one of the following: (i) Internal thread, (ii) Blind hole, (iii) Countersunk hole.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Iron ore Coke Limestone", marks: 9, accepts: ["Materials used: ‐ Scrap iron / steel Carbon Limestone","Materials used: ‐ Pig iron / scrap Carbon Limestone"] },
+    { id: "r-1", kind: "point", verbatim: "An internal thread refers to the threads or grooves that are cut into the inside surface of a hole, allowing it to accept a corresponding external thread from a screw or bolt. Internal threads are commonly found in components such as nuts and holes designed to receive screws. The purpose of internal threading is to create a secure connection by allowing the external threaded component to screw into it, providing mechanical fastening and stability in various applications.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "External thread Internal thread", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A blind hole refers to a hole that is reamed, drilled, or milled to a specified depth without breaking through to the other side of the workpiece.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "A countersunk hole is a conical‐shaped hole that is drilled to allow the head of a countersunk machine screw to sit flush with or below the surface of the material. The countersink is wider at the top, allowing the screw head to fit into it, providing a smooth surface finish and reducing the risk of snagging or catching.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Countersunk machine screw Countersunk hole", marks: null },
     ],
   } as SecCard,
   {
@@ -2124,7 +2735,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two items of personal protective equipment (PPE) that should be worn when working with hot metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "PPE 1 – Wear heat resistant gloves to protect the hands.", marks: 10, accepts: ["PPE 2 – Wear a face shield to protect the face from high  temperatures."] },
+    { id: "r-1", kind: "alt", verbatim: "PPE 1 – Wear heat resistant gloves to protect the hands.", marks: 10, accepts: ["PPE 2 – Wear a face shield to protect the face from high temperatures."] },
     ],
   } as SecCard,
   {
@@ -2215,7 +2826,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name tool A shown opposite and give one use for this tool.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Allen key  Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Name: Allen key Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.", marks: 8 },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q4civ-art",
@@ -2301,11 +2912,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q6-c-i", topicId: "eng-2-11", conceptId: "any-centre-lathe-processes-used-manufacture",
     section: "A", questionRef: "2025 OL Q6(c)(i)",
-    stem: "stunt bike pegs",
     questionText: "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Knurling  Drilling", marks: 6, accepts: ["CAD software enables developers to work more quickly, cut production costs and decrease errors."] },
+    { id: "r-1", kind: "alt", verbatim: "Knurling Drilling", marks: 6, accepts: ["CAD software enables developers to work more quickly, cut production costs and decrease errors."] },
     ],
   } as SecCard,
   {
@@ -2315,7 +2925,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q6-c-ii", topicId: "eng-2-13", conceptId: "any-processes-named-you-q6-c",
     section: "A", questionRef: "2025 OL Q6(c)(ii)",
-    stem: "stunt bike pegs",
     questionText: "Describe any one of the processes named by you, at Q6(c)(i) above. OR Name one CNC machine commonly used in the engineering workshop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2329,7 +2938,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q6-c-iii", topicId: "eng-2-11", conceptId: "specify-any-items-personal-protective-equipment",
     section: "A", questionRef: "2025 OL Q6(c)(iii)",
-    stem: "stunt bike pegs",
     questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -2343,11 +2951,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q7-c-i", topicId: "eng-2-16", conceptId: "advantage-using-printed-circuit-board-pcb",
     section: "A", questionRef: "2025 OL Q7(c)(i)",
-    stem: "microchip",
     questionText: "State one advantage of using a Printed Circuit Board (PCB) for the assembly of circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 6, accepts: ["Measurements can be read directly from a digital display.","PCB Ensures the correct assembly of components as all component  positions are identified on the PCB.","Quicker to assemble and ensures better circuit operation when  complete."] },
+    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 6, accepts: ["Measurements can be read directly from a digital display.","PCB Ensures the correct assembly of components as all component positions are identified on the PCB.","Quicker to assemble and ensures better circuit operation when complete."] },
     ],
   } as SecCard,
   {
@@ -2357,11 +2964,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q7-c-ii", topicId: "eng-2-16", conceptId: "examples-where-printed-circuit-board-pcb",
     section: "A", questionRef: "2025 OL Q7(c)(ii)",
-    stem: "microchip",
     questionText: "Give two examples where a Printed Circuit Board (PCB) may be used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used to check the diameter of twist drills.", marks: 6, accepts: ["Use Smart phones  Computers"] },
+    { id: "r-1", kind: "alt", verbatim: "Used to check the diameter of twist drills.", marks: 6, accepts: ["Use Smart phones Computers"] },
     ],
   } as SecCard,
   {
@@ -2371,7 +2977,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q7-c-iii", topicId: "eng-2-16", conceptId: "term-microchip",
     section: "A", questionRef: "2025 OL Q7(c)(iii)",
-    stem: "microchip",
     questionText: "Explain the term microchip.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [

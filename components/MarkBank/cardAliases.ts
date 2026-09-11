@@ -40,5 +40,16 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "he-2024-ol-sc-q4aii-condensed": "he-2024-ol-sc-q4aii-pasteurisation",
   "he-2024-ol-sc-q4aii-evaporated": "he-2024-ol-sc-q4aii-pasteurisation",
   "he-2024-ol-sc-q4aii-sterilisation": "he-2024-ol-sc-q4aii-pasteurisation",
-  "he-2024-ol-sc-q4aii-uht": "he-2024-ol-sc-q4aii-pasteurisation"
+  "he-2024-ol-sc-q4aii-uht": "he-2024-ol-sc-q4aii-pasteurisation",
+  "eng-2021-hl-q7-b": "eng-2021-hl-q7-b-ii",
+  "eng-2021-hl-q8-b": "eng-2021-hl-q8-b-i",
+  "eng-2022-hl-q7-b": "eng-2022-hl-q7-b-i",
+  "eng-2022-hl-q9-b": "eng-2022-hl-q9-b-i",
+  "eng-2024-hl-q6-b": "eng-2024-hl-q6-b-i",
+  "eng-2024-hl-q7-b": "eng-2024-hl-q7-b-i",
+  "eng-2024-hl-q8-b": "eng-2024-hl-q8-b-i",
+  "eng-2024-hl-q9-b": "eng-2024-hl-q9-b-i",
+  "eng-2025-hl-q6-b": "eng-2025-hl-q6-b-i",
+  "eng-2025-hl-q8-b": "eng-2025-hl-q8-b-i",
+  "eng-2025-hl-q9-b": "eng-2025-hl-q9-b-i",
 };

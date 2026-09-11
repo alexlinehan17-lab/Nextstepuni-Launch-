@@ -43,6 +43,7 @@ const SUBJECT_TITLE = {
   'home-economics': 'Home Economics', economics: 'Economics',
   'construction-studies': 'Construction Studies',
   technology: 'Technology',
+  engineering: 'Engineering',
 };
 
 const argv = process.argv.slice(2);
