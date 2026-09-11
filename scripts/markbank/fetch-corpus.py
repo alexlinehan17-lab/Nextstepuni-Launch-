@@ -191,7 +191,6 @@ SUBJECTS = {
     # Listening Comprehension booklet, only component '000'. Language letter
     # 'E'. The corpus runs 2010-2026 with 2020 absent: 16 papers, 16 schemes.
     'modern-greek': 'modern-greek',
-<<<<<<< HEAD
     # Added 10 September 2026. The nine remaining NON-CURRICULAR EU languages.
     # The corpus listing answers their shape before a PDF is opened and it is
     # the SAME shape for all nine: every file id carries the level letter 'A'
@@ -221,7 +220,6 @@ SUBJECTS = {
     'croatian': 'croatian',
     'danish': 'danish',
     'slovenian': 'slovenian',
-=======
     # Added 10 September 2026. Mandarin Chinese is a CURRICULAR modern language
     # (SEC subject 566) first examined in 2022, so its corpus is the window
     # 2022-2026 and nothing earlier exists to fetch. Two structural facts the
@@ -256,7 +254,6 @@ SUBJECTS = {
     # a fact about what the SEC published, not a fetch failure. Its risk is
     # DIRECTION: Hebrew is written right-to-left, like Arabic.
     'hebrew-studies': 'hebrew-studies',
->>>>>>> markbank/man
 }
 
 # A subject the SEC sets as TWO papers on the same afternoon, one of which a

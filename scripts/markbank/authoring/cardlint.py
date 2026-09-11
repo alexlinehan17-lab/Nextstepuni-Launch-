@@ -32,10 +32,10 @@ SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
             'engineering', 'english', 'estonian', 'finnish', 'french',
             'geography', 'german', 'history', 'home-economics', 'hungarian',
             'irish', 'italian', 'japanese', 'latin', 'latvian', 'lcvp',
-            'lithuanian', 'maltese', 'mandarin-chinese', 'maths',
-            'modern-greek', 'physics', 'polish', 'portuguese',
-            'religious-education', 'romanian', 'russian', 'slovakian',
-            'slovenian', 'spanish', 'swedish', 'technology', 'ukrainian']
+            'lithuanian', 'mandarin-chinese', 'maths', 'modern-greek',
+            'physics', 'polish', 'portuguese', 'religious-education',
+            'romanian', 'russian', 'slovakian', 'slovenian', 'spanish',
+            'swedish', 'technology', 'ukrainian']
 
 # Verb-anchored: "the scheme" is also Irish farm-support vocabulary (an
 # Agricultural Science paper about joining a suckler scheme is not a leak),

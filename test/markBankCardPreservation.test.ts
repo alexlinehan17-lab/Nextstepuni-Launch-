@@ -85,6 +85,18 @@ import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/appl
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
+import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
+import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
+import { CARDS as DANISH_HIGHER } from '../components/MarkBank/cards/danish/higher';
+import { CARDS as ESTONIAN_HIGHER } from '../components/MarkBank/cards/estonian/higher';
+import { CARDS as FINNISH_HIGHER } from '../components/MarkBank/cards/finnish/higher';
+import { CARDS as HUNGARIAN_HIGHER } from '../components/MarkBank/cards/hungarian/higher';
+import { CARDS as MANDARIN_CHINESE_HIGHER } from '../components/MarkBank/cards/mandarin-chinese/higher';
+import { CARDS as MANDARIN_CHINESE_ORDINARY } from '../components/MarkBank/cards/mandarin-chinese/ordinary';
+import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakian/higher';
+import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
+import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
+import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
@@ -637,6 +649,18 @@ const decks = [
    * layer. It is the first deck whose questions AND answers are both in the
    * language examined, so every row says so on its face. */
   ['modern-greek:higher', MGREEK_HIGHER, 79, 'd41a4a9affec25b7d9da9fac3eb514825d2d1d7da9c087c9c51bc786ee090ac3'],
+['bulgarian:higher', BULGARIAN_HIGHER, 141, '41075c3ba6d95e9133f8d491bf0b1c6f67dcc3924b07233394f631ada612df8b'],
+  ['croatian:higher', CROATIAN_HIGHER, 100, 'bdc6cbd4e562d05ebaf2ba1c42912b48982ab9a115c8bcad428f962966f78e8a'],
+  ['danish:higher', DANISH_HIGHER, 79, 'bc3f4cd2777fa14b0842f6ea0c07929c989d11c8091dba4f09aea34cc38a7e67'],
+  ['estonian:higher', ESTONIAN_HIGHER, 107, '541f9881661d7f5781026ae6c11d4682b7379c54c6d6927c37322ef49605b583'],
+  ['finnish:higher', FINNISH_HIGHER, 90, '584277d25fa47d8b6ca5872bb6f5fc5180efd09f7d6dbf4e78550429c360b8e9'],
+  ['hungarian:higher', HUNGARIAN_HIGHER, 168, '2086ae49469f6825d08c15fa521a2c896efb84000ce304d4a6c997bd729e9a9f'],
+  ['mandarin-chinese:higher', MANDARIN_CHINESE_HIGHER, 114, '24bfa04b1dfe98563d61aca009f1e5ff1a9f31cbe710795faba0a8e078d05955'],
+  ['mandarin-chinese:ordinary', MANDARIN_CHINESE_ORDINARY, 87, 'e2e4528196856999da743e0861f827a457555b70b5c77c7ed835d1a702fccdd9'],
+  ['slovakian:higher', SLOVAKIAN_HIGHER, 140, 'e8baef98d00f5b37334847c1720b92b70fc65117eee42ead02625a180f996ebd'],
+  ['slovenian:higher', SLOVENIAN_HIGHER, 23, '5a91c38d5a570c77dcec2866a705c302bc67a7b0d33bcdeea95cd249beb149f0'],
+  ['swedish:higher', SWEDISH_HIGHER, 121, 'ff499eff76dc0efe1a00cf9f20f85a3f2f508c9afd5de4ec01f2f1f8da966b56'],
+  ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -656,7 +680,7 @@ describe('Mark Bank card preservation', () => {
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
     // Portuguese 173, Romanian 50 and Dutch 42.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_393);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_345);
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.
@@ -680,8 +704,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('technology:')
         && !name.startsWith('history:')
         && !name.startsWith('french:')
-        && !name.startsWith('german:')
         && !name.startsWith('applied-maths:')
+        && !name.startsWith('german:')
         && !name.startsWith('spanish:')
         && !name.startsWith('italian:')
         && !name.startsWith('russian:')
@@ -689,15 +713,26 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('classical-studies:')
         && !name.startsWith('latin:')
         && !name.startsWith('polish:')
+        && !name.startsWith('arabic:')
         && !name.startsWith('portuguese:')
         && !name.startsWith('romanian:')
         && !name.startsWith('dutch:')
         && !name.startsWith('lithuanian:')
         && !name.startsWith('latvian:')
         && !name.startsWith('czech:')
-        && !name.startsWith('arabic:')
         && !name.startsWith('ancient-greek:')
-        && !name.startsWith('modern-greek:'))
+        && !name.startsWith('modern-greek:')
+        && !name.startsWith('bulgarian:')
+        && !name.startsWith('croatian:')
+        && !name.startsWith('danish:')
+        && !name.startsWith('estonian:')
+        && !name.startsWith('finnish:')
+        && !name.startsWith('hungarian:')
+        && !name.startsWith('mandarin-chinese:')
+        && !name.startsWith('slovakian:')
+        && !name.startsWith('slovenian:')
+        && !name.startsWith('swedish:')
+        && !name.startsWith('ukrainian:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

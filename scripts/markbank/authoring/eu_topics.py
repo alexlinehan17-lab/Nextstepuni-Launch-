@@ -37,108 +37,65 @@ import re
 # The published topic ids, from curriculum.ts. Named here so a change to the
 # canonical file is a one-line change, and so nothing in this directory
 # invents an id the deck does not hold.
-TOPICS = {
-    'portuguese': {
-        'classic_vocab': 'portuguese-2-0',
-        'classic_reading': 'portuguese-2-0',
-        'classic_essay': 'portuguese-2-2',
-        'classic_essay2': 'portuguese-2-2',
-        'reading': 'portuguese-2-3',
-        'writing': 'portuguese-2-4',
-        'aural': 'portuguese-2-5',
-    },
-    # Romanian and Dutch are classic-only, and their published taxonomies name
-    # the classic paper's parts one for one already: a vocabulary question, a
-    # set of comprehension questions, and the written production. Only the
-    # third part — an essay on a quotation, set from 2023 — had to be added.
-    'romanian': {
-        'classic_vocab': 'romanian-0-0',
-        'classic_reading': 'romanian-0-1',
-        'classic_essay': 'romanian-1-0',
-        'classic_essay2': 'romanian-1-1',
-    },
-    'dutch': {
-        'classic_vocab': 'dutch-0-0',
-        'classic_reading': 'dutch-0-1',
-        'classic_essay': 'dutch-1-0',
-        'classic_essay2': 'dutch-1-1',
-    },
-    # The nine remaining non-curricular EU languages are classic-only and
-    # their published taxonomies name the classic paper's parts one for one:
-    # a vocabulary question, a set of comprehension questions, the commentary
-    # and — added with this wave, as Romanian's and Dutch's third part was —
-    # the essay of Part III.
-    'hungarian': {
-        'classic_vocab': 'hungarian-0-0',
-        'classic_reading': 'hungarian-0-1',
-        'classic_essay': 'hungarian-1-0',
-        'classic_essay2': 'hungarian-1-1',
-    },
-    'bulgarian': {
-        'classic_vocab': 'bulgarian-0-0',
-        'classic_reading': 'bulgarian-0-1',
-        'classic_essay': 'bulgarian-1-0',
-        'classic_essay2': 'bulgarian-1-1',
-    },
-    'slovakian': {
-        'classic_vocab': 'slovakian-0-0',
-        'classic_reading': 'slovakian-0-1',
-        'classic_essay': 'slovakian-1-0',
-        'classic_essay2': 'slovakian-1-1',
-    },
-    'swedish': {
-        'classic_vocab': 'swedish-0-0',
-        'classic_reading': 'swedish-0-1',
-        'classic_essay': 'swedish-1-0',
-        'classic_essay2': 'swedish-1-1',
-    },
-    'estonian': {
-        'classic_vocab': 'estonian-0-0',
-        'classic_reading': 'estonian-0-1',
-        'classic_essay': 'estonian-1-0',
-        'classic_essay2': 'estonian-1-1',
-    },
-    'finnish': {
-        'classic_vocab': 'finnish-0-0',
-        'classic_reading': 'finnish-0-1',
-        'classic_essay': 'finnish-1-0',
-        'classic_essay2': 'finnish-1-1',
-    },
-    'croatian': {
-        'classic_vocab': 'croatian-0-0',
-        'classic_reading': 'croatian-0-1',
-        'classic_essay': 'croatian-1-0',
-        'classic_essay2': 'croatian-1-1',
-    },
-    'danish': {
-        'classic_vocab': 'danish-0-0',
-        'classic_reading': 'danish-0-1',
-        'classic_essay': 'danish-1-0',
-        'classic_essay2': 'danish-1-1',
-    },
-    'slovenian': {
-        'classic_vocab': 'slovenian-0-0',
-        'classic_reading': 'slovenian-0-1',
-        'classic_essay': 'slovenian-1-0',
-        'classic_essay2': 'slovenian-1-1',
-    # Maltese and Ukrainian publish the same three subtopics Modern Greek
-    # does — a vocabulary question, the comprehension, and the written
-    # production — and their papers set exactly those three parts. There is no
-    # separate id for the third part, so the commentary and the essay share
-    # one: they are the same task type and the SEC prices them the same way.
-    'maltese': {
-        'classic_vocab': 'maltese-0-0',
-        'classic_reading': 'maltese-0-1',
-        'classic_essay': 'maltese-1-0',
-        'classic_essay2': 'maltese-1-0',
-    },
-    'ukrainian': {
-        'classic_vocab': 'ukrainian-0-0',
-        'classic_reading': 'ukrainian-0-1',
-        'classic_essay': 'ukrainian-1-0',
-        'classic_essay2': 'ukrainian-1-0',
-    },
-}
+TOPICS = {'portuguese': {'classic_vocab': 'portuguese-2-0',
+                'classic_reading': 'portuguese-2-0',
+                'classic_essay': 'portuguese-2-2',
+                'classic_essay2': 'portuguese-2-2',
+                'reading': 'portuguese-2-3',
+                'writing': 'portuguese-2-4',
+                'aural': 'portuguese-2-5'},
+ 'romanian': {'classic_vocab': 'romanian-0-0',
+              'classic_reading': 'romanian-0-1',
+              'classic_essay': 'romanian-1-0',
+              'classic_essay2': 'romanian-1-1'},
+ 'dutch': {'classic_vocab': 'dutch-0-0',
+           'classic_reading': 'dutch-0-1',
+           'classic_essay': 'dutch-1-0',
+           'classic_essay2': 'dutch-1-1'},
+ 'hungarian': {'classic_vocab': 'hungarian-0-0',
+               'classic_reading': 'hungarian-0-1',
+               'classic_essay': 'hungarian-1-0',
+               'classic_essay2': 'hungarian-1-1'},
+ 'bulgarian': {'classic_vocab': 'bulgarian-0-0',
+               'classic_reading': 'bulgarian-0-1',
+               'classic_essay': 'bulgarian-1-0',
+               'classic_essay2': 'bulgarian-1-1'},
+ 'slovakian': {'classic_vocab': 'slovakian-0-0',
+               'classic_reading': 'slovakian-0-1',
+               'classic_essay': 'slovakian-1-0',
+               'classic_essay2': 'slovakian-1-1'},
+ 'swedish': {'classic_vocab': 'swedish-0-0',
+             'classic_reading': 'swedish-0-1',
+             'classic_essay': 'swedish-1-0',
+             'classic_essay2': 'swedish-1-1'},
+ 'estonian': {'classic_vocab': 'estonian-0-0',
+              'classic_reading': 'estonian-0-1',
+              'classic_essay': 'estonian-1-0',
+              'classic_essay2': 'estonian-1-1'},
+ 'finnish': {'classic_vocab': 'finnish-0-0',
+             'classic_reading': 'finnish-0-1',
+             'classic_essay': 'finnish-1-0',
+             'classic_essay2': 'finnish-1-1'},
+ 'croatian': {'classic_vocab': 'croatian-0-0',
+              'classic_reading': 'croatian-0-1',
+              'classic_essay': 'croatian-1-0',
+              'classic_essay2': 'croatian-1-1'},
+ 'danish': {'classic_vocab': 'danish-0-0',
+            'classic_reading': 'danish-0-1',
+            'classic_essay': 'danish-1-0',
+            'classic_essay2': 'danish-1-1'},
+ 'slovenian': {'classic_vocab': 'slovenian-0-0',
+               'classic_reading': 'slovenian-0-1',
+               'classic_essay': 'slovenian-1-0',
+               'classic_essay2': 'slovenian-1-1'},
+ 'maltese': {'classic_vocab': 'maltese-0-0',
+             'classic_reading': 'maltese-0-1',
+             'classic_essay': 'maltese-1-0',
+             'classic_essay2': 'maltese-1-0'},
+ 'ukrainian': {'classic_vocab': 'ukrainian-0-0',
+               'classic_reading': 'ukrainian-0-1',
+               'classic_essay': 'ukrainian-1-0',
+               'classic_essay2': 'ukrainian-1-0'}}
 
 
 def topic_for(subject, era, section, letter=None):
@@ -155,20 +112,20 @@ def topic_for(subject, era, section, letter=None):
     return table['writing'] if section == 'B' else table['reading']
 
 
-LANGUAGE_NAME = {'portuguese': 'Portuguese', 'romanian': 'Romanian',
-                 'dutch': 'Dutch',
-                 'hungarian': 'Hungarian',
-                 'bulgarian': 'Bulgarian',
-                 'slovakian': 'Slovakian',
-                 'swedish': 'Swedish',
-                 'estonian': 'Estonian',
-                 'finnish': 'Finnish',
-                 'croatian': 'Croatian',
-                 'danish': 'Danish',
-                 'slovenian': 'Slovenian',
-                 }
-                 'dutch': 'Dutch', 'maltese': 'Maltese',
-                 'ukrainian': 'Ukrainian'}
+LANGUAGE_NAME = {'portuguese': 'Portuguese',
+ 'romanian': 'Romanian',
+ 'dutch': 'Dutch',
+ 'hungarian': 'Hungarian',
+ 'bulgarian': 'Bulgarian',
+ 'slovakian': 'Slovakian',
+ 'swedish': 'Swedish',
+ 'estonian': 'Estonian',
+ 'finnish': 'Finnish',
+ 'croatian': 'Croatian',
+ 'danish': 'Danish',
+ 'slovenian': 'Slovenian',
+ 'maltese': 'Maltese',
+ 'ukrainian': 'Ukrainian'}
 # A subject whose paper requires EVERY answer in the target language, in
 # its own printed rubric — "Toate răspunsurile trebuie scrise în limba
 # română", "Alle antwoorden moeten in het Nederlands gegeven worden". The
@@ -189,9 +146,6 @@ ONE_LANGUAGE = {
     'croatian': 'Svi odgovori moraju biti na hrvatskome jeziku.',
     'danish': 'Alle svar skal skrives på dansk.',
     'slovenian': 'Vsi odgovori morajo biti v slovenščini.',
-    'maltese': 'It-tweġibiet kollha għandhom jinkitbu bil-Malti.',
-    'ukrainian': 'Уважно прочитайте текст і дайте відповіді українською '
-                 'мовою на запитання з усіх трьох частин.',
 }
 ENGLISH_OR_IRISH = 'English or Irish'
 
@@ -211,8 +165,7 @@ TARGET_WORDS = {
     'croatian': set(),
     'danish': set(),
     'slovenian': set(),
-    'maltese': set(),
-    'ukrainian': set(),
+
     'portuguese': {
         'que', 'qual', 'quais', 'quem', 'onde', 'quando', 'porque', 'por',
         'razão', 'razões', 'como', 'descreva', 'indique', 'explique', 'dê',
