@@ -175,6 +175,21 @@ PAPER_TERMINAL = re.compile(r'[.?!]$')
 # section that starts underneath; and "This question continues on the next
 # page" is an instruction to the candidate about the paper.
 CONTINUES = re.compile(r'\s*This question continues on the next page\.?', re.I)
+# A run of bare capitals on the end of an ask: the arrows printed on the
+# picture beside it, swept into the block. 2022 Ordinary Q4(b) comes out as
+# "Describe the purpose of any three of the following in manual metal arc
+# welding: A B" -- A and B label the oxy-acetylene torch drawn above, for the
+# part before it. Taken off only where what remains ends on the COLON that
+# hands the ask to the children, which is the same self-check the furniture
+# strip below uses, and only two parts in the subject satisfy it.
+CALLOUT_TAIL = re.compile(r'(?:\s+[A-Z])+\s*$')
+# What makes a line an instruction rather than a list item. Used to tell a
+# roman that ASKS something from one that is only a term in a list.
+COMMAND = re.compile(
+    r'\b(?:answer|briefly|calculate|compare|complete|define|describe'
+    r'|determine|differentiate|discuss|distinguish|draw|explain|give'
+    r'|identify|indicate|label|list|name|outline|select|sketch|state'
+    r'|suggest)\b', re.I)
 TRAILING_FURNITURE = re.compile(
     r'(?:\s*(?:Figures?|Figs?\.?)\s*\d+[a-z]?)+\s*$'
     r'|\s*Section\s+[A-C]\b[^.]{0,60}?\d{1,3}\s*marks?\s*$', re.I)
@@ -301,8 +316,47 @@ class Author:
         # needs its children, and the widened key takes lettered parts as well
         # as romans. Both are Engineering's; every other subject keeps the
         # narrow rule it was authored against.
+        # A ROMAN that is only a list ITEM needs the instruction printed above
+        # it. 2022 HL Q5(c) reads "Select any two from (i), (ii) or (iii)
+        # below and explain:" and its (i) is "The impact of a dislocation in
+        # crystal structures." -- a noun phrase, with no verb anywhere. On a
+        # card of its own that is not a question, and the deck shipping today
+        # carries the joined form: this is the rule those cards were generated
+        # with on markbank/maths-review-2, restored with them. Only where the
+        # parent ENDS on the colon that hands its ask down, and only for a
+        # cleaning subject.
+        if clean and roman is not None and question:
+            _own = ' '.join(question.split())
+            if not COMMAND.match(_own):
+                try:
+                    _up = ' '.join((self.paper.text(q, letter, None)
+                                    or '').split())
+                except Exception:                            # noqa: BLE001
+                    _up = ''
+                if _up.endswith(':') and COMMAND.search(_up):
+                    question = f'{_up} {_own}'
+
+        # LENGTH is not the signal, and on this subject it is the wrong one.
+        # "Discuss the contribution that any one of the following has made to
+        # technology:" is 77 characters and asks nothing on its own -- the
+        # three names are printed on the line beneath it. The COLON is the
+        # signal, and it is not always the last character: 2025 HL Q9(b) reads
+        # "Answer any three of the following: inspection robot", the lead-in
+        # with the first item already run onto it. Fifty-three Engineering
+        # cards were generated with this rule on markbank/maths-review-2 and
+        # ship in the deck today; restoring it is what lets the author make
+        # them again. Read only for a cleaning subject, because every other
+        # deck was authored against the length test and widening it would
+        # rewrite the question text on cards already shipped.
         joined_kids = False
-        if roman is None and len(' '.join((question or '').split())) < 40:
+        _q = ' '.join((question or '').split())
+        if clean:
+            _trimmed = CALLOUT_TAIL.sub('', _q)
+            if _trimmed != _q and _trimmed.endswith(':'):
+                question = _q = _trimmed
+        hands_over = len(_q) < 40 or (
+            clean and (_q.endswith(':') or re.search(r'\bfollowing\s*:', _q)))
+        if roman is None and hands_over:
             if clean:
                 kids = [k for k in self.paper.parts
                         if k[0] == q
