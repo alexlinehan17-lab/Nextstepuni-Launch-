@@ -1,16 +1,18 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
-  ArrowLeft,
   ArrowRight,
   BarChart3,
   Check,
-  Copy,
   HelpCircle,
   RotateCcw,
   Share2,
   X,
 } from "lucide-react";
 import Nav from "../landing/sections/Nav";
+import CertleCompanion from "./CertleCompanion";
+import { CertleLogo, MarksBoard } from "./CertleIdentity";
+import ShareResult from "./ShareResult";
+import { resultShareData } from "./sharing";
 import {
   dublinDay,
   formatDay,
@@ -33,7 +35,6 @@ import {
   restoreGame,
   resultsFor,
   saveStored,
-  shareText,
   STATS_KEY,
   statsSummary,
   submitAnswer,
@@ -108,11 +109,9 @@ export default function CertlePage() {
   const [game, setGame] = useState<Game | null>(null),
     [answer, setAnswer] = useState("");
   const [stats, setStats] = useState<Stats>(() => loadStats());
-  const [dialog, setDialog] = useState<"help" | "stats" | null>(null),
+  const [dialog, setDialog] = useState<"help" | "stats" | "share" | null>(null),
     [notice, setNotice] = useState(""),
-    [shareNotice, setShareNotice] = useState(""),
     [localOnly, setLocalOnly] = useState(false);
-  const [copyFallback, setCopyFallback] = useState("");
   const field = useRef<HTMLTextAreaElement>(null);
   const entry = pool.length ? pool[(n - 1) % pool.length] : null;
   const ready = !!entry && game?.day === day && game.id === entry.id;
@@ -126,6 +125,17 @@ export default function CertlePage() {
   const remaining = MAX_ATTEMPTS - (ready ? game!.answers.length : 0);
   const finished = ready && game!.finished;
   const bestIndex = best ? results.indexOf(best) : -1;
+  const shareData = useMemo(
+    () => (finished && game && entry ? resultShareData(n, game, entry) : null),
+    [finished, game, entry, n],
+  );
+  const resultHeading = useRef<HTMLHeadingElement>(null);
+  const previousFinished = useRef(false);
+  useEffect(() => {
+    if (finished && !previousFinished.current)
+      resultHeading.current?.focus({ preventScroll: true });
+    previousFinished.current = finished;
+  }, [finished]);
 
   useEffect(() => {
     const tick = () => setNow(new Date());
@@ -177,8 +187,7 @@ export default function CertlePage() {
     const draft = readStored<unknown>(draftKey(day, entry.id));
     setAnswer(typeof draft === "string" ? draft.slice(0, 3000) : "");
     setNotice("");
-    setShareNotice("");
-    setCopyFallback("");
+    setDialog(null);
     if (restored.finished) {
       const saved = recordResult(loadStats(), restored, entry);
       setStats(saved);
@@ -239,198 +248,163 @@ export default function CertlePage() {
       commit({ ...current, finished: true });
     }
   };
-  const share = async (copy = false) => {
-    if (!entry || !game || !finished) return;
-    const text = shareText(n, game, entry, window.location.origin);
-    if (!copy && typeof navigator.share === "function") {
-      try {
-        await navigator.share({ text });
-        setShareNotice("Shared.");
-        return;
-      } catch (e) {
-        if ((e as Error).name === "AbortError") return;
-      }
-    }
-    try {
-      await navigator.clipboard.writeText(text);
-      setShareNotice("Result copied.");
-    } catch {
-      setCopyFallback(text);
-      setShareNotice("Select and copy your result below.");
-    }
-  };
-
   return (
     <div className="landing-page certle-page">
       <Nav page="certle" />
       <main className="certle-main">
-        <div className="certle-utility">
-          <a href="/landing">
-            <ArrowLeft size={15} />
-            Back to Nextstepuni
-          </a>
-          <div>
+        <header className="certle-heading">
+          <p className="certle-eyebrow">The daily Leaving Cert challenge</p>
+          <div className="certle-name">
+            <h1 aria-label="CERTLE">
+              <CertleLogo />
+            </h1>
+          </div>
+          <CertleCompanion />
+          <p className="certle-tagline">
+            One question. Three attempts. <strong>Every mark counts.</strong>
+          </p>
+        </header>
+        <div className="certle-toolbar">
+          <div className="certle-date">
+            <span>No. {String(n).padStart(3, "0")}</span>
+            <time dateTime={day}>{formatDay(day)}</time>
+          </div>
+          <div className="certle-tools">
             <button
               type="button"
-              className="certle-icon-button"
+              className="certle-tool-button"
               aria-label="How to play"
               onClick={() => setDialog("help")}
             >
-              <HelpCircle size={20} />
+              <HelpCircle size={18} />
+              <span>How to play</span>
             </button>
             <button
               type="button"
-              className="certle-icon-button"
+              className="certle-tool-button"
               aria-label="Your statistics"
               onClick={() => setDialog("stats")}
             >
-              <BarChart3 size={20} />
+              <BarChart3 size={18} />
+              <span>Your record</span>
             </button>
           </div>
         </div>
-        <header className="certle-heading">
-          <p className="certle-eyebrow">YOUR DAILY LEAVING CERT CHALLENGE</p>
-          <div className="certle-name">
-            <h1 aria-label="CERTLE">
-              {"CERTLE".split("").map((letter, i) => (
-                <span
-                  aria-hidden="true"
-                  className={`certle-letter certle-letter-${i}`}
-                  key={i}
-                >
-                  {letter}
-                </span>
-              ))}
-            </h1>
-            <img
-              src="/assets/landing/starguy-512.png"
-              alt="Nextstepuni’s star character"
-              width={72}
-              height={106}
-            />
-          </div>
-          <p>One question. Three attempts. Every mark counts.</p>
-          <div className="certle-date">
-            <span>NO. {String(n).padStart(3, "0")}</span>
-            <span aria-hidden="true">/</span>
-            <time dateTime={day}>{formatDay(day)}</time>
-          </div>
-        </header>
-        <div className="certle-layout">
-          <section className="certle-play" aria-label="Daily question">
-            {failed ? (
-              <div className="certle-load" role="alert">
-                <h2>Let’s try that again.</h2>
-                <p>
-                  Today’s question couldn’t load. Your saved result is still
-                  here.
-                </p>
-                <button
-                  className="certle-primary"
-                  type="button"
-                  onClick={() => setReload((r) => r + 1)}
-                >
-                  <RotateCcw size={17} />
-                  Retry
-                </button>
-              </div>
-            ) : !ready ? (
-              <div className="certle-load" role="status">
-                Finding today’s question…
-              </div>
-            ) : (
-              <>
+        <section
+          className={`certle-play${finished ? " is-finished" : ""}`}
+          aria-label="Daily question"
+        >
+          {failed ? (
+            <div className="certle-load" role="alert">
+              <h2>Let’s try that again.</h2>
+              <p>
+                Today’s question couldn’t load. Your saved result is still here.
+              </p>
+              <button
+                className="certle-primary"
+                type="button"
+                onClick={() => setReload((r) => r + 1)}
+              >
+                <RotateCcw size={17} />
+                Retry
+              </button>
+            </div>
+          ) : !ready ? (
+            <div className="certle-load" role="status">
+              <span className="certle-loading-tiles" aria-hidden="true">
+                <i />
+                <i />
+                <i />
+              </span>
+              Finding today’s question…
+            </div>
+          ) : (
+            <>
+              <div className="certle-question-sheet">
                 <div className="certle-paper-top">
-                  <div>
-                    <p className="certle-eyebrow">TODAY’S PAPER</p>
-                    <h2>{entry!.subject}</h2>
-                  </div>
-                  <span className="certle-tariff">
-                    {total}
-                    <small>{total === 1 ? "mark" : "marks"}</small>
-                  </span>
+                  <p className="certle-eyebrow">{entry!.subject}</p>
+                  <span className="certle-tariff">{plural(total, "mark")}</span>
                 </div>
-                <div className="certle-paper">
-                  <p className="certle-source">
-                    {entry!.year} · {entry!.level} ·{" "}
-                    {entry!.ref.replace(/^\d{4}\s+(HL|OL)\s+/, "")}
+                <h2
+                  className={`certle-question${entry!.question.length > 100 ? " is-long" : ""}`}
+                >
+                  {entry!.question}
+                </h2>
+                {entry!.figure && (
+                  <figure className="certle-figure">
+                    <img src={entry!.figure.src} alt={entry!.figure.alt} />
+                    <figcaption>Figure from the original SEC paper.</figcaption>
+                  </figure>
+                )}
+                <div className="certle-paper-source">
+                  <span className="certle-eyebrow">From the exam paper</span>
+                  <p>
+                    <span>
+                      {entry!.year} · {entry!.level}
+                    </span>
+                    <span>{entry!.ref.replace(/^\d{4}\s+(HL|OL)\s+/, "")}</span>
                   </p>
-                  <h3 className="certle-question">{entry!.question}</h3>
-                  {entry!.figure && (
-                    <figure className="certle-figure">
-                      <img src={entry!.figure.src} alt={entry!.figure.alt} />
-                      <figcaption>
-                        Figure from the original SEC paper.
-                      </figcaption>
-                    </figure>
-                  )}
-                  <div className="certle-attempts" aria-label="Your attempts">
-                    {Array.from({ length: MAX_ATTEMPTS }, (_, i) => {
-                      const r = results[i];
-                      const cells = r
-                        ? r.hits.flatMap((h) =>
-                            Array.from({ length: h.marks }, () => h.matched),
-                          )
-                        : Array.from({ length: total }, () => false);
-                      return (
-                        <div
-                          className={`certle-attempt${r ? " is-played" : ""}${!finished && i === game!.answers.length ? " is-current" : ""}`}
-                          key={i}
-                          aria-label={`Attempt ${i + 1}: ${r ? `${r.earned} of ${r.total} marks` : "not played"}`}
-                        >
-                          <span className="certle-attempt-number">
-                            0{i + 1}
-                          </span>
-                          <div
-                            className="certle-squares"
-                            style={{ "--marks": total } as React.CSSProperties}
-                          >
-                            {cells.map((hit, j) => (
-                              <span
-                                aria-hidden="true"
-                                key={j}
-                                className={
-                                  hit ? "is-earned" : r ? "is-unmatched" : ""
-                                }
-                              >
-                                {hit ? <Check size={14} /> : null}
-                              </span>
-                            ))}
-                          </div>
-                          <span className="certle-attempt-score">
-                            {r ? `${r.earned}/${r.total}` : "—"}
-                          </span>
-                        </div>
-                      );
-                    })}
+                </div>
+              </div>
+              <div className="certle-workspace">
+                {finished ? (
+                  <div className="certle-result-heading">
+                    <p className="certle-eyebrow">Today’s result</p>
+                    <div className="certle-score-display">
+                      <strong>
+                        {best?.earned ?? 0}
+                        <span>/{total}</span>
+                      </strong>
+                      <span>marks</span>
+                    </div>
+                    <h2 ref={resultHeading} tabIndex={-1}>
+                      {best?.earned === total
+                        ? "Full marks. Nicely done."
+                        : "That’s today’s CERTLE."}
+                    </h2>
+                    <p>
+                      {best?.earned === total
+                        ? `You got there in ${plural(game!.answers.length, "attempt")}.`
+                        : "Your best attempt counts. See how it matches the scheme below."}
+                    </p>
                   </div>
-                  <div
-                    className="certle-result-line"
-                    aria-live="polite"
-                    aria-atomic="true"
-                  >
-                    {best ? (
-                      <>
-                        <strong>
-                          {best.earned === total
-                            ? "Full marks. Nicely done."
-                            : best.earned > 0
-                              ? `${best.earned} of ${total} marks. ${finished ? "A little more learned." : "Keep building."}`
+                ) : (
+                  <div className="certle-board-heading">
+                    <h3>Your marks</h3>
+                    <span>One square = one mark</span>
+                  </div>
+                )}
+                <MarksBoard
+                  results={results}
+                  total={total}
+                  current={game!.answers.length}
+                  finished={finished}
+                />
+                {!finished ? (
+                  <>
+                    <div
+                      className="certle-result-line"
+                      aria-live="polite"
+                      aria-atomic="true"
+                    >
+                      {best ? (
+                        <>
+                          <strong>
+                            {best.earned > 0
+                              ? `${best.earned} of ${total} marks earned.`
                               : "No scheme points matched yet."}
-                        </strong>
-                        <p>
-                          {finished
-                            ? best.earned === total
-                              ? `You got there in ${plural(game!.answers.length, "attempt")}. Come back tomorrow for a new subject.`
-                              : "Your best attempt counts. Compare your wording with the scheme below."
-                            : `${plural(remaining, "attempt")} left. ${best.earned > 0 ? "Your best score is safe." : "Try adding the detail the question asks for."}`}
-                        </p>
-                      </>
-                    ) : (
-                      <p>Each square is one mark. How many can you earn?</p>
-                    )}
-                  </div>
-                  {!finished ? (
+                          </strong>
+                          <p>
+                            {plural(remaining, "attempt")} left.{" "}
+                            {best.earned > 0
+                              ? "Add to your answer. Your best score is safe."
+                              : "Try adding more of the detail asked for."}
+                          </p>
+                        </>
+                      ) : (
+                        <p>Earn marks, then add to your answer.</p>
+                      )}
+                    </div>
                     <form
                       onSubmit={(e) => {
                         e.preventDefault();
@@ -454,7 +428,13 @@ export default function CertlePage() {
                         value={answer}
                         onChange={(e) => {
                           setAnswer(e.target.value);
-                          saveStored(draftKey(day, entry!.id), e.target.value);
+                          if (
+                            !saveStored(
+                              draftKey(day, entry!.id),
+                              e.target.value,
+                            )
+                          )
+                            setLocalOnly(true);
                           setNotice("");
                         }}
                         onKeyDown={(e) => {
@@ -465,16 +445,22 @@ export default function CertlePage() {
                         }}
                         rows={3}
                         maxLength={3000}
-                        placeholder="Think it through. Write what you know."
+                        placeholder={
+                          schemePoints(entry!).some(
+                            (point) => point.partIndex !== undefined,
+                          )
+                            ? "(i) …\n(ii) …\n(iii) …"
+                            : "Write what you know…"
+                        }
                         autoComplete="off"
                         spellCheck
                         aria-describedby="certle-answer-hint"
                       />
                       <div className="certle-form-bottom">
                         <p id="certle-answer-hint">
-                          A short answer is fine.
+                          Checked against the
                           <br />
-                          Use your own words.
+                          SEC marking scheme.
                         </p>
                         <button
                           type="submit"
@@ -500,131 +486,53 @@ export default function CertlePage() {
                         </button>
                       )}
                     </form>
-                  ) : (
-                    <div className="certle-finished">
-                      <div className="certle-final-score">
-                        <span>YOUR BEST SCORE</span>
-                        <strong>
-                          {best?.earned ?? 0}
-                          <small>/{total}</small>
-                        </strong>
-                        <p>
-                          {best?.earned === total
-                            ? "Every mark earned."
-                            : "A little more learned."}
-                        </p>
+                  </>
+                ) : (
+                  <div className="certle-finished-actions">
+                    <button
+                      type="button"
+                      className="certle-primary"
+                      onClick={() => setDialog("share")}
+                    >
+                      <Share2 size={18} />
+                      Share my result
+                      <ArrowRight size={18} />
+                    </button>
+                    <span>Your squares. No spoilers.</span>
+                  </div>
+                )}
+                {game!.answers.length > 0 && (
+                  <details className="certle-answer-history">
+                    <summary>
+                      Your {plural(game!.answers.length, "attempt")}
+                    </summary>
+                    {game!.answers.map((a, i) => (
+                      <div key={i}>
+                        <b>
+                          Attempt {i + 1} · {results[i].earned}/{total}
+                          {i === bestIndex ? " · Best" : ""}
+                        </b>
+                        <p>{a}</p>
                       </div>
-                      <button
-                        type="button"
-                        className="certle-primary"
-                        onClick={() => void share()}
-                      >
-                        <Share2 size={17} />
-                        Share my result
-                      </button>
-                      <button
-                        type="button"
-                        className="certle-text-button"
-                        onClick={() => void share(true)}
-                      >
-                        <Copy size={14} />
-                        Copy result
-                      </button>
-                      <p className="certle-share-notice" role="status">
-                        {shareNotice}
-                      </p>
-                      {copyFallback && (
-                        <textarea
-                          aria-label="Result to copy"
-                          className="certle-share-fallback"
-                          readOnly
-                          value={copyFallback}
-                          onFocus={(e) => e.target.select()}
-                        />
-                      )}
-                    </div>
-                  )}
-                  {game!.answers.length > 0 && (
-                    <details className="certle-answer-history">
-                      <summary>
-                        Your {plural(game!.answers.length, "attempt")}
-                      </summary>
-                      {game!.answers.map((a, i) => (
-                        <div key={i}>
-                          <b>
-                            Attempt {i + 1} · {results[i].earned}/{total}
-                            {i === bestIndex ? " · Best" : ""}
-                          </b>
-                          <p>{a}</p>
-                        </div>
-                      ))}
-                    </details>
-                  )}
-                </div>
-              </>
-            )}
-          </section>
-          <aside className="certle-aside">
-            <section className="certle-record">
-              <p className="certle-eyebrow">YOUR DAILY RECORD</p>
-              <div className="certle-stat-grid">
-                <div>
-                  <strong>{summary.played}</strong>
-                  <span>Played</span>
-                </div>
-                <div>
-                  <strong>{summary.fullMarks}</strong>
-                  <span>Full marks</span>
-                </div>
-                <div>
-                  <strong>{summary.streak}</strong>
-                  <span>Day streak</span>
-                </div>
+                    ))}
+                  </details>
+                )}
               </div>
-              <p>Small steps, every day.</p>
-            </section>
-            <section className="certle-guide">
-              <p className="certle-eyebrow">THE IDEA IS SIMPLE</p>
-              <ol>
-                <li>
-                  <span>01</span>
-                  <p>Answer one real Leaving Cert question.</p>
-                </li>
-                <li>
-                  <span>02</span>
-                  <p>Earn the marks you know. You have three attempts.</p>
-                </li>
-                <li>
-                  <span>03</span>
-                  <p>
-                    Read the scheme. Share your squares. Come back tomorrow.
-                  </p>
-                </li>
-              </ol>
-              <div className="certle-key">
-                <span>
-                  <i className="earned" />
-                  Mark earned
-                </span>
-                <span>
-                  <i />
-                  Not matched yet
-                </span>
-              </div>
-            </section>
-            <section className="certle-next">
-              <p className="certle-eyebrow">YOUR NEXT QUESTION IN</p>
-              <time
-                aria-label={`${Math.floor(seconds / 3600)} hours and ${Math.floor((seconds % 3600) / 60)} minutes until the next question`}
-              >
-                {countdown}
-              </time>
-              <p>
-                Midnight, Irish time.
-                <br />A fresh question for everyone.
-              </p>
-            </section>
-          </aside>
+            </>
+          )}
+        </section>
+        <div className="certle-daily-foot">
+          <p>
+            A new question every day. <span>Midnight, Irish time.</span>
+          </p>
+          <span className="certle-next">
+            Next in{" "}
+            <time
+              aria-label={`${Math.floor(seconds / 3600)} hours and ${Math.floor((seconds % 3600) / 60)} minutes until the next question`}
+            >
+              {countdown}
+            </time>
+          </span>
         </div>
         {finished && entry && best && (
           <section
@@ -633,9 +541,7 @@ export default function CertlePage() {
           >
             <div className="certle-scheme-title">
               <div>
-                <p className="certle-eyebrow">
-                  AFTER THE ANSWER, THE UNDERSTANDING.
-                </p>
+                <p className="certle-eyebrow">The marking scheme</p>
                 <h2 id="certle-scheme-title">Here’s where the marks are.</h2>
               </div>
               <span>
@@ -643,9 +549,9 @@ export default function CertlePage() {
               </span>
             </div>
             <p className="certle-scheme-intro">
-              The SEC’s own scheme points, compared with your best attempt. A
-              valid answer can use different wording; an unmatched point is
-              worth checking against your response.
+              The SEC’s scheme points, compared with your best attempt.
+              Automatic matching can miss valid wording, so check any unmatched
+              points against your response.
             </p>
             <ul>
               {schemePoints(entry).map((point, i) => {
@@ -683,18 +589,24 @@ export default function CertlePage() {
         )}
         {localOnly && (
           <p className="certle-notice" role="status">
-            Your browser couldn’t save this result. It is available for this
+            Your browser couldn’t save your progress. It is available for this
             visit only.
           </p>
         )}
         <footer className="certle-footer">
-          <p>Real questions. Real marking schemes. A little progress, daily.</p>
           <a href="/landing">
-            More ways to practise with Nextstepuni
-            <ArrowRight size={14} />
+            <span>nextstepuni</span>More ways to practise
+            <ArrowRight size={16} />
           </a>
         </footer>
       </main>
+      <Modal
+        open={dialog === "share"}
+        title="Share your result."
+        onClose={() => setDialog(null)}
+      >
+        {dialog === "share" && shareData && <ShareResult data={shareData} />}
+      </Modal>
       <Modal
         open={dialog === "help"}
         title="How to play CERTLE"

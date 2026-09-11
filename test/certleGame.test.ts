@@ -123,3 +123,44 @@ describe("Irish daily rollover", () => {
     expect(dublinDay(new Date("2026-09-11T23:00:00Z"))).toBe("2026-09-12");
   });
 });
+
+describe("CERTLE numbered image answers", () => {
+  const industry: CertleQuestion = {
+    id: "bus-2022-ol-s1-q2",
+    subject: "Business",
+    year: 2022,
+    level: "Ordinary Level",
+    ref: "Section 1 Q2",
+    question:
+      "Identify the category of industry most appropriate to each of the images shown below.",
+    points: [
+      { id: "r-1", verbatim: "(i) — Secondary", marks: 5 },
+      { id: "r-2", verbatim: "(ii) — Tertiary/Services", marks: 5 },
+      { id: "r-3", verbatim: "(iii) — Primary", marks: 5 },
+    ],
+    attribution: "SEC Business 2022 OL",
+  };
+  const grade = (answer: string) =>
+    resultsFor(
+      submitAnswer(emptyGame(DAY, industry.id), industry, answer),
+      industry,
+    )[0].earned;
+  it("accepts categories in image order without requiring printed punctuation", () => {
+    expect(
+      grade("Secondary industry; tertiary industry; primary industry."),
+    ).toBe(15);
+    expect(grade("Secondary, services, primary")).toBe(15);
+    expect(grade("Secondary")).toBe(5);
+  });
+  it("binds explicit part labels even when the parts are written out of order", () => {
+    expect(grade("(iii) Primary (i) Secondary (ii) Services")).toBe(15);
+    expect(grade("2. Services")).toBe(5);
+    expect(grade("1. Secondary\n2. Tertiary\n3. Primary")).toBe(15);
+  });
+  it("does not award marks for correct categories attached to the wrong images", () => {
+    expect(grade("Primary; Secondary; Tertiary")).toBe(0);
+    expect(grade("(i) Primary (ii) Secondary (iii) Tertiary")).toBe(0);
+    expect(grade("Secondary; Primary; Tertiary")).toBe(5);
+    expect(grade("Secondary tertiary primary")).toBe(5);
+  });
+});

@@ -83,7 +83,7 @@ const EQUIVALENTS: Record<string, string[][]> = {
 export function schemePoints(question: CertleQuestion): MarkPoint[] {
   return question.points.map((p, i) => {
     const extra = EQUIVALENTS[p.verbatim.toLowerCase()];
-    const point = {
+    const point: MarkPoint = {
       ...p,
       ...(extra
         ? {
@@ -96,6 +96,12 @@ export function schemePoints(question: CertleQuestion): MarkPoint[] {
     };
     if (question.id === "chem-2021-ol-q10-b-i-ii")
       point.labels = [i === 0 ? "oxidation" : "reduction"];
+    if (question.id === "bus-2022-ol-s1-q2") {
+      // The printed '(i) —' is a part label, not part of the category name.
+      // Preserve the scheme verbatim for review and bind credit to its image.
+      point.partIndex = i;
+      point.accept = [[p.verbatim.replace(/^\([ivx]+\)\s*[—–-]\s*/i, "")]];
+    }
     return point;
   });
 }
