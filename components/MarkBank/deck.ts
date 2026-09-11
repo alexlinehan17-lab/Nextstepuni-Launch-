@@ -88,6 +88,8 @@ const slovakianCurriculum = CURRICULUM.find(subject => subject.id === 'slovakian
 if (!slovakianCurriculum) throw new Error('Canonical Slovakian curriculum is missing');
 const swedishCurriculum = CURRICULUM.find(subject => subject.id === 'swedish');
 if (!swedishCurriculum) throw new Error('Canonical Swedish curriculum is missing');
+const malteseCurriculum = CURRICULUM.find(subject => subject.id === 'maltese');
+if (!malteseCurriculum) throw new Error('Canonical Maltese curriculum is missing');
 const estonianCurriculum = CURRICULUM.find(subject => subject.id === 'estonian');
 if (!estonianCurriculum) throw new Error('Canonical Estonian curriculum is missing');
 const finnishCurriculum = CURRICULUM.find(subject => subject.id === 'finnish');
@@ -1280,6 +1282,16 @@ export const SWEDISH_STRANDS: StrandRef[] = swedishCurriculum.strands.map((stran
     title: topic.name,
   })),
 }));
+export const MALTESE_STRANDS: StrandRef[] = malteseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
 export const ESTONIAN_STRANDS: StrandRef[] = estonianCurriculum.strands.map((strand, index) => ({
   id: strand.id,
   label: `Strand ${index + 1}`,
@@ -1724,6 +1736,7 @@ export const SUBJECTS = [
   { id: 'bulgarian', title: 'Bulgarian', strands: BULGARIAN_STRANDS, spec: 'Leaving Certificate Bulgarian, a non-curricular EU language' },
   { id: 'slovakian', title: 'Slovakian', strands: SLOVAKIAN_STRANDS, spec: 'Leaving Certificate Slovakian, a non-curricular EU language' },
   { id: 'swedish', title: 'Swedish', strands: SWEDISH_STRANDS, spec: 'Leaving Certificate Swedish, a non-curricular EU language' },
+  { id: 'maltese', title: 'Maltese', strands: MALTESE_STRANDS, spec: 'Leaving Certificate Maltese, a non-curricular EU language' },
   { id: 'estonian', title: 'Estonian', strands: ESTONIAN_STRANDS, spec: 'Leaving Certificate Estonian, a non-curricular EU language' },
   { id: 'finnish', title: 'Finnish', strands: FINNISH_STRANDS, spec: 'Leaving Certificate Finnish, a non-curricular EU language' },
   { id: 'croatian', title: 'Croatian', strands: CROATIAN_STRANDS, spec: 'Leaving Certificate Croatian, a non-curricular EU language' },
@@ -2075,6 +2088,9 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   },
   swedish: {
     higher: () => import('./cards/swedish/higher'),
+  },
+  maltese: {
+    higher: () => import('./cards/maltese/higher'),
   },
   estonian: {
     higher: () => import('./cards/estonian/higher'),

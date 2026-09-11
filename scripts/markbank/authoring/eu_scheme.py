@@ -54,7 +54,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 from markbank_text import unligature                            # noqa: E402
-from eu_paper import (LANGS, cfg, next_letter,                   # noqa: E402
+from eu_paper import (LANGS, cfg, next_letter, MARK_WORD,        # noqa: E402
                       LETTER_COLON, letter_pattern, letters_for, fold_letter)
 
 
@@ -221,15 +221,29 @@ ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 # The tariff, in the two notations this family prints:
 #   "6 marks: 3 x 2 marks"   the total, then the split that makes it
 #   "3 marks", "1 mark"      the total alone
+# The schemes state their price in the language they are written in. Reading
+# only the English word left every Maltese ask unpriced -- its scheme prints
+# "(5 marki)" beside each question and "(1 × 5 marki)" over the five
+# expressions of Question 1 -- so 45 asks were refused for stating no tariff
+# with the tariff printed plainly beside them. MARK_WORD is eu_paper's own
+# list, already carrying every other language in the family.
+_MW = r'(?:' + MARK_WORD + r')'
 SPLIT = re.compile(
-    r'(\d{1,2})\s*marks?\s*[:;]\s*(\d{1,2})\s*[x×]\s*(\d{1,2})\s*marks?', re.I)
-FLAT = re.compile(r'(?:^|\s|\()(\d{1,2})\s*marks?\b', re.I)
+    r'(\d{1,2})\s*' + _MW + r'\s*[:;]\s*(\d{1,2})\s*[x×]\s*(\d{1,2})\s*'
+    + _MW, re.I)
+# "1 × 5 marki" over a lettered run: five asks at one mark each, the total
+# stated as the product rather than as a sum. The count and the per-mark are
+# the other way round from SPLIT's "total: count × per", so it is read on its
+# own terms and never by assuming which number is which.
+PRODUCT = re.compile(
+    r'(?:^|\s|\()(\d{1,2})\s*[x×]\s*(\d{1,2})\s*' + _MW + r'\b', re.I)
+FLAT = re.compile(r'(?:^|\s|\()(\d{1,2})\s*' + _MW + r'\b', re.I)
 # The table header the 2022 and 2023 schemes print above every ask's answers.
 # Its second cell is the ask's own total, and it is the only place those two
 # sittings state one.
-ANSWER_HEAD = re.compile(r'^Answer\b\s*(\d{1,2})?\s*(?:marks?)?\s*'
-                         r'(?:[:;]\s*(\d{1,2})\s*[x×]\s*(\d{1,2})\s*marks?)?$',
-                         re.I)
+ANSWER_HEAD = re.compile(r'^Answer\b\s*(\d{1,2})?\s*' + _MW + r'?\s*'
+                         r'(?:[:;]\s*(\d{1,2})\s*[x×]\s*(\d{1,2})\s*'
+                         + _MW + r')?$', re.I)
 # "(any 3)", "(Any 4)", "any 2" — how many of the listed answers may be claimed.
 ANY_N = re.compile(r'\(?\s*any\s+(\d{1,2})\s*\)?', re.I)
 
@@ -753,15 +767,26 @@ class EuScheme:
                 rest = nm.group(2)
                 inner = letter_pat.match(rest)
                 if inner:
-                    letter, rest = inner.group(1).lower(), inner.group(2)
+                    letter = fold_letter(self.subject,
+                                         inner.group(1).lower())
+                    rest = inner.group(2)
                 current = Ask(part, q, letter, None, '', row.page)
                 broke = False
                 if rest:
                     current.answers.append({'text': rest, 'marks': None})
                 continue
+            # The sequence test runs on the FOLDED letter, because `letter`
+            # is itself folded. Left raw, a Maltese scheme printing "c)" was
+            # tested against the "ċ" that follows "b" in the Maltese run, the
+            # test failed, and the run stopped dead: (ċ), (d) and (e) were all
+            # read as more of part (b)'s answer. Fourteen asks across the six
+            # sittings were reported as priced at no address the paper prints,
+            # with their answers sitting in the scheme two lines below.
+            folded = (fold_letter(self.subject, lm.group(1).lower())
+                      if lm else None)
             if lm and q is not None \
-                    and lm.group(1).lower() == next_letter(
-                        letter, self.first_letter):
+                    and folded == next_letter(letter, self.first_letter,
+                                              letters_for(self.subject)):
                 close()
                 noted = False
                 letter = fold_letter(self.subject, lm.group(1).lower())
@@ -1044,8 +1069,8 @@ def _add_answer(ask, text, opened=False):
 # all — and 2025 Ordinary Question 1(a) reported "1 mark" for an ask the SEC
 # priced at eight.
 NEEDS_MORE = re.compile(r'[:;]\s*$')
-IS_SPLIT_TAIL = re.compile(r'^\(?\s*\d{1,2}\s*[x×]\s*\d{1,2}\s*marks?\s*\)?$',
-                           re.I)
+IS_SPLIT_TAIL = re.compile(r'^\(?\s*\d{1,2}\s*[x×]\s*\d{1,2}\s*'
+                           + _MW + r'\s*\)?$', re.I)
 IS_ANY_TAIL = re.compile(r'^\(?\s*any\s+\d{1,2}\s*\)?\.?$', re.I)
 
 

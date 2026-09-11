@@ -96,6 +96,7 @@ import { CARDS as MANDARIN_CHINESE_ORDINARY } from '../components/MarkBank/cards
 import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakian/higher';
 import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
 import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
+import { CARDS as MALTESE_HIGHER } from '../components/MarkBank/cards/maltese/higher';
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
 import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
@@ -664,6 +665,14 @@ const decks = [
   ['slovakian:higher', SLOVAKIAN_HIGHER, 140, 'e8baef98d00f5b37334847c1720b92b70fc65117eee42ead02625a180f996ebd'],
   ['slovenian:higher', SLOVENIAN_HIGHER, 23, '5a91c38d5a570c77dcec2866a705c302bc67a7b0d33bcdeea95cd249beb149f0'],
   ['swedish:higher', SWEDISH_HIGHER, 121, 'ff499eff76dc0efe1a00cf9f20f85a3f2f508c9afd5de4ec01f2f1f8da966b56'],
+  /* 2026-09-11: Maltese, first carded. 41 cards against the 76 leaf asks its
+   * six sittings print — 18 excluded with span-level evidence (the commentary
+   * and the composition are written production, and 2019's scheme is set in a
+   * subset font whose ToUnicode map is broken), 17 still open. The subject was
+   * withdrawn from the thirty-four-subject wave because its reader lost three
+   * asks in the merged tree; the cause was the SEC lettering Question 1's
+   * third expression "ċ)" up to 2022 and "c)" from 2023. */
+  ['maltese:higher', MALTESE_HIGHER, 41, 'ccb04d315019995c188a89a55151a3e441bd393c0705cc410ee69e23291c316b'],
   ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
   /* 2026-09-11: Design & Communication Graphics, first carded. 545 cards
    * against the 478 leaf asks its 2019-2026 papers print -- 478/478 covered,
@@ -708,7 +717,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_111);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_152);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -762,6 +771,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('slovakian:')
         && !name.startsWith('slovenian:')
         && !name.startsWith('swedish:')
+        && !name.startsWith('maltese:')
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
