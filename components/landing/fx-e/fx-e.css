@@ -102,6 +102,14 @@
 }
 
 /* ── Ask the papers ───────────────────────────────────────────────────── */
+.fxe-modes { margin-bottom: 20px; width: fit-content; max-width: 100%; }
+.fxe-help { font: 13px/1.5 'DM Sans', system-ui, sans-serif; color: #5F5A55; margin: 10px 0 0; }
+.fxe-open { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; font: 600 15px 'DM Sans', system-ui, sans-serif; color: #1A1A1A; border-bottom: 1px solid #1A1A1A; margin-bottom: 10px; }
+.fxe-open:hover { color: #B84A0C; border-color: currentColor; }
+.fxe-open:focus-visible { outline: 2px solid #B84A0C; outline-offset: 4px; }
+.fxe-cell--untagged::before { content: ''; position: absolute; width: 30%; height: 1px; top: 50%; left: 35%; background: #766A5F; }
+.fxe-grid-scroll { max-width: 100%; overflow-x: auto; padding: 2px; }
+.fxe-swipe { display: none; }
 .fxe-count {
   font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
   font-size: 15px;
@@ -139,6 +147,12 @@
   white-space: nowrap;
 }
 .fxe-grid__long { display: none; }
+@media (max-width: 639px) {
+  .fxe-grid { min-width: 836px; grid-template-columns: 64px repeat(var(--fxe-years, 16), minmax(44px, 1fr)); padding-bottom: 6px; }
+  .fxe-grid__label { position: sticky; left: 0; z-index: 1; background: #FFFFFF; align-self: stretch; display: flex; align-items: center; }
+  .fxe-grid__century { display: inline; }
+  .fxe-swipe { display: block; }
+}
 @media (min-width: 640px) {
   .fxe-grid { gap: 5px; }
   .fxe-grid__century { display: inline; }

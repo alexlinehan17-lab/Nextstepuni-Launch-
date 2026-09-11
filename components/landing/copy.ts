@@ -8,6 +8,8 @@
  * reach for a slogan when a sentence will do.
  */
 
+import { MARK_BANK_CARD_COUNT, MARK_BANK_SUBJECT_COUNT } from './demoData';
+
 export type ChapterId = 'markbank' | 'papertrail' | 'atlas' | 'planner' | 'launchpad' | 'lab' | 'futurefinder';
 
 export interface Chapter {
@@ -70,7 +72,7 @@ export const COPY = {
   numbers: {
     eyebrow: 'What’s in it',
     items: [
-      { value: '10,495', label: 'marking-scheme cards', note: '15 subjects, Higher and Ordinary' },
+      { value: MARK_BANK_CARD_COUNT.toLocaleString('en-IE'), label: 'marking-scheme cards', note: `${MARK_BANK_SUBJECT_COUNT} subjects, across the available levels` },
       { value: '4,621', label: 'past papers', note: '100 subjects across the Leaving Cert, LCA and Junior Cycle, 2010 to 2026. Most have the marking scheme beside them.' },
       { value: '19,565', label: 'Leaving Cert questions mapped by topic', note: 'across 58 subjects and 1,716 topics' },
       { value: '566', label: 'command-word questions', note: 'real exam questions, with the examiner’s trap explained' },
@@ -215,19 +217,19 @@ export const COPY = {
 
   subjects: {
     eyebrow: 'Subjects',
-    title: 'Fifteen subjects in the Mark Bank. Fifty-nine Leaving Cert subjects in the Paper Trail.',
-    lede: 'The Mark Bank is built subject by subject, from the marking schemes. The Paper Trail holds the SEC’s papers from 2010 on for fifty-nine Leaving Cert subjects, from Accounting to the non-curricular languages, plus Junior Cycle and LCA.',
+    title: 'All Leaving Cert subjects in Mark Bank. All Leaving Cert subjects in Paper Trail.',
+    lede: 'Mark Bank turns marking-scheme points into practice. Paper Trail brings past papers and their published marking schemes together, with Junior Cycle and LCA papers available too. Explore the current card counts and paper coverage below.',
     columns: { subject: 'Subject', markBank: 'Mark Bank cards', paperTrail: 'Paper Trail', papers: 'Papers' },
     yes: 'Yes',
     notYet: 'Not yet',
     stats: { cards: 'Mark Bank cards', inTrail: 'In the Paper Trail', papers: 'Papers in the Paper Trail', of: 'of' },
     groupNotes: {
       sciences: 'Higher and Ordinary science papers back to 2010, and the biggest Mark Bank decks.',
-      business: 'Business and Economics are carded from their marking schemes. Accounting is in the Paper Trail while its cards are still being built.',
-      maths: 'Maths and Computer Science have cards. Applied Maths is in the Paper Trail but has no cards yet.',
-      languages: 'English and Irish have cards. French, German, Spanish and Italian are in the Paper Trail but have no cards yet.',
-      humanities: 'Geography has cards. History, Politics and Society, Religious Education and Classical Studies are in the Paper Trail but have no cards yet.',
-      practical: 'Art, Construction Studies, Engineering and Home Economics have cards. DCG, Technology, Music and PE are in the Paper Trail but have no cards yet.',
+      business: 'Practise the marking points, then see how a full question is assessed in its original paper.',
+      maths: 'Work through methods and calculations, then check your reasoning against the marking scheme.',
+      languages: 'Move between focused practice and full papers for reading, writing and listening.',
+      humanities: 'Practise the evidence, explanations and arguments that earn marks in each subject.',
+      practical: 'Connect what you know to real exam questions, with the published marking schemes to hand.',
     } as Record<string, string>,
     stillBuilding: 'No Mark Bank cards for this group yet. The papers are already in the Paper Trail.',
   },

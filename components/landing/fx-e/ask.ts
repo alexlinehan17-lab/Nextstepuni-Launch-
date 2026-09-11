@@ -17,6 +17,13 @@ export interface AskPaper { y: number; l: 'H' | 'O'; p: string; f: string }
 export interface AskSubject { id: string; name: string; attributionName: string }
 interface AskSubjectFile extends AskSubject { years: number[]; papers: AskPaper[]; q: [number, string, number, string][] }
 export interface AskIndexFile { subjects: { id: string; name: string; file: string; questions: number; years: number[] }[]; years: number[] }
+export type AskMode = 'topics' | 'words';
+export interface AskTopic { id: string; label: string; aliases: string[] }
+export interface AskTopicIndexFile {
+  topics: AskTopic[];
+  papers: (AskPaper & { subjectId: string })[];
+  q: [number, string, number, number[]][];
+}
 
 export interface AskQuestion {
   subject: AskSubject;
@@ -27,8 +34,11 @@ export interface AskQuestion {
   text: string;
   stems: Set<string>;
   list: string[];
+  topics?: AskTopic[];
+  /** Exact Paper Trail question identity; absent in the independent text index. */
+  anchor?: string;
 }
-export interface AskData { subjects: AskSubject[]; years: number[]; questions: AskQuestion[] }
+export interface AskData { subjects: AskSubject[]; years: number[]; questions: AskQuestion[]; topicQuestions: AskQuestion[]; topicCoverage: Set<string> }
 
 export const ASK_BASE = '/assets/landing/ask/';
 
@@ -43,7 +53,10 @@ export const loadAskIndex = (base: string = ASK_BASE): Promise<AskIndexFile> => 
 
 /** The questions themselves (~1 MB across the subject files), fetched on the input's first focus. */
 export const loadAsk = async (index: AskIndexFile, base: string = ASK_BASE): Promise<AskData> => {
-  const files = await Promise.all(index.subjects.map(s => getJson<AskSubjectFile>(base + s.file)));
+  const [files, tagged] = await Promise.all([
+    Promise.all(index.subjects.map(s => getJson<AskSubjectFile>(base + s.file))),
+    getJson<AskTopicIndexFile>(`${base}topics.json`),
+  ]);
   const subjects: AskSubject[] = [];
   const questions: AskQuestion[] = [];
   for (const f of files) {
@@ -54,13 +67,19 @@ export const loadAsk = async (index: AskIndexFile, base: string = ASK_BASE): Pro
       questions.push({ subject, paper: f.papers[pi], n, page, text, stems: new Set(list), list });
     }
   }
-  return { subjects, years: index.years, questions };
+  const topicQuestions: AskQuestion[] = tagged.q.map(([pi, n, page, ids]) => {
+    const paper = tagged.papers[pi];
+    const subject = subjects.find(s => s.id === paper.subjectId);
+    if (!subject) throw new Error(`Unknown topic-search subject: ${paper.subjectId}`);
+    return { subject, paper, n: `Q${n}`, anchor: n, page, text: '', stems: new Set<string>(), list: [], topics: ids.map(id => tagged.topics[id]) };
+  });
+  return { subjects, years: index.years, questions, topicQuestions, topicCoverage: new Set(tagged.papers.map(p => `${p.subjectId}|${p.y}`)) };
 };
 
 /** The typed term as stems. Every word but the last must match whole; the last may be a prefix. */
 export const queryTerms = (query: string): string[] => tokens(query).filter(t => /[a-z0-9]/.test(t));
 
-export const matches = (q: AskQuestion, terms: string[]): boolean => {
+export const matches = (q: Pick<AskQuestion, 'stems' | 'list'>, terms: string[]): boolean => {
   if (!terms.length) return false;
   const last = terms[terms.length - 1];
   for (let i = 0; i < terms.length - 1; i++) if (!q.stems.has(terms[i])) return false;
@@ -68,6 +87,19 @@ export const matches = (q: AskQuestion, terms: string[]): boolean => {
   for (const s of q.list) if (s.startsWith(last)) return true;
   return false;
 };
+
+/** Match one complete topic label/alias; words cannot straddle unrelated tags. */
+const topicTokens = new Map<string, { stems: Set<string>; list: string[] }>();
+export const matchingTopics = (q: AskQuestion, terms: string[]): AskTopic[] =>
+  (q.topics ?? []).filter(topic => [topic.label, ...topic.aliases].some(label => {
+    let cached = topicTokens.get(label);
+    if (!cached) {
+      const list = queryTerms(label);
+      cached = { list, stems: new Set(list) };
+      topicTokens.set(label, cached);
+    }
+    return matches(cached, terms);
+  })).filter((topic, i, all) => all.findIndex(t => t.label === topic.label) === i);
 
 const isHit = (word: string, terms: string[]): boolean => {
   const ts = tokens(word);

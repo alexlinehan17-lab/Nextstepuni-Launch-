@@ -12,9 +12,11 @@
  * 3169 tagged papers, 32445 tagged questions, 98 subject ids.
  */
 
+import DECK_SIZES from '../MarkBank/cards/sizes.json';
+
 export interface SubjectRow { id: string; label: string; markBankCards: number; paperTrail: boolean; /** Years with papers in the Paper Trail, e.g. '2010–2026'. */ paperYears: string }
 export interface SubjectGroup { id: string; label: string; subjects: SubjectRow[] }
-export const SUBJECT_GROUPS: SubjectGroup[] = [
+const SUBJECT_ROWS: SubjectGroup[] = [
   { id: "sciences", label: "Sciences", subjects: [
     { id: "biology", label: "Biology", markBankCards: 1359, paperTrail: true, paperYears: '2010–2026' },
     { id: "chemistry", label: "Chemistry", markBankCards: 876, paperTrail: true, paperYears: '2010–2026' },
@@ -57,6 +59,19 @@ export const SUBJECT_GROUPS: SubjectGroup[] = [
     { id: "physical-education", label: "Physical Education", markBankCards: 0, paperTrail: true, paperYears: '2020–2025' }
   ] },
 ];
+
+// Read the shipped deck manifest rather than retaining the launch-day counts.
+const CARD_KEYS: Record<string, string> = { 'applied-mathematics': 'applied-maths', 'design-and-communication-graphics': 'dcg' };
+const sizes = DECK_SIZES as Record<string, Record<string, number>>;
+export const MARK_BANK_CARD_COUNT = Object.values(sizes).reduce((sum, levels) => sum + Object.values(levels).reduce((n, count) => n + count, 0), 0);
+export const MARK_BANK_SUBJECT_COUNT = Object.values(sizes).filter(levels => Object.values(levels).some(count => count > 0)).length;
+export const SUBJECT_GROUPS: SubjectGroup[] = SUBJECT_ROWS.map(group => ({
+  ...group,
+  subjects: group.subjects.map(subject => ({
+    ...subject,
+    markBankCards: Object.values(sizes[CARD_KEYS[subject.id] ?? subject.id] ?? {}).reduce((sum, count) => sum + count, 0),
+  })),
+}));
 
 /**
  * Screenshot frames for the chapters. null = a labelled placeholder frame
