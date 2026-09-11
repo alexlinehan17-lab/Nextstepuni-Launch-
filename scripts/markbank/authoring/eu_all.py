@@ -490,6 +490,33 @@ def _reading(P, S, priced, ask, subject, year, level, ref, cards, refuse,
     if P.era == 'classic':
         answers = _classic_answers(answers, question)
         sch.answers = answers
+
+    # The card must answer the question the PAPER prints. Neither the
+    # provenance gate nor card lint can see this: a marking point lifted from
+    # the wrong ask still traces, because the haystack is the whole document.
+    if answers:
+        first = answers[0]['text']
+        if _answers_its_own_question(question, first):
+            refuse('the scheme reprints the question here and the reader '
+                   'could not tell the reprint from the answer', ref,
+                   f'{stamp} scheme, at "{(question or "")[:70]}": the text '
+                   f'offered as the answer is that same question copied back '
+                   f'— "{first[:70]}" — so the card would ask a student to '
+                   f'claim marks for restating the ask')
+            return
+        # A lettered expression: the scheme repeats it before glossing it, so
+        # the pairing is checkable. Where it does not repeat it, nothing is
+        # claimed and the ask passes.
+        expr = None
+        if ask.key[2] is not None and ':' in (question or ''):
+            expr = question.rsplit(':', 1)[1].strip()
+        if expr and not _pairs_with_the_paper(expr, first):
+            refuse('the scheme answers a different expression from the one '
+                   'the paper prints at this address', ref,
+                   f'{stamp}: the paper asks for "{expr[:40]}" and the scheme '
+                   f'answers "{first[:60]}" at the same letter — the two '
+                   f'documents do not line up here, so no card is made')
+            return
     if not answers:
         sch.answers = _recovered_answer(sch, question)
         answers = sch.answers
@@ -653,6 +680,59 @@ ANSWER_LABEL = re.compile(
 INLINE_PRICE = re.compile(
     r'[(\[]\s*(?:\d{1,2}\s*[x×*]\s*)?\d{1,3}\s*'
     r'(?:' + '|'.join(PAPER_MARK_WORDS) + r')?\s*[)\]]', re.I)
+
+
+# Folded hard: every letter stripped to its bare ASCII skeleton, so a scheme
+# that prints "nisslet" where the paper prints "nislet" -- the SEC's own typo,
+# one letter, same word -- still pairs, while two different words never do.
+def _skeleton(text):
+    import unicodedata
+    d = unicodedata.normalize('NFD', text or '')
+    return re.sub(r'[^a-z]', '', d.lower())
+
+
+def _answers_its_own_question(question, answer):
+    """Is the 'answer' the question copied back?
+
+    The scheme reprints the ask and then answers it. Where the reprint is not
+    stripped, the card offers the student the question as the thing to claim
+    marks for -- 2018 Maltese Q4 and Q5 and 2024 Q3 shipped exactly that. A
+    containment test either way round, because the two copies differ in their
+    dashes and their line breaks and in nothing else.
+    """
+    q, a = _skeleton(question), _skeleton(answer)
+    if len(a) < 20 or len(q) < 20:
+        return False
+    return a[:40] in q or q[:40] in a
+
+
+def _pairs_with_the_paper(expression, answer):
+    """Does this answer belong to the expression the paper actually names?
+
+    The law is that the paper and the scheme are never joined on the part key
+    alone, and Maltese is why. Three separate failures, all invisible to every
+    other gate because a marking point lifted from the WRONG ask still traces
+    to the scheme -- the provenance haystack is the whole document:
+
+      * 2022's paper and scheme are for DIFFERENT examinations. The paper asks
+        for oqsma, ħemda, żżomm, antikwati, ħidmietna; the scheme answers tajt
+        titwila, battala, burdati, l-għan, il-qofol, and not one of the
+        paper's five appears anywhere in it. All five cards shipped answering
+        another sitting's questions.
+      * 2024's scheme sets an extra expression at (d), so (d) and (e) each
+        carried the answer to the expression before them.
+      * 2023's (d) is the same shift by one.
+
+    A Question 1 of this shape prints the expression and the scheme repeats it
+    before glossing it -- "qraba: membri tal-familja" -- so the pairing is
+    checkable against the documents themselves, and where the scheme does not
+    repeat it there is nothing to check and the ask passes.
+    """
+    e, a = _skeleton(expression), _skeleton(answer)
+    if len(e) < 4 or len(a) < 4:
+        return True
+    head = a[:max(len(e) + 6, 14)]
+    return e[:8] in head or e in a[:len(e) + 10]
 
 
 def _is_reprint(text, paper_text):

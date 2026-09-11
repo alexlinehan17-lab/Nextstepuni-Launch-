@@ -671,8 +671,16 @@ const decks = [
    * subset font whose ToUnicode map is broken), 17 still open. The subject was
    * withdrawn from the thirty-four-subject wave because its reader lost three
    * asks in the merged tree; the cause was the SEC lettering Question 1's
-   * third expression "ċ)" up to 2022 and "c)" from 2023. */
-  ['maltese:higher', MALTESE_HIGHER, 41, 'ccb04d315019995c188a89a55151a3e441bd393c0705cc410ee69e23291c316b'],
+   * third expression "ċ)" up to 2022 and "c)" from 2023.
+   *
+   * 2026-09-11, SECOND PASS: 41 -> 29. Twelve cards answered the wrong
+   * question and every existing gate passed them, because a marking point
+   * lifted from the wrong ask still traces — the provenance haystack is the
+   * whole document. 2022's paper and scheme are for DIFFERENT examinations;
+   * 2023's and 2024's schemes set an extra expression so the letters shift by
+   * one; and three cards offered the question itself as the answer to claim
+   * marks for. Two gates now stand between the reader and that. */
+  ['maltese:higher', MALTESE_HIGHER, 29, '2c2e7c672b90c7a3edf05caaeeb789d39b21a59c61d9036a1fb8dad24ed22477'],
   ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
   /* 2026-09-11: Design & Communication Graphics, first carded. 545 cards
    * against the 478 leaf asks its 2019-2026 papers print -- 478/478 covered,
@@ -717,7 +725,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_152);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_140);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
