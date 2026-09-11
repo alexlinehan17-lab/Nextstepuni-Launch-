@@ -103,12 +103,12 @@ export default function ShareResult({ data }: { data: ResultShareData }) {
         <img
           className="certle-share-image"
           src={imageUrl}
-          alt={`CERTLE ${data.number}. ${data.earned} of ${data.total} marks in ${data.attempts} attempts. Spoiler-free result card.`}
+          alt={`CERTLE ${data.number}. ${data.earned} of ${data.total} marks in ${data.attempts} of 3 attempts. Spoiler-free result card.`}
         />
       ) : (
         <div
           className="certle-share-card"
-          aria-label={`CERTLE ${data.number}, ${data.earned} of ${data.total} marks, ${data.attempts} attempts`}
+          aria-label={`CERTLE ${data.number}, ${data.earned} of ${data.total} marks, ${data.attempts} of 3 attempts`}
         >
           <div className="certle-share-edition">
             <span>No. {String(data.number).padStart(3, "0")}</span>
