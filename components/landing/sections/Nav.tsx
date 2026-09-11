@@ -15,13 +15,9 @@
  * IntersectionObserver on the headline flips the state; there is no scroll
  * listener and no blur.
  *
- * While the bar is condensed and no slot on the page claims starguy, he
- * stands under its bottom-left corner holding it up (starguy/Traveller.tsx
- * sets `data-guest` while he is on his way or there, `data-held` once he has
- * arrived, and `--sg-x` on the header). One of him at a time: the lockup's
- * copy fades while he is the guest. The two elements at the end of the
- * header draw the hold: the hairline with a gap over his head, and a short
- * sag in the gap. Both are display:none otherwise (fx-char/fx-char.css).
+ * The lockup's copy fades while the live Rive figure floats in the left
+ * margin, or occupies the mark's own position on a narrower desktop.
+ * The header's hairline stays straight and independent of the character.
  */
 
 import React, { useEffect, useState } from 'react';
@@ -134,12 +130,6 @@ const Nav: React.FC<{ page?: 'landing' | 'certle' }> = ({ page = 'landing' }) =>
           </Container>
         </div>
       )}
-      {page === 'landing' && <>
-        <span className="fx-nav-line" aria-hidden="true" />
-        <svg className="fx-nav-dip" viewBox="0 0 48 8" aria-hidden="true" focusable="false">
-          <path d="M0 0.5 C 13 0.5 16 6.5 24 6.5 S 35 0.5 48 0.5" fill="none" stroke="rgba(26, 26, 26, 0.14)" strokeWidth="1" />
-        </svg>
-      </>}
     </header>
   );
 };

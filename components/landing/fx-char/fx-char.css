@@ -23,34 +23,9 @@
 .fx-char-topple { position: absolute; inset: 0; z-index: 6; pointer-events: none; overflow: hidden; }
 .fx-char-word { position: absolute; white-space: nowrap; will-change: transform; }
 
-/* Holding the nav up. The straight hairline opens a gap over his head and a
-   short sag takes its place — drawn by Nav.tsx, placed by the traveller's --sg-x.
-   The lockup's own copy of him steps aside while the traveller is the guest. */
+/* The lockup's own copy steps aside while the live Rive figure is nearby. */
 .landing-nav .landing-nav-guy { transition: opacity 160ms ease; }
 .landing-nav[data-guest='true'] .landing-nav-guy { opacity: 0; }
-.landing-nav .fx-nav-line, .landing-nav .fx-nav-dip { display: none; }
-.landing-nav[data-condensed='true'][data-held='true'] { border-bottom-color: transparent; }
-.landing-nav[data-condensed='true'][data-held='true'] .fx-nav-line {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 1px;
-  background: rgba(26, 26, 26, 0.14);
-  -webkit-mask-image: linear-gradient(to right, #000 calc(var(--sg-x, 0px) - 24px), transparent calc(var(--sg-x, 0px) - 24px), transparent calc(var(--sg-x, 0px) + 24px), #000 calc(var(--sg-x, 0px) + 24px));
-  mask-image: linear-gradient(to right, #000 calc(var(--sg-x, 0px) - 24px), transparent calc(var(--sg-x, 0px) - 24px), transparent calc(var(--sg-x, 0px) + 24px), #000 calc(var(--sg-x, 0px) + 24px));
-  pointer-events: none;
-}
-.landing-nav[data-condensed='true'][data-held='true'] .fx-nav-dip {
-  display: block;
-  position: absolute;
-  left: calc(var(--sg-x, 0px) - 24px);
-  bottom: -8px;
-  width: 48px;
-  height: 8px;
-  pointer-events: none;
-}
 
 /* The paper floor under the Paper Trail chapter. */
 .fx-char-papers { position: absolute; z-index: 20; }

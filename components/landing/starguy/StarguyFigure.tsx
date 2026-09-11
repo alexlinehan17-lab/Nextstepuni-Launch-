@@ -121,6 +121,7 @@ const Rig: React.FC<StarguySignals & { onFail: () => void }> = ({ speed, lookX, 
   const scaleY = useBoundNumber(VM.scaleY, instance);
 
   useMotionValueEvent(speed ?? (null as never), 'change', v => { if (speedInput) speedInput.value = v; });
+  useEffect(() => { if (speedInput && speed) speedInput.value = speed.get(); }, [speedInput, speed]);
   useDrive(lookX, v => headTurn.current(clamp(v, -1, 1) * LOOK_TURN));
   useDrive(lookY, v => headY.current(HEAD_BASE_Y + clamp(v, -1, 1) * LOOK_NOD));
   useDrive(lean, v => leanDeg.current(clamp(v, -12, 12)));
