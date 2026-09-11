@@ -657,7 +657,7 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "– optimal warm up prior to an event and between events (in order to achieve a good performance at the first attempt), correct choice of starting height in the high jump, correct choice of tempo in the 800 metres",
+      "include – optimal warm up prior to an event and between events (in order to achieve a good performance at the first attempt), correct choice of starting height in the high jump, correct choice of tempo in the 800 metres",
       "Well equipped for the competition – clothing, spikes",
       "Developed psychological skills – heptathletes who are confident tend to be successful in combined events",
       "Rational nutrition plan (food and drink) – based on the sequence of events",
@@ -732,7 +732,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 10,
+   "ofParts": 11,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -756,7 +756,8 @@
       "Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method",
       "Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition",
       "Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person",
-      "Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative",
+      "Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some",
+      "of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative",
       "Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"
      ]
     }
@@ -930,29 +931,17 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 1 marks",
-   "answer": 2,
-   "ofParts": 2,
-   "perPart": 1
+   "kind": "questionTotal"
   },
-  "totalMarks": 2,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Correct stage of skill learning identified",
-    "marks": 2,
+    "kind": "point",
+    "verbatim": "Rio Olympic Games",
+    "marks": null,
     "openList": true,
-    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 1,
-     "options": [
-      "“As a technique there is a lot involved, but after 17 years you don’t even have to think about it at this stage, it just happens.” won a silver medal in the men’s lightweight double sculls category at the 2016",
-      "Rio Olympic Games"
-     ]
-    }
+    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -2127,12 +2116,12 @@
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 6,
+  "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Boxing – mouth guard",
+    "verbatim": "of safety equipment relevant to named physical activity",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -2140,7 +2129,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "gloves",
+    "verbatim": "Boxing – mouth guard, gloves",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -2362,13 +2351,21 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Female gymnasts are said to peak in performance at 16, the minimum age at which they can compete at senior level events, including the Olympics. In reality, many female gymnasts are considered to peak at 12. Whereas male gymnasts bulk up with puberty and become stronger competitors, their female peers are generally considered more effective as children. “You want to be light in the gym, you want to be petite,” says Biles, who started relatively late, at the age of 6. For females, once you go through puberty, your body changes, and that makes it harder to do gymnastics",
+    "verbatim": "from case study provided in relation to the influences that impact on + the participation patterns of boys and girls in gymnastics",
     "marks": null,
     "openList": true,
     "contextNote": ""
    },
    {
     "id": "r-2",
+    "kind": "point",
+    "verbatim": "Female gymnasts are said to peak in performance at 16, the minimum age at which they can compete at senior level events, including the Olympics. In reality, many female gymnasts are considered to peak at 12. Whereas male gymnasts bulk up with puberty and become stronger competitors, their female peers are generally considered more effective as children. “You want to be light in the gym, you want to be petite,” says Biles, who started relatively late, at the age of 6. For females, once you go through puberty, your body changes, and that makes it harder to do gymnastics",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
     "kind": "point",
     "verbatim": "Role models, peer influence",
     "marks": null,
@@ -4014,6 +4011,35 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2022-hl-q18cii",
+  "topicId": "physical-education-1-1",
+  "conceptId": "pe-1-1-social-benefits-participation-adults",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2022 HL Q18(c)(ii)",
+  "questionText": "Discuss two social benefits of physical activity participation for adults.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "used must be social benefits",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2022-hl-q3",
   "topicId": "physical-education-0-13",
   "conceptId": "pe-0-13-strategies-athlete-could-enhance",
@@ -4407,7 +4433,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Example Making links with local primary schools",
+    "verbatim": "Making links with local primary schools",
     "marks": 2,
     "openList": true,
     "contextNote": ""
@@ -4743,7 +4769,7 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Example Galway races",
+      "Galway races",
       "Irish open (Golf)",
       "Red Bull Cliff Diving"
      ]
@@ -4766,29 +4792,17 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 2 marks",
-   "answer": 2,
-   "ofParts": 2,
-   "perPart": 2
+   "kind": "questionTotal"
   },
   "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Appropriate suggestions",
-    "marks": 4,
+    "kind": "point",
+    "verbatim": "Wear protective equipment eg. Helmet/shin guards",
+    "marks": null,
     "openList": true,
-    "contextNote": "2 answers at 2 marks each, as the scheme prices it.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "Helmet/shin guards",
-      "Wear protective equipment"
-     ]
-    }
+    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -5004,6 +5018,35 @@
       "The transverse plane"
      ]
     }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2023-hl-q1b",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-planes-human-movement-correctly",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2023 HL Q1(b)",
+  "questionText": "Describe the two planes of human movement, correctly named in (a). Use a sporting example of movement in each plane to support your answer.",
+  "stem": "Q1(a): Name any two planes of human movement.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "given to support the description",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -5254,6 +5297,35 @@
     "kind": "point",
     "verbatim": "Rules",
     "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2023-ol-q10",
+  "topicId": "physical-education-1-24",
+  "conceptId": "pe-1-24-sports-endorsement-sports-merchandising",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2023 OL Q10",
+  "questionText": "• Sports endorsement • Sports merchandising • Sports related advertising.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "provided but no explanation",
+    "marks": null,
     "openList": true,
     "contextNote": ""
    }
@@ -6348,7 +6420,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 1 marks",
    "answer": 2,
-   "ofParts": 4,
+   "ofParts": 5,
    "perPart": 1
   },
   "totalMarks": 2,
@@ -6356,7 +6428,7 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Example of accurate statements include",
+    "verbatim": "Any 2 of the answers the scheme states",
     "marks": 2,
     "openList": true,
     "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
@@ -6364,6 +6436,7 @@
      "claimMax": 2,
      "perOption": 1,
      "options": [
+      "of accurate statements include",
       "Around 2007/2008 was the period when most positive test occurred",
       "The least amount of positive tests happened around 2020",
       "There has been an increase in the number of positive tests since the year 2020",
@@ -7188,21 +7261,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Examples",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "The notion that it is innovative",
     "marks": null,
     "openList": true,
     "contextNote": ""
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Responding quickly to situations",
     "marks": null,
@@ -8296,6 +8361,68 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2025-hl-q17d",
+  "topicId": "physical-education-1-15",
+  "conceptId": "pe-1-15-examine-ways-participants-adapted",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2025 HL Q17(d)",
+  "questionText": "Examine ways in which participants in adapted physical activities can be provided with opportunities to achieve excellence.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "of adapted physical activity provided +",
+    "marks": 12,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2025-hl-q18aii",
+  "topicId": "physical-education-1-6",
+  "conceptId": "pe-1-6-examples-gamesmanship",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2025 HL Q18(a)(ii)",
+  "questionText": "Give two examples of gamesmanship.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "of gamesmanship in physical activity or sport",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2025-hl-q6b",
   "topicId": "physical-education-0-0",
   "conceptId": "pe-0-0-would-principles-outlined-question",
@@ -8958,6 +9085,35 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Coordination or muscular endurance cannot be used",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2026-ol-q15c",
+  "topicId": "physical-education-1-3",
+  "conceptId": "pe-1-3-after-success-irish-athletes",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2026 OL Q15(c)",
+  "questionText": "After the success of Irish athletes at the 2024 Olympics, extra funding is being provided to all National Governing Bodies of sport in Ireland. Describe how a National Governing Body (NGB) can help promote physical activity at local and national levels.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "may be used Appropriate description provided",
     "marks": null,
     "openList": true,
     "contextNote": ""

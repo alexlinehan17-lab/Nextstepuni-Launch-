@@ -274,7 +274,7 @@ export const CARDS: SecCard[] = [
     questionText: "Heptathletes must be able to cope with special tactical demands. Heptathletes receive points for each event, according to a scoring table. Therefore, the results of the events and not the placing are the most important thing. Like all combined event athletes they must be able to achieve maximum performance: • in the sprints and hurdles without the benefit of qualifying runs • in the long jump and throws with a limited number of attempts • in a fixed sequence of events over a two day period • even as they become fatigued. Suggest strategies a heptathlete could implement to address the demands outlined above.",
     tariffModel: {"kind":"fixed","notation":"3 + 3 + 2 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Relevant strategies suggested 3+3+2+2", marks: 10, contextNote: "The scheme pays 3 then 3 then 2 then 2 marks, in the order the answers are credited.", openList: true, group: {"claimMax":4,"perOption":3,"options":["– optimal warm up prior to an event and between events (in order to achieve a good performance at the first attempt), correct choice of starting height in the high jump, correct choice of tempo in the 800 metres","Well equipped for the competition – clothing, spikes","Developed psychological skills – heptathletes who are confident tend to be successful in combined events","Rational nutrition plan (food and drink) – based on the sequence of events","Understand how scoring tables work"],"perOptionSteps":[3,3,2,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "Relevant strategies suggested 3+3+2+2", marks: 10, contextNote: "The scheme pays 3 then 3 then 2 then 2 marks, in the order the answers are credited.", openList: true, group: {"claimMax":4,"perOption":3,"options":["include – optimal warm up prior to an event and between events (in order to achieve a good performance at the first attempt), correct choice of starting height in the high jump, correct choice of tempo in the 800 metres","Well equipped for the competition – clothing, spikes","Developed psychological skills – heptathletes who are confident tend to be successful in combined events","Rational nutrition plan (food and drink) – based on the sequence of events","Understand how scoring tables work"],"perOptionSteps":[3,3,2,2]} },
     ],
   } as SecCard,
   {
@@ -308,9 +308,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2020-hl-q8a", topicId: "physical-education-1-9", conceptId: "pe-1-9-irish-anti-doping-rule",
     section: "A", questionRef: "2020 HL Q8(a)",
     questionText: "Identify two Irish anti-doping rule violations.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":10,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":11,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some","of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
     ],
   } as SecCard,
   {
@@ -384,9 +384,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2021-hl-q13b", topicId: "physical-education-0-0", conceptId: "pe-0-0-stage-skill-learning-donovan",
     section: "B", questionRef: "2021 HL Q13(b)",
     questionText: "What stage of skill learning are the O’Donovan brothers at in the sport of rowing? Justify your answer with reference to the case study.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":2,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Correct stage of skill learning identified", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["“As a technique there is a lot involved, but after 17 years you don’t even have to think about it at this stage, it just happens.” won a silver medal in the men’s lightweight double sculls category at the 2016","Rio Olympic Games"]} },
+    { id: "r-1", kind: "point", verbatim: "Rio Olympic Games", marks: null, openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1121,6 +1121,19 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
+    id: "pe-2022-hl-q18cii", topicId: "physical-education-1-1", conceptId: "pe-1-1-social-benefits-participation-adults",
+    section: "C", questionRef: "2022 HL Q18(c)(ii)",
+    questionText: "Discuss two social benefits of physical activity participation for adults.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "used must be social benefits", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q3", topicId: "physical-education-0-13", conceptId: "pe-0-13-strategies-athlete-could-enhance",
     section: "A", questionRef: "2022 HL Q3",
     questionText: "Explain two strategies that an athlete could use to enhance their mental preparedness during performance in a physical activity of your choice. Physical Activity",
@@ -1217,6 +1230,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Correct plane of movement named", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["The sagittal plane","The frontal plane","The transverse plane"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
+    id: "pe-2023-hl-q1b", topicId: "physical-education-0-2", conceptId: "pe-0-2-planes-human-movement-correctly",
+    section: "A", questionRef: "2023 HL Q1(b)",
+    stem: "Q1(a): Name any two planes of human movement.",
+    questionText: "Describe the two planes of human movement, correctly named in (a). Use a sporting example of movement in each plane to support your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "given to support the description", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1526,9 +1553,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2024-hl-q16ai", topicId: "physical-education-1-8", conceptId: "pe-1-8-make-statements-about-doping",
     section: "C", questionRef: "2024 HL Q16(a)(i)",
     questionText: "Make two statements about doping in cycling over recent years based on information presented in Figure 12.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":5,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Example of accurate statements include", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["of accurate statements include","Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1794,9 +1821,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the term, creative application of skill.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Examples", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "The notion that it is innovative", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Responding quickly to situations", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The notion that it is innovative", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Responding quickly to situations", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1942,6 +1968,32 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Justification pf why the components are important in the activity", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
+    id: "pe-2025-hl-q17d", topicId: "physical-education-1-15", conceptId: "pe-1-15-examine-ways-participants-adapted",
+    section: "C", questionRef: "2025 HL Q17(d)",
+    questionText: "Examine ways in which participants in adapted physical activities can be provided with opportunities to achieve excellence.",
+    tariffModel: {"kind":"fixed","notation":"12 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "of adapted physical activity provided +", marks: 12, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
+    id: "pe-2025-hl-q18aii", topicId: "physical-education-1-6", conceptId: "pe-1-6-examples-gamesmanship",
+    section: "C", questionRef: "2025 HL Q18(a)(ii)",
+    questionText: "Give two examples of gamesmanship.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "of gamesmanship in physical activity or sport", marks: null, openList: true },
     ],
   } as SecCard,
   {

@@ -44,25 +44,25 @@ one of those is reported OPEN and none is laundered into an exclusion.
 WHERE THIS STANDS, measured against the census's 741 leaf asks over thirteen
 papers:
 
-    229  covered by 225 cards
-    480  excluded, each carrying the scheme's own printed lines
-     32  OPEN, in the buckets `--report` prints, every one of them an ask
+    235  covered by 231 cards
+    472  excluded, each carrying the scheme's own printed lines
+     34  OPEN, in the buckets `--report` prints, every one of them an ask
          whose SCHEME states an answer this reader cannot lift:
 
        8  the answer is in a printed table's other column and the flat text
           layer interleaves the two (2020 HL Q16(b)(iii)'s energy-system
           grid; 2026 OL Q15(a)(i)'s three-column concept table). pe_tables
-          reads the tables that are drawn with RULES; these are aligned by
-          whitespace, or wrap their cells differently line by line.
-       6  the scheme marks its answer with a TICK in a printed column, and
-          the text layer hands back the tick without the column.
-       5  a marking point does not trace to its own scheme — the converter
-          dropped the marks column into the middle of the SEC's sentence and
-          no rebuilt form of it matches.
-       5  the scheme prints no tariff that reads one way, mostly a part
+          reads the tables drawn with RULES; these are aligned by whitespace,
+          or wrap their cells differently line by line.
+       8  the scheme prints no tariff that reads one way, mostly a part
           priced in two different groups at once (2024 HL Q8(a): "2 x 1 mark"
           for the injury and "2 x 2 marks" for its causes, in one table that
           also holds part (b)).
+       6  the scheme marks its answer with a TICK in a printed column, and
+          the text layer hands back the tick without the column.
+       4  a marking point does not trace to its own scheme — the converter
+          dropped the marks column into the middle of the SEC's sentence and
+          no rebuilt form of it matches.
        3  no scheme part prices the ask at all.
        3  the ask points at a figure, table or case study whose answer is not
           on the paper page this reader found for it.
@@ -71,10 +71,10 @@ papers:
        1  the scheme's line holds its answer welded onto the criterion and
           cut in half by the wrap (2024 OL Q13(b)(i)).
 
-    NONE of those thirty-two is excluded. An exclusion here claims the scheme
-    prints nothing a student could have written, and for an ask whose answer
-    is in a cell this reader could not read, that claim is exactly the thing
-    it does not know.
+    NONE of those thirty-four is excluded. An exclusion here claims the
+    scheme prints nothing a student could have written, and for an ask whose
+    answer is in a cell this reader could not read, that claim is exactly the
+    thing it does not know.
 
 """
 import argparse
@@ -162,6 +162,7 @@ BACK_REFERENCE = re.compile(
 # An option the SEC prints that is not an answer.
 NOT_A_POINT = re.compile(
     r'^(?:etc\.?|and so on|any other\b|other relevant\b|accept\b|award\b'
+    r'|examples?\s*[:.]?\s*$|e\.?\s?g\.?\s*[:.]?\s*$'
     r'|allow\b|note:|no marks\b|max\b|total\b|marks?\b|description\b|or\b'
     # The paper's own rubric, reprinted inside the scheme's table. It tells the
     # candidate how to record their choice and answers nothing.

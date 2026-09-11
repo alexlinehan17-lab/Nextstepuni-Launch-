@@ -266,8 +266,8 @@ LEAD_IN_INLINE = re.compile(
     r'^(?:e\.?\s?g\.?|eg\.?|for example|accept(?: any of the following)?'
     r'|possible (?:candidate )?(?:response|answer)s?'
     r'|suggested (?:response|answer)s?|sample (?:response|answer)s?'
-    r'|answers? may include|examples? (?:include|may include))'
-    r'\s*[:.]?\s+(?=\S)', re.I)
+    r'|answers? may include|examples?(?:\s+(?:include|may include))?)'
+    r'\s*[:.]?\s+(?=[A-Z0-9])', re.I)
 # And the same lead-in printed PART WAY ALONG a row, which is how 2022 sets
 # every one of its lists: "Correctly identifies a characteristic of skilled
 # performance Eg. Kinaesthetic awareness, Anticipation, Consistency".
