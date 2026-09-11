@@ -276,7 +276,7 @@ describe('Engineering exam-topic registry', () => {
     expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 2 });
   });
 
-  it('surfaces 254 written questions and preserves all 484 Mark Bank cards', () => {
+  it('surfaces 254 written questions and preserves all 550 Mark Bank cards', () => {
     expect(subjectAtlasStats('engineering')).toMatchObject({
       questions: 254,
       topics: 74,
@@ -285,10 +285,10 @@ describe('Engineering exam-topic registry', () => {
     });
     // 466 before the 2024 sittings were re-authored: fifteen asks the reader
     // had mis-keyed or mis-assembled, not fifteen new questions.
-    expect(ENGINEERING_HIGHER).toHaveLength(321);
-    expect(ENGINEERING_ORDINARY).toHaveLength(163);
+    expect(ENGINEERING_HIGHER).toHaveLength(357);
+    expect(ENGINEERING_ORDINARY).toHaveLength(193);
     expect(new Set(
       [...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id),
-    ).size).toBe(484);
+    ).size).toBe(550);
   });
 });

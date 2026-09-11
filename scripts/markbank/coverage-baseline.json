@@ -270,19 +270,19 @@
     "refsHash": "ffceb66a16576771"
   },
   "engineering": {
-    "cards": 484,
-    "contentHash": "33c1e2eed8e3b78a",
-    "coveragePct": 75.1,
-    "covered": 605,
+    "cards": 550,
+    "contentHash": "f0d93e1d26cc0acf",
+    "coveragePct": 82.7,
+    "covered": 675,
     "excluded": 0,
-    "leaves": 806,
-    "open": 201,
+    "leaves": 816,
+    "open": 141,
     "orphans": 0,
     "papers": {
       "count": 10,
       "hash": "d6f8e4ccadef7bbf"
     },
-    "refsHash": "f12a8586bc16166b"
+    "refsHash": "445743765e61606c"
   },
   "english": {
     "cards": 650,
@@ -523,6 +523,21 @@
       "hash": "a95df1b95d3c2107"
     },
     "refsHash": "15602894c57e4cf0"
+  },
+  "maltese": {
+    "cards": 29,
+    "contentHash": "30ba73ce24958549",
+    "coveragePct": 73.7,
+    "covered": 29,
+    "excluded": 27,
+    "leaves": 76,
+    "open": 20,
+    "orphans": 0,
+    "papers": {
+      "count": 6,
+      "hash": "33e3be70d6c6fac1"
+    },
+    "refsHash": "528ec21bd8e43b8b"
   },
   "mandarin-chinese": {
     "cards": 201,

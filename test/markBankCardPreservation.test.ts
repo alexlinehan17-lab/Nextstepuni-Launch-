@@ -468,8 +468,22 @@ const decks = [
   ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
-  ['engineering:higher', ENGINEERING_HIGHER, 321, '6be0af4210578c523f84f74d984ef44073e2da9203a4ebb6e845e0ff6cbad335'],
-  ['engineering:ordinary', ENGINEERING_ORDINARY, 163, '8e0f929651ee2178e5fc4d37b15d06f1e2db237a70aa631061de68c35e7d455b'],
+  /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
+   * against the papers. 466 cards -> 550, and coverage 585/806 -> 675/816 —
+   * the denominator itself was wrong, because every paper sets Question 1
+   * (a) to (m) and the reader's letter run stopped at (l).
+   *
+   * ELEVEN letter cards are gone and none is lost: each carried FIVE
+   * questions at once, because the paper prints a cue and its five romans
+   * beneath it, and each roman is now its own card. CARD_ID_ALIASES carries
+   * a student's progress to the first of them.
+   *
+   * eng-2024-hl-q1-l is withdrawn outright: it carried Question 1(m)'s ask
+   * welded onto (l)'s, which is what the letter run stopping at (l) did to
+   * every paper. Read properly, (l) states one thing and files under no
+   * syllabus topic. */
+  ['engineering:higher', ENGINEERING_HIGHER, 357, '887a423276b31e51315e70e1c1ecc8d10890ec745afbcdb901e783d11877ef46'],
+  ['engineering:ordinary', ENGINEERING_ORDINARY, 193, '353680642063db2d4248f69cef8c8afecde8651c7d373fda43c8abf5a73cc94a'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
    * added and none replacing anything. Nothing in any other deck moved. */
@@ -708,7 +722,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_129);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_195);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -721,7 +735,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(34);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(45);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -766,7 +780,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_738);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
