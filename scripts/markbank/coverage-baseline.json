@@ -525,19 +525,19 @@
     "refsHash": "15602894c57e4cf0"
   },
   "maltese": {
-    "cards": 41,
-    "contentHash": "1fa1b0f203545ade",
-    "coveragePct": 77.6,
-    "covered": 41,
-    "excluded": 18,
+    "cards": 29,
+    "contentHash": "30ba73ce24958549",
+    "coveragePct": 73.7,
+    "covered": 29,
+    "excluded": 27,
     "leaves": 76,
-    "open": 17,
+    "open": 20,
     "orphans": 0,
     "papers": {
       "count": 6,
       "hash": "33e3be70d6c6fac1"
     },
-    "refsHash": "a512e7ef0262e588"
+    "refsHash": "528ec21bd8e43b8b"
   },
   "mandarin-chinese": {
     "cards": 201,

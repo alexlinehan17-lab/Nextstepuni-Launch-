@@ -85,54 +85,6 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "higher",
     paperFileid: "LC557ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
-    id: "mlt-2018-hl-i-4", topicId: "maltese-0-1", conceptId: "istudju-tal-fruntieri-huwa-interessanti-aliex",
-    section: "I", questionRef: "2018 HL Section I Q4",
-    questionText: "L-istudju tal-fruntieri huwa interessanti għaliex, bħal studji oħrajn, iġibna konxji ta’ ħwejjeġ ovvji, ovvji tant li jaħarbulna. Ikkkummenta dwar dan il-kliem fil-kuntest tal-artiklu.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "L-istudju tal-fruntieri huwa interessanti għaliex, bħal studji oħrajn, iġibna konxji ta’ ħwejjeġ ovvji, ovvji tant li jaħarbulna. Ikkkummenta dwar dan il-kliem fil-kuntest tal- artiklu. (It-tweġibiet għall-mistoqsijiet 4, 5, 6 jeħtieġu r-rispons tal-kandidat. It-tweġibiet hawn taħt huma eżempji.) L-awtur juri li fil-ħajja ta’ kuljum hemm affarijiet li ma nagħtux kashom minkejja li huma importanti; il-fruntieri bejn il-bnedmin jeżistu, qegħdin hemm iżda qatt ma naħsbu dwarhom.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 4",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3
-          ],
-          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
-    id: "mlt-2018-hl-i-5", topicId: "maltese-0-1", conceptId: "aliex-hemm-enfassi-qawwija-fuq-fatt",
-    section: "I", questionRef: "2018 HL Section I Q5",
-    questionText: "Għaliex hemm enfassi qawwija fuq il-fatt li l-fruntieri jiċċaqilqu?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Għaliex hemm enfassi qawwija fuq il-fatt li l-fruntieri jiċċaqalqu? Dan juri kif id-diviżjonijiet li l-bniedem joħloq huma ta’ spiss artifiċjali jew bla raġuni soda għaliex jinbidlu skont il-kuntest storiku jew soċjali. / Issir ukoll referenza għall- kunċett ta’ bidla li ssir fil-fruntieri; ħaġa li tidher kontradittorja għall-bidu.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 5",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3
-          ],
-          "attribution": "SEC Maltese 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2018 Higher Level — © State Examinations Commission.",
     id: "mlt-2018-hl-i-6", topicId: "maltese-0-1", conceptId: "iddiskuti-importanza-tal-sentenza-dan-artiklu",
     section: "I", questionRef: "2018 HL Section I Q6",
     questionText: "Iddiskuti l-importanza tal-aħħar sentenza ta’ dan l-artiklu fid-dawl tal-ħsieb ewlieni tal-silta kollha: U allura l-fruntiera tkompli tiċċaqlaq.",
@@ -274,131 +226,6 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
-    id: "mlt-2022-hl-i-1-a", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijet-ejjin",
-    section: "I", questionRef: "2022 HL Section I Q1(a)",
-    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: oqsma",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "tajt titwila : ħarist malajr", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
-    id: "mlt-2022-hl-i-1-b", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijet-ejjin",
-    section: "I", questionRef: "2022 HL Section I Q1(b)",
-    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: ħemda",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "battala: vojta", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
-    id: "mlt-2022-hl-i-1-ċ", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijet-ejjin",
-    section: "I", questionRef: "2022 HL Section I Q1(ċ)",
-    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: żżomm",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "burdati: il‐mod kif wieħed ikun qed iħossu; temperament;", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
-    id: "mlt-2022-hl-i-1-d", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijet-ejjin",
-    section: "I", questionRef: "2022 HL Section I Q1(d)",
-    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: antikwati",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "l‐għan: l‐iskop; fini", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2022 Higher Level — © State Examinations Commission.",
-    id: "mlt-2022-hl-i-1-e", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijet-ejjin",
-    section: "I", questionRef: "2022 HL Section I Q1(e)",
-    questionText: "Spjega fi kliemek it‐tifsira tal‐espressjonijet li ġejjin: ħidmietna",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "il‐qofol: l‐iktar ħaġa importanti", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2022 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC557ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
@@ -458,31 +285,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "stħarriġ: tiftix permezz ta’ mistoqsijiet magħmula lil numru ta’ nies/eżerċizzju li bih tinġabar informazzjoni min‐nies permezz ta’ mistoqsijiet", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2023 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2023 Higher Level — © State Examinations Commission.",
-    id: "mlt-2023-hl-i-1-d", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijiet-ejjin",
-    section: "I", questionRef: "2023 HL Section I Q1(d)",
-    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: impjieg",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "qofol: iċ‐ċentru/ l‐important/dak li jorbot u jħoll", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -627,87 +429,12 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC557ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2024 Higher Level — © State Examinations Commission.",
-    id: "mlt-2024-hl-i-1-b", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijiet-ejjin",
-    section: "I", questionRef: "2024 HL Section I Q1(b)",
-    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: nisslet",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "nislet: żergħet/twieldet", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2024 Higher Level — © State Examinations Commission.",
     id: "mlt-2024-hl-i-1-ċ", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijiet-ejjin",
     section: "I", questionRef: "2024 HL Section I Q1(ċ)",
     questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: tħażżiż",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "tħażżiż: tpenġija ħafifa bil‐lapes", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2024 Higher Level — © State Examinations Commission.",
-    id: "mlt-2024-hl-i-1-d", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijiet-ejjin",
-    section: "I", questionRef: "2024 HL Section I Q1(d)",
-    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: l-isfida",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "jibqa’ mistgħaġeb: ikun impressjonat", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 1",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2024 Higher Level — © State Examinations Commission.",
-    id: "mlt-2024-hl-i-1-e", topicId: "maltese-0-0", conceptId: "spjega-kliemek-tifsira-tal-espressjonijiet-ejjin",
-    section: "I", questionRef: "2024 HL Section I Q1(e)",
-    questionText: "Spjega fi kliemek it-tifsira tal-espressjonijiet li ġejjin: il-ħidma",
-    tariffModel: {"kind":"fixed"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "l‐isfida: prova li trid tegħlibha", marks: 1, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -737,31 +464,6 @@ export const CARDS: SecCard[] = [
     sourceMaterial: {
           "kind": "source-text",
           "label": "QUESTION 2",
-          "title": "Reading text — answer in Maltese",
-          "pages": [
-                2,
-                3,
-                4
-          ],
-          "attribution": "SEC Maltese 2024 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\""
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC557ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Maltese 2024 Higher Level — © State Examinations Commission.",
-    id: "mlt-2024-hl-i-3", topicId: "maltese-0-1", conceptId: "kif-ejjiet-fil-passat-biex-issa",
-    section: "I", questionRef: "2024 HL Section I Q3",
-    questionText: "Kif ħejjiet ruħha fil-passat biex issa tista’ tiddisinja l-ħwejjeġ tagħha stess?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Kif ħejjiet ruħha fil‐passat biex issa tista’ tiddisinnja l‐ħwejjeġ tagħha stess? Rachel kienet imdorrija tara lin‐nanna u lill‐ommha jħitu d‐dar, kienet tieħu sehem f’attivitajiet ta’ esperjenza fl‐iskola; għamlet l‐istudji tagħha fl‐MCAST u għamlet żmien tassisti lil disinjaturi b’esperjenza.", marks: 5, contextNote: "The examination requires every answer in MALTESE. The paper prints the rule on its own first page: \"It-tweġibiet kollha għandhom jinkitbu bil-Malti.\"" },
-    ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "QUESTION 3",
           "title": "Reading text — answer in Maltese",
           "pages": [
                 2,
