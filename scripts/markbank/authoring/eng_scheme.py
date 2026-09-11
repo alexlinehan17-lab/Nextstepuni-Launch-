@@ -114,9 +114,31 @@ PUA_BULLET = re.compile(r'\s*[\uf0a7\uf0b7\uf0d8\uf0fc\uf06c]\s*')
 # The running footer arrives the same way and welds onto the end of a point:
 # "Stepper motors are driven by control circuits Page 18".
 PAGE_FOOT = re.compile(r'\s*\bPage\s+\d{1,3}\b\s*', re.I)
+# "A - 1120°C", "B = Eutectoid point", "C: Pearlite" -- the scheme answering
+# a label printed on its diagram. lib.LABELLED_POINT reads the same shape to
+# build a card's label key.
+LABELLED_ANSWER = re.compile(r'^[A-H]\s*[=:\u2010\u2013\u2014-]\s*\S')
+# The PRACTICAL project's marking scheme, bound into the same PDF after the
+# written one. Every page of it names itself in its own banner, and the four
+# spellings below are the four the SEC has used across the ten sittings:
+# "Practical Marking Scheme", "Practical - Marking Scheme", "Practical
+# Examination - Marking Scheme", "Practical Test -".
+PRACTICAL_PAGE = re.compile(
+    r'\bPractical\b\s*[-‐-―]?\s*'
+    r'(?:Marking\s+Scheme|Examination|Test)\b')
+# The cover page names BOTH documents -- "Marking Scheme Written Examination
+# and Practical Examination" -- so a page that mentions the written one too is
+# the cover, not the practical scheme.
+WRITTEN_PAGE = re.compile(r'\bWritten\s+Examination\b')
 
 
-def _lines(page, join='block'):
+def _clean(text):
+    """One line of the scheme with the page's own furniture taken out of it."""
+    return ' '.join(PUA_BULLET.sub(
+        ' ', PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', text or ''))).split())
+
+
+def _lines(page, join='block', art=()):
     """(x0, y0, x1, y1, text, bold) for every line, ligatures folded.
 
     Two pages, two assemblies, because the scheme really is two documents.
@@ -155,6 +177,10 @@ def _lines(page, join='block'):
             x0, y0, x1, y1 = line['bbox']
             rows.append((x0, y0, x1, y1, text, bold))
         rows.sort(key=lambda r: (round(r[1], 1), r[0]))
+        if join == 'block':
+            for row in _cells(rows, page.rect.width - MARK_COLUMN, art):
+                out.append(row + (block_id(block),))
+            continue
         for row in rows:
             if join == 'none':
                 out.append(row + (block_id(block),))
@@ -170,6 +196,75 @@ def _lines(page, join='block'):
                 out.append(row + (block_id(block),))
     out.sort(key=lambda r: (round(r[1], 1), r[0]))
     return [r[:6] for r in out]
+
+
+# How far a table CELL may sit off its neighbour's baseline and still be the
+# same row of the table. Lines that share a baseline exactly are already
+# joined at 2.0; this is the wider slack, and it is allowed only between
+# lines whose x ranges do not overlap and which stand beside each other. See
+# _cells.
+CELL_SLACK = 6.0
+# Where the MARKING COLUMN starts, as an inset from the right edge of the
+# page. Ordinary Level rules a column down the right of every answer table and
+# writes the examiner's arithmetic in it -- "Calculations", "Award 4 @ 5
+# Marks", "Total (20) Marks" -- and its cells miss the answers' baselines by
+# about three points as well, so under the wider slack "Total (20) Marks"
+# joined the row BELOW it and 2021 Ordinary Q7(b)(iii) read "Smallest diameter
+# of the hole; 29.94 mm Total (20) Marks". Across the ten schemes every such
+# cell starts at x446 or beyond on a 595pt page; no answer row is allowed to
+# reach across that line.
+MARK_COLUMN = 150.0
+
+
+def _cells(rows, mark_column, art=()):
+    """One entry per ROW of the block, its cells read left to right.
+
+    A bordered table does not set its cells on a shared baseline. 2022
+    Ordinary Level answers Q7(b) in a two-column table and prints the marker
+    "(i)" at y302.9 beside its own answer at y299.6 -- the marker three points
+    LOWER than the line it labels. Sorted on the baseline the marker therefore
+    lands AFTER its answer, so every answer was filed under the key above it:
+    (b) held "Nominal diameter of the hole; 20.00 mm", (i) held the SHAFT's
+    answer, (ii) the hole's, (iii) the tolerance and (iv) nothing at all.
+    Four asks answered with their neighbour's number, and the same shift put
+    "For accurate measurement of machine" under (c) and left (c)(i) opening
+    "parts." -- which is why three of Q7(c)'s points did not trace to the
+    scheme and the whole question went unauthored.
+
+    The wider slack is not applied to every pair of lines, because a WRAPPED
+    line is also a few points from its neighbour and joining those would weld
+    a paragraph into one row. What separates them is x: the cells of a table
+    row stand side by side and do not overlap, and the lines of a wrapped
+    paragraph start at the same x and overlap almost entirely. The row is then
+    read left to right, which is the order the page prints it in.
+
+    Nor is it applied ACROSS the marking column, which is a column of the
+    examiner's own arithmetic and not part of any answer.
+    """
+    groups = []
+    for row in rows:
+        if groups:
+            last = groups[-1]
+            dy = abs(min(r[1] for r in last) - row[1])
+            apart = all(row[0] >= r[2] or row[2] <= r[0] for r in last)
+            near = last + [row]
+            graded = any(r[0] >= mark_column for r in near)
+            drawn = any(r[0] < a[2] and a[0] < r[2]
+                        and r[1] < a[3] and a[1] < r[3]
+                        for r in near for a in art)
+            if dy <= 2.0 or (dy <= CELL_SLACK and apart
+                             and not graded and not drawn):
+                last.append(row)
+                continue
+        groups.append([row])
+    out = []
+    for g in groups:
+        g.sort(key=lambda r: r[0])
+        out.append((min(r[0] for r in g), min(r[1] for r in g),
+                    max(r[2] for r in g), max(r[3] for r in g),
+                    ' '.join(r[4] for r in g).strip(),
+                    any(r[5] for r in g)))
+    return out
 
 
 def _join_row(rows):
@@ -296,8 +391,16 @@ def parse_tariff(text):
         n, per = WORD.get(m.group(1).lower()), int(m.group(2))
         if n:
             return (t, n * per, (n, per))
-    if SPLIT.match(rule_text):
-        vals = [int(x) for x in re.findall(r'\d{1,2}', rule_text)]
+    # "5 marks", "3 + 2 marks". The split with the word written after it, and
+    # the only spelling the grid uses that was not read: 2022 Ordinary prices
+    # Question 7(b) "(i) 5 marks / (ii) 5 marks / (iii) 5 marks / (iv) 5 marks
+    # (20)" and every one of those four cells came back unreadable, so (b) was
+    # unpriced, its four romans resolved up to the whole question and the card
+    # they produced carried all of Question 7. Four cells in the corpus are
+    # written this way and nothing else is.
+    bare = re.sub(r'\s*marks?\s*$', '', rule_text, flags=re.I).strip()
+    if SPLIT.match(bare):
+        vals = [int(x) for x in re.findall(r'\d{1,2}', bare)]
         return (t, sum(vals), None)
     return None
 
@@ -541,12 +644,29 @@ class EngScheme:
                 if n in summary:
                     continue
                 page = doc[n]
-                rows = _lines(page)
+                # The PDF holds a THIRD document as well: the marking scheme
+                # for the practical project, set as a grid of part numbers and
+                # subjective bands. It is printed after the written answers
+                # with nothing between them, so its every line was appended to
+                # whichever key the written scheme left open -- the last
+                # question's last part ended "... 100 Marks (x 1.5 = 150
+                # Total) Mark 20 20 Mark 20 4 4 4 ... Subjective Mark 1 - 20",
+                # which is in no scheme sentence and refused the part. Six of
+                # the ten sittings print it; each names itself on every page.
+                flat = ' '.join(page.get_text().split())
+                if PRACTICAL_PAGE.search(flat) and not WRITTEN_PAGE.search(flat):
+                    continue
+                # The artwork is read BEFORE the lines, because a label
+                # printed on a picture must not be joined into an answer row:
+                # 2022 Higher prints "load" and "during necking" on the axes
+                # of a stress-strain graph, a few points apart, and joined
+                # they welded onto the end of (b)(ii)'s marking point.
+                art = self._artwork(page)
+                rows = _lines(page, art=art)
                 # The answer column's left edge: where the prose on this page
                 # actually starts, not a guess at it.
                 wide = [r[0] for r in rows if len(r[4]) > 40]
                 margin = min(wide) if wide else 0.0
-                art = self._artwork(page)
                 right = page.rect.width - 60
                 for x0, y0, x1, y1, text, bold in rows:
                     h = QHEAD.match(text)
@@ -581,10 +701,39 @@ class EngScheme:
                         r = ROMAN.match(body_text)
                     elif bold:
                         r = ROMAN.match(body_text)
+                    # "(i)" after "(h)" is the LETTER i, not roman one -- the
+                    # same reading the TARIFF TABLE is already given, and the
+                    # answer body never had it. Question 1 runs (a) to (m) in
+                    # all ten papers, so every one of them answered its part
+                    # (i) under (h)(i): 2022 Higher filed "Benefits of powder
+                    # coating steel frames:" and its six points there, and
+                    # (i) itself resolved to the whole question, which prices
+                    # and answers nothing at that key. Ten asks, one per
+                    # sitting, refused as a scheme that states nothing.
+                    #
+                    # Unless the letter above it is only a CUE. 2023 Ordinary
+                    # answers "(h) Any one:" and then "(i) CAD Modelling:",
+                    # "(ii) Artificial Intelligence:", "(iii) Electric
+                    # vehicle:" -- the paper sets those as (h)'s own romans,
+                    # and read as the letter i they took part (i)'s answer
+                    # away from it and gave (h) nothing. A letter that has
+                    # stated its answer is finished; one that has stated a
+                    # heading ending on a colon and nothing else is
+                    # introducing the list beneath it.
+                    lettered = False
+                    above = out.get((q, letter, None)) if letter else None
+                    cue = bool(above) and above['lead'].strip().endswith(':') \
+                        and not [x for x in above['points'] if x.strip()]
+                    if r and not m and roman is None and not cue \
+                            and r.group(1) in FOLLOWS \
+                            and letter == FOLLOWS[r.group(1)]:
+                        letter, roman = r.group(1), None
+                        body_text = body_text[r.end():].strip()
+                        r, lettered = None, True
                     if r:
                         roman = r.group(1)
                         body_text = body_text[r.end():].strip()
-                    if m or r:
+                    if m or r or lettered:
                         key = (q, letter, roman)
                         # Both branches land on one key, and joined with
                         # nothing between them the sentence assembly ran the
@@ -713,15 +862,19 @@ class EngScheme:
         # not one word, where "Parallel Hybrid", "Substitutional defect." and
         # "Blast furnace: Pig iron." all are answers. Mostly-digits is a mark
         # breakdown or a graph's axis: "Labels 1 + 1 + 1", "2 4 6 8".
-        lead_only = ' '.join((b.get('lead') or '').split())
+        # The marking grid is swept into the HEADING as readily as into a
+        # point -- 2021 Ordinary sets "Total (12) Marks" on the same row as
+        # "(i) Malleability:" -- and the heading is what a lead-only part
+        # ships as its whole answer. Scrubbed with the same three patterns
+        # the points get, so both sides of the part are read the same way.
+        lead_only = _clean(b.get('lead'))
         if (not [x for x in b['points'] if x.strip()] and lead_only
                 and not lead_only.endswith(':')
                 and not LEAD_INSTRUCTION.match(lead_only)
                 and len(re.findall(r'[A-Za-z]{3,}', lead_only)) >= 2
                 and len(re.findall(r'\d', lead_only)) <= len(lead_only) / 4):
             return [lead_only]
-        lines = [PUA_BULLET.sub(' ', PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', x)))
-                 for x in b['points']]
+        lines = [_clean(x) for x in b['points']]
         # The bold heading is the scheme's restatement of the ask and not a
         # marking point -- but only when it is a whole one. 2021 HL Q4(b)(iii)
         # sets "Point X is the eutectic point. This is where the liquid steel
@@ -730,10 +883,11 @@ class EngScheme:
         # there left the answer starting "going through a pasty stage", which
         # is what a student would screenshot. A lead that does not close, above
         # a point that does not open, is one sentence and is rejoined.
-        lead = ' '.join((b.get('lead') or '').split())
+        lead, rejoined = lead_only, False
         if lines and lead and not re.search(r'[.?!:]\s*$', lead) \
                 and re.match(r'[a-z]', lines[0].strip()):
             lines = [f'{lead} {lines[0]}'.strip()] + list(lines[1:])
+            rejoined = True
         if not any(BULLET.match(x) for x in lines):
             # One point per SENTENCE, not one per key. Joining every line a
             # key holds made points of 1,588 characters -- a whole column of
@@ -766,14 +920,71 @@ class EngScheme:
                     cur = []
             if cur:
                 out.append(' '.join(cur).strip())
-            return [x for x in out if x]
-        out = []
+            return self._with_lead(q, letter, roman, lead,
+                                   [x for x in out if x], rejoined)
+        # A standalone OR closes the point above it here too. The sentence
+        # branch has always honoured it; this one did not, so the scheme's
+        # second branch was appended to the LAST BULLET of the first: 2022
+        # Higher Q9(c)(ii) read "Easy to attach and made to fit most makes and
+        # models. OR Advantages of wireless charging:" as one marking point,
+        # which appears in no scheme and refused the part. The line after an
+        # OR opens a point whether or not it carries a bullet, because the
+        # second branch usually opens with its own heading.
+        out, fresh = [], False
         for line in lines:
+            if line.strip() in ('OR', 'Or'):
+                fresh = True
+                continue
             if BULLET.match(line):
                 out.append(BULLET.sub('', line).strip())
+            elif fresh:
+                out.append(line.strip())
             elif out:
                 out[-1] = f'{out[-1]} {line}'.strip()
-        return [x for x in out if x]
+            fresh = False
+        return self._with_lead(q, letter, roman, lead,
+                               [x for x in out if x], rejoined)
+
+    def _with_lead(self, q, letter, roman, lead, out, rejoined):
+        """The points, with the bold heading put back when it is an ANSWER.
+
+        A bold heading is normally the scheme restating the ask, and dropping
+        it is right: "Injection Moulding", "Regenerative braking", "Knurling
+        tool" name the thing the points below then explain. But sometimes the
+        heading IS the first answer -- 2022 Higher Q4(b)(i) is priced "2 + 4"
+        and reads "A = Eutectoid point." in bold with the transformation
+        described underneath, and (b)(iii) is priced "2 + 2" and answers metal
+        A in the heading and metal B beneath it. Read without the heading each
+        part states one answer against a split naming two, so the card was
+        refused as a tariff that does not fit -- and had it been made it would
+        have claimed the full tariff for half the answer.
+
+        The PAPER'S OWN ARITHMETIC decides, never the prose: the heading is
+        taken back only where the printed split names exactly one more part
+        than the points do, so what is read adds up to what is printed. Seven
+        keys in the corpus satisfy that, and every one of them is an answer.
+        """
+        if rejoined or not lead or not out:
+            return out
+        note = (self.notation(q, letter, roman) or '').strip()
+        if not SPLIT.match(note):
+            return out
+        terms = re.findall(r'\d{1,2}', note)
+        if len(terms) < 2 or len(out) != len(terms) - 1:
+            return out
+        if lead.endswith(':') or LEAD_INSTRUCTION.match(lead):
+            return out
+        # Two real words, and not mostly digits -- the test a lead-only part
+        # is already read with. A LABELLED VALUE passes neither and is still
+        # an answer: 2022 Higher Q5(b)(iii) states the melting points as "A -
+        # 1120°C" in bold over "B - 1500°C", priced "2 + 2". The sibling
+        # beneath it settles it -- both sides of the split are written the
+        # same way, which a heading never is.
+        labelled = LABELLED_ANSWER.match(lead) and LABELLED_ANSWER.match(out[0])
+        if not labelled and (len(re.findall(r'[A-Za-z]{3,}', lead)) < 2
+                             or len(re.findall(r'\d', lead)) > len(lead) / 4):
+            return out
+        return [lead] + out
 
     def points_under(self, q, letter=None, roman=None):
         """This key's marking points AND every key beneath it, in page order.

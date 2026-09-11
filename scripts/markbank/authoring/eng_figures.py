@@ -71,6 +71,15 @@ def artwork(page):
 
     Engineering draws as often as it photographs -- a furnace in section, a
     welded joint, a mechanism -- and a drawing has no image rect at all.
+
+    What is NOT a picture is the page's own decoration. Several papers set a
+    tinted border down the page and it reaches the text layer as the whole
+    page, sliced into 94pt bands: 2022 Ordinary page 8 carries six of them,
+    each 595pt wide on a 595pt page. Taken as artwork they made every crop on
+    that page the FULL WIDTH of it, so Q7(b)'s picture came back with the ask
+    printed beside it and Q7(a)'s came back without the A and B its ask names.
+    A picture bleeding to both edges of the page is the page, not a picture;
+    176 rects across the ten papers are that and nothing else is.
     """
     out = []
     for im in page.get_images(full=True):
@@ -80,9 +89,11 @@ def artwork(page):
         r = d['rect']
         if r.width > 18 and r.height > 18:
             out.append((r.x0, r.y0, r.x1, r.y1))
+    edge = page.rect.width - 2
     return [a for a in out
             if a[1] > HEADER and a[3] < page.rect.height - FOOTER
-            and a[2] - a[0] > 24 and a[3] - a[1] > 24]
+            and a[2] - a[0] > 24 and a[3] - a[1] > 24
+            and not (a[0] <= 2 and a[2] >= edge)]
 
 
 def is_answer_box(page, rect):
