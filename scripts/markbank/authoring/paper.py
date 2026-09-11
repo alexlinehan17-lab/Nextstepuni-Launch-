@@ -717,16 +717,34 @@ class Paper:
                 else:
                     roman = found_roman
                 key = (q, letter, roman)
-                # Both branches of a choice land on one key where the paper
-                # reprints the marker — 2024 OL Q6(c)(ii) is "Explain the term
-                # CAD." and, after the OR, "…integrated into computer numerical
-                # control." The paper's own word goes back BETWEEN them, which
-                # is how the alternatives printed inline already read. Without
-                # it the two run together as one sentence the SEC never set.
-                if or_part and self.parts.get(key):
-                    self.parts[key].append('OR')
                 self.parts.setdefault(key, [])
                 if rest:
+                    # A PART-level OR. The standalone OR above announces a
+                    # choice variant, and where the variant repeats the whole
+                    # question the head handler takes it (q becomes -q, and
+                    # or_pending is cleared there). Where it repeats only a
+                    # PART, no head arrives: 2021 OL Engineering prints "(d)
+                    # Explain any two of the following terms: (i) Malleability
+                    # ...", then OR, then "(d) (i) State two advantages of
+                    # robotics in manufacturing." The second printing re-opens
+                    # keys the first already filled and the two branches ran
+                    # together into one sentence -- "Malleability, State two
+                    # advantages of robotics in manufacturing." -- which reads
+                    # as one ask with two halves rather than a choice between
+                    # two. The word the paper printed goes back between them.
+                    # Never twice over: two OR lines in a row (2025 OL English
+                    # stacks them between prescribed-poetry options) would
+                    # otherwise leave "OR OR" in the middle of the ask.
+                    # Driven by or_part, not or_pending: the flag has to
+                    # OUTLAST the (c) that opens the branch or only that (c)
+                    # is separated and its children still weld onto their
+                    # twins — 2024 HL Q8 sets a second (c) with its own (i)
+                    # and (ii). 2024 OL Q6(c)(ii) is the pair this fixes:
+                    # "Explain the term CAD." and, past the OR, "…integrated
+                    # into computer numerical control."
+                    if or_part and self.parts[key] \
+                            and self.parts[key][-1].strip() != 'OR':
+                        self.parts[key].append('OR')
                     self.parts[key].append(rest)
                 # A part that opens a group ('(a)' with prose but no roman yet)
                 # doubles as the stem for the romans beneath it.

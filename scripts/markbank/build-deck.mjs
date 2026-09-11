@@ -1292,8 +1292,19 @@ for (const c of cards) {
   const namesLetters = !invitesDrawing
     && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/.test(c.questionText);
   // Not merely "has a figure": a question about labelled parts needs those
-  // labels DECODED, so it must be a full diagram card with a label key.
-  if (namesLetters && !(c.figureKey && Array.isArray(c.labelKey) && c.labelKey.length)) {
+  // labels DECODED, so it must carry a label key as well as the picture.
+  /* The picture may sit on the QUESTION side. "Identify the crystal structures
+   * A, B and C" is unanswerable unless the student can see A, B and C BEFORE
+   * the reveal, which is what questionFigureKey is for and what the answer
+   * slot's one-crop-one-card rule forbids; demanding figureKey here asked for
+   * the stimulus to be hidden until after the answer. Both mirrors of this
+   * rule already allow it — cardlint.py counts questionFigureKey in its
+   * has_fig, and markBankDeck.test.ts's own namesLetters test exempts a card
+   * with a questionFigure — so this was the odd one out, in the same way the
+   * INVITES_DRAWING exemption above had drifted. Measured across every
+   * authored deck in the repo: exactly ONE card changes verdict. */
+  if (namesLetters && !((c.figureKey || c.questionFigureKey)
+      && Array.isArray(c.labelKey) && c.labelKey.length)) {
     dropped.push(`${c.id}: names lettered parts but carries no labelled figure`);
     continue;
   }

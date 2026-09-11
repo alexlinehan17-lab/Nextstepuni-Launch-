@@ -52,31 +52,86 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 import reconcile as R                                       # noqa: E402
 from paper_census import census_subject                     # noqa: E402
-from lib import Author, Refused                             # noqa: E402
+# COMMAND_WORD lives in lib because lib decides the same question there -- a
+# part that does not open with one cannot stand on its own and takes the cue
+# printed above it. Two copies of one rule drift; this is the one copy.
+from lib import Author, Refused, COMMAND_WORD               # noqa: E402
 from eng_scheme import EngScheme                            # noqa: E402
 from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
 
 MAX_ROWS = 12
+
+# Parts whose printed text Paper.suspect() flags and a person has since opened
+# the page for. lib.card refuses a flagged part unless it is handed checked=,
+# and the string it is handed has to be an OBSERVATION about the page, not a
+# reassurance -- so each entry below says what was actually seen and where.
+#
+# Keyed by (year, level) plus the key the card is CITED at, which is not always
+# the census leaf: a part that resolves up to the letter is flagged on the
+# letter's own text.
+#
+# Sittings are owned one agent to two, so keep each sitting's block together
+# and in order -- five people merge this file.
+CHECKED = {
+    # ---- 2021 Higher Level, paper page 4 ------------------------------------
+    # Q2(b) opens with two lines about the National Transport Authority's bus
+    # order and closes "Explain each of the following types of hybrid vehicle
+    # technology:", with the three types printed under it one per line. (i) and
+    # (ii) close on semicolons because the list runs on; (iii) closes on a full
+    # stop and is not flagged at all, which is the same list read by the same
+    # reader. The scheme prices all three in turn -- 4, 3, 3.
+    (2021, 'hl', 2, 'b', 'i'):
+        'page 4, first line of Q2(b)\'s list: "Full hybrid;" under the cue '
+        'ending "Explain each of the following types of hybrid vehicle '
+        'technology:", with (ii) and (iii) printed beneath it',
+    (2021, 'hl', 2, 'b', 'ii'):
+        'page 4, second line of that list: "Mild hybrid;" with '
+        '"(iii) Plug-in hybrid." printed beneath it',
+    # ---- 2021 Higher Level, paper pages 5, 6 and 7 --------------------------
+    # Questions 3, 4 and 5 each set a part (c) or (a) as one instruction over
+    # a printed list: "Select any two from (i), (ii) or (iii) below and explain
+    # the difference between the terms in each:" and then the three pairs, one
+    # per line, each closing on a SEMICOLON because the list runs on. The
+    # semicolon is what the flag is raised on. Each pair below was read off the
+    # page it is named for, and the cue lib joins on is the sentence printed
+    # immediately above it.
+    (2021, 'hl', 3, 'a', 'i'):
+        'page 5 sets Q3(a) as one instruction over three lines; (i) reads '
+        '"Brinell hardness test and Vickers hardness test;" and its semicolon '
+        'is the list running on to (ii), not a truncation',
+    (2021, 'hl', 3, 'a', 'ii'):
+        'page 5, the second line of the same list: "Yield strength and '
+        'ultimate tensile strength;" with (iii) printed beneath it',
+    (2021, 'hl', 4, 'c', 'i'):
+        'page 6 sets Q4(c) the same way; (i) reads "Optical pyrometer and '
+        'thermocouple pyrometer;" with (ii) and (iii) under it',
+    (2021, 'hl', 5, 'c', 'i'):
+        'page 7 sets Q5(c) the same way; (i) reads "Solid solution alloy and '
+        'partial solubility alloy;" with (ii) and (iii) under it',
+    (2021, 'hl', 5, 'c', 'ii'):
+        'page 7, the second line of that list: "Crystalline and amorphous '
+        'solid structures;" with (iii) printed beneath it',
+}
+
 # An "ask" that is really one of the options the question lists. It has no
 # sentence in it: "Nylon,", "Full hybrid;", "Ferdinand Porsche", "Basin".
 NOT_AN_ASK = re.compile(r'^[^.?!]{0,40}[,;.]?$')
-# What separates an ask from a list item is not its LENGTH. "Explain the term
-# bioplastic." is 28 characters and is the whole question; "Ferdinand Porsche"
-# is 17 and is one of three names under "Outline the contribution made by each
-# of the following". Refusing everything short refused 256 leaves, among them
-# every short imperative in the subject.
-#
-# The command word is the real signal, and it is DERIVED rather than invented:
-# these are the words that open the 550 census leaves too long to be anything
-# but an ask, minus the stems that came with them ("nominal", "the", "using"),
-# plus sketch/label/indicate, which open one ask each and are imperative in
-# the same way. "Select" is excluded -- it opens "Select any two from the
-# following", which is a lead-in to options rather than an ask.
-COMMAND_WORD = re.compile(
-    r'^(?:briefly|calculate|compare|define|describe|determine|differentiate'
-    r'|discuss|distinguish|draw|explain|give|identify|indicate|label|list'
-    r'|name|outline|sketch|state|suggest)\b', re.I)
+# A marking point that decodes one of the letters printed on the figure.
+# lib's own LABELLED_POINT wants the letter FIRST -- "A = Buttercup" -- and
+# this subject names the thing before it: "Structure A: Body-Centred Cubic
+# (BCC) Structure.", "Defect B - vacancy". The noun is optional so both
+# spellings are read, and the meaning is taken from the scheme's own words.
+ENG_LABEL = re.compile(r'^(?:[A-Za-z]{3,12}\s+)?([A-H])\s*'
+                       r'[=:\u2010\u2013\u2014-]\s*(.+)$')
+# The group total the Ordinary table prints at the end of a multi-line rule.
+TAIL_GROUP_TOTAL = re.compile(r'\s*\(\s*\d{1,3}\s*\)\s*$')
+# One line of such a rule: "Three parts @ 2 marks".
+GROUP_RULE = re.compile(
+    r'\b(one|two|three|four|five|six|seven|eight|nine|ten)\s+'
+    r'(?:[a-z]+s?\s+)?@\s*(\d{1,2})\s*marks?', re.I)
+WORDN = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
+         'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10}
 # Printed on the page but not stated by anyone: the running footer, and a
 # heading that INTRODUCES the marking points rather than being one. Both were
 # reaching cards as the whole answer -- "Page 17" for eighteen marks, "A -
@@ -221,7 +276,28 @@ def rows_for(notation, total, rule, points):
         if holds(points, n):
             return ('point', None, {'kind': 'questionTotal'}, None)
         return None
-    terms = [int(x) for x in re.findall(r'\d{1,2}', notation or '')]
+    # The Ordinary table states a rule over SEVERAL LINES, and only the last
+    # carries the GROUP TOTAL in brackets: "Three parts @ 3 marks" then "Three
+    # parts @ 2 marks (15)". Read as one more term the 15 joined the split and
+    # the marks summed to 20 against a stated 15, which lib rightly refused.
+    # It is the total, not a term, and it comes off before the terms are taken.
+    plain = TAIL_GROUP_TOTAL.sub('', notation or '').strip()
+    # Both lines price the SAME parts, once each. "Three parts @ 3 marks;
+    # Three parts @ 2 marks (15)" is 2021 OL Q2(c): three labelled wheelchair
+    # parts, three marks for naming a material and two for the reason, and the
+    # scheme answers them as three points of "Material: ... Reason: ...". So
+    # each point is worth the two rates added, and three of them make the 15
+    # the table prints. Only where the counts AGREE, and only where the
+    # arithmetic closes on the stated total -- "One part @ 6 marks; Two parts
+    # @ 3 marks (12)" prices different parts at different rates and is left
+    # alone.
+    pairs = [(WORDN.get(c.lower()), int(v))
+             for c, v in GROUP_RULE.findall(plain)]
+    if len(pairs) > 1 and all(pairs[0][0] == c and c for c, _ in pairs):
+        n, per = pairs[0][0], sum(v for _, v in pairs)
+        if total is not None and n * per == total and len(points) == n:
+            return ('point', [per] * n, {'kind': 'fixed'}, None)
+    terms = [int(x) for x in re.findall(r'\d{1,2}', plain)]
     if len(terms) > 1:
         if len(terms) == len(points):
             return ('point', terms, {'kind': 'fixed'}, None)
@@ -341,7 +417,22 @@ def main():
                                           or '').split())
                     except Exception:                        # noqa: BLE001
                         above = ''
-                    if looks_like_an_ask(above):
+                    # ... but only where the scheme treats them as options.
+                    # 2021 HL Q2(b) also prints three bare items -- "Full
+                    # hybrid;", "Mild hybrid;", "Plug-in hybrid." -- and the
+                    # scheme prices each of them in turn, "(i) 4 (ii) 3
+                    # (iii) 3", and answers each in turn. Those are three
+                    # questions, not one question's menu, and promoting them
+                    # sent the part climbing past a letter the scheme never
+                    # prices to the QUESTION, where one card would have
+                    # carried the whole of Question 2 for fifty marks.
+                    # The cue above them is the ask, and lib.card joins it on
+                    # for exactly this shape.
+                    if (S.tariff(q, letter, roman) is not None
+                            and cardable(S.points_under(q, letter, roman))
+                            and above.endswith(':')):
+                        ask = f'{above} {" ".join(ask.split())}'
+                    elif looks_like_an_ask(above):
                         # The options are part of the parent's ask: without
                         # the three names "Discuss the contribution that any
                         # one of the following has made to technology:"
@@ -471,12 +562,22 @@ def main():
                 note('points at printed matter the card cannot carry')
                 continue
             # A card that NAMES a lettered part needs the letters decoded as
-            # well as shown, which is what card lint asks for and what this
-            # author cannot supply. Refusing here rather than letting the deck
-            # build drop it keeps the authored file and the deck the same.
+            # well as shown, which is what card lint asks for. Where the
+            # scheme itself decodes them the key is LIFTED from its own
+            # marking points -- "Structure A: Body-Centred Cubic (BCC)
+            # Structure." gives A its meaning and nothing is typed here.
+            # Where it does not, the part is still refused.
+            labels = None
             if cardlint.NAMES_LETTERS.search(joined):
-                note('names a lettered part this author cannot decode')
-                continue
+                got = {}
+                for _, t in keep:
+                    m = ENG_LABEL.match(t)
+                    if m:
+                        got.setdefault(m.group(1), m.group(2).strip())
+                labels = got or None
+                if not labels:
+                    note('names a lettered part this author cannot decode')
+                    continue
             tariff_here = S.tariff(*key)
             notation_here = S.notation(*key)
             rule_here = S.rule(*key)
@@ -504,6 +605,8 @@ def main():
                     n, per = group
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
+                           checked=CHECKED.get((year, level) + key),
+                           labels=labels,
                            use=[[i for i, _ in keep[:MAX_ROWS]]],
                            marks=[n * per], tariff='fixed',
                            row_kind='anyN', total=n * per, question_figure=figure,
@@ -516,6 +619,8 @@ def main():
                     # is the thing being avoided.
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
+                           checked=CHECKED.get((year, level) + key),
+                           labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            tariff='orderedSplit', question_figure=figure,
                            notation=model['notation'],
@@ -524,6 +629,8 @@ def main():
                 elif model['kind'] == 'questionTotal':
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
+                           checked=CHECKED.get((year, level) + key),
+                           labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            tariff='questionTotal', question_figure=figure,
                            total=tariff_here,
@@ -532,6 +639,8 @@ def main():
                 else:
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
+                           checked=CHECKED.get((year, level) + key),
+                           labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            marks=marks, tariff='fixed', question_figure=figure,
                            total=tariff_here,

@@ -53,6 +53,8 @@ QHEAD = re.compile(r'^\s*Question\s+(\d{1,2})\.?\s*(?:\(\s*\d{1,3}\s*marks?\s*\)
 # The page's own furniture, printed on every page and never part of an ask.
 HEADER = 120.0
 FOOTER = 60.0
+# How far a line may lap over a crop's edge and still not count as being in it.
+TOUCH = 2.0
 
 
 def lines(page):
@@ -89,9 +91,23 @@ def artwork(page):
         r = d['rect']
         if r.width > 18 and r.height > 18:
             out.append((r.x0, r.y0, r.x1, r.y1))
+    # The header and footer bands are where the page's own furniture lives, and
+    # a picture is excluded only when it lies WHOLLY inside one of them. The
+    # test used to be that the picture must START below the header, and these
+    # papers set artwork high: 2021 Ordinary Q2(a) prints its three furnaces at
+    # y78, y83 and y116 under a head at y39, so all three were discarded and a
+    # question about "the following furnaces, labelled A, B and C" had no
+    # picture to show. Nothing is lost at the other end either -- the furniture
+    # inside those bands is a logo and a barcode, which stay wholly inside them.
+    #
+    # Artwork that reaches BOTH page edges is the page, not a picture: these
+    # papers print a tinted border, and read as artwork it came back as the
+    # whole sheet sliced into bands -- 176 rects across the ten papers -- so
+    # every crop on those pages was full width, carrying the printed list of
+    # asks with it.
     edge = page.rect.width - 2
     return [a for a in out
-            if a[1] > HEADER and a[3] < page.rect.height - FOOTER
+            if a[3] > HEADER and a[1] < page.rect.height - FOOTER
             and a[2] - a[0] > 24 and a[3] - a[1] > 24
             and not (a[0] <= 2 and a[2] >= edge)]
 
@@ -229,8 +245,17 @@ def _crop(path, q, letter, roman):
             if band is None:
                 continue
             top, bottom = band
+            # The picture belongs to the band its MIDDLE sits in, not to the
+            # band that contains it whole. This subject prints the picture
+            # BESIDE the prose and sets it against the middle of the part, so
+            # it routinely overhangs both ends of a two-line ask: 2021 Ordinary
+            # Q1(c) owns y191-227 and its chain-and-sprocket photograph runs
+            # y161-224. Containment found artwork for 46 of 122 parts; the
+            # midpoint finds it without reaching into a neighbour, because two
+            # pictures printed for two different parts have two different
+            # middles and each lands in its own band.
             art = [a for a in artwork(page)
-                   if a[1] >= top - 6 and a[3] <= bottom + 6
+                   if top - 6 <= (a[1] + a[3]) / 2 <= bottom + 6
                    and not is_answer_box(page, a)]
             if not art:
                 return None
@@ -254,7 +279,16 @@ def _crop(path, q, letter, roman):
             for _ in range(6):
                 grew = False
                 for (bx0, by0, bx1, by1), t in lines(page):
-                    if bx1 <= x0 or bx0 >= x1 or by1 <= y0 or by0 >= y1:
+                    # GRAZING is not touching. A photograph carries its own
+                    # white margin, so the ask printed under it laps a point or
+                    # two over the picture's box: 2021 Ordinary Q6(c) sets its
+                    # cutting tool at y377-490 and "(iii) State two safety
+                    # precautions..." begins at y488.6 -- 1.1pt of overlap, and
+                    # eight tenths of a millimetre was enough to refuse the
+                    # crop under the take-it-whole-or-refuse rule. TOUCH is the
+                    # margin below which an overlap is the print, not the page.
+                    if bx1 <= x0 + TOUCH or bx0 >= x1 - TOUCH \
+                            or by1 <= y0 + TOUCH or by0 >= y1 - TOUCH:
                         continue
                     if x0 - 1 <= bx0 and bx1 <= x1 + 1 \
                             and y0 - 1 <= by0 and by1 <= y1 + 1:
@@ -342,6 +376,26 @@ REJECTED = {
     # small picture, and a part's band takes in the whole row: (h) asks for an
     # electronic component and gets a compressor, a workbench and a chuck.
     (2021, 'ol', 1, 'h', None): 'the row holds other parts pictures',
+    # The same grid, one row lower: (l) asks about a pilot hole, a countersink
+    # bit and swarf and is printed with no picture at all, so the midpoint rule
+    # hands it (m)'s chuck key -- with the word "Swarf." clipped in above it.
+    (2021, 'ol', 1, 'l', None): 'component B, which is part (m)s picture',
+    # The wheelchair's three callouts are set around the photograph and the
+    # crop opens across "seat cover" and misses "rotary handrail" entirely --
+    # and the ask is "Name a suitable material for each of the parts labelled".
+    (2021, 'ol', 2, 'c', 'i'): 'clips "seat cover", and drops "rotary handrail"',
+    (2021, 'ol', 2, 'c', 'ii'): 'clips "seat cover", and drops "rotary handrail"',
+    # The ruled box round the PLA filament photograph reaches the prose beside
+    # it, so the crop carries all three of (a)'s romans as text.
+    (2021, 'hl', 7, 'a', 'ii'): 'the crop holds (a)(i) to (a)(iii) as text',
+    (2021, 'hl', 7, 'a', 'iii'): 'the crop holds (a)(i) to (a)(iii) as text',
+    # A half-line of the ask above it: "essential in order to".
+    (2021, 'hl', 8, 'c', 'i'): 'opens across the last line of the ask',
+    (2021, 'hl', 8, 'c', 'ii'): 'opens across the last line of the ask',
+    # The lift's own label is outside the crop, and the arrow that points to it
+    # is inside: the picture shows an arrow pointing at nothing.
+    (2021, 'hl', 9, 'a', 'i'): 'the "leadscrew" label the arrow points to is outside',
+    (2021, 'hl', 9, 'a', 'ii'): 'the "leadscrew" label the arrow points to is outside',
     # Q7(c) offers a choice, and the crop takes the metrology instruments
     # printed above the OR rather than the eRacer the ask names.
     (2021, 'ol', 7, 'c', 'i'): 'shows the OR branch, not the eRacer',
@@ -418,6 +472,16 @@ def worklist():
                                  A.paper.stem(q) or '').split())
             except Exception:                                # noqa: BLE001
                 continue
+            if not text and letter and roman:
+                # A leaf the paper prints as a PICTURE and nothing else. 2021
+                # Ordinary Q6(a) is "Identify any three of the lathe parts
+                # shown." over four photographs captioned "(i)" to "(iv)", so
+                # each roman's own block holds no words at all. eng_all cards
+                # those at the LETTER, because that is where the ask is; the
+                # worklist skipped them for being empty and never offered the
+                # cropper the one part of the question that needs a picture.
+                text = ' '.join((A.paper.text(q, letter, None) or '').split())
+                roman = None
             if not text:
                 continue
             # The author condemns a card on its stem, its own ask AND its

@@ -405,6 +405,102 @@ def parse_tariff(text):
     return None
 
 
+# Where the scheme's own address for an answer is not the address the PAPER
+# printed. The paper wins: a card cites the marker the candidate saw, so an
+# answer filed under the wrong one would be shown against the wrong question.
+# Every entry names what was OPENED to establish it; nothing here is inferred
+# from a similarity of wording.
+RE_KEYED = {
+    (2021, 'hl'): {
+        # Question 1 runs (a) to (m), so its ninth part is the LETTER (i) --
+        # "Annealed copper tubing is typically used to replace damaged brake
+        # pipes in cars. Briefly describe how copper is annealed." MARKER below
+        # excludes 'i' because alone it is a roman first, so the scheme's
+        # answer ("Copper is annealed by heating the metal to a red colour...")
+        # was filed as a roman of (h), which is about drilling speeds. Part (i)
+        # was then priced 5 by the table and answered by nothing.
+        (1, 'h', 'i'): (1, 'i', None),
+    },
+    (2021, 'ol'): {
+        # Scheme page 3 (PDF page 4) answers "(g) Name: The electronic
+        # component show is a Light Emitting Diode (L.E.D.). Application: ..."
+        # and "(h) Engineering continues to contribute to the development of
+        # electrical and hybrid vehicles for the transport industry." The
+        # paper's page 2 prints them the other way round -- "(g) State one
+        # contribution engineering makes to the transport industry." and
+        # "(h) Name the electronic component shown and suggest one suitable
+        # application of this component." The SEC transposed the pair in the
+        # published scheme, and its own marks column proves which is which:
+        # the two-part answer carries "4 (3) + 3 Marks" and the one-part
+        # answer "7 (6) Marks", matching the paper's (h) and (g) in that
+        # order. Left alone, both cards answer the other one's question.
+        (1, 'g', None): (1, 'h', None),
+        (1, 'h', None): (1, 'g', None),
+        # Scheme page 4 opens "(i) Any one: Air compressor: ... Strip heater:
+        # ... 3 Jaw chuck: ...", which is the paper's part (i). MARKER above
+        # excludes 'i' on purpose -- alone it is a roman first -- so the line
+        # was read as roman (i) of whatever letter preceded it, and part (i)
+        # of a thirteen-part short question had no answer at all.
+        (1, 'h', 'i'): (1, 'i', None),
+    },
+}
+
+# "Structure A: Body-Centred Cubic (BCC) Structure." -- a noun, the letter
+# printed on the figure, and then the answer for that letter.
+LABEL_ITEM = re.compile(r'^(\w+)\s+([A-H])\s*[:.–-]')
+
+ANY_N = re.compile(r'^Any\s+(\w+)\s*(?:parts?)?\s*\.?$', re.I)
+# "Two @ 7 marks, six @ 6 marks." -- a count and a value, twice on one line.
+COUNT_AT = re.compile(r'\b(one|two|three|four|five|six|seven|eight|nine|ten'
+                      r'|eleven|twelve|thirteen)\s*@\s*(\d{1,2})\s*marks?',
+                      re.I)
+
+
+def _bonus_rule(block, total):
+    """The per-part mark where a short question prices its parts at two values.
+
+    2021 Ordinary Level heads Question 1 "Any eight." and then "Two @ 7 marks,
+    six @ 6 marks." Read as two tariffs it prices some parts at 7 and some at
+    6 without saying which, and a tariff is never guessed -- so this returns a
+    number only when the arithmetic leaves ONE reading, which it does here:
+
+      * the counts are the parts the candidate answers (2 + 6 = "Any eight");
+      * the weighted sum is the question's own total (2x7 + 6x6 = 50);
+      * the two values differ by exactly one mark.
+
+    Eight parts each worth 7 in their own right would come to 56, above the
+    question's 50, so 7 cannot be what a part is worth: 6 is, and one extra
+    mark goes to two of them. That is the same rule every other Ordinary
+    sitting prints in words -- 2022, 2023, 2024 and 2025 all read "Any eight
+    parts @ 6 marks each. Award 1 extra mark for each of the first two
+    correctly answered parts", and their cards claim the 6.
+
+    Anything else -- three values, counts that do not sum to the answered
+    number, a weighted sum that misses the total, a gap of more than one mark
+    -- is a rule this cannot read, and returns None.
+    """
+    answered = None
+    pairs = []
+    for line in block:
+        m = ANY_N.match(line)
+        if m and WORD.get(m.group(1).lower()):
+            answered = WORD[m.group(1).lower()]
+            continue
+        found = COUNT_AT.findall(line)
+        if found:
+            pairs = [(WORD.get(c.lower()), int(v)) for c, v in found]
+    if answered is None or len(pairs) != 2 or any(c is None for c, _ in pairs):
+        return None
+    if sum(c for c, _ in pairs) != answered:
+        return None
+    if sum(c * v for c, v in pairs) != total:
+        return None
+    values = sorted(v for _, v in pairs)
+    if values[1] - values[0] != 1:
+        return None
+    return values[0]
+
+
 class EngScheme:
     """One sitting's marking scheme: its tariff table and its answers."""
 
@@ -594,10 +690,9 @@ class EngScheme:
         carries all eighteen of them, which is not a card.
 
         The rule is the paper's own arithmetic and it says what a part is
-        worth, so a part-level card can claim it. Only when it says EACH, and
-        only when it names ONE value: 2021 Ordinary Level says "Any eight."
-        and then "Two @ 7 marks, six @ 6 marks", which prices some parts at 7
-        and some at 6 without saying which, and a tariff is never guessed.
+        worth, so a part-level card can claim it. Only when it says EACH and
+        names ONE value -- or when it names two and the arithmetic leaves only
+        one reading; see `_bonus_rule`.
         """
         if self._per_part is None:
             self._per_part = {}
@@ -616,10 +711,17 @@ class EngScheme:
                         h = SUMMARY_HEAD.match(row[4])
                         if not h:
                             continue
-                        for nxt in seq[i + 1:i + 3]:
+                        # The rule may take two lines -- "Any eight." then
+                        # "Two @ 7 marks, six @ 6 marks." -- so the whole
+                        # block under the head is offered, down to the next
+                        # head or the first lettered marker.
+                        block = []
+                        for nxt in seq[i + 1:i + 5]:
                             t = ' '.join(nxt[4].split())
                             if SUMMARY_HEAD.match(t) or MARKER.match(t):
                                 break
+                            block.append(t)
+                        for t in block[:2]:
                             if not re.search(r'\beach\b', t, re.I):
                                 continue
                             if t.count('@') != 1:
@@ -628,6 +730,10 @@ class EngScheme:
                             if parsed and parsed[2]:
                                 self._per_part[int(h.group(1))] = parsed[2][1]
                             break
+                        else:
+                            per = _bonus_rule(block, int(h.group(2)))
+                            if per:
+                                self._per_part[int(h.group(1))] = per
         return self._per_part.get(q)
 
     # ── the answer body ────────────────────────────────────────────────────
@@ -786,6 +892,10 @@ class EngScheme:
                                      and body_text[:1].islower())):
                         continue
                     out[key]['points'].append(body_text)
+        moves = RE_KEYED.get((self.year, self.level))
+        if moves:
+            out = collections.OrderedDict(
+                (moves.get(k, k), v) for k, v in out.items())
         self._body = out
         return out
 
@@ -888,6 +998,20 @@ class EngScheme:
                 and re.match(r'[a-z]', lines[0].strip()):
             lines = [f'{lead} {lines[0]}'.strip()] + list(lines[1:])
             rejoined = True
+        # A lead that is the FIRST ITEM of the list under it, not a heading
+        # over it. "Identify the crystal structures A, B and C" is answered
+        # "Structure A: Body-Centred Cubic (BCC) Structure." / "Structure B:
+        # ..." / "Structure C: ...", and the first landed in the lead, where
+        # points() only reads it when nothing follows. The card then showed two
+        # of the three letters and the deck dropped it for having no key to
+        # decode them by. What proves it is not a heading is that the line
+        # under it has the SAME SHAPE and the NEXT letter: two parts in the
+        # whole subject match, and both are this question in two sittings.
+        elif lines and lead:
+            a, c = LABEL_ITEM.match(lead), LABEL_ITEM.match(lines[0].strip())
+            if a and c and a.group(1).lower() == c.group(1).lower() \
+                    and a.group(2) != c.group(2):
+                lines = [lead] + list(lines)
         if not any(BULLET.match(x) for x in lines):
             # One point per SENTENCE, not one per key. Joining every line a
             # key holds made points of 1,588 characters -- a whole column of
@@ -939,8 +1063,21 @@ class EngScheme:
                 out.append(BULLET.sub('', line).strip())
             elif fresh:
                 out.append(line.strip())
-            elif out:
+            elif out and not re.search(r'[.?!:]\s*$', out[-1]):
                 out[-1] = f'{out[-1]} {line}'.strip()
+            elif line.strip():
+                # A line with no bullet is normally the bullet above it
+                # wrapping -- "• The distance the pendulum travels after
+                # breaking the" / "piece will give the toughness value." -- and
+                # is joined back on. But a bullet that already CLOSED cannot be
+                # wrapping, so what follows is something else: 2021 HL Q3(a)
+                # answers the Izod test in five bullets, the last of them
+                # closed, and then heads the next column "Charpy Test:". Joined
+                # on, the marking point became "...will give the toughness
+                # value. Charpy Test:", which appears nowhere in the scheme, so
+                # the provenance gate refused the whole part. It stands on its
+                # own instead, where cardable() drops it as the heading it is.
+                out.append(line.strip())
             fresh = False
         return self._with_lead(q, letter, roman, lead,
                                [x for x in out if x], rejoined)

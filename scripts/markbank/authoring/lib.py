@@ -223,6 +223,99 @@ def _without_furniture(text):
     return q if PAPER_TERMINAL.search(q) else None
 
 
+# What separates an ask from a list item is not its LENGTH. "Explain the term
+# bioplastic." is 28 characters and is the whole question; "Ferdinand Porsche"
+# is 17 and is one of three names under "Outline the contribution made by each
+# of the following". Refusing everything short refused 256 leaves, among them
+# every short imperative in the subject.
+#
+# The command word is the real signal, and it is DERIVED rather than invented:
+# these are the words that open the 550 census leaves too long to be anything
+# but an ask, minus the stems that came with them ("nominal", "the", "using"),
+# plus sketch/label/indicate, which open one ask each and are imperative in
+# the same way. "Select" is excluded -- it opens "Select any two from the
+# following", which is a lead-in to options rather than an ask.
+#
+# It lives here rather than in eng_all because both modules decide the same
+# question with it: eng_all, whether a census leaf is an ask at all; card(),
+# whether a part can stand on its own or takes the cue printed above it.
+COMMAND_WORD = re.compile(
+    r'^(?:briefly|calculate|compare|define|describe|determine|differentiate'
+    r'|discuss|distinguish|draw|explain|give|identify|indicate|label|list'
+    r'|name|outline|sketch|state|suggest)\b', re.I)
+
+# What is left of a question head once the reader has taken the number off it.
+# Engineering prints "Question 1. (50 marks)", the head match stops at the
+# number, and the remainder is handed to the stem.
+STEM_HEAD = re.compile(r'^\s*\.?\s*\(\s*\d{1,3}\s*marks?\s*\)\s*', re.I)
+# Six or more numbers in a row: the DATA a question works from, printed above
+# it. "Load (kN) 22 44 66 80 89 100 110 Extension (mm) 0.1 0.2 ..." is the
+# table the candidate plots and belongs on the card. Mirrors cardlint's
+# INLINE_TABLE, which is what decides the same question at lint time.
+STEM_TABLE = re.compile(r'(?:\b\d[\d.,/]*\b[^\w]{0,4}){6,}')
+
+
+# What follows a cue's colon, when the cue is the whole printed ask and the
+# options are printed as parts of their own beneath it.
+CUE_TAIL = re.compile(r'^(.*:)\s+([^:.?!]+)$', re.S)
+
+
+def _without_caption(text):
+    """The ask with a caption swept onto the end of its cue taken off.
+
+    A cue's COLON is where the printed ask stops: the paper prints the options
+    below it as parts of their own. Anything after the colon with no sentence
+    in it is the caption of the artwork printed between the cue and its
+    options, and the block reader swept it in:
+
+        "... answer each of the following: A B C"        <- the furnace labels
+        "... any two of the alloys listed below:            <- the wheelchair's
+             rotary handrail seat cover frame"                 own callouts
+
+    Five parts in the whole subject match, and all five are that. The guards
+    are what keep a real ask out: a tail that opens with a command word is the
+    next question, a tail with a marker in it is the options themselves
+    printed inline, and a tail with terminal punctuation is a sentence.
+
+    Returns None where nothing is taken, like _without_furniture.
+    """
+    m = CUE_TAIL.match(' '.join((text or '').split()))
+    if not m:
+        return None
+    head, tail = m.group(1).strip(), m.group(2).strip()
+    if len(tail.split()) > 8 or '(' in tail or COMMAND_WORD.match(tail):
+        return None
+    return head if len(head.split()) >= 5 else None
+
+
+def _clean_stem(text):
+    """The stimulus prose, with the page's furniture off it — or '' if none.
+
+    Two faults, both of them the reader's and both visible on every Engineering
+    deck. The head remnant above reached 227 cards, 148 of which carried a stem
+    of ". (50 marks)" and nothing else. And a PART-level stem is often the
+    caption of the picture printed beside the part ABOVE it: "chain and
+    sprocket" stood over "Name two forms of renewable energy", "tool A" over
+    "State one example of a ferrous metal", and the paper's running header --
+    "Leaving Certificate - Higher Level ... Thursday 10 June Morning" -- over
+    two more.
+
+    What separates stimulus from furniture is the same test the figure rule
+    already uses: a real stem is a SENTENCE or a cue and closes on punctuation,
+    a caption closes on nothing. A table of numbers is the exception, because
+    it is the data the ask works from and the card has to carry it.
+
+    Engineering only, through QUESTION_CLEANING: every other subject's deck was
+    generated before this existed and would be silently rewritten by it.
+    """
+    t = ' '.join(STEM_HEAD.sub('', text or '').split())
+    if not t:
+        return ''
+    if re.search(r'[.?!:]$', t) or STEM_TABLE.search(t):
+        return t
+    return ''
+
+
 ROMAN_ORDER = {r: i for i, r in enumerate(
     ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii'])}
 
@@ -322,9 +415,7 @@ class Author:
         # crystal structures." -- a noun phrase, with no verb anywhere. On a
         # card of its own that is not a question, and the deck shipping today
         # carries the joined form: this is the rule those cards were generated
-        # with on markbank/maths-review-2, restored with them. Only where the
-        # parent ENDS on the colon that hands its ask down, and only for a
-        # cleaning subject.
+        # with on markbank/maths-review-2, restored with them.
         if clean and roman is not None and question:
             _own = ' '.join(question.split())
             if not COMMAND.match(_own):
@@ -336,26 +427,43 @@ class Author:
                 if _up.endswith(':') and COMMAND.search(_up):
                     question = f'{_up} {_own}'
 
-        # LENGTH is not the signal, and on this subject it is the wrong one.
-        # "Discuss the contribution that any one of the following has made to
-        # technology:" is 77 characters and asks nothing on its own -- the
-        # three names are printed on the line beneath it. The COLON is the
-        # signal, and it is not always the last character: 2025 HL Q9(b) reads
-        # "Answer any three of the following: inspection robot", the lead-in
-        # with the first item already run onto it. Fifty-three Engineering
-        # cards were generated with this rule on markbank/maths-review-2 and
-        # ship in the deck today; restoring it is what lets the author make
-        # them again. Read only for a cleaning subject, because every other
-        # deck was authored against the length test and widening it would
-        # rewrite the question text on cards already shipped.
+        # LENGTH is a proxy for "cannot stand on its own", and on these papers
+        # it is the wrong one. "Explain any two of the following processes:" is
+        # 43 characters and states no processes; "Describe how to carry out
+        # each of the following heat treatment processes:" is 73 and states no
+        # processes either. Both close on a COLON, which is the paper saying
+        # outright that the list comes next -- and it is the same colon
+        # Paper.suspect() flags the part for. So a cleaning subject reads the
+        # punctuation instead of the character count, and the flag then answers
+        # itself below, exactly as the joined_kids rule already intends. The
+        # colon is not always the last character: 2025 HL Q9(b) reads "Answer
+        # any three of the following: inspection robot", the lead-in with the
+        # first item already run onto it.
+        #
+        # Read only for a cleaning subject, because every other deck was
+        # authored against the length test and widening it would rewrite the
+        # question text on cards already shipped.
+        cue = ' '.join((question or '').split())
+        # Two things come off the end BEFORE the join, not after, because a cue
+        # whose colon has something stuck to it does not look like a cue and
+        # the join then never fires: a caption swept in from the page, and a
+        # run of bare capitals that label the picture beside the ask -- 2022
+        # Ordinary Q4(b) comes out as "...in manual metal arc welding: A B",
+        # where A and B label the torch drawn above, for the part before it.
+        # Each is taken only where what remains still ends on the colon, which
+        # is the same self-check the furniture strip uses.
+        furniture_removed = False
+        if clean and roman is None:
+            trimmed = _without_caption(cue)
+            if trimmed:
+                question, cue, furniture_removed = trimmed, trimmed, True
+            _t = CALLOUT_TAIL.sub('', cue)
+            if _t != cue and _t.endswith(':'):
+                question, cue, furniture_removed = _t, _t, True
         joined_kids = False
-        _q = ' '.join((question or '').split())
-        if clean:
-            _trimmed = CALLOUT_TAIL.sub('', _q)
-            if _trimmed != _q and _trimmed.endswith(':'):
-                question = _q = _trimmed
-        hands_over = len(_q) < 40 or (
-            clean and (_q.endswith(':') or re.search(r'\bfollowing\s*:', _q)))
+        hands_over = len(cue) < 40 or (
+            clean and (cue.endswith(':')
+                       or re.search(r'\bfollowing\s*:', cue)))
         if roman is None and hands_over:
             if clean:
                 kids = [k for k in self.paper.parts
@@ -380,9 +488,26 @@ class Author:
                 if tail.strip():
                     question = f'{(question or "").rstrip()} {tail}'.strip()
                     joined_kids = True
+        elif clean and roman is not None and cue and not COMMAND_WORD.match(cue):
+            # And the mirror of it. "Select any two from (i), (ii) or (iii)
+            # below and explain the difference between the terms in each:" is
+            # the ask; (iii) is "Upper critical temperature (UCT) and lower
+            # critical temperature (LCT)." and asks nothing on its own. A card
+            # citing the ROMAN has to carry the cue above it or it shows the
+            # student two terms and no instruction.
+            #
+            # What decides it is the command word, not the length, and the
+            # shipped deck is the evidence: of the 116 roman cards whose parent
+            # closes on a colon, this rule agrees with 115 -- every child that
+            # opens with a command word stands alone in the deck, and every
+            # child that does not carries its parent's cue. The one exception
+            # is a card whose text an OR-branch merge had already garbled.
+            above = ' '.join((self.paper.text(q, letter, None) or '').split())
+            if above.endswith(':'):
+                question = f'{above} {cue}'
+                joined_kids = True
 
         # The page's own furniture, taken back off the end of the ask.
-        furniture_removed = False
         if clean and question:
             without = _without_furniture(question)
             if without:
@@ -615,6 +740,8 @@ class Author:
         }
         if stem:
             text = self.paper.stem(q, letter) or self.paper.stem(q)
+            if text and self.subject in QUESTION_CLEANING:
+                text = _clean_stem(text)
             if text:
                 card['stem'] = text
         if notes:

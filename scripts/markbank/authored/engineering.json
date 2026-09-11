@@ -270,12 +270,6 @@
     "kind": "point",
     "verbatim": "Feed rate of the drill bit.",
     "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Copper is annealed by heating the metal to a red colour (approx. 400°C) and then rapidly cooling it in water. Annealing copper makes it softer and less brittle, which allows you to bend it without breaking it. This malleability allows you to hammer and mould the copper into any shape you wish without cracking the metal.",
-    "marks": null
    }
   ],
   "stem": "Give brief answers to any ten of the following:"
@@ -387,6 +381,7 @@
     "marks": null
    }
   ],
+  "stem": "Answer all of the following:",
   "notes": "The scheme prints '5'."
  },
  {
@@ -435,7 +430,8 @@
     "verbatim": "Regenerative braking energy can be employed efficiently, etc.",
     "marks": null
    }
-  ]
+  ],
+  "stem": "Answer all of the following:"
  },
  {
   "id": "eng-2021-hl-q2-c",
@@ -463,7 +459,6 @@
     ]
    }
   ],
-  "stem": "battery",
   "notes": "The scheme prints 'Any one @ 10'."
  },
  {
@@ -488,6 +483,7 @@
     "marks": 2
    }
   ],
+  "stem": "Answer all of the following:",
   "questionFigureKey": "engineering-2021-HL-paper-q2di-art"
  },
  {
@@ -508,16 +504,35 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "either directly by the engine",
+    "verbatim": "Parallel hybrids are the most common HEV design, they connect the engine and the electric motor to the wheels through mechanical coupling. Both the electric motor and the internal combustion engine drive the wheels directly.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
+    "verbatim": "These are the most common type of hybrid, and the Toyota Prius is the most widely known example. The vehicle’s wheels can be powered in three different ways:",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "either directly by the engine",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
     "verbatim": "by the electric motor alone",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "When pulling away, and at speeds up to 20kph, the Prius only uses the electric motor for power, making it very economical for stop-start city driving. The petrol engine cuts in as speed increases, and it is used most during hard acceleration. Whenever you decelerate or use the brakes, the regenerative braking system produces electricity and stores it in the battery for use later on. The battery is big enough so that the electric motor can power the vehicle for up to 2km.",
     "marks": null
    }
   ],
+  "stem": "Answer all of the following:",
   "notes": "The scheme prints '8'.",
   "questionFigureKey": "engineering-2021-HL-paper-q2di-art"
  },
@@ -547,6 +562,7 @@
     ]
    }
   ],
+  "stem": "Answer all of the following:",
   "notes": "The scheme prints 'Any two @ 5 + 5'."
  },
  {
@@ -597,7 +613,7 @@
    {
     "id": "r-6",
     "kind": "point",
-    "verbatim": "The ball can deform when used on very hard materials. Vickers hardness test:",
+    "verbatim": "The ball can deform when used on very hard materials.",
     "marks": null
    },
    {
@@ -870,7 +886,8 @@
     "verbatim": "The face-centered cubic unit cell has atoms at each of the eight corners of a cube, plus one atom in the centre of each of the cubes faces giving a total of 14 atoms while the body- centered cubic unit cell has atoms at each of the eight corners of a cube, plus one atom in the centre of the cube giving a total of 9 atoms. The more atoms in the structure the more ductile the material is as the atoms slip across each other easier.",
     "marks": 6
    }
-  ]
+  ],
+  "questionFigureKey": "engineering-2021-HL-paper-q5ai-art"
  },
  {
   "id": "eng-2021-hl-q5-b-i",
@@ -1148,17 +1165,23 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Provides a protective layer on the newly formed weld",
+    "verbatim": "Benefits of formation of slag:",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Prevents oxidation of weld",
+    "verbatim": "Provides a protective layer on the newly formed weld",
     "marks": null
    },
    {
     "id": "r-3",
+    "kind": "point",
+    "verbatim": "Prevents oxidation of weld",
+    "marks": null
+   },
+   {
+    "id": "r-4",
     "kind": "point",
     "verbatim": "Helps form the weld pool",
     "marks": null
@@ -1527,7 +1550,6 @@
     "marks": null
    }
   ],
-  "stem": "polylactic acid (PLA) filament guide plate forming and curing die preformer cut-off resin bath pulling mechanism fibre creel",
   "notes": "The scheme prints '8'."
  },
  {
@@ -1564,8 +1586,7 @@
     "verbatim": "Pigments give the plastic bottle its tinted colour.",
     "marks": null
    }
-  ],
-  "stem": "polylactic acid (PLA) filament guide plate forming and curing die preformer cut-off resin bath pulling mechanism fibre creel"
+  ]
  },
  {
   "id": "eng-2021-hl-q8-a-i",
@@ -1613,7 +1634,8 @@
     "verbatim": "Inexperienced users need supervision.",
     "marks": null
    }
-  ]
+  ],
+  "questionFigureKey": "engineering-2021-HL-paper-q8ai-art"
  },
  {
   "id": "eng-2021-hl-q8-a-ii",
@@ -1637,7 +1659,8 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints '5 + 5'."
+  "notes": "The scheme prints '5 + 5'.",
+  "questionFigureKey": "engineering-2021-HL-paper-q8ai-art"
  },
  {
   "id": "eng-2021-hl-q8-b-i",
@@ -1944,7 +1967,6 @@
     "marks": null
    }
   ],
-  "stem": "leadscrew",
   "notes": "The scheme prints '8'."
  },
  {
@@ -2050,7 +2072,6 @@
     "marks": null
    }
   ],
-  "stem": "Leaving Certificate – Higher Level Engineering – Materials and Technology Thursday 10 June Morning 9:30 – 12:30",
   "notes": "The scheme prints '8'."
  },
  {
@@ -2087,8 +2108,493 @@
     "marks": null
    }
   ],
-  "stem": "Leaving Certificate – Higher Level Engineering – Materials and Technology Thursday 10 June Morning 9:30 – 12:30",
   "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2021-hl-q1-i",
+  "topicId": "eng-1-5",
+  "conceptId": "annealed-copper-tubing-typically-used-replace",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q1(i)",
+  "questionText": "Annealed copper tubing is typically used to replace damaged brake pipes in cars. Briefly describe how copper is annealed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Copper is annealed by heating the metal to a red colour (approx. 400°C) and then rapidly cooling it in water. Annealing copper makes it softer and less brittle, which allows you to bend it without breaking it. This malleability allows you to hammer and mould the copper into any shape you wish without cracking the metal.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2021-hl-q1-j",
+  "topicId": "eng-3-14",
+  "conceptId": "benefits-using-telescopic-adjustment-mobile-phone",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q1(j)",
+  "questionText": "Give two benefits of using telescopic adjustment on the mobile phone selfie stick shown.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lightweight",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Easy to use",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Different lengths of adjustment are available for the selfie stick etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "questionFigureKey": "engineering-2021-HL-paper-q1j-art"
+ },
+ {
+  "id": "eng-2021-hl-q2-b-i",
+  "topicId": "eng-3-14",
+  "conceptId": "ireland-s-national-transport-authority-nta",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q2(b)(i)",
+  "questionText": "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Full hybrid;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Full hybrid (FHEV) uses all the technologies described above and is the most fuel- efficient type of hybrid vehicle. It is also able to operate in series mode, parallel mode or all- electric mode. All-electric mode is self-explanatory and is typically used by FHEVs at low speed (for example up to around 50kph). Series mode also uses the electric motor to drive the wheels but the combustion engine is used at the same time as an on-board generator.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Parallel mode uses the combustion engine and the electric motor together to drive the wheels.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Full hybrids have larger batteries and more powerful electric motors, which can power the vehicle for short distances and at low speeds. These vehicles cost more than mild hybrids but provide better fuel economy benefits.",
+    "marks": null
+   }
+  ],
+  "stem": "Answer all of the following:",
+  "notes": "The scheme prints '4'."
+ },
+ {
+  "id": "eng-2021-hl-q2-b-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "ireland-s-national-transport-authority-nta",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q2(b)(ii)",
+  "questionText": "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Mild hybrid;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A mild hybrid is limited to parallel mode, so can really be looked upon as having a battery and a helper motor. The electric motor is not powerful enough to drive the wheels at any significant speed without the assistance of the combustion engine.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mild hybrids typically have stop-start and regenerative braking but are not capable of the MPG figures of a FHEV. Mild hybrids—also called micro hybrids—use a battery and electric motor to help power the vehicle and can allow the engine to shut off when the vehicle stops (such as at traffic lights or in stop-and-go traffic), further improving fuel economy.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Mild hybrid systems cannot power the vehicle using electricity alone. These vehicles generally cost less than full hybrids but provide less fuel economy benefit than full hybrids.",
+    "marks": null
+   }
+  ],
+  "stem": "Answer all of the following:",
+  "notes": "The scheme prints '3'."
+ },
+ {
+  "id": "eng-2021-hl-q2-b-iii",
+  "topicId": "eng-3-14",
+  "conceptId": "ireland-s-national-transport-authority-nta",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q2(b)(iii)",
+  "questionText": "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Plug-in hybrid.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "As the name implies, this type of hybrid can be plugged into an electric outlet to recharge their batteries, as well as being charged on the move.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Effectively, they are halfway between conventional hybrids and full electric vehicles.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Although they have a conventional engine, they also have larger batteries than regular hybrids and can drive longer distances on electric power alone - up to 50 kilometres in some cases.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Typically, plug-in hybrids use all the technology of a FHEV but have a larger capacity battery which can be plugged into the mains to charge (for example, overnight). The range they can drive in all-electric mode is higher than the average FHEV.",
+    "marks": null
+   }
+  ],
+  "stem": "Answer all of the following:",
+  "notes": "The scheme prints '3'."
+ },
+ {
+  "id": "eng-2021-hl-q3-a-iii",
+  "topicId": "eng-3-8",
+  "conceptId": "izod-impact-testing-charpy-impact-testing",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q3(a)(iii)",
+  "questionText": "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Izod impact testing and Charpy impact testing.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "167 joules striking energy.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Test specimen is vertical.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Test piece is clamped at one end.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Test piece notch is facing the pendulum.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The distance the pendulum travels after breaking the piece will give the toughness value.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "300 joules striking energy.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Test specimen is horizontal.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Test piece is clamped at both ends.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Test piece notch is facing away from the pendulum.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "The distance the pendulum travels after breaking the piece will give the toughness value.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2021-hl-q4-a-i",
+  "topicId": "eng-2-6",
+  "conceptId": "identify-aid-diagram-surface-hardening-process",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q4(a)(i)",
+  "questionText": "Identify and describe, with the aid of a diagram, the surface hardening process shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The surface of the steel object is heated to 850˚C with an oxy-acetylene flame and quenched quickly.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This creates a hard outside layer as the heated austenite structure changes to martensite.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The depth of hardening depends on the rate of heating.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Induction hardening A coil carries high frequency currents which are induced on the surface of the component causing a rapid rise in temperature. This allows a change to austenite in the surface layers of the component.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Water jets then cool the steel, transforming the austenite to martensite. This leaves the outer surface hard while the inner core is tough. The frequency of the current determines the depth of heating and the depth of hardening.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2021-HL-paper-q4ai-art"
+ },
+ {
+  "id": "eng-2021-hl-q4-a-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "benefits-performing-surface-hardening-heat-treatment",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q4(a)(ii)",
+  "questionText": "Outline two benefits of performing the surface hardening heat treatment shown.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hard outer shell while softer tougher inner core.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Warping or distortion, due to rapid cooling of the whole piece is avoided.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Improved wear resistance.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Short processing time (fewer steps involved).",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Cost-effective.",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2021-HL-paper-q4ai-art"
+ },
+ {
+  "id": "eng-2021-hl-q5-a-i",
+  "topicId": "eng-1-3",
+  "conceptId": "identify-crystal-structures-b-c",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q5(a)(i)",
+  "questionText": "Identify the crystal structures A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Structure A: Body-Centred Cubic (BCC) Structure.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Structure B: Face-Centred Cubic (FCC) Structure.",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Structure C: Close-Packed Hexagonal (CPH) Structure.",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2021-HL-paper-q5ai-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Body-Centred Cubic (BCC) Structure.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Face-Centred Cubic (FCC) Structure.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Close-Packed Hexagonal (CPH) Structure.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2021-hl-q7-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "suitable-polymer-manufacturing-process-used-produce",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q7(a)(ii)",
+  "questionText": "Name and explain a suitable polymer manufacturing process used to produce the polylactic acid (PLA) filament.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Granulated thermoplastic polymer is fed into the barrel from the hopper.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The screw moves the polymer forward.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Heaters melt the polymer to liquid.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "As the screw continues to rotate, the polymer is pushed out through the die to give the required shape.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Reasons for using Polyactic acid (PLA): (iii)",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "PLA is ideal for 3D prints where aesthetics are important",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Due to its lower printing temperature, it is easier to print with and therefore better suited for parts with fine details",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "It is not prone to warping",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "PLA is not costly",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "It can be recycled and is biodegradable",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6'."
  },
  {
   "id": "eng-2021-ol-q3-a",
@@ -2196,7 +2702,6 @@
     ]
    }
   ],
-  "stem": "point cutting edge",
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
@@ -2227,7 +2732,6 @@
     "marks": null
    }
   ],
-  "stem": "Engineering ‐ Ordinary level 4",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -2264,7 +2768,6 @@
     "marks": null
    }
   ],
-  "stem": "Engineering ‐ Ordinary level 4",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -2298,7 +2801,6 @@
     ]
    }
   ],
-  "stem": "Engineering ‐ Ordinary level 4",
   "notes": "The scheme prints 'Two parts @ 6 marks (12)'."
  },
  {
@@ -2422,7 +2924,7 @@
     "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2021-OL-paper-q4bii-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q4bi-art"
  },
  {
   "id": "eng-2021-ol-q4-b-iv",
@@ -2453,7 +2955,7 @@
    }
   ],
   "notes": "The scheme prints '4 marks'.",
-  "questionFigureKey": "engineering-2021-OL-paper-q4bii-art"
+  "questionFigureKey": "engineering-2021-OL-paper-q4bi-art"
  },
  {
   "id": "eng-2021-ol-q4-c-ii",
@@ -2483,7 +2985,6 @@
     "marks": null
    }
   ],
-  "stem": "welding earth clamp tool B",
   "notes": "The scheme prints '5 marks'."
  },
  {
@@ -2507,8 +3008,7 @@
     "verbatim": "A pop rivet can be used to join light gauge aluminium.",
     "marks": 5
    }
-  ],
-  "stem": "welding earth clamp tool B"
+  ]
  },
  {
   "id": "eng-2021-ol-q4-c-iv",
@@ -2538,7 +3038,6 @@
     "marks": null
    }
   ],
-  "stem": "welding earth clamp tool B",
   "notes": "The scheme prints '5 marks'."
  },
  {
@@ -2566,7 +3065,6 @@
     ]
    }
   ],
-  "stem": "Engineering ‐ Ordinary level 5",
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
@@ -2720,7 +3218,6 @@
     ]
    }
   ],
-  "stem": "Engineering ‐ Ordinary level 6",
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
@@ -2817,6 +3314,373 @@
    }
   ],
   "notes": "The scheme prints '4 marks'."
+ },
+ {
+  "id": "eng-2021-ol-q1-a",
+  "topicId": "eng-3-1",
+  "conceptId": "examples-where-personal-protective-equipment-ppe",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(a)",
+  "questionText": "Give two examples where Personal Protective Equipment (PPE) must be worn in the Engineering room.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Operating machinery such as the lathe / pillar drilling etc.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Using oxygen acetylene gas welding equipment i.e. leather gloves /apron / welding goggles must be worn.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2021-ol-q1-b",
+  "topicId": "eng-2-10",
+  "conceptId": "engineering-term-permanent-joint",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(b)",
+  "questionText": "Explain the engineering term permanent joint.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces i.e., a pop riveted joint.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2021-ol-q1-c",
+  "topicId": "eng-2-15",
+  "conceptId": "application-chain-sprocket-mechanism-shown",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(c)",
+  "questionText": "State one application of the chain and sprocket mechanism shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A chain and sprocket mechanism can be used as part of a driving mechanism in a bicycle.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "questionFigureKey": "engineering-2021-OL-paper-q1c-art"
+ },
+ {
+  "id": "eng-2021-ol-q1-d",
+  "topicId": "eng-3-14",
+  "conceptId": "forms-renewable-energy",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(d)",
+  "questionText": "Name two forms of renewable energy.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Solar energy.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wind energy.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2021-ol-q1-f",
+  "topicId": "eng-1-4",
+  "conceptId": "example-ferrous-metal-example-non-ferrous",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(f)",
+  "questionText": "State one example of a ferrous metal and one example of a non‐ferrous metal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Steel is a ferrous metal. (ii) Brass is a non-ferrous metal.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2021-ol-q1-g",
+  "topicId": "eng-3-14",
+  "conceptId": "contribution-engineering-makes-transport-industry",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(g)",
+  "questionText": "State one contribution engineering makes to the transport industry.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Engineering continues to contribute to the development of electrical and hybrid vehicles for the transport industry.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2021-ol-q1-j",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-laser-cutting-bluetooth-drone",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(j)",
+  "questionText": "Describe any one of the following: Laser cutting, Bluetooth, Drone.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Laser cutting is a technology that uses a laser to slice materials.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Laser cutting works by directing the output of a high-power laser most commonly through mirrors. Laser mirrors and CNC (computer numerical control) are used to direct the laser beam generated onto the material. The laser beam is directed at the material through a focusing lens, which then either melts, burns or vaporizes away the material. This leaves an edge with a high-quality surface finish.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Bluetooth is used as a short-range wireless interconnection of mobile phones, computers, sound systems, game controllers, printers, and other electronic devices.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often like a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2021-ol-q1-k",
+  "topicId": "eng-3-8",
+  "conceptId": "define-term-brittleness-relation-properties-materials",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(k)",
+  "questionText": "Define the term brittleness in relation to the properties of materials and name one material which is brittle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Glass / Hardened Steel / Cast iron is an example of a brittle material.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2021-ol-q2-d",
+  "topicId": "eng-1-5",
+  "conceptId": "metals-used-produce-any-alloys-listed",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q2(d)",
+  "questionText": "Name the metals used to produce any two of the alloys listed below: (i) Solder, (ii) Bronze, (iii) Brass.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Solder: Lead & Tin",
+    "marks": 8,
+    "accepts": [
+     "Bronze: Copper & Tin",
+     "Brass: Copper & Zinc"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2021-ol-q6-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "cutting-tool-shown",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q6(c)(i)",
+  "questionText": "Name the cutting tool shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The protective screen covers the machining area when the CNC lathe is in operation. If the screen is lifted, the machining process stops.",
+    "marks": 6
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art"
+ },
+ {
+  "id": "eng-2021-ol-q6-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "function-cutting-tool-shown",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q6(c)(ii)",
+  "questionText": "Describe the function of the cutting tool shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "If the emergency stop button is pressed the machining process will stop.",
+    "marks": 6
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art"
+ },
+ {
+  "id": "eng-2021-ol-q6-c-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-should-be-observed-when",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q6(c)(iii)",
+  "questionText": "State two safety precautions that should be observed when using the cutting tool shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The CNC software allows the user to simulate a part program before machining.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Emergency stop",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "questionFigureKey": "engineering-2021-OL-paper-q6ci-art"
+ },
+ {
+  "id": "eng-2021-ol-q7-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "draw-electronic-symbol-each-electronic-component",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q7(c)(ii)",
+  "questionText": "Draw the electronic symbol for each electronic component named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameters of holes.",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Measurement can be read directly from a digital display.",
+    "marks": 4
+   }
+  ]
  },
  {
   "id": "eng-2022-hl-q1-a",
