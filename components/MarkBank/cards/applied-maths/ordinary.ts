@@ -257,6 +257,19 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC020GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
+    id: "am-2021-ol-5-b", topicId: "applied-mathematics-2-4", conceptId: "ball-dropped-height-ball-strikes-smooth",
+    section: "B", questionRef: "2021 OL Q5(b)",
+    questionText: "A ball is dropped from a height of 11.25 m. The ball strikes a smooth horizontal floor and rises to a vertical height of h m. The coefficient of restitution between the ball and the floor is 3/5. the velocity of the ball immediately after it hits the floor the value of h",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2021-ol-5-b-r1", kind: "anyN", verbatim: "v² = u² + 2as (i) v² = 0 + 2 × 10 × 11.25 v = 15", marks: 20, contextNote: "The scheme prices this ask step by step: 10, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":10,"options":["v² = u² + 2as (i) v² = 0 + 2 × 10 × 11.25 v = 15","vᵣ = ev = 3/5 × 15 = 9 m s^−¹","v² = u² + 2as 0 = 81 −20h h = 4.05 m"],"perOptionSteps":[10,5,5]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC020GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-6-a-ii", topicId: "applied-mathematics-2-10", conceptId: "ask",
     section: "B", questionRef: "2021 OL Q6(a)(ii)",
     stem: "Particles of weight 3 N, 1 N, 4 N, and 2 N are placed at the points (p, q), (1, p), (q, 4), and (0, 3) respectively. The co‐ordinates of the centre of gravity of the system are (–0.5, 1.5). Find (i) the value of p",
@@ -333,7 +346,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the tension in the string",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "am-2021-ol-7-b-iv-r1", kind: "anyN", verbatim: "T sin 60 T × × 4 = /2√3 = 120 120 × 2 sin 30 T = 20√3 N", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T sin 60 T × × 4 = /2√3 = 120 120 × 2 sin 30 T = 20√3 N"]} },
+    { id: "am-2021-ol-7-b-iv-r1", kind: "anyN", verbatim: "Tsin 60 × 4 = 120 × 2 sin 30 T × 2√3 = 120 T = 20√3 N", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Tsin 60 × 4 = 120 × 2 sin 30 T × 2√3 = 120 T = 20√3 N"]} },
     ],
   } as SecCard,
   {
@@ -413,7 +426,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-9-ii", topicId: "applied-mathematics-2-11", conceptId: "equations-represent-all-forces-acting-cone",
     section: "B", questionRef: "2021 OL Q9(ii)",
-    stem: "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3)) Leaving Certificate, 2021 7 Applied Mathematics – Ordinary Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and",
+    stem: "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3))",
     questionText: "Write equations to represent all the forces acting on the cone and the sphere",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -427,7 +440,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-9-iii", topicId: "applied-mathematics-2-11", conceptId: "tension-string",
     section: "B", questionRef: "2021 OL Q9(iii)",
-    stem: "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3)) Leaving Certificate, 2021 7 Applied Mathematics – Ordinary Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and",
+    stem: "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3))",
     questionText: "Calculate the tension in the string",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -441,7 +454,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-9-iv", topicId: "applied-mathematics-2-11", conceptId: "reaction-force-between-base-cone-bottom",
     section: "B", questionRef: "2021 OL Q9(iv)",
-    stem: "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3)) Leaving Certificate, 2021 7 Applied Mathematics – Ordinary Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and",
+    stem: "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3))",
     questionText: "Calculate the value of the reaction force between the base of the cone and the bottom of the tank",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -455,7 +468,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-9-v", topicId: "applied-mathematics-2-11", conceptId: "length-string",
     section: "B", questionRef: "2021 OL Q9(v)",
-    stem: "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3)) Leaving Certificate, 2021 7 Applied Mathematics – Ordinary Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and",
+    stem: "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3))",
     questionText: "Calculate the length of the string",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -691,10 +704,10 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC020GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Ordinary Level — © State Examinations Commission.",
-    id: "am-2022-ol-7-b", topicId: "applied-mathematics-2-5", conceptId: "draw-force-diagram-showing-all-forces",
+    id: "am-2022-ol-7-b", topicId: "applied-mathematics-2-10", conceptId: "uniform-ladder-length-weight-120-rests",
     section: "B", questionRef: "2022 OL Q7(b)",
     stem: "The ladder is on the point of slipping when it makes an angle α with the ground, where tan α = 4/3.",
-    questionText: "Draw a force diagram showing all the forces acting on the ladder. Calculate the normal reaction between the ladder and the wall. Find the coefficient of friction between the ladder and the ground. α",
+    questionText: "A uniform ladder of length 10 m and weight 120 N rests on rough horizontal ground and leans against a smooth vertical wall. Draw a force diagram showing all the forces acting on the ladder. Calculate the normal reaction between the ladder and the wall. Find the coefficient of friction between the ladder and the ground",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 35,
     rows: [
     { id: "am-2022-ol-7-b-r1", kind: "anyN", verbatim: "tan α = 4/3.", marks: 35, contextNote: "The scheme prices this ask step by step: 10, 5, 10, 5, 5 — 35 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":10,"options":["tan α = 4/3.","Draw a force diagram showing all the forces acting on the ladder. Calculate the normal reaction between the ladder and the wall. Find the coefficient of friction between the ladder and the ground.","R S × 8 = 120 × 3","S = 45 N","𝜇= 120 𝜇= S 𝜇× 120 = 45 𝜇 = 3/8"],"perOptionSteps":[10,5,10,5,5]} },
@@ -775,10 +788,10 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC020GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Ordinary Level — © State Examinations Commission.",
-    id: "am-2022-ol-9-a", topicId: "applied-mathematics-2-0", conceptId: "total-weight-tank-plus-liquid-pressure",
+    id: "am-2022-ol-9-a", topicId: "applied-mathematics-2-0", conceptId: "cubic-tank-side-mass-designed-hold",
     section: "B", questionRef: "2022 OL Q9(a)",
     stem: "The tank is half‐filled with this liquid. Calculate the total weight of the tank plus liquid the pressure the liquid exerts on the bottom of the tank.",
-    questionText: "the total weight of the tank plus liquid the pressure the liquid exerts on the bottom of the tank. Calculate the total pressure the liquid now exerts on the bottom of the tank. A cubic tank of side 50 cm and mass 8 kg is designed to hold a liquid of density 1200 kg m–3",
+    questionText: "A cubic tank of side 50 cm and mass 8 kg is designed to hold a liquid of density 1200 kg m^(–3). the total weight of the tank plus liquid the pressure the liquid exerts on the bottom of the tank. Calculatethe total pressure the liquid now exerts on the bottom of the tank",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
     { id: "am-2022-ol-9-a-r1", kind: "anyN", verbatim: "(i) W = 80 + 1200 { 1/2 × 1/2 × 1/4} × 10 = 830", marks: 25, contextNote: "The scheme prices this ask step by step: 10, 5, 10 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":10,"options":["(i) W = 80 + 1200 { 1/2 × 1/2 × 1/4} × 10 = 830","P = 𝜌gh = 1200 × 10 × 1/4 = 3000 Pa","1/2 × 1/2 × h = 0.003 ⇒ h = 0.012"],"perOptionSteps":[10,5,10]} },
@@ -791,7 +804,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Ordinary Level — © State Examinations Commission.",
     id: "am-2022-ol-9-b-ii", topicId: "applied-mathematics-2-3", conceptId: "ask",
     section: "B", questionRef: "2022 OL Q9(b)(ii)",
-    stem: "A solid sphere of radius r cm and density 300 kg m^(–3) is completely immersed in a tank containing a liquid of density 1500 kg m^(–3). The sphere is attached to the bottom of the tank by a string which has a tension of 11 N. Draw a force diagram showing all the forces acting on the sphere. Calculate r. Leaving Certificate, 2022 7 Applied Mathematics – Ordinary Level Do not hand this up. This document will not be returned to the State Examinations Commission^. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this",
+    stem: "A solid sphere of radius r cm and density 300 kg m^(–3) is completely immersed in a tank containing a liquid of density 1500 kg m^(–3). The sphere is attached to the bottom of the tank by a string which has a tension of 11 N. Draw a force diagram showing all the forces acting on the sphere. Calculate r.",
     questionText: "Calculate r",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
@@ -889,7 +902,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
     id: "am-2023-ol-6-i", topicId: "applied-mathematics-2-0", conceptId: "time-takes-car-reach",
     section: "B", questionRef: "2023 OL Q6(i)",
-    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
     questionText: "Calculate the time it takes for the car to reach 18 m s^(–1)",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -903,7 +916,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
     id: "am-2023-ol-6-ii", topicId: "applied-mathematics-2-0", conceptId: "distance-travelled-car-while-accelerating",
     section: "B", questionRef: "2023 OL Q6(ii)",
-    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
     questionText: "Calculate the distance travelled by the car while it is accelerating",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -917,7 +930,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
     id: "am-2023-ol-6-iii", topicId: "applied-mathematics-2-0", conceptId: "distance-travelled-car",
     section: "B", questionRef: "2023 OL Q6(iii)",
-    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
     questionText: "Calculate the distance travelled by the car when t = 30 s",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -931,7 +944,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
     id: "am-2023-ol-6-iv", topicId: "applied-mathematics-2-0", conceptId: "time-taken-cyclist-reach-velocity",
     section: "B", questionRef: "2023 OL Q6(iv)",
-    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
     questionText: "Calculate the time taken for the cyclist to reach a velocity of 11 m s^(–1)",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -945,7 +958,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
     id: "am-2023-ol-6-vi", topicId: "applied-mathematics-2-0", conceptId: "distance-between-car-cyclist",
     section: "B", questionRef: "2023 OL Q6(vi)",
-    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+    stem: "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
     questionText: "Calculate the distance between the car and the cyclist when t = 20 s",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -957,9 +970,9 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC020GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
-    id: "am-2023-ol-7-i", topicId: "applied-mathematics-2-6", conceptId: "velocity-velocity-after-impact",
+    id: "am-2023-ol-7-i", topicId: "applied-mathematics-2-4", conceptId: "velocity-velocity-after-impact",
     section: "B", questionRef: "2023 OL Q7(i)",
-    stem: "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level Calculate the total kinetic energy of the system before impact.",
+    stem: "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25",
     questionText: "Calculate the velocity of S₁ and the velocity of S₂ after impact",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
@@ -973,7 +986,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
     id: "am-2023-ol-7-ii", topicId: "applied-mathematics-2-6", conceptId: "total-kinetic-energy-system-before-impact",
     section: "B", questionRef: "2023 OL Q7(ii)",
-    stem: "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level Calculate the total kinetic energy of the system before impact.",
+    stem: "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25",
     questionText: "Calculate the total kinetic energy of the system before impact",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -987,7 +1000,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
     id: "am-2023-ol-7-iii", topicId: "applied-mathematics-2-6", conceptId: "loss-kinetic-energy-result-impact",
     section: "B", questionRef: "2023 OL Q7(iii)",
-    stem: "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level Calculate the total kinetic energy of the system before impact.",
+    stem: "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25",
     questionText: "Calculate the loss in kinetic energy as a result of the impact",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -999,9 +1012,9 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC020GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Ordinary Level — © State Examinations Commission.",
-    id: "am-2023-ol-7-iv", topicId: "applied-mathematics-2-6", conceptId: "time-interval-between-collision-comes-rest",
+    id: "am-2023-ol-7-iv", topicId: "applied-mathematics-2-4", conceptId: "time-interval-between-collision-comes-rest",
     section: "B", questionRef: "2023 OL Q7(iv)",
-    stem: "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level Calculate the total kinetic energy of the system before impact.",
+    stem: "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25",
     questionText: "Calculate the time interval between the collision and when S₂ comes to rest",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -1127,7 +1140,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-1-i", topicId: "applied-mathematics-2-0", conceptId: "deceleration-car",
     section: "B", questionRef: "2024 OL Q1(i)",
-    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
     questionText: "Calculate the deceleration of the car",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -1141,7 +1154,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-1-ii", topicId: "applied-mathematics-2-0", conceptId: "acceleration-car",
     section: "B", questionRef: "2024 OL Q1(ii)",
-    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
     questionText: "Calculate the acceleration of the car",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -1155,7 +1168,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-1-iii", topicId: "applied-mathematics-2-0", conceptId: "time-car-spends-accelerating-speed",
     section: "B", questionRef: "2024 OL Q1(iii)",
-    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
     questionText: "Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1)",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -1169,7 +1182,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-1-v", topicId: "applied-mathematics-2-0", conceptId: "there-speed-limit-per-hour-road",
     section: "B", questionRef: "2024 OL Q1(v)",
-    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
     questionText: "There is a speed limit of 80 km per hour on this road. Investigate if the car is within the speed limit as it passes the speed van",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -1183,7 +1196,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-1-vi", topicId: "applied-mathematics-2-0", conceptId: "average-speed-car-between-shop-speed",
     section: "B", questionRef: "2024 OL Q1(vi)",
-    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+    stem: "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
     questionText: "Calculate the average speed of the car between the shop and the speed van",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -1229,7 +1242,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the angle between Pv⃗ and Qv⃗",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "am-2024-ol-2-iii-r1", kind: "anyN", verbatim: "cos 𝜃 = 244/26√136 244/26√136 𝜃 = 36.42°", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["cos 𝜃 = 244/26√136 244/26√136 𝜃 = 36.42°"]} },
+    { id: "am-2024-ol-2-iii-r1", kind: "anyN", verbatim: "cos 𝜃 = 244/26√136 𝜃 = 36.42°", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["cos 𝜃 = 244/26√136 𝜃 = 36.42°"]} },
     ],
   } as SecCard,
   {
@@ -1461,6 +1474,20 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC020GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
+    id: "am-2024-ol-7-vi", topicId: "applied-mathematics-2-4", conceptId: "explain-relationship-between-impulse-imparted-sphere",
+    section: "B", questionRef: "2024 OL Q7(vi)",
+    stem: "A small smooth sphere, A, of mass 4 kg travels with a constant speed of 5 m s^(–1). It collides with another small smooth sphere, B, of mass 6 kg travelling in the same direction with a speed of 2.5 m s^(–1). The coefficient of restitution between the spheres is e. 5 m s^(–1) 2.5 m s^(–1) After impact, sphere B continues to travel in the same direction, but with a speed of 4 m s^(–1).",
+    questionText: "Explain the relationship between the impulse imparted on each sphere",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2024-ol-7-vi-r1", kind: "anyN", verbatim: "equal in magnitude and opposite in direction", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["equal in magnitude and opposite in direction"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC020GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-8-a-ii", topicId: "applied-mathematics-2-5", conceptId: "vertical-normal-reaction-force-scrum-machine",
     section: "B", questionRef: "2024 OL Q8(a)(ii)",
     stem: "Rugby players are trying to push a 500 kg scrum machine along rough horizontal ground. The force exerted by the rugby players is horizontal. The coefficient of friction between the scrum machine and the ground is 0.65.",
@@ -1533,7 +1560,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-10-b-i", topicId: "applied-mathematics-3-1", conceptId: "solve-difference-equation-expression-john-college",
     section: "B", questionRef: "2024 OL Q10(b)(i)",
-    stem: "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate P₁₈, the value of John’s college fund on his eighteenth birthday. (iii) Rather than use the entire fund his parents accumulated for college, John decided to work part time and invest €25 000 into his own new fund. John found a slightly better fixed annual rate of 5.7%. He decided to invest €200 on his birthday each year while in college. Write down the difference equation that models the value, in €, of John’s investment fund after n years. 37 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. 38 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: seamanmemories.com Image on page 10: vox.com Image on page 12: oceanpark.com.hk Image on page 14: wikihow.com. Altered Image on page 18: craicncampers.ie Image on page 20: clipartMax.com Image on page 22: safetysigns.ie Image on page 27: scrumsleds.com Image on page 28: webassign.net Image on page 30: arkansasonline.com 39 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Do not write on this page",
+    stem: "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36",
     questionText: "Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -1547,7 +1574,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-10-b-ii", topicId: "applied-mathematics-3-1", conceptId: "john-college-fund-his-eighteenth-birthday",
     section: "B", questionRef: "2024 OL Q10(b)(ii)",
-    stem: "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate P₁₈, the value of John’s college fund on his eighteenth birthday. (iii) Rather than use the entire fund his parents accumulated for college, John decided to work part time and invest €25 000 into his own new fund. John found a slightly better fixed annual rate of 5.7%. He decided to invest €200 on his birthday each year while in college. Write down the difference equation that models the value, in €, of John’s investment fund after n years. 37 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. 38 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: seamanmemories.com Image on page 10: vox.com Image on page 12: oceanpark.com.hk Image on page 14: wikihow.com. Altered Image on page 18: craicncampers.ie Image on page 20: clipartMax.com Image on page 22: safetysigns.ie Image on page 27: scrumsleds.com Image on page 28: webassign.net Image on page 30: arkansasonline.com 39 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Do not write on this page",
+    stem: "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36",
     questionText: "Calculate P₁₈, the value of John’s college fund on his eighteenth birthday",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -1561,7 +1588,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Ordinary Level — © State Examinations Commission.",
     id: "am-2024-ol-10-b-iii", topicId: "applied-mathematics-3-1", conceptId: "rather-than-use-entire-fund-his",
     section: "B", questionRef: "2024 OL Q10(b)(iii)",
-    stem: "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate P₁₈, the value of John’s college fund on his eighteenth birthday. (iii) Rather than use the entire fund his parents accumulated for college, John decided to work part time and invest €25 000 into his own new fund. John found a slightly better fixed annual rate of 5.7%. He decided to invest €200 on his birthday each year while in college. Write down the difference equation that models the value, in €, of John’s investment fund after n years. 37 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. 38 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: seamanmemories.com Image on page 10: vox.com Image on page 12: oceanpark.com.hk Image on page 14: wikihow.com. Altered Image on page 18: craicncampers.ie Image on page 20: clipartMax.com Image on page 22: safetysigns.ie Image on page 27: scrumsleds.com Image on page 28: webassign.net Image on page 30: arkansasonline.com 39 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Do not write on this page",
+    stem: "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36",
     questionText: "Rather than use the entire fund his parents accumulated for college, John decided to work part time and invest €25 000 into his own new fund. John found a slightly better fixed annual rate of 5.7%. He decided to invest €200 on his birthday each year while in college",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -2051,7 +2078,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Ordinary Level — © State Examinations Commission.",
     id: "am-2025-ol-10-b", topicId: "applied-mathematics-2-0", conceptId: "velocity-time-graph-motion-particle-has",
     section: "B", questionRef: "2025 OL Q10(b)",
-    stem: "velocity u time Using the graph or otherwise, derive an expression for s, the displacement of the particle at time t, in terms of u, a and t. 38 Leaving Certificate, 2025 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. 39 Leaving Certificate, 2025 Applied Mathematics – Ordinary Level Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+    stem: "velocity u time Using the graph or otherwise, derive an expression for s, the displacement of the particle at time t, in terms of u, a and t. 38",
     questionText: "The velocity‐time graph below is for the motion of a particle which has velocity u when time t = 0. The particle moves with constant acceleration a",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [

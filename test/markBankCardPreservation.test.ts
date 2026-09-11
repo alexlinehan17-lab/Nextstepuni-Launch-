@@ -519,9 +519,26 @@ const decks = [
   /* Applied Maths is the seventeenth subject and the first to straddle a
    * syllabus break: 2021-2022 are the outgoing mechanics course and 2023-2025
    * the specification first examined in 2023. Enrolled explicitly so a later
-   * regeneration cannot silently omit or replace any of its cards. */
-  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 130, '5c8f36ba0f4214eee4269d22bcd3d20ada53f1a33820c36c0e873fe5b5afac72'],
-  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 145, '1e39bd494a3304e1ec0b1153834dba6d7bf186d7f90ec05055024d40b869b570'],
+   * regeneration cannot silently omit or replace any of its cards.
+   * Re-measured at 131/147 after the scheme reader was fixed: it was sorting a
+   * step's tariff BEFORE the words printed beside it and reading sixteen steps
+   * as priced-and-blank, and it was splicing a square root's overbar as a
+   * fraction bar. One id moved, am-2021-hl-2 -> am-2021-hl-2-a-i, because that
+   * card cited a whole question while holding half of it; the alias below
+   * carries its progress. Two ids were WITHDRAWN with no replacement,
+   * am-2023-hl-3-iv and am-2023-hl-3-v. The running-header trim had only ever
+   * been applied to a card's ASK, so 41 of the 280 cards carried the header
+   * and whatever followed it inside their STEM — four of them the paper's own
+   * copyright notice and its "Do not hand this up." These two read "...6 m
+   * above the ground. P 3.5 m X a 4.3 m w 6 m Q 10 Leaving Certificate, 2023
+   * Applied Mathematics - Higher Level Draw a diagram to show the external
+   * forces acting on seat A. Show that w = ...", and it was that imported
+   * "Show that" which let them past the printed-matter gate, because it reads
+   * as an instruction to work on the page. With the stem their own they are
+   * figure-blocked like the rest of Question 3: back on the open list for
+   * whoever binds its crops, rather than in front of a student. */
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 131, '65e6ca6fd676beb9337e0136dc30462e3ddcbc9ea93196ecbe3e15c2ada72898'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 147, '8e76ae0bc020675fc5538ce3aae13f4f97697f90d9c0d478b2e51f565c01c704'],
   /* Spanish is the second modern language carded, and the first subject whose
    * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
    * article is a two-page loose sheet with its own SEC file id, and those 80
@@ -717,7 +734,12 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_152);
+    // 19,152 before Applied Maths was re-measured, plus its three net new
+    // cards (278 against 275): six added, one re-cited into two, and two
+    // withdrawn because their stems carried a neighbouring part's wording.
+    // am-2021-hl-2 was re-cited, not removed, and the alias below keeps its
+    // progress; the two withdrawals have no replacement and are open again.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_155);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -730,7 +752,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(34);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(35);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -776,7 +798,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_728);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
