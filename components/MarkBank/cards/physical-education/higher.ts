@@ -38,8 +38,7 @@ export const CARDS: SecCard[] = [
     questionText: "Analyse the impact media coverage has on spectator behaviour.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "4-6 impact but may lack coherence", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "1-3 their impact", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "1-3 their impact", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -79,6 +78,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Relevant reasons suggested +", marks: 4, contextNote: "The scheme pays 3 then 1 marks, in the order the answers are credited.", openList: true, group: {"claimMax":2,"perOption":3,"options":["periodisation","principles of training mark"],"perOptionSteps":[3,1]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12,
+                15
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -149,29 +159,6 @@ export const CARDS: SecCard[] = [
     { id: "r-6", kind: "point", verbatim: "3. Acting (Output)", marks: null, openList: true },
     { id: "r-7", kind: "point", verbatim: "Performance of necessary movement", marks: null, openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
-    id: "pe-2020-hl-q13a", topicId: "physical-education-0-19", conceptId: "pe-0-19-figure-neville-multiple-milestones",
-    section: "C", questionRef: "2020 HL Q13(a)",
-    questionText: "Figure 8 Joy Neville has set multiple milestones, including refereeing in the Division 1A of the Ulster Bank League. She has become the first woman to officiate a Pro 14 match and the first woman to officiate in the Challenge Cup. Along with Spain’s Alhambra Nievas, she was one of the first women to officiate a men’s international match when she took charge of Norway versus Denmark. Neville was also awarded Referee of the Year in November 2017, following her performance in the women’s World Cup final. A game of rugby union has two periods of 40 minutes each. In international matches the referee will stop the clock for stoppages.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "up to a maximum of", marks: null, openList: true },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                21
-          ],
-          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -322,9 +309,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2020-hl-q8a", topicId: "physical-education-1-9", conceptId: "pe-1-9-irish-anti-doping-rule",
     section: "A", questionRef: "2020 HL Q8(a)",
     questionText: "Identify two Irish anti-doping rule violations.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":13,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":12,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Use or Attempted Use by an Athlete of a Prohibited Substance or a Prohibited Method","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Administration or Attempted Administration to any Athlete In","Competition of any Prohibited Substance or Prohibited Method, or Administration or Attempted Administration to any Athlete Out-of","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Administration or Attempted Administration to any Athlete In","Competition of any Prohibited Substance or Prohibited Method, or Administration or Attempted Administration to any Athlete Out-of","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
     ],
   } as SecCard,
   {
@@ -723,6 +710,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "+ + sports supplements might enhance the performance levels of a + basketball player", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33,
+                35
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1774,9 +1772,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2024-hl-q6", topicId: "physical-education-1-9", conceptId: "pe-1-9-function-sport-ireland-anti",
     section: "A", questionRef: "2024 HL Q6",
     questionText: "A function of Sport Ireland Anti-Doping is the elimination of doping in Irish sport. State four current Irish anti-doping rules.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks","answer":4,"ofParts":5,"perPart":2}, totalMarks: 8,
+    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks","answer":4,"ofParts":4,"perPart":2}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "State four current Irish anti-doping rules", marks: 8, contextNote: "4 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Presence of a prohibited substance","Evading, refusing or failing to submit a sample","3 whereabouts failures within 12 months","Possession of a prohibited substance","Use of a prohibited method"]} },
+    { id: "r-1", kind: "anyN", verbatim: "State four current Irish anti-doping rules", marks: 8, contextNote: "4 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Presence of a prohibited substance","Evading, refusing or failing to submit a sample","3 whereabouts failures within 12 months","Possession of a prohibited substance"]} },
     ],
   } as SecCard,
   {
@@ -1937,29 +1935,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Looking for skill improvement/development", marks: 4, openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Higher Level — © State Examinations Commission.",
-    id: "pe-2026-hl-q14d", topicId: "physical-education-0-23", conceptId: "pe-0-23-compare-performances-depicted-figure",
-    section: "C", questionRef: "2026 HL Q14(d)",
-    questionText: "Compare the performances depicted in Figure 7 and Figure 8 in terms of aesthetic or artistic criteria of performance.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Makes use of examples to highlight the point of comparison", marks: null, openList: true },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                23
-          ],
-          "attribution": "SEC Physical Education 2026 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",

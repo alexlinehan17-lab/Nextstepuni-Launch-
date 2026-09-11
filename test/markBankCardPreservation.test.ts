@@ -97,6 +97,8 @@ import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakia
 import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
 import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
+import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
+import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
@@ -661,6 +663,10 @@ const decks = [
   ['slovenian:higher', SLOVENIAN_HIGHER, 23, '5a91c38d5a570c77dcec2866a705c302bc67a7b0d33bcdeea95cd249beb149f0'],
   ['swedish:higher', SWEDISH_HIGHER, 121, 'ff499eff76dc0efe1a00cf9f20f85a3f2f508c9afd5de4ec01f2f1f8da966b56'],
   ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
+  /* Physical Education, carded from the written paper only: the project and
+   * the performance assessment are marked from work no paper prints. */
+  ['physical-education:higher', PE_HIGHER, 123, 'bb939d00d850b3e5d276c8220990ca822fda67047eab4c97452aa24cd540550b'],
+  ['physical-education:ordinary', PE_ORDINARY, 92, 'f3c9554998724d82f32c74827225cb993ce5dad6d5dff4f2dfcdfd308bf04ea7'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -680,7 +686,9 @@ describe('Mark Bank card preservation', () => {
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
     // Portuguese 173, Romanian 50 and Dutch 42.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_345);
+    // ...and Physical Education 215 (123 Higher, 92 Ordinary), carded from
+    // its written paper: 18,345 + 215.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_560);
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.
@@ -732,7 +740,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('slovakian:')
         && !name.startsWith('slovenian:')
         && !name.startsWith('swedish:')
-        && !name.startsWith('ukrainian:'))
+        && !name.startsWith('ukrainian:')
+        && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

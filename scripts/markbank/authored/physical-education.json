@@ -20,14 +20,6 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "4-6 impact but may lack coherence",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "1-3 their impact",
     "marks": null,
     "openList": true,
@@ -313,35 +305,6 @@
     "id": "r-7",
     "kind": "point",
     "verbatim": "Performance of necessary movement",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2020-hl-q13a",
-  "topicId": "physical-education-0-19",
-  "conceptId": "pe-0-19-figure-neville-multiple-milestones",
-  "level": "higher",
-  "year": 2020,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2020 HL Q13(a)",
-  "questionText": "Figure 8 Joy Neville has set multiple milestones, including refereeing in the Division 1A of the Ulster Bank League. She has become the first woman to officiate a Pro 14 match and the first woman to officiate in the Challenge Cup. Along with Spain’s Alhambra Nievas, she was one of the first women to officiate a men’s international match when she took charge of Norway versus Denmark. Neville was also awarded Referee of the Year in November 2017, following her performance in the women’s World Cup final. A game of rugby union has two periods of 40 minutes each. In international matches the referee will stop the clock for stoppages.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "up to a maximum of",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -777,7 +740,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 13,
+   "ofParts": 12,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -794,7 +757,6 @@
      "perOption": 2,
      "options": [
       "The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample",
-      "Use or Attempted Use by an Athlete of a Prohibited Substance or a Prohibited Method",
       "Evading, Refusing or Failing to Submit to Sample Collection",
       "Committing Three Whereabouts Failures in Twelve Months",
       "Tampering or Attempted Tampering with any Part of Doping Control",
@@ -2610,7 +2572,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "7 out of",
+    "verbatim": "7 out of 10",
     "marks": 4,
     "openList": true,
     "contextNote": ""
@@ -4583,72 +4545,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2022-ol-q18c",
-  "topicId": "physical-education-1-2",
-  "conceptId": "pe-1-2-design-sheet-suitable-young",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2022 OL Q18(c)",
-  "questionText": "Design a tip sheet suitable for young adults aimed at encouraging lifelong participation in physical activity. Include at least four points.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Unclear tip sheet",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "and incomplete",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2022-ol-q18d",
-  "topicId": "physical-education-1-2",
-  "conceptId": "pe-1-2-does-sheet-encourage-lifelong",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2022 OL Q18(d)",
-  "questionText": "How does your tip sheet encourage lifelong participation?",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "How tip sheet in (c) encourages lifelong participation",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2022-ol-q4",
   "topicId": "physical-education-0-5",
   "conceptId": "pe-0-5-images-show-athletes-competing",
@@ -5025,6 +4921,63 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2023-ol-q12",
+  "topicId": "physical-education-0-16",
+  "conceptId": "pe-0-16-place-tick-true-false",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2023 OL Q12",
+  "questionText": "Place a tick () in the True or False column for the following statements: True False Sport Ireland is responsible for anti-doping in Ireland. The main performance enhancing effect of anabolic steroids is to improve alertness and reduce tiredness. Athletes are allowed 5 whereabouts failures in 12 months. Putting the ball out of play when an opponent is injured is an example of sportsmanship.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2 + 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sport Ireland is Ireland’s national anti-doping organisation. — True",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Anabolic Steroids boost alertness and reduce tiredness. — False",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Athletes are allowed 5 whereabouts failures. — False",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Putting the ball out of play when an opponent is injured is an example of sportsmanship. — True",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2023-ol-q13di",
   "topicId": "physical-education-0-12",
   "conceptId": "pe-0-12-identifying-main-energy-system",
@@ -5366,39 +5319,6 @@
     "kind": "point",
     "verbatim": "Boys 70%",
     "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2023-ol-q18biii",
-  "topicId": "physical-education-1-2",
-  "conceptId": "pe-1-2-suggest-ways-increase-participation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2023 OL Q18(b)(iii)",
-  "questionText": "Suggest ways to increase participation in physical activity for school children.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "8 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Suggestion to increase participation levels but unclear explanation or invalid to school children",
-    "marks": 8,
     "openList": true,
     "contextNote": ""
    }
@@ -6969,7 +6889,7 @@
    "kind": "bestNofParts",
    "notation": "4 x 2 marks",
    "answer": 4,
-   "ofParts": 5,
+   "ofParts": 4,
    "perPart": 2
   },
   "totalMarks": 8,
@@ -6988,8 +6908,7 @@
       "Presence of a prohibited substance",
       "Evading, refusing or failing to submit a sample",
       "3 whereabouts failures within 12 months",
-      "Possession of a prohibited substance",
-      "Use of a prohibited method"
+      "Possession of a prohibited substance"
      ]
     }
    }
@@ -7705,47 +7624,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2024-ol-q5",
-  "topicId": "physical-education-1-1",
-  "conceptId": "pe-1-1-social-benefits",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2024 OL Q5",
-  "questionText": "Outline two social benefits of physical activity.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 4 marks",
-   "answer": 2,
-   "ofParts": 2,
-   "perPart": 4
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Possible candidate response",
-    "marks": 8,
-    "openList": true,
-    "contextNote": "2 answers at 4 marks each, as the scheme prices it.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Make new friends",
-      "sense of belonging"
-     ]
-    }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2024-ol-q6b",
   "topicId": "physical-education-0-7",
   "conceptId": "pe-0-7-method-fitness-training-develops",
@@ -8308,6 +8186,35 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2025-ol-q16aii",
+  "topicId": "physical-education-2-3",
+  "conceptId": "pe-2-3-possible-reason-students-play",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2025 OL Q16(a)(ii)",
+  "questionText": "Give a possible reason why 64% of students play Gaelic games but only 2% go swimming.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gaelic games and swimming",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2025-ol-q18ai",
   "topicId": "physical-education-1-15",
   "conceptId": "pe-1-15-fill-blanks-piece-text",
@@ -8412,6 +8319,35 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2025-ol-q7a",
+  "topicId": "physical-education-1-22",
+  "conceptId": "pe-1-22-statement-example-discrimination-prejudice",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2025 OL Q7(a)",
+  "questionText": "Is the statement above an example of discrimination, prejudice, stereotyping or inclusion?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "stereotyping or prejudice",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2025-ol-q8a",
   "topicId": "physical-education-1-0",
   "conceptId": "pe-1-0-other-outdoor-adventure",
@@ -8441,27 +8377,27 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2026-hl-q14d",
-  "topicId": "physical-education-0-23",
-  "conceptId": "pe-0-23-compare-performances-depicted-figure",
-  "level": "higher",
-  "year": 2026,
+  "id": "pe-2025-ol-q8c",
+  "topicId": "physical-education-1-0",
+  "conceptId": "pe-1-0-different-concept",
+  "level": "ordinary",
+  "year": 2025,
   "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 HL Q14(d)",
-  "questionText": "Compare the performances depicted in Figure 7 and Figure 8 in terms of aesthetic or artistic criteria of performance.",
+  "section": "A",
+  "questionRef": "2025 OL Q8(c)",
+  "questionText": "Name a different concept of physical activity.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 12,
+  "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Makes use of examples to highlight the point of comparison",
+    "verbatim": "Play/Sport/Leisure and recreation/PE/Mass participation sports",
     "marks": null,
     "openList": true,
     "contextNote": ""

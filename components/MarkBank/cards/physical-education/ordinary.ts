@@ -208,6 +208,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "power – plyometrics, resistance training", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "balance – core, unilateral exercises", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Physical Education 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -258,7 +268,7 @@ export const CARDS: SecCard[] = [
     questionText: "How many of the top 10 are sports programmes?",
     tariffModel: {"kind":"fixed","notation":"4 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "7 out of", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "7 out of 10", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -406,6 +416,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Mesomorph –soccer, hockey", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "Endomorph –wrestling, heavyweight boxing", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Physical Education 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -571,6 +591,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Tedium, progressive overload", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Any 3 other principles of training", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Physical Education 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -665,33 +695,6 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2022-ol-q18c", topicId: "physical-education-1-2", conceptId: "pe-1-2-design-sheet-suitable-young",
-    section: "C", questionRef: "2022 OL Q18(c)",
-    questionText: "Design a tip sheet suitable for young adults aimed at encouraging lifelong participation in physical activity. Include at least four points.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Unclear tip sheet", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "and incomplete", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2022-ol-q18d", topicId: "physical-education-1-2", conceptId: "pe-1-2-does-sheet-encourage-lifelong",
-    section: "C", questionRef: "2022 OL Q18(d)",
-    questionText: "How does your tip sheet encourage lifelong participation?",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "How tip sheet in (c) encourages lifelong participation", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
     id: "pe-2022-ol-q4", topicId: "physical-education-0-5", conceptId: "pe-0-5-images-show-athletes-competing",
     section: "A", questionRef: "2022 OL Q4",
     questionText: "The images show athletes competing in the 10,000 metre (Figure 2) and shot put (Figure 3) athletics events. For both of these events, identify the main component of physical fitness involved and explain your choice. Figure 2 Figure 3 Main component of fitness for 10,000 metres Explanation Main component of fitness for shot put Explanation",
@@ -736,6 +739,22 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "cycles evident", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2023-ol-q12", topicId: "physical-education-0-16", conceptId: "pe-0-16-place-tick-true-false",
+    section: "A", questionRef: "2023 OL Q12",
+    questionText: "Place a tick (✓) in the True or False column for the following statements: True False Sport Ireland is responsible for anti-doping in Ireland. The main performance enhancing effect of anabolic steroids is to improve alertness and reduce tiredness. Athletes are allowed 5 whereabouts failures in 12 months. Putting the ball out of play when an opponent is injured is an example of sportsmanship.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 + 2 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sport Ireland is Ireland’s national anti-doping organisation. — True", marks: 2, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Anabolic Steroids boost alertness and reduce tiredness. — False", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Athletes are allowed 5 whereabouts failures. — False", marks: 2, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Putting the ball out of play when an opponent is injured is an example of sportsmanship. — True", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -852,19 +871,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Boys 70%", marks: 2, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2023-ol-q18biii", topicId: "physical-education-1-2", conceptId: "pe-1-2-suggest-ways-increase-participation",
-    section: "C", questionRef: "2023 OL Q18(b)(iii)",
-    questionText: "Suggest ways to increase participation in physical activity for school children.",
-    tariffModel: {"kind":"fixed","notation":"8 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Suggestion to increase participation levels but unclear explanation or invalid to school children", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -1122,19 +1128,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2024-ol-q5", topicId: "physical-education-1-1", conceptId: "pe-1-1-social-benefits",
-    section: "A", questionRef: "2024 OL Q5",
-    questionText: "Outline two social benefits of physical activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":2,"perPart":4}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Possible candidate response", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Make new friends","sense of belonging"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Ordinary Level — © State Examinations Commission.",
     id: "pe-2024-ol-q6b", topicId: "physical-education-0-7", conceptId: "pe-0-7-method-fitness-training-develops",
     section: "A", questionRef: "2024 OL Q6(b)",
     questionText: "Describe a method of physical fitness training that develops power.",
@@ -1264,6 +1257,19 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2025-ol-q16aii", topicId: "physical-education-2-3", conceptId: "pe-2-3-possible-reason-students-play",
+    section: "C", questionRef: "2025 OL Q16(a)(ii)",
+    questionText: "Give a possible reason why 64% of students play Gaelic games but only 2% go swimming.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gaelic games and swimming", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
     id: "pe-2025-ol-q18ai", topicId: "physical-education-1-15", conceptId: "pe-1-15-fill-blanks-piece-text",
     section: "C", questionRef: "2025 OL Q18(a)(i)",
     questionText: "Fill in the blanks in the following piece of text using the words provided in the box below. Each word can only be used once. Two blanks have been filled in for you.",
@@ -1303,12 +1309,38 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2025-ol-q7a", topicId: "physical-education-1-22", conceptId: "pe-1-22-statement-example-discrimination-prejudice",
+    section: "A", questionRef: "2025 OL Q7(a)",
+    questionText: "Is the statement above an example of discrimination, prejudice, stereotyping or inclusion?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "stereotyping or prejudice", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
     id: "pe-2025-ol-q8a", topicId: "physical-education-1-0", conceptId: "pe-1-0-other-outdoor-adventure",
     section: "A", questionRef: "2025 OL Q8(a)",
     questionText: "Name one other physical activity that is an ‘outdoor and adventure activity’.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rock-climbing/orienteering/caving", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2025-ol-q8c", topicId: "physical-education-1-0", conceptId: "pe-1-0-different-concept",
+    section: "A", questionRef: "2025 OL Q8(c)",
+    questionText: "Name a different concept of physical activity.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Play/Sport/Leisure and recreation/PE/Mass participation sports", marks: null, openList: true },
     ],
   } as SecCard,
   {

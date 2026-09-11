@@ -128,7 +128,11 @@ NOT_A_POINT = re.compile(
     # The paper's own rubric, reprinted inside the scheme's table. It tells the
     # candidate how to record their choice and answers nothing.
     r'|(?:please )?choose from above\b|(?:put|place) a tick\b|tick the box\b'
-    r'|indicate which\b)', re.I)
+    r'|indicate which\b'
+    # A fragment the converter left behind when it split a wrapped line —
+    # "and incomplete", "or the same" — which is half of a band descriptor
+    # and an answer to nothing.
+    r'|(?:and|or|but|with)\b.{0,14}$)', re.I)
 TARIFF_RESIDUE = re.compile(r'\b\d{1,2}\s*(?:m|marks?)\b|\d\s*[x×@]\s*\d', re.I)
 # The SEC closes most of its lists by saying the list is not closed. That tail
 # is not an answer — "Positivity, Excellent negotiation skills and other
@@ -475,13 +479,28 @@ def build():
             if len(qtext) < 16 and not ASK_OPENER.match(qtext):
                 refuse('the paper prints no ask text under this key', qtext[:60])
                 continue
-            pages = []
-            if NEEDS_SOURCE.search(qtext):
-                pages = source_pages(year, level, qtext)
-                if not pages:
-                    refuse('the ask depends on a figure, table or case study '
-                           'this reader cannot find a page for', qtext[:80])
+            groups = sorted(set(part.tariffs))
+            steps = next((st for text in [part.cue] + part.rows + part.cells
+                          for st in [S.steps_in(text or '')] if st), [])
+            if not table_rows and (TABLE_TASK.match(qtext)
+                                   or TABLE_TASK_INLINE.search(qtext)):
+                # Refused only where the flat reading cannot stand in for the
+                # table either. 2025 Ordinary's fill-in-the-blanks prints its
+                # eight answers one to a line — "Discrimination = 2" — and
+                # those are answers whatever the ask calls itself.
+                claim = groups[0][0] if len(groups) == 1 else None
+                if claim is None or len(options) < claim:
+                    refuse('the ask is answered inside a printed table whose '
+                           'other column the flat text layer interleaves',
+                           qtext[:80])
                     continue
+            if not table_rows and any(SCHEME_TICK.search(t)
+                                      for t in part.rows + part.answers):
+                refuse('the scheme marks its answer with a tick in a printed '
+                       'column the text layer cannot place',
+                       next(t for t in part.rows + part.answers
+                            if SCHEME_TICK.search(t))[:80])
+                continue
             groups = sorted(set(part.tariffs))
             steps = next((st for text in [part.cue] + part.rows + part.cells
                           for st in [S.steps_in(text or '')] if st), [])
@@ -524,6 +543,16 @@ def build():
                 refuse('no LCPE topic matches the wording', qtext[:80])
                 continue
 
+            pages = []
+            # The stem counts too: a back-referencing ask carries the part it
+            # points at, and that part is the one that names the figure.
+            if NEEDS_SOURCE.search(f'{qtext} {stem}'):
+                pages = source_pages(year, level, f'{qtext} {stem}')
+                if not pages:
+                    refuse('the ask depends on a figure, table or case study '
+                           'this reader cannot find a page for', qtext[:80])
+                    continue
+
             if table_rows:
                 # The SEC answered this one inside its own table. Each printed
                 # row is one marking point — the prompt it set and the answer
@@ -543,8 +572,9 @@ def build():
                     # dangling "+". 2023 Ordinary Q12 prints "2 + 2 + 2 + 2"
                     # across a wrap and the flat text keeps "2 + 2 + 2 +",
                     # which is the SEC saying the list continues.
-                    dangling = any(re.search(r'\d\s*\+\s*$', text or '')
-                                   for text in [part.cue] + part.rows + part.cells)
+                    dangling = any(
+                        re.search(r'(?:\d{1,2}\s*\+\s*){2,}(?!\d)', text or '')
+                        for text in [part.cue] + part.rows + part.cells)
                     if per and (groups[0][0] == len(table_rows) or dangling
                                 or per * len(table_rows) in checks):
                         prices = [per] * len(table_rows)

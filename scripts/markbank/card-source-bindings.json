@@ -1524,17 +1524,18 @@
     15
    ]
   },
+  "pe-2020-hl-q11bii": {
+   "kind": "illustration",
+   "pages": [
+    12,
+    15
+   ]
+  },
   "pe-2020-hl-q11c": {
    "kind": "illustration",
    "pages": [
     12,
     16
-   ]
-  },
-  "pe-2020-hl-q13a": {
-   "kind": "illustration",
-   "pages": [
-    21
    ]
   },
   "pe-2020-hl-q4": {
@@ -1589,6 +1590,13 @@
     35
    ]
   },
+  "pe-2021-hl-q18dii": {
+   "kind": "illustration",
+   "pages": [
+    33,
+    35
+   ]
+  },
   "pe-2021-ol-q13bi": {
    "kind": "illustration",
    "pages": [
@@ -1614,7 +1622,19 @@
     15
    ]
   },
+  "pe-2021-ol-q13eii": {
+   "kind": "illustration",
+   "pages": [
+    15
+   ]
+  },
   "pe-2021-ol-q17ci": {
+   "kind": "illustration",
+   "pages": [
+    27
+   ]
+  },
+  "pe-2021-ol-q17cii": {
    "kind": "illustration",
    "pages": [
     27
@@ -1642,6 +1662,12 @@
    "kind": "illustration",
    "pages": [
     17
+   ]
+  },
+  "pe-2022-ol-q13bii": {
+   "kind": "illustration",
+   "pages": [
+    18
    ]
   },
   "pe-2022-ol-q18aii": {
@@ -1726,12 +1752,6 @@
    "kind": "illustration",
    "pages": [
     31
-   ]
-  },
-  "pe-2026-hl-q14d": {
-   "kind": "illustration",
-   "pages": [
-    23
    ]
   },
   "pe-2026-ol-q16ci": {

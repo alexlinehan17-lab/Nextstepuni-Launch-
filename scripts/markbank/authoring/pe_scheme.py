@@ -238,7 +238,8 @@ EXAMINER_VOCAB = re.compile(
     r'|present(?:ed|s)?|provide[sd]?|providing|relevant|some|somewhat'
     r'|state[sd]?|statement|understanding|vague|vaguely|valid|weak'
     r'|response|responses|answer|answers|credit|reference|referenced'
-    r'|sufficient|no marks|little|effort|level|levels of detail|quality)\b',
+    r'|sufficient|no marks|little|effort|level|levels of detail|quality'
+    r'|unclear|incomplete|lacks?|merit|awarded)\b',
     re.I)
 # An instruction to the examiner. It is printed inside the table and reads like
 # content — "Note: type of feedback explained must be appropriate for an
@@ -297,6 +298,7 @@ CLOSES_LIST = re.compile(
     r"|describ(?:e|es|ed)\b|description\b|discuss(?:es|ed)?\b|discussion\b"
     r"|examin(?:e|es|ed|ation)\b|analys(?:e|es|ed|is)\b|little\b|no\b"
     r"|reasons? why|tick the|put a tick|place a tick|indicate which"
+    r"|makes?\b|how\b|unclear|incomplete|design\b|uses?\b|shows?\b"
     r"|outlines?\b|outline of|defines?\b|definition\b|award\b|note\b|do not"
     r"|don't\b|no relevant|no marks|knowledge is|information is|analysis is"
     r"|candidates?\b|two\s|three\s|four\s|five\s|marks?\s|max\b)", re.I)
@@ -405,7 +407,13 @@ class Part:
             return sum(prices)
         cells = set()
         for cell in self.cells:
-            m = re.fullmatch(r'\(?\s*(\d{1,3})\s*(?:marks?)?\s*\)?', cell.strip(), re.I)
+            # "4 marks", "4", and "4 marks (2+2)" — the SEC often prints the
+            # part's total and the split it pays in one cell, and the total is
+            # the number in front.
+            m = re.fullmatch(
+                r'\(?\s*(\d{1,3})\s*(?:marks?)?\s*'
+                r'(?:\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})+\s*\)\s*)?\)?',
+                cell.strip(), re.I)
             if m:
                 cells.add(int(m.group(1)))
         if len(cells) == 1:
@@ -426,6 +434,23 @@ class Part:
                 ceiling = value if ceiling is None else max(ceiling, value)
         if ceiling is not None:
             return ceiling
+        # The last resort before giving up: the marks column glued to the end
+        # of ANY line of the part, whether the line opens like a band or not.
+        # 2025 Ordinary prices its whole paper that way — "Play/Sport/Leisure
+        # and recreation/PE/Mass participation sports. 1-2" — and the top of
+        # that printed range is the most the part pays.
+        tails = set()
+        for text in [self.cue] + self.rows + self.answers:
+            m = re.search(r'(?<=[a-z.)\]])\s+(\d{1,2})\s*[-–]\s*(\d{1,2})\s*$',
+                          text or '', re.I)
+            if m:
+                tails.add(int(m.group(2)))
+                continue
+            m = re.search(r'(?<=[a-z.)\]])\s+(\d{1,2})\s*$', text or '', re.I)
+            if m:
+                tails.add(int(m.group(1)))
+        if len(tails) == 1:
+            return next(iter(tails))
         values = {int(m.group(1))
                   for text in [self.cue] + self.rows + self.answers + self.cells
                   for m in re.finditer(r'(\d{1,2})\s*(?:marks?|m)\b', text or '', re.I)}
@@ -680,6 +705,14 @@ IF_THEY = re.compile(
     r'|identif(?:y|ies)|answers?)\s+(?P<body>.{3,})$', re.I)
 
 
+# A number at the end of a line is the marks column — unless the words in
+# front of it need it: "7 out of 10" is the SEC's answer to "How many of the
+# top 10 are sports programmes?", and stripping the 10 ships "7 out of".
+KEEPS_ITS_NUMBER = re.compile(
+    r'\b(?:of|out of|to|than|under|over|up to|at|in|per|by|and|or|about'
+    r'|within|between)$', re.I)
+
+
 def strip_tariff(text):
     """One printed row with its marks-column arithmetic taken off."""
     out = tidy(text)
@@ -692,7 +725,10 @@ def strip_tariff(text):
             r'\s*[-–]\s*\d{1,2}\s*m\b',
             r'\s+\d{1,2}\s*[-–]\s*\d{1,2}\s*$',
             r'\s+\d{1,3}\s*$'):
-        out = tidy(re.sub(pattern, ' ', out, flags=re.I))
+        stripped = tidy(re.sub(pattern, ' ', out, flags=re.I))
+        if stripped != out and KEEPS_ITS_NUMBER.search(stripped.rstrip(' .;:,-')):
+            continue
+        out = stripped
     return tidy(out).strip(' .;:,-=')
 
 
