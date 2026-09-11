@@ -141,7 +141,18 @@ TARIFF_RESIDUE = re.compile(r'\b\d{1,2}\s*(?:m|marks?)\b|\d\s*[x×@]\s*\d', re.I
 # The marks column glued to the FRONT of the row it priced. What follows is
 # the examiner's criterion cut off at its own first word: "3+3+2 opponent that
 # could improve her defence and help her win the ball back".
-LEADING_TARIFF = re.compile(r'^\d{1,2}\s*(?:[x×+]\s*\d{1,2}\s*)+', re.I)
+LEADING_TARIFF = re.compile(
+    r'^\d{1,2}\s*(?:[x×+]\s*\d{1,2}\s*)+'
+    # ...and the bare word the marks column leaves behind when it wrapped:
+    # "marks outdoor and adventure activities" is the tail of a cell, not an
+    # answer that begins with the word marks.
+    r'|^marks?\s+(?=\S)', re.I)
+# The same bare word on either end of ONE item of a list, where the cell wrapped
+# into the middle of the SEC's own comma-separated answers: "positive
+# self-talk, visualisation, meditation marks" splits into three answers and a
+# stray. Taken off each item, never from the middle, and the item is still
+# checked against the scheme afterwards.
+GLUED_MARK_WORD = re.compile(r'^marks?\s+|\s+marks?$', re.I)
 # The SEC closes most of its lists by saying the list is not closed. That tail
 # is not an answer — "Positivity, Excellent negotiation skills and other
 # relevant" is one answer and a disclaimer — and the card says the same thing
@@ -241,7 +252,8 @@ def options_for(part, year, level, qtext):
     out, untraceable, restated, criteria = [], [], [], []
     ask = re.sub(r'[^a-z0-9]+', '', (qtext or '').lower())
     for text, source in S.answers_of(part, with_source=True):
-        text = tidy(OPEN_LIST_TAIL.sub('', tidy(text))).strip(' .;,')
+        text = tidy(GLUED_MARK_WORD.sub(
+            '', tidy(OPEN_LIST_TAIL.sub('', tidy(text))))).strip(' .;,')
         if not text or len(text) < 4:
             continue
         if NOT_A_POINT.match(text):
@@ -283,7 +295,8 @@ def options_for(part, year, level, qtext):
     # there and every piece still traces to the scheme on its own.
     if len(out) == 1 and re.search(r'[;,]', out[0]):
         for sep in (r'\s*;\s*', r'\s*,\s*'):
-            pieces = [tidy(x).strip(' .;,') for x in re.split(sep, out[0])]
+            pieces = [tidy(GLUED_MARK_WORD.sub('', tidy(x))).strip(' .;,')
+                      for x in re.split(sep, out[0])]
             pieces = [p for p in pieces if 3 <= len(p) <= 90]
             if len(pieces) >= 2 and all(L.traces(year, level, p) for p in pieces):
                 out = pieces
@@ -392,6 +405,11 @@ def band_evidence(part):
     return ' / '.join(rows[:4])[:400] or '(the scheme prints no row for this part)'
 
 
+# What the converter leaves on the end of a criterion when the marks column
+# wrapped: a bare "marks", a "+", a hyphen. The tariff itself is already off.
+LABEL_RESIDUE = re.compile(r'(?:\s*(?:marks?|\+|[-–]))+\s*$', re.I)
+
+
 def row_label(part, claim):
     """A label for the menu, in the scheme's own words for what it pays for."""
     lead = next((r for r in part.rows
@@ -399,8 +417,10 @@ def row_label(part, claim):
     if not lead:
         lead = next((r for r in part.rows
                      if not S.TABLE_HEAD.match(r) and not S.EXAMINER_NOTE.match(r)
+                     and not S.BAND_OPENER.match(r)
                      and len(S.strip_tariff(r)) > 12), '')
-    label = tidy(re.sub(r'\s*[:.]\s*$', '', S.strip_tariff(lead)))
+    label = tidy(LABEL_RESIDUE.sub('', tidy(re.sub(r'\s*[:.]\s*$', '',
+                                                   S.strip_tariff(lead)))))
     if not label or len(label) < 8:
         label = f'Any {claim} of the answers the scheme states'
     elif len(label) > 110:

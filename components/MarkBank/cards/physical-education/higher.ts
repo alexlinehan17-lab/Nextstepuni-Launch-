@@ -51,7 +51,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two key training patterns evident in Figure 6. .",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identifies two key patterns +", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["The tennis player has 4 hours of tennis per week. This happens every week and does not change","Strength training is completed every week in either one or two hour blocks","Flexibility training is completed in all of the five weeks in one hour blocks"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identifies two key patterns", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["The tennis player has 4 hours of tennis per week. This happens every week and does not change","Strength training is completed every week in either one or two hour blocks","Flexibility training is completed in all of the five weeks in one hour blocks"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -76,7 +76,7 @@ export const CARDS: SecCard[] = [
     questionText: "Suggest reasons for one of the training patterns identified by you in question 11",
     tariffModel: {"kind":"fixed","notation":"3 + 1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Relevant reasons suggested +", marks: 4, contextNote: "The scheme pays 3 then 1 marks, in the order the answers are credited.", openList: true, group: {"claimMax":2,"perOption":3,"options":["periodisation","principles of training mark"],"perOptionSteps":[3,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "Relevant reasons suggested", marks: 4, contextNote: "The scheme pays 3 then 1 marks, in the order the answers are credited.", openList: true, group: {"claimMax":2,"perOption":3,"options":["periodisation","principles of training"],"perOptionSteps":[3,1]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -100,7 +100,7 @@ export const CARDS: SecCard[] = [
     questionText: "What would Roger Federer learn about Andy Murray’s second serve from analysing the data shown in Figure 4?",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 6 marks","answer":2,"ofParts":2,"perPart":6}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Using evidence to draw a conclusion about Murray’s second serve marks", marks: 12, contextNote: "2 answers at 6 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Murrays serve goes short in the service box a lot of the time thus allowing his opponent more time to adjust and return the ball. This short serve probably generates less speed and as a result his opponent has more time to react","The data suggests that Murray will put most of his second serve’s to Federer’s left. Therefore, Federer can either come to the net off his backhand or run around and hit on his forehand. Federer can attack the second serve"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Using evidence to draw a conclusion about Murray’s second serve", marks: 12, contextNote: "2 answers at 6 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Murrays serve goes short in the service box a lot of the time thus allowing his opponent more time to adjust and return the ball. This short serve probably generates less speed and as a result his opponent has more time to react","The data suggests that Murray will put most of his second serve’s to Federer’s left. Therefore, Federer can either come to the net off his backhand or run around and hit on his forehand. Federer can attack the second serve"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -138,7 +138,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name and define two different types of skill.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two types of skill named +", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Cognitive – the thinking skills. They are used in decision making and problem solving","Perceptual – used to interpret information gathered through your senses to guide your actions","Psychomotor (motor) skills – used by your brain to control physical movements"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two types of skill named", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Cognitive – the thinking skills. They are used in decision making and problem solving","Perceptual – used to interpret information gathered through your senses to guide your actions","Psychomotor (motor) skills – used by your brain to control physical movements"]} },
     ],
   } as SecCard,
   {
@@ -170,7 +170,7 @@ export const CARDS: SecCard[] = [
     questionText: "List the demands of officiating rugby in terms of physical fitness.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":3,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two physical fitness demands related to officiating rugby marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Cardiorespiratory endurance","Speed","Muscular endurance"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two physical fitness demands related to officiating rugby", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Cardiorespiratory endurance","Speed","Muscular endurance"]} },
     ],
   } as SecCard,
   {
@@ -287,7 +287,7 @@ export const CARDS: SecCard[] = [
     questionText: "Figure 2 Jason Smyth, in Figure 2 above, is a Paralympian with a visual impairment. He is a 100 metre champion. He was crowned the “fastest Paralympian on the Planet” when he won at the Rio ‘One Year to Go’ celebration event. State and explain two different types of feedback that would be appropriate for Jason.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":2,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two types of feedback +", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["intrinsic feedback, kinaesthetic","extrinsic feedback, verbal"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two types of feedback", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["intrinsic feedback, kinaesthetic","extrinsic feedback, verbal"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -310,7 +310,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two Irish anti-doping rule violations.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":10,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
     ],
   } as SecCard,
   {
@@ -323,7 +323,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two personal health and wellbeing benefits for teenagers who participate in physical activity.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":2,"perPart":4}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two personal health and wellbeing benefits described marks", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["physical health","mental health"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two personal health and wellbeing benefits described", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["physical health","mental health"]} },
     ],
   } as SecCard,
   {
@@ -336,7 +336,7 @@ export const CARDS: SecCard[] = [
     questionText: "List two appropriate methods of collecting physical activity data on post-primary school students.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":2,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two appropriate methods of collecting physical activity data listed +", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["pedometer","physical activity self-report diary mark"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two appropriate methods of collecting physical activity data listed", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["pedometer","physical activity self-report diary"]} },
     ],
   } as SecCard,
   {
@@ -430,7 +430,7 @@ export const CARDS: SecCard[] = [
     questionText: "With reference to the case study, name the three phases of a 2000 m rowing race and explain the contribution of the relevant energy systems during each phase.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Phase named +", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Phase 1 – Sprint start","Phase 2 – Maintenance phase","Phase 3 – Sprint finish mark +"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Phase named", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Phase 1 – Sprint start","Phase 2 – Maintenance phase","Phase 3 – Sprint finish mark +"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -453,7 +453,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two methods that Tayla and her coaches could use to analyse her set shot technique.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two appropriate methods of analysis described marks", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["observation schedules","video analysis","biomechanical analysis"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two appropriate methods of analysis described", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["observation schedules","video analysis","biomechanical analysis"]} },
     ],
   } as SecCard,
   {
@@ -554,7 +554,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using your knowledge of vectors and scalars, explain the difference between distance and displacement.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":3,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Accurate description of distance", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Distance is a scalar quantity. It is described in terms of its magnitude","Distance refers to the path of a body as it moves from one location to another. +","Displacement is a vector quantity. It is described in terms of its magnitude and direction. Displacement is a measure of motion ‘as the crow flies’"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Distance is a scalar quantity. It is described in terms of its magnitude","Distance refers to the path of a body as it moves from one location to another. +","Displacement is a vector quantity. It is described in terms of its magnitude and direction. Displacement is a measure of motion ‘as the crow flies’"]} },
     ],
   } as SecCard,
   {
@@ -643,7 +643,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two concepts of physical activity.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":6,"perPart":4}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two concepts of physical activity described +", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["play","leisure and recreation","physical education","mass-participation sports","marks outdoor and adventure activities","sport"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two concepts of physical activity described", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["play","leisure and recreation","physical education","mass-participation sports","outdoor and adventure activities","sport"]} },
     ],
   } as SecCard,
   {
@@ -669,7 +669,7 @@ export const CARDS: SecCard[] = [
     questionText: "Michael Jordan won six National Basketball Association (NBA) Championships and was named most valuable player (MVP) in each of those six NBA finals series. Examine two psychological strategies that Jordan could have used pre performance to ensure that he was mentally prepared for the psychological demands of an NBA final series.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 6 marks","answer":2,"ofParts":3,"perPart":6}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two psychological strategies pre performance +", marks: 12, contextNote: "2 answers at 6 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":6,"options":["positive self-talk","visualisation","meditation marks"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two psychological strategies pre performance", marks: 12, contextNote: "2 answers at 6 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":6,"options":["positive self-talk","visualisation","meditation"]} },
     ],
   } as SecCard,
   {
@@ -761,7 +761,7 @@ export const CARDS: SecCard[] = [
     questionText: "With reference to a named physical activity, identify two relevant performance-related fitness demands.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":6,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identified performance related fitness demand relevant to physical activity named", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["speed","power","agility","reaction time","coordination","balance marks"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identified performance related fitness demand relevant to physical activity named", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["speed","power","agility","reaction time","coordination","balance"]} },
     ],
   } as SecCard,
   {
@@ -802,7 +802,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two different examples of movement in the frontal plane in physical activity.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":3,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two different examples of frontal plane movement +", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["performing a cartwheel","jumping jacks","side step marks"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two different examples of frontal plane movement", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["performing a cartwheel","jumping jacks","side step"]} },
     ],
   } as SecCard,
   {
@@ -869,7 +869,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two ways that a performer at the stage of learning identified by you in (i) could improve their skill level.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 3 marks","answer":2,"ofParts":3,"perPart":3}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Very Good – Excellent description", marks: 6, contextNote: "2 answers at 3 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Fixed practice","feedback","Trial and error/ self-discovery"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 6, contextNote: "2 answers at 3 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Fixed practice","feedback","Trial and error/ self-discovery"]} },
     ],
   } as SecCard,
   {
@@ -1389,7 +1389,7 @@ export const CARDS: SecCard[] = [
     questionText: "Examine two approaches to safe practice that organisers of an event, such as the Olympic Games, may implement.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 5 marks","answer":2,"ofParts":2,"perPart":5}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Detailed and accurate examination of the safe practice approaches to event", marks: 10, contextNote: "2 answers at 5 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":5,"options":["4-5 organisation","2-3 practice approaches to event organisation"]} },
+    { id: "r-1", kind: "anyN", verbatim: "4-5 organisation", marks: 10, contextNote: "2 answers at 5 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":5,"options":["4-5 organisation","2-3 practice approaches to event organisation"]} },
     ],
   } as SecCard,
   {
@@ -1492,7 +1492,7 @@ export const CARDS: SecCard[] = [
     questionText: "Make two statements about doping in cycling over recent years based on information presented in Figure 12.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Accurate statement provided", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Example of accurate statements include", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1600,7 +1600,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define five components of health-related fitness.",
     tariffModel: {"kind":"bestNofParts","notation":"5 x 2 marks","answer":5,"ofParts":5,"perPart":2}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Accurate definition provided for a correctly named component of health- related fitness", marks: 10, contextNote: "5 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Muscular strength","muscular endurance","body composition","cardiorespiratory endurance","flexibility"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Components of health-related fitness", marks: 10, contextNote: "5 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":5,"perOption":2,"options":["Muscular strength","muscular endurance","body composition","cardiorespiratory endurance","flexibility"]} },
     ],
   } as SecCard,
   {
@@ -1817,7 +1817,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two disadvantages of sponsorship for athletes.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":4,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Detailed and accurate description providing excellent information on the disadvantages of sponsorship for…", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Time commitment to the sponsor","Distraction from training and preparation","Potential scheduling clashes","Potential to receive negative press from brand/ company association"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Time commitment to the sponsor","Distraction from training and preparation","Potential scheduling clashes","Potential to receive negative press from brand/ company association"]} },
     ],
   } as SecCard,
   {
@@ -1906,19 +1906,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Justification pf why the components are important in the activity", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q18aii", topicId: "physical-education-1-6", conceptId: "pe-1-6-examples-gamesmanship",
-    section: "C", questionRef: "2025 HL Q18(a)(ii)",
-    questionText: "Give two examples of gamesmanship.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Examples of gamesmanship in physical activity or sport", marks: null, openList: true },
     ],
   } as SecCard,
   {

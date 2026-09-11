@@ -119,6 +119,46 @@ def _rows_of(table):
     return out if len(out) >= 3 else []
 
 
+MARKS_IN_CELL = re.compile(r'\(\s*(\d{1,2})\s*marks?\s*\)', re.I)
+
+
+def _wide_rows_of(table):
+    """(prompt, answer, marks) for a table with THREE or more answer columns.
+
+    2021 Ordinary answers "State the role of each supplement and a challenge
+    of taking each supplement" in a grid — Supplement | Role | Challenge, with
+    each cell priced in its own brackets — and read across the row the three
+    cells arrive as one unreadable sentence. Each cell is one marking point,
+    named by the column it was printed under.
+    """
+    try:
+        data = table.extract()
+    except Exception:
+        return []
+    rows = [[tidy(c) for c in row] for row in data]
+    rows = [r for r in rows if sum(1 for c in r if c) >= 3]
+    if len(rows) < 3:
+        return []
+    width = len(rows[0])
+    if width < 3 or any(len(r) != width for r in rows):
+        return []
+    headings = rows[0]
+    if any(not h or len(h) > 40 or MARKS_CELL.match(h) for h in headings):
+        return []
+    out = []
+    for row in rows[1:]:
+        subject = row[0]
+        if not subject or len(subject) > 60:
+            continue
+        for i, cell in enumerate(row[1:], start=1):
+            body = tidy(MARKS_IN_CELL.sub(' ', cell)).strip(' .;,')
+            marks = MARKS_IN_CELL.search(cell)
+            if len(body) < 12 or not marks:
+                continue
+            out.append((f'{subject} — {headings[i]}', body, int(marks.group(1))))
+    return out
+
+
 _CACHE = {}
 
 
@@ -137,7 +177,15 @@ def answer_rows(year, level):
             except Exception:
                 continue
             for table in tables:
-                out.extend(_rows_of(table))
+                for reader in (_rows_of, _wide_rows_of):
+                    got = reader(table)
+                    if got:
+                        # The table's own identity, so a part that matches ONE
+                        # of its rows takes all of them: a grid interleaves its
+                        # columns differently line by line, and half a table is
+                        # a card that prices two cells of four.
+                        tid = len(out) and out[-1][3] + 1 or 1
+                        out.extend((a, b, m, tid) for a, b, m in got)
     _CACHE[key] = out
     return out
 
@@ -150,8 +198,10 @@ def rows_for(part, year, level):
     a row whose two cells both appear inside one of those lines is this part's.
     """
     printed = [flat(t) for t in [part.cue] + part.rows + part.answers if t]
+    rows = answer_rows(year, level)
+    hit = set()
     out = []
-    for prompt, answer, marks in answer_rows(year, level):
+    for prompt, answer, marks, tid in rows:
         a = flat(prompt)
         # The PROMPT is what both readings share. The answer is not: the flat
         # reading posts it into the middle of the prompt ("Run a sprint, rest,
@@ -167,6 +217,16 @@ def rows_for(part, year, level):
         # line to be sure, which is exactly what the welded reading gives.
         if any(a[:20] in line and (len(a) >= 20 or b in line)
                for line in printed):
+            hit.add(tid)
+            continue
+        # A wide table names its row by a word too short to identify anything
+        # ("Protein", "Creatine"); there the ANSWER is the distinctive half,
+        # and it is what the flat reading welded into the part.
+        if ' — ' in prompt and len(b) >= 25 and any(b[:25] in line
+                                                    for line in printed):
+            hit.add(tid)
+    for prompt, answer, marks, tid in rows:
+        if tid in hit:
             out.append((tidy(prompt), tidy(answer), marks))
     return out
 

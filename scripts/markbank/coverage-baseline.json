@@ -556,18 +556,18 @@
   },
   "physical-education": {
     "cards": 216,
-    "contentHash": "7fa6073ee2c8b29e",
-    "coveragePct": 96.1,
+    "contentHash": "0ec844ec651b801b",
+    "coveragePct": 96.2,
     "covered": 220,
-    "excluded": 492,
+    "excluded": 493,
     "leaves": 741,
-    "open": 29,
+    "open": 28,
     "orphans": 0,
     "papers": {
       "count": 13,
       "hash": "0dbddd431bb256fe"
     },
-    "refsHash": "bca015e6d9cf52c7"
+    "refsHash": "4ae3673847a7af6c"
   },
   "physics": {
     "cards": 1133,

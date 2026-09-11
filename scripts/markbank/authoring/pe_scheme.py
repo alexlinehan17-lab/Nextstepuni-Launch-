@@ -299,6 +299,7 @@ CLOSES_LIST = re.compile(
     r"|describ(?:e|es|ed)\b|description\b|discuss(?:es|ed)?\b|discussion\b"
     r"|examin(?:e|es|ed|ation)\b|analys(?:e|es|ed|is)\b|little\b|no\b"
     r"|reasons? why|tick the|put a tick|place a tick|indicate which"
+    r"|examples? of\b|list of\b|types? of\b(?=.{0,40}$)"
     r"|makes?\b|how\b|unclear|incomplete|design\b|uses?\b|shows?\b"
     r"|outlines?\b|outline of|defines?\b|definition\b|award\b|note\b|do not"
     r"|don't\b|no relevant|no marks|knowledge is|information is|analysis is"

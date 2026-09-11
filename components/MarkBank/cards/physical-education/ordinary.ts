@@ -276,6 +276,32 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2021-ol-q15b", topicId: "physical-education-0-12", conceptId: "pe-0-12-complete-table-role-supplement",
+    section: "C", questionRef: "2021 OL Q15(b)",
+    questionText: "Complete the table below. State the role of each supplement and a challenge of their use.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3 + 3 + 3 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Protein — Role — Used to increase protein intake of strength performers, who cannot meet needs through food intake alone. Builds and preserves muscle mass", marks: 3, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Protein — Challenge — Stomach pain, bloating, diarrhoea, cramps, thirst, fatigue, kidney stones", marks: 3, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Creatine — Role — Increases phosphocreatine stores in the muscle therefore allowing the ATP-PC system to last longer. Increase muscle strength, power and speed. Increase lean muscle mass", marks: 3, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Creatine — Challenge — Kidney damage, liver damage, weight gain, dehydration, muscle cramps", marks: 3, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Physical Education 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Ordinary Level — © State Examinations Commission.",
     id: "pe-2021-ol-q15cii", topicId: "physical-education-1-2", conceptId: "pe-1-2-education-lessons-help-increase",
     section: "C", questionRef: "2021 OL Q15(c)(ii)",
     questionText: "How can Physical Education lessons help increase the participation levels of young people in physical activity?",
@@ -307,7 +333,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two strategies used to support recovery following training.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":5,"perPart":4}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two post exercise recovery strategies described marks", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["cold water immersion","compression garments","nutrition","hydration","sleep"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two post exercise recovery strategies described", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["cold water immersion","compression garments","nutrition","hydration","sleep"]} },
     ],
   } as SecCard,
   {
@@ -473,7 +499,7 @@ export const CARDS: SecCard[] = [
     questionText: "There are a number of methods of practice that coaches can use when designing skill sessions for a physical activity. With reference to two named skills, outline a different method of practice a coach could use for each skill. Skill 1 Practice method Skill 2 Practice method",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two methods of skill practice outlined marks", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["whole practice","part practice","whole-part-whole practice"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two methods of skill practice outlined", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["whole practice","part practice","whole-part-whole practice"]} },
     ],
   } as SecCard,
   {
@@ -499,7 +525,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify three principles of ethical practice in physical activity.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 3 marks","answer":2,"ofParts":4,"perPart":3}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identified principle of ethical practice +", marks: 6, contextNote: "2 answers at 3 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":3,"options":["integrity","respect","fairness","equity"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identified principle of ethical practice", marks: 6, contextNote: "2 answers at 3 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":3,"options":["integrity","respect","fairness","equity"]} },
     ],
   } as SecCard,
   {
@@ -512,7 +538,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two components of health-related fitness.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":5,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identified health –related component of fitness +", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["cardio-respiratory endurance","muscular endurance","strength","flexibility","marks body composition"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identified health –related component of fitness", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["cardio-respiratory endurance","muscular endurance","strength","flexibility","body composition"]} },
     ],
   } as SecCard,
   {
@@ -661,7 +687,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain two characteristics of a skilled performance.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Good explanation", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Kinaesthetic awareness","consistency","anticipation","technical execution & other correct"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Kinaesthetic awareness","consistency","anticipation","technical execution & other correct"]} },
     ],
   } as SecCard,
   {
@@ -987,7 +1013,7 @@ export const CARDS: SecCard[] = [
     questionText: "To be successful in sports, you need to learn techniques and skills and practise them regularly. (Carol Dweck) Outline two characteristics of a skilled performance.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Clear and accurate characteristic of a skilled performance", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Kinaesthetic awareness","Anticipation","Consistency","Technical Execution"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Kinaesthetic awareness","Anticipation","Consistency","Technical Execution"]} },
     ],
   } as SecCard,
   {
