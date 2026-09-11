@@ -665,8 +665,8 @@ const decks = [
   ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
   /* Physical Education, carded from the written paper only: the project and
    * the performance assessment are marked from work no paper prints. */
-  ['physical-education:higher', PE_HIGHER, 132, 'bf80c938855f70866fceb2ef0b7310dbbbf2074d052369c5841bc4e3ad80efbc'],
-  ['physical-education:ordinary', PE_ORDINARY, 98, '4efd874f6e8b4af3fa75a99d0f5d99d0dadef0784350787c1b42e13b4be9955b'],
+  ['physical-education:higher', PE_HIGHER, 133, '92967e2079bd2b5e1a499fc16151a1e313cbe1789293dfc2410596b98b8648db'],
+  ['physical-education:ordinary', PE_ORDINARY, 99, '8ceb9616d5e01f788a3a2a984f5cf71492232ca4d5aa7ed18f8629773dbd063e'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -686,9 +686,9 @@ describe('Mark Bank card preservation', () => {
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
     // Portuguese 173, Romanian 50 and Dutch 42.
-    // ...and Physical Education 230 (132 Higher, 98 Ordinary), carded from
-    // its written paper: 18,345 + 230.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_575);
+    // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
+    // its written paper: 18,345 + 232.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_577);
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.

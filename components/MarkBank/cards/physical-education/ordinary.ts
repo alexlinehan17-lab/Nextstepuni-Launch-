@@ -571,12 +571,25 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2022-ol-q11bi", topicId: "physical-education-0-2", conceptId: "pe-0-2-class-lever-cannot-same",
+    section: "A", questionRef: "2022 OL Q11(b)(i)",
+    questionText: "Name one class of lever. You cannot use the same lever as named in (a). Class of lever",
+    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "first class lever", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
     id: "pe-2022-ol-q11bii", topicId: "physical-education-0-2", conceptId: "pe-0-2-where-body-would-find",
     section: "A", questionRef: "2022 OL Q11(b)(ii)",
     questionText: "State where in the body you would find such a lever. Example of where this lever is in the body",
     tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Where to find in body (e.g. head and neck)", marks: 2, openList: true },
+    { id: "r-1", kind: "point", verbatim: "head and neck", marks: 2, openList: true },
     ],
   } as SecCard,
   {

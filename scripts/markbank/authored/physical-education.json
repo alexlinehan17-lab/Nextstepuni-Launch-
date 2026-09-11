@@ -66,6 +66,35 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2020-hl-q11ai",
+  "topicId": "physical-education-0-10",
+  "conceptId": "pe-0-10-principle-training-tennis-player",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2020 HL Q11(a)(i)",
+  "questionText": "Identify and outline the principle of training the tennis player displayed from week 6 to week 10 as shown in Figure 5. would impact on the skill level of an athlete preparing for a competition.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "reversibility (also accept detraining)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2020-hl-q11bi",
   "topicId": "physical-education-0-6",
   "conceptId": "pe-0-6-training-patterns-evident-figure",
@@ -486,7 +515,15 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Conventions – procedural protocols (e.g. soccer- flip of coin)",
+    "verbatim": "the Haka",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "soccer- flip of coin",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -4410,6 +4447,39 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2022-ol-q11bi",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-class-lever-cannot-same",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2022 OL Q11(b)(i)",
+  "questionText": "Name one class of lever. You cannot use the same lever as named in (a). Class of lever",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "first class lever",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2022-ol-q11bii",
   "topicId": "physical-education-0-2",
   "conceptId": "pe-0-2-where-body-would-find",
@@ -4434,7 +4504,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Where to find in body (e.g. head and neck)",
+    "verbatim": "head and neck",
     "marks": 2,
     "openList": true,
     "contextNote": ""

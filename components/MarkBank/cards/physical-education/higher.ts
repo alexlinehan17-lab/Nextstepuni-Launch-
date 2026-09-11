@@ -70,6 +70,30 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q11ai", topicId: "physical-education-0-10", conceptId: "pe-0-10-principle-training-tennis-player",
+    section: "B", questionRef: "2020 HL Q11(a)(i)",
+    questionText: "Identify and outline the principle of training the tennis player displayed from week 6 to week 10 as shown in Figure 5. would impact on the skill level of an athlete preparing for a competition.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "reversibility (also accept detraining)", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12,
+                14
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
     id: "pe-2020-hl-q11bi", topicId: "physical-education-0-6", conceptId: "pe-0-6-training-patterns-evident-figure",
     section: "B", questionRef: "2020 HL Q11(b)(i)",
     questionText: "Identify two key training patterns evident in Figure 6. .",
@@ -236,7 +260,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Roles – various roles such as defenders/attackers in gameplay and captains", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Also non playing roles such as referee, coach", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Conventions – procedural protocols (e.g. soccer- flip of coin)", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "the Haka", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "soccer- flip of coin", marks: null, openList: true },
     ],
   } as SecCard,
   {

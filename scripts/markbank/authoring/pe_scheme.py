@@ -733,6 +733,17 @@ IDENTIFIES_AS = re.compile(
 # to 2020 Higher Q5(b), behind a tariff and a dash.
 AFTER_TARIFF = re.compile(
     r'\b\d{1,2}\s*marks?\s*[-–:]\s*(?P<body>.{6,})$', re.I)
+# And a fifth, where the answer follows the verb with no "as" between them and
+# the SEC's own bracket names its alternatives: "Identifies reversibility (also
+# accept detraining)". The bracket is the discriminator — without it,
+# "Identifies test to measure flexibility" would read as an answer when it is
+# the criterion for one.
+ACCEPT_PAREN = re.compile(
+    r'\b(?:identif(?:y|ies|ied)|names?|named|states?|stated|gives?|given)\s+'
+    r'(?P<body>[^()]{3,50}\((?:also\s+)?accept[^)]*\))', re.I)
+# And a sixth: the SEC's own example, in brackets inside the criterion.
+# "Name of lever (e.g. first class lever)" states the answer it is grading.
+EG_PAREN = re.compile(r'\(\s*e\.?\s?g\.?\s*[:.]?\s*(?P<body>[^)]{3,})\)', re.I)
 IF_THEY = re.compile(
     r'\bif (?:they|the candidate|s?he) (?:states?|says?|writes?|names?|gives?'
     r'|identif(?:y|ies)|answers?)\s+(?P<body>.{3,})$', re.I)
@@ -797,7 +808,7 @@ def stated(row):
         body = tidy(found.group('body')).strip(' .;:,-')
         if len(body) >= 6 and not EXAMINER_VOCAB.search(body):
             return body
-    for pattern in (IF_THEY, IDENTIFIES_AS):
+    for pattern in (IF_THEY, IDENTIFIES_AS, ACCEPT_PAREN, EG_PAREN):
         found = pattern.search(strip_tariff(text))
         if not found:
             continue

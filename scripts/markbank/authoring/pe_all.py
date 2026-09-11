@@ -44,8 +44,8 @@ one of those is reported OPEN and none is laundered into an exclusion.
 WHERE THIS STANDS, measured against the census's 741 leaf asks over thirteen
 papers:
 
-    234  covered by 230 cards
-    471  excluded, each carrying the scheme's own printed lines
+    236  covered by 232 cards
+    469  excluded, each carrying the scheme's own printed lines
      36  OPEN, in the buckets `--report` prints, every one of them an ask
          whose SCHEME states an answer this reader cannot lift:
 
