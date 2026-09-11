@@ -467,9 +467,32 @@ const decks = [
   ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 209, '1030050a22b237ea5ab74477d630b55d18620313c352fe167eb91691ae933abd'],
   ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
-   * so a later regeneration cannot silently omit or replace any of its cards. */
-  ['engineering:higher', ENGINEERING_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
-  ['engineering:ordinary', ENGINEERING_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
+   * so a later regeneration cannot silently omit or replace any of its cards.
+   *
+   * 2026-09-11: the 2025 sitting re-authored, 313 + 153 -> 322 + 157. Twenty
+   * cards added and SEVEN removed, each removal named because this baseline
+   * must never be refreshed over one that is not:
+   *
+   *   eng-2025-hl-q6-b, -q8-b, -q9-b   the letter card carried all five of its
+   *       romans because the scheme reader filed the fifth, "(v)", as a part
+   *       (v) that no paper prints. Read correctly, (b)(i) to (b)(v) each have
+   *       a card of their own and the same asks are covered by five cards
+   *       instead of one carrying five questions.
+   *   eng-2025-ol-q2-b-i               consolidated into eng-2025-ol-q2-b. The
+   *       table prices Q2(b) "One part @ 12 marks" ONCE for the furnace the
+   *       candidate picks, and the three romans are answered about it; three
+   *       cards claiming twelve each was thirty-six marks for a part worth
+   *       twelve.
+   *   eng-2025-ol-q2-c-i               withdrawn. It claimed "One part @ 4
+   *       marks" -- Q2(d)(i)'s tariff, reached through a mis-read grid -- for
+   *       a part the table prices "Three parts @ 3 marks (9)", and the scheme
+   *       states only one of the three materials.
+   *   eng-2025-ol-q6-c-ii, -q6-c-iii   withheld by name in
+   *       scripts/markbank/authoring/eng_reviewed/2025-ol.json: the scheme
+   *       misnumbers its own answers on page 18, marking the branch (i),
+   *       (iii), (iii), so a card at either key shows another part's answer. */
+  ['engineering:higher', ENGINEERING_HIGHER, 322, 'c9ac19057af7962c433e4f978cb01cfefb172349abe5a69fdf5d32e0fcaf0579'],
+  ['engineering:ordinary', ENGINEERING_ORDINARY, 157, 'e385083f6f34aa1c8db185f3ad5fe53b1f81bd2f342502897ec271150e74e693'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
    * added and none replacing anything. Nothing in any other deck moved. */
@@ -708,7 +731,9 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_111);
+    // 2026-09-11: Engineering's 2025 sitting re-authored, +20 cards and -7
+    // (each named beside its deck entry above): 19,111 + 13.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_124);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

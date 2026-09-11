@@ -71,7 +71,15 @@ SUMMARY_HEAD = re.compile(r'^Question\s*(\d{1,2})\s*[:\-–]\s*(\d{1,3})\s*marks
 # 'i' is NOT a letter here: alone it is a roman first. Without the exclusion
 # "(i) Three parts @ 3 marks" priced a part (i) that does not exist, and the
 # roman it really is went unpriced.
-MARKER = re.compile(r'^\(([a-hj-z])\)')
+#
+# Neither are 'v' and 'x', for the same reason and with the same evidence: the
+# papers letter their parts (a) to (l) and never reach (v), while every
+# five-part question numbers a roman (v). 2025 Higher Q9(b)(v) — "Outline the
+# operation of a capacitor" — was filed at (9, 'v', None), a part that does
+# not exist, so Q9(b)(v) found no answer and climbed to its letter, where the
+# figure printed beside (b)(iii) refused the lot. FOLLOWS below promotes any
+# of the three back to a letter where the run really is a lettered one.
+MARKER = re.compile(r'^\(([a-hj-uwyz])\)')
 # The Symbol-font bullet reaches the text layer as U+F0B7 and, once the glyph
 # map has been applied, as an ordinary bullet. Either way it is a line of its
 # own with the marking point on the line after it.
@@ -111,12 +119,55 @@ MARK_CELL = re.compile(r'\s*\bTotal\s*\(?\d{1,3}\)?\s*Marks?\b\s*', re.I)
 # can leave it in the MIDDLE of one -- "wear safety goggles to \uf0b7
 # protect your eyes" -- where it renders as a box on the card.
 PUA_BULLET = re.compile(r'\s*[\uf0a7\uf0b7\uf0d8\uf0fc\uf06c]\s*')
+LEADING_PUA = re.compile(r'^\s*[\uf0a7\uf0b7\uf0d8\uf0fc\uf06c]\s*')
 # The running footer arrives the same way and welds onto the end of a point:
 # "Stepper motors are driven by control circuits Page 18".
 PAGE_FOOT = re.compile(r'\s*\bPage\s+\d{1,3}\b\s*', re.I)
 
 
-def _lines(page, join='block'):
+def _roman_run_follows(stream, pos):
+    """Whether the "(i)" at `pos` is roman ONE rather than the letter i.
+
+    A roman run continues: "(i)", "(ii)", "(iii)". A letter run does not — the
+    next marker printed is "(j)". So the row after decides, and the scan stops
+    at the first lettered marker because a LATER part's own "(ii)" says nothing
+    about this one: 2023 Ordinary Q1 prints a bare letter (i) and then (j) with
+    romans of its own beneath it.
+    """
+    for row, _, _, _ in stream[pos + 1:]:
+        text = row[4].strip()
+        if QHEAD.match(text) or MARKER.match(text):
+            return False
+        nxt = ROMAN.match(text)
+        if nxt:
+            return nxt.group(1) == 'ii'
+    return False
+
+
+def _rowsort(rows, base):
+    """Order lines into the rows the SEC actually printed: reading order.
+
+    Sorting on a ROUNDED baseline is unstable exactly where it matters. 2021
+    Higher sets "(b)" on baseline 469.501 and the "(i) 10" beside it on
+    469.497 — four thousandths apart, printed on one line, and either side of
+    the integer boundary, so rounding put the marker AFTER its own tariff and
+    the row read "(i) 10 (b)". Rounding to the tenth is the same fault one
+    decimal along, which is what "(a)" at y243.1 and its rule at y242.9 hit.
+    So nothing is rounded: lines within two points of each other are one row,
+    and a row is read left to right.
+    """
+    out, cluster, start = [], -1, None
+    for r in sorted(rows, key=base):
+        b = base(r)
+        if start is None or b - start > 2.0:
+            cluster += 1
+            start = b
+        out.append((cluster, r))
+    out.sort(key=lambda cr: (cr[0], cr[1][0]))
+    return [r for _, r in out]
+
+
+def _lines(page, join='block', keep_base=False):
     """(x0, y0, x1, y1, text, bold) for every line, ligatures folded.
 
     Two pages, two assemblies, because the scheme really is two documents.
@@ -153,42 +204,63 @@ def _lines(page, join='block'):
                 continue
             bold = any('Bold' in s.get('font', '') for s in spans)
             x0, y0, x1, y1 = line['bbox']
-            rows.append((x0, y0, x1, y1, text, bold))
-        rows.sort(key=lambda r: (round(r[1], 1), r[0]))
+            # What "the same row" means is the BASELINE the SEC set the text
+            # on, not the top of its bounding box. The two differ whenever the
+            # cells of one printed row reach the text layer in different
+            # blocks: on the 2025 Higher summary grid the mark "8" has a bbox
+            # top of 471.7 and the marker "(ii)" beside it one of 475.0, three
+            # points apart and so never joined -- which read Question 4 as
+            # "(a)(i) 4 + 4; 8", left (b)(i) with no tariff at all, and sent
+            # Q4(b)(i) climbing to the whole fifty-mark question. Their span
+            # origins are both 484.02, to the hundredth.
+            base = min(s['origin'][1] for s in spans) if spans else y0
+            rows.append((x0, y0, x1, y1, text, bold, base))
+        rows = _rowsort(rows, lambda r: r[6])
         for row in rows:
             if join == 'none':
                 out.append(row + (block_id(block),))
                 continue
             close = (row[0] - out[-1][2] < 60) if (out and join == 'row') else True
-            if out and out[-1][6] == block_id(block) and close and \
-                    abs(out[-1][1] - row[1]) <= 2.0:
+            if out and out[-1][7] == block_id(block) and close and \
+                    abs(out[-1][6] - row[6]) <= 2.0:
                 p = out[-1]
                 out[-1] = (p[0], min(p[1], row[1]), max(p[2], row[2]),
                            max(p[3], row[3]), f'{p[4]} {row[4]}'.strip(),
-                           p[5] or row[5], p[6])
+                           p[5] or row[5], min(p[6], row[6]), p[7])
             else:
                 out.append(row + (block_id(block),))
-    out.sort(key=lambda r: (round(r[1], 1), r[0]))
-    return [r[:6] for r in out]
+    out = _rowsort(out, lambda r: r[6])
+    return [r[:7] if keep_base else r[:6] for r in out]
 
 
 def _join_row(rows):
-    """Join lines sharing a baseline, within one column and no further."""
+    """Join lines sharing a baseline, within one column and no further.
+
+    The rows come from _lines(join='none', keep_base=True), so index 6 is the
+    baseline the SEC set the line on. Grouping on the bounding box instead
+    split the 2025 Higher grid's mark cells off their own markers -- "8" and
+    "(ii)" three points apart in bbox and identical in baseline -- which cost
+    Question 4(b)(i) its tariff altogether.
+    """
     # The baseline is rounded to the nearest POINT, not the tenth. 2023
     # Ordinary sets a part's marker at y243.1 and its rule at y242.9, and
     # sorting to a tenth put the marker AFTER the rule, where it joined onto
     # the end: "Explain any three @ 5marks (15) (a)". The marker was then not
     # at the start of the row, so the row priced nothing and the whole paper
     # yielded twenty-one part tariffs.
+    def base(r):
+        return r[6] if len(r) > 6 else r[1]
+
     out = []
-    for row in sorted(rows, key=lambda r: (round(r[1]), r[0])):
-        if out and abs(out[-1][1] - row[1]) <= 2.0 and row[0] - out[-1][2] < 60:
+    for row in _rowsort(rows, base):
+        if out and abs(base(out[-1]) - base(row)) <= 2.0 \
+                and row[0] - out[-1][2] < 60:
             p = out[-1]
             out[-1] = (p[0], min(p[1], row[1]), max(p[2], row[2]),
                        max(p[3], row[3]), f'{p[4]} {row[4]}'.strip(),
-                       p[5] or row[5])
+                       p[5] or row[5], min(base(p), base(row)))
         else:
-            out.append(row[:6])
+            out.append(tuple(row[:6]) + (base(row),))
     return out
 
 
@@ -204,8 +276,8 @@ def _columns(rows, page_width):
     QUESTION HEAD it sits under: the heads are the only lines that name a
     column, and every part below one belongs to it until the next head.
     """
-    heads = [(x0, y0, SUMMARY_HEAD.match(t)) for x0, y0, _, _, t, _ in rows
-             if SUMMARY_HEAD.match(t)]
+    heads = [(r[0], r[1], SUMMARY_HEAD.match(r[4])) for r in rows
+             if SUMMARY_HEAD.match(r[4])]
     if not heads:
         return {}
     edges = sorted({round(x0) for x0, _, _ in heads})
@@ -309,6 +381,9 @@ class EngScheme:
         self.year, self.level = year, level
         self.path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
         self._tariffs = None
+        # Keys where the paper prints two questions at one address, filled in
+        # by the author from paper.Paper. Empty means "cut nothing".
+        self.alternatives = set()
         self._per_part = None
         self._body = None
 
@@ -331,8 +406,8 @@ class EngScheme:
         with pymupdf.open(self.path) as doc:
             for n in range(min(14, doc.page_count)):
                 page = doc[n]
-                loose = _lines(page, join='none')
-                heads = [t for *_, t, _ in loose if SUMMARY_HEAD.match(t)]
+                loose = _lines(page, join='none', keep_base=True)
+                heads = [r[4] for r in loose if SUMMARY_HEAD.match(r[4])]
                 if len(heads) < 2:
                     continue
                 bands = _columns(loose, page.rect.width)
@@ -340,8 +415,8 @@ class EngScheme:
                 for lo, hi in bands or [(0.0, page.rect.width + 1)]:
                     inside = [r for r in loose if lo <= r[0] < hi]
                     rows += _join_row(inside)
-                rows.sort(key=lambda r: (round(r[1], 1), r[0]))
-                yield n, rows, page.rect.width
+                rows = _rowsort(rows, lambda r: r[6])
+                yield n, [r[:6] for r in rows], page.rect.width
 
     def tariffs(self):
         """{(q, letter, roman): (notation, total, per-option rule)}"""
@@ -537,6 +612,10 @@ class EngScheme:
         with pymupdf.open(self.path) as doc:
             q = letter = roman = None
             or_branch = False
+            # One flat run of rows rather than a loop per page, because the
+            # letter-or-roman reading of "(i)" below needs to see the row
+            # AFTER it, and a part's answers cross the page break.
+            stream = []
             for n in range(doc.page_count):
                 if n in summary:
                     continue
@@ -548,7 +627,10 @@ class EngScheme:
                 margin = min(wide) if wide else 0.0
                 art = self._artwork(page)
                 right = page.rect.width - 60
-                for x0, y0, x1, y1, text, bold in rows:
+                for row in rows:
+                    stream.append((row, margin, art, right))
+            for pos in range(len(stream)):
+                    (x0, y0, x1, y1, text, bold), margin, art, right = stream[pos]
                     h = QHEAD.match(text)
                     if h and bold:
                         q, letter, roman = int(h.group(1)), None, None
@@ -581,10 +663,34 @@ class EngScheme:
                         r = ROMAN.match(body_text)
                     elif bold:
                         r = ROMAN.match(body_text)
+                    # The same reading _read_column already applies to the
+                    # tariff table, applied to the ANSWER BODY: "(i)" printed
+                    # straight after (h), with no letter of its own in front
+                    # of it, is the LETTER i. MARKER leaves i, v and x out
+                    # because alone they are romans far more often than
+                    # letters, and every Higher Question 1 runs (g), (h), (i),
+                    # (j) — so 2025 Higher filed the whole factor-of-safety
+                    # answer at (1, 'h', 'i'), where Q1(i) could not find it
+                    # and Q1(h) answered with it.
+                    #
+                    # Which of the two it is, is decided by the row AFTER it,
+                    # not by the row itself: every Ordinary Question 1 also
+                    # prints "(h) Any one:" and then a roman run, and there
+                    # the "(i)" really is roman one. A roman run continues
+                    # with "(ii)"; a letter run continues with "(j)". Reading
+                    # it as the letter unconditionally moved 2023 Ordinary's
+                    # three CAD/AI/electric-vehicle answers off Q1(h).
+                    opened = bool(m or r)
+                    if r and not m and r.group(1) in FOLLOWS \
+                            and letter == FOLLOWS[r.group(1)] and roman is None \
+                            and not _roman_run_follows(stream, pos):
+                        body_text = body_text[r.end():].strip()
+                        letter, roman, r = r.group(1), None, None
+                        opened = True
                     if r:
                         roman = r.group(1)
                         body_text = body_text[r.end():].strip()
-                    if m or r:
+                    if opened:
                         key = (q, letter, roman)
                         # Both branches land on one key, and joined with
                         # nothing between them the sentence assembly ran the
@@ -720,8 +826,35 @@ class EngScheme:
                 and len(re.findall(r'[A-Za-z]{3,}', lead_only)) >= 2
                 and len(re.findall(r'\d', lead_only)) <= len(lead_only) / 4):
             return [lead_only]
-        lines = [PUA_BULLET.sub(' ', PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', x)))
-                 for x in b['points']]
+        # Everything past a standalone OR answers the ALTERNATIVE question the
+        # paper prints at this address, and the card asks the first one. 2025
+        # Higher Q8(c)(ii) asks about a built-up edge and the scheme answers
+        # it, then OR, then subtractive manufacturing -- both landed on one
+        # card, so a chips question showed CNC answers. The paper reader keeps
+        # the first branch of the ask; this keeps the first branch of the
+        # answer, so the two halves of the card come from the same question.
+        #
+        # Only where the PAPER really printed a second question at this
+        # address, which is what `alternatives` holds. Ordinary Level writes
+        # OR between ordinary accepted answers as well -- "Reason: Light,
+        # flexible and shock absorption OR Reason: Strong, durable" is one
+        # part's three materials -- and cutting there threw away most of four
+        # answers.
+        raw = b['points']
+        if (q, letter, roman) in self.alternatives:
+            for i, x in enumerate(raw):
+                if OR_ROW.match(x.strip()):
+                    raw = raw[:i]
+                    break
+        # A LEADING private-use bullet is the scheme's bullet and it decides
+        # how the lines below are split into points; stripping it with the
+        # mid-line ones erased that, so " Knurling" and " Drilling"
+        # -- two bulleted answers to "Name any two centre lathe processes" --
+        # were assembled into the single point "Knurling Drilling". It is
+        # normalised to the ordinary bullet the branch below already reads.
+        lines = [PUA_BULLET.sub(' ', PAGE_FOOT.sub(
+            ' ', MARK_CELL.sub(' ', LEADING_PUA.sub('\u2022 ', x))))
+            for x in raw]
         # The bold heading is the scheme's restatement of the ask and not a
         # marking point -- but only when it is a whole one. 2021 HL Q4(b)(iii)
         # sets "Point X is the eutectic point. This is where the liquid steel

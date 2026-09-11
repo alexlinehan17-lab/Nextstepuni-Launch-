@@ -58,6 +58,32 @@ from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
 
 MAX_ROWS = 12
+# The pages a human opened, one file per sitting, keyed by the part the CARD
+# cites. A directory rather than one table because five sittings are reviewed
+# independently and a shared dict is a merge conflict per entry.
+#
+#   "Q1(e)":     {"checked":  "why the flagged block is the whole ask"}
+#   "Q3(b)":     {"noFigure": "why the picture beside it is decorative"}
+#   "Q6(c)(ii)": {"withheld": "why no honest card can be made here"}
+#
+# Each value is a reason and each has to be an observation about the page.
+# `checked` is what lib.card wants; `noFigure` answers the figure gate the way
+# cardlint's NO_DEPENDENCY answers the lint; `withheld` refuses a part the
+# author CAN build and a person can see is wrong, which is worse than an open
+# ask and can only be said by name.
+REVIEWED_DIR = os.path.join(DIR, 'eng_reviewed')
+
+
+def reviewed(year, level):
+    path = os.path.join(REVIEWED_DIR, f'{year}-{level}.json')
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding='utf-8') as fh:
+        return json.load(fh)
+
+
+def part_label(q, letter, roman):
+    return f'Q{q}' + (f'({letter})' if letter else '') + (f'({roman})' if roman else '')
 # An "ask" that is really one of the options the question lists. It has no
 # sentence in it: "Nylon,", "Full hybrid;", "Ferdinand Porsche", "Basin".
 NOT_AN_ASK = re.compile(r'^[^.?!]{0,40}[,;.]?$')
@@ -116,10 +142,17 @@ def looks_like_an_ask(text):
     t = ' '.join((text or '').split())
     if not t:
         return False
-    if len(re.findall(r'[a-z]{3,}', t)) < 4:
-        return False
+    # The command word decides FIRST. The word-count floor below was running
+    # ahead of it and refusing two asks in the corpus that are entirely
+    # ordinary questions with short technical nouns in them: "Describe the
+    # process of SMR." and "Explain the term TEU." have three lowercase runs
+    # apiece, so both were read as one of the options a question lists, both
+    # climbed to their whole fifty-mark question, and both took every other
+    # part of it down with them.
     if COMMAND_WORD.match(t):
         return True
+    if len(re.findall(r'[a-z]{3,}', t)) < 4:
+        return False
     return not NOT_AN_ASK.match(t) or len(t) > 45
 
 
@@ -151,7 +184,33 @@ def cardable_indexed(points):
     return out
 
 
-def resolve(S, q, letter, roman):
+def per_roman(S, q, letter, kids):
+    """What ONE roman under this letter is worth, or None if the rule is the
+    letter's own total.
+
+    "Any three parts @ 6 marks" against five romans is a choice among them and
+    each is worth six. A rule naming ONE part against several romans is not:
+    at 2025 Ordinary Q2(b) the one part is the FURNACE the candidate picks,
+    and (i), (ii) and (iii) are answered about it for twelve marks BETWEEN
+    them -- "Select one of the furnaces labelled at Q2(a) above and answer
+    each of the following". Priced as twelve apiece, that question shipped
+    three cards claiming thirty-six marks for a part worth twelve.
+
+    The same is true of "Any one @ 5" over three romans, where the whole point
+    is that the candidate answers one of them: the letter is where the card
+    belongs either way, carrying every option the scheme states. Only a rule
+    naming one part is excluded, because a rule naming three against four
+    romans really is a choice among them, and Ordinary drops the "Any" from it
+    as often as it prints it.
+    """
+    rule = S.rule(q, letter, None)
+    if not rule:
+        return None
+    n, per = rule
+    return None if (n == 1 and kids > 1) else per
+
+
+def resolve(S, q, letter, roman, kids=0):
     """The nearest PRICED key at or above this leaf, and what it covers.
 
     Requiring the points and the tariff at the SAME key found 56 cards in 806
@@ -175,7 +234,7 @@ def resolve(S, q, letter, roman):
     # "shown opposite" refuses the whole part -- 54 of the figure refusals are
     # a parent condemned by one child.
     if roman and letter and not S.tariff(q, letter, roman):
-        parent = S.rule(q, letter, None)
+        parent = per_roman(S, q, letter, kids)
         if parent:
             keep = cardable_indexed(S.points_under(q, letter, roman))
             if keep:
@@ -205,16 +264,43 @@ def holds(points, n):
     Counting the pieces it is punctuated into says whether they are all there,
     and "Material: Rubber" against three materials says they are not.
     """
-    parts = [c for c in re.split(r'[;,:]', ' '.join(points))
+    # The FULL STOP counts too. The scheme writes 2025 Higher Q4(a)(i)'s two
+    # reasons as two sentences -- "...increase the hardness of the outer
+    # surface while the core remains relatively soft." and "This results in
+    # the plough point having an increased resistance to both fatigue failure
+    # and abrasive wear." -- with no other punctuation between them, so the
+    # prose held both reasons and was read as holding one.
+    #
+    # It does not weaken the case it was written for: 2022 Higher Q3(b)(iii)
+    # is priced "2 + 2" for two metals and the scheme gives the single
+    # sentence "Young's Modulus of elasticity for metal B = 60 kN/mm²", which
+    # is still one piece however it is split, and still refused.
+    parts = [c for c in re.split(r'[;,:.]', ' '.join(points))
              if re.search(r'[A-Za-z]{3,}', c)]
     return len(parts) >= n
 
 
-def rows_for(notation, total, rule, points):
+# A part that says its sub-parts are ALL to be answered, as against a choice
+# among them. 2025 Ordinary Q2(b) reads "Select one of the furnaces labelled
+# at Q2(a) above and answer each of the following:" and is priced "One part @
+# 12 marks" -- the one part is the furnace, and (i), (ii) and (iii) are all
+# answered about it for twelve marks between them. Read as a choice, the card
+# offered "Furnace A - Blast furnace" as one of eleven alternatives each worth
+# the whole twelve.
+ALL_REQUIRED = re.compile(r'\beach of the following\b|\banswer all\b', re.I)
+
+
+def rows_for(notation, total, rule, points, required=False):
     """(row kind, marks per row, tariff model) for a part, or None to refuse."""
     points = points[:MAX_ROWS]
     if rule:
         n, per = rule
+        if required:
+            # The scheme has written out every branch of the choice and the
+            # table prices the branch, not the point. The card shows what the
+            # scheme states and the total the table prints, and divides
+            # nothing between them.
+            return ('point', None, {'kind': 'questionTotal'}, None)
         if n <= len(points):
             return ('anyN', None, {'kind': 'fixed'}, (n, per))
         # Fewer points than parts, but the prose may hold them all.
@@ -297,6 +383,12 @@ def main():
     for (year, level, _), leaves in sorted(idx.items()):
         A = Author('engineering', year, level)
         S = EngScheme(year, level)
+        # Where the paper printed an alternative question at one address, the
+        # scheme answers both at that key. Telling the scheme which keys those
+        # are is what keeps a card's ask and its marking points on the same
+        # branch.
+        S.alternatives = set(A.paper.alternatives)
+        seen_pages = reviewed(year, level)
         seen, noted = set(), set()
         siblings = collections.defaultdict(list)
         for lf in sorted(leaves):
@@ -367,7 +459,8 @@ def main():
                 else:
                     note('an option the question lists, not an ask')
                     continue
-            key, keep = resolve(S, q, letter, roman)
+            key, keep = resolve(S, q, letter, roman,
+                                len(siblings.get((q, letter), ())))
             # A "marking point" that repeats the ask is the scheme naming the
             # part, not answering it. 2021 OL Q6(b) lists cutting fluids,
             # clearance angle and chuck key as the three things to describe,
@@ -428,6 +521,36 @@ def main():
                             + (A.paper.stem(q) or ''))
                     except Exception:                        # noqa: BLE001
                         topic = None
+                if not topic:
+                    # And where the question opens with no prose at all -- 2025
+                    # Ordinary Q4 sets (a) straight into a picture of three
+                    # oxy-acetylene flames -- what the question is about is
+                    # what its OTHER parts ask. Every one of Q4's is welding,
+                    # which is where "Name tool A shown opposite and give one
+                    # use for this tool" belongs; before the page's captions
+                    # were taken out of the prose it filed there by accident,
+                    # off the words "welding earth clamp" printed under a
+                    # photograph. Reached only when the part, its parents and
+                    # the stimulus have all said nothing.
+                    #
+                    # Counted part by part, not run together: 2025 Ordinary
+                    # Q4 is a welding question from (a) to (d), and the one
+                    # part that says "aluminium" outvoted the other nine when
+                    # the whole question was one haystack. Which topic the
+                    # question's parts MOSTLY name is what the question is
+                    # about.
+                    votes = collections.Counter()
+                    for k in A.paper.parts:
+                        if k[0] != q or (k[1], k[2]) == (letter, roman):
+                            continue
+                        try:
+                            beside = A.paper.text(*k) or ''
+                        except Exception:                    # noqa: BLE001
+                            continue
+                        t, _ = topic_for(beside)
+                        if t:
+                            votes[t] += 1
+                    topic = votes.most_common(1)[0][0] if votes else None
             if not topic:
                 note('files under no syllabus topic')
                 continue
@@ -463,7 +586,16 @@ def main():
             figure = (figs.get((year, level, q, key[1], key[2]))
                       or figs.get((year, level, q, letter, roman))
                       or figs.get((year, level, q, key[1], None)))
-            if not figure and (
+            seen_here = seen_pages.get(part_label(*key)) or {}
+            if seen_here.get('withheld'):
+                note(seen_here['withheld'])
+                continue
+            # A reviewed judgement that the picture is not needed, recorded
+            # per part with the page it was made on. Card lint has the same
+            # escape -- NO_DEPENDENCY -- and the card id goes in
+            # cardlint-reviewed.json beside this so both agree.
+            no_fig = bool(seen_here.get('noFigure'))
+            if not figure and not no_fig and (
                     (cardlint.FIG_REF.search(joined)
                      and not cardlint.SELF_WORK.search(joined)
                      and not cardlint.NO_DEPENDENCY.search(joined))
@@ -486,12 +618,20 @@ def main():
                 # what this part is worth and what the scheme printed.
                 per = S.per_part(key[0])
                 if not per and key[2] and key[1]:
-                    up = S.rule(key[0], key[1], None)
-                    per = up[1] if up else None
+                    per = per_roman(S, key[0], key[1],
+                                    len(siblings.get((key[0], key[1]), ())))
                 if per:
                     tariff_here, rule_here = per, None
                     notation_here = f'{per} marks'
-            shape = rows_for(notation_here, tariff_here, rule_here, points)
+            # Read off the KEY's own ask, not the leaf's: the rule being
+            # applied is the key's, and it is the key that says whether its
+            # sub-parts are a choice or a list.
+            try:
+                key_ask = ' '.join((A.paper.text(*key) or '').split())
+            except Exception:                                # noqa: BLE001
+                key_ask = ''
+            shape = rows_for(notation_here, tariff_here, rule_here, points,
+                             required=bool(ALL_REQUIRED.search(key_ask)))
             if not shape:
                 note('the printed split does not fit the points stated')
                 continue
@@ -499,11 +639,12 @@ def main():
             cid = (f'eng-{year}-{level}-q{q}'
                    + (f'-{key[1]}' if key[1] else '')
                    + (f'-{key[2]}' if key[2] else ''))
+            checked = seen_here.get('checked')
             try:
                 if kind == 'anyN':
                     n, per = group
                     A.card(*key, topic=topic, concept=concept_for(ask),
-                           source='table', card_id=cid,
+                           source='table', card_id=cid, checked=checked,
                            use=[[i for i, _ in keep[:MAX_ROWS]]],
                            marks=[n * per], tariff='fixed',
                            row_kind='anyN', total=n * per, question_figure=figure,
@@ -515,7 +656,7 @@ def main():
                     # it is does not decide its value, so inventing one per row
                     # is the thing being avoided.
                     A.card(*key, topic=topic, concept=concept_for(ask),
-                           source='table', card_id=cid,
+                           source='table', card_id=cid, checked=checked,
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            tariff='orderedSplit', question_figure=figure,
                            notation=model['notation'],
@@ -523,7 +664,7 @@ def main():
                            stem=keeps_stem(stem, figure))
                 elif model['kind'] == 'questionTotal':
                     A.card(*key, topic=topic, concept=concept_for(ask),
-                           source='table', card_id=cid,
+                           source='table', card_id=cid, checked=checked,
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            tariff='questionTotal', question_figure=figure,
                            total=tariff_here,
@@ -531,7 +672,7 @@ def main():
                            notes=f'The scheme prints {notation_here!r}.')
                 else:
                     A.card(*key, topic=topic, concept=concept_for(ask),
-                           source='table', card_id=cid,
+                           source='table', card_id=cid, checked=checked,
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            marks=marks, tariff='fixed', question_figure=figure,
                            total=tariff_here,
@@ -558,8 +699,9 @@ def main():
                         A.cards.pop()
                         note('names a lettered part this author cannot decode')
                         continue
-                if made is not None and not (made.get('figureKey')
-                                            or made.get('questionFigureKey')):
+                if made is not None and not no_fig and not (
+                        made.get('figureKey')
+                        or made.get('questionFigureKey')):
                     stem_t = made.get('stem') or ''
                     qtext = made.get('questionText') or ''
                     final = f'{stem_t} {qtext}'

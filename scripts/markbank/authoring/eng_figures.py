@@ -80,9 +80,18 @@ def artwork(page):
         r = d['rect']
         if r.width > 18 and r.height > 18:
             out.append((r.x0, r.y0, r.x1, r.y1))
+    # A rect that runs edge to edge is the PAGE, not a picture on it. 2025
+    # Ordinary prints a blue border and lays its pages over a background
+    # tiled in six full-width strips, each 595 x 94 and every one of them
+    # artwork by any test that measures size -- so Q7(b)'s crop ran the whole
+    # width of the paper and showed the ask instead of the flange it is about.
+    # The SEC prints a margin on every page; nothing it draws reaches both
+    # edges.
+    width = page.rect.width
     return [a for a in out
             if a[1] > HEADER and a[3] < page.rect.height - FOOTER
-            and a[2] - a[0] > 24 and a[3] - a[1] > 24]
+            and a[2] - a[0] > 24 and a[3] - a[1] > 24
+            and not (a[0] <= 2 and a[2] >= width - 2)]
 
 
 def is_answer_box(page, rect):
@@ -347,6 +356,19 @@ REJECTED = {
     (2024, 'ol', 5, 'a', 'i'): 'one of the items the ask says are shown',
     (2024, 'ol', 6, 'c', 'i'): 'shows the CNC branch, not the lathe part',
     (2025, 'ol', 4, 'c', 'i'): 'shows tool A, and (i) asks about the R-clip',
+    # Opened after the page-background rule below let the crop shrink to the
+    # picture. The three mechanisms are all there and their letters are not:
+    # A, B and C are printed four points under the images and only the tops of
+    # the glyphs are inside the box, so a crop the gate passes on its text
+    # layer shows a student three unlabelled pictures.
+    (2025, 'ol', 2, 'd', None): 'the A, B and C under the pictures are clipped',
+    # The flange itself, without either of the dimensions the ask is about:
+    # "flange: 50.00 +/- 0.50 mm" and "hole: 20.00 +/- 0.50 mm" are printed
+    # below the red arrows and outside the crop, so all four parts of (b) are
+    # unanswerable from it.
+    (2025, 'ol', 7, 'b', 'ii'): 'the flange, with neither dimension it is about',
+    (2025, 'ol', 7, 'b', 'iii'): 'the flange, with neither dimension it is about',
+    (2025, 'ol', 7, 'b', 'iv'): 'the flange, with neither dimension it is about',
     # A recycling process drawn as a wheel, with its last stages printed
     # below the artwork's own box and clipped away: the ask says "describe
     # each of the stages" and the crop is missing one.
@@ -361,7 +383,7 @@ REJECTED = {
     (2021, 'hl', 7, 'a', 'i'): 'the ruled box holds the ask as well',
     (2022, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
     (2024, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
-    (2025, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
+    (2025, 'ol', 7, 'b', 'i'): 'the flange, with neither dimension it is about',
     # It is a LABEL and an arrow sliced off a bigger picture, not a picture:
     (2025, 'hl', 3, 'a', 'ii'): 'a fragment of the jet engine photograph',
     (2025, 'hl', 3, 'a', 'iii'): 'the words "compressor blade" and an arc',

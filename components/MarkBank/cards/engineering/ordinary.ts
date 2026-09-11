@@ -85,6 +85,20 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q3-d", topicId: "eng-3-8", conceptId: "any-following-terms-malleability-or-advantages",
+    section: "A", questionRef: "2021 OL Q3(d)",
+    stem: "Engineering ‐ Ordinary level 4",
+    questionText: "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, accepts: ["The ability of a material to withstand being squashed or pushed together.","Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched.","Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q3-d-i", topicId: "eng-3-8", conceptId: "malleability-or-advantages-robotics-manufacturing",
     section: "A", questionRef: "2021 OL Q3(d)(i)",
     stem: "Engineering ‐ Ordinary level 4",
@@ -109,20 +123,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The ability of a material to withstand being squashed or pushed together.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.", marks: null },
     { id: "r-3", kind: "point", verbatim: "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2021-ol-q3-d", topicId: "eng-3-8", conceptId: "any-following-terms-malleability-or-advantages",
-    section: "A", questionRef: "2021 OL Q3(d)",
-    stem: "Engineering ‐ Ordinary level 4",
-    questionText: "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, accepts: ["The ability of a material to withstand being squashed or pushed together.","Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched.","Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying."] },
     ],
   } as SecCard,
   {
@@ -645,6 +645,20 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q3-d", topicId: "eng-3-8", conceptId: "any-following-metal-properties-or-example",
+    section: "A", questionRef: "2022 OL Q3(d)",
+    stem: "Engineering - Ordinary level 4",
+    questionText: "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: (i) Brittleness, OR medicine; (ii) gardening; (iii) manufacturing. (ii) Melting point, (iii) Toughness, (iv) Elasticity.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: 12, accepts: ["Performing operations from a distance Example","Melting point is the temperature at which a metal changes its state from solid to liquid.","Gardening: Robotic lawnmowers","This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","Manufacturing: Robotic welding","The property of elasticity is the ability of an object or material to return to its original shape after being stretched."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q3-d-i", topicId: "eng-3-8", conceptId: "brittleness-or-medicine-ii-gardening-iii",
     section: "A", questionRef: "2022 OL Q3(d)(i)",
     stem: "Engineering - Ordinary level 4",
@@ -653,20 +667,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Performing operations from a distance Example", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2022-ol-q3-d", topicId: "eng-3-8", conceptId: "any-following-metal-properties-or-example",
-    section: "A", questionRef: "2022 OL Q3(d)",
-    stem: "Engineering - Ordinary level 4",
-    questionText: "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: (i) Brittleness, OR medicine; (ii) gardening; (iii) manufacturing. (ii) Melting point, (iii) Toughness, (iv) Elasticity.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: 12, accepts: ["Performing operations from a distance Example","Melting point is the temperature at which a metal changes its state from solid to liquid.","Gardening: Robotic lawnmowers","This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","Manufacturing: Robotic welding","The property of elasticity is the ability of an object or material to return to its original shape after being stretched."] },
     ],
   } as SecCard,
   {
@@ -1902,7 +1902,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using a bandsaw.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Wear personal protective equipment (PPE) such as safety goggles to  protect your eyes from flying debris.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Wear personal protective equipment (PPE) such as safety goggles to protect your eyes from flying debris.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Always maintain a safe distance between your hands and the blade.", marks: null },
     ],
   } as SecCard,
@@ -1917,9 +1917,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the term permanent joint and give one example of a permanent joint in engineering.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Explain the term permanent joint and give one example of a permanent joint in engineering.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "An example of a permanent joint in engineering is a welded joint.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "An example of a permanent joint in engineering is a welded joint.", marks: null },
     ],
   } as SecCard,
   {
@@ -1933,7 +1932,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one reason for testing electronic circuits before assembly.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To ensure they operate as required and to identify any errors  in design or assembly.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "To ensure they operate as required and to identify any errors in design or assembly.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1945,10 +1944,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q1(d)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Give one reason why it is important to work in a ventilated area when using adhesives.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Give one reason why it is important to work in a ventilated area when using adhesives.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Adhesives produce dangerous fumes, which can be harmful if inhaled,  ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Adhesives produce dangerous fumes, which can be harmful if inhaled, ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1962,7 +1960,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two advantages of using a 3D printer for manufacture in engineering.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Less material waste is produced as 3D printing is an additive  manufacturing process.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Less material waste is produced as 3D printing is an additive manufacturing process.", marks: null },
     { id: "r-2", kind: "point", verbatim: "More complex products can be designed and produced.", marks: null },
     ],
   } as SecCard,
@@ -1992,7 +1990,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason for producing a prototype when designing new products.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To give engineers and designers the ability to explore new design  alternatives and to test if the product functions as required.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "To give engineers and designers the ability to explore new design alternatives and to test if the product functions as required.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -2006,10 +2004,8 @@ export const CARDS: SecCard[] = [
     questionText: "Define malleability in relation to the properties of materials and name one material which is malleable.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Define malleability in relation to the properties of materials and name one material which is malleable.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Malleability is the ability of a material to be hammered / flattened out in  all directions without breaking.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Lead is a malleable metal.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Deburring removes sharp edges and  burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Lead is a malleable metal.", marks: null },
     ],
   } as SecCard,
   {
@@ -2017,10 +2013,24 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2025-ol-q1-j", topicId: "eng-2-11", conceptId: "any-following-bandsaw-3d-printer-deburring",
+    id: "eng-2025-ol-q1-i", topicId: "eng-2-11", conceptId: "reason-why-metal-edges-deburred",
+    section: "A", questionRef: "2025 OL Q1(i)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Give one reason why metal edges are deburred.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Deburring removes sharp edges and burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q1-j", topicId: "eng-3-14", conceptId: "any-following-artificial-intelligence-ai-renewable",
     section: "A", questionRef: "2025 OL Q1(j)",
     stem: "Give brief answers to any eight of the following:",
-    questionText: "Explain any one of the following: bandsaw 3D printer deburring (i) Artificial intelligence (AI), (ii) Renewable energy, (iii) Virtual reality (VR).",
+    questionText: "Explain any one of the following: (i) Artificial intelligence (AI), (ii) Renewable energy, (iii) Virtual reality (VR).",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. AI systems can analyse data, recognise patterns, make decisions, and even improve their performance over time without human intervention.", marks: null },
@@ -2051,12 +2061,17 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2025-ol-q2-b-i", topicId: "eng-1-4", conceptId: "materials-used-charge",
-    section: "A", questionRef: "2025 OL Q2(b)(i)",
-    questionText: "List the materials used in the charge;",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    id: "eng-2025-ol-q1-l", topicId: "eng-2-11", conceptId: "any-following-internal-thread-blind-hole",
+    section: "A", questionRef: "2025 OL Q1(l)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Describe any one of the following: (i) Internal thread, (ii) Blind hole, (iii) Countersunk hole.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Iron ore Coke Limestone", marks: 9, accepts: ["Materials used: ‐ Scrap iron / steel Carbon Limestone","Materials used: ‐ Pig iron / scrap Carbon Limestone"] },
+    { id: "r-1", kind: "point", verbatim: "An internal thread refers to the threads or grooves that are cut into the inside surface of a hole, allowing it to accept a corresponding external thread from a screw or bolt. Internal threads are commonly found in components such as nuts and holes designed to receive screws. The purpose of internal threading is to create a secure connection by allowing the external threaded component to screw into it, providing mechanical fastening and stability in various applications.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "External thread", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A blind hole refers to a hole that is reamed, drilled, or milled to a specified depth without breaking through to the other side of the workpiece.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "A countersunk hole is a conical‐shaped hole that is drilled to allow the head of a countersunk machine screw to sit flush with or below the surface of the material. The countersink is wider at the top, allowing the screw head to fit into it, providing a smooth surface finish and reducing the risk of snagging or catching.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Countersunk machine screw Countersunk hole", marks: null },
     ],
   } as SecCard,
   {
@@ -2064,21 +2079,24 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2025-ol-q2-c-i", topicId: "eng-3-14", conceptId: "suitable-material-each-parts-labelled-mini",
-    section: "A", questionRef: "2025 OL Q2(c)(i)",
-    questionText: "Name a suitable material for each of the parts labelled on the mini excavator.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    id: "eng-2025-ol-q2-b", topicId: "eng-1-4", conceptId: "materials-used-charge",
+    section: "A", questionRef: "2025 OL Q2(b)",
+    questionText: "Select one of the furnaces labelled at Q2(a) above and answer each of the following: (i) List the materials used in the charge; (ii) Describe how the charge is heated; (iii) Name the metal produced.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Material: Vinyl", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Furnace A – Blast furnace", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Iron ore Coke Limestone", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Materials used: ‐ Scrap iron / steel Carbon Limestone", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Materials used: ‐ Pig iron / scrap Carbon Limestone", marks: null },
+    { id: "r-5", kind: "point", verbatim: "The coke is burned to produce heat.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Heating the charge: ‐ Heat for the furnace is produced by an electric arc created between carbon electrodes and the charge.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Heating the charge: ‐ Heat for the furnace is produced by blowing oxygen through a lance onto the molten metal.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Pig iron.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Furnace B – Electrical Arc furnace: ‐", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Metal produced: ‐ Steel.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Furnace C – Basic Oxygen furnace: ‐", marks: null },
+    { id: "r-12", kind: "point", verbatim: "Metal produced: ‐ Steel.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-OL-paper-q2ci-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q2ci-art.png",
-          "srcHash": "eca76676c9eba7ed94cabb28fa290dfe",
-          "alt": "The table or diagram printed with 2025 OL Q2(c)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2109,9 +2127,23 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q3-a", topicId: "eng-2-6", conceptId: "reason-why-each-following-heat-treatment",
     section: "A", questionRef: "2025 OL Q3(a)",
     questionText: "Explain the reason why each of the following heat treatment processes are carried out: (i) Normalising, (ii) Hardening.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q3-b", topicId: "eng-2-6", conceptId: "blade-concrete-saw-shown-annealed-tempered",
+    section: "A", questionRef: "2025 OL Q3(b)",
+    questionText: "The blade of the concrete saw shown is annealed, tempered and quenched as part of the manufacturing process. Describe any two of the following processes: (i) Annealing, (ii) Tempering, (iii) Quenching.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.", marks: 14, accepts: ["When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use."] },
+    { id: "r-1", kind: "alt", verbatim: "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.", marks: 14, accepts: ["Tempering is where a metal is heated to a suitable temperature, which is below the reddening temperature and then cooled in oil or water.","Quenching is when a metal is plunged into a cooling liquid such as water.","Quenching cools the metal as fast as possible and ensures that any structural changes which have taken place during heating are not allowed to revert."] },
     ],
   } as SecCard,
   {
@@ -2124,7 +2156,20 @@ export const CARDS: SecCard[] = [
     questionText: "State two items of personal protective equipment (PPE) that should be worn when working with hot metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "PPE 1 – Wear heat resistant gloves to protect the hands.", marks: 10, accepts: ["PPE 2 – Wear a face shield to protect the face from high  temperatures."] },
+    { id: "r-1", kind: "alt", verbatim: "PPE 1 – Wear heat resistant gloves to protect the hands.", marks: 10, accepts: ["PPE 2 – Wear a face shield to protect the face from high temperatures."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q3-d", topicId: "eng-3-8", conceptId: "any-following-metal-properties-toughness-melting",
+    section: "A", questionRef: "2025 OL Q3(d)",
+    questionText: "Explain any two of the following metal properties: (i) Toughness, (ii) Melting point, (iii) Brittleness.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 12, accepts: ["Melting point is the temperature at which a metal changes its state from solid to liquid.","A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials."] },
     ],
   } as SecCard,
   {
@@ -2148,7 +2193,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q4-c-i", topicId: "eng-2-10", conceptId: "benefit-using-r-clip-shown",
     section: "A", questionRef: "2025 OL Q4(c)(i)",
     questionText: "Outline one benefit of using the R‐clip shown.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "R‐clips are similar in function to split pins and linchpins.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Compared to split pins, they are easier to remove and are re‐ usable. They are particularly common in automotive and construction applications, such as securing hitch pins in trailers or locking parts in place on equipment.", marks: null },
@@ -2170,9 +2215,9 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q4-c-ii", topicId: "eng-1-5", conceptId: "suggest-method-joining-sheet-aluminium",
     section: "A", questionRef: "2025 OL Q4(c)(ii)",
     questionText: "Suggest one method of joining sheet aluminium.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pop riveting / Machine screws.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Pop riveting / Machine screws.", marks: 5 },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q4civ-art",
@@ -2191,7 +2236,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q4-c-iii", topicId: "eng-2-10", conceptId: "reasons-why-flux-required-when-soldering",
     section: "A", questionRef: "2025 OL Q4(c)(iii)",
     questionText: "Give two reasons why flux is required when soldering.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flux cleans the surfaces and protects them from oxidation during the soldering process, ensuring better adhesion.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Flux enhances the wetting properties of the solder, allowing it to flow more easily and uniformly across the surfaces being joined.", marks: null },
@@ -2213,9 +2258,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q4-c-iv", topicId: "eng-2-10", conceptId: "tool-shown-opposite-use-tool",
     section: "A", questionRef: "2025 OL Q4(c)(iv)",
     questionText: "Name tool A shown opposite and give one use for this tool.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Allen key  Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Name: Allen key", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.", marks: null },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q4civ-art",
@@ -2231,12 +2277,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q4-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-using",
+    section: "A", questionRef: "2025 OL Q4(d)",
+    questionText: "State two safety precautions to be observed when using oxy‐acetylene welding equipment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "The gas hoses should be checked for damage before starting the welding process.", marks: 8, accepts: ["The correct PPE is worn while welding, such as dark welding goggles."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q5-a-i", topicId: "eng-1-9", conceptId: "each-plastic-manufacturing-processes-shown-b",
     section: "A", questionRef: "2025 OL Q5(a)(i)",
     questionText: "Name each of the plastic manufacturing processes shown at A, B and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:", marks: 9, accepts: ["Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.","Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.","A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."] },
+    { id: "r-1", kind: "alt", verbatim: "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:", marks: 9, accepts: ["Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.","Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.","A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away.","Plastic sheet Heat Final shape Mould Vacuum"] },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q5ai-art",
@@ -2258,6 +2317,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 10, accepts: ["Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"","Thermoplastic is a plastic which softens when heated.","This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q5-c", topicId: "eng-1-9", conceptId: "safety-precautions-be-observed-when-3d",
+    section: "A", questionRef: "2025 OL Q5(c)",
+    questionText: "State two safety precautions to be observed when 3D printing plastic components.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "3D printing may result in the release of ultrafine particles, (UFPs) and volatile organic components (VOCs), it is important to use a ventilation system which contains an air filter.", marks: 10, accepts: ["3D printers generate high temperatures and have hot moving parts that can cause injury. Never reach inside a 3D printer while it is in operation. Always allow 3D printers to cool down for at least 5 minutes before reaching inside."] },
     ],
   } as SecCard,
   {
@@ -2301,11 +2373,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q6-c-i", topicId: "eng-2-11", conceptId: "any-centre-lathe-processes-used-manufacture",
     section: "A", questionRef: "2025 OL Q6(c)(i)",
-    stem: "stunt bike pegs",
-    questionText: "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
+    questionText: "Name any two centre lathe processes used to manufacture the stunt bike pegs.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Knurling  Drilling", marks: 6, accepts: ["CAD software enables developers to work more quickly, cut production costs and decrease errors."] },
+    { id: "r-1", kind: "alt", verbatim: "Knurling", marks: 6, accepts: ["Drilling"] },
     ],
   } as SecCard,
   {
@@ -2313,27 +2384,12 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2025-ol-q6-c-ii", topicId: "eng-2-13", conceptId: "any-processes-named-you-q6-c",
-    section: "A", questionRef: "2025 OL Q6(c)(ii)",
-    stem: "stunt bike pegs",
-    questionText: "Describe any one of the processes named by you, at Q6(c)(i) above. OR Name one CNC machine commonly used in the engineering workshop.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    id: "eng-2025-ol-q7-a-i", topicId: "eng-3-12", conceptId: "type-fit-required-allows-axle-rotate",
+    section: "A", questionRef: "2025 OL Q7(a)(i)",
+    questionText: "Name the type of fit required, which allows the axle to rotate inside the axle bracket on the Model Off‐Road Sand Car shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Computer numerically controlled (CNC) lathes are commonly used in the engineering workshop.", marks: 6 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2025-ol-q6-c-iii", topicId: "eng-2-11", conceptId: "specify-any-items-personal-protective-equipment",
-    section: "A", questionRef: "2025 OL Q6(c)(iii)",
-    stem: "stunt bike pegs",
-    questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "A knurling tool is fitted to the tool post and set at 90° to work. The centre lathe is then turned on at a very slow speed. The knurling tool is moved into the workpiece. Two opposing rollers which press into the piece are moved parallel to the axis of the work producing a diamond pattern on the surface of the material. A lubricant should be used on the workpiece and rollers to help reduce friction.", marks: 8, accepts: ["Wear goggles.","Protective clothing i.e. gloves","High precision and capable of producing highly complex parts."] },
+    { id: "r-1", kind: "anyN", verbatim: "Clearance fit.", marks: 4 },
     ],
   } as SecCard,
   {
@@ -2343,11 +2399,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q7-c-i", topicId: "eng-2-16", conceptId: "advantage-using-printed-circuit-board-pcb",
     section: "A", questionRef: "2025 OL Q7(c)(i)",
-    stem: "microchip",
     questionText: "State one advantage of using a Printed Circuit Board (PCB) for the assembly of circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 6, accepts: ["Measurements can be read directly from a digital display.","PCB Ensures the correct assembly of components as all component  positions are identified on the PCB.","Quicker to assemble and ensures better circuit operation when  complete."] },
+    { id: "r-1", kind: "alt", verbatim: "Ensures the correct assembly of components as all component positions are identified on the PCB.", marks: 6, accepts: ["Quicker to assemble and ensures better circuit operation when complete."] },
     ],
   } as SecCard,
   {
@@ -2357,11 +2412,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q7-c-ii", topicId: "eng-2-16", conceptId: "examples-where-printed-circuit-board-pcb",
     section: "A", questionRef: "2025 OL Q7(c)(ii)",
-    stem: "microchip",
     questionText: "Give two examples where a Printed Circuit Board (PCB) may be used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used to check the diameter of twist drills.", marks: 6, accepts: ["Use Smart phones  Computers"] },
+    { id: "r-1", kind: "alt", verbatim: "Smart phones", marks: 6, accepts: ["Computers"] },
     ],
   } as SecCard,
   {
@@ -2371,7 +2425,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q7-c-iii", topicId: "eng-2-16", conceptId: "term-microchip",
     section: "A", questionRef: "2025 OL Q7(c)(iii)",
-    stem: "microchip",
     questionText: "Explain the term microchip.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [

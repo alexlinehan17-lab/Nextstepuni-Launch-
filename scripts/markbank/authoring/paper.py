@@ -172,6 +172,16 @@ INLINE_MARKER = re.compile(
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
+# A stem line that OPENS WITH A PART MARKER is not stimulus prose: it is a part
+# the reader could not place. Engineering's Question 1 runs (a) to (m) at both
+# levels and the part class stops at (l), so "(m) Describe two critical
+# properties ... in the dental braces shown." was filed as the STEM of (l) --
+# and every card citing (l) then carried another question's ask, its figure
+# reference and all. Dropping it does not recover (m); it stops (m) being read
+# as (l)'s setup. Subject-gated, like GUTTER_MARKERS below, because it is a
+# claim about this paper's numbering and not about every subject's.
+ORPHAN_MARKER_STEMS = {'engineering'}
+ORPHAN_MARKER = re.compile(r'^\(\s*[a-z]{1,2}\s*\)\s+\S')
 
 
 ROMAN_RUN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
@@ -344,12 +354,87 @@ def _join_gutter_markers(blocks):
     return out
 
 
-def _blocks(path, subject=None):
-    """Every non-empty text block, in page then top-to-bottom, left-to-right order."""
+# Subjects that CAPTION their artwork. Engineering prints its picture beside
+# the prose and names it underneath -- "bandsaw", "3D printer", "deburring",
+# "inspection robot", "wire dental braces" -- each as its own text block. The
+# blocks sort by their top edge, so a caption printed halfway down a column
+# lands after the block that holds the ask and is read as the continuation of
+# whichever part is open: 2025 Ordinary Q1(j) came out as "Explain any one of
+# the following: bandsaw 3D printer deburring". The caption belongs to the
+# figure, which is why the cropper keeps it and the question must not.
+CAPTIONED_ARTWORK = {'engineering'}
+# Subjects that print an ALTERNATIVE at the same part address. Engineering
+# Ordinary sets Question 6(c)(i)-(iii) about a centre lathe, then a standalone
+# OR, then (c)(i)-(iii) again about CAD and CNC; the candidate answers one set.
+# Two questions at one address cannot both be the card's ask, and welded
+# together they are neither -- "Name any two centre lathe processes used to
+# manufacture the stunt bike pegs. Outline one advantage of using CAD in the
+# design and manufacturing process." shipped as one question. The first
+# printing is the one kept, because it is the one the address names first.
+PART_ALTERNATIVES = {'engineering'}
+# No sentence in it. A caption names a thing; an ask instructs. The digits are
+# allowed their full stop because a numbered diagram label -- "1. collecting" --
+# is lettering too.
+_CAPTION_TEXT = re.compile(r'^(?!\()(?:[^.?!]|(?<=\d)\.)*$')
+# ... and no instruction in it either. A caption names a thing; the command
+# words are the ones derived from the census leaves too long to be anything
+# but an ask, the same list eng_figures.py refuses a crop on.
+_CAPTION_NOT = re.compile(
+    r'^(?:briefly|calculate|compare|define|describe|determine|differentiate'
+    r'|discuss|distinguish|draw|explain|give|identify|indicate|label|list'
+    r'|name|outline|select|sketch|state|suggest|answer|complete)\b', re.I)
+
+
+def _drop_figure_captions(blocks, page):
+    """Take the pictures' own lettering out of the prose.
+
+    Decided on the page, not on the words: a short block that overlaps a
+    picture, or sits directly under one and inside its width, is that
+    picture's caption. Both forms are printed here -- "limit switch" sits on
+    top of the switch it rings, "inspection robot" five points below the
+    photograph -- and neither is anything a candidate is asked.
+    """
+    rects = []
+    for im in page.get_images(full=True):
+        rects += [(r.x0, r.y0, r.x1, r.y1) for r in page.get_image_rects(im[0])]
+    if not rects:
+        return blocks
+    out = []
+    for b in blocks:
+        text = ' '.join(b[4].split())
+        if text and len(text.split()) <= 6 and _CAPTION_TEXT.match(text) \
+                and not _CAPTION_NOT.match(text) and not QHEAD.match(text):
+            # Overlapping the picture, or in the band beneath it. The band is
+            # a line's leading deep and a shade wider than the picture,
+            # because that is how these are set: "screw lock" one point under
+            # its photograph, "wire dental braces" seventeen, both centred on
+            # a picture narrower than the words.
+            if any((b[0] < x1 and b[2] > x0 and b[1] < y1 and b[3] > y0)
+                   or (x0 - 12 <= b[0] and b[2] <= x1 + 12
+                       and 0 <= b[1] - y1 <= 24)
+                   for x0, y0, x1, y1 in rects):
+                continue
+        out.append(b)
+    return out
+
+
+def _blocks(path, subject=None, page_subject=None):
+    """Every non-empty text block, in page then top-to-bottom, left-to-right order.
+
+    `subject` selects the per-subject TEXT repairs and is passed only for the
+    papers that need them; `page_subject` is always the real subject, for the
+    passes that read the page's geometry rather than its words.
+    """
     with pymupdf.open(path) as doc:
-        pages = [sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
-                 for n in range(doc.page_count)]
-    if subject in GUTTER_MARKERS:
+        pages = []
+        for n in range(doc.page_count):
+            page = doc[n]
+            blocks = sorted(page.get_text('blocks'),
+                            key=lambda b: (round(b[1], 1), b[0]))
+            if page_subject in CAPTIONED_ARTWORK:
+                blocks = _drop_figure_captions(blocks, page)
+            pages.append(blocks)
+    if page_subject in GUTTER_MARKERS:
         pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
         for b in page:
@@ -449,9 +534,16 @@ class Paper:
         self.path = self.files[0]
 
         self.parts, self.stems = {}, {}
+        # Keys where the paper printed a SECOND question after an OR and
+        # this reader kept the first. The scheme answers both at the same
+        # key, so eng_all hands this set to eng_scheme and the two halves
+        # of the card come from the same branch.
+        self.alternatives = set()
         q = letter = roman = None
         open_key = None          # the part a continuation block may extend
         or_pending = False       # a standalone OR announces a choice variant
+        alt_pending = False      # ... and, for a PART, a second printing of it
+        discard = False          # inside that second printing
         dot_heads = 0            # how many 'N.'-style heads were accepted
         qkind = {}               # q -> 'letter'|'roman': which marker opened it
         blocks = list(self._all_blocks())
@@ -524,7 +616,20 @@ class Paper:
             # parts never collide with the first printing's.
             if re.fullmatch(r'OR', text):
                 or_pending = True
+                alt_pending = self.subject in PART_ALTERNATIVES
                 continue
+            # The OR is not always a block of its own. 2025 Higher sets it
+            # centred under Q8(c)(ii) and Q9(c)(ii) and the block segmentation
+            # takes it as the last line of the ask above it: "... impacts on
+            # both safety and surface finish. OR". It announces the same thing
+            # wherever it is printed, and it is only read as one where a
+            # sentence has just closed, so a sentence containing the word
+            # cannot be mistaken for it.
+            if self.subject in PART_ALTERNATIVES:
+                cut = re.search(r'(?<=[.?!])\s+OR\s*$', text)
+                if cut:
+                    text = text[:cut.start()].rstrip()
+                    or_pending = alt_pending = True
             if text.startswith('OR ') and QHEAD.match(text[3:]):
                 or_pending, text = True, text[3:]
             # 2025 HL Economics letterspaces a head as 'Question 1 2' — two
@@ -619,6 +724,7 @@ class Paper:
                         dot_heads += 1
                     q = -found if variant else found
                     or_pending = False
+                    alt_pending = discard = False
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
@@ -703,6 +809,19 @@ class Paper:
                 else:
                     roman = found_roman
                 key = (q, letter, roman)
+                # The second printing of a part the paper has already set: an
+                # OR came between them and this is the alternative, a whole
+                # different question at the same address. Its text is dropped
+                # rather than welded onto the first printing's. A key the
+                # first branch only NAMED -- the "(i)" under a photograph,
+                # with no words of its own -- is empty, and the alternative
+                # fills it rather than colliding with it.
+                if alt_pending and self.parts.get(key):
+                    discard = True
+                    open_key = None
+                    self.alternatives.add(key)
+                    continue
+                discard = False
                 self.parts.setdefault(key, [])
                 if rest:
                     self.parts[key].append(rest)
@@ -711,6 +830,8 @@ class Paper:
                 open_key = key
                 continue
 
+            if discard:
+                continue                  # still inside the alternative
             if FURNITURE.match(text):
                 open_key = None
                 continue
@@ -745,7 +866,11 @@ class Paper:
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
-            for block in _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None):
+            for block in _blocks(
+                    path,
+                    subject=(self.subject if self.subject in MANGLED_PAPERS
+                             else None),
+                    page_subject=self.subject):
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.
@@ -796,9 +921,11 @@ class Paper:
     def _flat(lines):
         return unligature(' '.join(' '.join(lines).split())) or None
 
-    @staticmethod
-    def _prose(lines):
-        return [l for l in lines if not LABELS_ONLY.match(l)]
+    def _prose(self, lines):
+        out = [l for l in lines if not LABELS_ONLY.match(l)]
+        if self.subject in ORPHAN_MARKER_STEMS:
+            out = [l for l in out if not ORPHAN_MARKER.match(l.strip())]
+        return out
 
     def text(self, qnum, letter=None, roman=None):
         """The printed wording of one part, verbatim. None if the part is absent."""

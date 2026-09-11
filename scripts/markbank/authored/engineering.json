@@ -919,6 +919,39 @@
   ]
  },
  {
+  "id": "eng-2021-hl-q5-c",
+  "topicId": "eng-1-3",
+  "conceptId": "select-any-i-ii-or-iii",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q5(c)",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: (i) Solid solution alloy and partial solubility alloy; (ii) Crystalline and amorphous solid structures; (iii) Eutectic and eutectoid transformations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature.",
+    "marks": 16,
+    "accepts": [
+     "In a Partial Solubility alloy the two metals are completely soluble in the liquid phase.",
+     "Both metals are also soluble in each other (in a solid state) to a limited degree. This is denoted by the Solvus Lines.",
+     "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns i.e. BCC, FCC CPH.",
+     "Amorphous Structures - these structures have irregular and non-geometric patterns.",
+     "Crystalline Amorphous",
+     "Eutectic transformation is where the metal goes from a liquid state to a solid state without going through a pasty stage.",
+     "Eutectoid transformation is a solid to solid transformation of a metal such as steel at 0.83% carbon at 723°C."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two @ 8 + 8'."
+ },
+ {
   "id": "eng-2021-hl-q5-c-i",
   "topicId": "eng-1-3",
   "conceptId": "solid-solution-alloy-partial-solubility-alloy",
@@ -989,39 +1022,6 @@
    }
   ],
   "notes": "The scheme prints '8 marks'."
- },
- {
-  "id": "eng-2021-hl-q5-c",
-  "topicId": "eng-1-3",
-  "conceptId": "select-any-i-ii-or-iii",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q5(c)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: (i) Solid solution alloy and partial solubility alloy; (ii) Crystalline and amorphous solid structures; (iii) Eutectic and eutectoid transformations.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 16,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature.",
-    "marks": 16,
-    "accepts": [
-     "In a Partial Solubility alloy the two metals are completely soluble in the liquid phase.",
-     "Both metals are also soluble in each other (in a solid state) to a limited degree. This is denoted by the Solvus Lines.",
-     "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns i.e. BCC, FCC CPH.",
-     "Amorphous Structures - these structures have irregular and non-geometric patterns.",
-     "Crystalline Amorphous",
-     "Eutectic transformation is where the metal goes from a liquid state to a solid state without going through a pasty stage.",
-     "Eutectoid transformation is a solid to solid transformation of a metal such as steel at 0.83% carbon at 723°C."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any two @ 8 + 8'."
  },
  {
   "id": "eng-2021-hl-q6-a-i",
@@ -1348,6 +1348,41 @@
   "notes": "The scheme prints '2'."
  },
  {
+  "id": "eng-2021-hl-q7-b",
+  "topicId": "eng-1-9",
+  "conceptId": "polymer-manufacturing-process-vacuum-forming",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q7(b)",
+  "questionText": "Answer any three of the following: (i) Describe the main differences between natural rubber and synthetic rubber. (ii) Describe the manufacturing process of plastic pultrusion shown below. (iii) Outline two negative effects on the environment of petroleum-based polymer manufacture. (iv) Describe, with the aid of a diagram, the ethylene monomer. (v) Explain the polymer manufacturing process of vacuum forming.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Most natural rubber is produced from a softwood tree native to Brazil, though several other species of trees and shrubs are sources of rubber as well. Natural rubber has a high tensile strength and is resistant to fatigue from wear such as chipping, cutting or tearing.",
+    "marks": 18,
+    "accepts": [
+     "Synthetic rubber is produced artificially from polymers in different varieties to mimic the different properties of natural rubber. Synthetic rubber offers better resistance to abrasion than natural rubber, as well as superior resistance to heat and the effects of ageing. Many types of synthetic rubber are flame-resistant, so it can be used as insulation for electrical devices. It also remains flexible at low temperatures and is resistant to grease and oil.",
+     "Plastic pultrusion is similar to extrusion and is associated mainly with thermosetting polymers. In the standard pultrusion process the reinforcement materials like fibres are impregnated with resin, possibly followed by a separate preforming system, and pulled through a heated stationary die where the resin undergoes polymerisation. The impregnation is either done by pulling the reinforcement through a bath or by injecting the resin into an injection chamber which typically is connected to the die.",
+     "Many resin types may be used in pultrusion including polyester, polyurethane, vinylester and epoxy. Resin provides the resistance to the environment, (i.e., the corrosion resistance, the UV resistance, the impact resistance, etc.) and the glass provides strength, in addition to safety from fire.",
+     "The synthesis of petroleum products also uses large amounts of energy.",
+     "Some chemical by-products may also be hazardous.",
+     "Petroleum products are likely to be long-life, presenting a challenge for disposal at end-of- life.",
+     "The ethylene monomer (or mer) consists of hydrogen and carbon atoms as shown in the diagram.",
+     "There is a strong and a weak bond between the carbon atoms. This monomer polymerises to form polyethylene by addition polymerisation."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
+  "questionFigureKey": "engineering-2021-HL-paper-q7bii-art"
+ },
+ {
   "id": "eng-2021-hl-q7-b-ii",
   "topicId": "eng-1-9",
   "conceptId": "manufacturing-process-plastic-pultrusion-shown-below",
@@ -1444,41 +1479,6 @@
    }
   ],
   "notes": "The scheme prints '6 marks'.",
-  "questionFigureKey": "engineering-2021-HL-paper-q7bii-art"
- },
- {
-  "id": "eng-2021-hl-q7-b",
-  "topicId": "eng-1-9",
-  "conceptId": "polymer-manufacturing-process-vacuum-forming",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q7(b)",
-  "questionText": "Answer any three of the following: (i) Describe the main differences between natural rubber and synthetic rubber. (ii) Describe the manufacturing process of plastic pultrusion shown below. (iii) Outline two negative effects on the environment of petroleum-based polymer manufacture. (iv) Describe, with the aid of a diagram, the ethylene monomer. (v) Explain the polymer manufacturing process of vacuum forming.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Most natural rubber is produced from a softwood tree native to Brazil, though several other species of trees and shrubs are sources of rubber as well. Natural rubber has a high tensile strength and is resistant to fatigue from wear such as chipping, cutting or tearing.",
-    "marks": 18,
-    "accepts": [
-     "Synthetic rubber is produced artificially from polymers in different varieties to mimic the different properties of natural rubber. Synthetic rubber offers better resistance to abrasion than natural rubber, as well as superior resistance to heat and the effects of ageing. Many types of synthetic rubber are flame-resistant, so it can be used as insulation for electrical devices. It also remains flexible at low temperatures and is resistant to grease and oil.",
-     "Plastic pultrusion is similar to extrusion and is associated mainly with thermosetting polymers. In the standard pultrusion process the reinforcement materials like fibres are impregnated with resin, possibly followed by a separate preforming system, and pulled through a heated stationary die where the resin undergoes polymerisation. The impregnation is either done by pulling the reinforcement through a bath or by injecting the resin into an injection chamber which typically is connected to the die.",
-     "Many resin types may be used in pultrusion including polyester, polyurethane, vinylester and epoxy. Resin provides the resistance to the environment, (i.e., the corrosion resistance, the UV resistance, the impact resistance, etc.) and the glass provides strength, in addition to safety from fire.",
-     "The synthesis of petroleum products also uses large amounts of energy.",
-     "Some chemical by-products may also be hazardous.",
-     "Petroleum products are likely to be long-life, presenting a challenge for disposal at end-of- life.",
-     "The ethylene monomer (or mer) consists of hydrogen and carbon atoms as shown in the diagram.",
-     "There is a strong and a weak bond between the carbon atoms. This monomer polymerises to form polyethylene by addition polymerisation."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
   "questionFigureKey": "engineering-2021-HL-paper-q7bii-art"
  },
  {
@@ -1640,6 +1640,43 @@
   "notes": "The scheme prints '5 + 5'."
  },
  {
+  "id": "eng-2021-hl-q8-b",
+  "topicId": "eng-2-11",
+  "conceptId": "reasons-dressing-grinding-wheel",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q8(b)",
+  "questionText": "Answer any three of the following: (i) Explain the difference between a clearance hole and a tapping size hole in drilling. (ii) Identify two safety features incorporated into a horizontal bandsaw. (iii) Explain two ways in which cutting fluids help the machining process. (iv) Describe, with the aid of a diagram, the formation of a built-up edge in metal cutting. (v) Outline two reasons for dressing a grinding wheel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Clearance hole is a hole through an object which is large enough to enable threads of a screw or bolt to pass through but not the head of the screw or bolt.",
+    "marks": 18,
+    "accepts": [
+     "A tapping size hole is drilled to allow threads to be cut on the inside of the hole.",
+     "Blade is covered by guard",
+     "Sturdy construction which can be bolted on to ground",
+     "Feed rate can be regulated",
+     "Has a cutting fluid reservoir integrated into the machine",
+     "Cut-off switch prevents machine from cutting into bed",
+     "Cutting fluids will keep the material and cutting tools cool, this prevents heat build up and improves cutting action.",
+     "Tool life is extended.",
+     "Most cutting fluids have some lubricating action to make cutting more efficient.",
+     "Built-up edge: In single point cutting of metals, a built-up edge is an accumulation of material against the rake face which adheres to the tool tip. The cutting tool is separated from the chip by the built-up edge.",
+     "As the built-up edge enlarges, the cutting edge will not cut effectively as the tool cutting angles are compromised. The surface finish will deteriorate and machining will not be smooth."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three@ 6 + 6 + 6'."
+ },
+ {
   "id": "eng-2021-hl-q8-b-i",
   "topicId": "eng-2-11",
   "conceptId": "difference-between-clearance-hole-tapping-size",
@@ -1788,43 +1825,6 @@
    }
   ],
   "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2021-hl-q8-b",
-  "topicId": "eng-2-11",
-  "conceptId": "reasons-dressing-grinding-wheel",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q8(b)",
-  "questionText": "Answer any three of the following: (i) Explain the difference between a clearance hole and a tapping size hole in drilling. (ii) Identify two safety features incorporated into a horizontal bandsaw. (iii) Explain two ways in which cutting fluids help the machining process. (iv) Describe, with the aid of a diagram, the formation of a built-up edge in metal cutting. (v) Outline two reasons for dressing a grinding wheel.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Clearance hole is a hole through an object which is large enough to enable threads of a screw or bolt to pass through but not the head of the screw or bolt.",
-    "marks": 18,
-    "accepts": [
-     "A tapping size hole is drilled to allow threads to be cut on the inside of the hole.",
-     "Blade is covered by guard",
-     "Sturdy construction which can be bolted on to ground",
-     "Feed rate can be regulated",
-     "Has a cutting fluid reservoir integrated into the machine",
-     "Cut-off switch prevents machine from cutting into bed",
-     "Cutting fluids will keep the material and cutting tools cool, this prevents heat build up and improves cutting action.",
-     "Tool life is extended.",
-     "Most cutting fluids have some lubricating action to make cutting more efficient.",
-     "Built-up edge: In single point cutting of metals, a built-up edge is an accumulation of material against the rake face which adheres to the tool tip. The cutting tool is separated from the chip by the built-up edge.",
-     "As the built-up edge enlarges, the cutting edge will not cut effectively as the tool cutting angles are compromised. The surface finish will deteriorate and machining will not be smooth."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any three@ 6 + 6 + 6'."
  },
  {
   "id": "eng-2021-hl-q8-c-i",
@@ -2200,6 +2200,40 @@
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
+  "id": "eng-2021-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "any-following-terms-malleability-or-advantages",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q3(d)",
+  "questionText": "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The ability of a material to be hammered and/or formed without breaking.",
+    "marks": 12,
+    "accepts": [
+     "The ability of a material to withstand being squashed or pushed together.",
+     "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
+     "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).",
+     "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
+     "The ability of a material to withstand being pulled apart or stretched.",
+     "Robotics offer precision placement of components in manufacturing.",
+     "Robotics offer precision when performing manufacturing processes such as welding & paint spraying."
+    ]
+   }
+  ],
+  "stem": "Engineering ‐ Ordinary level 4",
+  "notes": "The scheme prints 'Two parts @ 6 marks (12)'."
+ },
+ {
   "id": "eng-2021-ol-q3-d-i",
   "topicId": "eng-3-8",
   "conceptId": "malleability-or-advantages-robotics-manufacturing",
@@ -2266,40 +2300,6 @@
   ],
   "stem": "Engineering ‐ Ordinary level 4",
   "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2021-ol-q3-d",
-  "topicId": "eng-3-8",
-  "conceptId": "any-following-terms-malleability-or-advantages",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q3(d)",
-  "questionText": "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "The ability of a material to be hammered and/or formed without breaking.",
-    "marks": 12,
-    "accepts": [
-     "The ability of a material to withstand being squashed or pushed together.",
-     "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
-     "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).",
-     "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
-     "The ability of a material to withstand being pulled apart or stretched.",
-     "Robotics offer precision placement of components in manufacturing.",
-     "Robotics offer precision when performing manufacturing processes such as welding & paint spraying."
-    ]
-   }
-  ],
-  "stem": "Engineering ‐ Ordinary level 4",
-  "notes": "The scheme prints 'Two parts @ 6 marks (12)'."
  },
  {
   "id": "eng-2021-ol-q4-a-i",
@@ -3814,6 +3814,40 @@
   ]
  },
  {
+  "id": "eng-2022-hl-q5-c",
+  "topicId": "eng-1-5",
+  "conceptId": "select-any-i-ii-or-iii",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q5(c)",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain: (i) The impact of a dislocation in crystal structures. (ii) The possible corrosive effects of the environment on metal objects. (iii) The refining of aluminium in Ireland.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Dislocations can move as far as grain boundaries under a shear stress. Fine grained metals are stronger, stiffer and harder than coarse grained metals.",
+    "marks": 16,
+    "accepts": [
+     "Dislocations promote material malleability. The motion of dislocations allows slip deformation to occur.",
+     "Heat treatments can impact on dislocation density caused by cold working.",
+     "Ferrous metals (e.g. steel) may rust. This may cause early failure of steel products.",
+     "An oxide layer can form on some metals such as aluminium giving a dull colour.",
+     "Other metals may tarnish due to corrosion e,g. copper can turn a green colour.",
+     "The presence of water (especially acidic water) can initiate electrochemical reactions in some metals e.g. stainless steel or zinc are impacted by seawater. .",
+     "Rusal Aughinish Alumina is the largest alumina refinery in Europe. In this refinery bauxite is refined into alumina."
+    ]
+   }
+  ],
+  "stem": "dislocation",
+  "notes": "The scheme prints 'Any two @ 8 + 8'."
+ },
+ {
   "id": "eng-2022-hl-q5-c-i",
   "topicId": "eng-1-3",
   "conceptId": "impact-dislocation-crystal-structures",
@@ -3892,40 +3926,6 @@
   ],
   "stem": "dislocation",
   "notes": "The scheme prints '8 marks'."
- },
- {
-  "id": "eng-2022-hl-q5-c",
-  "topicId": "eng-1-5",
-  "conceptId": "select-any-i-ii-or-iii",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q5(c)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and explain: (i) The impact of a dislocation in crystal structures. (ii) The possible corrosive effects of the environment on metal objects. (iii) The refining of aluminium in Ireland.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 16,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Dislocations can move as far as grain boundaries under a shear stress. Fine grained metals are stronger, stiffer and harder than coarse grained metals.",
-    "marks": 16,
-    "accepts": [
-     "Dislocations promote material malleability. The motion of dislocations allows slip deformation to occur.",
-     "Heat treatments can impact on dislocation density caused by cold working.",
-     "Ferrous metals (e.g. steel) may rust. This may cause early failure of steel products.",
-     "An oxide layer can form on some metals such as aluminium giving a dull colour.",
-     "Other metals may tarnish due to corrosion e,g. copper can turn a green colour.",
-     "The presence of water (especially acidic water) can initiate electrochemical reactions in some metals e.g. stainless steel or zinc are impacted by seawater. .",
-     "Rusal Aughinish Alumina is the largest alumina refinery in Europe. In this refinery bauxite is refined into alumina."
-    ]
-   }
-  ],
-  "stem": "dislocation",
-  "notes": "The scheme prints 'Any two @ 8 + 8'."
  },
  {
   "id": "eng-2022-hl-q6-a-i",
@@ -4407,6 +4407,42 @@
   "notes": "The scheme prints '2 + 2'."
  },
  {
+  "id": "eng-2022-hl-q7-b",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-diagram-s-main-differences-between",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q7(b)",
+  "questionText": "Answer any three of the following: (i) Outline the function of a catalyst in the addition polymerisation process. (ii) Explain, with an example, the term copolymerisation. (iii) Name any two polymer additives which are used in the production of mobile phone covers. (iv) Outline two environmental benefits of promoting widespread recycling of mobile phone covers. (v) Describe, with the aid of a diagram(s), the main differences between linear and cross-linked chains in polymers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A catalyst is used to speed up or slow down a chemical reaction. In the addition polymerisation process, a catalyst is introduced to the monomers to instigate the chemical reaction of joining the monomers together.",
+    "marks": 18,
+    "accepts": [
+     "Acrylonitrile butadiene styrene (ABS),",
+     "Nitrile rubber,",
+     "Styrene-acrylonitrile, Styrene-isoprene-styrene (SIS),",
+     "Ethylene-vinyl acetate.",
+     "Additives include colour pigments, plasticisers to improve flexibility, flame retardants, light and heat stabilizers and lubricants to make moulding effective.",
+     "Reduces pollution across ecosystems.",
+     "Requires less energy and helps conserve natural resources.",
+     "Saves fast-depleting landfill space.",
+     "Eases the demand on fossil fuel consumption.",
+     "Promotes a sustainable lifestyle."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
   "id": "eng-2022-hl-q7-b-i",
   "topicId": "eng-1-9",
   "conceptId": "function-catalyst-addition-polymerisation-process",
@@ -4541,42 +4577,6 @@
    }
   ],
   "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2022-hl-q7-b",
-  "topicId": "eng-1-9",
-  "conceptId": "aid-diagram-s-main-differences-between",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q7(b)",
-  "questionText": "Answer any three of the following: (i) Outline the function of a catalyst in the addition polymerisation process. (ii) Explain, with an example, the term copolymerisation. (iii) Name any two polymer additives which are used in the production of mobile phone covers. (iv) Outline two environmental benefits of promoting widespread recycling of mobile phone covers. (v) Describe, with the aid of a diagram(s), the main differences between linear and cross-linked chains in polymers.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "A catalyst is used to speed up or slow down a chemical reaction. In the addition polymerisation process, a catalyst is introduced to the monomers to instigate the chemical reaction of joining the monomers together.",
-    "marks": 18,
-    "accepts": [
-     "Acrylonitrile butadiene styrene (ABS),",
-     "Nitrile rubber,",
-     "Styrene-acrylonitrile, Styrene-isoprene-styrene (SIS),",
-     "Ethylene-vinyl acetate.",
-     "Additives include colour pigments, plasticisers to improve flexibility, flame retardants, light and heat stabilizers and lubricants to make moulding effective.",
-     "Reduces pollution across ecosystems.",
-     "Requires less energy and helps conserve natural resources.",
-     "Saves fast-depleting landfill space.",
-     "Eases the demand on fossil fuel consumption.",
-     "Promotes a sustainable lifestyle."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
  },
  {
   "id": "eng-2022-hl-q7-c-i",
@@ -4847,6 +4847,36 @@
   ]
  },
  {
+  "id": "eng-2022-hl-q9-b",
+  "topicId": "eng-2-16",
+  "conceptId": "energy-conversion-takes-place-car-battery",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q9(b)",
+  "questionText": "Answer any three of the following: (i) Outline the function of the fulcrum in relation to levers. (ii) Describe an energy conversion that takes place in a car battery. (iii) Describe, with the aid of a diagram, the operation of a bevel gear system. (iv) Explain one method of converting rotary motion to reciprocating motion. (v) Distinguish between spur gears and helical gears.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The fulcrum is the point on which the lever pivots.",
+    "marks": 18,
+    "accepts": [
+     "When a force is applied to one end of the lever with a load at the other end, the load will move upward.",
+     "The position of the fulcrum will determine the lifting power of a lever as well as the class or type of lever.",
+     "Bevel gears are most often used to transmit power at a right angle. The axes of the two bevel gear shafts intersect and the tooth-bearing faces of the gears themselves are conically shaped. Bevel gears are most often mounted on shafts that are 90 degrees apart.",
+     "A crank and slider mechanism converts rotating motion at the crank to reciprocating motion of a slider via the connecting rod."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
   "id": "eng-2022-hl-q9-b-i",
   "topicId": "eng-2-15",
   "conceptId": "function-fulcrum-relation-levers",
@@ -4881,36 +4911,6 @@
    }
   ],
   "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2022-hl-q9-b",
-  "topicId": "eng-2-16",
-  "conceptId": "energy-conversion-takes-place-car-battery",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q9(b)",
-  "questionText": "Answer any three of the following: (i) Outline the function of the fulcrum in relation to levers. (ii) Describe an energy conversion that takes place in a car battery. (iii) Describe, with the aid of a diagram, the operation of a bevel gear system. (iv) Explain one method of converting rotary motion to reciprocating motion. (v) Distinguish between spur gears and helical gears.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "The fulcrum is the point on which the lever pivots.",
-    "marks": 18,
-    "accepts": [
-     "When a force is applied to one end of the lever with a load at the other end, the load will move upward.",
-     "The position of the fulcrum will determine the lifting power of a lever as well as the class or type of lever.",
-     "Bevel gears are most often used to transmit power at a right angle. The axes of the two bevel gear shafts intersect and the tooth-bearing faces of the gears themselves are conically shaped. Bevel gears are most often mounted on shafts that are 90 degrees apart.",
-     "A crank and slider mechanism converts rotating motion at the crank to reciprocating motion of a slider via the connecting rod."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
  },
  {
   "id": "eng-2022-hl-q9-b-iii",
@@ -5453,37 +5453,6 @@
   "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
  },
  {
-  "id": "eng-2022-ol-q3-d-i",
-  "topicId": "eng-3-8",
-  "conceptId": "brittleness-or-medicine-ii-gardening-iii",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 OL Q3(d)(i)",
-  "questionText": "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: Brittleness, OR medicine; (ii) gardening; (iii) manufacturing.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Performing operations from a distance Example",
-    "marks": null
-   }
-  ],
-  "stem": "Engineering - Ordinary level 4",
-  "notes": "The scheme prints '6 marks'."
- },
- {
   "id": "eng-2022-ol-q3-d",
   "topicId": "eng-3-8",
   "conceptId": "any-following-metal-properties-or-example",
@@ -5515,6 +5484,37 @@
   ],
   "stem": "Engineering - Ordinary level 4",
   "notes": "The scheme prints 'Any two parts @ 6 marks (12)'."
+ },
+ {
+  "id": "eng-2022-ol-q3-d-i",
+  "topicId": "eng-3-8",
+  "conceptId": "brittleness-or-medicine-ii-gardening-iii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q3(d)(i)",
+  "questionText": "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: Brittleness, OR medicine; (ii) gardening; (iii) manufacturing.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Performing operations from a distance Example",
+    "marks": null
+   }
+  ],
+  "stem": "Engineering - Ordinary level 4",
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2022-ol-q4-a-iii",
@@ -7053,6 +7053,38 @@
   ]
  },
  {
+  "id": "eng-2023-hl-q6-b",
+  "topicId": "eng-2-10",
+  "conceptId": "function-pressure-regulator-oxy-acetylene-welding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(b)",
+  "questionText": "Answer any three of the following: (i) Describe, with the aid of a diagram, the neutral flame in oxy-acetylene welding. (ii) Name three types of welding suitable for automated control. (iii) Outline one safety benefit of using a granulated flux in submerged arc welding. (iv) Describe how multi-run welding can impact the quality of a weld. (v) Explain the function of a pressure regulator in oxy-acetylene welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A balanced proportion of oxygen and acetylene.",
+    "marks": 18,
+    "accepts": [
+     "Maximum combustion as all carbon from the acetylene is used.",
+     "Has a working temperature of up to 3300°C.",
+     "The most extensively used flame for oxy-acetylene welding.",
+     "MIG, TIG, resistance welding, Submerged Arc welding, Electro-slag welding, etc. are suitable for automated welding.",
+     "The weld can be protected from oxidation and potential weaknesses in SAW, fumes are reduced, arc is not visible, reduced fire and heat hazards, etc.",
+     "Multi-run welds have a post heating effect on the previous weld which will improve its quality."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
   "id": "eng-2023-hl-q6-b-i",
   "topicId": "eng-2-10",
   "conceptId": "aid-diagram-neutral-flame-oxy-acetylene",
@@ -7162,38 +7194,6 @@
     "marks": 6
    }
   ]
- },
- {
-  "id": "eng-2023-hl-q6-b",
-  "topicId": "eng-2-10",
-  "conceptId": "function-pressure-regulator-oxy-acetylene-welding",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q6(b)",
-  "questionText": "Answer any three of the following: (i) Describe, with the aid of a diagram, the neutral flame in oxy-acetylene welding. (ii) Name three types of welding suitable for automated control. (iii) Outline one safety benefit of using a granulated flux in submerged arc welding. (iv) Describe how multi-run welding can impact the quality of a weld. (v) Explain the function of a pressure regulator in oxy-acetylene welding.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "A balanced proportion of oxygen and acetylene.",
-    "marks": 18,
-    "accepts": [
-     "Maximum combustion as all carbon from the acetylene is used.",
-     "Has a working temperature of up to 3300°C.",
-     "The most extensively used flame for oxy-acetylene welding.",
-     "MIG, TIG, resistance welding, Submerged Arc welding, Electro-slag welding, etc. are suitable for automated welding.",
-     "The weld can be protected from oxidation and potential weaknesses in SAW, fumes are reduced, arc is not visible, reduced fire and heat hazards, etc.",
-     "Multi-run welds have a post heating effect on the previous weld which will improve its quality."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
  },
  {
   "id": "eng-2023-hl-q6-c-i",
@@ -10416,6 +10416,40 @@
   "questionFigureKey": "engineering-2024-HL-paper-q6ai-art"
  },
  {
+  "id": "eng-2024-hl-q6-b",
+  "topicId": "eng-2-10",
+  "conceptId": "function-transformer-manual-metal-arc-mma",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q6(b)",
+  "questionText": "Answer any three of the following: (i) Suggest a suitable method to protect against each of the following during manual metal arc (MMA) welding: • Electric Shock • Intense light • Welding fumes. (ii) Describe the process of resistance spot welding. (iii) Explain, with an example, the term inert gas as used in metal inert gas (MIG) welding. (iv) Identify a suitable Non-Destructive Test (NDT) for the inspection of porosity in welds. (v) Outline the function of the transformer in manual metal arc (MMA) welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Electric shock: check machine connections, ensure that the working area is not wet, etc.",
+    "marks": 18,
+    "accepts": [
+     "Intense light from welding: use shield while welding, use a welding bay or welding curtain to protect others.",
+     "Welding fumes: ventilation system required to extract fumes.",
+     "The electrode is in the shape of a round bar with tapered ends where it contacts the material.",
+     "The components to be joined are placed between the electrodes and then pressed together. A nugget weld is achieved as current is passed through the electrodes generating a large heat between the metals.",
+     "It is effectively used to join sheet metal together and is recognised by the distinctive circular mark leŌ at the site of the weld. It is widely used in the automotive industry for body panel assembly.",
+     "The inert gas results in less toxic fumes compared to using a flux/coating, no slag is formed.",
+     "Radiography (X-ray) NDT can be used to check welds for porosity. The X-Ray test provides a highly sensitive image of the internal structure of the material indicating if porosity is present in the weld.",
+     "Porosity"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
   "id": "eng-2024-hl-q6-b-i",
   "topicId": "eng-2-10",
   "conceptId": "suggest-suitable-method-protect-against-each",
@@ -10509,40 +10543,6 @@
     "marks": 6
    }
   ]
- },
- {
-  "id": "eng-2024-hl-q6-b",
-  "topicId": "eng-2-10",
-  "conceptId": "function-transformer-manual-metal-arc-mma",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q6(b)",
-  "questionText": "Answer any three of the following: (i) Suggest a suitable method to protect against each of the following during manual metal arc (MMA) welding: • Electric Shock • Intense light • Welding fumes. (ii) Describe the process of resistance spot welding. (iii) Explain, with an example, the term inert gas as used in metal inert gas (MIG) welding. (iv) Identify a suitable Non-Destructive Test (NDT) for the inspection of porosity in welds. (v) Outline the function of the transformer in manual metal arc (MMA) welding.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Electric shock: check machine connections, ensure that the working area is not wet, etc.",
-    "marks": 18,
-    "accepts": [
-     "Intense light from welding: use shield while welding, use a welding bay or welding curtain to protect others.",
-     "Welding fumes: ventilation system required to extract fumes.",
-     "The electrode is in the shape of a round bar with tapered ends where it contacts the material.",
-     "The components to be joined are placed between the electrodes and then pressed together. A nugget weld is achieved as current is passed through the electrodes generating a large heat between the metals.",
-     "It is effectively used to join sheet metal together and is recognised by the distinctive circular mark leŌ at the site of the weld. It is widely used in the automotive industry for body panel assembly.",
-     "The inert gas results in less toxic fumes compared to using a flux/coating, no slag is formed.",
-     "Radiography (X-ray) NDT can be used to check welds for porosity. The X-Ray test provides a highly sensitive image of the internal structure of the material indicating if porosity is present in the weld.",
-     "Porosity"
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
  },
  {
   "id": "eng-2024-hl-q6-c-i",
@@ -10654,6 +10654,37 @@
   "questionFigureKey": "engineering-2024-HL-paper-q7ai-art"
  },
  {
+  "id": "eng-2024-hl-q7-b",
+  "topicId": "eng-1-9",
+  "conceptId": "manufacturing-process-blow-moulding",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q7(b)",
+  "questionText": "Answer any three of the following: (i) Give one suitable example where a plastic product may be upcycled. (ii) Explain the glass transition temperature of polymers. (iii) Describe the process of polymer lamination. (iv) Outline, with the aid of a diagram(s), the internal structure of thermosetting polymers. (v) Describe the manufacturing process of blow moulding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Upcycling plastic products generally takes a used low value object and creates a higher value use e.g. Making shoes from recycled PET bottles, shopping bags from recycled bottles, recycled plastic building boards from milk containers, etc.",
+    "marks": 18,
+    "accepts": [
+     "Glass transition temperature describes the temperature at which a solid glassy amorphous polymer changes to a rubbery, viscous polymer. It is engineered by altering the degree of branching or cross-linking in the polymer by the addition of plasticisers.",
+     "Thin layers of materials bonded together. High strength plastics can be produced by layers of other polymer, fibres, paper or cloth coated with resin being bonded together. Heat and pressure are applied.",
+     "Thermosets are plastics that retain their condition and shape aŌer curing due to spatial crosslinking. Once cured, their polymers can no longer be dissolved.",
+     "Covalent bonds are formed by condensation polymerisation.",
+     "Properties: High melting point, high tensile strength, good thermal insulation and can withstand high temperatures without losing rigidity."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
   "id": "eng-2024-hl-q7-b-i",
   "topicId": "eng-1-9",
   "conceptId": "suitable-example-where-plastic-product-may",
@@ -10757,37 +10788,6 @@
    }
   ],
   "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2024-hl-q7-b",
-  "topicId": "eng-1-9",
-  "conceptId": "manufacturing-process-blow-moulding",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q7(b)",
-  "questionText": "Answer any three of the following: (i) Give one suitable example where a plastic product may be upcycled. (ii) Explain the glass transition temperature of polymers. (iii) Describe the process of polymer lamination. (iv) Outline, with the aid of a diagram(s), the internal structure of thermosetting polymers. (v) Describe the manufacturing process of blow moulding.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Upcycling plastic products generally takes a used low value object and creates a higher value use e.g. Making shoes from recycled PET bottles, shopping bags from recycled bottles, recycled plastic building boards from milk containers, etc.",
-    "marks": 18,
-    "accepts": [
-     "Glass transition temperature describes the temperature at which a solid glassy amorphous polymer changes to a rubbery, viscous polymer. It is engineered by altering the degree of branching or cross-linking in the polymer by the addition of plasticisers.",
-     "Thin layers of materials bonded together. High strength plastics can be produced by layers of other polymer, fibres, paper or cloth coated with resin being bonded together. Heat and pressure are applied.",
-     "Thermosets are plastics that retain their condition and shape aŌer curing due to spatial crosslinking. Once cured, their polymers can no longer be dissolved.",
-     "Covalent bonds are formed by condensation polymerisation.",
-     "Properties: High melting point, high tensile strength, good thermal insulation and can withstand high temperatures without losing rigidity."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
  },
  {
   "id": "eng-2024-hl-q7-c-i",
@@ -10938,6 +10938,43 @@
   "questionFigureKey": "engineering-2024-HL-paper-q8ai-art"
  },
  {
+  "id": "eng-2024-hl-q8-b",
+  "topicId": "eng-2-11",
+  "conceptId": "difference-between-countersunk-hole-counterbored-hole",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q8(b)",
+  "questionText": "Answer any three of the following: (i) Differentiate between forming and generating when machining. (ii) Outline the purpose of balancing a grinding wheel. (iii) Explain, with the aid of a diagram(s), the clearance angle and rake angle on a single point cutting tool. (iv) State one advantage and one disadvantage of using a magnetic chuck on a surface grinding machine. (v) Explain the difference between a countersunk hole and a counterbored hole in drilling.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Generating refers to the creation of workpiece due to the feed trajectory of the cuƫng tool, examples include straight turning, taper turning and profile milling.",
+    "marks": 18,
+    "accepts": [
+     "Forming involves the creation of workpiece shape due to the shape of the cuƫng tool; common examples include form turning and drilling.",
+     "If a grinding wheel is out of balance the spindle will vibrate and a poor surface finish will result. This has consequences for machine safety and surface finish.",
+     "A wheel is placed on a balancing stand and weights are moved around the flange to balance the wheel. This is similar to balancing a car wheel.",
+     "Clearance angle is formed to allow one point of the cuƫng tool to contact the workpiece.",
+     "Rake angle is the angle of the cuƫng face relative to the workpiece. The rake angle facilitates the liŌing of the chip during cuƫng. A rake angle can be positive, negative or zero.",
+     "They provide quick clamping with a firm grip.",
+     "They can accommodate large batches of workpieces.",
+     "They can oŌen accommodate unusual workpiece shapes. Disadvantages of magnetic chuck:",
+     "The metals need to be magnetic.",
+     "The workpiece must have a flat surface and be able to make good contact with the chuck."
+    ]
+   }
+  ],
+  "stem": "Casing Lubricant",
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
   "id": "eng-2024-hl-q8-b-i",
   "topicId": "eng-2-11",
   "conceptId": "differentiate-between-forming-generating-when-machining",
@@ -11080,43 +11117,6 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2024-hl-q8-b",
-  "topicId": "eng-2-11",
-  "conceptId": "difference-between-countersunk-hole-counterbored-hole",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q8(b)",
-  "questionText": "Answer any three of the following: (i) Differentiate between forming and generating when machining. (ii) Outline the purpose of balancing a grinding wheel. (iii) Explain, with the aid of a diagram(s), the clearance angle and rake angle on a single point cutting tool. (iv) State one advantage and one disadvantage of using a magnetic chuck on a surface grinding machine. (v) Explain the difference between a countersunk hole and a counterbored hole in drilling.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Generating refers to the creation of workpiece due to the feed trajectory of the cuƫng tool, examples include straight turning, taper turning and profile milling.",
-    "marks": 18,
-    "accepts": [
-     "Forming involves the creation of workpiece shape due to the shape of the cuƫng tool; common examples include form turning and drilling.",
-     "If a grinding wheel is out of balance the spindle will vibrate and a poor surface finish will result. This has consequences for machine safety and surface finish.",
-     "A wheel is placed on a balancing stand and weights are moved around the flange to balance the wheel. This is similar to balancing a car wheel.",
-     "Clearance angle is formed to allow one point of the cuƫng tool to contact the workpiece.",
-     "Rake angle is the angle of the cuƫng face relative to the workpiece. The rake angle facilitates the liŌing of the chip during cuƫng. A rake angle can be positive, negative or zero.",
-     "They provide quick clamping with a firm grip.",
-     "They can accommodate large batches of workpieces.",
-     "They can oŌen accommodate unusual workpiece shapes. Disadvantages of magnetic chuck:",
-     "The metals need to be magnetic.",
-     "The workpiece must have a flat surface and be able to make good contact with the chuck."
-    ]
-   }
-  ],
-  "stem": "Casing Lubricant",
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
- },
- {
   "id": "eng-2024-hl-q8-c-ii",
   "topicId": "eng-2-11",
   "conceptId": "identify-any-lubricants-commonly-used-when",
@@ -11218,6 +11218,39 @@
    }
   ],
   "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2024-hl-q9-b",
+  "topicId": "eng-2-16",
+  "conceptId": "aid-diagram-s-principle-operation-relay",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q9(b)",
+  "questionText": "Answer any three of the following: (i) Describe the operation of a Light Dependent Resistor (LDR). (ii) Identify the mechanism shown opposite and give one suitable use for the mechanism. (iii) State two advantages of using helical gears over spur gears. (iv) Outline the operation of a clutch mechanism. (v) Describe, with the aid of a diagram(s), the principle of operation of a relay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "An LDR or light dependent resistor is a type of resistor whose resistance varies depending on the amount of light falling on its surface. These resistors are oŌen used in circuits where it is required to sense the presence of light/darkness such as garden lights.",
+    "marks": 18,
+    "accepts": [
+     "a positive, mechanical connection between rotating shaŌs, which are usually not parallel, but intersecting.",
+     "used to transmit motion, power, or both.",
+     "found on four-wheel drive (4WD), rear-wheel drive (RWD) and all-wheel drive (AWD) vehicles, agricultural machinery etc.",
+     "Helical gears are quieter in operation, have a greater gear meshing area which makes the stronger, helical gear teeth run smoother as they mesh with a number of teeth at the same time while spur gears only mesh one tooth at a time.",
+     "Clutches are used in devices that have two rotating shaŌs. One of the shaŌs is typically driven by a motor or pulley, and the other shaŌ drives another device. The clutch connects the two shaŌs so that they can either be locked together and spin at the same speed or be decoupled and spin at different speeds.",
+     "When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaŌ, causing them to spin at the same speed."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
  },
  {
   "id": "eng-2024-hl-q9-b-i",
@@ -11333,39 +11366,6 @@
    }
   ],
   "notes": "The scheme prints '6 marks'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
- },
- {
-  "id": "eng-2024-hl-q9-b",
-  "topicId": "eng-2-16",
-  "conceptId": "aid-diagram-s-principle-operation-relay",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q9(b)",
-  "questionText": "Answer any three of the following: (i) Describe the operation of a Light Dependent Resistor (LDR). (ii) Identify the mechanism shown opposite and give one suitable use for the mechanism. (iii) State two advantages of using helical gears over spur gears. (iv) Outline the operation of a clutch mechanism. (v) Describe, with the aid of a diagram(s), the principle of operation of a relay.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "An LDR or light dependent resistor is a type of resistor whose resistance varies depending on the amount of light falling on its surface. These resistors are oŌen used in circuits where it is required to sense the presence of light/darkness such as garden lights.",
-    "marks": 18,
-    "accepts": [
-     "a positive, mechanical connection between rotating shaŌs, which are usually not parallel, but intersecting.",
-     "used to transmit motion, power, or both.",
-     "found on four-wheel drive (4WD), rear-wheel drive (RWD) and all-wheel drive (AWD) vehicles, agricultural machinery etc.",
-     "Helical gears are quieter in operation, have a greater gear meshing area which makes the stronger, helical gear teeth run smoother as they mesh with a number of teeth at the same time while spur gears only mesh one tooth at a time.",
-     "Clutches are used in devices that have two rotating shaŌs. One of the shaŌs is typically driven by a motor or pulley, and the other shaŌ drives another device. The clutch connects the two shaŌs so that they can either be locked together and spin at the same speed or be decoupled and spin at different speeds.",
-     "When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaŌ, causing them to spin at the same speed."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
   "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
  },
  {
@@ -12226,7 +12226,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Increased efficiency and productivity, users can accomplish various actions, such as seƫng reminders, scheduling appointments, or searching for information, simply by speaking a command.",
+    "verbatim": "Increased efficiency and productivity, users can accomplish various actions, such as setting reminders, scheduling appointments, or searching for information, simply by speaking a command.",
     "marks": null
    },
    {
@@ -12293,19 +12293,19 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Remove spilt cuƫng fluids from floor to prevent slipping.",
+    "verbatim": "Remove spilt cutting fluids from floor to prevent slipping.",
     "marks": null
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Renew cuƫng fluid to prevent rancidity.",
+    "verbatim": "Renew cutting fluid to prevent rancidity.",
     "marks": null
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Cuƫng fluids need to be filtered and cleaned.",
+    "verbatim": "Cutting fluids need to be filtered and cleaned.",
     "marks": null
    }
   ],
@@ -12460,6 +12460,67 @@
   "notes": "The scheme prints '5'."
  },
  {
+  "id": "eng-2025-hl-q1-h",
+  "topicId": "eng-1-5",
+  "conceptId": "reasons-why-anodised-aluminum-suitable-manufacture",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q1(h)",
+  "questionText": "Outline two reasons why anodised aluminum is suitable for the manufacture of the climbing carabiner shown.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Anodising offers enhanced corrosion resistance, improved hardness and resistance to wear/abrasion.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Aluminium has good strength-to-weight ratio, it will not rust, can be formed into the shape easily, etc.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Anodising offers a wide range of colour options and finishes.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2025-hl-q1-i",
+  "topicId": "eng-3-8",
+  "conceptId": "climbing-carabiner-designed-high-factor-safety",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q1(i)",
+  "questionText": "The climbing carabiner is designed with a high factor of safety. Explain the term factor of safety.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Factor of safety: a component is designed to withstand a greater load than the expected operational load. It is commonly stated as a ratio, such as 5:1. This means that the carabiner can hold five times their Safe Work Load (SWL) before it will break.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
   "id": "eng-2025-hl-q1-j",
   "topicId": "eng-2-11",
   "conceptId": "identify-any-lathe-processes-used-manufacture",
@@ -12481,6 +12542,7 @@
     "marks": null
    }
   ],
+  "stem": "Give brief answers to any ten of the following:",
   "notes": "The scheme prints '3 + 2'.",
   "questionFigureKey": "engineering-2025-HL-paper-q1j-art"
  },
@@ -12504,6 +12566,36 @@
     "kind": "point",
     "verbatim": "An electromagnet is a type of magnet in which the magnetic field is produced by an electric current. Electromagnets usually consist of wire wound into a coil. A current through the wire creates a magnetic field which is concentrated in the hole in the centre of the coil. The magnetic field disappears when the current is turned off.",
     "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2025-hl-q1-l",
+  "topicId": "eng-2-15",
+  "conceptId": "benefits-pneumatic-powered-equipment-used-dentist",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q1(l)",
+  "questionText": "State two benefits of pneumatic powered equipment used by a dentist.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using pneumatic systems to control dental equipment allows for smoother and gentler operation.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pneumatic systems are safer and more efficient to use. They also lower the risk of shock and hazardous fluid leakage.",
+    "marks": 2
    }
   ],
   "stem": "Give brief answers to any ten of the following:"
@@ -12599,6 +12691,42 @@
   ]
  },
  {
+  "id": "eng-2025-hl-q2-b-i",
+  "topicId": "eng-3-14",
+  "conceptId": "process-smr",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(i)",
+  "questionText": "Describe the process of SMR.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reaction with Steam – methane reacts with steam to produce hydrogen (H2) as well as CO and CO2.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Water-Gas Shift Reaction - Carbon monoxide reacts with additional steam to produce more hydrogen and carbon dioxide.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Hydrogen Purification.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '5'."
+ },
+ {
   "id": "eng-2025-hl-q2-b-ii",
   "topicId": "eng-3-14",
   "conceptId": "environmental-impact-smr-reference-use-fossil",
@@ -12680,8 +12808,7 @@
     "verbatim": "Safety and reliability integrated into system design.",
     "marks": null
    }
-  ],
-  "stem": "energy"
+  ]
  },
  {
   "id": "eng-2025-hl-q2-c-ii",
@@ -12711,7 +12838,6 @@
     "marks": null
    }
   ],
-  "stem": "energy",
   "notes": "The scheme prints '5'."
  },
  {
@@ -12748,7 +12874,6 @@
     "marks": null
    }
   ],
-  "stem": "oxygen membrane hydrogen water anode cathode",
   "notes": "The scheme prints '10'."
  },
  {
@@ -12803,8 +12928,7 @@
     "verbatim": "Metal fatigue is the initiation and propagation of cracks in a material due to cyclic loading (on/off loading). Once a fatigue crack has initiated, it grows a small amount with each loading cycle. The crack will continue to grow until it reaches a critical size and complete fracture of the structure.",
     "marks": 4
    }
-  ],
-  "stem": "compressor blade"
+  ]
  },
  {
   "id": "eng-2025-hl-q3-a-ii",
@@ -12824,7 +12948,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Thermal creep is the slow, time-dependent deformation of metals under constant stress. It can be a significant issue for materials operating in high-performance systems, such as jet engines, that oŌen reach extreme temperatures. Higher temperatures increase atomic movement, accelerating the creep deformation rate.",
+    "verbatim": "Thermal creep is the slow, time-dependent deformation of metals under constant stress. It can be a significant issue for materials operating in high-performance systems, such as jet engines, that often reach extreme temperatures. Higher temperatures increase atomic movement, accelerating the creep deformation rate.",
     "marks": null
    },
    {
@@ -12834,7 +12958,6 @@
     "marks": null
    }
   ],
-  "stem": "compressor blade",
   "notes": "The scheme prints '4'."
  },
  {
@@ -12871,7 +12994,6 @@
     "marks": null
    }
   ],
-  "stem": "compressor blade",
   "notes": "The scheme prints '6'."
  },
  {
@@ -12959,6 +13081,30 @@
   "notes": "The scheme prints '8'."
  },
  {
+  "id": "eng-2025-hl-q4-a-i",
+  "topicId": "eng-2-6",
+  "conceptId": "reasons-surface-hardening-plough-point",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q4(a)(i)",
+  "questionText": "Outline two reasons for surface hardening the plough point.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Surface hardening of the plough points will increase the hardness of the outer surface while the core remains relatively soft. This results in the plough point having an increased resistance to both fatigue failure and abrasive wear.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4 + 4'."
+ },
+ {
   "id": "eng-2025-hl-q4-a-ii",
   "topicId": "eng-2-6",
   "conceptId": "aid-diagram-s-heating-cooling-process",
@@ -12969,23 +13115,49 @@
   "questionRef": "2025 HL Q4(a)(ii)",
   "questionText": "Describe, with the aid of a diagram(s), the heating and cooling process used during the induction hardening of the plough point.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Induction hardening is a method of quickly and selectively hardening the surface of a metal part. A copper coil carrying a significant level of alternating current is placed near (not touching) the part.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water. The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping the inner core tough.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2025-hl-q4-b-i",
+  "topicId": "eng-2-6",
+  "conceptId": "transformation-line-transformation-line-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q4(b)(i)",
+  "questionText": "Name the transformation line A and the transformation line B.",
+  "tariffModel": {
+   "kind": "questionTotal"
   },
   "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Induction hardening is a method of quickly and selectively hardening the surface of a metal part. A copper coil carrying a significant level of alternating current is placed near (not touching) the part.",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water. The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping the inner core tough.",
-    "marks": 2
+    "verbatim": "B = Lower Critical Temperature Line (LCT) - Austenite and cementite to pearlite and cementite transformation, magnetic transformation temperature.",
+    "marks": null
    }
-  ]
+  ],
+  "notes": "The scheme prints '2 + 2'.",
+  "questionFigureKey": "engineering-2025-HL-paper-q4bi-art"
  },
  {
   "id": "eng-2025-hl-q4-b-ii",
@@ -13029,7 +13201,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(approx. 800°C). It is then soaked at this temperature allowing the whole of the piece to be at the same temperature. It is then allowed to cool gradually in the furnace by reducing the temperature. During full annealing new grains are formed and this is called recrystallisation and this makes the metal soŌ, improves ductility, refines the grain size and removes internal stresses.",
+    "verbatim": "(approx. 800°C). It is then soaked at this temperature allowing the whole of the piece to be at the same temperature. It is then allowed to cool gradually in the furnace by reducing the temperature. During full annealing new grains are formed and this is called recrystallisation and this makes the metal soft, improves ductility, refines the grain size and removes internal stresses.",
     "marks": 8
    }
   ],
@@ -13154,6 +13326,29 @@
   ]
  },
  {
+  "id": "eng-2025-hl-q5-b-ii",
+  "topicId": "eng-1-5",
+  "conceptId": "alloy-60-zinc-determine-diagram-ratio",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q5(b)(ii)",
+  "questionText": "For the alloy with 60% Zinc, determine from the diagram the ratio of the phases at 300°C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = 34 B = 60 C = 100 |AB|/|BC| = 26/40",
+    "marks": 4
+   }
+  ]
+ },
+ {
   "id": "eng-2025-hl-q5-b-iii",
   "topicId": "eng-1-5",
   "conceptId": "transformation-point-alloy-containing-14-zinc",
@@ -13216,7 +13411,6 @@
     "marks": null
    }
   ],
-  "stem": "3. shredding Metal recycling process 7. manufacture 4. melting 6. rolling 5. solidifying",
   "notes": "The scheme prints '8 marks'."
  },
  {
@@ -13240,8 +13434,7 @@
     "verbatim": "Aluminium electrometallurgy: The electrometallurgy of aluminium begins by crushing bauxite ore into smaller particles before placing them into an electrolytic cell. The cell is filled with an ionic solution known as an electrolyte. An electrical current is then passed through the cell, transferring positively charged ions from the electrolyte to the aluminium ore, resulting in pure aluminium being deposited on the cathode. The cathode can then be removed from the cell and melted down to produce aluminium ingots that can be sold to manufacturers for further processing.",
     "marks": 8
    }
-  ],
-  "stem": "3. shredding Metal recycling process 7. manufacture 4. melting 6. rolling 5. solidifying"
+  ]
  },
  {
   "id": "eng-2025-hl-q6-a-i",
@@ -13327,7 +13520,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Ensure the metal pieces are correctly aligned and close fiƫng, for thicker materials, bevel the edges using a grinder or cuƫng tool.",
+    "verbatim": "Ensure the metal pieces are correctly aligned and close fitting, for thicker materials, bevel the edges using a grinder or cutting tool.",
     "marks": null
    },
    {
@@ -13439,40 +13632,27 @@
   "questionFigureKey": "engineering-2025-HL-paper-q6bv-art"
  },
  {
-  "id": "eng-2025-hl-q6-b",
+  "id": "eng-2025-hl-q6-b-v",
   "topicId": "eng-2-10",
   "conceptId": "how-distortion-shown-may-occur-during",
   "level": "higher",
   "year": 2025,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2025 HL Q6(b)",
-  "questionText": "Answer any three of the following: (i) Identify two necessary steps in the preparation of a joint for welding. (ii) State two functions of the electrode coating in manual metal arc welding. (iii) Describe how acetylene gas is safely stored. (iv) Describe, with the aid of a diagram(s), the process of friction welding. (v) Outline how distortion, as shown, may occur during welding.",
+  "questionRef": "2025 HL Q6(b)(v)",
+  "questionText": "Outline how distortion, as shown, may occur during welding.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Clean the surfaces to be welded by removing dirt, grease, oil and rust. Use a wire brush, grinder or chemical cleaner.",
-    "marks": 18,
-    "accepts": [
-     "Ensure there are no sharp edges or burrs on the metal pieces by grinding or filing them down.",
-     "Ensure the metal pieces are correctly aligned and close fiƫng, for thicker materials, bevel the edges using a grinder or cuƫng tool.",
-     "Ensure that the angles and alignment are accurate and secure the workpieces using clamps, jigs, or fixtures.",
-     "Some metals, like high-carbon steel or thick materials, may require preheating to prevent cracking. Use a torch or heating element to bring the metal to the desired temperature.",
-     "To generate a shield of carbon dioxide gas to protect welded joints from contamination by oxygen and nitrogen in the air.",
-     "To form a slag coating which protects the weld from oxidation and ensures a slow cooling rate for the weld, this prevents cracks and brittleness.",
-     "Facilitates the striking action of the arc between the work and electrode.",
-     "Acetylene is safely stored in colour coded cylinders that contain a porous material soaked with a solvent like acetone. This method keeps the gas dissolved at low pressures, reducing the risk of explosion. The cylinders are stored upright in cool, well-ventilated areas, with safety features like pressure relief devices to further ensure safe storage.",
-     "Friction welding is a solid-state fusion process that produces full contact, high quality joints. By rotating one work piece at high- speed relative to another, a compressive axial force is applied.",
-     "This generates sufficient temperature to cause the interface to plasticise and fuse."
-    ]
+    "kind": "point",
+    "verbatim": "Distortion during welding is a common issue caused by the uneven expansion and contraction of the metal as it is heated and cooled. The welded component fails to maintain its original shape and may result in shrinkage, angular movement or buckling and other defects that compromise the integrity and appearance of the welded structure.",
+    "marks": 6
    }
   ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
   "questionFigureKey": "engineering-2025-HL-paper-q6bv-art"
  },
  {
@@ -13494,31 +13674,25 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Using artificial intelligence (AI) to visually inspect welds for defects offers several advantages, including enhanced accuracy and efficiency.",
+    "verbatim": "AI systems can be trained to recognise subtle defects that might be missed by human inspectors, such as tiny cracks, porosity or undercuts. Machine learning algorithms can analyse images of welds with high precision, ensuring that even the smallest inconsistencies are detected.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "AI systems can be trained to recognise subtle defects that might be missed by human • inspectors, such as tiny cracks, porosity or undercuts. Machine learning algorithms can analyse images of welds with high precision, ensuring that even the smallest inconsistencies are detected.",
+    "verbatim": "Consistency: Unlike human inspectors, who may experience fatigue or variability in judgment, AI systems provide consistent evaluations every time. This reduces the likelihood of errors or overlooked defects, leading to higher quality welds and fewer failures in the final product.",
     "marks": null
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Consistency: Unlike human inspectors, who may experience fatigue or variability in • judgment, AI systems provide consistent evaluations every time. This reduces the likelihood of errors or overlooked defects, leading to higher quality welds and fewer failures in the final product.",
+    "verbatim": "AI can analyse images or video of welds in real-time, significantly speeding up the inspection process compared to manual methods. This allows for quicker identification of defects and reduces the time needed for quality control.",
     "marks": null
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "AI can analyse images or video of welds in real-time, significantly speeding up the • inspection process compared to manual methods. This allows for quicker identification of defects and reduces the time needed for quality control.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "AI-powered inspection systems can operate continuously without breaks, making them • ideal for high-volume production environments, increasing overall productivity and reducing bottlenecks in the manufacturing process.",
+    "verbatim": "AI-powered inspection systems can operate continuously without breaks, making them ideal for high-volume production environments, increasing overall productivity and reducing bottlenecks in the manufacturing process.",
     "marks": null
    }
   ]
@@ -13584,25 +13758,25 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Hollow plastic barriers are much lighter than solid barriers, making them easier to • transport, install and reposition. This is particularly important for temporary setups, such as during road construction or events, where barriers need to be frequently moved or adjusted.",
+    "verbatim": "Hollow plastic barriers are much lighter than solid barriers, making them easier to transport, install and reposition. This is particularly important for temporary setups, such as during road construction or events, where barriers need to be frequently moved or adjusted.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Hollow barriers can be filled with water or sand once they are in position. This filling • provides the necessary weight and stability to resist impacts and remain in place under various conditions. When the job is done, the filling can be drained, returning the barrier to its lightweight state for easy removal.",
+    "verbatim": "Hollow barriers can be filled with water or sand once they are in position. This filling provides the necessary weight and stability to resist impacts and remain in place under various conditions. When the job is done, the filling can be drained, returning the barrier to its lightweight state for easy removal.",
     "marks": null
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Using hollow plastic reduces the amount of raw material required to manufacture each • barrier, making them more cost-effective to produce compared to solid barriers.",
+    "verbatim": "Using hollow plastic reduces the amount of raw material required to manufacture each barrier, making them more cost-effective to produce compared to solid barriers.",
     "marks": null
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "In the event of a collision, hollow plastic barriers, especially when filled with water, can • absorb and dissipate some of the impact energy, reducing the severity of damage to vehicles and minimising the risk of injury to occupants. This makes them safer compared to solid, rigid barriers.",
+    "verbatim": "In the event of a collision, hollow plastic barriers, especially when filled with water, can absorb and dissipate some of the impact energy, reducing the severity of damage to vehicles and minimising the risk of injury to occupants. This makes them safer compared to solid, rigid barriers.",
     "marks": null
    }
   ],
@@ -13626,7 +13800,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Rotational Moulding involves a heated hollow mould which is filled with a charge of thermoplastic material. The charge is heated and soŌened and then slowly rotated (usually around two perpendicular axes) causing the soŌened material to disperse and stick to the walls of the mould. In order to maintain even thickness throughout the part, the mould continues to rotate at all times during the heating phase. Products that can be manufactured using rotational moulding include storage tanks, toys, bins and refuse containers, footballs, helmets and canoes.",
+    "verbatim": "Rotational Moulding involves a heated hollow mould which is filled with a charge of thermoplastic material. The charge is heated and softened and then slowly rotated (usually around two perpendicular axes) causing the softened material to disperse and stick to the walls of the mould. In order to maintain even thickness throughout the part, the mould continues to rotate at all times during the heating phase. Products that can be manufactured using rotational moulding include storage tanks, toys, bins and refuse containers, footballs, helmets and canoes.",
     "marks": 8
    }
   ],
@@ -13771,7 +13945,43 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Foamed polymers oŌen exhibit greater flexibility and cushioning properties, which are beneficial in products like foam cushions, mattresses and protective packaging.",
+    "verbatim": "Foamed polymers often exhibit greater flexibility and cushioning properties, which are beneficial in products like foam cushions, mattresses and protective packaging.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2025-hl-q7-b-v",
+  "topicId": "eng-1-9",
+  "conceptId": "identify-reasons-why-polyurethane-suitable-use",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q7(b)(v)",
+  "questionText": "Identify two reasons why polyurethane is suitable for use in the manufacture of skateboard wheels.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polyurethane is durable and resistant to wear, making it ideal for skateboard wheels that endure constant friction and impact with various surfaces. This ensures that the wheels have a long lifespan.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Polyurethane has excellent shock-absorbing properties, which helps to cushion the rider from impacts and vibrations when skating over rough terrain or landing tricks.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Polyurethane’s hardness can be precisely controlled during manufacturing, allowing for the production of skateboard wheels with different durometers (a measure of hardness). Softer wheels offer better grip and a smoother ride, ideal for cruising or rough surfaces, while harder wheels provide faster speeds and are better suited for tricks and smooth surfaces like skateparks.",
     "marks": null
    }
   ],
@@ -13823,7 +14033,6 @@
     "marks": null
    }
   ],
-  "stem": "Seabin™",
   "notes": "The scheme prints '8'."
  },
  {
@@ -13856,7 +14065,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Thermoseƫng plastics are much harder to recycle. Once they have been cured and set into a rigid form, they cannot be remelted or reshaped due to their cross-linked chemical structure.",
+    "verbatim": "Thermosetting plastics are much harder to recycle. Once they have been cured and set into a rigid form, they cannot be remelted or reshaped due to their cross-linked chemical structure.",
     "marks": null
    },
    {
@@ -13868,11 +14077,10 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Recycling thermoseƫng plastics usually involves grinding them into small particles that can be used as fillers or in composite materials, rather than being reformed into new plastic products.",
+    "verbatim": "Recycling thermosetting plastics usually involves grinding them into small particles that can be used as fillers or in composite materials, rather than being reformed into new plastic products.",
     "marks": null
    }
   ],
-  "stem": "Seabin™",
   "notes": "The scheme prints '8'."
  },
  {
@@ -13893,7 +14101,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Precision surface grinding is a metal cuƫng process in which flat and extremely smooth surfaces are produced.",
+    "verbatim": "Precision surface grinding is a metal cutting process in which flat and extremely smooth surfaces are produced.",
     "marks": null
    },
    {
@@ -13995,7 +14203,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Tungsten carbide tools will retain their cuƫng edge at high temperatures more effectively than HSS.",
+    "verbatim": "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.",
     "marks": null
    },
    {
@@ -14031,13 +14239,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Use cuƫng fluids when machining.",
+    "verbatim": "Use cutting fluids when machining.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Choose suitable cuƫng tools for each machining process.",
+    "verbatim": "Choose suitable cutting tools for each machining process.",
     "marks": null
    },
    {
@@ -14055,7 +14263,7 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Use the correct cuƫng speed and cuƫng feed for the material.",
+    "verbatim": "Use the correct cutting speed and cutting feed for the material.",
     "marks": null
    }
   ],
@@ -14098,41 +14306,34 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2025-hl-q8-b",
+  "id": "eng-2025-hl-q8-b-v",
   "topicId": "eng-2-11",
   "conceptId": "identify-precautions-should-be-taken-prevent",
   "level": "higher",
   "year": 2025,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2025 HL Q8(b)",
-  "questionText": "Answer any three of the following: (i) Explain, with the aid of a diagram(s), the difference between a dovetail cutter and a T-slot cutter used in milling. (ii) Outline two advantages of using tungsten carbide insert tips over high-speed steel in cutting tools. (iii) Describe two methods used to prolong cutting tool life. (iv) State two benefits of laser measuring systems in CNC machining. (v) Identify two precautions that should be taken to prevent rancidity in cutting fluids.",
+  "questionRef": "2025 HL Q8(b)(v)",
+  "questionText": "Identify two precautions that should be taken to prevent rancidity in cutting fluids.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "T-slots on machine tables and beds when fitted to a milling machine. A dovetail cutter will machine an angled profile suitable for dovetail joints.",
-    "marks": 18,
-    "accepts": [
-     "Tee slot cutter Dovetail cutter",
-     "Tungsten carbide tools will retain their cuƫng edge at high temperatures more effectively than HSS.",
-     "Long life and cost effective.",
-     "Easily replaced, do not require sharpening.",
-     "Use cuƫng fluids when machining.",
-     "Choose suitable cuƫng tools for each machining process.",
-     "Run the machine at the correct speed to prevent heat build-up.",
-     "Ensure that the machine is in good condition and not prone to excessive vibration.",
-     "Use the correct cuƫng speed and cuƫng feed for the material.",
-     "High Precision and Accuracy - Laser measuring systems provide extremely accurate and precise measurements, allowing CNC machines to produce parts with tight tolerances. This precision is critical for industries requiring exact specifications, such as aerospace, automotive and medical devices.",
-     "Non-Contact Measurement - Laser systems measure without physically touching the workpiece, reducing the risk of damage to delicate or complex surfaces. This non-invasive approach helps maintain the integrity of both the tool and the part being machined, ensuring consistent quality."
-    ]
+    "kind": "point",
+    "verbatim": "Rancidity of the cutting fluid is caused by bacteria and other microscopic organisms growing and eventually causing bad odours to form. Most cutting fluids contain bactericides that control growth of bacteria and make fluids more resistant to rancidity.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Other ways of preventing rancidity include continuous filtering of the cutting fluid to keep it clean, by keeping the fluid at proper strength and out of direct sunlight.",
+    "marks": null
    }
   ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2025-hl-q8-c-i",
@@ -14143,7 +14344,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 HL Q8(c)(i)",
-  "questionText": "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties. Describe each of the following in relation to robotic CNC milling technology: • Stepper motors • Feedback sensors.",
+  "questionText": "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -14152,25 +14353,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Continuous chips are formed during metal machining in long ribbons without breakage. This chip formation is characterised by high cuƫng speeds and minimum friction between tool face and metal on ductile materials such as mild steel and aluminium.",
+    "verbatim": "Continuous chips are formed during metal machining in long ribbons without breakage. This chip formation is characterised by high cutting speeds and minimum friction between tool face and metal on ductile materials such as mild steel and aluminium.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Discontinuous chips are small segments produced by metal cuƫng processes. These chips usually fracture without deformation and are associated with brittle materials such as brass, bronze and cast iron. Discontinuous chips produce effective cuƫng conditions for brittle materials but may have a tearing action on ductile materials resulting on poor surface finish and excessive wear on tools.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Stepper motors, as used in control of robotic CNC milling technology, provide incremental movement and allow for precision control of movement. They have good reliability of operation and good power output to give torque required for operation. Stepper motors are driven by control circuits.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Feedback sensors are used in robotic CNC milling machines to continuously monitor and measure the output value of the system and compare the output value with the desired value. If the value of the output and input are not equal, then an adjustment is made.",
+    "verbatim": "Discontinuous chips are small segments produced by metal cutting processes. These chips usually fracture without deformation and are associated with brittle materials such as brass, bronze and cast iron. Discontinuous chips produce effective cutting conditions for brittle materials but may have a tearing action on ductile materials resulting on poor surface finish and excessive wear on tools.",
     "marks": null
    }
   ],
@@ -14186,7 +14375,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 HL Q8(c)(ii)",
-  "questionText": "Identify the chip formation shown at C and outline how this chip formation impacts on both safety and surface finish. OR Explain the term subtractive manufacturing in relation to CNC milling.",
+  "questionText": "Identify the chip formation shown at C and outline how this chip formation impacts on both safety and surface finish.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -14195,7 +14384,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Built-up edge (BUE) is common in machining, particularly in lathe work, where material being cut adheres to the cuƫng tool, forming a small deposit or \"edge\" on the tool's tip. This occurs when the pressure and temperature at the cuƫng zone cause workpiece material to weld to the cuƫng tool.",
+    "verbatim": "Built-up edge (BUE) is common in machining, particularly in lathe work, where material being cut adheres to the cutting tool, forming a small deposit or \"edge\" on the tool's tip. This occurs when the pressure and temperature at the cutting zone cause workpiece material to weld to the cutting tool.",
     "marks": null
    },
    {
@@ -14208,12 +14397,6 @@
     "id": "r-3",
     "kind": "point",
     "verbatim": "BUE can negatively affect the surface finish of the workpiece, it can leave behind rough or irregular surfaces, resulting in a poor finish with increased roughness. BUE can lead to inaccuracies in the dimensions of the machined part.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Subtractive manufacturing is a term for various controlled machining and material removal processes that start with solid blocks, bars, rods of plastic, metal or other materials that are shaped by removing material through cuƫng, boring, drilling and grinding. In CNC milling, these processes are controlled by programmes devised to produce complex shapes.",
     "marks": null
    }
   ],
@@ -14238,7 +14421,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Suggested solution – other valid solutions accepted Precise tilt control of the camera's position can be achieved using servomotors, which are oŌen used in conjunction with a control unit to execute the tilt movements.",
+    "verbatim": "Suggested solution – other valid solutions accepted Precise tilt control of the camera's position can be achieved using servomotors, which are often used in conjunction with a control unit to execute the tilt movements.",
     "marks": null
    },
    {
@@ -14256,7 +14439,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "The motor is attached to the top smaller pulley and the camera shaŌ is attached to the larger pulley.",
+    "verbatim": "The motor is attached to the top smaller pulley and the camera shaft is attached to the larger pulley.",
     "marks": null
    },
    {
@@ -14266,7 +14449,6 @@
     "marks": null
    }
   ],
-  "stem": "camera unit",
   "notes": "The scheme prints '10'."
  },
  {
@@ -14321,7 +14503,6 @@
     "marks": null
    }
   ],
-  "stem": "camera unit",
   "notes": "The scheme prints '6'."
  },
  {
@@ -14342,7 +14523,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Bevel gears have a conical shape and are used to transmit rotational power through shaŌs that are typically at an angle of 90° to each other. They are typically used for motor transmission differential drives.",
+    "verbatim": "Bevel gears have a conical shape and are used to transmit rotational power through shafts that are typically at an angle of 90° to each other. They are typically used for motor transmission differential drives.",
     "marks": 6
    }
   ],
@@ -14435,36 +14616,71 @@
   "questionFigureKey": "engineering-2025-HL-paper-q9biii-art"
  },
  {
-  "id": "eng-2025-hl-q9-b",
+  "id": "eng-2025-hl-q9-b-v",
   "topicId": "eng-2-16",
   "conceptId": "operation-capacitor",
   "level": "higher",
   "year": 2025,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2025 HL Q9(b)",
-  "questionText": "Answer any three of the following: inspection robot (i) Describe, with the aid of a diagram, the operation of bevel gears. (ii) State two benefits of thermostatic control in home heating systems. (iii) Identify the mechanism shown opposite and give one suitable use for the mechanism. (iv) Describe the operation of a single acting pneumatic cylinder. (v) Outline the operation of a capacitor.",
+  "questionRef": "2025 HL Q9(b)(v)",
+  "questionText": "Outline the operation of a capacitor.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Bevel gears have a conical shape and are used to transmit rotational power through shaŌs that are typically at an angle of 90° to each other. They are typically used for motor transmission differential drives.",
-    "marks": 18,
-    "accepts": [
-     "Thermostats allow you to control the temperature of each room individually, rather heating the entire floor or entire property at the same time.",
-     "This reduces energy wastage and excessive heat use, resulting in financial savings. Smart thermostats allow the user to control their heating system remotely.",
-     "Suitable uses include ratchet strap, winch mechanism on trailer, fishing reel, ratchet spanner, turnstile, etc.",
-     "A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return because of the spring.",
-     "Force of air moves ram No compressed air Compressed air applied"
-    ]
+    "kind": "point",
+    "verbatim": "It consists of two conductive plates separated by an insulating material (dielectric). When a voltage is applied, electrons accumulate on one plate, creating a negative charge, while the other plate becomes positively charged. This creates an electric field between the plates, storing energy.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "When the circuit allows current to flow, the capacitor discharges, releasing the stored energy. Capacitors are used for energy storage, filtering and timing applications in electrical and electronic circuits.",
+    "marks": null
    }
   ],
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
+  "notes": "The scheme prints '6 marks'.",
   "questionFigureKey": "engineering-2025-HL-paper-q9biii-art"
+ },
+ {
+  "id": "eng-2025-hl-q9-c-i",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-suitable-mechanism-will",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q9(c)(i)",
+  "questionText": "Describe, with the aid of a diagram(s), a suitable mechanism which will allow the printing head assembly to move up and down.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A leadscrew mechanism would be suitable for controlling the movement of the printing head.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The leadscrew will translate turning motion into linear motion. The pitch or lead is the distance the nut travels along the screw for every complete revolution. A stepper motor will rotate the leadscrew precisely to ensure that the printing head will raise and lower the correct distance.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Suggested solution - other viable solutions are acceptable.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'."
  },
  {
   "id": "eng-2025-ol-q1-a",
@@ -14484,7 +14700,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Wear personal protective equipment (PPE) such as safety goggles to  protect your eyes from flying debris.",
+    "verbatim": "Wear personal protective equipment (PPE) such as safety goggles to protect your eyes from flying debris.",
     "marks": null
    },
    {
@@ -14515,17 +14731,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Explain the term permanent joint and give one example of a permanent joint in engineering.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.",
     "marks": null
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "An example of a permanent joint in engineering is a welded joint.",
     "marks": null
@@ -14552,7 +14762,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "To ensure they operate as required and to identify any errors  in design or assembly.",
+    "verbatim": "To ensure they operate as required and to identify any errors in design or assembly.",
     "marks": 6
    }
   ],
@@ -14569,25 +14779,18 @@
   "questionRef": "2025 OL Q1(d)",
   "questionText": "Give one reason why it is important to work in a ventilated area when using adhesives.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Give one reason why it is important to work in a ventilated area when using adhesives.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Adhesives produce dangerous fumes, which can be harmful if inhaled,  ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.",
-    "marks": null
+    "verbatim": "Adhesives produce dangerous fumes, which can be harmful if inhaled, ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.",
+    "marks": 6
    }
   ],
-  "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '6 marks'."
+  "stem": "Give brief answers to any eight of the following:"
  },
  {
   "id": "eng-2025-ol-q1-e",
@@ -14607,7 +14810,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Less material waste is produced as 3D printing is an additive  manufacturing process.",
+    "verbatim": "Less material waste is produced as 3D printing is an additive manufacturing process.",
     "marks": null
    },
    {
@@ -14669,7 +14872,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "To give engineers and designers the ability to explore new design  alternatives and to test if the product functions as required.",
+    "verbatim": "To give engineers and designers the ability to explore new design alternatives and to test if the product functions as required.",
     "marks": 6
    }
   ],
@@ -14693,25 +14896,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Define malleability in relation to the properties of materials and name one material which is malleable.",
+    "verbatim": "Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Malleability is the ability of a material to be hammered / flattened out in  all directions without breaking.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "Lead is a malleable metal.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Deburring removes sharp edges and  burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.",
     "marks": null
    }
   ],
@@ -14719,15 +14910,39 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2025-ol-q1-j",
+  "id": "eng-2025-ol-q1-i",
   "topicId": "eng-2-11",
-  "conceptId": "any-following-bandsaw-3d-printer-deburring",
+  "conceptId": "reason-why-metal-edges-deburred",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(i)",
+  "questionText": "Give one reason why metal edges are deburred.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Deburring removes sharp edges and burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2025-ol-q1-j",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-artificial-intelligence-ai-renewable",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 OL Q1(j)",
-  "questionText": "Explain any one of the following: bandsaw 3D printer deburring (i) Artificial intelligence (AI), (ii) Renewable energy, (iii) Virtual reality (VR).",
+  "questionText": "Explain any one of the following: (i) Artificial intelligence (AI), (ii) Renewable energy, (iii) Virtual reality (VR).",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -14805,57 +15020,143 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2025-ol-q2-b-i",
+  "id": "eng-2025-ol-q1-l",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-internal-thread-blind-hole",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(l)",
+  "questionText": "Describe any one of the following: (i) Internal thread, (ii) Blind hole, (iii) Countersunk hole.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An internal thread refers to the threads or grooves that are cut into the inside surface of a hole, allowing it to accept a corresponding external thread from a screw or bolt. Internal threads are commonly found in components such as nuts and holes designed to receive screws. The purpose of internal threading is to create a secure connection by allowing the external threaded component to screw into it, providing mechanical fastening and stability in various applications.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "External thread",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A blind hole refers to a hole that is reamed, drilled, or milled to a specified depth without breaking through to the other side of the workpiece.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "A countersunk hole is a conical‐shaped hole that is drilled to allow the head of a countersunk machine screw to sit flush with or below the surface of the material. The countersink is wider at the top, allowing the screw head to fit into it, providing a smooth surface finish and reducing the risk of snagging or catching.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Countersunk machine screw Countersunk hole",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2025-ol-q2-b",
   "topicId": "eng-1-4",
   "conceptId": "materials-used-charge",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2025 OL Q2(b)(i)",
-  "questionText": "List the materials used in the charge;",
+  "questionRef": "2025 OL Q2(b)",
+  "questionText": "Select one of the furnaces labelled at Q2(a) above and answer each of the following: (i) List the materials used in the charge; (ii) Describe how the charge is heated; (iii) Name the metal produced.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
-  "totalMarks": 9,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
+    "verbatim": "Furnace A – Blast furnace",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
     "verbatim": "Iron ore Coke Limestone",
-    "marks": 9,
-    "accepts": [
-     "Materials used: ‐ Scrap iron / steel Carbon Limestone",
-     "Materials used: ‐ Pig iron / scrap Carbon Limestone"
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Three parts @ 3 marks'."
- },
- {
-  "id": "eng-2025-ol-q2-c-i",
-  "topicId": "eng-3-14",
-  "conceptId": "suitable-material-each-parts-labelled-mini",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q2(c)(i)",
-  "questionText": "Name a suitable material for each of the parts labelled on the mini excavator.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
+    "marks": null
+   },
    {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Material: Vinyl",
-    "marks": 4
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Materials used: ‐ Scrap iron / steel Carbon Limestone",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Materials used: ‐ Pig iron / scrap Carbon Limestone",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The coke is burned to produce heat.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Heating the charge: ‐ Heat for the furnace is produced by an electric arc created between carbon electrodes and the charge.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Heating the charge: ‐ Heat for the furnace is produced by blowing oxygen through a lance onto the molten metal.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Pig iron.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Furnace B – Electrical Arc furnace: ‐",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Metal produced: ‐ Steel.",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "Furnace C – Basic Oxygen furnace: ‐",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "Metal produced: ‐ Steel.",
+    "marks": null
    }
   ],
-  "notes": "The scheme prints 'One part @ 4 marks'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q2ci-art"
+  "notes": "The scheme prints 'One part @ 12 marks (12)'."
  },
  {
   "id": "eng-2025-ol-q2-c-ii",
@@ -14897,6 +15198,36 @@
   "questionRef": "2025 OL Q3(a)",
   "questionText": "Explain the reason why each of the following heat treatment processes are carried out: (i) Normalising, (ii) Hardening.",
   "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
+ },
+ {
+  "id": "eng-2025-ol-q3-b",
+  "topicId": "eng-2-6",
+  "conceptId": "blade-concrete-saw-shown-annealed-tempered",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(b)",
+  "questionText": "The blade of the concrete saw shown is annealed, tempered and quenched as part of the manufacturing process. Describe any two of the following processes: (i) Annealing, (ii) Tempering, (iii) Quenching.",
+  "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 14,
@@ -14904,14 +15235,16 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.",
+    "verbatim": "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
     "marks": 14,
     "accepts": [
-     "When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use."
+     "Tempering is where a metal is heated to a suitable temperature, which is below the reddening temperature and then cooled in oil or water.",
+     "Quenching is when a metal is plunged into a cooling liquid such as water.",
+     "Quenching cools the metal as fast as possible and ensures that any structural changes which have taken place during heating are not allowed to revert."
     ]
    }
   ],
-  "notes": "The scheme prints 'Any two parts @ 7 marks'."
+  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
  },
  {
   "id": "eng-2025-ol-q3-c",
@@ -14934,11 +15267,39 @@
     "verbatim": "PPE 1 – Wear heat resistant gloves to protect the hands.",
     "marks": 10,
     "accepts": [
-     "PPE 2 – Wear a face shield to protect the face from high  temperatures."
+     "PPE 2 – Wear a face shield to protect the face from high temperatures."
     ]
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
+ },
+ {
+  "id": "eng-2025-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "any-following-metal-properties-toughness-melting",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(d)",
+  "questionText": "Explain any two of the following metal properties: (i) Toughness, (ii) Melting point, (iii) Brittleness.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
+    "marks": 12,
+    "accepts": [
+     "Melting point is the temperature at which a metal changes its state from solid to liquid.",
+     "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 6 marks (12)'."
  },
  {
   "id": "eng-2025-ol-q4-b",
@@ -14967,7 +15328,7 @@
     ]
    }
   ],
-  "notes": "The scheme prints 'Any three parts @ 5 marks'."
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
  },
  {
   "id": "eng-2025-ol-q4-c-i",
@@ -14982,7 +15343,7 @@
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 8,
+  "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
@@ -14997,7 +15358,7 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints '8 marks'.",
+  "notes": "The scheme prints '5 marks'.",
   "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
  },
  {
@@ -15013,13 +15374,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 8,
+  "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Pop riveting / Machine screws.",
-    "marks": 8
+    "marks": 5
    }
   ],
   "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
@@ -15037,7 +15398,7 @@
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 8,
+  "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
@@ -15052,7 +15413,7 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints '8 marks'.",
+  "notes": "The scheme prints '5 marks'.",
   "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
  },
  {
@@ -15066,18 +15427,52 @@
   "questionRef": "2025 OL Q4(c)(iv)",
   "questionText": "Name tool A shown opposite and give one use for this tool.",
   "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Allen key",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '5 marks'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
+ },
+ {
+  "id": "eng-2025-ol-q4-d",
+  "topicId": "eng-2-10",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q4(d)",
+  "questionText": "State two safety precautions to be observed when using oxy‐acetylene welding equipment.",
+  "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Name: Allen key  Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.",
-    "marks": 8
+    "kind": "alt",
+    "verbatim": "The gas hoses should be checked for damage before starting the welding process.",
+    "marks": 8,
+    "accepts": [
+     "The correct PPE is worn while welding, such as dark welding goggles."
+    ]
    }
   ],
-  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art"
+  "notes": "The scheme prints 'One part @ 8 marks (8)'."
  },
  {
   "id": "eng-2025-ol-q5-a-i",
@@ -15102,11 +15497,12 @@
     "accepts": [
      "Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.",
      "Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.",
-     "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."
+     "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away.",
+     "Plastic sheet Heat Final shape Mould Vacuum"
     ]
    }
   ],
-  "notes": "The scheme prints 'Three parts @ 3 marks'.",
+  "notes": "The scheme prints 'Three parts @ 3 marks (9)'.",
   "questionFigureKey": "engineering-2025-OL-paper-q5ai-art"
  },
  {
@@ -15133,6 +15529,33 @@
      "Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"",
      "Thermoplastic is a plastic which softens when heated.",
      "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
+ },
+ {
+  "id": "eng-2025-ol-q5-c",
+  "topicId": "eng-1-9",
+  "conceptId": "safety-precautions-be-observed-when-3d",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q5(c)",
+  "questionText": "State two safety precautions to be observed when 3D printing plastic components.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "3D printing may result in the release of ultrafine particles, (UFPs) and volatile organic components (VOCs), it is important to use a ventilation system which contains an air filter.",
+    "marks": 10,
+    "accepts": [
+     "3D printers generate high temperatures and have hot moving parts that can cause injury. Never reach inside a 3D printer while it is in operation. Always allow 3D printers to cool down for at least 5 minutes before reaching inside."
     ]
    }
   ],
@@ -15195,7 +15618,7 @@
     ]
    }
   ],
-  "notes": "The scheme prints 'Any three parts @ 5 marks'."
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
  },
  {
   "id": "eng-2025-ol-q6-c-i",
@@ -15206,7 +15629,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 OL Q6(c)(i)",
-  "questionText": "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
+  "questionText": "Name any two centre lathe processes used to manufacture the stunt bike pegs.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -15215,70 +15638,38 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Knurling  Drilling",
+    "verbatim": "Knurling",
     "marks": 6,
     "accepts": [
-     "CAD software enables developers to work more quickly, cut production costs and decrease errors."
+     "Drilling"
     ]
    }
   ],
-  "stem": "stunt bike pegs",
-  "notes": "The scheme prints 'Any two @ 3 marks'."
+  "notes": "The scheme prints 'Any two @ 3 marks (6)'."
  },
  {
-  "id": "eng-2025-ol-q6-c-ii",
-  "topicId": "eng-2-13",
-  "conceptId": "any-processes-named-you-q6-c",
+  "id": "eng-2025-ol-q7-a-i",
+  "topicId": "eng-3-12",
+  "conceptId": "type-fit-required-allows-axle-rotate",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2025 OL Q6(c)(ii)",
-  "questionText": "Describe any one of the processes named by you, at Q6(c)(i) above. OR Name one CNC machine commonly used in the engineering workshop.",
+  "questionRef": "2025 OL Q7(a)(i)",
+  "questionText": "Name the type of fit required, which allows the axle to rotate inside the axle bracket on the Model Off‐Road Sand Car shown.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Computer numerically controlled (CNC) lathes are commonly used in the engineering workshop.",
-    "marks": 6
+    "verbatim": "Clearance fit.",
+    "marks": 4
    }
   ],
-  "stem": "stunt bike pegs",
-  "notes": "The scheme prints 'One part @ 6 marks'."
- },
- {
-  "id": "eng-2025-ol-q6-c-iii",
-  "topicId": "eng-2-11",
-  "conceptId": "specify-any-items-personal-protective-equipment",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q6(c)(iii)",
-  "questionText": "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "A knurling tool is fitted to the tool post and set at 90° to work. The centre lathe is then turned on at a very slow speed. The knurling tool is moved into the workpiece. Two opposing rollers which press into the piece are moved parallel to the axis of the work producing a diamond pattern on the surface of the material. A lubricant should be used on the workpiece and rollers to help reduce friction.",
-    "marks": 8,
-    "accepts": [
-     "Wear goggles.",
-     "Protective clothing i.e. gloves",
-     "High precision and capable of producing highly complex parts."
-    ]
-   }
-  ],
-  "stem": "stunt bike pegs",
-  "notes": "The scheme prints 'Any two @ 4 mark'."
+  "notes": "The scheme prints 'One @ 4 marks'."
  },
  {
   "id": "eng-2025-ol-q7-c-i",
@@ -15298,17 +15689,14 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Used for accurately measuring the diameter of round bars or internal diameters of holes.",
+    "verbatim": "Ensures the correct assembly of components as all component positions are identified on the PCB.",
     "marks": 6,
     "accepts": [
-     "Measurements can be read directly from a digital display.",
-     "PCB Ensures the correct assembly of components as all component  positions are identified on the PCB.",
-     "Quicker to assemble and ensures better circuit operation when  complete."
+     "Quicker to assemble and ensures better circuit operation when complete."
     ]
    }
   ],
-  "stem": "microchip",
-  "notes": "The scheme prints 'One part @ 6 marks'."
+  "notes": "The scheme prints 'One part @ 6 marks (6)'."
  },
  {
   "id": "eng-2025-ol-q7-c-ii",
@@ -15328,15 +15716,14 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Used to check the diameter of twist drills.",
+    "verbatim": "Smart phones",
     "marks": 6,
     "accepts": [
-     "Use Smart phones  Computers"
+     "Computers"
     ]
    }
   ],
-  "stem": "microchip",
-  "notes": "The scheme prints 'Any two @ 3 marks'."
+  "notes": "The scheme prints 'Any two @ 3 marks (6)'."
  },
  {
   "id": "eng-2025-ol-q7-c-iii",
@@ -15363,7 +15750,6 @@
     ]
    }
   ],
-  "stem": "microchip",
-  "notes": "The scheme prints 'One part @ 6 marks'."
+  "notes": "The scheme prints 'One part @ 6 marks (6)'."
  }
 ]

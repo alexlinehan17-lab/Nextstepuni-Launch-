@@ -186,6 +186,12 @@ TRAILING_FURNITURE = re.compile(
 # question text on every Biology, Chemistry and Physics card already shipped.
 # A subject joins this list when its deck has been regenerated and diffed.
 QUESTION_CLEANING = ('engineering',)
+# What is left of a question head once the head itself has been taken off it.
+# Engineering prints "Question 1. (50 marks)" and the reader strips "Question
+# 1", so every one of the sixty-odd Question 1 cards carried a stem opening
+# ". (50 marks) Give brief answers to any ten of the following:". The tariff
+# is the paper's, not the stimulus's, and the shipped deck has never shown it.
+HEAD_TAIL = re.compile(r'^[.\s]*\(\s*\d{1,3}\s*marks?\s*\)\s*', re.I)
 
 
 def _without_furniture(text):
@@ -242,7 +248,13 @@ class Author:
             # Engineering's scheme is read off the page by eng_scheme, and the
             # adapter above puts it behind the interface Author expects.
             from eng_scheme import EngScheme
-            self.scheme_table = _EngSource(EngScheme(year, level), self.scheme)
+            eng = EngScheme(year, level)
+            # Where the paper prints two questions at one address, the scheme
+            # answers both under that key. The paper found them; the scheme has
+            # to be told, or card() rebuilds a longer candidate list than the
+            # caller selected into and `use` indexes the wrong points.
+            eng.alternatives = set(self.paper.alternatives)
+            self.scheme_table = _EngSource(eng, self.scheme)
         self.cards = []
 
     def _source(self, source):
@@ -301,8 +313,35 @@ class Author:
         # needs its children, and the widened key takes lettered parts as well
         # as romans. Both are Engineering's; every other subject keeps the
         # narrow rule it was authored against.
+        # A COLON says so outright. "Discuss the contribution that any one of
+        # the following has made to technology:" is seventy-seven characters
+        # long, so the length test alone left it standing on its own, and the
+        # card asked the student to discuss the contribution of nothing at
+        # all -- Faraday, Vernier and Beaufort are printed on the line below
+        # it, as the paper's parts (i), (ii) and (iii). Nine such cues across
+        # 2025 alone. Engineering only, like the rest of this branch.
+        cue = clean and ' '.join((question or '').split()).endswith(':')
+        # The instruction can sit BELOW the context sentence as its own block,
+        # and the reader files it as the part's STEM: 2025 Ordinary Q3(b)
+        # states "The blade of the concrete saw shown is annealed, tempered
+        # and quenched as part of the manufacturing process." and then, under
+        # it, "Describe any two of the following processes:" with (i), (ii)
+        # and (iii) beneath that. The part's own text closes like a sentence,
+        # so the colon rule above does not fire, and the card asked the
+        # student nothing at all. The paper's order is context, instruction,
+        # list, and that is the order it is put back in.
+        cue_stem = None
+        if clean and letter and roman is None and not cue:
+            below = ' '.join((self.paper.stem(q, letter) or '').split())
+            if below.endswith(':') and any(
+                    k[0] == q and k[1] == letter and k[2]
+                    for k in self.paper.parts):
+                cue_stem = below
+                question = f'{(question or "").rstrip()} {below}'.strip()
+                cue = True
         joined_kids = False
-        if roman is None and len(' '.join((question or '').split())) < 40:
+        if roman is None and (cue
+                              or len(' '.join((question or '').split())) < 40):
             if clean:
                 kids = [k for k in self.paper.parts
                         if k[0] == q
@@ -560,7 +599,16 @@ class Author:
             'rows': rows,
         }
         if stem:
-            text = self.paper.stem(q, letter) or self.paper.stem(q)
+            # The letter's stem, once it has been read into the ask, is not
+            # also the card's stimulus.
+            text = (self.paper.stem(q) if cue_stem
+                    else self.paper.stem(q, letter) or self.paper.stem(q))
+            if clean and text:
+                # A stem that is ONLY the head's tail is not a stimulus at
+                # all: 2025 Ordinary Q2's stem is ". (50 marks)" and nothing
+                # else, and falling back to the original put it back on the
+                # card.
+                text = HEAD_TAIL.sub('', text).strip()
             if text:
                 card['stem'] = text
         if notes:
