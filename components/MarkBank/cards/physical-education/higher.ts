@@ -57,19 +57,6 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
-    id: "pe-2020-hl-q10", topicId: "physical-education-1-18", conceptId: "pe-1-18-analyse-impact-media-coverage",
-    section: "A", questionRef: "2020 HL Q10",
-    questionText: "Analyse the impact media coverage has on spectator behaviour.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "1-3 their impact", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
     id: "pe-2020-hl-q11ai", topicId: "physical-education-0-10", conceptId: "pe-0-10-principle-training-tennis-player",
     section: "B", questionRef: "2020 HL Q11(a)(i)",
     questionText: "Identify and outline the principle of training the tennis player displayed from week 6 to week 10 as shown in Figure 5. would impact on the skill level of an athlete preparing for a competition.",
@@ -323,7 +310,7 @@ export const CARDS: SecCard[] = [
     questionText: "Heptathletes must be able to cope with special tactical demands. Heptathletes receive points for each event, according to a scoring table. Therefore, the results of the events and not the placing are the most important thing. Like all combined event athletes they must be able to achieve maximum performance: • in the sprints and hurdles without the benefit of qualifying runs • in the long jump and throws with a limited number of attempts • in a fixed sequence of events over a two day period • even as they become fatigued. Suggest strategies a heptathlete could implement to address the demands outlined above.",
     tariffModel: {"kind":"fixed","notation":"3 + 3 + 2 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Relevant strategies suggested 3+3+2+2", marks: 10, contextNote: "The scheme pays 3 then 3 then 2 then 2 marks, in the order the answers are credited.", openList: true, group: {"claimMax":4,"perOption":3,"options":["include – optimal warm up prior to an event and between events (in order to achieve a good performance at the first attempt), correct choice of starting height in the high jump, correct choice of tempo in the 800 metres","Well equipped for the competition – clothing, spikes","Developed psychological skills – heptathletes who are confident tend to be successful in combined events","Rational nutrition plan (food and drink) – based on the sequence of events","Understand how scoring tables work"],"perOptionSteps":[3,3,2,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "Relevant strategies suggested 3+3+2+2", marks: 10, contextNote: "The scheme pays 3 then 3 then 2 then 2 marks, in the order the answers are credited.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Developed psychological skills – heptathletes who are confident tend to be successful in combined events","Rational nutrition plan (food and drink) – based on the sequence of events","Understand how scoring tables work","Well equipped for the competition – clothing, spikes"],"perOptionSteps":[3,3,2,2]} },
     ],
   } as SecCard,
   {
@@ -405,9 +392,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2020-hl-q8a", topicId: "physical-education-1-9", conceptId: "pe-1-9-irish-anti-doping-rule",
     section: "A", questionRef: "2020 HL Q8(a)",
     questionText: "Identify two Irish anti-doping rule violations.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":11,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":10,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some","the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
     ],
   } as SecCard,
   {
@@ -949,8 +936,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the difference between state anxiety and trait anxiety?",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "State anxiety is an immediate emotional state that is characterised by apprehension", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "fear", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "State anxiety is an immediate emotional state that is characterised by apprehension, fear, tension and an increase in physiological arousal in response to a specific situation or demand in a game or event. It is a temporary emotional state", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1003,8 +989,7 @@ export const CARDS: SecCard[] = [
     questionText: "Natalya’s continued success in modern pentathlon has been helped by the sponsorship deals and scholarships that she has been rewarded with throughout her career. However, sponsorship deals often come at a cost for athletes. Outline three possible disadvantages of sponsorship for Natalya.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Time commitments", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Public image. The possibility of the sponsor exploiting the athlete", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Time commitments, Public image. The possibility of the sponsor exploiting the athlete", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1086,8 +1071,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the psychological factor anxiety.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Anxiety is a state of nervousness or worry towards a threat. It can present as physical", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "mental or behavioural forms", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Anxiety is a state of nervousness or worry towards a threat. It can present as physical, mental or behavioural forms", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1180,12 +1164,12 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
-    id: "pe-2022-hl-q17c", topicId: "physical-education-0-2", conceptId: "pe-0-2-appropriate-method-analysing-aspects",
-    section: "C", questionRef: "2022 HL Q17(c)",
-    questionText: "Outline an appropriate method of analysing each of the following four aspects of performance: Choreography; Psychological preparedness; Skill and Technique; Structures and Strategies. You are not permitted to use the same method of analysis for more than one aspect of performance.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 1 marks","answer":4,"ofParts":4,"perPart":1}, totalMarks: 4,
+    id: "pe-2022-hl-q17di", topicId: "physical-education-1-25", conceptId: "pe-1-25-national-governing-body",
+    section: "C", questionRef: "2022 HL Q17(d)(i)",
+    questionText: "Name the National Governing Body (NGB) for a named physical activity of your choice.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outlines an appropriate method of analysing each of the four aspects of performance", marks: 4, contextNote: "4 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Choreography","Psychological preparedness","Skill and Technique","Structures and Strategies. Each method of analysis only accepted once"]} },
+    { id: "r-1", kind: "point", verbatim: "Gaelic Athletic Association (GAA)", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1193,12 +1177,17 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
-    id: "pe-2022-hl-q17di", topicId: "physical-education-1-25", conceptId: "pe-1-25-national-governing-body",
-    section: "C", questionRef: "2022 HL Q17(d)(i)",
-    questionText: "Name the National Governing Body (NGB) for a named physical activity of your choice.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    id: "pe-2022-hl-q17dii", topicId: "physical-education-1-0", conceptId: "pe-1-0-examine-provides-support-local",
+    section: "C", questionRef: "2022 HL Q17(d)(ii)",
+    stem: "Q17(d)(i): Name the National Governing Body (NGB) for a named physical activity of your choice.",
+    questionText: "Examine how the NGB, named by you in (i), provides support for local participation in the physical activity.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Gaelic Athletic Association (GAA)", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Organise and administer the sport in Ireland", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Train coaches for clubs, Provides facilities and equipment to local communities", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "provides local sports engagement opportunities", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "develop pathways to excellence", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Local initiatives", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1315,33 +1304,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Correct plane of movement named", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["The sagittal plane","The frontal plane","The transverse plane"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
-    id: "pe-2023-hl-q1b", topicId: "physical-education-0-2", conceptId: "pe-0-2-planes-human-movement-correctly",
-    section: "A", questionRef: "2023 HL Q1(b)",
-    stem: "Q1(a): Name any two planes of human movement.",
-    questionText: "Describe the two planes of human movement, correctly named in (a). Use a sporting example of movement in each plane to support your answer.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "given to support the description", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
-    id: "pe-2023-hl-q11", topicId: "physical-education-1-2", conceptId: "pe-1-2-having-conducted-survey-patterns",
-    section: "A", questionRef: "2023 HL Q11",
-    questionText: "Having conducted a survey on the physical activity patterns and behaviours of boys and girls in a school, the PE teacher discovered that the boys in the school were far more active than the girls. Discuss two ways in which a school could tackle a gender imbalance in physical activity participation levels.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "to how this measure can tackle a gender imbalance in physical activity participation levels of boys and girls", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1525,9 +1487,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2024-hl-q13aii", topicId: "physical-education-0-2", conceptId: "pe-0-2-sport-related-scalar-quantities",
     section: "B", questionRef: "2024 HL Q13(a)(ii)",
     questionText: "Identify two sport related scalar quantities mentioned in the case study.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "seconds", marks: null, openList: true },
+    { id: "r-1", kind: "anyN", verbatim: "Correctly identified scalar quantity from the case study", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["400m","49.20 seconds","50.13 seconds"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1539,19 +1501,6 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Physical Education 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
-    id: "pe-2024-hl-q13b", topicId: "physical-education-0-16", conceptId: "pe-0-16-examine-approaches-safe-practice",
-    section: "B", questionRef: "2024 HL Q13(b)",
-    questionText: "Examine two approaches to safe practice that organisers of an event, such as the Olympic Games, may implement.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5 marks","answer":2,"ofParts":2,"perPart":5}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "4-5 organisation", marks: 10, contextNote: "2 answers at 5 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":5,"options":["4-5 organisation","2-3 practice approaches to event organisation"]} },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1666,7 +1615,7 @@ export const CARDS: SecCard[] = [
     questionText: "Make two statements about doping in cycling over recent years based on information presented in Figure 12.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Example of accurate statements include", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -2024,29 +1973,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q13ci", topicId: "physical-education-0-3", conceptId: "pe-0-3-based-description-javelin-case",
-    section: "B", questionRef: "2025 HL Q13(c)(i)",
-    questionText: "Based on the description of javelin in the case study, name a skill practice method that is appropriate for developing the skill of a javelin thrower. to improve the skill of a javelin thrower.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "to improve the skill of the javelin thrower", marks: null, openList: true },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                18
-          ],
-          "attribution": "SEC Physical Education 2025 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
     id: "pe-2025-hl-q13ciii", topicId: "physical-education-0-2", conceptId: "pe-0-2-hammer-throwers-mainly-move",
     section: "B", questionRef: "2025 HL Q13(c)(iii)",
     questionText: "Hammer throwers mainly move in which plane of movement?",
@@ -2086,32 +2012,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q17d", topicId: "physical-education-1-15", conceptId: "pe-1-15-examine-ways-participants-adapted",
-    section: "C", questionRef: "2025 HL Q17(d)",
-    questionText: "Examine ways in which participants in adapted physical activities can be provided with opportunities to achieve excellence.",
-    tariffModel: {"kind":"fixed","notation":"12 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "adapted physical activity provided +", marks: 12, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q18aii", topicId: "physical-education-1-6", conceptId: "pe-1-6-examples-gamesmanship",
-    section: "C", questionRef: "2025 HL Q18(a)(ii)",
-    questionText: "Give two examples of gamesmanship.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "gamesmanship in physical activity or sport", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
     id: "pe-2025-hl-q6b", topicId: "physical-education-0-0", conceptId: "pe-0-0-would-principles-outlined-question",
     section: "A", questionRef: "2025 HL Q6(b)",
     stem: "Q6(a): Outline two principles of effective practice.",
@@ -2129,22 +2029,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2026-hl-q5b", topicId: "physical-education-1-8", conceptId: "pe-1-8-current-irish-anti-doping",
     section: "A", questionRef: "2026 HL Q5(b)",
     questionText: "Identify two current Irish anti‐doping rules.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":12,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":11,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identifies correct current Irish anti-doping rules. (x2)", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Rules include","1. Presence of a Prohibited Substance in an Athlete’s Sample is prohibited","2. Use or Attempted Use by an Athlete of a Prohibited Substance or a Prohibited Method is prohibited","3. Refusing/evading or failing to do a drug test after notification is prohibited","4. Committing Three Whereabouts Failures (Filing Failures or Missed Tests) in 12 months is prohibited","5. Tampering is prohibited","6. Possession of Prohibited Substances and/or Prohibited Methods is prohibited","7. Trafficking in any Prohibited Substance or Prohibited Method is prohibited","8. Administering to an athlete a prohibited method or substance, assisting, encouraging, aiding, abetting, covering up is prohibited","9. Complicity or attempted complicity – involvement in a rule violation committed by another person such as helping to cover up the violation or avoid detection is prohibited and is sanctioned in the same way as the violation","10. Prohibited association – associating with a person such as a coach, doctor or physic who has been found guilty of a violation or equivalent offence to a doping violation is prohibited and will be sanctioned with a ban of up to 2 years","11. Protection of whistleblowers – it is prohibited to threaten another person or to discourage that person from reporting to the authorities or information relating to a rule violation, non- compliance with the code or other antidoping activity, or to retaliate against another person for doing so"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Higher Level — © State Examinations Commission.",
-    id: "pe-2026-hl-q8b", topicId: "physical-education-0-16", conceptId: "pe-0-16-phases-warm",
-    section: "A", questionRef: "2026 HL Q8(b)",
-    questionText: "Outline the phases of a warm‐up.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Suitable phased warm up mentioned", marks: null, openList: true },
+    { id: "r-1", kind: "anyN", verbatim: "Rules include", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1. Presence of a Prohibited Substance in an Athlete’s Sample is prohibited","2. Use or Attempted Use by an Athlete of a Prohibited Substance or a Prohibited Method is prohibited","3. Refusing/evading or failing to do a drug test after notification is prohibited","4. Committing Three Whereabouts Failures (Filing Failures or Missed Tests) in 12 months is prohibited","5. Tampering is prohibited","6. Possession of Prohibited Substances and/or Prohibited Methods is prohibited","7. Trafficking in any Prohibited Substance or Prohibited Method is prohibited","8. Administering to an athlete a prohibited method or substance, assisting, encouraging, aiding, abetting, covering up is prohibited","9. Complicity or attempted complicity – involvement in a rule violation committed by another person such as helping to cover up the violation or avoid detection is prohibited and is sanctioned in the same way as the violation","10. Prohibited association – associating with a person such as a coach, doctor or physic who has been found guilty of a violation or equivalent offence to a doping violation is prohibited and will be sanctioned with a ban of up to 2 years","11. Protection of whistleblowers – it is prohibited to threaten another person or to discourage that person from reporting to the authorities or information relating to a rule violation, non- compliance with the code or other antidoping activity, or to retaliate against another person for doing so"]} },
     ],
   } as SecCard,
 ];

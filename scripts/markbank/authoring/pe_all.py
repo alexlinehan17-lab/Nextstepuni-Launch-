@@ -41,11 +41,34 @@ exclusions with the scheme's own lines as evidence, not gaps.  What is a gap
 is an ask whose scheme prints a good answer this reader cannot reach; every
 one of those is reported OPEN and none is laundered into an exclusion.
 
+WHAT AN AUDIT OF THIS FILE FOUND.  A second pass over the exclusions and the
+shipped cards, reading the schemes rather than this reader, moved twelve asks
+and recovered one:
+
+    THREE EXCLUSIONS WERE FALSE — each claimed the scheme states no answer
+    where it plainly states one.  2022 Higher Q17(d)(ii) prints six, headed
+    "E.g.s: may include:", a doubled lead-in LEAD_IN_INLINE did not read.
+    2021 Ordinary Q3(c) is answered by a TICK that is in the flat text —
+    inside the part's cue, which the tick test did not look at.  2026
+    Ordinary Q14(c)(i) is answered by "1 mark" in the Above average column
+    beside Coordination, and its ask says so ("by ticking the correct box").
+
+    TWELVE CARDS STATED SOMETHING THE SEC DID NOT.  Each had one marking
+    point, and each was a piece of the band ladder rather than an answer:
+    the tail of a wrapped criterion ("given to support the description"),
+    the marks cell glued to the front of one ("1-3 their impact"), a rung of
+    the ladder itself ("Suitable phased warm up mentioned"), two rows spliced
+    together ("may be used Appropriate description provided"), the question's
+    own words, or a neighbouring part's text collected through a wrapped
+    cross-reference.  They are listed with their evidence in
+    authoring/withdrawn/physical-education.json, and the rules that let them
+    through carry the case that found them.
+
 WHERE THIS STANDS, measured against the census's 741 leaf asks over thirteen
 papers:
 
-    236  covered by 232 cards
-    469  excluded, each carrying the scheme's own printed lines
+    225  covered by 221 cards
+    480  excluded, each carrying the scheme's own printed lines
      36  OPEN, in the buckets `--report` prints, every one of them an ask
          whose SCHEME states an answer this reader cannot lift:
 
@@ -152,7 +175,13 @@ TABLE_TASK = re.compile(
 TABLE_TASK_INLINE = re.compile(
     r'\bby matching the\b|\bmatch(?:ing)? (?:the|each)\b[^.]{0,60}\b(?:to|with) the\b'
     r'|\bchoose from above\b|\busing the (?:methods|words|terms) provided\b'
-    r'|\b(?:by )?(?:putting|placing|inserting) a tick\b', re.I)
+    # ...and the same instruction written as a verb: "Indicate your answer by
+    # ticking (✓) the correct box in the table below" (2026 Ordinary
+    # Q14(c)(i)), whose scheme answers it by putting "1 mark" in the Above
+    # average column beside Coordination. The rubric's own "(✓)" is not a
+    # tick SCHEME_TICK will read, so without this the ask was excluded as
+    # stating no answer when the scheme states one in a cell.
+    r'|\b(?:by )?(?:putting|placing|inserting) a tick\b|\bby ticking\b', re.I)
 # A card must not cite an ask whose subject lives in a neighbouring part —
 # "one of the measures named by you in question 13" answers nothing alone.
 BACK_REFERENCE = re.compile(
@@ -183,6 +212,13 @@ TARIFF_RESIDUE = re.compile(r'\b\d{1,2}\s*(?:m|marks?)\b|\d\s*[x×@]\s*\d', re.I
 # the examiner's criterion cut off at its own first word: "3+3+2 opponent that
 # could improve her defence and help her win the ball back".
 LEADING_TARIFF = re.compile(
+    # A BAND of marks on the front of the line is the same fault: the SEC sets
+    # its grid with the marks column between the wrapped halves of a
+    # descriptor, so "There may be little or no analysis between different
+    # relevant factors and / 1-3 / their impact" hands back the row
+    # "1-3 their impact".  That was the whole of the 2020 Higher Q10 card, on
+    # a part whose every printed line is a band.
+    r'^\d{1,2}\s*[-–]\s*\d{1,2}\b\s*(?=\S)|'
     r'^\d{1,2}\s*(?:[x×+]\s*\d{1,2}\s*)+'
     # ...and the bare word the marks column leaves behind when it wrapped:
     # "marks outdoor and adventure activities" is the tail of a cell, not an
@@ -194,6 +230,10 @@ LEADING_TARIFF = re.compile(
 # stray. Taken off each item, never from the middle, and the item is still
 # checked against the scheme afterwards.
 GLUED_MARK_WORD = re.compile(r'^marks?\s+|\s+marks?$', re.I)
+# A full stop with a capital behind it, INSIDE one piece of a comma split. It
+# says the line is prose rather than a list: the SEC's two-sentence definition
+# of state anxiety survives a comma split as clauses, not as answers.
+SENTENCE_BREAK = re.compile(r'[.!?]\s+[A-Z]')
 # The SEC closes most of its lists by saying the list is not closed. That tail
 # is not an answer — "Positivity, Excellent negotiation skills and other
 # relevant" is one answer and a disclaimer — and the card says the same thing
@@ -343,7 +383,16 @@ def options_for(part, year, level, qtext):
         # Six characters before this test means anything: "2%" reduces to "2",
         # which is inside almost every ask ever printed, and the SEC's answer
         # to "what percentage..." was thrown away as the question's own words.
-        if len(flat) >= 6 and ask and flat in ask:
+        # ...or where the option OPENS on the ask's own words and runs on into
+        # the examiner's note. 2022 Higher Q17(c) prints "Choreography,
+        # Psychological preparedness, Skill and Technique, Structures and
+        # Strategies. Each method of analysis only accepted once" — the four
+        # ASPECTS the question names, which is what the ask gives the
+        # candidate, plus a note. The whole string is not inside the ask, so
+        # the substring test passed it, and the split below then shipped the
+        # four aspects as the four answers to "name a method of analysing
+        # each of them".
+        if len(flat) >= 6 and ask and (flat in ask or flat[:40] in ask):
             restated.append(text)         # the ask's own words, not an answer
             continue
         if text not in out:
@@ -352,7 +401,17 @@ def options_for(part, year, level, qtext):
     # Finance" or "continuous training; weight training; plyometrics" — is that
     # list, not one answer. Split it only where the SEC's own separator is
     # there and every piece still traces to the scheme on its own.
-    if len(out) == 1 and re.search(r'[;,]', out[0]):
+    # ...and never where the line is PROSE rather than a list. The SEC's
+    # definition of state anxiety runs to two sentences and has commas in the
+    # first — "an immediate emotional state that is characterised by
+    # apprehension, fear, tension and an increase in physiological arousal in
+    # response to a specific situation or demand in a game or event. It is a
+    # temporary emotional state." — and splitting it kept the two pieces that
+    # fitted the window and dropped the rest, so the 2021 Higher Q9(a) card
+    # stated a truncated definition and the bare word "fear". A full stop with
+    # a capital behind it is the tell, and no list the SEC prints carries one.
+    if len(out) == 1 and re.search(r'[;,]', out[0]) \
+            and not SENTENCE_BREAK.search(out[0]):
         for sep in (r'\s*;\s*', r'\s*,\s*'):
             pieces = [tidy(GLUED_MARK_WORD.sub('', tidy(x))).strip(' .;,')
                       for x in re.split(sep, out[0])]
@@ -544,8 +603,15 @@ def build():
             # table of its own, which is the shape that prints a menu of them:
             # widened past that, one tick under a question blocked every part
             # of it, including four that print their own answers.
-            ticked = [t for t in part.rows + part.answers
-                      if SCHEME_TICK.search(t)]
+            # ...including the part's own CUE. 2021 Ordinary Q3 sets four
+            # multiple-choice questions side by side and the flat text layer
+            # welds (c) and (d) into one cue carrying both of their ticks —
+            # "keep heart rate low ✓ ... blood doping ✓" — with no rows under
+            # the part at all. Read only from rows and answers, (c) looked
+            # like a part that states nothing and was EXCLUDED on evidence
+            # that contained the tick answering it.
+            ticked = [t for t in part.rows + part.answers + [part.cue or '']
+                      if t and SCHEME_TICK.search(t)]
             if not ticked and part.cue and not part.rows and not part.answers:
                 ticked = [o.cue for o in siblings.get(part.address[:2], [])
                           if o.address[2] and o.cue and not o.rows

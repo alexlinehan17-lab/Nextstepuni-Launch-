@@ -1,5 +1,10 @@
 [
  {
+  "ref": "2020 HL Q10",
+  "reason": "the scheme prices this ask by band descriptor and states no answer — every line it prints under this part is the examiner judging an answer rather than stating one",
+  "evidence": "Knowledge is consistently accurate and well detailed / Analysis is coherently and consistently made between different relevant factors and their impact 10 -12 / Well argued, independent opinion/ judgements/conclusions which are well supported by relevant examples / Knowledge is usually accurate and detailed"
+ },
+ {
   "ref": "2020 HL Q11(a)(ii)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "4 marks + 2 / Relevant reasons suggested marks"
@@ -330,11 +335,6 @@
   "evidence": "Accurate explanation of how a coach can use this information to benefit the 4 marks + performer and to inform training plans for the performer in the future marks"
  },
  {
-  "ref": "2021 OL Q3(c)",
-  "reason": "the scheme prints this ask and its tariff and states no answer",
-  "evidence": "Beta blockers are taken to: d) Increasing one’s red blood cell mask pain count is commonly called: keep heart rate low ✓ blood injection increase muscle growth blood doping ✓ blood freezing"
- },
- {
   "ref": "2021 OL Q4",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Factor 1 named 2 marks / Explanation of how named factor can influence participation in physical activity 2 marks / Factor 2 named 2 marks / Explanation of how named factor can influence participation in physical activity 2 marks"
@@ -465,9 +465,9 @@
   "evidence": "6 marks Names another principle of training and outline its importance in the design of effective fitness training plans. / Accurate naming of principle – not mentioned in (i) 2 marks / Outline of the chosen principles importance in the design of effective fitness training plans. / Very good - Excellent outline- 4 marks"
  },
  {
-  "ref": "2022 HL Q17(d)(ii)",
-  "reason": "the scheme prices this ask by band descriptor and states no answer",
-  "evidence": "10 marks Examines how the NGB named in 15(d)(i), provides support for local participation in the physical activity. / Very good – Excellent examination- 8-10 / Good examination- 6-7 marks / Fair examination- 3-5 marks"
+  "ref": "2022 HL Q17(c)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer beyond the question's own wording",
+  "evidence": "Outlines an appropriate method of analysing each of the four aspects of performance: / Choreography, Psychological preparedness, Skill and Technique, Structures and Strategies. Each method of analysis only accepted once / Appropriate method of analysis named 4 x 1 marks / Brief distinguishing fact about method provided, must relate appropriately to the 4 x aspect of performance"
  },
  {
   "ref": "2022 HL Q18(a)(ii)",
@@ -481,8 +481,8 @@
  },
  {
   "ref": "2022 HL Q18(c)(ii)",
-  "reason": "the scheme prices this ask by band descriptor and states no answer — every line it prints under this part is the examiner judging an answer rather than stating one",
-  "evidence": "4 marks Discusses two social benefits of physical activity participation for adults. / Good discussion- 2marks / Fair – Poor discussion- 1 mark"
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "4 marks Discusses two social benefits of physical activity participation for adults. / Good discussion- 2marks / Fair – Poor discussion- 1 mark / Examples used must be social benefits"
  },
  {
   "ref": "2022 HL Q18(c)(iii)",
@@ -710,6 +710,11 @@
   "evidence": "2 x (3 + 1) marks = 4 marks / Correct health benefit associated with selected physical activity for older adults + 1 mark"
  },
  {
+  "ref": "2022 OL Q7(a)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "4 marks 8 marks / Good explanation, clear accurate description with awareness of cycles evident / Fair explanation, accurate descriptiion but lacks detail, no awarenes of / 2 marks cycles evident"
+ },
+ {
   "ref": "2022 OL Q7(b)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "4 marks / Good outline / Fair outline 2 marks"
@@ -740,9 +745,19 @@
   "evidence": "4 marks / Good explanation 4 marks / Fair explanation 2 marks."
  },
  {
+  "ref": "2023 HL Q1(b)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "Describe the two planes of human movement, correctly named in (a). 2x3marks=6 / Use a sporting example of movement in each plane to support your answer. / Clear and accurate description of the plane of movement provided. A correct sporting example is used to support the description. / Accurate description of the plane of movement with a correct sporting example given to support the description."
+ },
+ {
   "ref": "2023 HL Q10",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Describe how any two energy systems used by the human body may contribute to performance in a physical activity of your choice. / Excellent understanding of the energy system and how it provides energy for the performance in the named activity provided. / A detailed and accurate description provided demonstrating excellent knowledge of the contribution of the system to performance. / Good understa"
+ },
+ {
+  "ref": "2023 HL Q11",
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "Discuss two ways in which a school could tackle a gender imbalance in physical activity participation levels. / Correct way identified and discussed with clarity and accuracy. Clear information given on how this measure can tackle a gender imbalance in physical activity participation levels of boys and girls. / Correct way identified and discussed. Some information given as to how this measure can"
  },
  {
   "ref": "2023 HL Q12(a)",
@@ -975,6 +990,11 @@
   "evidence": "Name and describe a fitness test that can be used to measure this component of fitness. / Name of test correct for component named. 2 / Full description of the test named. Correct set up, measurements and procedure outlined. / Description provides at least 2 correct steps to carry out the fitness test included."
  },
  {
+  "ref": "2023 OL Q10",
+  "reason": "the scheme prices this ask by band descriptor and states no answer beyond the question's own wording",
+  "evidence": "Explain two of the following terms: 4 + 4 marks / Clear and accurate explanation given for each term. 4 marks / Attempt at explanation, lacking full clarity. 2 – 3 marks / Example provided but no explanation. 1 mark"
+ },
+ {
   "ref": "2023 OL Q11(a)",
   "reason": "the scheme prints this ask and its tariff and states no answer",
   "evidence": "Explain hegemonic masculinity. 4marks"
@@ -1188,6 +1208,11 @@
   "ref": "2024 HL Q11(c)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Describe appropriate attire and appropriate equipment needed by an official in a named physical activity of your choice. / Detailed and accurate description of appropriate attire or equipment needed by an official in the named physical activity of your choice. / Some level of detail and accuracy in the description of appropriate attire or equipment needed by an official in the named physical activ"
+ },
+ {
+  "ref": "2024 HL Q13(b)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer — every line it prints under this part is the examiner judging an answer rather than stating one",
+  "evidence": "Examine two approaches to safe practice that organisers of an event, such as the Olympic Games, may implement. / Detailed and accurate examination of the safe practice approaches to event / 4-5 organisation. / Mostly accurate examination with some level of detail examination of the safe"
  },
  {
   "ref": "2024 HL Q13(c)(i)",
@@ -1500,9 +1525,14 @@
   "evidence": "Discuss the personal and social benefits, mentioned in the case study, for children engaging in throwing activities. / Discussion on personal and social benefits, mentioned in the case study, for children engaging in throwing activities. / Detailed and accurate discussion of personal and social benefits. 5-6 / Some detail and accuracy in the discussion personal and social benefits. 3-4"
  },
  {
+  "ref": "2025 HL Q13(c)(i)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "Based on the description of javelin in the case study, name a skill practice method that is appropriate for developing the skill of a javelin thrower. / Appropriate method named 2 marks / Appropriate practice method. 2"
+ },
+ {
   "ref": "2025 HL Q13(c)(ii)",
-  "reason": "the scheme prints this ask and its tariff and states no answer",
-  "evidence": "Explain how you would apply the practice method named by you in Question"
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "Explain how you would apply the practice method named by you in Question to improve the skill of the javelin thrower. / Explanation on how the candidate would apply this practice method to improve the skill. / Somewhat accurate explanation on how the candidate would apply the named practice method to improve the skill of the javelin thrower. / Some detail and accuracy in the explanation on how the"
  },
  {
   "ref": "2025 HL Q13(d)(i)",
@@ -1620,9 +1650,19 @@
   "evidence": "Describe three supports to physical activity participation in schools. / Description on supports to physical activity participation in schools. 10 (4 + 3 + marks) / Detailed and accurate description on supports to physical activity participation in schools. / Some level of detail and accuracy on supports to physical activity participation in schools."
  },
  {
+  "ref": "2025 HL Q17(d)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "Examine ways in which participants in adapted physical activities can be provided with opportunities to achieve excellence. / Examines ways in which participants in adapted physical activities can be provided with opportunities to achieve excellence in a way that uncovers the assumptions and interrelationships of this issue. / Excellent detail in the examination of ways in which participants in ad"
+ },
+ {
   "ref": "2025 HL Q18(a)(i)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Define gamesmanship related to physical activity and sport. / Definition of gamesmanship 2 marks / Accurate definition provided 2 / Some accuracy in definition provided 1"
+ },
+ {
+  "ref": "2025 HL Q18(a)(ii)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer — every line it prints under this part is the examiner judging an answer rather than stating one",
+  "evidence": "Give two examples of gamesmanship. / Examples of gamesmanship in physical activity or sport 2 (2 x 1 mark) / Accurate example provided 1"
  },
  {
   "ref": "2025 HL Q18(a)(iii)",
@@ -2005,6 +2045,11 @@
   "evidence": "Define ability. / Clear accurate definition of ability as it applies to PE. 4 marks / Accurate definition provided. 1-2 marks"
  },
  {
+  "ref": "2026 HL Q14(b)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "Name and outline the stages of skill learning. / The stages of skill learning outlined and named. 9 marks / Stages of skill learning accurately named with each outlined clearly and accurately with appropriate examples. / Stages of skill learning accurately named with each accurately outlined. 5-7 marks"
+ },
+ {
   "ref": "2026 HL Q14(c)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Identify three principles of effective practice that can be used in designing skill practice sessions aimed at improving skill performance. Justify your choices. / The three principles of effective practice that can be used in designing skill 1 mark (x3) practice sessions aimed at improving skill performance identified and + 4 marks (x3) justified. / Identifies appropriate principle of effective p"
@@ -2095,6 +2140,11 @@
   "evidence": "Describe, using two examples, the role of the media in maintaining gender stereotypes of women in sport. / Description using two examples, of the role of the media in maintaining gender stereotypes of women in sport. / Clear and accurate description using two clear and appropriate examples of the role the media plays in maintaining gender stereotypes of women in sport. / Accurate description using"
  },
  {
+  "ref": "2026 HL Q18(d)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer beyond the question's own wording",
+  "evidence": "‘Media coverage has a positive impact on mass participation sports events. / Discuss this statement. / ‘Media coverage has a positive impact on mass participation sport’. 12 marks / Statement discussed."
+ },
+ {
   "ref": "2026 HL Q2(a)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Physical Education is a concept of physical activity. Explain Physical Education in this context. / Explains the concept of physical activity- physical education in the context of ‘a concept of physical activity’. / Clear and accurate explanation of the concept of physical activity- physical education. / Accurate explanation of physical education. 1-2 marks"
@@ -2133,6 +2183,11 @@
   "ref": "2026 HL Q8(a)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Identify two benefits of warming-up. / Appropriate benefits of warming-up appropriately identified. 2 marks (x2)"
+ },
+ {
+  "ref": "2026 HL Q8(b)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "Outline the main phases of a warm-up. / A suitable phased warm up appropriately outlined. 4 marks / Clear and accurate outline of a correctly phased warm up. 3-4 marks / Suitable phased warm up mentioned. 1-2 marks"
  },
  {
   "ref": "2026 HL Q9(a)",
@@ -2215,11 +2270,6 @@
   "evidence": "Outline how you could use the physical fitness training methods weight training and circuit training to improve performance in a component of fitness of your choice. / [4 marks (x2)] / Clear and accurate outline of how the training methods can be used for the component of fitness named. / Appropriate outline given. 1-2 marks"
  },
  {
-  "ref": "2026 OL Q14(c)(i)",
-  "reason": "the scheme prints this ask and its tariff and states no answer",
-  "evidence": "From the test results above identify which component of fitness Alan scored above average on. Indicate your answer by ticking (✓) the correct box in the table below."
- },
- {
   "ref": "2026 OL Q14(c)(iii)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Identify three fitness components required by an athlete in a physical activity of your choice. You may not use coordination or muscular endurance. / Components of Fitness correctly named 2 marks (x3)"
@@ -2243,6 +2293,11 @@
   "ref": "2026 OL Q15(a)(ii)",
   "reason": "the scheme prices this ask by band descriptor and states no answer beyond the question's own wording",
   "evidence": "‘Physical Education’ is another concept of physical activity. Explain ‘Physical / Education’. / Accurately explains PE as a concept of physical activity 3 - 4 marks / Appropriate explanation provided. 1- 2 marks"
+ },
+ {
+  "ref": "2026 OL Q15(c)",
+  "reason": "the scheme prices this ask by band descriptor and states no answer",
+  "evidence": "Describe how a National Governing Body (NGB) can help promote physical activity at local and national levels. / [2 marks / + 10 marks] / Correctly names an NGB 2 Marks"
  },
  {
   "ref": "2026 OL Q16(a)(ii)",

@@ -153,8 +153,14 @@ BAND_OPENER = re.compile(
     r'|detailed|some\b|somewhat|limited|little|brief|vague|basic|full and'
     r'|in depth|mostly|no relevant)', re.I)
 # A tariff cell that landed on a line of its own in the marks column.
+# A line that is nothing but its own marks cell.  The bare "m" abbreviation is
+# read only on a ONE- or TWO-digit number: "400m" is the SEC's own answer to
+# 2024 Higher Q13(a)(ii) ("identify two sport related scalar quantities
+# mentioned in the case study") and it was filed as a tariff cell, so the ask
+# lost it.  A three-digit tariff written without the word marks is not a form
+# this corpus prints.
 TARIFF_ONLY = re.compile(
-    r'^(?:\(?\s*\d{1,3}\s*(?:marks?|m)?\s*\)?'
+    r'^(?:\(?\s*(?:\d{1,3}\s*marks?|\d{1,2}\s*m|\d{1,3})\s*\)?'
     r'|\d{1,2}\s*[x×]\s*\d{1,2}\s*(?:\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})+\s*\)\s*)?'
     r'(?:marks?|m)?(?:\s*=\s*\d{1,3})?'
     r'|\d{1,3}\s*\(\s*\d{1,2}\s*[x×]\s*\d{1,2}\s*marks?\s*\)'
@@ -235,6 +241,13 @@ EXAMINER_VOCAB = re.compile(
     r'|discussion|evidence|examiner|examiners|excellent|explain\w*|compar\w*'
     r'|fair|given|good|identif(?:y|ies|ied)|knowledge|consider\w*|attempt'
     r'|limited|mark|marks|must|name[sd]?|outline[sd]?|outlines|poor'
+    # Two more of the examiner's own verbs, both found by AUDIT rather than by
+    # the corpus sweep that built this list: "Suitable phased warm up
+    # mentioned. 1-2 marks" (2026 Higher Q8(b)) and "no awarenes of cycles
+    # evident" (2022 Ordinary Q7(a)) each shipped as the whole of a card.
+    # Neither word appears in a single answer the SEC states anywhere in the
+    # thirteen schemes.
+    r'|mention|mentions|mentioned|evident'
     r'|present(?:ed|s)?|provide[sd]?|providing|relevant|some|somewhat'
     r'|state[sd]?|statement|understanding|vague|vaguely|valid|weak'
     r'|response|responses|answer|answers|credit|reference|referenced'
@@ -267,26 +280,54 @@ LEAD_IN = re.compile(
     r'|suggested (?:response|answer)s?|sample (?:response|answer)s?'
     r'|examples?|answers? may include|[A-Z][^.?!]{0,70}?\b(?:may|might|could)'
     r'\s+(?:include|be)|candidates? (?:may|might|could|to)[^.?!]{0,60}?'
-    r'\b(?:include|use|answer|name|state)[^.?!]{0,20})\s*[:.]?\s*$', re.I)
+    r'\b(?:include|use|answer|name|state)[^.?!]{0,20}'
+    # The SEC also opens a list with a plain noun and "include", closing the
+    # line on its colon: "Rules include:", "Description includes:",
+    # "Explanation includes:".  Without this, "Rules include" was filed as an
+    # ANSWER and shipped as one of the twelve claimable options on the 2026
+    # Higher Q5(b) card, priced at two marks apiece.  The colon is required so
+    # that an ordinary sentence ending "...techniques included." is untouched.
+    r'|[A-Z][^.?!]{0,45}?\binclude[sd]?(?=\s*:))\s*[:.]?\s*$', re.I)
 # The same lead-in printed at the head of its own list on one line:
 # "Accept: continuous training; weight training; plyometrics".
 LEAD_IN_INLINE = re.compile(
-    r'^(?:e\.?\s?g\.?|eg\.?|for example|accept(?: any of the following)?'
+    r'^(?:e\.?\s?g\.?s?|eg\.?|for example|accept(?: any of the following)?'
     r'|possible (?:candidate )?(?:response|answer)s?'
     r'|suggested (?:response|answer)s?|sample (?:response|answer)s?'
-    r'|answers? may include'
-    # "Example of accurate statements include:" — the SEC names what the list
-    # is before it prints it, and cutting at "Example" alone left "of accurate
-    # statements include" standing as the first answer.
-    r'|examples?(?:\s+of[^:.]{0,40}?)?(?:\s+(?:include|are|may include))?)'
-    r'\s*[:.]?\s+(?=[A-Z0-9])', re.I)
+    r'|answers? may include)'
+    # The SEC doubles its own lead-in: 2022 Higher Q17(d)(ii) heads its six
+    # stated answers "E.g.s: may include: Organise and administer the sport in
+    # Ireland; Train coaches for clubs; ...".  Read as a criterion row rather
+    # than a lead-in, that part stated nothing and the ask was EXCLUDED as
+    # "the scheme prices this ask by band descriptor and states no answer" —
+    # an exclusion standing on top of a printed answer, which is the worst
+    # verdict this pipeline can reach.
+    r'(?:\s*[:.]?\s*(?:may include|includes?|are))?'
+    r'\s*[:.]?\s+(?=\w)', re.I)
+# The bare word "Example(s)" is a lead-in ONLY where what follows opens an
+# answer — a capital or a digit after a space, or anything after the SEC's own
+# colon.  The test has to be CASE SENSITIVE, which is why it is compiled apart
+# from LEAD_IN_INLINE: re.I made that pattern's own [A-Z0-9] match a lower-case
+# letter too, so the word was cut off the front of CRITERION rows and their
+# tails shipped as marking points — "Example provided but no explanation.
+# 1 mark" became the card "provided but no explanation" (2023 Ordinary Q10),
+# and the same fault made cards of 2021 Ordinary Q1(b), 2021 Ordinary
+# Q13(c)(ii), 2025 Higher Q17(d) and 2026 Ordinary Q15(c).
+LEAD_IN_EXAMPLE = re.compile(
+    r'^[Ee]xamples?(?:[:.]\s+|\s+(?=[A-Z0-9]))')
 # And the same lead-in printed PART WAY ALONG a row, which is how 2022 sets
 # every one of its lists: "Correctly identifies a characteristic of skilled
 # performance Eg. Kinaesthetic awareness, Anticipation, Consistency".
 LEAD_IN_MID = re.compile(
     r'\s(?:e\.?\s?g\.?|eg\.?|possible candidate response)\s*[:.]?\s+(?=[A-Za-z])',
     re.I)
-BULLET = re.compile(r'^[ \t]*(?:[-•·▪‣●→–—*]|\d{1,2}\.\d{1,2}(?=\s))[ \t]*')
+# A numbered bullet — the SEC lists the anti-doping rules "2.1", "2.2",
+# "2.10" — is separated from a DECIMAL MEASUREMENT by what follows it: a list
+# item opens on a capital, a measurement on its unit.  Without that test
+# "49.20 seconds" and "50.13 seconds", the SEC's own answers to 2024 Higher
+# Q13(a)(ii), were read as the bullets "49.20" and "50.13" and the ask shipped
+# with the single marking point "seconds".
+BULLET = re.compile(r'^[ \t]*(?:[-•·▪‣●→–—*]|\d{1,2}\.\d{1,2}(?=\s+[A-Z]))[ \t]*')
 # What ENDS a list the SEC opened. A part often prices two or three criteria in
 # one table and gives each its own examples:
 #
@@ -555,6 +596,17 @@ def _marker(text, q):
     return letter, roman, tidy(text[m.end():])
 
 
+# A part address is not always a part HEAD. The SEC cross-references one part
+# from another — "Explain how you would apply the practice method named by you
+# in Question 13 (c) (i) to improve the skill of the javelin thrower." — and
+# when that sentence WRAPS on the word Question, the address opens the next
+# printed line and reads exactly like a marker. 2025 Higher Q13(c)(i) collected
+# every row belonging to (c)(ii) that way, and shipped a card whose only
+# marking point was "to improve the skill of the javelin thrower"; (c)(ii) was
+# left with no rows at all. The line before is what tells them apart.
+BACKREF_TAIL = re.compile(r'\b(?:in|of|from|to|for|at|see)?\s*[Qq]uestion\s*$')
+
+
 def read(year, level):
     """Every part the scheme prints, in document order, merged by address."""
     parts, order = {}, []
@@ -578,7 +630,9 @@ def read(year, level):
         return part
 
     per_question = None
+    prev = ''
     for text, cells in lines(year, level):
+        prior, prev = prev, text
         rate = PER_QUESTION.search(text)
         if rate:
             per_question = int(rate.group(1))
@@ -609,6 +663,16 @@ def read(year, level):
             continue
 
         mk = _marker(text, q)
+        if mk and BACKREF_TAIL.search(prior):
+            # A wrapped cross-reference, not a head: the address belongs to
+            # the sentence that ran off the line above, so the address is
+            # dropped and what follows it continues that sentence.
+            text = mk[2] or text
+            mk = None
+            if part is not None and part.cue and not part.rows \
+                    and not part.answers and not in_table:
+                part.cue = tidy(part.cue + ' ' + text)
+                continue
         if mk:
             lt, rm, rest = mk
             # A bare roman stays under the letter it was printed beneath.
@@ -674,7 +738,7 @@ def _file(part, text, listing):
     if TARIFF_ONLY.match(text):
         part.cells.append(text)
         return listing
-    inline = LEAD_IN_INLINE.match(text)
+    inline = LEAD_IN_INLINE.match(text) or LEAD_IN_EXAMPLE.match(text)
     if inline:
         body = tidy(text[inline.end():])
         if body:
@@ -727,7 +791,12 @@ STATED = re.compile(r':\s*(?P<body>[^:]{4,})$')
 IDENTIFIES_AS = re.compile(
     r'\b(?:identif(?:y|ies|ied)|names?|named|states?|stated|defines?|defined'
     r'|gives?|given|categorises?|classif(?:y|ies|ied)|recognises?)\b'
-    r'[^:]{0,60}?\bas\s+(?P<body>.{3,})$', re.I)
+    # "as" opens the answer only where it is not half of "as to", "as well as"
+    # or "as a result".  "Some information given as to how this measure can
+    # tackle a gender imbalance..." is the SEC's 1-2 mark band, and read as an
+    # answer it became the whole of the 2023 Higher Q11 card.
+    r'[^:]{0,60}?\bas\s+(?!to\b|well\b|a result\b|part of\b|the case\b)'
+    r'(?P<body>.{3,})$', re.I)
 # And a fourth: the answer printed after the price, on the same row. "Full 2
 # marks - Load – javelin; Effort- tricep; Fulcrum – elbow" is the whole answer
 # to 2020 Higher Q5(b), behind a tariff and a dash.
@@ -793,7 +862,12 @@ def is_content(text):
         return False
     if len(body) < 2:
         return False
-    if TABLE_HEAD.match(body) or EXAMINER_NOTE.match(body) or LEAD_IN.match(body):
+    # The lead-in is tested against the line AS PRINTED as well as against the
+    # body: strip_tariff takes the trailing colon off, and "Rules include:"
+    # without its colon is no longer the lead-in it plainly is — which is how
+    # it became a twelfth claimable option on the 2026 Higher Q5(b) card.
+    if TABLE_HEAD.match(body) or EXAMINER_NOTE.match(body) \
+            or LEAD_IN.match(body) or LEAD_IN.match(tidy(text)):
         return False
     return not EXAMINER_VOCAB.search(body)
 

@@ -50,10 +50,10 @@ export const CARDS: SecCard[] = [
     id: "pe-2021-ol-q1b", topicId: "physical-education-0-16", conceptId: "pe-0-16-example-different-pieces-safety",
     section: "A", questionRef: "2021 OL Q1(b)",
     questionText: "Give an example of two different pieces of safety equipment that must be worn when participating in a named physical activity.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "safety equipment relevant to named physical activity", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Boxing – mouth guard, gloves", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Boxing – mouth guard", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "gloves", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -156,9 +156,8 @@ export const CARDS: SecCard[] = [
     questionText: "With reference to the case study, give examples of the influences that impact on the participation patterns of boys and girls in gymnastics.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "from case study provided in relation to the influences that impact on + the participation patterns of boys and girls in gymnastics", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Female gymnasts are said to peak in performance at 16, the minimum age at which they can compete at senior level events, including the Olympics. In reality, many female gymnasts are considered to peak at 12. Whereas male gymnasts bulk up with puberty and become stronger competitors, their female peers are generally considered more effective as children. “You want to be light in the gym, you want to be petite,” says Biles, who started relatively late, at the age of 6. For females, once you go through puberty, your body changes, and that makes it harder to do gymnastics", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Role models, peer influence", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Female gymnasts are said to peak in performance at 16, the minimum age at which they can compete at senior level events, including the Olympics. In reality, many female gymnasts are considered to peak at 12. Whereas male gymnasts bulk up with puberty and become stronger competitors, their female peers are generally considered more effective as children. “You want to be light in the gym, you want to be petite,” says Biles, who started relatively late, at the age of 6. For females, once you go through puberty, your body changes, and that makes it harder to do gymnastics", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Role models, peer influence", marks: null, openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -886,32 +885,6 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2022-ol-q7a", topicId: "physical-education-0-10", conceptId: "pe-0-10-term-periodisation",
-    section: "A", questionRef: "2022 OL Q7(a)",
-    questionText: "Explain the term periodisation.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "cycles evident", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2023-ol-q10", topicId: "physical-education-1-24", conceptId: "pe-1-24-sports-endorsement-sports-merchandising",
-    section: "A", questionRef: "2023 OL Q10",
-    questionText: "• Sports endorsement • Sports merchandising • Sports related advertising.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "provided but no explanation", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Ordinary Level — © State Examinations Commission.",
@@ -1242,9 +1215,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2024-ol-q2", topicId: "physical-education-0-11", conceptId: "pe-0-11-ways-motivation-have-positive",
     section: "A", questionRef: "2024 OL Q2",
     questionText: "Outline two ways motivation can have a positive impact on practice.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":2,"perPart":4}, totalMarks: 8,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two ways outlined how motivation can have a positive effect on practice", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Train harder","longer. Keep going until you get it right"]} },
+    { id: "r-1", kind: "point", verbatim: "Train harder, longer. Keep going until you get it right", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1493,19 +1466,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Two months — Mesocycle", marks: 1, openList: true },
     { id: "r-2", kind: "point", verbatim: "A full year — Macrocycle", marks: 1, openList: true },
     { id: "r-3", kind: "point", verbatim: "Two weeks — Microcycle", marks: 1, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2026-ol-q15c", topicId: "physical-education-1-3", conceptId: "pe-1-3-after-success-irish-athletes",
-    section: "C", questionRef: "2026 OL Q15(c)",
-    questionText: "After the success of Irish athletes at the 2024 Olympics, extra funding is being provided to all National Governing Bodies of sport in Ireland. Describe how a National Governing Body (NGB) can help promote physical activity at local and national levels.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "may be used Appropriate description provided", marks: null, openList: true },
     ],
   } as SecCard,
   {

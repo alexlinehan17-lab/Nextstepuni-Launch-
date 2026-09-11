@@ -37,35 +37,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2020-hl-q10",
-  "topicId": "physical-education-1-18",
-  "conceptId": "pe-1-18-analyse-impact-media-coverage",
-  "level": "higher",
-  "year": 2020,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2020 HL Q10",
-  "questionText": "Analyse the impact media coverage has on spectator behaviour.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "1-3 their impact",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2020-hl-q11ai",
   "topicId": "physical-education-0-10",
   "conceptId": "pe-0-10-principle-training-tennis-player",
@@ -731,11 +702,10 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "include – optimal warm up prior to an event and between events (in order to achieve a good performance at the first attempt), correct choice of starting height in the high jump, correct choice of tempo in the 800 metres",
-      "Well equipped for the competition – clothing, spikes",
       "Developed psychological skills – heptathletes who are confident tend to be successful in combined events",
       "Rational nutrition plan (food and drink) – based on the sequence of events",
-      "Understand how scoring tables work"
+      "Understand how scoring tables work",
+      "Well equipped for the competition – clothing, spikes"
      ],
      "perOptionSteps": [
       3,
@@ -876,7 +846,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 11,
+   "ofParts": 10,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -900,8 +870,7 @@
       "Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method",
       "Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition",
       "Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person",
-      "Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some",
-      "the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative",
+      "Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative",
       "Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"
      ]
     }
@@ -2199,15 +2168,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "State anxiety is an immediate emotional state that is characterised by apprehension",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "fear",
+    "verbatim": "State anxiety is an immediate emotional state that is characterised by apprehension, fear, tension and an increase in physiological arousal in response to a specific situation or demand in a game or event. It is a temporary emotional state",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -2268,12 +2229,12 @@
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 3,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "safety equipment relevant to named physical activity",
+    "verbatim": "Boxing – mouth guard",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -2281,7 +2242,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Boxing – mouth guard, gloves",
+    "verbatim": "gloves",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -2503,21 +2464,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "from case study provided in relation to the influences that impact on + the participation patterns of boys and girls in gymnastics",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Female gymnasts are said to peak in performance at 16, the minimum age at which they can compete at senior level events, including the Olympics. In reality, many female gymnasts are considered to peak at 12. Whereas male gymnasts bulk up with puberty and become stronger competitors, their female peers are generally considered more effective as children. “You want to be light in the gym, you want to be petite,” says Biles, who started relatively late, at the age of 6. For females, once you go through puberty, your body changes, and that makes it harder to do gymnastics",
     "marks": null,
     "openList": true,
     "contextNote": ""
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Role models, peer influence",
     "marks": null,
@@ -3559,15 +3512,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Time commitments",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Public image. The possibility of the sponsor exploiting the athlete",
+    "verbatim": "Time commitments, Public image. The possibility of the sponsor exploiting the athlete",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -3814,15 +3759,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Anxiety is a state of nervousness or worry towards a threat. It can present as physical",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "mental or behavioural forms",
+    "verbatim": "Anxiety is a state of nervousness or worry towards a threat. It can present as physical, mental or behavioural forms",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -4072,49 +4009,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2022-hl-q17c",
-  "topicId": "physical-education-0-2",
-  "conceptId": "pe-0-2-appropriate-method-analysing-aspects",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2022 HL Q17(c)",
-  "questionText": "Outline an appropriate method of analysing each of the following four aspects of performance: Choreography; Psychological preparedness; Skill and Technique; Structures and Strategies. You are not permitted to use the same method of analysis for more than one aspect of performance.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "4 x 1 marks",
-   "answer": 4,
-   "ofParts": 4,
-   "perPart": 1
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Outlines an appropriate method of analysing each of the four aspects of performance",
-    "marks": 4,
-    "openList": true,
-    "contextNote": "4 answers at 1 mark each, as the scheme prices it.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 1,
-     "options": [
-      "Choreography",
-      "Psychological preparedness",
-      "Skill and Technique",
-      "Structures and Strategies. Each method of analysis only accepted once"
-     ]
-    }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2022-hl-q17di",
   "topicId": "physical-education-1-25",
   "conceptId": "pe-1-25-national-governing-body",
@@ -4136,6 +4030,67 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Gaelic Athletic Association (GAA)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-hl-q17dii",
+  "topicId": "physical-education-1-0",
+  "conceptId": "pe-1-0-examine-provides-support-local",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2022 HL Q17(d)(ii)",
+  "questionText": "Examine how the NGB, named by you in (i), provides support for local participation in the physical activity.",
+  "stem": "Q17(d)(i): Name the National Governing Body (NGB) for a named physical activity of your choice.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Organise and administer the sport in Ireland",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Train coaches for clubs, Provides facilities and equipment to local communities",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "provides local sports engagement opportunities",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "develop pathways to excellence",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Local initiatives",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -5147,35 +5102,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2022-ol-q7a",
-  "topicId": "physical-education-0-10",
-  "conceptId": "pe-0-10-term-periodisation",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2022 OL Q7(a)",
-  "questionText": "Explain the term periodisation.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "cycles evident",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2023-hl-q1a",
   "topicId": "physical-education-0-2",
   "conceptId": "pe-0-2-planes-human-movement",
@@ -5213,64 +5139,6 @@
       "The transverse plane"
      ]
     }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2023-hl-q1b",
-  "topicId": "physical-education-0-2",
-  "conceptId": "pe-0-2-planes-human-movement-correctly",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2023 HL Q1(b)",
-  "questionText": "Describe the two planes of human movement, correctly named in (a). Use a sporting example of movement in each plane to support your answer.",
-  "stem": "Q1(a): Name any two planes of human movement.",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "given to support the description",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2023-hl-q11",
-  "topicId": "physical-education-1-2",
-  "conceptId": "pe-1-2-having-conducted-survey-patterns",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2023 HL Q11",
-  "questionText": "Having conducted a survey on the physical activity patterns and behaviours of boys and girls in a school, the PE teacher discovered that the boys in the school were far more active than the girls. Discuss two ways in which a school could tackle a gender imbalance in physical activity participation levels.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "to how this measure can tackle a gender imbalance in physical activity participation levels of boys and girls",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -5521,35 +5389,6 @@
     "kind": "point",
     "verbatim": "Rules",
     "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2023-ol-q10",
-  "topicId": "physical-education-1-24",
-  "conceptId": "pe-1-24-sports-endorsement-sports-merchandising",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2023 OL Q10",
-  "questionText": "• Sports endorsement • Sports merchandising • Sports related advertising.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "provided but no explanation",
-    "marks": null,
     "openList": true,
     "contextNote": ""
    }
@@ -6192,56 +6031,28 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "bestNofParts",
+   "notation": "2 x 1 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 1
   },
   "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "seconds",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2024-hl-q13b",
-  "topicId": "physical-education-0-16",
-  "conceptId": "pe-0-16-examine-approaches-safe-practice",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2024 HL Q13(b)",
-  "questionText": "Examine two approaches to safe practice that organisers of an event, such as the Olympic Games, may implement.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 5 marks",
-   "answer": 2,
-   "ofParts": 2,
-   "perPart": 5
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
     "kind": "anyN",
-    "verbatim": "4-5 organisation",
-    "marks": 10,
+    "verbatim": "Correctly identified scalar quantity from the case study",
+    "marks": 2,
     "openList": true,
-    "contextNote": "2 answers at 5 marks each, as the scheme prices it.",
+    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
     "group": {
      "claimMax": 2,
-     "perOption": 5,
+     "perOption": 1,
      "options": [
-      "4-5 organisation",
-      "2-3 practice approaches to event organisation"
+      "400m",
+      "49.20 seconds",
+      "50.13 seconds"
      ]
     }
    }
@@ -6567,7 +6378,7 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Any 2 of the answers the scheme states",
+    "verbatim": "Example of accurate statements include",
     "marks": 2,
     "openList": true,
     "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
@@ -8090,29 +7901,17 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 4 marks",
-   "answer": 2,
-   "ofParts": 2,
-   "perPart": 4
+   "kind": "questionTotal"
   },
   "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Two ways outlined how motivation can have a positive effect on practice",
-    "marks": 8,
+    "kind": "point",
+    "verbatim": "Train harder, longer. Keep going until you get it right",
+    "marks": null,
     "openList": true,
-    "contextNote": "2 answers at 4 marks each, as the scheme prices it.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Train harder",
-      "longer. Keep going until you get it right"
-     ]
-    }
+    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -8340,35 +8139,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2025-hl-q13ci",
-  "topicId": "physical-education-0-3",
-  "conceptId": "pe-0-3-based-description-javelin-case",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2025 HL Q13(c)(i)",
-  "questionText": "Based on the description of javelin in the case study, name a skill practice method that is appropriate for developing the skill of a javelin thrower. to improve the skill of a javelin thrower.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "to improve the skill of the javelin thrower",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2025-hl-q13ciii",
   "topicId": "physical-education-0-2",
   "conceptId": "pe-0-2-hammer-throwers-mainly-move",
@@ -8462,68 +8232,6 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Justification pf why the components are important in the activity",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q17d",
-  "topicId": "physical-education-1-15",
-  "conceptId": "pe-1-15-examine-ways-participants-adapted",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2025 HL Q17(d)",
-  "questionText": "Examine ways in which participants in adapted physical activities can be provided with opportunities to achieve excellence.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "12 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "adapted physical activity provided +",
-    "marks": 12,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q18aii",
-  "topicId": "physical-education-1-6",
-  "conceptId": "pe-1-6-examples-gamesmanship",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2025 HL Q18(a)(ii)",
-  "questionText": "Give two examples of gamesmanship.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "gamesmanship in physical activity or sport",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -8998,7 +8706,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 12,
+   "ofParts": 11,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -9006,7 +8714,7 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Identifies correct current Irish anti-doping rules. (x2)",
+    "verbatim": "Rules include",
     "marks": 4,
     "openList": true,
     "contextNote": "2 answers at 2 marks each, as the scheme prices it.",
@@ -9014,7 +8722,6 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Rules include",
       "1. Presence of a Prohibited Substance in an Athlete’s Sample is prohibited",
       "2. Use or Attempted Use by an Athlete of a Prohibited Substance or a Prohibited Method is prohibited",
       "3. Refusing/evading or failing to do a drug test after notification is prohibited",
@@ -9028,35 +8735,6 @@
       "11. Protection of whistleblowers – it is prohibited to threaten another person or to discourage that person from reporting to the authorities or information relating to a rule violation, non- compliance with the code or other antidoping activity, or to retaliate against another person for doing so"
      ]
     }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-hl-q8b",
-  "topicId": "physical-education-0-16",
-  "conceptId": "pe-0-16-phases-warm",
-  "level": "higher",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2026 HL Q8(b)",
-  "questionText": "Outline the phases of a warm‐up.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Suitable phased warm up mentioned",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -9104,35 +8782,6 @@
     "kind": "point",
     "verbatim": "Two weeks — Microcycle",
     "marks": 1,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q15c",
-  "topicId": "physical-education-1-3",
-  "conceptId": "pe-1-3-after-success-irish-athletes",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q15(c)",
-  "questionText": "After the success of Irish athletes at the 2024 Olympics, extra funding is being provided to all National Governing Bodies of sport in Ireland. Describe how a National Governing Body (NGB) can help promote physical activity at local and national levels.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "may be used Appropriate description provided",
-    "marks": null,
     "openList": true,
     "contextNote": ""
    }
