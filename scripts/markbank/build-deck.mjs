@@ -24,7 +24,7 @@ import { createHash } from 'node:crypto';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
@@ -44,6 +44,41 @@ const SUBJECTS = {
     specVersion: 'lc-engineering-materials-and-technology',
     specNote: 'Cards are tagged to the headings of the Engineering syllabus, section 2 Materials and Technology.\n * The written paper sets nine questions of 50 marks at Higher and seven at Ordinary; candidates answer six and four.',
     figureDir: 'public/exam-figures/engineering',
+    blocked: new Set(),
+  },
+  'physical-education': {
+    title: 'Physical Education',
+    /* The LCPE specification: two strands of five and six topics, plus the six
+     * physical activity areas. Only the WRITTEN paper is carded — the other
+     * two components are a coursework project and a physical performance, and
+     * neither is a question any paper prints. See PHYSICAL_EDUCATION_STRANDS
+     * in components/MarkBank/deck.ts. */
+    specVersion: 'lc-physical-education-specification',
+    specNote: 'Cards are tagged to the topics of the Leaving Certificate Physical Education specification:\n * Strand 1 Towards Optimum Performance, Strand 2 Contemporary Issues, and the physical activity areas.\n * The written paper is 50% of the subject; the project and the performance assessment are not carded.',
+    figureDir: 'public/exam-figures/physical-education',
+    blocked: new Set(),
+  },
+  technology: {
+    title: 'Technology',
+    /* The syllabus these papers were sat under -- seven core areas and five
+     * options, of which a candidate studies two. Named by what it is rather
+     * than by a year: no redeveloped Technology specification is examined
+     * yet. See TECHNOLOGY_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-technology-syllabus',
+    specNote: 'Cards are tagged to the areas of the Leaving Certificate Technology syllabus:\n * seven core areas, examined in Sections A and B, and the five options, of which\n * Section C sets one question each and a candidate answers one.',
+    figureDir: 'public/exam-figures/technology',
+    blocked: new Set(),
+  },
+  dcg: {
+    title: 'Design and Communication Graphics',
+    /* The syllabus these papers were sat under, first examined in 2009 and
+     * still current -- its redevelopment is scheduled for first examination
+     * in 2029. Cards tag against two of its three strands, which are what the
+     * written examination covers; the third is the student assignment and the
+     * CAD work. See DCG_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-design-and-communication-graphics-syllabus',
+    specNote: 'Cards are tagged to the headings of the Leaving Certificate Design and Communication\n * Graphics syllabus. The written examination is 60% of the subject and sits in two booklets:\n * Section A (four core short questions, any three answered) in one, and Sections B and C\n * (three core long questions, any two; five Applied Graphics options, one) in the other.',
+    figureDir: 'public/exam-figures/dcg',
     blocked: new Set(),
   },
   'computer-science': {
@@ -138,6 +173,402 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/economics',
     blocked: new Set(),
   },
+  history: {
+    title: 'History',
+    /* The syllabus these papers were sat under. Its redevelopment is
+     * introduced in 2027 for first examination in 2029, so there is nothing
+     * later to tag against. Named by what it is rather than by a year: the
+     * publication year is unverified here, and an unverified date in a
+     * provenance field is worse than none. */
+    specVersion: 'lc-history-syllabus',
+    specNote: "Cards are tagged to the syllabus's four fields-and-areas and the six topics in\n * each. A candidate sits ONE field of study — Later Modern or Early Modern — which\n * the SEC prints as separate papers, so every citation names its field.",
+    figureDir: 'public/exam-figures/history',
+    blocked: new Set(),
+  },
+  'religious-education': {
+    title: 'Religious Education',
+    /* The syllabus published in 2003 and still examined — the whole
+     * 2021-2025 corpus sits on it, with nothing to straddle. Named by year
+     * because it is verified: the SEC's own scheme cites "the Leaving
+     * Certificate Religious Education syllabus published by the Department of
+     * Education and Skills in 2003" in its general introduction. */
+    specVersion: 'lc-religious-education-2003',
+    specNote: "Cards are tagged to the syllabus's own ten sections, A to J, which are the\n * sections the paper prints. A candidate answers Section A, two of B-D and one or\n * two of E-J; every section in the corpus is carded at both levels.",
+    figureDir: 'public/exam-figures/religious-education',
+    blocked: new Set(),
+  },
+  lcvp: {
+    title: 'Link Modules',
+    /* The LCVP programme statement, still examined: Life, Community and Work
+     * replaces it from 2028, so the whole 2018-2025 corpus sits on this one.
+     * Its two link modules and five units each are the topics; see
+     * LCVP_STRANDS in components/MarkBank/deck.ts, which reads them from the
+     * canonical curriculum rather than keeping a second list. */
+    specVersion: 'lcvp-link-modules-programme-statement',
+    specNote: 'Cards are tagged to the units of the LCVP Link Modules programme statement, which is\n * the one these papers were sat under. Life, Community and Work replaces it from 2028.\n * The paper is COMMON level: one paper, sat by everyone, cited "YYYY CL".',
+    figureDir: 'public/exam-figures/lcvp',
+    blocked: new Set(),
+  },
+  german: {
+    title: 'German',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-german-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate German syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the TEXT it quotes,\n * bound to the pages of the question paper it was printed on. The answer\n * language differs WITHIN one comprehension, so each card states its own.',
+    figureDir: 'public/exam-figures/german',
+    blocked: new Set(),
+  },
+  french: {
+    title: 'French',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-french-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate French syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the passage it quotes,\n * bound to the pages of the question paper it was printed on.',
+    figureDir: 'public/exam-figures/french',
+    blocked: new Set(),
+  },
+  polish: {
+    title: 'Polish',
+    /* The syllabus these papers were sat under. Polish is a NON-CURRICULAR EU
+     * LANGUAGE: there is no Irish syllabus for it, and the SEC examines it
+     * against the language itself. It was rebuilt in 2022 — before that one
+     * 70-mark booklet at ONE level, since then Section A Reading and Section B
+     * Written Production at two levels with a Listening Comprehension Test
+     * beside them. See POLISH_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-polish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Polish examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card says which language its answer must be in.",
+    figureDir: 'public/exam-figures/polish',
+    blocked: new Set(),
+  },
+  portuguese: {
+    title: 'Portuguese',
+    /* The syllabus these papers were sat under. Portuguese is a
+     * NON-CURRICULAR EU LANGUAGE: there is no Irish syllabus for it, and the
+     * SEC examines it against the language itself. It was rebuilt in 2022 —
+     * before that one 70-mark booklet at ONE level, since then Part A Reading
+     * and Part B Written Production at two levels with a Listening
+     * Comprehension Test beside them. See PORTUGUESE_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-portuguese-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Portuguese examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card says which language its answer must be in.",
+    figureDir: 'public/exam-figures/portuguese',
+    blocked: new Set(),
+  },
+  romanian: {
+    title: 'Romanian',
+    /* The syllabus these papers were sat under. Romanian is a NON-CURRICULAR
+     * EU LANGUAGE: there is no Irish syllabus for it, and the SEC examines it
+     * against the language itself. One booklet at ONE level in every year of
+     * the corpus, and no Listening Comprehension Test. See ROMANIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-romanian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the parts of the Leaving Certificate Romanian examination.\n * Its reading comprehension is priced on the QUESTION PAPER — \"(5 puncte)\",\n * \"(5 × 1 punct)\" in the right-hand margin — because the marking scheme of this\n * examination prints answers with no marks anywhere in it. Every card carries the\n * text it quotes, bound to the pages of the question paper it was printed on, and\n * every answer is written in Romanian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/romanian',
+    blocked: new Set(),
+  },
+  dutch: {
+    title: 'Dutch',
+    /* The syllabus these papers were sat under. Dutch is a NON-CURRICULAR EU
+     * LANGUAGE, and Romanian's twin in shape: one booklet at ONE level in
+     * every year of the corpus, no Listening Comprehension Test, and a reading
+     * comprehension priced on the paper. See DUTCH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-dutch-non-curricular-eu-language',
+    specNote: "Cards are tagged to the parts of the Leaving Certificate Dutch examination.\n * Its reading comprehension is priced on the QUESTION PAPER — \"(5 punten)\",\n * \"(1 punt)\" in the right-hand margin — because the marking scheme of this\n * examination prints answers with no marks anywhere in it. Every card carries the\n * text it quotes, bound to the pages of the question paper it was printed on, and\n * every answer is written in Dutch: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/dutch',
+    blocked: new Set(),
+  },
+  lithuanian: {
+    title: 'Lithuanian',
+    /* The examination these papers were sat under. Lithuanian is a
+     * NON-CURRICULAR EU LANGUAGE: there is no Irish syllabus for it, and the
+     * SEC examines it against the language itself. The corpus holds three
+     * printed shapes — I/II/III DALIS out of 100 to 2020, I/II DALIS out of 70
+     * in 2021, and from 2022 Dalis A Skaitymas and Dalis B Rašymas at two
+     * levels with a Listening Comprehension Test beside them. See
+     * LITHUANIAN_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-lithuanian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Lithuanian examination.\n * From 2022 a sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on. One comprehension is set in\n * two languages: the scheme awards HALF MARKS for an answer given in the wrong\n * one, so every card of those sittings says which language its answer must be in.",
+    figureDir: 'public/exam-figures/lithuanian',
+    blocked: new Set(),
+  },
+  latvian: {
+    title: 'Latvian',
+    /* Latvian never made the 2022 change Lithuanian and Polish did: every
+     * sitting in the corpus, 2010 to 2026, is the old examination — one
+     * Higher-only booklet, three parts, no Listening Comprehension Test. */
+    specVersion: 'lc-latvian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Latvian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on.",
+    figureDir: 'public/exam-figures/latvian',
+    blocked: new Set(),
+  },
+  hungarian: {
+    title: 'Hungarian',
+    /* Hungarian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See HUNGARIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-hungarian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Hungarian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Hungarian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/hungarian',
+    blocked: new Set(),
+  },
+  bulgarian: {
+    title: 'Bulgarian',
+    /* Bulgarian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See BULGARIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-bulgarian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Bulgarian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Bulgarian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/bulgarian',
+    blocked: new Set(),
+  },
+  slovakian: {
+    title: 'Slovakian',
+    /* Slovakian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SLOVAKIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-slovakian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Slovakian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Slovakian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/slovakian',
+    blocked: new Set(),
+  },
+  swedish: {
+    title: 'Swedish',
+    /* Swedish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SWEDISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-swedish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Swedish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Swedish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/swedish',
+    blocked: new Set(),
+  },
+  estonian: {
+    title: 'Estonian',
+    /* Estonian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See ESTONIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-estonian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Estonian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Estonian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/estonian',
+    blocked: new Set(),
+  },
+  finnish: {
+    title: 'Finnish',
+    /* Finnish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See FINNISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-finnish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Finnish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Finnish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/finnish',
+    blocked: new Set(),
+  },
+  croatian: {
+    title: 'Croatian',
+    /* Croatian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See CROATIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-croatian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Croatian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Croatian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/croatian',
+    blocked: new Set(),
+  },
+  danish: {
+    title: 'Danish',
+    /* Danish is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See DANISH_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-danish-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Danish examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Danish: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/danish',
+    blocked: new Set(),
+  },
+  slovenian: {
+    title: 'Slovenian',
+    /* Slovenian is a NON-CURRICULAR EU LANGUAGE and prints the classic
+     * examination in every year of the corpus: one Higher-only booklet,
+     * three parts, no Listening Comprehension Test. See SLOVENIAN_STRANDS in
+     * components/MarkBank/deck.ts. */
+    specVersion: 'lc-slovenian-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Slovenian examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Its reading comprehension is priced on the QUESTION\n * PAPER, in the right-hand margin, and every reading card carries the text it\n * quotes, bound to the pages of the question paper it was printed on. Every\n * answer is written in Slovenian: the paper's own rubric says so.",
+    figureDir: 'public/exam-figures/slovenian',
+    blocked: new Set(),
+  },
+  czech: {
+    title: 'Czech',
+    /* Czech, like Latvian, prints the old examination in every year of the
+     * corpus. */
+    specVersion: 'lc-czech-non-curricular-eu-language',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Czech examination.\n * A sitting is ONE booklet at ONE level: an article, six questions on it, a\n * commentary and an essay. Every reading card carries the text it quotes, bound to\n * the pages of the question paper it was printed on.",
+    figureDir: 'public/exam-figures/czech',
+    blocked: new Set(),
+  },
+  russian: {
+    title: 'Russian',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-russian-syllabus',
+    specNote: "Cards are tagged to the task types of the Leaving Certificate Russian syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the text it quotes, bound\n * to the pages of the question paper it was printed on. Comprehension and\n * information retrieval are answered in English or Irish; the language-awareness\n * tasks are answered in RUSSIAN, and the scheme awards no marks for either in\n * the wrong language.",
+    figureDir: 'public/exam-figures/russian',
+    blocked: new Set(),
+  },
+  italian: {
+    title: 'Italian',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-italian-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Italian syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the passage, advertisement\n * or literary extract it quotes, bound to the page of the question paper facing\n * its own questions. Higher answers Sections A and B in ITALIAN except the last\n * ask of each comprehension; Ordinary answers everything in Irish or English.',
+    figureDir: 'public/exam-figures/italian',
+    blocked: new Set(),
+  },
+  japanese: {
+    title: 'Japanese',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-japanese-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Japanese syllabus.\n * A sitting is TWO booklets — the written paper and a separate Listening\n * Comprehension Test — and every reading card carries the web page, article,\n * blog or e-mail it is answered from, bound to the pages of the question paper\n * it was printed on. The answer language changes INSIDE a question: 問題2 heads\n * its first items "Answer in English" and its third "Answer in Japanese", and\n * the scheme pays half marks for the wrong one, so every card says which is\n * wanted. Furigana — the kana reading the SEC sets ABOVE a kanji — is folded\n * into the line in brackets, 秋葉原（あきはばら）, and every card carrying\n * Japanese discloses the convention.',
+    figureDir: 'public/exam-figures/japanese',
+    blocked: new Set(),
+  },
+  latin: {
+    title: 'Latin',
+    /* The LEGACY written paper, which is what every sitting in the corpus is.
+     * Latin's specification was redeveloped and its Strands 1 and 2 describe a
+     * course assessed by a capstone text and a research study the SEC has not
+     * examined yet; the syllabus strand these cards tag against is the legacy
+     * paper's own seven task types. See LATIN_STRANDS in deck.ts. */
+    specVersion: 'lc-latin-syllabus',
+    specNote: 'Cards are tagged to the task types of the legacy Leaving Certificate Latin\n * written paper, which is the paper every sitting in the bank was sat on. Latin\n * is examined in ONE booklet with no listening test. Three of its five questions\n * print a CHOICE of routes a candidate answers one of — "Answer either Section A\n * or Section B" — so a card names the route it was set under. Every unseen\n * comprehension card carries the Latin passage, the English summary and the\n * vocabulary the SEC glossed it with, bound to the page of the question paper\n * they were printed on; a card whose ask names a photograph opens the plate\n * page at the back of the same booklet. Translation asks are NOT carded: the\n * scheme prices them by segment, but the segments are the source text and not\n * a model answer.',
+    figureDir: 'public/exam-figures/latin',
+    blocked: new Set(),
+  },
+  'ancient-greek': {
+    title: 'Ancient Greek',
+    /* The LEGACY written paper, which is what every sitting in the corpus is.
+     * Ancient Greek's specification was redeveloped and its Strands 1 to 3
+     * describe a course assessed by a capstone text and a research study the
+     * SEC has not examined yet; the syllabus strand these cards tag against is
+     * the legacy paper's own six task types. See ANCIENT_GREEK_STRANDS in
+     * deck.ts. */
+    specVersion: 'lc-ancient-greek-syllabus',
+    specNote: 'Cards are tagged to the task types of the legacy Leaving Certificate Ancient\n * Greek written paper, which is the paper every sitting in the bank was sat on.\n * Ancient Greek is examined in ONE booklet with no listening test. Its questions\n * print a CHOICE of routes a candidate answers one of — "Answer Section A or\n * Section B" — so a card names the route it was set under, and Question 3\'s two\n * routes are the syllabus\'s two prescribed courses, A World of Heroes and The\n * Intellectual Revolution. Every unseen comprehension card carries the Greek\n * passage, the English summary and the vocabulary the SEC glossed it with, bound\n * to the page of the question paper they were printed on; a card whose ask names\n * a photograph opens the plate page at the back of the same booklet. Translation\n * asks are NOT carded: the scheme prices them by segment, and the segments are\n * the source text — Greek for the unseen passages, English for the composition —\n * and never a model answer.',
+    figureDir: 'public/exam-figures/ancient-greek',
+    blocked: new Set(),
+  },
+  maltese: {
+    title: 'Maltese',
+    /* The syllabus these six sittings were set on. Maltese is a
+     * NON-CURRICULAR EU LANGUAGE examined at ONE level in every year on disk,
+     * in ONE booklet, with no listening test: one printed text and three
+     * parts, of which only the first sets numbered questions. See
+     * MALTESE_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-maltese-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Maltese\n * examination. Only L-Ewwel Taqsima, the reading comprehension, takes cards:\n * the commentary and the composition are written production, which the scheme\n * answers with an indicative menu of themes and prices nowhere. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that every answer is to be\n * written in Maltese.',
+    figureDir: 'public/exam-figures/maltese',
+    blocked: new Set(),
+  },
+  ukrainian: {
+    title: 'Ukrainian',
+    /* The syllabus these two sittings were set on. Ukrainian is the newest
+     * subject in the corpus — first examined in 2025 — and prints the same
+     * classic paper Maltese, Romanian and Dutch do: ONE level, ONE booklet,
+     * no listening test, three parts of which only the first is questioned.
+     * See UKRAINIAN_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-ukrainian-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Ukrainian\n * examination. Only ЧАСТИНА I, the reading comprehension, takes cards: the\n * commentary and the essay are written production, which the scheme answers\n * with an indicative menu headed "Наприклад:" and prices nowhere. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that every answer is to be\n * written in Ukrainian.',
+    figureDir: 'public/exam-figures/ukrainian',
+    blocked: new Set(),
+  },
+  'mandarin-chinese': {
+    title: 'Mandarin Chinese',
+    /* The specification these ten sittings were set on. Mandarin Chinese was
+     * first examined in 2022 and is a CURRICULAR modern language sat in two
+     * booklets — the written paper (SEC component 000) and a Listening
+     * Comprehension Test (A00) — and printed, unlike the six curricular
+     * languages carded before it, as separate English and Irish editions
+     * rather than one bilingual booklet. Cards come from Section A, Reading,
+     * only. See MANDARIN_CHINESE_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-mandarin-chinese-specification',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Mandarin Chinese\n * written paper. Only Section A, Reading, takes cards: Section B is written\n * production, which the scheme answers with a Communication and Language band\n * grid and no marking point, and the Listening Comprehension Test is answered\n * from a recording the SEC does not publish. Every card carries the material it\n * is about, bound to the pages of the question paper it was printed on, and\n * states which LANGUAGE the answer is wanted in — which this subject sets per\n * ask, not per paper — together with the paper\'s own rule that Chinese answers\n * must use simplified characters.',
+    figureDir: 'public/exam-figures/mandarin-chinese',
+    blocked: new Set(),
+  },
+  'modern-greek': {
+    title: 'Modern Greek',
+    /* The syllabus these sixteen sittings were set on. Modern Greek is a
+     * NON-CURRICULAR EU LANGUAGE, examined at ONE level in every year on disk,
+     * in ONE booklet, with no listening test: one passage and three numbered
+     * groups. See MODERN_GREEK_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-modern-greek-non-curricular-eu-language',
+    specNote: 'Cards are tagged to the two halves of the Leaving Certificate Modern Greek\n * examination. Only ΟΜΑΔΑ 1η, the reading comprehension, takes cards: the\n * commentary and the essay are written production, which the scheme answers with\n * one indicative composition of its own and prices nothing inside. Every card\n * carries the article it is about, bound to the pages of the question paper it\n * was printed on, and states what the paper states — that the answer is to be\n * given in Modern Greek.',
+    figureDir: 'public/exam-figures/modern-greek',
+    blocked: new Set(),
+  },
+  arabic: {
+    title: 'Arabic',
+    /* The syllabus these ten sittings were set on, which is examined to June
+     * 2026; the redeveloped specification is examined from 2027 and no paper
+     * exists to card against it yet. */
+    specVersion: 'lc-arabic-syllabus',
+    specNote: 'Cards are tagged to the task types of the Leaving Certificate Arabic syllabus\n * examined to June 2026. A sitting is ONE booklet — Arabic sets no Listening\n * Comprehension Test — numbered 1 to 15 straight through four printed parts, so\n * an ask is cited by its number and part letter alone. The paper is set in\n * Arabic and answered in Arabic, and every card says so, because Arabic reads\n * RIGHT TO LEFT and a card that does not say which language is wanted marks a\n * right answer wrong. The SEC letters its parts (أ) to (ه); a citation letters\n * them a to e, in that same abjad order.',
+    figureDir: 'public/exam-figures/arabic',
+    blocked: new Set(),
+  },
+  'classical-studies': {
+    title: 'Classical Studies',
+    /* TWO syllabuses, because the corpus straddles the change: 2021 and 2022
+     * were sat on the ten-topic syllabus and 2023 onwards on the four-strand
+     * specification. A card is filed under the course its own paper was set
+     * on — the legacy strand in deck.ts holds the ten topics the old paper
+     * prints over its own questions. */
+    specVersion: 'lc-classical-studies-2020',
+    specNote: 'Cards are tagged to the four strands of the Classical Studies specification\n * first examined in 2023, and to the ten topics of the syllabus the 2021 and 2022\n * papers were sat on. A sitting is TWO booklets — the question paper and the\n * accompanying Paper X of photographs and images — and a card whose ask names\n * one of those images opens Paper X at the page that booklet heads with it.',
+    figureDir: 'public/exam-figures/classical-studies',
+    blocked: new Set(),
+  },
+  'applied-maths': {
+    title: 'Applied Maths',
+    /* The specification first examined in 2023 — dated because it is verified
+     * against the papers themselves: the 2023-2025 booklets head themselves
+     * "Applied Mathematics – M32 2025" and set the graph theory, critical-path
+     * analysis and difference equations the revised course added. The 2021 and
+     * 2022 papers are the OUTGOING syllabus, which the specification kept whole
+     * inside Strand 3, so both sides of the break tag against one taxonomy.
+     * See APPLIED_MATHS_STRANDS in components/MarkBank/deck.ts, which reads the
+     * four strands from the canonical curriculum. */
+    specVersion: 'lc-applied-mathematics-2021',
+    specNote: 'Cards are tagged to the four strands of the Applied Mathematics specification\n * first examined in 2023. The 2021 and 2022 papers were sat on the outgoing\n * mechanics syllabus, which Strand 3 of that specification contains whole.',
+    figureDir: 'public/exam-figures/applied-maths',
+    blocked: new Set(),
+  },
+  spanish: {
+    title: 'Spanish',
+    /* The syllabus these papers were sat under and the one still being sat.
+     * Named by what it is rather than by a year: the redeveloped Modern
+     * Foreign Languages specifications are not examined yet, so there is
+     * nothing later to tag against. */
+    specVersion: 'lc-spanish-syllabus',
+    specNote: 'Cards are tagged to the strands of the Leaving Certificate Spanish syllabus.\n * A sitting is THREE booklets — the written paper, a separate Listening\n * Comprehension Test, and at Higher a two-page loose sheet carrying the Section B\n * article. Every reading card carries the text it quotes, bound to the pages of\n * the booklet that printed it; the Section B cards bind the loose sheet by its\n * own SEC file id, not the question paper\u2019s.',
+    figureDir: 'public/exam-figures/spanish',
+    blocked: new Set(),
+  },
   'agricultural-science': {
     title: 'Agricultural Science',
     /* The NCCA specification published 2019 and first examined in 2021 — dated
@@ -175,8 +606,20 @@ const ALT = {
 
 const schemeCache = new Map();
 
+/** The level tokens a deck may carry.
+ *
+ * 'common' is not a third grade of difficulty: LCVP's Link Modules paper is
+ * sat at ONE level by everyone, which is what the SEC's own file id says with
+ * its level letter C (LC462CLP000EV.pdf) and what the canonical curriculum
+ * already records. Filing it as 'higher' would have every card cite a Higher
+ * Level paper that does not exist.
+ */
+const LEVELS = ['higher', 'ordinary', 'common'];
+const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
+const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
+
 function schemeFor(subjectId, card) {
-  const stem = `${card.year ?? 2025}-${(card.level ?? 'higher') === 'higher' ? 'hl' : 'ol'}`;
+  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
@@ -203,7 +646,54 @@ function schemeFor(subjectId, card) {
  * smaller version of the right card, it is the wrong one, and it went out
  * looking poor because nothing was checking. Greek is genuinely Greek here,
  * and the two combining marks carry p-hat and z-bar. */
-const REAL = /[\u0370-\u03FF\u0302\u0305\u02B0-\u02FF]/;
+/* Greek is genuinely Greek, the two combining marks carry p-hat and z-bar,
+ * and U+0152/U+0153 are the French OE ligature -- a letter of the language,
+ * printed in 'sœur', 'cœur', 'nœud'. Refusing it dropped a correct French
+ * card for containing a French letter. */
+/* Characters inside BROKEN's range that a scheme really does print.
+ * Greek and the hat and bar were here already; the DOT and DOUBLE DOT are
+ * Newton's notation for a derivative — the 2022 Higher Applied Maths scheme
+ * sets "ẋ = A ω cos(ωt + ε)" and "ẍ = −A ω² sin(ωt + ε)" — and U+1D62-U+1D6A
+ * are the Unicode subscripts mathtext.subscripts() itself emits, so refusing
+ * them threw away a card for spelling v_r the way the reader spelled it. */
+/* Cyrillic (U+0400-U+04FF) is genuinely Cyrillic, for the same reason Greek is
+ * genuinely Greek: it is the alphabet the Russian paper and its scheme are
+ * printed in. Left inside BROKEN, every Russian marking point read as a page
+ * of unreadable glyphs and the whole deck was refused. */
+/* Latin Extended-A (U+0100-U+017F) is genuinely Latin Extended-A, for the same
+ * reason Cyrillic is genuinely Cyrillic: ą ć ę ł ń ó ś ź ż are letters of the
+ * POLISH alphabet, printed in every Polish paper and every Polish scheme, and
+ * they reach the text layer intact. Left inside BROKEN, half the Polish deck
+ * was refused for being written in Polish -- "Księgarnia była mała" counted as
+ * four unreadable glyphs. The block also carries the French OE ligature and
+ * the ligature glyphs LIGATURES already folds, which are handled before this
+ * test is reached. */
+/* U+0218 to U+021B are the four Romanian letters with a COMMA BELOW — Ș ș Ț ț
+ * — and they are letters, not accents: "ființă socială", "Explicați pe scurt",
+ * "recunoașterea celorlalți". They sit in Latin Extended-B rather than
+ * Extended-A, so widening the class for Polish did not reach them, and every
+ * Romanian card from 2025 was refused for being written in Romanian. Only
+ * these four are added and not the block they live in, because the block is
+ * also where several BROKEN subset glyphs land — U+019E stands for "tf" and
+ * U+019F for "ti" in glyphmap.json — and those must still be refused. */
+const REAL = /[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D62-\u1D6A\u1F00-\u1FFF]/;
+/* Greek Extended (U+1F00-U+1FFF) is genuinely Greek, for the same reason
+ * U+0370-U+03FF already is: POLYTONIC Greek is the alphabet the Ancient Greek
+ * paper and its scheme are printed in, and every accented vowel in it lives
+ * here rather than in the basic block. "ἦν δέ τις ἐν τῇ στρατιᾷ Ξενοφῶν" is
+ * eight letters from this range in one printed line. Left inside BROKEN the
+ * whole Ancient Greek deck was refused for being written in Ancient Greek —
+ * the same failure Cyrillic and Latin Extended-A were fixed for, one block
+ * further along. Verified before widening: the 2015 Higher paper's page 3 was
+ * rendered at 190dpi and read beside agr_text's decoding of it, and the two
+ * agree character for character. */
+/* Script that is really script, inside the range the broken-subset test
+ * sweeps. Arabic joins it because Arabic ships: 0600-06FF is the alphabet the
+ * SEC sets its Arabic paper in, 0750-077F and 08A0-08FF the supplements. What
+ * does NOT join it is the Arabic Presentation Forms — FB50-FDFF and FE70-FEFF
+ * — because those are the SHAPED glyphs the text layer hands back and
+ * ara_text.py folds them to their letters; one reaching a card means the fold
+ * failed, which is exactly what this gate is for. */
 const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 /** Undo a subset font's broken ToUnicode map, using the table derived from the
  * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied
@@ -410,7 +900,7 @@ for (const raw of rawCards) {
       ...(!Array.isArray(binding) && binding.sourceFileid
         ? { sourceFileid: binding.sourceFileid }
         : {}),
-      attribution: `SEC ${SUBJECT.title} ${card.year} ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level examination paper — © State Examinations Commission.`,
+      attribution: `SEC ${SUBJECT.title} ${card.year} ${LEVEL_WORD[card.level] ?? 'Higher'} Level examination paper — © State Examinations Commission.`,
       presentationNote: sourceKind === 'source-text'
         ? 'Read the exact source as it appeared in the examination paper, then answer the concise prompt above.'
         : 'Open the exact examination page to use its published chart, table, photograph or diagram.',
@@ -736,6 +1226,25 @@ for (const c of cards) {
 
   const sources = [c.sourceMaterial, ...(c.additionalSourceMaterials ?? [])]
     .filter(Boolean);
+  /* A source printed in a SEPARATE official document names that document by
+   * its Paper Trail label, and the id is resolved here rather than typed by an
+   * author -- the same rule paperFileid has followed since a Biology build
+   * defaulted it to the marking scheme's id. Spanish needs it: its Higher
+   * Section B article is a two-page loose sheet (LC012ALP015EV) and the
+   * questions about it are in the question paper, so a card that let
+   * sourceFileid default would open the student on the questions and never
+   * show them the article. Unresolvable means the card is DROPPED. */
+  const unresolvedSource = sources.map((source) => {
+    if (!source.sourceLabel) return null;
+    const fileid = resolveCompanionFileid(
+      corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year ?? 2025,
+      c.level ?? 'higher', source.sourceLabel);
+    delete source.sourceLabel;
+    if (!fileid) return `source document "${source.label}" is not in the Paper Trail index`;
+    source.sourceFileid = fileid;
+    return null;
+  }).find(Boolean);
+  if (unresolvedSource) { dropped.push(`${c.id}: ${unresolvedSource}`); continue; }
   const badSource = sources.map((source, index) => sourceMaterialFault(
     source,
     index === 0 ? 'sourceMaterial' : `additionalSourceMaterials[${index - 1}]`,
@@ -761,7 +1270,19 @@ for (const c of cards) {
   if (dupeRow) { dropped.push(`${c.id}: row id "${dupeRow}" appears twice`); continue; }
 
   // A question naming lettered parts is unanswerable without the figure.
-  const invitesDrawing = /you may include a labelled/i.test(c.questionText);
+  /* The exemption is cardlint.py's INVITES_DRAWING, which this had drifted
+   * from. cardlint calls its own NAMES_LETTERS "mirrored from build-deck.mjs's
+   * namesLetters gate" while carrying the WIDER exemption — a question that
+   * asks the student to draw is not asking what a letter means, it is telling
+   * them where to put their pencil: "Draw a sectional elevation on A-A,
+   * showing the parts fully assembled with the portion of the handle labelled
+   * X in a vertical position." Two copies of one rule drift and the drift is
+   * invisible, which is why schemeText.mjs, contentFree.mjs and paperIndex.mjs
+   * exist; these two are now the same rule. Measured before converging them:
+   * across every authored deck in the repo exactly TWO cards change verdict,
+   * both DCG assembly questions whose printed drawing is bound on the question
+   * side. */
+  const invitesDrawing = /\b(?:draw|sketch|label the diagram)\b/i.test(c.questionText);
   // CASE-SENSITIVE on the letter. The SEC indexes a diagram with CAPITALS --
   // "structure A", "the part labelled B" -- and those need a key decoding what
   // each points at. A lower-case letter is the thing's own name, not an index:
@@ -852,7 +1373,7 @@ for (const c of cards) {
 
   const year = c.year ?? 2025;
   const level = c.level ?? 'higher';
-  const levelWord = level === 'higher' ? 'Higher' : 'Ordinary';
+  const levelWord = LEVEL_WORD[level] ?? 'Higher';
   // Mathematics uses A/B as marking-scheme tariff sections, while its two
   // question documents are identified by Paper 1 / Paper 2 in questionRef.
   // Passing A/B to Paper Trail honestly resolves nothing, which previously
@@ -862,7 +1383,11 @@ for (const c of cards) {
   const paperSection = SUBJECT_ID === 'maths'
     ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
     : c.section;
-  const fileid = resolvePaperFileid(SUBJECT_ID, year, level, paperSection);
+  /* History is examined in two FIELDS OF STUDY, printed as separate papers a
+   * candidate chooses between, and Paper Trail indexes them as two subjects.
+   * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
+  const fileid = resolvePaperFileid(
+    corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ level, code: `  {
@@ -920,7 +1445,7 @@ const moduleFor = (level, cards) => `/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Mark Bank — authored ${SUBJECT.title} cards, ${level === 'higher' ? 'Higher' : 'Ordinary'} Level.
+ * Mark Bank — authored ${SUBJECT.title} cards, ${LEVEL_WORD[level] ?? 'Higher'} Level.
  *
  * GENERATED by scripts/markbank/build-deck.mjs. Do not edit by hand.
  *
@@ -948,10 +1473,17 @@ ${cards.join('\n')}
 ];
 `;
 
+/* A level gets a module when the subject HAS that level, never as a matter of
+ * course: LCVP is examined at one level and writing it an empty higher.ts and
+ * ordinary.ts would put two dead decks in the picker. An existing file is
+ * always rewritten, so a subject that loses every card at a level still ends
+ * up with an honestly empty module rather than a stale one. */
 const sizes = {};
-for (const level of ['higher', 'ordinary']) {
+for (const level of LEVELS) {
   const levelCards = out.filter(c => c.level === level).map(c => c.code);
-  writeFileSync(resolve(OUT_DIR, `${level}.ts`), moduleFor(level, levelCards));
+  const path = resolve(OUT_DIR, `${level}.ts`);
+  if (!levelCards.length && !existsSync(path)) continue;
+  writeFileSync(path, moduleFor(level, levelCards));
   sizes[level] = levelCards.length;
   process.stderr.write(`  ${level}: ${levelCards.length} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }

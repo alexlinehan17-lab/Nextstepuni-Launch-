@@ -28,6 +28,7 @@ A part occasionally runs across two blocks, which shows up as text that stops
 without terminal punctuation. Continuation handles exactly that case and stops
 as soon as the sentence closes, so it cannot swallow a table.
 """
+import collections
 import os
 import re
 
@@ -104,7 +105,14 @@ RUBRIC_HEAD = re.compile(
 
 # The '\d.' head may be followed by an opening quote: Construction Studies'
 # 2019-2025 alternative Q10 opens with a quotation.
-QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]))')
+# A head may be followed by a lower-case CAMEL-CASE product name: 2024 HL
+# Technology opens Question 13 "13. eBörd is a smart table...", and the
+# capital-only lookahead rejected it -- so Question 13's two parts filed
+# themselves under Question 12, whose own ask was then dropped as a stem with
+# children. Narrow on purpose: a second character in upper case is what makes
+# it a name rather than the running prose of "1. and then...".
+QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b'
+                   '|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]|[a-z][A-Z]))')
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Letters run past (h): Chemistry's Q4 runs to (l) and Physics' lettered-choice
 # questions to (l) as well — every part after (h) was invisible and 61 shipped
@@ -242,14 +250,110 @@ def _split_own_line_markers(raw):
     return out
 
 
-def _blocks(path):
+# Subjects whose PAPERS (not just schemes) reach the text layer through a
+# mangled subset font. Technology's papers print "SecƟon A" and "quesƟons",
+# which no marker regex matches: 2021 Ordinary censused 4 asks against its
+# neighbours' 26. The repair is opt-in per subject rather than global because
+# applying it to Chemistry also repairs a PUA delta inside an equilibrium
+# equation, and the reader then reads that equation's gas-state symbol "(g)"
+# as a part marker — a false ask, and a pre-existing marker bug (2023 HL Q9
+# already shows it) that is not this pipeline's to change by accident.
+# Applied Maths' 2023-2025 answer booklets are set in the same Word subset
+# fonts: "There are ten quesƟons on this paper" and "QuesƟon 1" are what the
+# text layer holds, so QHEAD matched nothing at all and the 2024 Higher paper
+# censused as ZERO asks. The 2021-2022 papers set their algebra in the same
+# way — "଺ହ u" for six fifths of u — and glyphmap.json already knows both.
+MANGLED_PAPERS = {'technology', 'applied-maths'}
+
+_GLYPHS = {}
+
+
+def _repair(text, subject):
+    """Undo the subset-font mangling in the paper's text layer.
+
+    Word embeds its fonts as subsets whose ToUnicode CMap is wrong, so
+    "Section A" reaches the text layer as "SecƟon A". glyphmap.json is derived
+    from the corpus by derive_glyphs.py (never hand-mapped). Every key is
+    above U+0100, so ordinary text — fadas included — is untouched.
+    """
+    if subject not in _GLYPHS:
+        import json
+        here = os.path.dirname(os.path.abspath(__file__))
+        table = {}
+        for name in ('glyphmap.json', f'glyphmap-{subject}.json'):
+            path = os.path.join(here, name)
+            if os.path.exists(path):
+                with open(path) as fh:
+                    table.update({ord(k): v for k, v in json.load(fh).items()})
+        _GLYPHS[subject] = table
+    return text.translate(_GLYPHS[subject])
+
+
+# Subjects that print a question's number in a left gutter, as its own text
+# block beside the question rather than welded to it. A lone "1." is otherwise
+# indistinguishable from the answer booklet's numbered ruled lines — which is
+# why the reader refuses it (see _all_blocks) — so the join is made here, on
+# the geometry: a marker-only block whose baseline overlaps the block to its
+# right, and which sits to the left of it, IS that block's marker.
+GUTTER_MARKERS = {'technology'}
+_MARKER_ONLY = re.compile(r'^\(?(\d{1,2}|[a-z]|[ivx]{1,4})[.)]?$')
+
+
+def _join_gutter_markers(blocks):
+    """Weld a gutter marker onto the block it heads.
+
+    The blocks arrive sorted by (top, left), so a marker set in the left
+    gutter normally comes FIRST and its question follows. Not always: the
+    marker's own box can start a few points lower than the paragraph beside it
+    -- "8." at y=290 against a question block at y=287 -- and the sort then
+    puts the marker after the text it heads. Looking only forward left those
+    markers standing alone, which cost 2021 Higher its Question 8 and 2021
+    Ordinary its Question 5: the question's text was filed under the question
+    before it, and the marker became an empty question the census then
+    dropped. So the partner is looked for on both sides, forward first.
+    """
+    out, used = [], set()
+    partner = {}
+    for i, b in enumerate(blocks):
+        text = ' '.join(b[4].split())
+        if not _MARKER_ONLY.match(text):
+            continue
+        for j in list(range(i + 1, min(i + 4, len(blocks)))) + \
+                list(range(i - 1, max(i - 4, -1), -1)):
+            o = blocks[j]
+            if j in used or o[0] <= b[0] or _MARKER_ONLY.match(' '.join(o[4].split())):
+                continue
+            # Same line, give or take a leading-height's slack.
+            if abs(o[1] - b[1]) <= 14 or (b[1] <= o[3] and o[1] <= b[3]):
+                partner[i] = j
+                used.add(j)
+                break
+    for i, b in enumerate(blocks):
+        if i in used:
+            j = next((k for k, v in partner.items() if v == i), None)
+            if j is None:
+                out.append(b)
+                continue
+            m = blocks[j]
+            out.append((min(m[0], b[0]), min(m[1], b[1]), b[2], b[3],
+                        f"{' '.join(m[4].split())} {' '.join(b[4].split())}"))
+            continue
+        if i in partner:
+            continue                 # emitted at its partner's position
+        out.append(b)
+    return out
+
+
+def _blocks(path, subject=None):
     """Every non-empty text block, in page then top-to-bottom, left-to-right order."""
     with pymupdf.open(path) as doc:
         pages = [sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
                  for n in range(doc.page_count)]
+    if subject in GUTTER_MARKERS:
+        pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
         for b in page:
-            for text in _split_own_line_markers(b[4]):
+            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4]):
                 if text and not PAGE_FURNITURE.match(text):
                     yield text
 
@@ -368,10 +472,51 @@ class Paper:
         lone = [i for i, t in enumerate(blocks)
                 if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
         axis = {i for i in lone if i - 1 in lone or i + 1 in lone}
+        # A stacked fraction's DENOMINATOR welds itself onto the sentence set
+        # below it, and a denominator that happens to be the next question
+        # number opens that question early. 2021 Ordinary Applied Maths ends
+        # Q3(b) with "tan a = 3/4", the 4 sits on its own row, and the block
+        # reaches the walker as "4. The cliff is 98 m high and the particle
+        # lands...". Read as a head it took Q3(b)'s own (i) and (ii) with it,
+        # and the real "4. (a) Masses of 5 kg..." three blocks later was then
+        # rejected for going backwards -- so Question 4 lost both its letters
+        # and Q3(b) lost both its romans.
+        # Neither the number nor its neighbours can tell the two apart. What
+        # can is that the SEC prints a question's first part with it: the
+        # false head carries no part marker and the real one, printed later
+        # under the same number, does. A standalone OR between them means the
+        # second printing is a choice VARIANT (Construction Studies sets Q10
+        # twice that way), and then both are real.
+        def _dot(i):
+            m = re.match(r'^(\d{1,2})\.\s+', blocks[i])
+            return int(m.group(1)) if m else None
+
+        def _opens_part(i):
+            m = re.match(r'^\d{1,2}\.\s+', blocks[i])
+            return m is not None and _leading(blocks[i][m.end():])[:2] != (None, None)
+
+        dotted = collections.defaultdict(list)
+        for i in range(len(blocks)):
+            n = _dot(i)
+            if n is not None:
+                dotted[n].append(i)
+        false_heads = set()
+        for n, idx in dotted.items():
+            for a, b in zip(idx, idx[1:]):
+                if _opens_part(a) or not _opens_part(b):
+                    continue
+                if any(re.fullmatch(r'OR', blocks[k]) for k in range(a, b)):
+                    continue
+                false_heads.add(a)
 
         for index, text in enumerate(blocks):
             if index in contents:
                 continue
+            if index in false_heads:
+                # The fraction denominator above. Strip it and read what
+                # follows as the prose it is -- it is the tail of the part
+                # that is open, not a new question.
+                text = re.sub(r'^\d{1,2}\.\s+', '', text)
             # A standalone OR announces that the next head, though it repeats
             # the current question number, is a printed ALTERNATIVE the
             # student may choose instead — Construction Studies HL sets Q10
@@ -454,7 +599,21 @@ class Paper:
                     q, dot_heads = None, 0
                     self.stems = {}
                 if q is not None and not (q < found <= q + 3) and not variant:
-                    pass
+                    # A question's OWN number reprinted above one of its parts.
+                    # Two printings do this and neither is a new question: the
+                    # SEC re-heads a part carried onto a new page ("5. (b)"),
+                    # and a stacked fraction's denominator welds itself onto
+                    # the marker below it — 2021 HL Applied Maths sets
+                    # "8mu/5 <= T <= 16mu/5." with the 5 on its own row, and
+                    # the block reaches the walker as "5. (b) A smooth sphere
+                    # P has mass 2m...". Read as a head it is rejected here for
+                    # going backwards, and then the text no longer opens with a
+                    # marker, so the whole of Q5(b) was filed as a continuation
+                    # of Q5(a)(ii) and vanished from the census. Both readings
+                    # agree on what follows: it is this question's part.
+                    tail = text[m.end():].strip()
+                    if found == abs(q) and _leading(tail)[:2] != (None, None):
+                        text = tail
                 else:
                     if m.group(2):
                         dot_heads += 1
@@ -586,7 +745,7 @@ class Paper:
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
-            for block in _blocks(path):
+            for block in _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None):
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.

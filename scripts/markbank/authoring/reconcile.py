@@ -47,20 +47,70 @@ DECKS = os.path.join(ROOT, 'components', 'MarkBank', 'cards')
 EXCLUSIONS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'exclusions')
 
 HEAD = re.compile(
-    r'^(?P<year>\d{4})\s+(?P<level>HL|OL)'
+    # CL is the COMMON level: LCVP's Link Modules paper is sat at one level by
+    # everyone and the SEC prints "Common Level" on its front cover.
+    r'^(?P<year>\d{4})\s+(?P<level>HL|OL|CL)'
     r'(?:\s+Paper\s+(?P<paper>\d))?'
-    r'(?:\s+Section\s+(?P<section>[A-Za-z0-9]+))?'
+    # History is examined in two FIELDS OF STUDY, printed as separate papers a
+    # candidate chooses between, and the citation names which — without it the
+    # same address exists twice in one sitting.
+    r'(?:\s+(?P<field>Later Modern|Early Modern))?'
+    # The section token may carry a TOPIC and an Ordinary part with it, because
+    # History's Sections 2 and 3 restart their numbering inside every topic:
+    # "Section 2 Topic 1 A Q1" is Part A, question 1, of Ireland Topic 1, and
+    # "Section 2 Topic 1 B" is the paragraph part, which numbers nothing under
+    # it. "Section Extra A" is the unnumbered extra Part A of 2023-2025
+    # Ordinary, which the scheme heads "Extra Section A questions".
+    # Classical Studies' old paper has no section and no question number: it
+    # prints TEN TOPICS, each setting questions "(i)" to "(iv)" with lettered
+    # parts under them, and the topic-with-roman is the whole address —
+    # "2021 HL Topic 1(i) Q(a)". It names its own unit, so it is cited without
+    # a "Section" in front of it, exactly as key_label prints it.
+    r'(?:\s+(?P<topic>Topic\s+\d{1,2}\((?:i{1,3}|iv|v)\)))?'
+    r'(?:\s+Section\s+(?P<section>(?:Extra\s+)?[A-Za-z0-9]+'
+    r'(?:\s+Topic\s+\d{1,2})?(?:\s+[A-C]\b)?))?'
     # Home Economics files Section C under an elective token ("Section C E1
     # Q1(a)(i)"); the elective is not an address the paper numbers by.
     r'(?:\s+E(?P<elective>\d))?'
-    r'\s+(?:Q(?P<q>\d{1,2})(?P<alt>-alt)?|(?P<abq>ABQ))')
+    # The number is OPTIONAL, and so is the whole Q token. Religious
+    # Education's Sections B-J print no question number at all — the section is
+    # the address — so the card cites "Section E Q(b)(ii)" and the census keys
+    # it with q=None. History goes one step further: a part priced whole, with
+    # nothing numbered beneath it, is cited by its section alone.
+    r'(?:\s+(?:Q(?P<q>\d{1,2})?(?P<alt>-alt)?|(?P<abq>ABQ)))?')
 # What may follow the question number: part tokens, separated by commas,
 # "and", or a range dash. "Q3(c)(i), (ii)" covers two romans; "Q6(a)–(e)"
 # covers five letters; "Q9(vii)–(viii)" two romans with no letter above them.
-PART_TOKEN = re.compile(r'\s*(?:\(\s*([A-Za-z]{1,4})\s*\)|([\u2013\u2014-])|(,|\band\b))')
+# A sub-marker may be a DIGIT. The Baltic languages number the rows of a
+# true/false table "1." to "5." where every science paper numbers them "(i)"
+# to "(v)", and the paper wins over the scheme on the address — so
+# "2026 OL Section A Q1(h)(2)" is a citation this grammar has to read. Before
+# it did, the parser stopped at the digit and the card claimed its whole
+# LETTER, which reported three printed asks covered by three cards that each
+# said they held all three.
+# A part marker may be CYRILLIC. The Bulgarian paper letters Question 1's
+# five expressions "а) б) в) г) д)" — five Cyrillic letters that look like
+# Latin ones and are not — and a Latin-only token class read none of them, so
+# every Bulgarian citation naming a part failed to parse and its exclusions
+# reported stale forever. The mirror of this grammar in
+# test/markBankCoverage.test.ts reads the same class.
+PART_TOKEN = re.compile(
+    r'\s*(?:\(\s*([A-Za-z\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)'
+    r'|([\u2013\u2014-])|(,|\band\b))')
+# A part letter is not always a LATIN letter: Maltese letters the five
+# expressions of every Question 1 "a) b) ċ) d) e)", in the Maltese alphabet,
+# and a citation names the marker the candidate saw. The mirror of this class
+# is TAIL in test/markBankCoverage.test.ts, and the two have to agree.
+PART_TOKEN = re.compile(
+    r'\s*(?:\(\s*([A-Za-z\u010b\u010a\u0121\u0120\u0127\u0126'
+    r'\u017c\u017b]{1,4}|\d{1,2})\s*\)|([\u2013\u2014-])|(,|\band\b))')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 LETTERS = 'abcdefghijkl'
+# The Cyrillic alphabet the Bulgarian paper letters its parts with, in its own
+# printed order. Held beside LETTERS rather than folded into it, so a range
+# citation ("(а)–(в)") expands over the alphabet it was printed in.
+CYRILLIC_LETTERS = 'абвгдежзийклмн'
 
 
 def shipped_cards(subject):
@@ -85,7 +135,7 @@ def shipped_cards(subject):
         return [(card['id'], card['questionRef']) for card in cards]
 
     out = []
-    for level in ('higher', 'ordinary'):
+    for level in ('higher', 'ordinary', 'common'):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if not os.path.exists(path):
             continue
@@ -225,9 +275,16 @@ def _classify(tok):
     """letter or roman? A lone i/v/x is a roman FIRST; the census decides the
     rest at match time (Physics numbers parts (i)..(x) with no letters)."""
     t = tok.lower()
+    if len(t) == 1 and t in CYRILLIC_LETTERS:
+        return 'letter'
     if len(t) == 1 and t in LETTERS and t not in 'ivx':
         return 'letter'
     if all(c in 'ivx' for c in t):
+        return 'roman'
+    # A digit sits at the same level of the address as a roman — it is the
+    # third token, under the letter — so it is classified there and matched
+    # against the census key the paper's own numbering produced.
+    if t.isdigit():
         return 'roman'
     return 'letter' if len(t) == 1 else None
 
@@ -247,7 +304,12 @@ def parse_ref(ref):
     if not m:
         return None
     d = m.groupdict()
-    q = 'ABQ' if d['abq'] else int(d['q'])
+    # Everything after the year and level is optional, so "2021 HL" alone
+    # matches. A citation has to name SOMETHING beneath the sitting.
+    if not d['q'] and not d['abq'] and not d['section'] and not d['paper'] \
+            and not d.get('topic'):
+        return None
+    q = 'ABQ' if d['abq'] else (int(d['q']) if d['q'] else None)
     if d['alt'] and isinstance(q, int):
         q = -q
     paths, cur_letter, cur_roman, dash = [], None, None, False
@@ -266,9 +328,13 @@ def parse_ref(ref):
         cls = _classify(tok)
         tok = tok.lower()
         if cls == 'letter':
-            if dash and cur_letter and cur_roman is None:
-                lo, hi = sorted((LETTERS.index(cur_letter), LETTERS.index(tok)))
-                for x in LETTERS[lo + 1:hi + 1]:
+            alphabet = (CYRILLIC_LETTERS if tok in CYRILLIC_LETTERS
+                        else LETTERS)
+            if dash and cur_letter and cur_roman is None \
+                    and cur_letter in alphabet and tok in alphabet:
+                lo, hi = sorted((alphabet.index(cur_letter),
+                                 alphabet.index(tok)))
+                for x in alphabet[lo + 1:hi + 1]:
                     paths.append((x, None))
             else:
                 paths.append((tok, None))
@@ -290,8 +356,11 @@ def parse_ref(ref):
         paths = [(None, None)]
     return {
         'year': int(d['year']), 'level': d['level'].lower(),
-        'paper': f"Paper {d['paper']}" if d['paper'] else None,
-        'section': d['section'], 'q': q, 'paths': paths,
+        'paper': (f"Paper {d['paper']}" if d['paper']
+                  else d['field'] or None),
+        'section': d['section'] or (re.sub(r'\s+', ' ', d['topic']).strip()
+                                    if d.get('topic') else None),
+        'q': q, 'paths': paths,
     }
 
 
@@ -526,7 +595,7 @@ def content_hash(subject):
     exactly that edit passing every mechanism."""
     import hashlib
     h = hashlib.sha256()
-    for level in ('higher', 'ordinary'):
+    for level in ('higher', 'ordinary', 'common'):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())
@@ -582,7 +651,13 @@ def baseline_write(results):
             'excluded': r['excluded'], 'papers': papers_inventory(r['subject']),
         }
     with open(BASELINE, 'w', encoding='utf-8') as fh:
-        json.dump(data, fh, indent=1, sort_keys=True)
+        # Two spaces, which is how the committed baseline is formatted. At
+        # indent=1 a one-subject re-measure rewrote all 272 lines of the
+        # file and buried the entry that actually moved.
+        # Two spaces, which is how the committed file is written: writing one
+        # reformatted all 270 lines of it and buried the subject that had
+        # actually been re-measured in a whole-file diff.
+        json.dump(data, fh, indent=2, sort_keys=True)
         fh.write('\n')
     print(f'baseline written: {BASELINE}')
 

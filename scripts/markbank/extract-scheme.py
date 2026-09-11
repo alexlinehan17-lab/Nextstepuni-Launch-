@@ -33,6 +33,73 @@ except ImportError:
     fitz = None
 
 
+# A right-to-left subject cannot be read by the span reader below. Arabic's
+# text layer is painted in VISUAL order and its ligature glyphs carry several
+# characters each, so the reversal that recovers logical order has to be done
+# over glyphs, not characters, or the letters inside a ligature come out
+# backwards — "البلد" for "البدل" and forty more like it on one page. That is
+# authoring/ara_text.py's whole job, and it also reports the glyphs whose
+# ToUnicode entry is not Arabic at all rather than inventing a letter for them.
+RTL_SUBJECTS = ('arabic',)
+
+# Subjects whose PDFs embed a subset font with a broken ToUnicode map that the
+# GLOBAL glyphmap cannot repair, and whose repair therefore has to happen here,
+# in the .md the provenance gate reads.
+#
+# Only these three, deliberately. Two other subject maps exist
+# (glyphmap-arabic.json, glyphmap-technology.json) and their .md files were
+# extracted without one; applying a map to them now would move text the shipped
+# cards are already checked against, which is a re-measure and not this change.
+# The Baltic languages are extracted for the first time here, so their .md and
+# their cards are repaired together — and they have to be, because the global
+# map reads U+01A1 as "l" where the Lithuanian subset draws "ė", so a scheme
+# line left mangled would be repaired one way in the .md and another on the
+# card and no provenance check would ever match.
+GLYPH_SUBJECTS = ('lithuanian', 'latvian', 'czech')
+
+
+def _glyph_table(pdf_path: Path):
+    for part in pdf_path.parts:
+        if part in GLYPH_SUBJECTS:
+            sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+            import lt_glyphs
+            return lt_glyphs.load(part)
+    return {}
+# A subject whose pages are set in a PRE-UNICODE font. Every Ancient Greek
+# paper and scheme before 2023 sets its Greek in SPIonic, embedded with
+# WinAnsiEncoding and no ToUnicode map, so the span reader below hands back the
+# Latin-1 bytes — "h]n de/ tij" for ἦν δέ τις. authoring/agr_text.py decodes it
+# span by span; without that the .md the provenance gate reads holds beta code
+# while the cards hold Greek, and every card quoting a Greek word was dropped
+# as unprovable.
+DECODED_SUBJECTS = ('ancient-greek',)
+
+
+def _decoder(pdf_path: Path):
+    if not any(part in DECODED_SUBJECTS for part in pdf_path.parts):
+        return None
+    sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+    import agr_text
+    return agr_text
+
+
+def _is_rtl(pdf_path: Path) -> bool:
+    return any(part in RTL_SUBJECTS for part in pdf_path.parts)
+
+
+def extract_rtl(pdf_path: Path) -> str:
+    sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+    import ara_text
+    doc = fitz.open(pdf_path)
+    out = []
+    for pno, page in enumerate(doc, 1):
+        out.append(f"\n## Page {pno}\n")
+        for line in ara_text.page_lines(page):
+            out.append(line["text"])
+    doc.close()
+    return "\n".join(out)
+
+
 def extract(pdf_path: Path, marks_column: bool = False) -> str:
     """Extract, rejoining split spans and reconstructing table rows.
 
@@ -42,6 +109,7 @@ def extract(pdf_path: Path, marks_column: bool = False) -> str:
     back into one row, ordered left to right.
     """
     doc = fitz.open(pdf_path)
+    decoder = _decoder(pdf_path)
     out = []
     for pno, page in enumerate(doc, 1):
         out.append(f"\n## Page {pno}\n")
@@ -52,6 +120,11 @@ def extract(pdf_path: Path, marks_column: bool = False) -> str:
                 continue
             for line in block["lines"]:
                 text = join_spans(line["spans"])
+                if decoder:
+                    text = decoder.unligature(''.join(
+                        decoder.decode(sp["text"])
+                        if decoder.FONT in sp["font"] else sp["text"]
+                        for sp in line["spans"]))
                 if not text.strip():
                     continue
                 x0, y0, x1, y1 = line["bbox"]
@@ -98,10 +171,29 @@ MARK_CELL = re.compile(r"^[\s\d@+×x*.,;:()\[\]/m-]*\d[\s\d@+×x*.,;:()\[\]/m-]*
 # so the shape of the number settles it without needing to know the column.
 MONEY = re.compile(r"\d,\d{3}(\D|$)")
 
+# The same cell written out in WORDS, which is how the non-curricular EU
+# language schemes print theirs: "8 marks:", "4 x 2 marks", "(any 4)",
+# "5 marks - any 3", "6 Marks: 2 x 3 marks". Digits, the SEC's own words for
+# what they buy, and nothing else — a cell that says anything more than that is
+# an answer and stays in the prose.
+#
+# Without it the whole marks column of those schemes ran into the marking
+# points it prices: the 2025 Ordinary scheme breaks one cell over three
+# baselines and the .md read "usava roupas de cores vivas brilhantes, boné
+# azul, camisa vermelha, 8 marks:", so no card could quote the SEC's own
+# answer and fifty-five of them were dropped by the provenance check.
+MARK_WORDS = re.compile(
+    r"^\(?\s*(?:\d{1,2}\s*[x×]\s*)?\d{0,2}\s*"
+    r"(?:marks?|any\s+\d{1,2})"
+    r"[\s\d:;,.()x×+/–—-]*(?:marks?|any\s+\d{1,2}|lines?|"
+    r"any\s+two\s+lines)?[\s\d:;,.()x×+/–—-]*\)?$", re.I)
+
 
 def is_mark(text: str) -> bool:
     """Whether a cell states marks rather than an answer that happens to be numeric."""
-    return bool(MARK_CELL.fullmatch(text)) and not MONEY.search(text)
+    if MONEY.search(text):
+        return False
+    return bool(MARK_CELL.fullmatch(text)) or bool(MARK_WORDS.fullmatch(text))
 
 
 def render_row(row, marks_x=None) -> str:
@@ -245,7 +337,11 @@ def main() -> int:
         print("PyMuPDF is required to extract", file=sys.stderr)
         return 1
 
-    text = extract(args.path, marks_column=args.marks_column)
+    text = (extract_rtl(args.path) if _is_rtl(args.path)
+            else extract(args.path, marks_column=args.marks_column))
+    table = _glyph_table(args.path)
+    if table:
+        text = ''.join(table.get(ch, ch) for ch in text)
     hits = check(text, words)
     out = args.out or args.path.with_suffix(".md")
     out.write_text(text)

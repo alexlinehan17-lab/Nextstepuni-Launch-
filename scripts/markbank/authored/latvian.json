@@ -1,0 +1,1070 @@
+[
+ {
+  "id": "lv-2010-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2010,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-saviem-vardiem-frazes-zem-velenam",
+  "questionRef": "2010 HL Section I Q1",
+  "questionText": "Izskaidrojiet saviem vārdiem frāzes (a) zem velēnām (1.rindkopa) (b) no tumsas uz gaismu (2.rindkopa) (c) vilku likumi (3.rindkopa) (d) stiprie enkuri (10.rindkopa) (e) aksioma (5.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "miris,",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"zem velēnām (1.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "atgūt dzīves jēgu, prieku dzīvot,",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"no tumsas uz gaismu (2.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "izdzīvo stiprākais,",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"vilku likumi (3.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "dzīves pamats, pamatvērtības,",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"stiprie enkuri (10.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "visiem zināma patiesība.",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"aksioma (5.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2010 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2011-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2011,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-saviem-vardiem-frazes-kaut-kas",
+  "questionRef": "2011 HL Section I Q1",
+  "questionText": "Izskaidrojiet saviem vārdiem frāzes (a) Kaut kas briest (1.rindkopa) (b) izdīcis (3.rindkopa) (c) zosāda pārskrēja (3.rindkopa) (d) Pērn (4.rindkopa) (e) pār slieksni (8.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "notiks kaut kas jauns,",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"Kaut kas briest (1.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "lūdza kaut ko kamēr to dabūja,",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"izdīcis (3.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "uzzinot negatīvas, sliktas ziņas,",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"zosāda pārskrēja (3.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "pagājušajā gadā,",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"Pērn (4.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "ieejot pa klases durvīm",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"pār slieksni (8.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2011 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2012-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2012,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-saviem-vardiem-frazes-zalumballes-rindkopa",
+  "questionRef": "2012 HL Section I Q1",
+  "questionText": "Izskaidrojiet saviem vārdiem frāzes (a) zaļumballes (1.rindkopa) (b) nejaušība (2.rindkopa) (c) ausa gaismiņa (4.rindkopa) (d) neķildojoties (11.rindkopa) (e) lūkojas ar paļaušanos (14.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "dejas brīvā dabā",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"zaļumballes (1.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "negaidīts gadījums, stāvoklis",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"nejaušība (2.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "lec saule",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"ausa gaismiņa (4.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "nestrīdēties",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"neķildojoties (11.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "skatīties ar uzticēšanos, ticību",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"lūkojas ar paļaušanos (14.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2013-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2013,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-saviem-vardiem-frazes-cemodanus-izpakot",
+  "questionRef": "2013 HL Section I Q1",
+  "questionText": "Izskaidrojiet saviem vārdiem frāzes (a) čemodānus izpakot (3.rindkopa) - (b) zinātņu klans (3.rindkopa) (c) varētu piemist skolotāja dotumi (4.rindkopa) (d) jābūt iedvesmai (7.rindkopa) (e) nebija sevi jādzen strādāt (9.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "izkrāmēt ceļojuma somu",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"čemodānus izpakot (3.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "īpaši izredzēta zinošu, izglītotu cilvēku grupa",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"zinātņu klans (3.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ir skolotāja talants",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"piemist skolotāja dotumi (4.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "jābūt mūzai",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"jābūt iedvesmai (7.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "darīt darbu ar prieku",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"nebija sevi jādzen strādāt (9.rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2013 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2014-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2014,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardus-frazes-nokauset-fragments-plagiats",
+  "questionRef": "2014 HL Section I Q1",
+  "questionText": "Izskaidrojiet vārdus un frāzes! (a) nokausēt (2.fragments) (b) plaģiāts (4.fragments) (c) aklas sekošanas nācija (4.fragments) (d) gandarījums (5.fragments) (e) ņemt par pilnu (6.fragments)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nogurdināt, nostrādināt (2.fragments)",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"nokausēt\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cita autora darba vai tā daļas (4.fragments) (literāra, zinātniska darba, izgudrojuma u.tml.) uzdošana par savu, publicēšana ar savu vārdu vai pseidonīmu",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"plaģiāts\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "tauta, kas (4.fragments) nedomā, nerada, ar kuru viegli manipulēt; tauta, kuras vietā domā citi",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"aklas sekošanas nācija\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "apmierinājums, prieks par (5.fragments) paveikto",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"gandarījums\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "1) ticēt tam, ko saka 2) (6.fragments) uzticēties 3) ieklausīties un ticēt sacītajam",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"ņemt par pilnu\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2014 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2015-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2015,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardus-frazes-glastekrana-ierocis-rindkopa",
+  "questionRef": "2015 HL Section I Q1",
+  "questionText": "Izskaidrojiet vārdus un frāzes! (a) glāstekrāna ierocis (1.rindkopa) (b) stukačs (3.rindkopa) (c) virtuālās sienas (4.rindkopa) (d) anonīmu cilvēku trofejas (4.rindkopa) (e) knipsēšana (7.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "skārienjūtīgais telefons, viedtālrunis (1.rindkopa)",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"glāstekrāna ierocis\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ziņu pienesējs, nosūdzētājs (3.rindkopa)",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"stukačs\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "virtuālā vide, dažādi interneta portāli, kuros (4.rindkopa) izvietojam fotogrāfijas",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"virtuālās sienas\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "anonīmu, nezināmu cilvēku (4.rindkopa) fotogrāfijas",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"anonīmu cilvēku trofejas\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "fotografēšana (7.rindkopa)",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"knipsēšana\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2016-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2016,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardus-vardu-savienojumus-brivi-parvaldit",
+  "questionRef": "2016 HL Section I Q1",
+  "questionText": "Izskaidrojiet vārdus un vārdu savienojumus! (a) brīvi pārvaldīt (1.rindkopa) (b) saprasties (1.rindkopa) (c) mītnes zeme (2.rindkopa) (d) aizskart (3.rindkopa) (e) ekonomiskie bēgļi (9.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ļoti labi pārzināt, brīvi runāt, runāt bez aizķeršanās",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"brīvi pārvaldīt\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "rast kopīgu valdodu",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"saprasties\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "zeme, uz kuru cilvēks emigrējis, bet kas nav dzimtene",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"mītnes zeme\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "aizvainot, sāpināt",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"aizskart\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "cilvēki, kas emigrē no savas dzimtenes labākas dzīves meklējumos",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"ekonomiskie bēgļi\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2016 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2017-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2017,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardus-vardu-savienojumus-mudinat-rinda",
+  "questionRef": "2017 HL Section I Q1",
+  "questionText": "Izskaidrojiet vārdus un vārdu savienojumus! (a) mudināt – (10. rinda) (b) pirmās vēsmas – (21. rinda) (c) vēstījums uz ārpusi – (28. rinda) (d) pārstāvēt – (33. rinda) (e) privilēģija – (36. rinda)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(10. rinda) ierosināt, ieteikt",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"mudināt\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(21. rinda) pirmās reakcijas, pazīmes, kustības, sašūpošanās",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"pirmās vēsmas\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(28. rinda) ziņot uz ārzemēm, informēt pasauli",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"vēstījums uz ārpusi\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(33. rinda) izteikt kā viedokli, runāt valsts vārdā",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"pārstāvēt\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "(36. rinda) priekšrocība, iespēja",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"privilēģija\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2017 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2018-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2018,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardus-vardu-savienojumus-lidzcilveks-rindkopa",
+  "questionRef": "2018 HL Section I Q1",
+  "questionText": "Izskaidrojiet vārdus un vārdu savienojumus! (a) līdzcilvēks (1.rindkopa) (b) godināt (2.rindkopa) (c) tendences (3.rindkopa) (d) lokālpatrioti (5.rindkopa) (e) ikdienas varoņi (9.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Viens no vairākiem cilvēkiem, kas dzīvo kopā, vienlaikus kādos apstākļos.)",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"līdzcilvēks (1. rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(Izturoties ar goddevību, atzīt (kādu) par vērtīgu, cienījamu. Publiski cildināt.)",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"godināt (2. rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(Attīstības, pārmaiņu virziens (piemēram, procesam, darbībai, uzskatam, idejai). Tieksme (piemēram, uz kādu darbību, stāvokli).",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"tendences (3. rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(Cilvēki, kuriem ir tieksme nekritiski atzīt par labu, vērtīgu, izvirzīt pirmajā vietā to, kas saistīts ar paša tuvāko apkārtni (piemēram, dzīves, darba vietu).",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"lokālpatrioti (5. rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "(Cilvēki, kas izceļas, varoņdarbu veic/glābj kādu, pašam to tajā brīdi neapzinoties.)",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"ikdienas varoņi (9. rindkopa)\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2019-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2019,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardus-frazes-fobija-rindkopa-arzemnieks",
+  "questionRef": "2019 HL Section I Q1",
+  "questionText": "Izskaidrojiet vārdus un frāzes! (a) fobija (6.rindkopa) (b) ārzemnieks (7.rindkopa) (c) patriots (8.rindkopa) (d) „Daugavas ūdens izskalo manas sākotnējās asinis”. (8.rindkopa) (e) pilsonis (9.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "uzmācīga baiļu sajūta",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"fobija\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ārvalstnieks, svešzemnieks, iebraucējs, pagaidu iedzīvotājs; persona, kas nedzīvo attiecīgajā valstī",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"ārzemnieks\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "cilvēks, kas mīl savu tēvzemi, savu zemi, ir gatavs pašaizliedzīgi darboties tās labā",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"patriots\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "šī metafora atklāj, ka, ilgi dzīvojot Latvijā, Abu Meri sajūtas vairāk piederīgs savai mītnes zemei, nevis Libānai",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"„Daugavas ūdens izskalo manas sākotnējās asinis”\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "pavalstnieks",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"pilsonis\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 punkti)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 3 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2019 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2022-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2022,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "skaidrojiet-vardus-frazes-rava-nost-jumtu",
+  "questionRef": "2022 HL Section I Q1",
+  "questionText": "Skaidrojiet vārdus un frāzes! (a) rāva nost jumtu (3.rindkopa) (b) pārvarēt robežas (3.rindkopa) (c) uz kaut ko tiekties (4.rindkopa) (d) jēdzīga, piepildīta dzīve (11.rindkopa) (e) vilku attiecības (14.rindkopa)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "izdarīt vairāk, pārvarēti sevi",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"pārvarēt robežas\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ļoti patika, uzrunāja, iedvesmoja, aizrāva",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"rāva nost jumtu\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "kaut ko vēlēties, gribēt, strādāt un sasniegt",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"uz kaut ko tiekties\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "dzīve, kas sniedz gandarījumu, prieku",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"jēdzīga, piepildīta dzīve\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "cilvēki cits ar citu nerēķinās, katrs domā par sevi",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"vilku attiecības\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 × 1 punkts)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2022 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-1-a",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardu-savienojumus-frazes-uzvaretaju-domasana",
+  "questionRef": "2023 HL Section I Q1(a)",
+  "questionText": "Izskaidrojiet vārdu savienojumus un frāzes! uzvarētāju domāšana",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "mērķtiecība, drosme, attieksme, kas palīdz uzvarēt",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-1-c",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardu-savienojumus-frazes-pazust-tulkojuma",
+  "questionRef": "2023 HL Section I Q1(c)",
+  "questionText": "Izskaidrojiet vārdu savienojumus un frāzes! pazust tulkojumā",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nesaprast, pārprast",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-1-d",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardu-savienojumus-frazes-jaizveido-identitate",
+  "questionRef": "2023 HL Section I Q1(d)",
+  "questionText": "Izskaidrojiet vārdu savienojumus un frāzes! jāizveido identitāte, kas ļaus iet cauri ugunij",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "īpašību kopums, kurš regulāri palīdz paveikt lielas lietas, pārvarēt grūtības un izaicinājumus",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2023-hl-i-1-e",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2023,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "izskaidrojiet-vardu-savienojumus-frazes-panakumu-atslega",
+  "questionRef": "2023 HL Section I Q1(e)",
+  "questionText": "Izskaidrojiet vārdu savienojumus un frāzes! panākumu atslēga – krietni cilvēki",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "krietni cilvēki ‐ strādīgi, mērķtiecīgi cilvēki ar augstu darba ētiku",
+      "veicina, spēj sasniegt labus rezultātus, mērķus. (5 ×"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 0.50.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2024-hl-i-1-a",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "skaidrojiet-vardus-frazes-arkartigi-citigi",
+  "questionRef": "2024 HL Section I Q1(a)",
+  "questionText": "Skaidrojiet vārdus un frāzes! ārkārtīgi cītīgi",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ļoti kārtīgi, ļoti rūpīgi, ļoti daudz",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3,
+    4
+   ],
+   "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2024-hl-i-1-c",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "skaidrojiet-vardus-frazes-atbidit-mala",
+  "questionRef": "2024 HL Section I Q1(c)",
+  "questionText": "Skaidrojiet vārdus un frāzes! atbīdīt malā",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "atteikties, neiekļaut repertuārā",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3,
+    4
+   ],
+   "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2024-hl-i-1-d",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "skaidrojiet-vardus-frazes-dveseles-maize",
+  "questionRef": "2024 HL Section I Q1(d)",
+  "questionText": "Skaidrojiet vārdus un frāzes! dvēseles maize",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sirdslieta, bauda, gandarījums",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3,
+    4
+   ],
+   "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2024-hl-i-1-e",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2024,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "skaidrojiet-vardus-frazes-kops-berna-kajas",
+  "questionRef": "2024 HL Section I Q1(e)",
+  "questionText": "Skaidrojiet vārdus un frāzes! kopš bērna kājas",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "bērnībā, jaunā vecumā, kopš mazām dienām (5 ×",
+    "marks": 1,
+    "contextNote": "The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prints the tariff as '(5 × 1 punkti) on Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. Paper/scheme wording agreement 1.00.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3,
+    4
+   ],
+   "attribution": "SEC Latvian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ },
+ {
+  "id": "lv-2026-hl-i-1",
+  "subjectId": "latvian",
+  "level": "higher",
+  "year": 2026,
+  "section": "U1",
+  "topicId": "latvian-0-0",
+  "conceptId": "skaidrojiet-vardus-frazes-izpratne-lidzbiedrs-pratiba",
+  "questionRef": "2026 HL Section I Q1",
+  "questionText": "Skaidrojiet vārdus un frāzes! (a) izpratne (b) līdzbiedrs (c) pratība (d) pētījums (e) pelnīt maizi",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "stāvoklis, kad ir uztverta un pilnīgi saprasta (kā) būtība, saturs, nozīme; spēja; prasme uztvert un saprast (kā) būtību, saturu, nozīmi;",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"Izpratne\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cilvēks, ar kuru ir kopā, vienlaikus kādā pasākumā, norisē, apstākļos;",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"līdzbiedrs\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "spēju un īpašību kopums (kādas darbības, uzdevumu veikšanai), mācēšana;",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"pratība\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "darbs, kurā atspoguļota vispusīga, parasti jauna, informācija, kas iegūta, vācot faktus, ziņas, novērojot, eksperimentējot u. tml.; pētīšanas rezultāts.",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"pētījums\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "pelnīt iztiku, strādāt;",
+    "marks": null,
+    "contextNote": "The scheme prints this as the meaning of \"pelnīt maizi\". The examination prints this question in Latvian and it is answered in LATVIAN."
+   }
+  ],
+  "notes": "The scheme prices this question '(5 × 1)' and prints no mark against any of its 5 parts, so the card carries the question total and the SEC's gloss for each expression. The paper prints the ask on page 4 of the question booklet.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Latvian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Latvian 2026 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination prints this question in Latvian and it is answered in LATVIAN."
+  }
+ }
+]

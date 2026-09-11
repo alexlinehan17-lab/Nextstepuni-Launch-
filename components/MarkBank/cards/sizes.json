@@ -58,5 +58,133 @@
  "engineering": {
   "higher": 313,
   "ordinary": 153
+ },
+ "religious-education": {
+  "higher": 135,
+  "ordinary": 153
+ },
+ "lcvp": {
+  "common": 314
+ },
+ "technology": {
+  "higher": 357,
+  "ordinary": 359
+ },
+ "history": {
+  "higher": 80,
+  "ordinary": 669
+ },
+ "french": {
+  "higher": 110,
+  "ordinary": 150
+ },
+ "applied-maths": {
+  "higher": 130,
+  "ordinary": 145
+ },
+ "german": {
+  "higher": 111,
+  "ordinary": 153
+ },
+ "spanish": {
+  "higher": 204,
+  "ordinary": 143
+ },
+ "italian": {
+  "higher": 172,
+  "ordinary": 178
+ },
+ "russian": {
+  "higher": 83,
+  "ordinary": 116
+ },
+ "japanese": {
+  "higher": 339,
+  "ordinary": 261
+ },
+ "classical-studies": {
+  "higher": 240,
+  "ordinary": 276
+ },
+ "latin": {
+  "higher": 145,
+  "ordinary": 82
+ },
+ "polish": {
+  "higher": 115,
+  "ordinary": 122
+ },
+ "arabic": {
+  "higher": 125,
+  "ordinary": 125
+ },
+ "portuguese": {
+  "higher": 94,
+  "ordinary": 79
+ },
+ "romanian": {
+  "higher": 50
+ },
+ "dutch": {
+  "higher": 42
+ },
+ "lithuanian": {
+  "higher": 163,
+  "ordinary": 143
+ },
+ "latvian": {
+  "higher": 20
+ },
+ "czech": {
+  "higher": 15
+ },
+ "ancient-greek": {
+  "higher": 369,
+  "ordinary": 14
+ },
+ "modern-greek": {
+  "higher": 79
+ },
+ "hungarian": {
+  "higher": 168
+ },
+ "bulgarian": {
+  "higher": 141
+ },
+ "slovakian": {
+  "higher": 140
+ },
+ "swedish": {
+  "higher": 121
+ },
+ "estonian": {
+  "higher": 107
+ },
+ "finnish": {
+  "higher": 90
+ },
+ "croatian": {
+  "higher": 100
+ },
+ "danish": {
+  "higher": 79
+ },
+ "slovenian": {
+  "higher": 23
+ },
+ "mandarin-chinese": {
+  "higher": 114,
+  "ordinary": 87
+ },
+ "ukrainian": {
+  "higher": 20
+ },
+ "dcg": {
+  "higher": 307,
+  "ordinary": 238
+ },
+ "physical-education": {
+  "higher": 125,
+  "ordinary": 96
  }
 }

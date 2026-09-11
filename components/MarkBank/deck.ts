@@ -54,6 +54,70 @@ const artCurriculum = CURRICULUM.find(subject => subject.id === 'art');
 if (!artCurriculum) throw new Error('Canonical Art curriculum is missing');
 const geographyCurriculum = CURRICULUM.find(subject => subject.id === 'geography');
 if (!geographyCurriculum) throw new Error('Canonical Geography curriculum is missing');
+const lcvpCurriculum = CURRICULUM.find(subject => subject.id === 'lcvp-link-modules');
+if (!lcvpCurriculum) throw new Error('Canonical LCVP Link Modules curriculum is missing');
+const frenchCurriculum = CURRICULUM.find(subject => subject.id === 'french');
+if (!frenchCurriculum) throw new Error('Canonical French curriculum is missing');
+const germanCurriculum = CURRICULUM.find(subject => subject.id === 'german');
+if (!germanCurriculum) throw new Error('Canonical German curriculum is missing');
+const italianCurriculum = CURRICULUM.find(subject => subject.id === 'italian');
+if (!italianCurriculum) throw new Error('Canonical Italian curriculum is missing');
+const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applied-mathematics');
+if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
+const dcgCurriculum = CURRICULUM.find(subject => subject.id === 'design-and-communication-graphics');
+if (!dcgCurriculum) throw new Error('Canonical Design and Communication Graphics curriculum is missing');
+const spanishCurriculum = CURRICULUM.find(subject => subject.id === 'spanish');
+if (!spanishCurriculum) throw new Error('Canonical Spanish curriculum is missing');
+const russianCurriculum = CURRICULUM.find(subject => subject.id === 'russian');
+if (!russianCurriculum) throw new Error('Canonical Russian curriculum is missing');
+const japaneseCurriculum = CURRICULUM.find(subject => subject.id === 'japanese');
+if (!japaneseCurriculum) throw new Error('Canonical Japanese curriculum is missing');
+const polishCurriculum = CURRICULUM.find(subject => subject.id === 'polish');
+if (!polishCurriculum) throw new Error('Canonical Polish curriculum is missing');
+const portugueseCurriculum = CURRICULUM.find(subject => subject.id === 'portuguese');
+if (!portugueseCurriculum) throw new Error('Canonical Portuguese curriculum is missing');
+const romanianCurriculum = CURRICULUM.find(subject => subject.id === 'romanian');
+if (!romanianCurriculum) throw new Error('Canonical Romanian curriculum is missing');
+const dutchCurriculum = CURRICULUM.find(subject => subject.id === 'dutch');
+if (!dutchCurriculum) throw new Error('Canonical Dutch curriculum is missing');
+const hungarianCurriculum = CURRICULUM.find(subject => subject.id === 'hungarian');
+if (!hungarianCurriculum) throw new Error('Canonical Hungarian curriculum is missing');
+const bulgarianCurriculum = CURRICULUM.find(subject => subject.id === 'bulgarian');
+if (!bulgarianCurriculum) throw new Error('Canonical Bulgarian curriculum is missing');
+const slovakianCurriculum = CURRICULUM.find(subject => subject.id === 'slovakian');
+if (!slovakianCurriculum) throw new Error('Canonical Slovakian curriculum is missing');
+const swedishCurriculum = CURRICULUM.find(subject => subject.id === 'swedish');
+if (!swedishCurriculum) throw new Error('Canonical Swedish curriculum is missing');
+const estonianCurriculum = CURRICULUM.find(subject => subject.id === 'estonian');
+if (!estonianCurriculum) throw new Error('Canonical Estonian curriculum is missing');
+const finnishCurriculum = CURRICULUM.find(subject => subject.id === 'finnish');
+if (!finnishCurriculum) throw new Error('Canonical Finnish curriculum is missing');
+const croatianCurriculum = CURRICULUM.find(subject => subject.id === 'croatian');
+if (!croatianCurriculum) throw new Error('Canonical Croatian curriculum is missing');
+const danishCurriculum = CURRICULUM.find(subject => subject.id === 'danish');
+if (!danishCurriculum) throw new Error('Canonical Danish curriculum is missing');
+const slovenianCurriculum = CURRICULUM.find(subject => subject.id === 'slovenian');
+if (!slovenianCurriculum) throw new Error('Canonical Slovenian curriculum is missing');
+const lithuanianCurriculum = CURRICULUM.find(subject => subject.id === 'lithuanian');
+if (!lithuanianCurriculum) throw new Error('Canonical Lithuanian curriculum is missing');
+const latvianCurriculum = CURRICULUM.find(subject => subject.id === 'latvian');
+if (!latvianCurriculum) throw new Error('Canonical Latvian curriculum is missing');
+const czechCurriculum = CURRICULUM.find(subject => subject.id === 'czech');
+if (!czechCurriculum) throw new Error('Canonical Czech curriculum is missing');
+const classicalStudiesCurriculum = CURRICULUM.find(subject => subject.id === 'classical-studies');
+if (!classicalStudiesCurriculum) throw new Error('Canonical Classical Studies curriculum is missing');
+const latinCurriculum = CURRICULUM.find(subject => subject.id === 'latin');
+if (!latinCurriculum) throw new Error('Canonical Latin curriculum is missing');
+const arabicCurriculum = CURRICULUM.find(subject => subject.id === 'arabic');
+if (!arabicCurriculum) throw new Error('Canonical Arabic curriculum is missing');
+const ancientGreekCurriculum = CURRICULUM.find(subject => subject.id === 'ancient-greek');
+if (!ancientGreekCurriculum) throw new Error('Canonical Ancient Greek curriculum is missing');
+const modernGreekCurriculum = CURRICULUM.find(subject => subject.id === 'modern-greek');
+const ukrainianCurriculum = CURRICULUM.find(subject => subject.id === 'ukrainian');
+const mandarinChineseCurriculum = CURRICULUM.find(subject => subject.id === 'mandarin-chinese');
+const physicalEducationCurriculum = CURRICULUM.find(subject => subject.id === 'physical-education');
+if (!physicalEducationCurriculum) throw new Error('Canonical Physical Education curriculum is missing');
+if (!modernGreekCurriculum) throw new Error('Canonical Modern Greek curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -882,6 +946,740 @@ export const ENGINEERING_STRANDS: StrandRef[] = [
   },
 ];
 
+
+/**
+ * Religious Education's own ten sections, A to J, which are what the paper
+ * prints over every ask and what the syllabus calls its content areas.
+ *
+ * The grouping into three is the syllabus's and the paper's: Section A is
+ * compulsory, two of B-D are answered, and one or two of E-J. The strand
+ * TITLES avoid the words the retired Biology syllabus used for its units, but
+ * the structure here is the live one — Religious Education is still examined
+ * on the 2003 syllabus and there is nothing redeveloped to tag against.
+ */
+export const RELIGIOUS_EDUCATION_STRANDS: StrandRef[] = [
+  {
+    id: 're1', label: 'Part 1', title: 'The Search — compulsory section',
+    topics: [
+      { id: 're-a', code: 'A', title: 'The Search for Meaning and Values' },
+    ],
+  },
+  {
+    id: 're2', label: 'Part 2', title: 'Foundations — answer two of three',
+    topics: [
+      { id: 're-b', code: 'B', title: 'Christianity: Origins and Contemporary Expressions' },
+      { id: 're-c', code: 'C', title: 'World Religions' },
+      { id: 're-d', code: 'D', title: 'Moral Decision-Making' },
+    ],
+  },
+  {
+    id: 're3', label: 'Part 3', title: 'Religion in context — answer one or two',
+    topics: [
+      { id: 're-e', code: 'E', title: 'Religion and Gender' },
+      { id: 're-f', code: 'F', title: 'Issues of Justice and Peace' },
+      { id: 're-g', code: 'G', title: 'Worship, Prayer and Ritual' },
+      { id: 're-h', code: 'H', title: 'The Bible: Literature and Sacred Text' },
+      { id: 're-i', code: 'I', title: 'Religion: The Irish Experience' },
+      { id: 're-j', code: 'J', title: 'Religion and Science' },
+    ],
+  },
+];
+/**
+ * The LCVP Link Modules programme statement: two link modules of five units
+ * each. Adapted from the canonical curriculum rather than retyped here, for
+ * the reason the English, Irish, Art and Geography strands are — a second
+ * copy of a taxonomy drifts, and a card filed against a topic id the registry
+ * does not hold resolves into a specification that contains no such topic.
+ *
+ * The codes are the SEC's own way of naming a unit inside its module: "1.2"
+ * is Link Module 1, Unit 2.
+ */
+export const LCVP_STRANDS: StrandRef[] = lcvpCurriculum.strands.map((strand, moduleIndex) => ({
+  id: strand.id,
+  label: `Module ${moduleIndex + 1}`,
+  title: strand.name,
+  topics: strand.subtopics
+    .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map((topic, unitIndex) => ({
+      id: topic.id,
+      code: `${moduleIndex + 1}.${unitIndex + 1}`,
+      title: topic.name.replace(/^Unit \d+: /, ''),
+    })),
+}));
+/**
+ * The Leaving Certificate Technology syllabus, as the written paper examines
+ * it. Seven core areas carry Sections A and B; the five options are Section
+ * C, where the paper prints one 40-mark question per option and the candidate
+ * answers one. The paper names the options itself -- "Option 3 - Information
+ * and Communications Technology" -- and does so identically in all ten
+ * sittings, so an option card's heading is read off the page rather than
+ * inferred. See curriculumRegistry.ts, specification "technology:current".
+ */
+/**
+ * The Leaving Certificate French syllabus, adapted from the canonical
+ * curriculum rather than retyped, for the reason the English, Irish, Art,
+ * Geography and LCVP strands are: a second copy of a taxonomy drifts, and a
+ * card filed against a topic id the registry does not hold resolves into a
+ * specification that contains no such topic.
+ *
+ * Mark Bank cards reach only two of these strands — Reading Comprehension and
+ * the written-production tasks — because the rest of the examination is the
+ * oral, the aural and the essay, none of which the written scheme answers with
+ * liftable content. The whole taxonomy still ships: a student browsing French
+ * should see the shape of their course, not only the part that is carded.
+ */
+export const FRENCH_STRANDS: StrandRef[] = frenchCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+/**
+ * The Leaving Certificate Spanish syllabus, adapted from the canonical
+ * curriculum rather than retyped, for the reason the English, Irish, Art,
+ * Geography, LCVP and French strands are: a second copy of a taxonomy drifts,
+ * and a card filed against a topic id the registry does not hold resolves into
+ * a specification that contains no such topic.
+ *
+ * Mark Bank cards reach three of these strands — the reading-comprehension
+ * task types, the prescribed literature and, through them, the written texts
+ * the paper sets — because the rest of the examination is the oral, the aural
+ * and the written production, none of which the scheme answers with liftable
+ * content. The whole taxonomy still ships: a student browsing Spanish should
+ * see the shape of their course, not only the part that is carded.
+ */
+export const SPANISH_STRANDS: StrandRef[] = spanishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
+ * The Leaving Certificate German syllabus, adapted from the canonical
+ * curriculum rather than retyped, for the reason the French strands are: a
+ * second copy of a taxonomy drifts, and a card filed against a topic id the
+ * registry does not hold resolves into a specification that contains no such
+ * topic.
+ *
+ * Mark Bank cards reach three of these topics — the two reading-comprehension
+ * task types and Angewandte Grammatik — because the rest of the examination is
+ * the oral, the aural and the two written-production tasks, none of which the
+ * written scheme answers with liftable content: it prices them with a content
+ * and expression GRID. The whole taxonomy still ships: a student browsing
+ * German should see the shape of their course, not only the part that is
+ * carded.
+ */
+export const GERMAN_STRANDS: StrandRef[] = germanCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
+ * Italian's own published taxonomy, read from the canonical curriculum rather
+ * than restated here. Its Reading Comprehension strand names the five task
+ * types this paper actually sets — a journalistic passage and an unseen
+ * literary one at Higher, a prescribed text, short passages and publicity
+ * pieces at Ordinary — which is exactly how the paper divides its sections,
+ * so a card is filed by the section it was printed in.
+ */
+/**
+ * Russian's own published taxonomy, read from the canonical curriculum rather
+ * than restated here. Its fourth strand, "Written Paper — Task Types", names
+ * the paper's own questions one for one — comprehension, summary in English,
+ * language awareness, structuring discourse, information retrieval, mix and
+ * match, short answers, grammar, short essay, guided writing — which is why a
+ * card is filed by the question it was printed under.
+ *
+ * Mark Bank cards reach four of those task types, because the rest of the
+ * examination is the oral, the aural and the written production: the scheme
+ * prices the essay and the guided writing with a content-and-expression GRID,
+ * and the listening asks can only be answered from the recording. The whole
+ * taxonomy still ships: a student browsing Russian should see the shape of
+ * their course, not only the part that is carded.
+ */
+export const RUSSIAN_STRANDS: StrandRef[] = russianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
+ * Polish — a NON-CURRICULAR EU LANGUAGE, which is a different kind of subject
+ * to the six modern languages already in the bank: there is no Leaving
+ * Certificate syllabus for it, and the SEC sets it against the language
+ * itself. Its fourth strand, "Written Paper — Task Types", names the paper's
+ * own two eras one for one, and a card is filed by the task it was printed as.
+ *
+ * Mark Bank cards reach two of those four, because the rest of the examination
+ * is the written production and the aural: the scheme prices the essay and the
+ * Section B tasks with a content-and-expression GRID, and the listening asks
+ * can only be answered from the recording. The whole taxonomy still ships — a
+ * student browsing Polish should see the shape of their examination, not only
+ * the part that is carded.
+ */
+export const POLISH_STRANDS: StrandRef[] = polishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
+ * Portuguese — the second NON-CURRICULAR EU LANGUAGE in the bank, and the one
+ * that shows what the family looks like across a syllabus change. Its third
+ * strand, "Written Paper — Task Types", names both examinations one for one:
+ * the CLASSIC paper sat to 2021 (one text, six open questions, one commentary)
+ * and the paper it was rebuilt into in 2022 (Part A Reading, Part B Written
+ * Production, and a Listening Comprehension Test in its own booklet).
+ *
+ * Mark Bank cards reach the two reading topics only, because the rest of the
+ * examination is written production and listening: the scheme answers those
+ * with a content-and-language band grid and with a recording no card can
+ * carry. The whole taxonomy still ships — a student browsing Portuguese should
+ * see the shape of their examination, not only the part that is carded.
+ */
+export const PORTUGUESE_STRANDS: StrandRef[] = portugueseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/* Lithuanian's whole taxonomy ships, not only the part that is carded.
+ * Its third strand names the paper's own task types and two of them take
+ * cards — the open questions of I Dalis and the new format's reading tasks.
+ * The commentary, the essay and the written production are answered by a
+ * model paragraph and a marking grid, and the listening asks can only be
+ * answered from the recording. A student browsing Lithuanian should see the
+ * shape of their examination, not only the part that is carded. */
+export const LITHUANIAN_STRANDS: StrandRef[] = lithuanianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
+ * Romanian and Dutch — the two NON-CURRICULAR EU LANGUAGES whose examination
+ * never changed. Both are sat as ONE booklet at ONE level in every year of the
+ * corpus, with no Listening Comprehension Test, and both published taxonomies
+ * name that paper's parts one for one: a vocabulary question and a set of
+ * comprehension questions in Part I, and the written production after it.
+ *
+ * Mark Bank cards reach the reading topics only: the scheme prices the written
+ * parts by percentages of qualities (Romanian) or prints nothing under them at
+ * all (Dutch). The whole taxonomy still ships — a student browsing either
+ * should see the shape of their examination, not only the part that is carded.
+ */
+export const ROMANIAN_STRANDS: StrandRef[] = romanianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+/* Latvian and Czech print the OLD examination in every year of the corpus —
+ * an article, six questions on it, a commentary and an essay, at one level —
+ * so their taxonomy is two strands rather than Lithuanian's three. Only the
+ * vocabulary subtopic takes cards: the scheme answers everything else with a
+ * model paragraph or a description of a good essay. The whole taxonomy still
+ * ships, so a student sees the shape of their examination. */
+export const LATVIAN_STRANDS: StrandRef[] = latvianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const DUTCH_STRANDS: StrandRef[] = dutchCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const HUNGARIAN_STRANDS: StrandRef[] = hungarianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const BULGARIAN_STRANDS: StrandRef[] = bulgarianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const SLOVAKIAN_STRANDS: StrandRef[] = slovakianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const SWEDISH_STRANDS: StrandRef[] = swedishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const ESTONIAN_STRANDS: StrandRef[] = estonianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const FINNISH_STRANDS: StrandRef[] = finnishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const CROATIAN_STRANDS: StrandRef[] = croatianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const DANISH_STRANDS: StrandRef[] = danishCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const SLOVENIAN_STRANDS: StrandRef[] = slovenianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+export const CZECH_STRANDS: StrandRef[] = czechCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const ITALIAN_STRANDS: StrandRef[] = italianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+/**
+ * Arabic ships its whole published taxonomy, and the deck cards two corners of
+ * it: the reading comprehension's multiple choice and the whole of Part 3,
+ * Use of Language. The rest of the paper — the two directed-writing asks, the
+ * nine literature alternatives and the composition — is marked by a
+ * Communication-and-Content grid over a list the scheme states is not
+ * exhaustive, which is the same written-production exclusion the other six
+ * modern languages carry. A student browsing Arabic should still see the shape
+ * of their course, not only the part that is carded.
+ */
+export const ARABIC_STRANDS: StrandRef[] = arabicCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const JAPANESE_STRANDS: StrandRef[] = japaneseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+/**
+ * Classical Studies is TWO courses, and the bank's window holds both.
+ *
+ * The four STRANDS come from the canonical curriculum — the specification
+ * first examined in 2023, which the 2023, 2024 and 2025 papers were sat on.
+ * The fifth strand is the ten TOPICS of the syllabus the 2021 and 2022 papers
+ * were sat on, printed by those papers over their own questions and identical
+ * in all four of those sittings. A card is filed under the course its own
+ * paper was set on: filing a 2021 question about Thucydides under a 2023
+ * strand would put it in front of a student revising something else, and
+ * dropping it would throw away 388 of the 640 asks the papers print.
+ */
+/**
+ * Latin's cards tag against the LEGACY written paper, and that is the whole
+ * taxonomy question this subject asks.
+ *
+ * The canonical curriculum carries four strands: the redeveloped
+ * specification's "Latin Language" and "Literature in Context", a "Capstone
+ * Text and Assessment" strand describing an examination whose first sitting
+ * has not happened, and "Legacy Written Paper — Task Types", whose seven task
+ * types ARE the paper every sitting in the corpus was sat on:
+ *
+ *   Composition into Latin · Unseen Comprehension · Unseen Translation ·
+ *   Prescribed Prose · Prescribed Poetry · Grammar, Accidence & Scansion ·
+ *   Roman History & Civilisation
+ *
+ * A card is filed under the task type its own question sets. The other three
+ * strands still ship, because a student browsing Latin should see the shape of
+ * their course — including the capstone and the research study — and not only
+ * the part the bank can card.
+ */
+export const LATIN_STRANDS: StrandRef[] = latinCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
+ * Ancient Greek ships its whole published taxonomy, and the deck cards the
+ * fifth strand of it: "Legacy Written Paper — Task Types", which is the paper
+ * every sitting in the bank was sat on. Its Strands 1 to 3 describe the
+ * redeveloped course — a capstone text and a research study — that the SEC has
+ * not examined yet, and a student browsing Ancient Greek should see the shape
+ * of their course and not only the part the bank can card.
+ */
+export const ANCIENT_GREEK_STRANDS: StrandRef[] = ancientGreekCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/**
+ * Modern Greek's taxonomy is the paper's own two halves, and the deck cards the
+ * first: Part I, the reading comprehension. Part II is written production —
+ * a hundred-word commentary and a three-hundred-word essay — which the scheme
+ * answers with one indicative composition of its own and prices nothing inside.
+ */
+/* Mandarin Chinese ships ONE strand of its published specification: the fourth,
+ * "Written Paper — Task Types", whose six subtopics are the task types this
+ * examination actually sets — notices and timetables, nursery rhymes,
+ * descriptive passages, emails and messages, the Ordinary paper's
+ * word-and-picture matching, and Section B's written production. The other
+ * three strands describe the whole course, including the oral and the
+ * portfolio, which no written card can be tagged against; they ship unused so
+ * a student sees the specification they are sitting. */
+export const MANDARIN_CHINESE_STRANDS: StrandRef[] = mandarinChineseCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Strand ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+/* Maltese and Ukrainian publish the same two strands Modern Greek does, and
+ * for the same reason: the examination is a reading comprehension and a piece
+ * of written production, and nothing else. */
+
+export const UKRAINIAN_STRANDS: StrandRef[] = ukrainianCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Part ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const MODERN_GREEK_STRANDS: StrandRef[] = modernGreekCurriculum.strands.map((strand, index) => ({
+  id: strand.id,
+  label: `Part ${index + 1}`,
+  title: strand.name,
+  topics: strand.subtopics.map((topic, topicIndex) => ({
+    id: topic.id,
+    code: `${index + 1}.${topicIndex + 1}`,
+    title: topic.name,
+  })),
+}));
+
+export const CLASSICAL_STUDIES_STRANDS: StrandRef[] = [
+  ...classicalStudiesCurriculum.strands.map((strand, index) => ({
+    id: strand.id,
+    label: `Strand ${index + 1}`,
+    title: strand.name,
+    topics: strand.subtopics.map((topic, topicIndex) => ({
+      id: topic.id,
+      code: `${index + 1}.${topicIndex + 1}`,
+      title: topic.name,
+    })),
+  })),
+  {
+    id: 'classical-studies-legacy', label: 'To 2022', title: 'Ten-topic syllabus, examined to 2022',
+    topics: [
+      { id: 'classical-studies-legacy-1', code: 'T1', title: 'Athens at War' },
+      { id: 'classical-studies-legacy-2', code: 'T2', title: 'Alexander the Great' },
+      { id: 'classical-studies-legacy-3', code: 'T3', title: 'Life and Thought in the Late Roman Republic' },
+      { id: 'classical-studies-legacy-4', code: 'T4', title: 'Roman Historians' },
+      { id: 'classical-studies-legacy-5', code: 'T5', title: 'Greek Drama' },
+      { id: 'classical-studies-legacy-6', code: 'T6', title: 'Ancient Epic' },
+      { id: 'classical-studies-legacy-7', code: 'T7', title: 'Writers of the Augustan Age' },
+      { id: 'classical-studies-legacy-8', code: 'T8', title: 'Art and Architecture in Greek Society' },
+      { id: 'classical-studies-legacy-9', code: 'T9', title: 'The Philosopher in Society: Socrates and Plato' },
+      { id: 'classical-studies-legacy-10', code: 'T10', title: 'Roman Art and Architecture' },
+    ],
+  },
+];
+export const TECHNOLOGY_STRANDS: StrandRef[] = [
+  {
+    id: 'tech-core', label: 'Core', title: 'Core',
+    topics: [
+      { id: 'tech-core-design', code: 'C1', title: 'A process of design' },
+      { id: 'tech-core-project', code: 'C2', title: 'Project and quality management' },
+      { id: 'tech-core-materials', code: 'C3', title: 'Materials and production' },
+      { id: 'tech-core-graphics', code: 'C4', title: 'Communications and graphic media' },
+      { id: 'tech-core-ict', code: 'C5', title: 'Information and communications technology' },
+      { id: 'tech-core-structures', code: 'C6', title: 'Structures and mechanisms' },
+      { id: 'tech-core-energy', code: 'C7', title: 'Energy, electricity and electronics' },
+    ],
+  },
+  {
+    id: 'tech-options', label: 'Options', title: 'Options',
+    topics: [
+      { id: 'tech-opt-control', code: 'O1', title: 'Applied control systems' },
+      { id: 'tech-opt-electronics', code: 'O2', title: 'Electronics and control' },
+      { id: 'tech-opt-ict', code: 'O3', title: 'Information and communications technology' },
+      { id: 'tech-opt-manufacturing', code: 'O4', title: 'Manufacturing systems' },
+      { id: 'tech-opt-materials', code: 'O5', title: 'Materials technology' },
+    ],
+  },
+];
+
+/**
+ * History's four fields-and-areas, and the six topics each of them holds.
+ *
+ * A candidate sits ONE field of study — Later Modern 1815-1993 or Early Modern
+ * 1492-1815 — and answers on two topics inside it. The SEC prints both fields
+ * as separate papers on the same afternoon and marks them in one scheme, so
+ * both are carded and a citation names which: "2021 HL Early Modern Section 2
+ * Topic 3 Q1". Mirrors the canonical curriculum's four History groups
+ * (curriculum.ts, history-0 .. history-3) and the topic titles the papers
+ * themselves print over every question.
+ */
+export const HISTORY_STRANDS: StrandRef[] = [
+  {
+    id: 'hist-em-irl', label: 'Early Modern', title: 'Early Modern field — Ireland, 1494-1815',
+    topics: [
+      { id: 'hist-em-irl-1', code: 'IRL 1', title: 'Reform and Reformation in Tudor Ireland, 1494-1558' },
+      { id: 'hist-em-irl-2', code: 'IRL 2', title: 'Rebellion and conquest in Elizabethan Ireland, 1558-1603' },
+      { id: 'hist-em-irl-3', code: 'IRL 3', title: 'Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660' },
+      { id: 'hist-em-irl-4', code: 'IRL 4', title: 'Establishing a colonial ascendancy, 1660-1715' },
+      { id: 'hist-em-irl-5', code: 'IRL 5', title: 'Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770' },
+      { id: 'hist-em-irl-6', code: 'IRL 6', title: 'The end of the Irish kingdom and the establishment of the Union, 1770-1815' },
+    ],
+  },
+  {
+    id: 'hist-em-eur', label: 'Early Modern', title: 'Early Modern field — Europe and the wider world, 1492-1815',
+    topics: [
+      { id: 'hist-em-eur-1', code: 'EUR 1', title: 'Europe from Renaissance to Reformation, 1492-1567' },
+      { id: 'hist-em-eur-2', code: 'EUR 2', title: 'Religion and power: politics in the later 16th century, 1567-1609' },
+      { id: 'hist-em-eur-3', code: 'EUR 3', title: 'The eclipse of Old Europe, 1609-1660' },
+      { id: 'hist-em-eur-4', code: 'EUR 4', title: 'Europe in the age of Louis XIV, 1660-1715' },
+      { id: 'hist-em-eur-5', code: 'EUR 5', title: 'Establishing empires, 1715-1775' },
+      { id: 'hist-em-eur-6', code: 'EUR 6', title: 'Empires in revolution, 1775-1815' },
+    ],
+  },
+  {
+    id: 'hist-lm-irl', label: 'Later Modern', title: 'Later Modern field — Ireland, 1815-1993',
+    topics: [
+      { id: 'hist-lm-irl-1', code: 'IRL 1', title: 'Ireland and the Union, 1815-1870' },
+      { id: 'hist-lm-irl-2', code: 'IRL 2', title: 'Movements for political and social reform, 1870-1914' },
+      { id: 'hist-lm-irl-3', code: 'IRL 3', title: 'The pursuit of sovereignty and the impact of partition, 1912-1949' },
+      { id: 'hist-lm-irl-4', code: 'IRL 4', title: 'The Irish diaspora, 1840-1966' },
+      { id: 'hist-lm-irl-5', code: 'IRL 5', title: 'Politics and society in Northern Ireland, 1949-1993' },
+      { id: 'hist-lm-irl-6', code: 'IRL 6', title: 'Government, economy and society in the Republic of Ireland, 1949-1989' },
+    ],
+  },
+  {
+    id: 'hist-lm-eur', label: 'Later Modern', title: 'Later Modern field — Europe and the wider world, 1815-1993',
+    topics: [
+      { id: 'hist-lm-eur-1', code: 'EUR 1', title: 'Nationalism and state formation in Europe, 1815-1871' },
+      { id: 'hist-lm-eur-2', code: 'EUR 2', title: 'Nation states and international tensions, 1871-1920' },
+      { id: 'hist-lm-eur-3', code: 'EUR 3', title: 'Dictatorship and democracy in Europe, 1920-1945' },
+      { id: 'hist-lm-eur-4', code: 'EUR 4', title: 'Division and realignment in Europe, 1945-1992' },
+      { id: 'hist-lm-eur-5', code: 'EUR 5', title: 'European retreat from empire and the aftermath, 1945-1990' },
+      { id: 'hist-lm-eur-6', code: 'EUR 6', title: 'The United States and the world, 1945-1989' },
+    ],
+  },
+];
+
+/**
+ * Applied Mathematics: the four strands of the specification first examined in
+ * 2023, adapted from the canonical curriculum rather than retyped, for the
+ * reason the LCVP, English, Irish, Art and Geography strands are.
+ *
+ * The 2021 and 2022 papers were sat on the OUTGOING syllabus — pure mechanics —
+ * and their cards file here too, because Strand 3 is where the revised
+ * specification kept that course: relative velocity, projectiles, connected
+ * masses, collisions, circular motion, statics, hydrostatics, moments of
+ * inertia and simple harmonic motion are all named subtopics of it. One
+ * taxonomy across the break is what lets a student revising the current course
+ * still find the older papers' questions.
+ */
+export const APPLIED_MATHS_STRANDS: StrandRef[] = appliedMathsCurriculum.strands.map(
+  (strand, strandIndex) => ({
+    id: strand.id,
+    label: `Strand ${strandIndex + 1}`,
+    title: strand.name.replace(/^Strand \d+:\s*/, ''),
+    topics: strand.subtopics.map((topic, topicIndex) => ({
+      id: topic.id,
+      code: `${strandIndex + 1}.${topicIndex + 1}`,
+      title: topic.name,
+    })),
+  }));
+
+/**
+ * The Design & Communication Graphics syllabus's own three strands, taken from
+ * the canonical curriculum rather than restated here, exactly as Applied
+ * Maths' are.
+ *
+ * The written examination covers two of them. Strand 1, Plane and Descriptive
+ * Geometry, is Sections A and B; strand 3, Applied Graphics, is Section C,
+ * whose five questions ARE its five optional areas — the paper prints the
+ * area's name as a banner over each one, so a Section C card's topic is
+ * lifted from the page rather than inferred. Strand 2, Communication of
+ * Design and Computer Graphics, is the student assignment and the CAD work:
+ * it ships unused, so a student sees the whole shape of the course.
+ */
+export const DCG_STRANDS: StrandRef[] = dcgCurriculum.strands.map(
+  (strand, strandIndex) => ({
+    id: strand.id,
+    label: strand.name.replace(/\s*\((Core|Optional Areas)\)\s*$/, ''),
+    title: strand.name,
+    topics: strand.subtopics.map((topic, topicIndex) => ({
+      id: topic.id,
+      code: `${strandIndex + 1}.${topicIndex + 1}`,
+      title: topic.name,
+    })),
+  }));
+
+/**
+ * Leaving Certificate Physical Education, as the WRITTEN paper examines it.
+ *
+ * Two strands and the physical activity areas, adapted from the canonical
+ * curriculum rather than retyped here, for the reason the LCVP, English,
+ * Irish, Art and Geography strands are: a second copy of a taxonomy drifts,
+ * and a card filed against a topic id the registry does not hold resolves
+ * into a specification that contains no such topic.
+ *
+ * The codes are the specification's own way of naming a unit inside a strand
+ * — "1.2" is Strand 1, Topic 1's second subtopic — and the strand's own
+ * "Strand 1: " prefix is stripped from the title because the label already
+ * carries it.
+ */
+export const PHYSICAL_EDUCATION_STRANDS: StrandRef[] = physicalEducationCurriculum.strands.map(
+  (strand, strandIndex) => ({
+    id: strand.id,
+    label: `Strand ${strandIndex + 1}`,
+    title: strand.name.replace(/^Strand \d+:\s*/, ''),
+    topics: strand.subtopics.map((topic, topicIndex) => ({
+      id: topic.id,
+      code: `${strandIndex + 1}.${topicIndex + 1}`,
+      title: topic.name,
+    })),
+  }));
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -898,6 +1696,42 @@ export const SUBJECTS = [
   { id: 'geography', title: 'Geography', strands: GEOGRAPHY_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
   { id: 'computer-science', title: 'Computer Science', strands: COMPUTER_SCIENCE_STRANDS, spec: 'specification examined from 2020' },
   { id: 'engineering', title: 'Engineering', strands: ENGINEERING_STRANDS, spec: 'Materials and Technology syllabus' },
+  { id: 'religious-education', title: 'Religious Education', strands: RELIGIOUS_EDUCATION_STRANDS, spec: 'syllabus examined since 2003' },
+  { id: 'lcvp', title: 'Link Modules', strands: LCVP_STRANDS, spec: 'LCVP programme statement, examined to 2027' },
+  { id: 'technology', title: 'Technology', strands: TECHNOLOGY_STRANDS, spec: 'Leaving Certificate Technology syllabus' },
+  { id: 'physical-education', title: 'Physical Education', strands: PHYSICAL_EDUCATION_STRANDS, spec: 'LCPE specification, written paper' },
+  { id: 'history', title: 'History', strands: HISTORY_STRANDS, spec: 'Leaving Certificate History syllabus' },
+  { id: 'french', title: 'French', strands: FRENCH_STRANDS, spec: 'Leaving Certificate French syllabus' },
+  { id: 'german', title: 'German', strands: GERMAN_STRANDS, spec: 'Leaving Certificate German syllabus' },
+  { id: 'applied-maths', title: 'Applied Maths', strands: APPLIED_MATHS_STRANDS, spec: 'specification examined from 2023' },
+  { id: 'spanish', title: 'Spanish', strands: SPANISH_STRANDS, spec: 'Leaving Certificate Spanish syllabus' },
+  { id: 'italian', title: 'Italian', strands: ITALIAN_STRANDS, spec: 'Leaving Certificate Italian syllabus' },
+  { id: 'russian', title: 'Russian', strands: RUSSIAN_STRANDS, spec: 'Leaving Certificate Russian syllabus' },
+  { id: 'japanese', title: 'Japanese', strands: JAPANESE_STRANDS, spec: 'Leaving Certificate Japanese syllabus' },
+  { id: 'polish', title: 'Polish', strands: POLISH_STRANDS, spec: 'Leaving Certificate Polish, a non-curricular EU language' },
+  { id: 'portuguese', title: 'Portuguese', strands: PORTUGUESE_STRANDS, spec: 'Leaving Certificate Portuguese, a non-curricular EU language' },
+  { id: 'romanian', title: 'Romanian', strands: ROMANIAN_STRANDS, spec: 'Leaving Certificate Romanian, a non-curricular EU language' },
+  { id: 'dutch', title: 'Dutch', strands: DUTCH_STRANDS, spec: 'Leaving Certificate Dutch, a non-curricular EU language' },
+  { id: 'lithuanian', title: 'Lithuanian', strands: LITHUANIAN_STRANDS, spec: 'Leaving Certificate Lithuanian, a non-curricular EU language' },
+  { id: 'latvian', title: 'Latvian', strands: LATVIAN_STRANDS, spec: 'Leaving Certificate Latvian, a non-curricular EU language' },
+  { id: 'czech', title: 'Czech', strands: CZECH_STRANDS, spec: 'Leaving Certificate Czech, a non-curricular EU language' },
+  { id: 'classical-studies', title: 'Classical Studies', strands: CLASSICAL_STUDIES_STRANDS, spec: 'specification examined from 2023, and the ten-topic syllabus examined to 2022' },
+  { id: 'latin', title: 'Latin', strands: LATIN_STRANDS, spec: 'Leaving Certificate Latin syllabus — the legacy written paper' },
+  { id: 'arabic', title: 'Arabic', strands: ARABIC_STRANDS, spec: 'Leaving Certificate Arabic syllabus examined to June 2026' },
+  { id: 'ancient-greek', title: 'Ancient Greek', strands: ANCIENT_GREEK_STRANDS, spec: 'Leaving Certificate Ancient Greek syllabus — the legacy written paper' },
+  { id: 'modern-greek', title: 'Modern Greek', strands: MODERN_GREEK_STRANDS, spec: 'Leaving Certificate Modern Greek, a non-curricular EU language' },
+  { id: 'hungarian', title: 'Hungarian', strands: HUNGARIAN_STRANDS, spec: 'Leaving Certificate Hungarian, a non-curricular EU language' },
+  { id: 'bulgarian', title: 'Bulgarian', strands: BULGARIAN_STRANDS, spec: 'Leaving Certificate Bulgarian, a non-curricular EU language' },
+  { id: 'slovakian', title: 'Slovakian', strands: SLOVAKIAN_STRANDS, spec: 'Leaving Certificate Slovakian, a non-curricular EU language' },
+  { id: 'swedish', title: 'Swedish', strands: SWEDISH_STRANDS, spec: 'Leaving Certificate Swedish, a non-curricular EU language' },
+  { id: 'estonian', title: 'Estonian', strands: ESTONIAN_STRANDS, spec: 'Leaving Certificate Estonian, a non-curricular EU language' },
+  { id: 'finnish', title: 'Finnish', strands: FINNISH_STRANDS, spec: 'Leaving Certificate Finnish, a non-curricular EU language' },
+  { id: 'croatian', title: 'Croatian', strands: CROATIAN_STRANDS, spec: 'Leaving Certificate Croatian, a non-curricular EU language' },
+  { id: 'danish', title: 'Danish', strands: DANISH_STRANDS, spec: 'Leaving Certificate Danish, a non-curricular EU language' },
+  { id: 'slovenian', title: 'Slovenian', strands: SLOVENIAN_STRANDS, spec: 'Leaving Certificate Slovenian, a non-curricular EU language' },
+  { id: 'mandarin-chinese', title: 'Mandarin Chinese', strands: MANDARIN_CHINESE_STRANDS, spec: 'Leaving Certificate Mandarin Chinese specification, first examined 2022' },
+  { id: 'ukrainian', title: 'Ukrainian', strands: UKRAINIAN_STRANDS, spec: 'Leaving Certificate Ukrainian, a non-curricular EU language, first examined 2025' },
+  { id: 'dcg', title: 'Design and Communication Graphics', strands: DCG_STRANDS, spec: 'Leaving Certificate Design and Communication Graphics syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1102,7 +1936,11 @@ const HAND_BUILT: SecCard[] = [
  * bundler has to see each one to split it; a computed specifier either fails to
  * resolve or drags every deck into one chunk, which is the thing this avoids.
  */
-const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> = {
+const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard[] }>>>> = {
+  dcg: {
+    higher: () => import('./cards/dcg/higher'),
+    ordinary: () => import('./cards/dcg/ordinary'),
+  },
   biology: {
     higher: () => import('./cards/biology/higher'),
     ordinary: () => import('./cards/biology/ordinary'),
@@ -1167,9 +2005,153 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
     higher: () => import('./cards/engineering/higher'),
     ordinary: () => import('./cards/engineering/ordinary'),
   },
+  'religious-education': {
+    higher: () => import('./cards/religious-education/higher'),
+    ordinary: () => import('./cards/religious-education/ordinary'),
+  },
+  // LCVP is sat at ONE level, so it has one module and no Higher/Ordinary
+  // pair. Writing it empty higher.ts and ordinary.ts files would have put two
+  // dead decks in the picker; the map is Partial for exactly this.
+  lcvp: {
+    common: () => import('./cards/lcvp/common'),
+  },
+  french: {
+    higher: () => import('./cards/french/higher'),
+    ordinary: () => import('./cards/french/ordinary'),
+  },
+  german: {
+    higher: () => import('./cards/german/higher'),
+    ordinary: () => import('./cards/german/ordinary'),
+  },
+  italian: {
+    higher: () => import('./cards/italian/higher'),
+    ordinary: () => import('./cards/italian/ordinary'),
+  },
+  russian: {
+    higher: () => import('./cards/russian/higher'),
+    ordinary: () => import('./cards/russian/ordinary'),
+  },
+  japanese: {
+    higher: () => import('./cards/japanese/higher'),
+    ordinary: () => import('./cards/japanese/ordinary'),
+  },
+  polish: {
+    higher: () => import('./cards/polish/higher'),
+    ordinary: () => import('./cards/polish/ordinary'),
+  },
+  portuguese: {
+    higher: () => import('./cards/portuguese/higher'),
+    ordinary: () => import('./cards/portuguese/ordinary'),
+  },
+  romanian: {
+    higher: () => import('./cards/romanian/higher'),
+  },
+  dutch: {
+    higher: () => import('./cards/dutch/higher'),
+  },
+  lithuanian: {
+    higher: () => import('./cards/lithuanian/higher'),
+    ordinary: () => import('./cards/lithuanian/ordinary'),
+  },
+  // Latvian and Czech are sat at ONE level. The SEC's file letter is 'A' and
+  // the cover says "Higher Level", so there is no ordinary deck to import.
+  latvian: {
+    higher: () => import('./cards/latvian/higher'),
+  },
+  czech: {
+    higher: () => import('./cards/czech/higher'),
+  },
+  // The nine remaining non-curricular EU languages are sat at ONE level in
+  // every year of the corpus: the SEC's file letter is 'A' and the cover says
+  // "Higher Level", so there is no ordinary deck to import for any of them.
+  hungarian: {
+    higher: () => import('./cards/hungarian/higher'),
+  },
+  bulgarian: {
+    higher: () => import('./cards/bulgarian/higher'),
+  },
+  slovakian: {
+    higher: () => import('./cards/slovakian/higher'),
+  },
+  swedish: {
+    higher: () => import('./cards/swedish/higher'),
+  },
+  estonian: {
+    higher: () => import('./cards/estonian/higher'),
+  },
+  finnish: {
+    higher: () => import('./cards/finnish/higher'),
+  },
+  croatian: {
+    higher: () => import('./cards/croatian/higher'),
+  },
+  danish: {
+    higher: () => import('./cards/danish/higher'),
+  },
+  slovenian: {
+    higher: () => import('./cards/slovenian/higher'),
+  },
+  arabic: {
+    higher: () => import('./cards/arabic/higher'),
+    ordinary: () => import('./cards/arabic/ordinary'),
+  },
+  'physical-education': {
+    higher: () => import('./cards/physical-education/higher'),
+    ordinary: () => import('./cards/physical-education/ordinary'),
+  },
+  technology: {
+    higher: () => import('./cards/technology/higher'),
+    ordinary: () => import('./cards/technology/ordinary'),
+  },
+  history: {
+    higher: () => import('./cards/history/higher'),
+    ordinary: () => import('./cards/history/ordinary'),
+  },
+  'applied-maths': {
+    higher: () => import('./cards/applied-maths/higher'),
+    ordinary: () => import('./cards/applied-maths/ordinary'),
+  },
+  spanish: {
+    higher: () => import('./cards/spanish/higher'),
+    ordinary: () => import('./cards/spanish/ordinary'),
+  },
+  'classical-studies': {
+    higher: () => import('./cards/classical-studies/higher'),
+    ordinary: () => import('./cards/classical-studies/ordinary'),
+  },
+  latin: {
+    higher: () => import('./cards/latin/higher'),
+    ordinary: () => import('./cards/latin/ordinary'),
+  },
+  'ancient-greek': {
+    higher: () => import('./cards/ancient-greek/higher'),
+    ordinary: () => import('./cards/ancient-greek/ordinary'),
+  },
+  // Higher only: the SEC's file letter for every Modern Greek paper on disk is
+  // 'A' and every cover says Higher Level. There is no Ordinary paper to card.
+  'mandarin-chinese': {
+    higher: () => import('./cards/mandarin-chinese/higher'),
+    ordinary: () => import('./cards/mandarin-chinese/ordinary'),
+  },
+  ukrainian: {
+    higher: () => import('./cards/ukrainian/higher'),
+  },
+  'modern-greek': {
+    higher: () => import('./cards/modern-greek/higher'),
+  },
 };
 
-export type Level = 'higher' | 'ordinary';
+/**
+ * 'common' is a level the SEC actually prints, not a third difficulty: a
+ * handful of subjects — LCVP's Link Modules among them — are examined at one
+ * level by everyone. `levelsFor` below is what the picker must use, so a
+ * common-level subject never offers a Higher/Ordinary choice it does not have.
+ */
+export type Level = 'higher' | 'ordinary' | 'common';
+export const LEVELS: Level[] = ['higher', 'ordinary', 'common'];
+export const LEVEL_LABEL: Record<Level, string> = {
+  higher: 'Higher', ordinary: 'Ordinary', common: 'Common',
+};
 
 /**
  * How many cards each deck holds, written by the build script.
@@ -1182,11 +2164,22 @@ export type Level = 'higher' | 'ordinary';
 export const deckSize = (subjectId: string, level: Level): number =>
   (DECK_SIZES as Record<string, Partial<Record<Level, number>>>)[subjectId]?.[level] ?? 0;
 
+/**
+ * The levels this subject is actually examined at, read from what has been
+ * built rather than assumed. A subject with nothing built yet still offers the
+ * Higher/Ordinary pair, because that is what the picker has to show before a
+ * deck exists; a subject built at one level offers only that one.
+ */
+export const levelsFor = (subjectId: string): Level[] => {
+  const built = LEVELS.filter(l => deckSize(subjectId, l) > 0);
+  return built.length ? built : ['higher', 'ordinary'];
+};
+
 /** Decks with cards in them, as "Biology Higher"-style labels. */
 export const builtDecks = (): { subjectId: string; level: Level; label: string }[] =>
-  SUBJECTS.flatMap(s => (['higher', 'ordinary'] as Level[])
+  SUBJECTS.flatMap(s => LEVELS
     .filter(l => deckSize(s.id, l) > 0)
-    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${l === 'higher' ? 'Higher' : 'Ordinary'}` })));
+    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${LEVEL_LABEL[l]}` })));
 
 export async function loadCards(subjectId: string, level: Level): Promise<SecCard[]> {
   const load = DECKS[subjectId]?.[level];

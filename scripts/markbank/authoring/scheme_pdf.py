@@ -150,6 +150,17 @@ class SchemePdf:
                 run_start, expect = i, n + 1
         seen_first_question = True
         key = None
+        # q, letter and roman persist across blocks: a scheme sets a question
+        # head once and then a run of parts under it. Where the FIRST marker a
+        # scheme prints is a part rather than a question head — Physical
+        # Education opens "Section A 80 marks", "Question 1 (8 marks)", "(a)
+        # Identify ..." and pymupdf hands back the "(a)" block before the head
+        # on some pages — the loop read them unbound and raised. Bound to None
+        # here, that block is skipped instead, which is what the guard below
+        # already says it wants ("head or q is not None"). No subject that
+        # parsed before can reach the new value: reaching it at all used to
+        # raise UnboundLocalError.
+        q = letter = roman = None
         for text in self._blocks():
             if PAGENO.match(text) or NOISE.match(text) or BAND.search(text):
                 continue

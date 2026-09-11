@@ -258,7 +258,15 @@ interface CardBase {
    *  map keys in `updateDoc` paths. Enforced by `isValidCardId`. */
   id: string;
   subjectId: string;
-  level: 'higher' | 'ordinary';
+  /**
+   * 'common' is not a third grade of difficulty. A handful of Leaving
+   * Certificate subjects are examined at ONE level — LCVP's Link Modules is
+   * one, and the SEC says so on the paper's own cover and in its file id
+   * (LC462CLP000EV.pdf, level letter C). Filing such a deck under 'higher'
+   * would make every card cite a Higher Level paper that does not exist, and
+   * would hide it from a student whose profile says anything else.
+   */
+  level: 'higher' | 'ordinary' | 'common';
   /** PART-level curriculum id. A card may never inherit its parent question's
    *  tag — the alternative parts of one Section C question routinely span
    *  different topics, and inheriting would file bread mould under the
@@ -291,8 +299,54 @@ export interface SecCardBase extends CardBase {
   paperFileid: string | null;
   /** The paper's own section. Lettered in the sciences, numbered in Business —
    *  whose Section 1 and Section 3 both count from Q1, which is why questionRef
-   *  carries the section too. */
-  section: 'A' | 'B' | 'C' | '1' | '2' | '3';
+   *  carries the section too. Religious Education runs A-J: its paper is ten
+   *  lettered sections inside three units, and eight of the ten number no
+   *  question at all, so the section IS the address there.
+   *
+   *  German's sections are the paper's own TEXTS rather than letters or
+   *  numbers: TEXT I, TEXT II and (at Ordinary) TEXT III each set a reading
+   *  comprehension numbering its questions from 1, and Angewandte Grammatik
+   *  sets a further pair of alternatives, so a bare question number addresses
+   *  nothing and the section carries the address exactly as it does in
+   *  Business.
+   *
+   *  Russian goes one step further and names the printed QUESTION, because it
+   *  numbers "Question 1" three times in one sitting — once in Section I, once
+   *  in Section II and once in the Listening Comprehension Test. C1 and C2 are
+   *  Higher's two comprehensions, LA1, LA2 and CA1 its language- and
+   *  cultural-awareness questions, IR1 and IR2 Ordinary's two retrieval texts
+   *  and CD its comprehension. See UNIT_NAME in ru_scheme.py, which is where
+   *  the same tokens are defined for the readers.
+   *
+   *  Classical Studies adds a TOPIC form for the syllabus examined to 2022.
+   *  That paper prints no sections and no question numbers at all: ten topics,
+   *  each setting questions "(i)" to "(iv)" with lettered parts under them, so
+   *  the topic and the roman together are the address — "Topic 1(i)", cited as
+   *  "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers Questions 1-16 straight
+   *  through Sections A and B, and files under 'A' and 'B'.
+   *
+   *  Arabic adds '4'. Its paper prints four parts — الجزء الأول to الجزء
+   *  الرابع — and numbers its questions 1 to 15 straight through them, so the
+   *  part is not part of the address and never appears in a citation; it is
+   *  what the card says a student is looking at. Part 4 is the composition,
+   *  which is why the union needed a fourth number it had never had. */
+  section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
+  | '1' | '2' | '3' | '4' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
+  | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1'
+  // Latin's paper prints no lettered sections a card could be filed under:
+  // it prints five QUESTIONS, and the "Section A"/"Section B" beneath three
+  // of them is a CHOICE of routes through one question rather than a division
+  // of the paper. So the section is the printed question — the unit a student
+  // navigates by, and the unit each of the syllabus's task types belongs to.
+  | 'Q1' | 'Q2' | 'Q3' | 'Q4' | 'Q5'
+  // Lithuanian, Latvian and Czech print no lettered section a card could be
+  // filed under either: "Dalis A" and "Dalis B" divide reading from writing
+  // and nothing else, while the unit a student navigates by is the TASK —
+  // "Pirma užduotis", "Antra užduotis" — one printed text with up to eleven
+  // asks on it. So the section is that task, 'U1' to 'U3', and the old
+  // examination's single-text I DALIS is 'U1'.
+  | 'U1' | 'U2' | 'U3'
+  | `Topic ${number}(${'i' | 'ii' | 'iii' | 'iv' | 'v'})`;
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
   /** Optional lead-in the paper prints before the question proper. */
@@ -678,7 +732,32 @@ export const rowCapFor = (kind: TariffModel['kind']): number =>
  * Long-question sections: Business Section 3 at Higher and Section 2 at
  * Ordinary (there is no ABQ at Ordinary); Sections B and C in the sciences.
  */
-const LONG_SECTIONS = new Set(['2', '3', 'B', 'C']);
+// German's reading comprehensions are long questions whose PARTS are small:
+// the 2022 Higher TEXT I theme question prints twenty-six accepted points
+// for ten marks and its 1(a) prints nine for six, so the section tokens the
+// German deck cites — TEXT I, II and III — belong here too.
+// Russian's reading and language-awareness questions are long questions whose
+// PARTS are small: the 2025 Higher summary question prints seventeen accepted
+// points for its eight content marks, and the semantic-field task prints
+// eighteen Russian words for ten. Its section tokens name the printed
+// question rather than a letter (see UNIT_NAME in ru_scheme.py), so they
+// belong here too: C1 and C2 are Higher's two comprehensions, IR1 and IR2
+// Ordinary's retrieval texts, CD its comprehension, and LA1/LA2/CA1 the
+// language- and cultural-awareness tasks.
+// Latin's Questions 3 and 5 are long questions: the scheme answers a ten-mark
+// prescribed-text part and a twenty-five-mark civilisation essay with pages of
+// Indicative Notes, and 2025 Higher prints twenty-one separate points for one
+// twenty-five-mark question on Augustus. Questions 1, 2 and 4 are short —
+// Question 1 Section B is twelve comprehension asks of four to fourteen marks.
+// The Baltic languages' reading tasks are long questions whose PARTS are
+// small: 2024 Higher Lithuanian answers a five-mark "find one past-frequentative
+// verb" with eleven verbs and 2022 Ordinary answers a five-mark "write one thing
+// Jonas does in New York" with thirteen. One task is one printed text with up to
+// eleven asks on it, which is what makes the examiner print a long menu, so the
+// task tokens 'U1' to 'U3' (užduotis — the paper's own word for it) belong here.
+const LONG_SECTIONS = new Set(['2', '3', 'B', 'C', 'T1', 'T2', 'T3',
+  'C1', 'C2', 'CD', 'IR1', 'IR2', 'LA1', 'LA2', 'CA1', 'Q3', 'Q5',
+  'U1', 'U2', 'U3']);
 export const optionCapFor = (section: string): number =>
   LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 

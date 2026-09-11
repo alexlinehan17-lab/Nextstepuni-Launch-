@@ -1516,6 +1516,295 @@
       "stripStem": true
     }
   },
+  "physical-education": {
+    "pe-2020-hl-q1": {
+      "kind": "illustration",
+      "pages": [
+        3
+      ]
+    },
+    "pe-2020-hl-q11ai": {
+      "kind": "illustration",
+      "pages": [
+        12,
+        14
+      ]
+    },
+    "pe-2020-hl-q11bi": {
+      "kind": "illustration",
+      "pages": [
+        13,
+        15
+      ]
+    },
+    "pe-2020-hl-q11bii": {
+      "kind": "illustration",
+      "pages": [
+        13,
+        15
+      ]
+    },
+    "pe-2020-hl-q11c": {
+      "kind": "illustration",
+      "pages": [
+        12,
+        16
+      ]
+    },
+    "pe-2020-hl-q4": {
+      "kind": "illustration",
+      "pages": [
+        5
+      ]
+    },
+    "pe-2020-hl-q5a": {
+      "kind": "illustration",
+      "pages": [
+        6
+      ]
+    },
+    "pe-2020-hl-q5b": {
+      "kind": "illustration",
+      "pages": [
+        6
+      ]
+    },
+    "pe-2021-hl-q12b": {
+      "kind": "illustration",
+      "pages": [
+        11
+      ]
+    },
+    "pe-2021-hl-q13b": {
+      "kind": "illustration",
+      "pages": [
+        14
+      ]
+    },
+    "pe-2021-hl-q13diii": {
+      "kind": "illustration",
+      "pages": [
+        13,
+        16
+      ]
+    },
+    "pe-2021-hl-q13e": {
+      "kind": "illustration",
+      "pages": [
+        17
+      ]
+    },
+    "pe-2021-hl-q16b": {
+      "kind": "illustration",
+      "pages": [
+        25
+      ]
+    },
+    "pe-2021-hl-q17aii": {
+      "kind": "illustration",
+      "pages": [
+        28,
+        29
+      ]
+    },
+    "pe-2021-hl-q17aiii": {
+      "kind": "illustration",
+      "pages": [
+        28,
+        29
+      ]
+    },
+    "pe-2021-hl-q18di": {
+      "kind": "illustration",
+      "pages": [
+        33,
+        35
+      ]
+    },
+    "pe-2021-hl-q18dii": {
+      "kind": "illustration",
+      "pages": [
+        33,
+        35
+      ]
+    },
+    "pe-2021-ol-q13bi": {
+      "kind": "illustration",
+      "pages": [
+        12
+      ]
+    },
+    "pe-2021-ol-q13ci": {
+      "kind": "illustration",
+      "pages": [
+        11,
+        13
+      ]
+    },
+    "pe-2021-ol-q13cii": {
+      "kind": "illustration",
+      "pages": [
+        13
+      ]
+    },
+    "pe-2021-ol-q13ei": {
+      "kind": "illustration",
+      "pages": [
+        15
+      ]
+    },
+    "pe-2021-ol-q13eii": {
+      "kind": "illustration",
+      "pages": [
+        15
+      ]
+    },
+    "pe-2021-ol-q15b": {
+      "kind": "illustration",
+      "pages": [
+        20
+      ]
+    },
+    "pe-2021-ol-q17ci": {
+      "kind": "illustration",
+      "pages": [
+        27
+      ]
+    },
+    "pe-2021-ol-q17cii": {
+      "kind": "illustration",
+      "pages": [
+        27
+      ]
+    },
+    "pe-2021-ol-q18ci": {
+      "kind": "illustration",
+      "pages": [
+        31
+      ]
+    },
+    "pe-2022-hl-q16b": {
+      "kind": "illustration",
+      "pages": [
+        31
+      ]
+    },
+    "pe-2022-hl-q4": {
+      "kind": "illustration",
+      "pages": [
+        6
+      ]
+    },
+    "pe-2022-ol-q11a": {
+      "kind": "illustration",
+      "pages": [
+        13
+      ]
+    },
+    "pe-2022-ol-q13bi": {
+      "kind": "illustration",
+      "pages": [
+        17
+      ]
+    },
+    "pe-2022-ol-q13bii": {
+      "kind": "illustration",
+      "pages": [
+        18
+      ]
+    },
+    "pe-2022-ol-q18aii": {
+      "kind": "illustration",
+      "pages": [
+        36
+      ]
+    },
+    "pe-2022-ol-q4": {
+      "kind": "illustration",
+      "pages": [
+        6
+      ]
+    },
+    "pe-2023-hl-q17aii": {
+      "kind": "illustration",
+      "pages": [
+        34
+      ]
+    },
+    "pe-2023-hl-q17aiii": {
+      "kind": "illustration",
+      "pages": [
+        34
+      ]
+    },
+    "pe-2024-hl-q13aii": {
+      "kind": "illustration",
+      "pages": [
+        15
+      ]
+    },
+    "pe-2024-hl-q13ciii": {
+      "kind": "illustration",
+      "pages": [
+        17
+      ]
+    },
+    "pe-2024-hl-q16ai": {
+      "kind": "illustration",
+      "pages": [
+        28
+      ]
+    },
+    "pe-2024-hl-q18d": {
+      "kind": "illustration",
+      "pages": [
+        38
+      ]
+    },
+    "pe-2024-ol-q1": {
+      "kind": "illustration",
+      "pages": [
+        3,
+        13
+      ]
+    },
+    "pe-2024-ol-q17bii": {
+      "kind": "illustration",
+      "pages": [
+        28
+      ]
+    },
+    "pe-2025-ol-q12": {
+      "kind": "illustration",
+      "pages": [
+        9
+      ]
+    },
+    "pe-2025-ol-q13ei": {
+      "kind": "illustration",
+      "pages": [
+        14
+      ]
+    },
+    "pe-2025-ol-q18ai": {
+      "kind": "illustration",
+      "pages": [
+        31
+      ]
+    },
+    "pe-2026-ol-q16ci": {
+      "kind": "illustration",
+      "pages": [
+        22
+      ]
+    },
+    "pe-2026-ol-q7": {
+      "kind": "illustration",
+      "pages": [
+        6
+      ]
+    }
+  },
   "physics": {
     "phys-2021-hl-q1-ii": {
       "pages": [

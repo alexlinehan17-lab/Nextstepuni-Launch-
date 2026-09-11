@@ -75,6 +75,27 @@ const MARKS_CELL = /⟨[^⟩]*⟩/g;
 const ORDINAL_TARIFF = /\b\d+\s*(?:st|nd|rd|th)\s*[@x]\s*\d+\b/gi;
 
 /**
+ * The scheme's own bracketed aside, and the tariff it prints inside an answer.
+ *
+ * A Spanish scheme prices every answer in line and clarifies inside the answer
+ * itself. Its own explanatory page says so: "Square brackets [ ] show a
+ * breakdown of marks within the question or give further clarifications for
+ * marks to be awarded". Both land in the MIDDLE of a marking point:
+ *
+ *     We don't have enough courts (to satisfy the demand)/ there are only 50
+ *     courts [2m]and we have 6000 players [1m] (3m)
+ *     (There is no doubt that physical exercise) has lots of benefits for
+ *     everybody (2m) and it is something we should start at a young age (2m)
+ *
+ * so a card quoting the SEC's own sentence cannot be found in the SEC's own
+ * scheme. Stripped as an ADDED form, for the reason ORDINAL_TARIFF is: a fold
+ * applied to both sides is symmetric and a symmetric fold has cost a card
+ * before, while an added form can only ever let more of the SEC's own text
+ * through. No claim contains a marks cell or a square bracket.
+ */
+const INLINE_ASIDE = /\[[^\]]*\]|\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*(?:m|marks?)\s*\)/gi;
+
+/**
  * The extractor's own page markers.
  *
  * A marking point does not stop at a page break — the SEC prints "Less Risk /
@@ -117,7 +138,7 @@ const PAGE_FOOTER = /\d+\s*\|\s*P\s*a\s*g\s*e/g;
  * output exactly as the extractor produced it, and a claim can never contain
  * one of these, so folding both sides changes nothing else.
  */
-export const LIGATURES = { 'Ɵ': 'ti', 'Ŧ': 'ti', 'Ʃ': 'tt', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬃ': 'ffi', 'ﬄ': 'ffl', 'ﬅ': 'st', 'ﬆ': 'st' };
+export const LIGATURES = { 'Ɵ': 'ti', 'Ŧ': 'ti', 'Ʃ': 'tt', 'ƫ': 'tti', 'Ō': 'ft', 'ϐ': 'f', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬃ': 'ffi', 'ﬄ': 'ffl', 'ﬅ': 'st', 'ﬆ': 'st' };
 
 const SUP = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
 const collapseDoubledMathsLetters = (text) => {
@@ -131,7 +152,7 @@ const collapseDoubledMathsLetters = (text) => {
 };
 
 export const foldDigits = (t) => collapseDoubledMathsLetters(t)
-  .replace(/[ƟŦƩﬀﬁﬂﬃﬄﬅﬆ]/g, (c) => LIGATURES[c] ?? c)
+  .replace(/[ƟŦƩƫŌϐﬀﬁﬂﬃﬄﬅﬆ]/g, (c) => LIGATURES[c] ?? c)
   .replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080))
   .replace(/[⁰¹²³⁴-⁹]/g, (c) => SUP[c] ?? c)
   // Mathematical Alphanumeric Symbols, the whole block. The SEC typesets
@@ -195,9 +216,29 @@ export const repairGlyphs = (t) => (BROKEN_GLYPH.test(t)
 const DEGREE_O = /(\d)oc/g;
 
 /** Case, spacing and punctuation removed; every character of an answer must
- *  still appear, in order. */
+ *  still appear, in order.
+ *
+ * CYRILLIC IS KEPT. The class was Latin letters and digits alone, which meant a
+ * marking point written in Russian normalised to the EMPTY STRING and matched
+ * every scheme ever printed: "стать" and "стоять" were the same claim, and so
+ * was a word the SEC never wrote. Russian's language-awareness answers are
+ * Russian words, so the gate that exists to stop a card quoting what the
+ * examiner did not say was, for that whole deck, not checking anything.
+ *
+ * LATIN EXTENDED-A IS KEPT, for the same reason and at the same cost. ą ć ę ł
+ * ń ó ś ź ż are letters of the POLISH alphabet, not accents on Latin ones:
+ * they have no combining decomposition, so the class threw each of them away
+ * whole. "łódź" reduced to "d" and "Księgarnia była mała" to "ksigarniabyamaa"
+ * — a gate that cannot tell one Polish marking point from another is not
+ * checking the thing it exists to check.
+ *
+ * Widening the class can only make matching STRICTER — a claim keeps more of
+ * its own characters and so must find more of them in the scheme — and it is
+ * identical on text that has no Cyrillic or Latin Extended-A in it, which is
+ * every other subject in the bank. */
 export const normalise = (t) =>
-  foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, '');
+  foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-')
+    .replace(/[^a-z0-9\u0100-\u017f\u0400-\u04ff]+/g, '');
 
 /**
  * A whole scheme file reduced to the text a marking point is searched in.
@@ -228,6 +269,34 @@ export const normalise = (t) =>
  */
 const collapseTT = (t) => t.replace(/tt/g, 't');
 
+/**
+ * The MARKS COLUMN, where the converter rejoined it into the middle of a
+ * marking point.
+ *
+ * An SEC scheme laid out as a table prints the marks in their own narrow
+ * right-hand column, and extract-scheme.py puts each cell back on the printed
+ * row it shared — which is right, and which lands the number in the middle of
+ * a wrapped answer:
+ *
+ *     (c) Any valid point: goddess of the hearth, goddess of the eternal flame of 3
+ *     Rome. 3 marks.
+ *     (b) 1 mark each: Athena, Poseidon, Zeus, Hephaestus, Erechtheus, Cecrops, Boutes, 3
+ *     Pandrosus
+ *
+ * A card quoting the SEC's own answer — "…the eternal flame of Rome",
+ * "…Boutes, Pandrosus" — then cannot be found in the SEC's own scheme, because
+ * a tariff is sitting inside the sentence. Twenty-two correct Classical Studies
+ * cards were dropped over it.
+ *
+ * Only the column cell is stripped — a bare integer at the END of a line. An
+ * ADDED form, for the reason foldOriya and ORDINAL_TARIFF give: an added form
+ * can only ever let more of the SEC's own text through, while folding both
+ * sides has cost a card before, and a marking point that genuinely ends in a
+ * number still matches on the printed form. An inline "3 marks." is NOT
+ * stripped here: a card must not quote across one, it must stop at it.
+ */
+const MARKS_COLUMN = /(?<=\S)[ \t]+\d{1,3}[ \t]*$/gm;
+
 /** The last form comparableScheme() emits: the whole scheme with tt collapsed. */
 const collapsedCache = new Map();
 
@@ -247,6 +316,34 @@ export const claimMatches = (scheme, claim) => {
   }
   return collapsed.includes(collapseTT(c));
 };
+
+/**
+ * The tariff cell an SEC scheme prints IN THE MIDDLE of what it is pricing, in
+ * a language whose word for a mark is not "mark".
+ *
+ * The nine non-curricular EU languages carded in September 2026 set the
+ * reprinted question, then the price on a line of its own, then the answer:
+ *
+ *     2. Hány hajó közlekedik esténként a Duna belvárosi szakaszán átlagosan?
+ *     (5 pont)
+ *     Válasz a 4. bekezdésben: A Duna belvárosi szakaszán esténként átlagosan
+ *
+ * so a card quoting the answer alone cannot be found in the scheme it was
+ * lifted from — the price sits between the halves once the lines are joined.
+ * Bulgarian prints the same cell without a bracket ("5 точки") and Finnish
+ * abbreviates it ("5p."), and both land in the same place.
+ *
+ * Stripped as an ADDED form, for the reason ORDINAL_TARIFF and INLINE_ASIDE
+ * are: a fold applied to both sides is symmetric and a symmetric fold has cost
+ * a card before, while an added form can only ever let more of the SEC's own
+ * text through. No claim ever contains a tariff cell — the authoring scripts
+ * take the price off before the row is written.
+ */
+const LANGUAGE_TARIFF = new RegExp(
+  String.raw`\(?\s*\d{1,3}\s*(?:[x×*]\s*\d{1,2}\s*)?`
+  + `(?:pontot|pont|точки|точка|bodova|bodov|bodu|body|bod|po[äa]ng|punkti|`
+  + `punkt|pistett[äa]|point|to[čc]ke|to[čc]ka|to[čc]k|puncte|punct|punten|`
+  + `punt|pontos|ponto|marks?|p)\\.?\\s*\\)?`, 'gi');
 
 export const comparableScheme = (raw) => {
   const sourceLines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
@@ -275,7 +372,11 @@ export const comparableScheme = (raw) => {
     whole.replace(DEGREE_O, '$1c'),
     normalise(foldOriya(joined)),
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
+    normalise(joined.replace(INLINE_ASIDE, ' ')),
+    normalise(joined.replace(LANGUAGE_TARIFF, ' ')),
     normalise(repairGlyphs(joined)),
+    normalise(sourceLines.map((l) => l.replace(MARKS_COLUMN, ''))
+      .filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l)).join(' ')),
     ...numericRuns,
   ].join('|');
 };

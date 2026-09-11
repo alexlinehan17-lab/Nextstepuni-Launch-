@@ -58,6 +58,60 @@ import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-scienc
 import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
+import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
+import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
+import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
+import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
+import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
+import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/higher';
+import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
+import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
+import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
+import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
+import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
+import { CARDS as TECH_HIGHER } from '../components/MarkBank/cards/technology/higher';
+import { CARDS as TECH_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
+import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
+import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
+import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
+import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
+import { CARDS as PORTUGUESE_ORDINARY } from '../components/MarkBank/cards/portuguese/ordinary';
+import { CARDS as ROMANIAN_HIGHER } from '../components/MarkBank/cards/romanian/higher';
+import { CARDS as DUTCH_HIGHER } from '../components/MarkBank/cards/dutch/higher';
+import { CARDS as LITHUANIAN_HIGHER } from '../components/MarkBank/cards/lithuanian/higher';
+import { CARDS as LITHUANIAN_ORDINARY } from '../components/MarkBank/cards/lithuanian/ordinary';
+import { CARDS as LATVIAN_HIGHER } from '../components/MarkBank/cards/latvian/higher';
+import { CARDS as CZECH_HIGHER } from '../components/MarkBank/cards/czech/higher';
+import { CARDS as HUNGARIAN_HIGHER } from '../components/MarkBank/cards/hungarian/higher';
+import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
+import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakian/higher';
+import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
+import { CARDS as ESTONIAN_HIGHER } from '../components/MarkBank/cards/estonian/higher';
+import { CARDS as FINNISH_HIGHER } from '../components/MarkBank/cards/finnish/higher';
+import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
+import { CARDS as DANISH_HIGHER } from '../components/MarkBank/cards/danish/higher';
+import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
+import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
+import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
+import { CARDS as AM_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
+import { CARDS as AM_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
+import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
+import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
+import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
+import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
+import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
+import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-greek/higher';
+import { CARDS as MANDARIN_HIGHER } from '../components/MarkBank/cards/mandarin-chinese/higher';
+import { CARDS as MANDARIN_ORDINARY } from '../components/MarkBank/cards/mandarin-chinese/ordinary';
+import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
+import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
+import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
+import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
+import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -77,6 +131,27 @@ const SAMPLE_CARDS = [
   ...ART_HIGHER, ...ART_ORDINARY,
   ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
   ...CS_HIGHER, ...CS_ORDINARY, ...ENG_HIGHER, ...ENG_ORDINARY,
+  ...RE_HIGHER, ...RE_ORDINARY,
+  ...HISTORY_HIGHER, ...HISTORY_ORDINARY,
+  ...ITALIAN_HIGHER, ...ITALIAN_ORDINARY,
+  ...RUSSIAN_HIGHER, ...RUSSIAN_ORDINARY,
+  ...JAPANESE_HIGHER, ...JAPANESE_ORDINARY,
+  ...POLISH_HIGHER, ...POLISH_ORDINARY,
+  ...LITHUANIAN_HIGHER, ...LITHUANIAN_ORDINARY,
+  ...LATVIAN_HIGHER, ...CZECH_HIGHER,
+  ...CLAS_HIGHER, ...CLAS_ORDINARY,
+  ...LATIN_HIGHER, ...LATIN_ORDINARY,
+  ...ARABIC_HIGHER, ...ARABIC_ORDINARY,
+  ...AGREEK_HIGHER, ...AGREEK_ORDINARY,
+  // Higher only: Modern Greek is examined at ONE level and there is no
+  // Ordinary paper in any year of the corpus.
+  ...MGREEK_HIGHER,
+  ...MANDARIN_HIGHER, ...MANDARIN_ORDINARY,
+  // Higher only: Maltese and Ukrainian are each examined at ONE level and
+  // there is no Ordinary paper in any year of the corpus.
+  ...UKRAINIAN_HIGHER,
+  ...DCG_HIGHER, ...DCG_ORDINARY,
+  ...PE_HIGHER, ...PE_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -160,6 +235,13 @@ describe('every card traces to the marking scheme on disk', () => {
     expect(missing, show(missing)).toEqual([]);
   });
 
+  /* Sixty seconds, not the thirty every other test gets. This one walks EVERY
+   * card in the bank against a document read off disk, so its cost grows with
+   * the bank: adding Polish — the twenty-fourth subject, 238 cards and nine
+   * more scheme files — pushed it past thirty seconds under the full suite's
+   * parallel load, while it still finishes in fourteen on its own. Raising the
+   * ceiling for the two whole-bank tests keeps the global thirty in place for
+   * everything else, where a test that runs long really is hung. */
   test('every marking point appears in its own scheme', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
@@ -175,7 +257,11 @@ describe('every card traces to the marking scheme on disk', () => {
       }
     }
     expect(bad, show(bad)).toEqual([]);
-  });
+    // Its own timeout, because its work grows with the whole bank: every
+    // marking row of every card is searched for inside its own scheme's text.
+    // At 15,600 cards it runs a little over the 30s default, and a timeout
+    // here reads as a provenance failure when it is only a big bank.
+  }, 180_000);
 
   test('marks reconcile against the printed tariff', () => {
     const bad = SAMPLE_CARDS.filter(c => !tariffReconciles(c)).map(c => c.questionRef);
@@ -376,11 +462,16 @@ describe('every card points at the question paper it came from', () => {
     // literal was the SCHEME's id — so a deep link would have opened the answers
     // instead of the question, on 1,104 of 1,112 cards. Nothing read the field
     // yet, which is exactly why it went unnoticed.
-    const { paperEntry } = await import('../scripts/markbank/paperIndex.mjs');
+    const { paperEntry, corpusSubjectFor } =
+      await import('../scripts/markbank/paperIndex.mjs');
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS) {
       if (card.paperFileid === null) continue;
-      const entry = paperEntry(card.subjectId, card.year, card.level);
+      // History is sat in one of two FIELDS OF STUDY, printed as separate
+      // papers under separate SEC subject codes; the citation names which,
+      // and the corpus key follows it. Same helper the build uses.
+      const entry = paperEntry(
+        corpusSubjectFor(card.subjectId, card.questionRef), card.year, card.level);
       if (!entry) { bad.push(`${card.questionRef}: no ${card.subjectId} paper for ${card.year} ${card.level}`); continue; }
       const strip = (f?: string) => f?.replace(/\.pdf$/, '');
       const papers = entry.papers.map((p: { doc?: { f?: string } }) => strip(p.doc?.f));
@@ -394,7 +485,8 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid } = await import('../scripts/markbank/paperIndex.mjs');
+    const { resolvePaperFileid, corpusSubjectFor } =
+      await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
         // Maths uses A/B for marking-scheme tariff sections, while the source
@@ -404,7 +496,9 @@ describe('every card points at the question paper it came from', () => {
           ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
           : c.section;
         return c.paperFileid !== null
-          && c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, sourceSection);
+          && c.paperFileid !== resolvePaperFileid(
+            corpusSubjectFor(c.subjectId, c.questionRef),
+            c.year, c.level, sourceSection);
       })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
     expect(bad, show(bad)).toEqual([]);
@@ -447,6 +541,47 @@ describe('the size manifest matches the decks it describes', () => {
     ['computer-science', 'ordinary', CS_ORDINARY],
     ['engineering', 'higher', ENG_HIGHER],
     ['engineering', 'ordinary', ENG_ORDINARY],
+    ['history', 'higher', HISTORY_HIGHER],
+    ['history', 'ordinary', HISTORY_ORDINARY],
+    ['religious-education', 'higher', RE_HIGHER],
+    ['religious-education', 'ordinary', RE_ORDINARY],
+    // LCVP is examined at one level; there is no Higher/Ordinary pair to pin.
+    ['lcvp', 'common', LCVP_COMMON],
+    ['technology', 'higher', TECH_HIGHER],
+    ['technology', 'ordinary', TECH_ORDINARY],
+    ['french', 'higher', FRENCH_HIGHER],
+    ['french', 'ordinary', FRENCH_ORDINARY],
+    ['german', 'higher', GERMAN_HIGHER],
+    ['german', 'ordinary', GERMAN_ORDINARY],
+    ['italian', 'higher', ITALIAN_HIGHER],
+    ['italian', 'ordinary', ITALIAN_ORDINARY],
+    ['russian', 'higher', RUSSIAN_HIGHER],
+    ['russian', 'ordinary', RUSSIAN_ORDINARY],
+    ['japanese', 'higher', JAPANESE_HIGHER],
+    ['japanese', 'ordinary', JAPANESE_ORDINARY],
+    ['polish', 'higher', POLISH_HIGHER],
+    ['polish', 'ordinary', POLISH_ORDINARY],
+    ['portuguese', 'higher', PORTUGUESE_HIGHER],
+    ['portuguese', 'ordinary', PORTUGUESE_ORDINARY],
+    ['romanian', 'higher', ROMANIAN_HIGHER],
+    ['dutch', 'higher', DUTCH_HIGHER],
+    ['lithuanian', 'higher', LITHUANIAN_HIGHER],
+    ['lithuanian', 'ordinary', LITHUANIAN_ORDINARY],
+    ['latvian', 'higher', LATVIAN_HIGHER],
+    ['czech', 'higher', CZECH_HIGHER],
+    ['hungarian', 'higher', HUNGARIAN_HIGHER],
+    ['bulgarian', 'higher', BULGARIAN_HIGHER],
+    ['slovakian', 'higher', SLOVAKIAN_HIGHER],
+    ['swedish', 'higher', SWEDISH_HIGHER],
+    ['estonian', 'higher', ESTONIAN_HIGHER],
+    ['finnish', 'higher', FINNISH_HIGHER],
+    ['croatian', 'higher', CROATIAN_HIGHER],
+    ['danish', 'higher', DANISH_HIGHER],
+    ['slovenian', 'higher', SLOVENIAN_HIGHER],
+    ['arabic', 'higher', ARABIC_HIGHER],
+    ['arabic', 'ordinary', ARABIC_ORDINARY],
+    ['applied-maths', 'higher', AM_HIGHER],
+    ['applied-maths', 'ordinary', AM_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -510,6 +645,101 @@ describe('the taxonomy is the redeveloped specification', () => {
       geography: 'geography-',
       'computer-science': 'cs-',
       engineering: 'eng-',
+      history: 'hist-',
+      'religious-education': 're-',
+      lcvp: 'lcvp-',
+      technology: 'tech-',
+      // French files its cards under the published French taxonomy itself
+      // (curriculum.ts -> curriculumRegistry.ts), so its ids carry the
+      // subject's own name rather than an abbreviation.
+      french: 'french-',
+      // German files its cards under the published German taxonomy itself, for
+      // the reason French does.
+      german: 'german-',
+      // Italian files its cards under the published Italian taxonomy itself
+      // (curriculum.ts -> curriculumRegistry.ts), so its ids carry the
+      // subject's own name rather than an abbreviation, as French's do.
+      italian: 'italian-',
+      // Japanese files its cards under the published Japanese taxonomy itself
+      // (curriculum.ts -> curriculumRegistry.ts), as French and Italian do.
+      japanese: 'japanese-',
+      // Applied Maths files against the CANONICAL curriculum's own ids, which
+      // are 'applied-mathematics-<strand>-<topic>' — the subject id in the
+      // deck is the SEC's shorter name for the same subject.
+      'applied-maths': 'applied-mathematics-',
+      // Spanish files its cards under the published Spanish taxonomy itself
+      // (curriculum.ts -> curriculumRegistry.ts), as French does, so its ids
+      // carry the subject's own name rather than an abbreviation.
+      spanish: 'spanish-',
+      // Russian files its cards under the published Russian taxonomy itself
+      // (curriculum.ts), as French does, so its ids carry the subject's own
+      // name rather than an abbreviation.
+      russian: 'russian-',
+      polish: 'polish-',
+      // Portuguese files its cards under the published Portuguese taxonomy
+      // itself (curriculum.ts), as Polish does, so its ids carry the
+      // subject's own name rather than an abbreviation.
+      portuguese: 'portuguese-',
+      // Romanian and Dutch file their cards under their own published
+      // taxonomies (curriculum.ts), as Portuguese does.
+      romanian: 'romanian-',
+      dutch: 'dutch-',
+      // Lithuanian files its cards under the published Lithuanian taxonomy
+      // itself (curriculum.ts -> curriculumRegistry.ts), as Polish does.
+      lithuanian: 'lithuanian-',
+      // Latvian and Czech file their cards under their own published
+      // taxonomies, as Lithuanian and Polish do.
+      latvian: 'latvian-',
+      czech: 'czech-',
+      hungarian: 'hungarian-',
+      bulgarian: 'bulgarian-',
+      slovakian: 'slovakian-',
+      swedish: 'swedish-',
+      estonian: 'estonian-',
+      finnish: 'finnish-',
+      croatian: 'croatian-',
+      danish: 'danish-',
+      slovenian: 'slovenian-',
+      // Classical Studies files its cards under the published Classical
+      // Studies taxonomy itself, as French does — and under one further
+      // strand, 'classical-studies-legacy-*', for the ten-topic syllabus the
+      // 2021 and 2022 papers were sat on, which the canonical curriculum
+      // (a description of the CURRENT specification) does not carry.
+      'classical-studies': 'classical-studies-',
+      // Latin files its cards under the published Latin taxonomy itself, as
+      // French does. Its cards tag against one strand of it — 'latin-3-*',
+      // the legacy written paper's task types — because that is the paper
+      // every sitting in the bank was sat on; the other three strands ship
+      // unused so a student sees the whole shape of the course.
+      latin: 'latin-',
+      // Arabic files its cards under the published Arabic taxonomy itself.
+      arabic: 'arabic-',
+      // Ancient Greek files its cards under the published Ancient Greek
+      // taxonomy itself, as Latin does. Its cards tag against one strand of
+      // it — 'ancient-greek-4-*', the legacy written paper's task types —
+      // because that is the paper every sitting in the bank was sat on; the
+      // other four strands ship unused so a student sees the whole course.
+      'ancient-greek': 'ancient-greek-',
+      // Modern Greek files its cards under the published Modern Greek
+      // taxonomy itself, whose two strands are the paper's own two halves.
+      'modern-greek': 'modern-greek-',
+      // Mandarin Chinese files its cards under the published Mandarin Chinese
+      // specification itself. Cards tag against one strand of it —
+      // 'mandarin-chinese-3-*', the written paper's task types — because that
+      // is what a written card can be about; the other three strands cover
+      // the oral, the portfolio and the course's competences and ship unused.
+      'mandarin-chinese': 'mandarin-chinese-',
+      // Maltese and Ukrainian file their cards under their own published
+      // taxonomies, whose two strands are each paper's own two halves.
+      ukrainian: 'ukrainian-',
+      // Design & Communication Graphics files its cards under the published
+      // DCG taxonomy itself (curriculum.ts -> curriculumRegistry.ts), as
+      // Applied Maths does — the subject id in the deck is the abbreviation
+      // the SEC prints on the paper and students use for the same subject.
+      dcg: 'design-and-communication-graphics-',
+      // Physical Education files its cards under the LCPE specification's own
+      // two strands and its physical activity areas.
+      'physical-education': 'physical-education-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

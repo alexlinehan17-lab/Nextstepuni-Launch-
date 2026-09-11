@@ -33,7 +33,7 @@ import {
   sessionExerciseCount,
   topicSessionSummary,
 } from './sessionPlanning';
-import { SUBJECTS, builtDecks, cardsForTopic, deckSize, loadCards, strandsFor, topicMarks, type Level } from './deck';
+import { LEVEL_LABEL, SUBJECTS, builtDecks, cardsForTopic, deckSize, levelsFor, loadCards, strandsFor, topicMarks, type Level } from './deck';
 import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
@@ -194,7 +194,11 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
     const wanted = MARK_BANK_SUBJECT_ALIASES[raw] ?? raw;
     const subject = SUBJECTS.find(candidate => normaliseSubjectName(candidate.title) === wanted);
     if (!subject) continue;
-    const level: Level = profileSubject.level?.toLowerCase().startsWith('ordinary') ? 'ordinary' : 'higher';
+    // A common-level subject has no Higher/Ordinary to read off the profile,
+    // and a profile that says "Higher" for one is saying nothing about it.
+    const levels = levelsFor(subject.id);
+    const level: Level = levels.length === 1 ? levels[0]
+      : profileSubject.level?.toLowerCase().startsWith('ordinary') ? 'ordinary' : 'higher';
     if (deckSize(subject.id, level) > 0) return { subjectId: subject.id, level };
   }
   return null;
@@ -216,7 +220,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
     setSubjectId(id);
-    writeChoice(uid, { subjectId: id, level });
+    // A subject examined at one level has no Higher deck to carry the current
+    // choice into; without this, picking LCVP opened an empty Higher deck.
+    const levels = levelsFor(id);
+    const next = levels.includes(level) ? level : levels[0];
+    setLevel(next);
+    writeChoice(uid, { subjectId: id, level: next });
   }, [uid, level]);
   const chooseLevel = useCallback((l: Level) => {
     setLevel(l);
@@ -224,6 +233,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   }, [uid, subjectId]);
   const wide = useWide();
   const subject = SUBJECTS.find(s => s.id === subjectId) ?? SUBJECTS[0];
+  const subjectLevels = levelsFor(subject.id);
   // One deck per subject AND level, so a student's Biology work is untouched by
   // anything they do in Chemistry, and dropping a level never disturbs either.
   const deckId = `${subjectId}-${level}`;
@@ -535,7 +545,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
           <h2 style={{ font: `700 24px/1.15 ${SERIF}`, color: INK, margin: '0 0 3px' }}>
             {subject.title}
           </h2>
-          <Eyebrow>{level === 'higher' ? 'Higher level' : 'Ordinary level'} · {subject.spec}</Eyebrow>
+          <Eyebrow>{LEVEL_LABEL[level]} level · {subject.spec}</Eyebrow>
 
           {/* alignItems, or the pills stretch: a flex column stretches its
               children by default, which overrides the Segment's own inline-flex
@@ -558,18 +568,23 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                 onChange={chooseSubject}
               />
             </div>
-            <div style={{ width: '100%' }}>
-              <div style={{ marginBottom: 6 }}><Eyebrow>Paper level</Eyebrow></div>
-              <HorizontalTabs
-                variant="pill"
-                size="sm"
-                label="Paper level"
-                className="w-fit"
-                value={level}
-                onChange={chooseLevel}
-                options={[{ value: 'higher', label: 'Higher' }, { value: 'ordinary', label: 'Ordinary' }]}
-              />
-            </div>
+            {/* A subject examined at ONE level is offered no choice: showing
+                a Higher/Ordinary pill for LCVP would invite a student to pick
+                a paper the SEC does not set. */}
+            {subjectLevels.length > 1 && (
+              <div style={{ width: '100%' }}>
+                <div style={{ marginBottom: 6 }}><Eyebrow>Paper level</Eyebrow></div>
+                <HorizontalTabs
+                  variant="pill"
+                  size="sm"
+                  label="Paper level"
+                  className="w-fit"
+                  value={level}
+                  onChange={chooseLevel}
+                  options={subjectLevels.map(l => ({ value: l, label: LEVEL_LABEL[l] }))}
+                />
+              </div>
+            )}
           </div>
 
           {!online && (

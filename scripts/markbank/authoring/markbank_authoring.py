@@ -174,13 +174,23 @@ def make_audit(max_options, max_option_chars=MAX_OPTION_CHARS):
         """Catch what the build would drop, before writing anything."""
         problems = []
         for c in cards:
+            tm = c['tariffModel']
+            # A questionTotal or orderedSplit card cannot be checked by summing
+            # rows: the scheme prices the whole and never says how the marks
+            # divide, so the rows carry no value of their own. Summing them
+            # here crashed on the `None` the build requires them to hold —
+            # mirrors tariffFault() in build-deck.mjs, which asserts the same.
+            if tm['kind'] in ('questionTotal', 'orderedSplit'):
+                if any(r.get('marks') is not None for r in c['rows']):
+                    problems.append(
+                        f"{c['id']}: a {tm['kind']} tariff cannot give rows their own marks")
+                continue
             rowsum = sum(
                 (sum(r['group']['perOptionSteps'][:r['group']['claimMax']])
                  if r.get('group', {}).get('perOptionSteps') else r['marks'])
                 for r in c['rows'])
             if rowsum != c['totalMarks']:
                 problems.append(f"{c['id']}: rows sum to {rowsum}, tariff is {c['totalMarks']}")
-            tm = c['tariffModel']
             if tm['kind'] == 'bestNofParts':
                 a, pp = tm.get('answer'), tm.get('perPart')
                 if not a or not pp:

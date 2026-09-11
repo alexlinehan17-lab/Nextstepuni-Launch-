@@ -43,8 +43,64 @@ import { CARDS as COMPUTER_SCIENCE_HIGHER } from '../components/MarkBank/cards/c
 import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
+import { CARDS as RE_HIGHER } from '../components/MarkBank/cards/religious-education/higher';
+import { CARDS as RE_ORDINARY } from '../components/MarkBank/cards/religious-education/ordinary';
+import { CARDS as LCVP_COMMON } from '../components/MarkBank/cards/lcvp/common';
+import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
+import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
+import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technology/higher';
+import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
+import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
+import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/higher';
+import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
+import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
+import { CARDS as SPANISH_ORDINARY } from '../components/MarkBank/cards/spanish/ordinary';
+import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
+import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
+import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
+import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
+import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
+import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
+import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
+import { CARDS as POLISH_ORDINARY } from '../components/MarkBank/cards/polish/ordinary';
+import { CARDS as PORTUGUESE_HIGHER } from '../components/MarkBank/cards/portuguese/higher';
+import { CARDS as PORTUGUESE_ORDINARY } from '../components/MarkBank/cards/portuguese/ordinary';
+import { CARDS as ROMANIAN_HIGHER } from '../components/MarkBank/cards/romanian/higher';
+import { CARDS as DUTCH_HIGHER } from '../components/MarkBank/cards/dutch/higher';
+import { CARDS as LITHUANIAN_HIGHER } from '../components/MarkBank/cards/lithuanian/higher';
+import { CARDS as LITHUANIAN_ORDINARY } from '../components/MarkBank/cards/lithuanian/ordinary';
+import { CARDS as LATVIAN_HIGHER } from '../components/MarkBank/cards/latvian/higher';
+import { CARDS as CZECH_HIGHER } from '../components/MarkBank/cards/czech/higher';
+import { CARDS as ARABIC_HIGHER } from '../components/MarkBank/cards/arabic/higher';
+import { CARDS as ARABIC_ORDINARY } from '../components/MarkBank/cards/arabic/ordinary';
+import { CARDS as AGREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
+import { CARDS as AGREEK_ORDINARY } from '../components/MarkBank/cards/ancient-greek/ordinary';
+import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-greek/higher';
+import { CARDS as CLAS_HIGHER } from '../components/MarkBank/cards/classical-studies/higher';
+import { CARDS as CLAS_ORDINARY } from '../components/MarkBank/cards/classical-studies/ordinary';
+import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher';
+import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
+import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
+import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
+import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
+import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
+import { CARDS as DANISH_HIGHER } from '../components/MarkBank/cards/danish/higher';
+import { CARDS as ESTONIAN_HIGHER } from '../components/MarkBank/cards/estonian/higher';
+import { CARDS as FINNISH_HIGHER } from '../components/MarkBank/cards/finnish/higher';
+import { CARDS as HUNGARIAN_HIGHER } from '../components/MarkBank/cards/hungarian/higher';
+import { CARDS as MANDARIN_CHINESE_HIGHER } from '../components/MarkBank/cards/mandarin-chinese/higher';
+import { CARDS as MANDARIN_CHINESE_ORDINARY } from '../components/MarkBank/cards/mandarin-chinese/ordinary';
+import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakian/higher';
+import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
+import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
+import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
+import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
+import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
+import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
+import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
@@ -414,6 +470,223 @@ const decks = [
    * so a later regeneration cannot silently omit or replace any of its cards. */
   ['engineering:higher', ENGINEERING_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
   ['engineering:ordinary', ENGINEERING_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
+  /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
+   * 288 cards against the 288 asks its ten papers print, every one of them
+   * added and none replacing anything. Nothing in any other deck moved. */
+  ['religious-education:higher', RE_HIGHER, 135, '9a6117ccc7be90492858b10d071528bbfee33de42ec8a368c51d6e2c76c596f3'],
+  ['religious-education:ordinary', RE_ORDINARY, 153, 'ebad0ef90313b7b75bfb75aecca5c93c5372ee0745f58ffc407481bf74ee5569'],
+  /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
+   * replaced — it is a new subject and this is its first baseline. It ships
+   * as ONE deck because the paper is common level: there is no Higher or
+   * Ordinary sibling to pair it with, which is why it appears here once. */
+  ['lcvp:common', LCVP_COMMON, 314, '2f0310a433d9736ccf8a4a7a31a816de16abeaac995c881848fc3c2f827d82d2'],
+  /* Technology is the sixteenth subject and the first to be authored end to
+   * end from a paper-anchored census in one pass. Enrolled explicitly so a
+   * later regeneration cannot silently omit or replace any of its cards. */
+  ['technology:higher', TECHNOLOGY_HIGHER, 357, 'ae8ad195ca373cef2d8923c83a848613215aa9413c2cd7bda7d6796c4d64370c'],
+  ['technology:ordinary', TECHNOLOGY_ORDINARY, 359, '43e668303c30fef288ee0e09d8b5d3384105085e23cc10d288903ed29d1ab687'],
+  /* 2026-09-10: History, the nineteenth subject, and the first carded
+   * against TWO papers per sitting — a candidate sits either the Later
+   * Modern or the Early Modern field of study, and both are now in the
+   * corpus. Every card is new; none replaces anything. The Ordinary deck
+   * is much the larger because Ordinary is where this paper states its
+   * answers: its Part A prints five priced one-line answers per topic,
+   * while Higher answers everything outside the documents question with a
+   * marking ceiling and no content. */
+  ['history:higher', HISTORY_HIGHER, 80, '6ab586c6a2d83048d82aab13f5c7171ebcdf02fe61532a697c39556adaa0d657'],
+  ['history:ordinary', HISTORY_ORDINARY, 669, '7c781ff7d97974fe5679d021cbdf85299542783432fda549997830c5c6bcfdf9'],
+  /* French is the first modern language carded, and the first subject whose
+   * cards carry the passage they quote: every reading card binds the pages of
+   * its own comprehension in the QUESTION paper. New subject, first baseline —
+   * nothing removed and nothing replaced. */
+  ['french:higher', FRENCH_HIGHER, 110, '086e17874bb4922e9b80d358f4a666c6b3383c04004f21371614476fb91df9fc'],
+  ['french:ordinary', FRENCH_ORDINARY, 150, 'aab034b970b7b0313a2bb4f16da64542b2fce2482b0299e71c10ea22b111581e'],
+  /* German is the second modern language carded and the twenty-second subject.
+   * Its cards carry the TEXT they quote, as French's do, and each states the
+   * language its own answer must be in — which differs WITHIN one reading
+   * comprehension, so it cannot ride on the subject. New subject, first
+   * baseline — nothing removed and nothing replaced. */
+  ['german:higher', GERMAN_HIGHER, 111, '1e7b9a40d87f6aabc6a930548f04a6ecbc17c3655d973fa5ab4b75d59298672e'],
+  ['german:ordinary', GERMAN_ORDINARY, 153, '1bec5e64b16fa1e80235f02dbe51f50151dabb358213a2e1265a55f5515e79d3'],
+  /* Italian is the second modern language and the twenty-first subject. Every
+   * card is new; none replaces anything. Like French, every reading card
+   * carries the printed matter it is answered from — a passage, an
+   * advertisement or a literary extract, bound to the page of the question
+   * paper facing its own questions. */
+  ['italian:higher', ITALIAN_HIGHER, 172, '28bebc58e0f4a6691c5d069624a0fd36fe9aced034bc8a1d03f321d54422fb64'],
+  ['italian:ordinary', ITALIAN_ORDINARY, 178, 'cb669b9c536926731311350530b448e7a3d24f940e1f46bea180d351935ba9d8'],
+  /* Applied Maths is the seventeenth subject and the first to straddle a
+   * syllabus break: 2021-2022 are the outgoing mechanics course and 2023-2025
+   * the specification first examined in 2023. Enrolled explicitly so a later
+   * regeneration cannot silently omit or replace any of its cards. */
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 130, '5c8f36ba0f4214eee4269d22bcd3d20ada53f1a33820c36c0e873fe5b5afac72'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 145, '1e39bd494a3304e1ec0b1153834dba6d7bf186d7f90ec05055024d40b869b570'],
+  /* Spanish is the second modern language carded, and the first subject whose
+   * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
+   * article is a two-page loose sheet with its own SEC file id, and those 80
+   * cards carry it rather than the question paper. New subject, first baseline
+   * — nothing removed and nothing replaced. */
+  ['spanish:higher', SPANISH_HIGHER, 204, '2dc8d8c0e05c628ecf86b1d0fe8cd99a78460d37d47009606e3005ee8dfce5bb'],
+  ['spanish:ordinary', SPANISH_ORDINARY, 143, 'f42cb5ebc5dbe2a1e959e5a71c4a72d3864eabcdc84789481716a2e98c7f6be1'],
+  /* Russian is the fifth modern language and the twenty-second subject. Every
+   * card is new; none replaces anything. Like French and Italian, every
+   * reading card carries the printed matter it is answered from, bound to the
+   * pages of the question paper it was printed on; unlike them, fourteen of
+   * its cards are answered in RUSSIAN rather than in English or Irish and say
+   * so on their face. */
+  ['russian:higher', RUSSIAN_HIGHER, 83, '28a15e33be6d11b7077181773cc7611e2681f8c34c057fa8361077b386491392'],
+  ['russian:ordinary', RUSSIAN_ORDINARY, 116, '7a1246357f052dda6f3e337e5c05b1a7df6ce1ec213f8d3eb9cb648576fa8e49'],
+  /* Japanese is the twenty-second subject and the first set in a non-Latin
+   * script. Every card is new; none replaces anything. Two things are true of
+   * it and of no deck before it: a card may carry KANA AND KANJI, with the
+   * SEC's own furigana folded into the line in brackets (ja_text.py), and the
+   * answer language changes inside one question, so every card states which
+   * language its answer must be in. */
+  ['japanese:higher', JAPANESE_HIGHER, 339, 'a06378e0d982a6331919f663c9335bc1e9099560170ed6c98908d7b0108fc510'],
+  ['japanese:ordinary', JAPANESE_ORDINARY, 261, '460f3973e9d10e7a1f5a2797fb68d0c82530b3cb70bd2eadeaec015a4a807392'],
+  /* Polish is the twenty-fourth subject and the first NON-CURRICULAR EU
+   * LANGUAGE in the bank — a subject with no Leaving Certificate syllabus,
+   * examined against the language itself. Every card is new; none replaces
+   * anything. Two things are true of it and of no deck before it: the
+   * examination was REBUILT in 2022, from one 70-mark booklet sat at a single
+   * level to Section A Reading and Section B Written Production at two levels
+   * with a Listening Comprehension Test beside them, so one deck holds both
+   * papers; and its true/false answers are read from the COLUMN the scheme's
+   * tick stands in, which is the only place that answer is written down. */
+  ['polish:higher', POLISH_HIGHER, 115, '3cf1b2909433bcb50931d0d7162ff44fa529ca44752a16cc50dcddcad6ffe6a5'],
+  ['polish:ordinary', POLISH_ORDINARY, 122, '7b75f4690d22e1070ed66cb946f5eeeba80f3b83f73f4bc774cf9fd9d649083b'],
+  /* Portuguese is the twenty-sixth subject and the second NON-CURRICULAR EU
+   * LANGUAGE. Every card is new; none replaces anything. It is the first deck
+   * whose two halves are priced by DIFFERENT DOCUMENTS: the 2022-2025 cards
+   * take their tariff from the marking scheme, which prices every ask, and the
+   * 2021 cards take it from the QUESTION PAPER's right-hand margin, because
+   * the scheme of that examination prints answers with no marks anywhere in
+   * it. Both are printed; neither is inferred. */
+  ['portuguese:higher', PORTUGUESE_HIGHER, 94, 'af660d48d9959b5d40dffc4ea99d293223e5c62c3f3d93d95cc131ef6c386701'],
+  ['portuguese:ordinary', PORTUGUESE_ORDINARY, 79, '116e68ce1fdda8fd35a294e16e7f0df8b6d71906963ea88fede497c925dfc016'],
+  /* Romanian and Dutch are the twenty-seventh and twenty-eighth subjects, and
+   * the first two whose whole deck is priced by the QUESTION PAPER: their
+   * marking schemes print answers with no marks anywhere in them, and the
+   * tariff for every card here is the "(5 puncte)" or "(1 punt)" the paper
+   * sets in its own right-hand margin. Every card is new; none replaces
+   * anything. Both are sat at ONE level, so each ships a Higher deck only. */
+  ['romanian:higher', ROMANIAN_HIGHER, 50, 'f48554eeb516fd17cc9b89520eaf76ebe3e46c564ac0b41d0225653e225216ba'],
+  ['dutch:higher', DUTCH_HIGHER, 42, '62df13c5837ef5cabcd391e637a318fc25b106bcdf90744ffdddc4d10d6a70c4'],
+  /* Lithuanian, added 10 September 2026 — the second NON-CURRICULAR EU
+   * LANGUAGE, and the deepest corpus in the bank: twenty-two sittings from
+   * 2010 to 2026, because that is what the SEC published for it and every one
+   * of them is the same examination. Every card is new; none replaces
+   * anything. Its 306 cards cover 306 of the 826 asks its papers print and
+   * the other 520 are excluded with the scheme's own printed line — 280
+   * listening asks the recording answers, 99 written tasks answered by a
+   * marking grid or a model paragraph, 35 matching tasks whose answer is a
+   * letter naming a box the card cannot carry, and the rest named in
+   * scripts/markbank/authoring/exclusions/lithuanian.json. It is the first
+   * deck whose text needed a repair map derived from the LANGUAGE rather than
+   * from a font: two of its schemes embed a subset nothing else in the bank
+   * shares, and lt_glyphs.py settles their glyphs by which words they make. */
+  ['lithuanian:higher', LITHUANIAN_HIGHER, 163, '8492d0ed851e7023f0daae360420bc38e6aef456cfe45b7f62efc30c8e86fba3'],
+  ['lithuanian:ordinary', LITHUANIAN_ORDINARY, 143, '60d9e670bf51d7ff41846017985015d94031954562e82edeb0e6ace4b0d9e0d8'],
+  /* Latvian and Czech, added 10 September 2026 on Lithuanian's reader — the
+   * third and fourth non-curricular EU languages. Every card is new; none
+   * replaces anything. They are the SMALLEST decks in the bank and that is
+   * the measurement, not a shortfall: their seventeen sittings each print the
+   * old examination whose scheme answers five of its six reading questions,
+   * its commentary and its essay with continuous model prose and prices
+   * nothing inside any of it. What it does price is the vocabulary task, once
+   * on the question and not on its parts — so those card as `questionTotal`,
+   * one card per sitting carrying the SEC's gloss for each of five
+   * expressions, and every other ask is excluded with the printed line that
+   * refuses it. Latvian covers 68 of its 218 paper asks and Czech 75 of 219,
+   * with nothing open in either. */
+  ['latvian:higher', LATVIAN_HIGHER, 20, '03f3c7fdefa700a5437e95efc5bc7ab01f544851a497f4c129f2027f9f24a957'],
+  ['czech:higher', CZECH_HIGHER, 15, 'cf2e36d688faf72c658c8cb191fb3580e87ec1c934fd3a3017bdd0847a71ae56'],
+  /* Classical Studies is the twenty-second subject, entered on a RE-MEASURE:
+   * the bank had it recorded as rejected on a band grid that turns out to
+   * belong to the Research Study Report, which is coursework, not the written
+   * paper. Every card is new; none replaces anything. It is the second subject
+   * to straddle a syllabus break — 2021-2022 are the ten-topic syllabus and
+   * 2023-2025 the specification first examined in 2023 — and 271 of its cards
+   * bind an official SEC source, most of them the accompanying Paper X of
+   * photographs and images. */
+  ['classical-studies:higher', CLAS_HIGHER, 240, 'c7ef8e6be63fdd3108213d5f94333eff67b067893036821eb3164bbedffe0c66'],
+  ['classical-studies:ordinary', CLAS_ORDINARY, 276, '363ae6d0a26308e5c8b7459143bdbfa9c66c07f203c4125a03b67dc319ebd211'],
+  /* Latin, added 10 September 2026 — the twenty-second subject, and the
+   * seventh language. Every card is new; none replaces anything. Its 227
+   * cards cover 237 of the 328 asks its eight papers print, and the 91 that
+   * are not carded are excluded with the scheme's own printed line: every
+   * TRANSLATION ask (the scheme prices the source text by segment and never
+   * states a model answer) and every principal-parts and scansion ask (the
+   * scheme prices them and never states them). 101 of its cards bind an
+   * official SEC source — the Latin passage a comprehension is answered from,
+   * or the plate pages a Question 5 photograph question is about. */
+  ['latin:higher', LATIN_HIGHER, 145, '9062777f248fece7c2c345612d362a19bfd571f3461df962da78ba93b149a2c6'],
+  ['latin:ordinary', LATIN_ORDINARY, 82, 'c6d74830e3497c5862cc9e9727ecd9a57bdb4d27d8ef43b87860378e63960a94'],
+  /* Arabic is the twenty-third subject and the first written RIGHT TO LEFT.
+   * Every card is new; none replaces anything. It cards two corners of a paper
+   * that is otherwise marked by a Communication-and-Content grid: the reading
+   * comprehension's multiple choice, whose option words are the paper's own,
+   * and the whole of Part 3, Use of Language. Nothing about it was readable
+   * until ara_text.py and ara_glyphs.py — see ARABIC.md — so a card ID here is
+   * also a claim that the Arabic on it is the Arabic the SEC printed. */
+  ['arabic:higher', ARABIC_HIGHER, 125, 'e28afb1be279b23f9180b61cd90115f0633c895049fef70c4e4cbd448366e301'],
+  ['arabic:ordinary', ARABIC_ORDINARY, 125, 'e2ae63496b37a0f46053f3b96bffb7bb9a827e223508451dff6d8f62523e0c40'],
+  /* Ancient Greek is Latin's sibling and the deepest corpus in the bank: 27
+   * papers over fifteen years, 2010 to 2024. Every card is new; none replaces
+   * anything. One thing is true of it and of no deck before it: every sitting
+   * before 2023 sets its Greek in SPIonic, a pre-Unicode font embedded with no
+   * ToUnicode map, so a card ID here is also a claim that the polytonic Greek
+   * on it is the Greek the SEC printed (agr_text.py, and the audit it runs).
+   * Its 383 cards cover 387 of the 758 asks its papers print; the 371 that are
+   * not carded are excluded with the documents' own evidence — eleven sittings
+   * for which the SEC published no scheme at all, and every translation ask,
+   * whose scheme prices the SOURCE by segment and never states an answer. */
+  ['ancient-greek:higher', AGREEK_HIGHER, 369, 'e42e8aed0c67f36ef470d5d75acae61736068cf28d40b6d190cd08a6a842fdc1'],
+  ['ancient-greek:ordinary', AGREEK_ORDINARY, 14, 'd4d868a488b2671d8c104506674b32ef0aa33dc94a4e67974349a8b1b9132492'],
+  /* Modern Greek is the second NON-CURRICULAR EU LANGUAGE in the bank and the
+   * first subject in it examined at ONE level: the SEC's file letter is 'A' in
+   * all sixteen sittings and there is no Ordinary paper to card. Every card is
+   * new; none replaces anything. Its 79 cards cover 79 of the 142 asks its
+   * papers print, and the 63 that are not carded are the two written-production
+   * groups, the two sittings on which neither document states a per-question
+   * tariff, and 2015, whose scheme returns no Greek at all from its text
+   * layer. It is the first deck whose questions AND answers are both in the
+   * language examined, so every row says so on its face. */
+  ['modern-greek:higher', MGREEK_HIGHER, 79, 'd41a4a9affec25b7d9da9fac3eb514825d2d1d7da9c087c9c51bc786ee090ac3'],
+['bulgarian:higher', BULGARIAN_HIGHER, 141, '41075c3ba6d95e9133f8d491bf0b1c6f67dcc3924b07233394f631ada612df8b'],
+  ['croatian:higher', CROATIAN_HIGHER, 100, 'bdc6cbd4e562d05ebaf2ba1c42912b48982ab9a115c8bcad428f962966f78e8a'],
+  ['danish:higher', DANISH_HIGHER, 79, 'bc3f4cd2777fa14b0842f6ea0c07929c989d11c8091dba4f09aea34cc38a7e67'],
+  ['estonian:higher', ESTONIAN_HIGHER, 107, '541f9881661d7f5781026ae6c11d4682b7379c54c6d6927c37322ef49605b583'],
+  ['finnish:higher', FINNISH_HIGHER, 90, '584277d25fa47d8b6ca5872bb6f5fc5180efd09f7d6dbf4e78550429c360b8e9'],
+  ['hungarian:higher', HUNGARIAN_HIGHER, 168, '2086ae49469f6825d08c15fa521a2c896efb84000ce304d4a6c997bd729e9a9f'],
+  ['mandarin-chinese:higher', MANDARIN_CHINESE_HIGHER, 114, '24bfa04b1dfe98563d61aca009f1e5ff1a9f31cbe710795faba0a8e078d05955'],
+  ['mandarin-chinese:ordinary', MANDARIN_CHINESE_ORDINARY, 87, 'e2e4528196856999da743e0861f827a457555b70b5c77c7ed835d1a702fccdd9'],
+  ['slovakian:higher', SLOVAKIAN_HIGHER, 140, 'e8baef98d00f5b37334847c1720b92b70fc65117eee42ead02625a180f996ebd'],
+  ['slovenian:higher', SLOVENIAN_HIGHER, 23, '5a91c38d5a570c77dcec2866a705c302bc67a7b0d33bcdeea95cd249beb149f0'],
+  ['swedish:higher', SWEDISH_HIGHER, 121, 'ff499eff76dc0efe1a00cf9f20f85a3f2f508c9afd5de4ec01f2f1f8da966b56'],
+  ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
+  /* 2026-09-11: Design & Communication Graphics, first carded. 545 cards
+   * against the 478 leaf asks its 2019-2026 papers print -- 478/478 covered,
+   * nothing excluded and nothing open. More cards than asks because the
+   * scheme divides one printed ask into several priced units: 2021 Ordinary
+   * B-3(b) is priced as "Interpenetration on Left Hand Side" and "... Right
+   * Hand Side", and each is a card citing the paper's own (b). A drawing
+   * subject cards because the scheme states the CRITERIA -- every card's rows
+   * are the construction steps the SEC prints, at the marks the SEC prints
+   * beside them.
+   * Higher 302 -> 307 in the completeness audit: 2022 Higher C-5 prints
+   * "Base (13)" over steps that price 4+3+2+3 = 12, and that one wrong digit
+   * made every later component head read as a group inside an unpaid Base,
+   * so Vertical Spindle, Vice Pivot, Lower Jaw Spindle, Clamping Jaw and
+   * Rotating Boss & Dowel were never carded at all -- 31 of the question's 60
+   * marks. The misprint is recorded in dcg_scheme.HEAD_MISPRINTS and the five
+   * components are cards dcg-2022-hl-c5-3 .. -7. Nothing removed. */
+  ['dcg:higher', DCG_HIGHER, 307, '0f693f13e6222711fc241d1d1c8c0e00d3dfd765530de8243d5117da0a1729fc'],
+  ['dcg:ordinary', DCG_ORDINARY, 238, 'd0398830a5866de46dfbe76ed96ac0f924ee1764f6dad6728bc7260ae8e3e61a'],
+  /* Physical Education, carded from the written paper only: the project and
+   * the performance assessment are marked from work no paper prints. */
+  ['physical-education:higher', PE_HIGHER, 125, '2b937885f9ae0c9d7c2952d43c0c2cb44275bd31414d813dee6c98d20bb8525e'],
+  ['physical-education:ordinary', PE_ORDINARY, 96, '9f4fab469becb01ab3ce73e4b6301a270e68ea5310bd0225322b0cb65a1ca23f'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -428,7 +701,22 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+    // 10,495 before this session, plus sixteen subjects carded in six waves:
+    // Religious Education 288, LCVP 314, Technology 716, History 749,
+    // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
+    // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
+    // Portuguese 173, Romanian 50 and Dutch 42.
+    // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
+    // and 238 Ordinary). Nothing removed.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_111);
+    // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
+    // its written paper: 18,345 + 232.
+    // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
+    // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
+    // 16,087 + 306 + 20 + 15.
+    // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
+    // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
+    // Polish 237, Arabic 250, Ancient Greek 383 and Modern Greek 79.
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -440,7 +728,43 @@ describe('Mark Bank card preservation', () => {
     }
     const preNewSubjectCards = decks
       .filter(([name]) => !name.startsWith('computer-science:')
-        && !name.startsWith('engineering:'))
+        && !name.startsWith('engineering:')
+        && !name.startsWith('religious-education:')
+        && !name.startsWith('lcvp:')
+        && !name.startsWith('technology:')
+        && !name.startsWith('history:')
+        && !name.startsWith('french:')
+        && !name.startsWith('applied-maths:')
+        && !name.startsWith('german:')
+        && !name.startsWith('spanish:')
+        && !name.startsWith('italian:')
+        && !name.startsWith('russian:')
+        && !name.startsWith('japanese:')
+        && !name.startsWith('classical-studies:')
+        && !name.startsWith('latin:')
+        && !name.startsWith('polish:')
+        && !name.startsWith('arabic:')
+        && !name.startsWith('portuguese:')
+        && !name.startsWith('romanian:')
+        && !name.startsWith('dutch:')
+        && !name.startsWith('lithuanian:')
+        && !name.startsWith('latvian:')
+        && !name.startsWith('czech:')
+        && !name.startsWith('ancient-greek:')
+        && !name.startsWith('modern-greek:')
+        && !name.startsWith('bulgarian:')
+        && !name.startsWith('croatian:')
+        && !name.startsWith('danish:')
+        && !name.startsWith('estonian:')
+        && !name.startsWith('finnish:')
+        && !name.startsWith('hungarian:')
+        && !name.startsWith('mandarin-chinese:')
+        && !name.startsWith('slovakian:')
+        && !name.startsWith('slovenian:')
+        && !name.startsWith('swedish:')
+        && !name.startsWith('ukrainian:')
+        && !name.startsWith('dcg:')
+        && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

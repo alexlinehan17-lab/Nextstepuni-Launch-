@@ -254,6 +254,41 @@ export interface CurriculumRedevelopmentTransition {
  * into, and a subject present in one and absent from the other fails the
  * registry check the moment its deck can be loaded.
  */
+/**
+ * The LCVP Link Modules programme statement's two modules and their five units
+ * each, mirroring LCVP_STRANDS in components/MarkBank/deck.ts. Both are
+ * needed, for the reason the Construction Studies pair gives below: deck.ts is
+ * what the tool displays, this is what a card's topicId must resolve into.
+ * The ids are the canonical curriculum's own, so the two cannot drift apart in
+ * naming — only in presence, which the registry check catches.
+ */
+const LCVP_LINK_MODULES_GROUPS = [
+  {
+    id: 'lcvp-link-modules-0',
+    code: '1',
+    title: 'Link Module 1: Preparation for the World of Work',
+    topics: [
+      { id: 'lcvp-link-modules-0-0', code: '1.1', title: 'Introduction to Working Life' },
+      { id: 'lcvp-link-modules-0-1', code: '1.2', title: 'Job Seeking Skills' },
+      { id: 'lcvp-link-modules-0-2', code: '1.3', title: 'Career Investigation (core portfolio item)' },
+      { id: 'lcvp-link-modules-0-3', code: '1.4', title: 'Work Placement' },
+      { id: 'lcvp-link-modules-0-4', code: '1.5', title: 'Curriculum Vitae & Summary Report (core portfolio items)' },
+    ],
+  },
+  {
+    id: 'lcvp-link-modules-1',
+    code: '2',
+    title: 'Link Module 2: Enterprise Education',
+    topics: [
+      { id: 'lcvp-link-modules-1-0', code: '2.1', title: 'Enterprise Skills' },
+      { id: 'lcvp-link-modules-1-1', code: '2.2', title: 'Local Business Enterprises' },
+      { id: 'lcvp-link-modules-1-2', code: '2.3', title: 'Local Voluntary Organisations' },
+      { id: 'lcvp-link-modules-1-3', code: '2.4', title: 'An Enterprise Activity (Enterprise Report / Action Plan)' },
+      { id: 'lcvp-link-modules-1-4', code: '2.5', title: 'Work Experience Diary, My Own Place & Recorded Interview (optional portfolio items)' },
+    ],
+  },
+];
+
 const CONSTRUCTION_STUDIES_GROUPS = [
   {
     id: 'cs1',
@@ -406,6 +441,156 @@ const CONSTRUCTION_STUDIES_GROUPS = [
  * transmission systems, brakes and other mechanisms") added because the
  * written paper asks about those every year. The syllabus PDF is a SCAN with
  * no text layer, so the headings were read by rendering its pages. */
+/**
+ * The Mark Bank's twelve Technology headings, against the syllabus area each
+ * one IS. Ordered by the syllabus's own numbering, which is not the paper's:
+ * syllabus area 7 is "Option: Electronics and Control", which the paper sets
+ * as Option 2, and area 8 is "Option: Applied Control Systems", which the
+ * paper sets as Option 1. Mirrors TECHNOLOGY_STRANDS in
+ * components/MarkBank/deck.ts.
+ */
+const TECHNOLOGY_DECK_TOPICS: Record<string, CanonicalCurriculumTopic> = {
+  'technology-0': { id: 'tech-core-design', code: 'C1', title: 'A process of design' },
+  'technology-1': { id: 'tech-core-project', code: 'C2', title: 'Project and quality management' },
+  'technology-2': { id: 'tech-core-materials', code: 'C3', title: 'Materials and production' },
+  'technology-3': { id: 'tech-core-graphics', code: 'C4', title: 'Communications and graphic media' },
+  'technology-4': { id: 'tech-core-ict', code: 'C5', title: 'Information and communications technology' },
+  'technology-5': { id: 'tech-core-structures', code: 'C6', title: 'Structures and mechanisms' },
+  'technology-6': { id: 'tech-core-energy', code: 'C7', title: 'Energy, electricity and electronics' },
+  'technology-7': { id: 'tech-opt-electronics', code: 'O2', title: 'Electronics and control' },
+  'technology-8': { id: 'tech-opt-control', code: 'O1', title: 'Applied control systems' },
+  'technology-9': { id: 'tech-opt-ict', code: 'O3', title: 'Information and communications technology (option)' },
+  'technology-10': { id: 'tech-opt-manufacturing', code: 'O4', title: 'Manufacturing systems' },
+  'technology-11': { id: 'tech-opt-materials', code: 'O5', title: 'Materials technology' },
+};
+
+/**
+ * The ten TOPICS of the Classical Studies syllabus examined to 2022, printed
+ * by the 2021 and 2022 papers over their own questions and identical in all
+ * four of those sittings. The specification first examined in 2023 replaced
+ * them, so the canonical curriculum does not carry them and a card from those
+ * two years would resolve into no specification at all. Mirrors the legacy
+ * strand of CLASSICAL_STUDIES_STRANDS in components/MarkBank/deck.ts.
+ */
+/**
+ * The task types the outgoing Latin written paper is built from.
+ *
+ * Mark Bank cards Latin from the 2021-2025 papers, which are that paper, and
+ * files each card under the task type its own question sets — the ids come
+ * from the canonical taxonomy in curriculum.ts, whose fourth strand is
+ * "Legacy Written Paper — Task Types". Those ids have to exist inside the
+ * specification record too, or a card resolves into no specification at all.
+ *
+ * This group is appended to the outgoing-2026 Latin record rather than added
+ * to its four content groups: the four are the SYLLABUS, this is how the SEC
+ * examines it, and keeping them apart is why groups[0] is still "Language and
+ * texts". It carries no strand of the REDEVELOPED specification — that record
+ * is deliberately not encoded until it is verified.
+ */
+/**
+ * The task types the outgoing Ancient Greek written paper is built from.
+ *
+ * The same case as Latin's, one syllabus over: Mark Bank cards Ancient Greek
+ * from the 2010-2024 papers, which are the LEGACY written paper, and files each
+ * card under the task type its own question sets — the ids come from the
+ * canonical taxonomy in curriculum.ts, whose fifth strand is "Legacy Written
+ * Paper — Task Types". Those ids have to exist inside the specification record
+ * too, or a card resolves into no specification at all.
+ *
+ * Question 3's two routes are the syllabus's two prescribed COURSES rather than
+ * a prose/verse split, and the paper names each under its own passage: A World
+ * of Heroes is the Homer course and The Intellectual Revolution the Plato one.
+ */
+const ANCIENT_GREEK_TASK_TYPE_GROUP: CanonicalCurriculumGroup = {
+  id: 'ancient-greek-4',
+  code: 'Paper',
+  title: 'Written paper task types',
+  topics: [
+    { id: 'ancient-greek-4-0', code: 'Q1A', title: 'Composition — Translation into Greek' },
+    { id: 'ancient-greek-4-1', code: 'Q1B', title: 'Unseen Comprehension — Prose Passage with Questions' },
+    { id: 'ancient-greek-4-2', code: 'Q2', title: 'Unseen Translation into English (Prose & Verse)' },
+    { id: 'ancient-greek-4-3', code: 'Q3', title: 'Prescribed Prose Text — Translation & Questions (e.g. Plato)' },
+    { id: 'ancient-greek-4-4', code: 'Q3', title: 'Prescribed Homer — Translation & Questions' },
+    { id: 'ancient-greek-4-5', code: 'Q4', title: 'Greek History & Civilisation (incl. Art & Architecture)' },
+  ],
+};
+
+const LATIN_TASK_TYPE_GROUP: CanonicalCurriculumGroup = {
+  id: 'latin-3',
+  code: 'Paper',
+  title: 'Written paper task types',
+  topics: [
+    { id: 'latin-3-0', code: 'Q1A', title: 'Composition — Translation into Latin' },
+    { id: 'latin-3-1', code: 'Q1B', title: 'Unseen Comprehension — Prose Passage with Questions' },
+    { id: 'latin-3-2', code: 'Q2', title: 'Unseen Translation into English (Prose & Verse)' },
+    { id: 'latin-3-3', code: 'Q3', title: 'Prescribed Prose Text — Translation & Questions' },
+    { id: 'latin-3-4', code: 'Q3', title: "Prescribed Poetry — Virgil's Aeneid: Translation & Questions" },
+    { id: 'latin-3-5', code: 'Q4', title: 'Grammar, Accidence & Scansion' },
+    { id: 'latin-3-6', code: 'Q5', title: 'Roman History & Civilisation Essays' },
+  ],
+};
+
+const CLASSICAL_STUDIES_LEGACY_GROUP: CanonicalCurriculumGroup = {
+  id: 'classical-studies-legacy',
+  code: 'To 2022',
+  title: 'Ten-topic syllabus, examined to 2022',
+  topics: [
+    { id: 'classical-studies-legacy-1', code: 'T1', title: 'Athens at War' },
+    { id: 'classical-studies-legacy-2', code: 'T2', title: 'Alexander the Great' },
+    { id: 'classical-studies-legacy-3', code: 'T3', title: 'Life and Thought in the Late Roman Republic' },
+    { id: 'classical-studies-legacy-4', code: 'T4', title: 'Roman Historians' },
+    { id: 'classical-studies-legacy-5', code: 'T5', title: 'Greek Drama' },
+    { id: 'classical-studies-legacy-6', code: 'T6', title: 'Ancient Epic' },
+    { id: 'classical-studies-legacy-7', code: 'T7', title: 'Writers of the Augustan Age' },
+    { id: 'classical-studies-legacy-8', code: 'T8', title: 'Art and Architecture in Greek Society' },
+    { id: 'classical-studies-legacy-9', code: 'T9', title: 'The Philosopher in Society: Socrates and Plato' },
+    { id: 'classical-studies-legacy-10', code: 'T10', title: 'Roman Art and Architecture' },
+  ],
+};
+
+/**
+ * The Mark Bank's twenty-four History topics, against the canonical group each
+ * belongs to. The titles are the papers' own, read off all twenty papers in the
+ * corpus rather than typed; where the SEC prints a topic two ways across years
+ * (“Colony versus kingdom” and “Colony v. Kingdom”) the commonest printing on the
+ * QUESTION PAPER is used, because the paper is what a student read. Mirrors
+ * HISTORY_STRANDS in components/MarkBank/deck.ts.
+ */
+const HISTORY_DECK_TOPICS: Record<string, CanonicalCurriculumTopic[]> = {
+  'history-0': [
+    { id: 'hist-em-irl-1', code: 'IRL 1', title: 'Reform and Reformation in Tudor Ireland, 1494-1558' },
+    { id: 'hist-em-irl-2', code: 'IRL 2', title: 'Rebellion and conquest in Elizabethan Ireland, 1558-1603' },
+    { id: 'hist-em-irl-3', code: 'IRL 3', title: 'Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660' },
+    { id: 'hist-em-irl-4', code: 'IRL 4', title: 'Establishing a colonial ascendancy, 1660-1715' },
+    { id: 'hist-em-irl-5', code: 'IRL 5', title: 'Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770' },
+    { id: 'hist-em-irl-6', code: 'IRL 6', title: 'The end of the Irish kingdom and the establishment of the Union, 1770-1815' },
+  ],
+  'history-1': [
+    { id: 'hist-em-eur-1', code: 'EUR 1', title: 'Europe from Renaissance to Reformation, 1492-1567' },
+    { id: 'hist-em-eur-2', code: 'EUR 2', title: 'Religion and power: politics in the later 16th century, 1567-1609' },
+    { id: 'hist-em-eur-3', code: 'EUR 3', title: 'The eclipse of Old Europe, 1609-1660' },
+    { id: 'hist-em-eur-4', code: 'EUR 4', title: 'Europe in the age of Louis XIV, 1660-1715' },
+    { id: 'hist-em-eur-5', code: 'EUR 5', title: 'Establishing empires, 1715-1775' },
+    { id: 'hist-em-eur-6', code: 'EUR 6', title: 'Empires in revolution, 1775-1815' },
+  ],
+  'history-2': [
+    { id: 'hist-lm-irl-1', code: 'IRL 1', title: 'Ireland and the Union, 1815-1870' },
+    { id: 'hist-lm-irl-2', code: 'IRL 2', title: 'Movements for political and social reform, 1870-1914' },
+    { id: 'hist-lm-irl-3', code: 'IRL 3', title: 'The pursuit of sovereignty and the impact of partition, 1912-1949' },
+    { id: 'hist-lm-irl-4', code: 'IRL 4', title: 'The Irish diaspora, 1840-1966' },
+    { id: 'hist-lm-irl-5', code: 'IRL 5', title: 'Politics and society in Northern Ireland, 1949-1993' },
+    { id: 'hist-lm-irl-6', code: 'IRL 6', title: 'Government, economy and society in the Republic of Ireland, 1949-1989' },
+  ],
+  'history-3': [
+    { id: 'hist-lm-eur-1', code: 'EUR 1', title: 'Nationalism and state formation in Europe, 1815-1871' },
+    { id: 'hist-lm-eur-2', code: 'EUR 2', title: 'Nation states and international tensions, 1871-1920' },
+    { id: 'hist-lm-eur-3', code: 'EUR 3', title: 'Dictatorship and democracy in Europe, 1920-1945' },
+    { id: 'hist-lm-eur-4', code: 'EUR 4', title: 'Division and realignment in Europe, 1945-1992' },
+    { id: 'hist-lm-eur-5', code: 'EUR 5', title: 'European retreat from empire and the aftermath, 1945-1990' },
+    { id: 'hist-lm-eur-6', code: 'EUR 6', title: 'The United States and the world, 1945-1989' },
+  ],
+};
+
 const ENGINEERING_GROUPS = [
   {
     id: 'eng1',
@@ -1317,12 +1502,14 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
           ['ancient-greek-2026-temple-architecture', 'Greek temple architecture'],
           ['ancient-greek-2026-vase-painting', 'Attic vase painting'],
         ]),
+        ANCIENT_GREEK_TASK_TYPE_GROUP,
       ],
       coverageNodeLevel: 'topic',
       notes: [
         'This is the outgoing syllabus sat by the 2026 examination cohort.',
         'The specification introduced to fifth-year students in September 2025 is deliberately excluded from this record.',
         'Prescribed texts are set for each examination year by the State Examinations Commission.',
+        "A final group carries the written paper's own task types, which is how Mark Bank files a card from a 2010-2024 paper.",
       ],
     };
   }
@@ -1355,12 +1542,14 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
           ['latin-2026-art', 'Roman art'],
           ['latin-2026-architecture', 'Roman architecture'],
         ]),
+        LATIN_TASK_TYPE_GROUP,
       ],
       coverageNodeLevel: 'topic',
       notes: [
         'This is the outgoing syllabus sat by the 2026 examination cohort.',
         'The specification introduced to fifth-year students in September 2025 is deliberately excluded from this record.',
         'Prescribed texts are set for each examination year by the State Examinations Commission.',
+        "A final group carries the written paper's own task types, which is how Mark Bank files a card from a 2021-2025 paper.",
       ],
     };
   }
@@ -1391,6 +1580,15 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
           ['arabic-2026-punctuation', 'Paragraphing and punctuation'],
         ]),
       ],
+      /* Mark Bank files an Arabic card under the published Arabic taxonomy in
+       * curriculum.ts, which describes the course; this record describes the
+       * ASSESSMENT. The three task types the deck cards map onto it as
+       * follows, and the mapping is stated rather than guessed at read time. */
+      legacyTopicAliases: {
+        'arabic-3-2': 'arabic-2026-reading-comprehension',
+        'arabic-5-0': 'arabic-2026-grammar-syntax',
+        'arabic-5-4': 'arabic-2026-grammar-syntax',
+      },
       coverageNodeLevel: 'topic',
       notes: [
         'This is the outgoing syllabus sat by the 2026 examination cohort.',
@@ -1430,6 +1628,24 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       id: 'religious-education:2003',
       title: 'Leaving Certificate Religious Education syllabus',
       status: 'verified',
+      /* Mark Bank files a Religious Education card under the SECTION printed
+       * over it, because that is the only content address the paper gives:
+       * eight of the ten sections number no question at all, and a section's
+       * asks range across every subtopic beneath it. So each section carries a
+       * whole-section node alongside the syllabus's own subtopics, which are
+       * left exactly as the taxonomy holds them. The GROUP ids are unchanged,
+       * because the selection rules above address the sections by them. */
+      groups: spec.groups.map((group, index) => {
+        const letter = 'ABCDEFGHIJ'[index];
+        return {
+          ...group,
+          code: letter,
+          topics: [
+            { id: `re-${letter.toLowerCase()}`, code: letter, title: group.title },
+            ...group.topics,
+          ],
+        };
+      }),
       sources: [
         { authority: 'Curriculum Online', title: 'Religious Education', url: OFFICIAL.religiousEducation, role: 'content' },
         { authority: 'NCCA', title: 'Leaving Certificate Religious Education syllabus', url: OFFICIAL.religiousEducationSyllabus, role: 'assessment' },
@@ -1574,6 +1790,20 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
   if (spec.subjectId === 'history') {
     return {
       ...spec,
+      /* Mark Bank files a History card under the numbered TOPIC printed over
+       * its question — "Ireland: Topic 1 / Ireland and the Union, 1815-1870" —
+       * because that is the content address both the paper and the marking
+       * scheme use, and a topic's questions range across every case study
+       * beneath it. Each of the four fields-and-areas therefore carries six
+       * extra canonical topics, one per numbered topic, holding the deck's own
+       * ids so a card resolves into this specification. The group ids and the
+       * syllabus's own case-study topics are untouched. */
+      groups: spec.groups.map((group) => {
+        const deckTopics = HISTORY_DECK_TOPICS[group.id];
+        return deckTopics
+          ? { ...group, topics: [...deckTopics, ...group.topics] }
+          : group;
+      }),
       id: 'history:current',
       title: 'Leaving Certificate History syllabus',
       status: 'verified',
@@ -1849,6 +2079,16 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
   if (spec.subjectId === 'classical-studies') {
     return {
       ...spec,
+      /* Mark Bank cards Classical Studies across a SYLLABUS BREAK. The four
+       * strand groups below are the specification first examined in 2023 and
+       * cover the 2023-2025 papers; the 2021 and 2022 papers were sat on the
+       * ten-topic syllabus, whose topics this specification does not carry and
+       * which each of those papers prints over its own questions. Those ten
+       * are added as one further group holding the deck's own topic ids, so a
+       * 2021 card resolves here rather than resolving nowhere — the same shape
+       * History uses for its numbered topics. The specification's own four
+       * groups are untouched. */
+      groups: [...spec.groups, CLASSICAL_STUDIES_LEGACY_GROUP],
       id: 'classical-studies:current',
       title: 'Leaving Certificate Classical Studies specification',
       status: 'verified',
@@ -1867,7 +2107,10 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
           weighting: 80, levels: ['higher', 'ordinary'], required: true,
         },
       ],
-      notes: ['The four strand groups reproduce the official specification structure.'],
+      notes: [
+        'The four strand groups reproduce the official specification structure.',
+        'A fifth group carries the ten topics of the syllabus examined to 2022, which the 2021 and 2022 papers were sat on.',
+      ],
     };
   }
   if (spec.subjectId === 'design-and-communication-graphics') {
@@ -1895,6 +2138,20 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
   if (spec.subjectId === 'technology') {
     return {
       ...spec,
+      // The written paper examines each of the twelve syllabus AREAS as a
+      // whole -- one Section C question per option, and Sections A and B
+      // across the seven core areas -- so the Mark Bank files its cards at
+      // area level rather than against a sub-heading the paper never
+      // addresses. Each area therefore carries one extra canonical topic,
+      // named for the area and carrying the deck's own id, so a card
+      // resolves into this specification. The group ids are untouched: the
+      // selection rule below names them, and so does the registry test.
+      groups: spec.groups.map((group) => {
+        const deckTopic = TECHNOLOGY_DECK_TOPICS[group.id];
+        return deckTopic
+          ? { ...group, topics: [...group.topics, deckTopic] }
+          : group;
+      }),
       id: 'technology:current',
       title: 'Leaving Certificate Technology syllabus',
       status: 'verified',
@@ -2041,6 +2298,7 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       id: 'lcvp-link-modules:outgoing', title: 'LCVP Link Modules programme statement — examination to June 2027',
       lastExamYear: 2027, source: OFFICIAL.lcvp,
       note: 'Life, Community and Work is introduced in September 2026 and needs a separate canonical record.',
+      groups: LCVP_LINK_MODULES_GROUPS,
     },
   };
   const outgoing = verifiedOutgoing[spec.subjectId];
@@ -2097,7 +2355,10 @@ const normalise = (value: string) => value.trim().toLowerCase().replace(/\s+/g, 
 
 const SUBJECT_ALIASES: Record<string, string> = {
   maths: 'mathematics', math: 'mathematics',
-  'applied maths': 'applied-mathematics',
+  // Both spellings. Mark Bank's deck id is the hyphenated 'applied-maths' —
+  // normalise() only collapses whitespace, so the spaced alias never matched
+  // it and every Applied Maths card resolved into no specification at all.
+  'applied maths': 'applied-mathematics', 'applied-maths': 'applied-mathematics',
   bio: 'biology', chem: 'chemistry', phys: 'physics',
   'ag science': 'agricultural-science', 'agricultural science': 'agricultural-science',
   re: 'religious-education', religion: 'religious-education',

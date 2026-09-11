@@ -42,6 +42,7 @@ const SUBJECT_TITLE = {
   'agricultural-science': 'Agricultural Science', business: 'Business',
   'home-economics': 'Home Economics', economics: 'Economics',
   'construction-studies': 'Construction Studies',
+  technology: 'Technology',
 };
 
 const argv = process.argv.slice(2);
@@ -117,7 +118,11 @@ for (const f of catalogue) {
 
 writeFileSync(MANIFEST, JSON.stringify(manifest, null, 1));
 
-const lettered = Object.values(manifest).filter(m => m.lettersVisible.length && m.labelMeanings.length);
+// Null-safe: 116 entries published before these fields existed (Computer
+// Science's code listings among them) carry neither, and the summary line
+// threw on the first of them -- after the manifest had already been
+// written, so the run looked like a failure and was not one.
+const lettered = Object.values(manifest).filter(m => m.lettersVisible?.length && m.labelMeanings?.length);
 process.stdout.write(`manifest holds ${Object.keys(manifest).length} figures (${lettered.length} lettered with scheme-stated meanings)\n`);
 process.stdout.write(`skipped ${skipped.length} from this catalogue\n`);
 const why = {};

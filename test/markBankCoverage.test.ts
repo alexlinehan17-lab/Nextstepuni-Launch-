@@ -53,7 +53,9 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   const out: { id: string; ref: string }[] = [];
-  for (const level of ['higher', 'ordinary']) {
+  // 'common' is the level a one-level subject ships under — LCVP's Link
+  // Modules. Leaving it out of this walk reported the whole deck as missing.
+  for (const level of ['higher', 'ordinary', 'common']) {
     const path = resolve(
       __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
     let text: string;
@@ -76,12 +78,50 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // disambiguating suffix ("Q13(a)(iii) Name", "Q12(b)(ii) 1–2") — reconcile
 // parses the address and ignores the suffix, and this mirror does the same.
 // What CANNOT pass is a ref with no parseable address at all.
-const HEAD =
-  /^(\d{4}) (HL|OL)(?: Paper (\d))?(?: Section ([A-Za-z0-9]+))?(?: E(\d))? (?:Q(\d{1,2})(-alt)?|ABQ)/;
+// The question number is OPTIONAL: Religious Education's Sections B-J print
+// none, so its citations read "2023 HL Section E Q(b)(ii)".
+// CL is LCVP's common level, the third the SEC prints.
+// History adds two things. Its two FIELDS OF STUDY are separate papers a
+// candidate chooses between, so the citation names one — "2021 HL Early
+// Modern ...". And its Sections 2 and 3 restart their numbering inside every
+// TOPIC, so the section token carries the topic and, at Ordinary, the A/B/C
+// part: "Section 2 Topic 1 A Q1". A part priced whole with nothing numbered
+// beneath it drops the Q entirely ("Section 2 Topic 1 B"), and the extra Part
+// A of 2023-2025 Ordinary is cited "Section Extra A Q1".
+// Classical Studies' syllabus to 2022 prints no sections and no question
+// numbers: ten TOPICS, each setting questions "(i)" to "(iv)" with lettered
+// parts under them, so the topic and the roman together are the address and
+// the citation reads "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers
+// Questions 1-16 straight through Sections A and B and cites "2024 HL Q3(b)".
+const ADDRESS =
+  '^(\\d{4}) (HL|OL|CL)'
+  + '(?: (?:Later|Early) Modern)?'
+  + '(?: Paper (\\d))?'
+  + '(?: Topic \\d{1,2}\\((?:i{1,3}|iv|v)\\))?'
+  + '(?: Section ((?:Extra )?[A-Za-z0-9]+(?: Topic \\d{1,2})?(?: [A-C]\\b)?))?'
+  + '(?: E(\\d))?';
+const QTOKEN = '(?: (?:Q(\\d{1,2})?(-alt)?|ABQ))';
+// Either the citation carries a question token, or it ENDS at its section —
+// which only a unit the paper numbers nothing beneath may do. Anchoring the
+// second form is what stops "2021 HL" alone from matching every citation and
+// letting the whole address through as an ignorable suffix.
+const HEAD = new RegExp(`${ADDRESS}${QTOKEN}|${ADDRESS}$`);
 // The bare A/B between tokens is Chemistry's printed option question —
 // "Q11(d)A(i)" answers option A of part (d).
+// A sub-marker may be a DIGIT: the Baltic languages number the rows of a
+// true/false table "1." to "5." where every science paper numbers them "(i)"
+// to "(v)", and the citation names the address the candidate saw.
+// A part marker may be CYRILLIC: the Bulgarian paper letters Question 1's five
+// expressions "а) б) в) г) д)", which look like Latin letters and are not.
+// Same class as reconcile.py's PART_TOKEN, which this mirrors.
+
+// A part letter is not always a LATIN letter either: Maltese letters the five
+// expressions of every Question 1 "a) b) ċ) d) e)", because ċ is the third
+// letter of the Maltese alphabet, and the citation names the marker the
+// candidate saw. The four accented letters that alphabet adds — ċ ġ ħ ż —
+// join the class here and in reconcile.py's PART_TOKEN, which is its mirror.
 const TAIL =
-  /^(?:\s*(?:\(\s*[A-Za-z]{1,4}\s*\)|[AB]\b|[,–—-]|and\b))*(?:[\s\d].*)?$/;
+  /^(?:\s*(?:\(\s*(?:[A-Za-zċĊġĠħĦżŻ\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)|[AB]\b|[,–—-]|and\b))*(?:[\s\d].*)?$/;
 
 describe('Mark Bank paper-coverage ratchet', () => {
   it.each(SUBJECTS)('%s deck matches its measured baseline', (subject) => {
@@ -147,7 +187,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // The refs hash pins addresses; this pins everything else — questionText,
     // rows, figure bindings. A card gutted in place trips here.
     const h = createHash('sha256');
-    for (const level of ['higher', 'ordinary']) {
+    for (const level of ['higher', 'ordinary', 'common']) {
       const path = resolve(
         __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
