@@ -663,7 +663,7 @@ const decks = [
   ['slovenian:higher', SLOVENIAN_HIGHER, 23, '5a91c38d5a570c77dcec2866a705c302bc67a7b0d33bcdeea95cd249beb149f0'],
   ['swedish:higher', SWEDISH_HIGHER, 121, 'ff499eff76dc0efe1a00cf9f20f85a3f2f508c9afd5de4ec01f2f1f8da966b56'],
   ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
-  /* 2026-09-11: Design & Communication Graphics, first carded. 540 cards
+  /* 2026-09-11: Design & Communication Graphics, first carded. 545 cards
    * against the 478 leaf asks its 2019-2026 papers print -- 478/478 covered,
    * nothing excluded and nothing open. More cards than asks because the
    * scheme divides one printed ask into several priced units: 2021 Ordinary
@@ -671,8 +671,15 @@ const decks = [
    * Hand Side", and each is a card citing the paper's own (b). A drawing
    * subject cards because the scheme states the CRITERIA -- every card's rows
    * are the construction steps the SEC prints, at the marks the SEC prints
-   * beside them. */
-  ['dcg:higher', DCG_HIGHER, 302, '5eb9571c8abd8d1a1d3fbe8c59931ff206f8de04d18460067c91978e18b95db1'],
+   * beside them.
+   * Higher 302 -> 307 in the completeness audit: 2022 Higher C-5 prints
+   * "Base (13)" over steps that price 4+3+2+3 = 12, and that one wrong digit
+   * made every later component head read as a group inside an unpaid Base,
+   * so Vertical Spindle, Vice Pivot, Lower Jaw Spindle, Clamping Jaw and
+   * Rotating Boss & Dowel were never carded at all -- 31 of the question's 60
+   * marks. The misprint is recorded in dcg_scheme.HEAD_MISPRINTS and the five
+   * components are cards dcg-2022-hl-c5-3 .. -7. Nothing removed. */
+  ['dcg:higher', DCG_HIGHER, 307, '0f693f13e6222711fc241d1d1c8c0e00d3dfd765530de8243d5117da0a1729fc'],
   ['dcg:ordinary', DCG_ORDINARY, 238, 'd0398830a5866de46dfbe76ed96ac0f924ee1764f6dad6728bc7260ae8e3e61a'],
 ] as const;
 
@@ -693,9 +700,9 @@ describe('Mark Bank card preservation', () => {
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
     // Portuguese 173, Romanian 50 and Dutch 42.
-    // 18,345 before Design & Communication Graphics, plus its 540 (302 Higher
+    // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_885);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_890);
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.

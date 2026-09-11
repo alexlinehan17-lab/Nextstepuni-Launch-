@@ -117,6 +117,27 @@ MISPRINTS = {
     },
 }
 
+# The same thing for an UNLETTERED head — an assembly's named component, which
+# is how Section C question 5 is priced. A head is what separates one unit
+# from the next, so a head whose printed mark disagrees with its own steps
+# does not merely mis-state that unit: every later head is read as a GROUP
+# inside the unit that is still unpaid, and its steps fall off into the
+# question's trailer. That is a silent loss of whole components, and it is
+# invisible to the arithmetic check, because the trailer counts toward the
+# question's total either way. Keyed (year, level, section, question, title).
+HEAD_MISPRINTS = {
+    (2022, 'hl', 'C', 5, 'Base'): {
+        'printed': 13, 'corrected': 12,
+        'why': 'the unit\'s own four steps price 4+3+2+3 = 12, and the nine '
+               'component heads of the question sum to 61 against the '
+               'scheme\'s printed "Total = 60" — 12 is the value that '
+               'satisfies both. Read at the printed 13 the five components '
+               'after it (Vertical Spindle 7, Vice Pivot 6, Lower Jaw '
+               'Spindle 8, Clamping Jaw 4, Rotating Boss & Dowel 7) were '
+               'never opened as units at all',
+    },
+}
+
 
 def _entries(lines):
     """The scheme's LOGICAL lines: a wrapped step joined back to its mark.
@@ -138,17 +159,31 @@ def _entries(lines):
     for line in lines:
         if pending is not None:
             joined = f'{pending} {line}'
-            if STEP.match(joined) or PART.match(joined):
-                out.append(joined)
-                pending = None
-                continue
             # Two markers running together is not a wrap, and neither is a
             # marker followed by a line that is already complete on its own:
             # "(b) Interpenetration" above "Interpenetration on Left Hand
             # Side (5)" is a lettered SCOPE over two priced sub-heads, and
             # joining them gave the letter one sub-head's marks and lost the
             # other's. Emit the opener as it stands.
-            if OPENS.match(line) or HEAD.match(line) or len(pending) > 400:
+            #
+            # The marker test comes FIRST, before the join is tried, because
+            # a joined pair can itself LOOK like one step: 2010 Higher C-3
+            # divides part (c) with unpriced roman sub-heads, and "(i)
+            # Surfaces B and C" joined to "(viii) Use of correct widths on
+            # surface B (or surface C) ... 1" matches STEP as a single step
+            # numbered (i) whose text is the two lines welded together. Four
+            # Higher questions across 2010-2012 lost their roman run that way
+            # and the step the SEC printed under the divider was never read
+            # under its own number.
+            if OPENS.match(line):
+                out.append(pending)
+                pending = None
+                # fall through: the opener below is re-examined on its own
+            elif STEP.match(joined) or PART.match(joined):
+                out.append(joined)
+                pending = None
+                continue
+            elif HEAD.match(line) or len(pending) > 400:
                 out.append(pending)
                 pending = None
             else:
@@ -263,6 +298,30 @@ class Question:
             if u.step_sum != u.marks:
                 out.append(f'({u.letter or "whole"}) steps sum to '
                            f'{u.step_sum}, the scheme prints ({u.marks})')
+        # The arithmetic alone cannot see a LOST unit. A question whose
+        # trailer holds the marks of five components still sums to its printed
+        # total, because the trailer counts toward the total too — 2022 Higher
+        # C-5 balanced perfectly with Vertical Spindle, Vice Pivot, Lower Jaw
+        # Spindle, Clamping Jaw and Rotating Boss & Dowel never read as units
+        # at all. What the loss DOES disturb is the roman run: the SEC numbers
+        # a question's steps (i), (ii), (iii)… straight through, so a unit
+        # holding a gapped run, or a trailer opening before the units end, is
+        # a step that has been filed under the wrong head.
+        order = {r: i for i, r in enumerate(ROMANS)}
+        for u in self.units:
+            idx = [order[s.roman] for s in u.steps if s.roman in order]
+            if idx and idx != list(range(idx[0], idx[0] + len(idx))):
+                out.append(f'({u.letter or "whole"}) "{u.title}" holds a '
+                           f'broken roman run '
+                           f'{[s.roman for s in u.steps]}')
+        placed = [order[s.roman] for u in self.units for s in u.steps
+                  if s.roman in order]
+        tail = [order[s.roman] for s in self.trailer if s.roman in order]
+        if tail and placed and min(tail) < max(placed):
+            out.append(f'the question-level steps '
+                       f'{[s.roman for s in self.trailer]} open before the '
+                       f'units end at ({ROMANS[max(placed)]}) — a priced head '
+                       f'was read as a group instead of a unit')
         return out
 
     def __repr__(self):
@@ -371,6 +430,17 @@ class DcgScheme:
             h = HEAD.match(line)
             if h:
                 title, marks = _clean(h.group(1)), int(h.group(2))
+                fix = HEAD_MISPRINTS.get((self.year, self.level, cur.section,
+                                          cur.q, title))
+                if fix and fix['printed'] == marks:
+                    marks = fix['corrected']
+                    self.flags.append({
+                        'type': 'sec-misprint',
+                        'where': f'{self.year} {self.level} {cur.section}-'
+                                 f'{cur.q} "{title}"',
+                        'detail': f'the scheme prints ({fix["printed"]}) where '
+                                  f'{fix["corrected"]} is required: '
+                                  f'{fix["why"]}'})
                 if unit is None or unit.step_sum >= unit.marks:
                     # Inside a bare lettered scope the head is that letter's
                     # own unit; outside one it is the question's.

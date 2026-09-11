@@ -304,6 +304,24 @@ def author(bind_figures=True):
             qq = P.questions[qkey]
             unit_list = S.questions[qkey].units if qkey in S.questions else []
             mine = sorted(k for k in leaves if k[0] == section and k[1] == q)
+
+            # A step the scheme prices on the QUESTION rather than on any of
+            # its parts. Every Ordinary question ends with one -- a
+            # presentation mark for the finished drawing, printed as the next
+            # roman in the run after the last part's last step -- and there is
+            # no ask on the paper to put it on: attaching it to a part would
+            # state a tariff against that part that the SEC never printed.
+            # Named and counted rather than dropped in silence, so the ledger
+            # says what is not on a card and why.
+            for step in (S.questions[qkey].trailer if qkey in S.questions
+                         else []):
+                reason = ('the scheme prices this step on the QUESTION, '
+                          'under no part the paper asks')
+                refused[reason] += 1
+                if len(examples[reason]) < 80:
+                    examples[reason].append(
+                        f'{year} {level.upper()} {section}-{q}: '
+                        f'({step.roman}) {step.text} = {step.marks}')
             if not unit_list:
                 for key in mine:
                     ref = ref_for(year, level, section, q, [key], leaves)

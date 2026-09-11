@@ -10015,41 +10015,252 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(13)"
+   "notation": "(12)"
   },
-  "totalMarks": 13,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "dcg-2022-hl-c5-2-r1",
     "kind": "anyN",
     "verbatim": "Complete outline of Base",
-    "marks": 13,
+    "marks": 12,
     "openList": true,
-    "contextNote": "The scheme prices this drawing step by step: 4, 3, 2, 3, 1 — 13 marks in all, in the order the scheme sets them out.",
+    "contextNote": "The scheme prices this drawing step by step: 4, 3, 2, 3 — 12 marks in all, in the order the scheme sets them out.",
     "group": {
-     "claimMax": 5,
+     "claimMax": 4,
      "perOption": 4,
      "options": [
       "Complete outline of Base",
       "Inner detail of recess portion",
       "Inner detail of spot face section",
-      "Holes",
-      "Circular hole/Dowel"
+      "Holes"
      ],
      "perOptionSteps": [
       4,
       3,
       2,
-      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Base' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-c5-3",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Vertical Spindle",
+  "questionText": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
+  "stem": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-c5-3-r1",
+    "kind": "anyN",
+    "verbatim": "Draw required outline of Vertical Spindle",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 5, 2 — 7 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Draw required outline of Vertical Spindle",
+      "Ø4 Hole"
+     ],
+     "perOptionSteps": [
+      5,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Vertical Spindle' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-c5-4",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Vice Pivot",
+  "questionText": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
+  "stem": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-c5-4-r1",
+    "kind": "anyN",
+    "verbatim": "Outline of Vice Pivot",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 2 — 6 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Outline of Vice Pivot",
+      "Inner Detail"
+     ],
+     "perOptionSteps": [
+      4,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Vice Pivot' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-c5-5",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Lower Jaw Spindle",
+  "questionText": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
+  "stem": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-c5-5-r1",
+    "kind": "anyN",
+    "verbatim": "Outline of Lower Jaw Spindle",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 6, 2 — 8 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Outline of Lower Jaw Spindle",
+      "Inner Detail"
+     ],
+     "perOptionSteps": [
+      6,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Lower Jaw Spindle' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-c5-6",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Clamping Jaw",
+  "questionText": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
+  "stem": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-c5-6-r1",
+    "kind": "anyN",
+    "verbatim": "Outline of Clamping Jaw",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Outline of Clamping Jaw",
+      "Hole Detail"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Clamping Jaw' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2022-hl-c5-7",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5 — Rotating Boss & Dowel",
+  "questionText": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.)",
+  "stem": "The 3D graphic on the right shows a rotating fly-tying vice. Also shown is a classic triumph bass fishing fly held in a vice. The details of the vice are given in Fig. C- 5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, with the parts fully assembled. (Note: Any omitted dimensions may be estimated.) Part Name Qty. Lower Jaw Spindle Base Clamping Jaw Vertical Spindle Vice Pivot Rotating Boss Securing Screw Dowel",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2022-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2022-hl-c5-7-r1",
+    "kind": "anyN",
+    "verbatim": "Outline of Rotating Boss",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 2, 1 — 7 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Outline of Rotating Boss",
+      "Inner Detail",
+      "Circular hole/Dowel"
+     ],
+     "perOptionSteps": [
+      4,
+      2,
       1
      ]
     }
    }
   ],
-  "notes": "The scheme heads this 'Base' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+  "notes": "The scheme heads this 'Rotating Boss & Dowel' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
  },
  {
-  "id": "dcg-2022-hl-c5-3",
+  "id": "dcg-2022-hl-c5-8",
   "topicId": "design-and-communication-graphics-2-4",
   "conceptId": "dcg-2-4",
   "level": "higher",
@@ -10069,7 +10280,7 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "dcg-2022-hl-c5-3-r1",
+    "id": "dcg-2022-hl-c5-8-r1",
     "kind": "anyN",
     "verbatim": "Outline of Securing Screws",
     "marks": 4,
@@ -10092,7 +10303,7 @@
   "notes": "The scheme heads this 'Securing Screws' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
  },
  {
-  "id": "dcg-2022-hl-c5-4",
+  "id": "dcg-2022-hl-c5-9",
   "topicId": "design-and-communication-graphics-2-4",
   "conceptId": "dcg-2-4",
   "level": "higher",
@@ -10112,7 +10323,7 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "dcg-2022-hl-c5-4-r1",
+    "id": "dcg-2022-hl-c5-9-r1",
     "kind": "anyN",
     "verbatim": "Presentation, hatching and centrelines",
     "marks": 6,
