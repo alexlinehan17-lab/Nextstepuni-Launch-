@@ -51,7 +51,15 @@ ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{1,3}|ix|x)\)')
 # every band on that page to nothing.
 QHEAD = re.compile(r'^\s*Question\s+(\d{1,2})\.?\s*(?:\(\s*\d{1,3}\s*marks?\s*\))?\s*$', re.I)
 # The page's own furniture, printed on every page and never part of an ask.
-HEADER = 120.0
+#
+# 45, not 120. The guard is there for the SEC's logo and barcode strip, which
+# are printed on the COVER -- a page with no question head on it, so band_for
+# already returns nothing there. At 120 it was also throwing away the stimulus
+# of every part (a), which is printed directly under the question head: 2024
+# Ordinary Q6(a) shows the engineering component at y99 and 2024 Higher Q4(a)
+# the brake disc at y109, and both parts came back with "nothing to cut". The
+# running head itself sits above y45 on every paper in the corpus.
+HEADER = 45.0
 FOOTER = 60.0
 
 
@@ -80,9 +88,18 @@ def artwork(page):
         r = d['rect']
         if r.width > 18 and r.height > 18:
             out.append((r.x0, r.y0, r.x1, r.y1))
+    # A PAGE rendered as an image is not a picture printed on the page. Every
+    # Ordinary Level paper sets its metrology question on a page flattened to a
+    # raster, and pymupdf reports it as nine strips each the full width of the
+    # sheet -- so the crop for "State the nominal diameter of the hole" came
+    # back as the whole page, ask and all, and four parts a sitting were
+    # refused for it. Margin to margin, starting at the very edge, is the one
+    # shape a figure never has.
+    width = page.rect.width
     return [a for a in out
             if a[1] > HEADER and a[3] < page.rect.height - FOOTER
-            and a[2] - a[0] > 24 and a[3] - a[1] > 24]
+            and a[2] - a[0] > 24 and a[3] - a[1] > 24
+            and not (a[0] <= 2 and a[2] >= width - 2)]
 
 
 def is_answer_box(page, rect):
@@ -344,7 +361,8 @@ REJECTED = {
     (2023, 'hl', 8, 'b', 'i'): 'clips the word "machine" beneath it',
     # An ask with two OR branches whose crop serves only the second.
     (2024, 'hl', 8, 'c', 'i'): 'shows the CNC branch, not the lubrication one',
-    (2024, 'ol', 5, 'a', 'i'): 'one of the items the ask says are shown',
+    (2024, 'ol', 5, 'a', 'i'): 'the three item captions are clipped in half at '
+                               'the foot, and the scheme keys its answers to them',
     (2024, 'ol', 6, 'c', 'i'): 'shows the CNC branch, not the lathe part',
     (2025, 'ol', 4, 'c', 'i'): 'shows tool A, and (i) asks about the R-clip',
     # A recycling process drawn as a wheel, with its last stages printed
@@ -359,9 +377,13 @@ REJECTED = {
     # It CARRIES THE ASK, printed inside the same ruled box as the drawing it
     # belongs to, so the card would show the question twice:
     (2021, 'hl', 7, 'a', 'i'): 'the ruled box holds the ask as well',
-    (2022, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
-    (2024, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
-    (2025, 'ol', 7, 'b', 'i'): 'the ruled box holds the ask as well',
+    # ... and the four Ordinary metrology pages that read that way did so
+    # because the whole PAGE is a raster, which artwork() now leaves out. Three
+    # of the four crops that replaced them were opened: 2023 and 2024 are the
+    # right picture with its dimensions on it, and these two are not.
+    (2022, 'ol', 7, 'b', 'i'): 'nothing left to cut once the page raster is out',
+    (2021, 'ol', 7, 'b', 'i'): 'clips the arrows and the labels they point to',
+    (2025, 'ol', 7, 'b', 'i'): 'clips the arrows and the labels they point to',
     # It is a LABEL and an arrow sliced off a bigger picture, not a picture:
     (2025, 'hl', 3, 'a', 'ii'): 'a fragment of the jet engine photograph',
     (2025, 'hl', 3, 'a', 'iii'): 'the words "compressor blade" and an arc',
@@ -379,7 +401,7 @@ REJECTED = {
     (2023, 'hl', 7, 'c', 'i'): 'a stage of the process is clipped off',
     (2023, 'hl', 8, 'b', 'ii'): 'clips the word "machine" beneath it',
     (2023, 'ol', 6, 'c', 'i'): 'the 3D printer branch, not the thumbscrew',
-    (2024, 'ol', 5, 'a', 'ii'): 'one of the items the ask says are shown',
+    (2024, 'ol', 5, 'a', 'ii'): 'the item captions are clipped in half at the foot',
     (2025, 'hl', 5, 'c', 'iii'): 'the last stages of the process are clipped off',
 }
 

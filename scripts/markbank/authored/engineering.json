@@ -9119,35 +9119,29 @@
    {
     "id": "r-6",
     "kind": "point",
-    "verbatim": "Disadvantages of facial recognition:",
+    "verbatim": "▪ Threatens privacy and may impose on personal freedom.",
     "marks": null
    },
    {
     "id": "r-7",
     "kind": "point",
-    "verbatim": "▪ Threatens privacy and may impose on personal freedom.",
+    "verbatim": "▪ Misuse causing fraud and other crimes.",
     "marks": null
    },
    {
     "id": "r-8",
     "kind": "point",
-    "verbatim": "▪ Misuse causing fraud and other crimes.",
+    "verbatim": "▪ Errors can implicate innocent people.",
     "marks": null
    },
    {
     "id": "r-9",
     "kind": "point",
-    "verbatim": "▪ Errors can implicate innocent people.",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
     "verbatim": "▪ Technology can be manipulated, etc.",
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2024-hl-q1-b",
@@ -9190,7 +9184,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2024-hl-q1-c",
@@ -9214,7 +9208,7 @@
     "marks": 5
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2024-hl-q1-d",
@@ -9251,36 +9245,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
- },
- {
-  "id": "eng-2024-hl-q1-e",
-  "topicId": "eng-3-14",
-  "conceptId": "discuss-contribution-any-following-has-made",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q1(e)",
-  "questionText": "Discuss the contribution that any one of the following has made to technology: (i) Viktor Kaplan (ii) James Watt (iii) Gaston Planté.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Viktor Kaplan (1876 – 1934) was an Austrian engineer and the inventor of the Kaplan turbine, a revolutionary water turbine used to produce electricity from large streams with only a moderate incline.",
-    "marks": 5,
-    "accepts": [
-     "James Watt (1736 – 1819) was a Scoƫsh inventor, mechanical engineer whose improvements in steam engine technology drove the Industrial Revolution. To describe the efficiency of his engines, he coined the term 'horsepower' and devised a rev counter.",
-     "Gaston Plamté (1834 – 1889) was a French physicist who invented the lead–acid battery. This type of battery was developed as the first rechargeable electric battery marketed for commercial use and it is widely used in automobiles."
-    ]
-   }
-  ],
-  "stem": "Give brief answers to any ten of the following:",
-  "notes": "The scheme prints 'Any one @ 5'."
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2024-hl-q1-f",
@@ -9293,19 +9258,24 @@
   "questionRef": "2024 HL Q1(f)",
   "questionText": "Describe two important material properties to be considered when selecting a suitable material for a mouth guard.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
+    "verbatim": "Material properties should be lightweight, tough, strong, corrosion resistant, non-toxic,",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
     "verbatim": "Material properties should be lightweight, tough, strong, corrosion resistant, non-toxic, biocompatible (not toxic and not rejected by the body), long-lasting, easy to mould, etc.",
-    "marks": null
+    "marks": 2
    }
   ],
-  "stem": "Give brief answers to any ten of the following:",
-  "notes": "The scheme prints '3 + 2'."
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2024-hl-q1-h",
@@ -9318,7 +9288,7 @@
   "questionRef": "2024 HL Q1(h)",
   "questionText": "The roof bar uses an elastomer strip to provide a grip for carrying items. Explain the term elastomer.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
@@ -9326,22 +9296,40 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Elastomers are a group of polymers consisting of linear chains that are coiled, entangled and are subject to minimal cross-linking. This irregular internal structure and bonding arrangement allows these materials to be very elastic at room temperature.",
-    "marks": null
-   },
+    "marks": 5
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2024-hl-q1-i",
+  "topicId": "eng-1-5",
+  "conceptId": "briefly-process-metal-extrusion-used-manufacture",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(i)",
+  "questionText": "Describe briefly the process of metal extrusion used to manufacture the aluminium profile of the roof bar.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
    {
-    "id": "r-2",
+    "id": "r-1",
     "kind": "point",
     "verbatim": "Metal extrusion is a forming process in which a metal (either hot or cold) is forced through a die.",
     "marks": null
    },
    {
-    "id": "r-3",
+    "id": "r-2",
     "kind": "point",
     "verbatim": "Due to the high pressures, the metal exits the die through the opening, assuming the die shape in the process.",
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:",
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
   "notes": "The scheme prints '5'."
  },
  {
@@ -9366,7 +9354,7 @@
     "marks": 5
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2024-hl-q1-k",
@@ -9396,7 +9384,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:",
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
   "notes": "The scheme prints '5'."
  },
  {
@@ -9452,7 +9440,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any ten of the following:"
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
   "id": "eng-2024-hl-q2-a-i",
@@ -9491,7 +9479,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Security: Containers provide a secure environment for goods, reducing the risk of damage, theŌ and loss.",
+    "verbatim": "Security: Containers provide a secure environment for goods, reducing the risk of damage, theft and loss.",
     "marks": null
    },
    {
@@ -9512,7 +9500,8 @@
     "verbatim": "Reduced Environmental Impact: While shipping does have environmental impacts, container ships are relatively efficient in terms of fuel consumption and emissions per ton of cargo transported compared to other forms of transport, such as air freight.",
     "marks": null
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2024-hl-q2-a-ii",
@@ -9572,7 +9561,32 @@
     "verbatim": "Ships can face delays due to port congestion or labour strikes.",
     "marks": null
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
+ },
+ {
+  "id": "eng-2024-hl-q2-b-i",
+  "topicId": "eng-3-14",
+  "conceptId": "term-teu",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q2(b)(i)",
+  "questionText": "Explain the term TEU.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Twenty Foot Equivalent Unit. Containers are standardised with the agreed standard based on a 20 foot container.",
+    "marks": 5
+   }
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2024-hl-q2-b-ii",
@@ -9608,6 +9622,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '5'."
  },
  {
@@ -9644,7 +9659,8 @@
     "verbatim": "It is cost effective due to long life and performance.",
     "marks": null
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2024-hl-q2-c-ii",
@@ -9680,6 +9696,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '5'."
  },
  {
@@ -9749,34 +9766,6 @@
   ],
   "stem": "Container ship two stroke diesel engine",
   "notes": "The scheme prints '5'."
- },
- {
-  "id": "eng-2024-hl-q2-e",
-  "topicId": "eng-3-14",
-  "conceptId": "discuss-environmental-impact-any-following-regard",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q2(e)",
-  "questionText": "Discuss the environmental impact of any two of the following with regard to container ship technology: (i) Ballast water management. (ii) Oil leakage. (iii) Emissions.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Effective ballast water management is crucial for mitigating the environmental impact of container ships. While there are challenges associated with chemical use and energy consumption, the overall benefits of preventing invasive species and protecting water quality are important.",
-    "marks": 10,
-    "accepts": [
-     "Oil leakage from container ships poses significant immediate and long-term environmental threats including marine pollution, harm to marine life, habitat destruction and ecosystem disruption. However, through design improvements, maintenance practices, effective response plans and regulatory compliance, the risks and impacts of oil leakage can be significantly reduced.",
-     "Reducing emissions from the use of fossil fuels on container ships has predominantly positive environmental impacts such as mitigating climate change, improving air quality, and protecting ecosystems. However, it also presents challenges, such as the environmental impact of alternative fuel production and the energy requirements of emissions reduction technologies."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any two @ 5 + 5'."
  },
  {
   "id": "eng-2024-hl-q3-a-i",
@@ -9881,7 +9870,7 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "The distance the pendulum travels aŌer breaking the piece will give the toughness value. Charpy Test",
+    "verbatim": "The distance the pendulum travels after breaking the piece will give the toughness value. Charpy Test",
     "marks": null
    },
    {
@@ -9911,12 +9900,42 @@
    {
     "id": "r-10",
     "kind": "point",
-    "verbatim": "The distance the pendulum travels aŌer breaking the piece will give the toughness value.",
+    "verbatim": "The distance the pendulum travels after breaking the piece will give the toughness value.",
     "marks": null
    }
   ],
   "notes": "The scheme prints '8'.",
   "questionFigureKey": "engineering-2024-HL-paper-q3ai-art"
+ },
+ {
+  "id": "eng-2024-hl-q3-b-iii",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-diagram-s-following-terms-related",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q3(b)(iii)",
+  "questionText": "Describe, with the aid of a diagram(s), the following terms related to tensile testing: • necking • cup and cone fracture.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Necking is a type of plastic deformation observed in ductile materials subjected to tensile stress. This is where the middle of the specimen is noticeably thinner than the rest of the specimen and with a little more stress the piece is going to fracture.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cup and cone fracture is a type of failure observed in ductile metals and plastics due to tensile stress. This type of fracture gets its name from the resulting shapes at the end of the broken pieces after a failure has occurred.",
+    "marks": 2
+   }
+  ],
+  "stem": "Stress (N/mm2) 45 90 135 200 275 308 335 345 340 Strain (×1000) 0.50 1.00 1.50 2.25 3.25 4.00 5.00 6.50 7.50"
  },
  {
   "id": "eng-2024-hl-q3-c-i",
@@ -9993,6 +10012,37 @@
   "notes": "The scheme prints '8'."
  },
  {
+  "id": "eng-2024-hl-q4-a-i",
+  "topicId": "eng-2-6",
+  "conceptId": "purpose-hardening-tempering-brake-disc-shown",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q4(a)(i)",
+  "questionText": "Outline the purpose of hardening and tempering the brake disc shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Metal hardening is a process that strengthens and increases the durability of metals by increasing the hardness of the material. The surface hardness of the brake disc will be improved and the increased wear resistance will result in a longer lasting product.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tempering removes some of the hardness, brittleness and strength left by hardening but increases the toughness of the piece and makes it more useful. This will make the brake disc more durable and less likely to fracture due to an impact.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q4ai-art"
+ },
+ {
   "id": "eng-2024-hl-q4-a-ii",
   "topicId": "eng-2-6",
   "conceptId": "aid-diagram-s-suitable-hardening-heat",
@@ -10026,8 +10076,83 @@
     "marks": null
    }
   ],
-  "stem": "Brake disc",
-  "notes": "The scheme prints '8'."
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q4ai-art"
+ },
+ {
+  "id": "eng-2024-hl-q4-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "identify-regions-labelled-b-c-d",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q4(b)(i)",
+  "questionText": "Identify the regions labelled A, B, C, D and E.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Austenite and Ferrite",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Austenite",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = Austenite and Cementite",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D = Ferrite and Pearlite",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "E = Pearlite and Cementite",
+    "marks": 1
+   }
+  ],
+  "figureKey": "engineering-2024-HL-paper-q4bi-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Austenite and Ferrite",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Austenite",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Austenite and Cementite",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Ferrite and Pearlite",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "Pearlite and Cementite",
+    "askedInThisQuestion": true
+   }
+  ]
  },
  {
   "id": "eng-2024-hl-q4-b-ii",
@@ -10064,18 +10189,23 @@
   "questionRef": "2024 HL Q4(b)(iii)",
   "questionText": "Outline two benefits of annealing 0.6% carbon steel.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "This makes the metal as soŌ as possible, improves ductility, refines the grain size and removes internal stresses.",
-    "marks": null
+    "verbatim": "This makes the metal as soft as possible, improves ductility, refines the grain size",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This makes the metal as soft as possible, improves ductility, refines the grain size and removes internal stresses.",
+    "marks": 3
    }
   ],
-  "notes": "The scheme prints '3 + 3'.",
   "questionFigureKey": "engineering-2024-HL-paper-q4bi-art"
  },
  {
@@ -10157,7 +10287,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Spiƫng of the water on impacting the heated surface could lead to burning.",
+    "verbatim": "Spitting of the water on impacting the heated surface could lead to burning.",
     "marks": null
    },
    {
@@ -10276,6 +10406,35 @@
   "notes": "The scheme prints '8'."
  },
  {
+  "id": "eng-2024-hl-q5-b-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "melting-point-metal-melting-point-metal",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q5(b)(iii)",
+  "questionText": "State the melting point of metal A and the melting point of metal B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A - 270°C",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B - 630°C",
+    "marks": 2
+   }
+  ]
+ },
+ {
   "id": "eng-2024-hl-q5-c-i",
   "topicId": "eng-3-7",
   "conceptId": "principle-sacrificial-protection-relation-offshore-wind",
@@ -10308,7 +10467,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 HL Q5(c)(ii)",
-  "questionText": "Answer any two of the following: Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment.",
+  "questionText": "Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -10449,6 +10608,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -10481,10 +10641,11 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "It is effectively used to join sheet metal together and is recognised by the distinctive circular mark leŌ at the site of the weld. It is widely used in the automotive industry for body panel assembly.",
+    "verbatim": "It is effectively used to join sheet metal together and is recognised by the distinctive circular mark left at the site of the weld. It is widely used in the automotive industry for body panel assembly.",
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -10508,7 +10669,8 @@
     "verbatim": "Radiography (X-ray) NDT can be used to check welds for porosity. The X-Ray test provides a highly sensitive image of the internal structure of the material indicating if porosity is present in the weld.",
     "marks": 6
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2024-hl-q6-b",
@@ -10535,13 +10697,14 @@
      "Welding fumes: ventilation system required to extract fumes.",
      "The electrode is in the shape of a round bar with tapered ends where it contacts the material.",
      "The components to be joined are placed between the electrodes and then pressed together. A nugget weld is achieved as current is passed through the electrodes generating a large heat between the metals.",
-     "It is effectively used to join sheet metal together and is recognised by the distinctive circular mark leŌ at the site of the weld. It is widely used in the automotive industry for body panel assembly.",
+     "It is effectively used to join sheet metal together and is recognised by the distinctive circular mark left at the site of the weld. It is widely used in the automotive industry for body panel assembly.",
      "The inert gas results in less toxic fumes compared to using a flux/coating, no slag is formed.",
      "Radiography (X-ray) NDT can be used to check welds for porosity. The X-Ray test provides a highly sensitive image of the internal structure of the material indicating if porosity is present in the weld.",
      "Porosity"
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
  },
  {
@@ -10563,7 +10726,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Safety: The pipe inspection robot can locate faults in pipelines without puƫng human lives in danger, making the job safer for employees.",
+    "verbatim": "Safety: The pipe inspection robot can locate faults in pipelines without putting human lives in danger, making the job safer for employees.",
     "marks": null
    },
    {
@@ -10578,7 +10741,8 @@
     "verbatim": "Improved efficiency and quality: The inspection robot can provide real-time information such as fault location, crawler inclination (pipeline slope), air pressure, crawling distance (meters of the line), etc.",
     "marks": null
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2024-hl-q6-c-ii",
@@ -10620,7 +10784,38 @@
     "verbatim": "A camera drone can be used to inspect places that are hard to reach and could be dangerous, such as the roof of a building, etc.",
     "marks": null
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
+ },
+ {
+  "id": "eng-2024-hl-q7-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "process-used-manufacture-cover-process-used",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q7(a)(i)",
+  "questionText": "Name a process used to manufacture the cover and name a process used to manufacture the hose pipe.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hose reel - Injection moulding",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Hose pipe - Extrusion",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art"
  },
  {
   "id": "eng-2024-hl-q7-a-ii",
@@ -10654,6 +10849,36 @@
   "questionFigureKey": "engineering-2024-HL-paper-q7ai-art"
  },
  {
+  "id": "eng-2024-hl-q7-a-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "identify-suitable-polymer-additive-used-improve",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q7(a)(iii)",
+  "questionText": "Identify a suitable polymer additive which is used to improve the properties of the hose pipe for each of the following: Hose reel cover • increased flexibility • greater resistance to UV rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plasticisers are added to improve the flexibility of the polymer material.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Stabilisers are used to help resist UV rays and the degrading effects of the environment.",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art"
+ },
+ {
   "id": "eng-2024-hl-q7-b-i",
   "topicId": "eng-1-9",
   "conceptId": "suitable-example-where-plastic-product-may",
@@ -10674,7 +10899,8 @@
     "verbatim": "Upcycling plastic products generally takes a used low value object and creates a higher value use e.g. Making shoes from recycled PET bottles, shopping bags from recycled bottles, recycled plastic building boards from milk containers, etc.",
     "marks": 6
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2024-hl-q7-b-ii",
@@ -10697,7 +10923,8 @@
     "verbatim": "Glass transition temperature describes the temperature at which a solid glassy amorphous polymer changes to a rubbery, viscous polymer. It is engineered by altering the degree of branching or cross-linking in the polymer by the addition of plasticisers.",
     "marks": 6
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2024-hl-q7-b-iii",
@@ -10720,7 +10947,8 @@
     "verbatim": "Thin layers of materials bonded together. High strength plastics can be produced by layers of other polymer, fibres, paper or cloth coated with resin being bonded together. Heat and pressure are applied.",
     "marks": 6
    }
-  ]
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2024-hl-q7-b-iv",
@@ -10740,7 +10968,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Thermosets are plastics that retain their condition and shape aŌer curing due to spatial crosslinking. Once cured, their polymers can no longer be dissolved.",
+    "verbatim": "Thermosets are plastics that retain their condition and shape after curing due to spatial crosslinking. Once cured, their polymers can no longer be dissolved.",
     "marks": null
    },
    {
@@ -10756,6 +10984,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -10781,12 +11010,13 @@
     "accepts": [
      "Glass transition temperature describes the temperature at which a solid glassy amorphous polymer changes to a rubbery, viscous polymer. It is engineered by altering the degree of branching or cross-linking in the polymer by the addition of plasticisers.",
      "Thin layers of materials bonded together. High strength plastics can be produced by layers of other polymer, fibres, paper or cloth coated with resin being bonded together. Heat and pressure are applied.",
-     "Thermosets are plastics that retain their condition and shape aŌer curing due to spatial crosslinking. Once cured, their polymers can no longer be dissolved.",
+     "Thermosets are plastics that retain their condition and shape after curing due to spatial crosslinking. Once cured, their polymers can no longer be dissolved.",
      "Covalent bonds are formed by condensation polymerisation.",
      "Properties: High melting point, high tensile strength, good thermal insulation and can withstand high temperatures without losing rigidity."
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
  },
  {
@@ -10905,7 +11135,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Boring / internal threading: Knurling: adding Grooving / parting-off: widening the hole and finger grips. creating the grooves and creating the thread. cuƫng to length.",
+    "verbatim": "Boring / internal threading: Knurling: adding Grooving / parting-off: widening the hole and finger grips. creating the grooves and creating the thread. cutting to length.",
     "marks": null
    }
   ],
@@ -10930,7 +11160,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Use of cuƫng fluids have a lubricating impact and will reduce heat build-up and improve surface finish; the quality of the cuƫng tool; maintenance of correct cuƫng angles and a sharp cuƫng edge; the machine parameters, speed and feed rate, etc.",
+    "verbatim": "Use of cutting fluids have a lubricating impact and will reduce heat build-up and improve surface finish; the quality of the cutting tool; maintenance of correct cutting angles and a sharp cutting edge; the machine parameters, speed and feed rate, etc.",
     "marks": null
    }
   ],
@@ -10955,13 +11185,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Generating refers to the creation of workpiece due to the feed trajectory of the cuƫng tool, examples include straight turning, taper turning and profile milling.",
+    "verbatim": "Generating refers to the creation of workpiece due to the feed trajectory of the cutting tool, examples include straight turning, taper turning and profile milling.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Forming involves the creation of workpiece shape due to the shape of the cuƫng tool; common examples include form turning and drilling.",
+    "verbatim": "Forming involves the creation of workpiece shape due to the shape of the cutting tool; common examples include form turning and drilling.",
     "marks": null
    }
   ],
@@ -11017,13 +11247,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Clearance angle is formed to allow one point of the cuƫng tool to contact the workpiece.",
+    "verbatim": "Clearance angle is formed to allow one point of the cutting tool to contact the workpiece.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Rake angle is the angle of the cuƫng face relative to the workpiece. The rake angle facilitates the liŌing of the chip during cuƫng. A rake angle can be positive, negative or zero.",
+    "verbatim": "Rake angle is the angle of the cutting face relative to the workpiece. The rake angle facilitates the lifting of the chip during cutting. A rake angle can be positive, negative or zero.",
     "marks": null
    }
   ],
@@ -11060,7 +11290,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "They can oŌen accommodate unusual workpiece shapes. Disadvantages of magnetic chuck:",
+    "verbatim": "They can often accommodate unusual workpiece shapes. Disadvantages of magnetic chuck:",
     "marks": null
    },
    {
@@ -11097,17 +11327,17 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Generating refers to the creation of workpiece due to the feed trajectory of the cuƫng tool, examples include straight turning, taper turning and profile milling.",
+    "verbatim": "Generating refers to the creation of workpiece due to the feed trajectory of the cutting tool, examples include straight turning, taper turning and profile milling.",
     "marks": 18,
     "accepts": [
-     "Forming involves the creation of workpiece shape due to the shape of the cuƫng tool; common examples include form turning and drilling.",
+     "Forming involves the creation of workpiece shape due to the shape of the cutting tool; common examples include form turning and drilling.",
      "If a grinding wheel is out of balance the spindle will vibrate and a poor surface finish will result. This has consequences for machine safety and surface finish.",
      "A wheel is placed on a balancing stand and weights are moved around the flange to balance the wheel. This is similar to balancing a car wheel.",
-     "Clearance angle is formed to allow one point of the cuƫng tool to contact the workpiece.",
-     "Rake angle is the angle of the cuƫng face relative to the workpiece. The rake angle facilitates the liŌing of the chip during cuƫng. A rake angle can be positive, negative or zero.",
+     "Clearance angle is formed to allow one point of the cutting tool to contact the workpiece.",
+     "Rake angle is the angle of the cutting face relative to the workpiece. The rake angle facilitates the lifting of the chip during cutting. A rake angle can be positive, negative or zero.",
      "They provide quick clamping with a firm grip.",
      "They can accommodate large batches of workpieces.",
-     "They can oŌen accommodate unusual workpiece shapes. Disadvantages of magnetic chuck:",
+     "They can often accommodate unusual workpiece shapes. Disadvantages of magnetic chuck:",
      "The metals need to be magnetic.",
      "The workpiece must have a flat surface and be able to make good contact with the chuck."
     ]
@@ -11125,7 +11355,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 HL Q8(c)(ii)",
-  "questionText": "Identify any two lubricants commonly used when machining. OR Outline two safety features integrated into computerised manufacturing machines.",
+  "questionText": "Identify any two lubricants commonly used when machining. Outline two safety features integrated into computerised manufacturing machines.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "4 + 4"
@@ -11135,7 +11365,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Cuƫng tools are guarded.",
+    "verbatim": "Cutting tools are guarded.",
     "marks": null
    },
    {
@@ -11177,16 +11407,17 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Automatic sliding doors open when the door controller receives an activation signal by the sensor and then activates the gear motor to drive the belt and pulley. When no one is detected inside the activation area, the door starts closing aŌer a designated period. A toothed belt offers excellent transfer of power and reduces the risk of belt slippage.",
+    "verbatim": "Automatic sliding doors open when the door controller receives an activation signal by the sensor and then activates the gear motor to drive the belt and pulley. When no one is detected inside the activation area, the door starts closing after a designated period. A toothed belt offers excellent transfer of power and reduces the risk of belt slippage.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "The leŌ door hanger is attached to the upper section of the belt while the right door hanger is attached to the lower section of the belt, resulting in both doors moving in opposite directions when activated. 8",
+    "verbatim": "The left door hanger is attached to the upper section of the belt while the right door hanger is attached to the lower section of the belt, resulting in both doors moving in opposite directions when activated. 8",
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '8'."
  },
  {
@@ -11217,6 +11448,7 @@
     "marks": null
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints '8'."
  },
  {
@@ -11237,7 +11469,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "An LDR or light dependent resistor is a type of resistor whose resistance varies depending on the amount of light falling on its surface. These resistors are oŌen used in circuits where it is required to sense the presence of light/darkness such as garden lights.",
+    "verbatim": "An LDR or light dependent resistor is a type of resistor whose resistance varies depending on the amount of light falling on its surface. These resistors are often used in circuits where it is required to sense the presence of light/darkness such as garden lights.",
     "marks": 6
    }
   ],
@@ -11261,7 +11493,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "a positive, mechanical connection between rotating shaŌs, which are usually not parallel, but intersecting.",
+    "verbatim": "a positive, mechanical connection between rotating shafts, which are usually not parallel, but intersecting.",
     "marks": null
    },
    {
@@ -11302,7 +11534,7 @@
     "marks": 6
    }
   ],
-  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q9bi-art"
  },
  {
   "id": "eng-2024-hl-q9-b-iv",
@@ -11322,18 +11554,18 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Clutches are used in devices that have two rotating shaŌs. One of the shaŌs is typically driven by a motor or pulley, and the other shaŌ drives another device. The clutch connects the two shaŌs so that they can either be locked together and spin at the same speed or be decoupled and spin at different speeds.",
+    "verbatim": "Clutches are used in devices that have two rotating shafts. One of the shafts is typically driven by a motor or pulley, and the other shaft drives another device. The clutch connects the two shafts so that they can either be locked together and spin at the same speed or be decoupled and spin at different speeds.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaŌ, causing them to spin at the same speed.",
+    "verbatim": "When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaft, causing them to spin at the same speed.",
     "marks": null
    }
   ],
   "notes": "The scheme prints '6 marks'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q9bi-art"
  },
  {
   "id": "eng-2024-hl-q9-b",
@@ -11353,20 +11585,20 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "An LDR or light dependent resistor is a type of resistor whose resistance varies depending on the amount of light falling on its surface. These resistors are oŌen used in circuits where it is required to sense the presence of light/darkness such as garden lights.",
+    "verbatim": "An LDR or light dependent resistor is a type of resistor whose resistance varies depending on the amount of light falling on its surface. These resistors are often used in circuits where it is required to sense the presence of light/darkness such as garden lights.",
     "marks": 18,
     "accepts": [
-     "a positive, mechanical connection between rotating shaŌs, which are usually not parallel, but intersecting.",
+     "a positive, mechanical connection between rotating shafts, which are usually not parallel, but intersecting.",
      "used to transmit motion, power, or both.",
      "found on four-wheel drive (4WD), rear-wheel drive (RWD) and all-wheel drive (AWD) vehicles, agricultural machinery etc.",
      "Helical gears are quieter in operation, have a greater gear meshing area which makes the stronger, helical gear teeth run smoother as they mesh with a number of teeth at the same time while spur gears only mesh one tooth at a time.",
-     "Clutches are used in devices that have two rotating shaŌs. One of the shaŌs is typically driven by a motor or pulley, and the other shaŌ drives another device. The clutch connects the two shaŌs so that they can either be locked together and spin at the same speed or be decoupled and spin at different speeds.",
-     "When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaŌ, causing them to spin at the same speed."
+     "Clutches are used in devices that have two rotating shafts. One of the shafts is typically driven by a motor or pulley, and the other shaft drives another device. The clutch connects the two shafts so that they can either be locked together and spin at the same speed or be decoupled and spin at different speeds.",
+     "When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaft, causing them to spin at the same speed."
     ]
    }
   ],
   "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
+  "questionFigureKey": "engineering-2024-HL-paper-q9bi-art"
  },
  {
   "id": "eng-2024-ol-q1-a",
@@ -11379,18 +11611,25 @@
   "questionRef": "2024 OL Q1(a)",
   "questionText": "Identify mechanism A and give one application for it.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Mechanism A is a ratchet and pawl. • Application, used in a socket wrench / ratchet. •",
-    "marks": 6
+    "verbatim": "Mechanism A is a ratchet and pawl.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Application, used in a socket wrench / ratchet.",
+    "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": ". (50 marks) Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2024-ol-q1-b",
@@ -11410,7 +11649,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "An electrical conductor is a material that will allow electricity to flow • through it.",
+    "verbatim": "An electrical conductor is a material that will allow electricity to flow through it.",
     "marks": 6
    }
   ],
@@ -11434,11 +11673,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Making prototypes or models helps to ensure the final design • operates as intended.",
+    "verbatim": "Making prototypes or models helps to ensure the final design operates as intended.",
     "marks": 6
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": ". (50 marks) Give brief answers to any eight of the following:"
  },
  {
   "id": "eng-2024-ol-q1-d",
@@ -11458,11 +11697,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Cutting fluids help to control the temperature during the machining • process by absorbing heat and preventing damage to the cutting tool and workpiece.",
+    "verbatim": "Cutting fluids help to control the temperature during the machining process by absorbing heat and preventing damage to the cutting tool and workpiece.",
     "marks": 6
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": ". (50 marks) Give brief answers to any eight of the following:"
  },
  {
   "id": "eng-2024-ol-q1-e",
@@ -11482,17 +11721,17 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "State two safety precautions that should be followed when using a metal shears:",
+    "verbatim": "Make sure your hands are a safe distance from the cutting blades.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Make sure your hands are a safe distance from the cutting blades. • Always check, nobody is behind you when you pull down the arm as • the arm could hit them.",
+    "verbatim": "Always check, nobody is behind you when you pull down the arm as the arm could hit them.",
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:",
+  "stem": ". (50 marks) Give brief answers to any eight of the following:",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -11506,18 +11745,25 @@
   "questionRef": "2024 OL Q1(f)",
   "questionText": "Explain the term alloy and name one alloy.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A metal alloy is a metal made of two or more metals mixed together. • An example of a metal alloy is bronze, a mixture of copper and tin. •",
-    "marks": 6
+    "verbatim": "A metal alloy is a metal made of two or more metals mixed together.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "An example of a metal alloy is bronze, a mixture of copper and tin.",
+    "marks": null
    }
   ],
-  "stem": "metal shears"
+  "stem": "metal shears",
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2024-ol-q1-g",
@@ -11530,29 +11776,36 @@
   "questionRef": "2024 OL Q1(g)",
   "questionText": "State two properties of aluminium.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Lightweight • Malleable •",
-    "marks": 6
+    "verbatim": "Lightweight",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Malleable",
+    "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": ". (50 marks) Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2024-ol-q1-j",
-  "topicId": "eng-2-11",
-  "conceptId": "main-operating-features-any-following-wire",
+  "id": "eng-2024-ol-q1-i",
+  "topicId": "eng-1-4",
+  "conceptId": "term-ferrous-metal-example-ferrous-metal",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2024 OL Q1(j)",
-  "questionText": "Describe the main operating features of any one of the following: (i) Wire stripper, (ii) Knurling tool, (iii) Scroll saw.",
+  "questionRef": "2024 OL Q1(i)",
+  "questionText": "Explain the term ferrous metal and give one example of a ferrous metal.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -11561,23 +11814,17 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A wire stripper is a hand tool designed to remove the protective covering from electrical wires. To remove the protective covering, you must open the wire stripper handles and put the wire into the jaws of the wire stripper. Slowly press the handles together until they can go no further. This action will cut through the insulation on the wire. Pull the wire stripper towards the cut end of the wire to remove the insulation. The wire stripper shown has an adjusting screw which is used to stop the jaws closing too far and cutting through the wire.",
+    "verbatim": "A ferrous metal is a metal that contains iron.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "A knurling tool is used on a centre lathe to apply a grip to the surface of a piece i.e. scriber / centre punch. The knurling tool is fitted to the tool post and set at 90⁰ to work. The knurling tool has two opposing rollers which are pressed into the piece and when moved parallel to the axis of the work will produce a diamond pattern on the surface of the material.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "A scroll saw includes an electric motor and a crank mechanism. The crank mechanism converts the rotary motion of the motor into reciprocating motion of a thin blade. The up and down motion of the thin blade can be used to cut intricate shapes in wood or metals. A small rubber bellows, fixed to the crank mechanism, is used to produce a small air flow which is directed at the cutting face to remove waste material as it is cut. A guard is attached to the top of the scroll saw arm and should always be used when cutting.",
+    "verbatim": "An example of a ferrous metal is steel.",
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:",
+  "stem": "chuck",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -11626,7 +11873,7 @@
     "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:",
+  "stem": ". (50 marks) Give brief answers to any eight of the following:",
   "notes": "The scheme prints '6 marks'."
  },
  {
@@ -11640,46 +11887,25 @@
   "questionRef": "2024 OL Q1(l)",
   "questionText": "Define the term brittleness and name one material that is brittle.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Brittleness is a material’s tendency to easily break, crack or snap. • Glass is a brittle material. •",
-    "marks": 6
-   }
-  ],
-  "stem": "(m) Explain any one of the following:"
- },
- {
-  "id": "eng-2024-ol-q2-a",
-  "topicId": "eng-1-4",
-  "conceptId": "metals-produced-each-furnaces-listed-below",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q2(a)",
-  "questionText": "Name the metals produced from each of the furnaces listed below: (i) Blast furnace, (ii) Cupola furnace, (iii) Electric arc furnace.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 15,
-  "rows": [
+    "verbatim": "Brittleness is a material’s tendency to easily break, crack or snap.",
+    "marks": null
+   },
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Blast furnace: Pig iron.",
-    "marks": 15,
-    "accepts": [
-     "Cupola furnace: Cast iron",
-     "Electric arc furnace: Steel"
-    ]
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Glass is a brittle material.",
+    "marks": null
    }
   ],
-  "notes": "The scheme prints 'Three parts @ 5 marks (15)'."
+  "stem": "(m) Explain any one of the following:",
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2024-ol-q2-b-iii",
@@ -11707,6 +11933,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'One part @ 3 marks (12)'."
  },
  {
@@ -11788,37 +12015,6 @@
   "questionFigureKey": "engineering-2024-OL-paper-q2dii-art"
  },
  {
-  "id": "eng-2024-ol-q3-a",
-  "topicId": "eng-2-6",
-  "conceptId": "relation-heat-treatment-steel-any-following",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q3(a)",
-  "questionText": "In relation to the heat treatment of steel, explain any two of the following: (i) Normalising, (ii) Quenching, (iii) Carbon content.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 14,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Normalising steel will reduce its hardness and improve its ductility.",
-    "marks": 14,
-    "accepts": [
-     "Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).",
-     "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.",
-     "If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.",
-     "Low carbon steel contains less than 0.03% of carbon. • Medium carbon steel contains between 0.03% and 0.06% • carbon.",
-     "High carbon steel contains more than 0.06% carbon. •"
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
- },
- {
   "id": "eng-2024-ol-q3-c",
   "topicId": "eng-2-6",
   "conceptId": "safety-precautions-be-observed-during-heat",
@@ -11836,44 +12032,103 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Wear heat resistant gloves when preforming heat treatment of • metals.",
+    "verbatim": "Wear heat resistant gloves when preforming heat treatment of metals.",
     "marks": 10,
     "accepts": [
-     "Wear a face shield to protect from hot splashes. •"
+     "Wear a face shield to protect from hot splashes."
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
  },
  {
-  "id": "eng-2024-ol-q4-b",
+  "id": "eng-2024-ol-q3-d-iii",
   "topicId": "eng-2-10",
-  "conceptId": "function-any-following-manual-metal-arc",
+  "conceptId": "compressive-strength-robotic-welding",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2024 OL Q4(b)",
-  "questionText": "State the function of any three of the following in manual metal arc welding: (i) Earth clamp, (ii) Welding mask, (iii) Leather gloves, (iv) Welding magnet.",
+  "questionRef": "2024 OL Q3(d)(iii)",
+  "questionText": "Compressive strength. Robotic welding.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Compressive strength is the ability of a material to withstand heavy loads before failure.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Robotic welding can continually produce a much higher level of quality and precision and integrates well with mass production processes.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q4-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "function-valve-function-valve-b",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q4(a)(i)",
+  "questionText": "Explain the function of valve A and the function of valve B.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 15,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.",
-    "marks": 15,
+    "verbatim": "Valve A (blue) is used to turn on and off the flow of oxygen.",
+    "marks": 6,
     "accepts": [
-     "The welding mask protects your eyes and face from heat and sparks, as well as ultraviolet and infrared rays emitted by the arc.",
-     "Leather gloves are used to protect the user’s hands and arms from burns due to molten splatter when welding. They also protect the user from burns when handling hot metals.",
-     "Welding magnets are strong magnets that can be used to hold workpieces in place while the workpieces are being welded."
+     "Valve B (red) is used to turn on and off the flow of acetylene."
     ]
    }
   ],
-  "stem": "valve A valve B oxy-acetylene gas welding torch",
-  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Two parts @ 3 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q4-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "flame-types-can-be-produced-oxy",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q4(a)(ii)",
+  "questionText": "Name two flame types that can be produced in oxy-acetylene welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Oxidising flame",
+    "marks": 6,
+    "accepts": [
+     "Neutral flame",
+     "Carburising flame"
+    ]
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Two parts @ 3 marks (12)'."
  },
  {
   "id": "eng-2024-ol-q4-c-i",
@@ -11924,6 +12179,30 @@
   "questionFigureKey": "engineering-2024-OL-paper-q4ci-art"
  },
  {
+  "id": "eng-2024-ol-q4-c-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "reason-why-flux-required-when-soldering",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q4(c)(iii)",
+  "questionText": "State one reason why flux is required when soldering.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Flux helps to remove oxide layer which forms on the surface of metals being soldered. The flux increases the wetting ability of the solder, causing it to flow more uniformly over the surfaces being soldered, thus a better more successful joint is achieved.",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2024-OL-paper-q4ci-art"
+ },
+ {
   "id": "eng-2024-ol-q4-c-iv",
   "topicId": "eng-2-10",
   "conceptId": "advantage-using-locknut-when-assembling-project",
@@ -11948,6 +12227,34 @@
   "questionFigureKey": "engineering-2024-OL-paper-q4ci-art"
  },
  {
+  "id": "eng-2024-ol-q4-d",
+  "topicId": "eng-1-5",
+  "conceptId": "safety-precautions-be-observed-when-soldering",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q4(d)",
+  "questionText": "State two safety precautions to be observed when soldering copper pipes and fittings.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Wear a suitable mask to protect from the fumes produced by the flux.",
+    "marks": 8,
+    "accepts": [
+     "Allow all pipes and fittings to cool down before handling."
+    ]
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
+ },
+ {
   "id": "eng-2024-ol-q5-a-ii",
   "topicId": "eng-2-13",
   "conceptId": "aid-labelled-diagram-any-manufacturing-processes",
@@ -11969,7 +12276,7 @@
     "marks": 11,
     "accepts": [
      "Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.",
-     "Final shape Vacuum Mould A vacuum former is a plastic thermoforming machine that is used to produce parts which are precisely formed on one side. The former contains a heating element, a height adjustable table, which is porous, and an air pump. The heating element is used to heat up and soften a sheet of plastic which has been clamped into a frame. When the plastic sheet begins to sag, a mould, placed on the porous table, is lifted into the plastic sheet. The air pump is then turned on creating a vacuum below the mould. This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed."
+     "Final shape Mould Vacuum A vacuum former is a plastic thermoforming machine that is used to produce parts which are precisely formed on one side. The former contains a heating element, a height adjustable table, which is porous, and an air pump. The heating element is used to heat up and soften a sheet of plastic which has been clamped into a frame. When the plastic sheet begins to sag, a mould, placed on the porous table, is lifted into the plastic sheet. The air pump is then turned on creating a vacuum below the mould. This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed."
     ]
    }
   ],
@@ -12003,6 +12310,7 @@
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
  },
  {
@@ -12023,14 +12331,430 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Safety precautions when using a strip heater:",
+    "verbatim": "Do not leave a piece of plastic unattended on the strip heater.",
     "marks": 10,
     "accepts": [
-     "Do not leave a piece of plastic unattended on the strip heater. • Remember to turn the strip heater off when finished using it. •"
+     "Remember to turn the strip heater off when finished using it."
     ]
    }
   ],
+  "stem": ". (50 marks)",
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
+ },
+ {
+  "id": "eng-2024-ol-q6-a",
+  "topicId": "eng-2-11",
+  "conceptId": "engineering-component-shown-be-manufactured-centre",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(a)",
+  "questionText": "The engineering component shown is to be manufactured on a centre lathe. Identify three lathe processes used to manufacture the engineering component.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Parallel turning / Facing / Knurling / Drilling / Undercutting / Parting off / Taper turning.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q6a-art"
+ },
+ {
+  "id": "eng-2024-ol-q6-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-use-centre-lathe-part-advantages",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(c)(ii)",
+  "questionText": "Identify one use for this centre lathe part. List two advantages of using a CNC laser cutter in engineering manufacture.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Mass production of complex parts.",
+    "marks": 6,
+    "accepts": [
+     "High level of precision accuracy."
+    ]
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'One part @ 6 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q6-c-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(c)(iii)",
+  "questionText": "State two safety precautions to be observed when using a centre lathe. Identify one safety precaution to be observed when using a CNC laser cutter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Wear safety goggles.",
+    "marks": 8,
+    "accepts": [
+     "Do not remove swarf using hands.",
+     "Do not leave a CNC laser machine operating unattended."
+    ]
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Two parts @ 4 marks (20)'."
+ },
+ {
+  "id": "eng-2024-ol-q7-a-i",
+  "topicId": "eng-3-12",
+  "conceptId": "any-types-fit-hole-shaft-assembly",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(a)(i)",
+  "questionText": "Name any two types of fit in a hole and shaft assembly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Clearance / Interference / Transition fit",
+    "marks": null
+   }
+  ],
+  "stem": "[[",
+  "notes": "The scheme prints 'Any two parts @ 3 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q7-a-ii",
+  "topicId": "eng-3-12",
+  "conceptId": "any-fits-named-q7-i-above",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(a)(ii)",
+  "questionText": "Describe any one of the fits named at Q7 (a)(i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Clearance fit: The shaft is always smaller than the hole.",
+    "marks": 6,
+    "accepts": [
+     "Interference fit: The shaft is always larger than the hole.",
+     "Transition fit: The shaft can be larger or smaller than the hole."
+    ]
+   }
+  ],
+  "stem": "[[",
+  "notes": "The scheme prints 'Any one part @ 6 (12)'."
+ },
+ {
+  "id": "eng-2024-ol-q7-b",
+  "topicId": "eng-3-12",
+  "conceptId": "waste-pipe-plug-machined-dimensions-shown",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(b)",
+  "questionText": "A waste pipe and plug are machined to the dimensions shown below.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nominal diameter of the hole; 24.00 mm",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Smallest diameter of the shaft; 24.97 mm",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Largest diameter of the hole; 24.05 mm",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Type of fit; Interference fit",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '20 marks'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art"
+ },
+ {
+  "id": "eng-2024-ol-q7-b-iv",
+  "topicId": "eng-3-12",
+  "conceptId": "type-fit-will-result-assembly-smallest",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(b)(iv)",
+  "questionText": "The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Type of fit; Interference fit",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'One part @ 5 marks'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art"
+ },
+ {
+  "id": "eng-2024-ol-q7-c-iii",
+  "topicId": "eng-2-16",
+  "conceptId": "advantage-using-crocodile-clips-when-assembling",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(c)(iii)",
+  "questionText": "State one advantage of using crocodile clips when assembling test circuits.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.",
+    "marks": 6,
+    "accepts": [
+     "Advantage of using crocodile clips Using crocodile clips helps to design the layout of circuits as components can be interchanged easily without the need for soldering."
+    ]
+   }
+  ],
+  "stem": "crocodile clips test circuit",
+  "notes": "The scheme prints 'Any one part @ 6 marks (18)'."
+ },
+ {
+  "id": "eng-2024-hl-q1-e",
+  "topicId": "eng-3-14",
+  "conceptId": "discuss-contribution-any-following-has-made",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(e)",
+  "questionText": "Discuss the contribution that any one of the following has made to technology: (i) Viktor Kaplan (ii) James Watt (iii) Gaston Planté.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Viktor Kaplan (1876 – 1934) was an Austrian engineer and the inventor of the Kaplan turbine, a revolutionary water turbine used to produce electricity from large streams with only a moderate incline.",
+    "marks": 5,
+    "accepts": [
+     "James Watt (1736 – 1819) was a Scoƫsh inventor, mechanical engineer whose improvements in steam engine technology drove the Industrial Revolution. To describe the efficiency of his engines, he coined the term 'horsepower' and devised a rev counter.",
+     "Gaston Plamté (1834 – 1889) was a French physicist who invented the lead–acid battery. This type of battery was developed as the first rechargeable electric battery marketed for commercial use and it is widely used in automobiles."
+    ]
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints 'Any one @ 5'."
+ },
+ {
+  "id": "eng-2024-hl-q2-e",
+  "topicId": "eng-3-14",
+  "conceptId": "discuss-environmental-impact-any-following-regard",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q2(e)",
+  "questionText": "Discuss the environmental impact of any two of the following with regard to container ship technology: (i) Ballast water management. (ii) Oil leakage. (iii) Emissions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Effective ballast water management is crucial for mitigating the environmental impact of container ships. While there are challenges associated with chemical use and energy consumption, the overall benefits of preventing invasive species and protecting water quality are important.",
+    "marks": 10,
+    "accepts": [
+     "Oil leakage from container ships poses significant immediate and long-term environmental threats including marine pollution, harm to marine life, habitat destruction and ecosystem disruption. However, through design improvements, maintenance practices, effective response plans and regulatory compliance, the risks and impacts of oil leakage can be significantly reduced.",
+     "Reducing emissions from the use of fossil fuels on container ships has predominantly positive environmental impacts such as mitigating climate change, improving air quality, and protecting ecosystems. However, it also presents challenges, such as the environmental impact of alternative fuel production and the energy requirements of emissions reduction technologies."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two @ 5 + 5'."
+ },
+ {
+  "id": "eng-2024-ol-q1-j",
+  "topicId": "eng-2-11",
+  "conceptId": "main-operating-features-any-following-wire",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(j)",
+  "questionText": "Describe the main operating features of any one of the following: (i) Wire stripper, (ii) Knurling tool, (iii) Scroll saw.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A wire stripper is a hand tool designed to remove the protective covering from electrical wires. To remove the protective covering, you must open the wire stripper handles and put the wire into the jaws of the wire stripper. Slowly press the handles together until they can go no further. This action will cut through the insulation on the wire. Pull the wire stripper towards the cut end of the wire to remove the insulation. The wire stripper shown has an adjusting screw which is used to stop the jaws closing too far and cutting through the wire.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A knurling tool is used on a centre lathe to apply a grip to the surface of a piece i.e. scriber / centre punch. The knurling tool is fitted to the tool post and set at 90⁰ to work. The knurling tool has two opposing rollers which are pressed into the piece and when moved parallel to the axis of the work will produce a diamond pattern on the surface of the material.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A scroll saw includes an electric motor and a crank mechanism. The crank mechanism converts the rotary motion of the motor into reciprocating motion of a thin blade. The up and down motion of the thin blade can be used to cut intricate shapes in wood or metals. A small rubber bellows, fixed to the crank mechanism, is used to produce a small air flow which is directed at the cutting face to remove waste material as it is cut. A guard is attached to the top of the scroll saw arm and should always be used when cutting.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q2-a",
+  "topicId": "eng-1-4",
+  "conceptId": "metals-produced-each-furnaces-listed-below",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q2(a)",
+  "questionText": "Name the metals produced from each of the furnaces listed below: (i) Blast furnace, (ii) Cupola furnace, (iii) Electric arc furnace.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Blast furnace: Pig iron.",
+    "marks": 15,
+    "accepts": [
+     "Cupola furnace: Cast iron",
+     "Electric arc furnace: Steel"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Three parts @ 5 marks (15)'."
+ },
+ {
+  "id": "eng-2024-ol-q3-a",
+  "topicId": "eng-2-6",
+  "conceptId": "relation-heat-treatment-steel-any-following",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(a)",
+  "questionText": "In relation to the heat treatment of steel, explain any two of the following: (i) Normalising, (ii) Quenching, (iii) Carbon content.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Normalising steel will reduce its hardness and improve its ductility.",
+    "marks": 14,
+    "accepts": [
+     "Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).",
+     "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.",
+     "If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.",
+     "Low carbon steel contains less than 0.03% of carbon. • Medium carbon steel contains between 0.03% and 0.06% • carbon.",
+     "High carbon steel contains more than 0.06% carbon. •"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
+ },
+ {
+  "id": "eng-2024-ol-q4-b",
+  "topicId": "eng-2-10",
+  "conceptId": "function-any-following-manual-metal-arc",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q4(b)",
+  "questionText": "State the function of any three of the following in manual metal arc welding: (i) Earth clamp, (ii) Welding mask, (iii) Leather gloves, (iv) Welding magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.",
+    "marks": 15,
+    "accepts": [
+     "The welding mask protects your eyes and face from heat and sparks, as well as ultraviolet and infrared rays emitted by the arc.",
+     "Leather gloves are used to protect the user’s hands and arms from burns due to molten splatter when welding. They also protect the user from burns when handling hot metals.",
+     "Welding magnets are strong magnets that can be used to hold workpieces in place while the workpieces are being welded."
+    ]
+   }
+  ],
+  "stem": "valve A valve B oxy-acetylene gas welding torch",
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
  },
  {
   "id": "eng-2024-ol-q5-d",
@@ -12089,111 +12813,6 @@
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
- },
- {
-  "id": "eng-2024-ol-q6-c-ii",
-  "topicId": "eng-2-11",
-  "conceptId": "identify-use-centre-lathe-part-or",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q6(c)(ii)",
-  "questionText": "Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Mass production of complex parts. • High level of precision accuracy. •",
-    "marks": 6
-   }
-  ],
-  "notes": "The scheme prints 'One part @ 6 marks'."
- },
- {
-  "id": "eng-2024-ol-q6-c-iii",
-  "topicId": "eng-2-11",
-  "conceptId": "safety-precautions-be-observed-when-using",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q6(c)(iii)",
-  "questionText": "State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Wear safety goggles. • Do not remove swarf using hands. •",
-    "marks": 8,
-    "accepts": [
-     "Do not leave a CNC laser machine operating unattended. •"
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Two parts @ 4 marks (20)'."
- },
- {
-  "id": "eng-2024-ol-q7-a-ii",
-  "topicId": "eng-3-12",
-  "conceptId": "any-fits-named-q7-i-above",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q7(a)(ii)",
-  "questionText": "Describe any one of the fits named at Q7 (a)(i) above.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Clearance fit: The shaft is always smaller than the hole.",
-    "marks": 6,
-    "accepts": [
-     "Interference fit: The shaft is always larger than the hole.",
-     "Transition fit: The shaft can be larger or smaller than the hole."
-    ]
-   }
-  ],
-  "stem": "[[",
-  "notes": "The scheme prints 'Any one part @ 6 (12)'."
- },
- {
-  "id": "eng-2024-ol-q7-c-iii",
-  "topicId": "eng-2-16",
-  "conceptId": "advantage-using-crocodile-clips-when-assembling",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q7(c)(iii)",
-  "questionText": "State one advantage of using crocodile clips when assembling test circuits.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.",
-    "marks": 6
-   }
-  ],
-  "stem": "crocodile clips test circuit",
-  "notes": "The scheme prints 'Any one part @ 6 marks (18)'."
  },
  {
   "id": "eng-2025-hl-q1-a",

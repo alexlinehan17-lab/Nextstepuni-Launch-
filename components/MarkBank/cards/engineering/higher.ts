@@ -2968,7 +2968,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-a", topicId: "eng-3-14", conceptId: "advantage-disadvantage-facial-recognition-technology",
     section: "A", questionRef: "2024 HL Q1(a)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Outline one advantage and one disadvantage of facial recognition technology.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -2977,11 +2977,10 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "▪ Strengthens security measures and can protect against fraud.", marks: null },
     { id: "r-4", kind: "point", verbatim: "▪ Reduces the number of touchpoints.", marks: null },
     { id: "r-5", kind: "point", verbatim: "▪ Improves photo organisation, etc.", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Disadvantages of facial recognition:", marks: null },
-    { id: "r-7", kind: "point", verbatim: "▪ Threatens privacy and may impose on personal freedom.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "▪ Misuse causing fraud and other crimes.", marks: null },
-    { id: "r-9", kind: "point", verbatim: "▪ Errors can implicate innocent people.", marks: null },
-    { id: "r-10", kind: "point", verbatim: "▪ Technology can be manipulated, etc.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "▪ Threatens privacy and may impose on personal freedom.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "▪ Misuse causing fraud and other crimes.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "▪ Errors can implicate innocent people.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "▪ Technology can be manipulated, etc.", marks: null },
     ],
   } as SecCard,
   {
@@ -2991,7 +2990,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-b", topicId: "eng-2-10", conceptId: "identify-hazards-associated-use-adhesives-engineering",
     section: "A", questionRef: "2024 HL Q1(b)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Identify two hazards associated with the use of adhesives in engineering.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -3008,7 +3007,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-c", topicId: "eng-3-12", conceptId: "precision-measurement-meant-parallax-error",
     section: "A", questionRef: "2024 HL Q1(c)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "In precision measurement, explain what is meant by parallax error.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -3022,7 +3021,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-d", topicId: "eng-3-14", conceptId: "reasons-why-computer-standing-desk-may",
     section: "A", questionRef: "2024 HL Q1(d)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Outline two reasons why a computer standing desk may be used in industry.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -3036,27 +3035,14 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
-    id: "eng-2024-hl-q1-e", topicId: "eng-3-14", conceptId: "discuss-contribution-any-following-has-made",
-    section: "A", questionRef: "2024 HL Q1(e)",
-    stem: "Give brief answers to any ten of the following:",
-    questionText: "Discuss the contribution that any one of the following has made to technology: (i) Viktor Kaplan (ii) James Watt (iii) Gaston Planté.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Viktor Kaplan (1876 – 1934) was an Austrian engineer and the inventor of the Kaplan turbine, a revolutionary water turbine used to produce electricity from large streams with only a moderate incline.", marks: 5, accepts: ["James Watt (1736 – 1819) was a Scottsh inventor, mechanical engineer whose improvements in steam engine technology drove the Industrial Revolution. To describe the efficiency of his engines, he coined the term 'horsepower' and devised a rev counter.","Gaston Plamté (1834 – 1889) was a French physicist who invented the lead–acid battery. This type of battery was developed as the first rechargeable electric battery marketed for commercial use and it is widely used in automobiles."] },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-f", topicId: "eng-3-1", conceptId: "important-material-properties-be-considered-when",
     section: "A", questionRef: "2024 HL Q1(f)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Describe two important material properties to be considered when selecting a suitable material for a mouth guard.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Material properties should be lightweight, tough, strong, corrosion resistant, non-toxic, biocompatible (not toxic and not rejected by the body), long-lasting, easy to mould, etc.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Material properties should be lightweight, tough, strong, corrosion resistant, non-toxic,", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Material properties should be lightweight, tough, strong, corrosion resistant, non-toxic, biocompatible (not toxic and not rejected by the body), long-lasting, easy to mould, etc.", marks: 2 },
     ],
   } as SecCard,
   {
@@ -3066,13 +3052,26 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-h", topicId: "eng-1-9", conceptId: "roof-bar-uses-elastomer-strip-provide",
     section: "A", questionRef: "2024 HL Q1(h)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "The roof bar uses an elastomer strip to provide a grip for carrying items. Explain the term elastomer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Elastomers are a group of polymers consisting of linear chains that are coiled, entangled and are subject to minimal cross-linking. This irregular internal structure and bonding arrangement allows these materials to be very elastic at room temperature.", marks: 5 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q1-i", topicId: "eng-1-5", conceptId: "briefly-process-metal-extrusion-used-manufacture",
+    section: "A", questionRef: "2024 HL Q1(i)",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    questionText: "Describe briefly the process of metal extrusion used to manufacture the aluminium profile of the roof bar.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Elastomers are a group of polymers consisting of linear chains that are coiled, entangled and are subject to minimal cross-linking. This irregular internal structure and bonding arrangement allows these materials to be very elastic at room temperature.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Metal extrusion is a forming process in which a metal (either hot or cold) is forced through a die.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Due to the high pressures, the metal exits the die through the opening, assuming the die shape in the process.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Metal extrusion is a forming process in which a metal (either hot or cold) is forced through a die.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Due to the high pressures, the metal exits the die through the opening, assuming the die shape in the process.", marks: null },
     ],
   } as SecCard,
   {
@@ -3082,7 +3081,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-j", topicId: "eng-3-8", conceptId: "compare-indenters-used-both-brinell-vickers",
     section: "A", questionRef: "2024 HL Q1(j)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Compare the indenters used in both the Brinell and the Vickers hardness tests.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -3096,7 +3095,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-k", topicId: "eng-1-2", conceptId: "differentiate-between-pyrometallurgy-hydrometallurgy",
     section: "A", questionRef: "2024 HL Q1(k)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Differentiate between pyrometallurgy and hydrometallurgy.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -3111,7 +3110,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q1-l", topicId: "eng-2-15", conceptId: "advantage-disadvantage-cordless-power-tools-m",
     section: "A", questionRef: "2024 HL Q1(l)",
-    stem: "Give brief answers to any ten of the following:",
+    stem: ". (50 marks) Give brief answers to any ten of the following:",
     questionText: "Outline one advantage and one disadvantage of cordless power tools. (m) Solar panels may be tilted to optimise the capture of solar energy. Suggest a suitable mechanism which could be used to tilt a solar panel.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -3130,6 +3129,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-a-i", topicId: "eng-3-14", conceptId: "reasons-extensive-use-container-ships-movement",
     section: "A", questionRef: "2024 HL Q2(a)(i)",
+    stem: ". (50 marks)",
     questionText: "Outline two reasons for the extensive use of container ships in the movement of goods.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -3149,6 +3149,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-a-ii", topicId: "eng-3-14", conceptId: "hazards-container-ships-must-overcome-they",
     section: "A", questionRef: "2024 HL Q2(a)(ii)",
+    stem: ". (50 marks)",
     questionText: "Describe two hazards that container ships must overcome as they move across the oceans.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -3166,8 +3167,23 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q2-b-i", topicId: "eng-3-14", conceptId: "term-teu",
+    section: "A", questionRef: "2024 HL Q2(b)(i)",
+    stem: ". (50 marks)",
+    questionText: "Explain the term TEU.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Twenty Foot Equivalent Unit. Containers are standardised with the agreed standard based on a 20 foot container.", marks: 5 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-b-ii", topicId: "eng-3-14", conceptId: "distinguish-between-following-container-ships-feeder",
     section: "A", questionRef: "2024 HL Q2(b)(ii)",
+    stem: ". (50 marks)",
     questionText: "Distinguish between the following container ships: Feeder, Panamax and Ultra Large Container Vessel (ULCV).",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -3183,6 +3199,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-c-i", topicId: "eng-1-5", conceptId: "container-ships-often-driven-cast-bronze",
     section: "A", questionRef: "2024 HL Q2(c)(i)",
+    stem: ". (50 marks)",
     questionText: "Container ships are often driven by cast bronze propellers which may be up to 10m in diameter. Outline two reasons for the use of bronze in the propellers of container ships.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -3198,6 +3215,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-c-ii", topicId: "eng-3-14", conceptId: "aid-diagram-s-how-container-ship",
     section: "A", questionRef: "2024 HL Q2(c)(ii)",
+    stem: ". (50 marks)",
     questionText: "Describe, with the aid of diagram(s), how container ship stability is maintained making reference to centre of gravity and shape of the hull.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -3235,19 +3253,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Steering the ship is as important as propulsion and very large forces are required to turn the ship’s rudder. This is done by a machine known as the ‘steering gear’.", marks: null },
     { id: "r-2", kind: "point", verbatim: "The rudder is like a vertical hinged paddle behind the propellor, it deflects water flow to change the ship direction.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Additional manoeuvrability, may be needed during docking and in confined waters, can be provided by bow and stern thrusters.", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
-    id: "eng-2024-hl-q2-e", topicId: "eng-3-14", conceptId: "discuss-environmental-impact-any-following-regard",
-    section: "A", questionRef: "2024 HL Q2(e)",
-    questionText: "Discuss the environmental impact of any two of the following with regard to container ship technology: (i) Ballast water management. (ii) Oil leakage. (iii) Emissions.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Effective ballast water management is crucial for mitigating the environmental impact of container ships. While there are challenges associated with chemical use and energy consumption, the overall benefits of preventing invasive species and protecting water quality are important.", marks: 10, accepts: ["Oil leakage from container ships poses significant immediate and long-term environmental threats including marine pollution, harm to marine life, habitat destruction and ecosystem disruption. However, through design improvements, maintenance practices, effective response plans and regulatory compliance, the risks and impacts of oil leakage can be significantly reduced.","Reducing emissions from the use of fossil fuels on container ships has predominantly positive environmental impacts such as mitigating climate change, improving air quality, and protecting ecosystems. However, it also presents challenges, such as the environmental impact of alternative fuel production and the energy requirements of emissions reduction technologies."] },
     ],
   } as SecCard,
   {
@@ -3329,6 +3334,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q3-b-iii", topicId: "eng-3-8", conceptId: "aid-diagram-s-following-terms-related",
+    section: "A", questionRef: "2024 HL Q3(b)(iii)",
+    stem: "Stress (N/mm2) 45 90 135 200 275 308 335 345 340 Strain (×1000) 0.50 1.00 1.50 2.25 3.25 4.00 5.00 6.50 7.50",
+    questionText: "Describe, with the aid of a diagram(s), the following terms related to tensile testing: • necking • cup and cone fracture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Necking is a type of plastic deformation observed in ductile materials subjected to tensile stress. This is where the middle of the specimen is noticeably thinner than the rest of the specimen and with a little more stress the piece is going to fracture.", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Cup and cone fracture is a type of failure observed in ductile metals and plastics due to tensile stress. This type of fracture gets its name from the resulting shapes at the end of the broken pieces after a failure has occurred.", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q3-c-i", topicId: "eng-3-8", conceptId: "reasons-why-non-destructive-tests-used",
     section: "A", questionRef: "2024 HL Q3(c)(i)",
     stem: "Aluminium linkage arm (50 marks)",
@@ -3361,9 +3381,30 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q4-a-i", topicId: "eng-2-6", conceptId: "purpose-hardening-tempering-brake-disc-shown",
+    section: "A", questionRef: "2024 HL Q4(a)(i)",
+    questionText: "Outline the purpose of hardening and tempering the brake disc shown.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Metal hardening is a process that strengthens and increases the durability of metals by increasing the hardness of the material. The surface hardness of the brake disc will be improved and the increased wear resistance will result in a longer lasting product.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Tempering removes some of the hardness, brittleness and strength left by hardening but increases the toughness of the piece and makes it more useful. This will make the brake disc more durable and less likely to fracture due to an impact.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q4ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q4ai-art.png",
+          "srcHash": "04705a0135e9969db48c1306929e082e",
+          "alt": "The table or diagram printed with 2024 HL Q4(a), as the State Examinations Commission set it. A photograph of a motorcycle front wheel, with a leader line labelled \"Brake disc\" pointing to the perforated disc on the hub.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q4-a-ii", topicId: "eng-2-6", conceptId: "aid-diagram-s-suitable-hardening-heat",
     section: "A", questionRef: "2024 HL Q4(a)(ii)",
-    stem: "Brake disc",
     questionText: "Describe, with the aid of a diagram(s), a suitable hardening heat treatment process for the brake disc.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -3371,6 +3412,46 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water.", marks: null },
     { id: "r-3", kind: "point", verbatim: "The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping the inner core tough.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q4ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q4ai-art.png",
+          "srcHash": "04705a0135e9969db48c1306929e082e",
+          "alt": "The table or diagram printed with 2024 HL Q4(a), as the State Examinations Commission set it. A photograph of a motorcycle front wheel, with a leader line labelled \"Brake disc\" pointing to the perforated disc on the hub.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q4-b-i", topicId: "eng-1-3", conceptId: "identify-regions-labelled-b-c-d",
+    section: "A", questionRef: "2024 HL Q4(b)(i)",
+    questionText: "Identify the regions labelled A, B, C, D and E.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Austenite and Ferrite", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "B = Austenite", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "C = Austenite and Cementite", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "D = Ferrite and Pearlite", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "E = Pearlite and Cementite", marks: 1 },
+    ],
+    figure: {
+          "candId": "engineering-2024-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q4bi-art.png",
+          "srcHash": "5991eede1aae25e8552ac9df5de14c8c",
+          "alt": "The table or diagram printed with 2024 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Austenite and Ferrite","askedInThisQuestion":true},{"letter":"B","meaning":"Austenite","askedInThisQuestion":true},{"letter":"C","meaning":"Austenite and Cementite","askedInThisQuestion":true},{"letter":"D","meaning":"Ferrite and Pearlite","askedInThisQuestion":true},{"letter":"E","meaning":"Pearlite and Cementite","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3401,9 +3482,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2024-hl-q4-b-iii", topicId: "eng-2-6", conceptId: "benefits-annealing-0-6-carbon-steel",
     section: "A", questionRef: "2024 HL Q4(b)(iii)",
     questionText: "Outline two benefits of annealing 0.6% carbon steel.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This makes the metal as soft as possible, improves ductility, refines the grain size and removes internal stresses.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "This makes the metal as soft as possible, improves ductility, refines the grain size", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "This makes the metal as soft as possible, improves ductility, refines the grain size and removes internal stresses.", marks: 3 },
     ],
     questionFigure: {
           "candId": "engineering-2024-HL-paper-q4bi-art",
@@ -3445,7 +3527,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "High temperatures associated with the heating process – wear PPE.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Naked flame is a fire hazard.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Spittng of the water on impacting the heated surface could lead to burning.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Spitting of the water on impacting the heated surface could lead to burning.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Fumes could lead to dangerous gas levels in the work area.", marks: null },
     ],
   } as SecCard,
@@ -3501,6 +3583,20 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q5-b-iii", topicId: "eng-1-3", conceptId: "melting-point-metal-melting-point-metal",
+    section: "A", questionRef: "2024 HL Q5(b)(iii)",
+    questionText: "State the melting point of metal A and the melting point of metal B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A - 270°C", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B - 630°C", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q5-c-i", topicId: "eng-3-7", conceptId: "principle-sacrificial-protection-relation-offshore-wind",
     section: "A", questionRef: "2024 HL Q5(c)(i)",
     stem: ".",
@@ -3518,7 +3614,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2024-hl-q5-c-ii", topicId: "eng-3-7", conceptId: "other-than-sacrificial-protection-suggest-suitable",
     section: "A", questionRef: "2024 HL Q5(c)(ii)",
     stem: ".",
-    questionText: "Answer any two of the following: Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment.",
+    questionText: "Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Barrier coatings like paint, plastic powder/dip coating.", marks: null },
@@ -3573,6 +3669,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q6-b-i", topicId: "eng-2-10", conceptId: "suggest-suitable-method-protect-against-each",
     section: "A", questionRef: "2024 HL Q6(b)(i)",
+    stem: ". (50 marks)",
     questionText: "Suggest a suitable method to protect against each of the following during manual metal arc (MMA) welding: • Electric Shock • Intense light • Welding fumes.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -3588,6 +3685,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q6-b-ii", topicId: "eng-2-10", conceptId: "process-resistance-spot-welding",
     section: "A", questionRef: "2024 HL Q6(b)(ii)",
+    stem: ". (50 marks)",
     questionText: "Describe the process of resistance spot welding.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -3603,6 +3701,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q6-b-iv", topicId: "eng-2-10", conceptId: "identify-suitable-non-destructive-test-ndt",
     section: "A", questionRef: "2024 HL Q6(b)(iv)",
+    stem: ". (50 marks)",
     questionText: "Identify a suitable Non-Destructive Test (NDT) for the inspection of porosity in welds.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -3616,6 +3715,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q6-b", topicId: "eng-2-10", conceptId: "function-transformer-manual-metal-arc-mma",
     section: "A", questionRef: "2024 HL Q6(b)",
+    stem: ". (50 marks)",
     questionText: "Answer any three of the following: (i) Suggest a suitable method to protect against each of the following during manual metal arc (MMA) welding: • Electric Shock • Intense light • Welding fumes. (ii) Describe the process of resistance spot welding. (iii) Explain, with an example, the term inert gas as used in metal inert gas (MIG) welding. (iv) Identify a suitable Non-Destructive Test (NDT) for the inspection of porosity in welds. (v) Outline the function of the transformer in manual metal arc (MMA) welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
@@ -3629,10 +3729,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q6-c-i", topicId: "eng-3-14", conceptId: "benefits-using-robots-carry-out-inspection",
     section: "A", questionRef: "2024 HL Q6(c)(i)",
+    stem: ". (50 marks)",
     questionText: "Outline two benefits of using robots to carry out the inspection of pipelines.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Safety: The pipe inspection robot can locate faults in pipelines without puttng human lives in danger, making the job safer for employees.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Safety: The pipe inspection robot can locate faults in pipelines without putting human lives in danger, making the job safer for employees.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Labour-saving: The pipe inspection robot is small and light and can be operated remotely by a single person. It can enter confined spaces and removes the need to disassemble parts, reducing costs.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Improved efficiency and quality: The inspection robot can provide real-time information such as fault location, crawler inclination (pipeline slope), air pressure, crawling distance (meters of the line), etc.", marks: null },
     ],
@@ -3644,6 +3745,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q6-c-ii", topicId: "eng-2-10", conceptId: "identify-other-possible-applications-remote-visual",
     section: "A", questionRef: "2024 HL Q6(c)(ii)",
+    stem: ". (50 marks)",
     questionText: "Identify two other possible applications of Remote Visual Inspection technology.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
@@ -3652,6 +3754,28 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Robotic crawlers are used to inspect structures such as wind turbines and bridges.", marks: null },
     { id: "r-4", kind: "point", verbatim: "A camera drone can be used to inspect places that are hard to reach and could be dangerous, such as the roof of a building, etc.", marks: null },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q7-a-i", topicId: "eng-1-9", conceptId: "process-used-manufacture-cover-process-used",
+    section: "A", questionRef: "2024 HL Q7(a)(i)",
+    questionText: "Name a process used to manufacture the cover and name a process used to manufacture the hose pipe.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hose reel - Injection moulding", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Hose pipe - Extrusion", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q7ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q7ai-art.png",
+          "srcHash": "d2f936c87e6d1cff48036bc2110bd783",
+          "alt": "The table or diagram printed with 2024 HL Q7(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3680,8 +3804,31 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q7-a-iii", topicId: "eng-1-9", conceptId: "identify-suitable-polymer-additive-used-improve",
+    section: "A", questionRef: "2024 HL Q7(a)(iii)",
+    questionText: "Identify a suitable polymer additive which is used to improve the properties of the hose pipe for each of the following: Hose reel cover • increased flexibility • greater resistance to UV rays.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Plasticisers are added to improve the flexibility of the polymer material.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Stabilisers are used to help resist UV rays and the degrading effects of the environment.", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q7ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q7ai-art.png",
+          "srcHash": "d2f936c87e6d1cff48036bc2110bd783",
+          "alt": "The table or diagram printed with 2024 HL Q7(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q7-b-i", topicId: "eng-1-9", conceptId: "suitable-example-where-plastic-product-may",
     section: "A", questionRef: "2024 HL Q7(b)(i)",
+    stem: ". (50 marks)",
     questionText: "Give one suitable example where a plastic product may be upcycled.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -3695,6 +3842,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q7-b-ii", topicId: "eng-1-9", conceptId: "glass-transition-temperature-polymers",
     section: "A", questionRef: "2024 HL Q7(b)(ii)",
+    stem: ". (50 marks)",
     questionText: "Explain the glass transition temperature of polymers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -3708,6 +3856,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q7-b-iii", topicId: "eng-1-9", conceptId: "process-polymer-lamination",
     section: "A", questionRef: "2024 HL Q7(b)(iii)",
+    stem: ". (50 marks)",
     questionText: "Describe the process of polymer lamination.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -3721,6 +3870,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q7-b-iv", topicId: "eng-1-9", conceptId: "aid-diagram-s-internal-structure-thermosetting",
     section: "A", questionRef: "2024 HL Q7(b)(iv)",
+    stem: ". (50 marks)",
     questionText: "Outline, with the aid of a diagram(s), the internal structure of thermosetting polymers.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -3736,6 +3886,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q7-b", topicId: "eng-1-9", conceptId: "manufacturing-process-blow-moulding",
     section: "A", questionRef: "2024 HL Q7(b)",
+    stem: ". (50 marks)",
     questionText: "Answer any three of the following: (i) Give one suitable example where a plastic product may be upcycled. (ii) Explain the glass transition temperature of polymers. (iii) Describe the process of polymer lamination. (iv) Outline, with the aid of a diagram(s), the internal structure of thermosetting polymers. (v) Describe the manufacturing process of blow moulding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
@@ -3788,7 +3939,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Parallel turning: reduces Facing: smooth finish Drilling holes. diameter of workpiece. on front face.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Boring / internal threading: Knurling: adding Grooving / parting-off: widening the hole and finger grips. creating the grooves and creating the thread. cuttng to length.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Boring / internal threading: Knurling: adding Grooving / parting-off: widening the hole and finger grips. creating the grooves and creating the thread. cutting to length.", marks: null },
     ],
     questionFigure: {
           "candId": "engineering-2024-HL-paper-q8ai-art",
@@ -3809,7 +3960,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two factors that influence material surface finish when machining on a lathe.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Use of cuttng fluids have a lubricating impact and will reduce heat build-up and improve surface finish; the quality of the cuttng tool; maintenance of correct cuttng angles and a sharp cuttng edge; the machine parameters, speed and feed rate, etc.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Use of cutting fluids have a lubricating impact and will reduce heat build-up and improve surface finish; the quality of the cutting tool; maintenance of correct cutting angles and a sharp cutting edge; the machine parameters, speed and feed rate, etc.", marks: null },
     ],
     questionFigure: {
           "candId": "engineering-2024-HL-paper-q8ai-art",
@@ -3831,8 +3982,8 @@ export const CARDS: SecCard[] = [
     questionText: "Differentiate between forming and generating when machining.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Generating refers to the creation of workpiece due to the feed trajectory of the cuttng tool, examples include straight turning, taper turning and profile milling.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Forming involves the creation of workpiece shape due to the shape of the cuttng tool; common examples include form turning and drilling.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Generating refers to the creation of workpiece due to the feed trajectory of the cutting tool, examples include straight turning, taper turning and profile milling.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Forming involves the creation of workpiece shape due to the shape of the cutting tool; common examples include form turning and drilling.", marks: null },
     ],
   } as SecCard,
   {
@@ -3861,8 +4012,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain, with the aid of a diagram(s), the clearance angle and rake angle on a single point cutting tool.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Clearance angle is formed to allow one point of the cuttng tool to contact the workpiece.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Rake angle is the angle of the cuttng face relative to the workpiece. The rake angle facilitates the lifting of the chip during cuttng. A rake angle can be positive, negative or zero.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Clearance angle is formed to allow one point of the cutting tool to contact the workpiece.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Rake angle is the angle of the cutting face relative to the workpiece. The rake angle facilitates the lifting of the chip during cutting. A rake angle can be positive, negative or zero.", marks: null },
     ],
   } as SecCard,
   {
@@ -3894,7 +4045,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer any three of the following: (i) Differentiate between forming and generating when machining. (ii) Outline the purpose of balancing a grinding wheel. (iii) Explain, with the aid of a diagram(s), the clearance angle and rake angle on a single point cutting tool. (iv) State one advantage and one disadvantage of using a magnetic chuck on a surface grinding machine. (v) Explain the difference between a countersunk hole and a counterbored hole in drilling.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Generating refers to the creation of workpiece due to the feed trajectory of the cuttng tool, examples include straight turning, taper turning and profile milling.", marks: 18, accepts: ["Forming involves the creation of workpiece shape due to the shape of the cuttng tool; common examples include form turning and drilling.","If a grinding wheel is out of balance the spindle will vibrate and a poor surface finish will result. This has consequences for machine safety and surface finish.","A wheel is placed on a balancing stand and weights are moved around the flange to balance the wheel. This is similar to balancing a car wheel.","Clearance angle is formed to allow one point of the cuttng tool to contact the workpiece.","Rake angle is the angle of the cuttng face relative to the workpiece. The rake angle facilitates the lifting of the chip during cuttng. A rake angle can be positive, negative or zero.","They provide quick clamping with a firm grip.","They can accommodate large batches of workpieces.","They can often accommodate unusual workpiece shapes. Disadvantages of magnetic chuck:","The metals need to be magnetic.","The workpiece must have a flat surface and be able to make good contact with the chuck."] },
+    { id: "r-1", kind: "alt", verbatim: "Generating refers to the creation of workpiece due to the feed trajectory of the cutting tool, examples include straight turning, taper turning and profile milling.", marks: 18, accepts: ["Forming involves the creation of workpiece shape due to the shape of the cutting tool; common examples include form turning and drilling.","If a grinding wheel is out of balance the spindle will vibrate and a poor surface finish will result. This has consequences for machine safety and surface finish.","A wheel is placed on a balancing stand and weights are moved around the flange to balance the wheel. This is similar to balancing a car wheel.","Clearance angle is formed to allow one point of the cutting tool to contact the workpiece.","Rake angle is the angle of the cutting face relative to the workpiece. The rake angle facilitates the lifting of the chip during cutting. A rake angle can be positive, negative or zero.","They provide quick clamping with a firm grip.","They can accommodate large batches of workpieces.","They can often accommodate unusual workpiece shapes. Disadvantages of magnetic chuck:","The metals need to be magnetic.","The workpiece must have a flat surface and be able to make good contact with the chuck."] },
     ],
   } as SecCard,
   {
@@ -3907,7 +4058,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify any two lubricants commonly used when machining. OR Outline two safety features integrated into computerised manufacturing machines.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cuttng tools are guarded.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Cutting tools are guarded.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Machines will not operate with open guards.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Programming is designed to avoid collision between materials and tooling.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Lasers are protected.", marks: null },
@@ -3928,6 +4079,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q9-a-i", topicId: "eng-2-15", conceptId: "aid-diagram-s-how-pulley-belt",
     section: "A", questionRef: "2024 HL Q9(a)(i)",
+    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram(s), how the pulley and belt mechanism opens and closes the doors.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -3942,6 +4094,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q9-a-ii", topicId: "eng-2-15", conceptId: "aid-diagram-s-alternative-mechanism-used",
     section: "A", questionRef: "2024 HL Q9(a)(ii)",
+    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram(s), an alternative mechanism used to open and close the doors.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -4006,10 +4159,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Helical gears are quieter in operation, have a greater gear meshing area which makes the stronger, helical gear teeth run smoother as they mesh with a number of teeth at the same time while spur gears only mesh one tooth at a time.", marks: 6 },
     ],
     questionFigure: {
-          "candId": "engineering-2024-HL-paper-q9bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bii-art.png",
+          "candId": "engineering-2024-HL-paper-q9bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bi-art.png",
           "srcHash": "eda3928788c576ad0829fc193917260c",
-          "alt": "The table or diagram printed with 2024 HL Q9(b)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2024 HL Q9(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
     },
@@ -4028,10 +4181,10 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaft, causing them to spin at the same speed.", marks: null },
     ],
     questionFigure: {
-          "candId": "engineering-2024-HL-paper-q9bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bii-art.png",
+          "candId": "engineering-2024-HL-paper-q9bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bi-art.png",
           "srcHash": "eda3928788c576ad0829fc193917260c",
-          "alt": "The table or diagram printed with 2024 HL Q9(b)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2024 HL Q9(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
     },
@@ -4049,13 +4202,40 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "An LDR or light dependent resistor is a type of resistor whose resistance varies depending on the amount of light falling on its surface. These resistors are often used in circuits where it is required to sense the presence of light/darkness such as garden lights.", marks: 18, accepts: ["a positive, mechanical connection between rotating shafts, which are usually not parallel, but intersecting.","used to transmit motion, power, or both.","found on four-wheel drive (4WD), rear-wheel drive (RWD) and all-wheel drive (AWD) vehicles, agricultural machinery etc.","Helical gears are quieter in operation, have a greater gear meshing area which makes the stronger, helical gear teeth run smoother as they mesh with a number of teeth at the same time while spur gears only mesh one tooth at a time.","Clutches are used in devices that have two rotating shafts. One of the shafts is typically driven by a motor or pulley, and the other shaft drives another device. The clutch connects the two shafts so that they can either be locked together and spin at the same speed or be decoupled and spin at different speeds.","When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaft, causing them to spin at the same speed."] },
     ],
     questionFigure: {
-          "candId": "engineering-2024-HL-paper-q9bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bii-art.png",
+          "candId": "engineering-2024-HL-paper-q9bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bi-art.png",
           "srcHash": "eda3928788c576ad0829fc193917260c",
-          "alt": "The table or diagram printed with 2024 HL Q9(b)(ii), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2024 HL Q9(b)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q1-e", topicId: "eng-3-14", conceptId: "discuss-contribution-any-following-has-made",
+    section: "A", questionRef: "2024 HL Q1(e)",
+    stem: "Give brief answers to any ten of the following:",
+    questionText: "Discuss the contribution that any one of the following has made to technology: (i) Viktor Kaplan (ii) James Watt (iii) Gaston Planté.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Viktor Kaplan (1876 – 1934) was an Austrian engineer and the inventor of the Kaplan turbine, a revolutionary water turbine used to produce electricity from large streams with only a moderate incline.", marks: 5, accepts: ["James Watt (1736 – 1819) was a Scottsh inventor, mechanical engineer whose improvements in steam engine technology drove the Industrial Revolution. To describe the efficiency of his engines, he coined the term 'horsepower' and devised a rev counter.","Gaston Plamté (1834 – 1889) was a French physicist who invented the lead–acid battery. This type of battery was developed as the first rechargeable electric battery marketed for commercial use and it is widely used in automobiles."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q2-e", topicId: "eng-3-14", conceptId: "discuss-environmental-impact-any-following-regard",
+    section: "A", questionRef: "2024 HL Q2(e)",
+    questionText: "Discuss the environmental impact of any two of the following with regard to container ship technology: (i) Ballast water management. (ii) Oil leakage. (iii) Emissions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Effective ballast water management is crucial for mitigating the environmental impact of container ships. While there are challenges associated with chemical use and energy consumption, the overall benefits of preventing invasive species and protecting water quality are important.", marks: 10, accepts: ["Oil leakage from container ships poses significant immediate and long-term environmental threats including marine pollution, harm to marine life, habitat destruction and ecosystem disruption. However, through design improvements, maintenance practices, effective response plans and regulatory compliance, the risks and impacts of oil leakage can be significantly reduced.","Reducing emissions from the use of fossil fuels on container ships has predominantly positive environmental impacts such as mitigating climate change, improving air quality, and protecting ecosystems. However, it also presents challenges, such as the environmental impact of alternative fuel production and the energy requirements of emissions reduction technologies."] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
