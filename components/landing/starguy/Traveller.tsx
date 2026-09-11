@@ -12,10 +12,10 @@
  * one as it scrolls away, and springs down the page to the next as it
  * arrives — always standing on his star at a slot when the page is still.
  *
- * Two more places since Volume II. The nav: once the bar has condensed and
- * no slot is on screen, he stands under its bottom-left corner looking up,
- * a touch stretched, and the hairline sags over him (Nav.tsx draws the sag
- * from the `--sg-x` he sets). And a claim: any character effect can ask him
+ * When no slot is on screen, he floats in the empty left margin, larger and
+ * balancing on his star through the Rive rig. On a narrow desktop he rests
+ * in the nav's normal mascot position to keep clear of the content.
+ * And a claim: any character effect can ask him
  * to stand somewhere for a while (fx-char/control.ts) — beside a focused
  * textarea, at the foot of a toppled headline, at the end of a paper floor —
  * and that beats every slot until it is released.
@@ -37,6 +37,7 @@ import { StarguyFigure } from './StarguyFigure';
 import { installLeave } from '../leave';
 import { CANVAS, STAR, fireGrab, installControl, type Claim, type StarguyControl, type StarguyEvent } from '../fx-char/control';
 import CharacterEffects from '../fx-char/CharacterEffects';
+import { floatingHome, floatingMotion } from './floating';
 
 export type SlotId = 'hero' | `word-${string}` | 'rail' | 'footer' | 'nav';
 
@@ -64,8 +65,6 @@ const NAV = 68;
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
 /** How long the headline takes to arrive; the in-mask copy carries him until then. */
 const SETTLE_MS = 1400;
-/** His width under the nav bar, px. */
-const NAV_WIDTH = 36;
 /** How close the springs must be to a target before he counts as standing on it. */
 const ARRIVED = 5;
 /** The drawing's height for a given width. */
@@ -106,7 +105,8 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
   const watching = useRef<HTMLElement | null>(null);
   const [hidden, setHidden] = useState(false);
   const hiddenRef = useRef(false);
-  const [onHero, setOnHero] = useState(false);
+  const [activeSlot, setActiveSlot] = useState<string | null>(null);
+  const onHero = activeSlot === 'hero';
   const target = useRef<Target | null>(null);
 
   useEffect(() => {
@@ -203,20 +203,31 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
       if (rail && rail.width > 0 && chapters && chapters.top < vh * 0.55 && chapters.bottom > NAV + 160) return { id: 'rail', left: rail.left, top: rail.top, width: rail.width };
       const footer = rectOf('footer');
       if (footer && footer.width > 0 && footer.top < vh - 24) return { id: 'footer', left: footer.left, top: footer.top, width: footer.width };
-      // Nothing on screen claims him. Once the bar has condensed he holds it
-      // up from underneath; before that he stays attached to the last slot.
+      // Float in the outer margin when the page has no other place for him.
+      // Use the nav mark itself when the margin cannot fit the larger figure.
       if (nav && nav.dataset.condensed === 'true') {
         const bar = nav.getBoundingClientRect();
         const home = nav.querySelector('a')?.getBoundingClientRect();
-        return { id: 'nav', left: (home?.left ?? bar.left + 32), top: bar.bottom + 2, width: NAV_WIDTH, look: { x: 0.15, y: -1 }, squash: -0.28 };
+        const floating = floatingHome(home?.left ?? 0, bar.bottom, vh);
+        if (floating) return { id: 'float', ...floating, hop: false };
+        const mark = Array.from(nav.querySelectorAll<HTMLElement>('.landing-nav-guy'))
+          .map(el => el.getBoundingClientRect()).find(r => r.width > 0);
+        if (mark) return { id: 'nav', left: mark.left, top: mark.top, width: mark.width, hop: false };
       }
       const last = current.current ? rectOf(current.current as SlotId) : undefined;
       return last && current.current ? { id: current.current, left: last.left, top: last.top, width: last.width } : null;
     };
     const tick = () => {
       raf = requestAnimationFrame(tick);
-      const next = pick();
-      if (!next) return;
+      const now = performance.now();
+      const dt = Math.max(1, now - lastAt);
+      const sv = ((window.scrollY - lastScrollY) / dt) * 1000;
+      scrollV += (sv - scrollV) * Math.min(1, dt / 80);
+      lastScrollY = window.scrollY; lastAt = now;
+      const home = pick();
+      if (!home) return;
+      const floating = home.id === 'float' ? floatingMotion(now, scrollV) : null;
+      const next = floating ? { ...home, left: home.left + floating.x, top: home.top + floating.y } : home;
       target.current = next;
       const { id, left: tx, top: ty, width: tw } = next;
       if (!primed.current) {
@@ -233,7 +244,7 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
         const far = Math.abs(ty - sy.get()) > window.innerHeight * 1.2;
         if (far) { x.jump(tx); y.jump(ty); sx.jump(tx); sy.jump(ty); }
         current.current = id;
-        setOnHero(id === 'hero');
+        setActiveSlot(id);
         if (next.hop !== false) {
           animate(hop, [0, -10, 0], { duration: 0.45, ease: 'easeOut' });
           // He lands as the hop ends: a squash, a small rebound, then rest.
@@ -243,24 +254,18 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
       x.set(tx); y.set(ty); w.set(tw);
       const vy = sy.getVelocity();
       const vx = sx.getVelocity();
-      speed.set(Math.min(100, Math.hypot(vx, vy) / 18));
+      speed.set(floating ? floating.speed : Math.min(100, Math.hypot(vx, vy) / 18));
       // A passenger's lean: into his own sideways travel, and into the reader's
       // scroll — a fast scroll down tips him forward a few degrees, and the
       // spring settles him again as it slows. Stretch a little when moving
       // fast; on the way down to the footer line, crouch as he arrives —
       // reader-paced, so scrolling back stands him up again.
-      const now = performance.now();
-      const dt = Math.max(1, now - lastAt);
-      const sv = ((window.scrollY - lastScrollY) / dt) * 1000;
-      scrollV += (sv - scrollV) * Math.min(1, dt / 80);
-      lastScrollY = window.scrollY; lastAt = now;
       const still = hiddenRef.current;
-      leanTarget.set(still ? 0 : clamp(vx / 250, -6, 6) + clamp(scrollV / 300, -4, 4) + (next.lean ?? 0) + tilt.get());
+      leanTarget.set(still ? 0 : clamp(vx / 250, -6, 6) + (floating?.lean ?? clamp(scrollV / 300, -4, 4)) + (next.lean ?? 0) + tilt.get());
       const stretch = clamp(-Math.abs(vy) / 2500, -0.5, 0);
       const d = Math.abs(ty - sy.get());
       const bump = id === 'footer' && d < 120 ? 0.6 * Math.sin(Math.PI * (1 - d / 120)) : 0;
-      const held = id === 'nav' && d < 40 ? (next.squash ?? 0) * (1 - d / 40) : id === 'nav' ? 0 : (next.squash ?? 0);
-      squash.set(still ? 0 : clamp(pulse.get() + stretch + bump + held, -1, 1));
+      squash.set(still ? 0 : clamp(pulse.get() + stretch + bump + (next.squash ?? 0) + (floating?.squash ?? 0), -1, 1));
       // Look at the pointer, from his own centre; drift back to neutral when it
       // rests. A claim may fix his gaze instead; while the ragdoll stands in for
       // him he looks straight ahead, so the rig comes back in the same pose.
@@ -272,27 +277,22 @@ const Layer: React.FC<{ slots: React.RefObject<Map<SlotId, HTMLElement>> }> = ({
         lookXTarget.set(clamp((p.x - cx) / (window.innerWidth * 0.35), -1, 1));
         lookYTarget.set(clamp((p.y - cy) / (window.innerHeight * 0.35), -1, 1));
       } else { lookXTarget.set(0); lookYTarget.set(0); }
-      // Holding the bar: tell the nav where his head is, so the hairline sags there.
+      // The nav's printed mascot steps aside while the live figure is nearby.
       if (nav) {
-        const guest = id === 'nav' ? 'true' : 'false';
+        const guest = id === 'nav' || id === 'float' ? 'true' : 'false';
         if (nav.dataset.guest !== guest) nav.dataset.guest = guest;
-        const holding = id === 'nav' && d < 12 && Math.abs(tx - sx.get()) < 12;
-        if (holding) {
-          nav.style.setProperty('--sg-x', `${(sx.get() + sw.get() * 0.37 - nav.getBoundingClientRect().left).toFixed(1)}px`);
-          if (nav.dataset.held !== 'true') nav.dataset.held = 'true';
-        } else if (nav.dataset.held === 'true') { nav.dataset.held = 'false'; }
       }
     };
     raf = requestAnimationFrame(tick);
-    return () => { cancelAnimationFrame(raf); if (nav) { nav.dataset.held = 'false'; nav.dataset.guest = 'false'; } };
+    return () => { cancelAnimationFrame(raf); if (nav) nav.dataset.guest = 'false'; };
   }, [slots, x, y, w, sx, sy, sw, hop, speed, lookXTarget, lookYTarget, leanTarget, squash, pulse, tilt]);
 
   return createPortal(
     <MotionDiv
       aria-hidden="true"
       className="landing-traveller"
-      data-slot={onHero ? 'hero' : undefined}
-      style={{ position: 'fixed', left: 0, top: 0, x: sx, y: sy, width: sw, marginTop: hop, zIndex: 45, pointerEvents: 'none', lineHeight: 0 }}
+      data-slot={activeSlot ?? undefined}
+      style={{ position: 'fixed', left: 0, top: 0, x: sx, y: sy, width: sw, marginTop: hop, zIndex: activeSlot === 'nav' ? 51 : 45, pointerEvents: 'none', lineHeight: 0 }}
     >
       <StarguyFigure speed={speed} lookX={lookX} lookY={lookY} lean={lean} squash={squash} style={{ visibility: hidden ? 'hidden' : 'visible' }} />
       {/* His star is a physics object: grabbable in the hero, where there is room to fall. */}
