@@ -1647,6 +1647,14 @@ export const DCG_STRANDS: StrandRef[] = dcgCurriculum.strands.map(
     id: strand.id,
     label: strand.name.replace(/\s*\((Core|Optional Areas)\)\s*$/, ''),
     title: strand.name,
+    topics: strand.subtopics.map((topic, topicIndex) => ({
+      id: topic.id,
+      code: `${strandIndex + 1}.${topicIndex + 1}`,
+      title: topic.name,
+    })),
+  }));
+
+/**
  * Leaving Certificate Physical Education, as the WRITTEN paper examines it.
  *
  * Two strands and the physical activity areas, adapted from the canonical
