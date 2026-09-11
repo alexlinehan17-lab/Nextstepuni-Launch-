@@ -118,6 +118,17 @@ MARKER_ONLY = re.compile(r'^\(?(?:[a-h]|i{1,3}|iv|vi{0,3}|ix|x)\)?[\s.,:]*$')
 LEADING_MARKER = re.compile(r'^\(([a-h]|i{1,3}|iv|vi{0,3}|ix|x)\)\s+(?=\S)')
 # A step's own mark, printed at the end of the line the step ends on.
 WELDED_MARK = re.compile(r'^(.*\S)\s+(\d{1,3})\s*$')
+# How far below a mark cell the words it is printed AGAINST may start.
+# The page sorts by the top of each row, and a mark's digits are set in a font
+# whose box opens a sixth of a point higher than the solution's lowercase —
+# "5" at y=461.472 against "e.g. increase in initial speed" at y=461.628 — so
+# the tariff sorts BEFORE the step it prices and the step was read as priced
+# at nothing. A spliced fraction widens the same gap to about a point, because
+# its row is placed at the top of its NUMERATOR: 2022 Higher Q9(b)(i) sets its
+# "(5)" at y=419.515 against a line recorded at y=420.624. Nothing in this
+# corpus sets two printed lines closer than 14 points, so 2.5 cannot reach the
+# line below.
+SAME_ROW = 2.5
 
 FURNITURE = re.compile(
     r'^(?:Leaving\s+Certificate.*|Applied\s+Mathematics.*|Marking\s+Scheme'
@@ -320,7 +331,11 @@ def rows(page, cut, fix=None):
     to every reader but the eye.
     """
     fix = {} if fix is None else fix
-    spans = mathtext.fractions(page, cut, fix)
+    # radicals=True: this scheme's sqrt signs are drawn touching their own
+    # overbar, and without the wider test that bar is spliced as a fraction —
+    # 2024 Higher Q1(c)'s "t = 5 ± √2 s" and the priced step above it came back
+    # as one unreadable row, and 2023 Ordinary Q3(iii)'s two moduli as another.
+    spans = mathtext.fractions(page, cut, fix, radicals=True)
     # A spliced fraction knows where it STARTS but not where it ends, and the
     # marks column is placed by the right edge — so the band's own right edge
     # is measured from the lines it consumed. Without it a step whose mark is
@@ -427,7 +442,7 @@ class Unit:
     """One leaf ask of one scheme."""
 
     __slots__ = ('key', 'groups', 'part_total', 'cue', 'page', 'y0', 'y1',
-                 'scales', 'drawn', 'asides')
+                 'scales', 'drawn', 'asides', 'drawn_rows')
 
     def __init__(self, key, page):
         self.key = key
@@ -439,6 +454,11 @@ class Unit:
         self.scales = []          # the "[0/4/7]" ladders, where printed
         self.drawn = False        # every priced row was inside a diagram
         self.asides = []
+        # The rows this leaf's band prints INSIDE drawn or raster ink, with
+        # the page and coordinate each was read at. Kept so an ask refused as
+        # answered-by-a-drawing can show what the scheme actually printed
+        # rather than only assert that it printed nothing liftable.
+        self.drawn_rows = []
 
     @property
     def total(self):
@@ -680,8 +700,9 @@ class AmScheme:
                 return any(bx0 - 4 <= x0 <= bx1 + 4 and by0 - 4 <= y <= by1 + 4
                            for bx0, by0, bx1, by1 in boxes)
 
+            taken = set()         # rows a mark above them has already claimed
             for n, (y, x0, x1, text) in enumerate(page_rows):
-                if not text or y >= floor:
+                if not text or y >= floor or n in taken:
                     continue
                 # ---- the marks column. Placed by its RIGHT edge, because the
                 # schemes right-align it: "10 [0/4/7]" opens 45 points left of
@@ -707,6 +728,19 @@ class AmScheme:
                             markers, cur, q, letter, roman, i)
                         markers = []
                     body = ' '.join(t for t in pending).strip()
+                    if not body:
+                        # Nothing is pending because the words this mark is
+                        # printed against sort AFTER it: they are on the SAME
+                        # printed line, and the page is walked by the top of
+                        # each row. See SAME_ROW. Sixteen steps of this corpus
+                        # are set that way — "e.g. increase in initial speed or
+                        # change initial angle   5" — and every one of them was
+                        # read as a step the scheme priced and left blank.
+                        body, cur, q, letter, roman = self._same_row(
+                            page_rows, n, y, drawn, taken, cur, q, letter,
+                            roman, i, in_cue)
+                        if body:
+                            in_cue = False
                     value = sum(int(v) for v in MARK_NUM.findall(
                         SCALE_TAIL.sub('', text)))
                     # The SEC prices every step of this paper in FIVES: of the
@@ -812,7 +846,12 @@ class AmScheme:
                     cur, q, letter, roman = self._flush(
                         markers, cur, q, letter, roman, i)
                     markers = []
-                if cur is None or drawn(y, x0):
+                if cur is None:
+                    continue
+                if drawn(y, x0):
+                    if len(cur.drawn_rows) < 40:
+                        cur.drawn_rows.append((i, round(y, 1), round(x0, 1),
+                                               text))
                     continue
                 if cur.y0 is None:
                     cur.y0 = y
@@ -849,6 +888,61 @@ class AmScheme:
                     continue
                 out.append(text)
         return out
+
+    def _same_row(self, page_rows, n, y, drawn, taken, cur, q, letter, roman,
+                  page, in_cue):
+        """The solution words printed on the same line as the mark at row n.
+
+        Only ever called when nothing is pending, so it cannot take words away
+        from a step that already has them: the most it can do is give a step
+        the scheme plainly priced the words the scheme plainly printed beside
+        it. Rows it takes are recorded in `taken` so the walk does not read
+        them again as the next step's working.
+
+        A marker on that line opens its leaf first, exactly as one on its own
+        line does: 2022 Ordinary Q5 sets "(i)   PCM   2(6) + 3(2) = 2v₁ + 3v₂
+        (5)" on one line, and the (5) sorting first filed that step under the
+        question instead of under (i).
+        """
+        found, markers, rows = [], [], []
+        for j in range(n + 1, len(page_rows)):
+            y2, x2, _x3, t2 = page_rows[j]
+            if y2 - y > SAME_ROW:
+                break
+            if not t2 or x2 >= self.cut or drawn(y2, x2) or FURNITURE.match(t2):
+                continue
+            m = BARE_ROMAN.match(t2) or BARE_LETTER.match(t2)
+            if m and MARKER_ONLY.match(t2):
+                markers.append((m.group(1), y2))
+                found.append(j)
+                continue
+            lead = LEADING_MARKER.match(t2)
+            if lead:
+                markers.append((lead.group(1), y2))
+                t2 = t2[lead.end():].strip()
+                if not t2:
+                    found.append(j)
+                    continue
+            # The old syllabus reprints the question above its solution, and a
+            # reprinted line is never a marking point. Told apart against the
+            # PAPER, the way the walk itself tells them apart.
+            if in_cue and self._is_cue(q, t2):
+                continue
+            rows.append((x2, t2))
+            found.append(j)
+        if not rows:
+            return '', cur, q, letter, roman
+        if markers:
+            cur, q, letter, roman = self._flush(markers, cur, q, letter,
+                                                roman, page)
+        taken.update(found)
+        # Read ACROSS the line, not down the page. The page is sorted by the
+        # top of each row, and on one line that is not reading order: the
+        # scheme labels its method in a column of its own — "PCM   7(1) +
+        # 3(−5) = 7v₁ + 3v₂" — and the label's row opens a fraction of a point
+        # below the equation's, so joining by y printed the label last.
+        return ' '.join(t for _x, t in sorted(rows)).strip(), \
+            cur, q, letter, roman
 
     def _flush(self, markers, cur, q, letter, roman, page):
         """Open the leaves the markers held since the last step."""

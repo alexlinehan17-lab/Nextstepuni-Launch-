@@ -190,11 +190,36 @@ REACH, SAME_COLUMN, GRID_MIN_WIDTH, SAME_LINE, LINE_TOL = 16.0, 2.0, 25.0, 6.0, 
 
 
 _CHARCACHE = {}
+_ANON = []          # nameless documents, pinned so their id() stays theirs
+
+
+def page_key(page):
+    """A cache key that still means this page after the document is closed.
+
+    id() is unique only among LIVE objects. Every reader in this bank opens one
+    scheme, reads it, and drops it before opening the next, so the next
+    document is regularly allocated at the freed address and inherits the
+    previous one's cached characters. That is not a slow leak: it is silent
+    corruption of the glyph geometry the fraction splice runs on, and two
+    identical runs of am_scheme.py disagreed on six of Applied Mathematics'
+    priced steps because of it -- one run read 2023 Ordinary Q8(a)(ii) as
+    "1.0069^60(12000) = A((1.0069^60 - 1)/0.0069) so A = EUR244.93" and the
+    next as "1.0069^60-1 ) so A = EUR244.93". A document's FILE NAME is what
+    identifies it; a document opened from a stream has none, so that one is
+    pinned instead, which is what makes its id honest.
+    """
+    doc = page.parent
+    name = getattr(doc, 'name', None)
+    if not name:
+        if not any(d is doc for d in _ANON):
+            _ANON.append(doc)
+        return (id(doc), page.number)
+    return (name, page.number)
 
 
 def _chars(page):
     """[(char, bbox)] for every printed glyph on the page."""
-    key = (id(page.parent), page.number)
+    key = page_key(page)
     if key not in _CHARCACHE:
         out = []
         for b in page.get_text('rawdict')['blocks']:
@@ -207,7 +232,7 @@ def _chars(page):
     return _CHARCACHE[key]
 
 
-def _is_notation_rule(page, r):
+def _is_notation_rule(page, r, radicals=False):
     """A thin rule that is NOT a fraction bar.
 
     Three of them, all found by reading what the schemes actually draw:
@@ -242,6 +267,24 @@ def _is_notation_rule(page, r):
                     and bb[1] - 2 <= centre <= bb[3] + 2:
                 return True                  # a radical's own overbar
             continue
+        # The same radical test, for a sqrt sign that OVERLAPS its own bar.
+        # A sqrt sign is drawn to MEET the bar it opens, and where the two meet
+        # the glyph box and the rule can overlap: the Applied Maths scheme sets
+        # "t = 5 +- sqrt(2) s" with the sign ending at x=106.16 and the bar
+        # beginning at x=106.14, two hundredths of a point, and the test above
+        # never ran. The bar was then spliced as a fraction and swallowed the
+        # priced step printed on the line above it.
+        #
+        # Asked only when the caller says to. It is a strict widening -- more
+        # rules called notation, so fewer fractions spliced -- and on the
+        # Mathematics schemes it leaves the card count alone but moves one card
+        # between two sittings and rewrites ten question texts, which is
+        # another agent's paused ledger to move. Applied Mathematics asks for
+        # it; Mathematics can adopt it when it is ready to re-measure.
+        if radicals and ch in '\u221a\u0da5\u0da9' \
+                and abs(bb[2] - r.x0) <= 3.5 \
+                and bb[1] - 2 <= centre <= bb[3] + 2:
+            return True
         height = bb[3] - bb[1]
         if height <= 0:
             continue
@@ -272,7 +315,7 @@ def _is_notation_rule(page, r):
     return bool(re.search(r'[A-Za-z]{6}', word))
 
 
-def _bars(page):
+def _bars(page, radicals=False):
     """Thin rules that are not part of a grid: a table redraws its column
     border at every row, a fraction bar is drawn once."""
     rules = [d['rect'] for d in page.get_drawings()
@@ -283,7 +326,7 @@ def _bars(page):
                  o is not r and abs(o.y0 - r.y0) > 2
                  and abs(o.x0 - r.x0) <= SAME_COLUMN
                  and abs(o.x1 - r.x1) <= SAME_COLUMN for o in rules))]
-    return [r for r in rules if not _is_notation_rule(page, r)]
+    return [r for r in rules if not _is_notation_rule(page, r, radicals)]
 
 
 def _mid(w):
@@ -378,13 +421,18 @@ def words(page, fix=None):
     return out
 
 
-def fractions(page, cut=None, fix=None):
-    """[(x0, top, bottom, text)] -- each stacked fraction read back into a line."""
+def fractions(page, cut=None, fix=None, radicals=False):
+    """[(x0, top, bottom, text)] -- each stacked fraction read back into a line.
+
+    `radicals` widens the radical-overbar test to sqrt signs that overlap their
+    own bar; see _is_notation_rule. Off by default so a caller that has already
+    baselined its output does not move.
+    """
     if cut is None:
         cut = reader_cut(page)
     found = [w for w in words(page, fix) if w[4].strip()]
     out, band = [], []
-    for bar in sorted(_bars(page), key=lambda r: (r.y0, r.x0)) + [None]:
+    for bar in sorted(_bars(page, radicals), key=lambda r: (r.y0, r.x0)) + [None]:
         if band and (bar is None or bar.y0 - band[0].y0 > SAME_LINE):
             piece = _splice(found, band, cut)
             if piece:
@@ -514,7 +562,7 @@ def column_cut(page):
 
     So take the boundary from the page: a little left of its own header.
     """
-    key = (id(page.parent), page.number)
+    key = page_key(page)
     if key in _CUTCACHE:
         return _CUTCACHE[key]
     cut = DEFAULT_CUT
@@ -751,6 +799,16 @@ def clean_like(paths, fragment):
 
     Returns the fragment merely demangled when it cannot be located -- better a
     readable line than none, though it will be missing its exponents.
+
+    ASK IT FOR ONE BLOCK AT A TIME. _locate below matches a PREFIX and then
+    takes a window as long as the whole fragment, so a fragment that is really
+    several of the paper's blocks joined -- a part's setup and the romans under
+    it, say -- spends that window on the markers and command words printed
+    between them and runs off one end. Applied Maths asked for a part's blocks
+    joined and got the NEXT QUESTION back in place of the part's own opening
+    sentence; the same call, block by block, is exact on all 535 of that
+    subject's blocks. maths_lib.py already cleans piece by piece for this
+    reason.
     """
     ck = (tuple(paths), fragment)
     if ck in _LIKECACHE:

@@ -101,8 +101,16 @@ _INSPECTED = (set(json.load(open(MANIFEST, encoding='utf-8')))
 FURNITURE_TAIL = re.compile(
     r'\s*(Leaving Certificate\s*,?\s*\d{4}|Applied Mathematics\s*[–-]|Page\s+\d+\s+of)'
     r'[\s\S]*$', re.I)
+# A whole step that names the WORK rather than doing it. "justification",
+# printed alone in the solution column against five marks, is the SEC telling
+# its examiners to look for reasoning — it is not reasoning, and a student who
+# read it on a card would learn nothing they could write. 2023 Ordinary prints
+# it twice, under Q5(b) ("Y" ⟨5⟩ / "justification" ⟨5⟩) and under Q10(v)
+# ("C and D" ⟨5⟩ / "justification" ⟨5⟩), and both were refused for the wrong
+# reason — that one letter "did not survive the scheme's font".
 CONTENT_FREE = re.compile(r'^(as above|see above|or equivalent|etc\.?|'
-                          r'accept any|other relevant)\W*$', re.I)
+                          r'accept any|other relevant|justification|'
+                          r'justify)\W*$', re.I)
 # A step the reader recovered as an unreadable smear: a run of replacement
 # characters, or a line with no letter or digit in it at all. The provenance
 # gate would refuse most of these anyway; refusing them here says WHY.
@@ -224,14 +232,38 @@ class Author:
             lifted = (self.census_text.get(key) or '').strip()
             return am_scheme.repair(
                 mathtext.clean_like(self.P.files, lifted)) if lifted else ''
-        exact.sort(key=lambda k: (k[1] or '', am_scheme._rank(k[2] or '')))
-        joined = ' '.join((self.P.text(*k) or '').strip() for k in exact)
+        # In PRINTING order, which puts a part's own opening paragraph before
+        # the romans under it. _rank() scores an unknown roman 99, and a key
+        # with no roman at all was taking that score — so 2021 Ordinary Q5(b)
+        # read "the velocity of the ball immediately after it hits the floor /
+        # the value of h. / A ball is dropped from a height of 11.25 m...",
+        # asking for the answer before saying what the question was.
+        exact.sort(key=lambda k: (k[1] or '',
+                                  -1 if k[2] is None else am_scheme._rank(k[2])))
+        # Repaired BLOCK BY BLOCK, then joined — the same way maths_lib does
+        # it, and for the same reason. clean_like locates one fragment at a
+        # time: it finds the longest prefix the document spells and returns a
+        # window as long as the whole fragment starting there. Handed a JOIN of
+        # blocks that the paper prints with its own markers and command word
+        # between them ("Calculate  (i) ...  (ii) ..."), the window pays for
+        # those out of its budget and runs off one end or the other. 2021
+        # Ordinary Q5(b) lost its second ask, "the value of h", off the tail;
+        # before the sort above was fixed the same window ran the other way and
+        # brought the whole of Question 6 back with it.
+        #
         # Repaired again on the way out. paper.py repairs the blocks it hands
-        # back, but mathtext.clean_like() re-reads the PDF itself to recover
-        # the exponents, and its own table is the SHARED one — so this
-        # subject's own glyphs came back unrepaired in the question text while
-        # the same characters were repaired in the scheme's.
-        return am_scheme.repair(mathtext.clean_like(self.P.files, joined))
+        # back, but clean_like re-reads the PDF itself to recover the
+        # exponents, and its own table is the SHARED one — so this subject's
+        # own glyphs came back unrepaired in the question text while the same
+        # characters were repaired in the scheme's.
+        pieces = []
+        for k in exact:
+            raw = (self.P.text(*k) or '').strip()
+            if not raw:
+                continue
+            pieces.append(am_scheme.repair(
+                mathtext.clean_like(self.P.files, raw)))
+        return ' '.join(' '.join(pieces).split())
 
     def stem(self, key):
         """The paper's setup above the ask — the context it leans on."""
@@ -254,10 +286,79 @@ class Author:
         pieces = []
         for raw in raws:
             if len(_squash(raw)) >= 15:
-                pieces.append(am_scheme.repair(
-                    mathtext.clean_like(self.P.files, raw)))
-        text = ' '.join(dict.fromkeys(pieces))
+                # Cut at the running header, exactly as the ASK is cut. The
+                # trim was only ever applied to the question, and a stem that
+                # ran over a page break carried the header and everything the
+                # reader picked up after it: 41 of this deck's 280 cards showed
+                # a student "... 6 m Q 10 Leaving Certificate, 2023 Applied
+                # Mathematics – Higher Level Draw a diagram to show the
+                # external forces acting on seat A.", and four of them carried
+                # the paper's copyright notice or its "Do not hand this up."
+                pieces.append(FURNITURE_TAIL.sub('', am_scheme.repair(
+                    mathtext.clean_like(self.P.files, raw))).strip())
+        text = ' '.join(dict.fromkeys(p for p in pieces if p))
         return text if len(_squash(text)) >= 15 else ''
+
+    def drawn_quote(self, units):
+        """Everything the scheme prints in this ask's band, and where.
+
+        The evidence for an exclusion has to be a quotation, and an ask whose
+        whole answer is a drawing has no prose to quote — so what is quoted is
+        the drawing's own printed matter: every row the page sets between this
+        leaf's head and its tariff, at the coordinate it is printed at, with
+        the ones inside drawn or raster ink named as such. A reader can put the
+        page beside this list and check it.
+
+        Read back off the PAGE rather than off the walk. The walk drops a row
+        of the old syllabus's reprint before it ever asks whether the row is
+        inside ink, so the units of 2021 and 2022 carry almost none of their
+        own labels — and an exclusion whose evidence is "the band prints no
+        text at all" is an assertion, not a quotation.
+        """
+        out = []
+        for u in units:
+            page = self.S.doc[u.page]
+            boxes = am_scheme.ink(page)
+            lo = (u.y0 if u.y0 is not None else 0) - 2
+            # Down to the NEXT leaf's head, not to this one's last tariff. The
+            # scheme prints the mark level with the leaf's head and the drawing
+            # BELOW both — 2022 Ordinary Q7(a)(i) sets its "(i)" at y=326 and
+            # its "(10)" at y=340, with the whole loaded beam from y=350 down —
+            # so a band that stops at the tariff quotes nothing at all.
+            later = [o.y0 for o in self.S.units.values()
+                     if o.page == u.page and o.y0 is not None and o.y0 > lo + 4]
+            hi = min(later) - 4 if later else page.rect.height - am_scheme.FOOTER_BAND
+            for y, x0, x1, t in self.S.rows(page):
+                if not t or not (lo <= y <= hi) or x0 >= self.S.cut:
+                    continue
+                # A head is a head by WHERE it is printed, not by its shape.
+                # "5g" and "3g" — the weights hanging off a pulley diagram —
+                # parse as "question 5, part g", and a shape test dropped both
+                # labels of 2021 Ordinary Q4(a)(i) out of its own evidence.
+                if am_scheme.MARKER_ONLY.match(t) or am_scheme.FURNITURE.match(t):
+                    continue
+                if abs(x0 - self.S.head_x) <= 3 and (
+                        am_scheme.NEW_HEAD.match(t)
+                        or am_scheme.OLD_HEAD.match(t)):
+                    continue
+                inside = any(bx0 - 4 <= x0 <= bx1 + 4 and by0 - 4 <= y <= by1 + 4
+                             for bx0, by0, bx1, by1 in boxes)
+                out.append(f'p.{u.page + 1} y={y:.1f} x={x0:.1f} {t!r}'
+                           + (' [inside the drawing]' if inside else ''))
+        if not out:
+            raster = [i['bbox'] for u in units
+                      for i in self.S.doc[u.page].get_image_info()]
+            if raster:
+                return ('the band carries no text whatever: the answer is a '
+                        'placed RASTER image, at '
+                        + '; '.join(f'({b[0]:.0f},{b[1]:.0f})-({b[2]:.0f},'
+                                    f'{b[3]:.0f})' for b in raster[:4])
+                        + ', so there is not even a label to lift')
+            return ('the band prints no text at all between the head and the '
+                    'tariff: the drawing is the only thing on it')
+        more = f' … and {len(out) - 14} more' if len(out) > 14 else ''
+        return ('every row the band prints, in order: '
+                + '; '.join(out[:14]) + more)
 
     # -- one card ------------------------------------------------------------
     def card(self, key, units, refs):
@@ -273,9 +374,11 @@ class Author:
             raise Refused(('the scheme answers this ask with a drawing', ref,
                            f'{self.year} {self.level.upper()} scheme p.{page}, '
                            f'{ref.split()[-1]}: the scheme prints the mark(s) '
-                           f'{marks} against this ask and no words at all — '
-                           f'every row in its band is inside the drawing it '
-                           f'awards them for. The paper asks: {asked!r}'))
+                           f'{marks} against this ask and no line of working '
+                           f'at all — everything printed under the head is the '
+                           f'drawing and the labels on it, which is what the '
+                           f'mark is awarded for. The paper asks: {asked!r}',
+                           self.drawn_quote(units)))
         if any(not t for t, _ in steps):
             drawn = sum(m for t, m in steps if not t)
             raise Refused((f'the scheme awards {drawn} of these marks for a '
@@ -283,7 +386,18 @@ class Author:
         rows = [(t.strip(), m) for t, m in steps
                 if not CONTENT_FREE.match(t.strip())]
         if len(rows) != len(steps):
-            raise Refused(('a priced step states nothing liftable', ref))
+            empty = next(t.strip() for t, _ in steps
+                         if CONTENT_FREE.match(t.strip()))
+            page = min(u.page for u in units) + 1
+            priced = next(m for t, m in steps if CONTENT_FREE.match(t.strip()))
+            raise Refused(('a priced step states nothing liftable', ref,
+                           f'{self.year} {self.level.upper()} scheme p.{page}, '
+                           f'{ref.split()[-1]}: the scheme prices a step at '
+                           f'{priced} and states it as {empty!r}, which names '
+                           f'the work instead of doing it. The whole of this '
+                           f'ask, as the scheme prints it, is: '
+                           + '; '.join(f'{t.strip()!r} ⟨{m}⟩'
+                                       for t, m in steps)))
         bad = [t for t, _ in rows if UNREADABLE.search(t) or len(_squash(t)) < 2]
         if bad:
             raise Refused(('a priced step did not survive the scheme\'s font',
@@ -409,12 +523,46 @@ def plan(A, census_leaves):
         if want and got == want:
             out.extend(((k, [u], 'exact') for k, u in items))
             continue
+        if letter is None:
+            # The scheme drops a part letter the PAPER prints. 2024 Ordinary
+            # sets Q6 as "6(a)(i)...(iii)" and "6(b)"; its scheme heads the
+            # three romans "6 (i)", "6 (ii)", "6 (iii)" with no letter at all,
+            # so the reader's keys carry none and match no census leaf. Falling
+            # through to the coarse grain then made ONE card for the whole of
+            # Q6, and because (i) is answered by a drawn network the whole of
+            # (ii) and (iii) went with it — two asks the scheme states in
+            # words. The letter is not guessed: it is taken only when EXACTLY
+            # ONE letter of this question in the paper has exactly the romans
+            # the reader found, which is evidence and not a preference.
+            romans = {k[2] for k, _ in items}
+            named = [L for L in sorted({k[1] for k in leaves
+                                        if k[0] == q and k[1]})
+                     if {j[2] for j in leaves if j[0] == q and j[1] == L}
+                     == romans]
+            if len(named) == 1 and None not in romans:
+                out.extend((((q, named[0], k[2]), [u], 'exact')
+                            for k, u in items))
+                continue
         if len(items) == 1 and items[0][0] in leaves:
             out.append((items[0][0], [items[0][1]], 'exact'))
             continue
         out.append(((q, letter, None), [u for _, u in items], 'part'))
         coarse += 1
     return out, coarse
+
+
+# The refusals that are a claim about the SCHEME rather than about the reader,
+# and so belong in the exclusions ledger. Each maps to the sentence the ledger
+# carries as its reason; the evidence is raised with the refusal.
+EXCLUDING = {
+    'the scheme answers this ask with a drawing':
+        'the scheme answers this ask with a drawing and states no marking '
+        'point for it at all',
+    'a priced step states nothing liftable':
+        'the scheme prices a step of this ask against a word that names the '
+        'work rather than stating it, so part of the tariff has no marking '
+        'point behind it',
+}
 
 
 def build():
@@ -440,15 +588,13 @@ def build():
                     card, matched = A.card(key, units, by_paper[(year, level)])
                 except Refused as e:
                     reason, where = e.args[0][:2]
-                    evidence = e.args[0][2] if len(e.args[0]) > 2 else ''
+                    parts = [p for p in e.args[0][2:] if p]
                     refused[reason] += 1
                     examples[reason].append(where)
-                    if evidence:
+                    if parts and reason in EXCLUDING:
                         drawings.append({'ref': where,
-                                         'reason': 'the scheme answers this ask '
-                                                   'with a drawing and states no '
-                                                   'marking point for it at all',
-                                         'evidence': evidence})
+                                         'reason': EXCLUDING[reason],
+                                         'evidence': ' — '.join(parts)})
                     continue
                 if not matched:
                     stats['filed by the paper\'s own default topic'] += 1
