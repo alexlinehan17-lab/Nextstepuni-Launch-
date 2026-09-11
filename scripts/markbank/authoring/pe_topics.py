@@ -110,11 +110,13 @@ RULES = [
      r'\b(participation (?:levels?|rates?|in physical activity)|barriers? to '
      r'physical activity|reasons for (?:non[- ])?participation|drop[- ]?out'
      r'|participate the most|participation between|lifelong participation'
-     r'|participation of (?:men|women|young))'),
+     r'|participation of (?:men|women|young)|minutes of mvpa|mvpa'
+     r'|moderate to vigorous)'),
     ('physical-education-1-3', 12,
      r'\b(promot\w+ physical activity|physical activity promotion|campaign'
      r'|initiative|support(?:s)? for physical activity|tip sheet'
-     r'|encourage (?:lifelong )?participation|school sport)'),
+     r'|encourage (?:lifelong )?participation|school sport'
+     r'|local sports partnership|urban area scheme|sports partnership)'),
     ('physical-education-1-4', 12,
      r'\b(pathway(?:s)? to excellence|talent (?:identification|development)'
      r'|pathways between school and community|elite)'),

@@ -44,16 +44,18 @@ one of those is reported OPEN and none is laundered into an exclusion.
 WHERE THIS STANDS, measured against the census's 741 leaf asks over thirteen
 papers:
 
-    220  covered by 216 cards
-    493  excluded, each carrying the scheme's own printed lines
-     28  OPEN, in the buckets `--report` prints, every one of them an ask
+    229  covered by 225 cards
+    480  excluded, each carrying the scheme's own printed lines
+     32  OPEN, in the buckets `--report` prints, every one of them an ask
          whose SCHEME states an answer this reader cannot lift:
 
        8  the answer is in a printed table's other column and the flat text
           layer interleaves the two (2020 HL Q16(b)(iii)'s energy-system
           grid; 2026 OL Q15(a)(i)'s three-column concept table). pe_tables
-          reads the ruled ones; these are drawn without rules, or wrap their
-          cells differently line by line.
+          reads the tables that are drawn with RULES; these are aligned by
+          whitespace, or wrap their cells differently line by line.
+       6  the scheme marks its answer with a TICK in a printed column, and
+          the text layer hands back the tick without the column.
        5  a marking point does not trace to its own scheme — the converter
           dropped the marks column into the middle of the SEC's sentence and
           no rebuilt form of it matches.
@@ -61,16 +63,18 @@ papers:
           priced in two different groups at once (2024 HL Q8(a): "2 x 1 mark"
           for the injury and "2 x 2 marks" for its causes, in one table that
           also holds part (b)).
-       4  the ask points at a figure, table or case study and the paper page
-          this reader found for it does not carry the answer.
-       2  the scheme marks its answer with a TICK in a printed column, and
-          the text layer hands back the tick without the column.
-       2  no scheme part prices the ask at all (2022 OL Q18(b)(ii),
-          2026 OL Q15(b)).
+       3  no scheme part prices the ask at all.
+       3  the ask points at a figure, table or case study whose answer is not
+          on the paper page this reader found for it.
        1  the paper prints no ask text under the key (2022 OL Q18(a)(i), a
           figure caption the walker kept).
        1  the scheme's line holds its answer welded onto the criterion and
           cut in half by the wrap (2024 OL Q13(b)(i)).
+
+    NONE of those thirty-two is excluded. An exclusion here claims the scheme
+    prints nothing a student could have written, and for an ask whose answer
+    is in a cell this reader could not read, that claim is exactly the thing
+    it does not know.
 
 """
 import argparse
@@ -122,7 +126,9 @@ NEEDS_SOURCE = re.compile(
 # answer as readily as the right one. The tick in the SCHEME is the signal —
 # never the word "tick" in the QUESTION, which is a rubric ("Tick the box to
 # indicate which term you are defining") and says nothing about the answer.
-SCHEME_TICK = re.compile(r'[✓✔\uf0fc\u2713]')
+# Never the tick inside the RUBRIC's own "(✓)", which every such question
+# prints in its instruction and which marks nothing.
+SCHEME_TICK = re.compile(r'(?<!\()[✓✔\uf0fc\u2713](?!\))')
 # An ask answered by COMPLETING A PRINTED TABLE — matching four explanations to
 # four named methods, filling blanks from a word bank, ticking a column. The
 # scheme answers it in the table's OTHER COLUMN, and the flat text layer reads
@@ -286,7 +292,12 @@ def options_for(part, year, level, qtext):
     for text, source in S.answers_of(part, with_source=True):
         text = tidy(GLUED_MARK_WORD.sub(
             '', tidy(OPEN_LIST_TAIL.sub('', tidy(text))))).strip(' .;,')
-        if not text or len(text) < 4:
+        # Four characters is the floor for a phrase; a NUMBER is an answer at
+        # two. "2%" is the whole of what the 2021 Higher scheme prints for
+        # "what percentage of post-primary school students do not get 60
+        # minutes of MVPA on at least one day?", and a four-character floor
+        # excluded the ask for having an answer too short to be one.
+        if not text or (len(text) < 4 and not re.search(r'\d', text)):
             continue
         if NOT_A_POINT.match(text):
             criteria.append(text)         # the paper's rubric, not an answer
@@ -294,7 +305,13 @@ def options_for(part, year, level, qtext):
         if FRAGMENT.search(text):
             untraceable.append(text)      # half a line: the ask stays OPEN
             continue
-        if not re.search(r'[A-Za-z]{3}', text) or re.search(r'[x×]\s*\d', text):
+        # A measured answer has no letters in it at all — "2%", "9.5 m/s" —
+        # so the letters test cannot be the only one. What separates it from a
+        # marks cell is that a marks cell is bare arithmetic.
+        measured = re.fullmatch(r'\d+(?:[.,]\d+)?\s*(?:%|m/s|km/h|s|kg|m)?',
+                                text, re.I)
+        if (not measured and not re.search(r'[A-Za-z]{3}', text)) \
+                or re.search(r'[x×]\s*\d', text):
             criteria.append(text)         # a marks cell, not an answer
             continue
         # A line that OPENS like a criterion or a band is the examiner talking
@@ -316,7 +333,10 @@ def options_for(part, year, level, qtext):
             untraceable.append(text)
             continue
         flat = re.sub(r'[^a-z0-9]+', '', text.lower())
-        if flat and ask and flat in ask:
+        # Six characters before this test means anything: "2%" reduces to "2",
+        # which is inside almost every ask ever printed, and the SEC's answer
+        # to "what percentage..." was thrown away as the question's own words.
+        if len(flat) >= 6 and ask and flat in ask:
             restated.append(text)         # the ask's own words, not an answer
             continue
         if text not in out:
@@ -482,6 +502,12 @@ def build():
         # letter the paper numbers romans under, the ask is inside that part
         # and one card covers every leaf beneath it — which is how
         # reconcile.py reads a citation one level up.
+        siblings = collections.defaultdict(list)
+        for _key, (a_part, _r, _s) in pairs.items():
+            group = siblings[a_part.address[:2]]
+            if a_part not in group:
+                group.append(a_part)
+
         by_part = collections.OrderedDict()
         for key, (part, route, _sc) in pairs.items():
             by_part.setdefault(id(part), (part, []))[1].append(key)
@@ -502,6 +528,22 @@ def build():
                 part, year, level, qtext)
             if table_rows:
                 options = options or ['(answered in the printed table)']
+            # The tick may be on a SIBLING: 2024 Ordinary lists three
+            # statements as (i), (ii) and (iii) and ticks the one that is
+            # right, so (i) and (iii) print no answer BECAUSE the answer is
+            # the tick two lines below them. Excluding them as "the scheme
+            # states no answer" would be false.
+            # ...and only where THIS part is a bare printed statement with no
+            # table of its own, which is the shape that prints a menu of them:
+            # widened past that, one tick under a question blocked every part
+            # of it, including four that print their own answers.
+            ticked = [t for t in part.rows + part.answers
+                      if SCHEME_TICK.search(t)]
+            if not ticked and part.cue and not part.rows and not part.answers:
+                ticked = [o.cue for o in siblings.get(part.address[:2], [])
+                          if o.address[2] and o.cue and not o.rows
+                          and SCHEME_TICK.search(o.cue)]
+
 
             def refuse(bucket, detail=''):
                 for k in keys:
@@ -531,13 +573,20 @@ def build():
                 # it is excluded on the same evidence — unless the ask points
                 # at a figure or table, where the answer is on the page rather
                 # than in the scheme and the refusal belongs to the figure.
-                if S.band_only(part) or ((restated or criteria)
-                                         and not NEEDS_SOURCE.search(qtext)):
+                if ticked and not table_rows:
+                    refuse('the scheme marks its answer with a tick in a '
+                           'printed column the text layer cannot place',
+                           ticked[0][:80])
+                elif S.band_only(part) or ((restated or criteria)
+                                           and not NEEDS_SOURCE.search(qtext)):
                     for k in keys:
                         excluded.append({
                             'ref': ref_for(year, level, k),
-                            'reason': 'the scheme prices this ask by band '
-                                      'descriptor and states no answer'
+                            'reason': ('the scheme prints this ask and its '
+                                       'tariff and states no answer'
+                                       if not part.rows else
+                                       'the scheme prices this ask by band '
+                                       'descriptor and states no answer')
                                       + (' beyond the question\'s own wording'
                                          if restated else '')
                                       + (' — every line it prints under this '
@@ -548,7 +597,8 @@ def build():
                         })
                 elif restated and (NEEDS_SOURCE.search(qtext)
                                    or any(SCHEME_TICK.search(t)
-                                          for t in part.rows + part.answers)):
+                                          for t in part.rows + part.answers
+                                          if t)):
                     # The scheme names the labels and the paper prints the
                     # diagram they sit on: "Effort (2 marks) / Load (2 marks) /
                     # Fulcrum (2 marks)" answers "Label the load, effort and
@@ -584,12 +634,10 @@ def build():
                            'other column the flat text layer interleaves',
                            qtext[:80])
                     continue
-            if not table_rows and any(SCHEME_TICK.search(t)
-                                      for t in part.rows + part.answers):
+            if not table_rows and ticked:
                 refuse('the scheme marks its answer with a tick in a printed '
                        'column the text layer cannot place',
-                       next(t for t in part.rows + part.answers
-                            if SCHEME_TICK.search(t))[:80])
+                       ticked[0][:80])
                 continue
             groups = sorted(set(part.tariffs))
             steps = next((st for text in [part.cue] + part.rows + part.cells
@@ -606,12 +654,10 @@ def build():
                            'other column the flat text layer interleaves',
                            qtext[:80])
                     continue
-            if not table_rows and any(SCHEME_TICK.search(t)
-                                      for t in part.rows + part.answers):
+            if not table_rows and ticked:
                 refuse('the scheme marks its answer with a tick in a printed '
                        'column the text layer cannot place',
-                       next(t for t in part.rows + part.answers
-                            if SCHEME_TICK.search(t))[:80])
+                       ticked[0][:80])
                 continue
             stem = ''
             if BACK_REFERENCE.search(qtext):

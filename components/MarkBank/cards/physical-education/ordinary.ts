@@ -608,6 +608,32 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2022-ol-q13ai", topicId: "physical-education-1-2", conceptId: "pe-1-2-suggest-urban-area-scheme",
+    section: "B", questionRef: "2022 OL Q13(a)(i)",
+    questionText: "Suggest a way in which the Urban Area Scheme, or a similar scheme, could increase physical activity participation rates.",
+    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Example Making links with local primary schools", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2022-ol-q13aii", topicId: "physical-education-1-3", conceptId: "pe-1-3-urban-area-scheme-similar",
+    section: "B", questionRef: "2022 OL Q13(a)(ii)",
+    questionText: "The Urban Area Scheme was similar to the work of Local Sports Partnerships (LSPs) which were set up in 2004. There are now 29 LSPs across the country. Identify one aim of Local Sports Partnerships.",
+    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Increase participation in sport in the community", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
     id: "pe-2022-ol-q13bi", topicId: "physical-education-0-10", conceptId: "pe-0-10-based-description-case-study",
     section: "B", questionRef: "2022 OL Q13(b)(i)",
     questionText: "Based on the description in the case study, which principle of training did Niall Moyna implement in planning the training sessions for the Dublin team?",
@@ -650,6 +676,46 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Physical Education 2022 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2022-ol-q13ci", topicId: "physical-education-0-18", conceptId: "pe-0-18-coaches-teams-generally-have",
+    section: "B", questionRef: "2022 OL Q13(c)(i)",
+    questionText: "Coaches and teams generally have a game/performance plan prepared before competition. However, the plan may not always work. What could a coach do during the performance if their plan isn’t working? Physical Activity Strategy/compositional element",
+    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Recognise what is happening. Knowledge of opponents and potential attacks. Adapt to the play – have coached the players to understand the possible changes in play. React to the situation in front of you", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2022-ol-q13cii", topicId: "physical-education-0-13", conceptId: "pe-0-13-strategy-compositional-element-suitable",
+    section: "B", questionRef: "2022 OL Q13(c)(ii)",
+    questionText: "Describe a strategy and/or compositional element suitable for including in a game/performance plan for a physical activity of your choice. You may use a diagram if you wish.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Basketball – zone defence", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2022-ol-q13ciii", topicId: "physical-education-0-13", conceptId: "pe-0-13-adaptation-made-strategy-compositional",
+    section: "B", questionRef: "2022 OL Q13(c)(iii)",
+    stem: "Q13(c)(ii): Describe a strategy and/or compositional element suitable for including in a game/performance plan for a physical activity of your choice. You may use a diagram if you wish.",
+    questionText: "Outline an adaptation that can be made to this strategy or compositional element if it is not working. You must use the strategy/compositional element described in (ii).",
+    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "switch to man-to-man defence", marks: 2, openList: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -738,6 +804,19 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Physical Education 2022 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2022-ol-q18biii", topicId: "physical-education-0-12", conceptId: "pe-0-12-sports-supplements-role-supplement",
+    section: "C", questionRef: "2022 OL Q18(b)(iii)",
+    questionText: "Name two sports supplements and explain the role of each supplement for the athletes that use them.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Role –", marks: null, openList: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1110,6 +1189,29 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Two principles of ethical practice description", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["integrity","respect","fairness and equity"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2024-ol-q17bi", topicId: "physical-education-0-2", conceptId: "pe-0-2-label-load-effort-fulcrum",
+    section: "C", questionRef: "2024 OL Q17(b)(i)",
+    questionText: "Label the load, effort and fulcrum on the diagram below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Load ( )", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Physical Education 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

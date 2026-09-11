@@ -278,12 +278,15 @@ def pair(year, level):
         # sixteen asks were excluded as "the scheme prints no row for this
         # part" while the scheme's own row for them sat one level down,
         # unreachable because a stimulus-heavy ask shares no word with the
-        # table that prices it.
+        # table that prices it. A question head whose only content is its own
+        # rubric — 2022 Ordinary opens Question 13 "Answer all parts." and
+        # nothing else — prices nothing either, and five asks were excluded
+        # with that sentence as the evidence for it.
         for up in ((q, letter, None), (q, None, None)):
             if up == key:
                 continue
             parent = by_key.get(up)
-            if parent is None or not (parent.rows or parent.answers or parent.cue):
+            if parent is None or not (parent.rows or parent.answers):
                 continue
             agreement = score(evidence(parent), ask_bag)
             pairs[key] = (parent, 'parent', round(agreement, 2))

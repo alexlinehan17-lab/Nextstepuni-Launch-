@@ -344,6 +344,29 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
+    id: "pe-2021-hl-q12b", topicId: "physical-education-1-2", conceptId: "pe-1-2-according-figure-percentage-post",
+    section: "A", questionRef: "2021 HL Q12(b)",
+    questionText: "According to Figure 2, what percentage of post-primary school students do not get 60 minutes of MVPA on at least one day?",
+    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2%", marks: 2, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
     id: "pe-2021-hl-q13a", topicId: "physical-education-0-13", conceptId: "pe-0-13-describing-their-rowing-strategy",
     section: "B", questionRef: "2021 HL Q13(a)",
     questionText: "In describing their rowing strategy, Paul O’Donovan said: It isn’t too complex really, A to B as fast as you can go. Close the eyes and pull like a dog.",
@@ -1286,6 +1309,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Newton’s law of inertia and Newton’s law of reaction", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
+    id: "pe-2023-hl-q8", topicId: "physical-education-0-17", conceptId: "pe-0-17-terms-they-relate-rules",
+    section: "A", questionRef: "2023 HL Q8",
+    questionText: "Define each of the following terms as they relate to physical activity: Rules Rituals Conventions Rules Rituals Conventions",
+    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rules", marks: 2, openList: true },
     ],
   } as SecCard,
   {

@@ -743,7 +743,13 @@ def strip_tariff(text):
 def is_content(text):
     """True where a printed line states an answer rather than grading one."""
     body = strip_tariff(text)
-    if len(body) < 4:
+    # Four characters is the floor for a phrase; a NUMBER is an answer at two.
+    # "2% 2 marks" is the whole of what the 2021 Higher scheme prints for
+    # "what percentage of post-primary school students do not get 60 minutes
+    # of MVPA on at least one day?".
+    if len(body) < 4 and not re.search(r'\d', body):
+        return False
+    if len(body) < 2:
         return False
     if TABLE_HEAD.match(body) or EXAMINER_NOTE.match(body) or LEAD_IN.match(body):
         return False
