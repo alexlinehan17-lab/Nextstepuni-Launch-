@@ -7,6 +7,7 @@ import type { UserSettings } from "./types";
 import "./index.css";
 import "./components/landing/landing.css";
 import PaperAnswerDemo from "./components/landing/glass/PaperAnswerDemo";
+import PreviewReady, { PREVIEW_PLAYBACK } from "./components/landing/glass/PreviewReady";
 
 const Launchpad = React.lazy(() => import("./components/InnovationZone"));
 const ActiveRecall = React.lazy(
@@ -121,7 +122,7 @@ function Tour({ kind }: { kind: "launchpad" | "module" }) {
       if (
         e.origin === location.origin &&
         e.source === parent &&
-        e.data?.type === "landing-preview-playback"
+        e.data?.type === PREVIEW_PLAYBACK
       )
         playing = !!e.data.playing;
     };
@@ -136,6 +137,7 @@ function Tour({ kind }: { kind: "launchpad" | "module" }) {
   return (
     <div ref={host}>
       <Suspense fallback={<p className="p-6">Opening the app…</p>}>
+        <PreviewReady />
         {kind === "launchpad" ? (
           <NavigationProvider>
             <Launchpad

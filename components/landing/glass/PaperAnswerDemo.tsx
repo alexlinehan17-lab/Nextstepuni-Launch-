@@ -1,4 +1,5 @@
 import React, { Suspense, useState } from "react";
+import PreviewReady from "./PreviewReady";
 import { PAPER_TRAIL_INDEX } from "../../../paperTrailData";
 import {
   paperAnswersPath,
@@ -17,6 +18,7 @@ export default function PaperAnswerDemo() {
   const [open, setOpen] = useState(true);
   return open ? (
     <Suspense fallback={<p className="p-6">Opening Biology 2024…</p>}>
+      <PreviewReady />
       <Viewer
         title="Biology · 2024"
         subtitle="Section A&B · Higher"
