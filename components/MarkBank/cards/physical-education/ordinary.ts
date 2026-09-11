@@ -254,9 +254,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2021-ol-q14aiii", topicId: "physical-education-0-2", conceptId: "pe-0-2-draw-label-diagram-illustrate",
     section: "C", questionRef: "2021 OL Q14(a)(iii)",
     questionText: "Draw and label a diagram to illustrate a third class lever.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks","answer":3,"ofParts":3,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks","answer":3,"ofParts":5,"perPart":2}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Draw third class lever", marks: 6, contextNote: "3 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Draw third class lever","Load","Fulcrum"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Draw third class lever", marks: 6, contextNote: "3 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Draw third class lever","Load","Fulcrum","Effort","Also accept load (resistance), effort (force), fulcrum (axis)"]} },
     ],
   } as SecCard,
   {
@@ -478,6 +478,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Positional analysis – information on where Aaron spent most of his time on the pitch, and the main action zones is available. Effective use of their time on the pitch – a winger should be covering the wings", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Effort of the player during the match. Distance covered. Aaron brought pace to the game", marks: null, openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -755,6 +756,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Kinaesthetic awareness","consistency","anticipation","technical execution & other correct"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2022-ol-q16bi", topicId: "physical-education-0-5", conceptId: "pe-0-5-components-fitness-they-health",
+    section: "C", questionRef: "2022 OL Q16(b)(i)",
+    questionText: "Name three components of physical fitness and state if they are health related or performance related.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "HRF or PRF", marks: null, openList: true },
     ],
   } as SecCard,
   {

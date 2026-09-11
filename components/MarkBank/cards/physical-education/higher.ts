@@ -33,6 +33,30 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q1", topicId: "physical-education-0-2", conceptId: "pe-0-2-figure-movement-patterns-occur",
+    section: "A", questionRef: "2020 HL Q1",
+    questionText: "Figure 1 Movement patterns occur in planes and around axes. Identify the axis and the plane for the hammer thrower that is shown in Figure 1 above. Axis Plane",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "longitudinal (also accept vertical/ mediolateral axis)", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "transverse (also accept horizontal/ mediolateral plane)", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
     id: "pe-2020-hl-q10", topicId: "physical-education-1-18", conceptId: "pe-1-18-analyse-impact-media-coverage",
     section: "A", questionRef: "2020 HL Q10",
     questionText: "Analyse the impact media coverage has on spectator behaviour.",
@@ -305,6 +329,54 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q5a", topicId: "physical-education-0-2", conceptId: "pe-0-2-class-lever-operates-elbow",
+    section: "A", questionRef: "2020 HL Q5(a)",
+    questionText: "Identify what class of lever operates at the elbow when throwing the javelin as shown in Figure 3.",
+    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1st (first) class", marks: 2, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q5b", topicId: "physical-education-0-2", conceptId: "pe-0-2-draw-lever-system-identified",
+    section: "A", questionRef: "2020 HL Q5(b)",
+    stem: "Q5(a): Identify what class of lever operates at the elbow when throwing the javelin as shown in Figure 3.",
+    questionText: "Draw the lever system identified by you in question 5 (a). Label each part of the lever system.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Load – javelin; Effort- tricep; Fulcrum – elbow", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Also accept load (resistance), effort (force), fulcrum (axis)", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
     id: "pe-2020-hl-q8a", topicId: "physical-education-1-9", conceptId: "pe-1-9-irish-anti-doping-rule",
     section: "A", questionRef: "2020 HL Q8(a)",
     questionText: "Identify two Irish anti-doping rule violations.",
@@ -373,7 +445,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "the pulling of the paddle as the effort, the oarlock or point where oar fixes to the boat as the fulcrum and the water as the load", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Justification", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "1st (first) class", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Justification", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1238,6 +1311,19 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
+    id: "pe-2023-hl-q11", topicId: "physical-education-1-2", conceptId: "pe-1-2-having-conducted-survey-patterns",
+    section: "A", questionRef: "2023 HL Q11",
+    questionText: "Having conducted a survey on the physical activity patterns and behaviours of boys and girls in a school, the PE teacher discovered that the boys in the school were far more active than the girls. Discuss two ways in which a school could tackle a gender imbalance in physical activity participation levels.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "to how this measure can tackle a gender imbalance in physical activity participation levels of boys and girls", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
     id: "pe-2023-hl-q17aii", topicId: "physical-education-0-5", conceptId: "pe-0-5-components-fitness-being-targeted",
     section: "C", questionRef: "2023 HL Q17(a)(ii)",
     questionText: "Identify four components of fitness that are being targeted at some stage during the plan in Figure 19.",
@@ -1453,7 +1539,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "49.2 seconds", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "49.2/ calculation correct ( 8.13 /", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1492,6 +1577,20 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Competition, skill, atmosphere, tradition, rivalries", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "potential to capture a global audience, revenue generation", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
+    id: "pe-2024-hl-q14c", topicId: "physical-education-0-2", conceptId: "pe-0-2-using-sporting-examples-examine",
+    section: "C", questionRef: "2024 HL Q14(c)",
+    questionText: "Using sporting examples, examine the differences between second class levers and third class levers.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Second class lever – load is in the middle between the fulcrum and the effort", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Third class lever – effort is in the middle between the fulcrum and the load", marks: null, openList: true },
     ],
   } as SecCard,
   {

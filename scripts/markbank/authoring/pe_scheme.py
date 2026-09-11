@@ -238,7 +238,7 @@ EXAMINER_VOCAB = re.compile(
     r'|present(?:ed|s)?|provide[sd]?|providing|relevant|some|somewhat'
     r'|state[sd]?|statement|understanding|vague|vaguely|valid|weak'
     r'|response|responses|answer|answers|credit|reference|referenced'
-    r'|sufficient|no marks|little|effort|level|levels of detail|quality'
+    r'|sufficient|no marks|little|level|levels of detail|quality'
     r'|unclear|incomplete|lacks?|merit|awarded)\b',
     re.I)
 # An instruction to the examiner. It is printed inside the table and reads like
@@ -312,6 +312,10 @@ CLOSES_LIST = re.compile(
     r"|examin(?:e|es|ed|ation)\b|analys(?:e|es|ed|is)\b|little\b|no\b"
     r"|reasons? why|tick the|put a tick|place a tick|indicate which"
     r"|examples? of\b|list of\b|types? of\b(?=.{0,40}$)"
+    # "effort" is a LEVER PART as often as it is an examiner's word — "Load –
+    # javelin; Effort- tricep; Fulcrum – elbow" is an answer — so only its
+    # opener form is a criterion.
+    r"|(?:some|little|no) effort"
     r"|makes?\b|how\b|unclear|incomplete|design\b|uses?\b|shows?\b"
     r"|outlines?\b|outline of|defines?\b|definition\b|award\b|note\b|do not"
     r"|don't\b|no relevant|no marks|knowledge is|information is|analysis is"
@@ -714,6 +718,21 @@ STATED = re.compile(r':\s*(?P<body>[^:]{4,})$')
 # the examiner. "Candidate gets 3 marks if they state 49.2 seconds" is the
 # answer to "What time did Adeleke run in the 400m NCAA final?", and reading
 # the row as the criterion it opens like throws it away.
+# The SEC's third way of printing a one-line answer: inside the criterion
+# itself, after "as". "Identifies axis as longitudinal (also accept vertical/
+# mediolateral axis)" is the answer to "identify the axis", and reading the row
+# as the criterion it opens like threw it away — with 2020's whole Question 1.
+# Anchored on the examiner verb in front of it, so an ordinary "as" in a
+# sentence ("used as a warm-up") is not mistaken for one.
+IDENTIFIES_AS = re.compile(
+    r'\b(?:identif(?:y|ies|ied)|names?|named|states?|stated|defines?|defined'
+    r'|gives?|given|categorises?|classif(?:y|ies|ied)|recognises?)\b'
+    r'[^:]{0,60}?\bas\s+(?P<body>.{3,})$', re.I)
+# And a fourth: the answer printed after the price, on the same row. "Full 2
+# marks - Load – javelin; Effort- tricep; Fulcrum – elbow" is the whole answer
+# to 2020 Higher Q5(b), behind a tariff and a dash.
+AFTER_TARIFF = re.compile(
+    r'\b\d{1,2}\s*marks?\s*[-–:]\s*(?P<body>.{6,})$', re.I)
 IF_THEY = re.compile(
     r'\bif (?:they|the candidate|s?he) (?:states?|says?|writes?|names?|gives?'
     r'|identif(?:y|ies)|answers?)\s+(?P<body>.{3,})$', re.I)
@@ -773,10 +792,18 @@ def stated(row):
     text = tidy(row)
     if TABLE_HEAD.match(text) or LEAD_IN.match(text):
         return ''
-    conditional = IF_THEY.search(strip_tariff(text))
-    if conditional:
-        body = tidy(conditional.group('body')).strip(' .;:,-')
-        if len(body) >= 3:
+    found = AFTER_TARIFF.search(text)
+    if found:
+        body = tidy(found.group('body')).strip(' .;:,-')
+        if len(body) >= 6 and not EXAMINER_VOCAB.search(body):
+            return body
+    for pattern in (IF_THEY, IDENTIFIES_AS):
+        found = pattern.search(strip_tariff(text))
+        if not found:
+            continue
+        body = tidy(found.group('body')).strip(' .;:,-')
+        if len(body) >= 3 and not EXAMINER_VOCAB.search(
+                re.sub(r'\((?:also\s+)?accepts?[^)]*\)', '', body, flags=re.I)):
             return body
     if EXAMINER_NOTE.match(text):
         return ''

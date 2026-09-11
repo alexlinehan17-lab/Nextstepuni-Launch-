@@ -1517,6 +1517,12 @@
     }
   },
   "physical-education": {
+    "pe-2020-hl-q1": {
+      "kind": "illustration",
+      "pages": [
+        3
+      ]
+    },
     "pe-2020-hl-q11bi": {
       "kind": "illustration",
       "pages": [
@@ -1542,6 +1548,18 @@
       "kind": "illustration",
       "pages": [
         5
+      ]
+    },
+    "pe-2020-hl-q5a": {
+      "kind": "illustration",
+      "pages": [
+        6
+      ]
+    },
+    "pe-2020-hl-q5b": {
+      "kind": "illustration",
+      "pages": [
+        6
       ]
     },
     "pe-2021-hl-q12b": {

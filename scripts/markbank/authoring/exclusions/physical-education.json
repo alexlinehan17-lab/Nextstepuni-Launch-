@@ -1,10 +1,5 @@
 [
  {
-  "ref": "2020 HL Q1",
-  "reason": "the scheme prices this ask by band descriptor and states no answer",
-  "evidence": "Identifies axis as longitudinal (also accept vertical/ mediolateral axis) 1 mark / Identifies plane as transverse (also accept horizontal/ mediolateral plane) 1 mark"
- },
- {
   "ref": "2020 HL Q11(a)(i)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Identifies reversibility (also accept detraining) 2 marks / Description of reversibility 2 marks"
@@ -113,16 +108,6 @@
   "ref": "2020 HL Q3(b)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Accurate description of how flexibility can contribute to improved performance relevant to physical activity named / Good description 3-4 m / Fair description 1 -2 m"
- },
- {
-  "ref": "2020 HL Q5(a)",
-  "reason": "the scheme prices this ask by band descriptor and states no answer",
-  "evidence": "Identifies lever as 1st (first) class 2 marks"
- },
- {
-  "ref": "2020 HL Q5(b)",
-  "reason": "the scheme prices this ask by band descriptor and states no answer",
-  "evidence": "3 x 2 marks for each correctly labelled part of the first class lever system 6 marks / Full 2 marks - Load – javelin; Effort- tricep; Fulcrum – elbow / Also accept load (resistance), effort (force), fulcrum (axis)"
  },
  {
   "ref": "2020 HL Q6",
@@ -655,11 +640,6 @@
   "evidence": "4 x 2 marks 8 marks / Correct term and definition provided for each of F-I-T-T 2 marks / Correct term/ definition only 1 mark"
  },
  {
-  "ref": "2022 OL Q16(b)(i)",
-  "reason": "the scheme prices this ask by band descriptor and states no answer",
-  "evidence": "3 x 2 marks 6 marks / Correct component of fitness 1 mark / Component correctly identified as HRF or PRF 1 mark"
- },
- {
   "ref": "2022 OL Q16(b)(ii)",
   "reason": "the scheme prices this ask by band descriptor and states no answer — every line it prints under this part is the examiner judging an answer rather than stating one",
   "evidence": "Good definition of both health and performance related fitness + a clear / 6 marks explanation of the difference between them. / Good definition of health + performance related but no discussion of differences 4 marks / Fair explanation of both concepts - health and performance related fitness 2 marks"
@@ -773,11 +753,6 @@
   "ref": "2023 HL Q10",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Describe how any two energy systems used by the human body may contribute to performance in a physical activity of your choice. / Excellent understanding of the energy system and how it provides energy for the performance in the named activity provided. / A detailed and accurate description provided demonstrating excellent knowledge of the contribution of the system to performance. / Good understa"
- },
- {
-  "ref": "2023 HL Q11",
-  "reason": "the scheme prices this ask by band descriptor and states no answer",
-  "evidence": "Discuss two ways in which a school could tackle a gender imbalance in physical activity participation levels. / Correct way identified and discussed with clarity and accuracy. Clear information given on how this measure can tackle a gender imbalance in physical activity participation levels of boys and girls. / Correct way identified and discussed. Some information given as to how this measure can"
  },
  {
   "ref": "2023 HL Q12(a)",
@@ -1243,11 +1218,6 @@
   "ref": "2024 HL Q14(b)",
   "reason": "the scheme prices this ask by band descriptor and states no answer",
   "evidence": "Explain three practice methods that can be used to develop skills in a named physical activity of your choice. / Accurate and detailed explanation of practice method to develop skill in the named physical activity / Somewhat accurate and detailed explanation of practice method to develop skill"
- },
- {
-  "ref": "2024 HL Q14(c)",
-  "reason": "the scheme prices this ask by band descriptor and states no answer",
-  "evidence": "Using sporting examples, examine the differences between second class levers and third class levers. / Excellently detailed and accurate examination of the difference between the levers with appropriate sporting examples used to assist the examination. / Accurate examination of the difference between the levers with appropriate sporting examples used to assist the examination. / Some level of deta"
  },
  {
   "ref": "2024 HL Q14(d)",
