@@ -382,6 +382,10 @@ LANGS = {
                       r'State\s+Examinations|Page\s*\d+)\b|'
                       r'^Maltese\s*[–—-]|^\d{1,3}$|^MALTESE$|^HIGHER\s+LEVEL$'),
         'letters': 'abċdefġgħhijkl',
+        # From 2023 the paper letters the third expression "c)" rather than
+        # "ċ)". fold_letter puts it back on the Maltese run by position, so
+        # both eras address the part the same way.
+        'letters_also': 'abcdefghijkl',
         'source_line': r'^(?:Miġbur|Adattat|Sors\s*:|Minn\s*:|Meħud)',
         'rubric': (r'^(?:Wieġeb\b|Aqra\b|Ikteb\b|It[‐\-]tweġibiet\b|'
                    r'Agħżel\b|Massimu\b|Iddiskuti\s+dan)'),
@@ -517,7 +521,8 @@ TARIFF_GAP = 70.0
 # a different price, and eight Danish sittings print every one of their asks
 # that way; without it those asks read as unpriced and could not be carded.
 CAP_WORD = r'maks|maksimum|max|maximum|kuni|totalt|total|najviac|ukupno|ungef[äa]r'
-MARK_WORD = (r'puncte|punct|punten|punt|pontos|ponto|marks|mark|'
+MARK_WORD = (r'marki|marka|'
+             r'puncte|punct|punten|punt|pontos|ponto|marks|mark|'
              r'pontot|pont|точки|точка|bodova|bodov|bodu|body|bod|'
              r'po[äa]ng|punkti|punkt|pistett[äa]|pistett|point|'
              r'to[čc]ke|to[čc]ka|to[čc]k')
@@ -708,8 +713,28 @@ def fold_letter(subject, letter):
 
 
 def letter_pattern(subject):
-    """The marker form this subject prints, over its own alphabet."""
+    """The marker form this subject prints, over its own alphabet.
+
+    Widened by `letters_also` where the SEC has printed the same address two
+    ways. Maltese is the case: the paper lettered Question 1's five
+    expressions "a) b) ċ) d) e)" up to 2022 and "a) b) c) d) e)" from 2023,
+    dropping the dot on the third. A class holding only the Maltese alphabet
+    matched four of the five on the later papers, and the census reported a
+    letter-gap of ['a', 'b', 'd', 'e'] on 2023, 2024 and 2025 — three asks
+    lost, and the three cards citing them orphaned.
+
+    Both readers pass what they capture through `fold_letter`, which maps a
+    Latin letter onto the subject's run BY POSITION, so a widened class costs
+    nothing: "c)" folds to "ċ" and addresses the same part 2022 already does.
+
+    It is opt-in rather than automatic because the guarantee in `letters_for`
+    depends on it. Bulgarian letters its parts in Cyrillic, and its "а" is a
+    different character from a Latin "a"; admitting Latin there would let a
+    stray English marker match inside a Cyrillic paper.
+    """
     alpha = letters_for(subject)
+    also = cfg(subject, 'letters_also') or ''
+    alpha = alpha + ''.join(c for c in also if c not in alpha)
     cls = '[' + alpha + alpha.upper() + ']'
     close = {'colon': '[):]', 'comma': '[,)]', 'dot': r'[.)]'}.get(
         cfg(subject, 'letter'), r'\)')
@@ -750,7 +775,7 @@ TRAILING_MARK = re.compile(
     r'(?:' + MARK_WORD + r')?\s*[)\]]\s*$', re.I)
 
 
-def next_letter(current, first='a'):
+def next_letter(current, first='a', run=None):
     """The SEC's own numbering, used as a second way in.
 
     A marker that is the NEXT letter after the one before it IS that letter,
@@ -762,10 +787,22 @@ def next_letter(current, first='a'):
     reader is not written in Latin: the Bulgarian scheme letters Question 1
     "а) б) в) г) д)" in CYRILLIC, and a hard-coded 'a' meant the first item of
     every Bulgarian sitting failed the sequence test and the whole part read
-    as one ask. The letters after it are consecutive code points in both
-    alphabets, so only the first has to be told.
+    as one ask. Latin and Cyrillic are both consecutive code points, so for
+    those only the first letter has to be told.
+
+    `run` is for the alphabet that is NOT consecutive. Maltese letters its
+    parts "a) b) ċ) d) e)", and ċ is U+010B -- nowhere near b and d. Stepping
+    by code point walked off the alphabet at the third letter: the address
+    stored for it is the folded "ċ", ord('ċ') + 1 is not "d", and (d) and (e)
+    were then read as more of (ċ)'s answer on all six sittings. Given the run,
+    the step is a position in it and the alphabet's own shape decides.
     """
-    return first if not current else chr(ord(current) + 1)
+    if not current:
+        return first
+    if run:
+        i = run.find(current)
+        return run[i + 1] if 0 <= i < len(run) - 1 else None
+    return chr(ord(current) + 1)
 
 
 class Ask:

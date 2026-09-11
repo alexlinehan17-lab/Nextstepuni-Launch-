@@ -146,6 +146,12 @@ ONE_LANGUAGE = {
     'croatian': 'Svi odgovori moraju biti na hrvatskome jeziku.',
     'danish': 'Alle svar skal skrives på dansk.',
     'slovenian': 'Vsi odgovori morajo biti v slovenščini.',
+    # Maltese prints the same rule, and prints it twice: the instruction over
+    # the three parts, "Wieġeb bil-Malti, it-taqsimiet kollha", and then the
+    # sentence below it. Every ask and every stated answer in all six sittings
+    # is in Maltese, so the answer language is never in question and the ask
+    # is not sniffed for it.
+    'maltese': 'It-tweġibiet kollha għandhom jinkitbu bil-Malti.',
 }
 ENGLISH_OR_IRISH = 'English or Irish'
 

@@ -186,5 +186,8 @@
  "physical-education": {
   "higher": 125,
   "ordinary": 96
+ },
+ "maltese": {
+  "higher": 41
  }
 }

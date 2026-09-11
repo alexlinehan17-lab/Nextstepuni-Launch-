@@ -695,6 +695,7 @@ describe('the taxonomy is the redeveloped specification', () => {
       bulgarian: 'bulgarian-',
       slovakian: 'slovakian-',
       swedish: 'swedish-',
+      maltese: 'maltese-',
       estonian: 'estonian-',
       finnish: 'finnish-',
       croatian: 'croatian-',
