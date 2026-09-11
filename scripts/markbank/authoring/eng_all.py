@@ -55,7 +55,9 @@ from paper_census import census_subject                     # noqa: E402
 # COMMAND_WORD lives in lib because lib decides the same question there -- a
 # part that does not open with one cannot stand on its own and takes the cue
 # printed above it. Two copies of one rule drift; this is the one copy.
-from lib import Author, Refused, COMMAND_WORD               # noqa: E402
+from lib import (Author, Refused, COMMAND_WORD,          # noqa: E402
+                 LABELLED_POINT)
+
 from eng_scheme import EngScheme                            # noqa: E402
 from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
@@ -136,11 +138,28 @@ WORDN = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
 # heading that INTRODUCES the marking points rather than being one. Both were
 # reaching cards as the whole answer -- "Page 17" for eighteen marks, "A -
 # Vacuum forming:" for ten, "Any two:" for twelve.
+# ... and SIXTY characters, not twenty-eight. A line that ENDS on a colon is a
+# lead-in whatever its length: "Safety features integrated into computerised
+# machines:" is 53 characters and heads the four answers beneath it, and
+# fifteen such headings across the ten sittings were reaching cards as marking
+# points. Every point that ends on a colon and is longer than that is a
+# heading too; the cap is kept only so the pattern cannot swallow a whole
+# paragraph that happens to close on one.
 NOT_A_POINT = re.compile(r'^(?:Page\s+\d+|\d+\s+of\s+\d+)\s*$'
-                         r'|^[^.?!]{0,28}:\s*$', re.I)
+                         r'|^[^.?!]{0,60}:\s*$', re.I)
 # The examiner talking to the examiner rather than stating an answer.
 CREDIT_RULE = re.compile(
-    r'^(?:award|allow|accept|max\b|total\b|note:|any other|or\b'
+    # "Award 3", "Allow 3 marks", "Accept any other valid answer (3)". The
+    # aside is always about MARKS, and requiring it to say so is what separates
+    # it from an answer that happens to open on the same verb: "Allow all pipes
+    # and fittings to cool down before handling." is one of the two safety
+    # precautions 2024 Ordinary Q4(d) is priced for, and "Allows the weld to
+    # cool slower, this improves weld quality" is 2021 Higher Q6(a)(iv)'s.
+    # Four marking points across the subject were being thrown away as
+    # examiner-talk; not one real aside was being caught here, because
+    # parse_tariff and the right-margin rule take those out upstream.
+    r'^(?:(?:award|allow|accept)\b[^.?!]{0,40}?\b(?:\d{1,2}|marks?)\b'
+    r'|max\b|total\b|note:|any other|or\b'
     # A bare "Any three" is the examiner saying how many of the points
     # below to credit, not one of them. It shipped as a card's whole
     # twelve-mark answer.
@@ -224,7 +243,12 @@ def looks_like_an_ask(text):
     t = ' '.join((text or '').split())
     if not t:
         return False
-    if len(re.findall(r'[a-z]{3,}', t)) < 4:
+    # Case-INSENSITIVE. A sentence capitalises its first word, so counting
+    # lower-case runs always read one word short, and a four-word ask whose
+    # first word is its command word came out at three: "Explain the term TEU."
+    # was filed as one of the options a question lists rather than the question
+    # it is, and 2024 Higher Q2(b)(i) resolved up to the whole of Question 2.
+    if len(re.findall(r'[A-Za-z]{3,}', t)) < 4:
         return False
     if COMMAND_WORD.match(t):
         return True
@@ -313,8 +337,15 @@ def holds(points, n):
     Counting the pieces it is punctuated into says whether they are all there,
     and "Material: Rubber" against three materials says they are not.
     """
+    # ' / ' counts as well, because it is the schemes' own separator for
+    # alternatives -- scheme.py says so and every subject's reader honours it.
+    # 2024 Ordinary Q6(a) asks for three lathe processes, is priced "Any three
+    # parts @ 5 marks (15)", and is answered "Parallel turning / Facing /
+    # Knurling / Drilling / Undercutting / Parting off / Taper turning." on one
+    # line: seven, written as a run. SPACED, so that "and/or" and "kN/mm²" are
+    # not mistaken for a list.
     run = ' '.join(points)
-    parts = [c for c in re.split(r'[;,:]', run)
+    parts = [c for c in re.split(r'[;,:]|\s/\s', run)
              if re.search(r'[A-Za-z]{3,}', c)]
     if len(parts) >= n:
         return True
@@ -620,22 +651,35 @@ def main():
                 note('points at printed matter the card cannot carry')
                 continue
             # A card that NAMES a lettered part needs the letters decoded as
-            # well as shown, which is what card lint asks for. Where the
-            # scheme itself decodes them the key is LIFTED from its own
-            # marking points -- "Structure A: Body-Centred Cubic (BCC)
-            # Structure." gives A its meaning and nothing is typed here.
-            # Where it does not, the part is still refused.
+            # well as shown, which is what card lint asks for.
+            #
+            # THE SCHEME DECODES THEM. "Identify the regions labelled A, B, C,
+            # D and E" is answered "A = Austenite and Ferrite", "B = Austenite"
+            # and so on down, one line per letter -- the paper prints the
+            # label and the scheme says what it means, which is exactly the
+            # pair lib's labels='auto' lifts. Nothing is typed here: a letter
+            # reaches the key only when a marking point carries it.
+            #
+            # Such a card is a DIAGRAM card, and the build asks a diagram card
+            # for the crop on the answer side, so the same crop is bound there
+            # rather than as shared question-side context.
             labels = None
-            if cardlint.NAMES_LETTERS.search(joined):
+            if figure and points and cardlint.NAMES_LETTERS.search(joined) \
+                    and all(LABELLED_POINT.match(p) for p in points):
+                labels = 'auto'
+            # Where only SOME points carry a letter, the key is still lifted
+            # from the scheme's own text rather than typed -- "Structure A:
+            # Body-Centred Cubic (BCC) Structure." gives A its meaning.
+            if labels is None and cardlint.NAMES_LETTERS.search(joined):
                 got = {}
-                for _, t in keep:
-                    m = ENG_LABEL.match(t)
-                    if m:
-                        got.setdefault(m.group(1), m.group(2).strip())
+                for _, t_ in keep:
+                    mm = ENG_LABEL.match(t_)
+                    if mm:
+                        got.setdefault(mm.group(1), mm.group(2).strip())
                 labels = got or None
-                if not labels:
-                    note('names a lettered part this author cannot decode')
-                    continue
+            if cardlint.NAMES_LETTERS.search(joined) and not labels:
+                note('names a lettered part this author cannot decode')
+                continue
             tariff_here = S.tariff(*key)
             notation_here = S.notation(*key)
             rule_here = S.rule(*key)
@@ -655,11 +699,20 @@ def main():
                 note('the printed split does not fit the points stated')
                 continue
             kind, marks, model, group = shape
+            # A lettered card is a DIAGRAM card: the build wants its crop on
+            # the answer side, beside the key that decodes it. Every other card
+            # keeps it as shared question-side context.
+            answer_fig = figure if labels else None
+            question_fig = None if labels else figure
             cid = (f'eng-{year}-{level}-q{q}'
                    + (f'-{key[1]}' if key[1] else '')
                    + (f'-{key[2]}' if key[2] else ''))
             try:
                 if kind == 'anyN':
+                    # No labels here: anyN claims ONE row holding the whole
+                    # group, so labels='auto' would decode the first letter and
+                    # no other. A part that needs a key and cannot have a whole
+                    # one is withdrawn by the check below instead.
                     n, per = group
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
@@ -667,7 +720,8 @@ def main():
                            labels=labels,
                            use=[[i for i, _ in keep[:MAX_ROWS]]],
                            marks=[n * per], tariff='fixed',
-                           row_kind='anyN', total=n * per, question_figure=figure,
+                           row_kind='anyN', total=n * per,
+                           question_figure=question_fig, figure=answer_fig,
                            stem=keeps_stem(stem, figure),
                            notes=f'The scheme prints {notation_here!r}.')
                 elif model['kind'] == 'orderedSplit':
@@ -680,7 +734,8 @@ def main():
                            checked=CHECKED.get((year, level) + key),
                            labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           tariff='orderedSplit', question_figure=figure,
+                           tariff='orderedSplit',
+                           question_figure=question_fig, figure=answer_fig,
                            notation=model['notation'],
                            ladder=tariff_here,
                            stem=keeps_stem(stem, figure))
@@ -690,7 +745,8 @@ def main():
                            checked=CHECKED.get((year, level) + key),
                            labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           tariff='questionTotal', question_figure=figure,
+                           tariff='questionTotal',
+                           question_figure=question_fig, figure=answer_fig,
                            total=tariff_here,
                            stem=keeps_stem(stem, figure),
                            notes=f'The scheme prints {notation_here!r}.')
@@ -700,7 +756,8 @@ def main():
                            checked=CHECKED.get((year, level) + key),
                            labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           marks=marks, tariff='fixed', question_figure=figure,
+                           marks=marks, tariff='fixed',
+                           question_figure=question_fig, figure=answer_fig,
                            total=tariff_here,
                            stem=keeps_stem(stem, figure))
                 # Card lint reads the text the CARD carries, which lib builds

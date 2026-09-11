@@ -36616,5 +36616,23 @@
   "year": 2023,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2024-OL-paper-q7bi-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q7bi-art.png",
+  "md5": "ae07d7225d84130951ebfd02a2088864",
+  "alt": "The table or diagram printed with 2024 OL Q7(b), as the State Examinations Commission set it. Two rendered components side by side: a green tube captioned \"hole: Ø24.00 ± 0.05 mm\" and a blue plug captioned \"shaft: Ø25.00 ± 0.03 mm\", each label on a leader line to the surface it dimensions.",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2024-OL-paper-q6a-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q6a-art.png",
+  "md5": "1085c2678f43c79de24dbd4e93746d99",
+  "alt": "The table or diagram printed with 2024 OL Q6(a), as the State Examinations Commission set it. A rendered metal component, knurled at one end, with two turned grooves and a tapered nose drilled on its axis, captioned \"engineering component\".",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-paper-q4ai-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q4ai-art.png",
+  "md5": "04705a0135e9969db48c1306929e082e",
+  "alt": "The table or diagram printed with 2024 HL Q4(a), as the State Examinations Commission set it. A photograph of a motorcycle front wheel, with a leader line labelled \"Brake disc\" pointing to the perforated disc on the hub.",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
  }
 }

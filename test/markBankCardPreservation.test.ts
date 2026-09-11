@@ -468,8 +468,8 @@ const decks = [
   ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
-  ['engineering:higher', ENGINEERING_HIGHER, 320, 'a6f43dbe5e2717ef0550016afac3fa8500d55f46bcde9d6b75401cedf3d1fe13'],
-  ['engineering:ordinary', ENGINEERING_ORDINARY, 158, '507afa9e1c438dd433106833b284c6d62eead1c67e01094396a03f584721cafa'],
+  ['engineering:higher', ENGINEERING_HIGHER, 321, '6be0af4210578c523f84f74d984ef44073e2da9203a4ebb6e845e0ff6cbad335'],
+  ['engineering:ordinary', ENGINEERING_ORDINARY, 163, '8e0f929651ee2178e5fc4d37b15d06f1e2db237a70aa631061de68c35e7d455b'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
    * added and none replacing anything. Nothing in any other deck moved. */
@@ -708,7 +708,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_123);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_129);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

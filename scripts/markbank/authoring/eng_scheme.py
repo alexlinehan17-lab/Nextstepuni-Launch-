@@ -144,11 +144,25 @@ OR_ROW = re.compile(r'^(?:Or|OR)$')
 # four sittings that bind it, and the card was refused because its answer
 # could not be traced.
 PRACTICAL = re.compile(r'Engineering\s*[‐-―-]?\s*Practical\b', re.I)
+# One line of a LABEL LIST: a short key, a separator with a space on each side,
+# and the answer. "A = Austenite and Ferrite", "B - 630°C", "Hose pipe -
+# Extrusion". The key is capped at forty characters and may hold no sentence
+# punctuation, which is what keeps an ordinary sentence with a dash in it --
+# "High temperatures associated with the heating process - wear PPE." -- out.
+LABEL_LINE = re.compile(r'^[^.?!:;]{1,40}\s[=\u2010-\u2015-]\s\S')
+# A label lifted off a drawing, once the sentence assembly has split it away
+# from the answer it was printed beside: all lower case, a few words, closing
+# on nothing. "nylon insert" is written on a locknut, "field coils main poles"
+# on a traction motor. Across the ten sittings it matches exactly those two and
+# no marking point, because a marking point is a sentence or a proper name.
+CALLOUT = re.compile(r'[a-z][a-z-]*(?:\s+[a-z][a-z-]*){0,3}')
 # How far left of its own head a column's rows may start.
 INSET = 24.0
 # The letter each of i, v and x follows, when a question is lettering
 # rather than numbering its romans.
 FOLLOWS = {'i': 'h', 'v': 'u', 'x': 'w'}
+# The roman that would follow it, if it really were a roman.
+ROMAN_AFTER = {'i': 'ii', 'v': 'vi', 'x': 'xi'}
 # Ordinary Level sets its answers in a two-column table with the mark cell
 # beside the answer, and the cell lands wherever the row join puts it -- MID
 # SENTENCE, in "Wear heat resistant gloves when preforming heat treatment of
@@ -185,6 +199,63 @@ def _clean(text):
     """One line of the scheme with the page's own furniture taken out of it."""
     return ' '.join(PUA_BULLET.sub(
         ' ', PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', text or ''))).split())
+
+
+
+
+def _unfold_letter_i(body):
+    """Put part (i) back where the paper prints it.
+
+    MARKER leaves i, v and x out because alone they are romans far more often
+    than letters, so "(i) Explain the term ferrous metal and give one example"
+    is read as roman one and filed under (h) -- beside the chuck answer it has
+    nothing to do with. Part (i) then held nothing and BOTH parts were refused:
+    (i) because the scheme stated nothing at its key, (h) because it stated two
+    answers where the tariff prices one. Every paper's Question 1 letters its
+    parts (a) to (m), so this cost eight of the ten sittings a part.
+
+    Which it is, is decided by what FOLLOWS it and nothing else. A roman one
+    has a roman two after it -- 2023 Ordinary Q1(h) is "Explain any one of the
+    following:" with (i), (ii) and (iii) beneath -- and a LETTER i is alone
+    under its supposed parent, with (j) next. The keys are already assembled
+    by the time this runs, so the question can simply be asked of them.
+    """
+    out = collections.OrderedDict()
+    for key, value in body.items():
+        q, letter, roman = key
+        if roman in FOLLOWS and letter == FOLLOWS[roman] \
+                and (q, letter, ROMAN_AFTER[roman]) not in body \
+                and (q, roman, None) not in body:
+            key = (q, roman, None)
+        out[key] = value
+    return out
+
+
+def _by_band(rows):
+    """The page's lines in reading order: down the page, then LEFT TO RIGHT.
+
+    Rounding the baseline decides the order, and no rounding works: the SEC's
+    typesetter sets the pieces of one printed row a quarter-point apart, so
+    whether they sort together depends on which side of a rounding boundary
+    they happen to land. 2024 Ordinary Q4(a) prints the bullet at x114, y150.54
+    and its answer at x131, y150.29 -- rounded to the tenth the answer sorts
+    first and rounded to the point they straddle 150.5, and either way the
+    bullet was welded onto the END of the answer it opens:
+
+        Oxidising flame • Neutral flame • Carburising flame •
+
+    which is three marking points that came back as one, because nothing in
+    the assembly could then see where each began. Banding instead of rounding:
+    lines within 2pt of the band they are joining -- the SAME tolerance the
+    join below uses -- are one printed row, and inside it x decides.
+    """
+    out = []
+    for row in sorted(rows, key=lambda r: (r[1], r[0])):
+        if out and abs(out[-1][0] - row[1]) <= 2.0:
+            out[-1][1].append(row)
+        else:
+            out.append((row[1], [row]))
+    return [r for _, band in out for r in sorted(band, key=lambda r: r[0])]
 
 
 def _lines(page, join='block', art=()):
@@ -225,7 +296,7 @@ def _lines(page, join='block', art=()):
             bold = any('Bold' in s.get('font', '') for s in spans)
             x0, y0, x1, y1 = line['bbox']
             rows.append((x0, y0, x1, y1, text, bold))
-        rows.sort(key=lambda r: (round(r[1], 1), r[0]))
+        rows = _by_band(rows)
         if join == 'block':
             for row in _cells(rows, page.rect.width - MARK_COLUMN, art):
                 out.append(row + (block_id(block),))
@@ -714,6 +785,20 @@ class EngScheme:
             if q is None:
                 continue
             body = text
+            # The group total printed in the MARGIN, to the left of the rule
+            # it closes. 2024 Ordinary sets Question 7(b) as four romans and
+            # prints the (20) beside the last of them, which the row join
+            # brings back as "(20) (iv) One part @ 5 marks". Nothing in the
+            # cell parsed, so (iv) went unpriced and the (20) never closed the
+            # group -- so (b) itself had no tariff and its four parts resolved
+            # up to the whole question, taking every other part of Q7 with
+            # them. It closes the group AFTER this row's own rule joins it,
+            # because the row it is printed beside is the group's last.
+            lead_total = re.match(r'^\((\d{1,3})\)\s+(?=[(A-Za-z])', body)
+            pending = None
+            if lead_total:
+                pending = int(lead_total.group(1))
+                body = body[lead_total.end():].strip()
             m = MARKER.match(body)
             if m:
                 flush()
@@ -760,6 +845,8 @@ class EngScheme:
                 closing = TRAILING_TOTAL.search(body)
                 if closing:
                     flush(int(closing.group(1)))
+                elif pending is not None:
+                    flush(pending)
         flush()
         return out
 
@@ -1009,8 +1096,8 @@ class EngScheme:
         if moves:
             out = collections.OrderedDict(
                 (moves.get(k, k), v) for k, v in out.items())
-        self._body = out
-        return out
+        self._body = _unfold_letter_i(out)
+        return self._body
 
     @staticmethod
     def _artwork(page):
@@ -1154,6 +1241,13 @@ class EngScheme:
                         out.append(' '.join(cur).strip())
                         cur = []
                     continue
+                # A lone lower-case word between two closed sentences is a
+                # label lifted off the drawing, and it must not OPEN the next
+                # point: "load" sits on the necking diagram in 2024 Higher
+                # Q3(b)(iii) and began the cup-and-cone answer, which no card
+                # could then trace to the scheme.
+                if not cur and re.fullmatch(r'[a-z][\w-]*', line.strip()):
+                    continue
                 cur.append(line)
                 # A full stop ends a point only when what follows STARTS one.
                 # "It occurs at approx." ends a line on a period and the
@@ -1167,7 +1261,15 @@ class EngScheme:
                 # is generally a manual operation." followed by "electrode".
                 # Carried on, the label lands inside the marking point and no
                 # such sentence is in the scheme, so the point is refused.
-                runs_on = re.match(r'[a-z]', nxt) and len(nxt.split()) > 1
+                # ... and a CALLOUT is a bare noun phrase, not a sentence
+                # running on. "nylon insert" is two words, printed on a locknut
+                # drawing beside 2024 Ordinary Q4(c)(iii)'s answer, and the
+                # two-word test alone carried it into the marking point, where
+                # it made a sentence the scheme does not contain. A genuine
+                # continuation is the rest of a wrapped LINE -- it is long, or
+                # it carries punctuation of its own.
+                runs_on = (re.match(r'[a-z]', nxt) and len(nxt.split()) > 1
+                           and (len(nxt) > 24 or re.search(r'[.?!:;,]', nxt)))
                 if re.search(r'[.?!:]$', line.strip()) and not runs_on:
                     out.append(' '.join(cur).strip())
                     cur = []

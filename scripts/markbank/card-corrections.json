@@ -1286,5 +1286,25 @@
         ]
       }
     }
+  },
+  "engineering": {
+    "eng-2024-hl-q8-c-ii": {
+      "reason": "The paper prints a standalone \"OR\" between the two branches of this part and paper.py drops it, so the regenerated question reads as two asks to answer rather than the choice the SEC set. Restored from the deck this card already shipped with, which carries the page's own word.",
+      "set": {
+        "questionText": "Identify any two lubricants commonly used when machining. OR Outline two safety features integrated into computerised manufacturing machines."
+      }
+    },
+    "eng-2024-ol-q6-c-ii": {
+      "reason": "The paper prints a standalone \"OR\" between the two branches of this part and paper.py drops it, so the regenerated question reads as two asks to answer rather than the choice the SEC set. Restored from the deck this card already shipped with, which carries the page's own word.",
+      "set": {
+        "questionText": "Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture."
+      }
+    },
+    "eng-2024-ol-q6-c-iii": {
+      "reason": "The paper prints a standalone \"OR\" between the two branches of this part and paper.py drops it, so the regenerated question reads as two asks to answer rather than the choice the SEC set. Restored from the deck this card already shipped with, which carries the page's own word.",
+      "set": {
+        "questionText": "State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter."
+      }
+    }
   }
 }

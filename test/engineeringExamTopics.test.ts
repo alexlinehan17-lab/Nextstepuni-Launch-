@@ -276,17 +276,19 @@ describe('Engineering exam-topic registry', () => {
     expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 2 });
   });
 
-  it('surfaces 254 written questions and preserves all 466 Mark Bank cards', () => {
+  it('surfaces 254 written questions and preserves all 484 Mark Bank cards', () => {
     expect(subjectAtlasStats('engineering')).toMatchObject({
       questions: 254,
       topics: 74,
       yearMin: 2010,
       yearMax: 2026,
     });
-    expect(ENGINEERING_HIGHER).toHaveLength(313);
-    expect(ENGINEERING_ORDINARY).toHaveLength(153);
+    // 466 before the 2024 sittings were re-authored: fifteen asks the reader
+    // had mis-keyed or mis-assembled, not fifteen new questions.
+    expect(ENGINEERING_HIGHER).toHaveLength(321);
+    expect(ENGINEERING_ORDINARY).toHaveLength(163);
     expect(new Set(
       [...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id),
-    ).size).toBe(466);
+    ).size).toBe(484);
   });
 });
