@@ -16,6 +16,8 @@ export interface MarkPoint {
   accept?: string[][];
   /** Optional labels binding a point to its part of a multipart response. */
   labels?: string[];
+  /** Zero-based image/part order, when a question asks for a numbered list. */
+  partIndex?: number;
 }
 export interface PointHit {
   id: string;
@@ -246,6 +248,31 @@ function scopedAnswer(
   point: MarkPoint,
   points: MarkPoint[],
 ): string {
+  if (point.partIndex !== undefined) {
+    // Explicit part labels bind the answer even if the student writes them
+    // out of order. Otherwise a newline/semicolon/comma list follows the
+    // image order. Never credit a bag of categories to every image.
+    const parts = answer
+      .replace(/\((iii|ii|i|[1-3])\)\s*/gi, "\n$1) ")
+      .split(/\n|;|,/)
+      .map((part) => part.trim())
+      .filter(Boolean);
+    const labelled = parts.map((part) => {
+      const match = /^(iii|ii|i|[1-3])[.):]\s*(.*)$/i.exec(part);
+      if (!match) return null;
+      const label = match[1].toLowerCase();
+      const index = ["i", "ii", "iii"].includes(label)
+        ? ["i", "ii", "iii"].indexOf(label)
+        : Number(label) - 1;
+      return { index, text: match[2] };
+    });
+    if (labelled.some(Boolean))
+      return labelled
+        .filter((part) => part?.index === point.partIndex)
+        .map((part) => part!.text)
+        .join("; ");
+    return parts[point.partIndex] ?? "";
+  }
   if (!point.labels?.length) return answer;
   const labelled = points.filter((p) => p.labels?.length);
   const lines = answer.split(/\n|;|\b(?:and|but)\b/i);
