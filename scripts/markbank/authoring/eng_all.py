@@ -93,6 +93,17 @@ CREDIT_RULE = re.compile(
     re.I)
 
 
+# The paper's own masthead, printed on the back cover and swept into the stem
+# of the last part on it: "Leaving Certificate - Higher Level Engineering -
+# Materials and Technology Thursday 8 June Morning 9:30 - 12:30". Six cards
+# across the corpus carried it as the setup for Question 9(c) -- four of them
+# already shipped -- and it sets nothing up. It is not a stem the reader got
+# wrong; it is the page's own furniture, which is why it comes off here rather
+# than in the reader.
+MASTHEAD = re.compile(r'Leaving Certificate\b.{0,90}?\b(?:Morning|Afternoon)\b',
+                      re.I | re.S)
+
+
 def keeps_stem(stem, figure):
     """Whether this card's stimulus prose is worth showing.
 
@@ -105,11 +116,53 @@ def keeps_stem(stem, figure):
     following:" closes on its colon, and a run of labels closes on nothing.
     """
     text = ' '.join((stem or '').split())
-    if not text or cardlint.label_junk(text):
+    if not text or cardlint.label_junk(text) or MASTHEAD.search(text):
         return False
     if figure and not re.search(r'[.?!:]$', text):
         return False
     return True
+
+
+def names_the_part(point, ask):
+    """Whether this 'marking point' is the scheme reprinting the ask.
+
+    Two ways it does so, both of them the scheme naming the part rather than
+    answering it. Verbatim -- 2021 OL Q6(b) lists cutting fluids, clearance
+    angle and chuck key as the three things to describe and heads each answer
+    with the same words -- and in PARAPHRASE: the paper asks "Outline the
+    impact of a line defect in the crystal structure of a material" and the
+    scheme heads the answer "The impact of a line defect in crystal
+    structures." Taken as the answer, either shows the student the question
+    again.
+
+    The paraphrase test is that the point brings NOTHING of its own: every
+    content word it has is already in the ask. "The heat treatment process
+    which occurs is annealing." names annealing, which the ask does not, and
+    is the answer; "Name tool A and give one use for this tool." names
+    nothing the ask has not already named.
+    """
+    flat = re.sub(r'[^a-z0-9]', '', point.lower())
+    bare = re.sub(r'[^a-z0-9]', '', ask.lower())
+    if not flat:
+        return True
+    if flat in bare:
+        return True
+    # A number the ask does not print is something of the point's own, and it
+    # is usually the whole answer: 2023 OL Q7(b)(i) asks for the "Largest
+    # diameter of the hole in the copper fitting" and the scheme answers
+    # "Largest diameter of the hole in the copper fitting: 16.03 mm". Every
+    # word of that is the question; the 16.03 is not.
+    if set(re.findall(r'\d+', point)) - set(re.findall(r'\d+', ask)):
+        return False
+    asked = re.findall(r'[a-z]{4,}', ask.lower())
+    mine = re.findall(r'[a-z]{4,}', point.lower())
+    if not mine:
+        return False
+    # Prefix-stemmed, because the SEC pluralises freely between the two
+    # documents: "crystal structure" in the ask, "crystal structures" in the
+    # scheme's restatement of it.
+    stems = {w[:5] for w in asked}
+    return all(w[:5] in stems for w in mine)
 
 
 def looks_like_an_ask(text):
@@ -205,9 +258,17 @@ def holds(points, n):
     Counting the pieces it is punctuated into says whether they are all there,
     and "Material: Rubber" against three materials says they are not.
     """
-    parts = [c for c in re.split(r'[;,:]', ' '.join(points))
+    run = ' '.join(points)
+    parts = [c for c in re.split(r'[;,:]', run)
              if re.search(r'[A-Za-z]{3,}', c)]
-    return len(parts) >= n
+    if len(parts) >= n:
+        return True
+    # A LABELLED answer punctuates itself with the letters printed on the
+    # picture rather than with commas: "A = Liquidus line B = Solidus line C =
+    # Eutectoid line" is the three things "2 + 2 + 2" pays for, written as one
+    # run, and split on punctuation it counted as one.
+    return len(re.findall(r'(?<![A-Za-z])[A-H]\s*[=:\u2010\u2013\u2014-]\s*\S',
+                          run)) >= n
 
 
 def rows_for(notation, total, rule, points):
@@ -375,10 +436,7 @@ def main():
             # the answer, the card shows the student the question again.
             # Indices are kept, because `use` selects into the SCHEME's own
             # list and a filtered copy shifts every one past the first drop.
-            bare = re.sub(r'[^a-z0-9]', '', ask.lower())
-            keep = [(i, t) for i, t in keep
-                    if len(t) > 60
-                    or re.sub(r'[^a-z0-9]', '', t.lower()) not in bare]
+            keep = [(i, t) for i, t in keep if not names_the_part(t, ask)]
             points = [t for _, t in keep]
             if not key:
                 note('the scheme states and prices nothing at this key or above')

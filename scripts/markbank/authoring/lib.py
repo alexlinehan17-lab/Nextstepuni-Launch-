@@ -177,7 +177,17 @@ PAPER_TERMINAL = re.compile(r'[.?!]$')
 CONTINUES = re.compile(r'\s*This question continues on the next page\.?', re.I)
 TRAILING_FURNITURE = re.compile(
     r'(?:\s*(?:Figures?|Figs?\.?)\s*\d+[a-z]?)+\s*$'
-    r'|\s*Section\s+[A-C]\b[^.]{0,60}?\d{1,3}\s*marks?\s*$', re.I)
+    r'|\s*Section\s+[A-C]\b[^.]{0,60}?\d{1,3}\s*marks?\s*$'
+    # The LETTERS printed under the pictures the ask names, swept onto the end
+    # of it: 2023 OL Q5(a)(i) reads "Name the three plastic manufacturing
+    # processes shown at A, B and C." on the page, with A, B and C set under
+    # the three drawings beneath it, and the reader returns "... at A, B and
+    # C. A B C". Bare capitals with nothing between them are never a sentence,
+    # and the self-check below keeps the strip to the ones that leave a
+    # finished question behind. Case-sensitive inside the case-insensitive
+    # pattern, because a lower-case letter on a diagram is a quantity and a
+    # question may well end on one.
+    r'|(?-i:(?:\s+[A-H]){2,})\s*$', re.I)
 
 # Which subjects get the question-text handling below. It is deliberately an
 # ALLOWLIST rather than a default. The work it does -- taking the page's
@@ -301,8 +311,21 @@ class Author:
         # needs its children, and the widened key takes lettered parts as well
         # as romans. Both are Engineering's; every other subject keeps the
         # narrow rule it was authored against.
+        # A cue is not always SHORT. Engineering writes the same shape at
+        # length -- "Explain any three of the following furnace-related
+        # terms:", "While XR presents many creative opportunities, it has
+        # however a number of drawbacks. Discuss any two of the following
+        # drawbacks associated with Extended Reality (XR):" -- and its options
+        # are printed as the romans beneath it. Under a forty-character rule
+        # the card asked the student to explain three terms it never named.
+        # The real signal is the colon: a question that does not end like a
+        # sentence has not finished being asked, which is the same thing
+        # paper.suspect() flags it for, and joining the children is what
+        # answers the flag below.
         joined_kids = False
-        if roman is None and len(' '.join((question or '').split())) < 40:
+        if roman is None and (len(' '.join((question or '').split())) < 40
+                              or (clean and question
+                                  and not PAPER_TERMINAL.search(question.strip()))):
             if clean:
                 kids = [k for k in self.paper.parts
                         if k[0] == q

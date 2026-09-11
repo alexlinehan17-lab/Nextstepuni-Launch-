@@ -71,7 +71,32 @@ SUMMARY_HEAD = re.compile(r'^Question\s*(\d{1,2})\s*[:\-–]\s*(\d{1,3})\s*marks
 # 'i' is NOT a letter here: alone it is a roman first. Without the exclusion
 # "(i) Three parts @ 3 marks" priced a part (i) that does not exist, and the
 # roman it really is went unpriced.
-MARKER = re.compile(r'^\(([a-hj-z])\)')
+#
+# Neither are 'v' and 'x', and for a stronger reason than 'i': the papers
+# letter their parts (a) to (m) and no further. Question 1 is the longest and
+# ends at (m) in all ten sittings; paper.py stops at (l), which is a separate
+# defect -- so a part lettered (v) does not exist in this subject, while the
+# FIFTH ROMAN does, under every "Answer any three of the following". Read as
+# a letter it opened a key of its own: 2023 Higher Q8(b)(v), "Use of tungsten
+# carbide cutting tips", was filed at (8, 'v', None), so (b)(v) had no answer,
+# resolved up to (b), and dragged the four romans above it -- one of which
+# points at a photograph -- into a card that was then refused. Eighteen keys
+# across the corpus were shelved that way.
+MARKER = re.compile(r'^\(([a-hj-m])\)')
+# The three markers that are spelled the same as a roman numeral. Which one a
+# line is cannot be read off the string, so it is read off the PAGE: the
+# scheme sets a letter at the left margin of the answer column and indents a
+# roman about thirty points past it -- 2023 Higher prints "(i) Advantages of
+# using anodised aluminium:" at x36, the letter margin, and "(ii) Eileen Gray"
+# at x72 under (f). Both spellings occur on the same sitting, so the indent is
+# the only thing that separates them.
+AMBIGUOUS = re.compile(r'^\((i|v|x)\)')
+# An answer written against the letter printed on the picture: "A = Liquidus
+# line", "A - Blow moulding". Mirrors lib.LABELLED_POINT, which reads the same
+# shape when a card builds its label key.
+LABELLED = re.compile(r'^([A-H])\s*[=:\u2010\u2013\u2014-]\s*\S')
+# How far right of the letter margin a marker may still be that margin's own.
+LETTER_INSET = 10.0
 # The Symbol-font bullet reaches the text layer as U+F0B7 and, once the glyph
 # map has been applied, as an ordinary bullet. Either way it is a line of its
 # own with the marking point on the line after it.
@@ -92,9 +117,33 @@ WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
 # answering: "Plot the graph.", "Labels 1 + 1 + 1". Taken as the answer it
 # gave a ten-mark card the words "2 4 6 8", which is a graph's axis.
 LEAD_INSTRUCTION = re.compile(
-    r'^(?:plot|draw|sketch|labels?|award|allow|accept|complete|marks?|use)\b',
+    r'^(?:plot|draw|sketch|labels?|award|allow|accept|complete|marks?|use'
+    # "Suggested solution - other viable solutions are acceptable." is the
+    # examiner being told the answer below is one of several, not an answer.
+    r'|suggested)\b',
     re.I)
+# The imperative the PAPER opens its ask with. A scheme line that starts on one
+# is the scheme reprinting the question -- "Explain the term metal alloy and
+# name one metal alloy.", "Name tool A and give one use for this tool." -- and
+# an answer never does. Derived from the command words the papers' own asks
+# open with, which eng_all.COMMAND_WORD lists for the same reason.
+ASK_VERB = re.compile(
+    r'^(?:briefly|calculate|compare|define|describe|determine|differentiate'
+    r'|discuss|distinguish|explain|give|identify|list|name|outline|state'
+    r'|suggest)\b', re.I)
 OR_ROW = re.compile(r'^(?:Or|OR)$')
+# The THIRD document in the file. Eight of the ten scheme PDFs bind the
+# PRACTICAL examination's marking scheme onto the back of the written one --
+# three landscape grids, one per examination day, headed "Leaving Certificate
+# Engineering Practical - Marking Scheme" (2022-2024) or "Engineering -
+# Practical Examination - Marking Scheme" (2025). It answers a metal
+# test-piece, not the written paper, and it carries no question head of its
+# own, so every line of it -- "Marking Out, Ø8 mm Holes", "Part 9 Left", "100
+# Marks (x 1.5 = 150 Total)" -- was appended to whichever key the written
+# scheme ended on. That is Question 9(c)(ii) at Higher Level in each of the
+# four sittings that bind it, and the card was refused because its answer
+# could not be traced.
+PRACTICAL = re.compile(r'Engineering\s*[‐-―-]?\s*Practical\b', re.I)
 # How far left of its own head a column's rows may start.
 INSET = 24.0
 # The letter each of i, v and x follows, when a question is lettering
@@ -390,24 +439,58 @@ class EngScheme:
         q = letter = roman = None
         group = []              # [(key, notation, marks, rule)] since the marker
 
-        def flush(printed=None):
-            if not group:
-                return
+        def assemble(rows_in):
             per_key = collections.OrderedDict()
             lines_for = collections.Counter()
-            for key, notation, marks, rule in group:
+            for key, notation, marks, rule in rows_in:
                 lines_for[key] += 1
                 if key in per_key:
                     note, tot, first = per_key[key]
                     per_key[key] = (f'{note}; {notation}', tot + marks, first)
                 else:
                     per_key[key] = (notation, marks, rule)
+            return per_key, lines_for
+
+        def flush(printed=None):
+            if not group:
+                return
+            per_key, lines_for = assemble(group)
             grand = sum(t for _, t, _ in per_key.values())
             if printed is not None and grand != printed:
-                # The reader did not understand this cell. A tariff is never
-                # guessed, so the part goes unpriced and its cards are refused.
-                group.clear()
-                return
+                # "@ N marks" behind a COUNT is written two ways, and only the
+                # printed total says which this cell is. 2023 Ordinary prices
+                # Q2(c) "(i) Three materials @ 3 marks / (ii) Three reasons @
+                # 2 marks (15)": nine and six, the count times the value.
+                # It prices Q4(a) "(i) Two names @ 5 marks / (ii) Name two
+                # flames @ 5 marks / (iii) Two precautions @ 5 marks (15)":
+                # three parts at five, the value being what the PART is worth
+                # however many answers it wants -- and the scheme's own answer
+                # page confirms it, marking each of the three "(Award 1 @ 3
+                # Marks) (Award 1 @ 2 Marks) ... Total (15) Marks".
+                #
+                # Read the first way that group comes to thirty against a
+                # printed fifteen, so it was discarded and Q4(a)(i) to (iii)
+                # went unpriced. The second reading is tried only when the
+                # first fails to match what the SEC printed, and is taken only
+                # when it matches exactly -- so the total in the margin still
+                # decides, and nothing is guessed. The per-option rule goes
+                # with it: under this reading the value is the part's whole
+                # tariff, not the price of each answer.
+                # The GROUP total printed at the end of the last cell comes
+                # off the notation with the rule. It is the arithmetic over
+                # all three parts, and left in place the author read "Two
+                # precautions @ 5 marks (15)" as a two-way split of 5 and 15.
+                once = [(key, TAIL_TOTAL.sub('', notation).strip(),
+                         rule[1] if rule else marks, None)
+                        for key, notation, marks, rule in group]
+                alt, alt_lines = assemble(once)
+                if sum(t for _, t, _ in alt.values()) != printed:
+                    # The reader did not understand this cell. A tariff is
+                    # never guessed, so the part goes unpriced and its cards
+                    # are refused.
+                    group.clear()
+                    return
+                per_key, lines_for = alt, alt_lines
             for key, (notation, tot, rule) in per_key.items():
                 # "Any two @ 8 + 8" prices any TWO of the points at eight
                 # each, and that per-option rule is what lets a card offer
@@ -537,15 +620,27 @@ class EngScheme:
         with pymupdf.open(self.path) as doc:
             q = letter = roman = None
             or_branch = False
+            letter_margin = None
             for n in range(doc.page_count):
                 if n in summary:
                     continue
                 page = doc[n]
+                if PRACTICAL.search(' '.join(page.get_text().split())):
+                    break     # the practical scheme, and the file ends in it
                 rows = _lines(page)
                 # The answer column's left edge: where the prose on this page
                 # actually starts, not a guess at it.
                 wide = [r[0] for r in rows if len(r[4]) > 40]
                 margin = min(wide) if wide else 0.0
+                # The LETTER margin, read off this page's own unambiguous
+                # markers -- (a) to (h), (j) to (m) -- so that a bare "(i)",
+                # "(v)" or "(x)" can be told from the roman it is spelled
+                # like. A page with no unambiguous marker of its own keeps
+                # the last page's, because a scheme runs a question across
+                # pages and the column does not move.
+                lefts = [r[0] for r in rows if MARKER.match(r[4])]
+                if lefts:
+                    letter_margin = min(lefts)
                 art = self._artwork(page)
                 right = page.rect.width - 60
                 for x0, y0, x1, y1, text, bold in rows:
@@ -574,6 +669,26 @@ class EngScheme:
                         or_branch = True
                         continue
                     m = MARKER.match(body_text)
+                    # A marker spelled like a roman, printed at the letter
+                    # margin, IS the letter: Question 1 runs (a) to (m) at
+                    # both levels and its ninth part is (i). Read as a roman
+                    # it was filed under (h), so 2023 Higher Q1(i),
+                    # "Advantages of using anodised aluminium", answered a
+                    # part that does not exist and Q1(i) had nothing at all.
+                    # Both tests are needed. 2023 Ordinary sets Q1(h)'s three
+                    # romans and Q1(i) on facing pages: (h)(i) "CAD Modelling"
+                    # is indented to x72 and (i) "Explain the term upcycling"
+                    # sits at x29 with the letters -- so the indent separates
+                    # them. 2021 Ordinary sets the whole of Question 1 flush
+                    # at x27, romans included, so there the indent says
+                    # nothing and only the ALPHABET does: "(i) Solar energy"
+                    # follows (d) and is that part's first roman, while "(i)
+                    # Any one:" follows (h) and is the letter after it.
+                    amb = AMBIGUOUS.match(body_text) if not m else None
+                    if amb and bold and letter_margin is not None \
+                            and x0 <= letter_margin + LETTER_INSET \
+                            and letter == FOLLOWS.get(amb.group(1)):
+                        m = amb
                     r = None
                     if m:
                         letter, roman = m.group(1), None
@@ -734,6 +849,35 @@ class EngScheme:
         if lines and lead and not re.search(r'[.?!:]\s*$', lead) \
                 and re.match(r'[a-z]', lines[0].strip()):
             lines = [f'{lead} {lines[0]}'.strip()] + list(lines[1:])
+        # ... and a lead that CLOSES is not automatically a heading either.
+        # A heading names the part -- "Injection Moulding:", "Safety
+        # precautions when using a milling machine:" -- and closes on a colon
+        # or on nothing. A lead that is a finished SENTENCE is the answer
+        # beginning: 2023 Higher Q7(b)(iii) is priced "2 + 2" and answered
+        # "(iii) A selection of plasticisers makes the polymer flexible,
+        # easier to mould and non-toxic." in bold, with "Pigments give the
+        # plastic hull its tinted colour." beneath -- two points, and the
+        # first of them was dropped, so the split no longer fitted and the
+        # part was refused. Forty-four keys a corpus open this way; 2023
+        # Higher Q1(c) shipped showing only the second half of its answer.
+        #
+        # The SEC's note to its own examiners is not an answer whatever it
+        # ends on, and neither is the scheme reprinting the question, which
+        # the author's own "repeats the ask" filter takes back out.
+        elif lines and lead and (
+                (re.search(r'[.?!]\s*$', lead) and len(lead.split()) >= 8
+                 and not LEAD_INSTRUCTION.match(lead)
+                 and not ASK_VERB.match(lead))
+                # ... and a LABELLED answer is a marking point whatever it
+                # ends on. The scheme answers "Name the transformation
+                # boundary lines A, B and C shown" with "A = Liquidus line"
+                # in bold and "B = Solidus line C = Eutectoid line" beneath,
+                # and priced it "2 + 2 + 2". Drop the bold line and the answer
+                # names two of the three lines the split pays for, so the part
+                # was refused for a split that did not fit.
+                or (LABELLED.match(lead)
+                    and any(LABELLED.match(x.strip()) for x in lines))):
+            lines = [lead] + list(lines)
         if not any(BULLET.match(x) for x in lines):
             # One point per SENTENCE, not one per key. Joining every line a
             # key holds made points of 1,588 characters -- a whole column of

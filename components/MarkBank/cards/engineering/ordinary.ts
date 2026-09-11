@@ -881,7 +881,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-a", topicId: "eng-3-14", conceptId: "application-remote-control-technology",
     section: "A", questionRef: "2023 OL Q1(a)",
-    stem: "Give brief answers to any eight of the following:",
+    stem: ". (50 marks) Give brief answers to any eight of the following:",
     questionText: "State one application of remote-control technology.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -909,7 +909,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-c", topicId: "eng-2-11", conceptId: "reasons-why-pilot-holes-used-when",
     section: "A", questionRef: "2023 OL Q1(c)",
-    stem: "Give brief answers to any eight of the following:",
+    stem: ". (50 marks) Give brief answers to any eight of the following:",
     questionText: "State two reasons why pilot holes are used when drilling.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -938,7 +938,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-e", topicId: "eng-1-9", conceptId: "application-strip-heater-when-working-plastics",
     section: "A", questionRef: "2023 OL Q1(e)",
-    stem: "Give brief answers to any eight of the following:",
+    stem: ". (50 marks) Give brief answers to any eight of the following:",
     questionText: "Give one application of a strip heater when working with plastics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -952,7 +952,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-g", topicId: "eng-3-1", conceptId: "reason-why-important-wear-ear-protection",
     section: "A", questionRef: "2023 OL Q1(g)",
-    stem: "Give brief answers to any eight of the following:",
+    stem: ". (50 marks) Give brief answers to any eight of the following:",
     questionText: "Give one reason why it is important to wear ear protection when working in a workshop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -966,11 +966,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-h", topicId: "eng-3-14", conceptId: "any-following-cad-modelling-artificial-intelligence",
     section: "A", questionRef: "2023 OL Q1(h)",
-    stem: "Give brief answers to any eight of the following:",
+    stem: ". (50 marks) Give brief answers to any eight of the following:",
     questionText: "Explain any one of the following: (i) CAD Modelling, (ii) Artificial intelligence (AI), (iii) Electric vehicle.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Upcycling is the process of reusing old materials to create something more valuable or of a higher quality. An example of upcycling is using reclaimed skateboards to make quality furniture, as shown.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "CAD (computer-aided design) modelling is the use of computer-based software to aid in design processes. CAD software can be used to create two-dimensional (2-D) drawings or three dimensional (3-D) models which allows designers to test, refine and manipulate virtual products prior to production. These high-quality 3D designs are identical in dimension and detail to the desired finished product, ensuring quality and accuracy for production.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem solving.", marks: null },
     { id: "r-3", kind: "point", verbatim: "An electric vehicle is essentially a vehicle with an electric motor powering it rather than a combustible engine. A fully electric vehicle does not run on or have a petrol or diesel engine.", marks: null },
     ],
@@ -980,9 +980,23 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q1-i", topicId: "eng-3-14", conceptId: "term-upcycling",
+    section: "A", questionRef: "2023 OL Q1(i)",
+    stem: ". (50 marks) Give brief answers to any eight of the following:",
+    questionText: "Explain the term upcycling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Upcycling is the process of reusing old materials to create something more valuable or of a higher quality. An example of upcycling is using reclaimed skateboards to make quality furniture, as shown.", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-j", topicId: "eng-2-10", conceptId: "main-operating-features-any-following-scissor",
     section: "A", questionRef: "2023 OL Q1(j)",
-    stem: "Give brief answers to any eight of the following:",
+    stem: ". (50 marks) Give brief answers to any eight of the following:",
     questionText: "Describe the main operating features of any one of the following: (i) Scissor jack, (ii) Foot shears, (iii) Soldering iron.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -998,7 +1012,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q1-k", topicId: "eng-1-2", conceptId: "define-electrical-conductor-relation-properties-metals",
     section: "A", questionRef: "2023 OL Q1(k)",
-    stem: "Give brief answers to any eight of the following:",
+    stem: ". (50 marks) Give brief answers to any eight of the following:",
     questionText: "Define electrical conductor in relation to the properties of metals and name one metal which is used as an electrical conductor.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -1030,6 +1044,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q2-a", topicId: "eng-1-4", conceptId: "any-following-furnace-related-terms-water",
     section: "A", questionRef: "2023 OL Q2(a)",
+    stem: ". (50 marks)",
     questionText: "Explain any three of the following furnace-related terms: (i) Water-cooled oxygen lance, (ii) Pig iron, (iii) Carbon electrodes, (iv) Iron ore.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
@@ -1043,6 +1058,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q2-b", topicId: "eng-1-4", conceptId: "aid-labelled-diagram-operation-any-following",
     section: "A", questionRef: "2023 OL Q2(b)",
+    stem: ". (50 marks)",
     questionText: "With the aid of a labelled diagram, describe the operation of any one of the following furnaces: (i) Blast furnace, (ii) Basic oxygen furnace, (iii) Electric arc furnace.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -1098,6 +1114,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q3-a", topicId: "eng-2-6", conceptId: "any-following-heat-treatment-procedures-annealing",
     section: "A", questionRef: "2023 OL Q3(a)",
+    stem: ". (50 marks)",
     questionText: "Explain any two of the following heat treatment procedures: (i) Annealing, (ii) Case hardening, (iii) Quenching.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
@@ -1111,6 +1128,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q3-b-i", topicId: "eng-2-6", conceptId: "effect-does-hardening-have-steel",
     section: "A", questionRef: "2023 OL Q3(b)(i)",
+    stem: ". (50 marks)",
     questionText: "What effect does hardening have on steel?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
@@ -1124,6 +1142,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q3-b-ii", topicId: "eng-2-6", conceptId: "tempering-process",
     section: "A", questionRef: "2023 OL Q3(b)(ii)",
+    stem: ". (50 marks)",
     questionText: "Describe the tempering process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
@@ -1137,6 +1156,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q3-c", topicId: "eng-3-1", conceptId: "identify-safety-precautions-be-observed-when",
     section: "A", questionRef: "2023 OL Q3(c)",
+    stem: ". (50 marks)",
     questionText: "Identify two safety precautions to be observed when working with hot metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -1151,7 +1171,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2023-ol-q3-d-i", topicId: "eng-3-8", conceptId: "toughness-areas-where-robotic-technology-used",
     section: "A", questionRef: "2023 OL Q3(d)(i)",
     stem: "exoskeleton suit",
-    questionText: "Explain any two of the following metal properties: Toughness, Describe two areas where robotic technology is used in health care.",
+    questionText: "Toughness, Describe two areas where robotic technology is used in health care.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.", marks: 6, accepts: ["Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."] },
@@ -1162,13 +1182,45 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2023-ol-q3-d-ii", topicId: "eng-3-8", conceptId: "ductility-ways-exoskeleton-suits-can-help",
-    section: "A", questionRef: "2023 OL Q3(d)(ii)",
-    stem: "exoskeleton suit",
-    questionText: "Explain any two of the following metal properties: Ductility, State two ways in which exoskeleton suits can help the recovery process.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    id: "eng-2023-ol-q4-a-i", topicId: "eng-2-10", conceptId: "common-gases-used-gas-welding",
+    section: "A", questionRef: "2023 OL Q4(a)(i)",
+    stem: ". (50 marks)",
+    questionText: "Name two common gases used in gas welding.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Exoskeleton suits can help people with spinal cord injuries gain some mobility, cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management", marks: 6, accepts: ["Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."] },
+    { id: "r-1", kind: "point", verbatim: "Oxygen", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Acetylene", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q4-a-ii", topicId: "eng-2-10", conceptId: "types-flame-produced-when-gas-welding",
+    section: "A", questionRef: "2023 OL Q4(a)(ii)",
+    stem: ". (50 marks)",
+    questionText: "Name two types of flame produced when gas welding.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oxidising flame", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Neutral flame", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Carburising flame", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q4-a-iii", topicId: "eng-2-10", conceptId: "safety-precautions-should-be-followed-when",
+    section: "A", questionRef: "2023 OL Q4(a)(iii)",
+    stem: ". (50 marks)",
+    questionText: "State two safety precautions that should be followed when gas welding.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The gas hoses are checked for damage before starting the welding process.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Correct PPE is worn while welding.", marks: null },
     ],
   } as SecCard,
   {
@@ -1178,6 +1230,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q4-b", topicId: "eng-2-10", conceptId: "function-any-following-manual-metal-arc",
     section: "A", questionRef: "2023 OL Q4(b)",
+    stem: ". (50 marks)",
     questionText: "State the function of any three of the following in manual metal arc welding: (i) Welding plant, (ii) Chipping hammer, (iii) Leather apron, (iv) Electrode holder.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -1218,10 +1271,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Resistance / Spot welding.", marks: 5 },
     ],
     questionFigure: {
-          "candId": "engineering-2023-OL-paper-q4civ-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4civ-art.png",
+          "candId": "engineering-2023-OL-paper-q4ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4ci-art.png",
           "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
-          "alt": "The table or diagram printed with 2023 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 OL Q4(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -1239,10 +1292,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The removal of grease and corrosion from joints before soldering ensures that the solder will adhere / join to the surface of the metals when the correct heat is applied. This will aid in a successful soldered joint.", marks: 5 },
     ],
     questionFigure: {
-          "candId": "engineering-2023-OL-paper-q4civ-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4civ-art.png",
+          "candId": "engineering-2023-OL-paper-q4ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4ci-art.png",
           "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
-          "alt": "The table or diagram printed with 2023 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "alt": "The table or diagram printed with 2023 OL Q4(c)(i), as the State Examinations Commission set it.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -1276,11 +1329,33 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q4-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-working",
     section: "A", questionRef: "2023 OL Q4(d)",
+    stem: ". (50 marks)",
     questionText: "State two safety precautions to be observed when working with adhesives.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Wear suitable gloves to avoid the adhesives coming in contact with your skin.", marks: 8, accepts: ["Work in a well-ventilated area as adhesives can produce harmful fumes."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q5-a-i", topicId: "eng-1-9", conceptId: "plastic-manufacturing-processes-shown-b-c",
+    section: "A", questionRef: "2023 OL Q5(a)(i)",
+    questionText: "Name the three plastic manufacturing processes shown at A, B and C.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Blow moulding B – Vacuum forming C – Injection moulding", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-OL-paper-q5ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q5ai-art.png",
+          "srcHash": "9f3a2880bffe96d94b93b3b0fc047967",
+          "alt": "The table or diagram printed with 2023 OL Q5(a)(i), as the State Examinations Commission set it. It reads: A, B, C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1297,8 +1372,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "engineering-2023-OL-paper-q5ai-art",
           "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q5ai-art.png",
-          "srcHash": "c78868242587bbc4cf0f5d9ab47c610a",
-          "alt": "The table or diagram printed with 2023 OL Question 5(a)(i), as the State Examinations Commission set it.",
+          "srcHash": "9f3a2880bffe96d94b93b3b0fc047967",
+          "alt": "The table or diagram printed with 2023 OL Q5(a)(i), as the State Examinations Commission set it. It reads: A, B, C.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -1310,6 +1385,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q5-b", topicId: "eng-1-9", conceptId: "relation-plastic-technology-any-following-elastic",
     section: "A", questionRef: "2023 OL Q5(b)",
+    stem: ". (50 marks)",
     questionText: "In relation to plastic technology, describe any three of the following: (i) Elastic memory; (ii) Thermosetting plastics; (iii) Plastic dip coating; (iv) Thermoplastic.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -1344,6 +1420,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q5-d", topicId: "eng-1-9", conceptId: "safety-precautions-be-observed-when-working",
     section: "A", questionRef: "2023 OL Q5(d)",
+    stem: ". (50 marks)",
     questionText: "State two safety precautions to be observed when working with hot plastics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1355,8 +1432,30 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q6-a", topicId: "eng-2-11", conceptId: "any-lathe-parts-shown-b-c",
+    section: "A", questionRef: "2023 OL Q6(a)",
+    questionText: "Name any three of the lathe parts shown at A, B, C and D.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Four jaw chuck B – Tailstock C – Emergency stop button D – Revolving dead centre", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-OL-paper-q6a-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q6a-art.png",
+          "srcHash": "368582219f288ccab00956b4b5a10c71",
+          "alt": "The table or diagram printed with 2023 OL Q6(a), as the State Examinations Commission set it. It reads: A, B, C, D.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q6-b", topicId: "eng-2-11", conceptId: "any-following-relation-machining-clearance-angle",
     section: "A", questionRef: "2023 OL Q6(b)",
+    stem: ". (50 marks)",
     questionText: "Explain any three of the following in relation to machining: (i) Clearance angle, (ii) Spindle speed, (iii) Rake angle, (iv) Feed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
@@ -1398,6 +1497,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q7-a", topicId: "eng-3-12", conceptId: "any-following-terms-relation-limits-fits",
     section: "A", questionRef: "2023 OL Q7(a)",
+    stem: ". (50 marks)",
     questionText: "Explain any two of the following terms in relation to limits and fits: (i) Clearance fit, (ii) Upper limit, (iii) Transition fit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [

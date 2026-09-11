@@ -53,6 +53,9 @@ QHEAD = re.compile(r'^\s*Question\s+(\d{1,2})\.?\s*(?:\(\s*\d{1,3}\s*marks?\s*\)
 # The page's own furniture, printed on every page and never part of an ask.
 HEADER = 120.0
 FOOTER = 60.0
+# How far under or over the artwork a line may sit and still be a label on it:
+# one line of the papers' 12pt body, plus the leading.
+LABEL_GAP = 16.0
 
 
 def lines(page):
@@ -71,6 +74,13 @@ def artwork(page):
 
     Engineering draws as often as it photographs -- a furnace in section, a
     welded joint, a mechanism -- and a drawing has no image rect at all.
+
+    The HEADER floor is what keeps the SEC logo and the barcode strip out, and
+    it is measured from the QUESTION HEAD where the page prints one. 2023 OL
+    sets "Question 5. (50 marks)" at y26 and the four plastic-process drawings
+    from y91, so a fixed floor at y120 threw the whole picture away and Q5(a)
+    had nothing to cut -- while the bound crop, made by an earlier pass,
+    carries the drawings without the A, B and C printed under them.
     """
     out = []
     for im in page.get_images(full=True):
@@ -80,8 +90,10 @@ def artwork(page):
         r = d['rect']
         if r.width > 18 and r.height > 18:
             out.append((r.x0, r.y0, r.x1, r.y1))
+    heads = question_spans(page)
+    floor = min(heads.values())[0] if heads else HEADER
     return [a for a in out
-            if a[1] > HEADER and a[3] < page.rect.height - FOOTER
+            if a[1] > floor and a[3] < page.rect.height - FOOTER
             and a[2] - a[0] > 24 and a[3] - a[1] > 24]
 
 
@@ -243,7 +255,36 @@ def _crop(path, q, letter, roman):
             for _ in range(6):
                 grew = False
                 for (bx0, by0, bx1, by1), t in lines(page):
-                    if bx1 <= x0 or bx0 >= x1 or by1 <= y0 or by0 >= y1:
+                    # A line that OVERLAPS the box, or one printed directly
+                    # under or over it and horizontally inside it -- which is
+                    # what a label on a picture looks like. The union of the
+                    # artwork "with the labels printed on it" is what this
+                    # tool says it cuts, and an overlap test alone does not
+                    # reach them: 2023 OL sets the four plastic-process
+                    # drawings from y91 to y196 and the A, B and C that name
+                    # them at y208, so the crop carried the pictures and not
+                    # the letters the ask calls them by, and 2023 HL's polymer
+                    # recycling wheel lost "3. shred" the same way.
+                    # Short, because a LABEL is short and an ask is a
+                    # sentence. Without the length test the window reaches the
+                    # next question: "Name the transformation boundary lines
+                    # A, B and C shown." is printed eleven points under the
+                    # iron-carbon diagram it is about, and pulling it in cost
+                    # that diagram its crop altogether.
+                    label = ' '.join(t.split())
+                    below = (x0 - 1 <= bx0 and bx1 <= x1 + 1
+                             and by0 <= y1 + LABEL_GAP
+                             and by1 >= y0 - LABEL_GAP
+                             and len(label) <= 30 and len(label.split()) <= 5
+                             # ... and not the TAIL of a sentence that is
+                             # still going: "manufacture of each product:" is
+                             # eleven points above the four plastic products
+                             # of 2023 OL Q5(c), short enough to look like a
+                             # label, and taking it pulled the rest of the ask
+                             # in behind it. A label ends on nothing.
+                             and not re.search(r'[:,;]$', label))
+                    if not below and (bx1 <= x0 or bx0 >= x1
+                                      or by1 <= y0 or by0 >= y1):
                         continue
                     if x0 - 1 <= bx0 and bx1 <= x1 + 1 \
                             and y0 - 1 <= by0 and by1 <= y1 + 1:
@@ -341,16 +382,23 @@ REJECTED = {
     # The same picture, which passes to the sibling when (i) is refused. A
     # rejection has to name every part that would inherit it.
     (2022, 'ol', 6, 'c', 'ii'): 'two pictures: knurling and a casting',
+    # The running shoe is whole and its caption is not: the red arrow enters
+    # the crop from below and the "polyurethane sole" it points at is outside.
+    (2023, 'hl', 7, 'a', 'i'): 'its caption is outside, the arrow points at nothing',
+    (2023, 'hl', 7, 'a', 'ii'): 'its caption is outside, the arrow points at nothing',
+    (2023, 'hl', 7, 'a', 'iii'): 'its caption is outside, the arrow points at nothing',
     (2023, 'hl', 8, 'b', 'i'): 'clips the word "machine" beneath it',
+    # The same crop, reached through the sibling romans that share (b)'s band.
+    # It is the tapped component (b)(i) asks about, and (b)(iii) to (b)(v) ask
+    # about milling machines, additive manufacture and carbide tips.
+    (2023, 'hl', 8, 'b', 'iii'): 'clips "machine", and is (b)(i)\'s component',
+    (2023, 'hl', 8, 'b', 'iv'): 'clips "machine", and is (b)(i)\'s component',
+    (2023, 'hl', 8, 'b', 'v'): 'clips "machine", and is (b)(i)\'s component',
     # An ask with two OR branches whose crop serves only the second.
     (2024, 'hl', 8, 'c', 'i'): 'shows the CNC branch, not the lubrication one',
     (2024, 'ol', 5, 'a', 'i'): 'one of the items the ask says are shown',
     (2024, 'ol', 6, 'c', 'i'): 'shows the CNC branch, not the lathe part',
     (2025, 'ol', 4, 'c', 'i'): 'shows tool A, and (i) asks about the R-clip',
-    # A recycling process drawn as a wheel, with its last stages printed
-    # below the artwork's own box and clipped away: the ask says "describe
-    # each of the stages" and the crop is missing one.
-    (2023, 'hl', 7, 'c', 'ii'): 'a stage of the process is clipped off',
     (2025, 'hl', 5, 'c', 'i'): 'the last stages of the process are clipped off',
     (2025, 'hl', 5, 'c', 'ii'): 'the last stages of the process are clipped off',
     # A second pass over a much wider worklist. Every crop below was opened
@@ -376,9 +424,10 @@ REJECTED = {
     # And the ones already rejected once, reappearing under a sibling roman
     # now that the worklist is wider:
     (2022, 'ol', 6, 'c', 'iii'): 'two pictures: knurling and a casting',
-    (2023, 'hl', 7, 'c', 'i'): 'a stage of the process is clipped off',
     (2023, 'hl', 8, 'b', 'ii'): 'clips the word "machine" beneath it',
     (2023, 'ol', 6, 'c', 'i'): 'the 3D printer branch, not the thumbscrew',
+    (2023, 'ol', 6, 'c', 'ii'): 'the 3D printer branch, not the thumbscrew',
+    (2023, 'ol', 6, 'c', 'iii'): 'the 3D printer branch, not the thumbscrew',
     (2024, 'ol', 5, 'a', 'ii'): 'one of the items the ask says are shown',
     (2025, 'hl', 5, 'c', 'iii'): 'the last stages of the process are clipped off',
 }
@@ -432,18 +481,47 @@ def key_for(year, level, q, letter, roman):
             + (letter or '') + (roman or '') + '-art')
 
 
+def describe(year, level, q, letter, roman, path, page, rect):
+    """What this crop says to a screen reader.
+
+    Names the part and lists the words the crop actually contains, which is
+    all that can be said about a picture without describing it from a guess --
+    question_art.describe() says the same thing the same way, and every crop
+    is opened and looked at before it reaches a catalogue.
+    """
+    ref = (f'{year} {level.upper()} Q{q}'
+           + (f'({letter})' if letter else '') + (f'({roman})' if roman else ''))
+    text = (f'The table or diagram printed with {ref}, as the State '
+            f'Examinations Commission set it.')
+    labels = [' '.join(t.split()) for t in crop_text(path, page, rect).split('\n')
+              if t.strip()]
+    if labels:
+        text += ' It reads: ' + ', '.join(labels[:14])[:400] + '.'
+    return text
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--write', action='store_true',
                     help='render the crops to disk for review')
     ap.add_argument('--dir', default=os.path.join(ROOT, 'figures-review'))
+    ap.add_argument('--catalogue',
+                    help='write the crops where bind-figures.mjs reads them '
+                         'and print its catalogue, for publishing')
+    ap.add_argument('--year', type=int, help='one sitting only')
+    ap.add_argument('--level', help='one sitting only')
     args = ap.parse_args()
 
     if args.write:
         os.makedirs(args.dir, exist_ok=True)
     cut, missed, refused = [], [], []
     seen = {}
+    catalogue = []
     for year, level, q, letter, roman, ask in worklist():
+        if args.year and year != args.year:
+            continue
+        if args.level and level != args.level:
+            continue
         path = os.path.join(PAPERS, f'{year}-{level}-paper.pdf')
         if not os.path.exists(path):
             continue
@@ -473,6 +551,25 @@ def main():
             with pymupdf.open(path) as doc:
                 pix = doc[page].get_pixmap(clip=pymupdf.Rect(*rect), dpi=200)
                 pix.save(os.path.join(args.dir, f'{key}.png'))
+        if args.catalogue:
+            # Where bind-figures.mjs looks for the bytes it publishes and
+            # hashes. Nothing about the path is typed on a card: the build
+            # resolves a card's figure by KEY through the manifest.
+            d = os.path.join(ROOT, 'exam-papers', 'engineering', 'figures',
+                             f'{year}-{level}')
+            os.makedirs(d, exist_ok=True)
+            with pymupdf.open(path) as doc:
+                doc[page].get_pixmap(clip=pymupdf.Rect(*rect), dpi=200).save(
+                    os.path.join(d, f'{key}.png'))
+            catalogue.append({
+                'file': f'{key}.png', 'kind': 'figure', 'truncated': False,
+                'questionRef': (f'{year} {level.upper()} Q{q}'
+                                + (f'({letter})' if letter else '')
+                                + (f'({roman})' if roman else '')),
+                'lettersVisible': letters_named(ask),
+                'description': describe(year, level, q, letter, roman,
+                                        path, page, rect),
+            })
         cut.append((year, level, q, letter, roman, key, rect, False))
 
     fresh = [c for c in cut if not c[7]]
@@ -486,6 +583,10 @@ def main():
         shared = sum(1 for x in cut if x[5] == c[5]) - 1
         print(f'   {c[0]} {c[1].upper()} Q{c[2]}{c[3] or ""}{c[4] or ""}'
               f'  {w}x{h}  {c[5]}' + (f'  (+{shared} sharing)' if shared else ''))
+    if args.catalogue:
+        with open(args.catalogue, 'w', encoding='utf-8') as fh:
+            json.dump(catalogue, fh, ensure_ascii=False, indent=1)
+        print(f'wrote {args.catalogue}: {len(catalogue)} crops')
     if args.write:
         with open(os.path.join(args.dir, 'catalogue.json'), 'w') as fh:
             json.dump([{'year': c[0], 'level': c[1], 'q': c[2], 'letter': c[3],
