@@ -73,45 +73,47 @@ export default function ChapterPreview({ id }: { id: keyof typeof CONFIG }) {
 
   return (
     <div ref={host} data-lenis-prevent data-preview-status={status}>
-      <ScaledSurface width={820} height={c.height}>
-        {visible && (
-          <iframe
-            key={attempt}
-            ref={frame}
-            title={c.title}
-            src={`/landing-demo.html?view=${c.view}`}
-            width={820}
-            height={c.height}
-            onError={() => setStatus("error")}
-            tabIndex={interactive && status === "ready" ? 0 : -1}
-            aria-hidden={interactive && status === "ready" ? undefined : true}
-            style={{
-              border: 0,
-              display: "block",
-              width: 820,
-              height: c.height,
-              background: "#fff",
-              opacity: status === "ready" ? 1 : 0,
-              pointerEvents: interactive && status === "ready" ? "auto" : "none",
-            }}
-          />
-        )}
+      <div style={{ position: "relative" }}>
+        <ScaledSurface width={820} height={c.height}>
+          {visible && (
+            <iframe
+              key={attempt}
+              ref={frame}
+              title={c.title}
+              src={`/landing-demo.html?view=${c.view}`}
+              width={820}
+              height={c.height}
+              onError={() => setStatus("error")}
+              tabIndex={interactive && status === "ready" ? 0 : -1}
+              aria-hidden={interactive && status === "ready" ? undefined : true}
+              style={{
+                border: 0,
+                display: "block",
+                width: 820,
+                height: c.height,
+                background: "#fff",
+                opacity: status === "ready" ? 1 : 0,
+                pointerEvents: interactive && status === "ready" ? "auto" : "none",
+              }}
+            />
+          )}
+        </ScaledSurface>
         {visible && status !== "ready" && (
           <div
             role={status === "error" ? "alert" : "status"}
-            style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 20, padding: 32, background: L.paper, color: L.ink, fontFamily: FONT.sans, fontSize: 22, textAlign: "center" }}
+            style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 16, padding: 16, background: L.paper, color: L.ink, fontFamily: FONT.sans, fontSize: 16, textAlign: "center" }}
           >
             <p style={{ margin: 0 }}>{status === "error" ? "This preview couldn’t load." : "Opening preview…"}</p>
             {status === "error" && (
               <button
                 type="button"
                 onClick={() => setAttempt(value => value + 1)}
-                style={{ padding: "12px 24px", border: 0, borderRadius: 999, background: L.ink, color: L.paper, fontFamily: FONT.sans, fontSize: 20, cursor: "pointer" }}
+                style={{ minHeight: 44, padding: "12px 24px", border: 0, borderRadius: 999, background: L.ink, color: L.paper, fontFamily: FONT.sans, fontSize: 14, cursor: "pointer" }}
               >Try again</button>
             )}
           </div>
         )}
-      </ScaledSurface>
+      </div>
       <div
         style={{
           display: "flex",
