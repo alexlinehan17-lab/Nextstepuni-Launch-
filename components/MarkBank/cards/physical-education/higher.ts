@@ -880,6 +880,20 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
+    id: "pe-2022-hl-q13b", topicId: "physical-education-1-24", conceptId: "pe-1-24-natalya-continued-success-modern",
+    section: "B", questionRef: "2022 HL Q13(b)",
+    questionText: "Natalya’s continued success in modern pentathlon has been helped by the sponsorship deals and scholarships that she has been rewarded with throughout her career. However, sponsorship deals often come at a cost for athletes. Outline three possible disadvantages of sponsorship for Natalya.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Time commitments", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Public image. The possibility of the sponsor exploiting the athlete", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q13ci", topicId: "physical-education-0-10", conceptId: "pe-0-10-approaches-training-outside-activities",
     section: "B", questionRef: "2022 HL Q13(c)(i)",
     questionText: "Identify two approaches to training outside of her activities/events that Natalya could use to enhance her athletic performance.",
@@ -929,6 +943,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Buy specific equipment for the PE department such as blindfolds, balls with bells etc; Bring in the Irish Wheelchair association or similar to run education and practical workshops with students", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Ensure that the PE and sports facilities are accessible by all students; Provide specific APA training to PE teachers and those who run extra-curricular activity; Introduce an APA scheme into the schools junior cycle PE plan", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
+    id: "pe-2022-hl-q14d", topicId: "physical-education-0-2", conceptId: "pe-0-2-sport-just-about-maximising",
+    section: "C", questionRef: "2022 HL Q14(d)",
+    questionText: "Sport is not just about maximising the performance of the athlete, it is also about minimising the energy that is lost as we run, swim or slide through the fluids around us. Engineers now know that understanding the forces that dominate a particular sport is crucial to performing well. Examine how each of Newton’s three laws of motion apply to performance in a physical activity of your choice. Physical Activity",
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 4 marks","answer":3,"ofParts":5,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Examines how each of Newton’s three laws of motion apply to performance in a chosen physical activity", marks: 12, contextNote: "3 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Law 1- The law of inertia. An object at rest will remain so and a body in motion will remain in motion with a velocity unless acted upon by an external force","Law 2- The law of acceleration","Force = mass times acceleration","Law 3- The law of reaction","Every action has an equal and opposite reaction"]} },
     ],
   } as SecCard,
   {
@@ -1001,6 +1028,19 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Anabolic Agents", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Diuretics", marks: null, openList: true },
     { id: "r-5", kind: "point", verbatim: "Peptide hormones", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
+    id: "pe-2022-hl-q16d", topicId: "physical-education-0-12", conceptId: "pe-0-12-most-effective-develop-natural",
+    section: "C", questionRef: "2022 HL Q16(d)",
+    questionText: "The most effective way to develop your natural sports ability and achieve your fitness goal is through efficient training combined with optimal nutrition. Examine three nutritional considerations for designing a dietary plan for an athlete in a named physical activity. You are not permitted to examine the use of sports supplements as part of your answer. Physical Activity",
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 4 marks","answer":3,"ofParts":7,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Nutritional considerations may include", marks: 12, contextNote: "3 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Carbohydrate intake","Protein intake","Micronutrient considerations","The timing of nutrient intake","The type of activity that the athlete competes in","The goals of the athlete","Hydration considerations"]} },
     ],
   } as SecCard,
   {
@@ -1207,6 +1247,22 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Physical Education 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
+    id: "pe-2023-hl-q18b", topicId: "physical-education-1-6", conceptId: "pe-1-6-august-football-association-ireland",
+    section: "C", questionRef: "2023 HL Q18(b)",
+    questionText: "In August 2021 the Football Association of Ireland (FAI) announced that there would be equal pay for players representing the Ireland senior women’s and Ireland senior men’s national football (soccer) teams.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Respect", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Integrity", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Fairness", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Equity", marks: null, openList: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",

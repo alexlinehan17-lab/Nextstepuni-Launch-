@@ -3300,6 +3300,43 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2022-hl-q13b",
+  "topicId": "physical-education-1-24",
+  "conceptId": "pe-1-24-natalya-continued-success-modern",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2022 HL Q13(b)",
+  "questionText": "Natalya’s continued success in modern pentathlon has been helped by the sponsorship deals and scholarships that she has been rewarded with throughout her career. However, sponsorship deals often come at a cost for athletes. Outline three possible disadvantages of sponsorship for Natalya.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Time commitments",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Public image. The possibility of the sponsor exploiting the athlete",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2022-hl-q13ci",
   "topicId": "physical-education-0-10",
   "conceptId": "pe-0-10-approaches-training-outside-activities",
@@ -3469,6 +3506,50 @@
     "marks": null,
     "openList": true,
     "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-hl-q14d",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-sport-just-about-maximising",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2022 HL Q14(d)",
+  "questionText": "Sport is not just about maximising the performance of the athlete, it is also about minimising the energy that is lost as we run, swim or slide through the fluids around us. Engineers now know that understanding the forces that dominate a particular sport is crucial to performing well. Examine how each of Newton’s three laws of motion apply to performance in a physical activity of your choice. Physical Activity",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4 marks",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Examines how each of Newton’s three laws of motion apply to performance in a chosen physical activity",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "3 answers at 4 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Law 1- The law of inertia. An object at rest will remain so and a body in motion will remain in motion with a velocity unless acted upon by an external force",
+      "Law 2- The law of acceleration",
+      "Force = mass times acceleration",
+      "Law 3- The law of reaction",
+      "Every action has an equal and opposite reaction"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -3665,6 +3746,52 @@
     "marks": null,
     "openList": true,
     "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-hl-q16d",
+  "topicId": "physical-education-0-12",
+  "conceptId": "pe-0-12-most-effective-develop-natural",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2022 HL Q16(d)",
+  "questionText": "The most effective way to develop your natural sports ability and achieve your fitness goal is through efficient training combined with optimal nutrition. Examine three nutritional considerations for designing a dietary plan for an athlete in a named physical activity. You are not permitted to examine the use of sports supplements as part of your answer. Physical Activity",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4 marks",
+   "answer": 3,
+   "ofParts": 7,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Nutritional considerations may include",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "3 answers at 4 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Carbohydrate intake",
+      "Protein intake",
+      "Micronutrient considerations",
+      "The timing of nutrient intake",
+      "The type of activity that the athlete competes in",
+      "The goals of the athlete",
+      "Hydration considerations"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -4301,6 +4428,91 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2022-ol-q15di",
+  "topicId": "physical-education-0-1",
+  "conceptId": "pe-0-1-characteristics-skilled-performance",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2022 OL Q15(d)(i)",
+  "questionText": "Explain two characteristics of a skilled performance.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4 marks",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Good explanation",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "2 answers at 4 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Kinaesthetic awareness",
+      "consistency",
+      "anticipation",
+      "technical execution & other correct"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-ol-q16di",
+  "topicId": "physical-education-2-3",
+  "conceptId": "pe-2-3-examples-sports-events-could",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2022 OL Q16(d)(i)",
+  "questionText": "Give two examples of sports events that could attract tourists to Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 2 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 2
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Appropriate event given",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "2 answers at 2 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Example Galway races",
+      "Irish open (Golf)",
+      "Red Bull Cliff Diving"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2022-ol-q17aiii",
   "topicId": "physical-education-0-16",
   "conceptId": "pe-0-16-suggest-ways-prevent-sports",
@@ -4682,6 +4894,59 @@
     "id": "r-4",
     "kind": "point",
     "verbatim": "Short intervals for conditioning",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2023-hl-q18b",
+  "topicId": "physical-education-1-6",
+  "conceptId": "pe-1-6-august-football-association-ireland",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2023 HL Q18(b)",
+  "questionText": "In August 2021 the Football Association of Ireland (FAI) announced that there would be equal pay for players representing the Ireland senior women’s and Ireland senior men’s national football (soccer) teams.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Respect",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Integrity",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Fairness",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Equity",
     "marks": null,
     "openList": true,
     "contextNote": ""

@@ -55,6 +55,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 import pe_lib as L                                              # noqa: E402
 import pe_scheme as S                                           # noqa: E402
 import pe_tables as T                                           # noqa: E402
+from pe_lib import ASK_OPENER, ask_text                         # noqa: E402
 from pe_topics import concept_for, topic_for                    # noqa: E402
 from paper import Paper                                         # noqa: E402
 from markbank_authoring import anyN, make_audit, make_card, point  # noqa: E402
@@ -70,22 +71,6 @@ MAX_OPTION_CHARS = 700
 card = make_card('physical-education', default_section='A')
 audit = make_audit(HARD_OPTION_CAP)
 
-# The paper's own page furniture, printed inside a stem.
-STEM_JUNK = re.compile(
-    r'\s*(?:This question continues on the next page\.?'
-    r'|Space for extra work.*$|Do not write on this page.*$'
-    r'|Section\s+[ABC]\b.*$|\(\d{1,3}\s*marks?\)'
-    r'|Indicate clearly the question number.*$)', re.I)
-# A stem that OPENS with the paper's own instruction is the ask itself: the
-# walker keeps the stimulus sentence as the part's text and files the
-# imperative printed under it as the stem, so 106 of the 741 leaf asks print
-# their verb one level away from their own text.
-ASK_OPENER = re.compile(
-    r'^(what|why|how|when|where|which|who|name|state|give|list|define|explain'
-    r'|describe|identify|suggest|outline|discuss|examine|analyse|compare'
-    r'|evaluate|justify|complete|write|select|choose|tick|put|match|fill'
-    r'|apply|label|comment|account|distinguish|calculate|draw|using|from the)\b',
-    re.I)
 # An ask the candidate cannot answer without the figure, case study, table or
 # printed list beside it. Held rather than shipped blind: a card that quotes
 # "Make two statements about doping in cycling based on information presented
@@ -170,35 +155,14 @@ def paper_for(year, level):
     return _PAPERS[(year, level)]
 
 
-def ask_text(year, level, key, printed):
-    """The whole printed ask, in the paper's own words.
-
-    The census keeps what the walker filed under the leaf's own marker. Where
-    that is the stimulus and the imperative was filed one level up — which is
-    what the walker does when the SEC prints "Physical Education is a concept
-    of physical activity." and then "Explain Physical Education in this
-    context." as two blocks — the instruction is put back on the end, in the
-    order the page prints it. Only an instruction is ever added: a stem that
-    does not OPEN with one of the paper's own ask verbs is a table heading, a
-    figure caption or a continuation notice, and adding one of those would
-    make the question worse rather than whole.
-    """
-    text = tidy(STEM_JUNK.sub(' ', printed))
-    if ASK_OPENER.match(text):
-        return text
-    stem = tidy(STEM_JUNK.sub(' ', paper_for(year, level).stem(key[0], key[1]) or ''))
-    if stem and ASK_OPENER.match(stem) and stem.lower() not in text.lower():
-        return tidy(f'{text} {stem}')
-    return text
-
-
 # ------------------------------------------------------------ the source ----
 # An ask that points at a printed figure, table or case study is not refused
 # for pointing at one: the SEC's own page is in the Paper Trail index, and
 # card-source-bindings.json attaches it so the student opens the exact
 # examination page the question was set on. What still cannot be carded is an
 # answer the SCHEME does not state in words — a tick in a column, or the other
-# half of a matching table — and those keep their own named buckets.
+# half of a matching table the columns reader cannot reach — and those keep
+# their own named buckets.
 _PAGES = {}
 
 
@@ -218,8 +182,8 @@ def _flat(text):
 def source_pages(year, level, qtext):
     """The paper's own page(s) this ask and its source are printed on.
 
-    One-based, as build-deck requires, and found by searching the paper for the
-    ask's own words and for every figure it names — never guessed from the
+    One-based, as build-deck requires, and found by searching the paper for
+    the ask's own words and for every figure it names — never guessed from the
     question number, which is a page apart from its figure often enough to put
     the wrong page in front of a student.
     """
@@ -228,7 +192,7 @@ def source_pages(year, level, qtext):
     found = []
     if wanted:
         for i, text in enumerate(pages):
-            if wanted and wanted in _flat(text):
+            if wanted in _flat(text):
                 found.append(i + 1)
                 break
     for label in re.findall(r'\bFigure\s*\d+\b', qtext, re.I):
@@ -431,7 +395,7 @@ def build():
         order = [key for key, _label, _text in printed]
         for key, label, _text in unpaired:
             refusals['no scheme part prices this ask'].append(
-                (year, level, label, ''))
+                (year, level, ref_for(year, level, key), label))
 
         # One card per SCHEME PART, not per leaf: where the scheme prices a
         # letter the paper numbers romans under, the ask is inside that part
