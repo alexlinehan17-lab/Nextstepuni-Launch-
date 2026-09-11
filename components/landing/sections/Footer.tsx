@@ -10,7 +10,7 @@
  * the window beneath the opaque main (fx.css, .fx-floor) and shows as the
  * last section scrolls away. Everything that moves in here runs off that
  * reveal, measured by useFloorReveal: the line under the statement draws,
- * the caption rides it, 'the end' is written at its right end, the statement
+ * the brand caption sits at its right end, the statement
  * rises once the sheet has lifted a little, and the character's footer slot
  * only exists once the sheet has cleared the line — so he lands on it the
  * moment the floor is there. The page's own view-timeline rules would stick
@@ -24,7 +24,6 @@ import { LineRise } from '../motion';
 import { StarguySlot, useTravellerLive } from '../starguy/Traveller';
 import { FONT, L } from '../theme';
 import { FooterLine } from '../fx/FooterLine';
-import { Note } from '../fx/Note';
 import { useFloorReveal } from '../fx/floor';
 import '../fx/fx.css';
 
@@ -36,10 +35,9 @@ const Footer: React.FC = () => {
   // While the traveller is live his slot has no width until the sheet has cleared the line, so he cannot arrive early.
   const slotWidth = live && !cleared ? 0 : 56;
   return (
-    <footer ref={ref} className="fx-floor" style={{ overflow: 'hidden' }}>
-      <span aria-hidden="true" className="fx-floor-rule" />
+    <footer id="landing-footer" ref={ref} className="fx-floor" style={{ overflow: 'hidden' }}>
       <Container className="pt-14 md:pt-20">
-        <div style={{ position: 'relative' }}>
+        <div className="landing-footer-statement-row">
           {/* items-baseline: the image's bottom edge is its flex baseline, so the star lands on the word's baseline. */}
           <LineRise
             as="p"
@@ -54,10 +52,9 @@ const Footer: React.FC = () => {
               </span>
             }
           />
-          {/* 'the end', written above the right end of the line as the sheet clears it. */}
-          <Note id="end" mode="progress" progress={progress} from={0.5} to={1} className="fx-note--end" style={{ position: 'absolute', right: 0, bottom: 0, width: 96 }} />
+          <p className="landing-footer-caption">{COPY.footer.caption}</p>
         </div>
-        <FooterLine ref={lineRef} progress={progress} caption={COPY.footer.caption} />
+        <FooterLine ref={lineRef} progress={progress} />
         {/*
           The wordmark as a section break. Sized against its own container
           (container query units, not the viewport): DM Sans 700 'nextstepuni' at

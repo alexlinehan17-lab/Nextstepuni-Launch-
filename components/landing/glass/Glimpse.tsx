@@ -14,17 +14,13 @@ import { useInView } from 'framer-motion';
 import type { ChapterId } from '../copy';
 import type { GlassProps } from './GlassStage';
 import MarkBankGlass from './MarkBankGlass';
-import PaperTrailGlass from './PaperTrailGlass';
 import AtlasGlass from './AtlasGlass';
 import PlannerGlass from './PlannerGlass';
-import FutureFinderGlass from './FutureFinderGlass';
 
 const GLIMPSE: Partial<Record<ChapterId, { Glass: React.FC<GlassProps>; sub: string; height: number }>> = {
   markbank: { Glass: MarkBankGlass, sub: 'Biology', height: 640 },
-  papertrail: { Glass: PaperTrailGlass, sub: '', height: 640 },
   atlas: { Glass: AtlasGlass, sub: 'biology-higher-old-course-ecology', height: 640 },
   planner: { Glass: PlannerGlass, sub: '', height: 640 },
-  launchpad: { Glass: FutureFinderGlass, sub: '', height: 640 },
 };
 
 export const hasGlimpse = (id: ChapterId): boolean => id in GLIMPSE;

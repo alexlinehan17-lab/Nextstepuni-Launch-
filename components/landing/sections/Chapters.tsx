@@ -35,6 +35,7 @@ import { Body, Button, Container, DISPLAY, Display, DropLine, Eyebrow, Frame, Ru
 import { FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
+import ChapterPreview from '../glass/ChapterPreview';
 import { Note } from '../fx/Note';
 import { isStatic } from '../fx/env';
 import { CourseFrame } from '../fx-f/CourseFrame';
@@ -181,7 +182,9 @@ const Capture: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
   const src = FRAMES[chapter.id];
   return (
     <Frame title={chapter.frameLabel} meta={chapter.numeral}>
-      {src
+      {(['papertrail', 'launchpad', 'lab'] as string[]).includes(chapter.id)
+        ? <ChapterPreview id={chapter.id as 'papertrail' | 'launchpad' | 'lab'} />
+        : src
         ? <img src={src} alt={chapter.frameLabel} loading="lazy" style={{ display: 'block', width: '100%', height: 'auto' }} />
         : hasGlimpse(chapter.id) ? <LiveGlimpse id={chapter.id} /> : (
           <div

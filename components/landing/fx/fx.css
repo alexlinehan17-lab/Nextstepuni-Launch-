@@ -145,13 +145,9 @@
 .landing-page > footer.fx-floor { position: sticky; top: 0; bottom: 0; z-index: 0; display: flex; flex-direction: column; justify-content: flex-end; min-height: 52vh; }
 .fx-floor-rule { position: absolute; left: 0; right: 0; top: 0; height: 1.5px; background: #1A1A1A; display: block; }
 
-/* ── The caption that travels the drawn line ───────────────────────────────
-   The footer's hairline is an SVG path the statement stands on; a DM Sans
-   caption rides it (textPath, startOffset from the reveal progress) and the
-   line itself is drawn by the same progress. */
-.fx-line { display: block; width: 100%; height: 64px; overflow: visible; }
+/* The drawn footer baseline is also Star Guy’s landing surface. */
+.fx-line { display: block; width: 100%; height: 28px; overflow: visible; }
 .fx-line-path { fill: none; stroke: #1A1A1A; stroke-width: 1; vector-effect: non-scaling-stroke; }
-.fx-line-caption { font-family: 'DM Sans', system-ui, sans-serif; font-weight: 500; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; fill: #766A5F; }
 
 /* The question sheet's columns: figure beside the parts, stacked on phones. */
 .fx-sheet-grid { display: grid; grid-template-columns: minmax(120px, 28%) 1fr; gap: 0 22px; align-items: start; margin-top: 4px; }
@@ -164,4 +160,3 @@
   .fx-sheet-fig img { max-height: 200px; margin: 0 auto 8px; width: auto; }
 }
 /* A phone's line is shorter than the caption at 11px; one step down and it fits from its resting offset. */
-@media (max-width: 639px) { .fx-line-caption { font-size: 9.5px; letter-spacing: 0.05em; } }
