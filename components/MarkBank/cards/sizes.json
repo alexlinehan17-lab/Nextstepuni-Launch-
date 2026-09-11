@@ -56,8 +56,8 @@
   "ordinary": 127
  },
  "engineering": {
-  "higher": 357,
-  "ordinary": 193
+  "higher": 313,
+  "ordinary": 153
  },
  "religious-education": {
   "higher": 135,
@@ -79,8 +79,8 @@
   "ordinary": 150
  },
  "applied-maths": {
-  "higher": 170,
-  "ordinary": 209
+  "higher": 136,
+  "ordinary": 147
  },
  "german": {
   "higher": 111,
@@ -188,6 +188,6 @@
   "ordinary": 96
  },
  "maltese": {
-  "higher": 29
+  "higher": 41
  }
 }

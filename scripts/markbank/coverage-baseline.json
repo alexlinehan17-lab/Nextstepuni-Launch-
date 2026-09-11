@@ -30,19 +30,19 @@
     "refsHash": "2ecf53681016b22d"
   },
   "applied-maths": {
-    "cards": 379,
-    "contentHash": "d38030ada1a67a2e",
-    "coveragePct": 88.8,
-    "covered": 390,
+    "cards": 283,
+    "contentHash": "251e40bade26da8f",
+    "coveragePct": 69.9,
+    "covered": 296,
     "excluded": 52,
     "leaves": 498,
-    "open": 56,
+    "open": 150,
     "orphans": 0,
     "papers": {
       "count": 10,
       "hash": "878e72543b3b249c"
     },
-    "refsHash": "b34f1949475a28ac"
+    "refsHash": "9dbec610500d3660"
   },
   "arabic": {
     "cards": 250,
@@ -270,19 +270,19 @@
     "refsHash": "ffceb66a16576771"
   },
   "engineering": {
-    "cards": 550,
-    "contentHash": "f0d93e1d26cc0acf",
-    "coveragePct": 82.7,
-    "covered": 675,
+    "cards": 466,
+    "contentHash": "2e63624d137d2218",
+    "coveragePct": 72.6,
+    "covered": 585,
     "excluded": 0,
-    "leaves": 816,
-    "open": 141,
+    "leaves": 806,
+    "open": 221,
     "orphans": 0,
     "papers": {
       "count": 10,
       "hash": "d6f8e4ccadef7bbf"
     },
-    "refsHash": "445743765e61606c"
+    "refsHash": "99445e531f46b857"
   },
   "english": {
     "cards": 650,
@@ -525,19 +525,19 @@
     "refsHash": "15602894c57e4cf0"
   },
   "maltese": {
-    "cards": 29,
-    "contentHash": "30ba73ce24958549",
-    "coveragePct": 73.7,
-    "covered": 29,
-    "excluded": 27,
+    "cards": 41,
+    "contentHash": "1fa1b0f203545ade",
+    "coveragePct": 77.6,
+    "covered": 41,
+    "excluded": 18,
     "leaves": 76,
-    "open": 20,
+    "open": 17,
     "orphans": 0,
     "papers": {
       "count": 6,
       "hash": "33e3be70d6c6fac1"
     },
-    "refsHash": "528ec21bd8e43b8b"
+    "refsHash": "a512e7ef0262e588"
   },
   "mandarin-chinese": {
     "cards": 201,
