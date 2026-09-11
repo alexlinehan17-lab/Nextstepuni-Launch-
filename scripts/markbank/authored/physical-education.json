@@ -482,14 +482,6 @@
     "marks": null,
     "openList": true,
     "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Compared to water it has double the amount of carbohydrate (source of energy) and protein content (promotes muscle growth and repair) which help replenish fatigued muscles",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -740,7 +732,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 12,
+   "ofParts": 10,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -762,8 +754,6 @@
       "Tampering or Attempted Tampering with any Part of Doping Control",
       "Possession of a Prohibited Substance or a Prohibited Method",
       "Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method",
-      "Administration or Attempted Administration to any Athlete In",
-      "Competition of any Prohibited Substance or Prohibited Method, or Administration or Attempted Administration to any Athlete Out-of",
       "Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition",
       "Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person",
       "Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative",
@@ -1186,7 +1176,7 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Identify three other distinct Irish anti-doping rule violations (ADVR). marks + marks",
+    "verbatim": "Identify three other distinct Irish anti-doping rule violations (ADVR)",
     "marks": 4,
     "openList": true,
     "contextNote": "2 answers at 2 marks each, as the scheme prices it.",
@@ -1263,7 +1253,7 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Three post exercise recovery strategies described marks + marks",
+    "verbatim": "Three post exercise recovery strategies described",
     "marks": 8,
     "openList": true,
     "contextNote": "2 answers at 4 marks each, as the scheme prices it.",
@@ -2224,7 +2214,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 5 marks",
    "answer": 2,
-   "ofParts": 3,
+   "ofParts": 2,
    "perPart": 5
   },
   "totalMarks": 10,
@@ -2241,8 +2231,7 @@
      "perOption": 5,
      "options": [
       "She still looks to improve and raise the bar",
-      "She is resilient – she could fall three times and still win 5 +",
-      "She motivates others – Be Undeniable – she is and that’s what I want to be"
+      "She is resilient – she could fall three times and still win 5 +"
      ]
     }
    }
@@ -2543,39 +2532,6 @@
       "Fulcrum"
      ]
     }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2021-ol-q14bi",
-  "topicId": "physical-education-1-18",
-  "conceptId": "pe-1-18-many-sports-programmes",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2021 OL Q14(b)(i)",
-  "questionText": "How many of the top 10 are sports programmes?",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "4 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "7 out of 10",
-    "marks": 4,
-    "openList": true,
-    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -3033,6 +2989,35 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2021-ol-q18ci",
+  "topicId": "physical-education-1-18",
+  "conceptId": "pe-1-18-type-information-available-figure",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2021 OL Q18(c)(i)",
+  "questionText": "What type of information is available from Figure 9?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Positional analysis – information on where Aaron spent most of his time on the pitch, and the main action zones is available. Effective use of their time on the pitch – a winger should be covering the wings",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2021-ol-q2",
   "topicId": "physical-education-0-3",
   "conceptId": "pe-0-3-there-number-methods-practice",
@@ -3099,6 +3084,49 @@
     "marks": null,
     "openList": true,
     "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-ol-q7",
+  "topicId": "physical-education-1-6",
+  "conceptId": "pe-1-6-principles-ethical-practice",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2021 OL Q7",
+  "questionText": "Identify three principles of ethical practice in physical activity.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 3 marks",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Identified principle of ethical practice +",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "2 answers at 3 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "integrity",
+      "respect",
+      "fairness",
+      "equity"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -3729,7 +3757,7 @@
    "kind": "bestNofParts",
    "notation": "3 x 4 marks",
    "answer": 3,
-   "ofParts": 7,
+   "ofParts": 6,
    "perPart": 4
   },
   "totalMarks": 12,
@@ -3749,7 +3777,6 @@
       "Protein intake",
       "Micronutrient considerations",
       "The timing of nutrient intake",
-      "The type of activity that the athlete competes in",
       "The goals of the athlete",
       "Hydration considerations"
      ]

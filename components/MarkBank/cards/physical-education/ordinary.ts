@@ -93,9 +93,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2021-ol-q13a", topicId: "physical-education-0-1", conceptId: "pe-0-1-characteristics-does-simone-biles",
     section: "B", questionRef: "2021 OL Q13(a)",
     questionText: "What characteristics does Simone Biles display, that Rhys McClenaghan admires?",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5 marks","answer":2,"ofParts":3,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 5 marks","answer":2,"ofParts":2,"perPart":5}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "She still looks to improve and raise the bar", marks: 10, contextNote: "2 answers at 5 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":5,"options":["She still looks to improve and raise the bar","She is resilient – she could fall three times and still win 5 +","She motivates others – Be Undeniable – she is and that’s what I want to be"]} },
+    { id: "r-1", kind: "anyN", verbatim: "She still looks to improve and raise the bar", marks: 10, contextNote: "2 answers at 5 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":5,"options":["She still looks to improve and raise the bar","She is resilient – she could fall three times and still win 5 +"]} },
     ],
   } as SecCard,
   {
@@ -256,19 +256,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks","answer":3,"ofParts":3,"perPart":2}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Draw third class lever", marks: 6, contextNote: "3 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Draw third class lever","Load","Fulcrum"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2021-ol-q14bi", topicId: "physical-education-1-18", conceptId: "pe-1-18-many-sports-programmes",
-    section: "C", questionRef: "2021 OL Q14(b)(i)",
-    questionText: "How many of the top 10 are sports programmes?",
-    tariffModel: {"kind":"fixed","notation":"4 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "7 out of 10", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -458,6 +445,29 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2021-ol-q18ci", topicId: "physical-education-1-18", conceptId: "pe-1-18-type-information-available-figure",
+    section: "C", questionRef: "2021 OL Q18(c)(i)",
+    questionText: "What type of information is available from Figure 9?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Positional analysis – information on where Aaron spent most of his time on the pitch, and the main action zones is available. Effective use of their time on the pitch – a winger should be covering the wings", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Physical Education 2021 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Ordinary Level — © State Examinations Commission.",
     id: "pe-2021-ol-q2", topicId: "physical-education-0-3", conceptId: "pe-0-3-there-number-methods-practice",
     section: "A", questionRef: "2021 OL Q2",
     questionText: "There are a number of methods of practice that coaches can use when designing skill sessions for a physical activity. With reference to two named skills, outline a different method of practice a coach could use for each skill. Skill 1 Practice method Skill 2 Practice method",
@@ -477,6 +487,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Tick one box only for each question", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2021-ol-q7", topicId: "physical-education-1-6", conceptId: "pe-1-6-principles-ethical-practice",
+    section: "A", questionRef: "2021 OL Q7",
+    questionText: "Identify three principles of ethical practice in physical activity.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 3 marks","answer":2,"ofParts":4,"perPart":3}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Identified principle of ethical practice +", marks: 6, contextNote: "2 answers at 3 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":3,"options":["integrity","respect","fairness","equity"]} },
     ],
   } as SecCard,
   {
@@ -934,7 +957,8 @@ export const CARDS: SecCard[] = [
           "label": "OFFICIAL QUESTION PAGE",
           "title": "Official question page",
           "pages": [
-                3
+                3,
+                13
           ],
           "attribution": "SEC Physical Education 2024 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."

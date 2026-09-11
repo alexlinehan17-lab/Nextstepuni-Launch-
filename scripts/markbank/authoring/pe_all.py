@@ -128,12 +128,20 @@ NOT_A_POINT = re.compile(
     # The paper's own rubric, reprinted inside the scheme's table. It tells the
     # candidate how to record their choice and answers nothing.
     r'|(?:please )?choose from above\b|(?:put|place) a tick\b|tick the box\b'
-    r'|indicate which\b'
-    # A fragment the converter left behind when it split a wrapped line —
-    # "and incomplete", "or the same" — which is half of a band descriptor
-    # and an answer to nothing.
-    r'|(?:and|or|but|with)\b.{0,14}$)', re.I)
+    r'|indicate which\b)', re.I)
+# A fragment the converter left behind when it split a wrapped line — "and
+# incomplete", "...displayed to promote others participation in physical
+# activity enthusiastic, organised and v". Not the same thing as a rubric: a
+# rubric states nothing and its ask is EXCLUDED, while a fragment is a line
+# this reader lost half of and its ask stays OPEN.
+FRAGMENT = re.compile(
+    r'^(?:and|or|but)\b'
+    r'|\b(?:and|or|but|with|of|to|the|in|for)(?:\s+\S{1,2})?$', re.I)
 TARIFF_RESIDUE = re.compile(r'\b\d{1,2}\s*(?:m|marks?)\b|\d\s*[x×@]\s*\d', re.I)
+# The marks column glued to the FRONT of the row it priced. What follows is
+# the examiner's criterion cut off at its own first word: "3+3+2 opponent that
+# could improve her defence and help her win the ball back".
+LEADING_TARIFF = re.compile(r'^\d{1,2}\s*(?:[x×+]\s*\d{1,2}\s*)+', re.I)
 # The SEC closes most of its lists by saying the list is not closed. That tail
 # is not an answer — "Positivity, Excellent negotiation skills and other
 # relevant" is one answer and a disclaimer — and the card says the same thing
@@ -193,19 +201,29 @@ def source_pages(year, level, qtext):
     """
     pages = _page_text(year, level)
     wanted = _flat(qtext)[:60]
-    found = []
+    ask_page = None
     if wanted:
         for i, text in enumerate(pages):
             if wanted in _flat(text):
-                found.append(i + 1)
+                ask_page = i + 1
                 break
+    found = [ask_page] if ask_page else []
     for label in re.findall(r'\bFigure\s*\d+\b', qtext, re.I):
         needle = _flat(label)
-        for i, text in enumerate(pages):
-            if needle in _flat(text):
-                if (i + 1) not in found:
-                    found.append(i + 1)
-                break
+        hits = [i + 1 for i, text in enumerate(pages) if needle in _flat(text)]
+        if not hits:
+            continue
+        # A case study NAMES its figures on its opening page and PRINTS them
+        # two pages later, so the first page carrying the label is often the
+        # contents rather than the chart. The page nearest the ask is the one
+        # the candidate was looking at — and never the ask's own page, which
+        # is already bound.
+        other = [h for h in hits if h != ask_page]
+        if not other:
+            continue
+        pick = min(other, key=lambda h: (abs(h - (ask_page or h)), h))
+        if pick not in found:
+            found.append(pick)
     return sorted(found)[:2]
 
 
@@ -224,7 +242,13 @@ def options_for(part, year, level, qtext):
     ask = re.sub(r'[^a-z0-9]+', '', (qtext or '').lower())
     for text, source in S.answers_of(part, with_source=True):
         text = tidy(OPEN_LIST_TAIL.sub('', tidy(text))).strip(' .;,')
-        if not text or NOT_A_POINT.match(text) or len(text) < 4:
+        if not text or len(text) < 4:
+            continue
+        if NOT_A_POINT.match(text):
+            criteria.append(text)         # the paper's rubric, not an answer
+            continue
+        if FRAGMENT.search(text):
+            untraceable.append(text)      # half a line: the ask stays OPEN
             continue
         if not re.search(r'[A-Za-z]{3}', text) or re.search(r'[x×]\s*\d', text):
             criteria.append(text)         # a marks cell, not an answer
@@ -237,7 +261,8 @@ def options_for(part, year, level, qtext):
         # source, including the SEC's own lists, because a list that ran one
         # line past its end ends on exactly such a row.
         if (S.CLOSES_LIST.match(text) or S.BAND_OPENER.match(text)
-                or S.EXAMINER_NOTE.match(text) or S.TABLE_HEAD.match(text)):
+                or S.EXAMINER_NOTE.match(text) or S.TABLE_HEAD.match(text)
+                or LEADING_TARIFF.match(text)):
             criteria.append(text)
             continue
         if TARIFF_RESIDUE.search(text) or len(text) > MAX_OPTION_CHARS:
@@ -431,6 +456,19 @@ def build():
                     refusals[bucket].append((year, level, ref_for(year, level, k),
                                              detail))
 
+            if not options and not table_rows and (
+                    TABLE_TASK.match(qtext) or TABLE_TASK_INLINE.search(qtext)):
+                # The answer to a matching task is in the table's other
+                # column, so "the scheme states no answer" is exactly the
+                # thing this reader cannot know about it. Never excluded on
+                # that evidence — 2026 Ordinary Q15(a)(i) prints Play,
+                # Outdoor and adventure and Mass Participation in cells this
+                # reader could not separate, and excluding it would have said
+                # the SEC printed nothing.
+                refuse('the ask is answered inside a printed table whose '
+                       'other column the flat text layer interleaves',
+                       qtext[:80])
+                continue
             if not options:
                 # A part whose only stated content is the QUESTION reprinted
                 # above its table states no answer either: the SEC sets
@@ -456,7 +494,7 @@ def build():
                                          if criteria and not restated else ''),
                             'evidence': band_evidence(part),
                         })
-                elif (restated or criteria) and (NEEDS_SOURCE.search(qtext)
+                elif restated and (NEEDS_SOURCE.search(qtext)
                                    or any(SCHEME_TICK.search(t)
                                           for t in part.rows + part.answers)):
                     # The scheme names the labels and the paper prints the

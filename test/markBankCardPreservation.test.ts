@@ -666,7 +666,7 @@ const decks = [
   /* Physical Education, carded from the written paper only: the project and
    * the performance assessment are marked from work no paper prints. */
   ['physical-education:higher', PE_HIGHER, 123, 'bb939d00d850b3e5d276c8220990ca822fda67047eab4c97452aa24cd540550b'],
-  ['physical-education:ordinary', PE_ORDINARY, 92, 'f3c9554998724d82f32c74827225cb993ce5dad6d5dff4f2dfcdfd308bf04ea7'],
+  ['physical-education:ordinary', PE_ORDINARY, 93, '85b2cac42ac68b6c0818c243861b622b28b18e2815b8a3d2858fc489f9754a74'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -686,9 +686,9 @@ describe('Mark Bank card preservation', () => {
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
     // Portuguese 173, Romanian 50 and Dutch 42.
-    // ...and Physical Education 215 (123 Higher, 92 Ordinary), carded from
-    // its written paper: 18,345 + 215.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_560);
+    // ...and Physical Education 216 (123 Higher, 93 Ordinary), carded from
+    // its written paper: 18,345 + 216.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_561);
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.

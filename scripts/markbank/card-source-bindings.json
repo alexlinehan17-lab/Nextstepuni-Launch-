@@ -1520,14 +1520,14 @@
   "pe-2020-hl-q11bi": {
    "kind": "illustration",
    "pages": [
-    12,
+    13,
     15
    ]
   },
   "pe-2020-hl-q11bii": {
    "kind": "illustration",
    "pages": [
-    12,
+    13,
     15
    ]
   },
@@ -1640,6 +1640,12 @@
     27
    ]
   },
+  "pe-2021-ol-q18ci": {
+   "kind": "illustration",
+   "pages": [
+    31
+   ]
+  },
   "pe-2022-hl-q16b": {
    "kind": "illustration",
    "pages": [
@@ -1721,7 +1727,8 @@
   "pe-2024-ol-q1": {
    "kind": "illustration",
    "pages": [
-    3
+    3,
+    13
    ]
   },
   "pe-2024-ol-q17bii": {

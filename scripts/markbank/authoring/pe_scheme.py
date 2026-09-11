@@ -232,7 +232,7 @@ EXAMINER_VOCAB = re.compile(
     r'|correct|correctly|incorrect|demonstrates?|describe[sd]?|describing'
     r'|defin(?:e|es|ed|ing|ition|itions)|criteri(?:on|a)|statement'
     r'|description|detail|details|detailed|discuss|discusses|discussed'
-    r'|discussion|evidence|examiner|examiners|excellent|explain\w*'
+    r'|discussion|evidence|examiner|examiners|excellent|explain\w*|compar\w*'
     r'|fair|given|good|identif(?:y|ies|ied)|knowledge|consider\w*|attempt'
     r'|limited|mark|marks|must|name[sd]?|outline[sd]?|outlines|poor'
     r'|present(?:ed|s)?|provide[sd]?|providing|relevant|some|somewhat'
@@ -250,7 +250,8 @@ EXAMINER_NOTE = re.compile(
     r'|accept any (?:valid|other|reasonable|relevant)\b'
     r'|candidates? (?:must|should|may not|are not|to answer)\b|examiners?\b'
     r'|if the\b|total\b|where the candidate|must be\b|answers? must\b'
-    r'|this (?:is|must)\b|only\b|one mark\b|marks for\b|or$)', re.I)
+    r'|this (?:is|must)\b|only\b|one mark\b|marks for\b|or$'
+    r'|support your answer|you may not|you are not)', re.I)
 # The SEC's own lead-in to a list of answers, printed on a line of its own.
 LEAD_IN = re.compile(
     r'^(?:e\.?\s?g\.?|eg\.?|for example|accept(?:able)?(?: any of the following)?'
@@ -717,6 +718,12 @@ def strip_tariff(text):
     """One printed row with its marks-column arithmetic taken off."""
     out = tidy(text)
     for pattern in (
+            # The marks column glued to the FRONT of the row it priced, and
+            # the bare word left behind when the column wrapped: the SEC
+            # prints "3 marks + 3 marks" and the converter keeps "3 marks + 3"
+            # on one line and "marks + marks" on the tail of the next.
+            r'^\d{1,2}(?:\s*\+\s*\d{1,2})+\s+',
+            r'(?:\s+marks?\s*\+)+\s*marks?\s*$',
             r'\s*\(?\s*\d{1,3}\s*\(\s*\d{1,2}\s*[x×]\s*\d{1,2}\s*marks?\s*\)\s*\)?',
             r'\s*\(?\s*\d{1,2}\s*[x×]\s*\d{1,2}\s*(?:\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})+\s*\)\s*)?'
             r'(?:marks?|m)?(?:\s*=\s*\d{1,3})?\s*\)?',

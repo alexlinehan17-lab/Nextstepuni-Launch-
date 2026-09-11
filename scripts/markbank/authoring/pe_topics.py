@@ -68,7 +68,8 @@ RULES = [
      r'|self[- ]talk|visualis|imagery|mental (?:preparation|rehearsal|health)'
      r'|thought stopping|centring|attentional focus|confidence)'),
     ('physical-education-0-12', 12,
-     r'\b(diet|nutrition|hydration|carbohydrate|protein|supplement(?!s? for)'
+     r'\b(diet|nutrition|hydration|carbohydrate|protein|nutrient'
+     r'|supplement(?!s? for)'
      r'|energy system|atp|glycolytic|aerobic system|anaerobic)'),
     ('physical-education-0-5', 8,
      r'\b(physical fitness|fitness component|components? of fitness)'),
@@ -149,7 +150,7 @@ RULES = [
     ('physical-education-1-18', 12,
      r'\b(media (?:coverage|in sport)|spectator (?:behaviour|experience)'
      r'|social media|broadcast|television coverage|journalis'
-     r'|sports programmes?|top 10)'),
+     r'|sports programmes?|top 10|information is available from)'),
     ('physical-education-1-16', 6, r'\b(media|technology)'),
     # ── Strand 2, Topic 9: Gender and Physical Activity ──────────────────
     ('physical-education-1-21', 12,

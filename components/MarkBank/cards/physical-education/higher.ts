@@ -58,7 +58,7 @@ export const CARDS: SecCard[] = [
           "label": "OFFICIAL QUESTION PAGE",
           "title": "Official question page",
           "pages": [
-                12,
+                13,
                 15
           ],
           "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -83,7 +83,7 @@ export const CARDS: SecCard[] = [
           "label": "OFFICIAL QUESTION PAGE",
           "title": "Official question page",
           "pages": [
-                12,
+                13,
                 15
           ],
           "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
@@ -226,7 +226,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Benefits of chocolate milk after training over water", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Compared to water it has double the amount of carbohydrate (source of energy) and protein content (promotes muscle growth and repair) which help replenish fatigued muscles", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -309,9 +308,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2020-hl-q8a", topicId: "physical-education-1-9", conceptId: "pe-1-9-irish-anti-doping-rule",
     section: "A", questionRef: "2020 HL Q8(a)",
     questionText: "Identify two Irish anti-doping rule violations.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":12,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":10,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Administration or Attempted Administration to any Athlete In","Competition of any Prohibited Substance or Prohibited Method, or Administration or Attempted Administration to any Athlete Out-of","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some examples of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
     ],
   } as SecCard,
   {
@@ -480,7 +479,7 @@ export const CARDS: SecCard[] = [
     questionText: "The presence of a prohibited substance in an athlete’s sample, and the use or attempted use of a prohibited substance or prohibited method by an athlete are Irish anti-doping rule violations. Identify three other distinct Irish anti-doping rule violations.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":9,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identify three other distinct Irish anti-doping rule violations (ADVR). marks + marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["3. Refusing or failing to do a drug test after notification","4. Committing Three Whereabouts Failures (Filing Failures or Missed Tests) in 12 months","5. Tampering","6. Possession of Prohibited Substances and/or Prohibited Methods","7. Trafficking in any Prohibited Substance or Prohibited Method","8. Administration to an Athlete of any Prohibited Method or Prohibited Substance; assisting, encouraging, aiding, abetting, covering up","9. Complicity or Attempted Complicity - Involvement in an ADRV committed by another person, such as helping to cover up that ADRV or avoid detection, will be sanctioned in the same way as that violation","10. Prohibited Association -Associating with a person such as a coach, doctor or physio who has been found guilty of an ADRV or equivalent offence to a doping violation will be sanctioned with a ban of up to 2 years","16 July"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identify three other distinct Irish anti-doping rule violations (ADVR)", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["3. Refusing or failing to do a drug test after notification","4. Committing Three Whereabouts Failures (Filing Failures or Missed Tests) in 12 months","5. Tampering","6. Possession of Prohibited Substances and/or Prohibited Methods","7. Trafficking in any Prohibited Substance or Prohibited Method","8. Administration to an Athlete of any Prohibited Method or Prohibited Substance; assisting, encouraging, aiding, abetting, covering up","9. Complicity or Attempted Complicity - Involvement in an ADRV committed by another person, such as helping to cover up that ADRV or avoid detection, will be sanctioned in the same way as that violation","10. Prohibited Association -Associating with a person such as a coach, doctor or physio who has been found guilty of an ADRV or equivalent offence to a doping violation will be sanctioned with a ban of up to 2 years","16 July"]} },
     ],
   } as SecCard,
   {
@@ -506,7 +505,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe three post exercise recovery strategies that an athlete could use which would not put them at risk of committing an Irish anti-doping rule violation. (You are not permitted to use nutritional strategies as one of your answers).",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Three post exercise recovery strategies described marks + marks", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["cold water immersion","compression garments","use of active recovery days"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Three post exercise recovery strategies described", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["cold water immersion","compression garments","use of active recovery days"]} },
     ],
   } as SecCard,
   {
@@ -1036,9 +1035,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2022-hl-q16d", topicId: "physical-education-0-12", conceptId: "pe-0-12-most-effective-develop-natural",
     section: "C", questionRef: "2022 HL Q16(d)",
     questionText: "The most effective way to develop your natural sports ability and achieve your fitness goal is through efficient training combined with optimal nutrition. Examine three nutritional considerations for designing a dietary plan for an athlete in a named physical activity. You are not permitted to examine the use of sports supplements as part of your answer. Physical Activity",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 4 marks","answer":3,"ofParts":7,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 4 marks","answer":3,"ofParts":6,"perPart":4}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Nutritional considerations may include", marks: 12, contextNote: "3 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Carbohydrate intake","Protein intake","Micronutrient considerations","The timing of nutrient intake","The type of activity that the athlete competes in","The goals of the athlete","Hydration considerations"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Nutritional considerations may include", marks: 12, contextNote: "3 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Carbohydrate intake","Protein intake","Micronutrient considerations","The timing of nutrient intake","The goals of the athlete","Hydration considerations"]} },
     ],
   } as SecCard,
   {
