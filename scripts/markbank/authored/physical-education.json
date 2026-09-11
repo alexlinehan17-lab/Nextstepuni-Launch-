@@ -5207,6 +5207,63 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2023-ol-q9",
+  "topicId": "physical-education-0-11",
+  "conceptId": "pe-0-11-match-psychological-factors-listed",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2023 OL Q9",
+  "questionText": "Match the psychological factors listed below to an appropriate explanation: State anxiety Trait anxiety Intrinsic motivation Extrinsic motivation Psychological Factor Explanation – please choose from above Having a desire to participate in order to achieve positive recognition e.g. to win prizes. A temporary emotional state that only occurs in certain situations. A general emotional state. Having a desire to participate to gain satisfaction from the activity.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2 + 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Having a desire to participate in order to achieve positive recognition e.g. to win prizes. — Extrinsic motivation",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A temporary emotional state that only occurs in certain situations. — State anxiety",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A general emotional state. — Trait anxiety",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Having a desire to participate to gain satisfaction from the activity. — Intrinsic motivation",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2024-hl-q1a",
   "topicId": "physical-education-0-2",
   "conceptId": "pe-0-2-appropriate-method-analyse-aspects",
@@ -7789,6 +7846,112 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2025-ol-q1",
+  "topicId": "physical-education-0-12",
+  "conceptId": "pe-0-12-tick-true-false-column",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2025 OL Q1",
+  "questionText": "Put a tick () in the True or False column for each of the following statements: True False Carbohydrates are the body’s main source of energy. All fats are bad for your health. Protein is only important for building muscle. You should only drink water during exercise.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2 + 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Carbohydrates are the body’s main source of energy. — True",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "All fats are bad for your health. — False",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Protein is only important for building muscle. — False",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "You should only drink water during exercise. — False",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2025-ol-q10",
+  "topicId": "physical-education-0-3",
+  "conceptId": "pe-0-3-match-skill-practice-method",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2025 OL Q10",
+  "questionText": "Match the skill practice method listed below to the appropriate explanation: Distributed Fixed Variable Massed The first one has been done for you. Explanation Skill Practice Method - please choose from above Practicing tackles in rugby, without a break Massed Run a sprint, rest, receive feedback, repeat. Serve in volleyball, repeatedly, environment remains the same. Small sided game, allowing athlete to adapt technique in a changing situation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3 + 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Run a sprint, rest, receive feedback, repeat. — Distributed",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Serve in volleyball, repeatedly, environment remains the same. — Fixed",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Small sided game, allowing athlete to adapt technique in a changing situation. — Variable",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2025-ol-q12",
   "topicId": "physical-education-0-18",
   "conceptId": "pe-0-18-figure-shows-coach-using",
@@ -7873,6 +8036,110 @@
     "kind": "point",
     "verbatim": "Intrinsic feedback",
     "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2025-ol-q18ai",
+  "topicId": "physical-education-1-15",
+  "conceptId": "pe-1-15-fill-blanks-piece-text",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2025 OL Q18(a)(i)",
+  "questionText": "Fill in the blanks in the following piece of text using the words provided in the box below. Each word can only be used once. Two blanks have been filled in for you.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "8 x 2 marks",
+   "answer": 8,
+   "ofParts": 8,
+   "perPart": 2
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Fill in blanks in correct order",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "8 answers at 2 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 8,
+     "perOption": 2,
+     "options": [
+      "Discrimination",
+      "Prejudiced",
+      "Disability",
+      "Female",
+      "Barriers",
+      "Equality",
+      "Inclusivity",
+      "Welcomed"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2025-ol-q5",
+  "topicId": "physical-education-1-9",
+  "conceptId": "pe-1-9-match-terms-correct-explanation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2025 OL Q5",
+  "questionText": "Match the terms below to the correct explanation: Anti-Doping Rule Violation Performance-enhancing drug Therapeutic Use Exemption Code of ethics Explanation Term – please choose from above An athlete being allowed to take a drug that is not normally allowed in their sport because they suffer from a particular medical condition. A substance that is used without permission specifically to improve sports performance. A set of rules about appropriate behaviour. Use or attempted use by an athlete of a prohibited substance or a prohibited method.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2 + 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An athlete being allowed to take a drug that is not normally allowed in their sport because they suffer from a particular medical condition. — Therapeutic Use Exemption",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A substance that is used without permission specifically to improve sports performance. — Performance Enhancing Drug",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A set of rules about appropriate behaviour. — Code of Ethics",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Use or attempted use by an athlete of a prohibited substance or a prohibited method. — Anti-Doping Rule Violation",
+    "marks": 2,
     "openList": true,
     "contextNote": ""
    }
@@ -8031,23 +8298,35 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed",
+   "notation": "1 + 1 + 1 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
   },
   "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Timeframe Periodisation Cycle",
-    "marks": null,
+    "verbatim": "Two months — Mesocycle",
+    "marks": 1,
     "openList": true,
     "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "A full year Macrocycle",
-    "marks": null,
+    "verbatim": "A full year — Macrocycle",
+    "marks": 1,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Two weeks — Microcycle",
+    "marks": 1,
     "openList": true,
     "contextNote": ""
    }
@@ -8244,6 +8523,63 @@
     "kind": "point",
     "verbatim": "thinking don’t have the ‘right’ body shape/size for a particular PA",
     "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2026-ol-q7",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-appropriate-analysis-method-test",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2026 OL Q7",
+  "questionText": "Identify an appropriate analysis method or test for each of the performance areas listed in the table below, using the methods / tests provided. Method of analysis / test Anxiety test Video analysis Balance test Sit‐and‐reach test Food diary 12‐minute run Method of analysis or test Area of performance ‐ choose from above Performance related component of fitness Psychological preparedness Skill and technique Nutrition",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2 + 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Performance related component of fitness. — Balance test",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Psychological preparedness. — Anxiety test",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Skill and technique. — Video analysis",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Nutrition — Food diary",
+    "marks": 2,
     "openList": true,
     "contextNote": ""
    }

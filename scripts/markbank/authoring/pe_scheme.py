@@ -693,7 +693,7 @@ def strip_tariff(text):
             r'\s+\d{1,2}\s*[-–]\s*\d{1,2}\s*$',
             r'\s+\d{1,3}\s*$'):
         out = tidy(re.sub(pattern, ' ', out, flags=re.I))
-    return tidy(out).strip(' .;:,-')
+    return tidy(out).strip(' .;:,-=')
 
 
 def is_content(text):

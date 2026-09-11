@@ -54,6 +54,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 import pe_lib as L                                              # noqa: E402
 import pe_scheme as S                                           # noqa: E402
+import pe_tables as T                                           # noqa: E402
 from pe_topics import concept_for, topic_for                    # noqa: E402
 from paper import Paper                                         # noqa: E402
 from markbank_authoring import anyN, make_audit, make_card, point  # noqa: E402
@@ -446,8 +447,16 @@ def build():
             ref = (ref_for(year, level, key) if len(keys) == 1
                    else ref_for_many(year, level, keys))
             qtext = texts.get(part.address) or texts.get(key) or ''
+            # The TABLE first. A part the SEC answered inside its own printed
+            # table states nothing in its flat text but the two columns welded
+            # together, so every gate below would read it as stating nothing
+            # and exclude it — which is the one verdict that is certainly
+            # wrong, because the answer is right there in the cells.
+            table_rows = T.rows_for(part, year, level)
             options, untraceable, restated, criteria = options_for(
                 part, year, level, qtext)
+            if table_rows:
+                options = options or ['(answered in the printed table)']
 
             def refuse(bucket, detail=''):
                 for k in keys:
@@ -509,11 +518,23 @@ def build():
                     refuse('the ask depends on a figure, table or case study '
                            'this reader cannot find a page for', qtext[:80])
                     continue
-            if TABLE_TASK.match(qtext) or TABLE_TASK_INLINE.search(qtext):
-                refuse('the ask is answered inside a printed table whose other '
-                       'column the flat text layer interleaves', qtext[:80])
-                continue
-            if any(SCHEME_TICK.search(t) for t in part.rows + part.answers):
+            groups = sorted(set(part.tariffs))
+            steps = next((st for text in [part.cue] + part.rows + part.cells
+                          for st in [S.steps_in(text or '')] if st), [])
+            if not table_rows and (TABLE_TASK.match(qtext)
+                                   or TABLE_TASK_INLINE.search(qtext)):
+                # Refused only where the flat reading cannot stand in for the
+                # table either. 2025 Ordinary's fill-in-the-blanks prints its
+                # eight answers one to a line — "Discrimination = 2" — and
+                # those are answers whatever the ask calls itself.
+                claim = groups[0][0] if len(groups) == 1 else None
+                if claim is None or len(options) < claim:
+                    refuse('the ask is answered inside a printed table whose '
+                           'other column the flat text layer interleaves',
+                           qtext[:80])
+                    continue
+            if not table_rows and any(SCHEME_TICK.search(t)
+                                      for t in part.rows + part.answers):
                 refuse('the scheme marks its answer with a tick in a printed '
                        'column the text layer cannot place',
                        next(t for t in part.rows + part.answers
@@ -539,9 +560,60 @@ def build():
                 refuse('no LCPE topic matches the wording', qtext[:80])
                 continue
 
-            groups = sorted(set(part.tariffs))
-            steps = next((st for text in [part.cue] + part.rows + part.cells
-                          for st in [S.steps_in(text or '')] if st), [])
+            if table_rows:
+                # The SEC answered this one inside its own table. Each printed
+                # row is one marking point — the prompt it set and the answer
+                # it wrote beside it, in the cells it put them in.
+                prices = [m for _p, _a, m in table_rows]
+                if any(m is None for m in prices):
+                    per = groups[0][1] if len(groups) == 1 else None
+                    # The per-answer value is the SEC's; the COUNT is the
+                    # table's own number of rows. Taken only where the two
+                    # agree with something else the SEC printed — the group's
+                    # own claim, or the total on the question — because the
+                    # converter truncates a wrapped ladder: 2025 Ordinary Q1
+                    # prints "2 + 2 + 2 + 2" and the flat text keeps "2 + 2 +
+                    # 2 +", three values for a four-row table.
+                    checks = {part.total, part.qtotal, None}
+                    # A ladder the converter cut off says so: it ends on a
+                    # dangling "+". 2023 Ordinary Q12 prints "2 + 2 + 2 + 2"
+                    # across a wrap and the flat text keeps "2 + 2 + 2 +",
+                    # which is the SEC saying the list continues.
+                    dangling = any(re.search(r'\d\s*\+\s*$', text or '')
+                                   for text in [part.cue] + part.rows + part.cells)
+                    if per and (groups[0][0] == len(table_rows) or dangling
+                                or per * len(table_rows) in checks):
+                        prices = [per] * len(table_rows)
+                    elif len(steps) == len(table_rows):
+                        prices = list(steps)
+                    else:
+                        prices = None
+                if not prices:
+                    refuse('the scheme prints no tariff that reads one way for '
+                           'the rows of its own table', f'{part.tariffs}')
+                    continue
+                rows = [point(f'r-{i + 1}', f'{prompt} — {answer}', marks, '')
+                        for i, ((prompt, answer, _m), marks)
+                        in enumerate(zip(table_rows, prices))]
+                total = sum(prices)
+                notation = ' + '.join(str(m) for m in prices) + ' marks'
+                kind, answer, of_parts, per_part = 'fixed', None, None, None
+                cid = card_id(year, level, part.address if len(keys) > 1 else key)
+                if cid in seen_parts:
+                    refuse('a second scheme part claims an id already written',
+                           seen_parts[cid])
+                    continue
+                seen_parts[cid] = ref
+                if pages:
+                    bindings[cid] = {'kind': 'illustration', 'pages': pages}
+                cards.append(card(
+                    cid, year, lvl, topic, concept_for(topic, qtext), ref,
+                    qtext, notation, total, rows, NOTES,
+                    section=section_of(part.address[0], year), stem=stem,
+                    tariff_kind=kind))
+                covered.extend(keys)
+                continue
+
             total = part.total
             if len(groups) == 1 and len(options) >= groups[0][0]:
                 claim, per = groups[0]

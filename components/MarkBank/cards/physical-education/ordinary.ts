@@ -870,6 +870,22 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2023-ol-q9", topicId: "physical-education-0-11", conceptId: "pe-0-11-match-psychological-factors-listed",
+    section: "A", questionRef: "2023 OL Q9",
+    questionText: "Match the psychological factors listed below to an appropriate explanation: State anxiety Trait anxiety Intrinsic motivation Extrinsic motivation Psychological Factor Explanation – please choose from above Having a desire to participate in order to achieve positive recognition e.g. to win prizes. A temporary emotional state that only occurs in certain situations. A general emotional state. Having a desire to participate to gain satisfaction from the activity.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 + 2 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Having a desire to participate in order to achieve positive recognition e.g. to win prizes. — Extrinsic motivation", marks: 2, openList: true },
+    { id: "r-2", kind: "point", verbatim: "A temporary emotional state that only occurs in certain situations. — State anxiety", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "A general emotional state. — Trait anxiety", marks: 2, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Having a desire to participate to gain satisfaction from the activity. — Intrinsic motivation", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Ordinary Level — © State Examinations Commission.",
@@ -1132,6 +1148,37 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2025-ol-q1", topicId: "physical-education-0-12", conceptId: "pe-0-12-tick-true-false-column",
+    section: "A", questionRef: "2025 OL Q1",
+    questionText: "Put a tick (✓) in the True or False column for each of the following statements: True False Carbohydrates are the body’s main source of energy. All fats are bad for your health. Protein is only important for building muscle. You should only drink water during exercise.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 + 2 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Carbohydrates are the body’s main source of energy. — True", marks: 2, openList: true },
+    { id: "r-2", kind: "point", verbatim: "All fats are bad for your health. — False", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Protein is only important for building muscle. — False", marks: 2, openList: true },
+    { id: "r-4", kind: "point", verbatim: "You should only drink water during exercise. — False", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2025-ol-q10", topicId: "physical-education-0-3", conceptId: "pe-0-3-match-skill-practice-method",
+    section: "A", questionRef: "2025 OL Q10",
+    questionText: "Match the skill practice method listed below to the appropriate explanation: Distributed Fixed Variable Massed The first one has been done for you. Explanation Skill Practice Method - please choose from above Practicing tackles in rugby, without a break Massed Run a sprint, rest, receive feedback, repeat. Serve in volleyball, repeatedly, environment remains the same. Small sided game, allowing athlete to adapt technique in a changing situation.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Run a sprint, rest, receive feedback, repeat. — Distributed", marks: 3, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Serve in volleyball, repeatedly, environment remains the same. — Fixed", marks: 3, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Small sided game, allowing athlete to adapt technique in a changing situation. — Variable", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
     id: "pe-2025-ol-q12", topicId: "physical-education-0-18", conceptId: "pe-0-18-figure-shows-coach-using",
     section: "A", questionRef: "2025 OL Q12",
     questionText: "Figure 3 shows a coach using a stop watch to help run the session. Name and explain two different types of technology and how a coach might use them in training. Figure 3",
@@ -1191,6 +1238,45 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2025-ol-q18ai", topicId: "physical-education-1-15", conceptId: "pe-1-15-fill-blanks-piece-text",
+    section: "C", questionRef: "2025 OL Q18(a)(i)",
+    questionText: "Fill in the blanks in the following piece of text using the words provided in the box below. Each word can only be used once. Two blanks have been filled in for you.",
+    tariffModel: {"kind":"bestNofParts","notation":"8 x 2 marks","answer":8,"ofParts":8,"perPart":2}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Fill in blanks in correct order", marks: 16, contextNote: "8 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":8,"perOption":2,"options":["Discrimination","Prejudiced","Disability","Female","Barriers","Equality","Inclusivity","Welcomed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Physical Education 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2025-ol-q5", topicId: "physical-education-1-9", conceptId: "pe-1-9-match-terms-correct-explanation",
+    section: "A", questionRef: "2025 OL Q5",
+    questionText: "Match the terms below to the correct explanation: Anti-Doping Rule Violation Performance-enhancing drug Therapeutic Use Exemption Code of ethics Explanation Term – please choose from above An athlete being allowed to take a drug that is not normally allowed in their sport because they suffer from a particular medical condition. A substance that is used without permission specifically to improve sports performance. A set of rules about appropriate behaviour. Use or attempted use by an athlete of a prohibited substance or a prohibited method.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 + 2 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An athlete being allowed to take a drug that is not normally allowed in their sport because they suffer from a particular medical condition. — Therapeutic Use Exemption", marks: 2, openList: true },
+    { id: "r-2", kind: "point", verbatim: "A substance that is used without permission specifically to improve sports performance. — Performance Enhancing Drug", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "A set of rules about appropriate behaviour. — Code of Ethics", marks: 2, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Use or attempted use by an athlete of a prohibited substance or a prohibited method. — Anti-Doping Rule Violation", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Ordinary Level — © State Examinations Commission.",
     id: "pe-2025-ol-q8a", topicId: "physical-education-1-0", conceptId: "pe-1-0-other-outdoor-adventure",
     section: "A", questionRef: "2025 OL Q8(a)",
     questionText: "Name one other physical activity that is an ‘outdoor and adventure activity’.",
@@ -1207,10 +1293,11 @@ export const CARDS: SecCard[] = [
     id: "pe-2026-ol-q1a", topicId: "physical-education-0-10", conceptId: "pe-0-10-periodisation-cycles-macrocycle-mesocycle",
     section: "A", questionRef: "2026 OL Q1(a)",
     questionText: "The following are periodisation cycles: Macrocycle Mesocycle Microcycle Identify an appropriate timeframe for each of these cycles.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"1 + 1 + 1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Timeframe Periodisation Cycle", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "A full year Macrocycle", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Two months — Mesocycle", marks: 1, openList: true },
+    { id: "r-2", kind: "point", verbatim: "A full year — Macrocycle", marks: 1, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Two weeks — Microcycle", marks: 1, openList: true },
     ],
   } as SecCard,
   {
@@ -1300,5 +1387,31 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "thinking don’t have the ‘right’ body shape/size for a particular PA", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC225GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Ordinary Level — © State Examinations Commission.",
+    id: "pe-2026-ol-q7", topicId: "physical-education-0-2", conceptId: "pe-0-2-appropriate-analysis-method-test",
+    section: "A", questionRef: "2026 OL Q7",
+    questionText: "Identify an appropriate analysis method or test for each of the performance areas listed in the table below, using the methods / tests provided. Method of analysis / test Anxiety test Video analysis Balance test Sit‐and‐reach test Food diary 12‐minute run Method of analysis or test Area of performance ‐ choose from above Performance related component of fitness Psychological preparedness Skill and technique Nutrition",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 + 2 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Performance related component of fitness. — Balance test", marks: 2, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Psychological preparedness. — Anxiety test", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Skill and technique. — Video analysis", marks: 2, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Nutrition — Food diary", marks: 2, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Physical Education 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
 ];
