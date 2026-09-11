@@ -42,7 +42,16 @@ Every one is a named bucket, counted and exampled by --report:
   * the paper prints no text the card can carry for the ask;
   * a step cannot be traced back to the scheme markdown the build checks
     against;
-  * the ask has more priced steps than one card may show.
+  * the ask has more priced steps than one card may show;
+  * the ask points at printed matter the card cannot carry — what is left of
+    this bucket once am_question_figures.py has cut the diagram and bound it.
+    111 asks were refused here before that pass existed; two are, now;
+  * the ask names lettered parts the scheme never decodes. A crop alone does
+    not answer "the parts labelled A, B and C": the build wants the letters
+    decoded as well, and there is nothing in these schemes to lift a decode
+    from;
+  * a printed character did not survive the paper's font, tested exactly as
+    the build tests it, so the count here and the count in the deck agree.
 """
 import argparse
 import collections
@@ -71,6 +80,22 @@ MAX_STEPS_SHOWN = 16          # MAX_LONG_OPTION_ROWS in types/markBank.ts
 _card = make_card(SUBJECT, default_section='B')
 audit = make_audit(MAX_STEPS_SHOWN)
 
+# The picture each ask points at, cut from the paper by am_question_figures.py
+# and published through the manifest by bind-figures.mjs. A card that CARRIES
+# the diagram is no longer pointing at printed matter it cannot show, so this
+# is read before the figure gate below. Nothing here is a path: the sidecar
+# names a KEY, and the build resolves it against the manifest, confirms the
+# file is on disk and that its bytes still hash to what the inspecting agent
+# saw. Both historical figure corruptions in this repo came in through a
+# hand-transcribed path.
+QFIGS = os.path.join(ROOT, 'scripts', 'markbank', 'authored',
+                     f'{SUBJECT}-question-figures.json')
+FIGURES = (json.load(open(QFIGS, encoding='utf-8'))
+           if os.path.exists(QFIGS) else {})
+MANIFEST = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
+_INSPECTED = (set(json.load(open(MANIFEST, encoding='utf-8')))
+              if os.path.exists(MANIFEST) else set())
+
 # The running header runs on into a part's text where the question ends near
 # the foot of a page.
 FURNITURE_TAIL = re.compile(
@@ -82,6 +107,24 @@ CONTENT_FREE = re.compile(r'^(as above|see above|or equivalent|etc\.?|'
 # characters, or a line with no letter or digit in it at all. The provenance
 # gate would refuse most of these anyway; refusing them here says WHY.
 UNREADABLE = re.compile(r'[�]')
+# The build's own broken-subset test, mirrored from BROKEN and REAL in
+# build-deck.mjs. A card carrying one of these is DROPPED there, so the author
+# has to refuse it here or its number and the deck's disagree: two asks the
+# figure pass unblocked print their dot product with a glyph the font subset
+# maps into the Malayalam block, and they came through as cards the build then
+# threw away without the report ever saying so.
+BROKEN_GLYPH = re.compile('[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]')
+REAL_SCRIPT = re.compile(
+    '[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308'
+    '\u0370-\u03FF\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF'
+    '\u1D62-\u1D6A\u1F00-\u1FFF]')
+
+
+def broken_glyphs(text):
+    return [c for c in BROKEN_GLYPH.findall(text or '')
+            if not REAL_SCRIPT.match(c)]
+
+
 # The three line shapes schemeText.mjs drops before it compares.
 MARKS_ONLY = re.compile(r'^\s*\d+\s*(\(\s*\d+\s*\))?\s*$')
 LABEL_ONLY = re.compile(r'^\s*\(?\s*([ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s*$', re.I)
@@ -282,10 +325,28 @@ class Author:
         if len(_squash(qtext)) < 8:
             raise Refused(('the paper prints only the setup for this ask, no '
                            'question of its own', ref))
-        if cardlint.NAMES_LETTERS.search(joined) \
-                or (cardlint.FIG_REF.search(joined)
-                    and not cardlint.SELF_WORK.search(joined)
-                    and not cardlint.NO_DEPENDENCY.search(joined)):
+        # The crop, if this ask has one. A key the manifest has never inspected
+        # is treated as no figure at all rather than shipped: the build would
+        # drop the card, and a refusal here says why.
+        figure = FIGURES.get(card_id(self.year, self.level, key), '')
+        if figure and figure not in _INSPECTED:
+            figure = ''
+        wrecked = broken_glyphs(joined) or broken_glyphs(
+            ' '.join(t for t, _ in rows))
+        if wrecked:
+            raise Refused(('a printed character did not survive the paper\'s '
+                           'font', f'{ref}: '
+                           f'U+{ord(wrecked[0]):04X} in {joined[:48]!r}'))
+        if cardlint.NAMES_LETTERS.search(joined):
+            # A lettered ask needs its letters DECODED as well as shown, and
+            # the decode has to be lifted from somewhere. These schemes name a
+            # point in their working, not in a key, so there is nothing to lift
+            # and the build would drop the card even with the crop bound.
+            raise Refused(('the ask names lettered parts the scheme never '
+                           'decodes', ref))
+        if not figure and (cardlint.FIG_REF.search(joined)
+                           and not cardlint.SELF_WORK.search(joined)
+                           and not cardlint.NO_DEPENDENCY.search(joined)):
             raise Refused(('the ask points at printed matter the card cannot '
                            'carry', ref))
 
@@ -313,7 +374,7 @@ class Author:
                      'step marks', total, [row],
                      notes=f'Cited from the {self.year} '
                            f'{LEVEL_WORD[self.level]} paper.',
-                     stem=stem, tariff_kind='fixed')
+                     stem=stem, tariff_kind='fixed', figure_key=figure)
         return card, matched
 
 
