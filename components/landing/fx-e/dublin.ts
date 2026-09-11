@@ -37,3 +37,11 @@ export const dayBefore = (iso: string): string => new Date(utc(iso) - DAY_MS).to
 /** "8 September 2026". */
 export const formatDay = (iso: string): string =>
   new Intl.DateTimeFormat('en-IE', { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(utc(iso)));
+
+/** Find the next Irish midnight, including the 23/25-hour DST days. */
+export function nextDublinMidnight(now:Date=new Date()):number {
+  const day=dublinDay(now);
+  let low=now.getTime(),high=low+27*60*60*1000;
+  while(high-low>1){const middle=Math.floor((low+high)/2);if(dublinDay(new Date(middle))===day)low=middle;else high=middle;}
+  return high;
+}

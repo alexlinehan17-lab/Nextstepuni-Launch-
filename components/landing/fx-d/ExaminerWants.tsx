@@ -27,6 +27,9 @@ const TEXT = {
   hint: 'Hover or tab through the lines',
 } as const;
 
+// Lead with the shorter embargo/quota example; keep generated scheme data intact.
+const QUESTIONS = [...WANTS].sort((a, b) => Number(b.subject === 'Business' && b.year === 2024) - Number(a.subject === 'Business' && a.year === 2024));
+
 interface Connector { d: string; x2: number; y2: number }
 
 const Wants: React.FC<{ q: ResponseQuestion }> = ({ q }) => {
@@ -149,8 +152,8 @@ const Wants: React.FC<{ q: ResponseQuestion }> = ({ q }) => {
 };
 
 const ExaminerWants: React.FC = () => {
-  const [qid, setQid] = useState(WANTS[0].id);
-  const q = WANTS.find(x => x.id === qid) ?? WANTS[0];
+  const [qid, setQid] = useState(QUESTIONS[0].id);
+  const q = QUESTIONS.find(x => x.id === qid) ?? QUESTIONS[0];
   return (
     // overflow: clip keeps the frame's rounded clipping without making it a scroll container, so the sticky points column holds against the viewport.
     <Frame title={TEXT.frame} meta={`${q.subject} · ${q.ref}`} style={{ overflow: 'clip' }}>
@@ -158,7 +161,7 @@ const ExaminerWants: React.FC = () => {
         <TextTabs
           size="sm"
           ariaLabel={TEXT.pick}
-          items={WANTS.map(x => ({ id: x.id, label: `${x.subject} · ${x.ref}` }))}
+          items={QUESTIONS.map(x => ({ id: x.id, label: `${x.subject} · ${x.ref}` }))}
           active={q.id}
           onChange={setQid}
         />
