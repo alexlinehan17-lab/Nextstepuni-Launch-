@@ -61,6 +61,14 @@ SUBJECTS = {
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
+    # One booklet per sitting, Section A short questions and Section B long
+    # questions numbered straight through, so the generic merged walker reads
+    # it. It was carded before this table existed and so was never registered
+    # here -- eng_all.py called census_subject() directly, which falls through
+    # to the merged default, and reconcile --all iterates SUBJECTS and so
+    # walked straight past 466 shipping cards. Registering it puts Engineering
+    # under the same ratchet as every other subject.
+    'engineering': {'mode': 'merged'},
     # One booklet per sitting numbered Q1..Q18 straight through its three
     # sections — Section A short questions, Section B the case study,
     # Section C the long questions — so the generic merged walker reads it.

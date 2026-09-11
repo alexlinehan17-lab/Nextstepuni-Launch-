@@ -138,6 +138,76 @@ class _TableSource:
     def paths(self):
         return self._scheme.parts()
 
+class _EngSource:
+    """eng_scheme.EngScheme behind the interface Author expects of a scheme.
+
+    The Engineering scheme is read off the page, but the build's provenance
+    gate reads the MARKDOWN extraction, so verify() is answered by the
+    markdown as it is for every other subject: a claim lifted from the PDF has
+    to appear in the document the gate checks against.
+    """
+
+    def __init__(self, scheme, md):
+        self._scheme, self._md = scheme, md
+        self.path = md.path
+
+    def points(self, q, letter=None, roman=None):
+        # Everything at this key and beneath it, because that is what the key's
+        # tariff prices. `use` indexes into THIS list, so the author and the
+        # card must be reading the same one.
+        return self._scheme.points_under(q, letter, roman)
+
+    def marks(self, q, letter=None, roman=None):
+        t = self._scheme.tariff(q, letter, roman)
+        return [str(t)] if t else []
+
+    def verify(self, claims):
+        return self._md.verify(claims)
+
+    def paths(self):
+        return list(self._scheme.body())
+
+
+PAPER_TERMINAL = re.compile(r'[.?!]$')
+# The page's own furniture, swept into a question block by the reader. A bare
+# "Figure 3" at the end is the CAPTION of the picture printed beside the ask,
+# not part of it; "Section B Long Questions 76 marks" is the banner of the
+# section that starts underneath; and "This question continues on the next
+# page" is an instruction to the candidate about the paper.
+CONTINUES = re.compile(r'\s*This question continues on the next page\.?', re.I)
+TRAILING_FURNITURE = re.compile(
+    r'(?:\s*(?:Figures?|Figs?\.?)\s*\d+[a-z]?)+\s*$'
+    r'|\s*Section\s+[A-C]\b[^.]{0,60}?\d{1,3}\s*marks?\s*$', re.I)
+
+# Which subjects get the question-text handling below. It is deliberately an
+# ALLOWLIST rather than a default. The work it does -- taking the page's
+# furniture off the end of an ask, joining a cue's children across letters as
+# well as romans -- was written for Engineering and would silently rewrite the
+# question text on every Biology, Chemistry and Physics card already shipped.
+# A subject joins this list when its deck has been regenerated and diffed.
+QUESTION_CLEANING = ('engineering',)
+
+
+def _without_furniture(text):
+    """The question with the page's furniture off its end, or None.
+
+    Self-checking, the same way the table cut is: the strip is taken only
+    where what remains still ends like a sentence. That is what separates a
+    caption swept onto the end of the ask from a question that genuinely ends
+    by naming a figure.
+    """
+    q = ' '.join(CONTINUES.sub(' ', text).split())
+    for _ in range(4):
+        stripped = TRAILING_FURNITURE.sub('', q).strip()
+        if stripped == q:
+            break
+        q = stripped
+    q = ' '.join(q.split())
+    if q == ' '.join(text.split()) or len(q) < 25 or len(q.split()) < 5:
+        return None
+    return q if PAPER_TERMINAL.search(q) else None
+
+
 ROMAN_ORDER = {r: i for i, r in enumerate(
     ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii'])}
 
@@ -152,7 +222,13 @@ class Author:
         self.scheme = Scheme(subject, year, level)
         # The PDF-backed parser, for parts the flattened markdown mangles. See
         # agsci_scheme_pdf: neither parser dominates, so the choice is per part.
-        self.scheme_pdf = SchemePdf(subject, year, level)
+        # Tolerated, not required: a parser that cannot open a subject must
+        # not stop the subject being authored. Engineering's schemes are among
+        # those SchemePdf raises on.
+        try:
+            self.scheme_pdf = SchemePdf(subject, year, level)
+        except Exception:                                    # noqa: BLE001
+            self.scheme_pdf = None
         # Chemistry's schemes are a five-column table that neither generic
         # parser reads correctly. chem_scheme keys the table the way the PAPER
         # numbers it and reads its super/subscripts from the baseline, which is
@@ -162,12 +238,17 @@ class Author:
             from chem_scheme import ChemScheme
             self.scheme_table = _TableSource(ChemScheme(year, level),
                                              self.paper, self.scheme)
+        elif subject == 'engineering':
+            # Engineering's scheme is read off the page by eng_scheme, and the
+            # adapter above puts it behind the interface Author expects.
+            from eng_scheme import EngScheme
+            self.scheme_table = _EngSource(EngScheme(year, level), self.scheme)
         self.cards = []
 
     def _source(self, source):
         if source == 'table':
             if self.scheme_table is None:
-                raise Refused('source="table" is Chemistry only')
+                raise Refused(f'source="table" has no reader for {self.subject}')
             return self.scheme_table
         if source not in ('md', 'pdf'):
             raise Refused(f'unknown scheme source {source!r} — use "md", "pdf" '
@@ -196,14 +277,16 @@ class Author:
 
     def card(self, q, letter=None, roman=None, *, topic, concept,
              use=None, marks=None, tariff='fixed', total=None, figure=None,
+             question_figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
              tick=None, first_sentence=False, ladder=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
+        clean = self.subject in QUESTION_CLEANING
         question = self.paper.text(q, letter, roman)
-        if not question:
+        if not clean and not question:
             raise Refused(f'{ref}: the paper has no text for this part')
 
         # A part that is only a CUE hands its ask to the romans beneath it:
@@ -213,15 +296,46 @@ class Author:
         # paper's own words, in the paper's own order. Only where the part
         # cannot stand on its own; a part with a real question of its own keeps
         # it, and a card citing a CHILD is untouched.
-        if roman is None and len(' '.join(question.split())) < 40:
-            kids = [k for k in self.paper.parts
-                    if k[0] == q and k[1] == letter and k[2]]
+        # For a cleaning subject the empty check runs AFTER this, not before:
+        # a question that states nothing of its own is exactly the case that
+        # needs its children, and the widened key takes lettered parts as well
+        # as romans. Both are Engineering's; every other subject keeps the
+        # narrow rule it was authored against.
+        joined_kids = False
+        if roman is None and len(' '.join((question or '').split())) < 40:
+            if clean:
+                kids = [k for k in self.paper.parts
+                        if k[0] == q
+                        and (k[1] == letter if letter
+                             else k[1] is not None or k[2])
+                        and (k[1], k[2]) != (letter, roman)]
+            else:
+                kids = [k for k in self.paper.parts
+                        if k[0] == q and k[1] == letter and k[2]]
             if kids:
-                kids.sort(key=lambda k: ROMAN_ORDER.get(k[2], 99))
-                tail = ' '.join(f'({k[2]}) {(self.paper.text(*k) or "").strip()}'
-                                for k in kids)
+                kids.sort(key=lambda k: ((k[1] or '') if clean else '',
+                                         ROMAN_ORDER.get(k[2], 99)))
+                if clean:
+                    tail = ' '.join(
+                        f'({k[2] or k[1]}) {(self.paper.text(*k) or "").strip()}'
+                        for k in kids)
+                else:
+                    tail = ' '.join(
+                        f'({k[2]}) {(self.paper.text(*k) or "").strip()}'
+                        for k in kids)
                 if tail.strip():
-                    question = f'{question.rstrip()} {tail}'.strip()
+                    question = f'{(question or "").rstrip()} {tail}'.strip()
+                    joined_kids = True
+
+        # The page's own furniture, taken back off the end of the ask.
+        furniture_removed = False
+        if clean and question:
+            without = _without_furniture(question)
+            if without:
+                question, furniture_removed = without, True
+
+        if clean and not question:
+            raise Refused(f'{ref}: the paper has no text for this part')
 
         # Where a paper sets two questions side by side, the block segmentation
         # welds the neighbour's text onto this one: 2023 OL Q2(c) comes out as
@@ -241,7 +355,17 @@ class Author:
 
         # The flag is raised on what the paper block held; a scheme-confirmed
         # trim answers it, so the check runs on the text the card will carry.
-        if not first_sentence and self.paper.suspect(q, letter, roman) and not checked:
+        # The flag is raised on what the paper BLOCK held. Where the children
+        # have been joined on, or the furniture taken off, the text the card
+        # carries is a different string and answers the flag on its own terms:
+        # a part that reads "Answer any three of the following:" is flagged for
+        # stopping on a colon, and once its three children are joined it ends
+        # in a full stop like any other question.
+        flagged = self.paper.suspect(q, letter, roman)
+        if flagged and (furniture_removed or joined_kids) \
+                and PAPER_TERMINAL.search(question.strip()):
+            flagged = False
+        if not first_sentence and flagged and not checked:
             raise Refused(
                 f'{ref}: question text is flagged and unreviewed — {question!r}. '
                 f'Open the page; if it is right, pass checked="<why>".')
@@ -355,6 +479,11 @@ class Author:
             if not notation:
                 raise Refused(f'{ref}: ladder needs a notation giving the scale')
             marks = [None] * len(chosen)
+        # The same shape for a different reason. The scheme prices the QUESTION
+        # and states its points without saying how those marks divide across
+        # its parts, so no row has a value of its own.
+        if tariff == 'questionTotal':
+            marks = [None] * len(chosen)
 
         scheme_marks = scheme.marks(q, letter, roman) or self.scheme.marks(q, letter, roman)
         if marks is None:
@@ -367,7 +496,14 @@ class Author:
         if len(marks) != len(chosen):
             raise Refused(f'{ref}: {len(marks)} marks for {len(chosen)} points')
 
-        if ladder is not None:
+        if tariff == 'questionTotal':
+            # There is nothing to sum, so the total has to be given: it is the
+            # tariff the paper prints on the question.
+            if total is None:
+                raise Refused(f'{ref}: a questionTotal card must be given the '
+                              f'total the paper prints')
+            computed = total
+        elif ladder is not None:
             computed = ladder
         else:
             computed = sum(marks)
@@ -431,6 +567,14 @@ class Author:
             card['notes'] = notes
         if figure:
             card['figureKey'] = figure
+        # The SEC's own print of the ask and its setup, shown BEFORE the
+        # reveal. It is the right slot for a stimulus printed once and asked
+        # about by several parts -- one hybrid vehicle diagram over (d)(i) and
+        # (d)(ii) -- which the answer slot's one-crop-one-card rule is there
+        # to forbid, and which would otherwise appear only once the student
+        # has already answered.
+        if question_figure:
+            card['questionFigureKey'] = question_figure
         if labels == 'auto':
             labels = {}
             for point in chosen:
