@@ -259,7 +259,7 @@ EXAMINER_NOTE = re.compile(
 MID_NOTE = re.compile(
     r'\bdo not accept\b|\bmust (?:be|refer|relate|mention|include|focus)\b'
     r'|\bnot permitted\b|\bmay not (?:be )?use\b|\bonly accept\b'
-    r'|\bnot accept(?:able)?\b', re.I)
+    r'|\bnot accept(?:able)?\b|\bcannot be used\b|\bmay not be used\b', re.I)
 # The SEC's own lead-in to a list of answers, printed on a line of its own.
 LEAD_IN = re.compile(
     r'^(?:e\.?\s?g\.?|eg\.?|for example|accept(?:able)?(?: any of the following)?'
@@ -274,7 +274,11 @@ LEAD_IN_INLINE = re.compile(
     r'^(?:e\.?\s?g\.?|eg\.?|for example|accept(?: any of the following)?'
     r'|possible (?:candidate )?(?:response|answer)s?'
     r'|suggested (?:response|answer)s?|sample (?:response|answer)s?'
-    r'|answers? may include|examples?(?:\s+(?:include|may include))?)'
+    r'|answers? may include'
+    # "Example of accurate statements include:" — the SEC names what the list
+    # is before it prints it, and cutting at "Example" alone left "of accurate
+    # statements include" standing as the first answer.
+    r'|examples?(?:\s+of[^:.]{0,40}?)?(?:\s+(?:include|are|may include))?)'
     r'\s*[:.]?\s+(?=[A-Z0-9])', re.I)
 # And the same lead-in printed PART WAY ALONG a row, which is how 2022 sets
 # every one of its lists: "Correctly identifies a characteristic of skilled

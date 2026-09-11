@@ -555,11 +555,11 @@
     "refsHash": "98497719950dbd78"
   },
   "physical-education": {
-    "cards": 226,
-    "contentHash": "58c0ef6306f9aefd",
+    "cards": 224,
+    "contentHash": "1c2d66bc714e35db",
     "coveragePct": 95.1,
-    "covered": 230,
-    "excluded": 475,
+    "covered": 228,
+    "excluded": 477,
     "leaves": 741,
     "open": 36,
     "orphans": 0,
@@ -567,7 +567,7 @@
       "count": 13,
       "hash": "0dbddd431bb256fe"
     },
-    "refsHash": "8f1c0208796bd8f2"
+    "refsHash": "29c08f61d2626a6f"
   },
   "physics": {
     "cards": 1133,

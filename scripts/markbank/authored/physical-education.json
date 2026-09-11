@@ -757,7 +757,7 @@
       "Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition",
       "Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person",
       "Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some",
-      "of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative",
+      "the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative",
       "Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"
      ]
     }
@@ -2121,7 +2121,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "of safety equipment relevant to named physical activity",
+    "verbatim": "safety equipment relevant to named physical activity",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -6277,7 +6277,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 1 marks",
    "answer": 2,
-   "ofParts": 5,
+   "ofParts": 4,
    "perPart": 1
   },
   "totalMarks": 2,
@@ -6293,7 +6293,6 @@
      "claimMax": 2,
      "perOption": 1,
      "options": [
-      "of accurate statements include",
       "Around 2007/2008 was the period when most positive test occurred",
       "The least amount of positive tests happened around 2020",
       "There has been an increase in the number of positive tests since the year 2020",
@@ -8213,7 +8212,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "of adapted physical activity provided +",
+    "verbatim": "adapted physical activity provided +",
     "marks": 12,
     "openList": true,
     "contextNote": ""
@@ -8242,7 +8241,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "of gamesmanship in physical activity or sport",
+    "verbatim": "gamesmanship in physical activity or sport",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -8823,68 +8822,6 @@
     "kind": "point",
     "verbatim": "Two weeks — Microcycle",
     "marks": 1,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q13di",
-  "topicId": "physical-education-0-23",
-  "conceptId": "pe-0-23-artistic-aesthetic-criteria-performance",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2026 OL Q13(d)(i)",
-  "questionText": "Identify two artistic/aesthetic criteria of performance in a physical activity. You may not refer to use of space.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "1 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 1,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Space cannot be used",
-    "marks": 1,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q14cv",
-  "topicId": "physical-education-0-9",
-  "conceptId": "pe-0-9-fitness-test-these-components",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q14(c)(v)",
-  "questionText": "State a fitness test for each of these components of fitness. Fitness Test",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Coordination or muscular endurance cannot be used",
-    "marks": null,
     "openList": true,
     "contextNote": ""
    }

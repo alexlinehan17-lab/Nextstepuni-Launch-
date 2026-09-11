@@ -52,7 +52,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give an example of two different pieces of safety equipment that must be worn when participating in a named physical activity.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "of safety equipment relevant to named physical activity", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "safety equipment relevant to named physical activity", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Boxing – mouth guard, gloves", marks: null, openList: true },
     ],
   } as SecCard,
@@ -1466,32 +1466,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Two months — Mesocycle", marks: 1, openList: true },
     { id: "r-2", kind: "point", verbatim: "A full year — Macrocycle", marks: 1, openList: true },
     { id: "r-3", kind: "point", verbatim: "Two weeks — Microcycle", marks: 1, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2026-ol-q13di", topicId: "physical-education-0-23", conceptId: "pe-0-23-artistic-aesthetic-criteria-performance",
-    section: "B", questionRef: "2026 OL Q13(d)(i)",
-    questionText: "Identify two artistic/aesthetic criteria of performance in a physical activity. You may not refer to use of space.",
-    tariffModel: {"kind":"fixed","notation":"1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Space cannot be used", marks: 1, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2026-ol-q14cv", topicId: "physical-education-0-9", conceptId: "pe-0-9-fitness-test-these-components",
-    section: "C", questionRef: "2026 OL Q14(c)(v)",
-    questionText: "State a fitness test for each of these components of fitness. Fitness Test",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Coordination or muscular endurance cannot be used", marks: null, openList: true },
     ],
   } as SecCard,
   {

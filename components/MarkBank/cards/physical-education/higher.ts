@@ -310,7 +310,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two Irish anti-doping rule violations.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":11,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some","of the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identifies two Irish anti-doping rule violations", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["The Presence of a Prohibited Substance or its Metabolites or Markers in an Athlete’s Sample","Evading, Refusing or Failing to Submit to Sample Collection","Committing Three Whereabouts Failures in Twelve Months","Tampering or Attempted Tampering with any Part of Doping Control","Possession of a Prohibited Substance or a Prohibited Method","Trafficking or Attempted Trafficking in any Prohibited Substance or a Prohibited Method","Competition of any Prohibited Substance or any Prohibited Method that is prohibited Out-of-Competition","Complicity - Assisting, encouraging, aiding, abetting, conspiring, covering up or any other type of intentional complicity involving an anti-doping rule violation, Attempted anti-doping rule violation or violation of Article 10.8.1 by another Person","Prohibited Association - Athletes and other Persons must not work with coaches, trainers, physicians or other Athlete Support Personnel who are Ineligible on account of an anti-doping rule violation or who have been criminally convicted or professionally disciplined in relation to doping. Some","the types of association which are prohibited include: obtaining training, strategy, technique, nutrition or medical advice; obtaining therapy, treatment or prescriptions; providing any bodily products for analysis; or allowing the Athlete Support Person to serve as an agent or representative","Sport Ireland (2019) The Irish Anti-Doping Rules 2015 Version 2.0. pages 14"]} },
     ],
   } as SecCard,
   {
@@ -1540,9 +1540,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2024-hl-q16ai", topicId: "physical-education-1-8", conceptId: "pe-1-8-make-statements-about-doping",
     section: "C", questionRef: "2024 HL Q16(a)(i)",
     questionText: "Make two statements about doping in cycling over recent years based on information presented in Figure 12.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":5,"perPart":1}, totalMarks: 2,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":4,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["of accurate statements include","Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Any 2 of the answers the scheme states", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1967,7 +1967,7 @@ export const CARDS: SecCard[] = [
     questionText: "Examine ways in which participants in adapted physical activities can be provided with opportunities to achieve excellence.",
     tariffModel: {"kind":"fixed","notation":"12 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "of adapted physical activity provided +", marks: 12, openList: true },
+    { id: "r-1", kind: "point", verbatim: "adapted physical activity provided +", marks: 12, openList: true },
     ],
   } as SecCard,
   {
@@ -1980,7 +1980,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two examples of gamesmanship.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "of gamesmanship in physical activity or sport", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "gamesmanship in physical activity or sport", marks: null, openList: true },
     ],
   } as SecCard,
   {
