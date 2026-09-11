@@ -157,7 +157,7 @@ describe('guest onboarding (no account)', () => {
   it('mounts the same Onboarding for a signed-out visitor with ?setup=guest, with no user behind it', async () => {
     bootParams.set('setup', 'guest');
     renderRouter();
-    expect(await screen.findByText('Hi there — I\'m Puifín, your guide here.')).toBeInTheDocument();
+    expect(await screen.findByText('Hi there — welcome to NextStepUni.')).toBeInTheDocument();
     expect(screen.queryByText('LOGIN PAGE')).not.toBeInTheDocument();
     expect(readGuestPhase()).toBe('onboarding');
 
@@ -245,7 +245,7 @@ describe('guest onboarding (no account)', () => {
     // ...and a signed-in student who does need onboarding gets THEIR onboarding, not the guest one.
     authState.needsOnboarding = true;
     renderRouter();
-    expect(await screen.findByText('Hi Aoife — I\'m Puifín, your guide here.')).toBeInTheDocument();
+    expect(await screen.findByText('Hi Aoife — welcome to NextStepUni.')).toBeInTheDocument();
     expect(screen.queryByText(/Dive in/)).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Get Started/ }));
     await waitFor(() => expect(localStorage.getItem('nextstepuni:onboarding-draft:v1:student-1:fresh')).not.toBeNull());
