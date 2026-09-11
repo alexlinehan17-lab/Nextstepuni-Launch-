@@ -34,9 +34,7 @@ export const COPY = {
   nav: {
     links: [
       { label: "What's inside", href: '#chapters' },
-      { label: 'How it works', href: '#how' },
       { label: 'Subjects', href: '#subjects' },
-      { label: 'Schools', href: '#schools' },
       { label: 'CERTLE', href: '/certle' },
     ],
     signIn: 'Sign in',
@@ -110,7 +108,7 @@ export const COPY = {
           'Open a paper from 2010 on, with its marking scheme beside it where the SEC published one. On most papers you can tap a question and see just that question’s part of the scheme.',
           'Build a mock from real questions, sit it against the clock, and mark it afterwards.',
         ],
-        frameLabel: 'Paper Trail · 2024, Higher',
+        frameLabel: 'Paper Trail · Biology 2024 · Answers on',
       },
       {
         id: 'atlas', numeral: 'III', word: 'Topic Atlas', railLabel: 'Topic Atlas',

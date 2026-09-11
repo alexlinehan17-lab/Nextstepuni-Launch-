@@ -5,7 +5,7 @@
  * Top bar. Starguy sits left of the wordmark, the way HappyStack seats its
  * mascot. Links are plain text; the active section gets an ink underline.
  * One orange CTA, present at every width so the sticky bar always carries the
- * conversion action. Below 1280px — where five links, sign-in and the CTA no
+ * conversion action. Below 1024px — where three links, sign-in and the CTA no
  * longer fit on one line — the links fold into a text "Menu" toggle.
  *
  * The bar has two states. At rest it is open type on the white canvas; once
@@ -104,17 +104,17 @@ const Nav: React.FC<{ page?: 'landing' | 'certle' }> = ({ page = 'landing' }) =>
           <Wordmark className="landing-nav-mark" />
         </a>
 
-        <nav aria-label="Primary" className="hidden xl:flex items-center gap-7">
+        <nav aria-label="Primary" className="hidden lg:flex items-center gap-7">
           {COPY.nav.links.map(l => link(l))}
         </nav>
 
         <div className="flex items-center gap-3 shrink-0">
-          <a href={APP_SIGNIN_URL} className="hidden xl:inline-block" style={{ fontFamily: FONT.sans, fontWeight: 600, fontSize: 15, color: L.ink, textDecoration: 'none', padding: '6px 2px' }}>{COPY.nav.signIn}</a>
-          <span className="hidden xl:inline-block"><Button href={APP_URL} size="md">{COPY.nav.cta}</Button></span>
-          <span className="xl:hidden inline-block"><Button href={APP_URL} size="sm" ariaLabel={COPY.nav.cta}>{COPY.nav.ctaShort}</Button></span>
+          <a href={APP_SIGNIN_URL} className="hidden lg:inline-block" style={{ fontFamily: FONT.sans, fontWeight: 600, fontSize: 15, color: L.ink, textDecoration: 'none', padding: '6px 2px' }}>{COPY.nav.signIn}</a>
+          <span className="hidden lg:inline-block"><Button href={APP_URL} size="md">{COPY.nav.cta}</Button></span>
+          <span className="lg:hidden inline-block"><Button href={APP_URL} size="sm" ariaLabel={COPY.nav.cta}>{COPY.nav.ctaShort}</Button></span>
           <button
             type="button"
-            className="xl:hidden"
+            className="lg:hidden"
             aria-expanded={open}
             aria-controls="landing-mobile-menu"
             onClick={() => setOpen(o => !o)}
@@ -126,7 +126,7 @@ const Nav: React.FC<{ page?: 'landing' | 'certle' }> = ({ page = 'landing' }) =>
       </Container>
 
       {open && (
-        <div id="landing-mobile-menu" className="xl:hidden" style={{ borderTop: `1px solid ${L.hairline}`, background: L.paper }}>
+        <div id="landing-mobile-menu" className="lg:hidden" style={{ borderTop: `1px solid ${L.hairline}`, background: L.paper }}>
           <Container style={{ paddingTop: 6, paddingBottom: 18 }}>
             {COPY.nav.links.map(l => link(l, true))}
             <a href={APP_SIGNIN_URL} style={{ display: 'block', fontFamily: FONT.sans, fontWeight: 600, fontSize: 22, color: L.ink, textDecoration: 'none', padding: '14px 0' }}>{COPY.nav.signIn}</a>

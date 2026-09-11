@@ -234,7 +234,7 @@ export default defineConfig(() => {
             // Privacy Policy URL Apple/users hit must resolve to the notice itself.
             // The landing page is its own document: a returning visitor's service
             // worker must not answer /landing with the cached app shell.
-            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/, /\/landing(-dev\.html)?$/, /\/certle(?:\.html|\/)?$/],
+            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/, /\/landing(-dev\.html)?$/, /\/certle(?:\.html|\/)?$/, /\/landing-demo\.html$/],
             runtimeCaching: [
               // Paper Trail answer sidecars — small per-paper coordinate JSON on
               // Firebase Storage. SWR: serve cache instantly, refetch in the
@@ -333,6 +333,7 @@ export default defineConfig(() => {
             main: path.resolve(__dirname, 'index.html'),
             landing: path.resolve(__dirname, 'landing-dev.html'),
             certle: path.resolve(__dirname, 'certle.html'),
+            landingDemo: path.resolve(__dirname, 'landing-demo.html'),
           },
           output: {
             // Function form (not the object/array form) so EVERY module id is

@@ -128,6 +128,15 @@ export const GlassStage: React.FC<{
     const root = innerRef.current;
     if (!root) return;
     const onWheel = (e: WheelEvent) => {
+      // A nested app pane may still have room even when this outer frame does not.
+      let node = e.target instanceof Element ? e.target : null;
+      while (node && node !== root) {
+        if (node instanceof HTMLElement && /auto|scroll/.test(getComputedStyle(node).overflowY)) {
+          const canScroll = e.deltaY < 0 ? node.scrollTop > 0 : node.scrollTop + node.clientHeight < node.scrollHeight - 1;
+          if (canScroll) return;
+        }
+        node = node.parentElement;
+      }
       const atTop = root.scrollTop <= 0;
       const atBottom = root.scrollTop + root.clientHeight >= root.scrollHeight - 1;
       if ((e.deltaY < 0 && atTop) || (e.deltaY > 0 && atBottom)) e.preventDefault();

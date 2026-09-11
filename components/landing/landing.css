@@ -145,3 +145,7 @@ html.lenis, html.lenis body { height: auto; }
 }
 .landing-nav-link--certle { letter-spacing:.045em; }
 @media(prefers-reduced-motion:reduce) { .landing-nav-link::before,.landing-nav-link::after { transition:none!important; } }
+
+.landing-footer-statement-row { position:relative; display:flex; align-items:flex-end; justify-content:space-between; gap:48px; }
+.landing-footer-caption { margin:0 0 7px; max-width:420px; font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600; line-height:1.4; letter-spacing:-.015em; text-align:right; color:#1a1a1a; }
+@media(max-width:760px) { .landing-footer-statement-row { flex-direction:column; align-items:flex-start; gap:22px; } .landing-footer-caption { max-width:32ch; font-size:13px; text-align:left; } }

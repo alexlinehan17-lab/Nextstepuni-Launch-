@@ -106,6 +106,8 @@ interface ViewerProps {
   initialSide?: 'paper' | 'scheme';
   /** 1-based starting page per side (from recents). */
   initialPaperPage?: number;
+  /** Open a guided preview with the verified answer ribbons already visible. */
+  initialAnswersOn?: boolean;
   initialSchemePage?: number;
   /** Storage URL of this paper's PaperAnswerMap sidecar — present only when a
    *  verified answer map shipped. Drives the "Answers" toggle + question chips. */
@@ -177,6 +179,7 @@ const Viewer: React.FC<ViewerProps> = ({
   scheme,
   initialSide = 'paper',
   initialPaperPage = 1,
+  initialAnswersOn = false,
   initialSchemePage = 1,
   answersUrl,
   focusAnchorsUrl,
@@ -198,7 +201,7 @@ const Viewer: React.FC<ViewerProps> = ({
   const bump = useCallback(() => forceRender(n => n + 1), []);
 
   // ── answers (per-question marking-scheme crops) ──
-  const [answersOn, setAnswersOn] = useState(false);
+  const [answersOn, setAnswersOn] = useState(initialAnswersOn);
   const [answerMap, setAnswerMap] = useState<PaperAnswerMap | null>(null);
   const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
   const [focusAnchorMap, setFocusAnchorMap] = useState<PaperAnswerMap | null>(null);
@@ -476,6 +479,14 @@ const Viewer: React.FC<ViewerProps> = ({
       return next;
     });
   }, [ensureAnswerMap, scheme, load]);
+
+  const initialAnswersStarted = useRef(false);
+  useEffect(() => {
+    if (!initialAnswersOn || initialAnswersStarted.current) return;
+    initialAnswersStarted.current = true;
+    ensureAnswerMap();
+    if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
+  }, [initialAnswersOn, ensureAnswerMap, scheme, load]);
 
   // Topics overlay: reuses the answer-map anchors for positions; tags themselves
   // are committed in-bundle, so no extra fetch beyond the anchor map.
@@ -1028,6 +1039,7 @@ const Viewer: React.FC<ViewerProps> = ({
   return createPortal(
     <div
       ref={rootRef}
+      data-lenis-prevent
       className="fixed inset-0 z-[100] flex flex-col bg-zinc-100 dark:bg-zinc-950"
       role="dialog"
       aria-modal="true"
