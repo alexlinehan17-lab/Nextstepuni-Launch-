@@ -8,7 +8,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2020 HL Q10",
-  "questionText": "Analyse the impact media coverage has on spectator behaviour. Do not write on this page Section B Case Study 50 marks Examine the text, images and graphs in the",
+  "questionText": "Analyse the impact media coverage has on spectator behaviour.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -32,6 +32,134 @@
     "marks": null,
     "openList": true,
     "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2020-hl-q11bi",
+  "topicId": "physical-education-0-6",
+  "conceptId": "pe-0-6-training-patterns-evident-figure",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2020 HL Q11(b)(i)",
+  "questionText": "Identify two key training patterns evident in Figure 6. .",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 1 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 1
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Identifies two key patterns +",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "The tennis player has 4 hours of tennis per week. This happens every week and does not change",
+      "Strength training is completed every week in either one or two hour blocks",
+      "Flexibility training is completed in all of the five weeks in one hour blocks"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2020-hl-q11bii",
+  "topicId": "physical-education-0-10",
+  "conceptId": "pe-0-10-suggest-reasons-training-patterns",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2020 HL Q11(b)(ii)",
+  "questionText": "Suggest reasons for one of the training patterns identified by you in question 11",
+  "stem": "Q11(b)(i): Identify two key training patterns evident in Figure 6. .",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 1 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Relevant reasons suggested +",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme pays 3 then 1 marks, in the order the answers are credited.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "periodisation",
+      "principles of training mark"
+     ],
+     "perOptionSteps": [
+      3,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2020-hl-q11c",
+  "topicId": "physical-education-0-7",
+  "conceptId": "pe-0-7-would-roger-federer-learn",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)",
+  "questionText": "What would Roger Federer learn about Andy Murray’s second serve from analysing the data shown in Figure 4?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 6 marks",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Using evidence to draw a conclusion about Murray’s second serve marks",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "2 answers at 6 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Murrays serve goes short in the service box a lot of the time thus allowing his opponent more time to adjust and return the ball. This short serve probably generates less speed and as a result his opponent has more time to react",
+      "The data suggests that Murray will put most of his second serve’s to Federer’s left. Therefore, Federer can either come to the net off his backhand or run around and hit on his forehand. Federer can attack the second serve"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -66,14 +194,6 @@
     "id": "r-2",
     "kind": "point",
     "verbatim": "Skill – learned behaviour “A learned action/behaviour with the intention of bringing about predetermined results with maximum certainty and minimum outlay of time or energy” (Knapp",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "1963)",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -201,6 +321,35 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2020-hl-q13a",
+  "topicId": "physical-education-0-19",
+  "conceptId": "pe-0-19-figure-neville-multiple-milestones",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2020 HL Q13(a)",
+  "questionText": "Figure 8 Joy Neville has set multiple milestones, including refereeing in the Division 1A of the Ulster Bank League. She has become the first woman to officiate a Pro 14 match and the first woman to officiate in the Challenge Cup. Along with Spain’s Alhambra Nievas, she was one of the first women to officiate a men’s international match when she took charge of Norway versus Denmark. Neville was also awarded Referee of the Year in November 2017, following her performance in the women’s World Cup final. A game of rugby union has two periods of 40 minutes each. In international matches the referee will stop the clock for stoppages.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "up to a maximum of",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2020-hl-q13ci",
   "topicId": "physical-education-0-5",
   "conceptId": "pe-0-5-list-demands-officiating-rugby",
@@ -238,6 +387,35 @@
       "Muscular endurance"
      ]
     }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2020-hl-q13cii",
+  "topicId": "physical-education-0-5",
+  "conceptId": "pe-0-5-based-fitness-demands-have",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2020 HL Q13(c)(ii)",
+  "questionText": "Based on the physical fitness demands you have identified in question 13 (c) (i), discuss two different methods of physical fitness training Joy could use to help her meet the demands of her role.",
+  "stem": "Q13(c)(i): List the demands of officiating rugby in terms of physical fitness.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "interval training",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -292,7 +470,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Rules are agreed upon sets of principles, policies, criteria, descriptions and/or conducts governing a sport or physical activity for reasons of safety, sportsmanship, equipment or facility design and competitiveness",
+    "verbatim": "Roles – various roles such as defenders/attackers in gameplay and captains",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -300,7 +478,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Roles – various roles such as defenders/attackers in gameplay and captains",
+    "verbatim": "Also non playing roles such as referee, coach",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -308,60 +486,10 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Also non playing roles such as referee, coach",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
     "verbatim": "Conventions – procedural protocols (e.g. soccer- flip of coin)",
     "marks": null,
     "openList": true,
     "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2020-hl-q15ai",
-  "topicId": "physical-education-1-6",
-  "conceptId": "pe-1-6-principles-ethical-practice-sport",
-  "level": "higher",
-  "year": 2020,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2020 HL Q15(a)(i)",
-  "questionText": "Define three key principles of ethical practice in sport.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 2 marks",
-   "answer": 3,
-   "ofParts": 3,
-   "perPart": 2
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Respect, integrity, fairness or equity defined",
-    "marks": 6,
-    "openList": true,
-    "contextNote": "3 answers at 2 marks each, as the scheme prices it.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Respect",
-      "integrity",
-      "fairness or equity defined"
-     ]
-    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -481,7 +609,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2020 HL Q15(c)(ii)",
-  "questionText": "Discuss developments in physical activity and sport over the last 20 years from the perspective of a different group to the group used by you to answer question",
+  "questionText": "Discuss developments in physical activity and sport over the last 20 years from the perspective of a different group to the group used by you to answer question 15",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -550,7 +678,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2020 HL Q16(c)",
-  "questionText": "Heptathletes must be able to cope with special tactical demands. Heptathletes receive points for each event, according to a scoring table. Therefore, the result Suggest strategies a heptathlete could implement to address the demands outlined above.",
+  "questionText": "Heptathletes must be able to cope with special tactical demands. Heptathletes receive points for each event, according to a scoring table. Therefore, the results of the events and not the placing are the most important thing. Like all combined event athletes they must be able to achieve maximum performance: • in the sprints and hurdles without the benefit of qualifying runs • in the long jump and throws with a limited number of attempts • in a fixed sequence of events over a two day period • even as they become fatigued. Suggest strategies a heptathlete could implement to address the demands outlined above.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -585,6 +713,47 @@
       3,
       2,
       2
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2020-hl-q4",
+  "topicId": "physical-education-0-3",
+  "conceptId": "pe-0-3-figure-jason-smyth-figure",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2020 HL Q4",
+  "questionText": "Figure 2 Jason Smyth, in Figure 2 above, is a Paralympian with a visual impairment. He is a 100 metre champion. He was crowned the “fastest Paralympian on the Planet” when he won at the Rio ‘One Year to Go’ celebration event. State and explain two different types of feedback that would be appropriate for Jason.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 1 marks",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 1
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Two types of feedback +",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "intrinsic feedback, kinaesthetic",
+      "extrinsic feedback, verbal"
      ]
     }
    }
@@ -763,6 +932,47 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2021-hl-q13b",
+  "topicId": "physical-education-0-0",
+  "conceptId": "pe-0-0-stage-skill-learning-donovan",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 HL Q13(b)",
+  "questionText": "What stage of skill learning are the O’Donovan brothers at in the sport of rowing? Justify your answer with reference to the case study.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 1 marks",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 1
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Correct stage of skill learning identified",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "“As a technique there is a lot involved, but after 17 years you don’t even have to think about it at this stage, it just happens.” won a silver medal in the men’s lightweight double sculls category at the 2016",
+      "Rio Olympic Games"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2021-hl-q13di",
   "topicId": "physical-education-0-18",
   "conceptId": "pe-0-18-measures-caroline-macmanus-took",
@@ -771,7 +981,7 @@
   "subjectId": "physical-education",
   "section": "B",
   "questionRef": "2021 HL Q13(d)(i)",
-  "questionText": "Name two measures that Caroline MacManus took to monitor Gary and Paul O’Donovan so that their chances of overtraining could be reduced. can assist coaches and",
+  "questionText": "Name two measures that Caroline MacManus took to monitor Gary and Paul O’Donovan so that their chances of overtraining could be reduced. can assist coaches and athletes to avoid the chance of overtraining.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -795,6 +1005,125 @@
     "marks": null,
     "openList": true,
     "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-hl-q13diii",
+  "topicId": "physical-education-0-10",
+  "conceptId": "pe-0-10-figure-gives-detailed-description",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 HL Q13(d)(iii)",
+  "questionText": "Figure 5 gives a detailed description of a week-long training plan for a rower in the early stages of their season. Using evidence from this plan to support your answer, identify three components of physical fitness that are important in rowing. is important in rowing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cardio respiratory endurance",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "90 minutes or rowing/ running or cycling- 3 days a week",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Muscular endurance",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Volume based weight training- 3 days a week",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Flexibility",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Stretching is in the plan 7 days a week",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Also accept balance – core training, strength – circuit",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-hl-q13e",
+  "topicId": "physical-education-0-12",
+  "conceptId": "pe-0-12-reference-case-study-phases",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 HL Q13(e)",
+  "questionText": "With reference to the case study, name the three phases of a 2000 m rowing race and explain the contribution of the relevant energy systems during each phase.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 1 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 1
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Phase named +",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Phase 1 – Sprint start",
+      "Phase 2 – Maintenance phase",
+      "Phase 3 – Sprint finish mark +"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -842,35 +1171,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2021-hl-q14di",
-  "topicId": "physical-education-1-2",
-  "conceptId": "pe-1-2-examine-participation-levels-young",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2021 HL Q14(d)(i)",
-  "questionText": "Examine how physical activity participation levels of young men can be influenced by media representations of the ‘perfect body’.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Considers the argument that physical activity participation levels of young men can be influenced by media representations of the ‘perfect body’ in a way that uncovers the assumptions and interrelationships of the issue",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2021-hl-q15a",
   "topicId": "physical-education-0-12",
   "conceptId": "pe-0-12-endurance-athletes-need-carefully",
@@ -879,7 +1179,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2021 HL Q15(a)",
-  "questionText": "Endurance athletes need to carefully plan their nutrition for optimum performance. Explain how the effective use of carbohydrates before and during an event can",
+  "questionText": "Endurance athletes need to carefully plan their nutrition for optimum performance. Explain how the effective use of carbohydrates before and during an event can help endurance athletes optimise their performance.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -892,14 +1192,6 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Before an event",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "help endurance athletes optimise their performance",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -916,7 +1208,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2021 HL Q15(b)(i)",
-  "questionText": "The presence of a prohibited substance in an athlete’s sample, and the use or attempted use of a prohibited substance or prohibited method by an athlete are Iri",
+  "questionText": "The presence of a prohibited substance in an athlete’s sample, and the use or attempted use of a prohibited substance or prohibited method by an athlete are Irish anti-doping rule violations. Identify three other distinct Irish anti-doping rule violations.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -924,7 +1216,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 10,
+   "ofParts": 9,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -948,8 +1240,7 @@
       "8. Administration to an Athlete of any Prohibited Method or Prohibited Substance; assisting, encouraging, aiding, abetting, covering up",
       "9. Complicity or Attempted Complicity - Involvement in an ADRV committed by another person, such as helping to cover up that ADRV or avoid detection, will be sanctioned in the same way as that violation",
       "10. Prohibited Association -Associating with a person such as a coach, doctor or physio who has been found guilty of an ADRV or equivalent offence to a doping violation will be sanctioned with a ban of up to 2 years",
-      "16 July",
-      "2021)"
+      "16 July"
      ]
     }
    }
@@ -987,14 +1278,14 @@
  },
  {
   "id": "pe-2021-hl-q15d",
-  "topicId": "physical-education-1-9",
-  "conceptId": "pe-1-9-post-exercise-recovery-strategies",
+  "topicId": "physical-education-0-12",
+  "conceptId": "pe-0-12-post-exercise-recovery-strategies",
   "level": "higher",
   "year": 2021,
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2021 HL Q15(d)",
-  "questionText": "Describe three post exercise recovery strategies that an athlete could use which would not put them at risk of committing an Irish anti-doping rule violation. (",
+  "questionText": "Describe three post exercise recovery strategies that an athlete could use which would not put them at risk of committing an Irish anti-doping rule violation. (You are not permitted to use nutritional strategies as one of your answers).",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -1021,6 +1312,52 @@
       "cold water immersion",
       "compression garments",
       "use of active recovery days"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-hl-q16b",
+  "topicId": "physical-education-0-18",
+  "conceptId": "pe-0-18-figure-shows-republic-ireland",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2021 HL Q16(b)",
+  "questionText": "Figure 8 shows the Republic of Ireland women’s national soccer team head coach, Vera Pauw, conducting a training session prior to a European Championship qualifying match versus Germany in September 2020.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 1 marks",
+   "answer": 2,
+   "ofParts": 7,
+   "perPart": 1
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Identified principle of effective practice",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "varied",
+      "progressive",
+      "specific",
+      "measurable",
+      "achievable",
+      "realistic",
+      "timed"
      ]
     }
    }
@@ -1094,6 +1431,43 @@
       "Displacement is a vector quantity. It is described in terms of its magnitude and direction. Displacement is a measure of motion ‘as the crow flies’"
      ]
     }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-hl-q17aii",
+  "topicId": "physical-education-2-2",
+  "conceptId": "pe-2-2-using-figure-calculate-distance",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2021 HL Q17(a)(ii)",
+  "questionText": "Using Figure 9, calculate the distance and the displacement travelled by an athlete in Lane 1 having completed a 400 m sprint.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Distance= 400m",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Displacement= zero",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -1251,7 +1625,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2021 HL Q17(d)",
-  "questionText": "Elite athletes make up a very small proportion of Irish society. It can be argued that it is far more important to develop positive physical activity patterns f",
+  "questionText": "Elite athletes make up a very small proportion of Irish society. It can be argued that it is far more important to develop positive physical activity patterns for all members of society rather than focus support on the sporting elite. Identify a national policy that supports physical activity for all and explain how it does this.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -1273,14 +1647,14 @@
  },
  {
   "id": "pe-2021-hl-q18c",
-  "topicId": "physical-education-0-11",
-  "conceptId": "pe-0-11-michael-jordan-national-basketball",
+  "topicId": "physical-education-0-13",
+  "conceptId": "pe-0-13-michael-jordan-national-basketball",
   "level": "higher",
   "year": 2021,
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2021 HL Q18(c)",
-  "questionText": "Michael Jordan won six National Basketball Association (NBA) Championships and was named most valuable player (MVP) in each of those six NBA finals series. Exam",
+  "questionText": "Michael Jordan won six National Basketball Association (NBA) Championships and was named most valuable player (MVP) in each of those six NBA finals series. Examine two psychological strategies that Jordan could have used pre performance to ensure that he was mentally prepared for the psychological demands of an NBA final series.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -1288,7 +1662,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 6 marks",
    "answer": 2,
-   "ofParts": 2,
+   "ofParts": 3,
    "perPart": 6
   },
   "totalMarks": 12,
@@ -1304,8 +1678,9 @@
      "claimMax": 2,
      "perOption": 6,
      "options": [
-      "positive self-talk, visualisation, meditation marks",
-      "Two psychological strategies pre performance +"
+      "positive self-talk",
+      "visualisation",
+      "meditation marks"
      ]
     }
    }
@@ -1321,7 +1696,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2021 HL Q18(d)(i)",
-  "questionText": "In Figure 15 Jordan is seen drinking the sports drink Gatorade. Gatorade describe itself as “The Sports Fuel Company”. Other than sports drinks, name four suppl",
+  "questionText": "In Figure 15 Jordan is seen drinking the sports drink Gatorade. Gatorade describe itself as “The Sports Fuel Company”. Other than sports drinks, name four supplements that could potentially enhance a basketball player’s performance. might enhance the performance levels of a basketball player.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -1351,6 +1726,35 @@
       "nitrates"
      ]
     }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-hl-q18dii",
+  "topicId": "physical-education-0-12",
+  "conceptId": "pe-0-12-supplements-question",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2021 HL Q18(d)(ii)",
+  "questionText": "Explain how the use of each of the supplements named by you in question 18",
+  "stem": "Q18(d)(i): In Figure 15 Jordan is seen drinking the sports drink Gatorade. Gatorade describe itself as “The Sports Fuel Company”. Other than sports drinks, name four supplements that could potentially enhance a basketball player’s performance. might enhance the performance levels of a basketball player.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "+ + sports supplements might enhance the performance levels of a + basketball player",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -1392,21 +1796,13 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Whole practice explained",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
     "verbatim": "skill is practiced in its entirety from start to finish",
     "marks": null,
     "openList": true,
     "contextNote": ""
    },
    {
-    "id": "r-5",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "running",
     "marks": null,
@@ -1467,57 +1863,33 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "bestNofParts",
+   "notation": "2 x 2 marks",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 2
   },
-  "totalMarks": 1,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "speed",
-    "marks": null,
+    "kind": "anyN",
+    "verbatim": "Identified performance related fitness demand relevant to physical activity named",
+    "marks": 4,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "power",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "agility",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "reaction time",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "coordination",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "balance marks",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "2 answers at 2 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "speed",
+      "power",
+      "agility",
+      "reaction time",
+      "coordination",
+      "balance marks"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -1613,7 +1985,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 2,
+   "ofParts": 3,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -1629,8 +2001,9 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "performing a cartwheel, jumping jacks, side step marks",
-      "Two different examples of frontal plane movement +"
+      "performing a cartwheel",
+      "jumping jacks",
+      "side step marks"
      ]
     }
    }
@@ -1651,33 +2024,30 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "bestNofParts",
+   "notation": "2 x 1 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 1
   },
-  "totalMarks": 1,
+  "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "fairness",
-    "marks": null,
+    "kind": "anyN",
+    "verbatim": "Two principles of ethical practice identified",
+    "marks": 2,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "respect",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "integrity",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "fairness",
+      "respect",
+      "integrity"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -1703,7 +2073,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "State anxiety is an immediate emotional state that is characterised by apprehension, fear, tension and an increase in physiological arousal in response to a specific situation or demand in a game or event. It is a temporary emotional state",
+    "verbatim": "State anxiety is an immediate emotional state that is characterised by apprehension",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -1711,15 +2081,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Trait anxiety is considered to be a part of one’s personality – an acquired behavioral tendency or disposition to perceive certain situations as threatening although they may not be",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "There is a direct relationship between an athlete’s level of trait anxiety and state anxiety, athletes with high trait anxiety tend to experience more state anxiety",
+    "verbatim": "fear",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -1756,23 +2118,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Mass-participation sports defined",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
     "verbatim": "large scale, competitive, inclusive events",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Leisure and recreation defined",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -1863,7 +2209,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2021 OL Q12(b)",
-  "questionText": "Describe one other method used to gather information about the amount of physical activity completed and include one advantage and one disadvantage of using tha",
+  "questionText": "Describe one other method used to gather information about the amount of physical activity completed and include one advantage and one disadvantage of using that method.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -1892,6 +2238,229 @@
     "id": "r-3",
     "kind": "point",
     "verbatim": "global positioning systems",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-ol-q13a",
+  "topicId": "physical-education-0-1",
+  "conceptId": "pe-0-1-characteristics-does-simone-biles",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 OL Q13(a)",
+  "questionText": "What characteristics does Simone Biles display, that Rhys McClenaghan admires?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "She still looks to improve and raise the bar",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "2 answers at 5 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "She still looks to improve and raise the bar",
+      "She is resilient – she could fall three times and still win 5 +",
+      "She motivates others – Be Undeniable – she is and that’s what I want to be"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-ol-q13bi",
+  "topicId": "physical-education-1-20",
+  "conceptId": "pe-1-20-reference-case-study-example",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 OL Q13(b)(i)",
+  "questionText": "With reference to the case study, give an example of social regulation of the body.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Simone felt she had to hide her muscles because the boys in the school would stare at her and say, ‘Oh my gosh, look at her muscles!” Simone felt self",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "conscious about being strong, due to rule that it wasn’t permissible for a girl to be muscular and strong",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-ol-q13ci",
+  "topicId": "physical-education-1-2",
+  "conceptId": "pe-1-2-main-difference-participation-between",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 OL Q13(c)(i)",
+  "questionText": "What is the main difference in participation between male and female gymnasts in Figure 3?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Male gymnasts are older than female gymnasts",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-ol-q13cii",
+  "topicId": "physical-education-2-1",
+  "conceptId": "pe-2-1-reference-case-study-examples",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 OL Q13(c)(ii)",
+  "questionText": "With reference to the case study, give examples of the influences that impact on the participation patterns of boys and girls in gymnastics.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Female gymnasts are said to peak in performance at 16, the minimum age at which they can compete at senior level events, including the Olympics. In reality, many female gymnasts are considered to peak at 12. Whereas male gymnasts bulk up with puberty and become stronger competitors, their female peers are generally considered more effective as children. “You want to be light in the gym, you want to be petite,” says Biles, who started relatively late, at the age of 6. For females, once you go through puberty, your body changes, and that makes it harder to do gymnastics",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Role models, peer influence",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-ol-q13ei",
+  "topicId": "physical-education-0-7",
+  "conceptId": "pe-0-7-performance-related-components-fitness",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 OL Q13(e)(i)",
+  "questionText": "Identify two performance-related components of fitness required for gymnastics. Support your answer with reference to the case study.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "multiple twists and turns in the air before returning to the ground/beam",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Balance",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-ol-q13eii",
+  "topicId": "physical-education-0-7",
+  "conceptId": "pe-0-7-suggest-ways-develop-performance",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2021 OL Q13(e)(ii)",
+  "questionText": "Suggest ways to develop the performance-related components of fitness identified by you in question 13 (e) (i), in training.",
+  "stem": "Q13(e)(i): Identify two performance-related components of fitness required for gymnastics. Support your answer with reference to the case study.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "power – plyometrics, resistance training",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "balance – core, unilateral exercises",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -1946,49 +2515,30 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "bestNofParts",
+   "notation": "2 x 3 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 3
   },
-  "totalMarks": 3,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "longitudinal axis (also accept vertical/ mediolateral axis), rotation in transverse plane",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "horizontal axis (also accept transverse/frontal axis), rotation in sagittal plane marks medial axis (also accept sagittal axis), rotation in frontal plane",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Reference made to named physical activity",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "longitudinal – pirouette in dance, horizontal – somersault in gymnastics, medial – cartwheel in gymnastics",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Axis of movement",
-    "marks": null,
+    "marks": 6,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "2 answers at 3 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "longitudinal axis (also accept vertical/ mediolateral axis), rotation in transverse plane",
+      "longitudinal – pirouette in dance, horizontal – somersault in gymnastics, medial – cartwheel in gymnastics",
+      "Axis of movement"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -2036,9 +2586,42 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2021-ol-q14bi",
+  "topicId": "physical-education-1-18",
+  "conceptId": "pe-1-18-many-sports-programmes",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2021 OL Q14(b)(i)",
+  "questionText": "How many of the top 10 are sports programmes?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "7 out of",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2021-ol-q14bii",
-  "topicId": "physical-education-1-16",
-  "conceptId": "pe-1-16-suggest-reason-these-sporting",
+  "topicId": "physical-education-1-18",
+  "conceptId": "pe-1-18-suggest-reason-these-sporting",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "physical-education",
@@ -2183,7 +2766,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2021 OL Q16(c)",
-  "questionText": "With reference to a named physical activity, highlight changes in technology that may have had a positive and negative influence on that physical activity. You",
+  "questionText": "With reference to a named physical activity, highlight changes in technology that may have had a positive and negative influence on that physical activity. You are not allowed to use GPS technology and heatmaps in your answer.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -2281,35 +2864,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2021-ol-q17bi",
-  "topicId": "physical-education-2-2",
-  "conceptId": "pe-2-2-reference-concentration-influence-athlete",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2021 OL Q17(b)(i)",
-  "questionText": "With reference to a named physical activity, discuss how concentration can influence an athlete’s performance in that physical activity.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Considers how concentration can influence an athlete’s performance",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2021-ol-q17bii",
   "topicId": "physical-education-0-13",
   "conceptId": "pe-0-13-reference-strategy-athlete-could",
@@ -2363,6 +2917,80 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2021-ol-q17ci",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-label-body-types-shown",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2021 OL Q17(c)(i)",
+  "questionText": "Label the body types shown in Figure 8.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ectomorph Mesomorph Endomorph ( ) ( ) ( )",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2021-ol-q17cii",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-body-types-identified-question",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2021 OL Q17(c)(ii)",
+  "questionText": "For one of the body types identified by you in question 17 (c) (i), give an example of a physical activity someone of that body type might participate in.",
+  "stem": "Q17(c)(i): Label the body types shown in Figure 8.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ectomorph – marathon/ long distance runner, triathlons",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mesomorph –soccer, hockey",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Endomorph –wrestling, heavyweight boxing",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2021-ol-q18ai",
   "topicId": "physical-education-1-0",
   "conceptId": "pe-1-0-ask",
@@ -2376,23 +3004,19 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed",
+   "notation": "2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
   },
   "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Physical activity can be defined as any bodily movement produced by the",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "muscles of the body that results in the person expending energy",
-    "marks": null,
+    "marks": 2,
     "openList": true,
     "contextNote": ""
    }
@@ -2447,164 +3071,15 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2021-ol-q18cii",
-  "topicId": "physical-education-0-10",
-  "conceptId": "pe-0-10-coach-information-benefit-performer",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2021 OL Q18(c)(ii)",
-  "questionText": "How can a coach use this information to benefit the performer and to inform training plans for the performer in the future?",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Testing conducted appropriately on wide range of aspects relevant to physical activity selected and justification provided",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "A for selection of aspects",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Summary of data collected",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Wide range of data presented",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Analyse the performance",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Performance results analysed in detail, based on sound theoretical principles",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Identification of three distinct performance goals and evidence of on-going training/ practice and reflection",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Clearly stated performance goal that conforms to SMART or similar principle",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "B Rationale",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Based on sound theoretical principles",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Training/ Practice Programmes",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Detailed accurate and relevant plan based on a wide range of sound theoretical principles. Wide variety of strategies implemented",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-13",
-    "kind": "point",
-    "verbatim": "Reflections",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-14",
-    "kind": "point",
-    "verbatim": "Ongoing critical and insightful reflection",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-15",
-    "kind": "point",
-    "verbatim": "Concluding analysis",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-16",
-    "kind": "point",
-    "verbatim": "Repeat analysis",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2021-ol-q2",
-  "topicId": "physical-education-0-18",
-  "conceptId": "pe-0-18-there-number-methods-practice",
+  "topicId": "physical-education-0-3",
+  "conceptId": "pe-0-3-there-number-methods-practice",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2021 OL Q2",
-  "questionText": "There are a number of methods of practice that coaches can use when designing skill sessions for a physical activity. With reference to two named skills, outlin",
+  "questionText": "There are a number of methods of practice that coaches can use when designing skill sessions for a physical activity. With reference to two named skills, outline a different method of practice a coach could use for each skill. Skill 1 Practice method Skill 2 Practice method",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -2719,7 +3194,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2022 HL Q1",
-  "questionText": "The Collins Dictionary defines a characteristic as: A distinguishable quality, attribute or trait. Identify four characteristics that you would associate with t",
+  "questionText": "The Collins Dictionary defines a characteristic as: A distinguishable quality, attribute or trait. Identify four characteristics that you would associate with the performance of highly skilled athletes.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -2783,30 +3258,127 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2022-hl-q13e",
-  "topicId": "physical-education-1-0",
-  "conceptId": "pe-1-0-analyse-technical-demands-performer",
+  "id": "pe-2022-hl-q13aii",
+  "topicId": "physical-education-0-3",
+  "conceptId": "pe-0-3-ways-performer-stage-learning",
   "level": "higher",
   "year": 2022,
   "subjectId": "physical-education",
   "section": "B",
-  "questionRef": "2022 HL Q13(e)",
-  "questionText": "Analyse the physical and technical demands for a performer in a physical activity of your choice. You are not permitted to use pentathlon as your chosen physica",
+  "questionRef": "2022 HL Q13(a)(ii)",
+  "questionText": "Describe two ways that a performer at the stage of learning identified by you in (i) could improve their skill level.",
+  "stem": "Q13(a)(i): Identify the stage of learning that Natalya was most likely at when she began to learn the skills of fencing.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 3 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Very Good – Excellent description",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "2 answers at 3 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Fixed practice",
+      "feedback",
+      "Trial and error/ self-discovery"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-hl-q13ci",
+  "topicId": "physical-education-0-10",
+  "conceptId": "pe-0-10-approaches-training-outside-activities",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2022 HL Q13(c)(i)",
+  "questionText": "Identify two approaches to training outside of her activities/events that Natalya could use to enhance her athletic performance.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "bestNofParts",
+   "notation": "2 x 2 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 2
   },
-  "totalMarks": 12,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Analyses the physical and technical demands for a performer in chosen physical activity",
-    "marks": null,
+    "kind": "anyN",
+    "verbatim": "Approach identified",
+    "marks": 4,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "2 answers at 2 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Resistance training",
+      "yoga",
+      "pilates"
+     ]
+    }
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-hl-q13d",
+  "topicId": "physical-education-1-3",
+  "conceptId": "pe-1-3-natalya-comments-impact-participation",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2022 HL Q13(d)",
+  "questionText": "Natalya comments on the impact of her participation at the London Olympics on building the profile of her sport. Role models like Natalya can have a significant positive impact on the physical activity engagement of others. Examine two approaches that can be used to promote physical activity participation. You are not permitted to use role models in your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5 marks",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Examines two approaches that can be used to promote physical activity participation – role models not…",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "2 answers at 5 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Schools offering a varied Physical Education curriculum",
+      "Schools offering a range of extra-curricular activities",
+      "National physical activity strategy- Healthy Ireland- Get Ireland"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -3004,7 +3576,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "the culture and integrity of the sport may be questioned, The sport may experience a reduction in participants as people may be afraid that a certain culture of PED acceptance exists, parents may be unwilling to allow their children be cared for in such environments, withdrawal of sponsorships for the sport, the NGB and associated sporting events",
+    "verbatim": "the culture and integrity of the sport may be questioned",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -3012,7 +3584,23 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Examines the notion that athletes who use performance enhancing drugs (PEDs) can cause significant damage to the sport that they compete in",
+    "verbatim": "parents may be unwilling to allow their children be cared for in such environments",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "withdrawal of sponsorships for the sport",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "the NGB and associated sporting events",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -3029,7 +3617,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2022 HL Q16(c)",
-  "questionText": "Using the following table, identify three categories of PEDs, name an example of a drug in each category and state a performance enhancing effect of each of the",
+  "questionText": "Using the following table, identify three categories of PEDs, name an example of a drug in each category and state a performance enhancing effect of each of the named PEDs.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -3120,14 +3708,14 @@
  },
  {
   "id": "pe-2022-hl-q17c",
-  "topicId": "physical-education-0-0",
-  "conceptId": "pe-0-0-appropriate-method-analysing-aspects",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-appropriate-method-analysing-aspects",
   "level": "higher",
   "year": 2022,
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2022 HL Q17(c)",
-  "questionText": "Outline an appropriate method of analysing each of the following four aspects of performance: Choreography; Psychological preparedness; Skill and Technique; Str",
+  "questionText": "Outline an appropriate method of analysing each of the following four aspects of performance: Choreography; Psychological preparedness; Skill and Technique; Structures and Strategies. You are not permitted to use the same method of analysis for more than one aspect of performance.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -3228,7 +3816,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2022 HL Q3",
-  "questionText": "Explain two strategies that an athlete could use to enhance their mental preparedness during performance in a physical activity of your choice. Physical Activit",
+  "questionText": "Explain two strategies that an athlete could use to enhance their mental preparedness during performance in a physical activity of your choice. Physical Activity",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -3240,7 +3828,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Pre performance routine, Thought stopping/ Centring",
+    "verbatim": "Pre performance routine",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -3248,7 +3836,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Attentional focus on execution, Visualisation, Progressive muscular relaxation",
+    "verbatim": "Thought stopping/ Centring",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -3265,30 +3853,36 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2022 HL Q4",
-  "questionText": "As an impatient first year coach, I lacked these skills and became quickly frustrated at the slow learning curve exhibited by the basketball players on the Dayt",
+  "questionText": "As an impatient first year coach, I lacked these skills and became quickly frustrated at the slow learning curve exhibited by the basketball players on the Dayton Greendevils team. Basketball hall of fame Coach John Wooden discussing the importance of interpersonal skills in basketball coaching in his autobiography Wooden on Leadership. Figure 2 Identify four interpersonal skills that are desirable for effective coaching.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "bestNofParts",
+   "notation": "4 x 2 marks",
+   "answer": 4,
+   "ofParts": 4,
+   "perPart": 2
   },
   "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Communication skills, Emotional intelligence, Empathy, Leadership",
-    "marks": null,
+    "kind": "anyN",
+    "verbatim": "Identifies 4 interpersonal skills desirable for effective coaching",
+    "marks": 8,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Positivity, Excellent negotiation skills",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "4 answers at 2 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Communication skills",
+      "Emotional intelligence",
+      "Empathy",
+      "Leadership"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -3302,7 +3896,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2022 HL Q6",
-  "questionText": "Ice hockey is characterised by high intensity intermittent skating with rapid changes in velocity. The intensity and duration determine the extent of the contri",
+  "questionText": "Ice hockey is characterised by high intensity intermittent skating with rapid changes in velocity. The intensity and duration determine the extent of the contribution from energy systems. Explain how two of the body’s energy systems contribute to performance in a physical activity of your choice. Physical Activity",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -3381,7 +3975,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2022 HL Q8(c)",
-  "questionText": "Shipman mentions speed, velocity and momentum in describing the physics involved in discus throwing. Categorise each of these quantities as either a vector or a",
+  "questionText": "Shipman mentions speed, velocity and momentum in describing the physics involved in discus throwing. Categorise each of these quantities as either a vector or a scalar.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -3423,7 +4017,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2022 HL Q9",
-  "questionText": "Mass participation events are a concept of physical activity and can be described as events where a large number of participants engage in a physical activity a",
+  "questionText": "Mass participation events are a concept of physical activity and can be described as events where a large number of participants engage in a physical activity at the same time. Explain two concepts of physical activity other than mass participation events.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -3459,28 +4053,61 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2022-ol-q10",
-  "topicId": "physical-education-1-8",
-  "conceptId": "pe-1-8-performance-enhancing-drugs-peds",
+  "id": "pe-2022-ol-q11a",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-elbow-flexion-movement-basketball",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "physical-education",
   "section": "A",
-  "questionRef": "2022 OL Q10",
-  "questionText": "Name two performance enhancing drugs (PEDs) and describe a negative effect of each drug on the athletes that use them. PED Negative Effect",
+  "questionRef": "2022 OL Q11(a)",
+  "questionText": "Elbow flexion is a key movement in basketball. Name the class of lever used in elbow flexion. Figure 4",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 8,
+  "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(3 + 1)",
+    "verbatim": "Third class lever",
     "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-ol-q11bii",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-where-body-would-find",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2022 OL Q11(b)(ii)",
+  "questionText": "State where in the body you would find such a lever. Example of where this lever is in the body",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Where to find in body (e.g. head and neck)",
+    "marks": 2,
     "openList": true,
     "contextNote": ""
    }
@@ -3529,7 +4156,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2022 OL Q12",
-  "questionText": "People with disabilities deserve to have the same opportunities to be active as everyone else. Niamh Daffy, CEO, Cara. Explain two ways that coaches can adapt p",
+  "questionText": "People with disabilities deserve to have the same opportunities to be active as everyone else. Niamh Daffy, CEO, Cara. Explain two ways that coaches can adapt physical activities to make them more inclusive for people with disabilities.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -3542,6 +4169,72 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Possible adaptations could include environment or equipment",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-ol-q13bi",
+  "topicId": "physical-education-0-10",
+  "conceptId": "pe-0-10-based-description-case-study",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2022 OL Q13(b)(i)",
+  "questionText": "Based on the description in the case study, which principle of training did Niall Moyna implement in planning the training sessions for the Dublin team?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Specificity/Individuality",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-ol-q13bii",
+  "topicId": "physical-education-0-10",
+  "conceptId": "pe-0-10-other-principles-training-principle",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2022 OL Q13(b)(ii)",
+  "questionText": "Name three other principles of training. You may not use the principle of training used in (i).",
+  "stem": "Q13(b)(i): Based on the description in the case study, which principle of training did Niall Moyna implement in planning the training sessions for the Dublin team?",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tedium, progressive overload",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any 3 other principles of training",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -3579,27 +4272,27 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2022-ol-q16bii",
-  "topicId": "physical-education-0-6",
-  "conceptId": "pe-0-6-difference-between-health-related",
+  "id": "pe-2022-ol-q15ci",
+  "topicId": "physical-education-0-0",
+  "conceptId": "pe-0-0-other-types-practice",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "physical-education",
   "section": "C",
-  "questionRef": "2022 OL Q16(b)(ii)",
-  "questionText": "Discuss the difference between health related fitness and performance related fitness.",
+  "questionRef": "2022 OL Q15(c)(i)",
+  "questionText": "Name two other types of practice.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 6,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Defines only one concept -health or performance related fitness",
+    "verbatim": "Fixed practice and Distributive practice",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -3662,19 +4355,15 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
-  "totalMarks": 2,
+  "totalMarks": 17,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Anaerobic ATP-PC",
-    "marks": 2,
+    "marks": null,
     "openList": true,
     "contextNote": ""
    }
@@ -3719,30 +4408,71 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2022-ol-q3",
-  "topicId": "physical-education-0-0",
-  "conceptId": "pe-0-0-range-skills-required-participate",
+  "id": "pe-2022-ol-q18d",
+  "topicId": "physical-education-1-2",
+  "conceptId": "pe-1-2-does-sheet-encourage-lifelong",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2022 OL Q3",
-  "questionText": "A range of skills are required to participate effectively in a physical activity. Identify three different skills from a physical activity of your choice and ex",
+  "section": "C",
+  "questionRef": "2022 OL Q18(d)",
+  "questionText": "How does your tip sheet encourage lifelong participation?",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 3,
+  "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "3 + 3 +",
+    "verbatim": "How tip sheet in (c) encourages lifelong participation",
     "marks": null,
     "openList": true,
     "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2022-ol-q4",
+  "topicId": "physical-education-0-5",
+  "conceptId": "pe-0-5-images-show-athletes-competing",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2022 OL Q4",
+  "questionText": "The images show athletes competing in the 10,000 metre (Figure 2) and shot put (Figure 3) athletics events. For both of these events, identify the main component of physical fitness involved and explain your choice. Figure 2 Figure 3 Main component of fitness for 10,000 metres Explanation Main component of fitness for shot put Explanation",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4 marks",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Main component identified correctly",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "2 answers at 4 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Cardiovascular endurance. Muscular endurance",
+      "Power. Strength"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -3960,64 +4690,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2023-hl-q17b",
-  "topicId": "physical-education-0-12",
-  "conceptId": "pe-0-12-examine-nutritional-considerations-athlete",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2023 HL Q17(b)",
-  "questionText": "Examine two nutritional considerations that an athlete might implement after performance to enhance recovery. You are not permitted to use hydration or sports d",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Examine two nutritional considerations that an athlete may implement after performance to enhance recovery. You are not permitted to use hydration or sports drinks",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2023-hl-q17d",
-  "topicId": "physical-education-1-24",
-  "conceptId": "pe-1-24-analyse-different-forms-sport",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2023 HL Q17(d)",
-  "questionText": "Analyse two different forms of sport related advertising in relation to the messages they give to young people.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Analyse two different forms of sport related advertising in relation to the messages it gives to young people",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2023-hl-q7a",
   "topicId": "physical-education-0-2",
   "conceptId": "pe-0-2-newton-laws-motion-used",
@@ -4088,43 +4760,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2023-ol-q13ai",
-  "topicId": "physical-education-1-24",
-  "conceptId": "pe-1-24-sponsorship",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2023 OL Q13(a)(i)",
-  "questionText": "Define sponsorship.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Attempt at defining",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "but missing clarity",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2023-ol-q13di",
   "topicId": "physical-education-0-12",
   "conceptId": "pe-0-12-identifying-main-energy-system",
@@ -4140,7 +4775,7 @@
   "tariffModel": {
    "kind": "questionTotal"
   },
-  "totalMarks": 2,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
@@ -4215,25 +4850,29 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "bestNofParts",
+   "notation": "2 x 2 marks",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 2
   },
-  "totalMarks": 6,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Drill/practice to improve the skill",
-    "marks": null,
+    "kind": "anyN",
+    "verbatim": "Description includes",
+    "marks": 4,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Minimum of two coaching/key points for the athlete to focus on while practicing",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "2 answers at 2 marks each, as the scheme prices it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Drill/practice to improve the skill",
+      "Minimum of two coaching/key points for the athlete to focus on while practicing"
+     ]
+    }
    }
   ],
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
@@ -4305,39 +4944,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2023-ol-q15ci",
-  "topicId": "physical-education-0-10",
-  "conceptId": "pe-0-10-periodisation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2023 OL Q15(c)(i)",
-  "questionText": "What is periodisation?",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "4 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Attempt at explaining periodisation",
-    "marks": 4,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2023-ol-q16c",
   "topicId": "physical-education-0-11",
   "conceptId": "pe-0-11-psychological-factors-list-impact",
@@ -4391,32 +4997,143 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2023-ol-q18aii",
-  "topicId": "physical-education-1-27",
-  "conceptId": "pe-1-27-impact-hosting-sporting-events",
+  "id": "pe-2023-ol-q17a",
+  "topicId": "physical-education-1-9",
+  "conceptId": "pe-1-9-therapeutic-exemption",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "physical-education",
   "section": "C",
-  "questionRef": "2023 OL Q18(a)(ii)",
-  "questionText": "Describe the impact that hosting sporting events like the Red Bull Cliff Diving can have on the development of tourism in Ireland.",
+  "questionRef": "2023 OL Q17(a)",
+  "questionText": "Explain Therapeutic Use Exemption (TUE).",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "6 marks",
+   "notation": "4 marks",
    "answer": null,
    "ofParts": null,
    "perPart": null
   },
-  "totalMarks": 6,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "No link between hosting and developing tourism mentioned",
-    "marks": 6,
+    "verbatim": "The grounds for a TUE to be granted",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2023-ol-q17bi",
+  "topicId": "physical-education-1-8",
+  "conceptId": "pe-1-8-example-performance-enhancing-drug",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2023 OL Q17(b)(i)",
+  "questionText": "Give an example of a Performance Enhancing Drug (PED) in each of the two categories listed below.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Category of Performance Enhancing Example of Performance",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Drug Enhancing Drug (PED)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Peptide Hormone Human Growth Hormone",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2023-ol-q18bi",
+  "topicId": "physical-education-1-2",
+  "conceptId": "pe-1-2-group-students-participate-most",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2023 OL Q18(b)(i)",
+  "questionText": "Which group of students participate the most in school sport?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Boys 70%",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2023-ol-q18biii",
+  "topicId": "physical-education-1-2",
+  "conceptId": "pe-1-2-suggest-ways-increase-participation",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2023 OL Q18(b)(iii)",
+  "questionText": "Suggest ways to increase participation in physical activity for school children.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suggestion to increase participation levels but unclear explanation or invalid to school children",
+    "marks": 8,
     "openList": true,
     "contextNote": ""
    }
@@ -4498,7 +5215,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2024 HL Q1(a)",
-  "questionText": "Identify an appropriate method to analyse each of the following aspects of performance: Psychological preparedness Choreography You must use a different method",
+  "questionText": "Identify an appropriate method to analyse each of the following aspects of performance: Psychological preparedness Choreography You must use a different method of analysis for each aspect of performance.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -4698,6 +5415,35 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2024-hl-q13aii",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-sport-related-scalar-quantities",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2024 HL Q13(a)(ii)",
+  "questionText": "Identify two sport related scalar quantities mentioned in the case study.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "seconds",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2024-hl-q13b",
   "topicId": "physical-education-0-16",
   "conceptId": "pe-0-16-examine-approaches-safe-practice",
@@ -4739,39 +5485,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2024-hl-q13ci",
-  "topicId": "physical-education-0-10",
-  "conceptId": "pe-0-10-periodisation",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2024 HL Q13(c)(i)",
-  "questionText": "Define periodisation.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Periodisation defined",
-    "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2024-hl-q13cii",
   "topicId": "physical-education-2-2",
   "conceptId": "pe-2-2-time-adeleke-ncaa-championship",
@@ -4792,7 +5505,52 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "÷8.13)",
+    "verbatim": "49.2 seconds",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "49.2/ calculation correct ( ଼.ଵଷ /",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2024-hl-q13ciii",
+  "topicId": "physical-education-2-2",
+  "conceptId": "pe-2-2-suggest-reason-adeleke-faster",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2024 HL Q13(c)(iii)",
+  "questionText": "Suggest one reason why Adeleke ran a faster time in the NCAA championship final than in the 400m World Championship final last year. Justify your reason with reference to the case study.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reason: Fatigue",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Justification: It has been a long season",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -4992,35 +5750,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2024-hl-q15c",
-  "topicId": "physical-education-0-7",
-  "conceptId": "pe-0-7-complete-table-design-performance",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2024 HL Q15(c)",
-  "questionText": "Complete the following table to design a performance-related fitness test battery for a named physical activity of your choice.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 1,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Justification",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2024-hl-q16ai",
   "topicId": "physical-education-1-8",
   "conceptId": "pe-1-8-make-statements-about-doping",
@@ -5194,7 +5923,7 @@
    "kind": "bestNofParts",
    "notation": "3 x 4 marks",
    "answer": 3,
-   "ofParts": 4,
+   "ofParts": 3,
    "perPart": 4
   },
   "totalMarks": 12,
@@ -5212,8 +5941,7 @@
      "options": [
       "Macro recommendations",
       "Calorie suggestions",
-      "Timing of meals",
-      "Appropriate inclusion of food and sports supplements"
+      "Timing of meals"
      ]
     }
    }
@@ -5316,7 +6044,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2024 HL Q17(c)",
-  "questionText": "Write three statements that you would include in a code of practice for the selection of commercial sponsorship for a youth sports team. Justify why you would i",
+  "questionText": "Write three statements that you would include in a code of practice for the selection of commercial sponsorship for a youth sports team. Justify why you would include each of these statements in this code of practice.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -5324,7 +6052,7 @@
    "kind": "bestNofParts",
    "notation": "3 x 2 marks",
    "answer": 3,
-   "ofParts": 6,
+   "ofParts": 5,
    "perPart": 2
   },
   "totalMarks": 6,
@@ -5344,8 +6072,7 @@
       "An ideal sponsor may be involved in a business that promotes healthy lifestyles or may support their staff in attaining this",
       "Sponsorship not to be taken from a betting firm",
       "Sponsorship not to be taken from an alcohol firm",
-      "Sponsorship not to be taken from a tobacco firm",
-      "Justify why you would include each of these statements in this code of practice"
+      "Sponsorship not to be taken from a tobacco firm"
      ]
     }
    }
@@ -5417,7 +6144,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Nervousness, turbulence, threats, physical, somatic, mental, cognitive, behaviours",
+    "verbatim": "Nervousness",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -5425,7 +6152,55 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Definition",
+    "verbatim": "turbulence",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "threats",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "physical",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "somatic",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "mental",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "cognitive",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "behaviours",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -5442,7 +6217,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2024 HL Q18(c)",
-  "questionText": "As part of your studies in Leaving Certificate Physical Education you designed a personal action plan to support a positive psychological disposition for perfor Outline three aspects of the action plan and provide a rationale for the inclusion of each aspect.",
+  "questionText": "As part of your studies in Leaving Certificate Physical Education you designed a personal action plan to support a positive psychological disposition for performance. Outline three aspects of the action plan and provide a rationale for the inclusion of each aspect.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -5506,155 +6281,6 @@
     "id": "r-2",
     "kind": "point",
     "verbatim": "Léiríonn an tábla thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn níos mó ná 75% d’iomlán na marcanna",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Bain úsáid as an tábla seo i gcás na n-ábhar a bhfuil 250 marc san iomlán ag gabháil leo agus inarb",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "é 10% gnáthráta an bhónais",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Bain úsáid as an ngnáthráta i gcás 187 marc agus faoina bhun sin. Os cionn an mharc sin, féach an tábla thíos",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Bunmharc Marc Bónais Bunmharc Marc Bónais",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "188 - 190 18 221 - 223",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "191 - 193 17 224 - 226",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "194 - 196 16 227 - 230",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "197 - 200 15 231 - 233",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "201 - 203 14 234 - 236",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "204 - 206 13 237 - 240",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-13",
-    "kind": "point",
-    "verbatim": "207 - 210 12 241 - 243",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-14",
-    "kind": "point",
-    "verbatim": "211 - 213 11 244 - 246",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-15",
-    "kind": "point",
-    "verbatim": "214 - 216 10 247 - 250",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-16",
-    "kind": "point",
-    "verbatim": "217 - 220",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2024-hl-q2a",
-  "topicId": "physical-education-1-0",
-  "conceptId": "pe-1-0-concept-leisure-recreation",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2024 HL Q2(a)",
-  "questionText": "Define the concept of physical activity, leisure and recreation.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Defines the concept of physical activity",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "leisure and recreation",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -5811,7 +6437,7 @@
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2024 HL Q4",
-  "questionText": "According to a recent survey of 10,000 people in nine countries by Capgemini, the French technology consulting company, nearly 70 percent of fans say that new t",
+  "questionText": "According to a recent survey of 10,000 people in nine countries by Capgemini, the French technology consulting company, nearly 70 percent of fans say that new technologies have enhanced their viewing experience. Discuss two advancements in technology that have impacted spectator experience in a named physical activity of your choice.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -6118,87 +6744,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2024-hl-q8a",
-  "topicId": "physical-education-0-16",
-  "conceptId": "pe-0-16-injuries-commonly-occur-potential",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2024 HL Q8(a)",
-  "questionText": "Identify two injuries that commonly occur in a named physical activity of your choice and identify the potential causes of both injuries.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 1 marks",
-   "answer": 2,
-   "ofParts": 9,
-   "perPart": 1
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Common injury identified",
-    "marks": 2,
-    "openList": true,
-    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 1,
-     "options": [
-      "Rugby",
-      "Cut",
-      "Clash of heads, stud from boot can cut skin, friction from impact on the ground can cause a cut to skin",
-      "Put on gloves if possible",
-      "Control the bleeding by applying pressure to the area with a fabric",
-      "Rinse the wound out to remove any dirt/ grit",
-      "Reassure the injured person",
-      "Seek additional help",
-      "(2+2)"
-     ]
-    }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2024-hl-q9a",
-  "topicId": "physical-education-1-24",
-  "conceptId": "pe-1-24-endorsements-related-sport",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2024 HL Q9(a)",
-  "questionText": "Define endorsements related to sport.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Defines endorsements related to sport",
-    "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2024-hl-q9b",
   "topicId": "physical-education-1-24",
   "conceptId": "pe-1-24-advantages-sponsorship-national-governing",
@@ -6284,6 +6829,43 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2024-ol-q1",
+  "topicId": "physical-education-0-18",
+  "conceptId": "pe-0-18-figure-ways-technology-impacted",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2024 OL Q1",
+  "questionText": "Figure 1 In a named physical activity of your choice, outline two ways technology has impacted on coaches.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Game day ear pieces",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Concurrent feedback, Instinct lost",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2024-ol-q10",
   "topicId": "physical-education-1-8",
   "conceptId": "pe-1-8-implications-using-performance-enhancing",
@@ -6326,14 +6908,14 @@
  },
  {
   "id": "pe-2024-ol-q11",
-  "topicId": "physical-education-0-0",
-  "conceptId": "pe-0-0-successful-sports-need-learn",
+  "topicId": "physical-education-0-1",
+  "conceptId": "pe-0-1-successful-sports-need-learn",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "physical-education",
   "section": "A",
   "questionRef": "2024 OL Q11",
-  "questionText": "To be successful in sports, you need to learn techniques and skills and practise them regularly. (Carol Dweck) Outline two characteristics of a skilled performa",
+  "questionText": "To be successful in sports, you need to learn techniques and skills and practise them regularly. (Carol Dweck) Outline two characteristics of a skilled performance.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -6384,7 +6966,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 2,
+   "ofParts": 3,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -6400,8 +6982,9 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "leisure, health and fitness, increase numbers",
-      "Two reasons why the Cork Masters was set up"
+      "leisure",
+      "health and fitness",
+      "increase numbers"
      ]
     }
    }
@@ -6488,35 +7071,6 @@
     "kind": "point",
     "verbatim": "Knitting/ selective attention",
     "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2024-ol-q13eii",
-  "topicId": "physical-education-0-13",
-  "conceptId": "pe-0-13-different-strategies-improve-mental",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2024 OL Q13(e)(ii)",
-  "questionText": "Describe two different strategies to improve mental preparedness before practice or performance in a named physical activity of your choice.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Two strategies to improve mental preparedness before practice",
-    "marks": null,
     "openList": true,
     "contextNote": ""
    }
@@ -6623,68 +7177,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2024-ol-q15ai",
-  "topicId": "physical-education-1-16",
-  "conceptId": "pe-1-16-list-positive-negative-impacts",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2024 OL Q15(a)(i)",
-  "questionText": "List two positive and two negative impacts the media has on spectators. .",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Two positive and two negative effects of the media for spectators",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2024-ol-q16ai",
-  "topicId": "physical-education-0-16",
-  "conceptId": "pe-0-16-safe-practice",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2024 OL Q16(a)(i)",
-  "questionText": "Define safe practice in physical activity.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Safe practice defined",
-    "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2024-ol-q17ai",
   "topicId": "physical-education-1-6",
   "conceptId": "pe-1-6-principles-ethical-practice",
@@ -6727,6 +7219,39 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2024-ol-q17bii",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-class-lever-shown-diagram",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2024 OL Q17(b)(ii)",
+  "questionText": "Identify the class of lever shown in the diagram above.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "second class lever ( )",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2024-ol-q18cii",
   "topicId": "physical-education-0-12",
   "conceptId": "pe-0-12-dietary-supplement-advantages-using",
@@ -6743,7 +7268,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 15,
+   "ofParts": 2,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -6760,20 +7285,7 @@
      "perOption": 2,
      "options": [
       "Marcanna Breise as ucht freagairt trí Ghaeilge",
-      "Léiríonn an tábla thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn níos mó ná 75% d’iomlán na marcanna",
-      "Bain úsáid as an tábla seo i gcás na n-ábhar a bhfuil 250 marc san iomlán ag gabháil leo agus inarb é 10% gnáthráta an bhónais",
-      "Bain úsáid as an ngnáthráta i gcás 187 marc agus faoina bhun sin. Os cionn an mharc sin, féach an tábla thíos",
-      "Bunmharc Marc Bónais Bunmharc Marc Bónais",
-      "188 - 190 18 221 - 223",
-      "191 - 193 17 224 - 226",
-      "194 - 196 16 227 - 230",
-      "197 - 200 15 231 - 233",
-      "201 - 203 14 234 - 236",
-      "204 - 206 13 237 - 240",
-      "207 - 210 12 241 - 243",
-      "211 - 213 11 244 - 246",
-      "214 - 216 10 247 - 250",
-      "217 - 220"
+      "Léiríonn an tábla thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn níos mó ná 75% d’iomlán na marcanna"
      ]
     }
    }
@@ -6983,8 +7495,8 @@
  },
  {
   "id": "pe-2024-ol-q8",
-  "topicId": "physical-education-1-0",
-  "conceptId": "pe-1-0-characteristics-could-media-spectator",
+  "topicId": "physical-education-0-1",
+  "conceptId": "pe-0-1-characteristics-could-media-spectator",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "physical-education",
@@ -7014,8 +7526,8 @@
      "claimMax": 2,
      "perOption": 4,
      "options": [
-      "Excitement, opportunity to see their role models play",
-      "Two characteristics that could give them media or spectator appeal"
+      "Excitement",
+      "opportunity to see their role models play"
      ]
     }
    }
@@ -7023,15 +7535,15 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2024-ol-q9a",
-  "topicId": "physical-education-1-0",
-  "conceptId": "pe-1-0-list-factors-influence-personal",
-  "level": "ordinary",
-  "year": 2024,
+  "id": "pe-2025-hl-q12b",
+  "topicId": "physical-education-1-9",
+  "conceptId": "pe-1-9-under-circumstance-athlete-compete",
+  "level": "higher",
+  "year": 2025,
   "subjectId": "physical-education",
   "section": "A",
-  "questionRef": "2024 OL Q9(a)",
-  "questionText": "List two factors that influence personal performance in a named physical activity of your choice.",
+  "questionRef": "2025 HL Q12(b)",
+  "questionText": "Under what circumstance can an athlete compete with banned substances in their system?",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -7043,7 +7555,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Two factors that influence personal performance listed 2 +",
+    "verbatim": "All parts of Question 13 to be answered",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -7053,8 +7565,8 @@
  },
  {
   "id": "pe-2025-hl-q13b",
-  "topicId": "physical-education-0-0",
-  "conceptId": "pe-0-0-skill-uses-class-lever",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-skill-uses-class-lever",
   "level": "higher",
   "year": 2025,
   "subjectId": "physical-education",
@@ -7085,6 +7597,35 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
+  "id": "pe-2025-hl-q13ci",
+  "topicId": "physical-education-0-3",
+  "conceptId": "pe-0-3-based-description-javelin-case",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2025 HL Q13(c)(i)",
+  "questionText": "Based on the description of javelin in the case study, name a skill practice method that is appropriate for developing the skill of a javelin thrower. to improve the skill of a javelin thrower.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "to improve the skill of the javelin thrower",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
   "id": "pe-2025-hl-q13ciii",
   "topicId": "physical-education-0-2",
   "conceptId": "pe-0-2-hammer-throwers-mainly-move",
@@ -7098,47 +7639,14 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
-  "totalMarks": 2,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Transverse plane",
-    "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q14ai",
-  "topicId": "physical-education-0-6",
-  "conceptId": "pe-0-6-components-health-related-fitness",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2025 HL Q14(a)(i)",
-  "questionText": "Define the following components of health-related fitness: Cardiorespiratory endurance Body composition Flexibility",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Definition of component of health-related fitness",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -7155,7 +7663,7 @@
   "subjectId": "physical-education",
   "section": "C",
   "questionRef": "2025 HL Q14(a)(ii)",
-  "questionText": "Apply the FITT formula to one the following components of health-related fitness: Cardiorespiratory endurance Body composition Flexibility Component of health-r",
+  "questionText": "Apply the FITT formula to one the following components of health-related fitness: Cardiorespiratory endurance Body composition Flexibility Component of health-related fitness:",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -7190,117 +7698,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2025-hl-q14c",
-  "topicId": "physical-education-1-15",
-  "conceptId": "pe-1-15-developments-sport-since-groups",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2025 HL Q14(c)",
-  "questionText": "Discuss two developments in physical activity and sport, since 2005, for one of the following groups: • Women • People with intellectual disability • Older Adul",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 5 marks",
-   "answer": 2,
-   "ofParts": 2,
-   "perPart": 5
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Discussion on the developments in physical activity and sport for one of the groups in the last 20 years",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "2 answers at 5 marks each, as the scheme prices it.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 5,
-     "options": [
-      "Older Adults • Different ethnic groups",
-      "People with physical disability • Different socio-economic groups"
-     ]
-    }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q14d",
-  "topicId": "physical-education-1-17",
-  "conceptId": "pe-1-17-examine-advances-technology-have",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2025 HL Q14(d)",
-  "questionText": "Examine how advances in technology have impacted performers. Support your answer with physical activity examples.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Little detail or accuracy in the examination",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Examines how developments in technology have impacted performer in a way that uncovers the assumptions and interrelationships of this issue",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q15d",
-  "topicId": "physical-education-0-18",
-  "conceptId": "pe-0-18-examine-developments-technology-have",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2025 HL Q15(d)",
-  "questionText": "Examine how developments in technology have impacted coaches or choreographers.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "12 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Examines how developments in technology have impacted coaches or choreographers in a way that uncovers the assumptions and interrelationships of this issue",
-    "marks": 12,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2025-hl-q17a",
   "topicId": "physical-education-0-7",
   "conceptId": "pe-0-7-performance-related-components-fitness",
@@ -7323,39 +7720,6 @@
     "kind": "point",
     "verbatim": "Justification pf why the components are important in the activity",
     "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q18ai",
-  "topicId": "physical-education-1-6",
-  "conceptId": "pe-1-6-gamesmanship-related-sport",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2025 HL Q18(a)(i)",
-  "questionText": "Define gamesmanship related to physical activity and sport.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Definition of gamesmanship",
-    "marks": 2,
     "openList": true,
     "contextNote": ""
    }
@@ -7392,15 +7756,168 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2025-hl-q18d",
-  "topicId": "physical-education-1-2",
-  "conceptId": "pe-1-2-compare-barriers-participation-groups",
+  "id": "pe-2025-hl-q6b",
+  "topicId": "physical-education-0-0",
+  "conceptId": "pe-0-0-would-principles-outlined-question",
   "level": "higher",
   "year": 2025,
   "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2025 HL Q6(b)",
+  "questionText": "How would you use one of the principles outlined by you in Question 6 (a) to develop skill in a practice session?",
+  "stem": "Q6(a): Outline two principles of effective practice.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Looking for skill improvement/development",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2025-ol-q12",
+  "topicId": "physical-education-0-18",
+  "conceptId": "pe-0-18-figure-shows-coach-using",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2025 OL Q12",
+  "questionText": "Figure 3 shows a coach using a stop watch to help run the session. Name and explain two different types of technology and how a coach might use them in training. Figure 3",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "All parts of Question 13 to be answered",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2025-ol-q13ei",
+  "topicId": "physical-education-2-2",
+  "conceptId": "pe-2-2-case-study-barrier-addressed",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "B",
+  "questionRef": "2025 OL Q13(e)(i)",
+  "questionText": "From the case study, identify one way this barrier was addressed by Nicola and her family.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Her Dad built her a hammer throwing cage at home on the family farm",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2025-ol-q15bi",
+  "topicId": "physical-education-0-3",
+  "conceptId": "pe-0-3-type-feedback-rhys-talking",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
   "section": "C",
-  "questionRef": "2025 HL Q18(d)",
-  "questionText": "Compare the barriers to physical activity participation for two of the following groups: • Women • People with intellectual disability • Older Adults • Differen",
+  "questionRef": "2025 OL Q15(b)(i)",
+  "questionText": "What type of feedback is Rhys talking about in the statement below?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Intrinsic feedback",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2025-ol-q8a",
+  "topicId": "physical-education-1-0",
+  "conceptId": "pe-1-0-other-outdoor-adventure",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physical-education",
+  "section": "A",
+  "questionRef": "2025 OL Q8(a)",
+  "questionText": "Name one other physical activity that is an ‘outdoor and adventure activity’.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rock-climbing/orienteering/caving",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
+ },
+ {
+  "id": "pe-2026-hl-q14d",
+  "topicId": "physical-education-0-23",
+  "conceptId": "pe-0-23-compare-performances-depicted-figure",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "physical-education",
+  "section": "C",
+  "questionRef": "2026 HL Q14(d)",
+  "questionText": "Compare the performances depicted in Figure 7 and Figure 8 in terms of aesthetic or artistic criteria of performance.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
@@ -7412,168 +7929,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Older Adults • Different ethnic groups",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "People with physical disability • Different socio-economic groups",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q4a",
-  "topicId": "physical-education-0-21",
-  "conceptId": "pe-0-21-types-goals-related-short",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2025 HL Q4(a)",
-  "questionText": "Define the following types of goals related to physical activity: Short term goal Performance goal",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Definition of type of goal",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q7b",
-  "topicId": "physical-education-1-15",
-  "conceptId": "pe-1-15-ways-school-community-provide",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2025 HL Q7(b)",
-  "questionText": "Outline two ways that a school or community can provide for adapted physical activity.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Tick the box to indicate which context you are answering in - school or community",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2025-hl-q9a",
-  "topicId": "physical-education-1-26",
-  "conceptId": "pe-1-26-concept-mass-participation-sports",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2025 HL Q9(a)",
-  "questionText": "Define the concept of physical activity, ‘mass-participation sports’.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Defines the concept of physical education",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "mass-participation sports",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-hl-q16b",
-  "topicId": "physical-education-0-12",
-  "conceptId": "pe-0-12-complete-table-identifying-sports",
-  "level": "higher",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 HL Q16(b)",
-  "questionText": "Complete the following table, identifying three sports supplements, their function and the performance effect associated with their use. You may not use creatin",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Creatine may not be used",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-hl-q16c",
-  "topicId": "physical-education-1-6",
-  "conceptId": "pe-1-6-using-examples-impact-either",
-  "level": "higher",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 HL Q16(c)",
-  "questionText": "Describe, using two examples, the impact of either sportsmanship or gamesmanship on engagement in physical activity.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Two examples of Sportsmanship or two examples of Gamesmanship",
+    "verbatim": "Makes use of examples to highlight the point of comparison",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -7675,86 +8031,22 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "3 x 1 marks",
-   "answer": 3,
-   "ofParts": 4,
-   "perPart": 1
+   "kind": "questionTotal"
   },
   "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Identify an appropriate timeframe for each of these cycles",
-    "marks": 3,
-    "openList": true,
-    "contextNote": "3 answers at 1 mark each, as the scheme prices it.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 1,
-     "options": [
-      "Timeframe Periodisation Cycle",
-      "Two months Mesocycle",
-      "A full year Macrocycle",
-      "Two weeks Microcycle"
-     ]
-    }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q10b",
-  "topicId": "physical-education-0-7",
-  "conceptId": "pe-0-7-examples-where-reaction-time",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2026 OL Q10(b)",
-  "questionText": "Identify two examples of where reaction time is needed during performance in one physical activity.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
     "kind": "point",
-    "verbatim": "[ (x2)]",
+    "verbatim": "Timeframe Periodisation Cycle",
     "marks": null,
     "openList": true,
     "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q11",
-  "topicId": "physical-education-0-18",
-  "conceptId": "pe-0-18-ways-coach-could-manage",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2026 OL Q11",
-  "questionText": "Outline two ways a coach could manage time effectively during a training session.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
+   },
    {
-    "id": "r-1",
+    "id": "r-2",
     "kind": "point",
-    "verbatim": "[ (x2)]",
+    "verbatim": "A full year Macrocycle",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -7784,35 +8076,6 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "May not use trimetazidine",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q13cii",
-  "topicId": "physical-education-1-7",
-  "conceptId": "pe-1-7-statements-would-include-code",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2026 OL Q13(c)(ii)",
-  "questionText": "Identify three statements that you would include in a code of ethics for sport.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 1,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "[4+3+ ]",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -7854,77 +8117,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2026-ol-q14b",
-  "topicId": "physical-education-0-10",
-  "conceptId": "pe-0-10-could-fitness-training-methods",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q14(b)",
-  "questionText": "Outline how you could use the physical fitness training methods weight training and circuit training to improve performance in a component of fitness of your ch",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "[ (x2)]",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q14cii",
-  "topicId": "physical-education-0-7",
-  "conceptId": "pe-0-7-whether-component-tested-health",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q14(c)(ii)",
-  "questionText": "State whether each component tested is a Health‐Related Fitness (HRF) or a Performance Related Fitness (PRF) component. HRF or PRF Coordination Muscular Enduran",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 1 marks",
-   "answer": 2,
-   "ofParts": 3,
-   "perPart": 1
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Component of Fitness Above average",
-    "marks": 2,
-    "openList": true,
-    "contextNote": "2 answers at 1 mark each, as the scheme prices it.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 1,
-     "options": [
-      "[ + ]",
-      "Component of Fitness Above average",
-      "Muscular Endurance HRF"
-     ]
-    }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2026-ol-q14cv",
   "topicId": "physical-education-0-9",
   "conceptId": "pe-0-9-fitness-test-these-components",
@@ -7945,44 +8137,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "[ + + ]",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
     "verbatim": "Coordination or muscular endurance cannot be used",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q15ai",
-  "topicId": "physical-education-1-0",
-  "conceptId": "pe-1-0-concepts-matching-concept-relevant",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q15(a)(i)",
-  "questionText": "Describe each of the following concepts of physical activity by matching the concept to the relevant description: mass‐participation sports play outdoor and adv",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "choose from above",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -8007,7 +8162,7 @@
    "kind": "bestNofParts",
    "notation": "2 x 2 marks",
    "answer": 2,
-   "ofParts": 2,
+   "ofParts": 4,
    "perPart": 2
   },
   "totalMarks": 4,
@@ -8023,8 +8178,10 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Accuracy in technique/skill, anticipation, consistency, kinaesthetic awareness and other correct responses",
-      "[ (x2)]"
+      "Accuracy in technique/skill",
+      "anticipation",
+      "consistency",
+      "kinaesthetic awareness and other correct responses"
      ]
     }
    }
@@ -8032,152 +8189,32 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2026-ol-q16aii",
-  "topicId": "physical-education-0-1",
-  "conceptId": "pe-0-1-ways-creative-application-skill",
+  "id": "pe-2026-ol-q16ci",
+  "topicId": "physical-education-0-2",
+  "conceptId": "pe-0-2-class-lever-depicted-figure",
   "level": "ordinary",
   "year": 2026,
   "subjectId": "physical-education",
   "section": "C",
-  "questionRef": "2026 OL Q16(a)(ii)",
-  "questionText": "Describe two ways that creative application of a skill can be beneficial to performance.",
+  "questionRef": "2026 OL Q16(c)(i)",
+  "questionText": "What class of lever is depicted in Figure 6?",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed",
+   "notation": "2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
   },
-  "totalMarks": 4,
+  "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "[ (x2)",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "+ (x2)]",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q16b",
-  "topicId": "physical-education-0-0",
-  "conceptId": "pe-0-0-stages-skill-learning",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q16(b)",
-  "questionText": "Describe three stages of skill learning.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "+ (x3)",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q17bi",
-  "topicId": "physical-education-0-12",
-  "conceptId": "pe-0-12-protein-used-supplement-other",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q17(b)(i)",
-  "questionText": "Protein can be used as a supplement. Name two other food supplements and give a reason for taking them.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "+ (x2)]",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q17bii",
-  "topicId": "physical-education-0-12",
-  "conceptId": "pe-0-12-challenges-taking-sports-supplements",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q17(b)(ii)",
-  "questionText": "Outline two challenges to taking sports supplements.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "[ (x2)]",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q17ci",
-  "topicId": "physical-education-1-4",
-  "conceptId": "pe-1-4-reasons-elite-pole-vaulter",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q17(c)(i)",
-  "questionText": "Identify two reasons an elite pole vaulter’s concentration could be decreased.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "[ (x2)]",
-    "marks": null,
+    "verbatim": "2nd class lever",
+    "marks": 2,
     "openList": true,
     "contextNote": ""
    }
@@ -8198,47 +8235,6 @@
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 3 marks",
-   "answer": 2,
-   "ofParts": 2,
-   "perPart": 3
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "examples",
-    "marks": 6,
-    "openList": true,
-    "contextNote": "2 answers at 3 marks each, as the scheme prices it.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "thinking don’t have the ‘right’ body shape/size for a particular PA",
-      "[ (x2)]"
-     ]
-    }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q18ci",
-  "topicId": "physical-education-1-26",
-  "conceptId": "pe-1-26-benefits-mass-participation-sports",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2026 OL Q18(c)(i)",
-  "questionText": "Outline two benefits of mass‐participation sports events, like Parkrun.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
    "kind": "questionTotal"
   },
   "totalMarks": 6,
@@ -8246,108 +8242,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "[ (x2)]",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q3",
-  "topicId": "physical-education-1-0",
-  "conceptId": "pe-1-0-characteristics-could-make-appealing",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2026 OL Q3",
-  "questionText": "Identify three characteristics of a physical activity that could make it appealing to spectators.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Reason why people watch sport",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q4",
-  "topicId": "physical-education-1-8",
-  "conceptId": "pe-1-8-statements-about-irish-anti",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2026 OL Q4",
-  "questionText": "Identify if the following statements about Irish anti‐doping rules are True or False by ticking () the relevant box. True False An athlete is allowed to sell p",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "4 x 2 marks",
-   "answer": 4,
-   "ofParts": 4,
-   "perPart": 2
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "An athlete is allowed to sell performance ✓ enhancing drugs",
-    "marks": 8,
-    "openList": true,
-    "contextNote": "4 answers at 2 marks each, as the scheme prices it.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 2,
-     "options": [
-      "(x4)",
-      "An athlete is allowed to sell performance ✓ enhancing drugs",
-      "Three whereabouts failures within a 12-month ✓ period can lead to a suspension",
-      "Athletes are allowed cover up for another athlete ✓ if they know they are using performance enhancing drugs"
-     ]
-    }
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q9",
-  "topicId": "physical-education-1-17",
-  "conceptId": "pe-1-17-technological-development-positively-impacted",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "A",
-  "questionRef": "2026 OL Q9",
-  "questionText": "Outline how one technological development has positively impacted a physical activity of your choice.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "[2 + ]",
+    "verbatim": "thinking don’t have the ‘right’ body shape/size for a particular PA",
     "marks": null,
     "openList": true,
     "contextNote": ""

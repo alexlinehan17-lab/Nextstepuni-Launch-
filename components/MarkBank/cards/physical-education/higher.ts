@@ -35,12 +35,74 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
     id: "pe-2020-hl-q10", topicId: "physical-education-1-18", conceptId: "pe-1-18-analyse-impact-media-coverage",
     section: "A", questionRef: "2020 HL Q10",
-    questionText: "Analyse the impact media coverage has on spectator behaviour. Do not write on this page Section B Case Study 50 marks Examine the text, images and graphs in the",
+    questionText: "Analyse the impact media coverage has on spectator behaviour.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "4-6 impact but may lack coherence", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "1-3 their impact", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q11bi", topicId: "physical-education-0-6", conceptId: "pe-0-6-training-patterns-evident-figure",
+    section: "B", questionRef: "2020 HL Q11(b)(i)",
+    questionText: "Identify two key training patterns evident in Figure 6. .",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Identifies two key patterns +", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["The tennis player has 4 hours of tennis per week. This happens every week and does not change","Strength training is completed every week in either one or two hour blocks","Flexibility training is completed in all of the five weeks in one hour blocks"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12,
+                15
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q11bii", topicId: "physical-education-0-10", conceptId: "pe-0-10-suggest-reasons-training-patterns",
+    section: "B", questionRef: "2020 HL Q11(b)(ii)",
+    stem: "Q11(b)(i): Identify two key training patterns evident in Figure 6. .",
+    questionText: "Suggest reasons for one of the training patterns identified by you in question 11",
+    tariffModel: {"kind":"fixed","notation":"3 + 1 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Relevant reasons suggested +", marks: 4, contextNote: "The scheme pays 3 then 1 marks, in the order the answers are credited.", openList: true, group: {"claimMax":2,"perOption":3,"options":["periodisation","principles of training mark"],"perOptionSteps":[3,1]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q11c", topicId: "physical-education-0-7", conceptId: "pe-0-7-would-roger-federer-learn",
+    section: "B", questionRef: "2020 HL Q11(c)",
+    questionText: "What would Roger Federer learn about Andy Murray’s second serve from analysing the data shown in Figure 4?",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 6 marks","answer":2,"ofParts":2,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Using evidence to draw a conclusion about Murray’s second serve marks", marks: 12, contextNote: "2 answers at 6 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Murrays serve goes short in the service box a lot of the time thus allowing his opponent more time to adjust and return the ball. This short serve probably generates less speed and as a result his opponent has more time to react","The data suggests that Murray will put most of his second serve’s to Federer’s left. Therefore, Federer can either come to the net off his backhand or run around and hit on his forehand. Federer can attack the second serve"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12,
+                16
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -54,7 +116,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Ability – natural/ inbuilt", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Skill – learned behaviour “A learned action/behaviour with the intention of bringing about predetermined results with maximum certainty and minimum outlay of time or energy” (Knapp", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "1963)", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -94,12 +155,49 @@ export const CARDS: SecCard[] = [
     year: 2020, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q13a", topicId: "physical-education-0-19", conceptId: "pe-0-19-figure-neville-multiple-milestones",
+    section: "C", questionRef: "2020 HL Q13(a)",
+    questionText: "Figure 8 Joy Neville has set multiple milestones, including refereeing in the Division 1A of the Ulster Bank League. She has become the first woman to officiate a Pro 14 match and the first woman to officiate in the Challenge Cup. Along with Spain’s Alhambra Nievas, she was one of the first women to officiate a men’s international match when she took charge of Norway versus Denmark. Neville was also awarded Referee of the Year in November 2017, following her performance in the women’s World Cup final. A game of rugby union has two periods of 40 minutes each. In international matches the referee will stop the clock for stoppages.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "up to a maximum of", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
     id: "pe-2020-hl-q13ci", topicId: "physical-education-0-5", conceptId: "pe-0-5-list-demands-officiating-rugby",
     section: "C", questionRef: "2020 HL Q13(c)(i)",
     questionText: "List the demands of officiating rugby in terms of physical fitness.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":3,"perPart":2}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Two physical fitness demands related to officiating rugby marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Cardiorespiratory endurance","Speed","Muscular endurance"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q13cii", topicId: "physical-education-0-5", conceptId: "pe-0-5-based-fitness-demands-have",
+    section: "C", questionRef: "2020 HL Q13(c)(ii)",
+    stem: "Q13(c)(i): List the demands of officiating rugby in terms of physical fitness.",
+    questionText: "Based on the physical fitness demands you have identified in question 13 (c) (i), discuss two different methods of physical fitness training Joy could use to help her meet the demands of her role.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "interval training", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -125,23 +223,9 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by the following terms: rules, roles, rituals and conventions?",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Rules are agreed upon sets of principles, policies, criteria, descriptions and/or conducts governing a sport or physical activity for reasons of safety, sportsmanship, equipment or facility design and competitiveness", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Roles – various roles such as defenders/attackers in gameplay and captains", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Also non playing roles such as referee, coach", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Conventions – procedural protocols (e.g. soccer- flip of coin)", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2020, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
-    id: "pe-2020-hl-q15ai", topicId: "physical-education-1-6", conceptId: "pe-1-6-principles-ethical-practice-sport",
-    section: "C", questionRef: "2020 HL Q15(a)(i)",
-    questionText: "Define three key principles of ethical practice in sport.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks","answer":3,"ofParts":3,"perPart":2}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Respect, integrity, fairness or equity defined", marks: 6, contextNote: "3 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Respect","integrity","fairness or equity defined"]} },
+    { id: "r-1", kind: "point", verbatim: "Roles – various roles such as defenders/attackers in gameplay and captains", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Also non playing roles such as referee, coach", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Conventions – procedural protocols (e.g. soccer- flip of coin)", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -183,7 +267,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
     id: "pe-2020-hl-q15cii", topicId: "physical-education-2-2", conceptId: "pe-2-2-developments-sport-over-last",
     section: "C", questionRef: "2020 HL Q15(c)(ii)",
-    questionText: "Discuss developments in physical activity and sport over the last 20 years from the perspective of a different group to the group used by you to answer question",
+    questionText: "Discuss developments in physical activity and sport over the last 20 years from the perspective of a different group to the group used by you to answer question 15",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "women", marks: null, openList: true },
@@ -201,11 +285,34 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
     id: "pe-2020-hl-q16c", topicId: "physical-education-0-14", conceptId: "pe-0-14-heptathletes-must-able-cope",
     section: "C", questionRef: "2020 HL Q16(c)",
-    questionText: "Heptathletes must be able to cope with special tactical demands. Heptathletes receive points for each event, according to a scoring table. Therefore, the result Suggest strategies a heptathlete could implement to address the demands outlined above.",
+    questionText: "Heptathletes must be able to cope with special tactical demands. Heptathletes receive points for each event, according to a scoring table. Therefore, the results of the events and not the placing are the most important thing. Like all combined event athletes they must be able to achieve maximum performance: • in the sprints and hurdles without the benefit of qualifying runs • in the long jump and throws with a limited number of attempts • in a fixed sequence of events over a two day period • even as they become fatigued. Suggest strategies a heptathlete could implement to address the demands outlined above.",
     tariffModel: {"kind":"fixed","notation":"3 + 3 + 2 + 2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Relevant strategies suggested 3+3+2+2", marks: 10, contextNote: "The scheme pays 3 then 3 then 2 then 2 marks, in the order the answers are credited.", openList: true, group: {"claimMax":4,"perOption":3,"options":["– optimal warm up prior to an event and between events (in order to achieve a good performance at the first attempt), correct choice of starting height in the high jump, correct choice of tempo in the 800 metres","Well equipped for the competition – clothing, spikes","Developed psychological skills – heptathletes who are confident tend to be successful in combined events","Rational nutrition plan (food and drink) – based on the sequence of events","Understand how scoring tables work"],"perOptionSteps":[3,3,2,2]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2020 Higher Level — © State Examinations Commission.",
+    id: "pe-2020-hl-q4", topicId: "physical-education-0-3", conceptId: "pe-0-3-figure-jason-smyth-figure",
+    section: "A", questionRef: "2020 HL Q4",
+    questionText: "Figure 2 Jason Smyth, in Figure 2 above, is a Paralympian with a visual impairment. He is a 100 metre champion. He was crowned the “fastest Paralympian on the Planet” when he won at the Rio ‘One Year to Go’ celebration event. State and explain two different types of feedback that would be appropriate for Jason.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":2,"perPart":1}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two types of feedback +", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["intrinsic feedback, kinaesthetic","extrinsic feedback, verbal"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Physical Education 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -265,14 +372,90 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
+    id: "pe-2021-hl-q13b", topicId: "physical-education-0-0", conceptId: "pe-0-0-stage-skill-learning-donovan",
+    section: "B", questionRef: "2021 HL Q13(b)",
+    questionText: "What stage of skill learning are the O’Donovan brothers at in the sport of rowing? Justify your answer with reference to the case study.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":2,"perPart":1}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Correct stage of skill learning identified", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["“As a technique there is a lot involved, but after 17 years you don’t even have to think about it at this stage, it just happens.” won a silver medal in the men’s lightweight double sculls category at the 2016","Rio Olympic Games"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
     id: "pe-2021-hl-q13di", topicId: "physical-education-0-18", conceptId: "pe-0-18-measures-caroline-macmanus-took",
     section: "B", questionRef: "2021 HL Q13(d)(i)",
-    questionText: "Name two measures that Caroline MacManus took to monitor Gary and Paul O’Donovan so that their chances of overtraining could be reduced. can assist coaches and",
+    questionText: "Name two measures that Caroline MacManus took to monitor Gary and Paul O’Donovan so that their chances of overtraining could be reduced. can assist coaches and athletes to avoid the chance of overtraining.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sessional rate of perceived exertion", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Daily wellness parameters", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
+    id: "pe-2021-hl-q13diii", topicId: "physical-education-0-10", conceptId: "pe-0-10-figure-gives-detailed-description",
+    section: "B", questionRef: "2021 HL Q13(d)(iii)",
+    questionText: "Figure 5 gives a detailed description of a week-long training plan for a rower in the early stages of their season. Using evidence from this plan to support your answer, identify three components of physical fitness that are important in rowing. is important in rowing.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cardio respiratory endurance", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "90 minutes or rowing/ running or cycling- 3 days a week", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Muscular endurance", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Volume based weight training- 3 days a week", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Flexibility", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "Stretching is in the plan 7 days a week", marks: null, openList: true },
+    { id: "r-7", kind: "point", verbatim: "Also accept balance – core training, strength – circuit", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                13,
+                16
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
+    id: "pe-2021-hl-q13e", topicId: "physical-education-0-12", conceptId: "pe-0-12-reference-case-study-phases",
+    section: "B", questionRef: "2021 HL Q13(e)",
+    questionText: "With reference to the case study, name the three phases of a 2000 m rowing race and explain the contribution of the relevant energy systems during each phase.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Phase named +", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Phase 1 – Sprint start","Phase 2 – Maintenance phase","Phase 3 – Sprint finish mark +"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -292,26 +475,12 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
-    id: "pe-2021-hl-q14di", topicId: "physical-education-1-2", conceptId: "pe-1-2-examine-participation-levels-young",
-    section: "C", questionRef: "2021 HL Q14(d)(i)",
-    questionText: "Examine how physical activity participation levels of young men can be influenced by media representations of the ‘perfect body’.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Considers the argument that physical activity participation levels of young men can be influenced by media representations of the ‘perfect body’ in a way that uncovers the assumptions and interrelationships of the issue", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
     id: "pe-2021-hl-q15a", topicId: "physical-education-0-12", conceptId: "pe-0-12-endurance-athletes-need-carefully",
     section: "C", questionRef: "2021 HL Q15(a)",
-    questionText: "Endurance athletes need to carefully plan their nutrition for optimum performance. Explain how the effective use of carbohydrates before and during an event can",
+    questionText: "Endurance athletes need to carefully plan their nutrition for optimum performance. Explain how the effective use of carbohydrates before and during an event can help endurance athletes optimise their performance.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Before an event", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "help endurance athletes optimise their performance", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -321,10 +490,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
     id: "pe-2021-hl-q15bi", topicId: "physical-education-1-9", conceptId: "pe-1-9-presence-prohibited-substance-athlete",
     section: "C", questionRef: "2021 HL Q15(b)(i)",
-    questionText: "The presence of a prohibited substance in an athlete’s sample, and the use or attempted use of a prohibited substance or prohibited method by an athlete are Iri",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":10,"perPart":2}, totalMarks: 4,
+    questionText: "The presence of a prohibited substance in an athlete’s sample, and the use or attempted use of a prohibited substance or prohibited method by an athlete are Irish anti-doping rule violations. Identify three other distinct Irish anti-doping rule violations.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":9,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Identify three other distinct Irish anti-doping rule violations (ADVR). marks + marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["3. Refusing or failing to do a drug test after notification","4. Committing Three Whereabouts Failures (Filing Failures or Missed Tests) in 12 months","5. Tampering","6. Possession of Prohibited Substances and/or Prohibited Methods","7. Trafficking in any Prohibited Substance or Prohibited Method","8. Administration to an Athlete of any Prohibited Method or Prohibited Substance; assisting, encouraging, aiding, abetting, covering up","9. Complicity or Attempted Complicity - Involvement in an ADRV committed by another person, such as helping to cover up that ADRV or avoid detection, will be sanctioned in the same way as that violation","10. Prohibited Association -Associating with a person such as a coach, doctor or physio who has been found guilty of an ADRV or equivalent offence to a doping violation will be sanctioned with a ban of up to 2 years","16 July","2021)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Identify three other distinct Irish anti-doping rule violations (ADVR). marks + marks", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["3. Refusing or failing to do a drug test after notification","4. Committing Three Whereabouts Failures (Filing Failures or Missed Tests) in 12 months","5. Tampering","6. Possession of Prohibited Substances and/or Prohibited Methods","7. Trafficking in any Prohibited Substance or Prohibited Method","8. Administration to an Athlete of any Prohibited Method or Prohibited Substance; assisting, encouraging, aiding, abetting, covering up","9. Complicity or Attempted Complicity - Involvement in an ADRV committed by another person, such as helping to cover up that ADRV or avoid detection, will be sanctioned in the same way as that violation","10. Prohibited Association -Associating with a person such as a coach, doctor or physio who has been found guilty of an ADRV or equivalent offence to a doping violation will be sanctioned with a ban of up to 2 years","16 July"]} },
     ],
   } as SecCard,
   {
@@ -345,13 +514,36 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
-    id: "pe-2021-hl-q15d", topicId: "physical-education-1-9", conceptId: "pe-1-9-post-exercise-recovery-strategies",
+    id: "pe-2021-hl-q15d", topicId: "physical-education-0-12", conceptId: "pe-0-12-post-exercise-recovery-strategies",
     section: "C", questionRef: "2021 HL Q15(d)",
-    questionText: "Describe three post exercise recovery strategies that an athlete could use which would not put them at risk of committing an Irish anti-doping rule violation. (",
+    questionText: "Describe three post exercise recovery strategies that an athlete could use which would not put them at risk of committing an Irish anti-doping rule violation. (You are not permitted to use nutritional strategies as one of your answers).",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Three post exercise recovery strategies described marks + marks", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["cold water immersion","compression garments","use of active recovery days"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
+    id: "pe-2021-hl-q16b", topicId: "physical-education-0-18", conceptId: "pe-0-18-figure-shows-republic-ireland",
+    section: "C", questionRef: "2021 HL Q16(b)",
+    questionText: "Figure 8 shows the Republic of Ireland women’s national soccer team head coach, Vera Pauw, conducting a training session prior to a European Championship qualifying match versus Germany in September 2020.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":7,"perPart":1}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Identified principle of effective practice", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["varied","progressive","specific","measurable","achievable","realistic","timed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -384,6 +576,31 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
+    id: "pe-2021-hl-q17aii", topicId: "physical-education-2-2", conceptId: "pe-2-2-using-figure-calculate-distance",
+    section: "C", questionRef: "2021 HL Q17(a)(ii)",
+    questionText: "Using Figure 9, calculate the distance and the displacement travelled by an athlete in Lane 1 having completed a 400 m sprint.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Distance= 400m", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Displacement= zero", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28,
+                29
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
     id: "pe-2021-hl-q17aiii", topicId: "physical-education-0-7", conceptId: "pe-0-7-using-figure-calculate-wayde",
     section: "C", questionRef: "2021 HL Q17(a)(iii)",
     questionText: "Using Figure 10, calculate Wayde’s average speed from the 200 m to the 300 m point during this race. Give your answer correct to 1 decimal place.",
@@ -391,6 +608,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Average speed = total distance travelled divided by the total time spent traveling", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28,
+                29
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -439,7 +667,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
     id: "pe-2021-hl-q17d", topicId: "physical-education-1-4", conceptId: "pe-1-4-elite-athletes-make-very",
     section: "C", questionRef: "2021 HL Q17(d)",
-    questionText: "Elite athletes make up a very small proportion of Irish society. It can be argued that it is far more important to develop positive physical activity patterns f",
+    questionText: "Elite athletes make up a very small proportion of Irish society. It can be argued that it is far more important to develop positive physical activity patterns for all members of society rather than focus support on the sporting elite. Identify a national policy that supports physical activity for all and explain how it does this.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Get Ireland Active!", marks: null, openList: true },
@@ -450,12 +678,12 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
-    id: "pe-2021-hl-q18c", topicId: "physical-education-0-11", conceptId: "pe-0-11-michael-jordan-national-basketball",
+    id: "pe-2021-hl-q18c", topicId: "physical-education-0-13", conceptId: "pe-0-13-michael-jordan-national-basketball",
     section: "C", questionRef: "2021 HL Q18(c)",
-    questionText: "Michael Jordan won six National Basketball Association (NBA) Championships and was named most valuable player (MVP) in each of those six NBA finals series. Exam",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 6 marks","answer":2,"ofParts":2,"perPart":6}, totalMarks: 12,
+    questionText: "Michael Jordan won six National Basketball Association (NBA) Championships and was named most valuable player (MVP) in each of those six NBA finals series. Examine two psychological strategies that Jordan could have used pre performance to ensure that he was mentally prepared for the psychological demands of an NBA final series.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 6 marks","answer":2,"ofParts":3,"perPart":6}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two psychological strategies pre performance +", marks: 12, contextNote: "2 answers at 6 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":6,"options":["positive self-talk, visualisation, meditation marks","Two psychological strategies pre performance +"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two psychological strategies pre performance +", marks: 12, contextNote: "2 answers at 6 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":6,"options":["positive self-talk","visualisation","meditation marks"]} },
     ],
   } as SecCard,
   {
@@ -465,10 +693,35 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
     id: "pe-2021-hl-q18di", topicId: "physical-education-0-12", conceptId: "pe-0-12-figure-jordan-seen-drinking",
     section: "C", questionRef: "2021 HL Q18(d)(i)",
-    questionText: "In Figure 15 Jordan is seen drinking the sports drink Gatorade. Gatorade describe itself as “The Sports Fuel Company”. Other than sports drinks, name four suppl",
+    questionText: "In Figure 15 Jordan is seen drinking the sports drink Gatorade. Gatorade describe itself as “The Sports Fuel Company”. Other than sports drinks, name four supplements that could potentially enhance a basketball player’s performance. might enhance the performance levels of a basketball player.",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 1 marks","answer":4,"ofParts":4,"perPart":1}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Sports supplement named", marks: 4, contextNote: "4 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":1,"options":["caffeine","creatine","beta-alanine","nitrates"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33,
+                35
+          ],
+          "attribution": "SEC Physical Education 2021 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2021 Higher Level — © State Examinations Commission.",
+    id: "pe-2021-hl-q18dii", topicId: "physical-education-0-12", conceptId: "pe-0-12-supplements-question",
+    section: "C", questionRef: "2021 HL Q18(d)(ii)",
+    stem: "Q18(d)(i): In Figure 15 Jordan is seen drinking the sports drink Gatorade. Gatorade describe itself as “The Sports Fuel Company”. Other than sports drinks, name four supplements that could potentially enhance a basketball player’s performance. might enhance the performance levels of a basketball player.",
+    questionText: "Explain how the use of each of the supplements named by you in question 18",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "+ + sports supplements might enhance the performance levels of a + basketball player", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -483,9 +736,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "skill is broken down into its smaller parts and each part is practiced in isolation", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "basketball layup", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Whole practice explained", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "skill is practiced in its entirety from start to finish", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "running", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "skill is practiced in its entirety from start to finish", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "running", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -510,14 +762,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2021-hl-q4b", topicId: "physical-education-0-7", conceptId: "pe-0-7-reference-relevant-performance-related",
     section: "A", questionRef: "2021 HL Q4(b)",
     questionText: "With reference to a named physical activity, identify two relevant performance-related fitness demands.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":6,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "speed", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "power", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "agility", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "reaction time", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "coordination", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "balance marks", marks: null, openList: true },
+    { id: "r-1", kind: "anyN", verbatim: "Identified performance related fitness demand relevant to physical activity named", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["speed","power","agility","reaction time","coordination","balance marks"]} },
     ],
   } as SecCard,
   {
@@ -556,9 +803,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2021-hl-q7b", topicId: "physical-education-0-2", conceptId: "pe-0-2-different-examples-movement-frontal",
     section: "A", questionRef: "2021 HL Q7(b)",
     questionText: "Give two different examples of movement in the frontal plane in physical activity.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":2,"perPart":2}, totalMarks: 4,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":3,"perPart":2}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Two different examples of frontal plane movement +", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["performing a cartwheel, jumping jacks, side step marks","Two different examples of frontal plane movement +"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Two different examples of frontal plane movement +", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["performing a cartwheel","jumping jacks","side step marks"]} },
     ],
   } as SecCard,
   {
@@ -569,11 +816,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2021-hl-q8a", topicId: "physical-education-1-6", conceptId: "pe-1-6-principles-ethical-practice-being",
     section: "A", questionRef: "2021 HL Q8(a)",
     questionText: "Identify two principles of ethical practice being disregarded by a soccer player when they dive in an attempt to win a free kick.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fairness", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "respect", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "integrity", marks: null, openList: true },
+    { id: "r-1", kind: "anyN", verbatim: "Two principles of ethical practice identified", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["fairness","respect","integrity"]} },
     ],
   } as SecCard,
   {
@@ -586,9 +831,8 @@ export const CARDS: SecCard[] = [
     questionText: "What is the difference between state anxiety and trait anxiety?",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "State anxiety is an immediate emotional state that is characterised by apprehension, fear, tension and an increase in physiological arousal in response to a specific situation or demand in a game or event. It is a temporary emotional state", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Trait anxiety is considered to be a part of one’s personality – an acquired behavioral tendency or disposition to perceive certain situations as threatening although they may not be", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "There is a direct relationship between an athlete’s level of trait anxiety and state anxiety, athletes with high trait anxiety tend to experience more state anxiety", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "State anxiety is an immediate emotional state that is characterised by apprehension", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "fear", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -598,7 +842,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q1", topicId: "physical-education-0-1", conceptId: "pe-0-1-collins-dictionary-defines-characteristic",
     section: "A", questionRef: "2022 HL Q1",
-    questionText: "The Collins Dictionary defines a characteristic as: A distinguishable quality, attribute or trait. Identify four characteristics that you would associate with t",
+    questionText: "The Collins Dictionary defines a characteristic as: A distinguishable quality, attribute or trait. Identify four characteristics that you would associate with the performance of highly skilled athletes.",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks","answer":4,"ofParts":4,"perPart":2}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Identifies 4 characteristics associated with performance of highly skilled athletes", marks: 8, contextNote: "4 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Kinaesthetic awareness","Anticipation","Consistency","Accuracy in Technique/skill/movement pattern"]} },
@@ -622,12 +866,39 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
-    id: "pe-2022-hl-q13e", topicId: "physical-education-1-0", conceptId: "pe-1-0-analyse-technical-demands-performer",
-    section: "B", questionRef: "2022 HL Q13(e)",
-    questionText: "Analyse the physical and technical demands for a performer in a physical activity of your choice. You are not permitted to use pentathlon as your chosen physica",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
+    id: "pe-2022-hl-q13aii", topicId: "physical-education-0-3", conceptId: "pe-0-3-ways-performer-stage-learning",
+    section: "B", questionRef: "2022 HL Q13(a)(ii)",
+    stem: "Q13(a)(i): Identify the stage of learning that Natalya was most likely at when she began to learn the skills of fencing.",
+    questionText: "Describe two ways that a performer at the stage of learning identified by you in (i) could improve their skill level.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 3 marks","answer":2,"ofParts":3,"perPart":3}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Analyses the physical and technical demands for a performer in chosen physical activity", marks: null, openList: true },
+    { id: "r-1", kind: "anyN", verbatim: "Very Good – Excellent description", marks: 6, contextNote: "2 answers at 3 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Fixed practice","feedback","Trial and error/ self-discovery"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
+    id: "pe-2022-hl-q13ci", topicId: "physical-education-0-10", conceptId: "pe-0-10-approaches-training-outside-activities",
+    section: "B", questionRef: "2022 HL Q13(c)(i)",
+    questionText: "Identify two approaches to training outside of her activities/events that Natalya could use to enhance her athletic performance.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":3,"perPart":2}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Approach identified", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Resistance training","yoga","pilates"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
+    id: "pe-2022-hl-q13d", topicId: "physical-education-1-3", conceptId: "pe-1-3-natalya-comments-impact-participation",
+    section: "B", questionRef: "2022 HL Q13(d)",
+    questionText: "Natalya comments on the impact of her participation at the London Olympics on building the profile of her sport. Role models like Natalya can have a significant positive impact on the physical activity engagement of others. Examine two approaches that can be used to promote physical activity participation. You are not permitted to use role models in your answer.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 5 marks","answer":2,"ofParts":3,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Examines two approaches that can be used to promote physical activity participation – role models not…", marks: 10, contextNote: "2 answers at 5 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Schools offering a varied Physical Education curriculum","Schools offering a range of extra-curricular activities","National physical activity strategy- Healthy Ireland- Get Ireland"]} },
     ],
   } as SecCard,
   {
@@ -699,9 +970,21 @@ export const CARDS: SecCard[] = [
     questionText: "Figure 16 Examine the notion that athletes who use performance enhancing drugs (PEDs) can cause significant damage to the sport that they compete in.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the culture and integrity of the sport may be questioned, The sport may experience a reduction in participants as people may be afraid that a certain culture of PED acceptance exists, parents may be unwilling to allow their children be cared for in such environments, withdrawal of sponsorships for the sport, the NGB and associated sporting events", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Examines the notion that athletes who use performance enhancing drugs (PEDs) can cause significant damage to the sport that they compete in", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "the culture and integrity of the sport may be questioned", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "parents may be unwilling to allow their children be cared for in such environments", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "withdrawal of sponsorships for the sport", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "the NGB and associated sporting events", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Physical Education 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -710,7 +993,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q16c", topicId: "physical-education-1-8", conceptId: "pe-1-8-using-table-categories-peds",
     section: "C", questionRef: "2022 HL Q16(c)",
-    questionText: "Using the following table, identify three categories of PEDs, name an example of a drug in each category and state a performance enhancing effect of each of the",
+    questionText: "Using the following table, identify three categories of PEDs, name an example of a drug in each category and state a performance enhancing effect of each of the named PEDs.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Stimulants", marks: null, openList: true },
@@ -739,9 +1022,9 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
-    id: "pe-2022-hl-q17c", topicId: "physical-education-0-0", conceptId: "pe-0-0-appropriate-method-analysing-aspects",
+    id: "pe-2022-hl-q17c", topicId: "physical-education-0-2", conceptId: "pe-0-2-appropriate-method-analysing-aspects",
     section: "C", questionRef: "2022 HL Q17(c)",
-    questionText: "Outline an appropriate method of analysing each of the following four aspects of performance: Choreography; Psychological preparedness; Skill and Technique; Str",
+    questionText: "Outline an appropriate method of analysing each of the following four aspects of performance: Choreography; Psychological preparedness; Skill and Technique; Structures and Strategies. You are not permitted to use the same method of analysis for more than one aspect of performance.",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 1 marks","answer":4,"ofParts":4,"perPart":1}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Outlines an appropriate method of analysing each of the four aspects of performance", marks: 4, contextNote: "4 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Choreography","Psychological preparedness","Skill and Technique","Structures and Strategies. Each method of analysis only accepted once"]} },
@@ -780,11 +1063,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q3", topicId: "physical-education-0-13", conceptId: "pe-0-13-strategies-athlete-could-enhance",
     section: "A", questionRef: "2022 HL Q3",
-    questionText: "Explain two strategies that an athlete could use to enhance their mental preparedness during performance in a physical activity of your choice. Physical Activit",
+    questionText: "Explain two strategies that an athlete could use to enhance their mental preparedness during performance in a physical activity of your choice. Physical Activity",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pre performance routine, Thought stopping/ Centring", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Attentional focus on execution, Visualisation, Progressive muscular relaxation", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Pre performance routine", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Thought stopping/ Centring", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -794,12 +1077,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q4", topicId: "physical-education-0-18", conceptId: "pe-0-18-impatient-first-year-coach",
     section: "A", questionRef: "2022 HL Q4",
-    questionText: "As an impatient first year coach, I lacked these skills and became quickly frustrated at the slow learning curve exhibited by the basketball players on the Dayt",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    questionText: "As an impatient first year coach, I lacked these skills and became quickly frustrated at the slow learning curve exhibited by the basketball players on the Dayton Greendevils team. Basketball hall of fame Coach John Wooden discussing the importance of interpersonal skills in basketball coaching in his autobiography Wooden on Leadership. Figure 2 Identify four interpersonal skills that are desirable for effective coaching.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 x 2 marks","answer":4,"ofParts":4,"perPart":2}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Communication skills, Emotional intelligence, Empathy, Leadership", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Positivity, Excellent negotiation skills", marks: null, openList: true },
+    { id: "r-1", kind: "anyN", verbatim: "Identifies 4 interpersonal skills desirable for effective coaching", marks: 8, contextNote: "4 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Communication skills","Emotional intelligence","Empathy","Leadership"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Physical Education 2022 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -808,7 +1100,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q6", topicId: "physical-education-0-2", conceptId: "pe-0-2-hockey-characterised-high-intensity",
     section: "A", questionRef: "2022 HL Q6",
-    questionText: "Ice hockey is characterised by high intensity intermittent skating with rapid changes in velocity. The intensity and duration determine the extent of the contri",
+    questionText: "Ice hockey is characterised by high intensity intermittent skating with rapid changes in velocity. The intensity and duration determine the extent of the contribution from energy systems. Explain how two of the body’s energy systems contribute to performance in a physical activity of your choice. Physical Activity",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Explanation of how two of the body’s energy systems contribute to performance in chosen activity", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["ATP- PC/ Anaerobic alactacid system","Anaerobic Glycolytic/ Anaerobic lactic system","Aerobic / Oxidative System"]} },
@@ -835,7 +1127,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q8c", topicId: "physical-education-0-2", conceptId: "pe-0-2-shipman-mentions-speed-velocity",
     section: "A", questionRef: "2022 HL Q8(c)",
-    questionText: "Shipman mentions speed, velocity and momentum in describing the physics involved in discus throwing. Categorise each of these quantities as either a vector or a",
+    questionText: "Shipman mentions speed, velocity and momentum in describing the physics involved in discus throwing. Categorise each of these quantities as either a vector or a scalar.",
     tariffModel: {"kind":"bestNofParts","notation":"3 x 1 marks","answer":3,"ofParts":3,"perPart":1}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Correct categorisation of quantity", marks: 3, contextNote: "3 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":1,"options":["Speed- Scalar","Velocity- Vector","Momentum- Vector"]} },
@@ -848,7 +1140,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2022 Higher Level — © State Examinations Commission.",
     id: "pe-2022-hl-q9", topicId: "physical-education-1-26", conceptId: "pe-1-26-mass-participation-events-concept",
     section: "A", questionRef: "2022 HL Q9",
-    questionText: "Mass participation events are a concept of physical activity and can be described as events where a large number of participants engage in a physical activity a",
+    questionText: "Mass participation events are a concept of physical activity and can be described as events where a large number of participants engage in a physical activity at the same time. Explain two concepts of physical activity other than mass participation events.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4 marks","answer":2,"ofParts":5,"perPart":4}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Explains two concepts of physical activity - not mass participation events", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Sport","Leisure/ Recreation","Physical Education","Play","Outdoor and adventure Education"]} },
@@ -879,6 +1171,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Component of fitness correctly identified", marks: 4, contextNote: "4 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Power","Speed","Strength","Cardiorespiratory Endurance"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Physical Education 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -895,32 +1197,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Low reps for strength training", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Short intervals for conditioning", marks: null, openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
-    id: "pe-2023-hl-q17b", topicId: "physical-education-0-12", conceptId: "pe-0-12-examine-nutritional-considerations-athlete",
-    section: "C", questionRef: "2023 HL Q17(b)",
-    questionText: "Examine two nutritional considerations that an athlete might implement after performance to enhance recovery. You are not permitted to use hydration or sports d",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Examine two nutritional considerations that an athlete may implement after performance to enhance recovery. You are not permitted to use hydration or sports drinks", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Higher Level — © State Examinations Commission.",
-    id: "pe-2023-hl-q17d", topicId: "physical-education-1-24", conceptId: "pe-1-24-analyse-different-forms-sport",
-    section: "C", questionRef: "2023 HL Q17(d)",
-    questionText: "Analyse two different forms of sport related advertising in relation to the messages they give to young people.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Analyse two different forms of sport related advertising in relation to the messages it gives to young people", marks: null, openList: true },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Physical Education 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -956,7 +1242,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
     id: "pe-2024-hl-q1a", topicId: "physical-education-0-2", conceptId: "pe-0-2-appropriate-method-analyse-aspects",
     section: "A", questionRef: "2024 HL Q1(a)",
-    questionText: "Identify an appropriate method to analyse each of the following aspects of performance: Psychological preparedness Choreography You must use a different method",
+    questionText: "Identify an appropriate method to analyse each of the following aspects of performance: Psychological preparedness Choreography You must use a different method of analysis for each aspect of performance.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 2 marks","answer":2,"ofParts":2,"perPart":2}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Psychological preparedness Choreography", marks: 4, contextNote: "2 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Questionnaire such as SCAT Test, Sports Motivation Scale","Video analysis, coach feedback, checklist"]} },
@@ -1022,6 +1308,29 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
+    id: "pe-2024-hl-q13aii", topicId: "physical-education-0-2", conceptId: "pe-0-2-sport-related-scalar-quantities",
+    section: "B", questionRef: "2024 HL Q13(a)(ii)",
+    questionText: "Identify two sport related scalar quantities mentioned in the case study.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "seconds", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Physical Education 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
     id: "pe-2024-hl-q13b", topicId: "physical-education-0-16", conceptId: "pe-0-16-examine-approaches-safe-practice",
     section: "B", questionRef: "2024 HL Q13(b)",
     questionText: "Examine two approaches to safe practice that organisers of an event, such as the Olympic Games, may implement.",
@@ -1035,12 +1344,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
-    id: "pe-2024-hl-q13ci", topicId: "physical-education-0-10", conceptId: "pe-0-10-periodisation",
-    section: "B", questionRef: "2024 HL Q13(c)(i)",
-    questionText: "Define periodisation.",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    id: "pe-2024-hl-q13cii", topicId: "physical-education-2-2", conceptId: "pe-2-2-time-adeleke-ncaa-championship",
+    section: "B", questionRef: "2024 HL Q13(c)(ii)",
+    questionText: "What time did Adeleke run in the 400m NCAA championship final race in Texas in 2023?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Periodisation defined", marks: 2, openList: true },
+    { id: "r-1", kind: "point", verbatim: "49.2 seconds", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "49.2/ calculation correct ( 8.13 /", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1048,13 +1358,24 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
-    id: "pe-2024-hl-q13cii", topicId: "physical-education-2-2", conceptId: "pe-2-2-time-adeleke-ncaa-championship",
-    section: "B", questionRef: "2024 HL Q13(c)(ii)",
-    questionText: "What time did Adeleke run in the 400m NCAA championship final race in Texas in 2023?",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
+    id: "pe-2024-hl-q13ciii", topicId: "physical-education-2-2", conceptId: "pe-2-2-suggest-reason-adeleke-faster",
+    section: "B", questionRef: "2024 HL Q13(c)(iii)",
+    questionText: "Suggest one reason why Adeleke ran a faster time in the NCAA championship final than in the 400m World Championship final last year. Justify your reason with reference to the case study.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "÷8.13)", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Reason: Fatigue", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Justification: It has been a long season", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                17
+          ],
+          "attribution": "SEC Physical Education 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1113,19 +1434,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
-    id: "pe-2024-hl-q15c", topicId: "physical-education-0-7", conceptId: "pe-0-7-complete-table-design-performance",
-    section: "C", questionRef: "2024 HL Q15(c)",
-    questionText: "Complete the following table to design a performance-related fitness test battery for a named physical activity of your choice.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Justification", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
     id: "pe-2024-hl-q16ai", topicId: "physical-education-1-8", conceptId: "pe-1-8-make-statements-about-doping",
     section: "C", questionRef: "2024 HL Q16(a)(i)",
     questionText: "Make two statements about doping in cycling over recent years based on information presented in Figure 12.",
@@ -1133,6 +1441,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Accurate statement provided", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Around 2007/2008 was the period when most positive test occurred","The least amount of positive tests happened around 2020","There has been an increase in the number of positive tests since the year 2020","There has been a significant decline in the number of positive tests over the past 20 years"]} },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Physical Education 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1175,9 +1493,9 @@ export const CARDS: SecCard[] = [
     id: "pe-2024-hl-q16d", topicId: "physical-education-0-12", conceptId: "pe-0-12-part-studies-leaving-certificate",
     section: "C", questionRef: "2024 HL Q16(d)",
     questionText: "As part of your studies in Leaving Certificate Physical Education you designed a dietary plan for an athlete in a named physical activity of your choice. Outline three aspects of the dietary plan and provide a rationale for the inclusion of each aspect.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 4 marks","answer":3,"ofParts":4,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 4 marks","answer":3,"ofParts":3,"perPart":4}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Aspects may include", marks: 12, contextNote: "3 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Macro recommendations","Calorie suggestions","Timing of meals","Appropriate inclusion of food and sports supplements"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Aspects may include", marks: 12, contextNote: "3 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Macro recommendations","Calorie suggestions","Timing of meals"]} },
     ],
   } as SecCard,
   {
@@ -1213,10 +1531,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
     id: "pe-2024-hl-q17c", topicId: "physical-education-1-24", conceptId: "pe-1-24-write-statements-would-include",
     section: "C", questionRef: "2024 HL Q17(c)",
-    questionText: "Write three statements that you would include in a code of practice for the selection of commercial sponsorship for a youth sports team. Justify why you would i",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    questionText: "Write three statements that you would include in a code of practice for the selection of commercial sponsorship for a youth sports team. Justify why you would include each of these statements in this code of practice.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 2 marks","answer":3,"ofParts":5,"perPart":2}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Statements may include", marks: 6, contextNote: "3 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Sponsor should have a positive public image that we would like our youth players to see","An ideal sponsor may be involved in a business that promotes healthy lifestyles or may support their staff in attaining this","Sponsorship not to be taken from a betting firm","Sponsorship not to be taken from an alcohol firm","Sponsorship not to be taken from a tobacco firm","Justify why you would include each of these statements in this code of practice"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Statements may include", marks: 6, contextNote: "3 answers at 2 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Sponsor should have a positive public image that we would like our youth players to see","An ideal sponsor may be involved in a business that promotes healthy lifestyles or may support their staff in attaining this","Sponsorship not to be taken from a betting firm","Sponsorship not to be taken from an alcohol firm","Sponsorship not to be taken from a tobacco firm"]} },
     ],
   } as SecCard,
   {
@@ -1242,8 +1560,14 @@ export const CARDS: SecCard[] = [
     questionText: "Define anxiety related to performance in physical activity.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nervousness, turbulence, threats, physical, somatic, mental, cognitive, behaviours", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Definition", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Nervousness", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "turbulence", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "threats", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "physical", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "somatic", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "mental", marks: null, openList: true },
+    { id: "r-7", kind: "point", verbatim: "cognitive", marks: null, openList: true },
+    { id: "r-8", kind: "point", verbatim: "behaviours", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1253,7 +1577,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
     id: "pe-2024-hl-q18c", topicId: "physical-education-0-24", conceptId: "pe-0-24-part-studies-leaving-certificate",
     section: "C", questionRef: "2024 HL Q18(c)",
-    questionText: "As part of your studies in Leaving Certificate Physical Education you designed a personal action plan to support a positive psychological disposition for perfor Outline three aspects of the action plan and provide a rationale for the inclusion of each aspect.",
+    questionText: "As part of your studies in Leaving Certificate Physical Education you designed a personal action plan to support a positive psychological disposition for performance. Outline three aspects of the action plan and provide a rationale for the inclusion of each aspect.",
     tariffModel: {"kind":"bestNofParts","notation":"3 x 4 marks","answer":3,"ofParts":4,"perPart":4}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Aspects may include", marks: 12, contextNote: "3 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Goal setting","Development of concentration strategies","Development of confidence strategies","Tools to deal with mistakes and issue in performance"]} },
@@ -1271,35 +1595,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Marcanna Breise as ucht freagairt trí Ghaeilge", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Léiríonn an tábla thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn níos mó ná 75% d’iomlán na marcanna", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Bain úsáid as an tábla seo i gcás na n-ábhar a bhfuil 250 marc san iomlán ag gabháil leo agus inarb", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "é 10% gnáthráta an bhónais", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Bain úsáid as an ngnáthráta i gcás 187 marc agus faoina bhun sin. Os cionn an mharc sin, féach an tábla thíos", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "Bunmharc Marc Bónais Bunmharc Marc Bónais", marks: null, openList: true },
-    { id: "r-7", kind: "point", verbatim: "188 - 190 18 221 - 223", marks: null, openList: true },
-    { id: "r-8", kind: "point", verbatim: "191 - 193 17 224 - 226", marks: null, openList: true },
-    { id: "r-9", kind: "point", verbatim: "194 - 196 16 227 - 230", marks: null, openList: true },
-    { id: "r-10", kind: "point", verbatim: "197 - 200 15 231 - 233", marks: null, openList: true },
-    { id: "r-11", kind: "point", verbatim: "201 - 203 14 234 - 236", marks: null, openList: true },
-    { id: "r-12", kind: "point", verbatim: "204 - 206 13 237 - 240", marks: null, openList: true },
-    { id: "r-13", kind: "point", verbatim: "207 - 210 12 241 - 243", marks: null, openList: true },
-    { id: "r-14", kind: "point", verbatim: "211 - 213 11 244 - 246", marks: null, openList: true },
-    { id: "r-15", kind: "point", verbatim: "214 - 216 10 247 - 250", marks: null, openList: true },
-    { id: "r-16", kind: "point", verbatim: "217 - 220", marks: null, openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
-    id: "pe-2024-hl-q2a", topicId: "physical-education-1-0", conceptId: "pe-1-0-concept-leisure-recreation",
-    section: "A", questionRef: "2024 HL Q2(a)",
-    questionText: "Define the concept of physical activity, leisure and recreation.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Defines the concept of physical activity", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "leisure and recreation", marks: null, openList: true },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                38
+          ],
+          "attribution": "SEC Physical Education 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1350,7 +1656,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
     id: "pe-2024-hl-q4", topicId: "physical-education-1-17", conceptId: "pe-1-17-according-recent-survey-people",
     section: "A", questionRef: "2024 HL Q4",
-    questionText: "According to a recent survey of 10,000 people in nine countries by Capgemini, the French technology consulting company, nearly 70 percent of fans say that new t",
+    questionText: "According to a recent survey of 10,000 people in nine countries by Capgemini, the French technology consulting company, nearly 70 percent of fans say that new technologies have enhanced their viewing experience. Discuss two advancements in technology that have impacted spectator experience in a named physical activity of your choice.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Video analysis tools", marks: null, openList: true },
@@ -1440,32 +1746,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
-    id: "pe-2024-hl-q8a", topicId: "physical-education-0-16", conceptId: "pe-0-16-injuries-commonly-occur-potential",
-    section: "A", questionRef: "2024 HL Q8(a)",
-    questionText: "Identify two injuries that commonly occur in a named physical activity of your choice and identify the potential causes of both injuries.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 1 marks","answer":2,"ofParts":9,"perPart":1}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Common injury identified", marks: 2, contextNote: "2 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Rugby","Cut","Clash of heads, stud from boot can cut skin, friction from impact on the ground can cause a cut to skin","Put on gloves if possible","Control the bleeding by applying pressure to the area with a fabric","Rinse the wound out to remove any dirt/ grit","Reassure the injured person","Seek additional help","(2+2)"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
-    id: "pe-2024-hl-q9a", topicId: "physical-education-1-24", conceptId: "pe-1-24-endorsements-related-sport",
-    section: "A", questionRef: "2024 HL Q9(a)",
-    questionText: "Define endorsements related to sport.",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Defines endorsements related to sport", marks: 2, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Higher Level — © State Examinations Commission.",
     id: "pe-2024-hl-q9b", topicId: "physical-education-1-24", conceptId: "pe-1-24-advantages-sponsorship-national-governing",
     section: "A", questionRef: "2024 HL Q9(b)",
     questionText: "Identify two advantages of sponsorship for the National Governing Bodies of sport.",
@@ -1492,7 +1772,20 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q13b", topicId: "physical-education-0-0", conceptId: "pe-0-0-skill-uses-class-lever",
+    id: "pe-2025-hl-q12b", topicId: "physical-education-1-9", conceptId: "pe-1-9-under-circumstance-athlete-compete",
+    section: "A", questionRef: "2025 HL Q12(b)",
+    questionText: "Under what circumstance can an athlete compete with banned substances in their system?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "All parts of Question 13 to be answered", marks: null, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
+    id: "pe-2025-hl-q13b", topicId: "physical-education-0-2", conceptId: "pe-0-2-skill-uses-class-lever",
     section: "B", questionRef: "2025 HL Q13(b)",
     questionText: "Name a skill that uses a 3rd class lever from a named physical activity of your choice.",
     tariffModel: {"kind":"fixed","notation":"6 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
@@ -1505,25 +1798,35 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q13ciii", topicId: "physical-education-0-2", conceptId: "pe-0-2-hammer-throwers-mainly-move",
-    section: "B", questionRef: "2025 HL Q13(c)(iii)",
-    questionText: "Hammer throwers mainly move in which plane of movement?",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
+    id: "pe-2025-hl-q13ci", topicId: "physical-education-0-3", conceptId: "pe-0-3-based-description-javelin-case",
+    section: "B", questionRef: "2025 HL Q13(c)(i)",
+    questionText: "Based on the description of javelin in the case study, name a skill practice method that is appropriate for developing the skill of a javelin thrower. to improve the skill of a javelin thrower.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Transverse plane", marks: 2, openList: true },
+    { id: "r-1", kind: "point", verbatim: "to improve the skill of the javelin thrower", marks: null, openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Physical Education 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q14ai", topicId: "physical-education-0-6", conceptId: "pe-0-6-components-health-related-fitness",
-    section: "C", questionRef: "2025 HL Q14(a)(i)",
-    questionText: "Define the following components of health-related fitness: Cardiorespiratory endurance Body composition Flexibility",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    id: "pe-2025-hl-q13ciii", topicId: "physical-education-0-2", conceptId: "pe-0-2-hammer-throwers-mainly-move",
+    section: "B", questionRef: "2025 HL Q13(c)(iii)",
+    questionText: "Hammer throwers mainly move in which plane of movement?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Definition of component of health-related fitness", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Transverse plane", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1533,50 +1836,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
     id: "pe-2025-hl-q14aii", topicId: "physical-education-0-6", conceptId: "pe-0-6-apply-fitt-formula-components",
     section: "C", questionRef: "2025 HL Q14(a)(ii)",
-    questionText: "Apply the FITT formula to one the following components of health-related fitness: Cardiorespiratory endurance Body composition Flexibility Component of health-r",
+    questionText: "Apply the FITT formula to one the following components of health-related fitness: Cardiorespiratory endurance Body composition Flexibility Component of health-related fitness:",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 1 marks","answer":4,"ofParts":4,"perPart":1}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Cardiorespiratory endurance Body composition Flexibility", marks: 4, contextNote: "4 answers at 1 mark each, as the scheme prices it.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Frequency","Intensity","Time","Type"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q14c", topicId: "physical-education-1-15", conceptId: "pe-1-15-developments-sport-since-groups",
-    section: "C", questionRef: "2025 HL Q14(c)",
-    questionText: "Discuss two developments in physical activity and sport, since 2005, for one of the following groups: • Women • People with intellectual disability • Older Adul",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 5 marks","answer":2,"ofParts":2,"perPart":5}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discussion on the developments in physical activity and sport for one of the groups in the last 20 years", marks: 10, contextNote: "2 answers at 5 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Older Adults • Different ethnic groups","People with physical disability • Different socio-economic groups"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q14d", topicId: "physical-education-1-17", conceptId: "pe-1-17-examine-advances-technology-have",
-    section: "C", questionRef: "2025 HL Q14(d)",
-    questionText: "Examine how advances in technology have impacted performers. Support your answer with physical activity examples.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Little detail or accuracy in the examination", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Examines how developments in technology have impacted performer in a way that uncovers the assumptions and interrelationships of this issue", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q15d", topicId: "physical-education-0-18", conceptId: "pe-0-18-examine-developments-technology-have",
-    section: "C", questionRef: "2025 HL Q15(d)",
-    questionText: "Examine how developments in technology have impacted coaches or choreographers.",
-    tariffModel: {"kind":"fixed","notation":"12 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Examines how developments in technology have impacted coaches or choreographers in a way that uncovers the assumptions and interrelationships of this issue", marks: 12, openList: true },
     ],
   } as SecCard,
   {
@@ -1597,19 +1860,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q18ai", topicId: "physical-education-1-6", conceptId: "pe-1-6-gamesmanship-related-sport",
-    section: "C", questionRef: "2025 HL Q18(a)(i)",
-    questionText: "Define gamesmanship related to physical activity and sport.",
-    tariffModel: {"kind":"fixed","notation":"2 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Definition of gamesmanship", marks: 2, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
     id: "pe-2025-hl-q18aii", topicId: "physical-education-1-6", conceptId: "pe-1-6-examples-gamesmanship",
     section: "C", questionRef: "2025 HL Q18(a)(ii)",
     questionText: "Give two examples of gamesmanship.",
@@ -1623,80 +1873,37 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC225ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q18d", topicId: "physical-education-1-2", conceptId: "pe-1-2-compare-barriers-participation-groups",
-    section: "C", questionRef: "2025 HL Q18(d)",
-    questionText: "Compare the barriers to physical activity participation for two of the following groups: • Women • People with intellectual disability • Older Adults • Differen",
+    id: "pe-2025-hl-q6b", topicId: "physical-education-0-0", conceptId: "pe-0-0-would-principles-outlined-question",
+    section: "A", questionRef: "2025 HL Q6(b)",
+    stem: "Q6(a): Outline two principles of effective practice.",
+    questionText: "How would you use one of the principles outlined by you in Question 6 (a) to develop skill in a practice session?",
+    tariffModel: {"kind":"fixed","notation":"4 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Looking for skill improvement/development", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC225ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Higher Level — © State Examinations Commission.",
+    id: "pe-2026-hl-q14d", topicId: "physical-education-0-23", conceptId: "pe-0-23-compare-performances-depicted-figure",
+    section: "C", questionRef: "2026 HL Q14(d)",
+    questionText: "Compare the performances depicted in Figure 7 and Figure 8 in terms of aesthetic or artistic criteria of performance.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Older Adults • Different ethnic groups", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "People with physical disability • Different socio-economic groups", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Makes use of examples to highlight the point of comparison", marks: null, openList: true },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q4a", topicId: "physical-education-0-21", conceptId: "pe-0-21-types-goals-related-short",
-    section: "A", questionRef: "2025 HL Q4(a)",
-    questionText: "Define the following types of goals related to physical activity: Short term goal Performance goal",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Definition of type of goal", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q7b", topicId: "physical-education-1-15", conceptId: "pe-1-15-ways-school-community-provide",
-    section: "A", questionRef: "2025 HL Q7(b)",
-    questionText: "Outline two ways that a school or community can provide for adapted physical activity.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Tick the box to indicate which context you are answering in - school or community", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2025 Higher Level — © State Examinations Commission.",
-    id: "pe-2025-hl-q9a", topicId: "physical-education-1-26", conceptId: "pe-1-26-concept-mass-participation-sports",
-    section: "A", questionRef: "2025 HL Q9(a)",
-    questionText: "Define the concept of physical activity, ‘mass-participation sports’.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Defines the concept of physical education", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "mass-participation sports", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Higher Level — © State Examinations Commission.",
-    id: "pe-2026-hl-q16b", topicId: "physical-education-0-12", conceptId: "pe-0-12-complete-table-identifying-sports",
-    section: "C", questionRef: "2026 HL Q16(b)",
-    questionText: "Complete the following table, identifying three sports supplements, their function and the performance effect associated with their use. You may not use creatin",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Creatine may not be used", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2026, level: "higher",
-    paperFileid: "LC225ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Higher Level — © State Examinations Commission.",
-    id: "pe-2026-hl-q16c", topicId: "physical-education-1-6", conceptId: "pe-1-6-using-examples-impact-either",
-    section: "C", questionRef: "2026 HL Q16(c)",
-    questionText: "Describe, using two examples, the impact of either sportsmanship or gamesmanship on engagement in physical activity.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Two examples of Sportsmanship or two examples of Gamesmanship", marks: null, openList: true },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Physical Education 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",

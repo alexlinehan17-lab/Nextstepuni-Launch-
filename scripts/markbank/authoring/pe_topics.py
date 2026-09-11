@@ -24,7 +24,8 @@ RULES = [
     # ── Strand 1, Topic 1: Learning and Improving Skill and Technique ────
     ('physical-education-0-1', 12,
      r'\b(skilled performance|characteristics? of skill|creative application'
-     r'|fluency|kinaesthetic|anticipation|consistency|define skill|what is skill)'),
+     r'|fluency|kinaesthetic|anticipation|consistency|define skill|what is skill'
+     r'|characteristics? (?:does|that|of a|of an|display))'),
     ('physical-education-0-2', 12,
      r'\b(analys\w+ (?:skill|technique|performance)|method of analysis'
      r'|notational analysis|video analysis|movement analysis|technique analysis)'),
@@ -41,9 +42,11 @@ RULES = [
      r'\b(plane of movement|planes? and axes|sagittal|frontal plane|transverse plane'
      r'|longitudinal axis|vertical axis|mediolateral|lever system|first class lever'
      r'|fulcrum|newton|vector|scalar|momentum|centre of (?:mass|gravity)'
-     r'|biomechanic|movement pattern|force\b|velocity)'),
+     r'|biomechanic|movement pattern|force\b|velocity|body type|somatotype'
+     r'|ectomorph|mesomorph|endomorph|elbow flexion|flexion|extension'
+     r'|class of lever|lever)'),
     ('physical-education-0-0', 6,
-     r'\b(skill|technique)'),
+     r'\b(skill|technique|practice method|types? of practice)'),
     # ── Strand 1, Topic 2: Demands of Performance ────────────────────────
     ('physical-education-0-6', 12,
      r'\b(health[- ]related (?:fitness|component)|cardiovascular endurance'
@@ -55,7 +58,8 @@ RULES = [
      r'\b(fitness test|test to measure|assessing physical fitness|protocol'
      r'|norm(?:ative)? data|sit and reach|bleep test|vo2)'),
     ('physical-education-0-10', 12,
-     r'\b(training (?:plan|programme|principles)|principle of training'
+     r'\b(training (?:plan|programme|principles)|principles? of training'
+     r'|approaches? to training'
      r'|periodisation|overload|specificity|progression|reversibility|detraining'
      r'|fitness plan|method of physical fitness training|continuous training'
      r'|interval training|fartlek|plyometric|circuit training|weight training)'),
@@ -103,10 +107,13 @@ RULES = [
      r'|social benefit|personal benefit)'),
     ('physical-education-1-2', 12,
      r'\b(participation (?:levels?|rates?|in physical activity)|barriers? to '
-     r'physical activity|reasons for (?:non[- ])?participation|drop[- ]?out)'),
+     r'physical activity|reasons for (?:non[- ])?participation|drop[- ]?out'
+     r'|participate the most|participation between|lifelong participation'
+     r'|participation of (?:men|women|young))'),
     ('physical-education-1-3', 12,
      r'\b(promot\w+ physical activity|physical activity promotion|campaign'
-     r'|initiative|support(?:s)? for physical activity)'),
+     r'|initiative|support(?:s)? for physical activity|tip sheet'
+     r'|encourage (?:lifelong )?participation|school sport)'),
     ('physical-education-1-4', 12,
      r'\b(pathway(?:s)? to excellence|talent (?:identification|development)'
      r'|pathways between school and community|elite)'),
@@ -114,7 +121,8 @@ RULES = [
     # ── Strand 2, Topic 6: Ethics and Fair Play ──────────────────────────
     ('physical-education-1-9', 12,
      r'\b(anti[- ]?doping rule|whereabouts|prohibited (?:substance|method)'
-     r'|sport ireland anti[- ]doping|wada)'),
+     r'|sport ireland anti[- ]doping|wada|therapeutic use exemption|\btue\b'
+     r'|banned substance)'),
     ('physical-education-1-8', 12,
      r'\b(performance[- ]enhancing drug|anabolic steroid|doping|beta blocker'
      r'|blood doping|stimulant|diuretic|erythropoietin|epo\b)'),
@@ -140,13 +148,16 @@ RULES = [
      r'|data analytics)'),
     ('physical-education-1-18', 12,
      r'\b(media (?:coverage|in sport)|spectator (?:behaviour|experience)'
-     r'|social media|broadcast|television coverage|journalis)'),
+     r'|social media|broadcast|television coverage|journalis'
+     r'|sports programmes?|top 10)'),
     ('physical-education-1-16', 6, r'\b(media|technology)'),
     # ── Strand 2, Topic 9: Gender and Physical Activity ──────────────────
     ('physical-education-1-21', 12,
      r'\b(body image|gender.{0,20}media|media.{0,20}gender)'),
     ('physical-education-1-22', 12, r'\b(gender socialisation|stereotyp)'),
-    ('physical-education-1-20', 10, r'\b(gender|women in sport|female athlete)'),
+    ('physical-education-1-20', 10,
+     r'\b(gender|women in sport|female athlete|social regulation of the body'
+     r'|male and female|men and women)'),
     ('physical-education-1-19', 6, r'\b(gender)'),
     # ── Strand 2, Topic 10: Business and Enterprise ──────────────────────
     ('physical-education-1-24', 12,

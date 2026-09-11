@@ -102,19 +102,34 @@ def traces(year, level, text):
 
 
 _CENSUS = {}
+_PAPERS = {}
+
+
+def paper_for(year, level):
+    if (year, level) not in _PAPERS:
+        _PAPERS[(year, level)] = Paper(SUBJECT, year, level)
+    return _PAPERS[(year, level)]
 
 
 def leaves(year, level):
     """The census's own leaf asks for one paper, as (key, label, text).
 
-    Taken from paper_census.py itself rather than re-walked here, so the
-    denominator this reader works against is the one reconcile.py checks.
+    The KEYS and the LABELS come from paper_census.py itself rather than being
+    re-walked here, so the denominator this reader works against is the one
+    reconcile.py checks. The TEXT does not: the census stores the first 160
+    characters of an ask, which is all a census needs and half of what a card
+    needs — "Put a tick in the True or False column for each of the following
+    statements:" and four of its six statements. The full printed wording is
+    read back off the paper, with the census's own text as the fallback for a
+    key the census completed and the walker does not hold.
     """
     if not _CENSUS:
         for paper in census_subject(SUBJECT)['papers']:
             _CENSUS[(paper['year'], paper['level'])] = [
                 (tuple(l['key']), l['label'], l['text']) for l in paper['leaves']]
-    return _CENSUS[(year, level)]
+    paper = paper_for(year, level)
+    return [(key, label, paper.text(*key) or text)
+            for key, label, text in _CENSUS[(year, level)]]
 
 
 def evidence(part):

@@ -60,6 +60,8 @@ from markbank_authoring import anyN, make_audit, make_card, point  # noqa: E402
 
 OUT = os.path.join(ROOT, 'scripts/markbank/authored/physical-education.json')
 EXCLUSIONS = os.path.join(DIR, 'exclusions', 'physical-education.json')
+BINDINGS = os.path.join(ROOT, 'scripts/markbank/card-source-bindings.json')
+PAPERS = os.path.join(ROOT, 'examiner-reports', 'physical-education', 'papers')
 # The build refuses a menu longer than this; see groupFault() in build-deck.mjs.
 HARD_OPTION_CAP = 16
 MAX_OPTION_CHARS = 700
@@ -88,11 +90,43 @@ ASK_OPENER = re.compile(
 # "Make two statements about doping in cycling based on information presented
 # in Figure 12" without Figure 12 is unanswerable.
 NEEDS_SOURCE = re.compile(
-    r'\b(figure\s*\d|in the (?:figure|table|graph|case study|photograph)'
-    r'|shown (?:above|below)|the (?:image|photograph|graph|diagram) above'
-    r'|with reference to the case study|from the case study|in the box'
-    r'|tick|✓|the data (?:above|below|shown)|the score ?sheet'
-    r'|(?:table|diagram) below|listed below|words provided|from above)\b', re.I)
+    r'\b(figure\s*\d+|in the (?:figure|table|graph|case study|photograph)'
+    r'|shown (?:above|below)|depicted (?:above|below|in)'
+    r'|the (?:image|photograph|graph|diagram) (?:above|below)'
+    r'|with reference to the case study|from the case study'
+    r'|in the case study|mentioned in the case|in the box'
+    r'|the data (?:above|below|shown)|the score ?sheet'
+    r'|(?:table|diagram|text) below)\b', re.I)
+# The SEC's answer is a TICK IN A COLUMN. 2025 Ordinary Q1 prints four
+# statements and puts a ✓ in the True or the False column beside each; the text
+# layer hands back the statement and the tick and says nothing about which
+# column the tick is in, so a card written from it would state the opposite
+# answer as readily as the right one. The tick in the SCHEME is the signal —
+# never the word "tick" in the QUESTION, which is a rubric ("Tick the box to
+# indicate which term you are defining") and says nothing about the answer.
+SCHEME_TICK = re.compile(r'[✓✔\uf0fc\u2713]')
+# An ask answered by COMPLETING A PRINTED TABLE — matching four explanations to
+# four named methods, filling blanks from a word bank, ticking a column. The
+# scheme answers it in the table's OTHER COLUMN, and the flat text layer reads
+# the two columns across rather than down: "Run a sprint, rest, receive
+# feedback, Distributed repeat." is the SEC's explanation with the SEC's answer
+# posted into the middle of it. A card built from that states neither. The ask
+# is refused by its own printed instruction rather than by trying to unpick the
+# row — append-scheme-columns.py is the tool that would read it properly, and
+# until it is run and checked here these stay OPEN and named.
+TABLE_TASK = re.compile(
+    r'^(?:match\b|complete the (?:following )?table|complete the table'
+    r'|fill in the blanks?|put a tick|place a tick|insert a tick)', re.I)
+# The same task set as a sentence rather than an instruction: "Describe each of
+# the following concepts of physical activity by matching the concept to the
+# relevant description", "Identify an appropriate timeframe for each of these
+# cycles". The give-away is the printed COLUMN HEADING the scheme answers
+# under — "please choose from above", "choose from above" — which is the
+# table's other column and not an answer to anything.
+TABLE_TASK_INLINE = re.compile(
+    r'\bby matching the\b|\bmatch(?:ing)? (?:the|each)\b[^.]{0,60}\b(?:to|with) the\b'
+    r'|\bchoose from above\b|\busing the (?:methods|words|terms) provided\b'
+    r'|\b(?:by )?(?:putting|placing|inserting) a tick\b', re.I)
 # A card must not cite an ask whose subject lives in a neighbouring part —
 # "one of the measures named by you in question 13" answers nothing alone.
 BACK_REFERENCE = re.compile(
@@ -104,8 +138,11 @@ BACK_REFERENCE = re.compile(
 # An option the SEC prints that is not an answer.
 NOT_A_POINT = re.compile(
     r'^(?:etc\.?|and so on|any other\b|other relevant\b|accept\b|award\b'
-    r'|allow\b|note:|no marks\b|max\b|total\b|marks?\b|description\b|or\b)\s*$',
-    re.I)
+    r'|allow\b|note:|no marks\b|max\b|total\b|marks?\b|description\b|or\b'
+    # The paper's own rubric, reprinted inside the scheme's table. It tells the
+    # candidate how to record their choice and answers nothing.
+    r'|(?:please )?choose from above\b|(?:put|place) a tick\b|tick the box\b'
+    r'|indicate which\b)', re.I)
 TARIFF_RESIDUE = re.compile(r'\b\d{1,2}\s*(?:m|marks?)\b|\d\s*[x×@]\s*\d', re.I)
 # The SEC closes most of its lists by saying the list is not closed. That tail
 # is not an answer — "Positivity, Excellent negotiation skills and other
@@ -132,7 +169,7 @@ def paper_for(year, level):
     return _PAPERS[(year, level)]
 
 
-def ask_text(year, level, key, census_text):
+def ask_text(year, level, key, printed):
     """The whole printed ask, in the paper's own words.
 
     The census keeps what the walker filed under the leaf's own marker. Where
@@ -145,13 +182,62 @@ def ask_text(year, level, key, census_text):
     figure caption or a continuation notice, and adding one of those would
     make the question worse rather than whole.
     """
-    text = tidy(census_text)
+    text = tidy(STEM_JUNK.sub(' ', printed))
     if ASK_OPENER.match(text):
         return text
     stem = tidy(STEM_JUNK.sub(' ', paper_for(year, level).stem(key[0], key[1]) or ''))
     if stem and ASK_OPENER.match(stem) and stem.lower() not in text.lower():
         return tidy(f'{text} {stem}')
     return text
+
+
+# ------------------------------------------------------------ the source ----
+# An ask that points at a printed figure, table or case study is not refused
+# for pointing at one: the SEC's own page is in the Paper Trail index, and
+# card-source-bindings.json attaches it so the student opens the exact
+# examination page the question was set on. What still cannot be carded is an
+# answer the SCHEME does not state in words — a tick in a column, or the other
+# half of a matching table — and those keep their own named buckets.
+_PAGES = {}
+
+
+def _page_text(year, level):
+    if (year, level) not in _PAGES:
+        import pymupdf
+        path = os.path.join(PAPERS, f'{year}-{level}-paper.pdf')
+        with pymupdf.open(path) as doc:
+            _PAGES[(year, level)] = [tidy(page.get_text()) for page in doc]
+    return _PAGES[(year, level)]
+
+
+def _flat(text):
+    return re.sub(r'[^a-z0-9]+', '', (text or '').lower())
+
+
+def source_pages(year, level, qtext):
+    """The paper's own page(s) this ask and its source are printed on.
+
+    One-based, as build-deck requires, and found by searching the paper for the
+    ask's own words and for every figure it names — never guessed from the
+    question number, which is a page apart from its figure often enough to put
+    the wrong page in front of a student.
+    """
+    pages = _page_text(year, level)
+    wanted = _flat(qtext)[:60]
+    found = []
+    if wanted:
+        for i, text in enumerate(pages):
+            if wanted and wanted in _flat(text):
+                found.append(i + 1)
+                break
+    for label in re.findall(r'\bFigure\s*\d+\b', qtext, re.I):
+        needle = _flat(label)
+        for i, text in enumerate(pages):
+            if needle in _flat(text):
+                if (i + 1) not in found:
+                    found.append(i + 1)
+                break
+    return sorted(found)[:2]
 
 
 # --------------------------------------------------------------- answers ----
@@ -165,11 +251,25 @@ def options_for(part, year, level, qtext):
     its table often enough that a reader taking every content line would
     otherwise ship the question as its own answer.
     """
-    out, untraceable, restated = [], [], []
+    out, untraceable, restated, criteria = [], [], [], []
     ask = re.sub(r'[^a-z0-9]+', '', (qtext or '').lower())
-    for text in S.answers_of(part):
+    for text, source in S.answers_of(part, with_source=True):
         text = tidy(OPEN_LIST_TAIL.sub('', tidy(text))).strip(' .;,')
-        if not text or NOT_A_POINT.match(text) or len(text) < 3:
+        if not text or NOT_A_POINT.match(text) or len(text) < 4:
+            continue
+        if not re.search(r'[A-Za-z]{3}', text) or re.search(r'[x×]\s*\d', text):
+            criteria.append(text)         # a marks cell, not an answer
+            continue
+        # A line that OPENS like a criterion or a band is the examiner talking
+        # about the answer, not the answer: "Examines two approaches that can
+        # be used to promote physical activity participation", "Two positive
+        # and two negative effects of the media for spectators", "No link
+        # between hosting and developing tourism mentioned". Applied to every
+        # source, including the SEC's own lists, because a list that ran one
+        # line past its end ends on exactly such a row.
+        if (S.CLOSES_LIST.match(text) or S.BAND_OPENER.match(text)
+                or S.EXAMINER_NOTE.match(text) or S.TABLE_HEAD.match(text)):
+            criteria.append(text)
             continue
         if TARIFF_RESIDUE.search(text) or len(text) > MAX_OPTION_CHARS:
             untraceable.append(text)
@@ -194,7 +294,7 @@ def options_for(part, year, level, qtext):
             if len(pieces) >= 2 and all(L.traces(year, level, p) for p in pieces):
                 out = pieces
                 break
-    return out[:HARD_OPTION_CAP], untraceable, restated
+    return out[:HARD_OPTION_CAP], untraceable, restated, criteria
 
 
 # --------------------------------------------------------------- tariffs ----
@@ -256,6 +356,21 @@ def card_id(year, level, key):
     return f'pe-{year}-{level}-q{q}' + (letter or '') + (roman or '')
 
 
+def back_reference_stem(order, texts, labels, key):
+    """The earlier ask under the same question this one points back at."""
+    if key not in order:
+        return ''
+    here = order.index(key)
+    for other in reversed(order[:here]):
+        if other[0] != key[0]:
+            break
+        text = tidy(texts.get(other) or '')
+        if len(text) < 12 or BACK_REFERENCE.search(text):
+            continue
+        return tidy(f'{labels.get(other, "")}: {text}')[:400]
+    return ''
+
+
 def section_of(q, year):
     """The paper's own section for a question number.
 
@@ -303,13 +418,16 @@ def row_label(part, claim):
 
 def build():
     cards, refusals, excluded = [], collections.defaultdict(list), []
-    covered, seen_parts = [], {}
+    covered, seen_parts, bindings = [], {}, {}
 
     for year, level in L.SITTINGS:
         lvl = 'higher' if level == 'hl' else 'ordinary'
         _paper, _parts, pairs, unpaired, _why = L.pair(year, level)
+        printed = L.leaves(year, level)
         texts = {key: ask_text(year, level, key, text)
-                 for key, _label, text in L.leaves(year, level)}
+                 for key, _label, text in printed}
+        labels = {key: label for key, label, _text in printed}
+        order = [key for key, _label, _text in printed]
         for key, label, _text in unpaired:
             refusals['no scheme part prices this ask'].append(
                 (year, level, label, ''))
@@ -328,7 +446,8 @@ def build():
             ref = (ref_for(year, level, key) if len(keys) == 1
                    else ref_for_many(year, level, keys))
             qtext = texts.get(part.address) or texts.get(key) or ''
-            options, untraceable, restated = options_for(part, year, level, qtext)
+            options, untraceable, restated, criteria = options_for(
+                part, year, level, qtext)
 
             def refuse(bucket, detail=''):
                 for k in keys:
@@ -345,7 +464,7 @@ def build():
                 # it is excluded on the same evidence — unless the ask points
                 # at a figure or table, where the answer is on the page rather
                 # than in the scheme and the refusal belongs to the figure.
-                if S.band_only(part) or (restated
+                if S.band_only(part) or ((restated or criteria)
                                          and not NEEDS_SOURCE.search(qtext)):
                     for k in keys:
                         excluded.append({
@@ -353,15 +472,21 @@ def build():
                             'reason': 'the scheme prices this ask by band '
                                       'descriptor and states no answer'
                                       + (' beyond the question\'s own wording'
-                                         if restated else ''),
+                                         if restated else '')
+                                      + (' — every line it prints under this '
+                                         'part is the examiner judging an '
+                                         'answer rather than stating one'
+                                         if criteria and not restated else ''),
                             'evidence': band_evidence(part),
                         })
-                elif restated and NEEDS_SOURCE.search(qtext):
+                elif (restated or criteria) and (NEEDS_SOURCE.search(qtext)
+                                   or any(SCHEME_TICK.search(t)
+                                          for t in part.rows + part.answers)):
                     # The scheme names the labels and the paper prints the
                     # diagram they sit on: "Effort (2 marks) / Load (2 marks) /
                     # Fulcrum (2 marks)" answers "Label the load, effort and
                     # fulcrum on the diagram below" only with the diagram.
-                    refuse('the ask depends on a figure, table or printed list '
+                    refuse('the ask depends on a figure, table or case study '
                            'the card cannot show', qtext[:80])
                 elif untraceable:
                     refuse('a marking point does not trace to its own scheme',
@@ -377,14 +502,37 @@ def build():
             if len(qtext) < 16 and not ASK_OPENER.match(qtext):
                 refuse('the paper prints no ask text under this key', qtext[:60])
                 continue
+            pages = []
             if NEEDS_SOURCE.search(qtext):
-                refuse('the ask depends on a figure, table or printed list the '
-                       'card cannot show', qtext[:80])
+                pages = source_pages(year, level, qtext)
+                if not pages:
+                    refuse('the ask depends on a figure, table or case study '
+                           'this reader cannot find a page for', qtext[:80])
+                    continue
+            if TABLE_TASK.match(qtext) or TABLE_TASK_INLINE.search(qtext):
+                refuse('the ask is answered inside a printed table whose other '
+                       'column the flat text layer interleaves', qtext[:80])
                 continue
+            if any(SCHEME_TICK.search(t) for t in part.rows + part.answers):
+                refuse('the scheme marks its answer with a tick in a printed '
+                       'column the text layer cannot place',
+                       next(t for t in part.rows + part.answers
+                            if SCHEME_TICK.search(t))[:80])
+                continue
+            stem = ''
             if BACK_REFERENCE.search(qtext):
-                refuse("the ask's subject was chosen in a neighbouring part",
-                       qtext[:80])
-                continue
+                # "Suggest reasons for one of the training patterns identified
+                # by you in question 11 (b) (i)" answers nothing on its own —
+                # but the part it points back at is printed two lines above it
+                # on the same page, and putting THAT ask on the card as its
+                # stem is what the stem field is for. Refused only where the
+                # paper prints no earlier ask under the same question to point
+                # at, which would mean the reference leaves the question.
+                stem = back_reference_stem(order, texts, labels, key)
+                if not stem:
+                    refuse("the ask's subject was chosen in a neighbouring "
+                           'part the paper prints nothing for', qtext[:80])
+                    continue
             topic = (topic_for(qtext)
                      or topic_for(' '.join(part.rows + part.answers)))
             if topic is None:
@@ -449,8 +597,11 @@ def build():
             built = card(
                 cid, year, lvl, topic, concept_for(topic, qtext), ref, qtext,
                 notation, total, rows, NOTES,
-                section=section_of(part.address[0], year), tariff_kind=kind,
+                section=section_of(part.address[0], year), stem=stem,
+                tariff_kind=kind,
                 answer=answer, of_parts=of_parts, per_part=per_part)
+            if pages:
+                bindings[cid] = {'kind': 'illustration', 'pages': pages}
             if kind == 'questionTotal':
                 # The type is `{ kind: 'questionTotal' }` and nothing else: the
                 # scheme states no split, so the card must not carry fields
@@ -459,11 +610,11 @@ def build():
             cards.append(built)
             covered.extend(keys)
 
-    return cards, refusals, excluded, covered
+    return cards, refusals, excluded, covered, bindings
 
 
 def report():
-    cards, refusals, excluded, covered = build()
+    cards, refusals, excluded, covered, _bindings = build()
     problems = audit(cards)
     total = sum(len(L.leaves(y, lv)) for y, lv in L.SITTINGS)
     n_open = total - len(covered) - len(excluded)
@@ -491,7 +642,7 @@ def main():
     if args.report:
         report()
         return
-    cards, refusals, excluded, covered = build()
+    cards, refusals, excluded, covered, bindings = build()
     problems = audit(cards)
     for p in problems:
         print('AUDIT', p, file=sys.stderr)
@@ -503,7 +654,16 @@ def main():
         os.makedirs(os.path.dirname(EXCLUSIONS), exist_ok=True)
         with open(EXCLUSIONS, 'w', encoding='utf-8') as fh:
             json.dump(excluded, fh, ensure_ascii=False, indent=1)
-        print(f'wrote {len(cards)} card(s) and {len(excluded)} exclusion(s)')
+        # The bindings file is SHARED with eight other subjects, so only this
+        # subject's key is replaced and the file is rewritten in the order it
+        # was already in.
+        book = json.load(open(BINDINGS, encoding='utf-8'))
+        book['physical-education'] = bindings
+        with open(BINDINGS, 'w', encoding='utf-8') as fh:
+            json.dump({k: book[k] for k in sorted(book)}, fh,
+                      ensure_ascii=False, indent=1)
+        print(f'wrote {len(cards)} card(s), {len(excluded)} exclusion(s) and '
+              f'{len(bindings)} source binding(s)')
     else:
         print(json.dumps(cards, ensure_ascii=False, indent=1))
 
