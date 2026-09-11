@@ -257,6 +257,20 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC020GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
+    id: "am-2021-ol-6-a-i", topicId: "applied-mathematics-2-10", conceptId: "ask",
+    section: "B", questionRef: "2021 OL Q6(a)(i)",
+    stem: "Particles of weight 3 N, 1 N, 4 N, and 2 N are placed at the points (p, q), (1, p), (q, 4), and (0, 3) respectively. The co‐ordinates of the centre of gravity of the system are (–0.5, 1.5). Find (i) the value of p",
+    questionText: "the value of p",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2021-ol-6-a-i-r1", kind: "anyN", verbatim: "− 1/2 = (3p + 1 + 4q + 0)/10", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["− 1/2 = (3p + 1 + 4q + 0)/10","3p + 4q = −6 3/2 = (3q + p + 16 + 6)/10","p + 3q = −7 p = 2"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC020GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-6-a-ii", topicId: "applied-mathematics-2-10", conceptId: "ask",
     section: "B", questionRef: "2021 OL Q6(a)(ii)",
     stem: "Particles of weight 3 N, 1 N, 4 N, and 2 N are placed at the points (p, q), (1, p), (q, 4), and (0, 3) respectively. The co‐ordinates of the centre of gravity of the system are (–0.5, 1.5). Find (i) the value of p",
@@ -277,7 +291,21 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the coordinates of the centre of gravity of the remaining shape. A C D",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2021-ol-6-b-ii-r1", kind: "anyN", verbatim: "Two uniform circles, S₁ and S₂, are removed from the triangular lamina. S₁ has a radius of 3 cm and its centre F, is on the midpoint of BD. S₂ has a radius of 2 cm and centre E on BD, where |DE| = 6 cm. Taking the coordinates of the vertex A to be (0, 0), write down the coordinates of the points B, C, E and F. Calculate the coordinates of the centre of A gravity of the remaining shape. |BD| = √25² −7² = 24 B (7, 24) C (14, 0) E (7, 6) F (7, 12)", marks: 25, contextNote: "The scheme prices this ask step by step: 10, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":10,"options":["Two uniform circles, S₁ and S₂, are removed from the triangular lamina. S₁ has a radius of 3 cm and its centre F, is on the midpoint of BD. S₂ has a radius of 2 cm and centre E on BD, where |DE| = 6 cm. Taking the coordinates of the vertex A to be (0, 0), write down the coordinates of the points B, C, E and F. Calculate the coordinates of the centre of A gravity of the remaining shape. |BD| = √25² −7² = 24 B (7, 24) C (14, 0) E (7, 6) F (7, 12)","area c.g. ABC 1/2 (14)(24) = 168 (7, 8)","(7, 12) 9𝜋 S₁ 4𝜋 S₂ (7, y) 168 −13𝜋 ABCDE","(168 −13𝜋)y = 168 × 8 −9𝜋× 12 −4𝜋× 6 (168 −13𝜋)y = 1344 −132𝜋 y = 7.31 (7, 7.31)"],"perOptionSteps":[10,5,5,5]} },
+    { id: "am-2021-ol-6-b-ii-r1", kind: "anyN", verbatim: "|DE| = 6 cm. Taking the coordinates of the vertex A to be (0, 0), write down the coordinates of the points B, C, E and F. Calculate the coordinates of the centre of A gravity of the remaining shape. |BD| = √25² −7² = 24 B (7, 24) C (14, 0) E (7, 6) F (7, 12)", marks: 25, contextNote: "The scheme prices this ask step by step: 10, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":10,"options":["|DE| = 6 cm. Taking the coordinates of the vertex A to be (0, 0), write down the coordinates of the points B, C, E and F. Calculate the coordinates of the centre of A gravity of the remaining shape. |BD| = √25² −7² = 24 B (7, 24) C (14, 0) E (7, 6) F (7, 12)","area c.g. ABC 1/2 (14)(24) = 168 (7, 8)","(7, 12) 9𝜋 S₁ 4𝜋 S₂ (7, y) 168 −13𝜋 ABCDE","(168 −13𝜋)y = 168 × 8 −9𝜋× 12 −4𝜋× 6 (168 −13𝜋)y = 1344 −132𝜋 y = 7.31 (7, 7.31)"],"perOptionSteps":[10,5,5,5]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC020GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
+    id: "am-2021-ol-7-a-i", topicId: "applied-mathematics-2-10", conceptId: "ask",
+    section: "B", questionRef: "2021 OL Q7(a)(i)",
+    stem: "A uniform beam AB of length 5 m and weight 1000 N is held in a horizontal position by two vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. F2 1 m F1 Find (i) the value of F1",
+    questionText: "the value of F₁",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2021-ol-7-a-i-r1", kind: "anyN", verbatim: "F₁ × 4 = 1000 × 1.5 C: F₁ = 375 N", marks: 10, contextNote: "The scheme prices this ask step by step: 10 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":10,"options":["F₁ × 4 = 1000 × 1.5 C: F₁ = 375 N"]} },
     ],
   } as SecCard,
   {
@@ -289,9 +317,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Q7(a)(ii)",
     stem: "A uniform beam AB of length 5 m and weight 1000 N is held in a horizontal position by two vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. F2 1 m F1 Find (i) the value of F1",
     questionText: "the value of F₂",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2021-ol-7-a-ii-r1", kind: "anyN", verbatim: "vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. F₂ 1 m F₁ A C Find (i) the value of F₁ the value of F₂. F₁ × 4 = 1000 × 1.5 C: F₁ = 375 N", marks: 20, contextNote: "The scheme prices this ask step by step: 10, 10 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":10,"options":["vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. F₂ 1 m F₁ A C Find (i) the value of F₁ the value of F₂. F₁ × 4 = 1000 × 1.5 C: F₁ = 375 N","F₁ + F₂ = 1000 375 + F₂ = 1000 F₂ = 625 N"]} },
+    { id: "am-2021-ol-7-a-ii-r1", kind: "anyN", verbatim: "F₁ + F₂ = 1000 375 + F₂ = 1000 F₂ = 625 N", marks: 10, contextNote: "The scheme prices this ask step by step: 10 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":10,"options":["F₁ + F₂ = 1000 375 + F₂ = 1000 F₂ = 625 N"]} },
     ],
   } as SecCard,
   {
@@ -543,7 +571,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the time when the ships are closest to each other",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 50,
     rows: [
-    { id: "am-2022-ol-2-vii-r1", kind: "anyN", verbatim: "Write the velocity of ship A and the velocity of ship B in terms of i⃗ and j⃗. Calculate vAB 𝑣⃗, the velocity of ship A relative to ship B, in terms of i⃗ and j⃗. Calculate the magnitude of vAB 𝑣⃗ to one decimal place. Calculate the direction of vAB 𝑣⃗ to one decimal place. Show that the shortest distance between the ships is 16.3 km. Calculate the time when the ships are closest to each other. (A B)/(30° 45°)", marks: 50, contextNote: "The scheme prices this ask step by step: 10, 5, 5, 5, 5, 5, 5, 10 — 50 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":8,"perOption":10,"options":["Write the velocity of ship A and the velocity of ship B in terms of i⃗ and j⃗. Calculate vAB 𝑣⃗, the velocity of ship A relative to ship B, in terms of i⃗ and j⃗. Calculate the magnitude of vAB 𝑣⃗ to one decimal place. Calculate the direction of vAB 𝑣⃗ to one decimal place. Show that the shortest distance between the ships is 16.3 km. Calculate the time when the ships are closest to each other. (A B)/(30° 45°)","3√3 V_A 𝑣⃗ = 4.5 𝚤⃗ − 3/2 √3 𝚥⃗","𝑣⃗= −4 𝚤⃗−4 𝚥⃗","V_B V𝑣⃗AB = V𝑣⃗_A−V𝑣⃗_B V𝑣⃗AB = 8.5 𝚤⃗+ 1.4 𝚥⃗","|V𝑣⃗AB| = √8. 5² + 1.4² = 8.6","tan 𝛼 = 1.4/8.5 𝛼= east 9.4° north","d = 100 × sin 9.4 = 16.3 km","t = (100 × cos 9.6)/8.6 = 11.47 h"],"perOptionSteps":[10,5,5,5,5,5,5,10]} },
+    { id: "am-2022-ol-2-vii-r1", kind: "anyN", verbatim: "Write the velocity of ship A and the velocity of ship B in terms of i⃗ and j⃗. Calculate 𝑣vAB⃗, the velocity of ship A relative to ship B, in terms of ⃗i and ⃗j. Calculate the magnitude of v𝑣AB⃗ to one decimal place. Calculate the direction of v𝑣AB⃗ to one decimal place. Show that the shortest distance between the ships is 16.3 km. Calculate the time when the ships are closest to each other. (A B)/(30° 45°)", marks: 50, contextNote: "The scheme prices this ask step by step: 10, 5, 5, 5, 5, 5, 5, 10 — 50 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":8,"perOption":10,"options":["Write the velocity of ship A and the velocity of ship B in terms of i⃗ and j⃗. Calculate 𝑣vAB⃗, the velocity of ship A relative to ship B, in terms of ⃗i and ⃗j. Calculate the magnitude of v𝑣AB⃗ to one decimal place. Calculate the direction of v𝑣AB⃗ to one decimal place. Show that the shortest distance between the ships is 16.3 km. Calculate the time when the ships are closest to each other. (A B)/(30° 45°)","3√3 V_A 𝑣⃗ = 4.5 𝚤⃗ − 3/2 √3 𝚥⃗","V𝑣_B⃗= −4 𝚤⃗−4 𝚥⃗","V𝑣⃗AB = V𝑣⃗_A−V𝑣⃗_B V𝑣⃗AB = 8.5 𝚤⃗+ 1.4 𝚥⃗","|V𝑣⃗AB| = √8. 5² + 1.4² = 8.6","tan 𝛼 = 1.4/8.5 𝛼= east 9.4° north","d = 100 × sin 9.4 = 16.3 km","t = (100 × cos 9.6)/8.6 = 11.47 h"],"perOptionSteps":[10,5,5,5,5,5,5,10]} },
     ],
   } as SecCard,
   {
@@ -1971,7 +1999,7 @@ export const CARDS: SecCard[] = [
     questionText: "Solve the difference equation to find an expression for Yₙ in terms of n and A",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-ol-8-b-iii-r1", kind: "anyN", verbatim: "Uₙ₊₁ = aUₙ + b has solution Uₙ = aⁿU₀ + b (/(1−a) 1−aⁿ )", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Uₙ₊₁ = aUₙ + b has solution Uₙ = aⁿU₀ + b (/(1−a) 1−aⁿ )","∴ Yₙ = 1.007ⁿ(24000) − A ( )/0.007 1.007ⁿ−1"]} },
+    { id: "am-2025-ol-8-b-iii-r1", kind: "anyN", verbatim: "Uₙ₊₁ = aUₙ + b has solution Uₙ = aⁿU₀ + b ( (1−aⁿ)/(1−a) )", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Uₙ₊₁ = aUₙ + b has solution Uₙ = aⁿU₀ + b ( (1−aⁿ)/(1−a) )","∴ Yₙ = 1.007ⁿ(24000) − A ( (1.007ⁿ−1)/0.007 )"]} },
     ],
   } as SecCard,
   {
@@ -1985,7 +2013,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the value of each repayment A",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-ol-8-b-iv-r1", kind: "anyN", verbatim: "Y₇₂ = 0 i.e. 1.007⁷²(24000) = A ( )/0.007 1.007⁷²−1", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Y₇₂ = 0 i.e. 1.007⁷²(24000) = A ( )/0.007 1.007⁷²−1","39658.21 = A(93.20) so A = €425.50"]} },
+    { id: "am-2025-ol-8-b-iv-r1", kind: "anyN", verbatim: "Y₇₂ = 0 i.e. 1.007⁷²(24000) = A ( (1.007⁷²−1)/0.007 )", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Y₇₂ = 0 i.e. 1.007⁷²(24000) = A ( (1.007⁷²−1)/0.007 )","39658.21 = A(93.20) so A = €425.50"]} },
     ],
   } as SecCard,
   {

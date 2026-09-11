@@ -520,8 +520,8 @@ const decks = [
    * syllabus break: 2021-2022 are the outgoing mechanics course and 2023-2025
    * the specification first examined in 2023. Enrolled explicitly so a later
    * regeneration cannot silently omit or replace any of its cards. */
-  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 130, '5c8f36ba0f4214eee4269d22bcd3d20ada53f1a33820c36c0e873fe5b5afac72'],
-  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 145, '1e39bd494a3304e1ec0b1153834dba6d7bf186d7f90ec05055024d40b869b570'],
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 136, '43845c10adf84ca43a511660969d4965f6e7e12604e966391f485230f074e4e3'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 147, 'e3e08a3acd89b7daa9ab08323d2784d75cbc80c401547d5be772c04a523550c8'],
   /* Spanish is the second modern language carded, and the first subject whose
    * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
    * article is a two-page loose sheet with its own SEC file id, and those 80
@@ -717,7 +717,12 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_152);
+    // ...and eight Applied Maths asks recovered from reader faults rather
+    // than authored: two stacked limits read as steps of their own, five
+    // reprint lines that had swallowed the leaf beneath them, and one ask
+    // whose question the paper prints inside its parent's sentence.
+    // 275 -> 283. Nothing removed.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_160);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

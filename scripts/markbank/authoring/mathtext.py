@@ -420,6 +420,41 @@ def _bracket(side):
     return f'({s})' if re.search(r'[\s+\u2212\u2013\u2014-]', s) else s
 
 
+# Anything a side of a fraction can be MADE of: a digit or letter in any of
+# the blocks these fonts set maths in, a Greek letter, a raised or lowered
+# digit, or a radical. A run with none of these states no quantity.
+QUANTITY = re.compile(
+    r'[0-9A-Za-zͰ-Ͽ⁰-₟√'
+    r'\U0001d400-\U0001d7ffĀ-῿]')
+
+
+def _straddles(w, bar):
+    """Is this word printed THROUGH the bar rather than on one side of it?
+
+    A numerator ends at the bar and a denominator begins at it -- either may
+    cross it by a point, because a tight fraction draws its rule inside the
+    glyph box above or below. What no side of a fraction does is stand a
+    quarter of its own height clear on BOTH sides, which is what a character
+    set on the surrounding line does: the 2023 Higher scheme prints
+    "0² = 22.5² − 45s₃/t , i.e. s₃ = 11.25t" and the comma after the fraction
+    runs from 8 points above the rule to 7 below it. Three points wide, it
+    passed the overlap test on the bar's own right-hand slack and was read as
+    the NUMERATOR -- so the card offered "," where the SEC printed "45s₃".
+
+    Held to words with no letter, digit or Greek in them, because a word's box
+    is the union of its characters' and a STRETCHED BRACKET spans the whole
+    fraction by construction: "sin^-1 (1/2)" extracts "(1" as one word whose
+    box runs the height of the bracket, and measuring that one alone threw
+    away 268 of the 1,757 fractions in the Maths schemes. A side of a fraction
+    always states a quantity; a lone comma, full stop or equals sign is the
+    punctuation of the line the fraction is set in.
+    """
+    height = w[3] - w[1]
+    if height <= 0 or QUANTITY.search(w[4]):
+        return False
+    return (bar.y0 - w[1] >= 0.25 * height) and (w[3] - bar.y1 >= 0.25 * height)
+
+
 def _splice(words, band, cut=300):
     pieces, claimed, top, bottom = [], [], None, None
     side = band[0].x0 >= cut
@@ -429,9 +464,11 @@ def _splice(words, band, cut=300):
         # Sorted on the word's MIDPOINT: an exponent sets its glyph box from the
         # top, so a denominator like "d^2" starts fractionally ABOVE the bar.
         above = [w for w in words
-                 if bar.y0 - REACH < _mid(w) < bar.y0 and _over(w, x0, x1)]
+                 if bar.y0 - REACH < _mid(w) < bar.y0 and _over(w, x0, x1)
+                 and not _straddles(w, bar)]
         below = [w for w in words
-                 if bar.y1 < _mid(w) < bar.y1 + REACH and _over(w, x0, x1)]
+                 if bar.y1 < _mid(w) < bar.y1 + REACH and _over(w, x0, x1)
+                 and not _straddles(w, bar)]
         num = _one_line(above, key=lambda w: -_mid(w))
         den = _one_line(below, key=lambda w: _mid(w))
         if not num or not den:

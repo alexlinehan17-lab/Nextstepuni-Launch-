@@ -108,7 +108,7 @@ export const CARDS: SecCard[] = [
     questionText: "Three aircraft, P, Q and R, are flying at the same height. P is travelling north at 450 km h^(–1). Q is travelling at 400√2 km h^(–1) in a direction east 45° north. R appears to the pilot of P to be flying in a direction east 10° south. R appears to the pilot of Q to be flying in a direction east 15.67° south",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
     rows: [
-    { id: "am-2021-hl-2-b-r1", kind: "anyN", verbatim: "⃗⃗⃗⃗ = 0 i + 450 j V_P ⃗⃗⃗⃗ = x i + y j", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":6,"perOption":5,"options":["⃗⃗⃗⃗ = 0 i + 450 j V_P ⃗⃗⃗⃗ = x i + y j","V_R ⃗⃗⃗⃗⃗⃗ = x i + (y−450) j VRP","⃗⃗⃗⃗ = 400 i + 400 j V_Q ⃗⃗⃗⃗ = x i + y j","V_R ⃗⃗⃗⃗⃗⃗⃗ = (x−400) i + (y−400) j VRQ","tan 10 = (−(y−450))/x 0.1763x + y = 450 tan 15.67 = (−(y−400))/(x−400) 0.2805x + y = 512.2 0.1042x = 62.2 x = 596.93 ⇒ y = 344.76","⃗⃗⃗⃗ = 596.93 i + 344.76 j V_R ⃗⃗⃗⃗ | = √596.93₂ + 344.76² = 689.3km h^(–1) |V_R tan^−¹ ( 344.76/596.93) = east 30.0° north"]} },
+    { id: "am-2021-hl-2-b-r1", kind: "anyN", verbatim: "⃗⃗⃗⃗ = 0 i + 450 j V_P V⃗⃗⃗⃗ = x i + y j _R", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":6,"perOption":5,"options":["⃗⃗⃗⃗ = 0 i + 450 j V_P V⃗⃗⃗⃗ = x i + y j _R","V⃗⃗⃗⃗⃗⃗ = x i + (y−450) j RP","⃗⃗⃗⃗ = 400 i + 400 j V_Q V⃗⃗⃗⃗ = x i + y j _R","⃗⃗⃗⃗⃗⃗⃗ = (x−400) i + (y−400) j VRQ","tan 10 = (−(y−450))/x 0.1763x + y = 450 tan 15.67 = (−(y−400))/(x−400) 0.2805x + y = 512.2 0.1042x = 62.2 x = 596.93 ⇒ y = 344.76","V⃗⃗⃗⃗ = 596.93 i + 344.76 j _R |V⃗⃗⃗⃗ | = √596.93_R² + 344.76² = 689.3km h^(–1) tan^−¹ ( 344.76/596.93) = east 30.0° north"]} },
     ],
   } as SecCard,
   {
@@ -234,7 +234,7 @@ export const CARDS: SecCard[] = [
     questionText: "In terms of ℓ, find the height above the equilibrium position to which D rises",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2021-hl-6-a-ii-r1", kind: "anyN", verbatim: "natural length l and elastic constant 3mg/l . Initially D rests in equilibrium with the string vertical. The particle is now pulled down a vertical distance 2/3 l below position and released from rest. Show that D moves with simple harmonic motion. In terms of l, find the height above the equilibrium position to which D rises. T₀ = mg", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["natural length l and elastic constant 3mg/l . Initially D rests in equilibrium with the string vertical. The particle is now pulled down a vertical distance 2/3 l below position and released from rest. Show that D moves with simple harmonic motion. In terms of l, find the height above the equilibrium position to which D rises. T₀ = mg","ke = mg 3mg/l e = mg e = 1/3 l","ma = mg−T ma = mg − 3mg/l (e + x) a = − 3g/l x","𝜔= √^(3g) l v = 𝜔√A² −x² v = √³^g l √( 2/3 l) 2 − ( 1/3 l) 2 = √gl","v² = u² + 2as 0 = gl − 2gs ⇒ s = 1/2 l height = 1/3 l + 1/2 l = 5/6 l"]} },
+    { id: "am-2021-hl-6-a-ii-r1", kind: "anyN", verbatim: "natural length l and elastic constant 3mg/l . Initially D rests in equilibrium with the string vertical. The particle is now pulled down a vertical distance 2/3 l below position and released from rest. Show that D moves with simple harmonic motion. In terms of l, find the height above the equilibrium position to which D rises. T₀ = mg", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["natural length l and elastic constant 3mg/l . Initially D rests in equilibrium with the string vertical. The particle is now pulled down a vertical distance 2/3 l below position and released from rest. Show that D moves with simple harmonic motion. In terms of l, find the height above the equilibrium position to which D rises. T₀ = mg","ke = mg 3mg/l e = mg e = 1/3 l","ma = mg−T ma = mg − 3mg/l (e + x) a = − 3g/l x","𝜔= √^(3g)_l v = 𝜔√A² −x² v = √³^g l √( 2/3 l) 2 − ( 1/3 l) 2 = √gl","v² = u² + 2as 0 = gl − 2gs ⇒ s = 1/2 l height = 1/3 l + 1/2 l = 5/6 l"]} },
     ],
   } as SecCard,
   {
@@ -247,7 +247,7 @@ export const CARDS: SecCard[] = [
     questionText: "Prove that the moment of inertia of a uniform rod, of mass m and length 2ℓabout an 8. its plane, is 1/3 mℓ². axis through its centre, perpendicular to its plane, is",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2021-hl-8-a-r1", kind: "anyN", verbatim: "mass of element = M{dx} moment of inertia of the element = M{dx} x²", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["mass of element = M{dx} moment of inertia of the element = M{dx} x²","l x² dx moment of inertia of the rod = M ∫","−l = M [ x³/3 ] −l l","= 2/3 Ml3 = 1/3 ml2"]} },
+    { id: "am-2021-hl-8-a-r1", kind: "anyN", verbatim: "mass of element = M{dx} moment of inertia of the element = M{dx} x²", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["mass of element = M{dx} moment of inertia of the element = M{dx} x²","moment of inertia of the rod = M ∫ ₋^l_l x² dx","= M [ x³/3 ] −l l","= 2/3 Ml3 = 1/3 ml2"]} },
     ],
   } as SecCard,
   {
@@ -261,7 +261,7 @@ export const CARDS: SecCard[] = [
     questionText: "If the period of small oscillations for the frame is 1.87 s, find the value of ℓ",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
     rows: [
-    { id: "am-2021-hl-8-b-iii-r1", kind: "anyN", verbatim: "length 2l, form the sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6ml². The frame is held with DE horizontal and F below DE. It is then released from rest. Find, in terms of l, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of l. I = 4/3 ml² + 4/3 ml² +", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 10, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["length 2l, form the sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6ml². The frame is held with DE horizontal and F below DE. It is then released from rest. Find, in terms of l, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of l. I = 4/3 ml² + 4/3 ml² +","{ 1/3 ml² + m(2l cos 30)²} I = 6ml²","Mgh₁ = 1/2 I𝜔² + Mgh₂ 3m × g × 2/3 √3l = 1/2 (6ml²)𝜔² + 3m × g × 1/3 √3l","√3mgl = 3ml²𝜔² 𝜔= √^(√3)^g 3l","Mgh = mg × 1/2 √3l + mg × 1/2 √3l + mg × √3l T = 1.87 = 2𝜋√ Mgh I = 2𝜋√ 6ml²/2mg√3l = 2𝜋√√3l g l = 0.50 m."],"perOptionSteps":[5,5,10,5,5]} },
+    { id: "am-2021-hl-8-b-iii-r1", kind: "anyN", verbatim: "length 2l, form the sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6ml². The frame is held with DE horizontal and F below DE. It is then released from rest. Find, in terms of l, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of l. I = 4/3 ml² + 4/3 ml² +", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 10, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["length 2l, form the sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6ml². The frame is held with DE horizontal and F below DE. It is then released from rest. Find, in terms of l, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of l. I = 4/3 ml² + 4/3 ml² +","{ 1/3 ml² + m(2l cos 30)²} I = 6ml²","Mgh₁ = 1/2 I𝜔² + Mgh₂ 3m × g × 2/3 √3l = 1/2 (6ml²)𝜔² + 3m × g × 1/3 √3l","√3mgl = 3ml²𝜔² 𝜔= √√33lg","Mgh = mg × 1/2 √3l + mg × 1/2 √3l + mg × √3l T = 1.87 = 2𝜋√ Mgh I = 2𝜋√ 6ml²/2mg√3l = 2𝜋√√3l g l = 0.50 m."],"perOptionSteps":[5,5,10,5,5]} },
     ],
   } as SecCard,
   {
@@ -316,7 +316,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the value of k. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out? P, the population of insects in a region, grows at a rate that is proportional to the current population",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2021-hl-10-b-r1", kind: "anyN", verbatim: "∫ dP/P = k ∫ dt", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["∫ dP/P = k ∫ dt","3P = k[t]₀ 15 [ln P]_P","ln3P−lnP = 15k k = ln3/15 = 0.07324","dP/dt = ln3/15 P − 10 ∫ dP/ln3 = ∫ dt ∫ ln3/(15P−10) ∫ 15/ln3 [ ln | ln3/15 P − 10|] 120 0 = [t]₀ t","t = 15/ln3 (ln10 − ln1.2111) t = 28·8 days"]} },
+    { id: "am-2021-hl-10-b-r1", kind: "anyN", verbatim: "∫ dP/P = k ∫ dt", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["∫ dP/P = k ∫ dt","[ln P]^(3P)_P = k[t]¹⁵₀","ln3P−lnP = 15k k = ln3/15 = 0.07324","dP/dt = ln3/15 P − 10 ∫ dP/ln3 = ∫ dt ∫ ln3/(15P−10) ∫ 15/ln3 [ ln | ln3/15 P − 10|] 120 0 = [t]₀ t","t = 15/ln3 (ln10 − ln1.2111) t = 28·8 days"]} },
     ],
   } as SecCard,
   {
@@ -422,13 +422,27 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-2-b-i", topicId: "applied-mathematics-2-0", conceptId: "2t1t2",
+    section: "B", questionRef: "2022 HL Q2(b)(i)",
+    stem: "A woman can swim at u m s^(–1) in still water. In a river she can cover a distance d m against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). The width of the river is dm and v < u.",
+    questionText: "Show that v= d(t1−t2) 2t1t2",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2022-hl-2-b-i-r1", kind: "anyN", verbatim: "upstream: d = (u−v)t₁", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["upstream: d = (u−v)t₁","u − v = d/t₁ downstream: d = (u + v)t₂","u + v = d/t₂ ⟹ 2v = d/t₂ − d/t₁ v = (d(t₁−t₂))/2t₁t₂"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
     id: "am-2022-hl-2-b-ii", topicId: "applied-mathematics-1-3", conceptId: "time-taken-woman-cross-river-shortest",
     section: "B", questionRef: "2022 HL Q2(b)(ii)",
     stem: "A woman can swim at u m s^(–1) in still water. In a river she can cover a distance d m against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). The width of the river is dm and v < u.",
     questionText: "Find, in terms of t₁ and t₂, the time taken by the woman to cross the river by the shortest path",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-2-b-ii-r1", kind: "anyN", verbatim: "against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). Show that v = ./2t₁t₂ d(t₁−t₂) The width of the river is d m and v < u. Find, in terms of t₁ and t₂, the time taken by the woman to cross the river by the shortest path. upstream: d = (u−v)t₁", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). Show that v = ./2t₁t₂ d(t₁−t₂) The width of the river is d m and v < u. Find, in terms of t₁ and t₂, the time taken by the woman to cross the river by the shortest path. upstream: d = (u−v)t₁","u − v = d/t₁ downstream: d = (u + v)t₂","u + v = d/t₂ ⟹ 2v = d/t₂ − d/t₁ v = (d(t₁−t₂))/2t₁t₂","v time = d/(√u²−v²) d/(√u²−v²)","√u² − v² = d/√t₁t₂ d/√t₁t₂ time = d/(√u²−v²) = √t1t2 time = d/(√u²−v²) = √t1t2"]} },
+    { id: "am-2022-hl-2-b-ii-r1", kind: "anyN", verbatim: "v time = d/(√u²−v²) d/(√u²−v²)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["v time = d/(√u²−v²) d/(√u²−v²)","√u² − v² = d/√t₁t₂ d/√t₁t₂ time = d/(√u²−v²) = √t1t2 time = d/(√u²−v²) = √t1t2"]} },
     ],
   } as SecCard,
   {
@@ -492,13 +506,41 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-5-a-i", topicId: "applied-mathematics-2-6", conceptId: "speed-sphere-after-collision",
+    section: "B", questionRef: "2022 HL Q5(a)(i)",
+    stem: "A smooth sphere A of mass 2m, moving with speed 3u on a 3u u smooth horizontal table collides directly with a smooth sphere B of mass m, moving in the opposite direction with speed u. 3u u The coefficient of restitution between A and B is e. Find, in terms of u and e, The loss of the kinetic energy due to the collision is kmu2(1 – e2).",
+    questionText: "the speed of each sphere after the collision",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2022-hl-5-a-i-r1", kind: "anyN", verbatim: "2m(3u) + m(−u) = 2mv₁ + mv₂", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 10 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["2m(3u) + m(−u) = 2mv₁ + mv₂","v₁ −v₂ = −e(3u−(−u))","NEL 2v₁ + v₂ = 5u v₁ −v₂ = −4eu v₁ = (u(5−4e))/3 v₂ = (u(5 + 8e))/3"],"perOptionSteps":[5,5,10]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-5-a-ii", topicId: "applied-mathematics-2-6", conceptId: "magnitude-impulse-imparted-due-collision",
+    section: "B", questionRef: "2022 HL Q5(a)(ii)",
+    stem: "A smooth sphere A of mass 2m, moving with speed 3u on a 3u u smooth horizontal table collides directly with a smooth sphere B of mass m, moving in the opposite direction with speed u. 3u u The coefficient of restitution between A and B is e. Find, in terms of u and e, The loss of the kinetic energy due to the collision is kmu2(1 – e2).",
+    questionText: "the magnitude of the impulse imparted to B due to the collision",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2022-hl-5-a-ii-r1", kind: "anyN", verbatim: "I = |m (u(5 + 8e))/3 − m(−u)| = 8mu/3 (1 + e)", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["I = |m (u(5 + 8e))/3 − m(−u)| = 8mu/3 (1 + e)"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
     id: "am-2022-hl-5-a-iii", topicId: "applied-mathematics-2-6", conceptId: "ask",
     section: "B", questionRef: "2022 HL Q5(a)(iii)",
     stem: "A smooth sphere A of mass 2m, moving with speed 3u on a 3u u smooth horizontal table collides directly with a smooth sphere B of mass m, moving in the opposite direction with speed u. 3u u The coefficient of restitution between A and B is e. Find, in terms of u and e, The loss of the kinetic energy due to the collision is kmu2(1 – e2).",
     questionText: "Find the value of k",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "am-2022-hl-5-a-iii-r1", kind: "anyN", verbatim: "The loss of the kinetic energy due to the collision is kmu²(1 – e²). Find the value of k. 3u u v₁ PCM 2m(3u) + m(−u) = 2mv₁ + mv₂", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 10, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["The loss of the kinetic energy due to the collision is kmu²(1 – e²). Find the value of k. 3u u v₁ PCM 2m(3u) + m(−u) = 2mv₁ + mv₂","v₁ −v₂ = −e(3u−(−u))","NEL 2v₁ + v₂ = 5u v₁ −v₂ = −4eu v₁ = (u(5−4e))/3 v₂ = (u(5 + 8e))/3","I = |m (u(5 + 8e))/3 − m(−u)| = 8mu/3 (1 + e)","KE_B = 1/2 (2m)(3u)² + 1/2 (m)(−u)² = 19/2 mu² KE_A = 1/2 (2m)(v₁)² + 1/2 (m)(v₂)² = 1/9 mu² {(25 − 40e + 16e²) + 1/2 (25 + 80e + 64e²)} = 1/9 mu²{37.5 + 48e²} KE_L = 19/2 mu² − 1/9 mu²{37.5 + 48e²} = 16/3 mu²(1 − e²) ⇒ k = 16/3"],"perOptionSteps":[5,5,10,5,5]} },
+    { id: "am-2022-hl-5-a-iii-r1", kind: "anyN", verbatim: "KE_B = 1/2 (2m)(3u)² + 1/2 (m)(−u)² = 19/2 mu² KE_A = 1/2 (2m)(v₁)² + 1/2 (m)(v₂)² = 1/9 mu² {(25 − 40e + 16e²) + 1/2 (25 + 80e + 64e²)} = 1/9 mu²{37.5 + 48e²} KE_L = 19/2 mu² − 1/9 mu²{37.5 + 48e²} = 16/3 mu²(1 − e²) ⇒ k = 16/3", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["KE_B = 1/2 (2m)(3u)² + 1/2 (m)(−u)² = 19/2 mu² KE_A = 1/2 (2m)(v₁)² + 1/2 (m)(v₂)² = 1/9 mu² {(25 − 40e + 16e²) + 1/2 (25 + 80e + 64e²)} = 1/9 mu²{37.5 + 48e²} KE_L = 19/2 mu² − 1/9 mu²{37.5 + 48e²} = 16/3 mu²(1 − e²) ⇒ k = 16/3"]} },
     ],
   } as SecCard,
   {
@@ -512,7 +554,7 @@ export const CARDS: SecCard[] = [
     questionText: "A smooth sphere P has mass m and speed u. It collides Q P obliquely with a smooth sphere Q, of mass m, which is at the of P diagram. makes an angle 𝛽/𝛼 rest. Before the collision, the direction of P makes an angle 𝛼 with the line of centres, as shown in the diagram",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2022-hl-5-b-r1", kind: "anyN", verbatim: "Show that tan 𝛽 = 1 + 3 (2 tan 𝛼)/𝛼. tan² P m ucos 𝛼 𝚤⃗+ usin 𝛼 𝚥⃗ v₁ 𝚤⃗ + usin 𝛼 𝚥⃗ v₂ 𝚤⃗+ 0 𝚥⃗ Q m 0 𝚤⃗+ 0 𝚥⃗ PCM mucos 𝛼+ m(0) = mv₁ + mv₂", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Show that tan 𝛽 = 1 + 3 (2 tan 𝛼)/𝛼. tan² P m ucos 𝛼 𝚤⃗+ usin 𝛼 𝚥⃗ v₁ 𝚤⃗ + usin 𝛼 𝚥⃗ v₂ 𝚤⃗+ 0 𝚥⃗ Q m 0 𝚤⃗+ 0 𝚥⃗ PCM mucos 𝛼+ m(0) = mv₁ + mv₂","NEL v₁ − v₂ = − 1/3 u cos 𝛼","v₁ + v₂ = ucos 𝛼 v₁ − v₂ = − 1/3 u cos 𝛼 v₁ = 1/3 u cos 𝛼","tan(𝛼 + 𝛽) = (u sin 𝛼)/v₁ = 3 tan 𝛼 (tan 𝛼+tan 𝛽)/(1−tan𝛼 tan 𝛽) = 3 tan 𝛼 tan 𝛼+ tan 𝛽= 3 tan 𝛼−3 tan² 𝛼tan 𝛽 tan 𝛽 = (2 tan 𝛼)/(1 + 3 tan2 𝛼)"]} },
+    { id: "am-2022-hl-5-b-r1", kind: "anyN", verbatim: "ucos 𝛼 𝚤⃗+ usin 𝛼 𝚥⃗ v₁ 𝚤⃗ + usin 𝛼 𝚥⃗ v₂ 𝚤⃗+ 0 𝚥⃗ Q m 0 𝚤⃗+ 0 𝚥⃗ PCM mucos 𝛼+ m(0) = mv₁ + mv₂", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["ucos 𝛼 𝚤⃗+ usin 𝛼 𝚥⃗ v₁ 𝚤⃗ + usin 𝛼 𝚥⃗ v₂ 𝚤⃗+ 0 𝚥⃗ Q m 0 𝚤⃗+ 0 𝚥⃗ PCM mucos 𝛼+ m(0) = mv₁ + mv₂","NEL v₁ − v₂ = − 1/3 u cos 𝛼","v₁ + v₂ = ucos 𝛼 v₁ − v₂ = − 1/3 u cos 𝛼 v₁ = 1/3 u cos 𝛼","tan(𝛼 + 𝛽) = (u sin 𝛼)/v₁ = 3 tan 𝛼 (tan 𝛼+tan 𝛽)/(1−tan𝛼 tan 𝛽) = 3 tan 𝛼 tan 𝛼+ tan 𝛽= 3 tan 𝛼−3 tan² 𝛼tan 𝛽 tan 𝛽 = (2 tan 𝛼)/(1 + 3 tan2 𝛼)"]} },
     ],
   } as SecCard,
   {
@@ -552,9 +594,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2022 HL Q7(a)(ii)",
     stem: "A uniform rod BC of length 3 m, has a mass of 20 kg. The end B, about which the rod can turn freely, is attached to a vertical wall. The rod is kept in a horizontal position by a rope attached to a point D on the rod and to a point A of the wall vertically above B, as shown in the diagram.",
     questionText: "If the tension in the rope cannot exceed 245 N, show that h ≥ 1.5",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-7-a-ii-r1", kind: "anyN", verbatim: "Prove that the tension in the rope is ./h 147√h² + 4 If the tension in the rope cannot exceed 245 N, show that h ≥ 1.5. T B 𝜃/D C 20g ↻B Tsin 𝜃× 2 = 20g × 1.5", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["Prove that the tension in the rope is ./h 147√h² + 4 If the tension in the rope cannot exceed 245 N, show that h ≥ 1.5. T B 𝜃/D C 20g ↻B Tsin 𝜃× 2 = 20g × 1.5","sin 𝜃 = h/(√h² + 4) h/(√h² + 4)","T × h/(√h2 + 4) h/(√h2 + 4) × 2 = 20g × 1.5 T = (147√h² + 4)/h","T ≤ 245 (147√h² + 4)/h ≤ 245","√h² + 4 ≤ 5/3 h 16h² ≥ 36 h ≥ 1.5"]} },
+    { id: "am-2022-hl-7-a-ii-r1", kind: "anyN", verbatim: "T ≤ 245 (147√h² + 4)/h ≤ 245", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["T ≤ 245 (147√h² + 4)/h ≤ 245","√h² + 4 ≤ 5/3 h 16h² ≥ 36 h ≥ 1.5"]} },
     ],
   } as SecCard,
   {
@@ -568,7 +610,20 @@ export const CARDS: SecCard[] = [
     questionText: "Two uniform rods XY and YZ of equal length and of weights Y 2W and W respectively are smoothly hinged at Y",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2022-hl-7-b-r1", kind: "anyN", verbatim: "|∠XYZ| = 𝛼. If the coefficient of friction is ,/5 ^√³ find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼", marks: 25, contextNote: "The scheme prices this ask step by step: 10, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":10,"options":["|∠XYZ| = 𝛼. If the coefficient of friction is ,/5 ^√³ find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼","R₂ = 5W/4","R₁ + R₂ = 3W R₁ = 7W/4 R₂ < R₁ YZ ↻Y R₂ × l sin 1/2 𝛼 = F × l cos 1/2 𝛼 + W × 1/2 l sin 1/2 𝛼","F = 3/4 W × tan 1/2 𝛼 𝜇R₂ = 3/4 W × tan 1/2 𝛼 √3/5 × 5/4 W = 3/4 W × tan 1/2 𝛼 tan 1/2 𝛼 = 1/√3 1/√3 ⇒ 𝛼 = 60°"],"perOptionSteps":[10,5,5,5]} },
+    { id: "am-2022-hl-7-b-r1", kind: "anyN", verbatim: "|∠XYZ| = 𝛼. If the coefficient of friction is ^√³/5 , find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼", marks: 25, contextNote: "The scheme prices this ask step by step: 10, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":10,"options":["|∠XYZ| = 𝛼. If the coefficient of friction is ^√³/5 , find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼","R₂ = 5W/4","R₁ + R₂ = 3W R₁ = 7W/4 R₂ < R₁ YZ ↻Y R₂ × l sin 1/2 𝛼 = F × l cos 1/2 𝛼 + W × 1/2 l sin 1/2 𝛼","F = 3/4 W × tan 1/2 𝛼 𝜇R₂ = 3/4 W × tan 1/2 𝛼 √3/5 × 5/4 W = 3/4 W × tan 1/2 𝛼 tan 1/2 𝛼 = 1/√3 1/√3 ⇒ 𝛼 = 60°"],"perOptionSteps":[10,5,5,5]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-8-a", topicId: "applied-mathematics-2-12", conceptId: "moment-inertia-uniform-disc-mass-radius",
+    section: "B", questionRef: "2022 HL Q8(a)",
+    questionText: "Prove that the moment of inertia of a uniform disc, of mass m and radius rabout an 8. its plane, is 1/2 mr². axis through its centre, perpendicular to its plane, is",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2022-hl-8-a-r1", kind: "anyN", verbatim: "Let M = mass per unit area mass of element = M{2𝜋xdx} moment of inertia of the element = M{2𝜋xdx} x²", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Let M = mass per unit area mass of element = M{2𝜋xdx} moment of inertia of the element = M{2𝜋xdx} x²","moment of inertia of the disc = 2𝜋M ∫ ₀ ^r x³ dx","= 2πM [ x⁴/4 ] 0 r","= 1/2 𝜋Mr⁴ = 1/2 mr²"]} },
     ],
   } as SecCard,
   {
@@ -618,13 +673,26 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-10-a", topicId: "applied-mathematics-2-1", conceptId: "expression-minimum-iii-distance-travelled-particle",
+    section: "B", questionRef: "2022 HL Q10(a)",
+    questionText: "Given that v = 2 when t = 0, find an expression for v in terms of t. Find the minimum value of v. (iii) Find the distance travelled by the particle before it attains its minimum speed. The rate of decay at any instant of a radioactive substance is proportional to the amount of the substance remaining at that instant. The initial amount of",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "am-2022-hl-10-a-r1", kind: "anyN", verbatim: "∫dv = ∫(5 −8e^(−t))dt", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["∫dv = ∫(5 −8e^(−t))dt","[v] ^v ₂ = [5t + 8e^(−t)]^t₀","v−2 = (5t + 8e^(−t)) −8 v = 5t + 8e^(−t)−6","dv/dt = 0 5 −8e^(−t) = 0 t = ln 8/5 = 0.47 vmin = 5 × 0.47 + 5 −6 = 1.35","ds/dt = 5t + 8e^−^t − 6 [s] ₀ s = [ 5/2 t² − 8e^−^t − 6t] 0 0.47 s = ( 5/2 (0.47)² − 8e^−⁰^.⁴⁷ − 6(0.47)) − (−8) s = 0.73"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
     id: "am-2022-hl-10-b-i", topicId: "applied-mathematics-2-0", conceptId: "constant",
     section: "B", questionRef: "2022 HL Q10(b)(i)",
     stem: "The rate of decay at any instant of a radioactive substance is proportional to the amount of the substance remaining at that instant. The initial amount of the radioactive substance is N and the amount remaining after time t (hours) is x. This document will not be returned to the State Examinations Commission^. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Higher Level Applied Mathematics Friday, 24 June Afternoon, 2:00 – 4:30",
     questionText: "Prove that x = Ne−kt, where k is a constant",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "am-2022-hl-10-b-i-r1", kind: "anyN", verbatim: "dN/dt = −kN ∫ dN/N = −k ∫ dt t x = −k[t]₀ [ln N]_N ln x/N = −kt x = Ne−kt", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["dN/dt = −kN ∫ dN/N = −k ∫ dt t x = −k[t]₀ [ln N]_N ln x/N = −kt x = Ne−kt"]} },
+    { id: "am-2022-hl-10-b-i-r1", kind: "anyN", verbatim: "dN/dt = −kN ∫ dN/N = −k ∫ dt [ln N]_N^x = −k[t]^t₀ ln x/N = −kt x = Ne−kt", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["dN/dt = −kN ∫ dN/N = −k ∫ dt [ln N]_N^x = −k[t]^t₀ ln x/N = −kt x = Ne−kt"]} },
     ],
   } as SecCard,
   {
@@ -638,7 +706,7 @@ export const CARDS: SecCard[] = [
     questionText: "If the initial amount N was reduced to N 3 in 14 hours, find the value of k",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-10-b-ii-r1", kind: "anyN", verbatim: "1 3^N = −k[t]₀ 14", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["1 3^N = −k[t]₀ 14","[ln N]_N ln 1/3 = −14k k = 0.0785"]} },
+    { id: "am-2022-hl-10-b-ii-r1", kind: "anyN", verbatim: "[ln N]¹₃_N^N = −k[t]¹⁴₀", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["[ln N]¹₃_N^N = −k[t]¹⁴₀","ln 1/3 = −14k k = 0.0785"]} },
     ],
   } as SecCard,
   {
@@ -652,7 +720,7 @@ export const CARDS: SecCard[] = [
     questionText: "If the amount remaining is reduced from N 3 to N 4 in t hours, find the value of t",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-10-b-iii-r1", kind: "anyN", verbatim: "1 4^N = −0.0785[t] ₀ t", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["1 4^N = −0.0785[t] ₀ t","[ln N] 1 3N ln 3/4 = −0.0785t t = 3.7"]} },
+    { id: "am-2022-hl-10-b-iii-r1", kind: "anyN", verbatim: "[ln N] ¹₄₁₃^N_N = −0.0785[t] ^t ₀", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["[ln N] ¹₄₁₃^N_N = −0.0785[t] ^t ₀","ln 3/4 = −0.0785t t = 3.7"]} },
     ],
   } as SecCard,
   {
@@ -736,7 +804,7 @@ export const CARDS: SecCard[] = [
     questionText: "Show that 𝜔=√ 𝑔tanα 3.5+4.3sinα",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "am-2023-hl-3-ii-r1", kind: "anyN", verbatim: "Tsin 𝛼= mr𝜔² r = 3.5 + 4.3 sin 𝛼 Tcos 𝛼= mg", marks: 15, contextNote: "The scheme prices this ask step by step: 10, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Tsin 𝛼= mr𝜔² r = 3.5 + 4.3 sin 𝛼 Tcos 𝛼= mg","dividing: tan 𝛼 = ,/g (3.5 + 4.3 sin 𝛼)𝜔² i.e. 𝜔 = √ 3.5 + 4.3 g tan sin 𝛼 𝛼"],"perOptionSteps":[10,5]} },
+    { id: "am-2023-hl-3-ii-r1", kind: "anyN", verbatim: "Tsin 𝛼= mr𝜔² r = 3.5 + 4.3 sin 𝛼 Tcos 𝛼= mg", marks: 15, contextNote: "The scheme prices this ask step by step: 10, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Tsin 𝛼= mr𝜔² r = 3.5 + 4.3 sin 𝛼 Tcos 𝛼= mg","dividing: tan 𝛼 = ((3.5 + 4.3 sin 𝛼)𝜔²)/g , i.e. 𝜔 = √ 3.5 + 4.3 g tan sin 𝛼 𝛼"],"perOptionSteps":[10,5]} },
     ],
   } as SecCard,
   {
@@ -835,6 +903,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "am-2023-hl-4-vi-r1", kind: "anyN", verbatim: "dv/dt [= v dv/ds] = 3g − v² = 29.4 − v²", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["dv/dt [= v dv/ds] = 3g − v² = 29.4 − v²"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-5-b", topicId: "applied-mathematics-2-0", conceptId: "ine-travels-car-her-house-work",
+    section: "B", questionRef: "2023 HL Q5(b)",
+    stem: "On Tuesday morning Áine leaves her house 140 s later than the day before. She takes the same route to work. She starts her car and accelerates at 1.5 m s^(–2) for 20 s, then maintains this steady speed for 6 minutes before decelerating uniformly to rest at her work. She again reaches her work at exactly 08: 30. Calculate the time when Áine leaves her house on Tuesday morning.",
+    questionText: "Áine travels by car from her house to work each morning. On Monday morning she starts her car and accelerates uniformly for 40 s to a speed of 22.5 m s^(–1). Áine then travels at this speed for 8 minutes until decelerating uniformly to rest at her work. She reaches her work at exactly 08: 30",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2023-hl-5-b-r1", kind: "anyN", verbatim: "s_M = s_T and T_M = T_T + 140", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["s_M = s_T and T_M = T_T + 140","s_M = s₁ + s₂ + s₃ and T_M = t₁ + t₂ + t₃ s_T = s₄ + s₅ + s₆ and T_T = t₄ + t₅ + t₆ a₁ = 22.5/40 = 0.5625 s_M = [450] + [10800] + [s₃] T_M = 40 + 480 + t₃ v₁ = u₂ = 1.5 × 20 = 30 so s_T = [300] + [10800] + [s₆] T_T = 20 + 360 + t₆ 40 + 480 + t₃ = 20 + 360 + t₆ + 140, i.e. t₃ = t₆ = t a₃ = − 22.5/t so 0² = 22.5² − 45s₃/t , i.e. s₃ = 11.25t a₆ = − 30/t so 0² = 30² − 60s₆/t , i.e. s₆ = 15t ∴450 + 10800 + 11.25t = 300 + 10800 + 15t, i.e. t = 40 s","T_T = 20 + 360 + 40 = 7 minutes Áine leaves her house at 08: 23"]} },
     ],
   } as SecCard,
   {
@@ -974,7 +1056,7 @@ export const CARDS: SecCard[] = [
     questionText: "In terms of 𝚤⃗ and 𝚥⃗, calculate vP v⃗, the velocity of P, and vQ v⃗, the velocity of Q, when the balls collide, i.e. when t = 3 s",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2023-hl-8-iii-r1", kind: "anyN", verbatim: "𝑣⃗(t) = 38 cos 41° 𝚤⃗+ (38 sin 41° −9.8 × 3)𝚥⃗= 28.68𝚤⃗−4.47𝚥⃗ m s^(–1)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["𝑣⃗(t) = 38 cos 41° 𝚤⃗+ (38 sin 41° −9.8 × 3)𝚥⃗= 28.68𝚤⃗−4.47𝚥⃗ m s^(–1)","v_P 𝑣⃗(t) = −27.98 cos 64° 𝚤⃗+ (27.98 sin 64° −9.8 × 2)𝚥⃗= −12.27𝚤⃗+ 5.55𝚥⃗ m s^(–1)"]} },
+    { id: "am-2023-hl-8-iii-r1", kind: "anyN", verbatim: "v𝑣_P⃗(t) = 38 cos 41° 𝚤⃗+ (38 sin 41° −9.8 × 3)𝚥⃗= 28.68𝚤⃗−4.47𝚥⃗ m s^(–1)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["v𝑣_P⃗(t) = 38 cos 41° 𝚤⃗+ (38 sin 41° −9.8 × 3)𝚥⃗= 28.68𝚤⃗−4.47𝚥⃗ m s^(–1)","v𝑣_Q⃗(t) = −27.98 cos 64° 𝚤⃗+ (27.98 sin 64° −9.8 × 2)𝚥⃗= −12.27𝚤⃗+ 5.55𝚥⃗ m s^(–1)"]} },
     ],
   } as SecCard,
   {
@@ -988,7 +1070,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the dot product of vP v⃗ and vQ v⃗ when t=3 s",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2023-hl-8-iv-r1", kind: "anyN", verbatim: "𝑣⃗= (28.68𝚤⃗−4.47𝚥⃗) ∙(−12.27𝚤⃗+ 5.55𝚥⃗) = (28.68)(−12.27) + (−4.47)(5.55)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["𝑣⃗= (28.68𝚤⃗−4.47𝚥⃗) ∙(−12.27𝚤⃗+ 5.55𝚥⃗) = (28.68)(−12.27) + (−4.47)(5.55)","v_P 𝑣⃗∙v_Q i.e. v_P 𝑣⃗= −376.71 [units not required]"]} },
+    { id: "am-2023-hl-8-iv-r1", kind: "anyN", verbatim: "v𝑣_P⃗∙v𝑣_Q⃗= (28.68𝚤⃗−4.47𝚥⃗) ∙(−12.27𝚤⃗+ 5.55𝚥⃗) = (28.68)(−12.27) + (−4.47)(5.55)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["v𝑣_P⃗∙v𝑣_Q⃗= (28.68𝚤⃗−4.47𝚥⃗) ∙(−12.27𝚤⃗+ 5.55𝚥⃗) = (28.68)(−12.27) + (−4.47)(5.55)","i.e. v𝑣_P⃗∙v𝑣_Q⃗= −376.71 [units not required]"]} },
     ],
   } as SecCard,
   {
@@ -1002,7 +1084,7 @@ export const CARDS: SecCard[] = [
     questionText: "Hence or otherwise calculate the acute angle between v_P 𝑣⃗ and v_Q 𝑣⃗ when t = 3 s. 33",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2023-hl-8-v-r1", kind: "anyN", verbatim: "𝑣⃗|cos 𝜃", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["𝑣⃗|cos 𝜃","𝑣⃗= |v_P 𝑣⃗||v_Q v_P 𝑣⃗∙v_Q 𝑣⃗| = 29.03 and |v_Q 𝑣⃗| = 13.47 so cos 𝜃= −0.96, i.e. 𝜃= 164.44°, i.e. angle = 15.56°"]} },
+    { id: "am-2023-hl-8-v-r1", kind: "anyN", verbatim: "v𝑣_P⃗∙v𝑣_Q⃗= |v𝑣_P⃗||v𝑣_Q⃗|cos 𝜃", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["v𝑣_P⃗∙v𝑣_Q⃗= |v𝑣_P⃗||v𝑣_Q⃗|cos 𝜃","|v𝑣_P⃗| = 29.03 and |v𝑣_Q⃗| = 13.47 so cos 𝜃= −0.96, i.e. 𝜃= 164.44°, i.e. angle = 15.56°"]} },
     ],
   } as SecCard,
   {
@@ -1322,7 +1404,7 @@ export const CARDS: SecCard[] = [
     questionText: "Solve the differential equation to find an expression for v in terms of s, given that v = 0 when s = 0",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2024-hl-6-b-i-r1", kind: "anyN", verbatim: "∫ (ve^−^v2)/4 dv = ∫ ds", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["∫ (ve^−^v2)/4 dv = ∫ ds","= s + c","let u = (−^v² ,)/4 so du = (−^v)/2dv ∴ ∫ (ve^−^v2)/4 dv = −2 ∫ e^udu = −2e^u = (−2e^−^v2)/4","v = 0 when s = 0 so c = −2 (−2e^−^v2)/4 = s − 2, i.e. v = 2√ln 2/(2−s) m s–1"]} },
+    { id: "am-2024-hl-6-b-i-r1", kind: "anyN", verbatim: "∫ (ve^−^v2)/4 dv = ∫ ds", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["∫ (ve^−^v2)/4 dv = ∫ ds","= s + c","let u = (−^v²)/4 , so du = (−^v)/2dv ∴ ∫ (ve^−^v2)/4 dv = −2 ∫ e^udu = −2e^u = (−2e^−^v2)/4","v = 0 when s = 0 so c = −2 (−2e^−^v2)/4 = s − 2, i.e. v = 2√ln 2/(2−s) m s–1"]} },
     ],
   } as SecCard,
   {
@@ -1434,7 +1516,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the tension in the string",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-hl-1-b-ii-r1", kind: "anyN", verbatim: "Tsin 𝜃=mg", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Tsin 𝜃=mg","i.e. T (/13) 12 = 2(9.8), i.e. T = 21.23 N"]} },
+    { id: "am-2025-hl-1-b-ii-r1", kind: "anyN", verbatim: "Tsin 𝜃=mg", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Tsin 𝜃=mg","i.e. T ( 12/13) = 2(9.8), i.e. T = 21.23 N"]} },
     ],
   } as SecCard,
   {
@@ -1448,7 +1530,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the angular velocity of the particle",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-hl-1-b-iii-r1", kind: "anyN", verbatim: "T cos 𝜃 = mr𝜔², i.e. T (/13) 5 = 2(0.5)𝜔²", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["T cos 𝜃 = mr𝜔², i.e. T (/13) 5 = 2(0.5)𝜔²","𝜔 = 7/√6 7/√6 = 2.86 rad s^–¹"]} },
+    { id: "am-2025-hl-1-b-iii-r1", kind: "anyN", verbatim: "T cos 𝜃 = mr𝜔², i.e. T ( 5/13) = 2(0.5)𝜔²", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["T cos 𝜃 = mr𝜔², i.e. T ( 5/13) = 2(0.5)𝜔²","𝜔 = 7/√6 7/√6 = 2.86 rad s^–¹"]} },
     ],
   } as SecCard,
   {
@@ -1462,7 +1544,7 @@ export const CARDS: SecCard[] = [
     questionText: "The particle is given an increased velocity such that its period changes to 1.5 s. Calculate the new radius",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "am-2025-hl-1-b-iv-r1", kind: "anyN", verbatim: "T′ = 2𝜋/ω so 𝜔 = 4𝜋/3 = 4.189 rad s^–¹ T (/1.3) r = 2r𝜔² so T = 208𝜋²/45 = 45.62 N T (/1.3) ℎ = 2g so h = 441/80𝜋2 so r = 1.17 m", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T′ = 2𝜋/ω so 𝜔 = 4𝜋/3 = 4.189 rad s^–¹ T (/1.3) r = 2r𝜔² so T = 208𝜋²/45 = 45.62 N T (/1.3) ℎ = 2g so h = 441/80𝜋2 so r = 1.17 m"]} },
+    { id: "am-2025-hl-1-b-iv-r1", kind: "anyN", verbatim: "T′ = 2𝜋/ω so 𝜔 = 4𝜋/3 = 4.189 rad s^–¹ T ( r/1.3) = 2r𝜔² so T = 208𝜋²/45 = 45.62 N T ( ℎ/1.3) = 2g so h = 441/80𝜋2 so r = 1.17 m", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T′ = 2𝜋/ω so 𝜔 = 4𝜋/3 = 4.189 rad s^–¹ T ( r/1.3) = 2r𝜔² so T = 208𝜋²/45 = 45.62 N T ( ℎ/1.3) = 2g so h = 441/80𝜋2 so r = 1.17 m"]} },
     ],
   } as SecCard,
   {
@@ -1490,7 +1572,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate 𝜇B",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2025-hl-3-a-i-r1", kind: "anyN", verbatim: "32 −8g𝜇_A = 8a so 32 −4g𝜇_B = 8a", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["32 −8g𝜇_A = 8a so 32 −4g𝜇_B = 8a","32 −4g𝜇_B = 4b so b = 2a","12g − 64 = 12 ( )/2 a + b = 18a","a = 134/45 so 𝜇_B = 92/441 = 0.21"]} },
+    { id: "am-2025-hl-3-a-i-r1", kind: "anyN", verbatim: "32 −8g𝜇_A = 8a so 32 −4g𝜇_B = 8a", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["32 −8g𝜇_A = 8a so 32 −4g𝜇_B = 8a","32 −4g𝜇_B = 4b so b = 2a","12g − 64 = 12 ( (a + b)/2 ) = 18a","a = 134/45 so 𝜇_B = 92/441 = 0.21"]} },
     ],
   } as SecCard,
   {
@@ -1532,7 +1614,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the speed of each sphere immediately after the collision",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "am-2025-hl-4-ii-r1", kind: "anyN", verbatim: "2 ( )/5 7√3 + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3 2 50 3 ( = 5 − ) v_B−v_A + 1(0) i.e.v_B = 2(v_A) − v_A + = 1(v_B) i.e./0.084√3 2v_A + v_B = 2.8√3", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["2 ( )/5 7√3 + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3 2 50 3 ( = 5 − ) v_B−v_A + 1(0) i.e.v_B = 2(v_A) − v_A + = 1(v_B) i.e./0.084√3 2v_A + v_B = 2.8√3","3/50 = − (v_B−v_A)/(0−7√3) 5 i.e.v_B − v_A = 0.084√3","50 (0−7√3)/5 5/679√3 v_A = 750 = 1.57 m s^(–1) 742√3 v_B = 750 = 1.71 m s^(–1)"]} },
+    { id: "am-2025-hl-4-ii-r1", kind: "anyN", verbatim: "2 ( 7√3/5 ) + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3 2 50 3 ( = 5 − ) v_B−v_A + 1(0) i.e.v_B = 2(v_A) − v_A + = 1(v_B) i.e./0.084√3 2v_A + v_B = 2.8√3", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["2 ( 7√3/5 ) + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3 2 50 3 ( = 5 − ) v_B−v_A + 1(0) i.e.v_B = 2(v_A) − v_A + = 1(v_B) i.e./0.084√3 2v_A + v_B = 2.8√3","3/50 = − (v_B−v_A)/(0−7√3) 5 i.e.v_B − v_A = 0.084√3","50 (0−7√3)/5 5/679√3 v_A = 750 = 1.57 m s^(–1) 742√3₇₅₀ = 1.71 m s^(–1) v_B ="]} },
     ],
   } as SecCard,
   {
@@ -1615,7 +1697,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use integration to calculate the work done by Áine in extending the band horizontally to a length of 1.2 m",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-hl-6-b-i-r1", kind: "anyN", verbatim: "0.2 dx W = ∫ kx dx = ∫ 650x", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["0.2 dx W = ∫ kx dx = ∫ 650x","0 W = 650 (/2 0.2² ) = 13 J"]} },
+    { id: "am-2025-hl-6-b-i-r1", kind: "anyN", verbatim: "0.2 dx W = ∫ kx dx = ∫₀ 650x", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["0.2 dx W = ∫ kx dx = ∫₀ 650x","W = 650 ( 0.2²/2 ) = 13 J"]} },
     ],
   } as SecCard,
   {
@@ -1629,7 +1711,7 @@ export const CARDS: SecCard[] = [
     questionText: "Brody takes the extended band and extends it further. He claims to have done twice the work that Áine did. If Brody is correct, calculate the new length of the band",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "am-2025-hl-6-b-ii-r1", kind: "anyN", verbatim: "x 26 = ∫ 650x dx", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["x 26 = ∫ 650x dx","0.2 26 = 650 (/2 x² − )/2 0.2² = 325x² − 13 26 = 650/^√³ ( x² 2 − 0.2² 2 ) = 325x² − 13","x = ^√³/5 so l = 1.35 m"]} },
+    { id: "am-2025-hl-6-b-ii-r1", kind: "anyN", verbatim: "x 26 = ∫ 650x dx", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["x 26 = ∫ 650x dx","0.2 26 = 650 ( x²/2 − 0.2²/2 ) = 325x² − 13 26 = 650/^√³ ( x² 2 − 0.2² 2 ) = 325x² − 13","x = ^√³/5 so l = 1.35 m"]} },
     ],
   } as SecCard,
   {

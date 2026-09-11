@@ -30,19 +30,19 @@
     "refsHash": "2ecf53681016b22d"
   },
   "applied-maths": {
-    "cards": 275,
-    "contentHash": "3583d52f25388afa",
-    "coveragePct": 67.9,
-    "covered": 286,
+    "cards": 283,
+    "contentHash": "251e40bade26da8f",
+    "coveragePct": 69.9,
+    "covered": 296,
     "excluded": 52,
     "leaves": 498,
-    "open": 160,
+    "open": 150,
     "orphans": 0,
     "papers": {
       "count": 10,
       "hash": "878e72543b3b249c"
     },
-    "refsHash": "0146204025df9286"
+    "refsHash": "9dbec610500d3660"
   },
   "arabic": {
     "cards": 250,

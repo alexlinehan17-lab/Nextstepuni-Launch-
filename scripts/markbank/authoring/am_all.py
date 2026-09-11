@@ -117,11 +117,21 @@ def question_ref(year, level, key):
 
 
 class Author:
-    def __init__(self, year, level):
+    def __init__(self, year, level, census_text=None):
         self.year, self.level = year, level
         self.paper_text = am_scheme._paper_index(year, level)
         self.S = am_scheme.AmScheme(year, level, paper_text=self.paper_text)
         self.P = PP.Paper(SUBJECT, year, level)
+        # {key: the paper's words for that leaf} as the CENSUS reads them.
+        # paper.py blocks a paper out on its printed markers, and this paper
+        # sets the first of a run inside the sentence that introduces it —
+        # "Find (i) the speeds of P and Q immediately after the collision" is
+        # one line, with (i) in the middle of it — so (i) gets no block of its
+        # own and the card had no question to ask. The census already recovers
+        # those: complete_leading_romans() splits the parent's own text on its
+        # printed romans, which is the same paper, the same words, read at the
+        # grain the page prints them. Used only where paper.py has nothing.
+        self.census_text = census_text or {}
         self._flat = None
 
     # -- the scheme markdown, as the build's provenance gate reads it --------
@@ -167,7 +177,10 @@ class Author:
         if not exact and letter is None:
             exact = [k for k in self.P.parts if k[0] == q]
         if not exact:
-            return ''
+            # The census read this leaf out of its parent's own sentence.
+            lifted = (self.census_text.get(key) or '').strip()
+            return am_scheme.repair(
+                mathtext.clean_like(self.P.files, lifted)) if lifted else ''
         exact.sort(key=lambda k: (k[1] or '', am_scheme._rank(k[2] or '')))
         joined = ' '.join((self.P.text(*k) or '').strip() for k in exact)
         # Repaired again on the way out. paper.py repairs the blocks it hands
@@ -353,14 +366,14 @@ def build():
     census = census_subject(SUBJECT)
     by_paper = {(p['year'], p['level']): [tuple(l['key']) for l in p['leaves']]
                 for p in census['papers']}
+    census_text = {(p['year'], p['level']):
+                   {tuple(l['key']): l.get('text') or '' for l in p['leaves']}
+                   for p in census['papers']}
     for year in YEARS:
         for level in LEVELS:
-            A = Author(year, level)
+            A = Author(year, level, census_text=census_text[(year, level)])
             todo, coarse = plan(A, by_paper[(year, level)])
             stats['part-grain cards'] += coarse
-            for key, why in [(k, w) for k, _u, w in
-                             [(k, u, w) for k, u, w in todo]]:
-                pass
             for key, units, _why in todo:
                 try:
                     card, matched = A.card(key, units, by_paper[(year, level)])
