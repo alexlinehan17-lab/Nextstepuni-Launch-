@@ -116,12 +116,16 @@ QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b'
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Letters run past (h): Chemistry's Q4 runs to (l) and Physics' lettered-choice
 # questions to (l) as well — every part after (h) was invisible and 61 shipped
-# cards orphaned against a census that had never seen their asks. 'i' is NOT in
+# cards orphaned against a census that had never seen their asks. And past (l):
+# EVERY ONE of Engineering's ten sittings sets Question 1 (a) to (m), and a
+# class stopping at l lost part (m) on all ten — ten asks the SEC printed and
+# the denominator had never counted. Widening can only ever ADD a part, since
+# MARKER anchors at the start of the line. 'i' is NOT in
 # the letter class: alone it is a roman first, and only the (h)-context rule in
 # Paper.__init__ may upgrade it. Romans run past (viii): Biology prints (ix),
 # Physics (ix)-(xii), and the old alternation topped out at viii so '(ix)'
 # could never split a block or key a part.
-LETTER = re.compile(r'[a-hj-l]')
+LETTER = re.compile(r'[a-hj-m]')
 ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}|ix|xi{0,3}')
 RUBRIC = re.compile(r'^Answer (either|any|all)\b')
 # A part marker orphaned at the very end of a block: pymupdf glues a marker
@@ -167,7 +171,7 @@ TERMINAL = re.compile(r'[.?!]$')
 # glyph — Chemistry 2022 OL Q10(a) opens '(vi) 𝐇...' and the [A-Z(] class lost
 # the part.
 INLINE_MARKER = re.compile(
-    r'\s(?=\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    r'\s(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
@@ -452,6 +456,7 @@ class Paper:
         q = letter = roman = None
         open_key = None          # the part a continuation block may extend
         or_pending = False       # a standalone OR announces a choice variant
+        or_part = False          # ... of a PART, and of everything under it
         dot_heads = 0            # how many 'N.'-style heads were accepted
         qkind = {}               # q -> 'letter'|'roman': which marker opened it
         blocks = list(self._all_blocks())
@@ -523,7 +528,13 @@ class Paper:
             # twice this way every year. The variant files under -q so its
             # parts never collide with the first printing's.
             if re.fullmatch(r'OR', text):
-                or_pending = True
+                # The alternative runs from here to the end of the question:
+                # 2024 HL Engineering Q8 sets a second (c) with its own (i) and
+                # (ii), and each of them lands on the key its twin already
+                # holds. The flag has to outlast the (c) that opens the branch
+                # or only the (c) itself is separated and its children still
+                # weld onto their twins.
+                or_pending = or_part = True
                 continue
             if text.startswith('OR ') and QHEAD.match(text[3:]):
                 or_pending, text = True, text[3:]
@@ -618,7 +629,7 @@ class Paper:
                     if m.group(2):
                         dot_heads += 1
                     q = -found if variant else found
-                    or_pending = False
+                    or_pending = or_part = False
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
@@ -660,7 +671,7 @@ class Paper:
                 found_letter, found_roman = 'i', None
             if found_letter and letter is not None and found_letter > letter \
                     and ord(found_letter) - ord(letter) > 1 \
-                    and found_letter not in ('j', 'k', 'l'):
+                    and found_letter not in ('j', 'k', 'l', 'm'):
                 # Letters arrive in order. A jump — (g) landing while (b) is
                 # open — is a unit in a table ("Average Daily Gain (ADG) (g)"),
                 # and keying it filed two years' worth of Agricultural Science
@@ -671,13 +682,16 @@ class Paper:
                     self.stems.setdefault((q, letter), []).append(
                         f'({found_letter}) {rest}')
                 continue
-            if found_letter in ('j', 'k', 'l') and letter != (
+            if found_letter in ('j', 'k', 'l', 'm') and letter != (
                     'i' if found_letter == 'j'
                     else chr(ord(found_letter) - 1)):
                 # The high letters only ever CONTINUE a run: (k) out of
                 # nowhere is Construction Studies' thermal-conductivity
                 # symbol, not part (k) — extending the alphabet without this
-                # guard invented a phantom Q5(k) in all ten HL papers.
+                # guard invented a phantom Q5(k) in all ten HL papers. (m) is
+                # in the tuple for the same reason and a commoner one: it is
+                # the symbol for the METRE, and admitting it without the guard
+                # gave Physics four new orphans in one run.
                 if open_key:
                     self.parts[open_key].append(f'({found_letter}) {rest}')
                 else:
@@ -703,6 +717,14 @@ class Paper:
                 else:
                     roman = found_roman
                 key = (q, letter, roman)
+                # Both branches of a choice land on one key where the paper
+                # reprints the marker — 2024 OL Q6(c)(ii) is "Explain the term
+                # CAD." and, after the OR, "…integrated into computer numerical
+                # control." The paper's own word goes back BETWEEN them, which
+                # is how the alternatives printed inline already read. Without
+                # it the two run together as one sentence the SEC never set.
+                if or_part and self.parts.get(key):
+                    self.parts[key].append('OR')
                 self.parts.setdefault(key, [])
                 if rest:
                     self.parts[key].append(rest)
@@ -729,6 +751,15 @@ class Paper:
             else:
                 self.stems.setdefault((q, letter), []).append(text)
             open_key = None
+
+        # An alternative may repeat a marker and put nothing after it — 2021
+        # OL Q3 sets "(d) Explain any two of the following terms:" and then,
+        # after the OR, a bare "(d)" whose own romans carry the text. The OR
+        # placed on the letter then has nothing to join, and a part ending in
+        # "OR" reads as an ask cut off mid-choice.
+        for _blocks in self.parts.values():
+            while _blocks and _blocks[-1].strip() == 'OR':
+                _blocks.pop()
 
         self._adopt_unlettered()
 
