@@ -520,8 +520,12 @@ const decks = [
    * syllabus break: 2021-2022 are the outgoing mechanics course and 2023-2025
    * the specification first examined in 2023. Enrolled explicitly so a later
    * regeneration cannot silently omit or replace any of its cards. */
-  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 130, '5c8f36ba0f4214eee4269d22bcd3d20ada53f1a33820c36c0e873fe5b5afac72'],
-  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 145, '1e39bd494a3304e1ec0b1153834dba6d7bf186d7f90ec05055024d40b869b570'],
+  // 130 -> 170 and 145 -> 209 when Applied Maths got the figure cropper it had
+  // never had: 104 asks whose wording points at a diagram ("as shown in the
+  // diagram") now carry the SEC's own crop of it. Checked before refreshing —
+  // every one of the 275 previous ids is still present, nothing replaced.
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 170, '7f433beec20debe73abe1ad6456a59547635dd5164381eab2cbe54ebb6845d5e'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 209, 'd7db7fafa61acb18b9917c7da1df8e6a6a6a0968ba60329d4a9bf79af9a92f4a'],
   /* Spanish is the second modern language carded, and the first subject whose
    * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
    * article is a two-page loose sheet with its own SEC file id, and those 80
@@ -717,7 +721,9 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_152);
+    // 19,152 before Applied Maths got its figure cropper, plus the 104 asks it
+    // unblocked (40 Higher, 64 Ordinary). Nothing removed.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_256);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

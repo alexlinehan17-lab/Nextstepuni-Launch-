@@ -38,6 +38,9 @@ const MANIFEST = resolve(ROOT, 'components/MarkBank/figures.json');
 
 const SUBJECT_TITLE = {
   maths: 'Mathematics',
+  // The title the SEC prints on the booklet itself, which is what the
+  // attribution line quotes: "Applied Mathematics - Higher Level".
+  'applied-maths': 'Applied Mathematics',
   biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics',
   'agricultural-science': 'Agricultural Science', business: 'Business',
   'home-economics': 'Home Economics', economics: 'Economics',
