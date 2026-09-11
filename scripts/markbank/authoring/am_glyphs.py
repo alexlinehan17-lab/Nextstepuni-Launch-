@@ -134,6 +134,29 @@ def derive(doc):
     return out, stats
 
 
+# Where the derivation fitted a glyph id to the wrong letter, and what the
+# page itself says. derive() reads each glyph's own ToUnicode through
+# get_texttrace(); rawdict reads the same glyph through a different path, and
+# where the two disagree the fit follows texttrace. For one id in this corpus
+# texttrace is the one that is wrong.
+#
+# CambriaMath gid 1844. The 2022 Ordinary scheme sets Question 7's normal
+# reactions and rawdict reads them correctly -- "𝑅𝑅2 × 5 = 800 × 3",
+# "𝑅𝑅1 + 𝑅𝑅2 = 800" -- while texttrace's ToUnicode names the glyph 𝜇, so the
+# fit taught the table μ and page_fix then overwrote every R on the page.
+# The cards read "𝜇₂ = 480 N": the coefficient of friction is a RATIO and has
+# no units, so 480 newtons of it is not a wrong answer but a meaningless one.
+#
+# Settled by the page and not by preference: the scheme prices the ask "find
+# the reaction forces at the supports", the paper's own question asks for a
+# force in newtons, and rawdict spells the letter R at every one of the seven
+# places texttrace calls it μ. gid 2020 IS μ in this same font -- confirmed by
+# both readers wherever it appears -- and is left alone.
+GID_OVERRIDES = {
+    ('CambriaMath', 1844): '\U0001d445',      # R, not μ
+}
+
+
 def page_fix(page, table):
     """{(block, line, span, char): the character it really is, or None to drop}.
 

@@ -58,6 +58,7 @@ import collections
 import json
 import os
 import re
+import unicodedata
 import sys
 
 DIR = os.path.dirname(os.path.abspath(__file__))
@@ -157,6 +158,50 @@ def card_id(year, level, key):
     return '-'.join(bits)
 
 
+# The printed marker, taken off the front of an ask. clean_like returns the
+# question with the "(iii)" the page sets before it, and the card already names
+# the part it cites in its own reference -- printed twice it reads as part of
+# the question.
+_LEADING_MARKER = re.compile(
+    r'^\s*\(\s*(?:[a-z]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\s*\)\s*', re.I)
+
+
+def _recovered(files, raw, repair):
+    """clean_like's reading of `raw`, with the printed marker off the front.
+
+    NO GUARD. One was tried here and withdrawn, and the reason is worth
+    keeping. clean_like re-reads the PDF to recover what the text layer
+    flattened, locating the fragment by its first occurrence, and where two
+    asks open with the same words it finds the wrong one: 2021 Higher Q6(b)(i)
+    is "Find the value of 𝜃" and it returns Question 1(b)(ii)'s "Find the value
+    of f". That is a real defect and it is still here.
+
+    The guard compared what clean_like returned against paper.py's own block
+    and kept the block where they disagreed. It cannot work, because NEITHER
+    candidate is reliably the better one -- both are garbled on different asks,
+    and choosing between them by any similarity measure gets it wrong in both
+    directions. Two ways it did:
+
+      * 2023 Higher Q10(b)(ii). The paper prints "show that cos 𝜃 = (k−2)/3".
+        paper.py's block loses the denominator -- "show that cos 𝜃 = 𝑘−2" --
+        and clean_like has the fraction but out of order. Keeping the block
+        asked a student to PROVE SOMETHING FALSE, which is worse than garbled.
+      * 2022 Higher Q10(a). clean_like lifts the question number off the
+        margin into the sentence and drops the equals from a differential
+        equation; an ASCII-letter comparison caught that, and folding the
+        Mathematical Alphanumeric letters -- which has to be done, or the
+        guard destroys every recovered subscript -- stops catching it.
+
+    So this returns what the subject shipped before: clean_like's reading,
+    whatever it is. Choosing between two mangled readings is not a job for a
+    similarity test; it needs the PAGE, and that is a separate piece of work.
+    """
+    if not raw:
+        return ''
+    return _LEADING_MARKER.sub(
+        '', repair(mathtext.clean_like(files, raw))).strip()
+
+
 def question_ref(year, level, key):
     q, letter, roman = key
     ref = f'{year} {level.upper()} Q{q}'
@@ -230,8 +275,7 @@ class Author:
         if not exact:
             # The census read this leaf out of its parent's own sentence.
             lifted = (self.census_text.get(key) or '').strip()
-            return am_scheme.repair(
-                mathtext.clean_like(self.P.files, lifted)) if lifted else ''
+            return _recovered(self.P.files, lifted, am_scheme.repair)
         # In PRINTING order, which puts a part's own opening paragraph before
         # the romans under it. _rank() scores an unknown roman 99, and a key
         # with no roman at all was taking that score — so 2021 Ordinary Q5(b)
@@ -261,8 +305,7 @@ class Author:
             raw = (self.P.text(*k) or '').strip()
             if not raw:
                 continue
-            pieces.append(am_scheme.repair(
-                mathtext.clean_like(self.P.files, raw)))
+            pieces.append(_recovered(self.P.files, raw, am_scheme.repair))
         return ' '.join(' '.join(pieces).split())
 
     def stem(self, key):
@@ -367,6 +410,52 @@ class Author:
         total = sum(m for _, m in steps)
         if not total:
             raise Refused(('the scheme prints no mark for this ask', ref))
+        # THE SCHEME'S OWN ARITHMETIC HAS TO CLOSE. Each part carries the total
+        # the SEC printed for it in brackets, and where the steps this reader
+        # priced do not add up to that total, it has not read the part -- it
+        # has read some of it, and a card built on that claims a tariff the
+        # scheme never gave the answer it shows.
+        #
+        # Both shapes are the same underlying fault, the scheme's REPRINT of
+        # the question read as a priced step:
+        #   2022 Higher Q6(b) is priced (25) and came back as ONE five-mark
+        #     step reading "A particle is attached to one end of a light
+        #     inextensible..." -- the paper's own question, offered as a
+        #     five-mark answer to a twenty-five-mark part.
+        #   2021 Ordinary Q6(b)(ii) is priced (30) and came back as four steps
+        #     summing to 25, the first of them ten marks of "A uniform
+        #     triangular lamina in the shape of an isosceles triangle...".
+        #
+        # Refused rather than shipped short: never guess a tariff, and a
+        # tariff that does not match the marks beside the answer is a guess.
+        #
+        # Only where the card COVERS the whole part. part_total is the part's
+        # own figure and the scheme hangs it on the LAST sub-part of the run --
+        # 2021 Higher Q1(a) is (i) at 15 and (ii) at 10, and the (25) sits on
+        # (ii) -- so measuring one roman's steps against it condemns every
+        # correctly split part in the subject. It cost 38 good cards before
+        # this line was added.
+        #
+        # 50 is the whole QUESTION's total on this paper, and where it turns up
+        # against a part key the reader has picked up the question's closing
+        # figure rather than the part's -- no evidence about the part, so no
+        # claim is made on it.
+        printed = {u.part_total for u in units
+                   if getattr(u, 'part_total', None) and u.part_total != 50}
+        if key[2] is None and len(printed) == 1:
+            want = printed.pop()
+            if want != total:
+                page = min(u.page for u in units) + 1
+                raise Refused((
+                    'the priced steps do not add up to the total the scheme '
+                    'prints for this part', ref,
+                    f'{self.year} {self.level.upper()} scheme p.{page}, '
+                    f'{ref.split()[-1]}: the SEC prints ({want}) for this '
+                    f'part and the steps read here come to {total} — '
+                    f'{len(steps)} step(s) at '
+                    f'{", ".join(str(m) for _, m in steps)}. Part of what the '
+                    f'scheme states has not been read, so the card would '
+                    f'claim a tariff the answer it shows was never given.'))
         if all(not t for t, _ in steps):
             page = min(u.page for u in units) + 1
             marks = ', '.join(str(m) for _, m in steps)
@@ -543,7 +632,20 @@ def plan(A, census_leaves):
                 out.extend((((q, named[0], k[2]), [u], 'exact')
                             for k, u in items))
                 continue
-        if len(items) == 1 and items[0][0] in leaves:
+        # ONE unit cannot be ONE roman where the paper prints several. The
+        # scheme reader keys a part it failed to split to the LAST roman it
+        # saw, and that key is a real census leaf, so this branch carded it as
+        # though it were exact: 2021 Higher Q9(b) came out citing (b)(iii) --
+        # a five-mark ask -- while carrying all six of part (b)'s steps and
+        # its running total of 30, with the paper's printed asks for (i) and
+        # (ii) sitting inside the first marking point as though they were the
+        # answer. 2021 Ordinary Q2(a)(iii) is the same shape at 30 against a
+        # stated 15.
+        #
+        # The PAPER decides, as it decides everything here: `want` is what it
+        # prints under this letter, and a lone unit against several printed
+        # asks is a part the reader did not split, not a roman it read.
+        if len(items) == 1 and items[0][0] in leaves and len(want) <= 1:
             out.append((items[0][0], [items[0][1]], 'exact'))
             continue
         out.append(((q, letter, None), [u for _, u in items], 'part'))

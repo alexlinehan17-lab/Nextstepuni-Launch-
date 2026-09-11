@@ -479,6 +479,9 @@ class AmScheme:
         # The font's own letters, recovered from the glyph ids. Derived once
         # per document; see am_glyphs.py for the fault it repairs.
         self.glyphs, self.glyph_stats = am_glyphs.derive(self.doc)
+        # One glyph id the derivation fitted to the wrong letter; the evidence
+        # is recorded beside the table in am_glyphs.
+        self.glyphs.update(am_glyphs.GID_OVERRIDES)
         self._fix = {}
         # {q: squashed paper text}, used ONLY to tell the old scheme's reprint
         # of the question from the solution below it. Never read for an answer.

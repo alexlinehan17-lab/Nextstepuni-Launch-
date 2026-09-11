@@ -96,7 +96,6 @@ import { CARDS as MANDARIN_CHINESE_ORDINARY } from '../components/MarkBank/cards
 import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakian/higher';
 import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
 import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
-import { CARDS as MALTESE_HIGHER } from '../components/MarkBank/cards/maltese/higher';
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
 import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
@@ -469,8 +468,22 @@ const decks = [
   ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
-  ['engineering:higher', ENGINEERING_HIGHER, 313, '9458ea8b7627cb8001cc6917436c2b582140ffce954b6c7d580809d6eb92c233'],
-  ['engineering:ordinary', ENGINEERING_ORDINARY, 153, '05788a0b5351fd9797a97f8f01757544ebeb725d164e7b79d4b2231c71eaa379'],
+  /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
+   * against the papers. 466 cards -> 550, and coverage 585/806 -> 675/816 —
+   * the denominator itself was wrong, because every paper sets Question 1
+   * (a) to (m) and the reader's letter run stopped at (l).
+   *
+   * ELEVEN letter cards are gone and none is lost: each carried FIVE
+   * questions at once, because the paper prints a cue and its five romans
+   * beneath it, and each roman is now its own card. CARD_ID_ALIASES carries
+   * a student's progress to the first of them.
+   *
+   * eng-2024-hl-q1-l is withdrawn outright: it carried Question 1(m)'s ask
+   * welded onto (l)'s, which is what the letter run stopping at (l) did to
+   * every paper. Read properly, (l) states one thing and files under no
+   * syllabus topic. */
+  ['engineering:higher', ENGINEERING_HIGHER, 357, '887a423276b31e51315e70e1c1ecc8d10890ec745afbcdb901e783d11877ef46'],
+  ['engineering:ordinary', ENGINEERING_ORDINARY, 193, '353680642063db2d4248f69cef8c8afecde8651c7d373fda43c8abf5a73cc94a'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
    * added and none replacing anything. Nothing in any other deck moved. */
@@ -519,26 +532,20 @@ const decks = [
   /* Applied Maths is the seventeenth subject and the first to straddle a
    * syllabus break: 2021-2022 are the outgoing mechanics course and 2023-2025
    * the specification first examined in 2023. Enrolled explicitly so a later
-   * regeneration cannot silently omit or replace any of its cards.
-   * Re-measured at 131/147 after the scheme reader was fixed: it was sorting a
-   * step's tariff BEFORE the words printed beside it and reading sixteen steps
-   * as priced-and-blank, and it was splicing a square root's overbar as a
-   * fraction bar. One id moved, am-2021-hl-2 -> am-2021-hl-2-a-i, because that
-   * card cited a whole question while holding half of it; the alias below
-   * carries its progress. Two ids were WITHDRAWN with no replacement,
-   * am-2023-hl-3-iv and am-2023-hl-3-v. The running-header trim had only ever
-   * been applied to a card's ASK, so 41 of the 280 cards carried the header
-   * and whatever followed it inside their STEM — four of them the paper's own
-   * copyright notice and its "Do not hand this up." These two read "...6 m
-   * above the ground. P 3.5 m X a 4.3 m w 6 m Q 10 Leaving Certificate, 2023
-   * Applied Mathematics - Higher Level Draw a diagram to show the external
-   * forces acting on seat A. Show that w = ...", and it was that imported
-   * "Show that" which let them past the printed-matter gate, because it reads
-   * as an instruction to work on the page. With the stem their own they are
-   * figure-blocked like the rest of Question 3: back on the open list for
-   * whoever binds its crops, rather than in front of a student. */
-  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 131, '65e6ca6fd676beb9337e0136dc30462e3ddcbc9ea93196ecbe3e15c2ada72898'],
-  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 147, '8e76ae0bc020675fc5538ce3aae13f4f97697f90d9c0d478b2e51f565c01c704'],
+   * regeneration cannot silently omit or replace any of its cards. */
+  /* 2026-09-11: Applied Maths gets the figure cropper it never had. Until
+   * today the subject had ZERO figures bound while its sibling Maths had
+   * 1,834, and that single absence was what 111 of its open asks were waiting
+   * on. 275 cards -> 388, coverage 286/498 -> 401/498.
+   *
+   * Three cards are gone. am-2021-hl-2 cited a whole question while holding
+   * half of it and is re-cited as am-2021-hl-2-a-i/-a-ii, with an alias
+   * carrying progress. am-2023-hl-3-iv and -3-v had a "Show that" imported
+   * into their stems by a page-furniture fault, which is what let them past
+   * the printed-matter gate; with their own stems they are figure-blocked
+   * like the rest of Question 3, and they go back to the open list. */
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 175, '0eb618ccbbc6c6b312acbbe23e5f6e15906dc8e6395657ff8ce3fd0837026714'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 208, '5457fa7f47995a3c74f439a7033728404ef1a719bb30cd4b404954c96174da33'],
   /* Spanish is the second modern language carded, and the first subject whose
    * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
    * article is a two-page loose sheet with its own SEC file id, and those 80
@@ -682,14 +689,6 @@ const decks = [
   ['slovakian:higher', SLOVAKIAN_HIGHER, 140, 'e8baef98d00f5b37334847c1720b92b70fc65117eee42ead02625a180f996ebd'],
   ['slovenian:higher', SLOVENIAN_HIGHER, 23, '5a91c38d5a570c77dcec2866a705c302bc67a7b0d33bcdeea95cd249beb149f0'],
   ['swedish:higher', SWEDISH_HIGHER, 121, 'ff499eff76dc0efe1a00cf9f20f85a3f2f508c9afd5de4ec01f2f1f8da966b56'],
-  /* 2026-09-11: Maltese, first carded. 41 cards against the 76 leaf asks its
-   * six sittings print — 18 excluded with span-level evidence (the commentary
-   * and the composition are written production, and 2019's scheme is set in a
-   * subset font whose ToUnicode map is broken), 17 still open. The subject was
-   * withdrawn from the thirty-four-subject wave because its reader lost three
-   * asks in the merged tree; the cause was the SEC lettering Question 1's
-   * third expression "ċ)" up to 2022 and "c)" from 2023. */
-  ['maltese:higher', MALTESE_HIGHER, 41, 'ccb04d315019995c188a89a55151a3e441bd393c0705cc410ee69e23291c316b'],
   ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
   /* 2026-09-11: Design & Communication Graphics, first carded. 545 cards
    * against the 478 leaf asks its 2019-2026 papers print -- 478/478 covered,
@@ -734,12 +733,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    // 19,152 before Applied Maths was re-measured, plus its three net new
-    // cards (278 against 275): six added, one re-cited into two, and two
-    // withdrawn because their stems carried a neighbouring part's wording.
-    // am-2021-hl-2 was re-cited, not removed, and the alias below keeps its
-    // progress; the two withdrawals have no replacement and are open again.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_155);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_303);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -752,7 +746,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(35);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(52);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -793,12 +787,11 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('slovakian:')
         && !name.startsWith('slovenian:')
         && !name.startsWith('swedish:')
-        && !name.startsWith('maltese:')
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_728);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_745);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

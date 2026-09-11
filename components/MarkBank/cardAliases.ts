@@ -3,21 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Stable progress aliases for cards consolidated after the paper-level audit.
- * Most rows come from scripts/markbank/card-corrections.json; the rest are
- * re-citations, where an author stopped emitting an id because the citation on
- * it was wrong. Those cannot live in the corrections file, which refuses an
- * entry for a card its generator no longer emits. Either way old review memory
- * is read by the surviving canonical card and is never silently discarded.
+ * Generated from scripts/markbank/card-corrections.json; old review memory is
+ * read by the surviving canonical card and is never silently discarded.
  */
 export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
-  // Re-citation. "am-2021-hl-2" cited the whole of 2021 Higher Question 2
-  // while holding only its (a)(i) and (a)(ii) — Q2(b), the other 25 marks, was
-  // already a separate card. It cited the question that way because the SCHEME
-  // heads those two romans "(i)" and "(ii)" with no part letter, so the author
-  // could not match them to the paper's Q2(a) and fell back to carding the
-  // question whole. They are now am-2021-hl-2-a-i and am-2021-hl-2-a-ii;
-  // progress follows the first of them.
-  "am-2021-hl-2": "am-2021-hl-2-a-i",
   "chem-2023-ol-q10-a-iii-iv-fig": "chem-2023-ol-q10-a-iii-iv",
   "chem-2023-ol-q6-b-i-iv": "chem-2023-ol-q6-b",
   "english-2022-ol-p1-t2-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
@@ -63,4 +52,22 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "eng-2025-hl-q6-b": "eng-2025-hl-q6-b-i",
   "eng-2025-hl-q8-b": "eng-2025-hl-q8-b-i",
   "eng-2025-hl-q9-b": "eng-2025-hl-q9-b-i",
+  /* 2026-09-11. "am-2021-hl-2" cited the whole of 2021 Higher Question 2
+   * while holding only half of it -- Q2(b) was already a card of its own --
+   * so the two asks it really covers are now am-2021-hl-2-a-i and
+   * am-2021-hl-2-a-ii. Progress goes to the first. */
+  "am-2021-hl-2": "am-2021-hl-2-a-i",
+  /* 2026-09-11. Seven cards CITED a sub-part while carrying the whole
+   * lettered part's marking points and its running total -- 2021 Higher
+   * Q8(b)(iii) is a five-mark ask and the card claimed 30, with the paper's
+   * printed asks for (i) and (ii) sitting inside the first marking point as
+   * though they were the answer. The scheme reader keys a part it failed to
+   * split to the LAST sub-part it saw, and that key is a real census leaf, so
+   * nothing caught it. Each is now the PART it always was, cited honestly. */
+  "am-2021-hl-3-a-ii": "am-2021-hl-3-a",
+  "am-2021-hl-6-a-ii": "am-2021-hl-6-a",
+  "am-2021-hl-8-b-iii": "am-2021-hl-8-b",
+  "am-2021-ol-2-b-ii": "am-2021-ol-2-b",
+  "am-2022-hl-6-a-iii": "am-2022-hl-6-a",
+  "am-2022-ol-2-vii": "am-2022-ol-2",
 };
