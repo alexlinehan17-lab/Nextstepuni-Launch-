@@ -252,6 +252,14 @@ EXAMINER_NOTE = re.compile(
     r'|if the\b|total\b|where the candidate|must be\b|answers? must\b'
     r'|this (?:is|must)\b|only\b|one mark\b|marks for\b|or$'
     r'|support your answer|you may not|you are not)', re.I)
+# The same instruction found PART WAY ALONG a line, which is where the SEC
+# usually puts it: "Economic benefits only. Do not accept social, mental or
+# physical", "Answer used must be social benefits". A note is a note wherever
+# it starts.
+MID_NOTE = re.compile(
+    r'\bdo not accept\b|\bmust (?:be|refer|relate|mention|include|focus)\b'
+    r'|\bnot permitted\b|\bmay not (?:be )?use\b|\bonly accept\b'
+    r'|\bnot accept(?:able)?\b', re.I)
 # The SEC's own lead-in to a list of answers, printed on a line of its own.
 LEAD_IN = re.compile(
     r'^(?:e\.?\s?g\.?|eg\.?|for example|accept(?:able)?(?: any of the following)?'

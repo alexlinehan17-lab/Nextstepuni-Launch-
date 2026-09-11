@@ -904,25 +904,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC225GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2023-ol-q13di", topicId: "physical-education-0-12", conceptId: "pe-0-12-identifying-main-energy-system",
-    section: "B", questionRef: "2023 OL Q13(d)(i)",
-    questionText: "identifying the main energy system and Main Energy System",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Event Energy Related Component of System Fitness", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Ellen 100m anaerobic 2 Power/coordination/reaction", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Keane Breaststroke time", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Serena Tennis serve ATP-PC / 2 Speed/power/reaction time", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Williams anaerobic", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "Grace 70-minute aerobic 2 Agility/coordination/reaction", marks: null, openList: true },
-    { id: "r-7", kind: "point", verbatim: "O’Brien camogie time/speed match", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Ordinary Level — © State Examinations Commission.",
     id: "pe-2023-ol-q14ai", topicId: "physical-education-0-0", conceptId: "pe-0-0-could-used-improve-performance",
     section: "C", questionRef: "2023 OL Q14(a)(i)",
     questionText: "Describe an activity that could be used to improve performance in a named skill from a physical activity of your choice. You may use a diagram.",
@@ -942,20 +923,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Omits reasons for using that practice method", marks: null, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2023 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2023-ol-q15aii", topicId: "physical-education-1-1", conceptId: "pe-1-1-economic-benefits-participation",
-    section: "C", questionRef: "2023 OL Q15(a)(ii)",
-    questionText: "Discuss two economic benefits of physical activity participation.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 1,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Economic benefits only. Do not accept social", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "mental or physical", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1203,29 +1170,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Two principles of ethical practice description", marks: 8, contextNote: "2 answers at 4 marks each, as the scheme prices it.", openList: true, group: {"claimMax":2,"perOption":4,"options":["integrity","respect","fairness and equity"]} },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2024 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2024-ol-q17bi", topicId: "physical-education-0-2", conceptId: "pe-0-2-label-load-effort-fulcrum",
-    section: "C", questionRef: "2024 OL Q17(b)(i)",
-    questionText: "Label the load, effort and fulcrum on the diagram below.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Load ( )", marks: null, openList: true },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                28
-          ],
-          "attribution": "SEC Physical Education 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1522,19 +1466,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Two months — Mesocycle", marks: 1, openList: true },
     { id: "r-2", kind: "point", verbatim: "A full year — Macrocycle", marks: 1, openList: true },
     { id: "r-3", kind: "point", verbatim: "Two weeks — Microcycle", marks: 1, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2026, level: "ordinary",
-    paperFileid: "LC225GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physical Education 2026 Ordinary Level — © State Examinations Commission.",
-    id: "pe-2026-ol-q13a", topicId: "physical-education-1-8", conceptId: "pe-1-8-kamila-valieva-tested-positive",
-    section: "B", questionRef: "2026 OL Q13(a)",
-    questionText: "Kamila Valieva tested positive for trimetazidine. Name two other Performance Enhancing Drugs (PEDs) and state how they affect performance. PED How it affects performance",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "May not use trimetazidine", marks: null, openList: true },
     ],
   } as SecCard,
   {

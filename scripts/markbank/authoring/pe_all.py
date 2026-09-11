@@ -44,9 +44,9 @@ one of those is reported OPEN and none is laundered into an exclusion.
 WHERE THIS STANDS, measured against the census's 741 leaf asks over thirteen
 papers:
 
-    235  covered by 231 cards
-    472  excluded, each carrying the scheme's own printed lines
-     34  OPEN, in the buckets `--report` prints, every one of them an ask
+    230  covered by 226 cards
+    475  excluded, each carrying the scheme's own printed lines
+     36  OPEN, in the buckets `--report` prints, every one of them an ask
          whose SCHEME states an answer this reader cannot lift:
 
        8  the answer is in a printed table's other column and the flat text
@@ -66,15 +66,17 @@ papers:
        3  no scheme part prices the ask at all.
        3  the ask points at a figure, table or case study whose answer is not
           on the paper page this reader found for it.
-       1  the paper prints no ask text under the key (2022 OL Q18(a)(i), a
-          figure caption the walker kept).
-       1  the scheme's line holds its answer welded onto the criterion and
-          cut in half by the wrap (2024 OL Q13(b)(i)).
+       2  the paper prints no ask text under the key — a figure caption the
+          walker kept (2022 OL Q18(a)(i)) and a table heading cut in half
+          (2023 OL Q13(d)(i)).
+       2  the scheme's line holds its answer welded onto the criterion, or
+          inside a box the converter emptied (2024 OL Q17(b)(i): "Effort
+          (2 marks)" answers "label the diagram" only on the diagram).
 
-    NONE of those thirty-four is excluded. An exclusion here claims the
-    scheme prints nothing a student could have written, and for an ask whose
-    answer is in a cell this reader could not read, that claim is exactly the
-    thing it does not know.
+    NONE of those thirty-six is excluded. An exclusion here claims the scheme
+    prints nothing a student could have written, and for an ask whose answer
+    is in a cell this reader could not read, that claim is exactly the thing
+    it does not know.
 
 """
 import argparse
@@ -324,7 +326,11 @@ def options_for(part, year, level, qtext):
         # line past its end ends on exactly such a row.
         if (S.CLOSES_LIST.match(text) or S.BAND_OPENER.match(text)
                 or S.EXAMINER_NOTE.match(text) or S.TABLE_HEAD.match(text)
-                or LEADING_TARIFF.match(text)):
+                or S.MID_NOTE.search(text) or LEADING_TARIFF.match(text)
+                # "Load ( )" is a labelling box the converter emptied, not an
+                # answer: whatever was inside it was a tick or a line drawn on
+                # the printed diagram.
+                or re.fullmatch(r'\S{1,14}\s*\(\s*\)', text)):
             criteria.append(text)
             continue
         if TARIFF_RESIDUE.search(text) or len(text) > MAX_OPTION_CHARS:
@@ -617,7 +623,11 @@ def build():
             # The build's own floor, mirrored here so the ask lands in a named
             # bucket instead of being dropped after the deck is written:
             # "Figure 16 400m" is a caption the walker kept, not a question.
-            if len(qtext) < 16 and not ASK_OPENER.match(qtext):
+            # Every printed ask opens with a capital. One that does not is a
+            # line the walker cut in half — "identifying the main energy
+            # system and Main Energy System" is the tail of a table heading.
+            if (len(qtext) < 16 and not ASK_OPENER.match(qtext)) \
+                    or (qtext[:1].isalpha() and qtext[:1].islower()):
                 refuse('the paper prints no ask text under this key', qtext[:60])
                 continue
             groups = sorted(set(part.tariffs))

@@ -4011,35 +4011,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2022-hl-q18cii",
-  "topicId": "physical-education-1-1",
-  "conceptId": "pe-1-1-social-benefits-participation-adults",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2022 HL Q18(c)(ii)",
-  "questionText": "Discuss two social benefits of physical activity participation for adults.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "used must be social benefits",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2022-hl-q3",
   "topicId": "physical-education-0-13",
   "conceptId": "pe-0-13-strategies-athlete-could-enhance",
@@ -5390,83 +5361,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2023-ol-q13di",
-  "topicId": "physical-education-0-12",
-  "conceptId": "pe-0-12-identifying-main-energy-system",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2023 OL Q13(d)(i)",
-  "questionText": "identifying the main energy system and Main Energy System",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Event Energy Related Component of System Fitness",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Ellen 100m anaerobic 2 Power/coordination/reaction",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Keane Breaststroke time",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Serena Tennis serve ATP-PC / 2 Speed/power/reaction time",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Williams anaerobic",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Grace 70-minute aerobic 2 Agility/coordination/reaction",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "O’Brien camogie time/speed match",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2023-ol-q14ai",
   "topicId": "physical-education-0-0",
   "conceptId": "pe-0-0-could-used-improve-performance",
@@ -5529,43 +5423,6 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Omits reasons for using that practice method",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2023-ol-q15aii",
-  "topicId": "physical-education-1-1",
-  "conceptId": "pe-1-1-economic-benefits-participation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2023 OL Q15(a)(ii)",
-  "questionText": "Discuss two economic benefits of physical activity participation.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 1,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Economic benefits only. Do not accept social",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "mental or physical",
     "marks": null,
     "openList": true,
     "contextNote": ""
@@ -7865,35 +7722,6 @@
   "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
  },
  {
-  "id": "pe-2024-ol-q17bi",
-  "topicId": "physical-education-0-2",
-  "conceptId": "pe-0-2-label-load-effort-fulcrum",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "physical-education",
-  "section": "C",
-  "questionRef": "2024 OL Q17(b)(i)",
-  "questionText": "Label the load, effort and fulcrum on the diagram below.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Load ( )",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
   "id": "pe-2024-ol-q17bii",
   "topicId": "physical-education-0-2",
   "conceptId": "pe-0-2-class-lever-shown-diagram",
@@ -8995,35 +8823,6 @@
     "kind": "point",
     "verbatim": "Two weeks — Microcycle",
     "marks": 1,
-    "openList": true,
-    "contextNote": ""
-   }
-  ],
-  "notes": "The list is what the SEC published and is not exhaustive — the scheme's own note says the suggestions and examples in it are not exhaustive and alternative valid answers are acceptable."
- },
- {
-  "id": "pe-2026-ol-q13a",
-  "topicId": "physical-education-1-8",
-  "conceptId": "pe-1-8-kamila-valieva-tested-positive",
-  "level": "ordinary",
-  "year": 2026,
-  "subjectId": "physical-education",
-  "section": "B",
-  "questionRef": "2026 OL Q13(a)",
-  "questionText": "Kamila Valieva tested positive for trimetazidine. Name two other Performance Enhancing Drugs (PEDs) and state how they affect performance. PED How it affects performance",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "May not use trimetazidine",
-    "marks": null,
     "openList": true,
     "contextNote": ""
    }
