@@ -178,5 +178,9 @@
  },
  "ukrainian": {
   "higher": 20
+ },
+ "dcg": {
+  "higher": 302,
+  "ordinary": 238
  }
 }

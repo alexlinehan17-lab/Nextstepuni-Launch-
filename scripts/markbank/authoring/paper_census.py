@@ -84,6 +84,34 @@ SUBJECTS = {
     # selectable Part Two A/B/C task. Its dedicated census also records the
     # historical map/aerial tasks held until their companion sources exist.
     'geography': {'mode': 'geography'},
+    # Design & Communication Graphics is sat as TWO booklets on one morning
+    # under one marking scheme: M81A carries Section A (Core short questions,
+    # A-1 to A-4, any three answered at 20 marks each) and M81BC carries
+    # Section B (Core long questions, B-1 to B-3, any two at 60) and Section C
+    # (Applied Graphics, C-1 to C-5 -- one question per OPTION, one answered,
+    # at 60). The section letter is printed INSIDE the address the SEC uses --
+    # "A-1", "C-4" -- so the section is the numbering scope and every sitting
+    # prints Questions 1..4, 1..3 and 1..5 inside it.
+    #
+    # Its own walker, for two reasons neither Business nor Technology has.
+    # Section A is set SIDEWAYS in quadrants on an A3 sheet (/Rotate 90, text
+    # at dir (0,-1)), so the generic reader interleaves its four questions;
+    # dcg_paper.rows() puts the sheet back the right way up and cuts it into
+    # the columns the markers themselves name. And the SEC's component code
+    # does not say which booklet is which -- 2011 swaps 000 and 014 -- so the
+    # booklet is identified by the markers it prints, not by its file name.
+    #
+    # The window is 2019 and later, and it is a decision, not the file
+    # listing: the corpus on disk holds 2010-2026 and every sitting of it
+    # reads, but Paper Trail labels the second booklet "Section B" in
+    # 2012-2018 and "Exam Paper" in 2010-2011 where the SEC's cover says
+    # "Sections B and C" -- so a Section C card from those years resolves to
+    # no paper at all, and roughly 270 cards would ship with no link to the
+    # document they came from. 2019 is where the SEC settled the pair of
+    # components the index names correctly, 014 "Section A" and 039 "Section
+    # B&C". It is three years wider than the bank's 2021-2025 default and it
+    # includes 2026, whose scheme is published and on disk.
+    'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2019},
     'business': {'mode': 'sections'},
     # LCVP's Link Modules paper is COMMON level — one paper, sat by everyone,
     # filed under the level token 'cl'. Three sections that each restart at
@@ -442,13 +470,24 @@ ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
 
 
 def sittings(subject):
-    """[(year, level, [component codes])] for every paper PDF on disk.
+    """[(year, level, [component codes])] for every paper PDF in the window.
 
     The corpus IS the file listing — Construction Studies holds 2016-2025
     where the others hold 2021-2025, and hard-coding a span would silently
     ignore half of its papers.
+
+    A subject may state a window anyway, with `'from'` in SUBJECTS, and then
+    the window is a DECISION rather than a side effect of what happened to be
+    fetched. DCG needs one: its corpus holds 2010-2026, and the papers before
+    2019 cannot be linked to the document they were printed in, because Paper
+    Trail labels the second booklet of those years "Section B" (2012-2018) or
+    "Exam Paper" (2010-2011) where the SEC's own cover says "Sections B and
+    C". Every Section C card of those years would ship with no paper link at
+    all. Stating the bound here keeps the census, the ledger and the deck
+    measuring the same thing; deleting the older papers would hide it.
     """
     root = PP.papers_dir(subject)
+    first = SUBJECTS.get(subject, {}).get('from')
     found = collections.defaultdict(list)
     for f in sorted(os.listdir(root)):
         # 'cl' is the common-level token: LCVP is examined at one level, and
@@ -458,7 +497,7 @@ def sittings(subject):
         # 'em' — separate papers sat by different candidates on the same
         # afternoon, and a digits-only pattern found neither of them.
         m = re.fullmatch(r'(\d{4})-(hl|ol|cl)(?:-([a-z0-9]+))?-paper\.pdf', f)
-        if m:
+        if m and (first is None or int(m.group(1)) >= first):
             found[(int(m.group(1)), m.group(2))].append(m.group(3))
     return [(y, l, comps) for (y, l), comps in sorted(found.items())]
 
@@ -2101,6 +2140,114 @@ def man_flags(P, S):
     return flags
 
 
+def census_dcg(subject, year, level):
+    """Design & Communication Graphics: both booklets of one sitting.
+
+    THE DENOMINATOR IS THE PAPER, and both booklets are read. The SEC's
+    component code is not the booklet's identity -- 2011 files Section A as
+    000 and Sections B and C as 014, the other way round from every other year
+    -- so trusting the code would have censused one sitting's Section A twice
+    and its Sections B and C never, which is the wholesale loss Law 3 exists
+    to catch.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from dcg_paper import load as load_paper                    # noqa: E402
+    from dcg_scheme import DcgScheme, has_scheme                # noqa: E402
+
+    P = load_paper(year, level, subject)
+    S = DcgScheme(year, level, subject) if has_scheme(year, level, subject) \
+        else None
+    texts = {ask.key: ask.full_text for ask in P.asks()}
+    return set(texts), texts, list(P.files), P, S
+
+
+def dcg_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently -- the paper for its asks, the
+    scheme for its prices -- so Law 3's independent check is simply to set the
+    two ask sets beside each other. The census's own continuity flags see only
+    interior gaps, and a part keyed under its NEIGHBOUR's letter leaves none.
+
+    The paper's own shape is asserted first, because this subject has one and
+    it never varies: Sections A, B and C print four, three and five questions
+    in every one of the 33 sittings on disk.
+    """
+    flags = list(P.flags)
+    import dcg_paper as DP                                      # noqa: E402
+    shape = collections.Counter(k[0] for k in P.questions)
+    for section, want in DP.SECTION_SHAPE.items():
+        if shape[section] != want:
+            flags.append({
+                'type': 'section-shape',
+                'where': f'{P.year} {P.level} Section {section}',
+                'detail': f'{shape[section]} question(s) printed, every other '
+                          f'sitting prints {want}'})
+    if S is None:
+        flags.append({'type': 'no-scheme',
+                      'where': f'{P.year} {P.level}',
+                      'detail': 'no marking scheme on disk for this sitting'})
+        return flags
+    flags += S.flags
+    # The independent marks check, and the one this subject can actually make:
+    # the PAPER states on its cover what a question of each section is worth,
+    # and the SCHEME prints a "Total =" at the foot of every question. Two
+    # documents, read by two readers, that have to agree 12 times a sitting.
+    for key in sorted(set(P.questions) & set(S.questions)):
+        want = P.section_marks.get(key[0])
+        got = S.questions[key].total
+        if want and got and want != got:
+            flags.append({
+                'type': 'question-total',
+                'where': f'{P.year} {P.level} {key[0]}-{key[1]}',
+                'detail': f'the scheme totals this question at {got} and the '
+                          f'paper\'s cover prices a Section {key[0]} question '
+                          f'at {want}'})
+    for key, fault in S.faults():
+        flags.append({'type': 'scheme-arithmetic',
+                      'where': f'{P.year} {P.level} {key[0]}-{key[1]}',
+                      'detail': fault})
+    # A question the paper prints and the scheme never prices, or the reverse.
+    paper_q = set(P.questions)
+    scheme_q = set(S.questions)
+    for key in sorted(paper_q - scheme_q):
+        flags.append({'type': 'question-not-in-scheme',
+                      'where': f'{P.year} {P.level} {key[0]}-{key[1]}',
+                      'detail': 'the paper sets this question and the scheme '
+                                'prices nothing under it'})
+    for key in sorted(scheme_q - paper_q):
+        flags.append({'type': 'question-not-in-paper',
+                      'where': f'{P.year} {P.level} {key[0]}-{key[1]}',
+                      'detail': 'the scheme prices this question and no '
+                                'booklet prints it'})
+    # And the level below: a part the paper prints that the scheme prices
+    # nothing for. Checked on WORDING, not on the scheme's own letters --
+    # Law 4: the scheme numbers independently of the paper, and 2021 Ordinary
+    # B-3 letters "End View" (b) where the paper letters it (c). Checked on
+    # letters this fired on three sittings whose scheme prices every ask,
+    # which is a flag that trains a reader to ignore flags.
+    from dcg_scheme import CUE_FLOOR, cue_score                 # noqa: E402
+    for key in sorted(paper_q & scheme_q):
+        units = S.questions[key].units
+        if not units:
+            continue
+        for letter, roman, text in P.questions[key]['parts']:
+            if roman is not None or not text:
+                continue
+            if any(u.letter == letter for u in units):
+                continue
+            if max((cue_score(u.title, text) for u in units), default=0.0) \
+                    >= CUE_FLOOR:
+                continue
+            flags.append({'type': 'part-not-in-scheme',
+                          'where': f'{P.year} {P.level} {key[0]}-{key[1]}'
+                                   f'({letter})',
+                          'detail': 'the paper letters this part and no '
+                                    'priced unit of the scheme carries its '
+                                    'address or its words'})
+    return flags
+
+
 def census_pl(subject, year, level):
     """Polish: the written booklet and, from 2022, the listening booklet.
 
@@ -2769,6 +2916,9 @@ def census_subject(subject):
                 elif cfg.get('walker') == 'lat':
                     parts, texts, files, P_, S_ = census_lat(
                         subject, year, level)
+                elif cfg.get('walker') == 'dcg':
+                    parts, texts, files, P_, S_ = census_dcg(
+                        subject, year, level)
                 elif cfg.get('walker') == 'pl':
                     parts, texts, files, P_, S_ = census_pl(
                         subject, year, level)
@@ -2866,6 +3016,24 @@ def census_subject(subject):
                 # count questions nobody sits. The checksum is the total the
                 # paper states on its own cover.
                 marks = {(None, 0): 400 if P_.era == 'sections' else 200}
+            elif cfg.get('walker') == 'dcg':
+                flags += dcg_flags(P_, S_)
+                # The 2021 and 2022 sittings are the SEC's Covid reduction and
+                # a different paper: their covers print "Sections B and C (120
+                # marks)" and merge the two into one pool of eight questions a
+                # candidate answers any two of, where every other year prints
+                # 180 and sets two of Section B's three plus one Applied
+                # Graphics option of five. Naming the era keeps the cross-year
+                # checksum comparing each paper with its OWN kind; without it
+                # all four of those sittings reported a 60-mark shortfall
+                # against a paper nobody sat.
+                label = f'{P_.cover_marks()}-mark paper'
+                # DCG is a CHOICE paper at every section -- three questions of
+                # four in Section A, two of three in Section B, one of five in
+                # Section C -- so adding up every printed tariff counts asks
+                # nobody sits. The checksum is the total the two booklets
+                # state on their own covers: 60 marks plus 180.
+                marks = {(None, 0): P_.cover_marks()}
             elif cfg.get('walker') == 'pl':
                 flags += pl_flags(P_, S_)
                 marks = {(None, 0): P_.cover_marks()}

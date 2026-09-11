@@ -28,7 +28,7 @@ AUTHORED = os.path.join(HERE, '..', 'authored')
 SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
             'arabic', 'art', 'biology', 'bulgarian', 'business', 'chemistry',
             'classical-studies', 'computer-science', 'construction-studies',
-            'croatian', 'czech', 'danish', 'dutch', 'economics',
+            'croatian', 'czech', 'danish', 'dcg', 'dutch', 'economics',
             'engineering', 'english', 'estonian', 'finnish', 'french',
             'geography', 'german', 'history', 'home-economics', 'hungarian',
             'irish', 'italian', 'japanese', 'latin', 'latvian', 'lcvp',

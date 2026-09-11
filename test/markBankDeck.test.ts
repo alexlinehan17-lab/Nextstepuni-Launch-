@@ -108,6 +108,8 @@ import { CARDS as MGREEK_HIGHER } from '../components/MarkBank/cards/modern-gree
 import { CARDS as MANDARIN_HIGHER } from '../components/MarkBank/cards/mandarin-chinese/higher';
 import { CARDS as MANDARIN_ORDINARY } from '../components/MarkBank/cards/mandarin-chinese/ordinary';
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
+import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
+import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -146,6 +148,7 @@ const SAMPLE_CARDS = [
   // Higher only: Maltese and Ukrainian are each examined at ONE level and
   // there is no Ordinary paper in any year of the corpus.
   ...UKRAINIAN_HIGHER,
+  ...DCG_HIGHER, ...DCG_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -726,6 +729,11 @@ describe('the taxonomy is the redeveloped specification', () => {
       // Maltese and Ukrainian file their cards under their own published
       // taxonomies, whose two strands are each paper's own two halves.
       ukrainian: 'ukrainian-',
+      // Design & Communication Graphics files its cards under the published
+      // DCG taxonomy itself (curriculum.ts -> curriculumRegistry.ts), as
+      // Applied Maths does — the subject id in the deck is the abbreviation
+      // the SEC prints on the paper and students use for the same subject.
+      dcg: 'design-and-communication-graphics-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

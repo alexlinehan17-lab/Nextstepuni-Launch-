@@ -70,6 +70,11 @@ const CORPUS_KEY = {
   // shipped with no link to the paper it came from — the Home Economics
   // failure above, repeated.
   'applied-maths': 'applied-mathematics',
+  // The corpus spells the subject out; the deck uses the abbreviation the SEC
+  // prints on the paper and students use. Without this every DCG card would
+  // ship with no link to the booklet it came from -- the Home Economics
+  // failure above, repeated.
+  dcg: 'design-and-communication-graphics',
 };
 
 /**

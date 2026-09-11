@@ -224,6 +224,21 @@
     },
     "refsHash": "b8748a474c6a2507"
   },
+  "dcg": {
+    "cards": 540,
+    "contentHash": "26b67a3e098a425c",
+    "coveragePct": 100.0,
+    "covered": 478,
+    "excluded": 0,
+    "leaves": 478,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 66,
+      "hash": "9c8982e337e2c8b1"
+    },
+    "refsHash": "a2fbc78d022b8927"
+  },
   "dutch": {
     "cards": 42,
     "contentHash": "e9c0193ea33db730",

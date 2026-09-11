@@ -97,6 +97,8 @@ import { CARDS as SLOVAKIAN_HIGHER } from '../components/MarkBank/cards/slovakia
 import { CARDS as SLOVENIAN_HIGHER } from '../components/MarkBank/cards/slovenian/higher';
 import { CARDS as SWEDISH_HIGHER } from '../components/MarkBank/cards/swedish/higher';
 import { CARDS as UKRAINIAN_HIGHER } from '../components/MarkBank/cards/ukrainian/higher';
+import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
+import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
@@ -661,6 +663,17 @@ const decks = [
   ['slovenian:higher', SLOVENIAN_HIGHER, 23, '5a91c38d5a570c77dcec2866a705c302bc67a7b0d33bcdeea95cd249beb149f0'],
   ['swedish:higher', SWEDISH_HIGHER, 121, 'ff499eff76dc0efe1a00cf9f20f85a3f2f508c9afd5de4ec01f2f1f8da966b56'],
   ['ukrainian:higher', UKRAINIAN_HIGHER, 20, '7d38d604f1faac1ee8726f9facc9f0ab3d303b066bf610ea8e9c7de8a8d0becd'],
+  /* 2026-09-11: Design & Communication Graphics, first carded. 540 cards
+   * against the 478 leaf asks its 2019-2026 papers print -- 478/478 covered,
+   * nothing excluded and nothing open. More cards than asks because the
+   * scheme divides one printed ask into several priced units: 2021 Ordinary
+   * B-3(b) is priced as "Interpenetration on Left Hand Side" and "... Right
+   * Hand Side", and each is a card citing the paper's own (b). A drawing
+   * subject cards because the scheme states the CRITERIA -- every card's rows
+   * are the construction steps the SEC prints, at the marks the SEC prints
+   * beside them. */
+  ['dcg:higher', DCG_HIGHER, 302, '5eb9571c8abd8d1a1d3fbe8c59931ff206f8de04d18460067c91978e18b95db1'],
+  ['dcg:ordinary', DCG_ORDINARY, 238, 'd0398830a5866de46dfbe76ed96ac0f924ee1764f6dad6728bc7260ae8e3e61a'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -680,7 +693,9 @@ describe('Mark Bank card preservation', () => {
     // French 260, Applied Maths 275, German 264, Spanish 347, Italian 350,
     // Russian 199, Japanese 600, Classical Studies 516, Latin 227,
     // Portuguese 173, Romanian 50 and Dutch 42.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_345);
+    // 18,345 before Design & Communication Graphics, plus its 540 (302 Higher
+    // and 238 Ordinary). Nothing removed.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(18_885);
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.
@@ -732,7 +747,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('slovakian:')
         && !name.startsWith('slovenian:')
         && !name.startsWith('swedish:')
-        && !name.startsWith('ukrainian:'))
+        && !name.startsWith('ukrainian:')
+        && !name.startsWith('dcg:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });

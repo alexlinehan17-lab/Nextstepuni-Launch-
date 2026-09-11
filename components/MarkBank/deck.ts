@@ -64,6 +64,8 @@ const italianCurriculum = CURRICULUM.find(subject => subject.id === 'italian');
 if (!italianCurriculum) throw new Error('Canonical Italian curriculum is missing');
 const appliedMathsCurriculum = CURRICULUM.find(subject => subject.id === 'applied-mathematics');
 if (!appliedMathsCurriculum) throw new Error('Canonical Applied Mathematics curriculum is missing');
+const dcgCurriculum = CURRICULUM.find(subject => subject.id === 'design-and-communication-graphics');
+if (!dcgCurriculum) throw new Error('Canonical Design and Communication Graphics curriculum is missing');
 const spanishCurriculum = CURRICULUM.find(subject => subject.id === 'spanish');
 if (!spanishCurriculum) throw new Error('Canonical Spanish curriculum is missing');
 const russianCurriculum = CURRICULUM.find(subject => subject.id === 'russian');
@@ -1625,6 +1627,31 @@ export const APPLIED_MATHS_STRANDS: StrandRef[] = appliedMathsCurriculum.strands
     })),
   }));
 
+/**
+ * The Design & Communication Graphics syllabus's own three strands, taken from
+ * the canonical curriculum rather than restated here, exactly as Applied
+ * Maths' are.
+ *
+ * The written examination covers two of them. Strand 1, Plane and Descriptive
+ * Geometry, is Sections A and B; strand 3, Applied Graphics, is Section C,
+ * whose five questions ARE its five optional areas — the paper prints the
+ * area's name as a banner over each one, so a Section C card's topic is
+ * lifted from the page rather than inferred. Strand 2, Communication of
+ * Design and Computer Graphics, is the student assignment and the CAD work:
+ * it ships unused, so a student sees the whole shape of the course.
+ */
+export const DCG_STRANDS: StrandRef[] = dcgCurriculum.strands.map(
+  (strand, strandIndex) => ({
+    id: strand.id,
+    label: strand.name.replace(/\s*\((Core|Optional Areas)\)\s*$/, ''),
+    title: strand.name,
+    topics: strand.subtopics.map((topic, topicIndex) => ({
+      id: topic.id,
+      code: `${strandIndex + 1}.${topicIndex + 1}`,
+      title: topic.name,
+    })),
+  }));
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -1675,6 +1702,7 @@ export const SUBJECTS = [
   { id: 'slovenian', title: 'Slovenian', strands: SLOVENIAN_STRANDS, spec: 'Leaving Certificate Slovenian, a non-curricular EU language' },
   { id: 'mandarin-chinese', title: 'Mandarin Chinese', strands: MANDARIN_CHINESE_STRANDS, spec: 'Leaving Certificate Mandarin Chinese specification, first examined 2022' },
   { id: 'ukrainian', title: 'Ukrainian', strands: UKRAINIAN_STRANDS, spec: 'Leaving Certificate Ukrainian, a non-curricular EU language, first examined 2025' },
+  { id: 'dcg', title: 'Design and Communication Graphics', strands: DCG_STRANDS, spec: 'Leaving Certificate Design and Communication Graphics syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1880,6 +1908,10 @@ const HAND_BUILT: SecCard[] = [
  * resolve or drags every deck into one chunk, which is the thing this avoids.
  */
 const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard[] }>>>> = {
+  dcg: {
+    higher: () => import('./cards/dcg/higher'),
+    ordinary: () => import('./cards/dcg/ordinary'),
+  },
   biology: {
     higher: () => import('./cards/biology/higher'),
     ordinary: () => import('./cards/biology/ordinary'),

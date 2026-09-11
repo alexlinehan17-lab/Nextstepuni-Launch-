@@ -57,6 +57,18 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/technology',
     blocked: new Set(),
   },
+  dcg: {
+    title: 'Design and Communication Graphics',
+    /* The syllabus these papers were sat under, first examined in 2009 and
+     * still current -- its redevelopment is scheduled for first examination
+     * in 2029. Cards tag against two of its three strands, which are what the
+     * written examination covers; the third is the student assignment and the
+     * CAD work. See DCG_STRANDS in components/MarkBank/deck.ts. */
+    specVersion: 'lc-design-and-communication-graphics-syllabus',
+    specNote: 'Cards are tagged to the headings of the Leaving Certificate Design and Communication\n * Graphics syllabus. The written examination is 60% of the subject and sits in two booklets:\n * Section A (four core short questions, any three answered) in one, and Sections B and C\n * (three core long questions, any two; five Applied Graphics options, one) in the other.',
+    figureDir: 'public/exam-figures/dcg',
+    blocked: new Set(),
+  },
   'computer-science': {
     title: 'Computer Science',
     /* The specification first examined in 2020 -- the one these papers were
@@ -1246,7 +1258,19 @@ for (const c of cards) {
   if (dupeRow) { dropped.push(`${c.id}: row id "${dupeRow}" appears twice`); continue; }
 
   // A question naming lettered parts is unanswerable without the figure.
-  const invitesDrawing = /you may include a labelled/i.test(c.questionText);
+  /* The exemption is cardlint.py's INVITES_DRAWING, which this had drifted
+   * from. cardlint calls its own NAMES_LETTERS "mirrored from build-deck.mjs's
+   * namesLetters gate" while carrying the WIDER exemption — a question that
+   * asks the student to draw is not asking what a letter means, it is telling
+   * them where to put their pencil: "Draw a sectional elevation on A-A,
+   * showing the parts fully assembled with the portion of the handle labelled
+   * X in a vertical position." Two copies of one rule drift and the drift is
+   * invisible, which is why schemeText.mjs, contentFree.mjs and paperIndex.mjs
+   * exist; these two are now the same rule. Measured before converging them:
+   * across every authored deck in the repo exactly TWO cards change verdict,
+   * both DCG assembly questions whose printed drawing is bound on the question
+   * side. */
+  const invitesDrawing = /\b(?:draw|sketch|label the diagram)\b/i.test(c.questionText);
   // CASE-SENSITIVE on the letter. The SEC indexes a diagram with CAPITALS --
   // "structure A", "the part labelled B" -- and those need a key decoding what
   // each points at. A lower-case letter is the thing's own name, not an index:
