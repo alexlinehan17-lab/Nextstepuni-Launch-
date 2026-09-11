@@ -811,13 +811,16 @@ def main():
         with open(EXCLUSIONS, 'w', encoding='utf-8') as fh:
             json.dump(excluded, fh, ensure_ascii=False, indent=1)
         # The bindings file is SHARED with eight other subjects, so only this
-        # subject's key is replaced and the file is rewritten in the order it
-        # was already in.
+        # subject's key is replaced — and at the TWO-SPACE indent the file is
+        # already written in. Writing it at indent=1 reformatted all 4,120
+        # lines of it and buried the one subject that had actually changed,
+        # which is the same mistake reconcile.py's baseline writer records.
         book = json.load(open(BINDINGS, encoding='utf-8'))
         book['physical-education'] = bindings
         with open(BINDINGS, 'w', encoding='utf-8') as fh:
             json.dump({k: book[k] for k in sorted(book)}, fh,
-                      ensure_ascii=False, indent=1)
+                      ensure_ascii=False, indent=2)
+            fh.write('\n')
         print(f'wrote {len(cards)} card(s), {len(excluded)} exclusion(s) and '
               f'{len(bindings)} source binding(s)')
     else:
