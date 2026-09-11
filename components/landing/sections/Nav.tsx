@@ -5,7 +5,7 @@
  * Top bar. Starguy sits left of the wordmark, the way HappyStack seats its
  * mascot. Links are plain text; the active section gets an ink underline.
  * One orange CTA, present at every width so the sticky bar always carries the
- * conversion action. Below 1024px — where four links, sign-in and the CTA no
+ * conversion action. Below 1280px — where five links, sign-in and the CTA no
  * longer fit on one line — the links fold into a text "Menu" toggle.
  *
  * The bar has two states. At rest it is open type on the white canvas; once
@@ -36,13 +36,14 @@ import { APP_SIGNIN_URL, APP_URL, FONT, L } from '../theme';
  */
 const RESTING_HEIGHT = 84;
 
-const Nav: React.FC = () => {
+const Nav: React.FC<{ page?: 'landing' | 'certle' }> = ({ page = 'landing' }) => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<string>('');
   const [condensed, setCondensed] = useState(false);
 
   useEffect(() => {
-    const ids = COPY.nav.links.map(l => l.href.replace('#', ''));
+    if (page === 'certle') return;
+    const ids = COPY.nav.links.filter(l => l.href.startsWith('#')).map(l => l.href.slice(1));
     const els = ids.map(id => document.getElementById(id)).filter((e): e is HTMLElement => Boolean(e));
     if (els.length === 0) return;
     const io = new IntersectionObserver(entries => {
@@ -51,7 +52,7 @@ const Nav: React.FC = () => {
     }, { rootMargin: '-35% 0px -55% 0px', threshold: [0, 0.2, 0.5] });
     els.forEach(el => io.observe(el));
     return () => io.disconnect();
-  }, []);
+  }, [page]);
 
   // Condense once the hero headline is wholly above the resting bar; relax
   // when it comes back. The resting height is the margin on both legs, so the
@@ -72,15 +73,17 @@ const Nav: React.FC = () => {
   }, []);
 
   const link = (l: { label: string; href: string }, big = false) => {
-    const on = active === l.href;
+    const on = page === 'certle' ? l.href === '/certle' : active === l.href;
     return (
       <a
         key={l.href}
-        href={l.href}
+        href={page === 'certle' && l.href.startsWith('#') ? `/landing${l.href}` : l.href}
+        className={`landing-nav-link${big ? ' landing-nav-link--mobile' : ''}${l.href === '/certle' ? ' landing-nav-link--certle' : ''}`}
+        aria-label={l.label}
         onClick={() => setOpen(false)}
         aria-current={on ? 'true' : undefined}
         style={{
-          fontFamily: FONT.sans, fontWeight: on ? 700 : 500, fontSize: big ? 22 : 15, color: L.ink, textDecoration: 'none',
+          fontFamily: FONT.sans, fontWeight: 500, fontSize: big ? 22 : 15, color: L.ink, textDecoration: 'none',
           padding: big ? '14px 0' : '6px 2px', borderBottom: big ? `1px solid ${L.hairline}` : `2px solid ${on ? L.ink : 'transparent'}`,
           display: big ? 'block' : 'inline-block', whiteSpace: 'nowrap', transition: 'border-color 120ms ease',
         }}
@@ -93,7 +96,7 @@ const Nav: React.FC = () => {
   return (
     <header className="landing-nav" data-condensed={condensed ? 'true' : 'false'}>
       <Container className="landing-nav-row flex items-center justify-between gap-3">
-        <a href="#top" aria-label={`${COPY.brand.name} home`} className="flex items-center gap-2 md:gap-2.5 shrink-0" style={{ textDecoration: 'none' }}>
+        <a href={page === 'certle' ? '/landing' : '#top'} aria-label={`${COPY.brand.name} home`} className="flex items-center gap-2 md:gap-2.5 shrink-0" style={{ textDecoration: 'none' }}>
           {/* Two sizes, one per breakpoint, so the row still fits at 340px without a resize listener. */}
           <Starguy size={30} className="md:hidden landing-nav-guy" />
           <Starguy size={34} className="hidden md:block landing-nav-guy" />
@@ -101,17 +104,17 @@ const Nav: React.FC = () => {
           <Wordmark className="landing-nav-mark" />
         </a>
 
-        <nav aria-label="Primary" className="hidden lg:flex items-center gap-7">
+        <nav aria-label="Primary" className="hidden xl:flex items-center gap-7">
           {COPY.nav.links.map(l => link(l))}
         </nav>
 
         <div className="flex items-center gap-3 shrink-0">
-          <a href={APP_SIGNIN_URL} className="hidden lg:inline-block" style={{ fontFamily: FONT.sans, fontWeight: 600, fontSize: 15, color: L.ink, textDecoration: 'none', padding: '6px 2px' }}>{COPY.nav.signIn}</a>
-          <span className="hidden lg:inline-block"><Button href={APP_URL} size="md">{COPY.nav.cta}</Button></span>
-          <span className="lg:hidden inline-block"><Button href={APP_URL} size="sm" ariaLabel={COPY.nav.cta}>{COPY.nav.ctaShort}</Button></span>
+          <a href={APP_SIGNIN_URL} className="hidden xl:inline-block" style={{ fontFamily: FONT.sans, fontWeight: 600, fontSize: 15, color: L.ink, textDecoration: 'none', padding: '6px 2px' }}>{COPY.nav.signIn}</a>
+          <span className="hidden xl:inline-block"><Button href={APP_URL} size="md">{COPY.nav.cta}</Button></span>
+          <span className="xl:hidden inline-block"><Button href={APP_URL} size="sm" ariaLabel={COPY.nav.cta}>{COPY.nav.ctaShort}</Button></span>
           <button
             type="button"
-            className="lg:hidden"
+            className="xl:hidden"
             aria-expanded={open}
             aria-controls="landing-mobile-menu"
             onClick={() => setOpen(o => !o)}
@@ -123,7 +126,7 @@ const Nav: React.FC = () => {
       </Container>
 
       {open && (
-        <div id="landing-mobile-menu" className="lg:hidden" style={{ borderTop: `1px solid ${L.hairline}`, background: L.paper }}>
+        <div id="landing-mobile-menu" className="xl:hidden" style={{ borderTop: `1px solid ${L.hairline}`, background: L.paper }}>
           <Container style={{ paddingTop: 6, paddingBottom: 18 }}>
             {COPY.nav.links.map(l => link(l, true))}
             <a href={APP_SIGNIN_URL} style={{ display: 'block', fontFamily: FONT.sans, fontWeight: 600, fontSize: 22, color: L.ink, textDecoration: 'none', padding: '14px 0' }}>{COPY.nav.signIn}</a>
@@ -131,10 +134,12 @@ const Nav: React.FC = () => {
           </Container>
         </div>
       )}
-      <span className="fx-nav-line" aria-hidden="true" />
-      <svg className="fx-nav-dip" viewBox="0 0 48 8" aria-hidden="true" focusable="false">
-        <path d="M0 0.5 C 13 0.5 16 6.5 24 6.5 S 35 0.5 48 0.5" fill="none" stroke="rgba(26, 26, 26, 0.14)" strokeWidth="1" />
-      </svg>
+      {page === 'landing' && <>
+        <span className="fx-nav-line" aria-hidden="true" />
+        <svg className="fx-nav-dip" viewBox="0 0 48 8" aria-hidden="true" focusable="false">
+          <path d="M0 0.5 C 13 0.5 16 6.5 24 6.5 S 35 0.5 48 0.5" fill="none" stroke="rgba(26, 26, 26, 0.14)" strokeWidth="1" />
+        </svg>
+      </>}
     </header>
   );
 };

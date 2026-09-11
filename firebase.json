@@ -26,6 +26,10 @@
     ],
     "rewrites": [
       {
+        "source": "/certle{,/**}",
+        "destination": "/certle.html"
+      },
+      {
         "source": "/landing",
         "destination": "/landing-dev.html"
       },

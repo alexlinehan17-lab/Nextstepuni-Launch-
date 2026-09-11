@@ -10,12 +10,10 @@
 import React, { useEffect } from 'react';
 import Nav from './sections/Nav';
 import Hero from './sections/Hero';
-import Certle from './sections/Certle';
 import Numbers from './sections/Numbers';
 import Chapters from './sections/Chapters';
 import Examiner from './sections/Examiner';
 import Guesswork from './sections/Guesswork';
-import TodaysQuestion from './sections/TodaysQuestion';
 import AskThePapers from './sections/AskThePapers';
 import HowItWorks from './sections/HowItWorks';
 import Subjects from './sections/Subjects';
@@ -26,19 +24,20 @@ import { setupSmoothScroll } from './scroll';
 import { StarguyProvider } from './starguy/Traveller';
 
 const LandingPage: React.FC = () => {
-  useEffect(() => setupSmoothScroll(), []);
+  useEffect(() => {
+    if (['#today', '#certle'].includes(window.location.hash)) { window.location.replace('/certle'); return; }
+    return setupSmoothScroll();
+  }, []);
   return (
   <StarguyProvider>
   <div className="landing-page">
     <Nav />
     <main>
       <Hero />
-      <Certle />
       <Numbers />
       <Chapters />
       <Examiner />
       <Guesswork />
-      <TodaysQuestion />
       <AskThePapers />
       <HowItWorks />
       <Subjects />

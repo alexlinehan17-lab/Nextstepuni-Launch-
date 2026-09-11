@@ -115,6 +115,7 @@ function landingRoute(): Plugin {
   const rewrite = (req: IncomingMessage, _res: ServerResponse, next: () => void) => {
     const [pathname, query] = (req.url || '').split('?');
     if (pathname === '/landing') req.url = '/landing-dev.html' + (query ? `?${query}` : '');
+    if (pathname === '/certle' || pathname === '/certle/') req.url = '/certle.html' + (query ? `?${query}` : '');
     next();
   };
   return {
@@ -233,7 +234,7 @@ export default defineConfig(() => {
             // Privacy Policy URL Apple/users hit must resolve to the notice itself.
             // The landing page is its own document: a returning visitor's service
             // worker must not answer /landing with the cached app shell.
-            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/, /\/landing(-dev\.html)?$/],
+            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/, /\/landing(-dev\.html)?$/, /\/certle(?:\.html|\/)?$/],
             runtimeCaching: [
               // Paper Trail answer sidecars — small per-paper coordinate JSON on
               // Firebase Storage. SWR: serve cache instantly, refetch in the
@@ -331,6 +332,7 @@ export default defineConfig(() => {
           input: {
             main: path.resolve(__dirname, 'index.html'),
             landing: path.resolve(__dirname, 'landing-dev.html'),
+            certle: path.resolve(__dirname, 'certle.html'),
           },
           output: {
             // Function form (not the object/array form) so EVERY module id is

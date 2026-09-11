@@ -37,6 +37,7 @@ export const COPY = {
       { label: 'How it works', href: '#how' },
       { label: 'Subjects', href: '#subjects' },
       { label: 'Schools', href: '#schools' },
+      { label: 'CERTLE', href: '/certle' },
     ],
     signIn: 'Sign in',
     cta: 'Open the app',
