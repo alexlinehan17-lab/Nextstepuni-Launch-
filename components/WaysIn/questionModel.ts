@@ -1124,8 +1124,13 @@ export function findPrintedList(text: string): string[] {
   // grazing (2) Reseeding" -- carries its own, and splitting that on commas
   // instead would cut inside an item's bracketed gloss.
   const numbered = tail.split(/\s*\(\d\)\s*/).map(x => x.trim()).filter(Boolean);
+  // A list may close with "and" instead of a separator — "using the following
+  // headings: style, composition and use of surface" is three headings, and
+  // splitting on punctuation alone made the last two into one. Only the FINAL
+  // "and", and only where what follows it is short enough to be an item, so
+  // that an "and" inside an item's own wording is left alone.
   const parts = (numbered.length > 1 ? numbered : tail
-    .split(/;|,(?![^()]*\))/))
+    .split(/;|,(?![^()]*\))|\s+and\s+(?=[A-Za-z][^,;]{0,40}$)/))
     .map(part => part.replace(/^[\s.\u2022-]+|[\s.]+$/g, '').trim())
     .filter(Boolean);
   if (parts.length < 2 || parts.length > 8) return [];

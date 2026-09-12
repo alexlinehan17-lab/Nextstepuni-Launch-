@@ -325,7 +325,10 @@ export function auditCard(subject: string, level: string, card: any): Defect[] {
   // — the card covers the one option — and "the following data ... Trial 1: 62,
   // Trial 2: 59" is data, not a set of jobs. One row is right for both, so
   // neither is a flattened list.
-  const choiceOfOne = /\b(?:choose|select|answer)\s+(?:any\s+)?one\b/i.test(q);
+  // "Explain the role of ONE of the following EU institutions: ..." is a choice
+  // already made — the card covers the one institution — so one row is right.
+  const choiceOfOne = /\b(?:choose|select|answer)\s+(?:any\s+)?one\b/i.test(q)
+    || /\b(?:any\s+)?one\s+of\s+the\s+following\b/i.test(q);
   const dataList = /following\s+data\b/i.test(q);
   const colon = (choiceOfOne || dataList) ? -1 : q.search(/\bfollowing\b[^:]{0,80}:/i);
   const afterColon = colon >= 0 ? q.slice(q.indexOf(':', colon) + 1).trim() : '';
