@@ -3,6 +3,7 @@ import type { IncomingMessage, ServerResponse } from 'http';
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import { standaloneDocumentRoutes } from './utils/pwaNavigation';
 import {
   PRIVACY_NOTICE,
   TERMS_OF_USE,
@@ -234,7 +235,7 @@ export default defineConfig(() => {
             // Privacy Policy URL Apple/users hit must resolve to the notice itself.
             // The landing page is its own document: a returning visitor's service
             // worker must not answer /landing with the cached app shell.
-            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/, /\/landing(-dev\.html)?$/, /\/certle(?:\.html|\/)?$/, /\/landing-demo\.html$/],
+            navigateFallbackDenylist: standaloneDocumentRoutes,
             runtimeCaching: [
               // Paper Trail answer sidecars — small per-paper coordinate JSON on
               // Firebase Storage. SWR: serve cache instantly, refetch in the

@@ -65,7 +65,7 @@ export const GuessworkWord: React.FC<{ word: string; onTouch?: () => void; onRea
       <span ref={text} className="fxi-guess-text">{word}</span>
       <span ref={probe} aria-hidden="true" style={{ display: 'inline-block', width: 0, height: 0 }} />
       <canvas ref={canvas} aria-hidden="true" hidden={!on} />
-      {/* A span, not a div: the line is a <p>. */}
+      {/* Keep the heading's inline text layout while giving the word a hit area. */}
       <span ref={hit} className="fxi-guess-hit" aria-hidden="true" />
     </span>
   );

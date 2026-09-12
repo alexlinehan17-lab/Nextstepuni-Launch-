@@ -3,14 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import ToolMasthead from './launchpad/ToolMasthead';
+import LaunchpadSelect from './launchpad/LaunchpadSelect';
 import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import {
-  TrendingUp, Plus, Trash2,
-  ArrowRight, Star, Calendar, Award,
-  Shield, Target, Pencil,
-} from 'lucide-react';
+import { TrendingUp, Plus, Trash2, ArrowRight, Star, Calendar, Shield, Target, Pencil } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade, type Level,
   LC_SUBJECTS, getPointsForGrade, getGradesForLevel,
@@ -41,6 +39,9 @@ interface PointsPassportProps {
   profile: StudentSubjectProfile;
   onOpenSettings?: () => void;
   initialTab?: PassportTab;
+  /** Landing preview: use My subjects for the overview and keep the simulator focused on What If. */
+  lockSimulatorOverview?: boolean;
+  onProfileChange?: (profile: StudentSubjectProfile) => void;
 }
 
 type PassportTab = 'overview' | 'mocks' | 'planner' | 'scenarios' | 'bargains';
@@ -60,24 +61,10 @@ interface MockResult {
 const MOCK_PRESETS = ['Christmas Mocks', 'February Mocks', 'Pre-LC Mocks', 'Practice Exam'];
 
 // Typical improvement ranges (anonymised, based on general LC patterns)
-const TRAJECTORY_DATA = [
-  { range: '200-250', typical: '30-60', message: 'Students in this range often gain 30-60 points by focusing on their 3 weakest topics per subject.' },
-  { range: '250-300', typical: '30-55', message: 'At this level, targeted practice on exam technique typically yields 30-55 extra points.' },
-  { range: '300-350', typical: '25-50', message: 'From here, most gains come from moving 2-3 subjects up one grade each — very achievable with focus.' },
-  { range: '350-400', typical: '20-45', message: 'Students here often underestimate their potential. Strategic subject focus can unlock 20-45 more points.' },
-  { range: '400-450', typical: '15-35', message: 'You\'re in strong territory. Fine-tuning exam timing and tackling stretch topics can add 15-35 points.' },
-  { range: '450-500', typical: '10-25', message: 'At this level, the biggest gains come from eliminating careless errors and perfecting high-mark questions.' },
-  { range: '500+', typical: '5-20', message: 'Elite range. Marginal gains come from perfecting your strongest subjects and nailing time management.' },
-];
+
 
 // Motivational micro-stories
-const MICRO_STORIES = [
-  { from: 310, to: 402, quote: 'I focused on my 3 weakest topics in each subject. I stopped trying to study everything and just attacked the gaps.', label: 'Student, 2024' },
-  { from: 275, to: 365, quote: 'I switched from re-reading notes to doing past papers under timed conditions. That one change was everything.', label: 'Student, 2023' },
-  { from: 340, to: 421, quote: 'My teacher said points at mocks aren\'t your ceiling — they\'re your floor. I believed her and kept pushing.', label: 'Student, 2024' },
-  { from: 380, to: 478, quote: 'I found out that improving Maths from H6 to H5 was worth way more than I thought because of the bonus. That became my mission.', label: 'Student, 2023' },
-  { from: 255, to: 345, quote: 'Everyone told me I was a "300 student." I stopped listening and just focused on what I could control.', label: 'Student, 2024' },
-];
+
 
 // Scenario runway slot metadata (feature F7). computeBestSixTotal lives in
 // pointsScenarioStore so the pure math is unit-testable.
@@ -88,16 +75,6 @@ const SLOT_META: Record<ScenarioSlot, { label: string; description: string; Icon
 };
 
 // ─── Utility ─────────────────────────────────────────────────────────────────
-
-function getTrajectoryInfo(points: number) {
-  if (points >= 500) return TRAJECTORY_DATA[6];
-  if (points >= 450) return TRAJECTORY_DATA[5];
-  if (points >= 400) return TRAJECTORY_DATA[4];
-  if (points >= 350) return TRAJECTORY_DATA[3];
-  if (points >= 300) return TRAJECTORY_DATA[2];
-  if (points >= 250) return TRAJECTORY_DATA[1];
-  return TRAJECTORY_DATA[0];
-}
 
 // ─── Subject Color Map ───────────────────────────────────────────────────────
 
@@ -115,7 +92,7 @@ function getDot(name: string) { return SUBJECT_DOT[name] || 'bg-zinc-500'; }
 
 // ─── Component ───────────────────────────────────────────────────────────────
 
-const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSettings, initialTab = 'overview' }) => {
+const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSettings, onProfileChange, initialTab = 'overview', lockSimulatorOverview = false }) => {
   const { showToast } = useToast();
   const { rawProgressDoc } = useProgress();
   const isDemo = uid === DEMO_STUDENT_UID;
@@ -196,7 +173,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
     );
   }, [profile]);
 
-  const trajectoryInfo = getTrajectoryInfo(currentPoints);
+
   // Re-rank the authored effort hints using the only gain that matters to the
   // student: the change to their actual best-six total. A raw subject increase
   // can be worth zero CAO points when that subject remains outside the best six.
@@ -224,13 +201,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
   }, [bargains, profile, currentPoints]);
 
   // Pick a relevant micro-story
-  const relevantStory = useMemo(() => {
-    return MICRO_STORIES.reduce((best, story) => {
-      const dist = Math.abs(story.from - currentPoints);
-      const bestDist = Math.abs(best.from - currentPoints);
-      return dist < bestDist ? story : best;
-    }, MICRO_STORIES[0]);
-  }, [currentPoints]);
+
 
   // Mock form handlers
   const initMockForm = () => {
@@ -346,59 +317,17 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
     <>
     <div className="space-y-6">
 
-      {/* Grade Planner carries its own live totals because they react to the
-          student's unsaved what-if edits. Other sections share this snapshot. */}
-      {activeTab !== 'planner' && <>
-      {/* One compact points story on phones; three scan-friendly cards once
-          there is enough width for them to breathe. */}
-      <div className="grid grid-cols-3 rounded-xl border border-[var(--outline-soft)] bg-white p-4 dark:bg-zinc-900 sm:gap-3 sm:border-0 sm:bg-transparent sm:p-0 dark:sm:bg-transparent">
-        {/* Design system: white/cream cards only — the previous green "Target"
-            and amber "Gap" coloured surfaces are banned. Accent marks the goal;
-            current + gap are neutral facts. */}
-        <div className="min-w-0 px-2 first:pl-0 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-white sm:p-4 sm:dark:bg-zinc-900">
-          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Current</p>
-          <span className="font-apercu text-2xl font-black text-[#1a1a1a] dark:text-white sm:text-3xl">{currentPoints}</span>
-          <span className="ml-0.5 text-[10px] text-[#9A9590] dark:text-zinc-500 sm:ml-1 sm:text-sm">/625</span>
+      <ToolMasthead tool="points-passport" eyebrow="Your grades, made visible" title="Points Passport." subtitle="Your current grades, your goal and the subjects that contribute." />
+      {activeTab !== 'planner' && <div className="lp-points-hero">
+        <div><p className="lp-eyebrow">Based on your current grades</p><p className="lp-points-total">{currentPoints} <span>/ 625</span></p><p>Your best six, with the maths bonus where eligible.</p></div>
+        <div><div className="flex justify-between gap-4"><span>Your target <strong>{targetPoints}</strong></span><span>Gap <strong>{Math.max(0,targetPoints-currentPoints)} points</strong></span></div>
+          <div className="lp-points-bar"><span style={{width:`${Math.min(100,currentPoints/625*100)}%`}} /><i style={{left:`${Math.min(99,targetPoints/625*100)}%`}} aria-label={`Target ${targetPoints}`} /></div><p className="text-xs">Your target is a goal you set, not a prediction.</p>
         </div>
-        <div className="min-w-0 border-l border-[var(--outline-soft)] px-3 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-white sm:p-4 sm:dark:bg-zinc-900">
-          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Target</p>
-          <span className="font-apercu text-2xl font-black sm:text-3xl" style={{ color: COLORS.accent }}>{targetPoints}</span>
-          <span className="ml-0.5 text-[10px] text-[#9A9590] dark:text-zinc-500 sm:ml-1 sm:text-sm">/625</span>
-        </div>
-        <div className="min-w-0 border-l border-[var(--outline-soft)] pl-3 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-white sm:p-4 sm:dark:bg-zinc-900">
-          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Gap</p>
-          <span className="font-apercu text-2xl font-black text-[#1a1a1a] dark:text-white sm:text-3xl">
-            {targetPoints - currentPoints > 0 ? '+' : ''}{targetPoints - currentPoints}
-          </span>
-          <span className="ml-0.5 text-[10px] text-[#9A9590] dark:text-zinc-500 sm:ml-1 sm:text-sm">pts</span>
-        </div>
+      </div>}
+      <div className="lp-passport-nav">
+        <HorizontalTabs variant="pill" value={['overview','planner','scenarios'].includes(activeTab) ? activeTab : ''} label="Points Passport sections" onChange={next => setActiveTab(next as PassportTab)} options={[{value:'overview',label:'My subjects'},{value:'planner',label:'What if?'},{value:'scenarios',label:'Scenarios'}]} />
+        <LaunchpadSelect aria-label="More Points Passport sections" value={['mocks','bargains'].includes(activeTab) ? activeTab : ''} onChange={e => {if(e.target.value) setActiveTab(e.target.value as PassportTab);}}><option value="" disabled>More</option><option value="mocks">Mock Tracker</option><option value="bargains">Best Moves</option></LaunchpadSelect>
       </div>
-
-      {/* Editorial context — supporting evidence, not a competing callout. */}
-      <div className="border-y border-[var(--outline-soft)] py-4">
-        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">A realistic runway</p>
-        <p className="mt-1 text-sm font-semibold text-[var(--ink-primary)]">
-          Students scoring {trajectoryInfo.range} typically improve by {trajectoryInfo.typical} points.
-        </p>
-        <p className="mt-1 text-xs leading-relaxed text-[var(--ink-secondary)]">{trajectoryInfo.message}</p>
-      </div>
-      </>}
-
-      {/* Tab switcher */}
-      <HorizontalTabs
-        variant="pill"
-        value={activeTab}
-        label="Points Passport sections"
-        onChange={next => setActiveTab(next as PassportTab)}
-        options={[
-          { value: 'overview', label: 'Overview' },
-          { value: 'mocks', label: 'Mock Tracker' },
-          { value: 'planner', label: 'Grade Planner' },
-          { value: 'scenarios', label: 'Scenarios' },
-          { value: 'bargains', label: 'Best Moves' },
-        ]}
-      />
-
       {/* Tab content */}
       <AnimatePresence mode="wait">
         {activeTab === 'planner' && (
@@ -412,7 +341,9 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
               <CAOPointsSimulator
                 profile={profile}
                 uid={uid}
-                onOpenSettings={onOpenSettings ?? (() => undefined)}
+                initialTab="what-if"
+                overviewLocked={lockSimulatorOverview}
+                onOpenSettings={onOpenSettings ?? (() => setActiveTab('overview'))}
               />
             </React.Suspense>
           </MotionDiv>
@@ -426,38 +357,23 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
             exit={{ opacity: 0, y: -8 }}
             className="space-y-5"
           >
-            {/* Subject breakdown */}
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                Your Subjects
-              </p>
-              <div className="space-y-1.5">
+            <div className="lp-split">
+              <section><div className="flex justify-between gap-4 mb-4"><h2 className="lp-title">Your subject contributions</h2>{onOpenSettings && <button className="text-sm underline" onClick={onOpenSettings}>Edit subjects</button>}</div>
+                <div className="lp-contributions"><div className="lp-contribution headings"><span>Subject</span><span>Current</span><span>Target</span><span>Gain</span></div>
                 {profile.subjects.map(sub => {
                   const isMaths = LC_SUBJECTS.find(lc => lc.name === sub.subjectName)?.isMaths ?? false;
                   const currentPts = getPointsForGrade(sub.currentGrade, isMaths);
                   const targetPts = getPointsForGrade(sub.targetGrade, isMaths);
-                  const gap = targetPts - currentPts;
-                  return (
-                    <div key={sub.subjectName} className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                      <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getDot(sub.subjectName)}`} />
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 truncate">{sub.subjectName}</p>
-                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                          {sub.currentGrade} <ArrowRight size={10} className="inline" /> {sub.targetGrade}
-                        </p>
-                      </div>
-                      <div className="text-right shrink-0">
-                        <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{currentPts} pts</p>
-                        {gap > 0 && (
-                          <span className="inline-block text-[10px] font-bold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#EDF2EE', color: '#4A6B4F' }}>+{gap} possible</span>
-                        )}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+                  const update = (field: 'currentGrade' | 'targetGrade', grade: Grade) => onProfileChange?.({...profile, subjects:profile.subjects.map(s => s.subjectName === sub.subjectName ? {...s,[field]:grade} : s)});
+                  return <div className="lp-contribution" key={sub.subjectName}><div><strong>{sub.subjectName}</strong><div className="lp-contribution-bar"><span style={{width:`${currentPts/125*100}%`}} /></div></div>
+                    <LaunchpadSelect aria-label={`${sub.subjectName} current grade`} value={sub.currentGrade} disabled={!onProfileChange} onChange={e => update('currentGrade',e.target.value as Grade)}>{getGradesForLevel(sub.level).map(g => <option key={g}>{g}</option>)}</LaunchpadSelect>
+                    <LaunchpadSelect aria-label={`${sub.subjectName} target grade`} value={sub.targetGrade} disabled={!onProfileChange} onChange={e => update('targetGrade',e.target.value as Grade)}>{getGradesForLevel(sub.level).map(g => <option key={g}>{g}</option>)}</LaunchpadSelect>
+                    <span className="text-right text-sm tabular-nums">{targetPts-currentPts > 0 ? '+' : ''}{targetPts-currentPts}</span>
+                  </div>;
+                })}</div><p className="lp-body mt-3 text-xs">Subject gains are before best-six selection. Your total counts only your best six.</p>
+              </section>
+              <aside className="lp-panel"><p className="lp-eyebrow">Try a possibility</p><h2 className="lp-title">What would one grade change?</h2><p className="lp-body">Use What if? to explore a different set of grades without changing your current grades.</p><button className="lp-button w-full mt-6" onClick={() => setActiveTab('planner')}>Explore What If? <ArrowRight size={16} /></button></aside>
             </div>
-
             {/* CAO Simulator insights (Connection 4: CAO Simulator → Points Passport) */}
             {caoData && caoData.whatIfScenarios && caoData.whatIfScenarios.length > 0 && (
               <div className="rounded-xl p-4 space-y-2 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
@@ -478,20 +394,6 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
               </div>
             )}
 
-            {/* Micro-story */}
-            <div className="bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5">
-              <div className="flex items-start gap-3">
-                <Award size={18} className="shrink-0 mt-1" style={{ color: COLORS.accent }} />
-                <div>
-                  <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed italic">
-                    "{relevantStory.quote}"
-                  </p>
-                  <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-2">
-                    — {relevantStory.label} &middot; {relevantStory.from} → {relevantStory.to} pts
-                  </p>
-                </div>
-              </div>
-            </div>
           </MotionDiv>
         )}
 

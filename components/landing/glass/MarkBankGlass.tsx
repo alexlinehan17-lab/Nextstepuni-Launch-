@@ -2,8 +2,8 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * The real Mark Bank board (components/MarkBank), signed out. Biology,
- * Economics and Mathematics are open; the other twelve subjects show with a
+ * The real Mark Bank board (components/MarkBank), signed out. Biology
+ * and Mathematics are open; the other subjects show with a
  * lock. No uid means the board keeps its choices in localStorage and never
  * touches Firestore.
  */
@@ -11,7 +11,7 @@
 import React, { useEffect } from 'react';
 import MarkBank from '../../MarkBank/MarkBank';
 import { GlassStage, type GlassLocks, type GlassProps } from './GlassStage';
-import { FREE_SUBJECTS, LOCKED_SUBJECTS } from './demoProfile';
+import { FREE_SUBJECTS, LOCKED_SUBJECTS, isFree } from './demoProfile';
 
 export const MARKBANK_SUBJECTS_LIVE: { id: string; label: string }[] = FREE_SUBJECTS.map(s => ({ id: s, label: s }));
 
@@ -21,7 +21,7 @@ const MarkBankGlass: React.FC<GlassProps> = ({ sub, active, height = 700, logica
   // The board remembers its last subject per device; the mode tabs should win.
   useEffect(() => { try { localStorage.removeItem('mb:choice:anon'); } catch { /* storage may be unavailable */ } }, [sub]);
   return (
-    <GlassStage active={active} height={height} logicalWidth={logicalWidth} locks={LOCKS}>
+    <GlassStage active={active} height={height} logicalWidth={logicalWidth} locks={LOCKS} canSelectSubject={isFree}>
       {active && (
         <div className="landing-glass-pad">
           <MarkBank key={sub} uid={undefined} studentSubjects={[{ subjectName: sub, level: 'higher' }]} />

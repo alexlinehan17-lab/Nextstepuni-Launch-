@@ -65,6 +65,52 @@ describe("scheme-point marking", () => {
     ).toBe(4);
     expect(score("bio-2025-hl-q3-c", "adenosine diphosphate").earned).toBe(0);
   });
+  it.each([
+    "Adenosine Tri-Phosphate",
+    "adenosine tri phosphate",
+    "adenosine tri - phosphate",
+    "Adenosine Tri‑Phosphate",
+    "adenosinetriphosphate",
+    "  ADENOSINE   TRIPHOSPHATE!  ",
+  ])("accepts equivalent word breaks across ATP questions: %s", (answer) => {
+    for (const id of ["bio-2025-hl-q3-c", "bio-2022-hl-q14-b-vi"])
+      expect(score(id, answer).earned).toBe(score(id, "Adenosine triphosphate").total);
+  });
+  it.each([
+    ["bio-2021-hl-q14-b-vii", "Peristalsi", 3],
+    ["bio-2021-hl-q14-b-vii", "Peristalssis", 3],
+    ["bio-2021-hl-q14-b-vii", "Peristalsis, muscular contracitons", 6],
+    ["bio-2025-ol-q9-a-ii", "Temperture", 3],
+    ["bio-2025-hl-q3-c", "Adenosien triphosphate", 3],
+    ["bio-2022-ol-q9-a-ii", "Carbondioxide", 3],
+    ["phys-2023-ol-q8-vii", "longsightedness", 5],
+    ["phys-2023-ol-q8-vii", "long sightedness", 5],
+  ])("allows small typing slips or joined words: %s / %s", (id, answer, marks) => {
+    expect(score(id, answer).earned).toBe(marks);
+  });
+  it.each([
+    ["Adenosine diphosphate", "Adenosine triphosphate"],
+    ["adenosine mono phosphate", "Adenosine triphosphate"],
+    ["chlorine", "chloride"],
+    ["silver nitrite", "silver nitrate"],
+    ["sulfite", "sulfate"],
+    ["propene", "propane"],
+    ["meiosis", "mitosis"],
+    ["contact", "contract"],
+    ["muscles contacting", "muscles contracting"],
+    ["ADP", "ATP"],
+    ["H2", "H2O"],
+    ["x - y", "x + y"],
+    ["24 Hz", "24 kHz"],
+    ["carbon not dioxide", "carbon dioxide"],
+    ["tri not phosphate", "triphosphate"],
+    ["tri and phosphate", "triphosphate"],
+    ["tri something phosphate", "triphosphate"],
+    ["No peristalssis", "Peristalsis"],
+    ["Peristalsis. Not peristalssis.", "Peristalsis"],
+  ])("does not turn a different meaning into a typo: %s / %s", (answer, expected) => {
+    expect(markAnswer(answer, [{ id: "meaning", verbatim: expected, marks: 3 }]).earned).toBe(0);
+  });
   it("does not mark reversed oxidation/reduction definitions as correct", () => {
     expect(
       score(

@@ -11,13 +11,14 @@
  * ranked by INTEREST FIT (Pearson correlation, O*NET's method), each annotated
  * with an independent points-REACH badge. Fit is never altered by points.
  */
+import ToolMasthead from './launchpad/ToolMasthead';
 import React, { useMemo, useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { ArrowLeft, Compass, X, ArrowRight } from 'lucide-react';
 import { COLORS } from '../design/tokens';
-import PrimaryActionButton from './ui/PrimaryActionButton';
+
 import { useFutureFinderRevamped, type FutureFinderRevampedState } from '../hooks/useFutureFinderRevamped';
 import {
   buildStudentProfile, codeFromProfile, scoreCourseFit,
@@ -85,7 +86,7 @@ export function computeAnalysis(
   return { studentProfile, studentCode, studentValues, maxScale, shown: scored.filter((s) => s.fit.fitBucket !== 'none').slice(0, 24) };
 }
 
-const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProfile; studentSubjects?: string[]; onOpenCareerPaths?: (careerStrings: string[]) => void }> = ({ uid, profile, onOpenCareerPaths }) => {
+const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProfile; studentSubjects?: string[]; resultsOnly?: boolean; onOpenCareerPaths?: (careerStrings: string[]) => void }> = ({ uid, profile, onOpenCareerPaths, resultsOnly = false }) => {
   const { saved, isLoaded, persist, reset } = useFutureFinderRevamped(uid);
   const [phase, setPhase] = useState<'intro' | 'quiz' | 'results'>('intro');
   const [length, setLength] = useState<'full' | 'quick'>('full');
@@ -218,42 +219,22 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     });
   }, [savedPicks, persistResultsState]);
 
-  if (!isLoaded) return <LoadingState label="Loading your future finder" />;
+  if (!isLoaded || (resultsOnly && phase !== 'results')) return <LoadingState label="Loading your future finder" />;
 
   // ── INTRO ─────────────────────────────────────────────────────
   if (phase === 'intro') {
     return (
-      <div className="mx-auto w-full max-w-md py-2 text-center sm:py-6">
-        <img src="/assets/tools/future-finder.png" alt="" draggable={false} className="mx-auto -mb-1 hidden h-44 w-44 select-none object-contain sm:block md:h-52 md:w-52" />
-        <div className="mb-3 inline-flex items-center gap-1.5 rounded-full px-3 py-1.5" style={{ backgroundColor: COLORS.accentTint }}>
-          <Compass size={14} style={{ color: COLORS.accent }} />
-          <span className="text-[10.5px] font-bold uppercase tracking-[0.14em]" style={{ color: COLORS.accentDarkText }}>Interests · RIASEC</span>
+      <div>
+        <ToolMasthead tool="future-finder-revamped" eyebrow="Start with you" title="Future Finder." subtitle="Find possibilities worth exploring." />
+        <div className="lp-split">
+          <section><h2 className="lp-title">Your interests are a starting point.</h2><p className="lp-body">Rate activities and what matters to you. Explore courses with your interests, values and target-grade points in view.</p>
+            <div className="lp-steps">{[['01','Find your interests','Quick questions about the things you enjoy.'],['02','Explore the routes','See courses connected to your answers.'],['03','Compare your options','Keep the possibilities you want to explore.']].map(([n,t,d]) => <div className="lp-step" key={n}><b>{n}</b><div><strong>{t}</strong><p>{d}</p></div></div>)}</div>
+            <p className="lp-body mt-5">A snapshot, not a verdict. Use it alongside your guidance counsellor.</p>
+          </section>
+          <section><p className="lp-eyebrow">Choose your route</p><div className="space-y-3">{(['quick','full'] as const).map(l => <button key={l} className="lp-choice" aria-pressed={length === l} onClick={() => setLength(l)}><span className="lp-radio" /><span><strong>{l === 'quick' ? 'Quick discovery' : 'The fuller picture'}</strong><small>{l === 'quick' ? '42 taps · Around 5 minutes' : '72 taps · Around 9 minutes'}</small></span></button>)}</div>
+            <div className="lp-action-row"><span className="lp-body">No right or wrong answers.</span><button className="lp-button" onClick={() => { setIdx(0); setPhase('quiz'); }}>Let’s explore <ArrowRight size={17} /></button></div>
+          </section>
         </div>
-        <h2 className="mb-2 font-serif text-[28px] font-semibold leading-[1.08] text-[#1A1A1A] dark:text-white md:text-[32px]">Find courses that fit<br />who you are</h2>
-        <p className="mx-auto mb-5 max-w-sm text-[14px] leading-relaxed text-zinc-500 dark:text-zinc-400 sm:mb-6 sm:text-[14.5px]">Rate quick activities and we’ll rank routes using your <span className="font-semibold text-zinc-700 dark:text-zinc-200">interests, values and target-grade points</span>. Your interest match remains visible on every course.</p>
-
-        {/* length choice — chunky year-selector style buttons (a touch smaller) */}
-        <div className="mx-auto mb-5 grid max-w-sm grid-cols-2 gap-3 sm:mb-6">
-          {(['full', 'quick'] as const).map((l) => {
-            const selected = length === l;
-            return (
-              <button
-                key={l}
-                onClick={() => setLength(l)}
-                className={`flex min-h-[76px] flex-col items-center justify-center rounded-2xl border-2 border-[#1A1A1A] py-3 font-sans shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] ${selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A] dark:bg-zinc-900 dark:text-white'}`}
-              >
-                <span className="text-xl font-bold leading-none">{l === 'full' ? 'Full' : 'Quick'}</span>
-                <span className="text-[11px] font-medium mt-1 opacity-80">{l === 'full' ? '72 taps · ~9 min' : '42 taps · ~5 min'}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        <div className="flex justify-center">
-          <PrimaryActionButton label="Start" onClick={() => { setIdx(0); setPhase('quiz'); }} icon={ArrowRight} />
-        </div>
-
-        <p className="mx-auto mt-5 max-w-sm text-[12px] italic text-zinc-400 sm:mt-7">A snapshot of your interests right now — not a verdict. Best re-taken, and used alongside your guidance counsellor.</p>
       </div>
     );
   }
@@ -341,7 +322,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
         onToggleSave={onToggleSave}
         onToggleCompare={onToggleCompare}
         onRemoveCompare={onRemoveCompare}
-        onRetake={retake}
+        onRetake={resultsOnly ? undefined : retake}
         explainer={RiasecExplainerModal}
         scoreBreakdownLabels={{ interest: 'Interest fit', values: 'Values fit', feasibility: 'Points reach' }}
       />

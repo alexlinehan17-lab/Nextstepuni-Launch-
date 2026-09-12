@@ -4,8 +4,10 @@
   font-display: swap;
 }
 .certle-page {
+  --certle-ink: #1a1a1a;
+  --certle-orange: #f26b1f;
   background: #fff;
-  color: #1a1a1a;
+  color: var(--certle-ink);
   min-height: 100vh;
   font-family: "DM Sans", sans-serif;
 }
@@ -21,69 +23,42 @@
 }
 .certle-page button:disabled {
   cursor: default;
-  opacity: 0.45;
+}
+.certle-page :is(button, a, textarea, summary):focus-visible {
+  outline: 3px solid #b84a0c;
+  outline-offset: 4px;
 }
 .certle-main {
-  max-width: 1040px;
+  max-width: 1080px;
   margin: auto;
-  padding: 22px 32px 36px;
-}
-.certle-utility {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.certle-utility > a {
-  display: inline-flex;
-  gap: 7px;
-  align-items: center;
-  color: #686868;
-  text-decoration: none;
-  font-size: 12px;
-}
-.certle-utility > div {
-  display: flex;
-  gap: 5px;
-}
-.certle-icon-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  color: #1a1a1a;
-  border: 0;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-}
-.certle-icon-button:hover {
-  background: #f4f4f4;
+  padding: 0 32px 28px;
 }
 .certle-heading {
+  position: relative;
   text-align: center;
-  padding: 20px 0 35px;
+  padding: 30px 0 25px;
 }
 .certle-eyebrow {
   font:
-    10px "Apercu Mono Pro",
+    11px/1.6 "Apercu Mono Pro",
     monospace;
-  letter-spacing: 0.12em;
-  line-height: 1.6;
-  margin: 0;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
+  margin: 0;
 }
 .certle-heading > .certle-eyebrow {
-  color: #b84a0c;
   margin-bottom: 17px;
 }
 .certle-name {
-  position: relative;
   display: inline-block;
 }
 .certle-name h1 {
+  margin: 0;
+  line-height: 1;
+}
+.certle-logo {
   display: flex;
   gap: 7px;
-  margin: 0;
   font-family: "DM Sans", sans-serif;
   font-weight: 750;
   letter-spacing: -2px;
@@ -111,886 +86,1287 @@
   background: #fff;
   color: #1a1a1a;
 }
-.certle-name > img {
-  position: absolute;
-  width: 65px;
-  height: 96px;
-  object-fit: contain;
-  right: -93px;
-  bottom: -1px;
-  transform: rotate(7deg);
-}
-.certle-heading > p:not(.certle-eyebrow) {
+.certle-tagline {
+  margin: 21px 0 0;
+  color: #5f5a55;
   font-size: 15px;
-  margin: 23px 0 13px;
-  color: #555;
 }
-.certle-date {
-  display: flex;
-  gap: 13px;
-  justify-content: center;
-  align-items: center;
-  font:
-    10px "Apercu Mono Pro",
-    monospace;
-  color: #767676;
-  text-transform: uppercase;
-  letter-spacing: 0.035em;
+.certle-tagline strong {
+  color: #1a1a1a;
+  font-weight: 500;
 }
-.certle-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 660px) 230px;
-  gap: 38px;
-  align-items: start;
+.certle-companion {
+  width: 76px;
+  position: absolute;
+  right: calc(50% - 305px);
+  top: 41px;
+  pointer-events: none;
+  z-index: 2;
 }
-.certle-play {
-  border: 1.5px solid #1a1a1a;
-  border-radius: 17px;
-  overflow: hidden;
-  box-shadow: 0 4px 0 #1a1a1a;
-  min-width: 0;
-  background: #fff;
+.certle-companion img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-.certle-paper-top {
+.certle-toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1a1a1a;
-  color: #fff;
-  padding: 21px 28px;
+  gap: 12px;
+  border-top: 1px solid #1a1a1a;
+  padding: 7px 0;
 }
-.certle-paper-top .certle-eyebrow {
-  color: #ff964f;
-  font-size: 9px;
+.certle-date {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font:
+    11px "Apercu Mono Pro",
+    monospace;
+  text-transform: uppercase;
 }
-.certle-paper-top h2 {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 27px;
-  line-height: 1.1;
-  margin: 5px 0 0;
-  font-weight: 500;
+.certle-date > span {
+  color: #b84a0c;
 }
-.certle-tariff {
-  border: 1px solid #666;
-  border-radius: 8px;
-  width: 53px;
-  height: 53px;
+.certle-tools {
+  display: flex;
+  gap: 16px;
+}
+.certle-tool-button {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  background: none;
+  border: 0;
+  padding: 10px 0;
+  min-height: 44px;
+  font-size: 12px !important;
+  color: #1a1a1a;
+}
+.certle-tool-button:hover {
+  color: #b84a0c;
+}
+.certle-play {
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+  border: 1px solid #1a1a1a;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+}
+.certle-question-sheet {
+  background: #f26b1f;
+  padding: 30px 32px 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1;
+  min-width: 0;
+  position: relative;
 }
-.certle-tariff small {
-  font-size: 9px;
-  font-weight: 400;
-  margin-top: 5px;
-  color: #bfbfbf;
-}
-.certle-paper {
-  padding: 22px 28px 24px;
-}
-.certle-source {
-  font-size: 10px;
-  color: #737373;
-  margin: 0 0 12px;
-}
-.certle-question {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 25px;
-  font-weight: 500;
-  letter-spacing: -0.4px;
-  line-height: 1.35;
-  margin: 0 0 22px;
-  text-wrap: pretty;
-}
-.certle-figure {
-  margin: 18px 0;
-}
-.certle-figure img {
-  max-width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
-  display: block;
-  margin: auto;
-}
-.certle-figure figcaption {
-  font-size: 10px;
-  color: #777;
-  margin-top: 8px;
-}
-.certle-attempts {
-  padding: 17px 0 15px;
-  border-top: 1px solid #e4e4e4;
-  border-bottom: 1px solid #e4e4e4;
-  display: grid;
-  gap: 7px;
-}
-.certle-attempt {
+.certle-paper-top {
   display: flex;
   gap: 12px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.certle-paper-top .certle-eyebrow {
+  font-size: 12px;
+}
+.certle-tariff {
+  flex-shrink: 0;
+  padding: 6px 11px;
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.certle-question {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(29px, 3vw, 41px);
+  line-height: 1.17;
+  letter-spacing: -0.025em;
+  font-weight: 500;
+  margin: 40px 0 38px;
+  overflow-wrap: anywhere;
+}
+.certle-question.is-long {
+  font-size: 30px;
+  line-height: 1.3;
+}
+.certle-paper-source {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #1a1a1a;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 8px;
+}
+.certle-paper-source > .certle-eyebrow {
+  grid-column: 1/-1;
+  font-size: 10px;
+}
+.certle-paper-source p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.certle-paper-seal {
+  font:
+    500 26px "Source Serif 4",
+    Georgia,
+    serif;
+  border: 1px solid #1a1a1a;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  transform: rotate(-12deg);
+}
+.certle-figure {
+  margin: 0 0 24px;
+}
+.certle-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid #1a1a1a;
+}
+.certle-figure figcaption {
+  margin-top: 7px;
+  font-size: 11px;
+}
+.certle-workspace {
+  min-width: 0;
+  padding: 28px 32px 26px;
+  border-left: 1px solid #1a1a1a;
+}
+.certle-board-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+.certle-board-heading h3 {
+  font-size: 15px;
+  font-weight: 650;
+  margin: 0;
+}
+.certle-board-heading > span {
+  font-size: 12px;
+  color: #5f5a55;
+}
+.certle-attempts {
+  display: grid;
+  gap: 8px;
+}
+.certle-attempt {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) 34px;
+  gap: 10px;
+  align-items: center;
+  min-height: 35px;
 }
 .certle-attempt-number,
 .certle-attempt-score {
+  color: #76716c;
   font:
-    10px "Apercu Mono Pro",
+    12px "Apercu Mono Pro",
     monospace;
-  color: #aaa;
-  min-width: 24px;
 }
 .certle-attempt-score {
-  min-width: 32px;
   text-align: right;
-}
-.certle-squares {
-  display: grid;
-  grid-template-columns: repeat(
-    var(--marks),
-    min(32px, calc((100vw - 148px - (var(--marks) - 1) * 5px) / var(--marks)))
-  );
-  gap: 5px;
-}
-.certle-squares > span {
-  aspect-ratio: 1;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  background: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.certle-squares > span.is-earned {
-  background: #f26b1f;
-  border-color: #1a1a1a;
-  color: #1a1a1a;
-  animation: certle-mark-in 220ms ease-out;
-}
-.certle-squares > span.is-unmatched {
-  background: #fff;
-  border-color: #aaa;
-}
-.certle-attempt.is-current .certle-squares > span {
-  border-color: #1a1a1a;
 }
 .certle-attempt.is-current .certle-attempt-number,
 .certle-attempt.is-played .certle-attempt-score {
   color: #1a1a1a;
 }
+.certle-attempt.is-current .certle-attempt-number {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.certle-squares {
+  display: grid;
+  grid-template-columns: repeat(var(--marks), minmax(0, 38px));
+  gap: 5px;
+}
+.certle-squares > span {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid #d3d1cf;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.certle-attempt.is-current .certle-squares > span {
+  border-color: #766a5f;
+  box-shadow: 0 2px 0 #e7e5e3;
+}
+.certle-squares > span.is-earned {
+  background: #f26b1f;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+  box-shadow: 0 2px 0 #1a1a1a;
+  animation: certle-reveal 0.32s ease backwards;
+  animation-delay: var(--tile-delay);
+}
+.certle-squares > span.is-unmatched {
+  border-color: #766a5f;
+  color: #5f5a55;
+  animation: certle-reveal 0.32s ease backwards;
+  animation-delay: var(--tile-delay);
+}
+.certle-attempts[data-dense="true"] .certle-squares {
+  gap: 3px;
+}
+.certle-attempts[data-dense="true"] .certle-squares svg {
+  width: 9px;
+  height: 9px;
+}
+.certle-miss {
+  font-size: 22px;
+  line-height: 0;
+}
 .certle-result-line {
-  padding: 17px 0 20px;
+  padding: 18px 0;
+  min-height: 58px;
+  font-size: 13px;
+  line-height: 1.5;
 }
 .certle-result-line strong {
   display: block;
-  font-size: 15px;
-  margin: 0 0 5px;
+  color: #1a1a1a;
+  font-weight: 650;
 }
 .certle-result-line p {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #686868;
-  margin: 0;
+  color: #5f5a55;
+  margin: 3px 0 0;
 }
 .certle-answer-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 9px;
   gap: 8px;
+  margin-bottom: 9px;
 }
 .certle-answer-heading label {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
-.certle-answer-heading span {
-  font:
-    9px "Apercu Mono Pro",
-    monospace;
-  color: #767676;
-}
-.certle-answer-form textarea {
-  display: block;
-  width: 100%;
-  resize: vertical;
-  min-height: 98px;
-  border: 1px solid #b7b7b7;
-  border-radius: 9px;
-  padding: 14px;
-  color: #1a1a1a;
-  background: #fff;
-  font-size: 16px;
-  line-height: 1.5;
-  outline-offset: 3px;
-}
-.certle-answer-form textarea:focus {
-  border-color: #1a1a1a;
-  outline: 2px solid #f26b1f;
-}
-.certle-answer-form textarea::placeholder {
-  font-size: 13px;
-  color: #9a9a9a;
-}
-.certle-form-bottom {
-  display: flex;
-  gap: 15px;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-}
-.certle-form-bottom p {
-  font-size: 10px;
-  line-height: 1.6;
-  color: #777;
-  margin: 0;
-}
-.certle-primary {
-  background: #f26b1f;
-  color: #1a1a1a;
-  border: 1.5px solid #1a1a1a;
-  border-radius: 8px;
-  box-shadow: 0 3px 0 #1a1a1a;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 11px;
-  min-height: 44px;
-  padding: 11px 18px;
-  font-size: 13px !important;
-  font-weight: 650 !important;
-  text-decoration: none;
-  transition:
-    transform 140ms ease,
-    box-shadow 140ms ease;
-}
-.certle-primary:not(:disabled):hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 0 #1a1a1a;
-}
-.certle-primary:not(:disabled):active {
-  transform: translateY(2px);
-  box-shadow: 0 1px 0 #1a1a1a;
-}
-.certle-text-button {
-  border: 0;
-  background: none;
-  color: #656565;
-  font-size: 11px !important;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  padding: 8px;
-}
-.certle-text-button:hover {
-  color: #1a1a1a;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-.certle-finish {
-  display: block;
-  margin: 17px auto 0;
-}
-.certle-aside {
-  padding-top: 6px;
-}
-.certle-record {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 23px;
-}
-.certle-stat-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 13px;
-  margin: 16px 0;
-}
-.certle-stat-grid > div {
-  display: flex;
-  flex-direction: column;
-}
-.certle-stat-grid strong {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 33px;
-  font-weight: 500;
-  line-height: 1.1;
-}
-.certle-stat-grid span {
-  font-size: 10px;
-  color: #777;
-  margin-top: 7px;
-}
-.certle-record > p:last-child {
-  font-size: 11px;
-  color: #8a8a8a;
-  margin: 0;
-}
-.certle-guide {
-  padding: 23px 0;
-}
-.certle-guide ol {
-  list-style: none;
-  padding: 0;
-  margin: 18px 0;
-}
-.certle-guide li {
-  display: flex;
-  gap: 12px;
-  align-items: baseline;
-  margin: 0 0 17px;
-}
-.certle-guide li > span {
-  color: #b84a0c;
+.certle-answer-heading > span {
   font:
     10px "Apercu Mono Pro",
     monospace;
+  color: #5f5a55;
 }
-.certle-guide li p {
-  font-size: 12px;
-  line-height: 1.7;
-  color: #5e5e5e;
-  margin: 0;
-}
-.certle-key {
-  font-size: 9px;
-  color: #747474;
-  display: flex;
-  gap: 11px;
-  flex-wrap: wrap;
-}
-.certle-key > span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.certle-key i {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #b6b6b6;
-  border-radius: 2px;
-}
-.certle-key .earned {
-  background: #f26b1f;
-  border-color: #1a1a1a;
-}
-.certle-next {
-  border-top: 1px solid #ddd;
-  padding: 23px 0;
-}
-.certle-next > time {
-  display: block;
-  font:
-    29px "Apercu Mono Pro",
-    monospace;
-  color: #b84a0c;
-  letter-spacing: -1px;
-  margin-top: 11px;
-}
-.certle-next > p:last-child {
-  font-size: 11px;
-  line-height: 1.7;
-  color: #777;
-  margin: 10px 0 0;
-}
-.certle-answer-history {
-  font-size: 11px;
-  border-top: 1px solid #e7e7e7;
-  padding-top: 15px;
-  margin-top: 18px;
-}
-.certle-answer-history summary {
-  cursor: pointer;
-  color: #777;
-}
-.certle-answer-history > div {
-  margin-top: 15px;
-}
-.certle-answer-history b {
-  font-size: 10px;
-}
-.certle-answer-history p {
-  font-size: 13px;
-  line-height: 1.6;
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-}
-.certle-finished {
-  text-align: center;
-}
-.certle-final-score {
+.certle-answer-form textarea {
+  width: 100%;
+  min-height: 113px;
+  resize: vertical;
+  border: 1px solid #766a5f;
+  border-radius: 6px;
   background: #fff;
-  border-bottom: 1px solid #e5e5e5;
-  margin: 0 0 20px;
-  padding: 5px 0 20px;
-}
-.certle-final-score > span {
-  font:
-    9px "Apercu Mono Pro",
-    monospace;
-  color: #777;
-  letter-spacing: 0.1em;
+  padding: 15px;
+  color: #1a1a1a;
+  line-height: 1.55;
+  font-size: 16px;
   display: block;
 }
-.certle-final-score strong {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 70px;
-  font-weight: 500;
-  line-height: 1.1;
-  display: block;
+.certle-answer-form textarea::placeholder {
+  color: #76716c;
+}
+.certle-answer-form textarea:focus {
+  border-color: #1a1a1a;
+  outline: 2px solid #1a1a1a;
+  outline-offset: 2px;
+}
+.certle-form-bottom {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.certle-form-bottom > p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #5f5a55;
+}
+.certle-primary,
+.certle-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 47px;
+  border: 1px solid #1a1a1a;
+  border-radius: 6px;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 12px 18px;
+  transition:
+    background 0.15s,
+    transform 0.15s,
+    box-shadow 0.15s;
+  text-decoration: none;
+}
+.certle-primary {
+  background: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 2px 0 #1a1a1a;
+}
+.certle-secondary {
+  background: #fff;
+  color: #1a1a1a;
+}
+.certle-primary:not(:disabled):hover {
+  background: #f26b1f;
+  color: #1a1a1a;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 #1a1a1a;
+}
+.certle-secondary:not(:disabled):hover {
+  background: #f5f5f5;
+}
+.certle-primary:disabled {
+  background: #e7e5e3;
+  border-color: #d3d1cf;
+  color: #76716c;
+  box-shadow: none;
+}
+.certle-secondary:disabled {
+  opacity: 0.5;
+}
+.certle-text-button {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  padding: 10px 0;
+  min-height: 44px;
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 12px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.certle-text-button:hover {
   color: #b84a0c;
-  margin: 7px 0;
 }
-.certle-final-score small {
-  font-size: 35px;
-  color: #a3a3a3;
-}
-.certle-final-score p {
-  font-size: 12px;
-  color: #686868;
-  margin: 5px 0 0;
-}
-.certle-finished > .certle-text-button {
+.certle-finish {
   display: flex;
   margin: 12px auto 0;
 }
-.certle-share-notice {
-  font-size: 11px;
-  min-height: 16px;
-  color: #626262;
-  margin: 8px 0 0;
+.certle-notice {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 12px 0;
 }
-.certle-share-fallback {
+.certle-answer-history {
+  margin-top: 18px;
+  padding-top: 4px;
+  border-top: 1px solid #dedbd8;
+  font-size: 12px;
+}
+.certle-answer-history summary {
+  cursor: pointer;
+  padding: 12px 0;
+  min-height: 44px;
+}
+.certle-answer-history > div {
+  border-top: 1px solid #dedbd8;
+  padding: 14px 0 2px;
+}
+.certle-answer-history b {
+  font-weight: 600;
+}
+.certle-answer-history p {
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: #5f5a55;
+}
+.certle-daily-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.certle-daily-foot p {
+  margin: 0;
+}
+.certle-daily-foot p > span {
+  color: #5f5a55;
+}
+.certle-next {
+  color: #5f5a55;
+  white-space: nowrap;
+}
+.certle-next time {
+  font:
+    13px "Apercu Mono Pro",
+    monospace;
+  color: #1a1a1a;
+  margin-left: 8px;
+}
+.certle-result-heading > .certle-eyebrow {
+  color: #5f5a55;
+}
+.certle-score-display {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  margin-top: 8px;
+}
+.certle-score-display > strong {
+  font-size: 76px;
+  letter-spacing: -5px;
+  font-weight: 650;
+  line-height: 1.1;
+}
+.certle-score-display > strong > span {
+  color: #766a5f;
+  font-size: 51px;
+  font-weight: 450;
+  letter-spacing: -3px;
+}
+.certle-score-display > span {
+  font-size: 14px;
+  color: #5f5a55;
+}
+.certle-result-heading h2 {
+  font:
+    500 27px/1.25 "Source Serif 4",
+    Georgia,
+    serif;
+  letter-spacing: -0.025em;
+  margin: 16px 0 8px;
+}
+.certle-result-heading h2:focus {
+  outline: none;
+}
+.certle-result-heading > p:last-child {
+  font-size: 13px;
+  color: #5f5a55;
+  line-height: 1.6;
+  margin: 0 0 22px;
+}
+.certle-finished-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+}
+.certle-finished-actions > .certle-primary {
   width: 100%;
-  min-height: 110px;
-  font: 12px monospace !important;
-  border: 1px solid #bbb;
-  border-radius: 5px;
-  padding: 10px;
+}
+.certle-finished-actions > .certle-primary svg:last-child {
+  margin-left: auto;
+}
+.certle-finished-actions > span {
+  font-size: 11px;
+  color: #5f5a55;
 }
 .certle-scheme {
-  margin: 43px 0 0;
-  max-width: 660px;
+  padding: 34px 0 10px;
+  border-top: 1px solid #1a1a1a;
+  margin-top: 20px;
 }
 .certle-scheme-title {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   align-items: end;
-  gap: 20px;
 }
 .certle-scheme-title .certle-eyebrow {
-  font-size: 9px;
   color: #b84a0c;
 }
-.certle-scheme h2 {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.15;
+.certle-scheme-title h2 {
+  font:
+    500 34px/1.15 "Source Serif 4",
+    Georgia,
+    serif;
+  letter-spacing: -0.025em;
   margin: 10px 0 0;
-  letter-spacing: -0.6px;
 }
 .certle-scheme-title > span {
-  font-size: 11px;
-  color: #767676;
+  font:
+    12px "Apercu Mono Pro",
+    monospace;
   white-space: nowrap;
 }
 .certle-scheme-intro {
-  font-size: 12px;
-  color: #6c6c6c;
-  line-height: 1.8;
-  margin: 17px 0 20px;
+  max-width: 720px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5f5a55;
+  margin: 20px 0 25px;
 }
 .certle-scheme ul {
-  list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid #ccc;
+  list-style: none;
 }
 .certle-scheme li {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  padding: 18px 0;
-  border-bottom: 1px solid #dedede;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  gap: 14px;
+  border-top: 1px solid #dedbd8;
+  padding: 20px 0;
+  align-items: start;
+}
+.certle-scheme li:last-child {
+  border-bottom: 1px solid #dedbd8;
 }
 .certle-scheme-status {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  height: 29px;
-  width: 29px;
-  border: 1px solid #bbb;
-  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #766a5f;
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
 }
-.certle-scheme li.is-earned .certle-scheme-status {
+.certle-scheme .is-earned .certle-scheme-status {
   background: #f26b1f;
   border-color: #1a1a1a;
 }
-.certle-scheme li > div {
-  flex: 1;
-  min-width: 0;
-}
 .certle-scheme li p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0;
-  overflow-wrap: anywhere;
+  margin: 0 0 8px;
+  font-size: 16px;
+  line-height: 1.55;
 }
 .certle-scheme li small {
-  display: block;
-  font-size: 10px;
-  color: #777;
-  margin-top: 3px;
+  color: #5f5a55;
+  font-size: 12px;
 }
 .certle-scheme li > strong {
-  font-size: 16px;
-  white-space: nowrap;
+  font-size: 17px;
+  font-weight: 600;
 }
 .certle-scheme li > strong > span {
-  font-size: 10px;
-  color: #777;
+  color: #5f5a55;
+  font-size: 12px;
   font-weight: 400;
 }
 .certle-attribution {
-  font-size: 10px;
-  line-height: 1.8;
-  color: #818181;
-  margin-top: 15px;
-}
-.certle-notice {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #b84a0c;
-  margin: 14px 0;
+  color: #5f5a55;
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 16px 0;
 }
 .certle-footer {
-  margin-top: 44px;
+  border-top: 1px solid #dedbd8;
   padding-top: 22px;
-  border-top: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-.certle-footer p {
-  font-size: 10px;
-  color: #818181;
-  line-height: 1.7;
-  margin: 0;
+  margin-top: 26px;
 }
 .certle-footer a {
-  font-size: 10px;
-  color: #1a1a1a;
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  gap: 12px;
+  font-size: 12px;
+  color: #5f5a55;
   text-decoration: none;
 }
+.certle-footer a > span {
+  font-size: 17px;
+  font-weight: 750;
+  color: #1a1a1a;
+  letter-spacing: -0.65px;
+  margin-right: 7px;
+}
+.certle-footer a:hover {
+  color: #b84a0c;
+}
 .certle-load {
-  padding: 40px 28px;
-  min-height: 260px;
-  font-size: 15px;
+  min-height: 470px;
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 35px;
+  gap: 15px;
 }
 .certle-load h2 {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 28px;
+  font:
+    500 32px "Source Serif 4",
+    Georgia,
+    serif;
+  margin: 0;
 }
 .certle-load p {
+  margin: 0;
+  color: #5f5a55;
   line-height: 1.7;
-  color: #777;
-  margin-bottom: 25px;
+}
+.certle-loading-tiles {
+  display: flex;
+  gap: 6px;
+}
+.certle-loading-tiles i {
+  width: 27px;
+  height: 27px;
+  background: #f26b1f;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  animation: certle-loading 1.5s infinite;
+}
+.certle-loading-tiles i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.certle-loading-tiles i:nth-child(3) {
+  animation-delay: 0.3s;
 }
 .certle-dialog {
-  background: #fff;
   color: #1a1a1a;
+  background: #fff;
+  border: 1px solid #1a1a1a;
+  border-radius: 14px;
+  padding: 28px;
+  width: min(520px, calc(100% - 32px));
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
   font-family: "DM Sans", sans-serif;
-  border: 1.5px solid #1a1a1a;
-  border-radius: 15px;
-  padding: 24px;
-  max-width: 480px;
-  width: calc(100vw - 36px);
-  box-shadow: 0 6px 0 #1a1a1a;
+  margin: auto;
+  overscroll-behavior: contain;
 }
 .certle-dialog::backdrop {
-  background: #1a1a1a99;
+  background: rgb(26 26 26 / 0.58);
 }
 .certle-dialog-heading {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 15px;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 14px;
 }
-.certle-dialog h2 {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 28px;
-  font-weight: 500;
+.certle-dialog-heading h2 {
+  font:
+    500 29px/1.2 "Source Serif 4",
+    Georgia,
+    serif;
+  letter-spacing: -0.025em;
   margin: 0;
 }
-.certle-dialog p,
-.certle-dialog li {
-  font-size: 13px;
-  line-height: 1.8;
+.certle-icon-button {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #dedbd8;
+  border-radius: 50%;
+  color: #1a1a1a;
+  flex-shrink: 0;
 }
-.certle-dialog ol {
-  padding-left: 19px;
+.certle-icon-button:hover {
+  background: #f5f5f5;
 }
-.certle-dialog li {
-  padding-left: 5px;
-  margin-bottom: 8px;
+.certle-dialog > p {
+  font-size: 14px;
+  line-height: 1.7;
 }
 .certle-dialog .certle-dialog-note {
-  color: #777;
-  font-size: 11px;
+  color: #5f5a55;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 22px 0 0;
 }
-.certle-dialog .certle-primary {
-  margin-top: 10px;
+.certle-help {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.certle-help-intro {
+  margin: 20px 0 26px;
+  color: #5f5a55;
+}
+.certle-help-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 22px;
+}
+.certle-help-steps li {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 14px;
+  align-items: baseline;
+}
+.certle-help-number {
+  font: 500 24px/1 "Source Serif 4", Georgia, serif;
+  color: #b84a0c;
+}
+.certle-help-steps strong {
+  font-weight: 650;
+}
+.certle-help-steps p {
+  margin: 5px 0 0;
+  color: #5f5a55;
+}
+.certle-help-scoring {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid #dedbd8;
+}
+.certle-help-example {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.certle-help-example > span {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #aaa5a0;
+  border-radius: 2px;
+}
+.certle-help-example > .is-earned {
+  background: #f26b1f;
+  border-color: #1a1a1a;
+}
+.certle-help-example > strong {
+  margin-left: 8px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.certle-help-scoring p {
+  margin: 12px 0 0;
+}
+.certle-help > .certle-primary {
+  margin-top: 24px;
+  width: 100%;
+}
+.certle-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 15px;
+  border-block: 1px solid #dedbd8;
+  padding: 23px 0;
+  margin: 25px 0;
+}
+.certle-stat-grid strong {
+  display: block;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.certle-stat-grid span {
+  font-size: 12px;
+  color: #5f5a55;
 }
 .certle-dialog h3 {
-  font-size: 13px;
-  margin-top: 25px;
+  font-size: 15px;
+  margin: 20px 0;
 }
 .certle-distribution {
   display: grid;
-  gap: 8px;
-  margin-bottom: 22px;
+  gap: 12px;
 }
 .certle-distribution > div {
-  display: flex;
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr) 3ch;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-size: 12px;
+  font-variant-numeric: tabular-nums;
 }
-.certle-distribution > div > div {
-  min-width: 30px;
-  padding: 6px 10px;
-  background: #f26b1f;
+.certle-distribution-track {
+  height: 30px;
   border-radius: 3px;
+  background: #f0efee;
+  overflow: hidden;
+}
+.certle-distribution-fill {
+  height: 100%;
+  background: #f26b1f;
+  border-radius: inherit;
+}
+.certle-distribution-count {
   text-align: right;
-  font-weight: 600;
 }
-.certle-page :where(button, a, summary):focus-visible {
-  outline: 2px solid #1a1a1a;
-  outline-offset: 5px;
+.certle-share-intro {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #5f5a55;
+  margin: 0 0 20px;
 }
-.certle-page .landing-nav-row {
-  max-width: 1200px;
+.certle-share-card {
+  padding: 20px 24px 17px;
+  background: #fff;
+  border: 7px solid #f26b1f;
+  border-radius: 8px;
+  text-align: center;
 }
-.certle-page .landing-nav a {
-  white-space: nowrap;
+.certle-share-edition {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font:
+    10px "Apercu Mono Pro",
+    monospace;
+  text-transform: uppercase;
+  margin-bottom: 18px;
 }
-@keyframes certle-mark-in {
+.certle-share-card .certle-logo {
+  justify-content: center;
+  gap: 5px;
+}
+.certle-share-card .certle-letter {
+  width: 36px;
+  height: 39px;
+  font-size: 25px;
+  border-radius: 5px;
+  letter-spacing: -1px;
+}
+.certle-share-score {
+  display: block;
+  font-size: 65px;
+  line-height: 1;
+  letter-spacing: -4px;
+  font-weight: 650;
+  margin: 21px 0 7px;
+}
+.certle-share-score > span {
+  font-weight: 400;
+}
+.certle-share-card > p {
+  font-size: 12px;
+  margin: 0;
+}
+.certle-share-tiles {
+  display: grid;
+  gap: 5px;
+  margin: 17px auto 23px;
+}
+.certle-share-tiles > div {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+.certle-share-tiles i {
+  width: 22px;
+  max-width: 5%;
+  aspect-ratio: 1;
+  background: #fff;
+  border: 1px solid #1a1a1a;
+  border-radius: 3px;
+}
+.certle-share-tiles i.earned {
+  background: #f26b1f;
+}
+.certle-share-card-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+  border-top: 1px solid #1a1a1a;
+  padding-top: 12px;
+}
+.certle-share-card-foot b {
+  font:
+    500 23px "Source Serif 4",
+    Georgia,
+    serif;
+}
+.certle-share-card-foot > span {
+  font-size: 10px;
+}
+.certle-socials {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin: 22px 0 15px;
+}
+.certle-socials a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.certle-socials a > span {
+  width: 47px;
+  height: 47px;
+  border: 1px solid #1a1a1a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition:
+    background 0.15s,
+    transform 0.15s;
+}
+.certle-socials a:hover > span {
+  background: #f26b1f;
+  transform: translateY(-2px);
+}
+.certle-share-tip {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #5f5a55;
+  margin: 15px 0;
+}
+.certle-share-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.certle-share-actions > .certle-text-button {
+  grid-column: 1/-1;
+  padding: 5px;
+}
+.certle-share-notice {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #5f5a55;
+  margin: 12px 0 0;
+}
+.certle-share-notice:empty {
+  display: none;
+}
+.certle-share-fallback {
+  width: 100%;
+  min-height: 130px;
+  font-size: 13px;
+  line-height: 1.6;
+  border: 1px solid #766a5f;
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 12px;
+}
+@keyframes certle-reveal {
   from {
     transform: rotateX(70deg);
-    opacity: 0.4;
+    opacity: 0.2;
   }
   to {
     transform: rotateX(0);
     opacity: 1;
   }
 }
-@media (max-width: 900px) {
-  .certle-main {
-    max-width: 710px;
-    padding: 15px 28px 32px;
+@keyframes certle-loading {
+  0%,
+  70%,
+  100% {
+    transform: translateY(0);
   }
-  .certle-layout {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  .certle-aside {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-  .certle-guide {
-    display: none;
-  }
-  .certle-record {
-    border: 0;
-    padding: 0;
-  }
-  .certle-next {
-    border: 0;
-    border-left: 1px solid #ddd;
-    padding: 0 0 0 30px;
-  }
-  .certle-heading {
-    padding-bottom: 30px;
-  }
-  .certle-name > img {
-    right: -74px;
-    width: 52px;
-  }
-  .certle-scheme {
-    max-width: none;
-  }
-  .certle-footer {
-    flex-direction: column;
-    align-items: start;
-    gap: 9px;
+  35% {
+    transform: translateY(-8px);
   }
 }
-@media (max-width: 560px) {
+@media (min-width: 1280px) {
+  .certle-companion {
+    position: fixed;
+    width: 90px;
+    left: calc((100vw - 1080px) / 4 - 45px);
+    right: auto;
+    top: 218px;
+  }
+}
+@media (max-width: 850px) {
   .certle-main {
-    padding: 9px 18px 28px;
-  }
-  .certle-utility > a {
-    font-size: 10px;
-  }
-  .certle-icon-button {
-    width: 40px;
-    height: 40px;
-  }
-  .certle-heading {
-    padding: 14px 0 25px;
-  }
-  .certle-heading > .certle-eyebrow {
-    font-size: 8px;
-    letter-spacing: 0.09em;
-    margin-bottom: 13px;
-  }
-  .certle-name {
-    padding-right: 27px;
-  }
-  .certle-name h1 {
-    gap: 4px;
-    letter-spacing: -1px;
-  }
-  .certle-letter {
-    width: 39px;
-    height: 45px;
-    font-size: 27px;
-    border-radius: 5px;
-    box-shadow: 0 2px 0 #1a1a1a;
-  }
-  .certle-name > img {
-    right: -21px;
-    width: 38px;
-    height: 60px;
-    bottom: -1px;
-  }
-  .certle-heading > p:not(.certle-eyebrow) {
-    font-size: 12px;
-    margin: 18px 0 11px;
-  }
-  .certle-date {
-    font-size: 8px;
-    gap: 10px;
-  }
-  .certle-paper-top {
-    padding: 17px 19px;
-  }
-  .certle-paper-top h2 {
-    font-size: 24px;
-  }
-  .certle-paper-top .certle-eyebrow {
-    font-size: 8px;
-  }
-  .certle-tariff {
-    width: 46px;
-    height: 46px;
-    font-size: 22px;
-  }
-  .certle-paper {
-    padding: 19px;
-  }
-  .certle-question {
-    font-size: 23px;
-    line-height: 1.35;
-    margin-bottom: 18px;
-  }
-  .certle-source {
-    font-size: 9px;
+    max-width: 660px;
+    padding-inline: 24px;
   }
   .certle-play {
-    border-radius: 13px;
+    grid-template-columns: 1fr;
   }
-  .certle-form-bottom {
+  .certle-question-sheet {
+    padding: 24px 28px;
+  }
+  .certle-question {
+    font-size: 34px;
+    margin: 25px 0;
+  }
+  .certle-paper-source {
+    grid-template-columns: 1fr auto;
+    padding-top: 12px;
+  }
+  .certle-paper-source > .certle-eyebrow,
+  .certle-paper-seal {
+    display: none;
+  }
+  .certle-paper-source p br {
+    display: none;
+  }
+  .certle-paper-source p {
+    display: flex;
     gap: 8px;
+    font-size: 12px;
   }
-  .certle-primary {
-    font-size: 12px !important;
-    padding: 11px 13px;
-    gap: 8px;
+  .certle-workspace {
+    border-left: 0;
+    border-top: 1px solid #1a1a1a;
+    padding: 25px 28px;
   }
-  .certle-form-bottom p {
+  .certle-companion {
+    right: 0;
+    width: 64px;
+    top: 54px;
+  }
+  .certle-letter {
+    width: 54px;
+    height: 59px;
+    font-size: 37px;
+  }
+}
+@media (max-width: 540px) {
+  .certle-main {
+    padding: 0 18px 24px;
+  }
+  .certle-heading {
+    text-align: left;
+    padding: 12px 0 14px;
+  }
+  .certle-heading > .certle-eyebrow {
     font-size: 9px;
+    letter-spacing: 0.09em;
+    margin-bottom: 10px;
   }
-  .certle-result-line strong {
-    font-size: 14px;
+  .certle-logo {
+    gap: 5px;
   }
-  .certle-result-line p {
+  .certle-letter {
+    width: 40px;
+    height: 44px;
+    font-size: 29px;
+    border-radius: 6px;
+    letter-spacing: -1.3px;
+  }
+  .certle-tagline {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .certle-companion {
+    width: 54px;
+    top: 32px;
+    right: 1px;
+  }
+  .certle-toolbar {
+    gap: 4px;
+  }
+  .certle-date {
+    font-size: 9px;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+  .certle-tools {
+    gap: 3px;
+  }
+  .certle-tool-button {
+    width: 44px;
+    justify-content: center;
+  }
+  .certle-tool-button > span {
+    display: none;
+  }
+  .certle-play {
+    border-radius: 10px;
+  }
+  .certle-question-sheet {
+    padding: 18px 21px 16px;
+  }
+  .certle-paper-top .certle-eyebrow {
     font-size: 11px;
   }
-  .certle-result-line {
-    padding-bottom: 18px;
+  .certle-question,
+  .certle-question.is-long {
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 16px 0;
   }
-  .certle-answer-form textarea {
-    min-height: 106px;
+  .certle-question.is-long {
+    font-size: 25px;
   }
-  .certle-stat-grid {
-    gap: 8px;
+  .certle-paper-source p {
+    font-size: 10px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px 10px;
   }
-  .certle-stat-grid strong {
-    font-size: 28px;
+  .certle-paper-source p br {
+    display: initial;
   }
-  .certle-stat-grid span {
-    font-size: 9px;
+  .certle-workspace {
+    padding: 16px 21px;
   }
-  .certle-aside {
-    gap: 20px;
+  .certle-board-heading {
+    margin-bottom: 10px;
   }
-  .certle-next {
-    padding-left: 20px;
-  }
-  .certle-next > time {
-    font-size: 23px;
-  }
-  .certle-next .certle-eyebrow,
-  .certle-record .certle-eyebrow {
-    font-size: 8px;
-  }
-  .certle-next > p:last-child {
+  .certle-board-heading > span {
     font-size: 10px;
   }
-  .certle-key {
-    font-size: 8px;
+  .certle-attempt {
+    grid-template-columns: 19px minmax(0, 1fr) 32px;
+    gap: 8px;
+    min-height: 30px;
   }
-  .certle-scheme-title {
-    align-items: start;
-    flex-direction: column;
-    gap: 10px;
+  .certle-squares {
+    grid-template-columns: repeat(var(--marks), minmax(0, 30px));
   }
-  .certle-scheme h2 {
-    font-size: 28px;
+  .certle-attempts {
+    gap: 6px;
   }
-  .certle-scheme-title .certle-eyebrow {
-    font-size: 8px;
+  .certle-result-line {
+    padding: 10px 0;
+    min-height: 0;
+    font-size: 12px;
   }
-  .certle-scheme li {
-    gap: 10px;
-  }
-  .certle-scheme li > strong > span {
-    display: block;
+  .certle-answer-heading > span {
     font-size: 9px;
   }
-  .certle-scheme li > strong {
+  .certle-answer-heading label {
+    font-size: 13px;
+  }
+  .certle-answer-form textarea {
+    min-height: 92px;
+    padding: 12px;
+  }
+  .certle-form-bottom {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 13px;
+  }
+  .certle-form-bottom > p {
+    text-align: center;
+    font-size: 10px;
+  }
+  .certle-form-bottom > p br {
+    display: none;
+  }
+  .certle-primary {
+    min-height: 48px;
+  }
+  .certle-daily-foot {
+    align-items: start;
+    padding: 18px 0;
+    font-size: 11px;
+  }
+  .certle-daily-foot p > span {
+    display: block;
+  }
+  .certle-next {
     text-align: right;
   }
-  .certle-footer {
-    margin-top: 30px;
+  .certle-next time {
+    display: block;
+    font-size: 13px;
+    margin: 4px 0 0;
   }
-  .certle-attempt-score,
-  .certle-attempt-number {
+  .certle-scheme {
+    padding-top: 27px;
+    margin-top: 12px;
+  }
+  .certle-scheme-title {
+    display: block;
+  }
+  .certle-scheme-title h2 {
+    font-size: 29px;
+    margin-bottom: 13px;
+  }
+  .certle-scheme-intro {
+    font-size: 13px;
+  }
+  .certle-scheme li {
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .certle-scheme li > strong {
+    grid-column: 2;
+  }
+  .certle-scheme li p {
+    font-size: 15px;
+  }
+  .certle-footer {
+    margin-top: 12px;
+  }
+  .certle-footer a {
+    gap: 8px;
+    font-size: 10px;
+  }
+  .certle-footer a > span {
+    font-size: 15px;
+    margin-right: 3px;
+  }
+  .certle-dialog {
+    padding: 21px;
+    max-height: calc(100dvh - 24px);
+  }
+  .certle-dialog-heading h2 {
+    font-size: 26px;
+  }
+  .certle-share-card {
+    padding: 17px 18px 15px;
+  }
+  .certle-share-edition {
     font-size: 9px;
   }
-  .certle-attempt {
+  .certle-share-card-foot > span {
+    font-size: 9px;
+  }
+  .certle-share-score {
+    font-size: 60px;
+  }
+  .certle-share-actions {
     gap: 8px;
+  }
+  .certle-share-actions button {
+    padding: 11px 9px;
+    font-size: 12px !important;
+  }
+  .certle-socials {
+    gap: 5px;
+  }
+  .certle-socials a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .certle-letter {
+    width: 34px;
+    height: 40px;
+    font-size: 26px;
+  }
+  .certle-companion {
+    width: 45px;
+    top: 37px;
+  }
+  .certle-tagline {
+    max-width: 260px;
+    font-size: 11px;
+  }
+  .certle-question-sheet,
+  .certle-workspace {
+    padding-inline: 18px;
+  }
+  .certle-date {
+    gap: 7px;
+    font-size: 8px;
+  }
+  .certle-dialog {
+    padding: 17px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -999,10 +1375,50 @@
   .certle-page *::after {
     animation: none !important;
     transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+.certle-share-image {
+  display: block;
+  width: 100%;
+  max-width: 336px;
+  height: auto;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+@media (max-width: 540px) {
+  .certle-attempts[data-dense="true"] .certle-squares {
+    grid-template-columns: repeat(8, minmax(0, 18px));
+  }
+  .certle-attempts[data-dense="true"] .certle-squares > span {
+    border-radius: 2px;
   }
 }
 
-.certle-squares svg {
-  width: 70%;
-  height: 70%;
+@media (max-width: 540px) {
+  .certle-toolbar {
+    padding-block: 4px;
+  }
+  .certle-heading > .certle-eyebrow {
+    margin-bottom: 8px;
+  }
+  .certle-paper-source {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .certle-page .landing-nav-row {
+    padding-inline: 12px;
+    gap: 6px;
+  }
+  .certle-page .landing-nav-row > div {
+    gap: 6px;
+  }
+  .certle-page .landing-nav-mark {
+    font-size: 18px !important;
+  }
+  .certle-page .landing-nav button {
+    min-height: 44px;
+  }
 }

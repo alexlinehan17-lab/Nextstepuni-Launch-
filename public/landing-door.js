@@ -11,5 +11,12 @@ addEventListener('pagereveal', function (e) {
   if (!e.viewTransition || !m) return;
   m.setAttribute('data-here', '');
   m.style.viewTransitionName = 'starguy';
-  e.viewTransition.finished.finally(function () { m.style.viewTransitionName = ''; });
+  // The traveller may already be running on a restored page, or may never
+  // mount on mobile / reduced motion. Always clear this temporary copy once
+  // the transition ends so it cannot linger beside the footer's Starguy.
+  var clear = function () {
+    m.removeAttribute('data-here');
+    m.style.viewTransitionName = '';
+  };
+  e.viewTransition.finished.then(clear, clear);
 });

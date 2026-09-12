@@ -16,18 +16,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Neutral structural palette: orange and subject colours provide the colour.
         zinc: {
-          50:  '#FAFAF7',
-          100: '#F0F0EB',
-          200: '#E5E4DF',
-          300: '#BFBFBA',
-          400: '#91918D',
-          500: '#666663',
-          600: '#52524F',
-          700: '#40403E',
-          800: '#262625',
+          50:  '#FAFAFA',
+          100: '#F4F4F5',
+          200: '#E4E4E7',
+          300: '#BFBFBF',
+          400: '#919191',
+          500: '#666666',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
           900: '#191919',
-          950: '#131311',
+          950: '#131313',
         },
         // ─── Primary brand accent (orange) ──────────────────────────────
         // Pivot from teal #F26B1F → orange #F26B1F. Source of truth for
@@ -44,7 +45,7 @@ const config: Config = {
         successTint: '#E8F2EC',
         successDarkText: '#1F5F3E',
         brand: {
-          cream: '#FAFBF6',
+          cream: '#FFFFFF', // Legacy alias; app surfaces are white.
           sage: '#6B8F71',
           amber: '#C4873B',
         },

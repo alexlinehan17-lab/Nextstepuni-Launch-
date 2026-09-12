@@ -2,30 +2,26 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Ask the papers — a search box over sixteen years of real Leaving Cert
- * papers. The first keystroke lights a grid of years by subjects: a cell
- * goes orange, deeper with the count, when the typed term appears in that
- * year's question text. Clicking or focusing a lit cell lists the questions
- * — year, level, paper, printed number, and the sentence carrying the term,
- * verbatim, with the SEC attribution. The index is built by
- * scripts/landing/ask-index.mjs from the local corpus of SEC PDFs (Higher
- * Level, 2010–2025, eight subjects) and loaded on the input's first focus;
- * searching is client-side on the marker's tokens.
+ * Search sixteen years of Higher Level papers by printed words or Paper
+ * Trail's topic tags. Separate indexes preserve each source's question
+ * identities; topic hits never depend on the word appearing in the PDF.
  */
 
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Body, Container, Display, Eyebrow, SectionRule } from '../primitives';
+import React, { Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Body, Container, Eyebrow, SectionRule } from '../primitives';
 import { FONT, L, SPACE } from '../theme';
-import { type AskData, type AskIndexFile, type AskQuestion, byPaperOrder, highlight, loadAsk, loadAskIndex, matches, queryTerms, sentenceFor } from '../fx-e/ask';
+import { type AskData, type AskIndexFile, type AskMode, type AskQuestion, byPaperOrder, highlight, loadAsk, loadAskIndex, matches, matchingTopics, queryTerms, sentenceFor } from '../fx-e/ask';
+import HorizontalTabs from '../../ui/HorizontalTabs';
+import Guesswork from './Guesswork';
 import '../fx-e/fx-e.css';
+
+const AskPaperViewer = React.lazy(() => import('../glass/AskPaperViewer'));
 
 const TEXT = {
   eyebrow: 'Ask the papers',
-  line: 'Sixteen years of exam papers. Type a word.',
-  body: 'Every Higher Level paper in eight subjects since 2010, split into its questions. Type a term and the years that asked about it light up. Open a year to read what the SEC set.',
+  lead: 'See where your topic appears in real exam questions.',
+  body: 'Sixteen years of Higher Level papers. Eight subjects, 2010–2025. Search by topic or by the words on the paper, then choose a year to explore.',
   label: 'Search the papers',
-  placeholder: 'A topic, a name, a formula',
-  idle: 'The grid lights as you type.',
   loading: 'Opening sixteen years of papers…',
   failed: 'The papers could not be loaded.',
   none: 'no matches in these papers',
@@ -40,29 +36,37 @@ const MAX_LIST = 20;
 const meta: React.CSSProperties = { fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: L.faint, margin: 0 };
 const fine: React.CSSProperties = { fontFamily: FONT.mono, fontSize: 11, lineHeight: 1.6, color: L.faint, margin: 0 };
 
-const plural = (n: number, one: string): string => `${n} ${one}${n === 1 ? '' : 's'}`;
+const plural = (n: number, one: string, many = `${one}s`): string => `${n} ${n === 1 ? one : many}`;
 
 const AskThePapers: React.FC = () => {
   const [index, setIndex] = useState<AskIndexFile | null>(null);
   const [data, setData] = useState<AskData | null>(null);
   const [state, setState] = useState<'idle' | 'loading' | 'ready' | 'failed'>('idle');
   const [query, setQuery] = useState('');
+  const [mode, setMode] = useState<AskMode>('topics');
+  const [opened, setOpened] = useState<AskQuestion | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const loading = useRef(false);
 
   // The grid's shape on mount, so the section has its form before anyone types.
   useEffect(() => {
     let live = true;
-    loadAskIndex().then(i => { if (live) setIndex(i); }).catch(() => { if (live) setState('failed'); });
+    loadAskIndex().then(i => { if (live) setIndex(i); }).catch(() => { if (live && !loading.current) setState('failed'); });
     return () => { live = false; };
   }, []);
 
   const load = useCallback(() => {
-    if (loading.current || !index) return;
+    if (loading.current || data) return;
     loading.current = true;
     setState('loading');
-    loadAsk(index).then(d => { setData(d); setState('ready'); }).catch(() => { setState('failed'); loading.current = false; });
-  }, [index]);
+    (async () => {
+      const i = index ?? await loadAskIndex();
+      setIndex(i);
+      const d = await loadAsk(i);
+      setData(d);
+      setState('ready');
+    })().catch(() => { setState('failed'); loading.current = false; });
+  }, [index, data]);
 
   const terms = useMemo(() => queryTerms(query), [query]);
 
@@ -71,8 +75,8 @@ const AskThePapers: React.FC = () => {
     const years = new Set<number>();
     let total = 0, max = 0;
     if (data && terms.length) {
-      for (const q of data.questions) {
-        if (!matches(q, terms)) continue;
+      for (const q of mode === 'topics' ? data.topicQuestions : data.questions) {
+        if (!(mode === 'topics' ? matchingTopics(q, terms).length > 0 : matches(q, terms))) continue;
         const key = `${q.subject.id}|${q.paper.y}`;
         const list = cells.get(key) ?? [];
         list.push(q);
@@ -83,16 +87,16 @@ const AskThePapers: React.FC = () => {
       }
     }
     return { cells, total, yearCount: years.size, max };
-  }, [data, terms]);
+  }, [data, terms, mode]);
 
   useEffect(() => { if (selected && !cells.has(selected)) setSelected(null); }, [cells, selected]);
 
   const term = query.trim();
   const status = state === 'failed' ? TEXT.failed
-    : !term ? TEXT.idle
+    : !term ? 'The grid lights as you type.'
     : state !== 'ready' ? TEXT.loading
     : total === 0 ? <><b>{term}</b> — {TEXT.none}</>
-    : <><b>{term}</b> — {plural(total, 'question')} across {plural(yearCount, 'year')}</>;
+    : <><b>{term}</b> — {mode === 'topics' ? plural(total, 'tagged question') : plural(total, 'text match', 'text matches')} across {plural(yearCount, 'year')}</>;
 
   const years = index?.years ?? [];
   const subjects = index?.subjects ?? [];
@@ -101,17 +105,27 @@ const AskThePapers: React.FC = () => {
   const selName = subjects.find(s => s.id === selSubject)?.name ?? '';
 
   return (
-    <section id="ask" className={SPACE.sectionTight} style={{ position: 'relative', scrollMarginTop: 70 }}>
+    <section id="ask" aria-labelledby="ask-heading" className={SPACE.sectionTight} style={{ position: 'relative', scrollMarginTop: 70 }}>
       <SectionRule />
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          <div className="lg:col-span-4 lg:pt-2">
+          <div className="lg:col-span-4 lg:pt-2 min-w-0">
             <Eyebrow>{TEXT.eyebrow}</Eyebrow>
-            <Display size="sub" as="h2" className="mt-4" style={{ maxWidth: '18ch' }}>{TEXT.line}</Display>
-            <Body className="mt-5" style={{ maxWidth: '40ch' }}>{TEXT.body}</Body>
+            <div className="mt-5"><Guesswork /></div>
+            <Body style={{ marginTop: 20, maxWidth: '32ch', fontSize: 18, fontWeight: 500, lineHeight: 1.45, color: L.ink }}>{TEXT.lead}</Body>
+            <Body style={{ marginTop: 12, maxWidth: '40ch' }}>{TEXT.body}</Body>
           </div>
 
           <div className="lg:col-span-8 min-w-0">
+            <div className="fxe-modes">
+              <HorizontalTabs<AskMode>
+                label="Search by"
+                variant="pill"
+                value={mode}
+                options={[{ value: 'topics', label: 'Topics' }, { value: 'words', label: 'Words' }]}
+                onChange={value => { setMode(value); setSelected(null); }}
+              />
+            </div>
             <label htmlFor="fxe-search" style={meta}>{TEXT.label}</label>
             <input
               id="fxe-search"
@@ -120,16 +134,21 @@ const AskThePapers: React.FC = () => {
               value={query}
               onChange={e => { setQuery(e.target.value); if (state === 'idle') load(); }}
               onFocus={() => { if (state === 'idle') load(); }}
-              placeholder={TEXT.placeholder}
+              placeholder={mode === 'topics' ? 'Try Trigonometry, photosynthesis, poetry…' : 'A word or phrase from a question…'}
               autoComplete="off"
               autoCorrect="off"
               autoCapitalize="off"
               spellCheck={false}
-              aria-describedby="fxe-count"
+              aria-describedby="fxe-search-help fxe-count"
             />
+            <p id="fxe-search-help" className="fxe-help">{mode === 'topics'
+              ? 'Find tagged topics, even when the topic’s name isn’t printed in the question.'
+              : 'Find words in the question text, including word endings as you type.'}</p>
             <p id="fxe-count" className="fxe-count" role="status" aria-live="polite">{status}</p>
+            {state === 'failed' && <button className="fxe-open" type="button" onClick={load}>Try again</button>}
 
             {index && (
+              <div className="fxe-grid-scroll" data-lenis-prevent>
               <div className="fxe-grid" style={{ '--fxe-years': years.length } as React.CSSProperties} role="group" aria-label="Years by subject">
                 <span aria-hidden="true" />
                 {years.map(y => (
@@ -142,13 +161,15 @@ const AskThePapers: React.FC = () => {
                       const key = `${s.id}|${y}`;
                       const count = cells.get(key)?.length ?? 0;
                       const lit = count > 0;
+                      const untagged = mode === 'topics' && data && !data.topicCoverage.has(key);
                       return (
                         <button
                           key={key}
                           type="button"
-                          className={`fxe-cell${lit ? ' fxe-cell--lit' : ''}`}
+                          className={`fxe-cell${lit ? ' fxe-cell--lit' : ''}${untagged ? ' fxe-cell--untagged' : ''}`}
                           style={{ '--lit': lit ? 0.28 + 0.72 * (count / max) : 0 } as React.CSSProperties}
-                          aria-label={`${s.name} ${y}: ${lit ? plural(count, 'question') : 'no matches'}`}
+                          aria-label={`${s.name} ${y}: ${lit ? plural(count, 'question') : untagged ? 'topic tags not available' : 'no matches'}`}
+                          title={untagged ? 'Topic tags not available for this subject and year' : undefined}
                           aria-pressed={selected === key}
                           tabIndex={lit ? 0 : -1}
                           onClick={() => { if (lit) setSelected(key); }}
@@ -159,18 +180,22 @@ const AskThePapers: React.FC = () => {
                   </React.Fragment>
                 ))}
               </div>
+              </div>
             )}
+            <p className="fxe-help fxe-swipe">Swipe across the grid to see all years.</p>
+            {mode === 'topics' && <p className="fxe-help">Based on available Paper Trail tags. An unlit year doesn’t prove a topic was absent; a dash means tags aren’t available yet.</p>}
 
             {selected && list.length > 0 && (
               <div className="mt-8">
                 <p style={meta}>{selName} · {selYear} — {plural(list.length, 'question')}</p>
                 <ol className="fxe-results" style={{ marginTop: 12 }}>
                   {list.slice(0, MAX_LIST).map(q => (
-                    <li key={`${q.paper.f}-${q.n}-${q.page}`} className="fxe-result">
-                      <p style={meta}>{LEVEL[q.paper.l]}{q.paper.p ? ` · ${q.paper.p}` : ''} · {q.n} · p.{q.page}</p>
-                      <p className="fxe-result__text">
+                    <li key={`${q.paper.y}-${q.paper.f}-${q.n}-${q.page}`} className="fxe-result">
+                      <p style={meta}>{LEVEL[q.paper.l]}{q.paper.p ? ` · ${q.paper.p}` : ''} · {q.n}{q.page > 0 ? ` · p.${q.page}` : ''}</p>
+                      {mode === 'topics' ? <p className="fxe-result__text">{matchingTopics(q, terms).map(t => t.label).join(' · ')}</p> : <p className="fxe-result__text">
                         {highlight(sentenceFor(q, terms), terms).map((r, j) => r.hit ? <mark key={j} className="fxe-mark">{r.text}</mark> : <React.Fragment key={j}>{r.text}</React.Fragment>)}
-                      </p>
+                      </p>}
+                      <button type="button" className="fxe-open" onClick={() => setOpened(q)} aria-label={`Open ${q.subject.name} ${q.paper.y} ${q.paper.p} ${q.n}`}>Open question <span aria-hidden="true">→</span></button>
                       <p style={fine}>SEC Leaving Certificate {q.subject.attributionName} {q.paper.y} {LEVEL[q.paper.l]} — © State Examinations Commission</p>
                     </li>
                   ))}
@@ -181,6 +206,9 @@ const AskThePapers: React.FC = () => {
           </div>
         </div>
       </Container>
+      {opened && <Suspense fallback={<div className="fixed inset-0 z-[100] bg-white p-8" role="status">Opening the question… <button type="button" className="fxe-open" onClick={() => setOpened(null)}>Cancel</button></div>}>
+        <AskPaperViewer question={opened} onClose={() => setOpened(null)} />
+      </Suspense>}
     </section>
   );
 };

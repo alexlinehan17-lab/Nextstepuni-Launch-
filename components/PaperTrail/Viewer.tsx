@@ -19,6 +19,7 @@
  *    transforms which would re-anchor position:fixed.
  */
 
+import '../launchpad/launchpad.css';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
@@ -1035,6 +1036,34 @@ const Viewer: React.FC<ViewerProps> = ({
     setZoom(ZOOM_STEPS[Math.min(ZOOM_STEPS.length - 1, Math.max(0, i + dir))]);
   };
 
+  const inlineScheme = isWide && side === 'paper' && Boolean(answersOn || topicsOn || reveal);
+  const schemeContent = reveal ? (
+              <RevealContent
+                q={reveal}
+                wide={isWide}
+                reduced={!!reducedMotion}
+                schemePdf={sessions.current.scheme.pdf}
+                schemeUrl={scheme?.url}
+                schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
+                copyright={answerMap?.copyright}
+                selfMark={selfMarkOn}
+                existingMark={attempt.marks?.[reveal.n]}
+                licence={storageNs ? markerLicence(storageNs.split('|')[0]) : null}
+                siblings={(() => {
+                  if (!topics) return undefined;
+                  const tag = topics.q.find(t => t.n === reveal.n);
+                  if (!tag) return undefined;
+                  return siblingsFor(topics.subjectId, tag.primary)
+                    .filter(s => !(s.year === topics.year && s.level === topics.level && s.lang === topics.lang && s.fileid === topics.fileid))
+                    .slice(0, 3);
+                })()}
+                onJumpSibling={s => { setReveal(null); onCrossYear?.(s); }}
+                onRecordMark={m => recordMark(reveal.n, m)}
+                onClose={() => setReveal(null)}
+                onFullScheme={jumpSchemeToPage}
+              />
+  ) : null;
+
   // ── render ──
   return createPortal(
     <div
@@ -1075,7 +1104,7 @@ const Viewer: React.FC<ViewerProps> = ({
               variant="pill"
               size="sm"
               label="Paper or marking scheme"
-              className="shrink-0"
+              className="pt-document-toggle shrink-0"
               value={side}
               onChange={next => setSide(next as Side)}
               options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]}
@@ -1091,7 +1120,7 @@ const Viewer: React.FC<ViewerProps> = ({
               aria-label="Show the marking scheme beside each question"
               className={`${E_BUTTON} ${answersOn ? E_BUTTON_ON : E_BUTTON_OFF}`}
             >
-              <BookOpenCheck size={14} className="min-[360px]:hidden" /><span className="hidden min-[360px]:inline">Answers</span>
+              <span className={`pt-mode-dot ${answersOn ? 'is-on' : ''}`} aria-hidden="true" /><span>Answers</span>
             </button>
           )}
           {side === 'paper' && (
@@ -1231,6 +1260,7 @@ const Viewer: React.FC<ViewerProps> = ({
         </div>
       </div>
 
+      <div className="pt-reader-workspace" data-split={inlineScheme || undefined}>
       {/* Body */}
       {session.state === 'ready' && session.pdf ? (
         <div
@@ -1321,6 +1351,12 @@ const Viewer: React.FC<ViewerProps> = ({
         />
       )}
 
+      {inlineScheme && <aside className="pt-reader-sidebar" aria-label="Question workspace">
+        <div className="pt-reader-sidebar-heading"><h2>Question workspace</h2><p>Keep the question in view while you explore its scheme.</p></div>
+        {answerMap && session.state === 'ready' && <MobileQuestionTools page={session.page} initialQuestion={focusQuestion} questions={anchorsByPage.get(session.page) ?? []} topicInfo={topicsOn ? topicInfoByN : undefined} showAnswers={answersOn} onAnswer={onReveal} onTopic={onTopic} />}
+        {schemeContent}
+      </aside>}
+      </div>
       {/* Footer: zoom + page scrubber */}
       {session.state === 'ready' && (
         <div
@@ -1360,7 +1396,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
                 <span className="text-[9px] text-zinc-400">tap a page</span>
               </div>
-              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-[#ece9e4] dark:bg-zinc-800">
+              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-zinc-800">
                 {Array.from({ length: session.numPages }, (_, i) => {
                   const v = marksByPage.map.get(i + 1) ?? 0;
                   const intensity = v / marksByPage.max;
@@ -1475,7 +1511,7 @@ const Viewer: React.FC<ViewerProps> = ({
       {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
           on tablet+; same sleek glide as the GC dashboard student view. */}
       <AnimatePresence>
-        {reveal && (
+        {reveal && !inlineScheme && (
           <>
             <MotionDiv
               key="reveal-backdrop"
@@ -1502,30 +1538,7 @@ const Viewer: React.FC<ViewerProps> = ({
                   : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
-              <RevealContent
-                q={reveal}
-                wide={isWide}
-                reduced={!!reducedMotion}
-                schemePdf={sessions.current.scheme.pdf}
-                schemeUrl={scheme?.url}
-                schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
-                copyright={answerMap?.copyright}
-                selfMark={selfMarkOn}
-                existingMark={attempt.marks?.[reveal.n]}
-                licence={storageNs ? markerLicence(storageNs.split('|')[0]) : null}
-                siblings={(() => {
-                  if (!topics) return undefined;
-                  const tag = topics.q.find(t => t.n === reveal.n);
-                  if (!tag) return undefined;
-                  return siblingsFor(topics.subjectId, tag.primary)
-                    .filter(s => !(s.year === topics.year && s.level === topics.level && s.lang === topics.lang && s.fileid === topics.fileid))
-                    .slice(0, 3);
-                })()}
-                onJumpSibling={s => { setReveal(null); onCrossYear?.(s); }}
-                onRecordMark={m => recordMark(reveal.n, m)}
-                onClose={() => setReveal(null)}
-                onFullScheme={jumpSchemeToPage}
-              />
+              {schemeContent}
             </MotionDiv>
           </>
         )}

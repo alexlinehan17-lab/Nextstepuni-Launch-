@@ -57,33 +57,25 @@
 @keyframes landing-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.8); } }
 
 /* ── Locks inside the looking glass ─────────────────────────────────────
-   A control the visitor cannot use yet: a small ink padlock on its corner,
+   A control the visitor cannot use yet: a small ink padlock inside its edge,
    and a shake when it is pressed. Applied by GlassStage, never by the app. */
 .landing-glass .landing-locked { position: relative; opacity: 0.62; }
 .landing-glass .landing-locked::after {
   content: '';
   position: absolute;
-  top: -7px;
-  right: -7px;
+  top: 8px;
+  right: 8px;
   width: 18px;
   height: 18px;
-  border-radius: 999px;
-  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A1A1A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='11' width='16' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E") center / 10px 10px no-repeat;
-  border: 1px solid #1A1A1A;
-  box-shadow: 0 1px 0 rgba(26,26,26,0.12);
+  border-radius: 0;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A1A1A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='11' width='16' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E") center / 14px 14px no-repeat;
+  border: 0;
   pointer-events: none;
   z-index: 3;
 }
-.landing-glass .landing-shake { animation: landing-shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
-@keyframes landing-shake {
-  20%, 80% { transform: translate3d(-1px, 0, 0); }
-  40% { transform: translate3d(2px, 0, 0); }
-  60% { transform: translate3d(-2px, 0, 0); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .landing-glass .landing-shake { animation: none; }
-}
-
+/* Full-width subject rows reserve a real icon column, entirely inside the rail. */
+.landing-glass .pt-rail-subjects .landing-locked::after { top: 50%; right: 16px; transform: translateY(-50%); }
+.landing-glass .pt-rail-subjects .landing-locked > svg { visibility: hidden; }
 /* Tabs live in a clipped rail, so their padlock sits inline after the label instead of on the corner. */
 .landing-glass [role="tab"].landing-locked::after { position: static; display: inline-block; vertical-align: middle; margin-left: 6px; }
 /* Paper Trail's home footer (Topic Atlas / Practice tools links) is a way out of the tool; the playground has its own. */
@@ -149,3 +141,26 @@ html.lenis, html.lenis body { height: auto; }
 .landing-footer-statement-row { position:relative; display:flex; align-items:flex-end; justify-content:space-between; gap:48px; }
 .landing-footer-caption { margin:0 0 7px; max-width:420px; font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600; line-height:1.4; letter-spacing:-.015em; text-align:right; color:#1a1a1a; }
 @media(max-width:760px) { .landing-footer-statement-row { flex-direction:column; align-items:flex-start; gap:22px; } .landing-footer-caption { max-width:32ch; font-size:13px; text-align:left; } }
+
+/* A candid sample-results sign, with the same playful ink as the landing page. */
+.landing-results-sign { max-width: 720px; margin: 2px auto 34px; color: #1a1a1a; }
+.landing-results-sign > button { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; text-align: left; padding: 22px 26px; background: #ff6b14; border: 1.5px solid #1a1a1a; border-radius: 14px; transform: rotate(-.6deg); transition: transform .25s ease, box-shadow .25s ease; }
+.landing-results-sign > button:hover, .landing-results-sign > button[aria-expanded='true'] { transform: rotate(0deg) translateY(-2px); box-shadow: 4px 5px 0 #1a1a1a; }
+.landing-results-sign small { display: block; font: 700 10px/1.4 'DM Sans', sans-serif; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; }
+.landing-results-sign strong { display: block; max-width: 450px; font: 600 29px/1.15 'Source Serif 4', Georgia, serif; letter-spacing: -.025em; }
+.landing-results-sign-hint { display: flex; align-items: center; gap: 12px; margin-top: 12px; font: 500 12px/1.5 'DM Sans', sans-serif; }
+.landing-results-sign-hint svg { flex-shrink: 0; transition: transform .25s; }
+.landing-results-sign [aria-expanded='true'] .landing-results-sign-hint svg { transform: rotate(180deg); }
+.landing-results-sign img { width: 86px; height: 108px; object-fit: contain; flex-shrink: 0; transform: rotate(8deg); transition: transform .45s ease; }
+.landing-results-sign > button:hover img { transform: translateY(-8px) rotate(-5deg); }
+.landing-results-sign > div { padding: 22px 5px 0; font: 400 14px/1.7 'DM Sans', sans-serif; }
+.landing-results-sign a { display: inline-flex; align-items: center; gap: 16px; margin-top: 12px; padding-bottom: 4px; border-bottom: 1px solid #1a1a1a; font-weight: 600; }
+@media (max-width: 600px) {
+  .landing-results-sign > button { padding: 20px; gap: 10px; }
+  .landing-results-sign strong { font-size: 24px; }
+  .landing-results-sign img { width: 54px; height: 80px; }
+  .landing-results-sign-hint { font-size: 11px; align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .landing-results-sign > button, .landing-results-sign img, .landing-results-sign-hint svg { transform: none !important; transition: none; }
+}

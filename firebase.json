@@ -132,6 +132,15 @@
             "value": "application/octet-stream"
           }
         ]
+      },
+      {
+        "source": "/landing{,-dev.html,-demo.html}",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
       }
     ]
   },

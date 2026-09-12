@@ -1,12 +1,10 @@
+/// <reference types="vite/client" />
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Dev-only harness for the marketing landing page — mirrors onboarding-dev.tsx.
- * `npx vite`, then open /landing-dev.html. Never part of the production build:
- * the single-input Vite build ignores extra root HTML files, so this is safe
- * on main while the page is still being designed. The page itself lives in
- * components/landing/.
+ * Marketing landing entry, served at /landing in production and
+ * /landing-dev.html during local development.
  */
 
 import React from 'react';
@@ -15,6 +13,15 @@ import { MotionGlobalConfig } from 'framer-motion';
 import LandingPage from './components/landing/LandingPage';
 import './index.css';
 import './components/landing/landing.css';
+
+// Returning app users may already have a worker controlling this document.
+// Refresh its routing rules here too, without installing the offline app for
+// first-time marketing visitors. Chapter windows recover on controllerchange.
+if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+  void navigator.serviceWorker.getRegistration()
+    .then(registration => registration?.update())
+    .catch(() => {});
+}
 
 // ?static=1 completes every Framer animation instantly. Screenshot tooling
 // drives Chrome tabs that report visibilityState "hidden", where the frame

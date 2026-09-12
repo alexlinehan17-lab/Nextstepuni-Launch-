@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -14,6 +15,7 @@ import {
   BookmarkPlus, Check, ArrowUpRight, TrendingUp, X, Clock, Eye,
   type LucideIcon,
 } from 'lucide-react';
+import ToolMasthead from './launchpad/ToolMasthead';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import { COLORS } from '../design/tokens';
 import { db } from '../firebase';
@@ -413,30 +415,14 @@ export default FutureFinder;
 function IntroPhase({ isJunior, autoPoints, onStart, onViewResults }: { isJunior: boolean; autoPoints: number; onStart: () => void; onViewResults?: () => void }) {
   return (
     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
-      <div className="text-center py-10">
-        <p className="text-zinc-500 dark:text-zinc-400 max-w-md mx-auto mb-6 leading-relaxed">
-          {isJunior
-            ? <>Answer 7 quick questions. We'll suggest the subjects you might enjoy most in senior cycle {'\u2014'} based on what you're actually into.</>
-            : <>Answer 10 quick questions. We'll match you with college courses that fit who you are {'\u2014'} not just your points.</>}
-        </p>
-        {!isJunior && autoPoints > 0 && (
-          <p className="text-sm font-medium max-w-sm mx-auto mb-4" style={{ color: COLORS.accent }}>
-            Based on your current grades, you're at {autoPoints} points
-          </p>
-        )}
-        <p className="text-sm text-zinc-400 dark:text-zinc-500 max-w-sm mx-auto mb-8">
-          {isJunior
-            ? 'We look at your interests, the scenarios you find appealing, and how you like to work to suggest subject clusters that fit.'
-            : 'We look at your interests, values, work style and preferred location to find courses you\'ll actually enjoy.'}
-        </p>
-        <div className="flex flex-col items-center gap-3">
-          <PrimaryActionButton label="Let's Go" onClick={onStart} icon={Compass} />
-          {onViewResults && (
-            <button onClick={onViewResults} className="text-sm hover:underline" style={{ color: COLORS.accent }}>
-              View previous results
-            </button>
-          )}
-        </div>
+      <ToolMasthead tool="future-finder" eyebrow={isJunior ? 'Your next chapter · Junior Cycle' : 'Your next chapter'} title={isJunior ? 'Subject Explorer.' : 'Future Finder.'} subtitle="Start with what you enjoy. Explore what could come next." />
+      <div className="lp-split">
+        <section><h2 className="lp-title">There’s more than one way forward.</h2><p className="lp-body">{isJunior ? 'Seven quick questions about your interests and the way you like to work. Explore senior-cycle subjects you might enjoy.' : 'Ten quick questions about your interests, values and preferred way to work.'}</p>
+          <div className="lp-steps">{[['01','Start with your interests'],['02',isJunior ? 'Explore subject clusters' : 'Explore possible routes'],['03','Compare what appeals to you']].map(([n,t]) => <div className="lp-step" key={n}><b>{n}</b><strong>{t}</strong></div>)}</div>
+          <div className="lp-action-row"><span className="lp-body">{isJunior ? '7' : '10'} questions · Your own pace</span><button className="lp-button" onClick={onStart}>Let’s explore <ArrowRight size={17} /></button></div>
+          {onViewResults && <button className="mt-5 text-sm underline" onClick={onViewResults}>View previous results</button>}
+        </section>
+        <aside className="lp-panel"><p className="lp-eyebrow">Start with what draws you in</p><h2 className="lp-title">What do you enjoy getting stuck into?</h2><p className="lp-body">Solving a problem. Making something. Working with people. The questions help you notice what appeals to you, before narrowing your options.</p><p className="lp-body mt-5">{isJunior ? 'Your results suggest subjects to explore. Talk through the choices with your guidance counsellor.' : `Your current grades give a starting point${autoPoints > 0 ? ` of ${autoPoints} points` : ''}. Your interests still matter.`}</p></aside>
       </div>
     </MotionDiv>
   );
