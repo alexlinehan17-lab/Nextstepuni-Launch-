@@ -167,6 +167,7 @@ const lexemes = (value: string): string[] =>
     .replace(/[’'`]/g, "")
     .replace(/[−–—‐]/g, "-")
     .replace(/×/g, " multiply ")
+    .replace(/\b([a-z]{2,})\s*-\s*(?=[a-z]{2,}\b)/g, "$1 ")
     .replace(/(?<=[a-z])-(?=[a-z])/g, " ")
     .replace(/[^a-z0-9%°+\-=/().,\s]/g, " ")
     .replace(/[(),]/g, " ")

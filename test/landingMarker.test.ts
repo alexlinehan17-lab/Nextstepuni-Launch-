@@ -68,6 +68,7 @@ describe("scheme-point marking", () => {
   it.each([
     "Adenosine Tri-Phosphate",
     "adenosine tri phosphate",
+    "adenosine tri - phosphate",
     "Adenosine Tri‑Phosphate",
     "adenosinetriphosphate",
     "  ADENOSINE   TRIPHOSPHATE!  ",
@@ -99,6 +100,7 @@ describe("scheme-point marking", () => {
     ["muscles contacting", "muscles contracting"],
     ["ADP", "ATP"],
     ["H2", "H2O"],
+    ["x - y", "x + y"],
     ["24 Hz", "24 kHz"],
     ["carbon not dioxide", "carbon dioxide"],
     ["tri not phosphate", "triphosphate"],
