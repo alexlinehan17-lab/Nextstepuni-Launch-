@@ -1040,7 +1040,7 @@ const COUNTED_ANSWER_NOUNS = [
  * are each a number in front of a noun meaning nothing of the kind, and
  * test/waysInPrintedCount.test.ts fails loudly on all four.
  */
-const COUNTED_UNIT_NOUNS = new Set([
+export const COUNTED_UNIT_NOUNS = new Set([
   // places of accuracy, and the value in a blank
   'places', 'decimals', 'values', 'figures', 'digits',
   // time
@@ -1108,7 +1108,11 @@ const countValue = (token: string): number | null => {
  * — there have to be at least two of them, and none may carry a verb phrase
  * that would make it an instruction rather than a thing.
  */
-const LIST_LEAD = /\b(?:each|any|all)\s+of\s+the\s+following\b[^:]{0,80}:/i;
+// "each of the following:", and every other way a paper introduces the same
+// list — "under the following headings:", "at the following stages:", "from
+// the following three options:". All of them print the items straight after
+// the colon; only the preposition in front changes.
+const LIST_LEAD = /\b(?:(?:each|any|all)\s+of\s+)?the\s+following\b[^:]{0,80}:/i;
 
 export function findPrintedList(text: string): string[] {
   const source = (text ?? '').trim();
@@ -1116,8 +1120,12 @@ export function findPrintedList(text: string): string[] {
   if (!lead) return [];
   const tail = source.slice(lead.index + lead[0].length).trim();
   if (!tail) return [];
-  const parts = tail
-    .split(/;|,(?![^()]*\))/)
+  // Split on the paper's own separator. A numbered list -- "(1) Controlled
+  // grazing (2) Reseeding" -- carries its own, and splitting that on commas
+  // instead would cut inside an item's bracketed gloss.
+  const numbered = tail.split(/\s*\(\d\)\s*/).map(x => x.trim()).filter(Boolean);
+  const parts = (numbered.length > 1 ? numbered : tail
+    .split(/;|,(?![^()]*\))/))
     .map(part => part.replace(/^[\s.\u2022-]+|[\s.]+$/g, '').trim())
     .filter(Boolean);
   if (parts.length < 2 || parts.length > 8) return [];
@@ -1258,16 +1266,24 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
   const number = '(one|two|three|four|five|six|seven|eight|[1-8])';
   // `modifiers` captures the words between the count and its noun so they can
   // be vetted below; the noun itself still has to be on the allowlist.
-  // The noun is captured now, not just matched, so a word that is NOT on the
-  // allowlist can still carry a count provided it is not a unit. Everything
-  // else about the match is unchanged: the count still has to be printed, still
-  // has to follow the command, and still has to survive every guard below.
-  const countedPattern = new RegExp(
+  // TWO PASSES, not one alternation. The allowlist is tried alone first and
+  // only where it finds nothing does any plural noun get a turn.
+  //
+  // As one pattern it was wrong for the reason the modifier comment above
+  // already gives: the modifiers can eat the allowlisted noun and hand the
+  // match to whatever plural follows it. "Outline two management practices
+  // farmers could employ" matched `two management practices farmers` -- two
+  // modifiers "management practices", noun "farmers" -- and planned a row per
+  // farmer. Run separately, the first pass reads `two management practices`
+  // and the second never runs.
+  const countedWith = (nounPattern: string) => new RegExp(
     `\\b(any\\s+)?${number}\\s+(${COUNT_MODIFIER_WORD}{0,${COUNT_MODIFIER_LIMIT}})`
-    + `((?:${COUNTED_ANSWER_NOUNS})|[a-z]{3,}s)\\b`,
+    + `(${nounPattern})\\b`,
     'gi',
   );
-  const counted = (commands.length === 1 ? [...text.matchAll(countedPattern)] : []).filter(match => {
+  const matchesFor = (nounPattern: string) => (
+    commands.length === 1 ? [...text.matchAll(countedWith(nounPattern))] : []
+  ).filter(match => {
     if (match.index === undefined) return false;
     // A unit is never an answer row, however the sentence reads around it.
     const noun = (match[match.length - 1] ?? '').toLowerCase();
@@ -1284,6 +1300,25 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
       && !/[.?!;]/.test(text.slice(command.end, match.index))
     ));
   });
+
+  const allowlisted = matchesFor(COUNTED_ANSWER_NOUNS);
+  // "any two OF THE weeds", "any three of the following measures" — a choice
+  // out of a set the paper has already shown. The modifier slot cannot carry
+  // it, because "of" and "the" are stop words there and have to be: letting
+  // the modifiers eat them is what made "two functions of product packaging"
+  // count packaging. So the construction is read on its own terms.
+  const chosenFrom = (
+    commands.length === 1
+      ? [...text.matchAll(new RegExp(
+        `\\b(any\\s+)${number}\\s+of\\s+(?:the\\s+)?(?:following\\s+)?([a-z]{3,}s)\\b`, 'gi'))]
+      : []
+  ).filter(match => match.index !== undefined
+    && !COUNTED_UNIT_NOUNS.has((match[3] ?? '').toLowerCase())
+    && commands.some(command => command.end <= match.index!
+      && !/[.?!;]/.test(text.slice(command.end, match.index))));
+  const counted = allowlisted.length > 0
+    ? allowlisted
+    : chosenFrom.length > 0 ? chosenFrom : matchesFor('[a-z]{3,}s');
 
   // “Suggest one reason for any three treatments” is a common, unambiguous
   // nested construction: the selectable items set the number of plan lines.
@@ -1360,6 +1395,20 @@ const EXPLANATION_COMMANDS = new Set([
   'account for', 'an dóigh leat', 'an maith leat', 'ar thaitin', 'cén fáth', 'cad chuige',
   'comment', 'déan plé', 'discuss', 'é sin a phlé', 'evaluate', 'explain', 'justify',
   'léirigh', 'mínigh', 'pléigh', 'predict', 'suggest', 'why',
+]);
+// Explanation splits three ways, and the SEC's own verbs say which.
+//
+// "Discuss", "evaluate" and "justify" ask a student to WEIGH something: there
+// is a side, another side, and a judgement. "Explain", "account for" and "why"
+// ask for a CAUSAL chain: what brings it about, how it works, what follows.
+// Everything else keeps the general claim-evidence-link shape.
+const WEIGHING_COMMANDS = new Set([
+  'discuss', 'evaluate', 'justify', 'comment', 'déan plé', 'pléigh',
+  'é sin a phlé', 'an dóigh leat', 'an maith leat', 'ar thaitin',
+]);
+const CAUSAL_COMMANDS = new Set([
+  'explain', 'account for', 'why', 'cén fáth', 'cad chuige', 'mínigh',
+  'predict', 'suggest',
 ]);
 const PROCEDURE_COMMANDS = new Set([
   'construct', 'déan cur síos', 'describe', 'devise', 'draft', 'how can', 'how does',
@@ -1526,14 +1575,32 @@ function buildPlanPrompts(
   }
 
   if (surfaces.some(surface => EXPLANATION_COMMANDS.has(surface))) {
-    return {
-      kind: 'explanation',
-      prompts: [
-        prompt('reason', 'Main reason or claim', 'State the point you intend to make', taskLine),
-        prompt('evidence', 'Relevant information', 'Copy the exact fact or context you will use'),
-        prompt('link', 'Link to the question', 'Connect your point back to what was asked'),
-      ],
-    };
+    // The COMMAND decides the shape, because the SEC is consistent about what
+    // each one wants and a student can be told it without being told the
+    // answer. One scaffold for every explanation gave 1,894 cards the same
+    // three rows whether the paper said "explain", "discuss" or "justify" --
+    // three different jobs, planned identically, which teaches a student that
+    // the command word does not matter. It is the thing that matters most.
+    //
+    // Still only the shape: what each row is FOR, never what goes in it.
+    const shape = surfaces.some(surface => WEIGHING_COMMANDS.has(surface))
+      ? [
+        prompt('one-side', 'One side of it', 'Set out the first position and what supports it', taskLine),
+        prompt('other-side', 'The other side', 'Set out what stands against it, or the alternative'),
+        prompt('judgement', 'Your judgement', 'Say which way you come down, and on what grounds'),
+      ]
+      : surfaces.some(surface => CAUSAL_COMMANDS.has(surface))
+        ? [
+          prompt('cause', 'The cause', 'Name what brings it about', taskLine),
+          prompt('mechanism', 'How it works', 'Set out the steps between cause and result'),
+          prompt('result', 'The result', 'Say what follows from it'),
+        ]
+        : [
+          prompt('reason', 'Main reason or claim', 'State the point you intend to make', taskLine),
+          prompt('evidence', 'Relevant information', 'Copy the exact fact or context you will use'),
+          prompt('link', 'Link to the question', 'Connect your point back to what was asked'),
+        ];
+    return { kind: 'explanation', prompts: shape };
   }
 
   return {

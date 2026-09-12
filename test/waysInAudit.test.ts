@@ -17,7 +17,7 @@
  */
 import { writeFileSync } from 'node:fs';
 import { describe, it } from 'vitest';
-import { buildQuestionModel } from '../components/WaysIn/questionModel';
+import { buildQuestionModel, COUNTED_UNIT_NOUNS } from '../components/WaysIn/questionModel';
 import { CARDS as AGRICULTURAL_SCIENCE_HIGHER } from '../components/MarkBank/cards/agricultural-science/higher';
 import { CARDS as AGRICULTURAL_SCIENCE_ORDINARY } from '../components/MarkBank/cards/agricultural-science/ordinary';
 import { CARDS as ANCIENT_GREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
@@ -236,7 +236,19 @@ function printedCounts(text: string): { n: number; noun: string }[] {
     if (!Number.isFinite(n) || n < 1 || n > 12) continue;
     const at = words.indexOf(raw);
     if (at > 0 && IDENTIFIED.has(words[at - 1])) continue;
-    out.push({ n, noun: m[4].toLowerCase() });
+    // "the seven animals", "these two samples" — a definite article in front
+    // means the number is naming what is already on the page, not asking for
+    // that many answers. The planner refuses these and is right to; the
+    // auditor has to refuse them too or it reports the planner's correct
+    // behaviour as a defect.
+    if (at > 0 && ['the', 'these', 'those', 'both', 'all'].includes(words[at - 1])) continue;
+    const noun = m[4].toLowerCase();
+    // The planner's own unit list decides, so the auditor cannot report a
+    // "missed count" the planner is right to refuse. Without this it called
+    // "every 3 - 5 years", "carry out the test three times" and "the seven
+    // animals" missed counts, which is the very trap the allowlist exists for.
+    if (COUNTED_UNIT_NOUNS.has(noun)) continue;
+    out.push({ n, noun });
   }
   return out;
 }
@@ -245,6 +257,19 @@ export interface Defect {
   subject: string; level: string; id: string; ref: string;
   kind: string; detail: string; question: string;
 }
+
+// The counted-answer checks read ENGLISH. A modern-language paper sets its
+// questions in its own language, where a word ending in "s" is not a plural and
+// a number in front of it counts nothing an English pattern can see —
+// Lithuanian "dalis" is the singular for "part", and it alone accounted for 142
+// reported misses. Those subjects need their own reading and get no claim here.
+const ENGLISH_MEDIUM = new Set([
+  'agricultural-science', 'applied-maths', 'art', 'biology', 'business',
+  'chemistry', 'classical-studies', 'computer-science', 'construction-studies',
+  'dcg', 'economics', 'engineering', 'english', 'geography', 'history',
+  'home-economics', 'lcvp', 'maths', 'physical-education', 'physics',
+  'politics-and-society', 'religious-education', 'technology',
+]);
 
 export function auditCard(subject: string, level: string, card: any): Defect[] {
   const model = buildQuestionModel({
@@ -262,7 +287,7 @@ export function auditCard(subject: string, level: string, card: any): Defect[] {
 
   const labels = model.planPrompts.map((p) => strip(p.label));
   const allGeneric = labels.length > 0 && labels.every((l) => GENERIC.has(l));
-  const counts = printedCounts(q);
+  const counts = ENGLISH_MEDIUM.has(subject) ? printedCounts(q) : [];
   const named = counts.find((c) => c.n > 1);
 
   if (named && allGeneric) {
@@ -283,9 +308,23 @@ export function auditCard(subject: string, level: string, card: any): Defect[] {
     out.push(base('fixed-scaffold-regardless-of-question',
       `${model.planKind} / ${labels.length} generic row(s), same on every such card`));
   }
-  if (/each of the following|following\s*:/i.test(q) && model.planShape.count <= 1) {
+  // Only where the items are actually THERE. "Identify each of the following
+  // breeds of animals." prints its items as pictures, and the card titled
+  // "Q18(a) Soil quality" covers one item of a list set out elsewhere — in
+  // both the planner is right to keep one row, and calling that a flattened
+  // list reports the planner's correct behaviour as a fault.
+  // "Choose ONE of the following: • Castletown House" is a choice already made
+  // — the card covers the one option — and "the following data ... Trial 1: 62,
+  // Trial 2: 59" is data, not a set of jobs. One row is right for both, so
+  // neither is a flattened list.
+  const choiceOfOne = /\b(?:choose|select|answer)\s+(?:any\s+)?one\b/i.test(q);
+  const dataList = /following\s+data\b/i.test(q);
+  const colon = (choiceOfOne || dataList) ? -1 : q.search(/\bfollowing\b[^:]{0,80}:/i);
+  const afterColon = colon >= 0 ? q.slice(q.indexOf(':', colon) + 1).trim() : '';
+  const looksLikeItems = afterColon.length > 0 && /[;,]/.test(afterColon);
+  if (looksLikeItems && model.planShape.count <= 1) {
     out.push(base('list-flattened',
-      `question sets a list, plan has ${model.planShape.count} row(s)`));
+      `question prints its items and the plan has ${model.planShape.count} row(s)`));
   }
   return out;
 }
