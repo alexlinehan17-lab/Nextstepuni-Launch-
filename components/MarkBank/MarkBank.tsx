@@ -22,6 +22,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import ToolMasthead from '../launchpad/ToolMasthead';
 import SubjectPicker from '../launchpad/SubjectPicker';
+import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
@@ -160,20 +161,23 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
 }
 
 const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => Date.now() }) => {
+  const canSelectSubject = useSubjectAccess();
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
      session, forever. */
   const saved = useMemo(() => readChoice(uid), [uid]);
-  const profileDefault = useMemo(() => profileDeckChoice(studentSubjects), [studentSubjects]);
+  const profileDefault = useMemo(() => profileDeckChoice(studentSubjects?.filter(s => canSelectSubject(s.subjectName))), [studentSubjects, canSelectSubject]);
   const savedIsValid = Boolean(
     saved
-    && SUBJECTS.some(subject => subject.id === saved.subjectId)
+    && SUBJECTS.some(subject => subject.id === saved.subjectId && canSelectSubject(subject.title))
     && deckSize(saved.subjectId, saved.level) > 0,
   );
-  const initialChoice = savedIsValid && saved ? saved : profileDefault ?? { subjectId: SUBJECTS[0].id, level: 'higher' as Level };
+  const initialChoice = savedIsValid && saved ? saved : profileDefault ?? { subjectId: (SUBJECTS.find(s => canSelectSubject(s.title)) ?? SUBJECTS[0]).id, level: 'higher' as Level };
   const [subjectId, setSubjectId] = useState<string>(initialChoice.subjectId);
   const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
+    const chosen = SUBJECTS.find(s => s.id === id);
+    if (!chosen || !canSelectSubject(chosen.title)) return;
     setSubjectId(id);
     // A subject examined at one level has no Higher deck to carry the current
     // choice into; without this, picking LCVP opened an empty Higher deck.
@@ -181,7 +185,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     const next = levels.includes(level) ? level : levels[0];
     setLevel(next);
     writeChoice(uid, { subjectId: id, level: next });
-  }, [uid, level]);
+  }, [uid, level, canSelectSubject]);
   const chooseLevel = useCallback((l: Level) => {
     setLevel(l);
     writeChoice(uid, { subjectId, level: l });

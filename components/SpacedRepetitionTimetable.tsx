@@ -4,16 +4,17 @@
  */
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target, Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff, Flame, CalendarDays, Play, type LucideIcon } from 'lucide-react';
+import { ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target, Settings, ArrowRight, CalendarOff, Flame, CalendarDays, Play, type LucideIcon } from 'lucide-react';
 import ToolMasthead from './launchpad/ToolMasthead';
+import PlannerExplanation from './launchpad/PlannerExplanation';
 import ModalFrame from './ui/ModalFrame';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import HorizontalTabs from './ui/HorizontalTabs';
 import { type SchoolEvent } from './gc/GCKeyEvents';
 import {
-  type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade,
+  type StudentSubjectProfile, type StudyBlock, DAYS_OF_WEEK,
   type TimetableCompletions, type TimetableStreak, getBlockId, toDateKey,
   computeBargains,
 } from './subjectData';
@@ -113,53 +114,13 @@ const StudyBlockCard: React.FC<{
 
 // ─── Priority Row ───────────────────────────────────────────────────────────
 
-const _PRIORITY_BAR_COLORS: Record<string, string> = {
-  High: '',
-  Medium: '',
-  Low: '',
-};
-
-const _PRIORITY_BAR_INLINE: Record<string, React.CSSProperties> = {
-  High: { backgroundColor: COLORS.success },
-  Medium: { backgroundColor: COLORS.success },
-  Low: { backgroundColor: COLORS.success },
-};
-
-const PRIORITY_BADGE_INLINE: Record<string, React.CSSProperties> = {
-  High: { backgroundColor: '#FDF3E7', color: '#C4873B' },
-  Medium: { backgroundColor: COLORS.successTint, color: COLORS.success },
-  Low: {},
-};
-
-const PRIORITY_BADGE_CLASS: Record<string, string> = {
-  High: '',
-  Medium: '',
-  Low: 'bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700/40 text-[#A8A29E] dark:text-zinc-500',
-};
-
-const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> = ({ alloc, maxSessions }) => {
-  const barWidth = maxSessions > 0 ? (alloc.sessions / maxSessions) * 100 : 0;
-
-  return (
-    <div className="flex items-center gap-3">
-      <div className="flex items-center gap-2 w-28 flex-shrink-0">
-        <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectFill(alloc.subjectName) }} />
-        <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 truncate">{alloc.subjectName}</span>
-      </div>
-      <div className="flex-1 h-3 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEAE6' }}>
-        <motion.div
-          className="h-full rounded-full"
-          style={{ backgroundColor: getSubjectHexColor(alloc.subjectName) }}
-          initial={{ width: 0 }}
-          animate={{ width: `${barWidth}%` }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        />
-      </div>
-      <span className="text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400 w-6 text-right">{alloc.sessions}</span>
-      <span className={`text-[9px] font-bold w-14 text-right px-1.5 py-0.5 rounded-full ${PRIORITY_BADGE_CLASS[alloc.priorityLabel] || ''}`} style={PRIORITY_BADGE_INLINE[alloc.priorityLabel]}>{alloc.priorityLabel}</span>
-    </div>
-  );
-};
+const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> = ({ alloc, maxSessions }) => (
+  <div className="lp-allocation-row">
+    <span className="lp-allocation-subject"><i aria-hidden="true" style={{ backgroundColor: getSubjectFill(alloc.subjectName) }} />{alloc.subjectName}</span>
+    <span className="lp-allocation-track" aria-hidden="true"><span style={{ width: `${maxSessions > 0 ? (alloc.sessions / maxSessions) * 100 : 0}%`, backgroundColor: getSubjectFill(alloc.subjectName) }} /></span>
+    <span className="lp-allocation-count">{alloc.sessions} <span>{alloc.sessions === 1 ? 'block' : 'blocks'}</span></span>
+  </div>
+);
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
@@ -784,242 +745,14 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       </div>
 
       </div>
-      {/* ── Priority Breakdown ── */}
-      <div className="p-5 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="font-bold text-xs uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">Priority Breakdown</h3>
-          {/* The deep-dive explainer is senior-only — it documents the CAO
-              points-gain × efficiency formula, which doesn't apply to JC.
-              JC priority is band-deficit driven and shown via session count
-              in the list below. */}
-          {!isJunior && (
-            <button
-              onClick={() => setShowExplainer(!showExplainer)}
-              className="flex items-center gap-1.5 text-xs font-semibold transition-colors"
-              style={{ color: COLORS.accent }}
-            >
-              <HelpCircle size={14} />
-              {showExplainer ? 'Hide explanation' : 'How is this calculated?'}
-            </button>
-          )}
+      <section className="lp-allocation" aria-labelledby="planner-allocation-title">
+        <div className="lp-allocation-heading">
+          <div><p className="lp-eyebrow">The balance of your week</p><h3 id="planner-allocation-title" className="lp-title">Where your time goes.</h3></div>
+          {!isJunior && <button type="button" className="lp-plan-link" onClick={() => setShowExplainer(true)} aria-haspopup="dialog">Behind your plan <ArrowRight size={17} /></button>}
         </div>
-        <div className="space-y-2.5">
-          {allocations
-            .sort((a, b) => b.sessions - a.sessions)
-            .map(alloc => (
-              <PriorityRow key={alloc.subjectName} alloc={alloc} maxSessions={maxSessions} />
-            ))}
-        </div>
-      </div>
-
-      {/* ── Priority Explainer ── (senior-only — CAO-points-flavoured) */}
-      <AnimatePresence>
-        {showExplainer && !isJunior && (
-          <MotionDiv
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden"
-          >
-            <div className="p-5 rounded-xl space-y-6 bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-              {/* How it works */}
-              <div>
-                <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-bold text-xs uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">How Your Timetable Is Built</h4>
-                  <button onClick={() => setShowExplainer(false)} className="transition-colors text-[#A8A29E] dark:text-zinc-500">
-                    <X size={16} />
-                  </button>
-                </div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
-                  Each subject gets a <span className="font-bold" style={{ color: COLORS.accent }}>priority score</span> that determines how many study sessions it receives each week. The score combines two factors:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
-                  <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Best-six CAO gain</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                      The CAO points difference between your target grade and current grade. Bigger gaps = more room to grow = higher priority.
-                    </p>
-                  </div>
-                  <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#C4873B' }}>Efficiency Multiplier</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                      The timetable values points that would change your best-six total, then favours targets requiring fewer grade steps. Every subject still receives maintenance time.
-                    </p>
-                  </div>
-                </div>
-                <div className="p-3 rounded-xl text-center" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                  <p className="text-xs font-mono font-bold text-zinc-600 dark:text-zinc-300">
-                    Priority = Best-six Gain <span style={{ color: COLORS.accent }}>x</span> Target Attainability <span style={{ color: COLORS.accent }}>x</span> Syllabus Need
-                  </p>
-                </div>
-              </div>
-
-              {/* Per-subject breakdown */}
-              <div>
-                <h4 className="font-bold text-xs uppercase tracking-widest mb-3 text-[#A8A29E] dark:text-zinc-500">Your Subject Scores</h4>
-                <div className="space-y-2">
-                  {priorities.map(p => {
-                    const maxPriority = Math.max(...priorities.map(pr => pr.priorityScore), 1);
-                    const barPct = (p.priorityScore / maxPriority) * 100;
-
-                    return (
-                      <div key={p.subjectName} className="p-3 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                        <div className="flex items-center justify-between mb-2">
-                          <div className="flex items-center gap-2">
-                            <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectFill(p.subjectName) }} />
-                            <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{p.subjectName}</span>
-                          </div>
-                          <span className="text-sm font-mono font-bold" style={{ color: COLORS.accent }}>
-                            {Math.round(p.priorityScore)}
-                          </span>
-                        </div>
-
-                        {/* Score visualisation bar — uses subject colour */}
-                        <div className="h-1.5 rounded-full overflow-hidden mb-2.5" style={{ backgroundColor: '#EDEAE6' }}>
-                          <motion.div
-                            className="h-full rounded-full"
-                            style={{ backgroundColor: getSubjectHexColor(p.subjectName) }}
-                            initial={{ width: 0 }}
-                            animate={{ width: `${barPct}%` }}
-                            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                          />
-                        </div>
-
-                        {/* Breakdown chips */}
-                        <div className="flex flex-wrap items-center gap-2 text-[10px]">
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-semibold text-[#A8A29E] dark:text-zinc-500" style={{ backgroundColor: 'rgba(0,0,0,0.04)' }}>
-                            {p.currentGrade} <ArrowRight size={8} /> {p.targetGrade}
-                          </span>
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: 'rgba(242,107,31,0.1)', color: COLORS.accent }}>
-                            +{p.bestSixPointsGain ?? p.pointsGain} best-six pts{p.isMaths ? ' (incl. bonus)' : ''}
-                          </span>
-                          <span className="font-mono text-[#A8A29E] dark:text-zinc-500">x</span>
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: 'rgba(196,135,59,0.1)', color: '#C4873B' }}>
-                            {p.difficultyMultiplier.toFixed(2)} attainability
-                          </span>
-                          <span className="font-mono text-[#A8A29E] dark:text-zinc-500">=</span>
-                          <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700/40" style={{ color: COLORS.accent }}>
-                            {Math.round(p.priorityScore)}
-                          </span>
-                        </div>
-
-                        {/* Explanation sentence */}
-                        <p className="text-[10px] mt-2 leading-relaxed text-[#A8A29E] dark:text-zinc-500">
-                          {(p.bestSixPointsGain ?? p.pointsGain) === 0
-                            ? `Already at your target — this subject receives minimum sessions to maintain.`
-                            : `${p.currentGrade} → ${p.targetGrade} requires ${p.targetGradeSteps ?? 0} grade ${p.targetGradeSteps === 1 ? 'step' : 'steps'} and could add ${p.bestSixPointsGain ?? p.pointsGain} points to your present best-six total.`
-                          }
-                        </p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Projected CAO Points -- Best 6 */}
-              {(() => {
-                // Compute target points per subject
-                const subjectTargetPoints = priorities.map(p => {
-                  const lcSubject = LC_SUBJECTS.find(s => s.name === p.subjectName);
-                  const isMaths = lcSubject?.isMaths || false;
-                  return {
-                    subjectName: p.subjectName,
-                    targetGrade: p.targetGrade,
-                    targetPoints: getPointsForGrade(p.targetGrade, isMaths),
-                    isMaths,
-                  };
-                });
-
-                // Sort by target points descending to find best 6
-                const sorted = [...subjectTargetPoints].sort((a, b) => b.targetPoints - a.targetPoints);
-                const best6 = sorted.slice(0, 6);
-                const outside = sorted.slice(6);
-                const projectedTotal = best6.reduce((sum, s) => sum + s.targetPoints, 0);
-
-                // Non-maths subjects outside best 6 are candidates for deprioritization
-                const deprioritiseCandidates = outside.filter(s => !s.isMaths);
-
-                return (
-                  <div className="space-y-3">
-                    {/* Projected total */}
-                    <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                      <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#4F7256' }}>Projected CAO Points (Best 6)</p>
-                      <div className="flex items-baseline gap-2 mb-3">
-                        <p className="text-4xl font-bold font-mono" style={{ color: COLORS.accent }}>{projectedTotal}</p>
-                        <p className="text-sm font-semibold text-[#A8A29E] dark:text-zinc-500">/ 625</p>
-                      </div>
-                      <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                        If you hit your target grade in every subject, your <span className="font-bold">best 6</span> will total <span className="font-bold" style={{ color: COLORS.accent }}>{projectedTotal} points</span>. Only your top 6 subjects count for CAO.
-                      </p>
-                      <div className="mt-3 space-y-0">
-                        {best6.map((s, i) => (
-                          <div key={s.subjectName} className="flex items-center justify-between text-xs py-2 px-1" style={{ borderBottom: i < best6.length - 1 ? '0.5px solid rgba(0,0,0,0.05)' : 'none' }}>
-                            <div className="flex items-center gap-2">
-                              <span className="text-[10px] font-bold w-3 text-[#A8A29E] dark:text-zinc-500">{i + 1}.</span>
-                              <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: getSubjectFill(s.subjectName) }} />
-                              <span className="font-semibold text-zinc-700 dark:text-zinc-300">{s.subjectName}</span>
-                              {s.isMaths && <span className="text-[9px] font-bold" style={{ color: COLORS.accent }}>+25</span>}
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <span className="font-medium text-[#A8A29E] dark:text-zinc-500">{s.targetGrade}</span>
-                              <span className="font-mono font-bold" style={{ color: COLORS.accent }}>{s.targetPoints}</span>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Deprioritise suggestion */}
-                    {deprioritiseCandidates.length > 0 && (
-                      <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: '#FFFFFF', border: '2px solid #1A1A1A' }}>
-                        {/* Header — token system (was a banned raw-amber panel) */}
-                        <div className="relative px-5 pt-5 pb-4">
-                          <div className="flex items-center gap-2 mb-2">
-                            <AlertTriangle size={16} style={{ color: COLORS.accent }} />
-                            <p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: COLORS.accentDarkText }}>Subjects Outside Your Best 6</p>
-                          </div>
-                          <p className="text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
-                            Based on your target grades, <span className="font-bold text-[#1A1A1A] dark:text-white">{deprioritiseCandidates.map(s => s.subjectName).join(' and ')}</span> {deprioritiseCandidates.length === 1 ? 'falls' : 'fall'} outside your top 6.
-                          </p>
-                        </div>
-
-                        {/* Subject rows on white */}
-                        <div className="bg-white mx-3 rounded-xl mb-3">
-                          {deprioritiseCandidates.map((s, si) => (
-                            <div key={s.subjectName} className="flex items-center justify-between text-xs px-3 py-2.5" style={{ borderBottom: si < deprioritiseCandidates.length - 1 ? '0.5px solid rgba(0,0,0,0.06)' : 'none' }}>
-                              <div className="flex items-center gap-2">
-                                <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: getSubjectFill(s.subjectName) }} />
-                                <span className="font-semibold text-[#1A1A1A] dark:text-white">{s.subjectName}</span>
-                              </div>
-                              <span className="font-mono font-bold" style={{ color: COLORS.accentDarkText }}>{s.targetGrade} — {s.targetPoints} pts</span>
-                            </div>
-                          ))}
-                        </div>
-
-                        {/* Warning callout on white */}
-                        <div className="bg-white mx-3 mb-3 px-3 py-2.5 rounded-xl">
-                          <p className="text-[10px] leading-relaxed" style={{ color: COLORS.accentDarkText }}>
-                            <span className="font-bold">High-risk strategy.</span> Only deprioritise a subject if you're confident you're significantly stronger in at least 6 others. The timetable still allocates minimum sessions to every subject for safety.
-                          </p>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })()}
-
-              {/* Session count & intensity note */}
-              <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Session Allocation</p>
-                <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                  Sessions are split by priority score, with maintenance time retained for every subject. The recommended workload starts at about <span className="font-bold">6 focused hours</span> a week, rises gradually through the year and is capped at <span className="font-bold">12 hours</span> close to the exam. Your current week contains <span className="font-bold" style={{ color: COLORS.accent }}>{totalSessions} sessions · {totalHours}h{remainingMins > 0 ? ` ${remainingMins}m` : ''}</span>.
-                </p>
-              </div>
-            </div>
-          </MotionDiv>
-        )}
-      </AnimatePresence>
+        <div>{[...allocations].sort((a, b) => b.sessions - a.sessions).map(alloc => <PriorityRow key={alloc.subjectName} alloc={alloc} maxSessions={maxSessions} />)}</div>
+      </section>
+      {!isJunior && <PlannerExplanation open={showExplainer} onClose={() => setShowExplainer(false)} priorities={priorities} allocations={allocations} totalSessions={totalSessions} totalMinutes={totalMinutes} workloadExplanation={weeklyTarget.explanation} />}
 
       {/* ── Intensity indicator ── */}
       {/* Pre-exam JC (1st/2nd year) has no real exam countdown, so suppress

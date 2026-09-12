@@ -25,7 +25,7 @@ const LOCKS: GlassLocks = {
 };
 
 const ReflexGlass: React.FC<GlassProps> = ({ active, height = 640, logicalWidth }) => (
-  <GlassStage active={active} height={height} logicalWidth={logicalWidth} locks={LOCKS}>
+  <GlassStage active={active} height={height} logicalWidth={logicalWidth} locks={LOCKS} canSelectSubject={isFree}>
     {active && (
       <div className="landing-glass-pad">
         <ProgressProvider>

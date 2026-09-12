@@ -703,7 +703,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           <HorizontalTabs className="my-4" variant="pill" size="sm" label="Subject selection" value={scope} onChange={next => setScope(next as 'mine' | 'all')} options={[{value:'mine',label:'My subjects'},{value:'all',label:'All subjects'}]} />
           <div className="pt-rail-subjects">{matchingSubjects.map(s => <button key={s.id} aria-pressed={subj.id === s.id} onClick={() => pickSubject(s.id)}><span>{paperTrailSubjectLabel(s)}</span><ArrowRight size={16} /></button>)}</div>
           {!matchingSubjects.length && <p className="lp-body py-4">{query.trim() ? 'No matching subjects. Try another name.' : 'No subjects in your profile yet. Browse all subjects to get started.'}</p>}
-          <button className="pt-topic-link" onClick={() => setView({v:'revise'})}>Topic Atlas <ArrowRight size={17} /></button><button className="pt-topic-link" onClick={() => setView({v:'practice'})}>Practice tools <ArrowRight size={17} /></button>
+          <button className="pt-topic-link" onClick={() => setView({v:'revise'})}>Topic Atlas <ArrowRight size={17} /></button>
         </aside>
         <PaperSelection
       key={subj.id}
@@ -917,7 +917,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     </div>}
     <div className="pt-home-links">
       <button onClick={() => setView({ v: 'revise' })}>Topic Atlas <ArrowRight size={18} aria-hidden /></button>
-      <button onClick={() => setView({ v: 'practice' })}>Practice tools <ArrowRight size={18} aria-hidden /></button>
     </div>
     <p className="pt-context">{junior ? 'Junior Cycle' : isLca ? 'Leaving Cert Applied' : 'Leaving Certificate'} · Your subjects, your levels</p>
   </section>;

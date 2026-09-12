@@ -37,7 +37,7 @@ const LOCKS: GlassLocks = {
 const AUTO: AutoStep[] = [{ text: PAPER_TRAIL_OPEN_SUBJECT, before: 1800, hold: 60000, then: 'top' }];
 
 const PaperTrailGlass: React.FC<GlassProps> = ({ active, height = 720, logicalWidth }) => (
-  <GlassStage active={active} height={height} logicalWidth={logicalWidth} locks={LOCKS} auto={AUTO}>
+  <GlassStage active={active} height={height} logicalWidth={logicalWidth} locks={LOCKS} canSelectSubject={isFree} auto={AUTO}>
     {active && (
       <ProgressProvider>
       <Suspense fallback={null}>

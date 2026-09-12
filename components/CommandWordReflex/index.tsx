@@ -18,7 +18,7 @@ import SubjectPicker from '../launchpad/SubjectPicker';
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, ArrowRight, Check, BookOpenCheck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, BookOpenCheck, LockKeyhole } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import HorizontalTabs from '../ui/HorizontalTabs';
@@ -26,6 +26,7 @@ import { useCommandWordReflex } from '../../hooks/useCommandWordReflex';
 import { commandSubjects, questionsForSubject } from '../../commandWordData';
 import { type CommandWordQuestion } from '../../types/commandWord';
 
+import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import { baseName, displayName } from '../shared/subjectNames';
 import { figureUrl } from '../../utils/figureUrl';
 
@@ -43,6 +44,7 @@ const norm = (s: string) => s.replace(/[^a-zA-Z]/g, '').toLowerCase();
 const fade = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -8 }, transition: { duration: 0.22 } };
 
 const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; studentCycle?: 'junior-cycle' | 'leaving-cert' }> = ({ uid, studentSubjects, studentCycle }) => {
+  const canSelectSubject = useSubjectAccess();
   const { state, isLoaded, recordResult } = useCommandWordReflex(uid);
 
   const [view, setView] = useState<'home' | 'play'>('home');
@@ -93,7 +95,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
     return set;
   }, [q, tokens]);
 
-  const startSubject = (sid: string) => { setSubjectId(sid); setQIndex(0); resetQuestion(); setView('play'); };
+  const startSubject = (sid: string) => { const selected = subjects.find(s => s.subjectId === sid); if (!selected || !canSelectSubject(displayName(selected.subjectLabel))) return; setSubjectId(sid); setQIndex(0); resetQuestion(); setView('play'); };
   const resetQuestion = () => { setPhase('spot'); setWrong(new Set()); setUsedReveal(false); };
 
   const solve = (firstTry: boolean) => {
@@ -135,7 +137,8 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
       sublabel: `${s.count} real ${s.count === 1 ? 'question' : 'questions'}`,
     }));
     const mineIds = sortedSubjects.filter(s => studentSet.has(baseName(s.subjectLabel))).map(s => s.subjectId);
-    const selectedSubject = sortedSubjects.find(s => s.subjectId === subjectId) ?? sortedSubjects.find(s => mineIds.includes(s.subjectId)) ?? sortedSubjects[0];
+    const accessibleSubjects = sortedSubjects.filter(s => canSelectSubject(displayName(s.subjectLabel)));
+    const selectedSubject = accessibleSubjects.find(s => s.subjectId === subjectId) ?? accessibleSubjects.find(s => mineIds.includes(s.subjectId)) ?? accessibleSubjects[0];
     const previewQuestion = selectedSubject ? questionsForSubject(selectedSubject.subjectId).filter(atLevel)[0] : undefined;
     const preview = <div className="lp-reflex-example"><p className="lp-eyebrow">Try the idea · {previewQuestion?.subjectLabel}</p><p className="lp-reflex-stem">{previewQuestion?.stem}</p><p className="lp-body mt-4">Spot the command word. It tells you what the answer needs to do.</p></div>;
     return <div className="pb-12">
@@ -144,7 +147,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
         {previewQuestion && <div className="lp-reflex-desktop">{preview}</div>}
         <section><h2 className="lp-title">Choose your subject</h2>
           <HorizontalTabs variant="pill" size="sm" label="Question level" value={levelFilter} onChange={next => setLevelFilter(next as typeof levelFilter)} options={[{value:'higher',label:'Higher'},{value:'ordinary',label:'Ordinary'}]} />
-          <div className="lp-reflex-subjects">{(mineIds.length ? sortedSubjects.filter(s => mineIds.includes(s.subjectId)) : sortedSubjects.slice(0,6)).map(s => <button key={s.subjectId} aria-pressed={selectedSubject?.subjectId === s.subjectId} onClick={() => setSubjectId(s.subjectId)}><strong>{displayName(s.subjectLabel)}</strong><small>{s.count} questions</small></button>)}</div>
+          <div className="lp-reflex-subjects">{(mineIds.length ? sortedSubjects.filter(s => mineIds.includes(s.subjectId)) : sortedSubjects.slice(0,6)).map(s => <button key={s.subjectId} disabled={!canSelectSubject(displayName(s.subjectLabel))} aria-pressed={selectedSubject?.subjectId === s.subjectId} onClick={() => setSubjectId(s.subjectId)}><strong>{displayName(s.subjectLabel)}</strong><small>{canSelectSubject(displayName(s.subjectLabel)) ? `${s.count} questions` : <><LockKeyhole size={12} aria-hidden="true" /> Available in the app</>}</small></button>)}</div>
           <SubjectPicker label="All subjects" value={selectedSubject?.subjectId ?? ''} options={pickerSubjects.map(s => ({value:s.id,label:s.label,detail:s.sublabel}))} onChange={setSubjectId} />
           <button className="lp-button w-full mt-4" disabled={!selectedSubject} onClick={() => selectedSubject && startSubject(selectedSubject.subjectId)}>Start practising <ArrowRight size={17} /></button>
           {state.wordsMet.length > 0 && <p className="lp-body mt-4">{state.wordsMet.length} command words met · {state.firstTryIds.length}/{state.seenIds.length} spotted first try</p>}

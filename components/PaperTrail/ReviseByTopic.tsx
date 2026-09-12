@@ -13,6 +13,7 @@
 
 import ToolMasthead from '../launchpad/ToolMasthead';
 import SubjectPicker from '../launchpad/SubjectPicker';
+import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ChevronDown as ChevronDownIcon, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
@@ -67,11 +68,21 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   // A shared "?subject=…&topic=…" link opens the vault straight at that topic
   // (consumed once per load — see vaultDeepLink; safe, never touches history).
   const [boot] = useState(() => consumeInitialVaultLocation());
+  const canSelectSubject = useSubjectAccess();
   const [scope, setScope] = useState<'mine' | 'all'>(mineIds.length ? 'mine' : 'all');
-  const [subjectId, setSubjectId] = useState<string | null>(() => { if (restore?.subjectId || boot?.subjectId) return restore?.subjectId ?? boot!.subjectId; let saved = ''; try { saved = localStorage.getItem(`atlas.subject:${uid ?? 'guest'}`) ?? ''; } catch { /* private mode */ } return subjects.find(s => s.id === saved)?.id ?? mineIds[0] ?? subjects[0]?.id ?? null; });
+  const [subjectId, setSubjectState] = useState<string | null>(() => {
+    let saved = '';
+    try { saved = localStorage.getItem(`atlas.subject:${uid ?? 'guest'}`) ?? ''; } catch { /* private mode */ }
+    const candidates = [restore?.subjectId, boot?.subjectId, saved, ...mineIds, ...subjects.map(s => s.id)];
+    return candidates.find(id => id && subjects.some(s => s.id === id && canSelectSubject(s.label))) ?? null;
+  });
+  const setSubjectId = (id: string) => {
+    const selected = subjects.find(s => s.id === id);
+    if (selected && canSelectSubject(selected.label)) setSubjectState(id);
+  };
   const [previewId, setPreviewId] = useState<string | null>(null);
   useEffect(() => { if (subjectId) {try {localStorage.setItem(`atlas.subject:${uid ?? 'guest'}`,subjectId);} catch { /* private mode */ }} setPreviewId(null); },[subjectId,uid]);
-  const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subtopicId ?? boot?.subtopicId ?? null);
+  const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subjectId === subjectId ? restore.subtopicId : boot?.subjectId === subjectId ? boot.subtopicId ?? null : null);
   const [copied, pulseCopied, clearCopied] = usePulse(2000);
   const [sort, setSort] = useState<'reference' | 'busiest' | 'frequent'>('busiest');
   const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
@@ -519,6 +530,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                     <button
                       key={s.id}
                       onClick={() => setSubjectId(s.id)}
+                      disabled={!canSelectSubject(s.label)}
                       aria-label={`${s.label} — ${st.questions.toLocaleString()} questions across ${topicsForSubject(s.id).length} topics, ${st.yearMin} to ${st.yearMax}`}
                       className="group text-left rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 transition-transform duration-200 hover:-translate-y-0.5"
                       style={{ border: '1.5px solid #383838' }}
