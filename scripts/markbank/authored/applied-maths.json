@@ -166,16 +166,16 @@
   "notes": "Cited from the 2021 higher paper."
  },
  {
-  "id": "am-2021-hl-2",
+  "id": "am-2021-hl-2-a-i",
   "topicId": "applied-mathematics-2-9",
-  "conceptId": "point-north-point-horizontal-field-alan",
+  "conceptId": "ask",
   "level": "higher",
   "year": 2021,
   "subjectId": "applied-maths",
   "section": "B",
-  "questionRef": "2021 HL Q2",
-  "questionText": "the value of t the value of α. A point B is 80 m north of a point A on a horizontal field. Alan is at point A of the field and Brian is at point B of the field. Alan starts to run in a straight line in the direction north 45° east at a constant speed of 2.5 m s–1. Three aircraft, P, Q and R, are flying at the same height. P is travelling north at 450 km h–1. Q is travelling at 400√2 km h–1 in a direction east 45° north. R appears to the pilot of P to be flying in a direction east 10° south. R appears to the pilot of Q to be flying in a direction east 15.67° south",
-  "stem": "",
+  "questionRef": "2021 HL Q2(a)(i)",
+  "questionText": "the value of t",
+  "stem": "(a) A point B is 80 m north of a point A on a horizontal field. Alan is at point A of the field and Brian is at point B of the α field. Alan starts to run in a straight line in the direction north 45° east at a constant speed of 2.5 m s^(–1). B α 80 m Brian sees Alan start to run, waits 8 seconds, and then runs from B to intercept Alan. Brian runs in a straight line in the direction south α° east at a constant speed of 4 m s–1 and intercepts Alan after t seconds. 45° Find",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -185,21 +185,60 @@
    "ofParts": null,
    "perPart": null
   },
-  "totalMarks": 20,
+  "totalMarks": 10,
   "rows": [
    {
-    "id": "am-2021-hl-2-r1",
+    "id": "am-2021-hl-2-a-i-r1",
     "kind": "anyN",
     "verbatim": "(4t)² = 80² + {2.5(t + 8)}² −2 × 80 × 2.5(t + 8) cos 45",
-    "marks": 20,
+    "marks": 10,
     "openList": true,
-    "contextNote": "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
+    "contextNote": "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 2,
      "perOption": 5,
      "options": [
       "(4t)² = 80² + {2.5(t + 8)}² −2 × 80 × 2.5(t + 8) cos 45",
-      "9.75t² + 182.84t−4537.26 = 0 t = 14.15 s",
+      "9.75t² + 182.84t−4537.26 = 0 t = 14.15 s"
+     ]
+    }
+   }
+  ],
+  "notes": "Cited from the 2021 higher paper."
+ },
+ {
+  "id": "am-2021-hl-2-a-ii",
+  "topicId": "applied-mathematics-2-9",
+  "conceptId": "ask",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "applied-maths",
+  "section": "B",
+  "questionRef": "2021 HL Q2(a)(ii)",
+  "questionText": "the value of α",
+  "stem": "(a) A point B is 80 m north of a point A on a horizontal field. Alan is at point A of the field and Brian is at point B of the α field. Alan starts to run in a straight line in the direction north 45° east at a constant speed of 2.5 m s^(–1). B α 80 m Brian sees Alan start to run, waits 8 seconds, and then runs from B to intercept Alan. Brian runs in a straight line in the direction south α° east at a constant speed of 4 m s–1 and intercepts Alan after t seconds. 45° Find",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "step marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "am-2021-hl-2-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "sin𝛼/(2.5(t + 8)) = (sin 45)/4t",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
       "sin𝛼/(2.5(t + 8)) = (sin 45)/4t",
       "(sin 𝛼)/(2.5(14.15 + 8)) = (sin 45)/4 × 14.15 sin 𝛼 = (55.375 × sin 45)/56.6 = 0.6918 𝛼= sin^(−1)(0.6918) = 43.77°"
      ]
@@ -364,7 +403,7 @@
    {
     "id": "am-2021-hl-3-b-ii-r1",
     "kind": "anyN",
-    "verbatim": "vᵢ = u cos 30 − g sin 30 × 2u/g√3 = u√3/6 v_j = u sin 30 − g cos 30 × 2u/g√3 g√3/g√3 = − 6 u/2 v_j = u sin 30 − g cos 30/u√3 × g√3 eu = − 2",
+    "verbatim": "vᵢ = u cos 30 − g sin 30 × 2u/g√3 = u√3/6 v_j = u sin 30 − g cos 30 × 2u/g√3 = − u/2",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
@@ -372,7 +411,7 @@
      "claimMax": 2,
      "perOption": 5,
      "options": [
-      "vᵢ = u cos 30 − g sin 30 × 2u/g√3 = u√3/6 v_j = u sin 30 − g cos 30 × 2u/g√3 g√3/g√3 = − 6 u/2 v_j = u sin 30 − g cos 30/u√3 × g√3 eu = − 2",
+      "vᵢ = u cos 30 − g sin 30 × 2u/g√3 = u√3/6 v_j = u sin 30 − g cos 30 × 2u/g√3 = − u/2",
       "Rebound velocity = u√3/6 i + eu/2 j tan 60 = eu/2 ÷ u√3/6 = e√3 e = 1"
      ]
     }
@@ -714,7 +753,7 @@
       "{ 1/3 ml² + m(2l cos 30)²} I = 6ml²",
       "Mgh₁ = 1/2 I𝜔² + Mgh₂ 3m × g × 2/3 √3l = 1/2 (6ml²)𝜔² + 3m × g × 1/3 √3l",
       "√3mgl = 3ml²𝜔² 𝜔= √^(√3)^g 3l",
-      "Mgh = mg × 1/2 √3l + mg × 1/2 √3l + mg × √3l T = 1.87 = 2𝜋√ Mgh I = 2𝜋√ 6ml²/2mg√3l = 2𝜋√√3l g l = 0.50 m."
+      "Mgh = mg × 1/2 √3l + mg × 1/2 √3l + mg × √3l Mgh = 2𝜋√^(6m)^l² 2mg√3l = 2𝜋√√3l I T = 1.87 = 2𝜋√ g l = 0.50 m."
      ],
      "perOptionSteps": [
       5,
@@ -857,14 +896,14 @@
  {
   "id": "am-2021-hl-10-b",
   "topicId": "applied-mathematics-2-0",
-  "conceptId": "there-initially-120-insects-region-population",
+  "conceptId": "population-insects-region-grows-rate-proportional",
   "level": "higher",
   "year": 2021,
   "subjectId": "applied-maths",
   "section": "B",
   "questionRef": "2021 HL Q10(b)",
-  "questionText": "Find the value of k. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out? P, the population of insects in a region, grows at a rate that is proportional to the current population",
-  "stem": "dP/dt kP where k is a positive constant. In the absence of any outside factors the population will triple in 15 days. Find the value of k. A scientist begins to remove 10 insects from the population each day. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out? Leaving Certificate 2021 6 Applied Mathematics – Higher Level There is no examination material on this page. Leaving Certificate 2021 7 Applied Mathematics – Higher Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.",
+  "questionText": "P, the population of insects in a region, grows at a rate that is proportional to the current population. (iii) Find the value of k. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out?",
+  "stem": "dP/dt kP where k is a positive constant. In the absence of any outside factors the population will triple in 15 days. Find the value of k. A scientist begins to remove 10 insects from the population each day. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out?",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -1542,6 +1581,53 @@
   "notes": "Cited from the 2021 ordinary paper."
  },
  {
+  "id": "am-2021-ol-5-b",
+  "topicId": "applied-mathematics-2-4",
+  "conceptId": "ball-dropped-height-ball-strikes-smooth",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "applied-maths",
+  "section": "B",
+  "questionRef": "2021 OL Q5(b)",
+  "questionText": "A ball is dropped from a height of 11.25 m. The ball strikes a smooth horizontal floor and rises to a vertical height of h m. The coefficient of restitution between the ball and the floor is 3/5. the velocity of the ball immediately after it hits the floor the value of h",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "step marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "am-2021-ol-5-b-r1",
+    "kind": "anyN",
+    "verbatim": "v² = u² + 2as (i) v² = 0 + 2 × 10 × 11.25 v = 15",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "The scheme prices this ask step by step: 10, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 10,
+     "options": [
+      "v² = u² + 2as (i) v² = 0 + 2 × 10 × 11.25 v = 15",
+      "vᵣ = ev = 3/5 × 15 = 9 m s^−¹",
+      "v² = u² + 2as 0 = 81 −20h h = 4.05 m"
+     ],
+     "perOptionSteps": [
+      10,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": "Cited from the 2021 ordinary paper."
+ },
+ {
   "id": "am-2021-ol-6-a-ii",
   "topicId": "applied-mathematics-2-10",
   "conceptId": "ask",
@@ -1777,7 +1863,7 @@
    {
     "id": "am-2021-ol-7-b-iv-r1",
     "kind": "anyN",
-    "verbatim": "T sin 60 T × × 4 = /2√3 = 120 120 × 2 sin 30 T = 20√3 N",
+    "verbatim": "Tsin 60 × 4 = 120 × 2 sin 30 T × 2√3 = 120 T = 20√3 N",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
@@ -1785,7 +1871,7 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "T sin 60 T × × 4 = /2√3 = 120 120 × 2 sin 30 T = 20√3 N"
+      "Tsin 60 × 4 = 120 × 2 sin 30 T × 2√3 = 120 T = 20√3 N"
      ]
     }
    }
@@ -2006,7 +2092,7 @@
   "section": "B",
   "questionRef": "2021 OL Q9(ii)",
   "questionText": "Write equations to represent all the forces acting on the cone and the sphere",
-  "stem": "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3)) Leaving Certificate, 2021 7 Applied Mathematics – Ordinary Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and",
+  "stem": "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3))",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -2047,7 +2133,7 @@
   "section": "B",
   "questionRef": "2021 OL Q9(iii)",
   "questionText": "Calculate the tension in the string",
-  "stem": "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3)) Leaving Certificate, 2021 7 Applied Mathematics – Ordinary Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and",
+  "stem": "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3))",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -2088,7 +2174,7 @@
   "section": "B",
   "questionRef": "2021 OL Q9(iv)",
   "questionText": "Calculate the value of the reaction force between the base of the cone and the bottom of the tank",
-  "stem": "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3)) Leaving Certificate, 2021 7 Applied Mathematics – Ordinary Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and",
+  "stem": "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3))",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -2129,7 +2215,7 @@
   "section": "B",
   "questionRef": "2021 OL Q9(v)",
   "questionText": "Calculate the length of the string",
-  "stem": "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3)) Leaving Certificate, 2021 7 Applied Mathematics – Ordinary Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and",
+  "stem": "A right circular cone of radius 12 cm and height 25 cm is placed at the bottom of a tank of water. A sphere, of radius 4 cm is attached to the top of the cone with a light inelastic string. The relative density of the cone is 1.8 and the relative density of the sphere is 0.7. Both the cone and the sphere are fully submerged in water and are at rest. Show on separate diagrams the forces acting on the cone and on the sphere. Write equations to represent all the forces acting on the cone and the sphere. Calculate the tension in the string. Calculate the value of the reaction force between the base of the cone and the bottom of the tank. The pressure at the top of the sphere is 4000 Pa less than the pressure at the bottom of the tank. Calculate the length of the string. (Density of water is 1000 kg m^(–3))",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -2350,7 +2436,7 @@
    {
     "id": "am-2022-hl-2-a-i-r1",
     "kind": "anyN",
-    "verbatim": "V𝑣⃗BS = V𝑣⃗_B−V𝑣⃗_S V𝑣⃗BS = (−55cos 𝛼 𝚤⃗+ 55 sin 𝛼 𝚥⃗) −(−22 cos 30 𝚤⃗+ 22 sin 30 𝚥⃗) V𝑣⃗BS = (22 cos 30 −55 cos 𝛼) 𝚤⃗+ (55 sin 𝛼−22sin 30) 𝚥⃗ V𝑣⃗BS = 0 𝚤⃗+ b 𝚥⃗",
+    "verbatim": "V𝑣⃗BS = V𝑣⃗_B−V𝑣⃗_S V𝑣⃗BS = (−55cos 𝛼 𝚤⃗+ 55 sin 𝛼 𝚥⃗) −(−22 cos 30 𝚤⃗+ 22 sin 30 𝚥⃗) V𝑣⃗BS = (22 cos 30 −55 cos 𝛼) 𝚤⃗+ (55 sin 𝛼−22sin 30) 𝚥⃗ V𝑣⃗BS = 0 𝚤⃗+ b 𝚥⃗ 22cos 30 −55 cos 𝛼= 0",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
@@ -2358,8 +2444,8 @@
      "claimMax": 2,
      "perOption": 5,
      "options": [
-      "V𝑣⃗BS = V𝑣⃗_B−V𝑣⃗_S V𝑣⃗BS = (−55cos 𝛼 𝚤⃗+ 55 sin 𝛼 𝚥⃗) −(−22 cos 30 𝚤⃗+ 22 sin 30 𝚥⃗) V𝑣⃗BS = (22 cos 30 −55 cos 𝛼) 𝚤⃗+ (55 sin 𝛼−22sin 30) 𝚥⃗ V𝑣⃗BS = 0 𝚤⃗+ b 𝚥⃗",
-      "22 22 cos 30 − 55 cos/^√³ 𝛼 = 0 55 25 𝛼= 69.73°"
+      "V𝑣⃗BS = V𝑣⃗_B−V𝑣⃗_S V𝑣⃗BS = (−55cos 𝛼 𝚤⃗+ 55 sin 𝛼 𝚥⃗) −(−22 cos 30 𝚤⃗+ 22 sin 30 𝚥⃗) V𝑣⃗BS = (22 cos 30 −55 cos 𝛼) 𝚤⃗+ (55 sin 𝛼−22sin 30) 𝚥⃗ V𝑣⃗BS = 0 𝚤⃗+ b 𝚥⃗ 22cos 30 −55 cos 𝛼= 0",
+      "22 55 25 𝛼= 69.73°"
      ]
     }
    }
@@ -2483,8 +2569,8 @@
       "against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). Show that v = ./2t₁t₂ d(t₁−t₂) The width of the river is d m and v < u. Find, in terms of t₁ and t₂, the time taken by the woman to cross the river by the shortest path. upstream: d = (u−v)t₁",
       "u − v = d/t₁ downstream: d = (u + v)t₂",
       "u + v = d/t₂ ⟹ 2v = d/t₂ − d/t₁ v = (d(t₁−t₂))/2t₁t₂",
-      "v time = d/(√u²−v²) d/(√u²−v²)",
-      "√u² − v² = d/√t₁t₂ d/√t₁t₂ time = d/(√u²−v²) = √t1t2 time = d/(√u²−v²) = √t1t2"
+      "v time = d/(√u²−v²)",
+      "√u² − v² = d/√t₁t₂ time = d/(√u²−v²) = √t1t2"
      ]
     }
    }
@@ -2525,9 +2611,9 @@
      "perOption": 5,
      "options": [
       "14√3 cos 𝛼× t = 60",
-      "t = 60/(14√3 cos 𝛼) 60/14√3 14√3 sin 𝛼 × t − 1/2 gt² = −60",
-      "14√3 sin 𝛼 × ( 60/𝛼) 60/14√3 cos − 1/2 g ( 60/𝛼) 60/14√3 cos 2 = −60",
-      "60 tan 𝛼 − 1/2 g 3600/(588 cos2 𝛼) = −60 60tan 𝛼−30(1 + tan² 𝛼) = −60 tan² 𝛼 − tan 2 tan 𝛼 = 𝛼 1 − ± 1 (= 0)/√2 𝛼= −22.5° or 67.5°"
+      "t = 60/(14√3 cos 𝛼) 14√3 sin 𝛼 × t − 1/2 gt² = −60",
+      "14√3 sin 𝛼 × ( 60/𝛼) 14√3 cos − 1/2 g ( 60/𝛼) 14√3 cos 2 = −60",
+      "60 tan 𝛼 − 1/2 g 3600/(588 cos2 𝛼) = −60 60tan 𝛼−30(1 + tan² 𝛼) = −60 tan² 𝛼−2 tan 𝛼−1 = 0 tan 𝛼= 1 ± √2 𝛼= −22.5° or 67.5°"
      ]
     }
    }
@@ -2609,9 +2695,9 @@
      "options": [
       "r_j = 0",
       "u sin 𝛽 × t − 1/2 g cos 30 × t² = 0",
-      "t = (2u sin 𝛽)/(g cos 30) = (4u sin 𝛽)/g√3 sin/g√3 R = u cos 𝛽 × t − 1/2 g sin 30 × t²",
-      "= u cos 𝛽 × (4u sin 𝛽)/g√3 sin/g√3 − 1/2 g sin 30 × ( (4u sin 𝛽)/g√3 sin/g√3 ) 2",
-      "= 2u²/g√3 2u²/g√3 × sin 2𝛽 − 4u²/3g × sin² 𝛽 dR/d𝛽 = 4u²/g√3 4u²/g√3 × cos 2𝛽 − 8u²/3g × sin 𝛽 × cos 𝛽 dR/d𝛽 = 4u²/g√3 4u²/g√3 × cos 2𝛽 − 4u²/3g × sin 2𝛽 dR/d𝛽 = 0 ⇒ tan 2𝛽 = √3 𝛽= 30° R = 2u²/g√3 2u²/g√3 × sin 60 − 4u²/3g × sin² 30 R = u²/g − u²/3g = 2u²/3g"
+      "t = (2u sin 𝛽)/(g cos 30) = (4u sin 𝛽)/g√3 R = u cos 𝛽 × t − 1/2 g sin 30 × t²",
+      "= u cos 𝛽 × (4u sin 𝛽)/g√3 − 1/2 g sin 30 × ( (4u sin 𝛽)/g√3 ) 2",
+      "= 2u²/g√3 × sin 2𝛽 − 4u²/3g × sin² 𝛽 dR/d𝛽 = 4u²/g√3 × cos 2𝛽 − 8u²/3g × sin 𝛽 × cos 𝛽 dR/d𝛽 = 4u²/g√3 × cos 2𝛽 − 4u²/3g × sin 2𝛽 dR/d𝛽 = 0 ⇒ tan 2𝛽 = √3 𝛽= 30° R = 2u²/g√3 × sin 60 − 4u²/3g × sin² 30 R = u²/g − u²/3g = 2u²/3g"
      ]
     }
    }
@@ -2873,8 +2959,8 @@
      "perOption": 5,
      "options": [
       "Prove that the tension in the rope is ./h 147√h² + 4 If the tension in the rope cannot exceed 245 N, show that h ≥ 1.5. T B 𝜃/D C 20g ↻B Tsin 𝜃× 2 = 20g × 1.5",
-      "sin 𝜃 = h/(√h² + 4) h/(√h² + 4)",
-      "T × h/(√h2 + 4) h/(√h2 + 4) × 2 = 20g × 1.5 T = (147√h² + 4)/h",
+      "sin 𝜃 = h/(√h² + 4)",
+      "T × h/(√h2 + 4) × 2 = 20g × 1.5 T = (147√h² + 4)/h",
       "T ≤ 245 (147√h² + 4)/h ≤ 245",
       "√h² + 4 ≤ 5/3 h 16h² ≥ 36 h ≥ 1.5"
      ]
@@ -2919,7 +3005,7 @@
       "|∠XYZ| = 𝛼. If the coefficient of friction is ,/5 ^√³ find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼",
       "R₂ = 5W/4",
       "R₁ + R₂ = 3W R₁ = 7W/4 R₂ < R₁ YZ ↻Y R₂ × l sin 1/2 𝛼 = F × l cos 1/2 𝛼 + W × 1/2 l sin 1/2 𝛼",
-      "F = 3/4 W × tan 1/2 𝛼 𝜇R₂ = 3/4 W × tan 1/2 𝛼 √3/5 × 5/4 W = 3/4 W × tan 1/2 𝛼 tan 1/2 𝛼 = 1/√3 1/√3 ⇒ 𝛼 = 60°"
+      "F = 3/4 W × tan 1/2 𝛼 𝜇R₂ = 3/4 W × tan 1/2 𝛼 √3/5 × 5/4 W = 3/4 W × tan 1/2 𝛼 tan 1/2 𝛼 = 1/√3 ⇒ 𝛼 = 60°"
      ],
      "perOptionSteps": [
       10,
@@ -3844,14 +3930,14 @@
  },
  {
   "id": "am-2022-ol-7-b",
-  "topicId": "applied-mathematics-2-5",
-  "conceptId": "draw-force-diagram-showing-all-forces",
+  "topicId": "applied-mathematics-2-10",
+  "conceptId": "uniform-ladder-length-weight-120-rests",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "applied-maths",
   "section": "B",
   "questionRef": "2022 OL Q7(b)",
-  "questionText": "Draw a force diagram showing all the forces acting on the ladder. Calculate the normal reaction between the ladder and the wall. Find the coefficient of friction between the ladder and the ground. α",
+  "questionText": "A uniform ladder of length 10 m and weight 120 N rests on rough horizontal ground and leans against a smooth vertical wall. Draw a force diagram showing all the forces acting on the ladder. Calculate the normal reaction between the ladder and the wall. Find the coefficient of friction between the ladder and the ground",
   "stem": "The ladder is on the point of slipping when it makes an angle α with the ground, where tan α = 4/3.",
   "figureKey": "",
   "labelKey": [],
@@ -4096,13 +4182,13 @@
  {
   "id": "am-2022-ol-9-a",
   "topicId": "applied-mathematics-2-0",
-  "conceptId": "total-weight-tank-plus-liquid-pressure",
+  "conceptId": "cubic-tank-side-mass-designed-hold",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "applied-maths",
   "section": "B",
   "questionRef": "2022 OL Q9(a)",
-  "questionText": "the total weight of the tank plus liquid the pressure the liquid exerts on the bottom of the tank. Calculate the total pressure the liquid now exerts on the bottom of the tank. A cubic tank of side 50 cm and mass 8 kg is designed to hold a liquid of density 1200 kg m–3",
+  "questionText": "A cubic tank of side 50 cm and mass 8 kg is designed to hold a liquid of density 1200 kg m^(–3). the total weight of the tank plus liquid the pressure the liquid exerts on the bottom of the tank. Calculatethe total pressure the liquid now exerts on the bottom of the tank",
   "stem": "The tank is half‐filled with this liquid. Calculate the total weight of the tank plus liquid the pressure the liquid exerts on the bottom of the tank.",
   "figureKey": "",
   "labelKey": [],
@@ -4150,7 +4236,7 @@
   "section": "B",
   "questionRef": "2022 OL Q9(b)(ii)",
   "questionText": "Calculate r",
-  "stem": "A solid sphere of radius r cm and density 300 kg m^(–3) is completely immersed in a tank containing a liquid of density 1500 kg m^(–3). The sphere is attached to the bottom of the tank by a string which has a tension of 11 N. Draw a force diagram showing all the forces acting on the sphere. Calculate r. Leaving Certificate, 2022 7 Applied Mathematics – Ordinary Level Do not hand this up. This document will not be returned to the State Examinations Commission^. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this",
+  "stem": "A solid sphere of radius r cm and density 300 kg m^(–3) is completely immersed in a tank containing a liquid of density 1500 kg m^(–3). The sphere is attached to the bottom of the tank by a string which has a tension of 11 N. Draw a force diagram showing all the forces acting on the sphere. Calculate r.",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -4408,7 +4494,7 @@
   "section": "B",
   "questionRef": "2023 HL Q3(ii)",
   "questionText": "Show that 𝜔=√ 𝑔tanα 3.5+4.3sinα",
-  "stem": "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10 Leaving Certificate, 2023 Applied Mathematics – Higher Level Draw a diagram to show the external forces acting on seat A. 𝑔tanα Show that 𝜔=√ 3.5 + 4.3sinα. 11 Leaving Certificate, 2023",
+  "stem": "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -4453,7 +4539,7 @@
   "section": "B",
   "questionRef": "2023 HL Q3(iii)",
   "questionText": "Use dimensional analysis to show that the units for the expression √ 3.5 + 4.3sinα are equivalent to the units for 𝜔. It is found by measurement that 𝛼=25°",
-  "stem": "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10 Leaving Certificate, 2023 Applied Mathematics – Higher Level Draw a diagram to show the external forces acting on seat A. 𝑔tanα Show that 𝜔=√ 3.5 + 4.3sinα. 11 Leaving Certificate, 2023",
+  "stem": "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -4477,88 +4563,6 @@
      "perOption": 5,
      "options": [
       "√m/m s^−² = √s^−² = s^−¹ which are the units for 𝜔"
-     ]
-    }
-   }
-  ],
-  "notes": "Cited from the 2023 higher paper."
- },
- {
-  "id": "am-2023-hl-3-iv",
-  "topicId": "applied-mathematics-2-12",
-  "conceptId": "many-complete-revolutions-ride-makes-minute",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "applied-maths",
-  "section": "B",
-  "questionRef": "2023 HL Q3(iv)",
-  "questionText": "Calculate how many complete revolutions the ride makes in one minute",
-  "stem": "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10 Leaving Certificate, 2023 Applied Mathematics – Higher Level Draw a diagram to show the external forces acting on seat A. 𝑔tanα Show that 𝜔=√ 3.5 + 4.3sinα. 11 Leaving Certificate, 2023",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "step marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "am-2023-hl-3-iv-r1",
-    "kind": "anyN",
-    "verbatim": "gtan 25° when 𝛼= 25°, 𝜔= √ 3.5 + 4.3sin 25° = 0.927 (rad) s^(–1)",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 5,
-     "options": [
-      "gtan 25° when 𝛼= 25°, 𝜔= √ 3.5 + 4.3sin 25° = 0.927 (rad) s^(–1)",
-      "T′ = 2𝜋/𝜔 = 6.78 s"
-     ]
-    }
-   }
-  ],
-  "notes": "Cited from the 2023 higher paper."
- },
- {
-  "id": "am-2023-hl-3-v",
-  "topicId": "applied-mathematics-2-12",
-  "conceptId": "time-orange-thrown-until-hits-ground",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "applied-maths",
-  "section": "B",
-  "questionRef": "2023 HL Q3(v)",
-  "questionText": "Calculate the time from when the orange is thrown until it hits the ground",
-  "stem": "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10 Leaving Certificate, 2023 Applied Mathematics – Higher Level Draw a diagram to show the external forces acting on seat A. 𝑔tanα Show that 𝜔=√ 3.5 + 4.3sinα. 11 Leaving Certificate, 2023",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "step marks",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "am-2023-hl-3-v-r1",
-    "kind": "anyN",
-    "verbatim": "s = ut + 1/2 at² so 4.9t² − 4t − 6 = 0",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 5,
-     "options": [
-      "s = ut + 1/2 at² so 4.9t² − 4t − 6 = 0",
-      "i.e. t = 1.59 s to 2 decimal places, t > 0"
      ]
     }
    }
@@ -4739,7 +4743,7 @@
   "section": "B",
   "questionRef": "2023 HL Q6(i)",
   "questionText": "Write down the values of U₂ and U₃",
-  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -4779,7 +4783,7 @@
   "section": "B",
   "questionRef": "2023 HL Q6(ii)",
   "questionText": "Solve the difference equation to find an expression for Uₙ in terms of n",
-  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -4822,7 +4826,7 @@
   "section": "B",
   "questionRef": "2023 HL Q6(iii)",
   "questionText": "Calculate U₁₀",
-  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -4862,7 +4866,7 @@
   "section": "B",
   "questionRef": "2023 HL Q6(iv)",
   "questionText": "Solve this new difference equation to find an expression for Vₙ in terms of n",
-  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -4904,7 +4908,7 @@
   "section": "B",
   "questionRef": "2023 HL Q6(v)",
   "questionText": "Calculate V₁₀",
-  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+  "stem": "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5397,7 +5401,7 @@
   "section": "B",
   "questionRef": "2023 HL Q10(b)(ii)",
   "questionText": "If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃=",
-  "stem": "A toy car track consists of a series of components that connect to make a closed circuit. Part of the track makes a vertical circular loop. To model the motion of a car on this track, its velocity at the base of the loop (point A) 𝜃 r is expressed as u = √kgr, where r is the u = √kgr radius of the loop, g is the acceleration due to gravity, and k is a constant. The model ignores the effects of friction. Draw a diagram to show the forces acting on the car at the instant when the radius to the car makes an angle 𝜃 with the upward vertical. If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃= 40 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate the minimum value of k such that the car successfully completes the loop without losing contact with the track. 41 Leaving Certificate, 2023 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. 42 Leaving Certificate, 2023 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: State Examinations Commission Image on page 8: State Examinations Commission Images on page 10: thejournal.ie; State Examinations Commission Image on page 18: State Examinations Commission Image on page 26: State Examinations Commission Image on page 30: State Examinations Commission State Examinations Commission Image on page 34: Image on page 35: State Examinations Commission Image on page 40: State Examinations Commission 43 Leaving Certificate, 2023 Applied Mathematics – Higher Level Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the",
+  "stem": "A toy car track consists of a series of components that connect to make a closed circuit. Part of the track makes a vertical circular loop. To model the motion of a car on this track, its velocity at the base of the loop (point A) 𝜃 r is expressed as u = √kgr, where r is the u = √kgr radius of the loop, g is the acceleration due to gravity, and k is a constant. The model ignores the effects of friction. Draw a diagram to show the forces acting on the car at the instant when the radius to the car makes an angle 𝜃 with the upward vertical. If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃= 40",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5439,7 +5443,7 @@
   "section": "B",
   "questionRef": "2023 HL Q10(b)(iii)",
   "questionText": "Calculate the minimum value of k such that the car successfully completes the loop without losing contact with the track",
-  "stem": "A toy car track consists of a series of components that connect to make a closed circuit. Part of the track makes a vertical circular loop. To model the motion of a car on this track, its velocity at the base of the loop (point A) 𝜃 r is expressed as u = √kgr, where r is the u = √kgr radius of the loop, g is the acceleration due to gravity, and k is a constant. The model ignores the effects of friction. Draw a diagram to show the forces acting on the car at the instant when the radius to the car makes an angle 𝜃 with the upward vertical. If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃= 40 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate the minimum value of k such that the car successfully completes the loop without losing contact with the track. 41 Leaving Certificate, 2023 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. 42 Leaving Certificate, 2023 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: State Examinations Commission Image on page 8: State Examinations Commission Images on page 10: thejournal.ie; State Examinations Commission Image on page 18: State Examinations Commission Image on page 26: State Examinations Commission Image on page 30: State Examinations Commission State Examinations Commission Image on page 34: Image on page 35: State Examinations Commission Image on page 40: State Examinations Commission 43 Leaving Certificate, 2023 Applied Mathematics – Higher Level Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the",
+  "stem": "A toy car track consists of a series of components that connect to make a closed circuit. Part of the track makes a vertical circular loop. To model the motion of a car on this track, its velocity at the base of the loop (point A) 𝜃 r is expressed as u = √kgr, where r is the u = √kgr radius of the loop, g is the acceleration due to gravity, and k is a constant. The model ignores the effects of friction. Draw a diagram to show the forces acting on the car at the instant when the radius to the car makes an angle 𝜃 with the upward vertical. If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃= 40",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5722,7 +5726,7 @@
   "section": "B",
   "questionRef": "2023 OL Q6(i)",
   "questionText": "Calculate the time it takes for the car to reach 18 m s^(–1)",
-  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5762,7 +5766,7 @@
   "section": "B",
   "questionRef": "2023 OL Q6(ii)",
   "questionText": "Calculate the distance travelled by the car while it is accelerating",
-  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5802,7 +5806,7 @@
   "section": "B",
   "questionRef": "2023 OL Q6(iii)",
   "questionText": "Calculate the distance travelled by the car when t = 30 s",
-  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5843,7 +5847,7 @@
   "section": "B",
   "questionRef": "2023 OL Q6(iv)",
   "questionText": "Calculate the time taken for the cyclist to reach a velocity of 11 m s^(–1)",
-  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5883,7 +5887,7 @@
   "section": "B",
   "questionRef": "2023 OL Q6(vi)",
   "questionText": "Calculate the distance between the car and the cyclist when t = 20 s",
-  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level (iii) Calculate the distance travelled by the car when t = 30 s.",
+  "stem": "A car is parked at a point P. At time t = 0 s the car begins to travel in a straight line with a constant acceleration of 4.5 m s^(–2). When the car has reached a velocity of 18 m s^(–1) it stops accelerating. The car continues travelling at a velocity of 18 m s^(–1) until t = 30 s. Calculate the time it takes for the car to reach 18 m s^(–1). Calculate the distance travelled by the car while it is accelerating. 22",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5916,7 +5920,7 @@
  },
  {
   "id": "am-2023-ol-7-i",
-  "topicId": "applied-mathematics-2-6",
+  "topicId": "applied-mathematics-2-4",
   "conceptId": "velocity-velocity-after-impact",
   "level": "ordinary",
   "year": 2023,
@@ -5924,7 +5928,7 @@
   "section": "B",
   "questionRef": "2023 OL Q7(i)",
   "questionText": "Calculate the velocity of S₁ and the velocity of S₂ after impact",
-  "stem": "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level Calculate the total kinetic energy of the system before impact.",
+  "stem": "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -5971,7 +5975,7 @@
   "section": "B",
   "questionRef": "2023 OL Q7(ii)",
   "questionText": "Calculate the total kinetic energy of the system before impact",
-  "stem": "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level Calculate the total kinetic energy of the system before impact.",
+  "stem": "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -6012,7 +6016,7 @@
   "section": "B",
   "questionRef": "2023 OL Q7(iii)",
   "questionText": "Calculate the loss in kinetic energy as a result of the impact",
-  "stem": "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level Calculate the total kinetic energy of the system before impact.",
+  "stem": "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -6045,7 +6049,7 @@
  },
  {
   "id": "am-2023-ol-7-iv",
-  "topicId": "applied-mathematics-2-6",
+  "topicId": "applied-mathematics-2-4",
   "conceptId": "time-interval-between-collision-comes-rest",
   "level": "ordinary",
   "year": 2023,
@@ -6053,7 +6057,7 @@
   "section": "B",
   "questionRef": "2023 OL Q7(iv)",
   "questionText": "Calculate the time interval between the collision and when S₂ comes to rest",
-  "stem": "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25 Leaving Certificate, 2023 Applied Mathematics – Ordinary Level Calculate the total kinetic energy of the system before impact.",
+  "stem": "A small smooth sphere, S₁, of mass 6 kg is projected with a velocity of 3 m s^(–1) along a smooth horizontal surface and collides with second small smooth sphere, S₂, of mass 4 kg travelling in the same direction with a velocity of 1.5 m s^(–1). is 2/3. The coefficient of restitution between the spheres is 1.5 m s^(–1) 3 m s^(–1) S₂ S₁ Calculate the velocity of S₁ and the velocity of S₂ after impact. 25",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -6453,6 +6457,49 @@
   "notes": "Cited from the 2024 higher paper."
  },
  {
+  "id": "am-2024-hl-1-c",
+  "topicId": "applied-mathematics-2-0",
+  "conceptId": "john-cycling-straight-horizontal-road-constant",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "applied-maths",
+  "section": "B",
+  "questionRef": "2024 HL Q1(c)",
+  "questionText": "John is cycling on a straight horizontal road at a constant velocity of 10 m s^(– 1) and is 21 m behind another cyclist, Kevin, who is cycling at a constant velocity of 4 m s^(– 1) in the same direction. John begins to accelerate at 2 m s^(– 2). One second later, Kevin begins to accelerate at 4 m s^(– 2)",
+  "stem": "Calculate the times when John and Kevin overtake each other.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "step marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "am-2024-hl-1-c-r1",
+    "kind": "anyN",
+    "verbatim": "s_J = 10t + t²",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "s_J = 10t + t²",
+      "s_K = 4(t−1) + 2(t−1)²",
+      "s_J = s_K + 21 + 4",
+      "t = 5 ± √2 s"
+     ]
+    }
+   }
+  ],
+  "notes": "Cited from the 2024 higher paper."
+ },
+ {
   "id": "am-2024-hl-2-a-ii",
   "topicId": "applied-mathematics-2-0",
   "conceptId": "ask",
@@ -6735,7 +6782,7 @@
       "∫ dv/(g + kv) = − ∫ dt",
       "= −t + c",
       "let u = g + kv, so du = kdv ∴ ∫ dv/(g + kv) = 1/k ∫ du/u = 1/k ln|u| = 1/k ln(g + kv)",
-      "v = v₂ = √v₁² − 13.4g when t = 0 so c = 1/k ln(g + k√v₁² − 13.4g) v = v₂ g + kv = √v₁² − 13.4g when g + kv t = 0 so c = k 1 ln(g + k√v₁² − 13.4g)/((g + k√v₁²−13.4g)e^−^k^t−g) ln (g + kv)/(g + k√v₁²−13.4g) (g + kv)/(g + k√v₁²−13.4g) = −kt so (g + kv)/(g + k√v₁²−13.4g) (g + kv)/(g + k√v₁²−13.4g) = e−kt, i.e. v = ((g + k√v₁²−13.4g)e^−^k^t−g)/k m s^–¹"
+      "v = v₂ = √v₁² − 13.4g when t = 0 so c = 1/k ln(g + k√v₁² − 13.4g) ln (g + kv)/(g + k√v₁²−13.4g) = −kt so (g + kv)/(g + k√v₁²−13.4g) = e−kt, i.e. v = ((g + k√v₁²−13.4g)e^−^k^t−g)/k m s^–¹"
      ]
     }
    }
@@ -7153,6 +7200,46 @@
   "notes": "Cited from the 2024 higher paper."
  },
  {
+  "id": "am-2024-hl-8-b",
+  "topicId": "applied-mathematics-2-12",
+  "conceptId": "algebraic-formula-writen-force-mass-displacement",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "applied-maths",
+  "section": "B",
+  "questionRef": "2024 HL Q8(b)",
+  "questionText": "The algebraic formula below is writen in terms of force F, mass m, displacement s and angular velocity 𝜔",
+  "stem": "4Fs/m𝜔² Use dimensional analysis to show that this formula has the same units as the units for displacement.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "step marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "am-2024-hl-8-b-r1",
+    "kind": "anyN",
+    "verbatim": "replacement of physical quantities with correct units and simplification to m",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme prices this ask step by step: 15 — 15 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/6/9/12), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 15,
+     "options": [
+      "replacement of physical quantities with correct units and simplification to m"
+     ]
+    }
+   }
+  ],
+  "notes": "Cited from the 2024 higher paper."
+ },
+ {
   "id": "am-2024-hl-9-i",
   "topicId": "applied-mathematics-3-2",
   "conceptId": "ask",
@@ -7162,7 +7249,7 @@
   "section": "B",
   "questionRef": "2024 HL Q9(i)",
   "questionText": "Write down the values of M₂ and M₃",
-  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7202,7 +7289,7 @@
   "section": "B",
   "questionRef": "2024 HL Q9(ii)",
   "questionText": "Solve the difference equation to find an expression for Mₙ in terms of n",
-  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7244,7 +7331,7 @@
   "section": "B",
   "questionRef": "2024 HL Q9(iii)",
   "questionText": "Calculate the total mass of opal that is predicted to be removed during the first six months of mining",
-  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7284,7 +7371,7 @@
   "section": "B",
   "questionRef": "2024 HL Q9(iv)",
   "questionText": "Solve this new difference equation to find an expression for Pₙ in terms of n",
-  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7327,7 +7414,7 @@
   "section": "B",
   "questionRef": "2024 HL Q9(v)",
   "questionText": "Calculate the total mass of opal that is now predicted to be removed during the first six months of mining",
-  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+  "stem": "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7367,7 +7454,7 @@
   "section": "B",
   "questionRef": "2024 HL Q10(b)",
   "questionText": "A tank of uniform cross‐sectional area contains water of height x m",
-  "stem": "Water leaves the tank through a pipe at its base. The rate at which the height of the water decreases is proportional to x. At time t = 0, x = H. At t = 45 s, x = H/3. Calculate t when x = H/8. 40 Leaving Certificate, 2024 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. 41 Leaving Certificate, 2024 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. 42 Leaving Certificate, 2024 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 34: wikipedia.org 43 Leaving Certificate, 2024 Applied Mathematics – Higher Level Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.",
+  "stem": "Water leaves the tank through a pipe at its base. The rate at which the height of the water decreases is proportional to x. At time t = 0, x = H. At t = 45 s, x = H/3. Calculate t when x = H/8. 40",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7409,7 +7496,7 @@
   "section": "B",
   "questionRef": "2024 OL Q1(i)",
   "questionText": "Calculate the deceleration of the car",
-  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7449,7 +7536,7 @@
   "section": "B",
   "questionRef": "2024 OL Q1(ii)",
   "questionText": "Calculate the acceleration of the car",
-  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7490,7 +7577,7 @@
   "section": "B",
   "questionRef": "2024 OL Q1(iii)",
   "questionText": "Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1)",
-  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7530,7 +7617,7 @@
   "section": "B",
   "questionRef": "2024 OL Q1(v)",
   "questionText": "There is a speed limit of 80 km per hour on this road. Investigate if the car is within the speed limit as it passes the speed van",
-  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7570,7 +7657,7 @@
   "section": "B",
   "questionRef": "2024 OL Q1(vi)",
   "questionText": "Calculate the average speed of the car between the shop and the speed van",
-  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate the time the car spends accelerating, from 10 m s^(–1) to a speed of 20 m s^(–1).",
+  "stem": "A car is travelling on a straight level road. The car is travelling with a speed of 25 m s^(–1) when it passes a shop. After passing the shop it immediately decelerates uniformly for 5 seconds to a speed of 10 m s^(–1). The car continues at this speed for 5 seconds. It then accelerates uniformly from 10 m s^(–1) to a speed of 20 m s^(–1), in 60 m. Calculate the deceleration of the car. Calculate the acceleration of the car. 3",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -7709,7 +7796,7 @@
    {
     "id": "am-2024-ol-2-iii-r1",
     "kind": "anyN",
-    "verbatim": "cos 𝜃 = 244/26√136 244/26√136 𝜃 = 36.42°",
+    "verbatim": "cos 𝜃 = 244/26√136 𝜃 = 36.42°",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
@@ -7717,7 +7804,7 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "cos 𝜃 = 244/26√136 244/26√136 𝜃 = 36.42°"
+      "cos 𝜃 = 244/26√136 𝜃 = 36.42°"
      ]
     }
    }
@@ -8371,6 +8458,46 @@
   "notes": "Cited from the 2024 ordinary paper."
  },
  {
+  "id": "am-2024-ol-7-vi",
+  "topicId": "applied-mathematics-2-4",
+  "conceptId": "explain-relationship-between-impulse-imparted-sphere",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "applied-maths",
+  "section": "B",
+  "questionRef": "2024 OL Q7(vi)",
+  "questionText": "Explain the relationship between the impulse imparted on each sphere",
+  "stem": "A small smooth sphere, A, of mass 4 kg travels with a constant speed of 5 m s^(–1). It collides with another small smooth sphere, B, of mass 6 kg travelling in the same direction with a speed of 2.5 m s^(–1). The coefficient of restitution between the spheres is e. 5 m s^(–1) 2.5 m s^(–1) After impact, sphere B continues to travel in the same direction, but with a speed of 4 m s^(–1).",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "step marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "am-2024-ol-7-vi-r1",
+    "kind": "anyN",
+    "verbatim": "equal in magnitude and opposite in direction",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "equal in magnitude and opposite in direction"
+     ]
+    }
+   }
+  ],
+  "notes": "Cited from the 2024 ordinary paper."
+ },
+ {
   "id": "am-2024-ol-8-a-ii",
   "topicId": "applied-mathematics-2-5",
   "conceptId": "vertical-normal-reaction-force-scrum-machine",
@@ -8583,7 +8710,7 @@
   "section": "B",
   "questionRef": "2024 OL Q10(b)(i)",
   "questionText": "Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years",
-  "stem": "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate P₁₈, the value of John’s college fund on his eighteenth birthday. (iii) Rather than use the entire fund his parents accumulated for college, John decided to work part time and invest €25 000 into his own new fund. John found a slightly better fixed annual rate of 5.7%. He decided to invest €200 on his birthday each year while in college. Write down the difference equation that models the value, in €, of John’s investment fund after n years. 37 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. 38 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: seamanmemories.com Image on page 10: vox.com Image on page 12: oceanpark.com.hk Image on page 14: wikihow.com. Altered Image on page 18: craicncampers.ie Image on page 20: clipartMax.com Image on page 22: safetysigns.ie Image on page 27: scrumsleds.com Image on page 28: webassign.net Image on page 30: arkansasonline.com 39 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Do not write on this page",
+  "stem": "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -8625,7 +8752,7 @@
   "section": "B",
   "questionRef": "2024 OL Q10(b)(ii)",
   "questionText": "Calculate P₁₈, the value of John’s college fund on his eighteenth birthday",
-  "stem": "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate P₁₈, the value of John’s college fund on his eighteenth birthday. (iii) Rather than use the entire fund his parents accumulated for college, John decided to work part time and invest €25 000 into his own new fund. John found a slightly better fixed annual rate of 5.7%. He decided to invest €200 on his birthday each year while in college. Write down the difference equation that models the value, in €, of John’s investment fund after n years. 37 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. 38 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: seamanmemories.com Image on page 10: vox.com Image on page 12: oceanpark.com.hk Image on page 14: wikihow.com. Altered Image on page 18: craicncampers.ie Image on page 20: clipartMax.com Image on page 22: safetysigns.ie Image on page 27: scrumsleds.com Image on page 28: webassign.net Image on page 30: arkansasonline.com 39 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Do not write on this page",
+  "stem": "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -8665,7 +8792,7 @@
   "section": "B",
   "questionRef": "2024 OL Q10(b)(iii)",
   "questionText": "Rather than use the entire fund his parents accumulated for college, John decided to work part time and invest €25 000 into his own new fund. John found a slightly better fixed annual rate of 5.7%. He decided to invest €200 on his birthday each year while in college",
-  "stem": "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Calculate P₁₈, the value of John’s college fund on his eighteenth birthday. (iii) Rather than use the entire fund his parents accumulated for college, John decided to work part time and invest €25 000 into his own new fund. John found a slightly better fixed annual rate of 5.7%. He decided to invest €200 on his birthday each year while in college. Write down the difference equation that models the value, in €, of John’s investment fund after n years. 37 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. 38 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: seamanmemories.com Image on page 10: vox.com Image on page 12: oceanpark.com.hk Image on page 14: wikihow.com. Altered Image on page 18: craicncampers.ie Image on page 20: clipartMax.com Image on page 22: safetysigns.ie Image on page 27: scrumsleds.com Image on page 28: webassign.net Image on page 30: arkansasonline.com 39 Leaving Certificate, 2024 Applied Mathematics – Ordinary Level Do not write on this page",
+  "stem": "John’s parents started a college fund for him when he was born in June 2006. On his birth date they invested €3000. Every year after that, on his birthday, they put €1500 into the fund, which earned a fixed annual interest rate of 5.5%. The value, P, in €, of John’s college fund after n years may be modelled by the difference equation: Pₙ₊₁ = 1.055Pₙ + 1500 where n ≥ 0, n∈ℤ and P₀ = 3000. Solve this difference equation to find an expression for Pₙ, the value of John’s college fund after n years. 36",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -8770,7 +8897,7 @@
      "perOption": 5,
      "options": [
       "T cos 𝜃 = mr𝜔², i.e. T (/13) 5 = 2(0.5)𝜔²",
-      "𝜔 = 7/√6 7/√6 = 2.86 rad s^–¹"
+      "𝜔 = 7/√6 = 2.86 rad s^–¹"
      ]
     }
    }
@@ -8826,7 +8953,7 @@
   "subjectId": "applied-maths",
   "section": "B",
   "questionRef": "2025 HL Q2",
-  "questionText": "Using the chain rule, show that a=v dv ds. Use calculus to derive an expression for v in terms of a and s. Show that the upward motion can now be expressed by the differential equation: 2v v2+392 dv=−1 20 ds Solve this differential equation to find an expression for v in terms of s. Calculate the greatest height the particle will reach. By using a= dv dt solve a differential equation to find an expression that relates v and t",
+  "questionText": "Using the chain rule, show that a=v dv ds. Use calculus to derive an expression for v in terms of a and s. (iii) Show that the upward motion can now be expressed by the differential equation: 2v/(v² + 392) dv = −1 20 ds (iv) Solve this differential equation to find an expression for v in terms of s. (iv) Solve this differential equation to find an expression for v in terms of s. Calculate the greatest height the particle will reach. By using a= dv dt solve a differential equation to find an expression that relates v and t",
   "stem": "A particle of mass m moves vertically upwards through the air with displacement s and velocity v. Its motion may first be modelled by ignoring air resistance, so that it has constant acceleration a. At time t = 0 the particle has velocity v₀ = 4 m s^(–1) and displacement s₀ = 0. dv (i) Using the chain rule, show that a = v dv/ds. ds. Use calculus to derive an expression for v in terms of a and s.",
   "figureKey": "",
   "labelKey": [],
@@ -8852,13 +8979,13 @@
      "options": [
       "v = v(s(t)) v′ = a = dv/dt = dv/ds ∙ ds/dt = v dv/ds",
       "vdv = ads",
-      "∫ vdv = ∫ ads, i.e. v²/2 = as + c v v = = 4 (when s = )/(√2as + 16) 0 so c = 8",
+      "∫ vdv = ∫ ads, i.e. v²/2 = as + c v = 4 when s = 0 so c = 8 v = √2as + 16",
       "Let u = v² + 392 so du = 2vdv∴ln u = ln(v² + 392)",
       "= − s/20 + c",
       "v = 4 when s = 0 so c = ln 408, i.e. (v² + 392)/408 = e^− s/20 v = 4 (when s = 0 so c)/s = ln 408, i.e. v² + 392 408 = e^− 20 v = √408e^− s/20 − 392",
       "v = 0 so s = 20 ln 408/392 = 0.8 m",
       "ma = −mg − 1/40 mv² i.e. a = dv/dt = −9.8 − v²/40 = − (392 + v²)/40 so 1/(v² + 392) dv = − 1/40 dt",
-      "1/14√2 tan−1 v/14√2 = − 1/40 t + c v = 4 when t = 0 so c = 1/14√2 tan−1 2/7√2 2/7√2"
+      "1/14√2 tan−1 v/14√2 = − 1/40 t + c v = 4 when t = 0 so c = 1/14√2 tan−1 2/7√2"
      ]
     }
    }
@@ -9014,7 +9141,7 @@
    {
     "id": "am-2025-hl-4-ii-r1",
     "kind": "anyN",
-    "verbatim": "2 ( )/5 7√3 + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3 2 50 3 ( = 5 − ) v_B−v_A + 1(0) i.e.v_B = 2(v_A) − v_A + = 1(v_B) i.e./0.084√3 2v_A + v_B = 2.8√3",
+    "verbatim": "2 ( )/5 7√3 + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3",
     "marks": 15,
     "openList": true,
     "contextNote": "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.",
@@ -9022,9 +9149,9 @@
      "claimMax": 3,
      "perOption": 5,
      "options": [
-      "2 ( )/5 7√3 + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3 2 50 3 ( = 5 − ) v_B−v_A + 1(0) i.e.v_B = 2(v_A) − v_A + = 1(v_B) i.e./0.084√3 2v_A + v_B = 2.8√3",
+      "2 ( )/5 7√3 + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3",
       "3/50 = − (v_B−v_A)/(0−7√3) 5 i.e.v_B − v_A = 0.084√3",
-      "50 (0−7√3)/5 5/679√3 v_A = 750 = 1.57 m s^(–1) 742√3 v_B = 750 = 1.71 m s^(–1)"
+      "50 (0−7√3)/5 679√3 v_A = 750 = 1.57 m s^(–1) 742√3 v_B = 750 = 1.71 m s^(–1)"
      ]
     }
    }
@@ -9186,7 +9313,7 @@
      "perOption": 5,
      "options": [
       "a⃗∙b𝑣⃗=14p−9q = 0 and p² + q² = 441",
-      "p = ± 189/√277 189/√277 , q = ± 294/√277 294/√277"
+      "p = ± 189/√277 , q = ± 294/√277"
      ]
     }
    }
@@ -9308,7 +9435,7 @@
      "perOption": 5,
      "options": [
       "x 26 = ∫ 650x dx",
-      "0.2 26 = 650 (/2 x² − )/2 0.2² = 325x² − 13 26 = 650/^√³ ( x² 2 − 0.2² 2 ) = 325x² − 13",
+      "0.2 26 = 650 (/2 x² − )/2 0.2² = 325x² − 13",
       "x = ^√³/5 so l = 1.35 m"
      ]
     }
@@ -11344,7 +11471,7 @@
   "section": "B",
   "questionRef": "2025 OL Q10(b)",
   "questionText": "The velocity‐time graph below is for the motion of a particle which has velocity u when time t = 0. The particle moves with constant acceleration a",
-  "stem": "velocity u time Using the graph or otherwise, derive an expression for s, the displacement of the particle at time t, in terms of u, a and t. 38 Leaving Certificate, 2025 Applied Mathematics – Ordinary Level Page for extra work. Label any extra work clearly with the question number and part. 39 Leaving Certificate, 2025 Applied Mathematics – Ordinary Level Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper.",
+  "stem": "velocity u time Using the graph or otherwise, derive an expression for s, the displacement of the particle at time t, in terms of u, a and t. 38",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {

@@ -533,8 +533,19 @@ const decks = [
    * syllabus break: 2021-2022 are the outgoing mechanics course and 2023-2025
    * the specification first examined in 2023. Enrolled explicitly so a later
    * regeneration cannot silently omit or replace any of its cards. */
-  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 130, '5c8f36ba0f4214eee4269d22bcd3d20ada53f1a33820c36c0e873fe5b5afac72'],
-  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 145, '1e39bd494a3304e1ec0b1153834dba6d7bf186d7f90ec05055024d40b869b570'],
+  /* 2026-09-11: Applied Maths gets the figure cropper it never had. Until
+   * today the subject had ZERO figures bound while its sibling Maths had
+   * 1,834, and that single absence was what 111 of its open asks were waiting
+   * on. 275 cards -> 388, coverage 286/498 -> 401/498.
+   *
+   * Three cards are gone. am-2021-hl-2 cited a whole question while holding
+   * half of it and is re-cited as am-2021-hl-2-a-i/-a-ii, with an alias
+   * carrying progress. am-2023-hl-3-iv and -3-v had a "Show that" imported
+   * into their stems by a page-furniture fault, which is what let them past
+   * the printed-matter gate; with their own stems they are figure-blocked
+   * like the rest of Question 3, and they go back to the open list. */
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 175, '0eb618ccbbc6c6b312acbbe23e5f6e15906dc8e6395657ff8ce3fd0837026714'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 208, '5457fa7f47995a3c74f439a7033728404ef1a719bb30cd4b404954c96174da33'],
   /* Spanish is the second modern language carded, and the first subject whose
    * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
    * article is a two-page loose sheet with its own SEC file id, and those 80
@@ -722,7 +733,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_195);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_303);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -735,7 +746,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(45);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(52);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -780,7 +791,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_738);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_745);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

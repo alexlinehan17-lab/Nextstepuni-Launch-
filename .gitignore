@@ -78,3 +78,5 @@ design-references/landing/*.mov
 # published crops live under exam-papers/<subject>/figures/ and are bound
 # through the manifest; these are working renders, regenerable on demand.
 figures-review*/
+tmp/waysin-audit.txt
+tmp/waysin-audit.json

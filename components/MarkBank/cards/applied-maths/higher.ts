@@ -89,12 +89,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
-    id: "am-2021-hl-2", topicId: "applied-mathematics-2-9", conceptId: "point-north-point-horizontal-field-alan",
-    section: "B", questionRef: "2021 HL Q2",
-    questionText: "the value of t the value of α. A point B is 80 m north of a point A on a horizontal field. Alan is at point A of the field and Brian is at point B of the field. Alan starts to run in a straight line in the direction north 45° east at a constant speed of 2.5 m s–1. Three aircraft, P, Q and R, are flying at the same height. P is travelling north at 450 km h–1. Q is travelling at 400√2 km h–1 in a direction east 45° north. R appears to the pilot of P to be flying in a direction east 10° south. R appears to the pilot of Q to be flying in a direction east 15.67° south",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    id: "am-2021-hl-2-a-i", topicId: "applied-mathematics-2-9", conceptId: "ask",
+    section: "B", questionRef: "2021 HL Q2(a)(i)",
+    stem: "(a) A point B is 80 m north of a point A on a horizontal field. Alan is at point A of the field and Brian is at point B of the α field. Alan starts to run in a straight line in the direction north 45° east at a constant speed of 2.5 m s^(–1). B α 80 m Brian sees Alan start to run, waits 8 seconds, and then runs from B to intercept Alan. Brian runs in a straight line in the direction south α° east at a constant speed of 4 m s–1 and intercepts Alan after t seconds. 45° Find",
+    questionText: "the value of t",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2021-hl-2-r1", kind: "anyN", verbatim: "(4t)² = 80² + {2.5(t + 8)}² −2 × 80 × 2.5(t + 8) cos 45", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["(4t)² = 80² + {2.5(t + 8)}² −2 × 80 × 2.5(t + 8) cos 45","9.75t² + 182.84t−4537.26 = 0 t = 14.15 s","sin𝛼/(2.5(t + 8)) = (sin 45)/4t","(sin 𝛼)/(2.5(14.15 + 8)) = (sin 45)/4 × 14.15 sin 𝛼 = (55.375 × sin 45)/56.6 = 0.6918 𝛼= sin^(−1)(0.6918) = 43.77°"]} },
+    { id: "am-2021-hl-2-a-i-r1", kind: "anyN", verbatim: "(4t)² = 80² + {2.5(t + 8)}² −2 × 80 × 2.5(t + 8) cos 45", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["(4t)² = 80² + {2.5(t + 8)}² −2 × 80 × 2.5(t + 8) cos 45","9.75t² + 182.84t−4537.26 = 0 t = 14.15 s"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-2-a-ii", topicId: "applied-mathematics-2-9", conceptId: "ask",
+    section: "B", questionRef: "2021 HL Q2(a)(ii)",
+    stem: "(a) A point B is 80 m north of a point A on a horizontal field. Alan is at point A of the field and Brian is at point B of the α field. Alan starts to run in a straight line in the direction north 45° east at a constant speed of 2.5 m s^(–1). B α 80 m Brian sees Alan start to run, waits 8 seconds, and then runs from B to intercept Alan. Brian runs in a straight line in the direction south α° east at a constant speed of 4 m s–1 and intercepts Alan after t seconds. 45° Find",
+    questionText: "the value of α",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2021-hl-2-a-ii-r1", kind: "anyN", verbatim: "sin𝛼/(2.5(t + 8)) = (sin 45)/4t", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["sin𝛼/(2.5(t + 8)) = (sin 45)/4t","(sin 𝛼)/(2.5(14.15 + 8)) = (sin 45)/4 × 14.15 sin 𝛼 = (55.375 × sin 45)/56.6 = 0.6918 𝛼= sin^(−1)(0.6918) = 43.77°"]} },
     ],
   } as SecCard,
   {
@@ -108,7 +123,7 @@ export const CARDS: SecCard[] = [
     questionText: "Three aircraft, P, Q and R, are flying at the same height. P is travelling north at 450 km h^(–1). Q is travelling at 400√2 km h^(–1) in a direction east 45° north. R appears to the pilot of P to be flying in a direction east 10° south. R appears to the pilot of Q to be flying in a direction east 15.67° south",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
     rows: [
-    { id: "am-2021-hl-2-b-r1", kind: "anyN", verbatim: "⃗⃗⃗⃗ = 0 i + 450 j V_P ⃗⃗⃗⃗ = x i + y j", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":6,"perOption":5,"options":["⃗⃗⃗⃗ = 0 i + 450 j V_P ⃗⃗⃗⃗ = x i + y j","V_R ⃗⃗⃗⃗⃗⃗ = x i + (y−450) j VRP","⃗⃗⃗⃗ = 400 i + 400 j V_Q ⃗⃗⃗⃗ = x i + y j","V_R ⃗⃗⃗⃗⃗⃗⃗ = (x−400) i + (y−400) j VRQ","tan 10 = (−(y−450))/x 0.1763x + y = 450 tan 15.67 = (−(y−400))/(x−400) 0.2805x + y = 512.2 0.1042x = 62.2 x = 596.93 ⇒ y = 344.76","⃗⃗⃗⃗ = 596.93 i + 344.76 j V_R ⃗⃗⃗⃗ | = √596.93₂ + 344.76² = 689.3km h^(–1) |V_R tan^−¹ ( 344.76/596.93) = east 30.0° north"]} },
+    { id: "am-2021-hl-2-b-r1", kind: "anyN", verbatim: "⃗⃗⃗⃗ = 0 i + 450 j V_P V⃗⃗⃗⃗ = x i + y j _R", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":6,"perOption":5,"options":["⃗⃗⃗⃗ = 0 i + 450 j V_P V⃗⃗⃗⃗ = x i + y j _R","V⃗⃗⃗⃗⃗⃗ = x i + (y−450) j RP","⃗⃗⃗⃗ = 400 i + 400 j V_Q V⃗⃗⃗⃗ = x i + y j _R","⃗⃗⃗⃗⃗⃗⃗ = (x−400) i + (y−400) j VRQ","tan 10 = (−(y−450))/x 0.1763x + y = 450 tan 15.67 = (−(y−400))/(x−400) 0.2805x + y = 512.2 0.1042x = 62.2 x = 596.93 ⇒ y = 344.76","V⃗⃗⃗⃗ = 596.93 i + 344.76 j _R |V⃗⃗⃗⃗ | = √596.93_R² + 344.76² = 689.3km h^(–1) tan^−¹ ( 344.76/596.93) = east 30.0° north"]} },
     ],
   } as SecCard,
   {
@@ -116,13 +131,13 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
-    id: "am-2021-hl-3-a-ii", topicId: "applied-mathematics-2-2", conceptId: "thedistance",
-    section: "B", questionRef: "2021 HL Q3(a)(ii)",
-    stem: "A particle is projected from a point O with speed u m s^(–1) at an angle α to the 3. horizontal. O Q P If the angle of projection is increased to 60° the particle strikes the horizontal plane at P.",
-    questionText: "Find thedistance ∣PQ∣ in terms of u",
+    id: "am-2021-hl-3-a", topicId: "applied-mathematics-2-2", conceptId: "particle-projected-point-speed-angle-horizontal",
+    section: "B", questionRef: "2021 HL Q3(a)",
+    stem: "O Q P If the angle of projection is increased to 60° the particle strikes the horizontal plane at P.",
+    questionText: "A particle is projected from a point O with speed u m s^(–1) at an angle α to the 3. horizontal. Show that the range of the particle is u2sin2α u g , and that the maximum range ∣OQ∣ is u2 g. Find thedistance ∣PQ∣ in terms of u",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2021-hl-3-a-ii-r1", kind: "anyN", verbatim: "Show that the range of the particle is (u² sin 2𝛼)/g , and that the maximum range ∣OQ∣ is u²/g . O If the angle of projection is increased to 60° the particle strikes the horizontal plane at P. Find the distance ∣PQ∣ in terms of u. u O r_j = 0", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["Show that the range of the particle is (u² sin 2𝛼)/g , and that the maximum range ∣OQ∣ is u²/g . O If the angle of projection is increased to 60° the particle strikes the horizontal plane at P. Find the distance ∣PQ∣ in terms of u. u O r_j = 0","u sin 𝛼 × t − 1/2 gt² t = (2u sin 𝛼)/g","Range = ucos 𝛼× t = u cos 𝛼 × (2u sin 𝛼)/g = (u² sin 2𝛼)/g","|OQ| = u² × 1/g = u²/g","|OP| = (u² × sin 120)/g = u²√3/2g |PQ| = u²/g − u²√3/2g = 0.134u²/g or 0.014u² or ((2−√3)u²)/2g"]} },
+    { id: "am-2021-hl-3-a-r1", kind: "anyN", verbatim: "Show that the range of the particle is (u² sin 2𝛼)/g , and that the maximum range ∣OQ∣ is u²/g . O If the angle of projection is increased to 60° the particle strikes the horizontal plane at P. Find the distance ∣PQ∣ in terms of u. u O r_j = 0", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["Show that the range of the particle is (u² sin 2𝛼)/g , and that the maximum range ∣OQ∣ is u²/g . O If the angle of projection is increased to 60° the particle strikes the horizontal plane at P. Find the distance ∣PQ∣ in terms of u. u O r_j = 0","u sin 𝛼 × t − 1/2 gt² t = (2u sin 𝛼)/g","Range = ucos 𝛼× t = u cos 𝛼 × (2u sin 𝛼)/g = (u² sin 2𝛼)/g","|OQ| = u² × 1/g = u²/g","|OP| = (u² × sin 120)/g = u²√3/2g |PQ| = u²/g − u²√3/2g = 0.134u²/g or 0.014u² or ((2−√3)u²)/2g"]} },
     ],
   } as SecCard,
   {
@@ -150,7 +165,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the value of e",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2021-hl-3-b-ii-r1", kind: "anyN", verbatim: "vᵢ = u cos 30 − g sin 30 × 2u/g√3 = u√3/6 v_j = u sin 30 − g cos 30 × 2u/g√3 g√3/g√3 = − 6 u/2 v_j = u sin 30 − g cos 30/u√3 × g√3 eu = − 2", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["vᵢ = u cos 30 − g sin 30 × 2u/g√3 = u√3/6 v_j = u sin 30 − g cos 30 × 2u/g√3 g√3/g√3 = − 6 u/2 v_j = u sin 30 − g cos 30/u√3 × g√3 eu = − 2","Rebound velocity = u√3/6 i + eu/2 j tan 60 = eu/2 ÷ u√3/6 = e√3 e = 1"]} },
+    { id: "am-2021-hl-3-b-ii-r1", kind: "anyN", verbatim: "vᵢ = u cos 30 − g sin 30 × 2u/g√3 = u√3/6 v_j = u sin 30 − g cos 30 × 2u/g√3 = − u/2", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["vᵢ = u cos 30 − g sin 30 × 2u/g√3 = u√3/6 v_j = u sin 30 − g cos 30 × 2u/g√3 = − u/2","Rebound velocity = u√3/6 i + eu/2 j tan 60 = eu/2 ÷ u√3/6 = e√3 e = 1"]} },
     ],
   } as SecCard,
   {
@@ -166,6 +181,50 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "am-2021-hl-4-a-i-r1", kind: "anyN", verbatim: "kmg−2T = kma", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["kmg−2T = kma","T−mg = m × 2a","a = ( (k−2)/(k + 4)) g a > 0 ⇒ k > 2"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-4-a-ii", topicId: "applied-mathematics-2-5", conceptId: "tension-string",
+    section: "B", questionRef: "2021 HL Q4(a)(ii)",
+    stem: "The diagram shows a light inextensible string having one end fixed, passing under a smooth movable pulley C of mass km kg and then over a fixed smooth pulley. The other end of the string is attached to a light scale pan. A bock D of mass m kg is placed symmetrically on the centre of the scale pan. The system is released from rest. The scale pan moves upwards.",
+    questionText: "Find, in terms of k and m, the tension in the string",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2021-hl-4-a-ii-r1", kind: "anyN", verbatim: "T = mg + 2m ( (k−2)/(k + 4)) g T = ( 3k/(k + 4)) mg", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T = mg + 2m ( (k−2)/(k + 4)) g T = ( 3k/(k + 4)) mg"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2021-HL-paper-q4aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2021-HL-paper-q4aii-art.png",
+          "srcHash": "f925b68ace9bae0c5815ce8219c1fcf1",
+          "alt": "The diagram printed with Applied Mathematics 2021 HL Q4(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: C, D.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-4-a-iii", topicId: "applied-mathematics-2-5", conceptId: "reaction-between-scale-pan",
+    section: "B", questionRef: "2021 HL Q4(a)(iii)",
+    stem: "The diagram shows a light inextensible string having one end fixed, passing under a smooth movable pulley C of mass km kg and then over a fixed smooth pulley. The other end of the string is attached to a light scale pan. A bock D of mass m kg is placed symmetrically on the centre of the scale pan. The system is released from rest. The scale pan moves upwards.",
+    questionText: "Find, in terms of k and m, the reaction between D and the scale pan",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2021-hl-4-a-iii-r1", kind: "anyN", verbatim: "R−mg = m × 2a R = ( 3k/(k + 4)) mg", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["R−mg = m × 2a R = ( 3k/(k + 4)) mg"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2021-HL-paper-q4aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2021-HL-paper-q4aii-art.png",
+          "srcHash": "f925b68ace9bae0c5815ce8219c1fcf1",
+          "alt": "The diagram printed with Applied Mathematics 2021 HL Q4(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: C, D.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -228,14 +287,138 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
-    id: "am-2021-hl-6-a-ii", topicId: "applied-mathematics-2-13", conceptId: "height-equilibrium-position-rises",
-    section: "B", questionRef: "2021 HL Q6(a)(ii)",
-    stem: "A particle D of mass m is suspended from a fixed point by a light elastic string of 3m𝑔 natural length ℓ and elastic constant Initially D rests in equilibrium with the string vertical. distance 2/3 ℓ below its equilibrium position The particle is now pulled down a vertical distance and released from rest.",
-    questionText: "In terms of ℓ, find the height above the equilibrium position to which D rises",
+    id: "am-2021-hl-5-b", topicId: "applied-mathematics-2-4", conceptId: "smooth-sphere-has-mass-speed-collides",
+    section: "B", questionRef: "2021 HL Q5(b)",
+    stem: "P Q 60° 30° ku u The coefficient of restitution between the spheres is e.",
+    questionText: "A smooth sphere P has mass 2m and speed u. It collides Q P obliquely with a smooth sphere Q of mass m which is moving makes an angle 60°/30° ku with speed ku, as shown in the diagram. Before the collision, the direction of P makes an angle ku u of 30° to the line of centres. After the collision, the direction of P makes an angle of 60° to the line of The coefficient of restitution/(^√³⁽¹^−^e^)) between The coefficient of restitution between the spheres is e. Show that k = ^√^(3(1−e)) (i) Show that k = (^√³⁽¹^−^e^))/(2(1 + e)) . Find the speed of Q immediately after the collision",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2021-hl-6-a-ii-r1", kind: "anyN", verbatim: "natural length l and elastic constant 3mg/l . Initially D rests in equilibrium with the string vertical. The particle is now pulled down a vertical distance 2/3 l below position and released from rest. Show that D moves with simple harmonic motion. In terms of l, find the height above the equilibrium position to which D rises. T₀ = mg", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["natural length l and elastic constant 3mg/l . Initially D rests in equilibrium with the string vertical. The particle is now pulled down a vertical distance 2/3 l below position and released from rest. Show that D moves with simple harmonic motion. In terms of l, find the height above the equilibrium position to which D rises. T₀ = mg","ke = mg 3mg/l e = mg e = 1/3 l","ma = mg−T ma = mg − 3mg/l (e + x) a = − 3g/l x","𝜔= √^(3g) l v = 𝜔√A² −x² v = √³^g l √( 2/3 l) 2 − ( 1/3 l) 2 = √gl","v² = u² + 2as 0 = gl − 2gs ⇒ s = 1/2 l height = 1/3 l + 1/2 l = 5/6 l"]} },
+    { id: "am-2021-hl-5-b-r1", kind: "anyN", verbatim: "P 2m u√3/2 i + u/2 j v₁ i + u/2 j m−ku i + 0 j v₂ i + 0 j Q PCM 2m ( u√3/2 ) + m(−ku) = 2mv₁ + mv₂", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["P 2m u√3/2 i + u/2 j v₁ i + u/2 j m−ku i + 0 j v₂ i + 0 j Q PCM 2m ( u√3/2 ) + m(−ku) = 2mv₁ + mv₂","NEL v₁ − v₂ = −e ( u√3/2 + ku)","2v₁ + v₂ = u√3 −ku v₁ − v₂ = −e ( u√3/2 ) − keu 6v₁ = 2u√3 −2ku−eu√3 −2keu","tan 60 = u/2 tan 60 = 2/v₁ v₁ = u/2√3 ⇒ 6v₁ = u√3 2u√3 −2ku−eu√3 −2keu = u√3 k = (√3(1−e))/(2(1 + e))","3v₂ = u√3 −ku + eu√3 + 2keu 3v2 = u√3 − (√3(1−e))/(2(1 + e)) u + eu√3 + (√3(1−e))/(1 + e) eu 3v₂ = u (√3 + 7e√3)/(2(1 + e)) v2 = (u√3(1 + 7e))/(6(1 + e))"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-6-a", topicId: "applied-mathematics-2-13", conceptId: "particle-mass-suspended-fixed-point-light",
+    section: "B", questionRef: "2021 HL Q6(a)",
+    stem: "Initially D rests in equilibrium with the string vertical. distance 2/3 ℓ below its equilibrium position The particle is now pulled down a vertical distance and released from rest.",
+    questionText: "A particle D of mass m is suspended from a fixed point by a light elastic string of 3m𝑔 natural length ℓ and elastic constant Show that D moves with simple harmonic motion. In terms of ℓ, find the height above the equilibrium position to which D rises",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "am-2021-hl-6-a-r1", kind: "anyN", verbatim: "natural length l and elastic constant 3mg/l . Initially D rests in equilibrium with the string vertical. The particle is now pulled down a vertical distance 2/3 l below position and released from rest. Show that D moves with simple harmonic motion. In terms of l, find the height above the equilibrium position to which D rises. T₀ = mg", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["natural length l and elastic constant 3mg/l . Initially D rests in equilibrium with the string vertical. The particle is now pulled down a vertical distance 2/3 l below position and released from rest. Show that D moves with simple harmonic motion. In terms of l, find the height above the equilibrium position to which D rises. T₀ = mg","ke = mg 3mg/l e = mg e = 1/3 l","ma = mg−T ma = mg − 3mg/l (e + x) a = − 3g/l x","𝜔= √^(3g)_l v = 𝜔√A² −x² v = √³^g l √( 2/3 l) 2 − ( 1/3 l) 2 = √gl","v² = u² + 2as 0 = gl − 2gs ⇒ s = 1/2 l height = 1/3 l + 1/2 l = 5/6 l"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-6-b-i", topicId: "applied-mathematics-2-0", conceptId: "ask",
+    section: "B", questionRef: "2021 HL Q6(b)(i)",
+    stem: "A smooth slide EFG is in the shape of two arcs, EF and FG, each of radius r. The centre O of arc FG is vertically below F as shown in the diagram. Point E is at a height r/5 above point F. A child starts from rest at E, moves along the slide past the point F and loses contact with the slide at point H. OH makes an angle 𝜃 with the vertical. 𝜃 O G K The child lands in a sandpit at point K.",
+    questionText: "Find the value of f",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2021-hl-6-b-i-r1", kind: "anyN", verbatim: "H 1/2 mv² = mg { 1/5 r + (r − r cos 𝜃)}", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["H 1/2 mv² = mg { 1/5 r + (r − r cos 𝜃)}","v² = 2gr { 1/5 + (1 − cos 𝜃)} v² = 2gr { 6/5 − cos 𝜃} H mg cos 𝜃 − R = mv²/r","mg cos 𝜃 − 0 = 2mg { 6/5 − cos 𝜃}","cos 𝜃 = 4/5 ⇒ 𝜃= 36.87°"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2021-HL-paper-q6bi-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2021-HL-paper-q6bi-art.png",
+          "srcHash": "68c28222ce6c6e239129ff8ef9753414",
+          "alt": "The diagram printed with Applied Mathematics 2021 HL Q6(b)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: E, F, H, θ, O, G, K.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-6-b-ii", topicId: "applied-mathematics-2-0", conceptId: "speed-child",
+    section: "B", questionRef: "2021 HL Q6(b)(ii)",
+    stem: "A smooth slide EFG is in the shape of two arcs, EF and FG, each of radius r. The centre O of arc FG is vertically below F as shown in the diagram. Point E is at a height r/5 above point F. A child starts from rest at E, moves along the slide past the point F and loses contact with the slide at point H. OH makes an angle 𝜃 with the vertical. 𝜃 O G K The child lands in a sandpit at point K.",
+    questionText: "Find, in terms of r, the speed of the child at K",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2021-hl-6-b-ii-r1", kind: "anyN", verbatim: "K 1/2 mv₁² = mg (r + 1/5 r) v₁² = 12/5 gr v₁ = √¹² 5 gr or 14√3r/5 or 4.85√r", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["K 1/2 mv₁² = mg (r + 1/5 r) v₁² = 12/5 gr v₁ = √¹² 5 gr or 14√3r/5 or 4.85√r"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2021-HL-paper-q6bi-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2021-HL-paper-q6bi-art.png",
+          "srcHash": "68c28222ce6c6e239129ff8ef9753414",
+          "alt": "The diagram printed with Applied Mathematics 2021 HL Q6(b)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: E, F, H, θ, O, G, K.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-7-a-i", topicId: "applied-mathematics-2-10", conceptId: "ask",
+    section: "B", questionRef: "2021 HL Q7(a)(i)",
+    stem: "A thin uniform rod, of length 30d and mass m, is bent to form a 7. frame. The frame is in the shape of a right‐angled triangle ABC, as shown in the diagram. 13d |CA| = 13d and |AB| > |BC|. 13d The frame is freely suspended from A. A horizontal force of magnitude kmg, where k is a constant, is applied to the frame at B. The line of action of the force lies in the vertical plane containing the frame. The frame hangs in equilibrium with AB vertical.",
+    questionText: "Find |BC| in terms of d",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2021-hl-7-a-i-r1", kind: "anyN", verbatim: "|BC| = x ⇒ |AB| = 17d−x x² + (17d−x)² = (13d)² |BC| = x = 5d", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["|BC| = x ⇒ |AB| = 17d−x x² + (17d−x)² = (13d)² |BC| = x = 5d"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2021-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2021-HL-paper-q7ai-art.png",
+          "srcHash": "bee1d5590bb6b35c78d23ba6f42b667b",
+          "alt": "The diagram printed with Applied Mathematics 2021 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, 13d, B, C.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-7-a-ii", topicId: "applied-mathematics-2-10", conceptId: "distance-centre-gravity-frame",
+    section: "B", questionRef: "2021 HL Q7(a)(ii)",
+    stem: "A thin uniform rod, of length 30d and mass m, is bent to form a 7. frame. The frame is in the shape of a right‐angled triangle ABC, as shown in the diagram. 13d |CA| = 13d and |AB| > |BC|. 13d The frame is freely suspended from A. A horizontal force of magnitude kmg, where k is a constant, is applied to the frame at B. The line of action of the force lies in the vertical plane containing the frame. The frame hangs in equilibrium with AB vertical.",
+    questionText: "Find the distance of the centre of gravity of the frame from AB",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2021-hl-7-a-ii-r1", kind: "anyN", verbatim: "↻AB m_A_C × 5/2 d + m_B_C × 5/2 d = m × y", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["↻AB m_A_C × 5/2 d + m_B_C × 5/2 d = m × y","5/30 m × 5/2 d + 13/30 m × 5/2 d = m × y y = 3/2 d"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2021-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2021-HL-paper-q7ai-art.png",
+          "srcHash": "bee1d5590bb6b35c78d23ba6f42b667b",
+          "alt": "The diagram printed with Applied Mathematics 2021 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, 13d, B, C.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
+    id: "am-2021-hl-7-a-iii", topicId: "applied-mathematics-2-10", conceptId: "ask",
+    section: "B", questionRef: "2021 HL Q7(a)(iii)",
+    stem: "A thin uniform rod, of length 30d and mass m, is bent to form a 7. frame. The frame is in the shape of a right‐angled triangle ABC, as shown in the diagram. 13d |CA| = 13d and |AB| > |BC|. 13d The frame is freely suspended from A. A horizontal force of magnitude kmg, where k is a constant, is applied to the frame at B. The line of action of the force lies in the vertical plane containing the frame. The frame hangs in equilibrium with AB vertical.",
+    questionText: "Find the value of k",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2021-hl-7-a-iii-r1", kind: "anyN", verbatim: "↻A kmg × 12d = mg × 3/2 d", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["↻A kmg × 12d = mg × 3/2 d","k = 1/8"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2021-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2021-HL-paper-q7ai-art.png",
+          "srcHash": "bee1d5590bb6b35c78d23ba6f42b667b",
+          "alt": "The diagram printed with Applied Mathematics 2021 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, 13d, B, C.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -247,7 +430,7 @@ export const CARDS: SecCard[] = [
     questionText: "Prove that the moment of inertia of a uniform rod, of mass m and length 2ℓabout an 8. its plane, is 1/3 mℓ². axis through its centre, perpendicular to its plane, is",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2021-hl-8-a-r1", kind: "anyN", verbatim: "mass of element = M{dx} moment of inertia of the element = M{dx} x²", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["mass of element = M{dx} moment of inertia of the element = M{dx} x²","l x² dx moment of inertia of the rod = M ∫","−l = M [ x³/3 ] −l l","= 2/3 Ml3 = 1/3 ml2"]} },
+    { id: "am-2021-hl-8-a-r1", kind: "anyN", verbatim: "mass of element = M{dx} moment of inertia of the element = M{dx} x²", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["mass of element = M{dx} moment of inertia of the element = M{dx} x²","moment of inertia of the rod = M ∫ ₋^l_l x² dx","= M [ x³/3 ] −l l","= 2/3 Ml3 = 1/3 ml2"]} },
     ],
   } as SecCard,
   {
@@ -255,13 +438,13 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
-    id: "am-2021-hl-8-b-iii", topicId: "applied-mathematics-2-12", conceptId: "period-small-oscillations-frame",
-    section: "B", questionRef: "2021 HL Q8(b)(iii)",
-    stem: "Three equal uniform rods, each of mass m and length 2ℓ, formthe sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6mℓ². The frame is held with DE horizontal and F below DE. It is then released from rest.",
-    questionText: "If the period of small oscillations for the frame is 1.87 s, find the value of ℓ",
+    id: "am-2021-hl-8-b", topicId: "applied-mathematics-2-12", conceptId: "equal-uniform-rods-mass-length-formthe",
+    section: "B", questionRef: "2021 HL Q8(b)",
+    stem: "The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6mℓ². The frame is held with DE horizontal and F below DE. It is then released from rest.",
+    questionText: "Three equal uniform rods, each of mass m and length 2ℓ, formthe sides of a rigid equilateral triangular frame DEF. Show that the moment of inertia of the frame about the axis is 6mℓ2. Find, in terms of ℓ, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of ℓ",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
     rows: [
-    { id: "am-2021-hl-8-b-iii-r1", kind: "anyN", verbatim: "length 2l, form the sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6ml². The frame is held with DE horizontal and F below DE. It is then released from rest. Find, in terms of l, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of l. I = 4/3 ml² + 4/3 ml² +", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 10, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["length 2l, form the sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6ml². The frame is held with DE horizontal and F below DE. It is then released from rest. Find, in terms of l, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of l. I = 4/3 ml² + 4/3 ml² +","{ 1/3 ml² + m(2l cos 30)²} I = 6ml²","Mgh₁ = 1/2 I𝜔² + Mgh₂ 3m × g × 2/3 √3l = 1/2 (6ml²)𝜔² + 3m × g × 1/3 √3l","√3mgl = 3ml²𝜔² 𝜔= √^(√3)^g 3l","Mgh = mg × 1/2 √3l + mg × 1/2 √3l + mg × √3l T = 1.87 = 2𝜋√ Mgh I = 2𝜋√ 6ml²/2mg√3l = 2𝜋√√3l g l = 0.50 m."],"perOptionSteps":[5,5,10,5,5]} },
+    { id: "am-2021-hl-8-b-r1", kind: "anyN", verbatim: "length 2l, form the sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6ml². The frame is held with DE horizontal and F below DE. It is then released from rest. Find, in terms of l, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of l. I = 4/3 ml² + 4/3 ml² +", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 10, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["length 2l, form the sides of a rigid equilateral triangular frame DEF. The frame is free to rotate in a vertical plane about a fixed smooth horizontal axis which passes through D and is perpendicular to the plane of the frame. Show that the moment of inertia of the frame about the axis is 6ml². The frame is held with DE horizontal and F below DE. It is then released from rest. Find, in terms of l, the angular speed of the frame when FE is horizontal for the first time. If the period of small oscillations for the frame is 1.87 s, find the value of l. I = 4/3 ml² + 4/3 ml² +","{ 1/3 ml² + m(2l cos 30)²} I = 6ml²","Mgh₁ = 1/2 I𝜔² + Mgh₂ 3m × g × 2/3 √3l = 1/2 (6ml²)𝜔² + 3m × g × 1/3 √3l","√3mgl = 3ml²𝜔² 𝜔= √√33lg","Mgh = mg × 1/2 √3l + mg × 1/2 √3l + mg × √3l T = 1.87 = 2𝜋√Mgh^I = 2𝜋√2mg√3^(6m)^l²_l = 2𝜋√^(√3)^l g l = 0.50 m."],"perOptionSteps":[5,5,10,5,5]} },
     ],
   } as SecCard,
   {
@@ -310,13 +493,13 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Higher Level — © State Examinations Commission.",
-    id: "am-2021-hl-10-b", topicId: "applied-mathematics-2-0", conceptId: "there-initially-120-insects-region-population",
+    id: "am-2021-hl-10-b", topicId: "applied-mathematics-2-0", conceptId: "population-insects-region-grows-rate-proportional",
     section: "B", questionRef: "2021 HL Q10(b)",
-    stem: "dP/dt kP where k is a positive constant. In the absence of any outside factors the population will triple in 15 days. Find the value of k. A scientist begins to remove 10 insects from the population each day. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out? Leaving Certificate 2021 6 Applied Mathematics – Higher Level There is no examination material on this page. Leaving Certificate 2021 7 Applied Mathematics – Higher Level Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.",
-    questionText: "Find the value of k. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out? P, the population of insects in a region, grows at a rate that is proportional to the current population",
+    stem: "dP/dt kP where k is a positive constant. In the absence of any outside factors the population will triple in 15 days. Find the value of k. A scientist begins to remove 10 insects from the population each day. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out?",
+    questionText: "P, the population of insects in a region, grows at a rate that is proportional to the current population. Find the value of k. If there are initially 120 insects in the region the population will not survive. After how many days will the population die out?",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2021-hl-10-b-r1", kind: "anyN", verbatim: "∫ dP/P = k ∫ dt", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["∫ dP/P = k ∫ dt","3P = k[t]₀ 15 [ln P]_P","ln3P−lnP = 15k k = ln3/15 = 0.07324","dP/dt = ln3/15 P − 10 ∫ dP/ln3 = ∫ dt ∫ ln3/(15P−10) ∫ 15/ln3 [ ln | ln3/15 P − 10|] 120 0 = [t]₀ t","t = 15/ln3 (ln10 − ln1.2111) t = 28·8 days"]} },
+    { id: "am-2021-hl-10-b-r1", kind: "anyN", verbatim: "∫ dP/P = k ∫ dt", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["∫ dP/P = k ∫ dt","[ln P]^(3P)_P = k[t]¹⁵₀","ln3P−lnP = 15k k = ln3/15 = 0.07324","dP/dt = ln3/15 P − 10 ∫ dP/ln3 = ∫ dt ∫ ln3/(15P−10) ∫ 15/ln3 [ ln | ln3/15 P − 10|] 120 0 = [t]₀ t","t = 15/ln3 (ln10 − ln1.2111) t = 28·8 days"]} },
     ],
   } as SecCard,
   {
@@ -386,7 +569,7 @@ export const CARDS: SecCard[] = [
     questionText: "the direction the boat should steer",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-2-a-i-r1", kind: "anyN", verbatim: "V𝑣⃗BS = V𝑣⃗_B−V𝑣⃗_S V𝑣⃗BS = (−55cos 𝛼 𝚤⃗+ 55 sin 𝛼 𝚥⃗) −(−22 cos 30 𝚤⃗+ 22 sin 30 𝚥⃗) V𝑣⃗BS = (22 cos 30 −55 cos 𝛼) 𝚤⃗+ (55 sin 𝛼−22sin 30) 𝚥⃗ V𝑣⃗BS = 0 𝚤⃗+ b 𝚥⃗", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["V𝑣⃗BS = V𝑣⃗_B−V𝑣⃗_S V𝑣⃗BS = (−55cos 𝛼 𝚤⃗+ 55 sin 𝛼 𝚥⃗) −(−22 cos 30 𝚤⃗+ 22 sin 30 𝚥⃗) V𝑣⃗BS = (22 cos 30 −55 cos 𝛼) 𝚤⃗+ (55 sin 𝛼−22sin 30) 𝚥⃗ V𝑣⃗BS = 0 𝚤⃗+ b 𝚥⃗","22 22 cos 30 − 55 cos/^√³ 𝛼 = 0 55 25 𝛼= 69.73°"]} },
+    { id: "am-2022-hl-2-a-i-r1", kind: "anyN", verbatim: "V𝑣⃗BS = V𝑣⃗_B−V𝑣⃗_S V𝑣⃗BS = (−55cos 𝛼 𝚤⃗+ 55 sin 𝛼 𝚥⃗) −(−22 cos 30 𝚤⃗+ 22 sin 30 𝚥⃗) V𝑣⃗BS = (22 cos 30 −55 cos 𝛼) 𝚤⃗+ (55 sin 𝛼−22sin 30) 𝚥⃗ V𝑣⃗BS = 0 𝚤⃗+ b 𝚥⃗ 22cos 30 −55 cos 𝛼= 0", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["V𝑣⃗BS = V𝑣⃗_B−V𝑣⃗_S V𝑣⃗BS = (−55cos 𝛼 𝚤⃗+ 55 sin 𝛼 𝚥⃗) −(−22 cos 30 𝚤⃗+ 22 sin 30 𝚥⃗) V𝑣⃗BS = (22 cos 30 −55 cos 𝛼) 𝚤⃗+ (55 sin 𝛼−22sin 30) 𝚥⃗ V𝑣⃗BS = 0 𝚤⃗+ b 𝚥⃗ 22cos 30 −55 cos 𝛼= 0","22 55 25 𝛼= 69.73°"]} },
     ],
   } as SecCard,
   {
@@ -422,13 +605,27 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-2-b-i", topicId: "applied-mathematics-2-0", conceptId: "2t1t2",
+    section: "B", questionRef: "2022 HL Q2(b)(i)",
+    stem: "A woman can swim at u m s^(–1) in still water. In a river she can cover a distance d m against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). The width of the river is dm and v < u.",
+    questionText: "Show that v= d(t1−t2) 2t1t2",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2022-hl-2-b-i-r1", kind: "anyN", verbatim: "upstream: d = (u−v)t₁", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["upstream: d = (u−v)t₁","u − v = d/t₁ downstream: d = (u + v)t₂","u + v = d/t₂ ⟹ 2v = d/t₂ − d/t₁ v = (d(t₁−t₂))/2t₁t₂"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
     id: "am-2022-hl-2-b-ii", topicId: "applied-mathematics-1-3", conceptId: "time-taken-woman-cross-river-shortest",
     section: "B", questionRef: "2022 HL Q2(b)(ii)",
     stem: "A woman can swim at u m s^(–1) in still water. In a river she can cover a distance d m against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). The width of the river is dm and v < u.",
     questionText: "Find, in terms of t₁ and t₂, the time taken by the woman to cross the river by the shortest path",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-2-b-ii-r1", kind: "anyN", verbatim: "against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). Show that v = ./2t₁t₂ d(t₁−t₂) The width of the river is d m and v < u. Find, in terms of t₁ and t₂, the time taken by the woman to cross the river by the shortest path. upstream: d = (u−v)t₁", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["against the current in time t₁ and the same distance with the current in time t₂. The current flows parallel to the straight banks at v m s^(–1). Show that v = ./2t₁t₂ d(t₁−t₂) The width of the river is d m and v < u. Find, in terms of t₁ and t₂, the time taken by the woman to cross the river by the shortest path. upstream: d = (u−v)t₁","u − v = d/t₁ downstream: d = (u + v)t₂","u + v = d/t₂ ⟹ 2v = d/t₂ − d/t₁ v = (d(t₁−t₂))/2t₁t₂","v time = d/(√u²−v²) d/(√u²−v²)","√u² − v² = d/√t₁t₂ d/√t₁t₂ time = d/(√u²−v²) = √t1t2 time = d/(√u²−v²) = √t1t2"]} },
+    { id: "am-2022-hl-2-b-ii-r1", kind: "anyN", verbatim: "v time = d/(√u²−v²)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["v time = d/(√u²−v²)","√u² − v² = d/√t₁t₂ time = d/(√u²−v²) = √t1t2"]} },
     ],
   } as SecCard,
   {
@@ -442,7 +639,7 @@ export const CARDS: SecCard[] = [
     questionText: "the two possible values of 𝛼",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2022-hl-3-a-i-r1", kind: "anyN", verbatim: "14√3 cos 𝛼× t = 60", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["14√3 cos 𝛼× t = 60","t = 60/(14√3 cos 𝛼) 60/14√3 14√3 sin 𝛼 × t − 1/2 gt² = −60","14√3 sin 𝛼 × ( 60/𝛼) 60/14√3 cos − 1/2 g ( 60/𝛼) 60/14√3 cos 2 = −60","60 tan 𝛼 − 1/2 g 3600/(588 cos2 𝛼) = −60 60tan 𝛼−30(1 + tan² 𝛼) = −60 tan² 𝛼 − tan 2 tan 𝛼 = 𝛼 1 − ± 1 (= 0)/√2 𝛼= −22.5° or 67.5°"]} },
+    { id: "am-2022-hl-3-a-i-r1", kind: "anyN", verbatim: "14√3 cos 𝛼× t = 60", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["14√3 cos 𝛼× t = 60","t = 60/(14√3 cos 𝛼) 14√3 sin 𝛼 × t − 1/2 gt² = −60","14√3 sin 𝛼 × ( 60/𝛼) 14√3 cos − 1/2 g ( 60/𝛼) 14√3 cos 2 = −60","60 tan 𝛼 − 1/2 g 3600/(588 cos2 𝛼) = −60 60tan 𝛼−30(1 + tan² 𝛼) = −60 tan² 𝛼−2 tan 𝛼−1 = 0 tan 𝛼= 1 ± √2 𝛼= −22.5° or 67.5°"]} },
     ],
   } as SecCard,
   {
@@ -470,8 +667,52 @@ export const CARDS: SecCard[] = [
     questionText: "A particle is projected up a plane with speed u m s^(–1) at an angle 𝛽 to the plane. The plane is inclined at 30° to the horizontal",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2022-hl-3-b-r1", kind: "anyN", verbatim: "r_j = 0", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["r_j = 0","u sin 𝛽 × t − 1/2 g cos 30 × t² = 0","t = (2u sin 𝛽)/(g cos 30) = (4u sin 𝛽)/g√3 sin/g√3 R = u cos 𝛽 × t − 1/2 g sin 30 × t²","= u cos 𝛽 × (4u sin 𝛽)/g√3 sin/g√3 − 1/2 g sin 30 × ( (4u sin 𝛽)/g√3 sin/g√3 ) 2","= 2u²/g√3 2u²/g√3 × sin 2𝛽 − 4u²/3g × sin² 𝛽 dR/d𝛽 = 4u²/g√3 4u²/g√3 × cos 2𝛽 − 8u²/3g × sin 𝛽 × cos 𝛽 dR/d𝛽 = 4u²/g√3 4u²/g√3 × cos 2𝛽 − 4u²/3g × sin 2𝛽 dR/d𝛽 = 0 ⇒ tan 2𝛽 = √3 𝛽= 30° R = 2u²/g√3 2u²/g√3 × sin 60 − 4u²/3g × sin² 30 R = u²/g − u²/3g = 2u²/3g"]} },
+    { id: "am-2022-hl-3-b-r1", kind: "anyN", verbatim: "r_j = 0", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["r_j = 0","u sin 𝛽 × t − 1/2 g cos 30 × t² = 0","t = (2u sin 𝛽)/(g cos 30) = (4u sin 𝛽)/g√3 R = u cos 𝛽 × t − 1/2 g sin 30 × t²","= u cos 𝛽 × (4u sin 𝛽)/g√3 − 1/2 g sin 30 × ( (4u sin 𝛽)/g√3 ) 2","= 2u²/g√3 × sin 2𝛽 − 4u²/3g × sin² 𝛽 dR/d𝛽 = 4u²/g√3 × cos 2𝛽 − 8u²/3g × sin 𝛽 × cos 𝛽 dR/d𝛽 = 4u²/g√3 × cos 2𝛽 − 4u²/3g × sin 2𝛽 dR/d𝛽 = 0 ⇒ tan 2𝛽 = √3 𝛽= 30° R = 2u²/g√3 × sin 60 − 4u²/3g × sin² 30 R = u²/g − u²/3g = 2u²/3g"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-4-a-ii", topicId: "applied-mathematics-2-5", conceptId: "acceleration",
+    section: "B", questionRef: "2022 HL Q4(a)(ii)",
+    stem: "A block C of mass 6m rests on a rough horizontal table. It is connected by a light inextensible string which passes over a smooth fixed pulley at the edge of the table to a block D of mass 3m. D is connected by another light inextensible string to a block E of mass 2m, as shown in the diagram. the table is 1/3. The coefficient of friction between C and the table is The system is released from rest.",
+    questionText: "Find the acceleration of C",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2022-hl-4-a-ii-r1", kind: "anyN", verbatim: "T−2mg = 6ma", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["T−2mg = 6ma","T₁ + 3mg−T = 3ma","2mg−T₁ = 2ma","a = 3g/11"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2022-HL-paper-q4aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2022-HL-paper-q4aii-art.png",
+          "srcHash": "1f6f1b4cad85b655e54d13ecf9e4394f",
+          "alt": "The diagram printed with Applied Mathematics 2022 HL Q4(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: C, D, E.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-4-a-iii", topicId: "applied-mathematics-2-5", conceptId: "tension-string",
+    section: "B", questionRef: "2022 HL Q4(a)(iii)",
+    stem: "A block C of mass 6m rests on a rough horizontal table. It is connected by a light inextensible string which passes over a smooth fixed pulley at the edge of the table to a block D of mass 3m. D is connected by another light inextensible string to a block E of mass 2m, as shown in the diagram. the table is 1/3. The coefficient of friction between C and the table is The system is released from rest.",
+    questionText: "Find the tension in each string",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2022-hl-4-a-iii-r1", kind: "anyN", verbatim: "T = 2mg + 6m × 3g/11 ⇒ T = 40/11 mg T₁ = 2mg − 2m × 3g/11 ⇒ T₁ = 16/11 mg", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T = 2mg + 6m × 3g/11 ⇒ T = 40/11 mg T₁ = 2mg − 2m × 3g/11 ⇒ T₁ = 16/11 mg"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2022-HL-paper-q4aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2022-HL-paper-q4aii-art.png",
+          "srcHash": "1f6f1b4cad85b655e54d13ecf9e4394f",
+          "alt": "The diagram printed with Applied Mathematics 2022 HL Q4(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: C, D, E.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -492,13 +733,41 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-5-a-i", topicId: "applied-mathematics-2-6", conceptId: "speed-sphere-after-collision",
+    section: "B", questionRef: "2022 HL Q5(a)(i)",
+    stem: "A smooth sphere A of mass 2m, moving with speed 3u on a 3u u smooth horizontal table collides directly with a smooth sphere B of mass m, moving in the opposite direction with speed u. 3u u The coefficient of restitution between A and B is e. Find, in terms of u and e, The loss of the kinetic energy due to the collision is kmu2(1 – e2).",
+    questionText: "the speed of each sphere after the collision",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2022-hl-5-a-i-r1", kind: "anyN", verbatim: "2m(3u) + m(−u) = 2mv₁ + mv₂", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 10 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["2m(3u) + m(−u) = 2mv₁ + mv₂","v₁ −v₂ = −e(3u−(−u))","NEL 2v₁ + v₂ = 5u v₁ −v₂ = −4eu v₁ = (u(5−4e))/3 v₂ = (u(5 + 8e))/3"],"perOptionSteps":[5,5,10]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-5-a-ii", topicId: "applied-mathematics-2-6", conceptId: "magnitude-impulse-imparted-due-collision",
+    section: "B", questionRef: "2022 HL Q5(a)(ii)",
+    stem: "A smooth sphere A of mass 2m, moving with speed 3u on a 3u u smooth horizontal table collides directly with a smooth sphere B of mass m, moving in the opposite direction with speed u. 3u u The coefficient of restitution between A and B is e. Find, in terms of u and e, The loss of the kinetic energy due to the collision is kmu2(1 – e2).",
+    questionText: "the magnitude of the impulse imparted to B due to the collision",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2022-hl-5-a-ii-r1", kind: "anyN", verbatim: "I = |m (u(5 + 8e))/3 − m(−u)| = 8mu/3 (1 + e)", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["I = |m (u(5 + 8e))/3 − m(−u)| = 8mu/3 (1 + e)"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
     id: "am-2022-hl-5-a-iii", topicId: "applied-mathematics-2-6", conceptId: "ask",
     section: "B", questionRef: "2022 HL Q5(a)(iii)",
     stem: "A smooth sphere A of mass 2m, moving with speed 3u on a 3u u smooth horizontal table collides directly with a smooth sphere B of mass m, moving in the opposite direction with speed u. 3u u The coefficient of restitution between A and B is e. Find, in terms of u and e, The loss of the kinetic energy due to the collision is kmu2(1 – e2).",
     questionText: "Find the value of k",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "am-2022-hl-5-a-iii-r1", kind: "anyN", verbatim: "The loss of the kinetic energy due to the collision is kmu²(1 – e²). Find the value of k. 3u u v₁ PCM 2m(3u) + m(−u) = 2mv₁ + mv₂", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 10, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["The loss of the kinetic energy due to the collision is kmu²(1 – e²). Find the value of k. 3u u v₁ PCM 2m(3u) + m(−u) = 2mv₁ + mv₂","v₁ −v₂ = −e(3u−(−u))","NEL 2v₁ + v₂ = 5u v₁ −v₂ = −4eu v₁ = (u(5−4e))/3 v₂ = (u(5 + 8e))/3","I = |m (u(5 + 8e))/3 − m(−u)| = 8mu/3 (1 + e)","KE_B = 1/2 (2m)(3u)² + 1/2 (m)(−u)² = 19/2 mu² KE_A = 1/2 (2m)(v₁)² + 1/2 (m)(v₂)² = 1/9 mu² {(25 − 40e + 16e²) + 1/2 (25 + 80e + 64e²)} = 1/9 mu²{37.5 + 48e²} KE_L = 19/2 mu² − 1/9 mu²{37.5 + 48e²} = 16/3 mu²(1 − e²) ⇒ k = 16/3"],"perOptionSteps":[5,5,10,5,5]} },
+    { id: "am-2022-hl-5-a-iii-r1", kind: "anyN", verbatim: "KE_B = 1/2 (2m)(3u)² + 1/2 (m)(−u)² = 19/2 mu² KE_A = 1/2 (2m)(v₁)² + 1/2 (m)(v₂)² = 1/9 mu² {(25 − 40e + 16e²) + 1/2 (25 + 80e + 64e²)} = 1/9 mu²{37.5 + 48e²} KE_L = 19/2 mu² − 1/9 mu²{37.5 + 48e²} = 16/3 mu²(1 − e²) ⇒ k = 16/3", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["KE_B = 1/2 (2m)(3u)² + 1/2 (m)(−u)² = 19/2 mu² KE_A = 1/2 (2m)(v₁)² + 1/2 (m)(v₂)² = 1/9 mu² {(25 − 40e + 16e²) + 1/2 (25 + 80e + 64e²)} = 1/9 mu²{37.5 + 48e²} KE_L = 19/2 mu² − 1/9 mu²{37.5 + 48e²} = 16/3 mu²(1 − e²) ⇒ k = 16/3"]} },
     ],
   } as SecCard,
   {
@@ -512,7 +781,7 @@ export const CARDS: SecCard[] = [
     questionText: "A smooth sphere P has mass m and speed u. It collides Q P obliquely with a smooth sphere Q, of mass m, which is at the of P diagram. makes an angle 𝛽/𝛼 rest. Before the collision, the direction of P makes an angle 𝛼 with the line of centres, as shown in the diagram",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2022-hl-5-b-r1", kind: "anyN", verbatim: "Show that tan 𝛽 = 1 + 3 (2 tan 𝛼)/𝛼. tan² P m ucos 𝛼 𝚤⃗+ usin 𝛼 𝚥⃗ v₁ 𝚤⃗ + usin 𝛼 𝚥⃗ v₂ 𝚤⃗+ 0 𝚥⃗ Q m 0 𝚤⃗+ 0 𝚥⃗ PCM mucos 𝛼+ m(0) = mv₁ + mv₂", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Show that tan 𝛽 = 1 + 3 (2 tan 𝛼)/𝛼. tan² P m ucos 𝛼 𝚤⃗+ usin 𝛼 𝚥⃗ v₁ 𝚤⃗ + usin 𝛼 𝚥⃗ v₂ 𝚤⃗+ 0 𝚥⃗ Q m 0 𝚤⃗+ 0 𝚥⃗ PCM mucos 𝛼+ m(0) = mv₁ + mv₂","NEL v₁ − v₂ = − 1/3 u cos 𝛼","v₁ + v₂ = ucos 𝛼 v₁ − v₂ = − 1/3 u cos 𝛼 v₁ = 1/3 u cos 𝛼","tan(𝛼 + 𝛽) = (u sin 𝛼)/v₁ = 3 tan 𝛼 (tan 𝛼+tan 𝛽)/(1−tan𝛼 tan 𝛽) = 3 tan 𝛼 tan 𝛼+ tan 𝛽= 3 tan 𝛼−3 tan² 𝛼tan 𝛽 tan 𝛽 = (2 tan 𝛼)/(1 + 3 tan2 𝛼)"]} },
+    { id: "am-2022-hl-5-b-r1", kind: "anyN", verbatim: "ucos 𝛼 𝚤⃗+ usin 𝛼 𝚥⃗ v₁ 𝚤⃗ + usin 𝛼 𝚥⃗ v₂ 𝚤⃗+ 0 𝚥⃗ Q m 0 𝚤⃗+ 0 𝚥⃗ PCM mucos 𝛼+ m(0) = mv₁ + mv₂", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["ucos 𝛼 𝚤⃗+ usin 𝛼 𝚥⃗ v₁ 𝚤⃗ + usin 𝛼 𝚥⃗ v₂ 𝚤⃗+ 0 𝚥⃗ Q m 0 𝚤⃗+ 0 𝚥⃗ PCM mucos 𝛼+ m(0) = mv₁ + mv₂","NEL v₁ − v₂ = − 1/3 u cos 𝛼","v₁ + v₂ = ucos 𝛼 v₁ − v₂ = − 1/3 u cos 𝛼 v₁ = 1/3 u cos 𝛼","tan(𝛼 + 𝛽) = (u sin 𝛼)/v₁ = 3 tan 𝛼 (tan 𝛼+tan 𝛽)/(1−tan𝛼 tan 𝛽) = 3 tan 𝛼 tan 𝛼+ tan 𝛽= 3 tan 𝛼−3 tan² 𝛼tan 𝛽 tan 𝛽 = (2 tan 𝛼)/(1 + 3 tan2 𝛼)"]} },
     ],
   } as SecCard,
   {
@@ -520,27 +789,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
-    id: "am-2022-hl-6-a-iii", topicId: "applied-mathematics-2-13", conceptId: "particle",
-    section: "B", questionRef: "2022 HL Q6(a)(iii)",
-    stem: "A particle moves on a straight line with simple harmonic motion about point O as centre. Its displacement from O at any time tis x. At time t = 0 the particle passes through a point H at a distance of 3 cm from O, moving away from O. The particle next passes through H at time t = 4 s, moving towards O, and it passes through H for a third time after a further 12 s.",
-    questionText: "Find the values of A, 𝜔 and 𝜀 for the particle",
+    id: "am-2022-hl-6-a", topicId: "applied-mathematics-3-3", conceptId: "particle-moves-straight-line-simple-harmonic",
+    section: "B", questionRef: "2022 HL Q6(a)",
+    stem: "At time t = 0 the particle passes through a point H at a distance of 3 cm from O, moving away from O. The particle next passes through H at time t = 4 s, moving towards O, and it passes through H for a third time after a further 12 s.",
+    questionText: "A particle moves on a straight line with simple harmonic motion about point O as centre. Its displacement from O at any time tis x. Find the period of the motion. Show that x = Asin(𝜔t + 𝜀), where A, 𝜔 and 𝜀 are constants, satisfies the differential equation d²x/dt2 −𝜔²x. Find the values of A, 𝜔 and 𝜀 for the particle",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2022-hl-6-a-iii-r1", kind: "anyN", verbatim: "d²x/dt2 = −𝜔²x. Find the values of A, 𝜔 and 𝜀 for the particle. Period = 4 + 12 = 16 s", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["d²x/dt2 = −𝜔²x. Find the values of A, 𝜔 and 𝜀 for the particle. Period = 4 + 12 = 16 s","x = Asin(𝜔t + 𝜀) ẋ = A𝜔cos(𝜔t + 𝜀) ẍ = −A𝜔² sin(𝜔t + 𝜀) = −𝜔² x","2𝜋/𝜔 = 16 𝜔 = 𝜋/8","t = 0 ⇒ 3 = Asin 𝜀 t = 4 ⇒ 3 = A sin ( 𝜋/8 × 4 + 𝜀) = A cos 𝜀 tan 𝜀= 1 𝜀 = 𝜋/4","3 = A sin 𝜋/4 A = 3√2"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC020ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
-    id: "am-2022-hl-6-b", topicId: "applied-mathematics-2-7", conceptId: "particle-attached-end-light-inextensible-string",
-    section: "B", questionRef: "2022 HL Q6(b)",
-    stem: "The greatest and least tensions in the string are 3T and T, respectively. Find the speed of the particle at the lowest point.",
-    questionText: "A particle is attached to one end of a light inextensible string of length 0.5 m. The other end of the string is attached to a fixed point C. The particle moves in a vertical circle",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
-    rows: [
-    { id: "am-2022-hl-6-b-r1", kind: "anyN", verbatim: "T + mg = mv²/0.5 (5) 3T − mg = mu²/0.5 (5) 3T + 3mg = 3mv²/0.5 −3T + mg = − mu²/0.5 4mg = (3mv²−mu²)/0.5 u² + 2g v² = (5) 3 1/2 mu² = 1/2 mv² + mg × 1 (5) u² = v² + 2g u² + 2g u² = + 2g 3 u = 2√g = 6.26 m s^(−1)", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T + mg = mv²/0.5 (5) 3T − mg = mu²/0.5 (5) 3T + 3mg = 3mv²/0.5 −3T + mg = − mu²/0.5 4mg = (3mv²−mu²)/0.5 u² + 2g v² = (5) 3 1/2 mu² = 1/2 mv² + mg × 1 (5) u² = v² + 2g u² + 2g u² = + 2g 3 u = 2√g = 6.26 m s^(−1)"]} },
+    { id: "am-2022-hl-6-a-r1", kind: "anyN", verbatim: "d²x/dt2 = −𝜔²x. Find the values of A, 𝜔 and 𝜀 for the particle. Period = 4 + 12 = 16 s", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["d²x/dt2 = −𝜔²x. Find the values of A, 𝜔 and 𝜀 for the particle. Period = 4 + 12 = 16 s","x = Asin(𝜔t + 𝜀) ẋ = A𝜔cos(𝜔t + 𝜀) ẍ = −A𝜔² sin(𝜔t + 𝜀) = −𝜔² x","2𝜋/𝜔 = 16 𝜔 = 𝜋/8","t = 0 ⇒ 3 = Asin 𝜀 t = 4 ⇒ 3 = A sin ( 𝜋/8 × 4 + 𝜀) = A cos 𝜀 tan 𝜀= 1 𝜀 = 𝜋/4","3 = A sin 𝜋/4 A = 3√2"]} },
     ],
   } as SecCard,
   {
@@ -552,9 +807,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2022 HL Q7(a)(ii)",
     stem: "A uniform rod BC of length 3 m, has a mass of 20 kg. The end B, about which the rod can turn freely, is attached to a vertical wall. The rod is kept in a horizontal position by a rope attached to a point D on the rod and to a point A of the wall vertically above B, as shown in the diagram.",
     questionText: "If the tension in the rope cannot exceed 245 N, show that h ≥ 1.5",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-7-a-ii-r1", kind: "anyN", verbatim: "Prove that the tension in the rope is ./h 147√h² + 4 If the tension in the rope cannot exceed 245 N, show that h ≥ 1.5. T B 𝜃/D C 20g ↻B Tsin 𝜃× 2 = 20g × 1.5", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["Prove that the tension in the rope is ./h 147√h² + 4 If the tension in the rope cannot exceed 245 N, show that h ≥ 1.5. T B 𝜃/D C 20g ↻B Tsin 𝜃× 2 = 20g × 1.5","sin 𝜃 = h/(√h² + 4) h/(√h² + 4)","T × h/(√h2 + 4) h/(√h2 + 4) × 2 = 20g × 1.5 T = (147√h² + 4)/h","T ≤ 245 (147√h² + 4)/h ≤ 245","√h² + 4 ≤ 5/3 h 16h² ≥ 36 h ≥ 1.5"]} },
+    { id: "am-2022-hl-7-a-ii-r1", kind: "anyN", verbatim: "T ≤ 245 (147√h² + 4)/h ≤ 245", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["T ≤ 245 (147√h² + 4)/h ≤ 245","√h² + 4 ≤ 5/3 h 16h² ≥ 36 h ≥ 1.5"]} },
     ],
   } as SecCard,
   {
@@ -568,7 +823,20 @@ export const CARDS: SecCard[] = [
     questionText: "Two uniform rods XY and YZ of equal length and of weights Y 2W and W respectively are smoothly hinged at Y",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
     rows: [
-    { id: "am-2022-hl-7-b-r1", kind: "anyN", verbatim: "|∠XYZ| = 𝛼. If the coefficient of friction is ,/5 ^√³ find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼", marks: 25, contextNote: "The scheme prices this ask step by step: 10, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":10,"options":["|∠XYZ| = 𝛼. If the coefficient of friction is ,/5 ^√³ find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼","R₂ = 5W/4","R₁ + R₂ = 3W R₁ = 7W/4 R₂ < R₁ YZ ↻Y R₂ × l sin 1/2 𝛼 = F × l cos 1/2 𝛼 + W × 1/2 l sin 1/2 𝛼","F = 3/4 W × tan 1/2 𝛼 𝜇R₂ = 3/4 W × tan 1/2 𝛼 √3/5 × 5/4 W = 3/4 W × tan 1/2 𝛼 tan 1/2 𝛼 = 1/√3 1/√3 ⇒ 𝛼 = 60°"],"perOptionSteps":[10,5,5,5]} },
+    { id: "am-2022-hl-7-b-r1", kind: "anyN", verbatim: "|∠XYZ| = 𝛼. If the coefficient of friction is ^√³/5 , find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼", marks: 25, contextNote: "The scheme prices this ask step by step: 10, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":10,"options":["|∠XYZ| = 𝛼. If the coefficient of friction is ^√³/5 , find the maximum value of 𝛼 such that the rods remain at rest. Y₁ R₁ XYZ ↻X R₂ × 2l sin 1/2 𝛼 = 2W × 1/2 l sin 1/2 𝛼 + W × 3/2 l sin 1/2 𝛼","R₂ = 5W/4","R₁ + R₂ = 3W R₁ = 7W/4 R₂ < R₁ YZ ↻Y R₂ × l sin 1/2 𝛼 = F × l cos 1/2 𝛼 + W × 1/2 l sin 1/2 𝛼","F = 3/4 W × tan 1/2 𝛼 𝜇R₂ = 3/4 W × tan 1/2 𝛼 √3/5 × 5/4 W = 3/4 W × tan 1/2 𝛼 tan 1/2 𝛼 = 1/√3 ⇒ 𝛼 = 60°"],"perOptionSteps":[10,5,5,5]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-8-a", topicId: "applied-mathematics-2-12", conceptId: "moment-inertia-uniform-disc-mass-radius",
+    section: "B", questionRef: "2022 HL Q8(a)",
+    questionText: "Prove that the moment of inertia of a uniform disc, of mass m and radius rabout an 8. its plane, is 1/2 mr². axis through its centre, perpendicular to its plane, is",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2022-hl-8-a-r1", kind: "anyN", verbatim: "Let M = mass per unit area mass of element = M{2𝜋xdx} moment of inertia of the element = M{2𝜋xdx} x²", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Let M = mass per unit area mass of element = M{2𝜋xdx} moment of inertia of the element = M{2𝜋xdx} x²","moment of inertia of the disc = 2𝜋M ∫ ₀ ^r x³ dx","= 2πM [ x⁴/4 ] 0 r","= 1/2 𝜋Mr⁴ = 1/2 mr²"]} },
     ],
   } as SecCard,
   {
@@ -618,13 +886,48 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-9-b-ii", topicId: "applied-mathematics-2-10", conceptId: "reaction-hinge-upwards",
+    section: "B", questionRef: "2022 HL Q9(b)(ii)",
+    stem: "A uniform rod, of length ℓand weight W, is freely hinged at the point P. The rod is free to move about a horizontal axis through P. The other end of the rod is immersed in a liquid of density ρ. The density of the rod is sρ (s < 1). The rod is in equilibrium and is inclined as shown in the diagram. The length of the immersed part of the rod is xℓ.",
+    questionText: "If the reaction at the hinge is 1 6W upwards, find the value of s",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2022-hl-9-b-ii-r1", kind: "anyN", verbatim: "R + B = W", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["R + B = W","1/6 W + x/s W = W x = 5/6 s ⇒ 1 − √1 − s = 5/6 s s = 24/25"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2022-HL-paper-q9bii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2022-HL-paper-q9bii-art.png",
+          "srcHash": "df68a3b9a2584d7338eef363f58b9f04",
+          "alt": "The diagram printed with Applied Mathematics 2022 HL Q9(b)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: P.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
+    id: "am-2022-hl-10-a", topicId: "applied-mathematics-3-3", conceptId: "particle-moves-horizontal-line-such-its",
+    section: "B", questionRef: "2022 HL Q10(a)",
+    questionText: "A particle moves in a horizontal line such that its speed v at time t is given by the 10. differential equation dv/dt 5 −8e^(−t). Given that v = 2 when t = 0, find an expression for v in terms of t. Find the minimum value of v. Find the distance travelled by the particle before it attains its minimum speed",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "am-2022-hl-10-a-r1", kind: "anyN", verbatim: "∫dv = ∫(5 −8e^(−t))dt", marks: 25, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5 — 25 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":5,"perOption":5,"options":["∫dv = ∫(5 −8e^(−t))dt","[v] ^v ₂ = [5t + 8e^(−t)]^t₀","v−2 = (5t + 8e^(−t)) −8 v = 5t + 8e^(−t)−6","dv/dt = 0 5 −8e^(−t) = 0 t = ln 8/5 = 0.47 vmin = 5 × 0.47 + 5 −6 = 1.35","ds/dt = 5t + 8e^−^t − 6 [s] ₀ s = [ 5/2 t² − 8e^−^t − 6t] 0 0.47 s = ( 5/2 (0.47)² − 8e^−⁰^.⁴⁷ − 6(0.47)) − (−8) s = 0.73"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Higher Level — © State Examinations Commission.",
     id: "am-2022-hl-10-b-i", topicId: "applied-mathematics-2-0", conceptId: "constant",
     section: "B", questionRef: "2022 HL Q10(b)(i)",
     stem: "The rate of decay at any instant of a radioactive substance is proportional to the amount of the substance remaining at that instant. The initial amount of the radioactive substance is N and the amount remaining after time t (hours) is x. This document will not be returned to the State Examinations Commission^. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Higher Level Applied Mathematics Friday, 24 June Afternoon, 2:00 – 4:30",
     questionText: "Prove that x = Ne−kt, where k is a constant",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "am-2022-hl-10-b-i-r1", kind: "anyN", verbatim: "dN/dt = −kN ∫ dN/N = −k ∫ dt t x = −k[t]₀ [ln N]_N ln x/N = −kt x = Ne−kt", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["dN/dt = −kN ∫ dN/N = −k ∫ dt t x = −k[t]₀ [ln N]_N ln x/N = −kt x = Ne−kt"]} },
+    { id: "am-2022-hl-10-b-i-r1", kind: "anyN", verbatim: "dN/dt = −kN ∫ dN/N = −k ∫ dt [ln N]_N^x = −k[t]^t₀ ln x/N = −kt x = Ne−kt", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["dN/dt = −kN ∫ dN/N = −k ∫ dt [ln N]_N^x = −k[t]^t₀ ln x/N = −kt x = Ne−kt"]} },
     ],
   } as SecCard,
   {
@@ -638,7 +941,7 @@ export const CARDS: SecCard[] = [
     questionText: "If the initial amount N was reduced to N 3 in 14 hours, find the value of k",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-10-b-ii-r1", kind: "anyN", verbatim: "1 3^N = −k[t]₀ 14", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["1 3^N = −k[t]₀ 14","[ln N]_N ln 1/3 = −14k k = 0.0785"]} },
+    { id: "am-2022-hl-10-b-ii-r1", kind: "anyN", verbatim: "[ln N]¹₃_N^N = −k[t]¹⁴₀", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["[ln N]¹₃_N^N = −k[t]¹⁴₀","ln 1/3 = −14k k = 0.0785"]} },
     ],
   } as SecCard,
   {
@@ -652,7 +955,7 @@ export const CARDS: SecCard[] = [
     questionText: "If the amount remaining is reduced from N 3 to N 4 in t hours, find the value of t",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2022-hl-10-b-iii-r1", kind: "anyN", verbatim: "1 4^N = −0.0785[t] ₀ t", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["1 4^N = −0.0785[t] ₀ t","[ln N] 1 3N ln 3/4 = −0.0785t t = 3.7"]} },
+    { id: "am-2022-hl-10-b-iii-r1", kind: "anyN", verbatim: "[ln N] ¹₄₁₃^N_N = −0.0785[t] ^t ₀", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["[ln N] ¹₄₁₃^N_N = −0.0785[t] ^t ₀","ln 3/4 = −0.0785t t = 3.7"]} },
     ],
   } as SecCard,
   {
@@ -716,6 +1019,28 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-2-a", topicId: "applied-mathematics-1-3", conceptId: "university-has-decided-improve-paths-its",
+    section: "B", questionRef: "2023 HL Q2(a)",
+    stem: "A J 2650 3000 D 950 M 3400 800 650 1750 1900 1550 G E X 2500 2500 2400 B 4200 Y 1350 1250 900 K 2300 H 1800 2150 2350 950 1800 1600 C 3900 1950 N L 4750 2200 F I The university decides that the first part of the work will be to provide an improved route between entrance X and entrance Y. Use Dijkstra’s algorithm to find the route between X and Y that is cheapest to improve. Calculate the cost of carrying out such improvements. Relevant supporting work must be shown.",
+    questionText: "A university has decided to improve the paths on its campus. In the network shown below the nodes labelled with the letters X and Y represent the two entrances to the campus and the nodes labelled with the letters A to N represent the key buildings on the campus. The edges represent the paths, with the weight of each edge representing the cost (in €) of carrying out the improvement work for that path",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2023-hl-2-a-r1", kind: "anyN", verbatim: "X: A(3400), B(2500), C(1250) C: B(2150), F(5150) B: F(4300), G(6350) A: D(6050), E(4200) E: D(5950) F: H(5900), I(6500) D: G(6600), J(8950) H: G(7250), I(7700) G: K(8850) I: K(9850), L(11250) K: J(10750), L(9800) J: M(9900) L: Y(12100), N(11750) M: Y(11450) Path = X→A→E→D→J→M→Y Cost = €11 450", marks: 20, contextNote: "The scheme prices this ask step by step: 20 — 20 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/8/14/17), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":20,"options":["X: A(3400), B(2500), C(1250) C: B(2150), F(5150) B: F(4300), G(6350) A: D(6050), E(4200) E: D(5950) F: H(5900), I(6500) D: G(6600), J(8950) H: G(7250), I(7700) G: K(8850) I: K(9850), L(11250) K: J(10750), L(9800) J: M(9900) L: Y(12100), N(11750) M: Y(11450) Path = X→A→E→D→J→M→Y Cost = €11 450"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2023-HL-paper-q2a-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2023-HL-paper-q2a-art.png",
+          "srcHash": "19194106d87502dec58d65777d99d36f",
+          "alt": "The diagram printed with Applied Mathematics 2023 HL Q2(a), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, J, 2650, 3000, D, 950, M, 3400, 800, 650, 1750, 1900, 1550, E, G, X, 2500, 2500.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-2-b", topicId: "applied-mathematics-2-4", conceptId: "smooth-spheres-have-equal-radius-mass",
     section: "B", questionRef: "2023 HL Q2(b)",
     stem: "Before the collision, sphere P moves with a velocity of 4 m s^(–1) 4 at an angle 𝛼 with the 𝚤⃗ axis, where sin 𝛼 = 4/5. of (P Q)/𝛼 5. Before the collision, sphere Q moves with a velocity of 3.2 m s^(–1) perpendicular to the 𝚤⃗ axis. 4 m s^(–1) The coefficient of restitution between the spheres is e, where 3.2 m s^(–1) 0 ≤ e ≤ 1. Calculate, in terms of e, the velocity of each sphere immediately after they collide",
@@ -732,11 +1057,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-3-ii", topicId: "applied-mathematics-2-12", conceptId: "tan-3sin",
     section: "B", questionRef: "2023 HL Q3(ii)",
-    stem: "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10 Leaving Certificate, 2023 Applied Mathematics – Higher Level Draw a diagram to show the external forces acting on seat A. 𝑔tanα Show that 𝜔=√ 3.5 + 4.3sinα. 11 Leaving Certificate, 2023",
+    stem: "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10",
     questionText: "Show that 𝜔=√ 𝑔tanα 3.5+4.3sinα",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "am-2023-hl-3-ii-r1", kind: "anyN", verbatim: "Tsin 𝛼= mr𝜔² r = 3.5 + 4.3 sin 𝛼 Tcos 𝛼= mg", marks: 15, contextNote: "The scheme prices this ask step by step: 10, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Tsin 𝛼= mr𝜔² r = 3.5 + 4.3 sin 𝛼 Tcos 𝛼= mg","dividing: tan 𝛼 = ,/g (3.5 + 4.3 sin 𝛼)𝜔² i.e. 𝜔 = √ 3.5 + 4.3 g tan sin 𝛼 𝛼"],"perOptionSteps":[10,5]} },
+    { id: "am-2023-hl-3-ii-r1", kind: "anyN", verbatim: "Tsin 𝛼= mr𝜔² r = 3.5 + 4.3 sin 𝛼 Tcos 𝛼= mg", marks: 15, contextNote: "The scheme prices this ask step by step: 10, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Tsin 𝛼= mr𝜔² r = 3.5 + 4.3 sin 𝛼 Tcos 𝛼= mg","dividing: tan 𝛼 = ((3.5 + 4.3 sin 𝛼)𝜔²)/g , i.e. 𝜔 = √ 3.5 + 4.3 g tan sin 𝛼 𝛼"],"perOptionSteps":[10,5]} },
     ],
   } as SecCard,
   {
@@ -746,39 +1071,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-3-iii", topicId: "applied-mathematics-2-12", conceptId: "use-dimensional-analysis-units-expression-3sin",
     section: "B", questionRef: "2023 HL Q3(iii)",
-    stem: "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10 Leaving Certificate, 2023 Applied Mathematics – Higher Level Draw a diagram to show the external forces acting on seat A. 𝑔tanα Show that 𝜔=√ 3.5 + 4.3sinα. 11 Leaving Certificate, 2023",
+    stem: "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10",
     questionText: "Use dimensional analysis to show that the units for the expression √ 3.5 + 4.3sinα are equivalent to the units for 𝜔. It is found by measurement that 𝛼=25°",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "am-2023-hl-3-iii-r1", kind: "anyN", verbatim: "√m/m s^−² = √s^−² = s^−¹ which are the units for 𝜔", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["√m/m s^−² = √s^−² = s^−¹ which are the units for 𝜔"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC020ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
-    id: "am-2023-hl-3-iv", topicId: "applied-mathematics-2-12", conceptId: "many-complete-revolutions-ride-makes-minute",
-    section: "B", questionRef: "2023 HL Q3(iv)",
-    stem: "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10 Leaving Certificate, 2023 Applied Mathematics – Higher Level Draw a diagram to show the external forces acting on seat A. 𝑔tanα Show that 𝜔=√ 3.5 + 4.3sinα. 11 Leaving Certificate, 2023",
-    questionText: "Calculate how many complete revolutions the ride makes in one minute",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "am-2023-hl-3-iv-r1", kind: "anyN", verbatim: "gtan 25° when 𝛼= 25°, 𝜔= √ 3.5 + 4.3sin 25° = 0.927 (rad) s^(–1)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["gtan 25° when 𝛼= 25°, 𝜔= √ 3.5 + 4.3sin 25° = 0.927 (rad) s^(–1)","T′ = 2𝜋/𝜔 = 6.78 s"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC020ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
-    id: "am-2023-hl-3-v", topicId: "applied-mathematics-2-12", conceptId: "time-orange-thrown-until-hits-ground",
-    section: "B", questionRef: "2023 HL Q3(v)",
-    stem: "The photograph on the right is of a chain swing ride in an amusement park. The disk at the top of the ride is rotating in a horizontal plane. People sit in seats which are attached freely by inextensible chains of length 4.3 m to fixed points on the disk. The chain attaching seat A hangs from point X on the ride and makes an angle 𝛼 with the vertical. X is 3.5 m from the axis of rotation, which is the vertical line PQ, as shown in the diagram below. The chain is free to swing in or out relative to PQ. The ride rotates about PQ with constant angular velocity 𝜔. Seat A moves in a horizontal circular path which is 6 m above the ground. P 3.5 m X 𝛼 4.3 m 𝜔 6 m Q 10 Leaving Certificate, 2023 Applied Mathematics – Higher Level Draw a diagram to show the external forces acting on seat A. 𝑔tanα Show that 𝜔=√ 3.5 + 4.3sinα. 11 Leaving Certificate, 2023",
-    questionText: "Calculate the time from when the orange is thrown until it hits the ground",
-    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "am-2023-hl-3-v-r1", kind: "anyN", verbatim: "s = ut + 1/2 at² so 4.9t² − 4t − 6 = 0", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["s = ut + 1/2 at² so 4.9t² − 4t − 6 = 0","i.e. t = 1.59 s to 2 decimal places, t > 0"]} },
     ],
   } as SecCard,
   {
@@ -842,9 +1139,45 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-5-a-ii", topicId: "applied-mathematics-2-5", conceptId: "acceleration-blocks",
+    section: "B", questionRef: "2023 HL Q5(a)(ii)",
+    stem: "Block P (of mass 6.3 kg) and block Q (of mass 2.5 kg) are held at rest on a rough surface. They are connected by a light inextensible string which passes over a smooth fixed pulley. Block Q lies on the horizontal part of the surface and block P lies on the part of the surface that is inclined at 25° to the horizontal, as shown in the diagram. Q 25° The coefficient of friction between each block and the surface is 0.2. The blocks begin to move when they are released.",
+    questionText: "Calculate the acceleration of the blocks",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2023-hl-5-a-ii-r1", kind: "anyN", verbatim: "R₁ = 6.3gcos 25° and R₂ = 2.5g 6.3gsin 25° −T−1.26gcos 25° = 6.3a", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["R₁ = 6.3gcos 25° and R₂ = 2.5g 6.3gsin 25° −T−1.26gcos 25° = 6.3a","T−0.5g = 2.5a","6.3gsin 25° −1.26gcos 25° −0.5g = 6.3a + 2.5a = 8.8a"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2023-HL-paper-q5aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2023-HL-paper-q5aii-art.png",
+          "srcHash": "ebbb9dc7585fcf0c68835f6da72a7b38",
+          "alt": "The diagram printed with Applied Mathematics 2023 HL Q5(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: Q, 25°.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-5-b", topicId: "applied-mathematics-2-0", conceptId: "ine-travels-car-her-house-work",
+    section: "B", questionRef: "2023 HL Q5(b)",
+    stem: "On Tuesday morning Áine leaves her house 140 s later than the day before. She takes the same route to work. She starts her car and accelerates at 1.5 m s^(–2) for 20 s, then maintains this steady speed for 6 minutes before decelerating uniformly to rest at her work. She again reaches her work at exactly 08: 30. Calculate the time when Áine leaves her house on Tuesday morning.",
+    questionText: "Áine travels by car from her house to work each morning. On Monday morning she starts her car and accelerates uniformly for 40 s to a speed of 22.5 m s^(–1). Áine then travels at this speed for 8 minutes until decelerating uniformly to rest at her work. She reaches her work at exactly 08: 30",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2023-hl-5-b-r1", kind: "anyN", verbatim: "s_M = s_T and T_M = T_T + 140", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["s_M = s_T and T_M = T_T + 140","s_M = s₁ + s₂ + s₃ and T_M = t₁ + t₂ + t₃ s_T = s₄ + s₅ + s₆ and T_T = t₄ + t₅ + t₆ a₁ = 22.5/40 = 0.5625 s_M = [450] + [10800] + [s₃] T_M = 40 + 480 + t₃ v₁ = u₂ = 1.5 × 20 = 30 so s_T = [300] + [10800] + [s₆] T_T = 20 + 360 + t₆ 40 + 480 + t₃ = 20 + 360 + t₆ + 140, i.e. t₃ = t₆ = t a₃ = − 22.5/t so 0² = 22.5² − 45s₃/t , i.e. s₃ = 11.25t a₆ = − 30/t so 0² = 30² − 60s₆/t , i.e. s₆ = 15t ∴450 + 10800 + 11.25t = 300 + 10800 + 15t, i.e. t = 40 s","T_T = 20 + 360 + 40 = 7 minutes Áine leaves her house at 08: 23"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-6-i", topicId: "applied-mathematics-3-2", conceptId: "ask",
     section: "B", questionRef: "2023 HL Q6(i)",
-    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
     questionText: "Write down the values of U₂ and U₃",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -858,7 +1191,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-6-ii", topicId: "applied-mathematics-3-2", conceptId: "solve-difference-equation-expression",
     section: "B", questionRef: "2023 HL Q6(ii)",
-    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
     questionText: "Solve the difference equation to find an expression for Uₙ in terms of n",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
@@ -872,7 +1205,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-6-iii", topicId: "applied-mathematics-3-2", conceptId: "ask",
     section: "B", questionRef: "2023 HL Q6(iii)",
-    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
     questionText: "Calculate U₁₀",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -886,7 +1219,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-6-iv", topicId: "applied-mathematics-3-2", conceptId: "solve-new-difference-equation-expression",
     section: "B", questionRef: "2023 HL Q6(iv)",
-    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
     questionText: "Solve this new difference equation to find an expression for Vₙ in terms of n",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -900,12 +1233,56 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-6-v", topicId: "applied-mathematics-3-2", conceptId: "ask",
     section: "B", questionRef: "2023 HL Q6(v)",
-    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22 Leaving Certificate, 2023 Applied Mathematics – Higher Level 23 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate U₁₀. The manager realises that this model does not take into account the sale of any of the spider plants produced in the garden centre. The manager decides that the garden centre will not sell any of the spider plants in either of the first two years, but that 2n of the new pups will be sold in each year n after that.",
+    stem: "Spider plants (Chlorophytum comosum) can reproduce asexually, producing new plants called ‘spiderettes’ or ‘pups’. The manager of a garden centre is told that a one year old spider plant produces two pups each year, that a two year old spider plant produces three pups each year, and that spider plants which are less than one year old or more than two years old do not produce any pups. The manager predicts that U, the number of pups produced in the garden centre in any year can be expressed by the second‐order homogeneous difference equation: Uₙ₊₂ = 2Uₙ₊₁ + 3Uₙ where n ≥ 0, n∈ℤ, U₀ = 1 and U₁ = 2. Write down the values of U₂ and U₃. Solve the difference equation to find an expression for Uₙ in terms of n. 22",
     questionText: "Calculate V₁₀",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "am-2023-hl-6-v-r1", kind: "anyN", verbatim: "V₁₀ = 1/8 310 − 1/8 (−1)¹⁰ + (10 + 2)/2 = 7387 [pups]", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["V₁₀ = 1/8 310 − 1/8 (−1)¹⁰ + (10 + 2)/2 = 7387 [pups]"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-7-a-i", topicId: "applied-mathematics-1-2", conceptId: "using-appropriate-algorithm-minimum-spanning-tree",
+    section: "B", questionRef: "2023 HL Q7(a)(i)",
+    stem: "There are 12 waterfalls in a certain national park. Paths allow visitors to walk from one waterfall to another. In the network shown below, the edges represent the paths and the nodes represent the waterfalls, labelled with the letters A to L. The weight of each edge represents the time (in minutes) taken to walk between a pair of waterfalls. B E 16 11 G 15 L 17 19 9 9 11 14 12 A 21 K 22 6 J H C 10 8 11 7 4 10 I 13 18 D F The park authorities wish to plan a route along the paths which allows visitors to see every waterfall while moving through the park without wasting time. The paths that are not on this route will be closed.",
+    questionText: "Using an appropriate algorithm, find the minimum spanning tree for the network. Name the algorithm you used. Relevant supporting work must be shown",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2023-hl-7-a-i-r1", kind: "anyN", verbatim: "Kruskal’s algorithm Prim’s algorithm |FH| = 4 Choose node A, say. |HJ| = 6 |AD| = 11 |CD| = 7 |CD| = 7 |IJ| = 8 |CE| = 9 |CE| = 9 |CF| = 10 |KL| = 9 |FH| = 4 |CF| = 10 |HJ| = 6 |IK| = 10 |IJ| = 8 |AD| = 11 |IK| = 10 |EG| = 11 |LK| = 9 |EH| = 11 |EG| = 11 |GJ| = 12 |BE| = 16 |FI| = 13 |HG| = 14", marks: 15, contextNote: "The scheme prices this ask step by step: 15 — 15 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/6/9/12), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":15,"options":["Kruskal’s algorithm Prim’s algorithm |FH| = 4 Choose node A, say. |HJ| = 6 |AD| = 11 |CD| = 7 |CD| = 7 |IJ| = 8 |CE| = 9 |CE| = 9 |CF| = 10 |KL| = 9 |FH| = 4 |CF| = 10 |HJ| = 6 |IK| = 10 |IJ| = 8 |AD| = 11 |IK| = 10 |EG| = 11 |LK| = 9 |EH| = 11 |EG| = 11 |GJ| = 12 |BE| = 16 |FI| = 13 |HG| = 14"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2023-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2023-HL-paper-q7ai-art.png",
+          "srcHash": "44dd81f418eb090a50ff6cee7f75ba3c",
+          "alt": "The diagram printed with Applied Mathematics 2023 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: B, E, 16, 11, G, 15, L, 17, 19, 9, 9, 11, 14, 12, A, 21, K, 22.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-7-a-ii", topicId: "applied-mathematics-1-2", conceptId: "park-entrance-waterfall-park-exit-waterfall",
+    section: "B", questionRef: "2023 HL Q7(a)(ii)",
+    stem: "There are 12 waterfalls in a certain national park. Paths allow visitors to walk from one waterfall to another. In the network shown below, the edges represent the paths and the nodes represent the waterfalls, labelled with the letters A to L. The weight of each edge represents the time (in minutes) taken to walk between a pair of waterfalls. B E 16 11 G 15 L 17 19 9 9 11 14 12 A 21 K 22 6 J H C 10 8 11 7 4 10 I 13 18 D F The park authorities wish to plan a route along the paths which allows visitors to see every waterfall while moving through the park without wasting time. The paths that are not on this route will be closed.",
+    questionText: "The park entrance is at waterfall A and the park exit is at waterfall L. Using your minimum spanning tree, calculate the time needed to enter the park at waterfall A, visit every waterfall, and leave the park at waterfall L",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2023-hl-7-a-ii-r1", kind: "anyN", verbatim: "11 + 7 + 2(9 + 11 + 16) + 10 + 4 + 6 + 8 + 10 + 9 = 137 minutes", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["11 + 7 + 2(9 + 11 + 16) + 10 + 4 + 6 + 8 + 10 + 9 = 137 minutes"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2023-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2023-HL-paper-q7ai-art.png",
+          "srcHash": "44dd81f418eb090a50ff6cee7f75ba3c",
+          "alt": "The diagram printed with Applied Mathematics 2023 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: B, E, 16, 11, G, 15, L, 17, 19, 9, 9, 11, 14, 12, A, 21, K, 22.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -974,7 +1351,7 @@ export const CARDS: SecCard[] = [
     questionText: "In terms of 𝚤⃗ and 𝚥⃗, calculate vP v⃗, the velocity of P, and vQ v⃗, the velocity of Q, when the balls collide, i.e. when t = 3 s",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2023-hl-8-iii-r1", kind: "anyN", verbatim: "𝑣⃗(t) = 38 cos 41° 𝚤⃗+ (38 sin 41° −9.8 × 3)𝚥⃗= 28.68𝚤⃗−4.47𝚥⃗ m s^(–1)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["𝑣⃗(t) = 38 cos 41° 𝚤⃗+ (38 sin 41° −9.8 × 3)𝚥⃗= 28.68𝚤⃗−4.47𝚥⃗ m s^(–1)","v_P 𝑣⃗(t) = −27.98 cos 64° 𝚤⃗+ (27.98 sin 64° −9.8 × 2)𝚥⃗= −12.27𝚤⃗+ 5.55𝚥⃗ m s^(–1)"]} },
+    { id: "am-2023-hl-8-iii-r1", kind: "anyN", verbatim: "v𝑣_P⃗(t) = 38 cos 41° 𝚤⃗+ (38 sin 41° −9.8 × 3)𝚥⃗= 28.68𝚤⃗−4.47𝚥⃗ m s^(–1)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["v𝑣_P⃗(t) = 38 cos 41° 𝚤⃗+ (38 sin 41° −9.8 × 3)𝚥⃗= 28.68𝚤⃗−4.47𝚥⃗ m s^(–1)","v𝑣_Q⃗(t) = −27.98 cos 64° 𝚤⃗+ (27.98 sin 64° −9.8 × 2)𝚥⃗= −12.27𝚤⃗+ 5.55𝚥⃗ m s^(–1)"]} },
     ],
   } as SecCard,
   {
@@ -988,7 +1365,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the dot product of vP v⃗ and vQ v⃗ when t=3 s",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2023-hl-8-iv-r1", kind: "anyN", verbatim: "𝑣⃗= (28.68𝚤⃗−4.47𝚥⃗) ∙(−12.27𝚤⃗+ 5.55𝚥⃗) = (28.68)(−12.27) + (−4.47)(5.55)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["𝑣⃗= (28.68𝚤⃗−4.47𝚥⃗) ∙(−12.27𝚤⃗+ 5.55𝚥⃗) = (28.68)(−12.27) + (−4.47)(5.55)","v_P 𝑣⃗∙v_Q i.e. v_P 𝑣⃗= −376.71 [units not required]"]} },
+    { id: "am-2023-hl-8-iv-r1", kind: "anyN", verbatim: "v𝑣_P⃗∙v𝑣_Q⃗= (28.68𝚤⃗−4.47𝚥⃗) ∙(−12.27𝚤⃗+ 5.55𝚥⃗) = (28.68)(−12.27) + (−4.47)(5.55)", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["v𝑣_P⃗∙v𝑣_Q⃗= (28.68𝚤⃗−4.47𝚥⃗) ∙(−12.27𝚤⃗+ 5.55𝚥⃗) = (28.68)(−12.27) + (−4.47)(5.55)","i.e. v𝑣_P⃗∙v𝑣_Q⃗= −376.71 [units not required]"]} },
     ],
   } as SecCard,
   {
@@ -1002,8 +1379,74 @@ export const CARDS: SecCard[] = [
     questionText: "Hence or otherwise calculate the acute angle between v_P 𝑣⃗ and v_Q 𝑣⃗ when t = 3 s. 33",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2023-hl-8-v-r1", kind: "anyN", verbatim: "𝑣⃗|cos 𝜃", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["𝑣⃗|cos 𝜃","𝑣⃗= |v_P 𝑣⃗||v_Q v_P 𝑣⃗∙v_Q 𝑣⃗| = 29.03 and |v_Q 𝑣⃗| = 13.47 so cos 𝜃= −0.96, i.e. 𝜃= 164.44°, i.e. angle = 15.56°"]} },
+    { id: "am-2023-hl-8-v-r1", kind: "anyN", verbatim: "v𝑣_P⃗∙v𝑣_Q⃗= |v𝑣_P⃗||v𝑣_Q⃗|cos 𝜃", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["v𝑣_P⃗∙v𝑣_Q⃗= |v𝑣_P⃗||v𝑣_Q⃗|cos 𝜃","|v𝑣_P⃗| = 29.03 and |v𝑣_Q⃗| = 13.47 so cos 𝜃= −0.96, i.e. 𝜃= 164.44°, i.e. angle = 15.56°"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-9-i", topicId: "applied-mathematics-1-5", conceptId: "complete-table-next-page-listing-activity",
+    section: "B", questionRef: "2023 HL Q9(i)",
+    stem: "The manager of a regional hospital decides to arrange for the refurbishment of one of the hospital wards. The diagram below shows the scheduling network for the project. The edges of the network represent the activities that have to be completed as part of the project and are labelled with the letters A to L. The duration, in days, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The letters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(12) L(2) J(11) A(14) E(5) I(11) source sink node node B(12) G(3) H(12) C(14) K(13) F(4) Complete the table on the next page by listing, for each activity, the other activities on which it depends directly. That is, for each activity X∈{A, B, C, … , L}, write the smallest possible list of other activities which need to be completed before activity X can begin. Use the space below to show relevant supporting work, if necessary. 34",
+    questionText: "Complete the table on the next page by listing, for each activity, the other activities on which it depends directly. That is, for each activity X∈{A, B, C, … , L}, write the smallest possible list of other activities which need to be completed before activity X can begin",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2023-hl-9-i-r1", kind: "anyN", verbatim: "Activity Depends directly on … Activity Depends directly on … A − G B, C B − H E, F, G C − I B, C, E D A J B, C, E E A K E, F, G F C L D, J", marks: 10, contextNote: "The scheme prices this ask step by step: 10 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Activity Depends directly on … Activity Depends directly on … A − G B, C B − H E, F, G C − I B, C, E D A J B, C, E E A K E, F, G F C L D, J"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2023-HL-paper-q9i-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2023-HL-paper-q9i-art.png",
+          "srcHash": "2874a1c506d52603cd73bbef6f734d4d",
+          "alt": "The diagram printed with Applied Mathematics 2023 HL Q9(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: D(12), L(2), J(11), A(14), E(5), I(11), source, sink, node, node, B(12), G(3), H(12), C(14), K(13), F(4).",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-9-iii", topicId: "applied-mathematics-1-5", conceptId: "critical-path-network",
+    section: "B", questionRef: "2023 HL Q9(iii)",
+    stem: "The manager of a regional hospital decides to arrange for the refurbishment of one of the hospital wards. The diagram below shows the scheduling network for the project. The edges of the network represent the activities that have to be completed as part of the project and are labelled with the letters A to L. The duration, in days, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The letters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(12) L(2) J(11) A(14) E(5) I(11) source sink node node B(12) G(3) H(12) C(14) K(13) F(4) Complete the table on the next page by listing, for each activity, the other activities on which it depends directly. That is, for each activity X∈{A, B, C, … , L}, write the smallest possible list of other activities which need to be completed before activity X can begin. Use the space below to show relevant supporting work, if necessary. 34",
+    questionText: "Write down the critical path(s) for the network",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2023-hl-9-iii-r1", kind: "anyN", verbatim: "A, E, J, L and A, E, K", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["A, E, J, L and A, E, K"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2023-HL-paper-q9i-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2023-HL-paper-q9i-art.png",
+          "srcHash": "2874a1c506d52603cd73bbef6f734d4d",
+          "alt": "The diagram printed with Applied Mathematics 2023 HL Q9(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: D(12), L(2), J(11), A(14), E(5), I(11), source, sink, node, node, B(12), G(3), H(12), C(14), K(13), F(4).",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
+    id: "am-2023-hl-9-v", topicId: "applied-mathematics-1-5", conceptId: "activities-may-happening-day",
+    section: "B", questionRef: "2023 HL Q9(v)",
+    stem: "The manager of a regional hospital decides to arrange for the refurbishment of one of the hospital wards. The diagram below shows the scheduling network for the project. The edges of the network represent the activities that have to be completed as part of the project and are labelled with the letters A to L. The duration, in days, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The letters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(12) L(2) J(11) A(14) E(5) I(11) source sink node node B(12) G(3) H(12) C(14) K(13) F(4) Complete the table on the next page by listing, for each activity, the other activities on which it depends directly. That is, for each activity X∈{A, B, C, … , L}, write the smallest possible list of other activities which need to be completed before activity X can begin. Use the space below to show relevant supporting work, if necessary. 34",
+    questionText: "Write down the activities which may be happening on day 18",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2023-hl-9-v-r1", kind: "anyN", verbatim: "E, F, D, G", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["E, F, D, G"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2023-HL-paper-q9i-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2023-HL-paper-q9i-art.png",
+          "srcHash": "2874a1c506d52603cd73bbef6f734d4d",
+          "alt": "The diagram printed with Applied Mathematics 2023 HL Q9(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: D(12), L(2), J(11), A(14), E(5), I(11), source, sink, node, node, B(12), G(3), H(12), C(14), K(13), F(4).",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1068,7 +1511,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-10-b-ii", topicId: "applied-mathematics-2-3", conceptId: "car-loses-contact-track-instant-radius",
     section: "B", questionRef: "2023 HL Q10(b)(ii)",
-    stem: "A toy car track consists of a series of components that connect to make a closed circuit. Part of the track makes a vertical circular loop. To model the motion of a car on this track, its velocity at the base of the loop (point A) 𝜃 r is expressed as u = √kgr, where r is the u = √kgr radius of the loop, g is the acceleration due to gravity, and k is a constant. The model ignores the effects of friction. Draw a diagram to show the forces acting on the car at the instant when the radius to the car makes an angle 𝜃 with the upward vertical. If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃= 40 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate the minimum value of k such that the car successfully completes the loop without losing contact with the track. 41 Leaving Certificate, 2023 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. 42 Leaving Certificate, 2023 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: State Examinations Commission Image on page 8: State Examinations Commission Images on page 10: thejournal.ie; State Examinations Commission Image on page 18: State Examinations Commission Image on page 26: State Examinations Commission Image on page 30: State Examinations Commission State Examinations Commission Image on page 34: Image on page 35: State Examinations Commission Image on page 40: State Examinations Commission 43 Leaving Certificate, 2023 Applied Mathematics – Higher Level Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the",
+    stem: "A toy car track consists of a series of components that connect to make a closed circuit. Part of the track makes a vertical circular loop. To model the motion of a car on this track, its velocity at the base of the loop (point A) 𝜃 r is expressed as u = √kgr, where r is the u = √kgr radius of the loop, g is the acceleration due to gravity, and k is a constant. The model ignores the effects of friction. Draw a diagram to show the forces acting on the car at the instant when the radius to the car makes an angle 𝜃 with the upward vertical. If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃= 40",
     questionText: "If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃=",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -1082,7 +1525,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2023 Higher Level — © State Examinations Commission.",
     id: "am-2023-hl-10-b-iii", topicId: "applied-mathematics-2-3", conceptId: "minimum-such-car-successfully-completes-loop",
     section: "B", questionRef: "2023 HL Q10(b)(iii)",
-    stem: "A toy car track consists of a series of components that connect to make a closed circuit. Part of the track makes a vertical circular loop. To model the motion of a car on this track, its velocity at the base of the loop (point A) 𝜃 r is expressed as u = √kgr, where r is the u = √kgr radius of the loop, g is the acceleration due to gravity, and k is a constant. The model ignores the effects of friction. Draw a diagram to show the forces acting on the car at the instant when the radius to the car makes an angle 𝜃 with the upward vertical. If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃= 40 Leaving Certificate, 2023 Applied Mathematics – Higher Level (iii) Calculate the minimum value of k such that the car successfully completes the loop without losing contact with the track. 41 Leaving Certificate, 2023 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. 42 Leaving Certificate, 2023 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 6: State Examinations Commission Image on page 8: State Examinations Commission Images on page 10: thejournal.ie; State Examinations Commission Image on page 18: State Examinations Commission Image on page 26: State Examinations Commission Image on page 30: State Examinations Commission State Examinations Commission Image on page 34: Image on page 35: State Examinations Commission Image on page 40: State Examinations Commission 43 Leaving Certificate, 2023 Applied Mathematics – Higher Level Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the",
+    stem: "A toy car track consists of a series of components that connect to make a closed circuit. Part of the track makes a vertical circular loop. To model the motion of a car on this track, its velocity at the base of the loop (point A) 𝜃 r is expressed as u = √kgr, where r is the u = √kgr radius of the loop, g is the acceleration due to gravity, and k is a constant. The model ignores the effects of friction. Draw a diagram to show the forces acting on the car at the instant when the radius to the car makes an angle 𝜃 with the upward vertical. If the car loses contact with the track at the instant when the radius to the car makes an cos 𝜃 = (k−2)/3 . angle 𝜃 with the upward vertical, show that cos 𝜃= 40",
     questionText: "Calculate the minimum value of k such that the car successfully completes the loop without losing contact with the track",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -1107,6 +1550,64 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-1-b-i", topicId: "applied-mathematics-1-2", conceptId: "using-appropriate-algorithm-minimum-spanning-tree",
+    section: "B", questionRef: "2024 HL Q1(b)(i)",
+    stem: "A security manager wishes to install cameras in the public areas of a shopping centre. She wishes to locate these cameras so as to minimise the total length of the cables between them. In the network shown below node O represents the manager’s office. The nodes A to L represent the locations where the security cameras are to be installed. The weight of each edge represents the distance (in meters) between each location. 73 66 102 K 45 62 97 40 96 112 27 20 O 89 L 21 103 71 56 82 88 48 100 43 109 59 J",
+    questionText: "Using an appropriate algorithm, find the minimum spanning tree for the network. Name the algorithm you used. Relevant supporting work must be shown",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2024-hl-1-b-i-r1", kind: "anyN", verbatim: "Kruskal’s algorithm Prim’s algorithm |OB| = 20 Choose node O, say. |IL| = 21 |OB| = 20 |DF| = 27 |AB| = 45 |KL| = 40 |OC| = 56 |CE| = 43 |CE| = 43 |AB| = 45 |AD| = 73 |FG| = 48 |DF| = 27 |OC| = 56 |FG| = 48 |GJ| |OA| |DH| = /= = 59 62 66 |GJ| |DH| |IJ| = = = 88 59 66 |DH| |BE| |AD| = /= = 71 73 66 |IL| |KL| |IJ| = = = 88 21 40 |AD| |IJ| |CB| = =/= 88 82 73 |KL| = 40", marks: 15, contextNote: "The scheme prices this ask step by step: 15 — 15 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/6/9/12), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":15,"options":["Kruskal’s algorithm Prim’s algorithm |OB| = 20 Choose node O, say. |IL| = 21 |OB| = 20 |DF| = 27 |AB| = 45 |KL| = 40 |OC| = 56 |CE| = 43 |CE| = 43 |AB| = 45 |AD| = 73 |FG| = 48 |DF| = 27 |OC| = 56 |FG| = 48 |GJ| |OA| |DH| = /= = 59 62 66 |GJ| |DH| |IJ| = = = 88 59 66 |DH| |BE| |AD| = /= = 71 73 66 |IL| |KL| |IJ| = = = 88 21 40 |AD| |IJ| |CB| = =/= 88 82 73 |KL| = 40"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q1bi-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q1bi-art.png",
+          "srcHash": "757a3611f24f528f72c6e8b40e6e5df2",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q1(b)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: H, A, 73, 66, D, 102, K, 45, 62, 97, 96, 40, 112, 27, B, 20, O, 89.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-1-b-ii", topicId: "applied-mathematics-1-2", conceptId: "shortest-total-distance-security-manager-would",
+    section: "B", questionRef: "2024 HL Q1(b)(ii)",
+    stem: "A security manager wishes to install cameras in the public areas of a shopping centre. She wishes to locate these cameras so as to minimise the total length of the cables between them. In the network shown below node O represents the manager’s office. The nodes A to L represent the locations where the security cameras are to be installed. The weight of each edge represents the distance (in meters) between each location. 73 66 102 K 45 62 97 40 96 112 27 20 O 89 L 21 103 71 56 82 88 48 100 43 109 59 J",
+    questionText: "Calculate the shortest total distance the security manager would have to walk if she started at her office (O) and followed the minimum spanning tree to visit each of the camera locations in the shopping centre",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2024-hl-1-b-ii-r1", kind: "anyN", verbatim: "2(56 + 43) + 20 + 45 + 73 + 2(66) + 27 + 48 + 59 + 88 + 21 + 40 = 751 m", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["2(56 + 43) + 20 + 45 + 73 + 2(66) + 27 + 48 + 59 + 88 + 21 + 40 = 751 m"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q1bi-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q1bi-art.png",
+          "srcHash": "757a3611f24f528f72c6e8b40e6e5df2",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q1(b)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: H, A, 73, 66, D, 102, K, 45, 62, 97, 96, 40, 112, 27, B, 20, O, 89.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-1-c", topicId: "applied-mathematics-2-0", conceptId: "john-cycling-straight-horizontal-road-constant",
+    section: "B", questionRef: "2024 HL Q1(c)",
+    stem: "Calculate the times when John and Kevin overtake each other.",
+    questionText: "John is cycling on a straight horizontal road at a constant velocity of 10 m s^(– 1) and is 21 m behind another cyclist, Kevin, who is cycling at a constant velocity of 4 m s^(– 1) in the same direction. John begins to accelerate at 2 m s^(– 2). One second later, Kevin begins to accelerate at 4 m s^(– 2)",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "am-2024-hl-1-c-r1", kind: "anyN", verbatim: "s_J = 10t + t²", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["s_J = 10t + t²","s_K = 4(t−1) + 2(t−1)²","s_J = s_K + 21 + 4","t = 5 ± √2 s"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-2-a-ii", topicId: "applied-mathematics-2-0", conceptId: "ask",
     section: "B", questionRef: "2024 HL Q2(a)(ii)",
     stem: "A jeep of mass 2375 kg pulls a trailer of mass 350 kg up a hill inclined at angle 𝜃. The jeep and trailer move at a constant speed. The engine of the jeep exerts a 𝜃 force of 4400 N up the hill. The forces due to friction on the jeep and the trailer are 1525 N and 375 N respectively.",
@@ -1121,6 +1622,28 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-2-b-ii", topicId: "applied-mathematics-2-5", conceptId: "tension-string",
+    section: "B", questionRef: "2024 HL Q2(b)(ii)",
+    stem: "A student sets up the pulley arrangement shown in the diagram. A light inextensible string passes over two smooth fixed pulleys and under a smooth movable pulley of mass 6.3 kg. Weight W₁ = 24.5 N is atached to one end of the string and weight W₂ = 44.1 N is atached to the other end. W₁ W₂ 6.3 kg The system is released from rest.",
+    questionText: "Calculate the tension in the string",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2024-hl-2-b-ii-r1", kind: "anyN", verbatim: "24.5 −T = 2.5a", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["24.5 −T = 2.5a","44.1 − T = 4.5b and 2T − 6.3g = 6.3 ( (a + b)/2 )","T = 31.18 N"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q2bii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q2bii-art.png",
+          "srcHash": "1cb1151c1d67520cfb8eca5306b4bb77",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q2(b)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: W1, W2, 6.3 kg.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-3-a", topicId: "applied-mathematics-2-1", conceptId: "particle-moving-along-straight-line-has",
     section: "B", questionRef: "2024 HL Q3(a)",
     questionText: "A particle moving along a straight line has acceleration a = v = 0 when t = 0. v when t = 𝜋/2. Using integration by parts or otherwise, calculate v when t =",
@@ -1128,6 +1651,28 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "am-2024-hl-3-a-r1", kind: "anyN", verbatim: "∫dv = ∫t² sin 2tdt", marks: 30, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5, 5 — 30 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":6,"perOption":5,"options":["∫dv = ∫t² sin 2tdt","let u = t² and let dv = sin 2tdt","du = 2tdt and v = − (cos 2t)/2","∫ udv = uv − ∫ vdu, so ∫ t² sin 2t dt = − (t² cos 2t)/2 + ∫ t cos 2t dt","now let u′ = t and let dv′ = cos 2tdt du′ = dt and v′ = (sin 2t)/2 ∫ t cos 2t dt = (t sin 2t)/2 − ∫ (sin 2t)/2 dt = (t sin 2t)/2 + (cos 2t)/4","v = − (t² cos 2t)/2 + (t sin 2t)/2 + (cos 2t)/4 + c, so 0 = 1/4 + c, i.e. c = − 1/4 t = 𝜋/2 so v = 𝜋²/8 − 1/4 − 1/4 = 𝜋²/8 − 1/2 ≈ 0.73"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-3-b-i", topicId: "applied-mathematics-2-4", conceptId: "velocity-sphere-after-collision",
+    section: "B", questionRef: "2024 HL Q3(b)(i)",
+    stem: "Two identical smooth spheres, A and B, each moving with 𝚥⃗ speed u, collide obliquely. The line joining their centres at the point of impact is along the 𝚤⃗ axis. Before the collision the velocity of A makes an acute angle 𝛼 with the positive direction of the 𝚤⃗ axis and the velocity of B makes an acute angle 𝛼 with the negative direction of the 𝚤⃗ axis, as shown in the diagram. 𝛼 𝛼 u The coefficient of restitution between the spheres is e, where u 0 ≤ e ≤ 1.",
+    questionText: "Calculate, in terms of e and u, the velocity of each sphere after the collision",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2024-hl-3-b-i-r1", kind: "anyN", verbatim: "before impact (m s^(–1)) after impact (m s^(–1)) A ucos 𝛼𝚤⃗+ usin 𝛼𝚥⃗ v₁𝚤⃗+ usin 𝛼𝚥⃗ B −ucos 𝛼𝚤⃗+ usin 𝛼𝚥⃗ v₂𝚤⃗+ usin 𝛼𝚥⃗ PCM m(ucos 𝛼) + m(−ucos 𝛼) = m(v₁) + m(v₂)", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["before impact (m s^(–1)) after impact (m s^(–1)) A ucos 𝛼𝚤⃗+ usin 𝛼𝚥⃗ v₁𝚤⃗+ usin 𝛼𝚥⃗ B −ucos 𝛼𝚤⃗+ usin 𝛼𝚥⃗ v₂𝚤⃗+ usin 𝛼𝚥⃗ PCM m(ucos 𝛼) + m(−ucos 𝛼) = m(v₁) + m(v₂)","v₁ + v₂ = 0 NEL v₁ −v₂ = −2eucos 𝛼","v₁ = −eucos 𝛼 v₂ = eucos 𝛼"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q3bi-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q3bi-art.png",
+          "srcHash": "ac16d75b1b10f76917169ac598a7de5a",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q3(b)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: j⃗, i⃗, B, A, α, α, u, u.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1196,7 +1741,7 @@ export const CARDS: SecCard[] = [
     questionText: "Solve this differential equation to find an expression for v in terms of t, k and v₁",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2024-hl-4-vi-r1", kind: "anyN", verbatim: "∫ dv/(g + kv) = − ∫ dt", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["∫ dv/(g + kv) = − ∫ dt","= −t + c","let u = g + kv, so du = kdv ∴ ∫ dv/(g + kv) = 1/k ∫ du/u = 1/k ln|u| = 1/k ln(g + kv)","v = v₂ = √v₁² − 13.4g when t = 0 so c = 1/k ln(g + k√v₁² − 13.4g) v = v₂ g + kv = √v₁² − 13.4g when g + kv t = 0 so c = k 1 ln(g + k√v₁² − 13.4g)/((g + k√v₁²−13.4g)e^−^k^t−g) ln (g + kv)/(g + k√v₁²−13.4g) (g + kv)/(g + k√v₁²−13.4g) = −kt so (g + kv)/(g + k√v₁²−13.4g) (g + kv)/(g + k√v₁²−13.4g) = e−kt, i.e. v = ((g + k√v₁²−13.4g)e^−^k^t−g)/k m s^–¹"]} },
+    { id: "am-2024-hl-4-vi-r1", kind: "anyN", verbatim: "∫ dv/(g + kv) = − ∫ dt", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["∫ dv/(g + kv) = − ∫ dt","= −t + c","let u = g + kv, so du = kdv ∴ ∫ dv/(g + kv) = 1/k ∫ du/u = 1/k ln|u| = 1/k ln(g + kv)","v = v₂ = √v₁² − 13.4g when t = 0 so c = 1/k ln(g + k√v₁² − 13.4g) ln (g + kv)/(g + k√v₁²−13.4g) = −kt so (g + kv)/(g + k√v₁²−13.4g) = e−kt, i.e. v = ((g + k√v₁²−13.4g)e^−^k^t−g)/k m s^–¹"]} },
     ],
   } as SecCard,
   {
@@ -1322,7 +1867,7 @@ export const CARDS: SecCard[] = [
     questionText: "Solve the differential equation to find an expression for v in terms of s, given that v = 0 when s = 0",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2024-hl-6-b-i-r1", kind: "anyN", verbatim: "∫ (ve^−^v2)/4 dv = ∫ ds", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["∫ (ve^−^v2)/4 dv = ∫ ds","= s + c","let u = (−^v² ,)/4 so du = (−^v)/2dv ∴ ∫ (ve^−^v2)/4 dv = −2 ∫ e^udu = −2e^u = (−2e^−^v2)/4","v = 0 when s = 0 so c = −2 (−2e^−^v2)/4 = s − 2, i.e. v = 2√ln 2/(2−s) m s–1"]} },
+    { id: "am-2024-hl-6-b-i-r1", kind: "anyN", verbatim: "∫ (ve^−^v2)/4 dv = ∫ ds", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["∫ (ve^−^v2)/4 dv = ∫ ds","= s + c","let u = (−^v²)/4 , so du = (−^v)/2dv ∴ ∫ (ve^−^v2)/4 dv = −2 ∫ e^udu = −2e^u = (−2e^−^v2)/4","v = 0 when s = 0 so c = −2 (−2e^−^v2)/4 = s − 2, i.e. v = 2√ln 2/(2−s) m s–1"]} },
     ],
   } as SecCard,
   {
@@ -1344,9 +1889,111 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-7-a-i", topicId: "applied-mathematics-2-0", conceptId: "derive-expression-time-taken-sliotar-reach",
+    section: "B", questionRef: "2024 HL Q7(a)(i)",
+    stem: "Fiona plays camogie and wishes to improve her accuracy in scoring points. She stands at P, 35 m in front of the goal line and strikes a sliotar with an initial velocity of 20 m s^(– 1) at an angle 𝛼 to the horizontal ground. In order to successfully score a point the sliotar must pass over the cross bar which is 2.5 m above the ground, as shown in the diagram. 20 m s^(– 1) 2.5 m 𝛼 P 35 m",
+    questionText: "Derive an expression, in terms of 𝛼, for the time taken for the sliotar to reach the goal line",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2024-hl-7-a-i-r1", kind: "anyN", verbatim: "v_H = v cos 𝛼 ∴ t = 35/(20 cos 𝛼)", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["v_H = v cos 𝛼 ∴ t = 35/(20 cos 𝛼)"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q7ai-art.png",
+          "srcHash": "7cfa13a21299d67a3c182fef4e22b0e7",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: 20 m s– 1, 2.5 m, α, P, 35 m.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-7-a-ii", topicId: "applied-mathematics-2-0", conceptId: "such-sliotar-hits-cross-bar",
+    section: "B", questionRef: "2024 HL Q7(a)(ii)",
+    stem: "Fiona plays camogie and wishes to improve her accuracy in scoring points. She stands at P, 35 m in front of the goal line and strikes a sliotar with an initial velocity of 20 m s^(– 1) at an angle 𝛼 to the horizontal ground. In order to successfully score a point the sliotar must pass over the cross bar which is 2.5 m above the ground, as shown in the diagram. 20 m s^(– 1) 2.5 m 𝛼 P 35 m",
+    questionText: "Calculate the values of 𝛼 such that the sliotar hits the cross bar",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2024-hl-7-a-ii-r1", kind: "anyN", verbatim: "2.5 = 20 sin 𝛼t−4.9t²", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["2.5 = 20 sin 𝛼t−4.9t²","2.5 = 35 tan 𝛼 − 4.9 ( (35 sec 𝛼)/20 ) 2","15.00625 tan² 𝛼−35 tan 𝛼+ 17.50625 = 0 𝛼= 58.09° or 𝛼= 35.996°"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q7ai-art.png",
+          "srcHash": "7cfa13a21299d67a3c182fef4e22b0e7",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: 20 m s– 1, 2.5 m, α, P, 35 m.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-8-a-i", topicId: "applied-mathematics-1-3", conceptId: "use-bellman-principle-optimality-business-plan",
+    section: "B", questionRef: "2024 HL Q8(a)(i)",
+    stem: "A company director wishes to design a business plan to promote her brand over four years. Each year she chooses from a number of different promotion strategies. She estimates the profit (positive value) or loss (negative value) of each strategy (in €1000’s). She draws the network shown below to help design the most profitable plan, where the edges represent the different strategies and the nodes represent the possible states associated with the plan at a given point in time. X and Y represent the start point and the end point of the plan respectively. X Y Year 1 Year 2 Year 3 Year 4 The table below shows the estimated profit (positive value) and the estimated loss (negative value) of each strategy. Strategy Estimated profit/loss Strategy Estimated profit/loss X to A D to G −11 −5 X to B D to H −13 −3 X to C D to I −9 3 A to D E to G 5 −2 A to E E to H −2 5 A to F E to I −5 6 B to D F to G 7 4 B to E F to H −3 3 B to F F to I 4 2 C to D G to Y 5 6 C to E H to Y −4 5 C to F I to Y −1 7",
+    questionText: "Use Bellman’s Principle of Optimality to calculate the business plan that maximises profit. Relevant supporting work must be shown",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
+    rows: [
+    { id: "am-2024-hl-8-a-i-r1", kind: "anyN", verbatim: "Stage State Action Destination Value Year 4 G GY Y 6 ∗ H HY Y 5 ∗ I IY Y 7 ∗ Year 3 D DG G −5 + 6 = 1 DH H −3 + 5 = 2 DI I 3 + 7 = 10 ∗ E EG G −2 + 6 = 4 EH H 5 + 5 = 10 EI I 6 + 7 = 13 ∗ F FG G 4 + 6 = 10 ∗ FH H 3 + 5 = 8 FI I 2 + 7 = 9 Year 2 A AD D 5 + 10 = 15 ∗ AE E −2 + 13 = 11 AF F −5 + 10 = 5 B BD D 7 + 10 = 17 ∗ BE E −3 + 13 = 10 BF F 4 + 10 = 14 C CD D 5 + 10 = 15 ∗ CE E −4 + 13 = 9 CF F −1 + 10 = 9 Year 1 X XA A −11 + 15 = 4 XB B −13 + 17 = 4 XC C −9 + 15 = 6 ∗", marks: 30, contextNote: "The scheme prices this ask step by step: 30 — 30 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/8/16/24/27), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":30,"options":["Stage State Action Destination Value Year 4 G GY Y 6 ∗ H HY Y 5 ∗ I IY Y 7 ∗ Year 3 D DG G −5 + 6 = 1 DH H −3 + 5 = 2 DI I 3 + 7 = 10 ∗ E EG G −2 + 6 = 4 EH H 5 + 5 = 10 EI I 6 + 7 = 13 ∗ F FG G 4 + 6 = 10 ∗ FH H 3 + 5 = 8 FI I 2 + 7 = 9 Year 2 A AD D 5 + 10 = 15 ∗ AE E −2 + 13 = 11 AF F −5 + 10 = 5 B BD D 7 + 10 = 17 ∗ BE E −3 + 13 = 10 BF F 4 + 10 = 14 C CD D 5 + 10 = 15 ∗ CE E −4 + 13 = 9 CF F −1 + 10 = 9 Year 1 X XA A −11 + 15 = 4 XB B −13 + 17 = 4 XC C −9 + 15 = 6 ∗"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q8ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q8ai-art.png",
+          "srcHash": "8694c65318055ef8bf3c366c8e661d70",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q8(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, D, G, X, Y, B, H, E, C, F, I, Year 1, Year 2, Year 3, Year 4, Strategy, Estimated profit/loss, Strategy.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-8-a-ii", topicId: "applied-mathematics-1-3", conceptId: "difference-between-bellman-principle-optimality-dijkstra",
+    section: "B", questionRef: "2024 HL Q8(a)(ii)",
+    stem: "A company director wishes to design a business plan to promote her brand over four years. Each year she chooses from a number of different promotion strategies. She estimates the profit (positive value) or loss (negative value) of each strategy (in €1000’s). She draws the network shown below to help design the most profitable plan, where the edges represent the different strategies and the nodes represent the possible states associated with the plan at a given point in time. X and Y represent the start point and the end point of the plan respectively. X Y Year 1 Year 2 Year 3 Year 4 The table below shows the estimated profit (positive value) and the estimated loss (negative value) of each strategy. Strategy Estimated profit/loss Strategy Estimated profit/loss X to A D to G −11 −5 X to B D to H −13 −3 X to C D to I −9 3 A to D E to G 5 −2 A to E E to H −2 5 A to F E to I −5 6 B to D F to G 7 4 B to E F to H −3 3 B to F F to I 4 2 C to D G to Y 5 6 C to E H to Y −4 5 C to F I to Y −1 7",
+    questionText: "State one difference between Bellman’s Principle of Optimality and Dijkstra’s algorithm",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2024-hl-8-a-ii-r1", kind: "anyN", verbatim: "e.g. Bellman’s principle can be used to find the shortest or longest path, Dijkstra’s algorithm can only be used to find the shortest path.", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["e.g. Bellman’s principle can be used to find the shortest or longest path, Dijkstra’s algorithm can only be used to find the shortest path."]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q8ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q8ai-art.png",
+          "srcHash": "8694c65318055ef8bf3c366c8e661d70",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q8(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, D, G, X, Y, B, H, E, C, F, I, Year 1, Year 2, Year 3, Year 4, Strategy, Estimated profit/loss, Strategy.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-8-b", topicId: "applied-mathematics-2-12", conceptId: "algebraic-formula-writen-force-mass-displacement",
+    section: "B", questionRef: "2024 HL Q8(b)",
+    stem: "4Fs/m𝜔² Use dimensional analysis to show that this formula has the same units as the units for displacement.",
+    questionText: "The algebraic formula below is writen in terms of force F, mass m, displacement s and angular velocity 𝜔",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2024-hl-8-b-r1", kind: "anyN", verbatim: "replacement of physical quantities with correct units and simplification to m", marks: 15, contextNote: "The scheme prices this ask step by step: 15 — 15 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/6/9/12), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":15,"options":["replacement of physical quantities with correct units and simplification to m"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-9-i", topicId: "applied-mathematics-3-2", conceptId: "ask",
     section: "B", questionRef: "2024 HL Q9(i)",
-    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
     questionText: "Write down the values of M₂ and M₃",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -1360,7 +2007,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-9-ii", topicId: "applied-mathematics-3-2", conceptId: "solve-difference-equation-expression",
     section: "B", questionRef: "2024 HL Q9(ii)",
-    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
     questionText: "Solve the difference equation to find an expression for Mₙ in terms of n",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -1374,7 +2021,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-9-iii", topicId: "applied-mathematics-3-2", conceptId: "total-mass-opal-predicted-removed-during",
     section: "B", questionRef: "2024 HL Q9(iii)",
-    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
     questionText: "Calculate the total mass of opal that is predicted to be removed during the first six months of mining",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -1388,7 +2035,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-9-iv", topicId: "applied-mathematics-3-2", conceptId: "solve-new-difference-equation-expression",
     section: "B", questionRef: "2024 HL Q9(iv)",
-    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
     questionText: "Solve this new difference equation to find an expression for Pₙ in terms of n",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
@@ -1402,7 +2049,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-9-v", topicId: "applied-mathematics-3-2", conceptId: "total-mass-opal-now-predicted-removed",
     section: "B", questionRef: "2024 HL Q9(v)",
-    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34 Leaving Certificate, 2024 Applied Mathematics – Higher Level (iii) Calculate the total mass of opal that is predicted to be removed during the first six months of mining. 35 Leaving Certificate, 2024 Applied Mathematics – Higher Level After the government introduces stricter mining laws, the geologist changes their predictions by",
+    stem: "A geologist is carrying out a survey of an opal mine. During the first month of mining, a mass of 200 kg of opal was removed. During the second month of mining, a mass of 245 kg of opal was removed. The geologist predicts that M, the mass of opal removed in any month, can be expressed by the second‐order homogeneous difference equation: + 3Mn/4 2 = Mn + 1 + 3Mn where n ≥ 0, n∈ℤ, M₀ = 200 and M₁ = 245. Write down the values of M₂ and M₃. Solve the difference equation to find an expression for Mₙ in terms of n. 34",
     questionText: "Calculate the total mass of opal that is now predicted to be removed during the first six months of mining",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -1414,14 +2061,146 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-10-a-ii", topicId: "applied-mathematics-1-5", conceptId: "critical-path-network",
+    section: "B", questionRef: "2024 HL Q10(a)(ii)",
+    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the leters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The leters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
+    questionText: "Write down the critical path(s) for the network",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2024-hl-10-a-ii-r1", kind: "anyN", verbatim: "B, E, J, L, M", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["B, E, J, L, M"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q10aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q10aii-art.png",
+          "srcHash": "ed06afbab4142987420a0f9473cd333a",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q10(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: D(1), G(3), A(3), M(2), H(4), L(1), B(5), E(7), I(5), source, sink, node, node, J(6), N(4), C(2), K(3), F(4).",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-10-a-iii", topicId: "applied-mathematics-1-5", conceptId: "critical-path",
+    section: "B", questionRef: "2024 HL Q10(a)(iii)",
+    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the leters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The leters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
+    questionText: "What is a critical path?",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2024-hl-10-a-iii-r1", kind: "anyN", verbatim: "one where a delay in completing an activity will lead to a delay in completing the overall project", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["one where a delay in completing an activity will lead to a delay in completing the overall project"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q10aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q10aii-art.png",
+          "srcHash": "ed06afbab4142987420a0f9473cd333a",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q10(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: D(1), G(3), A(3), M(2), H(4), L(1), B(5), E(7), I(5), source, sink, node, node, J(6), N(4), C(2), K(3), F(4).",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
+    id: "am-2024-hl-10-a-iv", topicId: "applied-mathematics-1-5", conceptId: "activity-takes-weeks-instead-weeks-effect",
+    section: "B", questionRef: "2024 HL Q10(a)(iv)",
+    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the leters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The leters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
+    questionText: "If activity K takes 5 weeks instead of 3 weeks, what effect will this have on the critical path(s) and the time it takes to complete the project? Explain your answer",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2024-hl-10-a-iv-r1", kind: "anyN", verbatim: "no effect on the time to complete the project, but B, E, K, N will be a new critical path", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["no effect on the time to complete the project, but B, E, K, N will be a new critical path"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2024-HL-paper-q10aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2024-HL-paper-q10aii-art.png",
+          "srcHash": "ed06afbab4142987420a0f9473cd333a",
+          "alt": "The diagram printed with Applied Mathematics 2024 HL Q10(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: D(1), G(3), A(3), M(2), H(4), L(1), B(5), E(7), I(5), source, sink, node, node, J(6), N(4), C(2), K(3), F(4).",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-10-b", topicId: "applied-mathematics-3-3", conceptId: "tank-uniform-cross-sectional-area-contains",
     section: "B", questionRef: "2024 HL Q10(b)",
-    stem: "Water leaves the tank through a pipe at its base. The rate at which the height of the water decreases is proportional to x. At time t = 0, x = H. At t = 45 s, x = H/3. Calculate t when x = H/8. 40 Leaving Certificate, 2024 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. 41 Leaving Certificate, 2024 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. 42 Leaving Certificate, 2024 Applied Mathematics – Higher Level Page for extra work. Label any extra work clearly with the question number and part. Acknowledgements Images Image on page 34: wikipedia.org 43 Leaving Certificate, 2024 Applied Mathematics – Higher Level Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.",
+    stem: "Water leaves the tank through a pipe at its base. The rate at which the height of the water decreases is proportional to x. At time t = 0, x = H. At t = 45 s, x = H/3. Calculate t when x = H/8. 40",
     questionText: "A tank of uniform cross‐sectional area contains water of height x m",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "am-2024-hl-10-b-r1", kind: "anyN", verbatim: "dx/dt = −kx", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["dx/dt = −kx","so ∫ dx/x = − ∫ kdt so ln x = −kt + c","x = H when t = 0 so c = ln H i.e. kt = ln H/x x = H/3 when t = 45 so k = (ln 3)/45 so when x = H/8, t = 45 ( (ln 8)/3) ln = 85.2 s"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-1-a-i", topicId: "applied-mathematics-1-1", conceptId: "adjacency-matrix-graph",
+    section: "B", questionRef: "2025 HL Q1(a)(i)",
+    stem: "The diagram shows a directed graph.",
+    questionText: "Write the adjacency matrix, M, for this graph",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2025-hl-1-a-i-r1", kind: "anyN", verbatim: "2 2 1 M = (1 1) 1", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["2 2 1 M = (1 1) 1"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q1ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q1ai-art.png",
+          "srcHash": "6431987ff5ff2a93de8e83ffb8a6c0ea",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q1(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: B, C, A.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-1-a-ii", topicId: "applied-mathematics-2-0", conceptId: "ask",
+    section: "B", questionRef: "2025 HL Q1(a)(ii)",
+    stem: "The diagram shows a directed graph.",
+    questionText: "Calculate M2",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2025-hl-1-a-ii-r1", kind: "anyN", verbatim: "9 7 4 M² = (6 2) 4", marks: 10, contextNote: "The scheme prices this ask step by step: 10 — 10 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/4/7), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":10,"options":["9 7 4 M² = (6 2) 4"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q1ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q1ai-art.png",
+          "srcHash": "6431987ff5ff2a93de8e83ffb8a6c0ea",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q1(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: B, C, A.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-1-a-iii", topicId: "applied-mathematics-2-0", conceptId: "information-provided-elements",
+    section: "B", questionRef: "2025 HL Q1(a)(iii)",
+    stem: "The diagram shows a directed graph.",
+    questionText: "What information is provided by the elements of M²?",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2025-hl-1-a-iii-r1", kind: "anyN", verbatim: "The number of different paths of length 2 between each pair of nodes.", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["The number of different paths of length 2 between each pair of nodes."]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q1ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q1ai-art.png",
+          "srcHash": "6431987ff5ff2a93de8e83ffb8a6c0ea",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q1(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: B, C, A.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1434,7 +2213,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the tension in the string",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-hl-1-b-ii-r1", kind: "anyN", verbatim: "Tsin 𝜃=mg", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Tsin 𝜃=mg","i.e. T (/13) 12 = 2(9.8), i.e. T = 21.23 N"]} },
+    { id: "am-2025-hl-1-b-ii-r1", kind: "anyN", verbatim: "Tsin 𝜃=mg", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Tsin 𝜃=mg","i.e. T ( 12/13) = 2(9.8), i.e. T = 21.23 N"]} },
     ],
   } as SecCard,
   {
@@ -1448,7 +2227,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the angular velocity of the particle",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-hl-1-b-iii-r1", kind: "anyN", verbatim: "T cos 𝜃 = mr𝜔², i.e. T (/13) 5 = 2(0.5)𝜔²", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["T cos 𝜃 = mr𝜔², i.e. T (/13) 5 = 2(0.5)𝜔²","𝜔 = 7/√6 7/√6 = 2.86 rad s^–¹"]} },
+    { id: "am-2025-hl-1-b-iii-r1", kind: "anyN", verbatim: "T cos 𝜃 = mr𝜔², i.e. T ( 5/13) = 2(0.5)𝜔²", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["T cos 𝜃 = mr𝜔², i.e. T ( 5/13) = 2(0.5)𝜔²","𝜔 = 7/√6 = 2.86 rad s^–¹"]} },
     ],
   } as SecCard,
   {
@@ -1462,7 +2241,7 @@ export const CARDS: SecCard[] = [
     questionText: "The particle is given an increased velocity such that its period changes to 1.5 s. Calculate the new radius",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "am-2025-hl-1-b-iv-r1", kind: "anyN", verbatim: "T′ = 2𝜋/ω so 𝜔 = 4𝜋/3 = 4.189 rad s^–¹ T (/1.3) r = 2r𝜔² so T = 208𝜋²/45 = 45.62 N T (/1.3) ℎ = 2g so h = 441/80𝜋2 so r = 1.17 m", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T′ = 2𝜋/ω so 𝜔 = 4𝜋/3 = 4.189 rad s^–¹ T (/1.3) r = 2r𝜔² so T = 208𝜋²/45 = 45.62 N T (/1.3) ℎ = 2g so h = 441/80𝜋2 so r = 1.17 m"]} },
+    { id: "am-2025-hl-1-b-iv-r1", kind: "anyN", verbatim: "T′ = 2𝜋/ω so 𝜔 = 4𝜋/3 = 4.189 rad s^–¹ T ( r/1.3) = 2r𝜔² so T = 208𝜋²/45 = 45.62 N T ( ℎ/1.3) = 2g so h = 441/80𝜋2 so r = 1.17 m", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T′ = 2𝜋/ω so 𝜔 = 4𝜋/3 = 4.189 rad s^–¹ T ( r/1.3) = 2r𝜔² so T = 208𝜋²/45 = 45.62 N T ( ℎ/1.3) = 2g so h = 441/80𝜋2 so r = 1.17 m"]} },
     ],
   } as SecCard,
   {
@@ -1473,10 +2252,10 @@ export const CARDS: SecCard[] = [
     id: "am-2025-hl-2", topicId: "applied-mathematics-3-3", conceptId: "using-chain-rule-use-calculus-derive",
     section: "B", questionRef: "2025 HL Q2",
     stem: "A particle of mass m moves vertically upwards through the air with displacement s and velocity v. Its motion may first be modelled by ignoring air resistance, so that it has constant acceleration a. At time t = 0 the particle has velocity v₀ = 4 m s^(–1) and displacement s₀ = 0. dv (i) Using the chain rule, show that a = v dv/ds. ds. Use calculus to derive an expression for v in terms of a and s.",
-    questionText: "Using the chain rule, show that a=v dv ds. Use calculus to derive an expression for v in terms of a and s. Show that the upward motion can now be expressed by the differential equation: 2v v2+392 dv=−1 20 ds Solve this differential equation to find an expression for v in terms of s. Calculate the greatest height the particle will reach. By using a= dv dt solve a differential equation to find an expression that relates v and t",
+    questionText: "Using the chain rule, show that a=v dv ds. Use calculus to derive an expression for v in terms of a and s. Show that the upward motion can now be expressed by the differential equation: 2v/(v² + 392) dv = −1 20 ds (iv) Solve this differential equation to find an expression for v in terms of s. Solve this differential equation to find an expression for v in terms of s. Calculate the greatest height the particle will reach. By using a= dv dt solve a differential equation to find an expression that relates v and t",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 45,
     rows: [
-    { id: "am-2025-hl-2-r1", kind: "anyN", verbatim: "v = v(s(t)) v′ = a = dv/dt = dv/ds ∙ ds/dt = v dv/ds", marks: 45, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5, 5, 5, 5, 5 — 45 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":9,"perOption":5,"options":["v = v(s(t)) v′ = a = dv/dt = dv/ds ∙ ds/dt = v dv/ds","vdv = ads","∫ vdv = ∫ ads, i.e. v²/2 = as + c v v = = 4 (when s = )/(√2as + 16) 0 so c = 8","Let u = v² + 392 so du = 2vdv∴ln u = ln(v² + 392)","= − s/20 + c","v = 4 when s = 0 so c = ln 408, i.e. (v² + 392)/408 = e^− s/20 v = 4 (when s = 0 so c)/s = ln 408, i.e. v² + 392 408 = e^− 20 v = √408e^− s/20 − 392","v = 0 so s = 20 ln 408/392 = 0.8 m","ma = −mg − 1/40 mv² i.e. a = dv/dt = −9.8 − v²/40 = − (392 + v²)/40 so 1/(v² + 392) dv = − 1/40 dt","1/14√2 tan−1 v/14√2 = − 1/40 t + c v = 4 when t = 0 so c = 1/14√2 tan−1 2/7√2 2/7√2"]} },
+    { id: "am-2025-hl-2-r1", kind: "anyN", verbatim: "v = v(s(t)) v′ = a = dv/dt = dv/ds ∙ ds/dt = v dv/ds", marks: 45, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5, 5, 5, 5, 5 — 45 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":9,"perOption":5,"options":["v = v(s(t)) v′ = a = dv/dt = dv/ds ∙ ds/dt = v dv/ds","vdv = ads","∫ vdv = ∫ ads, i.e. v²/2 = as + c v = 4 when s = 0 so c = 8 v = √2as + 16","Let u = v² + 392 so du = 2vdv∴ln u = ln(v² + 392)","= − s/20 + c","v = 4 when s = 0 so c = ln 408, i.e. (v² + 392)/408 = e^− s/20 v = 4 (when s = 0 so c)/s = ln 408, i.e. v² + 392 408 = e^− 20 v = √408e^− s/20 − 392","v = 0 so s = 20 ln 408/392 = 0.8 m","ma = −mg − 1/40 mv² i.e. a = dv/dt = −9.8 − v²/40 = − (392 + v²)/40 so 1/(v² + 392) dv = − 1/40 dt","1/14√2 tan−1 v/14√2 = − 1/40 t + c v = 4 when t = 0 so c = 1/14√2 tan−1 2/7√2"]} },
     ],
   } as SecCard,
   {
@@ -1490,7 +2269,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate 𝜇B",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "am-2025-hl-3-a-i-r1", kind: "anyN", verbatim: "32 −8g𝜇_A = 8a so 32 −4g𝜇_B = 8a", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["32 −8g𝜇_A = 8a so 32 −4g𝜇_B = 8a","32 −4g𝜇_B = 4b so b = 2a","12g − 64 = 12 ( )/2 a + b = 18a","a = 134/45 so 𝜇_B = 92/441 = 0.21"]} },
+    { id: "am-2025-hl-3-a-i-r1", kind: "anyN", verbatim: "32 −8g𝜇_A = 8a so 32 −4g𝜇_B = 8a", marks: 20, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5 — 20 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["32 −8g𝜇_A = 8a so 32 −4g𝜇_B = 8a","32 −4g𝜇_B = 4b so b = 2a","12g − 64 = 12 ( (a + b)/2 ) = 18a","a = 134/45 so 𝜇_B = 92/441 = 0.21"]} },
     ],
   } as SecCard,
   {
@@ -1506,6 +2285,72 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "am-2025-hl-3-a-ii-r1", kind: "anyN", verbatim: "(a + b)/2 = 3a/2 = 67/15 = 4.47 m s^–²", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(a + b)/2 = 3a/2 = 67/15 = 4.47 m s^–²"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-3-b-i", topicId: "applied-mathematics-1-2", conceptId: "electrician-wishes-use-minimum-length-cable",
+    section: "B", questionRef: "2025 HL Q3(b)(i)",
+    stem: "An electrician needs to link 7 landline telephones in an office. The telephones, A to G, need to be connected by cables within the same electrical network. The table below shows the distance, in metres, between the different telephones. − 9 14 13 12 15 18 9 − 13 14 12 9 15 14 13 − 11 13 14 16 13 14 11 − 10 9 14 12 12 13 10 − 11 12 15 9 14 9 11 − 8 18 15 16 14 12 8",
+    questionText: "The electrician wishes to use the minimum length of cable required to connect every telephone within the same electrical network. Starting at telephone A, use Prim’s algorithm to calculate the minimum length of cable required",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2025-hl-3-b-i-r1", kind: "anyN", verbatim: "|AB| = 9 |BF| = 9 |FG| = 8 |FD| = 9 |DE| = 10 |CD| = 11 Total = 56 m", marks: 10, contextNote: "The scheme prices this ask step by step: 10 — 10 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/4/7), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":10,"options":["|AB| = 9 |BF| = 9 |FG| = 8 |FD| = 9 |DE| = 10 |CD| = 11 Total = 56 m"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q3bi-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q3bi-art.png",
+          "srcHash": "adcd108fb44960e0b10b998bfdf5df5e",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q3(b)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, B, C, D, E, F, G, A, −, 9, 14, 13, 12, 15, 18, B, 9, −.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-3-b-ii", topicId: "applied-mathematics-1-0", conceptId: "draw-electrical-network-uses-minimum-length",
+    section: "B", questionRef: "2025 HL Q3(b)(ii)",
+    stem: "An electrician needs to link 7 landline telephones in an office. The telephones, A to G, need to be connected by cables within the same electrical network. The table below shows the distance, in metres, between the different telephones. − 9 14 13 12 15 18 9 − 13 14 12 9 15 14 13 − 11 13 14 16 13 14 11 − 10 9 14 12 12 13 10 − 11 12 15 9 14 9 11 − 8 18 15 16 14 12 8",
+    questionText: "Draw the electrical network that uses the minimum length of cable",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "am-2025-hl-3-b-ii-r1", kind: "anyN", verbatim: "A B E", marks: 10, contextNote: "The scheme prices this ask step by step: 10 — 10 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/4/7), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":10,"options":["A B E"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q3bi-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q3bi-art.png",
+          "srcHash": "adcd108fb44960e0b10b998bfdf5df5e",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q3(b)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, B, C, D, E, F, G, A, −, 9, 14, 13, 12, 15, 18, B, 9, −.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-3-b-iii", topicId: "applied-mathematics-1-2", conceptId: "name-another-algorithm-could-used-minimum",
+    section: "B", questionRef: "2025 HL Q3(b)(iii)",
+    stem: "An electrician needs to link 7 landline telephones in an office. The telephones, A to G, need to be connected by cables within the same electrical network. The table below shows the distance, in metres, between the different telephones. − 9 14 13 12 15 18 9 − 13 14 12 9 15 14 13 − 11 13 14 16 13 14 11 − 10 9 14 12 12 13 10 − 11 12 15 9 14 9 11 − 8 18 15 16 14 12 8",
+    questionText: "Name another algorithm that could be used to calculate the minimum length of cable required",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2025-hl-3-b-iii-r1", kind: "anyN", verbatim: "Kruskal’s algorithm", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Kruskal’s algorithm"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q3bi-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q3bi-art.png",
+          "srcHash": "adcd108fb44960e0b10b998bfdf5df5e",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q3(b)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: A, B, C, D, E, F, G, A, −, 9, 14, 13, 12, 15, 18, B, 9, −.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1532,7 +2377,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the speed of each sphere immediately after the collision",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "am-2025-hl-4-ii-r1", kind: "anyN", verbatim: "2 ( )/5 7√3 + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3 2 50 3 ( = 5 − ) v_B−v_A + 1(0) i.e.v_B = 2(v_A) − v_A + = 1(v_B) i.e./0.084√3 2v_A + v_B = 2.8√3", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["2 ( )/5 7√3 + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3 2 50 3 ( = 5 − ) v_B−v_A + 1(0) i.e.v_B = 2(v_A) − v_A + = 1(v_B) i.e./0.084√3 2v_A + v_B = 2.8√3","3/50 = − (v_B−v_A)/(0−7√3) 5 i.e.v_B − v_A = 0.084√3","50 (0−7√3)/5 5/679√3 v_A = 750 = 1.57 m s^(–1) 742√3 v_B = 750 = 1.71 m s^(–1)"]} },
+    { id: "am-2025-hl-4-ii-r1", kind: "anyN", verbatim: "2 ( 7√3/5 ) + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["2 ( 7√3/5 ) + 1(0) = 2(v_A) + 1(v_B) i.e. 2v_A + v_B = 2.8√3","3/50 = − (v_B−v_A)/(0−7√3) 5 i.e.v_B − v_A = 0.084√3","50 (0−7√3)/5 679√3₇₅₀ = 1.57 m s^(–1) v_A = 742√3₇₅₀ = 1.71 m s^(–1) v_B ="]} },
     ],
   } as SecCard,
   {
@@ -1582,12 +2427,56 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC020ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-5-a-ii", topicId: "applied-mathematics-2-5", conceptId: "acceleration-block",
+    section: "B", questionRef: "2025 HL Q5(a)(ii)",
+    stem: "Block X and block Y are held separately at rest on a rough plane inclined at 𝛽 to the horizontal. X and Y are 1.5 m apart, as shown. The coefficient of friction between X and the plane is Y and the plane is 2/5. The blocks are released from The blocks are released from rest. Show, on separate diagrams, the forces acting on the blocks while they are moving. 18",
+    questionText: "Calculate the acceleration of each block in terms of 𝛽",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2025-hl-5-a-ii-r1", kind: "anyN", verbatim: "R₁ = m_Xgcos 𝛽 and R₂ = m_Ygcos 𝛽", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["R₁ = m_Xgcos 𝛽 and R₂ = m_Ygcos 𝛽","m_Xg sin 𝛽 − 1/2 m_Xg cos 𝛽 = m_Xa i.e. 9.8 sin 𝛽 − 4.9 cos 𝛽 = a","m_Yg sin 𝛽 − 2/5 m_Yg cos 𝛽 = m_Yb i.e. 9.8 sin 𝛽 − 3.92 cos 𝛽 = b"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q5aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q5aii-art.png",
+          "srcHash": "f66da5a75b4652e54593436559418d7f",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q5(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: β.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-5-a-iii", topicId: "applied-mathematics-2-5", conceptId: "ask",
+    section: "B", questionRef: "2025 HL Q5(a)(iii)",
+    stem: "Block X and block Y are held separately at rest on a rough plane inclined at 𝛽 to the horizontal. X and Y are 1.5 m apart, as shown. The coefficient of friction between X and the plane is Y and the plane is 2/5. The blocks are released from The blocks are released from rest. Show, on separate diagrams, the forces acting on the blocks while they are moving. 18",
+    questionText: "Calculate 𝛽",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2025-hl-5-a-iii-r1", kind: "anyN", verbatim: "s_X=19.6 sin 𝛽−9.8 cos 𝛽 and s_Y=19.6 sin 𝛽−7.84 cos 𝛽", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["s_X=19.6 sin 𝛽−9.8 cos 𝛽 and s_Y=19.6 sin 𝛽−7.84 cos 𝛽","s_Y=s_X+1.5","1.5 = 1.96 cos 𝛽 so 𝛽=40.1°"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q5aii-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q5aii-art.png",
+          "srcHash": "f66da5a75b4652e54593436559418d7f",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q5(a)(ii), as the State Examinations Commission set it on the examination paper. The labels printed on it read: β.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
     id: "am-2025-hl-5-b", topicId: "applied-mathematics-2-0", conceptId: "possible",
     section: "B", questionRef: "2025 HL Q5(b)",
     questionText: "a⃗=14𝚤⃗−9𝚥⃗ 𝚥⃗ bv⃗=p𝚤⃗+q𝚥⃗ 𝚤⃗ |bv⃗|=21 a⃗⊥bv⃗ a⃗ Calculate the possible values of p and q",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-hl-5-b-r1", kind: "anyN", verbatim: "a⃗∙b𝑣⃗=14p−9q = 0 and p² + q² = 441", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["a⃗∙b𝑣⃗=14p−9q = 0 and p² + q² = 441","p = ± 189/√277 189/√277 , q = ± 294/√277 294/√277"]} },
+    { id: "am-2025-hl-5-b-r1", kind: "anyN", verbatim: "a⃗∙b𝑣⃗=14p−9q = 0 and p² + q² = 441", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["a⃗∙b𝑣⃗=14p−9q = 0 and p² + q² = 441","p = ± 189/√277 , q = ± 294/√277"]} },
     ],
   } as SecCard,
   {
@@ -1615,7 +2504,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use integration to calculate the work done by Áine in extending the band horizontally to a length of 1.2 m",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "am-2025-hl-6-b-i-r1", kind: "anyN", verbatim: "0.2 dx W = ∫ kx dx = ∫ 650x", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["0.2 dx W = ∫ kx dx = ∫ 650x","0 W = 650 (/2 0.2² ) = 13 J"]} },
+    { id: "am-2025-hl-6-b-i-r1", kind: "anyN", verbatim: "0.2 dx W = ∫ kx dx = ∫₀ 650x", marks: 10, contextNote: "The scheme prices this ask step by step: 5, 5 — 10 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":2,"perOption":5,"options":["0.2 dx W = ∫ kx dx = ∫₀ 650x","W = 650 ( 0.2²/2 ) = 13 J"]} },
     ],
   } as SecCard,
   {
@@ -1629,8 +2518,52 @@ export const CARDS: SecCard[] = [
     questionText: "Brody takes the extended band and extends it further. He claims to have done twice the work that Áine did. If Brody is correct, calculate the new length of the band",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "am-2025-hl-6-b-ii-r1", kind: "anyN", verbatim: "x 26 = ∫ 650x dx", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["x 26 = ∫ 650x dx","0.2 26 = 650 (/2 x² − )/2 0.2² = 325x² − 13 26 = 650/^√³ ( x² 2 − 0.2² 2 ) = 325x² − 13","x = ^√³/5 so l = 1.35 m"]} },
+    { id: "am-2025-hl-6-b-ii-r1", kind: "anyN", verbatim: "x 26 = ∫ 650x dx", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["x 26 = ∫ 650x dx","0.2 26 = 650 ( x²/2 − 0.2²/2 ) = 325x² − 13","x = ^√³/5 so l = 1.35 m"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-7-a-i", topicId: "applied-mathematics-1-3", conceptId: "use-dijkstra-algorithm-shortest-path-oughterard",
+    section: "B", questionRef: "2025 HL Q7(a)(i)",
+    stem: "Shauna wishes to tour Connemara. While planning her route, she uses a road map to draw the network shown below. The weight of each edge represents the distance (in km) between each location. Leenaun Renvyle 21 37 20 6 15 28 Cleggan Letterfrack 11 14 29 25 Oughterard Clifden 21 18 37 20 Recess 27 53 23 Roundstone 29 Carna 58 Spiddal",
+    questionText: "Use Dijkstra’s algorithm to find the shortest path from Oughterard to Cleggan. Calculate the length of the shortest path. Relevant supporting work must be shown",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "am-2025-hl-7-a-i-r1", kind: "anyN", verbatim: "Oughterard: Leenaun(37), Recess(29), Spiddal(27) Spiddal: Recess(80), Carna (85) Recess: Leenaun(57), Letterfrack(54), Clifden(50), Roundstone(49), Carna (52) Leenaun: Renvyle(58), Letterfrack(57), Recess(65) Roundstone: Clifden(67), Carna(78) Clifden: Cleggan(61) Length = 61 km Path: Oughterard, Recess, Clifden, Cleggan", marks: 15, contextNote: "The scheme prices this ask step by step: 15 — 15 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/6/12), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":15,"options":["Oughterard: Leenaun(37), Recess(29), Spiddal(27) Spiddal: Recess(80), Carna (85) Recess: Leenaun(57), Letterfrack(54), Clifden(50), Roundstone(49), Carna (52) Leenaun: Renvyle(58), Letterfrack(57), Recess(65) Roundstone: Clifden(67), Carna(78) Clifden: Cleggan(61) Length = 61 km Path: Oughterard, Recess, Clifden, Cleggan"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q7ai-art.png",
+          "srcHash": "29fc44de13d8cf142dce150e21702265",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: Leenaun, 21, Renvyle, 37, 20, 6, Cleggan, 15, 28, Letterfrack, 11, 14, 29, 25, Oughterard, Clifden, 21, 18.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC020ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
+    id: "am-2025-hl-7-a-ii", topicId: "applied-mathematics-1-0", conceptId: "describe-network-differs-road-map",
+    section: "B", questionRef: "2025 HL Q7(a)(ii)",
+    stem: "Shauna wishes to tour Connemara. While planning her route, she uses a road map to draw the network shown below. The weight of each edge represents the distance (in km) between each location. Leenaun Renvyle 21 37 20 6 15 28 Cleggan Letterfrack 11 14 29 25 Oughterard Clifden 21 18 37 20 Recess 27 53 23 Roundstone 29 Carna 58 Spiddal",
+    questionText: "Describe how a network differs from a road map",
+    tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "am-2025-hl-7-a-ii-r1", kind: "anyN", verbatim: "e.g. on a map the distances are drawn to scale", marks: 5, contextNote: "The scheme prices this ask step by step: 5 — 5 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["e.g. on a map the distances are drawn to scale"]} },
+    ],
+    figure: {
+          "candId": "applied-maths-2025-HL-paper-q7ai-art",
+          "src": "/exam-figures/applied-maths/markbank/applied-maths-2025-HL-paper-q7ai-art.png",
+          "srcHash": "29fc44de13d8cf142dce150e21702265",
+          "alt": "The diagram printed with Applied Mathematics 2025 HL Q7(a)(i), as the State Examinations Commission set it on the examination paper. The labels printed on it read: Leenaun, 21, Renvyle, 37, 20, 6, Cleggan, 15, 28, Letterfrack, 11, 14, 29, 25, Oughterard, Clifden, 21, 18.",
+          "attribution": "SEC Leaving Certificate Applied Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
