@@ -18,9 +18,11 @@ describe('Landing subject access', () => {
     const dialog = screen.getByRole('dialog');
     expect(container.contains(dialog)).toBe(false);
     const chemistry = within(dialog).getByRole('button', {name:'Chemistry — available in the app'});
-    expect(chemistry).toBeDisabled();
+    expect(chemistry).toHaveAttribute('aria-disabled', 'true');
+    expect(chemistry).not.toBeDisabled();
     fireEvent.click(chemistry);
     expect(select).not.toHaveBeenCalled();
+    expect(chemistry).toHaveClass('locked-control-shake');
     fireEvent.change(screen.getByRole('searchbox', {name:'Search subjects'}), {target:{value:'math'}});
     fireEvent.click(within(dialog).getByRole('button', {name:'Mathematics'}));
     expect(select).toHaveBeenCalledWith('Mathematics');

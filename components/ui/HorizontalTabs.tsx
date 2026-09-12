@@ -15,6 +15,8 @@ import React, { useEffect, useId, useRef, useState } from 'react';
 import { LayoutGroup, motion } from 'framer-motion';
 import { useReducedMotion } from '../Motion';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
+import { LockKeyhole } from 'lucide-react';
+import { shakeLockedControl } from './LockedButton';
 
 // React 19 + Framer Motion type incompatibility — the same cast components/Motion.tsx uses.
 const MotionSpan = motion.span as any;
@@ -23,6 +25,7 @@ const MotionDiv = motion.div as any;
 export interface HorizontalTabOption<T extends string> {
   value: T;
   label: string;
+  locked?: boolean;
 }
 
 interface HorizontalTabsProps<T extends string> {
@@ -94,25 +97,37 @@ export default function HorizontalTabs<T extends string>({
                 type="button"
                 role="tab"
                 aria-selected={active}
+                aria-disabled={option.locked || undefined}
                 tabIndex={mobileAppDesign ? active ? 0 : -1 : undefined}
                 onKeyDown={mobileAppDesign ? event => {
                   const index = options.findIndex(item => item.value === option.value);
-                  const nextIndex = event.key === 'ArrowRight' ? (index + 1) % options.length : event.key === 'ArrowLeft' ? (index - 1 + options.length) % options.length : event.key === 'Home' ? 0 : event.key === 'End' ? options.length - 1 : -1;
+                  let nextIndex = event.key === 'ArrowRight' ? (index + 1) % options.length : event.key === 'ArrowLeft' ? (index - 1 + options.length) % options.length : event.key === 'Home' ? 0 : event.key === 'End' ? options.length - 1 : -1;
                   if (nextIndex < 0) return;
                   event.preventDefault();
+                  const step = event.key === 'ArrowLeft' || event.key === 'End' ? -1 : 1;
+                  let visited = 0;
+                  while (options[nextIndex].locked && visited < options.length) {
+                    nextIndex = (nextIndex + step + options.length) % options.length;
+                    visited++;
+                  }
+                  if (options[nextIndex].locked) return;
                   railRef.current?.querySelectorAll<HTMLButtonElement>('[role="tab"]')[nextIndex]?.focus({ preventScroll: true });
                   onChange(options[nextIndex].value);
                 } : undefined}
-                onClick={() => onChange(option.value)}
+                onClick={event => {
+                  if (option.locked) { shakeLockedControl(event.currentTarget); return; }
+                  onChange(option.value);
+                }}
                 onPointerEnter={pill ? () => setGhost(option.value) : undefined}
                 onFocus={pill ? () => setGhost(option.value) : undefined}
                 onBlur={pill ? () => setGhost(current => (current === option.value ? null : current)) : undefined}
-                className={pill
+                className={(option.locked ? 'locked-control opacity-60 ' : '') + (pill
                   ? `${size === 'sm' ? 'min-h-9 px-3 text-[13px]' : 'min-h-11 px-4 text-sm'} relative shrink-0 whitespace-nowrap rounded-lg border border-transparent font-semibold transition-colors ${fill ? 'flex-1 text-center' : ''} ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
                   : `relative min-h-11 ${mobileAppDesign ? 'min-w-11' : ''} shrink-0 whitespace-nowrap pt-0.5 text-xs font-semibold transition-colors ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`
-                }
+                )}
               >
-                {pill && ghost === option.value && (
+                {option.locked && <LockKeyhole size={13} className="inline-block mr-1.5 align-[-1px]" aria-hidden="true" />}
+                {pill && ghost === option.value && !option.locked && (
                   <MotionSpan
                     aria-hidden="true"
                     layoutId="ghost"

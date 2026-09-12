@@ -48,6 +48,8 @@ interface CAOPointsSimulatorProps {
   profile: StudentSubjectProfile;
   uid?: string;
   onOpenSettings: () => void;
+  initialTab?: 'overview' | 'what-if';
+  overviewLocked?: boolean;
 }
 
 export interface WhatIfScenario {
@@ -127,10 +129,10 @@ const PointsCard: React.FC<{
 
 // ─── CAOPointsSimulator ──────────────────────────────────────────────────────
 
-const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, onOpenSettings }) => {
+const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, onOpenSettings, initialTab = 'overview', overviewLocked = false }) => {
   const { updateDemoProgress } = useProgress();
   const isDemo = uid === DEMO_STUDENT_UID;
-  const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>(overviewLocked ? 'what-if' : initialTab);
   const [showGains, setShowGains] = useState(true);
   const [simSubjects, setSimSubjects] = useState<SimSubject[]>([]);
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -407,8 +409,8 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
         size="md"
         label="Points simulator view"
         value={activeTab}
-        onChange={next => setActiveTab(next as 'overview' | 'what-if')}
-        options={[{ value: 'overview', label: 'Overview' }, { value: 'what-if', label: 'What-If Explorer' }]}
+        onChange={next => { if (next !== 'overview' || !overviewLocked) setActiveTab(next as 'overview' | 'what-if'); }}
+        options={[{ value: 'overview', label: 'Overview', locked: overviewLocked }, { value: 'what-if', label: 'What-If Explorer' }]}
         className="w-fit"
       />
 
