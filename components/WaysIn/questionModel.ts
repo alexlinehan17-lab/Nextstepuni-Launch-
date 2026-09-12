@@ -1024,6 +1024,40 @@ const COUNTED_ANSWER_NOUNS = [
 ].join('|');
 
 /**
+ * The nouns a number in front of them NEVER counts into answer rows.
+ *
+ * COUNTED_ANSWER_NOUNS above is an allowlist and it was the whole defence, but
+ * an allowlist cannot cover fifty-two subjects: an audit of every built card
+ * found the planner ignoring a printed count on 1,885 of them because the
+ * paper said "two notifiable diseases", "two plants", "two characters" or
+ * "three countries" and none of those words was listed. A subject's own
+ * vocabulary is unbounded; the words that must never be counted are not.
+ *
+ * So the allowlist stays as the fast path and this is the gate on everything
+ * else: any OTHER plural noun may carry a count, unless it is a unit, a
+ * measure or the name of a thing on the page. "Correct to two decimal
+ * places", "the first 2.5 minutes", "2 cm wide" and "three missing values"
+ * are each a number in front of a noun meaning nothing of the kind, and
+ * test/waysInPrintedCount.test.ts fails loudly on all four.
+ */
+const COUNTED_UNIT_NOUNS = new Set([
+  // places of accuracy, and the value in a blank
+  'places', 'decimals', 'values', 'figures', 'digits',
+  // time
+  'seconds', 'minutes', 'hours', 'days', 'weeks', 'months', 'years',
+  'decades', 'centuries', 'intervals', 'times', 'cycles',
+  // length, mass, volume, angle, money and the rest of the SI furniture
+  'metres', 'meters', 'centimetres', 'millimetres', 'kilometres', 'inches',
+  'feet', 'grams', 'kilograms', 'tonnes', 'litres', 'millilitres', 'moles',
+  'degrees', 'radians', 'joules', 'watts', 'volts', 'amps', 'ohms', 'newtons',
+  'pascals', 'hertz', 'euro', 'cents', 'percent', 'marks', 'units',
+  // the page's own furniture, which a number beside it is naming not counting
+  'pages', 'questions', 'parts', 'sections', 'columns', 'rows', 'lines',
+  'tables', 'diagrams', 'graphs', 'samples', 'specimens', 'tubes', 'plots',
+  'sites', 'stages',
+]);
+
+/**
  * Words allowed to sit between the count and the noun it counts.
  *
  * Papers almost never write "two effects". They write "two possible economic
@@ -1066,6 +1100,36 @@ const countValue = (token: string): number | null => {
  * planning tool that turns the tariff into six boxes is not simplifying the
  * question; it is inventing a different one.
  */
+/**
+ * The items a question prints after "each of the following:", or [].
+ *
+ * Conservative on every axis, because a wrong split invents a question. The
+ * lead-in has to be there, the items have to be SHORT — a name, not a sentence
+ * — there have to be at least two of them, and none may carry a verb phrase
+ * that would make it an instruction rather than a thing.
+ */
+const LIST_LEAD = /\b(?:each|any|all)\s+of\s+the\s+following\b[^:]{0,80}:/i;
+
+export function findPrintedList(text: string): string[] {
+  const source = (text ?? '').trim();
+  const lead = LIST_LEAD.exec(source);
+  if (!lead) return [];
+  const tail = source.slice(lead.index + lead[0].length).trim();
+  if (!tail) return [];
+  const parts = tail
+    .split(/;|,(?![^()]*\))/)
+    .map(part => part.replace(/^[\s.\u2022-]+|[\s.]+$/g, '').trim())
+    .filter(Boolean);
+  if (parts.length < 2 || parts.length > 8) return [];
+  const usable = parts.every(part => part.length <= 60
+    && part.split(/\s+/).length <= 8
+    && !/[?]/.test(part)
+    && !/\b(?:explain|describe|discuss|state|outline|calculate|identify|give|name|list)\b/i.test(part));
+  if (!usable) return [];
+  return parts.map(part => part.charAt(0).toUpperCase() + part.slice(1));
+}
+
+
 export function findPrintedPlanShape(text: string): WaysInQuestionModel['planShape'] {
   // A printed choice overrides the number of options that follows. “Three of
   // the following” means three plan lines even when four labelled options are
@@ -1194,12 +1258,20 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
   const number = '(one|two|three|four|five|six|seven|eight|[1-8])';
   // `modifiers` captures the words between the count and its noun so they can
   // be vetted below; the noun itself still has to be on the allowlist.
+  // The noun is captured now, not just matched, so a word that is NOT on the
+  // allowlist can still carry a count provided it is not a unit. Everything
+  // else about the match is unchanged: the count still has to be printed, still
+  // has to follow the command, and still has to survive every guard below.
   const countedPattern = new RegExp(
-    `\\b(any\\s+)?${number}\\s+(${COUNT_MODIFIER_WORD}{0,${COUNT_MODIFIER_LIMIT}})(?:${COUNTED_ANSWER_NOUNS})\\b`,
+    `\\b(any\\s+)?${number}\\s+(${COUNT_MODIFIER_WORD}{0,${COUNT_MODIFIER_LIMIT}})`
+    + `((?:${COUNTED_ANSWER_NOUNS})|[a-z]{3,}s)\\b`,
     'gi',
   );
   const counted = (commands.length === 1 ? [...text.matchAll(countedPattern)] : []).filter(match => {
     if (match.index === undefined) return false;
+    // A unit is never an answer row, however the sentence reads around it.
+    const noun = (match[match.length - 1] ?? '').toLowerCase();
+    if (COUNTED_UNIT_NOUNS.has(noun)) return false;
     const before = text.slice(0, match.index);
     const after = text.slice(match.index + match[0].length);
     if (/\b(?:these|those|the|following|listed|supplied)\s+$/i.test(before)) return false;
@@ -1260,6 +1332,20 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
       basis: 'printed',
       evidence: commands.map(command => command.match).join(', '),
       structure: 'instructions',
+    };
+  }
+
+  // A list the paper prints out in full — "each of the following: Nitrobacter;
+  // Nitrosomonas; Denitrification" — is as printed a shape as a count phrase,
+  // and it names each row as well as counting them. Last, so nothing above it
+  // changes: a question that already showed its count keeps that reading.
+  const listed = findPrintedList(text);
+  if (listed.length > 1) {
+    return {
+      count: listed.length,
+      basis: 'printed',
+      evidence: listed.join('; '),
+      structure: 'parts',
     };
   }
 
@@ -1358,6 +1444,29 @@ function buildPlanPrompts(
     }
   }
 
+  // A list the paper PRINTS, one row per item, each labelled with the item's
+  // own name. "Briefly explain the role of each of the following in the
+  // nitrogen cycle: Nitrobacter; Nitrosomonas; Denitrification." is three
+  // separate jobs and the planner offered one box called "Direct response";
+  // 300 cards across the bank set a list this way and flattened it.
+  //
+  // The items are the PAPER'S words, so nothing of the scheme reaches the
+  // frame. Only where the question itself carries them: a card that covers one
+  // item of the list — the deck titles those "Q18(a) Soil quality" — has one
+  // job and keeps one row.
+  const printedList = findPrintedList(source.questionText);
+  if (printedList.length > 1) {
+    return {
+      kind: 'printed-parts',
+      prompts: printedList.map((item, index) => prompt(
+        `listed-${index + 1}`,
+        item,
+        `Your response for ${item}`,
+        source.questionText,
+      )),
+    };
+  }
+
   if (planShape.basis === 'printed' && planShape.count > 1) {
     const paperText = [source.stem, source.questionText].filter(Boolean).join('\n');
     const sourceText = planShape.evidence && paperText.includes(planShape.evidence)
@@ -1367,7 +1476,7 @@ function buildPlanPrompts(
       kind: 'printed-parts',
       prompts: Array.from({ length: planShape.count }, (_, index) => prompt(
         `printed-${index + 1}`,
-        planShape.structure === 'choice' ? `Chosen response ${index + 1}` : `Response ${index + 1}`,
+        countedRowLabel(planShape, index),
         'Keep this as one distinct response',
         sourceText,
       )),
@@ -1432,6 +1541,51 @@ function buildPlanPrompts(
     prompts: [prompt('direct', 'Direct response', 'Write the exact response you intend to give', taskLine)],
   };
 }
+
+/**
+ * The name the PAPER gives the thing it is asking for, as a row label.
+ *
+ * "Response 1 / Response 2" is a frame a student could have drawn without
+ * reading the question. Against a paper printing "Outline two positive impacts
+ * of globalisation", "Impact 1 / Impact 2" is the same frame telling them what
+ * each box is for — and the word is the paper's own, so nothing of the marking
+ * scheme reaches it. An audit of every built card found 2,772 plans labelled
+ * generically where the question had already named the thing.
+ *
+ * The noun comes off the evidence findPrintedPlanShape kept, which is the
+ * exact printed phrase the count was read from. Where that yields nothing
+ * usable the old wording stands.
+ */
+const PLURAL_RULES: [RegExp, string][] = [
+  [/ies$/i, 'y'], [/([sxz]|[cs]h)es$/i, '$1'], [/ses$/i, 's'], [/s$/i, ''],
+];
+
+function countedRowLabel(
+  planShape: WaysInQuestionModel['planShape'],
+  index: number,
+): string {
+  const fallback = planShape.structure === 'choice'
+    ? `Chosen response ${index + 1}`
+    : `Response ${index + 1}`;
+  const evidence = (planShape.evidence ?? '').trim();
+  if (!evidence) return fallback;
+  const words = evidence.split(/\s+/);
+  const last = words[words.length - 1]?.replace(/[^A-Za-z-]/g, '') ?? '';
+  if (last.length < 3) return fallback;
+  let singular = last.toLowerCase();
+  for (const [pattern, replacement] of PLURAL_RULES) {
+    if (pattern.test(singular)) {
+      singular = singular.replace(pattern, replacement);
+      break;
+    }
+  }
+  if (singular.length < 3) return fallback;
+  const titled = singular.charAt(0).toUpperCase() + singular.slice(1);
+  return planShape.structure === 'choice'
+    ? `${titled} ${index + 1} (chosen)`
+    : `${titled} ${index + 1}`;
+}
+
 
 export function buildQuestionModel(source: WaysInQuestionSource): WaysInQuestionModel {
   const exactText = source.questionText.trim();
