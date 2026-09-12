@@ -63,7 +63,7 @@ export const COPY = {
       { id: 'atlas', label: 'Topic Atlas', hint: 'Real questions, cropped from the printed papers. Tap one for its marking scheme.' },
       { id: 'planner', label: 'Planner & Study', hint: 'A real week, built for a sample sixth-year with seven subjects and Sundays off. Tap a block to study it.' },
       { id: 'reflex', label: 'Command-Word Reflex', hint: 'Pick Biology or Maths. Then tap the word the examiner is marking against.' },
-      { id: 'passport', label: 'Points Passport', hint: 'The Grade Planner is open. The other tabs unlock with an account.' },
+      { id: 'passport', label: 'Points Passport', hint: 'Try different grades, then explore What If. These are sample results.' },
       { id: 'futurefinder', label: 'Future Finder', hint: 'A sample student who finished the quiz. Three courses are queued to compare.' },
     ],
     live: 'Live · the actual app',

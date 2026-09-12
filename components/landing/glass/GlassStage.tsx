@@ -17,6 +17,7 @@ import { L } from '../theme';
 import { useLogicalWidth } from './useLogicalWidth';
 import { getLenis } from '../scroll';
 import { SubjectAccessContext } from '../../launchpad/SubjectAccess';
+import { shakeLockedControl } from '../../ui/LockedButton';
 
 export interface AutoStep {
   /** Button label to look for (substring match on textContent). */
@@ -54,13 +55,6 @@ export interface GlassLocks {
 const CONTROL = 'button, a, [role="button"], [role="tab"]';
 const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
 const defaultName = (el: HTMLElement) => norm((el.getAttribute('aria-label') ?? el.textContent ?? '').split(',')[0]);
-const shake = (el: HTMLElement) => {
-  el.classList.remove('landing-shake');
-  void el.offsetWidth; // restart the animation
-  el.classList.add('landing-shake');
-  window.setTimeout(() => el.classList.remove('landing-shake'), 480);
-};
-
 const findButton = (root: HTMLElement, text: string): HTMLElement | null => {
   const all = Array.from(root.querySelectorAll<HTMLElement>('button, a[role="button"]'));
   return all.find(el => (el.textContent ?? '').trim().toLowerCase().includes(text.toLowerCase())) ?? null;
@@ -193,7 +187,7 @@ export const GlassStage: React.FC<{
       if (!target || !root.contains(target) || !target.hasAttribute('data-landing-locked')) return;
       e.preventDefault();
       e.stopPropagation();
-      shake(target);
+      shakeLockedControl(target);
     };
     root.addEventListener('click', onClick, true);
     return () => { mo.disconnect(); if (raf) cancelAnimationFrame(raf); root.removeEventListener('click', onClick, true); };

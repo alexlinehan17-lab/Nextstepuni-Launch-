@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { ChevronDown, ArrowRight, LockKeyhole } from 'lucide-react';
 import ModalFrame from '../ui/ModalFrame';
+import LockedButton from '../ui/LockedButton';
 import { useSubjectAccess } from './SubjectAccess';
 import './launchpad.css';
 
@@ -69,12 +70,12 @@ export default function SubjectPicker({
           />
           <div className="mt-4 space-y-2">
             {filtered.map((option) => (
-              <button
+              <LockedButton
                 key={option.value}
                 type="button"
                 className="lp-choice"
                 aria-pressed={option.value === value}
-                disabled={!canSelectSubject(option.label)}
+                locked={!canSelectSubject(option.label)}
                 aria-label={!canSelectSubject(option.label) ? `${option.label} — available in the app` : undefined}
                 onClick={() => {
                   if (!canSelectSubject(option.label)) return;
@@ -87,7 +88,7 @@ export default function SubjectPicker({
                   {option.detail && <small>{option.detail}</small>}
                 </span>
                 {canSelectSubject(option.label) ? <ArrowRight size={17} /> : <LockKeyhole size={17} aria-hidden="true" className="shrink-0" />}
-              </button>
+              </LockedButton>
             ))}
           </div>
           {options.some(option => !canSelectSubject(option.label)) && <p className="lp-body mt-4">More subjects are available in the app.</p>}

@@ -86,7 +86,7 @@ export function computeAnalysis(
   return { studentProfile, studentCode, studentValues, maxScale, shown: scored.filter((s) => s.fit.fitBucket !== 'none').slice(0, 24) };
 }
 
-const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProfile; studentSubjects?: string[]; onOpenCareerPaths?: (careerStrings: string[]) => void }> = ({ uid, profile, onOpenCareerPaths }) => {
+const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProfile; studentSubjects?: string[]; resultsOnly?: boolean; onOpenCareerPaths?: (careerStrings: string[]) => void }> = ({ uid, profile, onOpenCareerPaths, resultsOnly = false }) => {
   const { saved, isLoaded, persist, reset } = useFutureFinderRevamped(uid);
   const [phase, setPhase] = useState<'intro' | 'quiz' | 'results'>('intro');
   const [length, setLength] = useState<'full' | 'quick'>('full');
@@ -219,7 +219,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     });
   }, [savedPicks, persistResultsState]);
 
-  if (!isLoaded) return <LoadingState label="Loading your future finder" />;
+  if (!isLoaded || (resultsOnly && phase !== 'results')) return <LoadingState label="Loading your future finder" />;
 
   // ── INTRO ─────────────────────────────────────────────────────
   if (phase === 'intro') {
@@ -322,7 +322,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
         onToggleSave={onToggleSave}
         onToggleCompare={onToggleCompare}
         onRemoveCompare={onRemoveCompare}
-        onRetake={retake}
+        onRetake={resultsOnly ? undefined : retake}
         explainer={RiasecExplainerModal}
         scoreBreakdownLabels={{ interest: 'Interest fit', values: 'Values fit', feasibility: 'Points reach' }}
       />

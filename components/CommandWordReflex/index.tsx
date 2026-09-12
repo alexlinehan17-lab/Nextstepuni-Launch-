@@ -15,6 +15,7 @@
 
 import ToolMasthead from '../launchpad/ToolMasthead';
 import SubjectPicker from '../launchpad/SubjectPicker';
+import LockedButton from '../ui/LockedButton';
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
@@ -147,7 +148,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
         {previewQuestion && <div className="lp-reflex-desktop">{preview}</div>}
         <section><h2 className="lp-title">Choose your subject</h2>
           <HorizontalTabs variant="pill" size="sm" label="Question level" value={levelFilter} onChange={next => setLevelFilter(next as typeof levelFilter)} options={[{value:'higher',label:'Higher'},{value:'ordinary',label:'Ordinary'}]} />
-          <div className="lp-reflex-subjects">{(mineIds.length ? sortedSubjects.filter(s => mineIds.includes(s.subjectId)) : sortedSubjects.slice(0,6)).map(s => <button key={s.subjectId} disabled={!canSelectSubject(displayName(s.subjectLabel))} aria-pressed={selectedSubject?.subjectId === s.subjectId} onClick={() => setSubjectId(s.subjectId)}><strong>{displayName(s.subjectLabel)}</strong><small>{canSelectSubject(displayName(s.subjectLabel)) ? `${s.count} questions` : <><LockKeyhole size={12} aria-hidden="true" /> Available in the app</>}</small></button>)}</div>
+          <div className="lp-reflex-subjects">{(mineIds.length ? sortedSubjects.filter(s => mineIds.includes(s.subjectId)) : sortedSubjects.slice(0,6)).map(s => <LockedButton key={s.subjectId} locked={!canSelectSubject(displayName(s.subjectLabel))} aria-pressed={selectedSubject?.subjectId === s.subjectId} onClick={() => setSubjectId(s.subjectId)}><strong>{displayName(s.subjectLabel)}</strong><small>{canSelectSubject(displayName(s.subjectLabel)) ? `${s.count} questions` : <><LockKeyhole size={12} aria-hidden="true" /> Available in the app</>}</small></LockedButton>)}</div>
           <SubjectPicker label="All subjects" value={selectedSubject?.subjectId ?? ''} options={pickerSubjects.map(s => ({value:s.id,label:s.label,detail:s.sublabel}))} onChange={setSubjectId} />
           <button className="lp-button w-full mt-4" disabled={!selectedSubject} onClick={() => selectedSubject && startSubject(selectedSubject.subjectId)}>Start practising <ArrowRight size={17} /></button>
           {state.wordsMet.length > 0 && <p className="lp-body mt-4">{state.wordsMet.length} command words met · {state.firstTryIds.length}/{state.seenIds.length} spotted first try</p>}

@@ -39,6 +39,8 @@ interface PointsPassportProps {
   profile: StudentSubjectProfile;
   onOpenSettings?: () => void;
   initialTab?: PassportTab;
+  /** Landing preview: use My subjects for the overview and keep the simulator focused on What If. */
+  lockSimulatorOverview?: boolean;
   onProfileChange?: (profile: StudentSubjectProfile) => void;
 }
 
@@ -90,7 +92,7 @@ function getDot(name: string) { return SUBJECT_DOT[name] || 'bg-zinc-500'; }
 
 // ─── Component ───────────────────────────────────────────────────────────────
 
-const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSettings, onProfileChange, initialTab = 'overview' }) => {
+const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSettings, onProfileChange, initialTab = 'overview', lockSimulatorOverview = false }) => {
   const { showToast } = useToast();
   const { rawProgressDoc } = useProgress();
   const isDemo = uid === DEMO_STUDENT_UID;
@@ -339,7 +341,9 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
               <CAOPointsSimulator
                 profile={profile}
                 uid={uid}
-                onOpenSettings={onOpenSettings ?? (() => undefined)}
+                initialTab="what-if"
+                overviewLocked={lockSimulatorOverview}
+                onOpenSettings={onOpenSettings ?? (() => setActiveTab('overview'))}
               />
             </React.Suspense>
           </MotionDiv>
@@ -368,7 +372,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                   </div>;
                 })}</div><p className="lp-body mt-3 text-xs">Subject gains are before best-six selection. Your total counts only your best six.</p>
               </section>
-              <aside className="lp-panel"><p className="lp-eyebrow">Try a possibility</p><h2 className="lp-title">What would one grade change?</h2><p className="lp-body">Use What if? to explore a different set of grades without changing your current grades.</p><button className="lp-button w-full mt-6" onClick={() => setActiveTab('planner')}>Explore a scenario <ArrowRight size={16} /></button></aside>
+              <aside className="lp-panel"><p className="lp-eyebrow">Try a possibility</p><h2 className="lp-title">What would one grade change?</h2><p className="lp-body">Use What if? to explore a different set of grades without changing your current grades.</p><button className="lp-button w-full mt-6" onClick={() => setActiveTab('planner')}>Explore What If? <ArrowRight size={16} /></button></aside>
             </div>
             {/* CAO Simulator insights (Connection 4: CAO Simulator → Points Passport) */}
             {caoData && caoData.whatIfScenarios && caoData.whatIfScenarios.length > 0 && (

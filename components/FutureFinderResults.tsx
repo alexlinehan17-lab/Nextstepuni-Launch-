@@ -77,7 +77,7 @@ interface FutureFinderResultsProps {
   onToggleSave: (code: string) => void;
   onToggleCompare: (r: DisplayResult) => void;
   onRemoveCompare: (code: string) => void;
-  onRetake: () => void;
+  onRetake?: () => void;
   onOpenCareerPaths?: (careerStrings: string[]) => void;
   explainer?: React.ComponentType<{ onClose: () => void }>;
   scoreBreakdownLabels?: ScoreBreakdownLabels;
@@ -177,7 +177,7 @@ function ResultsPhase({
   onToggleCompare: (r: DisplayResult) => void;
   onSelectCourse: (r: DisplayResult) => void;
   onCompare: () => void;
-  onRetake: () => void;
+  onRetake?: () => void;
   onOpenCareerPaths?: (careerStrings: string[]) => void;
   explainer?: React.ComponentType<{ onClose: () => void }>;
 }) {
@@ -204,9 +204,9 @@ function ResultsPhase({
           >
             <Eye size={14} /> How this works
           </button>
-          <button onClick={onRetake} className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">
+          {onRetake && <button onClick={onRetake} className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">
             <RotateCcw size={14} /> Retake
-          </button>
+          </button>}
         </div>
       </div>
 
