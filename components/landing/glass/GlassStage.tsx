@@ -16,6 +16,7 @@ import { MotionDiv, useReducedMotion } from '../../Motion';
 import { L } from '../theme';
 import { useLogicalWidth } from './useLogicalWidth';
 import { getLenis } from '../scroll';
+import { SubjectAccessContext } from '../../launchpad/SubjectAccess';
 
 export interface AutoStep {
   /** Button label to look for (substring match on textContent). */
@@ -78,7 +79,8 @@ export const GlassStage: React.FC<{
   logicalWidth?: number;
   /** Controls to show locked. */
   locks?: GlassLocks;
-}> = ({ children, height = 680, auto, active, className = '', logicalWidth, locks }) => {
+  canSelectSubject?: (subject: string) => boolean;
+}> = ({ children, height = 680, auto, active, className = '', logicalWidth, locks, canSelectSubject }) => {
   const reduce = useReducedMotion();
   const hostRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
@@ -243,7 +245,7 @@ export const GlassStage: React.FC<{
         className="landing-glass"
         style={{ position: 'absolute', top: 0, left: 0, width: logical, height, overflowY: 'auto', overflowX: 'hidden', transform: `scale(${scale})`, transformOrigin: '0 0', overscrollBehavior: 'contain' }}
       >
-        {children}
+        <SubjectAccessContext.Provider value={canSelectSubject}>{children}</SubjectAccessContext.Provider>
         {cursor && (
           <MotionDiv
             aria-hidden="true"

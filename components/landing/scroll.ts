@@ -39,7 +39,7 @@ export function setupSmoothScroll(): () => void {
     wheelMultiplier: 1,
     syncTouch: false,
     // The looking glasses own their scroll; a wheel over them never moves the page.
-    prevent: node => !!node.closest('.landing-glass-host'),
+    prevent: node => !!node.closest('.landing-glass-host, [data-lenis-prevent], [role="dialog"]'),
   });
   let raf = 0;
   const loop = (time: number) => { lenis?.raf(time); raf = requestAnimationFrame(loop); };

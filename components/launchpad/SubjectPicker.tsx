@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { ChevronDown, ArrowRight } from 'lucide-react';
+import { ChevronDown, ArrowRight, LockKeyhole } from 'lucide-react';
 import ModalFrame from '../ui/ModalFrame';
+import { useSubjectAccess } from './SubjectAccess';
 import './launchpad.css';
 
 interface Option {
@@ -21,6 +22,7 @@ export default function SubjectPicker({
 }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
+  const canSelectSubject = useSubjectAccess();
   const selected = options.find((option) => option.value === value);
   const filtered = useMemo(
     () =>
@@ -53,7 +55,7 @@ export default function SubjectPicker({
         title={label}
         labelledBy="subject-picker-title"
       >
-        <div className="p-5">
+        <div>
           <label className="sr-only" htmlFor="subject-picker-search">
             Search subjects
           </label>
@@ -72,7 +74,10 @@ export default function SubjectPicker({
                 type="button"
                 className="lp-choice"
                 aria-pressed={option.value === value}
+                disabled={!canSelectSubject(option.label)}
+                aria-label={!canSelectSubject(option.label) ? `${option.label} — available in the app` : undefined}
                 onClick={() => {
+                  if (!canSelectSubject(option.label)) return;
                   onChange(option.value);
                   setOpen(false);
                 }}
@@ -81,10 +86,11 @@ export default function SubjectPicker({
                   <strong>{option.label}</strong>
                   {option.detail && <small>{option.detail}</small>}
                 </span>
-                <ArrowRight size={17} />
+                {canSelectSubject(option.label) ? <ArrowRight size={17} /> : <LockKeyhole size={17} aria-hidden="true" className="shrink-0" />}
               </button>
             ))}
           </div>
+          {options.some(option => !canSelectSubject(option.label)) && <p className="lp-body mt-4">More subjects are available in the app.</p>}
           {!filtered.length && (
             <p className="lp-body py-6">
               No matching subjects. Try a shorter name.

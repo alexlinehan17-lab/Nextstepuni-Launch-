@@ -10,6 +10,7 @@
  */
 
 import React, { useEffect, useState } from 'react';
+import { ArrowUpRight, ChevronDown } from 'lucide-react';
 import FutureFinderRevamped, { computeAnalysis } from '../../FutureFinderRevamped';
 import { RIASEC_ITEMS, VALUE_ITEMS } from '../../futureFinderRiasecItems';
 import { computeTargetCAOPoints, RECOMMENDATION_RANKING_VERSION } from '../../futureFinderRecommendation';
@@ -18,6 +19,7 @@ import { ProgressProvider } from '../../../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../../../data/devStudent';
 import { GlassStage, type AutoStep, type GlassProps } from './GlassStage';
 import { DEMO_PROFILE } from './demoProfile';
+import { APP_URL } from '../theme';
 
 export const FUTUREFINDER_MODES_LIVE: { id: string; label: string }[] = [];
 
@@ -55,6 +57,17 @@ const AUTO: AutoStep[] = [
   { text: 'Back to results', before: 400, hold: 5000, then: 'top' },
 ];
 
+export function SampleResultsSign() {
+  const [open, setOpen] = useState(false);
+  return <aside className="landing-results-sign">
+    <button type="button" aria-expanded={open} aria-controls="sample-results-note" onClick={() => setOpen(value => !value)}>
+      <span><small>Take a look around</small><strong>This is what a results screen looks like!</strong><span className="landing-results-sign-hint">A sample student. Plenty to explore. <ChevronDown size={17} aria-hidden="true" /></span></span>
+      <img src="/assets/landing/starguy-512.png" alt="" width="86" height="108" />
+    </button>
+    {open && <div id="sample-results-note"><p>We’ve filled this one in for a sample student. Tap a course, try the filters or compare a few favourites. Your own interests and choices will shape your results.</p><a href={APP_URL}>Find your own direction <ArrowUpRight size={16} aria-hidden="true" /></a></div>}
+  </aside>;
+}
+
 const FutureFinderGlass: React.FC<GlassProps> = ({ active, height = 720, logicalWidth }) => {
   const [seeded, setSeeded] = useState(false);
   useEffect(() => { seedFutureFinder(); setSeeded(true); }, []);
@@ -63,6 +76,7 @@ const FutureFinderGlass: React.FC<GlassProps> = ({ active, height = 720, logical
       {active && seeded && (
         <ProgressProvider>
           <div className="landing-glass-pad landing-glass-pad--airy">
+            <SampleResultsSign />
             <FutureFinderRevamped uid={DEMO_STUDENT_UID} profile={DEMO_PROFILE} />
           </div>
         </ProgressProvider>

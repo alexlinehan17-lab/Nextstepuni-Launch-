@@ -1291,3 +1291,93 @@
 .lp-planner-agenda > .overflow-x-auto > div {
   min-width: 600px;
 }
+
+/* The allocation is a reading order, with one inspectable subject at a time. */
+.lp-choice:disabled { opacity: .5; cursor: not-allowed; }
+.lp-reflex-subjects button:disabled { opacity: .5; cursor: not-allowed; }
+.lp-reflex-subjects small { display: flex; align-items: center; gap: 5px; }
+.lp-allocation { margin-top: 32px; border-top: 1.5px solid var(--ink-primary); padding-top: 24px; }
+.lp-allocation-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
+.lp-plan-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 20px; padding: 8px 0; border-bottom: 1px solid currentColor; color: var(--ink-primary); font-size: 13px; font-weight: 700; white-space: nowrap; }
+.lp-plan-link:hover { color: var(--accent-text); }
+.lp-allocation-row { display: grid; grid-template-columns: minmax(140px, 1fr) minmax(80px, 3fr) 80px; align-items: center; gap: 20px; padding: 12px 0; border-top: 1px solid var(--outline-soft); }
+.lp-allocation-subject { display: flex; align-items: center; gap: 9px; font-size: 13px; font-weight: 600; }
+.lp-allocation-subject i, .lp-plan-subjects i, .lp-plan-detail h3 i, .lp-plan-target li i { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 8px; display: inline-block; }
+.lp-allocation-track { display: block; height: 5px; background: var(--surface-soft); border-radius: 2px; overflow: hidden; }
+.lp-allocation-track > span { display: block; height: 100%; border-radius: inherit; }
+.lp-allocation-count { text-align: right; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.lp-allocation-count > span { font-weight: 400; color: var(--ink-muted); }
+.lp-plan-explanation { color: var(--ink-primary); padding: 4px 0 8px; }
+.lp-plan-intro { max-width: 640px; font-size: 15px; line-height: 1.65; color: var(--ink-secondary); margin: 0 0 30px; }
+.lp-plan-inspector { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 32px; }
+.lp-plan-subjects { border-right: 1px solid var(--outline-soft); padding-right: 20px; }
+.lp-plan-subjects .lp-eyebrow { display: flex; justify-content: space-between; font-size: 9px; letter-spacing: .08em; padding-bottom: 12px; }
+.lp-plan-subjects button { display: flex; align-items: center; width: 100%; gap: 8px; padding: 13px 0; border-top: 1px solid var(--outline-soft); text-align: left; color: var(--ink-secondary); font-size: 12px; }
+.lp-plan-subjects button > span { flex: 1; }
+.lp-plan-subjects button > b { font-variant-numeric: tabular-nums; font-weight: 500; }
+.lp-plan-subjects button[aria-pressed='true'] { color: var(--ink-primary); font-weight: 700; box-shadow: inset 0 -2px 0 var(--ink-primary); }
+.lp-plan-subjects button:hover { color: var(--accent-text); }
+.lp-plan-mobile-picker { display: none; }
+.lp-plan-detail-heading { display: flex; justify-content: space-between; gap: 20px; padding-bottom: 22px; }
+.lp-plan-detail h3 { display: flex; align-items: center; gap: 10px; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(24px, 3vw, 32px); font-weight: 600; line-height: 1.2; margin-top: 5px; }
+.lp-plan-grades { display: flex; align-items: center; gap: 10px; font-size: 13px; margin-top: 10px; }
+.lp-plan-grades > span { color: var(--ink-muted); margin-left: 4px; }
+.lp-plan-block-count { text-align: right; flex-shrink: 0; }
+.lp-plan-block-count strong { display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 46px; font-weight: 500; line-height: 1; color: var(--accent-text); }
+.lp-plan-block-count span { display: block; font-size: 11px; margin-top: 7px; color: var(--ink-secondary); }
+.lp-plan-factors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; border-top: 1.5px solid var(--ink-primary); padding: 17px 0 22px; }
+.lp-plan-factors dt { font-size: 11px; font-weight: 700; line-height: 1.5; }
+.lp-plan-factors dt span { display: block; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--accent-text); margin-bottom: 6px; }
+.lp-plan-factors dd { font-size: 25px; font-weight: 500; font-variant-numeric: tabular-nums; margin: 10px 0; letter-spacing: -.04em; }
+.lp-plan-factors p { color: var(--ink-secondary); font-size: 12px; line-height: 1.6; }
+.lp-plan-score { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; border-top: 1px solid var(--outline-soft); padding-top: 14px; font-size: 12px; }
+.lp-plan-score strong { color: var(--accent-text); }
+.lp-plan-score > span:last-child { font-variant-numeric: tabular-nums; }
+.lp-plan-footnote { font-size: 12px; line-height: 1.65; color: var(--ink-secondary); margin-top: 16px; }
+.lp-plan-outlook { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; border-top: 1px solid var(--outline-soft); padding-top: 30px; margin-top: 30px; }
+.lp-plan-target { background: #1a1a1a; color: #fff; border-radius: 14px; padding: 24px; }
+.lp-plan-target .lp-eyebrow { color: #ff914d; }
+.lp-plan-total { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; margin: 10px 0 4px; }
+.lp-plan-total strong { font-family: 'Source Serif 4', Georgia, serif; font-size: 60px; font-weight: 500; line-height: 1.1; letter-spacing: -.04em; }
+.lp-plan-total span { font-size: 12px; color: #ccc; }
+.lp-plan-target > p:not(.lp-eyebrow):not(.lp-plan-total) { color: #ccc; font-size: 12px; line-height: 1.6; }
+.lp-plan-target ol { margin: 20px 0 0; padding: 0; list-style: none; }
+.lp-plan-target li { display: flex; align-items: center; gap: 9px; border-top: 1px solid #444; padding: 9px 0; font-size: 12px; }
+.lp-plan-target li > span { flex: 1; }
+.lp-plan-target li small { color: #ccc; font-size: 11px; }
+.lp-plan-target li b { width: 30px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.lp-plan-outside { border-top: 1px solid #444; padding-top: 14px; margin-top: 6px; }
+.lp-plan-outside strong { color: #fff; font-weight: 600; }
+.lp-plan-week { padding: 6px 0; }
+.lp-plan-week h3 { font-family: 'Source Serif 4', Georgia, serif; font-size: 32px; font-weight: 600; line-height: 1.25; margin: 12px 0 20px; }
+.lp-plan-week > p:not(.lp-eyebrow) { font-size: 13px; line-height: 1.75; color: var(--ink-secondary); margin-top: 16px; }
+@media (max-width: 640px) {
+  .lp-allocation-heading { display: block; }
+  .lp-plan-link { margin-top: 12px; }
+  .lp-allocation-row { grid-template-columns: minmax(0, 1fr) 70px; gap: 9px 16px; padding: 13px 0; }
+  .lp-allocation-track { grid-column: 1 / -1; grid-row: 2; }
+  .lp-allocation-count { grid-row: 1; grid-column: 2; }
+  .lp-plan-intro { font-size: 14px; margin-bottom: 22px; }
+  .lp-plan-inspector, .lp-plan-outlook { display: block; }
+  .lp-plan-subjects { display: none; }
+  .lp-plan-mobile-picker { display: block; margin-bottom: 24px; }
+  .lp-plan-mobile-picker label { display: block; font-size: 11px; font-weight: 700; margin-bottom: 8px; }
+  .lp-plan-mobile-picker > div { position: relative; }
+  .lp-plan-mobile-picker select { appearance: none; width: 100%; background: var(--surface-paper); color: var(--ink-primary); border: 1px solid var(--outline-soft); border-radius: 8px; padding: 12px 40px 12px 12px; font-size: 16px; }
+  .lp-plan-mobile-picker svg { pointer-events: none; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); }
+  .lp-plan-detail-heading { gap: 12px; }
+  .lp-plan-detail h3 { font-size: 25px; }
+  .lp-plan-block-count strong { font-size: 36px; }
+  .lp-plan-block-count span { font-size: 10px; max-width: 62px; line-height: 1.4; }
+  .lp-plan-factors { display: block; padding: 4px 0; }
+  .lp-plan-factors > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 20px; padding: 15px 0; }
+  .lp-plan-factors > div + div { border-top: 1px solid var(--outline-soft); }
+  .lp-plan-factors dt { align-self: center; font-size: 12px; }
+  .lp-plan-factors dt span { display: inline; margin-right: 10px; }
+  .lp-plan-factors dd { margin: 0; font-size: 23px; }
+  .lp-plan-factors p { grid-column: 1 / -1; font-size: 12px; }
+  .lp-plan-target { padding: 22px; }
+  .lp-plan-week { padding-top: 28px; }
+  .lp-plan-week h3 { font-size: 28px; }
+}
+.dark :is(.lp-plan-explanation, .lp-allocation) { --accent-text: #FF914D; }

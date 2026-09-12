@@ -1396,7 +1396,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
                 <span className="text-[9px] text-zinc-400">tap a page</span>
               </div>
-              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-[#ece9e4] dark:bg-zinc-800">
+              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-zinc-800">
                 {Array.from({ length: session.numPages }, (_, i) => {
                   const v = marksByPage.map.get(i + 1) ?? 0;
                   const intensity = v / marksByPage.max;

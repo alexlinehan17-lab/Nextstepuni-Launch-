@@ -46,7 +46,7 @@ const LOCKS: GlassLocks = {
 };
 
 const AtlasGlass: React.FC<GlassProps> = ({ sub, active, height = 700, logicalWidth }) => (
-  <GlassStage active={active} auto={AUTO} height={height} logicalWidth={logicalWidth} locks={LOCKS}>
+  <GlassStage active={active} auto={AUTO} height={height} logicalWidth={logicalWidth} locks={LOCKS} canSelectSubject={isFree}>
     {active && (
       <div className="landing-glass-pad">
         <ReviseByTopic

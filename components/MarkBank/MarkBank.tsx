@@ -22,6 +22,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import ToolMasthead from '../launchpad/ToolMasthead';
 import SubjectPicker from '../launchpad/SubjectPicker';
+import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
@@ -125,7 +126,7 @@ const useWide = () => {
 const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ secure, met, total }) => {
   const pct = (n: number) => (total > 0 ? Math.min(100, (n / total) * 100) : 0);
   return (
-    <div style={{ height: 6, borderRadius: 4, background: '#e4e1dc', overflow: 'hidden', display: 'flex' }}>
+    <div style={{ height: 6, borderRadius: 4, background: 'var(--mb-hairline)', overflow: 'hidden', display: 'flex' }}>
       <div style={{ width: `${pct(secure)}%`, background: SUCCESS }} />
       <div style={{ width: `${pct(Math.max(0, met - secure))}%`, background: SUCCESS, opacity: 0.35 }} />
     </div>
@@ -160,20 +161,23 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
 }
 
 const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => Date.now() }) => {
+  const canSelectSubject = useSubjectAccess();
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
      session, forever. */
   const saved = useMemo(() => readChoice(uid), [uid]);
-  const profileDefault = useMemo(() => profileDeckChoice(studentSubjects), [studentSubjects]);
+  const profileDefault = useMemo(() => profileDeckChoice(studentSubjects?.filter(s => canSelectSubject(s.subjectName))), [studentSubjects, canSelectSubject]);
   const savedIsValid = Boolean(
     saved
-    && SUBJECTS.some(subject => subject.id === saved.subjectId)
+    && SUBJECTS.some(subject => subject.id === saved.subjectId && canSelectSubject(subject.title))
     && deckSize(saved.subjectId, saved.level) > 0,
   );
-  const initialChoice = savedIsValid && saved ? saved : profileDefault ?? { subjectId: SUBJECTS[0].id, level: 'higher' as Level };
+  const initialChoice = savedIsValid && saved ? saved : profileDefault ?? { subjectId: (SUBJECTS.find(s => canSelectSubject(s.title)) ?? SUBJECTS[0]).id, level: 'higher' as Level };
   const [subjectId, setSubjectId] = useState<string>(initialChoice.subjectId);
   const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
+    const chosen = SUBJECTS.find(s => s.id === id);
+    if (!chosen || !canSelectSubject(chosen.title)) return;
     setSubjectId(id);
     // A subject examined at one level has no Higher deck to carry the current
     // choice into; without this, picking LCVP opened an empty Higher deck.
@@ -181,7 +185,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     const next = levels.includes(level) ? level : levels[0];
     setLevel(next);
     writeChoice(uid, { subjectId: id, level: next });
-  }, [uid, level]);
+  }, [uid, level, canSelectSubject]);
   const chooseLevel = useCallback((l: Level) => {
     setLevel(l);
     writeChoice(uid, { subjectId, level: l });
@@ -612,18 +616,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                   </div>
                 ))}
               </div>
-            ) : visibleStrands.filter(strand => strandFilter === 'all' || strand.id === strandFilter).map(strand => ({ ...strand, topics: strand.topics.filter(topic => topic.title.toLowerCase().includes(topicQuery.trim().toLowerCase())) })).filter(strand => strand.topics.length > 0).map((strand, si) => (
+            ) : visibleStrands.filter(strand => strandFilter === 'all' || strand.id === strandFilter).map(strand => ({ ...strand, topics: strand.topics.filter(topic => topic.title.toLowerCase().includes(topicQuery.trim().toLowerCase())) })).filter(strand => strand.topics.length > 0).map(strand => (
               <section key={strand.id} id={`strand-${strand.id}`}>
-                <div style={{
-                  height: 44, display: 'flex', alignItems: 'center', gap: 9,
-                  padding: '0 18px', background: 'var(--mb-soft)',
-                  borderTop: si === 0 ? 'none' : `1px solid ${MUTED_BORDER}`,
-                  borderBottom: `1px solid ${HAIRLINE}`,
-                }}>
-                  <span style={{ font: `600 14px/1 ${SERIF}`, color: INK }}>{strand.title}</span>
-                  <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
-                    {strand.label}
-                  </span>
+                <div className="mb-strand-header">
+                  <span className="mb-strand-title">{strand.title}</span>
+                  <span className="mb-strand-label">{strand.label}</span>
                 </div>
 
                 <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>

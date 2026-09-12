@@ -663,7 +663,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                               className={`h-3.5 w-3.5 rounded-[4px] ${
                                 c.done === 0
                                   ? c.isFuture
-                                    ? 'bg-[#F8F6F3] dark:bg-zinc-800/50'
+                                    ? 'bg-zinc-50 dark:bg-zinc-800/50'
                                     : 'bg-[#F1EEE9] dark:bg-zinc-800'
                                   : ''
                               } ${c.isToday ? 'ring-[1.5px] ring-inset ring-[#1A1A1A] dark:ring-white' : ''}`}
