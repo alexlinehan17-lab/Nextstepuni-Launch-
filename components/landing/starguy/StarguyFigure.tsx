@@ -33,7 +33,7 @@ import {
   Alignment, Fit, Layout, RuntimeLoader, useRive, useStateMachineInput,
   useViewModel, useViewModelInstance, useViewModelInstanceNumber,
 } from '@rive-app/react-canvas-lite';
-import { useMotionValueEvent, type MotionValue } from 'framer-motion';
+import { motionValue, useMotionValueEvent, type MotionValue } from 'framer-motion';
 import { Starguy } from '../primitives';
 
 export const STARGUY_RIV = '/assets/landing/starguy.riv';
@@ -94,10 +94,19 @@ const useBoundNumber = (path: string, instance: ReturnType<typeof useViewModelIn
   return ref;
 };
 
+/**
+ * A stand-in for a signal the caller did not pass. The interface says every
+ * signal is optional and a missing one leaves that part at rest, but `null`
+ * reaches useMotionValueEvent's subscribe and throws on it, so a consumer
+ * driving only two of the five channels took the whole figure down. One shared
+ * value that never changes costs nothing and keeps the promise the type makes.
+ */
+const AT_REST = motionValue(0);
+
 const useDrive = (value: MotionValue<number> | undefined, apply: (v: number) => void) => {
   const applyRef = useRef(apply);
   applyRef.current = apply;
-  useMotionValueEvent(value ?? (null as never), 'change', v => applyRef.current(v));
+  useMotionValueEvent(value ?? AT_REST, 'change', v => applyRef.current(v));
   // Push the current value once the rig is ready, so a value set before load lands.
   useEffect(() => { if (value) applyRef.current(value.get()); });
 };
@@ -120,7 +129,7 @@ const Rig: React.FC<StarguySignals & { onFail: () => void }> = ({ speed, lookX, 
   const scaleX = useBoundNumber(VM.scaleX, instance);
   const scaleY = useBoundNumber(VM.scaleY, instance);
 
-  useMotionValueEvent(speed ?? (null as never), 'change', v => { if (speedInput) speedInput.value = v; });
+  useMotionValueEvent(speed ?? AT_REST, 'change', v => { if (speedInput) speedInput.value = v; });
   useEffect(() => { if (speedInput && speed) speedInput.value = speed.get(); }, [speedInput, speed]);
   useDrive(lookX, v => headTurn.current(clamp(v, -1, 1) * LOOK_TURN));
   useDrive(lookY, v => headY.current(HEAD_BASE_Y + clamp(v, -1, 1) * LOOK_NOD));
