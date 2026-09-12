@@ -4,11 +4,13 @@
  */
 
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
+import { BookOpen, Target, RotateCcw, Clock, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
-import ChoiceControl from '../ui/ChoiceControl';
+import StudySessionSetup from './StudySessionSetup';
+import StudySessionTimer from './StudySessionTimer';
+import { getSubjectFill } from '../../utils/subjectColors';
 import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
 import PointsExplainer from '../PointsExplainer';
 import { doc, updateDoc, arrayUnion, getDoc, setDoc } from 'firebase/firestore';
@@ -16,12 +18,12 @@ import { db } from '../../firebase';
 import { saveInBackground } from '../../utils/firestoreWrite';
 import { type SessionUser } from '../../utils/authUtils';
 import { type StudentSubjectProfile } from '../subjectData';
-import { type UserProgress, type StrategyMasteryMap, type MasteryTier, type StudyConfidenceLabel, type StudyReflection } from '../../types';
+import { type UserProgress, type StrategyMasteryMap, type StudyConfidenceLabel, type StudyReflection } from '../../types';
 import { type CourseData } from '../Library';
-import { STRATEGY_REGISTRY, PROMPT_AUTO_DISMISS_SECONDS } from '../../studySessionData';
+import { STRATEGY_REGISTRY } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
 import { MIN_STUDY_SESSION_MINUTES, useStudySession } from '../../hooks/useStudySession';
-import { getSubjectColor, getSubjectHex, DURATION_PRESETS } from '../../studySessionData';
+import { getSubjectColor } from '../../studySessionData';
 import StrategyPickerStep from './StrategyPickerStep';
 import ReflectionModal from '../ReflectionModal';
 import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
@@ -37,20 +39,6 @@ import { useProgress } from '../../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../../data/devStudent';
 import { useModal } from '../../hooks/useModal';
 
-const TIER_COLORS: Record<MasteryTier, { text: string; bar: string }> = {
-  none: { text: 'text-zinc-400 dark:text-zinc-500', bar: 'bg-zinc-200 dark:bg-zinc-700' },
-  learned: { text: 'text-blue-500', bar: 'bg-blue-500' },
-  practiced: { text: 'text-teal-500', bar: 'bg-teal-500' },
-  applied: { text: 'text-amber-500', bar: 'bg-amber-500' },
-  habitual: { text: 'text-purple-500', bar: 'bg-purple-500' },
-};
-
-const TIER_LABELS: Record<MasteryTier, string> = {
-  none: 'Not Started', learned: 'Learned', practiced: 'Practiced', applied: 'Applied', habitual: 'Habitual',
-};
-
-const TIER_ORDER: MasteryTier[] = ['learned', 'practiced', 'applied', 'habitual'];
-
 const CONFIDENCE_SCORE: Record<StudyConfidenceLabel, number> = {
   lost: 1,
   shaky: 2,
@@ -65,18 +53,6 @@ const confidenceLabelFromScore = (score: number): StudyConfidenceLabel => {
   if (score === 3) return 'okay';
   if (score === 4) return 'good';
   return 'confident';
-};
-
-const STRATEGY_ICONS: Record<string, LucideIcon> = {
-  'mastering-active-recall-protocol': Brain,
-  'mastering-spaced-repetition-protocol': Repeat,
-  'mastering-interleaving-protocol': Shuffle,
-  'elaborative-interrogation-protocol': HelpCircle,
-  'agency-protocol': Compass,
-  'growth-mindset-protocol': Sprout,
-  'digital-distraction-protocol': Shield,
-  'learning-radar-protocol': Radar,
-  'exam-hall-strategies-protocol': ClipboardCheck,
 };
 
 // Animated count-up number for points
@@ -443,358 +419,40 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     session.resetSession();
   };
 
-  // ── Format time ──
-  const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-  };
-
-  // ── SVG ring calculations ──
-  const ringRadius = 120;
-  const ringCircumference = 2 * Math.PI * ringRadius;
-  const progress = session.totalDuration > 0 ? session.elapsedSeconds / session.totalDuration : 0;
-  const _ringOffset = ringCircumference * (1 - progress);
-  const timeRemaining = Math.max(0, session.totalDuration - session.elapsedSeconds);
-
   // ── SETUP PHASE ──
   if (session.phase === 'idle') {
     return (
-      <div className="min-h-screen theme-compat bg-white dark:bg-zinc-950 flex flex-col">
-        {/* ── Editorial header — replaces the old teal hero banner ── */}
-        <div className="mx-auto w-full max-w-md shrink-0 px-4 pt-5 sm:px-6 sm:pt-6">
-          <div className="flex items-center justify-between">
-            <button
-              onClick={onBack}
-              aria-label="Back"
-              className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#EDEBE8] bg-white transition-colors hover:bg-[#F8F4EC] dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
-              style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
-            >
-              <ArrowLeft size={18} className="text-[#1a1a1a]" />
-            </button>
-            <button
-              onClick={() => { loadReflections(); setJournalOpen(true); }}
-              className="inline-flex h-11 items-center gap-1.5 rounded-xl border border-[#EDEBE8] bg-white px-3.5 text-[13px] font-semibold text-[#1a1a1a] transition-colors hover:bg-[#F8F4EC] dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800"
-              style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
-            >
-              <BookOpen size={15} className="text-[#1a1a1a]" />
-              My reflections{reflections.length > 0 ? ` (${reflections.length})` : ''}
-            </button>
-          </div>
-
-          <div className="mt-6 flex items-center gap-3 sm:mt-7 sm:gap-4 md:gap-5">
-            {/* Painted blob + hand-drawn study icon */}
-            <div className="relative h-20 w-20 shrink-0 sm:h-24 sm:w-24">
-              <svg
-                className="absolute pointer-events-none"
-                viewBox="0 0 100 100"
-                aria-hidden="true"
-                preserveAspectRatio="xMidYMid meet"
-                style={{
-                  width: '92%',
-                  height: '92%',
-                  left: '50%',
-                  top: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  zIndex: 0,
-                }}
-              >
-                <path
-                  d="M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z"
-                  fill="#B8DDC8"
-                  opacity="0.85"
-                />
-              </svg>
-              <img
-                src="/assets/study/study-session-v2.png"
-                alt=""
-                style={{
-                  position: 'absolute',
-                  left: '50%',
-                  top: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  width: '158%',
-                  height: '158%',
-                  maxWidth: 'none',
-                  objectFit: 'contain',
-                  zIndex: 1,
-                }}
-                draggable={false}
-              />
-            </div>
-
-            {/* Title + subtitle */}
-            <div className="min-w-0">
-              <h1
-                style={{
-                  fontFamily: "'Source Serif 4', serif",
-                  fontSize: 'clamp(32px, 6vw, 44px)',
-                  fontWeight: 500,
-                  letterSpacing: '-0.6px',
-                  lineHeight: 1.05,
-                  margin: 0,
-                }}
-                className="text-[#1A1A1A] dark:text-white"
-              >
-                Study Session
-              </h1>
-              <p
-                style={{
-                  fontFamily: "'DM Sans', system-ui, sans-serif",
-                  fontSize: 14,
-                  margin: 0,
-                  marginTop: 6,
-                }}
-                className="text-zinc-500 dark:text-zinc-400"
-              >
-                {session.todaySessions.length > 0
-                  ? `${session.todaySessions.length} session${session.todaySessions.length !== 1 ? 's' : ''} today · ${session.todayTotalMinutes} min total`
-                  : 'Choose a subject, type and duration'}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Centered content */}
-        <div className="flex-1 bg-white px-4 pb-28 dark:bg-zinc-950 sm:px-6">
-          <div className="mx-auto w-full max-w-md space-y-7 pt-5 sm:space-y-10 sm:pt-6">
-            {/* Today's timetable blocks — quick-start shortcuts */}
-            {computedTodayBlocks.length > 0 && (
-              <div className="space-y-3">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500">Today's Timetable</p>
-                <div className="space-y-2">
-                  {computedTodayBlocks.map((block) => {
-                    const colors = getSubjectColor(block.subject);
-                    const typeConfig = SESSION_TYPE_CONFIG[block.sessionType];
-                    const TypeIcon = typeConfig.icon;
-                    return (
-                      <button
-                        key={block.blockId}
-                        onClick={() => {
-                          if (onStudyBlock) {
-                            onStudyBlock(block);
-                          } else {
-                            // Pre-fill selections from the block
-                            setSelectedSubject(block.subject);
-                            setSelectedType(block.sessionType);
-                            setSelectedMinutes(block.durationMinutes);
-                          }
-                        }}
-                        className="group w-full min-h-[68px] flex items-center gap-3.5 px-4 py-3 rounded-2xl text-left bg-white dark:bg-zinc-900 border border-[#E5E1DB] dark:border-zinc-700 transition-[border-color,box-shadow,transform] hover:border-[rgba(var(--accent),0.28)] hover:shadow-[0_6px_18px_rgba(28,25,23,0.06)] active:translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.38)] focus-visible:ring-offset-2"
-                      >
-                        <span className={`w-1.5 self-stretch min-h-10 rounded-full ${colors.dot} shrink-0 opacity-85`} />
-                        <div className="flex-1 min-w-0">
-                          <span className="text-[14px] font-semibold block text-[var(--text-primary)]">{block.subject}</span>
-                          <span className="mt-1 text-xs text-[var(--text-muted)] flex items-center gap-1.5">
-                            <TypeIcon size={14} strokeWidth={1.8} />
-                            {typeConfig.label} · {block.durationMinutes}m
-                          </span>
-                        </div>
-                        <span className="shrink-0 inline-flex items-center gap-1.5 rounded-full bg-[var(--accent-hex)] px-3 py-2 text-xs font-semibold text-white shadow-[0_3px_0_var(--accent-dark-hex)] transition-transform group-hover:-translate-y-0.5 group-active:translate-y-0">
-                          <Play size={13} fill="currentColor" strokeWidth={2} />
-                          <span className="hidden sm:inline">Start</span>
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-
-            {/* Subject picker */}
-            <div className="space-y-3">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500">Subject</p>
-              <div className="flex flex-wrap gap-2">
-                {subjects.map(s => {
-                  const colors = getSubjectColor(s.subjectName);
-                  const isActive = selectedSubject === s.subjectName;
-                  return (
-                    <ChoiceControl
-                      key={s.subjectName}
-                      onClick={() => setSelectedSubject(s.subjectName)}
-                      label={s.subjectName}
-                      selected={isActive}
-                      markerClassName={colors.dot}
-                    />
-                  );
-                })}
-                {subjects.length === 0 && (
-                  <div className="w-full rounded-2xl border-[1.5px] border-[#1A1A1A] bg-white p-5 text-left dark:border-zinc-600 dark:bg-zinc-900">
-                    <div className="flex items-start gap-3">
-                      <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FDEBDD] text-[#B94712] dark:bg-orange-950/40 dark:text-orange-300">
-                        <BookOpen size={19} aria-hidden="true" />
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <p className="font-serif text-lg font-semibold text-[#1A1A1A] dark:text-white">Add your subjects to begin.</p>
-                        <p className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">We use them to tailor sessions, strategies and progress.</p>
-                        {onSetUpProfile && (
-                          <button
-                            type="button"
-                            onClick={onSetUpProfile}
-                            className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border-[1.5px] border-[#1A1A1A] bg-[#F26B1F] px-4 text-sm font-semibold text-white shadow-[2px_2px_0_0_#1A1A1A] transition-transform active:translate-x-0.5 active:translate-y-0.5 active:shadow-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2"
-                          >
-                            Set up subjects
-                            <ChevronRight size={16} aria-hidden="true" />
-                          </button>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            {/* Last session note — surfaces whatWorked from previous debrief */}
-            <AnimatePresence>
-              {lastSubjectNote && selectedSubject && (
-                <MotionDiv
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  className="overflow-hidden"
-                >
-                  <div className="px-4 py-3 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5 text-[#A8A29E] dark:text-zinc-500">Last time you studied {selectedSubject}</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400 italic leading-relaxed">"{lastSubjectNote.whatWorked}"</p>
-                  </div>
-                </MotionDiv>
-              )}
-            </AnimatePresence>
-
-            {/* Session type + Duration — side by side */}
-            <div className="grid grid-cols-2 gap-4 sm:gap-8">
-              {/* Session type */}
-              <div className="space-y-3">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500">Type</p>
-                <div className="space-y-2">
-                  {(['new-learning', 'practice', 'revision'] as const).map(type => {
-                    const config = SESSION_TYPE_CONFIG[type];
-                    const Icon = config.icon;
-                    const isActive = selectedType === type;
-                    return (
-                      <ChoiceControl
-                        key={type}
-                        onClick={() => setSelectedType(type)}
-                        className="w-full justify-start"
-                        label={config.label}
-                        selected={isActive}
-                        icon={<Icon size={17} strokeWidth={isActive ? 2 : 1.75} />}
-                      />
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Duration */}
-              <div className="space-y-3">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500">Duration</p>
-                <div className="space-y-2">
-                  {DURATION_PRESETS.map(preset => {
-                    const isActive = selectedMinutes === preset.minutes;
-                    return (
-                      <ChoiceControl
-                        key={preset.minutes}
-                        onClick={() => setSelectedMinutes(preset.minutes)}
-                        className="w-full"
-                        label={`${preset.minutes} min`}
-                        selected={isActive}
-                      />
-                    );
-                  })}
-                  {/* Custom duration input */}
-                  <div className="relative">
-                    {(() => {
-                      const isCustomActive = !DURATION_PRESETS.some(p => p.minutes === selectedMinutes) && selectedMinutes > 0;
-                      return (
-                        <>
-                          <input
-                            type="number"
-                            min={5}
-                            max={180}
-                            placeholder="Custom"
-                            value={isCustomActive ? selectedMinutes : ''}
-                            onChange={(e) => {
-                              const v = parseInt(e.target.value, 10);
-                              if (!isNaN(v) && v >= 1 && v <= 180) setSelectedMinutes(v);
-                              else if (e.target.value === '') setSelectedMinutes(0);
-                            }}
-                            aria-label="Custom study duration in minutes"
-                            aria-describedby="custom-study-duration-help"
-                            aria-invalid={selectedMinutes > 0 && selectedMinutes < MIN_STUDY_SESSION_MINUTES}
-                            className={`w-full px-4 py-3 rounded-xl text-[13px] font-semibold text-center transition-all outline-none ${
-                              isCustomActive
-                                ? 'bg-[rgba(var(--accent),0.08)] text-[var(--accent-hex)] border border-[rgba(var(--accent),0.25)] ring-1 ring-inset ring-[rgba(var(--accent),0.15)]'
-                                : 'bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 border border-dashed border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-600'
-                            }`}
-                          />
-                          <span className={`absolute right-3 top-1/2 -translate-y-1/2 text-[11px] pointer-events-none ${isCustomActive ? 'text-[var(--accent-hex)] opacity-60' : 'text-zinc-400'}`}>min</span>
-                          <span id="custom-study-duration-help" className="sr-only">Enter between 5 and 180 minutes.</span>
-                          {selectedMinutes > 0 && selectedMinutes < MIN_STUDY_SESSION_MINUTES && (
-                            <p role="status" className="mt-1.5 text-center text-xs font-medium text-[#8C3A0E]">
-                              Minimum {MIN_STUDY_SESSION_MINUTES} minutes
-                            </p>
-                          )}
-                        </>
-                      );
-                    })()}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Start button */}
-            <div className="sticky bottom-[calc(76px+var(--sab,0px))] z-20 -mx-4 flex flex-col items-center bg-gradient-to-t from-white via-white/95 to-transparent px-4 pb-2 pt-5 dark:from-zinc-950 dark:via-zinc-950/95 sm:static sm:mx-0 sm:bg-none sm:p-0">
-              {startHint && <p className="mb-2 text-xs font-medium text-zinc-500 dark:text-zinc-400">{startHint}</p>}
-              <PrimaryActionButton className="w-full sm:w-auto" label="Start Session" onClick={handleStart} icon={Play} disabled={!canStart} />
-            </div>
-
-            {/* Strategy Mastery Summary */}
-            {strategyMastery && Object.keys(strategyMastery).length > 0 && (
-              <div className="space-y-3">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500">Strategy Mastery</p>
-                <div className="space-y-2">
-                  {STRATEGY_REGISTRY.map(strategy => {
-                    const record = strategyMastery[strategy.moduleId];
-                    const tier = record?.tier ?? 'none';
-                    const tierIndex = TIER_ORDER.indexOf(tier);
-                    const colors = TIER_COLORS[tier];
-                    const Icon = STRATEGY_ICONS[strategy.moduleId] || Brain;
-
-                    return (
-                      <div key={strategy.moduleId} className="flex items-center gap-3">
-                        <Icon size={14} className={colors.text} />
-                        <span className="min-w-0 flex-1 text-xs font-medium leading-snug text-zinc-600 dark:text-zinc-400 sm:w-32 sm:flex-none">{strategy.strategyName}</span>
-                        <div className="flex-1 grid grid-cols-4 gap-0.5">
-                          {TIER_ORDER.map((t, i) => (
-                            <div
-                              key={t}
-                              className={`h-1.5 rounded-full ${i <= tierIndex ? (
-                                t === 'learned' ? 'bg-blue-500'
-                                : t === 'practiced' ? 'bg-teal-500'
-                                : t === 'applied' ? 'bg-amber-500'
-                                : 'bg-purple-500'
-                              ) : 'bg-zinc-200 dark:bg-zinc-700'}`}
-                            />
-                          ))}
-                        </div>
-                        <span className={`text-[10px] font-semibold w-16 text-right ${colors.text}`}>{TIER_LABELS[tier]}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-                {onGoToProgress && (
-                  <button
-                    onClick={onGoToProgress}
-                    className="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-medium text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-colors"
-                  >
-                    View progress and milestones
-                    <ChevronRight size={12} />
-                  </button>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
+      <div className="ss-view">
+        <StudySessionSetup
+          subjects={subjects}
+          selectedSubject={selectedSubject}
+          selectedType={selectedType}
+          selectedMinutes={selectedMinutes}
+          onSubject={setSelectedSubject}
+          onType={setSelectedType}
+          onMinutes={setSelectedMinutes}
+          todayBlocks={computedTodayBlocks}
+          onBlock={block => {
+            if (onStudyBlock) onStudyBlock(block);
+            else {
+              setSelectedSubject(block.subject);
+              setSelectedType(block.sessionType);
+              setSelectedMinutes(block.durationMinutes);
+            }
+          }}
+          sessionCount={session.todaySessions.length}
+          todayMinutes={session.todayTotalMinutes}
+          reflectionCount={reflections.length}
+          lastNote={lastSubjectNote?.whatWorked}
+          strategyMastery={strategyMastery}
+          onProgress={onGoToProgress}
+          onReflections={() => { loadReflections(); setJournalOpen(true); }}
+          onBack={onBack}
+          onSetUpProfile={onSetUpProfile}
+          onStart={handleStart}
+          canStart={canStart}
+          startHint={startHint}
+        />
 
         {/* Points Explainer (first visit) */}
         <PointsExplainer
@@ -817,23 +475,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   // ── ACTIVE / PAUSED PHASE ──
   if (session.phase === 'active' || session.phase === 'paused') {
-    const subjectHex = getSubjectHex(session.subject);
+    const subjectHex = getSubjectFill(session.subject);
     const typeConfig = SESSION_TYPE_CONFIG[session.sessionType];
-
-    const lightenHex = (hex: string, amount: number) => {
-      const red = parseInt(hex.slice(1, 3), 16);
-      const green = parseInt(hex.slice(3, 5), 16);
-      const blue = parseInt(hex.slice(5, 7), 16);
-      const channel = (value: number) => Math.min(255, value + amount).toString(16).padStart(2, '0');
-      return `#${channel(red)}${channel(green)}${channel(blue)}`;
-    };
-
-    const colourBands = [
-      { scale: 1, top: '61%', lighten: 0 },
-      { scale: 1.34, top: '54%', lighten: 15 },
-      { scale: 1.7, top: '47%', lighten: 29 },
-      { scale: 2.08, top: '40%', lighten: 43 },
-    ];
 
     const handleEndEarly = () => {
       if (!session.canRecordSession) return;
@@ -847,217 +490,20 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     };
 
     return (
-      <div
-        className="fixed inset-0 z-[100] flex flex-col"
-        style={{ background: lightenHex(subjectHex, 58) }}
-      >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          {[...colourBands].reverse().map((band, index) => (
-            <motion.div
-              key={band.lighten}
-              className="absolute left-1/2 rounded-[50%]"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{
-                scale: session.phase === 'paused' ? band.scale * 0.84 : band.scale,
-                top: session.phase === 'paused' ? `calc(${band.top} + 4%)` : band.top,
-                opacity: 1,
-              }}
-              transition={{ duration: 0.9, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
-              style={{
-                width: '140vw',
-                height: '140vw',
-                transform: 'translateX(-50%)',
-                backgroundColor: lightenHex(subjectHex, band.lighten),
-              }}
-            />
-          ))}
-        </div>
-
-        {/* Top bar — X button + subject info */}
-        <div className="relative z-20 flex items-center justify-between px-5 py-4">
-          <button
-            onClick={() => setConfirmQuit(true)}
-            aria-label="Leave study session"
-            className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:bg-black/10"
-          >
-            <X size={18} className="text-[#3A3530]" />
-          </button>
-          <div className="flex items-center gap-2 text-xs font-semibold text-[#292522]">
-            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: subjectHex }} />
-            {typeConfig.label}
-          </div>
-        </div>
-
-        {/* Title area */}
-        <div className="relative z-20 text-center mt-10 px-6">
-          <motion.h1
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="font-serif text-3xl md:text-4xl font-bold"
-            style={{ color: '#1A1A1A' }}
-          >
-            {session.subject}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
-            className="text-xs mt-2 font-bold uppercase tracking-[0.16em]"
-            style={{ color: 'rgba(26,26,26,.68)' }}
-          >
-            {typeConfig.label} · {Math.ceil(session.totalDuration / 60)} min
-          </motion.p>
-        </div>
-
-        {/* Center — giant play/pause */}
-        <div className="relative z-20 flex-1 flex flex-col items-center justify-center px-6">
-          <motion.p
-            initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
-            className="font-mono text-6xl md:text-7xl font-bold tabular-nums tracking-[-0.06em] text-[#1A1A1A] mb-3"
-          >
-            {formatTime(timeRemaining)}
-          </motion.p>
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#292522] mb-8">
-            {session.phase === 'paused' ? 'Session paused' : 'Time remaining'}
-          </p>
-          <motion.button
-            onClick={session.phase === 'active' ? session.pauseSession : session.resumeSession}
-            aria-label={session.phase === 'active' ? 'Pause study session' : 'Resume study session'}
-            className="relative w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center bg-[#383431] text-white shadow-[0_16px_36px_rgba(38,32,27,.18)]"
-            animate={{ scale: session.phase === 'paused' ? 0.92 : 1 }}
-            whileHover={{ scale: session.phase === 'paused' ? 0.96 : 1.04 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            {session.phase === 'active' ? (
-              <Pause size={30} />
-            ) : (
-              <Play size={30} style={{ marginLeft: 3 }} />
-            )}
-          </motion.button>
-        </div>
-
-        {/* Bottom — progress bar + times */}
-        <div className="relative z-20 px-6 pb-8 pt-4">
-          {/* Paused label — absolute so it doesn't shift layout */}
-          <AnimatePresence>
-            {session.phase === 'paused' && !session.currentPrompt && (
-              <MotionDiv
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="absolute left-0 right-0 -top-6 text-center pointer-events-none"
-              >
-                <span
-                  className="text-xs font-bold uppercase tracking-[0.25em]"
-                  style={{ color: 'rgba(26,26,26,.68)' }}
-                >
-                  Paused
-                </span>
-              </MotionDiv>
-            )}
-          </AnimatePresence>
-
-          {/* Progress track */}
-          <div className="relative w-full max-w-lg mx-auto">
-            <div
-              className="w-full h-1 rounded-full overflow-hidden"
-              style={{ backgroundColor: 'rgba(26,26,26,.16)' }}
-            >
-              <motion.div
-                className="h-full rounded-full"
-                style={{
-                  backgroundColor: 'rgba(26,26,26,.58)',
-                  width: `${Math.min(100, progress * 100)}%`,
-                  transition: 'width 1s ease',
-                }}
-              />
-            </div>
-            {/* Scrubber dot */}
-            <div
-              className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full"
-              style={{
-                left: `${Math.min(100, progress * 100)}%`,
-                transform: `translate(-50%, -50%)`,
-                backgroundColor: '#1A1A1A',
-                transition: 'left 1s ease',
-              }}
-            />
-          </div>
-
-          {/* Elapsed / Remaining */}
-          <div className="flex justify-between mt-3 max-w-lg mx-auto">
-            <span
-              className="text-xs font-medium tabular-nums"
-              style={{ color: 'rgba(26,26,26,.72)' }}
-            >
-              {formatTime(session.elapsedSeconds)} elapsed
-            </span>
-            <span
-              className="text-xs font-medium tabular-nums"
-              style={{ color: 'rgba(26,26,26,.72)' }}
-            >
-              {formatTime(timeRemaining)} remaining
-            </span>
-          </div>
-        </div>
-
-        {/* Coaching prompts — overlay from bottom */}
-        <AnimatePresence mode="wait">
-          {/* Coaching prompt */}
-          {session.currentPrompt && (
-            <MotionDiv
-              key={session.currentPrompt.prompt}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="fixed bottom-16 left-4 right-4 z-30 max-w-md mx-auto"
-            >
-              <div
-                className="rounded-2xl p-4 overflow-hidden relative"
-                style={{
-                  backgroundColor: '#FFFFFF',
-                  border: '1.5px solid #383838',
-                  boxShadow: '0 14px 34px rgba(38,32,27,.12)',
-                }}
-              >
-                {/* Auto-dismiss countdown bar */}
-                <motion.div
-                  className="absolute top-0 left-0 h-0.5 rounded-full"
-                  style={{ backgroundColor: 'rgba(0,0,0,0.15)' }}
-                  initial={{ width: '100%' }}
-                  animate={{ width: '0%' }}
-                  transition={{ duration: PROMPT_AUTO_DISMISS_SECONDS, ease: 'linear' }}
-                />
-                <div className="flex items-center gap-2 mb-2">
-                  <Brain size={14} style={{ color: subjectHex }} />
-                  <span className="text-[10px] font-bold uppercase tracking-widest" style={{ color: subjectHex }}>
-                    {session.currentPrompt.strategyName}
-                  </span>
-                </div>
-                <p className="text-sm leading-relaxed" style={{ color: 'rgba(0,0,0,0.7)' }}>
-                  {session.currentPrompt.prompt}
-                </p>
-                <div className="flex items-center gap-3 mt-3">
-                  <button
-                    onClick={session.completePrompt}
-                    className="min-h-10 rounded-xl border px-4 text-xs font-semibold transition-colors"
-                    style={{ color: subjectHex, borderColor: subjectHex, backgroundColor: `${subjectHex}12` }}
-                  >
-                    Done
-                  </button>
-                  <button
-                    onClick={session.dismissPrompt}
-                    className="min-h-10 rounded-xl border border-[#D9D4CE] bg-white px-4 text-xs font-medium text-[#6E6862] transition-colors hover:border-[#8E8780]"
-                  >
-                    Skip
-                  </button>
-                </div>
-              </div>
-            </MotionDiv>
-          )}
-        </AnimatePresence>
+      <div className="ss-timer-view">
+        <StudySessionTimer
+          subject={session.subject}
+          subjectColor={subjectHex}
+          type={typeConfig.label}
+          totalSeconds={session.totalDuration}
+          elapsedSeconds={session.elapsedSeconds}
+          paused={session.phase === 'paused'}
+          onLeave={() => setConfirmQuit(true)}
+          onTogglePause={session.phase === 'active' ? session.pauseSession : session.resumeSession}
+          prompt={session.currentPrompt}
+          onCompletePrompt={session.completePrompt}
+          onSkipPrompt={session.dismissPrompt}
+        />
 
         <AnimatePresence>
           {confirmQuit && (
@@ -1077,7 +523,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 8, scale: 0.98 }}
                 transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
-                className="w-full max-w-sm rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838]"
+                className="ss-exit-panel"
               >
                 <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">Leave session</p>
                 <h2 id="study-exit-title" className="font-serif text-2xl font-bold text-[#1A1A1A]">End this study session?</h2>
@@ -1090,7 +536,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   <button
                     type="button"
                     onClick={() => setConfirmQuit(false)}
-                    className="min-h-12 rounded-xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-4 font-semibold text-white shadow-[3px_3px_0_0_#1A1A1A] transition-transform active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+                    className="ss-keep-studying"
                   >
                     Keep studying
                   </button>
@@ -1098,7 +544,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                     type="button"
                     onClick={handleEndEarly}
                     disabled={!session.canRecordSession}
-                    className="min-h-12 rounded-xl border border-[#D0CDC8] bg-white px-4 font-semibold text-[#3A3530] hover:bg-[#F8F4EC] disabled:cursor-not-allowed disabled:opacity-45"
+                    className="ss-end-early"
                   >
                     {session.canRecordSession
                       ? 'End early and debrief'
@@ -1107,7 +553,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   <button
                     type="button"
                     onClick={handleDiscard}
-                    className="min-h-11 rounded-xl px-4 text-sm font-medium text-[#7A7068] transition-colors hover:bg-[#F2EEE9] hover:text-[#3A3530]"
+                    className="ss-discard"
                   >
                     Discard without saving
                   </button>
@@ -1149,12 +595,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     const isEarlyEnd = session.elapsedSeconds < session.totalDuration;
 
     return (
-      <div className="min-h-screen bg-white dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-12">
+      <div className="ss-completion-view min-h-screen bg-white dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-12">
         <MotionDiv
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-lg space-y-6 rounded-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838] sm:p-8"
+          className="ss-completion-panel w-full max-w-lg space-y-6 rounded-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838] sm:p-8"
         >
           {/* Header — points as hero */}
           <div className="text-center">
