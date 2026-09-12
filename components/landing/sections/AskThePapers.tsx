@@ -8,18 +8,19 @@
  */
 
 import React, { Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Body, Container, Display, Eyebrow, SectionRule } from '../primitives';
+import { Body, Container, Eyebrow, SectionRule } from '../primitives';
 import { FONT, L, SPACE } from '../theme';
 import { type AskData, type AskIndexFile, type AskMode, type AskQuestion, byPaperOrder, highlight, loadAsk, loadAskIndex, matches, matchingTopics, queryTerms, sentenceFor } from '../fx-e/ask';
 import HorizontalTabs from '../../ui/HorizontalTabs';
+import Guesswork from './Guesswork';
 import '../fx-e/fx-e.css';
 
 const AskPaperViewer = React.lazy(() => import('../glass/AskPaperViewer'));
 
 const TEXT = {
   eyebrow: 'Ask the papers',
-  line: 'Sixteen years of exam papers. Find your topic.',
-  body: 'Explore Higher Level questions in eight subjects from 2010–2025. Find a topic through Paper Trail’s tags, or search for words in the question text. Pick a year to see the questions.',
+  lead: 'See where your topic appears in real exam questions.',
+  body: 'Sixteen years of Higher Level papers. Eight subjects, 2010–2025. Search by topic or by the words on the paper, then choose a year to explore.',
   label: 'Search the papers',
   loading: 'Opening sixteen years of papers…',
   failed: 'The papers could not be loaded.',
@@ -104,14 +105,15 @@ const AskThePapers: React.FC = () => {
   const selName = subjects.find(s => s.id === selSubject)?.name ?? '';
 
   return (
-    <section id="ask" className={SPACE.sectionTight} style={{ position: 'relative', scrollMarginTop: 70 }}>
+    <section id="ask" aria-labelledby="ask-heading" className={SPACE.sectionTight} style={{ position: 'relative', scrollMarginTop: 70 }}>
       <SectionRule />
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          <div className="lg:col-span-4 lg:pt-2">
+          <div className="lg:col-span-4 lg:pt-2 min-w-0">
             <Eyebrow>{TEXT.eyebrow}</Eyebrow>
-            <Display size="sub" as="h2" className="mt-4" style={{ maxWidth: '18ch' }}>{TEXT.line}</Display>
-            <Body className="mt-5" style={{ maxWidth: '40ch' }}>{TEXT.body}</Body>
+            <div className="mt-5"><Guesswork /></div>
+            <Body className="mt-6" style={{ maxWidth: '32ch', fontSize: 18, fontWeight: 500, lineHeight: 1.45, color: L.ink }}>{TEXT.lead}</Body>
+            <Body className="mt-3" style={{ maxWidth: '40ch' }}>{TEXT.body}</Body>
           </div>
 
           <div className="lg:col-span-8 min-w-0">
