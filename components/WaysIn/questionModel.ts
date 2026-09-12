@@ -1281,10 +1281,21 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
     + `(${nounPattern})\\b`,
     'gi',
   );
+  // ONE command, or none of this applies. A question that sets several
+  // instructions has several jobs, and the instructions reading below gives
+  // each of them a row; a count found among them belongs to ONE of those jobs
+  // and is not the shape of the whole.
+  //
+  // This was relaxed and put back. "Based on your reading of TEXT 1, what
+  // insights do you gain? Make three points, supporting your answer" really is
+  // three, and 204 English cards lose their printed count to this line -- but
+  // the same relaxation turns "Explain what the term means. Give two features
+  // in your answer." into "Feature 1 / Feature 2" and DROPS the explanation
+  // the paper asked for first. Under-labelling a job is a smaller harm than
+  // losing one, so the count waits until the two shapes can be told apart.
   const matchesFor = (nounPattern: string) => (
     commands.length === 1 ? [...text.matchAll(countedWith(nounPattern))] : []
-  ).filter(match => {
-    if (match.index === undefined) return false;
+  ).filter(match => {    if (match.index === undefined) return false;
     // A unit is never an answer row, however the sentence reads around it.
     const noun = (match[match.length - 1] ?? '').toLowerCase();
     if (COUNTED_UNIT_NOUNS.has(noun)) return false;

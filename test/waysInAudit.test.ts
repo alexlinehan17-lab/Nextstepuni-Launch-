@@ -222,6 +222,7 @@ const IDENTIFIED = new Set([
   'calf', 'cow', 'sample', 'question', 'part', 'figure', 'table', 'page',
   'diagram', 'graph', 'year', 'lactation', 'site', 'plot', 'tube', 'stage',
   'day', 'week', 'month', 'section', 'line', 'row', 'column', 'point',
+  'text', 'source', 'extract', 'passage', 'image', 'film', 'chapter',
 ]);
 const COUNT_PHRASE = new RegExp(
   String.raw`(^|[^a-z])(one|two|three|four|five|six|seven|eight|nine|ten|\d{1,2})\s+`
@@ -287,7 +288,14 @@ export function auditCard(subject: string, level: string, card: any): Defect[] {
 
   const labels = model.planPrompts.map((p) => strip(p.label));
   const allGeneric = labels.length > 0 && labels.every((l) => GENERIC.has(l));
-  const counts = ENGLISH_MEDIUM.has(subject) ? printedCounts(q) : [];
+  // A count inside ONE sub-part says nothing about the whole question's shape.
+  // Geography sets "(i) Name each of the landforms labelled A, B, C and D.
+  // (ii) Name two specific processes..." and the plan rightly has a row per
+  // numbered part; comparing the "two" from part (ii) against that reported 95
+  // correct plans as defects. Where the question prints its own sub-parts, the
+  // instructions are the shape and this check has nothing to say.
+  const hasSubParts = (q.match(/\((?:i{1,3}|iv|v|vi{0,3})\)/gi) ?? []).length > 1;
+  const counts = ENGLISH_MEDIUM.has(subject) && !hasSubParts ? printedCounts(q) : [];
   const named = counts.find((c) => c.n > 1);
 
   if (named && allGeneric) {
