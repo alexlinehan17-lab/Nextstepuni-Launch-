@@ -280,8 +280,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           // Browser auth uses session persistence, so closing a shared-school
           // browser ends Firebase sign-in but cannot run our logout handler.
           // Clear the previous account's device-only drafts on the next
-          // unauthenticated boot before presenting the login screen.
-          await clearLocalSessionData();
+          // unauthenticated boot before presenting the login screen. Anonymous
+          // CERTLE history belongs to the browser, not the previous account.
+          // Later auth transitions and explicit logout still clear everything.
+          await clearLocalSessionData({ preservePublicGames: !authResolvedRef.current });
           setUser(null);
           setLoadedData({ ...defaultLoadedData });
         }
