@@ -1380,3 +1380,4 @@
   .lp-plan-week { padding-top: 28px; }
   .lp-plan-week h3 { font-size: 28px; }
 }
+.dark :is(.lp-plan-explanation, .lp-allocation) { --accent-text: #FF914D; }
