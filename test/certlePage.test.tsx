@@ -13,6 +13,13 @@ import { dublinDay } from "../components/landing/fx-e/dublin";
 import { GAME_KEY, STATS_KEY } from "../components/certle/game";
 import type { CertleQuestion } from "../components/certle/data";
 
+// jsdom does not implement the native dialog lifecycle. Browser checks cover
+// top-layer rendering, focus and the real close controls.
+Object.defineProperties(HTMLDialogElement.prototype, {
+  showModal: { configurable: true, value() { this.setAttribute("open", ""); } },
+  close: { configurable: true, value() { this.removeAttribute("open"); } },
+});
+
 const question: CertleQuestion = {
   id: "certle-ui-fixture",
   subject: "Biology",
@@ -121,6 +128,46 @@ describe("CERTLE player flow", () => {
     expect(JSON.parse(localStorage.getItem(STATS_KEY)!).results).toHaveLength(
       1,
     );
+  });
+  it("rescans a saved answer and updates today’s record without adding a game", async () => {
+    const day = dublinDay(new Date());
+    localStorage.setItem(GAME_KEY, JSON.stringify({
+      version: 2, day, id: question.id,
+      answers: ["Peristalssis, muscular contracitons"], finished: true,
+    }));
+    localStorage.setItem(STATS_KEY, JSON.stringify({ results: [
+      { day, id: question.id, earned: 0, total: 6, attempts: 1, complete: false },
+    ] }));
+    render(<CertlePage />);
+    expect(await screen.findByLabelText("Attempt 1: 6 of 6 marks")).toBeInTheDocument();
+    await waitFor(() => expect(JSON.parse(localStorage.getItem(STATS_KEY)!).results).toEqual([
+      { day, id: question.id, earned: 6, total: 6, attempts: 1, complete: true },
+    ]));
+  });
+  it("explains the rules in three readable steps and returns to play", async () => {
+    await open();
+    fireEvent.click(screen.getByRole("button", { name: "How to play" }));
+    const help = screen.getByRole("dialog", { name: "How to play CERTLE" });
+    expect(within(help).getAllByRole("listitem")).toHaveLength(3);
+    expect(within(help).getByText(/best attempt is the score/)).toBeInTheDocument();
+    expect(within(help).getByLabelText("Example: 3 of 6 marks earned")).toBeInTheDocument();
+    fireEvent.click(within(help).getByRole("button", { name: "Let’s play" }));
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+    expect(screen.getByRole("textbox", { name: "Your answer" })).toBeInTheDocument();
+  });
+  it("shows every attempt count, including zeros, with proportional bars", async () => {
+    localStorage.setItem(STATS_KEY, JSON.stringify({ results: [
+      { day: "2026-09-01", id: "old-1", earned: 3, total: 3, attempts: 1, complete: true },
+      { day: "2026-09-02", id: "old-2", earned: 3, total: 3, attempts: 1, complete: true },
+      { day: "2026-09-03", id: "old-3", earned: 3, total: 3, attempts: 3, complete: true },
+    ] }));
+    await open();
+    fireEvent.click(screen.getByRole("button", { name: "Your statistics" }));
+    const record = screen.getByRole("dialog", { name: "Your CERTLE record" });
+    for (const [attempt, count] of [[1, 2], [2, 0], [3, 1]]) {
+      const row = within(record).getByLabelText(`Attempt ${attempt}: ${count} full-mark games`);
+      expect(row.querySelector<HTMLElement>(".certle-distribution-fill")!.style.width).toBe(`${count / 3 * 100}%`);
+    }
   });
   it("recovers from a failed question load without erasing saved data", async () => {
     vi.mocked(fetch).mockRejectedValueOnce(new Error("offline"));
