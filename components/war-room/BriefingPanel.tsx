@@ -231,19 +231,9 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
   const reasoningId = 'war-room-focus-reasoning';
 
   return (
-    <div className="mx-auto max-w-[880px]">
-      <header>
-        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ink-muted)]">Focus</p>
-        <h2 className="mt-2 font-serif text-[30px] font-semibold leading-tight text-[var(--ink-primary)] sm:text-[36px]">
-          What matters now
-        </h2>
-        <p className="mt-2 hidden max-w-xl text-sm leading-relaxed text-[var(--ink-secondary)] sm:block">
-          One useful next move. The detail can wait until you need it.
-        </p>
-      </header>
-
+    <div className="lp-briefing">
       <section
-        className="mt-5 overflow-hidden rounded-[14px] border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] sm:mt-7"
+        className="lp-focus-card overflow-hidden rounded-[14px] border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)]"
         aria-labelledby="war-room-focus-subject"
       >
         <div className="p-5 sm:p-7 lg:p-8">
@@ -269,7 +259,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
           <h3 id="war-room-focus-subject" className="mt-4 font-serif text-[32px] font-semibold leading-none text-[var(--ink-primary)] sm:text-[40px]">
             {focus.subject}
           </h3>
-          <p className="mt-4 max-w-2xl text-[17px] font-semibold leading-snug text-[var(--ink-primary)] sm:text-[19px]">
+          <p className="mt-4 text-[17px] font-semibold leading-snug text-[var(--ink-primary)] sm:text-[19px]">
             {focusAction}
           </p>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--ink-secondary)]">
@@ -319,7 +309,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
               </button>
             ) : null}
 
-            {focusBlock && onReviewSubjects && (
+            {focusBlock && onStudyNow && onReviewSubjects && (
               <button
                 type="button"
                 onClick={onReviewSubjects}
@@ -384,7 +374,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
         </div>
       </section>
 
-      <section className="mt-10" aria-labelledby="war-room-week-title">
+      <section className="lp-week-queue" aria-labelledby="war-room-week-title">
         <div className="flex items-end justify-between gap-5 border-b border-[var(--outline-strong)] pb-3">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ink-muted)]">This week</p>

@@ -20,6 +20,8 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import ToolMasthead from '../launchpad/ToolMasthead';
+import SubjectPicker from '../launchpad/SubjectPicker';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
@@ -39,11 +41,11 @@ import {
   writeChoice, writeLocal, type DeckState,
 } from './store';
 import type { SecCard } from '../../types/markBank';
-import ChoiceControl from '../ui/ChoiceControl';
+
 import HorizontalTabs from '../ui/HorizontalTabs';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
-import { getSubjectHex } from '../../utils/subjectColors';
+
 
 const INK = 'var(--mb-ink)';
 const INK_2 = 'var(--mb-ink-2)';
@@ -67,9 +69,7 @@ const HAIRLINE = 'var(--mb-hairline)';
    414px and that is correct — filling a wide window with rails is the instinct
    that produced the layout this replaces. */
 const SURFACE = 1092;
-const RAIL = 280;
-const GUTTER = 32;
-const LIST = 780;
+
 const TWO_PANE = 1200;
 /** Single-column width between the phone layout and the rail-plus-list split. */
 const COLUMN = 664;
@@ -104,52 +104,7 @@ const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
  * being hidden or disabled: a student looking for Chemistry needs to see that it
  * exists and is being written, not to wonder whether the tool has it at all.
  */
-const Segment: React.FC<{
-  options: { value: string; label: string; empty?: boolean; markerColor?: string }[];
-  value: string;
-  onChange: (value: string) => void;
-  /**
-   * Let the options run onto more than one row.
-   *
-   * A single-row stadium works only while every label is short. "Agricultural
-   * Science" is 20 characters and needs about 160px of the 280px rail on its
-   * own, so the four-subject control could not fit one row at any sensible size:
-   * the label broke mid-phrase onto two lines at line-height 1, and the row
-   * overflowed the rounded border it was supposed to sit inside. Wrapping is
-   * opt-in rather than automatic.
-   */
-  wrap?: boolean;
-}> = ({ options, value, onChange, wrap = false }) => (
-  <div style={{
-    display: wrap ? 'flex' : 'inline-flex',
-    flexWrap: wrap ? 'wrap' : 'nowrap',
-    gap: 6,
-    maxWidth: '100%',
-    padding: 0,
-  }}>
-    {options.map(o => {
-      const on = o.value === value;
-      return (
-        <ChoiceControl
-          key={o.value}
-          onClick={() => onChange(o.value)}
-          label={o.label}
-          selected={on}
-          compact
-          className={wrap ? 'flex-auto' : ''}
-          markerColor={o.markerColor}
-          trailing={o.empty ? (
-            <span
-              aria-hidden
-              title="No cards yet"
-              style={{ width: 5, height: 5, borderRadius: '50%', background: MUTED_BORDER }}
-            />
-          ) : undefined}
-        />
-      );
-    })}
-  </div>
-);
+
 
 /** Rail-plus-list above this, single column below. Same threshold as the review
  *  screen's split, so the tool changes shape once rather than twice. */
@@ -238,6 +193,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   // anything they do in Chemistry, and dropping a level never disturbs either.
   const deckId = `${subjectId}-${level}`;
   const [deck, setDeck] = useState<DeckState>(() => readLocal(uid, deckId));
+  const [topicQuery, setTopicQuery] = useState('');
+  const [strandFilter, setStrandFilter] = useState('all');
   const [screen, setScreen] = useState<Screen>({ name: 'board' });
   const [loaded, setLoaded] = useState(false);
   const [online, setOnline] = useState(() => typeof navigator === 'undefined' ? true : navigator.onLine);
@@ -527,26 +484,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     <div
       className={`mark-bank-theme ${launchingTopicId !== null ? 'mb-board-exit' : ''}`}
       aria-busy={launchingTopicId !== null}
-      style={{ fontFamily: SANS, padding: '28px 0 72px', color: INK }}
+      style={{ fontFamily: SANS, padding: '0 0 72px', color: INK }}
     >
-      <div style={{
-        maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
-        display: 'flex', alignItems: 'flex-start', gap: wide ? GUTTER : 0,
-        flexDirection: wide ? 'row' : 'column',
-      }}>
-
+      <ToolMasthead tool="mark-bank" eyebrow="Work the real questions" title="The Mark Bank." subtitle="Build your answer. See where the marks come from." />
+      <div className="lp-mark-library">
         {/* ---- the rail: what you sit, what is waiting, and the way in ---- */}
-        <div style={{
-          width: wide ? RAIL : '100%', flex: '0 0 auto',
-          position: wide ? 'sticky' : 'static', top: 24,
-          marginBottom: wide ? 0 : 22,
-        }}>
-          <div style={{ marginBottom: 5 }}><Eyebrow>Mark Bank · exam practice</Eyebrow></div>
-          <h2 style={{ font: `700 24px/1.15 ${SERIF}`, color: INK, margin: '0 0 3px' }}>
-            {subject.title}
-          </h2>
-          <Eyebrow>{LEVEL_LABEL[level]} level · {subject.spec}</Eyebrow>
-
+        <aside className="lp-mark-rail">
           {/* alignItems, or the pills stretch: a flex column stretches its
               children by default, which overrides the Segment's own inline-flex
               and leaves the options huddled at the left end of a 664px pill. */}
@@ -556,17 +499,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
           }}>
             <div style={{ width: '100%' }}>
               <div style={{ marginBottom: 6 }}><Eyebrow>Subject</Eyebrow></div>
-              <Segment
-                wrap
-                options={SUBJECTS.map(s => ({
-                  value: s.id,
-                  label: s.title,
-                  empty: deckSize(s.id, level) === 0,
-                  markerColor: getSubjectHex(s.title),
-                }))}
-                value={subjectId}
-                onChange={chooseSubject}
-              />
+              <SubjectPicker value={subjectId} options={SUBJECTS.map(s => ({ value:s.id, label:s.title }))} onChange={value => { chooseSubject(value); setTopicQuery(''); setStrandFilter('all'); }} />
             </div>
             {/* A subject examined at ONE level is offered no choice: showing
                 a Higher/Ordinary pill for LCVP would invite a student to pick
@@ -587,6 +520,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             )}
           </div>
 
+          <label className="block mt-5"><span className="sr-only">Find a Mark Bank topic</span><input type="search" className="lp-search" placeholder="Find a topic" value={topicQuery} onChange={event => setTopicQuery(event.target.value)} /></label>
+          <nav className="lp-mark-strands" aria-label="Topic groups"><button aria-pressed={strandFilter === 'all'} onClick={() => setStrandFilter('all')}>All {subject.title}</button>{strands.map(strand => <button key={strand.id} aria-pressed={strandFilter === strand.id} onClick={() => setStrandFilter(strand.id)}>{strand.title}</button>)}</nav>
+        </aside>
+        <section className="min-w-0">
+          <div className="lp-panel lp-practice-entry"><p className="lp-eyebrow">{subject.title} · {LEVEL_LABEL[level]}</p><h2 className="lp-title">{dueCount > 0 ? 'Your next practice.' : 'Make a start today.'}</h2>
+          <div className="flex gap-8 text-sm mb-2"><span><strong className="block text-xl">{cards.length}</strong>question cards</span><span><strong className="block text-xl">{coveredTopics} / {totalTopics}</strong>topics with cards</span></div>
           {!online && (
             <StatusNotice title="Working offline" className="mt-[18px]">
               Reviews stay on this device and will sync when you reconnect.
@@ -620,7 +559,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
               </p>
               {dueCount === 0 && (
                 <p style={{ margin: '6px 0 0', font: `400 13px/1.5 ${SANS}`, color: MUTED }}>
-                  That&rsquo;s the schedule doing its job, not you slacking.
+                  Choose a topic or start a fresh practice.
                   {nextReturn && Number.isFinite(nextReturn) && (
                     <> Next one back {new Date(nextReturn).toLocaleDateString('en-IE', { weekday: 'long' })}.</>
                   )}
@@ -629,7 +568,6 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
 
               {dueCount > 0 ? (
                 <PrimaryActionButton
-                  autoFocus
                   label={`Start today's ${Math.min(dueCount, MARK_BANK_SESSION_SIZE)}`}
                   onClick={() => startSession()}
                   className={`w-full ${wide ? '' : 'max-w-80'} mt-3.5`}
@@ -637,9 +575,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
               ) : (
                 <button
                   type="button"
-                  autoFocus
                   onClick={() => startSession()}
-                  className={`min-h-12 rounded-xl border border-[#E5E1DB] bg-white px-5 py-3 text-sm font-semibold text-[var(--text-body)] transition-colors hover:border-[rgba(var(--accent),0.35)] hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.38)] focus-visible:ring-offset-2 dark:border-zinc-700 dark:bg-zinc-900 ${wide ? 'w-full' : 'w-full max-w-80'} mt-3.5`}
+                  className="lp-button w-full mt-4"
                 >
                   Start a practice session
                 </button>
@@ -656,12 +593,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
               )}
             </>
           )}
-        </div>
-
+          </div>
+          <h2 className="lp-title mt-7">Or choose a topic</h2>
         {/* ---- the list: one card, aligned columns, hairlines not boxes ---- */}
         {!cardsError && !levelUnbuilt && (
           <div style={{
-            width: wide ? LIST : '100%', flex: '0 0 auto', maxWidth: '100%',
+            width: '100%', flex: '0 0 auto', maxWidth: '100%',
             background: 'var(--mb-paper)', border: `1px solid ${MUTED_BORDER}`, borderRadius: 16, overflow: 'hidden',
             boxShadow: '0 12px 34px rgba(38, 32, 27, .055)',
           }}>
@@ -675,7 +612,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                   </div>
                 ))}
               </div>
-            ) : visibleStrands.map((strand, si) => (
+            ) : visibleStrands.filter(strand => strandFilter === 'all' || strand.id === strandFilter).map(strand => ({ ...strand, topics: strand.topics.filter(topic => topic.title.toLowerCase().includes(topicQuery.trim().toLowerCase())) })).filter(strand => strand.topics.length > 0).map((strand, si) => (
               <section key={strand.id} id={`strand-${strand.id}`}>
                 <div style={{
                   height: 44, display: 'flex', alignItems: 'center', gap: 9,
@@ -789,6 +726,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             ))}
           </div>
         )}
+        </section>
       </div>
 
       {!loaded && uid && (

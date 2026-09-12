@@ -96,7 +96,8 @@ describe('app audit regressions', () => {
     expect(router).toContain('aria-label="Back to modules"');
     expect(shop).toContain("'Close Island Shop'");
     expect(profile).toContain('aria-label="Close profile"');
-    expect(catchUp).toContain('aria-pressed={levelFilter === lv}');
+    expect(catchUp).toContain('aria-label="Catch-Up level"');
+    expect(catchUp).toContain('value={levelFilter}');
     // The level filter is the shared pill tab control now (role=tab / aria-selected), not hand-rolled aria-pressed buttons.
     expect(commandWords).toContain("import HorizontalTabs from '../ui/HorizontalTabs'");
     expect(commandWords).toContain('value={levelFilter}');

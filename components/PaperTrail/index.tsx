@@ -19,6 +19,7 @@
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, Bookmark, Search } from 'lucide-react';
+import ToolMasthead from '../launchpad/ToolMasthead';
 import PaperSelection, { LEVEL_LABEL, paperLabel } from './PaperSelection';
 import './archive.css';
 import { baseName, displayName } from '../shared/subjectNames';
@@ -209,6 +210,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const [level, setLevel] = useState<PaperLevel | null>(null);
   const [lang, setLang] = useState<PaperLang | null>(null);
   const [year, setYear] = useState<number | null>(null);
+  const [desktopArchive, setDesktopArchive] = useState(() => typeof window !== 'undefined' && window.matchMedia('(min-width: 900px)').matches);
+  useEffect(() => {const media = window.matchMedia('(min-width: 900px)');const update = () => setDesktopArchive(media.matches);media.addEventListener('change', update);return () => media.removeEventListener('change',update);}, []);
   const [scope, setScope] = useState<'mine' | 'all'>('mine');
   const [query, setQuery] = useState('');
   // Learning-milestone celebration — detected once at mount, shown one at a time.
@@ -452,6 +455,16 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     [openItem],
   );
 
+  const subjects = [...groups.main, ...groups.lca];
+  const visibleSubjects = scope === 'mine' ? subjects.filter(s => groups.mineIds.includes(s.id)) : subjects;
+  const pickSubject = (id: string, selectedYear?: number, selectedLevel?: PaperLevel) => {
+    setQuery('');
+    setYear(selectedYear ?? null);
+    setLevel(selectedLevel ?? null);
+    setLang(null);
+    setView({ v: 'subject', subjectId: id });
+  };
+
   if (!isLoaded) {
     return <LoadingState label="Opening the Paper Trail" />;
   }
@@ -643,8 +656,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   }
 
   // ═══════════════════════ SUBJECT ═══════════════════════
-  if (view.v === 'subject') {
-    const subj = subjectById.get(view.subjectId)!;
+  if (view.v === 'subject' || (desktopArchive && view.v === 'home' && subjects.length > 0)) {
+    const subj = subjectById.get(view.v === 'subject' ? view.subjectId : (visibleSubjects[0] ?? subjects[0]).id)!;
     const entries = PAPER_TRAIL_INDEX[subj.id] ?? [];
     const activeLevel: PaperLevel =
       level && subj.levels.includes(level)
@@ -680,8 +693,19 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const activeYear = year && availableYears.includes(year) ? year : availableYears[0];
     const entry = slice.find(e => e.year === activeYear);
     const requestedMissing = year != null && !availableYears.includes(year) && availableYears.length > 0;
+    const matchingSubjects = visibleSubjects.filter(s => paperTrailSubjectLabel(s).toLowerCase().includes(query.toLowerCase().trim()));
 
-    return <PaperSelection
+    return <section className="pt-archive pt-master-detail">
+      <nav className="pt-toolbar"><button className="pt-text-button" onClick={onBack}><ArrowLeft size={18} /> Tools</button><button className="pt-text-button" onClick={() => setView({v:'saved'})}><Bookmark size={18} /> Saved</button></nav>
+      <div className="pt-desktop-mast"><ToolMasthead tool="paper-trail" eyebrow="Your exam archive" title="Paper Trail." subtitle="Exam papers & marking schemes." /></div>
+      <div className="pt-master-grid">
+        <aside className="pt-subject-rail"><input type="search" className="lp-search" aria-label="Find a subject" placeholder="Find a subject" value={query} onChange={e => setQuery(e.target.value)} />
+          <HorizontalTabs className="my-4" variant="pill" size="sm" label="Subject selection" value={scope} onChange={next => setScope(next as 'mine' | 'all')} options={[{value:'mine',label:'My subjects'},{value:'all',label:'All subjects'}]} />
+          <div className="pt-rail-subjects">{matchingSubjects.map(s => <button key={s.id} aria-pressed={subj.id === s.id} onClick={() => pickSubject(s.id)}><span>{paperTrailSubjectLabel(s)}</span><ArrowRight size={16} /></button>)}</div>
+          {!matchingSubjects.length && <p className="lp-body py-4">{query.trim() ? 'No matching subjects. Try another name.' : 'No subjects in your profile yet. Browse all subjects to get started.'}</p>}
+          <button className="pt-topic-link" onClick={() => setView({v:'revise'})}>Topic Atlas <ArrowRight size={17} /></button><button className="pt-topic-link" onClick={() => setView({v:'practice'})}>Practice tools <ArrowRight size={17} /></button>
+        </aside>
+        <PaperSelection
       key={subj.id}
       uid={uid} subject={subj} label={paperTrailSubjectLabel(subj)}
       level={activeLevel} lang={activeLang} langs={langsAtLevel}
@@ -694,7 +718,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       onSave={handleTogglePin}
       onBack={() => { setView({ v: 'home' }); setYear(null); }}
       onTopics={() => setView({ v: 'revise' })}
-    />;
+    />
+      </div>
+    </section>;
   }
 
   // Saved records always resolve against the live index before being offered.
@@ -848,26 +874,13 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
   </section>;
 
-  const subjects = [...groups.main, ...groups.lca];
-  const visibleSubjects = scope === 'mine' ? subjects.filter(s => groups.mineIds.includes(s.id)) : subjects;
-  const pickSubject = (id: string, selectedYear?: number, selectedLevel?: PaperLevel) => {
-    setQuery('');
-    setYear(selectedYear ?? null);
-    setLevel(selectedLevel ?? null);
-    setLang(null);
-    setView({ v: 'subject', subjectId: id });
-  };
-
   return <section className="pt-archive pt-home" aria-label="Paper Trail archive">
     {milestone && <MilestoneCelebration milestone={milestone} dateIso={new Date().toISOString().slice(0, 10)} onClose={dismissMilestone} />}
     <nav className="pt-toolbar" aria-label="Paper Trail">
       <button className="pt-text-button" onClick={onBack}><ArrowLeft size={20} aria-hidden /> Tools</button>
       <button className="pt-text-button" onClick={() => setView({ v: 'saved' })}><Bookmark size={18} aria-hidden /> Saved</button>
     </nav>
-    <header className="pt-hero">
-      <div><p className="pt-eyebrow">Your exam archive</p><h1 className="pt-title">Paper Trail</h1><p className="pt-subtitle">Exam papers &amp; marking schemes</p></div>
-      <img src="/assets/tools/paper-trail.png" alt="" width={96} height={96} />
-    </header>
+    <ToolMasthead tool="paper-trail" eyebrow="Your exam archive" title="Paper Trail." subtitle="Exam papers & marking schemes." />
     <div className="pt-search-area" ref={searchBoxRef}>
       <label className="pt-search"><Search size={20} aria-hidden /><input type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="Find a subject or paper" aria-label="Find a subject or paper" aria-controls={suggestions ? 'pt-search-results' : undefined} /></label>
       {suggestions && <div id="pt-search-results" className="pt-search-results" aria-label="Search results">

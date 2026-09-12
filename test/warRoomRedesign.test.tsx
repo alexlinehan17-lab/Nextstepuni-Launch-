@@ -139,10 +139,9 @@ describe('War Room minimalist workspace', () => {
     const onStudyNow = vi.fn();
     renderWarRoom({ onStudyNow });
 
-    expect(await screen.findByRole('heading', { name: 'What matters now' })).toBeInTheDocument();
+    expect(await screen.findByRole('region', { name: 'War Room strategy workspace' })).toBeInTheDocument();
     expect(screen.getByRole('tab', { name: 'Focus' })).toHaveAttribute('aria-selected', 'true');
     expect(screen.getByRole('heading', { name: 'Geography' })).toBeInTheDocument();
-    expect(screen.getByText('Start here')).toBeInTheDocument();
 
     const studyActions = screen.getAllByRole('button', { name: 'Start a 45-minute session' });
     expect(studyActions).toHaveLength(1);
@@ -550,7 +549,7 @@ describe('War Room minimalist workspace', () => {
       />,
     );
 
-    expect(await screen.findByRole('heading', { name: 'What matters now' })).toBeInTheDocument();
+    expect(await screen.findByRole('region', { name: 'War Room strategy workspace' })).toBeInTheDocument();
     expect(screen.queryByText(/days to exams/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/current points/i)).not.toBeInTheDocument();
 
