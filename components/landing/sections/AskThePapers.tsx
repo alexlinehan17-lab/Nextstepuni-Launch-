@@ -112,8 +112,8 @@ const AskThePapers: React.FC = () => {
           <div className="lg:col-span-4 lg:pt-2 min-w-0">
             <Eyebrow>{TEXT.eyebrow}</Eyebrow>
             <div className="mt-5"><Guesswork /></div>
-            <Body className="mt-6" style={{ maxWidth: '32ch', fontSize: 18, fontWeight: 500, lineHeight: 1.45, color: L.ink }}>{TEXT.lead}</Body>
-            <Body className="mt-3" style={{ maxWidth: '40ch' }}>{TEXT.body}</Body>
+            <Body style={{ marginTop: 20, maxWidth: '32ch', fontSize: 18, fontWeight: 500, lineHeight: 1.45, color: L.ink }}>{TEXT.lead}</Body>
+            <Body style={{ marginTop: 12, maxWidth: '40ch' }}>{TEXT.body}</Body>
           </div>
 
           <div className="lg:col-span-8 min-w-0">
