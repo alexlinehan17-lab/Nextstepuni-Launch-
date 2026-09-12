@@ -118,3 +118,36 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     expect(duration).toHaveAttribute('aria-invalid', 'false');
   });
 });
+
+describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
+  beforeEach(() => {
+    mocks.mobile = mobile;
+    mocks.phase = 'idle';
+    mocks.startSession.mockReset();
+  });
+
+  test('prefills a timetable block and starts with the edited type and duration', () => {
+    render(
+      <StudySessionView
+        user={createDemoStudentSession()}
+        studentProfile={null}
+        userProgress={{}}
+        allCourses={[]}
+        pointsReload={vi.fn()}
+        streak={{ currentStreak: 0, longestStreak: 0, lastActiveDate: '' }}
+        onBack={vi.fn()}
+        dismissedGuides={{ 'points-explainer': 'seen' }}
+        todayBlocks={[{ subject: 'Mathematics', sessionType: 'revision', durationMinutes: 45, dateKey: '2026-09-12', blockId: 'sample-block' }]}
+      />,
+    );
+    expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
+    fireEvent.click(screen.getByRole('button', { name: 'Set up Mathematics, 45 minutes' }));
+    expect(screen.getByRole('button', { name: '45 min' })).toHaveAttribute('aria-pressed', 'true');
+    fireEvent.click(screen.getByRole('button', { name: 'Practice Work through questions' }));
+    fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '3' } });
+    expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
+    fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '35' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    expect(mocks.startSession).toHaveBeenCalledWith('Mathematics', 'practice', 35);
+  });
+});
