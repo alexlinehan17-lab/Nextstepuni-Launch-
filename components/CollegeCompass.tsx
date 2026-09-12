@@ -14,6 +14,7 @@
  * maths / course matching is pushed OUT to Future Finder, the CAO Points
  * Simulator and Points Passport via cross-links.
  */
+import ToolMasthead from './launchpad/ToolMasthead';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import {
@@ -32,20 +33,7 @@ import DareGate from './collegeCompass/DareGate';
 import MoneySorter from './collegeCompass/MoneySorter';
 import OpenDoor from './collegeCompass/OpenDoor';
 import DocumentChecklist from './collegeCompass/DocumentChecklist';
-import {
-  JOURNEY_STOPS,
-  HERO_COPY,
-  RESTRICTED_COURSE_TYPES,
-  COMPASS_SOURCES,
-  CYCLE_NOTE,
-  COMPASS_LAST_VERIFIED,
-  computeStopStates,
-  itemStatus,
-  type CompassMode,
-  type JourneyStop,
-  type StopState,
-  type StopStatus,
-} from '../collegeCompassData';
+import { JOURNEY_STOPS, RESTRICTED_COURSE_TYPES, COMPASS_SOURCES, CYCLE_NOTE, COMPASS_LAST_VERIFIED, computeStopStates, itemStatus, type CompassMode, type JourneyStop, type StopState, type StopStatus } from '../collegeCompassData';
 
 // Colleges worth offering as "target" chips (exclude the FET/apprenticeship
 // catch-alls that aren't single institutions).
@@ -407,8 +395,6 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
     setTargetInstitutions(targetCodes.includes(code) ? targetCodes.filter(c => c !== code) : [...targetCodes, code]);
   };
 
-  const hero = HERO_COPY[mode];
-
   const embeddedFor = (stopId: string): React.ReactNode => {
     if (stopId === 'lock-in') return <RestrictedCheck />;
     if (stopId === 'access-window') {
@@ -432,15 +418,11 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto pb-12">
+    <div className="lp-compass w-full max-w-6xl mx-auto pb-12">
       {/* ── Hero ── */}
-      <header className="pt-5 sm:pt-8 pb-6 sm:pb-8 border-b border-[var(--border-soft)]">
-        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-2xl">
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ink-secondary)]">{hero.eyebrow}</p>
-            <h1 className="mt-2 font-serif text-4xl sm:text-5xl font-bold tracking-[-0.035em] text-[var(--ink-primary)] leading-[0.95]">{hero.title}</h1>
-            <p className="mt-3 text-sm sm:text-base text-[var(--ink-secondary)] leading-relaxed max-w-xl">{hero.tagline}</p>
-          </div>
+      <header className="lp-compass-header">
+        <div className="flex flex-col gap-3">
+          <ToolMasthead tool="college-compass" eyebrow="Your application year" title="College Compass." subtitle="The dates that matter. A clear next step." />
           <div className="flex flex-wrap items-center gap-2 md:justify-end">
             <span className="inline-flex items-center rounded-full border border-[var(--border-soft)] px-3 py-2 text-xs font-semibold text-[var(--ink-primary)]">
               {entryYear} entry
@@ -498,7 +480,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
       </header>
 
       {/* ── One year, at a glance ── */}
-      <section aria-labelledby="compass-timeline-heading" className="pt-6 sm:pt-8">
+      <section aria-labelledby="compass-timeline-heading" className="lp-compass-timeline pt-6 sm:pt-8">
         <div className="flex items-end justify-between gap-4 px-1">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-secondary)]">Your application year</p>
@@ -595,7 +577,7 @@ const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examSta
       )}
 
       {/* ── One focused workspace ── */}
-      <div ref={workspaceRef} className="mt-6 sm:mt-8" style={{ scrollMarginTop: '110px' }}>
+      <div ref={workspaceRef} className="lp-compass-workspace mt-6 sm:mt-8" style={{ scrollMarginTop: '110px' }}>
         <MilestonePanel
           key={selectedStop.id}
           stop={selectedStop}

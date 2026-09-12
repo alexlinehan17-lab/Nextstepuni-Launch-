@@ -1,6 +1,6 @@
 import React from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { cleanup, render, screen, waitFor } from "@testing-library/react";
+import { cleanup, render, screen, waitFor, fireEvent } from "@testing-library/react";
 import Lenis from "lenis";
 import Viewer from "../components/PaperTrail/Viewer";
 vi.mock("../components/PaperTrail/pdfjsLoader", () => ({
@@ -85,5 +85,22 @@ describe("Paper Trail previews", () => {
       }),
     ).toHaveAttribute("aria-pressed", "false");
     expect(fetch).not.toHaveBeenCalled();
+  });
+});
+
+
+describe('Paper Trail desktop question workspace', () => {
+  it('keeps Paper/Scheme switching available beside the answer workspace', () => {
+    const matchMedia = vi.spyOn(window, 'matchMedia').mockImplementation(query => ({matches:query === '(min-width: 768px)', media:query, onchange:null, addListener:vi.fn(), removeListener:vi.fn(), addEventListener:vi.fn(), removeEventListener:vi.fn(), dispatchEvent:vi.fn()}));
+    try {
+      render(<Viewer title="Test paper" paper={paper} scheme={scheme} answersUrl="/answer-map.json" initialAnswersOn onClose={() => {}} />);
+      expect(screen.getByRole('complementary', {name:'Question workspace'})).toBeInTheDocument();
+      expect(screen.getByRole('tab', {name:'Paper'})).toHaveAttribute('aria-selected','true');
+      fireEvent.click(screen.getByRole('tab', {name:'Scheme'}));
+      expect(screen.getByRole('tab', {name:'Scheme'})).toHaveAttribute('aria-selected','true');
+      expect(screen.queryByRole('complementary', {name:'Question workspace'})).not.toBeInTheDocument();
+      fireEvent.click(screen.getByRole('tab', {name:'Paper'}));
+      expect(screen.getByRole('complementary', {name:'Question workspace'})).toBeInTheDocument();
+    } finally {matchMedia.mockRestore();}
   });
 });

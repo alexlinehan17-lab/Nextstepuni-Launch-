@@ -14,22 +14,22 @@
  * coloured left borders (status shown via dots / fills / text).
  */
 
+import ToolMasthead from '../launchpad/ToolMasthead';
+import SubjectPicker from '../launchpad/SubjectPicker';
+import LaunchpadSelect from '../launchpad/LaunchpadSelect';
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import {
-  ArrowLeft, ArrowRight, Check, CheckCircle2, Circle, RotateCcw,
-  Sparkles, BookOpenCheck,
-} from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, RotateCcw, Sparkles, BookOpenCheck } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useCatchUpLane } from '../../hooks/useCatchUpLane';
 import { useInnovationData } from '../../contexts/InnovationDataContext';
 import { RECOVERY_CARDS, cardsForSubject, subjectsWithContent } from '../../catchUpLaneData';
-import { FIRST_WEEK } from '../../comebackData';
+
 import { type RecoveryCard } from '../../types/catchUpLane';
 import { CURRICULUM_SPECIFICATIONS } from '../../curriculumRegistry';
-import SubjectTilePicker from '../shared/SubjectTilePicker';
+
 import { baseName, displayName } from '../shared/subjectNames';
 import Comeback from './Comeback';
 import { figureUrl } from '../../utils/figureUrl';
@@ -54,7 +54,7 @@ CURRICULUM_SPECIFICATIONS.forEach((specification) => specification.groups.forEac
 /** topicId → strand id by dropping the last segment (the subtopic index).
  *  'biology-2-3' → 'biology-2'; 'home-economics-0-1' → 'home-economics-0'
  *  (handles hyphenated subject ids, which slicing the first 2 parts did not). */
-const strandIdOf = (topicId: string) => topicId.split('-').slice(0, -1).join('-');
+
 
 const fade = {
   initial: { opacity: 0, y: 10 },
@@ -68,7 +68,8 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
   const { topicMastery } = useInnovationData();
 
   // Which arm: the hub chooser, the content arm (arm 1), or the comeback arm (arm 2).
-  const [arm, setArm] = useState<'hub' | 'content' | 'comeback'>('hub');
+  const [topicQuery, setTopicQuery] = useState('');
+  const [arm, setArm] = useState<'hub' | 'content' | 'comeback'>('content');
   const [view, setView] = useState<View>('home');
   const [subjectId, setSubjectId] = useState<string | null>(null);
   const [cardId, setCardId] = useState<string | null>(null);
@@ -79,7 +80,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
   const [levelFilter, setLevelFilter] = useState<'higher' | 'ordinary'>('higher');
   const matchesLevel = (c: RecoveryCard) => c.level === 'common' || c.level === levelFilter;
   // Subject-picker scope: just the student's chosen subjects, or every subject in their cycle.
-  const [scope, setScope] = useState<'mine' | 'all'>('mine');
+
 
   const recovered = useMemo(() => new Set(state.recoveredTopicIds), [state.recoveredTopicIds]);
   const shaky = useMemo(() => new Set(state.shakyTopicIds), [state.shakyTopicIds]);
@@ -96,16 +97,12 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
     [studentSubjects],
   );
   // Subjects the student takes that we don't have content for yet (honest "coming soon").
-  const comingSoon = useMemo(
-    () => (studentSubjects ?? []).filter(
-      name => !available.some(a => baseName(a.subjectLabel) === baseName(name)),
-    ),
-    [studentSubjects, available],
-  );
 
-  const subjectCards = subjectId ? cardsForSubject(subjectId).filter(matchesLevel) : [];
+
+  const activeSubjectId = available.some(s => s.subjectId === subjectId) ? subjectId! : (available.find(s => studentSet.has(baseName(s.subjectLabel))) ?? available[0])?.subjectId;
+  const subjectCards = activeSubjectId ? cardsForSubject(activeSubjectId).filter(matchesLevel) : [];
   const card = cardId ? RECOVERY_CARDS.find(c => c.id === cardId) ?? null : null;
-  const recoveredCount = recovered.size;
+
 
   // Denominator for the "caught up so far" bar: the unique TOPICS recoverable
   // for the student's own subjects at the selected level — not RECOVERY_CARDS
@@ -126,12 +123,10 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
     () => state.recoveredTopicIds.filter(id => catchUpTopicUniverse.has(id)).length,
     [state.recoveredTopicIds, catchUpTopicUniverse],
   );
-  const caughtUpPercent = catchUpTopicUniverse.size > 0
-    ? Math.min(100, Math.round((recoveredInUniverse / catchUpTopicUniverse.size) * 100))
-    : 0;
+
 
   // ── navigation ──
-  const openSubject = (sid: string) => { setSubjectId(sid); setView('queue'); };
+
   const openCard = (c: RecoveryCard) => {
     setCardId(c.id);
     setBeat('gist');
@@ -170,203 +165,26 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
     );
   }
 
-  // ───────────────────────── HUB (two arms) ─────────────────────────
-  if (arm === 'hub') {
-    const cb = state.comeback;
-    // Where the student is in their First-Week-Back walk (null = complete).
-    const fwCurrent = cb ? (FIRST_WEEK.find(d => !cb.firstWeek?.days[d.day]?.doneAt) ?? null) : null;
-    const fwComplete = cb != null && fwCurrent === null;
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        {/* Saved comeback plan, surfaced on the home (one tap away) */}
-        {cb && (
-          <button
-            onClick={() => setArm('comeback')}
-            className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 p-4 mb-4 flex items-center gap-3.5 transition-transform hover:-translate-y-0.5 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
-            style={{ backgroundColor: CYAN_TINT }}
-          >
-            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0"><Check size={18} strokeWidth={3} style={{ color: CYAN }} /></div>
-            <div className="flex-1 min-w-0">
-              <p className="text-[13px] font-semibold" style={{ color: '#1a1a1a' }}>{fwComplete ? 'Your first week back — complete' : `Day ${fwCurrent?.day} of your first week back`}</p>
-              <p className="text-[12px] truncate" style={{ color: CYAN_DARK_TEXT }}>{fwComplete ? 'Nice work — tap to look back' : `Today: ${fwCurrent?.title}`}</p>
-            </div>
-            <ArrowRight size={18} style={{ color: CYAN }} className="shrink-0" />
-          </button>
-        )}
-
-        {/* Arm 1 — catch up on content */}
-        <button
-          onClick={() => { setArm('content'); setView('home'); }}
-          className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5 mb-3 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
-        >
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><img src="/assets/tools/exam-reps.png" alt="" className="w-16 h-16 object-contain" /></div>
-          <div className="flex-1 min-w-0">
-            <p className="text-lg font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>Catch up on what you missed</p>
-            <p className="text-[13px] text-zinc-500">Short subject pieces for the classes you missed{recoveredCount > 0 ? ` · ${recoveredCount} recovered` : ''}.</p>
-          </div>
-          <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
-        </button>
-
-        {/* Arm 2 — comeback */}
-        <button
-          onClick={() => setArm('comeback')}
-          className="w-full text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-5 flex items-center gap-4 transition-transform hover:-translate-y-0.5"
-        >
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: CYAN_TINT }}><img src="/assets/catch-up-comeback.png" alt="" className="w-16 h-16 object-contain" /></div>
-          <div className="flex-1 min-w-0">
-            <p className="text-lg font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>Your comeback</p>
-            <p className="text-[13px] text-zinc-500">{cb ? (fwComplete ? 'Your first week back — complete. Tap to look back.' : `Day ${fwCurrent?.day} of 5: ${fwCurrent?.title}`) : 'Make the first day back feel smaller — build your plan.'}</p>
-          </div>
-          <ArrowRight size={18} className="text-zinc-300 dark:text-zinc-600 shrink-0" />
-        </button>
-      </div>
-    );
-  }
-
-  // ───────────────────────── HOME (arm 1: content) ─────────────────────────
-  if (view === 'home') {
-    // Picker inputs: cycle/level-filtered subjects sorted by display label, with
-    // the caught-up count in the sublabel; mineIds drives the My/All toggle.
-    const sortedSubjects = available
-      .slice()
-      .sort((a, b) => displayName(a.subjectLabel).localeCompare(displayName(b.subjectLabel)));
-    const pickerSubjects = sortedSubjects.map(s => {
-      const done = cardsForSubject(s.subjectId).filter(matchesLevel).filter(c => recovered.has(c.topicId)).length;
-      return {
-        id: s.subjectId,
-        label: displayName(s.subjectLabel),
-        sublabel: done > 0 ? `${done}/${s.count} caught up` : `${s.count} ${s.count === 1 ? 'topic' : 'topics'}`,
-      };
-    });
-    const mineIds = sortedSubjects.filter(s => studentSet.has(baseName(s.subjectLabel))).map(s => s.subjectId);
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={() => setArm('hub')} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4">
-          <ArrowLeft size={15} /> Catch-Up Lane
-        </button>
-        {/* Reassurance intro */}
-        <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
-          Missed a few classes? It happens — and it’s fixable. Pick a subject and we’ll get you back on track,
-          one quick topic at a time. No catch-up is too small.
-        </p>
-
-        {/* Higher / Ordinary level filter */}
-        <div className="flex items-center gap-2.5 mb-5">
-          <span className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>Your level</span>
-          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Question level">
-            {(['higher', 'ordinary'] as const).map(lv => (
-              <button
-                key={lv}
-                onClick={() => setLevelFilter(lv)}
-                aria-pressed={levelFilter === lv}
-                className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${levelFilter === lv ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
-              >
-                {lv === 'higher' ? 'Higher' : 'Ordinary'}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Progress (only once they've recovered something) */}
-        {recoveredCount > 0 && (
-          <div className="rounded-2xl p-5 mb-6" style={{ backgroundColor: CYAN_TINT }}>
-            <div className="flex items-baseline justify-between mb-2">
-              <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: CYAN_DARK_TEXT }}>Caught up so far</span>
-              <span className="text-[11px] font-semibold" style={{ color: CYAN_DARK_TEXT }}>≈{marksProtected} marks back in reach</span>
-            </div>
-            <p className="text-2xl font-semibold mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-              {recoveredCount} {recoveredCount === 1 ? 'topic' : 'topics'} recovered
-            </p>
-            <div className="h-2.5 rounded-full overflow-hidden" style={{ backgroundColor: '#ffffff' }}>
-              <div className="h-full rounded-full transition-all" style={{ width: `${caughtUpPercent}%`, backgroundColor: CYAN }} />
-            </div>
-          </div>
-        )}
-
-        {/* My / All toggle (only when the student has subjects with content in
-            this cycle) + subject tiles in the exact year-selection card style. */}
-        <SubjectTilePicker
-          headingLabel="Pick a subject to catch up on"
-          subjects={pickerSubjects}
-          mineIds={mineIds}
-          scope={scope}
-          onScopeChange={setScope}
-          onPick={openSubject}
-        />
-
-        {comingSoon.length > 0 && (
-          <p className="text-[12px] leading-relaxed mt-5" style={{ color: '#9e9186' }}>
-            More of your subjects are on the way{comingSoon.length <= 4 ? `: ${comingSoon.join(', ')}` : ''}. We’re adding
-            them subject by subject.
-          </p>
-        )}
-      </div>
-    );
-  }
-
-  // ───────────────────────── QUEUE ─────────────────────────
-  if (view === 'queue' && subjectId) {
-    const subjLabel = subjectCards[0]?.subjectLabel ?? '';
-    const done = subjectCards.filter(c => recovered.has(c.topicId)).length;
-    const rank = (c: RecoveryCard) => recovered.has(c.topicId) ? 2 : shaky.has(c.topicId) ? 0 : 1;
-    // Group topics under their syllabus category (strand), in curriculum order.
-    // Within a category: shaky first, then not-started, then recovered.
-    const byStrand = new Map<string, RecoveryCard[]>();
-    for (const c of subjectCards) {
-      const sid = strandIdOf(c.topicId);
-      const arr = byStrand.get(sid) ?? (byStrand.set(sid, []), byStrand.get(sid)!);
-      arr.push(c);
-    }
-    const groups = [...byStrand.entries()]
-      .sort((a, b) => (STRAND_INFO.get(a[0])?.order ?? 99) - (STRAND_INFO.get(b[0])?.order ?? 99))
-      .map(([sid, cards]) => ({ sid, name: STRAND_INFO.get(sid)?.name ?? sid, cards: [...cards].sort((x, y) => rank(x) - rank(y)) }));
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4">
-          <ArrowLeft size={15} /> All subjects
-        </button>
-
-        <div className="flex items-baseline justify-between mb-1">
-          <h2 className="text-2xl font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{subjLabel}</h2>
-          <span className="text-[12px] font-semibold" style={{ color: CYAN_DARK_TEXT }}>{done} of {subjectCards.length} caught up</span>
-        </div>
-        <p className="text-[13px] mb-5" style={{ color: '#7a7068' }}>Tap a topic you missed. Each one’s about three minutes.</p>
-
-        <div className="space-y-5">
-          {groups.map(({ sid, name, cards }) => (
-            <div key={sid}>
-              <h3 className="text-[12px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: CYAN_DARK_TEXT }}>{name}</h3>
-              <div className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] overflow-hidden">
-                {cards.map((c, i) => {
-                  const isRec = recovered.has(c.topicId);
-                  const isShaky = shaky.has(c.topicId);
-                  return (
-                    <button
-                      key={c.id}
-                      onClick={() => openCard(c)}
-                      className={`w-full text-left flex items-center gap-3 px-4 py-3.5 transition-colors hover:bg-zinc-50 dark:hover:bg-white/[0.04] ${i > 0 ? 'border-t border-zinc-100 dark:border-zinc-800' : ''}`}
-                    >
-                      {isRec
-                        ? <CheckCircle2 size={20} style={{ color: COLORS.success }} className="shrink-0" />
-                        : isShaky
-                          ? <RotateCcw size={18} style={{ color: CYAN }} className="shrink-0" />
-                          : <Circle size={20} className="text-zinc-300 dark:text-zinc-600 shrink-0" />}
-                      <div className="flex-1 min-w-0">
-                        <p className={`text-[15px] font-medium ${isRec ? 'text-zinc-400 dark:text-zinc-500' : 'text-zinc-800 dark:text-zinc-100'}`}>{c.focus ?? c.topicLabel}</p>
-                        {isShaky && <p className="text-[11px]" style={{ color: CYAN_DARK_TEXT }}>Marked to revisit</p>}
-                      </div>
-                      {isRec
-                        ? <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: COLORS.success }}>Recovered</span>
-                        : <ArrowRight size={16} className="text-zinc-300 dark:text-zinc-600 shrink-0" />}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
+  if (view !== 'unit') {
+    const filteredCards = subjectCards.filter(c => `${c.focus ?? ''} ${c.topicLabel}`.toLowerCase().includes(topicQuery.toLowerCase().trim()));
+    const pickerOptions = available.map(s => ({value:s.subjectId,label:displayName(s.subjectLabel),detail:`${s.count} topics`}));
+    return <div className="pb-12">
+      <ToolMasthead tool="catch-up-lane" eyebrow="Pick up where you left off" title="Catch-Up Lane." subtitle="One topic. A short lesson. A quick check." />
+      <div className="lp-library"><aside>
+        <SubjectPicker value={activeSubjectId ?? ''} options={pickerOptions} onChange={value => {setSubjectId(value);setTopicQuery('');}} />
+        <LaunchpadSelect className="w-full mt-3" aria-label="Catch-Up level" value={levelFilter} onChange={e => setLevelFilter(e.target.value as 'higher' | 'ordinary')}><option value="higher">Higher level</option><option value="ordinary">Ordinary level</option></LaunchpadSelect>
+        <p className="lp-body mt-4">{recoveredInUniverse} of {catchUpTopicUniverse.size} topics caught up across your subjects.</p>
+        <button className="lp-catch-comeback" onClick={() => setArm('comeback')}>{state.comeback ? 'Open your comeback plan' : 'Need a wider reset? Your comeback'} <ArrowRight size={16} /></button>
+      </aside><section>
+        <div className="lp-catch-heading"><h2 className="lp-title">{pickerOptions.find(s => s.value === activeSubjectId)?.label ?? 'Choose a subject'}</h2><span className="lp-body">Short lessons · Quick checks</span></div>
+        <input className="lp-search mb-5" type="search" aria-label="Find the topic you missed" placeholder="Find the topic you missed" value={topicQuery} onChange={e => setTopicQuery(e.target.value)} />
+        <div className="lp-lesson-grid">{filteredCards.map((c,index) => <article className="lp-lesson" key={c.id}>
+          <span className="lp-eyebrow">{String(index+1).padStart(2,'0')} · {recovered.has(c.topicId) ? 'Recovered' : shaky.has(c.topicId) ? 'To revisit' : 'Short lesson'}</span><h3>{c.focus ?? c.topicLabel}</h3>
+          <button onClick={() => openCard(c)}>Start lesson <span>3 min <ArrowRight size={16} /></span></button>
+        </article>)}</div>
+        {!filteredCards.length && <p className="lp-body py-6">{available.length ? 'No matching topics. Try a shorter search or another subject.' : 'No lessons at this level yet. Try another level.'}</p>}
+      </section></div>
+    </div>;
   }
 
   // ───────────────────────── UNIT ─────────────────────────

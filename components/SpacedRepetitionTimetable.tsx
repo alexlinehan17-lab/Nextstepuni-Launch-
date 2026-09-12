@@ -5,14 +5,10 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv } from './Motion';
-import {
-  ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target,
-  Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff,
-  CheckCircle, Flame, CalendarDays,
-  Play,
-  type LucideIcon,
-} from 'lucide-react';
+import { MotionDiv } from './Motion';
+import { ChevronLeft, ChevronRight, BookOpen, RotateCcw, Target, Settings, HelpCircle, X, ArrowRight, AlertTriangle, CalendarOff, Flame, CalendarDays, Play, type LucideIcon } from 'lucide-react';
+import ToolMasthead from './launchpad/ToolMasthead';
+import ModalFrame from './ui/ModalFrame';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import HorizontalTabs from './ui/HorizontalTabs';
 import { type SchoolEvent } from './gc/GCKeyEvents';
@@ -94,108 +90,25 @@ function formatDateShort(date: Date): string {
 // ─── StudyBlockCard (day-focused full-width design) ─────────────────────────
 
 const StudyBlockCard: React.FC<{
-  block: StudyBlock;
-  completed?: boolean;
-  skipped?: boolean;
-  onToggle?: () => void;
-  bargainPts?: number;
-  strategyHint?: SubjectStrategyHint;
-  isToday?: boolean;
-  onStudyNow?: () => void;
-}> = ({ block, completed, skipped, onToggle, bargainPts: _bargainPts, strategyHint, isToday, onStudyNow }) => {
-  const typeConfig = SESSION_TYPE_CONFIG[block.sessionType];
-
-  if (skipped) {
-    return (
-      <div
-        className="py-3 px-4 rounded-xl opacity-50 bg-white dark:bg-zinc-900"
-        style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
-      >
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-zinc-400 dark:bg-zinc-500 flex-shrink-0" />
-            <span className="text-sm font-medium text-zinc-400 dark:text-zinc-500 line-through">{block.subjectName}</span>
-          </div>
-          <span className="text-xs text-zinc-400 dark:text-zinc-500 italic">Skipped</span>
-        </div>
-      </div>
-    );
-  }
-
-  const hex = getSubjectHexColor(block.subjectName);
-  const TypeIcon = typeConfig.icon;
-
-  const inner = completed ? (
-    <div
-      className="rounded-xl transition-all"
-      style={{ backgroundColor: '#EDF2EE', border: '1.5px solid rgba(107,143,113,0.25)', borderRadius: 12, opacity: 0.7 }}
-    >
-      <div className="flex items-center justify-between px-3 py-2.5">
-        <div className="flex items-center gap-2 min-w-0 flex-1">
-          <CheckCircle size={14} style={{ color: '#4F7256' }} className="flex-shrink-0" />
-          <span className="text-sm font-medium line-through" style={{ color: '#4F7256' }}>{block.subjectName}</span>
-        </div>
-        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(107,143,113,0.12)', color: '#4F7256' }}>{typeConfig.label}</span>
-      </div>
+  block: StudyBlock; completed?: boolean; skipped?: boolean; onToggle?: () => void;
+  bargainPts?: number; strategyHint?: SubjectStrategyHint; isToday?: boolean; hasStudyFlow?: boolean; onStudyNow?: () => void;
+}> = ({ block, completed, skipped, onToggle, strategyHint, onStudyNow, hasStudyFlow }) => {
+  const config = SESSION_TYPE_CONFIG[block.sessionType];
+  const colour = getSubjectHexColor(block.subjectName);
+  return <article className="lp-study-card" data-completed={completed || undefined}>
+    <div className="lp-study-card-heading" style={{ backgroundColor: colour, color: SUBJECT_FILL_INK }}>
+      <span>{config.label} · {block.durationMinutes} min</span><span>{skipped ? 'Skipped' : completed ? 'Completed' : 'Planned'}</span>
     </div>
-  ) : (
-    <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${hex}20`, borderRadius: 12 }}>
-      {/* Coloured header strip */}
-      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: hex, color: SUBJECT_FILL_INK }}>
-        <span className="text-[13px] font-bold truncate">{block.subjectName}</span>
-        {/* The badge tints the chip it sits on, so the overlay has to move the
-            background AWAY from the ink -- darken under white ink, lighten under
-            dark ink. Tinting toward the ink dropped 17 of the 33 subject
-            colours below 4.5:1. */}
-        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2" style={{ backgroundColor: 'rgba(0,0,0,0.18)', color: SUBJECT_FILL_INK }}>
-          <span className="flex items-center gap-1"><TypeIcon size={10} />{typeConfig.label}</span>
-        </span>
-      </div>
-      {/* Details row */}
-      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: `${hex}08` }}>
-        <span className="text-xs text-[#78716C] dark:text-zinc-400">{block.durationMinutes} min</span>
-        <div className="flex items-center gap-2">
-          {strategyHint && (
-            <span className="text-[10px] text-[#A8A29E] dark:text-zinc-500">Try: {strategyHint.label}</span>
-          )}
-          {isToday && onStudyNow && (
-            <button
-              onClick={(e) => { e.stopPropagation(); onStudyNow(); }}
-              className="relative z-20 flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg"
-              aria-label={`Study ${block.subjectName} now`}
-              style={{ backgroundColor: hex, color: SUBJECT_FILL_INK }}
-            >
-              Study <ArrowRight size={10} />
-            </button>
-          )}
-        </div>
-      </div>
-      {block.suggestedTopics && block.suggestedTopics.length > 0 && (
-        <p className="text-[10px] px-3 py-1.5 text-[#A8A29E] dark:text-zinc-500" style={{ backgroundColor: `${hex}05` }}>
-          Focus: {block.suggestedTopics.join(', ')}
-        </p>
-      )}
+    <div className="lp-study-card-body">
+      <h3>{block.subjectName}</h3>
+      {block.suggestedTopics?.length ? <p>{block.suggestedTopics.join(', ')}.</p> : <p>{config.label} at your own pace, one focused block at a time.</p>}
+      {strategyHint && <p className="lp-study-hint">Try: {strategyHint.label}</p>}
+      {!skipped && <div className="lp-action-row">
+        {onStudyNow && !completed && <button className="lp-button" onClick={onStudyNow} aria-label={`Study ${block.subjectName} now`}>Start this block <ArrowRight size={17} /></button>}
+        {onToggle && <button className={onStudyNow && !completed ? 'lp-study-secondary' : 'lp-button secondary'} onClick={onToggle} aria-label={`${completed ? 'Mark incomplete' : hasStudyFlow ? 'View block' : 'Mark complete'}: ${block.subjectName}, ${config.label}, ${block.durationMinutes} minutes`}>{completed ? 'Undo completion' : onStudyNow ? 'Block options' : hasStudyFlow ? 'View block' : 'Mark complete'} <ArrowRight size={16} /></button>}
+      </div>}
     </div>
-  );
-
-  if (onToggle) {
-    return (
-      <div className="relative w-full text-left">
-        {inner}
-        <MotionButton
-          type="button"
-          whileTap={{ scale: 0.98 }}
-          onClick={onToggle}
-          aria-label={`${completed ? 'Mark incomplete' : 'Mark complete'}: ${block.subjectName}, ${typeConfig.label}, ${block.durationMinutes} minutes`}
-          className="absolute inset-0 z-10 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F26B1F] focus-visible:ring-offset-2"
-        >
-          <span className="sr-only">{completed ? 'Mark incomplete' : 'Mark complete'}</span>
-        </MotionButton>
-      </div>
-    );
-  }
-
-  return inner;
+  </article>;
 };
 
 // ─── Priority Row ───────────────────────────────────────────────────────────
@@ -305,6 +218,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const isPreExamJunior = isJunior && (yearGroup === '1st' || yearGroup === '2nd');
 
   const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
+  const [showPlanSettings, setShowPlanSettings] = useState(false);
   const [weekOffset, setWeekOffset] = useState(0);
   const [showExplainer, setShowExplainer] = useState(false);
   // Four active days is the minimum needed to distribute a credible weekly
@@ -532,8 +446,6 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1; // 0=Mon
   const isCurrentWeek = weekOffset === 0;
   const todaySchedule = isCurrentWeek ? timetable[todayDayIndex] : null;
-  const todayHasSessions = todaySchedule ? todaySchedule.blocks.length > 0 : false;
-  const showTodayView = isCurrentWeek && todayHasSessions;
 
   // Today's completion stats
   const todayCompletedIds = completions[todayKey] ?? [];
@@ -543,15 +455,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     return todayCompletedIds.includes(blockId);
   }).length;
   const todayTotalCount = todayBlocks.length;
-  const todayAllDone = todayTotalCount > 0 && todayCompletedCount >= todayTotalCount;
-  const todayProgress = todayTotalCount > 0 ? todayCompletedCount / todayTotalCount : 0;
 
   // "Next Up" -- first uncompleted session today
-  const nextUpIndex = todayBlocks.findIndex((block, bi) => {
-    const blockId = getBlockId(block, bi);
-    return !todayCompletedIds.includes(blockId);
-  });
-  const nextUpBlock = nextUpIndex >= 0 ? todayBlocks[nextUpIndex] : null;
 
   // View mode: day-focused or week overview
   const [viewMode, setViewMode] = useState<'day' | 'week'>('day');
@@ -578,18 +483,43 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const selectedDayBlocks = timetable[selectedDay]?.blocks ?? [];
 
   return (
-    <div className="space-y-5">
-      <div className="flex justify-end">
-        <button
-          onClick={onOpenSettings}
-          className="p-2 rounded-lg transition-colors bg-white dark:bg-zinc-900"
-          style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
-          title="Edit subjects"
-        >
-          <Settings size={16} className="text-[#A8A29E] dark:text-zinc-500" />
-        </button>
+    <div className="lp-planner space-y-5">
+      <ToolMasthead tool="planner" eyebrow="The Planner" title="Your day, in order." subtitle={`${new Date().toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })} · ${todayTotalCount} ${todayTotalCount === 1 ? 'block' : 'blocks'} today.`} />
+      <div className="lp-planner-layout"><section className="lp-planner-agenda space-y-5"><div className="flex items-center justify-between"><h2 className="lp-title">{selectedDay === todayDayIndex && isCurrentWeek ? 'Today' : DAYS_OF_WEEK[selectedDay]}</h2><button className="lp-button secondary" onClick={() => setShowPlanSettings(true)}><Settings size={15} /> Plan settings</button></div>
+      <ModalFrame open={showPlanSettings} onClose={() => setShowPlanSettings(false)} title="Plan settings">
+        <div className="p-5 space-y-5"><h3 className="lp-title">Make room for rest.</h3>
+      {/* ── Rest day toggle (long-press hint) ── */}
+      <div className="flex items-center gap-2">
+        <CalendarOff size={13} className="flex-shrink-0 text-[#A8A29E] dark:text-zinc-500" />
+        <span className="text-[10px] font-bold uppercase tracking-wider flex-shrink-0 text-[#A8A29E] dark:text-zinc-500">Rest</span>
+        <div className="flex gap-1 flex-1">
+          {DAY_SHORTS.map((short, i) => {
+            const dayName = DAYS_OF_WEEK[i];
+            const isRest = restDays.has(dayName);
+            return (
+              <button
+                key={dayName}
+                onClick={() => toggleRestDay(dayName)}
+                className={`flex-1 py-1 rounded-md text-[10px] font-bold transition-all ${!isRest ? 'bg-white dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500' : ''}`}
+                style={isRest
+                  ? { backgroundColor: 'rgba(196,135,59,0.1)', border: '0.5px solid rgba(196,135,59,0.3)', color: '#C4873B', textDecoration: 'line-through' }
+                  : { border: '0.5px solid rgba(0,0,0,0.07)' }
+                }
+                title={isRest ? `${dayName}: rest day` : `${dayName}: study day`}
+              >
+                {short}
+              </button>
+            );
+          })}
+        </div>
       </div>
+      <p className="text-[10px] text-[#A8A29E] dark:text-zinc-500 -mt-1">
+        Choose up to three rest days. Keeping four active days lets us spread the work without overloading one evening.
+      </p>
 
+          <button className="lp-button secondary" onClick={() => { setShowPlanSettings(false); onOpenSettings(); }}>Edit subjects and grades <ArrowRight size={16} /></button>
+        </div>
+      </ModalFrame>
       {/* ── Week navigation + view toggle ── */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -627,31 +557,6 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         />
       </div>
 
-      {/* ── Key stats line ── */}
-      <div className="flex items-center justify-center gap-2 flex-wrap text-xs text-zinc-500 dark:text-zinc-400">
-        {streak.currentStreak > 0 && (
-          <span className="flex items-center gap-1">
-            <Flame size={13} style={{ color: '#C4873B' }} />
-            <span className="font-semibold" style={{ color: '#C4873B' }}>{streak.currentStreak}-day streak</span>
-          </span>
-        )}
-        {streak.currentStreak > 0 && <span className="text-[#A8A29E] dark:text-zinc-500">·</span>}
-        <span className="font-medium">{todayCompletedCount}/{todayTotalCount} blocks today</span>
-        <span className="text-[#A8A29E] dark:text-zinc-500">·</span>
-        <span className="font-medium">
-          {totalHours}h {remainingMins > 0 ? `${remainingMins}m ` : ''}planned
-        </span>
-        <span className="text-[#A8A29E] dark:text-zinc-500">·</span>
-        <button
-          onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
-          className="font-medium transition-colors cursor-pointer"
-          style={{ color: COLORS.accent }}
-          title="Click to cycle: this week / this month / all time"
-        >
-          {studiedHours}h {studiedRemainingMins}m completed {studyHoursRangeLabel}
-        </button>
-      </div>
-
       {/* ── DAY VIEW ── */}
       {viewMode === 'day' && (<>
       {/* ── Day Tabs (horizontal pill selector) ── */}
@@ -661,7 +566,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           const isDayRest = restDays.has(dayName);
           const isActive = selectedDay === i;
           const _isTodayTab = isCurrentWeek && i === todayDayIndex;
-          const dayBlockCount = timetable[i].blocks.length;
+
 
           return (
             <button
@@ -669,7 +574,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               onClick={() => setSelectedDay(i)}
               className={`flex-1 min-w-0 min-h-9 whitespace-nowrap rounded-lg border px-1 py-1.5 text-center text-[13px] font-semibold transition-colors ${
                 isActive
-                  ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
+                  ? 'border-[#1a1a1a] bg-[#1a1a1a] text-white [&_span]:text-white'
                   : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
               }`}
             >
@@ -682,108 +587,12 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 </span>
               </span>
               <span className={`block text-[10px] font-medium mt-0.5 text-[var(--ink-muted)] ${isDayRest ? 'italic' : ''}`}>
-                {isDayRest ? 'rest' : dayBlockCount}
+                {new Date(weekStart.getFullYear(), weekStart.getMonth(), weekStart.getDate() + i).getDate()}
               </span>
             </button>
           );
         })}
       </div>
-
-      {/* ── Rest day toggle (long-press hint) ── */}
-      <div className="flex items-center gap-2">
-        <CalendarOff size={13} className="flex-shrink-0 text-[#A8A29E] dark:text-zinc-500" />
-        <span className="text-[10px] font-bold uppercase tracking-wider flex-shrink-0 text-[#A8A29E] dark:text-zinc-500">Rest</span>
-        <div className="flex gap-1 flex-1">
-          {DAY_SHORTS.map((short, i) => {
-            const dayName = DAYS_OF_WEEK[i];
-            const isRest = restDays.has(dayName);
-            return (
-              <button
-                key={dayName}
-                onClick={() => toggleRestDay(dayName)}
-                className={`flex-1 py-1 rounded-md text-[10px] font-bold transition-all ${!isRest ? 'bg-white dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500' : ''}`}
-                style={isRest
-                  ? { backgroundColor: 'rgba(196,135,59,0.1)', border: '0.5px solid rgba(196,135,59,0.3)', color: '#C4873B', textDecoration: 'line-through' }
-                  : { border: '0.5px solid rgba(0,0,0,0.07)' }
-                }
-                title={isRest ? `${dayName}: rest day` : `${dayName}: study day`}
-              >
-                {short}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-      <p className="text-[10px] text-[#A8A29E] dark:text-zinc-500 -mt-1">
-        Choose up to three rest days. Keeping four active days lets us spread the work without overloading one evening.
-      </p>
-
-      {/* ── Today Summary Card (shown when today is selected) ── */}
-      {showTodayView && selectedDay === todayDayIndex && (
-        <MotionDiv
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="p-4 rounded-xl bg-white dark:bg-zinc-900"
-          style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}
-        >
-          <div className="flex items-center gap-4">
-            {/* Progress Ring */}
-            <div className="relative w-14 h-14 flex-shrink-0">
-              <svg viewBox="0 0 48 48" className="w-14 h-14 -rotate-90">
-                <circle cx="24" cy="24" r="20" fill="none" strokeWidth="3"
-                  stroke="rgba(0,0,0,0.06)" />
-                <motion.circle
-                  cx="24" cy="24" r="20" fill="none" strokeWidth="3"
-                  strokeLinecap="round"
-                  initial={{ strokeDashoffset: 2 * Math.PI * 20 }}
-                  animate={{ strokeDashoffset: 2 * Math.PI * 20 * (1 - todayProgress) }}
-                  transition={{ duration: 0.6, ease: 'easeOut' }}
-                  style={{ strokeDasharray: 2 * Math.PI * 20, stroke: COLORS.accent }}
-                />
-              </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-sm font-bold font-mono text-zinc-700 dark:text-zinc-200">
-                  {todayCompletedCount}/{todayTotalCount}
-                </span>
-              </div>
-            </div>
-
-            {/* Today Info */}
-            <div className="flex-1 min-w-0">
-              <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Today</p>
-              {todayAllDone ? (
-                <div>
-                  <p className="text-sm font-bold" style={{ color: '#4F7256' }}>All done for today!</p>
-                  <p className="text-xs mt-0.5 text-[#A8A29E] dark:text-zinc-500">Great work. Rest up and come back tomorrow.</p>
-                </div>
-              ) : nextUpBlock ? (
-                <div>
-                  <p className="text-xs mb-1 text-[#A8A29E] dark:text-zinc-500">Next up</p>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: getSubjectFill(nextUpBlock.subjectName) }} />
-                    <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{nextUpBlock.subjectName}</span>
-                    <span className="text-xs text-[#A8A29E] dark:text-zinc-500">{SESSION_TYPE_CONFIG[nextUpBlock.sessionType].label} · {nextUpBlock.durationMinutes}m</span>
-                  </div>
-                </div>
-              ) : null}
-            </div>
-          </div>
-          {getEventsForDay(todayDayIndex).length > 0 && (
-            <div className="mt-3 space-y-1.5">
-              {getEventsForDay(todayDayIndex).map(ev => {
-                const cat = EVENT_CAT_COLORS[ev.category] || EVENT_CAT_COLORS.other;
-                return (
-                  <div key={ev.id} className={`flex items-center gap-2 px-3 py-1.5 rounded-lg ${cat.bg}`}>
-                    <div className={`w-2 h-2 rounded-full flex-shrink-0 ${cat.dot}`} />
-                    <CalendarDays size={12} className={cat.text} />
-                    <span className={`text-xs font-semibold ${cat.text}`}>{ev.title}</span>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </MotionDiv>
-      )}
 
       {/* ── Day Content: Full-width block cards ── */}
       <AnimatePresence mode="wait">
@@ -829,6 +638,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   bargainPts={bargainMap[block.subjectName]}
                   strategyHint={strategyHints[block.subjectName]}
                   isToday={isDayToday}
+                  hasStudyFlow={Boolean(onStudyNow)}
                   onStudyNow={isDayToday && !blockCompleted && onStudyNow ? () => {
                     const dateKey = getDateKeyForDay(selectedDay);
                     const blockId = getBlockId(block, bi);
@@ -847,6 +657,30 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </MotionDiv>
       </AnimatePresence>
       </>)}
+      {/* ── Key stats line ── */}
+      <div className="flex items-center justify-center gap-2 flex-wrap text-xs text-zinc-500 dark:text-zinc-400">
+        {streak.currentStreak > 0 && (
+          <span className="flex items-center gap-1">
+            <Flame size={13} style={{ color: '#C4873B' }} />
+            <span className="font-semibold" style={{ color: '#C4873B' }}>{streak.currentStreak}-day streak</span>
+          </span>
+        )}
+        {streak.currentStreak > 0 && <span className="text-[#A8A29E] dark:text-zinc-500">·</span>}
+        <span className="font-medium">{todayCompletedCount}/{todayTotalCount} blocks today</span>
+        <span className="text-[#A8A29E] dark:text-zinc-500">·</span>
+        <span className="font-medium">
+          {totalHours}h {remainingMins > 0 ? `${remainingMins}m ` : ''}planned
+        </span>
+        <span className="text-[#A8A29E] dark:text-zinc-500">·</span>
+        <button
+          onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
+          className="font-medium transition-colors cursor-pointer"
+          style={{ color: COLORS.accent }}
+          title="Click to cycle: this week / this month / all time"
+        >
+          {studiedHours}h {studiedRemainingMins}m completed {studyHoursRangeLabel}
+        </button>
+      </div>
 
       {/* ── WEEK VIEW ── */}
       {viewMode === 'week' && (
@@ -921,9 +755,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       )}
 
+      </section>
       {/* ── Why this week looks like this ── */}
       <div
-        className="p-4 rounded-xl grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] gap-4 dark:bg-zinc-900 dark:border-zinc-700"
+        className="lp-planner-week lp-panel"
         style={{ backgroundColor: '#FFFFFF', border: '1px solid #D8D2CB' }}
       >
         <div>
@@ -935,7 +770,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           </p>
           <p className="text-xs text-[#78716C] dark:text-zinc-300 mt-1 leading-relaxed">{weeklyTarget.explanation}</p>
         </div>
-        <div className="text-xs text-[#57534E] dark:text-zinc-300 leading-relaxed md:border-l md:border-[#D8D2CB] dark:md:border-zinc-700 md:pl-4">
+        <div className="lp-body mt-5 border-t border-[var(--outline-soft)] pt-5">
           <p>
             We balance work across your available days first, then space repeat sessions for the same subject apart.
             A weekend may carry one extra block, but one day should never absorb the whole week.
@@ -948,6 +783,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       </div>
 
+      </div>
       {/* ── Priority Breakdown ── */}
       <div className="p-5 rounded-xl bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
         <div className="flex items-center justify-between mb-4">

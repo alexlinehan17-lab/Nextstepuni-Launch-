@@ -13,6 +13,8 @@
  * for the spotted cue word. Cool tints, no warm cream, no coloured left borders.
  */
 
+import ToolMasthead from '../launchpad/ToolMasthead';
+import SubjectPicker from '../launchpad/SubjectPicker';
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
@@ -21,17 +23,17 @@ import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import HorizontalTabs from '../ui/HorizontalTabs';
 import { useCommandWordReflex } from '../../hooks/useCommandWordReflex';
-import { COMMAND_WORD_QUESTIONS, commandSubjects, questionsForSubject } from '../../commandWordData';
+import { commandSubjects, questionsForSubject } from '../../commandWordData';
 import { type CommandWordQuestion } from '../../types/commandWord';
-import SubjectTilePicker from '../shared/SubjectTilePicker';
+
 import { baseName, displayName } from '../shared/subjectNames';
 import { figureUrl } from '../../utils/figureUrl';
 
-const INDIGO = '#6366F1';
-const INDIGO_DARK_TEXT = '#3730A3';
-const INDIGO_TINT = '#EEF0FF';
-const HL_BG = '#FDE68A';        // amber-200 highlighter
-const HL_TEXT = '#92400E';      // amber-800
+
+const INDIGO_DARK_TEXT = 'var(--accent-text)';
+const INDIGO_TINT = 'var(--surface-soft)';
+const HL_BG = '#F26B1F';        // amber-200 highlighter
+const HL_TEXT = '#1a1a1a';      // amber-800
 
 const cardShell =
   'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
@@ -54,7 +56,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
   const [levelFilter, setLevelFilter] = useState<'higher' | 'ordinary'>('higher');
   const atLevel = (q: CommandWordQuestion) => q.level === 'common' || q.level === levelFilter;
   // Subject-picker scope: just the student's chosen subjects, or every subject in their cycle.
-  const [scope, setScope] = useState<'mine' | 'all'>('mine');
+
 
   // Subjects with at least one question at the selected level (count = visible),
   // filtered to the student's own cycle — JC students see only Junior Cycle
@@ -64,10 +66,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
     .map(s => ({ ...s, count: questionsForSubject(s.subjectId).filter(q => q.level === 'common' || q.level === levelFilter).length }))
     .filter(s => s.count > 0), [levelFilter, studentCycle]);
   const studentSet = useMemo(() => new Set((studentSubjects ?? []).map(baseName)), [studentSubjects]);
-  const comingSoon = useMemo(
-    () => (studentSubjects ?? []).filter(name => !subjects.some(s => baseName(s.subjectLabel) === baseName(name))),
-    [studentSubjects, subjects],
-  );
+
 
   const queue = subjectId ? questionsForSubject(subjectId).filter(atLevel) : [];
   const q: CommandWordQuestion | undefined = queue[qIndex];
@@ -124,7 +123,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
 
   // ───────── HOME ─────────
   if (view === 'home') {
-    const totalQs = COMMAND_WORD_QUESTIONS.length;
+
     // Picker inputs: cycle/level-filtered subjects sorted by display label, with
     // the question count in the sublabel; mineIds drives the My/All toggle.
     const sortedSubjects = subjects
@@ -136,51 +135,23 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
       sublabel: `${s.count} real ${s.count === 1 ? 'question' : 'questions'}`,
     }));
     const mineIds = sortedSubjects.filter(s => studentSet.has(baseName(s.subjectLabel))).map(s => s.subjectId);
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        {/* Higher / Ordinary level filter */}
-        <div className="flex items-center gap-2.5 mb-5">
-          <span className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>Your level</span>
-          <HorizontalTabs
-            variant="pill"
-            size="sm"
-            label="Question level"
-            value={levelFilter}
-            onChange={next => setLevelFilter(next as typeof levelFilter)}
-            options={[{ value: 'higher', label: 'Higher' }, { value: 'ordinary', label: 'Ordinary' }]}
-          />
-        </div>
-
-        {state.wordsMet.length > 0 && (
-          <div className="rounded-2xl p-5 mb-6" style={{ backgroundColor: INDIGO_TINT }}>
-            <div className="flex items-baseline justify-between mb-2">
-              <span className="text-[11px] font-bold uppercase tracking-[0.14em]" style={{ color: INDIGO_DARK_TEXT }}>Your reflex</span>
-              <span className="text-[11px] font-semibold" style={{ color: INDIGO_DARK_TEXT }}>{state.firstTryIds.length}/{state.seenIds.length} spotted first try</span>
-            </div>
-            <p className="text-2xl font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-              {state.wordsMet.length} command {state.wordsMet.length === 1 ? 'word' : 'words'} met
-            </p>
-            <div className="h-2.5 rounded-full overflow-hidden mt-3" style={{ backgroundColor: '#ffffff' }}>
-              <div className="h-full rounded-full transition-all" style={{ width: `${Math.round((state.seenIds.length / totalQs) * 100)}%`, backgroundColor: INDIGO }} />
-            </div>
-          </div>
-        )}
-
-        {/* My / All toggle (only when the student has subjects with content in
-            this cycle) + subject tiles in the exact year-selection card style. */}
-        <SubjectTilePicker
-          headingLabel="Pick a subject"
-          subjects={pickerSubjects}
-          mineIds={mineIds}
-          scope={scope}
-          onScopeChange={setScope}
-          onPick={startSubject}
-        />
-        {comingSoon.length > 0 && (
-          <p className="text-[12px] leading-relaxed mt-5" style={{ color: '#9e9186' }}>More of your subjects are coming — we’re adding them subject by subject.</p>
-        )}
+    const selectedSubject = sortedSubjects.find(s => s.subjectId === subjectId) ?? sortedSubjects.find(s => mineIds.includes(s.subjectId)) ?? sortedSubjects[0];
+    const previewQuestion = selectedSubject ? questionsForSubject(selectedSubject.subjectId).filter(atLevel)[0] : undefined;
+    const preview = <div className="lp-reflex-example"><p className="lp-eyebrow">Try the idea · {previewQuestion?.subjectLabel}</p><p className="lp-reflex-stem">{previewQuestion?.stem}</p><p className="lp-body mt-4">Spot the command word. It tells you what the answer needs to do.</p></div>;
+    return <div className="pb-12">
+      <ToolMasthead tool="command-word-reflex" eyebrow="Read the question right" title="Command-Word Reflex." subtitle="Spot the word. Know what the examiner is asking." />
+      <div className="lp-reflex-entry">
+        {previewQuestion && <div className="lp-reflex-desktop">{preview}</div>}
+        <section><h2 className="lp-title">Choose your subject</h2>
+          <HorizontalTabs variant="pill" size="sm" label="Question level" value={levelFilter} onChange={next => setLevelFilter(next as typeof levelFilter)} options={[{value:'higher',label:'Higher'},{value:'ordinary',label:'Ordinary'}]} />
+          <div className="lp-reflex-subjects">{(mineIds.length ? sortedSubjects.filter(s => mineIds.includes(s.subjectId)) : sortedSubjects.slice(0,6)).map(s => <button key={s.subjectId} aria-pressed={selectedSubject?.subjectId === s.subjectId} onClick={() => setSubjectId(s.subjectId)}><strong>{displayName(s.subjectLabel)}</strong><small>{s.count} questions</small></button>)}</div>
+          <SubjectPicker label="All subjects" value={selectedSubject?.subjectId ?? ''} options={pickerSubjects.map(s => ({value:s.id,label:s.label,detail:s.sublabel}))} onChange={setSubjectId} />
+          <button className="lp-button w-full mt-4" disabled={!selectedSubject} onClick={() => selectedSubject && startSubject(selectedSubject.subjectId)}>Start practising <ArrowRight size={17} /></button>
+          {state.wordsMet.length > 0 && <p className="lp-body mt-4">{state.wordsMet.length} command words met · {state.firstTryIds.length}/{state.seenIds.length} spotted first try</p>}
+          {previewQuestion && <details className="lp-reflex-mobile mt-6"><summary className="text-sm font-semibold">See an example</summary>{preview}</details>}
+        </section>
       </div>
-    );
+    </div>;
   }
 
   // ───────── PLAY ─────────
