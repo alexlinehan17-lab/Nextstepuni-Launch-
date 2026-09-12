@@ -17,7 +17,9 @@
  */
 import { writeFileSync } from 'node:fs';
 import { describe, it } from 'vitest';
-import { buildQuestionModel, COUNTED_UNIT_NOUNS } from '../components/WaysIn/questionModel';
+import {
+  buildQuestionModel, COUNTED_ANSWER_NOUNS, COUNTED_UNIT_NOUNS,
+} from '../components/WaysIn/questionModel';
 import { CARDS as AGRICULTURAL_SCIENCE_HIGHER } from '../components/MarkBank/cards/agricultural-science/higher';
 import { CARDS as AGRICULTURAL_SCIENCE_ORDINARY } from '../components/MarkBank/cards/agricultural-science/ordinary';
 import { CARDS as ANCIENT_GREEK_HIGHER } from '../components/MarkBank/cards/ancient-greek/higher';
@@ -200,9 +202,14 @@ const DECKS: Deck[] = [
 // The labels the planner falls back on when it has learned nothing about the
 // question. A plan made only of these is one a student could have written
 // without reading the paper at all.
+// "Point" is NOT generic when the paper's own word is point: "Make three
+// points, supporting your response" plans "Point 1 / Point 2 / Point 3", which
+// is the frame doing exactly its job. It stays out of this set, and a plan is
+// judged generic on the labels the planner falls back to when it has learned
+// nothing.
 const GENERIC = new Set([
   'Response', 'Direct response', 'Main reason or claim', 'Relevant information',
-  'Link to the question', 'Point', 'Step',
+  'Link to the question', 'Step',
 ]);
 
 const strip = (label: string) => label.replace(/\s+\d+$/, '').trim();
@@ -228,7 +235,13 @@ const COUNT_PHRASE = new RegExp(
   String.raw`(^|[^a-z])(one|two|three|four|five|six|seven|eight|nine|ten|\d{1,2})\s+`
   + String.raw`((?:[a-z-]+\s+){0,2})([a-z]{3,}s)\b`, 'gi');
 
-function printedCounts(text: string): { n: number; noun: string }[] {
+const ANSWER_NOUN = new RegExp(`^(?:${COUNTED_ANSWER_NOUNS})$`, 'i');
+// Subjects where a "point" is somewhere on a drawing, not something a student
+// writes down.
+const GEOMETRIC_POINTS = new Set(['dcg', 'maths', 'applied-maths', 'engineering',
+  'construction-studies', 'technology', 'physics', 'geography']);
+
+function printedCounts(text: string, subject: string): { n: number; noun: string }[] {
   const out: { n: number; noun: string }[] = [];
   const words = (text || '').toLowerCase().split(/[^a-z0-9]+/);
   for (const m of (text || '').matchAll(COUNT_PHRASE)) {
@@ -244,6 +257,19 @@ function printedCounts(text: string): { n: number; noun: string }[] {
     // behaviour as a defect.
     if (at > 0 && ['the', 'these', 'those', 'both', 'all'].includes(words[at - 1])) continue;
     const noun = m[4].toLowerCase();
+    // The noun has to be a thing the student PRODUCES. The planner only ever
+    // counts its own allowlist, and this auditor let any plural through —
+    // which is how it came to report the planner's correct refusals as 109 of
+    // DCG's 113 defects and 86 of Maths' 91. Every one was the number counting
+    // what the problem is ABOUT: "Two identical trees are growing in the
+    // forest", "if two triangles ABC and A'B'C' are similar", "3 piles are
+    // used", "Two types of testing ... are unit testing and system testing".
+    // None asks for two of anything.
+    if (!ANSWER_NOUN.test(noun)) continue;
+    // ...and "points" is a geometric object in the subjects that draw. "Locate
+    // the vertex, five additional points on the curve" plots five points; it
+    // does not want five answers. Named, like the units, rather than guessed.
+    if (noun.startsWith('point') && GEOMETRIC_POINTS.has(subject)) continue;
     // The planner's own unit list decides, so the auditor cannot report a
     // "missed count" the planner is right to refuse. Without this it called
     // "every 3 - 5 years", "carry out the test three times" and "the seven
@@ -295,7 +321,7 @@ export function auditCard(subject: string, level: string, card: any): Defect[] {
   // correct plans as defects. Where the question prints its own sub-parts, the
   // instructions are the shape and this check has nothing to say.
   const hasSubParts = (q.match(/\((?:i{1,3}|iv|v|vi{0,3})\)/gi) ?? []).length > 1;
-  const counts = ENGLISH_MEDIUM.has(subject) && !hasSubParts ? printedCounts(q) : [];
+  const counts = ENGLISH_MEDIUM.has(subject) && !hasSubParts ? printedCounts(q, subject) : [];
   const named = counts.find((c) => c.n > 1);
 
   if (named && allGeneric) {

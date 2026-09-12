@@ -1010,7 +1010,7 @@ const NUMBER_WORDS: Record<string, number> = {
  * into two planning rows. Measured over the built corpus, keeping units out is
  * what stops the Maths deck filling with invented tasks.
  */
-const COUNTED_ANSWER_NOUNS = [
+export const COUNTED_ANSWER_NOUNS = [
   'advantages?', 'applications?', 'arguments?', 'benefits?', 'causes?',
   'challenges?', 'characteristics?', 'components?', 'consequences?',
   'considerations?', 'details?', 'differences?', 'disadvantages?', 'effects?',
@@ -1286,6 +1286,45 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
     + `(${nounPattern})\\b`,
     'gi',
   );
+  // THE ANSWER-COUNT RIDER. A paper may ask its question and then, in a
+  // sentence of its own, say how many pieces the single answer takes:
+  //
+  //   "Based on your reading of TEXT 1, what insights do you gain about how
+  //    the 'underdog effect' can influence our perspectives? Make three
+  //    points, supporting your response with reference to the text."
+  //
+  // That is ONE job in three pieces, not two jobs, and the planner gave it a
+  // single row labelled "Direct response" on 51 English cards. The blocker is
+  // not the single-command rule below -- "make", "develop" and "argue" are not
+  // command surfaces at all, so these questions have no command in the rider
+  // sentence for the count to attach to, and the full stop closing the lead-in
+  // question is what the no-punctuation-between guard trips on.
+  //
+  // Read here, before the count pass, and deliberately narrow on every axis:
+  // three verbs, a noun pinned to "point", and only in a sentence that carries
+  // no recognised command of its own. That last condition is what keeps
+  // "Explain what the term means. Give two features in your answer." out --
+  // "Give" IS a command surface, so the rider is a second job and keeps its
+  // own row. Every printed structure above still takes precedence, so a
+  // question that prints (a) and (b) parts is unaffected.
+  if (commands.length <= 1) {
+    for (const sentence of text.split(/(?<=[.?!;])\s+/)) {
+      if (findCommandDemands(sentence).length > 0) continue;
+      const rider = /^\s*(?:\([a-z0-9]+\)\s*)?(?:make|develop|argue)\b[^.?!;]{0,40}?\b(?:at least\s+)?(two|three|four|five|six|seven|eight|[2-8])\s+(?:[a-z-]+\s+){0,2}(points?)\b/i
+        .exec(sentence);
+      if (!rider) continue;
+      if (COUNTED_UNIT_NOUNS.has(rider[2].toLowerCase())) continue;
+      const count = countValue(rider[1]);
+      if (!count || count < 2) continue;
+      return {
+        count,
+        basis: 'printed',
+        evidence: rider[0].trim(),
+        structure: 'count-phrase',
+      };
+    }
+  }
+
   // ONE command, or none of this applies. A question that sets several
   // instructions has several jobs, and the instructions reading below gives
   // each of them a row; a count found among them belongs to ONE of those jobs
