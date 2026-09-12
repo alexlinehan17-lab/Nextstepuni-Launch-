@@ -141,3 +141,5 @@
   .ss-custom-duration { grid-column: 1 / -1; }
   .ss-mastery-list { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 767px) { .ss-completion-view { padding-bottom: calc(105px + env(safe-area-inset-bottom)); } }
