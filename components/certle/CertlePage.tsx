@@ -612,42 +612,80 @@ export default function CertlePage() {
         title="How to play CERTLE"
         onClose={() => setDialog(null)}
       >
-        <p>
-          Everyone gets the same real Leaving Cert question, changing at
-          midnight in Ireland.
-        </p>
-        <ol>
-          <li>Write an answer in your own words.</li>
-          <li>
-            You have three attempts. Partial credit comes from the individual
-            SEC scheme points you earn.
-          </li>
-          <li>
-            Improve your answer after each check. Your best attempt is the score
-            that counts.
-          </li>
-          <li>
-            Once you finish, see the scheme and share your result without
-            revealing the answer.
-          </li>
-        </ol>
-        <p>
-          One orange square is one earned mark. The scheme decides how marks are
-          grouped; a point worth three marks is awarded as a group.
-        </p>
-        <p className="certle-dialog-note">
-          Automatic matching recognises scheme alternatives and common
-          equivalent wording. It can still miss a valid response: the final
-          scheme review lets you check that wording yourself.
-        </p>
-        <button
-          type="button"
-          className="certle-primary"
-          onClick={() => setDialog(null)}
-        >
-          Let’s play
-          <ArrowRight size={17} />
-        </button>
+        <div className="certle-help">
+          <p className="certle-help-intro">
+            One real Leaving Cert question for everyone. A new one arrives at
+            midnight in Ireland.
+          </p>
+          <ol className="certle-help-steps" role="list">
+            <li>
+              <span className="certle-help-number" aria-hidden="true">
+                  1
+                </span>
+              <div>
+                <strong>Answer in your own words.</strong>
+                <p>You have three attempts to earn the marks.</p>
+              </div>
+            </li>
+            <li>
+              <span className="certle-help-number" aria-hidden="true">
+                  2
+                </span>
+              <div>
+                <strong>Build on each attempt.</strong>
+                <p>
+                  Check your answer, earn partial credit and improve it.
+                  Your best attempt is the score that counts.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span className="certle-help-number" aria-hidden="true">
+                  3
+                </span>
+              <div>
+                <strong>Review and share.</strong>
+                <p>
+                  Once you finish, see the SEC marking scheme and share your
+                  result without revealing the answer.
+                </p>
+              </div>
+            </li>
+          </ol>
+          <div className="certle-help-scoring">
+            <div
+              className="certle-help-example"
+              role="img"
+              aria-label="Example: 3 of 6 marks earned"
+            >
+              {Array.from({ length: 6 }, (_, i) => (
+                <span
+                  key={i}
+                  className={i < 3 ? "is-earned" : undefined}
+                  aria-hidden="true"
+                />
+              ))}
+              <strong aria-hidden="true">3 / 6</strong>
+            </div>
+            <p>
+              Each orange square is one earned mark. Marks follow the scheme’s
+              groups: a three-mark point earns all three squares together.
+            </p>
+          </div>
+          <p className="certle-dialog-note">
+            Hyphens, spacing and small typing slips are allowed. Automatic
+            matching can still miss valid wording; check the scheme when you
+            finish.
+          </p>
+          <button
+            type="button"
+            className="certle-primary"
+            onClick={() => setDialog(null)}
+          >
+            Let’s play
+            <ArrowRight size={17} />
+          </button>
+        </div>
       </Modal>
       <Modal
         open={dialog === "stats"}
@@ -675,15 +713,23 @@ export default function CertlePage() {
               (r) => r.complete && r.attempts === attempt,
             ).length;
             return (
-              <div key={attempt}>
-                <span>{attempt}</span>
-                <div
-                  style={{
-                    width: `${Math.max(12, summary.fullMarks ? (count / summary.fullMarks) * 100 : 12)}%`,
-                  }}
-                >
-                  {count}
+              <div
+                key={attempt}
+                role="img"
+                aria-label={`Attempt ${attempt}: ${count} full-mark games`}
+              >
+                <span aria-hidden="true">{attempt}</span>
+                <div className="certle-distribution-track" aria-hidden="true">
+                  <div
+                    className="certle-distribution-fill"
+                    style={{
+                      width: `${summary.fullMarks ? (count / summary.fullMarks) * 100 : 0}%`,
+                    }}
+                  />
                 </div>
+                <span className="certle-distribution-count" aria-hidden="true">
+                  {count}
+                </span>
               </div>
             );
           })}

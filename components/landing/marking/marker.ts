@@ -155,7 +155,7 @@ const stem = (word: string): string =>
         .replace(/(ing|ed|ly)$/, "")
         .replace(/s$/, ""));
 
-export const tokens = (value: string): string[] =>
+const lexemes = (value: string): string[] =>
   value
     .normalize("NFKC")
     .toLowerCase()
@@ -167,14 +167,100 @@ export const tokens = (value: string): string[] =>
     .replace(/[’'`]/g, "")
     .replace(/[−–—‐]/g, "-")
     .replace(/×/g, " multiply ")
+    .replace(/\b([a-z]{2,})\s*-\s*(?=[a-z]{2,}\b)/g, "$1 ")
     .replace(/(?<=[a-z])-(?=[a-z])/g, " ")
     .replace(/[^a-z0-9%°+\-=/().,\s]/g, " ")
     .replace(/[(),]/g, " ")
     .replace(/[.!?;:](?=\s|$)/g, " ")
     .replace(/(?<=\D)[./](?=\D)/g, " ")
     .split(/\s+/)
-    .filter(Boolean)
-    .map(stem);
+    .filter(Boolean);
+export const tokens = (value: string): string[] => lexemes(value).map(stem);
+// Presentation differences may join/split a word, but must not swallow a
+// negation, qualifier, unit, symbol or number. Join the original letters before
+// stemming ("tri-phosphate" → "triphosphate", "carbon dioxide" → "carbondioxide").
+const WORD_BREAK_BARRIERS = new Set([
+  ...STOP,
+  ..."no not never without same opposite high low only direct inverse now".split(" "),
+]);
+const joinable = (word: string) =>
+  /^[a-z]{2,}$/.test(word) && !WORD_BREAK_BARRIERS.has(word);
+
+/**
+ * One missing/extra letter or adjacent transposition in a long word. Do not
+ * substitute letters: nitrate/nitrite, chloride/chlorine and propane/propene
+ * are different answers, not spelling variants. Short names, units, formulae
+ * and abbreviations remain exact. This is deliberately narrower than a fuzzy
+ * similarity percentage.
+ */
+function typingSlip(offered: string, expected: string): boolean {
+  if (!/^[a-z]{7,}$/.test(expected) || !/^[a-z]{6,}$/.test(offered))
+    return false;
+  if (Math.abs(offered.length - expected.length) > 1) return false;
+  // These real words differ by an insertion but name different concepts.
+  if ([stem(offered), stem(expected)].every((word) =>
+    ["contact", "contract"].includes(word),
+  ))
+    return false;
+  let i = 0;
+  while (
+    i < Math.min(offered.length, expected.length) &&
+    offered[i] === expected[i]
+  ) i++;
+  if (offered.length === expected.length)
+    return (
+      offered[i] === expected[i + 1] &&
+      offered[i + 1] === expected[i] &&
+      offered.slice(i + 2) === expected.slice(i + 2)
+    );
+  const [shorter, longer] =
+    offered.length < expected.length
+      ? [offered, expected]
+      : [expected, offered];
+  return shorter.slice(i) === longer.slice(i + 1);
+}
+
+function supportsWords(
+  statement: string,
+  phrase: string,
+  required: string[],
+): boolean {
+  const found = new Set(tokens(statement));
+  if (required.every((word) => found.has(word))) return true;
+  const offered = lexemes(statement);
+  const expected = lexemes(phrase);
+  for (const word of expected) {
+    if (
+      !found.has(stem(word)) &&
+      offered.some((candidate) => typingSlip(candidate, word))
+    )
+      found.add(stem(word));
+  }
+  // Compare contiguous spans, never a bag of separated fragments. A spelling
+  // correction is not applied on top of a word-boundary correction.
+  for (let i = 0; i < expected.length; i++) {
+    let joined = "";
+    for (let size = 1; size <= 3 && i + size <= expected.length; size++) {
+      const word = expected[i + size - 1];
+      if (!joinable(word)) break;
+      joined += word;
+      if (joined.length < 7) continue;
+      for (let j = 0; j < offered.length; j++) {
+        let candidate = "";
+        for (let width = 1; width <= 3 && j + width <= offered.length; width++) {
+          const part = offered[j + width - 1];
+          if (!joinable(part)) break;
+          candidate += part;
+          if (candidate.length > joined.length) break;
+          if (candidate === joined)
+            expected.slice(i, i + size).forEach((term) => found.add(stem(term)));
+        }
+      }
+    }
+  }
+  return required.every((word) => found.has(word));
+}
+
 const content = (value: string): string[] => [
   ...new Set(tokens(value).filter((t) => !STOP.has(t))),
 ];
@@ -216,6 +302,7 @@ function phrases(point: MarkPoint): string[][] {
     let variants: string[][] = [[]];
     for (const original of group) {
       const main = original
+        .replace(/^(?:name|explain)\s+[—–-]\s*/i, "")
         .replace(/\([^)]*\)/g, " ")
         .replace(/\s+/g, " ")
         .trim();
@@ -320,7 +407,8 @@ function matchPoint(answer: string, point: MarkPoint): boolean {
         );
         const statements = qualified ? part.split(/\band\b|,/i) : [part];
         return statements.some((statement) => {
-          const set = new Set(symbol ? tokens(statement) : content(statement));
+          if (!symbol) return supportsWords(statement, phrase, required);
+          const set = new Set(tokens(statement));
           return required.every((t) => set.has(t));
         });
       });
