@@ -254,7 +254,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 aria-label="Year"
                 className={`appearance-none cursor-pointer rounded-[10px] py-[8px] pl-3 pr-8 text-[12.5px] font-semibold outline-none transition-colors ${
                   yearFilter === 'all'
-                    ? 'bg-[#F1EFEC] text-[#8d857c] hover:text-[#57534e] dark:bg-zinc-800 dark:text-zinc-400'
+                    ? 'bg-zinc-100 text-[#8d857c] hover:text-[#57534e] dark:bg-zinc-800 dark:text-zinc-400'
                     : 'bg-white text-[#1a1a1a] shadow-[0_1px_2px_rgba(26,23,20,0.10)] ring-1 ring-[#E5E1DA] dark:bg-zinc-600 dark:text-white dark:ring-zinc-600'
                 }`}
               >
@@ -352,7 +352,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 onChange={e => setTopicQuery(e.target.value)}
                 placeholder="Search topics"
                 aria-label="Search topics"
-                className="w-48 appearance-none rounded-[10px] bg-[#F1EFEC] py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-[rgba(242,107,31,0.28)] dark:bg-zinc-800 dark:text-zinc-100"
+                className="w-48 appearance-none rounded-[10px] bg-zinc-100 py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-[rgba(242,107,31,0.28)] dark:bg-zinc-800 dark:text-zinc-100"
                 style={{ color: INK }}
               />
               {topicQuery && (

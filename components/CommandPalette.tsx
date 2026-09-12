@@ -75,7 +75,7 @@ export const fuzzyScore = (query: string, text: string): number => {
 };
 
 const KIND_CHIP: Record<EntryKind, { label: string; bg: string; color: string }> = {
-  page:   { label: 'PAGE',   bg: '#f0efec', color: '#7a7068' },
+  page:   { label: 'PAGE',   bg: 'var(--surface-soft)', color: '#7a7068' },
   tool:   { label: 'TOOL',   bg: '#FDEEDF', color: '#8C3A0E' },
   module: { label: 'MODULE', bg: '#E8F2EC', color: '#1F5F3E' },
 };
@@ -212,7 +212,7 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
         className="relative w-full max-w-[560px] rounded-2xl bg-white overflow-hidden"
         style={{ border: '2px solid #1a1a1a', boxShadow: '0 4px 0 rgba(0,0,0,0.4)' }}
       >
-        <div className="flex items-center gap-3 px-4 py-3" style={{ borderBottom: '2px solid #f0efec' }}>
+        <div className="flex items-center gap-3 px-4 py-3" style={{ borderBottom: '2px solid var(--outline-soft)' }}>
           <Search size={16} style={{ color: '#F26B1F' }} />
           <input
             ref={inputRef}
@@ -226,7 +226,7 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
           />
           <kbd
             className="hidden sm:block text-[10px] font-bold px-1.5 py-0.5 rounded"
-            style={{ backgroundColor: '#f0efec', color: '#9e9186' }}
+            style={{ backgroundColor: 'var(--surface-soft)', color: '#9e9186' }}
           >
             ESC
           </kbd>
@@ -267,7 +267,7 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
           })}
         </div>
 
-        <div className="flex items-center gap-3 px-4 py-2" style={{ borderTop: '2px solid #f0efec' }}>
+        <div className="flex items-center gap-3 px-4 py-2" style={{ borderTop: '2px solid var(--outline-soft)' }}>
           <span className="text-[10.5px]" style={{ color: '#9e9186' }}>
             <b>↑↓</b> to choose · <b>Enter</b> to go · <b>⌘K</b> anytime
           </span>

@@ -125,7 +125,7 @@ const useWide = () => {
 const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ secure, met, total }) => {
   const pct = (n: number) => (total > 0 ? Math.min(100, (n / total) * 100) : 0);
   return (
-    <div style={{ height: 6, borderRadius: 4, background: '#e4e1dc', overflow: 'hidden', display: 'flex' }}>
+    <div style={{ height: 6, borderRadius: 4, background: 'var(--mb-hairline)', overflow: 'hidden', display: 'flex' }}>
       <div style={{ width: `${pct(secure)}%`, background: SUCCESS }} />
       <div style={{ width: `${pct(Math.max(0, met - secure))}%`, background: SUCCESS, opacity: 0.35 }} />
     </div>
@@ -612,18 +612,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                   </div>
                 ))}
               </div>
-            ) : visibleStrands.filter(strand => strandFilter === 'all' || strand.id === strandFilter).map(strand => ({ ...strand, topics: strand.topics.filter(topic => topic.title.toLowerCase().includes(topicQuery.trim().toLowerCase())) })).filter(strand => strand.topics.length > 0).map((strand, si) => (
+            ) : visibleStrands.filter(strand => strandFilter === 'all' || strand.id === strandFilter).map(strand => ({ ...strand, topics: strand.topics.filter(topic => topic.title.toLowerCase().includes(topicQuery.trim().toLowerCase())) })).filter(strand => strand.topics.length > 0).map(strand => (
               <section key={strand.id} id={`strand-${strand.id}`}>
-                <div style={{
-                  height: 44, display: 'flex', alignItems: 'center', gap: 9,
-                  padding: '0 18px', background: 'var(--mb-soft)',
-                  borderTop: si === 0 ? 'none' : `1px solid ${MUTED_BORDER}`,
-                  borderBottom: `1px solid ${HAIRLINE}`,
-                }}>
-                  <span style={{ font: `600 14px/1 ${SERIF}`, color: INK }}>{strand.title}</span>
-                  <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
-                    {strand.label}
-                  </span>
+                <div className="mb-strand-header">
+                  <span className="mb-strand-title">{strand.title}</span>
+                  <span className="mb-strand-label">{strand.label}</span>
                 </div>
 
                 <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>

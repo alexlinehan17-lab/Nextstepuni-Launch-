@@ -51,7 +51,7 @@ const ShortcutsOverlay: React.FC<Props> = ({ suppressQuestionKey = false }) => {
                   <kbd
                     key={k}
                     className="text-[11px] font-bold px-1.5 py-0.5 rounded"
-                    style={{ backgroundColor: '#f0efec', color: '#1a1a1a', border: '1px solid #d0cdc8', borderBottomWidth: 2 }}
+                    style={{ backgroundColor: 'var(--surface-soft)', color: '#1a1a1a', border: '1px solid #d0cdc8', borderBottomWidth: 2 }}
                   >
                     {k}
                   </kbd>

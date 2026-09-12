@@ -243,9 +243,9 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
         </button>
       ) : (
         <div className="px-4 py-6">
-          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: '#f0efec', width: '82%' }} />
-          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: '#f0efec', width: '64%' }} />
-          <div className="h-3 rounded-full animate-pulse" style={{ backgroundColor: '#f0efec', width: '73%' }} />
+          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '82%' }} />
+          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '64%' }} />
+          <div className="h-3 rounded-full animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '73%' }} />
         </div>
       )}
 
@@ -337,7 +337,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
                     Couldn’t load the scheme — open the question in the full paper instead.
                   </p>
                 ) : (
-                  <div className="h-3 rounded-full my-4 animate-pulse mx-1" style={{ backgroundColor: '#f0efec', width: '70%' }} />
+                  <div className="h-3 rounded-full my-4 animate-pulse mx-1" style={{ backgroundColor: 'var(--surface-soft)', width: '70%' }} />
                 )}
               </div>
             )}
@@ -346,7 +346,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
           <button
             onClick={onOpenInPaper}
             className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold"
-            style={{ color: ACCENT, borderTop: '2px solid #f0efec' }}
+            style={{ color: ACCENT, borderTop: '2px solid var(--outline-soft)' }}
           >
             <BookOpenCheck size={15} /> Open beside its marking scheme
           </button>
