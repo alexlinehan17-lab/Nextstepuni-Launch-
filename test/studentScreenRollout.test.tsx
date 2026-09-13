@@ -14,12 +14,15 @@ describe('student Home navigation', () => {
   it('resumes the last available unfinished module and keeps the destination actions', () => {
     const courses = courseData.slice(0, 2);
     recordVisit('student-a', { kind: 'module', id: courses[1].id, label: courses[1].title });
-    const select = vi.fn(); const direction = vi.fn(); const browse = vi.fn();
-    render(<StudentHomeContent uid="student-a" allCourses={courses} categoryTitles={{}} userProgress={{ [courses[1].id]: { unlockedSection: 1 } }} onSelectModule={select} onGoToModules={browse} onGoToDashboard={vi.fn()} onGoToLearningPaths={vi.fn()} onGoToDirection={direction} onGoToJourney={vi.fn()} onGoToInnovationZone={vi.fn()} />);
+    const select = vi.fn(); const island = vi.fn(); const launchpad = vi.fn(); const browse = vi.fn();
+    render(<StudentHomeContent uid="student-a" allCourses={courses} categoryTitles={{}} userProgress={{ [courses[1].id]: { unlockedSection: 1 } }} onSelectModule={select} onGoToModules={browse} onGoToDashboard={vi.fn()} onGoToLearningPaths={vi.fn()} onGoToDirection={vi.fn()} onGoToJourney={island} onGoToInnovationZone={launchpad} />);
     fireEvent.click(screen.getByRole('button', { name: 'Continue learning' }));
     expect(select).toHaveBeenCalledWith(courses[1].id);
-    fireEvent.click(screen.getByRole('button', { name: /My Direction/ }));
-    expect(direction).toHaveBeenCalledOnce();
+    expect(screen.queryByRole('button', { name: /My Direction/ })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /My Island/ }));
+    expect(island).toHaveBeenCalledOnce();
+    fireEvent.click(screen.getByRole('button', { name: /Launchpad/ }));
+    expect(launchpad).toHaveBeenCalledOnce();
     fireEvent.click(screen.getByRole('button', { name: 'Browse all five module worlds' }));
     expect(browse).toHaveBeenCalledOnce();
   });

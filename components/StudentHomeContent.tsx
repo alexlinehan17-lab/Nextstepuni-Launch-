@@ -30,7 +30,7 @@ export interface StudentHomeContentProps {
   onOpenTool?: (id: string) => void;
 }
 
-export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasUnreadNotifications, onOpenMobileProfile, allCourses, userProgress, categoryTitles, studySessions = [], pointsBalance = 0, onSelectModule, onGoToStudy, onGoToModules, onGoToDashboard, onGoToLearningPaths, onGoToDirection, onGoToJourney, onGoToInnovationZone, onOpenTool }: StudentHomeContentProps) {
+export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasUnreadNotifications, onOpenMobileProfile, allCourses, userProgress, categoryTitles, studySessions = [], pointsBalance = 0, onSelectModule, onGoToStudy, onGoToModules, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToInnovationZone, onOpenTool }: StudentHomeContentProps) {
   const now = new Date();
   const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - (now.getDay() + 6) % 7);
   const days = Array.from({ length: 7 }, (_, i) => { const day = new Date(monday); day.setDate(day.getDate() + i); return toDateKey(day); });
@@ -46,9 +46,8 @@ export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasU
   const greeting = now.getHours() < 12 ? 'Good morning' : now.getHours() < 18 ? 'Good afternoon' : 'Good evening';
   const destinations = [
     { title: 'Learning Paths', copy: 'A little structure for what’s next.', action: 'Find your path', icon: <LearningPathsIcon />, go: onGoToLearningPaths },
-    { title: 'My Direction', copy: 'Make room for your possibilities.', action: 'Visit your North Star', icon: <span className="sh-compass"><img src="/assets/training/north-star-compass.png" alt="" /></span>, go: onGoToDirection },
     { title: 'My Island', copy: `${pointsBalance.toLocaleString()} JP. Plenty of room to grow.`, action: 'Build your island', icon: <MyJourneyIcon />, go: onGoToJourney },
-    { title: 'Launchpad', copy: 'Your tools for the work ahead.', action: 'Open your toolkit', icon: <InnovationZoneIcon />, go: onGoToInnovationZone, coach: 'launchpad' },
+    { title: 'Launchpad', copy: 'Your tools for the work ahead.', action: 'Open your toolkit', icon: <InnovationZoneIcon />, go: onGoToInnovationZone, coach: 'launchpad', wide: true },
   ];
   return <main className="student-home">
     <div className="sh-date"><span className="student-eyebrow">{now.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })}</span>{onOpenMobileProfile && <button type="button" className="sh-profile" onClick={onOpenMobileProfile} aria-label="Open profile and settings"><Avatar seed={userAvatarSeed || userName || 'student'} className="h-10 w-10" />{hasUnreadNotifications && <i aria-label="Unread notifications" />}</button>}</div>
@@ -65,7 +64,7 @@ export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasU
         {course ? <><p className="student-eyebrow">{categoryTitles[course.category]}</p><h2>{course.title}</h2><p>{course.subtitle}</p><div className="sh-module-progress"><span>{done} of {course.sectionsCount} sections complete</span><div role="progressbar" aria-label="Module progress" aria-valuenow={done} aria-valuemin={0} aria-valuemax={course.sectionsCount}><i style={{ width: `${course.sectionsCount ? done / course.sectionsCount * 100 : 0}%` }} /></div></div><button type="button" className="student-primary" onClick={() => onSelectModule(course.id)}>{done ? 'Continue learning' : 'Begin this module'}<ArrowUpRight size={21} /></button></> : <><h2>{allCourses.length ? 'Look how far you’ve come.' : 'A world of ideas.'}</h2><p>{allCourses.length ? 'You’ve completed your available modules. Revisit an idea and put it into practice.' : 'Explore the programme and find your next chapter.'}</p><button type="button" className="student-primary" onClick={onGoToModules}>Explore modules <ArrowUpRight size={21} /></button></>}
         {recent?.kind === 'tool' && onOpenTool && <button type="button" className="student-text-action sh-return-tool" onClick={() => onOpenTool(recent.id)}>Return to {recent.label}<ArrowUpRight size={18} /></button>}
       </section>
-      <div className="sh-destinations">{destinations.filter(item => item.go).map(item => <button type="button" className="student-ink-card sh-destination" key={item.title} onClick={item.go} data-coach={item.coach}><span className="sh-art">{item.icon}</span><h2>{item.title}</h2><p>{item.copy}</p><span className="sh-card-action">{item.action}<ArrowUpRight size={20} /></span></button>)}</div>
+      <div className="sh-destinations">{destinations.filter(item => item.go).map(item => <button type="button" className={`student-ink-card sh-destination${item.wide ? ' sh-destination-wide' : ''}`} key={item.title} onClick={item.go} data-coach={item.coach}><span className="sh-art">{item.icon}</span><h2>{item.title}</h2><p>{item.copy}</p><span className="sh-card-action">{item.action}<ArrowUpRight size={20} /></span></button>)}</div>
     </div>
     <button type="button" className="student-secondary sh-browse" onClick={onGoToModules}>Browse all five module worlds <ArrowRight size={21} /></button>
   </main>;

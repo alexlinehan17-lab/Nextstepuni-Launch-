@@ -33,8 +33,6 @@
 .sh-next {padding:32px;display:flex;align-items:flex-start;flex-direction:column}
 .sh-art {display:block;width:106px;height:106px;flex-shrink:0;margin-bottom:22px}
 .sh-art>svg {display:block;width:100%;height:100%;overflow:visible}
-.sh-compass {display:grid;place-items:center;width:88%;height:88%;margin:6%;background:#eddbd5;border-radius:46% 54% 51% 49%/53% 44% 56% 47%}
-.sh-compass img {width:85%;height:85%;object-fit:contain}
 .sh-module-art {width:166px;height:166px;margin:28px 0 36px}
 .sh-next h2 {font-size:clamp(28px,3.2vw,44px);line-height:1.12;margin:14px 0}
 .sh-next>p:not(.student-eyebrow) {font-size:15px;line-height:1.7;color:var(--student-muted)}
@@ -45,6 +43,7 @@
 .sh-return-tool {margin-top:20px}
 .sh-destinations {display:grid;grid-template-columns:1fr 1fr;gap:30px}
 .sh-destination {display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:27px;transition:transform .18s ease}
+.sh-destination-wide {grid-column:1 / -1}
 .sh-destination:hover {transform:translateY(-3px)}
 .sh-destination h2 {font-size:29px;line-height:1.15;margin:0 0 16px}
 .sh-destination p {font-size:14px;line-height:1.65;color:var(--student-muted);margin:0 0 24px}
