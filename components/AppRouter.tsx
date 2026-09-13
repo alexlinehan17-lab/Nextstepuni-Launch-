@@ -610,7 +610,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'my-journey') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
-        <JourneyView
+        <JourneyView key={user.uid}
           onBack={handleBackToTree}
           user={user}
           northStar={northStar}

@@ -1,3 +1,4 @@
+import type { PaperIsland } from '../functions/src/paperIslandModel';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -56,6 +57,7 @@ export interface ProgressDocument {
   questRewards?: Record<string, string>;
   weeklyChallengeRewards?: Record<string, string>;
   islandState?: IslandState;
+  paperIsland?: PaperIsland;
   gamification?: Partial<GamificationFirestoreData>;
   [field: string]: unknown;
 }

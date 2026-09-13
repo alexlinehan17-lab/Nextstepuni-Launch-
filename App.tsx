@@ -20,7 +20,7 @@ import { type YearGroup, type StudentSubject } from './components/subjectData';
 import { type PastJCData } from './types';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, updateDoc, arrayUnion, writeBatch, increment, runTransaction } from 'firebase/firestore';
+import { doc, setDoc, arrayUnion, writeBatch, increment, runTransaction } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { createDirectionProfile } from './services/directionProfile';
 import { useToast } from './components/Toast';
@@ -39,9 +39,6 @@ import AchievementToast from './components/AchievementToast';
 import RankUpModal from './components/RankUpModal';
 import StreakCelebration from './components/StreakCelebration';
 import { useGamification } from './hooks/useGamification';
-import { createStarterState } from './hooks/useIslandShop';
-import { findBestLandPlacement } from './components/journey/hex/hexGeometry';
-import { type IslandState } from './types';
 import { type AthleteRank, type AchievementDefinition } from './gamificationConfig';
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
@@ -219,46 +216,6 @@ const App: React.FC = () => {
     setCurrentToast(next);
   }, [toastQueue, currentToast]);
 
-  // Grant 3 grass tiles on rank-up
-  const grantRankUpTiles = async (uid: string) => {
-    try {
-      const island: IslandState | undefined = uid === DEMO_STUDENT_UID
-        ? rawProgressDoc.islandState
-        : (await getDoc(doc(db, 'progress', uid))).data()?.islandState;
-      if (!island || !island.placements) return;
-      const occupied = new Set<string>();
-      for (const p of island.placements) {
-        if (p.type === 'hex') occupied.add(`${p.q},${p.r}`);
-      }
-      const now = new Date().toISOString();
-      const tiles: IslandState['placements'] = [];
-      for (let i = 0; i < 3; i++) {
-        const pos = findBestLandPlacement(occupied);
-        occupied.add(`${pos.q},${pos.r}`);
-        tiles.push({ itemId: 'terrain-grass', model: 'grass.glb', type: 'hex', q: pos.q, r: pos.r, purchasedAt: now });
-      }
-      if (uid === DEMO_STUDENT_UID) {
-        updateDemoProgress(current => ({
-          ...current,
-          islandState: current.islandState ? {
-            ...current.islandState,
-            placements: [...current.islandState.placements, ...tiles],
-            lastPurchaseTimestamp: now,
-          } : current.islandState,
-        }));
-        return;
-      }
-      // Atomic append (arrayUnion) so a concurrent purchase/claim can't clobber
-      // these rank-up tiles via a whole-array overwrite. (audit item 18)
-      saveInBackground(updateDoc(doc(db, 'progress', uid), {
-        'islandState.placements': arrayUnion(...tiles),
-        'islandState.lastPurchaseTimestamp': now,
-      }), 'App.grantRankUpTiles', undefined, { silent: true });
-    } catch (err) {
-      console.error('Failed to grant rank-up tiles:', err);
-    }
-  };
-
   // Detect rank changes within one authenticated student session. Loading a
   // saved points total on login establishes the baseline; logout or switching
   // accounts resets it. This avoids treating auth hydration as a rank-up.
@@ -289,7 +246,7 @@ const App: React.FC = () => {
     }
     if (observation.rankUp && trackingUid) {
       setRankUpModal(observation.rankUp);
-      grantRankUpTiles(trackingUid);
+      // Meadow rewards are claimed transactionally when the island opens.
     }
   }, [
     user,
@@ -501,7 +458,6 @@ const App: React.FC = () => {
         ...(northStarData ? {
           northStar: northStarData,
           directionProfile: createDirectionProfile(northStarData),
-          islandState: createStarterState(northStarData.category),
         } : {}),
       }));
       setStudentProfile(profile);
@@ -577,7 +533,6 @@ const App: React.FC = () => {
     if (northStarData) {
       saveData.northStar = northStarData;
       saveData.directionProfile = createDirectionProfile(northStarData);
-      saveData.islandState = createStarterState(northStarData.category);
       setNorthStar(northStarData);
     }
     setDoc(progressDocRef, saveData, { merge: true }).catch(rollback);

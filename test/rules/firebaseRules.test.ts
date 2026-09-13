@@ -273,3 +273,21 @@ describe('Storage corpus boundary', () => {
     await assertFails(getBytes(ref(storage, 'private/file.txt')));
   });
 });
+
+
+describe('paper island transaction ownership', () => {
+  it('prevents clients from forging island state or refund receipts', async () => {
+    const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
+    await assertFails(updateDoc(doc(db, 'progress/alice'), { paperIsland: {version: 1, credits: 999} }));
+    await environment.withSecurityRulesDisabled(async context => {
+      await updateDoc(doc(context.firestore(), 'progress/alice'), {paperIsland: {version: 1, credits: 3}});
+    });
+    await assertFails(updateDoc(doc(db, 'progress/alice'), {'paperIsland.credits': 99}));
+    await assertSucceeds(updateDoc(doc(db, 'progress/alice'), {'pointsData.totalEarned': 20}));
+  });
+  it('does not permit a forged island on initial profile creation', async () => {
+    const db = environment.authenticatedContext('legacy', { auth_time: 1 }).firestore();
+    await assertFails(setDoc(doc(db, 'progress/legacy'), {paperIsland: {version: 1}, pointsData: {totalEarned: 0, totalSpent: 0}}));
+    await assertSucceeds(setDoc(doc(db, 'progress/legacy'), {subjectProfile: {}, pointsData: {totalEarned: 0, totalSpent: 0}}));
+  });
+});

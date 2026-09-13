@@ -152,8 +152,8 @@ const CARDS: GuideCard[] = [
     title: 'My Journey',
     what: 'Your effort becomes a world you can see: studying and completing modules earns Journey Points that build an island of your own.',
     bullets: [
-      'Your island grows from the progress you make elsewhere in the app.',
-      'Journey Points unlock additions in the build shop.',
+      'Place tiles to lift the mist and discover the Blue-pencil map.',
+      'Choose a tile from the tray, then choose an open corner on your island.',
       'Your north-star goal stays visible at the heart of the world.',
     ],
     go: { label: 'Visit My Journey', action: 'journey' },

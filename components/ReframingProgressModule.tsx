@@ -5,7 +5,6 @@
 */
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import {
   Target, BarChart, PieChart, Gamepad2, Columns, CalendarClock, Star
 } from 'lucide-react';

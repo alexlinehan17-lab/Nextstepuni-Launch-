@@ -124,12 +124,12 @@ function renderRouter() {
   return render(<AppRouter {...(props as any)} />);
 }
 
-/** The desktop draft shape (Onboarding.desktop.tsx, version 1), parked on the review step. */
-const GUEST_DESKTOP_DRAFT_KEY = 'nextstepuni:onboarding-draft:v1:guest:fresh';
+/** The shared desktop/mobile draft, parked on the review step. */
+const GUEST_DESKTOP_DRAFT_KEY = 'nextstepuni:onboarding-draft:v2:guest:fresh';
 const reviewDraft = () => ({
-  version: 1, step: 9, selectedSubjects: ['English', 'Mathematics'],
-  subjectConfigs: { English: { level: 'higher', currentGrade: 'H4', targetGrade: 'H2' }, Mathematics: { level: 'ordinary', currentGrade: 'O3', targetGrade: 'O1' } },
-  subjectBands: {}, examDate: '2030-06-05', yearGroup: '6th', essentialsMode: false, northStarData: null, restDays: ['Sunday'],
+ version:2,step:'summary',year:'6th',category:'college-learning',vision:['campus'],subjects:['English','Mathematics'],
+ configs:{English:{level:'higher',current:'H4',target:'H2',reviewed:true},Mathematics:{level:'ordinary',current:'O3',target:'O1',reviewed:true}},
+ date:'2030-06-05',dateConfirmed:true,rest:['Sunday'],gradeSubject:'English',
 });
 
 const { collection: _collectionStub, ...firestoreWrites } = firestoreSpies;
@@ -157,15 +157,15 @@ describe('guest onboarding (no account)', () => {
   it('mounts the same Onboarding for a signed-out visitor with ?setup=guest, with no user behind it', async () => {
     bootParams.set('setup', 'guest');
     renderRouter();
-    expect(await screen.findByText('Hi there — welcome to NextStepUni.')).toBeInTheDocument();
+    expect(await screen.findByText('Make your mark.')).toBeInTheDocument();
     expect(screen.queryByText('LOGIN PAGE')).not.toBeInTheDocument();
     expect(readGuestPhase()).toBe('onboarding');
 
     // The first step works, and the draft lands in the guest namespace, not an account's localStorage.
     fireEvent.click(screen.getByRole('button', { name: /Get Started/ }));
-    expect(await screen.findByText('What year are you in?')).toBeInTheDocument();
+    expect(await screen.findByText('Where are you now?')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /6th/ }));
-    await waitFor(() => expect(JSON.parse(guestStorage.getItem(GUEST_DESKTOP_DRAFT_KEY) ?? '{}')).toMatchObject({ version: 1, step: 2, yearGroup: '6th' }));
+    await waitFor(() => expect(JSON.parse(guestStorage.getItem(GUEST_DESKTOP_DRAFT_KEY) ?? '{}')).toMatchObject({ version: 2, step: 'year', year: '6th' }));
     expect(localStorage.length).toBe(0);
     expect(sessionStorage.getItem(`nsu:guest-setup:${GUEST_DESKTOP_DRAFT_KEY}`)).not.toBeNull();
 
@@ -178,7 +178,7 @@ describe('guest onboarding (no account)', () => {
     guestStorage.setItem(GUEST_DESKTOP_DRAFT_KEY, JSON.stringify(reviewDraft()));
     renderRouter();
 
-    expect(await screen.findByText('You\'re ready.')).toBeInTheDocument();
+    expect(await screen.findByText('You’re ready.')).toBeInTheDocument();
     const dive = screen.getByRole('button', { name: /Dive in/ });
     expect(screen.queryByRole('button', { name: /Start Learning/i })).not.toBeInTheDocument();
 
@@ -245,11 +245,11 @@ describe('guest onboarding (no account)', () => {
     // ...and a signed-in student who does need onboarding gets THEIR onboarding, not the guest one.
     authState.needsOnboarding = true;
     renderRouter();
-    expect(await screen.findByText('Hi Aoife — welcome to NextStepUni.')).toBeInTheDocument();
+    expect(await screen.findByText('Make your mark.')).toBeInTheDocument();
     expect(screen.queryByText(/Dive in/)).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Get Started/ }));
-    await waitFor(() => expect(localStorage.getItem('nextstepuni:onboarding-draft:v1:student-1:fresh')).not.toBeNull());
-    expect(guestStorage.getItem('nextstepuni:onboarding-draft:v1:student-1:fresh')).toBeNull();
+    await waitFor(() => expect(localStorage.getItem('nextstepuni:onboarding-draft:v2:student-1:fresh')).not.toBeNull());
+    expect(guestStorage.getItem('nextstepuni:onboarding-draft:v2:student-1:fresh')).toBeNull();
   });
 
   it('keeps the draft through the unauthenticated-boot storage clear, but not past a deliberate end', () => {
