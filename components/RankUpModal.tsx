@@ -297,7 +297,7 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
                       marginTop: 6,
                     }}
                   >
-                    3 new tiles added to your island. Visit My Journey to see it expand.
+                    3 meadow tiles are ready. Visit My Journey to choose where they go.
                   </p>
                 </div>
               </div>

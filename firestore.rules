@@ -194,12 +194,14 @@ service cloud.firestore {
       // Create: self only, cap initial points
       allow create: if request.auth != null && request.auth.uid == userId
                    && hasActiveSession()
-                   && validInitialPoints();
+                   && validInitialPoints()
+                   && !('paperIsland' in request.resource.data);
 
       // Update: self + field validation on critical gamification fields
       allow update: if request.auth != null && request.auth.uid == userId
         && hasActiveSession()
         && validPointsMutation()
+        && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['paperIsland'])
         // Achievements can only be appended, never removed
         && (!('gamification' in resource.data)
             || !('unlockedAchievements' in resource.data.gamification)

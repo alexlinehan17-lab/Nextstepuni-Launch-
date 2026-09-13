@@ -16,6 +16,7 @@ import {
 } from "./passwordResetPolicy";
 
 initializeApp();
+export { updatePaperIsland } from './paperIsland';
 
 // GDPR Article 15 (export) + Article 17 (erasure) — see ./dataRights.ts.
 // Handlers call getFirestore()/getAuth() lazily, so they run after the

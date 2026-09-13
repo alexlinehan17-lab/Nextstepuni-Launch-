@@ -10,6 +10,8 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 
+vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }));
+
 import SiteGuide from '@/components/SiteGuide';
 
 const cards = [
@@ -31,12 +33,12 @@ describe('SiteGuide', () => {
 
     for (const [index, [title, id]] of cards.entries()) {
       if (index > 0) {
-        fireEvent.click(screen.getByRole('button', { name: `Go to card ${index + 1}: ${title}` }));
+        fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
       }
 
       await waitFor(() => {
-        const capture = screen.getByRole('img', { name: `${title} — real screenshot from the app` });
-        expect(capture).toHaveAttribute('src', `/assets/guide/${id}.jpg`);
+        const capture = screen.getByRole('img', { name: `${title} — screenshot from the app` });
+        expect(capture).toHaveAttribute('src', `/assets/guide/mobile/${id}.webp`);
         expect(capture).toHaveAttribute('data-guide-capture', 'real-app');
       });
       expect(screen.queryByText('Screen capture unavailable')).not.toBeInTheDocument();
@@ -48,12 +50,12 @@ describe('SiteGuide', () => {
     const onGo = vi.fn();
     render(<SiteGuide open onClose={onClose} onGo={onGo} />);
 
-    fireEvent.click(screen.getByRole('button', { name: 'Go to card 3: Learning Paths' }));
+    for (let i = 0; i < 2; i++) fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
     await waitFor(() => expect(screen.getByRole('button', { name: 'Explore Learning Paths' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Explore Learning Paths' }));
     expect(onGo).toHaveBeenLastCalledWith('learning-paths');
 
-    fireEvent.click(screen.getByRole('button', { name: 'Go to card 10: My Journey' }));
+    for (let i = 0; i < 7; i++) fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
     await waitFor(() => expect(screen.getByRole('button', { name: 'Visit My Journey' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Visit My Journey' }));
     expect(onGo).toHaveBeenLastCalledWith('journey');

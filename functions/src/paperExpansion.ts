@@ -1,0 +1,278 @@
+export const expansion = [
+  {
+    "id": "mountain",
+    "name": "Folded peaks",
+    "category": "Terrain",
+    "price": 160,
+    "description": "A snow-capped mountain ridge, a tiny summit flag and a path that rewards the climb.",
+    "artScale": 1,
+    "groundTone": "#cbd0c0",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "volcano",
+    "name": "Ember cone",
+    "category": "Terrain",
+    "price": 190,
+    "description": "A sleepy volcano with an orange lava ribbon and a warm little glow in its crater.",
+    "artScale": 1,
+    "groundTone": "#b6bcaa",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "waterfall",
+    "name": "The falling ribbon",
+    "category": "Terrain",
+    "price": 175,
+    "description": "A blue ribbon of water tumbles over two rocky steps into its own quiet pool.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "canyon",
+    "name": "Copper canyon",
+    "category": "Terrain",
+    "price": 155,
+    "description": "Two worn sandstone towers make a winding passage through warm orange rock.",
+    "artScale": 1,
+    "groundTone": "#ddd0b0",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "glacier",
+    "name": "Blue hush glacier",
+    "category": "Terrain",
+    "price": 175,
+    "description": "Pale blue ice folds around a small meltwater pool. A colder corner of your world.",
+    "artScale": 1,
+    "groundTone": "#dce3dc",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "dunes",
+    "name": "Wander dunes",
+    "category": "Terrain",
+    "price": 100,
+    "description": "Soft sand ridges, a trail of footprints and a little shelter from the wind.",
+    "artScale": 0.92,
+    "groundTone": "#e3d4ac",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "marsh",
+    "name": "The reed maze",
+    "category": "Terrain",
+    "price": 110,
+    "description": "Shallow pools thread through reeds, rushes and stepping stones.",
+    "artScale": 0.92,
+    "groundTone": "#b9cbb6",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "geode",
+    "name": "The lantern geode",
+    "category": "Terrain",
+    "price": 170,
+    "description": "A split rock reveals a pocket of amber crystals. A small surprise in the hillside.",
+    "artScale": 1,
+    "groundTone": "#c6ccbd",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "mushroomgrove",
+    "name": "The giant’s garden",
+    "category": "Terrain",
+    "price": 135,
+    "description": "Oversized mushroom caps turn a patch of ground into a sheltered woodland.",
+    "artScale": 1,
+    "groundTone": "#bbd0b2",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "basalt",
+    "name": "The stepping coast",
+    "category": "Terrain",
+    "price": 145,
+    "description": "Uneven stone columns rise above a pocket of blue water.",
+    "artScale": 0.95,
+    "groundTone": "#bbc6bd",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "castle",
+    "name": "The crooked keep",
+    "category": "Buildings",
+    "price": 280,
+    "description": "Two mismatched towers, an orange gate and a flag over your growing kingdom.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "quarry",
+    "name": "Chalk & chisel",
+    "category": "Buildings",
+    "price": 230,
+    "description": "A little working quarry with cut-stone terraces, a timber crane and a loaded cart.",
+    "artScale": 1,
+    "groundTone": "#d5cfba",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "watermill",
+    "name": "The turning mill",
+    "category": "Buildings",
+    "price": 220,
+    "description": "A timber wheel turns beside a cream mill house and its small water channel.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "forge",
+    "name": "The ember forge",
+    "category": "Buildings",
+    "price": 225,
+    "description": "An open-front forge with a warm furnace, an anvil and tools ready for tomorrow.",
+    "artScale": 1,
+    "groundTone": "#c2cab6",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "bakery",
+    "name": "The first-light bakery",
+    "category": "Buildings",
+    "price": 195,
+    "description": "A striped awning, a bread oven and the first loaves of the morning.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "clocktower",
+    "name": "The borrowed minute",
+    "category": "Buildings",
+    "price": 230,
+    "description": "A slightly crooked clock tower with a bench underneath for taking your time.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "harbour",
+    "name": "Postcard harbour",
+    "category": "Buildings",
+    "price": 215,
+    "description": "A boathouse, a short jetty and one orange boat waiting in a sheltered pool.",
+    "artScale": 0.98,
+    "groundTone": "#bfd0c5",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "bathhouse",
+    "name": "The cloud bath",
+    "category": "Buildings",
+    "price": 205,
+    "description": "A timber soaking tub and a little bathhouse tucked behind leafy screens.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "seedarchive",
+    "name": "The seed archive",
+    "category": "Buildings",
+    "price": 210,
+    "description": "Drawers, seed jars and a growing tower keep a record of everything planted.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "mapmaker",
+    "name": "The mapmaker’s loft",
+    "category": "Buildings",
+    "price": 215,
+    "description": "A steep-roofed studio with maps drying outside and a new route taking shape.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "honeyhouse",
+    "name": "The honey house",
+    "category": "Buildings",
+    "price": 185,
+    "description": "A cottage with two hives and flowers planted for its smallest neighbours.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "museum",
+    "name": "Cabinet of curiosities",
+    "category": "Buildings",
+    "price": 250,
+    "description": "A tiny museum with a fossil in the window and room for things you discover.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "bridgehouse",
+    "name": "The bridgekeeper",
+    "category": "Buildings",
+    "price": 235,
+    "description": "A little house sits over a stone arch, watching the stream pass underneath.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "cablecar",
+    "name": "The summit stop",
+    "category": "Buildings",
+    "price": 240,
+    "description": "A small mountain station with an orange gondola ready for its next trip.",
+    "artScale": 1,
+    "groundTone": "#c8cfbf",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  },
+  {
+    "id": "bookbindery",
+    "name": "The bookbinder",
+    "category": "Buildings",
+    "price": 205,
+    "description": "A workshop where loose pages become books, with a press waiting by the door.",
+    "artScale": 1,
+    "groundTone": "#bfd2b7",
+    "isNew": true,
+    "assetFolder": "2026-09-13-expansion"
+  }
+] as const;
+export const expansionIds = new Set<string>(expansion.map(t=>t.id));

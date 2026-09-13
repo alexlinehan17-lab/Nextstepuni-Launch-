@@ -61,10 +61,10 @@ describe('mobile/tablet-only design boundary', () => {
     expect(screen.getByLabelText('Email')).toHaveAttribute('autocomplete', 'email');
     expect(screen.getByRole('button', { name: 'Forgot?' })).toBeInTheDocument();
   });
-  it('does not mount or write the new onboarding on desktop', () => {
+  it('mounts the approved desktop onboarding and saves its shared draft', () => {
     const { container } = render(<Onboarding userId="desktop-scope" userName="Alex" onComplete={vi.fn()} onSkip={vi.fn()} />);
-    expect(container.querySelector('.setup-flow')).toBeNull();
-    expect(localStorage.getItem('nextstepuni:onboarding-draft:v2:desktop-scope:fresh')).toBeNull();
+    expect(container.querySelector('.desk-flow')).not.toBeNull();
+    expect(localStorage.getItem('nextstepuni:onboarding-draft:v2:desktop-scope:fresh')).not.toBeNull();
   });
   it('mounts the new onboarding for tablets', () => {
     device('Mozilla/5.0 Macintosh Safari', 'MacIntel', 5);
