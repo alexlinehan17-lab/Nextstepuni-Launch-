@@ -154,7 +154,7 @@ const CARDS: GuideCard[] = [
     bullets: [
       'Place tiles to lift the mist and discover the Blue-pencil map.',
       'Choose a tile from the tray, then choose an open corner on your island.',
-      'Your north-star goal stays visible at the heart of the world.',
+      'Find mythic creatures, hidden islands and treasure as you explore.',
     ],
     go: { label: 'Visit My Journey', action: 'journey' },
   },
