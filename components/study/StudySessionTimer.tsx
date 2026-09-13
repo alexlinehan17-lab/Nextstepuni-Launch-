@@ -1,10 +1,12 @@
 import React from 'react';
 import { Pause, Play, X } from 'lucide-react';
 import { MotionDiv, useReducedMotion } from '../Motion';
-import { PROMPT_AUTO_DISMISS_SECONDS } from '../../studySessionData';
+import { PROMPT_AUTO_DISMISS_SECONDS, getSubjectHex } from '../../studySessionData';
 import './study-session.css';
+import type { StudyTimerAppearance } from '../../hooks/useStudyTimerAppearance';
 
 interface StudySessionTimerProps {
+  appearance?: StudyTimerAppearance;
   subject: string;
   subjectColor: string;
   type: string;
@@ -20,12 +22,16 @@ interface StudySessionTimerProps {
 
 const formatTime = (seconds: number) => `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${Math.floor(seconds % 60).toString().padStart(2, '0')}`;
 
-export default function StudySessionTimer({ subject, subjectColor, type, totalSeconds, elapsedSeconds, paused, onLeave, onTogglePause, prompt, onCompletePrompt, onSkipPrompt }: StudySessionTimerProps) {
+export default function StudySessionTimer({ appearance = 'ink', subject, subjectColor, type, totalSeconds, elapsedSeconds, paused, onLeave, onTogglePause, prompt, onCompletePrompt, onSkipPrompt }: StudySessionTimerProps) {
   const remaining = Math.max(0, totalSeconds - elapsedSeconds);
   const progress = totalSeconds > 0 ? Math.min(100, elapsedSeconds / totalSeconds * 100) : 0;
   const reduceMotion = useReducedMotion();
+  const subjectHex = getSubjectHex(subject);
+  // Paint the landscape with pale tints so the dark numerals remain legible
+  // even for Mathematics, whose established subject colour is near black.
   return (
-    <div className="ss-timer-content" style={{ '--ss-subject': subjectColor } as React.CSSProperties}>
+    <div className={`ss-timer-content ss-room-${appearance} ${paused ? 'ss-room-paused' : ''} ${prompt ? 'ss-room-coaching' : ''}`} style={{ '--ss-subject': subjectColor, '--ss-landscape': subjectHex, '--ss-session-progress': `${progress}%` } as React.CSSProperties}>
+      {appearance === 'layers' ? <div className="ss-colour-landscape" aria-hidden="true">{[0, 1, 2, 3].map(band => <i key={band} style={{ '--band': band } as React.CSSProperties} />)}</div> : <div className="ss-ink-edge" aria-hidden="true"><i style={{ height: `${progress}%` }} /></div>}
       <header className="ss-timer-navigation"><span className="ss-eyebrow">The study room</span><button type="button" onClick={onLeave} aria-label="Leave study session"><X size={20} aria-hidden="true" /></button></header>
       <main className="ss-timer-main">
         <p className="ss-timer-subject"><i aria-hidden="true" />{subject}</p>

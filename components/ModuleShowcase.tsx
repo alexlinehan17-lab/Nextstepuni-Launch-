@@ -1,3 +1,4 @@
+import './module-cards.css';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -235,7 +236,7 @@ export default function ModuleShowcase({
                 key={item.id}
                 type="button"
                 onClick={() => onSelectCourse(item.id)}
-                className="group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                className="world-ink-card group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
                 style={{ borderColor: itemInProgress ? '#F26B1F' : '#383838' }}
               >
                 <div className="flex items-start gap-3">
@@ -295,12 +296,7 @@ export default function ModuleShowcase({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ type: 'spring', stiffness: 240, damping: 32, opacity: { duration: 0.18 } }}
-              className="rounded-[24px] md:rounded-[28px] overflow-hidden"
-              style={{
-                background: '#FFFFFF',
-                border: `1px solid ${theme.blob}66`,
-                boxShadow: '0 4px 18px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04)',
-              }}
+              className="world-ink-card rounded-[24px] md:rounded-[28px] overflow-hidden"
             >
               <div className="p-6 md:p-9 lg:p-10">
                 {/* ── Eyebrow row — full width, above both columns ── */}
@@ -519,12 +515,7 @@ export default function ModuleShowcase({
                       transition={{ type: 'spring', stiffness: 240, damping: 32 }}
                       onClick={() => goTo(originalIdx)}
                       whileHover={{ y: -2 }}
-                      className="shrink-0 w-[260px] md:w-[280px] text-left rounded-2xl overflow-hidden snap-start transition-shadow hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                      style={{
-                        background: '#FFFFFF',
-                        border: `1px solid ${theme.blob}66`,
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                      }}
+                      className="world-ink-card shrink-0 w-[260px] md:w-[280px] text-left rounded-2xl overflow-hidden snap-start transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
                     >
                       <div className="flex flex-col h-full p-5 min-h-[220px]">
                         <div className="flex justify-center -mt-4 -mb-2">

@@ -1,0 +1,4 @@
+/* Presentation only: existing shared-layout promotion and carousel controls remain. */
+.world-ink-card {background:#fff;border:1.5px solid #383838;border-radius:16px;box-shadow:4px 4px 0 #383838}
+.dark .world-ink-card {background:#202320;border-color:#93998c;box-shadow:4px 4px 0 #93998c}
+@media(max-width:700px) {.world-ink-card{border-radius:13px;box-shadow:3px 3px 0 #383838}}

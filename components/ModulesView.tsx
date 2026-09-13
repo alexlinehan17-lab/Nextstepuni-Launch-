@@ -1,3 +1,4 @@
+import './module-cards.css';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -280,9 +281,7 @@ const ProgressRing: React.FC<{
 
 // ── Card wrapper ────────────────────────────────────────────────────────
 //
-// Cream card with a faint world-colour tint at one corner (no hard
-// gradient), 1px world-colour border at 25% opacity, soft warm shadow.
-// Same recipe for hero and satellites — only sizing differs.
+// White ink cards retain the existing hero and satellite interactions.
 
 interface CardWrapperProps {
   config: CategoryConfig;
@@ -293,21 +292,6 @@ interface CardWrapperProps {
 }
 
 const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onClick, ariaLabel }) => {
-  const { blob, tintFocal, worldKey } = config;
-
-  // Card surface + soft world-colour tint at one corner (radial fade, no hard
-  // edge). The base layer uses var(--bg-card) so dark mode swaps in zinc-900
-  // automatically; the world-colour tint stays the same (~22% alpha) and
-  // reads fine on either surface.
-  const background =
-    worldKey === 'mind'
-      ? 'var(--bg-card)'
-      : `radial-gradient(ellipse 60% 55% ${tintFocal}, ${blob}38 0%, transparent 70%), var(--bg-card)`;
-  const border = `1px solid ${blob}66`; // ~40% — visible but soft.
-  const boxShadow = isHero
-    ? '0 4px 18px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04)'
-    : '0 2px 8px rgba(0,0,0,0.04)';
-
   return (
     <motion.div
       layoutId={`category-card-${config.id}`}
@@ -318,8 +302,7 @@ const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onC
       <motion.div
         layout="position"
         whileHover={isHero ? undefined : { y: -2 }}
-        className={`relative h-full overflow-hidden ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
-        style={{ background, border, boxShadow }}
+        className={`world-ink-card relative h-full overflow-hidden ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
       >
         <button
           type="button"
@@ -611,8 +594,8 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                     type="button"
                     onClick={() => onSelectCategory(cat.id)}
                     aria-label={`Open ${cat.name} world`}
-                    className="group flex min-h-[116px] w-full items-center gap-3 rounded-[15px] border bg-white p-3 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
-                    style={{ borderColor: isCurrent ? '#F26B1F' : `${cat.blob}aa`, borderWidth: isCurrent ? 2 : 1 }}
+                    className="world-ink-card group flex min-h-[116px] w-full items-center gap-3 rounded-[15px] border bg-white p-3 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                    style={{ borderColor: isCurrent ? '#F26B1F' : undefined, borderWidth: isCurrent ? 2 : 1.5 }}
                   >
                     <div className="flex h-24 w-[88px] shrink-0 items-center justify-center overflow-visible">
                       <WorldIconBlob world={cat.worldKey} size={72} />

@@ -68,6 +68,7 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     mocks.endSession.mockReset();
     mocks.cancelSession.mockReset();
     mocks.startSession.mockReset();
+    localStorage.clear();
     mocks.phase = 'active';
     mocks.canRecordSession = true;
   });
@@ -124,6 +125,7 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     mocks.mobile = mobile;
     mocks.phase = 'idle';
     mocks.startSession.mockReset();
+    localStorage.clear();
   });
 
   test('prefills a timetable block and starts with the edited type and duration', () => {
@@ -140,6 +142,11 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
         todayBlocks={[{ subject: 'Mathematics', sessionType: 'revision', durationMinutes: 45, dateKey: '2026-09-12', blockId: 'sample-block' }]}
       />,
     );
+    const colourSwitch = screen.getByRole('switch', { name: 'I want my timer to have more colour!' });
+    const subjectsHeading = screen.getByRole('heading', { name: 'What are you studying?' });
+    expect(colourSwitch.compareDocumentPosition(subjectsHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    fireEvent.click(colourSwitch);
+    expect(colourSwitch).toHaveAttribute('aria-checked', 'true');
     expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
     fireEvent.click(screen.getByRole('button', { name: 'Set up Mathematics, 45 minutes' }));
     expect(screen.getByRole('button', { name: '45 min' })).toHaveAttribute('aria-pressed', 'true');
