@@ -1599,7 +1599,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #faf8ef;
+  background: #fff;
   gap: 20px;
 }
 .journey-paper .paper-loading > svg {
