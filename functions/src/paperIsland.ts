@@ -1,7 +1,7 @@
 import { onCall, HttpsError } from "firebase-functions/v2/https";
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import { randomInt } from "crypto";
-import { CALLABLE_OPTIONS, assertSensitiveAuth } from "./security";
+import { CALLABLE_OPTIONS, assertUnrevokedAuth } from "./security";
 import {
   applyPaperCommand,
   PaperIslandError,
@@ -13,7 +13,9 @@ import {
 export const updatePaperIsland = onCall(CALLABLE_OPTIONS, async (request) => {
   if (!request.auth)
     throw new HttpsError("unauthenticated", "Sign in to build your island.");
-  await assertSensitiveAuth(request.auth);
+  // Journey is used throughout a study session. A fresh sign-in is required
+  // for sensitive account changes, not for opening or building an island.
+  await assertUnrevokedAuth(request.auth);
   if (!request.data || typeof request.data !== "object")
     throw new HttpsError("invalid-argument", "Choose an island action.");
   const ref = getFirestore().doc(`progress/${request.auth.uid}`);

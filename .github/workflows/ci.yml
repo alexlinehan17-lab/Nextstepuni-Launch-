@@ -23,6 +23,11 @@ jobs:
 
       - run: npm ci
 
+      # Callable regression tests exercise the real backend authorization code.
+      - name: Install callable test dependencies
+        run: npm ci
+        working-directory: functions
+
       - uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
         with:
           distribution: temurin
