@@ -1662,3 +1662,29 @@
     font-size: 11px;
   }
 }
+.journey-paper .shelf-tile > .shelf-portrait {
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  .journey-paper .coast-build-tray .student-tile-grid {
+    grid-auto-rows: 92px;
+  }
+  .journey-paper .coast-build-tray .shelf-tile {
+    padding: 1px 5px 3px;
+    overflow: hidden;
+  }
+  .journey-paper .coast-build-tray .shelf-portrait,
+  .journey-paper .coast-build-tray .shelf-tile .tile-portrait {
+    height: 49px;
+  }
+  .journey-paper .coast-build-tray .shelf-tile > strong {
+    height: 22.5px;
+    min-height: 22.5px;
+    overflow: hidden;
+  }
+  .journey-paper .coast-build-tray .shelf-tile > span:not(.shelf-portrait) {
+    margin-top: 1px;
+    white-space: nowrap;
+  }
+}

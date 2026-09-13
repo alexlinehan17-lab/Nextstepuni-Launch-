@@ -403,7 +403,6 @@ export function TileShelf({
                 {t.id === "meadow" && credits > 0
                   ? `${credits} earned tiles`
                   : `${t.price} JP`}
-                {t.price > balance ? " · save a little more" : ""}
               </span>
             </button>
           );
