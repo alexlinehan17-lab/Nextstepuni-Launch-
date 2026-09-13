@@ -4,12 +4,12 @@
 */
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { MotionDiv } from './Motion';
 import {
   User, Home, PanelLeft, ChartNoAxesCombined, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Bell, MessageSquare, HelpCircle, Compass, Route, Mountain
 } from 'lucide-react';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
-import ResumeCard from './ResumeCard';
+import StudentHomeContent from './StudentHomeContent';
+import type { StudySessionRecord } from '../studySessionData';
 import HomeNextStep from './HomeNextStep';
 import { KnowledgeTree as DesktopKnowledgeTree } from './KnowledgeTree.desktop';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
@@ -19,7 +19,6 @@ import { type UserSettings } from '../types';
 import { toDateKey } from './subjectData';
 import { type StudyBlock } from './subjectData';
 import Avatar from './Avatar';
-import { COLORS } from '../design/tokens';
 import { toggleNotificationPanel } from '../utils/notificationPanel';
 
 export type CategoryType =
@@ -40,6 +39,8 @@ interface KnowledgeTreeProps {
   onGoToDashboard: () => void;
   onGoToLearningPaths: () => void;
   onGoToJourney: () => void;
+  onGoToDirection?: () => void;
+  studySessions?: StudySessionRecord[];
   onGoToStudy?: () => void;
   onGoToInsights?: () => void;
   onGoToCutContent?: () => void;
@@ -84,7 +85,7 @@ interface KnowledgeTreeProps {
 
 const noop = () => {};
 
-const MobileKnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, studentProfile, timetableCompletions, onOpenTool, uid, onOpenSiteGuide = noop, onOpenFeedback = noop, onOpenMobileProfile = noop, hasUnreadNotifications = false, gamificationState, onPlannedStudy }) => {
+const MobileKnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToDirection, studySessions, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, pointsBalance, studentProfile, timetableCompletions, onOpenTool, uid, onOpenSiteGuide = noop, onOpenFeedback = noop, onOpenMobileProfile = noop, hasUnreadNotifications = false, gamificationState, onPlannedStudy }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   // Site Guide (the "?") + one-time first-visit coach marks.
   const [coachActive, setCoachActive] = useState(false);
@@ -352,52 +353,10 @@ const MobileKnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _
         </button>
       </aside>
 
-      {/* Main content */}
-      <div className={`flex-1 flex flex-col items-center pt-8 md:pt-16 pb-40 md:pb-32 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
-      <div className="home-next-step w-full max-w-7xl px-5 sm:px-6">
-        {/* ── Greeting — simple typography on cream ── */}
-        <MotionDiv
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-6 flex items-start justify-between gap-4"
-        >
-          <div className="min-w-0">
-            <p className="text-[12px] font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: COLORS.accent }}>
-              Your learning, your way
-            </p>
-            <p className="text-[15px] leading-relaxed text-[var(--ink-secondary)]">{(() => { const h = new Date().getHours(); const firstName = userName?.split(' ')[0] || ''; const name = firstName ? `, ${firstName}` : ''; return h < 12 ? `Good morning${name}.` : h < 18 ? `Good afternoon${name}.` : `Good evening${name}.`; })()}</p>
-            <h1 className="mt-1 font-serif text-[36px] font-semibold tracking-tight leading-tight text-[var(--ink-primary)]">Your next step.</h1>
-
-          </div>
-          <button
-            type="button"
-            onClick={onOpenMobileProfile}
-            aria-label="Open profile and settings"
-            data-coach="help"
-            className="relative mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1.5px] border-[#383838] bg-white shadow-[2px_2px_0_0_#383838] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none md:hidden dark:border-zinc-600 dark:bg-zinc-800"
-          >
-            {userAvatarSeed ? (
-              <Avatar seed={userAvatarSeed} alt="" className="h-full w-full object-cover" />
-            ) : (
-              <User size={18} strokeWidth={1.6} className="text-zinc-500" />
-            )}
-            {hasUnreadNotifications && <span className="absolute right-0.5 top-0.5 h-2.5 w-2.5 rounded-full border-2 border-white bg-rose-500 dark:border-zinc-800" />}
-          </button>
-        </MotionDiv>
-
-        {/* Pick up where you left off — deep-link back to the last module/tool */}
-        <ResumeCard
-          uid={uid}
-          allCourses={allCourses}
-          userProgress={userProgress}
-          onSelectModule={onSelectModule}
-          onOpenTool={onOpenTool}
-          onBrowseModules={onGoToModules}
-        />
-
-        <HomeNextStep ready={planReady} error={planError} onPlannedStudy={onPlannedStudy} blocks={todayBlocks} completions={todayCompletions} hasProfile={Boolean(studentProfile?.subjects.length)} gamification={gamificationState} onStudy={onGoToStudy} onPlan={onOpenTool ? () => onOpenTool('planner') : undefined} onProgress={onGoToDashboard} />
-      </div>
+      {/* The account drawer stays in its existing shell. */}
+      <div className={`flex-1 bg-white dark:bg-[#181b18] transition-[margin] duration-300 ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
+        <StudentHomeContent uid={uid} userName={userName} userAvatarSeed={userAvatarSeed} onOpenMobileProfile={onOpenMobileProfile} hasUnreadNotifications={hasUnreadNotifications} allCourses={allCourses} categoryTitles={categoryTitles} userProgress={userProgress} studySessions={studySessions} pointsBalance={pointsBalance} onSelectModule={onSelectModule} onGoToStudy={onGoToStudy} onGoToModules={onGoToModules} onGoToDashboard={onGoToDashboard} onGoToLearningPaths={onGoToLearningPaths} onGoToDirection={onGoToDirection} onGoToJourney={onGoToJourney} onGoToInnovationZone={onGoToInnovationZone} onOpenTool={onOpenTool} />
+        <div className="mx-auto max-w-4xl px-5 pb-24"><HomeNextStep ready={planReady} error={planError} onPlannedStudy={onPlannedStudy} blocks={todayBlocks} completions={todayCompletions} hasProfile={Boolean(studentProfile?.subjects.length)} gamification={gamificationState} onStudy={onGoToStudy} onPlan={onOpenTool ? () => onOpenTool('planner') : undefined} onProgress={onGoToDashboard} /></div>
       </div>
 
       {/* One-time first-visit coach marks — end by pointing at the "?". */}
@@ -412,7 +371,7 @@ const MobileKnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _
   );
 };
 
-/** Desktop remains on the pre-rollout screen. */
+/** Both layouts share the approved Home content and retain their account shell. */
 export const KnowledgeTree: React.FC<KnowledgeTreeProps> = props => {
   const mobile = useMobileAppDesign();
   return mobile ? <MobileKnowledgeTree {...props} /> : <DesktopKnowledgeTree {...props} />;

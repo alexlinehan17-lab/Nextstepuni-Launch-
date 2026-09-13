@@ -10,6 +10,8 @@ import { ModuleLayout } from '@/components/ModuleLayout';
 import { ModulePositionProvider } from '@/contexts/ModulePositionContext';
 import { type ModuleTheme } from '@/types';
 
+vi.mock('@/contexts/NavigationContext', () => ({ useNavigation: () => ({ navigateToStudySession: vi.fn() }) }));
+
 const SectionIcon: React.FC<{ size?: number }> = ({ size = 16 }) => (
   <svg aria-hidden="true" width={size} height={size} />
 );

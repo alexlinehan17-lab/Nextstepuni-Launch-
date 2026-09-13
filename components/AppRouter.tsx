@@ -651,6 +651,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onGoToYearPlans={handleGoToYearPlans}
       onGoToWipTools={handleGoToWipTools}
       onGoToJourney={handleGoToJourney}
+      onGoToDirection={() => northStar ? nav.navigateToDirection() : setNorthStarEditOpen(true)}
+      studySessions={studySessions}
       onGoToStudy={handleGoToStudy}
       onGoToInsights={handleGoToInsights}
       onGoToCutContent={handleGoToCutContent}

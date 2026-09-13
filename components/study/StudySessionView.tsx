@@ -12,6 +12,7 @@ import { BookOpen, Target, RotateCcw, Clock, Trophy, CalendarCheck, type LucideI
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import StudySessionSetup from './StudySessionSetup';
 import StudySessionTimer from './StudySessionTimer';
+import { useStudyTimerAppearance } from '../../hooks/useStudyTimerAppearance';
 import { getSubjectFill } from '../../utils/subjectColors';
 import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
 import PointsExplainer from '../PointsExplainer';
@@ -134,6 +135,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   onSetUpProfile,
 }) => {
   const session = useStudySession(user.uid, userProgress, allCourses);
+  const [timerAppearance, setTimerAppearance] = useStudyTimerAppearance(user.uid);
   const { rawProgressDoc, updateDemoProgress } = useProgress();
   const isDemo = user.uid === DEMO_STUDENT_UID;
 
@@ -426,6 +428,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     return (
       <div className="ss-view">
         <StudySessionSetup
+          colourfulTimer={timerAppearance === 'layers'}
+          onColourfulTimerChange={value => setTimerAppearance(value ? 'layers' : 'ink')}
           subjects={subjects}
           selectedSubject={selectedSubject}
           selectedType={selectedType}
@@ -494,6 +498,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     return (
       <div className="ss-timer-view">
         <StudySessionTimer
+          appearance={timerAppearance}
           subject={session.subject}
           subjectColor={subjectHex}
           type={typeConfig.label}

@@ -14,6 +14,7 @@ import { useSettingsContext } from '../contexts/SettingsContext';
 import { useModulePosition } from '../contexts/ModulePositionContext';
 import { COLORS } from '../design/tokens';
 import ModuleCompleteScreen from './ModuleCompleteScreen';
+import { useNavigation } from '../contexts/NavigationContext';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 
 const CONFETTI_COLORS = ['#CC785C', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6', '#ef4444', '#ec4899'];
@@ -81,6 +82,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   totalModules,
   northStarStatement,
 }) => {
+  const navigation = useNavigation();
   const settingsCtx = useSettingsContext();
   const mobileAppDesign = useMobileAppDesign();
   const modulePosition = useModulePosition();
@@ -467,6 +469,8 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
         sectionsCount={sections.length}
         northStarStatement={northStarStatement}
         onContinue={handleCelebrationContinue}
+        onPractice={() => { setShowCelebration(false); navigation.navigateToStudySession(); }}
+        onReview={() => { setShowCelebration(false); setActiveSection(0); }}
       />
     </div>
   );
