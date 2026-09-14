@@ -1628,8 +1628,11 @@
 .journey-paper .student-map {
   position: relative;
 }
+/* A modal <dialog> is pinned to both the top and bottom of the viewport, so
+   `height: auto` stretches it to max-height under short content. fit-content
+   is the browser default, restored after `.journey-paper { height: 100% }`. */
 .journey-paper.island-dialog {
-  height: auto;
+  height: fit-content;
   margin: auto;
 }
 .journey-paper .shelf-portrait {
