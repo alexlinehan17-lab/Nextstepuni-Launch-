@@ -31,7 +31,7 @@ export default function StudySessionTimer({ appearance = 'ink', subject, subject
   // even for Mathematics, whose established subject colour is near black.
   return (
     <div className={`ss-timer-content ss-room-${appearance} ${paused ? 'ss-room-paused' : ''} ${prompt ? 'ss-room-coaching' : ''}`} style={{ '--ss-subject': subjectColor, '--ss-landscape': subjectHex, '--ss-session-progress': `${progress}%` } as React.CSSProperties}>
-      {appearance === 'layers' ? <div className="ss-colour-landscape" aria-hidden="true">{[0, 1, 2, 3].map(band => <i key={band} style={{ '--band': band } as React.CSSProperties} />)}</div> : <div className="ss-ink-edge" aria-hidden="true"><i style={{ height: `${progress}%` }} /></div>}
+      {appearance === 'layers' ? <div className="ss-colour-landscape" aria-hidden="true">{[0, 1, 2, 3, 4].map(band => <i key={band} style={{ '--band': band } as React.CSSProperties} />)}</div> : <div className="ss-ink-edge" aria-hidden="true"><i style={{ height: `${progress}%` }} /></div>}
       <header className="ss-timer-navigation"><span className="ss-eyebrow">The study room</span><button type="button" onClick={onLeave} aria-label="Leave study session"><X size={20} aria-hidden="true" /></button></header>
       <main className="ss-timer-main">
         <p className="ss-timer-subject"><i aria-hidden="true" />{subject}</p>

@@ -65,7 +65,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
         </header>
         <div className="ss-layout">
           <div className="ss-choices">
-            {props.onColourfulTimerChange && <div className="ss-appearance-choice"><div><label htmlFor={`${id}-colourful`}>I want my timer to have more colour!</label><p id={`${id}-appearance-help`}>{props.colourfulTimer ? 'Colour in motion · a changing landscape in your subject’s colour.' : 'After hours · a quiet dark study room.'}</p></div><button id={`${id}-colourful`} type="button" role="switch" aria-checked={Boolean(props.colourfulTimer)} aria-label="I want my timer to have more colour!" aria-describedby={`${id}-appearance-help`} onClick={() => props.onColourfulTimerChange?.(!props.colourfulTimer)}><span /></button></div>}
+            {props.onColourfulTimerChange && <div className="ss-appearance-choice"><div><label htmlFor={`${id}-colourful`}>I want my timer to have more colour!</label><p id={`${id}-appearance-help`}>{props.colourfulTimer ? 'Paper horizon · gentle layers in your subject’s colour.' : 'After hours · a quiet dark study room.'}</p></div><button id={`${id}-colourful`} type="button" role="switch" aria-checked={Boolean(props.colourfulTimer)} aria-label="I want my timer to have more colour!" aria-describedby={`${id}-appearance-help`} onClick={() => props.onColourfulTimerChange?.(!props.colourfulTimer)}><span /></button></div>}
             <section className="ss-section" aria-labelledby={`${id}-subjects`}>
               <div className="ss-section-title"><span aria-hidden="true">01</span><h2 id={`${id}-subjects`}>What are you studying?</h2></div>
               {subjects.length > 0 ? <div className="ss-subjects">
