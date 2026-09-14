@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NextStepUni · mobile development review</title>
+    <style>
+      body { margin: 0; background: #eceae6; color: #1a1a1a; font: 14px system-ui; }
+      header { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; flex-wrap: wrap; }
+      button { min-height: 44px; background: white; border: 1px solid #aaa; border-radius: 6px; padding: 10px 14px; cursor: pointer; }
+      button[aria-pressed="true"] { background: #1a1a1a; color: white; }
+      iframe { display: block; margin: 0 auto 24px; border: 1px solid #ccc; width: 390px; height: 844px; background: white; max-width: 100%; }
+      p { text-align: center; padding: 0 16px; color: #625e55; }
+      output { display: block; max-width: 760px; margin: 10px auto 20px; padding: 14px; white-space: pre-wrap; font: 12px/1.5 ui-monospace, monospace; }
+    </style>
+  </head>
+  <body>
+    <header aria-label="Review controls">
+      <span>Actual app · local development</span>
+      <button data-device="320,568" aria-pressed="false">320px</button>
+      <button data-device="390,844" aria-pressed="true">390px</button>
+      <button data-device="768,1024" aria-pressed="false">Tablet</button>
+      <button data-device="844,390" aria-pressed="false">Phone landscape</button>
+      <button data-device="1366,1024" aria-pressed="false">Tablet landscape</button>
+      <button data-device="1280,800" aria-pressed="false">Desktop</button>
+      <button data-view="tree">Home</button>
+      <button data-view="onboarding">Onboarding</button>
+      <button id="layout-check">Check layout</button>
+    </header>
+    <iframe title="NextStepUni app" data-app-preview="mobile" src="/"></iframe>
+    <p>Use the local Demo Account to test without changing real student records. This review page is not a production build entry.</p>
+    <output id="layout-result" aria-live="polite"></output>
+    <script type="module">
+      const frame = document.querySelector('iframe');
+      document.querySelectorAll('[data-device]').forEach(button => button.addEventListener('click', () => {
+        const [width, height] = button.dataset.device.split(',');
+        frame.style.width = width + 'px';
+        frame.style.height = height + 'px';
+        const previous = frame.getAttribute('data-app-preview');
+        const next = width === '1280' ? 'desktop' : 'mobile';
+        frame.setAttribute('data-app-preview', next);
+        // Rotation/size changes preserve live form state. Only a change of
+        // device family remounts the distinct mobile/desktop experience.
+        if (previous !== next) frame.src = frame.contentWindow.location.href;
+        document.querySelectorAll('[data-device]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+      }));
+      document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => {
+        frame.src = '/?view=' + button.dataset.view;
+      }));
+      document.getElementById('layout-check').addEventListener('click', () => {
+        const doc = frame.contentDocument;
+        const win = frame.contentWindow;
+        const width = doc.documentElement.clientWidth;
+        const elements = [...doc.querySelectorAll('h1,h2,h3,p,label,input,select,button,a,article,section')];
+        const visible = elements.filter(element => {
+          const rect = element.getBoundingClientRect();
+          const style = win.getComputedStyle(element);
+          return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && !element.closest('[aria-hidden="true"],[hidden]');
+        });
+        const describe = element => `${element.tagName.toLowerCase()} ${(element.getAttribute('aria-label') || element.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 75)}`;
+        const overflow = visible.filter(element => {
+          const rect = element.getBoundingClientRect();
+          if (rect.left >= -1 && rect.right <= width + 1) return false;
+          for (let parent = element.parentElement; parent && parent !== doc.body; parent = parent.parentElement) {
+            if (['auto','scroll','hidden','clip'].includes(win.getComputedStyle(parent).overflowX)) return false;
+          }
+          return true;
+        });
+        const small = visible.filter(element => ['BUTTON','INPUT','SELECT','A'].includes(element.tagName)).filter(element => {
+          const rect = element.getBoundingClientRect();
+          return rect.height < 43 || rect.width < 43;
+        });
+        document.getElementById('layout-result').textContent = [
+          `Viewport: ${width} × ${doc.documentElement.clientHeight}; document width: ${doc.documentElement.scrollWidth}`,
+          `Horizontal overflow: ${overflow.length}`, ...overflow.slice(0, 8).map(describe),
+          `Controls smaller than 44px (check extended hit areas): ${small.length}`, ...small.slice(0, 8).map(describe),
+          `Broken images: ${[...doc.images].filter(img => img.complete && img.naturalWidth === 0).length}`,
+        ].join('\n');
+      });
+    </script>
+  </body>
+</html>
