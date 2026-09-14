@@ -9,7 +9,7 @@ import {
   initializeTestEnvironment,
   type RulesTestEnvironment,
 } from '@firebase/rules-unit-testing';
-import { collection, deleteDoc, doc, getDoc, getDocs, setDoc, updateDoc } from 'firebase/firestore';
+import { collection, deleteDoc, doc, getDoc, getDocs, increment, setDoc, updateDoc } from 'firebase/firestore';
 import { getBytes, ref, uploadBytes } from 'firebase/storage';
 import { ADMIN_EMAIL } from '../../utils/adminIdentity';
 
@@ -43,6 +43,27 @@ afterAll(async () => {
 });
 
 describe('Firestore ownership and staff boundaries', () => {
+  it('allows repeatable 100 JP credits to the owner while preserving spending and other progress', async () => {
+    await environment.withSecurityRulesDisabled(async context => {
+      await setDoc(doc(context.firestore(), 'progress/alice'), {
+        pointsData: { totalEarned: 250, totalSpent: 75 },
+        'module-one': { unlockedSection: 3 },
+      });
+    });
+    const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
+    const credit = () => setDoc(doc(db, 'progress/alice'), {
+      pointsData: { totalEarned: increment(100) },
+    }, { merge: true });
+    await assertSucceeds(Promise.all([credit(), credit()]));
+    expect((await getDoc(doc(db, 'progress/alice'))).data()).toEqual({
+      pointsData: { totalEarned: 450, totalSpent: 75 },
+      'module-one': { unlockedSection: 3 },
+    });
+    await assertFails(setDoc(doc(db, 'progress/bob'), {
+      pointsData: { totalEarned: increment(100) },
+    }, { merge: true }));
+  });
+
   it('allows a user to read their own private documents', async () => {
     const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
     await assertSucceeds(getDoc(doc(db, 'users/alice')));
