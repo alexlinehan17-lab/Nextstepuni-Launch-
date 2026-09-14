@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
 import StudentHomeContent from './StudentHomeContent';
+import GetPointsButton from './GetPointsButton';
 import type { StudySessionRecord } from '../studySessionData';
 import HomeNextStep from './HomeNextStep';
 import { KnowledgeTree as DesktopKnowledgeTree } from './KnowledgeTree.desktop';
@@ -215,6 +216,7 @@ const MobileKnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _
               </span>
             </button>
           ))}
+          <GetPointsButton uid={uid} expanded={sidebarOpen} />
         </nav>
 
         {/* User actions */}

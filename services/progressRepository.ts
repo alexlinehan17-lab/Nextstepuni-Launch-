@@ -103,6 +103,15 @@ export function saveModuleProgress(
   return setDoc(doc(db, 'progress', uid), patch, { merge: true });
 }
 
+export const DRAWER_POINTS_CREDIT = 100;
+
+/** A repeatable drawer credit. Increment only earnings, preserving all spending. */
+export function creditDrawerPoints(uid: string): Promise<void> {
+  return setDoc(doc(db, 'progress', uid), {
+    pointsData: { totalEarned: increment(DRAWER_POINTS_CREDIT) },
+  }, { merge: true });
+}
+
 /** Merge only the supplied gamification leaves, never a stale full snapshot. */
 export function saveGamificationFields(
   uid: string,
