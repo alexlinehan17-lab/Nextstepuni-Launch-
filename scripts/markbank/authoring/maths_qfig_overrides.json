@@ -52,5 +52,25 @@
       { "page": 30, "top": 51, "bottom": 223 }
     ],
     "description": "A maths test gives a student 0, 1, 2, or 3 marks on one question with respective proportions 0.19, p, 2r, and r, where p and r are non-negative real numbers. Part (e) asks for the largest possible expected mark."
+  },
+  "maths-2023-ol-p1-q2-a-iv": {
+    "regions": [
+      { "page": 6, "top": 55, "bottom": 95 },
+      { "page": 6, "top": 420, "bottom": 462 },
+      { "page": 7, "top": 52, "bottom": 74 }
+    ]
+  },
+  "maths-2025-hl-p2-q3-b": {
+    "regions": [
+      { "page": 8, "top": 55, "bottom": 350 },
+      { "page": 9, "top": 340, "bottom": 400 }
+    ]
+  },
+  "maths-2022-hl-p2-q8-b-v": {
+    "regions": [
+      { "page": 20, "top": 55, "bottom": 351 },
+      { "page": 21, "top": 480, "bottom": 530 },
+      { "page": 22, "top": 55, "bottom": 209 }
+    ]
   }
 }

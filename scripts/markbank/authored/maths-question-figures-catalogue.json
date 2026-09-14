@@ -2888,7 +2888,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 1 Q2(a)(iv)",
-  "description": "The question as printed on the paper \u2014 In this question, i\u00b2 = \u22121. The complex number z\u2081 is shown on the Argand diagram below. Im 3 2 1 Re -1 1 2 3 4 5 6 7 -1 -2 z\u2081 -3 -4 Plot and label z\u2081\u0305 , the complex conjugate of z\u2081 , on the diagram above."
+  "description": "The question as printed on the paper \u2014 Question 2 (30 marks) In this question, i2= \u22121. z2 and z3 are two other complex numbers. z2= 5 + i and z3= 6 \u22122i. (iv) Work out the value of |z3|. Give your answer in surd form."
  },
  {
   "file": "maths-2023-OL-ask-p1-q2-b.png",
@@ -4939,7 +4939,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 2 Q3(b)",
-  "description": "The question as printed on the paper \u2014 Two of the 240 people are picked at random. Find the probability that one of them had been to all three countries, and the other had been to none of the three countries. Give your answer as a fraction in its simplest for"
+  "description": "The question as printed on the paper \u2014 Question 3 (30 marks) 240 people were surveyed about which of three countries, A, B, or C, they had been to. The Venn diagram below shows the number of people who had been to each combination of these countries, as well as those who had been to none of the three. U [240] [18] [23] [56] [6] [13] [16] [41] [67] In this question, the event A is the event that a person picked at random from the 240 people surveyed had been to country A, and so on. (i) Show that PP(AA) = 1/4 . P(A) = Verify that, for the values in this diagram: P(A\u222aC) = P(A) + P(C) \u2212P(A\u2229C) 8 Leaving Certificate 2025"
  },
  {
   "file": "maths-2025-HL-ask-p2-q4-a-i.png",
@@ -5764,8 +5764,8 @@
   "file": "maths-2022-HL-ask-p2-q8-a-v.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 HL Paper 2 Q8(a)(v)",
-  "description": "The question as printed on the paper \u2014 Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per gallo"
+  "questionRef": "2022 HL Paper 2 Q8(a)(v), (b)",
+  "description": "The question as printed on the paper \u2014 Question 8 (50 marks) Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per gallon data for city and motorway Car City (m/g) Motorway (m/g) 22 34 27 38 24 34 16 27 15 24 21 30 30 40 17 30 The scatterplot below shows this data for cars A to F. Using the data in the table above, plot and label points to represent cars G and H on the scatterplot below. 70 60 50 Motorway (m/g) 40 30 20 10 10 20 30 40 50 60 City (m/g) 20 Leaving Certificate 2022 Mathematics, Paper 2 \u2013 Higher Level On the scatterplot, draw the line of best fit for the data, by eye. (iii) Two other cars, K and L, have the miles per gallon values given in the following table. Use your line of best fit on the scatterplot to fill in an estimate for each of the two missing values in the table below. Show your work on the scatterplot. Car City (m/g)"
  },
  {
   "file": "maths-2023-HL-ask-p1-q9-a-i.png",

@@ -4722,8 +4722,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-a-v",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-a-v.png",
-          "srcHash": "f8c2ed24249ad37576e1c711e32d23be",
-          "alt": "The question as printed on the paper — Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per… Full card prompt: Find the value of r, the correlation coefficient between city and motorway miles per gallon. Use only the values for the 8 cars A to H in the table on the previous page. Give your answer correct to 3 decimal places. The scatterplot on the right shows some values of fuel consumption (F) for the given values of engine speed (S), for a particular car. For the points in this scatterplot, F can be closely approximated by a quadratic function of S",
+          "srcHash": "0df5601f1daad98ef664408c9de71496",
+          "alt": "The question as printed on the paper — Question 8 (50 marks) Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per gallon data for city and motorway Car City (m/g) Motorway (m/g) 22 34 27 38 24 34 16 27 15 24 21 30 30 40 17 30 The scatterplot below shows this data for cars A to F. Using the data in the table above, plot and label points to represent cars G and H on the scatterplot below. 70 60 50 Motorway (m/g) 40 30 20 10 10 20 30 40 50 60 City (m/g) 20 Leaving Certificate 2022 Mathematics, Paper 2 – Higher Level On the scatterplot, draw the line of best fit for the data, by eye. (iii) Two other cars, K and L, have the miles per gallon values given in the following table. Use your line of best fit on the scatterplot to fill in an estimate for each of the two missing values in the table below. Show your work on the scatterplot. Car City (m/g)",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -11472,8 +11472,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q3-b.png",
-          "srcHash": "151a79b1f6efa647d7b0fe1ba57a7a9f",
-          "alt": "The question as printed on the paper — Two of the 240 people are picked at random. Find the probability that one of them had been to all three countries, and the other had been to none of the three countries. Give your answer as a fraction in its simplest… Full card prompt: Two of the 240 people are picked at random",
+          "srcHash": "599c0fcaad02fa400bd4f318483fb80e",
+          "alt": "The question as printed on the paper — Question 3 (30 marks) 240 people were surveyed about which of three countries, A, B, or C, they had been to. The Venn diagram below shows the number of people who had been to each combination of these countries, as well as those who had been to none of the three. U [240] [18] [23] [56] [6] [13] [16] [41] [67] In this question, the event A is the event that a person picked at random from the 240 people surveyed had been to country A, and so on. (i) Show that PP(AA) = 1/4 . P(A) = Verify that, for the values in this diagram: P(A∪C) = P(A) + P(C) −P(A∩C) 8 Leaving Certificate 2025",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
