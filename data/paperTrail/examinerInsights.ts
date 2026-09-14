@@ -8,8 +8,10 @@
  * source page. Verbatim quotes are kept short per the content rules; the full
  * traceable source lives in /examiner-reports/<subject>/.
  *
- * Gated by report coverage — currently Business + Mathematics (the two subjects
- * whose Chief Examiner reports are in-repo). Grows as more reports land.
+ * Gated by report coverage — a subject gets a set only once its Chief
+ * Examiner's report is in-repo and the set is verified against it (currently
+ * Business, Mathematics, English, Geography, Chemistry). Grows as more
+ * reports are verified.
  */
 
 export interface ExaminerInsight {
@@ -30,6 +32,117 @@ export interface ExaminerInsightSet {
 }
 
 const SETS: ExaminerInsightSet[] = [
+  {
+    subjectId: 'geography',
+    subjectLabel: 'Geography',
+    source: "SEC Chief Examiner's Report 2012 (Higher Level)",
+    insights: [
+      {
+        pitfall: 'Explaining the wrong process in detail — candidates asked about landforms of deposition "presented very detailed explanations on the formation of waterfalls which are landforms of erosion and were therefore awarded no marks".',
+        fix: 'Before writing, check the process the question names (erosion vs deposition, weathering vs erosion). No amount of accurate detail rescues the wrong landform.',
+        cite: "Chief Examiner's Report 2012, pp.25–26",
+      },
+      {
+        pitfall: 'Describing the theory but never making the link the question asks for — plate tectonics described "and failed to link the theory to the distribution of earthquakes"; an activity described with no reference to the factors influencing it.',
+        fix: 'The marked part is the link: theory → the specific distribution, activity → the influencing factors. Anchor every paragraph to the question\'s exact demand.',
+        cite: "Chief Examiner's Report 2012, pp.25–28",
+      },
+      {
+        pitfall: 'Options essays spread across too many themes — "a significant number of candidates continue to ignore this instruction and instead provide too little detail on far too many themes/arguments".',
+        fix: 'Develop three or four aspects of the theme deeply — the report\'s own recommendation — rather than a superficial treatment of many points.',
+        cite: "Chief Examiner's Report 2012, pp.30, 34",
+      },
+      {
+        pitfall: 'Answering the topic instead of the question — "extensive descriptive material that related to the topic of the question but did not answer the specific question asked" (e.g. describing activities but never their impact on biomes).',
+        fix: 'Circle the instruction word and the object of the question ("examine the IMPACT"), and make every paragraph deliver that, not background.',
+        cite: "Chief Examiner's Report 2012, pp.30–31",
+      },
+      {
+        pitfall: 'Rubric errors that bleed whole sections: attempting more questions than required (even both electives), leaving required parts unanswered, or skipping the Options essay entirely.',
+        fix: 'Answer exactly the required number, cover every lettered part, and never leave the Options section blank — omissions had "a negative impact on overall grade outcomes".',
+        cite: "Chief Examiner's Report 2012, pp.24, 30, 32",
+      },
+      {
+        pitfall: 'Small-mark leaks: omitting units (the euro symbol on a calculation), unlabelled graph axes, or sketching the OS map when the question asked for the aerial photograph.',
+        fix: 'Attach units to every figure, label both axes every time, and sketch the exact source the question names.',
+        cite: "Chief Examiner's Report 2012, pp.25–30",
+      },
+    ],
+  },
+  {
+    subjectId: 'chemistry',
+    subjectLabel: 'Chemistry',
+    source: "SEC Chief Examiner's Report 2013 (Higher & Ordinary Level)",
+    insights: [
+      {
+        pitfall: 'Definitions recalled loosely — candidates omitted "average" from relative atomic mass, and stated Charles\' law without the fixed mass of gas or the kelvin (absolute) temperature scale.',
+        fix: 'Learn definitions to full-marks precision. Every qualifier in the syllabus definition is mark-bearing — a definition missing its conditions is a partial answer.',
+        cite: "Chief Examiner's Report 2013, pp.12–13",
+      },
+      {
+        pitfall: 'Recurring calculation slips: using the wrong mole ratio, taking 16 as the relative molecular mass of O₂, and multiplying by 100 instead of 1000 (or dividing) when converting to ppm.',
+        fix: 'Take the ratio from the balanced equation every time, double the Ar for diatomic molecules, and write the unit conversion as its own labelled step.',
+        cite: "Chief Examiner's Report 2013, p.14",
+      },
+      {
+        pitfall: 'Using shell, sub-level and orbital interchangeably — "as in other years, many candidates used the terms... incorrectly" — especially on ionisation-energy graph questions, traditionally poorly answered.',
+        fix: 'Keep the hierarchy exact: shell → sub-level → orbital. Ionisation-energy anomalies are explained by nuclear charge, screening and stable configurations — name the specific factor.',
+        cite: "Chief Examiner's Report 2013, p.14",
+      },
+      {
+        pitfall: 'Stating a bonding fact but never developing the argument — answers on boiling points "referred to the single bond in hydrogen and the double bond in oxygen but did not develop any argument", and confused intramolecular bonding with intermolecular forces.',
+        fix: 'Boiling points are about forces BETWEEN molecules. State the relevant intermolecular force, compare its strength, then draw the conclusion — three explicit steps.',
+        cite: "Chief Examiner's Report 2013, pp.14–15",
+      },
+      {
+        pitfall: 'Reaching the correct conclusion but failing the "justify" — on the equilibrium question "some were able to critically analyse the information... but were unable to satisfactorily justify their decision".',
+        fix: 'A justify answer is the decision PLUS the principle it rests on (e.g. the shift predicted by Le Chatelier for that specific change). The reason carries the marks.',
+        cite: "Chief Examiner's Report 2013, pp.15–16",
+      },
+      {
+        pitfall: 'Not attempting the required number of questions — at Ordinary Level 22.5% of candidates did not attempt the required 8, an automatic loss under best-of marking.',
+        fix: 'Always attempt at least the required number. Marking is best-of, so a weak extra attempt can only help you — but a missing one always costs its full weight.',
+        cite: "Chief Examiner's Report 2013, p.12",
+      },
+    ],
+  },
+  {
+    subjectId: 'english',
+    subjectLabel: 'English',
+    source: "SEC Chief Examiner's Report 2013 (Higher & Ordinary Level)",
+    insights: [
+      {
+        pitfall: 'Comparative answers built from a pre-learned formula — the report found "a significant minority of candidates were hampered by a rigid and formulaic approach", and the Comparative was the weakest-scoring section at both levels.',
+        fix: 'Engage with the terms of the actual question in every paragraph. The quality of the evidence you cite was "a significant discriminator used by examiners".',
+        cite: "Chief Examiner's Report 2013, pp.8, 18–20",
+      },
+      {
+        pitfall: 'Skipping the Unseen Poem — "a number of candidates did not answer on this compulsory section", losing up to twenty marks outright, and it was the lowest-scoring element on Paper 2.',
+        fix: 'Always attempt it. Examiners are told there is no single "correct" reading — a well-argued personal response to the poem\'s language and imagery is exactly what is rewarded.',
+        cite: "Chief Examiner's Report 2013, pp.7–9",
+      },
+      {
+        pitfall: 'Careless quotation in Single Text answers — "the careless use of quotation, observed in a significant number of responses, served to undermine answers".',
+        fix: 'Short, apt, accurate quotes woven into your point beat long misremembered ones. Check each quote actually supports the sentence it sits in.',
+        cite: "Chief Examiner's Report 2013, p.8",
+      },
+      {
+        pitfall: 'Reproducing prepared "banks of knowledge" — material delivered regardless of what was asked. Knowledge alone did not score; unmanaged, it read as not answering the question.',
+        fix: 'Shape everything to the specific question asked. Under-achievement was traced to "a loss of focus in terms of the requirements of the task".',
+        cite: "Chief Examiner's Report 2013, pp.11, 18, 20",
+      },
+      {
+        pitfall: 'Compositions that are "extremely brief and lacked development" — it is difficult to reach the top marks "if the answer is brief in the extreme".',
+        fix: 'Sustain and develop the piece, and honour your chosen genre: a short story needs narrative shape, characterisation, setting and atmosphere, not just good sentences.',
+        cite: "Chief Examiner's Report 2013, pp.15–16",
+      },
+      {
+        pitfall: 'Treating the question with too much reverence — assuming you must agree with its premise, which "can affect candidates\' ability to demonstrate skills in critical literacy".',
+        fix: 'You may challenge or disagree with part or all of a question\'s premise — the marking schemes explicitly cater for disputation. A defended independent view scores.',
+        cite: "Chief Examiner's Report 2013, p.17",
+      },
+    ],
+  },
   {
     subjectId: 'business',
     subjectLabel: 'Business',
