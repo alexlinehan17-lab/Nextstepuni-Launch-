@@ -360,7 +360,14 @@ class Author:
             # Engineering's scheme is read off the page by eng_scheme, and the
             # adapter above puts it behind the interface Author expects.
             from eng_scheme import EngScheme
-            self.scheme_table = _EngSource(EngScheme(year, level), self.scheme)
+            eng = EngScheme(year, level)
+            # Where the paper asks an address only past its OR, the scheme's
+            # answer there is read from past its OR too (EngScheme
+            # .second_branch). The paper found them; the scheme has to be told.
+            # eng_all reads this same instance, so `use` indexes the list the
+            # card is built from.
+            eng.second_branch = set(getattr(self.paper, 'after_or', ()))
+            self.scheme_table = _EngSource(eng, self.scheme)
         self.cards = []
 
     def _source(self, source):
@@ -470,6 +477,25 @@ class Author:
             _t = CALLOUT_TAIL.sub('', cue)
             if _t != cue and _t.endswith(':'):
                 question, cue, furniture_removed = _t, _t, True
+        # The instruction can sit BELOW the context sentence as its own block,
+        # and the reader files it as the part's STEM: 2025 Ordinary Q3(b)
+        # states "The blade of the concrete saw shown is annealed, tempered
+        # and quenched as part of the manufacturing process." and then, under
+        # it, "Describe any two of the following processes:" with (i), (ii)
+        # and (iii) beneath that. The part's own text closes like a sentence,
+        # so the colon rule below does not fire, and the card asked the
+        # student nothing at all. The paper's order is context, instruction,
+        # list, and that is the order it is put back in. Engineering only,
+        # through `clean`, like the rest of this branch. (Ported from eng-e5.)
+        cue_stem = None
+        if clean and letter and roman is None and not cue.endswith(':'):
+            below = ' '.join((self.paper.stem(q, letter) or '').split())
+            if below.endswith(':') and any(
+                    k[0] == q and k[1] == letter and k[2]
+                    for k in self.paper.parts):
+                cue_stem = below
+                question = f'{(question or "").rstrip()} {below}'.strip()
+                cue = ' '.join(question.split())
         joined_kids = False
         # A question that does not end like a SENTENCE has not finished being
         # asked — which is the same thing paper.suspect() flags it for — so
@@ -756,7 +782,10 @@ class Author:
             'rows': rows,
         }
         if stem:
-            text = self.paper.stem(q, letter) or self.paper.stem(q)
+            # The letter's stem, once it has been read into the ask, is not
+            # also the card's stimulus.
+            text = (self.paper.stem(q) if cue_stem
+                    else self.paper.stem(q, letter) or self.paper.stem(q))
             if text and self.subject in QUESTION_CLEANING:
                 text = _clean_stem(text)
             if text:
