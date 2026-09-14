@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Chapter VII's course data, read straight from the app's list
+ * Chapter VIII's course data, read straight from the app's list
  * (components/futureFinderData.ts — the same 149 rows Points Passport and
  * Future Finder use). Nothing here is typed by hand: the line, the body and
  * the card are assembled from a course's own fields, and the subjects are

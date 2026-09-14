@@ -1,6 +1,8 @@
 import { tileById, type TileKind } from "./paperCatalogue";
 
 export const PAPER_ISLAND_VERSION = 1;
+// A sticker comes into view one placement sooner, while the wider atlas stays hidden.
+export const PAPER_DISCOVERY_RADIUS = 2;
 export const NEIGHBOURS = [
   [1, 0],
   [0, 1],
@@ -248,7 +250,7 @@ export function applyPaperCommand(
           return (
             d &&
             [...tiles, ...knownLandmarks(tiles)].some(
-              (t) => axialDistance(t, d) <= 1,
+              (t) => axialDistance(t, d) <= PAPER_DISCOVERY_RADIUS,
             )
           );
         }),
@@ -280,7 +282,7 @@ export function applyPaperCommand(
     if (
       !found ||
       ![...state.tiles, ...knownLandmarks(state.tiles)].some(
-        (t) => axialDistance(t, found) <= 1,
+        (t) => axialDistance(t, found) <= PAPER_DISCOVERY_RADIUS,
       )
     )
       throw new PaperIslandError("Build closer to discover this story.");

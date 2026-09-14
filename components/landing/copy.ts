@@ -10,7 +10,7 @@
 
 import { MARK_BANK_CARD_COUNT, MARK_BANK_SUBJECT_COUNT } from './demoData';
 
-export type ChapterId = 'markbank' | 'papertrail' | 'atlas' | 'planner' | 'launchpad' | 'lab' | 'futurefinder';
+export type ChapterId = 'markbank' | 'papertrail' | 'atlas' | 'planner' | 'launchpad' | 'lab' | 'journey' | 'futurefinder';
 
 export interface Chapter {
   id: ChapterId;
@@ -36,7 +36,7 @@ export const COPY = {
   nav: {
     links: [
       { label: "What's inside", href: '#chapters' },
-      { label: 'Journey', href: '#journey' },
+      { label: 'Journey', href: '#chapter-journey' },
       { label: 'Subjects', href: '#subjects' },
       { label: 'CERTLE', href: '/certle' },
     ],
@@ -101,7 +101,7 @@ export const COPY = {
   chapters: {
     tryIt: 'Try it in the playground',
     eyebrow: 'Inside the app',
-    intro: 'Seven things, in the order you’ll probably meet them.',
+    intro: 'Eight things, in the order you’ll probably meet them.',
     /** Mono label inside a chapter frame that has no screenshot yet. */
     placeholder: 'Screenshot · coming',
     /** Chapter I's frame: the real question with the marking scheme under a lens. */
@@ -155,7 +155,7 @@ export const COPY = {
         body: [
           'Command-Word Reflex: find the word the examiner is marking against before you write a line.',
           'Catch-Up Lane: missed a class? Pick the topic you missed. Each one takes about three minutes, with a quick check at the end.',
-          'Points Passport, Future Finder and College Compass are the CAO end of things. They have a chapter of their own: VII.',
+          'Points Passport, Future Finder and College Compass are the CAO end of things. They have a chapter of their own: VIII.',
         ],
         frameLabel: 'The Launchpad',
       },
@@ -169,7 +169,15 @@ export const COPY = {
         frameLabel: 'Learning Lab · Mastering Active Recall',
       },
       {
-        id: 'futurefinder', numeral: 'VII', word: 'Future Finder', railLabel: 'Future Finder',
+        id: 'journey', numeral: 'VII', word: 'Journey', railLabel: 'Journey',
+        line: 'A little study. A world of your own.',
+        body: [
+          'Earn Journey Points through study and learning, then spend them on an island that’s entirely your own. Each tile uncovers a little more of the blue-pencil atlas, with mythic stickers waiting beyond the shore.',
+        ],
+        frameLabel: 'Build a little island',
+      },
+      {
+        id: 'futurefinder', numeral: 'VIII', word: 'Future Finder', railLabel: 'Future Finder',
         line: 'The CAO end of things: courses, points and deadlines.',
         body: [
           'Future Finder asks you to rate short activity cards, works out the kind of work you lean towards, and ranks a hundred and forty-nine courses, PLCs and apprenticeships by how well they fit. Save the ones you like and compare them side by side.',
@@ -182,7 +190,7 @@ export const COPY = {
   },
 
   /**
-   * Chapter VII's course search (components/landing/fx-f). Type a course from
+   * Chapter VIII's course search (components/landing/fx-f). Type a course from
    * Points Passport's list and the chapter rewrites itself around it. Every
    * figure on the rewritten page comes from components/futureFinderData.ts;
    * the words here are only the furniture around them.
@@ -214,8 +222,8 @@ export const COPY = {
     helps: 'Points Passport tracks your grades against this course’s points.',
     helpsNoPoints: 'Future Finder ranks this route beside the CAO courses that fit your interests.',
     /** Read out by a screen reader when the chapter rewrites, and when it is restored. */
-    turned: 'Chapter VII is now about {title} at {institution}. {line}.',
-    restored: 'Chapter VII is back to Future Finder.',
+    turned: 'Chapter VIII is now about {title} at {institution}. {line}.',
+    restored: 'Chapter VIII is back to Future Finder.',
   },
 
   cta: {

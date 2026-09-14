@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Chapters — the Editions "chapters of a book" anatomy. A sticky contents
- * rail on the left (a horizontal strip on phones) tracks which of the seven
+ * rail on the left (a horizontal strip on phones) tracks which of the eight
  * chapters is on screen; on the right each chapter opens with one giant
  * serif word that folds away as the chapter scrolls out (Leonardo's move),
  * then a drop-cap line, the body copy, a link into the playground where a demo
  * exists, and a screenshot frame. Starguy stands on the baseline at the end of
- * the word on chapters I, IV and VII.
+ * the word on chapters I, IV and VIII.
  *
  * Effects (components/landing/fx): the flow-field ornament that was hatched
  * behind each heading is gone (Alex, 2026-09-09); the frames of I–III blot
@@ -18,7 +18,7 @@
  * is read, with 'you are here' lettered under the list; and the one circled
  * figure on the page is 2010 in Chapter II.
  *
- * Chapter VII (components/landing/fx-f) carries Points Passport's course
+ * Chapter VIII (components/landing/fx-f) carries Points Passport's course
  * search in its frame. Choose a course and the whole chapter rewrites itself
  * around it in place — word, line, body and frame — with a page turn; a
  * button turns it back. Every figure on the rewritten page is the course's
@@ -32,7 +32,7 @@ import { CAPTURES } from '../demoData';
 import { Reveal, WordRise } from '../motion';
 import { StarguySlot, useTravellerLive, type SlotId } from '../starguy/Traveller';
 import { Body, Button, Container, DISPLAY, Display, DropLine, Eyebrow, Frame, Rule, Starguy } from '../primitives';
-import { FONT, L, SPACE } from '../theme';
+import { APP_URL, FONT, L, SPACE } from '../theme';
 import { openDemo } from './Playground';
 import { LiveGlimpse, hasGlimpse } from '../glass/Glimpse';
 import ChapterPreview from '../glass/ChapterPreview';
@@ -42,6 +42,7 @@ import { CourseFrame } from '../fx-f/CourseFrame';
 import { announceTurn, courseBody, courseLine, type CAOCourse } from '../fx-f/courses';
 import { useFitTitle, usePageTurn } from '../fx-f/pageTurn';
 import '../fx-f/fx-f.css';
+import Journey from './Journey';
 
 const CHAPTERS = COPY.chapters.items;
 /** Chapters whose giant word Starguy stands at the end of. */
@@ -113,7 +114,7 @@ const Rail: React.FC<{ active: ChapterId }> = ({ active }) => {
             >
               <span aria-hidden="true" style={{ position: 'relative', fontFamily: FONT.serif, fontWeight: 600, fontSize: 13, width: 22, flexShrink: 0, color: on ? L.orangeText : L.faint, transition: 'color 120ms ease' }}>
                 {ch.numeral}
-                {/* The gauge: fills on this chapter's own view timeline (fx.css, .fx-tick; fx-f.css adds the seventh). */}
+                {/* The gauge: fills on this chapter's own view timeline (fx.css, .fx-tick; fx-f.css adds the final two). */}
                 <span className={`fx-tick fx-tick-${i + 1}`} />
               </span>
               <span style={{ fontFamily: FONT.sans, fontSize: 14, fontWeight: on ? 700 : 500, color: 'inherit', lineHeight: 1.3 }}>{ch.railLabel}</span>
@@ -215,7 +216,7 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
   const frameCol = flip ? 'lg:col-span-7 lg:order-1' : 'lg:col-span-7';
   const turns = chapter.id === 'futurefinder';
 
-  // Chapter VII: the course the chapter is written around, if any (fx-f). The
+  // Chapter VIII: the course the chapter is written around, if any (fx-f). The
   // turn copies the page BEFORE the state changes, then wipes the copy away
   // once the rewrite has rendered. Instant under reduced motion or ?static=1.
   const [course, setCourse] = useState<CAOCourse | null>(null);
@@ -276,7 +277,15 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
           </WordRise>
         </div>
       </div>
-      <div className="mt-8 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      {chapter.id === 'journey' ? (
+        <div className="mt-8 md:mt-10">
+          <div className="journey-chapter-story">
+            <div><DropLine>{line}</DropLine><Body style={{ fontSize: 16, marginTop: 20 }}>{body[0]}</Body></div>
+            <Button href={APP_URL}>{COPY.journey.cta}<span aria-hidden="true">↗</span></Button>
+          </div>
+          <Journey />
+        </div>
+      ) : <div className="mt-8 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         <div className={flip ? 'lg:col-span-5 lg:order-2' : 'lg:col-span-5'}>
           <DropLine>{line}</DropLine>
           <div className="mt-6 flex flex-col gap-4">
@@ -302,7 +311,7 @@ const ChapterBlock: React.FC<{ chapter: Chapter; index: number; articleRef: Reac
             <div ref={frameRef}>{capture}</div>
           </Reveal>
         )}
-      </div>
+      </div>}
     </article>
   );
 };
@@ -312,7 +321,7 @@ const Chapters: React.FC = () => {
   // One ref per article, made once: the observer and each chapter share it.
   const refs = useMemo(() => CHAPTERS.map(() => React.createRef<HTMLElement>()), []);
 
-  // One observer over the seven articles. The band is the middle 10% of the
+  // One observer over the eight articles. The band is the middle 10% of the
   // viewport, so a chapter becomes current as its word crosses the fold.
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') return;
@@ -336,7 +345,7 @@ const Chapters: React.FC = () => {
         <RailHeading className="lg:hidden mb-6" />
         <Strip active={active} />
 
-        {/* fx-scope: the seven chapters' view timelines are scoped here so the sticky rail can read them. */}
+        {/* fx-scope: the eight chapters' view timelines are scoped here so the sticky rail can read them. */}
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 fx-scope">
           <div className="hidden lg:block lg:col-span-3">
             <div className="sticky" style={{ top: 92 }}>

@@ -1,16 +1,18 @@
-/* Chapter VII, Future Finder: the seventh rail tick, the course search, the
+/* Chapter VIII, Future Finder: the final rail ticks, the course search, the
    course card, and the page turn that rewrites the chapter around a course.
    Ink on white, one orange; every motion respects prefers-reduced-motion and
    ?static=1 (the turn is skipped in JS; nothing here animates on its own). */
 
-/* ── The seventh view timeline ──────────────────────────────────────────────
+/* ── The final two view timelines ──────────────────────────────────────────────
    fx/fx.css scopes six chapter timelines for the rail's gauges. The id gives
    these declarations the last word wherever that sheet lands in the cascade. */
-#chapters .fx-scope { timeline-scope: --fx-c1, --fx-c2, --fx-c3, --fx-c4, --fx-c5, --fx-c6, --fx-c7; }
+#chapters .fx-scope { timeline-scope: --fx-c1, --fx-c2, --fx-c3, --fx-c4, --fx-c5, --fx-c6, --fx-c7, --fx-c8; }
 #chapters .fx-chapter-7 { view-timeline-name: --fx-c7; }
+#chapters .fx-chapter-8 { view-timeline-name: --fx-c8; }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
     :root:not(.landing-static) #chapters .fx-tick-7 { animation-timeline: --fx-c7; }
+    :root:not(.landing-static) #chapters .fx-tick-8 { animation-timeline: --fx-c8; }
   }
 }
 
