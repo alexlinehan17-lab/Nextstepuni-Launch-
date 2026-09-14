@@ -1,0 +1,64 @@
+/* Scoped to entry/authentication; account settings keep their own design. */
+.auth-paper,
+.auth-paper.account-entry[data-view="welcome"] {
+  --surface-canvas: #fff;
+  --surface-paper: #fff;
+  --ink-primary: #23251f;
+  --ink-muted: #77756e;
+  --outline-strong: #393b32;
+  color: #23251f;
+  background: #fff;
+  color-scheme: light;
+  font-family: 'DM Sans', sans-serif;
+}
+.auth-paper .account-card,
+.auth-paper.account-entry[data-view="welcome"] .account-card { background: #fff; }
+.auth-paper-story { padding: 36px 44px; background: #fff; }
+.auth-paper-caption { font: 700 21px/1.2 'DM Sans', sans-serif; letter-spacing: -.7px; margin: 0 0 9px; }
+.auth-paper-caption-detail { font-size: 14px; line-height: 1.5; color: #797b71; margin: 0; }
+.auth-paper-title {
+  font: 800 48px/.98 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin: 0;
+}
+.auth-paper-eyebrow { margin: 0 0 22px; font-size: 10px; line-height: 1.5; text-transform: uppercase; letter-spacing: .2em; font-weight: 600; color: #837e74; }
+.auth-paper-subtitle { font-size: 13px; line-height: 1.6; color: #77756e; margin: 20px 0 33px; }
+.auth-paper .account-primary {
+  background: #ff771c !important;
+  color: #23251f !important;
+  border: 1.5px solid #393b32 !important;
+  border-radius: 11px;
+  box-shadow: 2px 3px 0 #393b32 !important;
+  font-weight: 600;
+}
+.auth-paper .account-primary:hover:not(:disabled) { background: #ff8735 !important; }
+.auth-paper-secondary { background: #fff; border-color: #393b32; color: #393b32; }
+.auth-paper-welcome button { font-size: 14px; border-radius: 11px; }
+.auth-paper-welcome > button:last-child { font-size: 12px; min-height: 46px; border-width: 1px; }
+.auth-paper-welcome .space-y-3 > button:not(.account-primary) { border-width: 1px; }
+.auth-paper .account-form input:not([type="checkbox"]),
+.auth-paper .account-form select { background: #fff; color: #23251f; }
+.auth-paper .account-form h2 { font-family: 'DM Sans', sans-serif !important; font-weight: 700; }
+.auth-paper.account-entry .account-welcome p:not(.account-eyebrow) { color: #77756e; }
+.auth-paper button:focus-visible, .auth-paper a:focus-visible { outline: 2px solid #393b32; outline-offset: 4px; }
+.auth-paper .welcome-character:focus-visible { outline-offset: -26px; }
+@media (min-width: 768px) {
+  .auth-paper .account-card { border: 1.8px solid #393b32; border-radius: 20px; box-shadow: 5px 6px 0 #393b32; }
+  .auth-paper .account-form { padding: 44px 54px; }
+  .auth-paper .account-form > div { max-width: 404px; }
+  .auth-paper .account-wordmark { display: none; }
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  .auth-paper-story { padding: 32px 26px; }
+  .auth-paper .account-form { padding: 40px 30px; }
+  .auth-paper-title { font-size: 42px; }
+}
+@media (max-width: 767px) {
+  .auth-paper-title { font-size: clamp(38px, 11vw, 46px); }
+  .auth-paper.account-entry .account-welcome h1 { font-size: clamp(40px, 12vw, 54px); }
+  .auth-paper.account-entry .account-welcome { text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .auth-paper button { transition: none; }
+}
