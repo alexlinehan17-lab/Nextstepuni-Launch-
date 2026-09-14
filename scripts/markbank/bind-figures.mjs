@@ -57,8 +57,18 @@ const catalogue = JSON.parse(readFileSync(cataloguePath ?? '', 'utf8'));
 const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {};
 const skipped = [];
 // Seeded from what is already published, so a crop cannot be republished under a
-// second name by a later subject's run.
-const seenHash = new Map(Object.entries(manifest).map(([id, m]) => [m.md5, id]));
+// second name by a later subject's run. During an explicit replacement, remove
+// every name in THIS catalogue from the seed first: regenerated page-indexed
+// crops can legitimately swap bytes between i0 and i1 after a parser repairs
+// their source order. Seeding those stale entries made each half of the swap
+// look like a duplicate of the other and left both old, wrongly labelled images
+// in place even with --replace.
+const replacingNames = new Set(replace
+  ? catalogue.map((f) => String(f.file ?? '').replace(/\.png$/, ''))
+  : []);
+const seenHash = new Map(Object.entries(manifest)
+  .filter(([id]) => !replacingNames.has(id))
+  .map(([id, m]) => [m.md5, id]));
 
 for (const f of catalogue) {
   const reason =

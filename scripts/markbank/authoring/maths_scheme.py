@@ -86,9 +86,46 @@ MARKER = re.compile(r'^\(([a-h]|i{1,3}|iv|v|vi{0,3})\)\s*(?:\(([a-h]|i{1,3}|iv|v
                     re.I)
 ROMANS = {'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii'}
 
+# A continuation that omits its parent letter can only inherit the previous
+# one mechanically.  This reviewed page changes from Q2(b) to Q2(c)(i) at the
+# break while printing only ``(i)``; the paper and the visible scheme heading
+# establish the correction.
+KEY_CORRECTIONS = {
+    (2021, 'hl', 2, 2, 'b', 'i'): (2, 2, 'c', 'i'),
+}
+
 
 
 _MARKER_ROWS = {}
+
+
+def raw_scale_rows(page):
+    """[(y, side, exact scale text)] read before fraction reconstruction.
+
+    The fraction repair intentionally merges stacked maths with nearby text.
+    On 2023 HL page 54 it turns the perfectly printed line
+    ``Scale 10C (0, 4, 7, 10)`` into ``Scale Note: 10C If (0, /√64 ...`` by
+    splicing the note below through it.  A scale is ordinary one-dimensional
+    text in the raw PDF, so read it directly from its own spans and leave the
+    fraction repair to the actual solution.
+    """
+    cut = mathtext.reader_cut(page)
+    rows = []
+    for block in page.get_text('dict')['blocks']:
+        for line in block.get('lines', []):
+            spans = sorted(line.get('spans') or [], key=lambda s: s['bbox'][0])
+            for n, span in enumerate(spans):
+                if 'scale' not in span.get('text', '').lower():
+                    continue
+                tail = ''.join(s.get('text', '') for s in spans[n:]).strip()
+                found = SCALE_LINE.search(tail)
+                if not found:
+                    continue
+                y = min(s['bbox'][1] for s in spans[n:])
+                x = span['bbox'][0]
+                rows.append((y, 'right' if x >= cut else 'left', tail))
+                break
+    return rows
 
 
 def marker_rows(page):
@@ -132,9 +169,17 @@ def marker_rows(page):
 def in_marker_column(page, y, tok):
     """Is the marker read at this row PRINTED as a heading, or echoed in the
     answer? Decided by the nearest raw row carrying the same token."""
-    near = sorted((abs(y - my), col) for my, mt, col in marker_rows(page)
-                  if mt == tok)
-    return near[0][1] if near else True
+    near = [(abs(y - my), col) for my, mt, col in marker_rows(page)
+            if mt == tok]
+    if not near:
+        return True
+    # A heading and the model solution can begin on exactly the same baseline:
+    # 2022 HL Q8 prints the marker-column ``(a)`` beside a solution-column
+    # ``(a)(v)``.  Sorting ``(distance, bool)`` chose False on that tie and
+    # discarded the genuine heading.  If any raw marker at the nearest
+    # baseline is in the marker column, the placed row is a heading.
+    distance = min(d for d, _ in near)
+    return any(col for d, col in near if abs(d - distance) < 0.5)
 
 
 class Scheme:
@@ -153,6 +198,20 @@ class Scheme:
         self.path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
         self.doc = pymupdf.open(self.path)
         self.units = {}
+        # Most schemes put the scale and its credit bands in the right-hand
+        # Marking Notes column.  A handful of graphical answers use the full
+        # table width and put those notes BELOW the drawing in the left text
+        # flow instead.  Keep the source side and the two distinct vertical
+        # bands so notes never absorb the drawing and the model-solution crop
+        # never absorbs the notes.
+        self._notes_side = {}
+        self._notes_bounds = {}
+        self._solution_bounds = {}
+        self._scale_text = {}
+        # A second scale can be an alternative METHOD for the same printed
+        # part, not a second selectable question.  Retain those source bands
+        # for audit without exposing a duplicate card.
+        self.alternate_units = {}
         # key -> every roman its one scale marks, where that is more than one
         self.spans = {}
         # key -> the part's marking instructions, filled in by _bands()
@@ -160,6 +219,7 @@ class Scheme:
         # key -> every LETTER its one scale marks, where that is more than one
         self.letter_spans = {}
         paper, q = 1, None
+        last_unit_by_question = {}
         for i, page in enumerate(self.doc):
             m = PAPER.search(page.get_text())
             if m:
@@ -171,8 +231,9 @@ class Scheme:
             # printed after a page break. 2021 OL Paper 1 lost Q1(c) and Q1(d),
             # Q2(c) and Q5(c) that way, each of them priced on its own scale.
             # A page carrying a scale is a marked page whether it says so or not.
+            page_scales = raw_scale_rows(page)
             if not any('Marking Notes' in t for _, t in right[:3]) \
-                    and not any(SCALE_LINE.search(t) for _, t in right):
+                    and not page_scales:
                 continue
             # The FIRST head anywhere in the column, not the last of the first
             # six lines. A page that opens a section carries four lines of
@@ -206,7 +267,25 @@ class Scheme:
             # The page's opening head governs from the top of the page, which
             # is where a question CONTINUED from the page before begins.
             heads = [(-1e9, q)] + heads[1:]
-            scales = [y for y, t in right if SCALE_LINE.search(t)]
+            right_scales = [(y, side, t) for y, side, t in page_scales
+                            if side == 'right']
+            left_scales = [(y, side, t) for y, side, t in page_scales
+                           if side == 'left']
+            # A scale in the left flow is not necessarily a duplicate of the
+            # right flow.  2023 HL P2 Q2(a) is a full-width proof whose scale
+            # sits below it on the left; Q2(b), lower on the SAME page, uses
+            # the normal right column.  Merge both and de-duplicate only rows
+            # that truly share a baseline.
+            scale_rows = []
+            for y, side, scale_text in sorted(right_scales + left_scales):
+                if scale_rows and abs(y - scale_rows[-1][0]) < 2:
+                    # Prefer the conventional right source when both columns
+                    # contain the same scale line.
+                    if side == 'right':
+                        scale_rows[-1] = (y, side, scale_text)
+                    continue
+                scale_rows.append((y, side, scale_text))
+            scales = [y for y, _, _ in scale_rows]
             if not scales:
                 continue
             bounds = scales + [1e9]
@@ -221,6 +300,7 @@ class Scheme:
             # the band above; carrying forward what has already been identified
             # cannot.
             carried = None
+            last_unit_key = None
             q = heads[-1][1]
             for n, y0 in enumerate(scales):
                 # A unit runs from ITS OWN scale to the next, not from the
@@ -248,17 +328,23 @@ class Scheme:
                 # to the scales can, and that is what the table encodes.
                 nxt = bounds[n + 1]
                 last_letter_y = None
-                for yy, tt in left:
-                    mk2 = MARKER.match(tt.strip())
-                    if not mk2:
-                        continue
-                    a2 = mk2.group(1).lower()
-                    b2 = (mk2.group(2) or '').lower()
-                    if a2 in ROMANS and (not b2 or b2 in ROMANS):
-                        continue
-                    if yy >= nxt + 6 or not in_marker_column(page, yy, a2):
-                        continue
-                    last_letter_y = yy
+                # Only a band with another scale below it can see the NEXT
+                # unit's marker.  On the final scale, every marker remaining
+                # in the band belongs to that one scale.  Treating the final
+                # letter as a future marker hid shared units such as 2021 OL
+                # Q8(d)+(e), 2024 HL P2 Q1(b)+(c), and 2024 OL P2 Q2(c)+(d).
+                if nxt < 1e8:
+                    for yy, tt in left:
+                        mk2 = MARKER.match(tt.strip())
+                        if not mk2:
+                            continue
+                        a2 = mk2.group(1).lower()
+                        b2 = (mk2.group(2) or '').lower()
+                        if a2 in ROMANS and (not b2 or b2 in ROMANS):
+                            continue
+                        if yy >= nxt + 6 or not in_marker_column(page, yy, a2):
+                            continue
+                        last_letter_y = yy
                 letter = roman = None
                 own_letter = False
                 letters = []
@@ -314,6 +400,16 @@ class Scheme:
                             # A BARE repeat still carries: 2021 OL page 34
                             # prints "(a)" again 14 points above the next
                             # scale, where it does head the next unit.
+                            # When it is the final heading before ANOTHER
+                            # scale, however, it heads that next scale.  2021
+                            # OL P2 Q6 prints (b)(ii) 15 points above its own
+                            # Scale 10C; folding it into (b)(i)'s Scale 5B
+                            # both lost ten marks and created an anonymous
+                            # second unit.
+                            if last_letter_y is not None \
+                                    and abs(y - last_letter_y) <= 0.5:
+                                carried = (a, b)
+                                break
                             if b not in romans:
                                 romans.append(b)
                             if roman is None:
@@ -383,9 +479,48 @@ class Scheme:
                     if hy < y0:
                         qb = hq
                 key = (paper, qb, letter, roman)
+                # A continuation page often repeats only the roman marker.
+                # The letter remains the one that opened immediately above:
+                # 2023 HL Q4(a)(ii), Q8(b)(ii), 2025 HL Q2(a)(ii), and 2021
+                # HL Q2(c)(i) are all printed this way.  Carry it only within
+                # the same paper and question, so a genuine top-level roman
+                # cannot inherit from an unrelated ask.
+                prior = last_unit_key or last_unit_by_question.get((paper, qb))
+                if letter is None and roman is not None and prior \
+                        and prior[:2] == (paper, qb) and prior[2] is not None:
+                    letter = prior[2]
+                    key = (paper, qb, letter, roman)
+                key = KEY_CORRECTIONS.get(
+                    (self.year, self.level, *key[:4]), key)
+                letter, roman = key[2], key[3]
+                # A later scale with no new marker continues the part directly
+                # above it.  2021 OL P2 Q3(a) gives a coordinate method and an
+                # algebraic method, each with its own Scale 10D; Q3(b)(ii)
+                # likewise gives algebraic and graphical routes.  They are
+                # alternative marking routes for ONE ask, not anonymous extra
+                # questions and not duplicate cards.
+                if letter is None and roman is None and last_unit_key \
+                        and last_unit_key[:2] == (paper, qb):
+                    self.alternate_units.setdefault(last_unit_key, []).append(
+                        (i, lo, hi, scale_rows[n][1]))
+                    continue
                 if key in self.units:
                     key = (paper, qb, letter, roman, n)
                 self.units[key] = (i, lo, hi)
+                last_unit_key = key
+                last_unit_by_question[(paper, qb)] = key
+                side = scale_rows[n][1]
+                self._scale_text[key] = scale_rows[n][2]
+                self._notes_side[key] = side
+                if side == 'left':
+                    # The drawing/proof ends where its scale begins; the
+                    # marking ladder begins there.  Four points of lookback
+                    # retains the scale line itself.
+                    self._solution_bounds[key] = (i, lo, max(lo, y0 - 5))
+                    self._notes_bounds[key] = (i, y0 - 4, hi)
+                else:
+                    self._solution_bounds[key] = (i, lo, hi)
+                    self._notes_bounds[key] = (i, lo, hi)
                 if letter is not None and len(romans) > 1:
                     self.spans[key] = list(romans)
                 if len(letters) > 1:
@@ -397,9 +532,13 @@ class Scheme:
         return sorted(self.units, key=order)
 
     def _band(self, key, side):
-        i, lo, hi = self.units[key]
+        if side == 'notes':
+            i, lo, hi = self._notes_bounds.get(key, self.units[key])
+        else:
+            i, lo, hi = self._solution_bounds.get(key, self.units[key])
         left, right = mathtext.placed(self.doc[i])
-        rows = right if side == 'notes' else left
+        rows = (right if self._notes_side.get(key, 'right') == 'right' else left) \
+            if side == 'notes' else left
         return [t for y, t in rows
                 if lo - 4 <= y < hi and not FURNITURE.search(t.strip())]
 
@@ -411,10 +550,36 @@ class Scheme:
 
     def band(self, key):
         """(page index, y0, y1) — for cropping the model solution."""
-        return self.units[key]
+        return self._solution_bounds.get(key, self.units[key])
+
+    def covered_parts(self, key):
+        """[(letter, roman)] covered by this one official scale.
+
+        Most combined units are rectangular: several romans under one letter,
+        or several letters with no roman.  One reviewed SEC unit is irregular:
+        2022 HL P2 Q8 jointly prices (a)(v) and (b).  Keeping that shape here
+        lets the question text, citation and reconciliation all describe what
+        the examiner actually marked without inventing a second tariff.
+        """
+        special = {
+            (2022, 'hl', 2, 8, 'a', 'v'): [('a', 'v'), ('b', None)],
+        }.get((self.year, self.level, *key[:4]))
+        if special:
+            return special
+        romans = self.spans.get(key)
+        if romans:
+            return [(key[2], r) for r in romans]
+        letters = self.letter_spans.get(key)
+        if letters and key[3] is None:
+            return [(letter, None) for letter in letters]
+        return [(key[2], key[3])]
 
     def tariff(self, key):
-        _, total, ladder = mathtext.steps_and_scale(self.notes(key))
+        # Use the pristine raw scale line.  notes() is the fraction-aware text
+        # flow and can legitimately mangle a nearby scale while repairing a
+        # stacked radical or fraction.
+        _, total, ladder = mathtext.steps_and_scale(
+            [self._scale_text.get(key, '')])
         return total, ladder
 
     def _bands(self, key):
@@ -489,9 +654,30 @@ class Scheme:
         notes = self.notes(key)
         steps, _, _ = mathtext.steps_and_scale(notes)
         if steps:
-            return [(f'Step {n}', t) for n, t in steps]
-        return [(lab, '\n'.join(bs)) for lab, bs in self._bands(key)
-                if bs and not DEDUCTION.match(lab + ':')]
+            # Several accepted METHODS repeat Step 1..Step n. They are routes
+            # to the same full-credit answer, not sixteen independently
+            # claimable checkboxes. Keep the first complete official route;
+            # the model-solution figure still shows every accepted method.
+            route, seen = [], set()
+            for n, text in steps:
+                if n in seen:
+                    break
+                seen.add(n)
+                route.append((f'Step {n}', text))
+            return route
+        route, seen = [], set()
+        for lab, bs in self._bands(key):
+            if not bs or DEDUCTION.match(lab + ':'):
+                continue
+            # A second Low/Mid/High sequence marks an alternative method.
+            # Mixing both sequences lets a student claim one rung from each
+            # route, so stop when the ladder restarts.
+            rung = re.sub(r'\W+', '', lab.lower())
+            if rung in seen:
+                break
+            seen.add(rung)
+            route.append((lab, '\n'.join(bs)))
+        return route
 
 
 if __name__ == '__main__':

@@ -555,19 +555,19 @@
     "refsHash": "25434d529fd64aae"
   },
   "maths": {
-    "cards": 833,
-    "contentHash": "b03ee0576c972395",
-    "coveragePct": 95.3,
-    "covered": 943,
+    "cards": 854,
+    "contentHash": "571603b610d88d0b",
+    "coveragePct": 98.5,
+    "covered": 974,
     "excluded": 0,
     "leaves": 989,
-    "open": 46,
+    "open": 15,
     "orphans": 0,
     "papers": {
       "count": 20,
       "hash": "dd8222a2e1b8d8d6"
     },
-    "refsHash": "8374d11c7ed5963f"
+    "refsHash": "a84c4dc9f66c30aa"
   },
   "modern-greek": {
     "cards": 79,

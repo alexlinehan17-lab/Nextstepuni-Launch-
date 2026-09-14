@@ -798,13 +798,6 @@
   "description": "The question as printed on the paper \u2014 A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x\u2208\u211d, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the "
  },
  {
-  "file": "maths-2021-OL-ask-p1-q9-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 1 Q9(a)",
-  "description": "The question as printed on the paper \u2014 The first three patterns in a sequence of patterns containing dots and crosses are shown below. \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find a"
- },
- {
   "file": "maths-2021-OL-ask-p1-q9-a-i.png",
   "kind": "figure",
   "truncated": false,
@@ -896,13 +889,6 @@
   "description": "The question as printed on the paper \u2014 The game \u201cTwister\u201d is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place t"
  },
  {
-  "file": "maths-2021-OL-ask-p2-q1-c.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q1(c)",
-  "description": "The question as printed on the paper \u2014 The game \u201cTwister\u201d is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place t"
- },
- {
   "file": "maths-2021-OL-ask-p2-q1-c-i.png",
   "kind": "figure",
   "truncated": false,
@@ -924,32 +910,11 @@
   "description": "The question as printed on the paper \u2014 The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC ] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure ABCDE"
  },
  {
-  "file": "maths-2021-OL-ask-p2-q3.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q3",
-  "description": "The question as printed on the paper \u2014 A line n passes through the points A(\u20131, 2) and B(0, \u20132). Write the equation of n in the form y = mx + c, where m, c \u2208 \u2124. The diagram below shows the line l: 3x\u22124y = 5 and the point P(6, \u22123). 5 y l 4 3 2 1 x -2 -1 1 2 3 "
- },
- {
   "file": "maths-2021-OL-ask-p2-q3-a.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q3(a)",
   "description": "The question as printed on the paper \u2014 A line n passes through the points A(\u20131, 2) and B(0, \u20132). Write the equation of n in the form y = mx + c, where m, c \u2208 \u2124."
- },
- {
-  "file": "maths-2021-OL-ask-p2-q3-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q3(b)",
-  "description": "The question as printed on the paper \u2014 The diagram below shows the line l: 3x\u22124y = 5 and the point P(6, \u22123). 5 y l 4 3 2 1 x -2 -1 1 2 3 4 5 6 7 8 -1 -2 P -3 Find the equation of the line k through the point P that is perpendicular to the line l. Write your a"
- },
- {
-  "file": "maths-2021-OL-ask-p2-q4-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q4(a)",
-  "description": "The question as printed on the paper \u2014 Write down the co-ordinates of A and of B. A ^= ( , ) B ^= ( , ) Find the co-ordinates of the midpoint of [AB]. (iii) Use a compass to construct the circle c, which has AB as its diameter on the diagram above. 10 Leaving"
  },
  {
   "file": "maths-2021-OL-ask-p2-q4-a-i.png",
@@ -1082,13 +1047,6 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q9(a)(i)",
-  "description": "The question as printed on the paper \u2014 The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1 uni"
- },
- {
-  "file": "maths-2021-OL-ask-p2-q9-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q9(b)",
   "description": "The question as printed on the paper \u2014 The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1 uni"
  },
  {
@@ -1414,13 +1372,6 @@
   "description": "The question as printed on the paper \u2014 A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0\u221982 \u22120\u221912 ln("
  },
  {
-  "file": "maths-2022-HL-ask-p1-q10-c-ii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2022 HL Paper 1 Q10(c)(ii)",
-  "description": "The question as printed on the paper \u2014 A student is asked to memorise a long list of digits, and then write down the list some time later. The proportion, P, of the digits recalled correctly after t hours can be modelled by the function: P(t) = 0\u221982 \u22120\u221912 ln("
- },
- {
   "file": "maths-2022-HL-ask-p1-q10-d.png",
   "kind": "figure",
   "truncated": false,
@@ -1608,13 +1559,6 @@
   "truncated": false,
   "questionRef": "2022 HL Paper 2 Q7(e)",
   "description": "The question as printed on the paper \u2014 A company makes and sells candles of different shapes and sizes. A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450\ud835\udf0b cm\u00b3. Work out the height of this candle. 450\ud835\udf0b cm\u00b3 A small candle in the sh"
- },
- {
-  "file": "maths-2022-HL-ask-p2-q8-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2022 HL Paper 2 Q8(a)",
-  "description": "The question as printed on the paper \u2014 Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per gallo"
  },
  {
   "file": "maths-2022-HL-ask-p2-q8-a-i.png",
@@ -2506,13 +2450,6 @@
   "description": "The question as printed on the paper \u2014 The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A\u2192B and g: B\u2192C. #A = #C = 4 and #B = 3. x 1 \uf0f1 w 2 \u2713 y 3 z 4 \uf0da Find the value of g(f(3)). Explain why g: B\u2192C is injective but not surje"
  },
  {
-  "file": "maths-2023-HL-ask-p1-q6-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2023 HL Paper 1 Q6(a)",
-  "description": "The question as printed on the paper \u2014 f and g are two functions of x\u2208\u211d, where: f(x) = x + 4 g(x) = x\u00b2\u22122 Find the two values of x for which f(x) = g(x). Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f"
- },
- {
   "file": "maths-2023-HL-ask-p1-q6-a-i.png",
   "kind": "figure",
   "truncated": false,
@@ -2609,13 +2546,6 @@
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q8(f)",
   "description": "The question as printed on the paper \u2014 When an item is being sold: \u2022 the mark up is the profit as a percentage of the cost price, and \u2022 the margin is the profit as a percentage of the selling price. A shop sells an item with a margin of 18%. Work out the mark"
- },
- {
-  "file": "maths-2023-HL-ask-p1-q9-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2023 HL Paper 1 Q9(a)",
-  "description": "The question as printed on the paper \u2014 Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2\u2074. You can write each one as a power of 2. Work out how man"
  },
  {
   "file": "maths-2023-HL-ask-p1-q9-b-i.png",
@@ -3211,13 +3141,6 @@
   "truncated": false,
   "questionRef": "2023 OL Paper 1 Q10(a)(ii)",
   "description": "The question as printed on the paper \u2014 Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm\u00b3. 5 mm 18 mm A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm fro"
- },
- {
-  "file": "maths-2023-OL-ask-p1-q10-b-ii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2023 OL Paper 1 Q10(b)(ii)",
-  "description": "The question as printed on the paper \u2014 Many gold rings are made of a mixture of pure gold and other metals. One particular ring weighs 8 grams. It contains 3 grams of pure gold. Work out the percentage of the weight of this ring that is pure gold. 26 Leaving "
  },
  {
   "file": "maths-2023-OL-ask-p1-q10-b-iii.png",
@@ -4382,25 +4305,11 @@
   "description": "The question as printed on the paper \u2014 The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First \u20ac40 000 20% Balance 40% Olivia\u2019s gross annual income is \u20ac34 000 and her annual tax credit is \u20ac3550. Find her net annu"
  },
  {
-  "file": "maths-2024-OL-ask-p1-q10-b-iv.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q10(b)(iv)",
-  "description": "The question as printed on the paper \u2014 The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First \u20ac40 000 20% Balance 40% Olivia\u2019s gross annual income is \u20ac34 000 and her annual tax credit is \u20ac3550. Find her net annu"
- },
- {
   "file": "maths-2024-OL-ask-p1-q10-c-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 OL Paper 1 Q10(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 An employee who works from home may qualify for tax relief on their electricity and broadband bills. The amount of tax relief such an employee can claim, A, is calculated using the formula: broadband bills) \u00d7 dd/365 \u00d7 0\u2219"
- },
- {
-  "file": "maths-2024-OL-ask-p2-q1-a-ii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 OL Paper 2 Q1(a)(ii)",
-  "description": "The question as printed on the paper \u2014 The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y\u2208\u2115. X 91 76 82 37 42 74 54 Y Write the scores in order, from the lowest to the highest"
  },
  {
   "file": "maths-2024-OL-ask-p2-q1-a-iii.png",
@@ -5208,13 +5117,6 @@
   "description": "The question as printed on the paper \u2014 20 people take part in a clinical trial. 10 of them will be picked to be in group A. The remaining 10 people will be in group B. How many different combinations of 10 people can be picked to be in group A? 10 people are "
  },
  {
-  "file": "maths-2025-HL-ask-p2-q9-d.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2025 HL Paper 2 Q9(d)",
-  "description": "The question as printed on the paper \u2014 In a different clinical trial, 24 people are split into two groups, X and Y. 8 people are in group X and 16 people are in group Y. Each person in group X is paired with two people in group Y, so that everyone in group Y "
- },
- {
   "file": "maths-2025-HL-ask-p2-q10-a-i.png",
   "kind": "figure",
   "truncated": false,
@@ -5530,13 +5432,6 @@
   "description": "The question as printed on the paper \u2014 Ciara gets paid a wage of \u20ac780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours. On a particular week"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q10-c.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q10(c)",
-  "description": "The question as printed on the paper \u2014 A shop repairs clothes. The charge for a repair is given by the formula: C = 20h + xh where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on"
- },
- {
   "file": "maths-2025-OL-ask-p1-q10-c-iii.png",
   "kind": "figure",
   "truncated": false,
@@ -5761,20 +5656,6 @@
   "description": "The question as printed on the paper \u2014 A random sample of 815 cars was picked from new cars in 2024. Show that, for this sample, the margin of error for a population proportion is 3\u22195%, correct to 1 decimal place. 106 of the 815 new cars bought in 2024 were e"
  },
  {
-  "file": "maths-2025-OL-ask-p2-q9-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2025 OL Paper 2 Q9(a)",
-  "description": "The question as printed on the paper \u2014 Clodagh is making a wooden table for her woodwork class. The triangle A below is a scaled diagram of the table-top. The table-top is supported by one leg attached to the centroid, as shown in the diagram on the right. On"
- },
- {
-  "file": "maths-2025-OL-ask-p2-q9-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2025 OL Paper 2 Q9(b)",
-  "description": "The question as printed on the paper \u2014 Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k. The longest side of the bigger table-top i"
- },
- {
   "file": "maths-2025-OL-ask-p2-q9-b-iii.png",
   "kind": "figure",
   "truncated": false,
@@ -5838,13 +5719,6 @@
   "description": "The question as printed on the paper \u2014 Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. 200 m 150 m 150 m 110\u00b0 200 m 200 m 200 m A is a six-sided shape where: A is "
  },
  {
-  "file": "maths-2021-OL-ask-p1-q6-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 1 Q6(a)",
-  "description": "The question as printed on the paper \u2014 The first three terms of an arithmetic sequence are \u22125, k, 1. Find k and hence or otherwise show that the common difference is 3. k = Common difference: Find T\u2081\u2080, the 10th term in the sequence. (iii) Find which term in t"
- },
- {
   "file": "maths-2021-OL-ask-p1-q9-a-iii.png",
   "kind": "figure",
   "truncated": false,
@@ -5857,20 +5731,6 @@
   "truncated": false,
   "questionRef": "2021 OL Paper 1 Q9(a)(v)",
   "description": "The question as printed on the paper \u2014 The first three patterns in a sequence of patterns containing dots and crosses are shown below. \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 \u00d7 pattern 1 pattern 2 pattern 3 Draw the fourth pattern in the sequence into the box below. Find a"
- },
- {
-  "file": "maths-2021-OL-ask-p1-q9-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 1 Q9(b)",
-  "description": "The question as printed on the paper \u2014 (iv) The table shows the number of crosses for the first two patterns. Complete the table, and hence find a formula for the number of crosses in pattern n of the sequence. Pattern 1 2 3 4 5 6 Number 1 4 of crosses Number"
- },
- {
-  "file": "maths-2021-OL-ask-p2-q1-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q1(b)",
-  "description": "The question as printed on the paper \u2014 The game \u201cTwister\u201d is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place t"
  },
  {
   "file": "maths-2021-OL-ask-p2-q1-c-ii.png",
@@ -5894,46 +5754,11 @@
   "description": "The question as printed on the paper \u2014 The co-ordinate diagram below shows two points A and B. y 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 7 8 -1 -2 -3 -4 -5 -6 Write down the co-ordinates of A and of B. A ^= ( , ) B ^= ( , )"
  },
  {
-  "file": "maths-2021-OL-ask-p2-q5-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q5(b)",
-  "description": "The question as printed on the paper \u2014 The following table shows data on the height and arm span of twenty teenagers. Height Arm Span Gender (cm) (cm) 1 162 155 2 169 174 3 164 144 4 157 160 5 160 160 6 170 170 7 174 170 8 159 154 9 153 148 10 167 167 11 150 "
- },
- {
-  "file": "maths-2021-OL-ask-p2-q7-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q7(a)",
-  "description": "The question as printed on the paper \u2014 The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. 15 \u221225 25 \u221235 35 \u221245 45 \u221255 55 \u221265 Age Group Percentage (%) 24 27 25 16 "
- },
- {
-  "file": "maths-2021-OL-ask-p2-q7-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q7(b)",
-  "description": "The question as printed on the paper \u2014 Prior to the COVID-19 pandemic, Netflix held the largest share of the online streaming market with 65% of all streaming subscribers in the 15 to 65 age group. Aiden thought that this percentage might have changed during "
- },
- {
   "file": "maths-2021-OL-ask-p2-q9-b-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q9(b)(ii)",
   "description": "The question as printed on the paper \u2014 The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1 uni"
- },
- {
-  "file": "maths-2021-OL-ask-p2-q10-a.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q10(a)",
-  "description": "The question as printed on the paper \u2014 A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map. y 6 5 l "
- },
- {
-  "file": "maths-2022-HL-ask-p1-q8-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2022 HL Paper 1 Q8(b)",
-  "description": "The question as printed on the paper \u2014 120 m 12 m A Ferris wheel has a diameter of 120 m. When it is turning, it completes exactly 10 full rotations in one hour. The diagram above shows the Ferris wheel before it starts to turn. At this stage, the point A is "
  },
  {
   "file": "maths-2022-HL-ask-p2-q8-a-v.png",
@@ -5943,53 +5768,11 @@
   "description": "The question as printed on the paper \u2014 Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per gallo"
  },
  {
-  "file": "maths-2022-HL-ask-p2-q8-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2022 HL Paper 2 Q8(b)",
-  "description": "The question as printed on the paper \u2014 The scatterplot on the right shows some values of fuel consumption (F) for the given values of engine speed (S), for a particular car. For the points in this scatterplot, F can be closely approximated by a quadratic func"
- },
- {
   "file": "maths-2023-HL-ask-p1-q9-a-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q9(a)(i)\u2013(iii)",
   "description": "The question as printed on the paper \u2014 Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2\u2074. You can write each one as a power of 2. Work out how man"
- },
- {
-  "file": "maths-2023-HL-ask-p2-q7-d.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2023 HL Paper 2 Q7(d)",
-  "description": "The question as printed on the paper \u2014 Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. (b) The points R and P are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the angl"
- },
- {
-  "file": "maths-2023-OL-ask-p2-q5-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2023 OL Paper 2 Q5(b)",
-  "description": "The question as printed on the paper \u2014 The diagram below (not to scale) shows a square with sides of length 12 cm. The circle c is inside the square, and touches the four sides of the square. The circle k is outside the square, and goes through the four corne"
- },
- {
-  "file": "maths-2024-HL-ask-p2-q7-a-ii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 HL Paper 2 Q7(a)(ii)",
-  "description": "The question as printed on the paper \u2014 PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48\u22192 years and a standard deviation of 10\u22196 years. One person is picked a"
- },
- {
-  "file": "maths-2025-HL-ask-p1-q8-d.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2025 HL Paper 1 Q8(d)",
-  "description": "The question as printed on the paper \u2014 Find how long it would take Jacob to kayak directly from S to F, correct to the nearest minute. S The point B is on [A], and |A| = x km, 2 km"
- },
- {
-  "file": "maths-2025-HL-ask-p1-q10-c.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2025 HL Paper 1 Q10(c)",
-  "description": "The question as printed on the paper \u2014 The first three patterns in a sequence of patterns are shown below. Each pattern is made up of ) at points in the co-ordinate plane that have integer co-ordinates. dots ( As shown below, Pattern 1 has a dot at all such p"
  },
  {
   "file": "maths-2025-OL-ask-p1-q10-c-i.png",
@@ -6039,13 +5822,6 @@
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q5(b)(ii)",
   "description": "The question as printed on the paper \u2014 The following table shows data on the height and arm span of twenty teenagers. Height Arm Span Gender (cm) (cm) 1 162 155 2 169 174 3 164 144 4 157 160 5 160 160 6 170 170 7 174 170 8 159 154 9 153 148 10 167 167 11 150 "
- },
- {
-  "file": "maths-2021-OL-ask-p2-q6.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2021 OL Paper 2 Q6",
-  "description": "The question as printed on the paper \u2014 On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly. Construct the circumcircle of the given triangle ABC. Show all you"
  },
  {
   "file": "maths-2021-OL-ask-p2-q8-a-ii.png",
@@ -6137,5 +5913,61 @@
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q8(c), (d)",
   "description": "The question as printed on the paper \u2014 Find how long it would take Jacob in total to kayak from S to A, and then run from A to F."
+ },
+ {
+  "file": "maths-2021-HL-ask-p1-q9-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Paper 1 Q9(a)(i)",
+  "description": "The question as printed on the paper \u2014 A cup of coffee is freshly brewed to 95\u00b0 C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(\u22120\u00b7081t) + 20 where A is constant and t is time measured in minutes from when the coffee was brewed. Show that A = 75."
+ },
+ {
+  "file": "maths-2021-OL-ask-p2-q1-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 OL Paper 2 Q1(b)(i)",
+  "description": "The question as printed on the paper \u2014 The game \u201cTwister\u201d is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place their selected hand/foot on the selected coloured spot on the game mat. The spinners below show the outcome Right Hand on a Yellow Spot. Red Left Yellow Right Hand Hand Right Left Green Blue Foot Foot How many different possible outcomes are there in the game? 4 Leaving Certificate, 2021"
+ },
+ {
+  "file": "maths-2022-HL-ask-p2-q4-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Paper 2 Q4(a)(ii)",
+  "description": "The question as printed on the paper \u2014 \u221aa + 1 , where a\u2208\u2115. (ii)"
+ },
+ {
+  "file": "maths-2022-OL-ask-p1-q5-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Paper 1 Q5(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 Write each of the following values in the form a \u00d7 10\u207f where 1 \u2264 a < 10 and n\u2208\u2124. 1200 0\u221927"
+ },
+ {
+  "file": "maths-2023-HL-ask-p2-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Paper 2 Q2(b)",
+  "description": "The question as printed on the paper \u2014 Using the formula in part (a), and without using a calculator, find the value of sin 75\u00b0. Give your answer in surd form."
+ },
+ {
+  "file": "maths-2023-HL-ask-p2-q8-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Paper 2 Q8(b)(i)",
+  "description": "The question as printed on the paper \u2014 An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s\u2208\u211d, based on how many attempts it takes them to guess the word. In Ireland, players\u2019 scores are approximately normally distributed, with a mean of 3\u00b787 and a standard deviation of 0\u00b736. A player is selected at random from the players in Ireland. Find the probability that this player has a score of less than 3\u00b75. A random sample of 64 Galway players has a mean score of 3\u00b774. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland."
+ },
+ {
+  "file": "maths-2023-HL-ask-p2-q8-d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Paper 2 Q8(d)(ii)",
+  "description": "The question as printed on the paper \u2014 An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s\u2208\u211d, based on how many attempts it takes them to guess the word. In Ireland, players\u2019 scores are approximately normally distributed, with a mean of 3\u00b787 and a standard deviation of 0\u00b736. A player is selected at random from the players in Ireland. Find the probability that this player has a score of less than 3\u00b75. A random sample of 64 Galway players has a mean score of 3\u00b774. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland. Use the information about this sample to construct a 95% confidence interval for the mean score of all Galway players. Use the standard deviation of 0\u00b736 in your calculations. 20 Leaving Certificate 2023 Mathematics, Paper 2 \u2013 Higher Level Carry out a hypothesis test at the 5% level of significance to test the newspaper\u2019s claim that Galway players have a different mean score to players in Ireland. State your null hypothesis, state your alternative hypothesis, state your conclusion, and give a reason for your conclusion. Null Hypothesis: Alternative Hypothesis: Conclusion: Reason for your conclusion: A national newspaper conducts a survey on a random sample of n teenagers in Ireland."
+ },
+ {
+  "file": "maths-2025-HL-ask-p2-q2-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Paper 2 Q2(a)(ii)",
+  "description": "The question as printed on the paper \u2014 A circle s has the equation (x\u22124)\u00b2 + (y + 2)\u00b2 = 45. (a) (ii) Find the equation of the tangent to s at the point (\u22122, \u22125). Write your answer in the form y = m + c, where m, c\u2208\u2124."
  }
 ]

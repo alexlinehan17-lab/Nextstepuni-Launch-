@@ -6,6 +6,7 @@ for why the notation survives at all.
 """
 import os
 import sys
+from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from maths_lib import Author, Refused  # noqa: E402
@@ -41,12 +42,14 @@ for key in A.S.parts():
     topic = filed[key]
     if not topic:
         near = votes.get((paper, q))
-        topic = max(set(near), key=near.count) if near else None
+        # A tie must not be settled by set order: string hashes are salted
+        # per process, so max(set(...)) filed the same card under a
+        # different topic on each run. The first part that files wins.
+        topic = Counter(near).most_common(1)[0][0] if near else None
     if not topic:
         print(f'UNFILED {A.ref(key)}: {qtext[:60]}', file=sys.stderr)
         continue
-    cid = (f'maths-2022-ol-p{paper}-q{q}'
-           + (f'-{letter}' if letter else '') + (f'-{roman}' if roman else ''))
+    cid = A.cid(key)
     try:
         A.card(key, cid=cid, topic=topic, concept=concept_for(qtext),
                figure_key=FIGURES.get(key, ''))
