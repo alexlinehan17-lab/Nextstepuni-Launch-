@@ -5712,8 +5712,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q2-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q2-a-iv.png",
-          "srcHash": "1ac4a5981611c48bfb54bb3fc0d199a0",
-          "alt": "The question as printed on the paper — In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. Im 3 2 1 Re -1 1 2 3 4 5 6 7 -1 -2 z₁ -3 -4 Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above.",
+          "srcHash": "fdb19fb3fee15389fe15eaec560c91ee",
+          "alt": "The question as printed on the paper — Question 2 (30 marks) In this question, i2= −1. z2 and z3 are two other complex numbers. z2= 5 + i and z3= 6 −2i. (iv) Work out the value of |z3|. Give your answer in surd form.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
