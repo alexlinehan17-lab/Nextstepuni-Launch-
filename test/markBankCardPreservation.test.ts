@@ -501,9 +501,23 @@ const decks = [
    * eng-2024-hl-q1-l is withdrawn outright: it carried Question 1(m)'s ask
    * welded onto (l)'s, which is what the letter run stopping at (l) did to
    * every paper. Read properly, (l) states one thing and files under no
-   * syllabus topic. */
-  ['engineering:higher', ENGINEERING_HIGHER, 357, '887a423276b31e51315e70e1c1ecc8d10890ec745afbcdb901e783d11877ef46'],
-  ['engineering:ordinary', ENGINEERING_ORDINARY, 193, '353680642063db2d4248f69cef8c8afecde8651c7d373fda43c8abf5a73cc94a'],
+   * syllabus topic.
+   *
+   * 2026-09-14: eng-e3/e4/e5's missing pieces, ported by hand. 550 -> 554,
+   * coverage 675/816 -> 679/816. Five cards added, none replacing anything:
+   * eng-2025-hl-q1-h, eng-2025-hl-q4-a-i and eng-2025-hl-q4-b-i (the 2025
+   * Higher tariff grid read on its baseline, and a reviewed judgement that
+   * Q1(h)'s carabiner photograph is decorative), eng-2025-ol-q7-a-i (the same
+   * judgement for the sand car), and eng-2022-ol-q7-c-i -- 2022 Ordinary's
+   * PCB-branch "Light bulb / L.E.D.", which the scheme answers past an OR at
+   * the key its instrument (i) also uses.
+   *
+   * eng-2025-ol-q2-c-i is withdrawn (authoring/withdrawn/engineering.json):
+   * it answered "a suitable material for EACH of the parts labelled" with
+   * the seat's material alone, for a tariff read one row out of line. No
+   * alias: nothing replaces it, and 2025 OL Q2(c)(i) is open again. */
+  ['engineering:higher', ENGINEERING_HIGHER, 360, '923149d5876c26dbff49440de27f4899d4298005e7043a263e3377306f3ebe1e'],
+  ['engineering:ordinary', ENGINEERING_ORDINARY, 194, '4db6b2da1890e2bb262ee816e1bbb8d97e86ead5cb99531609170a75594a075b'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
    * added and none replacing anything. Nothing in any other deck moved. */
@@ -753,7 +767,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_324);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328);
+    // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -811,7 +826,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_772);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
