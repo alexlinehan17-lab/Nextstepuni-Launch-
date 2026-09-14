@@ -31,8 +31,8 @@ const LandingPage: React.FC = () => {
     <Nav />
     <main>
       <Hero />
-          <Numbers />
-          <Journey />
+      <Numbers />
+      <Journey />
       <Chapters />
       <Examiner />
       <AskThePapers />
