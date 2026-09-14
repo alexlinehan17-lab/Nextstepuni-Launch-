@@ -129,11 +129,15 @@ const AppleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
   </svg>
 );
 
-// ── Gateway panel ──────────────────────────────────────────
+const AuthWordmark = () => (
+  <span className="font-sans text-[26px] font-bold leading-none tracking-[-0.03em]">nextstepuni</span>
+);
+
+// ── Welcome artwork panel ──────────────────────────────────
 // Left half of the auth card. Premium product-entry composition:
 // three structural zones (brand strip top / icon centred /
 // statement + cycling caption bottom) on a pure white surface.
-// The gateway artwork is the visual anchor.
+// The star character is the visual anchor.
 const CYCLING_CAPTIONS = [
   'Personalised study, examiner-grounded.',
   'Built on marking schemes, not memorisation.',
@@ -142,7 +146,7 @@ const CYCLING_CAPTIONS = [
   'Where examiner insight meets your routine.',
 ];
 
-const GatewayPanel = () => {
+const WelcomeArtworkPanel = () => {
   const mobileAppDesign = useMobileAppDesign();
   const [capIdx, setCapIdx] = useState(0);
 
@@ -164,18 +168,7 @@ const GatewayPanel = () => {
     >
       {/* Brand strip */}
       <div className="flex items-center gap-3">
-        <p
-          className="font-sans"
-          style={{
-            fontSize: 10,
-            fontWeight: 700,
-            textTransform: 'uppercase',
-            letterSpacing: '0.22em',
-            color: '#5a5550',
-          }}
-        >
-          Nextstepuni
-        </p>
+        <div style={{ color: '#1a1a1a' }}><AuthWordmark /></div>
         <div style={{ flex: 1, height: 1, backgroundColor: 'rgba(26,26,26,0.12)' }} />
       </div>
 
@@ -191,7 +184,7 @@ const GatewayPanel = () => {
           }}
         >
           <img
-            src={mobileAppDesign ? "/icons/onboarding/star-person.png" : "/icons/gateway.png"}
+            src="/icons/onboarding/star-person.png"
             alt=""
             aria-hidden
             style={{
@@ -253,10 +246,10 @@ const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNo
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className="account-card flex min-h-[100dvh] w-full bg-[var(--surface-canvas)] md:min-h-[540px] md:max-w-5xl md:overflow-hidden md:rounded-2xl md:border-[1.5px] md:border-black/25 md:bg-white md:shadow-[0_12px_40px_rgba(0,0,0,0.06)] dark:md:border-zinc-700 dark:md:bg-zinc-900"
     >
-      <GatewayPanel />
+      <WelcomeArtworkPanel />
       <div className="account-form flex w-full flex-1 flex-col justify-start px-5 pb-[calc(24px+var(--sab,0px))] pt-[calc(20px+var(--sat,0px))] sm:px-8 md:w-1/2 md:flex-none md:justify-center md:px-14 md:py-12">
         <div className="mx-auto flex w-full max-w-[420px] flex-1 flex-col md:max-w-[380px] md:flex-none">
-          {mobileAppDesign && <div className="account-wordmark"><span>nextstepuni</span></div>}
+          {mobileAppDesign && <div className="account-wordmark"><AuthWordmark /></div>}
           {children}
         </div>
       </div>
@@ -998,7 +991,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   transition={{ duration: 0.35, ease: SLIDE_EASE }}
                   className="flex items-center gap-3 border-b border-[var(--outline-soft)] pb-4"
                 >
-                  <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--ink-secondary)]">NextStepUni</span>
+                  <AuthWordmark />
                   <span aria-hidden="true" className="h-px flex-1 bg-[var(--outline-soft)]" />
                 </MotionDiv>
 
@@ -1010,7 +1003,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     className="mb-2 flex max-h-[22vh] min-h-[104px] items-center justify-center"
                   >
                     <img
-                      src="/icons/gateway.png"
+                      src="/icons/onboarding/star-person.png"
                       alt=""
                       aria-hidden
                       className="h-auto w-[clamp(118px,34vw,154px)] select-none dark:drop-shadow-[0_0_1px_rgba(255,255,255,0.45)]"
