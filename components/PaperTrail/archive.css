@@ -97,6 +97,9 @@
 .pt-topic-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; width: 100%; text-align: left; font-weight: 600; }
 .pt-topic-link svg { color: var(--accent-text); }
 .pt-notice { color: var(--ink-secondary); padding-block: 12px; font-size: 13px; }
+/* Archive-outage notice: white card on the ink hairline, no tint (visual language). */
+.pt-archive-alert { margin-bottom: 16px; padding: 14px 16px; border: 1.5px solid var(--outline-strong); border-radius: 8px; background: var(--surface-paper); color: var(--ink-secondary); font-size: 13px; line-height: 20px; }
+.pt-archive-alert-title { margin-bottom: 2px; color: var(--ink-primary); font-weight: 600; }
 .pt-year-intro { color: var(--ink-secondary); margin-block: 12px 24px; }
 .pt-decade { margin-bottom: 24px; }
 .pt-decade h2 { margin-bottom: 12px; }
