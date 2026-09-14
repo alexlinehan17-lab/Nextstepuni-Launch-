@@ -47,6 +47,7 @@ import { composeCoach } from './coach';
 import { composeDebrief, debriefSeen, markDebriefSeen } from './debrief';
 import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
 import { paperAnswersPath, paperStoragePath, paperUrl } from './storage';
+import { archiveHealth } from './archiveHealth';
 import { hostedAnchorsUrl, preferredAnswersUrl } from './vaultResolve';
 import { isPinned, listPins, listRecentOpens, recordRecentOpen, togglePin, type PaperRef } from './recentsStore';
 import { recordVisit } from '../lastVisited';
@@ -223,6 +224,38 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     });
   }, [uid]);
   const searchBoxRef = useRef<HTMLDivElement | null>(null);
+
+  // Archive outage banner — one tiny probe per page load; shown only on a
+  // CONFIRMED server-side refusal (billing/rules/outage), never on the
+  // student's own connection problems (see archiveHealth.ts).
+  const [archiveDown, setArchiveDown] = useState(false);
+  useEffect(() => {
+    const subj = PAPER_TRAIL_SUBJECTS.find(s => (PAPER_TRAIL_INDEX[s.id] ?? []).some(e => e.papers.length > 0));
+    const entry = subj && PAPER_TRAIL_INDEX[subj.id]!.find(e => e.papers.length > 0);
+    if (!subj || !entry) return;
+    let cancelled = false;
+    archiveHealth(paperUrl(paperStoragePath(subj.cycle, subj.id, entry.year, 'paper', entry.papers[0].doc.f)))
+      .then(h => {
+        if (!cancelled) setArchiveDown(h === 'down');
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  /** Outage notice — rendered on the home screen AND the subject view (deep
+   *  links land on the subject view without ever passing through home, and on
+   *  desktop the subject view IS the home screen). */
+  const archiveDownBanner = archiveDown ? (
+    <div className="pt-archive-alert" role="status">
+      <p className="pt-archive-alert-title">The paper archive is temporarily unavailable.</p>
+      <p>
+        Papers and marking schemes won’t open right now — the problem is on our side, not your
+        connection. Your saved papers, progress and review decks are safe; please check back a
+        little later.
+      </p>
+    </div>
+  ) : null;
 
   // ── deep link (?tool=paper-trail&subject=…&year=…), applied once per load ──
   useEffect(() => {
@@ -711,6 +744,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       level={activeLevel} lang={activeLang} langs={langsAtLevel}
       year={activeYear} years={yearCells} entry={entry}
       notice={requestedMissing ? `${year} isn’t available here — showing ${activeYear} instead.` : undefined}
+      banner={archiveDownBanner}
       onLevel={lv => { setLevel(lv); setFilters({ lastLevel: lv }); setYear(null); }}
       onLang={lg => { setLang(lg); setFilters({ lastLang: lg }); setYear(null); }}
       onYear={setYear}
@@ -881,6 +915,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       <button className="pt-text-button" onClick={() => setView({ v: 'saved' })}><Bookmark size={18} aria-hidden /> Saved</button>
     </nav>
     <ToolMasthead tool="paper-trail" eyebrow="Your exam archive" title="Paper Trail." subtitle="Exam papers & marking schemes." />
+    {archiveDownBanner}
     <div className="pt-search-area" ref={searchBoxRef}>
       <label className="pt-search"><Search size={20} aria-hidden /><input type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="Find a subject or paper" aria-label="Find a subject or paper" aria-controls={suggestions ? 'pt-search-results' : undefined} /></label>
       {suggestions && <div id="pt-search-results" className="pt-search-results" aria-label="Search results">

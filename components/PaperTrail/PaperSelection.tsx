@@ -22,6 +22,8 @@ interface Props {
   years: { year: number; gap?: string }[];
   entry?: PaperEntry;
   notice?: string;
+  /** Page-level alert (the archive-outage notice), shown under the heading. */
+  banner?: React.ReactNode;
   onLevel: (level: PaperLevel) => void;
   onLang: (lang: PaperLang) => void;
   onYear: (year: number) => void;
@@ -32,7 +34,7 @@ interface Props {
 }
 
 export default function PaperSelection(props: Props) {
-  const { uid, subject, label, level, lang, langs, year, years, entry, notice, onLevel, onLang, onYear, onOpen, onSave, onBack, onTopics } = props;
+  const { uid, subject, label, level, lang, langs, year, years, entry, notice, banner, onLevel, onLang, onYear, onOpen, onSave, onBack, onTopics } = props;
   const [allYears, setAllYears] = useState(false);
   const [gap, setGap] = useState<string | null>(null);
   const heading = useRef<HTMLHeadingElement>(null);
@@ -59,6 +61,7 @@ export default function PaperSelection(props: Props) {
       <p className="pt-eyebrow">{allYears ? label : 'Your exam archive'}{subject.cycle === 'lca' ? ' · LCA' : ''}</p>
       <h1 ref={heading} tabIndex={-1} className="pt-title">{allYears ? 'Choose a year' : label}</h1>
     </header>
+    {banner}
     <div className="pt-filters">
       <label><span className="sr-only">Level</span>
         <select aria-label="Level" value={level} onChange={e => { setGap(null); onLevel(e.target.value as PaperLevel); }}>
