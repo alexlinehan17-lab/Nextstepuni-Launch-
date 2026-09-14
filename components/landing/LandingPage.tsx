@@ -11,6 +11,7 @@ import React, { useEffect } from 'react';
 import Nav from './sections/Nav';
 import Hero from './sections/Hero';
 import Numbers from './sections/Numbers';
+import Journey from './sections/Journey';
 import Chapters from './sections/Chapters';
 import Examiner from './sections/Examiner';
 import AskThePapers from './sections/AskThePapers';
@@ -31,6 +32,7 @@ const LandingPage: React.FC = () => {
     <main>
       <Hero />
       <Numbers />
+      <Journey />
       <Chapters />
       <Examiner />
       <AskThePapers />

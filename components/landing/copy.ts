@@ -36,6 +36,7 @@ export const COPY = {
   nav: {
     links: [
       { label: "What's inside", href: '#chapters' },
+      { label: 'Journey', href: '#journey' },
       { label: 'Subjects', href: '#subjects' },
       { label: 'CERTLE', href: '/certle' },
     ],
@@ -44,6 +45,24 @@ export const COPY = {
     ctaShort: 'Open app',
     menu: 'Menu',
     close: 'Close',
+  },
+
+  journey: {
+    eyebrow: 'Journey mode',
+    title: 'A little study.',
+    titleEnd: 'A world of your own.',
+    body: 'Turn the work you put in into a place you can see. Earn Journey Points through study and learning, then use them to grow an island that’s entirely your own.',
+    cta: 'Start your journey',
+    steps: [
+      { title: 'Put a little work in.', body: 'Study, finish lessons and earn Journey Points along the way.' },
+      { title: 'Make it your own.', body: 'A woodland, a library in the trees, a quiet spot by the water. You choose what comes next.' },
+      { title: 'See how far you’ve come.', body: 'Each new tile opens up a little more of the map. Small efforts become somewhere worth returning to.' },
+    ],
+    preview: 'Try a little island building',
+    instruction: 'Choose a tile below, then tap a + on the map.',
+    note: 'A little preview to play with. Your own island grows with Journey Points in the app.',
+    undo: 'Undo',
+    reset: 'Start again',
   },
 
   hero: {
