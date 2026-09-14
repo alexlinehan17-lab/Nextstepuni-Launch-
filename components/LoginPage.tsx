@@ -34,7 +34,9 @@ import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from
 import Avatar from './Avatar';
 import { useModal } from '../hooks/useModal';
 import './account-entry.css';
+import './auth-paper.css';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import { WelcomeCharacter } from './WelcomeCharacter';
 
 /**
  * Did this visit start at the landing page? Read once, at module load, because
@@ -134,38 +136,9 @@ const AuthWordmark = () => (
 );
 
 // ── Welcome artwork panel ──────────────────────────────────
-// Left half of the auth card. Premium product-entry composition:
-// three structural zones (brand strip top / icon centred /
-// statement + cycling caption bottom) on a pure white surface.
-// The star character is the visual anchor.
-const CYCLING_CAPTIONS = [
-  'Personalised study, examiner-grounded.',
-  'Built on marking schemes, not memorisation.',
-  'Subject-tailored, strategy-led.',
-  'Smarter than rote learning.',
-  'Where examiner insight meets your routine.',
-];
-
 const WelcomeArtworkPanel = () => {
-  const mobileAppDesign = useMobileAppDesign();
-  const [capIdx, setCapIdx] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setCapIdx(i => (i + 1) % CYCLING_CAPTIONS.length);
-    }, 4500);
-    return () => clearInterval(id);
-  }, []);
-
   return (
-    <div
-      className="hidden md:flex md:flex-col w-1/2 relative overflow-hidden"
-      style={{
-        backgroundColor: mobileAppDesign ? '#F26B1F' : '#FFFFFF',
-        borderRadius: '16px 0 0 16px',
-        padding: '36px 44px',
-      }}
-    >
+    <div className="auth-paper-story hidden md:flex md:flex-col w-1/2 relative">
       {/* Brand strip */}
       <div className="flex items-center gap-3">
         <div style={{ color: '#1a1a1a' }}><AuthWordmark /></div>
@@ -174,60 +147,9 @@ const WelcomeArtworkPanel = () => {
 
       {/* Icon emblem + statement — grouped as one centred unit */}
       <div className="flex-1 flex flex-col items-center justify-center text-center">
-        <div
-          style={{
-            position: 'relative',
-            marginBottom: 28,
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <img
-            src="/icons/onboarding/star-person.png"
-            alt=""
-            aria-hidden
-            style={{
-              width: '100%',
-              maxWidth: 300,
-              height: 'auto',
-              display: 'block',
-            }}
-          />
-        </div>
-
-        <h2
-          className="font-serif"
-          style={{
-            fontSize: 24,
-            fontWeight: 600,
-            color: '#1a1a1a',
-            lineHeight: 1.2,
-            letterSpacing: '-0.01em',
-            marginBottom: 8,
-          }}
-        >
-          Built around how you learn.
-        </h2>
-        <div style={{ minHeight: 26 }}>
-          <AnimatePresence mode="wait">
-            <MotionP
-              key={CYCLING_CAPTIONS[capIdx]}
-              initial={{ opacity: 0, y: 4 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -4 }}
-              transition={{ type: 'spring', stiffness: 340, damping: 30 }}
-              className="font-sans"
-              style={{
-                fontSize: 15,
-                color: 'var(--ink-muted)',
-                lineHeight: 1.5,
-              }}
-            >
-              {CYCLING_CAPTIONS[capIdx]}
-            </MotionP>
-          </AnimatePresence>
-        </div>
+        <WelcomeCharacter />
+        <h2 className="auth-paper-caption">Built around how you learn.</h2>
+        <p className="auth-paper-caption-detail">Personalised study, examiner-grounded.</p>
       </div>
     </div>
   );
@@ -239,12 +161,12 @@ const WelcomeArtworkPanel = () => {
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode; view: string }> = ({ children, devButton, view }) => {
   const mobileAppDesign = useMobileAppDesign();
   return (
-  <div data-view={view} className={`${mobileAppDesign ? 'account-entry' : 'theme-compat'} relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-hidden bg-[var(--surface-canvas)] [overflow-anchor:none] md:min-h-screen md:p-8`}>
+  <div data-view={view} className={`auth-paper ${mobileAppDesign ? 'account-entry' : 'theme-compat'} relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-hidden bg-[var(--surface-canvas)] [overflow-anchor:none] md:min-h-screen md:p-8`}>
     <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="account-card flex min-h-[100dvh] w-full bg-[var(--surface-canvas)] md:min-h-[540px] md:max-w-5xl md:overflow-hidden md:rounded-2xl md:border-[1.5px] md:border-black/25 md:bg-white md:shadow-[0_12px_40px_rgba(0,0,0,0.06)] dark:md:border-zinc-700 dark:md:bg-zinc-900"
+      className="account-card flex min-h-[100dvh] w-full md:min-h-[574px] md:max-w-5xl md:overflow-hidden"
     >
       <WelcomeArtworkPanel />
       <div className="account-form flex w-full flex-1 flex-col justify-start px-5 pb-[calc(24px+var(--sab,0px))] pt-[calc(20px+var(--sat,0px))] sm:px-8 md:w-1/2 md:flex-none md:justify-center md:px-14 md:py-12">
@@ -969,7 +891,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 <div className="account-welcome">
               <p className="account-eyebrow">Built around how you learn</p>
               <h1>Your study.<br />Your way.</h1>
-              <img src="/icons/onboarding/star-person.png" className="account-welcome-art" alt="" />
+              <div className="md:hidden"><WelcomeCharacter /></div>
               <p>Your subjects. Your goals.<br />A study plan that fits you.</p>
               <div className="account-welcome-actions">
                 <button type="button" onClick={() => { resetForm(); setView('register'); }} className="account-primary">Create your account</button>
@@ -1000,14 +922,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     initial={{ opacity: 0, y: 12, scale: 0.97 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ duration: 0.46, delay: 0.04, ease: SLIDE_EASE }}
-                    className="mb-2 flex max-h-[22vh] min-h-[104px] items-center justify-center"
+                    className="flex w-full items-center justify-center"
                   >
-                    <img
-                      src="/icons/onboarding/star-person.png"
-                      alt=""
-                      aria-hidden
-                      className="h-auto w-[clamp(118px,34vw,154px)] select-none dark:drop-shadow-[0_0_1px_rgba(255,255,255,0.45)]"
-                    />
+                    <WelcomeCharacter />
                   </MotionDiv>
                   <MotionP
                     initial={{ opacity: 0, y: 8 }}
@@ -1022,7 +939,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.16, ease: SLIDE_EASE }}
                   >
-                    <h1 className="font-serif text-[clamp(2.45rem,11vw,3.25rem)] font-semibold leading-[0.96] tracking-[-0.035em] text-[var(--ink-primary)]">
+                    <h1 className="auth-paper-title">
                       Your study,<br />your way.
                     </h1>
                     <p className="mx-auto mt-4 max-w-[330px] text-[15px] leading-relaxed text-[var(--ink-muted)]">
@@ -1042,7 +959,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       whileTap={btnTap}
                       transition={SPRING_FAST}
                       onClick={() => { resetForm(); setView('register'); }}
-                      className="flex min-h-14 w-full items-center justify-center rounded-2xl border-2 border-[#B94712] bg-[#F26B1F] px-5 text-[15px] font-bold text-[var(--ink-on-accent)] shadow-[0_3px_0_#B94712] transition-all active:translate-y-0.5 active:shadow-none"
+                      className="account-primary flex min-h-14 w-full items-center justify-center rounded-2xl border-2 px-5 text-[15px] font-bold transition-all active:translate-y-0.5"
                     >
                       Create your account
                     </MotionButton>
@@ -1094,14 +1011,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </MotionDiv>
               </div>
 
-              {/* Desktop retains the split editorial card and its direct role
-                  choices, with clearer student action copy. */}
-              <div className="hidden text-center md:block">
-                <p className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: '#9e9186' }}>Welcome</p>
-                <h1 className="mb-3 text-4xl font-semibold tracking-tight" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
+              <div className="auth-paper-welcome hidden text-center md:block">
+                <p className="auth-paper-eyebrow">Welcome</p>
+                <h1 className="auth-paper-title">
                   Your study,<br />your way.
                 </h1>
-                <p className="mb-10 text-sm" style={{ fontFamily: "'DM Sans', sans-serif", color: '#7a7068' }}>
+                <p className="auth-paper-subtitle">
                   Science-backed study strategies personalised to your subjects, your goals, and your exam.
                 </p>
 
@@ -1109,7 +1024,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={() => { resetForm(); setView('register'); }} className={primaryBtn} style={primaryBtnStyle}>
                     Create your account
                   </MotionButton>
-                  <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={() => { resetForm(); setView('login'); }} className="w-full rounded-xl border-2 py-3.5 text-[15px] font-semibold transition-all" style={{ color: '#F26B1F', borderColor: 'rgba(242,107,31,0.3)', backgroundColor: 'white' }}>
+                  <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={() => { resetForm(); setView('login'); }} className="auth-paper-secondary w-full rounded-xl border py-3.5 text-[14px] font-semibold transition-all">
                     Log in
                   </MotionButton>
                   {SHOW_GOOGLE_SIGN_IN && (
