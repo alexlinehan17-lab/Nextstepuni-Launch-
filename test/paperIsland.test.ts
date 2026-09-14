@@ -9,7 +9,7 @@ import {
   type PaperCommand,
 } from "../functions/src/paperIslandModel";
 import { ATHLETE_RANKS } from "../gamificationConfig";
-import { frontier, exploredCells } from "../components/journey/paper/model";
+import { frontier, exploredCells, visibleDiscoveries, nextDiscovery, discoveryRoute } from "../components/journey/paper/model";
 import { piece } from "../components/journey/paper/studioModel";
 const account = (): PaperProgress => ({
   pointsData: { totalEarned: 300, totalSpent: 0 },
@@ -165,15 +165,8 @@ describe("Paper Journey economy and exploration", () => {
       applyPaperCommand(account(), { action: "keep", id: "lantern-nautilus" }),
     ).toThrow("Build closer");
     const first = applyPaperCommand(account(), purchase());
-    const second = applyPaperCommand(persist(first), {
-      action: "place",
-      q: -3,
-      r: 1,
-      kind: "meadow",
-      revision: 1,
-      requestId: "discovery-build-002",
-    });
-    const kept = applyPaperCommand(persist(second), {
+    expect(visibleDiscoveries(first.state.tiles.map(t => piece(t.q, t.r, t.kind))).map(d => d.id)).toContain("lantern-nautilus");
+    const kept = applyPaperCommand(persist(first), {
       action: "keep",
       id: "lantern-nautilus",
     });
@@ -181,7 +174,7 @@ describe("Paper Journey economy and exploration", () => {
     expect(
       applyPaperCommand(persist(kept), {
         action: "undo",
-        revision: 2,
+        revision: 1,
         requestId: "discovery-undo-001",
       }).state.kept,
     ).toEqual([]);
@@ -223,5 +216,33 @@ describe("hidden destinations", () => {
     expect(canBuildPaper(result.state.tiles, -7, -1)).toBe(true);
     expect(canBuildPaper(base.tiles, -7, -1)).toBe(false);
     expect(canBuildPaper(result.state.tiles, -6, -2)).toBe(false);
+  });
+});
+
+
+describe("sticker guidance", () => {
+  it("finds a sticker after one legal placement and skips kept stories", () => {
+    const placed = createPaperIsland().tiles.map(t => piece(t.q, t.r, t.kind));
+    const route = nextDiscovery(placed, []);
+    expect(route?.path).toHaveLength(1);
+    const edge = route!.path[0];
+    expect(frontier(placed).map(c => c.key)).toContain(edge.key);
+    const grown = [...placed, edge];
+    expect(visibleDiscoveries(grown).map(d => d.id)).toContain(route!.discovery.id);
+    expect(nextDiscovery(grown, [route!.discovery.id])?.discovery.id).not.toBe(route!.discovery.id);
+    expect(nextDiscovery(grown, PAPER_DISCOVERIES.map(d => d.id))).toBeNull();
+  });
+  it("routes around reserved creatures and landmarks without blocking adjacent building", () => {
+    let placed = createPaperIsland().tiles.map(t => piece(t.q, t.r, t.kind));
+    const target = PAPER_DISCOVERIES.find(d => d.id === "roaming-observatory")!;
+    const route = discoveryRoute(placed, target);
+    expect(route).not.toBeNull();
+    for (const cell of route!) {
+      expect(frontier(placed).map(c => c.key)).toContain(cell.key);
+      placed = [...placed, cell];
+    }
+    expect(visibleDiscoveries(placed).map(d => d.id)).toContain(target.id);
+    expect(discoveryRoute(placed, target)).toEqual([]);
+    expect(discoveryRoute([], target)).toBeNull();
   });
 });

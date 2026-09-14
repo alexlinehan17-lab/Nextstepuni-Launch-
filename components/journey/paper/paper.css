@@ -1688,3 +1688,9 @@
     white-space: nowrap;
   }
 }
+
+/* Keep the sticker shortcut within the compact phone dock. */
+@media (max-width: 700px) {
+  .journey-paper .island-dock .sticker-finder > span { display: none; }
+  .journey-paper .island-dock .sticker-finder { min-width: 38px; justify-content: center; }
+}

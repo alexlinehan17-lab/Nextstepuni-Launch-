@@ -34,6 +34,8 @@ import { tileById, type TileKind } from "./paper/catalogue";
 import {
   discoveries,
   visibleDiscoveries,
+  discoveryRoute,
+  nextDiscovery,
   buildable,
   type ShelfGroup,
 } from "./paper/model";
@@ -116,9 +118,14 @@ export default function JourneyView({ user, onBack }: JourneyViewProps) {
       })
     ) {
       setCandidate(null);
-      setNotice(
-        `${selected.name} added. A little more of the map is yours to explore.`,
-      );
+      const found = visibleDiscoveries([...placed, piece(q, r, chosen)])
+        .find(d => !seen.some(previous => previous.id === d.id));
+      if (found) {
+        setNotice("");
+        showDiscovery(found.id);
+      } else {
+        setNotice(`${selected.name} added. A little more of the map is yours to explore.`);
+      }
     }
   };
   const undo = async () => {
@@ -137,6 +144,24 @@ export default function JourneyView({ user, onBack }: JourneyViewProps) {
   const showDiscovery = (id: LegendId) => {
     setDiscovery(id);
     setPanel("discovery");
+  };
+  const findSticker = (id?: LegendId) => {
+    const target = id ? discoveries.find(d => d.id === id) : undefined;
+    const route = target
+      ? { discovery: target, path: discoveryRoute(placed, target) }
+      : nextDiscovery(placed, kept);
+    if (!route?.path) return;
+    if (!route.path.length) { showDiscovery(route.discovery.id); return; }
+    const next = route.path[0];
+    setPanel(null);
+    setBuilding(true);
+    setChosen("meadow");
+    setGroup("All tiles");
+    setCandidate(next.key);
+    setCamera({ x: next.x, y: next.y - 75, zoom: 1 });
+    setNotice(route.path.length === 1
+      ? "Place a tile in the highlighted corner to uncover a mythic sticker."
+      : `Start at the highlighted corner. A mythic sticker is ${route.path.length} placements away along this route.`);
   };
   return (
     <div
@@ -222,6 +247,14 @@ export default function JourneyView({ user, onBack }: JourneyViewProps) {
                   <span>Fieldbook</span>
                   <small>{seen.length}</small>
                 </button>
+                {kept.length < discoveries.length && <button
+                  className="sticker-finder"
+                  aria-label="Find a sticker"
+                  title="Find a sticker"
+                  onClick={() => findSticker()}
+                >
+                  <Compass size={18} /><span>Find a sticker</span>
+                </button>}
                 <button
                   className="primary-action"
                   onClick={() => changeMode(true)}
@@ -297,9 +330,9 @@ export default function JourneyView({ user, onBack }: JourneyViewProps) {
                 <em>along the way.</em>
               </h2>
               <p>
-                Choose a tile, then choose an open corner. Each new piece lifts
-                the mist nearby. There are curious things waiting beyond the
-                shore.
+                Mythic stickers come into view as your island grows. Choose an
+                undiscovered story below and we’ll point out a corner to build
+                towards it.
               </p>
               <div className="fieldbook-discoveries">
                 {discoveries.map((d) => {
@@ -307,8 +340,7 @@ export default function JourneyView({ user, onBack }: JourneyViewProps) {
                   return (
                     <button
                       key={d.id}
-                      disabled={!visible}
-                      onClick={() => showDiscovery(d.id)}
+                      onClick={() => visible ? showDiscovery(d.id) : findSticker(d.id)}
                     >
                       {visible ? (
                         <StickerArt id={d.id} />
@@ -328,7 +360,7 @@ export default function JourneyView({ user, onBack }: JourneyViewProps) {
                             ? kept.includes(d.id)
                               ? "Kept in your fieldbook"
                               : "In sight · take a closer look"
-                            : "Keep building to explore"}
+                            : "Show me the way"}
                         </small>
                       </span>
                       <ArrowUpRight size={18} />
