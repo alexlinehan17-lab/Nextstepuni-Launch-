@@ -862,6 +862,84 @@ export const CUT_CONTENT: CutContentEntry[] = [
     date: '2026-07-21',
   },
   {
+    id: 'subject-english-004',
+    module: 'Mastering English',
+    section: '§1 highlight / §3 High-Value Zones / §5 Study Techniques',
+    action: 'reframed',
+    original:
+      'Here is the strategic insight many students miss: the Comparative is highly formulaic. Once you learn the structure — linking your three texts through the mode of comparison, using clear comparative language ("Similarly", "In contrast", "While Text 1...") — you can consistently score well. It rewards preparation and technique more than inspiration. / [§1 highlight] Worth 70 marks and often the highest-scoring section when done well. / [§3 highlight] Highly structured and very learnable. Students who master the comparative framework (linking all three texts in every paragraph) consistently score well. / [§5] This grid is your revision gold: it forces you to think comparatively before you walk into the exam.',
+    reframedTo:
+      'But do not mistake the Comparative for a formula to learn: the Chief Examiner’s Report found it was the section where candidates scored least well, and warns that formulaic approaches "can hinder candidates by inhibiting their engagement with the terms of the questions". What actually scores is engaging with the question asked and the evidence you choose — the report calls the quality of evidence cited "a significant discriminator used by examiners". [Both Comparative highlights now carry the weakest-section finding and the rigid-formula warning; the §5 comparison grid is kept, with the caution to treat it as raw material, not a script.]',
+    reason:
+      'The 2013 Chief Examiner’s Report (the most recent for LC English) directly contradicts the original advice. The Comparative Study was the lowest-scoring section at both levels (HL 42/70 = 60%, p.7; OL 39/70 = 58%, p.9) — "candidates in general scored less well here than in other sections of the examination paper" (p.19); "a significant minority of candidates were hampered by a rigid and formulaic approach" (p.8); "Formulaic approaches … can hinder candidates by inhibiting their engagement with the terms of the questions" (pp.19–20); evidence quality is "a significant discriminator used by examiners" (p.18). Teaching students to learn a formula reproduced the failure mode the examiner flags, and "often the highest-scoring section" had no source.',
+    date: '2026-09-14',
+  },
+  {
+    id: 'subject-english-005',
+    module: 'Mastering English',
+    section: '§4 Common Pitfalls',
+    action: 'reframed',
+    original:
+      'On Paper 1, students routinely [[under-develop their composition]]. A five-paragraph essay will not score in the top bracket. Examiners want to see sustained, developed writing — think seven to nine substantial paragraphs for a personal essay. / [highlight] Top-scoring compositions are sustained pieces of writing — 1,000+ words, rich in detail and developed thought. Thin, short essays cannot access the highest mark bands even if the writing quality is strong.',
+    reframedTo:
+      'On Paper 1, some students [[under-develop their composition]]. In the Chief Examiner’s Report, examiners flag compositions that were "extremely brief and lacked development", noting that "it is difficult to sustain a response or develop a range of ideas necessary to acquire maximum marks if the answer is brief in the extreme" — while the strongest writers showed real command of their chosen genre: in a short story, for instance, narrative shape, characterisation, setting and atmosphere. / [highlight] Top-scoring compositions are sustained pieces of writing, rich in detail and developed thought. In the examiners’ words, it is difficult to develop the range of ideas needed for maximum marks "if the answer is brief in the extreme".',
+    reason:
+      'No SEC source gives a five-paragraph ceiling, a seven-to-nine-paragraph target or a 1,000-word figure, and "cannot access the highest mark bands" overstates the source. The 2013 report supports the qualitative principle only: Higher Level examiners found "a small number of scripts" that were "extremely brief and lacked development" (p.15); Ordinary Level examiners that brevity makes maximum marks "difficult" (pp.15–16); genre control discriminates (p.16). "Routinely" became "some" because the report describes a small number of scripts.',
+    date: '2026-09-14',
+  },
+  {
+    id: 'subject-english-006',
+    module: 'Mastering English',
+    section: '§5 Study Techniques',
+    action: 'reframed',
+    original:
+      'For the Unseen Poem (20 marks), practise the TPCASLT method (Title, Paraphrase, Connotation, Attitude, Shifts, Literary devices, Theme) on one past-paper poem per week. Within six weeks you will approach any unseen poem with a clear analytical framework.',
+    reframedTo:
+      'For the Unseen Poem (20 marks), build a consistent reading routine and practise it on one past-paper poem per week: what is literally happening; the tone or attitude, and where it shifts; the imagery and sound of the language; and what the poem suggests rather than states. That routine mirrors what examiners are told to reward — "the patterned nature of the language of poetry, its imagery, its sensuous qualities, and its suggestiveness" — and they are told to "guard against the temptation to assume a ‘correct’ reading of the poem", so a well-argued personal response is safe ground.',
+    reason:
+      'The "TPCASLT method" appears in none of the in-repo SEC English sources (2013 Chief Examiner’s Report, 2024 and 2025 marking schemes), and "within six weeks" was an unsupported promise. Replaced the branded method with a routine built from the 2025 Higher Level marking scheme’s own unseen-poetry marking instructions (p.42), quoted verbatim.',
+    date: '2026-09-14',
+  },
+  {
+    id: 'subject-english-007',
+    module: 'Mastering English',
+    section: '§2 Marking Criteria / §4 Common Pitfalls',
+    action: 'reframed',
+    original:
+      'the most common reason students lose marks is writing a beautiful answer to a question that was not asked … The number one mark-killer in English is [[not answering the question]] … Every year, the Chief Examiner\'s Report says the same thing: the best students engage directly with the question throughout their answer. … The second biggest killer is running out of time. / [highlight] The most common reason for mid-range marks across all of English.',
+    reframedTo:
+      'a beautiful answer to a question that was not asked does not fulfil the task … A mark-killer you will meet all over English is [[not answering the question]] … The Chief Examiner’s Report puts it plainly: "The best answers managed to remain grounded, both in the question asked and in the text", while under-achievement in the Comparative "could often be attributed to a loss of focus in terms of the requirements of the task". … Another killer is running out of time. [The report’s omission and time-management finding is now quoted.] / [highlight] A recurring cause of lost marks in the Chief Examiner’s Report.',
+    reason:
+      'No SEC source ranks the causes of lost marks, so "most common", "number one" and "second biggest" could not be verified, and "every year" overstated a single report: 2013 is the only, and most recent, Chief Examiner’s Report for LC English. Replaced with what that report actually says (task focus and evidence, p.18; omitted questions and time management, pp.20–21).',
+    date: '2026-09-14',
+  },
+  {
+    id: 'subject-english-008',
+    module: 'Mastering English',
+    section: '§1 Exam Structure',
+    action: 'corrected',
+    original:
+      'the [[Single Text]] (one of your studied plays, novels, or films — 60 marks), the [[Comparative Study]] (comparing three texts across a mode such as Theme, Cultural Context, or Literary Genre — 70 marks) / [Single Text highlight] a play (e.g. Hamlet, Philadelphia Here I Come!), a novel, or a film. / [Comparative highlight] In the exam, you typically answer one question using all three texts.',
+    reframedTo:
+      'the [[Single Text]] (one of your studied plays or novels — 60 marks), the [[Comparative Study]] (comparing three texts through one mode of comparison — 70 marks; in 2025 the modes were Theme or Issue, Cultural Context, and General Vision and Viewpoint) / [Single Text highlight] a play (e.g. Hamlet, Philadelphia Here I Come!) or a novel. / [Comparative highlight] In the exam you answer one question, drawing on at least two of your texts (some questions require all three).',
+    reason:
+      'Films belong to the Comparative Study, not the Single Text: no Single Text option in the in-repo marking schemes (2021–2025 Higher Level; 2021, 2023, 2024 and 2025 Ordinary Level) is a film — the 2025 Higher Level options were The Tenant of Wildfell Hall, All the Light We Cannot See, The Crucible, King Lear and Frankenstein (pp.21–31) — and the 2025 scheme states its film rule in the Comparative ("Candidates may refer to only one film", p.32). Each 2025 Comparative mode offered a two-part question across three texts or a single question on "at least two texts" (pp.33–41), so "typically … all three texts" was inaccurate. The mode list is now the 2025 set the cited scheme names (p.32); Literary Genre was a mode in 2023 and 2024.',
+    date: '2026-09-14',
+  },
+  {
+    id: 'subject-english-009',
+    module: 'Mastering English',
+    section: '§2 Marking Criteria / §4 Common Pitfalls',
+    action: 'corrected',
+    original:
+      'The Language criterion rewards a rich, varied, and precise vocabulary used in an authentic voice. … Mechanics covers spelling, grammar, and punctuation. / [§4] The PCLM criteria explicitly reward authentic language — writing that sounds like a real person with real thoughts.',
+    reframedTo:
+      'The Language criterion rewards vocabulary, syntax and phrasing that achieve clear communication — the scheme’s own descriptors include "lively interesting phrasing, energy, style". … Mechanics covers spelling and grammar. / [§4] The Language criterion explicitly rewards "lively interesting phrasing, energy, style" appropriate to the task — writing that sounds like a real person with real thoughts.',
+    reason:
+      'The 2025 Higher Level marking scheme files punctuation under Efficiency of Language Use ("vocabulary, syntax, sentence patterns, punctuation appropriate to the register", Appendix 1, p.50) and defines Mechanics as accuracy "in spelling and grammar" (p.3; Appendix 1, p.50). Neither criterion names an "authentic voice" or "authentic language", so both Language claims were re-anchored to the scheme’s own descriptor wording.',
+    date: '2026-09-14',
+  },
+  {
     id: 'subject-irish-001',
     module: 'Mastering Irish',
     section: 'Exam structure & assessment',
