@@ -58,9 +58,10 @@ function tilePaper(
   img: HTMLImageElement,
   view: View,
   base: string,
+  paperWidth: number,
 ) {
   const stamp = paperStamp(img),
-    w = 2140,
+    w = paperWidth,
     h = (w * img.naturalHeight) / img.naturalWidth,
     sx = w * 0.91,
     sy = h * 0.91,
@@ -126,10 +127,13 @@ export function PaintedWorld({
   placed,
   style,
   view,
+  paperWidth = 2140,
 }: {
   placed: StudioPiece[];
   style: PaintedStyle;
   view: View;
+  /** Smaller atlas scale for the compact landing-page preview. */
+  paperWidth?: number;
 }) {
   const ref = useRef<HTMLCanvasElement>(null),
     [size, setSize] = useState({ width: 0, height: 0 }),
@@ -229,7 +233,7 @@ export function PaintedWorld({
           seaCtx.globalAlpha = 1;
         }
         worldTransform(coverCtx);
-        tilePaper(coverCtx, art, visible, treatment.base);
+        tilePaper(coverCtx, art, visible, treatment.base, paperWidth);
         const duration =
             added && !matchMedia("(prefers-reduced-motion: reduce)").matches
               ? 700
@@ -277,6 +281,7 @@ export function PaintedWorld({
     view.width,
     view.height,
     treatment,
+    paperWidth,
   ]);
   return (
     <>
