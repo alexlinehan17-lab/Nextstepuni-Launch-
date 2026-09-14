@@ -57,6 +57,7 @@ import { SCIENCE_OF_MISTAKES_REFERENCE_LIST } from './references/scienceOfMistak
 import { TEACHING_EFFECT_REFERENCE_LIST } from './references/teachingEffect';
 import { SUBJECT_MATHEMATICS_REFERENCE_LIST } from './references/subjectMathematics';
 import { SUBJECT_BUSINESS_REFERENCE_LIST } from './references/subjectBusiness';
+import { SUBJECT_ENGLISH_REFERENCE_LIST } from './references/subjectEnglish';
 
 export interface AccreditedModuleEntry {
   /** Course id from courseData.ts. */
@@ -357,5 +358,11 @@ export const ACCREDITED_MODULES: AccreditedModuleEntry[] = [
     what: 'You learn how the single 400-mark Business paper is structured, from the short questions to the ABQ, and how answers earn their marks.',
     why: 'The marking scheme awards no ABQ link mark unless theory is tied to the text, and the Chief Examiner rewards developed answers over one-word points. Knowing those rules lets you spend your time where the marks actually are.',
     references: SUBJECT_BUSINESS_REFERENCE_LIST,
+  },
+  {
+    id: 'subject-english-protocol',
+    what: 'You learn how both English papers are structured, where the 400 marks sit, and how the PCLM criteria are applied to every answer.',
+    why: 'The marking scheme weights Purpose, Coherence and Language at 30% each, and never lets Coherence or Language outscore Purpose. The Chief Examiner found the Comparative was the lowest-scoring section and warns that formulaic answers hinder candidates, so answering the question asked beats reciting a script.',
+    references: SUBJECT_ENGLISH_REFERENCE_LIST,
   },
 ];
